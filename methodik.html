@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Methodik von AIStrikeMap — Verifizierungsmodell, Rückwärts-Timeline, Taxonomie, Schweregrad-Skala und Quellenstandards.">
+  <title>Methodik — AIStrikeMap</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo"><span class="logo-accent">AI</span>StrikeMap</a>
+    <button class="nav-toggle" aria-label="Navigation öffnen">&#9776;</button>
+    <nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
+      <a href="methodik.html" data-i18n="nav.methodology" aria-current="page">Methodik</a>
+      <a href="transparenz.html" data-i18n="nav.transparency">Transparenz</a>
+      <a href="impressum.html" data-i18n="nav.imprint">Impressum</a>
+      <a href="datenschutz.html" data-i18n="nav.privacy">Datenschutz</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="page-content">
+      <h1>Methodik</h1>
+      <p>
+        Diese Seite beschreibt die wissenschaftlichen und redaktionellen Grundlagen, nach denen
+        AIStrikeMap Vorfälle erfasst, bewertet und darstellt.
+      </p>
+
+      <section aria-labelledby="verifizierung-heading">
+        <h2 id="verifizierung-heading">4-Stufen-Verifizierungsmodell</h2>
+        <p>
+          Jeder Vorfall durchläuft ein vierstufiges Verifizierungsverfahren. Die aktuelle Stufe
+          wird in der Kartenansicht transparent angezeigt.
+        </p>
+        <ol>
+          <li>
+            <strong>Stufe 1 — Gemeldet</strong><br>
+            Ein Vorfall wurde aus einer Quelle identifiziert oder von Nutzenden gemeldet.
+            Es liegt mindestens eine Primär- oder Sekundärquelle vor. Keine inhaltliche
+            Prüfung erfolgt. Der Eintrag ist als ungeprüft gekennzeichnet.
+          </li>
+          <li>
+            <strong>Stufe 2 — Bestätigt</strong><br>
+            Mindestens zwei unabhängige Quellen bestätigen den Vorfall. Grundlegende Fakten
+            (Ort, Zeit, beteiligte Akteure) sind plausibel. Offensichtliche Falschmeldungen
+            und Duplikate wurden aussortiert.
+          </li>
+          <li>
+            <strong>Stufe 3 — Verifiziert</strong><br>
+            Detailprüfung durch die Redaktion. Quellenqualität bewertet, Widersprüche
+            dokumentiert, Kontext recherchiert. Der Vorfall ist mit belastbaren Quellen
+            belegt und in die Taxonomie eingeordnet.
+          </li>
+          <li>
+            <strong>Stufe 4 — Analysiert</strong><br>
+            Vollständige Aufarbeitung inklusive Rückwärts-Timeline, Einordnung in
+            Branchentrends und Verbindung zu verwandten Vorfällen. Systemische Ursachen
+            werden identifiziert. Diese Stufe erreichen nur ausgewählte Vorfälle.
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading">Rückwärts-Timeline-Konzept</h2>
+        <p>
+          Klassische Berichterstattung fragt: Was ist passiert? Die Rückwärts-Timeline fragt
+          zusätzlich: Warum konnte es passieren? Dazu wird jeder analysierte Vorfall entlang
+          von vier Ebenen rückwärts aufgerollt:
+        </p>
+        <ol>
+          <li>
+            <strong>Infrastruktur</strong><br>
+            Welche technische Infrastruktur (Modelle, Trainingsdaten, Deployment-Pipelines)
+            liegt dem Vorfall zugrunde? Wer hat sie entwickelt und betrieben?
+          </li>
+          <li>
+            <strong>Doktrin</strong><br>
+            Welche Unternehmensrichtlinien, regulatorische Rahmenbedingungen oder fehlende
+            Governance-Strukturen haben den Vorfall ermöglicht oder begünstigt?
+          </li>
+          <li>
+            <strong>Ereignis</strong><br>
+            Was genau ist passiert? Chronologische Rekonstruktion des Vorfalls mit Quellen,
+            Zeitstempeln und beteiligten Akteuren.
+          </li>
+          <li>
+            <strong>Konsequenzen</strong><br>
+            Welche Auswirkungen hatte der Vorfall? Betroffene Personen, regulatorische
+            Reaktionen, technische Korrekturen, gesellschaftliche Debatte.
+          </li>
+        </ol>
+        <p>
+          Durch diesen Ansatz werden systemische Muster sichtbar, die bei isolierter
+          Betrachtung einzelner Vorfälle verborgen bleiben.
+        </p>
+      </section>
+
+      <section aria-labelledby="taxonomie-heading">
+        <h2 id="taxonomie-heading">Taxonomie der Vorfalltypen</h2>
+        <p>
+          Vorfälle werden nach ihrem primären Schadenstyp klassifiziert. Ein Vorfall kann
+          mehreren Kategorien zugeordnet werden.
+        </p>
+        <ul>
+          <li><strong>Diskriminierung / Bias</strong> — Systematische Benachteiligung bestimmter Gruppen durch KI-Systeme</li>
+          <li><strong>Überwachung</strong> — Einsatz von KI zur Massenüberwachung oder gezielten Beobachtung</li>
+          <li><strong>Autonome Waffen</strong> — KI-gesteuerte Waffensysteme und militärische Anwendungen</li>
+          <li><strong>Arbeitnehmerrechte</strong> — Algorithmisches Management, automatisierte Kündigung, Ausbeutung von Annotationsarbeit</li>
+          <li><strong>Desinformation</strong> — KI-generierte Falschinformationen, Deepfakes, Manipulationskampagnen</li>
+          <li><strong>Datenschutz</strong> — Unerlaubte Datenerhebung, Datenlecks, Verletzung der Privatsphäre durch KI</li>
+          <li><strong>Umwelt</strong> — Ökologische Auswirkungen von KI-Infrastruktur (Energie, Wasser, Ressourcen)</li>
+          <li><strong>Sicherheitsversagen</strong> — Fehlerhafte KI-Entscheidungen mit direkten Sicherheitsfolgen (Gesundheit, Verkehr, Justiz)</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="schweregrad-heading">
+        <h2 id="schweregrad-heading">Schweregrad-Skala</h2>
+        <p>
+          Jeder Vorfall erhält eine Schweregradeinschätzung von 1 bis 5. Die Skala
+          berücksichtigt Ausmaß, Reversibilität und Anzahl der Betroffenen.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Stufe</th>
+              <th scope="col">Bezeichnung</th>
+              <th scope="col">Beschreibung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Gering</td>
+              <td>Begrenzte Auswirkungen, leicht reversibel, wenige Betroffene. Beispiel: Fehlerhafte KI-Empfehlung ohne materielle Folgen.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Moderat</td>
+              <td>Messbare Auswirkungen auf eine begrenzte Gruppe, überwiegend reversibel. Beispiel: Diskriminierende Stellenanzeigen-Auslieferung.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Erheblich</td>
+              <td>Signifikante Auswirkungen auf eine größere Gruppe, teilweise irreversibel. Beispiel: Fehlerhafte automatisierte Sozialleistungsbescheide.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Schwer</td>
+              <td>Schwerwiegende Auswirkungen, weitgehend irreversibel, viele Betroffene. Beispiel: Massenüberwachungssystem gegen eine Bevölkerungsgruppe.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Kritisch</td>
+              <td>Lebensbedrohliche oder existenzielle Auswirkungen, irreversibel, potenziell systemisch. Beispiel: Autonome Waffen mit zivilen Opfern.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="quellen-heading">
+        <h2 id="quellen-heading">Quellenstandards</h2>
+        <p>
+          Für die Aufnahme und Bewertung von Vorfällen gelten folgende Quellenanforderungen:
+        </p>
+        <ul>
+          <li><strong>Primärquellen bevorzugt</strong> — Gerichtsdokumente, Behördenberichte, technische Audits, Aussagen Betroffener</li>
+          <li><strong>Sekundärquellen</strong> — Berichterstattung etablierter Medien, Berichte von NGOs und Forschungseinrichtungen</li>
+          <li><strong>Mindestens zwei unabhängige Quellen</strong> für Stufe 2 und höher</li>
+          <li><strong>Archivierung</strong> — Alle zitierten Quellen werden nach Möglichkeit archiviert (Wayback Machine, lokale Kopien)</li>
+          <li><strong>Transparente Lücken</strong> — Fehlende oder widersprüchliche Informationen werden offen dokumentiert, nicht übergangen</li>
+          <li><strong>Keine anonymen Einzelquellen</strong> — Anonyme Hinweise werden nur aufgenommen, wenn sie durch mindestens eine öffentlich zugängliche Quelle gestützt werden</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span data-i18n="footer.license">Daten: CC BY-NC-SA 4.0 | Code: AGPL-3.0</span>
+    <span class="ai-disclosure" data-i18n="footer.ai">Technik: KI-unterstützt | Inhalt: Menschlich verifiziert</span>
+  </footer>
+</body>
+</html>

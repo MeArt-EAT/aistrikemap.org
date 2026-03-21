@@ -1,0 +1,116 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/eu-frontex-ki-grenzen",
+  "name": "EU/Frontex KI-Grenzüberwachung",
+  "description": "Die Europäische Union und Frontex setzen KI-gestützte Überwachungssysteme an den EU-Außengrenzen ein, darunter Drohnen, automatisierte Bewegungserkennung und prädiktive Analysen. Diese Systeme betreffen insbesondere Geflüchtete und Migrierende und werden mit Pushbacks und Menschenrechtsverletzungen in Verbindung gebracht.",
+  "startDate": "2016",
+  "location": {
+    "@type": "Place",
+    "name": "Evros, Griechenland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.1472,
+      "longitude": 26.5439
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GR"
+    }
+  },
+  "asm:incidentType": ["surveillance", "discrimination"],
+  "asm:affectedRights": ["Recht auf Asyl", "Recht auf Leben", "Menschenwürde", "Schutz vor Diskriminierung", "Recht auf Privatsphäre"],
+  "asm:actors": [
+    {
+      "name": "Frontex",
+      "type": "government"
+    },
+    {
+      "name": "Europäische Union",
+      "type": "government"
+    },
+    {
+      "name": "Diverse Tech-Unternehmen",
+      "type": "company"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Aufbau der KI-Grenzüberwachung",
+      "description": "Frontex und die EU beginnen mit dem systematischen Einsatz von Drohnen, Wärmebildkameras und automatisierten Überwachungssystemen an den Außengrenzen. Das EUROSUR-System wird mit KI-Komponenten zur Bewegungserkennung und Analyse erweitert.",
+      "sources": ["https://frontex.europa.eu/innovation/eu-research/eurosur/"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "KI-gestützte Migrationsvorhersage",
+      "description": "Frontex setzt zunehmend auf prädiktive Analysen zur Vorhersage von Migrationsbewegungen. Algorithmen analysieren Wetterdaten, Social-Media-Aktivitäten und historische Muster, um Grenzübertritte vorherzusagen und Ressourcen zu steuern.",
+      "sources": ["https://algorithmwatch.org/en/frontex-ai-surveillance/"]
+    },
+    {
+      "date": "2020",
+      "phase": "event",
+      "title": "KI-unterstützte Pushbacks am Evros",
+      "description": "Berichte dokumentieren, wie KI-gestützte Überwachungssysteme am Grenzfluss Evros zur Erkennung von Geflüchteten eingesetzt werden, die anschließend illegal zurückgedrängt (Pushbacks) werden. Drohnen und Sensorsysteme liefern Echtzeitdaten für Grenzschutzoperationen.",
+      "sources": ["https://www.spiegel.de/international/europe/frontex-involved-in-pushbacks-a-00000000-0002-0001-0000-000175015430"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "OLAF-Untersuchung gegen Frontex",
+      "description": "Das Europäische Amt für Betrugsbekämpfung (OLAF) untersucht Frontex wegen Beteiligung an illegalen Pushbacks. Der Frontex-Direktor Fabrice Leggeri tritt zurück. Die Rolle von Überwachungstechnologie bei Menschenrechtsverletzungen wird öffentlich thematisiert.",
+      "sources": ["https://www.theguardian.com/world/2022/apr/28/frontex-chief-resigns-fabrice-leggeri"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Kritik an EU-KI-Grenzpolitik wächst",
+      "description": "Zivilgesellschaftliche Organisationen und das Europäische Parlament fordern stärkere Kontrollen für den Einsatz von KI an den Grenzen. Die Debatte um die EU-KI-Verordnung thematisiert biometrische Überwachung von Migrierende als Hochrisikoanwendung.",
+      "sources": ["https://edri.org/our-work/eu-ai-act-migration-surveillance/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://algorithmwatch.org/en/frontex-ai-surveillance/",
+      "title": "Frontex und KI-gestützte Grenzüberwachung",
+      "publisher": "AlgorithmWatch",
+      "date": "2020",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2022/apr/28/frontex-chief-resigns-fabrice-leggeri",
+      "title": "Frontex-Chef tritt nach Pushback-Skandal zurück",
+      "publisher": "The Guardian",
+      "date": "2022-04-28",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.spiegel.de/international/europe/frontex-involved-in-pushbacks-a-00000000-0002-0001-0000-000175015430",
+      "title": "Frontex in illegale Pushbacks verwickelt",
+      "publisher": "Der Spiegel",
+      "date": "2020",
+      "type": "news-article"
+    },
+    {
+      "url": "https://edri.org/our-work/eu-ai-act-migration-surveillance/",
+      "title": "EU-KI-Verordnung und Migrationsüberwachung",
+      "publisher": "European Digital Rights (EDRi)",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-03-20",
+    "lastUpdated": "2026-03-20",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

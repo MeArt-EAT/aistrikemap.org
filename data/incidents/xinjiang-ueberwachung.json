@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/xinjiang-ueberwachung",
+  "name": "Xinjiang KI-Überwachung",
+  "description": "Massenüberwachung der uigurischen Bevölkerung in der chinesischen Region Xinjiang durch KI-gestützte Systeme. Gesichtserkennung, Bewegungsverfolgung und prädiktive Analyse werden eingesetzt, um Millionen von Menschen zu überwachen, zu kategorisieren und in Umerziehungslager zu internieren.",
+  "startDate": "2014",
+  "location": {
+    "@type": "Place",
+    "name": "Ürümqi, Xinjiang, China",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.8256,
+      "longitude": 87.6168
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CN"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition", "discrimination"],
+  "asm:affectedRights": ["Religionsfreiheit", "Bewegungsfreiheit", "Recht auf Privatsphäre", "Schutz vor Massenverhaftung", "Schutz vor Diskriminierung", "Kulturelle Rechte"],
+  "asm:actors": [
+    {
+      "name": "Chinesische Regierung",
+      "type": "government"
+    },
+    {
+      "name": "Huawei",
+      "type": "company",
+      "asm:systems": ["Safe City Platform"]
+    },
+    {
+      "name": "Hikvision",
+      "type": "company",
+      "asm:systems": ["Überwachungskameras mit KI"]
+    },
+    {
+      "name": "Megvii/Face++",
+      "type": "company",
+      "asm:systems": ["Face++ Gesichtserkennung"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Aufbau der Überwachungsinfrastruktur",
+      "description": "China beginnt mit dem massiven Ausbau der Überwachungsinfrastruktur in Xinjiang. Hunderttausende Kameras mit Gesichtserkennung werden installiert, Checkpoints mit biometrischer Erfassung eingerichtet und WLAN-Sniffer in öffentlichen Räumen platziert.",
+      "sources": ["https://www.hrw.org/report/2019/05/01/chinas-algorithms-repression"]
+    },
+    {
+      "date": "2016",
+      "phase": "doctrine",
+      "title": "Integrierte gemeinsame Operationsplattform (IJOP)",
+      "description": "Die Integrierte Gemeinsame Operationsplattform wird eingeführt, die Daten aus Überwachungskameras, WLAN-Tracking, Smartphone-Scans und Polizeiberichten zusammenführt. Das System generiert automatisch Listen von Personen, die als verdächtig eingestuft werden.",
+      "sources": ["https://www.hrw.org/report/2019/05/01/chinas-algorithms-repression"]
+    },
+    {
+      "date": "2017",
+      "phase": "event",
+      "title": "Masseninternierung beginnt",
+      "description": "Auf Grundlage der KI-gestützten Überwachungsdaten werden schätzungsweise ein bis zwei Millionen Uiguren und andere turkstämmige Muslime in sogenannte Umerziehungslager interniert. Das KI-System identifiziert Personen als Risiko aufgrund von Kriterien wie Gebetsverhalten, Kontakten ins Ausland oder Smartphone-Nutzung.",
+      "sources": ["https://www.bbc.com/news/world-asia-china-45147972"]
+    },
+    {
+      "date": "2019",
+      "phase": "consequences",
+      "title": "China Cables und internationale Dokumentation",
+      "description": "Geleakte interne Dokumente (China Cables) belegen systematische Masseninternierung und die Rolle der KI-Überwachung. Internationale Medien und NGOs dokumentieren das Ausmaß der Unterdrückung.",
+      "sources": ["https://www.icij.org/investigations/china-cables/"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Sanktionen und Völkermord-Einstufung",
+      "description": "Mehrere westliche Regierungen, darunter die USA, stufen die Behandlung der Uiguren als Völkermord ein. Sanktionen werden gegen chinesische Beamte und beteiligte Technologieunternehmen wie Hikvision verhängt. Die UN veröffentlicht einen Bericht, der schwere Menschenrechtsverletzungen bestätigt.",
+      "sources": ["https://www.ohchr.org/en/documents/country-reports/ohchr-assessment-human-rights-concerns-xinjiang-uyghur-autonomous-region"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.hrw.org/report/2019/05/01/chinas-algorithms-repression",
+      "title": "Chinas Algorithmen der Unterdrückung",
+      "publisher": "Human Rights Watch",
+      "date": "2019-05-01",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.icij.org/investigations/china-cables/",
+      "title": "China Cables: Geleakte Dokumente zur Masseninternierung",
+      "publisher": "International Consortium of Investigative Journalists",
+      "date": "2019-11",
+      "type": "leaked-document"
+    },
+    {
+      "url": "https://www.ohchr.org/en/documents/country-reports/ohchr-assessment-human-rights-concerns-xinjiang-uyghur-autonomous-region",
+      "title": "UN-Bericht zu Menschenrechtsverletzungen in Xinjiang",
+      "publisher": "Office of the UN High Commissioner for Human Rights",
+      "date": "2022-08-31",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.bbc.com/news/world-asia-china-45147972",
+      "title": "Xinjiang: Masseninternierung von Uiguren dokumentiert",
+      "publisher": "BBC",
+      "date": "2018",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-03-20",
+    "lastUpdated": "2026-03-20",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

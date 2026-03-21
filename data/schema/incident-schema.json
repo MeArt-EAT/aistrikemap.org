@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aistrikemap.org/schema/incident-schema.json",
+  "title": "AIStrikeMap Incident",
+  "description": "Schema für einen KI-bezogenen Vorfall auf AIStrikeMap.org",
+  "type": "object",
+  "required": ["@context", "@type", "@id", "name", "description", "startDate", "location", "asm:incidentType", "asm:severity", "asm:verificationLevel", "asm:reverseTimeline", "asm:sources", "asm:metadata"],
+  "properties": {
+    "@context": {
+      "type": "object",
+      "properties": {
+        "@vocab": { "const": "https://schema.org/" },
+        "asm": { "const": "https://aistrikemap.org/schema/" }
+      },
+      "required": ["@vocab", "asm"]
+    },
+    "@type": { "const": "Event" },
+    "@id": { "type": "string", "format": "uri" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "startDate": { "type": "string" },
+    "location": {
+      "type": "object",
+      "required": ["@type", "name", "geo"],
+      "properties": {
+        "@type": { "const": "Place" },
+        "name": { "type": "string" },
+        "geo": {
+          "type": "object",
+          "required": ["@type", "latitude", "longitude"],
+          "properties": {
+            "@type": { "const": "GeoCoordinates" },
+            "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+            "longitude": { "type": "number", "minimum": -180, "maximum": 180 }
+          }
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "@type": { "const": "PostalAddress" },
+            "addressCountry": { "type": "string", "pattern": "^[A-Z]{2}$" }
+          }
+        }
+      }
+    },
+    "asm:incidentType": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "surveillance",
+          "predictive-policing",
+          "autonomous-weapons",
+          "discrimination",
+          "deepfakes",
+          "data-misuse",
+          "military-ai",
+          "facial-recognition",
+          "censorship",
+          "labor-exploitation",
+          "political-pressure"
+        ]
+      }
+    },
+    "asm:affectedRights": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "asm:actors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "enum": ["government", "military", "company", "organization", "individual"] },
+          "asm:systems": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "asm:severity": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "asm:verificationLevel": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "asm:reverseTimeline": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["date", "phase", "title", "description"],
+        "properties": {
+          "date": { "type": "string" },
+          "phase": { "enum": ["infrastructure", "doctrine", "event", "consequences"] },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "sources": {
+            "type": "array",
+            "items": { "type": "string", "format": "uri" }
+          }
+        }
+      }
+    },
+    "asm:sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "title", "type"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "title": { "type": "string" },
+          "publisher": { "type": "string" },
+          "date": { "type": "string" },
+          "type": { "enum": ["news-article", "research-paper", "government-document", "ngo-report", "legal-document", "company-statement", "leaked-document", "court-filing"] }
+        }
+      }
+    },
+    "asm:metadata": {
+      "type": "object",
+      "required": ["created", "lastUpdated", "author", "aiGenerated", "humanVerified"],
+      "properties": {
+        "created": { "type": "string", "format": "date" },
+        "lastUpdated": { "type": "string", "format": "date" },
+        "author": { "type": "string" },
+        "aiGenerated": { "type": "boolean" },
+        "humanVerified": { "type": "boolean" }
+      }
+    }
+  }
+}

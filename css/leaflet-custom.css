@@ -1,0 +1,98 @@
+/* Leaflet Customizations for AIStrikeMap Dark Theme */
+
+/* Map background for loading state */
+.leaflet-container {
+  background: #1a1a2e;
+}
+
+/* Attribution */
+.leaflet-control-attribution {
+  background: rgba(22, 33, 62, 0.85) !important;
+  color: #a0a0a0 !important;
+  font-size: 0.65rem !important;
+}
+
+.leaflet-control-attribution a {
+  color: #4fc3f7 !important;
+}
+
+/* Zoom Controls */
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+.leaflet-control-zoom a {
+  background: #16213e !important;
+  color: #f0f0f0 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  width: 34px !important;
+  height: 34px !important;
+  line-height: 34px !important;
+  font-size: 1.1rem !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #1c2a4a !important;
+}
+
+/* Popup */
+.leaflet-popup-content-wrapper {
+  background: #16213e;
+  color: #f0f0f0;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.leaflet-popup-tip {
+  background: #16213e;
+}
+
+.leaflet-popup-content {
+  margin: 0.75rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.popup-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.popup-meta {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #a0a0a0;
+}
+
+.popup-severity {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.leaflet-popup-close-button {
+  color: #a0a0a0 !important;
+  font-size: 1.2rem !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #f0f0f0 !important;
+}
+
+/* Circle Markers — focus state for keyboard nav */
+.leaflet-interactive:focus {
+  outline: 2px solid #4fc3f7;
+  outline-offset: 2px;
+}
+
+/* Dark map tiles filter (optional, subtle) */
+.leaflet-tile-pane {
+  filter: brightness(0.85) contrast(1.1) saturate(0.8);
+}

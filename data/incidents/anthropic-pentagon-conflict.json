@@ -1,0 +1,118 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/anthropic-pentagon-conflict",
+  "name": "Anthropic-Pentagon-Interessenkonflikt",
+  "description": "Anthropic erhält Pentagon-Verträge über 200 Millionen US-Dollar trotz eigener AI-Safety-Mission. Das Unternehmen ändert seine Nutzungsrichtlinien, um militärische Anwendungen zu ermöglichen, und geht eine Partnerschaft mit Palantir Technologies ein, um Claude in Regierungs- und Verteidigungssysteme zu integrieren.",
+  "startDate": "2021",
+  "location": {
+    "@type": "Place",
+    "name": "Washington D.C., USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.9072,
+      "longitude": -77.0369
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["military-ai", "political-pressure"],
+  "asm:affectedRights": ["KI-Sicherheit", "Öffentliches Vertrauen", "Ethische KI-Entwicklung"],
+  "asm:actors": [
+    {
+      "name": "Anthropic",
+      "type": "company",
+      "asm:systems": ["Claude"]
+    },
+    {
+      "name": "U.S. Department of Defense",
+      "type": "military"
+    },
+    {
+      "name": "Palantir Technologies",
+      "type": "company",
+      "asm:systems": ["Palantir Gotham"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2021",
+      "phase": "infrastructure",
+      "title": "Anthropic gegründet mit Safety-Mission",
+      "description": "Anthropic wird von ehemaligen OpenAI-Mitarbeitern gegründet mit der erklärten Mission, sichere und verantwortungsvolle KI zu entwickeln. Das Unternehmen positioniert sich als führend im Bereich AI Safety.",
+      "sources": ["https://www.anthropic.com/company"]
+    },
+    {
+      "date": "2024",
+      "phase": "infrastructure",
+      "title": "Palantir-Partnerschaft für Government",
+      "description": "Anthropic geht eine Partnerschaft mit Palantir Technologies ein, um Claude über Palantirs Plattformen für Regierungs- und Verteidigungskunden zugänglich zu machen. Dies markiert den ersten direkten Schritt in den militärischen Sektor.",
+      "sources": ["https://www.palantir.com/newsroom/press-releases/palantir-anthropic-partnership-2024/"]
+    },
+    {
+      "date": "2025",
+      "phase": "doctrine",
+      "title": "Nutzungsrichtlinien geändert für Militär",
+      "description": "Anthropic ändert seine Acceptable Use Policy, um militärische Anwendungen explizit zu erlauben. Die vorherige Klausel, die militärische Nutzung untersagte, wird entfernt oder abgeschwächt.",
+      "sources": ["https://TODO-source-anthropic-aup-change-military"]
+    },
+    {
+      "date": "2025",
+      "phase": "event",
+      "title": "$200M Pentagon-Vertrag",
+      "description": "Anthropic schließt einen Vertrag über 200 Millionen US-Dollar mit dem Pentagon ab. Claude wird für Analyse, Planung und Entscheidungsunterstützung in militärischen Kontexten eingesetzt.",
+      "sources": ["https://www.nytimes.com/2025/anthropic-pentagon-contract-200-million/"]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "AI-Safety-Community kritisiert Kursänderung",
+      "description": "Führende KI-Sicherheitsforscher und Organisationen kritisieren Anthropics Abkehr von der ursprünglichen Safety-Mission. Der Interessenkonflikt zwischen kommerziellen Militärverträgen und verantwortungsvoller KI-Entwicklung wird öffentlich debattiert.",
+      "sources": ["https://TODO-source-ai-safety-community-criticism"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nytimes.com/2025/anthropic-pentagon-contract-200-million/",
+      "title": "Anthropic schließt $200M Vertrag mit Pentagon",
+      "publisher": "The New York Times",
+      "date": "2025",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.palantir.com/newsroom/press-releases/palantir-anthropic-partnership-2024/",
+      "title": "Palantir-Anthropic-Partnerschaft für Regierungskunden",
+      "publisher": "Palantir Technologies",
+      "date": "2024",
+      "type": "company-statement"
+    },
+    {
+      "url": "https://www.anthropic.com/company",
+      "title": "Anthropic Unternehmensprofil und Mission",
+      "publisher": "Anthropic",
+      "date": "2021",
+      "type": "company-statement"
+    },
+    {
+      "url": "https://TODO-source-anthropic-aup-military-change",
+      "title": "Anthropic ändert Nutzungsrichtlinien für militärische Anwendungen",
+      "publisher": "TechCrunch",
+      "date": "2025",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-03-20",
+    "lastUpdated": "2026-03-20",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

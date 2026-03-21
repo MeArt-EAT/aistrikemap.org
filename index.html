@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIStrikeMap — Interaktive Weltkarte dokumentierter KI-bezogener Menschenrechtsvorfälle mit Rückwärts-Timelines.">
+  <title>AIStrikeMap — KI-Vorfälle weltweit</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/leaflet-custom.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#map" class="skip-link" data-i18n="a11y.skip">Zum Inhalt springen</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo" aria-label="AIStrikeMap Home">
+      <span class="logo-accent">AI</span>StrikeMap
+    </a>
+    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false">☰</button>
+    <nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
+      <a href="methodik.html" data-i18n="nav.methodology">Methodik</a>
+      <a href="transparenz.html" data-i18n="nav.transparency">Transparenz</a>
+      <a href="impressum.html" data-i18n="nav.imprint">Impressum</a>
+      <a href="datenschutz.html" data-i18n="nav.privacy">Datenschutz</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="map-wrapper" id="main-content">
+    <!-- Map -->
+    <div id="map" role="application" data-i18n-aria="a11y.map" aria-label="Interaktive Weltkarte mit KI-Vorfällen"></div>
+
+    <!-- Filter Panel -->
+    <aside class="filter-panel" aria-label="Filter">
+      <div class="filter-panel__header">
+        <h2 data-i18n="filter.title">Filter</h2>
+        <button class="filter-toggle-btn" aria-label="Filter ein-/ausklappen">▼</button>
+      </div>
+      <div class="filter-panel__body">
+        <!-- Incident Types -->
+        <div class="filter-section">
+          <div class="filter-section__title" data-i18n="filter.type">Vorfalltyp</div>
+          <div id="filter-types"></div>
+        </div>
+
+        <!-- Severity -->
+        <div class="filter-section">
+          <div class="filter-section__title" data-i18n="filter.severity">Schweregrad</div>
+          <input type="range" id="filter-severity" class="severity-slider" min="1" max="5" value="1" aria-label="Mindest-Schweregrad">
+          <div class="severity-labels">
+            <span>1</span>
+            <span id="severity-value">Bedenklich</span>
+            <span>5</span>
+          </div>
+        </div>
+
+        <!-- Verification -->
+        <div class="filter-section">
+          <div class="filter-section__title" data-i18n="filter.verification">Verifizierung</div>
+          <input type="range" id="filter-verification" class="severity-slider" min="1" max="4" value="1" aria-label="Mindest-Verifizierungsstufe">
+          <div class="severity-labels">
+            <span>1</span>
+            <span id="verification-value">Gemeldet</span>
+            <span>4</span>
+          </div>
+        </div>
+
+        <!-- Reset -->
+        <button id="filter-reset" class="filter-reset-btn" data-i18n="filter.reset">Filter zurücksetzen</button>
+      </div>
+    </aside>
+
+    <!-- Detail Panel -->
+    <section id="detail-panel" class="detail-panel" aria-label="Vorfall-Details" tabindex="-1">
+      <div class="detail-panel__header">
+        <h2 class="detail-panel__title"></h2>
+        <button class="detail-close-btn" aria-label="Schließen">&times;</button>
+      </div>
+      <div class="detail-panel__body"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span data-i18n="footer.license">Daten: CC BY-NC-SA 4.0 | Code: AGPL-3.0</span>
+    <span class="ai-disclosure" data-i18n="footer.ai">Technik: KI-unterstützt | Inhalt: Menschlich verifiziert</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin="anonymous"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/detail-panel.js"></script>
+  <script src="js/filters.js"></script>
+  <script>
+    (async function () {
+      // Initialize i18n
+      await I18n.load('de');
+
+      // Initialize map
+      StrikeMap.init();
+
+      // Initialize detail panel
+      DetailPanel.init();
+
+      // Load data and show markers
+      var incidents = await DataLoader.loadAll();
+      StrikeMap.addMarkers(incidents);
+
+      // Initialize filters
+      Filters.init();
+
+      // Mobile nav toggle
+      var navToggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      navToggle.addEventListener('click', function () {
+        nav.classList.toggle('open');
+        var expanded = nav.classList.contains('open');
+        navToggle.setAttribute('aria-expanded', expanded);
+      });
+    })();
+  </script>
+</body>
+</html>

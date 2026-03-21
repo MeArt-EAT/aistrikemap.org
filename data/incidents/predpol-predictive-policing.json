@@ -1,0 +1,117 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/predpol-predictive-policing",
+  "name": "PredPol / Geolitica Predictive Policing",
+  "description": "Der Predictive-Policing-Algorithmus PredPol (später umbenannt in Geolitica) verstärkt systematisch rassistische Polizeiarbeit in US-Städten. Das System sagt voraus, wo Verbrechen stattfinden werden, basiert jedoch auf historischen Polizeidaten, die bestehende Diskriminierungsmuster reproduzieren und verstärken.",
+  "startDate": "2012",
+  "location": {
+    "@type": "Place",
+    "name": "Los Angeles, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0522,
+      "longitude": -118.2437
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["predictive-policing", "discrimination"],
+  "asm:affectedRights": ["Gleichbehandlung", "Schutz vor Diskriminierung", "Recht auf faire Behandlung durch Strafverfolgung", "Bewegungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "PredPol/Geolitica",
+      "type": "company",
+      "asm:systems": ["PredPol"]
+    },
+    {
+      "name": "LAPD",
+      "type": "government"
+    },
+    {
+      "name": "Diverse US-Polizeibehörden",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "PredPol entwickelt und gegründet",
+      "description": "PredPol wird als Spin-off akademischer Forschung an der UCLA gegründet. Der Algorithmus basiert auf seismologischen Modellen, die auf Kriminalitätsdaten angewendet werden, um Hotspots vorherzusagen.",
+      "sources": ["https://www.predpol.com/about/"]
+    },
+    {
+      "date": "2013",
+      "phase": "doctrine",
+      "title": "LAPD führt PredPol ein",
+      "description": "Das Los Angeles Police Department wird einer der ersten großen Anwender von PredPol. Das System wird in mehreren Polizeidistrikten eingesetzt und bestimmt, welche Gebiete verstärkt kontrolliert werden.",
+      "sources": ["https://www.latimes.com/local/lanow/la-me-ln-pred-pol-lapd-20130828-story.html"]
+    },
+    {
+      "date": "2019",
+      "phase": "event",
+      "title": "Studien belegen rassistische Verzerrung",
+      "description": "Mehrere unabhängige Studien belegen, dass PredPol systematisch überwiegend schwarze und lateinamerikanische Viertel als Hochrisikozonen markiert. Die Rückkopplungsschleife verstärkt bestehende Polizeimuster: Mehr Patrouille führt zu mehr Festnahmen, was mehr Daten erzeugt, die weitere Patrouille rechtfertigen.",
+      "sources": ["https://www.nature.com/articles/s41599-020-00584-7"]
+    },
+    {
+      "date": "2020",
+      "phase": "consequences",
+      "title": "LAPD beendet Nutzung von PredPol",
+      "description": "Nach anhaltender Kritik und den Black-Lives-Matter-Protesten beendet das LAPD die Nutzung von PredPol. Mehrere andere Polizeibehörden folgen diesem Schritt und stellen die Nutzung prädiktiver Polizei-Software ein.",
+      "sources": ["https://www.latimes.com/california/story/2020-04-21/lapd-ends-predictive-policing-program"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "PredPol benennt sich in Geolitica um",
+      "description": "Unter dem Druck öffentlicher Kritik benennt sich PredPol in Geolitica um. Trotz des Namenwechsels bleiben die grundlegenden algorithmischen Probleme bestehen. Das Unternehmen stellt 2023 schließlich den Betrieb ein.",
+      "sources": ["https://www.vice.com/en/article/predpol-rebrands-geolitica-predictive-policing/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nature.com/articles/s41599-020-00584-7",
+      "title": "Dirty Data, Bad Predictions: Rassistische Verzerrung in Predictive Policing",
+      "publisher": "Nature Humanities and Social Sciences Communications",
+      "date": "2020",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.latimes.com/california/story/2020-04-21/lapd-ends-predictive-policing-program",
+      "title": "LAPD beendet Predictive-Policing-Programm",
+      "publisher": "Los Angeles Times",
+      "date": "2020-04-21",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.vice.com/en/article/predpol-rebrands-geolitica-predictive-policing/",
+      "title": "PredPol benennt sich in Geolitica um nach Kritik",
+      "publisher": "VICE",
+      "date": "2021",
+      "type": "news-article"
+    },
+    {
+      "url": "https://stoplapdspying.org/predpol-documents/",
+      "title": "PredPol-Dokumente zeigen systematische Überwachung",
+      "publisher": "Stop LAPD Spying Coalition",
+      "date": "2019",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-03-20",
+    "lastUpdated": "2026-03-20",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

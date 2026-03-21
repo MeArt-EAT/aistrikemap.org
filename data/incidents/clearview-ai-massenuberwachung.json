@@ -1,0 +1,113 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/clearview-ai-massenuberwachung",
+  "name": "Clearview AI Massenüberwachung",
+  "description": "Clearview AI scrapet Milliarden von Fotos aus sozialen Medien und dem offenen Internet, um eine der weltweit größten Gesichtserkennungsdatenbanken aufzubauen. Das System wird von Polizeibehörden in den USA und weltweit ohne demokratische Kontrolle eingesetzt und verstößt gegen Datenschutzgesetze in der EU und Australien.",
+  "startDate": "2017",
+  "location": {
+    "@type": "Place",
+    "name": "New York, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.7128,
+      "longitude": -74.006
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["facial-recognition", "surveillance", "data-misuse"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Datenschutz", "Informationelle Selbstbestimmung", "Schutz vor anlassloser Überwachung"],
+  "asm:actors": [
+    {
+      "name": "Clearview AI",
+      "type": "company",
+      "asm:systems": ["Clearview AI"]
+    },
+    {
+      "name": "Diverse Polizeibehörden",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Clearview AI gegründet",
+      "description": "Hoan Ton-That und Richard Schwartz gründen Clearview AI in New York. Das Unternehmen beginnt mit dem massenhaften Scraping von Fotos aus sozialen Netzwerken wie Facebook, Instagram, Twitter und LinkedIn.",
+      "sources": ["https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html"]
+    },
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Milliarden-Foto-Datenbank aufgebaut",
+      "description": "Clearview AI hat über 3 Milliarden Fotos aus dem Internet gesammelt und eine Gesichtserkennungsdatenbank aufgebaut, die die Datenbanken des FBI bei weitem übertrifft. Das Scraping erfolgt ohne Zustimmung der betroffenen Personen.",
+      "sources": ["https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html"]
+    },
+    {
+      "date": "2020-01",
+      "phase": "event",
+      "title": "Nutzung durch Strafverfolgungsbehörden enthüllt",
+      "description": "Eine Recherche der New York Times enthüllt, dass über 600 Strafverfolgungsbehörden in den USA Clearview AI nutzen. Das Tool wird ohne öffentliche Debatte oder rechtliche Grundlage eingesetzt.",
+      "sources": ["https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html"]
+    },
+    {
+      "date": "2020-05",
+      "phase": "consequences",
+      "title": "ACLU-Klage gegen Clearview AI",
+      "description": "Die American Civil Liberties Union (ACLU) verklagt Clearview AI in Illinois wegen Verstoßes gegen den Biometric Information Privacy Act (BIPA). Die Klage argumentiert, dass das Scraping biometrischer Daten ohne Zustimmung illegal ist.",
+      "sources": ["https://www.aclu.org/press-releases/aclu-sues-clearview-ai"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "EU- und Australien-Strafen",
+      "description": "Datenschutzbehörden in der EU (Italien, Frankreich, Griechenland) und Australien verhängen Millionenstrafen gegen Clearview AI wegen Verstoßes gegen DSGVO und lokale Datenschutzgesetze. Das Unternehmen wird aufgefordert, alle gesammelten Daten europäischer und australischer Bürger zu löschen.",
+      "sources": ["https://www.bbc.com/news/technology-60643452"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html",
+      "title": "Das geheime Unternehmen, das die Privatsphäre beenden könnte",
+      "publisher": "The New York Times",
+      "date": "2020-01-18",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.aclu.org/press-releases/aclu-sues-clearview-ai",
+      "title": "ACLU verklagt Clearview AI wegen Verletzung der Privatsphäre",
+      "publisher": "ACLU",
+      "date": "2020-05",
+      "type": "legal-document"
+    },
+    {
+      "url": "https://www.bbc.com/news/technology-60643452",
+      "title": "Clearview AI mit Millionenstrafe in Italien belegt",
+      "publisher": "BBC",
+      "date": "2022-03",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.oaic.gov.au/newsroom/clearview-ai-breached-australians-privacy",
+      "title": "Clearview AI verstößt gegen australisches Datenschutzrecht",
+      "publisher": "Office of the Australian Information Commissioner",
+      "date": "2021-11",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-03-20",
+    "lastUpdated": "2026-03-20",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

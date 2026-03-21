@@ -1,0 +1,40 @@
+/**
+ * AIStrikeMap — Data Loader
+ * Loads incident index and individual JSON-LD files.
+ */
+const DataLoader = (function () {
+  let incidents = [];
+
+  async function loadAll() {
+    try {
+      var resp = await fetch('data/index.json');
+      if (!resp.ok) throw new Error('Could not load data/index.json');
+      var index = await resp.json();
+
+      var promises = index.incidents.map(function (entry) {
+        return fetch('data/incidents/' + entry.file)
+          .then(function (r) {
+            if (!r.ok) throw new Error('Failed to load ' + entry.file);
+            return r.json();
+          })
+          .catch(function (err) {
+            console.warn('[DataLoader]', err);
+            return null;
+          });
+      });
+
+      var results = await Promise.all(promises);
+      incidents = results.filter(function (r) { return r !== null; });
+      return incidents;
+    } catch (err) {
+      console.error('[DataLoader]', err);
+      return [];
+    }
+  }
+
+  function getIncidents() {
+    return incidents;
+  }
+
+  return { loadAll: loadAll, getIncidents: getIncidents };
+})();
