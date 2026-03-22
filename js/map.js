@@ -15,11 +15,11 @@ const StrikeMap = (function () {
 
   function init() {
     map = L.map('map', {
-      center: [20, 0],
+      center: [25, 0],
       zoom: 2,
       minZoom: 2,
       maxZoom: 18,
-      maxBounds: [[-85, -180], [85, 180]],
+      maxBounds: [[-55, -180], [85, 180]],
       maxBoundsViscosity: 1.0,
       zoomControl: true
     });
