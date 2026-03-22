@@ -99,32 +99,15 @@
   <script src="js/data-loader.js"></script>
   <script src="js/detail-panel.js"></script>
   <script src="js/filters.js"></script>
+  <script src="js/nav.js"></script>
   <script>
     (async function () {
-      // Initialize i18n
       await I18n.load('de');
-
-      // Initialize map
       StrikeMap.init();
-
-      // Initialize detail panel
       DetailPanel.init();
-
-      // Load data and show markers
       var incidents = await DataLoader.loadAll();
       StrikeMap.addMarkers(incidents);
-
-      // Initialize filters
       Filters.init();
-
-      // Mobile nav toggle
-      var navToggle = document.querySelector('.nav-toggle');
-      var nav = document.querySelector('.site-nav');
-      navToggle.addEventListener('click', function () {
-        nav.classList.toggle('open');
-        var expanded = nav.classList.contains('open');
-        navToggle.setAttribute('aria-expanded', expanded);
-      });
     })();
   </script>
 </body>
