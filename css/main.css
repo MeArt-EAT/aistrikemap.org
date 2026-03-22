@@ -563,6 +563,50 @@ a:focus-visible {
   line-height: 1.6;
 }
 
+/* Tables */
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.page-content th,
+.page-content td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.page-content th {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.page-content td {
+  color: var(--text-secondary);
+}
+
+.page-content tbody tr:hover {
+  background: var(--bg-surface-hover);
+}
+
+.page-content tbody tr:nth-child(1) td:first-child { color: var(--severity-1); font-weight: 700; }
+.page-content tbody tr:nth-child(2) td:first-child { color: var(--severity-2); font-weight: 700; }
+.page-content tbody tr:nth-child(3) td:first-child { color: var(--severity-3); font-weight: 700; }
+.page-content tbody tr:nth-child(4) td:first-child { color: var(--severity-4); font-weight: 700; }
+.page-content tbody tr:nth-child(5) td:first-child { color: var(--severity-5); font-weight: 700; }
+
+/* Active nav link */
+.site-nav a[aria-current="page"] {
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent);
+}
+
 /* AI Disclosure Banner */
 .ai-disclosure {
   font-size: 0.7rem;
@@ -618,5 +662,14 @@ a:focus-visible {
     gap: 0.25rem;
     text-align: center;
     padding: 0.5rem;
+  }
+
+  .page-content table {
+    font-size: 0.8rem;
+  }
+
+  .page-content th,
+  .page-content td {
+    padding: 0.4rem 0.5rem;
   }
 }
