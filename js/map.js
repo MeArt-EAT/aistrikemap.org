@@ -10,7 +10,7 @@ const StrikeMap = (function () {
     2: '#f39c12',
     3: '#e67e22',
     4: '#e74c3c',
-    5: '#8e44ad'
+    5: '#ba68c8'
   };
 
   function init() {
