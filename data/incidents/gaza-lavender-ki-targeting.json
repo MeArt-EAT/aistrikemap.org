@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/gaza-lavender-ki-targeting",
+  "name": "Gaza: KI-Zielsysteme Lavender und Gospel",
+  "description": "Das israelische Militär setzt KI-Systeme namens Lavender und The Gospel ein, um in Gaza automatisiert Ziele für Luftangriffe zu generieren. Lavender markiert Zehntausende Palästinenser als potenzielle Militante. Das System Where's Daddy? löst Bombenangriffe aus, wenn markierte Personen ihr Zuhause betreten — oft mit Familien. Die Systeme senken menschliche Prüfungszeiten auf unter 20 Sekunden pro Ziel.",
+  "startDate": "2023",
+  "location": {
+    "@type": "Place",
+    "name": "Gaza, Palästinensische Gebiete",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.3547,
+      "longitude": 34.3088
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PS"
+    }
+  },
+  "asm:incidentType": ["autonomous-weapons", "military-ai"],
+  "asm:affectedRights": ["Recht auf Leben", "Schutz der Zivilbevölkerung", "Verhältnismäßigkeit", "Menschenwürde"],
+  "asm:actors": [
+    {
+      "name": "Israel Defense Forces (IDF)",
+      "type": "military",
+      "asm:systems": ["Lavender", "The Gospel", "Where's Daddy?"]
+    },
+    {
+      "name": "Israelisches Verteidigungsministerium",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "The Gospel generiert Bombenziele",
+      "description": "Nach dem 7. Oktober setzt das israelische Militär The Gospel ein, ein KI-System das automatisiert Gebäude und Strukturen als militärische Ziele identifiziert. Das System beschleunigt die Zielgenerierung massiv — von zuvor 50 Zielen pro Jahr auf über 100 pro Tag.",
+      "sources": ["https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-bombing-targets"]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Lavender markiert 37.000 Palästinenser",
+      "description": "Das KI-System Lavender erstellt eine Datenbank von schätzungsweise 37.000 Palästinensern, die als mutmaßliche Mitglieder bewaffneter Gruppen eingestuft werden. Die menschliche Überprüfung jedes Ziels dauert laut Quellen aus dem Militär durchschnittlich nur 20 Sekunden.",
+      "sources": ["https://www.972mag.com/lavender-ai-israeli-army-gaza/"]
+    },
+    {
+      "date": "2024-04",
+      "phase": "event",
+      "title": "+972/Local Call Enthüllung",
+      "description": "+972 Magazine und Local Call veröffentlichen eine investigative Recherche auf Basis von Aussagen sechs israelischer Geheimdienstmitarbeiter. Die Untersuchung enthüllt die Systeme Lavender und Where's Daddy? sowie die bewusste Inkaufnahme ziviler Opfer bei der KI-gestützten Zielauswahl.",
+      "sources": ["https://www.972mag.com/lavender-ai-israeli-army-gaza/"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Internationale Debatte über KI-Waffen",
+      "description": "Die Enthüllungen lösen eine globale Debatte über autonome Waffensysteme aus. Der UN-Hochkommissar für Menschenrechte fordert eine unabhängige Untersuchung. Der IGH prüft die Rechtmäßigkeit der israelischen Militäroperationen in Gaza.",
+      "sources": ["https://www.ohchr.org/en/press-releases/2024/04/un-experts-deeply-concerned-over-reported-use-ai-targeting-gaza"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.972mag.com/lavender-ai-israeli-army-gaza/",
+      "title": "Lavender: The AI machine directing Israel's bombing spree in Gaza",
+      "publisher": "+972 Magazine",
+      "date": "2024-04-03",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-bombing-targets",
+      "title": "The Gospel: How Israel Uses AI to Select Bombing Targets in Gaza",
+      "publisher": "The Guardian",
+      "date": "2023-12-01",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.ohchr.org/en/press-releases/2024/04/un-experts-deeply-concerned-over-reported-use-ai-targeting-gaza",
+      "title": "UN-Experten besorgt über KI-Targeting in Gaza",
+      "publisher": "UN OHCHR",
+      "date": "2024-04",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-03-23",
+    "lastUpdated": "2026-03-23",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}
