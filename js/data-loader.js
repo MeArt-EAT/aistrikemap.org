@@ -7,7 +7,7 @@ const DataLoader = (function () {
 
   async function loadAll() {
     try {
-      var resp = await fetch('data/index.json');
+      var resp = await fetch('data/index.json?v=' + Date.now());
       if (!resp.ok) throw new Error('Could not load data/index.json');
       var index = await resp.json();
 
