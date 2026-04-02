@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/myanmar-facebook-genozid",
+  "name": "Myanmar: Facebooks Rolle beim Völkermord an den Rohingya",
+  "description": "Facebooks Empfehlungsalgorithmen und mangelnde Content-Moderation tragen maßgeblich zur Verbreitung von Hassrede und Desinformation bei, die den Völkermord an der Rohingya-Minderheit in Myanmar befeuern. UN-Ermittler stellen fest, dass Facebook eine 'bestimmende Rolle' bei der Aufstachelung zur Gewalt spielte. Das Unternehmen hatte trotz Warnungen nur eine Handvoll burmesischsprachiger Moderator:innen für 20 Millionen Nutzer:innen.",
+  "startDate": "2012",
+  "location": {
+    "@type": "Place",
+    "name": "Naypyidaw / Rakhine, Myanmar",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 19.7633,
+      "longitude": 96.0785
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MM"
+    }
+  },
+  "asm:incidentType": ["censorship", "deepfakes", "discrimination"],
+  "asm:affectedRights": ["Recht auf Leben", "Schutz vor Völkermord", "Schutz vor Diskriminierung", "Recht auf Sicherheit", "Meinungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Facebook / Meta Platforms",
+      "type": "company",
+      "asm:systems": ["News Feed Algorithm", "Content Recommendation System"]
+    },
+    {
+      "name": "Myanmar Militär (Tatmadaw)",
+      "type": "military"
+    },
+    {
+      "name": "UN Fact-Finding Mission on Myanmar",
+      "type": "organization"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "Facebook wird Hauptnachrichtenquelle in Myanmar",
+      "description": "Mit der Liberalisierung des Internets in Myanmar wird Facebook praktisch synonym mit 'dem Internet'. Durch günstige Datentarife nutzen Millionen Menschen Facebook als einzige Nachrichtenquelle. Das Militär beginnt systematisch Fake-Accounts und Seiten zu erstellen, um anti-Rohingya-Propaganda zu verbreiten.",
+      "sources": ["https://www.reuters.com/investigates/special-report/myanmar-facebook-hate/"]
+    },
+    {
+      "date": "2017-08",
+      "phase": "event",
+      "title": "Militäroffensive mit Facebook-Desinformation",
+      "description": "Das Myanmar-Militär startet eine 'Clearance Operation' im Bundesstaat Rakhine. Gleichzeitig flutet koordinierte Propaganda Facebook — darunter gefälschte Nachrichten, Hetzreden und Aufrufe zur Gewalt. Facebooks Algorithmen verstärken virale Inhalte, ohne die burmesischsprachige Hassrede zu erkennen. Über 700.000 Rohingya fliehen nach Bangladesch.",
+      "sources": ["https://www.reuters.com/investigates/special-report/myanmar-facebook-hate/"]
+    },
+    {
+      "date": "2018-03",
+      "phase": "consequences",
+      "title": "UN: Facebook spielte 'bestimmende Rolle'",
+      "description": "Die UN Independent International Fact-Finding Mission on Myanmar stellt fest, dass Social Media — und insbesondere Facebook — eine 'determining role' bei der Verbreitung von Hassrede spielte. Facebook-CEO Zuckerberg räumt ein, dass das Unternehmen zu langsam reagiert hat.",
+      "sources": ["https://www.ohchr.org/en/hr-bodies/hrc/myanmar-ffm/index"]
+    },
+    {
+      "date": "2021-12",
+      "phase": "consequences",
+      "title": "Rohingya verklagen Meta auf 150 Milliarden USD",
+      "description": "Rohingya-Überlebende reichen eine Klage über 150 Milliarden USD gegen Meta ein. Sie argumentieren, Facebooks Algorithmen hätten die Verbreitung von Gewaltaufrufen aktiv verstärkt, und das Unternehmen habe trotz wiederholter Warnungen keine angemessene Content-Moderation implementiert.",
+      "sources": ["https://www.bbc.co.uk/news/world-asia-59558090"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.reuters.com/investigates/special-report/myanmar-facebook-hate/",
+      "title": "How Facebook's rise fueled chaos and confusion in Myanmar",
+      "publisher": "Reuters",
+      "date": "2018-06-15",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.ohchr.org/en/hr-bodies/hrc/myanmar-ffm/index",
+      "title": "Independent International Fact-Finding Mission on Myanmar",
+      "publisher": "UN Human Rights Council",
+      "date": "2018-09",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/world-asia-59558090",
+      "title": "Rohingya sue Facebook for £150bn over Myanmar genocide",
+      "publisher": "BBC News",
+      "date": "2021-12-06",
+      "type": "news-article"
+    },
+    {
+      "url": "https://about.fb.com/news/2018/11/myanmar-hria/",
+      "title": "An Independent Assessment of the Human Rights Impact of Facebook in Myanmar",
+      "publisher": "BSR / Meta",
+      "date": "2018-11-05",
+      "type": "company-statement"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/japan-line-datenleck-china",
+  "name": "Japan: LINE-Datenleck — 86 Millionen Nutzerdaten in China zugänglich",
+  "description": "Japans meistgenutzte Messaging-App LINE (86 Millionen Nutzer:innen) gewährt chinesischen Subunternehmer:innen Zugriff auf persönliche Daten japanischer Nutzer:innen, einschließlich Namen, Telefonnummern und Chat-Inhalte. Der Vorfall löst eine nationale Debatte über Datensouveränität und die Abhängigkeit von ausländischen Technologieunternehmen aus. Die japanische Regierung und zahlreiche Kommunen stellen die Nutzung von LINE für öffentliche Dienste ein.",
+  "startDate": "2021-03",
+  "location": {
+    "@type": "Place",
+    "name": "Tokio, Japan",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.6762,
+      "longitude": 139.6503
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "JP"
+    }
+  },
+  "asm:incidentType": ["data-misuse"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Recht auf Datenschutz", "Recht auf informationelle Selbstbestimmung"],
+  "asm:actors": [
+    {
+      "name": "LINE Corporation / Z Holdings (SoftBank + Naver)",
+      "type": "company",
+      "asm:systems": ["LINE Messenger"]
+    },
+    {
+      "name": "Chinesisches Subunternehmen (LINE China)",
+      "type": "company"
+    },
+    {
+      "name": "Japanisches Ministerium für Innere Angelegenheiten (MIC)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "LINE als quasi-öffentliche Infrastruktur",
+      "description": "LINE wird in Japan zur dominanten Kommunikationsplattform mit 86 Millionen Nutzer:innen — über zwei Drittel der Bevölkerung. Hunderte Kommunalverwaltungen nutzen LINE für Bürgerservices, COVID-19-Befragungen und offizielle Kommunikation. LINE entwickelt Teile seiner Software in China durch Naver-Tochtergesellschaften.",
+      "sources": ["https://www.asahi.com/ajw/articles/14252025"]
+    },
+    {
+      "date": "2021-03",
+      "phase": "event",
+      "title": "Zugriff chinesischer Techniker auf japanische Nutzerdaten enthüllt",
+      "description": "Asahi Shimbun enthüllt, dass chinesische Mitarbeiter:innen von LINE-Subunternehmen auf persönliche Daten japanischer Nutzer:innen zugreifen konnten, einschließlich Name, Telefonnummer und Chat-Verläufe. Mindestens 32 Zugriffe auf japanische Nutzerdaten werden dokumentiert. LINE hatte zuvor behauptet, alle Daten würden in Japan gespeichert.",
+      "sources": ["https://www.asahi.com/ajw/articles/14252025"]
+    },
+    {
+      "date": "2021-04",
+      "phase": "consequences",
+      "title": "Regierung und Kommunen stoppen LINE-Nutzung",
+      "description": "Das japanische Ministerium für Innere Angelegenheiten ordnet eine Überprüfung an. Zahlreiche Kommunalverwaltungen stoppen die Nutzung von LINE für Bürgerservices. Der Personalausweis-Dienst My Number wird von LINE entkoppelt. LINE-CEO entschuldigt sich öffentlich und verspricht vollständige Datenmigration nach Japan.",
+      "sources": ["https://www.japantimes.co.jp/news/2021/03/19/business/line-data-china/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Erneuter Datenleck-Skandal und Regulierungsdebatte",
+      "description": "Ein weiterer Vorfall 2023 zeigt, dass über die Naver-Cloud erneut Daten von 440.000 LINE-Nutzer:innen kompromittiert wurden. Die japanische Regierung verstärkt Forderungen nach 'Data Localization' und der Trennung von LINEs Infrastruktur von der südkoreanischen Muttergesellschaft Naver. Der Fall treibt Japans Datenschutzgesetzgebung voran.",
+      "sources": ["https://www.reuters.com/technology/japans-line-yahoo-hit-by-data-breach-involving-440000-users-2023-11-27/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.asahi.com/ajw/articles/14252025",
+      "title": "LINE allowed Chinese affiliate access to personal data of Japanese users",
+      "publisher": "Asahi Shimbun",
+      "date": "2021-03-17",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/news/2021/03/19/business/line-data-china/",
+      "title": "Japan to probe Line over user data accessible from China",
+      "publisher": "Japan Times",
+      "date": "2021-03-19",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.reuters.com/technology/japans-line-yahoo-hit-by-data-breach-involving-440000-users-2023-11-27/",
+      "title": "Japan's Line Yahoo hit by data breach involving 440,000 users",
+      "publisher": "Reuters",
+      "date": "2023-11-27",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

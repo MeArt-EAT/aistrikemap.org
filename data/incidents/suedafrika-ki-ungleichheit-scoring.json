@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/suedafrika-ki-ungleichheit-scoring",
+  "name": "Südafrika: Algorithmisches Kredit-Scoring verstärkt Apartheid-Erbe",
+  "description": "In Südafrika werden KI-gestützte Kredit-Scoring-Systeme eingesetzt, die historische Daten aus der Apartheid-Ära verwenden und systematisch Schwarze Südafrikaner:innen benachteiligen. Die Algorithmen nutzen Proxys wie Postleitzahl, Bildungseinrichtung und Beschäftigungshistorie, die stark mit der Hautfarbe korrelieren. Gleichzeitig setzt die Polizei Gesichtserkennungstechnologie in Townships ein, die unverhältnismäßig Schwarze Gemeinschaften überwacht.",
+  "startDate": "2016",
+  "location": {
+    "@type": "Place",
+    "name": "Johannesburg, Südafrika",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -26.2041,
+      "longitude": 28.0473
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ZA"
+    }
+  },
+  "asm:incidentType": ["discrimination", "surveillance", "data-misuse"],
+  "asm:affectedRights": ["Schutz vor Diskriminierung", "Recht auf Gleichheit", "Recht auf Zugang zu Finanzdienstleistungen", "Recht auf Privatsphäre", "Recht auf Wohnen"],
+  "asm:actors": [
+    {
+      "name": "Südafrikanische Banken und Kreditbüros",
+      "type": "company",
+      "asm:systems": ["Kredit-Scoring-Algorithmen"]
+    },
+    {
+      "name": "SAPS (South African Police Service)",
+      "type": "government",
+      "asm:systems": ["Gesichtserkennung in Townships"]
+    },
+    {
+      "name": "Research ICT Africa",
+      "type": "organization"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "KI-Scoring im Bankwesen verbreitet sich",
+      "description": "Südafrikanische Banken und Fintech-Unternehmen setzen zunehmend auf KI-gestützte Kredit-Scoring-Modelle, um Kreditentscheidungen zu automatisieren. Die Modelle werden auf historischen Daten trainiert, die die systemische Ungleichheit der Apartheid widerspiegeln: Schwarze Südafrikaner:innen leben häufiger in Gegenden mit niedrigen Scores, haben weniger formale Bildungsabschlüsse und kürzere Kredithistorien.",
+      "sources": ["https://researchictafrica.net/publication/artificial-intelligence-and-inequality-in-africa/"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Forschung dokumentiert algorithmische Ungleichheit",
+      "description": "Research ICT Africa und die University of Cape Town dokumentieren, dass KI-Systeme in Südafrika bestehende Ungleichheiten reproduzieren und verstärken. Postleitzahlen-basiertes Scoring diskriminiert systematisch ehemalige Township-Bewohner:innen. Algorithmen, die 'neutral' erscheinen, kodifizieren das Erbe der Apartheid in Datenstrukturen.",
+      "sources": ["https://researchictafrica.net/publication/artificial-intelligence-and-inequality-in-africa/"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Gesichtserkennung in Townships eingesetzt",
+      "description": "SAPS setzt Gesichtserkennungstechnologie in Vierteln ein, die überproportional von Schwarzen Südafrikaner:innen bewohnt werden. Private Sicherheitsunternehmen installieren Kameras in Wohngebieten ohne Zustimmung der Bewohner:innen. Die Technologie wird ohne das im POPIA-Datenschutzgesetz vorgeschriebene Impact Assessment eingesetzt.",
+      "sources": ["https://www.dailymaverick.co.za/article/2021-09-06-south-africas-silent-slide-into-a-surveillance-state/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "POPIA-Durchsetzung und zivilgesellschaftlicher Widerstand",
+      "description": "Die südafrikanische Information Regulator beginnt mit der Durchsetzung des POPIA-Datenschutzgesetzes, das automatisierte Entscheidungsfindung reguliert. Zivilgesellschaftliche Organisationen fordern ein Verbot von Gesichtserkennung in Townships und eine Überprüfung aller Kredit-Scoring-Algorithmen auf diskriminierende Auswirkungen.",
+      "sources": ["https://www.dailymaverick.co.za/article/2021-09-06-south-africas-silent-slide-into-a-surveillance-state/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://researchictafrica.net/publication/artificial-intelligence-and-inequality-in-africa/",
+      "title": "Artificial Intelligence and Inequality in Africa",
+      "publisher": "Research ICT Africa",
+      "date": "2020",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.dailymaverick.co.za/article/2021-09-06-south-africas-silent-slide-into-a-surveillance-state/",
+      "title": "South Africa's silent slide into a surveillance state",
+      "publisher": "Daily Maverick",
+      "date": "2021-09-06",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.accessnow.org/cms/assets/uploads/2023/04/Biometric-surveillance-in-Africa-report.pdf",
+      "title": "Biometric surveillance in Africa",
+      "publisher": "Access Now",
+      "date": "2023-04",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

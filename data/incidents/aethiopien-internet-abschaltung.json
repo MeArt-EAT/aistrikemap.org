@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/aethiopien-internet-abschaltung",
+  "name": "Äthiopien: KI-gestützte Internetabschaltungen und Tigray-Konflikt",
+  "description": "Während des Bürgerkriegs in der Region Tigray (2020–2022) setzt die äthiopische Regierung massive Internetabschaltungen und Telekommunikationssperren ein, um Informationen über Gräueltaten zu unterdrücken. Gleichzeitig werden chinesische Überwachungssysteme zur Kontrolle der Bevölkerung genutzt. Die Abschaltungen betreffen zeitweise 100 Millionen Menschen und werden als Waffe im Informationskrieg eingesetzt.",
+  "startDate": "2020-11",
+  "location": {
+    "@type": "Place",
+    "name": "Addis Abeba / Tigray, Äthiopien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.0192,
+      "longitude": 38.7525
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ET"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance"],
+  "asm:affectedRights": ["Informationsfreiheit", "Pressefreiheit", "Recht auf Leben", "Recht auf Gesundheit", "Versammlungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Äthiopische Regierung / Ethio Telecom",
+      "type": "government",
+      "asm:systems": ["Internet Shutdown", "DPI-Zensur"]
+    },
+    {
+      "name": "ZTE Corporation",
+      "type": "company",
+      "asm:systems": ["Telekommunikationsinfrastruktur"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-11",
+      "phase": "event",
+      "title": "Tigray-Krieg: Totale Kommunikationssperre",
+      "description": "Mit Beginn der Militäroffensive in Tigray schaltet die Regierung Internet, Telefon und Strom in der gesamten Region ab. 6 Millionen Menschen werden von jeder Kommunikation abgeschnitten. Journalist:innen und humanitäre Organisationen können nicht über die Lage berichten.",
+      "sources": ["https://www.accessnow.org/keepiton-ethiopia/"]
+    },
+    {
+      "date": "2021",
+      "phase": "infrastructure",
+      "title": "Chinesische Überwachungsinfrastruktur",
+      "description": "Äthiopiens staatlicher Telekommunikationsmonopolist Ethio Telecom nutzt Infrastruktur von ZTE und Huawei, die Deep Packet Inspection ermöglicht. Berichte zeigen, dass die Regierung diese Technologie zur gezielten Überwachung von Oppositionellen und Journalist:innen einsetzt.",
+      "sources": ["https://freedomhouse.org/country/ethiopia/freedom-net/2023"]
+    },
+    {
+      "date": "2021-11",
+      "phase": "event",
+      "title": "UN warnt: Abschaltungen kosten Menschenleben",
+      "description": "Die UN-Menschenrechtskommissarin Michelle Bachelet warnt, dass die Kommunikationssperren humanitäre Hilfe behindern und Menschenleben kosten. In Tigray herrscht eine Hungersnot, aber Hilfsorganisationen können weder kommunizieren noch koordinieren. Access Now dokumentiert, dass Äthiopien 2021 das Land mit den meisten Internet-Shutdowns in Afrika ist.",
+      "sources": ["https://www.ohchr.org/en/press-releases/2021/11/ethiopia-un-human-rights-chief-warns-risk-atrocity-crimes"]
+    },
+    {
+      "date": "2022-11",
+      "phase": "consequences",
+      "title": "Friedensabkommen — Abschaltungen dauern an",
+      "description": "Nach dem Pretoria-Friedensabkommen wird das Internet in Tigray schrittweise wiederhergestellt — nach über zwei Jahren Totalsperre. Die AU-Untersuchungskommission dokumentiert massive Menschenrechtsverletzungen, die durch die Kommunikationssperren verdeckt wurden. Die ITU beginnt Debatten über Internet-Shutdowns als Menschenrechtsverletzung.",
+      "sources": ["https://www.accessnow.org/keepiton-ethiopia/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.accessnow.org/keepiton-ethiopia/",
+      "title": "#KeepItOn: Ethiopia Internet Shutdowns",
+      "publisher": "Access Now",
+      "date": "2022",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://freedomhouse.org/country/ethiopia/freedom-net/2023",
+      "title": "Freedom on the Net 2023: Ethiopia",
+      "publisher": "Freedom House",
+      "date": "2023-10",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.ohchr.org/en/press-releases/2021/11/ethiopia-un-human-rights-chief-warns-risk-atrocity-crimes",
+      "title": "Ethiopia: UN Human Rights Chief warns of risk of atrocity crimes",
+      "publisher": "UN OHCHR",
+      "date": "2021-11-03",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/world-africa-59607805",
+      "title": "Ethiopia's Tigray crisis: The long road to peace",
+      "publisher": "BBC News",
+      "date": "2022-11",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

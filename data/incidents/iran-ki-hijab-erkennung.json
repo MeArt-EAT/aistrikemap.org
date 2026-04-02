@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/iran-ki-hijab-erkennung",
+  "name": "Iran: KI-Gesichtserkennung zur Durchsetzung des Hijab-Zwangs",
+  "description": "Nach dem Tod von Jina Mahsa Amini und den landesweiten Protesten 2022 setzt der Iran KI-gestützte Gesichtserkennung ein, um Frauen zu identifizieren, die gegen die Hijab-Pflicht verstoßen. Überwachungskameras in der Teheraner U-Bahn, auf Autobahnen und in öffentlichen Gebäuden erfassen Frauen ohne Kopftuch. Betroffene erhalten automatisierte SMS-Warnungen, Geldstrafen und Fahrzeugsperren.",
+  "startDate": "2022-09",
+  "location": {
+    "@type": "Place",
+    "name": "Teheran, Iran",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.6892,
+      "longitude": 51.3890
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IR"
+    }
+  },
+  "asm:incidentType": ["facial-recognition", "surveillance", "discrimination"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Religionsfreiheit", "Meinungsfreiheit", "Bewegungsfreiheit", "Recht auf körperliche Selbstbestimmung"],
+  "asm:actors": [
+    {
+      "name": "Iranische Sittenpolizei (Gasht-e Ershad)",
+      "type": "government",
+      "asm:systems": ["Nazer-System (Überwachungskameras)", "KI-Gesichtserkennung"]
+    },
+    {
+      "name": "Iranische Verkehrspolizei (NAJA)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-09-16",
+      "phase": "event",
+      "title": "Tod von Jina Mahsa Amini löst Proteste aus",
+      "description": "Die 22-jährige Jina Mahsa Amini stirbt in Polizeigewahrsam, nachdem sie von der Sittenpolizei wegen 'unsachgemäßem Hijab' festgenommen wurde. Landesweite Proteste unter dem Slogan 'Frau, Leben, Freiheit' erschüttern den Iran. Viele Frauen legen öffentlich das Kopftuch ab.",
+      "sources": ["https://www.bbc.co.uk/news/world-middle-east-63316842"]
+    },
+    {
+      "date": "2023-04",
+      "phase": "infrastructure",
+      "title": "Automatisierte Hijab-Überwachung per Kamera",
+      "description": "Die iranische Polizei kündigt den Einsatz von Überwachungskameras zur automatisierten Erkennung von Frauen ohne Hijab an. In der Teheraner U-Bahn, auf Autobahnen und in Einkaufszentren werden KI-Systeme installiert. Frauen berichten von automatisierten SMS-Warnungen Minuten nach dem Passieren einer Kamera.",
+      "sources": ["https://www.amnesty.org/en/latest/news/2023/09/iran-tech-powered-crackdown-on-women/"]
+    },
+    {
+      "date": "2023-09",
+      "phase": "doctrine",
+      "title": "Fahrzeugsperren für 'Hijab-Verstöße'",
+      "description": "Berichte zeigen, dass Fahrzeuge von Frauen, die beim Autofahren ohne Hijab von Kameras erfasst werden, automatisch gesperrt werden können. Die Polizei konfisziert Fahrzeuge und verhängt Geldstrafen basierend auf Kameraaufnahmen. Amnesty International dokumentiert mindestens 16.000 Fahrzeugkonfiszierungen.",
+      "sources": ["https://www.hrw.org/news/2023/08/29/iran-compulsory-veiling-crackdown-continues"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Internationale Sanktionen und technischer Widerstand",
+      "description": "Die EU verhängt weitere Sanktionen gegen iranische Sicherheitsbeamte. Iranische Aktivist:innen nutzen VPNs und digitale Gegenmaßnahmen. Der UN-Menschenrechtsrat verlängert das Mandat der Fact-Finding Mission. Trotz der Überwachung wächst der zivile Ungehorsam — Millionen Frauen erscheinen ohne Hijab in der Öffentlichkeit.",
+      "sources": ["https://www.ohchr.org/en/hr-bodies/hrc/ffm-iran/index"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2023/09/iran-tech-powered-crackdown-on-women/",
+      "title": "Iran: Authorities using tech-powered crackdown on women defying compulsory veiling laws",
+      "publisher": "Amnesty International",
+      "date": "2023-09-05",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2023/08/29/iran-compulsory-veiling-crackdown-continues",
+      "title": "Iran: Compulsory Veiling Crackdown Continues",
+      "publisher": "Human Rights Watch",
+      "date": "2023-08-29",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/world-middle-east-63316842",
+      "title": "Mahsa Amini: Iran protests",
+      "publisher": "BBC News",
+      "date": "2022-10",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.ohchr.org/en/hr-bodies/hrc/ffm-iran/index",
+      "title": "Independent International Fact-Finding Mission on Iran",
+      "publisher": "UN OHCHR",
+      "date": "2023",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uk-ofqual-a-levels-algorithmus",
+  "name": "UK Ofqual: Algorithmus stuft A-Level-Noten herab",
+  "description": "Wegen der COVID-19-Pandemie können 2020 in England keine Abschlussprüfungen stattfinden. Die Regulierungsbehörde Ofqual entwickelt einen Algorithmus zur standardisierten Notenberechnung, der fast 40% der von Lehrkräften vorhergesagten Noten herabstuft — überproportional an staatlichen Schulen in benachteiligten Gegenden, während Privatschüler:innen profitieren.",
+  "startDate": "2020-08-13",
+  "location": {
+    "@type": "Place",
+    "name": "London, Vereinigtes Königreich",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    }
+  },
+  "asm:incidentType": ["discrimination"],
+  "asm:affectedRights": ["Recht auf Bildung", "Gleichheit vor dem Gesetz", "Schutz vor Diskriminierung", "Recht auf faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "Ofqual (Office of Qualifications and Examinations Regulation)",
+      "type": "government",
+      "asm:systems": ["Ofqual Standardisation Model"]
+    },
+    {
+      "name": "UK Department for Education",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-03",
+      "phase": "infrastructure",
+      "title": "COVID-19: Prüfungen abgesagt",
+      "description": "Die britische Regierung sagt wegen der COVID-19-Pandemie alle GCSE- und A-Level-Prüfungen ab. Ofqual wird beauftragt, einen Algorithmus zu entwickeln, der Lehrereinschätzungen mit historischen Schuldaten kombiniert, um standardisierte Noten zu vergeben.",
+      "sources": ["https://www.bbc.co.uk/news/education-53787203"]
+    },
+    {
+      "date": "2020-08-13",
+      "phase": "event",
+      "title": "A-Level-Ergebnisse: Fast 40% herabgestuft",
+      "description": "Die A-Level-Ergebnisse werden veröffentlicht. Der Algorithmus stuft 39,1% der Lehrerprognosen herab. Schüler:innen an staatlichen Schulen und in ärmeren Gebieten werden überproportional betroffen, da der Algorithmus historische Schulleistungen als Hauptfaktor verwendet — und damit soziale Ungleichheit algorithmisch reproduziert.",
+      "sources": ["https://www.bbc.co.uk/news/education-53787203"]
+    },
+    {
+      "date": "2020-08-16",
+      "phase": "consequences",
+      "title": "Massenproteste und politischer Druck",
+      "description": "Tausende Schüler:innen protestieren landesweit unter dem Hashtag #AResultsDay. Die Opposition fordert die Rücknahme der algorithmischen Noten. Medien berichten von Einzelfällen, in denen engagierte Schüler:innen aus benachteiligten Gebieten trotz guter Prognosen massiv herabgestuft werden.",
+      "sources": ["https://www.theguardian.com/education/2020/aug/16/a-levels-why-were-this-years-results-so-unfair"]
+    },
+    {
+      "date": "2020-08-17",
+      "phase": "consequences",
+      "title": "U-Turn: Regierung zieht Algorithmus zurück",
+      "description": "Bildungsminister Gavin Williamson gibt dem Druck nach und verkündet, dass stattdessen die Lehrereinschätzungen als Noten gelten. Ofqual-Chefin Sally Collier tritt zurück. Der Fall wird zum Paradebeispiel für die Gefahren automatisierter Entscheidungen im Bildungswesen.",
+      "sources": ["https://www.bbc.co.uk/news/uk-53810655"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.bbc.co.uk/news/education-53787203",
+      "title": "A-levels: Nearly 40% of results in England were downgraded",
+      "publisher": "BBC News",
+      "date": "2020-08-13",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.theguardian.com/education/2020/aug/16/a-levels-why-were-this-years-results-so-unfair",
+      "title": "A-levels: Why were this year's results so unfair?",
+      "publisher": "The Guardian",
+      "date": "2020-08-16",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/uk-53810655",
+      "title": "A-levels and GCSEs: U-turn as teacher-predicted grades approach adopted",
+      "publisher": "BBC News",
+      "date": "2020-08-17",
+      "type": "news-article"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909368/6656-1_Ofqual_-_A_Level_Grading_2020_-_FINAL.pdf",
+      "title": "Awarding GCSE, AS, A level grades: summer 2020 – Ofqual Technical Report",
+      "publisher": "Ofqual",
+      "date": "2020-08",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

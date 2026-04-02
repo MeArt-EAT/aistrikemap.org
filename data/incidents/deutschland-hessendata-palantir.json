@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/deutschland-hessendata-palantir",
+  "name": "Deutschland: Palantir hessenDATA — Predictive Policing vor dem BVerfG",
+  "description": "Das Land Hessen setzt seit 2017 Palantirs Analyseplattform Gotham als 'hessenDATA' bei der Polizei ein. Das System verknüpft polizeiliche Datenbanken, Social-Media-Daten und weitere Quellen zur Gefahrenanalyse. 2023 erklärt das Bundesverfassungsgericht wesentliche Teile des hessischen Polizeigesetzes für verfassungswidrig — die automatisierte Datenanalyse verletze das Recht auf informationelle Selbstbestimmung. Das Urteil hat Signalwirkung für ganz Europa.",
+  "startDate": "2017",
+  "location": {
+    "@type": "Place",
+    "name": "Wiesbaden, Hessen, Deutschland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.0782,
+      "longitude": 8.2398
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "DE"
+    }
+  },
+  "asm:incidentType": ["predictive-policing", "surveillance", "data-misuse"],
+  "asm:affectedRights": ["Recht auf informationelle Selbstbestimmung", "Recht auf Privatsphäre", "Recht auf faires Verfahren", "Schutz vor Überwachung"],
+  "asm:actors": [
+    {
+      "name": "Hessisches Ministerium des Innern und für Sport",
+      "type": "government",
+      "asm:systems": ["hessenDATA (Palantir Gotham)"]
+    },
+    {
+      "name": "Palantir Technologies",
+      "type": "company",
+      "asm:systems": ["Gotham"]
+    },
+    {
+      "name": "Gesellschaft für Freiheitsrechte (GFF)",
+      "type": "organization"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Hessen führt Palantir-System ein",
+      "description": "Als erstes deutsches Bundesland schließt Hessen einen Vertrag mit Palantir Technologies. Die Polizeisoftware hessenDATA basiert auf Palantirs Gotham-Plattform und verknüpft polizeiliche Datenbanken (INPOL, POLAS), Telekommunikationsdaten und Social-Media-Informationen. Nordrhein-Westfalen und Bayern ziehen nach.",
+      "sources": ["https://netzpolitik.org/2019/hessendata-wie-palantir-software-bei-der-polizei-genutzt-wird/"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Verfassungsbeschwerde gegen Polizeigesetz",
+      "description": "Die Gesellschaft für Freiheitsrechte (GFF) reicht Verfassungsbeschwerde gegen das hessische Polizeigesetz ein. Zentrale Kritik: Die automatisierte Datenanalyse ermöglicht de facto eine Rasterfahndung ohne konkreten Verdacht. Die Schwelle für den Einsatz sei viel zu niedrig — es reiche eine 'konkretisierte Gefahrenlage'.",
+      "sources": ["https://freiheitsrechte.org/themen/freiheit-im-digitalen/hessendata"]
+    },
+    {
+      "date": "2023-02-16",
+      "phase": "consequences",
+      "title": "Bundesverfassungsgericht: Automatisierte Datenanalyse verfassungswidrig",
+      "description": "Das BVerfG erklärt die Rechtsgrundlage für hessenDATA und das vergleichbare System in Hamburg für teilweise verfassungswidrig (1 BvR 1547/19). Die automatisierte Datenanalyse greife tief in das Grundrecht auf informationelle Selbstbestimmung ein und bedürfe einer qualifizierten Eingriffsschwelle. Das Urteil verpflichtet zur Nachbesserung bis Ende September 2023.",
+      "sources": ["https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2023/02/rs20230216_1bvr154719.html"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Signalwirkung für Europa und den EU AI Act",
+      "description": "Das BVerfG-Urteil wird zum Referenzfall für die europäische Debatte über Predictive Policing. Der EU AI Act klassifiziert KI-Systeme in der Strafverfolgung als 'hochriskant'. Hessen passt sein Polizeigesetz an, aber Datenschützer:innen kritisieren, dass die Neuregelung weiterhin zu weitgehend sei.",
+      "sources": ["https://freiheitsrechte.org/themen/freiheit-im-digitalen/hessendata"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2023/02/rs20230216_1bvr154719.html",
+      "title": "BVerfG: Automatisierte Datenanalyse — 1 BvR 1547/19",
+      "publisher": "Bundesverfassungsgericht",
+      "date": "2023-02-16",
+      "type": "court-filing"
+    },
+    {
+      "url": "https://freiheitsrechte.org/themen/freiheit-im-digitalen/hessendata",
+      "title": "hessenDATA: Palantir-Software bei der Polizei",
+      "publisher": "Gesellschaft für Freiheitsrechte (GFF)",
+      "date": "2023",
+      "type": "legal-document"
+    },
+    {
+      "url": "https://netzpolitik.org/2019/hessendata-wie-palantir-software-bei-der-polizei-genutzt-wird/",
+      "title": "hessenDATA: Wie Palantir-Software bei der Polizei genutzt wird",
+      "publisher": "netzpolitik.org",
+      "date": "2019",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

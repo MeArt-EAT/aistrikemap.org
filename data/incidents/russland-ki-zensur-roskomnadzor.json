@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/russland-ki-zensur-roskomnadzor",
+  "name": "Russland: KI-gestützte Internetzensur durch Roskomnadzor",
+  "description": "Die russische Medienaufsichtsbehörde Roskomnadzor setzt seit 2019 das Deep Packet Inspection (DPI) System TSPU ein, um den Internetverkehr landesweit in Echtzeit zu filtern und zu zensieren. Das System nutzt KI zur automatisierten Erkennung und Blockierung von VPN-Protokollen, Nachrichtenwebseiten und sozialen Medien. Nach dem Einmarsch in die Ukraine 2022 wird die Zensurinfrastruktur massiv ausgeweitet.",
+  "startDate": "2019-11",
+  "location": {
+    "@type": "Place",
+    "name": "Moskau, Russland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 55.7558,
+      "longitude": 37.6173
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RU"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Pressefreiheit", "Informationsfreiheit", "Recht auf Privatsphäre", "Versammlungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Roskomnadzor (Föderaler Dienst für die Überwachung von Kommunikation)",
+      "type": "government",
+      "asm:systems": ["TSPU (Technical Means of Countering Threats)", "DPI-System"]
+    },
+    {
+      "name": "Russische Regierung",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-11",
+      "phase": "infrastructure",
+      "title": "Souveränes-Internet-Gesetz tritt in Kraft",
+      "description": "Das 'Gesetz über ein souveränes Internet' verpflichtet alle russischen ISPs, TSPU-Geräte (technische Mittel zur Gegenmaßnahme gegen Bedrohungen) zu installieren. Diese ermöglichen Deep Packet Inspection des gesamten Internetverkehrs und zentralisierte Kontrolle durch Roskomnadzor.",
+      "sources": ["https://www.accessnow.org/resource-hub/russias-sovereign-internet-law/"]
+    },
+    {
+      "date": "2021-03",
+      "phase": "event",
+      "title": "Drosselung von Twitter als Testlauf",
+      "description": "Roskomnadzor drosselt den Zugang zu Twitter in Russland mittels DPI als Reaktion auf die Weigerung, 'illegale Inhalte' zu löschen. Der Vorfall demonstriert erstmals die Fähigkeit zur gezielten Drosselung einzelner Dienste ohne Totalblockade.",
+      "sources": ["https://www.bbc.co.uk/news/technology-56367719"]
+    },
+    {
+      "date": "2022-03",
+      "phase": "event",
+      "title": "Massenblockaden nach Ukraine-Invasion",
+      "description": "Nach dem Einmarsch in die Ukraine blockiert Russland mittels TSPU Facebook, Instagram, Twitter und zahlreiche unabhängige Nachrichtenportale. KI-gestützte DPI-Systeme erkennen und blockieren automatisch VPN-Protokolle. Laut OONI werden über 7.000 Domains blockiert.",
+      "sources": ["https://ooni.org/post/2022-russia-blocks-amid-war/"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Eskalation: YouTube-Drosselung und VPN-Blockaden",
+      "description": "Roskomnadzor beginnt mit der systematischen Drosselung von YouTube um bis zu 70%. KI-Systeme werden eingesetzt, um neue VPN-Protokolle automatisch zu erkennen und zu blockieren. Freedom House stuft Russland in seinem Internet Freedom Index als 'nicht frei' ein. Schätzungsweise 30% der russischen Bevölkerung nutzen VPNs zur Umgehung.",
+      "sources": ["https://freedomhouse.org/country/russia/freedom-net/2024"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://ooni.org/post/2022-russia-blocks-amid-war/",
+      "title": "Russia blocks amid war: OONI data on internet censorship during the 2022 invasion of Ukraine",
+      "publisher": "Open Observatory of Network Interference (OONI)",
+      "date": "2022-03",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://freedomhouse.org/country/russia/freedom-net/2024",
+      "title": "Freedom on the Net 2024: Russia",
+      "publisher": "Freedom House",
+      "date": "2024-10",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/technology-56367719",
+      "title": "Russia slows down Twitter in dispute over banned content",
+      "publisher": "BBC News",
+      "date": "2021-03-10",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.accessnow.org/resource-hub/russias-sovereign-internet-law/",
+      "title": "Russia's Sovereign Internet Law",
+      "publisher": "Access Now",
+      "date": "2019",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-nypd-domain-awareness",
+  "name": "NYPD Domain Awareness System: KI-Massenüberwachung in New York",
+  "description": "Das New York Police Department betreibt mit dem Domain Awareness System (DAS) eines der umfassendsten städtischen KI-Überwachungssysteme der westlichen Welt. In Zusammenarbeit mit Microsoft entwickelt, verknüpft es über 18.000 Überwachungskameras, Kennzeichenleser, Schussdetektoren und Strafverfolgungsdatenbanken. Das System wird überproportional in Vierteln mit mehrheitlich nicht-weißer Bevölkerung eingesetzt.",
+  "startDate": "2012",
+  "location": {
+    "@type": "Place",
+    "name": "New York City, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["surveillance", "predictive-policing", "facial-recognition"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Versammlungsfreiheit", "Schutz vor Diskriminierung", "Bewegungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "New York Police Department (NYPD)",
+      "type": "government",
+      "asm:systems": ["Domain Awareness System (DAS)", "ShotSpotter", "Facial Recognition"]
+    },
+    {
+      "name": "Microsoft Corporation",
+      "type": "company",
+      "asm:systems": ["Domain Awareness System"]
+    },
+    {
+      "name": "Amnesty International",
+      "type": "organization"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "Domain Awareness System gestartet",
+      "description": "NYPD und Microsoft starten das Domain Awareness System. Es verknüpft über 6.000 Kameras (später 18.000+), Kennzeichenleser, Strahlungssensoren und Polizeidatenbanken in einem einheitlichen Dashboard. NYPD-Commissioner Kelly nennt es 'das umfassendste Überwachungsnetzwerk, das je von einer Polizeibehörde aufgebaut wurde'.",
+      "sources": ["https://www.nytimes.com/2012/08/09/nyregion/new-york-police-department-to-introduce-domain-awareness-system.html"]
+    },
+    {
+      "date": "2016",
+      "phase": "doctrine",
+      "title": "Gesichtserkennung wird integriert",
+      "description": "NYPD integriert Gesichtserkennung in das DAS. Fotos aus Überwachungskameras werden automatisch mit einer Datenbank von über 5 Millionen Fahndungsfotos abgeglichen. Das Brennan Center for Justice dokumentiert, dass NYPD keine Transparenz über den Einsatz von Gesichtserkennung gewährt und keine Fehlerstatistiken veröffentlicht.",
+      "sources": ["https://www.brennancenter.org/our-work/research-reports/nypds-surveillance-technology"]
+    },
+    {
+      "date": "2020",
+      "phase": "event",
+      "title": "Einsatz bei Black-Lives-Matter-Protesten",
+      "description": "Während der George-Floyd-Proteste setzt NYPD Drohnen, Überwachungskameras und Gesichtserkennung zur Identifikation von Demonstrant:innen ein. Amnesty International kartiert in der Kampagne 'Ban the Scan' die Überwachungskameraverteilung und zeigt, dass in überwiegend Schwarzen und Latino-Vierteln signifikant mehr Kameras installiert sind.",
+      "sources": ["https://banthescan.amnesty.org/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "POST Act und wachsender Widerstand",
+      "description": "Der POST Act verpflichtet NYPD erstmals, Informationen über eingesetzte Überwachungstechnologien zu veröffentlichen. Die Veröffentlichung zeigt das wahre Ausmaß: Neben DAS nutzt NYPD Drohnen, Social-Media-Monitoring, automatisierte Kennzeichenerfassung und prädiktive Polizeisoftware. Bürgerrechtsorganisationen fordern weitergehende Einschränkungen.",
+      "sources": ["https://www.brennancenter.org/our-work/research-reports/nypds-surveillance-technology"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://banthescan.amnesty.org/",
+      "title": "Ban the Scan: New York City",
+      "publisher": "Amnesty International",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.brennancenter.org/our-work/research-reports/nypds-surveillance-technology",
+      "title": "NYPD's Surveillance Technology",
+      "publisher": "Brennan Center for Justice",
+      "date": "2023",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.nytimes.com/2012/08/09/nyregion/new-york-police-department-to-introduce-domain-awareness-system.html",
+      "title": "New York Police to Introduce Domain Awareness System",
+      "publisher": "New York Times",
+      "date": "2012-08-08",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.stopspying.org/domain-awareness-system",
+      "title": "Domain Awareness System",
+      "publisher": "Surveillance Technology Oversight Project (STOP)",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

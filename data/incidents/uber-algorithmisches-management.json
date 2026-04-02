@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uber-algorithmisches-management",
+  "name": "Uber: Algorithmisches Management und Lohnmanipulation",
+  "description": "Uber und andere Gig-Economy-Plattformen setzen KI-gesteuerte Systeme ein, die Fahrer:innen durch algorithmisches Management kontrollieren: dynamische Preisgestaltung, intransparente Routenzuweisungen, automatisierte Deaktivierungen und psychologische Nudging-Techniken. Fahrer:innen haben keinen Einblick in die Algorithmen, die ihre Arbeit und ihr Einkommen bestimmen.",
+  "startDate": "2014",
+  "location": {
+    "@type": "Place",
+    "name": "San Francisco, Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["labor-exploitation", "discrimination"],
+  "asm:affectedRights": ["Recht auf faire Arbeitsbedingungen", "Recht auf angemessene Vergütung", "Recht auf Vereinigungsfreiheit", "Recht auf Transparenz", "Schutz vor Diskriminierung"],
+  "asm:actors": [
+    {
+      "name": "Uber Technologies",
+      "type": "company",
+      "asm:systems": ["Surge Pricing", "Driver Allocation Algorithm", "Automated Deactivation"]
+    },
+    {
+      "name": "Lyft",
+      "type": "company"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Algorithmisches Management wird Standard",
+      "description": "Uber skaliert sein algorithmisches Management-System weltweit. Algorithmen bestimmen Preise (Surge Pricing), weisen Fahrten zu, bewerten Fahrer:innen und können sie automatisch deaktivieren. Die NYT dokumentiert, wie Uber psychologische Techniken (Gamification, Loss Aversion) einsetzt, um Fahrer:innen zu längeren Arbeitszeiten zu bewegen.",
+      "sources": ["https://www.nytimes.com/interactive/2017/04/02/technology/uber-drivers-psychological-tricks.html"]
+    },
+    {
+      "date": "2017-04",
+      "phase": "event",
+      "title": "NYT enthüllt psychologische Manipulation",
+      "description": "Die New York Times veröffentlicht eine Tiefenrecherche über Ubers Einsatz verhaltenspsychologischer Techniken: Fahrer:innen erhalten die nächste Fahrt automatisch zugewiesen, bevor die aktuelle endet; Einkommensziele werden so gesetzt, dass sie immer knapp verfehlt werden; weiblich klingende Bots werden verwendet, um männliche Fahrer zu motivieren.",
+      "sources": ["https://www.nytimes.com/interactive/2017/04/02/technology/uber-drivers-psychological-tricks.html"]
+    },
+    {
+      "date": "2021-02",
+      "phase": "consequences",
+      "title": "UK Supreme Court: Uber-Fahrer sind Arbeitnehmer",
+      "description": "Der UK Supreme Court entscheidet einstimmig, dass Uber-Fahrer:innen als 'workers' (Arbeitnehmer) und nicht als Selbständige gelten. Das Gericht stellt fest, dass der Algorithmus de facto die Arbeitsbedingungen diktiert. Uber muss Mindestlohn und bezahlten Urlaub gewähren.",
+      "sources": ["https://www.supremecourt.uk/cases/uksc-2019-0029.html"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "EU-Plattformarbeitsrichtlinie",
+      "description": "Die EU verabschiedet die Richtlinie zur Plattformarbeit, die erstmals algorithmisches Management reguliert: Plattformen müssen Transparenz über automatisierte Entscheidungssysteme gewährleisten, menschliche Überprüfung bei Deaktivierungen ermöglichen und algorithmische Diskriminierung verhindern.",
+      "sources": ["https://www.europarl.europa.eu/news/en/press-room/20240419IPR20585/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nytimes.com/interactive/2017/04/02/technology/uber-drivers-psychological-tricks.html",
+      "title": "How Uber Uses Psychological Tricks to Push Its Drivers' Buttons",
+      "publisher": "New York Times",
+      "date": "2017-04-02",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.supremecourt.uk/cases/uksc-2019-0029.html",
+      "title": "Uber BV and others v Aslam and others",
+      "publisher": "UK Supreme Court",
+      "date": "2021-02-19",
+      "type": "court-filing"
+    },
+    {
+      "url": "https://datasociety.net/library/workplace-monitoring-surveillance/",
+      "title": "Workplace Monitoring & Surveillance",
+      "publisher": "Data & Society Research Institute",
+      "date": "2019",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.ilo.org/publications/world-employment-and-social-outlook-2021-role-digital-labour-platforms",
+      "title": "World Employment and Social Outlook 2021: The role of digital labour platforms",
+      "publisher": "International Labour Organization (ILO)",
+      "date": "2021-02",
+      "type": "research-paper"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

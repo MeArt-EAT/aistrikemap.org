@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/philippinen-duterte-social-media-ki",
+  "name": "Philippinen: KI-gestützte Troll-Armeen und Drogenkrieg",
+  "description": "Während des 'Drogenkriegs' unter Präsident Duterte werden KI-gestützte Social-Media-Manipulationskampagnen eingesetzt, um die systematischen Tötungen von über 12.000 Menschen zu legitimieren. Koordinierte Bot-Netzwerke und Troll-Farmen verbreiten Desinformation auf Facebook — der dominanten Plattform der Philippinen. Journalist:innen wie Maria Ressa (Nobelpreisträgerin 2021) werden durch orchestrierte Online-Kampagnen gezielt angegriffen.",
+  "startDate": "2016",
+  "location": {
+    "@type": "Place",
+    "name": "Manila, Philippinen",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 14.5995,
+      "longitude": 120.9842
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PH"
+    }
+  },
+  "asm:incidentType": ["censorship", "political-pressure", "deepfakes"],
+  "asm:affectedRights": ["Recht auf Leben", "Pressefreiheit", "Meinungsfreiheit", "Recht auf faires Verfahren", "Recht auf Wahrheit"],
+  "asm:actors": [
+    {
+      "name": "Duterte-Administration / Präsidentenbüro",
+      "type": "government"
+    },
+    {
+      "name": "Facebook / Meta Platforms",
+      "type": "company",
+      "asm:systems": ["News Feed Algorithm", "Groups"]
+    },
+    {
+      "name": "Rappler / Maria Ressa",
+      "type": "organization"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Social-Media-Wahlkampf und Troll-Armee",
+      "description": "Duterte gewinnt die Präsidentschaftswahl mit Hilfe einer massiven Social-Media-Kampagne. Untersuchungen zeigen ein Netzwerk aus bezahlten Troll-Farmen, die koordiniert Propaganda verbreiten und Kritiker:innen mit Shitstorms überziehen. Facebook ist für 97% der philippinischen Internet-Nutzer:innen die primäre Informationsquelle.",
+      "sources": ["https://www.rappler.com/newsbreak/investigative/propaganda-war-weaponizing-internet/"]
+    },
+    {
+      "date": "2017",
+      "phase": "event",
+      "title": "Drogenkrieg und Desinformation",
+      "description": "Dutertes 'Drogenkrieg' fordert nach offiziellen Zahlen über 6.000, nach Menschenrechtsgruppen über 12.000 Tote. Social-Media-Kampagnen stellen die Opfer als Kriminelle dar und delegitimieren Kritik. Automatisierte Accounts verbreiten Falschinformationen über Menschenrechtsorganisationen und unabhängige Medien.",
+      "sources": ["https://www.hrw.org/tag/philippines-war-drugs"]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Facebook entfernt koordinierte Netzwerke",
+      "description": "Facebook entfernt erstmals koordinierte philippinische Fake-Account-Netzwerke mit Verbindungen zum Militär. Die entfernten Seiten und Gruppen hatten Millionen Follower. Rappler-Chefin Maria Ressa dokumentiert, dass sie durchschnittlich 90 Hassbotschaften pro Stunde erhält — viele davon von Bots und koordinierten Accounts.",
+      "sources": ["https://about.fb.com/news/2019/03/cib-from-the-philippines/"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Nobelpreis für Ressa und internationale Aufmerksamkeit",
+      "description": "Maria Ressa erhält gemeinsam mit Dmitri Muratow den Friedensnobelpreis 'für ihren Kampf für die Meinungsfreiheit'. Der ICC leitet Voruntersuchungen zum Drogenkrieg ein. Facebook/Meta räumt Versäumnisse in der Content-Moderation ein. Der Fall wird zum globalen Referenzpunkt für die Rolle sozialer Medien bei der Legitimierung staatlicher Gewalt.",
+      "sources": ["https://www.nobelprize.org/prizes/peace/2021/ressa/facts/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.rappler.com/newsbreak/investigative/propaganda-war-weaponizing-internet/",
+      "title": "Propaganda War: Weaponizing the Internet",
+      "publisher": "Rappler",
+      "date": "2016-10-03",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.hrw.org/tag/philippines-war-drugs",
+      "title": "Philippines: War on Drugs",
+      "publisher": "Human Rights Watch",
+      "date": "2020",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.nobelprize.org/prizes/peace/2021/ressa/facts/",
+      "title": "Maria Ressa – Facts – Nobel Peace Prize 2021",
+      "publisher": "Nobel Prize",
+      "date": "2021-10-08",
+      "type": "news-article"
+    },
+    {
+      "url": "https://about.fb.com/news/2019/03/cib-from-the-philippines/",
+      "title": "Removing Coordinated Inauthentic Behavior from the Philippines",
+      "publisher": "Meta",
+      "date": "2019-03-28",
+      "type": "company-statement"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

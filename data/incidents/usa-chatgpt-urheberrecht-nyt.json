@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-chatgpt-urheberrecht-nyt",
+  "name": "USA: New York Times vs. OpenAI — KI-Urheberrechtsklage",
+  "description": "Die New York Times verklagt OpenAI und Microsoft wegen der unautorisierten Nutzung von Millionen urheberrechtlich geschützter Artikel zum Training von ChatGPT und Bing Chat. Die Klage dokumentiert, dass die KI-Systeme wörtliche Passagen aus NYT-Artikeln reproduzieren können. Der Fall ist die bedeutendste Urheberrechtsklage gegen generative KI und könnte das Geschäftsmodell der gesamten Branche grundlegend verändern.",
+  "startDate": "2023-12-27",
+  "location": {
+    "@type": "Place",
+    "name": "New York City, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.7560,
+      "longitude": -73.9869
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["data-misuse"],
+  "asm:affectedRights": ["Urheberrecht", "Recht auf geistiges Eigentum", "Pressefreiheit", "Recht auf faire Vergütung"],
+  "asm:actors": [
+    {
+      "name": "OpenAI",
+      "type": "company",
+      "asm:systems": ["ChatGPT", "GPT-4"]
+    },
+    {
+      "name": "Microsoft Corporation",
+      "type": "company",
+      "asm:systems": ["Bing Chat / Copilot"]
+    },
+    {
+      "name": "The New York Times Company",
+      "type": "company"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Training auf urheberrechtlich geschützten Daten",
+      "description": "OpenAI trainiert GPT-3 und später GPT-4 auf massiven Datensätzen aus dem Internet, darunter Millionen vollständiger Artikel der New York Times, Washington Post, Guardian und anderer Verlage. Die Verlage werden weder gefragt noch vergütet. OpenAIs Datensätze enthalten laut Klageschrift praktisch das gesamte NYT-Archiv.",
+      "sources": ["https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"]
+    },
+    {
+      "date": "2023-12-27",
+      "phase": "event",
+      "title": "NYT reicht Klage gegen OpenAI und Microsoft ein",
+      "description": "Die New York Times reicht Klage am Southern District of New York ein und fordert Milliarden an Schadensersatz. Die Klageschrift dokumentiert über 100 Beispiele, in denen ChatGPT wörtlich oder nahezu wörtlich NYT-Artikel reproduziert. Die NYT argumentiert, dass dies ihr Geschäftsmodell untergräbt und die Qualität von Journalismus bedroht.",
+      "sources": ["https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Welle von Urheberrechtsklagen gegen KI-Unternehmen",
+      "description": "Die NYT-Klage löst eine Welle weiterer Klagen aus: Getty Images vs. Stability AI, Autoren (Silverman, Chabon) vs. Meta und OpenAI, Musikverlage vs. Anthropic. Die zentrale Rechtsfrage — ob KI-Training auf urheberrechtlich geschütztem Material 'Fair Use' ist — wird zum definierenden Rechtsstreit der KI-Ära.",
+      "sources": ["https://www.reuters.com/legal/litigation/new-york-times-sues-openai-microsoft-infringing-copyrighted-work-2023-12-27/"]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Lizenzdeals und Regulierungsdebatte",
+      "description": "Während die NYT-Klage anhängig bleibt, schließen andere Verlage Lizenzverträge mit OpenAI (AP, Axel Springer, Le Monde). Die EU reguliert mit dem AI Act Transparenzpflichten für Trainingsdaten. Die Debatte weitet sich zu grundsätzlichen Fragen: Wem gehören die Daten, die KI intelligent machen? Und wie wird der Wert von Journalismus in der KI-Ära geschützt?",
+      "sources": ["https://www.theguardian.com/technology/2024/jan/04/new-york-times-openai-lawsuit-copyright"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf",
+      "title": "The New York Times Company v. Microsoft Corporation et al. — Complaint",
+      "publisher": "United States District Court, Southern District of New York",
+      "date": "2023-12-27",
+      "type": "court-filing"
+    },
+    {
+      "url": "https://www.reuters.com/legal/litigation/new-york-times-sues-openai-microsoft-infringing-copyrighted-work-2023-12-27/",
+      "title": "New York Times sues OpenAI, Microsoft for infringing copyrighted work",
+      "publisher": "Reuters",
+      "date": "2023-12-27",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2024/jan/04/new-york-times-openai-lawsuit-copyright",
+      "title": "New York Times v OpenAI: what to know about the copyright lawsuit",
+      "publisher": "The Guardian",
+      "date": "2024-01-04",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

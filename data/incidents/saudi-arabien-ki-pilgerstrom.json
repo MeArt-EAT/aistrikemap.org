@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/saudi-arabien-ki-pilgerstrom",
+  "name": "Saudi-Arabien: KI-Massenüberwachung bei Hajj und Neom",
+  "description": "Saudi-Arabien setzt KI-gestützte Gesichtserkennung und Verhaltensanalyse zur Überwachung von Millionen Hajj-Pilgern ein und baut im Mega-Projekt Neom eine der weltweit ambitioniertesten Smart-City-Überwachungsinfrastrukturen. Das System umfasst Echtzeit-Gesichtserkennung, Drohnenüberwachung und prädiktive Analytik — in einem Land ohne Datenschutzrechte und mit systematischer Unterdrückung der Meinungsfreiheit.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Mekka / Neom, Saudi-Arabien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 21.4225,
+      "longitude": 39.8262
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Religionsfreiheit", "Bewegungsfreiheit", "Meinungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Saudi-Arabische Regierung / Ministry of Hajj",
+      "type": "government",
+      "asm:systems": ["Nusuk Platform", "Hajj Smart Card System"]
+    },
+    {
+      "name": "Huawei Technologies",
+      "type": "company",
+      "asm:systems": ["Safe City Platform"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Smart-Hajj-Initiative und Neom-Planung",
+      "description": "Saudi-Arabien startet die Smart-Hajj-Initiative mit KI-gestützter Menschenstromanalyse und Gesichtserkennung für über 2 Millionen Pilger. Gleichzeitig wird Neom als KI-durchdrungene Smart City geplant, in der laut Planungsdokumenten jede Bewegung erfasst und analysiert werden soll.",
+      "sources": ["https://www.middleeasteye.net/news/saudi-arabia-neom-surveillance-technology"]
+    },
+    {
+      "date": "2022",
+      "phase": "event",
+      "title": "Umfassende biometrische Pilgerkontrolle",
+      "description": "Saudi-Arabien implementiert ein lückenloses biometrisches Kontrollsystem für die Hajj: E-Visa mit Gesichtserkennung, Echtzeit-Tracking über Smartcards und KI-gestützte Drohnenüberwachung der Pilgermassen. Nicht registrierte Pilger werden automatisch identifiziert und abgewiesen.",
+      "sources": ["https://www.reuters.com/world/middle-east/saudi-arabia-uses-tech-manage-hajj-crowds-2023-06-27/"]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Huawei liefert Safe-City-Technologie",
+      "description": "Berichte zeigen die tiefe Partnerschaft zwischen Saudi-Arabien und Huawei für Überwachungsinfrastruktur. Huaweis Safe-City-Lösungen werden in mehreren saudischen Städten implementiert. Menschenrechtsorganisationen warnen, dass dieselbe Technologie zur Unterdrückung von Dissidenten genutzt wird.",
+      "sources": ["https://carnegieendowment.org/research/2019/09/the-global-expansion-of-ai-surveillance"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Internationale Kritik und Menschenrechtsdebatte",
+      "description": "Human Rights Watch und Amnesty International warnen, dass Saudi-Arabiens KI-Überwachungskapazitäten in einem Land ohne unabhängige Justiz, ohne Pressefreiheit und mit dokumentierter Verfolgung von Aktivist:innen besonders gefährlich sind. Der Fall Khashoggi zeigt, wie Überwachungstechnologie gegen Dissidenten eingesetzt wird.",
+      "sources": ["https://www.amnesty.org/en/latest/news/2019/10/saudi-arabia-ongoing-crackdown-on-dissent/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://carnegieendowment.org/research/2019/09/the-global-expansion-of-ai-surveillance",
+      "title": "The Global Expansion of AI Surveillance",
+      "publisher": "Carnegie Endowment for International Peace",
+      "date": "2019-09-17",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.reuters.com/world/middle-east/saudi-arabia-uses-tech-manage-hajj-crowds-2023-06-27/",
+      "title": "Saudi Arabia uses tech to manage Hajj crowds",
+      "publisher": "Reuters",
+      "date": "2023-06-27",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2019/10/saudi-arabia-ongoing-crackdown-on-dissent/",
+      "title": "Saudi Arabia: Ongoing crackdown on dissent",
+      "publisher": "Amnesty International",
+      "date": "2019-10",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

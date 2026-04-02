@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/detroit-gesichtserkennung-fehlidentifikation",
+  "name": "Detroit: Unrechtmäßige Festnahmen durch Gesichtserkennung",
+  "description": "Die Polizei von Detroit nutzt Gesichtserkennungssoftware, die in mehreren dokumentierten Fällen Schwarze Männer fälschlich identifiziert und zu unrechtmäßigen Festnahmen führt. Robert Williams wird 2020 als erster bekannter Fall eines falschen Gesichtserkennungs-Matches verhaftet. Studien belegen, dass die Fehlerrate bei dunkelhäutigen Personen und Frauen bis zu 100-mal höher ist.",
+  "startDate": "2017",
+  "location": {
+    "@type": "Place",
+    "name": "Detroit, Michigan, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.3314,
+      "longitude": -83.0458
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["facial-recognition", "discrimination"],
+  "asm:affectedRights": ["Recht auf Freiheit", "Recht auf faires Verfahren", "Schutz vor Diskriminierung", "Menschenwürde", "Recht auf Privatsphäre"],
+  "asm:actors": [
+    {
+      "name": "Detroit Police Department",
+      "type": "government",
+      "asm:systems": ["DataWorks Plus Facial Recognition"]
+    },
+    {
+      "name": "ACLU Michigan",
+      "type": "organization"
+    },
+    {
+      "name": "NIST (National Institute of Standards and Technology)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Detroit führt Gesichtserkennung ein",
+      "description": "Das Detroit Police Department implementiert ein Echtzeit-Gesichtserkennungssystem (Project Green Light), das Überwachungskameras in Geschäften, Tankstellen und öffentlichen Räumen mit einer Datenbank von Fahndungsfotos abgleicht.",
+      "sources": ["https://www.nytimes.com/2020/06/24/technology/facial-recognition-arrest.html"]
+    },
+    {
+      "date": "2019-12",
+      "phase": "doctrine",
+      "title": "NIST-Studie bestätigt rassistischen Bias",
+      "description": "Eine umfassende NIST-Studie testet 189 Gesichtserkennungsalgorithmen und stellt fest: Schwarze und asiatische Gesichter werden bis zu 100-mal häufiger falsch zugeordnet als weiße männliche Gesichter. Die Studie liefert die bislang umfangreichste empirische Grundlage für algorithmische Diskriminierung in der Gesichtserkennung.",
+      "sources": ["https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software"]
+    },
+    {
+      "date": "2020-01",
+      "phase": "event",
+      "title": "Robert Williams: Erste dokumentierte Falschfestnahme",
+      "description": "Robert Williams, ein Schwarzer Mann aus Detroit, wird vor den Augen seiner Familie verhaftet und 30 Stunden festgehalten — basierend auf einem falschen Gesichtserkennungs-Match mit einem Überwachungsvideo. Im Verhör zeigen Polizisten ihm das Foto des tatsächlichen Verdächtigen, der ihm kaum ähnlich sieht. Mindestens zwei weitere Schwarze Männer (Michael Oliver, Nijeer Parks) werden nachweislich falsch identifiziert.",
+      "sources": ["https://www.nytimes.com/2020/06/24/technology/facial-recognition-arrest.html"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Verbote und Klagen bundesweit",
+      "description": "Die ACLU reicht Klage im Namen von Robert Williams ein. Mehrere US-Städte (San Francisco, Boston, Portland) verbieten den behördlichen Einsatz von Gesichtserkennung. Detroit verpflichtet sich zu einem Moratorium für Echtzeit-Gesichtserkennung. Der EU AI Act klassifiziert biometrische Echtzeiterkennung im öffentlichen Raum als 'high risk'.",
+      "sources": ["https://www.aclu.org/press-releases/aclu-sues-detroit-police-department-for-wrongful-arrest-based-on-flawed-facial-recognition-technology"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nytimes.com/2020/06/24/technology/facial-recognition-arrest.html",
+      "title": "Wrongfully Accused by an Algorithm",
+      "publisher": "New York Times",
+      "date": "2020-06-24",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software",
+      "title": "NIST Study Evaluates Effects of Race, Age, Sex on Face Recognition Software",
+      "publisher": "NIST",
+      "date": "2019-12-19",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.aclu.org/press-releases/aclu-sues-detroit-police-department-for-wrongful-arrest-based-on-flawed-facial-recognition-technology",
+      "title": "ACLU Sues Detroit Police for Wrongful Arrest Based on Flawed Facial Recognition",
+      "publisher": "ACLU",
+      "date": "2021-04-13",
+      "type": "legal-document"
+    },
+    {
+      "url": "https://sitn.hms.harvard.edu/flash/2020/racial-discrimination-in-face-recognition-technology/",
+      "title": "Racial Discrimination in Face Recognition Technology",
+      "publisher": "Harvard SITN",
+      "date": "2020-10-24",
+      "type": "research-paper"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

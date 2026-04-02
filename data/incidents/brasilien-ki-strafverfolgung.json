@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/brasilien-ki-strafverfolgung",
+  "name": "Brasilien: KI-Gesichtserkennung bei Karneval und in Favelas",
+  "description": "Brasilianische Bundesstaaten setzen seit 2019 KI-gestützte Gesichtserkennung bei Großveranstaltungen und in Favelas ein. Während des Karnevals in Salvador und Rio werden Tausende biometrisch gescannt. Das System reproduziert rassistische Polizeipraktiken: Schwarze Brasilianer:innen, die 56% der Bevölkerung ausmachen, stellen über 90% der Fehlidentifikationen. Mehrere dokumentierte Fälle führen zu unrechtmäßigen Festnahmen.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Salvador / Rio de Janeiro, Brasilien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -12.9714,
+      "longitude": -38.5124
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    }
+  },
+  "asm:incidentType": ["facial-recognition", "discrimination", "surveillance"],
+  "asm:affectedRights": ["Schutz vor Diskriminierung", "Recht auf Freiheit", "Recht auf Privatsphäre", "Recht auf faires Verfahren", "Versammlungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Secretaria de Segurança Pública da Bahia",
+      "type": "government",
+      "asm:systems": ["Gesichtserkennungskameras"]
+    },
+    {
+      "name": "Polizei von Rio de Janeiro",
+      "type": "government"
+    },
+    {
+      "name": "Instituto Igarapé",
+      "type": "organization"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-03",
+      "phase": "infrastructure",
+      "title": "Karneval Salvador: Erste Massengesichtserkennung",
+      "description": "Bahia installiert während des Karnevals in Salvador ein Gesichtserkennungssystem, das innerhalb weniger Tage über 1 Million Gesichter scannt. Die Polizei meldet 42 Festnahmen auf Basis von Treffern. Die Technologie wird ohne Regulierung, öffentliche Debatte oder Datenschutzfolgenabschätzung eingesetzt.",
+      "sources": ["https://www.theguardian.com/world/2019/mar/06/brazil-carnival-facial-recognition-cameras"]
+    },
+    {
+      "date": "2019",
+      "phase": "event",
+      "title": "Fehlidentifikationen und rassistischer Bias",
+      "description": "Erste Fälle von Fehlidentifikationen werden dokumentiert. In Rio de Janeiro wird eine Frau fälschlich als Mörderin identifiziert und verhaftet. Analysen zeigen, dass die Systeme bei dunkelhäutigen Personen signifikant höhere Fehlerquoten aufweisen — in einem Land, in dem Polizeigewalt gegen Schwarze bereits ein massives Problem ist.",
+      "sources": ["https://www.reuters.com/article/us-brazil-technology-facialrecognition-idUSKCN1VK22D/"]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Ausweitung auf Favelas und öffentlichen Nahverkehr",
+      "description": "São Paulo, Rio de Janeiro und weitere Städte weiten die Gesichtserkennung auf U-Bahnen und Favelas aus. Das Instituto Igarapé dokumentiert, dass die Technologie überproportional in Vierteln mit mehrheitlich Schwarzer Bevölkerung eingesetzt wird. Zivilgesellschaftliche Organisationen starten Kampagnen gegen die 'algorithmische Reproduktion von Rassismus'.",
+      "sources": ["https://igarape.org.br/en/facial-recognition-in-latin-america/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Gesetzesvorschlag für nationales Moratorium",
+      "description": "Brasilianische Kongressabgeordnete bringen einen Gesetzentwurf für ein Moratorium auf Gesichtserkennung im öffentlichen Raum ein. Die Datenschutzbehörde ANPD beginnt eine Untersuchung. Mehrere Bundesstaaten pausieren Programme nach öffentlichem Druck. Der EU AI Act wird als Referenz für eine mögliche brasilianische KI-Regulierung diskutiert.",
+      "sources": ["https://www.accessnow.org/facial-recognition-ban-brazil/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.theguardian.com/world/2019/mar/06/brazil-carnival-facial-recognition-cameras",
+      "title": "Brazil carnival: facial recognition up and running in Salvador",
+      "publisher": "The Guardian",
+      "date": "2019-03-06",
+      "type": "news-article"
+    },
+    {
+      "url": "https://igarape.org.br/en/facial-recognition-in-latin-america/",
+      "title": "Facial Recognition in Latin America",
+      "publisher": "Instituto Igarapé",
+      "date": "2021",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.accessnow.org/facial-recognition-ban-brazil/",
+      "title": "Facial recognition ban in Brazil: a path forward",
+      "publisher": "Access Now",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

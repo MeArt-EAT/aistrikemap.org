@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/vietnam-ki-zensur-firewall",
+  "name": "Vietnam: KI-gestützte Internetzensur und Cybersecurity-Gesetz",
+  "description": "Vietnam nutzt KI-gestützte Systeme zur automatisierten Zensur des Internets und zur Identifikation von Dissident:innen. Das Cybersecurity-Gesetz von 2018 verpflichtet Tech-Unternehmen zur lokalen Datenspeicherung und zur Herausgabe von Nutzerdaten. Die '10.000-Personen-Cybertruppe' (Force 47) kombiniert menschliche Trolle mit automatisierten Systemen zur Manipulation der öffentlichen Meinung. Hunderte Blogger:innen und Aktivist:innen werden wegen Online-Äußerungen inhaftiert.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Hanoi, Vietnam",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 21.0278,
+      "longitude": 105.8342
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "VN"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance", "political-pressure"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Pressefreiheit", "Informationsfreiheit", "Recht auf Privatsphäre", "Recht auf Freiheit"],
+  "asm:actors": [
+    {
+      "name": "Vietnamesische Regierung / Ministerium für öffentliche Sicherheit",
+      "type": "government",
+      "asm:systems": ["Force 47", "DPI-Zensursystem"]
+    },
+    {
+      "name": "Volksarmee Vietnam / Force 47",
+      "type": "military"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-01",
+      "phase": "infrastructure",
+      "title": "Force 47: 10.000-Personen-Cybertruppe aktiviert",
+      "description": "Vietnam offenbart die Existenz von Force 47 — einer 10.000 Personen starken Cyber-Einheit, die Social-Media-Plattformen auf regierungskritische Inhalte überwacht und mit koordinierten Kampagnen die öffentliche Meinung manipuliert. Die Einheit nutzt automatisierte Tools zur Identifikation und Meldung kritischer Posts.",
+      "sources": ["https://www.bbc.co.uk/news/world-asia-44364981"]
+    },
+    {
+      "date": "2019-01",
+      "phase": "doctrine",
+      "title": "Cybersecurity-Gesetz: Datenlokalisierung und Zensur",
+      "description": "Das Cybersecurity-Gesetz tritt in Kraft. Facebook und Google müssen Nutzerdaten auf vietnamesischen Servern speichern und regierungskritische Inhalte auf Anweisung innerhalb von 24 Stunden entfernen. Facebook gibt zu, 2020 Zensurforderungen der vietnamesischen Regierung nachgekommen zu sein und Inhalte eingeschränkt zu haben.",
+      "sources": ["https://www.reuters.com/article/us-vietnam-facebook-idUSKBN2700SV/"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Facebook zensiert auf Anweisung Vietnams",
+      "description": "Facebook bestätigt, dass es regierungskritische Inhalte in Vietnam eingeschränkt hat, nachdem die Regierung mit einem Serververbot gedroht hatte. Das Unternehmen blockiert Inhalte, die das Regime kritisieren, und schränkt den Zugang zu Seiten von Menschenrechtsorganisationen ein. Vietnam wird zum Testfall für autoritäre Kontrolle über globale Plattformen.",
+      "sources": ["https://www.reuters.com/article/us-vietnam-facebook-idUSKBN2700SV/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Über 150 politische Gefangene wegen Online-Äußerungen",
+      "description": "Vietnam hält über 150 Menschen wegen Online-Äußerungen in Haft — die höchste Zahl in Südostasien. RSF stuft Vietnam auf Platz 178 von 180 bei der Pressefreiheit ein. Trotz internationaler Kritik expandiert die Überwachung: Vietnam fordert TikTok auf, 'anti-staatliche' Inhalte zu entfernen, und investiert in eigene KI-Zensurcapabilities.",
+      "sources": ["https://rsf.org/en/country/vietnam"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.bbc.co.uk/news/world-asia-44364981",
+      "title": "Vietnam: Force 47 cyberunit 'takes on online dissent'",
+      "publisher": "BBC News",
+      "date": "2018-01-12",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.reuters.com/article/us-vietnam-facebook-idUSKBN2700SV/",
+      "title": "Facebook agreed to censor posts after Vietnam threatened to shut it down",
+      "publisher": "Reuters",
+      "date": "2021-04-20",
+      "type": "news-article"
+    },
+    {
+      "url": "https://rsf.org/en/country/vietnam",
+      "title": "Vietnam – Press Freedom Index",
+      "publisher": "Reporters Without Borders (RSF)",
+      "date": "2023",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://freedomhouse.org/country/vietnam/freedom-net/2023",
+      "title": "Freedom on the Net 2023: Vietnam",
+      "publisher": "Freedom House",
+      "date": "2023-10",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

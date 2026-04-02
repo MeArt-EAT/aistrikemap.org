@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/neuseeland-christchurch-algorithmus",
+  "name": "Christchurch: Algorithmen verstärken Terrorvideo-Verbreitung",
+  "description": "Der Christchurch-Terroranschlag 2019 wird vom Attentäter live auf Facebook gestreamt. Trotz KI-gestützter Content-Moderation verbreiten sich das Video und Kopien über Empfehlungsalgorithmen viral — 1,5 Millionen Kopien werden in den ersten 24 Stunden hochgeladen, Facebook entfernt nur 1,2 Millionen davon automatisch. Der Fall offenbart das fundamentale Versagen algorithmischer Content-Moderation bei Echtzeit-Gewaltinhalten.",
+  "startDate": "2019-03-15",
+  "location": {
+    "@type": "Place",
+    "name": "Christchurch, Neuseeland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -43.5321,
+      "longitude": 172.6362
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NZ"
+    }
+  },
+  "asm:incidentType": ["censorship", "deepfakes"],
+  "asm:affectedRights": ["Recht auf Leben", "Recht auf Sicherheit", "Menschenwürde", "Schutz vor Gewaltverherrlichung"],
+  "asm:actors": [
+    {
+      "name": "Facebook / Meta Platforms",
+      "type": "company",
+      "asm:systems": ["Content Moderation AI", "Live Streaming", "Recommendation Algorithm"]
+    },
+    {
+      "name": "YouTube / Google",
+      "type": "company"
+    },
+    {
+      "name": "Regierung von Neuseeland",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-03-15",
+      "phase": "event",
+      "title": "Terroranschlag live auf Facebook gestreamt",
+      "description": "Der Attentäter tötet 51 Menschen in zwei Moscheen und streamt die Tat 17 Minuten lang live auf Facebook. Nur 200 Personen sehen den Livestream, aber das Video wird sofort kopiert und über YouTube, Twitter und 8chan weiterverbreitet. Facebooks KI erkennt den Inhalt nicht automatisch als Gewalt.",
+      "sources": ["https://www.bbc.co.uk/news/technology-47630849"]
+    },
+    {
+      "date": "2019-03-16",
+      "phase": "event",
+      "title": "1,5 Millionen Upload-Versuche in 24 Stunden",
+      "description": "Facebook meldet 1,5 Millionen Versuche, das Video hochzuladen, davon 1,2 Millionen beim Upload blockiert. 300.000 Kopien gelangen auf die Plattform. YouTube meldet, dass in Spitzenzeiten ein neuer Upload pro Sekunde erfolgt. Die KI-Systeme scheitern an leicht modifizierten Versionen (gespiegelt, mit veränderter Geschwindigkeit, als Reaktionsvideo).",
+      "sources": ["https://about.fb.com/news/2019/03/update-on-new-zealand/"]
+    },
+    {
+      "date": "2019-05",
+      "phase": "consequences",
+      "title": "Christchurch Call: Staaten und Tech-Unternehmen reagieren",
+      "description": "Neuseelands Premierministerin Jacinda Ardern initiiert den 'Christchurch Call to Action' — eine gemeinsame Erklärung von Staaten und Tech-Unternehmen zur Bekämpfung terroristischer Online-Inhalte. Facebook, Google, Twitter und Amazon unterzeichnen. Der Call führt zum GIFCT (Global Internet Forum to Counter Terrorism) mit gemeinsamer Hash-Datenbank.",
+      "sources": ["https://www.christchurchcall.com/"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "EU DSA und globale Regulierung",
+      "description": "Der Christchurch-Anschlag wird zum Katalysator für den EU Digital Services Act (DSA), der Plattformen verpflichtet, algorithmische Risikobewertungen durchzuführen. Studien zeigen jedoch, dass ähnliche Inhalte nach wie vor über Empfehlungsalgorithmen verbreitet werden können — die grundlegende Spannung zwischen Viralität und Sicherheit bleibt ungelöst.",
+      "sources": ["https://www.christchurchcall.com/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.christchurchcall.com/",
+      "title": "Christchurch Call to Action",
+      "publisher": "Christchurch Call",
+      "date": "2019-05-15",
+      "type": "government-document"
+    },
+    {
+      "url": "https://about.fb.com/news/2019/03/update-on-new-zealand/",
+      "title": "Update on New Zealand",
+      "publisher": "Facebook / Meta",
+      "date": "2019-03-18",
+      "type": "company-statement"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/technology-47630849",
+      "title": "Christchurch shootings: How the attack unfolded",
+      "publisher": "BBC News",
+      "date": "2019-03-18",
+      "type": "news-article"
+    },
+    {
+      "url": "https://royalcommission.govt.nz/the-report",
+      "title": "Report of the Royal Commission of Inquiry into the terrorist attack on Christchurch mosques",
+      "publisher": "Royal Commission of Inquiry",
+      "date": "2020-12-08",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

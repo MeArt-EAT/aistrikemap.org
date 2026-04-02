@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/mexiko-ki-militarisierung",
+  "name": "Mexiko: KI-Überwachungsplattform und Pegasus gegen Journalist:innen",
+  "description": "Mexiko ist einer der größten Kunden der NSO Group und setzt Pegasus-Spyware gegen Journalist:innen, Menschenrechtsverteidiger:innen und Angehörige der 43 verschwundenen Studenten von Ayotzinapa ein. Parallel betreibt das Militär die KI-Überwachungsplattform 'Plataforma Sentinel' und beschafft israelische Überwachungstechnologie. Mindestens 25 Journalist:innen und Aktivist:innen wurden nachweislich mit Pegasus überwacht.",
+  "startDate": "2016",
+  "location": {
+    "@type": "Place",
+    "name": "Mexiko-Stadt, Mexiko",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 19.4326,
+      "longitude": -99.1332
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MX"
+    }
+  },
+  "asm:incidentType": ["surveillance", "political-pressure"],
+  "asm:affectedRights": ["Pressefreiheit", "Recht auf Leben", "Recht auf Privatsphäre", "Recht auf Wahrheit", "Schutz vor Überwachung"],
+  "asm:actors": [
+    {
+      "name": "SEDENA (Secretaría de la Defensa Nacional)",
+      "type": "military",
+      "asm:systems": ["Pegasus (NSO Group)", "Plataforma Sentinel"]
+    },
+    {
+      "name": "PGR (Procuraduría General de la República)",
+      "type": "government"
+    },
+    {
+      "name": "Citizen Lab / R3D / Article 19",
+      "type": "organization"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Pegasus-Einsatz gegen Journalist:innen und Aktivist:innen",
+      "description": "Citizen Lab dokumentiert, dass die mexikanische Regierung Pegasus gegen mindestens 25 Journalist:innen und Aktivist:innen einsetzt. Zu den Zielen gehören Reporter:innen, die über Korruption und Kartellgewalt berichten, Anwält:innen der Ayotzinapa-Familien und sogar ein Kind eines überwachten Journalisten.",
+      "sources": ["https://citizenlab.ca/2017/06/reckless-exploit-mexico-nso/"]
+    },
+    {
+      "date": "2017-06",
+      "phase": "event",
+      "title": "Citizen Lab: 'Reckless Exploit' über Mexico",
+      "description": "Citizen Lab veröffentlicht den Bericht 'Reckless Exploit', der den systematischen Missbrauch von Pegasus in Mexiko dokumentiert. Unter den Zielen: Carmen Aristegui (investigative Journalistin), die Ayotzinapa-GIEI-Ermittler und Anti-Korruptionsaktivisten. Die Infektion erfolgt über gefälschte SMS mit personalisierten Ködern.",
+      "sources": ["https://citizenlab.ca/2017/06/reckless-exploit-mexico-nso/"]
+    },
+    {
+      "date": "2022-10",
+      "phase": "event",
+      "title": "Guacamaya-Leak enthüllt Militärüberwachung",
+      "description": "Die Hackergruppe Guacamaya veröffentlicht 6 Terabyte interner Dokumente des mexikanischen Militärs (SEDENA). Die Leaks zeigen, dass das Militär umfassende digitale Überwachung betreibt, einschließlich der Überwachung von Journalist:innen, und dass Pegasus auch unter Präsident López Obrador weiter eingesetzt wird — obwohl er versprochen hatte, den Einsatz zu beenden.",
+      "sources": ["https://www.theguardian.com/world/2022/oct/03/mexico-military-hack-sedena-leaks"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Straflosigkeit und anhaltende Überwachung",
+      "description": "Trotz internationaler Kritik und der Guacamaya-Enthüllungen wird kein einziger Beamter für den illegalen Pegasus-Einsatz strafrechtlich verfolgt. Mexiko bleibt das gefährlichste Land für Journalist:innen in der westlichen Hemisphäre. R3D und Article 19 fordern ein Verbot des Pegasus-Einsatzes und unabhängige Aufsicht.",
+      "sources": ["https://r3d.mx/gobierno-espia/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://citizenlab.ca/2017/06/reckless-exploit-mexico-nso/",
+      "title": "Reckless Exploit: Mexican Journalists, Lawyers, and a Child Targeted with NSO Spyware",
+      "publisher": "Citizen Lab",
+      "date": "2017-06-19",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2022/oct/03/mexico-military-hack-sedena-leaks",
+      "title": "Mexico military hack: Sedena leaks expose surveillance and abuses",
+      "publisher": "The Guardian",
+      "date": "2022-10-03",
+      "type": "news-article"
+    },
+    {
+      "url": "https://r3d.mx/gobierno-espia/",
+      "title": "Gobierno Espía: Vigilancia sistemática contra periodistas y defensores",
+      "publisher": "R3D: Red en Defensa de los Derechos Digitales",
+      "date": "2017",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.nytimes.com/2017/06/19/world/americas/mexico-spyware-anticrime.html",
+      "title": "Using Texts as Lures, Government Spyware Targets Mexican Journalists and Their Families",
+      "publisher": "New York Times",
+      "date": "2017-06-19",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

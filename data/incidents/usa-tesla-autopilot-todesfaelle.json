@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-tesla-autopilot-todesfaelle",
+  "name": "Tesla Autopilot: Tödliche Unfälle durch irreführendes KI-Marketing",
+  "description": "Teslas 'Autopilot' und 'Full Self-Driving' (FSD) Systeme sind in hunderte Unfälle und dutzende Todesfälle verwickelt. Das Unternehmen vermarktet seine Assistenzsysteme mit irreführenden Bezeichnungen, die Fahrer:innen zu übermäßigem Vertrauen in die Technologie verleiten. Die NHTSA untersucht über 900 Unfälle mit aktiviertem Autopilot. Teslas KI-System hat nachgewiesene Schwächen bei der Erkennung von Rettungsfahrzeugen, Motorrädern und Fußgänger:innen.",
+  "startDate": "2016-05",
+  "location": {
+    "@type": "Place",
+    "name": "Palo Alto, Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.4419,
+      "longitude": -122.1430
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["data-misuse"],
+  "asm:affectedRights": ["Recht auf Leben", "Recht auf körperliche Unversehrtheit", "Recht auf Verbraucherschutz", "Recht auf Information"],
+  "asm:actors": [
+    {
+      "name": "Tesla, Inc.",
+      "type": "company",
+      "asm:systems": ["Autopilot", "Full Self-Driving (FSD)"]
+    },
+    {
+      "name": "NHTSA (National Highway Traffic Safety Administration)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-05",
+      "phase": "event",
+      "title": "Erster tödlicher Autopilot-Unfall",
+      "description": "Joshua Brown stirbt in Florida, als sein Tesla Model S mit aktiviertem Autopilot unter einen querenden Sattelzug fährt. Das System erkennt den weißen Anhänger vor dem hellen Himmel nicht. Es ist der erste bekannte Todesfall durch ein teilautonomes Fahrsystem. Tesla betont, der Fahrer habe die Hände nicht am Steuer gehabt.",
+      "sources": ["https://www.nytimes.com/2016/07/01/business/self-driving-tesla-fatal-crash-investigation.html"]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "NHTSA-Untersuchung: Serie von Rettungsfahrzeug-Kollisionen",
+      "description": "NHTSA eröffnet eine formelle Untersuchung nach einer Serie von Unfällen, bei denen Teslas mit aktiviertem Autopilot in stehende Rettungsfahrzeuge mit Blaulicht krachen. Mindestens 12 solcher Unfälle mit 17 Verletzten und einem Todesfall werden dokumentiert. Das KI-System scheint stehende Fahrzeuge auf Schnellstraßen nicht zuverlässig zu erkennen.",
+      "sources": ["https://www.nhtsa.gov/press-releases/nhtsa-opens-investigation-tesla-autopilot-crashes-emergency-vehicles"]
+    },
+    {
+      "date": "2023-12",
+      "phase": "consequences",
+      "title": "Tesla ruft 2 Millionen Fahrzeuge wegen Autopilot zurück",
+      "description": "NHTSA erzwingt einen Rückruf von über 2 Millionen Tesla-Fahrzeugen. Die Untersuchung stellt fest, dass das Autopilot-System unzureichende Kontrollen hat, um sicherzustellen, dass Fahrer:innen aufmerksam bleiben. Tesla behebt das Problem per Software-Update, aber Kritiker:innen argumentieren, dass das Grundproblem — die irreführende Benennung — bestehen bleibt.",
+      "sources": ["https://www.nhtsa.gov/press-releases/nhtsa-recall-tesla-autopilot-defect"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Strafverfahren und Regulierungsdebatte",
+      "description": "In Kalifornien wird erstmals ein Fahrer wegen fahrlässiger Tötung unter Nutzung von Autopilot angeklagt. DOJ und SEC ermitteln gegen Tesla wegen irreführender Aussagen über die Fähigkeiten von Autopilot und FSD. Der EU AI Act klassifiziert autonome Fahrsysteme als 'hochriskant'. Die Debatte über Haftung bei KI-Entscheidungen im Straßenverkehr intensiviert sich weltweit.",
+      "sources": ["https://www.reuters.com/business/autos-transportation/us-prosecutors-examining-teslas-self-driving-claims-sources-2022-10-26/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nhtsa.gov/press-releases/nhtsa-recall-tesla-autopilot-defect",
+      "title": "NHTSA Recall: Tesla Autopilot Defect",
+      "publisher": "NHTSA",
+      "date": "2023-12-13",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.nytimes.com/2016/07/01/business/self-driving-tesla-fatal-crash-investigation.html",
+      "title": "Self-Driving Tesla Was Involved in Fatal Crash, U.S. Says",
+      "publisher": "New York Times",
+      "date": "2016-06-30",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.nhtsa.gov/press-releases/nhtsa-opens-investigation-tesla-autopilot-crashes-emergency-vehicles",
+      "title": "NHTSA Opens Investigation Into Tesla Autopilot Crashes With Emergency Vehicles",
+      "publisher": "NHTSA",
+      "date": "2021-08-16",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.reuters.com/business/autos-transportation/us-prosecutors-examining-teslas-self-driving-claims-sources-2022-10-26/",
+      "title": "U.S. prosecutors examining Tesla's self-driving claims",
+      "publisher": "Reuters",
+      "date": "2022-10-26",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

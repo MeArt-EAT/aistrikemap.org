@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uganda-ki-wahlmanipulation",
+  "name": "Uganda: Huawei-Überwachung und Internet-Shutdown bei Wahlen",
+  "description": "Uganda setzt Huawei-Überwachungstechnologie ein, um die Opposition zu überwachen, und schaltet vor den Wahlen 2021 das Internet ab. Berichte zeigen, dass Huawei-Techniker ugandische Sicherheitskräfte dabei unterstützten, verschlüsselte Kommunikation des Oppositionsführers Bobi Wine zu hacken. Der fünftägige Internet-Shutdown rund um die Wahlen betrifft 45 Millionen Menschen.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Kampala, Uganda",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 0.3476,
+      "longitude": 32.5825
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "UG"
+    }
+  },
+  "asm:incidentType": ["surveillance", "censorship", "political-pressure"],
+  "asm:affectedRights": ["Recht auf freie Wahlen", "Meinungsfreiheit", "Informationsfreiheit", "Recht auf Privatsphäre", "Versammlungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Uganda Police / CMI (Chieftaincy of Military Intelligence)",
+      "type": "government",
+      "asm:systems": ["CCTV-Überwachungsnetzwerk", "Kommunikationsüberwachung"]
+    },
+    {
+      "name": "Huawei Technologies",
+      "type": "company",
+      "asm:systems": ["Safe City CCTV"]
+    },
+    {
+      "name": "Uganda Communications Commission (UCC)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Huawei Safe City in Kampala",
+      "description": "Uganda installiert Huawei-Überwachungskameras in der Hauptstadt Kampala im Rahmen eines Safe-City-Projekts. Das Wall Street Journal enthüllt, dass Huawei-Techniker ugandische Sicherheitskräfte aktiv bei der Überwachung politischer Gegner unterstützten, einschließlich dem Abfangen verschlüsselter Kommunikation.",
+      "sources": ["https://www.wsj.com/articles/huawei-technicians-helped-african-governments-spy-on-political-opponents-11565793017"]
+    },
+    {
+      "date": "2020-11",
+      "phase": "event",
+      "title": "Gewalt gegen Opposition und Überwachungseskalation",
+      "description": "Im Vorfeld der Wahlen werden Oppositionsführer Bobi Wine und Dutzende Unterstützer:innen wiederholt verhaftet. Bei Protesten werden mindestens 54 Menschen getötet. Sicherheitskräfte nutzen die Überwachungsinfrastruktur, um Oppositionelle gezielt zu verfolgen und Protestteilnehmer:innen zu identifizieren.",
+      "sources": ["https://www.hrw.org/news/2021/01/21/uganda-elections-marred-violence"]
+    },
+    {
+      "date": "2021-01-13",
+      "phase": "event",
+      "title": "Fünftägiger Internet-Shutdown vor Wahlen",
+      "description": "Zwei Tage vor der Präsidentschaftswahl schaltet die Regierung das Internet für fünf Tage komplett ab. 45 Millionen Menschen verlieren den Zugang zu Information und Kommunikation. Internationale Wahlbeobachter können nicht berichten. Museveni gewinnt die Wahl — die Opposition spricht von massivem Betrug.",
+      "sources": ["https://netblocks.org/reports/internet-disrupted-in-uganda-on-eve-of-general-election-JA06N18n"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Internationale Verurteilung und Social-Media-Steuer",
+      "description": "Die EU und die USA kritisieren den Internet-Shutdown scharf. Uganda hatte bereits 2018 eine 'Social Media Tax' eingeführt, die den Zugang zu Facebook und WhatsApp verteuert. Freedom House stuft Uganda als 'nicht frei' ein. Der Fall wird zum Muster für den Export chinesischer Überwachungstechnologie nach Afrika.",
+      "sources": ["https://freedomhouse.org/country/uganda/freedom-net/2022"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.wsj.com/articles/huawei-technicians-helped-african-governments-spy-on-political-opponents-11565793017",
+      "title": "Huawei Technicians Helped African Governments Spy on Political Opponents",
+      "publisher": "Wall Street Journal",
+      "date": "2019-08-14",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.hrw.org/news/2021/01/21/uganda-elections-marred-violence",
+      "title": "Uganda: Elections Marred by Violence",
+      "publisher": "Human Rights Watch",
+      "date": "2021-01-21",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://netblocks.org/reports/internet-disrupted-in-uganda-on-eve-of-general-election-JA06N18n",
+      "title": "Internet disrupted in Uganda on eve of general election",
+      "publisher": "NetBlocks",
+      "date": "2021-01-13",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://freedomhouse.org/country/uganda/freedom-net/2022",
+      "title": "Freedom on the Net 2022: Uganda",
+      "publisher": "Freedom House",
+      "date": "2022-10",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

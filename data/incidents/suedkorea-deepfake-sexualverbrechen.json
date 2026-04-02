@@ -1,0 +1,109 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/suedkorea-deepfake-sexualverbrechen",
+  "name": "Südkorea: Deepfake-Sexualverbrechen-Epidemie",
+  "description": "Südkorea erlebt eine Welle von KI-generierten sexuellen Deepfakes, die vor allem Frauen und Mädchen betreffen. Über Telegram-Gruppen werden nichtkonsensuelle pornografische Deepfakes von Mitschülerinnen, Kolleginnen und Unbekannten geteilt. 2024 deckt eine Recherche auf, dass hunderte Chatrooms mit Material betrieben werden, in denen Opfer oft minderjährig sind. Das Problem betrifft schätzungsweise 1 von 30 südkoreanischen Frauen zwischen 18-29.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Seoul, Südkorea",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.5665,
+      "longitude": 126.9780
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "KR"
+    }
+  },
+  "asm:incidentType": ["deepfakes", "data-misuse"],
+  "asm:affectedRights": ["Menschenwürde", "Recht auf sexuelle Selbstbestimmung", "Schutz der Privatsphäre", "Schutz von Kindern", "Recht auf Sicherheit"],
+  "asm:actors": [
+    {
+      "name": "Anonyme Telegram-Nutzer und -Gruppen",
+      "type": "individual"
+    },
+    {
+      "name": "Südkoreanische Regierung / Polizei",
+      "type": "government"
+    },
+    {
+      "name": "Telegram",
+      "type": "company"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Deepfake-Technologie wird massentauglich",
+      "description": "Open-Source-Deepfake-Tools (DeepFaceLab, FaceSwap) werden einfach zugänglich. In Südkorea entstehen erste Telegram-Gruppen, in denen Nutzer Fotos von Frauen einreichen und KI-generierte pornografische Fälschungen erhalten. Die Einstiegshürde sinkt auf wenige Klicks.",
+      "sources": ["https://www.bbc.co.uk/news/articles/cy4y0z39v4do"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Nth Room Case: Telegram-Ausbeutung aufgedeckt",
+      "description": "Der 'Nth Room'-Skandal wird aufgedeckt: Über verschlüsselte Telegram-Chatrooms wurden sexuell ausbeuterische Inhalte von mindestens 74 Frauen verbreitet, darunter 16 Minderjährige. Betreiber Cho Ju-bin nutzte Deepfake-Technologie und Erpressung. Er wird zu 42 Jahren Haft verurteilt.",
+      "sources": ["https://www.bbc.co.uk/news/world-asia-52299071"]
+    },
+    {
+      "date": "2024-08",
+      "phase": "event",
+      "title": "Deepfake-Sexualverbrechen erreichen epidemische Ausmaße",
+      "description": "Die hankyoreh berichtet, dass hunderte Telegram-Chatrooms existieren, die auf einzelne Schulen und Universitäten zugeschnitten sind. Schülerinnen teilen verstört Warnungen über Social Media. Die Polizei meldet einen Anstieg der Deepfake-Sexualverbrechen um 120% gegenüber dem Vorjahr. Eine Studie beziffert die Opferzahl auf schätzungsweise 3,4% aller jungen Frauen im Land.",
+      "sources": ["https://www.bbc.co.uk/news/articles/cy4y0z39v4do"]
+    },
+    {
+      "date": "2024-09",
+      "phase": "consequences",
+      "title": "Verschärfte Gesetzgebung und Telegram-Reaktion",
+      "description": "Südkoreas Nationalversammlung verabschiedet ein verschärftes Gesetz: Bereits der Besitz von Deepfake-Pornografie wird strafbar (bis 3 Jahre Haft), Verbreitung mit bis zu 7 Jahren. Telegram beginnt nach internationalem Druck, Chatrooms zu sperren. Präsident Yoon kündigt eine 'Null-Toleranz'-Politik an.",
+      "sources": ["https://www.reuters.com/world/asia-pacific/south-korea-toughens-laws-deepfake-sex-crimes-2024-09-26/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cy4y0z39v4do",
+      "title": "South Korea's deepfake porn epidemic: 'Itستخد happen to any woman'",
+      "publisher": "BBC News",
+      "date": "2024-08-29",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/world-asia-52299071",
+      "title": "Cho Ju-bin: South Korea chatroom sex abuse suspect named",
+      "publisher": "BBC News",
+      "date": "2020-03-25",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-toughens-laws-deepfake-sex-crimes-2024-09-26/",
+      "title": "South Korea toughens laws on deepfake sex crimes",
+      "publisher": "Reuters",
+      "date": "2024-09-26",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.hrw.org/news/2024/09/18/south-korea-deepfake-sexual-abuse-crisis",
+      "title": "South Korea: Deepfake Sexual Abuse Crisis",
+      "publisher": "Human Rights Watch",
+      "date": "2024-09-18",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-01",
+    "lastUpdated": "2026-04-01",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}
