@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/chile-ki-verfassungsprozess",
+  "name": "Chile: KI-Überwachung bei sozialen Protesten und Mapuche-Überwachung",
+  "description": "Während der chilenischen Massenproteste 2019 ('Estallido Social') setzen Sicherheitskräfte Gesichtserkennungstechnologie und Drohnenüberwachung ein. Zudem wird bekannt, dass die Carabineros seit Jahren KI-gestützte Überwachung gegen die Mapuche-Bevölkerung in Südchile betreiben. Über 400 Protestierende verlieren durch Gummigeschosse ein Auge. Die Überwachung wird als Werkzeug politischer Repression dokumentiert.",
+  "startDate": "2019-10",
+  "location": {
+    "@type": "Place",
+    "name": "Santiago de Chile, Chile",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.4489,
+      "longitude": -70.6693
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CL"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition", "discrimination"],
+  "asm:affectedRights": ["Versammlungsfreiheit", "Recht auf körperliche Unversehrtheit", "Recht auf Privatsphäre", "Rechte indigener Völker"],
+  "asm:actors": [
+    {
+      "name": "Carabineros de Chile",
+      "type": "government",
+      "asm:systems": ["Gesichtserkennung", "Drohnenüberwachung"]
+    },
+    {
+      "name": "INDH (Instituto Nacional de Derechos Humanos)",
+      "type": "organization"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-10",
+      "phase": "event",
+      "title": "Estallido Social: Massenproteste und Überwachung",
+      "description": "Millionen Chilen:innen protestieren gegen Ungleichheit. Carabineros setzen Drohnenüberwachung und Gesichtserkennungstechnologie ein, um Protestteilnehmer:innen zu identifizieren. Über 400 Menschen verlieren durch Gummigeschosse ein Auge — Amnesty International spricht von 'systematischer Absicht zu verletzen'.",
+      "sources": ["https://www.amnesty.org/en/latest/news/2020/10/chile-anniversary-estallido-social-crisis/"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Mapuche-Überwachung wird öffentlich",
+      "description": "Investigative Berichte enthüllen, dass Carabineros seit Jahren KI-gestützte Überwachung gegen die indigene Mapuche-Bevölkerung im Süden Chiles betreiben. Überwachungskameras, Drohnen und Social-Media-Monitoring werden gegen Mapuche-Gemeinden eingesetzt, die Land- und Wasserrechte einfordern.",
+      "sources": ["https://www.hrw.org/world-report/2021/country-chapters/chile"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Verfassungsprozess und Debatte über digitale Rechte",
+      "description": "Der chilenische Verfassungskonvent debattiert erstmals explizite digitale Grundrechte und Beschränkungen staatlicher Überwachung. Chile verabschiedet als erstes lateinamerikanisches Land ein Gesetz, das Neurotechnologie und KI-Eingriffe in kognitive Rechte reguliert. Der Entwurf wird im Referendum abgelehnt, setzt aber internationale Standards.",
+      "sources": ["https://www.derechosdigitales.org/"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Straflosigkeit und fortgesetzte Überwachung",
+      "description": "Trotz über 8.000 dokumentierter Menschenrechtsverletzungen während der Proteste werden nur wenige Carabineros verurteilt. Die Überwachungsinfrastruktur bleibt bestehen. Derechos Digitales und die chilenische Datenschutzbehörde fordern eine umfassende Regulierung biometrischer Überwachung.",
+      "sources": ["https://www.derechosdigitales.org/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2020/10/chile-anniversary-estallido-social-crisis/",
+      "title": "Chile: One year after Estallido Social, justice still pending",
+      "publisher": "Amnesty International",
+      "date": "2020-10-18",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2021/country-chapters/chile",
+      "title": "World Report 2021: Chile",
+      "publisher": "Human Rights Watch",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.derechosdigitales.org/",
+      "title": "Derechos Digitales: Tecnología y derechos humanos en América Latina",
+      "publisher": "Derechos Digitales",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

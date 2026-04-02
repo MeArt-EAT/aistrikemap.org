@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/nigeria-ki-wahlmanipulation-deepfakes",
+  "name": "Nigeria: KI-Deepfakes und Desinformation bei Wahlen 2023",
+  "description": "Die nigerianische Präsidentschaftswahl 2023 wird von einer Welle KI-generierter Deepfakes und Desinformation begleitet. Gefälschte Audiodateien und manipulierte Videos von Kandidaten gehen viral auf WhatsApp und Twitter. Das KI-gestützte Wahlsystem BVAS (Bimodal Voter Accreditation System) versagt in zahlreichen Wahllokalen. Nigeria wird zum Testfall dafür, wie generative KI Wahlen in afrikanischen Demokratien destabilisieren kann.",
+  "startDate": "2023-02",
+  "location": {
+    "@type": "Place",
+    "name": "Abuja, Nigeria",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.0579,
+      "longitude": 7.4951
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NG"
+    }
+  },
+  "asm:incidentType": ["deepfakes", "political-pressure", "data-misuse"],
+  "asm:affectedRights": ["Recht auf freie Wahlen", "Recht auf Information", "Meinungsfreiheit", "Recht auf Demokratie"],
+  "asm:actors": [
+    {
+      "name": "Diverse politische Akteure",
+      "type": "individual"
+    },
+    {
+      "name": "INEC (Independent National Electoral Commission)",
+      "type": "government",
+      "asm:systems": ["BVAS (Bimodal Voter Accreditation System)", "IReV (INEC Result Viewing Portal)"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-01",
+      "phase": "infrastructure",
+      "title": "KI-Deepfakes im Wahlkampf",
+      "description": "Wochen vor der Wahl tauchen KI-generierte Audio-Deepfakes auf, in denen Kandidaten angeblich Wahlbetrug planen oder Gewalt androhen. Die Fälschungen verbreiten sich über WhatsApp-Gruppen — die dominante Kommunikationsplattform in Nigeria mit über 90 Millionen Nutzer:innen. Factchecker können mit der Verbreitungsgeschwindigkeit nicht mithalten.",
+      "sources": ["https://www.bbc.co.uk/news/world-africa-64651297"]
+    },
+    {
+      "date": "2023-02-25",
+      "phase": "event",
+      "title": "Wahltag: BVAS-System versagt vielerorts",
+      "description": "Am Wahltag funktioniert das biometrische Wählerakkreditierungssystem BVAS in zahlreichen Wahllokalen nicht — insbesondere in Oppositionshochburgen. Das digitale Ergebnisportal IReV, das Transparenz sichern sollte, wird zeitweise abgeschaltet. Oppositionsparteien sprechen von systematischem Technologieversagen als Wahlmanipulation.",
+      "sources": ["https://www.reuters.com/world/africa/nigerias-election-technology-under-scrutiny-after-delays-2023-02-27/"]
+    },
+    {
+      "date": "2023-03",
+      "phase": "consequences",
+      "title": "Wahlklagen und internationale Kritik",
+      "description": "Oppositionskandidat Atiku Abubakar und Peter Obi fechten das Ergebnis an. EU-Wahlbeobachter kritisieren 'schwere operative Mängel'. Die Debatte über die Verlässlichkeit von KI-Systemen bei Wahlen in Entwicklungsländern wird international geführt. Afrika wird als nächste Front im Kampf gegen KI-gestützte Wahlmanipulation identifiziert.",
+      "sources": ["https://www.eueom.eu/nigeria-2023/"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Afrikaweite Debatte über KI und Wahlen",
+      "description": "Der nigerianische Fall wird zum Warnsignal für afrikanische Demokratien mit Wahlen in 2024 (Südafrika, Ghana, Senegal). Die AU und ECOWAS initiieren Gespräche über die Regulierung von KI-Desinformation. Tech-Unternehmen werden aufgefordert, afrikanische Sprachen in ihre Faktencheck-Tools aufzunehmen.",
+      "sources": ["https://africacenter.org/spotlight/the-growing-threat-of-disinformation-in-african-elections/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.bbc.co.uk/news/world-africa-64651297",
+      "title": "Nigeria election 2023: Fake news and misinformation",
+      "publisher": "BBC News",
+      "date": "2023-02-23",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.reuters.com/world/africa/nigerias-election-technology-under-scrutiny-after-delays-2023-02-27/",
+      "title": "Nigeria's election technology under scrutiny after delays",
+      "publisher": "Reuters",
+      "date": "2023-02-27",
+      "type": "news-article"
+    },
+    {
+      "url": "https://africacenter.org/spotlight/the-growing-threat-of-disinformation-in-african-elections/",
+      "title": "The Growing Threat of Disinformation in African Elections",
+      "publisher": "Africa Center for Strategic Studies",
+      "date": "2024",
+      "type": "research-paper"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-02",
+    "lastUpdated": "2026-04-02",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}
