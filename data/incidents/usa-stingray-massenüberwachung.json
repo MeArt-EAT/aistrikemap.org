@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-stingray-massenüberwachung",
+  "name": "USA: Stingray-IMSI-Catcher — Massenüberwachung ohne Durchsuchungsbefehl",
+  "description": "US-Strafverfolgungsbehörden setzten ab 2007 sogenannte Stingray-Geräte (IMSI-Catcher) ein, um Mobiltelefone massenhaft und ohne richterliche Genehmigung zu überwachen. Die Geräte imitieren Mobilfunkmasten, erfassen Standortdaten aller Telefone in der Umgebung und können Kommunikation abfangen. Die Polizei in Baltimore nutzte Stingrays tausende Male, ohne Gerichte oder Staatsanwaltschaft zu informieren. Die ACLU deckte 2015 auf, dass die Behörden systematisch geheime Nutzungsvereinbarungen mit dem Hersteller Harris Corporation unterzeichnet hatten, die eine Offenlegung gegenüber Gerichten untersagten.",
+  "startDate": "2007",
+  "location": {
+    "@type": "Place",
+    "name": "Baltimore, Maryland, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.2904,
+      "longitude": -76.6122
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["surveillance", "data-misuse"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Recht auf ein faires Verfahren", "Schutz vor willkürlicher Überwachung", "Versammlungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Baltimore Police Department",
+      "type": "government",
+      "asm:systems": ["Stingray (Harris Corporation)", "IMSI-Catcher-Netzwerk"]
+    },
+    {
+      "name": "FBI (Federal Bureau of Investigation)",
+      "type": "government",
+      "asm:systems": ["Stingray", "Hailstorm"]
+    },
+    {
+      "name": "Harris Corporation",
+      "type": "company",
+      "asm:systems": ["Stingray", "Hailstorm", "KingFish"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2007",
+      "phase": "infrastructure",
+      "title": "Erste Stingray-Einsätze durch US-Behörden",
+      "description": "US-Strafverfolgungsbehörden beginnen flächendeckend IMSI-Catcher der Firma Harris Corporation einzusetzen. Die Geräte werden unter strengster Geheimhaltung beschafft; Beamte werden angewiesen, deren Existenz in Gerichtsverfahren zu verschweigen. Bundesbehörden schließen Geheimhaltungsvereinbarungen mit Harris Corporation ab, die Offenlegungspflichten gegenüber Gerichten ausdrücklich untersagen.",
+      "sources": ["https://www.aclu.org/issues/privacy-technology/surveillance-technologies/stingray-tracking-devices-whos-got-them"]
+    },
+    {
+      "date": "2015",
+      "phase": "event",
+      "title": "ACLU deckt Ausmaß der Stingray-Nutzung in Baltimore auf",
+      "description": "Die ACLU veröffentlicht eine umfassende Untersuchung, die belegt, dass die Polizei von Baltimore Stingrays zwischen 2007 und 2015 mindestens 4.300 Mal einsetzte — in der Mehrzahl der Fälle ohne Durchsuchungsbefehl. Gerichtsdokumente zeigen, dass Staatsanwaltschaft und Richter systematisch im Dunkeln gelassen wurden. Fälle werden aufgerollt, nachdem bekannt wird, dass Beweise aus Stingray-Einsätzen stammen.",
+      "sources": ["https://www.aclu.org/report/stingray-secret-surveillance-device-vulnerable-to-attack"]
+    },
+    {
+      "date": "2016",
+      "phase": "doctrine",
+      "title": "Rechtliche Herausforderungen und erste Gerichtsurteile",
+      "description": "Mehrere US-Gerichte beginnen, Stingray-Einsätze ohne Durchsuchungsbefehl als verfassungswidrig einzustufen. Das US-Justizministerium erlässt neue Richtlinien, die in den meisten Fällen einen richterlichen Beschluss vorschreiben. Staatsgesetzgeber in Maryland und anderen Bundesstaaten verabschieden erste gesetzliche Einschränkungen. Die geheimen Nutzungsvereinbarungen mit Harris Corporation werden als rechtswidrig angefochten.",
+      "sources": ["https://www.baltimoresun.com/news/crime/bs-md-ci-stingray-warrant-20160323-story.html"]
+    },
+    {
+      "date": "2018",
+      "phase": "consequences",
+      "title": "Partielle Reformen — Geräte bleiben weiterhin im Einsatz",
+      "description": "Nach öffentlichem Druck führen einige Bundesstaaten Genehmigungspflichten für IMSI-Catcher ein. Allerdings nutzen Behörden Schlupflöcher: Einsätze zur 'nationalen Sicherheit' bleiben weitgehend unreguliert. Strafrechtliche Verurteilungen, die auf Stingray-Daten basierten, werden in mehreren Fällen aufgehoben. Transparenzberichte belegen, dass dutzende Bundesbehörden die Geräte weiterhin ohne einheitliche Rechtsgrundlage betreiben.",
+      "sources": ["https://www.aclu.org/issues/privacy-technology/surveillance-technologies/stingray-tracking-devices-whos-got-them"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.aclu.org/issues/privacy-technology/surveillance-technologies/stingray-tracking-devices-whos-got-them",
+      "title": "Stingray Tracking Devices: Who's Got Them?",
+      "publisher": "ACLU",
+      "date": "2018",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.aclu.org/report/stingray-secret-surveillance-device-vulnerable-to-attack",
+      "title": "Stingray: The Secret Surveillance Device Vulnerable to Attack",
+      "publisher": "ACLU",
+      "date": "2015",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.baltimoresun.com/news/crime/bs-md-ci-stingray-warrant-20160323-story.html",
+      "title": "Baltimore police used stingray 4,300 times without warrant",
+      "publisher": "The Baltimore Sun",
+      "date": "2016-03-23",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/georgien-russische-cyber-angriffe",
+  "name": "Georgien: Russische Cyber-Angriffe und KI-gestützte Desinformationskampagnen",
+  "description": "Russland führt seit dem Krieg 2008 wiederholt massive Cyber-Angriffe und Desinformationskampagnen gegen Georgien durch. Der bislang schwerste Angriff 2019 legt Tausende georgische Websites lahm, darunter die des Präsidenten und mehrerer Fernsehsender. Das NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) in Tallinn dokumentiert die Angriffe als Teil einer hybriden Kriegsführungsstrategie. KI-gestützte Desinformationsnetzwerke verbreiten gezielt Falschinformationen vor Wahlen.",
+  "startDate": "2008",
+  "location": {
+    "@type": "Place",
+    "name": "Tiflis, Georgien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.7151,
+      "longitude": 44.8271
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GE"
+    }
+  },
+  "asm:incidentType": ["censorship", "political-pressure", "deepfakes"],
+  "asm:affectedRights": ["Informationsfreiheit", "Demokratische Partizipation", "Recht auf Privatsphäre"],
+  "asm:actors": [
+    {
+      "name": "Russische Regierung / GRU (Militärgeheimdienst)",
+      "type": "military",
+      "asm:systems": ["Sandworm APT-Gruppe", "Bot-Netzwerke", "Deepfake-Propaganda"]
+    },
+    {
+      "name": "Georgische Staatsorgane und Medien",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2008-08",
+      "phase": "infrastructure",
+      "title": "Erste koordinierte Cyber-Angriffe parallel zum Krieg",
+      "description": "Synchron mit dem Einmarsch russischer Truppen in Südossetien werden georgische Regierungswebseiten, Nachrichtenportale und Kommunikationsinfrastruktur durch massive DDoS-Angriffe lahmgelegt. Es ist eines der ersten dokumentierten Beispiele koordinierter kinetischer und Cyber-Kriegsführung. Das NATO CCDCOE analysiert den Angriff als Präzedenzfall für hybride Kriegsführung. Die Urheberschaft wird russischen Nationalisten und staatlichen Akteuren zugeschrieben.",
+      "sources": ["https://ccdcoe.org/uploads/2018/10/Tikk_Kaska_Vihul_2010_International_Cyber_Incidents.pdf"]
+    },
+    {
+      "date": "2019-10-28",
+      "phase": "event",
+      "title": "Massiver Cyber-Angriff auf über 15.000 georgische Websites",
+      "description": "Ein koordinierter Angriff legt über 15.000 Websites in Georgien lahm, darunter die offizielle Website des Präsidenten, Gerichte, die Nationalbank und mehrere Fernsehsender. Bildschirme von Fernsehstationen zeigen das Foto des Ex-Präsidenten Saakaschwili mit der Aufschrift 'Ich werde zurückkehren'. Das georgische CERT und westliche Geheimdienste schreiben den Angriff der russischen GRU-Einheit Sandworm zu.",
+      "sources": ["https://www.cfr.org/cyber-operations/georgia-mass-cyberattack-october-2019"]
+    },
+    {
+      "date": "2020-10",
+      "phase": "doctrine",
+      "title": "KI-Desinformationsnetzwerke vor Parlamentswahlen",
+      "description": "Vor den georgischen Parlamentswahlen im Oktober 2020 identifiziert das DFRLab koordinierte Desinformationsnetzwerke, die mit KI-generierten Inhalten und gefälschten Konten operieren. Die Kampagnen verbreiten Narrative über NATO-Gegnerschaft und pro-russische Kandidaten. Facebook/Meta entfernt mehrere Netzwerke mit Verbindungen zu russischen staatlichen Medien. Deepfake-Videos georgischer Politiker kursieren in sozialen Medien.",
+      "sources": ["https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Anhaltende hybride Bedrohung und NATO-Beitrittsdebatte",
+      "description": "Georgien bleibt ein primäres Ziel russischer hybrider Einflussoperationen. Die politischen Proteste 2023/2024 gegen das 'Ausländische Agenten'-Gesetz werden von koordinierten Desinformationskampagnen begleitet. Das NATO CCDCOE stuft Georgien als eines der am stärksten bedrohten Länder in Europa ein. Die EU und NATO intensivieren Cyber-Kapazitätsaufbau-Programme.",
+      "sources": ["https://ccdcoe.org/research/tallinn-manual/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://ccdcoe.org/uploads/2018/10/Tikk_Kaska_Vihul_2010_International_Cyber_Incidents.pdf",
+      "title": "International Cyber Incidents: Legal Considerations",
+      "publisher": "NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE)",
+      "date": "2010",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.cfr.org/cyber-operations/georgia-mass-cyberattack-october-2019",
+      "title": "Georgia Mass Cyberattack, October 2019",
+      "publisher": "Council on Foreign Relations",
+      "date": "2020",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/",
+      "title": "Digital Forensic Research Lab (DFRLab) — Georgia Investigations",
+      "publisher": "Atlantic Council / DFRLab",
+      "date": "2021",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://ccdcoe.org/research/tallinn-manual/",
+      "title": "Tallinn Manual on the International Law Applicable to Cyber Operations",
+      "publisher": "NATO CCDCOE",
+      "date": "2017",
+      "type": "research-paper"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

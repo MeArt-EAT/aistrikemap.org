@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-ice-babel-street",
+  "name": "USA: ICE kauft kommerzielle Standortdaten zur Einwanderer-Uberwachung",
+  "description": "Die US-Einwanderungsbehorde ICE schloss ab 2018 Vertrage mit der Datenfirma Babel Street ab, um kommerzielle Mobilfunk-Standortdaten zu erwerben und Einwanderer ohne richterliche Genehmigung zu uberwachen. Das System umgeht den Vierten Zusatzartikel der US-Verfassung, der normalerweise einen Durchsuchungsbefehl erfordert. ACLU-FOIA-Anfragen enthullten, dass ICE diese Daten nutzte, um Einwanderer in Kirchenasyl, an Schulen und in Kliniken zu verfolgen.",
+  "startDate": "2018-01",
+  "location": {
+    "@type": "Place",
+    "name": "Washington DC, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.9072,
+      "longitude": -77.0369
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["surveillance", "data-misuse", "discrimination"],
+  "asm:affectedRights": ["Recht auf Privatsphare", "Schutz vor willkurlicher Verhaftung", "Recht auf faires Verfahren", "Bewegungsfreiheit", "Diskriminierungsschutz"],
+  "asm:actors": [
+    {
+      "name": "ICE (U.S. Immigration and Customs Enforcement)",
+      "type": "government",
+      "asm:systems": ["Babel Street Locate X", "Palantir FALCON", "Standortdaten-Analyseplattform"]
+    },
+    {
+      "name": "Babel Street",
+      "type": "company",
+      "asm:systems": ["Locate X (kommerzielle Standortdaten-Plattform)"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-03",
+      "phase": "infrastructure",
+      "title": "ICE-Vertrag mit Babel Street",
+      "description": "ICE schliesst einen Vertrag mit Babel Street uber den Zugang zur Plattform 'Locate X' ab, die Milliarden von Standortdatenpunkten aus kommerziellen Apps aggregiert. Diese Daten stammen aus Wetter-Apps, Spielen und anderen Anwendungen, deren Nutzer keine Kenntnis von der Weitergabe an Behorden haben. Der Vertrag ermoglicht ICE eine geographische Uberwachung ohne Durchsuchungsbefehl.",
+      "sources": ["https://www.aclu.org/report/ice-and-dhs-purchase-mass-surveillance-tools"]
+    },
+    {
+      "date": "2020-02",
+      "phase": "doctrine",
+      "title": "ACLU enthullt ICE-Uberwachungspraktiken per FOIA",
+      "description": "Die ACLU veroffentlicht Dokumente, die durch Informationsfreiheitsanfragen erhalten wurden und zeigen, wie ICE Babel Street nutzt, um Einwanderer zu verfolgen. Die Dokumente belegen, dass ICE gezielt nach Personen an sogenannten 'geschutzten Orten' wie Kirchen, Schulen und Kliniken sucht, obwohl eine offizielle ICE-Politik solche Einsatze einschranken sollte.",
+      "sources": ["https://www.aclu.org/report/ice-and-dhs-purchase-mass-surveillance-tools"]
+    },
+    {
+      "date": "2020-06",
+      "phase": "event",
+      "title": "Nachgewiesene Verhaftungen auf Basis kommerzieller Standortdaten",
+      "description": "Investigative Berichte des Wall Street Journal und anderer Medien belegen konkrete Falle, in denen ICE Einwanderer anhand kommerzieller Standortdaten aufgespurt und verhaftet hat. Betroffen sind uberwiegend lateinamerikanische Migranten ohne Aufenthaltsstatus. Kritiker bemangeln, dass das System strukturell diskriminierend wirkt, da bestimmte ethnische Gruppen unverhaltnisamssig stark uberwacht werden.",
+      "sources": ["https://www.wsj.com/articles/federal-agencies-use-cellphone-location-data-for-immigration-enforcement-11581078600"]
+    },
+    {
+      "date": "2023-09",
+      "phase": "consequences",
+      "title": "Gerichtliche Anfechtungen und politische Debatten",
+      "description": "Burgerrechtsorganisationen fechten den Kauf kommerzieller Standortdaten durch Bundesbehorden vor Gericht an. Der US-Kongress debattiert den Fourth Amendment Is Not For Sale Act, der den Kauf von Standortdaten ohne Durchsuchungsbefehl verbieten wurde. ICE setzt die Nutzung kommerzieller Daten in modifizierter Form fort. Betroffene Einwanderergemeinschaften berichten von weit verbreitetem Misstrauen gegenuber Smartphones.",
+      "sources": ["https://www.aclu.org/report/ice-and-dhs-purchase-mass-surveillance-tools"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.aclu.org/report/ice-and-dhs-purchase-mass-surveillance-tools",
+      "title": "ICE and DHS Purchase of Mass Surveillance Tools",
+      "publisher": "ACLU",
+      "date": "2020-02",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.wsj.com/articles/federal-agencies-use-cellphone-location-data-for-immigration-enforcement-11581078600",
+      "title": "Federal Agencies Use Cellphone Location Data for Immigration Enforcement",
+      "publisher": "Wall Street Journal",
+      "date": "2020-02-07",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.eff.org/deeplinks/2020/02/ice-uses-obscure-surveillance-technique-collect-location-data-millions-phones",
+      "title": "ICE Uses Obscure Surveillance Technique to Collect Location Data",
+      "publisher": "Electronic Frontier Foundation",
+      "date": "2020-02-07",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

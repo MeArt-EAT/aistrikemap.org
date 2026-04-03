@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/frankreich-algorithme-parcoursup",
+  "name": "Frankreich: Parcoursup-Algorithmus zementiert soziale Ungleichheit im Hochschulzugang",
+  "description": "Das 2018 eingeführte Parcoursup-System zur Vergabe von Studienplatzen in Frankreich steht massiv in der Kritik. Der undurchsichtige Algorithmus soll Bewerbungen objektiv bewerten, reproduziert jedoch nachweislich soziale Ungleichheiten. Schulen aus einkommensschwachen Regionen haben schlechtere Erfolgsquoten, Bildungswege werden durch automatisierte Entscheidungen verengt. Der Défenseur des droits sowie zahlreiche Gerichte kritisieren die fehlende Transparenz und Rechenschaftspflicht des Systems.",
+  "startDate": "2018-01",
+  "location": {
+    "@type": "Place",
+    "name": "Paris, Frankreich",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FR"
+    }
+  },
+  "asm:incidentType": ["discrimination", "data-misuse"],
+  "asm:affectedRights": ["Recht auf Bildung", "Gleichheitsgebot", "Recht auf Erklärung algorithmischer Entscheidungen", "Recht auf ein faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "Französisches Bildungsministerium",
+      "type": "government",
+      "asm:systems": ["Parcoursup-Plattform", "Automated Classification Algorithm"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-10",
+      "phase": "infrastructure",
+      "title": "Ablösung des APB-Systems durch Parcoursup",
+      "description": "Das Bildungsministerium beschliesst die Ablösung des bisherigen Admission Post Bac (APB)-Systems durch Parcoursup. Während APB noch auf einer transparenten Rangliste basierte, setzt Parcoursup auf ein undurchsichtiges, von einzelnen Hochschulen konfiguriertes Algorithmenmodell. Das System soll 800.000 Bewerber pro Jahr auf 13.000 Studiengänge verteilen.",
+      "sources": ["https://www.lemonde.fr/campus/article/2018/01/15/parcoursup-tout-comprendre-au-nouveau-systeme-d-admission-dans-le-superieur_5243382_4401467.html"]
+    },
+    {
+      "date": "2018-01",
+      "phase": "event",
+      "title": "Launch von Parcoursup und erste Proteste",
+      "description": "Nach dem Launch berichten Tausende Schülerinnen und Schüler von intransparenten Ablehnungen ohne Begründung. Sozialwissenschaftler weisen nach, dass die Herkunftsschule und der Wohnort systematischen Einfluss auf die Zulassungschancen haben. Studierende blockieren als Protest Universitätsgebäude in Paris, Lyon und anderen Städten.",
+      "sources": ["https://www.liberation.fr/education/2019/05/21/parcoursup-un-an-apres-le-bilan_1728543/"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Défenseur des droits und Transparenzklagen",
+      "description": "Der Défenseur des droits (französische Ombudsstelle) kritisiert in einem Bericht die mangelnde Transparenz von Parcoursup und fordert stärkere Rechte der Betroffenen. Mehrere Verwaltungsgerichte geben Klagen gegen undurchsichtige Ablehnungsentscheidungen statt. Die CNIL (Datenschutzbehörde) beanstandet die unzureichende Information der Nutzer über die Datenverarbeitung.",
+      "sources": ["https://www.defenseurdesdroits.fr/sites/default/files/atoms/files/rapport-parcoursup-2019.pdf"]
+    },
+    {
+      "date": "2020",
+      "phase": "consequences",
+      "title": "Anhaltende Debatte und partielle Reformen",
+      "description": "Trotz Versprechen des Ministeriums zur Verbesserung der Transparenz zeigen Analysen weiterhin systematische Benachteiligung sozialer Randgruppen. Die 'Ordonnance' von 2020 verpflichtet Hochschulen, Entscheidungskriterien zu veröffentlichen, doch zivilgesellschaftliche Akteure kritisieren die Umsetzung als unzureichend. Forscher dokumentieren persistente geographische und sozioökonomische Verzerrungen.",
+      "sources": ["https://www.insee.fr/fr/statistiques/5432519"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.defenseurdesdroits.fr/sites/default/files/atoms/files/rapport-parcoursup-2019.pdf",
+      "title": "Rapport sur Parcoursup et l'égal accès à l'enseignement supérieur",
+      "publisher": "Défenseur des droits",
+      "date": "2019",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.lemonde.fr/campus/article/2018/01/15/parcoursup-tout-comprendre-au-nouveau-systeme-d-admission-dans-le-superieur_5243382_4401467.html",
+      "title": "Parcoursup: tout comprendre au nouveau système d'admission dans le supérieur",
+      "publisher": "Le Monde",
+      "date": "2018-01-15",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.liberation.fr/education/2019/05/21/parcoursup-un-an-apres-le-bilan_1728543/",
+      "title": "Parcoursup, un an après: le bilan",
+      "publisher": "Libération",
+      "date": "2019-05-21",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.insee.fr/fr/statistiques/5432519",
+      "title": "Origines sociales et géographiques des candidats à Parcoursup",
+      "publisher": "INSEE",
+      "date": "2021",
+      "type": "research-paper"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

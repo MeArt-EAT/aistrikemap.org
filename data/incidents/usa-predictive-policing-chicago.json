@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-predictive-policing-chicago",
+  "name": "USA: Chicagos 'Strategic Subject List' — Algorithmisches Gewaltrisiko-Scoring mit Rassismus-Bias",
+  "description": "Das Chicago Police Department setzte ab 2012 eine algorithmisch erstellte 'Strategic Subject List' (SSL), auch 'Heat List' genannt, ein, die Tausende Einwohner nach ihrem angeblichen Gewaltrisiko einstufte. Bewertet wurden unter anderem Verhaftungen, Umfeld und Vorstrafen — ohne strafrechtliche Verurteilung. Evaluationen belegten einen starken Bias gegen schwarze Stadtbewohner. Nach anhaltender Kritik und einem vernichtenden Bericht des Stadtprufers wurde das System 2020 eingestellt.",
+  "startDate": "2012",
+  "location": {
+    "@type": "Place",
+    "name": "Chicago, Illinois, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.8781,
+      "longitude": -87.6298
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["predictive-policing", "discrimination", "surveillance"],
+  "asm:affectedRights": ["Recht auf Privatsphare", "Recht auf Gleichbehandlung", "Unschuldsvermutung", "Schutz vor Diskriminierung aufgrund der ethnischen Herkunft"],
+  "asm:actors": [
+    {
+      "name": "Chicago Police Department",
+      "type": "government",
+      "asm:systems": ["Strategic Subject List (SSL)", "Strategic Decision Support Centers"]
+    },
+    {
+      "name": "Illinois Institute of Technology",
+      "type": "research",
+      "asm:systems": ["SSL-Algorithmus (ursprungliche Entwicklung)"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "Einfuhrung der Strategic Subject List",
+      "description": "Das Chicago Police Department implementiert in Zusammenarbeit mit dem Illinois Institute of Technology einen Algorithmus, der Stadtbewohner anhand von Faktoren wie Verhaftungshistorie, Umfeld und bekannten Assoziierten mit einem Risikoscore zwischen 0 und 500 versieht. Die Liste umfasst zeitweise bis zu 400.000 Personen. Sie wird genutzt, um Polizeiprasenz, Praventionsbesuche und Ressourcenzuweisung zu steuern.",
+      "sources": ["https://www.rand.org/pubs/research_reports/RR3242.html"]
+    },
+    {
+      "date": "2016",
+      "phase": "doctrine",
+      "title": "RAND-Evaluation deckt gravierende Schwachen auf",
+      "description": "Die RAND Corporation veroffentlicht eine offizielle Evaluation der SSL. Ergebnis: Das System identifiziert keine Personen besser als Zufallsmethoden. Gleichzeitig sind Schwarze und Einwohner aus einkommensschwachen Vierteln uberproportional auf der Liste. RAND empfiehlt grundlegende Reformen. Das Chicago Police Department setzt das System dennoch unverandert fort und weitet es auf weitere Stadtbereiche aus.",
+      "sources": ["https://www.rand.org/pubs/research_reports/RR3242.html"]
+    },
+    {
+      "date": "2019",
+      "phase": "event",
+      "title": "Stadtprufer verurteilt System als ineffektiv und diskriminierend",
+      "description": "Der Stadtprufer von Chicago (Inspector General) veroffentlicht einen Bericht, der das SSL-System scharf kritisiert: Es existiere keine Evidenz fur seine Wirksamkeit; die Daten seien unzuverlassig; Betroffene wurden nicht informiert, ob sie auf der Liste stehen; und Praventionsbesuche bei hoch gelisteten Personen hatten keine nachweisbare Wirkung auf Gewaltdelikte. Medien berichten breit, offentlicher Druck waschst.",
+      "sources": ["https://igchicago.org/2020/01/23/advisory-concerning-the-chicago-police-departments-use-of-a-strategic-subject-list/"]
+    },
+    {
+      "date": "2020",
+      "phase": "consequences",
+      "title": "Einstellung des Systems und Prasedenzwirkung",
+      "description": "Das Chicago Police Department gibt die offizielle Einstellung der Strategic Subject List bekannt. Der Fall wird zum nationalen Referenzpunkt fur die Debatte uber algorithmische Vorhersageprogramme in der Strafverfolgung. Mehrere US-Stadte frieren ahnliche Programme ein. Burgerrechtsorganisationen fordern ein bundesweites Verbot von Predictive-Policing-Algorithmen. Die betroffenen Einwohner erhalten keinerlei Entschadigung.",
+      "sources": ["https://igchicago.org/2020/01/23/advisory-concerning-the-chicago-police-departments-use-of-a-strategic-subject-list/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.rand.org/pubs/research_reports/RR3242.html",
+      "title": "Evaluation of the Deployment of the Chicago Police Department's Strategic Subject List",
+      "publisher": "RAND Corporation",
+      "date": "2016",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://igchicago.org/2020/01/23/advisory-concerning-the-chicago-police-departments-use-of-a-strategic-subject-list/",
+      "title": "Advisory Concerning the Chicago Police Department's Use of a Strategic Subject List",
+      "publisher": "City of Chicago Inspector General",
+      "date": "2020-01-23",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

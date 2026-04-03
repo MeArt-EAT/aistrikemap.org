@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/china-ki-deepfake-propaganda",
+  "name": "China: KI-generierte Nachrichtensprecher und Deepfake-Propaganda im staatlichen Einsatz",
+  "description": "China setzt seit 2018 KI-generierte Nachrichtensprecher und Deepfake-Technologien für staatliche Propagandazwecke ein — sowohl im Inland als auch in internationalen Einflussoperationen. Die staatliche Nachrichtenagentur Xinhua und das Unternehmen Sogou entwickelten die ersten vollsynthetischen KI-Ankerpersonen. Während der COVID-19-Pandemie wurden diese Systeme intensiv zur Verbreitung staatlich genehmigter Narrative genutzt. Internationale Forschungsinstitute dokumentieren umfangreiche koordinierte Desinformationskampagnen.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Peking, China",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.9042,
+      "longitude": 116.4074
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CN"
+    }
+  },
+  "asm:incidentType": ["deepfakes", "censorship", "political-pressure"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Recht auf Information", "Medienfreiheit", "Schutz vor Desinformation"],
+  "asm:actors": [
+    {
+      "name": "Xinhua Nachrichtenagentur",
+      "type": "government",
+      "asm:systems": ["AI News Anchor", "Xinhua AI Anchor"]
+    },
+    {
+      "name": "Sogou Inc.",
+      "type": "company",
+      "asm:systems": ["AI Anchor Technology"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-11",
+      "phase": "infrastructure",
+      "title": "Xinhua stellt ersten KI-Nachrichtensprecher der Welt vor",
+      "description": "Die staatliche Nachrichtenagentur Xinhua präsentiert in Zusammenarbeit mit Sogou auf der World Internet Conference den ersten vollsynthetischen KI-Nachrichtensprecher. Das System kann rund um die Uhr ohne Pausen senden und wurde auf Basis eines echten Moderators trainiert. China etabliert damit eine technische Infrastruktur für skalierbare Propagandaproduktion.",
+      "sources": ["https://www.bbc.com/news/technology-46136504"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "COVID-19-Pandemie als Testfeld für KI-Propagandasysteme",
+      "description": "Chinesische staatliche Medien setzen KI-Systeme massiv ein, um staatlich genehmigte COVID-19-Narrative zu verbreiten. Das Stanford Internet Observatory und Graphika dokumentieren koordinierte Netzwerke, die KI-generierte Inhalte über internationale Social-Media-Plattformen verbreiten, um die chinesische Pandemiepolitik zu rechtfertigen und Kritik zu unterdrücken.",
+      "sources": ["https://cyber.fsi.stanford.edu/io/news/prc-interference-2020"]
+    },
+    {
+      "date": "2022",
+      "phase": "event",
+      "title": "Internationale Einflussoperationen mit Deepfake-Inhalten",
+      "description": "Graphika und das Stanford Internet Observatory veröffentlichen Berichte über 'Spamouflage Dragon' — ein umfangreiches chinesisches Netzwerk, das KI-generierte Avatare und synthetische Medieninhalte nutzt, um auf Facebook, YouTube und Twitter Einfluss zu nehmen. Die Kampagnen zielen auf internationale Zielgruppen in Nordamerika, Europa und Australien.",
+      "sources": ["https://graphika.com/reports/spamouflage"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Ausweitung und internationale Warnung vor KI-Desinformation",
+      "description": "Westliche Geheimdienste und Forschungsinstitute warnen vor der zunehmenden Qualität und Reichweite chinesischer KI-gestützter Einflussoperationen. Die EU und die USA verhangen Sanktionen gegen beteiligte Akteure. Gleichzeitig exportiert China seine KI-Propagandatechnologie in autoritare Partnerstaaten, was zu einer globalen Ausbreitung der Technologie führt.",
+      "sources": ["https://www.reuters.com/technology/chinas-ai-propaganda-capabilities-growing-researchers-warn-2023-09-05/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.bbc.com/news/technology-46136504",
+      "title": "China unveils its first AI news anchor",
+      "publisher": "BBC News",
+      "date": "2018-11-09",
+      "type": "news-article"
+    },
+    {
+      "url": "https://cyber.fsi.stanford.edu/io/news/prc-interference-2020",
+      "title": "PRC Interference Operations: 2020",
+      "publisher": "Stanford Internet Observatory",
+      "date": "2020-12-01",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://graphika.com/reports/spamouflage",
+      "title": "Spamouflage Dragon: China's Largest Covert Influence Operation",
+      "publisher": "Graphika",
+      "date": "2022-08-24",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.reuters.com/technology/chinas-ai-propaganda-capabilities-growing-researchers-warn-2023-09-05/",
+      "title": "China's AI propaganda capabilities growing, researchers warn",
+      "publisher": "Reuters",
+      "date": "2023-09-05",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

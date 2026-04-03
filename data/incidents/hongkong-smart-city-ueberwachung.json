@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/hongkong-smart-city-ueberwachung",
+  "name": "Hongkong: Smart-City-Uberwachung und Gesichtserkennung gegen Pro-Demokratie-Bewegung",
+  "description": "Nach den massiven Pro-Demokratie-Protesten 2019 baut Hongkong seine Smart-City-Infrastruktur mit Gesichtserkennung, vernetzten Uberwachungskameras und KI-gestutztem Massenmonitoring im offentlichen Raum aus. Das im Juni 2020 verabschiedete Nationale Sicherheitsgesetz schafft den rechtlichen Rahmen fur weitreichende Uberwachung. Smarte Lampenmasten mit eingebetteten Kameras, Sensoren und WLAN-Trackern werden flachendeckend installiert. Kritiker sehen darin eine systemische Infrastruktur zur Unterdruckung politischer Opposition und zur Integration Hongkongs in das chinesische Uberwachungsokosystem.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Hongkong",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 22.3193,
+      "longitude": 114.1694
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "HK"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Privatsphare", "Versammlungsfreiheit", "Meinungsfreiheit", "Recht auf freie Meinungsausserung", "Schutz vor willkurlicher Uberwachung"],
+  "asm:actors": [
+    {
+      "name": "Hongkonger Regierung",
+      "type": "government",
+      "asm:systems": ["Smart Lamppost Programme", "CCTV-Netz", "Smart City Blueprint"]
+    },
+    {
+      "name": "Chinesische Zentralregierung",
+      "type": "government",
+      "asm:systems": ["Nationales Sicherheitsgesetz", "Nationales Geheimdienstgesetz"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-06",
+      "phase": "infrastructure",
+      "title": "Proteste und erste Uberwachungseskalation",
+      "description": "Millionen Menschen protestieren gegen das Auslieferungsgesetz. Behorden setzen Gesichtserkennung an Checkpoints ein; Protestierende reagieren mit Laserpointern, Regenschirmen und Gesichtsmasken. Berichte belegen den Einsatz von CCTV-Kameras mit Gesichtserkennungssoftware zur Identifikation von Demonstranten. Das Smart-Lamppost-Programm der Regierung wird von Demonstranten als potenzielle Uberwachungsinfrastruktur identifiziert und mehrere Masten werden demontiert.",
+      "sources": ["https://www.amnesty.org/en/latest/news/2019/09/hong-kong-china-must-stop-using-facial-recognition-to-mass-surveil-protesters/"]
+    },
+    {
+      "date": "2020-06",
+      "phase": "doctrine",
+      "title": "Nationales Sicherheitsgesetz und rechtlicher Uberwachungsrahmen",
+      "description": "Peking erlasst das Nationale Sicherheitsgesetz (NSL) fur Hongkong, das Sezession, Subversion, Terrorismus und Kollusion mit auslandischen Machten unter schwere Strafe stellt. Das Gesetz gibt Behorden weitreichende Uberwachungs- und Datenzugangsbefugnisse. Technologieunternehmen erhalten Datenanfragen der nationalen Sicherheitsbehorden, denen sie bei Androhung strafrechtlicher Konsequenzen nachkommen mussen.",
+      "sources": ["https://www.hrw.org/news/2020/06/30/hong-kong-national-security-law-questions-and-answers"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Ausbau smarter Uberwachungslampen und KI-Monitoring",
+      "description": "Das Smart-Lamppost-Programm wird trotz offentlichem Widerstand weiterhin ausgebaut. Neue Modelle integrieren Sensoren fur Luftqualitat, Bewegungserkennung und Kameraverbindungen. Menschenrechtsorganisationen belegen, dass Social-Media-Konten, Online-Foren und Messenger-Dienste systematisch nach politisch sensitiven Inhalten durchsucht werden. Nutzer pro-demokratischer Telegram-Gruppen berichten von Verhoren auf Basis digitaler Kommunikation.",
+      "sources": ["https://hongkongfp.com/2020/08/06/explainer-the-smart-lamppost-controversy/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Systemische KI-Uberwachung und Exilgemeinschaft unter Druck",
+      "description": "Amnesty International und Human Rights Watch dokumentieren, dass das Nationale Sicherheitsgesetz als Instrument zur Verfolgung von Aktivisten auch im Ausland eingesetzt wird. In Hongkong verbliebene Zivilgesellschaft ist weitgehend zerstort. Smarte Uberwachungsinfrastruktur ist fest etabliert. Forscher stellen fest, dass digitale Grenzen zwischen Hongkong und dem chinesischen Festland zunehmend verwischen, inklusive Zugang zu Datenpools und Uberwachungssystemen.",
+      "sources": ["https://www.amnesty.org/en/location/asia-and-the-pacific/east-asia/hong-kong-sar/report-hong-kong-sar/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2019/09/hong-kong-china-must-stop-using-facial-recognition-to-mass-surveil-protesters/",
+      "title": "Hong Kong: China must stop using facial recognition to mass surveil protesters",
+      "publisher": "Amnesty International",
+      "date": "2019-09",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2020/06/30/hong-kong-national-security-law-questions-and-answers",
+      "title": "Hong Kong: National Security Law — Questions and Answers",
+      "publisher": "Human Rights Watch",
+      "date": "2020-06-30",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://hongkongfp.com/2020/08/06/explainer-the-smart-lamppost-controversy/",
+      "title": "Explainer: The Smart Lamppost Controversy",
+      "publisher": "Hong Kong Free Press",
+      "date": "2020-08-06",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.amnesty.org/en/location/asia-and-the-pacific/east-asia/hong-kong-sar/report-hong-kong-sar/",
+      "title": "Amnesty International Report: Hong Kong SAR",
+      "publisher": "Amnesty International",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

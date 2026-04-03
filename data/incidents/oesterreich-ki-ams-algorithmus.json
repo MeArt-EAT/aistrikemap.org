@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/oesterreich-ki-ams-algorithmus",
+  "name": "Österreich: AMS-Algorithmus diskriminiert Frauen und ältere Arbeitssuchende",
+  "description": "Das österreichische Arbeitsmarktservice (AMS) entwickelte ab 2018 ein algorithmisches System zur Bewertung von Arbeitssuchenden in drei Chancenkategorien. Das System reproduzierte strukturelle Diskriminierungsmuster: Frauen, über 50-Jährige und Menschen mit Behinderungen wurden in niedrigere Kategorien eingestuft, was zu weniger Ressourcen und Förderleistungen führte. Nach öffentlichem Druck, einem kritischen Gutachten der Datenschutzbehörde und einer Klage wurde der geplante Vollbetrieb verschoben und schliesslich neu bewertet.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Wien, Österreich",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.2082,
+      "longitude": 16.3738
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AT"
+    }
+  },
+  "asm:incidentType": ["discrimination", "labor-exploitation"],
+  "asm:affectedRights": ["Gleichbehandlungsrecht", "Recht auf Arbeit", "Recht auf soziale Sicherheit", "Recht auf ein faires Verfahren", "Diskriminierungsschutz"],
+  "asm:actors": [
+    {
+      "name": "AMS — Arbeitsmarktservice Österreich",
+      "type": "government",
+      "asm:systems": ["AMS-Algorithmus (AMAS)", "Automated Profile Scoring System"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Entwicklung des AMS-Scoring-Algorithmus",
+      "description": "Das AMS beauftragt die Entwicklung eines maschinellen Lernsystems zur automatischen Einstufung von Arbeitssuchenden in drei Chancenkategorien: hohe Chancen (Gruppe A), mittlere Chancen (Gruppe B) und geringe Chancen (Gruppe C). Die Kategorisierung soll die Zuteilung von Beratungsressourcen und Förderleistungen steuern. Kritiker weisen von Anfang an darauf hin, dass historische Beschäftigungsdaten strukturelle Ungleichheiten in das System einschreiben.",
+      "sources": ["https://algorithmwatch.org/en/austrian-employment-agency-ams-algorithm/"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Geplante Einführung löst öffentliche Debatte aus",
+      "description": "Als die geplante Einführung des Algorithmus bekannt wird, kritisieren Frauenrechtsorganisationen, Gewerkschaften und NGOs das System scharf. Analysen zeigen, dass das Modell Frauen systematisch schlechter bewertet als vergleichbare Männer — allein aufgrund von Geschlecht als Variable — und dass ältere und behinderte Arbeitssuchende strukturell benachteiligt werden.",
+      "sources": ["https://www.derstandard.at/story/2000108993462/ams-algorithmus-diskriminiert-frauen-und-aeltere"]
+    },
+    {
+      "date": "2020",
+      "phase": "event",
+      "title": "Datenschutzbehörde rügt algorithmisches System",
+      "description": "Die österreichische Datenschutzbehörde (DSB) stellt in einem Gutachten fest, dass der AMS-Algorithmus gegen das Datenschutzrecht verstösst, da er nicht die erforderliche Transparenz und Erklärbarkeit bietet. Die Behörde fordert Nachbesserungen. Das AMS setzt den Vollbetrieb des Algorithmus aus und betreibt ihn nur im Hintergrund weiter, ohne direkte Auswirkungen auf Förderentscheidungen.",
+      "sources": ["https://noyb.eu/en/noyb-files-complaint-against-austrian-employment-agency"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Gerichtliche und politische Aufarbeitung",
+      "description": "Datenschutzorganisationen reichen formelle Beschwerden ein; Gerichte bestätigen grundlegende rechtliche Bedenken gegen den Einsatz des Systems. Das österreichische Parlament diskutiert Regulierung algorithmischer Entscheidungssysteme im öffentlichen Bereich. Der Fall wird zum Referenzbeispiel für die EU-KI-Verordnungs-Debatte über hochriskante KI-Systeme im Bereich Beschäftigung.",
+      "sources": ["https://algorithmwatch.org/en/austria-ams-algorithm-gdpr/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://algorithmwatch.org/en/austrian-employment-agency-ams-algorithm/",
+      "title": "The Austrian Employment Agency's Algorithm Discriminates Against Women",
+      "publisher": "AlgorithmWatch",
+      "date": "2019-01-14",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.derstandard.at/story/2000108993462/ams-algorithmus-diskriminiert-frauen-und-aeltere",
+      "title": "AMS-Algorithmus diskriminiert Frauen und Ältere",
+      "publisher": "Der Standard",
+      "date": "2019-01-14",
+      "type": "news-article"
+    },
+    {
+      "url": "https://noyb.eu/en/noyb-files-complaint-against-austrian-employment-agency",
+      "title": "noyb files complaint against Austrian Employment Agency",
+      "publisher": "noyb — European Center for Digital Rights",
+      "date": "2020-01-28",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://algorithmwatch.org/en/austria-ams-algorithm-gdpr/",
+      "title": "Austria: Employment Agency Algorithm and GDPR",
+      "publisher": "AlgorithmWatch",
+      "date": "2021-06-01",
+      "type": "research-paper"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

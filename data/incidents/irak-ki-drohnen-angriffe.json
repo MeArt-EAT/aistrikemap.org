@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/irak-ki-drohnen-angriffe",
+  "name": "Irak: KI-gestützte Drohnenangriffe und zivile Opfer",
+  "description": "Das US-Militär und die CIA setzen im Irak seit Beginn der 2000er Jahre KI-assistierte Zielsystemtechnik bei Drohnenangriffen ein. Trotz Behauptungen chirurgischer Präzision dokumentieren unabhängige Organisationen wie das Bureau of Investigative Journalism und Airwars Hunderte zivile Todesopfer. Der Angriff auf General Qasem Soleimani am Bagdader Flughafen 2020 verdeutlicht die politischen und rechtlichen Risiken algorithmisch gestützter Tötungen ausserhalb aktiver Kampfzonen.",
+  "startDate": "2003-03",
+  "location": {
+    "@type": "Place",
+    "name": "Bagdad, Irak",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.3152,
+      "longitude": 44.3661
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IQ"
+    }
+  },
+  "asm:incidentType": ["autonomous-weapons", "military-ai"],
+  "asm:affectedRights": ["Recht auf Leben", "Recht auf körperliche Unversehrtheit", "Humanitäres Völkerrecht", "Recht auf ein faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "US-Militär (CENTCOM)",
+      "type": "military",
+      "asm:systems": ["MQ-9 Reaper", "MQ-1 Predator", "SKYNET-Targeting-Algorithmus"]
+    },
+    {
+      "name": "CIA",
+      "type": "government",
+      "asm:systems": ["Signature-Strike-Programm", "Pattern-of-Life-Analyse"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2003",
+      "phase": "infrastructure",
+      "title": "Aufbau der Drohneninfrastruktur nach dem Irakeinmarsch",
+      "description": "Nach dem Einmarsch in den Irak baut das US-Militär eine umfangreiche Drohneninfrastruktur auf. Unbemannte Systeme werden für Aufklärung und gezielte Tötungen eingesetzt. Frühe KI-gestützte Mustererkennungssysteme analysieren Bewegungsprofile verdächtiger Personen — sogenannte 'Pattern of Life'-Analysen — um Angriffsziele zu identifizieren.",
+      "sources": ["https://theintercept.com/drone-papers/"]
+    },
+    {
+      "date": "2014",
+      "phase": "doctrine",
+      "title": "Eskalation im Kampf gegen den IS",
+      "description": "Im Rahmen der Operation Inherent Resolve gegen den Islamischen Staat werden KI-Zielsysteme massiv ausgeweitet. Das Bureau of Investigative Journalism dokumentiert in diesem Zeitraum Hunderte ziviler Todesopfer durch Drohnenangriffe im Irak. Geheimgelegte Fehlerquoten der Algorithmen werden von Whistleblowern auf bis zu 90 Prozent bei Signature Strikes beziffert.",
+      "sources": ["https://www.thebureauinvestigates.com/projects/drone-war/iraq"]
+    },
+    {
+      "date": "2020-01-03",
+      "phase": "event",
+      "title": "Tötung von General Soleimani am Bagdader Flughafen",
+      "description": "Ein US-Drohnenangriff am Internationalen Flughafen Bagdad tötet den iranischen General Qasem Soleimani und den irakischen Milizenkommandeur Abu Mahdi al-Muhandis. Der Angriff basierte auf KI-gestützter Bewegungsanalyse. Der irakische Premierminister bezeichnet den Angriff als Verletzung der Souveränität; der UN-Sonderberichterstatter stuft ihn als möglicherweise rechtswidrige Tötung ein.",
+      "sources": ["https://www.ohchr.org/en/press-releases/2020/07/un-expert-finds-us-responsible-unlawful-killing-iran-general-soleimani"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Forderungen nach Rechenschaftspflicht und Rückzug",
+      "description": "Das irakische Parlament fordert den Abzug aller ausländischen Truppen. Airwars dokumentiert über 1.400 bestätigte zivile Todesopfer durch US-Luftangriffe im Irak zwischen 2014 und 2021. Menschenrechtsorganisationen fordern verbindliche internationale Standards für KI-gestützte Waffensysteme. Die USA lehnen eine unabhängige Untersuchung der Zielalgorithmen ab.",
+      "sources": ["https://airwars.org/conflict/us-forces-in-iraq/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://theintercept.com/drone-papers/",
+      "title": "The Drone Papers",
+      "publisher": "The Intercept",
+      "date": "2015-10-15",
+      "type": "investigative-journalism"
+    },
+    {
+      "url": "https://airwars.org/conflict/us-forces-in-iraq/",
+      "title": "US Forces in Iraq — Civilian Casualty Tracking",
+      "publisher": "Airwars",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.thebureauinvestigates.com/projects/drone-war/iraq",
+      "title": "Drone War Iraq",
+      "publisher": "The Bureau of Investigative Journalism",
+      "date": "2021",
+      "type": "investigative-journalism"
+    },
+    {
+      "url": "https://www.ohchr.org/en/press-releases/2020/07/un-expert-finds-us-responsible-unlawful-killing-iran-general-soleimani",
+      "title": "UN expert finds US responsible for unlawful killing of Iran's General Soleimani",
+      "publisher": "UN OHCHR",
+      "date": "2020-07-09",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

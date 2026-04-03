@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/saudi-arabien-absher-frauen",
+  "name": "Saudi-Arabien: Absher-App ermoglicht Mannern die Kontrolle uber Bewegungen von Frauen",
+  "description": "Die von der saudi-arabischen Regierung bereitgestellte App 'Absher' ermoglicht mannlichen Vormundern (Ehemann, Vater, Bruder), die Bewegungsfreiheit von Frauen uber das staatliche Aufenthaltsgenehmigungs- und Passdatenbanksystem zu steuern und zu uberwachen. Manner konnen uber die App Reisegenehmigungen erteilen oder entziehen, Benachrichtigungen uber Grenzubertritte der Frauen empfangen und Passe von Frauen sperren. Die App wurde auf Apple- und Google-Plattformen angeboten, was 2019 zu internationaler Kritik fuhrte.",
+  "startDate": "2015-01",
+  "location": {
+    "@type": "Place",
+    "name": "Riad, Saudi-Arabien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 24.7136,
+      "longitude": 46.6753
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA"
+    }
+  },
+  "asm:incidentType": ["surveillance", "discrimination", "data-misuse"],
+  "asm:affectedRights": ["Bewegungsfreiheit", "Recht auf Gleichbehandlung", "Diskriminierungsschutz", "Recht auf korperliche Selbstbestimmung", "Recht auf personliche Freiheit"],
+  "asm:actors": [
+    {
+      "name": "Regierung Saudi-Arabiens",
+      "type": "government",
+      "asm:systems": ["Absher-App", "Saher-Grenzkontrollsystem", "Nationales Passdatenbanksystem"]
+    },
+    {
+      "name": "Apple / Google",
+      "type": "company",
+      "asm:systems": ["App Store", "Google Play Store"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2015-04",
+      "phase": "infrastructure",
+      "title": "Einfuhrung der Absher-App",
+      "description": "Die saudi-arabische Regierung stellt Absher als digitale Verwaltungs-App vor, die Burorgatten vereinfachen soll. Die App enthalt von Beginn an das Vormundschaftsmodul, das Mannern ermoglicht, Reisegenehmigungen fur weibliche Familienangehorige zu erteilen oder zu verweigern sowie Echtzeit-Benachrichtigungen uber Grenzubertritte zu empfangen. Das System ist in staatliche Pass- und Grenzdatenbanken integriert.",
+      "sources": ["https://www.hrw.org/news/2019/02/19/apple-google-shouldnt-aid-saudi-male-guardianship"]
+    },
+    {
+      "date": "2019-02",
+      "phase": "doctrine",
+      "title": "Internationale Aufmerksamkeit durch HRW-Bericht und Medienberichte",
+      "description": "Human Rights Watch und The Insider veroffentlichen Berichte, die die Absher-App als technologisches Werkzeug zur Durchsetzung des Mannlichen Vormund-Systems (Mahram) identifizieren. Der Bericht zeigt, dass Manner die Bewegungsfreiheit von Frauen buchstablich per Smartphone kontrollieren konnen. Betroffene saudi-arabische Frauen, darunter Gefluchete, berichten, wie Manner uber die App ihre Ausreise blockierten.",
+      "sources": ["https://www.hrw.org/news/2019/02/19/apple-google-shouldnt-aid-saudi-male-guardianship"]
+    },
+    {
+      "date": "2019-02",
+      "phase": "event",
+      "title": "Kongress-Briefe an Apple und Google",
+      "description": "US-Kongressabgeordnete schreiben offene Briefe an Apple-CEO Tim Cook und Google-CEO Sundar Pichai und fordern die Entfernung der Absher-App aus den App Stores, da sie Geschlechterdiskriminierung und die Unterdruckung von Frauen technologisch erleichtere. Apple und Google antworten, die App biete legitime Regierungsdienste an und werde nicht entfernt. Der Fall lost eine internationale Debatte uber die Verantwortung von Plattformen aus.",
+      "sources": ["https://www.hrw.org/news/2019/02/19/apple-google-shouldnt-aid-saudi-male-guardianship"]
+    },
+    {
+      "date": "2021-08",
+      "phase": "consequences",
+      "title": "Begrenzte Reformen und fortgesetzter App-Betrieb",
+      "description": "Saudi-Arabien lockert einige Aspekte des Vormund-Systems: Frauen uber 21 Jahre durfen seit 2019 eigenstandig Passe beantragen und ohne Erlaubnis reisen. Die Absher-App bleibt jedoch in Betrieb, das Modul zur Reisekontrolle wird weiterhin genutzt. Apple und Google bieten die App weiterhin an. Menschenrechtsorganisationen dokumentieren fortgesetzt Falle, in denen Manner die App nutzen, um Frauen an der Ausreise zu hindern.",
+      "sources": ["https://www.hrw.org/news/2019/02/19/apple-google-shouldnt-aid-saudi-male-guardianship"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.hrw.org/news/2019/02/19/apple-google-shouldnt-aid-saudi-male-guardianship",
+      "title": "Apple, Google Shouldn't Aid Saudi Male Guardianship System",
+      "publisher": "Human Rights Watch",
+      "date": "2019-02-19",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.businessinsider.com/absher-saudi-arabia-women-tracking-app-apple-google-2019-2",
+      "title": "Saudi Arabia has an app that lets men track women and stop them from travelling",
+      "publisher": "Business Insider",
+      "date": "2019-02-11",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2019/02/saudi-arabia-absher-app-must-be-investigated/",
+      "title": "Saudi Arabia: Apple and Google should investigate their role in 'women-tracking' app",
+      "publisher": "Amnesty International",
+      "date": "2019-02-14",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

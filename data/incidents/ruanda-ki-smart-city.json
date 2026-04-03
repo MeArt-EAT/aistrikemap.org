@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/ruanda-ki-smart-city",
+  "name": "Ruanda: Smart-City-Uberwachungsinfrastruktur und autoritare Nutzung",
+  "description": "Ruanda baut seit 2015 mit Unterstutzung chinesischer Technologiekonzerne eine umfassende Smart-City- und Uberwachungsinfrastruktur in Kigali auf. Das 'Kigali Safe City'-Projekt umfasst ein landesweites Netzwerk von Uberwachungskameras mit Gesichtserkennungsfahigkeiten. Wahrend die Regierung das System als Instrument fur offentliche Sicherheit und wirtschaftliche Entwicklung prasentiert, warnen Menschenrechtsorganisationen vor dem Einsatz gegen Oppositionelle, Journalisten und Dissidenten. Berichte uber grenzuberschreitende Verfolgung Ruandas zeigen, dass staatliche Uberwachung uber Landesgrenzen hinaus wirkt.",
+  "startDate": "2015",
+  "location": {
+    "@type": "Place",
+    "name": "Kigali, Ruanda",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -1.9403,
+      "longitude": 29.8739
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RW"
+    }
+  },
+  "asm:incidentType": ["surveillance", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Privatsphare", "Meinungsfreiheit", "Versammlungsfreiheit", "Pressefreiheit", "Schutz vor willkurlicher Uberwachung"],
+  "asm:actors": [
+    {
+      "name": "Ruandische Regierung",
+      "type": "government",
+      "asm:systems": ["Kigali Safe City", "Nationales ID-System", "Uberwachungskameranetz"]
+    },
+    {
+      "name": "Chinesische Technologieunternehmen",
+      "type": "company",
+      "asm:systems": ["Safe City-Infrastruktur", "Kamerasysteme mit KI-Analyse", "Biometrische Systeme"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2015",
+      "phase": "infrastructure",
+      "title": "Smart-City-Initiativen und chinesische Technologiepartnerschaften",
+      "description": "Ruanda startet ambitionierte Smart-City-Programme als Teil seiner Vision-2020-Entwicklungsstrategie. Partnerschaften mit chinesischen Unternehmen werden fur den Aufbau digitaler Infrastruktur, Uberwachungskameras und Breitbandnetz geschlossen. Das Land prasentiert sich als afrikanisches Technologievorzeigemodell. Privacy International und andere Organisationen beginnen den Doppelcharakter der Infrastruktur fur Entwicklung und Kontrolle zu dokumentieren.",
+      "sources": ["https://privacyinternational.org/report/2714/surveillance-industry-index"]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Kigali Safe City: Kameras, Gesichtserkennung und KI-Analyse",
+      "description": "Das 'Kigali Safe City'-Projekt wird offiziell lanciert. Hunderte Kameras werden in der Hauptstadt installiert. Berichte von The Guardian und Privacy International zeigen, dass das System Gesichtserkennungsfahigkeiten umfasst. Menschenrechtsorganisationen weisen auf Ruandas dokumentierte Geschichte der Verfolgung von Oppositionellen und Journalisten hin und warnen vor dem Missbrauchspotenzial der Infrastruktur.",
+      "sources": ["https://www.theguardian.com/world/2019/aug/21/china-is-helping-build-a-new-surveillance-state-in-africa"]
+    },
+    {
+      "date": "2020",
+      "phase": "event",
+      "title": "COVID-Uberwachung und Ausweitung der Kontrollinfrastruktur",
+      "description": "Ruanda nutzt die COVID-19-Pandemie, um Uberwachungsmasnahmen erheblich auszuweiten. Drohnen mit Lautsprechern und Kameras werden zur Durchsetzung von Ausgangsbeschrankungen eingesetzt. Kontaktverfolgungssysteme werden mit bestehenden Uberwachungsdatenbanken verbunden. Kritiker stellen fest, dass die aufgebauten Kapazitaten weit uber pandemische Erfordernisse hinausgehen.",
+      "sources": ["https://privacyinternational.org/long-read/4102/how-rwandas-digital-id-surveillance"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Grenzuberschreitende Uberwachung ruandischer Dissidenten",
+      "description": "The Guardian und Citizen Lab berichten uber Falle, in denen ruandische Uberwachungsoperationen Dissidenten und Oppositionspolitiker im Ausland, darunter in Europa und Nordamerika, verfolgen. Exiljournalisten und Oppositionsmitglieder berichten von Einschuchterungsversuchen und digitaler Uberwachung ihrer Kommunikation. Die Smart-City-Infrastruktur erweist sich als Teil eines breiteren Systems politischer Kontrolle.",
+      "sources": ["https://www.theguardian.com/world/2023/jun/05/rwanda-targeting-critics-abroad"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.theguardian.com/world/2019/aug/21/china-is-helping-build-a-new-surveillance-state-in-africa",
+      "title": "China is helping build a new surveillance state in Africa",
+      "publisher": "The Guardian",
+      "date": "2019-08-21",
+      "type": "news-article"
+    },
+    {
+      "url": "https://privacyinternational.org/long-read/4102/how-rwandas-digital-id-surveillance",
+      "title": "How Rwanda's Digital ID Enables Surveillance",
+      "publisher": "Privacy International",
+      "date": "2020",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2023/jun/05/rwanda-targeting-critics-abroad",
+      "title": "Rwanda targeting critics abroad",
+      "publisher": "The Guardian",
+      "date": "2023-06-05",
+      "type": "news-article"
+    },
+    {
+      "url": "https://privacyinternational.org/report/2714/surveillance-industry-index",
+      "title": "Surveillance Industry Index — Rwanda",
+      "publisher": "Privacy International",
+      "date": "2018",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

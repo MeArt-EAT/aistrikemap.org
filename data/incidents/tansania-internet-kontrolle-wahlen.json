@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/tansania-internet-kontrolle-wahlen",
+  "name": "Tansania: Internetsperren und Social-Media-Zensur rund um Wahlen",
+  "description": "Tansania nutzt systematisch digitale Kontrollinstrumente, um politisch kritische Stimmen zu unterdrücken und Wahlprozesse zu beeinflussen. Das 2015 verabschiedete Cybercrimes-Gesetz kriminalisiert Online-Kritik am Präsidenten. Rund um die Parlamentswahlen 2020 wurden Social-Media-Plattformen gesperrt, eine Steuer auf Social-Media-Nutzung eingeführt und Telekommunikationssperren aktiviert. NetBlocks, Access Now und das Citizen Lab dokumentierten die Massnahmen umfassend.",
+  "startDate": "2015-04",
+  "location": {
+    "@type": "Place",
+    "name": "Daressalam, Tansania",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -6.7924,
+      "longitude": 39.2083
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "TZ"
+    }
+  },
+  "asm:incidentType": ["censorship", "political-pressure"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Pressefreiheit", "Versammlungsfreiheit", "Wahlrecht", "Recht auf Informationszugang"],
+  "asm:actors": [
+    {
+      "name": "Tansanische Regierung",
+      "type": "government"
+    },
+    {
+      "name": "TCRA (Tanzania Communications Regulatory Authority)",
+      "type": "government",
+      "asm:systems": ["Nationales Internet Gateway", "Social-Media-Filterung", "Deep Packet Inspection"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2015-04",
+      "phase": "infrastructure",
+      "title": "Cybercrimes-Gesetz kriminalisiert Online-Kritik",
+      "description": "Tansania verabschiedet den Cybercrimes Act, der Online-Kritik an Regierungsbeamten mit bis zu drei Jahren Gefängnis bestraft. Die TCRA erhält umfangreiche Befugnisse zur Sperrung von Websites und zur Anordnung von Netzsperren. Blogger und Social-Media-Nutzer werden erstmals nach dem Gesetz verhaftet.",
+      "sources": ["https://www.article19.org/resources/tanzania-cybercrime-act-chilling-effect/"]
+    },
+    {
+      "date": "2018-03",
+      "phase": "doctrine",
+      "title": "Social-Media-Steuer und Blog-Registrierungspflicht",
+      "description": "Die Regierung unter Präsident Magufuli führt eine tägliche Steuer auf Social-Media-Nutzung ein (0,03 USD pro Tag), um den Zugang zu beschränken. Online-Inhaltsanbieter, einschliesslich Blogger, müssen sich mit einer Gebühr von 930 USD registrieren und haften für alle veröffentlichten Inhalte. Die Massnahmen treffen vor allem einkommensschwache Nutzer und unabhängige Journalisten.",
+      "sources": ["https://cipesa.org/?wpfb_dl=264"]
+    },
+    {
+      "date": "2020-10-28",
+      "phase": "event",
+      "title": "Social-Media-Sperrung während der Parlamentswahlen",
+      "description": "Am Tag der Parlamentswahlen und in den Tagen danach sperrt die TCRA Twitter, Facebook, WhatsApp und Instagram. NetBlocks misst vollständige Blockaden aller wichtigen Plattformen. Wahlbeobachter der EU und AU berichten von massiven Unregelmässigkeiten; unabhängige Berichterstattung wird nahezu unmöglich gemacht. Die Oppositionspartei CHADEMA spricht von Wahlbetrug.",
+      "sources": ["https://netblocks.org/reports/social-media-blocked-in-tanzania-on-election-day-QAnmrjB1"]
+    },
+    {
+      "date": "2021-03",
+      "phase": "consequences",
+      "title": "Reformen unter Präsidentin Hassan — nur partielle Verbesserungen",
+      "description": "Nach dem Tod von Präsident Magufuli übernimmt Samia Suluhu Hassan die Präsidentschaft und signalisiert eine Öffnung. Die Social-Media-Steuer wird abgeschafft, einige gesperrte Nachrichtenwebsites werden wieder freigegeben. Dennoch bleiben das Cybercrimes-Gesetz und die strukturellen Überwachungsinfrastrukturen bestehen. Freedom House bewertet Tansania weiterhin als 'Not Free' in der Kategorie Internetfreiheit.",
+      "sources": ["https://freedomhouse.org/country/tanzania/freedom-net/2022"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://netblocks.org/reports/social-media-blocked-in-tanzania-on-election-day-QAnmrjB1",
+      "title": "Social media blocked in Tanzania on election day",
+      "publisher": "NetBlocks",
+      "date": "2020-10-28",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.accessnow.org/keepiton/",
+      "title": "#KeepItOn: Fighting Internet Shutdowns",
+      "publisher": "Access Now",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://citizenlab.ca/2017/09/digital-rights-east-africa/",
+      "title": "Digital Rights in East Africa: Tanzania",
+      "publisher": "Citizen Lab",
+      "date": "2017-09",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://freedomhouse.org/country/tanzania/freedom-net/2022",
+      "title": "Freedom on the Net 2022: Tanzania",
+      "publisher": "Freedom House",
+      "date": "2022",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

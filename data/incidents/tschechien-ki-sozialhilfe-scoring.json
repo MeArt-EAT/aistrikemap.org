@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/tschechien-ki-sozialhilfe-scoring",
+  "name": "Tschechien: Algorithmisches Scoring im Sozialhilfesystem benachteiligt Roma",
+  "description": "Das tschechische Ministerium für Arbeit und Soziales digitalisiert die Vergabe von Sozialleistungen und führt algorithmische Bewertungssysteme ein, die nach Kritik von NGOs Roma-Gemeinschaften strukturell benachteiligen. Das European Roma Rights Centre und AlgorithmWatch dokumentieren, wie die verwendeten Datenpunkte — darunter Wohnort, Beschäftigungshistorie und Schuldenstand — ethnische Ungleichheiten perpetuieren. Das System reproduziert und verstärkt bestehende soziale Ausgrenzung.",
+  "startDate": "2017",
+  "location": {
+    "@type": "Place",
+    "name": "Prag, Tschechien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.0755,
+      "longitude": 14.4378
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CZ"
+    }
+  },
+  "asm:incidentType": ["discrimination", "data-misuse"],
+  "asm:affectedRights": ["Schutz vor Diskriminierung", "Recht auf soziale Absicherung", "Recht auf Gleichbehandlung"],
+  "asm:actors": [
+    {
+      "name": "Tschechisches Ministerium für Arbeit und Soziales (MPSV)",
+      "type": "government",
+      "asm:systems": ["Algorithmisches Sozialhilfe-Scoring", "Digitales Fallmanagementsystem"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Digitalisierung des Sozialleistungssystems",
+      "description": "Das tschechische Ministerium für Arbeit und Soziales beginnt mit der umfassenden Digitalisierung der Bearbeitung von Sozialhilfeanträgen. Fallbearbeiter erhalten algorithmische Unterstützungssysteme, die auf Basis von Antragstellerdaten Empfehlungen für die Leistungsvergabe generieren. Die verwendeten Datenpunkte — darunter Wohnort, Beschäftigungshistorie, Schulden und frühere Leistungsinanspruchnahme — reflektieren strukturelle Benachteiligungen.",
+      "sources": ["https://algorithmwatch.org/en/automating-society-2020/"]
+    },
+    {
+      "date": "2020-05",
+      "phase": "event",
+      "title": "AlgorithmWatch dokumentiert diskriminierendes Scoring",
+      "description": "AlgorithmWatch veröffentlicht im Rahmen seines europäischen Berichts 'Automating Society' Erkenntnisse über das tschechische System. Das European Roma Rights Centre (ERRC) dokumentiert, dass Roma-Haushalte überproportional negative Bewertungen erhalten, obwohl die Daten formal keine ethnischen Merkmale enthalten. Die indirekten Proxies — Wohnort in segregierten Stadtteilen, diskontinuierliche Beschäftigung auf dem informellen Arbeitsmarkt — wirken faktisch diskriminierend.",
+      "sources": ["https://algorithmwatch.org/en/automating-society-2020/"]
+    },
+    {
+      "date": "2022",
+      "phase": "doctrine",
+      "title": "NGO-Kritik und mangelnde Transparenz",
+      "description": "Das ERRC und tschechische Bürgerrechtsorganisationen fordern Transparenz über die Algorithmen und eine unabhängige Diskriminierungsprüfung. Das Ministerium verweigert Auskunft über die genaue Funktionsweise des Systems und beruft sich auf Datenschutz und Geschäftsgeheimnisse. Eine parlamentarische Anfrage der tschechischen Piratenpartei zu den Auswirkungen auf Roma bleibt weitgehend unbeantwortet.",
+      "sources": ["https://www.errc.org/reports-and-materials/algorithmic-discrimination-in-europe"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Europäischer Vergleichskontext und ausbleibende Reformen",
+      "description": "Im Kontext der EU-KI-Verordnung, die Hochrisiko-KI-Systeme in der Sozialverwaltung besonderen Transparenzpflichten unterwirft, geraten algorithmische Sozialhilfesysteme in ganz Europa unter Druck. In Tschechien bleiben konkrete Reformen trotz NGO-Druck aus. Experten warnen, dass das System nach dem Vorbild des niederländischen SyRI-Skandals oder des britischen Universal Credit zu einer systematischen Diskriminierung marginalisierter Gruppen beiträgt.",
+      "sources": ["https://www.errc.org/reports-and-materials/algorithmic-discrimination-in-europe"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://algorithmwatch.org/en/automating-society-2020/",
+      "title": "Automating Society Report 2020",
+      "publisher": "AlgorithmWatch",
+      "date": "2020-05",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.errc.org/reports-and-materials/algorithmic-discrimination-in-europe",
+      "title": "Algorithmic Discrimination in Europe: Challenges and Opportunities",
+      "publisher": "European Roma Rights Centre (ERRC)",
+      "date": "2022",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

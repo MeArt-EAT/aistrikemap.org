@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/simbabwe-ki-chinesische-ueberwachung",
+  "name": "Simbabwe: Chinesische Gesichtserkennung und Smart-City-Überwachung",
+  "description": "Simbabwe hat im Rahmen der chinesischen Gürtel-und-Strassen-Initiative umfangreiche Überwachungstechnologie erworben. 2018 schloss die Regierung einen Vertrag mit dem chinesischen KI-Unternehmen CloudWalk zur Lieferung von Gesichtserkennungssystemen. Als Gegenleistung erhielt CloudWalk Zugang zu simbabwischen Gesichtsdaten zur Verbesserung seiner Algorithmen für dunklere Hauttöne. Hikvision-Kameras wurden in Städten und an Grenzübergängen installiert.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Harare, Simbabwe",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -17.8252,
+      "longitude": 31.0335
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ZW"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Meinungsfreiheit", "Versammlungsfreiheit", "Schutz personenbezogener Daten"],
+  "asm:actors": [
+    {
+      "name": "Simbabwische Regierung",
+      "type": "government"
+    },
+    {
+      "name": "CloudWalk Technology",
+      "type": "company",
+      "asm:systems": ["Gesichtserkennungssystem", "Smart City Plattform"]
+    },
+    {
+      "name": "Hikvision",
+      "type": "company",
+      "asm:systems": ["Überwachungskameras", "Videoanalyse"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "CloudWalk-Vertrag: Gesichtsdaten gegen Technologie",
+      "description": "Die simbabwische Regierung unter Emmerson Mnangagwa unterzeichnet einen Vertrag mit CloudWalk Technology aus Guangzhou. CloudWalk liefert Gesichtserkennungssoftware und erhält im Gegenzug Zugang zu Gesichtsdaten simbabwischer Staatsangehöriger. Das Abkommen wird als Teil der Zimbabwe-China Smart Economy Cooperation Framework beschlossen und von Menschenrechtlern als Datentransfer ohne Einwilligung der Bevölkerung kritisiert.",
+      "sources": ["https://carnegieendowment.org/publications/global-technology-policy/2019"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Aufbau einer nationalen Gesichtserkennungsdatenbank",
+      "description": "Simbabwe beginnt mit dem Aufbau einer nationalen biometrischen Datenbank, in die Gesichtserkennungsdaten integriert werden. An Flughäfen, Grenzübergängen und in Regierungsgebäuden werden Kameras mit Echtzeit-Erkennungsfunktion installiert. Das Carnegie Endowment for International Peace listet Simbabwe in seinem Global Surveillance Index als Land mit chinesisch finanzierter KI-Überwachung.",
+      "sources": ["https://carnegieendowment.org/publications/global-technology-policy/2019"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Hikvision-Ausweitung auf Städte und öffentliche Räume",
+      "description": "Hikvision-Kameras werden in mehreren simbabwischen Städten, an Schulen und in öffentlichen Gebäuden installiert. Bedenken werden laut, dass das System zur Überwachung von Oppositionspolitikern, Gewerkschaftern und Aktivisten eingesetzt werden könnte. Journalisten und zivilgesellschaftliche Gruppen berichten von zunehmender Selbstzensur in öffentlichen Räumen.",
+      "sources": ["https://www.reuters.com/article/us-zimbabwe-china-surveillance/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Internationale Kritik und fehlende Rechenschaftspflicht",
+      "description": "Internationale Menschenrechtsorganisationen und westliche Regierungen kritisieren den Technologietransfer als Exportmodell autoritärer Überwachung. Simbabwe verfügt über keine Datenschutzgesetze, die den Missbrauch der erhobenen Daten verhindern könnten. CloudWalk wurde inzwischen von den USA auf eine Sanktionsliste gesetzt, Simbabwe nutzt die Technologie jedoch weiter.",
+      "sources": ["https://carnegieendowment.org/publications/global-technology-policy/2019", "https://www.reuters.com/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://carnegieendowment.org/publications/global-technology-policy/2019",
+      "title": "Global Inventory of AI Surveillance",
+      "publisher": "Carnegie Endowment for International Peace",
+      "date": "2019",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.reuters.com/article/us-zimbabwe-china-surveillance/",
+      "title": "Zimbabwe to get Chinese facial recognition technology",
+      "publisher": "Reuters",
+      "date": "2018-04-16",
+      "type": "news-article"
+    },
+    {
+      "url": "https://freedomhouse.org/country/zimbabwe/freedom-net/",
+      "title": "Freedom on the Net: Zimbabwe",
+      "publisher": "Freedom House",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

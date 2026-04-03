@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uk-met-police-gangs-matrix",
+  "name": "Grossbritannien: Londoner Polizei fugt tausende Schwarze Jugendliche in algorithmische Gangsterliste ein",
+  "description": "Die Londoner Metropolitan Police betrieb ab 2012 die 'Gangs Violence Matrix', eine Datenbank, die Personen algorithmisch als Gangmitglieder einstufte. Grundlage waren Social-Media-Aktivitaten, Musikverhalten (Drill-Rap), soziale Kontakte und Wohnort — nicht nachgewiesene Straftaten. 78 Prozent der rund 3.800 Eingetragenen waren Schwarze Manner und Jugendliche, obwohl Schwarze nur 13 Prozent der Londoner Bevolkerung stellen. Das System fuhrte zu erhorter Polizeiuberwachung, Einschrankungen bei Visa-Antragan und Wohnungssuche.",
+  "startDate": "2012-08",
+  "location": {
+    "@type": "Place",
+    "name": "London, Vereinigtes Konigreich",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    }
+  },
+  "asm:incidentType": ["predictive-policing", "discrimination", "surveillance"],
+  "asm:affectedRights": ["Recht auf Gleichbehandlung", "Diskriminierungsschutz", "Unschuldsvermutung", "Recht auf Privatsphare", "Datenschutzrechte"],
+  "asm:actors": [
+    {
+      "name": "Metropolitan Police Service (Met Police)",
+      "type": "government",
+      "asm:systems": ["Gangs Violence Matrix", "Datenbank fur Gangzuordnung"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2012-08",
+      "phase": "infrastructure",
+      "title": "Aufbau der Gangs Violence Matrix nach den Londoner Unruhen",
+      "description": "Im Anschluss an die Londoner Unruhen von 2011 richtet die Metropolitan Police die Gangs Violence Matrix ein. Das System soll Gangkriminalitat vorhersagen und praventiv bekampfen. Kriterien fur die Aufnahme in die Datenbank sind vage: Mitgliedschaft in einer 'Ganggruppe', Social-Media-Aktivitat, Musikverhalten und Wohnort in bestimmten Bezirken. Kein unabhangiges Gremium uberwacht die Aufnahmekriterien.",
+      "sources": ["https://www.amnesty.org.uk/resources/trapped-label-report"]
+    },
+    {
+      "date": "2017-11",
+      "phase": "doctrine",
+      "title": "Amnesty International: Datenbank ist diskriminierend und unverhaltnisamssig",
+      "description": "Amnesty International UK veroffentlicht den Bericht 'Trapped in the Matrix', der nachweist, dass 78 Prozent der in der Matrix gespeicherten Personen Schwarze Manner sind. Die Studie belegt, dass Personen allein aufgrund ihrer Social-Media-Aktivitaten, ihrer Musikpraferenzen und ihrer sozialen Kontakte eingetragen wurden, ohne dass konkrete Straftaten vorlagen. Betroffene berichteten von erheblicchen negativen Auswirkungen auf Beschaftigung, Wohnen und Bewegungsfreiheit.",
+      "sources": ["https://www.amnesty.org.uk/resources/trapped-label-report"]
+    },
+    {
+      "date": "2018-11",
+      "phase": "event",
+      "title": "ICO stellt datenschutzrechtliche Verstossse fest",
+      "description": "Der britische Datenschutzbeauftragte (ICO) gibt eine Durchsetzungsmitteilung heraus, in der er feststellt, dass die Met Police mit dem Betrieb der Gangs Matrix gegen den Data Protection Act verstossen hat. Konkret werden mangelnde Transparenz gegenuber Betroffenen, fehlerhafte Daten und unangemessene Weitergabe an Drittbehorden geragt. Die Met wird angewiesen, das System grundlegend zu uberarbeiten.",
+      "sources": ["https://ico.org.uk/action-weve-taken/enforcement/metropolitan-police-service/"]
+    },
+    {
+      "date": "2020-10",
+      "phase": "consequences",
+      "title": "Teilreform und anhaltende Kritik",
+      "description": "Die Metropolitan Police verabschiedet eine reformierte Version der Gangs Matrix mit strengeren Aufnahmekriterien und verbessertem Beschwerdemechanismus. Bericht der Polizeiaufsicht (IOPC) und zivilgesellschaftliche Gruppen kritisieren, dass das Grundproblem — die unverhaltnisamssige Uberwachung Schwarzer Jugendlicher — nicht beseitigt wurde. Mehrere Lander prufen ahnliche Systeme.",
+      "sources": ["https://www.amnesty.org.uk/resources/trapped-label-report"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.amnesty.org.uk/resources/trapped-label-report",
+      "title": "Trapped in the Matrix: Secrecy, Stigma and Bias in the Met's Gangs Database",
+      "publisher": "Amnesty International UK",
+      "date": "2018-05",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://ico.org.uk/action-weve-taken/enforcement/metropolitan-police-service/",
+      "title": "ICO Enforcement Notice: Metropolitan Police Service Gangs Matrix",
+      "publisher": "Information Commissioner's Office",
+      "date": "2018-11",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2018/may/02/met-police-gangs-matrix-racial-discrimination-amnesty",
+      "title": "Met police gangs matrix is racially discriminatory, Amnesty says",
+      "publisher": "The Guardian",
+      "date": "2018-05-02",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/katar-arbeiter-ueberwachung-wm",
+  "name": "Katar: Digitale Ueberwachung von Wanderarbeitern waehrend der WM 2022",
+  "description": "Im Vorfeld der FIFA-Weltmeisterschaft 2022 setzte Katar digitale Ueberwachungssysteme ein, um ueber zwei Millionen Wanderarbeiter aus Suedostasien und Afrika zu kontrollieren. Das Kafala-Sponsorensystem wurde durch digitale Tools verstaerkt: biometrische Arbeitszeitkontrolle, GPS-Tracking auf Bauplaetzen und Handyueberwachung. Amnesty International und The Guardian dokumentierten systematische Lohndiebstahle, Passeinzug und Bewegungseinschraenkungen, die durch technologische Kontrollmechanismen ermoeglicht wurden.",
+  "startDate": "2014",
+  "location": {
+    "@type": "Place",
+    "name": "Doha, Katar",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.2854,
+      "longitude": 51.5310
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "QA"
+    }
+  },
+  "asm:incidentType": ["surveillance", "labor-exploitation", "discrimination"],
+  "asm:affectedRights": ["Recht auf Privatsphaere", "Arbeitsrechte", "Bewegungsfreiheit", "Schutz vor Zwangsarbeit", "Menschenwuerde"],
+  "asm:actors": [
+    {
+      "name": "Katarische Regierung",
+      "type": "government",
+      "asm:systems": ["Kafala-System", "Absher-aehnliche Kontrollsysteme"]
+    },
+    {
+      "name": "Baukonsortien (Lusail City, etc.)",
+      "type": "company"
+    },
+    {
+      "name": "FIFA",
+      "type": "ngo"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Massenrekrutierung und Aufbau digitaler Kontrollsysteme",
+      "description": "Katar beginnt den massiven Aufbau von WM-Infrastruktur. Hundertausende Wanderarbeiter werden rekrutiert. Das Kafala-System bindet Aufenthaltserlaubnis an Arbeitgeber. Biometrische Systeme fuer Arbeitszeiterfassung und Zugangskontrolle auf Bauplaetzen werden eingefuehrt. Laut Amnesty International wurden vielen Arbeitern die Paesse eingezogen.",
+      "sources": ["https://www.amnesty.org/en/latest/campaigns/2016/03/qatar-world-cup-of-shame/"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Amnesty-Berichte belegen systematische Ausbeutung",
+      "description": "Amnesty International veroeffentlicht umfassende Berichte ueber erzwungene Arbeit, Lohnraub und Misshandlung. Digitale Ueberwachungssysteme ermoeglichen Arbeitgebern, Bewegungen zu verfolgen und Arbeitern bei unerlaubtem Verlassen des Bauplatzes zu melden. Die Hitzeexposition ohne ausreichenden Schutz fuehrt zu Todesfaellen, die offiziell untererfasst werden.",
+      "sources": ["https://www.amnesty.org/en/documents/mde22/0148/2019/en/"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Guardian-Recherche: Ueber 6.500 Tote seit 2010",
+      "description": "The Guardian veroeffentlicht eine Analyse, wonach seit Vergabe der WM im Jahr 2010 ueber 6.500 Wanderarbeiter aus fuenf Laendern (Indien, Pakistan, Nepal, Bangladesch, Sri Lanka) gestorben sind. Digitale Lohndiebstahl-Systeme und elektronische Einreisesperren werden dokumentiert. Katar bestreitet die Zahlen und gibt reformierte Arbeiterschutzgesetze bekannt.",
+      "sources": ["https://www.theguardian.com/global-development/2021/feb/23/revealed-migrant-worker-deaths-qatar-fifa-world-cup"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "WM startet ohne grundlegende Systemreformen",
+      "description": "Die WM findet im November-Dezember 2022 statt. Beobachter stellen fest, dass trotz angekuendigter Reformen das Kafala-System und digitale Kontrollmechanismen weitgehend unveraendert bleiben. Internationale Menschenrechtsorganisationen fordern von der FIFA Entschaedigungszahlungen. Die FIFA und Katar einigen sich auf einen Arbeiterfonds, der als unzureichend kritisiert wird.",
+      "sources": ["https://www.amnesty.org/en/latest/news/2022/11/qatar-world-cup-2022-what-you-need-to-know/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.amnesty.org/en/latest/campaigns/2016/03/qatar-world-cup-of-shame/",
+      "title": "Qatar's World Cup of Shame",
+      "publisher": "Amnesty International",
+      "date": "2016-03",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.theguardian.com/global-development/2021/feb/23/revealed-migrant-worker-deaths-qatar-fifa-world-cup",
+      "title": "Revealed: 6,500 migrant workers have died in Qatar since World Cup awarded",
+      "publisher": "The Guardian",
+      "date": "2021-02-23",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2022/11/qatar-world-cup-2022-what-you-need-to-know/",
+      "title": "Qatar World Cup 2022: What you need to know about human rights",
+      "publisher": "Amnesty International",
+      "date": "2022-11",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

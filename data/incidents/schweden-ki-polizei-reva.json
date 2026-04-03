@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/schweden-ki-polizei-reva",
+  "name": "Schweden: REVA-Projekt und algorithmisches Racial Profiling bei Polizei und Migrationsbehorde",
+  "description": "Das schwedische REVA-Programm (Rättssäkert och effektivt verkställighetsarbete) kombinierte seit 2009 Datenbankabfragen und statistische Auswertungen, um Aufenthaltsstatus von Personen zu prufen. Berichte belegen, dass die Polizei und die Migrationsbehorde nichtweisse Personen uberproportional kontrollierten. Spatere datengestutzte Polizeistrategien fuhrten zu algorithmischem Racial Profiling in Gebieten mit hohem Migrantenanteil.",
+  "startDate": "2013-01",
+  "location": {
+    "@type": "Place",
+    "name": "Stockholm, Schweden",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 59.3293,
+      "longitude": 18.0686
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SE"
+    }
+  },
+  "asm:incidentType": ["discrimination", "predictive-policing", "surveillance"],
+  "asm:affectedRights": ["Gleichheitsrecht", "Diskriminierungsfreiheit", "Recht auf Privatsphare", "Recht auf Freizugigkeit"],
+  "asm:actors": [
+    {
+      "name": "Schwedische Polizei (Polismyndigheten)",
+      "type": "government",
+      "asm:systems": ["REVA-Datenbank", "Datengestutzte Einsatzplanung", "Risikobewertungsalgorithmen"]
+    },
+    {
+      "name": "Schwedische Migrationsbehorde (Migrationsverket)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2009-01",
+      "phase": "infrastructure",
+      "title": "Start des REVA-Projekts",
+      "description": "Die schwedische Regierung startet REVA als Kooperationsprogramm zwischen Polizei und Migrationsbehorde zur effektiveren Durchsetzung von Ausreiseverpflichtungen. Das System vernetzt Polizeidatenbanken mit Migrationsdaten und ermoglicht automatisierte Statusabfragen. Kritiker warnen bereits beim Start vor moglichem Racial Profiling.",
+      "sources": ["https://www.civilrightsdefenders.org/reports/ethnic-profiling-sweden/"]
+    },
+    {
+      "date": "2013-03",
+      "phase": "doctrine",
+      "title": "Enthullung: Polizei kontrolliert systematisch nichtweisse Personen",
+      "description": "Investigative Berichte und eine Anzeige an den schwedischen Ombudsmann (DO) enthullen, dass Polizisten in Stockholm Fahrgaste in U-Bahnen und Strassen gezielt nach nicht-europaischem Aussehen auswahlen, um den Aufenthaltsstatus zu prufen. Tausende Personen werden kontrolliert, die uberwiegende Mehrheit vollig legal in Schweden lebt.",
+      "sources": ["https://www.svt.se/nyheter/inrikes/reva-projekt-kritiseras-for-rasprofilering"]
+    },
+    {
+      "date": "2015-06",
+      "phase": "event",
+      "title": "Ausweitung auf datengestutzte Polizeiarbeit",
+      "description": "Die schwedische Polizei erweitert datengestutzte Methoden auf die 'Gefahrdete-Gebiete'-Liste (utsatta omraden). Algorithmen zur Vorbrechensvorhersage werden in Gebieten eingesetzt, die statistisch hohe Migrantenanteile aufweisen. Civil Rights Defenders dokumentieren systematisches Profiling in Malmö, Göteborg und Stockholm.",
+      "sources": ["https://www.civilrightsdefenders.org/reports/ethnic-profiling-sweden/"]
+    },
+    {
+      "date": "2020-09",
+      "phase": "consequences",
+      "title": "EU-KI-Gesetz-Debatten und schwedische Reformforderungen",
+      "description": "Im Kontext der EU-KI-Act-Debatten geraten schwedische Polizeialgorithmen erneut unter Druck. Der schwedische Ombudsmann (JO) verlangt mehr Transparenz bei Entscheidungsalgorithmen. Reformforderungen bleiben teilweise folgenlos; einzelne Kommunen stellen den Einsatz von Vorhersagealgorithmen ein.",
+      "sources": ["https://www.do.se/other-languages/english-engelska/discrimination-in-sweden"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.civilrightsdefenders.org/reports/ethnic-profiling-sweden/",
+      "title": "Ethnic Profiling in Sweden",
+      "publisher": "Civil Rights Defenders",
+      "date": "2017",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.do.se/other-languages/english-engelska/discrimination-in-sweden",
+      "title": "Discrimination in Sweden",
+      "publisher": "Equality Ombudsman (DO)",
+      "date": "2020",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.svt.se/nyheter/inrikes/reva-projekt-kritiseras-for-rasprofilering",
+      "title": "REVA-projekt kritiseras for rasprofilering",
+      "publisher": "SVT Nyheter",
+      "date": "2013-03",
+      "type": "news-article"
+    },
+    {
+      "url": "https://fra.europa.eu/en/publication/2010/ethnic-profiling-european-union-pervasive-ineffective-and-discriminatory",
+      "title": "Ethnic Profiling in the European Union: Pervasive, Ineffective and Discriminatory",
+      "publisher": "EU Agency for Fundamental Rights",
+      "date": "2010",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

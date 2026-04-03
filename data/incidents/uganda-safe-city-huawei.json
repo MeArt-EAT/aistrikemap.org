@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uganda-safe-city-huawei",
+  "name": "Uganda: Huawei Safe City-System zur Überwachung politischer Opposition",
+  "description": "Uganda baute mit Unterstützung des chinesischen Technologiekonzerns Huawei ein umfassendes Überwachungssystem auf, das offiziell der öffentlichen Sicherheit dient. Ermittlungen des Wall Street Journal (2019) enthüllten, dass ugandische Behörden das System einsetzten, um Oppositionspolitiker, Aktivisten und Journalisten zu überwachen. Während der Präsidentschaftswahl 2021 soll das System zur Lokalisierung und Verhaftung von Oppositionsanhängern genutzt worden sein.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Kampala, Uganda",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 0.3476,
+      "longitude": 32.5825
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "UG"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Meinungsfreiheit", "Versammlungsfreiheit", "Politische Teilhabe", "Schutz vor willkürlicher Verhaftung"],
+  "asm:actors": [
+    {
+      "name": "Ugandische Regierung / Polizei",
+      "type": "government",
+      "asm:systems": ["Safe City Kampala", "CCTV-Netzwerk"]
+    },
+    {
+      "name": "Huawei Technologies",
+      "type": "company",
+      "asm:systems": ["Huawei Safe City Solution", "Gesichtserkennungssystem"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-05",
+      "phase": "infrastructure",
+      "title": "WSJ enthüllt politischen Missbrauch des Überwachungssystems",
+      "description": "Das Wall Street Journal berichtet, dass Huawei-Techniker ugandischen Behörden halfen, verschlüsselte Kommunikation des Oppositionsführers Bobi Wine abzufangen und Anhänger über GPS-Tracking zu verfolgen. Das offiziell für Verbrechensbekämpfung gedachte System wird damit zur Plattform für politische Repression. Huawei bestreitet direkte Beteiligung an der Überwachungsoperation.",
+      "sources": ["https://www.wsj.com/articles/huawei-technicians-helped-african-governments-spy-on-political-opponents-11565793017"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Ausbau des Safe City-Systems in Kampala",
+      "description": "Uganda weitet trotz internationaler Kritik das Kameranetzwerk in Kampala aus. Hunderte Überwachungskameras mit Gesichtserkennungsfunktion werden an strategischen Punkten installiert. Die Infrastruktur ermöglicht die Echtzeit-Identifikation und Verfolgung von Personen im öffentlichen Raum. Organisationen wie Unwanted Witness Uganda dokumentieren wachsende Einschüchterung von Aktivisten.",
+      "sources": ["https://www.unwantedwitness.org/surveillance-in-uganda/"]
+    },
+    {
+      "date": "2021-01",
+      "phase": "event",
+      "title": "Präsidentschaftswahl: System zur Unterdrückung von Oppositionellen",
+      "description": "Im Vorfeld und während der Präsidentschaftswahl im Januar 2021 werden Mobilfunknetze abgeschaltet und soziale Medien blockiert. Menschenrechtsorganisationen dokumentieren, wie das Safe City-System zur Identifikation und Lokalisierung von Bobi Wine-Unterstützern genutzt wird. Hunderte Oppositionsanhänger werden verhaftet; einige verschwinden vorübergehend.",
+      "sources": ["https://www.hrw.org/news/2021/01/14/uganda-security-forces-abduct-opposition-supporters"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Internationale Kritik und Dokumentation durch NGOs",
+      "description": "Internationale Menschenrechtsorganisationen und Forscher dokumentieren den Einsatz des Huawei-Systems als Werkzeug politischer Repression. Der Fall wird zum Musterbeispiel für den Export chinesischer Überwachungstechnologie an autoritäre Regime in Afrika. Privacy International und Access Now fordern Exportkontrollen für Überwachungstechnologie.",
+      "sources": ["https://privacyinternational.org/long-read/4487/how-huawei-became-africas-top-surveillance-partner"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.wsj.com/articles/huawei-technicians-helped-african-governments-spy-on-political-opponents-11565793017",
+      "title": "Huawei Technicians Helped African Governments Spy on Political Opponents",
+      "publisher": "Wall Street Journal",
+      "date": "2019-08-14",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.unwantedwitness.org/surveillance-in-uganda/",
+      "title": "Surveillance in Uganda",
+      "publisher": "Unwanted Witness Uganda",
+      "date": "2020-01-01",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2021/01/14/uganda-security-forces-abduct-opposition-supporters",
+      "title": "Uganda: Security Forces Abduct Opposition Supporters",
+      "publisher": "Human Rights Watch",
+      "date": "2021-01-14",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://privacyinternational.org/long-read/4487/how-huawei-became-africas-top-surveillance-partner",
+      "title": "How Huawei Became Africa's Top Surveillance Partner",
+      "publisher": "Privacy International",
+      "date": "2021-06-01",
+      "type": "research-paper"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

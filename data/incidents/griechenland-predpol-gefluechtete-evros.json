@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/griechenland-predpol-gefluechtete-evros",
+  "name": "Griechenland: KI-Überwachung und Schallkanonen gegen Geflüchtete an der Evros-Grenze",
+  "description": "Griechenland setzt an der Evros-Grenze zur Türkei ein umfassendes KI-gestütztes Überwachungsarsenal ein, das Drohnen, Schallkanonen, automatische Nummernschilderkennung und ein KI-Lügendetektorsystem namens iBorderCtrl umfasst. Die Systeme richten sich vorwiegend gegen Asylsuchende und Geflüchtete. Das EU-Projekt CENTAUR und ROBORDER finanzieren Grenzroboter. Menschenrechtsorganisationen dokumentieren illegale Pushbacks, die durch Überwachungstechnologie ermöglicht werden.",
+  "startDate": "2020",
+  "location": {
+    "@type": "Place",
+    "name": "Alexandroupoli, Griechenland (Evros-Grenzregion)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.8469,
+      "longitude": 25.8744
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GR"
+    }
+  },
+  "asm:incidentType": ["surveillance", "discrimination"],
+  "asm:affectedRights": ["Recht auf Asyl", "Recht auf Privatsphäre", "Meinungsfreiheit", "Bewegungsfreiheit", "Schutz vor unmenschlicher Behandlung"],
+  "asm:actors": [
+    {
+      "name": "Griechische Regierung / Hellenic Police",
+      "type": "government",
+      "asm:systems": ["iBorderCtrl KI-Lügendetektor", "LRAD-Schallkanonen", "Drohnensysteme", "Automatische Nummernschilderkennung"]
+    },
+    {
+      "name": "EU-Kommission / Frontex",
+      "type": "government",
+      "asm:systems": ["CENTAUR-Grenzroboter", "ROBORDER autonome Drohnen"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-02",
+      "phase": "infrastructure",
+      "title": "Grenzkrise und Deployment von Schallkanonen",
+      "description": "Nach der türkischen Ankündigung, die Grenze zu öffnen, eskaliert die Lage am Evros. Griechenland setzt erstmals LRAD-Schallkanonen (Long Range Acoustic Devices) gegen Geflüchtete ein. Drohnen überwachen die Grenzlinie rund um die Uhr. Die EU erklärt Griechenland zum 'europäischen Schutzschild' und stellt zusätzliche Mittel für Grenzüberwachungstechnologie bereit.",
+      "sources": ["https://www.theguardian.com/world/2020/mar/03/greece-turkey-border-migrants-sonic-cannon"]
+    },
+    {
+      "date": "2021-06",
+      "phase": "event",
+      "title": "Pilotprojekte für KI-Grenzkontrolle ausgeweitet",
+      "description": "Das EU-finanzierte Projekt iBorderCtrl wird an griechischen Grenzübergängen pilotiert. Das System bewertet mit KI die Mimik von Einreisenden auf Anzeichen von Täuschung — Experten bezeichnen die zugrundeliegende Wissenschaft als pseudowissenschaftlich. Homo Digitalis und das Fundamental Rights Forum kritisieren die fehlende Rechtsgrundlage. Gleichzeitig werden ROBORDER-Drohnen für autonome Grenzpatrouillen getestet.",
+      "sources": ["https://www.statewatch.org/analyses/2021/the-eu-s-smart-borders/"]
+    },
+    {
+      "date": "2023-01",
+      "phase": "doctrine",
+      "title": "CENTAUR-Roboter und Vollausbau der Überwachungsinfrastruktur",
+      "description": "Das EU-Projekt CENTAUR liefert ferngesteuerte Bodenfahrzeuge für den Einsatz an der Evros-Grenze. Statewatch dokumentiert, dass die Überwachungsinfrastruktur — Wachtürme, Sensoren, KI-Analyse — illegale Pushbacks von Asylsuchenden erleichtert. The Guardian berichtet über gut dokumentierte Fälle, in denen Geflüchtete nach KI-unterstützter Lokalisierung abgefangen und ohne Prüfung ihres Schutzbedarfs zurückgedrängt wurden.",
+      "sources": ["https://www.statewatch.org/analyses/2023/centaur-remote-control-ground-vehicles/"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "EU-Parlamentsuntersuchungen und anhaltende Pushbacks",
+      "description": "Das EU-Parlament initiiert Untersuchungen zu illegalen Pushbacks, die durch Überwachungstechnologie unterstützt werden. Homo Digitalis reicht Beschwerden beim griechischen Datenschutzbeauftragten ein. Trotz politischem Druck plant die EU weitere Investitionen in KI-Grenzüberwachung im Rahmen des Pakts zu Migration und Asyl. Menschenrechtsorganisationen dokumentieren weiterhin Todesfälle im Grenzgebiet.",
+      "sources": ["https://www.homodigitalis.gr/en/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.theguardian.com/world/2020/mar/03/greece-turkey-border-migrants-sonic-cannon",
+      "title": "Greece fires teargas and sonic cannon as migrants attempt to cross from Turkey",
+      "publisher": "The Guardian",
+      "date": "2020-03-03",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.statewatch.org/analyses/2021/the-eu-s-smart-borders/",
+      "title": "The EU's 'smart borders': surveillance, discrimination and fundamental rights",
+      "publisher": "Statewatch",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.statewatch.org/analyses/2023/centaur-remote-control-ground-vehicles/",
+      "title": "CENTAUR: Remote-controlled ground vehicles for EU border control",
+      "publisher": "Statewatch",
+      "date": "2023",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.homodigitalis.gr/en/",
+      "title": "Homo Digitalis — Digital Rights in Greece",
+      "publisher": "Homo Digitalis",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-uber-lyft-gig-worker-algorithmus",
+  "name": "USA: Uber und Lyft — algorithmische Lohnmanipulation und Überwachung von Gig-Arbeitern",
+  "description": "Uber und Lyft setzen undurchsichtige Algorithmen ein, die Löhne von Fahrern dynamisch manipulieren, Deaktivierungen ohne transparente Begründung auslösen und Fahrer lückenlos überwachen. Akademische Studien, darunter Forschungen von Veena Dubal (UC Hastings) und des MIT CSAIL, dokumentieren, wie algorithmisches Lohnmanagement gezielt Pausen und Ruhezeiten verhindert und Fahrer zu mehr Arbeit bei niedrigeren Stundenlöhnen treibt. Betroffene Fahrer haben kaum Möglichkeiten, sich gegen automatisierte Entscheidungen zu wehren.",
+  "startDate": "2016",
+  "location": {
+    "@type": "Place",
+    "name": "San Francisco, Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["labor-exploitation", "surveillance"],
+  "asm:affectedRights": ["Recht auf faire Entlohnung", "Recht auf Privatsphäre", "Vereinigungsfreiheit", "Recht auf Erklärung algorithmischer Entscheidungen", "Arbeitsrechte"],
+  "asm:actors": [
+    {
+      "name": "Uber Technologies",
+      "type": "company",
+      "asm:systems": ["Uber Driver App Algorithm", "Dynamic Pricing (Surge)", "Driver Deactivation System"]
+    },
+    {
+      "name": "Lyft Inc.",
+      "type": "company",
+      "asm:systems": ["Lyft Driver Algorithm", "Prime Time Pricing"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Akademische Studien belegen algorithmische Lohnmanipulation",
+      "description": "Rechtswissenschaftlerin Veena Dubal (UC Hastings) beginnt umfangreiche Untersuchungen algorithmischer Lohnpraktiken bei Uber und Lyft. Ihre Forschung zeigt, dass Algorithmen Fahrern individuell angepasste, variable Löhne anbieten — abhängig von ihrer Bereitschaft zu fahren — was eine Form verhaltensbasierter Manipulation darstellt. Eine MIT-Studie ermittelt, dass der mittlere Stundenlohn von Uber-Fahrern nach Kosten unter dem Mindestlohn liegt.",
+      "sources": ["https://lawreview.law.ucdavis.edu/issues/56/3/articles/56-3_dubal.pdf"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Kalifornien verabschiedet AB5 zum Schutz von Gig-Arbeitern",
+      "description": "Das kalifornische Gesetz AB5 stuft Fahrer als Angestellte ein, was Uber und Lyft zu Mindestlohn, Krankenversicherung und anderen Leistungen verpflichten würde. Die Unternehmen investieren mehr als 200 Millionen Dollar in eine Abstimmungskampagne und setzen Algorithmen ein, um Fahrer durch gezielte In-App-Nachrichten gegen das Gesetz zu mobilisieren.",
+      "sources": ["https://www.nytimes.com/2020/11/04/technology/california-uber-lyft-prop-22.html"]
+    },
+    {
+      "date": "2020-11",
+      "phase": "event",
+      "title": "Proposition 22 — Unternehmen hebeln Arbeitnehmerrechte aus",
+      "description": "Uber, Lyft, DoorDash und andere Gig-Plattformen gewinnen mit Proposition 22 die Volksabstimmung in Kalifornien und schaffen damit einen eigenen Rechtsstatus, der Fahrer als unabhängige Auftragnehmer ohne volle Arbeitnehmerrechte einstuft. Die Kampagne nutzte algorithmisch gesteuerte In-App-Benachrichtigungen, um Millionen Fahrer und Fahrgäste zu beeinflussen.",
+      "sources": ["https://www.latimes.com/business/story/2020-11-04/proposition-22-results-uber-lyft-doordash"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "FTC-Untersuchungen und internationale Regulierung",
+      "description": "Die US-Handelskommission FTC leitet Untersuchungen zu Deaktivierungspraktiken bei Gig-Plattformen ein. In der EU tritt die Platform-Work-Direktive in Kraft, die Plattformarbeitern mehr Rechte gegenüber algorithmischen Entscheidungen einräumt. Uber und Lyft werden weiterhin für fehlende Transparenz bei Deaktivierungen und Lohnberechnungen kritisiert.",
+      "sources": ["https://www.ftc.gov/reports/gig-economy"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://lawreview.law.ucdavis.edu/issues/56/3/articles/56-3_dubal.pdf",
+      "title": "Algorithmic Wage Discrimination",
+      "publisher": "UC Davis Law Review / Veena Dubal",
+      "date": "2023-03-01",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.nytimes.com/2020/11/04/technology/california-uber-lyft-prop-22.html",
+      "title": "Uber and Lyft Prevail in California with a Contractor Model Rewrite",
+      "publisher": "New York Times",
+      "date": "2020-11-04",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.latimes.com/business/story/2020-11-04/proposition-22-results-uber-lyft-doordash",
+      "title": "Proposition 22 passes: Uber, Lyft and DoorDash drivers remain contractors",
+      "publisher": "Los Angeles Times",
+      "date": "2020-11-04",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.ftc.gov/reports/gig-economy",
+      "title": "The Gig Economy: Worker Classification and Algorithmic Management",
+      "publisher": "Federal Trade Commission",
+      "date": "2022-09-15",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

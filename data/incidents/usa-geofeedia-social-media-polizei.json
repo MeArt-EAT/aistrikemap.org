@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-geofeedia-social-media-polizei",
+  "name": "USA: Geofeedia — Polizeiliche Überwachung von Black-Lives-Matter-Protesten über soziale Medien",
+  "description": "Das Unternehmen Geofeedia verkaufte zwischen 2014 und 2016 Überwachungssoftware an Polizeibehörden, die es ermöglichte, öffentliche Social-Media-Beiträge nach Standort zu filtern und gezielt Protestbewegungen zu beobachten. Die ACLU of California deckte 2016 auf, dass Dutzende US-Polizeibehörden die Plattform nutzten, um Aktivisten — insbesondere im Umfeld der Black-Lives-Matter-Bewegung — zu identifizieren und zu verfolgen. Geofeedia hatte privilegierten API-Zugang zu Facebook, Instagram und Twitter, der nach der Enthüllung sofort entzogen wurde. Betroffene wurden ohne Kenntnis davon in Datenbanken erfasst.",
+  "startDate": "2014",
+  "location": {
+    "@type": "Place",
+    "name": "Chicago, Illinois, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.8781,
+      "longitude": -87.6298
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["surveillance", "discrimination", "political-pressure"],
+  "asm:affectedRights": ["Versammlungsfreiheit", "Meinungsfreiheit", "Recht auf Privatsphäre", "Schutz vor Diskriminierung", "Recht auf politische Beteiligung"],
+  "asm:actors": [
+    {
+      "name": "Geofeedia Inc.",
+      "type": "company",
+      "asm:systems": ["Geofeedia Social-Media-Überwachungsplattform", "standortbasierte Protestverfolgung"]
+    },
+    {
+      "name": "Chicago Police Department",
+      "type": "government"
+    },
+    {
+      "name": "Baltimore Police Department",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Geofeedia vermarktet Überwachungsprodukt an Polizeibehörden nach Ferguson",
+      "description": "Nach den Protesten in Ferguson, Missouri, vermarktet Geofeedia seine Plattform aktiv an US-Polizeibehörden als Werkzeug zur 'Protestüberwachung'. Interne Vertriebsmaterialien beschreiben die Fähigkeit, Demonstranten anhand ihrer Social-Media-Posts zu identifizieren und ihren Aufenthaltsort in Echtzeit zu bestimmen. Geofeedia sichert sich privilegierten Datenzugang von Facebook, Instagram und Twitter.",
+      "sources": ["https://www.aclu.org/report/social-media-surveillance-police"]
+    },
+    {
+      "date": "2016-10",
+      "phase": "event",
+      "title": "ACLU of California enthüllt polizeiliche Nutzung zur Protestüberwachung",
+      "description": "Die ACLU of California veröffentlicht Dokumente, die belegen, dass mindestens 63 US-Strafverfolgungsbehörden Geofeedia zur Beobachtung von Protesten und politischen Aktivisten einsetzten. Die Dokumente zeigen, dass die Polizei von Baltimore die Plattform während der Proteste nach dem Tod von Freddie Gray nutzte, um Aktivisten zu identifizieren. Weitere Behörden in Chicago, Oakland und anderen Großstädten sind betroffen.",
+      "sources": ["https://www.aclu.org/report/social-media-surveillance-police"]
+    },
+    {
+      "date": "2016-10",
+      "phase": "doctrine",
+      "title": "Facebook, Instagram und Twitter entziehen Geofeedia den Datenzugang",
+      "description": "Innerhalb von Tagen nach der ACLU-Enthüllung sperren Facebook, Instagram und Twitter den privilegierten API-Zugang von Geofeedia. Die Plattformen erklären, dass die Nutzung ihrer Daten zur Überwachung politischer Aktivitäten gegen ihre Nutzungsbedingungen verstößt. The Verge und andere Medien berichten über die weitreichenden Verträge zwischen Geofeedia und Polizeibehörden im gesamten Land.",
+      "sources": ["https://www.theverge.com/2016/10/11/13243072/geofeedia-facebook-twitter-instagram-police-surveillance"]
+    },
+    {
+      "date": "2016",
+      "phase": "consequences",
+      "title": "Geofeedia bricht zusammen — Strukturproblem bleibt bestehen",
+      "description": "Geofeedia verliert nach dem Entzug der Plattformzugänge den Großteil seiner Funktionalität und stellt seinen Betrieb weitgehend ein. Allerdings treten schnell Konkurrenzprodukte auf den Markt. Behörden weichen auf andere Anbieter wie Palantir, Babel Street und MediaSonar aus. Keine der betroffenen Polizeibehörden wird für die Nutzung der Überwachungssoftware zur Rechenschaft gezogen. Betroffene Aktivisten erhalten keine Benachrichtigung.",
+      "sources": ["https://www.aclu.org/report/social-media-surveillance-police"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.aclu.org/report/social-media-surveillance-police",
+      "title": "Social Media Surveillance by the US Government",
+      "publisher": "ACLU of California",
+      "date": "2016-10",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.theverge.com/2016/10/11/13243072/geofeedia-facebook-twitter-instagram-police-surveillance",
+      "title": "How Facebook and Twitter gave data access to a company that surveilled Black activists",
+      "publisher": "The Verge",
+      "date": "2016-10-11",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

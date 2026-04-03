@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/afghanistan-biometrische-daten-taliban",
+  "name": "Afghanistan: US-Biometriedatenbanken fallen nach Taliban-Machtübernahme in falsche Hände",
+  "description": "Nach dem Abzug der US-Truppen und der Taliban-Machtübernahme im August 2021 erbeuteten Taliban-Kämpfer biometrische Erfassungsgeräte (HIIDE) sowie Zugang zu biometrischen Datenbanken (ABIS), die das US-Militär über fast zwei Jahrzehnte aufgebaut hatte. Diese Datenbanken enthielten Fingerabdrücke, Iris-Scans und Gesichtsdaten von Hunderttausenden Afghanen, die mit westlichen Streitkräften zusammengearbeitet hatten. Menschenrechtsorganisationen warnten vor gezielten Vergeltungsmassnahmen gegen identifizierte Personen.",
+  "startDate": "2007-01",
+  "location": {
+    "@type": "Place",
+    "name": "Kabul, Afghanistan",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.5553,
+      "longitude": 69.2075
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AF"
+    }
+  },
+  "asm:incidentType": ["data-misuse", "military-ai", "surveillance"],
+  "asm:affectedRights": ["Recht auf Leben", "Recht auf Privatsphäre", "Recht auf körperliche Unversehrtheit", "Recht auf Schutz vor Verfolgung"],
+  "asm:actors": [
+    {
+      "name": "US-Militär (ISAF/CENTCOM)",
+      "type": "military",
+      "asm:systems": ["HIIDE (Handheld Interagency Identity Detection Equipment)", "ABIS (Automated Biometric Identification System)", "BISA (Biometric Identity Synchronization Architecture)"]
+    },
+    {
+      "name": "Taliban",
+      "type": "military"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2007",
+      "phase": "infrastructure",
+      "title": "Aufbau der biometrischen Infrastruktur in Afghanistan",
+      "description": "Das US-Militär beginnt mit dem systematischen Aufbau biometrischer Datenbanken in Afghanistan. Soldaten erhalten tragbare HIIDE-Geräte zur Erfassung von Fingerabdrücken, Iris-Scans und Gesichtsdaten. Alle Afghanen, die für westliche Streitkräfte oder Behörden arbeiten wollen, müssen ihre biometrischen Daten abgeben. Bis 2021 enthält die ABIS-Datenbank geschätzte Daten von mehreren Millionen Afghanen.",
+      "sources": ["https://www.technologyreview.com/2021/08/20/1033340/the-pentagon-biometric-databases-afghanistan/"]
+    },
+    {
+      "date": "2021-08-15",
+      "phase": "event",
+      "title": "Taliban übernehmen Kabul — biometrische Geräte erbeutet",
+      "description": "Nach dem überraschend schnellen Zusammenbruch der Afghanen Regierung und dem Einzug der Taliban in Kabul bleiben zahlreiche biometrische HIIDE-Geräte zurück. Berichte zeigen, dass Taliban-Kämpfer die Geräte sofort in Betrieb nehmen, um Personen an Kontrollpunkten zu überprüfen. Da die US-Seite keine Zeit hatte, Datensätze zu löschen oder Geräte zu zerstören, sind die Daten unmittelbar zugänglich.",
+      "sources": ["https://theintercept.com/2021/08/17/afghanistan-taliban-military-biometrics/"]
+    },
+    {
+      "date": "2021-08",
+      "phase": "doctrine",
+      "title": "Warnungen vor gezielten Verfolgungen — keine Evakuierungsprotokoll für Daten",
+      "description": "Human Rights First und andere Organisationen warnen, dass Afghanen, die als Übersetzer, Mitarbeiter oder Informanten in den US-Datenbanken gespeichert sind, nun von den Taliban identifiziert und verfolgt werden könnten. Das US-Verteidigungsministerium räumt ein, dass kein ausreichendes Protokoll zur Datenlöschung im Evakuierungsfall existiert hatte.",
+      "sources": ["https://www.humanrightsfirst.org/resource/biometric-data-left-behind-us-military-afghanistan"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Dokumentierte Verfolgungen und fehlende Rechenschaftspflicht",
+      "description": "Berichte belegen gezielte Taliban-Razzien gegen ehemalige Militär- und Regierungsangestellte, die teilweise auf biometrischen Daten zu basieren scheinen. Das MIT Technology Review und The Intercept dokumentieren mehrere Fälle. Kongress und Datenschutzexperten fordern Untersuchungen zu den Datenpraktiken des Militärs und neue Standards für Datenlöschung in Konfliktgebieten.",
+      "sources": ["https://www.technologyreview.com/2021/08/20/1033340/the-pentagon-biometric-databases-afghanistan/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://theintercept.com/2021/08/17/afghanistan-taliban-military-biometrics/",
+      "title": "The Taliban Are Now Armed with Biometric Devices That Can ID Afghans Who Helped the US",
+      "publisher": "The Intercept",
+      "date": "2021-08-17",
+      "type": "investigative-journalism"
+    },
+    {
+      "url": "https://www.technologyreview.com/2021/08/20/1033340/the-pentagon-biometric-databases-afghanistan/",
+      "title": "The Pentagon's biometrics are now in Taliban hands",
+      "publisher": "MIT Technology Review",
+      "date": "2021-08-20",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.humanrightsfirst.org/resource/biometric-data-left-behind-us-military-afghanistan",
+      "title": "Biometric Data Left Behind by US Military in Afghanistan",
+      "publisher": "Human Rights First",
+      "date": "2021-09",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

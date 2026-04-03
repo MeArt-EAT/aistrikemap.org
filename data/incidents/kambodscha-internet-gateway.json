@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/kambodscha-internet-gateway",
+  "name": "Kambodscha: Nationales Internet-Gateway zur staatlichen Kontrolle des gesamten Datenverkehrs",
+  "description": "Die kambodschanische Regierung erließ 2021 ein Dekret zur Einrichtung eines Nationalen Internet-Gateways (NIG), das sämtlichen Internetverkehr des Landes über eine zentrale staatlich kontrollierte Infrastruktur leiten soll. Das System ermöglicht Echtzeitüberwachung, gezielte Zensur einzelner Websites und Dienste sowie die Identifizierung von Nutzern. Kritiker sehen darin eine Übernahme des chinesischen 'Großen Firewall'-Modells. Die Maßnahme richtet sich nach Einschätzung von Access Now und Human Rights Watch gegen politische Opposition, unabhängige Medien und zivilgesellschaftliche Organisationen.",
+  "startDate": "2021",
+  "location": {
+    "@type": "Place",
+    "name": "Phnom Penh, Kambodscha",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.5564,
+      "longitude": 104.9282
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "KH"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Informationsfreiheit", "Pressefreiheit", "Recht auf Privatsphäre", "Politische Teilhabe"],
+  "asm:actors": [
+    {
+      "name": "Kambodschanische Regierung (Hun-Sen-Regime)",
+      "type": "government",
+      "asm:systems": ["Nationales Internet-Gateway (NIG)", "Deep Packet Inspection", "URL-Filterlisten"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-02",
+      "phase": "infrastructure",
+      "title": "Erlass des NIG-Dekrets durch königliche Regierung",
+      "description": "Die kambodschanische Regierung verabschiedet das Sub-Dekret Nr. 23 zur Einrichtung eines Nationalen Internet-Gateways. Das Dokument verpflichtet alle Internetanbieter, ihren Datenverkehr über das staatliche Gateway zu leiten. Technisch ist das System mit dem chinesischen 'Großen Firewall'-Ansatz vergleichbar. Internationale Organisationen und Tech-Unternehmen warnen sofort vor schwerwiegenden Folgen für Meinungsfreiheit und Datensicherheit.",
+      "sources": ["https://www.accessnow.org/cambodia-national-internet-gateway/"]
+    },
+    {
+      "date": "2022",
+      "phase": "doctrine",
+      "title": "Implementierungspläne und Verhandlungen mit ISPs",
+      "description": "Die Regierung beginnt, Internetdienstanbieter zur Implementierung der technischen Umleitung zu verpflichten. Human Rights Watch dokumentiert Drohungen gegen ISPs, die Bedenken äußern. Die Regierung besteht darauf, das Gateway diene lediglich der 'Cybersicherheit' und Steuerkontrolle. Zivilgesellschaftliche Organisationen in Kambodscha berichten von zunehmendem Druck auf Aktivisten und Journalisten.",
+      "sources": ["https://www.hrw.org/news/2021/03/16/cambodia-internet-gateway-decree-threatens-free-expression"]
+    },
+    {
+      "date": "2023-02",
+      "phase": "event",
+      "title": "Teilweise Inbetriebnahme — erste dokumentierte Sperrungen",
+      "description": "VOA Khmer und lokale Beobachter berichten von erster teilweiser Aktivierung des Gateways. Ausgewählte Nachrichten- und Oppositionswebsites werden gezielt gesperrt. Die Regierung blockiert kurz vor den Parlamentswahlen 2023 mehrere kritische Medienplattformen. Access Now dokumentiert zunehmende Internetsperren als Muster staatlicher Kontrolle rund um politische Ereignisse.",
+      "sources": ["https://www.accessnow.org/cambodia-national-internet-gateway/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Weitreichende Selbstzensur — internationale Verurteilung ohne Wirkung",
+      "description": "Die Aussicht auf vollständige NIG-Implementierung führt zu weitreichender Selbstzensur unter kambodschanischen Journalisten und Zivilgesellschaft. Human Rights Watch und Access Now fordern die internationale Gemeinschaft zu konkreten Reaktionen auf. Unabhängige Medien verlegen ihre Redaktionen ins Ausland. Die Regierung von Hun Manet (Sohn des langjährigen Machthabers) setzt den Kurs trotz internationaler Kritik fort.",
+      "sources": ["https://www.hrw.org/news/2021/03/16/cambodia-internet-gateway-decree-threatens-free-expression"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.accessnow.org/cambodia-national-internet-gateway/",
+      "title": "Cambodia's National Internet Gateway: A tool for censorship and surveillance",
+      "publisher": "Access Now",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2021/03/16/cambodia-internet-gateway-decree-threatens-free-expression",
+      "title": "Cambodia: Internet Gateway Decree Threatens Free Expression",
+      "publisher": "Human Rights Watch",
+      "date": "2021-03-16",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.voacambodia.com",
+      "title": "Cambodia Internet Gateway reporting",
+      "publisher": "VOA Cambodia",
+      "date": "2023",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

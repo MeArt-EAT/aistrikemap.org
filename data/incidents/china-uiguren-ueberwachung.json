@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/china-uiguren-ueberwachung",
+  "name": "China: Massenuberwachung der uigurischen Bevolkerung in Xinjiang mit KI",
+  "description": "Seit 2017 betreibt die chinesische Regierung in der Region Xinjiang ein beispielloses KI-gestuztes Uberwachungssystem gegen die uigurische Bevolkerung. Gesichtserkennung, biometrische Datenerfassung, Handyuberwachung und Algorithmen fur pradiktive Polizeiarbeit kommen kombiniert zum Einsatz, um rund zwolf Millionen Uiguren zu kontrollieren. Geleakte Dokumente (China Cables, Xinjiang Police Files) und ein UN-Bericht 2022 dokumentieren schwere Menschenrechtsverletzungen, darunter Masseninhaftierungen in sogenannten Umerziehungslagern.",
+  "startDate": "2014",
+  "location": {
+    "@type": "Place",
+    "name": "Urumqi, Xinjiang, China",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.8256,
+      "longitude": 87.6168
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CN"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition", "discrimination", "predictive-policing"],
+  "asm:affectedRights": ["Recht auf Freiheit", "Recht auf Privatsphare", "Religionsfreiheit", "Bewegungsfreiheit", "Schutz vor Diskriminierung", "Recht auf kulturelle Identitat"],
+  "asm:actors": [
+    {
+      "name": "Volksrepublik China / Kommunistische Partei Chinas",
+      "type": "government",
+      "asm:systems": ["Integrated Joint Operations Platform (IJOP)", "Sharp Eyes", "Skynet"]
+    },
+    {
+      "name": "Huawei",
+      "type": "company",
+      "asm:systems": ["Uigur-Erkennungssoftware (2018 Patent)"]
+    },
+    {
+      "name": "Hikvision",
+      "type": "company",
+      "asm:systems": ["Kameranetzwerke Xinjiang"]
+    },
+    {
+      "name": "Dahua Technology",
+      "type": "company",
+      "asm:systems": ["Biometrische Uberwachungssysteme"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Kampagne 'Harter Schlag gegen Gewalt und Terrorismus' gestartet",
+      "description": "Die chinesische Regierung startet die politische Kampagne 'Strike Hard Against Violent Terrorism' in Xinjiang. Massiver Ausbau der Kamerainfrastruktur beginnt. Technologieunternehmen wie Hikvision, Dahua und spater Huawei werden als Auftragnehmer fur den Aufbau eines flachendeckenden Uberwachungsnetzes gewonnen. Die Integrated Joint Operations Platform (IJOP) wird konzipiert, um Daten aus Dutzenden Quellen zusammenzufuhren.",
+      "sources": ["https://www.icij.org/investigations/china-cables/"]
+    },
+    {
+      "date": "2017",
+      "phase": "doctrine",
+      "title": "Masseninhaftierungen und Ausbau der IJOP-Plattform",
+      "description": "Ab 2017 werden Hunderttausende Uiguren ohne rechtliches Verfahren in sogenannte 'Berufsbildungszentren' (Internierungslager) eingewiesen. Die IJOP-App verpflichtet Behordenmitarbeiter, biometrische Daten, Verhaltensauffalligkeiten und Verwandtschaftsbeziehungen einzupflegen. Algorithmen kennzeichnen Personen als 'vertrauensunwurdig', was automatisch zur Uberweisung in Lager fuhren kann.",
+      "sources": ["https://www.hrw.org/report/2019/05/01/chinas-algorithms-repression/reverse-engineering-xinjiang-police-mass-surveillance"]
+    },
+    {
+      "date": "2019-11",
+      "phase": "event",
+      "title": "China Cables: Interne Lagerdokumente geleakt",
+      "description": "Das International Consortium of Investigative Journalists (ICIJ) veroffentlicht die 'China Cables' — geleakte interne Handbuter und Betriebsregeln fur die Internierungslager. Die Dokumente belegen systematische Freiheitsentzuge, Verhaltensscoring, Strafpunktesysteme und die Rolle des IJOP-Algorithmus bei Einweisungsentscheidungen. Gleichzeitig publiziert Human Rights Watch eine technische Analyse der IJOP-App.",
+      "sources": ["https://www.icij.org/investigations/china-cables/", "https://www.hrw.org/report/2019/05/01/chinas-algorithms-repression/reverse-engineering-xinjiang-police-mass-surveillance"]
+    },
+    {
+      "date": "2022-09",
+      "phase": "consequences",
+      "title": "UN-Bericht stuft Lage als mogliche Verbrechen gegen die Menschlichkeit ein",
+      "description": "Das UN-Hochkommissariat fur Menschenrechte (OHCHR) veroffentlicht seinen Bericht zu Xinjiang und stuft die dokumentierten Verletzungen als mogliche Verbrechen gegen die Menschlichkeit ein. Die USA, EU und weitere Staaten verhangen Sanktionen gegen Hikvision, Dahua und weitere chinesische Technologieunternehmen. China bestreitet alle Vorwurfe und bezeichnet die Lager als freiwillige Bildungseinrichtungen.",
+      "sources": ["https://www.ohchr.org/en/documents/country-reports/ohchr-assessment-human-rights-concerns-xinjiang-uyghur-autonomous-region"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.icij.org/investigations/china-cables/",
+      "title": "China Cables: Leaked Documents Reveal the Mechanics of China's Mass Detention System",
+      "publisher": "International Consortium of Investigative Journalists (ICIJ)",
+      "date": "2019-11-24",
+      "type": "investigative-journalism"
+    },
+    {
+      "url": "https://www.ohchr.org/en/documents/country-reports/ohchr-assessment-human-rights-concerns-xinjiang-uyghur-autonomous-region",
+      "title": "OHCHR Assessment of Human Rights Concerns in the Xinjiang Uyghur Autonomous Region",
+      "publisher": "UN Office of the High Commissioner for Human Rights",
+      "date": "2022-08-31",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/report/2019/05/01/chinas-algorithms-repression/reverse-engineering-xinjiang-police-mass-surveillance",
+      "title": "China's Algorithms of Repression: Reverse Engineering a Xinjiang Police Mass Surveillance App",
+      "publisher": "Human Rights Watch",
+      "date": "2019-05-01",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

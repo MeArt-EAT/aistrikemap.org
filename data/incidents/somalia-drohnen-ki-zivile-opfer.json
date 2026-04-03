@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/somalia-drohnen-ki-zivile-opfer",
+  "name": "Somalia: US-AFRICOM-Drohnenangriffe mit KI-Zielerkennung und verschwiegenen Zivilopfern",
+  "description": "Das US-Afrikakommando (AFRICOM) fuhrt seit 2007 Drohnenangriffe in Somalia durch, offiziell gegen die al-Shabaab-Miliz. Unter der Trump-Administration 2017-2021 eskalierte die Angriffszahl drastisch. Amnesty International und das Bureau of Investigative Journalism dokumentierten Dutzende Zivilopfer, die vom US-Militar systematisch verschwiegen oder als Kombattanten klassifiziert wurden. Metadatenbasierte KI-Zielerfassung fuhrt zu Fehlidentifikationen.",
+  "startDate": "2007-01",
+  "location": {
+    "@type": "Place",
+    "name": "Mogadishu, Somalia",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 2.0469,
+      "longitude": 45.3182
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SO"
+    }
+  },
+  "asm:incidentType": ["autonomous-weapons", "military-ai"],
+  "asm:affectedRights": ["Recht auf Leben", "Schutz der Zivilbevolkerung", "Humanitares Volkerrecht", "Recht auf Transparenz staatlichen Handelns"],
+  "asm:actors": [
+    {
+      "name": "US AFRICOM (Africa Command)",
+      "type": "military",
+      "asm:systems": ["MQ-9 Reaper-Drohnen", "SIGINT-Metadatenanalyse", "Automated Pattern-of-Life Analysis"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2007-06",
+      "phase": "infrastructure",
+      "title": "AFRICOM nimmt Drohnenoperationen in Somalia auf",
+      "description": "Das US-Afrikakommando startet verdeckte Drohnenangriffe in Somalia als Teil der globalen Antiterroroperationen. Zielerfassungssysteme basieren auf Signalaufklarung (SIGINT), insbesondere der Auswertung von Mobiltelefondaten. Fruhe Operationen werden kaum offentlich kommuniziert.",
+      "sources": ["https://www.thebureauinvestigates.com/projects/drone-war/somalia"]
+    },
+    {
+      "date": "2017-03",
+      "phase": "doctrine",
+      "title": "Trump-Administration lockert Regeln fur Zivilschutz",
+      "description": "Die Trump-Administration erklart bestimmte Regionen Somalias zu 'Areas of Active Hostilities' und hebt damit strengere Zivilschutzauflagen auf. Angriffszahlen steigen von etwa 14 im Jahr 2016 auf uber 100 pro Jahr. Die algorithmische Klassifikation von Verdachtigen als Kombattanten ohne individuelle Prufung wird ausgeweitet.",
+      "sources": ["https://airwars.org/conflict-data/us-in-somalia/"]
+    },
+    {
+      "date": "2019-03",
+      "phase": "event",
+      "title": "Amnesty International dokumentiert rechtswidrige Angriffe",
+      "description": "Amnesty International veroffentlicht 'The Hidden US War in Somalia' — eine Untersuchung von funf Angriffen zwischen 2017 und 2019, bei denen mindestens 14 Zivilisten getotet wurden. AFRICOM klassifizierte alle Opfer nachtraglichals Kombattanten. Zeugen- und forensische Beweise widersprechen den offiziellen Darstellungen deutlich.",
+      "sources": ["https://www.amnesty.org/en/documents/afr52/9952/2019/en/"]
+    },
+    {
+      "date": "2022-06",
+      "phase": "consequences",
+      "title": "Biden setzt Drohnenangriffe fort — keine Aufarbeitung",
+      "description": "Trotz kurzer Pause setzt die Biden-Administration die Angriffe fort. Ein AFRICOM-internes Review raeumt erstmals einen zivilen Todesfall offiziell ein. Das Bureau of Investigative Journalism stellt nach 10 Jahren Dokumentation seine Somalia-Berichterstattung ein und verzeichnet mindestens 86 bestatigte Zivilopfer — Experten gehen von deutlich hoheren Zahlen aus.",
+      "sources": ["https://www.thebureauinvestigates.com/stories/2022/02/01/bureau-drone-war-project-ends"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.amnesty.org/en/documents/afr52/9952/2019/en/",
+      "title": "The Hidden US War in Somalia",
+      "publisher": "Amnesty International",
+      "date": "2019-03",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://airwars.org/conflict-data/us-in-somalia/",
+      "title": "US operations in Somalia",
+      "publisher": "Airwars",
+      "date": "2023",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.thebureauinvestigates.com/projects/drone-war/somalia",
+      "title": "Covert Drone War: Somalia",
+      "publisher": "Bureau of Investigative Journalism",
+      "date": "2022",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.thebureauinvestigates.com/stories/2022/02/01/bureau-drone-war-project-ends",
+      "title": "Bureau Drone War project ends",
+      "publisher": "Bureau of Investigative Journalism",
+      "date": "2022-02-01",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

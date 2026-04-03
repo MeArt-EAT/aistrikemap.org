@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/thailand-lese-majeste-ki",
+  "name": "Thailand: KI-Uberwachung zur Durchsetzung der Majestatsbeleidigung",
+  "description": "Thailand setzt KI-gestutztes Social-Media-Monitoring und digitale Uberwachungstools ein, um das weltweit strengste Gesetz gegen Majestatsbeleidigung (Section 112 des Strafgesetzbuches) durchzusetzen. Seit dem Militarputsch 2014 und besonders nach den Pro-Demokratie-Protesten 2020 werden Strafverfolgungen massiv ausgeweitet. Betroffene erhalten bei Verurteilung Gefangnisstrafen von bis zu 15 Jahren pro Anklagepunkt. Digitale Uberwachung, verdeckte Online-Ermittlungen und KI-gestutztes Content-Monitoring dienen der Identifikation kritischer Stimmen.",
+  "startDate": "2014",
+  "location": {
+    "@type": "Place",
+    "name": "Bangkok, Thailand",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 13.7563,
+      "longitude": 100.5018
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "TH"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance", "political-pressure"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Recht auf freie Meinungsausserung", "Recht auf Privatsphare", "Recht auf faires Verfahren", "Versammlungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Thailandische Regierung",
+      "type": "government",
+      "asm:systems": ["Section-112-Strafverfolgung", "Soziale-Medien-Monitoring-System"]
+    },
+    {
+      "name": "Koniglich Thailandische Polizei",
+      "type": "government",
+      "asm:systems": ["Cyber Crime Investigation Bureau", "Online-Uberwachungssystem"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014-05",
+      "phase": "infrastructure",
+      "title": "Militarputsch und digitale Uberwachungsinfrastruktur",
+      "description": "Nach dem Militarputsch unter General Prayuth Chan-ocha wird das Cyber Crime Investigation Bureau zur zentralen Einheit fur digitale Strafverfolgung ausgebaut. Behorden erhalten weitgehende Befugnisse zur Anforderung von Nutzerdaten bei Plattformen wie Facebook und LINE. Schulungsprogramme fur verdeckte Online-Ermittlung werden institutionalisiert. Bevolkerung wird aufgefordert, Majestatsbeleidigungen online zu melden.",
+      "sources": ["https://www.hrw.org/news/2014/06/06/thailand-lifted-martial-law-repression-continues"]
+    },
+    {
+      "date": "2020-10",
+      "phase": "doctrine",
+      "title": "Pro-Demokratie-Proteste und massive Strafverfolgungsausweitung",
+      "description": "Jugendproteste fordern erstmals offentlich Reformen der Monarchie. Die Regierung reagiert mit beispielloser Strafverfolgung: Bis Ende 2021 werden uber 200 Aktivisten nach Section 112 angeklagt. iLaw Thailand dokumentiert systematisches Social-Media-Monitoring durch Behorden, die nach Inhalten suchen, die die Monarchie kritisieren. Screenshots privater Gesprache werden als Beweismittel vor Gericht eingesetzt.",
+      "sources": ["https://ilaw.or.th/node/5878"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "KI-gestutztes Social-Media-Monitoring identifiziert Aktivisten",
+      "description": "Das Cyber Crime Investigation Bureau bestatigt den Einsatz automatisierter Monitoring-Tools zur Uberwachung sozialer Medien auf majestatsbeleidigenden Inhalt. Berichte von iLaw und Human Rights Watch belegen, dass Benutzer aufgrund von Likes, Shares und Kommentaren verfolgt werden. Selbst ins Ausland geflohene Aktivisten werden durch digitale Uberwachung ihrer Online-Konten weiter verfolgt.",
+      "sources": ["https://www.hrw.org/news/2021/08/27/thailand-wave-lese-majeste-charges"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Rekordanklagen und Selbstzensur",
+      "description": "2023 verzeichnet Thailand die hochste Anzahl an Section-112-Anklagen seit Einfuhrung des Gesetzes. Journalisten, Akademiker und Aktivisten berichten von weit verbreiteter Selbstzensur. Soziale Medien werden vorsichtshalber gesaubert. Internationale Menschenrechtsorganisationen kritisieren Thailand scharf; die Regierung verteidigt das Gesetz als notwendig zum Schutz nationaler Institutionen. Eine Reformdiskussion wird im Parlament effektiv verhindert.",
+      "sources": ["https://www.amnesty.org/en/latest/news/2021/11/thailand-lese-majeste-charges/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://ilaw.or.th/node/5878",
+      "title": "iLaw: Statistik der Lese-Majeste-Verfahren in Thailand",
+      "publisher": "iLaw Thailand",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2021/08/27/thailand-wave-lese-majeste-charges",
+      "title": "Thailand: Wave of Lèse-Majesté Charges",
+      "publisher": "Human Rights Watch",
+      "date": "2021-08-27",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2014/06/06/thailand-lifted-martial-law-repression-continues",
+      "title": "Thailand: Lifted Martial Law, Repression Continues",
+      "publisher": "Human Rights Watch",
+      "date": "2014-06-06",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2021/11/thailand-lese-majeste-charges/",
+      "title": "Thailand: Authorities must drop lèse-majesté charges",
+      "publisher": "Amnesty International",
+      "date": "2021-11",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

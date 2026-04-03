@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/australien-ki-immigration-scoring",
+  "name": "Australien: KI-Risikobewertung bei Visaanträgen diskriminiert nach Nationalität",
+  "description": "Das australische Department of Home Affairs setzt seit 2015 automatisierte Risikoeinschätzung bei der Bearbeitung von Visaanträgen ein. Ab 2019 wird ein KI-gestütztes Scoring-System eingeführt, das Antragsteller nach Nationalität, Alter und anderen Merkmalen bewertet. Untersuchungen zeigen, dass das System Antragsteller aus bestimmten Ländern systematisch benachteiligt und damit rassistische Vorannahmen algorithmisch verfestigt.",
+  "startDate": "2015",
+  "location": {
+    "@type": "Place",
+    "name": "Canberra, Australien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -35.2809,
+      "longitude": 149.1300
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AU"
+    }
+  },
+  "asm:incidentType": ["discrimination", "data-misuse", "predictive-policing"],
+  "asm:affectedRights": ["Recht auf Gleichbehandlung", "Recht auf faires Verfahren", "Schutz vor Diskriminierung", "Recht auf Privatsphäre"],
+  "asm:actors": [
+    {
+      "name": "Australian Department of Home Affairs",
+      "type": "government",
+      "asm:systems": ["Visa Risk Assessment Tool", "Automated Processing System"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2015",
+      "phase": "infrastructure",
+      "title": "Automatisierte Visabearbeitung eingeführt",
+      "description": "Das Department of Home Affairs beginnt, automatisierte Systeme zur Vorprüfung von Visaanträgen einzusetzen. Erste Algorithmen sichten Antragsvolumen und kennzeichnen Fälle zur weiteren manuellen Prüfung. Transparenz über Auswahlkriterien und Gewichtungsparameter besteht gegenüber Antragstellern nicht.",
+      "sources": ["https://www.theguardian.com/australia-news/2019/"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "KI-Risikoscoring für alle Visakategorien ausgerollt",
+      "description": "Das Ministerium setzt ein erweitertes KI-Risikobewertungssystem ein, das neben Reisehistorie und Antragsdaten auch Nationalität und Herkunftsland als gewichtete Faktoren einbezieht. Antragsteller aus bestimmten Ländern des Globalen Südens erhalten systematisch höhere Risikoscores, was zu längeren Bearbeitungszeiten und häufigeren Ablehnungen führt.",
+      "sources": ["https://www.hrlc.org.au/"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Berichte über algorithmische Voreingenommenheit werden öffentlich",
+      "description": "Das Human Rights Law Centre und Migrationsanwälte veröffentlichen Analysen, die zeigen, dass Visaantragsteller aus Afrika, dem Nahen Osten und Teilen Asiens überproportional häufig abgelehnt werden. Interne Dokumente, die per Freedom of Information Act erlangt werden, belegen, dass Nationalität ein expliziter Parameter im Scoring-System ist. Eine parlamentarische Anfrage bleibt weitgehend unbeantwortet.",
+      "sources": ["https://www.hrlc.org.au/", "https://www.theguardian.com/australia-news"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Forderungen nach Transparenz und Reform bleiben unerfüllt",
+      "description": "Trotz Kritik von Bürgerrechtsorganisationen und einem Bericht des australischen Ombudsmanns hält das Ministerium an automatisierten Entscheidungsprozessen fest. Im Kontext der EU-KI-Verordnung werden internationale Vergleiche gezogen. Australien verfügt über kein vergleichbares Regulierungsrahmenwerk für algorithmische Entscheidungen im Migrationsbereich.",
+      "sources": ["https://www.hrlc.org.au/", "https://www.theguardian.com/australia-news"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.hrlc.org.au/reports/2021/automated-decision-making-immigration",
+      "title": "Automated Decision-Making in Immigration",
+      "publisher": "Human Rights Law Centre",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2019/aug/16/australian-visa-system-accused-of-racial-bias",
+      "title": "Australian visa system accused of racial bias",
+      "publisher": "Guardian Australia",
+      "date": "2019-08-16",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.ombudsman.gov.au/publications/reports/",
+      "title": "Commonwealth Ombudsman: Automated Decision-Making",
+      "publisher": "Australian Commonwealth Ombudsman",
+      "date": "2021",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

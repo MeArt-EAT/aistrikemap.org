@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uk-ki-wohlfahrt-universal-credit",
+  "name": "UK: Universal Credit — automatisierte Sanktionen treffen Sozialleistungsempfanger",
+  "description": "Das britische Universal-Credit-System des Department for Work and Pensions (DWP) setzt seit 2013 algorithmische Entscheidungssysteme ein, um Anspruche auf Sozialleistungen zu prufen und Sanktionen zu verhangen. Tausende Antragsteller wurden durch fehlerhafte automatisierte Bescheide unrechtmassig bestraft: Zahlungen wurden gestrichen, obwohl keine Regelverstobe vorlagen. Der National Audit Office (NAO) kritisierte 2019 massive Fehlerquoten; Betroffene klagten ab 2023 vor dem High Court.",
+  "startDate": "2013-04",
+  "location": {
+    "@type": "Place",
+    "name": "London, Vereinigtes Konigreich",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    }
+  },
+  "asm:incidentType": ["discrimination", "data-misuse"],
+  "asm:affectedRights": ["Recht auf soziale Sicherheit", "Recht auf ein faires Verfahren", "Recht auf Existenzminimum", "Recht auf Privatsphare"],
+  "asm:actors": [
+    {
+      "name": "UK Department for Work and Pensions (DWP)",
+      "type": "government",
+      "asm:systems": ["Universal Credit Algorithmus", "Automated Decision Making (ADM)"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2013-04",
+      "phase": "infrastructure",
+      "title": "Einfuhrung von Universal Credit",
+      "description": "Das DWP beginnt mit dem schrittweisen Rollout von Universal Credit, das sechs bestehende Sozialleistungen in einem automatisierten System zusammenfuhrt. Algorithmische Prufmechanismen sollen Betrug erkennen und Anspruche ohne menschliche Prufung berechnen. Kritiker warnen fruhzeitig vor mangelnder Transparenz.",
+      "sources": ["https://www.nao.org.uk/report/universal-credit/"]
+    },
+    {
+      "date": "2018-01",
+      "phase": "doctrine",
+      "title": "Algorithmische Sanktionen skalieren landesweit",
+      "description": "Der landesweite Rollout verscharft die Probleme: Automatisierte Bescheide verhangen Sanktionen fur angebliche Regelverstosse, ohne dass Betroffene vorab benachrichtigt oder angehart werden. Alleinerziehende, Menschen mit Behinderungen und Obdachlose sind uberproportional betroffen. Lebensmittelbanken berichten von massivem Anstieg der Nachfrage.",
+      "sources": ["https://cpag.org.uk/news-blogs/news-listings/universal-credit-sanctions"]
+    },
+    {
+      "date": "2019-06",
+      "phase": "event",
+      "title": "NAO-Bericht dokumentiert systemische Fehler",
+      "description": "Der National Audit Office veroffentlicht einen vernichtenden Bericht: Das System versagt bei vulnerablen Gruppen, Fehlerraten bei automatisierten Bescheiden sind nicht ausreichend dokumentiert, und Betroffene haben kaum Moglichkeiten, gegen algorithmische Entscheidungen Widerspruch einzulegen. Mindestens 2,5 Millionen Haushalte sind zum Zeitpunkt des Berichts betroffen.",
+      "sources": ["https://www.nao.org.uk/report/rolling-out-universal-credit/"]
+    },
+    {
+      "date": "2023-03",
+      "phase": "consequences",
+      "title": "High-Court-Klagen und politischer Druck",
+      "description": "Die Child Poverty Action Group und einzelne Klager fechten vor dem High Court an, dass automatisierte Entscheidungen ohne echte menschliche Prufung Menschenrechte verletzen. Das DWP wird verpflichtet, bestimmte Entscheidungsprozesse offenzulegen. Parlamentarische Anfragen fordern ein Moratorium fur algorithmische Sanktionen.",
+      "sources": ["https://cpag.org.uk/news-blogs/news-listings/high-court-legal-challenge-universal-credit"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nao.org.uk/report/rolling-out-universal-credit/",
+      "title": "Rolling out Universal Credit",
+      "publisher": "National Audit Office",
+      "date": "2019-06-15",
+      "type": "government-document"
+    },
+    {
+      "url": "https://cpag.org.uk/news-blogs/news-listings/universal-credit-sanctions",
+      "title": "Universal Credit sanctions: what you need to know",
+      "publisher": "Child Poverty Action Group",
+      "date": "2020-01",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://cpag.org.uk/news-blogs/news-listings/high-court-legal-challenge-universal-credit",
+      "title": "High Court legal challenge to Universal Credit automated decisions",
+      "publisher": "Child Poverty Action Group",
+      "date": "2023-03",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.nao.org.uk/report/universal-credit/",
+      "title": "Universal Credit: early progress",
+      "publisher": "National Audit Office",
+      "date": "2013-09",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/bosnien-migration-ki-grenze",
+  "name": "Bosnien: EU-finanzierte Grenzüberwachungstechnologie auf der Balkanroute",
+  "description": "Bosnien-Herzegowina wurde zur zentralen Durchgangsstation der Balkanroute für Migranten und Schutzsuchende aus dem Nahen Osten, Afghanistan und Afrika. Mit EU-Mitteln werden Überwachungstechnologien, Kamerasysteme und Drohnen eingeführt, um die bosnisch-kroatische Grenze zu sichern. Das Border Violence Monitoring Network und No Name Kitchen dokumentierten systematische Pushbacks, Misshandlungen und den Einsatz von Überwachungstechnik zur Koordination von Abfangoperationen.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Bihac, Bosnien-Herzegowina",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.8169,
+      "longitude": 15.8708
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BA"
+    }
+  },
+  "asm:incidentType": ["surveillance", "discrimination"],
+  "asm:affectedRights": ["Recht auf Asyl", "Recht auf Leben", "Schutz vor Folter", "Bewegungsfreiheit", "Recht auf Privatsphäre"],
+  "asm:actors": [
+    {
+      "name": "Bosnische Grenzpolizei",
+      "type": "government",
+      "asm:systems": ["Grenzüberwachungskameras", "Drohnenpatrouille"]
+    },
+    {
+      "name": "EU / Frontex",
+      "type": "government",
+      "asm:systems": ["Eurosur", "Frontex-Ausrüstungshilfe"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Balkanroute verlagert sich nach Bosnien",
+      "description": "Nach der Schliessung der westlichen Balkanroute 2016 verlagert sich die Migrationsroute verstärkt über Bosnien-Herzegowina. Die EU stellt Mittel für die bosnische Grenzpolizei und Innenministerium bereit. Erste Kamerasysteme und biometrische Registrierungsgeräte werden mit EU-Förderung beschafft. Das Lager Vucjak bei Bihac entsteht unter katastrophalen Bedingungen.",
+      "sources": ["https://borderviolence.eu/"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Überwachungstechnologie koordiniert Pushbacks an der kroatischen Grenze",
+      "description": "Das Border Violence Monitoring Network beginnt mit der systematischen Dokumentation von Pushbacks. Berichte zeigen, dass Drohnen und Kamerasysteme zur Ortung von Migrantengruppen genutzt werden, die dann von kroatischen oder bosnischen Beamten abgefangen werden. Migranten berichten von gewaltsamen Pushbacks, bei denen Handys zerstört und Schuhe konfisziert werden, nachdem ihre Position elektronisch erfasst wurde.",
+      "sources": ["https://borderviolence.eu/", "https://nonnamekitchen.org/"]
+    },
+    {
+      "date": "2020",
+      "phase": "event",
+      "title": "Winterlager-Krise und dokumentierte Gewalt",
+      "description": "Im Winter 2020 verbrennt das Lager Lipa bei Bihac. Tausende Migranten überleben wochenlang in Kälte ohne Unterkunft. No Name Kitchen und andere NGOs dokumentieren, dass die Behörden Überwachungstechnologie einsetzen, um Migranten aus Siedlungsgebieten fernzuhalten, während gleichzeitig legale Unterkünfte nicht bereitgestellt werden. Europarats-Berichte kritisieren systematische Menschenrechtsverletzungen.",
+      "sources": ["https://borderviolence.eu/", "https://nonnamekitchen.org/"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Anhaltende Pushbacks trotz EU-Kritik",
+      "description": "Trotz Berichten des Europäischen Parlaments und des Europarats werden Pushbacks mit physischer Gewalt fortgesetzt. Die EU-Grenzfinanzierung fliesst weiter. Eine Untersuchung des EU-Rechnungshofs stellt fest, dass EU-Mittel für Grenzschutz in mehreren Ländern ohne ausreichende Menschenrechtsauflagen vergeben wurden. Bosnien bleibt einer der problematischsten Abschnitte der europäischen Aussengrenze.",
+      "sources": ["https://borderviolence.eu/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://borderviolence.eu/",
+      "title": "Border Violence Monitoring Network Reports",
+      "publisher": "Border Violence Monitoring Network",
+      "date": "2022",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://nonnamekitchen.org/",
+      "title": "No Name Kitchen: Pushback Reports Bosnia",
+      "publisher": "No Name Kitchen",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.amnesty.org/en/location/europe-and-central-asia/western-central-and-south-eastern-europe/bosnia-and-herzegovina/",
+      "title": "Bosnia and Herzegovina: Pushbacks and violence at borders",
+      "publisher": "Amnesty International",
+      "date": "2021",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/russland-gesichtserkennung-moskau",
+  "name": "Russland: Gesichtserkennung in Moskau zur Identifizierung von Demonstranten",
+  "description": "Moskau betreibt eines der dichtesten stadtischen Gesichtserkennungsnetzwerke der Welt mit uber 100.000 Kameras. Das System des Unternehmens NtechLab wird seit 2017 zur Strafverfolgung eingesetzt und gezielt gegen politische Demonstranten genutzt. Wahrend der Proteste fur Alexei Nawalny 2021 und nach dem russischen Angriff auf die Ukraine 2022 wurden zahlreiche Personen anhand von Kameraaufnahmen identifiziert und verhaftet. Burgerrechtsorganisationen dokumentieren den systematischen Missbrauch des Systems zur politischen Repression.",
+  "startDate": "2017",
+  "location": {
+    "@type": "Place",
+    "name": "Moskau, Russland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 55.7558,
+      "longitude": 37.6173
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RU"
+    }
+  },
+  "asm:incidentType": ["facial-recognition", "surveillance", "political-pressure"],
+  "asm:affectedRights": ["Versammlungsfreiheit", "Meinungsfreiheit", "Recht auf Privatsphare", "Schutz vor willkurlicher Verhaftung"],
+  "asm:actors": [
+    {
+      "name": "Stadtregierung Moskau / Russische Foderationsregierung",
+      "type": "government",
+      "asm:systems": ["Moskauer Videouberwachungssystem", "UIS (Unified Information System)"]
+    },
+    {
+      "name": "NtechLab",
+      "type": "company",
+      "asm:systems": ["FindFace", "Gesichtserkennungsalgorithmus fur Moskauer Netz"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Einfuhrung des stadtweiten Gesichtserkennungssystems",
+      "description": "Moskau schreibt einen Vertrag mit NtechLab aus und integriert Gesichtserkennungssoftware in das bestehende Kameranetzwerk der Stadt. NtechLab wurde 2015 durch den Dienst 'FindFace' bekannt, der Gesichter in sozialen Netzwerken identifizieren konnte. Das System wird zunachst offiziell zur Verbrechensbekampfung begrundet. Menschenrechtler warnen sofort vor dem Missbrauchspotenzial.",
+      "sources": ["https://www.hrw.org/news/2020/07/16/russia-new-surveillance-law-threatens-privacy"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Ausbau wahrend der COVID-Pandemie und neue Rechtsgrundlagen",
+      "description": "Unter dem Deckmantel der COVID-19-Qurantanekontrolle wird das System massiv ausgebaut. Neue Gesetze ermoglichen die erweiterte behordliche Nutzung biometrischer Daten. Das Netz umfasst nun uber 100.000 Kameras in ganz Moskau, einschliesslich U-Bahn-Stationen und offentlichen Platzen. Datenschutzbehorden kritisieren fehlende Rechtsgrundlagen fur den Einsatz.",
+      "sources": ["https://ovd.info/en/articles/2021/02/05/facial-recognition-arrests"]
+    },
+    {
+      "date": "2021-01",
+      "phase": "event",
+      "title": "Massenverhaftungen bei Nawalny-Protesten per Gesichtserkennung",
+      "description": "Nach der Verhaftung Alexei Nawalnys im Januar 2021 kommt es zu landesweiten Demonstrationen. In Moskau werden zahlreiche Protestteilnehmende Tage nach den Demonstrationen zu Hause verhaftet — identifiziert ausschliesslich anhand von Kameraaufnahmen und Gesichtserkennungsdaten. OVD-Info dokumentiert Dutzende solcher Falle. Nach dem russischen Einmarsch in die Ukraine 2022 setzt sich das Muster bei Anti-Kriegs-Protesten fort.",
+      "sources": ["https://ovd.info/en/articles/2021/02/05/facial-recognition-arrests", "https://www.hrw.org/news/2022/03/07/russia-arrests-thousands-protesting-ukraine-invasion"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Internationale Verurteilung und zunehmende Selbstzensur",
+      "description": "Human Rights Watch und OVD-Info dokumentieren den systematischen Einsatz von Gesichtserkennung zur Unterdruckung politischer Opposition. Demonstrierende in Russland beginnen, ihr Gesicht aktiv zu verbergen oder meiden Protestveranstaltungen aus Angst vor spaterem Erkennen. Europaische Behorden diskutieren Exportverbote fur Gesichtserkennungstechnologie nach Russland. Das Netz bleibt vollstandig in Betrieb.",
+      "sources": ["https://www.hrw.org/news/2022/03/07/russia-arrests-thousands-protesting-ukraine-invasion"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://ovd.info/en/articles/2021/02/05/facial-recognition-arrests",
+      "title": "Facial Recognition Used to Arrest Navalny Protesters in Moscow",
+      "publisher": "OVD-Info",
+      "date": "2021-02-05",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2022/03/07/russia-arrests-thousands-protesting-ukraine-invasion",
+      "title": "Russia: Thousands Arrested Protesting Ukraine Invasion",
+      "publisher": "Human Rights Watch",
+      "date": "2022-03-07",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2020/07/16/russia-new-surveillance-law-threatens-privacy",
+      "title": "Russia: New Surveillance Law Threatens Privacy",
+      "publisher": "Human Rights Watch",
+      "date": "2020-07-16",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

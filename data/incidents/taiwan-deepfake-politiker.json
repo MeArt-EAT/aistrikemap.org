@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/taiwan-deepfake-politiker",
+  "name": "Taiwan: KI-generierte Deepfakes gegen Politiker im Wahlkampf",
+  "description": "Im Vorfeld der taiwanischen Prasidentschafts- und Parlamentswahlen im Januar 2024 verbreiteten sich massenhaft KI-generierte Deepfake-Videos, die Politiker in kompromittierenden oder falschen Situationen zeigen. Taiwanese Faktenpruf-Organisationen und Forscher dokumentierten koordinierte Falschinformationskampagnen, die mutmasslich von auslandischen staatlichen Akteuren koordiniert wurden. Die Kampagnen zielten auf eine Destabilisierung des demokratischen Diskurses und eine Beeinflussung des Wahlausgangs.",
+  "startDate": "2022",
+  "location": {
+    "@type": "Place",
+    "name": "Taipei, Taiwan",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.0330,
+      "longitude": 121.5654
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "TW"
+    }
+  },
+  "asm:incidentType": ["deepfakes", "political-pressure"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Recht auf freie Wahlen", "Recht auf korrekte Information", "Schutz der Personlichkeitsrechte"],
+  "asm:actors": [
+    {
+      "name": "Auslandische staatliche Akteure (mutmasslich)",
+      "type": "government"
+    },
+    {
+      "name": "Social-Media-Plattformen",
+      "type": "company"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Erste KI-generierte Desinformationsinhalte tauchen auf",
+      "description": "Taiwanese Faktenprufer des Taiwan FactCheck Center und Forscher der Internet Observatory Research Group (IORG) dokumentieren erste koordinierte Netzwerke, die KI-unterstuzte Desinformation verbreiten. Es handelt sich zunachst um manipulierte Audioclips und gefakelte Zitate von Politikern. Die technische Qualitat der Falschungen verbessert sich im Verlauf des Jahres deutlich durch den breiten Zugang zu kommerziellen Deepfake-Tools.",
+      "sources": ["https://iorg.tw/"]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Eskalation: Vollstandige Video-Deepfakes im Umlauf",
+      "description": "Mit nahenden Wahlen nehmen Deepfake-Videos mit realistischen Gesichts- und Stimmsyntheseversionen von bekannten Politikern zu. Verbreitete Beispiele umfassen gefakelelte Wahlkampfauftritte, angebliche Bekennervideos und Szenen mit sexuellem oder kompromittierendem Inhalt. Das IORG und das Taiwan FactCheck Center veroffentlichen monatliche Berichte, die die Ursprunge der Kampagnen auf koordinierte Netzwerke mit Verbindungen zur Volksrepublik China zuruckfuhren.",
+      "sources": ["https://iorg.tw/", "https://www.twfc.org.tw/"]
+    },
+    {
+      "date": "2024-01",
+      "phase": "event",
+      "title": "Wahlen unter dem Schatten koordinierter Desinformation",
+      "description": "Im Monat der Prasidentschaftswahl verzeichnen Faktenpruf-Organisationen einen Hochststand an Deepfake-Inhalten. Taiwans Premierminister und Prasidentschaftskandidat Lai Ching-te ist besonders betroffen. Plattformen wie Facebook, YouTube und LINE reagieren zunachst langsam auf Meldungen. Die Wahlkommission warnt die Offentlichkeit. Lai gewinnt die Wahl — der tatsachliche Einfluss der Desinformationskampagnen bleibt umstritten.",
+      "sources": ["https://iorg.tw/", "https://www.twfc.org.tw/"]
+    },
+    {
+      "date": "2024-03",
+      "phase": "consequences",
+      "title": "Regulierungsdebatte und internationale Aufmerksamkeit",
+      "description": "Taiwan verscharft nach den Wahlen seinen rechtlichen Rahmen fur Wahlbeeinflussung durch Deepfakes. Internationale Medien nutzen Taiwan als Fallstudie fur die weltweite Bedrohung demokratischer Wahlen durch KI-generierte Desinformation. Plattformen verstarken ihre Kooperation mit lokalen Faktenprufinstitutionen. Eine eindeutige Zurechnung der Kampagnen zu staatlichen Akteuren bleibt aufgrund technischer Verschleierungsmasnahmen schwierig.",
+      "sources": ["https://iorg.tw/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://iorg.tw/",
+      "title": "IORG — Internet Observatory Research Group Taiwan",
+      "publisher": "Internet Observatory Research Group (IORG)",
+      "date": "2024",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.twfc.org.tw/",
+      "title": "Taiwan FactCheck Center — Falschungsdokumentation Taiwan-Wahlen 2024",
+      "publisher": "Taiwan FactCheck Center",
+      "date": "2024-01",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

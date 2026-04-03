@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/pakistan-safe-city-lahore",
+  "name": "Pakistan: Safe City-Projekt Lahore und Islamabad — chinesische Überwachungstechnologie zur Massenkontrolle",
+  "description": "Pakistan hat in Lahore und Islamabad mit chinesischer Technologie umfassende Safe City-Systeme errichtet, die Tausende Überwachungskameras mit Gesichtserkennung, automatischer Kennzeichenerkennung und zentralisierter Datenhaltung verbinden. Das System der Punjab Safe Cities Authority (PSCA) in Lahore gilt als eines der grössten in Südasien. Bürgerrechtsorganisationen und investigative Medien dokumentieren Bedenken hinsichtlich politischer Überwachung, fehlender Datenschutzgesetze und des Einsatzes gegen Protestierende.",
+  "startDate": "2016",
+  "location": {
+    "@type": "Place",
+    "name": "Lahore, Pakistan",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.5204,
+      "longitude": 74.3587
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PK"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Versammlungsfreiheit", "Meinungsfreiheit", "Schutz vor willkürlicher Überwachung", "Datenschutz"],
+  "asm:actors": [
+    {
+      "name": "Pakistanische Regierung / Punjab Safe Cities Authority (PSCA)",
+      "type": "government",
+      "asm:systems": ["Safe City Lahore", "Safe City Islamabad", "Integrated Command and Control Centre"]
+    },
+    {
+      "name": "Huawei Technologies",
+      "type": "company",
+      "asm:systems": ["Huawei Safe City Platform", "Kamerainfrastruktur"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Einweihung des Safe City-Systems in Islamabad",
+      "description": "Pakistan eröffnet das erste Safe City-System in Islamabad mit chinesischer Technologie. Das System umfasst über 1.900 Überwachungskameras, die an ein zentrales Kontrollzentrum angebunden sind. Die Infrastruktur wird im Rahmen des China-Pakistan Economic Corridor (CPEC) finanziert und ist Teil einer umfassenderen digitalen Zusammenarbeit zwischen beiden Staaten.",
+      "sources": ["https://www.dawn.com/news/1290826"]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Ausbau des Lahore-Systems durch Punjab Safe Cities Authority",
+      "description": "Die Punjab Safe Cities Authority erweitert das Lahore-System auf über 8.000 Kameras in der Stadt. Die PSCA erhält weitreichende Befugnisse zur Datenspeicherung und -auswertung ohne ausreichende parlamentarische Aufsicht. Privacy International dokumentiert, dass Pakistan kein umfassendes Datenschutzgesetz besitzt, das den Einsatz des Systems reguliert.",
+      "sources": ["https://privacyinternational.org/report/2734/surveillance-and-censorship-pakistan"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Politische Überwachungsbedenken und Missbrauchsvorwürfe",
+      "description": "Investigativjournalisten der Zeitung Dawn und internationale Beobachter berichten, dass das Safe City-System bei Protesten gegen die Regierung eingesetzt wird, um Demonstranten zu identifizieren und zu verfolgen. Die Gesichtserkennungsdatenbank wird ohne rechtliche Grundlage mit biometrischen Daten aus Nationaler Identitätsdatenbank verknüpft. Aktivisten berichten von Einschüchterungsversuchen nach Teilnahme an Protestveranstaltungen.",
+      "sources": ["https://www.dawn.com/news/1653714"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Forderungen nach Datenschutzgesetz und parlamentarische Kritik",
+      "description": "Pakistanische Bürgerrechtsorganisationen und internationale NGOs fordern ein umfassendes Datenschutzgesetz. Das Parlament berät über einen Personal Data Protection Bill, der jedoch in wesentlichen Punkten hinter internationalen Standards zurückbleibt. Das Safe City-System expandiert weiter auf weitere Städte, darunter Karachi und Peshawar.",
+      "sources": ["https://privacyinternational.org/long-read/4598/safe-cities-unsafe-citizens-pakistan"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.dawn.com/news/1290826",
+      "title": "Safe City Project launched in Islamabad",
+      "publisher": "Dawn News",
+      "date": "2016-11-21",
+      "type": "news-article"
+    },
+    {
+      "url": "https://privacyinternational.org/report/2734/surveillance-and-censorship-pakistan",
+      "title": "Surveillance and Censorship: Pakistan's Escalating Security Apparatus",
+      "publisher": "Privacy International",
+      "date": "2019-07-01",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.dawn.com/news/1653714",
+      "title": "PSCA surveillance network and civil liberties concerns",
+      "publisher": "Dawn News",
+      "date": "2021-08-15",
+      "type": "news-article"
+    },
+    {
+      "url": "https://privacyinternational.org/long-read/4598/safe-cities-unsafe-citizens-pakistan",
+      "title": "Safe Cities, Unsafe Citizens: Pakistan's Surveillance State",
+      "publisher": "Privacy International",
+      "date": "2021-10-01",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

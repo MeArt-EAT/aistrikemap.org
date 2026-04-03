@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-palantir-gotham-militaer",
+  "name": "USA: Palantir Gotham — KI-gestutztes Targeting und Geheimdienstfusion im Militar",
+  "description": "Palantir Technologies entwickelt mit der Gotham-Plattform ein KI-gestutztes System zur Integration von Geheimdienstdaten, das vom US-Militar fur Zielerkennung, Truppenbewegungsplanung und Verhaltensvorhersage eingesetzt wird. Die Plattform verbindet Daten aus Drohnenuberwachung, abgehorten Kommunikationen, sozialen Netzwerken und Geolokationsdaten zu automatisierten Ziellisten. Kritiker, darunter die ACLU, warnen vor mangelnder Rechenschaftspflicht, algorithmischen Fehlern bei Zielidentifikation und dem Einsatz in Kontexten mit hoher Zivilopfergefahr.",
+  "startDate": "2008",
+  "location": {
+    "@type": "Place",
+    "name": "Denver, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.7392,
+      "longitude": -104.9903
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["military-ai", "surveillance"],
+  "asm:affectedRights": ["Recht auf Leben", "Recht auf faires Verfahren", "Schutz vor willkurlicher Gewalt", "Recht auf Privatsphare"],
+  "asm:actors": [
+    {
+      "name": "Palantir Technologies",
+      "type": "company",
+      "asm:systems": ["Palantir Gotham", "TITAN Ground Station", "Maven Smart System"]
+    },
+    {
+      "name": "US-Verteidigungsministerium",
+      "type": "military",
+      "asm:systems": ["Project Maven", "JIGSAW", "AUSA-Targetingsystem"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2008",
+      "phase": "infrastructure",
+      "title": "Erste Militarvertrage und Afghanistan-Einsatz",
+      "description": "Palantir schliess erste Vertrage mit dem US-Militar und der CIA. Die Gotham-Plattform wird in Afghanistan zur Analyse von Sprengfallen-Mustern und Aufstandsnetzwerken eingesetzt. Das System integriert heterogene Datensatze aus Geheimdienstquellen, Militarberichten und zivilem Kontext. Datenschutzbedenken werden durch die Klassifizierung als Staatsgeheimnis offentlicher Diskussion weitgehend entzogen.",
+      "sources": ["https://theintercept.com/2015/06/22/palantir-fbi-secret-surveillance/"]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Project Maven und Protest von Google-Mitarbeiter",
+      "description": "Nachdem bekannt wird, dass Google an Project Maven mitwirkt — einem Pentagon-Programm zur KI-gestutzten Drohnenbildanalyse, das stark auf Palantir-Infrastruktur aufbaut — protestieren uber 3.000 Google-Angestellte. Google zieht sich zurruck; Palantir ubernimmt grossere Anteile am Programm. Der Vorfall macht erstmals breite Offentlichkeit auf die Verzahnung ziviler KI-Unternehmen mit militarischer Targetingsoftware aufmerksam.",
+      "sources": ["https://theintercept.com/2018/04/19/googles-project-maven-military-drone-ai/"]
+    },
+    {
+      "date": "2022",
+      "phase": "event",
+      "title": "Ukraine-Einsatz und NATO-Geheimdienstintegration",
+      "description": "Palantir stellt der Ukraine nach dem russischen Einmarsch Gotham-Zugang bereit. Das System wird zur Analyse von Truppenbewegungen, Schadensbewertung und Zielplanung genutzt. Palantir-CEO Alex Karp bezeichnet das Unternehmen explizit als 'Waffenhersteller im digitalen Zeitalter'. Kritiker weisen auf fehlende unabhangige Aufsicht uber den algorithmischen Anteil an Zielentscheidungen hin.",
+      "sources": ["https://www.wired.com/story/palantir-ukraine-war/"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "NATO-Ausweitung und wachsende Zivilgesellschaftskritik",
+      "description": "Palantir gewinnt umfangreiche NATO-Vertrage zur Geheimdienstfusion. Die ACLU und mehrere europaische Datenschutzbehorden fordern Regulierung von KI-Targetingsystemen. Menschenrechtler machen darauf aufmerksam, dass algorithmische Ziellistensysteme ohne transparente Rechtsbasis operieren und die Schwelle zu todlichen Operationen senken konnen. Eine internationale Regulierung militarischer KI-Targeting-Systeme besteht nicht.",
+      "sources": ["https://www.aclu.org/report/war-comes-home"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://theintercept.com/2018/04/19/googles-project-maven-military-drone-ai/",
+      "title": "Google Is Helping the Pentagon Build AI for Drones",
+      "publisher": "The Intercept",
+      "date": "2018-04-19",
+      "type": "news-article"
+    },
+    {
+      "url": "https://theintercept.com/2015/06/22/palantir-fbi-secret-surveillance/",
+      "title": "Palantir Knows Everything About You",
+      "publisher": "The Intercept",
+      "date": "2015-06-22",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.wired.com/story/palantir-ukraine-war/",
+      "title": "Palantir's War",
+      "publisher": "Wired",
+      "date": "2022",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.aclu.org/report/war-comes-home",
+      "title": "War Comes Home: The Excessive Militarization of American Policing",
+      "publisher": "American Civil Liberties Union (ACLU)",
+      "date": "2022",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-ai-generated-csam",
+  "name": "USA: KI-generierte Darstellungen sexuellen Kindesmissbrauchs überlasten Erkennungssysteme",
+  "description": "KI-Bildgenerierungstools werden zunehmend genutzt, um Material mit sexuellem Kindesmissbrauch (CSAM) zu erzeugen. Das National Center for Missing and Exploited Children (NCMEC) meldet einen exponentiellen Anstieg solcher Meldungen ab 2022. Das Stanford Internet Observatory dokumentiert, wie gängige KI-Trainingsdatensätze bereits bekanntes CSAM enthielten. Das FBI warnt vor der Nutzung von Stable Diffusion und ähnlichen Modellen durch Täter, die KI-generiertes Material zur Vorbereitung von Grooming-Angriffen einsetzen.",
+  "startDate": "2022",
+  "location": {
+    "@type": "Place",
+    "name": "Washington D.C., USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.9072,
+      "longitude": -77.0369
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["deepfakes", "data-misuse"],
+  "asm:affectedRights": ["Schutz von Kindern", "Menschenwürde", "Recht auf körperliche Unversehrtheit"],
+  "asm:actors": [
+    {
+      "name": "KI-Entwicklungsunternehmen (Stability AI u.a.)",
+      "type": "company",
+      "asm:systems": ["Stable Diffusion", "Open-Source-Bildgeneratoren"]
+    },
+    {
+      "name": "National Center for Missing and Exploited Children (NCMEC)",
+      "type": "organization"
+    },
+    {
+      "name": "US-Justizministerium (DOJ) / FBI",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-01",
+      "phase": "infrastructure",
+      "title": "Öffentliche KI-Bildgeneratoren ermöglichen CSAM-Produktion",
+      "description": "Mit der Veröffentlichung von Stable Diffusion als Open-Source-Modell und dem Aufkommen von Midjourney und DALL-E 2 erhalten Täter erstmals niedrigschwelligen Zugang zu leistungsstarken Bildgeneratoren. Das Stanford Internet Observatory stellt fest, dass der LAION-Datensatz, auf dem viele Modelle trainiert werden, verifiziertes CSAM enthält. Technische Schutzmaßnahmen erweisen sich als leicht umgehbar.",
+      "sources": ["https://cyber.fsi.stanford.edu/news/investigation-finds-ai-image-generation-models-trained-child-sexual-abuse-material"]
+    },
+    {
+      "date": "2023-06",
+      "phase": "event",
+      "title": "Exponentieller Anstieg der CSAM-Meldungen bei NCMEC",
+      "description": "Das NCMEC meldet einen dramatischen Anstieg von Berichten über KI-generiertes CSAM. Das Internetwatch Foundation (IWF) stellt in einer Studie fest, dass selbstgeneriertes Material realen Opfern nachgebildet wird, um bekanntes Material zu imitieren. Erkennungssysteme, die auf Hashwerten realer Aufnahmen basieren, versagen bei synthetisch erzeugtem Material vollständig.",
+      "sources": ["https://www.missingkids.org/blog/2023/child-sexual-abuse-material-ai"]
+    },
+    {
+      "date": "2023-09",
+      "phase": "doctrine",
+      "title": "FBI-Warnung und erste Strafverfolgungen",
+      "description": "Das FBI gibt eine öffentliche Warnung heraus, dass Täter KI-Modelle nutzen, um sexualisierte Darstellungen von Kindern zu erstellen, auch aus harmlosen Social-Media-Fotos. Das Justizministerium beginnt mit Strafverfolgungen unter dem PROTECT Act. Gleichzeitig entsteht eine Rechtsdebatte darüber, ob synthetisch generiertes Material ohne reale Opfer unter bestehende CSAM-Gesetze fällt.",
+      "sources": ["https://www.ic3.gov/Media/Y2023/PSA230605"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Regulierungsdruck und technische Gegenmaßnahmen",
+      "description": "Der US-Kongress berät den SHIELD Act und weitere Gesetzgebung, die KI-generiertes CSAM explizit unter Strafe stellt. KI-Unternehmen implementieren verstärkt Filtersysteme, die jedoch von versierten Nutzern umgangen werden. Das NCMEC und Tech-Unternehmen erarbeiten neue Hash-basierte Erkennungsverfahren für synthetisches Material. Internationale Strafverfolgungsbehörden koordinieren eine gemeinsame Reaktion.",
+      "sources": ["https://cyber.fsi.stanford.edu/news/investigation-finds-ai-image-generation-models-trained-child-sexual-abuse-material"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://cyber.fsi.stanford.edu/news/investigation-finds-ai-image-generation-models-trained-child-sexual-abuse-material",
+      "title": "Investigation Finds AI Image Generation Models Trained on Child Sexual Abuse Material",
+      "publisher": "Stanford Internet Observatory",
+      "date": "2023-12-20",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.missingkids.org/blog/2023/child-sexual-abuse-material-ai",
+      "title": "Child Sexual Abuse Material and Artificial Intelligence",
+      "publisher": "National Center for Missing and Exploited Children (NCMEC)",
+      "date": "2023",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.ic3.gov/Media/Y2023/PSA230605",
+      "title": "FBI Warning: Malicious Actors Manipulating Photos and Videos to Create Explicit Content",
+      "publisher": "FBI Internet Crime Complaint Center (IC3)",
+      "date": "2023-06-05",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.iwf.org.uk/news-media/news/iwf-warns-ai-child-sexual-abuse-imagery-is-getting-more-realistic/",
+      "title": "IWF warns AI child sexual abuse imagery is getting more realistic",
+      "publisher": "Internet Watch Foundation",
+      "date": "2023-10",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/emirate-tosca-ueberwachung",
+  "name": "VAE: DarkMatter und ToTok — Staatliche Massenuberwachung durch Schein-App und Spyware",
+  "description": "Die Vereinigten Arabischen Emirate setzten uber das staatlich finanzierte Unternehmen DarkMatter das Spionageprogramm 'Karma' ein, das iPhones ohne Nutzerinteraktion kompromittiert. Parallel wurde die Messaging-App ToTok als vermeintlich unabhangiger Dienst verbreitet, der in Wirklichkeit ein Uberwachungsinstrument der emiratischen Geheimdienste war. Journalisten, Aktivisten, Diplomaten und auslandische Staatsburger wurden gezielt ausspioniert.",
+  "startDate": "2016",
+  "location": {
+    "@type": "Place",
+    "name": "Abu Dhabi, Vereinigte Arabische Emirate",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 24.4539,
+      "longitude": 54.3773
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AE"
+    }
+  },
+  "asm:incidentType": ["surveillance", "data-misuse", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Privatsphare", "Meinungsfreiheit", "Pressefreiheit", "Schutz von Kommunikationsdaten"],
+  "asm:actors": [
+    {
+      "name": "Regierung der Vereinigten Arabischen Emirate",
+      "type": "government",
+      "asm:systems": ["Karma (Exploit-Tool)", "ToTok (Uberwachungs-App)"]
+    },
+    {
+      "name": "DarkMatter",
+      "type": "company",
+      "asm:systems": ["Karma", "Cyberangriffs-Infrastruktur"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "DarkMatter nimmt Uberwachungsoperationen auf",
+      "description": "DarkMatter wird als Cybersicherheitsunternehmen in Abu Dhabi gegrundet, rekrutiert jedoch aktiv ehemalige NSA-, CIA- und US-Militar-Geholandedienstmitarbeiter fur offensive Cyberoperationen. Das Unternehmen entwickelt das Spionageprogramm 'Karma', das eine Zero-Click-Sicherheitslucke in iMessage ausnutzt, um iPhones ohne jede Nutzerinteraktion zu kompromittieren und vollstandig auszulesen.",
+      "sources": ["https://www.reuters.com/investigates/special-report/usa-spying-karma/"]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Karma wird gegen Dissidenten und Journalisten eingesetzt",
+      "description": "Karma wird laut Recherchen von Reuters und spateren Gerichtsunterlagen gezielt gegen Menschenrechtsaktivisten, Journalisten und politische Gegner eingesetzt — darunter Personen aus Qatar, dem Jemen und westlichen Landern. Parallel werden emiratische Burgerinnen und Burger uberwacht, die Kontakt zu kritischen Personen pflegen. Mitarbeiter des Programms berichten spater, sie hatten keine Kenntnis von den rechtlichen Grenzen gehabt.",
+      "sources": ["https://www.reuters.com/investigates/special-report/usa-spying-karma/"]
+    },
+    {
+      "date": "2019-12",
+      "phase": "event",
+      "title": "Reuters und NYT entllarven Karma und ToTok",
+      "description": "Reuters veroffentlicht eine Recherche uber das Karma-Programm und benennt ehemalige US-Geheimdienstler als Beteiligte. Kurz darauf enthullt die New York Times, dass die millionenfach heruntergeladene App ToTok kein normaler Messaging-Dienst ist, sondern ein direktes Werkzeug des emiratischen Geheimdienstes zur Massenuberwachung. Apple und Google entfernen ToTok aus ihren App-Stores.",
+      "sources": ["https://www.reuters.com/investigates/special-report/usa-spying-karma/", "https://www.nytimes.com/2019/12/22/us/politics/totok-app-uae.html"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "DOJ-Anklagen gegen US-Beteiligte, VAE bleiben straffrei",
+      "description": "Das US-Justizministerium klagt drei ehemalige US-Geholandedienstmitarbeiter wegen illegaler Cyberspionage fur die VAE an. Sie einigen sich auf einen Vergleich ohne Haftstrafe. DarkMatter selbst und die emiratische Regierung werden nicht strafrechtlich verfolgt. Die VAE bestreiten jede Kenntnis und behalten ihr Uberwachungsfahigkeiten. ToTok kehrt kurzzeitig in den App-Store zuruck, bevor es erneut entfernt wird.",
+      "sources": ["https://www.justice.gov/opa/pr/three-former-us-intelligence-community-and-military-personnel-charged-providing-hacking"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.reuters.com/investigates/special-report/usa-spying-karma/",
+      "title": "Inside the UAE's Secret Hacking Team of American Mercenaries",
+      "publisher": "Reuters",
+      "date": "2019-01-30",
+      "type": "investigative-journalism"
+    },
+    {
+      "url": "https://www.nytimes.com/2019/12/22/us/politics/totok-app-uae.html",
+      "title": "ToTok Is an Emirati Spy Tool, Researchers Reveal",
+      "publisher": "New York Times",
+      "date": "2019-12-22",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.justice.gov/opa/pr/three-former-us-intelligence-community-and-military-personnel-charged-providing-hacking",
+      "title": "Three Former U.S. Intelligence Community and Military Personnel Charged with Hacking Crimes",
+      "publisher": "U.S. Department of Justice",
+      "date": "2021-09-14",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

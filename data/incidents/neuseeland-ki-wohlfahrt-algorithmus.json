@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/neuseeland-ki-wohlfahrt-algorithmus",
+  "name": "Neuseeland: Vorhersagealgorithmus im Sozialwesen diskriminiert Maori",
+  "description": "Das neuseelaendische Ministerium fuer Soziale Entwicklung (MSD) setzte ab 2012 einen Risikobewertungsalgorithmus ein, der die Wahrscheinlichkeit von Sozialhilfebetrug und Kindeswohlgefahrdung vorhersagen sollte. Untersuchungen zeigten, dass der Algorithmus Maori und Pazifikinsulaner ueberproportional als Hochrisikofaelle markierte und damit bestehende soziale Ungleichheiten algorithmisch verstaerkte. Kritik fuehrte zur Einfuehrung einer freiwilligen Algorithm Charter, deren Wirksamkeit jedoch umstritten bleibt.",
+  "startDate": "2012",
+  "location": {
+    "@type": "Place",
+    "name": "Wellington, Neuseeland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -41.2865,
+      "longitude": 174.7762
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NZ"
+    }
+  },
+  "asm:incidentType": ["discrimination", "predictive-policing", "data-misuse"],
+  "asm:affectedRights": ["Recht auf Privatsphaere", "Schutz vor Diskriminierung", "Recht auf soziale Sicherheit", "Recht auf faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "Ministry of Social Development Neuseeland (MSD)",
+      "type": "government",
+      "asm:systems": ["Early Intervention Risk Assessment Tool", "Risk Assessment Tool"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "Einfuehrung des Risikobewertungsalgorithmus",
+      "description": "Das MSD entwickelt und implementiert ein statistisches Risikobewertungssystem, das basierend auf historischen Sozialdaten vorhersagen soll, welche Familien einem hohen Betrugsrisiko oder Kindeswohlgefahrdungen ausgesetzt sind. Der Algorithmus nutzt Faktoren wie ethnische Zugehoerigkeit, Einkommenshistorie und Familienstruktur. Maori und Pazifikinsulaner werden systematisch hoeher eingestuft, was auf strukturell verzerrte Trainingsdaten hinweist.",
+      "sources": ["https://www.algorithmcharter.org.nz/"]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Oeffentliche Kritik und akademische Untersuchungen",
+      "description": "Forscher und Buergerrechtsgruppen veroffentlichen Analysen, die zeigen, wie der Algorithmus historische Diskriminierungsmuster verstaerkt. Das MSD bestreitet zunaechst Verzerrungen. Datenschutzexperten kritisieren mangelnde Transparenz und fehlende Erklaerbarkeit der Entscheidungen. Betroffene Familien haben keine praktische Moeglichkeit, die algorithmischen Bewertungen anzufechten.",
+      "sources": ["https://www.privacycommissioner.nz/news/2018/privacy-commissioner-calls-for-more-transparent-use-of-algorithms/"]
+    },
+    {
+      "date": "2020",
+      "phase": "event",
+      "title": "Neuseeland veroeffentlicht freiwillige Algorithm Charter",
+      "description": "Die neuseelaendische Regierung veroeffentlicht eine freiwillige 'Algorithm Charter', die staatliche Behoerden zu Transparenz, Fairnesspruefungen und erklaerbaren Entscheidungen verpflichten soll. 21 Behoerden unterzeichnen die Charta. Kritiker bezeichnen die Massnahme als unzureichend, da sie keine Durchsetzungsmechanismen enthaelt und die Untzeichnung freiwillig bleibt.",
+      "sources": ["https://www.algorithmcharter.org.nz/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Anhaltende Bedenken und ungenuegend geaenderte Praxis",
+      "description": "Berichte des NZ Privacy Commissioner zeigen, dass viele Behoerden die Charta-Anforderungen nicht vollstaendig umsetzen. Maori-Organisationen berichten von anhaltender algorithmischer Diskriminierung in Wohlfahrts- und Bildungsentscheidungen. Ein verbindliches KI-Regulierungsgesetz ist in Beratung. Die systematische Benachteiligung von Maori durch datenbasierte Systeme bleibt ein anerkanntes, aber ungenuegend adressiertes Problem.",
+      "sources": ["https://www.privacycommissioner.nz/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.algorithmcharter.org.nz/",
+      "title": "Algorithm Charter for Aotearoa New Zealand",
+      "publisher": "New Zealand Government",
+      "date": "2020",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.privacycommissioner.nz/news/2018/privacy-commissioner-calls-for-more-transparent-use-of-algorithms/",
+      "title": "Privacy Commissioner calls for more transparent use of algorithms",
+      "publisher": "New Zealand Office of the Privacy Commissioner",
+      "date": "2018",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

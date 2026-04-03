@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/algerien-internet-shutdown-proteste",
+  "name": "Algerien: Internet-Abschaltungen zur Unterdrückung der Hirak-Protestbewegung",
+  "description": "Während der algerischen Hirak-Protestbewegung (2019–2021), die den Rücktritt von Präsident Bouteflika und grundlegende demokratische Reformen forderte, unterbrach die Regierung wiederholt gezielt den Internetzugang. Soziale Medien wurden gedrosselt oder blockiert, um die Koordination der Proteste zu erschweren und die Verbreitung von Videos und Informationen aus dem Ausland zu verhindern. NetBlocks und Access Now dokumentierten multiple Abschaltungsereignisse.",
+  "startDate": "2019-02",
+  "location": {
+    "@type": "Place",
+    "name": "Algier, Algerien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.7538,
+      "longitude": 3.0588
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "DZ"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Versammlungsfreiheit", "Recht auf Informationszugang", "Pressefreiheit"],
+  "asm:actors": [
+    {
+      "name": "Algerische Regierung",
+      "type": "government"
+    },
+    {
+      "name": "Algérie Télécom",
+      "type": "company",
+      "asm:systems": ["Internet Exchange Point Algier", "Deep Packet Inspection"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-02-22",
+      "phase": "infrastructure",
+      "title": "Beginn der Hirak-Proteste und erste Netzstörungen",
+      "description": "Millionen Algerier gehen auf die Strasse, um gegen Bouteflikas angekündigte fünfte Amtszeit zu protestieren. Die Regierung reagiert mit der Drosselung von Mobilfunkdaten, insbesondere rund um Freitagsdemonstrationen. NetBlocks misst signifikante Verlangsamungen bei Facebook, WhatsApp und Twitter in den Stunden vor und während der Proteste.",
+      "sources": ["https://netblocks.org/reports/algeria-social-media-blocked-amid-political-unrest-XaBJnybE"]
+    },
+    {
+      "date": "2019-04",
+      "phase": "event",
+      "title": "Wiederholte vollständige Mobilfunksperren",
+      "description": "Nach dem Rücktritt Bouteflikas im April 2019 setzt die Armee die Mobilfunk- und Internetsperren fort, um Demonstrationen zu stören. OONI-Messungen belegen blockierte Verbindungen zu YouTube, Facebook und Telegram. Access Now zählt im Jahr 2019 mindestens fünf separate Shutdown-Ereignisse in Algerien.",
+      "sources": ["https://www.accessnow.org/keepiton/"]
+    },
+    {
+      "date": "2020-06",
+      "phase": "doctrine",
+      "title": "Internetabschaltungen während des Verfassungsreferendums",
+      "description": "Anlässlich des umstrittenen Verfassungsreferendums vom November 2020 werden erneut Social-Media-Dienste blockiert. Die Regierung begründet Internetsperren öffentlich mit Sicherheitsbedenken und dem Schutz vor ausländischer Einmischung. Journalisten und Aktivisten berichten von verstärkter Online-Überwachung und Verhaftungen nach Social-Media-Posts.",
+      "sources": ["https://cpj.org/reports/2020/09/internet-shutdown-killing-the-news/"]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Anhaltende Repression, Verhaftungen, internationale Kritik",
+      "description": "Trotz der Auflösung der Hirak-Bewegung durch COVID-19 und staatliche Repression bleiben Internetbeschränkungen in Kraft. Dutzende Aktivisten werden wegen Online-Aktivitäten verhaftet. Die EU und UN-Menschenrechtsorgane kritisieren die systematische digitale Unterdrückung. Algerien rangiert in Pressefreiheitsindizes weiterhin sehr niedrig.",
+      "sources": ["https://freedomhouse.org/country/algeria/freedom-net/2021"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://netblocks.org/reports/algeria-social-media-blocked-amid-political-unrest-XaBJnybE",
+      "title": "Algeria Social Media Blocked Amid Political Unrest",
+      "publisher": "NetBlocks",
+      "date": "2019-03",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.accessnow.org/keepiton/",
+      "title": "#KeepItOn: Internet Shutdowns Report",
+      "publisher": "Access Now",
+      "date": "2020",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://cpj.org/reports/2020/09/internet-shutdown-killing-the-news/",
+      "title": "Internet shutdown: Killing the news",
+      "publisher": "Committee to Protect Journalists",
+      "date": "2020-09",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://freedomhouse.org/country/algeria/freedom-net/2021",
+      "title": "Freedom on the Net 2021: Algeria",
+      "publisher": "Freedom House",
+      "date": "2021",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

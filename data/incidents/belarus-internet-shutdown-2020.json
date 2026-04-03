@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/belarus-internet-shutdown-2020",
+  "name": "Belarus: Internetabschaltung und SORM-Uberwachung wahrend der Wahproteste 2020",
+  "description": "Nach der umstrittenen Prasidentschaftswahl vom 9. August 2020, bei der Lukaschenko mit offiziell 80 Prozent der Stimmen als Sieger erklart wurde, brachen in Belarus die grossten Proteste seit der Unabhangigkeit aus. Die Regierung reagierte mit mehrtägigen vollstandigen Internetabschaltungen sowie gezielter digitaler Uberwachung mittels SORM-basierter Abhortechnologie. Das kanadische Unternehmen Sandvine lieferte Deep-Packet-Inspection-Gerate (DPI), die zur Zensur und Uberwachung eingesetzt wurden. Tausende Aktivisten wurden verhaftet; ihre Kommunikationsdaten dienten als Beweismittel fur Strafverfolgungen.",
+  "startDate": "2020-08",
+  "location": {
+    "@type": "Place",
+    "name": "Minsk, Belarus",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.9006,
+      "longitude": 27.5590
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BY"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Information", "Meinungsfreiheit", "Versammlungsfreiheit", "Recht auf Privatsphare", "Recht auf faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "Belarussische Regierung",
+      "type": "government",
+      "asm:systems": ["SORM-Uberwachungssystem", "Nationale Zensurinfrastruktur", "DPI-Filtierung"]
+    },
+    {
+      "name": "Sandvine",
+      "type": "company",
+      "asm:systems": ["PacketLogic Deep Packet Inspection", "Netzwerkuberwachung"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-08-09",
+      "phase": "infrastructure",
+      "title": "Wahltag: Vollstandige Internetabschaltung",
+      "description": "Am Wahltag und in den Folgetagen wird das Internet in Belarus dreimal vollstandig oder nahezu vollstandig abgeschaltet. NetBlocks und das Open Observatory of Network Interference (OONI) dokumentieren die Storungen in Echtzeit. Mobilfunknetze werden gedrosselt; VPN-Dienste werden blockiert. Die Abschaltungen fallen mit der Bekanntgabe erster Wahlergebnisse und den darauffolgenden Protestausbruchen zusammen.",
+      "sources": ["https://netblocks.org/reports/internet-disrupted-in-belarus-amid-disputed-election-results-eBOgR0Ay"]
+    },
+    {
+      "date": "2020-08",
+      "phase": "doctrine",
+      "title": "SORM-Abhorung und Sandvine-DPI fur gezielte Uberwachung",
+      "description": "Access Now und das Citizen Lab belegen, dass belarussische Behorden SORM-3-Systeme (System operativer Ermittlungsmasnahmen) zur Massenuberwachung der Telekommunikation einsetzen. Sandvines PacketLogic-Gerate werden zur Echtzeit-Inspektion, Zensur und zum Protokollieren von Internetverkehr genutzt. Daten aus Messaging-Apps wie Telegram werden zur Identifikation von Protest-Koordinatoren verwendet.",
+      "sources": ["https://www.accessnow.org/internet-shutdown-belarus-2020/"]
+    },
+    {
+      "date": "2020-09",
+      "phase": "event",
+      "title": "Verhaftungen auf Basis digitaler Beweise",
+      "description": "Tausende Protestierende werden verhaftet; Strafverfolgungen stutzen sich auf abgefangene Messenger-Kommunikation, Mobilfunkortungsdaten und Social-Media-Aktivitaten. Berichte uber Folter in Haft mehren sich. Oppositionsjournalisten und Koordinatoren des Telegram-Kanals NEXTA — der wahrend der Proteste zentral fur die Koordination war — werden strafrechtlich verfolgt. Redakteursleiter Roman Protasewitsch wird 2021 durch Entfuhrung seines Flugzeugs verhaftet.",
+      "sources": ["https://www.hrw.org/news/2020/09/04/belarus-systematic-violent-crackdown-protesters"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Anhaltende Repression und Sandvine-Exportverbot",
+      "description": "Die USA verhangen Exportbeschrankungen gegen Sandvine, nachdem Beweise fur den Einsatz seiner Technologie in Belarus und Agypten veroffentlicht werden. Belarus bleibt unter Lukaschenko eines der repressivsten Lander Europas. Tausende politische Gefangene sitzen weiterhin in Haft. Die Uberwachungsinfrastruktur bleibt intakt und wird fur die fortgesetzte Unterdruckung der Zivilgesellschaft genutzt.",
+      "sources": ["https://ooni.org/post/2020-belarus-internet-blocks-and-outages/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://netblocks.org/reports/internet-disrupted-in-belarus-amid-disputed-election-results-eBOgR0Ay",
+      "title": "Internet disrupted in Belarus amid disputed election results",
+      "publisher": "NetBlocks",
+      "date": "2020-08-09",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.accessnow.org/internet-shutdown-belarus-2020/",
+      "title": "Belarus: Internet shutdowns during the 2020 election crisis",
+      "publisher": "Access Now",
+      "date": "2020",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://ooni.org/post/2020-belarus-internet-blocks-and-outages/",
+      "title": "Belarus: Internet blocks and outages amid the 2020 presidential election",
+      "publisher": "Open Observatory of Network Interference (OONI)",
+      "date": "2020-08",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.hrw.org/news/2020/09/04/belarus-systematic-violent-crackdown-protesters",
+      "title": "Belarus: Systematic Violent Crackdown on Protesters",
+      "publisher": "Human Rights Watch",
+      "date": "2020-09-04",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

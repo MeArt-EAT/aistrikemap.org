@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/italien-ki-arbeitsbewertung-glovo",
+  "name": "Italien: Glovos Algorithmus diskriminiert Kuriere bei Bewertung und Auftragsvergabe",
+  "description": "Das spanische Lieferunternehmen Glovo setzte einen Algorithmus zur Bewertung und Auftragsvergabe an Fahrradkuriere ein, der Krankheitstage und Gewerkschaftsaktivitaten als 'Unzuverlassigkeit' einstufte und mit schlechteren Auftragen und niedrigeren Verdienstmoglichkeiten bestrafte. Ein Gericht in Bologna entschied 2021, dass der Algorithmus diskriminierend wirkt. 2023 verhangte die italienische Datenschutzbehorde Garante eine Strafe von 5 Millionen Euro.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Mailand, Italien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.4642,
+      "longitude": 9.1900
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IT"
+    }
+  },
+  "asm:incidentType": ["labor-exploitation", "discrimination"],
+  "asm:affectedRights": ["Recht auf faire Arbeitsbedingungen", "Koalitionsfreiheit", "Schutz vor algorithmischer Diskriminierung", "Recht auf Krankenstand"],
+  "asm:actors": [
+    {
+      "name": "Glovo",
+      "type": "company",
+      "asm:systems": ["Glovo Kurier-Scoring-Algorithmus"]
+    },
+    {
+      "name": "Italienische Gerichte / Tribunale di Bologna",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Einfuhrung des automatisierten Bewertungssystems",
+      "description": "Glovo implementiert in Italien ein vollstandig automatisiertes System zur Bewertung und Priorisierung von Kurieren fur die Auftragsvergabe. Der Algorithmus berucksichtigt Verfugbarkeit, Ablehnungsraten und Punktlichkeit. Kuriere berichten, dass Abwesenheiten aus Krankheit oder Teilnahme an Gewerkschaftsveranstaltungen zu dauerhaft schlechteren Bewertungen fuhren — ohne Moglichkeit zur Erklarung oder Anfechtung.",
+      "sources": ["https://www.eurofound.europa.eu/publications/report/2022/platform-work-and-the-employment-relationship"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Kuriere erstatten Beschwerde und klagen",
+      "description": "Fahrradkuriere in Bologna reichen gemeinsam mit der Gewerkschaft NIdiL-CGIL Klage gegen Glovo ein. Sie argumentieren, der Algorithmus bewerte legitime Fehlzeiten (Krankheit, Streik, Gewerkschaftstreffen) identisch wie willkurliches Fernbleiben und verstosse damit gegen den Diskriminierungsschutz und das Recht auf Koalitionsfreiheit. Das Unternehmen bestreitet, dass der Algorithmus gewerkschaftliche Aktivitaten erkennt.",
+      "sources": ["https://www.worker-participation.eu/National-Industrial-Relations/Countries/Italy/Collective-bargaining"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Tribunal Bologna: Algorithmus als diskriminierend eingestuft",
+      "description": "Das Tribunale di Bologna urteilt im Januar 2021, dass Glovos Algorithmus zur Kurierbewertung indirekt diskriminierend wirkt, da er Fehlzeiten aufgrund von Gewerkschaftsaktivitaten nicht von anderen Abwesenheiten unterscheidet. Das Gericht ordnet an, dass das Bewertungssystem angepasst werden muss. Es ist eines der ersten europaischen Urteile, das algorithmische Diskriminierung im Plattformarbeitskontext explizit feststellt.",
+      "sources": ["https://www.eurofound.europa.eu/publications/report/2022/platform-work-and-the-employment-relationship"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Garante verhangt 5-Millionen-Euro-Strafe",
+      "description": "Die italienische Datenschutzbehorde Garante verhangt eine Geldstrafe von 5 Millionen Euro gegen Glovo wegen Verstossen gegen die DSGVO im Zusammenhang mit dem Scoring-Algorithmus. Dabei wird insbesondere die mangelnde Transparenz gegenuber den Kurieren und das Fehlen geeigneter Schutzmasnahmen bei der automatisierten Entscheidungsfindung bemangelt. Der Fall gilt als Prasedenz fur die Regulierung algorithmischer Arbeitgeberkontrollen in Europa.",
+      "sources": ["https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9978728"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9978728",
+      "title": "Garante: Provvedimento nei confronti di Glovo",
+      "publisher": "Garante per la protezione dei dati personali",
+      "date": "2023-07-12",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.eurofound.europa.eu/publications/report/2022/platform-work-and-the-employment-relationship",
+      "title": "Platform work and the employment relationship",
+      "publisher": "Eurofound",
+      "date": "2022",
+      "type": "research-paper"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

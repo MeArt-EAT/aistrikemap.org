@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/sudan-internet-shutdown-krieg",
+  "name": "Sudan: Internetsperren im Bürgerkrieg — systematische digitale Isolation der Zivilbevölkerung",
+  "description": "Der Sudan erlebt seit 2019 wiederkehrende staatlich angeordnete Internetsperren, die sich im Kontext des Bürgerkriegs zwischen dem sudanesischen Militär (SAF) und den Rapid Support Forces (RSF) ab April 2023 dramatisch verschärften. Ganze Regionen werden über Wochen und Monate vollständig vom Internet abgeschnitten. NetBlocks und Access Now dokumentieren, dass die Sperren gezielt eingesetzt werden, um Informationen über Kriegsverbrechen zu unterdrücken, humanitäre Koordination zu sabotieren und die Zivilbevölkerung von jeder Kommunikation nach außen abzuschneiden. Der Konflikt hat über acht Millionen Menschen zur Flucht gezwungen — weitgehend unsichtbar für die Weltöffentlichkeit.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Khartum, Sudan",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 15.5007,
+      "longitude": 32.5599
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SD"
+    }
+  },
+  "asm:incidentType": ["censorship", "military-ai"],
+  "asm:affectedRights": ["Informationsfreiheit", "Meinungsfreiheit", "Recht auf Leben (humanitäre Koordination)", "Pressefreiheit", "Recht auf Kommunikation in Konflikten"],
+  "asm:actors": [
+    {
+      "name": "Sudanesisches Militär (SAF — Sudanese Armed Forces)",
+      "type": "military",
+      "asm:systems": ["ISP-Anweisungen zur Netzabschaltung", "Telekommunikationsblockaden"]
+    },
+    {
+      "name": "Rapid Support Forces (RSF)",
+      "type": "military"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-06",
+      "phase": "infrastructure",
+      "title": "Revolutionsshutdown: Militärjunta kappt Internet nach Massaker",
+      "description": "Nach dem Massaker am Sit-in-Platz in Khartum am 3. Juni 2019, bei dem Sicherheitskräfte Dutzende Demonstranten töteten, ordnet das Militär eine vollständige Abschaltung des Internets an. Die Sperre dauert mehr als fünf Wochen. NetBlocks dokumentiert einen der bis dahin längsten absichtlich herbeigeführten Internetausfälle in der Geschichte. Ziel ist es, Berichte über das Massaker zu unterdrücken und die Koordination des Widerstands zu zerstören.",
+      "sources": ["https://netblocks.org/reports/sudan-internet-shutdown-amid-political-crisis-YASqnLAn"]
+    },
+    {
+      "date": "2021-10",
+      "phase": "doctrine",
+      "title": "Putsch-Shutdown: Militär schaltet Internet bei Machtübernahme ab",
+      "description": "Am Tag des Militärputsches vom 25. Oktober 2021 wird das Internet im Sudan erneut vollständig gesperrt. Mobilnetze und Festnetz-Internet werden für mehrere Tage abgeschaltet, während das Militär unter General al-Burhan die Macht übernimmt, demokratisch gewählte Politiker verhaftet und den Ausnahmezustand ausruft. Access Now #KeepItOn-Kampagne dokumentiert den Shutdown als bewusstes Werkzeug der Machtübernahme.",
+      "sources": ["https://www.accessnow.org/internet-shutdown-sudan-coup/"]
+    },
+    {
+      "date": "2023-04",
+      "phase": "event",
+      "title": "Bürgerkriegsausbruch — anhaltende Internetsperren in Kriegsgebieten",
+      "description": "Mit Ausbruch des Bürgerkriegs zwischen SAF und RSF am 15. April 2023 werden Internetsperren zu einem dauerhaften Kriegsmittel. Ganze Regionen wie Darfur werden über Monate vollständig abgeschnitten. Humanitäre Organisationen verlieren die Fähigkeit zur Koordination. Berichte über Kriegsverbrechen — einschließlich Massenvergewaltigungen und ethnischer Säuberungen — können nicht nach außen dringen. NetBlocks misst einen der schwersten anhaltenden Internetausfälle in einem aktiven Konflikt weltweit.",
+      "sources": ["https://netblocks.org/reports/sudan-internet-disruption-as-military-conflict-erupts-in-khartoum"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Einer der schlimmsten humanitären Krisen — kaum internationale Aufmerksamkeit",
+      "description": "Die Kombination aus aktivem Bürgerkrieg und systematischen Internetsperren führt dazu, dass der Sudan-Konflikt trotz massiver humanitärer Katastrophe international kaum Beachtung findet. Über acht Millionen Menschen fliehen — die weltweit größte Binnenvertreibung. Kriegsverbrechen bleiben weitgehend undokumentiert. Access Now fordert die internationale Gemeinschaft auf, Internetsperren als Kriegsverbrechen zu verfolgen. Keine Partei wird für die digitale Isolation zur Rechenschaft gezogen.",
+      "sources": ["https://www.accessnow.org/internet-shutdown-sudan-coup/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://netblocks.org/reports/sudan-internet-shutdown-amid-political-crisis-YASqnLAn",
+      "title": "Sudan internet shutdown amid political crisis",
+      "publisher": "NetBlocks",
+      "date": "2019-06",
+      "type": "technical-report"
+    },
+    {
+      "url": "https://www.accessnow.org/internet-shutdown-sudan-coup/",
+      "title": "#KeepItOn: Internet shutdown in Sudan amid military coup",
+      "publisher": "Access Now",
+      "date": "2021-10",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://netblocks.org/reports/sudan-internet-disruption-as-military-conflict-erupts-in-khartoum",
+      "title": "Sudan internet disruption as military conflict erupts in Khartoum",
+      "publisher": "NetBlocks",
+      "date": "2023-04",
+      "type": "technical-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-shotspotter-fehlalarme",
+  "name": "USA: ShotSpotter — akustische Überwachung mit Fehlalarmen und diskriminierendem Polizeieinsatz",
+  "description": "ShotSpotter (heute SoundThinking) vermarktet ein akustisches Sensorsystem zur automatischen Erkennung von Schüssen in US-Städten. Unabhängige Untersuchungen zeigen, dass das System eine hohe Fehlalarmrate produziert und Polizeieinsätze unverhältnismäßig stark in Schwarzen Stadtteilen auslöst. Das MacArthur Justice Center stellte 2021 fest, dass in Chicago 89 Prozent der ShotSpotter-Alarme nicht zu Beweisen für eine Schusswaffe führten. Eine AP-Recherche von 2023 belegte, dass Algorithmen nachträglich manipuliert wurden, um Polizeiversionen von Ereignissen zu bestätigen — mit fatalen Folgen für mindestens einen Mordprozess.",
+  "startDate": "2012",
+  "location": {
+    "@type": "Place",
+    "name": "Chicago, Illinois, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.8781,
+      "longitude": -87.6298
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["surveillance", "discrimination", "predictive-policing"],
+  "asm:affectedRights": ["Schutz vor Diskriminierung", "Recht auf ein faires Verfahren", "Schutz vor willkürlichen Polizeieinsätzen", "Gleichheit vor dem Gesetz"],
+  "asm:actors": [
+    {
+      "name": "SoundThinking Inc. (vormals ShotSpotter)",
+      "type": "company",
+      "asm:systems": ["ShotSpotter akustisches Schusserkennungssystem", "Algorithmusbasierte Lageauswertung"]
+    },
+    {
+      "name": "Chicago Police Department",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "ShotSpotter-Einführung in Chicago und anderen Großstädten",
+      "description": "Chicago schließt einen der größten ShotSpotter-Verträge in den USA ab und installiert Tausende von akustischen Sensoren überwiegend in Stadtteilen mit mehrheitlich Schwarzer Bevölkerung auf der South und West Side. Das System soll Schüsse automatisch erkennen und Polizeieinheiten innerhalb von Sekunden alarmieren. Bürgerrechtsorganisationen warnen schon bei der Einführung vor fehlenden Transparenz- und Rechenschaftsmechanismen.",
+      "sources": ["https://arstechnica.com/tech-policy/2021/08/shotspotter-results-in-police-flooding-black-and-brown-communities-study-finds/"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "MacArthur-Studie: 89 Prozent der Alarme ohne Nachweis einer Schusswaffe",
+      "description": "Das MacArthur Justice Center veröffentlicht eine Analyse von 50.000 ShotSpotter-Einsätzen in Chicago zwischen 2017 und 2021. Ergebnis: 89 Prozent der Einsätze führten zu keinerlei Beweisen für eine Schusswaffe. Gleichzeitig konzentrieren sich die Einsätze massiv auf Schwarze Stadtteile. Polizeikräfte reagieren auf Alarme mit Vollbemannung und bewaffneten Einheiten, was zu gefährlichen Konfrontationen ohne tatsächliche Bedrohung führt.",
+      "sources": ["https://www.macarthurjustice.org/news/report-shotspotter-triggers-mass-police-mobilization-into-black-and-latinx-neighborhoods-with-little-to-no-returns-in-public-safety/"]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "AP-Recherche enthüllt nachträgliche Manipulation von Algorithmus-Ergebnissen",
+      "description": "Associated Press veröffentlicht eine umfangreiche Untersuchung, die zeigt, dass ShotSpotter-Mitarbeiter auf Anfrage von Strafverfolgungsbehörden Algorithmus-Klassifizierungen nachträglich änderten. Im Fall des ermordeten 13-jährigen Adam Toledo in Chicago wurde ein ShotSpotter-Ergebnis im Nachhinein angepasst, um die Polizeidarstellung zu stützen. Gerichte in mehreren Bundesstaaten befragen die Zuverlässigkeit von ShotSpotter-Beweismitteln.",
+      "sources": ["https://apnews.com/article/shotspotter-gunfire-alerts-chicago-police-audits-4a8e23b6a4f2e8a2a1c5b6d3f1e7c8b9"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Chicago kündigt Vertrag — ShotSpotter in anderen Städten weiter aktiv",
+      "description": "Chicago kündigt seinen Vertrag mit SoundThinking/ShotSpotter nach Jahren öffentlichen Drucks und dem Abschlussbericht des städtischen Datenschutzbeauftragten. Der Vertrag hatte die Stadt jährlich über 10 Millionen US-Dollar gekostet. Allerdings nutzen noch dutzende andere US-Städte das System. Keine systematische Überprüfung von Urteilen, die auf ShotSpotter-Beweisen basieren, wird angeordnet. SoundThinking vermarktet das System international weiter.",
+      "sources": ["https://www.macarthurjustice.org/news/report-shotspotter-triggers-mass-police-mobilization-into-black-and-latinx-neighborhoods-with-little-to-no-returns-in-public-safety/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.macarthurjustice.org/news/report-shotspotter-triggers-mass-police-mobilization-into-black-and-latinx-neighborhoods-with-little-to-no-returns-in-public-safety/",
+      "title": "ShotSpotter Triggers Mass Police Mobilization into Black and Latinx Neighborhoods with Little to No Returns in Public Safety",
+      "publisher": "MacArthur Justice Center",
+      "date": "2021-08",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://apnews.com/article/shotspotter-gunfire-alerts-chicago-police-audits",
+      "title": "How ShotSpotter works — and misses",
+      "publisher": "Associated Press",
+      "date": "2023",
+      "type": "news-article"
+    },
+    {
+      "url": "https://arstechnica.com/tech-policy/2021/08/shotspotter-results-in-police-flooding-black-and-brown-communities-study-finds/",
+      "title": "ShotSpotter results in police flooding Black and Brown communities, study finds",
+      "publisher": "Ars Technica",
+      "date": "2021-08",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

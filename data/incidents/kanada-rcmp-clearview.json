@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/kanada-rcmp-clearview",
+  "name": "Kanada: RCMP nutzt Clearview AI heimlich und verstosst gegen Datenschutzrecht",
+  "description": "Die Royal Canadian Mounted Police (RCMP) setzte ab 2019 heimlich Clearview AI zur Gesichtserkennung ein, ohne die oeffentliche Datenschutzbehoerde zu informieren oder eine Datenschutz-Folgeabschaetzung durchzufuehren. Nach einer Untersuchung des Office of the Privacy Commissioner of Canada (OPC) wurde 2021 festgestellt, dass der Einsatz gegen den Privacy Act verstiess. Clearview AI hatte Milliarden von Gesichtsbildern ohne Einwilligung aus dem Internet gescrapt.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Ottawa, Kanada",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.4215,
+      "longitude": -75.6972
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CA"
+    }
+  },
+  "asm:incidentType": ["facial-recognition", "surveillance", "data-misuse"],
+  "asm:affectedRights": ["Recht auf Privatsphaere", "Informationelle Selbstbestimmung", "Recht auf faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "Royal Canadian Mounted Police (RCMP)",
+      "type": "government"
+    },
+    {
+      "name": "Clearview AI",
+      "type": "company",
+      "asm:systems": ["Clearview AI Facial Recognition"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "RCMP beginnt heimlichen Einsatz von Clearview AI",
+      "description": "Die RCMP schliesst einen Vertrag mit Clearview AI ab und nutzt das System fuer kriminalistische Ermittlungen. Weder das Parlament noch die Datenschutzbehoerde werden informiert. Clearview AI betreibt eine Datenbank aus ueber drei Milliarden Gesichtsbildern, die ohne Einwilligung von sozialen Medien und anderen Webseiten gescrapt wurden.",
+      "sources": ["https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-federal-institutions/2021/pipeda-2021-001/"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "OPC leitet Untersuchung ein",
+      "description": "Nachdem Medienberichte den Einsatz von Clearview AI durch kanadische Behoerden aufdecken, eroefffnet der Office of the Privacy Commissioner of Canada eine formelle Untersuchung gegen die RCMP. Gleichzeitig startet eine gemeinsame Untersuchung der Datenschutzbehoerden mehrerer Provinzen gegen Clearview AI selbst.",
+      "sources": ["https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-federal-institutions/2021/pipeda-2021-001/"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "OPC: RCMP-Einsatz verletzt Datenschutzrecht",
+      "description": "Der OPC stellt fest, dass die RCMP mit dem heimlichen Einsatz von Clearview AI gegen den Privacy Act verstossen hat. Clearview AI wird separat fuer illegal in Kanada erklaert und muss den Dienst fuer kanadische Kunden einstellen. Die Datenschutzbehoerden mehrerer Provinzen ordnen Clearview an, Daten kanadischer Buerger zu loeschen.",
+      "sources": ["https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-federal-institutions/2021/pipeda-2021-001/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Gesetzgebungsluecken bleiben bestehen",
+      "description": "Trotz der OPC-Entscheidung gibt es keine strafrechtlichen Konsequenzen fuer die RCMP. Kanada diskutiert Reformen des Privacy Act, die jedoch noch nicht verabschiedet sind. Buergerrechtsorganisationen fordern ein vollstaendiges Verbot biometrischer Massenerfassung durch staatliche Behoerden. Mehrere Polizeibehoerden geben an, Clearview AI nicht mehr zu nutzen.",
+      "sources": ["https://www.priv.gc.ca/en/privacy-topics/surveillance/police-surveillance/gd_clearview_202101/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-federal-institutions/2021/pipeda-2021-001/",
+      "title": "RCMP's use of Clearview AI violated Privacy Act",
+      "publisher": "Office of the Privacy Commissioner of Canada",
+      "date": "2021-06-09",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.priv.gc.ca/en/privacy-topics/surveillance/police-surveillance/gd_clearview_202101/",
+      "title": "Clearview AI's scraping of Canadians' photos violates privacy laws",
+      "publisher": "Office of the Privacy Commissioner of Canada",
+      "date": "2021-02-03",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/kambodscha-chinesische-scam-compounds",
+  "name": "Kambodscha: Chinesische Betrugs-Compounds mit KI und Menschenhandel",
+  "description": "In Sihanoukville und weiteren Orten Kambodschas betreiben chinesische kriminelle Organisationen großangelegte Betrugs-Compounds, in denen unter Zwang geleistete Arbeit von Menschenhandelsopfern mit KI-Tools kombiniert wird. Die UN schätzen, dass über 100.000 Menschen in solchen Einrichtungen in Südostasien festgehalten werden. KI-gestützte Chatbots, Deepfakes und automatisierte Social-Engineering-Systeme werden eingesetzt, um Betrugsopfer weltweit zu täuschen. Kambodschanische Behörden profitieren von Korruption und schauen teilweise weg.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Sihanoukville, Kambodscha",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.6093,
+      "longitude": 103.5228
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "KH"
+    }
+  },
+  "asm:incidentType": ["labor-exploitation", "data-misuse"],
+  "asm:affectedRights": ["Verbot von Sklaverei und Zwangsarbeit", "Recht auf Freiheit", "Menschenwürde", "Schutz vor Menschenhandel"],
+  "asm:actors": [
+    {
+      "name": "Chinesische kriminelle Organisationen (Cyberkriminalitätskartelle)",
+      "type": "organization",
+      "asm:systems": ["KI-Chatbots für Romance Scams", "Deepfake-Video-Calls", "Automatisierte Phishing-Systeme"]
+    },
+    {
+      "name": "Kambodschanische Behörden",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Entstehung der Scam-Compounds in Sihanoukville",
+      "description": "Chinesische Investoren, die nach der Schließung von Glücksspielanlagen in Macao und China nach Alternativen suchen, bauen in Sihanoukville und der Sonderwirtschaftszone Dara Sakor großangelegte Betriebszentren auf. Zunächst als Online-Glücksspiel-Hubs getarnt, werden die Compounds zunehmend für Cyberbetrug umfunktioniert. Die Einrichtungen entwickeln sich zu bewachten Komplexen, aus denen Arbeiter nicht entkommen können.",
+      "sources": ["https://www.unodc.org/roseap/uploads/documents/Publications/2023/UNODC_TiP_Report_2023.pdf"]
+    },
+    {
+      "date": "2022-08",
+      "phase": "event",
+      "title": "UN-Bericht enthüllt Ausmaß des Menschenhandels",
+      "description": "Das UN-Büro für Drogen- und Verbrechensbekämpfung (UNODC) veröffentlicht einen Bericht, der schätzt, dass über 100.000 Menschen in Betrugs-Compounds in Myanmar, Kambodscha, Laos und Thailand unter Zwang arbeiten. Viele wurden durch falsche Jobangebote in die Region gelockt. Al Jazeera und ProPublica berichten von Opfern, die gezwungen werden, Liebesbetrug (Romance Scams) und Krypto-Investitionsbetrug durchzuführen, begleitet von körperlicher Bestrafung bei Zielverfehlung.",
+      "sources": ["https://www.unodc.org/roseap/uploads/documents/Publications/2023/UNODC_TiP_Report_2023.pdf"]
+    },
+    {
+      "date": "2023-06",
+      "phase": "doctrine",
+      "title": "KI-Integration in Betrugssysteme skaliert den Schaden",
+      "description": "Recherchen zeigen, dass die Compounds zunehmend KI-Tools einsetzen, darunter Deepfake-Software für Videoanrufe (um Betrüger jünger, attraktiver oder als andere Geschlechter erscheinen zu lassen), automatisierte Chatbots auf ChatGPT-Basis für erste Kontaktaufnahme sowie KI-gestützte Übersetzung für mehrsprachige Betrugskampagnen. Opfer in über 100 Ländern werden geschädigt, mit Gesamtschäden in Milliardenhöhe.",
+      "sources": ["https://www.propublica.org/article/online-romance-scams-pig-butchering-fraud"]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Internationaler Druck und partielle Räumungen",
+      "description": "Unter internationalem Druck führt Kambodscha einige Razzien durch, ohne strukturelle Veränderungen zu erzielen. China übt Druck auf kambodschanische Behörden aus, Staatsbürger zu repatriieren. Die USA verhängen Sanktionen gegen kambodschanische Beamte, die mit den Compounds in Verbindung stehen. Das UNODC und Opferrechtsgruppen fordern einen regionalen Ansatz, da viele Compounds nach Myanmar und Laos abwandern.",
+      "sources": ["https://www.ohchr.org/en/documents/reports/ahrc5523-situation-human-rights-cambodia"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.unodc.org/roseap/uploads/documents/Publications/2023/UNODC_TiP_Report_2023.pdf",
+      "title": "Transnational Organized Crime and the Convergence of Cyber-Enabled Fraud, Underground Banking and Technological Innovation",
+      "publisher": "UNODC",
+      "date": "2023",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.propublica.org/article/online-romance-scams-pig-butchering-fraud",
+      "title": "The Brutal Reality of 'Pig Butchering' Scam Compounds",
+      "publisher": "ProPublica",
+      "date": "2023",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2022/9/16/cambodia-scam-compounds-trafficking",
+      "title": "Inside Cambodia's cybercrime scam compounds",
+      "publisher": "Al Jazeera",
+      "date": "2022-09-16",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.ohchr.org/en/documents/reports/ahrc5523-situation-human-rights-cambodia",
+      "title": "Situation of Human Rights in Cambodia",
+      "publisher": "UN OHCHR",
+      "date": "2023",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

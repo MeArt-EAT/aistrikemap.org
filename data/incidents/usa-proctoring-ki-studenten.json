@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-proctoring-ki-studenten",
+  "name": "USA: KI-Prufungsaufsicht diskriminiert Studierende mit dunkler Hautfarbe und Behinderungen",
+  "description": "Im Zuge der COVID-19-Pandemie setzten US-amerikanische Hochschulen in grossem Umfang KI-gestutzte Prufungsaufsichtssoftware wie Proctorio und ExamSoft ein. Diese Systeme zeigten erhebliche Fehler bei der Erkennung von Gesichtern dunklerer Hautfarbe sowie bei Studierenden mit Behinderungen. Falsch-positive Betrugsalarme betrafen uberproportional Schwarze Studierende, Asiaten und Studierende mit motorischen Einschrankungen oder Sehbehinderungen. Die Systeme verletzten zudem datenschutzrechtliche Grundsatze durch umfangreiche Uberwachung im privaten Wohnraum der Studierenden.",
+  "startDate": "2020-03",
+  "location": {
+    "@type": "Place",
+    "name": "Washington DC, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.9072,
+      "longitude": -77.0369
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["discrimination", "surveillance"],
+  "asm:affectedRights": ["Recht auf Bildung", "Recht auf Gleichbehandlung", "Diskriminierungsschutz", "Recht auf Privatsphare", "Rechte von Menschen mit Behinderungen"],
+  "asm:actors": [
+    {
+      "name": "Proctorio",
+      "type": "company",
+      "asm:systems": ["Proctorio Remote Proctoring Software", "KI-Verhaltensanalyse", "Gesichtserkennung"]
+    },
+    {
+      "name": "ExamSoft",
+      "type": "company",
+      "asm:systems": ["ExamSoft Examplify", "Biometrische Verifizierung"]
+    },
+    {
+      "name": "US-amerikanische Universitaten",
+      "type": "organization",
+      "asm:systems": ["Online-Prufungssysteme"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-03",
+      "phase": "infrastructure",
+      "title": "Massenhafter Umstieg auf KI-Prufungsaufsicht wahrend COVID-19",
+      "description": "Mit der Schliesssung von Campussen im Marz 2020 stellen Hunderte US-amerikanischer Hochschulen innerhalb weniger Wochen auf Online-Prufungen mit KI-Aufsicht um. Proctorio und ExamSoft erfahren einen explosionsartigen Zuwachs an Nutzern. Die Systeme werden ohne ausreichende Tests auf Fairness und ohne barrierefreiheitsbezogene Beurteilungen eingefuhrt.",
+      "sources": ["https://www.eff.org/deeplinks/2020/08/proctoring-apps-subject-students-unnecessary-surveillance"]
+    },
+    {
+      "date": "2020-08",
+      "phase": "doctrine",
+      "title": "EFF und Studierendenverbande dokumentieren Diskriminierung",
+      "description": "Die Electronic Frontier Foundation veroffentlicht einen umfassenden Bericht, der zeigt, dass KI-Prufungsaufsicht Schwarze Studierende, asiatische Studierende sowie Personen mit Behinderungen systematisch benachteiligt. Gesichtserkennungsalgorithmen versagen haufig bei dunklerer Hautfarbe und fordern Studierende auf, 'ihr Gesicht zu beleuchten', was als entwurdigend empfunden wird. Studierende mit Tremor oder Sehbehinderungen werden falschlich des Betrugs verdachtigt.",
+      "sources": ["https://www.eff.org/deeplinks/2020/08/proctoring-apps-subject-students-unnecessary-surveillance"]
+    },
+    {
+      "date": "2021-04",
+      "phase": "event",
+      "title": "Klagen und verbreitete Berichte uber Betrugsfalschvorwurfe",
+      "description": "Mehrere Studierende und Advocacy-Gruppen reichen Klagen gegen Universitaten und Proctoring-Unternehmen ein. Berichte hauften sich, dass Schwarze Studierende aufgefordert wurden, in anderen Raumen zu prufungen, ihre Wohnungen zu durchsuchen oder sich mehrfach zu verifizieren. Einige Studierende verloren Studienpunkte aufgrund fehlerhafter Betrugsalarme. Die NAACP und das ACLU unterstutzen Betroffene.",
+      "sources": ["https://www.eff.org/deeplinks/2021/04/proctoring-companies-face-legal-and-legislative-scrutiny"]
+    },
+    {
+      "date": "2022-01",
+      "phase": "consequences",
+      "title": "Teilweise Abkehr von KI-Proctoring an US-Universitaten",
+      "description": "Infolge des offentlichen Drucks, der Klagen und legislativer Initiativen beginnen mehrere US-Universitaten, KI-Prufungsaufsicht einzuschranken oder aufzugeben. Einige Bundesstaaten erwaGen Gesetzgebung zur Regulierung von Proctoring-Software. Proctorio ist mit Datenschutzklagen und parlamentarischer Kritik konfrontiert. Dennoch nutzen Hunderte Hochschulen weiterhin diese Systeme.",
+      "sources": ["https://www.eff.org/deeplinks/2020/08/proctoring-apps-subject-students-unnecessary-surveillance"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.eff.org/deeplinks/2020/08/proctoring-apps-subject-students-unnecessary-surveillance",
+      "title": "Proctoring Apps Subject Students to Unnecessary Surveillance",
+      "publisher": "Electronic Frontier Foundation",
+      "date": "2020-08-19",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.eff.org/deeplinks/2021/04/proctoring-companies-face-legal-and-legislative-scrutiny",
+      "title": "Proctoring Companies Face Legal and Legislative Scrutiny",
+      "publisher": "Electronic Frontier Foundation",
+      "date": "2021-04-27",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.aclu.org/news/privacy-technology/surveillance-surveillance-ai-proctoring",
+      "title": "The Surveillance of Students: AI Proctoring",
+      "publisher": "ACLU",
+      "date": "2021",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

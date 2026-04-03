@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/nepal-social-media-ueberwachung",
+  "name": "Nepal: Social-Media-Überwachung und Unterdrückung von Online-Dissens",
+  "description": "Die nepalesische Regierung setzt zunehmend Cyberkriminalitätsgesetze und Social-Media-Monitoring ein, um kritische Stimmen im Internet zum Schweigen zu bringen. Ein Comedian wurde 2020 wegen eines Facebook-Posts über Premierminister Oli verhaftet. Das IT-Gesetz von 2019 kriminalisiert Online-Inhalte mit Gefängnisstrafen bis zu fünf Jahren. Die Online-Media-Direktive von 2023 verpflichtet Plattformen zur Registrierung und Inhaltskontrolle.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Kathmandu, Nepal",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.7172,
+      "longitude": 85.3240
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NP"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance", "political-pressure"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Pressefreiheit", "Recht auf Privatsphäre", "Recht auf freie Meinungsäusserung"],
+  "asm:actors": [
+    {
+      "name": "Nepalesische Regierung",
+      "type": "government"
+    },
+    {
+      "name": "Nepal Police Cyber Bureau",
+      "type": "government",
+      "asm:systems": ["Social Media Monitoring", "Cyberkriminalitätsverfolgung"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "IT-Gesetz schafft rechtliche Grundlage für Zensur",
+      "description": "Nepal verabschiedet ein neues IT-Gesetz mit Paragraphen, die Online-Inhalte kriminalisieren, die als 'unethisch', 'gesellschaftsfeindlich' oder als Verleumdung von Einzelpersonen oder Institutionen gelten. Strafrahmen bis zu fünf Jahren Gefängnis und Geldstrafen werden festgelegt. Menschenrechtsorganisationen kritisieren die vagen Definitionen, die eine willkürliche Strafverfolgung ermöglichen.",
+      "sources": ["https://www.freedomforum.org.np/"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Verhaftungen von Social-Media-Nutzern nehmen zu",
+      "description": "Das Nepal Police Cyber Bureau verhaftet mehrere Personen wegen Social-Media-Posts. Prominentester Fall: Der Comedian Pranesh Gautam wird wegen eines Facebook-Videos verhaftet, das Premierminister KP Sharma Oli verspottet. Freedom Forum Nepal dokumentiert dutzende Verhaftungen von Journalisten und Aktivisten auf Basis des IT-Gesetzes, darunter Studenten und Schüler.",
+      "sources": ["https://www.hrw.org/news/2021/03/10/nepal-social-media-crackdown"]
+    },
+    {
+      "date": "2022",
+      "phase": "event",
+      "title": "Systematische Überwachung von Oppositionellen und Aktivisten",
+      "description": "Berichte belegen, dass das Cyber Bureau gezielt Social-Media-Konten von politischen Aktivisten, Journalisten und Minderheitenvertretern überwacht. Mehrere Personen werden vorgeladen oder verhaftet, nachdem Beiträge zu Regierungskorruption, Grenzstreitigkeiten mit Indien oder Kritik an der Monarchiefrage verbreitet wurden. Die Selbstzensur steigt messbar an.",
+      "sources": ["https://www.freedomforum.org.np/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Online-Media-Direktive weitet staatliche Kontrolle aus",
+      "description": "Die Regierung erlässt die Online-Media-Direktive 2023, die alle Online-Medien zur Registrierung verpflichtet und staatliche Aufsicht über Inhalte einführt. Kritiker warnen, dass die Direktive als Instrument zur Kontrolle unabhängiger Medien missbraucht werden kann. Reporter ohne Grenzen und Freedom Forum Nepal fordern die Abschaffung der repressiven IT-Bestimmungen.",
+      "sources": ["https://www.freedomforum.org.np/", "https://www.hrw.org/asia/nepal"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.freedomforum.org.np/",
+      "title": "Press Freedom Reports Nepal",
+      "publisher": "Freedom Forum Nepal",
+      "date": "2023",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2021/03/10/nepal-social-media-crackdown",
+      "title": "Nepal: Social Media Crackdown Deepens",
+      "publisher": "Human Rights Watch",
+      "date": "2021-03-10",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://rsf.org/en/country/nepal",
+      "title": "Nepal Press Freedom Index",
+      "publisher": "Reporter ohne Grenzen",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

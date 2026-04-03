@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/israel-blue-wolf-palaestina",
+  "name": "Israel: Blue Wolf — Gesichtserkennungsdatenbank gegen Palaestinenser",
+  "description": "Das israelische Militaer (IDF) setzt seit 2019 das Gesichtserkennungssystem 'Blue Wolf' in den besetzten palaestinensischen Gebieten ein. Soldaten wurden angehalten, systematisch Fotos von Palaestinensern zu machen, um eine umfassende Gesichtsdatenbank aufzubauen. Berichte von Breaking the Silence und der Washington Post belegen, dass Einheiten miteinander konkurrierten, wer die meisten Gesichter erfasst. Das System wird an Checkpoints eingesetzt, um Bewegungsfreiheit zu kontrollieren und Personen ohne Wissen der Betroffenen zu identifizieren.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Hebron, Westjordanland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.5326,
+      "longitude": 35.0998
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PS"
+    }
+  },
+  "asm:incidentType": ["facial-recognition", "surveillance", "military-ai", "discrimination"],
+  "asm:affectedRights": ["Recht auf Privatsphaere", "Bewegungsfreiheit", "Menschenwuerde", "Schutz vor Diskriminierung", "Recht auf faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "Israelische Streitkraefte (IDF)",
+      "type": "military",
+      "asm:systems": ["Blue Wolf", "Wolf Pack"]
+    },
+    {
+      "name": "AnyVision",
+      "type": "company",
+      "asm:systems": ["Better Tomorrow Gesichtserkennungsplattform"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Entwicklung und Aufbau der Blue-Wolf-Datenbank",
+      "description": "Das israelische Militaer entwickelt Blue Wolf als umfassende Gesichtsdatenbank fuer die Westbank. Soldaten erhalten Smartphones mit einer App, die Gesichter in Echtzeit mit der Datenbank abgleicht. Einheiten werden angehalten, so viele Palaestinenser wie moeglich zu fotografieren, um die Datenbank zu fuellen — einschliesslich Menschen, die keine Verdaechtigen sind.",
+      "sources": ["https://www.washingtonpost.com/world/middle_east/israel-palestinians-surveillance-facial-recognition/2021/11/05/"]
+    },
+    {
+      "date": "2021-11",
+      "phase": "doctrine",
+      "title": "Washington Post veroeffentlicht Enthuellung",
+      "description": "Die Washington Post berichtet erstmals ausfuehrlich ueber Blue Wolf basierend auf Aussagen ehemaliger Soldaten. Berichte von Breaking the Silence dokumentieren den Wettbewerb zwischen Einheiten und die systematische Erfassung unbescholtener Zivilpersonen. Microsoft wird in Berichten als indirekter Technologielieferant ueber Azure-Cloud-Dienste genannt, distanziert sich jedoch.",
+      "sources": ["https://www.washingtonpost.com/world/middle_east/israel-palestinians-surveillance-facial-recognition/2021/11/05/"]
+    },
+    {
+      "date": "2022",
+      "phase": "event",
+      "title": "Ausweitung auf 'Smart Wall' und weitere Gebiete",
+      "description": "Berichte zeigen, dass das System Teil einer breiteren 'Smart Wall'-Strategie ist, die Gesichtserkennung, KI-Auswertung von Drohnenbildern und Datenbankabgleiche kombiniert. Checkpoints in Hebron und anderen Staedten nutzen das System routinemaessig. Palaestinenser berichten von willkuerlichen Verzoegerungen und Verhaftungen auf Basis nicht nachvollziehbarer algorithmischer Entscheidungen.",
+      "sources": ["https://breakingthesilence.org.il/"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Internationale Kritik und anhaltende Straflosigkeit",
+      "description": "UN-Menschenrechtsgremien und internationale Organisationen kritisieren den Einsatz von Massengesichtserkennung gegen eine Zivilbevoelkerung unter Besatzung als Verletzung des humanitaeren Voelkerrechts. Israel bestreitet die schwersten Vorwuerfe. AnyVision distanziert sich von militaerischen Anwendungen. Es gibt keine rechtliche Konsequenz fuer die betroffenen Unternehmen oder Verantwortlichen.",
+      "sources": ["https://www.hrw.org/world-report/2023/country-chapters/israel-and-palestine"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.washingtonpost.com/world/middle_east/israel-palestinians-surveillance-facial-recognition/2021/11/05/",
+      "title": "Israel's use of facial recognition technology in the West Bank",
+      "publisher": "Washington Post",
+      "date": "2021-11-05",
+      "type": "news-article"
+    },
+    {
+      "url": "https://breakingthesilence.org.il/",
+      "title": "Testimonies on Blue Wolf and surveillance in the West Bank",
+      "publisher": "Breaking the Silence",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2023/country-chapters/israel-and-palestine",
+      "title": "World Report 2023: Israel and Palestine",
+      "publisher": "Human Rights Watch",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

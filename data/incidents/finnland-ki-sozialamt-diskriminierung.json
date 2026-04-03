@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/finnland-ki-sozialamt-diskriminierung",
+  "name": "Finnland: Kela-Algorithmus bei Sozialleistungsentscheidungen unter Diskriminierungsverdacht",
+  "description": "Die finnische Sozialversicherungsanstalt Kela (Kansaneläkelaitos) setzte automatisierte Entscheidungssysteme bei der Bearbeitung von Sozialleistungsanträgen ein. Berichte des finnischen Ombudsmanns und von AlgorithmWatch zeigen, dass der Einsatz von Algorithmen zu intransparenten und potenziell diskriminierenden Entscheidungen geführt hat. Im Kontext der EU-KI-Verordnung gilt dieses System als Hochrisiko-KI, was Anpassungsbedarf auslöste.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Helsinki, Finnland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 60.1699,
+      "longitude": 24.9384
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FI"
+    }
+  },
+  "asm:incidentType": ["discrimination", "data-misuse"],
+  "asm:affectedRights": ["Recht auf soziale Sicherheit", "Recht auf faires Verfahren", "Recht auf Gleichbehandlung", "Schutz personenbezogener Daten"],
+  "asm:actors": [
+    {
+      "name": "Kela (Kansaneläkelaitos)",
+      "type": "government",
+      "asm:systems": ["Automatisiertes Leistungsentscheidungssystem"]
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Kela startet Piloten zur automatisierten Leistungsbearbeitung",
+      "description": "Kela führt Pilotprojekte ein, bei denen Algorithmen die Bearbeitung von Anträgen auf Arbeitslosengeld, Wohngeld und Grundsicherung (Perustoimeentulotuki) unterstützen oder teilweise automatisieren. Ziel ist die Effizienzsteigerung und Beschleunigung der Fallbearbeitung. Betroffene werden nicht über algorithmische Entscheidungsunterstützung informiert.",
+      "sources": ["https://algorithmwatch.org/"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Ombudsmann äussert Bedenken zu algorithmischer Transparenz",
+      "description": "Der finnische Nicht-Diskriminierungsombudsmann veröffentlicht Berichte, die fehlende Transparenz bei automatisierten Verwaltungsentscheidungen kritisieren. Sozialarbeiter und Beratungsstellen berichten von Fällen, in denen Antragsteller keine nachvollziehbare Begründung für abgelehnte Leistungsanträge erhalten. Die Anfechtung algorithmischer Bescheide erweist sich als schwierig und ressourcenintensiv.",
+      "sources": ["https://algorithmwatch.org/", "https://www.oikeusasiamies.fi/en/"]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "AlgorithmWatch dokumentiert Benachteiligung vulnerabler Gruppen",
+      "description": "AlgorithmWatch und finnische Forschungseinrichtungen analysieren Fallmuster und stellen fest, dass bestimmte Bevölkerungsgruppen — darunter Migranten, ältere Menschen und Personen mit komplexen Lebenssituationen — bei algorithmisch bearbeiteten Anträgen häufiger Ablehnungen oder Verzögerungen erfahren. Die fehlende Erklärbarkeit der Algorithmen verhindert eine systematische Überprüfung.",
+      "sources": ["https://algorithmwatch.org/"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "EU-KI-Verordnung erzwingt Neuklassifizierung als Hochrisiko-System",
+      "description": "Mit dem Fortschreiten der Verhandlungen zur EU-KI-Verordnung wird deutlich, dass automatisierte Systeme zur Bewertung von Sozialleistungsansprüchen als Hochrisiko-KI eingestuft werden. Kela muss seine Prozesse anpassen, um Anforderungen an Transparenz, Dokumentation und menschliche Aufsicht zu erfüllen. Der Fall wird international als Beispiel für die Notwendigkeit algorithmischer Rechenschaftspflicht diskutiert.",
+      "sources": ["https://algorithmwatch.org/", "https://www.oikeusasiamies.fi/en/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://algorithmwatch.org/",
+      "title": "Automating Society Report: Finland",
+      "publisher": "AlgorithmWatch",
+      "date": "2022",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.oikeusasiamies.fi/en/",
+      "title": "Parliamentary Ombudsman Annual Report",
+      "publisher": "Finnischer Parlamentsombudsmann",
+      "date": "2020",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.kela.fi/web/en",
+      "title": "Kela: Digital Services and Automation",
+      "publisher": "Kela",
+      "date": "2021",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

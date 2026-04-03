@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usbekistan-ki-smart-city-ueberwachung",
+  "name": "Usbekistan: Huawei Safe City und KI-Ueberwachung in Taschkent",
+  "description": "Usbekistan setzt seit 2019 Huaweis Safe City-System in Taschkent ein, das Gesichtserkennung, KI-gestuetzte Videoueberwachung und zentralisierte Datenverwaltung umfasst. Das System wird als Modernisierungsmassnahme praesentiert, birgt aber erhebliche Risiken fuer die Zivilgesellschaft in einem Staat, der von Freedom House als 'Not Free' eingestuft wird. Waehrend der Karakalpakstan-Proteste 2022 wurde das System offenbar zur Identifizierung von Demonstranten genutzt.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Taschkent, Usbekistan",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.2995,
+      "longitude": 69.2401
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "UZ"
+    }
+  },
+  "asm:incidentType": ["surveillance", "facial-recognition"],
+  "asm:affectedRights": ["Recht auf Privatsphaere", "Meinungsfreiheit", "Versammlungsfreiheit", "Informationelle Selbstbestimmung"],
+  "asm:actors": [
+    {
+      "name": "Usbekische Regierung",
+      "type": "government",
+      "asm:systems": ["Safe City Taschkent", "KI-Ueberwachungssystem"]
+    },
+    {
+      "name": "Huawei Technologies",
+      "type": "company",
+      "asm:systems": ["Safe City Solution", "Gesichtserkennungsmodule"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Vertragsabschluss und Beginn der Safe-City-Implementierung",
+      "description": "Die usbekische Regierung schliesst einen Vertrag mit Huawei ueber die Implementierung eines Safe City-Systems fuer Taschkent. Das System umfasst Tausende Kameras mit KI-Videoanalyse, Gesichtserkennung und eine zentrale Kommandozentrale. Huawei bewirbt das Projekt als Teil seiner globalen Smart-City-Exportstrategie. Transparenz ueber genaue Faehigkeiten und Datenschutzmassnahmen fehlt.",
+      "sources": ["https://rferl.org/a/uzbekistan-surveillance-cameras-safe-city/30342688.html"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Ausweitung auf weitere Staedte und Integration in Sicherheitsapparat",
+      "description": "Das System wird auf weitere grosse Staedte Usbekistans ausgeweitet. Die Kameradichte in Taschkent steigt stark an. Das Innenministerium integriert Safe City in seine operative Infrastruktur. Privacy International und RFE/RL berichten ueber das System, koennen jedoch genaue Faehigkeiten aufgrund fehlender Transparenz nicht vollstaendig dokumentieren.",
+      "sources": ["https://privacyinternational.org/long-read/3569/surveillance-package-deals"]
+    },
+    {
+      "date": "2022-07",
+      "phase": "event",
+      "title": "Karakalpakstan-Proteste: Verdacht auf Einsatz zur Demonstrantenerkennung",
+      "description": "Bei schweren Protesten in der autonomen Republik Karakalpakstan gegen geplante Verfassungsaenderungen werden Demonstranten identifiziert und verhaftet. Beobachter vermuten den Einsatz von Gesichtserkennungssystemen, koennen dies aufgrund mangelnder Transparenz jedoch nicht direkt beweisen. Dutzende Demonstranten werden zu langen Haftstrafen verurteilt. Internetverbindungen werden zeitweise gedrosselt.",
+      "sources": ["https://rferl.org/a/uzbekistan-karakalpakstan-protests/31932001.html"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Ausweitung der Ueberwachungsinfrastruktur ohne Reformdruck",
+      "description": "Usbekistan weitet seine Smart-City-Infrastruktur weiter aus. Kritische Stimmen zur Ueberwachung im Land werden unterdrueckt. Internationale Investoren und Handelspartner thematisieren Datenschutzbedenken nicht oeffentlich. Freedom House bewertet Usbekistan weiterhin als 'Not Free'. Das System gilt als Modell fuer weitere zentralasiatische Staaten.",
+      "sources": ["https://freedomhouse.org/country/uzbekistan"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://rferl.org/a/uzbekistan-surveillance-cameras-safe-city/30342688.html",
+      "title": "Uzbekistan Rolls Out Surveillance Cameras, Raising Fears Of Chinese-Style Monitoring",
+      "publisher": "Radio Free Europe/Radio Liberty",
+      "date": "2019",
+      "type": "news-article"
+    },
+    {
+      "url": "https://privacyinternational.org/long-read/3569/surveillance-package-deals",
+      "title": "Surveillance Package Deals: Huawei's Safe City Technology",
+      "publisher": "Privacy International",
+      "date": "2020",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://rferl.org/a/uzbekistan-karakalpakstan-protests/31932001.html",
+      "title": "Uzbekistan's Karakalpakstan Protests and the Crackdown",
+      "publisher": "Radio Free Europe/Radio Liberty",
+      "date": "2022-07",
+      "type": "news-article"
+    },
+    {
+      "url": "https://freedomhouse.org/country/uzbekistan",
+      "title": "Freedom in the World: Uzbekistan",
+      "publisher": "Freedom House",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

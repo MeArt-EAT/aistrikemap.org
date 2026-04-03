@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/myanmar-telecom-daten-militaer",
+  "name": "Myanmar: Militärjunta zwingt Telekomkonzerne zur Datenweitergabe nach Putsch",
+  "description": "Nach dem Militärputsch vom Februar 2021 fordert die Junta (Tatmadaw) von den in Myanmar tätigen Telekommunikationsunternehmen Telenor und Ooredoo Zugang zu Kundendaten und die Installation von Überwachungsinfrastruktur. Telenor veröffentlicht mehrere Transparenzberichte, in denen die Behördenanfragen dokumentiert werden. 2022 wird Telenor zum Verkauf seiner Myanmar-Sparte gezwungen — an ein Unternehmen mit Verbindungen zur Junta. Die Daten ermöglichen der Militärregierung umfassende Überwachung der Zivilgesellschaft.",
+  "startDate": "2021-02",
+  "location": {
+    "@type": "Place",
+    "name": "Yangon, Myanmar",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 16.8661,
+      "longitude": 96.1951
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MM"
+    }
+  },
+  "asm:incidentType": ["surveillance", "data-misuse", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Meinungsfreiheit", "Versammlungsfreiheit", "Recht auf Leben"],
+  "asm:actors": [
+    {
+      "name": "Myanmarische Militärjunta (Tatmadaw / SAC)",
+      "type": "military",
+      "asm:systems": ["Telekommunikationsüberwachung", "IMSI-Catcher", "Deep Packet Inspection"]
+    },
+    {
+      "name": "Telenor Myanmar",
+      "type": "company"
+    },
+    {
+      "name": "Ooredoo Myanmar",
+      "type": "company"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-02-01",
+      "phase": "infrastructure",
+      "title": "Militärputsch und sofortige Überwachungsanforderungen",
+      "description": "Das Militär unter General Min Aung Hlaing übernimmt die Macht und verhaftet die gewählte Regierung. Innerhalb von Tagen werden Telenor, Ooredoo und andere Telekomkonzerne angewiesen, Abhörzugang zu ihren Netzen zu ermöglichen und Kundendaten herauszugeben. Das Militär nutzt bestehende Gesetze aus der Kolonialzeit sowie neue Notstandsdekrete als Rechtsgrundlage. Netzwerke werden stundenweise abgeschaltet, um Proteste zu koordinieren.",
+      "sources": ["https://www.telenor.com/media/announcements/2021/myanmar-transparency-report/"]
+    },
+    {
+      "date": "2021-06",
+      "phase": "event",
+      "title": "Telenor veröffentlicht Transparenzbericht zu Behördenanfragen",
+      "description": "Telenor veröffentlicht einen Transparenzbericht, der offenbart, dass die Junta in den ersten Monaten nach dem Putsch hunderte Anfragen zur Herausgabe von Nutzerdaten gestellt hat. Das Unternehmen gibt an, unter starkem rechtlichem Druck zu stehen. Justice for Myanmar dokumentiert, wie die abgerufenen Daten zur Identifizierung von Aktivisten genutzt werden, die anschließend verhaftet oder getötet werden.",
+      "sources": ["https://www.justiceformyanmar.org/stories/telenor-must-refuse-to-hand-over-data-to-myanmar-military"]
+    },
+    {
+      "date": "2022-03",
+      "phase": "doctrine",
+      "title": "Telenor zum Zwangsverkauf an juntanahe Firma gedrängt",
+      "description": "Unter anhaltendem Druck der Junta und angesichts der Unmöglichkeit, Menschenrechtsprinzipien aufrechtzuerhalten, verkauft Telenor seine Myanmar-Sparte an M1 Group — ein Unternehmen mit Verbindungen zu einem libanesischen Milliardär. Menschenrechtsgruppen warnen, dass die Kundendaten von 18 Millionen Nutzern nun vollständig unter Kontrolle der Junta fallen. Ooredoo verkauft ebenfalls an ein Konsortium mit unklaren Eigentumsstrukturen.",
+      "sources": ["https://www.hrw.org/news/2022/03/08/myanmar-telenor-sale-imperils-users-data"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Massenverhaftungen auf Basis von Telekommunikationsdaten",
+      "description": "Justice for Myanmar und Amnesty International dokumentieren Fälle, in denen verhaftete Aktivisten berichten, dass die Junta Kenntnis von privaten Kommunikationen hatte, die offenbar aus Telekomüberwachung stammen. Das UN-Sonderberichterstattermandat für Myanmar fordert internationalen Druck auf Unternehmen, die Überwachungstechnologie an die Junta liefern. Die Bürgerkriegssituation verschärft den Einsatz digitaler Überwachung.",
+      "sources": ["https://www.justiceformyanmar.org/stories/telenor-must-refuse-to-hand-over-data-to-myanmar-military"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.telenor.com/media/announcements/2021/myanmar-transparency-report/",
+      "title": "Telenor Myanmar Transparency Report 2021",
+      "publisher": "Telenor",
+      "date": "2021-06",
+      "type": "corporate-disclosure"
+    },
+    {
+      "url": "https://www.justiceformyanmar.org/stories/telenor-must-refuse-to-hand-over-data-to-myanmar-military",
+      "title": "Telenor must refuse to hand over data to Myanmar military",
+      "publisher": "Justice for Myanmar",
+      "date": "2021-05",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2022/03/08/myanmar-telenor-sale-imperils-users-data",
+      "title": "Myanmar: Telenor Sale Imperils Users' Data",
+      "publisher": "Human Rights Watch",
+      "date": "2022-03-08",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

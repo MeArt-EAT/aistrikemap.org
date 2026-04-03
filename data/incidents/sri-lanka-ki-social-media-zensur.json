@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/sri-lanka-ki-social-media-zensur",
+  "name": "Sri Lanka: Social-Media-Sperren und digitale Überwachung während der Wirtschaftskrise 2022",
+  "description": "Sri Lanka blockierte während seiner schweren Wirtschaftskrise 2022 und der darauffolgenden Massenproteste wiederholt soziale Medien und nutzte digitale Überwachungstechnologie zur Kontrolle der Demonstrationen. Die Regierung unter Präsident Gotabaya Rajapaksa sperrte mehrfach Facebook, Twitter und andere Plattformen, um die Koordination von Protesten zu unterbinden. NetBlocks und Access Now dokumentierten gezielte Internetsperren rund um Schlüsselereignisse wie den Sturm auf den Präsidentenpalast im Juli 2022. Aktivisten berichteten von Überwachung ihrer digitalen Kommunikation.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Colombo, Sri Lanka",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 6.9271,
+      "longitude": 79.8612
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "LK"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Informationsfreiheit", "Versammlungsfreiheit", "Pressefreiheit", "Recht auf Privatsphäre"],
+  "asm:actors": [
+    {
+      "name": "Regierung Sri Lanka",
+      "type": "government",
+      "asm:systems": ["Social-Media-Sperrsystem", "ISP-Anweisungen zur Filterung", "digitale Überwachungsinfrastruktur"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Erste Social-Media-Blockaden nach kommunalen Unruhen",
+      "description": "Sri Lanka sperrt erstmals großflächig soziale Medien nach ethnischen Unruhen in der Region Kandy. Facebook, WhatsApp und Instagram werden für mehrere Tage blockiert. Die Regierung begründet die Maßnahme mit der Verbreitung von Fehlinformationen und Hassrede. Access Now dokumentiert dies als ersten Einsatz von Netzwerksperren zu Zensurprozwecken in Sri Lanka und warnt vor einem Präzedenzfall.",
+      "sources": ["https://www.accessnow.org/keepiton-sri-lanka-blocking-social-media-is-not-the-answer/"]
+    },
+    {
+      "date": "2022-03",
+      "phase": "doctrine",
+      "title": "Wirtschaftskrise löst Massenproteste aus — Regierung reagiert mit digitaler Kontrolle",
+      "description": "Als Sri Lanka in die schwerste Wirtschaftskrise seit der Unabhängigkeit gerät — Stromausfälle bis zu 13 Stunden täglich, fehlende Treibstoffe und Nahrungsmittel — beginnen landesweite Proteste. Die Regierung versucht, die Koordination über soziale Medien durch gezielte Verlangsamung und Sperrung von Plattformen zu erschweren. NetBlocks misst signifikante Einschränkungen mehrerer Plattformen in dieser Phase.",
+      "sources": ["https://netblocks.org/reports/social-media-blocked-in-sri-lanka-amid-protests-eBOQkBy1"]
+    },
+    {
+      "date": "2022-07-09",
+      "phase": "event",
+      "title": "Sturm auf Präsidentenpalast — Social-Media-Sperren während Eskalation",
+      "description": "Als Protestierende den Präsidentenpalast in Colombo stürmen und Präsident Gotabaya Rajapaksa zur Flucht zwingen, dokumentiert NetBlocks Internetsperren in Echtzeit. Facebook, YouTube und Twitter werden zeitweise blockiert. Access Now kritisiert, dass die Sperren die Öffentlichkeit daran hindern, sich über Sicherheitslage und politische Entwicklungen zu informieren. Journalisten berichten von Behinderungen bei der Berichterstattung.",
+      "sources": ["https://netblocks.org/reports/social-media-blocked-in-sri-lanka-amid-protests-eBOQkBy1"]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Ausbau von Überwachungskapazitäten unter neuer Regierung",
+      "description": "Trotz des Regierungswechsels nach Rajapaksas Rücktritt bleiben Gesetze bestehen, die weitreichende digitale Überwachung erlauben. Der Computer Crimes Act und ein umstrittener Online-Sicherheitsgesetzentwurf ermöglichen behördliche Zensur ohne richterliche Kontrolle. Access Now dokumentiert, dass Aktivisten nach den Protesten Überwachung ihrer digitalen Kommunikation feststellen. Der Rechtsstaat für digitale Freiheiten bleibt fragil.",
+      "sources": ["https://www.accessnow.org/keepiton-sri-lanka-blocking-social-media-is-not-the-answer/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://netblocks.org/reports/social-media-blocked-in-sri-lanka-amid-protests-eBOQkBy1",
+      "title": "Social media blocked in Sri Lanka amid protests",
+      "publisher": "NetBlocks",
+      "date": "2022-07",
+      "type": "technical-report"
+    },
+    {
+      "url": "https://www.accessnow.org/keepiton-sri-lanka-blocking-social-media-is-not-the-answer/",
+      "title": "#KeepItOn: Sri Lanka, blocking social media is not the answer",
+      "publisher": "Access Now",
+      "date": "2022",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

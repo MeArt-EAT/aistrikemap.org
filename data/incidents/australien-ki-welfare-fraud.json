@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/australien-ki-welfare-fraud",
+  "name": "Australien: Robodebt — Automatisiertes Sozialbetrugsystem verursacht Massenschaden",
+  "description": "Die australische Regierung setzte ab 2015 ein automatisiertes System zur Erkennung von Uberzahlungen bei Sozialleistungen ein, das Einkommensdaten der Steuerbehorde mit Sozialdaten abglich und dabei Jahresdurchschnittswerte auf einzelne Wochen hochrechnete. Diese fehlerhafte Methode erzeugte bei Hunderttausenden Empfangern falsche Schuldforderungen in Hohe von bis zu mehreren Tausend Dollar. Viele Betroffene zahlten aus Angst — darunter psychisch Kranke und Mittellose. 2023 stufte eine Konigliche Kommission das System als rechtswidrig ein.",
+  "startDate": "2015",
+  "location": {
+    "@type": "Place",
+    "name": "Melbourne, Australien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -37.8136,
+      "longitude": 144.9631
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AU"
+    }
+  },
+  "asm:incidentType": ["discrimination", "data-misuse"],
+  "asm:affectedRights": ["Recht auf Sozialleistungen", "Recht auf faires Verfahren", "Schutz vor fehlerhafter automatisierter Entscheidungsfindung", "Recht auf Privatsphare"],
+  "asm:actors": [
+    {
+      "name": "Australisches Ministerium fur Humandienstleistungen (Department of Human Services)",
+      "type": "government",
+      "asm:systems": ["Online Compliance Intervention (OCI) — Robodebt"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2015",
+      "phase": "infrastructure",
+      "title": "Einfuhrung des automatisierten Einkommensabgleichs",
+      "description": "Das australische Ministerium fur Humandienstleistungen fuhrt das 'Online Compliance Intervention'-System ein, das automatisch Jahreseinkommensdaten der australischen Steuerbehorde (ATO) mit Sozialleistungsdaten abgleicht. Das System errechnet Wocheneinkommen durch einfache Division des Jahreseinkommens durch 52 — ohne Berucksichtigung schwankender Einkommen, Saisonarbeit oder Doppelzahlungen. Interne Rechtsabteilungen warnen vor der fehlenden Rechtsgrundlage fur diese Methode, werden aber uberstimmt.",
+      "sources": ["https://robodebt.royalcommission.gov.au/"]
+    },
+    {
+      "date": "2017",
+      "phase": "doctrine",
+      "title": "Offentliche Emporing und erste Medienberichte",
+      "description": "Im Jahr 2017 erreichen die Beschwerden und Klagen ihren ersten Hohepunkt. Sozialverbande und Anwalte berichten von Fallen, in denen Betroffene Schulden von mehreren Tausend Dollar zugesandt bekommen, die auf fehlerhaften Berechnungen beruhen. Die Beweislast liegt vollstandig beim Betroffenen — das System geht von einer Schuld aus, bis die Person das Gegenteil beweist. Medienberichte zeigen psychische Zusammenbruche und finanzielle Notlagen als direkte Folgen.",
+      "sources": ["https://robodebt.royalcommission.gov.au/"]
+    },
+    {
+      "date": "2019",
+      "phase": "event",
+      "title": "Bundesgerichtsklage und erzwungenes Eingestandnis der Rechtswidrigkeit",
+      "description": "Eine Sammelklage vor dem Bundesgericht zwingt die Regierung 2019 zur Einigung: Sie gibt zu, dass das Durchschnittseinkommensverfahren keine valide Rechtsgrundlage hatte. Ein Vergleich uber 1,8 Milliarden australische Dollar wird vereinbart, der die Ruckerstattung falscher Schuldenforderungen an rund 443.000 Personen umfasst. Die Regierung versucht zunachst, die Einigung ohne formliche Schuldzuweisung abzuschliessen.",
+      "sources": ["https://robodebt.royalcommission.gov.au/"]
+    },
+    {
+      "date": "2023-07",
+      "phase": "consequences",
+      "title": "Konigliche Kommission: System war rechtswidrig und verursachte vermeidbare Tode",
+      "description": "Die Konigliche Kommission zu Robodebt veroffentlicht ihren Abschlussbericht im Juli 2023 und stuft das System als rechtswidrig und systematisch schadlich ein. Der Bericht dokumentiert, dass mehrere Betroffene infolge des psychischen Drucks durch die Forderungsschreiben Suizid begangen haben. Hochrangige Beamte und Minister werden namentlich fur das Verschweigen interner Rechtsbedenken verantwortlich gemacht. Der Bericht empfiehlt strafrechtliche Untersuchungen.",
+      "sources": ["https://robodebt.royalcommission.gov.au/publications/robodebt-royal-commission-final-report"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://robodebt.royalcommission.gov.au/publications/robodebt-royal-commission-final-report",
+      "title": "Robodebt Royal Commission Final Report",
+      "publisher": "Royal Commission into the Robodebt Scheme",
+      "date": "2023-07-07",
+      "type": "government-document"
+    },
+    {
+      "url": "https://robodebt.royalcommission.gov.au/",
+      "title": "Royal Commission into the Robodebt Scheme",
+      "publisher": "Australische Regierung",
+      "date": "2023",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

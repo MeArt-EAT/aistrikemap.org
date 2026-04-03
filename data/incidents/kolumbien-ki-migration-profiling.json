@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/kolumbien-ki-migration-profiling",
+  "name": "Kolumbien: KI-Profiling an der Grenze diskriminiert venezolanische Migranten",
+  "description": "Kolumbien setzt an der Grenze zu Venezuela, insbesondere in Cucuta, KI-gestutzte Profilierungssysteme ein, um venezolanische Migranten zu screenen. Das System kategorisiert Migranten nach Risikoprofilen, die auf unklaren Algorithmen basieren und Faktoren wie Alter, Herkunftsort und Reisemuster einbeziehen. Menschenrechtsorganisationen dokumentieren, dass das Profiling zu willkurlichen Zuruckweisungen und unverhaltnisamssiger Uberwachung von Venezolanern fuhrt, obwohl Colombia als grosstes Aufnahme-Land fur venezolanische Fluchtlinge gilt.",
+  "startDate": "2018-01",
+  "location": {
+    "@type": "Place",
+    "name": "Cucuta, Colombia",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 7.8891,
+      "longitude": -72.4967
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CO"
+    }
+  },
+  "asm:incidentType": ["discrimination", "surveillance", "predictive-policing"],
+  "asm:affectedRights": ["Recht auf Asyl", "Bewegungsfreiheit", "Recht auf Gleichbehandlung", "Diskriminierungsschutz", "Schutz vor Zuruckweisung"],
+  "asm:actors": [
+    {
+      "name": "Kolumbianische Migrationsbehorde (Migracion Colombia)",
+      "type": "government",
+      "asm:systems": ["RUMV (Register venezolanischer Migranten)", "Biometrische Grenzuberwachung", "KI-Risikoanalyse"]
+    },
+    {
+      "name": "Internationale Organisation fur Migration (IOM)",
+      "type": "organization",
+      "asm:systems": ["Biometrische Datensysteme"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-06",
+      "phase": "infrastructure",
+      "title": "Massenmigration aus Venezuela und Aufbau von Grenzkontrollsystemen",
+      "description": "Wahrend die Zahl venezolanischer Migranten in Kolumbien auf uber 1,8 Millionen ansteigt, investiert die Regierung in digitale Grenzinfrastruktur. Mit Unterstutzung der IOM werden biometrische Systeme und Datenbanken aufgebaut. Das Register (RUMV) fur venezolanische Migranten wird als Grundlage fur spater eingesetzte Analysetools etabliert.",
+      "sources": ["https://www.hrw.org/news/2019/09/12/colombia-protect-rights-venezuelan-migrants"]
+    },
+    {
+      "date": "2020-01",
+      "phase": "doctrine",
+      "title": "Einfuhrung von KI-gestutztem Grenz-Screening",
+      "description": "Kolumbianische Grenzbehorden implementieren algorithmische Risikoanalyse fur einreisende Venezolaner. Das System verwendet Variablen, die mit ethnischer Zugehorigkeit und sozioonomischer Lage korrelieren. NGOs beginnen, Muster unverhaltnisamssiger Zuruckweisungen und verlangerer Befragungen fur bestimmte Migrantengruppen zu dokumentieren. Transparenz uber Algorithmen und Entscheidungskriterien fehlt vollstandig.",
+      "sources": ["https://www.hrw.org/news/2019/09/12/colombia-protect-rights-venezuelan-migrants"]
+    },
+    {
+      "date": "2021-08",
+      "phase": "event",
+      "title": "Schutzstatus TPS und anhaltende Profilierungsprobleme",
+      "description": "Kolumbien erlasst den Temporaren Schutzstatus (TPS) fur venezolanische Migranten, ein international gerubmtes Instrument. Gleichzeitig berichten Menschenrechtsorganisationen, dass das algorithmische Screening an der Grenze fortgesetzt wird und bestimmte Gruppen — vor allem junge Manner und Personen aus bestimmten venezolanischen Regionen — unverhaltnisamssig oft als 'Risikopersonen' eingestuft werden.",
+      "sources": ["https://www.hrw.org/news/2019/09/12/colombia-protect-rights-venezuelan-migrants"]
+    },
+    {
+      "date": "2022-11",
+      "phase": "consequences",
+      "title": "Kritik durch Menschenrechtsorganisationen und Forderung nach Transparenz",
+      "description": "Human Rights Watch und lokale Organisationen fordern Transparenz uber die eingesetzten Algorithmen und eine unabhangige Uberwachung des Grenzsystems. Die kolumbianische Regierung hat keine Auswirkungsfolgeabschatzung fur die KI-Systeme durchgefuhrt. Das Profiling-System dient inzwischen als Modell, das anderen lateinamerikanischen Staaten empfohlen wird, was Menschenrechtler als besorgniserregend bezeichnen.",
+      "sources": ["https://www.hrw.org/news/2019/09/12/colombia-protect-rights-venezuelan-migrants"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.hrw.org/news/2019/09/12/colombia-protect-rights-venezuelan-migrants",
+      "title": "Colombia: Protect Rights of Venezuelan Migrants",
+      "publisher": "Human Rights Watch",
+      "date": "2019-09-12",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.iom.int/countries/colombia",
+      "title": "IOM Colombia: Migration Response",
+      "publisher": "International Organization for Migration",
+      "date": "2022",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.accessnow.org/digital-rights-latin-america/",
+      "title": "Digital Rights in Latin America: Migration and Technology",
+      "publisher": "Access Now",
+      "date": "2022",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

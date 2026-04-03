@@ -1,0 +1,112 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/syrien-ki-ueberwachung-assad",
+  "name": "Syrien: Assad-Regime setzt europaische Uberwachungstechnologie gegen Dissidenten ein",
+  "description": "Ab 2011 nutzte das Assad-Regime Uberwachungstechnologie europaischer und amerikanischer Unternehmen — darunter Qosmos (Frankreich), Amesys (Frankreich) und Blue Coat Systems (USA) — um Internetverkehr zu uberwachen, Dissidenten zu identifizieren und zu verfolgen. Deep Packet Inspection (DPI) und KI-gestutzte Verhaltensanalyse ermoglichten die gezielte Identifikation und Verhaftung von Regimegegnern. Das Citizen Lab und Bloomberg enthullten den Technologietransfer.",
+  "startDate": "2011-03",
+  "location": {
+    "@type": "Place",
+    "name": "Damaskus, Syrien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.5138,
+      "longitude": 36.2765
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SY"
+    }
+  },
+  "asm:incidentType": ["surveillance", "censorship", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Privatsphare", "Meinungsfreiheit", "Recht auf Leben", "Versammlungsfreiheit", "Schutz vor willkurlicher Verhaftung"],
+  "asm:actors": [
+    {
+      "name": "Syrische Regierung (Assad-Regime)",
+      "type": "government",
+      "asm:systems": ["Deep Packet Inspection", "Internetuberwachungszentrale Damaskus"]
+    },
+    {
+      "name": "Qosmos / Amesys (Frankreich)",
+      "type": "company",
+      "asm:systems": ["DPI-Uberwachungssoftware", "Netzwerkuberwachungsinfrastruktur"]
+    },
+    {
+      "name": "Blue Coat Systems (USA)",
+      "type": "company",
+      "asm:systems": ["ProxySG Netzwerkfilter", "Inhaltsfilterung und Uberwachung"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2011-03",
+      "phase": "infrastructure",
+      "title": "Syrischer Burgerkrieg beginnt — Uberwachungssystem steht bereit",
+      "description": "Als der syrische Aufstand beginnt, verfugt das Assad-Regime bereits uber eine umfassende Internetuberwachungsinfrastruktur, die mit Hilfe westlicher Firmen aufgebaut wurde. Blue Coat-Systeme filtern und uberwachen Internetverkehr; Qosmos liefert DPI-Technologie fur Echtzeit-Analyse von Kommunikationsdaten.",
+      "sources": ["https://citizenlab.ca/2011/11/behind-blue-coat/"]
+    },
+    {
+      "date": "2011-11",
+      "phase": "doctrine",
+      "title": "Citizen Lab enthullt Blue-Coat-Einsatz in Syrien",
+      "description": "Das Citizen Lab der Universitat Toronto veroffentlicht Belege fur den Einsatz von Blue Coat ProxySG in Syrien. Die Gerate wurden eigentlich fur den irakischen Markt verkauft und dann nach Syrien weitergeleitet — ein moglicher Verstoss gegen US-Sanktionen. Blue Coat suspendiert technischen Support, Systeme laufen weiter.",
+      "sources": ["https://citizenlab.ca/2011/11/behind-blue-coat/"]
+    },
+    {
+      "date": "2012-08",
+      "phase": "event",
+      "title": "Bloomberg enthullt Qosmos-Technologie im syrischen Foltersystem",
+      "description": "Bloomberg Businessweek berichtet, dass Qosmos-Technologie in einem syrischen Uberwachungszentrum in Damaskus eingesetzt wurde, das der Sicherheitsdienst Mukhabarat betreibt. Die Technologie ermoglichte die Identifikation von Aktivisten anhand ihrer Online-Kommunikation. Verhaftete Dissidenten berichten, dass Verhorer Zugriff auf ihre privaten Nachrichten hatten.",
+      "sources": ["https://www.bloomberg.com/news/articles/2012-08-22/syria-s-cyber-crackdown"]
+    },
+    {
+      "date": "2013-06",
+      "phase": "consequences",
+      "title": "Strafanzeigen, EU-Exportkontrollen und anhaltende Straflosigkeit",
+      "description": "In Frankreich wird gegen Amesys Strafanzeige wegen Beihilfe zur Folter erstattet. Privacy International und Human Rights Watch fordern verscharfte EU-Exportkontrollen fur Uberwachungstechnologie. Die EU verscharft 2014 den Verhaltenskodex fur Rustungsexporte. Strafverfolgung gegen Unternehmensverantwortliche bleibt weitgehend aus.",
+      "sources": ["https://privacyinternational.org/report/2718/surveillance-industry-and-human-rights"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://citizenlab.ca/2011/11/behind-blue-coat/",
+      "title": "Behind Blue Coat: Investigations of Commercial Filtering in Syria",
+      "publisher": "Citizen Lab",
+      "date": "2011-11",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2012-08-22/syria-s-cyber-crackdown",
+      "title": "Syria's Cyber Crackdown",
+      "publisher": "Bloomberg Businessweek",
+      "date": "2012-08-22",
+      "type": "news-article"
+    },
+    {
+      "url": "https://privacyinternational.org/report/2718/surveillance-industry-and-human-rights",
+      "title": "Surveillance Industry and Human Rights",
+      "publisher": "Privacy International",
+      "date": "2016",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/report/2012/03/22/torture-archipelago/arbitrary-arrests-torture-and-enforced-disappearances-syria",
+      "title": "Torture Archipelago: Arbitrary Arrests, Torture, and Enforced Disappearances in Syria",
+      "publisher": "Human Rights Watch",
+      "date": "2012-07",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

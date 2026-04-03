@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/bahrain-finfisher-aktivisten",
+  "name": "Bahrain: FinFisher-Spyware gegen Pro-Demokratie-Aktivisten",
+  "description": "Die Regierung Bahrains setzte die kommerzielle Uberwachungssoftware FinFisher (auch FinSpy genannt) des britisch-deutschen Unternehmens Gamma Group ein, um Pro-Demokratie-Aktivisten, Menschenrechtsverteidiger und Oppositionspolitiker — darunter Personen im Exil — zu uberwachen. Das Citizen Lab der Universitat Toronto wies Bahrain 2012 als einen der Betreiber von FinFisher nach. Die Software ermoglichte vollstandigen Zugriff auf Gerate: Kamera, Mikrofon, Kommunikation und gespeicherte Daten. Die Entdeckung wurde als Durchbruch in der Forschung zu kommerzieller Uberwachungstechnologie gewertet.",
+  "startDate": "2011",
+  "location": {
+    "@type": "Place",
+    "name": "Manama, Bahrain",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.2285,
+      "longitude": 50.5860
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BH"
+    }
+  },
+  "asm:incidentType": ["surveillance", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Privatsphare", "Meinungsfreiheit", "Versammlungsfreiheit", "Schutz vor willkurlicher Uberwachung", "Recht auf faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "Bahrainische Regierung",
+      "type": "government",
+      "asm:systems": ["FinFisher/FinSpy-Einsatz", "Staatsgeheimdienstinfrastruktur"]
+    },
+    {
+      "name": "FinFisher / Gamma Group",
+      "type": "company",
+      "asm:systems": ["FinFisher", "FinSpy", "FinFly"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2011-02",
+      "phase": "infrastructure",
+      "title": "Arabischer Fruhling: Repression von Pro-Demokratie-Protesten",
+      "description": "Im Zuge des Arabischen Fruhlings brechen in Bahrain massive Pro-Demokratie-Proteste aus. Die Regierung ruft den Ausnahmezustand aus und lasst saudische Truppen ins Land. Dutzende Aktivisten werden verhaftet, gefoltert und vor Militargerichte gestellt. Parallel dazu beginnt der systematische Einsatz digitaler Uberwachungswerkzeuge gegen oppositionelle Stimmen.",
+      "sources": ["https://www.hrw.org/world-report/2012/country-chapters/bahrain"]
+    },
+    {
+      "date": "2012-07",
+      "phase": "doctrine",
+      "title": "Citizen Lab entdeckt FinFisher-Infrastruktur in Bahrain",
+      "description": "Forscher des Citizen Lab der Universitat Toronto veroffentlichen Belege, dass Bahrain FinFisher-Software gegen Aktivisten einsetzt. Infizierte Dateien wurden als Videolinks zu Protesten getarnt verbreitet. Das Citizen Lab identifiziert konkrete Befehls- und Kontrollserver, die dem bahrainischen Staat zugeordnet werden konnen. Dies ist eine der ersten veroffentlichten Nachweise staatlichen Einsatzes kommerzieller Spyware gegen eigene Bevolkerung.",
+      "sources": ["https://citizenlab.ca/2012/07/is-your-phone-infected-by-finfisher/"]
+    },
+    {
+      "date": "2014",
+      "phase": "event",
+      "title": "Fortsetzung des Targetings trotz offentlicher Enthullung",
+      "description": "Trotz internationaler Kritik setzt Bahrain die Uberwachung fort. Neue Citizen-Lab-Berichte zeigen, dass prominente Aktivisten — darunter Personen, die nach Grossbritannien und andere Lander geflohen sind — weiter mit FinFisher uberwacht werden. Bahrain Watch dokumentiert konkrete Opfer: Menschenrechtler, politische Oppositionelle und Journalisten. Die Software ermoglicht vollstandigen Geratenangriff ohne physischen Zugang.",
+      "sources": ["https://bahrainwatch.org/blog/2014/08/07/finfisher-continued-bahrain/"]
+    },
+    {
+      "date": "2019",
+      "phase": "consequences",
+      "title": "Strafverfolgung von FinFisher in Deutschland — Bahrain bleibt unbehelligt",
+      "description": "Die Staatsanwaltschaft Munchens eroffnet Ermittlungen gegen Gamma Group wegen moglicher Exportkontrollverletzungen. Trotz klar dokumentierten Einsatzes in Bahrain und anderen repressiven Staaten bleibt eine strafrechtliche Verurteilung aus; das Verfahren wird eingestellt. Bahrain ergreift keine Massnahmen gegen die verantwortlichen Staatsstellen. Die Falle etablieren kommerzielle Spyware als globales Menschenrechtsproblem und dienen als Vorlaufer spaterer Enthullungen zu Pegasus.",
+      "sources": ["https://www.privacyinternational.org/case-study/1742/finfisher-case-germany"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://citizenlab.ca/2012/07/is-your-phone-infected-by-finfisher/",
+      "title": "Is Your Phone Infected by FinFisher?",
+      "publisher": "Citizen Lab, Universitat Toronto",
+      "date": "2012-07",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://bahrainwatch.org/blog/2014/08/07/finfisher-continued-bahrain/",
+      "title": "FinFisher Continued: Bahrain",
+      "publisher": "Bahrain Watch",
+      "date": "2014-08-07",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.privacyinternational.org/case-study/1742/finfisher-case-germany",
+      "title": "The FinFisher Case in Germany",
+      "publisher": "Privacy International",
+      "date": "2019",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2012/country-chapters/bahrain",
+      "title": "World Report 2012: Bahrain",
+      "publisher": "Human Rights Watch",
+      "date": "2012",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}
