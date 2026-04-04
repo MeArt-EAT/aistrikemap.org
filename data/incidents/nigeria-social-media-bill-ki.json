@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/nigeria-social-media-bill-ki",
+  "name": "Nigeria: Social-Media-Gesetz und KI-gestützte Zensur politischer Online-Kommunikation",
+  "description": "Nigeria verabschiedete eine Reihe von Gesetzen und Massnahmen zur Regulierung sozialer Medien, die in Verbindung mit algorithmischen Überwachungstools zur Verfolgung von Journalisten, Aktivisten und regierungskritischen Stimmen eingesetzt wurden. Der Twitter-Bann von 2021 dauerte sieben Monate. Das überarbeitete Computer Misuse Amendment Act kriminalisiert breite Kategorien digitaler Kommunikation. KI-gestützte Monitoring-Systeme ermöglichen die systematische Identifikation kritischer Stimmen.",
+  "startDate": "2019",
+  "location": {
+    "@type": "Place",
+    "name": "Abuja, Nigeria",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.0579,
+      "longitude": 7.4951
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NG"
+    }
+  },
+  "asm:incidentType": ["censorship", "surveillance", "political-pressure"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Pressefreiheit", "Recht auf politische Teilhabe", "Recht auf freien Internetzugang", "Vereinigungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Nigerianische Bundesregierung",
+      "type": "government",
+      "asm:systems": ["Social Media Monitoring Tools", "Internet Gateway Control"]
+    },
+    {
+      "name": "National Information Technology Development Agency (NITDA)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Social Media Bill und Hate Speech Bill eingebracht",
+      "description": "Die nigerianische Nationalversammlung diskutiert den Social Media Bill (Prohibition of Hate Speech and Falsehood Bill), der Online-Plattformen zur Registrierung und zur Löschung von Inhalten verpflichten würde. Nichtbeachtung soll mit Gefängnisstrafen und hohen Bussgeldern bestraft werden. Digitale Bürgerrechtsorganisation Paradigm Initiative und internationale Medienfreiheitsgruppen kritisieren die Gesetze als Zensurwerkzeuge.",
+      "sources": ["https://paradigmhq.org/reports/nigeria-social-media-bill/"]
+    },
+    {
+      "date": "2021-06-05",
+      "phase": "doctrine",
+      "title": "Twitter nach Löschstreit für sieben Monate gesperrt",
+      "description": "Nachdem Twitter einen Tweet von Präsident Buhari über den Biafra-Krieg löscht, sperrt die nigerianische Regierung den Dienst im ganzen Land. Die Nationalbehörde NCC ordnet Internet Service Provider zur Blockierung an. Millionen Nigerianer weichen auf VPNs aus. Journalisten und Aktivisten, die Twitter trotzdem nutzen, werden mit Strafverfolgung bedroht. Der Bann dauert 222 Tage und endet erst nach Zugeständnissen von Twitter.",
+      "sources": ["https://www.accessnow.org/nigeria-twitter-ban/", "https://cpj.org/2021/06/nigeria-suspends-twitter-after-deleted-post/"]
+    },
+    {
+      "date": "2022",
+      "phase": "event",
+      "title": "Erweitertes Cyber-Gesetz und Verhaftungen von Journalisten",
+      "description": "Nigeria novelliert den Computer Misuse Amendment Act, der nun das Verbreiten von 'Falschinformationen' über staatliche Institutionen unter Strafe stellt. KI-gestützte Social-Media-Monitoring-Dienste werden von Regierungsbehörden genutzt. Das Committee to Protect Journalists dokumentiert dutzende Verhaftungen, die auf Online-Beiträge zurückgehen. Algorithmen identifizieren kritische Hashtags und ihre Urheber.",
+      "sources": ["https://cpj.org/2022/nigeria-press-freedom/", "https://www.hrw.org/news/2022/05/05/nigeria-free-journalists-bloggers-arrested-online-posts"]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Vorwahlkampf-Zensur und anhaltende Strafverfolgung",
+      "description": "Im Vorfeld der Präsidentschaftswahl 2023 intensiviert sich die Überwachung digitaler Kommunikation. Access Now dokumentiert vermehrte Netzsperren und gezielte Abschaltungen in Krisenregionen. Mehrere Journalisten werden wegen Online-Berichterstattung verfolgt. Internationale Organisationen fordern die Abschaffung der Cyberkriminalitätsgesetze, die als Zensurwerkzeuge missbraucht werden. Nigeria fällt in Pressefreiheitsindizes weiter zurück.",
+      "sources": ["https://www.accessnow.org/keepiton/", "https://rsf.org/en/country/nigeria"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://paradigmhq.org/reports/nigeria-social-media-bill/",
+      "title": "Nigeria's Social Media Bill: An Analysis",
+      "publisher": "Paradigm Initiative",
+      "date": "2019",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.accessnow.org/nigeria-twitter-ban/",
+      "title": "Nigeria's Twitter ban is a threat to freedom of expression",
+      "publisher": "Access Now",
+      "date": "2021-06",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://cpj.org/2021/06/nigeria-suspends-twitter-after-deleted-post/",
+      "title": "Nigeria suspends Twitter after platform deletes Buhari tweet",
+      "publisher": "Committee to Protect Journalists",
+      "date": "2021-06-05",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.hrw.org/news/2022/05/05/nigeria-free-journalists-bloggers-arrested-online-posts",
+      "title": "Nigeria: Free Journalists, Bloggers Arrested for Online Posts",
+      "publisher": "Human Rights Watch",
+      "date": "2022-05-05",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

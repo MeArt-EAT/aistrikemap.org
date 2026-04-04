@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-google-location-history-polizei",
+  "name": "USA: Googles Geofence-Beschluesse — Standortdaten aller Personen an Tatorten",
+  "description": "US-amerikanische Strafverfolgungsbehoerden nutzen seit 2016 sogenannte Geofence Warrants, um von Google die Standortdaten aller Personen zu erhalten, die sich zum Tatzeitpunkt in einem definierten Gebiet aufgehalten haben. Betroffen sind Tausende unschuldige Menschen, darunter ueberproportional viele Angehoerige ethnischer Minderheiten. Falsche Verdaechtigungen fuehrten zu Verhaftungen. 2023 kuendigte Google an, die massenhafte Standortspeicherung zu beenden.",
+  "startDate": "2016-01",
+  "location": {
+    "@type": "Place",
+    "name": "Mountain View, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.3861,
+      "longitude": -122.0839
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["surveillance", "data-misuse", "discrimination"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Recht auf Gleichbehandlung", "Schutz vor willkuerlicher Strafverfolgung", "Unschuldsvermutung"],
+  "asm:actors": [
+    {
+      "name": "Google LLC",
+      "type": "company",
+      "asm:systems": ["Google Location History", "Sensorvault-Datenbank", "Geofence Warrant API"]
+    },
+    {
+      "name": "US-amerikanische Strafverfolgungsbehoerden",
+      "type": "government",
+      "asm:systems": ["Geofence Warrants", "Strafverfolgungsdatenanfragen"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-01",
+      "phase": "infrastructure",
+      "title": "Erste Geofence-Beschluesse an Google",
+      "description": "US-amerikanische Strafverfolgungsbehoerden beginnen, Gerichtsbeschluesse fuer den Zugriff auf Googles Sensorvault-Datenbank zu nutzen. Diese Datenbank enthielt detaillierte Bewegungsprofile von Hunderten Millionen Nutzern. Erster dokumentierter Fall in Raleigh, North Carolina: 9 Personen, die zunaechst als Verdaechtige galten, entpuppten sich als unschuldig.",
+      "sources": ["https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html"]
+    },
+    {
+      "date": "2019-04",
+      "phase": "doctrine",
+      "title": "NYT-Recherche legt Massenausmass der Standortabfragen offen",
+      "description": "Die New York Times veroffentlicht eine umfassende Untersuchung, die zeigt, dass Geofence-Anfragen an Google von wenigen Dutzend jaehrlich auf Tausende gestiegen sind. Ein Unschuldiger in Arizona wurde aufgrund von Google-Standortdaten als Mordverdaechtiger behandelt und ueber ein Jahr lang verfolgt. EFF und STOP bezeichnen die Praxis als verfassungswidrig.",
+      "sources": ["https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html"]
+    },
+    {
+      "date": "2020-06",
+      "phase": "event",
+      "title": "BLM-Proteste: Massenerfassung von Demonstranten",
+      "description": "Waehrend der Black Lives Matter Proteste 2020 werden Berichte bekannt, dass Geofence-Beschluesse in der Naehe von Protestorten ausgegeben werden. Die Surveillance Technology Oversight Project (STOP) dokumentiert eine Zunahme von Anfragen, die strukturell Minderheitengemeinschaften betreffen. Falschidentifikationen betreffen ueberproportional schwarze Maenner.",
+      "sources": ["https://www.stop-surveillance.org/geofence"]
+    },
+    {
+      "date": "2023-12",
+      "phase": "consequences",
+      "title": "Google beendet massenhafte Standortspeicherung",
+      "description": "Unter dem Druck zivilgesellschaftlicher Kritik, mehrerer Gerichtsverfahren und des bevorstehenden EU Digital Services Act kuendigt Google an, die standortzentrierte Massenspeicherung in seinem Sensorvault zu beenden und Standortdaten kuenftig nur noch auf Geraeten der Nutzer zu speichern. Damit werden Geofence-Beschluesse faktisch unmoeglich. Bereits erlittene Schaeden bleiben unentschaedigt.",
+      "sources": ["https://www.eff.org/deeplinks/2023/12/google-is-now-ending-its-practice-storing-location-history"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html",
+      "title": "Tracking Phones, Google Is a Dragnet for the Police",
+      "publisher": "The New York Times",
+      "date": "2019-04-13",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.eff.org/deeplinks/2023/12/google-is-now-ending-its-practice-storing-location-history",
+      "title": "Google Is Now Ending Its Practice of Storing Location History",
+      "publisher": "Electronic Frontier Foundation",
+      "date": "2023-12-13",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.stop-surveillance.org/geofence",
+      "title": "Geofence Warrants: What You Need to Know",
+      "publisher": "Surveillance Technology Oversight Project",
+      "date": "2021",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.aclu.org/report/google-geofence-warrants",
+      "title": "Google Geofence Warrants",
+      "publisher": "American Civil Liberties Union",
+      "date": "2021-08",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

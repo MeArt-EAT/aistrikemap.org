@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-databrokerage-ki-abtreibung",
+  "name": "USA: Datenhändler verkaufen Standortdaten von Abtreibungskliniken nach Roe v. Wade",
+  "description": "Nach der Aufhebung von Roe v. Wade durch das US-Urteil Dobbs v. Jackson (2022) begannen Datenhändler, Standortdaten aus Besuchen bei Abtreibungskliniken zu verkaufen. KI-gestützte Analysetools wurden eingesetzt, um Frauen zu identifizieren, die reproduktive Gesundheitsversorgung suchten. Staatliche Behörden in Bundesstaaten mit Abtreibungsverboten nutzten diese Daten oder strebten dies an. Investigativrecherchen zeigten, dass Millionen von Aufzeichnungen für wenige hundert Dollar käuflich waren.",
+  "startDate": "2022",
+  "location": {
+    "@type": "Place",
+    "name": "Washington D.C., USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.9072,
+      "longitude": -77.0369
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["surveillance", "data-misuse", "discrimination"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Recht auf Gesundheitsversorgung", "Bewegungsfreiheit", "Recht auf körperliche Selbstbestimmung", "Schutz vor staatlicher Willkür"],
+  "asm:actors": [
+    {
+      "name": "SafeGraph",
+      "type": "company",
+      "asm:systems": ["Standortdaten-Aggregation", "Points of Interest Datenbank"]
+    },
+    {
+      "name": "Datenhändler (anonymisiert, u.a. Near Intelligence, Babel Street)",
+      "type": "company",
+      "asm:systems": ["Mobilgeräte-Tracking", "Bewegungsprofilierung"]
+    },
+    {
+      "name": "Staatliche Regierungen mit Abtreibungsverboten (u.a. Texas, Missouri, Idaho)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-06",
+      "phase": "infrastructure",
+      "title": "Dobbs-Urteil schafft rechtliches Risiko für Frauen",
+      "description": "Der US Supreme Court hebt in Dobbs v. Jackson Women's Health Organization das bundesweite Recht auf Abtreibung auf. Dutzende Bundesstaaten aktivieren sofort Abtreibungsverbote. Gleichzeitig existiert ein unregulierterer Markt für Mobilgeräte-Standortdaten, auf dem Datenhändler wie SafeGraph Bewegungsprofile von Millionen Amerikanern verkaufen — ohne deren Wissen oder ausdrückliche Zustimmung.",
+      "sources": ["https://www.vice.com/en/article/m7vzjb/location-data-abortion-clinics-safegraph-planned-parenthood"]
+    },
+    {
+      "date": "2022-07",
+      "phase": "doctrine",
+      "title": "Investigativrecherchen enthüllen Verkauf von Klinikebesuchs-Daten",
+      "description": "Vice Motherboard enthüllt, dass SafeGraph Standortdaten verkauft, die Besuche bei Abtreibungskliniken wie Planned Parenthood aufzeichnen. Die Daten zeigen Wohnorte der Besucherinnen, Verweildauer und anschliessende Bewegungen. Ein vollständiger Datensatz für eine Woche kostet weniger als 160 US-Dollar. SafeGraph entfernt daraufhin Abtreibungsklinik-Daten aus seinem Angebot — andere Händler jedoch nicht.",
+      "sources": ["https://www.vice.com/en/article/m7vzjb/location-data-abortion-clinics-safegraph-planned-parenthood", "https://www.eff.org/deeplinks/2022/07/dobbs-decision-and-digital-surveillance-risks"]
+    },
+    {
+      "date": "2022-08",
+      "phase": "event",
+      "title": "Weitere Datenhändler und Strafverfolgungszugriffe dokumentiert",
+      "description": "Recherchen zeigen, dass mehrere weitere Datenhändler weiterhin Standortprofile von Besuchen bei Abtreibungseinrichtungen verkaufen. Der erste bekannte Fall einer strafrechtlichen Verfolgung auf Basis von Handydaten tritt ein: In Nebraska werden Chat-Protokolle und Standortdaten genutzt, um eine Frau wegen einer Abtreibung anzuklagen. KI-Analysetools ermöglichen die automatisierte Identifikation von 'Verdächtigen' anhand von Bewegungsmustern.",
+      "sources": ["https://www.wired.com/story/abortion-data-privacy-nebraska-case/", "https://www.ftc.gov/news-events/news/press-releases/2023/01/ftc-report-warns-about-consequences-surveillance-based-business-model"]
+    },
+    {
+      "date": "2023-01",
+      "phase": "consequences",
+      "title": "FTC-Massnahmen und gesetzliche Reaktionen bleiben unzureichend",
+      "description": "Die FTC warnt in einem Bericht vor den Risiken der Datenwirtschaft für reproduktive Rechte und leitet Untersuchungen ein. Gegen einzelne Datenhändler werden Bussgelder verhängt. Bundesweite Datenschutzgesetze bleiben jedoch aus. Mehrere Bundesstaaten erlassen eigene Schutzgesetze für Abtreibungsdaten. Gleichzeitig fordern andere Bundesstaaten Klinikulisten und Patientendaten von Gesundheitsdienstleistern an.",
+      "sources": ["https://www.ftc.gov/news-events/news/press-releases/2023/01/ftc-report-warns-about-consequences-surveillance-based-business-model", "https://www.eff.org/deeplinks/2023/06/one-year-after-dobbs-surveillance-threats-abortion-seekers-have-only-grown"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.vice.com/en/article/m7vzjb/location-data-abortion-clinics-safegraph-planned-parenthood",
+      "title": "Location Data Firm Selling Visits to Abortion Clinics",
+      "publisher": "Vice Motherboard",
+      "date": "2022-07-02",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.eff.org/deeplinks/2022/07/dobbs-decision-and-digital-surveillance-risks",
+      "title": "The Dobbs Decision and Digital Surveillance Risks",
+      "publisher": "Electronic Frontier Foundation",
+      "date": "2022-07",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2023/01/ftc-report-warns-about-consequences-surveillance-based-business-model",
+      "title": "FTC Report Warns About Consequences of Surveillance-Based Business Model",
+      "publisher": "Federal Trade Commission",
+      "date": "2023-01",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.wired.com/story/abortion-data-privacy-nebraska-case/",
+      "title": "Nebraska Case Shows How Cops Can Use Facebook Messages and Location Data to Prosecute Abortion",
+      "publisher": "Wired",
+      "date": "2022-08",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

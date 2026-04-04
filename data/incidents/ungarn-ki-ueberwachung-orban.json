@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/ungarn-ki-ueberwachung-orban",
+  "name": "Ungarn: Pegasus-Spyware und KI-gestuetzte Ueberwachung unter Orban",
+  "description": "Unter der Regierung Viktor Orbans wurde Ungarn zu einem der aktivsten Nutzer der Pegasus-Spyware innerhalb der EU. Enthullungen des Pegasus Project (2021) zeigten, dass ungarische Journalisten, Oppositionspolitiker, Anwaelte und Aktivisten systematisch mit NSO Groups Ueberwachungssoftware infiziert worden waren. Die ungarische Regierung hatte die Technologie erworben und gegen kritische Stimmen eingesetzt, ohne parlamentarische Kontrolle oder richterliche Genehmigung. Zusaetzlich wurde Ueberwachungstechnologie zur Analyse sozialer Medien und zur politischen Profilierung von Gegnern eingesetzt.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Budapest, Ungarn",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 47.4979,
+      "longitude": 19.0402
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "HU"
+    }
+  },
+  "asm:incidentType": ["surveillance", "political-pressure"],
+  "asm:affectedRights": ["Pressefreiheit", "Recht auf Privatsphäre", "Meinungsfreiheit", "Recht auf faires Verfahren", "Politische Teilhabe"],
+  "asm:actors": [
+    {
+      "name": "Ungarische Regierung (Fidesz)",
+      "type": "government",
+      "asm:systems": ["Pegasus", "Soziale-Medien-Ueberwachung"]
+    },
+    {
+      "name": "NSO Group",
+      "type": "company",
+      "asm:systems": ["Pegasus Spyware"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Ausbau der Ueberwachungsinfrastruktur und Medienkontrolle",
+      "description": "Die ungarische Regierung baut systematisch ihre Ueberwachungskapazitaeten aus und erwirbt Pegasus von der israelischen NSO Group. Gleichzeitig werden kritische Medien durch wirtschaftlichen Druck und Lizenzentzug geschwaeacht. Staatstreue Oligarchen uebernehmen Medienunternehmen. Die rechtliche Grundlage fuer Geheimdienstoperationen wird durch neue Gesetze erweitert.",
+      "sources": ["https://www.citizenlab.ca/2021/07/nso-group-pegasus-project/"]
+    },
+    {
+      "date": "2021-07",
+      "phase": "doctrine",
+      "title": "Pegasus Project enthullt ungarische Ziellisten",
+      "description": "Das internationale Recherchekonsortium Pegasus Project veroeffentlicht eine Liste von rund 50.000 potenziellen Ueberwachungszielen weltweit. Unter den ungarischen Zielen befinden sich fuenf Journalisten, darunter Mitarbeiter des Investigativmediums Direkt36, sowie Anwaelte und ein oppositionsnaher Geschaftsmann. Forensische Analysen von Amnesty Tech bestaetigen aktive Pegasus-Infektionen auf mehreren Geraeten.",
+      "sources": ["https://direkt36.hu/en/pegasus-project/"]
+    },
+    {
+      "date": "2021-09",
+      "phase": "event",
+      "title": "Parlamentarische Untersuchung und Leugnung durch Regierung",
+      "description": "Das ungarische Parlament lehnt eine unabhaengige Untersuchung des Pegasus-Einsatzes ab. Regierungsvertreter bestreiten gezielten Missbrauch und berufen sich auf nationale Sicherheitsinteressen. Das EU-Parlament richtet einen Untersuchungsausschuss (PEGA) ein, der Ungarn als schwerwiegendsten Fall innerhalb der EU einstuft. Betroffene Journalisten berichten von Selbstzensur und Einschuchterung.",
+      "sources": ["https://www.europarl.europa.eu/committees/de/pega/home"]
+    },
+    {
+      "date": "2022-2023",
+      "phase": "consequences",
+      "title": "EU-Verfahren und fehlende Konsequenzen im Inland",
+      "description": "Der EU-PEGA-Ausschuss empfiehlt 2022 rechtliche Schritte gegen Ungarn und Polen wegen des Pegasus-Einsatzes. Die Europaeische Kommission knuepft Teile der Strukturfondszahlungen an Rechtsstaatlichkeitsreformen. In Ungarn selbst bleibt die Straflosigkeit bestehen: Keine Strafverfolgung, keine parlamentarische Kontrolle. Betroffene Journalisten reichen Klage beim Europaeischen Gerichtshof fuer Menschenrechte ein.",
+      "sources": ["https://www.hrw.org/world-report/2023/country-chapters/hungary"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://direkt36.hu/en/pegasus-project/",
+      "title": "Hungarian journalists and lawyers were targeted with Pegasus spyware",
+      "publisher": "Direkt36",
+      "date": "2021-07-18",
+      "type": "investigative-report"
+    },
+    {
+      "url": "https://www.citizenlab.ca/2021/07/nso-group-pegasus-project/",
+      "title": "Pegasus Project: Citizen Lab confirms targets",
+      "publisher": "Citizen Lab",
+      "date": "2021-07",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.europarl.europa.eu/committees/de/pega/home",
+      "title": "PEGA Ausschuss: Untersuchung des Pegasus-Einsatzes in EU-Mitgliedsstaaten",
+      "publisher": "Europaeisches Parlament",
+      "date": "2022",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2023/country-chapters/hungary",
+      "title": "World Report 2023: Hungary",
+      "publisher": "Human Rights Watch",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/irak-zello-app-isis-ueberwachung",
+  "name": "Irak / Syrien: ISIS nutzt digitale Werkzeuge fuer Rekrutierung und Propaganda, Koalition setzt KI zur Zielerfassung ein",
+  "description": "Der sogenannte Islamische Staat (ISIS) entwickelte ab 2014 eine hochentwickelte digitale Infrastruktur fuer Rekrutierung, Propaganda und interne Koordination. Gleichzeitig setzte die US-gefuehrte Koalition KI-Systeme zur Analyse sozialer Medien und zur Auswahl militaerischer Ziele ein. Der Doppeleinsatz digitaler und KI-basierter Werkzeuge durch beide Seiten fuerhrte zu erheblichen Risiken fuer die Zivilbevoelkerung, die in den algorithmischen Entscheidungsprozessen nicht ausreichend beruecksichtigt wurde.",
+  "startDate": "2014",
+  "location": {
+    "@type": "Place",
+    "name": "Mossul, Irak",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.3350,
+      "longitude": 43.1189
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IQ"
+    }
+  },
+  "asm:incidentType": ["military-ai", "surveillance", "censorship"],
+  "asm:affectedRights": ["Recht auf Leben", "Recht auf Privatsphäre", "Meinungsfreiheit", "Schutz der Zivilbevoelkerung", "Recht auf faires Verfahren"],
+  "asm:actors": [
+    {
+      "name": "ISIS / Islamischer Staat",
+      "type": "organization",
+      "asm:systems": ["Social-Media-Propaganda-Netzwerk", "Zello", "verschluesselte Messenger"]
+    },
+    {
+      "name": "US-gefuehrte Koalition",
+      "type": "military",
+      "asm:systems": ["SKYFALL", "MAVEN (Project Maven)", "Predator-Drohnen-KI"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "ISIS baut digitale Propaganda- und Rekrutierungsinfrastruktur auf",
+      "description": "ISIS entwickelt eine der bis dahin ausgefeiltesten digitalen Medienkampagnen nichtstaatlicher Akteure. Ueber Twitter, Facebook, YouTube und spezialisierte Apps wie Zello werden Hunderttausende Propagandainhalte verbreitet. Verschluesselte Kommunikationstools ermoglichen sichere Koordination. Die Koalition beginnt mit KI-gestuetzter Social-Media-Analyse zur Identifikation von Kommandoketten.",
+      "sources": ["https://www.rand.org/pubs/research_reports/RR2462.html"]
+    },
+    {
+      "date": "2015-2016",
+      "phase": "doctrine",
+      "title": "KI-gestuetzte Zielerfassung und Counter-Messaging",
+      "description": "Die US-Koalition setzt KI-Algorithmen zur Analyse von ISIS-Social-Media-Aktivitaeten ein, um Fuehrungspersonen zu identifizieren und zu lokalisieren. Plattformen wie Twitter und Facebook loeschen unter Druck massenhaft ISIS-Accounts. Kritiker warnen, dass automatische Loeschalgorithmen auch Berichte von Menschenrechtsorganisationen und Zeugenaussagen von Greueltaten erfassen und so wichtige Beweise vernichten.",
+      "sources": ["https://www.brookings.edu/research/countering-violent-extremism-on-social-media/"]
+    },
+    {
+      "date": "2016-2017",
+      "phase": "event",
+      "title": "Mossul-Offensive: Algorithmische Zielerfassung und zivile Opfer",
+      "description": "Bei der Rueckeroberung Mossuls setzt die Koalition KI-gestuetzte Systeme zur Zielauswahl ein. Amnesty International dokumentiert mindestens 1.472 zivile Todesopfer durch Koalitionsluftangriffe. Berichte zeigen, dass algorithmische Risikoabschaetzungen systematisch die Praesenz von Zivilisten unterschaetzen. ISIS nutzt in dieser Phase die verbliebene Zivilbevoelkerung als menschliche Schutzschilde, was die KI-Systeme nicht adaequat beruecksichtigen koennen.",
+      "sources": ["https://www.amnesty.org/en/documents/mde14/8367/2018/en/"]
+    },
+    {
+      "date": "2018-2023",
+      "phase": "consequences",
+      "title": "Debatte ueber KI in der Kriegsfuehrung und Plattformverantwortung",
+      "description": "Der ISIS-Konflikt wird zum Testlabor fuer KI in der Kriegsfuehrung und fuer die Moderationsverantwortung von Plattformen. Berichte belegen, dass automatische Loeschalgorithmen dokumentarische Beweise fuer Kriegsverbrechen zerstoert haben. Project Maven, das Drohnenzielerkennung nutzte, wird intern bei Google kontrovers diskutiert und fuehrt zu kuendigung von Mitarbeitern. Die Debatte ueber letale autonome Waffensysteme und internationale Regulierung intensiviert sich.",
+      "sources": ["https://www.rand.org/pubs/research_reports/RR2462.html"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.rand.org/pubs/research_reports/RR2462.html",
+      "title": "Social Media and Terrorist Use: ISIS as a Case Study",
+      "publisher": "RAND Corporation",
+      "date": "2019",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.brookings.edu/research/countering-violent-extremism-on-social-media/",
+      "title": "Countering Violent Extremism on Social Media",
+      "publisher": "Brookings Institution",
+      "date": "2017",
+      "type": "research-paper"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/mde14/8367/2018/en/",
+      "title": "At Any Cost: The Civilian Catastrophe in West Mosul",
+      "publisher": "Amnesty International",
+      "date": "2018",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

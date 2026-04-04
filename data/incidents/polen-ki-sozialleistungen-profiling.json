@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/polen-ki-sozialleistungen-profiling",
+  "name": "Polen: Algorithmisches Profiling im Sozialhilfesystem diskriminiert Arbeitslose",
+  "description": "Polens Arbeitsvermittlungsbehorden verwenden seit 2014 ein algorithmisches Profilierungssystem, das Arbeitslose in drei Kategorien einteilt: 'begunstigt', 'durchschnittlich' und 'nicht begunstigt'. Der Algorithmus bewertet Alter, Geschlecht, Behinderungsstatus und Wohnort. Betroffene in laendlichen Gebieten und aeltere Menschen erhalten dadurch systematisch weniger Foerderung. Die Panoptykon Foundation und das Helsinki-Komitee kritisieren das System als diskriminierend und intransparent.",
+  "startDate": "2014-06",
+  "location": {
+    "@type": "Place",
+    "name": "Warschau, Polen",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.2297,
+      "longitude": 21.0122
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PL"
+    }
+  },
+  "asm:incidentType": ["discrimination", "data-misuse"],
+  "asm:affectedRights": ["Recht auf soziale Sicherheit", "Gleichbehandlungsgrundsatz", "Schutz vor Diskriminierung aufgrund des Alters", "Recht auf Arbeit"],
+  "asm:actors": [
+    {
+      "name": "Polnisches Ministerium fuer Familie und Sozialpolitik",
+      "type": "government",
+      "asm:systems": ["Algorithmisches Profiling-System fuer Arbeitslose (SYRIUSZ-Aehnlich)"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014-06",
+      "phase": "infrastructure",
+      "title": "Einfuehrung des Drei-Kategorien-Profilierungssystems",
+      "description": "Das polnische Arbeitsministerium fuehrt ein algorithmisches System ein, das Arbeitslose in drei Kategorien einteilt. Variablen wie Alter, Geschlecht, Behinderung, Wohnort und Bildungsniveau fliessen in den Score ein. Die 'nicht begunstigt' eingestuften Personen erhalten reduzierte Foerdermassnahmen.",
+      "sources": ["https://panoptykon.org/profiling-unemployed"]
+    },
+    {
+      "date": "2018-03",
+      "phase": "doctrine",
+      "title": "Panoptykon Foundation dokumentiert diskriminierende Wirkung",
+      "description": "Die polnische Panoptykon Foundation veroeffentlicht eine Untersuchung, die zeigt, dass laendliche Bevoelkerung und aeltere Arbeitssuchende systematisch schlechter bewertet werden. Der Algorithmus perpetuiert strukturelle Ungleichheiten statt sie zu bekaempfen. DSGVO-Bedenken zur Entscheidung durch automatisierte Verarbeitung werden erhoben.",
+      "sources": ["https://panoptykon.org/profiling-unemployed"]
+    },
+    {
+      "date": "2019-01",
+      "phase": "event",
+      "title": "Klage vor dem Verfassungstribunal",
+      "description": "Das Helsinki Komitee fuer Menschenrechte in Polen unterstuetzt Betroffene bei rechtlichen Beschwerden gegen das Profilierungssystem. Das Verfassungstribunal eroefffnet eine Untersuchung. Erste Gutachten stellen fest, dass das System moeglicherweise gegen DSGVO-Artikel 22 (automatisierte Entscheidungen) verstoesst.",
+      "sources": ["https://www.hfhr.pl/"]
+    },
+    {
+      "date": "2019-09",
+      "phase": "consequences",
+      "title": "Partielle Reform unter DSGVO-Druck",
+      "description": "Polen modifiziert das System unter dem Druck der DSGVO und erster Gerichtsentscheidungen. Betroffene erhalten nun das Recht, eine menschliche Ueberpruefung ihrer Einstufung zu beantragen. Vollstaendige Transparenz ueber die Gewichtung der Algorithmusvariablen wird jedoch nicht hergestellt. Menschenrechtsorganisationen bezeichnen die Reform als unzureichend.",
+      "sources": ["https://panoptykon.org/profiling-unemployed"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://panoptykon.org/profiling-unemployed",
+      "title": "Profiling the Unemployed in Poland — Algorithmic Discrimination Documentation",
+      "publisher": "Panoptykon Foundation",
+      "date": "2018",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hfhr.pl/",
+      "title": "Helsinki Foundation for Human Rights Poland — Sozialleistungen und Algorithmik",
+      "publisher": "Helsinki Foundation for Human Rights (Polen)",
+      "date": "2019",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

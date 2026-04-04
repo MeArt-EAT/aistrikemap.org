@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-ai-voice-clone-betrug",
+  "name": "USA: KI-Stimmklonen fuer Betrug und Erpressung",
+  "description": "Kriminelle Netzwerke nutzen frei verfuegbare KI-Tools zur Stimmklonierung, um Familienmitglieder in Notsituationen zu imitieren und Loesegeld oder Geldtransfers zu erpressen. Mit wenigen Sekunden Audio aus sozialen Medien erstellen Betrueger ueberzeugende Klonstimmen. Die US-Bundesbehoerde FTC berichtet 2023 von einem exponenziellen Anstieg solcher Faelle. Der US-Senat haelt Anhoerungen zu KI-Stimmklonen ab.",
+  "startDate": "2022-01",
+  "location": {
+    "@type": "Place",
+    "name": "Phoenix, Arizona, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.4484,
+      "longitude": -112.0740
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["deepfakes", "data-misuse"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Schutz vor Betrug", "Verbraucherschutz", "Recht auf koerperliche Unversehrtheit (bei Entfuehrungsszenarien)"],
+  "asm:actors": [
+    {
+      "name": "Kriminelle Organisationen (Betrug-Netzwerke)",
+      "type": "organization",
+      "asm:systems": ["KI-Stimmklon-Tools", "ElevenLabs", "VALL-E-aehnliche Systeme"]
+    },
+    {
+      "name": "KI-Sprachunternehmen",
+      "type": "company",
+      "asm:systems": ["Voice Cloning APIs", "Text-to-Speech-Plattformen"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-01",
+      "phase": "infrastructure",
+      "title": "KI-Stimmklonen wird kommerziell verfuegbar",
+      "description": "Unternehmen wie ElevenLabs, Resemble AI und andere bringen einfach bedienbare Stimmklon-APIs auf den Markt. Mit wenigen Sekunden Audiomaterial koennen ueberzeugende Stimmimitationen erstellt werden. Parallel verbreiten sich Open-Source-Modelle, die kostenlos genutzt werden koennen.",
+      "sources": ["https://www.ftc.gov/business-guidance/blog/2023/03/chatbots-deepfakes-voice-clones-ai-deception-sale"]
+    },
+    {
+      "date": "2023-03",
+      "phase": "doctrine",
+      "title": "FTC warnt vor exponentiellem Anstieg der Stimmklon-Betrugsfaelle",
+      "description": "Die US-Federal Trade Commission veroeffentlicht eine Warnung vor 'Family Emergency Scams', bei denen KI-geklonte Stimmen verwendet werden. Betrueger imitieren Enkel, Kinder oder Freunde, die angeblich in Geldnot oder verhaftet sind. Erste dokumentierte Faelle in Arizona, wo Eltern Zehntausende Dollar transferieren.",
+      "sources": ["https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-mimic-voices-loved-ones-in-distress"]
+    },
+    {
+      "date": "2023-04",
+      "phase": "event",
+      "title": "Virtuelles Kidnapping — Mutter glaubt, Tochter werde entfuehrt",
+      "description": "Eine Mutter in Arizona erhaelt einen Anruf mit dem weinenden Klang der Stimme ihrer Tochter und einer Loesegelderforderung. Die Stimme wurde mithilfe von KI aus Social-Media-Videos der Tochter erstellt. Der Fall wird national bekannt und loest Senatsdiskussionen aus. Aehnliche Faelle haeufen sich in mehreren Bundesstaaten.",
+      "sources": ["https://www.washingtonpost.com/technology/2023/03/05/ai-voice-scam/"]
+    },
+    {
+      "date": "2023-09",
+      "phase": "consequences",
+      "title": "Senat haelt Anhoerungen — Regulierungsdruck waechst",
+      "description": "Der US-Senat Commerce Committee haelt Anhoerungen zu KI-Missbrauch durch Stimmklonen ab. Die FTC erwaegt neue Regelungen fuer kommerzielle Voice-AI-Anbieter. Mehrere Bundesstaaten einfuehren Gesetzesentwuerfe fuer Kennzeichnungspflichten bei KI-generiertem Audio. Plattformbetreiber beginnen, Missbrauchsrichtlinien zu schaerfen.",
+      "sources": ["https://www.commerce.senate.gov/2023/7/the-need-for-transparency-in-artificial-intelligence"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-mimic-voices-loved-ones-in-distress",
+      "title": "Scammers use AI to mimic voices of loved ones in distress",
+      "publisher": "Federal Trade Commission (FTC)",
+      "date": "2023-03",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.washingtonpost.com/technology/2023/03/05/ai-voice-scam/",
+      "title": "An AI cloned her daughter's voice and tried to scam her. She's not alone.",
+      "publisher": "Washington Post",
+      "date": "2023-03-05",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.commerce.senate.gov/2023/7/the-need-for-transparency-in-artificial-intelligence",
+      "title": "The Need for Transparency in Artificial Intelligence — Senate Hearing",
+      "publisher": "US Senate Commerce Committee",
+      "date": "2023-07",
+      "type": "government-document"
+    },
+    {
+      "url": "https://www.ftc.gov/business-guidance/blog/2023/03/chatbots-deepfakes-voice-clones-ai-deception-sale",
+      "title": "Chatbots, Deepfakes, and Voice Clones: AI Deception for Sale",
+      "publisher": "Federal Trade Commission",
+      "date": "2023-03",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

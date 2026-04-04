@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/indien-pegasus-opposition",
+  "name": "Indien: Pegasus-Spyware gegen Oppositionspolitiker, Journalisten und Richter",
+  "description": "Indien setzte die Pegasus-Spyware des israelischen Unternehmens NSO Group ein, um Oppositionspolitiker, fuehrende Journalisten, Aktivisten und Mitarbeiter des Obersten Gerichtshofs zu ueberwachen. Das internationale Pegasus-Projekt 2021 enthullte eine Liste von ueber 300 indiischen Nummern als potenzielle Ziele. Der Oberste Gerichtshof Indiens setzte einen technischen Ausschuss ein, doch die Regierung verweigerte die Kooperation.",
+  "startDate": "2019-04",
+  "location": {
+    "@type": "Place",
+    "name": "Neu-Delhi, Indien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.6139,
+      "longitude": 77.2090
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "asm:incidentType": ["surveillance", "political-pressure"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Pressefreiheit", "Unabhaengigkeit der Justiz", "Politische Partizipation"],
+  "asm:actors": [
+    {
+      "name": "Indische Regierung (Modi-Administration)",
+      "type": "government",
+      "asm:systems": ["Pegasus-Spyware"]
+    },
+    {
+      "name": "NSO Group",
+      "type": "company",
+      "asm:systems": ["Pegasus (mobile Spyware-Plattform)"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-10",
+      "phase": "infrastructure",
+      "title": "WhatsApp enthullt Pegasus-Angriffe auf indische Nutzer",
+      "description": "Facebook / WhatsApp gibt bekannt, dass die NSO Group Pegasus-Spyware ueber eine WhatsApp-Sicherheitsluecke auf Geraete von rund 1.400 Nutzern weltweit aufgespielt hat — darunter Menschenrechtsaktivisten und Journalisten in Indien. Citizen Lab identifiziert mehrere indische Opfer.",
+      "sources": ["https://citizenlab.ca/2019/10/nso-whatsapp-india/"]
+    },
+    {
+      "date": "2021-07-18",
+      "phase": "event",
+      "title": "Pegasus-Projekt enthullt 300 indische Zielnummern",
+      "description": "Das internationale Pegasus-Projekt — ein Konsortium aus 17 Medienorganisationen — veroeffentlicht Erkenntnisse, dass ueber 300 indische Telefonnummern auf der Zielliste der NSO-Spyware erscheinen. Zu den Zielpersonen gehoeren Rahul Gandhi, zwei Bundesminister, Militaeroffiziere, Supreme-Court-Mitarbeiter und fuehrende Journalisten wie Siddharth Varadarajan von The Wire.",
+      "sources": ["https://thewire.in/government/project-pegasus-phones-spyware-india"]
+    },
+    {
+      "date": "2021-10",
+      "phase": "doctrine",
+      "title": "Oberster Gerichtshof setzt technischen Ausschuss ein",
+      "description": "Der Oberste Gerichtshof Indiens erklaert, er koennte nicht der Regierung glauben, die weder Pegasus-Nutzung bestaetigt noch verneint. Ein dreikoepfiger technischer Expertenauss schuss wird eingesetzt, um die Verwendung von Pegasus zu untersuchen. Die Regierung verweigert weitgehend die Kooperation mit dem Ausschuss.",
+      "sources": ["https://www.thehindu.com/news/national/supreme-court-forms-committee-to-probe-pegasus-snooping/article37062680.ece"]
+    },
+    {
+      "date": "2022-08",
+      "phase": "consequences",
+      "title": "Ausschussbericht bleibt unvollstaendig — Straflosigkeit",
+      "description": "Der technische Ausschuss des Obersten Gerichtshofs legt einen Bericht vor, der zwar Pegasus-aehnliche Schadsoftware auf einigen Geraeten nachweist, aber keine eindeutige Zuordnung zur indischen Regierung trifft. Amnesty International kritisiert mangelnde Transparenz. Pressfreiheitsindizes stufen Indien weiter als gefaehrlich fuer Journalisten ein.",
+      "sources": ["https://www.amnesty.org/en/latest/news/2022/08/india-supreme-court-pegasus-report/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://thewire.in/government/project-pegasus-phones-spyware-india",
+      "title": "The Pegasus Project — India Reporting",
+      "publisher": "The Wire (Pegasus Project India)",
+      "date": "2021-07-18",
+      "type": "news-article"
+    },
+    {
+      "url": "https://citizenlab.ca/2019/10/nso-whatsapp-india/",
+      "title": "WhatsApp-Related NSO Pegasus Targeting of Individuals in India",
+      "publisher": "Citizen Lab, Universitaet Toronto",
+      "date": "2019-10",
+      "type": "academic"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2022/08/india-supreme-court-pegasus-report/",
+      "title": "India: Supreme Court Pegasus Report Raises More Questions",
+      "publisher": "Amnesty International",
+      "date": "2022-08",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.thehindu.com/news/national/supreme-court-forms-committee-to-probe-pegasus-snooping/article37062680.ece",
+      "title": "Supreme Court forms committee to probe Pegasus snooping allegations",
+      "publisher": "The Hindu",
+      "date": "2021-10",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

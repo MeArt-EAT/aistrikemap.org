@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/russland-ki-deepfake-ukraine-krieg",
+  "name": "Russland: KI-Deepfakes und Desinformation im Ukraine-Krieg",
+  "description": "Seit dem Beginn der russischen Invasion in der Ukraine im Februar 2022 setzt Russland systematisch KI-generierte Deepfakes und automatisierte Desinformationskampagnen ein. Den Hoehepunkt bildete ein gefaelschtes Video von Praesident Selenskyj, in dem dieser angeblich zur Kapitulation aufruft. Meta, das EU DisinfoLab und das Digital Forensic Research Lab (DFRLab) dokumentieren koordinierte KI-gestuetzte Propaganda, die Millionen Menschen in der Ukraine und weltweit erreicht.",
+  "startDate": "2022-02",
+  "location": {
+    "@type": "Place",
+    "name": "Moskau, Russland",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 55.7558,
+      "longitude": 37.6173
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RU"
+    }
+  },
+  "asm:incidentType": ["deepfakes", "military-ai", "political-pressure"],
+  "asm:affectedRights": ["Informationsfreiheit", "Recht auf Wahrheit", "Nationale Sicherheit der Ukraine", "Meinungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Russische Regierung",
+      "type": "government",
+      "asm:systems": ["Staatliche Desinformationsinfrastruktur", "KI-Deepfake-Produktion"]
+    },
+    {
+      "name": "Russisches Militaer",
+      "type": "military",
+      "asm:systems": ["Kognitive Kriegsfuehrung", "Informationsoperationen"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-02-24",
+      "phase": "infrastructure",
+      "title": "Beginn der Invasion und gleichzeitiger Informationskrieg",
+      "description": "Mit Beginn der militaerischen Invasion startet Russland parallel eine massive Informationsoperation. Staatliche Medien, Bot-Netzwerke und koordinierte Accounts auf sozialen Medien verbreiten Narrative zur Rechtfertigung des Angriffs. KI-Tools zur Bild- und Videobearbeitung werden fuer Propaganda eingesetzt.",
+      "sources": ["https://euvsdisinfo.eu/"]
+    },
+    {
+      "date": "2022-03-16",
+      "phase": "event",
+      "title": "Deepfake-Video von Praesident Selenskyj",
+      "description": "Ein KI-generiertes Deepfake-Video verbreitet sich viral, in dem Praesident Selenskyj ukrainische Soldaten angeblich zur Kapitulation auffordert. Meta, YouTube und Twitter loeschen das Video, doch es erreicht zuvor Millionen Nutzer. Selenskyj widerlegt das Video in einem Live-Video. Das Ereignis gilt als erster grosser Deepfake-Einsatz in einem aktiven Kriegskonflikt.",
+      "sources": ["https://www.reuters.com/world/europe/deepfake-video-zelenskiy-asking-ukrainians-lay-down-arms-appears-online-2022-03-16/"]
+    },
+    {
+      "date": "2023-01",
+      "phase": "doctrine",
+      "title": "Systematische KI-Propagandaeskalation",
+      "description": "Meta veroeffentlicht Threat Intelligence Reports ueber koordinierte inauthenthische Verhaltensmuster aus Russland. DFRLab dokumentiert den Einsatz von KI zur Massenerstellung gefaelschter Nachrichten-Webseiten, die europaeische Medienmarken imitieren. Das EU DisinfoLab identifiziert Netzwerke mit Tausenden KI-generierten Fake-Accounts.",
+      "sources": ["https://www.disinfo.eu/"]
+    },
+    {
+      "date": "2023-06",
+      "phase": "consequences",
+      "title": "Internationale Gegenmassnahmen und Debatte ueber KI-Regulierung",
+      "description": "Die EU verstaerkt das East StratCom Task Force-Mandat und finanziert Medienalphabetiierungsprogramme. Die NATO erkennt kognitive Kriegsfuehrung offiziell als Bedrohungsvektor an. Der Deepfake-Einsatz im Ukraine-Krieg beschleunigt internationale Diskussionen ueber Kennzeichnungspflichten fuer KI-generierte Inhalte.",
+      "sources": ["https://www.nato.int/cps/en/natohq/topics_192595.htm"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.reuters.com/world/europe/deepfake-video-zelenskiy-asking-ukrainians-lay-down-arms-appears-online-2022-03-16/",
+      "title": "Deepfake video of Zelenskiy asking Ukrainians to lay down arms appears online",
+      "publisher": "Reuters",
+      "date": "2022-03-16",
+      "type": "news-article"
+    },
+    {
+      "url": "https://euvsdisinfo.eu/",
+      "title": "EUvsDisinfo — Russische Desinformationskampagnen",
+      "publisher": "EU DisinfoLab / EUvsDisinfo",
+      "date": "2023",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.disinfo.eu/",
+      "title": "EU DisinfoLab — AI-generated Disinformation Reports",
+      "publisher": "EU DisinfoLab",
+      "date": "2023",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.nato.int/cps/en/natohq/topics_192595.htm",
+      "title": "Cognitive Warfare — NATO Strategic Communications",
+      "publisher": "NATO",
+      "date": "2023",
+      "type": "government-document"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/china-ki-covid-ueberwachung",
+  "name": "China: COVID-Gesundheitscodes als Instrument politischer Kontrolle",
+  "description": "Chinas KI-gestuetztes COVID-Gesundheits-QR-Code-System, das urspruenglich zur Pandemieeindaemmung eingefuehrt wurde, wurde 2022 in Zhengzhou gezielt gegen Bankprotestierende eingesetzt. Lokale Behoerden setzten die Gesundheitscodes von Einlegern, die gegen eingefrorene Bankkonten protestieren wollten, auf Rot — obwohl diese Personen COVID-negativ und nicht in Quarantaene waren. Dies verhinderte ihre Reise und Teilnahme an Protesten. Der Vorfall enthuelite, wie weit das Ueberwachungssystem fuer politische Zwecke missbraucht werden kann.",
+  "startDate": "2020",
+  "location": {
+    "@type": "Place",
+    "name": "Zhengzhou, Provinz Henan, China",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.7466,
+      "longitude": 113.6254
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CN"
+    }
+  },
+  "asm:incidentType": ["surveillance", "political-pressure", "discrimination"],
+  "asm:affectedRights": ["Bewegungsfreiheit", "Versammlungsfreiheit", "Recht auf faires Verfahren", "Recht auf Privatsphäre", "Eigentumsrechte"],
+  "asm:actors": [
+    {
+      "name": "Chinesische Zentralregierung",
+      "type": "government",
+      "asm:systems": ["Jiankangma (健康码)", "COVID-Gesundheitscodesystem"]
+    },
+    {
+      "name": "Lokalbehoerden Henan",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-02",
+      "phase": "infrastructure",
+      "title": "Einfuehrung der Gesundheits-QR-Codes waehrend COVID-19",
+      "description": "China fuehrt flaechendeckend digitale Gesundheits-QR-Codes ein, die jedem Buerger einen Farbstatus zuweisen: Gruen (freie Bewegung), Gelb (eingeschraenkt), Rot (Quarantaene). Die Codes werden mit Reise-, Einkaufs- und Bildungsinfrastruktur vernetzt. Hunderte Millionen Menschen muessen taglich ihren Code scannen, um Zugang zu oeffentlichen Raeumen zu erhalten. Das System baut auf vorhandener Ueberwachungsinfrastruktur aus dem Sozialkredit-System auf.",
+      "sources": ["https://www.bbc.com/news/technology-55131743"]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Ausweitung der Codes auf nicht-COVID-Zwecke",
+      "description": "Berichte zeigen, dass lokale Verwaltungen die Gesundheitscodes zunehmend fuer Zwecke jenseits der COVID-Bekaempfung nutzen. Reisebeschraenkungen, Zugangssperren fuer staatskritische Personen und Verknuepfungen mit anderen Datenbankens werden dokumentiert. Die technische Architektur erlaubt es Behoerden, Codes ohne Begruendung manuell zu aendern.",
+      "sources": ["https://www.nytimes.com/2022/06/16/business/china-bank-fraud-health-codes.html"]
+    },
+    {
+      "date": "2022-06",
+      "phase": "event",
+      "title": "Bankprotestierende in Zhengzhou erhalten rote Codes",
+      "description": "Einleger mehrerer laendlicher Banken in Henan, deren Konten eingefroren wurden und die sich in Zhengzhou versammeln wollten, erhalten beim Einscannen ihrer Gesundheitscodes ploetzlich roten Status — trotz negativer COVID-Tests. Videos der Betroffenen verbreiten sich in sozialen Medien und zeigen, wie sie an Zugangspunkten zurueckgewiesen werden. Die chinesische Zentralregierung erkennt spaeter den Missbrauch an und leitet Untersuchungen ein.",
+      "sources": ["https://www.reuters.com/world/china/china-investigates-use-health-codes-block-bank-protesters-2022-06-15/"]
+    },
+    {
+      "date": "2022-07",
+      "phase": "consequences",
+      "title": "Oeffentlicher Aufschrei und staatliche Reaktion",
+      "description": "Der Skandal loest selten starke oeffentliche Empoerung in China aus. Beamte in Henan werden untersucht und bestraft. Die Zentralregierung verkuendet Reformen, um Missbrauch der Gesundheitscodes zu verhindern. Menschenrechtsorganisationen nutzen den Fall als Beweis, dass das gesamte COVID-Codesystem als politisches Kontrollinstrument konzipiert und eingesetzt wird. Die Codes werden 2023 mit dem Ende der Null-COVID-Politik abgeschafft.",
+      "sources": ["https://www.bbc.com/news/world-asia-china-61821952"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nytimes.com/2022/06/16/business/china-bank-fraud-health-codes.html",
+      "title": "China Used Covid Health Codes to Restrict Protesters, Leaked Data Shows",
+      "publisher": "New York Times",
+      "date": "2022-06-16",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.bbc.com/news/world-asia-china-61821952",
+      "title": "China: Protesters blocked by Covid health codes in Zhengzhou",
+      "publisher": "BBC News",
+      "date": "2022-06-15",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.reuters.com/world/china/china-investigates-use-health-codes-block-bank-protesters-2022-06-15/",
+      "title": "China investigates use of health codes to block bank protesters",
+      "publisher": "Reuters",
+      "date": "2022-06-15",
+      "type": "news-article"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/bangladesch-digital-security-act",
+  "name": "Bangladesch: Digital Security Act zur Strafverfolgung von Journalisten und Aktivisten missbraucht",
+  "description": "Bangladeschs Digital Security Act (DSA) von 2018 wurde systematisch eingesetzt, um Journalisten, Blogger, Oppositionspolitiker und Aktivisten wegen Online-Kommentaren zu verhaften. KI-gestützte Social-Media-Überwachungstools identifizieren kritische Inhalte automatisiert. Bis 2023 wurden mehr als 1.000 Fälle nach dem DSA eingeleitet. Die Strafbehörde RAB setzte digitale Forensik-Tools ein. Reporters Without Borders stufte Bangladesch als eines der gefährlichsten Länder für Journalisten ein.",
+  "startDate": "2018",
+  "location": {
+    "@type": "Place",
+    "name": "Dhaka, Bangladesch",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.8103,
+      "longitude": 90.4125
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BD"
+    }
+  },
+  "asm:incidentType": ["censorship", "political-pressure", "surveillance"],
+  "asm:affectedRights": ["Meinungsfreiheit", "Pressefreiheit", "Recht auf fairen Prozess", "Recht auf politische Teilhabe", "Schutz vor willkürlicher Verhaftung"],
+  "asm:actors": [
+    {
+      "name": "Bangladeschische Regierung (Awami League)",
+      "type": "government",
+      "asm:systems": ["Social Media Monitoring", "Digital Forensics Lab"]
+    },
+    {
+      "name": "Rapid Action Battalion (RAB)",
+      "type": "government",
+      "asm:systems": ["Digitale Überwachungstools", "Gesichtserkennung"]
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-10",
+      "phase": "infrastructure",
+      "title": "Digital Security Act verabschiedet, weitreichende Straftatbestände",
+      "description": "Das bangladeschische Parlament verabschiedet den Digital Security Act, der vage formulierte Delikte wie 'Verbreitung negativer Propaganda gegen den Befreiungskrieg', 'Beschädigung des religiösen Gefühls' und 'Cyberkriminalität' unter Strafe stellt. Strafen reichen bis zu 14 Jahren Gefängnis. Das Gesetz erlaubt Verhaftungen ohne Haftbefehl. Article 19 und internationale Pressefreiheitsorganisationen kritisieren das Gesetz als Angriff auf die freie Meinungsäusserung.",
+      "sources": ["https://www.article19.org/resources/bangladesh-digital-security-act-fails-to-meet-international-standards/"]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "COVID-Pandemie: Massenverhaftungen für Berichte über Regierungsversagen",
+      "description": "Während der COVID-19-Pandemie werden Dutzende Journalisten und Bürger nach dem DSA verhaftet, weil sie über Versorgungsengpässe, Krankenhausprobleme oder Korruption berichtet haben. Cartoonist Ahmed Kabir Kishore und Schriftsteller Mushtaq Ahmed werden ohne Gerichtsverhandlung monatelang inhaftiert. Mushtaq Ahmed stirbt im Mai 2021 in Gewahrsam. Die Fälle lösen internationale Proteste aus.",
+      "sources": ["https://rsf.org/en/news/bangladesh-rsf-outraged-death-custody-critical-writer", "https://www.hrw.org/news/2021/02/26/bangladesh-writer-dies-custody"]
+    },
+    {
+      "date": "2023-01",
+      "phase": "event",
+      "title": "Vorwahl-Unterdrückung, mehr als 1.000 DSA-Fälle aktiv",
+      "description": "Im Jahr vor der Parlamentswahl 2024 intensiviert die Regierung die DSA-Verfolgungen. Die bangladeschische NGO ASK dokumentiert über 1.000 aktive Verfahren. Oppositionspolitiker der BNP werden wegen Social-Media-Posts verhaftet. Algorithmische Überwachungssysteme identifizieren systematisch kritische Inhalte. Mehr als 400 Journalisten sind mit DSA-Verfahren konfrontiert.",
+      "sources": ["https://cpj.org/2023/bangladesh/", "https://www.article19.org/resources/bangladesh-dsa-use-statistics/"]
+    },
+    {
+      "date": "2023-09",
+      "phase": "consequences",
+      "title": "DSA durch Cyber Security Act ersetzt — Kernprobleme bleiben",
+      "description": "Unter internationalem Druck hebt die Regierung den DSA formal auf und ersetzt ihn durch den Cyber Security Act (CSA) 2023. Kritiker und Article 19 stellen fest, dass der CSA die meisten repressiven Bestimmungen beibehält und nur marginale Änderungen vornimmt. Alle laufenden DSA-Verfahren werden automatisch in CSA-Verfahren umgewandelt. Bangladesch rangiert im RSF-Pressefreiheitsindex 2023 auf Platz 163 von 180.",
+      "sources": ["https://www.article19.org/resources/bangladesh-cyber-security-act-analysis/", "https://rsf.org/en/country/bangladesh"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.article19.org/resources/bangladesh-digital-security-act-fails-to-meet-international-standards/",
+      "title": "Bangladesh: Digital Security Act fails to meet international standards",
+      "publisher": "Article 19",
+      "date": "2018",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2021/02/26/bangladesh-writer-dies-custody",
+      "title": "Bangladesh: Writer Dies in Custody",
+      "publisher": "Human Rights Watch",
+      "date": "2021-02-26",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://rsf.org/en/news/bangladesh-rsf-outraged-death-custody-critical-writer",
+      "title": "Bangladesh: RSF outraged by death in custody of critical writer",
+      "publisher": "Reporters Without Borders",
+      "date": "2021-02-25",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://cpj.org/2023/bangladesh/",
+      "title": "Bangladesh press freedom overview 2023",
+      "publisher": "Committee to Protect Journalists",
+      "date": "2023",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

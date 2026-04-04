@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/mexiko-pegasus-43-studenten",
+  "name": "Mexiko: Pegasus-Spyware gegen Journalisten im Ayotzinapa-Fall",
+  "description": "Die mexikanische Regierung setzte Pegasus-Spyware des israelischen Unternehmens NSO Group ein, um Journalisten, Aktivisten und Anwaehlte zu ueberwachen, die ueber das Verschwinden von 43 Studenten aus Ayotzinapa im Jahr 2014 berichteten. Das Citizen Lab der Universitaet Toronto dokumentierte 2016 erstmals den Einsatz. Die New York Times enthullte 2017 systematische staatliche Spionage gegen kritische Stimmen, was eine politische Krise ausloeste.",
+  "startDate": "2015-01",
+  "location": {
+    "@type": "Place",
+    "name": "Mexiko-Stadt, Mexiko",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 19.4326,
+      "longitude": -99.1332
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MX"
+    }
+  },
+  "asm:incidentType": ["surveillance", "political-pressure"],
+  "asm:affectedRights": ["Pressefreiheit", "Recht auf Privatsphäre", "Informantenschutz", "Recht auf effektive Strafverfolgung"],
+  "asm:actors": [
+    {
+      "name": "Mexikanische Regierung (Pena Nieto-Administration)",
+      "type": "government",
+      "asm:systems": ["Pegasus-Spyware"]
+    },
+    {
+      "name": "NSO Group",
+      "type": "company",
+      "asm:systems": ["Pegasus (mobile Spyware-Plattform)"]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014-09-26",
+      "phase": "infrastructure",
+      "title": "Verschwinden der 43 Studenten von Ayotzinapa",
+      "description": "43 Lehramtsstudenten der Normalschule Ayotzinapa verschwinden in Iguala, Guerrero. Beweise deuten auf Beteiligung staatlicher Sicherheitskraefte und der organisierten Kriminalitaet hin. Journalisten, Angehoerige und Menschenrechtsanwaelte beginnen, den Fall zu recherchieren — und werden damit zum Ziel staatlicher Ueberwachung.",
+      "sources": ["https://www.hrw.org/news/2016/04/21/mexico-43-missing-students"]
+    },
+    {
+      "date": "2016-08",
+      "phase": "doctrine",
+      "title": "Citizen Lab entdeckt Pegasus-Einsatz in Mexiko",
+      "description": "Das Citizen Lab der Universitaet Toronto dokumentiert, dass Mexiko Pegasus-Spyware gegen Zivilgesellschaft, Journalisten und Aktivisten einsetzt. Geraete von Personen, die den Ayotzinapa-Fall untersuchten, wurden mit infizierten Nachrichten als Angriffsvektoren kompromittiert.",
+      "sources": ["https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/"]
+    },
+    {
+      "date": "2017-06-19",
+      "phase": "event",
+      "title": "New York Times enthullt staatliche Spionage",
+      "description": "Die New York Times veroeffentlicht eine Untersuchung, die belegt, dass die mexikanische Regierung Pegasus einsetzte, um Journalisten der NY Times, Antikorruptionsaktivisten, Anwaelte im Ayotzinapa-Fall und einen Kindheitsarzt zu ueberwachen. Die Enthuellung loest politischen Aufruhr und Rufe nach Strafverfolgung aus.",
+      "sources": ["https://www.nytimes.com/2017/06/19/world/americas/mexico-spyware-journalists.html"]
+    },
+    {
+      "date": "2021-07",
+      "phase": "consequences",
+      "title": "Pegasus-Projekt bestaetigt systematische Ueberwachung",
+      "description": "Das internationale Pegasus-Projekt bestaetigt, dass Mexiko einer der groessten Nutzer der NSO-Spyware war. R3D Mexico und Amnesty International dokumentieren ueber 50 mexikanische Pegasus-Opfer. Die Straflosigkeit bleibt weitgehend bestehen — bisherige Ermittlungen fuehren zu keinen Verurteilungen leitender Regierungsbeamter.",
+      "sources": ["https://www.r3d.mx/2021/07/18/pegasus-project/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/",
+      "title": "Million Dollar Dissident — NSO Group's iPhone Zero-Days used against a UAE Human Rights Defender",
+      "publisher": "Citizen Lab, Universitaet Toronto",
+      "date": "2016-08",
+      "type": "academic"
+    },
+    {
+      "url": "https://www.nytimes.com/2017/06/19/world/americas/mexico-spyware-journalists.html",
+      "title": "Spyware Used Against Mexican Journalists Was Made in Israel",
+      "publisher": "New York Times",
+      "date": "2017-06-19",
+      "type": "news-article"
+    },
+    {
+      "url": "https://www.r3d.mx/2021/07/18/pegasus-project/",
+      "title": "Pegasus Project — Mexiko-Dokumentation",
+      "publisher": "R3D Mexico (Red en Defensa de los Derechos Digitales)",
+      "date": "2021-07",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.hrw.org/news/2016/04/21/mexico-43-missing-students",
+      "title": "Mexico: 43 Missing Students — Ongoing Cover-Up",
+      "publisher": "Human Rights Watch",
+      "date": "2016-04-21",
+      "type": "ngo-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-ai-waffenerkennung-schulen",
+  "name": "USA: KI-Waffenerkennung in Schulen — Fehlalarme und feindliches Lernklima",
+  "description": "Nach einer Reihe von Schulmassakers wurden in US-Schulen und oeffentlichen Raeumen KI-gestuetzte Waffenerkennungssysteme des Unternehmens Evolv Technology eingesetzt. BBC- und The-Intercept-Untersuchungen von 2023 zeigten, dass die Systeme eine hohe Fehlalarmrate haben: Sie schlugen bei harmlosen Gegenstanden wie Insulinpumpen, Laptops und Regenschirmen an. Die staendige Ueberwachung und Sicherheitsprueefung schaffen eine angespannte Atmosphaere, die die Lernumgebung beeintraechtigt und Schuler — insbesondere Schuler of Color — unverhaeltnismaessig belastet.",
+  "startDate": "2022",
+  "location": {
+    "@type": "Place",
+    "name": "New York, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": ["surveillance", "discrimination"],
+  "asm:affectedRights": ["Recht auf Bildung", "Recht auf Privatsphäre", "Recht auf Wuerde", "Schutz vor Diskriminierung", "Bewegungsfreiheit"],
+  "asm:actors": [
+    {
+      "name": "Evolv Technology",
+      "type": "company",
+      "asm:systems": ["Evolv Express", "KI-Waffenerkennungssystem"]
+    },
+    {
+      "name": "New York City Public Schools",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Massendeployment von KI-Waffenscannern in Schulen",
+      "description": "Evolv Technology wirbt mit einem beruehrungslosen KI-Screening-System, das Waffen angeblich mit grosser Genauigkeit erkennt. Schulbezirke und Kommunen in mehreren US-Bundesstaaten erwerben die Technologie als Reaktion auf Schulmassakers wie Uvalde (2022). New York City, Los Angeles und andere Grossstaedte deployen die Scanner an Schulen und Eingaengen oeffentlicher Gebaeude. Das Unternehmen behauptet 99,9-prozentige Treffsicherheit.",
+      "sources": ["https://www.bbc.com/news/technology-65728194"]
+    },
+    {
+      "date": "2023-01",
+      "phase": "doctrine",
+      "title": "Erste Berichte ueber systematische Fehlalarme",
+      "description": "Lehrkraefte und Eltern beginnen, Vorfaelle zu dokumentieren, bei denen harmlose Gegenstande Alarm ausloesen: Insulinpumpen, Chromebooks, Wassertaschen und Regenschirme. Schuler mit medizinischen Geraeten werden wiederholt angehalten und durchsucht. Die erzwungenen Stoepps und Untersuchungen betreffen ueberproportional Schuler of Color in Schulen mit niedrigerem Einkommen, wo die Geraete am haeufigsten eingesetzt werden.",
+      "sources": ["https://theintercept.com/2023/05/18/evolv-ai-weapons-detector-schools/"]
+    },
+    {
+      "date": "2023-05",
+      "phase": "event",
+      "title": "BBC und The Intercept decken versagte Versprechen auf",
+      "description": "Eine gemeinsame Untersuchung von BBC News und The Intercept dokumentiert systematisch die Fehlfunktionen der Evolv-Systeme. Tests zeigen, dass echte Waffen durch einfache Tricks unentdeckt bleiben koennen, waehrend Fehlalarme alltaeglich sind. Interne Dokumente des Unternehmens zeigen, dass Evolv ueber die Probleme informiert war. New York City reagiert mit einer Ueberpruefung der Vertragsbedingungen.",
+      "sources": ["https://www.bbc.com/news/technology-65728194"]
+    },
+    {
+      "date": "2023-2024",
+      "phase": "consequences",
+      "title": "Klagen, Vertragsaufloesung und Neubesinnung",
+      "description": "Mehrere Schulbezirke kuendigen ihre Vertraege mit Evolv. Klagen von Buergerrechtsorganisationen werden eingereicht, die auf Diskriminierung und Verletzung der Privatsphaeree abzielen. Bildungsexperten und Psychologen warnen vor den negativen Auswirkungen staendiger Ueberwachung auf das Lernklima, besonders fuer traumatisierte Schuler. Der Fall entfacht eine Debatte ueber den Einsatz nicht-verifizierter KI-Sicherheitstechnologie in Bildungseinrichtungen.",
+      "sources": ["https://theintercept.com/2023/05/18/evolv-ai-weapons-detector-schools/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.bbc.com/news/technology-65728194",
+      "title": "The AI weapon scanners failing to stop US school shootings",
+      "publisher": "BBC News",
+      "date": "2023-05",
+      "type": "investigative-report"
+    },
+    {
+      "url": "https://theintercept.com/2023/05/18/evolv-ai-weapons-detector-schools/",
+      "title": "Evolv's AI Weapon Detectors Are Failing Schools",
+      "publisher": "The Intercept",
+      "date": "2023-05-18",
+      "type": "investigative-report"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

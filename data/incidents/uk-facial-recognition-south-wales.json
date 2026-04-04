@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uk-facial-recognition-south-wales",
+  "name": "Grossbritannien: Gesichtserkennung der South Wales Police mit 91 % Falschpositiv-Rate",
+  "description": "Die South Wales Police setzt seit 2017 Live-Gesichtserkennungstechnologie des Herstellers NEC bei oeffentlichen Veranstaltungen ein. Eine Studie der Universitaet Essex belegt eine Falschpositiv-Rate von bis zu 91 Prozent. Im Jahr 2020 entscheidet das Berufungsgericht, dass der Einsatz gegen britisches Datenschutzrecht und die Europaeische Menschenrechtskonvention verstoesst. Der Fall ist das erste europaische Gerichtsurteil gegen Gesichtserkennungs-ueberwachung durch die Polizei.",
+  "startDate": "2017-06",
+  "location": {
+    "@type": "Place",
+    "name": "Cardiff, Wales, Grossbritannien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.4816,
+      "longitude": -3.1791
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    }
+  },
+  "asm:incidentType": ["facial-recognition", "surveillance"],
+  "asm:affectedRights": ["Recht auf Privatsphäre", "Datenschutz", "Versammlungsfreiheit", "Schutz vor willkuerlicher Ueberwachung"],
+  "asm:actors": [
+    {
+      "name": "South Wales Police",
+      "type": "government",
+      "asm:systems": ["NEC Live Facial Recognition System", "AFR Locate"]
+    },
+    {
+      "name": "NEC Corporation",
+      "type": "company",
+      "asm:systems": ["NeoFace Watch (Gesichtserkennungssoftware)"]
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-06",
+      "phase": "infrastructure",
+      "title": "Ersteinsatz beim Champions-League-Finale in Cardiff",
+      "description": "Die South Wales Police setzt erstmals Live-Gesichtserkennung beim UEFA Champions-League-Finale in Cardiff ein. Das System scannt Tausende Gesichter und gleicht sie mit Fahndungsdatenbanken ab. Oeffentlichkeit und Betroffene werden nicht informiert. Zahlreiche Fehltreffer werden intern dokumentiert, aber nicht veroeffentlicht.",
+      "sources": ["https://bigbrotherwatch.org.uk/campaigns/stop-facial-recognition/"]
+    },
+    {
+      "date": "2018-05",
+      "phase": "doctrine",
+      "title": "Studie belegt 91 % Falschpositiv-Rate",
+      "description": "Forscher der Universitaet Essex analysieren 10 Grosseinsaetze der South Wales Police und stellen fest, dass 91 Prozent aller Treffer falsch positiv waren — also Unschuldige faelschlicherweise als Verdaechtige identifizierten. Die Polizei verteidigt den Einsatz trotz der Fehlermarge als wertvolles Ermittlungswerkzeug.",
+      "sources": ["https://www.essex.ac.uk/research-projects/facial-recognition"]
+    },
+    {
+      "date": "2020-08-11",
+      "phase": "event",
+      "title": "Berufungsgericht erklaert Einsatz fuer rechtswidrig",
+      "description": "Das britische Berufungsgericht entscheidet im Fall Ed Bridges gegen South Wales Police, dass der Einsatz von Live-Gesichtserkennung gegen britisches Datenschutzrecht und die Europaeische Menschenrechtskonvention verstoesst. Das Gericht kritisiert mangelnde gesetzliche Grundlage, fehlende Folgenabschaetzung und unzureichende Kontrolle der Systemfehler.",
+      "sources": ["https://www.judiciary.uk/judgments/bridges-v-south-wales-police/"]
+    },
+    {
+      "date": "2022-01",
+      "phase": "consequences",
+      "title": "Fortgesetzter Einsatz trotz Urteil und neue Gesetzgebung",
+      "description": "Trotz des Gerichtsurteils setzt die Metropolitan Police in London den Einsatz von Live-Gesichtserkennung fort. Big Brother Watch dokumentiert weitere Faelle. Das britische Innenministerium erarbeitet einen neuen Rechtsrahmen, der Gesichtserkennung unter bestimmten Bedingungen legalisieren soll. Datenschutzkritiker bezeichnen dies als Rueckschritt.",
+      "sources": ["https://bigbrotherwatch.org.uk/campaigns/stop-facial-recognition/"]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.judiciary.uk/judgments/bridges-v-south-wales-police/",
+      "title": "R (Bridges) v Chief Constable of South Wales Police — Court of Appeal Ruling",
+      "publisher": "Judiciary of England and Wales",
+      "date": "2020-08-11",
+      "type": "government-document"
+    },
+    {
+      "url": "https://bigbrotherwatch.org.uk/campaigns/stop-facial-recognition/",
+      "title": "Stop Facial Recognition — Campaign Documentation",
+      "publisher": "Big Brother Watch",
+      "date": "2022",
+      "type": "ngo-report"
+    },
+    {
+      "url": "https://www.essex.ac.uk/research-projects/facial-recognition",
+      "title": "Independant Report on the London Met Police's Trial of Live Facial Recognition Technology",
+      "publisher": "Universitaet Essex — Human Rights Centre",
+      "date": "2020",
+      "type": "academic"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-04-03",
+    "lastUpdated": "2026-04-03",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}
