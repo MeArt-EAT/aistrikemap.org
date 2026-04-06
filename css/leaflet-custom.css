@@ -92,3 +92,227 @@
   outline-offset: 2px;
 }
 
+/* ═══ STRIKE EFFECT — Pulse rings for recent incidents ═══ */
+.strike-pulse {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 600;
+}
+
+.strike-pulse__ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 3px solid;
+  opacity: 0;
+  box-sizing: border-box;
+  animation: strike-ripple 3.5s ease-out infinite;
+  will-change: width, height, opacity;
+}
+
+.strike-pulse__ring:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+.strike-pulse__ring:nth-child(3) {
+  animation-delay: 2.2s;
+}
+
+@keyframes strike-ripple {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.85;
+    border-width: 3px;
+  }
+  100% {
+    width: 90px;
+    height: 90px;
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+/* Larger, faster pulse for hot/recent strikes */
+.strike-pulse--hot .strike-pulse__ring {
+  animation-name: strike-ripple-hot;
+  animation-duration: 2.2s;
+  border-width: 4px;
+  filter: drop-shadow(0 0 4px currentColor);
+}
+
+@keyframes strike-ripple-hot {
+  0% {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    border-width: 4px;
+  }
+  100% {
+    width: 140px;
+    height: 140px;
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+/* Medium pulse for warm strikes */
+.strike-pulse--warm .strike-pulse__ring {
+  animation-duration: 3.5s;
+}
+
+/* Slow subtle pulse for older high-severity strikes */
+.strike-pulse--cold .strike-pulse__ring {
+  animation-name: strike-ripple-cold;
+  animation-duration: 5s;
+}
+
+@keyframes strike-ripple-cold {
+  0% {
+    width: 8px;
+    height: 8px;
+    opacity: 0.5;
+    border-width: 2px;
+  }
+  100% {
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+/* Strike flash on initial load */
+@keyframes strike-flash {
+  0% {
+    transform: scale(3);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.strike-enter {
+  animation: strike-flash 0.6s ease-out forwards;
+}
+
+/* ═══ LATEST STRIKES TICKER ═══ */
+.strike-ticker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, rgba(22, 33, 62, 0.95), rgba(22, 33, 62, 0.85));
+  border-top: 1px solid rgba(240, 96, 112, 0.3);
+  padding: 0;
+  overflow: hidden;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.strike-ticker__label {
+  flex-shrink: 0;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.75rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 2;
+}
+
+.strike-ticker__label::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  animation: ticker-blink 1.5s ease-in-out infinite;
+}
+
+@keyframes ticker-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.strike-ticker__track {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+}
+
+.strike-ticker__scroll {
+  display: inline-flex;
+  gap: 3rem;
+  animation: ticker-scroll linear infinite;
+  padding-left: 1rem;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.strike-ticker__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.2rem 0;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.strike-ticker__item:hover {
+  color: var(--text-primary);
+}
+
+.strike-ticker__dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.strike-ticker__severity {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.05rem 0.35rem;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.strike-ticker__date {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  font-family: var(--font-mono);
+}
+
+/* Adjust footer when ticker is visible */
+.has-ticker .site-footer {
+  margin-bottom: 36px;
+}
+
