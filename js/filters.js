@@ -7,6 +7,7 @@ const Filters = (function () {
   let minSeverity = 1;
   let minVerification = 1;
   let showRetracted = false;
+  let timeRangeMonths = 0; // 0 = all time
   let allTypes = [
     'surveillance', 'predictive-policing', 'autonomous-weapons',
     'discrimination', 'deepfakes', 'data-misuse', 'military-ai',
@@ -21,6 +22,7 @@ const Filters = (function () {
     var verificationValue = document.getElementById('verification-value');
     var resetBtn = document.getElementById('filter-reset');
     var retractedToggle = document.getElementById('filter-show-retracted');
+    var timeRangeSelect = document.getElementById('filter-time-range');
     var toggleBtn = document.querySelector('.filter-toggle-btn');
     var panel = document.querySelector('.filter-panel');
 
@@ -77,8 +79,20 @@ const Filters = (function () {
         retractedToggle.checked = false;
         showRetracted = false;
       }
+      if (timeRangeSelect) {
+        timeRangeSelect.value = '0';
+        timeRangeMonths = 0;
+      }
       applyFilters();
     });
+
+    // Time range
+    if (timeRangeSelect) {
+      timeRangeSelect.addEventListener('change', function () {
+        timeRangeMonths = parseInt(this.value, 10) || 0;
+        applyFilters();
+      });
+    }
 
     // Show retracted toggle
     if (retractedToggle) {
@@ -103,6 +117,10 @@ const Filters = (function () {
 
   function applyFilters() {
     var incidents = DataLoader.getIncidents();
+    var cutoffMs = null;
+    if (timeRangeMonths > 0) {
+      cutoffMs = Date.now() - timeRangeMonths * 30.44 * 24 * 60 * 60 * 1000;
+    }
     var filtered = incidents.filter(function (inc) {
       // Retracted incidents are hidden by default
       if (inc['asm:retracted'] && !showRetracted) return false;
@@ -110,7 +128,12 @@ const Filters = (function () {
       var hasType = types.some(function (t) { return activeTypes.has(t); });
       var sev = inc['asm:severity'] || 1;
       var ver = inc['asm:verificationLevel'] || 1;
-      return hasType && sev >= minSeverity && ver >= minVerification;
+      if (!hasType || sev < minSeverity || ver < minVerification) return false;
+      if (cutoffMs !== null) {
+        var d = inc.startDate ? new Date(inc.startDate) : null;
+        if (!d || isNaN(d.getTime()) || d.getTime() < cutoffMs) return false;
+      }
+      return true;
     });
     StrikeMap.addMarkers(filtered);
   }

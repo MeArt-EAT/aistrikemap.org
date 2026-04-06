@@ -82,6 +82,18 @@
           </div>
         </div>
 
+        <!-- Time range -->
+        <div class="filter-section">
+          <div class="filter-section__title" data-i18n="filter.timeRange">Zeitraum</div>
+          <select id="filter-time-range" class="time-range-select">
+            <option value="0" data-i18n="filter.time.all">Alle</option>
+            <option value="6" data-i18n="filter.time.6m">Letzte 6 Monate</option>
+            <option value="12" data-i18n="filter.time.12m">Letzte 12 Monate</option>
+            <option value="24" data-i18n="filter.time.24m">Letzte 24 Monate</option>
+            <option value="60" data-i18n="filter.time.5y">Letzte 5 Jahre</option>
+          </select>
+        </div>
+
         <!-- Show retracted -->
         <div class="filter-section">
           <label class="filter-checkbox">
@@ -118,8 +130,8 @@
   <script src="js/i18n.js?v=3"></script>
   <script src="js/map.js?v=9"></script>
   <script src="js/data-loader.js?v=3"></script>
-  <script src="js/detail-panel.js?v=2"></script>
-  <script src="js/filters.js?v=3"></script>
+  <script src="js/detail-panel.js?v=3"></script>
+  <script src="js/filters.js?v=4"></script>
   <script src="js/nav.js?v=3"></script>
   <script src="js/strike-ticker.js?v=1"></script>
   <script>
@@ -131,6 +143,8 @@
       StrikeMap.addMarkers(incidents);
       Filters.init();
       StrikeTicker.init(incidents);
+      // Open incident from ?incident= URL parameter (deep link / shared permalink)
+      DetailPanel.openFromUrl(incidents);
     })();
   </script>
 </body>

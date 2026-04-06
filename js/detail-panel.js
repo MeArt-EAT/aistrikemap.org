@@ -17,7 +17,28 @@ const DetailPanel = (function () {
     });
   }
 
+  function getIncidentId(incident) {
+    return incident['@id'] || incident.id || incident.identifier || null;
+  }
+
+  function updateUrl(incident) {
+    var id = getIncidentId(incident);
+    if (!id) return;
+    var url = new URL(window.location.href);
+    url.searchParams.set('incident', id);
+    history.replaceState(null, '', url.toString());
+  }
+
+  function clearUrl() {
+    var url = new URL(window.location.href);
+    if (url.searchParams.has('incident')) {
+      url.searchParams.delete('incident');
+      history.replaceState(null, '', url.toString());
+    }
+  }
+
   function show(incident) {
+    updateUrl(incident);
     titleEl.textContent = incident.name || '';
 
     var severity = incident['asm:severity'] || 1;
@@ -25,6 +46,14 @@ const DetailPanel = (function () {
     var color = StrikeMap.SEVERITY_COLORS[severity];
 
     var html = '';
+
+    // Share / permalink button
+    if (getIncidentId(incident)) {
+      html += '<button type="button" class="detail-share-btn" data-share>' +
+              '<span class="detail-share-btn__icon" aria-hidden="true">&#128279;</span>' +
+              '<span data-i18n="detail.share">Link kopieren</span>' +
+              '</button>';
+    }
 
     // Meta badges
     html += '<div class="detail-meta">';
@@ -129,10 +158,44 @@ const DetailPanel = (function () {
     bodyEl.innerHTML = html;
     panelEl.classList.add('open');
     panelEl.focus();
+
+    // Wire share button
+    var shareBtn = bodyEl.querySelector('[data-share]');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', function () {
+        var url = window.location.href;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(function () {
+            var label = shareBtn.querySelector('[data-i18n="detail.share"]');
+            if (label) {
+              var orig = label.textContent;
+              label.textContent = I18n.t('detail.shareCopied') || 'Kopiert!';
+              setTimeout(function () { label.textContent = orig; }, 1500);
+            }
+          }).catch(function () {});
+        }
+      });
+    }
   }
 
   function hide() {
     panelEl.classList.remove('open');
+    clearUrl();
+  }
+
+  function openFromUrl(incidents) {
+    var params = new URLSearchParams(window.location.search);
+    var wanted = params.get('incident');
+    if (!wanted || !incidents || !incidents.length) return false;
+    var match = incidents.find(function (i) { return getIncidentId(i) === wanted; });
+    if (!match) return false;
+    show(match);
+    var geo = match.location && match.location.geo;
+    if (geo && typeof StrikeMap !== 'undefined') {
+      var map = StrikeMap.getMap();
+      if (map) map.setView([geo.latitude, geo.longitude], 5, { animate: true });
+    }
+    return true;
   }
 
   function esc(str) {
@@ -147,5 +210,5 @@ const DetailPanel = (function () {
     return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
-  return { init: init, show: show, hide: hide };
+  return { init: init, show: show, hide: hide, openFromUrl: openFromUrl };
 })();

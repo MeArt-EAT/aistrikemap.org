@@ -188,6 +188,31 @@ a:focus-visible {
   color: #fff;
 }
 
+/* Time range select */
+.time-range-select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.time-range-select:hover,
+.time-range-select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.time-range-select option {
+  background: #16213e;
+  color: var(--text-primary);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -397,6 +422,31 @@ a:focus-visible {
   background: rgba(79, 195, 247, 0.1);
   color: var(--link);
   border: 1px solid rgba(79, 195, 247, 0.2);
+}
+
+.detail-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-family: inherit;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.detail-share-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+}
+
+.detail-share-btn__icon {
+  font-size: 0.85rem;
 }
 
 .detail-meta {
