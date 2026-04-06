@@ -107,9 +107,21 @@ const StrikeMap = (function () {
       marker.incidentData = incident;
       marker.addTo(markerLayer);
 
-      // Add pulse rings for very recent incidents (freshness > 0.5)
-      if (freshness > 0.5) {
-        addPulseRing(geo.latitude, geo.longitude, color);
+      // Add pulse rings — tiered by freshness/severity
+      var pulseClass = null;
+      if (freshness > 0.6) {
+        pulseClass = 'strike-pulse--hot';
+      } else if (freshness > 0.25) {
+        pulseClass = 'strike-pulse--warm';
+      } else if (severity >= 4) {
+        // High-severity older incidents still get a subtle cold pulse
+        pulseClass = 'strike-pulse--cold';
+      } else if (index < 40) {
+        // Top newest always pulse so the map feels alive
+        pulseClass = 'strike-pulse--warm';
+      }
+      if (pulseClass) {
+        addPulseRing(geo.latitude, geo.longitude, color, pulseClass);
       }
     });
   }
@@ -117,9 +129,9 @@ const StrikeMap = (function () {
   /**
    * Add animated pulse ring overlay for a coordinate.
    */
-  function addPulseRing(lat, lng, color) {
+  function addPulseRing(lat, lng, color, extraClass) {
     var pulseIcon = L.divIcon({
-      className: 'strike-pulse',
+      className: 'strike-pulse ' + (extraClass || ''),
       html: '<div class="strike-pulse__ring" style="border-color:' + color + '"></div>' +
             '<div class="strike-pulse__ring" style="border-color:' + color + '"></div>' +
             '<div class="strike-pulse__ring" style="border-color:' + color + '"></div>',
