@@ -17,9 +17,11 @@
 - **LIVE-Ticker:** Scrolling ticker at the bottom of the map surfaces the latest incidents.
 - **Reverse Timeline:** Each incident is presented as Infrastructure -> Doctrine -> Event -> Consequences.
 - **Unverified markers:** Community-submitted incidents (`verificationLevel: 1`) are rendered with a dashed outline, reduced saturation and a "?" badge in the popup until a maintainer verifies them.
-- **Filter panel:** Incident type, severity slider, verification-level slider, reset.
+- **Retraction support:** Debunked incidents can be flagged with `asm:retracted: true`. They are hidden by default but a filter toggle reveals them with a strikethrough title and grey marker — preserving research transparency without silently deleting evidence.
+- **Filter panel:** Incident type, severity slider, verification-level slider, retracted toggle, reset.
 - **Community reporting:** A "Vorfall melden" CTA in the header opens a structured GitHub Issue template.
-- **Bilingual UI:** German / English via lightweight JSON i18n.
+- **Bilingual UI:** German / English via lightweight JSON i18n with persistent DE|EN switcher in the header.
+- **404 page:** Branded fallback that keeps users in the navigation flow.
 
 ## Tech Stack
 
