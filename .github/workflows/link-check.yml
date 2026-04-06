@@ -15,13 +15,12 @@ permissions:
   contents: read
   issues: write
 
-env:
-  # Opt in to Node.js 24 now (default from June 2026)
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   lychee:
     runs-on: ubuntu-latest
+    env:
+      # Opt in to Node.js 24 now (default from June 2026) — silences deprecation warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
