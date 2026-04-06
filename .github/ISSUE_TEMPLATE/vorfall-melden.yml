@@ -1,0 +1,87 @@
+name: "Vorfall melden / Report incident"
+description: "Einen neuen KI-bezogenen Menschenrechtsvorfall für AIStrikeMap vorschlagen."
+title: "[Vorfall] "
+labels: ["incident", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du einen Vorfall zu AIStrikeMap beiträgst!
+        Bitte fülle die Felder so vollständig wie möglich aus. Quellen sind **zwingend** erforderlich.
+  - type: input
+    id: name
+    attributes:
+      label: "Titel des Vorfalls"
+      placeholder: "z. B. Gesichtserkennung führt zu Falschverhaftung in Detroit"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: "Datum (YYYY-MM-DD oder YYYY-MM)"
+      placeholder: "2024-07-18"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: "Ort (Stadt, Land)"
+      placeholder: "Detroit, USA"
+    validations:
+      required: true
+  - type: input
+    id: coords
+    attributes:
+      label: "Koordinaten (Latitude, Longitude) — optional"
+      placeholder: "42.3314, -83.0458"
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Vorfalltyp"
+      options:
+        - Überwachung
+        - Predictive Policing
+        - Autonome Waffen
+        - Diskriminierung / Bias
+        - Deepfakes / Desinformation
+        - Datenmissbrauch
+        - Militärische KI-Nutzung
+        - Gesichtserkennung
+        - Zensur / Inhaltskontrolle
+        - KI-Arbeitsausbeutung
+        - Politischer Druck auf KI-Sicherheit
+        - Sonstiges
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Schweregrad (1 = bedenklich, 5 = katastrophal)"
+      options: ["1", "2", "3", "4", "5"]
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Beschreibung"
+      description: "Was ist passiert? Wer ist betroffen? Welche KI-Technologie war beteiligt?"
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: "Quellen (URLs, mindestens eine seriöse Primär- oder Sekundärquelle)"
+      placeholder: |
+        - https://...
+        - https://...
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Bestätigung"
+      options:
+        - label: "Ich habe die Quellen geprüft und halte sie für vertrauenswürdig."
+          required: true
+        - label: "Ich bin einverstanden, dass dieser Beitrag unter CC BY-NC-SA 4.0 veröffentlicht wird."
+          required: true

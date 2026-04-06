@@ -122,6 +122,36 @@ a:focus-visible {
   text-decoration: none;
 }
 
+/* Report incident CTA button */
+.site-nav a.nav-report-btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.site-nav a.nav-report-btn::before {
+  content: "+";
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.site-nav a.nav-report-btn:hover {
+  background: #d94a5a;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.site-nav a.nav-report-btn[aria-current="page"] {
+  border-bottom: none;
+}
+
 .nav-toggle {
   display: none;
   background: none;
