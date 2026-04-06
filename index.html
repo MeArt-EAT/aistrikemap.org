@@ -15,7 +15,7 @@
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
         crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/leaflet-custom.css?v=5">
+  <link rel="stylesheet" href="css/leaflet-custom.css?v=6">
 </head>
 <body>
   <!-- Skip Link -->
@@ -78,6 +78,14 @@
           </div>
         </div>
 
+        <!-- Show retracted -->
+        <div class="filter-section">
+          <label class="filter-checkbox">
+            <input type="checkbox" id="filter-show-retracted">
+            <span data-i18n="filter.showRetracted">Zurückgezogene Meldungen anzeigen</span>
+          </label>
+        </div>
+
         <!-- Reset -->
         <button id="filter-reset" class="filter-reset-btn" data-i18n="filter.reset">Filter zurücksetzen</button>
       </div>
@@ -104,10 +112,10 @@
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
           crossorigin="anonymous"></script>
   <script src="js/i18n.js?v=2"></script>
-  <script src="js/map.js?v=8"></script>
+  <script src="js/map.js?v=9"></script>
   <script src="js/data-loader.js?v=3"></script>
   <script src="js/detail-panel.js?v=2"></script>
-  <script src="js/filters.js?v=2"></script>
+  <script src="js/filters.js?v=3"></script>
   <script src="js/nav.js?v=2"></script>
   <script src="js/strike-ticker.js?v=1"></script>
   <script>

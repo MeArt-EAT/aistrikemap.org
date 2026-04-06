@@ -76,6 +76,7 @@ const StrikeMap = (function () {
       var freshness = getFreshness(incident);
       var verification = incident['asm:verificationLevel'] || 1;
       var isUnverified = verification <= 1;
+      var isRetracted = !!incident['asm:retracted'];
 
       // Dynamic radius: recent = bigger (8-14), old = smaller (6-8)
       var radius = 6 + freshness * 8;
@@ -83,28 +84,35 @@ const StrikeMap = (function () {
       var fillOpacity = 0.4 + freshness * 0.5;
 
       // Unverified reports get a dashed outline + reduced fill
+      // Retracted reports get a grey outline + strikethrough title
       var classNames = [];
-      if (!skipAnimation && index < 30) classNames.push('strike-enter');
-      if (isUnverified) classNames.push('strike-unverified');
+      if (!skipAnimation && index < 30 && !isRetracted) classNames.push('strike-enter');
+      if (isUnverified && !isRetracted) classNames.push('strike-unverified');
+      if (isRetracted) classNames.push('strike-retracted');
 
       var marker = L.circleMarker([geo.latitude, geo.longitude], {
-        radius: radius,
-        fillColor: color,
-        color: color,
-        weight: freshness > 0.3 ? 2.5 : 1.5,
-        opacity: 0.6 + freshness * 0.4,
-        fillOpacity: isUnverified ? fillOpacity * 0.4 : fillOpacity,
-        dashArray: isUnverified ? '4,3' : null,
+        radius: isRetracted ? 6 : radius,
+        fillColor: isRetracted ? '#666' : color,
+        color: isRetracted ? '#888' : color,
+        weight: isRetracted ? 1 : (freshness > 0.3 ? 2.5 : 1.5),
+        opacity: isRetracted ? 0.6 : (0.6 + freshness * 0.4),
+        fillOpacity: isRetracted ? 0.2 : (isUnverified ? fillOpacity * 0.4 : fillOpacity),
+        dashArray: isUnverified || isRetracted ? '4,3' : null,
         keyboard: true,
         className: classNames.join(' ')
       });
 
-      var unverifiedBadge = isUnverified
-        ? '<span class="popup-unverified" title="' + escapeHtml(I18n.t('verification.unverified') || 'Nicht verifiziert') + '">?</span>'
-        : '';
+      var statusBadge = '';
+      if (isRetracted) {
+        statusBadge = '<span class="popup-retracted" title="' + escapeHtml(I18n.t('verification.retracted') || 'Zurückgezogen') + '">×</span>';
+      } else if (isUnverified) {
+        statusBadge = '<span class="popup-unverified" title="' + escapeHtml(I18n.t('verification.unverified') || 'Nicht verifiziert') + '">?</span>';
+      }
+
+      var titleClass = isRetracted ? 'popup-title popup-title--retracted' : 'popup-title';
 
       marker.bindPopup(
-        '<div class="popup-title">' + unverifiedBadge + escapeHtml(incident.name) + '</div>' +
+        '<div class="' + titleClass + '">' + statusBadge + escapeHtml(incident.name) + '</div>' +
         '<div class="popup-meta">' +
           '<span class="popup-severity" style="background:' + color + '">' + escapeHtml(severityLabel) + '</span>' +
           '<span>' + escapeHtml(date) + '</span>' +
@@ -118,6 +126,9 @@ const StrikeMap = (function () {
 
       marker.incidentData = incident;
       marker.addTo(markerLayer);
+
+      // No pulse rings for retracted incidents
+      if (isRetracted) return;
 
       // Add pulse rings — tiered by freshness/severity
       var pulseClass = null;

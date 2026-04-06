@@ -6,6 +6,7 @@ const Filters = (function () {
   let activeTypes = new Set();
   let minSeverity = 1;
   let minVerification = 1;
+  let showRetracted = false;
   let allTypes = [
     'surveillance', 'predictive-policing', 'autonomous-weapons',
     'discrimination', 'deepfakes', 'data-misuse', 'military-ai',
@@ -19,6 +20,7 @@ const Filters = (function () {
     var verificationSlider = document.getElementById('filter-verification');
     var verificationValue = document.getElementById('verification-value');
     var resetBtn = document.getElementById('filter-reset');
+    var retractedToggle = document.getElementById('filter-show-retracted');
     var toggleBtn = document.querySelector('.filter-toggle-btn');
     var panel = document.querySelector('.filter-panel');
 
@@ -71,8 +73,20 @@ const Filters = (function () {
       verificationSlider.value = 1;
       minVerification = 1;
       verificationValue.textContent = I18n.t('verification.1');
+      if (retractedToggle) {
+        retractedToggle.checked = false;
+        showRetracted = false;
+      }
       applyFilters();
     });
+
+    // Show retracted toggle
+    if (retractedToggle) {
+      retractedToggle.addEventListener('change', function () {
+        showRetracted = this.checked;
+        applyFilters();
+      });
+    }
 
     // Toggle collapse
     toggleBtn.addEventListener('click', function () {
@@ -84,6 +98,8 @@ const Filters = (function () {
   function applyFilters() {
     var incidents = DataLoader.getIncidents();
     var filtered = incidents.filter(function (inc) {
+      // Retracted incidents are hidden by default
+      if (inc['asm:retracted'] && !showRetracted) return false;
       var types = inc['asm:incidentType'] || [];
       var hasType = types.some(function (t) { return activeTypes.has(t); });
       var sev = inc['asm:severity'] || 1;
@@ -93,5 +109,10 @@ const Filters = (function () {
     StrikeMap.addMarkers(filtered);
   }
 
-  return { init: init, applyFilters: applyFilters };
+  function setShowRetracted(value) {
+    showRetracted = !!value;
+    applyFilters();
+  }
+
+  return { init: init, applyFilters: applyFilters, setShowRetracted: setShowRetracted };
 })();
