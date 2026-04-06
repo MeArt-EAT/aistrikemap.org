@@ -11,13 +11,37 @@
 
 **EN:** AIStrikeMap is an investigative research platform mapping AI-related human rights incidents globally. Each documented incident is presented as a reverse timeline -- tracing the path from technical infrastructure through underlying doctrine to the concrete event and its consequences (Infrastructure --> Doctrine --> Event --> Consequences). The platform reveals how algorithmic systems are embedded in decision chains affecting human rights.
 
+## Features
+
+- **Strike-Effekt / Strike effect:** Recent incidents pulse with concentric rings (blitzortung.org-inspired), tiered into hot / warm / cold based on freshness and severity.
+- **LIVE-Ticker:** Scrolling ticker at the bottom of the map surfaces the latest incidents.
+- **Reverse Timeline:** Each incident is presented as Infrastructure -> Doctrine -> Event -> Consequences.
+- **Unverified markers:** Community-submitted incidents (`verificationLevel: 1`) are rendered with a dashed outline, reduced saturation and a "?" badge in the popup until a maintainer verifies them.
+- **Filter panel:** Incident type, severity slider, verification-level slider, reset.
+- **Community reporting:** A "Vorfall melden" CTA in the header opens a structured GitHub Issue template.
+- **Bilingual UI:** German / English via lightweight JSON i18n.
+
 ## Tech Stack
 
-- Pure HTML / CSS / JavaScript (no frameworks)
+- Pure HTML / CSS / JavaScript (no frameworks, no build step)
 - [Leaflet.js](https://leafletjs.com/) for interactive maps
-- [OpenStreetMap](https://www.openstreetmap.org/) tile layers
-- JSON-LD for structured data / Schema.org markup
+- [CartoDB dark tiles](https://carto.com/) on [OpenStreetMap](https://www.openstreetmap.org/) data
+- JSON-LD / Schema.org markup for incident data
+- Static `data/index.json` manifest + one JSON file per incident under `data/incidents/`
 - Hosted on GitHub Pages
+
+## Data & Verification Workflow
+
+1. **Report:** User opens an issue via the "Vorfall melden" button (structured form, sources required).
+2. **Review:** Maintainer validates the report, creates `data/incidents/<slug>.json` with `asm:verificationLevel: 1` ("Gemeldet").
+3. **Publish:** Adding the entry to `data/index.json` makes it appear on the map as an **unverified** strike (dashed, desaturated, "?" badge) -- still with full Strike-Effekt animation so it is visible, but clearly flagged as not yet verified.
+4. **Verify:** As sources are cross-checked, `verificationLevel` is raised (2 = Bestaetigt, 3 = Verifiziert, 4 = Analysiert); the marker then switches to its full solid style.
+
+### Bot protection
+
+- GitHub account required for issue submission (email/phone verification, abuse detection, rate limits).
+- Required fields in the issue template (title, date, location, type, severity, sources, CC-BY-NC-SA consent).
+- No direct write path to the live data -- every entry passes through a human-merged pull request.
 
 ## License / Lizenz
 

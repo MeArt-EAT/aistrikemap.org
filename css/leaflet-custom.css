@@ -92,6 +92,27 @@
   outline-offset: 2px;
 }
 
+/* Unverified reports — slightly desaturated, dashed stroke handled via dashArray */
+.strike-unverified {
+  filter: saturate(0.65);
+}
+
+/* Unverified badge in popup */
+.popup-unverified {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1.5px dashed #f39c12;
+  color: #f39c12;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
 /* ═══ STRIKE EFFECT — Pulse rings for recent incidents ═══ */
 .strike-pulse {
   position: absolute;

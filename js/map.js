@@ -74,11 +74,18 @@ const StrikeMap = (function () {
       var severityLabel = I18n.t('severity.' + severity);
       var date = incident.startDate || '';
       var freshness = getFreshness(incident);
+      var verification = incident['asm:verificationLevel'] || 1;
+      var isUnverified = verification <= 1;
 
       // Dynamic radius: recent = bigger (8-14), old = smaller (6-8)
       var radius = 6 + freshness * 8;
       // Dynamic opacity: recent = brighter
       var fillOpacity = 0.4 + freshness * 0.5;
+
+      // Unverified reports get a dashed outline + reduced fill
+      var classNames = [];
+      if (!skipAnimation && index < 30) classNames.push('strike-enter');
+      if (isUnverified) classNames.push('strike-unverified');
 
       var marker = L.circleMarker([geo.latitude, geo.longitude], {
         radius: radius,
@@ -86,13 +93,18 @@ const StrikeMap = (function () {
         color: color,
         weight: freshness > 0.3 ? 2.5 : 1.5,
         opacity: 0.6 + freshness * 0.4,
-        fillOpacity: fillOpacity,
+        fillOpacity: isUnverified ? fillOpacity * 0.4 : fillOpacity,
+        dashArray: isUnverified ? '4,3' : null,
         keyboard: true,
-        className: (!skipAnimation && index < 30) ? 'strike-enter' : ''
+        className: classNames.join(' ')
       });
 
+      var unverifiedBadge = isUnverified
+        ? '<span class="popup-unverified" title="' + escapeHtml(I18n.t('verification.unverified') || 'Nicht verifiziert') + '">?</span>'
+        : '';
+
       marker.bindPopup(
-        '<div class="popup-title">' + escapeHtml(incident.name) + '</div>' +
+        '<div class="popup-title">' + unverifiedBadge + escapeHtml(incident.name) + '</div>' +
         '<div class="popup-meta">' +
           '<span class="popup-severity" style="background:' + color + '">' + escapeHtml(severityLabel) + '</span>' +
           '<span>' + escapeHtml(date) + '</span>' +
