@@ -1,0 +1,67 @@
+name: Link Check
+
+on:
+  schedule:
+    # Weekly Mondays 06:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/incidents/**'
+      - '.github/workflows/link-check.yml'
+      - '.lychee.toml'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - name: Run lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --cache
+            --max-cache-age 7d
+            --accept 200,206,429
+            --exclude-mail
+            --exclude-path node_modules
+            './data/incidents/**/*.json'
+            './README.md'
+            './CONTRIBUTING.md'
+            './*.html'
+          output: ./lychee/out.md
+          fail: false
+          format: markdown
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-report
+          path: ./lychee/out.md
+          retention-days: 30
+
+      - name: Open issue on broken links
+        if: env.lychee_exit_code != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Link Check Report — ${{ steps.date.outputs.date || github.run_id }}"
+          content-filepath: ./lychee/out.md
+          labels: |
+            link-check
+            automated

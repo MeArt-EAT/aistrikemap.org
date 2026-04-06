@@ -37,6 +37,10 @@
 3. **Publish:** Adding the entry to `data/index.json` makes it appear on the map as an **unverified** strike (dashed, desaturated, "?" badge) -- still with full Strike-Effekt animation so it is visible, but clearly flagged as not yet verified.
 4. **Verify:** As sources are cross-checked, `verificationLevel` is raised (2 = Bestaetigt, 3 = Verifiziert, 4 = Analysiert); the marker then switches to its full solid style.
 
+### Automated link checking
+
+A weekly GitHub Action ([`.github/workflows/link-check.yml`](.github/workflows/link-check.yml)) runs [lychee](https://lychee.cli.rs/) against all source URLs in `data/incidents/**/*.json` plus the static HTML pages. Broken links automatically open a tracking issue with the full report. Configuration lives in [`.lychee.toml`](.lychee.toml) and whitelists known bot-walled domains (LinkedIn, X/Twitter, Facebook, Instagram, archive.org).
+
 ### Bot protection
 
 - GitHub account required for issue submission (email/phone verification, abuse detection, rate limits).
