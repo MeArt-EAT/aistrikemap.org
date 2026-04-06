@@ -13,10 +13,22 @@ const I18n = (function () {
       strings = await resp.json();
       currentLang = lang;
       document.documentElement.lang = lang;
+      try { localStorage.setItem('asm-lang', lang); } catch (e) {}
       applyAll();
+      // Notify listeners (e.g. dynamic widgets)
+      document.dispatchEvent(new CustomEvent('i18n:changed', { detail: { lang: lang } }));
     } catch (err) {
       console.error('[i18n]', err);
     }
+  }
+
+  function getStoredLang() {
+    try {
+      var stored = localStorage.getItem('asm-lang');
+      if (stored === 'de' || stored === 'en') return stored;
+    } catch (e) {}
+    var nav = (navigator.language || 'de').toLowerCase();
+    return nav.indexOf('en') === 0 ? 'en' : 'de';
   }
 
   function t(key) {
@@ -42,5 +54,5 @@ const I18n = (function () {
     return currentLang;
   }
 
-  return { load: load, t: t, applyAll: applyAll, getLang: getLang };
+  return { load: load, t: t, applyAll: applyAll, getLang: getLang, getStoredLang: getStoredLang };
 })();

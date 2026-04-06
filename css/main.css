@@ -152,6 +152,42 @@ a:focus-visible {
   border-bottom: none;
 }
 
+/* Language switcher */
+.lang-switcher {
+  display: inline-flex;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-left: 0.5rem;
+}
+
+.lang-btn {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  font-family: inherit;
+}
+
+.lang-btn + .lang-btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.lang-btn.is-active {
+  background: var(--accent);
+  color: #fff;
+}
+
 .nav-toggle {
   display: none;
   background: none;

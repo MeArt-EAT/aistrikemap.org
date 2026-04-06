@@ -88,6 +88,12 @@ const Filters = (function () {
       });
     }
 
+    // Re-translate slider labels on language change
+    document.addEventListener('i18n:changed', function () {
+      severityValue.textContent = I18n.t('severity.' + minSeverity);
+      verificationValue.textContent = I18n.t('verification.' + minVerification);
+    });
+
     // Toggle collapse
     toggleBtn.addEventListener('click', function () {
       panel.classList.toggle('collapsed');

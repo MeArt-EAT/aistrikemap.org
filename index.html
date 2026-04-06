@@ -35,6 +35,10 @@
       <a href="https://github.com/MeArt-EAT/aistrikemap.org/issues/new?template=vorfall-melden.yml"
          class="nav-report-btn" target="_blank" rel="noopener"
          data-i18n="nav.report">Vorfall melden</a>
+      <div class="lang-switcher" role="group" aria-label="Sprache / Language">
+        <button type="button" class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
     </nav>
   </header>
 
@@ -111,16 +115,16 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
           crossorigin="anonymous"></script>
-  <script src="js/i18n.js?v=2"></script>
+  <script src="js/i18n.js?v=3"></script>
   <script src="js/map.js?v=9"></script>
   <script src="js/data-loader.js?v=3"></script>
   <script src="js/detail-panel.js?v=2"></script>
   <script src="js/filters.js?v=3"></script>
-  <script src="js/nav.js?v=2"></script>
+  <script src="js/nav.js?v=3"></script>
   <script src="js/strike-ticker.js?v=1"></script>
   <script>
     (async function () {
-      await I18n.load('de');
+      await I18n.load(I18n.getStoredLang());
       StrikeMap.init();
       DetailPanel.init();
       var incidents = await DataLoader.loadAll();
