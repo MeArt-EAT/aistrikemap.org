@@ -27,7 +27,7 @@ const StrikeMap = (function () {
       maxZoom: 18,
       maxBounds: [[-55, -180], [85, 180]],
       maxBoundsViscosity: 1.0,
-      zoomControl: true
+      zoomControl: false
     });
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -36,6 +36,8 @@ const StrikeMap = (function () {
       noWrap: true,
       maxZoom: 19
     }).addTo(map);
+
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
 
     markerLayer = L.markerClusterGroup({
       maxClusterRadius: 35,
@@ -54,6 +56,19 @@ const StrikeMap = (function () {
       }
     }).addTo(map);
     pulseLayer = L.layerGroup().addTo(map);
+
+    // Hide pulse rings when markers are clustered, show when unclustered
+    map.on('zoomend', function () {
+      var zoom = map.getZoom();
+      if (zoom >= 8) {
+        if (!map.hasLayer(pulseLayer)) map.addLayer(pulseLayer);
+      } else {
+        if (map.hasLayer(pulseLayer)) map.removeLayer(pulseLayer);
+      }
+    });
+    // Initial state: hidden (start zoom is 2)
+    map.removeLayer(pulseLayer);
+
     return map;
   }
 
