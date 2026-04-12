@@ -16,7 +16,7 @@ const StrikeMap = (function () {
   };
 
   // How many days an incident counts as "recent"
-  var RECENT_DAYS = 365 * 2; // 2 years window
+  var RECENT_DAYS = 180; // 6 months window
 
   function init() {
     map = L.map('map', {
@@ -139,9 +139,9 @@ const StrikeMap = (function () {
       } else if (severity >= 4) {
         // High-severity older incidents still get a subtle cold pulse
         pulseClass = 'strike-pulse--cold';
-      } else if (index < 40) {
+      } else if (index < 10) {
         // Top newest always pulse so the map feels alive
-        pulseClass = 'strike-pulse--warm';
+        pulseClass = 'strike-pulse--cold';
       }
       if (pulseClass) {
         addPulseRing(geo.latitude, geo.longitude, color, pulseClass);
