@@ -108,6 +108,12 @@ const Filters = (function () {
       verificationValue.textContent = I18n.t('verification.' + minVerification);
     });
 
+    // Start collapsed on mobile so the map is visible
+    if (window.innerWidth <= 768) {
+      panel.classList.add('collapsed');
+      toggleBtn.textContent = '▶';
+    }
+
     // Toggle collapse
     toggleBtn.addEventListener('click', function () {
       panel.classList.toggle('collapsed');

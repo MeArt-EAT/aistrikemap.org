@@ -364,3 +364,33 @@
   margin-bottom: 36px;
 }
 
+/* Mobile ticker */
+@media (max-width: 768px) {
+  .strike-ticker {
+    height: 30px;
+  }
+
+  .strike-ticker__label {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .strike-ticker__item {
+    font-size: 0.7rem;
+  }
+
+  .strike-ticker__date {
+    display: none;
+  }
+
+  .has-ticker .site-footer {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .strike-ticker__scroll {
+    gap: 2rem;
+  }
+}
+
