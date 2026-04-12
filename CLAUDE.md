@@ -64,7 +64,7 @@ Each incident JSON-LD file contains:
 
 ## Common Tasks
 
-- **Add incident**: Create JSON in `data/incidents/`, add entry to `data/index.json`
+- **Add incident**: Create JSON in `data/incidents/`, add entry to `data/index.json`, then run `node scripts/bundle-incidents.js` to regenerate `data/all-incidents.json`
 - **Add i18n string**: Add key to both `i18n/de.json` and `i18n/en.json`
 - **Test locally**: Open `index.html` in browser (or use any static server)
 - **Deploy**: Push to main — GitHub Pages auto-deploys

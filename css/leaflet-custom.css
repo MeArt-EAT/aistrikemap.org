@@ -86,6 +86,41 @@
   color: #f0f0f0 !important;
 }
 
+/* ═══ CLUSTER MARKERS ═══ */
+.marker-cluster {
+  background: transparent;
+}
+
+.marker-cluster div {
+  width: 34px;
+  height: 34px;
+  margin-left: 3px;
+  margin-top: 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.marker-cluster--small div {
+  background: rgba(52, 152, 219, 0.7);
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.4);
+}
+
+.marker-cluster--medium div {
+  background: rgba(231, 76, 60, 0.7);
+  box-shadow: 0 0 14px rgba(231, 76, 60, 0.4);
+}
+
+.marker-cluster--large div {
+  background: rgba(186, 104, 200, 0.7);
+  box-shadow: 0 0 18px rgba(186, 104, 200, 0.4);
+}
+
 /* Circle Markers — focus state for keyboard nav */
 .leaflet-interactive:focus {
   outline: 2px solid #4fc3f7;

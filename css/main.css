@@ -235,6 +235,23 @@ a:focus-visible {
   z-index: 1;
 }
 
+/* Incident Counter */
+.incident-counter {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: rgba(22, 33, 62, 0.85);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
 /* Filter Panel */
 .filter-panel {
   position: absolute;
@@ -750,6 +767,12 @@ a:focus-visible {
 
   .site-nav.open {
     display: flex;
+  }
+
+  .incident-counter {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.65rem;
   }
 
   .filter-panel {

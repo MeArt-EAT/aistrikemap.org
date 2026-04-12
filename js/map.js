@@ -6,6 +6,7 @@
 const StrikeMap = (function () {
   let map;
   let markerLayer;
+  let pulseLayer;
   let pulseOverlays = [];
   const SEVERITY_COLORS = {
     1: '#3498db',
@@ -36,7 +37,23 @@ const StrikeMap = (function () {
       maxZoom: 19
     }).addTo(map);
 
-    markerLayer = L.layerGroup().addTo(map);
+    markerLayer = L.markerClusterGroup({
+      maxClusterRadius: 35,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: true,
+      disableClusteringAtZoom: 8,
+      iconCreateFunction: function (cluster) {
+        var count = cluster.getChildCount();
+        var size = count < 10 ? 'small' : count < 30 ? 'medium' : 'large';
+        return L.divIcon({
+          html: '<div><span>' + count + '</span></div>',
+          className: 'marker-cluster marker-cluster--' + size,
+          iconSize: L.point(40, 40)
+        });
+      }
+    }).addTo(map);
+    pulseLayer = L.layerGroup().addTo(map);
     return map;
   }
 
@@ -162,12 +179,13 @@ const StrikeMap = (function () {
       iconAnchor: [0, 0]
     });
     var overlay = L.marker([lat, lng], { icon: pulseIcon, interactive: false });
-    overlay.addTo(markerLayer);
+    overlay.addTo(pulseLayer);
     pulseOverlays.push(overlay);
   }
 
   function clearMarkers() {
     if (markerLayer) markerLayer.clearLayers();
+    if (pulseLayer) pulseLayer.clearLayers();
     pulseOverlays = [];
   }
 
