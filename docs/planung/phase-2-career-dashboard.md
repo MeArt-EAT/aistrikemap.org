@@ -6,6 +6,11 @@
 
 **Phasenzuordnung: Phase 2** (frühestens nach stabilem Phase-1-Launch)
 
+**Einordnung im Drei-Zeitebenen-Modell:**
+- **Vergangenheit** → Incident-Karte (Phase 1)
+- **Gegenwart** → AI Live-Radar, Items 100–103 (siehe [phase-2-live-radar.md](phase-2-live-radar.md))
+- **Zukunft** → AI Career Impact Dashboard (dieses Dokument, Items 94–99)
+
 ---
 
 ### Item 94 – AI Career Impact Dashboard (Modulübersicht)
