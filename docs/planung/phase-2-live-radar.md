@@ -99,7 +99,7 @@ Jedes Live-Radar-Ereignis wird mit Dimensions-Tags versehen. Nutzer können nach
 
 ### Item 103 – Konzeptphase Live-Radar
 
-**Status:** Idee → wird zu "offen" wenn Phase 2 beginnt
+**Status:** Konzept ausgearbeitet (siehe [konzept-live-radar.md](konzept-live-radar.md))
 **Priorität:** offen
 **Blocker für:** Items 100–102
 
