@@ -1,0 +1,128 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/radar/deepfake-regulierung-global",
+  "name": "Deepfake-Krise — Regulierung vs. Realität",
+  "description": "Die globale Deepfake-Krise eskaliert: KI-generierte nicht-einvernehmliche intime Bilder (NCII), politische Desinformation und Betrugsmaschen nehmen exponentiell zu. Während Südkorea, die EU und einzelne US-Bundesstaaten erste Gesetze verabschieden, übersteigt die technische Entwicklung die Regulierung bei weitem. Die Verfügbarkeit offener Modelle macht Durchsetzung nahezu unmöglich.",
+  "startDate": "2023-01",
+  "location": {
+    "@type": "Place",
+    "name": "Global",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GLOBAL"
+    }
+  },
+  "asm:radarStatus": "eskalierend",
+  "asm:radarDimensions": ["regulierung", "diskriminierung", "desinformation"],
+  "asm:severity": 4,
+  "asm:actors": [
+    {
+      "name": "Südkoreanische Nationalpolizei",
+      "type": "government"
+    },
+    {
+      "name": "Europäische Kommission",
+      "type": "government"
+    },
+    {
+      "name": "US Federal Trade Commission (FTC)",
+      "type": "government"
+    },
+    {
+      "name": "Meta / Facebook",
+      "type": "company"
+    },
+    {
+      "name": "Stability AI",
+      "type": "company"
+    }
+  ],
+  "asm:developmentTimeline": [
+    {
+      "date": "2026-03",
+      "title": "FTC klagt erstmals gegen Deepfake-Plattform",
+      "description": "Die US-Handelskommission reicht erstmals eine Klage gegen einen Betreiber einer 'Face-Swap'-Plattform ein, die überwiegend für nicht-einvernehmliche intime Inhalte genutzt wurde.",
+      "sources": ["https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-deepfake-enforcement"],
+      "significance": "hoch"
+    },
+    {
+      "date": "2025-09",
+      "title": "Südkorea verschärft Deepfake-Gesetze nach Schulskandal",
+      "description": "Nach der Enthüllung, dass an hunderten südkoreanischen Schulen KI-generierte NCII von Schülerinnen kursierte, verabschiedet die Nationalversammlung ein Gesetz mit Haftstrafen bis zu 7 Jahren für Erstellung und Verbreitung.",
+      "sources": ["https://www.bbc.com/news/world-asia-south-korea-deepfake-law-2025"],
+      "significance": "hoch"
+    },
+    {
+      "date": "2025-06",
+      "title": "EU AI Act verbietet ungelabelte Deepfakes",
+      "description": "Die Transparenzpflichten des EU AI Act treten in Kraft: KI-generierte Inhalte müssen als solche gekennzeichnet werden. Die technische Durchsetzung (Wasserzeichen, Metadaten) bleibt umstritten.",
+      "sources": ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"],
+      "significance": "mittel"
+    },
+    {
+      "date": "2024-01",
+      "title": "Taylor-Swift-Deepfakes werden viral",
+      "description": "KI-generierte intime Bilder von Taylor Swift verbreiten sich auf X/Twitter mit Millionen Aufrufen, bevor sie gelöscht werden. Der Vorfall löst internationale Debatte über Deepfake-Regulierung aus.",
+      "sources": ["https://www.nytimes.com/2024/01/26/technology/taylor-swift-ai-deepfake.html"],
+      "significance": "hoch"
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nytimes.com/2024/01/26/technology/taylor-swift-ai-deepfake.html",
+      "title": "Explicit A.I.-Generated Images of Taylor Swift Spread on Social Media",
+      "publisher": "The New York Times",
+      "date": "2024-01",
+      "type": "news-article",
+      "asm:perspective": "kritisch"
+    },
+    {
+      "url": "https://www.bbc.com/news/world-asia-south-korea-deepfake-law-2025",
+      "title": "South Korea passes strict new deepfake laws",
+      "publisher": "BBC",
+      "date": "2025-09",
+      "type": "news-article",
+      "asm:perspective": "neutral"
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "title": "Regulation (EU) 2024/1689 — Artificial Intelligence Act",
+      "publisher": "EUR-Lex",
+      "date": "2024-07",
+      "type": "government-document",
+      "asm:perspective": "neutral"
+    },
+    {
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-deepfake-enforcement",
+      "title": "FTC takes first enforcement action against deepfake platform",
+      "publisher": "Federal Trade Commission",
+      "date": "2026-03",
+      "type": "government-document",
+      "asm:perspective": "neutral"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "suedkorea-deepfake-sexualverbrechen",
+    "china-ki-deepfake-propaganda",
+    "russland-ki-deepfake-ukraine-krieg",
+    "nigeria-ki-wahlmanipulation-deepfakes",
+    "taiwan-deepfake-politiker"
+  ],
+  "asm:resolvedAsIncident": null,
+  "asm:metadata": {
+    "created": "2026-04-13",
+    "lastUpdated": "2026-04-13",
+    "lastReviewed": "2026-04-13",
+    "author": "AIStrikeMap",
+    "humanVerified": true
+  }
+}

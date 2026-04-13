@@ -312,6 +312,16 @@ const Radar = (function () {
       html += '</div>';
     }
 
+    // Related incidents
+    var related = s['asm:relatedIncidents'] || [];
+    if (related.length) {
+      html += '<div class="detail-section"><h3 class="detail-section__title">' + esc(I18n.t('radar.detail.relatedIncidents')) + '</h3><ul class="related-list">';
+      related.forEach(function (slug) {
+        html += '<li><a href="index.html?incident=' + escAttr(slug) + '" class="related-link">' + esc(slug.replace(/-/g, ' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); })) + '</a></li>';
+      });
+      html += '</ul></div>';
+    }
+
     // Show on map link
     if (s.location && s.location.geo) {
       html += '<div style="margin-top:1rem"><a href="index.html" class="detail-share-btn" style="text-decoration:none;display:inline-flex">' +
