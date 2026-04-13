@@ -322,9 +322,11 @@ const Radar = (function () {
       html += '</ul></div>';
     }
 
-    // Show on map link
+    // Show on map link with coordinates
     if (s.location && s.location.geo) {
-      html += '<div style="margin-top:1rem"><a href="index.html" class="detail-share-btn" style="text-decoration:none;display:inline-flex">' +
+      var lat = s.location.geo.latitude;
+      var lng = s.location.geo.longitude;
+      html += '<div style="margin-top:1rem"><a href="index.html#lat=' + lat + '&lng=' + lng + '&z=6" class="detail-share-btn" style="text-decoration:none;display:inline-flex">' +
               '<span>' + esc(I18n.t('radar.detail.showOnMap')) + '</span></a></div>';
     }
 

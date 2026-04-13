@@ -75,7 +75,8 @@ Each incident JSON-LD file contains:
 ## Common Tasks
 
 - **Add incident**: Create JSON in `data/incidents/`, add entry to `data/index.json`, then run `node scripts/bundle-incidents.js`
-- **Add radar situation**: Create JSON in `data/radar/`, then run `node scripts/bundle-incidents.js`
+- **Add radar situation**: Create JSON in `data/radar/`, run `node scripts/bundle-incidents.js`, then `node scripts/generate-feed.js`
+- **Regenerate feed**: `node scripts/generate-feed.js` (Atom feed at `feed.xml`)
 - **Add i18n string**: Add key to both `i18n/de.json` and `i18n/en.json`
 - **Test locally**: Open `index.html` or `radar.html` in browser (or use any static server)
 - **Deploy**: Push to main — GitHub Pages auto-deploys

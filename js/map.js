@@ -69,6 +69,20 @@ const StrikeMap = (function () {
     // Initial state: hidden (start zoom is 2)
     map.removeLayer(pulseLayer);
 
+    // Parse hash for coordinates (from radar "show on map" link)
+    if (window.location.hash) {
+      var hash = window.location.hash.substring(1);
+      var params = {};
+      hash.split('&').forEach(function (part) {
+        var kv = part.split('=');
+        if (kv.length === 2) params[kv[0]] = parseFloat(kv[1]);
+      });
+      if (!isNaN(params.lat) && !isNaN(params.lng)) {
+        var z = !isNaN(params.z) ? params.z : 6;
+        setTimeout(function () { map.setView([params.lat, params.lng], z, { animate: true }); }, 500);
+      }
+    }
+
     return map;
   }
 

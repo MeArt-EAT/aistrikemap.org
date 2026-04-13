@@ -632,6 +632,63 @@ a:focus-visible {
   font-size: 0.7rem;
 }
 
+/* Related items (cross-links) */
+.related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.related-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: inline-block;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.related-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent);
+}
+
+/* Inline radar status (for cross-links) */
+.related-link .radar-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.1rem 0.35rem;
+  border-radius: 2px;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+
+.related-link .radar-status__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.related-link .radar-status--eskalierend { background: rgba(231, 76, 60, 0.15); color: #e74c3c; }
+.related-link .radar-status--eskalierend .radar-status__dot { background: #e74c3c; }
+.related-link .radar-status--aktiv { background: rgba(243, 156, 18, 0.15); color: #f39c12; }
+.related-link .radar-status--aktiv .radar-status__dot { background: #f39c12; }
+.related-link .radar-status--stabil { background: rgba(241, 196, 15, 0.15); color: #f1c40f; }
+.related-link .radar-status--stabil .radar-status__dot { background: #f1c40f; }
+.related-link .radar-status--deeskalierend { background: rgba(46, 204, 113, 0.15); color: #2ecc71; }
+.related-link .radar-status--deeskalierend .radar-status__dot { background: #2ecc71; }
+
 /* Footer */
 .site-footer {
   display: flex;

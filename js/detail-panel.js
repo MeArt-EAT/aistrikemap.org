@@ -4,8 +4,18 @@
  */
 const DetailPanel = (function () {
   let panelEl, titleEl, bodyEl, closeBtn;
+  var radarSituations = null;
+
+  function loadRadarData() {
+    if (radarSituations !== null) return;
+    fetch('data/all-radar.json?v=' + Date.now())
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (data) { radarSituations = data; })
+      .catch(function () { radarSituations = []; });
+  }
 
   function init() {
+    loadRadarData();
     panelEl = document.getElementById('detail-panel');
     titleEl = panelEl.querySelector('.detail-panel__title');
     bodyEl = panelEl.querySelector('.detail-panel__body');
@@ -143,6 +153,29 @@ const DetailPanel = (function () {
         html += '</li>';
       });
       html += '</ul></div>';
+    }
+
+    // Related radar situations (cross-link)
+    if (radarSituations && radarSituations.length) {
+      var incidentSlug = (getIncidentId(incident) || '').split('/').pop();
+      var relatedRadar = radarSituations.filter(function (r) {
+        var ri = r['asm:relatedIncidents'] || [];
+        return ri.indexOf(incidentSlug) !== -1;
+      });
+      if (relatedRadar.length) {
+        html += '<div class="detail-section">';
+        html += '<h3 class="detail-section__title">' + esc(I18n.t('detail.relatedRadar')) + '</h3>';
+        html += '<ul class="related-list">';
+        relatedRadar.forEach(function (r) {
+          var rSlug = (r['@id'] || '').split('/').pop();
+          var status = r['asm:radarStatus'] || 'aktiv';
+          html += '<li><a href="radar.html?radar=' + escAttr(rSlug) + '" class="related-link">' +
+                  esc(r.name) + ' <span class="radar-status radar-status--' + status +
+                  '" style="font-size:0.55rem;vertical-align:middle"><span class="radar-status__dot"></span>' +
+                  esc(I18n.t('radar.status.' + status)) + '</span></a></li>';
+        });
+        html += '</ul></div>';
+      }
     }
 
     // AI disclosure
