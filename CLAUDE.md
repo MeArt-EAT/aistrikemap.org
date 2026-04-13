@@ -56,15 +56,26 @@ Each incident JSON-LD file contains:
 ## Planning
 
 - **Phase 1** (Items 1–93): Incident Map — complete
-- **Phase 2** (Items 94–103): Two modules planned (IDEAS, not started):
-  - AI Career Impact Dashboard (Items 94–99)
-  - AI Live-Radar (Items 100–103)
+- **Phase 2** (Items 94–103): Two modules:
+  - AI Career Impact Dashboard (Items 94–99) — IDEA, not started
+  - AI Live-Radar (Items 100–103) — **MVP live** (3 pilot situation cards)
 - **Inventory index**: `docs/planung/inventar-index.md`
-- **Planning docs**: `docs/planung/phase-2-*.md`, Word docs in repo root
+- **Planning docs**: `docs/planung/phase-2-*.md`, `docs/planung/konzept-live-radar.md`
+
+## Radar Module
+
+- **Page**: `radar.html` — card grid with status indicators and dimension tags
+- **CSS**: `css/radar.css` — radar-specific styles
+- **JS**: `js/radar.js` — data loading, grid rendering, filters, detail panel
+- **Data**: `data/radar/*.json` (individual) → `data/all-radar.json` (bundle)
+- **Schema**: extends incident schema with `asm:radarStatus`, `asm:radarDimensions`, `asm:developmentTimeline`, `asm:sources[].asm:perspective`
+- **Status values**: eskalierend / aktiv / stabil / deeskalierend / abgeschlossen
+- **Dimensions**: cybersicherheit, regulierung, geopolitik, militaer, ueberwachung, unternehmensethik, arbeitsmarkt, diskriminierung, umwelt, desinformation
 
 ## Common Tasks
 
-- **Add incident**: Create JSON in `data/incidents/`, add entry to `data/index.json`, then run `node scripts/bundle-incidents.js` to regenerate `data/all-incidents.json`
+- **Add incident**: Create JSON in `data/incidents/`, add entry to `data/index.json`, then run `node scripts/bundle-incidents.js`
+- **Add radar situation**: Create JSON in `data/radar/`, then run `node scripts/bundle-incidents.js`
 - **Add i18n string**: Add key to both `i18n/de.json` and `i18n/en.json`
-- **Test locally**: Open `index.html` in browser (or use any static server)
+- **Test locally**: Open `index.html` or `radar.html` in browser (or use any static server)
 - **Deploy**: Push to main — GitHub Pages auto-deploys

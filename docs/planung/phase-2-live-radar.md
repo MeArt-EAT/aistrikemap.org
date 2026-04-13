@@ -2,7 +2,7 @@
 
 ## Neue Items: AI Live-Radar (Gegenwarts-Modul)
 
-**Status: IDEE** – Konzeptionelle Vorüberlegung, noch nicht spezifiziert. Vor Umsetzung ist eine vollständige Konzeptphase erforderlich.
+**Status: MVP IMPLEMENTIERT** – Konzeptphase abgeschlossen (siehe [konzept-live-radar.md](konzept-live-radar.md)), MVP mit 3 Pilotkarten live.
 
 **Phasenzuordnung: Phase 2** (frühestens nach stabilem Phase-1-Launch)
 
