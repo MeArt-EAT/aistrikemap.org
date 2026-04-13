@@ -1,0 +1,118 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/radar/gaza-ai-targeting",
+  "name": "KI-gestützte Zielerfassung im Gazastreifen",
+  "description": "Israelische Streitkräfte setzen KI-Systeme wie 'Lavender' und 'The Gospel' zur automatisierten Zielerfassung im Gazastreifen ein. Investigativrecherchen dokumentieren, dass diese Systeme Ziellisten mit tausenden Personen generieren, wobei die menschliche Überprüfung auf unter 20 Sekunden pro Ziel reduziert wurde. Die ethische und völkerrechtliche Debatte über autonome Waffen und KI im Krieg verschärft sich.",
+  "startDate": "2023-10",
+  "location": {
+    "@type": "Place",
+    "name": "Gaza / Israel",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.3547,
+      "longitude": 34.3088
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PS"
+    }
+  },
+  "asm:radarStatus": "aktiv",
+  "asm:radarDimensions": ["militaer", "ueberwachung", "geopolitik"],
+  "asm:severity": 5,
+  "asm:actors": [
+    {
+      "name": "Israel Defense Forces (IDF)",
+      "type": "military",
+      "asm:systems": ["Lavender", "The Gospel", "Where's Daddy?"]
+    },
+    {
+      "name": "Unit 8200",
+      "type": "military"
+    },
+    {
+      "name": "UN Office of the High Commissioner for Human Rights",
+      "type": "organization"
+    },
+    {
+      "name": "International Criminal Court",
+      "type": "government"
+    }
+  ],
+  "asm:developmentTimeline": [
+    {
+      "date": "2026-02",
+      "title": "UN-Sonderbericht zu autonomen Waffen in Gaza",
+      "description": "Der UN-Sonderberichterstatter für außergerichtliche Hinrichtungen veröffentlicht einen Bericht, der den Einsatz von KI-Systemen im Gazastreifen als mögliche Verletzung des humanitären Völkerrechts einstuft.",
+      "sources": ["https://www.ohchr.org/en/documents/thematic-reports/autonomous-weapons-conflict-zones"],
+      "significance": "hoch"
+    },
+    {
+      "date": "2025-10",
+      "title": "IDF bestätigt teilweise KI-Nutzung bei Zielerfassung",
+      "description": "In einer Pressekonferenz bestätigt ein IDF-Sprecher erstmals offiziell den Einsatz von KI-Systemen zur 'Unterstützung' der Zielerfassung, betont aber 'meaningful human control' bei allen Entscheidungen.",
+      "sources": ["https://www.timesofisrael.com/idf-confirms-ai-targeting-assistance/"],
+      "significance": "hoch"
+    },
+    {
+      "date": "2024-04",
+      "title": "+972 Magazine enthüllt 'Lavender'-System",
+      "description": "Eine Investigativrecherche von +972 Magazine und Local Call enthüllt das KI-System 'Lavender', das automatisch Ziellisten mit rund 37.000 Personen generierte. Quellen berichten, dass Soldaten im Schnitt 20 Sekunden pro Ziel für die Überprüfung hatten.",
+      "sources": ["https://www.972mag.com/lavender-ai-israeli-army-gaza/"],
+      "significance": "hoch"
+    },
+    {
+      "date": "2023-12",
+      "title": "'The Gospel' beschleunigt Zielproduktion",
+      "description": "Berichte zeigen, dass das KI-System 'The Gospel' die Rate der Zielerzeugung von 50 auf 100+ Ziele pro Tag erhöht hat und eine 'mass assassination factory' geschaffen wurde.",
+      "sources": ["https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-bombing-targets"],
+      "significance": "hoch"
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.972mag.com/lavender-ai-israeli-army-gaza/",
+      "title": "'Lavender': The AI machine directing Israel's bombing spree in Gaza",
+      "publisher": "+972 Magazine",
+      "date": "2024-04",
+      "type": "news-article",
+      "asm:perspective": "kritisch"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-bombing-targets",
+      "title": "'The Gospel': how Israel uses AI to select bombing targets",
+      "publisher": "The Guardian",
+      "date": "2023-12",
+      "type": "news-article",
+      "asm:perspective": "kritisch"
+    },
+    {
+      "url": "https://www.timesofisrael.com/idf-confirms-ai-targeting-assistance/",
+      "title": "IDF confirms use of AI in targeting operations",
+      "publisher": "The Times of Israel",
+      "date": "2025-10",
+      "type": "news-article",
+      "asm:perspective": "neutral"
+    },
+    {
+      "url": "https://www.ohchr.org/en/documents/thematic-reports/autonomous-weapons-conflict-zones",
+      "title": "Report on autonomous weapons in conflict zones",
+      "publisher": "UN OHCHR",
+      "date": "2026-02",
+      "type": "government-document",
+      "asm:perspective": "kritisch"
+    }
+  ],
+  "asm:resolvedAsIncident": null,
+  "asm:metadata": {
+    "created": "2026-04-13",
+    "lastUpdated": "2026-04-13",
+    "lastReviewed": "2026-04-13",
+    "author": "AIStrikeMap",
+    "humanVerified": true
+  }
+}

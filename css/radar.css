@@ -1,0 +1,320 @@
+/* AIStrikeMap — Radar Module */
+
+.radar-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+/* Radar Header */
+.radar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.radar-header__title h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.radar-header__subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+}
+
+.radar-header__filters {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.radar-select {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.radar-select:hover,
+.radar-select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.radar-select option {
+  background: #16213e;
+  color: var(--text-primary);
+}
+
+.radar-checkbox {
+  font-size: 0.8rem;
+}
+
+/* Radar Grid */
+.radar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+/* Situation Card */
+.radar-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.radar-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.radar-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.radar-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Status Badges */
+.radar-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.radar-status__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.radar-status--eskalierend {
+  background: rgba(231, 76, 60, 0.15);
+  color: #e74c3c;
+}
+.radar-status--eskalierend .radar-status__dot {
+  background: #e74c3c;
+  animation: status-pulse 1.5s ease-in-out infinite;
+}
+
+.radar-status--aktiv {
+  background: rgba(243, 156, 18, 0.15);
+  color: #f39c12;
+}
+.radar-status--aktiv .radar-status__dot {
+  background: #f39c12;
+}
+
+.radar-status--stabil {
+  background: rgba(241, 196, 15, 0.15);
+  color: #f1c40f;
+}
+.radar-status--stabil .radar-status__dot {
+  background: #f1c40f;
+}
+
+.radar-status--deeskalierend {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+}
+.radar-status--deeskalierend .radar-status__dot {
+  background: #2ecc71;
+}
+
+.radar-status--abgeschlossen {
+  background: rgba(160, 160, 160, 0.15);
+  color: #a0a0a0;
+}
+.radar-status--abgeschlossen .radar-status__dot {
+  background: #a0a0a0;
+}
+
+@keyframes status-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Dimension Tags */
+.radar-card__dimensions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.radar-dim-tag {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Dimension colors */
+.radar-dim-tag--cybersicherheit { color: #e74c3c; border-color: rgba(231, 76, 60, 0.3); }
+.radar-dim-tag--regulierung { color: #3498db; border-color: rgba(52, 152, 219, 0.3); }
+.radar-dim-tag--geopolitik { color: #9b59b6; border-color: rgba(155, 89, 182, 0.3); }
+.radar-dim-tag--militaer { color: #c0392b; border-color: rgba(192, 57, 43, 0.3); }
+.radar-dim-tag--ueberwachung { color: #f39c12; border-color: rgba(243, 156, 18, 0.3); }
+.radar-dim-tag--unternehmensethik { color: #1abc9c; border-color: rgba(26, 188, 156, 0.3); }
+.radar-dim-tag--arbeitsmarkt { color: #2ecc71; border-color: rgba(46, 204, 113, 0.3); }
+.radar-dim-tag--diskriminierung { color: #e67e22; border-color: rgba(230, 126, 34, 0.3); }
+.radar-dim-tag--umwelt { color: #27ae60; border-color: rgba(39, 174, 96, 0.3); }
+.radar-dim-tag--desinformation { color: #8e44ad; border-color: rgba(142, 68, 173, 0.3); }
+
+/* Card Meta */
+.radar-card__meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.radar-card__meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Severity bar */
+.radar-card__severity {
+  height: 3px;
+  border-radius: 2px;
+  margin-top: auto;
+}
+
+/* Empty state */
+.radar-empty {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 3rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Perspective badges in detail */
+.perspective-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.1rem 0.35rem;
+  border-radius: 2px;
+  margin-left: 0.4rem;
+}
+
+.perspective-badge--neutral {
+  background: rgba(160, 160, 160, 0.2);
+  color: #a0a0a0;
+}
+
+.perspective-badge--kritisch {
+  background: rgba(243, 156, 18, 0.15);
+  color: #f39c12;
+}
+
+.perspective-badge--befuerwortend {
+  background: rgba(52, 152, 219, 0.15);
+  color: #3498db;
+}
+
+.perspective-badge--unklar {
+  background: rgba(160, 160, 160, 0.1);
+  color: #888;
+  border: 1px dashed rgba(160, 160, 160, 0.3);
+}
+
+/* Significance badges */
+.significance-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.1rem 0.35rem;
+  border-radius: 2px;
+  margin-left: 0.3rem;
+}
+
+.significance-badge--hoch { background: rgba(231, 76, 60, 0.15); color: #e74c3c; }
+.significance-badge--mittel { background: rgba(243, 156, 18, 0.15); color: #f39c12; }
+.significance-badge--niedrig { background: rgba(160, 160, 160, 0.15); color: #a0a0a0; }
+
+/* Bias summary */
+.bias-summary {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: 0.5rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .radar-wrapper {
+    padding: 1rem;
+  }
+
+  .radar-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .radar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-header__filters {
+    width: 100%;
+  }
+
+  .radar-select {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .radar-header__title h1 {
+    font-size: 1.1rem;
+  }
+
+  .radar-card {
+    padding: 1rem;
+  }
+}

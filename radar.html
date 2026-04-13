@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIStrikeMap Live-Radar — Laufende KI-Ereignisse mit offenem Ausgang, kuratiert und kontextualisiert.">
+  <title>AIStrikeMap — AI Live-Radar</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="AIStrikeMap — AI Live-Radar">
+  <meta property="og:description" content="Laufende KI-Ereignisse mit offenem Ausgang, kuratiert und kontextualisiert.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aistrikemap.org/radar.html">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/radar.css?v=1">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#radar-grid" class="skip-link" data-i18n="a11y.skip">Zum Inhalt springen</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo" aria-label="AIStrikeMap Home">
+      <span class="logo-accent">AI</span>StrikeMap
+    </a>
+    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false">☰</button>
+    <nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
+      <a href="index.html" data-i18n="nav.home">Karte</a>
+      <a href="radar.html" data-i18n="nav.radar" aria-current="page">Radar</a>
+      <a href="methodik.html" data-i18n="nav.methodology">Methodik</a>
+      <a href="transparenz.html" data-i18n="nav.transparency">Transparenz</a>
+      <a href="impressum.html" data-i18n="nav.imprint">Impressum</a>
+      <a href="datenschutz.html" data-i18n="nav.privacy">Datenschutz</a>
+      <a href="https://github.com/MeArt-EAT/aistrikemap.org/issues/new?template=vorfall-melden.yml"
+         class="nav-report-btn" target="_blank" rel="noopener"
+         data-i18n="nav.report">Vorfall melden</a>
+      <div class="lang-switcher" role="group" aria-label="Sprache / Language">
+        <button type="button" class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="radar-wrapper" id="main-content">
+    <!-- Radar Header -->
+    <div class="radar-header">
+      <div class="radar-header__title">
+        <h1 data-i18n="radar.title">AI Live-Radar</h1>
+        <p class="radar-header__subtitle" data-i18n="radar.subtitle">Laufende KI-Ereignisse mit offenem Ausgang</p>
+      </div>
+      <div class="radar-header__filters">
+        <select id="radar-filter-dimension" class="radar-select">
+          <option value="" data-i18n="radar.filter.all">Alle</option>
+        </select>
+        <select id="radar-filter-status" class="radar-select">
+          <option value="" data-i18n="radar.filter.all">Alle</option>
+          <option value="eskalierend" data-i18n="radar.status.eskalierend">Eskalierend</option>
+          <option value="aktiv" data-i18n="radar.status.aktiv">Aktiv</option>
+          <option value="stabil" data-i18n="radar.status.stabil">Stabil</option>
+          <option value="deeskalierend" data-i18n="radar.status.deeskalierend">Deeskalierend</option>
+        </select>
+        <label class="filter-checkbox radar-checkbox">
+          <input type="checkbox" id="radar-show-completed">
+          <span data-i18n="radar.showCompleted">Abgeschlossene anzeigen</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Radar Grid -->
+    <div class="radar-grid" id="radar-grid" aria-label="Situationskarten"></div>
+
+    <!-- Empty state -->
+    <div class="radar-empty" id="radar-empty" style="display:none" data-i18n="radar.empty">Keine Situationen für diese Filter.</div>
+
+    <!-- Detail Panel -->
+    <section id="radar-detail" class="detail-panel" aria-label="Situations-Details" tabindex="-1">
+      <div class="detail-panel__header">
+        <h2 class="detail-panel__title"></h2>
+        <button class="detail-close-btn" aria-label="Schließen">&times;</button>
+      </div>
+      <div class="detail-panel__body"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span data-i18n="footer.license">Daten: CC BY-NC-SA 4.0 | Code: AGPL-3.0</span>
+    <span class="ai-disclosure" data-i18n="footer.ai">Technik: KI-unterstützt | Inhalt: Menschlich verifiziert</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js?v=3"></script>
+  <script src="js/nav.js?v=3"></script>
+  <script src="js/radar.js?v=1"></script>
+  <script>
+    (async function () {
+      await I18n.load(I18n.getStoredLang());
+      await Radar.init();
+      Radar.openFromUrl();
+    })();
+  </script>
+</body>
+</html>
