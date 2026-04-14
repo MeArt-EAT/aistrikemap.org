@@ -81,6 +81,27 @@
     <!-- Map -->
     <div id="map" role="application" data-i18n-aria="a11y.map" aria-label="Interaktive Weltkarte mit KI-Vorfällen"></div>
 
+    <!-- Map Legend -->
+    <div class="map-legend" id="map-legend" aria-label="Kartenlegende">
+      <button class="map-legend__toggle" id="map-legend-toggle" aria-expanded="true" aria-controls="map-legend-body" title="Legende">
+        <span aria-hidden="true">&#9432;</span>
+      </button>
+      <div class="map-legend__body" id="map-legend-body">
+        <div class="map-legend__item">
+          <span class="map-legend__circle" style="background:#e74c3c"></span>
+          <span data-i18n="legend.incident">Vorfall</span>
+        </div>
+        <div class="map-legend__item">
+          <span class="map-legend__diamond" style="background:#f39c12"></span>
+          <span data-i18n="legend.radar">Live-Radar</span>
+        </div>
+        <label class="map-legend__toggle-radar">
+          <input type="checkbox" id="toggle-radar-markers" checked>
+          <span data-i18n="legend.showRadar">Radar anzeigen</span>
+        </label>
+      </div>
+    </div>
+
     <!-- Filter Panel -->
     <aside class="filter-panel" aria-label="Filter">
       <div class="filter-panel__header">

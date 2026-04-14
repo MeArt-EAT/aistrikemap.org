@@ -70,7 +70,8 @@ const StrikeMap = (function () {
     map.removeLayer(pulseLayer);
 
     // Parse hash for coordinates (from radar "show on map" link)
-    if (window.location.hash) {
+    function applyHashView() {
+      if (!window.location.hash) return;
       var hash = window.location.hash.substring(1);
       var params = {};
       hash.split('&').forEach(function (part) {
@@ -79,9 +80,11 @@ const StrikeMap = (function () {
       });
       if (!isNaN(params.lat) && !isNaN(params.lng)) {
         var z = !isNaN(params.z) ? params.z : 6;
-        setTimeout(function () { map.setView([params.lat, params.lng], z, { animate: true }); }, 500);
+        map.setView([params.lat, params.lng], z, { animate: true });
       }
     }
+    setTimeout(applyHashView, 500);
+    window.addEventListener('hashchange', applyHashView);
 
     return map;
   }
@@ -219,6 +222,18 @@ const StrikeMap = (function () {
   function addRadarMarkers() {
     if (radarLayer) radarLayer.clearLayers();
     radarLayer = L.layerGroup().addTo(map);
+
+    // Wire up toggle
+    var toggle = document.getElementById('toggle-radar-markers');
+    if (toggle) {
+      toggle.addEventListener('change', function () {
+        if (toggle.checked) {
+          if (!map.hasLayer(radarLayer)) map.addLayer(radarLayer);
+        } else {
+          if (map.hasLayer(radarLayer)) map.removeLayer(radarLayer);
+        }
+      });
+    }
 
     fetch('data/all-radar.json?v=' + Date.now())
       .then(function (r) { return r.ok ? r.json() : []; })
