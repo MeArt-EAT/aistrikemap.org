@@ -126,6 +126,31 @@
   box-shadow: 0 0 18px rgba(186, 104, 200, 0.4);
 }
 
+/* Radar diamond markers */
+.radar-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radar-marker__diamond {
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  box-shadow: 0 0 8px currentColor;
+  transition: transform 0.2s;
+}
+
+.radar-marker--eskalierend .radar-marker__diamond {
+  animation: radar-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes radar-pulse {
+  0%, 100% { transform: rotate(45deg) scale(1); opacity: 1; }
+  50% { transform: rotate(45deg) scale(1.3); opacity: 0.7; }
+}
+
 /* Circle Markers — focus state for keyboard nav */
 .leaflet-interactive:focus {
   outline: 2px solid #4fc3f7;

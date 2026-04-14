@@ -88,6 +88,19 @@ const Radar = (function () {
     filtered.forEach(function (s) {
       grid.appendChild(createCard(s));
     });
+
+    // Update counter
+    var counterEl = document.getElementById('radar-counter');
+    if (counterEl) {
+      var eskal = situations.filter(function (s) { return s['asm:radarStatus'] === 'eskalierend'; }).length;
+      var aktiv = situations.filter(function (s) { return s['asm:radarStatus'] === 'aktiv'; }).length;
+      var parts = [];
+      parts.push(situations.length + ' ' + I18n.t('radar.counter.total'));
+      if (eskal) parts.push(eskal + ' ' + I18n.t('radar.counter.escalating'));
+      if (aktiv) parts.push(aktiv + ' ' + I18n.t('radar.counter.active'));
+      counterEl.textContent = parts.join(' · ');
+      counterEl.style.display = '';
+    }
   }
 
   function createCard(s) {

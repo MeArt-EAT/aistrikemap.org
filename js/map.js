@@ -212,6 +212,47 @@ const StrikeMap = (function () {
     pulseOverlays.push(overlay);
   }
 
+  /**
+   * Load and display radar situations as diamond markers on the map.
+   */
+  var radarLayer;
+  function addRadarMarkers() {
+    if (radarLayer) radarLayer.clearLayers();
+    radarLayer = L.layerGroup().addTo(map);
+
+    fetch('data/all-radar.json?v=' + Date.now())
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (situations) {
+        situations.forEach(function (s) {
+          if (!s.location || !s.location.geo) return;
+          var lat = s.location.geo.latitude;
+          var lng = s.location.geo.longitude;
+          var status = s['asm:radarStatus'] || 'aktiv';
+          var severity = s['asm:severity'] || 1;
+          var color = SEVERITY_COLORS[severity] || SEVERITY_COLORS[1];
+          var slug = (s['@id'] || '').split('/').pop();
+
+          var icon = L.divIcon({
+            className: 'radar-marker radar-marker--' + status,
+            html: '<div class="radar-marker__diamond" style="background:' + color + '"></div>',
+            iconSize: [18, 18],
+            iconAnchor: [9, 9]
+          });
+
+          var marker = L.marker([lat, lng], { icon: icon });
+          var popup = '<div class="strike-popup">' +
+            '<div class="strike-popup__type" style="color:' + color + '">&#9670; RADAR</div>' +
+            '<div class="strike-popup__name">' + escapeHtml(s.name) + '</div>' +
+            '<div class="strike-popup__meta" style="text-transform:uppercase;font-size:0.6rem;color:' + color + '">' + escapeHtml(status) + '</div>' +
+            '<a href="radar.html?radar=' + escapeHtml(slug) + '" style="color:var(--link);font-size:0.75rem">Details &rarr;</a>' +
+            '</div>';
+          marker.bindPopup(popup, { maxWidth: 260, className: 'dark-popup' });
+          marker.addTo(radarLayer);
+        });
+      })
+      .catch(function () {});
+  }
+
   function clearMarkers() {
     if (markerLayer) markerLayer.clearLayers();
     if (pulseLayer) pulseLayer.clearLayers();
@@ -236,6 +277,7 @@ const StrikeMap = (function () {
   return {
     init: init,
     addMarkers: addMarkers,
+    addRadarMarkers: addRadarMarkers,
     clearMarkers: clearMarkers,
     getMarkerLayer: getMarkerLayer,
     getMap: getMap,

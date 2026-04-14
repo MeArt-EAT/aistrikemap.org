@@ -1,12 +1,105 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect fill="#1a1a2e" width="1200" height="630"/>
-  <text x="600" y="280" text-anchor="middle" font-family="system-ui, sans-serif" font-size="72" font-weight="700" fill="#f0f0f0">
-    <tspan fill="#f06070">AI</tspan>StrikeMap
+  <defs>
+    <radialGradient id="bg" cx="60%" cy="40%">
+      <stop offset="0%" stop-color="#1c2a4a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-lg">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="473" x2="1200" y2="473"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- World map outline (simplified continents) -->
+  <g fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" transform="translate(350, 80) scale(0.7)">
+    <path d="M520,180 L540,160 L580,155 L610,170 L600,200 L560,210 L530,200Z"/>
+    <path d="M530,230 L560,220 L590,240 L600,300 L580,380 L540,390 L510,350 L500,280Z"/>
+    <path d="M620,140 L700,120 L780,150 L830,180 L820,240 L750,260 L680,250 L640,220 L610,180Z"/>
+    <path d="M150,120 L250,100 L350,130 L380,180 L350,250 L280,280 L200,260 L140,200Z"/>
+    <path d="M280,310 L330,290 L360,330 L350,420 L310,470 L270,440 L260,370Z"/>
+    <path d="M780,350 L850,340 L880,370 L870,410 L820,420 L780,390Z"/>
+  </g>
+
+  <!-- Incident dots with glow -->
+  <g filter="url(#glow)">
+    <circle cx="720" cy="250" r="5" fill="#ba68c8" opacity="0.9"/>
+    <circle cx="720" cy="250" r="12" fill="none" stroke="#ba68c8" stroke-width="1" opacity="0.3"/>
+    <circle cx="720" cy="250" r="20" fill="none" stroke="#ba68c8" stroke-width="0.5" opacity="0.15"/>
+    <circle cx="580" cy="200" r="4.5" fill="#e74c3c" opacity="0.9"/>
+    <circle cx="580" cy="200" r="11" fill="none" stroke="#e74c3c" stroke-width="1" opacity="0.3"/>
+    <circle cx="780" cy="220" r="4" fill="#e74c3c" opacity="0.85"/>
+    <circle cx="480" cy="195" r="3.5" fill="#e74c3c" opacity="0.8"/>
+    <circle cx="650" cy="180" r="4" fill="#e67e22" opacity="0.85"/>
+    <circle cx="520" cy="280" r="3.5" fill="#e67e22" opacity="0.8"/>
+    <circle cx="850" cy="310" r="3" fill="#e67e22" opacity="0.75"/>
+    <circle cx="600" cy="160" r="3" fill="#f39c12" opacity="0.8"/>
+    <circle cx="450" cy="220" r="3" fill="#f39c12" opacity="0.75"/>
+    <circle cx="700" cy="300" r="2.5" fill="#f39c12" opacity="0.7"/>
+    <circle cx="550" cy="170" r="3" fill="#3498db" opacity="0.8"/>
+    <circle cx="680" cy="190" r="2.5" fill="#3498db" opacity="0.75"/>
+    <circle cx="820" cy="270" r="2.5" fill="#3498db" opacity="0.7"/>
+    <circle cx="430" cy="300" r="2" fill="#3498db" opacity="0.65"/>
+    <circle cx="380" cy="240" r="3.5" fill="#e74c3c" opacity="0.85"/>
+    <circle cx="380" cy="240" r="10" fill="none" stroke="#e74c3c" stroke-width="1" opacity="0.25"/>
+    <circle cx="910" cy="350" r="3" fill="#f39c12" opacity="0.75"/>
+    <circle cx="340" cy="190" r="2.5" fill="#3498db" opacity="0.7"/>
+    <circle cx="760" cy="350" r="2.5" fill="#e67e22" opacity="0.7"/>
+  </g>
+
+  <!-- Radar diamond markers -->
+  <g filter="url(#glow-lg)">
+    <rect x="572" y="192" width="8" height="8" rx="1" fill="#e74c3c" transform="rotate(45,576,196)" opacity="0.95"/>
+    <rect x="716" y="243" width="8" height="8" rx="1" fill="#ba68c8" transform="rotate(45,720,247)" opacity="0.95"/>
+    <rect x="374" y="233" width="7" height="7" rx="1" fill="#f39c12" transform="rotate(45,377.5,236.5)" opacity="0.9"/>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" letter-spacing="-1">
+    <tspan fill="#f06070">AI</tspan><tspan fill="#f0f0f0" dx="4">StrikeMap</tspan>
   </text>
-  <text x="600" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" fill="#a0a0a0">
-    KI-Vorfälle weltweit dokumentiert
+
+  <!-- Subtitle -->
+  <text x="62" y="245" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#a0a0a0" font-weight="400">
+    Mapping AI-related human rights incidents worldwide
   </text>
-  <text x="600" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#4fc3f7">
-    aistrikemap.org
-  </text>
+
+  <!-- Stats -->
+  <g font-family="system-ui, -apple-system, sans-serif" fill="#a0a0a0" font-size="15">
+    <text x="62" y="310"><tspan fill="#f06070" font-weight="700" font-size="28">195</tspan><tspan dx="6">Incidents</tspan></text>
+    <text x="62" y="345"><tspan fill="#f39c12" font-weight="700" font-size="28">6</tspan><tspan dx="6">Live Radar</tspan></text>
+    <text x="62" y="380"><tspan fill="#3498db" font-weight="700" font-size="28">102</tspan><tspan dx="6">Countries</tspan></text>
+  </g>
+
+  <!-- Three-timeline model -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="12" transform="translate(62, 420)">
+    <rect width="90" height="28" rx="4" fill="rgba(52,152,219,0.15)" stroke="rgba(52,152,219,0.3)" stroke-width="1"/>
+    <text x="45" y="18" fill="#3498db" text-anchor="middle" font-weight="600">Past</text>
+    <text x="100" y="18" fill="#555" font-size="16">→</text>
+    <rect x="120" width="90" height="28" rx="4" fill="rgba(243,156,18,0.15)" stroke="rgba(243,156,18,0.3)" stroke-width="1"/>
+    <text x="165" y="18" fill="#f39c12" text-anchor="middle" font-weight="600">Present</text>
+    <text x="220" y="18" fill="#555" font-size="16">→</text>
+    <rect x="240" width="90" height="28" rx="4" fill="rgba(186,104,200,0.15)" stroke="rgba(186,104,200,0.3)" stroke-width="1"/>
+    <text x="285" y="18" fill="#ba68c8" text-anchor="middle" font-weight="600">Future</text>
+  </g>
+
+  <!-- URL -->
+  <text x="62" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4fc3f7" font-weight="500">aistrikemap.org</text>
+
+  <!-- Bottom border accent -->
+  <rect x="0" y="620" width="1200" height="10" fill="#f06070" opacity="0.6"/>
 </svg>

@@ -177,6 +177,7 @@
       DetailPanel.init();
       var incidents = await DataLoader.loadAll();
       StrikeMap.addMarkers(incidents);
+      StrikeMap.addRadarMarkers();
       Filters.init();
       StrikeTicker.init(incidents);
       // Update incident counter
