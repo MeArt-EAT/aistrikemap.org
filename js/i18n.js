@@ -48,6 +48,10 @@ const I18n = (function () {
       var key = el.getAttribute('data-i18n-title');
       el.title = t(key);
     });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      el.setAttribute('placeholder', t(key));
+    });
   }
 
   function getLang() {

@@ -8,6 +8,7 @@ const Filters = (function () {
   let minVerification = 1;
   let showRetracted = false;
   let timeRangeMonths = 0; // 0 = all time
+  let searchQuery = '';
   let allTypes = [
     'surveillance', 'predictive-policing', 'autonomous-weapons',
     'discrimination', 'deepfakes', 'data-misuse', 'military-ai',
@@ -23,6 +24,7 @@ const Filters = (function () {
     var resetBtn = document.getElementById('filter-reset');
     var retractedToggle = document.getElementById('filter-show-retracted');
     var timeRangeSelect = document.getElementById('filter-time-range');
+    var searchInput = document.getElementById('filter-search');
     var toggleBtn = document.querySelector('.filter-toggle-btn');
     var panel = document.querySelector('.filter-panel');
 
@@ -83,8 +85,25 @@ const Filters = (function () {
         timeRangeSelect.value = '0';
         timeRangeMonths = 0;
       }
+      if (searchInput) {
+        searchInput.value = '';
+        searchQuery = '';
+      }
       applyFilters();
     });
+
+    // Search input (debounced)
+    if (searchInput) {
+      var searchTimer = null;
+      searchInput.addEventListener('input', function () {
+        if (searchTimer) clearTimeout(searchTimer);
+        var val = this.value;
+        searchTimer = setTimeout(function () {
+          searchQuery = val.trim().toLowerCase();
+          applyFilters();
+        }, 150);
+      });
+    }
 
     // Time range
     if (timeRangeSelect) {
@@ -138,6 +157,18 @@ const Filters = (function () {
       if (cutoffMs !== null) {
         var d = inc.startDate ? new Date(inc.startDate) : null;
         if (!d || isNaN(d.getTime()) || d.getTime() < cutoffMs) return false;
+      }
+      if (searchQuery) {
+        var hay = [
+          inc.name || '',
+          inc.description || '',
+          (inc.location && inc.location.name) || ''
+        ];
+        var actors = inc['asm:actors'] || [];
+        actors.forEach(function (a) { hay.push(a.name || ''); });
+        var rights = inc['asm:affectedRights'] || [];
+        rights.forEach(function (r) { hay.push(r); });
+        if (hay.join(' ').toLowerCase().indexOf(searchQuery) === -1) return false;
       }
       return true;
     });
