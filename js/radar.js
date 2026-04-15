@@ -223,11 +223,21 @@ const Radar = (function () {
 
     var html = '';
 
-    // Share button
+    // Share button + social share
     if (slug) {
+      var shareUrl = window.location.origin + window.location.pathname + '?radar=' + encodeURIComponent(slug);
+      var shareText = encodeURIComponent(s.name + ' — AIStrikeMap Live-Radar');
+      html += '<div class="detail-share-row">';
       html += '<button type="button" class="detail-share-btn" data-share>' +
               '<span class="detail-share-btn__icon" aria-hidden="true">&#128279;</span>' +
               '<span data-i18n="radar.detail.share">' + esc(I18n.t('radar.detail.share')) + '</span></button>';
+      html += '<a href="https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent(shareUrl) +
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="X / Twitter" aria-label="Share on X">𝕏</a>';
+      html += '<a href="https://mastodon.social/share?text=' + shareText + '%20' + encodeURIComponent(shareUrl) +
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="Mastodon" aria-label="Share on Mastodon">🐘</a>';
+      html += '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl) +
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="LinkedIn" aria-label="Share on LinkedIn">in</a>';
+      html += '</div>';
     }
 
     // Status + Severity + Date
