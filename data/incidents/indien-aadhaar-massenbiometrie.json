@@ -14,20 +14,33 @@
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 28.6139,
-      "longitude": 77.2090
+      "longitude": 77.209
     },
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "IN"
     }
   },
-  "asm:incidentType": ["surveillance", "data-misuse", "discrimination"],
-  "asm:affectedRights": ["Recht auf Privatsphäre", "Recht auf Nahrung", "Recht auf soziale Sicherheit", "Recht auf Identität", "Schutz vor Diskriminierung"],
+  "asm:incidentType": [
+    "surveillance",
+    "data-misuse",
+    "discrimination"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Recht auf Nahrung",
+    "Recht auf soziale Sicherheit",
+    "Recht auf Identität",
+    "Schutz vor Diskriminierung"
+  ],
   "asm:actors": [
     {
       "name": "UIDAI (Unique Identification Authority of India)",
       "type": "government",
-      "asm:systems": ["Aadhaar", "ABIS (Automated Biometric Identification System)"]
+      "asm:systems": [
+        "Aadhaar",
+        "ABIS (Automated Biometric Identification System)"
+      ]
     },
     {
       "name": "Indische Regierung",
@@ -42,28 +55,32 @@
       "phase": "infrastructure",
       "title": "UIDAI und Aadhaar-Projekt gestartet",
       "description": "Die indische Regierung gründet die UIDAI unter Leitung von Nandan Nilekani (Infosys-Mitgründer). Ziel ist eine universelle digitale Identität für alle 1,4 Milliarden Inder auf Basis biometrischer Daten (Fingerabdrücke, Iris-Scans, Gesichtsfoto). Bis 2024 werden über 1,38 Milliarden Aadhaar-Nummern ausgegeben.",
-      "sources": ["https://rfreedm.org/journal/article/aadhaar-and-food-security-in-jharkhand"]
+      "sources": []
     },
     {
       "date": "2017",
       "phase": "event",
       "title": "Hungertode nach Aadhaar-Authentifizierungsfehlern",
       "description": "In Jharkhand verhungert die 11-jährige Santoshi Kumari, nachdem ihrer Familie die Lebensmittelrationen verweigert werden, weil ihre Aadhaar-Nummer nicht mit dem Rationierungssystem verknüpft ist. Weitere Hungertode werden aus mehreren Bundesstaaten gemeldet. Biometrische Authentifizierung scheitert bei manueller Arbeit (abgenutzte Fingerabdrücke) und älteren Menschen systematisch häufiger.",
-      "sources": ["https://scroll.in/article/853980/"]
+      "sources": [
+        "https://scroll.in/article/853980/"
+      ]
     },
     {
       "date": "2018-01",
       "phase": "event",
       "title": "Massive Datenlecks: Aadhaar-Daten für 500 Rupien",
       "description": "Die Tribune berichtet, dass über einen anonymen Service komplette Aadhaar-Daten (Name, Adresse, Foto, Fingerabdruck) für nur 500 Rupien (ca. 6 EUR) zugänglich sind. Zuvor hatten staatliche Websites millionenfach Aadhaar-Nummern ungeschützt veröffentlicht.",
-      "sources": ["https://www.tribuneindia.com/news/archive/nation/rs-500-10-minutes-and-you-have-access-to-billion-aadhaar-details-523361"]
+      "sources": [
+        "https://www.tribuneindia.com/news/archive/nation/rs-500-10-minutes-and-you-have-access-to-billion-aadhaar-details-523361"
+      ]
     },
     {
       "date": "2018-09",
       "phase": "consequences",
       "title": "Supreme Court: Aadhaar teilweise verfassungsgemäß",
       "description": "Der Indian Supreme Court erklärt Aadhaar in Puttaswamy v. Union of India für grundsätzlich verfassungsgemäß, schränkt aber die Verwendung ein: Privatunternehmen dürfen Aadhaar nicht als Pflichtangabe verlangen; es darf nicht für Bankkonten oder Mobilfunk verlangt werden. In der Praxis werden diese Einschränkungen vielfach ignoriert.",
-      "sources": ["https://www.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_26-Sep-2018.pdf"]
+      "sources": []
     }
   ],
   "asm:sources": [
@@ -82,11 +99,11 @@
       "type": "news-article"
     },
     {
-      "url": "https://rfreedm.org/journal/article/aadhaar-and-food-security-in-jharkhand",
       "title": "Aadhaar and Food Security in Jharkhand: Pain without Gain?",
       "publisher": "Economic & Political Weekly / Right to Food",
       "date": "2017",
-      "type": "research-paper"
+      "type": "research-paper",
+      "asm:brokenUrl": "https://rfreedm.org/journal/article/aadhaar-and-food-security-in-jharkhand"
     },
     {
       "url": "https://www.hrw.org/news/2018/01/13/india-identification-project-threatens-rights",

@@ -21,13 +21,26 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["deepfakes", "data-misuse", "discrimination"],
-  "asm:affectedRights": ["Recht auf Privatsphäre", "Recht auf koerperliche Unversehrtheit", "Urheberrecht", "Schutz vor sexueller Belaestigung", "Recht auf informationelle Selbstbestimmung"],
+  "asm:incidentType": [
+    "deepfakes",
+    "data-misuse",
+    "discrimination"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Recht auf koerperliche Unversehrtheit",
+    "Urheberrecht",
+    "Schutz vor sexueller Belaestigung",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
   "asm:actors": [
     {
       "name": "Prisma Labs",
       "type": "company",
-      "asm:systems": ["Lensa AI", "Stable Diffusion (angepasst)"]
+      "asm:systems": [
+        "Lensa AI",
+        "Stable Diffusion (angepasst)"
+      ]
     }
   ],
   "asm:severity": 3,
@@ -38,44 +51,44 @@
       "phase": "infrastructure",
       "title": "Stable Diffusion als Grundlage nicht-konsensueller Trainingsdaten",
       "description": "Prisma Labs baut Lensa AI auf Basis von Stable Diffusion auf, das auf dem LAION-5B-Datensatz trainiert wurde — einer Sammlung von Milliarden Bildern aus dem Internet, darunter urheberrechtlich geschuetzte Kunstwerke und private Fotos, die ohne Zustimmung der Urheber gesammelt wurden. Kuenstler weltweit sind in diesem Datensatz vertreten, ohne es zu wissen.",
-      "sources": ["https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me/"]
+      "sources": []
     },
     {
       "date": "2022-11",
       "phase": "doctrine",
       "title": "Viraler Launch und algorithmische Verzerrung bei Frauen",
       "description": "Lensa AI wird viral und erreicht innerhalb weniger Tage Millionen Downloads. Erste Nutzerberichte zeigen, dass die App bei weiblichen Eingabefotos systematisch sexualisierte Ausgaben produziert: Koerper werden entbloesst, Kleidung entfernt, Koerperformen hypersexualisiert. Bei maennlichen Eingaben ist dieser Effekt deutlich schwaecher. Prisma Labs aendert daraufhin die Inhaltsfilterpolitik.",
-      "sources": ["https://www.wired.com/story/lensa-artificial-intelligence-photo-app/"]
+      "sources": []
     },
     {
       "date": "2022-12",
       "phase": "event",
       "title": "Kuenstler erkennen eigene Handschrift in KI-Outputs",
       "description": "Zahlreiche digitale Kuenstler berichten, ihre unverwechselbare Bildsprache in von Lensa generierten Outputs wiederzuerkennen. Recherchen bestaetigen, dass deren Werke ohne Genehmigung im Trainingsdatensatz enthalten sind. Plattformen wie Have I Been Trained zeigen, wie weitverbreitet die Praxis der nicht-konsensuellen Datenerhebung fuer KI-Bildgeneratoren ist.",
-      "sources": ["https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me/"]
+      "sources": []
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "Debatte ueber Regulierung und Klagen gegen KI-Bildanbieter",
       "description": "Der Fall Lensa loest eine breitere Debatte ueber die rechtliche und ethische Grundlage von KI-Bildgeneratoren aus. Sammelklagen werden gegen Stability AI, Midjourney und DeviantArt eingereicht. Mehrere Laender beginnen Gesetzgebungsprozesse zum Schutz von Urheberrechten und zur Verhinderung nicht-konsensueller intimer Bildgenerierung (NCII). Prisma Labs reagiert mit verbesserter Filterung, das Grundproblem bleibt jedoch ungeloest.",
-      "sources": ["https://www.wired.com/story/lensa-artificial-intelligence-photo-app/"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me/",
       "title": "The viral AI avatar app Lensa undressed me — without my consent",
       "publisher": "MIT Technology Review",
       "date": "2022-12-12",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me/"
     },
     {
-      "url": "https://www.wired.com/story/lensa-artificial-intelligence-photo-app/",
       "title": "Lensa AI and the complicated ethics of AI-generated art",
       "publisher": "Wired",
       "date": "2022-12",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.wired.com/story/lensa-artificial-intelligence-photo-app/"
     }
   ],
   "asm:metadata": {

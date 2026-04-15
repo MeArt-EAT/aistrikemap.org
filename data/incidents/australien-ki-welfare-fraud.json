@@ -21,13 +21,23 @@
       "addressCountry": "AU"
     }
   },
-  "asm:incidentType": ["discrimination", "data-misuse"],
-  "asm:affectedRights": ["Recht auf Sozialleistungen", "Recht auf faires Verfahren", "Schutz vor fehlerhafter automatisierter Entscheidungsfindung", "Recht auf Privatsphare"],
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Sozialleistungen",
+    "Recht auf faires Verfahren",
+    "Schutz vor fehlerhafter automatisierter Entscheidungsfindung",
+    "Recht auf Privatsphare"
+  ],
   "asm:actors": [
     {
       "name": "Australisches Ministerium fur Humandienstleistungen (Department of Human Services)",
       "type": "government",
-      "asm:systems": ["Online Compliance Intervention (OCI) — Robodebt"]
+      "asm:systems": [
+        "Online Compliance Intervention (OCI) — Robodebt"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -38,44 +48,44 @@
       "phase": "infrastructure",
       "title": "Einfuhrung des automatisierten Einkommensabgleichs",
       "description": "Das australische Ministerium fur Humandienstleistungen fuhrt das 'Online Compliance Intervention'-System ein, das automatisch Jahreseinkommensdaten der australischen Steuerbehorde (ATO) mit Sozialleistungsdaten abgleicht. Das System errechnet Wocheneinkommen durch einfache Division des Jahreseinkommens durch 52 — ohne Berucksichtigung schwankender Einkommen, Saisonarbeit oder Doppelzahlungen. Interne Rechtsabteilungen warnen vor der fehlenden Rechtsgrundlage fur diese Methode, werden aber uberstimmt.",
-      "sources": ["https://robodebt.royalcommission.gov.au/"]
+      "sources": []
     },
     {
       "date": "2017",
       "phase": "doctrine",
       "title": "Offentliche Emporing und erste Medienberichte",
       "description": "Im Jahr 2017 erreichen die Beschwerden und Klagen ihren ersten Hohepunkt. Sozialverbande und Anwalte berichten von Fallen, in denen Betroffene Schulden von mehreren Tausend Dollar zugesandt bekommen, die auf fehlerhaften Berechnungen beruhen. Die Beweislast liegt vollstandig beim Betroffenen — das System geht von einer Schuld aus, bis die Person das Gegenteil beweist. Medienberichte zeigen psychische Zusammenbruche und finanzielle Notlagen als direkte Folgen.",
-      "sources": ["https://robodebt.royalcommission.gov.au/"]
+      "sources": []
     },
     {
       "date": "2019",
       "phase": "event",
       "title": "Bundesgerichtsklage und erzwungenes Eingestandnis der Rechtswidrigkeit",
       "description": "Eine Sammelklage vor dem Bundesgericht zwingt die Regierung 2019 zur Einigung: Sie gibt zu, dass das Durchschnittseinkommensverfahren keine valide Rechtsgrundlage hatte. Ein Vergleich uber 1,8 Milliarden australische Dollar wird vereinbart, der die Ruckerstattung falscher Schuldenforderungen an rund 443.000 Personen umfasst. Die Regierung versucht zunachst, die Einigung ohne formliche Schuldzuweisung abzuschliessen.",
-      "sources": ["https://robodebt.royalcommission.gov.au/"]
+      "sources": []
     },
     {
       "date": "2023-07",
       "phase": "consequences",
       "title": "Konigliche Kommission: System war rechtswidrig und verursachte vermeidbare Tode",
       "description": "Die Konigliche Kommission zu Robodebt veroffentlicht ihren Abschlussbericht im Juli 2023 und stuft das System als rechtswidrig und systematisch schadlich ein. Der Bericht dokumentiert, dass mehrere Betroffene infolge des psychischen Drucks durch die Forderungsschreiben Suizid begangen haben. Hochrangige Beamte und Minister werden namentlich fur das Verschweigen interner Rechtsbedenken verantwortlich gemacht. Der Bericht empfiehlt strafrechtliche Untersuchungen.",
-      "sources": ["https://robodebt.royalcommission.gov.au/publications/robodebt-royal-commission-final-report"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://robodebt.royalcommission.gov.au/publications/robodebt-royal-commission-final-report",
       "title": "Robodebt Royal Commission Final Report",
       "publisher": "Royal Commission into the Robodebt Scheme",
       "date": "2023-07-07",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://robodebt.royalcommission.gov.au/publications/robodebt-royal-commission-final-report"
     },
     {
-      "url": "https://robodebt.royalcommission.gov.au/",
       "title": "Royal Commission into the Robodebt Scheme",
       "publisher": "Australische Regierung",
       "date": "2023",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://robodebt.royalcommission.gov.au/"
     }
   ],
   "asm:metadata": {

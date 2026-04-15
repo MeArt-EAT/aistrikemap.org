@@ -21,18 +21,32 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["facial-recognition", "surveillance", "discrimination"],
-  "asm:affectedRights": ["Recht auf Privatsphäre", "Informationelle Selbstbestimmung", "Schutz vor Diskriminierung", "Recht auf faires Verfahren"],
+  "asm:incidentType": [
+    "facial-recognition",
+    "surveillance",
+    "discrimination"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Informationelle Selbstbestimmung",
+    "Schutz vor Diskriminierung",
+    "Recht auf faires Verfahren"
+  ],
   "asm:actors": [
     {
       "name": "Immigration and Customs Enforcement (ICE)",
       "type": "government",
-      "asm:systems": ["Amazon Rekognition", "Landesweites Gesichtserkennungsnetzwerk"]
+      "asm:systems": [
+        "Amazon Rekognition",
+        "Landesweites Gesichtserkennungsnetzwerk"
+      ]
     },
     {
       "name": "Amazon Web Services",
       "type": "company",
-      "asm:systems": ["Amazon Rekognition"]
+      "asm:systems": [
+        "Amazon Rekognition"
+      ]
     },
     {
       "name": "Staatliche Kraftfahrtbehörden (DMVs)",
@@ -47,28 +61,36 @@
       "phase": "infrastructure",
       "title": "Georgetown-Studie enthüllt geheimes Fahndungsnetzwerk",
       "description": "Das Georgetown Center on Privacy and Technology veröffentlicht 'America Under Watch', eine umfassende Untersuchung, die zeigt, wie ICE in Kooperation mit dem FBI Führerschein-Gesichtsdatenbanken in mindestens elf Bundesstaaten für Einwanderungsermittlungen durchsucht hat. Oregon, Utah, Vermont und andere Staaten betonen, ausdrücklich keine Einwilligung für ICE-Zugriffe erteilt zu haben. Amazon Rekognition wird als eines der eingesetzten Systeme identifiziert.",
-      "sources": ["https://www.perpetuallineup.org/"]
+      "sources": [
+        "https://www.perpetuallineup.org/"
+      ]
     },
     {
       "date": "2019-09",
       "phase": "event",
       "title": "Washington Post enthüllt detaillierte Kooperationsverträge",
       "description": "Die Washington Post berichtet über interne Dokumente, die zeigen, wie weitreichend die Datenbankzugriffe von ICE tatsächlich sind. Führerscheinfotos von 600 Millionen Personen — darunter Menschen, die nie mit dem Strafrecht in Berührung kamen — bilden eine De-facto-Biometriedatenbank. Mehrere Bundesstaaten, die ICE-Kooperation per Gesetz verboten haben, stellen fest, dass ihre DMVs die Daten dennoch freigegeben hatten.",
-      "sources": ["https://www.washingtonpost.com/technology/2019/07/07/fbi-ice-find-state-drivers-license-photos-are-gold-mine-facial-recognition-searches/"]
+      "sources": [
+        "https://web.archive.org/web/20250722052642/https://www.washingtonpost.com/technology/2019/07/07/fbi-ice-find-state-drivers-license-photos-are-gold-mine-facial-recognition-searches/"
+      ]
     },
     {
       "date": "2020-06",
       "phase": "doctrine",
       "title": "Moratoriumsdruck nach George Floyd und Amazon-Ankündigung",
       "description": "Im Zuge der gesellschaftlichen Debatte nach dem Tod von George Floyd kündigt Amazon ein einjähriges Moratorium für den Einsatz von Rekognition durch Strafverfolgungsbehörden an. Das Moratorium gilt jedoch nicht rückwirkend und deckt bestehende ICE-Verträge nur teilweise ab. Der US-Kongress hält Anhörungen ab. Die Electronic Frontier Foundation dokumentiert, dass das System unverhältnismäßig häufig Personen dunkler Hautfarbe und Frauen falsch identifiziert.",
-      "sources": ["https://www.aboutamazon.com/news/policy-news-views/we-are-implementing-a-one-year-moratorium-on-police-use-of-rekognition"]
+      "sources": [
+        "https://www.aboutamazon.com/news/policy-news-views/we-are-implementing-a-one-year-moratorium-on-police-use-of-rekognition"
+      ]
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "Fehlende Bundesregulierung und anhaltende DMV-Kooperationen",
       "description": "Trotz politischem Druck fehlt ein bundesweites Gesetz, das den Einsatz von Gesichtserkennung in der Einwanderungsbehörde reguliert. Einzelne Bundesstaaten wie Illinois und Massachusetts verabschieden eigene Beschränkungen. ICE setzt Gesichtserkennung in verschiedenen Formen weiter ein. Das Center on Privacy and Technology fordert ein vollständiges Verbot des nicht eingewilligten Zugriffs auf zivile Biometriedatenbanken.",
-      "sources": ["https://www.perpetuallineup.org/"]
+      "sources": [
+        "https://www.perpetuallineup.org/"
+      ]
     }
   ],
   "asm:sources": [
@@ -80,7 +102,7 @@
       "type": "research-paper"
     },
     {
-      "url": "https://www.washingtonpost.com/technology/2019/07/07/fbi-ice-find-state-drivers-license-photos-are-gold-mine-facial-recognition-searches/",
+      "url": "https://web.archive.org/web/20250722052642/https://www.washingtonpost.com/technology/2019/07/07/fbi-ice-find-state-drivers-license-photos-are-gold-mine-facial-recognition-searches/",
       "title": "FBI, ICE find state driver's license photos are a gold mine for facial-recognition searches",
       "publisher": "Washington Post",
       "date": "2019-07-07",

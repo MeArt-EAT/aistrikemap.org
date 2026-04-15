@@ -21,13 +21,25 @@
       "addressCountry": "BE"
     }
   },
-  "asm:incidentType": ["discrimination", "data-misuse"],
-  "asm:affectedRights": ["Recht auf Gleichbehandlung", "Recht auf soziale Sicherheit", "Recht auf Privatsphäre", "Recht auf faires Verfahren", "Schutz vor Diskriminierung"],
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Gleichbehandlung",
+    "Recht auf soziale Sicherheit",
+    "Recht auf Privatsphäre",
+    "Recht auf faires Verfahren",
+    "Schutz vor Diskriminierung"
+  ],
   "asm:actors": [
     {
       "name": "Belgische Sozialversicherung (NOSS/ONSS)",
       "type": "government",
-      "asm:systems": ["KI-Betrugserkennungssystem", "Datamining-Plattform Sozialleistungen"]
+      "asm:systems": [
+        "KI-Betrugserkennungssystem",
+        "Datamining-Plattform Sozialleistungen"
+      ]
     }
   ],
   "asm:severity": 3,
@@ -38,37 +50,39 @@
       "phase": "infrastructure",
       "title": "Einfuehrung algorithmischer Betrugsermittlung",
       "description": "Die belgische Sozialversicherungsbehorde NOSS/ONSS fuehrt ein KI-gestuetztes System zur Betrugsermittlung ein, das Antragsteller auf Basis von Datenprofilen automatisch in Risikogruppen einteilt. Das System kombiniert Daten aus verschiedenen Verwaltungsregistern und nutzt Faktoren wie Herkunftsland, Migrationsgeschichte, Familiengroesse und Wohnlage als Risikoindikatoren. Eine unabhaengige Pruefung auf Diskriminierungspotenzial findet nicht statt.",
-      "sources": ["https://algorithmwatch.org/en/automated-welfare-benefits-fraud-detection-belgien/"]
+      "sources": []
     },
     {
       "date": "2020",
       "phase": "doctrine",
       "title": "Erste Berichte ueber systematische Benachteiligung",
       "description": "NGOs und Sozialarbeiter beginnen Muster zu beobachten: Antragsteller mit Migrationshintergrund werden deutlich haeufiger fuer vertiefte Ueberpruefungen markiert und mit Leistungsstopps belegt. AlgorithmWatch und lokale Hilfsorganisationen dokumentieren Faelle, in denen Betroffene keine Begruendung erhalten und keinen effektiven Rechtsweg kennen. Die Intransparenz des Systems erschwert Widersprueche.",
-      "sources": ["https://algorithmwatch.org/en/automated-welfare-benefits-fraud-detection-belgien/"]
+      "sources": []
     },
     {
       "date": "2022",
       "phase": "event",
       "title": "Ligue des Droits Humains reicht Beschwerde ein",
       "description": "Die belgische Menschenrechtsorganisation Ligue des Droits Humains reicht eine formelle Beschwerde beim Datenschutzbeauftragten (APD/GBA) ein. Die Beschwerde dokumentiert, dass das System gegen die DSGVO verstoesst: keine ausreichende Transparenz, keine Moeglichkeit zur Anfechtung, diskriminierende Merkmale als Eingabedaten. Parallel veroeffentlicht AlgorithmWatch einen ausfuhrlichen Bericht ueber das System.",
-      "sources": ["https://www.liguedh.be/"]
+      "sources": [
+        "https://www.liguedh.be/"
+      ]
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "Aufsichtsbehoerden reagieren, System weiterhin aktiv",
       "description": "Der belgische Datenschutzbeauftragte leitet eine Untersuchung ein. Das System wird partiell ueberarbeitet, bleibt aber in modifizierter Form aktiv. Der Fall fuehrt zu einer Debatte im belgischen Parlament ueber algorithmische Diskriminierung im Sozialbereich. Die EU-Kommission zieht den Fall als Beispiel in der Ausarbeit von Leitlinien fuer den KI-Einsatz in Sozialsystemen heran.",
-      "sources": ["https://algorithmwatch.org/en/automated-welfare-benefits-fraud-detection-belgien/"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://algorithmwatch.org/en/automated-welfare-benefits-fraud-detection-belgien/",
       "title": "Automated Welfare Fraud Detection in Belgium",
       "publisher": "AlgorithmWatch",
       "date": "2022",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://algorithmwatch.org/en/automated-welfare-benefits-fraud-detection-belgien/"
     },
     {
       "url": "https://www.liguedh.be/",

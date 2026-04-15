@@ -21,18 +21,32 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["discrimination", "data-misuse"],
-  "asm:affectedRights": ["Recht auf gleichen Marktzugang", "Recht auf fairen Preis", "Recht auf Privatsphäre", "Schutz vor Diskriminierung"],
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf gleichen Marktzugang",
+    "Recht auf fairen Preis",
+    "Recht auf Privatsphäre",
+    "Schutz vor Diskriminierung"
+  ],
   "asm:actors": [
     {
       "name": "Kroger Company",
       "type": "company",
-      "asm:systems": ["Electronic Shelf Labels (ESL)", "Kroger Precision Marketing KI"]
+      "asm:systems": [
+        "Electronic Shelf Labels (ESL)",
+        "Kroger Precision Marketing KI"
+      ]
     },
     {
       "name": "Microsoft",
       "type": "company",
-      "asm:systems": ["Azure KI-Plattform", "Retail Analytics"]
+      "asm:systems": [
+        "Azure KI-Plattform",
+        "Retail Analytics"
+      ]
     }
   ],
   "asm:severity": 2,
@@ -43,37 +57,41 @@
       "phase": "infrastructure",
       "title": "Kroger startet Pilotprogramm mit digitalen Regaletiketten",
       "description": "Kroger beginnt in ausgewählten Filialen mit der Installation elektronischer Regaletiketten (ESL), die zentral ferngesteuert werden können. Die Etiketten sind mit dem Kroger-Datenmanagementsystem verbunden, das umfangreiche Kaufdaten von Millionen Kundenkarten enthält. Microsoft stellt die Cloud-Infrastruktur und KI-Analysetools bereit. Kroger bewirbt das System als Effizienzsteigerung für das Preis-Management.",
-      "sources": ["https://www.theguardian.com/us-news/2023/sep/08/kroger-instacart-dynamic-price-surge-digital-labels"]
+      "sources": []
     },
     {
       "date": "2023-01",
       "phase": "doctrine",
       "title": "Öffentliche Enthüllung und Kritik an Diskriminierungspotenzial",
       "description": "The Guardian und andere Medien berichten, dass Kroger das System zur dynamischen Preisanpassung nutzen könnte — mit Preisen, die je nach Tageszeit, Nachfrage und möglicherweise Kundenprofil schwanken. Verbraucherschützer warnen, dass Kunden mit Treueprogramm-Daten unterschiedliche Preise sehen könnten. Armutsforschung zeigt, dass dynamische Preise strukturell einkommensschwache Haushalte benachteiligen.",
-      "sources": ["https://www.theguardian.com/us-news/2023/sep/08/kroger-instacart-dynamic-price-surge-digital-labels", "https://www.commerce.senate.gov/2023/9/senators-request-information-from-kroger-on-digital-price-tags"]
+      "sources": [
+        "https://www.commerce.senate.gov/2023/9/senators-request-information-from-kroger-on-digital-price-tags"
+      ]
     },
     {
       "date": "2023-09",
       "phase": "event",
       "title": "US-Senat leitet Untersuchung ein",
       "description": "Das US-Senate Commerce Committee fordert Kroger in einem Brief zur Offenlegung seiner Pläne für dynamische Preisgestaltung auf. Die Senatoren fragen konkret, ob unterschiedliche Preise für verschiedene Kundengruppen geplant sind und welche Daten in Preisalgorithmen fliessen. Kroger bestreitet Diskriminierungsabsichten, räumt aber ein, dass Zeitfenster-basierte Preisanpassungen getestet werden.",
-      "sources": ["https://www.commerce.senate.gov/2023/9/senators-request-information-from-kroger-on-digital-price-tags"]
+      "sources": [
+        "https://www.commerce.senate.gov/2023/9/senators-request-information-from-kroger-on-digital-price-tags"
+      ]
     },
     {
       "date": "2024",
       "phase": "consequences",
       "title": "Debatte um algorithmische Preisdiskriminierung im Einzelhandel wächst",
       "description": "Der Kroger-Fall wird Teil einer breiteren Debatte über KI-gestützte Preisdiskriminierung. Die FTC untersucht mehrere Einzelhändler wegen algorithmischer Preisabsprachen. Forscher dokumentieren, dass dynamische Preissysteme im Online-Handel bereits nach Gerät, Standort und Kaufhistorie differenzieren. Mehrere Bundesstaaten erwägen Gesetze gegen algorithmische Preisdiskriminierung bei Grundnahrungsmitteln.",
-      "sources": ["https://www.theguardian.com/us-news/2023/sep/08/kroger-instacart-dynamic-price-surge-digital-labels", "https://www.ftc.gov/reports/price-discrimination"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.theguardian.com/us-news/2023/sep/08/kroger-instacart-dynamic-price-surge-digital-labels",
       "title": "Kroger plans to use electronic shelf labels to surge grocery prices, senators say",
       "publisher": "The Guardian",
       "date": "2023-09-08",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.theguardian.com/us-news/2023/sep/08/kroger-instacart-dynamic-price-surge-digital-labels"
     },
     {
       "url": "https://www.commerce.senate.gov/2023/9/senators-request-information-from-kroger-on-digital-price-tags",
@@ -83,11 +101,11 @@
       "type": "government-document"
     },
     {
-      "url": "https://www.ftc.gov/reports/price-discrimination",
       "title": "Price Discrimination and Algorithmic Pricing",
       "publisher": "Federal Trade Commission",
       "date": "2024",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://www.ftc.gov/reports/price-discrimination"
     }
   ],
   "asm:metadata": {

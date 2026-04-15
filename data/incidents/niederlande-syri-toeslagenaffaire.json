@@ -21,13 +21,24 @@
       "addressCountry": "NL"
     }
   },
-  "asm:incidentType": ["discrimination", "data-misuse"],
-  "asm:affectedRights": ["Schutz vor Diskriminierung", "Recht auf Existenzsicherung", "Recht auf faire Verwaltungsverfahren", "Familienschutz"],
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Recht auf Existenzsicherung",
+    "Recht auf faire Verwaltungsverfahren",
+    "Familienschutz"
+  ],
   "asm:actors": [
     {
       "name": "Niederländische Steuerbehörde (Belastingdienst)",
       "type": "government",
-      "asm:systems": ["SyRI", "Fraud Scoring System"]
+      "asm:systems": [
+        "SyRI",
+        "Fraud Scoring System"
+      ]
     },
     {
       "name": "Regierung Rutte III",
@@ -42,37 +53,41 @@
       "phase": "infrastructure",
       "title": "SyRI und Betrugs-Scoring eingeführt",
       "description": "Die niederländische Regierung führt SyRI (System Risk Indication) ein, das Daten verschiedener Behörden verknüpft, um Sozialbetrug vorherzusagen. Parallel nutzt die Steuerbehörde ein internes Scoring-System, das die doppelte Staatsbürgerschaft als Risikofaktor für Betrug bei Kinderbetreuungszuschüssen verwendet.",
-      "sources": ["https://www.rijksoverheid.nl/onderwerpen/fraudebestrijding/syri"]
+      "sources": []
     },
     {
       "date": "2019",
       "phase": "doctrine",
       "title": "Diskriminierung wird dokumentiert",
       "description": "Investigativer Journalismus und parlamentarische Anfragen enthüllen, dass die Steuerbehörde systematisch Familien mit doppelter Staatsbürgerschaft ins Visier genommen hat. Über 26.000 Familien wurden fälschlich des Betrugs bezichtigt und zur Rückzahlung von Zuschüssen in Höhe von Zehntausenden Euro gezwungen.",
-      "sources": ["https://www.trouw.nl/binnenland/belastingdienst-maakte-zwarte-lijst-van-dubbele-nationaliteit~b3d8a42e/"]
+      "sources": [
+        "https://www.trouw.nl/binnenland/belastingdienst-maakte-zwarte-lijst-van-dubbele-nationaliteit~b3d8a42e/"
+      ]
     },
     {
       "date": "2020-02",
       "phase": "event",
       "title": "Gericht verbietet SyRI",
       "description": "Das Bezirksgericht Den Haag urteilt, dass SyRI gegen Artikel 8 der Europäischen Menschenrechtskonvention (Recht auf Privatsphäre) verstößt. Das Urteil ist international das erste, das ein staatliches KI-Profiling-System aus Menschenrechtsgründen verbietet.",
-      "sources": ["https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBDHA:2020:1878"]
+      "sources": []
     },
     {
       "date": "2021-01",
       "phase": "consequences",
       "title": "Regierung Rutte III tritt zurück",
       "description": "Die gesamte niederländische Regierung tritt zurück, nachdem ein parlamentarischer Untersuchungsbericht die Diskriminierung als institutionell und systematisch einstuft. Der Bericht kritisiert, dass Grundprinzien des Rechtsstaats verletzt wurden.",
-      "sources": ["https://www.bbc.com/news/world-europe-55674146"]
+      "sources": [
+        "https://www.bbc.com/news/world-europe-55674146"
+      ]
     }
   ],
   "asm:sources": [
     {
-      "url": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBDHA:2020:1878",
       "title": "Bezirksgericht Den Haag: SyRI-Urteil",
       "publisher": "Rechtspraak.nl",
       "date": "2020-02-05",
-      "type": "legal-document"
+      "type": "legal-document",
+      "asm:brokenUrl": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBDHA:2020:1878"
     },
     {
       "url": "https://www.bbc.com/news/world-europe-55674146",
@@ -82,11 +97,11 @@
       "type": "news-article"
     },
     {
-      "url": "https://www.amnesty.org/en/latest/news/2021/10/netherlands-scandal-involving-racist-algorithms-serves-as-a-warning/",
       "title": "Netherlands: Scandal involving racist algorithms serves as a warning",
       "publisher": "Amnesty International",
       "date": "2021-10",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.amnesty.org/en/latest/news/2021/10/netherlands-scandal-involving-racist-algorithms-serves-as-a-warning/"
     }
   ],
   "asm:metadata": {

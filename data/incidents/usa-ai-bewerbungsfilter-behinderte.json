@@ -21,18 +21,33 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["discrimination", "labor-exploitation"],
-  "asm:affectedRights": ["Recht auf Arbeit", "Schutz vor Diskriminierung", "Recht auf angemessene Vorkehrungen", "Recht auf Gleichbehandlung", "Recht auf Erklärung algorithmischer Entscheidungen"],
+  "asm:incidentType": [
+    "discrimination",
+    "labor-exploitation"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Arbeit",
+    "Schutz vor Diskriminierung",
+    "Recht auf angemessene Vorkehrungen",
+    "Recht auf Gleichbehandlung",
+    "Recht auf Erklärung algorithmischer Entscheidungen"
+  ],
   "asm:actors": [
     {
       "name": "HireVue",
       "type": "company",
-      "asm:systems": ["Video Interview AI", "Verhaltensanalyse-Algorithmus"]
+      "asm:systems": [
+        "Video Interview AI",
+        "Verhaltensanalyse-Algorithmus"
+      ]
     },
     {
       "name": "Pymetrics",
       "type": "company",
-      "asm:systems": ["Neurowissenschaftliche Spiele-Assessments", "Bias-Audit-Tool"]
+      "asm:systems": [
+        "Neurowissenschaftliche Spiele-Assessments",
+        "Bias-Audit-Tool"
+      ]
     },
     {
       "name": "Equal Employment Opportunity Commission (EEOC)",
@@ -47,58 +62,60 @@
       "phase": "infrastructure",
       "title": "Massenhafte Einführung von KI-Einstellungstools während der Pandemie",
       "description": "Die COVID-19-Pandemie beschleunigt die Einführung automatisierter Einstellungstools. Unternehmen wie HireVue verarbeiten mehr als 20 Millionen Video-Interviews. Die Tools analysieren automatisch Mimik, Stimmton, Wortwahl und Blickbewegungen und generieren 'Employability Scores'. Menschen mit Autismus, Tourette-Syndrom, Sehbehinderungen, Hörschwierigkeiten und motorischen Einschränkungen werden durch diese Parameter systematisch schlechter bewertet.",
-      "sources": ["https://www.ajl.org/about", "https://www.cdt.org/insights/hiring-by-algorithm/"]
+      "sources": [
+        "https://www.ajl.org/about"
+      ]
     },
     {
       "date": "2022-05",
       "phase": "doctrine",
       "title": "DOJ und EEOC veröffentlichen Leitlinien zu KI und Diskriminierung",
       "description": "Das US-Justizministerium und die EEOC veröffentlichen gemeinsam Leitlinien, die klarstellen, dass KI-Einstellungstools gegen den Americans with Disabilities Act verstossen können, wenn sie Menschen mit Behinderungen ohne angemessene Anpassungen benachteiligen. Die Leitlinien betonen, dass Arbeitgeber rechtlich verantwortlich bleiben, auch wenn sie externe KI-Tools nutzen. Die ACLU und das Center for Democracy and Technology haben zuvor Musterbeschwerdeverfahren dokumentiert.",
-      "sources": ["https://www.eeoc.gov/laws/guidance/questions-and-answers-clarify-and-provide-common-interpretation-uniform-guidelines-0", "https://www.ada.gov/ai-guidance.pdf"]
+      "sources": []
     },
     {
       "date": "2023-01",
       "phase": "event",
       "title": "EEOC-Durchsetzungsinitiative zu KI-Diskriminierung",
       "description": "Die EEOC startet die Initiative 'Artificial Intelligence and Algorithmic Fairness' und kündigt an, Beschwerden zu KI-basierter Diskriminierung prioritär zu behandeln. Erste öffentlichkeitswirksame Fälle werden angekündigt. Forschungsberichte des Center for Democracy and Technology zeigen, dass 83 Prozent befragter Arbeitnehmer mit Behinderungen negative Erfahrungen mit automatisierten Bewerbungssystemen gemacht haben.",
-      "sources": ["https://www.eeoc.gov/ai", "https://cdt.org/insights/report-centering-disability-in-tech-policy/"]
+      "sources": []
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "HireVue zieht Gesichtserkennung zurück, strukturelle Probleme bleiben",
       "description": "Unter dem Druck von Regulierungsbehörden und zivilgesellschaftlichen Organisationen zieht HireVue die Gesichtserkennung aus seinem Bewertungssystem zurück, behält aber andere problematische Verhaltensanalysen bei. Das Illinois Artificial Intelligence Video Interview Act (2019) bleibt das einzige bundesstaatliche Gesetz, das KI-Video-Interviews reguliert. Forscher stellen fest, dass die Ausweitung von Remote-Hiring auf neurobiologische Tests und Keystroke-Monitoring ähnliche Diskriminierungsrisiken birgt.",
-      "sources": ["https://www.cdt.org/insights/hiring-by-algorithm/", "https://www.aclu.org/news/privacy-technology/disability-discrimination-ai-hiring"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.eeoc.gov/ai",
       "title": "Artificial Intelligence and Algorithmic Fairness Initiative",
       "publisher": "Equal Employment Opportunity Commission",
       "date": "2023",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://www.eeoc.gov/ai"
     },
     {
-      "url": "https://www.cdt.org/insights/hiring-by-algorithm/",
       "title": "Hiring by Algorithm: How Automated Hiring May Disadvantage Job Seekers with Disabilities",
       "publisher": "Center for Democracy and Technology",
       "date": "2022",
-      "type": "research-paper"
+      "type": "research-paper",
+      "asm:brokenUrl": "https://www.cdt.org/insights/hiring-by-algorithm/"
     },
     {
-      "url": "https://www.ada.gov/ai-guidance.pdf",
       "title": "Guidance on AI and Disability Discrimination",
       "publisher": "U.S. Department of Justice",
       "date": "2022-05",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://www.ada.gov/ai-guidance.pdf"
     },
     {
-      "url": "https://www.aclu.org/news/privacy-technology/disability-discrimination-ai-hiring",
       "title": "Disability Discrimination in AI Hiring Tools",
       "publisher": "ACLU",
       "date": "2023",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.aclu.org/news/privacy-technology/disability-discrimination-ai-hiring"
     }
   ],
   "asm:metadata": {

@@ -21,18 +21,35 @@
       "addressCountry": "MM"
     }
   },
-  "asm:incidentType": ["surveillance", "military-ai", "political-pressure"],
-  "asm:affectedRights": ["Recht auf Privatsphare", "Meinungsfreiheit", "Versammlungsfreiheit", "Schutz vor willkurlicher Verhaftung", "Recht auf Leben"],
+  "asm:incidentType": [
+    "surveillance",
+    "military-ai",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphare",
+    "Meinungsfreiheit",
+    "Versammlungsfreiheit",
+    "Schutz vor willkurlicher Verhaftung",
+    "Recht auf Leben"
+  ],
   "asm:actors": [
     {
       "name": "Myanmarisches Militar (Tatmadaw)",
       "type": "military",
-      "asm:systems": ["KI-Gesichtserkennung", "Drohnenuberwachung", "Mobilfunk-Tracking"]
+      "asm:systems": [
+        "KI-Gesichtserkennung",
+        "Drohnenuberwachung",
+        "Mobilfunk-Tracking"
+      ]
     },
     {
       "name": "Israelische Cyberfirmen",
       "type": "company",
-      "asm:systems": ["MSSP-Uberwachungsplattformen", "Netzwerkanalysesoftware"]
+      "asm:systems": [
+        "MSSP-Uberwachungsplattformen",
+        "Netzwerkanalysesoftware"
+      ]
     }
   ],
   "asm:severity": 5,
@@ -43,28 +60,32 @@
       "phase": "infrastructure",
       "title": "Militarputsch und Aufbau des Uberwachungsapparats",
       "description": "Das Militar unter General Min Aung Hlaing putschte gegen die gewahlte Regierung von Aung San Suu Kyi. Unmittelbar nach dem Putsch begann die Tatmadaw, bestehende Uberwachungsinfrastruktur auszubauen und neue KI-Systeme zu beschaffen. Internetabschaltungen und Blockaden sozialer Medien begleiteten den Aufbau eines Uberwachungsstaats.",
-      "sources": ["https://www.justiceformyanmar.org/"]
+      "sources": [
+        "https://www.justiceformyanmar.org/"
+      ]
     },
     {
       "date": "2021-06",
       "phase": "doctrine",
       "title": "Systematische Ausweitung der KI-Uberwachung",
       "description": "Justice for Myanmar dokumentiert den Einsatz von Uberwachungstechnologie israelischer und anderer internationaler Anbieter. Die Tatmadaw setzt KI-gestutzte Gesichtserkennung an Checkpoints und in offentlichen Raumen ein. Aktivisten werden anhand von Videomaterial aus sozialen Medien und Uberwachungskameras identifiziert. Mindestens 11.000 Menschen wurden im ersten Jahr nach dem Putsch verhaftet.",
-      "sources": ["https://www.accessnow.org/myanmar-internet-shutdowns/"]
+      "sources": []
     },
     {
       "date": "2023-01",
       "phase": "event",
       "title": "MSSP-Plattformen fur gezielte Aktivistenverfolgung",
       "description": "Berichte belegen den Einsatz von Managed Security Service Provider (MSSP)-Plattformen, die Daten aus sozialen Medien, Mobilfunknetzen und Uberwachungskameras zusammenfuhren. Das System ermoglicht die automatisierte Erstellung von Profilen politischer Gegner. Journalisten und Menschenrechtsverteidiger werden gezielt uberwacht und verfolgt.",
-      "sources": ["https://www.justiceformyanmar.org/"]
+      "sources": [
+        "https://www.justiceformyanmar.org/"
+      ]
     },
     {
       "date": "2023-06",
       "phase": "consequences",
       "title": "Internationale Verurteilung und anhaltende Repression",
       "description": "Der UN-Sonderberichterstatter fur Myanmar verurteilt den Einsatz von Uberwachungstechnologie gegen Zivilbevolkerung. Mehrere Lander verhangren Exportbeschrankungen fur Uberwachungstechnologie nach Myanmar. Trotz internationaler Sanktionen setzt die Tatmadaw die KI-gestutzte Verfolgung von Aktivisten fort. Die Zahl der politischen Gefangenen uberstieg 20.000.",
-      "sources": ["https://www.accessnow.org/myanmar-internet-shutdowns/"]
+      "sources": []
     }
   ],
   "asm:sources": [
@@ -76,11 +97,11 @@
       "type": "ngo-report"
     },
     {
-      "url": "https://www.accessnow.org/myanmar-internet-shutdowns/",
       "title": "Myanmar Internet Shutdowns and Digital Rights",
       "publisher": "Access Now",
       "date": "2022",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.accessnow.org/myanmar-internet-shutdowns/"
     },
     {
       "url": "https://www.ohchr.org/en/countries/myanmar",

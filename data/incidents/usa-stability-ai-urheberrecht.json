@@ -21,18 +21,30 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["data-misuse"],
-  "asm:affectedRights": ["Urheberrecht", "Recht auf wirtschaftliche Teilhabe", "Eigentumsrecht", "Recht auf informationelle Selbstbestimmung"],
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Urheberrecht",
+    "Recht auf wirtschaftliche Teilhabe",
+    "Eigentumsrecht",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
   "asm:actors": [
     {
       "name": "Stability AI",
       "type": "company",
-      "asm:systems": ["Stable Diffusion", "LAION-5B Trainingsdatensatz"]
+      "asm:systems": [
+        "Stable Diffusion",
+        "LAION-5B Trainingsdatensatz"
+      ]
     },
     {
       "name": "Midjourney",
       "type": "company",
-      "asm:systems": ["Midjourney Bildgenerator"]
+      "asm:systems": [
+        "Midjourney Bildgenerator"
+      ]
     },
     {
       "name": "Getty Images",
@@ -47,37 +59,43 @@
       "phase": "infrastructure",
       "title": "Stable Diffusion wird mit LAION-Daten trainiert",
       "description": "Stability AI veröffentlicht Stable Diffusion, trainiert auf dem LAION-5B-Datensatz mit 5,8 Milliarden Bild-Text-Paaren, die ohne Zustimmung der Urheber aus dem Internet gescrapt wurden. Darunter befinden sich Millionen lizenzierter Fotos von Getty Images sowie Werke tausender professioneller Kunstschaffender. Midjourney nutzt vergleichbare Trainingsdaten.",
-      "sources": ["https://laion.ai/blog/laion-5b/"]
+      "sources": [
+        "https://laion.ai/blog/laion-5b/"
+      ]
     },
     {
       "date": "2023-01",
       "phase": "event",
       "title": "Sammelklage von Kunstschaffenden eingereicht",
       "description": "Die Illustratorinnen und Illustratoren Sarah Andersen, Kelly McKernan und Karla Ortiz reichen in Kalifornien eine Sammelklage gegen Stability AI, Midjourney und DeviantArt ein. Sie werfen den Unternehmen vor, ihre Werke ohne Erlaubnis und ohne Vergütung als Trainingsdaten verwendet zu haben. Weitere Kunstschaffende schliessen sich der Klage an.",
-      "sources": ["https://stablediffusionlitigation.com/"]
+      "sources": []
     },
     {
       "date": "2023-02",
       "phase": "event",
       "title": "Getty Images verklagt Stability AI in den USA und Grossbritannien",
       "description": "Getty Images reicht Klage in den USA und Grossbritannien ein und behauptet, Stability AI habe mehr als 12 Millionen lizenzierte Fotos ohne Genehmigung kopiert. Auf einigen generierten Bildern seien sogar noch sichtbare Reste des Getty-Wasserzeichens zu erkennen — ein deutliches Indiz für das direkte Kopieren der Daten.",
-      "sources": ["https://www.theverge.com/2023/2/6/23587393/ai-art-copyright-lawsuit-getty-images-stable-diffusion"]
+      "sources": [
+        "https://www.theverge.com/2023/2/6/23587393/ai-art-copyright-lawsuit-getty-images-stable-diffusion"
+      ]
     },
     {
       "date": "2024",
       "phase": "consequences",
       "title": "Laufende Verfahren setzen KI-Branche unter Druck",
       "description": "Die Klagen laufen weiter und haben branchenweite Diskussionen über faire Trainingsdaten ausgelöst. Einige Unternehmen beginnen, Opt-out-Mechanismen einzuführen oder Lizenzvereinbarungen mit Rechteinhabern zu schliessen. Gesetzgeber in USA und EU prüfen neue Regelungen zum Urheberrechtsschutz bei KI-Training. Die Klagen gelten als wegweisend für die gesamte generative KI-Industrie.",
-      "sources": ["https://www.eff.org/issues/ai-and-copyright"]
+      "sources": [
+        "https://www.eff.org/issues/ai-and-copyright"
+      ]
     }
   ],
   "asm:sources": [
     {
-      "url": "https://stablediffusionlitigation.com/",
       "title": "Andersen v. Stability AI — Sammelklage",
       "publisher": "Klageschrift, US District Court Northern District of California",
       "date": "2023-01-13",
-      "type": "legal-document"
+      "type": "legal-document",
+      "asm:brokenUrl": "https://stablediffusionlitigation.com/"
     },
     {
       "url": "https://www.theverge.com/2023/2/6/23587393/ai-art-copyright-lawsuit-getty-images-stable-diffusion",

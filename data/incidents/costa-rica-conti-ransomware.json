@@ -21,13 +21,25 @@
       "addressCountry": "CR"
     }
   },
-  "asm:incidentType": ["censorship", "data-misuse"],
-  "asm:affectedRights": ["Recht auf staatliche Dienstleistungen", "Recht auf Gesundheitsversorgung", "Recht auf wirtschaftliche Teilhabe", "Datenschutz öffentlicher Systeme"],
+  "asm:incidentType": [
+    "censorship",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf staatliche Dienstleistungen",
+    "Recht auf Gesundheitsversorgung",
+    "Recht auf wirtschaftliche Teilhabe",
+    "Datenschutz öffentlicher Systeme"
+  ],
   "asm:actors": [
     {
       "name": "Conti Group",
       "type": "organization",
-      "asm:systems": ["Conti Ransomware v3", "Cobalt Strike", "KI-gestützte Seitwärtsbewegung im Netzwerk"]
+      "asm:systems": [
+        "Conti Ransomware v3",
+        "Cobalt Strike",
+        "KI-gestützte Seitwärtsbewegung im Netzwerk"
+      ]
     },
     {
       "name": "Gobierno de Costa Rica",
@@ -42,28 +54,34 @@
       "phase": "infrastructure",
       "title": "Erster Angriff auf das costaricanische Finanzministerium",
       "description": "Die Conti-Gruppe infiltriert die Netzwerke des costaricanischen Finanzministeriums (Ministerio de Hacienda). Innerhalb weniger Stunden breitet sich die Ransomware auf weitere Regierungsnetzwerke aus. Das Steuersystem ATV und die Plattform para el Control de Importaciones und Exportaciones werden unbrauchbar. Zolldaten und Steuererklärungen von Unternehmen können nicht mehr verarbeitet werden.",
-      "sources": ["https://www.bleepingcomputer.com/news/security/costa-rica-declares-national-emergency-after-conti-ransomware-attacks/"]
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/costa-rica-declares-national-emergency-after-conti-ransomware-attacks/"
+      ]
     },
     {
       "date": "2022-05-08",
       "phase": "doctrine",
       "title": "Neuer Präsident ruft nationalen Notstand aus",
       "description": "Der am Tag zuvor vereidete Präsident Rodrigo Chaves erklärt den nationalen Notstand als Reaktion auf den anhaltenden Cyberangriff. Die Conti-Gruppe erhöht ihre Lösegeldforderung auf 20 Millionen US-Dollar und veröffentlicht gestohlene Regierungsdaten. Über 670 GB vertraulicher Daten werden im Darknet veröffentlicht. Die USA bieten 10 Millionen Dollar für Hinweise auf Conti-Mitglieder.",
-      "sources": ["https://www.bbc.com/news/technology-61411324", "https://www.state.gov/rewards-for-justice-reward-offer-for-information-on-conti-ransomware/"]
+      "sources": [
+        "https://www.state.gov/rewards-for-justice-reward-offer-for-information-on-conti-ransomware/"
+      ]
     },
     {
       "date": "2022-05-31",
       "phase": "event",
       "title": "Zweite Angriffswelle trifft Gesundheitssystem",
       "description": "Eine zweite Angriffswelle durch die mit Conti verbundene Gruppe HIVE legt das nationale Gesundheitssystem CCSS (Caja Costarricense de Seguro Social) lahm. Krankenhäuser müssen auf papierbasierte Prozesse umstellen. Operationen werden verschoben, Testergebnisse verzögert, Rezepte manuell ausgestellt. Mehr als 1.200 Server und 15.000 Workstations sind betroffen. Der wirtschaftliche Schaden wird auf über 30 Millionen US-Dollar geschätzt.",
-      "sources": ["https://www.bleepingcomputer.com/news/security/costa-ricas-public-health-agency-hit-by-hive-ransomware/"]
+      "sources": []
     },
     {
       "date": "2022-08",
       "phase": "consequences",
       "title": "Monate der Störung, internationale Cyberhilfe, keine Verhaftungen",
       "description": "Die costaricanische Regierung lehnt die Zahlung des Lösegelds ab und restauriert Systeme mühsam über Monate hinweg. Die USA, Israel und Spanien leisten technische Unterstützung. Die wirtschaftlichen Verluste durch blockierte Exporte und Importprozesse werden auf Hunderte Millionen Dollar geschätzt. Der Angriff wird als Warnung für staatliche Cybersicherheit weltweit zitiert. Keines der mutmasslich russischsprachigen Conti-Mitglieder wird verhaftet.",
-      "sources": ["https://www.bleepingcomputer.com/news/security/costa-rica-declares-national-emergency-after-conti-ransomware-attacks/", "https://www.bbc.com/news/technology-61411324"]
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/costa-rica-declares-national-emergency-after-conti-ransomware-attacks/"
+      ]
     }
   ],
   "asm:sources": [
@@ -75,11 +93,11 @@
       "type": "news-article"
     },
     {
-      "url": "https://www.bbc.com/news/technology-61411324",
       "title": "Costa Rica declares national emergency over ransomware attack",
       "publisher": "BBC News",
       "date": "2022-05-11",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.bbc.com/news/technology-61411324"
     },
     {
       "url": "https://www.state.gov/rewards-for-justice-reward-offer-for-information-on-conti-ransomware/",
@@ -89,11 +107,11 @@
       "type": "government-document"
     },
     {
-      "url": "https://www.bleepingcomputer.com/news/security/costa-ricas-public-health-agency-hit-by-hive-ransomware/",
       "title": "Costa Rica's public health agency hit by Hive ransomware",
       "publisher": "BleepingComputer",
       "date": "2022-05-31",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.bleepingcomputer.com/news/security/costa-ricas-public-health-agency-hit-by-hive-ransomware/"
     }
   ],
   "asm:metadata": {

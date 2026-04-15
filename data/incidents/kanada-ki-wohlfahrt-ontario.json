@@ -21,13 +21,23 @@
       "addressCountry": "CA"
     }
   },
-  "asm:incidentType": ["discrimination", "data-misuse"],
-  "asm:affectedRights": ["Recht auf soziale Sicherheit", "Schutz vor Diskriminierung", "Recht auf faires Verfahren", "Menschenwürde"],
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf soziale Sicherheit",
+    "Schutz vor Diskriminierung",
+    "Recht auf faires Verfahren",
+    "Menschenwürde"
+  ],
   "asm:actors": [
     {
       "name": "Ontario Ministry of Community and Social Services",
       "type": "government",
-      "asm:systems": ["SAMS (Social Assistance Management System)"]
+      "asm:systems": [
+        "SAMS (Social Assistance Management System)"
+      ]
     },
     {
       "name": "Citizen Lab / University of Toronto",
@@ -42,44 +52,46 @@
       "phase": "infrastructure",
       "title": "SAMS-System ersetzt manuelle Bearbeitung",
       "description": "Ontario führt das Social Assistance Management System (SAMS) ein, das die Bearbeitung von Ontario Works und Ontario Disability Support Program automatisiert. Das System von Cúram Software (IBM) ersetzt ein 20 Jahre altes System. Vom ersten Tag an häufen sich Beschwerden über fehlerhafte Leistungskürzungen.",
-      "sources": ["https://www.cbc.ca/news/canada/toronto/ontario-welfare-computer-system-problems-1.2879163"]
+      "sources": []
     },
     {
       "date": "2015",
       "phase": "event",
       "title": "Massenhafte Fehlberechnungen und Kürzungen",
       "description": "Der Ontario Ombudsman erhält Hunderte Beschwerden. Sozialhilfeempfänger berichten, dass ihre Leistungen ohne Erklärung gekürzt oder eingestellt werden. Das System erweist sich als fehleranfällig bei komplexen Fällen — genau den vulnerabelsten Empfänger, die multiple Unterstützungsleistungen benötigen.",
-      "sources": ["https://www.ombudsman.on.ca/resources/reports-and-case-summaries/reports-on-investigations/2018/the-sams-story"]
+      "sources": []
     },
     {
       "date": "2018",
       "phase": "consequences",
       "title": "Ombudsman-Bericht dokumentiert systematische Fehler",
       "description": "Der Ontario Ombudsman veröffentlicht den Bericht 'The SAMS Story'. Er dokumentiert, dass das System über Jahre hinweg systematisch fehlerhafte Entscheidungen traf, ohne dass Kontrollen griffen. Besonders betroffen: Menschen mit Behinderungen, deren Sonderbedarf vom System nicht korrekt erfasst wurde.",
-      "sources": ["https://www.ombudsman.on.ca/resources/reports-and-case-summaries/reports-on-investigations/2018/the-sams-story"]
+      "sources": []
     },
     {
       "date": "2020",
       "phase": "consequences",
       "title": "Forderungen nach algorithmischer Rechenschaftspflicht",
       "description": "Kanadische Bürgerrechtsorganisationen und Forscher fordern ein Algorithmic Impact Assessment für alle staatlichen Entscheidungssysteme. Die kanadische Bundesregierung führt das Algorithmic Impact Assessment Tool ein — eines der ersten weltweit. Ontario reformiert SAMS schrittweise.",
-      "sources": ["https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html"]
+      "sources": [
+        "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html"
+      ]
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.ombudsman.on.ca/resources/reports-and-case-summaries/reports-on-investigations/2018/the-sams-story",
       "title": "The SAMS Story",
       "publisher": "Office of the Ontario Ombudsman",
       "date": "2018",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://www.ombudsman.on.ca/resources/reports-and-case-summaries/reports-on-investigations/2018/the-sams-story"
     },
     {
-      "url": "https://www.cbc.ca/news/canada/toronto/ontario-welfare-computer-system-problems-1.2879163",
       "title": "Ontario welfare computer system causing payment problems",
       "publisher": "CBC News",
       "date": "2015-01",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.cbc.ca/news/canada/toronto/ontario-welfare-computer-system-problems-1.2879163"
     },
     {
       "url": "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html",

@@ -21,18 +21,33 @@
       "addressCountry": "RU"
     }
   },
-  "asm:incidentType": ["deepfakes", "military-ai", "political-pressure"],
-  "asm:affectedRights": ["Informationsfreiheit", "Recht auf Wahrheit", "Nationale Sicherheit der Ukraine", "Meinungsfreiheit"],
+  "asm:incidentType": [
+    "deepfakes",
+    "military-ai",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [
+    "Informationsfreiheit",
+    "Recht auf Wahrheit",
+    "Nationale Sicherheit der Ukraine",
+    "Meinungsfreiheit"
+  ],
   "asm:actors": [
     {
       "name": "Russische Regierung",
       "type": "government",
-      "asm:systems": ["Staatliche Desinformationsinfrastruktur", "KI-Deepfake-Produktion"]
+      "asm:systems": [
+        "Staatliche Desinformationsinfrastruktur",
+        "KI-Deepfake-Produktion"
+      ]
     },
     {
       "name": "Russisches Militaer",
       "type": "military",
-      "asm:systems": ["Kognitive Kriegsfuehrung", "Informationsoperationen"]
+      "asm:systems": [
+        "Kognitive Kriegsfuehrung",
+        "Informationsoperationen"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -43,28 +58,34 @@
       "phase": "infrastructure",
       "title": "Beginn der Invasion und gleichzeitiger Informationskrieg",
       "description": "Mit Beginn der militaerischen Invasion startet Russland parallel eine massive Informationsoperation. Staatliche Medien, Bot-Netzwerke und koordinierte Accounts auf sozialen Medien verbreiten Narrative zur Rechtfertigung des Angriffs. KI-Tools zur Bild- und Videobearbeitung werden fuer Propaganda eingesetzt.",
-      "sources": ["https://euvsdisinfo.eu/"]
+      "sources": [
+        "https://euvsdisinfo.eu/"
+      ]
     },
     {
       "date": "2022-03-16",
       "phase": "event",
       "title": "Deepfake-Video von Praesident Selenskyj",
       "description": "Ein KI-generiertes Deepfake-Video verbreitet sich viral, in dem Praesident Selenskyj ukrainische Soldaten angeblich zur Kapitulation auffordert. Meta, YouTube und Twitter loeschen das Video, doch es erreicht zuvor Millionen Nutzer. Selenskyj widerlegt das Video in einem Live-Video. Das Ereignis gilt als erster grosser Deepfake-Einsatz in einem aktiven Kriegskonflikt.",
-      "sources": ["https://www.reuters.com/world/europe/deepfake-video-zelenskiy-asking-ukrainians-lay-down-arms-appears-online-2022-03-16/"]
+      "sources": [
+        "https://www.reuters.com/world/europe/deepfake-video-zelenskiy-asking-ukrainians-lay-down-arms-appears-online-2022-03-16/"
+      ]
     },
     {
       "date": "2023-01",
       "phase": "doctrine",
       "title": "Systematische KI-Propagandaeskalation",
       "description": "Meta veroeffentlicht Threat Intelligence Reports ueber koordinierte inauthenthische Verhaltensmuster aus Russland. DFRLab dokumentiert den Einsatz von KI zur Massenerstellung gefaelschter Nachrichten-Webseiten, die europaeische Medienmarken imitieren. Das EU DisinfoLab identifiziert Netzwerke mit Tausenden KI-generierten Fake-Accounts.",
-      "sources": ["https://www.disinfo.eu/"]
+      "sources": [
+        "https://www.disinfo.eu/"
+      ]
     },
     {
       "date": "2023-06",
       "phase": "consequences",
       "title": "Internationale Gegenmassnahmen und Debatte ueber KI-Regulierung",
       "description": "Die EU verstaerkt das East StratCom Task Force-Mandat und finanziert Medienalphabetiierungsprogramme. Die NATO erkennt kognitive Kriegsfuehrung offiziell als Bedrohungsvektor an. Der Deepfake-Einsatz im Ukraine-Krieg beschleunigt internationale Diskussionen ueber Kennzeichnungspflichten fuer KI-generierte Inhalte.",
-      "sources": ["https://www.nato.int/cps/en/natohq/topics_192595.htm"]
+      "sources": []
     }
   ],
   "asm:sources": [
@@ -90,11 +111,11 @@
       "type": "ngo-report"
     },
     {
-      "url": "https://www.nato.int/cps/en/natohq/topics_192595.htm",
       "title": "Cognitive Warfare — NATO Strategic Communications",
       "publisher": "NATO",
       "date": "2023",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://www.nato.int/cps/en/natohq/topics_192595.htm"
     }
   ],
   "asm:metadata": {

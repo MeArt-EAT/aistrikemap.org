@@ -21,18 +21,35 @@
       "addressCountry": "CN"
     }
   },
-  "asm:incidentType": ["surveillance", "labor-exploitation"],
-  "asm:affectedRights": ["Recht auf Privatsphäre", "Recht auf faire Arbeitsbedingungen", "Recht auf körperliche Unversehrtheit", "Recht auf Würde am Arbeitsplatz", "Vereinigungsfreiheit"],
+  "asm:incidentType": [
+    "surveillance",
+    "labor-exploitation"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Recht auf faire Arbeitsbedingungen",
+    "Recht auf körperliche Unversehrtheit",
+    "Recht auf Würde am Arbeitsplatz",
+    "Vereinigungsfreiheit"
+  ],
   "asm:actors": [
     {
       "name": "Chinesische Elektronikhersteller (u.a. Foxconn-Zulieferer)",
       "type": "company",
-      "asm:systems": ["Emotion AI", "Produktivitäts-Tracking", "Gesichtserkennung am Arbeitsplatz"]
+      "asm:systems": [
+        "Emotion AI",
+        "Produktivitäts-Tracking",
+        "Gesichtserkennung am Arbeitsplatz"
+      ]
     },
     {
       "name": "KI-Startups (u.a. Hikvision, SenseTime, DeepGlint)",
       "type": "company",
-      "asm:systems": ["EmotionNet", "Verhaltensanalyse-KI", "Anomalieerkennung"]
+      "asm:systems": [
+        "EmotionNet",
+        "Verhaltensanalyse-KI",
+        "Anomalieerkennung"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -43,51 +60,51 @@
       "phase": "infrastructure",
       "title": "Pilotprojekte zur Emotionserkennung starten in Industriezonen",
       "description": "Chinesische KI-Unternehmen beginnen, Emotionserkennungssysteme für industrielle Anwendungen zu entwickeln und zu vermarkten. Erste Pilotprojekte in Fabriken der Shenzhen Special Economic Zone erfassen Gesichtsausdrücke und klassifizieren Emotionszustände wie 'Konzentration', 'Erschöpfung', 'Angst' oder 'Unzufriedenheit'. Die Daten werden in Echtzeit an Vorgesetzte gemeldet.",
-      "sources": ["https://www.ft.com/content/e6fcd1aa-3eba-11e9-b896-fe36ec32aece"]
+      "sources": []
     },
     {
       "date": "2020",
       "phase": "doctrine",
       "title": "Pandemie beschleunigt Ausbau der Fabriküberwachung",
       "description": "Unter dem Vorwand der COVID-19-Sicherheitsmassnahmen erweitern Hersteller ihre Überwachungsinfrastruktur erheblich. Neben Temperaturmessung werden umfassende Verhaltensanalysen eingeführt. Arbeitnehmer müssen Armbänder tragen, die Herzfrequenz, Bewegung und Stresslevel messen. Die gesammelten Daten werden mit KI-Systemen ausgewertet, die Empfehlungen für Versetzungen, Verwarnungen oder Entlassungen generieren.",
-      "sources": ["https://restofworld.org/2021/chinas-ai-factories/"]
+      "sources": []
     },
     {
       "date": "2022",
       "phase": "event",
       "title": "Flächendeckende Einführung dokumentiert, Arbeiter berichten von Angst",
       "description": "Investigativrecherchen von Rest of World und South China Morning Post zeigen, dass KI-Überwachung in Hunderten von Fabriken in der Zhujiang-Delta-Region verbreitet ist. Interviews mit Arbeitern zeigen verbreitete Angst, Selbstzensur des Ausdrucks und psychische Belastung. Einige Systeme bestrafen automatisch kurze Pausen, langsames Arbeitstempo oder Gespräche mit Kollegen durch Lohnabzüge.",
-      "sources": ["https://restofworld.org/2021/chinas-ai-factories/", "https://www.scmp.com/tech/tech-trends/article/3181842/chinese-factories-are-using-ai-monitor-workers-emotions"]
+      "sources": []
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "Kaum rechtliche Konsequenzen, internationale Lieferkettendebatte",
       "description": "Chinas Datenschutzgesetze (PIPL, 2021) enthalten theoretisch Einschränkungen für biometrische Verarbeitung am Arbeitsplatz, werden aber in Fabriksettings kaum durchgesetzt. Internationale Käufer wie westliche Technologieunternehmen geraten unter Druck, ihre Lieferketten zu auditieren. Ngo-Berichte fordern verbindliche Sorgfaltspflichtengesetze. Die meisten KI-Überwachungsanbieter operieren weiterhin ohne Einschränkungen.",
-      "sources": ["https://www.ft.com/content/e6fcd1aa-3eba-11e9-b896-fe36ec32aece", "https://www.amnesty.org/en/latest/news/2021/09/china-crackdown-workers-rights/"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.ft.com/content/e6fcd1aa-3eba-11e9-b896-fe36ec32aece",
       "title": "Chinese factories use AI to monitor workers' emotions and efficiency",
       "publisher": "Financial Times",
       "date": "2019-03-04",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.ft.com/content/e6fcd1aa-3eba-11e9-b896-fe36ec32aece"
     },
     {
-      "url": "https://restofworld.org/2021/chinas-ai-factories/",
       "title": "How Chinese factories are using AI to watch their workers",
       "publisher": "Rest of World",
       "date": "2021-09",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://restofworld.org/2021/chinas-ai-factories/"
     },
     {
-      "url": "https://www.scmp.com/tech/tech-trends/article/3181842/chinese-factories-are-using-ai-monitor-workers-emotions",
       "title": "Chinese factories using AI to monitor workers' emotions",
       "publisher": "South China Morning Post",
       "date": "2022",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.scmp.com/tech/tech-trends/article/3181842/chinese-factories-are-using-ai-monitor-workers-emotions"
     }
   ],
   "asm:metadata": {

@@ -21,18 +21,29 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["data-misuse"],
-  "asm:affectedRights": ["Recht auf koerperliche Unversehrtheit", "Oeffentliche Sicherheit", "Transparenz bei KI-Systemen"],
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf koerperliche Unversehrtheit",
+    "Oeffentliche Sicherheit",
+    "Transparenz bei KI-Systemen"
+  ],
   "asm:actors": [
     {
       "name": "Cruise / General Motors",
       "type": "company",
-      "asm:systems": ["Cruise Origin (autonomes Fahrzeug)", "Cruise Robotaxi-Flotte"]
+      "asm:systems": [
+        "Cruise Origin (autonomes Fahrzeug)",
+        "Cruise Robotaxi-Flotte"
+      ]
     },
     {
       "name": "Waymo / Alphabet",
       "type": "company",
-      "asm:systems": ["Waymo One (autonomes Fahrzeug)"]
+      "asm:systems": [
+        "Waymo One (autonomes Fahrzeug)"
+      ]
     },
     {
       "name": "California DMV (Kraftfahrtbehoerde)",
@@ -47,37 +58,39 @@
       "phase": "infrastructure",
       "title": "Grossflaechige Expansion autonomer Robotaxis",
       "description": "Cruise und Waymo erhalten von der California Public Utilities Commission die Genehmigung, in San Francisco rund um die Uhr bezahlte Fahrdienste anzubieten. Hunderte autonomer Fahrzeuge werden im Stadtgebiet eingesetzt. Erste Berichte ueber Blockierungen von Feuerwehr- und Rettungsfahrzeugen werden oeffentlich.",
-      "sources": ["https://www.sfchronicle.com/bayarea/article/cruise-waymo-self-driving-san-francisco-17321421.php"]
+      "sources": []
     },
     {
       "date": "2023-08",
       "phase": "doctrine",
       "title": "Zunahme schwerer Zwischenfaelle",
       "description": "Ein Cruise-Fahrzeug blockiert in San Francisco mehrfach Einsatzfahrzeuge bei Noteinsaetzen. Die Feuerwehr San Francisco dokumentiert Dutzende solcher Vorfaelle. Die NHTSA eroefffnet Untersuchungen wegen mehrerer Kollisionen mit Fussgaengern.",
-      "sources": ["https://www.nhtsa.gov/vehicle-safety/automated-vehicles"]
+      "sources": [
+        "https://www.nhtsa.gov/vehicle-safety/automated-vehicles"
+      ]
     },
     {
       "date": "2023-10-02",
       "phase": "event",
       "title": "Cruise-Fahrzeug schleppt verletzte Fussgaengerin",
       "description": "Ein autonomes Cruise-Fahrzeug erfasst eine Fussgaengerin, die zuvor von einem anderen Auto angefahren worden war, und schleppt sie mehrere Meter mit. Die Frau wird schwer verletzt. Cruise veroeffentlicht zunaechst nur unvollstaendige Informationen ueber den Vorfall an die Behoerden.",
-      "sources": ["https://www.sfchronicle.com/sf/article/cruise-robotaxi-pedestrian-drag-san-francisco-18428211.php"]
+      "sources": []
     },
     {
       "date": "2023-10-24",
       "phase": "consequences",
       "title": "Entzug der Betriebserlaubnis fuer Cruise",
       "description": "Die California DMV entzieht Cruise die Betriebserlaubnis wegen Taeuschen der Behoerden ueber den Unfallhergang. Cruise stellt den Betrieb in den USA ein. GM leitet interne Untersuchungen ein und entlaesst fuehrende Manager. Der Vorfall befeuert eine nationale Debatte ueber Sicherheitsstandards fuer autonome Fahrzeuge.",
-      "sources": ["https://www.dmv.ca.gov/portal/news-and-media/dmv-suspends-cruise-llcs-deployment-and-driverless-testing-permits/"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.dmv.ca.gov/portal/news-and-media/dmv-suspends-cruise-llcs-deployment-and-driverless-testing-permits/",
       "title": "DMV Suspends Cruise LLC's Deployment and Driverless Testing Permits",
       "publisher": "California DMV",
       "date": "2023-10-24",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://www.dmv.ca.gov/portal/news-and-media/dmv-suspends-cruise-llcs-deployment-and-driverless-testing-permits/"
     },
     {
       "url": "https://www.nhtsa.gov/vehicle-safety/automated-vehicles",
@@ -87,11 +100,11 @@
       "type": "government-document"
     },
     {
-      "url": "https://www.sfchronicle.com/sf/article/cruise-robotaxi-pedestrian-drag-san-francisco-18428211.php",
       "title": "Cruise robotaxi drags pedestrian in San Francisco",
       "publisher": "San Francisco Chronicle",
       "date": "2023-10",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.sfchronicle.com/sf/article/cruise-robotaxi-pedestrian-drag-san-francisco-18428211.php"
     }
   ],
   "asm:metadata": {

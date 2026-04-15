@@ -21,13 +21,25 @@
       "addressCountry": "ES"
     }
   },
-  "asm:incidentType": ["discrimination", "labor-exploitation"],
-  "asm:affectedRights": ["Recht auf Arbeit", "Recht auf Gleichbehandlung", "Schutz vor Diskriminierung", "Recht auf staatliche Dienstleistungen", "Recht auf Erklärung algorithmischer Entscheidungen"],
+  "asm:incidentType": [
+    "discrimination",
+    "labor-exploitation"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Arbeit",
+    "Recht auf Gleichbehandlung",
+    "Schutz vor Diskriminierung",
+    "Recht auf staatliche Dienstleistungen",
+    "Recht auf Erklärung algorithmischer Entscheidungen"
+  ],
   "asm:actors": [
     {
       "name": "SEPE (Servicio Público de Empleo Estatal)",
       "type": "government",
-      "asm:systems": ["SISPE Arbeitsmarkt-Algorithmus", "Profiling-System für Langzeitarbeitslose"]
+      "asm:systems": [
+        "SISPE Arbeitsmarkt-Algorithmus",
+        "Profiling-System für Langzeitarbeitslose"
+      ]
     }
   ],
   "asm:severity": 3,
@@ -38,51 +50,51 @@
       "phase": "infrastructure",
       "title": "SEPE führt algorithmisches Profiling für Arbeitssuchende ein",
       "description": "Das spanische Arbeitsamt SEPE implementiert ein algorithmisches System zur Klassifikation von Arbeitssuchenden nach ihrer geschätzten 'Beschäftigbarkeit'. Der Algorithmus verwendet historische Beschäftigungsdaten, Ausbildungsstand, Alter, Herkunft und Sektor-Informationen. Anhand der Klassifikation werden Arbeitssuchende unterschiedlich intensiv beraten und auf Stellenangebote hingewiesen. Das System operiert ohne öffentliche Dokumentation.",
-      "sources": ["https://www.civio.es/2021/12/el-algoritmo-del-sepe/"]
+      "sources": []
     },
     {
       "date": "2021",
       "phase": "doctrine",
       "title": "Investigativrecherchen und NGO-Berichte decken Diskriminierung auf",
       "description": "Das investigative Datenjournalismusprojekt Civio und das Algorithm Audit Collective veröffentlichen Analysen, die zeigen, dass der SEPE-Algorithmus Frauen, Personen mit Migrationshintergrund und Arbeitnehmer über 50 Jahren systematisch schlechter bewertet. Diese Gruppen erhalten weniger intensive Beratung und werden seltener auf höherqualifizierte Stellen vermittelt. Das Ministerium für Arbeit reagiert zunächst mit Schweigen.",
-      "sources": ["https://www.civio.es/2021/12/el-algoritmo-del-sepe/", "https://algorithmaudit.eu/cases/spain-sepe/"]
+      "sources": []
     },
     {
       "date": "2022",
       "phase": "event",
       "title": "Offizielles Audit bestätigt Bias, EU-Datenschutzbehörde ermittelt",
       "description": "Das spanische Ministerium für Arbeit und Sozialwirtschaft beauftragt ein offizielles Audit des SEPE-Algorithmus. Die Prüfung bestätigt die dokumentierten Voreingenommenheiten und stellt fest, dass das System Merkmale wie Geburtsort und Geschlecht als implizite Einflussfaktoren enthält. Die spanische Datenschutzbehörde AEPD leitet eine Untersuchung ein. Das System wird vorübergehend eingeschränkt.",
-      "sources": ["https://www.aepd.es/es/prensa-y-comunicacion/notas-de-prensa/aepd-sepe-algoritmo", "https://elpais.com/tecnologia/2022/algoritmo-sepe-discriminacion.html"]
+      "sources": []
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "Reformbemühungen und Europäisches KI-Gesetz als Impulsgeber",
       "description": "Spanien überarbeitet das SEPE-System und verpflichtet sich zu grösserer Transparenz. Der Fall wird in den Verhandlungen zum EU AI Act als Beispiel für hochriskante KI-Anwendungen im Bereich Beschäftigung zitiert. Das neue System muss regelmässige Bias-Audits durchlaufen. Betroffene erhalten theoretisch das Recht auf Erklärung ihrer Einstufung, obwohl die praktische Umsetzung lückenhaft bleibt.",
-      "sources": ["https://algorithmaudit.eu/cases/spain-sepe/", "https://www.civio.es/2023/sepe-reforma/"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.civio.es/2021/12/el-algoritmo-del-sepe/",
       "title": "El algoritmo del SEPE: cómo clasifica a los parados y qué consecuencias tiene",
       "publisher": "Civio",
       "date": "2021-12",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.civio.es/2021/12/el-algoritmo-del-sepe/"
     },
     {
-      "url": "https://algorithmaudit.eu/cases/spain-sepe/",
       "title": "Algorithmic Bias in Spain's Public Employment Service",
       "publisher": "Algorithm Audit",
       "date": "2022",
-      "type": "research-paper"
+      "type": "research-paper",
+      "asm:brokenUrl": "https://algorithmaudit.eu/cases/spain-sepe/"
     },
     {
-      "url": "https://elpais.com/tecnologia/2022/algoritmo-sepe-discriminacion.html",
       "title": "El algoritmo de empleo que discrimina por origen y género",
       "publisher": "El País",
       "date": "2022",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://elpais.com/tecnologia/2022/algoritmo-sepe-discriminacion.html"
     }
   ],
   "asm:metadata": {

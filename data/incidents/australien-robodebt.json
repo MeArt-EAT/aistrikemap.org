@@ -14,20 +14,31 @@
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": -35.2809,
-      "longitude": 149.1300
+      "longitude": 149.13
     },
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "AU"
     }
   },
-  "asm:incidentType": ["discrimination", "data-misuse"],
-  "asm:affectedRights": ["Recht auf soziale Sicherheit", "Recht auf faires Verfahren", "Menschenwürde", "Recht auf Leben", "Schutz vor Diskriminierung"],
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf soziale Sicherheit",
+    "Recht auf faires Verfahren",
+    "Menschenwürde",
+    "Recht auf Leben",
+    "Schutz vor Diskriminierung"
+  ],
   "asm:actors": [
     {
       "name": "Australian Government / Department of Human Services",
       "type": "government",
-      "asm:systems": ["Online Compliance Intervention (OCI)"]
+      "asm:systems": [
+        "Online Compliance Intervention (OCI)"
+      ]
     },
     {
       "name": "Services Australia (Centrelink)",
@@ -42,37 +53,39 @@
       "phase": "infrastructure",
       "title": "Automatisiertes Schuldenabgleichsystem startet",
       "description": "Die Regierung unter PM Malcolm Turnbull startet das Online Compliance Intervention (OCI) System. Es automatisiert den vorher manuellen Prozess des Abgleichs von Einkommensdaten — und generiert massenhaft Schuldbescheide auf Basis fehlerhafter Durchschnittsberechnungen.",
-      "sources": ["https://www.theguardian.com/australia-news/2020/may/29/robodebt-government-to-repay-470000-unlawful-centrelink-debts-worth-721m"]
+      "sources": [
+        "https://www.theguardian.com/australia-news/2020/may/29/robodebt-government-to-repay-470000-unlawful-centrelink-debts-worth-721m"
+      ]
     },
     {
       "date": "2017",
       "phase": "doctrine",
       "title": "Erste Berichte über massenhafte Fehlbescheide",
       "description": "Sozialarbeiter, Rechtsberatungsstellen und Medien berichten über Tausende fehlerhafte Bescheide. Die mathematische Grundlage ist fehlerhaft: Jahresgehalt wird durch 26 geteilt und mit einzelnen Abrechnungsperioden verglichen, was bei unregelmäßigem Einkommen systematisch falsche Schulden errechnet.",
-      "sources": ["https://www.theguardian.com/australia-news/2017/jan/06/centrelinks-robo-debt-system-is-cruel-and-kafkaesque-say-welfare-agencies"]
+      "sources": []
     },
     {
       "date": "2019-11",
       "phase": "event",
       "title": "Federal Court erklärt System für rechtswidrig",
       "description": "Im Fall Amato v Commonwealth entscheidet das Federal Court, dass die automatisierten Schuldbescheide ohne legale Grundlage erstellt wurden. Die Regierung beginnt mit der Rückzahlung von 721 Millionen AUD an 470.000 Betroffene.",
-      "sources": ["https://www.theguardian.com/australia-news/2019/nov/27/robodebt-government-abandons-key-part-of-debt-recovery-scheme-in-major-backdown"]
+      "sources": []
     },
     {
       "date": "2023-07",
       "phase": "consequences",
       "title": "Royal Commission verurteilt Robodebt als 'cruel and unjust'",
       "description": "Die Royal Commission unter Catherine Holmes veröffentlicht ihren Abschlussbericht: Das System war 'crude and cruel', 'neither fair nor legal'. Fünf ehemalige Minister und Beamte werden zur strafrechtlichen Prüfung empfohlen. Der Bericht wird zum internationalen Referenzfall für die Gefahren automatisierter staatlicher Entscheidungen.",
-      "sources": ["https://robodebt.royalcommission.gov.au/publications/report"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://robodebt.royalcommission.gov.au/publications/report",
       "title": "Report of the Royal Commission into the Robodebt Scheme",
       "publisher": "Royal Commission into the Robodebt Scheme",
       "date": "2023-07-07",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://robodebt.royalcommission.gov.au/publications/report"
     },
     {
       "url": "https://www.theguardian.com/australia-news/2020/may/29/robodebt-government-to-repay-470000-unlawful-centrelink-debts-worth-721m",
@@ -82,11 +95,11 @@
       "type": "news-article"
     },
     {
-      "url": "https://www.theguardian.com/australia-news/2019/nov/27/robodebt-government-abandons-key-part-of-debt-recovery-scheme-in-major-backdown",
       "title": "Robodebt: government abandons key part of debt recovery scheme",
       "publisher": "The Guardian",
       "date": "2019-11-27",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.theguardian.com/australia-news/2019/nov/27/robodebt-government-abandons-key-part-of-debt-recovery-scheme-in-major-backdown"
     },
     {
       "url": "https://www.abc.net.au/news/2023-07-07/robodebt-royal-commission-final-report/102573708",

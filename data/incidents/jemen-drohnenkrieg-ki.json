@@ -14,25 +14,40 @@
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 15.3694,
-      "longitude": 44.1910
+      "longitude": 44.191
     },
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "YE"
     }
   },
-  "asm:incidentType": ["autonomous-weapons", "military-ai"],
-  "asm:affectedRights": ["Recht auf Leben", "Schutz der Zivilbevolkerung", "Recht auf ein faires Verfahren", "Humanitares Volkerrecht"],
+  "asm:incidentType": [
+    "autonomous-weapons",
+    "military-ai"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Schutz der Zivilbevolkerung",
+    "Recht auf ein faires Verfahren",
+    "Humanitares Volkerrecht"
+  ],
   "asm:actors": [
     {
       "name": "US-Militar (CENTCOM / JSOC)",
       "type": "military",
-      "asm:systems": ["Predator- und Reaper-Drohnen", "SKYNET-Metadatenanalyse", "KI-Zielerkennung"]
+      "asm:systems": [
+        "Predator- und Reaper-Drohnen",
+        "SKYNET-Metadatenanalyse",
+        "KI-Zielerkennung"
+      ]
     },
     {
       "name": "Saudi-arabische Koalition",
       "type": "military",
-      "asm:systems": ["F-15-Kampfjets", "US-bereitgestellte Zieldaten"]
+      "asm:systems": [
+        "F-15-Kampfjets",
+        "US-bereitgestellte Zieldaten"
+      ]
     }
   ],
   "asm:severity": 5,
@@ -43,58 +58,62 @@
       "phase": "infrastructure",
       "title": "Erste US-Drohnenangriffe im Jemen",
       "description": "Die USA beginnen verdeckte Drohnenangriffe im Jemen unter der Bezeichnung 'Counterterrorism Operations'. Zielerfassungssysteme nutzen Metadatenanalyse und Signalaufklarung. Der erste dokumentierte Angriff in al-Ma'jalah totet mindestens 41 Zivilisten, darunter 14 Frauen und 21 Kinder.",
-      "sources": ["https://www.airwars.org/conflict-data/yemen/"]
+      "sources": []
     },
     {
       "date": "2015-03",
       "phase": "doctrine",
       "title": "Saudi-Koalition eskaliert — US-Zieldaten fliessen",
       "description": "Mit Beginn der saudischen Militarintervention liefern die USA Zielkoordinaten und logistische Unterstutzung. Algorithmische Auswertung von Telefonmetadaten und Bewegungsmustern wird genutzt, um Verdachtige zu identifizieren. Das fuhrte zur Klassifizierung ganzer Familienverbande als 'Kombattanten'.",
-      "sources": ["https://mwatana.org/en/"]
+      "sources": [
+        "https://web.archive.org/web/20230724164359/https://mwatana.org/en/"
+      ]
     },
     {
       "date": "2020-09",
       "phase": "event",
       "title": "Mwatana dokumentiert 510 rechtswidrige Angriffe",
       "description": "Die jemenitische Menschenrechtsorganisation Mwatana for Human Rights legt einen Bericht vor, der 510 potenziell rechtswidrige Luftangriffe der Koalition seit 2015 dokumentiert, darunter Angriffe auf Hochzeiten, Schulen und Krankenstationen. Algorithmen zur Mustererkennung bei Fahrzeugansammlungen fuhrten zu Fehlklassifizierungen.",
-      "sources": ["https://mwatana.org/en/day-of-judgment/"]
+      "sources": [
+        "https://web.archive.org/web/20230725123405/https://mwatana.org/en/day-of-judgment/"
+      ]
     },
     {
       "date": "2022-01",
       "phase": "consequences",
       "title": "UN-Expertenpanel kritisiert Zielalgorithmen",
       "description": "Das UN-Expertenpanel zum Jemen kritisiert in seinem Jahresbericht mangelnde Transparenz bei der algorithmischen Zielerfassung beider Seiten. Schadensersatzzahlungen an Zivilopfererfamilien bleiben aus. Internationale Rufe nach einem KI-Waffenstopp im Jemenkonflikt nehmen zu, bleiben aber folgenlos.",
-      "sources": ["https://www.ohchr.org/en/news/2022/01/un-experts-urge-states-act-accountability-yemen"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://mwatana.org/en/day-of-judgment/",
+      "url": "https://web.archive.org/web/20230725123405/https://mwatana.org/en/day-of-judgment/",
       "title": "Day of Judgment: The Role of the United States in Civilian Harm in Yemen",
       "publisher": "Mwatana for Human Rights",
       "date": "2020-09",
       "type": "ngo-report"
     },
     {
-      "url": "https://www.airwars.org/conflict-data/yemen/",
       "title": "Yemen Conflict Data",
       "publisher": "Airwars",
       "date": "2023",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.airwars.org/conflict-data/yemen/"
     },
     {
-      "url": "https://www.ohchr.org/en/news/2022/01/un-experts-urge-states-act-accountability-yemen",
       "title": "UN experts urge states to act on accountability in Yemen",
       "publisher": "UN OHCHR",
       "date": "2022-01",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://www.ohchr.org/en/news/2022/01/un-experts-urge-states-act-accountability-yemen"
     },
     {
-      "url": "https://www.theguardian.com/world/2015/aug/12/airstrikes-yemen-civilians",
       "title": "Airstrikes in Yemen: civilian deaths and destruction",
       "publisher": "The Guardian",
       "date": "2015-08-12",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.theguardian.com/world/2015/aug/12/airstrikes-yemen-civilians"
     }
   ],
   "asm:metadata": {

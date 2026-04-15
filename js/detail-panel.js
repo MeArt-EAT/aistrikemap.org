@@ -152,7 +152,11 @@ const DetailPanel = (function () {
       html += '<ul class="source-list">';
       sources.forEach(function (s) {
         html += '<li class="source-item">';
-        html += '<a href="' + escAttr(s.url) + '" target="_blank" rel="noopener">' + esc(s.title) + '</a>';
+        if (s.url) {
+          html += '<a href="' + escAttr(s.url) + '" target="_blank" rel="noopener">' + esc(s.title) + '</a>';
+        } else {
+          html += '<span class="source-item__broken" title="Link nicht mehr verfügbar">' + esc(s.title) + '</span>';
+        }
         if (s.publisher || s.date) {
           html += '<div class="source-item__publisher">';
           if (s.publisher) html += esc(s.publisher);

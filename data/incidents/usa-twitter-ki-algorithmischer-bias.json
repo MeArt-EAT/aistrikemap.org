@@ -21,13 +21,26 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["discrimination", "political-pressure", "data-misuse"],
-  "asm:affectedRights": ["Meinungsfreiheit", "Recht auf Gleichbehandlung", "Informationsfreiheit", "demokratische Teilhabe"],
+  "asm:incidentType": [
+    "discrimination",
+    "political-pressure",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Recht auf Gleichbehandlung",
+    "Informationsfreiheit",
+    "demokratische Teilhabe"
+  ],
   "asm:actors": [
     {
       "name": "Twitter/X",
       "type": "company",
-      "asm:systems": ["Twitter-Empfehlungsalgorithmus", "For-You-Feed", "Trend-Algorithmus"]
+      "asm:systems": [
+        "Twitter-Empfehlungsalgorithmus",
+        "For-You-Feed",
+        "Trend-Algorithmus"
+      ]
     }
   ],
   "asm:severity": 3,
@@ -38,28 +51,32 @@
       "phase": "infrastructure",
       "title": "Interne Twitter-Forschung dokumentiert algorithmischen Bias",
       "description": "Twitter-eigene Forscher stellen fest, dass der Empfehlungsalgorithmus politisch rechte Inhalte in sieben von acht untersuchten Laendern staerker verbreitet als linke. Die Ergebnisse werden intern dokumentiert, aber keine strukturellen Korrekturen eingeleitet. Entsprechende Berichte bleiben unveroffentlicht.",
-      "sources": ["https://blog.twitter.com/en_us/topics/company/2021/rml-politicalcontent"]
+      "sources": [
+        "https://blog.twitter.com/en_us/topics/company/2021/rml-politicalcontent"
+      ]
     },
     {
       "date": "2022-10",
       "phase": "doctrine",
       "title": "Musk-Uebernahme und selektive Algorithmus-Offenlegung",
       "description": "Nach dem Kauf von Twitter durch Elon Musk fuer 44 Milliarden Dollar werden Teile des Quellcodes veroeffentlicht. Die Offenlegung ist jedoch unvollstaendig und erlaubt keine unabhaengige Pruefung der vollstaendigen algorithmischen Entscheidungskette. Kritische interne Forschungsdokumente werden nicht veroffentlicht.",
-      "sources": ["https://www.theguardian.com/technology/2023/mar/31/twitter-releases-algorithm-elon-musk"]
+      "sources": []
     },
     {
       "date": "2023-03",
       "phase": "event",
       "title": "PNAS-Studie bestaetigt politische Verstaerkungsverzerrung",
       "description": "Eine Studie der Proceedings of the National Academy of Sciences analysiert Milliarden von Tweets und bestaetigt, dass Twitters Algorithmus konservative Politiker und Medien systematisch ueberproportional verstaerkt. Aehnliche Muster zeigen sich in Deutschland, Japan, Grossbritannien und Kanada. Die Plattform bestreitet systematische Absicht.",
-      "sources": ["https://www.pnas.org/doi/10.1073/pnas.2025334118"]
+      "sources": [
+        "https://www.pnas.org/doi/10.1073/pnas.2025334118"
+      ]
     },
     {
       "date": "2023-07",
       "phase": "consequences",
       "title": "Anhaltende Verzerrung und fehlende Rechenschaftspflicht",
       "description": "Trotz oeffentlicher Diskussion und Regulierungsdruck in der EU bleibt eine unabhaengige Pruefung des Algorithmus verweigert. Forscher und zivilgesellschaftliche Organisationen fordern algorithmische Transparenz als gesetzliche Pflicht. Der EU Digital Services Act verpflichtet Twitter/X ab 2024 zu erweiterten Audits.",
-      "sources": ["https://www.eff.org/deeplinks/2023/04/twitters-algorithm-transparency-doesnt-mean-accountability"]
+      "sources": []
     }
   ],
   "asm:sources": [
@@ -78,18 +95,18 @@
       "type": "corporate-report"
     },
     {
-      "url": "https://www.theguardian.com/technology/2023/mar/31/twitter-releases-algorithm-elon-musk",
       "title": "Twitter releases algorithm amid claims of political bias",
       "publisher": "The Guardian",
       "date": "2023-03-31",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.theguardian.com/technology/2023/mar/31/twitter-releases-algorithm-elon-musk"
     },
     {
-      "url": "https://www.eff.org/deeplinks/2023/04/twitters-algorithm-transparency-doesnt-mean-accountability",
       "title": "Twitter's Algorithm: Transparency Doesn't Mean Accountability",
       "publisher": "Electronic Frontier Foundation",
       "date": "2023-04-05",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.eff.org/deeplinks/2023/04/twitters-algorithm-transparency-doesnt-mean-accountability"
     }
   ],
   "asm:metadata": {

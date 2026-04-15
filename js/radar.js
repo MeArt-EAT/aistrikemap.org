@@ -306,7 +306,11 @@ const Radar = (function () {
       sources.forEach(function (src) {
         var perspective = src['asm:perspective'] || 'unklar';
         html += '<li class="source-item">';
-        html += '<a href="' + escAttr(src.url) + '" target="_blank" rel="noopener">' + esc(src.title) + '</a>';
+        if (src.url) {
+          html += '<a href="' + escAttr(src.url) + '" target="_blank" rel="noopener">' + esc(src.title) + '</a>';
+        } else {
+          html += '<span class="source-item__broken" title="Link nicht mehr verfügbar">' + esc(src.title) + '</span>';
+        }
         html += ' <span class="perspective-badge perspective-badge--' + perspective + '">' + esc(I18n.t('radar.perspective.' + perspective)) + '</span>';
         if (src.publisher || src.date) {
           html += '<div class="source-item__publisher">';

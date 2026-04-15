@@ -21,18 +21,33 @@
       "addressCountry": "JO"
     }
   },
-  "asm:incidentType": ["surveillance", "political-pressure"],
-  "asm:affectedRights": ["Recht auf Privatsphare", "Pressefreiheit", "Meinungsfreiheit", "Schutz vor willkurlicher Uberwachung", "Recht auf rechtliche Vertretung"],
+  "asm:incidentType": [
+    "surveillance",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphare",
+    "Pressefreiheit",
+    "Meinungsfreiheit",
+    "Schutz vor willkurlicher Uberwachung",
+    "Recht auf rechtliche Vertretung"
+  ],
   "asm:actors": [
     {
       "name": "Jordanische Regierung",
       "type": "government",
-      "asm:systems": ["Pegasus-Einsatz", "Staatliche Uberwachungsinfrastruktur"]
+      "asm:systems": [
+        "Pegasus-Einsatz",
+        "Staatliche Uberwachungsinfrastruktur"
+      ]
     },
     {
       "name": "NSO Group",
       "type": "company",
-      "asm:systems": ["Pegasus", "Zero-Click-Exploit-Infrastruktur"]
+      "asm:systems": [
+        "Pegasus",
+        "Zero-Click-Exploit-Infrastruktur"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -43,37 +58,39 @@
       "phase": "infrastructure",
       "title": "Erste dokumentierte Targting-Operationen in Jordanien",
       "description": "Citizen Lab weist erste Spuren von Pegasus-Infrastruktur nach, die jordanischen Zivile betrifft. Jordanien gilt als enger Verbundeter westlicher Staaten und erhalt Zugang zu Pegasus-Lizenzierung durch NSO Group. Betroffene sind Journalisten, die uber Themen wie Wirtschaftskorruption und politische Opposition berichten, sowie Anwaltschaft, die politisch Verfolgte vertritt.",
-      "sources": ["https://citizenlab.ca/2022/04/project-torogoz/"]
+      "sources": []
     },
     {
       "date": "2022-04",
       "phase": "doctrine",
       "title": "Citizen Lab und Front Line Defenders enthullen 35 Opfer",
       "description": "Ein gemeinsamer Bericht von Citizen Lab und Front Line Defenders veroffentlicht forensische Beweise fur Pegasus-Infektionen auf Geraten von 35 Journalisten, Menschenrechtsverteidigern und Anwaltschaft in Jordanien. Darunter befinden sich Mitarbeitende fuhrende Nachrichtenportale und Mitglieder der jordanischen Anwaltskammer. NSO Group bestreitet Missbrauch; Jordanien gibt keine Stellungnahme ab.",
-      "sources": ["https://citizenlab.ca/2022/04/project-torogoz/"]
+      "sources": []
     },
     {
       "date": "2022-12",
       "phase": "event",
       "title": "Weitere Enthullungen: Anwaltschaft und Gewerkschaftsfuhrer betroffen",
       "description": "Zusatzliche forensische Analysen zeigen, dass auch der Vorsitzende der jordanischen Anwaltskammer und Gewerkschaftsvertreter mit Pegasus uberwacht wurden. Die Angriffe nutzten Zero-Click-Exploits, die keine Interaktion des Opfers erfordern und keine sichtbaren Spuren hinterlassen. Das Uberwachungsmuster deutet auf koordinierten staatlichen Einsatz gegen Personen hin, die rechtliche Herausforderungen oder politischen Widerstand organisieren.",
-      "sources": ["https://www.frontlinedefenders.org/en/location/jordan"]
+      "sources": [
+        "https://www.frontlinedefenders.org/en/location/jordan"
+      ]
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "Access Now bestatigt weitere Opfer — keine Rechenschaftspflicht",
       "description": "Access Now veroffentlicht 2023 Berichte, die weitere jordanische Pegasus-Opfer bestatigen, darunter Frauen-Rechtsaktivisten und Medienvertreter. Jordanien steht unter internationalem Druck, Ermittlungen einzuleiten, reagiert jedoch nicht. NSO Group erklart, ausschliesslich an staatlich geprufte Kunden zu verkaufen. Eine gerichtliche oder parlamentarische Aufarbeitung in Jordanien findet nicht statt. Die Falle werden Teil der globalen Debatte uber Regulierung kommerzieller Spyware.",
-      "sources": ["https://accessnow.org/pegasus-jordan-2023/"]
+      "sources": []
     }
   ],
   "asm:sources": [
     {
-      "url": "https://citizenlab.ca/2022/04/project-torogoz/",
       "title": "Project Torogoz: Extensive Hacking of Media and Civil Society in El Salvador (mit Jordanien-Abschnitt)",
       "publisher": "Citizen Lab, Universitat Toronto",
       "date": "2022-04-06",
-      "type": "research-paper"
+      "type": "research-paper",
+      "asm:brokenUrl": "https://citizenlab.ca/2022/04/project-torogoz/"
     },
     {
       "url": "https://www.frontlinedefenders.org/en/location/jordan",
@@ -83,18 +100,18 @@
       "type": "ngo-report"
     },
     {
-      "url": "https://accessnow.org/pegasus-jordan-2023/",
       "title": "Pegasus in Jordan: Journalists and Activists Under Attack",
       "publisher": "Access Now",
       "date": "2023",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://accessnow.org/pegasus-jordan-2023/"
     },
     {
-      "url": "https://www.hrw.org/news/2022/07/18/jordan-crackdown-peaceful-dissent",
       "title": "Jordan: Crackdown on Peaceful Dissent",
       "publisher": "Human Rights Watch",
       "date": "2022-07-18",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.hrw.org/news/2022/07/18/jordan-crackdown-peaceful-dissent"
     }
   ],
   "asm:metadata": {

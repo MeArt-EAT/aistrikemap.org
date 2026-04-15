@@ -21,18 +21,32 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["discrimination", "data-misuse"],
-  "asm:affectedRights": ["Recht auf Gesundheitsversorgung", "Recht auf Gleichbehandlung", "Recht auf Leben", "Schutz vor rassistischer Diskriminierung"],
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Gesundheitsversorgung",
+    "Recht auf Gleichbehandlung",
+    "Recht auf Leben",
+    "Schutz vor rassistischer Diskriminierung"
+  ],
   "asm:actors": [
     {
       "name": "Optum (UnitedHealth Group)",
       "type": "company",
-      "asm:systems": ["Optum-Risikobewertungsalgorithmus", "Population Health Management Tool"]
+      "asm:systems": [
+        "Optum-Risikobewertungsalgorithmus",
+        "Population Health Management Tool"
+      ]
     },
     {
       "name": "US-amerikanische Krankenhaeuser und Krankenversicherer",
       "type": "organization",
-      "asm:systems": ["Algorithmusbasierte Ressourcenzuteilung", "Electronic Health Record Systeme"]
+      "asm:systems": [
+        "Algorithmusbasierte Ressourcenzuteilung",
+        "Electronic Health Record Systeme"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -43,28 +57,34 @@
       "phase": "infrastructure",
       "title": "Optum-Algorithmus wird in US-Krankenhaeusern eingesetzt",
       "description": "Der von Optum entwickelte Algorithmus zur Identifikation von Hochrisikapatienten wird von Hunderten von US-Krankenhaeusern und Versicherern eingesetzt. Das System priorisiert Patienten fuer intensive Betreuungsprogramme auf Basis historischer Gesundheitsausgaben. Das Design-Versaehen — Kosten als Proxy fuer Bedarf — wird nicht oeffentlich kommuniziert oder intern hinterfragt.",
-      "sources": ["https://www.science.org/doi/10.1126/science.aax2342"]
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.aax2342"
+      ]
     },
     {
       "date": "2019-10",
       "phase": "doctrine",
       "title": "Science-Studie von Obermeyer et al. deckt systemischen Bias auf",
       "description": "Forscher um Ziad Obermeyer veroffentlichen in Science eine bahnbrechende Analyse, die zeigt: Bei gleichem tatsaechlichem Gesundheitszustand werden schwarze Patienten vom Algorithmus als weniger krank eingestuft als weisse Patienten. Der Grund ist, dass das System Kosten als Proxy verwendet, nicht tatsaechlichen Bedarf. Auf denselben Risikowert kommen schwarze Patienten mit im Durchschnitt weitaus mehr chronischen Erkrankungen als weisse.",
-      "sources": ["https://www.science.org/doi/10.1126/science.aax2342"]
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.aax2342"
+      ]
     },
     {
       "date": "2019-10",
       "phase": "event",
       "title": "Schätzung: 200 Millionen Menschen jaehrlich von Bias betroffen",
       "description": "Die Forscher schaetzen, dass der Algorithmus oder aechnliche Systeme jaehrlich Entscheidungen fuer bis zu 200 Millionen US-Patienten beeinflusst. Optum und Krankenhaus-Partner bestreiten, ethnische Daten im Modell direkt verwendet zu haben, erkennen aber an, dass der Proxy 'Kosten' rassistisch verzerrt wirkt. STAT News und ProPublica berichten grossflaechig ueber den Fall.",
-      "sources": ["https://www.statnews.com/2019/10/24/racial-bias-in-health-care-algorithm/"]
+      "sources": []
     },
     {
       "date": "2020-06",
       "phase": "consequences",
       "title": "Branchenreformen und anhaltende strukturelle Probleme",
       "description": "Optum kuendigt Aenderungen am Algorithmus an. Mehrere Krankenhaeuser verpflichten sich zu Audits ihrer KI-Systeme. Das US-Gesundheitsministerium und der Kongress starten Anhoerungen zu KI-Bias im Gesundheitswesen. Kritiker betonen, dass struktureller Rassismus in Gesundheitsdaten durch algorithmische Korrekturen allein nicht beseitigt werden kann und umfassende Reformen benoetigt werden.",
-      "sources": ["https://www.healthaffairs.org/doi/10.1377/hlthaff.2020.00128"]
+      "sources": [
+        "https://www.healthaffairs.org/doi/10.1377/hlthaff.2020.00128"
+      ]
     }
   ],
   "asm:sources": [
@@ -76,11 +96,11 @@
       "type": "academic-paper"
     },
     {
-      "url": "https://www.statnews.com/2019/10/24/racial-bias-in-health-care-algorithm/",
       "title": "Racial bias in a medical algorithm favors white patients over sicker black patients",
       "publisher": "STAT News",
       "date": "2019-10-24",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.statnews.com/2019/10/24/racial-bias-in-health-care-algorithm/"
     },
     {
       "url": "https://www.healthaffairs.org/doi/10.1377/hlthaff.2020.00128",
@@ -90,11 +110,11 @@
       "type": "academic-paper"
     },
     {
-      "url": "https://www.propublica.org/article/bias-in-criminal-risk-scores-is-mathematically-inevitable",
       "title": "Machine Bias in Healthcare Algorithms",
       "publisher": "ProPublica",
       "date": "2019-11",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.propublica.org/article/bias-in-criminal-risk-scores-is-mathematically-inevitable"
     }
   ],
   "asm:metadata": {

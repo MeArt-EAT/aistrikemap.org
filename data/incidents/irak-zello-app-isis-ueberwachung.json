@@ -13,7 +13,7 @@
     "name": "Mossul, Irak",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 36.3350,
+      "latitude": 36.335,
       "longitude": 43.1189
     },
     "address": {
@@ -21,18 +21,36 @@
       "addressCountry": "IQ"
     }
   },
-  "asm:incidentType": ["military-ai", "surveillance", "censorship"],
-  "asm:affectedRights": ["Recht auf Leben", "Recht auf Privatsphäre", "Meinungsfreiheit", "Schutz der Zivilbevoelkerung", "Recht auf faires Verfahren"],
+  "asm:incidentType": [
+    "military-ai",
+    "surveillance",
+    "censorship"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Recht auf Privatsphäre",
+    "Meinungsfreiheit",
+    "Schutz der Zivilbevoelkerung",
+    "Recht auf faires Verfahren"
+  ],
   "asm:actors": [
     {
       "name": "ISIS / Islamischer Staat",
       "type": "organization",
-      "asm:systems": ["Social-Media-Propaganda-Netzwerk", "Zello", "verschluesselte Messenger"]
+      "asm:systems": [
+        "Social-Media-Propaganda-Netzwerk",
+        "Zello",
+        "verschluesselte Messenger"
+      ]
     },
     {
       "name": "US-gefuehrte Koalition",
       "type": "military",
-      "asm:systems": ["SKYFALL", "MAVEN (Project Maven)", "Predator-Drohnen-KI"]
+      "asm:systems": [
+        "SKYFALL",
+        "MAVEN (Project Maven)",
+        "Predator-Drohnen-KI"
+      ]
     }
   ],
   "asm:severity": 5,
@@ -43,28 +61,32 @@
       "phase": "infrastructure",
       "title": "ISIS baut digitale Propaganda- und Rekrutierungsinfrastruktur auf",
       "description": "ISIS entwickelt eine der bis dahin ausgefeiltesten digitalen Medienkampagnen nichtstaatlicher Akteure. Ueber Twitter, Facebook, YouTube und spezialisierte Apps wie Zello werden Hunderttausende Propagandainhalte verbreitet. Verschluesselte Kommunikationstools ermoglichen sichere Koordination. Die Koalition beginnt mit KI-gestuetzter Social-Media-Analyse zur Identifikation von Kommandoketten.",
-      "sources": ["https://www.rand.org/pubs/research_reports/RR2462.html"]
+      "sources": [
+        "https://www.rand.org/pubs/research_reports/RR2462.html"
+      ]
     },
     {
       "date": "2015-2016",
       "phase": "doctrine",
       "title": "KI-gestuetzte Zielerfassung und Counter-Messaging",
       "description": "Die US-Koalition setzt KI-Algorithmen zur Analyse von ISIS-Social-Media-Aktivitaeten ein, um Fuehrungspersonen zu identifizieren und zu lokalisieren. Plattformen wie Twitter und Facebook loeschen unter Druck massenhaft ISIS-Accounts. Kritiker warnen, dass automatische Loeschalgorithmen auch Berichte von Menschenrechtsorganisationen und Zeugenaussagen von Greueltaten erfassen und so wichtige Beweise vernichten.",
-      "sources": ["https://www.brookings.edu/research/countering-violent-extremism-on-social-media/"]
+      "sources": []
     },
     {
       "date": "2016-2017",
       "phase": "event",
       "title": "Mossul-Offensive: Algorithmische Zielerfassung und zivile Opfer",
       "description": "Bei der Rueckeroberung Mossuls setzt die Koalition KI-gestuetzte Systeme zur Zielauswahl ein. Amnesty International dokumentiert mindestens 1.472 zivile Todesopfer durch Koalitionsluftangriffe. Berichte zeigen, dass algorithmische Risikoabschaetzungen systematisch die Praesenz von Zivilisten unterschaetzen. ISIS nutzt in dieser Phase die verbliebene Zivilbevoelkerung als menschliche Schutzschilde, was die KI-Systeme nicht adaequat beruecksichtigen koennen.",
-      "sources": ["https://www.amnesty.org/en/documents/mde14/8367/2018/en/"]
+      "sources": []
     },
     {
       "date": "2018-2023",
       "phase": "consequences",
       "title": "Debatte ueber KI in der Kriegsfuehrung und Plattformverantwortung",
       "description": "Der ISIS-Konflikt wird zum Testlabor fuer KI in der Kriegsfuehrung und fuer die Moderationsverantwortung von Plattformen. Berichte belegen, dass automatische Loeschalgorithmen dokumentarische Beweise fuer Kriegsverbrechen zerstoert haben. Project Maven, das Drohnenzielerkennung nutzte, wird intern bei Google kontrovers diskutiert und fuehrt zu kuendigung von Mitarbeitern. Die Debatte ueber letale autonome Waffensysteme und internationale Regulierung intensiviert sich.",
-      "sources": ["https://www.rand.org/pubs/research_reports/RR2462.html"]
+      "sources": [
+        "https://www.rand.org/pubs/research_reports/RR2462.html"
+      ]
     }
   ],
   "asm:sources": [
@@ -76,18 +98,18 @@
       "type": "research-paper"
     },
     {
-      "url": "https://www.brookings.edu/research/countering-violent-extremism-on-social-media/",
       "title": "Countering Violent Extremism on Social Media",
       "publisher": "Brookings Institution",
       "date": "2017",
-      "type": "research-paper"
+      "type": "research-paper",
+      "asm:brokenUrl": "https://www.brookings.edu/research/countering-violent-extremism-on-social-media/"
     },
     {
-      "url": "https://www.amnesty.org/en/documents/mde14/8367/2018/en/",
       "title": "At Any Cost: The Civilian Catastrophe in West Mosul",
       "publisher": "Amnesty International",
       "date": "2018",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.amnesty.org/en/documents/mde14/8367/2018/en/"
     }
   ],
   "asm:metadata": {

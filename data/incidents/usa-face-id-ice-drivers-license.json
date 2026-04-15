@@ -21,13 +21,26 @@
       "addressCountry": "US"
     }
   },
-  "asm:incidentType": ["facial-recognition", "surveillance", "discrimination"],
-  "asm:affectedRights": ["Recht auf Privatsphäre", "Schutz vor willkuerlicher Verhaftung", "Recht auf faires Verfahren", "Schutz vor Diskriminierung", "Recht auf informationelle Selbstbestimmung"],
+  "asm:incidentType": [
+    "facial-recognition",
+    "surveillance",
+    "discrimination"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Schutz vor willkuerlicher Verhaftung",
+    "Recht auf faires Verfahren",
+    "Schutz vor Diskriminierung",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
   "asm:actors": [
     {
       "name": "ICE (Immigration and Customs Enforcement)",
       "type": "government",
-      "asm:systems": ["Gesichtserkennungssystem", "Datenbankabfragen DMV"]
+      "asm:systems": [
+        "Gesichtserkennungssystem",
+        "Datenbankabfragen DMV"
+      ]
     },
     {
       "name": "Staatliche Fuehrerscheinbehoerden (DMVs)",
@@ -36,7 +49,9 @@
     {
       "name": "Clearview AI",
       "type": "company",
-      "asm:systems": ["Clearview AI Gesichtserkennung"]
+      "asm:systems": [
+        "Clearview AI Gesichtserkennung"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -47,28 +62,32 @@
       "phase": "infrastructure",
       "title": "Heimlicher Zugriff auf Fuehrerscheindatenbanken etabliert",
       "description": "ICE und das FBI bauen heimlich Abkommen mit staatlichen Fuehrerscheinbehoerden (DMVs) auf, die einen direkten Zugriff auf Bilder aus Fuehrerschein-Datenbanken ermoglichen. Mindestens 21 Bundesstaaten stellen ihre Datenbanken fuer Gesichtserkennungssuchen zur Verfuegung. Weder Gesetzgeber noch Buerger werden informiert. Gleichzeitig erwirbt ICE Lizenzen fuer kommerzielle Gesichtserkennungsdienste wie Clearview AI.",
-      "sources": ["https://www.aclu.org/news/privacy-technology/ice-and-fbi-use-dmv-photos-in-facial-recognition-searches"]
+      "sources": []
     },
     {
       "date": "2019-07",
       "phase": "doctrine",
       "title": "Georgetown-Studie enthullt systematischen verfassungswidrigen Einsatz",
       "description": "Das Center on Privacy & Technology der Georgetown Law School veroeffentlicht den Bericht 'America Under Watch', der zeigt, dass das Gesicht eines von zwei Amerikanern in Gesichtserkennungsdatenbanken gespeichert ist. Der Bericht dokumentiert, dass ICE und FBI ohne richterliche Genehmigung oder gesetzliche Grundlage auf Fuehrerscheindaten zugreifen — ein beispielloser Eingriff in die Privatsphaeree von uber 100 Millionen Menschen.",
-      "sources": ["https://www.perpetuallineup.org/"]
+      "sources": [
+        "https://www.perpetuallineup.org/"
+      ]
     },
     {
       "date": "2020",
       "phase": "event",
       "title": "GAO-Bericht bestaetigt: Keine Aufsicht, keine Standards",
       "description": "Das Government Accountability Office (GAO) veroeffentlicht einen Bericht, der bestaetigt, dass weder FBI noch ICE ausreichende Kontrollen ueber ihre Gesichtserkennungssysteme haben. Die Fehlerquote bei Angehoerigen ethnischer Minderheiten ist signifikant hoher. Mehrere Bundesstaaten, die kooperiert hatten, ziehen nach oeffentlichem Druck ihre Genehmigungen zurueck. Oregon und California verbieten ICE den Datenbankzugang.",
-      "sources": ["https://www.gao.gov/products/gao-21-518"]
+      "sources": [
+        "https://www.gao.gov/products/gao-21-518"
+      ]
     },
     {
       "date": "2021-2023",
       "phase": "consequences",
       "title": "Keine Strafverfolgung, partielle Reformen, anhaltende Praxis",
       "description": "Trotz klarer Dokumentation des rechtswidrigen Vorgehens werden keine ICE-Beamten zur Rechenschaft gezogen. Kongress-Anhoerungen fordern Gesetzgebung, die jedoch ausbleibt. Die ACLU reicht in mehreren Bundesstaaten Klagen ein. Einige Bundesstaaten erlassen Gesetze, die Gesichtserkennungssuchen durch Einwanderungsbehoerden einschraenken. Die Praxis setzt sich in Bundesstaaten ohne explizite Verbote fort.",
-      "sources": ["https://www.aclu.org/news/privacy-technology/ice-and-fbi-use-dmv-photos-in-facial-recognition-searches"]
+      "sources": []
     }
   ],
   "asm:sources": [
@@ -87,11 +106,11 @@
       "type": "government-document"
     },
     {
-      "url": "https://www.aclu.org/news/privacy-technology/ice-and-fbi-use-dmv-photos-in-facial-recognition-searches",
       "title": "ICE and FBI Use DMV Photos in Facial Recognition Searches",
       "publisher": "ACLU",
       "date": "2020",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.aclu.org/news/privacy-technology/ice-and-fbi-use-dmv-photos-in-facial-recognition-searches"
     }
   ],
   "asm:metadata": {

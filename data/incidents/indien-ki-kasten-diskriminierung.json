@@ -13,7 +13,7 @@
     "name": "Mumbai, Indien",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 19.0760,
+      "latitude": 19.076,
       "longitude": 72.8777
     },
     "address": {
@@ -21,18 +21,32 @@
       "addressCountry": "IN"
     }
   },
-  "asm:incidentType": ["discrimination", "labor-exploitation"],
-  "asm:affectedRights": ["Recht auf Gleichbehandlung", "Diskriminierungsschutz", "Recht auf Arbeit", "Recht auf wirtschaftliche Teilhabe"],
+  "asm:incidentType": [
+    "discrimination",
+    "labor-exploitation"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Gleichbehandlung",
+    "Diskriminierungsschutz",
+    "Recht auf Arbeit",
+    "Recht auf wirtschaftliche Teilhabe"
+  ],
   "asm:actors": [
     {
       "name": "Indische Technologieunternehmen",
       "type": "company",
-      "asm:systems": ["KI-Bewerbungsscreening", "automatisierte Personalentscheidungssysteme"]
+      "asm:systems": [
+        "KI-Bewerbungsscreening",
+        "automatisierte Personalentscheidungssysteme"
+      ]
     },
     {
       "name": "Finanzinstitutionen",
       "type": "company",
-      "asm:systems": ["KI-Kreditbewertungssysteme", "automatisierte Kreditentscheidungsalgorithmen"]
+      "asm:systems": [
+        "KI-Kreditbewertungssysteme",
+        "automatisierte Kreditentscheidungsalgorithmen"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -43,28 +57,36 @@
       "phase": "infrastructure",
       "title": "Ausbreitung von KI-Einstellungssystemen im indischen Technologiesektor",
       "description": "Indische IT-Unternehmen und Start-ups adoptieren in rasantem Tempo KI-gestutzte Bewerbungsmanagementsysteme aus dem internationalen Markt sowie eigene Entwicklungen. Diese Systeme werden mit historischen Einstellungsdaten trainiert, die die gesellschaftliche Ungleichheit der Vergangenheit widerspiegeln. Equality Labs und andere Organisationen beginnen, Beschwerden von Dalit-Bewerbern zu dokumentieren.",
-      "sources": ["https://www.equalitylabs.org/"]
+      "sources": [
+        "https://www.equalitylabs.org/"
+      ]
     },
     {
       "date": "2021-05",
       "phase": "doctrine",
       "title": "Wissenschaftliche Studien belegen algorithmische Kastendiskriminierung",
       "description": "Forscher des IIT und internationaler Universitaten veroffentlichen Studien, die zeigen, wie Proxy-Variablen in KI-Systemen als Indikatoren fur Kastenzugehorigkeit fungieren. Namen, Heimatstadte, besuchte Bildungseinrichtungen und soziale Netzwerke werden als Merkmale verwendet, die hoch mit der Kastenzugehorigkeit korrelieren. Kreditvergabe-Algorithmen benachteiligen Antragsteller aus Dalit-Gemeinschaften bei gleicher Bonitat.",
-      "sources": ["https://www.equalitylabs.org/"]
+      "sources": [
+        "https://www.equalitylabs.org/"
+      ]
     },
     {
       "date": "2022-08",
       "phase": "event",
       "title": "Dokumentierte Benachteiligung von Dalits in der Technologiebranche",
       "description": "Umfangreiche Berichte zeigen, dass Dalits im indischen Technologiesektor trotz vergleichbarer Qualifikationen deutlich schlechtere Chancen haben. Bei Kreditvergabe-Algorithmen werden Bewohner bestimmter Stadtteile — die historisch von Dalit-Gemeinschaften bewohnt werden — systematisch schlechter bewertet. Die Diskriminierung ist statistisch nachweisbar, aber rechtlich schwer greifbar, da Kaste formal nicht als Merkmal genutzt wird.",
-      "sources": ["https://www.equalitylabs.org/"]
+      "sources": [
+        "https://www.equalitylabs.org/"
+      ]
     },
     {
       "date": "2023-11",
       "phase": "consequences",
       "title": "Politische Diskussionen ohne verbindliche Regulierung",
       "description": "Indische Regulierungsbehorden beginnen, die Frage algorithmischer Diskriminierung im Kontext des geplanten Digital India Act zu diskutieren. Zivilgesellschaftliche Organisationen fordern verpflichtende Audits fur KI-Systeme auf Kastendiskriminierung. Bisher fehlen verbindliche gesetzliche Regelungen. Internationale Technologieunternehmen mit Indien-Geschafts stehen unter wachsendem Druck.",
-      "sources": ["https://www.equalitylabs.org/"]
+      "sources": [
+        "https://www.equalitylabs.org/"
+      ]
     }
   ],
   "asm:sources": [
@@ -83,11 +105,11 @@
       "type": "ngo-report"
     },
     {
-      "url": "https://www.accessnow.org/digital-rights-india/",
       "title": "Digital Rights and Discrimination in India",
       "publisher": "Access Now",
       "date": "2022",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.accessnow.org/digital-rights-india/"
     }
   ],
   "asm:metadata": {

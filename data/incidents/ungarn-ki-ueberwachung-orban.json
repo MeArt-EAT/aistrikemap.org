@@ -21,18 +21,32 @@
       "addressCountry": "HU"
     }
   },
-  "asm:incidentType": ["surveillance", "political-pressure"],
-  "asm:affectedRights": ["Pressefreiheit", "Recht auf Privatsphäre", "Meinungsfreiheit", "Recht auf faires Verfahren", "Politische Teilhabe"],
+  "asm:incidentType": [
+    "surveillance",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [
+    "Pressefreiheit",
+    "Recht auf Privatsphäre",
+    "Meinungsfreiheit",
+    "Recht auf faires Verfahren",
+    "Politische Teilhabe"
+  ],
   "asm:actors": [
     {
       "name": "Ungarische Regierung (Fidesz)",
       "type": "government",
-      "asm:systems": ["Pegasus", "Soziale-Medien-Ueberwachung"]
+      "asm:systems": [
+        "Pegasus",
+        "Soziale-Medien-Ueberwachung"
+      ]
     },
     {
       "name": "NSO Group",
       "type": "company",
-      "asm:systems": ["Pegasus Spyware"]
+      "asm:systems": [
+        "Pegasus Spyware"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -43,51 +57,53 @@
       "phase": "infrastructure",
       "title": "Ausbau der Ueberwachungsinfrastruktur und Medienkontrolle",
       "description": "Die ungarische Regierung baut systematisch ihre Ueberwachungskapazitaeten aus und erwirbt Pegasus von der israelischen NSO Group. Gleichzeitig werden kritische Medien durch wirtschaftlichen Druck und Lizenzentzug geschwaeacht. Staatstreue Oligarchen uebernehmen Medienunternehmen. Die rechtliche Grundlage fuer Geheimdienstoperationen wird durch neue Gesetze erweitert.",
-      "sources": ["https://www.citizenlab.ca/2021/07/nso-group-pegasus-project/"]
+      "sources": []
     },
     {
       "date": "2021-07",
       "phase": "doctrine",
       "title": "Pegasus Project enthullt ungarische Ziellisten",
       "description": "Das internationale Recherchekonsortium Pegasus Project veroeffentlicht eine Liste von rund 50.000 potenziellen Ueberwachungszielen weltweit. Unter den ungarischen Zielen befinden sich fuenf Journalisten, darunter Mitarbeiter des Investigativmediums Direkt36, sowie Anwaelte und ein oppositionsnaher Geschaftsmann. Forensische Analysen von Amnesty Tech bestaetigen aktive Pegasus-Infektionen auf mehreren Geraeten.",
-      "sources": ["https://direkt36.hu/en/pegasus-project/"]
+      "sources": []
     },
     {
       "date": "2021-09",
       "phase": "event",
       "title": "Parlamentarische Untersuchung und Leugnung durch Regierung",
       "description": "Das ungarische Parlament lehnt eine unabhaengige Untersuchung des Pegasus-Einsatzes ab. Regierungsvertreter bestreiten gezielten Missbrauch und berufen sich auf nationale Sicherheitsinteressen. Das EU-Parlament richtet einen Untersuchungsausschuss (PEGA) ein, der Ungarn als schwerwiegendsten Fall innerhalb der EU einstuft. Betroffene Journalisten berichten von Selbstzensur und Einschuchterung.",
-      "sources": ["https://www.europarl.europa.eu/committees/de/pega/home"]
+      "sources": []
     },
     {
       "date": "2022-2023",
       "phase": "consequences",
       "title": "EU-Verfahren und fehlende Konsequenzen im Inland",
       "description": "Der EU-PEGA-Ausschuss empfiehlt 2022 rechtliche Schritte gegen Ungarn und Polen wegen des Pegasus-Einsatzes. Die Europaeische Kommission knuepft Teile der Strukturfondszahlungen an Rechtsstaatlichkeitsreformen. In Ungarn selbst bleibt die Straflosigkeit bestehen: Keine Strafverfolgung, keine parlamentarische Kontrolle. Betroffene Journalisten reichen Klage beim Europaeischen Gerichtshof fuer Menschenrechte ein.",
-      "sources": ["https://www.hrw.org/world-report/2023/country-chapters/hungary"]
+      "sources": [
+        "https://www.hrw.org/world-report/2023/country-chapters/hungary"
+      ]
     }
   ],
   "asm:sources": [
     {
-      "url": "https://direkt36.hu/en/pegasus-project/",
       "title": "Hungarian journalists and lawyers were targeted with Pegasus spyware",
       "publisher": "Direkt36",
       "date": "2021-07-18",
-      "type": "investigative-report"
+      "type": "investigative-report",
+      "asm:brokenUrl": "https://direkt36.hu/en/pegasus-project/"
     },
     {
-      "url": "https://www.citizenlab.ca/2021/07/nso-group-pegasus-project/",
       "title": "Pegasus Project: Citizen Lab confirms targets",
       "publisher": "Citizen Lab",
       "date": "2021-07",
-      "type": "research-paper"
+      "type": "research-paper",
+      "asm:brokenUrl": "https://www.citizenlab.ca/2021/07/nso-group-pegasus-project/"
     },
     {
-      "url": "https://www.europarl.europa.eu/committees/de/pega/home",
       "title": "PEGA Ausschuss: Untersuchung des Pegasus-Einsatzes in EU-Mitgliedsstaaten",
       "publisher": "Europaeisches Parlament",
       "date": "2022",
-      "type": "government-document"
+      "type": "government-document",
+      "asm:brokenUrl": "https://www.europarl.europa.eu/committees/de/pega/home"
     },
     {
       "url": "https://www.hrw.org/world-report/2023/country-chapters/hungary",

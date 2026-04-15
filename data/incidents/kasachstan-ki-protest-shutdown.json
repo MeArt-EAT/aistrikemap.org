@@ -13,7 +13,7 @@
     "name": "Almaty, Kasachstan",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 43.2220,
+      "latitude": 43.222,
       "longitude": 76.8512
     },
     "address": {
@@ -21,18 +21,33 @@
       "addressCountry": "KZ"
     }
   },
-  "asm:incidentType": ["censorship", "surveillance", "facial-recognition"],
-  "asm:affectedRights": ["Recht auf Leben", "Versammlungsfreiheit", "Informationsfreiheit", "Recht auf Privatsphäre", "Recht auf faires Verfahren"],
+  "asm:incidentType": [
+    "censorship",
+    "surveillance",
+    "facial-recognition"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Versammlungsfreiheit",
+    "Informationsfreiheit",
+    "Recht auf Privatsphäre",
+    "Recht auf faires Verfahren"
+  ],
   "asm:actors": [
     {
       "name": "Kasachische Regierung / KNB (Komitee für Nationale Sicherheit)",
       "type": "government",
-      "asm:systems": ["Internet-Shutdown", "CCTV-Gesichtserkennung"]
+      "asm:systems": [
+        "Internet-Shutdown",
+        "CCTV-Gesichtserkennung"
+      ]
     },
     {
       "name": "Hikvision / Dahua",
       "type": "company",
-      "asm:systems": ["Überwachungskameras"]
+      "asm:systems": [
+        "Überwachungskameras"
+      ]
     }
   ],
   "asm:severity": 5,
@@ -43,28 +58,32 @@
       "phase": "event",
       "title": "Massenproteste und Internet-Shutdown",
       "description": "Proteste gegen Gaspreiserhöhungen weiten sich zu landesweiten Demonstrationen gegen die Regierung aus. Am 5. Januar schaltet die Regierung das Internet komplett ab — 19 Millionen Menschen verlieren den Zugang. Die Abschaltung verhindert die Koordination von Protesten und die Dokumentation von Gewalt durch Sicherheitskräfte.",
-      "sources": ["https://netblocks.org/reports/internet-disrupted-in-kazakhstan-amid-energy-price-protests-oy1DKj83"]
+      "sources": [
+        "https://netblocks.org/reports/internet-disrupted-in-kazakhstan-amid-energy-price-protests-oy1DKj83"
+      ]
     },
     {
       "date": "2022-01-06",
       "phase": "event",
       "title": "Schießbefehl: Mindestens 238 Tote",
       "description": "Präsident Tokajew gibt den Schießbefehl und ruft CSTO-Truppen (angeführt von Russland) ins Land. In Almaty werden Demonstranten ohne Warnung beschossen. Mindestens 238 Menschen werden getötet, tausende verletzt. Die Internet-Abschaltung verhindert, dass Beweise für das Ausmaß der Gewalt nach außen gelangen.",
-      "sources": ["https://www.hrw.org/news/2022/01/26/kazakhstan-killings-excessive-force-against-protesters"]
+      "sources": []
     },
     {
       "date": "2022-01",
       "phase": "consequences",
       "title": "Massenverhaftungen per Gesichtserkennung",
       "description": "Nach Wiederherstellung des Internets nutzen Sicherheitskräfte Überwachungsaufnahmen und Gesichtserkennung, um Protestteilnehmer nachträglich zu identifizieren. Über 12.000 Menschen werden festgenommen. Berichte von Folter und erzwungenen Geständnissen häufen sich. Das CCTV-Netzwerk von Almaty basiert auf chinesischer Technologie (Hikvision/Dahua).",
-      "sources": ["https://www.amnesty.org/en/latest/news/2022/01/kazakhstan-authorities-must-investigate-use-of-lethal-force-against-protesters/"]
+      "sources": []
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "Straflosigkeit und Ausbau der Überwachung",
       "description": "Kein Sicherheitsbeamter wird für die Tötungen strafrechtlich verfolgt. Stattdessen werden Hunderte Protestierende zu Haftstrafen verurteilt. Die Regierung baut die digitale Überwachungsinfrastruktur weiter aus. Kasachstan wird zum Modellfall für den Einsatz von Internet-Shutdowns und nachträglicher Gesichtserkennung als Repressionsinstrument.",
-      "sources": ["https://freedomhouse.org/country/kazakhstan/freedom-net/2023"]
+      "sources": [
+        "https://freedomhouse.org/country/kazakhstan/freedom-net/2023"
+      ]
     }
   ],
   "asm:sources": [
@@ -76,18 +95,18 @@
       "type": "research-paper"
     },
     {
-      "url": "https://www.hrw.org/news/2022/01/26/kazakhstan-killings-excessive-force-against-protesters",
       "title": "Kazakhstan: Killings, Excessive Force Against Protesters",
       "publisher": "Human Rights Watch",
       "date": "2022-01-26",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.hrw.org/news/2022/01/26/kazakhstan-killings-excessive-force-against-protesters"
     },
     {
-      "url": "https://www.amnesty.org/en/latest/news/2022/01/kazakhstan-authorities-must-investigate-use-of-lethal-force-against-protesters/",
       "title": "Kazakhstan: Authorities must investigate use of lethal force against protesters",
       "publisher": "Amnesty International",
       "date": "2022-01-07",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.amnesty.org/en/latest/news/2022/01/kazakhstan-authorities-must-investigate-use-of-lethal-force-against-protesters/"
     },
     {
       "url": "https://freedomhouse.org/country/kazakhstan/freedom-net/2023",

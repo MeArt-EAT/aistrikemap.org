@@ -21,13 +21,27 @@
       "addressCountry": "KP"
     }
   },
-  "asm:incidentType": ["censorship", "surveillance"],
-  "asm:affectedRights": ["Meinungsfreiheit", "Recht auf Information", "Recht auf Privatsphäre", "Recht auf freien Internetzugang", "Recht auf Leben"],
+  "asm:incidentType": [
+    "censorship",
+    "surveillance"
+  ],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Recht auf Information",
+    "Recht auf Privatsphäre",
+    "Recht auf freien Internetzugang",
+    "Recht auf Leben"
+  ],
   "asm:actors": [
     {
       "name": "Nordkoreanische Regierung (DVRK)",
       "type": "government",
-      "asm:systems": ["Kwangmyong-Intranet", "Koryolink-Mobilfunknetz", "RedStar OS", "Bowibu-Ueberwachungssystem"]
+      "asm:systems": [
+        "Kwangmyong-Intranet",
+        "Koryolink-Mobilfunknetz",
+        "RedStar OS",
+        "Bowibu-Ueberwachungssystem"
+      ]
     }
   ],
   "asm:severity": 5,
@@ -38,44 +52,46 @@
       "phase": "infrastructure",
       "title": "Einfuehrung ueberwachter Smartphones und RedStar OS",
       "description": "Nordkorea fuehrt flaechendeckend Smartphones ein, die mit dem staatlich entwickelten Betriebssystem RedStar OS ausgestattet sind. Das System protokolliert alle Nutzeraktivitaeten, markiert Dateien unsichtbar mit digitalen Wasserzeichen und meldet abweichendes Verhalten. Nur das Kwangmyong-Intranet ist zugaenglich; das globale Internet bleibt fuer normale Buerger vollstaendig gesperrt.",
-      "sources": ["https://www.bbc.co.uk/news/technology-35454514"]
+      "sources": []
     },
     {
       "date": "2017-03",
       "phase": "doctrine",
       "title": "Lumen-Analyse enthuellt das volle Ausmass der Geraetueberwachung",
       "description": "Forscher der Universitaet Hamburg analysieren erbeutete Exemplare von RedStar OS und enthuellen, dass das System eine ausgefeilte Dateimarkierungs- und Ueberwachungsfunktion besitzt. Jede Datei — Bilder, Dokumente, Videos — wird mit einer unsichtbaren Nutzer-ID versehen, um den Ursprung illegalerweise geteilter Inhalte zu identifizieren. Entfluchtete Nordkoreaner bestaetigen massive Kontrollinfrastruktur.",
-      "sources": ["https://nkpolicy.eu/north-korea-digital-surveillance/"]
+      "sources": []
     },
     {
       "date": "2020-06",
       "phase": "event",
       "title": "Verschaerfung nach Verbreitung suedkoreanischer Medien",
       "description": "Nach Berichten ueber die Verbreitung suedkoreanischer Unterhaltungsmedien (K-Pop, K-Dramen) verhaengt Nordkorea ein Gesetz mit Todesstrafe fuer den Import oder Besitz auslaendischer Medien. Augenzeugen und NK-News berichten von offentlichen Hinrichtungen wegen Filmkonsum. Die KI-gestuetzte Filterung auf Staatsgeraeten wird weiter verschaerft.",
-      "sources": ["https://www.nknews.org/2022/02/north-korea-executes-teenager-for-watching-and-distributing-south-korean-videos/"]
+      "sources": []
     },
     {
       "date": "2023-01",
       "phase": "consequences",
       "title": "Totale Informationsblockade und internationale Ohnmacht",
       "description": "Internationale Bemühungen, Informationen in nordkoreanische Haushalte zu bringen — via Ballons oder USB-Sticks — werden massiv bekaempft. Amnesty International und Human Rights Watch dokumentieren Folter und Lagerhaft fuer digitale Verstoeße. Die Vereinten Nationen sind aufgrund des chinesischen Vetos im Sicherheitsrat handlungsunfaehig. Die Ueberwachungsinfrastruktur gilt als technisch weltweit beispiellos restriktiv.",
-      "sources": ["https://www.amnesty.org/en/countries/asia-and-the-pacific/north-korea/"]
+      "sources": [
+        "https://www.amnesty.org/en/countries/asia-and-the-pacific/north-korea/"
+      ]
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.bbc.co.uk/news/technology-35454514",
       "title": "North Korea's Red Star OS: Controlling citizens through their computers",
       "publisher": "BBC News",
       "date": "2016-01-28",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.bbc.co.uk/news/technology-35454514"
     },
     {
-      "url": "https://www.nknews.org/2022/02/north-korea-executes-teenager-for-watching-and-distributing-south-korean-videos/",
       "title": "North Korea executes teenager for watching and distributing South Korean videos",
       "publisher": "NK News",
       "date": "2022-02-16",
-      "type": "news-article"
+      "type": "news-article",
+      "asm:brokenUrl": "https://www.nknews.org/2022/02/north-korea-executes-teenager-for-watching-and-distributing-south-korean-videos/"
     },
     {
       "url": "https://www.amnesty.org/en/countries/asia-and-the-pacific/north-korea/",
@@ -85,11 +101,11 @@
       "type": "ngo-report"
     },
     {
-      "url": "https://nkpolicy.eu/north-korea-digital-surveillance/",
       "title": "Digital Surveillance in North Korea",
       "publisher": "NK Policy",
       "date": "2020",
-      "type": "academic-paper"
+      "type": "academic-paper",
+      "asm:brokenUrl": "https://nkpolicy.eu/north-korea-digital-surveillance/"
     }
   ],
   "asm:metadata": {

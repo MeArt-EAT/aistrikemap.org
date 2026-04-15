@@ -21,18 +21,34 @@
       "addressCountry": "EG"
     }
   },
-  "asm:incidentType": ["surveillance", "facial-recognition", "censorship"],
-  "asm:affectedRights": ["Versammlungsfreiheit", "Meinungsfreiheit", "Recht auf Freiheit", "Recht auf faires Verfahren", "Schutz vor Folter"],
+  "asm:incidentType": [
+    "surveillance",
+    "facial-recognition",
+    "censorship"
+  ],
+  "asm:affectedRights": [
+    "Versammlungsfreiheit",
+    "Meinungsfreiheit",
+    "Recht auf Freiheit",
+    "Recht auf faires Verfahren",
+    "Schutz vor Folter"
+  ],
   "asm:actors": [
     {
       "name": "Ägyptische Regierung / NSA (National Security Agency Egypt)",
       "type": "government",
-      "asm:systems": ["CCTV-Gesichtserkennung", "DPI-System", "Sandvine PacketLogic"]
+      "asm:systems": [
+        "CCTV-Gesichtserkennung",
+        "DPI-System",
+        "Sandvine PacketLogic"
+      ]
     },
     {
       "name": "Sandvine (Blue Coat Systems)",
       "type": "company",
-      "asm:systems": ["PacketLogic"]
+      "asm:systems": [
+        "PacketLogic"
+      ]
     }
   ],
   "asm:severity": 5,
@@ -43,44 +59,46 @@
       "phase": "infrastructure",
       "title": "Militärputsch und Ausbau der Überwachungsinfrastruktur",
       "description": "Nach dem Militärputsch gegen Präsident Mursi und dem Massaker am Rabaa-Platz (mindestens 817 Tote) baut das Regime die digitale Überwachungsinfrastruktur massiv aus. Ägypten importiert DPI-Technologie von Sandvine und Überwachungskameras von chinesischen Herstellern.",
-      "sources": ["https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-used-deploy-government-spyware-turkey-redirect-egyptian-users-affiliate-ads/"]
+      "sources": []
     },
     {
       "date": "2018",
       "phase": "doctrine",
       "title": "Citizen Lab enthüllt Sandvine-DPI in Ägypten",
       "description": "Citizen Lab dokumentiert den Einsatz von Sandvine PacketLogic-Geräten in Ägypten zur Massenüberwachung und Zensur. Das System leitet Nutzer auf Phishing-Seiten um und injiziert Schadsoftware. Über 500 Websites sind blockiert, darunter Human Rights Watch, Reporters Without Borders und Al Jazeera.",
-      "sources": ["https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-used-deploy-government-spyware-turkey-redirect-egyptian-users-affiliate-ads/"]
+      "sources": []
     },
     {
       "date": "2019-09",
       "phase": "event",
       "title": "Seltene Proteste: Massenverhaftungen per digitaler Identifikation",
       "description": "Seltene Anti-Regierungsproteste werden von Sicherheitskräften mit Hilfe digitaler Überwachung unterdrückt. Über 4.000 Menschen werden in wenigen Tagen verhaftet — viele nachträglich identifiziert über Kameraaufnahmen und Social-Media-Monitoring. Menschenrechtsorganisationen berichten, dass Verhaftete mit Screenshots ihrer Social-Media-Posts konfrontiert werden.",
-      "sources": ["https://www.hrw.org/news/2019/10/15/egypt-thousands-arrested-wave-repression"]
+      "sources": []
     },
     {
       "date": "2023",
       "phase": "consequences",
       "title": "60.000 politische Gefangene — internationale Straflosigkeit",
       "description": "Menschenrechtsorganisationen schätzen über 60.000 politische Gefangene in Ägypten. Trotz der COP27-Konferenz in Scharm asch-Schaich und internationaler Aufmerksamkeit ändert sich wenig. Die EU und die USA liefern weiterhin Sicherheitstechnologie und militärische Hilfe. Ägypten wird zum Modell für den effektiven Einsatz von Überwachungstechnologie zur Unterdrückung.",
-      "sources": ["https://www.amnesty.org/en/location/middle-east-and-north-africa/egypt/"]
+      "sources": [
+        "https://www.amnesty.org/en/location/middle-east-and-north-africa/egypt/"
+      ]
     }
   ],
   "asm:sources": [
     {
-      "url": "https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-used-deploy-government-spyware-turkey-redirect-egyptian-users-affiliate-ads/",
       "title": "Bad Traffic: Sandvine's PacketLogic Devices Used to Deploy Government Spyware in Turkey, Redirect Egyptian Users to Affiliate Ads",
       "publisher": "Citizen Lab",
       "date": "2018-03-09",
-      "type": "research-paper"
+      "type": "research-paper",
+      "asm:brokenUrl": "https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-used-deploy-government-spyware-turkey-redirect-egyptian-users-affiliate-ads/"
     },
     {
-      "url": "https://www.hrw.org/news/2019/10/15/egypt-thousands-arrested-wave-repression",
       "title": "Egypt: Thousands Arrested in Wave of Repression",
       "publisher": "Human Rights Watch",
       "date": "2019-10-15",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.hrw.org/news/2019/10/15/egypt-thousands-arrested-wave-repression"
     },
     {
       "url": "https://www.amnesty.org/en/location/middle-east-and-north-africa/egypt/",

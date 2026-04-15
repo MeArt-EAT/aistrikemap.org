@@ -21,18 +21,34 @@
       "addressCountry": "CN"
     }
   },
-  "asm:incidentType": ["surveillance", "facial-recognition", "political-pressure"],
-  "asm:affectedRights": ["Pressefreiheit", "Recht auf Privatsphäre", "Meinungsfreiheit", "Bewegungsfreiheit"],
+  "asm:incidentType": [
+    "surveillance",
+    "facial-recognition",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [
+    "Pressefreiheit",
+    "Recht auf Privatsphäre",
+    "Meinungsfreiheit",
+    "Bewegungsfreiheit"
+  ],
   "asm:actors": [
     {
       "name": "Chinesische Regierung",
       "type": "government",
-      "asm:systems": ["Skynet-Ueberwachungsnetz", "Sharp Eyes-System", "KI-Gesichtserkennung an Grenzuebergaengen"]
+      "asm:systems": [
+        "Skynet-Ueberwachungsnetz",
+        "Sharp Eyes-System",
+        "KI-Gesichtserkennung an Grenzuebergaengen"
+      ]
     },
     {
       "name": "Ministerium fuer Staatssicherheit (MSS)",
       "type": "government",
-      "asm:systems": ["Journalistenueberwachungsdatenbank", "Pressekredentialssystem"]
+      "asm:systems": [
+        "Journalistenueberwachungsdatenbank",
+        "Pressekredentialssystem"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -43,44 +59,46 @@
       "phase": "infrastructure",
       "title": "Ausweitung der KI-Ueberwachung auf Pressezentren und Hotels",
       "description": "China weitet sein nationales Gesichtserkennungssystem auf Presseakkreditierungsverfahren und Hotelaufenthalte auslaendischer Journalisten aus. Der Foreign Correspondents' Club of China (FCCC) dokumentiert systematische Ueberwachung von Korrespondenten und zunehmende Einschraenkungen der Berichterstattungsfreiheit. Journalisten berichten von Schattenteams staatlicher Beobachter.",
-      "sources": ["https://www.fccc.org.hk/work-report-2019/"]
+      "sources": []
     },
     {
       "date": "2020-03",
       "phase": "doctrine",
       "title": "COVID-Pandemie als Vorwand fuer verscharfte Journalistenueberwachung",
       "description": "Unter dem Deckmantel der Pandemiebekaempfung werden auslaendische Journalisten verpflichtet, Gesundheits-Apps zu installieren, die Standortdaten sammeln. Mehrere Korrespondenten werden trotz negativer Tests unter Quarantaene gestellt. CPJ und RSF dokumentieren mindestens 18 Ausweisungen auslaendischer Journalisten in diesem Jahr.",
-      "sources": ["https://cpj.org/2020/12/2020-cpj-press-freedom-report/"]
+      "sources": []
     },
     {
       "date": "2022-02",
       "phase": "event",
       "title": "BBC-Journalist nach KI-Identifikation ausgewiesen",
       "description": "Waehrend der Olympischen Winterspiele in Peking wird der BBC-Journalist Robin Brant nach Identifikation durch Ueberwachungssysteme der Plattform verwiesen. Der FCCC-Jahresbericht 2022 dokumentiert, dass 99 Prozent der befragten Korrespondenten Behinderungen bei der Berichterstattung erlebt haben, viele davon durch automatisierte Erkennungssysteme.",
-      "sources": ["https://www.fccc.org.hk/work-report-2022/"]
+      "sources": []
     },
     {
       "date": "2023-01",
       "phase": "consequences",
       "title": "Massenausweisungen und Selbstzensur auslaendischer Medien",
       "description": "China hat seit 2020 mehr als 100 auslaendische Journalisten ausgewiesen oder ihnen die Akkreditierung verweigert. Verbleibende Korrespondenten berichten von weitreichender Selbstzensur aus Angst vor Ueberwachung. RSF stuft China auf Platz 179 von 180 im Pressefreiheitsindex ein. Die KI-Ueberwachungsinfrastruktur wird auf Hongkong und Tibet ausgedehnt.",
-      "sources": ["https://rsf.org/en/country/china"]
+      "sources": [
+        "https://rsf.org/en/country/china"
+      ]
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.fccc.org.hk/work-report-2022/",
       "title": "FCCC Working Conditions Report 2022",
       "publisher": "Foreign Correspondents' Club of China",
       "date": "2023-01-15",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.fccc.org.hk/work-report-2022/"
     },
     {
-      "url": "https://cpj.org/2020/12/2020-cpj-press-freedom-report/",
       "title": "CPJ Press Freedom Report 2020: China",
       "publisher": "Committee to Protect Journalists",
       "date": "2020-12-08",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://cpj.org/2020/12/2020-cpj-press-freedom-report/"
     },
     {
       "url": "https://rsf.org/en/country/china",

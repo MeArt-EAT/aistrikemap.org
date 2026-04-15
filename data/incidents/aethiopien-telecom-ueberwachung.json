@@ -21,23 +21,41 @@
       "addressCountry": "ET"
     }
   },
-  "asm:incidentType": ["surveillance", "censorship"],
-  "asm:affectedRights": ["Recht auf Privatsphäre", "Meinungsfreiheit", "Pressefreiheit", "Versammlungsfreiheit", "Recht auf Information"],
+  "asm:incidentType": [
+    "surveillance",
+    "censorship"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Meinungsfreiheit",
+    "Pressefreiheit",
+    "Versammlungsfreiheit",
+    "Recht auf Information"
+  ],
   "asm:actors": [
     {
       "name": "Aethiopische Regierung",
       "type": "government",
-      "asm:systems": ["Nationales Kommunikationsueberwachungszentrum", "Internet-Sperrsystem"]
+      "asm:systems": [
+        "Nationales Kommunikationsueberwachungszentrum",
+        "Internet-Sperrsystem"
+      ]
     },
     {
       "name": "Ethio Telecom",
       "type": "company",
-      "asm:systems": ["Nationales Telekommunikationsnetz", "Deep Packet Inspection"]
+      "asm:systems": [
+        "Nationales Telekommunikationsnetz",
+        "Deep Packet Inspection"
+      ]
     },
     {
       "name": "ZTE Corporation",
       "type": "company",
-      "asm:systems": ["Ueberwachungsinfrastruktur", "DPI-Hardware"]
+      "asm:systems": [
+        "Ueberwachungsinfrastruktur",
+        "DPI-Hardware"
+      ]
     }
   ],
   "asm:severity": 4,
@@ -48,44 +66,48 @@
       "phase": "infrastructure",
       "title": "ZTE installiert nationale Ueberwachungsinfrastruktur",
       "description": "Der chinesische Technologiekonzern ZTE errichtet im Auftrag der aethiopischen Regierung eine nationale Telekommunikationsinfrastruktur mit eingebauten Ueberwachungskapazitaeten. Das System erlaubt Deep Packet Inspection und Echtzeit-Abhörung aller Kommunikationskanaele. Ethio Telecom als einziger Anbieter ist gesetzlich zur Kooperation verpflichtet.",
-      "sources": ["https://www.wsj.com/articles/SB10001424052748704547604576285520563419826"]
+      "sources": [
+        "https://www.wsj.com/articles/SB10001424052748704547604576285520563419826"
+      ]
     },
     {
       "date": "2014-03",
       "phase": "doctrine",
       "title": "Citizen Lab dokumentiert gezielte Ueberwachung von Oppositionellen",
       "description": "Das Citizen Lab der Universitaet Toronto veroffentlicht Beweise, dass aethiopische Oppositionelle in der Diaspora — insbesondere in den USA und Europa — mit kommerzieller Spaehsoftware (FinFisher und spaeter Hacking Team) infiziert wurden. Die Befehls-und-Kontroll-Server lassen sich nach Aethiopien zurueckverfolgen. Das Computerkriminalitaetsgesetz von 2016 kriminalisiert Online-Kritik.",
-      "sources": ["https://citizenlab.ca/2014/03/hacking-team-targeted-ethiopian-journalists-again/"]
+      "sources": []
     },
     {
       "date": "2020-11",
       "phase": "event",
       "title": "Tigray-Krieg: Kommunikationsabschottung als Kriegsmittel",
       "description": "Mit Beginn der militaerischen Offensive gegen die Tigray-Region unterbricht die Regierung systematisch Internet und Mobilfunk in der gesamten Konfliktregion. Neun Millionen Menschen werden von der Aussenkommunikation abgeschnitten. HRW und Amnesty International dokumentieren, dass die Kommunikationsblockade humanitaere Hilfe und journalistische Berichterstattung verhindert.",
-      "sources": ["https://www.hrw.org/news/2021/02/26/ethiopia-communications-blackout-tigray"]
+      "sources": []
     },
     {
       "date": "2022-01",
       "phase": "consequences",
       "title": "Anhaltende Zensur und internationale Kritik",
       "description": "Trotz eines Waffenstillstands 2022 bleibt die digitale Ueberwachungsinfrastruktur in Betrieb. Die EFF und AccessNow dokumentieren anhaltende Internet-Shutdowns und gezielte Blockaden sozialer Medien. Der UN-Menschenrechtsrat richtet eine Expertenkommission zu Aethiopien ein. Das staatliche Telekommonopol bleibt ein Instrument staatlicher Kontrolle.",
-      "sources": ["https://www.accessnow.org/keepiton/"]
+      "sources": [
+        "https://www.accessnow.org/keepiton/"
+      ]
     }
   ],
   "asm:sources": [
     {
-      "url": "https://citizenlab.ca/2014/03/hacking-team-targeted-ethiopian-journalists-again/",
       "title": "Hacking Team Targeted Ethiopian Journalists Again",
       "publisher": "Citizen Lab, University of Toronto",
       "date": "2014-03-09",
-      "type": "academic-paper"
+      "type": "academic-paper",
+      "asm:brokenUrl": "https://citizenlab.ca/2014/03/hacking-team-targeted-ethiopian-journalists-again/"
     },
     {
-      "url": "https://www.hrw.org/news/2021/02/26/ethiopia-communications-blackout-tigray",
       "title": "Ethiopia: Communications Blackout in Tigray",
       "publisher": "Human Rights Watch",
       "date": "2021-02-26",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.hrw.org/news/2021/02/26/ethiopia-communications-blackout-tigray"
     },
     {
       "url": "https://www.wsj.com/articles/SB10001424052748704547604576285520563419826",
@@ -95,11 +117,11 @@
       "type": "news-article"
     },
     {
-      "url": "https://www.eff.org/deeplinks/2020/11/ethiopia-internet-disruptions-tigray",
       "title": "Ethiopia Internet Disruptions in Tigray",
       "publisher": "Electronic Frontier Foundation",
       "date": "2020-11-05",
-      "type": "ngo-report"
+      "type": "ngo-report",
+      "asm:brokenUrl": "https://www.eff.org/deeplinks/2020/11/ethiopia-internet-disruptions-tigray"
     }
   ],
   "asm:metadata": {
