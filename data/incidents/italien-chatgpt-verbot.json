@@ -21,8 +21,15 @@
       "addressCountry": "IT"
     }
   },
-  "asm:incidentType": ["data-misuse"],
-  "asm:affectedRights": ["Datenschutz", "Recht auf Auskunft", "Recht auf Löschung", "Jugendschutz"],
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Auskunft",
+    "Recht auf Löschung",
+    "Jugendschutz"
+  ],
   "asm:actors": [
     {
       "name": "Garante per la Protezione dei Dati Personali",
@@ -31,7 +38,10 @@
     {
       "name": "OpenAI",
       "type": "company",
-      "asm:systems": ["ChatGPT", "GPT-4"]
+      "asm:systems": [
+        "ChatGPT",
+        "GPT-4"
+      ]
     }
   ],
   "asm:severity": 2,
@@ -42,28 +52,32 @@
       "phase": "infrastructure",
       "title": "ChatGPT veröffentlicht ohne DSGVO-Prüfung",
       "description": "OpenAI veröffentlicht ChatGPT global, ohne spezifische Maßnahmen zur Einhaltung europäischer Datenschutzgesetze. Es gibt keine Altersverifikation, keine Transparenz über die verwendeten Trainingsdaten und kein Widerspruchsrecht für EU-Bürger.",
-      "sources": ["https://openai.com/blog/chatgpt"]
+      "sources": []
     },
     {
       "date": "2023-03-20",
       "phase": "doctrine",
       "title": "ChatGPT-Datenleck wird bekannt",
       "description": "Ein Bug in ChatGPT führt dazu, dass Nutzer Chatverlauf-Titel und teilweise Zahlungsinformationen anderer Nutzer sehen können. OpenAI bestätigt das Datenleck. Die italienische Datenschutzbehörde leitet daraufhin eine Untersuchung ein.",
-      "sources": ["https://openai.com/blog/march-20-chatgpt-outage"]
+      "sources": []
     },
     {
       "date": "2023-03-31",
       "phase": "event",
       "title": "Italien verbietet ChatGPT",
       "description": "Die Garante ordnet die sofortige vorübergehende Beschränkung der Verarbeitung italienischer Nutzerdaten durch OpenAI an. Begründung: fehlende Rechtsgrundlage für die Verarbeitung personenbezogener Daten, fehlende Altersverifikation, ungenaue Informationen über Betroffene.",
-      "sources": ["https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832"]
+      "sources": [
+        "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832"
+      ]
     },
     {
       "date": "2023-04-28",
       "phase": "consequences",
       "title": "ChatGPT kehrt mit Auflagen nach Italien zurück",
       "description": "Nach Einführung von Altersverifikation, einer erweiterten Datenschutzerklärung, einem Opt-out für Trainingsdaten und einem EU-Vertreter hebt die Garante das Verbot auf. Der Fall löst EU-weite Untersuchungen aus — weitere Datenschutzbehörden prüfen ChatGPT.",
-      "sources": ["https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9881490"]
+      "sources": [
+        "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9881490"
+      ]
     }
   ],
   "asm:sources": [

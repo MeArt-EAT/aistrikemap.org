@@ -33,6 +33,8 @@ function isDead(b) {
   if (b.status === 404 || b.status === 410) return true;
   if (b.status === 0) return true;
   if (b.status >= 500) return true;
+  // Strict mode: also treat paywall/bot-blocked as dead
+  if ([401, 403, 429].includes(b.status)) return true;
   return false;
 }
 
