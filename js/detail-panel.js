@@ -152,8 +152,12 @@ const DetailPanel = (function () {
       html += '<ul class="source-list">';
       sources.forEach(function (s) {
         html += '<li class="source-item">';
+        var health = s['asm:linkHealth'];
+        var healthIcon = renderHealthIcon(health);
         if (s.url) {
-          html += '<a href="' + escAttr(s.url) + '" target="_blank" rel="noopener">' + esc(s.title) + '</a>';
+          var linkClass = health && health !== 'ok' ? ' source-item__link--' + health : '';
+          html += '<a href="' + escAttr(s.url) + '" target="_blank" rel="noopener" class="source-item__link' + linkClass + '">' +
+                  healthIcon + esc(s.title) + '</a>';
         } else {
           html += '<span class="source-item__broken" title="Link nicht mehr verfügbar">' + esc(s.title) + '</span>';
         }
@@ -243,6 +247,23 @@ const DetailPanel = (function () {
       if (map) map.setView([geo.latitude, geo.longitude], 5, { animate: true });
     }
     return true;
+  }
+
+  // Render a small health icon for source links. Returns empty string for
+  // unknown / ok health so the default link style stays clean.
+  function renderHealthIcon(health) {
+    if (!health || health === 'ok') return '';
+    var map = {
+      paywall:  { char: '\uD83D\uDD12', key: 'source.health.paywall' },  // 🔒
+      archived: { char: '\uD83D\uDCE6', key: 'source.health.archived' }, // 📦
+      dead:     { char: '\u26A0\uFE0F', key: 'source.health.dead' },     // ⚠️
+    };
+    var entry = map[health];
+    if (!entry) return '';
+    var label = I18n.t(entry.key) || health;
+    return '<span class="source-health source-health--' + health +
+           '" title="' + escAttr(label) + '" aria-label="' + escAttr(label) + '">' +
+           entry.char + '</span> ';
   }
 
   function esc(str) {

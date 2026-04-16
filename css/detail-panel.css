@@ -312,6 +312,27 @@
   font-size: 0.7rem;
 }
 
+.source-health {
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-right: 0.15rem;
+  vertical-align: baseline;
+  cursor: help;
+  opacity: 0.85;
+}
+
+.source-health--paywall  { filter: saturate(0.9); }
+.source-health--archived { filter: saturate(0.9); }
+.source-health--dead     { opacity: 1; }
+
+.source-item__link--paywall  { color: #f1c40f; }
+.source-item__link--archived { color: #8e9aaf; }
+.source-item__link--dead {
+  color: var(--text-secondary);
+  text-decoration: line-through;
+  text-decoration-color: rgba(231, 76, 60, 0.5);
+}
+
 .source-item__broken {
   color: var(--text-secondary);
   text-decoration: line-through;
