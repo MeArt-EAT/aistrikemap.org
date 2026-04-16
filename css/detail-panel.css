@@ -1,0 +1,320 @@
+/* AIStrikeMap — Detail panel: timeline, sources, badges, actors
+ * Split from main.css. See css/README.md for module map.
+ */
+
+/* Detail Panel */
+.detail-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 400px;
+  height: 100%;
+  background: var(--bg-surface);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.4);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-panel.open {
+  transform: translateX(0);
+}
+
+.detail-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.detail-panel__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-right: 1rem;
+}
+
+.detail-close-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.detail-close-btn:hover {
+  color: var(--text-primary);
+}
+
+.detail-panel__body {
+  padding: 1.25rem;
+  flex: 1;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge--severity-1 { background: var(--severity-1); color: #fff; }
+.badge--severity-2 { background: var(--severity-2); color: #1a1a2e; }
+.badge--severity-3 { background: var(--severity-3); color: #fff; }
+.badge--severity-4 { background: var(--severity-4); color: #fff; }
+.badge--severity-5 { background: var(--severity-5); color: #fff; }
+
+.badge--verification {
+  background: rgba(102, 187, 106, 0.15);
+  color: var(--success);
+  border: 1px solid rgba(102, 187, 106, 0.3);
+}
+
+.badge--actor {
+  background: rgba(79, 195, 247, 0.1);
+  color: var(--link);
+  border: 1px solid rgba(79, 195, 247, 0.2);
+}
+
+.detail-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-family: inherit;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.detail-share-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+}
+
+.detail-share-btn__icon {
+  font-size: 0.85rem;
+}
+
+.detail-share-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.detail-share-row .detail-share-btn {
+  margin-bottom: 0;
+}
+
+.detail-share-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.detail-share-icon:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.detail-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-section__title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+/* Actors */
+.actor-list {
+  list-style: none;
+}
+
+.actor-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.actor-item:last-child {
+  border-bottom: none;
+}
+
+.actor-systems {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+/* Reverse Timeline */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.45rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 1.25rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item__dot {
+  position: absolute;
+  left: -1.2rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+
+.timeline-item__dot--infrastructure {
+  border-color: var(--phase-infrastructure);
+  background: var(--phase-infrastructure);
+}
+
+.timeline-item__dot--doctrine {
+  border-color: var(--phase-doctrine);
+  background: var(--phase-doctrine);
+}
+
+.timeline-item__dot--event {
+  border-color: var(--phase-event);
+  background: var(--phase-event);
+}
+
+.timeline-item__dot--consequences {
+  border-color: var(--phase-consequences);
+  background: var(--phase-consequences);
+}
+
+.timeline-item__phase {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.15rem;
+}
+
+.timeline-item__phase--infrastructure { color: var(--phase-infrastructure); }
+.timeline-item__phase--doctrine { color: var(--phase-doctrine); }
+.timeline-item__phase--event { color: var(--phase-event); }
+.timeline-item__phase--consequences { color: var(--phase-consequences); }
+
+.timeline-item__date {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.timeline-item__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0.2rem 0;
+}
+
+.timeline-item__desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.timeline-item__sources {
+  margin-top: 0.3rem;
+}
+
+.timeline-item__sources a {
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+/* Sources List */
+.source-list {
+  list-style: none;
+}
+
+.source-item {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.8rem;
+}
+
+.source-item:last-child {
+  border-bottom: none;
+}
+
+.source-item__publisher {
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+}
+
+.source-item__broken {
+  color: var(--text-secondary);
+  text-decoration: line-through;
+  text-decoration-color: rgba(231, 76, 60, 0.5);
+  cursor: help;
+}

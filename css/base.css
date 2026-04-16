@@ -1,0 +1,79 @@
+/* AIStrikeMap — Base: tokens, reset, typography, skip-link
+ * Split from main.css. See css/README.md for module map.
+ */
+
+/* AIStrikeMap — Dark Theme */
+:root {
+  --bg-dark: #1a1a2e;
+  --bg-surface: #16213e;
+  --bg-surface-hover: #1c2a4a;
+  --accent: #f06070;
+  --text-primary: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --link: #4fc3f7;
+  --success: #66bb6a;
+  --severity-1: #3498db;
+  --severity-2: #f39c12;
+  --severity-3: #e67e22;
+  --severity-4: #e74c3c;
+  --severity-5: #ba68c8;
+  --phase-infrastructure: #3498db;
+  --phase-doctrine: #f39c12;
+  --phase-event: #e74c3c;
+  --phase-consequences: #ba68c8;
+  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: Consolas, "Courier New", monospace;
+  --radius: 6px;
+  --transition: 0.2s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: var(--font-base);
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}

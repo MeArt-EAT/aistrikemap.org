@@ -1,0 +1,117 @@
+/* AIStrikeMap — Layout: header, nav, language switcher, CTA
+ * Split from main.css. See css/README.md for module map.
+ */
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: var(--bg-surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1000;
+  flex-shrink: 0;
+}
+
+.site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.site-header__logo:hover {
+  text-decoration: none;
+}
+
+.site-header__logo .logo-accent {
+  color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.site-nav a {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  transition: color var(--transition);
+}
+
+.site-nav a:hover {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+/* Report incident CTA button */
+.site-nav a.nav-report-btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.site-nav a.nav-report-btn::before {
+  content: "+";
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.site-nav a.nav-report-btn:hover {
+  background: #d94a5a;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.site-nav a.nav-report-btn[aria-current="page"] {
+  border-bottom: none;
+}
+
+/* Language switcher */
+.lang-switcher {
+  display: inline-flex;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-left: 0.5rem;
+}
+
+.lang-btn {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  font-family: inherit;
+}
+
+.lang-btn + .lang-btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.lang-btn.is-active {
+  background: var(--accent);
+  color: #fff;
+}

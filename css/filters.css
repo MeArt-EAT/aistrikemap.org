@@ -1,0 +1,107 @@
+/* AIStrikeMap — Filter panel: checkboxes, sliders, toggle
+ * Split from main.css. See css/README.md for module map.
+ */
+
+/* Filter Panel */
+.filter-panel {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  background: var(--bg-surface);
+  border-radius: var(--radius);
+  padding: 1rem;
+  width: 260px;
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform var(--transition);
+}
+
+.filter-panel.collapsed .filter-panel__body {
+  display: none;
+}
+
+.filter-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+
+.filter-panel__header h2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.filter-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.125rem;
+}
+
+.filter-section {
+  margin-bottom: 1rem;
+}
+
+.filter-section__title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"] {
+  accent-color: var(--link);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.severity-slider {
+  width: 100%;
+  margin: 0.5rem 0;
+  accent-color: var(--accent);
+}
+
+.severity-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.filter-reset-btn {
+  width: 100%;
+  padding: 0.4rem;
+  background: transparent;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all var(--transition);
+}
+
+.filter-reset-btn:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}

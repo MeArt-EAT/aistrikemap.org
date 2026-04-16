@@ -1,0 +1,62 @@
+/* AIStrikeMap — Controls: selects, search input, nav toggle
+ * Split from main.css. See css/README.md for module map.
+ */
+
+/* Time range select */
+.time-range-select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.time-range-select:hover,
+.time-range-select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.time-range-select option {
+  background: #16213e;
+  color: var(--text-primary);
+}
+
+.filter-search-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 0.45rem 0.7rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  transition: border-color var(--transition), background var(--transition);
+  box-sizing: border-box;
+}
+
+.filter-search-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.filter-search-input:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.06);
+  outline: none;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
