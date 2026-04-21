@@ -48,18 +48,13 @@ const USER_AGENTS = [
 // Known paywall domains. A 2xx response from these is still "paywall"
 // because the article body is gated. A non-2xx is "paywall" too — the
 // bot was blocked at the edge. This list is intentionally conservative.
-//
-// TODO pre-release: add `lemonde.fr` and `dawn.com` (and rerun
-// `--apply --force` on the few affected URLs). Observed on 2026-04-21:
-// lemonde.fr returned HTTP 402 (Payment Required) → currently mis-
-// classified as `dead` because 402 only maps to paywall when the host
-// is already on this list. See also classify() below.
 const PAYWALL_DOMAINS = [
   'wsj.com', 'ft.com', 'nytimes.com', 'bloomberg.com', 'economist.com',
   'nzz.ch', 'faz.net', 'sueddeutsche.de', 'zeit.de', 'welt.de',
   'handelsblatt.com', 'spiegel.de', 'washingtonpost.com', 'newyorker.com',
   'wired.com', 'theatlantic.com', 'telegraph.co.uk', 'thetimes.co.uk',
   'businessinsider.com', 'theinformation.com', 'foreignaffairs.com',
+  'lemonde.fr', 'dawn.com',
 ];
 
 // Archive hosts — URLs on these domains are treated as "archived"
@@ -102,13 +97,13 @@ function matchesDomain(host, list) {
   return list.some(function (d) { return host === d || host.endsWith('.' + d); });
 }
 
-// TODO pre-release: treat HTTP 402 (Payment Required) as `paywall`
-// universally, independent of host list. 402 is the canonical paywall
-// status code and should not require domain allowlisting. When adding,
-// also invalidate affected cache entries or run with --force.
 function classify(url, status, err) {
   var host = hostnameOf(url);
   if (matchesDomain(host, ARCHIVE_DOMAINS)) return 'archived';
+
+  // HTTP 402 (Payment Required) is the canonical paywall status code.
+  // Treat it as `paywall` universally, independent of the host list.
+  if (status === 402) return 'paywall';
 
   // 2xx from paywall host → paywall (body gated even if HEAD succeeds)
   if (status >= 200 && status < 300) {
