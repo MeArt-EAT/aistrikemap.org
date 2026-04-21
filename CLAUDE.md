@@ -10,7 +10,7 @@ AIStrikeMap is an investigative research platform mapping AI-related human right
 - **Leaflet.js 1.9.4** via CDN (CartoDB dark tiles, OpenStreetMap data)
 - **JSON-LD / Schema.org** for incident data
 - **Static hosting** on GitHub Pages
-- **GitHub Actions** for weekly link-check (lychee)
+- **GitHub Actions** for weekly link-check (V2: `scripts/check-links-v2.js`)
 
 ## File Structure
 

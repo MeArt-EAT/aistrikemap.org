@@ -1,4 +1,4 @@
-name: Link Check
+name: Link Check (V2)
 
 on:
   schedule:
@@ -8,65 +8,79 @@ on:
   push:
     paths:
       - 'data/incidents/**'
+      - 'data/radar/**'
+      - 'scripts/check-links-v2.js'
       - '.github/workflows/link-check.yml'
-      - '.lychee.toml'
 
 permissions:
   contents: read
   issues: write
 
 jobs:
-  lychee:
+  check-links-v2:
     runs-on: ubuntu-latest
-    env:
-      # Opt in to Node.js 24 now (default from June 2026) — silences deprecation warning
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Restore lychee cache
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Cache data/link-cache.json across runs so successive weekly runs
+      # respect the 7-day TTL and only re-check URLs that actually need it.
+      - name: Restore V2 link cache
         uses: actions/cache@v4
         with:
-          path: .lycheecache
-          key: cache-lychee-${{ github.sha }}
-          restore-keys: cache-lychee-
+          path: data/link-cache.json
+          key: v2-link-cache-${{ github.run_id }}
+          restore-keys: |
+            v2-link-cache-
 
-      - name: Run lychee
-        id: lychee
-        uses: lycheeverse/lychee-action@v2
-        with:
-          args: >-
-            --verbose
-            --no-progress
-            --cache
-            --max-cache-age 7d
-            --accept 200,206,429
-            --exclude-mail
-            --exclude-path node_modules
-            './data/incidents/**/*.json'
-            './README.md'
-            './CONTRIBUTING.md'
-            './*.html'
-          output: ./lychee/out.md
-          fail: false
-          format: markdown
+      - name: Run V2 link-checker
+        id: v2
+        # `|| true` keeps the job green — we handle a non-zero exit
+        # (dead links found) by opening an issue in the next step.
+        run: node scripts/check-links-v2.js || true
 
-      - name: Upload report
+      - name: Upload V2 report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: link-check-report
-          path: ./lychee/out.md
+          name: link-check-v2-report
+          path: link-check-v2-report.json
           retention-days: 30
-          if-no-files-found: ignore
+          if-no-files-found: warn
 
-      - name: Open issue on broken links
-        if: env.lychee_exit_code != '0'
+      - name: Summarise report for issue body
+        if: always()
+        id: summary
+        run: |
+          if [ ! -f link-check-v2-report.json ]; then
+            echo "no-report=1" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          dead=$(node -e "console.log((JSON.parse(require('fs').readFileSync('link-check-v2-report.json','utf8')).counts || {}).dead || 0)")
+          echo "dead=$dead" >> "$GITHUB_OUTPUT"
+          {
+            echo "## Link Check V2 — $(date -u +%Y-%m-%d)"
+            echo ""
+            node -e "const r=JSON.parse(require('fs').readFileSync('link-check-v2-report.json','utf8')); const c=r.counts||{}; console.log('**Total:** '+r.total+'  \n**OK:** '+(c.ok||0)+'  \n**Paywall:** '+(c.paywall||0)+'  \n**Archived:** '+(c.archived||0)+'  \n**Dead:** '+(c.dead||0));"
+            echo ""
+            if [ "$dead" -gt 0 ]; then
+              echo "### Dead links"
+              echo ""
+              node -e "const r=JSON.parse(require('fs').readFileSync('link-check-v2-report.json','utf8')); (r.dead||[]).forEach(function(d){console.log('- [`'+(d.status||'ERR')+'`] '+d.url); (d.origins||[]).forEach(function(o){console.log('  - in '+o);});});"
+            fi
+          } > issue-body.md
+
+      - name: Open issue on dead links
+        if: steps.summary.outputs.dead != '0' && steps.summary.outputs.dead != ''
         uses: peter-evans/create-issue-from-file@v5
         with:
-          title: "Link Check Report — ${{ steps.date.outputs.date || github.run_id }}"
-          content-filepath: ./lychee/out.md
+          title: "Link Check V2 — ${{ steps.summary.outputs.dead }} dead links (${{ github.run_id }})"
+          content-filepath: ./issue-body.md
           labels: |
             link-check
             automated

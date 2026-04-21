@@ -52,7 +52,7 @@
 
 ### Automated link checking
 
-A weekly GitHub Action ([`.github/workflows/link-check.yml`](.github/workflows/link-check.yml)) runs [lychee](https://lychee.cli.rs/) against all source URLs in `data/incidents/**/*.json` plus the static HTML pages. Broken links automatically open a tracking issue with the full report. Configuration lives in [`.lychee.toml`](.lychee.toml) and whitelists known bot-walled domains (LinkedIn, X/Twitter, Facebook, Instagram, archive.org).
+A weekly GitHub Action ([`.github/workflows/link-check.yml`](.github/workflows/link-check.yml)) runs [`scripts/check-links-v2.js`](scripts/check-links-v2.js) against all source URLs in `data/incidents/**/*.json` and `data/radar/**/*.json`. The V2 checker retries 3× with exponential backoff, rotates between three browser user-agents, and caches results for 7 days in `data/link-cache.json`. Instead of deleting broken sources it classifies each URL as `ok` / `paywall` / `archived` / `dead` and writes the result to `asm:linkHealth` (via `node scripts/check-links-v2.js --apply`, maintainer step). The detail panel renders 🔒 / 📦 / ⚠️ icons accordingly. Dead links open a tracking issue automatically.
 
 ### Bot protection
 
