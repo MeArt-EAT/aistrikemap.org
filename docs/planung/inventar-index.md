@@ -5,7 +5,7 @@ Zentrale Übersicht aller Items und ihrer Quelldokumente.
 | Item-Bereich | Modul / Phase | Quelldokument | Status |
 |---|---|---|---|
 | 1–93 | Phase 1 – Incident-Karte | [AIStrikeMap_Planungsinventar_v3.docx](../../AIStrikeMap_Planungsinventar_v3.docx) | Abgeschlossen |
-| 94–99 | Phase 2 – AI Career Impact Dashboard | [phase-2-career-dashboard.md](phase-2-career-dashboard.md) · Item 99 Punkt 1 (Datenquellen): [career-dashboard-datenquellen-matrix.md](career-dashboard-datenquellen-matrix.md) · Item 99 Punkt 2 (Score-Methodik): [career-dashboard-score-methodik.md](career-dashboard-score-methodik.md) | Idee · Konzeptphase Punkt 1+2 entschieden |
+| 94–99 | Phase 2 – AI Career Impact Dashboard | [phase-2-career-dashboard.md](phase-2-career-dashboard.md) · Item 99 Punkt 1 (Datenquellen): [career-dashboard-datenquellen-matrix.md](career-dashboard-datenquellen-matrix.md) · Item 99 Punkt 2 (Score-Methodik): [career-dashboard-score-methodik.md](career-dashboard-score-methodik.md) · Item 99 Punkt 4 (Bias-Transparency): [career-dashboard-bias-transparency.md](career-dashboard-bias-transparency.md) | Idee · Konzeptphase Punkt 1+2+4 entschieden |
 | 100–103 | Phase 2 – AI Live-Radar | [phase-2-live-radar.md](phase-2-live-radar.md) | MVP live |
 
 ## Drei-Zeitebenen-Modell
