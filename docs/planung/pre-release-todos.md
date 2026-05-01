@@ -47,16 +47,30 @@ Original-Diagnose-Tabelle als Referenz, falls Pattern für andere Pages benötig
 
 Der gemeinsame Nav-Pattern (`nav-toggle`-Button + `<nav>`-Element ARIA-Labels) ist auf allen 8 Pages mit `data-i18n-aria="a11y.navOpen"` und `data-i18n-aria="a11y.mainNav"` instrumentiert — 16 Einträge in einem Schwung.
 
-**Noch offen pro Page** (page-spezifische ARIA-Strings, abseits des Nav-Patterns):
-- `radar.html` — Radar-Filter-Selects, Detail-Panel-Buttons, Status-Indikatoren (vermutlich 5–10 Strings)
-- `methodik.html` — größtenteils Body-Content via existierende data-i18n-Hooks; Restprüfung empfohlen
-- `transparenz.html` — wie methodik
-- `impressum.html` — minimal, vermutlich 1–2 Strings
-- `datenschutz.html` — minimal, vermutlich 1–2 Strings
-- `labor-impact.html` — selbst gebaut, vollständig instrumentiert (außer Nav-Pattern, jetzt auch ergänzt)
-- `404.html` — nav-Pattern erledigt, Restcontent über existierende Keys gedeckt
+**Stand 2026-05-01 (nach Audit-Lauf):**
 
-Erwartete Restgrößenordnung: ~10–25 weitere page-spezifische Strings + 5–15 neue i18n-Keys. Deutlich kleiner als ursprünglich geschätzt, weil viel Body-Content schon i18n-instrumentiert war.
+| Page | Body-Content | Nav-Pattern | Page-spezifische ARIA |
+|---|---|---|---|
+| `index.html` | ✅ | ✅ | ✅ (10 Hooks: map-legend, filter-panel, search, severity, verification, detail-panel, close-btn) |
+| `radar.html` | ✅ | ✅ | ✅ (3 Hooks: radar-grid, detail-panel, close-btn) |
+| `404.html` | ✅ | ✅ | ✅ keine page-spezifischen ARIA-Strings |
+| `methodik.html` | ✅ | ✅ | – Restprüfung der Body-Content-Spans empfohlen |
+| `transparenz.html` | ✅ | ✅ | – wie methodik |
+| `impressum.html` | ✅ | ✅ | – wie methodik |
+| `datenschutz.html` | ✅ | ✅ | – wie methodik |
+| `labor-impact.html` | ✅ | ✅ | ✅ vollständig (selbst gebaut) |
+
+**Verbleibende Judgment-Calls** (keine Defekte, sondern UX-Entscheidungen):
+
+- `aria-label="AIStrikeMap Home"` (Logo, alle Pages) — Markenname, universell. Optional: i18n-Key `a11y.home` mit "AIStrikeMap Startseite" / "AIStrikeMap home". Minimal-Wert.
+- `aria-label="Sprache / Language"`, `"Deutsch"`, `"English"` (Lang-Switcher, alle Pages) — bewusst bilingual / language-self-naming. Defensible to keep as-is. Falls geändert: das Sprach-Naming in der jeweils ANDEREN Sprache anzeigen ist gängige Praxis.
+- `radar.html:60` Feed-Link mit `title="Atom Feed" aria-label="RSS Feed"` — universelle Tech-Begriffe.
+
+**Noch zu prüfen** (Restbereiche, nicht ARIA):
+
+- **JS-set dynamische Strings** in `js/radar.js`, `js/filters.js`, `js/detail-panel.js`, `js/data-loader.js` — werden Strings dort über `I18n.t()` gerendert oder hardcoded? Stichprobe empfohlen.
+- **Body-Content der 4 statischen Pages** (methodik, transparenz, impressum, datenschutz) — nur Restprüfung, ob alle `<p>`/`<li>`/`<h2>`-Elemente einen `data-i18n`-Hook haben. Erwartung: 95%+ ist bereits i18n'd.
+- **Architektur-Frage Meta-Tags / og:locale** (siehe oben) — separater Slot.
 
 **Akzeptanz-Kriterium:** Beim Klick auf "EN" tauscht sich JEDE user-wahrnehmbare Phrase aus — inkl. Screenreader-Output (ARIA), Hover-Tooltips (title), Platzhaltertexte, dynamisch JS-gesetzte Status-Werte.
 
