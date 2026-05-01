@@ -66,11 +66,28 @@ Der gemeinsame Nav-Pattern (`nav-toggle`-Button + `<nav>`-Element ARIA-Labels) i
 - `aria-label="Sprache / Language"`, `"Deutsch"`, `"English"` (Lang-Switcher, alle Pages) — bewusst bilingual / language-self-naming. Defensible to keep as-is. Falls geändert: das Sprach-Naming in der jeweils ANDEREN Sprache anzeigen ist gängige Praxis.
 - `radar.html:60` Feed-Link mit `title="Atom Feed" aria-label="RSS Feed"` — universelle Tech-Begriffe.
 
-**Noch zu prüfen** (Restbereiche, nicht ARIA):
+**JS-Module-Audit 2026-05-01:**
 
-- **JS-set dynamische Strings** in `js/radar.js`, `js/filters.js`, `js/detail-panel.js`, `js/data-loader.js` — werden Strings dort über `I18n.t()` gerendert oder hardcoded? Stichprobe empfohlen.
-- **Body-Content der 4 statischen Pages** (methodik, transparenz, impressum, datenschutz) — nur Restprüfung, ob alle `<p>`/`<li>`/`<h2>`-Elemente einen `data-i18n`-Hook haben. Erwartung: 95%+ ist bereits i18n'd.
-- **Architektur-Frage Meta-Tags / og:locale** (siehe oben) — separater Slot.
+| Modul | Nutzt I18n.t | Listet i18n:changed | Status |
+|---|---|---|---|
+| `js/i18n.js` | – | feuert Event | Quelle |
+| `js/filters.js` | ✅ | ✅ Zeile 125 | OK |
+| `js/labor-impact.js` | ✅ | ✅ Zeile 165 | OK |
+| `js/nav.js` | ✅ | ✅ Zeile 38 | OK |
+| `js/radar.js` | ✅ ausgiebig | ✅ Zeile 51 | OK |
+| `js/detail-panel.js` | ✅ ausgiebig | ✅ ergänzt 2026-05-01 | **Fix gelandet** |
+| `js/map.js` | ✅ | ❌ | siehe unten |
+| `js/strike-ticker.js` | – (keine Strings) | – | OK |
+
+**`js/map.js`** rendert Marker-Popups via `I18n.t()`, hat aber keinen `i18n:changed`-Listener. Effekt: Wenn ein Popup beim Sprachwechsel offen ist, bleibt es in alter Sprache bis zum nächsten Klick. Niedrige Schwere — Popup ist transienter UI-Zustand. Kann als "could-be-cleaner" stehen oder mit gleichem Pattern wie detail-panel.js fixen.
+
+**`js/detail-panel.js` Fix:** `currentIncident`-State plus `i18n:changed`-Listener, der via `show(currentIncident)` re-rendert wenn das Panel offen ist. Behebt den eigentlichen User-Eindruck "nur das Menü übersetzt" für den Hauptanwendungsfall (offener Vorfall beim Sprachwechsel).
+
+**Noch zu prüfen** (Restbereiche, niedrige Priorität):
+
+- **`js/map.js`** — gleicher i18n:changed-Pattern für offene Popups (klein)
+- **Body-Content der 4 statischen Pages** (methodik, transparenz, impressum, datenschutz) — Restprüfung, erwartete Vollständigkeit 95%+
+- **Architektur-Frage Meta-Tags / og:locale** — separater Slot.
 
 **Akzeptanz-Kriterium:** Beim Klick auf "EN" tauscht sich JEDE user-wahrnehmbare Phrase aus — inkl. Screenreader-Output (ARIA), Hover-Tooltips (title), Platzhaltertexte, dynamisch JS-gesetzte Status-Werte.
 

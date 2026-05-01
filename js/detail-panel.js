@@ -5,6 +5,7 @@
 const DetailPanel = (function () {
   let panelEl, titleEl, bodyEl, closeBtn;
   var radarSituations = null;
+  var currentIncident = null;
 
   function loadRadarData() {
     if (radarSituations !== null) return;
@@ -24,6 +25,15 @@ const DetailPanel = (function () {
     closeBtn.addEventListener('click', hide);
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') hide();
+    });
+
+    // Re-render currently-open incident when language changes,
+    // so the panel content tracks the active language without
+    // requiring the user to close and re-open.
+    document.addEventListener('i18n:changed', function () {
+      if (currentIncident && panelEl.classList.contains('open')) {
+        show(currentIncident);
+      }
     });
   }
 
@@ -48,6 +58,7 @@ const DetailPanel = (function () {
   }
 
   function show(incident) {
+    currentIncident = incident;
     updateUrl(incident);
     titleEl.textContent = incident.name || '';
 
@@ -231,6 +242,7 @@ const DetailPanel = (function () {
 
   function hide() {
     panelEl.classList.remove('open');
+    currentIncident = null;
     clearUrl();
   }
 
