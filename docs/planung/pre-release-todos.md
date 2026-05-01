@@ -43,9 +43,20 @@ Original-Diagnose-Tabelle als Referenz, falls Pattern für andere Pages benötig
 
 **PL-Empfehlung (b)** für ernste Internationalisierung, aber separate Architektur-Entscheidung für eigenen Implementierungs-Slot. Nicht Teil dieses i18n-Audits.
 
-#### Verbleibende 7 Pages (noch zu auditieren)
+#### Verbleibende 7 Pages — nav-Pattern bereits 2026-05-01 erledigt
 
-`radar.html`, `methodik.html`, `transparenz.html`, `impressum.html`, `datenschutz.html`, `labor-impact.html`, `404.html` — vermutlich ähnliches Muster (Body i18n-instrumentiert, ARIA hardcoded). Erwartete Größenordnung: ~50–80 weitere ARIA/title-Strings + 30–50 neue i18n-Keys.
+Der gemeinsame Nav-Pattern (`nav-toggle`-Button + `<nav>`-Element ARIA-Labels) ist auf allen 8 Pages mit `data-i18n-aria="a11y.navOpen"` und `data-i18n-aria="a11y.mainNav"` instrumentiert — 16 Einträge in einem Schwung.
+
+**Noch offen pro Page** (page-spezifische ARIA-Strings, abseits des Nav-Patterns):
+- `radar.html` — Radar-Filter-Selects, Detail-Panel-Buttons, Status-Indikatoren (vermutlich 5–10 Strings)
+- `methodik.html` — größtenteils Body-Content via existierende data-i18n-Hooks; Restprüfung empfohlen
+- `transparenz.html` — wie methodik
+- `impressum.html` — minimal, vermutlich 1–2 Strings
+- `datenschutz.html` — minimal, vermutlich 1–2 Strings
+- `labor-impact.html` — selbst gebaut, vollständig instrumentiert (außer Nav-Pattern, jetzt auch ergänzt)
+- `404.html` — nav-Pattern erledigt, Restcontent über existierende Keys gedeckt
+
+Erwartete Restgrößenordnung: ~10–25 weitere page-spezifische Strings + 5–15 neue i18n-Keys. Deutlich kleiner als ursprünglich geschätzt, weil viel Body-Content schon i18n-instrumentiert war.
 
 **Akzeptanz-Kriterium:** Beim Klick auf "EN" tauscht sich JEDE user-wahrnehmbare Phrase aus — inkl. Screenreader-Output (ARIA), Hover-Tooltips (title), Platzhaltertexte, dynamisch JS-gesetzte Status-Werte.
 
