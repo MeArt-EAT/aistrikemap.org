@@ -103,22 +103,28 @@ DSA (Digital Services Act): AIStrikeMap ist Hosting-Dienst eigener Inhalte → m
 
 ### Bereich 6 · Eigene Output-Lizenz
 
-Aktuell ist AIStrikeMap als Repository nicht explizit lizenziert. Der Career-Dashboard-Output (aggregierte Bandbreiten-Daten in `data/career/*.json`) sollte explizit lizenziert sein, weil er in **Eigenleistung** aus Quelldaten synthetisiert wird.
+**Korrektur 2026-05-01:** Anders als zunächst hier angenommen, **ist** AIStrikeMap bereits explizit lizenziert. Footer aller Bestands-Pages zeigt:
 
-**Entscheidung:**
+> Daten: CC BY-NC-SA 4.0 | Code: AGPL-3.0
 
-- **Career-Daten** (`data/career/*.json`): **CC BY 4.0** — passt zur OECD/ILO/Eurostat-Linie, signalisiert Forschungs-/Journalismus-Geist, erfordert nur Attribution.
-- **Code des Career-Moduls** (`js/career.js`, `css/career.css`): Erbt die übergeordnete Repository-Lizenz, sobald gesetzt. Zwischenzeitlich: implizit "All Rights Reserved", aber Repository ist öffentlich auf GitHub → faktisch Read-Access. Empfehlung als Side-Quest: **MIT für Code, CC BY 4.0 für Daten** als Repository-weite Doppellizenz dokumentieren (eigenes Pre-Release-TODO, nicht Career-spezifisch).
+`LICENSE`-Datei im Repo-Root = AGPL-3.0.
+
+**Entscheidung (angepasst):**
+
+- **Career-Daten** (`data/career/*.json`): erben die bestehende Daten-Lizenz **CC BY-NC-SA 4.0**. Konsistenz mit dem restlichen Daten-Output von AIStrikeMap (Incidents, Radar). Dass die Quellen-Daten teils restriktiver lizenziert sind (z. B. WEF NC-ND), ist bereits durch die Schicht-Auswahl adressiert.
+- **Code des Career-Moduls** (`js/career.js`, `css/career.css`, `js/career-chart.js`): erbt **AGPL-3.0** — automatisch durch das Repository-`LICENSE`.
 
 Lizenz-Hinweis erscheint in `methodik-career.html` und im JSON-Manifest (`data/career/index.json`):
 
 ```json
 {
-  "license": "CC-BY-4.0",
+  "license": "CC-BY-NC-SA-4.0",
   "attribution": "AIStrikeMap Career Impact Dashboard, https://aistrikemap.org",
   "sources": [...]
 }
 ```
+
+Footer-Zeile bleibt repository-weit identisch (kein Career-spezifischer Override).
 
 ---
 
@@ -137,8 +143,8 @@ Folgende Keys werden in `i18n/de.json` und `i18n/en.json` hinzugefügt, sobald d
     "en": "Note on career decisions"
   },
   "career.legal.licenseLine": {
-    "de": "Daten: CC BY 4.0 · Quellen siehe Methodik",
-    "en": "Data: CC BY 4.0 · Sources see methodology"
+    "de": "Daten: CC BY-NC-SA 4.0 · Quellen siehe Methodik",
+    "en": "Data: CC BY-NC-SA 4.0 · Sources see methodology"
   }
 }
 ```
@@ -159,9 +165,9 @@ Punkt 5 erzeugt Eingaben für die finale MVP-Scope-Entscheidung:
 
 ## Was diese Entscheidung **nicht** klärt
 
-- Repository-weite Lizenz (außerhalb Career-Modul) — eigenes Pre-Release-TODO
 - Konkrete Inhalte des Standard-Disclaimer-Texts in juristischer Detail-Prüfung — bleibt redaktionell, nicht juristisch geprüft
 - Verhalten bei Quelldaten-Updates, die Lizenz ändern (z. B. wenn KEIS-KOSIS auf CC0 wechseln) — operationell, nicht konzeptionell
+- AGPL-3.0-Konsequenzen für gedachte Erweiterungen (z. B. Embed-Widgets oder Drittanbieter-Forks) — bei Bedarf separat prüfen
 
 ---
 
