@@ -19,7 +19,7 @@ AIStrikeMap differenziert sich **nicht durch einen eigenen Score**, sondern durc
 | Schicht | Quelle | Verfügbarkeit |
 |---|---|---|
 | **A** | Nationaler offizieller Index (DE IAB Substituierbarkeit, UK ONS, CA StatCan, AU JSA, NL CBS, SE Arbetsförmedlingen, FR DARES, US BLS+O*NET) | 6–8 von 8 MVP-Ländern |
-| **B** | OECD Lassébie/Quintini 2024 AI Occupational Exposure | alle 8 MVP-Länder (OECD-Coverage) |
+| **B** | OECD Lassébie/Quintini 2022 AI Occupational Exposure (+ OECD Employment Outlook 2025 / "Bridging the AI Skills Gap" Apr 2025 / "Who will be the workers most affected by AI?" Okt 2024 als Edition-Folge mit gleicher Methodik) | alle 8 MVP-Länder (OECD-Coverage) |
 | **C** | Frey/Osborne 2013 Automation Probability + ILO ISCO-Mapping | universal als Fallback |
 
 Pro Beruf/Land werden alle verfügbaren Schichten gesammelt. Wenn eine Schicht fehlt (z. B. kein nationaler Index), kollabiert die Bandbreite entsprechend — das muss in der UI sichtbar gemacht werden ("nur OECD-Quelle verfügbar — Unsicherheit unbekannt").
@@ -40,14 +40,16 @@ Pro Beruf/Land werden alle verfügbaren Schichten gesammelt. Wenn eine Schicht f
   "sources": [
     {
       "layer": "A",
-      "name": "IAB Substituierbarkeitspotenzial 2024",
+      "name": "IAB-Forschungsbericht 23/2025 — Substituierbarkeitspotenzial",
+      "year": 2025,
       "value": 0.61,
       "url": "https://...",
       "methodology": "Anteil der Tätigkeiten, die heute schon technisch ersetzbar wären"
     },
     {
       "layer": "B",
-      "name": "OECD Lassébie/Quintini 2024",
+      "name": "OECD Lassébie/Quintini 2022",
+      "year": 2022,
       "value": 0.42,
       "url": "https://...",
       "methodology": "Überlappung von AI-Capabilities mit Berufstätigkeiten (deskriptiv, nicht prädiktiv)"
@@ -55,6 +57,7 @@ Pro Beruf/Land werden alle verfügbaren Schichten gesammelt. Wenn eine Schicht f
     {
       "layer": "C",
       "name": "Frey/Osborne 2013",
+      "year": 2013,
       "value": 0.83,
       "url": "https://...",
       "methodology": "Wahrscheinlichkeit der Automatisierung in 10–20 Jahren"
@@ -91,10 +94,10 @@ Wichtig für die UI-Methodik-Vermerke — die publizierten Scores divergieren st
 | Studie | Misst | Zeithorizont |
 |---|---|---|
 | Frey/Osborne 2013 | Automatisierungs-*Wahrscheinlichkeit* | 10–20 Jahre |
-| OECD Lassébie/Quintini 2024 | AI-*Exposure* (deskriptiv, kein Ersatz-Verdikt) | Heute |
-| IAB Substituierbarkeit | Tätigkeits-*Anteil* technisch ersetzbar | Heute |
+| OECD Lassébie/Quintini 2022 | AI-*Exposure* (deskriptiv, kein Ersatz-Verdikt) | Heute |
+| IAB Substituierbarkeit (Forschungsbericht 23/2025) | Tätigkeits-*Anteil* technisch ersetzbar | Heute |
 | Acemoglu/Restrepo / Eloundou et al. | *Augmentation vs. Substitution* | Aktuell |
-| CEDEFOP / BLS Projections | Beschäftigungs-*Trajektorie* | 5–10 Jahre |
+| CEDEFOP / BLS Projections 2024–2034 | Beschäftigungs-*Trajektorie* | 5–10 Jahre |
 
 Eine Pflegekraft kann gleichzeitig "hoch automatisierbar" (Frey/Osborne), "mittel exposed" (OECD) und "wachsende Nachfrage" (BLS) sein — alle drei korrekt, weil verschiedene Fragen. Die Bandbreite ist deshalb nicht "Messunsicherheit", sondern "Perspektiven-Divergenz" — das muss kommunikativ klar werden.
 
@@ -110,6 +113,6 @@ Diese Fragen werden in Punkt 3 (UX/UI-Konzept) und Punkt 4 (Bias-Transparency-Ko
 
 ---
 
-*Dokument erstellt: 2026-05-01*
-*Version: 0.1 (Arbeitsstand)*
+*Dokument erstellt: 2026-05-01, Quellen-Stand verifiziert 2026-05-01*
+*Version: 0.2 (Quellen-Datierung korrigiert: Lassébie/Quintini 2022 statt 2024)*
 *Status: Methodik-Eckpfeiler entschieden — UI-Umsetzung und Bias-Transparency-Vermerke folgen in Punkt 3 und 4 der Konzeptphase*

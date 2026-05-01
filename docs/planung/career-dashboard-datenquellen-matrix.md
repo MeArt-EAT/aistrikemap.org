@@ -10,13 +10,13 @@
 
 ## Globale / supranationale Quellen (Baseline für alle Länder)
 
-| Quelle | Scope | Format | Lizenz | KI-Bezug |
-|---|---|---|---|---|
-| **OECD Employment Outlook / OECD.Stat** | 38 OECD-Mitglieder | API (SDMX-JSON), Bulk-CSV | OECD Terms & Conditions (frei für nicht-kommerzielle Nutzung mit Attribution) | Ja — OECD hat eigene AI-Exposure-Studien (Georgieff/Milanez 2021, Lassébie/Quintini 2024) |
-| **ILO ILOSTAT** | ~190 Länder | API (REST), Bulk-CSV | CC BY 4.0 | Indirekt — ISCO-basierte Beschäftigungsdaten, keine eigene AI-Metrik |
-| **Eurostat** | EU-27 + EFTA + Kandidaten | API, Bulk-TSV/CSV | Commission Decision 2011/833/EU (frei mit Attribution) | Indirekt — LFS (Labour Force Survey) nach NACE/ISCO |
-| **CEDEFOP Skills Forecast** | EU-27 | Interaktiv + CSV-Export | CEDEFOP Terms (frei mit Attribution) | Ja — Skills-Forecast adressiert Technologie-Impact |
-| **WEF Future of Jobs Report** | ~50 Länder (survey-basiert) | PDF + Datentabellen | CC BY-NC-ND 4.0 | Ja — Kern-Quelle für Disruption-Erwartungen |
+| Quelle | Aktuelle Edition (Stand 2026-05-01) | Scope | Format | Lizenz | KI-Bezug |
+|---|---|---|---|---|---|
+| **OECD Employment Outlook** | 2025 ("Can We Get Through the Demographic Crunch?", Juli 2025) | 38 OECD-Mitglieder | API (SDMX-JSON), Bulk-CSV | OECD Terms & Conditions (frei für nicht-kommerzielle Nutzung mit Attribution) | Ja — OECD hat eigene AI-Exposure-Studien (Georgieff/Milanez 2021, Lassébie/Quintini 2022, "Who will be the workers most affected by AI?" Okt 2024, "Bridging the AI Skills Gap" Apr 2025) |
+| **ILO World Employment and Social Outlook** | Trends 2025 + May 2025 Update | ~190 Länder | API (REST), Bulk-CSV | CC BY 4.0 | Direkt — WESO 2025 quantifiziert AI-driven automation exposure global |
+| **Eurostat** | laufend | EU-27 + EFTA + Kandidaten | API, Bulk-TSV/CSV | Commission Decision 2011/833/EU (frei mit Attribution) | Indirekt — LFS (Labour Force Survey) nach NACE/ISCO |
+| **CEDEFOP Skills Forecast** | Skills Forecast (laufend) | EU-27 | Interaktiv + CSV-Export | CEDEFOP Terms (frei mit Attribution) | Ja — Skills-Forecast adressiert Technologie-Impact |
+| **WEF Future of Jobs Report** | 2025 (Januar 2025; Kadenz alle 2 Jahre, nächste 2027) | ~55 Volkswirtschaften (survey-basiert) | PDF + Datentabellen | CC BY-NC-ND 4.0 | Ja — Kern-Quelle für Disruption-Erwartungen (78 Mio. Netto-Jobs, 22 % Job-Disruption bis 2030) |
 
 ---
 
@@ -26,17 +26,17 @@
 
 | # | Land | Behörde(n) | URL | Format | Lizenz | KI-Bezug |
 |---|---|---|---|---|---|---|
-| 1 | **DE** | Bundesagentur für Arbeit, Destatis, IAB | statistik.arbeitsagentur.de, destatis.de, iab.de | CSV, XLSX, API (Destatis GENESIS) | DL-DE BY 2.0 (frei mit Attribution) | IAB publiziert "Substituierbarkeitspotenzial" — direkt AI/Automation-relevant |
-| 2 | **US** | Bureau of Labor Statistics (BLS), O*NET | bls.gov, onetonline.org | CSV, API, Bulk-Files | US-Government Works (gemeinfrei) | O*NET liefert "Work Activities" → Basis für Felten/Frey/Osborne-Scores |
-| 3 | **UK** | Office for National Statistics (ONS) | ons.gov.uk | CSV, API | OGL v3 (Open Government Licence) | ONS-Studie "The probability of automation" (2019) |
-| 4 | **FR** | DARES, France Travail (ex-Pôle emploi), INSEE | dares.travail-emploi.gouv.fr, francetravail.fr, insee.fr | CSV, API | Etalab Open Licence 2.0 | France Stratégie + DARES publizieren regelmäßig zu "transformation numérique" |
+| 1 | **DE** | Bundesagentur für Arbeit, Destatis, IAB | statistik.arbeitsagentur.de, destatis.de, iab.de | CSV, XLSX, API (Destatis GENESIS) | DL-DE BY 2.0 (frei mit Attribution) | IAB publiziert "Substituierbarkeitspotenzial" laufend; aktueller Stand: IAB-Forschungsbericht 23/2025 (Juli 2025, Szenarioanalyse 15 Jahre) + IAB-Kurzbericht 5/2024 |
+| 2 | **US** | Bureau of Labor Statistics (BLS), O*NET | bls.gov, onetonline.org | CSV, API, Bulk-Files | US-Government Works (gemeinfrei) | BLS Employment Projections 2024–2034 (released Aug 2025); O*NET liefert "Work Activities" → Basis für Felten/Frey/Osborne-Scores |
+| 3 | **UK** | Office for National Statistics (ONS) | ons.gov.uk | CSV, API | OGL v3 (Open Government Licence) | ONS-Studie "The probability of automation" (2019) — **kein Update** seit 2019; UK fällt für Schicht A auf veraltete Quelle zurück oder muss auf B/C ausweichen |
+| 4 | **FR** | DARES, France Travail (ex-Pôle emploi), INSEE, France Stratégie / Haut-Commissariat | dares.travail-emploi.gouv.fr, francetravail.fr, insee.fr, strategie-plan.gouv.fr | CSV, API | Etalab Open Licence 2.0 | France Stratégie "Intelligence artificielle et travail" (Phase 3 ab Februar 2025); DARES-Seminare zu IA et emploi |
 | 5 | **JP** | MHLW, MIC Statistics Bureau (e-Stat) | mhlw.go.jp, e-stat.go.jp | CSV, Excel, API | Government of Japan Standard Terms of Use (CC BY 4.0 kompatibel) | METI/RIETI-Studien zu Automation, nicht MHLW-Kern |
-| 6 | **CA** | Statistics Canada, ESDC | statcan.gc.ca, jobbank.gc.ca | CSV, API | Statistics Canada Open Licence | StatCan hat AI-Exposure-Indexierung auf NOC-Basis (2023) |
-| 7 | **AU** | Jobs and Skills Australia, ABS | jobsandskills.gov.au, abs.gov.au | CSV, API | CC BY 4.0 | JSA publiziert "AI and the Australian labour market" (2024) |
+| 6 | **CA** | Statistics Canada, ESDC | statcan.gc.ca, jobbank.gc.ca | CSV, API | Statistics Canada Open Licence | StatCan-Reihe zu AI Occupational Exposure: "Experimental estimates" (Sep 2024), "Canadian employment trends in the era of generative AI: Early evidence" (Q1 2026), "Potential occupational exposure to AI across selected cultural industries" (2026), "…among certified journeypersons" (2026) |
+| 7 | **AU** | Jobs and Skills Australia, ABS | jobsandskills.gov.au, abs.gov.au | CSV, API | CC BY 4.0 | JSA "Generative AI Capacity Study — Our Gen AI Transition: Implications for Work and Skills" + "Jobs and Skills Report 2025" |
 | 8 | **ES** | SEPE, INE | sepe.es, ine.es | CSV, XLSX, API (INE) | Aviso Legal INE (frei mit Attribution) | Indirekt — EPA (Encuesta Población Activa) |
 | 9 | **IT** | ANPAL, ISTAT, INAPP | anpal.gov.it, istat.it, inapp.gov.it | CSV, API (I.Stat) | CC BY 3.0 IT | INAPP-Studien zu "rischio automazione" |
-| 10 | **NL** | CBS, UWV | cbs.nl, uwv.nl | CSV, API (StatLine OData) | CBS Open Data | CBS hat "Risico op automatisering"-Erhebung |
-| 11 | **SE** | SCB, Arbetsförmedlingen | scb.se, arbetsformedlingen.se | CSV, API (PxWeb) | CC0 1.0 | Arbetsförmedlingen "Yrkeskompassen" inkl. Digitalisierungsrisiko |
+| 10 | **NL** | CBS, UWV, SER | cbs.nl, uwv.nl, ser.nl | CSV, API (StatLine OData) | CBS Open Data | CBS "AI-monitor 2024" (publiziert 2025); SER-Advies 25/03 "AI en werk" (Mai 2025) als breitere staatliche AI-Arbeit-Perspektive |
+| 11 | **SE** | SCB, Arbetsförmedlingen | scb.se, arbetsformedlingen.se | CSV, API (PxWeb) | CC0 1.0 | Arbetsförmedlingen "Yrkeskompassen" + "Automatiseringen på den svenska arbetsmarknaden" inkl. Digitalisierungsrisiko |
 | 12 | **KR** | KOSIS, KEIS | kosis.kr, keis.or.kr | CSV, Excel, API (KOSIS) | KOGL Type 1 (frei mit Attribution) | KEIS publiziert AI-Impact-Reports (koreanisch) |
 | 13 | **CH** | SECO, BFS | seco.admin.ch, bfs.admin.ch | CSV, API | OGD CH (frei mit Attribution) | BFS hat Digitalisierungs-Indikatorensystem |
 | 14 | **AT** | AMS, Statistik Austria | ams.at, statistik.at | CSV, API (OGD Austria) | CC BY 4.0 | AMS "Qualifikationsbarometer" mit Technologie-Komponente |
@@ -160,6 +160,25 @@ Score-Bundle jährlich + Headline-Layer (Top-Berufe, Arbeitslosenquote, Kurz-Tre
 
 ---
 
-*Dokument erstellt: 2026-04-21*
-*Version: 0.1 (Arbeitsstand)*
-*Status: Ideensammlung, keine Umsetzungsfreigabe — Matrix-Einträge ungeprüft, URLs und Lizenzen vor Umsetzung verifizieren*
+## Aktualisierung 2026-05-01 · Quellen-Stand bei Step-1-Implementierung verifiziert
+
+Bei Implementierungs-Beginn (`scripts/bundle-career-data.js` Step 1) wurde der Quellen-Stand gegen aktuelle Editionen geprüft. Befunde:
+
+- **Datierungs-Fehler korrigiert:** Lassébie/Quintini ist von **2022**, nicht 2024 (frühere V0.1-Annahme war falsch).
+- **WEF FoJ:** Edition **2025** (Januar 2025) — im MVP-Score-Modell ohnehin nicht verwendet (CC BY-NC-ND-Lizenz, siehe `career-dashboard-recht.md`).
+- **OECD Employment Outlook 2025** (Juli 2025) ist als Schicht-B-Surrogat einsetzbar; Lassébie/Quintini 2022 bleibt der Methodik-Anker.
+- **ILO WESO Trends 2025** + May 2025 Update: AI-Exposure jetzt direkt quantifiziert (~25 % der Arbeitenden mit Exposure).
+- **BLS Employment Projections 2024–2034** released August 2025 — ersetzt frühere 2022–2032-Edition.
+- **IAB:** Forschungsbericht 23/2025 (Juli 2025) ergänzt das Substituierbarkeitspotenzial um 15-Jahres-Szenarioanalyse.
+- **StatCan CA:** kontinuierliche AI-Exposure-Reihe 2024–Q1 2026.
+- **JSA AU:** Generative AI Capacity Study + Jobs and Skills Report 2025.
+- **SER NL:** Advies 25/03 "AI en werk" (Mai 2025) als zusätzliche niederländische Quelle.
+- **ONS UK:** kein Update seit 2019 — UK braucht für viele ISCO-Codes Schicht-B/C-Fallback.
+
+Alle inline aktualisiert. Pro-Quelle-URLs werden zur Laufzeit pro Datenpunkt im `sources[].url`-Feld hinterlegt (siehe Score-JSON-Schema), nicht in dieser Matrix.
+
+---
+
+*Dokument erstellt: 2026-04-21, aktualisiert 2026-05-01*
+*Version: 0.2 (Quellen-Stand verifiziert)*
+*Status: Aktualisierte Editions-Stände und korrigierter Datierungsfehler (Lassébie/Quintini 2022) — bereit für Step-2-Loader-Anbindung*

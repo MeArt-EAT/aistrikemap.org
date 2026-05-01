@@ -37,22 +37,31 @@ const DIVERGENT_STDDEV_CUTOFF = 0.15;
 const OUTLIER_FACTOR = 1.5;
 const STALE_THRESHOLD_YEARS = 3;
 
-// Source-layer license metadata, sourced from career-dashboard-recht.md.
+// Source-layer license metadata, sourced from career-dashboard-recht.md and
+// the Quellen-Stand verification of 2026-05-01 in career-dashboard-datenquellen-matrix.md.
+// URLs point to stable topic / institution pages; per-datapoint report URLs
+// are written to sources[].url at load time.
 const LAYER_A_LICENSES = {
-  DE: { name: 'IAB Substituierbarkeitspotenzial', license: 'DL-DE BY 2.0', url: 'https://www.iab.de/' },
-  US: { name: 'BLS / O*NET Work Activities', license: 'US Government Works', url: 'https://www.onetonline.org/' },
-  UK: { name: 'ONS Probability of Automation', license: 'OGL v3', url: 'https://www.ons.gov.uk/' },
-  FR: { name: 'DARES / France Stratégie', license: 'Etalab Open Licence 2.0', url: 'https://dares.travail-emploi.gouv.fr/' },
-  CA: { name: 'Statistics Canada AI Exposure (NOC)', license: 'Statistics Canada Open Licence', url: 'https://www.statcan.gc.ca/' },
-  NL: { name: 'CBS Risico op automatisering', license: 'CBS Open Data', url: 'https://www.cbs.nl/' },
-  SE: { name: 'Arbetsförmedlingen Yrkeskompassen', license: 'CC0 1.0', url: 'https://arbetsformedlingen.se/' },
-  AU: { name: 'Jobs and Skills Australia AI Index', license: 'CC BY 4.0', url: 'https://www.jobsandskills.gov.au/' }
+  DE: { name: 'IAB Substituierbarkeitspotenzial (Forschungsbericht 23/2025)', license: 'DL-DE BY 2.0', url: 'https://iab.de/' },
+  US: { name: 'BLS Employment Projections + O*NET Work Activities', license: 'US Government Works', url: 'https://www.bls.gov/emp/' },
+  // UK has no Schicht-A update since 2019 — frontend should treat UK Layer A
+  // as stale by default; loaders may prefer Schicht B.
+  UK: { name: 'ONS Probability of Automation (2019, no update)', license: 'OGL v3', url: 'https://www.ons.gov.uk/' },
+  FR: { name: 'France Stratégie / DARES — Intelligence artificielle et travail', license: 'Etalab Open Licence 2.0', url: 'https://www.strategie-plan.gouv.fr/' },
+  CA: { name: 'Statistics Canada AI Occupational Exposure series', license: 'Statistics Canada Open Licence', url: 'https://www150.statcan.gc.ca/' },
+  NL: { name: 'CBS AI-monitor / SER-Advies AI en werk', license: 'CBS Open Data', url: 'https://www.cbs.nl/' },
+  SE: { name: 'Arbetsförmedlingen Yrkeskompassen + Automatiseringen', license: 'CC0 1.0', url: 'https://arbetsformedlingen.se/' },
+  AU: { name: 'Jobs and Skills Australia — Generative AI Capacity Study', license: 'CC BY 4.0', url: 'https://www.jobsandskills.gov.au/' }
 };
 
+// Schicht B: methodological anchor is Lassébie/Quintini (2022); follow-up
+// OECD reports (Employment Outlook 2025, "Bridging the AI Skills Gap" 2025,
+// "Who will be the workers most affected by AI?" 2024) extend the same
+// exposure framework and may be loaded as Layer B updates per ISCO/country.
 const LAYER_B_LICENSE = {
-  name: 'OECD Lassébie/Quintini AI Occupational Exposure',
+  name: 'OECD AI Occupational Exposure (Lassébie/Quintini 2022 + follow-ups)',
   license: 'OECD Terms & Conditions',
-  url: 'https://www.oecd.org/'
+  url: 'https://www.oecd.org/en/topics/ai-and-work.html'
 };
 
 const LAYER_C_LICENSE = {
@@ -275,16 +284,18 @@ function writeManifest(outDir, manifest) {
 
 function sampleEntries(currentYear) {
   // Two illustrative entries that exercise robust + sparse paths and several
-  // edge-case flags. Replaced by real loader output in step 2.
+  // edge-case flags. Year fields reflect actual source editions (verified
+  // 2026-05-01) so the stale-source flag fires authentically when applicable.
+  // Replaced by real loader output in step 2.
   const robust = buildEntry({
     isco: '2330',
     country: 'DE',
     year: currentYear,
     currentYear,
     sources: [
-      { layer: 'A', ...LAYER_A_LICENSES.DE, value: 0.55, year: currentYear - 1, methodology: 'Anteil ersetzbarer Tätigkeiten' },
-      { layer: 'B', ...LAYER_B_LICENSE,     value: 0.50, year: currentYear - 2, methodology: 'AI-Exposure deskriptiv' },
-      { layer: 'C', ...LAYER_C_LICENSE,     value: 0.62, year: 2013,            methodology: 'Automation probability 10–20 Jahre' }
+      { layer: 'A', ...LAYER_A_LICENSES.DE, value: 0.55, year: 2025, methodology: 'Anteil ersetzbarer Tätigkeiten (IAB-Forschungsbericht 23/2025)' },
+      { layer: 'B', ...LAYER_B_LICENSE,     value: 0.50, year: 2022, methodology: 'AI-Exposure deskriptiv (Lassébie/Quintini 2022)' },
+      { layer: 'C', ...LAYER_C_LICENSE,     value: 0.62, year: 2013, methodology: 'Automation probability 10–20 Jahre' }
     ]
   });
   const sparse = buildEntry({
@@ -293,7 +304,7 @@ function sampleEntries(currentYear) {
     year: currentYear,
     currentYear,
     sources: [
-      { layer: 'B', ...LAYER_B_LICENSE, value: 0.38, year: currentYear - 2, methodology: 'AI-Exposure deskriptiv' }
+      { layer: 'B', ...LAYER_B_LICENSE, value: 0.38, year: 2022, methodology: 'AI-Exposure deskriptiv (Lassébie/Quintini 2022)' }
     ]
   });
   return [robust, sparse];
