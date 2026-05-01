@@ -76,10 +76,12 @@ Der gemeinsame Nav-Pattern (`nav-toggle`-Button + `<nav>`-Element ARIA-Labels) i
 | `js/nav.js` | ✅ | ✅ Zeile 38 | OK |
 | `js/radar.js` | ✅ ausgiebig | ✅ Zeile 51 | OK |
 | `js/detail-panel.js` | ✅ ausgiebig | ✅ ergänzt 2026-05-01 | **Fix gelandet** |
-| `js/map.js` | ✅ | ❌ | siehe unten |
+| `js/map.js` | ✅ | ✅ ergänzt 2026-05-01 | OK (Marker-Popups) |
 | `js/strike-ticker.js` | – (keine Strings) | – | OK |
 
-**`js/map.js`** rendert Marker-Popups via `I18n.t()`, hat aber keinen `i18n:changed`-Listener. Effekt: Wenn ein Popup beim Sprachwechsel offen ist, bleibt es in alter Sprache bis zum nächsten Klick. Niedrige Schwere — Popup ist transienter UI-Zustand. Kann als "could-be-cleaner" stehen oder mit gleichem Pattern wie detail-panel.js fixen.
+**`js/map.js`** Fix 2026-05-01: `lastIncidents`-State plus `i18n:changed`-Listener, der bei Sprachwechsel `addMarkers(lastIncidents, true)` aufruft (skipAnimation, damit keine Entrance-Pulse neu starten). Re-bindPopup() liefert beim nächsten Klick die korrekt lokalisierte Popup-Darstellung. Falls ein Popup beim Sprachwechsel offen war, muss es einmal geschlossen und neu geöffnet werden — pragmatisches Minimum, weil Popups transient sind.
+
+**Verbleibend in `js/map.js` (Restschwäche, niedrige Priorität):** `addRadarMarkers()` rendert in den Radar-Marker-Popups die `status`-ID direkt als Anzeige (Zeile 261), statt `I18n.t('radar.status.' + status)` zu nutzen. Auch das "Details →"-Link-Label ist hardcoded. Niedrige Schwere weil Radar-Pool nur 6 Marker hat. Kann separat gefixt werden.
 
 **`js/detail-panel.js` Fix:** `currentIncident`-State plus `i18n:changed`-Listener, der via `show(currentIncident)` re-rendert wenn das Panel offen ist. Behebt den eigentlichen User-Eindruck "nur das Menü übersetzt" für den Hauptanwendungsfall (offener Vorfall beim Sprachwechsel).
 

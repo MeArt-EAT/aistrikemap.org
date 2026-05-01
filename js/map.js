@@ -8,6 +8,7 @@ const StrikeMap = (function () {
   let markerLayer;
   let pulseLayer;
   let pulseOverlays = [];
+  var lastIncidents = null;
   const SEVERITY_COLORS = {
     1: '#3498db',
     2: '#f39c12',
@@ -86,6 +87,13 @@ const StrikeMap = (function () {
     setTimeout(applyHashView, 500);
     window.addEventListener('hashchange', applyHashView);
 
+    // Re-render marker popups when language changes so localized strings
+    // (severity-Label, retracted/unverified status) reflect the active
+    // language. skipAnimation=true to avoid re-running entrance pulses.
+    document.addEventListener('i18n:changed', function () {
+      if (lastIncidents) addMarkers(lastIncidents, true);
+    });
+
     return map;
   }
 
@@ -105,6 +113,7 @@ const StrikeMap = (function () {
   }
 
   function addMarkers(incidents, skipAnimation) {
+    lastIncidents = incidents;
     clearMarkers();
 
     // Sort: newest first for staggered animation
