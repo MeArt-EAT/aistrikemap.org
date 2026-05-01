@@ -48,7 +48,7 @@ Each incident JSON-LD file contains:
 
 - **Language**: UI and planning docs in German, code/comments in English
 - **i18n is full-coverage, not menu-only**: AIStrikeMap is an international site. Every user-visible string on every page must have a `data-i18n` attribute and a corresponding key in BOTH `i18n/de.json` AND `i18n/en.json`. This includes body copy, headings, captions, button labels, aria-labels, alt-texts, error messages, status indicators — not just navigation. Hardcoded German text in HTML is a bug. Verify after every UI change that switching DE↔EN actually swaps every visible string.
-- **Umlaute richtig schreiben**: ä, ö, ü, ß — niemals ae, oe, ue, ss. Gilt für: HTML-Inhalte, JSON-Strings (UI-Texte und Daten), Markdown-Dokumentation, Commit-Messages, Dateinamen wo deutsch (URLs/Slugs sind Ausnahme; dort bewusste Transliteration). Bei Datei-Encoding immer UTF-8.
+- **Umlaute richtig schreiben**: ä, ö, ü, ß — niemals ae, oe, ue, ss. Gilt für: HTML-Inhalte, JSON-Strings als Display-Werte, Markdown-Dokumentation, Commit-Messages, Dateinamen wo deutsch. **Bewusste Ausnahmen** (technische Identifier dürfen transliteriert sein, weil sie Code-Verträge sind und nicht angezeigt werden): URL-Slugs (`incidents/aegypten-…`), JSON-Schlüssel und i18n-Keys (`radar.dimension.ueberwachung`), CSS-Klassennamen, JS-Variablen. Datei-Encoding immer UTF-8.
 - **No npm/node**: Everything via CDN or vanilla JS. Do not introduce a build step.
 - **CSS variables**: All colors/spacing via `:root` custom properties in main.css
 - **i18n keys**: Flat keys in de.json/en.json, referenced via `data-i18n` attributes
