@@ -1,0 +1,178 @@
+/**
+ * AIStrikeMap — Labor Impact Ticker (Item 98)
+ * Page-specific styles for the live labor-impact counters.
+ */
+
+.labor-impact-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.labor-impact-page h1 {
+  margin-top: 0;
+}
+
+.labor-impact-page__intro {
+  color: var(--text-muted, #9aa0a6);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.labor-impact__counters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0 2.5rem;
+}
+
+@media (max-width: 720px) {
+  .labor-impact__counters {
+    grid-template-columns: 1fr;
+  }
+}
+
+.labor-impact__panel {
+  background: var(--bg-elevated, #1c1f23);
+  border: 1px solid var(--border-subtle, #2a2e33);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.labor-impact__panel--displaced {
+  border-left: 3px solid #e74c3c;
+}
+
+.labor-impact__panel--created {
+  border-left: 3px solid #5db075;
+}
+
+.labor-impact__counter {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0.5rem 0;
+}
+
+.labor-impact__panel--displaced .labor-impact__counter {
+  color: #e74c3c;
+}
+
+.labor-impact__panel--created .labor-impact__counter {
+  color: #5db075;
+}
+
+.labor-impact__label {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-muted, #9aa0a6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.labor-impact__range {
+  font-size: 0.85rem;
+  color: var(--text-muted, #9aa0a6);
+  margin-top: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.labor-impact__sources-block {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-subtle, #2a2e33);
+  text-align: left;
+}
+
+.labor-impact__sources-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted, #9aa0a6);
+  margin: 0 0 0.5rem;
+}
+
+.labor-impact__sources {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.labor-impact__source {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.labor-impact__source a {
+  color: var(--accent, #f39c12);
+  text-decoration: none;
+}
+
+.labor-impact__source a:hover,
+.labor-impact__source a:focus {
+  text-decoration: underline;
+}
+
+.labor-impact__source-meta {
+  color: var(--text-muted, #9aa0a6);
+  font-variant-numeric: tabular-nums;
+}
+
+.labor-impact__source-method {
+  margin: 0.2rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted, #9aa0a6);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.labor-impact__caveat {
+  background: var(--bg-elevated, #1c1f23);
+  border: 1px solid var(--border-subtle, #2a2e33);
+  border-left: 3px solid #f39c12;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 2.5rem 0;
+}
+
+.labor-impact__caveat strong {
+  color: #f39c12;
+}
+
+.labor-impact__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted, #9aa0a6);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle, #2a2e33);
+}
+
+.labor-impact__meta a {
+  color: var(--accent, #f39c12);
+  text-decoration: none;
+}
+
+.labor-impact__meta a:hover,
+.labor-impact__meta a:focus {
+  text-decoration: underline;
+}
+
+.labor-impact__error {
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid rgba(231, 76, 60, 0.4);
+  color: #e74c3c;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+}
