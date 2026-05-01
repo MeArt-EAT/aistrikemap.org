@@ -107,12 +107,27 @@ Alternative: nur ISCO-08, nationale Codes verwerfen — Verlust an Granularität
 
 ---
 
-### TODO-3 · Datenarchitektur (Build-time vs. Client-side)
+### TODO-3 · Datenarchitektur — ENTSCHIEDEN 2026-05-01
 
-- **Build-Time-Bundle** (empfohlen): Skript zieht alle APIs, schreibt statische JSON-Files in `data/career/` — passt zum bestehenden Stack (pure HTML/CSS/JS, kein Build-Step im Browser, GitHub Pages kompatibel). Cache-busting via `?v=`. Nachteil: Daten nur so frisch wie der letzte Lauf des Bundling-Scripts.
-- **Client-side fetch**: Daten werden im Browser direkt von BLS/ONS/etc. nachgeladen. Vorteil: Live-Daten. Nachteil: CORS-Probleme bei vielen Behörden-APIs, instabile Latenz, Abhängigkeit von externer Verfügbarkeit.
+**Gewählt: Option A — Build-Time-Bundle**, analog zum bestehenden Incident-Pattern (`scripts/bundle-incidents.js`).
 
-**Entscheidungsbedarf:** Build-time ist klar überlegen für diesen Stack — aber explizit bestätigen, weil es Konsequenzen für TODO-2 hat (Update-Rhythmus = Lauf-Rhythmus des Bundling-Scripts).
+**Architektur:**
+- Lokales Node-Script `scripts/bundle-career-data.js` zieht die 8 nationalen APIs (DE/US/UK/FR/CA/NL/SE/AU)
+- Schreibt `data/career/{land}.json` pro Land + `data/career/index.json` als Manifest
+- Nutzt das gleiche `?v=`-Cache-busting-Pattern wie Incidents/Radar
+- Manueller Lauf vor Updates, JSONs werden committed → Git-versionierte Daten-Evolution
+
+**Aussortierte Alternativen** (in Optionen-Diskussion 2026-05-01 dokumentiert):
+- B (CI-Automation) — sinnvoll als Upgrade-Pfad nach 2–3 stabilen manuellen Läufen, nicht für MVP
+- C (Manuelle Kuration) — möglich für editorial Anmerkungen, nicht als Primärquelle
+- D (Aggregator-API client-seitig) — Plan-B, falls Schicht-A-Daten zu heterogen
+- E (Hybrid) — zu komplex für Solo-Betrieb
+- Pure client-side fetch — CORS-Killer (DE Bundesagentur, JP MHLW blockieren)
+- Eigener Backend-Proxy — bricht "kein Backend"-Prinzip
+
+**Konsequenz für TODO-2:** Update-Rhythmus = Lauf-Rhythmus des Bundling-Scripts. Wenn jährlich, läuft das Script jährlich. Wenn quartalsweise, quartalsweise.
+
+**Konsequenz für TODO-1:** Beruf-Taxonomie wird im Bundle-Script materialisiert — Crosswalks (falls beschlossen) als statische Lookup-Tables in `data/career/taxonomy.json`.
 
 ---
 
