@@ -111,13 +111,28 @@ ISCO-Einträge bekommen optional `"aliases": {"de": [...], "fr": [...]}` für na
 
 ---
 
-### TODO-2 · Update-Rhythmus
+### TODO-2 · Update-Rhythmus — ENTSCHIEDEN 2026-05-01
 
-- **Jährlich** = passt zu Report-Zyklen (WEF-Future-of-Jobs, OECD Employment Outlook), niedriger Wartungsaufwand, aber Daten können bis zu 12 Monate veraltet sein.
-- **Quartalsweise** = aktueller, aber viele nationale Quellen aktualisieren selbst nicht quartalsweise → Schein-Aktualität.
-- **Hybrid** = Beschäftigungs-Microdata quartalsweise (wo verfügbar), Score-Modell jährlich.
+**Gewählt: Option I — Jährlich (1× pro Jahr)** für MVP.
 
-**Entscheidungsbedarf:** Was ist ehrlich kommunizierbar — und was rechtfertigt der Pflegeaufwand für eine Solo-Betreiber-Site?
+**Architektur:**
+- Bundle-Script `scripts/bundle-career-data.js` läuft einmal pro Jahr nach den großen Report-Zyklen (WEF Future of Jobs Q1, OECD Employment Outlook Q3 — Termin nach Veröffentlichungslage)
+- Prominenter "Stand: Monat YYYY"-Timestamp in der UI, plus Quellenliste mit Jahreszahlen ("Quellen: WEF 2025, OECD Employment Outlook 2025, IAB-Studie 2024")
+- Jährliche Kadenz spiegelt die Realität der Score-Datenbasis (AI-Exposure-Studien sind selten häufiger als jährlich)
+
+**Begründung:**
+- Score ist das Kern-Deliverable; sein Datenfundament ist inhärent jährlich → höhere Kadenz produziert Schein-Aktualität
+- Solo-Betrieb-Realität: zuverlässiger jährlicher Lauf > unzuverlässiger quartalsweiser Lauf
+- Bias-Transparency-Konzept (Item 99 Punkt 4) wird durch sichtbaren Jahres-Stand gestützt
+
+**Aussortierte Alternativen** (in Optionen-Diskussion 2026-05-01 dokumentiert):
+- II (Halbjährlich) — Aufwandsverdopplung für oft minimale Score-Differenz
+- III (Quartalsweise) — Schein-Aktualität, erzwingt CI-Automation früher als nötig
+- IV (Monatlich) — Mismatch zwischen Headline-Daten und Score-Lag, ohne CI nicht leistbar
+- V (Event-getrieben) — verlockend, aber inkompatibel mit späterem CI-Automation-Pfad aus TODO-3
+
+**Upgrade-Pfad (v2): Option VI — Hybrid**
+Score-Bundle jährlich + Headline-Layer (Top-Berufe, Arbeitslosenquote, Kurz-Trends) quartalsweise. Additiv ohne MVP-Bruch — eine zweite Bundle-Pipeline kann später hinzugefügt werden, sobald nachweisbare Nachfrage existiert. UI muss dann zwei Timestamps sauber kommunizieren.
 
 ---
 
