@@ -10,9 +10,11 @@ Kleine Aufräum-Arbeiten, die **kurz vor einer Veröffentlichung** erledigt werd
 
 **Infrastruktur ist da:** `js/i18n.js` unterstützt bereits `data-i18n`, `data-i18n-aria`, `data-i18n-title`, `data-i18n-placeholder` (Zeilen 38–55). Es muss nur konsequent angewendet werden.
 
-#### Diagnose `index.html` (konkret, 2026-05-01)
+#### `index.html` ✅ ERLEDIGT 2026-05-01
 
-11 hardcoded ARIA-/Title-Strings identifiziert:
+10 hardcoded ARIA-/Title-Strings via `data-i18n-aria` / `data-i18n-title` instrumentiert, 7 neue Keys (`a11y.navOpen`, `a11y.legend`, `a11y.filterToggle`, `a11y.searchIncidents`, `a11y.minSeverity`, `a11y.minVerification`, `a11y.detailPanel`) in `i18n/{de,en}.json` ergänzt. Existierende Keys `filter.title` und `detail.close` wiederverwendet.
+
+Original-Diagnose-Tabelle als Referenz, falls Pattern für andere Pages benötigt wird:
 
 | Zeile | Element | Hardcoded String | Vorschlag i18n-Key |
 |---|---|---|---|

@@ -64,7 +64,7 @@
     <a href="index.html" class="site-header__logo" aria-label="AIStrikeMap Home">
       <span class="logo-accent">AI</span>StrikeMap
     </a>
-    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false">☰</button>
+    <button class="nav-toggle" data-i18n-aria="a11y.navOpen" aria-label="Navigation öffnen" aria-expanded="false">☰</button>
     <nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
       <a href="radar.html" data-i18n="nav.radar">Radar</a>
       <a href="labor-impact.html" data-i18n="nav.labor">AI &amp; Arbeit</a>
@@ -91,8 +91,8 @@
     <div id="map" role="application" data-i18n-aria="a11y.map" aria-label="Interaktive Weltkarte mit KI-Vorfällen"></div>
 
     <!-- Map Legend -->
-    <div class="map-legend" id="map-legend" aria-label="Kartenlegende">
-      <button class="map-legend__toggle" id="map-legend-toggle" aria-expanded="true" aria-controls="map-legend-body" title="Legende">
+    <div class="map-legend" id="map-legend" data-i18n-aria="a11y.legend" aria-label="Kartenlegende">
+      <button class="map-legend__toggle" id="map-legend-toggle" aria-expanded="true" aria-controls="map-legend-body" data-i18n-title="a11y.legend" title="Legende">
         <span aria-hidden="true">&#9432;</span>
       </button>
       <div class="map-legend__body" id="map-legend-body">
@@ -112,16 +112,16 @@
     </div>
 
     <!-- Filter Panel -->
-    <aside class="filter-panel" aria-label="Filter">
+    <aside class="filter-panel" data-i18n-aria="filter.title" aria-label="Filter">
       <div class="filter-panel__header">
         <h2 data-i18n="filter.title">Filter</h2>
-        <button class="filter-toggle-btn" aria-label="Filter ein-/ausklappen">▼</button>
+        <button class="filter-toggle-btn" data-i18n-aria="a11y.filterToggle" aria-label="Filter ein-/ausklappen">▼</button>
       </div>
       <div class="filter-panel__body">
         <!-- Search -->
         <div class="filter-section">
           <div class="filter-section__title" data-i18n="filter.search">Suche</div>
-          <input type="search" id="filter-search" class="filter-search-input" placeholder="Name, Akteur, Ort…" data-i18n-placeholder="filter.searchPlaceholder" aria-label="Vorfälle durchsuchen">
+          <input type="search" id="filter-search" class="filter-search-input" placeholder="Name, Akteur, Ort…" data-i18n-placeholder="filter.searchPlaceholder" data-i18n-aria="a11y.searchIncidents" aria-label="Vorfälle durchsuchen">
         </div>
 
         <!-- Incident Types -->
@@ -133,7 +133,7 @@
         <!-- Severity -->
         <div class="filter-section">
           <div class="filter-section__title" data-i18n="filter.severity">Schweregrad</div>
-          <input type="range" id="filter-severity" class="severity-slider" min="1" max="5" value="1" aria-label="Mindest-Schweregrad">
+          <input type="range" id="filter-severity" class="severity-slider" min="1" max="5" value="1" data-i18n-aria="a11y.minSeverity" aria-label="Mindest-Schweregrad">
           <div class="severity-labels">
             <span>1</span>
             <span id="severity-value">Bedenklich</span>
@@ -144,7 +144,7 @@
         <!-- Verification -->
         <div class="filter-section">
           <div class="filter-section__title" data-i18n="filter.verification">Verifizierung</div>
-          <input type="range" id="filter-verification" class="severity-slider" min="1" max="4" value="1" aria-label="Mindest-Verifizierungsstufe">
+          <input type="range" id="filter-verification" class="severity-slider" min="1" max="4" value="1" data-i18n-aria="a11y.minVerification" aria-label="Mindest-Verifizierungsstufe">
           <div class="severity-labels">
             <span>1</span>
             <span id="verification-value">Gemeldet</span>
@@ -178,10 +178,10 @@
     </aside>
 
     <!-- Detail Panel -->
-    <section id="detail-panel" class="detail-panel" aria-label="Vorfall-Details" tabindex="-1">
+    <section id="detail-panel" class="detail-panel" data-i18n-aria="a11y.detailPanel" aria-label="Vorfall-Details" tabindex="-1">
       <div class="detail-panel__header">
         <h2 class="detail-panel__title"></h2>
-        <button class="detail-close-btn" aria-label="Schließen">&times;</button>
+        <button class="detail-close-btn" data-i18n-aria="detail.close" aria-label="Schließen">&times;</button>
       </div>
       <div class="detail-panel__body"></div>
     </section>
