@@ -5,7 +5,7 @@ Zentrale Übersicht aller Items und ihrer Quelldokumente.
 | Item-Bereich | Modul / Phase | Quelldokument | Status |
 |---|---|---|---|
 | 1–93 | Phase 1 – Incident-Karte | [AIStrikeMap_Planungsinventar_v3.docx](../../AIStrikeMap_Planungsinventar_v3.docx) | Abgeschlossen |
-| 94–99 | Phase 2 – AI Career Impact Dashboard | [phase-2-career-dashboard.md](phase-2-career-dashboard.md) | Idee |
+| 94–99 | Phase 2 – AI Career Impact Dashboard | [phase-2-career-dashboard.md](phase-2-career-dashboard.md) · Datenquellen-Matrix für Item 99 Punkt 1: [career-dashboard-datenquellen-matrix.md](career-dashboard-datenquellen-matrix.md) | Idee · Konzeptphase begonnen |
 | 100–103 | Phase 2 – AI Live-Radar | [phase-2-live-radar.md](phase-2-live-radar.md) | MVP live |
 
 ## Drei-Zeitebenen-Modell
@@ -18,4 +18,4 @@ Zentrale Übersicht aller Items und ihrer Quelldokumente.
 
 ---
 
-*Letzte Aktualisierung: 2026-04-13*
+*Letzte Aktualisierung: 2026-05-01*
