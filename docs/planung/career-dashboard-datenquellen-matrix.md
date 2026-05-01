@@ -87,13 +87,27 @@ Auswahlkriterium: dokumentierter API-Zugang + offene Lizenz + (überwiegend) eig
 
 ## Offene TODOs (vor Umsetzung zu klären)
 
-### TODO-1 · Beruf-Taxonomie
+### TODO-1 · Beruf-Taxonomie — ENTSCHIEDEN 2026-05-01
 
-ISCO-08 als Lingua Franca + nationale Crosswalks (DE KldB-2010, US SOC-2018, UK SOC-2020, FR ROME, CA NOC-2021, NL ISCO-direct, SE SSYK-2012, AU ANZSCO)?
+**Gewählt: Option β — Pure ISCO-08 auf 4-digit-Ebene (436 Unit Groups)** für MVP.
 
-Alternative: nur ISCO-08, nationale Codes verwerfen — Verlust an Granularität, aber massive Vereinfachung.
+**Architektur:**
+- Master-Liste in `data/career/taxonomy.json` mit ISCO-08-Codes (4-digit) als Primärschlüssel
+- Alle 8 nationalen Datensätze rollen auf ISCO-08 hoch (Mapping-Logik im Bundle-Script `scripts/bundle-career-data.js`)
+- Cross-Country-Vergleich (Kern-UX "Land anklicken und Daten sehen") funktioniert per Default
+- Granularität reicht für reale Differenzierungen (z. B. Pflegehelfer / Krankenpfleger / Pflegefachkraft)
 
-**Entscheidungsbedarf:** Granularität vs. Wartungsaufwand.
+**Upgrade-Pfad (v2): Option δ — Search-Aliase**
+ISCO-Einträge bekommen optional `"aliases": {"de": [...], "fr": [...]}` für native Begriffssuche. Display bleibt ISCO. Inkrementell pro Land hinzufügbar, ohne Datenarchitektur zu brechen.
+
+**Aussortierte Alternativen** (in Optionen-Diskussion 2026-05-01 dokumentiert):
+- α (3-digit ISCO, 130 Minor Groups) — zu grob, "Pflegekraft" und "Hebamme" verschmelzen
+- γ (volle nationale Crosswalks) — 8 Pflegeobjekte, doppelter UI-Modus, FR/ROME-Mapping fragil; nicht für absehbare Zukunft
+- ε (Hybrid mit Toggle) — overengineered für MVP
+
+**Konsequenz für Bundle-Script:**
+- Pro Land braucht es eine ISCO-Mapping-Logik (NL/SE direkt, UK/US/CA/AU offiziell, DE/FR mit Qualitäts-Vorbehalt)
+- Mappings werden im Script materialisiert, nicht zur Laufzeit berechnet
 
 ---
 
