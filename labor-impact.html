@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AIStrikeMap AI & Arbeit — Live-Zähler für KI-bedingte globale Arbeitsplatz-Veränderungen. Quellen: WEF, OECD, ILO.">
+  <meta name="description" content="AIStrikeMap AI & Arbeit — Bandbreiten-Anzeige für KI-Exposition globaler Erwerbstätiger. Quellen: WEF, OECD, ILO.">
   <title>AI &amp; Arbeit — AIStrikeMap</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="AI & Arbeit — AIStrikeMap">
-  <meta property="og:description" content="Live-Zähler für KI-bedingte globale Arbeitsplatz-Veränderungen.">
+  <meta property="og:description" content="Bandbreiten-Anzeige für KI-Exposition globaler Erwerbstätiger 2025–2030.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aistrikemap.org/labor-impact.html">
   <link rel="stylesheet" href="css/base.css?v=1">
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/cross-links.css?v=1">
   <link rel="stylesheet" href="css/subpages.css?v=1">
   <link rel="stylesheet" href="css/responsive.css?v=1">
-  <link rel="stylesheet" href="css/labor-impact.css?v=1">
+  <link rel="stylesheet" href="css/labor-impact.css?v=2">
 </head>
 <body>
   <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Zum Inhalt springen</a>
@@ -50,53 +50,65 @@
   <main id="main-content" class="labor-impact-page">
     <h1 data-i18n="labor.title">AI &amp; Arbeit</h1>
     <p class="labor-impact-page__intro" data-i18n="labor.intro">
-      Was passiert weltweit, während Sie hier sind? Diese Zähler schätzen die globale
-      Auswirkung von KI auf Arbeitsplätze in Echtzeit — basierend auf den Jahres-Schätzungen
-      aus drei großen Reports. Die Bandbreite spiegelt unterschiedliche methodische Ansätze
-      der Quellen wider, nicht Mess-Ungenauigkeit.
+      Wie viele Erwerbstätige sind weltweit von Künstlicher Intelligenz betroffen?
+      Diese Anzeige zeigt die Bandbreite aus drei großen Reports — getrennt nach
+      Substitution (Tätigkeiten, die KI ersetzen kann) und Augmentation (Tätigkeiten,
+      die KI erweitert oder produktiver macht). Statt eines Saldos zeigen wir, was die
+      Quellen tatsächlich messen.
     </p>
 
     <div id="labor-impact-error" class="labor-impact__error" style="display:none" data-i18n="labor.error">
       Daten konnten nicht geladen werden.
     </div>
 
-    <div class="labor-impact__counters">
-      <section class="labor-impact__panel labor-impact__panel--displaced" aria-labelledby="displaced-heading">
-        <span id="labor-impact-displaced-label" class="labor-impact__label" data-i18n="labor.displacedLabel">
-          Verdrängte Arbeitsplätze
-        </span>
-        <div id="displaced-heading" class="visually-hidden">Verdrängte Arbeitsplätze, Live-Zähler</div>
-        <div id="labor-impact-displaced-counter" class="labor-impact__counter" aria-live="polite" aria-atomic="true">−0</div>
-        <div id="labor-impact-displaced-range" class="labor-impact__range">…</div>
-
-        <div class="labor-impact__sources-block">
-          <h3 class="labor-impact__sources-heading" data-i18n="labor.sources">Quellen</h3>
-          <ul id="labor-impact-displaced-sources" class="labor-impact__sources"></ul>
-        </div>
+    <div class="labor-impact__exposures">
+      <section class="labor-impact__panel labor-impact__panel--substitution"
+               data-i18n-aria="labor.substitutionHeading"
+               aria-label="Substitutions-Exposure, Bandbreite">
+        <span class="labor-impact__label" data-i18n="labor.substitutionLabel">Substitutions-Exposure</span>
+        <div id="labor-impact-substitution-range" class="labor-impact__range-big" aria-live="polite">…</div>
+        <p class="labor-impact__panel-desc" data-i18n="labor.substitutionDesc">
+          Anteil der globalen Erwerbstätigen, deren Tätigkeiten KI-Systeme ersetzen
+          könnten — nicht müssen.
+        </p>
       </section>
 
-      <section class="labor-impact__panel labor-impact__panel--created" aria-labelledby="created-heading">
-        <span id="labor-impact-created-label" class="labor-impact__label" data-i18n="labor.createdLabel">
-          Neue Arbeitsplätze
-        </span>
-        <div id="created-heading" class="visually-hidden">Neue Arbeitsplätze, Live-Zähler</div>
-        <div id="labor-impact-created-counter" class="labor-impact__counter" aria-live="polite" aria-atomic="true">+0</div>
-        <div id="labor-impact-created-range" class="labor-impact__range">…</div>
-
-        <div class="labor-impact__sources-block">
-          <h3 class="labor-impact__sources-heading" data-i18n="labor.sources">Quellen</h3>
-          <ul id="labor-impact-created-sources" class="labor-impact__sources"></ul>
-        </div>
+      <section class="labor-impact__panel labor-impact__panel--augmentation"
+               data-i18n-aria="labor.augmentationHeading"
+               aria-label="Augmentations-Exposure, Bandbreite">
+        <span class="labor-impact__label" data-i18n="labor.augmentationLabel">Augmentations-Exposure</span>
+        <div id="labor-impact-augmentation-range" class="labor-impact__range-big" aria-live="polite">…</div>
+        <p class="labor-impact__panel-desc" data-i18n="labor.augmentationDesc">
+          Anteil der globalen Erwerbstätigen, deren Tätigkeiten KI-Systeme erweitern
+          oder produktiver machen — nicht ersetzen.
+        </p>
       </section>
     </div>
+
+    <section class="labor-impact__progress" aria-labelledby="progress-heading">
+      <h2 id="progress-heading" class="labor-impact__progress-title" data-i18n="labor.progressTitle">
+        Beobachtungs-Periode
+      </h2>
+      <p class="labor-impact__progress-anchor" id="labor-impact-progress-anchor"></p>
+      <div class="labor-impact__progress-bar" role="progressbar" id="labor-impact-progress-bar"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="labor-impact__progress-fill" id="labor-impact-progress-fill"></div>
+      </div>
+      <p class="labor-impact__progress-text" id="labor-impact-progress-text"></p>
+    </section>
+
+    <section class="labor-impact__sources-section" aria-labelledby="sources-heading">
+      <h2 id="sources-heading" class="labor-impact__sources-section-title" data-i18n="labor.sources">Quellen</h2>
+      <ul id="labor-impact-sources" class="labor-impact__sources"></ul>
+    </section>
 
     <aside class="labor-impact__caveat" role="note">
       <strong data-i18n="labor.caveatTitle">Wichtiger Hinweis:</strong>
       <span data-i18n="labor.caveatBody">
-        Die Quellen messen unterschiedliche Phänomene (Verdrängung, Capability-Überlappung,
-        Augmentation). Eine breite Bandbreite reflektiert Perspektiven-Divergenz in der
-        Forschung, nicht Mess-Ungenauigkeit. Diese Zähler sind keine Prognose, sondern eine
-        Schätzung auf Basis veröffentlichter Reports.
+        Substitution und Augmentation sind keine Bilanz. Brutto-Verdrängung und
+        Brutto-Schaffung sind asymmetrisch — ein Bagger ersetzt sichtbar viele
+        Schaufler, der Bagger-Hersteller-Hebel ist klein und produktivitäts-asymmetrisch.
+        Deshalb kein Saldo. Die Quellen messen Exposure (Berührung), nicht Realisierung.
       </span>
     </aside>
 
@@ -113,7 +125,7 @@
   </footer>
   <script src="js/i18n.js?v=3"></script>
   <script src="js/nav.js?v=3"></script>
-  <script src="js/labor-impact.js?v=1"></script>
+  <script src="js/labor-impact.js?v=2"></script>
   <script>
     I18n.load(I18n.getStoredLang()).then(function () {
       LaborImpact.init();

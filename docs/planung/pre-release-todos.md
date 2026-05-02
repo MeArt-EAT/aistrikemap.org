@@ -105,6 +105,29 @@ Der gemeinsame Nav-Pattern (`nav-toggle`-Button + `<nav>`-Element ARIA-Labels) i
 
 **Konvention für die Zukunft** ist jetzt in `CLAUDE.md` unter "Conventions" verankert — beide Punkte (i18n-Vollabdeckung + Umlaute) sind Pflicht für neue Inhalte.
 
+### Item 98 Labor Impact v0.2 — Bandbreiten-Anteile verifizieren
+
+**Hintergrund:** Item 98 wurde am 2026-05-01 vom Worldometers-Style-Counter (displaced/created) auf eine statische Exposure-Bandbreiten-Anzeige umgebaut (β2, siehe `js/labor-impact.js` v0.2 + `data/labor-impact-rates.json` v0.2). Anlass war die methodische Kritik, dass Brutto-Verdrängung und Brutto-Schaffung asymmetrisch sind ("Bagger-Hebel"-Argument) und die Quellen explizit *kein* Saldo liefern.
+
+**Aktuelle Anteile (preliminary):**
+
+- `substitution.low/median/high_pct`: 8 / 10 / 12
+- `augmentation.low/median/high_pct`: 14 / 16 / 18
+
+Diese Bandbreiten sind grobe Schätzungen, abgeleitet aus den Headline-Aussagen der drei Quellen plus der ILO-Substitutions-/Augmentations-Trennung. Sie sind methodisch plausibel, aber nicht direkt aus den Original-Reports zitiert.
+
+**Aufgabe vor Bewerbung des Moduls:**
+
+1. WEF Future of Jobs Report 2025 (PDF): genaue Substitutions- vs. Augmentations-Anteile aus Survey-Daten extrahieren
+2. OECD Employment Outlook 2025: konkrete Exposure-Anteile pro Kategorie nachschlagen
+3. ILO WESO Trends 2025 + May 2025 Update: ILO-Substitutions-/Augmentations-Trennung in Prozent
+4. Bandbreiten in `data/labor-impact-rates.json` aktualisieren, `preliminary: true` entfernen
+
+**Zusätzlich:**
+
+- Caveat-Box (Bagger-Argument) prüfen, ob sie methodisch wasserdicht formuliert ist — aktuell `i18n/{de,en}.json` Key `labor.caveatBody`.
+- Header `og:description` der `labor-impact.html` ist umgestellt auf "Bandbreiten-Anzeige" — bei Verifikation prüfen, ob das semantisch passt.
+
 ---
 
 ---
