@@ -1,22 +1,30 @@
-# Phase 2 — Labor-Impact-Cases (Item 105–107)
+# Phase 2 — Labor-Impact-Cases (Items 105–108)
 
-**Status:** Architektur-Skelett 2026-05-01 angelegt. Erst-Case (SAP) drin. Bundle-Script live. Frontend-Rebuild + Map-Modul + Auto-Update als folgende Slots.
+**Status:** Items 105 + 106 + 108 **live**, Item 107 konzipiert. Stand 2026-05-02: 4 Cases (SAP DE, IBM US, Klarna SE, Amazon US) = 32.500 Stellen in 3 Ländern auf Karte sichtbar. Crowdsourcing-Eingang offen. Cases-Erweiterung läuft als Sonntags-Routine.
 
 **Zweck:** AIStrikeMap wird **eigene primäre Quelle** für konkret gemeldete KI-bedingte Stellen-Veränderungen weltweit — nicht nur Aggregator von OECD/WEF/ILO-Studien. Schließt die Lücke, dass globale Layoff-Tracker mit AI-Attribution fehlen (außer US-Challenger).
 
 ---
 
-## Iterations-Verlauf 2026-05-01
+## Iterations-Verlauf 2026-05-01 / 2026-05-02
 
-Item 98 (Labor Impact Ticker) wurde an einem Tag durch fünf Konzept-Iterationen geführt. Die Reise dokumentiert das Lernen:
+Item 98 (Labor Impact Ticker) wurde an einem Tag durch fünf Konzept-Iterationen geführt, dann zog sich die Erkenntnis durch eigene Module weiter:
 
 1. **v0.1** — Worldometers-Counter `displaced` / `created`, `startTime = Date.now()`. Verworfen: Saldo-Suggestion + Aufruf-relativer Start.
-2. **v0.2** — Statische Bandbreiten-Anzeige (Substitution / Augmentation), Beobachtungs-Periode mit Fortschrittsbalken. Verworfen: zu langweilig (User-Feedback "kein Bewegung"), Beobachtungs-Periode bringt Verfallsdatum-Effekt.
-3. **v0.3** — Tickender Counter mit fixem Anker (1.1.2025 = WEF FoJ 2025), Periode interner Berechnungs-Wert ohne UI-Anzeige. **Live auf main.** Aber: Counter-Werte sind Studien-Potenzial, nicht realisierte Realität.
+2. **v0.2** — Statische Bandbreiten-Anzeige (Substitution / Augmentation), Beobachtungs-Periode mit Fortschrittsbalken. Verworfen: zu langweilig (User-Feedback "keine Bewegung"), Beobachtungs-Periode bringt Verfallsdatum-Effekt.
+3. **v0.3** — Tickender Counter mit fixem Anker (1.1.2025 = WEF FoJ 2025), Periode interner Berechnungs-Wert ohne UI-Anzeige. Live auf main. Aber: Counter-Werte sind Studien-Potenzial, nicht realisierte Realität.
 4. **Konzept-Pivot** — Nutzer-Feedback "Theorie vs. Praxis als Botschaft". Realität-Block muss ergänzt werden.
-5. **Architektur-Entscheidung** (dieser Doku-Slot) — Realität-Block braucht eigene Daten-Basis; weder Radar noch Incidents bedienen das. Neues Cases-Sub-System.
+5. **Architektur-Entscheidung** (Item 105 dieser Doku) — Realität-Block braucht eigene Daten-Basis; weder Radar noch Incidents bedienen das. Neues Cases-Sub-System.
+6. **v0.4** (2026-05-02) — 3-Ebenen-Layout auf `labor-impact.html`: Potentialanalyse + Plan (WEF Survey 41/77/47 %) + Realität (Aggregat aus Cases-DB). Drei farbige Sektion-Akzente (orange/lila/rot). Cross-Links zur Map + zum Issue-Template.
+7. **Item 106 Map-Modul** (2026-05-02) — `labor-impact-map.html` mit Leaflet, Marker-pro-Land, Detail-Panel, on-demand-Loading aus pro-Land-Bundles, drei Pillen-Typen für Methodik-Vorbehalte (stable/disputed/reversal).
+8. **Item 108 Crowdsourcing-Eingang** (2026-05-02) — Issue-Template + Datenschutz §8 + 8 i18n-Keys. Eingang offen, manueller Maintainer-Review.
 
-**Kern-Erkenntnis aus dem User-Dialog:** Statista-Logik ("Theorie vs. Praxis am Beispiel DE") muss weltweit funktionieren. Globale Verlust-Tracker existieren nicht (ILO sagt explizit: "substantial evidence still lacking"). Heißt: AIStrikeMap kuratiert selbst und ist eine eigenständige Quelle.
+**Methodische Kern-Erkenntnisse:**
+- **Statista-Logik weltweit anwendbar**: "Theorie vs. Praxis" wird durch 3-Ebenen-Layout konkret.
+- **Globale Verlust-Tracker existieren nicht** (ILO bestätigt). AIStrikeMap kuratiert selbst.
+- **AI-Attribution-Stärke entscheidet** über Counter-Aufnahme (≥4). Cases mit Stärke 1-3 wären Verfälschung — Siemens und Bayer bewusst nicht aufgenommen, dokumentiert in Recherche-Notizen.
+- **Bagger-Hebel sichtbar** durch `net_workforce_change`-Feld + "Gesamt stabil"-Pille (3 von 4 aktuellen Cases stable).
+- **Tags + Severity-Class** als Skalierungs-Vorbereitung — 18 Tag-Counts + Severity-Verteilung im Aggregate.
 
 ---
 
@@ -24,9 +32,10 @@ Item 98 (Labor Impact Ticker) wurde an einem Tag durch fünf Konzept-Iterationen
 
 | Item | Inhalt | Phase | Status |
 |---|---|---|---|
-| **105** | Cases-Datenbasis + Bundle-Script + Schema | 2-Solo (manuell) | Skelett 2026-05-01 |
-| **106** | `labor-impact-map.html` Choropleth + Detail-Panel | 2-Solo (eigener Slot) | konzipiert |
-| **107** | Auto-Update-Architektur (GitHub Action + Claude API + Layoffs.fyi-Scraping) | 3-Architektur | konzipiert, dann Cost/Privacy-Decision |
+| **105** | Cases-Datenbasis + Bundle-Script + Schema v0.2 + Pro-Land-Splitting | 2-Solo (manuell) | **Live 2026-05-01/02** · 4 Cases drin |
+| **106** | `labor-impact-map.html` Marker-pro-Land + Detail-Panel | 2-Solo | **Live 2026-05-02** · Choropleth optional in v2 |
+| **107** | Auto-Update-Architektur (GitHub Action + LLM-API für Cases + Radar + Incident-EN-Übersetzung) | 3-Architektur | Konzipiert · Cost/Privacy-Decision steht aus |
+| **108** | Crowdsourcing-Pipeline (Issue-Template + DSGVO + Pre-Veröffentlichungs-Pflicht-Check) | 2-Solo | **Eingang live 2026-05-02** · KI-Pre-Check als Folge-Slot mit 107 |
 
 ---
 
@@ -205,32 +214,38 @@ Wichtiger Punkt: Die Cases-Datenbank überlappt thematisch mit dem Career Dashbo
 
 ## Übergabe an nächste Session
 
-### Stand 2026-05-01 (Ende dieser Session)
+### Stand 2026-05-02 (Ende dieser Session-Reihe)
 
-- ✅ Architektur-Skelett: `data/labor-impact-cases/_schema.md`, erster Case (SAP), Bundle-Script, Aggregate-Output
-- ✅ Konzept-Doku (dieses Dokument) + Inventar-Index Items 105/106/107
-- ❌ Übersichts-Page Rebuild (`labor-impact.html` 3-Ebenen) — **noch nicht gemacht**, kommt erst wenn 3-5 Cases vorhanden sind
-- ❌ Map-Modul `labor-impact-map.html` — eigener Slot später
-- ❌ Auto-Update-Architektur — eigener Slot später
+**Live auf main:**
+- ✅ Cases-Datenbasis (Item 105) mit Schema v0.2 (`tags`, `severity_class`, `last_verified`), 4 Cases:
+  - **SAP DE** 2024 Konzernumbau — 10.000 (Stärke 4, "Gesamt stabil")
+  - **IBM US** 2023 Back-Office-Pause — 7.800 (Stärke 4, "Gesamt stabil", "multi-year-plan")
+  - **Klarna SE** 2024 Customer Service — 700 (Stärke 4, "outsourcing-hop", "reversal", "Gesamt stabil")
+  - **Amazon US** 2025 Corporate — 14.000 (Stärke 4, "disputed-attribution")
+- ✅ Aggregate `data/labor-impact-aggregate.json`: 32.500 Stellen, 4 Cases, 3 Länder, 18 Tags, Severity-Verteilung, by_country/by_industry/country_files-Manifest
+- ✅ Pro-Land-Bundles `data/labor-impact-by-country/{de,us,se}.json` für on-demand-Loading
+- ✅ Übersichts-Page (Item 98 v0.4) mit 3-Ebenen-Layout (Theorie + Plan + Realität-Aggregat) + Cross-Links
+- ✅ Map-Modul (Item 106) `labor-impact-map.html` mit Marker-pro-Land + Detail-Panel + Pillen
+- ✅ Crowdsourcing-Eingang (Item 108) Issue-Template + Datenschutz §8
 
-### Empfohlener Einstieg nächste Session
+**Dokumentiert:**
+- ✅ Schema-Doku, Konzept-Doku (dieses Dokument), recht-crowdsourcing.md, Inventar-Index — alle synchron auf 2026-05-02
 
-**Option α (PL-Empfehlung):** Land DE weiter recherchieren — pro Session 1-2 große deutsche Konzerne mit Tiefe (4+ Quellen pro Case).
+**Bewusst nicht aufgenommen** (Stärke 1-3, methodisch verfälschend):
+- Siemens 6.000 (China/Auto-Konjunktur primär, KI nur Wachstumsstrategie)
+- Bayer ~7.000 (DSO-Bürokratie-Abbau, kein expliziter KI-Grund)
+- Bosch ~12.000 (E-Mobilitäts-Wende primär)
+- VW 35.000 (E-Mobilität primär)
 
-Konkrete nächste Cases (Reihenfolge nach erwarteter Quellen-Tiefe):
-1. **Siemens AG** — 2024 Stellenstreichungen (~6.000 weltweit, KI-Bezug medial gemischt → vermutlich Stärke 3-4)
-2. **Bosch** — 2024 Restrukturierung (~12.000, primär E-Mobilität → vermutlich Stärke 1-2 → wird **nicht** aufgenommen!)
-3. **Bayer** — 2024 Verwaltungs-Umbau (~7.000, KI-Bezug teilweise dokumentiert)
-4. **Deutsche Telekom** — KI-Pilotprogramme + Stellenabbau gemischt
-5. **Deutsche Bank** — KI-Investments + Restrukturierung
+### Empfohlene Spuren für Folge-Sessions
 
-Pro Case: WebSearch nach Wirtschaftsmedien + 4-6 Quellen sammeln, Strenge-1-Cases (rein wirtschaftliche Restrukturierung) **nicht aufnehmen** — sonst Counter-Verfälschung.
-
-**Option β:** Frontend-Rebuild der Übersichts-Page (`labor-impact.html`) auf 3-Ebenen-Layout, **bevor** weitere Cases recherchiert werden — damit der Counter sofort sichtbar wird (auch wenn er nur SAP zeigt). Pro: schnelles UX-Feedback. Contra: Counter steht 1 Woche bei nur 10.000 Stellen, wirkt unfertig.
-
-**Option γ:** Parallel beides in derselben Session: 2 Cases recherchieren + Frontend-Rebuild — ist machbar in einer 2-3h-Session.
-
-PL-Empfehlung: **Option γ** — gibt sofortigen Counter-Effekt mit ~30-50k aus 3-4 Cases.
+| Spur | Aufwand | Wirkung |
+|---|---|---|
+| **EU-Cases erweitern** — Onclusive FR (217), Le Point FR (58), BBVA ES, Orange FR, deutsche Telekom (KI-Pilot-Mischfälle) | 1-2 Sessions à 2-3 Cases | Karte wird voller, EU-Realität sichtbar |
+| **APAC-Cases** — TCS IN, Infosys IN, japanische Konzerne mit AI-Adoption | 1 Session pro Land | Globale Coverage |
+| **Item 107 Architektur-Slot** — Cost-Recherche, GitHub-Action-Skizze, Decision-Doku. Würde zugleich Incident-EN-Übersetzung (195 Files) und Cases-Auto-Update bedienen | 1 Session Decision, 2-3 Sessions Setup | Strategische Architektur-Investition |
+| **Frontend-Polish** — Marker-Cluster bei vielen Ländern, Choropleth-Welt-GeoJSON-Option, Zeit-Filter (welche Cases in welchem Quartal) | 1-2 Sessions | UI-Tiefe |
+| **Pre-release-todos abarbeiten** — Bandbreiten-Verifikation v0.4, Body-Content-Restprüfung 4 statische Pages, Umlaut-Audit 195 Incidents | 1-2 Sessions | Veröffentlichungs-Reife |
 
 ### Was nicht vergessen werden darf
 
@@ -240,6 +255,6 @@ PL-Empfehlung: **Option γ** — gibt sofortigen Counter-Effekt mit ~30-50k aus 
 
 ---
 
-*Konzept-Doku erstellt: 2026-05-01*
-*Version: 0.1 (Architektur-Skelett, Frontend-Rebuild folgt)*
-*Status: Item 105 Skelett live (Schema + erster Case + Bundle-Script). Items 106 + 107 konzipiert, eigene Slots.*
+*Konzept-Doku erstellt: 2026-05-01, fortgeschrieben 2026-05-02*
+*Version: 0.4 (Items 105 + 106 + 108 live, Item 107 konzipiert)*
+*Status: 4 Cases (32.500 Stellen, 3 Länder), 3-Ebenen-Übersicht, Map-Modul, Crowdsourcing-Eingang offen. Cases-Erweiterung läuft als Sonntags-Routine.*

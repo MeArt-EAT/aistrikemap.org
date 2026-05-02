@@ -105,9 +105,13 @@ Der gemeinsame Nav-Pattern (`nav-toggle`-Button + `<nav>`-Element ARIA-Labels) i
 
 **Konvention für die Zukunft** ist jetzt in `CLAUDE.md` unter "Conventions" verankert — beide Punkte (i18n-Vollabdeckung + Umlaute) sind Pflicht für neue Inhalte.
 
-### Item 98 Labor Impact v0.3 — Verifikation und Update-Workflow
+### Item 98 Labor Impact v0.4 — Verifikation und Update-Workflow
 
-**Hintergrund:** Item 98 wurde am 2026-05-01 zweimal überarbeitet — erst von Worldometers-Counter (displaced/created mit `Date.now()`-Start) auf statische Exposure-Bandbreiten (β2 / v0.2), dann auf tickenden Counter mit **fixem Anker-Date** plus statischer Bandbreite (v0.3, gewünschte Bewegung ohne Bagger-Saldo). Der Anker (`anchor_date: "2025-01-01"`, Veröffentlichung WEF FoJ 2025) wird **nicht in der UI** als Beobachtungsperiode mit End-Datum angezeigt — vermeidet Verfallsdatum-Effekt.
+**Hintergrund:** Item 98 wurde am 2026-05-01/02 mehrfach überarbeitet — vom Worldometers-Counter (v0.1) zu statischen Exposure-Bandbreiten (v0.2) zu tickendem Counter mit fixem Anker (v0.3) zum **3-Ebenen-Layout v0.4** (Potentialanalyse + Plan + Realität). Aktueller Stand:
+
+- **Theorie-Ebene** (bestehend): Tickender Counter Substitution + Augmentation, Anker `2025-01-01`, Bandbreiten-Anteile preliminary.
+- **Plan-Ebene** (neu in v0.4): WEF Future of Jobs Survey 2025 Werte (41 % Reduktion / 77 % Upskill / 47 % Umverteilung) — preliminary, gegen WEF-Report-PDF zu verifizieren.
+- **Realität-Ebene** (neu in v0.4): Aggregat aus Cases-DB (Item 105) — automatisch aktuell, methodisch sauber durch Stärke-≥4-Filter.
 
 **Aktuelle Werte (preliminary):**
 
@@ -122,6 +126,7 @@ Tick-Raten = `total_workers / (period_months × 30.44 × 86400)`. Werte für `to
 2. OECD Employment Outlook 2025: konkrete Exposure-Anteile pro Kategorie nachschlagen
 3. ILO WESO Trends 2025 + May 2025 Update: ILO-Substitutions-/Augmentations-Trennung in Prozent
 4. Bandbreiten + Tick-Raten in `data/labor-impact-rates.json` aktualisieren, `preliminary: true` entfernen
+5. **Plan-Ebene v0.4**: WEF-Survey-Werte (41/77/47 %) gegen Original-Report verifizieren — aktuell hardcoded in HTML/i18n, nicht in JSON. Bei Verifikation in `data/labor-impact-rates.json` als eigenen Block aufnehmen oder explizit als hardcoded Werte mit Verifikations-Datum vermerken.
 
 **Update-Workflow bei neuer Studien-Edition (z. B. WEF FoJ 2027):**
 
@@ -140,6 +145,20 @@ UI-Code (`js/labor-impact.js`, `labor-impact.html`, `css/labor-impact.css`) brau
 
 - Caveat-Box (Bagger-Argument) prüfen, ob sie methodisch wasserdicht formuliert ist — aktuell `i18n/{de,en}.json` Key `labor.caveatBody`.
 - Header `og:description` der `labor-impact.html` ggf. anpassen, wenn die Bandbreiten verifiziert sind.
+- **Item 105 Cases-Erweiterung**: Cases-DB aktuell mit 4 Cases (3 Länder). Vor öffentlicher Bewerbung des Moduls ≥10-15 Cases in ≥6 Ländern anstreben — sonst wirkt der Realität-Block dünn.
+- **Item 106 Map**: bei Skalierung >20 Marker Marker-Cluster oder Choropleth erwägen (siehe phase-2-labor-impact-cases.md).
+- **Item 108 Crowdsourcing**: vor breiter Bewerbung des Issue-Templates juristisches Review (IT-/Medienrecht), siehe recht-crowdsourcing.md.
+
+### Incident-Karte: Umlaut-Audit + EN-Übersetzung der 195 Cases
+
+**Hintergrund:** Die 195 Incident-JSON-Dateien (Phase 1) sind ausschließlich auf Deutsch. Plus möglicherweise Umlaut-Konvention-Verletzungen aus früheren Sessions.
+
+**Aufwandsschätzung 2026-05-02 (PL):**
+- Umlaut-Audit (Grep + selektive Edits): ~90-150k Tokens, 1 Session
+- EN-Übersetzung manuell: ~810-870k Tokens, 3-5 Sessions
+- EN-Übersetzung via Item 107 LLM-API-Pipeline: 1-2 Setup-Sessions + ~3 EUR API-Kosten + 3-5 Review-Sessions
+
+**Architektur-Entscheidung steht:** manuell (sofortige Sessions, hohe Token-Last) vs. Item 107 (einmalige Architektur-Investition, wiederverwendbar für FR/ES und für Cases-Auto-Update). Bei Entscheidung für Item 107 sollte das **vor** der EN-Übersetzung erfolgen.
 
 ---
 

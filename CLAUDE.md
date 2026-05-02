@@ -58,11 +58,16 @@ Each incident JSON-LD file contains:
 ## Planning
 
 - **Phase 1** (Items 1–93): Incident Map — complete
-- **Phase 2** (Items 94–103): Two modules:
-  - AI Career Impact Dashboard (Items 94–99) — IDEA, not started
-  - AI Live-Radar (Items 100–103) — **MVP live** (3 pilot situation cards)
+- **Phase 2** (Items 94–108):
+  - AI Career Impact Dashboard (Items 94–99) — concept phase done, Step 1 bundle skeleton live
+  - AI Labor Impact Overview (Item 98) — **live** (3-Ebenen-Layout v0.4: Theorie/Plan/Realität)
+  - AI Live-Radar (Items 100–103) — **MVP live**
+  - Labor-Impact-Cases DB (Item 105) — **live** (4 Cases, schema v0.2 with tags/severity, per-country splitting)
+  - Labor-Impact-Map (Item 106) — **live** (Marker-per-country with detail panel)
+  - Auto-Update Architecture (Item 107) — concept, Cost/Privacy decision pending
+  - Crowdsourcing Pipeline (Item 108) — **issue template + privacy §8 live**, AI pre-check pending
 - **Inventory index**: `docs/planung/inventar-index.md`
-- **Planning docs**: `docs/planung/phase-2-*.md`, `docs/planung/konzept-live-radar.md`
+- **Planning docs**: `docs/planung/phase-2-*.md`, `docs/planung/konzept-live-radar.md`, `docs/planung/recht-crowdsourcing.md`
 
 ## Radar Module
 
@@ -74,11 +79,27 @@ Each incident JSON-LD file contains:
 - **Status values**: eskalierend / aktiv / stabil / deeskalierend / abgeschlossen
 - **Dimensions**: cybersicherheit, regulierung, geopolitik, militaer, ueberwachung, unternehmensethik, arbeitsmarkt, diskriminierung, umwelt, desinformation
 
+## Labor Impact Modules (Items 98 + 105 + 106 + 108)
+
+- **Pages**: `labor-impact.html` (overview, 3-layer Theorie/Plan/Realität) · `labor-impact-map.html` (world map, marker-per-country)
+- **CSS**: `css/labor-impact.css` · `css/labor-impact-map.css`
+- **JS**: `js/labor-impact.js` (counters + plan + reality block, lädt aggregate.json) · `js/labor-impact-map.js` (Leaflet, on-demand per-country loading)
+- **Data**:
+  - `data/labor-impact-rates.json` (theory layer: substitution/augmentation %, anchor-based ticking counter)
+  - `data/labor-impact-cases/*.json` (one file per real-world case, schema in `_schema.md`)
+  - `data/labor-impact-aggregate.json` (auto-generated: totals, by_country, by_industry, by_tag, by_severity, country_files manifest)
+  - `data/labor-impact-by-country/{cc}.json` (auto-generated: per-country bundle for on-demand detail loading)
+- **Bundle**: `node scripts/bundle-labor-cases.js` after editing any case
+- **Crowdsourcing entry**: `.github/ISSUE_TEMPLATE/ki-entlassung-melden.yml` (rules in `docs/planung/recht-crowdsourcing.md`)
+- **Schema concept**: `data/labor-impact-cases/_schema.md` defines AI-attribution-strength scale (1-5, counter only ≥4) + severity-class scale + tag vocabulary
+- **Methodology**: see `docs/planung/phase-2-labor-impact-cases.md` (iteration history v0.1-v0.4 + Bagger-Hebel-Argument)
+
 ## Common Tasks
 
 - **Add incident**: Create JSON in `data/incidents/`, add entry to `data/index.json`, then run `node scripts/bundle-incidents.js`
 - **Add radar situation**: Create JSON in `data/radar/`, run `node scripts/bundle-incidents.js`, then `node scripts/generate-feed.js`
+- **Add labor-impact case**: Create JSON in `data/labor-impact-cases/{firma-slug}-{jahr}-{kontext}.json` per `_schema.md` (mind. 2 sources, ai_attribution_strength 1-5, tags + severity_class), then run `node scripts/bundle-labor-cases.js` (regenerates aggregate + per-country bundles)
 - **Regenerate feed**: `node scripts/generate-feed.js` (Atom feed at `feed.xml`)
 - **Add i18n string**: Add key to both `i18n/de.json` and `i18n/en.json`
-- **Test locally**: Open `index.html` or `radar.html` in browser (or use any static server)
+- **Test locally**: Open `index.html`, `radar.html`, `labor-impact.html`, or `labor-impact-map.html` in browser (or use any static server)
 - **Deploy**: Push to main — GitHub Pages auto-deploys
