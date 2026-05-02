@@ -1,0 +1,138 @@
+name: "KI-bedingte Stellen-Veränderung melden / Report AI-driven workforce change"
+description: "Einen konkret gemeldeten Fall von KI-bedingten Stellenstreichungen oder Stellenschaffungen für AIStrikeMap einreichen."
+title: "[Labor-Impact] "
+labels: ["labor-impact-case", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du einen KI-bedingten Stellen-Veränderungs-Fall einreichst.
+
+        **Wichtig vorab:**
+        - Quellen sind **zwingend** erforderlich (mindestens 2, mindestens eine journalistisch).
+        - Der Betreiber prüft jeden Fall vor Veröffentlichung (Rechte Dritter, Quellen-Belastbarkeit). Reine Behauptungen ohne Quellen werden abgelehnt.
+        - Datenschutz: optional kannst du Klarname + Kontakt angeben — das verbleibt **ausschließlich** bei der Redaktion (separater interner Speicher), wird **nicht** öffentlich. Details in der [Datenschutzerklärung](https://aistrikemap.org/datenschutz.html).
+        - Konzept und Schema: [docs/planung/recht-crowdsourcing.md](https://github.com/MeArt-EAT/aistrikemap.org/blob/main/docs/planung/recht-crowdsourcing.md) + [data/labor-impact-cases/_schema.md](https://github.com/MeArt-EAT/aistrikemap.org/blob/main/data/labor-impact-cases/_schema.md)
+
+  - type: input
+    id: company
+    attributes:
+      label: "Firma / Organisation"
+      placeholder: "z. B. SAP SE, Klarna, IBM"
+    validations:
+      required: true
+
+  - type: input
+    id: country
+    attributes:
+      label: "Land (ISO-Code, z. B. DE, US, FR, SE)"
+      placeholder: "DE"
+    validations:
+      required: true
+
+  - type: input
+    id: industry
+    attributes:
+      label: "Branche"
+      placeholder: "z. B. Software, Fintech, Customer Service, Medien"
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: "Datum der Ankündigung (YYYY-MM-DD)"
+      placeholder: "2024-01-23"
+    validations:
+      required: true
+
+  - type: input
+    id: headcount
+    attributes:
+      label: "Anzahl betroffener Stellen"
+      placeholder: "z. B. 700, 7800, 14000"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: direction
+    attributes:
+      label: "Richtung"
+      options:
+        - "Stellenabbau (reduction)"
+        - "Stellenschaffung (creation)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: net_workforce_change
+    attributes:
+      label: "Gesamt-Headcount-Effekt nach dem Programm"
+      description: "Macht den 'Bagger-Hebel' sichtbar — z. B. SAP baut 10k ab, stellt aber parallel KI-Personal ein, Gesamt bleibt stabil."
+      options:
+        - "Reduktion (Gesamt-Headcount sinkt)"
+        - "Stable (Gesamt bleibt konstant durch Neueinstellungen)"
+        - "Wachstum (Gesamt wächst trotz Programm)"
+        - "Unbekannt"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ai_attribution_strength
+    attributes:
+      label: "KI-Attribution-Stärke (1 = schwach, 5 = explizit als Hauptgrund)"
+      description: "5 = 'Wir ersetzen X durch KI' (Klarna). 4 = KI als einer von mehreren Gründen offiziell genannt (SAP). 3 = Restrukturierung in KI-Branche, kein expliziter Grund. 2-1 = primär andere Treiber (wird nicht in Counter aufgenommen)."
+      options: ["5 — KI als Hauptgrund explizit", "4 — KI als einer von mehreren Gründen", "3 — Restrukturierungs-Kontext", "2 — Branchen-Konsolidierung", "1 — anderer Treiber"]
+    validations:
+      required: true
+
+  - type: textarea
+    id: ai_quote
+    attributes:
+      label: "Originalzitat aus den Quellen zur KI-Rolle"
+      description: "Bitte das relevante Zitat aus einer Quelle (CEO-Statement, Pressemitteilung, journalistische Einordnung). Eigene Interpretation NICHT hier eintragen — die landet im Maintainer-Review im 'context_de'-Feld."
+      placeholder: 'z. B. "SAP-Chef Christian Klein: KI wird fast jede Jobfunktion verändern. Konzernumbau schafft Platz für KI-Ressourcen."'
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: "Quellen (URLs, mind. 2, mind. eine journalistisch)"
+      placeholder: |
+        - https://industriemagazin.at/news/...
+        - https://www.handelsblatt.com/...
+        - https://www.fortune.com/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Zusätzlicher Kontext (optional)"
+      description: "Methodische Vorbehalte, Widersprüche zwischen Quellen, Outsourcing-/Reversal-Aspekte, Bagger-Hebel-Beobachtungen."
+      placeholder: "z. B. CEO-Memo Juni vs. Earnings-Call Oktober widersprüchlich; ursprüngliche Ankündigung später ausgeweitet von 8k auf 10k."
+
+  - type: input
+    id: contact_name
+    attributes:
+      label: "Klarname (optional, nicht öffentlich)"
+      description: "Wird ausschließlich für Rückfragen genutzt. Verbleibt im internen Redaktions-Speicher, NICHT im öffentlichen Repository. Anonyme Meldungen sind möglich, aber wir können dann keine Rückfragen stellen — ggf. wird der Fall ohne Klärung verworfen."
+
+  - type: input
+    id: contact_email
+    attributes:
+      label: "E-Mail-Kontakt (optional, nicht öffentlich)"
+      placeholder: "kontakt@example.com"
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Bestätigung (alle drei Pflicht)"
+      options:
+        - label: "Ich versichere, die Angaben entsprechen nach bestem Wissen den angegebenen Quellen."
+          required: true
+        - label: "Ich verstehe, dass Tatsachenbehauptungen quellengestützt sein müssen, Werturteile klar als Wertung markiert werden, und dass die Redaktion vor Veröffentlichung prüft (Diskreditierungs-Schutz Firmen + Personen, DSGVO)."
+          required: true
+        - label: "Ich bin einverstanden, dass die öffentlichen Felder dieses Beitrags unter CC BY-NC-SA 4.0 veröffentlicht werden. Klarname und Kontakt-E-Mail (falls angegeben) verbleiben ausschließlich im internen Redaktions-Speicher."
+          required: true
