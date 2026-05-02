@@ -1,0 +1,255 @@
+/**
+ * AIStrikeMap — Labor-Impact Map (Item 106)
+ * Page-spezifische Styles: Map-Container + Detail-Panel + Case-Liste.
+ */
+
+.labor-map-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.labor-map-page__header {
+  margin-bottom: 1.25rem;
+}
+
+.labor-map-page h1 {
+  margin: 0 0 0.5rem;
+}
+
+.labor-map-page__intro {
+  color: var(--text-muted, #9aa0a6);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem;
+}
+
+.labor-map-page__crosslinks {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.labor-map-page__crosslinks a {
+  color: var(--accent, #f39c12);
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.labor-map-page__crosslinks a:hover,
+.labor-map-page__crosslinks a:focus {
+  text-decoration: underline;
+}
+
+.labor-map__layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  height: 70vh;
+  min-height: 500px;
+}
+
+@media (max-width: 900px) {
+  .labor-map__layout {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  #labor-map { height: 50vh; min-height: 350px; }
+}
+
+#labor-map {
+  background: #1c1f23;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle, #2a2e33);
+  height: 100%;
+}
+
+.labor-map__detail {
+  background: var(--bg-elevated, #1c1f23);
+  border: 1px solid var(--border-subtle, #2a2e33);
+  border-left: 3px solid #e74c3c;
+  border-radius: 8px;
+  padding: 1.25rem;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.labor-map__detail-empty {
+  color: var(--text-muted, #9aa0a6);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem 0.5rem;
+}
+
+.labor-map__detail-head h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.labor-map__detail-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle, #2a2e33);
+  font-size: 0.9rem;
+  color: var(--text-muted, #9aa0a6);
+}
+
+.labor-map__detail-stats strong {
+  color: #e74c3c;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.05rem;
+}
+
+.labor-map__case-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.labor-map__case {
+  padding: 0.85rem 0;
+  border-bottom: 1px dashed var(--border-subtle, #2a2e33);
+}
+
+.labor-map__case:last-child {
+  border-bottom: none;
+}
+
+.labor-map__case-head {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.labor-map__case-head strong:first-child {
+  color: var(--text-default, #e8eaed);
+}
+
+.labor-map__case-meta {
+  color: var(--text-muted, #9aa0a6);
+  font-size: 0.85rem;
+}
+
+.labor-map__case-quote {
+  margin: 0.4rem 0;
+  padding-left: 0.75rem;
+  border-left: 2px solid rgba(243, 156, 18, 0.4);
+  font-size: 0.88rem;
+  color: var(--text-default, #e8eaed);
+  line-height: 1.5;
+}
+
+.labor-map__case-context {
+  margin: 0.4rem 0;
+  font-size: 0.83rem;
+  color: var(--text-muted, #9aa0a6);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.labor-map__pill {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+  border-radius: 3px;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+.labor-map__pill--stable {
+  background: rgba(93, 176, 117, 0.15);
+  color: #5db075;
+}
+
+.labor-map__pill--disputed {
+  background: rgba(243, 156, 18, 0.15);
+  color: #f39c12;
+}
+
+.labor-map__pill--reversal {
+  background: rgba(155, 89, 182, 0.15);
+  color: #b07ed6;
+}
+
+.labor-map__sources {
+  margin-top: 0.5rem;
+  font-size: 0.83rem;
+}
+
+.labor-map__sources summary {
+  cursor: pointer;
+  color: var(--text-muted, #9aa0a6);
+  user-select: none;
+}
+
+.labor-map__sources ul {
+  margin: 0.4rem 0 0 1rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.labor-map__sources a {
+  color: var(--accent, #f39c12);
+  text-decoration: none;
+}
+
+.labor-map__sources a:hover,
+.labor-map__sources a:focus {
+  text-decoration: underline;
+}
+
+.labor-map__paywall {
+  color: var(--text-muted, #9aa0a6);
+  font-style: italic;
+  font-size: 0.78rem;
+}
+
+.labor-map__detail-error {
+  color: #e74c3c;
+  font-style: italic;
+}
+
+.labor-map__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted, #9aa0a6);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle, #2a2e33);
+}
+
+.labor-map__meta a {
+  color: var(--accent, #f39c12);
+  text-decoration: none;
+}
+
+.labor-map__meta a:hover,
+.labor-map__meta a:focus {
+  text-decoration: underline;
+}
+
+.labor-map__error {
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid rgba(231, 76, 60, 0.4);
+  color: #e74c3c;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+/* Leaflet-Tooltip minimal anpassen */
+.leaflet-tooltip {
+  background: #1c1f23;
+  color: #e8eaed;
+  border: 1px solid #2a2e33;
+  font-size: 0.85rem;
+}
+
+.leaflet-tooltip-top:before {
+  border-top-color: #2a2e33;
+}
