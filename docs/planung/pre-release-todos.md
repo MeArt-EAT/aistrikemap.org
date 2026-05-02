@@ -105,28 +105,41 @@ Der gemeinsame Nav-Pattern (`nav-toggle`-Button + `<nav>`-Element ARIA-Labels) i
 
 **Konvention für die Zukunft** ist jetzt in `CLAUDE.md` unter "Conventions" verankert — beide Punkte (i18n-Vollabdeckung + Umlaute) sind Pflicht für neue Inhalte.
 
-### Item 98 Labor Impact v0.2 — Bandbreiten-Anteile verifizieren
+### Item 98 Labor Impact v0.3 — Verifikation und Update-Workflow
 
-**Hintergrund:** Item 98 wurde am 2026-05-01 vom Worldometers-Style-Counter (displaced/created) auf eine statische Exposure-Bandbreiten-Anzeige umgebaut (β2, siehe `js/labor-impact.js` v0.2 + `data/labor-impact-rates.json` v0.2). Anlass war die methodische Kritik, dass Brutto-Verdrängung und Brutto-Schaffung asymmetrisch sind ("Bagger-Hebel"-Argument) und die Quellen explizit *kein* Saldo liefern.
+**Hintergrund:** Item 98 wurde am 2026-05-01 zweimal überarbeitet — erst von Worldometers-Counter (displaced/created mit `Date.now()`-Start) auf statische Exposure-Bandbreiten (β2 / v0.2), dann auf tickenden Counter mit **fixem Anker-Date** plus statischer Bandbreite (v0.3, gewünschte Bewegung ohne Bagger-Saldo). Der Anker (`anchor_date: "2025-01-01"`, Veröffentlichung WEF FoJ 2025) wird **nicht in der UI** als Beobachtungsperiode mit End-Datum angezeigt — vermeidet Verfallsdatum-Effekt.
 
-**Aktuelle Anteile (preliminary):**
+**Aktuelle Werte (preliminary):**
 
-- `substitution.low/median/high_pct`: 8 / 10 / 12
-- `augmentation.low/median/high_pct`: 14 / 16 / 18
+- `substitution.low/median/high_pct`: 8 / 10 / 12 — `tick_per_second: 1.87`
+- `augmentation.low/median/high_pct`: 14 / 16 / 18 — `tick_per_second: 3.00`
 
-Diese Bandbreiten sind grobe Schätzungen, abgeleitet aus den Headline-Aussagen der drei Quellen plus der ILO-Substitutions-/Augmentations-Trennung. Sie sind methodisch plausibel, aber nicht direkt aus den Original-Reports zitiert.
+Tick-Raten = `total_workers / (period_months × 30.44 × 86400)`. Werte für `total_workers` sind im JSON `_internal_calc` als Berechnungs-Anker dokumentiert (350 Mio. / 560 Mio. aus WEF FoJ 2025 × ~3,5 Mrd. globale Erwerbstätige laut ILO 2024). `period_months_internal: 71` lebt nur im JSON, nicht in der UI.
 
 **Aufgabe vor Bewerbung des Moduls:**
 
 1. WEF Future of Jobs Report 2025 (PDF): genaue Substitutions- vs. Augmentations-Anteile aus Survey-Daten extrahieren
 2. OECD Employment Outlook 2025: konkrete Exposure-Anteile pro Kategorie nachschlagen
 3. ILO WESO Trends 2025 + May 2025 Update: ILO-Substitutions-/Augmentations-Trennung in Prozent
-4. Bandbreiten in `data/labor-impact-rates.json` aktualisieren, `preliminary: true` entfernen
+4. Bandbreiten + Tick-Raten in `data/labor-impact-rates.json` aktualisieren, `preliminary: true` entfernen
+
+**Update-Workflow bei neuer Studien-Edition (z. B. WEF FoJ 2027):**
+
+In `data/labor-impact-rates.json` ändern:
+- `anchor_date` → neues Veröffentlichungsdatum
+- `anchor_label_de` / `_en` → Edition-Bezeichnung
+- `_internal_calc.period_months_internal` → neue Forecast-Periode
+- `exposure.*.tick_per_second` → neu berechnen mit obiger Formel
+- `exposure.*.primary_total_label_de` / `_en` → neue Total-Zahl der Studie
+- `sources[].name` / `headline_*` / `methodology_*` → Edition-spezifisch aktualisieren
+- `updated` und `version` bumpen
+
+UI-Code (`js/labor-impact.js`, `labor-impact.html`, `css/labor-impact.css`) braucht **keine Änderung**.
 
 **Zusätzlich:**
 
 - Caveat-Box (Bagger-Argument) prüfen, ob sie methodisch wasserdicht formuliert ist — aktuell `i18n/{de,en}.json` Key `labor.caveatBody`.
-- Header `og:description` der `labor-impact.html` ist umgestellt auf "Bandbreiten-Anzeige" — bei Verifikation prüfen, ob das semantisch passt.
+- Header `og:description` der `labor-impact.html` ggf. anpassen, wenn die Bandbreiten verifiziert sind.
 
 ---
 

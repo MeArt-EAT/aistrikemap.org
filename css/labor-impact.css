@@ -58,21 +58,37 @@
   margin-bottom: 0.75rem;
 }
 
-.labor-impact__range-big {
+.labor-impact__counter {
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-variant-numeric: tabular-nums;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem 0 0.4rem;
 }
 
-.labor-impact__panel--substitution .labor-impact__range-big {
+.labor-impact__counter--substitution {
   color: #e74c3c;
 }
 
-.labor-impact__panel--augmentation .labor-impact__range-big {
+.labor-impact__counter--augmentation {
   color: #3498db;
+}
+
+.labor-impact__counter-source {
+  font-size: 0.85rem;
+  color: var(--text-muted, #9aa0a6);
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.labor-impact__range {
+  font-size: 0.85rem;
+  color: var(--text-muted, #9aa0a6);
+  margin-bottom: 1rem;
+  font-variant-numeric: tabular-nums;
+  font-style: italic;
 }
 
 .labor-impact__panel-desc {
@@ -82,50 +98,15 @@
   line-height: 1.5;
 }
 
-.labor-impact__progress {
-  background: var(--bg-elevated, #1c1f23);
-  border: 1px solid var(--border-subtle, #2a2e33);
-  border-radius: 8px;
-  padding: 1.25rem 1.5rem;
-  margin: 0 0 2.5rem;
-}
-
-.labor-impact__progress-title {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-muted, #9aa0a6);
-  margin: 0 0 0.5rem;
-}
-
-.labor-impact__progress-anchor {
-  margin: 0 0 0.75rem;
-  font-size: 0.95rem;
-  color: var(--text-default, #e8eaed);
+.labor-impact__anchor-line {
+  margin: 0 0 2rem;
+  padding: 0.75rem 1rem;
+  background: rgba(243, 156, 18, 0.06);
+  border-left: 3px solid rgba(243, 156, 18, 0.5);
+  border-radius: 4px;
+  font-size: 0.88rem;
+  color: var(--text-muted, #c8ccd2);
   line-height: 1.5;
-}
-
-.labor-impact__progress-bar {
-  width: 100%;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 0.5rem 0;
-}
-
-.labor-impact__progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #f39c12, #e67e22);
-  border-radius: 6px;
-  transition: width 0.6s ease-out;
-}
-
-.labor-impact__progress-text {
-  margin: 0.5rem 0 0;
-  font-size: 0.85rem;
-  color: var(--text-muted, #9aa0a6);
-  font-variant-numeric: tabular-nums;
 }
 
 .labor-impact__sources-section {

@@ -1,27 +1,40 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "updated": "2026-05-01",
   "license": "CC-BY-NC-SA-4.0",
   "preliminary": true,
-  "_note": "Item 98 v0.2 — Exposure-Modell statt Verdrängungs-Saldo. Bandbreiten-Anteile (Substitution / Augmentation) sind grobe Schätzungen, abgeleitet aus den Headline-Aussagen der drei Quellen plus ILO-Substitutions-/Augmentations-Trennung. Exakte Werte aus Original-Reports verifizieren — siehe docs/planung/pre-release-todos.md.",
-  "forecast_period": {
-    "start": "2025-01-01",
-    "end": "2030-12-31",
-    "anchor_de": "Veröffentlichung WEF Future of Jobs 2025",
-    "anchor_en": "Publication of WEF Future of Jobs 2025"
-  },
+  "_note": "Item 98 v0.3 — Inkrementeller Counter mit fixem Anker (kein Date.now()) plus statische Bandbreiten. Tick-Raten sind vorbe-rechnet aus: total / (period_months * 30.44 * 86400). period_months ist die interne Berechnungs-Größe, lebt nicht in der UI. Lifecycle-Memo siehe pre-release-todos.md.",
+
+  "anchor_date": "2025-01-01",
+  "anchor_label_de": "Veröffentlichung WEF Future of Jobs 2025",
+  "anchor_label_en": "Publication of WEF Future of Jobs 2025",
+
   "exposure": {
     "substitution": {
       "low_pct": 8,
       "median_pct": 10,
-      "high_pct": 12
+      "high_pct": 12,
+      "tick_per_second": 1.87,
+      "primary_total_label_de": "≈ 350 Mio. Erwerbstätige laut WEF FoJ 2025",
+      "primary_total_label_en": "≈ 350M workers per WEF FoJ 2025"
     },
     "augmentation": {
       "low_pct": 14,
       "median_pct": 16,
-      "high_pct": 18
+      "high_pct": 18,
+      "tick_per_second": 3.00,
+      "primary_total_label_de": "≈ 560 Mio. Erwerbstätige laut WEF FoJ 2025",
+      "primary_total_label_en": "≈ 560M workers per WEF FoJ 2025"
     }
   },
+
+  "_internal_calc": {
+    "global_workforce_billion": 3.5,
+    "global_workforce_source": "ILO Labour Force Estimates 2024",
+    "period_months_internal": 71,
+    "period_note": "WEF FoJ 2025 deckt Januar 2025 bis Dezember 2030 ab. Periode wird ausschließlich für die Tick-Rate-Berechnung gebraucht und ist nicht in der UI sichtbar — vermeidet Verfallsdatum-Effekt."
+  },
+
   "sources": [
     {
       "name": "WEF Future of Jobs Report 2025",

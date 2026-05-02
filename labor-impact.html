@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/cross-links.css?v=1">
   <link rel="stylesheet" href="css/subpages.css?v=1">
   <link rel="stylesheet" href="css/responsive.css?v=1">
-  <link rel="stylesheet" href="css/labor-impact.css?v=2">
+  <link rel="stylesheet" href="css/labor-impact.css?v=3">
 </head>
 <body>
   <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Zum Inhalt springen</a>
@@ -64,9 +64,11 @@
     <div class="labor-impact__exposures">
       <section class="labor-impact__panel labor-impact__panel--substitution"
                data-i18n-aria="labor.substitutionHeading"
-               aria-label="Substitutions-Exposure, Bandbreite">
+               aria-label="Substitutions-Exposure, hochgerechnet">
         <span class="labor-impact__label" data-i18n="labor.substitutionLabel">Substitutions-Exposure</span>
-        <div id="labor-impact-substitution-range" class="labor-impact__range-big" aria-live="polite">…</div>
+        <div id="labor-impact-substitution-counter" class="labor-impact__counter labor-impact__counter--substitution" aria-live="polite" aria-atomic="true">…</div>
+        <div id="labor-impact-substitution-source" class="labor-impact__counter-source"></div>
+        <div id="labor-impact-substitution-range" class="labor-impact__range">…</div>
         <p class="labor-impact__panel-desc" data-i18n="labor.substitutionDesc">
           Anteil der globalen Erwerbstätigen, deren Tätigkeiten KI-Systeme ersetzen
           könnten — nicht müssen.
@@ -75,9 +77,11 @@
 
       <section class="labor-impact__panel labor-impact__panel--augmentation"
                data-i18n-aria="labor.augmentationHeading"
-               aria-label="Augmentations-Exposure, Bandbreite">
+               aria-label="Augmentations-Exposure, hochgerechnet">
         <span class="labor-impact__label" data-i18n="labor.augmentationLabel">Augmentations-Exposure</span>
-        <div id="labor-impact-augmentation-range" class="labor-impact__range-big" aria-live="polite">…</div>
+        <div id="labor-impact-augmentation-counter" class="labor-impact__counter labor-impact__counter--augmentation" aria-live="polite" aria-atomic="true">…</div>
+        <div id="labor-impact-augmentation-source" class="labor-impact__counter-source"></div>
+        <div id="labor-impact-augmentation-range" class="labor-impact__range">…</div>
         <p class="labor-impact__panel-desc" data-i18n="labor.augmentationDesc">
           Anteil der globalen Erwerbstätigen, deren Tätigkeiten KI-Systeme erweitern
           oder produktiver machen — nicht ersetzen.
@@ -85,17 +89,7 @@
       </section>
     </div>
 
-    <section class="labor-impact__progress" aria-labelledby="progress-heading">
-      <h2 id="progress-heading" class="labor-impact__progress-title" data-i18n="labor.progressTitle">
-        Beobachtungs-Periode
-      </h2>
-      <p class="labor-impact__progress-anchor" id="labor-impact-progress-anchor"></p>
-      <div class="labor-impact__progress-bar" role="progressbar" id="labor-impact-progress-bar"
-           aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-        <div class="labor-impact__progress-fill" id="labor-impact-progress-fill"></div>
-      </div>
-      <p class="labor-impact__progress-text" id="labor-impact-progress-text"></p>
-    </section>
+    <p class="labor-impact__anchor-line" id="labor-impact-anchor-line"></p>
 
     <section class="labor-impact__sources-section" aria-labelledby="sources-heading">
       <h2 id="sources-heading" class="labor-impact__sources-section-title" data-i18n="labor.sources">Quellen</h2>
@@ -125,7 +119,7 @@
   </footer>
   <script src="js/i18n.js?v=3"></script>
   <script src="js/nav.js?v=3"></script>
-  <script src="js/labor-impact.js?v=2"></script>
+  <script src="js/labor-impact.js?v=3"></script>
   <script>
     I18n.load(I18n.getStoredLang()).then(function () {
       LaborImpact.init();
