@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "generated": "2026-05-02T13:57:28.210Z",
+  "generated": "2026-05-02T19:17:47.778Z",
   "license": "CC-BY-NC-SA-4.0",
   "methodology": {
     "min_attribution_strength": 4,
@@ -8,11 +8,11 @@
     "_note": "Counter zählt nur Cases mit ai_attribution_strength >= 4. Schwächere Cases werden für die Detail-Liste mitgezählt, aber nicht im Aggregat-Counter."
   },
   "totals": {
-    "cases_total": 4,
-    "cases_counted": 4,
-    "reduction_headcount": 32500,
+    "cases_total": 6,
+    "cases_counted": 6,
+    "reduction_headcount": 32775,
     "creation_headcount": 0,
-    "countries_with_cases": 3
+    "countries_with_cases": 4
   },
   "by_country": {
     "US": {
@@ -24,6 +24,11 @@
       "reduction": 700,
       "creation": 0,
       "cases": 1
+    },
+    "FR": {
+      "reduction": 275,
+      "creation": 0,
+      "cases": 2
     },
     "DE": {
       "reduction": 10000,
@@ -47,6 +52,16 @@
       "creation": 0,
       "cases": 1
     },
+    "Print-/Online-Medien": {
+      "reduction": 58,
+      "creation": 0,
+      "cases": 1
+    },
+    "Medien-Monitoring / Pressespiegel": {
+      "reduction": 217,
+      "creation": 0,
+      "cases": 1
+    },
     "Software": {
       "reduction": 10000,
       "creation": 0,
@@ -54,7 +69,7 @@
     }
   },
   "by_tag": {
-    "white-collar": 2,
+    "white-collar": 4,
     "corporate": 1,
     "e-commerce": 1,
     "cloud": 1,
@@ -68,14 +83,18 @@
     "multi-year-plan": 2,
     "customer-service": 1,
     "fintech": 1,
-    "outsourcing": 1,
+    "outsourcing": 2,
     "outsourcing-hop": 1,
-    "reversal": 1,
+    "reversal": 2,
+    "editorial": 2,
+    "media": 2,
+    "proofreading": 1,
+    "forced-layoff": 2,
     "voluntary-program": 1
   },
   "by_severity_class": {
-    "1": 0,
-    "2": 1,
+    "1": 1,
+    "2": 2,
     "3": 0,
     "4": 1,
     "5": 2,
@@ -147,6 +166,23 @@
         "reversal"
       ],
       "net_workforce_change": "stable"
+    },
+    {
+      "company": "Onclusive (Reputational Intelligence France)",
+      "country": "FR",
+      "date": "2023-09-12",
+      "headcount": 217,
+      "strength": 5,
+      "severity_class": 2,
+      "tags": [
+        "editorial",
+        "media",
+        "white-collar",
+        "forced-layoff",
+        "reversal",
+        "outsourcing"
+      ],
+      "net_workforce_change": "reduction"
     }
   ],
   "country_files": {
@@ -163,6 +199,13 @@
       "reduction_headcount": 700,
       "creation_headcount": 0,
       "file": "data/labor-impact-by-country/se.json"
+    },
+    "FR": {
+      "cases_total": 2,
+      "cases_counted": 2,
+      "reduction_headcount": 275,
+      "creation_headcount": 0,
+      "file": "data/labor-impact-by-country/fr.json"
     },
     "DE": {
       "cases_total": 1,
