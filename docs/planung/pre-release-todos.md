@@ -4,6 +4,37 @@ Kleine Aufräum-Arbeiten, die **kurz vor einer Veröffentlichung** erledigt werd
 
 ## Offen
 
+### Mehrsprachigkeit + Umlaute — Gesamt-Status pro Modul (Stand 2026-05-02)
+
+**Konvention** (CLAUDE.md): jede user-sichtbare Phrase auf jeder Seite muss in DE **und** EN vorliegen, Umlaute korrekt (ä/ö/ü/ß, nicht ae/oe/ue/ss). Aktueller Stand:
+
+| Modul / Seite | Body DE | Body EN | Umlaute | Daten DE | Daten EN |
+|---|---|---|---|---|---|
+| **AI & Arbeit Übersicht** (`labor-impact.html`, Item 98) | ✓ | ✓ | ✓ | – | – |
+| **AI & Arbeit Karte** (`labor-impact-map.html`, Item 106) | ✓ | ✓ | ✓ | – | – |
+| **Labor-Impact-Cases** (`data/labor-impact-cases/*.json`, Item 105) | ✓ | ✓ (per Case) | ✓ | – | – |
+| **Labor-Impact-Rates** (`data/labor-impact-rates.json`) | ✓ | ✓ | ✓ | – | – |
+| **Karte / Incidents-Übersicht** (`index.html`) | ✓ | (fehlt: Detail-Strings) | ⚠ prüfen | – | – |
+| **Incident-Karten** (`data/incidents/*.json`, 195 Files, Phase 1) | ✓ | ❌ **fehlt komplett** | ⚠ Audit nötig | ja | ❌ fehlt |
+| **Radar-Übersicht** (`radar.html`) | ✓ | (teilweise) | ⚠ prüfen | – | – |
+| **Radar-Situationen** (`data/radar/*.json`, 6 Files) | ✓ | ❌ **fehlt komplett** | ⚠ Audit nötig | ja | ❌ fehlt |
+| **Methodik** (`methodik.html`) | ✓ | (teilweise) | ⚠ prüfen | – | – |
+| **Transparenz** (`transparenz.html`) | ✓ | (teilweise) | ⚠ prüfen | – | – |
+| **Impressum** (`impressum.html`) | ✓ | (teilweise) | ⚠ prüfen | – | – |
+| **Datenschutz** (`datenschutz.html`) | ✓ (mit § 8 Crowdsourcing) | ✓ | ✓ | – | – |
+| **404** (`404.html`) | ✓ | (teilweise) | ⚠ prüfen | – | – |
+
+**Konsolidierte Aufgabe:** Alle Module außer Labor-Impact (Items 98/105/106) und Datenschutz brauchen einen vollständigen DE/EN/Umlaute-Pass. Aufwandsschätzung in den Detail-Blöcken unten.
+
+**Reihenfolge-Empfehlung (PL-Vorschlag):**
+1. Statische Pages Body-Content-Restprüfung (methodik / transparenz / impressum / 404) — klein, schnell, parallel zu Cases-Erweiterung machbar
+2. Umlaut-Audit Globals: Grep über alle JSON + HTML + Markdown — eine Session
+3. Architektur-Entscheidung: Incidents+Radar EN-Übersetzung manuell oder via Item 107 Pipeline (siehe unten)
+4. Bei Entscheidung pro 107: erst Pipeline, dann automatisierte Übersetzung mit Maintainer-Review-PRs
+5. Bei Entscheidung pro manuell: Incidents in Batches à 30-40 Files, Radar in einer Session
+
+---
+
 ### i18n-Vollabdeckung Audit
 
 **Problem:** Beim Sprachwechsel DE↔EN wird aktuell nur ein Teil der UI übersetzt. Body-Copy ist in den meisten Pages bereits via `data-i18n`-Attribute instrumentiert, aber **ARIA-Labels**, **title-Attribute** und einige **dynamisch via JS gesetzte Strings** sind hardcoded deutsch. Für Screenreader-Nutzer wird der Sprachwechsel deshalb unvollständig wirksam.
@@ -149,16 +180,38 @@ UI-Code (`js/labor-impact.js`, `labor-impact.html`, `css/labor-impact.css`) brau
 - **Item 106 Map**: bei Skalierung >20 Marker Marker-Cluster oder Choropleth erwägen (siehe phase-2-labor-impact-cases.md).
 - **Item 108 Crowdsourcing**: vor breiter Bewerbung des Issue-Templates juristisches Review (IT-/Medienrecht), siehe recht-crowdsourcing.md.
 
-### Incident-Karte: Umlaut-Audit + EN-Übersetzung der 195 Cases
+### Incident-Karte + Radar: Umlaut-Audit + EN-Übersetzung der Daten
 
-**Hintergrund:** Die 195 Incident-JSON-Dateien (Phase 1) sind ausschließlich auf Deutsch. Plus möglicherweise Umlaut-Konvention-Verletzungen aus früheren Sessions.
+**Hintergrund:** Die Daten-JSON-Dateien aus Phase 1/2 sind ausschließlich auf Deutsch:
+- `data/incidents/*.json` — **195 Files** (Phase 1 Incidents)
+- `data/radar/*.json` — **6 Files** (Phase 2 Radar-Situationen)
+- Plus möglicherweise Umlaut-Konvention-Verletzungen aus früheren Sessions.
 
 **Aufwandsschätzung 2026-05-02 (PL):**
-- Umlaut-Audit (Grep + selektive Edits): ~90-150k Tokens, 1 Session
-- EN-Übersetzung manuell: ~810-870k Tokens, 3-5 Sessions
-- EN-Übersetzung via Item 107 LLM-API-Pipeline: 1-2 Setup-Sessions + ~3 EUR API-Kosten + 3-5 Review-Sessions
 
-**Architektur-Entscheidung steht:** manuell (sofortige Sessions, hohe Token-Last) vs. Item 107 (einmalige Architektur-Investition, wiederverwendbar für FR/ES und für Cases-Auto-Update). Bei Entscheidung für Item 107 sollte das **vor** der EN-Übersetzung erfolgen.
+| Aufgabe | Tokens manuell | Tokens via Item 107 |
+|---|---|---|
+| Umlaut-Audit 195 Incidents (Grep + Edits) | ~90-150k, 1 Session | minimal (LLM macht beim Übersetzen mit) |
+| Umlaut-Audit 6 Radar-Cards | ~10k, im Audit-Slot enthalten | – |
+| EN-Übersetzung 195 Incidents | ~810-870k, 3-5 Sessions | 1-2 Setup + ~3 EUR API + 3-5 Review |
+| EN-Übersetzung 6 Radar-Cards | ~25-30k, in einer Session machbar | im 107-Slot enthalten |
+
+**Architektur-Entscheidung steht:** manuell (sofortige Sessions, hohe Token-Last) vs. Item 107 (einmalige Architektur-Investition, wiederverwendbar für FR/ES, Cases-Auto-Update **und** Crowdsourcing-KI-Pre-Check). Bei Entscheidung für Item 107 sollte das **vor** der EN-Übersetzung erfolgen.
+
+**Schema-Vorbereitung (beide Varianten):** Pro Datenfeld DE/EN-Suffix-Pattern entscheiden — z. B. `name_de` / `name_en` parallel, oder Single-Field mit Sprach-Lookup über separate JSON-Files. Konsequenz für `js/data-loader.js`, `js/detail-panel.js`, `js/strike-ticker.js`, `js/radar.js` (alle vier müssen Sprach-Lookup verstehen).
+
+### Statische Body-Content-Pages — Restprüfung
+
+**Pages:** `methodik.html`, `transparenz.html`, `impressum.html`, `404.html` — Body-Content-Strings sind teilweise instrumentiert (i18n-Keys), aber Vollständigkeit nicht systematisch verifiziert.
+
+**Aufgabe:**
+- Pro Page: Grep nach hardcodierten deutschen Strings ohne `data-i18n`-Attribut
+- Bei Fund: Key in i18n/{de,en}.json ergänzen + HTML annotieren
+- Sprachwechsel-Test pro Page
+
+**Aufwand:** ~5-10k Tokens pro Page, 1 Session für alle vier Pages zusammen machbar.
+
+**Datenschutz** (`datenschutz.html`) ist nach §8-Erweiterung 2026-05-02 vollständig DE+EN — als Referenz-Vorlage nutzen.
 
 ---
 
