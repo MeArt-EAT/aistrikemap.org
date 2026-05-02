@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "generated": "2026-05-02T09:52:20.902Z",
+  "generated": "2026-05-02T13:41:13.129Z",
   "license": "CC-BY-NC-SA-4.0",
   "methodology": {
     "min_attribution_strength": 4,
@@ -8,13 +8,23 @@
     "_note": "Counter zählt nur Cases mit ai_attribution_strength >= 4. Schwächere Cases werden für die Detail-Liste mitgezählt, aber nicht im Aggregat-Counter."
   },
   "totals": {
-    "cases_total": 1,
-    "cases_counted": 1,
-    "reduction_headcount": 10000,
+    "cases_total": 4,
+    "cases_counted": 4,
+    "reduction_headcount": 32500,
     "creation_headcount": 0,
-    "countries_with_cases": 1
+    "countries_with_cases": 3
   },
   "by_country": {
+    "US": {
+      "reduction": 21800,
+      "creation": 0,
+      "cases": 2
+    },
+    "SE": {
+      "reduction": 700,
+      "creation": 0,
+      "cases": 1
+    },
     "DE": {
       "reduction": 10000,
       "creation": 0,
@@ -22,6 +32,21 @@
     }
   },
   "by_industry": {
+    "E-Commerce / Cloud": {
+      "reduction": 14000,
+      "creation": 0,
+      "cases": 1
+    },
+    "Software / IT-Services": {
+      "reduction": 7800,
+      "creation": 0,
+      "cases": 1
+    },
+    "Fintech": {
+      "reduction": 700,
+      "creation": 0,
+      "cases": 1
+    },
     "Software": {
       "reduction": 10000,
       "creation": 0,
@@ -30,10 +55,34 @@
   },
   "top_reductions": [
     {
+      "company": "Amazon",
+      "country": "US",
+      "date": "2025-10-28",
+      "headcount": 14000,
+      "strength": 4,
+      "net_workforce_change": "reduction"
+    },
+    {
       "company": "SAP SE",
       "country": "DE",
       "date": "2024-01-23",
       "headcount": 10000,
+      "strength": 4,
+      "net_workforce_change": "stable"
+    },
+    {
+      "company": "IBM",
+      "country": "US",
+      "date": "2023-05-01",
+      "headcount": 7800,
+      "strength": 4,
+      "net_workforce_change": "stable"
+    },
+    {
+      "company": "Klarna",
+      "country": "SE",
+      "date": "2024-02-27",
+      "headcount": 700,
       "strength": 4,
       "net_workforce_change": "stable"
     }

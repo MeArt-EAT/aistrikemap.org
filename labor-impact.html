@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/cross-links.css?v=1">
   <link rel="stylesheet" href="css/subpages.css?v=1">
   <link rel="stylesheet" href="css/responsive.css?v=1">
-  <link rel="stylesheet" href="css/labor-impact.css?v=3">
+  <link rel="stylesheet" href="css/labor-impact.css?v=4">
 </head>
 <body>
   <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Zum Inhalt springen</a>
@@ -51,16 +51,18 @@
     <h1 data-i18n="labor.title">AI &amp; Arbeit</h1>
     <p class="labor-impact-page__intro" data-i18n="labor.intro">
       Wie viele Erwerbstätige sind weltweit von Künstlicher Intelligenz betroffen?
-      Diese Anzeige zeigt die Bandbreite aus drei großen Reports — getrennt nach
-      Substitution (Tätigkeiten, die KI ersetzen kann) und Augmentation (Tätigkeiten,
-      die KI erweitert oder produktiver macht). Statt eines Saldos zeigen wir, was die
-      Quellen tatsächlich messen.
+      Diese Übersicht zeigt drei Ebenen: was Studien für möglich halten (Theorie),
+      was Unternehmen weltweit planen (Plan) und was bisher konkret gemeldet wurde
+      (Realität). Theorie und Plan sagen viel — Realität ist sehr ungleich verteilt.
     </p>
 
     <div id="labor-impact-error" class="labor-impact__error" style="display:none" data-i18n="labor.error">
       Daten konnten nicht geladen werden.
     </div>
 
+    <h2 class="labor-impact__section-title labor-impact__section-title--theory" data-i18n="labor.section.theory">
+      Potentialanalyse — was Studien für möglich halten
+    </h2>
     <div class="labor-impact__exposures">
       <section class="labor-impact__panel labor-impact__panel--substitution"
                data-i18n-aria="labor.substitutionHeading"
@@ -88,11 +90,58 @@
         </p>
       </section>
     </div>
-
     <p class="labor-impact__anchor-line" id="labor-impact-anchor-line"></p>
 
+    <h2 class="labor-impact__section-title labor-impact__section-title--plan" data-i18n="labor.section.plan">
+      Was Unternehmen weltweit planen
+    </h2>
+    <section class="labor-impact__plan" aria-labelledby="plan-heading">
+      <h3 id="plan-heading" class="visually-hidden">WEF Future of Jobs Survey 2025</h3>
+      <p class="labor-impact__plan-source" data-i18n="labor.plan.source">
+        WEF Future of Jobs Survey 2025 — über 1.000 Arbeitgeber, 14 Mio. Beschäftigte,
+        22 Industrien, 55 Volkswirtschaften.
+      </p>
+      <ul class="labor-impact__plan-list">
+        <li><strong>41 %</strong> <span data-i18n="labor.plan.item1">planen Personal-Reduktion in KI-automatisierbaren Bereichen</span></li>
+        <li><strong>77 %</strong> <span data-i18n="labor.plan.item2">planen Upskilling der Belegschaft</span></li>
+        <li><strong>47 %</strong> <span data-i18n="labor.plan.item3">planen interne Umverteilung statt Entlassung</span></li>
+      </ul>
+      <p class="labor-impact__plan-note" data-i18n="labor.plan.note">
+        Erwartung der Arbeitgeber selbst — Plan, keine Realisierung.
+      </p>
+    </section>
+
+    <h2 class="labor-impact__section-title labor-impact__section-title--reality" data-i18n="labor.section.reality">
+      Realität — was bisher konkret gemeldet wurde
+    </h2>
+    <section class="labor-impact__reality" aria-labelledby="reality-heading">
+      <h3 id="reality-heading" class="visually-hidden">Konkret gemeldete KI-bedingte Stellen-Veränderungen</h3>
+      <div class="labor-impact__reality-totals">
+        <div class="labor-impact__reality-stat">
+          <span class="labor-impact__reality-num" id="labor-impact-reality-reduction">…</span>
+          <span class="labor-impact__reality-label" data-i18n="labor.reality.reduction">Stellen reduziert (kuratiert)</span>
+        </div>
+        <div class="labor-impact__reality-stat">
+          <span class="labor-impact__reality-num" id="labor-impact-reality-cases">…</span>
+          <span class="labor-impact__reality-label" data-i18n="labor.reality.cases">dokumentierte Fälle</span>
+        </div>
+        <div class="labor-impact__reality-stat">
+          <span class="labor-impact__reality-num" id="labor-impact-reality-countries">…</span>
+          <span class="labor-impact__reality-label" data-i18n="labor.reality.countries">Länder</span>
+        </div>
+      </div>
+      <h4 class="labor-impact__reality-subhead" data-i18n="labor.reality.topTitle">Größte gemeldete Reduktionen</h4>
+      <ul id="labor-impact-reality-top" class="labor-impact__reality-top"></ul>
+      <p class="labor-impact__reality-note" data-i18n="labor.reality.note">
+        Kuratiert nach bestem Wissen aus journalistischen Quellen. Counter zählt nur
+        Fälle mit explizitem KI-Bezug (Stärke 4–5 von 5). Globale Verlust-Tracker
+        existieren noch nicht — wir sammeln die Fälle einzeln und sind auf Hinweise
+        angewiesen.
+      </p>
+    </section>
+
     <section class="labor-impact__sources-section" aria-labelledby="sources-heading">
-      <h2 id="sources-heading" class="labor-impact__sources-section-title" data-i18n="labor.sources">Quellen</h2>
+      <h2 id="sources-heading" class="labor-impact__sources-section-title" data-i18n="labor.sources">Quellen — Theorie-Ebene</h2>
       <ul id="labor-impact-sources" class="labor-impact__sources"></ul>
     </section>
 
@@ -119,7 +168,7 @@
   </footer>
   <script src="js/i18n.js?v=3"></script>
   <script src="js/nav.js?v=3"></script>
-  <script src="js/labor-impact.js?v=3"></script>
+  <script src="js/labor-impact.js?v=4"></script>
   <script>
     I18n.load(I18n.getStoredLang()).then(function () {
       LaborImpact.init();

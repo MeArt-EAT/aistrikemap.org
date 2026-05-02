@@ -21,16 +21,26 @@
 const LaborImpact = (function () {
   var TICK_INTERVAL_MS = 100; // 10 Hz visuelle Aktualisierung
   var dataCache = null;
+  var aggregateCache = null;
   var anchorMs = null;
   var intervalId = null;
 
   async function init() {
     try {
-      var resp = await fetch('data/labor-impact-rates.json?v=' + Date.now());
-      if (!resp.ok) throw new Error('labor-impact-rates: ' + resp.status);
-      dataCache = await resp.json();
+      var [ratesResp, aggResp] = await Promise.all([
+        fetch('data/labor-impact-rates.json?v=' + Date.now()),
+        fetch('data/labor-impact-aggregate.json?v=' + Date.now())
+      ]);
+      if (!ratesResp.ok) throw new Error('labor-impact-rates: ' + ratesResp.status);
+      dataCache = await ratesResp.json();
       anchorMs = Date.parse(dataCache.anchor_date);
       if (isNaN(anchorMs)) throw new Error('Invalid anchor_date: ' + dataCache.anchor_date);
+      // Aggregate ist optional — wenn fehlt, wird Realität-Block leer dargestellt
+      if (aggResp.ok) {
+        aggregateCache = await aggResp.json();
+      } else {
+        console.warn('[LaborImpact] aggregate missing, reality block will be empty');
+      }
       render();
     } catch (err) {
       console.error('[LaborImpact]', err);
@@ -161,6 +171,44 @@ const LaborImpact = (function () {
     }, TICK_INTERVAL_MS);
   }
 
+  function renderReality(lang) {
+    var redEl = document.getElementById('labor-impact-reality-reduction');
+    var casesEl = document.getElementById('labor-impact-reality-cases');
+    var countriesEl = document.getElementById('labor-impact-reality-countries');
+    var topEl = document.getElementById('labor-impact-reality-top');
+    if (!redEl || !casesEl || !countriesEl || !topEl) return;
+
+    if (!aggregateCache || !aggregateCache.totals) {
+      redEl.textContent = '–';
+      casesEl.textContent = '–';
+      countriesEl.textContent = '–';
+      topEl.innerHTML = '';
+      return;
+    }
+
+    var t = aggregateCache.totals;
+    redEl.textContent = formatCount(t.reduction_headcount, lang);
+    casesEl.textContent = formatCount(t.cases_counted, lang);
+    countriesEl.textContent = formatCount(t.countries_with_cases, lang);
+
+    topEl.innerHTML = '';
+    (aggregateCache.top_reductions || []).forEach(function (c) {
+      var li = document.createElement('li');
+      li.className = 'labor-impact__reality-top-item';
+      var dateLabel = c.date ? c.date.substring(0, 7) : '';
+      var stableTag = '';
+      if (c.net_workforce_change === 'stable') {
+        stableTag = ' <span class="labor-impact__reality-stable" title="' +
+          (lang === 'en' ? 'Total headcount stable due to AI hiring' : 'Gesamt-Headcount stable durch KI-Neueinstellungen') +
+          '">' + (lang === 'en' ? '· headcount stable' : '· Gesamt stabil') + '</span>';
+      }
+      li.innerHTML = '<strong>' + c.company + '</strong> '
+        + '<span class="labor-impact__reality-country">(' + c.country + ', ' + dateLabel + ')</span> '
+        + '— ' + formatCount(c.headcount, lang) + stableTag;
+      topEl.appendChild(li);
+    });
+  }
+
   function render() {
     if (!dataCache) return;
     var lang = currentLang();
@@ -168,6 +216,7 @@ const LaborImpact = (function () {
     renderCounterMeta(dataCache.exposure.substitution, 'labor-impact-substitution', lang);
     renderCounterMeta(dataCache.exposure.augmentation, 'labor-impact-augmentation', lang);
     renderAnchorLine(lang);
+    renderReality(lang);
     renderSources(dataCache.sources || [], lang);
     renderStand(lang);
     startTickLoop(lang);

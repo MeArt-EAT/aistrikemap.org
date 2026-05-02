@@ -109,6 +109,147 @@
   line-height: 1.5;
 }
 
+/* visually-hidden helper (für Screen-Reader-Headings) */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0);
+  white-space: nowrap; border: 0;
+}
+
+/* Sektionen-Headlines */
+.labor-impact__section-title {
+  font-size: 1.4rem;
+  margin: 2.5rem 0 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle, #2a2e33);
+  letter-spacing: -0.01em;
+}
+.labor-impact__section-title--theory   { border-bottom-color: rgba(243, 156, 18, 0.5); }
+.labor-impact__section-title--plan     { border-bottom-color: rgba(155, 89, 182, 0.5); }
+.labor-impact__section-title--reality  { border-bottom-color: rgba(231, 76, 60, 0.5); }
+
+/* Plan-Block (WEF Survey) */
+.labor-impact__plan {
+  background: var(--bg-elevated, #1c1f23);
+  border: 1px solid var(--border-subtle, #2a2e33);
+  border-left: 3px solid #9b59b6;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin: 0 0 2rem;
+}
+.labor-impact__plan-source {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  color: var(--text-muted, #9aa0a6);
+  font-style: italic;
+}
+.labor-impact__plan-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.labor-impact__plan-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--border-subtle, #2a2e33);
+  font-size: 0.98rem;
+}
+.labor-impact__plan-list li:last-child { border-bottom: none; }
+.labor-impact__plan-list strong {
+  display: inline-block;
+  min-width: 3.5rem;
+  color: #9b59b6;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.15rem;
+}
+.labor-impact__plan-note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted, #9aa0a6);
+  font-style: italic;
+}
+
+/* Realität-Block */
+.labor-impact__reality {
+  background: var(--bg-elevated, #1c1f23);
+  border: 1px solid var(--border-subtle, #2a2e33);
+  border-left: 3px solid #e74c3c;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin: 0 0 2rem;
+}
+.labor-impact__reality-totals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .labor-impact__reality-totals { grid-template-columns: 1fr; }
+}
+.labor-impact__reality-stat {
+  padding: 0.75rem 0.5rem;
+  background: rgba(231, 76, 60, 0.04);
+  border-radius: 4px;
+}
+.labor-impact__reality-num {
+  display: block;
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #e74c3c;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+.labor-impact__reality-label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-muted, #9aa0a6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.labor-impact__reality-subhead {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted, #9aa0a6);
+  margin: 1rem 0 0.5rem;
+}
+.labor-impact__reality-top {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.labor-impact__reality-top-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--border-subtle, #2a2e33);
+  font-size: 0.95rem;
+}
+.labor-impact__reality-top-item:last-child { border-bottom: none; }
+.labor-impact__reality-country {
+  color: var(--text-muted, #9aa0a6);
+  font-size: 0.85rem;
+}
+.labor-impact__reality-stable {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+  background: rgba(93, 176, 117, 0.15);
+  color: #5db075;
+  border-radius: 3px;
+  font-style: italic;
+}
+.labor-impact__reality-note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted, #9aa0a6);
+  line-height: 1.5;
+  font-style: italic;
+}
+
 .labor-impact__sources-section {
   margin: 0 0 2rem;
 }
