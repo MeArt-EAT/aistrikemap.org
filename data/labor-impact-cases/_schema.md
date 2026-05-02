@@ -39,6 +39,9 @@
 | `headcount_germany` | number | Anteil Deutschland (für DE-spezifische Aufschlüsselung). |
 | `net_workforce_change` | string | `"reduction"`, `"stable"`, `"growth"` — Gesamt-Headcount-Effekt nach Programm. Macht den Bagger-Hebel sichtbar (z. B. SAP: 10k abgebaut, aber Gesamt stable durch KI-Neueinstellungen). |
 | `context_de` / `context_en` | string | Zusätzlicher Kontext, der das Zitat einordnet. |
+| `tags` | string[] | Freie Tags für spätere Filter/Facetten (z. B. `"customer-service"`, `"back-office"`, `"white-collar"`, `"reversal"`, `"disputed-attribution"`). Vokabular-Empfehlung siehe unten. |
+| `severity_class` | number 1-5 | Größenordnungs-Klasse für visuelle Sortierung und Skalierung (siehe Skala unten). Analog Incident-Severity, aber an Stellenanzahl orientiert. |
+| `last_verified` | string | ISO-Datum (`YYYY-MM-DD`) der letzten Quellen-Verifikation. Bei Wieder-Vorlage prüfen, ob URLs noch valide sind und keine späteren Korrekturen/Reversals existieren. |
 | `related_radar` | string | ID einer verknüpften Radar-Situation, falls thematisch passend. |
 | `related_incidents` | string[] | IDs verknüpfter Incidents. |
 
@@ -57,6 +60,44 @@ Die Stärke entscheidet, ob ein Case in den Aggregat-Counter "konkret realisiert
 | **1** | Wirtschaftliche Restrukturierung **ohne KI-Bezug** (z. B. E-Mobilitäts-Wende, China-Konkurrenz, Konjunktur). | VW 35.000, Bosch 12.000, ZF 14.000 — primär andere Treiber | ❌ nein, **nicht** in Liste (gehört nicht hierher) |
 
 **Wichtig:** Stärke 1 wird nicht aufgenommen — Cases mit primär anderen Treibern verfälschen die Aussage. Stärke 2-3 erscheinen in der Detail-Liste mit deutlicher Markierung "Restrukturierungs-Kontext, KI nicht offiziell als Grund".
+
+---
+
+## Severity-Class-Skala (Größenordnung, 1-5)
+
+| Klasse | Stellenanzahl (`headcount_affected`) | Beispiel-Charakter |
+|---|---|---|
+| **5** | > 10.000 | Konzern-weiter Großumbau, prominenter Einzelfall (Amazon 14k, SAP 10k) |
+| **4** | 5.000 – 10.000 | Großer Programm-Bereich (IBM 7,8k) |
+| **3** | 1.000 – 5.000 | Mittleres Programm |
+| **2** | 100 – 1.000 | Kleinerer, oft funktionsbereich-spezifischer Case (Klarna 700) |
+| **1** | < 100 | Sehr kleiner Einzelfall, meist nur lokal beachtet |
+
+Severity-Class ist **unabhängig** von der AI-Attribution-Stärke. Ein Case kann z. B. severity_class 5 (groß) + ai_attribution_strength 2 (kein expliziter KI-Grund) sein → wird **nicht** in den Counter aufgenommen, würde aber bei späterer Detail-Liste mit Filter "alle Restrukturierungen" gezeigt.
+
+---
+
+## Tag-Vokabular-Empfehlung
+
+Freies Vokabular, aber konsistent halten für Facet-Filterung. Vorgeschlagene Cluster:
+
+**Funktionsbereich:**
+- `customer-service`, `back-office`, `hr`, `it`, `marketing`, `sales`, `finance`, `legal`, `creative`, `editorial`, `production`, `logistics`
+
+**Beruf-Hierarchie:**
+- `white-collar`, `blue-collar`, `entry-level`, `senior`, `outsourcing` (wenn Subunternehmer betroffen)
+
+**Branche:**
+- `software`, `fintech`, `e-commerce`, `cloud`, `media`, `manufacturing`, `automotive`, `pharma`, `retail`, `consulting`
+
+**Ablauf-Charakter:**
+- `restructuring` (Konzernumbau), `hiring-pause` (kein aktiver Layoff, nur Nicht-Nachbesetzung), `attrition` (natürliche Fluktuation), `voluntary-program` (Abfindungs-/Vorruhestands-Angebot), `forced-layoff` (Kündigungen)
+
+**Methodik-Vorbehalte:**
+- `disputed-attribution` (KI-Grund öffentlich umstritten, z. B. Amazon Jassy-Widerspruch)
+- `reversal` (Programm später teilweise zurückgenommen, z. B. Klarna Re-Hire)
+- `outsourcing-hop` (Reduktion bei Subunternehmer, kein direkter Layoff im erfassten Konzern)
+- `multi-year-plan` (Programm über mehrere Jahre, nicht in einem Quartal)
 
 ---
 

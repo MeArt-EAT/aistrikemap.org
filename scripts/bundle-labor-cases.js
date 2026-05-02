@@ -79,6 +79,23 @@ function aggregate(cases) {
     }
   }
 
+  // Tag-Häufigkeiten über alle counted Cases — Vorbereitung Filter-Facetten.
+  const tagCounts = {};
+  for (const c of counted) {
+    for (const tag of c.tags || []) {
+      tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    }
+  }
+
+  // Severity-Class-Verteilung — Vorbereitung visueller Größenklassen-Anzeige.
+  const severityCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, unknown: 0 };
+  for (const c of counted) {
+    const k = (typeof c.severity_class === 'number' && c.severity_class >= 1 && c.severity_class <= 5)
+      ? c.severity_class
+      : 'unknown';
+    severityCounts[k] += 1;
+  }
+
   // Top-Cases-Vorschau (für Übersichts-Page): max. 5 Reduktionen sortiert nach
   // Headcount, mit minimalem Feld-Set für Front-End-Performance.
   const topReductions = [...reductions]
@@ -90,6 +107,8 @@ function aggregate(cases) {
       date: c.date_announced,
       headcount: c.headcount_affected,
       strength: c.ai_attribution_strength,
+      severity_class: c.severity_class || null,
+      tags: c.tags || [],
       net_workforce_change: c.net_workforce_change || null
     }));
 
@@ -111,6 +130,8 @@ function aggregate(cases) {
     },
     by_country: byCountry,
     by_industry: byIndustry,
+    by_tag: tagCounts,
+    by_severity_class: severityCounts,
     top_reductions: topReductions
   };
 }
