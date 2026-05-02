@@ -21,6 +21,7 @@ const path = require('path');
 const MIN_STRENGTH = 4; // siehe _schema.md AI-Attribution-Stärke-Skala
 const CASES_DIR = path.join(__dirname, '..', 'data', 'labor-impact-cases');
 const OUT_FILE = path.join(__dirname, '..', 'data', 'labor-impact-aggregate.json');
+const BY_COUNTRY_DIR = path.join(__dirname, '..', 'data', 'labor-impact-by-country');
 
 function loadCases() {
   if (!fs.existsSync(CASES_DIR)) {
@@ -136,16 +137,79 @@ function aggregate(cases) {
   };
 }
 
+/**
+ * Schreibe pro-Land-Bundles für die Detail-Ansicht (Item 106 Map-Modul).
+ * Jeder Land-File enthält die vollständigen Cases dieses Landes (counted +
+ * uncounted), plus Land-Aggregate. So kann die Detail-Ansicht pro-Land
+ * laden, statt das gesamte Bundle zu ziehen — wichtig bei >100 Cases.
+ *
+ * Returns Map<countryCode, summary> für den Manifest-Output.
+ */
+function writeByCountry(allCases) {
+  if (!fs.existsSync(BY_COUNTRY_DIR)) {
+    fs.mkdirSync(BY_COUNTRY_DIR, { recursive: true });
+  }
+
+  const byCountryCases = {};
+  for (const c of allCases) {
+    const key = (c.country || 'XX').toUpperCase();
+    if (!byCountryCases[key]) byCountryCases[key] = [];
+    byCountryCases[key].push(c);
+  }
+
+  const summaries = {};
+  for (const [country, cases] of Object.entries(byCountryCases)) {
+    const counted = cases.filter(c =>
+      typeof c.ai_attribution_strength === 'number'
+      && c.ai_attribution_strength >= MIN_STRENGTH
+    );
+    const reduction = counted
+      .filter(c => c.direction !== 'creation')
+      .reduce((s, c) => s + (Number(c.headcount_affected) || 0), 0);
+    const creation = counted
+      .filter(c => c.direction === 'creation')
+      .reduce((s, c) => s + (Number(c.headcount_affected) || 0), 0);
+
+    const file = path.join(BY_COUNTRY_DIR, `${country.toLowerCase()}.json`);
+    const payload = {
+      country,
+      cases_total: cases.length,
+      cases_counted: counted.length,
+      reduction_headcount: reduction,
+      creation_headcount: creation,
+      cases: cases.sort((a, b) =>
+        (b.headcount_affected || 0) - (a.headcount_affected || 0)
+      )
+    };
+    fs.writeFileSync(file, JSON.stringify(payload, null, 2));
+    summaries[country] = {
+      cases_total: cases.length,
+      cases_counted: counted.length,
+      reduction_headcount: reduction,
+      creation_headcount: creation,
+      file: path.relative(path.join(__dirname, '..'), file).replace(/\\/g, '/')
+    };
+  }
+
+  return summaries;
+}
+
 function main() {
   const cases = loadCases();
   const out = aggregate(cases);
+
+  // Pro-Land-Bundles schreiben + Manifest-Pointer ins Aggregate
+  const countryFiles = writeByCountry(cases);
+  out.country_files = countryFiles;
+
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2));
   console.log(`Bundled ${cases.length} cases (${out.totals.cases_counted} counted) -> ${path.relative(process.cwd(), OUT_FILE)}`);
   console.log(`  reduction headcount: ${out.totals.reduction_headcount.toLocaleString('de-DE')}`);
   console.log(`  creation headcount:  ${out.totals.creation_headcount.toLocaleString('de-DE')}`);
   console.log(`  countries:           ${out.totals.countries_with_cases}`);
+  console.log(`  per-country bundles: ${Object.keys(countryFiles).length}`);
 }
 
 if (require.main === module) main();
 
-module.exports = { loadCases, aggregate, MIN_STRENGTH };
+module.exports = { loadCases, aggregate, writeByCountry, MIN_STRENGTH };

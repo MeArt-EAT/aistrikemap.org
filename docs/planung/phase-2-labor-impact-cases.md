@@ -37,14 +37,27 @@ Item 98 (Labor Impact Ticker) wurde an einem Tag durch fünf Konzept-Iterationen
 ```
 data/
 ├── labor-impact-rates.json              (bestehend, Studien-Potenzial)
-├── labor-impact-aggregate.json          (NEU, auto-generiert per Bundle)
-└── labor-impact-cases/                  (NEU, Verzeichnis)
-    ├── _schema.md                       (Schema-Dokumentation)
-    ├── sap-2024-konzernumbau.json       (erster Case)
-    ├── klarna-2024-customer-service.json
-    ├── ibm-2025-back-office.json
+├── labor-impact-aggregate.json          (auto-generiert: Globals + by_country
+│                                         + by_industry + by_tag + by_severity
+│                                         + top_reductions + country_files-Manifest)
+├── labor-impact-cases/                  (Quelle, eine Datei pro Case)
+│   ├── _schema.md                       (Schema-Dokumentation)
+│   ├── sap-2024-konzernumbau.json
+│   ├── klarna-2024-customer-service.json
+│   ├── ibm-2023-back-office-pause.json
+│   ├── amazon-2025-corporate.json
+│   └── ...
+└── labor-impact-by-country/             (auto-generiert: pro-Land-Bundle für
+    ├── de.json                           Detail-Ansicht / Item 106 Map-Modul)
+    ├── us.json
+    ├── se.json
     └── ...
 ```
+
+**Lade-Strategie:**
+- Übersichts-Page (`labor-impact.html`) lädt nur `labor-impact-aggregate.json` (klein, skaliert) + Top-5-Sample
+- Detail-Page / Map-Modul (Item 106) lädt **on-demand pro Land** aus `labor-impact-by-country/{land}.json` → kein Memory-Lastspitze bei >100 Cases
+- `country_files`-Manifest im Aggregate liefert Pfade + Land-Summen für Karten-Rendering
 
 ### 1.2 Schema-Highlights
 
