@@ -99,8 +99,8 @@ const LaborImpact = (function () {
       ? dataCache.anchor_label_en
       : dataCache.anchor_label_de;
     var tpl = (lang === 'en')
-      ? 'Counters tick from {date} (anchor: {label}) — not from page load.'
-      : 'Counter zählen seit {date} (Anker: {label}) — nicht ab Seiten-Aufruf.';
+      ? 'Counters tick from {date} (anchor: {label}).'
+      : 'Counter zählen seit {date} (Anker: {label}).';
     el.textContent = tpl.replace('{date}', date).replace('{label}', anchorLabel);
   }
 
