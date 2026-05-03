@@ -23,7 +23,7 @@ Item 98 (Labor Impact Ticker) wurde an einem Tag durch fünf Konzept-Iterationen
 - **Statista-Logik weltweit anwendbar**: "Theorie vs. Praxis" wird durch 3-Ebenen-Layout konkret.
 - **Globale Verlust-Tracker existieren nicht** (ILO bestätigt). AIStrikeMap kuratiert selbst.
 - **AI-Attribution-Stärke entscheidet** über Counter-Aufnahme (≥4). Cases mit Stärke 1-3 wären Verfälschung — Siemens und Bayer bewusst nicht aufgenommen, dokumentiert in Recherche-Notizen.
-- **Bagger-Hebel sichtbar** durch `net_workforce_change`-Feld + "Gesamt stabil"-Pille (3 von 4 aktuellen Cases stable).
+- **Asymmetrie zwischen abgebauten und neu geschaffenen Stellen sichtbar** durch `net_workforce_change`-Feld + "Gesamt stabil"-Pille (3 von 4 ursprünglichen Cases stable).
 - **Tags + Severity-Class** als Skalierungs-Vorbereitung — 18 Tag-Counts + Severity-Verteilung im Aggregate.
 
 ---
@@ -74,7 +74,7 @@ Vollständig in [_schema.md](../../data/labor-impact-cases/_schema.md). Kern-Fel
 
 - `ai_attribution_strength` (1–5) — entscheidet ob ein Case in den Counter geht (≥4)
 - `direction` — `"reduction"` oder `"creation"`
-- `net_workforce_change` — `"reduction"` / `"stable"` / `"growth"` (macht Bagger-Hebel sichtbar; SAP: 10k abgebaut + Gesamt stable durch KI-Neueinstellungen)
+- `net_workforce_change` — `"reduction"` / `"stable"` / `"growth"` (macht Asymmetrie zwischen abgebauten und neu geschaffenen Stellen sichtbar; SAP: 10.000 abgebaut + Gesamt stable durch KI-Neueinstellungen)
 - `headcount_germany` (optional) — für DE-spezifische Aufschlüsselung
 - `isco_categories` (optional) — Vorbereitung Career-Dashboard-Cross-Reference
 - mind. 2 Quellen, eine davon journalistisch, keine Pure-PR
@@ -250,7 +250,7 @@ Wichtiger Punkt: Die Cases-Datenbank überlappt thematisch mit dem Career Dashbo
 ### Was nicht vergessen werden darf
 
 - **`js/labor-impact.js` Anker-Zeile-Fix** vom 2026-05-01 — wurde mitgenommen in den Commit, aber lebt nun stabil im File: "Counter zählen seit … (Anker: …)" ohne den vorherigen Zusatz "— nicht ab Seiten-Aufruf"
-- **Bagger-Caveat** in `i18n/{de,en}.json` Key `labor.caveatBody` ist methodisch wichtig, nicht durch andere Caveats ersetzen
+- **Asymmetrie-Caveat** in `i18n/{de,en}.json` Key `labor.caveatBody` ist methodisch wichtig, nicht durch andere Caveats ersetzen
 - **Pre-release-todos** Update bei verifizierten Bandbreiten in v0.3 ist noch offen (siehe pre-release-todos.md Item 98 v0.3-Block)
 
 ---

@@ -9,7 +9,7 @@
  * Zusätzlich pro Karte: statische Bandbreite (low–high %) und
  * Quellen-Beleg-Zeile. KEIN Saldo zwischen den Kategorien — Substitution
  * und Augmentation sind getrennt, weil Brutto-Effekte asymmetrisch sind
- * (Bagger-Hebel, siehe Caveat-Box).
+ * (Asymmetrie zwischen abgebauten und neu geschaffenen Stellen, siehe Caveat).
  *
  * Lifecycle: Bei neuer Studien-Edition (WEF FoJ 2027 etc.) werden
  * anchor_date + tick_per_second + Quellen-Block in der JSON-Datei

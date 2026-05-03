@@ -37,7 +37,7 @@
 | `date_completed` | string | Datum des Programm-Abschlusses (falls bekannt). |
 | `headcount_initial` | number | Ursprüngliche Ankündigungs-Zahl, falls später ausgeweitet. |
 | `headcount_germany` | number | Anteil Deutschland (für DE-spezifische Aufschlüsselung). |
-| `net_workforce_change` | string | `"reduction"`, `"stable"`, `"growth"` — Gesamt-Headcount-Effekt nach Programm. Macht den Bagger-Hebel sichtbar (z. B. SAP: 10k abgebaut, aber Gesamt stable durch KI-Neueinstellungen). |
+| `net_workforce_change` | string | `"reduction"`, `"stable"`, `"growth"` — Gesamt-Headcount-Effekt nach Programm. Macht die Asymmetrie zwischen abgebauten und neu geschaffenen Stellen sichtbar (z. B. SAP: 10.000 abgebaut, aber Gesamt stable durch KI-Neueinstellungen). |
 | `context_de` / `context_en` | string | Zusätzlicher Kontext, der das Zitat einordnet. |
 | `tags` | string[] | Freie Tags für spätere Filter/Facetten (z. B. `"customer-service"`, `"back-office"`, `"white-collar"`, `"reversal"`, `"disputed-attribution"`). Vokabular-Empfehlung siehe unten. |
 | `severity_class` | number 1-5 | Größenordnungs-Klasse für visuelle Sortierung und Skalierung (siehe Skala unten). Analog Incident-Severity, aber an Stellenanzahl orientiert. |

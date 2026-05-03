@@ -174,7 +174,7 @@ UI-Code (`js/labor-impact.js`, `labor-impact.html`, `css/labor-impact.css`) brau
 
 **Zusätzlich:**
 
-- Caveat-Box (Bagger-Argument) prüfen, ob sie methodisch wasserdicht formuliert ist — aktuell `i18n/{de,en}.json` Key `labor.caveatBody`.
+- Caveat-Box (Asymmetrie-Argument zur Verdrängungs-/Schaffungs-Bilanz) prüfen, ob sie methodisch wasserdicht formuliert ist — aktuell `i18n/{de,en}.json` Key `labor.caveatBody`.
 - Header `og:description` der `labor-impact.html` ggf. anpassen, wenn die Bandbreiten verifiziert sind.
 - **Item 105 Cases-Erweiterung**: Cases-DB aktuell mit 4 Cases (3 Länder). Vor öffentlicher Bewerbung des Moduls ≥10-15 Cases in ≥6 Ländern anstreben — sonst wirkt der Realität-Block dünn.
 - **Item 106 Map**: bei Skalierung >20 Marker Marker-Cluster oder Choropleth erwägen (siehe phase-2-labor-impact-cases.md).

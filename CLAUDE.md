@@ -92,7 +92,7 @@ Each incident JSON-LD file contains:
 - **Bundle**: `node scripts/bundle-labor-cases.js` after editing any case
 - **Crowdsourcing entry**: `.github/ISSUE_TEMPLATE/ki-entlassung-melden.yml` (rules in `docs/planung/recht-crowdsourcing.md`)
 - **Schema concept**: `data/labor-impact-cases/_schema.md` defines AI-attribution-strength scale (1-5, counter only ≥4) + severity-class scale + tag vocabulary
-- **Methodology**: see `docs/planung/phase-2-labor-impact-cases.md` (iteration history v0.1-v0.4 + Bagger-Hebel-Argument)
+- **Methodology**: see `docs/planung/phase-2-labor-impact-cases.md` (iteration history v0.1-v0.4 + Asymmetrie-Argument zur Verdrängungs-/Schaffungs-Bilanz)
 
 ## Common Tasks
 
