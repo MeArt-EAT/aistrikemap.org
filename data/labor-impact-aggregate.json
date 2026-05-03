@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "generated": "2026-05-03T06:40:52.952Z",
+  "generated": "2026-05-03T06:45:56.465Z",
   "license": "CC-BY-NC-SA-4.0",
   "methodology": {
     "min_attribution_strength": 4,
@@ -8,17 +8,22 @@
     "_note": "Counter zählt nur Cases mit ai_attribution_strength >= 4. Schwächere Cases werden für die Detail-Liste mitgezählt, aber nicht im Aggregat-Counter."
   },
   "totals": {
-    "cases_total": 9,
-    "cases_counted": 9,
-    "reduction_headcount": 59875,
+    "cases_total": 12,
+    "cases_counted": 12,
+    "reduction_headcount": 84875,
     "creation_headcount": 0,
-    "countries_with_cases": 5
+    "countries_with_cases": 6
   },
   "by_country": {
     "US": {
-      "reduction": 36900,
+      "reduction": 51900,
       "creation": 0,
-      "cases": 4
+      "cases": 6
+    },
+    "GB": {
+      "reduction": 10000,
+      "creation": 0,
+      "cases": 1
     },
     "SE": {
       "reduction": 700,
@@ -42,8 +47,18 @@
     }
   },
   "by_industry": {
+    "IT-Beratung": {
+      "reduction": 11000,
+      "creation": 0,
+      "cases": 1
+    },
     "E-Commerce / Cloud": {
       "reduction": 14000,
+      "creation": 0,
+      "cases": 1
+    },
+    "Telekommunikation": {
+      "reduction": 10000,
       "creation": 0,
       "cases": 1
     },
@@ -77,6 +92,11 @@
       "creation": 0,
       "cases": 1
     },
+    "Software / SaaS": {
+      "reduction": 4000,
+      "creation": 0,
+      "cases": 1
+    },
     "Software": {
       "reduction": 10000,
       "creation": 0,
@@ -89,39 +109,43 @@
     }
   },
   "by_tag": {
-    "white-collar": 7,
+    "white-collar": 10,
+    "consulting": 1,
+    "restructuring": 6,
+    "ai-first": 3,
+    "multi-year-plan": 6,
     "corporate": 1,
     "e-commerce": 1,
     "cloud": 2,
-    "restructuring": 4,
     "disputed-attribution": 2,
+    "customer-service": 3,
+    "telecom": 1,
+    "blue-collar": 1,
     "edtech": 1,
     "translation": 1,
     "outsourcing": 4,
     "outsourcing-hop": 2,
-    "ai-first": 1,
     "contractors": 1,
     "back-office": 1,
     "hr": 1,
-    "software": 4,
+    "software": 5,
     "hiring-pause": 1,
     "attrition": 1,
-    "multi-year-plan": 4,
-    "customer-service": 1,
     "fintech": 1,
     "reversal": 2,
     "editorial": 2,
     "media": 2,
     "proofreading": 1,
     "forced-layoff": 3,
+    "saas": 1,
     "voluntary-program": 1
   },
   "by_severity_class": {
     "1": 2,
     "2": 2,
-    "3": 0,
+    "3": 1,
     "4": 1,
-    "5": 4,
+    "5": 6,
     "unknown": 0
   },
   "top_reductions": [
@@ -177,46 +201,53 @@
       "net_workforce_change": "reduction"
     },
     {
-      "company": "SAP SE",
-      "country": "DE",
-      "date": "2024-01-23",
-      "headcount": 10000,
-      "strength": 4,
+      "company": "Accenture",
+      "country": "US",
+      "date": "2025-09-26",
+      "headcount": 11000,
+      "strength": 5,
       "severity_class": 5,
       "tags": [
         "white-collar",
-        "software",
+        "consulting",
         "restructuring",
-        "voluntary-program",
+        "ai-first",
         "multi-year-plan"
       ],
       "net_workforce_change": "stable"
     },
     {
-      "company": "IBM",
-      "country": "US",
-      "date": "2023-05-01",
-      "headcount": 7800,
-      "strength": 4,
-      "severity_class": 4,
+      "company": "BT Group (British Telecom)",
+      "country": "GB",
+      "date": "2023-05-18",
+      "headcount": 10000,
+      "strength": 5,
+      "severity_class": 5,
       "tags": [
-        "back-office",
-        "hr",
-        "software",
-        "hiring-pause",
-        "attrition",
-        "multi-year-plan"
+        "customer-service",
+        "telecom",
+        "white-collar",
+        "blue-collar",
+        "multi-year-plan",
+        "restructuring"
       ],
-      "net_workforce_change": "stable"
+      "net_workforce_change": "reduction"
     }
   ],
   "country_files": {
     "US": {
-      "cases_total": 4,
-      "cases_counted": 4,
-      "reduction_headcount": 36900,
+      "cases_total": 6,
+      "cases_counted": 6,
+      "reduction_headcount": 51900,
       "creation_headcount": 0,
       "file": "data/labor-impact-by-country/us.json"
+    },
+    "GB": {
+      "cases_total": 1,
+      "cases_counted": 1,
+      "reduction_headcount": 10000,
+      "creation_headcount": 0,
+      "file": "data/labor-impact-by-country/gb.json"
     },
     "SE": {
       "cases_total": 1,
