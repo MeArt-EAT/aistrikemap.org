@@ -1,6 +1,6 @@
 # Phase 2 — Labor-Impact-Cases (Items 105–108)
 
-**Status:** Items 105 + 106 + 108 **live**, Item 107 konzipiert. Stand 2026-05-02: 4 Cases (SAP DE, IBM US, Klarna SE, Amazon US) = 32.500 Stellen in 3 Ländern auf Karte sichtbar. Crowdsourcing-Eingang offen. Cases-Erweiterung läuft als Sonntags-Routine.
+**Status:** Items 105 + 106 + 108 **live**, Item 107 konzipiert. Stand 2026-05-03: **12 Cases = 84.875 Stellen in 6 Ländern** auf Karte sichtbar (US 5 / DE 1 / GB 1 / IN 1 / FR 2 / SE 1). Crowdsourcing-Eingang offen. Cases-Erweiterung läuft als Sonntags-Routine.
 
 **Zweck:** AIStrikeMap wird **eigene primäre Quelle** für konkret gemeldete KI-bedingte Stellen-Veränderungen weltweit — nicht nur Aggregator von OECD/WEF/ILO-Studien. Schließt die Lücke, dass globale Layoff-Tracker mit AI-Attribution fehlen (außer US-Challenger).
 
@@ -216,14 +216,16 @@ Wichtiger Punkt: Die Cases-Datenbank überlappt thematisch mit dem Career Dashbo
 
 ### Stand 2026-05-02 (Ende dieser Session-Reihe)
 
-**Live auf main:**
-- ✅ Cases-Datenbasis (Item 105) mit Schema v0.2 (`tags`, `severity_class`, `last_verified`), 4 Cases:
-  - **SAP DE** 2024 Konzernumbau — 10.000 (Stärke 4, "Gesamt stabil")
-  - **IBM US** 2023 Back-Office-Pause — 7.800 (Stärke 4, "Gesamt stabil", "multi-year-plan")
-  - **Klarna SE** 2024 Customer Service — 700 (Stärke 4, "outsourcing-hop", "reversal", "Gesamt stabil")
-  - **Amazon US** 2025 Corporate — 14.000 (Stärke 4, "disputed-attribution")
-- ✅ Aggregate `data/labor-impact-aggregate.json`: 32.500 Stellen, 4 Cases, 3 Länder, 18 Tags, Severity-Verteilung, by_country/by_industry/country_files-Manifest
-- ✅ Pro-Land-Bundles `data/labor-impact-by-country/{de,us,se}.json` für on-demand-Loading
+**Live auf main (Stand 2026-05-03):**
+- ✅ Cases-Datenbasis (Item 105) mit Schema v0.2 (`tags`, `severity_class`, `last_verified`), **12 Cases** in **6 Ländern**:
+  - **US (5 Cases / 51.900)**: Microsoft 15k (St.4 disputed), Amazon 14k (St.4 disputed), Accenture 11k (St.5 ai-first), IBM 7,8k (St.4 stable multi-year), Salesforce 4k (St.5 ai-first stable), Duolingo 100 Contractors (St.5 ai-first stable outsourcing-hop)
+  - **DE (1 / 10.000)**: SAP Konzernumbau (St.4 stable)
+  - **GB (1 / 10.000)**: BT AI-Overhaul, 10k von 55k AI-attribuiert (St.5)
+  - **IN (1 / 12.000)**: TCS FY26 (St.4) — erster APAC-Case
+  - **FR (2 / 275)**: Onclusive 217 (St.5 reversal), Le Point 58 (St.5)
+  - **SE (1 / 700)**: Klarna AI-Chatbot (St.4 outsourcing-hop reversal stable)
+- ✅ Aggregate `data/labor-impact-aggregate.json`: 84.875 Stellen, 12 Cases, 6 Länder, 32 Tags, Severity-Verteilung, by_country/by_industry/country_files-Manifest
+- ✅ Pro-Land-Bundles `data/labor-impact-by-country/{de,us,se,fr,in,gb}.json` für on-demand-Loading
 - ✅ Übersichts-Page (Item 98 v0.4) mit 3-Ebenen-Layout (Theorie + Plan + Realität-Aggregat) + Cross-Links
 - ✅ Map-Modul (Item 106) `labor-impact-map.html` mit Marker-pro-Land + Detail-Panel + Pillen
 - ✅ Crowdsourcing-Eingang (Item 108) Issue-Template + Datenschutz §8
@@ -257,5 +259,5 @@ Wichtiger Punkt: Die Cases-Datenbank überlappt thematisch mit dem Career Dashbo
 ---
 
 *Konzept-Doku erstellt: 2026-05-01, fortgeschrieben 2026-05-02 / 2026-05-03*
-*Version: 0.5 (9 Cases / 5 Länder, Insider-Sprache "Bagger-Hebel" entfernt)*
-*Status: 9 Cases (59.875 Stellen, 5 Länder DE/US/SE/FR/IN), 3-Ebenen-Übersicht, Map-Modul, Crowdsourcing-Eingang offen. Cases-Erweiterung läuft.*
+*Version: 0.6 (12 Cases / 6 Länder, GB neu durch BT-Case)*
+*Status: 12 Cases (84.875 Stellen, 6 Länder US/DE/SE/FR/IN/GB), 3-Ebenen-Übersicht, Map-Modul, Crowdsourcing-Eingang offen. Cases-Erweiterung läuft.*
