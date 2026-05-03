@@ -236,6 +236,7 @@ Wichtiger Punkt: Die Cases-Datenbank überlappt thematisch mit dem Career Dashbo
 - Bayer ~7.000 (DSO-Bürokratie-Abbau, kein expliziter KI-Grund)
 - Bosch ~12.000 (E-Mobilitäts-Wende primär)
 - VW 35.000 (E-Mobilität primär)
+- Google 12.000 (2023, Pichai-Memo: Wirtschafts-Korrektur nach Pandemie-Wachstum, KI nur als Wachstumsstrategie ohne Layoff-Kausalität)
 
 ### Empfohlene Spuren für Folge-Sessions
 
@@ -255,6 +256,6 @@ Wichtiger Punkt: Die Cases-Datenbank überlappt thematisch mit dem Career Dashbo
 
 ---
 
-*Konzept-Doku erstellt: 2026-05-01, fortgeschrieben 2026-05-02*
-*Version: 0.4 (Items 105 + 106 + 108 live, Item 107 konzipiert)*
-*Status: 4 Cases (32.500 Stellen, 3 Länder), 3-Ebenen-Übersicht, Map-Modul, Crowdsourcing-Eingang offen. Cases-Erweiterung läuft als Sonntags-Routine.*
+*Konzept-Doku erstellt: 2026-05-01, fortgeschrieben 2026-05-02 / 2026-05-03*
+*Version: 0.5 (9 Cases / 5 Länder, Insider-Sprache "Bagger-Hebel" entfernt)*
+*Status: 9 Cases (59.875 Stellen, 5 Länder DE/US/SE/FR/IN), 3-Ebenen-Übersicht, Map-Modul, Crowdsourcing-Eingang offen. Cases-Erweiterung läuft.*

@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "generated": "2026-05-02T19:29:19.680Z",
+  "generated": "2026-05-03T06:40:52.952Z",
   "license": "CC-BY-NC-SA-4.0",
   "methodology": {
     "min_attribution_strength": 4,
@@ -8,17 +8,17 @@
     "_note": "Counter zählt nur Cases mit ai_attribution_strength >= 4. Schwächere Cases werden für die Detail-Liste mitgezählt, aber nicht im Aggregat-Counter."
   },
   "totals": {
-    "cases_total": 6,
-    "cases_counted": 6,
-    "reduction_headcount": 32775,
+    "cases_total": 9,
+    "cases_counted": 9,
+    "reduction_headcount": 59875,
     "creation_headcount": 0,
-    "countries_with_cases": 4
+    "countries_with_cases": 5
   },
   "by_country": {
     "US": {
-      "reduction": 21800,
+      "reduction": 36900,
       "creation": 0,
-      "cases": 2
+      "cases": 4
     },
     "SE": {
       "reduction": 700,
@@ -34,11 +34,21 @@
       "reduction": 10000,
       "creation": 0,
       "cases": 1
+    },
+    "IN": {
+      "reduction": 12000,
+      "creation": 0,
+      "cases": 1
     }
   },
   "by_industry": {
     "E-Commerce / Cloud": {
       "reduction": 14000,
+      "creation": 0,
+      "cases": 1
+    },
+    "EdTech / Sprachlern-App": {
+      "reduction": 100,
       "creation": 0,
       "cases": 1
     },
@@ -57,6 +67,11 @@
       "creation": 0,
       "cases": 1
     },
+    "Software / Cloud": {
+      "reduction": 15000,
+      "creation": 0,
+      "cases": 1
+    },
     "Medien-Monitoring / Pressespiegel": {
       "reduction": 217,
       "creation": 0,
@@ -66,41 +81,67 @@
       "reduction": 10000,
       "creation": 0,
       "cases": 1
+    },
+    "IT-Services / Outsourcing": {
+      "reduction": 12000,
+      "creation": 0,
+      "cases": 1
     }
   },
   "by_tag": {
-    "white-collar": 4,
+    "white-collar": 7,
     "corporate": 1,
     "e-commerce": 1,
-    "cloud": 1,
-    "restructuring": 2,
-    "disputed-attribution": 1,
+    "cloud": 2,
+    "restructuring": 4,
+    "disputed-attribution": 2,
+    "edtech": 1,
+    "translation": 1,
+    "outsourcing": 4,
+    "outsourcing-hop": 2,
+    "ai-first": 1,
+    "contractors": 1,
     "back-office": 1,
     "hr": 1,
-    "software": 2,
+    "software": 4,
     "hiring-pause": 1,
     "attrition": 1,
-    "multi-year-plan": 2,
+    "multi-year-plan": 4,
     "customer-service": 1,
     "fintech": 1,
-    "outsourcing": 2,
-    "outsourcing-hop": 1,
     "reversal": 2,
     "editorial": 2,
     "media": 2,
     "proofreading": 1,
-    "forced-layoff": 2,
+    "forced-layoff": 3,
     "voluntary-program": 1
   },
   "by_severity_class": {
-    "1": 1,
+    "1": 2,
     "2": 2,
     "3": 0,
     "4": 1,
-    "5": 2,
+    "5": 4,
     "unknown": 0
   },
   "top_reductions": [
+    {
+      "company": "Microsoft",
+      "country": "US",
+      "date": "2025-01",
+      "headcount": 15000,
+      "strength": 4,
+      "severity_class": 5,
+      "tags": [
+        "white-collar",
+        "software",
+        "cloud",
+        "restructuring",
+        "disputed-attribution",
+        "multi-year-plan"
+      ],
+      "net_workforce_change": "reduction"
+    },
     {
       "company": "Amazon",
       "country": "US",
@@ -115,6 +156,23 @@
         "cloud",
         "restructuring",
         "disputed-attribution"
+      ],
+      "net_workforce_change": "reduction"
+    },
+    {
+      "company": "Tata Consultancy Services (TCS)",
+      "country": "IN",
+      "date": "2025-07",
+      "headcount": 12000,
+      "strength": 4,
+      "severity_class": 5,
+      "tags": [
+        "white-collar",
+        "software",
+        "outsourcing",
+        "restructuring",
+        "multi-year-plan",
+        "forced-layoff"
       ],
       "net_workforce_change": "reduction"
     },
@@ -150,46 +208,13 @@
         "multi-year-plan"
       ],
       "net_workforce_change": "stable"
-    },
-    {
-      "company": "Klarna",
-      "country": "SE",
-      "date": "2024-02-27",
-      "headcount": 700,
-      "strength": 4,
-      "severity_class": 2,
-      "tags": [
-        "customer-service",
-        "fintech",
-        "outsourcing",
-        "outsourcing-hop",
-        "reversal"
-      ],
-      "net_workforce_change": "stable"
-    },
-    {
-      "company": "Onclusive (Reputational Intelligence France)",
-      "country": "FR",
-      "date": "2023-09-12",
-      "headcount": 217,
-      "strength": 5,
-      "severity_class": 2,
-      "tags": [
-        "editorial",
-        "media",
-        "white-collar",
-        "forced-layoff",
-        "reversal",
-        "outsourcing"
-      ],
-      "net_workforce_change": "reduction"
     }
   ],
   "country_files": {
     "US": {
-      "cases_total": 2,
-      "cases_counted": 2,
-      "reduction_headcount": 21800,
+      "cases_total": 4,
+      "cases_counted": 4,
+      "reduction_headcount": 36900,
       "creation_headcount": 0,
       "file": "data/labor-impact-by-country/us.json"
     },
@@ -213,6 +238,13 @@
       "reduction_headcount": 10000,
       "creation_headcount": 0,
       "file": "data/labor-impact-by-country/de.json"
+    },
+    "IN": {
+      "cases_total": 1,
+      "cases_counted": 1,
+      "reduction_headcount": 12000,
+      "creation_headcount": 0,
+      "file": "data/labor-impact-by-country/in.json"
     }
   }
 }
