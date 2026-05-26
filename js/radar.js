@@ -3,6 +3,9 @@
  * Loads radar situations, renders grid, filters, detail panel.
  */
 const Radar = (function () {
+  // Reuse central bilingual helper from I18n module.
+  var localized = I18n.localized;
+
   var situations = [];
   var STATUS_ORDER = ['eskalierend', 'aktiv', 'stabil', 'deeskalierend', 'abgeschlossen'];
   var DIMENSIONS = [
@@ -122,7 +125,7 @@ const Radar = (function () {
 
     var title = document.createElement('h3');
     title.className = 'radar-card__title';
-    title.textContent = s.name || '';
+    title.textContent = localized(s, 'name');
 
     var badge = document.createElement('span');
     badge.className = 'radar-status radar-status--' + status;
@@ -133,11 +136,12 @@ const Radar = (function () {
     card.appendChild(header);
 
     // Description (truncated)
-    if (s.description) {
+    var descText = localized(s, 'description');
+    if (descText) {
       var desc = document.createElement('p');
       desc.className = 'detail-description';
       desc.style.marginBottom = '0';
-      desc.textContent = truncate(s.description, 120);
+      desc.textContent = truncate(descText, 120);
       card.appendChild(desc);
     }
 
@@ -212,7 +216,7 @@ const Radar = (function () {
       history.replaceState(null, '', url.toString());
     }
 
-    titleEl.textContent = s.name || '';
+    titleEl.textContent = localized(s, 'name');
 
     var status = s['asm:radarStatus'] || 'aktiv';
     var severity = s['asm:severity'] || 1;
@@ -226,7 +230,7 @@ const Radar = (function () {
     // Share button + social share
     if (slug) {
       var shareUrl = window.location.origin + window.location.pathname + '?radar=' + encodeURIComponent(slug);
-      var shareText = encodeURIComponent(s.name + ' — AIStrikeMap Live-Radar');
+      var shareText = encodeURIComponent(localized(s, 'name') + ' — AIStrikeMap Live-Radar');
       html += '<div class="detail-share-row">';
       html += '<button type="button" class="detail-share-btn" data-share>' +
               '<span class="detail-share-btn__icon" aria-hidden="true">&#128279;</span>' +
@@ -245,11 +249,13 @@ const Radar = (function () {
     html += '<span class="radar-status radar-status--' + status + '"><span class="radar-status__dot"></span>' + esc(I18n.t('radar.status.' + status)) + '</span>';
     html += '<span class="badge badge--severity-' + severity + '">' + esc(I18n.t('severity.' + severity)) + '</span>';
     if (s.startDate) html += '<span style="font-size:0.8rem;color:var(--text-secondary)">' + esc(I18n.t('radar.detail.since')) + ' ' + esc(s.startDate) + '</span>';
-    if (s.location && s.location.name) html += '<span style="font-size:0.8rem;color:var(--text-secondary)">' + esc(s.location.name) + '</span>';
+    var locName = s.location ? localized(s.location, 'name') : '';
+    if (locName) html += '<span style="font-size:0.8rem;color:var(--text-secondary)">' + esc(locName) + '</span>';
     html += '</div>';
 
     // Description
-    if (s.description) html += '<p class="detail-description">' + esc(s.description) + '</p>';
+    var descFull = localized(s, 'description');
+    if (descFull) html += '<p class="detail-description">' + esc(descFull) + '</p>';
 
     // Dimensions
     if (dims.length) {
@@ -264,7 +270,7 @@ const Radar = (function () {
     if (actors.length) {
       html += '<div class="detail-section"><h3 class="detail-section__title">' + esc(I18n.t('radar.detail.actors')) + '</h3><ul class="actor-list">';
       actors.forEach(function (a) {
-        html += '<li class="actor-item"><span>' + esc(a.name) + ' <span class="badge badge--actor">' + esc(I18n.t('actor.' + a.type)) + '</span></span>';
+        html += '<li class="actor-item"><span>' + esc(localized(a, 'name')) + ' <span class="badge badge--actor">' + esc(I18n.t('actor.' + a.type)) + '</span></span>';
         if (a['asm:systems'] && a['asm:systems'].length) {
           html += '<span class="actor-systems">' + a['asm:systems'].map(esc).join(', ') + '</span>';
         }
@@ -286,8 +292,8 @@ const Radar = (function () {
         html += '<div class="timeline-item__dot timeline-item__dot--event"></div>';
         html += '<div class="timeline-item__date">' + esc(item.date || '') +
                 ' <span class="significance-badge significance-badge--' + sig + '">' + esc(I18n.t('radar.significance.' + sig)) + '</span></div>';
-        html += '<div class="timeline-item__title">' + esc(item.title) + '</div>';
-        html += '<div class="timeline-item__desc">' + esc(item.description) + '</div>';
+        html += '<div class="timeline-item__title">' + esc(localized(item, 'title')) + '</div>';
+        html += '<div class="timeline-item__desc">' + esc(localized(item, 'description')) + '</div>';
         if (item.sources && item.sources.length) {
           html += '<div class="timeline-item__sources">';
           item.sources.forEach(function (src, i) {
@@ -306,10 +312,11 @@ const Radar = (function () {
       sources.forEach(function (src) {
         var perspective = src['asm:perspective'] || 'unklar';
         html += '<li class="source-item">';
+        var srcTitle = localized(src, 'title');
         if (src.url) {
-          html += '<a href="' + escAttr(src.url) + '" target="_blank" rel="noopener">' + esc(src.title) + '</a>';
+          html += '<a href="' + escAttr(src.url) + '" target="_blank" rel="noopener">' + esc(srcTitle) + '</a>';
         } else {
-          html += '<span class="source-item__broken" title="' + I18n.t('detail.share.broken') + '">' + esc(src.title) + '</span>';
+          html += '<span class="source-item__broken" title="' + I18n.t('detail.share.broken') + '">' + esc(srcTitle) + '</span>';
         }
         html += ' <span class="perspective-badge perspective-badge--' + perspective + '">' + esc(I18n.t('radar.perspective.' + perspective)) + '</span>';
         if (src.publisher || src.date) {

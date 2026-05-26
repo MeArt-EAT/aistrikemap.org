@@ -65,5 +65,19 @@ const I18n = (function () {
     return currentLang;
   }
 
-  return { load: load, t: t, applyAll: applyAll, getLang: getLang, getStoredLang: getStoredLang };
+  // localized(obj, field) — returns the language-suffixed variant of a
+  // field if present (obj.title_de / obj.title_en), falls back to plain
+  // field (obj.title) for un-migrated entries, then to the other language.
+  // Used by bilingual data files (radar, incidents, cases).
+  function localized(obj, field) {
+    if (!obj || !field) return '';
+    var primary = currentLang === 'en' ? '_en' : '_de';
+    var fallback = currentLang === 'en' ? '_de' : '_en';
+    return obj[field + primary] || obj[field] || obj[field + fallback] || '';
+  }
+
+  return {
+    load: load, t: t, applyAll: applyAll, getLang: getLang,
+    getStoredLang: getStoredLang, localized: localized
+  };
 })();

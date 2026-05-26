@@ -266,7 +266,7 @@ const StrikeMap = (function () {
           var marker = L.marker([lat, lng], { icon: icon });
           var popup = '<div class="strike-popup">' +
             '<div class="strike-popup__type" style="color:' + color + '">&#9670; RADAR</div>' +
-            '<div class="strike-popup__name">' + escapeHtml(s.name) + '</div>' +
+            '<div class="strike-popup__name">' + escapeHtml(I18n.localized(s, 'name')) + '</div>' +
             '<div class="strike-popup__meta" style="text-transform:uppercase;font-size:0.6rem;color:' + color + '">' + escapeHtml(status) + '</div>' +
             '<a href="radar.html?radar=' + escapeHtml(slug) + '" style="color:var(--link);font-size:0.75rem">Details &rarr;</a>' +
             '</div>';

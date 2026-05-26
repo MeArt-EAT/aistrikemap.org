@@ -199,7 +199,7 @@ const DetailPanel = (function () {
           var rSlug = (r['@id'] || '').split('/').pop();
           var status = r['asm:radarStatus'] || 'aktiv';
           html += '<li><a href="radar.html?radar=' + escAttr(rSlug) + '" class="related-link">' +
-                  esc(r.name) + ' <span class="radar-status radar-status--' + status +
+                  esc(I18n.localized(r, 'name')) + ' <span class="radar-status radar-status--' + status +
                   '" style="font-size:0.55rem;vertical-align:middle"><span class="radar-status__dot"></span>' +
                   esc(I18n.t('radar.status.' + status)) + '</span></a></li>';
         });
