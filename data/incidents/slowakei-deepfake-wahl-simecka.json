@@ -1,0 +1,143 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/slowakei-deepfake-wahl-simecka",
+  "name": "Slowakei: KI-Deepfake-Audio kurz vor Parlamentswahl 2023 — pro-russische Manipulation",
+  "description": "Zwei Tage vor der slowakischen Parlamentswahl am 30. September 2023 verbreitete sich ein KI-generiertes Audio über Telegram und Facebook, in dem angeblich Michal Šimečka (Vorsitzender der liberalen Progressive Slovakia) und die Journalistin Monika Tódová (Denník N) Wahlbetrug planten. Das Gespräch hatte nie stattgefunden — es war eine Deepfake-Audio-Fälschung. Während der gesetzlich vorgeschriebenen Wahl-Schweige-Periode konnten Šimečka und Tódová das Audio nicht öffentlich widerlegen. Šimečka, der in Umfragen geführt hatte, verlor die Wahl gegen den pro-russischen Kandidaten Robert Fico. Der Fall wird als einer der ersten erfolgreichen KI-Audio-Deepfake-Angriffe auf eine demokratische Wahl gewertet.",
+  "startDate": "2023-09",
+  "location": {
+    "@type": "Place",
+    "name": "Bratislava, Slowakei",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.1486,
+      "longitude": 17.1077
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SK"
+    }
+  },
+  "asm:incidentType": [
+    "deepfakes",
+    "political-pressure",
+    "censorship"
+  ],
+  "asm:affectedRights": [
+    "Recht auf freie Wahlen",
+    "Recht auf demokratische Teilhabe",
+    "Pressefreiheit",
+    "Recht auf Ehre und Reputation",
+    "Schutz vor Manipulation"
+  ],
+  "asm:actors": [
+    {
+      "name": "Unbekannte mutmaßlich pro-russische Akteure",
+      "type": "individual"
+    },
+    {
+      "name": "Meta / Facebook",
+      "type": "company",
+      "asm:systems": [
+        "Facebook Newsfeed Algorithm"
+      ]
+    },
+    {
+      "name": "Telegram",
+      "type": "company"
+    },
+    {
+      "name": "Russische Auslandsgeheimdienst (SVR)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-09-28",
+      "phase": "event",
+      "title": "Deepfake-Audio taucht in Telegram-Gruppen auf",
+      "description": "Zwei Tage vor der Wahl erscheint ein etwa zwei Minuten langes Audio in pro-russischen Telegram-Kanälen, das einen vermeintlichen Telefonanruf zwischen Šimečka und Tódová zeigt, in dem beide darüber sprechen, wie sie über gekaufte Stimmen aus der Roma-Minderheit die Wahl manipulieren wollen. Innerhalb weniger Stunden wird das Audio auf Facebook geteilt.",
+      "sources": []
+    },
+    {
+      "date": "2023-09-29",
+      "phase": "doctrine",
+      "title": "Schweige-Periode verhindert öffentliche Widerlegung",
+      "description": "In der Slowakei gilt 48 Stunden vor der Wahl ein gesetzliches Wahlkampf-Werbeverbot. Šimečka und Tódová können das Audio nicht öffentlich diskutieren oder dementieren. Faktenchecker (AFP Fact Check, demagog.sk) identifizieren das Audio als Deepfake, aber das Audio erreicht bereits hunderttausende Nutzer. Meta entfernt die Inhalte nur partiell.",
+      "sources": []
+    },
+    {
+      "date": "2023-09-30",
+      "phase": "event",
+      "title": "Wahlsieg von Robert Fico",
+      "description": "Robert Ficos pro-russische SMER-SD gewinnt die Wahl mit 22,9 Prozent vor Šimečkas Progressive Slovakia (18 Prozent). Vor den Umfragen war PS noch in Führung gelegen. Wahl-Analytiker und Forscher der HKS Misinformation Review diskutieren, in welchem Maß das Deepfake-Audio den Ausgang beeinflusste — kausale Belege bleiben methodisch schwer, aber die Reichweite ist klar dokumentiert.",
+      "sources": []
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "EU-Lehre: AI Act und DSA-Maßnahmen für Wahlen",
+      "description": "Der slowakische Fall wird in der EU-Debatte um den AI Act und den Digital Services Act intensiv diskutiert. Die EU-Kommission verlangt von Meta und Telegram bessere Deepfake-Erkennung vor nationalen Wahlen. Slowakei-Inland verschärft Wahl-Gesetze für AI-Inhalte. Der HKS-Misinformation-Review-Studie 2024 dient als Referenz für die These, dass Deepfakes nicht den Wahlausgang ändern müssen, um Demokratie zu beschädigen — die Verbreitung der Lüge selbst beschädigt das Vertrauen.",
+      "sources": []
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://misinforeview.hks.harvard.edu/article/beyond-the-deepfake-hype-ai-democracy-and-the-slovak-case/",
+      "title": "Beyond the deepfake hype: AI, democracy, and 'the Slovak case'",
+      "publisher": "Harvard Kennedy School Misinformation Review",
+      "date": "2024",
+      "type": "academic-paper",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://ipi.media/slovakia-deepfake-audio-of-dennik-n-journalist-offers-worrying-example-of-ai-abuse/",
+      "title": "Slovakia: Deepfake audio of Denník N journalist offers worrying example of AI abuse",
+      "publisher": "International Press Institute (IPI)",
+      "date": "2023-10",
+      "type": "ngo-report",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://vsquare.org/slovak-election-targeted-by-pro-kremlin-deepfake-hoax/",
+      "title": "Slovak election targeted by pro-Kremlin deepfake hoax",
+      "publisher": "VSquare.org",
+      "date": "2023-10",
+      "type": "investigation",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://incidentdatabase.ai/cite/573/",
+      "title": "Incident 573: Deepfake Recordings Allegedly Influence Slovakian Election",
+      "publisher": "AI Incident Database",
+      "date": "2023",
+      "type": "ngo-report",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.cnn.com/2024/02/01/politics/election-deepfake-threats-invs",
+      "title": "A fake recording of a candidate saying he'd rigged the election went viral. Experts say it's only the beginning",
+      "publisher": "CNN",
+      "date": "2024-02-01",
+      "type": "investigation",
+      "asm:linkHealth": "ok"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "rumaenien-wahlannullierung-tiktok",
+    "usa-biden-deepfake-robocall",
+    "russland-ki-deepfake-ukraine-krieg"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-26",
+    "lastUpdated": "2026-05-26",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

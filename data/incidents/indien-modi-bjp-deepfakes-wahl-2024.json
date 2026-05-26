@@ -1,0 +1,135 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/indien-modi-bjp-deepfakes-wahl-2024",
+  "name": "Indien: KI-Wahlkampf, Modi-Bhashini und Amit-Shah-Deepfake bei Lok-Sabha-Wahl 2024",
+  "description": "Die indische Lok-Sabha-Wahl 2024 (April-Juni 2024) markierte den ersten flächendeckenden Einsatz generativer KI in einem demokratischen Wahlkampf der Welt — über 50 Millionen KI-Stimmenklon-Anrufe wurden in den zwei Monaten vor Wahlbeginn an Wähler verschickt. Premierminister Modi setzte 'Bhashini' ein, ein KI-System, das seine Hindi-Reden in Echtzeit in 11 regionale Sprachen übersetzte. Innenminister Amit Shah wurde Opfer eines manipulierten Videos ('Cheapfake'), das ihn mit anti-Affirmative-Action-Aussagen zeigte; die Polizei verhaftete Mitglieder der Kongress-Partei. Der Fall etablierte den globalen Standard für KI-Wahlkampf-Risiken bei 970 Millionen Wahlberechtigten.",
+  "startDate": "2024-04",
+  "location": {
+    "@type": "Place",
+    "name": "Delhi, Indien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.6139,
+      "longitude": 77.209
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "asm:incidentType": [
+    "deepfakes",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [
+    "Recht auf freie Wahlen",
+    "Recht auf demokratische Teilhabe",
+    "Recht auf informierte Entscheidung",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:actors": [
+    {
+      "name": "Bharatiya Janata Party (BJP, Modi)",
+      "type": "government"
+    },
+    {
+      "name": "Indian National Congress (Hauptopposition)",
+      "type": "government"
+    },
+    {
+      "name": "Bhashini (KI-Sprach-Übersetzungs-Plattform)",
+      "type": "government",
+      "asm:systems": [
+        "Bhashini AI Translation System (Hindi → 11 regionale Sprachen)"
+      ]
+    },
+    {
+      "name": "Election Commission of India (ECI)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-02",
+      "phase": "infrastructure",
+      "title": "50 Mio. KI-Stimmenklon-Anrufe vor Wahlbeginn",
+      "description": "In den zwei Monaten vor dem Wahlbeginn am 19. April werden mehr als 50 Millionen KI-generierte Stimmenklon-Anrufe an indische Wähler verschickt. Die Anrufe imitieren Stimmen lokaler Politiker und Berühmtheiten in regionalen Sprachen. Die meisten kommen von der BJP, aber auch andere Parteien nutzen die Technologie. Die Election Commission of India bleibt zur KI-Nutzung weitgehend stumm.",
+      "sources": []
+    },
+    {
+      "date": "2024-04",
+      "phase": "doctrine",
+      "title": "Modi setzt 'Bhashini' für mehrsprachige Reden ein",
+      "description": "Premierminister Modi setzt das staatliche KI-System Bhashini ein, das seine Hindi-Reden in Echtzeit in 11 regionale Sprachen übersetzt — eine demokratiepolitisch ambivalente Innovation: einerseits Inklusion von Wählern in nicht-Hindi-sprachigen Regionen, andererseits Verstärkung der Modi-Reichweite über vorherige Sprachbarrieren hinweg. Bhashini ist über Regierungsressourcen finanziert, dient aber faktisch der BJP-Wahlkampagne.",
+      "sources": []
+    },
+    {
+      "date": "2024-04",
+      "phase": "event",
+      "title": "Amit-Shah-Cheapfake — Telangana Affirmative Action",
+      "description": "Ein manipuliertes Video von Innenminister Amit Shah kursiert in sozialen Medien — er scheint sich darin gegen Affirmative-Action-Quoten für muslimische Gemeinschaften auszusprechen. Eine Analyse zeigt: das Video ist ein 'Cheapfake' (Audio-Editing zwischen verschiedenen Reden, kein KI-Deepfake). Die BJP-Regierung wirft Telangana-Chief-Minister Revanth Reddy (Kongress-Partei) die Verbreitung vor; mehrere Kongress-Mitglieder werden verhaftet. Der Fall illustriert die schmale Grenze zwischen klassischer Manipulation und KI-Deepfake.",
+      "sources": []
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "Wahlergebnis und globale Forschungsdebatte",
+      "description": "Die BJP verliert ihre absolute Mehrheit und muss eine Koalition bilden. Forscher (Center for Media Engagement an der UT Austin, Harvard Political Review) analysieren die indische Wahl als 'Generative AI Election Pilot' — KI war omnipräsent, beeinflusste aber das Wahlergebnis weniger entscheidend als befürchtet. Die ECI wird breitflächig kritisiert für ihre Untätigkeit bei der KI-Regulierung. Indien verabschiedet 2024 erste Richtlinien zur Kennzeichnung von KI-generierten Wahlkampfinhalten.",
+      "sources": []
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://mediaengagement.org/wp-content/uploads/2024/10/Indias-Generative-AI-Election-Pilot-Shows-Artificial-Intelligence-In-Campaigns-Is-Here-To-Stay.pdf",
+      "title": "India's Generative AI Election Pilot Shows Artificial Intelligence In Campaigns Is Here To Stay",
+      "publisher": "Center for Media Engagement, UT Austin",
+      "date": "2024-10",
+      "type": "academic-paper",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.techpolicy.press/the-era-of-aigenerated-election-campaigning-is-underway-in-india/",
+      "title": "The Era of AI-Generated Election Campaigning is Underway in India",
+      "publisher": "Tech Policy Press",
+      "date": "2024-04",
+      "type": "analysis",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://newlinesmag.com/spotlight/ai-and-deepfakes-played-a-big-role-in-indias-elections/",
+      "title": "AI and Deepfakes Played a Big Role in India's Elections",
+      "publisher": "New Lines Magazine",
+      "date": "2024-06",
+      "type": "investigation",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://theharvardpoliticalreview.com/ai-deepfakes-india-election/",
+      "title": "Shaping Robust AI Regulation: Lessons from India's 'Deepfake' Election",
+      "publisher": "Harvard Political Review",
+      "date": "2024",
+      "type": "academic-paper",
+      "asm:linkHealth": "dead"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "rumaenien-wahlannullierung-tiktok",
+    "indonesien-prabowo-suharto-deepfake-2024",
+    "bangladesch-ki-deepfakes-wahl-2024",
+    "indien-pegasus-opposition"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-26",
+    "lastUpdated": "2026-05-26",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/bangladesch-ki-deepfakes-wahl-2024",
+  "name": "Bangladesch: KI-Deepfakes und Pro-Regierungs-Desinformation bei Parlamentswahl 2024",
+  "description": "Vor der bangladeschischen Parlamentswahl im Januar 2024 verbreiteten pro-Regierungs-Medien und Influencer großflächig KI-generierte Inhalte zugunsten der Awami-Liga unter Premierministerin Sheikh Hasina. Tools wie HeyGen — verfügbar ab 24 US-Dollar pro Monat — produzierten KI-Nachrichtensprecher, die den USA Wahleinmischung vorwarfen, sowie Deepfake-Videos, in denen Oppositions­führer kompromittierende Aussagen zur Gaza-Krise machten. Bei geringer digitaler Bildung (rund 10 Prozent) und hohem Anteil erstmaliger Internetnutzer fanden die Manipulationen einen verwundbaren Empfangskontext. Die bangladeschische Wahlkommission hatte keine spezifischen Richtlinien für KI-Inhalte ausgegeben.",
+  "startDate": "2023-12",
+  "location": {
+    "@type": "Place",
+    "name": "Dhaka, Bangladesch",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.8103,
+      "longitude": 90.4125
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BD"
+    }
+  },
+  "asm:incidentType": [
+    "deepfakes",
+    "political-pressure",
+    "censorship"
+  ],
+  "asm:affectedRights": [
+    "Recht auf freie Wahlen",
+    "Meinungsfreiheit",
+    "Pressefreiheit",
+    "Recht auf Information",
+    "Schutz vor Manipulation"
+  ],
+  "asm:actors": [
+    {
+      "name": "Pro-Awami-Liga-Influencer und Medien",
+      "type": "individual"
+    },
+    {
+      "name": "HeyGen (KI-Avatar-Generator)",
+      "type": "company",
+      "asm:systems": [
+        "HeyGen AI Avatar Generator"
+      ]
+    },
+    {
+      "name": "Awami League (Regierungspartei, Sheikh Hasina)",
+      "type": "government"
+    },
+    {
+      "name": "Bangladesh Election Commission",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-09",
+      "phase": "infrastructure",
+      "title": "Niedrigschwellige KI-Tools werden in Bangladesch breit verfügbar",
+      "description": "Tools wie HeyGen und ähnliche KI-Avatar-Generatoren werden für 24 US-Dollar pro Monat zugänglich. Pro-Regierungs-Influencer und Marketing-Agenturen beginnen, KI-generierte Nachrichtensprecher und Deepfake-Clips für Social-Media-Kampagnen zu produzieren. Bangladeschs digitale Bildungslandschaft (rund 10 Prozent Digital-Literacy) macht das Land besonders anfällig.",
+      "sources": []
+    },
+    {
+      "date": "2023-12",
+      "phase": "doctrine",
+      "title": "AFP enthüllt Fake-Experten-Artikel pro Sheikh Hasina",
+      "description": "Eine AFP-Untersuchung deckt auf, dass zahlreiche Artikel in nationalen und internationalen Medien Hasinas Politik loben — verfasst von angeblichen Experten mit zweifelhaften Qualifikationen, gefälschten Fotos und möglicherweise gar nicht existierenden Personen. Die Artikel verbreiten sich über Social Media und werden in regierungsnahen Medien aufgegriffen.",
+      "sources": []
+    },
+    {
+      "date": "2024-01",
+      "phase": "event",
+      "title": "Deepfake-Videos über Oppositionsführer kursieren",
+      "description": "Kurz vor der Wahl tauchen Deepfake-Videos auf, in denen Oppositionsführer (insbesondere der Bangladesh Nationalist Party / BNP) ausweichende Aussagen zur Unterstützung der Palästinenser machen — eine in dem mehrheitlich muslimischen Land politisch ruinöse Position. Parallel werden KI-Avatar-Nachrichtensprecher verbreitet, die den USA Wahleinmischung zugunsten der Opposition vorwerfen.",
+      "sources": []
+    },
+    {
+      "date": "2024-01-07",
+      "phase": "consequences",
+      "title": "Hasina gewinnt mit umstrittener Wahl",
+      "description": "Sheikh Hasinas Awami League gewinnt die Parlamentswahl mit überwältigender Mehrheit. Die Hauptoppositionspartei BNP boykottiert die Wahl wegen Manipulationsvorwürfen. Wahlbeobachter (EU, Commonwealth) lehnen es ab, die Wahl als 'frei und fair' zu zertifizieren. Forscher der Election Law Blog und TRF-Context dokumentieren den Bangladesch-Fall als Modell für KI-gestützte Wahlmanipulation in Ländern mit niedriger digitaler Bildung. Hasina wird 2024 im Studentenprotest gestürzt — die Frage, wie stark KI-Manipulation in der Phase davor zur Polarisierung beitrug, bleibt offen.",
+      "sources": []
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://electionlawblog.org/?p=140195",
+      "title": "Deepfakes for $24 a month: how AI is disrupting Bangladesh's election",
+      "publisher": "Election Law Blog",
+      "date": "2023-12",
+      "type": "analysis",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.techradar.com/computing/cyber-security/bangladesh-elections-censorship-ai-deepfakes-and-social-media-polarization",
+      "title": "Bangladesh elections: censorship, AI deepfakes, and social media polarization",
+      "publisher": "TechRadar",
+      "date": "2024-01",
+      "type": "investigation",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.boomlive.in/decode/deepfake-elections-disinformation-bangladesh-india-us-uk-indonesia-24087",
+      "title": "Deepfake Videos Ahead Of Bangladesh Polls Should Have Us All Concerned",
+      "publisher": "BOOM Live",
+      "date": "2024-01",
+      "type": "investigation",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.thedailystar.net/news/bangladesh/elections/news/ai-disinformation-disrupting-bangladeshs-election-report-3494641",
+      "title": "AI disinformation disrupting Bangladesh's election: report",
+      "publisher": "The Daily Star",
+      "date": "2024-01",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "rumaenien-wahlannullierung-tiktok",
+    "indonesien-prabowo-suharto-deepfake-2024",
+    "indien-modi-bjp-deepfakes-wahl-2024"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-26",
+    "lastUpdated": "2026-05-26",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-biden-deepfake-robocall",
+  "name": "USA: Erster KI-Deepfake-Wahlbetrug — gefälschte Biden-Robocalls vor New-Hampshire-Vorwahl 2024",
+  "description": "Im Januar 2024 erhielten tausende Wähler in New Hampshire kurz vor der Demokraten-Vorwahl einen automatisierten Anruf mit einer KI-generierten Stimme, die wie Präsident Joe Biden klang. Die Botschaft forderte sie auf, nicht an der Vorwahl teilzunehmen und ihre Stimme für die Hauptwahl im November aufzusparen — eine bewusste Täuschung. Der politische Berater Steven Kramer gestand, den Anruf in Auftrag gegeben zu haben, und wurde als Erster wegen KI-basierter Wahlmanipulation in den USA strafrechtlich verfolgt. Der Fall führte zum FCC-Verbot von KI-generierten Robocalls und gilt als Präzedenzfall für KI-Wahlbetrug.",
+  "startDate": "2024-01",
+  "location": {
+    "@type": "Place",
+    "name": "New Hampshire, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.1939,
+      "longitude": -71.5724
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": [
+    "deepfakes",
+    "political-pressure",
+    "censorship"
+  ],
+  "asm:affectedRights": [
+    "Recht auf freie Wahlen",
+    "Recht auf demokratische Teilhabe",
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit"
+  ],
+  "asm:actors": [
+    {
+      "name": "Steven Kramer (politischer Berater)",
+      "type": "individual"
+    },
+    {
+      "name": "Lingo Telecom (Robocall-Anbieter)",
+      "type": "company"
+    },
+    {
+      "name": "ElevenLabs (mutmaßlicher KI-Voice-Anbieter)",
+      "type": "company",
+      "asm:systems": [
+        "KI-Stimmen-Klonierung"
+      ]
+    },
+    {
+      "name": "US Federal Communications Commission (FCC)",
+      "type": "government"
+    },
+    {
+      "name": "New Hampshire Department of Justice",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-01-22",
+      "phase": "event",
+      "title": "Thousands von Wählern erhalten Deepfake-Robocall",
+      "description": "Tausende von Demokraten in New Hampshire erhalten zwei Tage vor der Vorwahl einen automatisierten Anruf mit einer KI-Stimme, die täuschend echt nach Joe Biden klingt. Die Botschaft: 'Save your vote for the November election' — eine Aufforderung, nicht an der Primary teilzunehmen. Die New Hampshire Generalstaatsanwaltschaft startet umgehend eine Untersuchung. Wahl-Analysten sehen den ersten dokumentierten KI-Stimmen-Deepfake-Angriff auf eine US-Wahl.",
+      "sources": []
+    },
+    {
+      "date": "2024-02",
+      "phase": "doctrine",
+      "title": "FCC erklärt KI-Stimmen-Robocalls illegal",
+      "description": "Die Federal Communications Commission (FCC) erlässt eine einstimmige Regelung, die KI-generierte Stimmen-Robocalls unter dem Telephone Consumer Protection Act für illegal erklärt. Damit gilt jeder ungewollte KI-Robocall ohne Zustimmung als rechtswidrig. Die FCC verhängt ein 6-Millionen-Dollar-Bußgeld gegen Kramer und 2 Millionen Dollar gegen den Telekommunikations-Anbieter Lingo Telecom.",
+      "sources": []
+    },
+    {
+      "date": "2024-05",
+      "phase": "doctrine",
+      "title": "Steven Kramer wird strafrechtlich angeklagt",
+      "description": "Steven Kramer wird in New Hampshire mit 13 Anklagepunkten wegen Wählerunterdrückung (felony voter suppression) und 13 Anklagepunkten wegen Wahlbeamten-Impersonation angeklagt — 26 strafrechtliche Anklagen insgesamt. Kramer gibt zu, den Anruf in Auftrag gegeben zu haben, behauptet aber, er habe nur strengere KI-Regulierung provozieren wollen. Wenn verurteilt, drohen ihm bis zu 7 Jahre Haft pro Anklage.",
+      "sources": []
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Globaler Präzedenzfall für KI-Wahlbetrug-Regulierung",
+      "description": "Der Fall wird international zum Referenzfall: Mehrere US-Bundesstaaten verabschieden Gesetze zu KI-Deepfakes in Wahlen, die EU verschärft Regeln unter dem Digital Services Act, und Bundeswahlkommissionen weltweit erarbeiten Richtlinien. Kramer weigert sich, die FCC-Strafe zu zahlen; der Fall liegt in Berufung. Die Forschungs- und NGO-Community sieht den Vorfall als Warnung vor flächendeckendem KI-Stimmen-Missbrauch bei Wahlen 2024/2025/2026 weltweit.",
+      "sources": []
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.doj.nh.gov/news-and-media/steven-kramer-charged-voter-suppression-over-ai-generated-president-biden-robocalls",
+      "title": "Steven Kramer Charged with Voter Suppression Over AI-Generated President Biden Robocalls",
+      "publisher": "New Hampshire Department of Justice",
+      "date": "2024-05",
+      "type": "government-document",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.npr.org/2024/05/23/nx-s1-4977582/fcc-ai-deepfake-robocall-biden-new-hampshire-political-operative",
+      "title": "A political consultant faces charges and fines for Biden deepfake robocalls",
+      "publisher": "NPR",
+      "date": "2024-05-23",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://docs.fcc.gov/public/attachments/DOC-405811A1.pdf",
+      "title": "Steve Kramer Instigated Illegal Spoofed Robocall — FCC Enforcement Action",
+      "publisher": "U.S. Federal Communications Commission",
+      "date": "2024",
+      "type": "government-document",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.nbcnews.com/politics/politics-news/steve-kramer-admitted-deepfaking-bidens-voice-new-hampshire-primary-rcna153626",
+      "title": "Steve Kramer, who deepfaked Biden's voice in New Hampshire Democratic primary, is indicted",
+      "publisher": "NBC News",
+      "date": "2024-05",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "rumaenien-wahlannullierung-tiktok",
+    "nigeria-ki-wahlmanipulation-deepfakes",
+    "ghana-ki-wahlbeeinflussung"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-26",
+    "lastUpdated": "2026-05-26",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

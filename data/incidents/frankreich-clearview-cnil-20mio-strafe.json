@@ -1,0 +1,132 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/frankreich-clearview-cnil-20mio-strafe",
+  "name": "Frankreich: CNIL verhängt 20-Mio.-Euro-DSGVO-Höchststrafe gegen Clearview AI",
+  "description": "Am 17. Oktober 2022 verhängte die französische Datenschutzbehörde CNIL die maximal mögliche DSGVO-Strafe von 20 Millionen Euro gegen das US-Unternehmen Clearview AI wegen rechtswidriger Gesichtserkennungs-Datenbank. Clearview hatte über 30 Milliarden Gesichtsbilder aus dem öffentlichen Internet ohne Einwilligung gesammelt und Strafverfolgungsbehörden als Suchwerkzeug angeboten. Clearview hatte zuvor formelle Aufforderungen der CNIL ignoriert und reagierte auch auf die Strafe nicht — woraufhin die CNIL 2023 zusätzlich 5,2 Millionen Euro Zwangsgeld verhängte. Der Fall ist Präzedenzfall für DSGVO-Durchsetzung gegen Drittland-Unternehmen.",
+  "startDate": "2020-05",
+  "location": {
+    "@type": "Place",
+    "name": "Paris, Frankreich",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FR"
+    }
+  },
+  "asm:incidentType": [
+    "surveillance",
+    "facial-recognition",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Recht auf Datenschutz",
+    "Recht auf Bild am eigenen Bild",
+    "Informationelle Selbstbestimmung",
+    "Recht auf Löschung"
+  ],
+  "asm:actors": [
+    {
+      "name": "Clearview AI Inc.",
+      "type": "company",
+      "asm:systems": [
+        "Clearview AI Search Engine",
+        "30+ Mrd. Gesichtsbilder Datenbank"
+      ]
+    },
+    {
+      "name": "CNIL (Commission nationale de l'informatique et des libertés)",
+      "type": "government"
+    },
+    {
+      "name": "Europäischer Datenschutzausschuss (EDPB)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-05",
+      "phase": "infrastructure",
+      "title": "Erste Beschwerden bei der CNIL",
+      "description": "Die CNIL erhält ab Mai 2020 erste Beschwerden von Personen, die festgestellt haben, dass ihre Fotos ohne Einwilligung in Clearviews Gesichtserkennungs-Datenbank aufgenommen wurden. Parallel dazu reichen Privacy International und andere NGOs koordinierte Beschwerden in mehreren EU-Ländern ein.",
+      "sources": []
+    },
+    {
+      "date": "2021-11-26",
+      "phase": "doctrine",
+      "title": "CNIL setzt formelle Frist zur Einhaltung",
+      "description": "Die CNIL erlässt eine formelle 'Mise en Demeure' (Inverzugsetzung) und fordert Clearview AI auf, die Erfassung und Verwendung von Daten in Frankreich einzustellen, Betroffenenrechte zu ermöglichen und Löschanträge umzusetzen. Clearview hat zwei Monate Zeit zu reagieren — antwortet aber nicht.",
+      "sources": []
+    },
+    {
+      "date": "2022-10-17",
+      "phase": "event",
+      "title": "20 Millionen Euro Höchststrafe",
+      "description": "Die eingeschränkte Kammer der CNIL verhängt eine Strafe von 20 Millionen Euro — die maximal mögliche DSGVO-Strafe nach Artikel 83. Die festgestellten Verstöße: rechtswidrige Verarbeitung personenbezogener Daten ohne Rechtsgrundlage (Art. 6 DSGVO), Nichteinhaltung von Auskunfts- und Löschrechten (Art. 12, 15, 17). Zudem wird Clearview angewiesen, alle Daten französischer Bürger binnen zwei Monaten zu löschen, mit 100.000 Euro Zwangsgeld pro Tag bei Nichteinhaltung.",
+      "sources": []
+    },
+    {
+      "date": "2023-05",
+      "phase": "consequences",
+      "title": "Zusätzliches Zwangsgeld + globale Wirkung",
+      "description": "Da Clearview AI weiterhin keine Maßnahmen ergreift, verhängt die CNIL im Mai 2023 zusätzlich ein Zwangsgeld von 5,2 Millionen Euro. Clearview bestreitet die Zuständigkeit der CNIL, da das Unternehmen keinen Sitz in der EU habe. Die EU-Mitgliedstaaten folgen mit weiteren Strafen: Italien (20 Mio. €), Griechenland (20 Mio. €), Niederlande (30,5 Mio. €), UK (7,5 Mio. £). Der Fall etabliert, dass DSGVO Drittland-Unternehmen erfasst, sobald sie EU-Bürgerdaten verarbeiten — auch ohne EU-Niederlassung.",
+      "sources": []
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.cnil.fr/en/facial-recognition-20-million-euros-penalty-against-clearview-ai",
+      "title": "Facial recognition: 20 million euros penalty against CLEARVIEW AI",
+      "publisher": "CNIL (französische Datenschutzbehörde)",
+      "date": "2022-10-20",
+      "type": "government-document",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.edpb.europa.eu/news/national-news/2022/french-sa-fines-clearview-ai-eur-20-million_en",
+      "title": "The French SA fines Clearview AI EUR 20 million",
+      "publisher": "European Data Protection Board",
+      "date": "2022-10",
+      "type": "government-document",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.edpb.europa.eu/news/national-news/2023/facial-recognition-french-sa-imposes-penalty-payment-clearview-ai_en",
+      "title": "Facial recognition: the French SA imposes a penalty payment on CLEARVIEW AI",
+      "publisher": "European Data Protection Board",
+      "date": "2023-05",
+      "type": "government-document",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://techcrunch.com/2023/05/10/clearview-ai-another-cnil-gspr-fine/",
+      "title": "Clearview fined again in France for failing to comply with privacy orders",
+      "publisher": "TechCrunch",
+      "date": "2023-05-10",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "kanada-rcmp-clearview",
+    "ukraine-clearview-kriegseinsatz",
+    "ukraine-ki-gesichtserkennung-tote"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-26",
+    "lastUpdated": "2026-05-26",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

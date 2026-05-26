@@ -1,0 +1,146 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/rumaenien-wahlannullierung-tiktok",
+  "name": "Rumänien: Annullierung der Präsidentschaftswahl 2024 wegen TikTok-Algorithmus-Manipulation",
+  "description": "Das rumänische Verfassungsgericht annullierte am 6. Dezember 2024 die erste Runde der Präsidentschaftswahl vom 24. November 2024, nachdem deklassifizierte Geheimdienstdokumente eine koordinierte Beeinflussungskampagne über TikTok aufdeckten. Der ultranationalistische Außenseiter Călin Georgescu war unerwartet als Sieger der ersten Runde hervorgegangen, gestützt durch über 25.000 TikTok-Konten und 5.000 Telegram-Kanäle, die seine Botschaften algorithmisch verstärkten. Russland wird als mutmaßlicher Initiator der hybriden Kampagne genannt. Es ist das erste Mal in der EU-Geschichte, dass eine nationale Wahl wegen Algorithmus-Manipulation auf einer Social-Media-Plattform annulliert wurde.",
+  "startDate": "2024-11",
+  "location": {
+    "@type": "Place",
+    "name": "Bukarest, Rumänien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.4268,
+      "longitude": 26.1025
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RO"
+    }
+  },
+  "asm:incidentType": [
+    "deepfakes",
+    "political-pressure",
+    "censorship"
+  ],
+  "asm:affectedRights": [
+    "Recht auf freie Wahlen",
+    "Recht auf demokratische Teilhabe",
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation",
+    "Informationelle Selbstbestimmung"
+  ],
+  "asm:actors": [
+    {
+      "name": "TikTok / ByteDance",
+      "type": "company",
+      "asm:systems": [
+        "TikTok Recommendation Algorithm",
+        "TikTok For You Page"
+      ]
+    },
+    {
+      "name": "Rumänisches Verfassungsgericht (Curtea Constituțională)",
+      "type": "government"
+    },
+    {
+      "name": "Mutmaßlich russische staatliche Akteure",
+      "type": "government"
+    },
+    {
+      "name": "Europäische Kommission",
+      "type": "government",
+      "asm:systems": [
+        "Digital Services Act (DSA) Enforcement"
+      ]
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-10",
+      "phase": "infrastructure",
+      "title": "Koordinierte TikTok-Kampagne baut Reichweite auf",
+      "description": "In den Wochen vor der ersten Wahlrunde werden über 25.000 TikTok-Konten und 5.000 Telegram-Kanäle aktiv, die koordiniert Inhalte zugunsten von Călin Georgescu verbreiten. Die Konten verstärken Hashtags, generieren Engagement-Spikes und manipulieren den TikTok-Empfehlungsalgorithmus. Georgescu war in Umfragen vor dem Wahltag bei unter 5 Prozent — eine plötzliche Sichtbarkeitskaskade auf TikTok änderte das Bild dramatisch.",
+      "sources": []
+    },
+    {
+      "date": "2024-11-24",
+      "phase": "event",
+      "title": "Erste Wahlrunde: Georgescu führt überraschend mit ~22,9 Prozent",
+      "description": "Călin Georgescu, ein zuvor weitgehend unbekannter ultranationalistischer Kandidat mit pro-russischer Außenpolitik, gewinnt die erste Wahlrunde unerwartet vor allen etablierten Kandidaten. Wahlbeobachter und Politik-Analysten zeigen sich überrascht; mehrere Analysen führen den Erfolg auf die TikTok-Reichweite zurück. Der zweite Platz geht an die liberale Elena Lasconi.",
+      "sources": []
+    },
+    {
+      "date": "2024-12-04",
+      "phase": "doctrine",
+      "title": "Präsident Iohannis deklassifiziert Geheimdienstberichte",
+      "description": "Der scheidende Präsident Klaus Iohannis veröffentlicht deklassifizierte Berichte des rumänischen Geheimdienstes SRI. Die Dokumente belegen über 34 dokumentierte hybride Operationen Russlands gegen Rumänien 2024, koordinierte Konto-Cluster, algorithmische Verstärkung und bezahlte Promotion zugunsten Georgescus. TikTok bestätigt zwei Konto-Cluster (78 + 12 Konten) im Zusammenhang mit Georgescu/Geoană entfernt zu haben.",
+      "sources": []
+    },
+    {
+      "date": "2024-12-06",
+      "phase": "consequences",
+      "title": "Verfassungsgericht annulliert die Wahl — erstes EU-Präzedenzfall",
+      "description": "Das rumänische Verfassungsgericht annulliert einstimmig die erste Wahlrunde und ordnet eine vollständige Wiederholung an. Georgescu spricht von einem 'offiziell gewordenen Staatsstreich'. Die EU-Kommission leitet ein formelles DSA-Verfahren gegen TikTok ein. Die Wahl-Wiederholung 2025 wird als erster großer Stresstest für den EU-Digital-Services-Act und die Resilienz europäischer Demokratien gegen algorithmische Manipulation gewertet.",
+      "sources": []
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/romania-annulled-its-presidential-election-results-amid-alleged-russian-interference-what-happens-next/",
+      "title": "Romania annulled its presidential election results amid alleged Russian interference. What happens next?",
+      "publisher": "Atlantic Council",
+      "date": "2024-12-06",
+      "type": "analysis",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://thesoufancenter.org/intelbrief-2024-december-13/",
+      "title": "Romania's Election Nullified: Russian Interference and the Struggle for Democracy",
+      "publisher": "The Soufan Center",
+      "date": "2024-12-13",
+      "type": "analysis",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://globalwitness.org/en/campaigns/digital-threats/what-happened-on-tiktok-around-the-annulled-romanian-presidential-election-an-investigation-and-poll/",
+      "title": "What happened on TikTok around the annulled Romanian presidential election? An investigation and poll",
+      "publisher": "Global Witness",
+      "date": "2024-12",
+      "type": "investigation",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://thehackernews.com/2024/12/romania-cancels-presidential-election.html",
+      "title": "Romania Cancels Presidential Election Results After Alleged Russian Meddling on TikTok",
+      "publisher": "The Hacker News",
+      "date": "2024-12-06",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.friendsofeurope.org/insights/critical-thinking-hybrid-warfare-through-disinformation-the-recent-case-of-romania/",
+      "title": "Hybrid warfare through disinformation: the case of Romania's presidential election",
+      "publisher": "Friends of Europe",
+      "date": "2024-12",
+      "type": "analysis",
+      "asm:linkHealth": "ok"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "nigeria-ki-wahlmanipulation-deepfakes",
+    "ghana-ki-wahlbeeinflussung"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-26",
+    "lastUpdated": "2026-05-26",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}

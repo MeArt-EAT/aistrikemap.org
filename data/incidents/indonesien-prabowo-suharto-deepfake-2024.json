@@ -1,0 +1,137 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/indonesien-prabowo-suharto-deepfake-2024",
+  "name": "Indonesien: Suharto-Deepfake und KI-Imagebau bei Präsidentschaftswahl 2024",
+  "description": "Im Vorfeld der indonesischen Präsidentschaftswahl im Februar 2024 wurde ein KI-generiertes Deepfake-Video des 2008 verstorbenen Diktators Suharto in den sozialen Medien geteilt — der Avatar forderte zur Wahl auf und unterstützte indirekt Prabowo Subianto, einen ehemaligen General unter dem Suharto-Regime. Das Video erreichte über 4,7 Millionen Aufrufe auf X. Parallel führte das Prabowo-Wahlkampfteam eine massive KI-gestützte 'Gemoy'-Kampagne (gemoy = niedlich), die den 72-jährigen, wegen Menschenrechtsverletzungen aus den 1990er-Jahren umstrittenen Kandidaten als 'kuscheligen Opa' mit Comic-Avataren auf TikTok rebrandete. Prabowo gewann die Wahl mit 58,6 Prozent, 60 Prozent der Gen-Z-Stimmen.",
+  "startDate": "2024-01",
+  "location": {
+    "@type": "Place",
+    "name": "Jakarta, Indonesien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -6.2088,
+      "longitude": 106.8456
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ID"
+    }
+  },
+  "asm:incidentType": [
+    "deepfakes",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [
+    "Recht auf freie Wahlen",
+    "Recht auf demokratische Teilhabe",
+    "Recht auf Würde von Verstorbenen",
+    "Schutz vor Manipulation"
+  ],
+  "asm:actors": [
+    {
+      "name": "Prabowo-Subianto-Wahlkampagne",
+      "type": "individual"
+    },
+    {
+      "name": "Erwin Aksa (Golkar-Vize, Verbreiter Suharto-Deepfake)",
+      "type": "individual"
+    },
+    {
+      "name": "Midjourney Inc.",
+      "type": "company",
+      "asm:systems": [
+        "Midjourney AI Image Generator (für Prabowo-Avatar)"
+      ]
+    },
+    {
+      "name": "TikTok / ByteDance",
+      "type": "company"
+    },
+    {
+      "name": "X / Twitter",
+      "type": "company"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "KI-Rebrand: Prabowo als 'gemoy' (Comic-Opa)",
+      "description": "Prabowos Wahlkampfteam beauftragt KI-generierte Animationen, die den Kandidaten — der in den 1990er-Jahren wegen Entführungen von Aktivisten unter dem Suharto-Regime angeklagt war — als süßen Comic-Opa mit seiner Katze Bobby zeigen. Die Avatare werden auf Straßenplakaten, Facebook und vor allem TikTok massiv verbreitet. Die Strategie zielt auf die 60 Prozent indonesischer Wähler unter 40 Jahren, die persönliche Erinnerung an die Suharto-Diktatur (1967-1998) nicht haben.",
+      "sources": []
+    },
+    {
+      "date": "2024-01-12",
+      "phase": "event",
+      "title": "Suharto-Deepfake erreicht 4,7 Mio. Aufrufe",
+      "description": "Erwin Aksa, stellvertretender Vorsitzender der Golkar-Partei (die Prabowo unterstützt), veröffentlicht auf X ein KI-generiertes Deepfake-Video des 2008 verstorbenen Diktators Suharto. Im 3-minütigen Video ruft der digital reanimierte Diktator zur Wahl auf. Das Video erreicht binnen Tagen 4,7 Millionen Aufrufe. Kritiker — darunter Familien von Suharto-Opfern und Menschenrechtsorganisationen — verurteilen das Video als geschichtsrevisionistische Manipulation.",
+      "sources": []
+    },
+    {
+      "date": "2024-02-14",
+      "phase": "event",
+      "title": "Prabowo gewinnt mit 58,6 Prozent — 60% Gen-Z-Vote",
+      "description": "Prabowo Subianto gewinnt die Präsidentschaftswahl mit 58,6 Prozent in der ersten Runde. Analysen zeigen, dass er 60 Prozent der Gen-Z-Stimmen und 42 Prozent der Millennials gewinnt — überproportional bei Wählern, die ihn nur als TikTok-Comic-Avatar kennen. Sein Vize-Präsident wird Gibran Rakabuming Raka, Sohn des amtierenden Präsidenten Joko Widodo.",
+      "sources": []
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Globales Forschungs-Interesse + KI-Wahlkampf-Debatte",
+      "description": "Der indonesische Fall wird international zur Referenz für KI-Image-Engineering in Wahlkämpfen. Forschungsinstitute (Columbia, ISEAS Fulcrum) analysieren ihn als Erfolgsfall für KI-Re-Branding kontroverser Kandidaten. Indonesische Wahlbehörden (Bawaslu) starten Diskussionen über Regulierung von KI-generierten Wahlkampf-Inhalten. Menschenrechtsgruppen wie HRW kritisieren, dass die Suharto-Rehabilitation durch KI Opfer der Diktatur nochmals verletzt.",
+      "sources": []
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.cnn.com/2024/02/12/asia/suharto-deepfake-ai-scam-indonesia-election-hnk-intl/index.html",
+      "title": "AI 'resurrects' long dead dictator in murky new era of deepfake electioneering",
+      "publisher": "CNN",
+      "date": "2024-02-12",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "http://www.cpreview.org/articles/2024/11/the-dark-side-of-generative-ai-in-prabowo-subiantos-presidential-campaign",
+      "title": "The Dark Side of Generative AI in Prabowo Subianto's Presidential Campaign",
+      "publisher": "Columbia Political Review",
+      "date": "2024-11",
+      "type": "academic-paper",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://fulcrum.sg/election-integrity-in-the-age-of-artificial-intelligence-lessons-from-indonesia/",
+      "title": "Election Integrity in the Age of Artificial Intelligence: Lessons from Indonesia",
+      "publisher": "ISEAS Fulcrum (Yusof Ishak Institute)",
+      "date": "2024",
+      "type": "academic-paper",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.benarnews.org/english/news/indonesian/suharto-deepfake-used-in-election-campaign-01122024135217.html",
+      "title": "Fake Suharto video fuels debate on AI use in Indonesian election campaign",
+      "publisher": "BenarNews",
+      "date": "2024-01-12",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "rumaenien-wahlannullierung-tiktok",
+    "slowakei-deepfake-wahl-simecka",
+    "usa-biden-deepfake-robocall"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-26",
+    "lastUpdated": "2026-05-26",
+    "author": "AIStrikeMap",
+    "aiGenerated": false,
+    "humanVerified": true
+  }
+}
