@@ -78,6 +78,17 @@ const BOT_BLOCKED_DOMAINS = [
   'icrac.net', 'stopkillerrobots.org',
   'freedomhouse.org', 'rsf.org',
   'blog.x.com', 'x.com', 'twitter.com',
+  'wiley.com', 'tandfonline.com', 'sciencedirect.com', 'springer.com',
+  'jstor.org', 'cambridge.org', 'oup.com', 'sagepub.com',
+  'icij.org', 'lighthousereports.com',
+  'science.org', 'pnas.org', 'thelancet.com', 'bmj.com',
+  'laquadrature.net', 'edps.europa.eu', 'cnil.fr',
+  'oag.state.va.us', 'ag.ny.gov', 'mass.gov', 'ag.ca.gov',
+  'priv.gc.ca', 'publicsafety.gc.ca', 'ccla.org',
+  'eur-lex.europa.eu', 'echr.coe.int',
+  'netzpolitik.org', 'reuters.com', 'nytimes.com',
+  'dataprotection.ie', 'iccl.ie',
+  'nhtsa.gov', 'dmv.ca.gov', 'ftc.gov',
 ];
 
 /* --------------------------- cache ------------------------------------- */
