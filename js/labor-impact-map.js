@@ -179,7 +179,7 @@ const LaborImpactMap = (function () {
       html += '<li class="labor-map__case">'
         + '<header class="labor-map__case-head">'
         + '<strong>' + escapeHtml(c.company) + '</strong> '
-        + '<span class="labor-map__case-meta">(' + (c.industry || '') + ', '
+        + '<span class="labor-map__case-meta">(' + (I18n.localized(c, 'industry') || '') + ', '
         + (c.date_announced || '').slice(0, 7) + ')</span> '
         + '— <strong>' + formatCount(c.headcount_affected) + '</strong>'
         + stableTag + disputedTag + reversalTag

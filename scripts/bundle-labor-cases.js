@@ -70,7 +70,9 @@ function aggregate(cases) {
 
   const byIndustry = {};
   for (const c of counted) {
-    const key = c.industry || 'unknown';
+    // Use industry_de as canonical key (Aggregate-Konsumenten resolven
+    // den Display-Wert per Lookup gegen industry_de/industry_en).
+    const key = c.industry_de || c.industry || 'unknown';
     if (!byIndustry[key]) byIndustry[key] = { reduction: 0, creation: 0, cases: 0 };
     byIndustry[key].cases += 1;
     if (c.direction === 'creation') {
