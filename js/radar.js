@@ -232,11 +232,11 @@ const Radar = (function () {
               '<span class="detail-share-btn__icon" aria-hidden="true">&#128279;</span>' +
               '<span data-i18n="radar.detail.share">' + esc(I18n.t('radar.detail.share')) + '</span></button>';
       html += '<a href="https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent(shareUrl) +
-              '" target="_blank" rel="noopener" class="detail-share-icon" title="X / Twitter" aria-label="Share on X">𝕏</a>';
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="X / Twitter" aria-label="' + I18n.t('detail.share.x') + '">𝕏</a>';
       html += '<a href="https://mastodon.social/share?text=' + shareText + '%20' + encodeURIComponent(shareUrl) +
-              '" target="_blank" rel="noopener" class="detail-share-icon" title="Mastodon" aria-label="Share on Mastodon">🐘</a>';
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="Mastodon" aria-label="' + I18n.t('detail.share.mastodon') + '">🐘</a>';
       html += '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl) +
-              '" target="_blank" rel="noopener" class="detail-share-icon" title="LinkedIn" aria-label="Share on LinkedIn">in</a>';
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="LinkedIn" aria-label="' + I18n.t('detail.share.linkedin') + '">in</a>';
       html += '</div>';
     }
 
@@ -309,7 +309,7 @@ const Radar = (function () {
         if (src.url) {
           html += '<a href="' + escAttr(src.url) + '" target="_blank" rel="noopener">' + esc(src.title) + '</a>';
         } else {
-          html += '<span class="source-item__broken" title="Link nicht mehr verfügbar">' + esc(src.title) + '</span>';
+          html += '<span class="source-item__broken" title="' + I18n.t('detail.share.broken') + '">' + esc(src.title) + '</span>';
         }
         html += ' <span class="perspective-badge perspective-badge--' + perspective + '">' + esc(I18n.t('radar.perspective.' + perspective)) + '</span>';
         if (src.publisher || src.date) {

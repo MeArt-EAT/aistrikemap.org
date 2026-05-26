@@ -97,9 +97,9 @@ const LaborImpactMap = (function () {
       marker.bindTooltip(
         '<strong>' + cc + '</strong>: '
         + summary.cases_counted + ' '
-        + (currentLang() === 'en' ? 'cases · ' : 'Fälle · ')
+        + I18n.t('laborMap.tooltip.cases') + ' · '
         + formatCount(summary.reduction_headcount) + ' '
-        + (currentLang() === 'en' ? 'positions' : 'Stellen'),
+        + I18n.t('laborMap.tooltip.positions'),
         { direction: 'top', offset: [0, -8] }
       );
       marker.on('click', function () { selectCountry(cc); });
@@ -107,11 +107,8 @@ const LaborImpactMap = (function () {
       added++;
     });
     if (added === 0) {
-      var msg = currentLang() === 'en'
-        ? 'No cases yet. Be the first to submit one.'
-        : 'Noch keine Fälle. Sei der/die erste mit einer Meldung.';
       var emptyEl = document.getElementById('labor-map-detail-empty');
-      if (emptyEl) emptyEl.textContent = msg;
+      if (emptyEl) emptyEl.textContent = I18n.t('laborMap.empty');
     }
   }
 
@@ -137,7 +134,7 @@ const LaborImpactMap = (function () {
     } catch (err) {
       console.error('[LaborImpactMap] selectCountry', err);
       contentEl.innerHTML = '<p class="labor-map__detail-error">'
-        + (currentLang() === 'en' ? 'Failed to load.' : 'Konnte nicht laden.')
+        + I18n.t('laborMap.loadFailed')
         + '</p>';
       emptyEl.hidden = true;
       contentEl.hidden = false;
@@ -146,11 +143,9 @@ const LaborImpactMap = (function () {
 
   function renderCountryDetail(data) {
     var lang = currentLang();
-    var lblCases = lang === 'en' ? 'documented cases' : 'dokumentierte Fälle';
-    var lblReduction = lang === 'en' ? 'positions reduced' : 'Stellen reduziert';
-    var lblCreation = lang === 'en' ? 'positions created' : 'Stellen geschaffen';
-    var headlineKey = lang === 'en' ? 'headline_en' : 'headline_de';
-    var methKey = lang === 'en' ? 'methodology_en' : 'methodology_de';
+    var lblCases = I18n.t('laborMap.documentedCases');
+    var lblReduction = I18n.t('laborMap.positionsReduced');
+    var lblCreation = I18n.t('laborMap.positionsCreated');
     var quoteKey = lang === 'en' ? 'ai_quote_en' : 'ai_quote_de';
     var ctxKey = lang === 'en' ? 'context_en' : 'context_de';
 
@@ -169,17 +164,17 @@ const LaborImpactMap = (function () {
       var stableTag = '';
       if (c.net_workforce_change === 'stable') {
         stableTag = ' <span class="labor-map__pill labor-map__pill--stable">'
-          + (lang === 'en' ? 'headcount stable' : 'Gesamt stabil') + '</span>';
+          + I18n.t('laborMap.pill.stable') + '</span>';
       }
       var disputedTag = '';
       if (c.tags && c.tags.indexOf('disputed-attribution') >= 0) {
         disputedTag = ' <span class="labor-map__pill labor-map__pill--disputed">'
-          + (lang === 'en' ? 'disputed AI attribution' : 'KI-Grund umstritten') + '</span>';
+          + I18n.t('laborMap.pill.disputed') + '</span>';
       }
       var reversalTag = '';
       if (c.tags && c.tags.indexOf('reversal') >= 0) {
         reversalTag = ' <span class="labor-map__pill labor-map__pill--reversal">'
-          + (lang === 'en' ? 'partly reversed' : 'teils zurückgenommen') + '</span>';
+          + I18n.t('laborMap.pill.reversal') + '</span>';
       }
       html += '<li class="labor-map__case">'
         + '<header class="labor-map__case-head">'
@@ -200,11 +195,10 @@ const LaborImpactMap = (function () {
 
   function renderSourceLinks(sources) {
     if (!sources.length) return '';
-    var lang = currentLang();
-    var label = lang === 'en' ? 'Sources' : 'Quellen';
+    var label = I18n.t('laborMap.sources');
     var items = sources.map(function (s) {
       var paywall = s.paywall ? ' <span class="labor-map__paywall">'
-        + (lang === 'en' ? '(paywall)' : '(Paywall)') + '</span>' : '';
+        + I18n.t('laborMap.paywall') + '</span>' : '';
       return '<li><a href="' + s.url + '" target="_blank" rel="noopener noreferrer">'
         + escapeHtml(s.publisher || s.name) + '</a>' + paywall + '</li>';
     }).join('');
@@ -215,9 +209,8 @@ const LaborImpactMap = (function () {
   function renderStand() {
     var standEl = document.getElementById('labor-map-stand');
     if (!standEl || !aggregate) return;
-    var label = currentLang() === 'en' ? 'As of ' : 'Stand: ';
     var date = (aggregate.generated || '').slice(0, 10);
-    standEl.textContent = label + date;
+    standEl.textContent = I18n.t('labor.standPrefix') + date;
   }
 
   function escapeHtml(s) {

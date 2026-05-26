@@ -21,12 +21,12 @@ const StrikeTicker = (function () {
     // Build ticker DOM
     var ticker = document.createElement('div');
     ticker.className = 'strike-ticker';
-    ticker.setAttribute('aria-label', 'Neueste Vorfälle');
+    ticker.setAttribute('aria-label', I18n.t('ticker.ariaLabel'));
 
     // Label
     var label = document.createElement('div');
     label.className = 'strike-ticker__label';
-    label.textContent = 'LIVE';
+    label.textContent = I18n.t('ticker.live');
     ticker.appendChild(label);
 
     // Track

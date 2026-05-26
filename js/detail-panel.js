@@ -78,11 +78,11 @@ const DetailPanel = (function () {
               '<span data-i18n="detail.share">Link kopieren</span>' +
               '</button>';
       html += '<a href="https://twitter.com/intent/tweet?text=' + shareText + '&url=' + encodeURIComponent(shareUrl) +
-              '" target="_blank" rel="noopener" class="detail-share-icon" title="X / Twitter" aria-label="Share on X">𝕏</a>';
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="X / Twitter" aria-label="' + I18n.t('detail.share.x') + '">𝕏</a>';
       html += '<a href="https://mastodon.social/share?text=' + shareText + '%20' + encodeURIComponent(shareUrl) +
-              '" target="_blank" rel="noopener" class="detail-share-icon" title="Mastodon" aria-label="Share on Mastodon">🐘</a>';
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="Mastodon" aria-label="' + I18n.t('detail.share.mastodon') + '">🐘</a>';
       html += '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl) +
-              '" target="_blank" rel="noopener" class="detail-share-icon" title="LinkedIn" aria-label="Share on LinkedIn">in</a>';
+              '" target="_blank" rel="noopener" class="detail-share-icon" title="LinkedIn" aria-label="' + I18n.t('detail.share.linkedin') + '">in</a>';
       html += '</div>';
     }
 
@@ -170,7 +170,7 @@ const DetailPanel = (function () {
           html += '<a href="' + escAttr(s.url) + '" target="_blank" rel="noopener" class="source-item__link' + linkClass + '">' +
                   healthIcon + esc(s.title) + '</a>';
         } else {
-          html += '<span class="source-item__broken" title="Link nicht mehr verfügbar">' + esc(s.title) + '</span>';
+          html += '<span class="source-item__broken" title="' + I18n.t('detail.share.broken') + '">' + esc(s.title) + '</span>';
         }
         if (s.publisher || s.date) {
           html += '<div class="source-item__publisher">';

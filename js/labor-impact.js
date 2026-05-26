@@ -93,8 +93,7 @@ const LaborImpact = (function () {
       srcEl.textContent = formatRate(category.tick_per_second, lang) + ' · ' + category[labelKey];
     }
     if (rangeEl) {
-      var rangeLabel = (lang === 'en') ? 'Range across sources: ' : 'Bandbreite über Quellen: ';
-      rangeEl.textContent = rangeLabel
+      rangeEl.textContent = I18n.t('labor.rangeAcrossSources')
         + formatPct(category.low_pct, lang) + ' – ' + formatPct(category.high_pct, lang);
     }
   }
@@ -108,10 +107,9 @@ const LaborImpact = (function () {
     var anchorLabel = (lang === 'en')
       ? dataCache.anchor_label_en
       : dataCache.anchor_label_de;
-    var tpl = (lang === 'en')
-      ? 'Counters tick from {date} (anchor: {label}).'
-      : 'Counter zählen seit {date} (Anker: {label}).';
-    el.textContent = tpl.replace('{date}', date).replace('{label}', anchorLabel);
+    el.textContent = I18n.t('labor.counterTickTemplate')
+      .replace('{date}', date)
+      .replace('{label}', anchorLabel);
   }
 
   function renderSources(sources, lang) {
@@ -154,8 +152,7 @@ const LaborImpact = (function () {
   function renderStand(lang) {
     var standEl = document.getElementById('labor-impact-stand');
     if (!standEl || !dataCache.updated) return;
-    var label = (lang === 'en') ? 'As of ' : 'Stand: ';
-    standEl.textContent = label + dataCache.updated;
+    standEl.textContent = I18n.t('labor.standPrefix') + dataCache.updated;
   }
 
   function startTickLoop(lang) {
@@ -199,8 +196,8 @@ const LaborImpact = (function () {
       var stableTag = '';
       if (c.net_workforce_change === 'stable') {
         stableTag = ' <span class="labor-impact__reality-stable" title="' +
-          (lang === 'en' ? 'Total headcount stable due to AI hiring' : 'Gesamt-Headcount stable durch KI-Neueinstellungen') +
-          '">' + (lang === 'en' ? '· headcount stable' : '· Gesamt stabil') + '</span>';
+          I18n.t('labor.reality.stableTooltip') + '">' +
+          I18n.t('labor.reality.stableTag') + '</span>';
       }
       li.innerHTML = '<strong>' + c.company + '</strong> '
         + '<span class="labor-impact__reality-country">(' + c.country + ', ' + dateLabel + ')</span> '
