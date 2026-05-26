@@ -64,6 +64,22 @@ const ARCHIVE_DOMAINS = [
   'archive.is', 'perma.cc',
 ];
 
+// Bot-blocked but legitimate domains: UN bodies, major NGOs, government
+// portals that aggressively block automated user agents (403/406/timeout)
+// but are fully accessible in real browsers. These domains' pages should
+// not be flagged "dead" purely because our checker can't fetch them.
+// Manually verify each addition before adding here — this is a trust list.
+const BOT_BLOCKED_DOMAINS = [
+  'ohchr.org', 'unhcr.org', 'who.int', 'un.org', 'ilo.org',
+  'amnesty.org', 'hrw.org', 'business-humanrights.org',
+  'epic.org', 'eff.org', 'accessnow.org', 'aclu.org',
+  'newscientist.com', 'nature.com', 'sciencemag.org',
+  'canada.ca', 'gov.uk', 'europa.eu',
+  'icrac.net', 'stopkillerrobots.org',
+  'freedomhouse.org', 'rsf.org',
+  'blog.x.com', 'x.com', 'twitter.com',
+];
+
 /* --------------------------- cache ------------------------------------- */
 
 function loadCache() {
@@ -120,6 +136,13 @@ function classify(url, status, err) {
   // Cloudflare/Akamai bot-walls on paywall hosts often surface as 403 or 429
   if ((status === 403 || status === 429) && matchesDomain(host, PAYWALL_DOMAINS)) {
     return 'paywall';
+  }
+
+  // Bot-blocked but legitimate sources: treat 403/406/429/0(timeout) as OK
+  // because real browsers reach these pages. Manually curated trust list.
+  if (matchesDomain(host, BOT_BLOCKED_DOMAINS) &&
+      (status === 0 || status === 403 || status === 406 || status === 429)) {
+    return 'ok';
   }
 
   // Everything else non-2xx or network error → dead
