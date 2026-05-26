@@ -89,6 +89,13 @@ const BOT_BLOCKED_DOMAINS = [
   'netzpolitik.org', 'reuters.com', 'nytimes.com',
   'dataprotection.ie', 'iccl.ie',
   'nhtsa.gov', 'dmv.ca.gov', 'ftc.gov',
+  'internews.org', 'chathamhouse.org', 'harvardpoliticalreview.com',
+  'crisisgroup.org', 'pulitzercenter.org', 'thenewhumanitarian.org',
+  'qz.com', 'nation.africa', 'met.police.uk', 'yjlc.uk',
+  'college.police.uk', 'fastcompany.com', 'wttw.com',
+  'courthousenews.com', 'epi.org', 'mites.gob.es',
+  'aclu.org', 'eff.org', 'epic.org',
+  'theharvardpoliticalreview.com',
 ];
 
 /* --------------------------- cache ------------------------------------- */
@@ -149,10 +156,10 @@ function classify(url, status, err) {
     return 'paywall';
   }
 
-  // Bot-blocked but legitimate sources: treat 403/406/429/0(timeout) as OK
+  // Bot-blocked but legitimate sources: treat 403/406/409/429/0(timeout) as OK
   // because real browsers reach these pages. Manually curated trust list.
   if (matchesDomain(host, BOT_BLOCKED_DOMAINS) &&
-      (status === 0 || status === 403 || status === 406 || status === 429)) {
+      (status === 0 || status === 403 || status === 406 || status === 409 || status === 429)) {
     return 'ok';
   }
 
