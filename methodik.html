@@ -45,38 +45,38 @@
 
   <main id="main-content">
     <div class="page-content">
-      <h1>Methodik</h1>
-      <p>
+      <h1 data-i18n="methodology.title">Methodik</h1>
+      <p data-i18n="methodology.intro">
         Diese Seite beschreibt die wissenschaftlichen und redaktionellen Grundlagen, nach denen
         AIStrikeMap Vorfälle erfasst, bewertet und darstellt.
       </p>
 
       <section aria-labelledby="verifizierung-heading">
-        <h2 id="verifizierung-heading">4-Stufen-Verifizierungsmodell</h2>
-        <p>
+        <h2 id="verifizierung-heading" data-i18n="methodology.verification.title">4-Stufen-Verifizierungsmodell</h2>
+        <p data-i18n="methodology.verification.intro">
           Jeder Vorfall durchläuft ein vierstufiges Verifizierungsverfahren. Die aktuelle Stufe
           wird in der Kartenansicht transparent angezeigt.
         </p>
         <ol>
-          <li>
+          <li data-i18n-html="methodology.verification.l1">
             <strong>Stufe 1 — Gemeldet</strong><br>
             Ein Vorfall wurde aus einer Quelle identifiziert oder von Nutzenden gemeldet.
             Es liegt mindestens eine Primär- oder Sekundärquelle vor. Keine inhaltliche
             Prüfung erfolgt. Der Eintrag ist als ungeprüft gekennzeichnet.
           </li>
-          <li>
+          <li data-i18n-html="methodology.verification.l2">
             <strong>Stufe 2 — Bestätigt</strong><br>
             Mindestens zwei unabhängige Quellen bestätigen den Vorfall. Grundlegende Fakten
             (Ort, Zeit, beteiligte Akteure) sind plausibel. Offensichtliche Falschmeldungen
             und Duplikate wurden aussortiert.
           </li>
-          <li>
+          <li data-i18n-html="methodology.verification.l3">
             <strong>Stufe 3 — Verifiziert</strong><br>
             Detailprüfung durch die Redaktion. Quellenqualität bewertet, Widersprüche
             dokumentiert, Kontext recherchiert. Der Vorfall ist mit belastbaren Quellen
             belegt und in die Taxonomie eingeordnet.
           </li>
-          <li>
+          <li data-i18n-html="methodology.verification.l4">
             <strong>Stufe 4 — Analysiert</strong><br>
             Vollständige Aufarbeitung inklusive Rückwärts-Timeline, Einordnung in
             Branchentrends und Verbindung zu verwandten Vorfällen. Systemische Ursachen
@@ -86,117 +86,117 @@
       </section>
 
       <section aria-labelledby="timeline-heading">
-        <h2 id="timeline-heading">Rückwärts-Timeline-Konzept</h2>
-        <p>
+        <h2 id="timeline-heading" data-i18n="methodology.timeline.title">Rückwärts-Timeline-Konzept</h2>
+        <p data-i18n="methodology.timeline.intro">
           Klassische Berichterstattung fragt: Was ist passiert? Die Rückwärts-Timeline fragt
           zusätzlich: Warum konnte es passieren? Dazu wird jeder analysierte Vorfall entlang
           von vier Ebenen rückwärts aufgerollt:
         </p>
         <ol>
-          <li>
+          <li data-i18n-html="methodology.timeline.infrastructure">
             <strong>Infrastruktur</strong><br>
             Welche technische Infrastruktur (Modelle, Trainingsdaten, Deployment-Pipelines)
             liegt dem Vorfall zugrunde? Wer hat sie entwickelt und betrieben?
           </li>
-          <li>
+          <li data-i18n-html="methodology.timeline.doctrine">
             <strong>Doktrin</strong><br>
             Welche Unternehmensrichtlinien, regulatorische Rahmenbedingungen oder fehlende
             Governance-Strukturen haben den Vorfall ermöglicht oder begünstigt?
           </li>
-          <li>
+          <li data-i18n-html="methodology.timeline.event">
             <strong>Ereignis</strong><br>
             Was genau ist passiert? Chronologische Rekonstruktion des Vorfalls mit Quellen,
             Zeitstempeln und beteiligten Akteuren.
           </li>
-          <li>
+          <li data-i18n-html="methodology.timeline.consequences">
             <strong>Konsequenzen</strong><br>
             Welche Auswirkungen hatte der Vorfall? Betroffene Personen, regulatorische
             Reaktionen, technische Korrekturen, gesellschaftliche Debatte.
           </li>
         </ol>
-        <p>
+        <p data-i18n="methodology.timeline.outro">
           Durch diesen Ansatz werden systemische Muster sichtbar, die bei isolierter
           Betrachtung einzelner Vorfälle verborgen bleiben.
         </p>
       </section>
 
       <section aria-labelledby="taxonomie-heading">
-        <h2 id="taxonomie-heading">Taxonomie der Vorfalltypen</h2>
-        <p>
+        <h2 id="taxonomie-heading" data-i18n="methodology.taxonomy.title">Taxonomie der Vorfalltypen</h2>
+        <p data-i18n="methodology.taxonomy.intro">
           Vorfälle werden nach ihrem primären Schadenstyp klassifiziert. Ein Vorfall kann
           mehreren Kategorien zugeordnet werden.
         </p>
         <ul>
-          <li><strong>Überwachung</strong> — Einsatz von KI zur Massenüberwachung oder gezielten Beobachtung</li>
-          <li><strong>Predictive Policing</strong> — Algorithmische Vorhersage von Kriminalität und präventive Polizeiarbeit</li>
-          <li><strong>Autonome Waffen</strong> — KI-gesteuerte Waffensysteme und autonome Kampfmittel</li>
-          <li><strong>Diskriminierung / Bias</strong> — Systematische Benachteiligung bestimmter Gruppen durch KI-Systeme</li>
-          <li><strong>Deepfakes / Desinformation</strong> — KI-generierte Falschinformationen, synthetische Medien, Manipulationskampagnen</li>
-          <li><strong>Datenmissbrauch</strong> — Unerlaubte Datenerhebung, Datenlecks, Verletzung der Privatsphäre durch KI</li>
-          <li><strong>Militärische KI-Nutzung</strong> — Einsatz von KI in militärischen Entscheidungsketten und Operationen</li>
-          <li><strong>Gesichtserkennung</strong> — Biometrische Identifikation und Massenerfassung von Gesichtern</li>
-          <li><strong>Zensur / Inhaltskontrolle</strong> — KI-gestützte Unterdrückung von Informationen und Meinungen</li>
-          <li><strong>KI-Arbeitsausbeutung</strong> — Ausbeutung von Annotationsarbeit, Content-Moderation unter unmenschlichen Bedingungen</li>
-          <li><strong>Politischer Druck auf KI-Sicherheit</strong> — Einflussnahme auf Safety-Standards und verantwortungsvolle KI-Entwicklung</li>
+          <li data-i18n-html="methodology.taxonomy.surveillance"><strong>Überwachung</strong> — Einsatz von KI zur Massenüberwachung oder gezielten Beobachtung</li>
+          <li data-i18n-html="methodology.taxonomy.predictivePolicing"><strong>Predictive Policing</strong> — Algorithmische Vorhersage von Kriminalität und präventive Polizeiarbeit</li>
+          <li data-i18n-html="methodology.taxonomy.autonomousWeapons"><strong>Autonome Waffen</strong> — KI-gesteuerte Waffensysteme und autonome Kampfmittel</li>
+          <li data-i18n-html="methodology.taxonomy.bias"><strong>Diskriminierung / Bias</strong> — Systematische Benachteiligung bestimmter Gruppen durch KI-Systeme</li>
+          <li data-i18n-html="methodology.taxonomy.deepfakes"><strong>Deepfakes / Desinformation</strong> — KI-generierte Falschinformationen, synthetische Medien, Manipulationskampagnen</li>
+          <li data-i18n-html="methodology.taxonomy.dataAbuse"><strong>Datenmissbrauch</strong> — Unerlaubte Datenerhebung, Datenlecks, Verletzung der Privatsphäre durch KI</li>
+          <li data-i18n-html="methodology.taxonomy.military"><strong>Militärische KI-Nutzung</strong> — Einsatz von KI in militärischen Entscheidungsketten und Operationen</li>
+          <li data-i18n-html="methodology.taxonomy.facialRecognition"><strong>Gesichtserkennung</strong> — Biometrische Identifikation und Massenerfassung von Gesichtern</li>
+          <li data-i18n-html="methodology.taxonomy.censorship"><strong>Zensur / Inhaltskontrolle</strong> — KI-gestützte Unterdrückung von Informationen und Meinungen</li>
+          <li data-i18n-html="methodology.taxonomy.laborExploitation"><strong>KI-Arbeitsausbeutung</strong> — Ausbeutung von Annotationsarbeit, Content-Moderation unter unmenschlichen Bedingungen</li>
+          <li data-i18n-html="methodology.taxonomy.politicalPressure"><strong>Politischer Druck auf KI-Sicherheit</strong> — Einflussnahme auf Safety-Standards und verantwortungsvolle KI-Entwicklung</li>
         </ul>
       </section>
 
       <section aria-labelledby="schweregrad-heading">
-        <h2 id="schweregrad-heading">Schweregrad-Skala</h2>
-        <p>
+        <h2 id="schweregrad-heading" data-i18n="methodology.severity.title">Schweregrad-Skala</h2>
+        <p data-i18n="methodology.severity.intro">
           Jeder Vorfall erhält eine Schweregradeinschätzung von 1 bis 5. Die Skala
           berücksichtigt Ausmaß, Reversibilität und Anzahl der Betroffenen.
         </p>
         <table>
           <thead>
             <tr>
-              <th scope="col">Stufe</th>
-              <th scope="col">Bezeichnung</th>
-              <th scope="col">Beschreibung</th>
+              <th scope="col" data-i18n="methodology.severity.colLevel">Stufe</th>
+              <th scope="col" data-i18n="methodology.severity.colName">Bezeichnung</th>
+              <th scope="col" data-i18n="methodology.severity.colDesc">Beschreibung</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>Bedenklich</td>
-              <td>Ethische Fragen, keine unmittelbare Gefahr. Begrenzte Auswirkungen, leicht reversibel, wenige Betroffene.</td>
+              <td data-i18n="severity.1">Bedenklich</td>
+              <td data-i18n="methodology.severity.l1Desc">Ethische Fragen, keine unmittelbare Gefahr. Begrenzte Auswirkungen, leicht reversibel, wenige Betroffene.</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Problematisch</td>
-              <td>Grundrechte potenziell betroffen. Messbare Auswirkungen auf eine begrenzte Gruppe, überwiegend reversibel.</td>
+              <td data-i18n="severity.2">Problematisch</td>
+              <td data-i18n="methodology.severity.l2Desc">Grundrechte potenziell betroffen. Messbare Auswirkungen auf eine begrenzte Gruppe, überwiegend reversibel.</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Schwerwiegend</td>
-              <td>Nachgewiesene Grundrechtsverletzung. Signifikante Auswirkungen auf eine größere Gruppe, teilweise irreversibel.</td>
+              <td data-i18n="severity.3">Schwerwiegend</td>
+              <td data-i18n="methodology.severity.l3Desc">Nachgewiesene Grundrechtsverletzung. Signifikante Auswirkungen auf eine größere Gruppe, teilweise irreversibel.</td>
             </tr>
             <tr>
               <td>4</td>
-              <td>Gefährlich</td>
-              <td>Physische oder existenzielle Bedrohung. Schwerwiegende Auswirkungen, weitgehend irreversibel, viele Betroffene.</td>
+              <td data-i18n="severity.4">Gefährlich</td>
+              <td data-i18n="methodology.severity.l4Desc">Physische oder existenzielle Bedrohung. Schwerwiegende Auswirkungen, weitgehend irreversibel, viele Betroffene.</td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Unmittelbare Gefahr</td>
-              <td>Unmittelbare Gefahr für Leib und Leben. Lebensbedrohliche Auswirkungen, irreversibel, potenziell systemisch.</td>
+              <td data-i18n="severity.5">Unmittelbare Gefahr</td>
+              <td data-i18n="methodology.severity.l5Desc">Unmittelbare Gefahr für Leib und Leben. Lebensbedrohliche Auswirkungen, irreversibel, potenziell systemisch.</td>
             </tr>
           </tbody>
         </table>
       </section>
 
       <section aria-labelledby="quellen-heading">
-        <h2 id="quellen-heading">Quellenstandards</h2>
-        <p>
+        <h2 id="quellen-heading" data-i18n="methodology.sources.title">Quellenstandards</h2>
+        <p data-i18n="methodology.sources.intro">
           Für die Aufnahme und Bewertung von Vorfällen gelten folgende Quellenanforderungen:
         </p>
         <ul>
-          <li><strong>Primärquellen bevorzugt</strong> — Gerichtsdokumente, Behördenberichte, technische Audits, Aussagen Betroffener</li>
-          <li><strong>Sekundärquellen</strong> — Berichterstattung etablierter Medien, Berichte von NGOs und Forschungseinrichtungen</li>
-          <li><strong>Mindestens zwei unabhängige Quellen</strong> für Stufe 2 und höher</li>
-          <li><strong>Archivierung</strong> — Alle zitierten Quellen werden nach Möglichkeit archiviert (Wayback Machine, lokale Kopien)</li>
-          <li><strong>Transparente Lücken</strong> — Fehlende oder widersprüchliche Informationen werden offen dokumentiert, nicht übergangen</li>
-          <li><strong>Keine anonymen Einzelquellen</strong> — Anonyme Hinweise werden nur aufgenommen, wenn sie durch mindestens eine öffentlich zugängliche Quelle gestützt werden</li>
+          <li data-i18n-html="methodology.sources.primary"><strong>Primärquellen bevorzugt</strong> — Gerichtsdokumente, Behördenberichte, technische Audits, Aussagen Betroffener</li>
+          <li data-i18n-html="methodology.sources.secondary"><strong>Sekundärquellen</strong> — Berichterstattung etablierter Medien, Berichte von NGOs und Forschungseinrichtungen</li>
+          <li data-i18n-html="methodology.sources.twoIndependent"><strong>Mindestens zwei unabhängige Quellen</strong> für Stufe 2 und höher</li>
+          <li data-i18n-html="methodology.sources.archival"><strong>Archivierung</strong> — Alle zitierten Quellen werden nach Möglichkeit archiviert (Wayback Machine, lokale Kopien)</li>
+          <li data-i18n-html="methodology.sources.transparentGaps"><strong>Transparente Lücken</strong> — Fehlende oder widersprüchliche Informationen werden offen dokumentiert, nicht übergangen</li>
+          <li data-i18n-html="methodology.sources.noAnonymous"><strong>Keine anonymen Einzelquellen</strong> — Anonyme Hinweise werden nur aufgenommen, wenn sie durch mindestens eine öffentlich zugängliche Quelle gestützt werden</li>
         </ul>
       </section>
     </div>
@@ -206,7 +206,7 @@
     <span data-i18n="footer.license">Daten: CC BY-NC-SA 4.0 | Code: AGPL-3.0</span>
     <span class="ai-disclosure" data-i18n="footer.ai">Technik: KI-unterstützt | Inhalt: Menschlich verifiziert</span>
   </footer>
-  <script src="js/i18n.js?v=3"></script>
+  <script src="js/i18n.js?v=4"></script>
   <script src="js/nav.js?v=3"></script>
   <script>I18n.load(I18n.getStoredLang());</script>
 </body>

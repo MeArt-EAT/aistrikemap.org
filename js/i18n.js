@@ -40,6 +40,13 @@ const I18n = (function () {
       var key = el.getAttribute('data-i18n');
       el.textContent = t(key);
     });
+    // data-i18n-html for strings that contain HTML markup (e.g. <strong>,
+    // <br>, <a>). Use only with trusted strings from our own i18n files —
+    // no user input flows here, so XSS is not a concern.
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-html');
+      el.innerHTML = t(key);
+    });
     document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-aria');
       el.setAttribute('aria-label', t(key));
