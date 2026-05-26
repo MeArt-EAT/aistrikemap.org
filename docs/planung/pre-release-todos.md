@@ -4,7 +4,7 @@ Kleine Aufräum-Arbeiten, die **kurz vor einer Veröffentlichung** erledigt werd
 
 ## Offen
 
-### Mehrsprachigkeit + Umlaute — Gesamt-Status pro Modul (Stand 2026-05-02)
+### Mehrsprachigkeit + Umlaute — Gesamt-Status pro Modul (Stand 2026-05-25)
 
 **Konvention** (CLAUDE.md): jede user-sichtbare Phrase auf jeder Seite muss in DE **und** EN vorliegen, Umlaute korrekt (ä/ö/ü/ß, nicht ae/oe/ue/ss). Aktueller Stand:
 
@@ -138,26 +138,32 @@ Der gemeinsame Nav-Pattern (`nav-toggle`-Button + `<nav>`-Element ARIA-Labels) i
 
 ### Item 98 Labor Impact v0.4 — Verifikation und Update-Workflow
 
-**Hintergrund:** Item 98 wurde am 2026-05-01/02 mehrfach überarbeitet — vom Worldometers-Counter (v0.1) zu statischen Exposure-Bandbreiten (v0.2) zu tickendem Counter mit fixem Anker (v0.3) zum **3-Ebenen-Layout v0.4** (Potentialanalyse + Plan + Realität). Aktueller Stand:
+**Status 2026-05-25: VERIFIKATION ABGESCHLOSSEN.** `data/labor-impact-rates.json` ist auf v0.4 gehoben, `preliminary: true` durch `verified_against_primary_sources: true` ersetzt, `verification_date: 2026-05-25`. Details unten.
 
-- **Theorie-Ebene** (bestehend): Tickender Counter Substitution + Augmentation, Anker `2025-01-01`, Bandbreiten-Anteile preliminary.
-- **Plan-Ebene** (neu in v0.4): WEF Future of Jobs Survey 2025 Werte (41 % Reduktion / 77 % Upskill / 47 % Umverteilung) — preliminary, gegen WEF-Report-PDF zu verifizieren.
-- **Realität-Ebene** (neu in v0.4): Aggregat aus Cases-DB (Item 105) — automatisch aktuell, methodisch sauber durch Stärke-≥4-Filter.
+**Hintergrund:** Item 98 wurde am 2026-05-01/02 mehrfach überarbeitet — vom Worldometers-Counter (v0.1) zu statischen Exposure-Bandbreiten (v0.2) zu tickendem Counter mit fixem Anker (v0.3) zum **3-Ebenen-Layout v0.4** (Potentialanalyse + Plan + Realität).
 
-**Aktuelle Werte (preliminary):**
+**Verifikations-Ergebnis (Web-Recherche 2026-05-25, Primärquellen + WEF Press Release + ILO News):**
 
-- `substitution.low/median/high_pct`: 8 / 10 / 12 — `tick_per_second: 1.87`
-- `augmentation.low/median/high_pct`: 14 / 16 / 18 — `tick_per_second: 3.00`
+| Wert | Status | Quelle |
+|---|---|---|
+| **22 % Jobs disruptiert bis 2030** | ✓ verifiziert | WEF Future of Jobs Report 2025 (von 1,2 Mrd. Survey-Dataset-Jobs, nicht 3,5 Mrd. globalen Erwerbstätigen) |
+| **92 Mio. verdrängt / 170 Mio. neu / 78 Mio. netto** | ✓ verifiziert | WEF FoJ 2025 |
+| **41 % Personal-Reduktion in KI-automatisierbaren Bereichen** | ✓ verifiziert (AI-spezifische Survey-Antwort) | WEF FoJ 2025 |
+| **77 % Upskilling** | ✓ verifiziert (AI-spezifische Survey-Antwort; allgemein 85 %) | WEF FoJ 2025 |
+| **47 % interne Umverteilung** | ✓ verifiziert (AI-spezifisch; allgemein 50 % "transition staff from declining to growing roles") | WEF FoJ 2025 |
+| **27 % OECD-Beschäftigung im hohen Automatisierungs-Risiko** | ✓ verifiziert | OECD Employment Outlook 2025 |
+| **25 % der globalen Beschäftigung GenAI-exponiert** | ✓ verifiziert | ILO Refined Global Index 2025 (publiziert 20.05.2025) |
 
-Tick-Raten = `total_workers / (period_months × 30.44 × 86400)`. Werte für `total_workers` sind im JSON `_internal_calc` als Berechnungs-Anker dokumentiert (350 Mio. / 560 Mio. aus WEF FoJ 2025 × ~3,5 Mrd. globale Erwerbstätige laut ILO 2024). `period_months_internal: 71` lebt nur im JSON, nicht in der UI.
+**Methodische Korrektur:** Die alten Bandbreiten **Substitution 8-12 % / Augmentation 14-18 %** waren als preliminary deklariert und konnten an keine Primärquelle gebunden werden. **Ersetzt durch ILO Refined Global Index 2025 (NEU)**:
 
-**Aufgabe vor Bewerbung des Moduls:**
+- `substitution.low/median/high_pct`: **2,4 / 3,3 / 4,7** (Gender-Spread aus ILO-Studie: Männer 2,4 %, Gesamt 3,3 %, Frauen 4,7 %) — `tick_per_second: 0.62`
+- `augmentation.low/median/high_pct`: **20 / 22 / 25** (ILO Gesamt-Exposure 25 % minus höchste Substitutions-Kategorie 3,3 %) — `tick_per_second: 4.12`
 
-1. WEF Future of Jobs Report 2025 (PDF): genaue Substitutions- vs. Augmentations-Anteile aus Survey-Daten extrahieren
-2. OECD Employment Outlook 2025: konkrete Exposure-Anteile pro Kategorie nachschlagen
-3. ILO WESO Trends 2025 + May 2025 Update: ILO-Substitutions-/Augmentations-Trennung in Prozent
-4. Bandbreiten + Tick-Raten in `data/labor-impact-rates.json` aktualisieren, `preliminary: true` entfernen
-5. **Plan-Ebene v0.4**: WEF-Survey-Werte (41/77/47 %) gegen Original-Report verifizieren — aktuell hardcoded in HTML/i18n, nicht in JSON. Bei Verifikation in `data/labor-impact-rates.json` als eigenen Block aufnehmen oder explizit als hardcoded Werte mit Verifikations-Datum vermerken.
+Tick-Raten = `total_workers / (period_months × 30.44 × 86400)`. Werte für `total_workers`: 115 Mio. (Substitution: 3,3 % × 3,5 Mrd.) / 770 Mio. (Augmentation: 22 % × 3,5 Mrd.). `period_months_internal: 71` lebt nur im JSON, nicht in der UI.
+
+**Counter-Anker bleibt WEF FoJ 2025 (1.1.2025)** — die ILO-Studie kam später (20.05.2025), aber WEF ist die Headline-Source für 22 % / Plan-Ebene und macht den Counter-Anker narrativ stimmig.
+
+**Code-Änderung:** `js/labor-impact.js` `formatPct()` von `maximumFractionDigits: 0` auf `1` gehoben, damit "3,3 %" korrekt angezeigt wird statt "3 %". `Intl.NumberFormat` zeigt automatisch keine Nachkommastelle bei ganzen Zahlen (20 → "20", 25 → "25").
 
 **Update-Workflow bei neuer Studien-Edition (z. B. WEF FoJ 2027):**
 

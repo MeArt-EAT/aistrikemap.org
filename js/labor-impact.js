@@ -61,7 +61,7 @@ const LaborImpact = (function () {
 
   function formatPct(n, lang) {
     var locale = (lang === 'en') ? 'en-US' : 'de-DE';
-    return new Intl.NumberFormat(locale, { maximumFractionDigits: 0 }).format(n) + ' %';
+    return new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(n) + ' %';
   }
 
   function formatRate(perSec, lang) {

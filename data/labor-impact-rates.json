@@ -1,9 +1,10 @@
 {
-  "version": "0.3",
-  "updated": "2026-05-01",
+  "version": "0.4",
+  "updated": "2026-05-25",
   "license": "CC-BY-NC-SA-4.0",
-  "preliminary": true,
-  "_note": "Item 98 v0.3 — Inkrementeller Counter mit fixem Anker (kein Date.now()) plus statische Bandbreiten. Tick-Raten sind vorbe-rechnet aus: total / (period_months * 30.44 * 86400). period_months ist die interne Berechnungs-Größe, lebt nicht in der UI. Lifecycle-Memo siehe pre-release-todos.md.",
+  "verified_against_primary_sources": true,
+  "verification_date": "2026-05-25",
+  "_note": "Item 98 v0.4 — Bandbreiten primär aus ILO 2025 Refined Global Index of Occupational Exposure (publiziert 2025-05-20). Substitution = höchste Exposure-Kategorie (3,3 % global, Gender-Spread 2,4 % männlich / 4,7 % weiblich). Augmentation = Gesamt-Exposure (25 %) abzüglich Substitution. Tick-Raten = total_workers / (period_months * 30.44 * 86400). period_months ist interne Berechnungs-Größe (WEF-Forecast-Periode 71 Monate), lebt nicht in der UI.",
 
   "anchor_date": "2025-01-01",
   "anchor_label_de": "Veröffentlichung WEF Future of Jobs 2025",
@@ -11,20 +12,20 @@
 
   "exposure": {
     "substitution": {
-      "low_pct": 8,
-      "median_pct": 10,
-      "high_pct": 12,
-      "tick_per_second": 1.87,
-      "primary_total_label_de": "≈ 350 Mio. Erwerbstätige laut WEF FoJ 2025",
-      "primary_total_label_en": "≈ 350M workers per WEF FoJ 2025"
+      "low_pct": 2.4,
+      "median_pct": 3.3,
+      "high_pct": 4.7,
+      "tick_per_second": 0.62,
+      "primary_total_label_de": "≈ 115 Mio. höchst-exponierte Erwerbstätige (ILO 2025)",
+      "primary_total_label_en": "≈ 115M workers in highest-exposure category (ILO 2025)"
     },
     "augmentation": {
-      "low_pct": 14,
-      "median_pct": 16,
-      "high_pct": 18,
-      "tick_per_second": 3.00,
-      "primary_total_label_de": "≈ 560 Mio. Erwerbstätige laut WEF FoJ 2025",
-      "primary_total_label_en": "≈ 560M workers per WEF FoJ 2025"
+      "low_pct": 20,
+      "median_pct": 22,
+      "high_pct": 25,
+      "tick_per_second": 4.12,
+      "primary_total_label_de": "≈ 770 Mio. exponierte Erwerbstätige (ILO 2025)",
+      "primary_total_label_en": "≈ 770M exposed workers (ILO 2025)"
     }
   },
 
@@ -32,36 +33,38 @@
     "global_workforce_billion": 3.5,
     "global_workforce_source": "ILO Labour Force Estimates 2024",
     "period_months_internal": 71,
-    "period_note": "WEF FoJ 2025 deckt Januar 2025 bis Dezember 2030 ab. Periode wird ausschließlich für die Tick-Rate-Berechnung gebraucht und ist nicht in der UI sichtbar — vermeidet Verfallsdatum-Effekt."
+    "period_note": "WEF FoJ 2025 deckt Januar 2025 bis Dezember 2030 ab. Periode wird ausschließlich für die Tick-Rate-Berechnung gebraucht und ist nicht in der UI sichtbar — vermeidet Verfallsdatum-Effekt.",
+    "substitution_derivation": "ILO 2025 Refined Global Index: 3,3 % der globalen Erwerbstätigen in höchster GenAI-Exposure-Kategorie (Frauen 4,7 %, Männer 2,4 %). 3,3 % × 3,5 Mrd. ≈ 115 Mio.",
+    "augmentation_derivation": "ILO 2025: 25 % der globalen Erwerbstätigen mit GenAI-Exposure (höchste Kategorie + alle anderen Exposure-Stufen). Augmentation-Anteil = 25 % − 3,3 % ≈ 22 % × 3,5 Mrd. ≈ 770 Mio."
   },
 
   "sources": [
     {
+      "name": "ILO Refined Global Index of Occupational Exposure to Generative AI (2025)",
+      "year": 2025,
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "headline_de": "25 % der globalen Beschäftigung in Berufen mit GenAI-Exposure; 3,3 % in der höchsten Exposure-Kategorie (Frauen 4,7 %, Männer 2,4 %); High-Income-Länder 34 % gesamt.",
+      "headline_en": "25 % of global employment in occupations exposed to GenAI; 3.3 % in the highest exposure category (women 4.7 %, men 2.4 %); high-income countries 34 % overall.",
+      "methodology_de": "Gemeinsame Studie ILO/NASK, publiziert 20. Mai 2025. Update der ILO-Studie 2023. Basis: 29.753 Aufgaben aus polnischer Berufsklassifikation, Survey von 1.640 Beschäftigten, 52.558 Datenpunkte zu 2.861 Aufgaben. ISCO-08 Berufsklassifikation kombiniert mit GenAI-Capability-Mapping.",
+      "methodology_en": "Joint ILO/NASK study, published 20 May 2025. Update of the ILO 2023 study. Based on 29,753 tasks from the Polish occupational classification, survey of 1,640 workers, 52,558 data points across 2,861 tasks. ISCO-08 occupational classification combined with GenAI capability mapping."
+    },
+    {
       "name": "WEF Future of Jobs Report 2025",
       "year": 2025,
       "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
-      "headline_de": "22 % der Jobs werden bis 2030 disruptiert (92 Mio. verdrängt, 170 Mio. neu, 78 Mio. netto).",
-      "headline_en": "22 % of jobs disrupted by 2030 (92M displaced, 170M created, 78M net).",
-      "methodology_de": "Survey von rund 1.000 Arbeitgebern, 14 Mio. Beschäftigte, 22 Industrien, 55 Volkswirtschaften — misst Erwartungen, nicht realisierte Effekte.",
-      "methodology_en": "Survey of around 1,000 employers, 14M workers, 22 industries, 55 economies — measures expectations, not realized effects."
+      "headline_de": "22 % der Jobs werden bis 2030 disruptiert (92 Mio. verdrängt, 170 Mio. neu, 78 Mio. netto). 41 % der Arbeitgeber planen Personal-Reduktion in KI-automatisierbaren Bereichen, 77 % planen Upskilling, 47 % planen interne Umverteilung.",
+      "headline_en": "22 % of jobs disrupted by 2030 (92M displaced, 170M created, 78M net). 41 % of employers plan workforce reduction in AI-automatable areas, 77 % plan upskilling, 47 % plan internal redeployment.",
+      "methodology_de": "Survey von über 1.000 Arbeitgebern, 14 Mio. Beschäftigte, 22 Industrien, 55 Volkswirtschaften — misst Erwartungen, nicht realisierte Effekte. Disruption-Quote von 22 % bezieht sich auf den Survey-Dataset von 1,2 Mrd. formalen Jobs.",
+      "methodology_en": "Survey of over 1,000 employers, 14M workers, 22 industries, 55 economies — measures expectations, not realized effects. The 22 % disruption rate refers to the survey dataset of 1.2B formal jobs."
     },
     {
-      "name": "OECD Employment Outlook 2025 + Lassébie/Quintini 2022",
+      "name": "OECD Employment Outlook 2025",
       "year": 2025,
       "url": "https://www.oecd.org/en/publications/oecd-employment-outlook-2025_194a947b-en.html",
-      "headline_de": "27 % der OECD-Beschäftigung im hohen Automatisierungs-Risiko; AI-Exposure für rund ein Viertel der Berufe.",
-      "headline_en": "27 % of OECD employment at high automation risk; AI exposure for around a quarter of occupations.",
+      "headline_de": "27 % der OECD-Beschäftigung im hohen Automatisierungs-Risiko; Capability-Task-Overlap-Methode (Lassébie/Quintini 2022) als Basis.",
+      "headline_en": "27 % of OECD employment at high automation risk; capability-task-overlap method (Lassébie/Quintini 2022) as basis.",
       "methodology_de": "Capability-Task-Overlap (Lassébie/Quintini 2022) plus Employment-Outlook-Update 2025 — deskriptiv, kein Ersatz-Verdikt; Verrechnen von Verdrängung und Schaffung bewusst vermieden.",
       "methodology_en": "Capability-task overlap (Lassébie/Quintini 2022) plus Employment Outlook 2025 update — descriptive, no substitution verdict; netting of displacement against creation deliberately avoided."
-    },
-    {
-      "name": "ILO World Employment and Social Outlook Trends 2025",
-      "year": 2025,
-      "url": "https://www.ilo.org/publications/flagship-reports/world-employment-and-social-outlook-trends-2025",
-      "headline_de": "Etwa jede vierte Person weltweit (rund 25 %) ist in einem Beruf mit GenAI-Exposition tätig; ILO trennt Substitutions- von Augmentations-Anteil.",
-      "headline_en": "About one in four workers globally (around 25 %) holds an occupation with GenAI exposure; ILO separates substitution from augmentation share.",
-      "methodology_de": "ISCO-Berufsklassifikation kombiniert mit GenAI-Capability-Mapping; betont strukturell die Augmentations-Mehrheit gegenüber reiner Substitution.",
-      "methodology_en": "ISCO occupational classification combined with GenAI capability mapping; structurally emphasizes augmentation majority over pure substitution."
     }
   ]
 }
