@@ -59,6 +59,13 @@ const I18n = (function () {
       var key = el.getAttribute('data-i18n-placeholder');
       el.setAttribute('placeholder', t(key));
     });
+    // data-i18n-content for <meta> tags (description, og:*, twitter:*).
+    // Updates the `content` attribute so Tab-Title and share previews track
+    // the active language.
+    document.querySelectorAll('[data-i18n-content]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-content');
+      el.setAttribute('content', t(key));
+    });
   }
 
   function getLang() {

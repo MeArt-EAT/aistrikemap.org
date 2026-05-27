@@ -19,7 +19,8 @@
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
-    }
+    },
+    "name_de": "Boston, USA"
   },
   "asm:incidentType": [
     "discrimination",
@@ -38,7 +39,8 @@
       "asm:systems": [
         "Optum-Risikobewertungsalgorithmus",
         "Population Health Management Tool"
-      ]
+      ],
+      "name_de": "Optum (UnitedHealth Group)"
     },
     {
       "name": "US-amerikanische Krankenhäuser und Krankenversicherer",
@@ -46,7 +48,8 @@
       "asm:systems": [
         "Algorithmusbasierte Ressourcenzuteilung",
         "Electronic Health Record Systeme"
-      ]
+      ],
+      "name_de": "US-amerikanische Krankenhäuser und Krankenversicherer"
     }
   ],
   "asm:severity": 4,
@@ -57,28 +60,36 @@
       "phase": "infrastructure",
       "title": "Optum-Algorithmus wird in US-Krankenhäusern eingesetzt",
       "description": "Der von Optum entwickelte Algorithmus zur Identifikation von Hochrisikapatienten wird von Hunderten von US-Krankenhäusern und Versicherern eingesetzt. Das System priorisiert Patienten für intensive Betreuungsprogramme auf Basis historischer Gesundheitsausgaben. Das Design-Versaehen — Kosten als Proxy für Bedarf — wird nicht öffentlich kommuniziert oder intern hinterfragt.",
-      "sources": []
+      "sources": [],
+      "title_de": "Optum-Algorithmus wird in US-Krankenhäusern eingesetzt",
+      "description_de": "Der von Optum entwickelte Algorithmus zur Identifikation von Hochrisikapatienten wird von Hunderten von US-Krankenhäusern und Versicherern eingesetzt. Das System priorisiert Patienten für intensive Betreuungsprogramme auf Basis historischer Gesundheitsausgaben. Das Design-Versaehen — Kosten als Proxy für Bedarf — wird nicht öffentlich kommuniziert oder intern hinterfragt."
     },
     {
       "date": "2019-10",
       "phase": "doctrine",
       "title": "Science-Studie von Obermeyer et al. deckt systemischen Bias auf",
       "description": "Forscher um Ziad Obermeyer veröffentlichen in Science eine bahnbrechende Analyse, die zeigt: Bei gleichem tatsächlichem Gesundheitszustand werden schwarze Patienten vom Algorithmus als weniger krank eingestuft als weiße Patienten. Der Grund ist, dass das System Kosten als Proxy verwendet, nicht tatsächlichen Bedarf. Auf denselben Risikowert kommen schwarze Patienten mit im Durchschnitt weitaus mehr chronischen Erkrankungen als weiße.",
-      "sources": []
+      "sources": [],
+      "title_de": "Science-Studie von Obermeyer et al. deckt systemischen Bias auf",
+      "description_de": "Forscher um Ziad Obermeyer veröffentlichen in Science eine bahnbrechende Analyse, die zeigt: Bei gleichem tatsächlichem Gesundheitszustand werden schwarze Patienten vom Algorithmus als weniger krank eingestuft als weiße Patienten. Der Grund ist, dass das System Kosten als Proxy verwendet, nicht tatsächlichen Bedarf. Auf denselben Risikowert kommen schwarze Patienten mit im Durchschnitt weitaus mehr chronischen Erkrankungen als weiße."
     },
     {
       "date": "2019-10",
       "phase": "event",
       "title": "Schätzung: 200 Millionen Menschen jährlich von Bias betroffen",
       "description": "Die Forscher schätzen, dass der Algorithmus oder aechnliche Systeme jährlich Entscheidungen für bis zu 200 Millionen US-Patienten beeinflusst. Optum und Krankenhaus-Partner bestreiten, ethnische Daten im Modell direkt verwendet zu haben, erkennen aber an, dass der Proxy 'Kosten' rassistisch verzerrt wirkt. STAT News und ProPublica berichten grossflaechig über den Fall.",
-      "sources": []
+      "sources": [],
+      "title_de": "Schätzung: 200 Millionen Menschen jährlich von Bias betroffen",
+      "description_de": "Die Forscher schätzen, dass der Algorithmus oder aechnliche Systeme jährlich Entscheidungen für bis zu 200 Millionen US-Patienten beeinflusst. Optum und Krankenhaus-Partner bestreiten, ethnische Daten im Modell direkt verwendet zu haben, erkennen aber an, dass der Proxy 'Kosten' rassistisch verzerrt wirkt. STAT News und ProPublica berichten grossflaechig über den Fall."
     },
     {
       "date": "2020-06",
       "phase": "consequences",
       "title": "Branchenreformen und anhaltende strukturelle Probleme",
       "description": "Optum kündigt Änderungen am Algorithmus an. Mehrere Krankenhäuser verpflichten sich zu Audits ihrer KI-Systeme. Das US-Gesundheitsministerium und der Kongress starten Anhörungen zu KI-Bias im Gesundheitswesen. Kritiker betonen, dass struktureller Rassismus in Gesundheitsdaten durch algorithmische Korrekturen allein nicht beseitigt werden kann und umfassende Reformen benötigt werden.",
-      "sources": []
+      "sources": [],
+      "title_de": "Branchenreformen und anhaltende strukturelle Probleme",
+      "description_de": "Optum kündigt Änderungen am Algorithmus an. Mehrere Krankenhäuser verpflichten sich zu Audits ihrer KI-Systeme. Das US-Gesundheitsministerium und der Kongress starten Anhörungen zu KI-Bias im Gesundheitswesen. Kritiker betonen, dass struktureller Rassismus in Gesundheitsdaten durch algorithmische Korrekturen allein nicht beseitigt werden kann und umfassende Reformen benötigt werden."
     }
   ],
   "asm:sources": [
@@ -88,7 +99,8 @@
       "publisher": "Science (AAAS)",
       "date": "2019-10-25",
       "type": "academic-paper",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "Dissecting racial bias in an algorithm used to manage the health of populations"
     },
     {
       "url": "https://www.washingtonpost.com/health/2019/10/24/racial-bias-medical-algorithm-favors-white-patients-over-sicker-black-patients/",
@@ -96,7 +108,8 @@
       "publisher": "Washington Post",
       "date": "2019-10-24",
       "type": "news-article",
-      "asm:linkHealth": "paywall"
+      "asm:linkHealth": "paywall",
+      "title_de": "Racial bias in a medical algorithm favors white patients over sicker black patients"
     },
     {
       "url": "https://www.nature.com/articles/d41586-019-03228-6",
@@ -104,7 +117,8 @@
       "publisher": "Nature News",
       "date": "2019-10-24",
       "type": "news-article",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "Millions of black people affected by racial bias in health-care algorithms"
     },
     {
       "url": "https://news.berkeley.edu/2019/10/24/widely-used-health-care-prediction-algorithm-biased-against-black-people/",
@@ -112,7 +126,8 @@
       "publisher": "UC Berkeley News",
       "date": "2019-10-24",
       "type": "news-article",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "Widely used health care prediction algorithm biased against black people"
     }
   ],
   "asm:metadata": {
@@ -121,5 +136,13 @@
     "author": "AIStrikeMap",
     "aiGenerated": false,
     "humanVerified": true
-  }
+  },
+  "name_de": "USA: Rassistischer Bias in KI-Algorithmus der Gesundheitsversorgung — 200 Millionen Betroffene",
+  "description_de": "Ein von Optum entwickelter und in großen US-amerikanischen Krankenhäusern weitverbreiteter KI-Algorithmus zur Zuteilung von Gesundheitsressourcen diskriminierte systematisch schwarze Patienten. Das System verwendete die Gesundheitskosten der Vergangenheit als Proxy für den künftigen Gesundheitsbedarf — ein Ansatz, der strukturellen Rassismus reproduziert, da schwarze Patienten historisch weniger Gesundheitsausgaben aufweisen, nicht weil sie gesünder sind, sondern weil ihnen weniger Zugang zur Gesundheitsversorgung gewährt wurde. Eine Studie in Science (2019) schätzte, dass bis zu 200 Millionen Menschen jährlich betroffen sein konnten.",
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheitsversorgung",
+    "Recht auf Gleichbehandlung",
+    "Recht auf Leben",
+    "Schutz vor rassistischer Diskriminierung"
+  ]
 }

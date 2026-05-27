@@ -6,10 +6,23 @@
 const StrikeTicker = (function () {
   var TICKER_COUNT = 20; // show latest N incidents
   var SCROLL_SPEED = 60; // pixels per second
+  var allIncidents = null;
 
   function init(incidents) {
+    allIncidents = incidents;
+    build();
+    document.addEventListener('i18n:changed', build);
+  }
+
+  function build() {
+    if (!allIncidents) return;
+
+    // Remove any existing ticker so language switches replace it cleanly.
+    var existing = document.querySelector('.strike-ticker');
+    if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
+
     // Sort by date, newest first
-    var sorted = incidents.slice().sort(function (a, b) {
+    var sorted = allIncidents.slice().sort(function (a, b) {
       var da = a.startDate || '0';
       var db = b.startDate || '0';
       return db.localeCompare(da);
@@ -69,7 +82,7 @@ const StrikeTicker = (function () {
     var colors = StrikeMap.SEVERITY_COLORS;
     var color = colors[severity] || colors[1];
     var date = incident.startDate || '';
-    var name = incident.name || '';
+    var name = I18n.localized(incident, 'name') || incident.name || '';
 
     var item = document.createElement('span');
     item.className = 'strike-ticker__item';

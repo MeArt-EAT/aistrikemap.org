@@ -19,7 +19,8 @@
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
-    }
+    },
+    "name_de": "San Francisco, USA"
   },
   "asm:incidentType": [
     "data-misuse"
@@ -37,18 +38,21 @@
       "asm:systems": [
         "Stable Diffusion",
         "LAION-5B Trainingsdatensatz"
-      ]
+      ],
+      "name_de": "Stability AI"
     },
     {
       "name": "Midjourney",
       "type": "company",
       "asm:systems": [
         "Midjourney Bildgenerator"
-      ]
+      ],
+      "name_de": "Midjourney"
     },
     {
       "name": "Getty Images",
-      "type": "company"
+      "type": "company",
+      "name_de": "Getty Images"
     }
   ],
   "asm:severity": 3,
@@ -61,14 +65,18 @@
       "description": "Stability AI veröffentlicht Stable Diffusion, trainiert auf dem LAION-5B-Datensatz mit 5,8 Milliarden Bild-Text-Paaren, die ohne Zustimmung der Urheber aus dem Internet gescrapt wurden. Darunter befinden sich Millionen lizenzierter Fotos von Getty Images sowie Werke tausender professioneller Kunstschaffender. Midjourney nutzt vergleichbare Trainingsdaten.",
       "sources": [
         "https://laion.ai/blog/laion-5b/"
-      ]
+      ],
+      "title_de": "Stable Diffusion wird mit LAION-Daten trainiert",
+      "description_de": "Stability AI veröffentlicht Stable Diffusion, trainiert auf dem LAION-5B-Datensatz mit 5,8 Milliarden Bild-Text-Paaren, die ohne Zustimmung der Urheber aus dem Internet gescrapt wurden. Darunter befinden sich Millionen lizenzierter Fotos von Getty Images sowie Werke tausender professioneller Kunstschaffender. Midjourney nutzt vergleichbare Trainingsdaten."
     },
     {
       "date": "2023-01",
       "phase": "event",
       "title": "Sammelklage von Kunstschaffenden eingereicht",
       "description": "Die Illustratorinnen und Illustratoren Sarah Andersen, Kelly McKernan und Karla Ortiz reichen in Kalifornien eine Sammelklage gegen Stability AI, Midjourney und DeviantArt ein. Sie werfen den Unternehmen vor, ihre Werke ohne Erlaubnis und ohne Vergütung als Trainingsdaten verwendet zu haben. Weitere Kunstschaffende schliessen sich der Klage an.",
-      "sources": []
+      "sources": [],
+      "title_de": "Sammelklage von Kunstschaffenden eingereicht",
+      "description_de": "Die Illustratorinnen und Illustratoren Sarah Andersen, Kelly McKernan und Karla Ortiz reichen in Kalifornien eine Sammelklage gegen Stability AI, Midjourney und DeviantArt ein. Sie werfen den Unternehmen vor, ihre Werke ohne Erlaubnis und ohne Vergütung als Trainingsdaten verwendet zu haben. Weitere Kunstschaffende schliessen sich der Klage an."
     },
     {
       "date": "2023-02",
@@ -77,7 +85,9 @@
       "description": "Getty Images reicht Klage in den USA und Grossbritannien ein und behauptet, Stability AI habe mehr als 12 Millionen lizenzierte Fotos ohne Genehmigung kopiert. Auf einigen generierten Bildern seien sogar noch sichtbare Reste des Getty-Wasserzeichens zu erkennen — ein deutliches Indiz für das direkte Kopieren der Daten.",
       "sources": [
         "https://www.theverge.com/2023/2/6/23587393/ai-art-copyright-lawsuit-getty-images-stable-diffusion"
-      ]
+      ],
+      "title_de": "Getty Images verklagt Stability AI in den USA und Grossbritannien",
+      "description_de": "Getty Images reicht Klage in den USA und Grossbritannien ein und behauptet, Stability AI habe mehr als 12 Millionen lizenzierte Fotos ohne Genehmigung kopiert. Auf einigen generierten Bildern seien sogar noch sichtbare Reste des Getty-Wasserzeichens zu erkennen — ein deutliches Indiz für das direkte Kopieren der Daten."
     },
     {
       "date": "2024",
@@ -86,7 +96,9 @@
       "description": "Die Klagen laufen weiter und haben branchenweite Diskussionen über faire Trainingsdaten ausgelöst. Einige Unternehmen beginnen, Opt-out-Mechanismen einzuführen oder Lizenzvereinbarungen mit Rechteinhabern zu schliessen. Gesetzgeber in USA und EU prüfen neue Regelungen zum Urheberrechtsschutz bei KI-Training. Die Klagen gelten als wegweisend für die gesamte generative KI-Industrie.",
       "sources": [
         "https://www.eff.org/issues/ai-and-copyright"
-      ]
+      ],
+      "title_de": "Laufende Verfahren setzen KI-Branche unter Druck",
+      "description_de": "Die Klagen laufen weiter und haben branchenweite Diskussionen über faire Trainingsdaten ausgelöst. Einige Unternehmen beginnen, Opt-out-Mechanismen einzuführen oder Lizenzvereinbarungen mit Rechteinhabern zu schliessen. Gesetzgeber in USA und EU prüfen neue Regelungen zum Urheberrechtsschutz bei KI-Training. Die Klagen gelten als wegweisend für die gesamte generative KI-Industrie."
     }
   ],
   "asm:sources": [
@@ -96,7 +108,8 @@
       "publisher": "The Verge",
       "date": "2023-02-06",
       "type": "news-article",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "Getty Images sues Stability AI for scraping its photos to train AI art"
     },
     {
       "url": "https://www.eff.org/issues/ai-and-copyright",
@@ -104,7 +117,8 @@
       "publisher": "Electronic Frontier Foundation",
       "date": "2023",
       "type": "ngo-report",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "AI and Copyright"
     },
     {
       "url": "https://laion.ai/blog/laion-5b/",
@@ -112,7 +126,8 @@
       "publisher": "LAION",
       "date": "2022-03-31",
       "type": "research-paper",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "LAION-5B: A new era of open large-scale multi-modal datasets"
     }
   ],
   "asm:metadata": {
@@ -121,5 +136,13 @@
     "author": "AIStrikeMap",
     "aiGenerated": false,
     "humanVerified": true
-  }
+  },
+  "name_de": "USA: Stability AI und Midjourney — Klagen wegen Urheberrechtsverletzung durch KI-Training",
+  "description_de": "Stability AI (Entwickler von Stable Diffusion) und Midjourney sehen sich massiven Klagen von Kunstschaffenden und Getty Images gegenüber. Die Systeme wurden ohne Einwilligung auf Milliarden urheberrechtlich geschützter Werke trainiert. Getty Images verklagte Stability AI wegen der unerlaubten Nutzung von über 12 Millionen lizenzierten Fotografien. Eine Sammelklage von Kunstschaffenden wirft den Unternehmen systematischen Diebstahl geistigen Eigentums vor. Die Fälle stellen grundlegende Fragen zur Legitimität von KI-Trainingsdaten und zum Schutz kreativer Arbeit.",
+  "asm:affectedRights_de": [
+    "Urheberrecht",
+    "Recht auf wirtschaftliche Teilhabe",
+    "Eigentumsrecht",
+    "Recht auf informationelle Selbstbestimmung"
+  ]
 }

@@ -19,7 +19,9 @@
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
-    }
+    },
+    "name_de": "Washington D.C., USA",
+    "name_en": "Washington, D.C., USA"
   },
   "asm:incidentType": [
     "surveillance",
@@ -40,7 +42,9 @@
       "asm:systems": [
         "Standortdaten-Aggregation",
         "Points of Interest Datenbank"
-      ]
+      ],
+      "name_de": "SafeGraph",
+      "name_en": "SafeGraph"
     },
     {
       "name": "Datenhändler (anonymisiert, u.a. Near Intelligence, Babel Street)",
@@ -48,11 +52,15 @@
       "asm:systems": [
         "Mobilgeräte-Tracking",
         "Bewegungsprofilierung"
-      ]
+      ],
+      "name_de": "Datenhändler (anonymisiert, u.a. Near Intelligence, Babel Street)",
+      "name_en": "Data brokers (anonymized, including Near Intelligence, Babel Street)"
     },
     {
       "name": "Staatliche Regierungen mit Abtreibungsverboten (u.a. Texas, Missouri, Idaho)",
-      "type": "government"
+      "type": "government",
+      "name_de": "Staatliche Regierungen mit Abtreibungsverboten (u.a. Texas, Missouri, Idaho)",
+      "name_en": "State governments with abortion bans (including Texas, Missouri, Idaho)"
     }
   ],
   "asm:severity": 4,
@@ -65,7 +73,11 @@
       "description": "Der US Supreme Court hebt in Dobbs v. Jackson Women's Health Organization das bundesweite Recht auf Abtreibung auf. Dutzende Bundesstaaten aktivieren sofort Abtreibungsverbote. Gleichzeitig existiert ein unregulierterer Markt für Mobilgeräte-Standortdaten, auf dem Datenhändler wie SafeGraph Bewegungsprofile von Millionen Amerikanern verkaufen — ohne deren Wissen oder ausdrückliche Zustimmung.",
       "sources": [
         "https://www.vice.com/en/article/m7vzjb/location-data-abortion-clinics-safegraph-planned-parenthood"
-      ]
+      ],
+      "title_de": "Dobbs-Urteil schafft rechtliches Risiko für Frauen",
+      "description_de": "Der US Supreme Court hebt in Dobbs v. Jackson Women's Health Organization das bundesweite Recht auf Abtreibung auf. Dutzende Bundesstaaten aktivieren sofort Abtreibungsverbote. Gleichzeitig existiert ein unregulierterer Markt für Mobilgeräte-Standortdaten, auf dem Datenhändler wie SafeGraph Bewegungsprofile von Millionen Amerikanern verkaufen — ohne deren Wissen oder ausdrückliche Zustimmung.",
+      "title_en": "Dobbs ruling creates legal risk for women",
+      "description_en": "The US Supreme Court overturns the federal right to abortion in Dobbs v. Jackson Women's Health Organization. Dozens of states immediately activate abortion bans. At the same time, a largely unregulated market for mobile device location data exists, in which data brokers such as SafeGraph sell movement profiles of millions of Americans — without their knowledge or explicit consent."
     },
     {
       "date": "2022-07",
@@ -74,21 +86,33 @@
       "description": "Vice Motherboard enthüllt, dass SafeGraph Standortdaten verkauft, die Besuche bei Abtreibungskliniken wie Planned Parenthood aufzeichnen. Die Daten zeigen Wohnorte der Besucherinnen, Verweildauer und anschliessende Bewegungen. Ein vollständiger Datensatz für eine Woche kostet weniger als 160 US-Dollar. SafeGraph entfernt daraufhin Abtreibungsklinik-Daten aus seinem Angebot — andere Händler jedoch nicht.",
       "sources": [
         "https://www.vice.com/en/article/m7vzjb/location-data-abortion-clinics-safegraph-planned-parenthood"
-      ]
+      ],
+      "title_de": "Investigativrecherchen enthüllen Verkauf von Klinikebesuchs-Daten",
+      "description_de": "Vice Motherboard enthüllt, dass SafeGraph Standortdaten verkauft, die Besuche bei Abtreibungskliniken wie Planned Parenthood aufzeichnen. Die Daten zeigen Wohnorte der Besucherinnen, Verweildauer und anschliessende Bewegungen. Ein vollständiger Datensatz für eine Woche kostet weniger als 160 US-Dollar. SafeGraph entfernt daraufhin Abtreibungsklinik-Daten aus seinem Angebot — andere Händler jedoch nicht.",
+      "title_en": "Investigative reporting exposes sale of clinic-visit data",
+      "description_en": "Vice Motherboard reveals that SafeGraph sells location data documenting visits to abortion clinics such as Planned Parenthood. The data shows visitors' home locations, length of stay, and subsequent movements. A complete dataset for one week costs less than 160 US dollars. SafeGraph subsequently removes abortion-clinic data from its offering — other brokers, however, do not."
     },
     {
       "date": "2022-08",
       "phase": "event",
       "title": "Weitere Datenhändler und Strafverfolgungszugriffe dokumentiert",
       "description": "Recherchen zeigen, dass mehrere weitere Datenhändler weiterhin Standortprofile von Besuchen bei Abtreibungseinrichtungen verkaufen. Der erste bekannte Fall einer strafrechtlichen Verfolgung auf Basis von Handydaten tritt ein: In Nebraska werden Chat-Protokolle und Standortdaten genutzt, um eine Frau wegen einer Abtreibung anzuklagen. KI-Analysetools ermöglichen die automatisierte Identifikation von 'Verdächtigen' anhand von Bewegungsmustern.",
-      "sources": []
+      "sources": [],
+      "title_de": "Weitere Datenhändler und Strafverfolgungszugriffe dokumentiert",
+      "description_de": "Recherchen zeigen, dass mehrere weitere Datenhändler weiterhin Standortprofile von Besuchen bei Abtreibungseinrichtungen verkaufen. Der erste bekannte Fall einer strafrechtlichen Verfolgung auf Basis von Handydaten tritt ein: In Nebraska werden Chat-Protokolle und Standortdaten genutzt, um eine Frau wegen einer Abtreibung anzuklagen. KI-Analysetools ermöglichen die automatisierte Identifikation von 'Verdächtigen' anhand von Bewegungsmustern.",
+      "title_en": "Additional data brokers and law-enforcement access documented",
+      "description_en": "Reporting shows that several additional data brokers continue to sell location profiles of visits to abortion facilities. The first known case of criminal prosecution based on mobile data occurs: in Nebraska, chat logs and location data are used to charge a woman over an abortion. AI analysis tools enable the automated identification of 'suspects' based on movement patterns."
     },
     {
       "date": "2023-01",
       "phase": "consequences",
       "title": "FTC-Maßnahmen und gesetzliche Reaktionen bleiben unzureichend",
       "description": "Die FTC warnt in einem Bericht vor den Risiken der Datenwirtschaft für reproduktive Rechte und leitet Untersuchungen ein. Gegen einzelne Datenhändler werden Bussgelder verhängt. Bundesweite Datenschutzgesetze bleiben jedoch aus. Mehrere Bundesstaaten erlassen eigene Schutzgesetze für Abtreibungsdaten. Gleichzeitig fordern andere Bundesstaaten Klinikulisten und Patientendaten von Gesundheitsdienstleistern an.",
-      "sources": []
+      "sources": [],
+      "title_de": "FTC-Maßnahmen und gesetzliche Reaktionen bleiben unzureichend",
+      "description_de": "Die FTC warnt in einem Bericht vor den Risiken der Datenwirtschaft für reproduktive Rechte und leitet Untersuchungen ein. Gegen einzelne Datenhändler werden Bussgelder verhängt. Bundesweite Datenschutzgesetze bleiben jedoch aus. Mehrere Bundesstaaten erlassen eigene Schutzgesetze für Abtreibungsdaten. Gleichzeitig fordern andere Bundesstaaten Klinikulisten und Patientendaten von Gesundheitsdienstleistern an.",
+      "title_en": "FTC measures and legislative responses remain insufficient",
+      "description_en": "The FTC warns in a report about the risks of the data economy for reproductive rights and opens investigations. Fines are imposed on individual data brokers. A federal privacy law, however, fails to materialize. Several states enact their own protections for abortion-related data. At the same time, other states request clinic lists and patient data from healthcare providers."
     }
   ],
   "asm:sources": [
@@ -98,7 +122,9 @@
       "publisher": "Vice Motherboard",
       "date": "2022-07-02",
       "type": "news-article",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "Location Data Firm Selling Visits to Abortion Clinics",
+      "title_en": "Location Data Firm Selling Visits to Abortion Clinics"
     }
   ],
   "asm:metadata": {
@@ -107,5 +133,23 @@
     "author": "AIStrikeMap",
     "aiGenerated": true,
     "humanVerified": false
-  }
+  },
+  "name_de": "USA: Datenhändler verkaufen Standortdaten von Abtreibungskliniken nach Roe v. Wade",
+  "name_en": "USA: Data brokers sell location data from abortion clinics after Roe v. Wade",
+  "description_de": "Nach der Aufhebung von Roe v. Wade durch das US-Urteil Dobbs v. Jackson (2022) begannen Datenhändler, Standortdaten aus Besuchen bei Abtreibungskliniken zu verkaufen. KI-gestützte Analysetools wurden eingesetzt, um Frauen zu identifizieren, die reproduktive Gesundheitsversorgung suchten. Staatliche Behörden in Bundesstaaten mit Abtreibungsverboten nutzten diese Daten oder strebten dies an. Investigativrecherchen zeigten, dass Millionen von Aufzeichnungen für wenige hundert Dollar käuflich waren.",
+  "description_en": "After the US Supreme Court ruling Dobbs v. Jackson (2022) overturned Roe v. Wade, data brokers began selling location data from visits to abortion clinics. AI-powered analysis tools were used to identify women seeking reproductive healthcare. State authorities in states with abortion bans used this data or sought to do so. Investigative reporting showed that millions of records were available for a few hundred dollars.",
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Recht auf Gesundheitsversorgung",
+    "Bewegungsfreiheit",
+    "Recht auf körperliche Selbstbestimmung",
+    "Schutz vor staatlicher Willkür"
+  ],
+  "asm:affectedRights_en": [
+    "right to privacy",
+    "right to healthcare",
+    "freedom of movement",
+    "right to bodily autonomy",
+    "protection from arbitrary state action"
+  ]
 }

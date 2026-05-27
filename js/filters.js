@@ -160,14 +160,18 @@ const Filters = (function () {
       }
       if (searchQuery) {
         var hay = [
-          inc.name || '',
-          inc.description || '',
-          (inc.location && inc.location.name) || ''
+          inc.name || '', inc.name_de || '', inc.name_en || '',
+          inc.description || '', inc.description_de || '', inc.description_en || '',
+          (inc.location && (inc.location.name || inc.location.name_de || inc.location.name_en)) || ''
         ];
         var actors = inc['asm:actors'] || [];
-        actors.forEach(function (a) { hay.push(a.name || ''); });
-        var rights = inc['asm:affectedRights'] || [];
+        actors.forEach(function (a) {
+          hay.push(a.name || '', a.name_de || '', a.name_en || '');
+        });
+        var rights = inc['asm:affectedRights_de'] || inc['asm:affectedRights'] || [];
         rights.forEach(function (r) { hay.push(r); });
+        var rightsEn = inc['asm:affectedRights_en'] || [];
+        rightsEn.forEach(function (r) { hay.push(r); });
         if (hay.join(' ').toLowerCase().indexOf(searchQuery) === -1) return false;
       }
       return true;

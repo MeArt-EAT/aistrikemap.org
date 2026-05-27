@@ -19,7 +19,8 @@
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
-    }
+    },
+    "name_de": "Broward County, Florida, USA"
   },
   "asm:incidentType": [
     "predictive-policing",
@@ -37,15 +38,18 @@
       "type": "company",
       "asm:systems": [
         "COMPAS"
-      ]
+      ],
+      "name_de": "Northpointe / Equivant"
     },
     {
       "name": "Broward County / Justiz Florida",
-      "type": "government"
+      "type": "government",
+      "name_de": "Broward County / Justiz Florida"
     },
     {
       "name": "ProPublica",
-      "type": "organization"
+      "type": "organization",
+      "name_de": "ProPublica"
     }
   ],
   "asm:severity": 4,
@@ -58,7 +62,9 @@
       "description": "COMPAS wird in Broward County, Florida, als Standardwerkzeug für Risikoeinschätzungen bei Kautions- und Strafentscheidungen eingeführt. Der proprietäre Algorithmus bewertet Angeklagte anhand von 137 Faktoren auf einer Skala von 1–10.",
       "sources": [
         "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
-      ]
+      ],
+      "title_de": "COMPAS im Einsatz in Broward County",
+      "description_de": "COMPAS wird in Broward County, Florida, als Standardwerkzeug für Risikoeinschätzungen bei Kautions- und Strafentscheidungen eingeführt. Der proprietäre Algorithmus bewertet Angeklagte anhand von 137 Faktoren auf einer Skala von 1–10."
     },
     {
       "date": "2016-05-23",
@@ -67,14 +73,18 @@
       "description": "ProPublica veröffentlicht 'Machine Bias': Eine Analyse von 7.000 Fällen in Broward County zeigt, dass COMPAS Schwarze Angeklagte fast doppelt so häufig fälschlich als hohes Risiko einstuft (45% vs. 24%). Weiße Angeklagte werden dagegen häufiger fälschlich als niedriges Risiko bewertet.",
       "sources": [
         "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
-      ]
+      ],
+      "title_de": "ProPublica enthüllt rassistischen Bias",
+      "description_de": "ProPublica veröffentlicht 'Machine Bias': Eine Analyse von 7.000 Fällen in Broward County zeigt, dass COMPAS Schwarze Angeklagte fast doppelt so häufig fälschlich als hohes Risiko einstuft (45% vs. 24%). Weiße Angeklagte werden dagegen häufiger fälschlich als niedriges Risiko bewertet."
     },
     {
       "date": "2016-07",
       "phase": "doctrine",
       "title": "Akademische Debatte über Fairness-Definitionen",
       "description": "Northpointe widerspricht ProPublica und argumentiert, der Algorithmus sei kalibriert (gleiche Scores bedeuten gleiches Risiko über Gruppen). Es entbrennt eine fundamentale Debatte über algorithmische Fairness: mathematisch lässt sich beweisen, dass verschiedene Fairness-Kriterien nicht gleichzeitig erfüllt werden können.",
-      "sources": []
+      "sources": [],
+      "title_de": "Akademische Debatte über Fairness-Definitionen",
+      "description_de": "Northpointe widerspricht ProPublica und argumentiert, der Algorithmus sei kalibriert (gleiche Scores bedeuten gleiches Risiko über Gruppen). Es entbrennt eine fundamentale Debatte über algorithmische Fairness: mathematisch lässt sich beweisen, dass verschiedene Fairness-Kriterien nicht gleichzeitig erfüllt werden können."
     },
     {
       "date": "2016-07-13",
@@ -83,7 +93,9 @@
       "description": "Der Wisconsin Supreme Court entscheidet in State v. Loomis, dass COMPAS bei Strafentscheidungen verwendet werden darf, aber nicht als alleinige Grundlage. Das Gericht verlangt Warnhinweise über die Grenzen des Algorithmus. Der US Supreme Court lehnt eine Überprüfung ab.",
       "sources": [
         "https://harvardlawreview.org/2017/03/state-v-loomis/"
-      ]
+      ],
+      "title_de": "Wisconsin Supreme Court: State v. Loomis",
+      "description_de": "Der Wisconsin Supreme Court entscheidet in State v. Loomis, dass COMPAS bei Strafentscheidungen verwendet werden darf, aber nicht als alleinige Grundlage. Das Gericht verlangt Warnhinweise über die Grenzen des Algorithmus. Der US Supreme Court lehnt eine Überprüfung ab."
     }
   ],
   "asm:sources": [
@@ -93,7 +105,8 @@
       "publisher": "ProPublica",
       "date": "2016-05-23",
       "type": "news-article",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "Machine Bias: There's Software Used Across the Country to Predict Future Criminals. And It's Biased Against Blacks."
     },
     {
       "url": "https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm",
@@ -101,7 +114,8 @@
       "publisher": "ProPublica",
       "date": "2016-05-23",
       "type": "research-paper",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "How We Analyzed the COMPAS Recidivism Algorithm"
     },
     {
       "url": "https://harvardlawreview.org/2017/03/state-v-loomis/",
@@ -109,7 +123,8 @@
       "publisher": "Harvard Law Review",
       "date": "2017-03",
       "type": "legal-document",
-      "asm:linkHealth": "ok"
+      "asm:linkHealth": "ok",
+      "title_de": "State v. Loomis – Criminal Law – Sentencing Guidelines"
     }
   ],
   "asm:metadata": {
@@ -118,5 +133,13 @@
     "author": "AIStrikeMap",
     "aiGenerated": false,
     "humanVerified": true
-  }
+  },
+  "name_de": "COMPAS: Rassistische Rückfallprognose im US-Justizsystem",
+  "description_de": "Der COMPAS-Algorithmus (Correctional Offender Management Profiling for Alternative Sanctions) von Northpointe (heute Equivant) wird in US-Gerichten zur Rückfallprognose eingesetzt. Eine ProPublica-Untersuchung 2016 zeigt, dass der Algorithmus Schwarze Angeklagte systematisch als höheres Risiko einstuft als weiße Angeklagte mit vergleichbarem Profil.",
+  "asm:affectedRights_de": [
+    "Recht auf faires Verfahren",
+    "Gleichheit vor dem Gesetz",
+    "Schutz vor Diskriminierung",
+    "Recht auf Freiheit"
+  ]
 }

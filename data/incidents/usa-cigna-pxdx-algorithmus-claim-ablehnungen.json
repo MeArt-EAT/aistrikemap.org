@@ -1,0 +1,206 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-cigna-pxdx-algorithmus-claim-ablehnungen",
+  "name": "USA: Cigna PXDX-Algorithmus — 300.000 Claims in zwei Monaten in je 1,2 Sekunden abgelehnt",
+  "name_de": "USA: Cigna PXDX-Algorithmus — 300.000 Claims in zwei Monaten in je 1,2 Sekunden abgelehnt",
+  "name_en": "USA: Cigna PXDX algorithm — 300,000 claims denied in two months at 1.2 seconds each",
+  "description": "Im Juli 2023 reichen Versicherte vor dem U.S. District Court for the Eastern District of California Klage gegen den Krankenversicherer Cigna ein. Vorwurf: Cigna habe einen Algorithmus namens PXDX (Procedure-to-Diagnosis) eingesetzt, um in einem Zwei-Monats-Zeitraum rund 300.000 zuvor genehmigte Claims automatisch abzulehnen — mit einer durchschnittlichen Bearbeitungszeit von 1,2 Sekunden pro Ablehnung. Die Algorithmus-Logik prüfte nur, ob der Behandlungs-Code zum Diagnose-Code passte, ohne die zugehörigen Patienten-Akten zu lesen; das umgehe die nach kalifornischem Recht vorgeschriebene Einzelfall-Prüfung durch einen Arzt. Eine ProPublica-/STAT-Investigation enthüllt PXDX im März 2023. Die Klage wird im Lauf des Verfahrens mehrfach verändert; eine Third Amended Class Action Complaint vom 14. Juni 2024 stützt sich auf ERISA-Verstöße und kalifornisches Wettbewerbsrecht. U.S. District Judge Dale Drozd weist Cignas Antrag auf Klageabweisung in wesentlichen Teilen zurück und lässt mindestens einen Teil der Klagen weiterlaufen. Der Fall wird zum Präzedenz für die Frage, ob KI-gestützte Massen-Ablehnungen in Krankenversicherungen vereinbar sind mit den gesetzlich verankerten Sorgfaltspflichten von Ärzten.",
+  "description_de": "Im Juli 2023 reichen Versicherte vor dem U.S. District Court for the Eastern District of California Klage gegen den Krankenversicherer Cigna ein. Vorwurf: Cigna habe einen Algorithmus namens PXDX (Procedure-to-Diagnosis) eingesetzt, um in einem Zwei-Monats-Zeitraum rund 300.000 zuvor genehmigte Claims automatisch abzulehnen — mit einer durchschnittlichen Bearbeitungszeit von 1,2 Sekunden pro Ablehnung. Die Algorithmus-Logik prüfte nur, ob der Behandlungs-Code zum Diagnose-Code passte, ohne die zugehörigen Patienten-Akten zu lesen; das umgehe die nach kalifornischem Recht vorgeschriebene Einzelfall-Prüfung durch einen Arzt. Eine ProPublica-/STAT-Investigation enthüllt PXDX im März 2023. Die Klage wird im Lauf des Verfahrens mehrfach verändert; eine Third Amended Class Action Complaint vom 14. Juni 2024 stützt sich auf ERISA-Verstöße und kalifornisches Wettbewerbsrecht. U.S. District Judge Dale Drozd weist Cignas Antrag auf Klageabweisung in wesentlichen Teilen zurück und lässt mindestens einen Teil der Klagen weiterlaufen. Der Fall wird zum Präzedenz für die Frage, ob KI-gestützte Massen-Ablehnungen in Krankenversicherungen vereinbar sind mit den gesetzlich verankerten Sorgfaltspflichten von Ärzten.",
+  "description_en": "In July 2023, insured patients file suit against health insurer Cigna in the U.S. District Court for the Eastern District of California. The complaint alleges that Cigna used an algorithm called PXDX (procedure-to-diagnosis) to automatically deny around 300,000 previously pre-approved claims over a two-month period — with an average processing time of 1.2 seconds per denial. The algorithm only checked whether a treatment code matched a diagnosis code, without reading the corresponding patient records; this allegedly circumvents the individualized physician review required under California law. A ProPublica/STAT investigation exposes PXDX in March 2023. The suit is amended several times in the course of proceedings; a Third Amended Class Action Complaint of June 14, 2024 invokes ERISA violations and California unfair-competition law. U.S. District Judge Dale Drozd denies Cigna's motion to dismiss in substantial part and allows at least some claims to proceed. The case becomes a precedent for the question of whether AI-driven mass denials in health insurance are compatible with the statutory duties of care owed by physicians.",
+  "startDate": "2023-07-24",
+  "location": {
+    "@type": "Place",
+    "name": "Kalifornien / USA",
+    "name_de": "Kalifornien / USA",
+    "name_en": "California / USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.5816,
+      "longitude": -121.4944
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Recht auf Gesundheitsversorgung",
+    "Recht auf Erklärung algorithmischer Entscheidungen",
+    "Recht auf faire Verwaltungsverfahren",
+    "Verbraucherschutz",
+    "Recht auf Würde"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Recht auf Gesundheitsversorgung",
+    "Recht auf Erklärung algorithmischer Entscheidungen",
+    "Recht auf faire Verwaltungsverfahren",
+    "Verbraucherschutz",
+    "Recht auf Würde"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Right to health care",
+    "Right to explanation of algorithmic decisions",
+    "Right to fair administrative procedures",
+    "Consumer protection",
+    "Right to dignity"
+  ],
+  "asm:actors": [
+    {
+      "name": "Cigna",
+      "name_de": "Cigna",
+      "name_en": "Cigna",
+      "type": "company",
+      "asm:systems": [
+        "PXDX (Procedure-to-Diagnosis Algorithm)"
+      ]
+    },
+    {
+      "name": "U.S. District Court Eastern District of California",
+      "name_de": "U.S. District Court Eastern District of California",
+      "name_en": "U.S. District Court Eastern District of California",
+      "type": "government"
+    },
+    {
+      "name": "U.S. District Judge Dale Drozd",
+      "name_de": "U.S. District Judge Dale Drozd",
+      "name_en": "U.S. District Judge Dale Drozd",
+      "type": "government"
+    },
+    {
+      "name": "ProPublica / STAT (Investigativ-Recherche)",
+      "name_de": "ProPublica / STAT (Investigativ-Recherche)",
+      "name_en": "ProPublica / STAT (investigative reporting)",
+      "type": "company"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2014-2022",
+      "phase": "infrastructure",
+      "title": "Cigna entwickelt und skaliert PXDX-Algorithmus",
+      "description": "Cigna entwickelt im Lauf der 2010er-Jahre den PXDX-Algorithmus, der Kombinationen aus Behandlungs- und Diagnose-Codes klassifiziert und mit voreingestellten Regeln abgleicht. Der Algorithmus wird zunehmend in den automatisierten Claims-Workflow integriert.",
+      "title_de": "Cigna entwickelt und skaliert PXDX-Algorithmus",
+      "description_de": "Cigna entwickelt im Lauf der 2010er-Jahre den PXDX-Algorithmus, der Kombinationen aus Behandlungs- und Diagnose-Codes klassifiziert und mit voreingestellten Regeln abgleicht. Der Algorithmus wird zunehmend in den automatisierten Claims-Workflow integriert.",
+      "title_en": "Cigna develops and scales the PXDX algorithm",
+      "description_en": "Over the 2010s, Cigna develops the PXDX algorithm, which classifies combinations of treatment and diagnosis codes and matches them against preset rules. The algorithm is increasingly integrated into the automated claims workflow.",
+      "sources": []
+    },
+    {
+      "date": "2023-03",
+      "phase": "doctrine",
+      "title": "ProPublica-/STAT-Enthüllung: 1,2 Sekunden pro Ablehnung",
+      "description": "Im März 2023 enthüllt eine gemeinsame Recherche von ProPublica und STAT die PXDX-Praxis: In einem Zeitraum von zwei Monaten lehnt Cigna ca. 300.000 Claims ab — mit einer durchschnittlichen 'Bearbeitungszeit' von 1,2 Sekunden pro Ablehnung. Die Ablehnungen werden durch Cigna-eigene Ärzte 'gegengezeichnet', ohne dass diese die Akten gesehen haben. Cigna bestreitet rechtliche Defekte, weist Daten zurück.",
+      "title_de": "ProPublica-/STAT-Enthüllung: 1,2 Sekunden pro Ablehnung",
+      "description_de": "Im März 2023 enthüllt eine gemeinsame Recherche von ProPublica und STAT die PXDX-Praxis: In einem Zeitraum von zwei Monaten lehnt Cigna ca. 300.000 Claims ab — mit einer durchschnittlichen 'Bearbeitungszeit' von 1,2 Sekunden pro Ablehnung. Die Ablehnungen werden durch Cigna-eigene Ärzte 'gegengezeichnet', ohne dass diese die Akten gesehen haben. Cigna bestreitet rechtliche Defekte, weist Daten zurück.",
+      "title_en": "ProPublica/STAT exposé: 1.2 seconds per denial",
+      "description_en": "In March 2023, a joint investigation by ProPublica and STAT exposes the PXDX practice: over a two-month period, Cigna denies approximately 300,000 claims — with an average \"processing time\" of 1.2 seconds per denial. The denials are \"countersigned\" by Cigna's own physicians without those physicians having seen the underlying records. Cigna denies any legal defect and disputes the figures.",
+      "sources": [
+        "https://www.axios.com/2023/07/25/ai-lawsuits-health-cigna-algorithm-payment-denial"
+      ]
+    },
+    {
+      "date": "2023-07-24",
+      "phase": "event",
+      "title": "Klageerhebung vor U.S. District Court E.D. Cal.",
+      "description": "Versicherte reichen Klage in Kalifornien ein. Sie machen Verstöße gegen kalifornisches Versicherungsrecht (das eine Einzelfall-Prüfung durch einen Arzt vorschreibt), ERISA-Treuepflichten und Unfair Competition geltend. Sie fordern Schadensersatz und Unterlassung des PXDX-Einsatzes ohne Einzelfallprüfung. Cigna reagiert mit Antrag auf Klageabweisung.",
+      "title_de": "Klageerhebung vor U.S. District Court E.D. Cal.",
+      "description_de": "Versicherte reichen Klage in Kalifornien ein. Sie machen Verstöße gegen kalifornisches Versicherungsrecht (das eine Einzelfall-Prüfung durch einen Arzt vorschreibt), ERISA-Treuepflichten und Unfair Competition geltend. Sie fordern Schadensersatz und Unterlassung des PXDX-Einsatzes ohne Einzelfallprüfung. Cigna reagiert mit Antrag auf Klageabweisung.",
+      "title_en": "Lawsuit filed in U.S. District Court E.D. Cal.",
+      "description_en": "Insured patients file suit in California. They allege violations of California insurance law (which requires individualized physician review), ERISA fiduciary duties, and unfair competition. They seek damages and an injunction against the use of PXDX without individualized review. Cigna responds with a motion to dismiss.",
+      "sources": [
+        "https://www.cbsnews.com/news/cigna-algorithm-patient-claims-lawsuit/"
+      ]
+    },
+    {
+      "date": "2024-2025",
+      "phase": "consequences",
+      "title": "Drittel-amended Complaint, Drozd-Entscheidung, Branchen-Reform",
+      "description": "Mit der Third Amended Class Action Complaint vom 14. Juni 2024 stabilisieren sich die Anspruchsgrundlagen: ERISA-Verstöße plus kalifornisches Unfair-Competition-Recht. Richter Dale Drozd weist Cignas Abweisungs-Antrag in wesentlichen Teilen zurück und lässt zentrale Klagen weiterlaufen. Im Lauf des Jahres 2024 verschärfen verschiedene US-Bundesstaaten und die NAIC ihre Anforderungen an KI-Nutzung durch Krankenversicherer; Centers for Medicare & Medicaid Services (CMS) erlassen Vorgaben zur Transparenz von Algorithmen in Medicare Advantage. Der Cigna-Fall gilt — gemeinsam mit dem UnitedHealth-Verfahren — als Hebel für eine bundesweite Diskussion über algorithmische Sorgfaltspflichten in der US-Krankenversicherung.",
+      "title_de": "Drittel-amended Complaint, Drozd-Entscheidung, Branchen-Reform",
+      "description_de": "Mit der Third Amended Class Action Complaint vom 14. Juni 2024 stabilisieren sich die Anspruchsgrundlagen: ERISA-Verstöße plus kalifornisches Unfair-Competition-Recht. Richter Dale Drozd weist Cignas Abweisungs-Antrag in wesentlichen Teilen zurück und lässt zentrale Klagen weiterlaufen. Im Lauf des Jahres 2024 verschärfen verschiedene US-Bundesstaaten und die NAIC ihre Anforderungen an KI-Nutzung durch Krankenversicherer; Centers for Medicare & Medicaid Services (CMS) erlassen Vorgaben zur Transparenz von Algorithmen in Medicare Advantage. Der Cigna-Fall gilt — gemeinsam mit dem UnitedHealth-Verfahren — als Hebel für eine bundesweite Diskussion über algorithmische Sorgfaltspflichten in der US-Krankenversicherung.",
+      "title_en": "Third amended complaint, Drozd ruling, industry reform",
+      "description_en": "With the Third Amended Class Action Complaint of June 14, 2024, the legal theories stabilize: ERISA violations plus California unfair-competition law. Judge Dale Drozd denies Cigna's motion to dismiss in substantial part and allows central claims to proceed. Throughout 2024, several U.S. states and the NAIC tighten requirements for AI use by health insurers; the Centers for Medicare & Medicaid Services (CMS) issue rules on algorithm transparency in Medicare Advantage. The Cigna case — together with the UnitedHealth proceedings — is seen as a lever for a nationwide debate on algorithmic duties of care in U.S. health insurance.",
+      "sources": [
+        "https://www.courthousenews.com/judge-advances-class-claims-over-cigna-use-of-automated-algorithm-to-deny-benefits/",
+        "https://www.maynardnexsen.com/publication-the-legal-landscape-for-ai-enabled-decisions-for-health-care-claims-and-coverage-continues-to-evolve-from-litigation-to-emerging-legislation"
+      ]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.cbsnews.com/news/cigna-algorithm-patient-claims-lawsuit/",
+      "title": "Cigna accused of using an algorithm to automatically reject patient claims",
+      "title_de": "Cigna accused of using an algorithm to automatically reject patient claims",
+      "title_en": "Cigna accused of using an algorithm to automatically reject patient claims",
+      "publisher": "CBS News",
+      "date": "2023-07",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.medicaleconomics.com/view/cigna-using-ai-to-reject-claims-lawsuit-charges",
+      "title": "Cigna using AI to reject claims, lawsuit charges",
+      "title_de": "Cigna using AI to reject claims, lawsuit charges",
+      "title_en": "Cigna using AI to reject claims, lawsuit charges",
+      "publisher": "Medical Economics",
+      "date": "2023-07",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.axios.com/2023/07/25/ai-lawsuits-health-cigna-algorithm-payment-denial",
+      "title": "Cigna suit brings AI and algorithm complaints to healthcare",
+      "title_de": "Cigna suit brings AI and algorithm complaints to healthcare",
+      "title_en": "Cigna suit brings AI and algorithm complaints to healthcare",
+      "publisher": "Axios",
+      "date": "2023-07-25",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.courthousenews.com/judge-advances-class-claims-over-cigna-use-of-automated-algorithm-to-deny-benefits/",
+      "title": "Judge advances case over Cigna use of algorithms to deny health claims",
+      "title_de": "Judge advances case over Cigna use of algorithms to deny health claims",
+      "title_en": "Judge advances case over Cigna use of algorithms to deny health claims",
+      "publisher": "Courthouse News Service",
+      "date": "2024",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.maynardnexsen.com/publication-the-legal-landscape-for-ai-enabled-decisions-for-health-care-claims-and-coverage-continues-to-evolve-from-litigation-to-emerging-legislation",
+      "title": "The Legal Landscape for AI-Enabled Decisions for Health Care Claims and Coverage Continues to Evolve",
+      "title_de": "The Legal Landscape for AI-Enabled Decisions for Health Care Claims and Coverage Continues to Evolve",
+      "title_en": "The Legal Landscape for AI-Enabled Decisions for Health Care Claims and Coverage Continues to Evolve",
+      "publisher": "Maynard Nexsen",
+      "date": "2024",
+      "type": "industry-analysis",
+      "asm:linkHealth": "ok"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "usa-unitedhealth-nhpredict-medicare-ablehnungen",
+    "usa-racial-bias-healthcare-ki",
+    "australien-robodebt"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-26",
+    "lastUpdated": "2026-05-26",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}

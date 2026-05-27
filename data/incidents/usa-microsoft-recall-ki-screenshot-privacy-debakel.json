@@ -1,0 +1,215 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-microsoft-recall-ki-screenshot-privacy-debakel",
+  "name": "USA: Microsoft Recall — KI-Screenshot-Feature ausgesetzt nach Privatsphäre-Aufschrei",
+  "name_de": "USA: Microsoft Recall — KI-Screenshot-Feature ausgesetzt nach Privatsphäre-Aufschrei",
+  "name_en": "USA: Microsoft Recall — AI screenshot feature paused after privacy backlash",
+  "description": "Am 20. Mai 2024 stellt Microsoft auf der Build-Konferenz das KI-Feature 'Recall' für Copilot+ PCs vor: Das System nimmt im Hintergrund kontinuierlich Screenshots aller Bildschirminhalte auf, indexiert sie semantisch und ermöglicht Nutzer*innen die spätere Volltext-Suche durch ihr digitales 'Gedächtnis'. Sicherheitsforscher*innen und Datenschützer*innen (u.a. Kevin Beaumont, Dr. Kris Shrishak von Irish Council for Civil Liberties) zeigen binnen Tagen: Recall speichert Passwörter, Bank-Daten, vertrauliche Chats und Geschäfts-Dokumente in einer lokalen SQLite-Datenbank, die für Schadsoftware oder häusliche Kontroll-Täter*innen trivial auslesbar ist. Die BBC zitiert: 'Das könnte ein Privatsphäre-Albtraum werden.' Am 14. Juni 2024 verschiebt Microsoft den Recall-Launch — das Feature wird nicht mit den ersten Copilot+ PCs am 18. Juni ausgeliefert, sondern nur als Preview über das Windows-Insiders-Programm. Microsoft re-architektiert das System: Opt-in statt Default-an, Windows-Hello-Verifikation, verschlüsselte Datenbank, Ausschluss von Banking/Kreditkarten. Ein erneuter Roll-out beginnt 2025 schrittweise. Der Fall ist ein wegweisendes Beispiel dafür, wie Privacy-by-Design am Endgerät selbst bei Mainstream-OS-Anbietern systematisch unterläuft wird — und wie zivilgesellschaftlicher Druck eine Reform erzwingen kann.",
+  "description_de": "Am 20. Mai 2024 stellt Microsoft auf der Build-Konferenz das KI-Feature 'Recall' für Copilot+ PCs vor: Das System nimmt im Hintergrund kontinuierlich Screenshots aller Bildschirminhalte auf, indexiert sie semantisch und ermöglicht Nutzer*innen die spätere Volltext-Suche durch ihr digitales 'Gedächtnis'. Sicherheitsforscher*innen und Datenschützer*innen (u.a. Kevin Beaumont, Dr. Kris Shrishak von Irish Council for Civil Liberties) zeigen binnen Tagen: Recall speichert Passwörter, Bank-Daten, vertrauliche Chats und Geschäfts-Dokumente in einer lokalen SQLite-Datenbank, die für Schadsoftware oder häusliche Kontroll-Täter*innen trivial auslesbar ist. Die BBC zitiert: 'Das könnte ein Privatsphäre-Albtraum werden.' Am 14. Juni 2024 verschiebt Microsoft den Recall-Launch — das Feature wird nicht mit den ersten Copilot+ PCs am 18. Juni ausgeliefert, sondern nur als Preview über das Windows-Insiders-Programm. Microsoft re-architektiert das System: Opt-in statt Default-an, Windows-Hello-Verifikation, verschlüsselte Datenbank, Ausschluss von Banking/Kreditkarten. Ein erneuter Roll-out beginnt 2025 schrittweise. Der Fall ist ein wegweisendes Beispiel dafür, wie Privacy-by-Design am Endgerät selbst bei Mainstream-OS-Anbietern systematisch unterläuft wird — und wie zivilgesellschaftlicher Druck eine Reform erzwingen kann.",
+  "description_en": "On May 20, 2024 at the Build conference, Microsoft unveils the AI feature \"Recall\" for Copilot+ PCs: the system continuously takes background screenshots of all on-screen activity, indexes them semantically, and lets users later perform full-text searches across their digital \"memory.\" Within days, security researchers and privacy advocates (including Kevin Beaumont, Dr. Kris Shrishak of the Irish Council for Civil Liberties) show that Recall stores passwords, banking data, confidential chats, and business documents in a local SQLite database trivially readable by malware or domestic-control perpetrators. The BBC quotes: \"This could be a privacy nightmare.\" On June 14, 2024 Microsoft delays the Recall launch — the feature is not shipped with the first Copilot+ PCs on June 18 but only as a preview via the Windows Insiders Program. Microsoft re-architects the system: opt-in instead of default-on, Windows Hello verification, encrypted database, exclusion of banking/credit-card data. A renewed rollout starts gradually in 2025. The case is a landmark example of how privacy-by-design at the device level can be systematically undermined even by mainstream OS providers — and of how civil-society pressure can force reform.",
+  "startDate": "2024-05-20",
+  "location": {
+    "@type": "Place",
+    "name": "Redmond, Washington, USA (Microsoft HQ); global (Copilot+ PCs)",
+    "name_de": "Redmond, Washington, USA (Microsoft HQ); global (Copilot+ PCs)",
+    "name_en": "Redmond, Washington, USA (Microsoft HQ); global (Copilot+ PCs)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 47.674,
+      "longitude": -122.1215
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    }
+  },
+  "asm:incidentType": [
+    "surveillance",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Schutz personenbezogener Daten",
+    "Verbraucherschutz",
+    "Recht auf informierte Einwilligung",
+    "Schutz vor häuslicher Kontrolle",
+    "Recht auf Transparenz bei KI-Systemen"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Schutz personenbezogener Daten",
+    "Verbraucherschutz",
+    "Recht auf informierte Einwilligung",
+    "Schutz vor häuslicher Kontrolle",
+    "Recht auf Transparenz bei KI-Systemen"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Protection of personal data",
+    "Consumer protection",
+    "Right to informed consent",
+    "Protection from domestic control",
+    "Right to transparency in AI systems"
+  ],
+  "asm:actors": [
+    {
+      "name": "Microsoft Corporation",
+      "name_de": "Microsoft Corporation",
+      "name_en": "Microsoft Corporation",
+      "type": "company",
+      "asm:systems": [
+        "Microsoft Recall",
+        "Windows Copilot+ PC",
+        "Windows Hello"
+      ]
+    },
+    {
+      "name": "Yusuf Mehdi (Microsoft Consumer Chief, Recall-Announcement)",
+      "name_de": "Yusuf Mehdi (Microsoft Consumer Chief, Recall-Announcement)",
+      "name_en": "Yusuf Mehdi (Microsoft Consumer Chief, Recall announcement)",
+      "type": "individual"
+    },
+    {
+      "name": "Kevin Beaumont (Security-Forscher, Hauptkritiker)",
+      "name_de": "Kevin Beaumont (Security-Forscher, Hauptkritiker)",
+      "name_en": "Kevin Beaumont (security researcher, leading critic)",
+      "type": "individual"
+    },
+    {
+      "name": "Dr. Kris Shrishak (Irish Council for Civil Liberties)",
+      "name_de": "Dr. Kris Shrishak (Irish Council for Civil Liberties)",
+      "name_en": "Dr. Kris Shrishak (Irish Council for Civil Liberties)",
+      "type": "ngo"
+    },
+    {
+      "name": "Information Commissioner's Office (ICO, UK)",
+      "name_de": "Information Commissioner's Office (ICO, UK)",
+      "name_en": "Information Commissioner's Office (ICO, UK)",
+      "type": "government"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-05-20",
+      "phase": "infrastructure",
+      "title": "Microsoft kündigt Recall auf Build 2024 an",
+      "description": "Auf der Build-Konferenz am 20. Mai 2024 stellt Microsoft Recall als Kern-Feature der neuen Copilot+ PCs vor. Das System nimmt alle paar Sekunden Screenshots auf, extrahiert Text per OCR, indexiert Inhalte semantisch und speichert sie lokal in einer SQLite-Datenbank. Marketing: 'photographic memory for your PC'. Microsoft betont die On-Device-Verarbeitung als Privatsphäre-Vorteil — die Datenbank ist standardmäßig nicht verschlüsselt, Recall ist per Default aktiv.",
+      "title_de": "Microsoft kündigt Recall auf Build 2024 an",
+      "description_de": "Auf der Build-Konferenz am 20. Mai 2024 stellt Microsoft Recall als Kern-Feature der neuen Copilot+ PCs vor. Das System nimmt alle paar Sekunden Screenshots auf, extrahiert Text per OCR, indexiert Inhalte semantisch und speichert sie lokal in einer SQLite-Datenbank. Marketing: 'photographic memory for your PC'. Microsoft betont die On-Device-Verarbeitung als Privatsphäre-Vorteil — die Datenbank ist standardmäßig nicht verschlüsselt, Recall ist per Default aktiv.",
+      "title_en": "Microsoft announces Recall at Build 2024",
+      "description_en": "At the Build conference on May 20, 2024 Microsoft unveils Recall as a flagship feature of the new Copilot+ PCs. The system takes screenshots every few seconds, extracts text via OCR, indexes content semantically, and stores it locally in a SQLite database. Marketing: \"photographic memory for your PC.\" Microsoft emphasizes on-device processing as a privacy benefit — the database is unencrypted by default; Recall is on by default.",
+      "sources": []
+    },
+    {
+      "date": "2024-05-23",
+      "phase": "doctrine",
+      "title": "Sicherheits-Audits zeigen massive Schwachstellen",
+      "description": "Innerhalb weniger Tage demonstrieren Sicherheitsforscher Kevin Beaumont, Marc-André Moreau und Will Dormann, dass die Recall-Datenbank im Klartext gespeicherte Passwörter, Bankdaten, Krankenakten und private Chats enthält. Mit dem Tool 'TotalRecall' lassen sich diese Inhalte mit minimalem Aufwand exfiltrieren. Häusliche-Gewalt-Expert*innen warnen, dass Recall die Kontrolle abusiver Partner*innen über Geräte massiv erleichtert. Das UK-ICO leitet eine Anfrage an Microsoft ein.",
+      "title_de": "Sicherheits-Audits zeigen massive Schwachstellen",
+      "description_de": "Innerhalb weniger Tage demonstrieren Sicherheitsforscher Kevin Beaumont, Marc-André Moreau und Will Dormann, dass die Recall-Datenbank im Klartext gespeicherte Passwörter, Bankdaten, Krankenakten und private Chats enthält. Mit dem Tool 'TotalRecall' lassen sich diese Inhalte mit minimalem Aufwand exfiltrieren. Häusliche-Gewalt-Expert*innen warnen, dass Recall die Kontrolle abusiver Partner*innen über Geräte massiv erleichtert. Das UK-ICO leitet eine Anfrage an Microsoft ein.",
+      "title_en": "Security audits reveal massive vulnerabilities",
+      "description_en": "Within days, security researchers Kevin Beaumont, Marc-André Moreau, and Will Dormann demonstrate that the Recall database contains plaintext passwords, banking data, medical records, and private chats. With the tool \"TotalRecall\" the contents can be exfiltrated with minimal effort. Domestic-violence experts warn that Recall greatly facilitates abusive partners' control over devices. The UK ICO opens an inquiry to Microsoft.",
+      "sources": [
+        "https://time.com/6980911/microsoft-copilot-recall-ai-features-privacy-concerns/"
+      ]
+    },
+    {
+      "date": "2024-06-14",
+      "phase": "event",
+      "title": "Microsoft verschiebt Recall, Notfall-Re-Architektur",
+      "description": "Am 14. Juni 2024 — vier Tage vor dem geplanten Roll-out — kündigt Microsoft die Verschiebung von Recall an. Statt mit dem ersten Copilot+ PC am 18. Juni allgemein ausgeliefert zu werden, ist Recall künftig nur Preview-Feature im Windows-Insiders-Programm. Microsoft kündigt fundamentale Re-Architektur an: Opt-in statt Default-an, Windows-Hello-Verifikation für jeden Recall-Zugriff, verschlüsselte SQLite-Datenbank (auf Just-in-Time-decryption), Ausschluss sensibler Bereiche (Banking, Inkognito-Modus, Passwort-Manager).",
+      "title_de": "Microsoft verschiebt Recall, Notfall-Re-Architektur",
+      "description_de": "Am 14. Juni 2024 — vier Tage vor dem geplanten Roll-out — kündigt Microsoft die Verschiebung von Recall an. Statt mit dem ersten Copilot+ PC am 18. Juni allgemein ausgeliefert zu werden, ist Recall künftig nur Preview-Feature im Windows-Insiders-Programm. Microsoft kündigt fundamentale Re-Architektur an: Opt-in statt Default-an, Windows-Hello-Verifikation für jeden Recall-Zugriff, verschlüsselte SQLite-Datenbank (auf Just-in-Time-decryption), Ausschluss sensibler Bereiche (Banking, Inkognito-Modus, Passwort-Manager).",
+      "title_en": "Microsoft delays Recall, emergency re-architecture",
+      "description_en": "On June 14, 2024 — four days before the planned rollout — Microsoft announces a delay of Recall. Instead of shipping generally with the first Copilot+ PCs on June 18, Recall becomes a preview feature in the Windows Insiders Program. Microsoft announces a fundamental re-architecture: opt-in instead of default-on, Windows Hello verification for every Recall access, encrypted SQLite database (with just-in-time decryption), exclusion of sensitive areas (banking, incognito mode, password managers).",
+      "sources": [
+        "https://www.cnbc.com/2024/06/14/microsoft-to-delay-launch-of-ai-recall-tool-due-to-security-concerns.html"
+      ]
+    },
+    {
+      "date": "2025-2026",
+      "phase": "consequences",
+      "title": "Gradueller Re-Launch, Branchen-Lehrstück, Privacy-by-Design-Debatte",
+      "description": "Im Lauf von 2025 rollt Microsoft Recall schrittweise neu aus — zunächst nur für Copilot+ PCs mit Snapdragon X-Chip, später für AMD und Intel. Die neue Architektur reduziert die Risiken substanziell; einige Sicherheitsforscher*innen bleiben aber skeptisch. Der Fall wird Standardreferenz in der Privacy-by-Design-Debatte und in EU-AI-Act-Diskussionen über systemische Risiken durch lokale KI-Memory-Features. Apple, Google und Samsung integrieren in 2025–2026 vergleichbare on-device-Memory-Features mit deutlich vorsichtigerem Privacy-Framing — was teils direkt mit dem Recall-Lernfall begründet wird.",
+      "title_de": "Gradueller Re-Launch, Branchen-Lehrstück, Privacy-by-Design-Debatte",
+      "description_de": "Im Lauf von 2025 rollt Microsoft Recall schrittweise neu aus — zunächst nur für Copilot+ PCs mit Snapdragon X-Chip, später für AMD und Intel. Die neue Architektur reduziert die Risiken substanziell; einige Sicherheitsforscher*innen bleiben aber skeptisch. Der Fall wird Standardreferenz in der Privacy-by-Design-Debatte und in EU-AI-Act-Diskussionen über systemische Risiken durch lokale KI-Memory-Features. Apple, Google und Samsung integrieren in 2025–2026 vergleichbare on-device-Memory-Features mit deutlich vorsichtigerem Privacy-Framing — was teils direkt mit dem Recall-Lernfall begründet wird.",
+      "title_en": "Gradual relaunch, industry cautionary tale, privacy-by-design debate",
+      "description_en": "Across 2025 Microsoft gradually re-rolls out Recall — initially only for Copilot+ PCs with the Snapdragon X chip, later for AMD and Intel. The new architecture substantially reduces the risks; some security researchers remain skeptical. The case becomes a standard reference in the privacy-by-design debate and in EU AI Act discussions about systemic risks from local AI memory features. In 2025–2026 Apple, Google, and Samsung integrate comparable on-device memory features with notably more cautious privacy framing — explicitly citing the Recall episode as the lesson.",
+      "sources": [
+        "https://www.laptopmag.com/laptops/windows-laptops/microsoft-recall-is-back-again",
+        "https://neuron.expert/news/microsoft-to-re-launch-privacy-nightmare-ai-screenshot-tool/8675/en/"
+      ]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.cnbc.com/2024/06/14/microsoft-to-delay-launch-of-ai-recall-tool-due-to-security-concerns.html",
+      "title": "Microsoft to delay launch of AI Recall tool due to security concerns",
+      "title_de": "Microsoft to delay launch of AI Recall tool due to security concerns",
+      "title_en": "Microsoft to delay launch of AI Recall tool due to security concerns",
+      "publisher": "CNBC",
+      "date": "2024-06-14",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://time.com/6980911/microsoft-copilot-recall-ai-features-privacy-concerns/",
+      "title": "Why Microsoft's New AI Feature Has Prompted Privacy Concerns",
+      "title_de": "Why Microsoft's New AI Feature Has Prompted Privacy Concerns",
+      "title_en": "Why Microsoft's New AI Feature Has Prompted Privacy Concerns",
+      "publisher": "TIME",
+      "date": "2024-06",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.secretsofprivacy.com/p/microsoft-windows-users-beware-this-growing-privacy-threat-on-your-computer-recall",
+      "title": "Microsoft Windows Users: Beware This Growing Privacy Threat on Your Computer",
+      "title_de": "Microsoft Windows Users: Beware This Growing Privacy Threat on Your Computer",
+      "title_en": "Microsoft Windows Users: Beware This Growing Privacy Threat on Your Computer",
+      "publisher": "Secrets of Privacy",
+      "date": "2024",
+      "type": "industry-analysis",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://neuron.expert/news/microsoft-to-re-launch-privacy-nightmare-ai-screenshot-tool/8675/en/",
+      "title": "Microsoft to Reintroduce AI Tool 'Recall' with Enhanced Privacy Measures",
+      "title_de": "Microsoft to Reintroduce AI Tool 'Recall' with Enhanced Privacy Measures",
+      "title_en": "Microsoft to Reintroduce AI Tool 'Recall' with Enhanced Privacy Measures",
+      "publisher": "Neuron",
+      "date": "2025",
+      "type": "industry-analysis",
+      "asm:linkHealth": "ok"
+    },
+    {
+      "url": "https://www.laptopmag.com/laptops/windows-laptops/microsoft-recall-is-back-again",
+      "title": "Microsoft Recall is gradually rolling out — will new privacy features get you to try Windows AI?",
+      "title_de": "Microsoft Recall is gradually rolling out — will new privacy features get you to try Windows AI?",
+      "title_en": "Microsoft Recall is gradually rolling out — will new privacy features get you to try Windows AI?",
+      "publisher": "Laptop Mag",
+      "date": "2025",
+      "type": "news-article",
+      "asm:linkHealth": "ok"
+    }
+  ],
+  "asm:relatedIncidents": [
+    "microsoft-azure-unit8200-cutoff-gaza",
+    "usa-apple-intelligence-bbc-falsche-news-headlines",
+    "irland-dpc-x-grok-eu-trainingsdaten-verfahren",
+    "china-deepseek-r1-datentransfer-globale-bans"
+  ],
+  "asm:metadata": {
+    "created": "2026-05-27",
+    "lastUpdated": "2026-05-27",
+    "author": "AIStrikeMap",
+    "aiGenerated": true,
+    "humanVerified": false
+  }
+}
