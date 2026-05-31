@@ -5,13 +5,13 @@ Datum: 2026-05-31
 ## Zusammenfassung
 
 - Geprüfte Dateien: **274**
-- Saubere Dateien (keine Findings): **268**
-- Dateien mit Findings: **6**
-- Findings insgesamt: **6**
+- Saubere Dateien (keine Findings): **269**
+- Dateien mit Findings: **5**
+- Findings insgesamt: **5**
 
 ## Findings nach Kategorie
 
-- `dropped_proper_name`: 4
+- `dropped_proper_name`: 3
 - `length_ratio`: 2
 
 ## Detail pro Datei
@@ -36,13 +36,6 @@ Datum: 2026-05-31
   - DE: `Kela (Kansaneläkelaitos)`
   - EN: `Kela (Kansaneläkelaitos, Social Insurance Institution of Fin`
   - ratio: 2.71
-
-### spanien-ki-arbeitsmarkt-algorithmus.json
-
-- **dropped_proper_name** @ `timeline[2].title`
-  - DE: `Offizielles Audit bestätigt Bias, EU-Datenschutzbehörde ermi`
-  - EN: `Official audit confirms bias, Spanish data protection author`
-  - missing-name: EU
 
 ### usa-raine-openai-chatgpt-suizid.json
 
