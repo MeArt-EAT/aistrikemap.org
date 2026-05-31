@@ -5,14 +5,14 @@ Datum: 2026-05-31
 ## Zusammenfassung
 
 - Geprüfte Dateien: **274**
-- Saubere Dateien (keine Findings): **269**
-- Dateien mit Findings: **5**
-- Findings insgesamt: **5**
+- Saubere Dateien (keine Findings): **271**
+- Dateien mit Findings: **3**
+- Findings insgesamt: **3**
 
 ## Findings nach Kategorie
 
-- `dropped_proper_name`: 3
 - `length_ratio`: 2
+- `dropped_proper_name`: 1
 
 ## Detail pro Datei
 
@@ -36,18 +36,4 @@ Datum: 2026-05-31
   - DE: `Kela (Kansaneläkelaitos)`
   - EN: `Kela (Kansaneläkelaitos, Social Insurance Institution of Fin`
   - ratio: 2.71
-
-### usa-raine-openai-chatgpt-suizid.json
-
-- **dropped_proper_name** @ `timeline[2].description`
-  - DE: `Adam Raine stirbt durch Suizid. In den späteren Klageunterla`
-  - EN: `Adam Raine dies by suicide. In the subsequent complaint, the`
-  - missing-name: OpenAI
-
-### usa-ziprecruiter-ki-diskriminierung.json
-
-- **dropped_proper_name** @ `timeline[0].description`
-  - DE: `HireVue nutzt ein KI-System, das Videointerviews von Bewerbe`
-  - EN: `HireVue uses an AI system that automatically scores applican`
-  - missing-name: Uber
 
