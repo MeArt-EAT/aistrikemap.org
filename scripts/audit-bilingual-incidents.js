@@ -25,8 +25,14 @@
  *    oder innerhalb einer Klammer-Glosse. Word-Boundary-Matching verhindert
  *    Substring-Fehlalarme (Uber matched nicht in "Uberwachung").
  *  - Längen-Plausibilität: länge_en / länge_de muss zwischen 0.5 und 2.5 liegen.
- *  - Source-Titles werden NICHT auf Leakage oder Identität geprüft, weil sie
- *    Original-Artikel-Titel in beliebigen Sprachen (EN, FR, ES, …) sind.
+ *  - Umlaut-Transliterationen in DE-Feldern: nach CLAUDE.md muss angezeigtes
+ *    Deutsch echte Umlaute (ä/ö/ü/ß) verwenden, nie ae/oe/ue/ss. Eine kuratierte
+ *    Wortliste flaggt bekannte Transliterations-Bugs (fur, uberstimmt,
+ *    offentlich, Konigliche, gestutzte, abzuschliessen, ...). Source-Titles
+ *    werden ausgenommen, weil sie in beliebigen Sprachen sein können.
+ *  - Source-Titles werden NICHT auf Leakage, Identität oder Transliteration
+ *    geprüft, weil sie Original-Artikel-Titel in beliebigen Sprachen (EN, FR,
+ *    ES, …) sind.
  *
  * Verdachtsfälle werden gesammelt, NICHT die sauberen Files.
  */
@@ -56,6 +62,104 @@ const GERMAN_FW_RES = GERMAN_FUNCTION_WORDS.map(function (w) {
 });
 const UMLAUT_RE = /[äöüÄÖÜß]/;
 const UMLAUT_RE_G = /[äöüÄÖÜß]/g;
+
+// Curated list of German words that, when found in a DE field, are CLAUDE.md
+// orthography bugs (umlauts/ß transliterated as ae/oe/ue/ss). Not exhaustive —
+// extend when new patterns surface. Case-insensitive, word-boundary matched, so
+// "Fur"/"FUR"/"fur" all hit, and "ueberwachung" matches inside "KI-Überwachung"
+// style hyphenated compounds. "uber" alone is NOT included because it collides
+// with the company name (Uber); for the standalone-preposition case we use a
+// separate "Uber + digit" check (e.g. "Uber 700 Unternehmen").
+const TRANSLITERATED_GERMAN_WORDS = [
+  // Funktionswörter
+  'fur', 'fuer',
+  // führen / Führung Komposita
+  'fuhrt', 'fuehrt',
+  'gefuhrt', 'gefuehrt',
+  'durchgefuhrt', 'durchgefuehrt',
+  'einfuhrung', 'einfuehrung',
+  'ausfuhrung', 'ausfuehrung',
+  'durchfuhrung', 'durchfuehrung',
+  // über-Komposita
+  'gegenuber', 'gegenueber',
+  'uberstimmt', 'ueberstimmt',
+  'uberwiegend', 'ueberwiegend',
+  'uberwachung', 'ueberwachung',
+  'uberzahlung', 'ueberzahlung',
+  'uberzahlungen', 'ueberzahlungen',
+  'uberpruefung', 'ueberpruefung',
+  'uberprufung', 'ueberprufung',
+  'berucksichtigung', 'beruecksichtigung',
+  'ruckerstattung', 'rueckerstattung',
+  // öffentlich
+  'offentlich', 'oeffentlich',
+  'offentliche', 'oeffentliche',
+  'offentlichem', 'oeffentlichem',
+  'offentlichen', 'oeffentlichen',
+  'offentlicher', 'oeffentlicher',
+  // Modalverben / möglich
+  'moglich', 'moeglich',
+  'moglichkeit', 'moeglichkeit',
+  'moglichkeiten', 'moeglichkeiten',
+  'konnen', 'koennen',
+  'mussen', 'muessen',
+  'durfen', 'duerfen',
+  // Behörde
+  'behorde', 'behoerde',
+  'behorden', 'behoerden',
+  'steuerbehorde', 'steuerbehoerde',
+  // Adjektive / Substantive
+  'konigliche', 'koenigliche',
+  'koniglich', 'koeniglich',
+  'konigliches', 'koenigliches',
+  'hohepunkt', 'hoehepunkt',
+  'sozialverbande', 'sozialverbaende',
+  'anwalte', 'anwaelte',
+  'vollstandig', 'vollstaendig',
+  'zusammenbruche', 'zusammenbrueche',
+  'eingestandnis', 'eingestaendnis',
+  'privatsphare', 'privatsphaere',
+  'empfangern', 'empfaengern',
+  'schadlich', 'schaedlich',
+  'formliche', 'foermliche',
+  'emporung', 'empoerung',
+  'emporing', // Tippfehler-Variante von "Empörung"
+  'zunachst', 'zunaechst',
+  'lucke', 'luecke',
+  'regulierungslucke', 'regulierungsluecke',
+  'gesichtszuge', 'gesichtszuege',
+  'gestutzte', 'gestuetzte',
+  'begrundet', 'begruendet',
+  // ß-Bugs
+  'abzuschliessen',
+  'grosse', 'grossen', 'grosser', 'grosseren', 'grosseres',
+  'massnahme', 'massnahmen',
+];
+const TRANSLITERATION_RE = new RegExp(
+  '\\b(?:' + TRANSLITERATED_GERMAN_WORDS.join('|') + ')\\b',
+  'gi'
+);
+// "Uber" as a standalone German preposition (= "Über") almost always shows up
+// followed by a digit or quantifier in our data — "Uber 100 Fälle",
+// "Uber 1,8 Milliarden". The company "Uber" instead occurs in proper-noun
+// contexts ("Uber Technologies", "Uber Eats"). Tighten to digit/quantifier
+// follow-up to keep false positives off the company name.
+const UBER_PREPOSITION_RE = /\bUber\s+(?:\d|tausend|hundert|million|milliard)/g;
+
+function findTransliterations(text) {
+  if (typeof text !== 'string' || !text) return [];
+  const matches = new Set();
+  let m;
+  TRANSLITERATION_RE.lastIndex = 0;
+  while ((m = TRANSLITERATION_RE.exec(text)) !== null) {
+    matches.add(m[0]);
+  }
+  UBER_PREPOSITION_RE.lastIndex = 0;
+  while ((m = UBER_PREPOSITION_RE.exec(text)) !== null) {
+    matches.add(m[0].split(/\s+/)[0]); // just the "Uber" token
+  }
+  return Array.from(matches);
+}
 // Capitalized token containing an umlaut — likely a proper noun the translator
 // kept verbatim ("Berlin Südkreuz", "Ürümqi", "Mühendislik"). We can't use \b
 // because JavaScript regex without the /u flag treats umlauts as non-word
@@ -209,9 +313,24 @@ function checkPair(de, en, fieldPath, issues, dePoof, options) {
   }
   if (typeof de === 'string' && typeof en === 'string') {
     // Source titles are external article titles in arbitrary languages (EN, FR, ES, etc.).
-    // For these we skip identical_de_en (DE often copies the original EN title verbatim)
-    // and skip german_leakage (a French source title is not a translation bug).
+    // For these we skip identical_de_en (DE often copies the original EN title verbatim),
+    // german_leakage (a French source title is not a translation bug), and
+    // umlaut_transliteration (a Spanish/English title doesn't follow DE orthography).
     var isSourceTitle = /^sources\[\d+\]\.title$/.test(fieldPath);
+
+    // Umlaut-Transliteration in DE: CLAUDE.md verlangt echte Umlaute in
+    // angezeigtem Deutsch. Curated word list catches known bugs.
+    if (!isSourceTitle) {
+      var bugs = findTransliterations(de);
+      if (bugs.length) {
+        issues.push({
+          field: fieldPath,
+          kind: 'umlaut_transliteration',
+          words: bugs.join(', '),
+          de: de.slice(0, 80)
+        });
+      }
+    }
 
     // Identical strings: flag substantial text where the content looks German
     // (so we still catch real "translator forgot to translate" cases).
@@ -346,6 +465,7 @@ function main() {
         if (it.en) md += `\n  - EN: \`${it.en.replace(/`/g, "'")}\``;
         if (it.ratio) md += `\n  - ratio: ${it.ratio}`;
         if (it.name) md += `\n  - missing-name: ${it.name}`;
+        if (it.words) md += `\n  - transliterated: ${it.words}`;
         if (it.msg) md += `\n  - msg: ${it.msg}`;
         md += '\n';
       }
