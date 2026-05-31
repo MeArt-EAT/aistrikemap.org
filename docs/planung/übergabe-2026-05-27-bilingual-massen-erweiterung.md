@@ -2,19 +2,38 @@
 
 **Datum:** 2026-05-27
 **Vorgänger-Session:** 2026-05-26/27 (mehrtägige Mega-Sitzung)
-**Aktueller Stand:** 273 Incidents (von 206 → +67), bilinguale Infrastruktur live im Browser
+**Aktueller Stand:** 274 Incidents (von 206 → +68), bilinguale Infrastruktur live im Browser
 
 ---
 
 ## TL;DR
 
-Drei parallele Großarbeiten wurden in dieser Session begonnen — **zwei sind abgeschlossen und committed-ready, eine läuft noch im Hintergrund**:
+Drei parallele Großarbeiten wurden in dieser Session begonnen — **zwei sind abgeschlossen, eine ist NICHT durch**:
 
 1. ✅ **Code- und Schema-Infrastruktur für DE↔EN-Umschaltung** — vollständig, im Browser verifiziert
-2. ⏳ **Übersetzung der 206 Original-Incidents** — 5 Subagents arbeiten im Background, Status unbekannt
-3. ✅ **67 neue Incidents 2023–2026 angelegt** — alle bilingual von Anfang an, Browser-getestet
+2. ❌ **Übersetzung der 206 Original-Incidents** — Subagent-Welle hat NICHTS PRODUZIERT (Audit zeigt weiter 2068 `missing_en`)
+3. ✅ **68 neue Incidents 2023–2026 angelegt** — alle bilingual von Anfang an, Browser-getestet
 
-**Kein Commit wurde bisher gemacht.** Das ist der erste Schritt für die nächste Session.
+**Kein Commit wurde bisher gemacht.** Das ist der erste Schritt für die nächste Session — ABER vorher muss Punkt 2 noch erledigt werden.
+
+### Kritischer Audit-Befund
+
+```
+Files scanned:           274
+Clean files:             0
+Files with issues:       274
+Total findings:          2825
+
+Findings by kind:
+   2068  missing_en              ← Subagent-Welle hat NICHT funktioniert
+    677  identical_de_en         ← teils harmlos (Eigennamen), teils zu prüfen
+     53  dropped_proper_name
+     21  german_leakage_german-word
+      5  german_leakage_umlaut
+      1  length_ratio
+```
+
+Die 5 Subagents wurden gestartet aber haben offenbar keine Ergebnisse geliefert (oder noch nicht zurückgemeldet). Eine **neue Subagent-Welle** ist nötig, bevor man committen kann — oder das Audit-Skript zeigt, dass die Original-Files mehrheitlich noch monolingual deutsch sind.
 
 ---
 
