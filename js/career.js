@@ -65,6 +65,40 @@ const Career = (function () {
   function $(sel) { return document.querySelector(sel); }
   function $$(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
 
+  // --- Permalink ----------------------------------------------------------
+
+  /**
+   * Parse URL search params (?occupation=2211&country=DE&mode=chart).
+   * Returns object with normalized values — invalid mode falls back to null.
+   */
+  function parseUrlState() {
+    const params = new URLSearchParams(window.location.search);
+    const isco = params.get('occupation');
+    const cc = params.get('country');
+    const mode = params.get('mode');
+    return {
+      occupation: (isco && /^\d{4}$/.test(isco)) ? isco : null,
+      country: (cc && MVP_COUNTRIES.indexOf(cc.toUpperCase()) >= 0) ? cc.toUpperCase() : null,
+      mode: (mode === 'map' || mode === 'chart') ? mode : null
+    };
+  }
+
+  /**
+   * Reflect current state into the URL — bookmark- and share-friendly.
+   * Uses replaceState so back-button doesn't accumulate every filter change.
+   */
+  function writeUrlState() {
+    const params = new URLSearchParams(window.location.search);
+    if (currentIsco) params.set('occupation', currentIsco); else params.delete('occupation');
+    if (currentCountry) params.set('country', currentCountry); else params.delete('country');
+    if (currentMode && currentMode !== 'map') params.set('mode', currentMode); else params.delete('mode');
+    const qs = params.toString();
+    const newUrl = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
+    if (newUrl !== window.location.pathname + window.location.search + window.location.hash) {
+      history.replaceState(null, '', newUrl);
+    }
+  }
+
   function t(key, fallback) {
     if (window.I18n && typeof I18n.t === 'function') {
       return I18n.t(key, fallback);
@@ -372,6 +406,7 @@ const Career = (function () {
     panel.classList.add('is-open');
     panel.setAttribute('aria-hidden', 'false');
     panel.focus({ preventScroll: true });
+    writeUrlState();
   }
 
   function closeDetailPanel() {
@@ -379,13 +414,16 @@ const Career = (function () {
     if (!panel) return;
     panel.classList.remove('is-open');
     panel.setAttribute('aria-hidden', 'true');
+    currentCountry = null;
+    writeUrlState();
   }
 
   // --- Mode-Toggle ---------------------------------------------------------
 
-  async function setMode(mode) {
+  async function setMode(mode, opts) {
     if (mode !== 'map' && mode !== 'chart') return;
     currentMode = mode;
+    const silent = opts && opts.silent;
     $$('.career-mode-btn').forEach(function (btn) {
       const isActive = btn.dataset.mode === mode;
       btn.classList.toggle('is-active', isActive);
@@ -406,6 +444,7 @@ const Career = (function () {
       const all = await fullEntriesByCountry();
       CareerChart.render(all, currentIsco);
     }
+    if (!silent) writeUrlState();
   }
 
   function wireModeToggle() {
@@ -429,6 +468,7 @@ const Career = (function () {
         // Refresh open panel with new ISCO context.
         openDetailPanel(currentCountry);
       }
+      writeUrlState();
     });
   }
 
@@ -443,15 +483,38 @@ const Career = (function () {
   // --- Public API ----------------------------------------------------------
 
   async function init() {
+    const urlState = parseUrlState();
     await loadTaxonomy();
     populateOccupationFilter();
     wireModeToggle();
     wireOccupationFilter();
     wireDetailPanelClose();
-    setMode('map');
+
+    // Restore occupation from URL (if any) before first render.
+    if (urlState.occupation) {
+      const sel = $('#career-filter-occupation');
+      if (sel) {
+        sel.value = urlState.occupation;
+        if (sel.value === urlState.occupation) {
+          currentIsco = urlState.occupation;
+        }
+      }
+    }
+
+    // Mode from URL (default map). Silent: don't writeUrlState during restore.
+    await setMode(urlState.mode || 'map', { silent: true });
     initMap();
-    await refreshCountryDataForIsco(null);
+    await refreshCountryDataForIsco(currentIsco);
     await renderChoropleth();
+    if (currentMode === 'chart' && typeof CareerChart !== 'undefined') {
+      const all = await fullEntriesByCountry();
+      CareerChart.render(all, currentIsco);
+    }
+
+    // Country detail panel from URL (last so map/data are loaded).
+    if (urlState.country) {
+      openDetailPanel(urlState.country);
+    }
 
     document.addEventListener('i18n:changed', function () {
       populateOccupationFilter();
