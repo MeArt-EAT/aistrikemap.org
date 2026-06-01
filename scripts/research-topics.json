@@ -1,0 +1,263 @@
+{
+  "$schema_note": "Themen-Config für scripts/research-runner.js. Erweitern beliebig — jedes Topic ist ein Lauf. Slug muss URL/Filename-safe sein. dedup_hint_slugs ist eine Liste bestehender Incident-Slugs aus data/incidents/, die Claude nicht doppelt anlegen soll.",
+  "topics": [
+    {
+      "slug": "global-elections-deepfakes-2024",
+      "title": "Global Election Deepfakes 2024 (60+ Wahlen)",
+      "scope": "KI-generierte Audio-/Video-/Bild-Manipulationen in nationalen und regionalen Wahlen 2024. Fokus auf Fälle, in denen Deepfake-Content nachweislich verbreitet wurde, eine messbare Reichweite hatte und entweder einen Kandidaten benachteiligte/begünstigte oder Wahlprozesse beeinflusste.",
+      "region_hint": "global — US, IN, ID, RU, MX, GB, FR, ZA, BR (Kommunal), JP, TW, ES, KR, PK, BD, GH, SN, GE, MD, RO, SK, AT, HR",
+      "time_window": "2024-01-01 bis 2025-03-31",
+      "suggested_searches": [
+        "deepfake election 2024 [country] verified incident",
+        "AI-generated political ad 2024 [country] scandal",
+        "voice clone candidate 2024 robocall",
+        "TikTok deepfake election 2024",
+        "Slovakia Šimečka 2023 audio deepfake election"
+      ],
+      "dedup_hint_slugs": [
+        "deutschland-afd-ki-bilder-bundestagswahl-2025",
+        "indonesien-prabowo-suharto-deepfake-2024",
+        "indonesien-prabowo-gemoy-ki-rebranding-2024",
+        "singapur-deepfake-wahlgesetz-pofma-2024-2025",
+        "suedkorea-yoon-kriegsrecht-social-media-2024",
+        "tuerkei-imamoglu-deepfake-kommunalwahl-2024",
+        "rumaenien-wahlannullierung-tiktok",
+        "usa-biden-deepfake-robocall",
+        "usa-taylor-swift-deepfake-x-twitter"
+      ]
+    },
+    {
+      "slug": "ai-healthcare-harms-2023-2025",
+      "title": "AI in Healthcare — Schäden und Klagen",
+      "scope": "Klagen, Reports und behördliche Verfahren zu KI-Versicherungs-Ablehnungen, Diagnostik-Fehlern, KI-gestützter Triage, Mental-Health-Chatbot-Vorfällen, AI-Therapie-Schäden.",
+      "region_hint": "global, aber Schwergewicht US",
+      "time_window": "2023-2025",
+      "suggested_searches": [
+        "AI insurance claim denial lawsuit 2024",
+        "Epic Sepsis Watch false positive harm 2023",
+        "Babylon Health AI misdiagnosis 2024",
+        "radiology AI false negative cancer 2024",
+        "AI therapy chatbot harm suicide 2024 Koko Replika",
+        "EPIC AI predictor patient deterioration 2024"
+      ],
+      "dedup_hint_slugs": [
+        "usa-unitedhealth-nhpredict-medicare-ablehnungen",
+        "usa-cigna-pxdx-algorithmus-claim-ablehnungen",
+        "usa-character-ai-setzer-suizid-florida",
+        "usa-raine-openai-chatgpt-suizid",
+        "usa-meta-ki-mental-health-teens"
+      ]
+    },
+    {
+      "slug": "ai-education-k12-higher-ed",
+      "title": "AI in Education — Proctoring, Cheating-Detection, K-12-Privacy",
+      "scope": "Schüler/Studenten als Betroffene von KI-Falsch-Beschuldigungen, biased Proctoring-Systemen, K-12-Schul-Überwachung, AI-Detection-False-Positives auf Aufsätze.",
+      "region_hint": "global, US/UK/AU/DE/NL stark",
+      "time_window": "2023-2025",
+      "suggested_searches": [
+        "ProctorU Honorlock Respondus discrimination lawsuit 2024",
+        "Turnitin AI detection false positive 2024 student",
+        "GPTZero ZeroGPT false accusation student 2024",
+        "school AI surveillance Gaggle Bark privacy 2024",
+        "K-12 facial recognition school 2024 ban",
+        "university AI essay accusation 2024"
+      ],
+      "dedup_hint_slugs": [
+        "usa-proctoring-ki-studenten",
+        "usa-ai-waffenerkennung-schulen"
+      ]
+    },
+    {
+      "slug": "autonomous-weapons-military-ai",
+      "title": "Autonome Waffen und militärische KI-Vorfälle",
+      "scope": "Drohnen-Targeting-Systeme, autonome Loitering-Munition, AI-gestützte Targeting (z.B. Lavender, Gospel), Cyber-Offensive-AI, ROE-Eskalation durch KI.",
+      "region_hint": "Ukraine, Gaza/Israel, Yemen, Sudan, Myanmar, Mali, plus US/UK/RU Lieferanten",
+      "time_window": "2022-2025",
+      "suggested_searches": [
+        "Lavender Habsora AI targeting Gaza 2024 +972",
+        "Russia Lancet drone Ukraine AI 2024",
+        "Ukraine Saker Scout autonomous AI 2024",
+        "Yemen Houthi drone AI swarm 2024",
+        "Anduril Roadrunner autonomous 2024",
+        "Sea drone AI Black Sea 2024",
+        "military AI policy Pentagon 2024 DoD"
+      ],
+      "dedup_hint_slugs": [
+        "israel-blue-wolf-palaestina",
+        "jemen-drohnenkrieg-ki",
+        "somalia-drohnen-ki-zivile-opfer",
+        "ukraine-ki-gesichtserkennung-tote",
+        "russland-ki-deepfake-ukraine-krieg",
+        "usa-palantir-gotham-militaer",
+        "anthropic-claude-gtg1002-cyberangriff-china"
+      ]
+    },
+    {
+      "slug": "content-moderation-worker-exploitation",
+      "title": "Content-Moderation und Trainingsdaten-Worker-Ausbeutung",
+      "scope": "Outgesourcte Content-Moderatoren und Trainingsdaten-Labeler — PTSD-Klagen, Mindestlohn-Verletzungen, fehlende Mental-Health-Versorgung. Sama/Outsource-Konstrukte. Gig-Worker auf KI-Plattformen.",
+      "region_hint": "Kenia, Philippinen, Kolumbien, Indien, Madagascar, Pakistan, Nigeria",
+      "time_window": "2022-2025",
+      "suggested_searches": [
+        "Sama content moderator lawsuit 2024 Kenya OpenAI",
+        "Meta content moderator PTSD 2024 Sama Philippines",
+        "Scale AI worker pay 2024 Philippines",
+        "Remotasks worker exploitation 2024",
+        "OpenAI RLHF worker Kenya 2024",
+        "Appen worker pay AI 2024",
+        "Surge AI worker conditions 2024"
+      ],
+      "dedup_hint_slugs": [
+        "italien-ki-arbeitsbewertung-glovo",
+        "usa-amazon-warehouse-ki-kuendigung"
+      ]
+    },
+    {
+      "slug": "generative-ai-image-voice-harms",
+      "title": "Generative-AI: Voice-Cloning-Betrug und Image-Misuse",
+      "scope": "Voice-Clone-CEO-Betrug, KI-Stimm-Erpressung (Familien), nicht-konsensuelle Deepfake-Pornografie individueller Opfer, AI-Image-Misuse von Minderjährigen.",
+      "region_hint": "global",
+      "time_window": "2023-2025",
+      "suggested_searches": [
+        "deepfake voice fraud CEO 2024 case",
+        "AI voice clone kidnap scam 2024 family",
+        "non-consensual deepfake pornography 2024 victim",
+        "AI generated CSAM 2024 arrest",
+        "high school deepfake nude 2024 Westfield Almendralejo",
+        "celebrity deepfake porn X 2024 Taylor Swift"
+      ],
+      "dedup_hint_slugs": [
+        "usa-ai-voice-clone-betrug",
+        "usa-taylor-swift-deepfake-x-twitter",
+        "usa-lensa-ai-bilder-missbrauch"
+      ]
+    },
+    {
+      "slug": "china-surveillance-2023-2025",
+      "title": "China-Vertical: Surveillance-Innovationen, AI-Export, Xinjiang/Tibet/HK",
+      "scope": "China-spezifische Vorfälle: Tibet-Überwachung, Xinjiang-IJOP-Updates, Hongkong-Diversion, AI-Export an autoritäre Regime via Huawei/Hikvision/Megvii, neue Generative-AI-Vorfälle in China.",
+      "region_hint": "CN, HK, Xinjiang, Tibet, plus AI-Export-Empfänger",
+      "time_window": "2023-2025",
+      "suggested_searches": [
+        "Tibet AI surveillance 2024 HRW",
+        "Xinjiang IJOP update 2024 Citizen Lab",
+        "Huawei smart city export Africa 2024",
+        "Hikvision US sanctions 2024",
+        "China generative AI registration enforcement 2024",
+        "Hong Kong AI surveillance Article 23 2024",
+        "Megvii Sense Time 2024 deal"
+      ],
+      "dedup_hint_slugs": [
+        "china-social-credit-system",
+        "china-uiguren-ueberwachung",
+        "china-ki-covid-ueberwachung",
+        "china-ki-deepfake-propaganda",
+        "china-ki-journalisten-ueberwachung",
+        "hongkong-smart-city-ueberwachung"
+      ]
+    },
+    {
+      "slug": "climate-protest-surveillance-environment",
+      "title": "Klima-Protest-Überwachung und KI-Doppelnutzung Umwelt",
+      "scope": "KI-Überwachung von Klimaaktivist:innen, predictive policing gegen Protestbewegungen, KI-Energie-Vorhersage missbraucht zur Aktivisten-Identifikation, GPS/Mobile-Tracking-Massnahmen gegen Klimacamps.",
+      "region_hint": "DE, FR, NL, UK, US, AU",
+      "time_window": "2023-2025",
+      "suggested_searches": [
+        "climate protest surveillance Germany 2024",
+        "Just Stop Oil facial recognition 2024 UK",
+        "Letzte Generation Überwachung 2024",
+        "XR Extinction Rebellion surveillance 2024",
+        "Lützerath surveillance AI 2024",
+        "Dakota Access pipeline AI surveillance 2024"
+      ],
+      "dedup_hint_slugs": []
+    },
+    {
+      "slug": "cybersecurity-ai-defensive-offensive",
+      "title": "Cybersecurity-KI: Offensive und Defensive Vorfälle",
+      "scope": "KI-gestützte Cyberangriffe, AI-generierte Phishing-Welle, autonome Penetration-Testing-Vorfälle, KI-Defense-False-Positives, AI-Insider-Threat-Detection-Schäden.",
+      "region_hint": "global",
+      "time_window": "2023-2025",
+      "suggested_searches": [
+        "AI generated phishing campaign 2024 victim",
+        "deepfake CEO video call fraud 2024 Arup",
+        "AI cyber attack nation state 2024 Microsoft",
+        "autonomous penetration test AI 2024 incident",
+        "AI insider threat detection false 2024",
+        "OpenAI Anthropic abuse cybersecurity 2024"
+      ],
+      "dedup_hint_slugs": [
+        "anthropic-claude-gtg1002-cyberangriff-china"
+      ]
+    },
+    {
+      "slug": "ai-welfare-benefits-global-2023-2025",
+      "title": "Algorithmische Sozialleistungs-Entscheidungen weltweit",
+      "scope": "Welfare-/Sozialleistungs-Algorithmen mit dokumentierter Diskriminierung außerhalb des US/NL/UK-Bestands. Insbesondere skandinavische, asiatische, lateinamerikanische, mediterrane Fälle.",
+      "region_hint": "DK, FI, NO, AT, CH, GR, PT, IT, JP, KR, NZ, IL",
+      "time_window": "2022-2025",
+      "suggested_searches": [
+        "Denmark Udbetaling Danmark algorithm discrimination 2024",
+        "Norway NAV algorithm 2024 lawsuit",
+        "Greece welfare AI 2024 OPECA",
+        "Italy INPS algorithm discrimination 2024",
+        "New Zealand MSD welfare AI 2024",
+        "Korea AI welfare basic income 2024",
+        "Israel Bituach Leumi AI 2024"
+      ],
+      "dedup_hint_slugs": [
+        "australien-ki-welfare-fraud",
+        "australien-centrelink-ki-fraud-2025-robodebt-20",
+        "niederlande-ki-kindesgeld-skandal",
+        "spanien-ki-arbeitsmarkt-algorithmus",
+        "neuseeland-ki-wohlfahrt-algorithmus",
+        "uk-ki-wohlfahrt-universal-credit",
+        "irland-ki-wohlfahrt-pps",
+        "polen-ki-sozialleistungen-profiling",
+        "belgien-ki-sozialleistungen-betrug"
+      ]
+    },
+    {
+      "slug": "migration-border-ai-global",
+      "title": "Migrations- und Grenz-KI weltweit",
+      "scope": "KI an Grenzen: Asyl-Sprach-Tests, biometrische Massensammlung an Flughäfen, Predictive-Profiling im Mittelmeer/Atlantik/Karibik, KI-Sortierung von Asylanträgen, autonome Grenzdrohnen.",
+      "region_hint": "EU-Außengrenze, US-Mexiko, UK-Kanal, AU-Pazifik, IL-Westbank",
+      "time_window": "2023-2025",
+      "suggested_searches": [
+        "Frontex AI drone Mediterranean 2024",
+        "EU asylum AI language test 2024",
+        "BAMF DialektCheck 2024 update",
+        "US Border Patrol AI surveillance towers 2024 Anduril",
+        "UK Channel small boats AI 2024",
+        "Australia Pacific solution AI 2024",
+        "Greek asylum algorithm 2024"
+      ],
+      "dedup_hint_slugs": [
+        "deutschland-bamf-dialekt-erkennung",
+        "kolumbien-ki-migration-profiling",
+        "italien-ki-migration-scoring",
+        "saudi-arabien-neom-line-huwaitat-vertreibung-ki-ueberwachung"
+      ]
+    },
+    {
+      "slug": "platform-ai-recommender-harms",
+      "title": "Platform-Recommender-System-Schäden",
+      "scope": "Algorithmische Recommender-Systeme von TikTok, YouTube, Meta, X mit dokumentiertem Harm: Kinder-Gefährdung, Suizid-Spiralen, Radikalisierung, Wahlmanipulation per Algorithmus (nicht generative AI).",
+      "region_hint": "global",
+      "time_window": "2023-2025",
+      "suggested_searches": [
+        "TikTok algorithm child safety 2024 lawsuit",
+        "Meta Instagram teen mental health 2024 EU complaint",
+        "YouTube radicalization study 2024",
+        "X Twitter algorithm bias 2024",
+        "Snapchat AI minor harm 2024",
+        "Roblox AI safety child 2024"
+      ],
+      "dedup_hint_slugs": [
+        "usa-meta-ki-mental-health-teens",
+        "usa-social-media-kinderschutz-ueberwachung",
+        "usa-character-ai-setzer-suizid-florida"
+      ]
+    }
+  ]
+}

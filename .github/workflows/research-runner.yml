@@ -1,0 +1,106 @@
+name: Research-Runner — KI-Ethik-Fälle sammeln
+
+# Läuft cloud-seitig in GitHub Actions. Ruft die Anthropic API via
+# scripts/research-runner.js, sammelt Kandidaten per Topic und committet
+# die Ergebnisse zurück ins Repo (data/incident-candidates/).
+#
+# Voraussetzung: Repository Secret ANTHROPIC_API_KEY mit gültigem
+# console.anthropic.com API Key (separat vom Claude-Code-Login).
+#
+# Auslösung:
+#   - manuell: GitHub UI → Actions → "Research-Runner" → Run workflow
+#     (mit optionalen Inputs: max_topics, topic, round)
+#   - wöchentlich Sonntag 03:00 UTC (siehe schedule.cron)
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_topics:
+        description: 'Max. Anzahl Topics in diesem Lauf (leer = alle aus research-topics.json)'
+        required: false
+        default: ''
+      topic:
+        description: 'Slug eines einzelnen Topics (leer = alle / max_topics)'
+        required: false
+        default: ''
+      round:
+        description: 'Round-ID (leer = auto round-YYYY-MM-DD)'
+        required: false
+        default: ''
+  schedule:
+    # Wöchentlich Sonntag 03:00 UTC. Anpassen wenn anderer Rhythmus gewünscht.
+    - cron: '0 3 * * 0'
+
+permissions:
+  contents: write
+
+concurrency:
+  # Verhindert parallele Läufe — wenn ein Wochen-Lauf noch nicht durch ist
+  # und manuell einer gestartet wird, würde sonst Branch-Konflikt entstehen.
+  group: research-runner
+  cancel-in-progress: false
+
+jobs:
+  research:
+    name: Research + Commit Kandidaten
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          # Persistente Git-Credentials für das Push-Back.
+          persist-credentials: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify ANTHROPIC_API_KEY available
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Secret ANTHROPIC_API_KEY ist nicht gesetzt. Setze ihn unter Settings → Secrets → Actions."
+            exit 1
+          fi
+          echo "Key gefunden (Länge $(echo -n "$ANTHROPIC_API_KEY" | wc -c))."
+
+      - name: Run research-runner
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAX_TOPICS: ${{ github.event.inputs.max_topics }}
+          TOPIC: ${{ github.event.inputs.topic }}
+          ROUND: ${{ github.event.inputs.round }}
+        run: |
+          ARGS=""
+          [ -n "$MAX_TOPICS" ] && ARGS="$ARGS --max-topics $MAX_TOPICS"
+          [ -n "$TOPIC" ]      && ARGS="$ARGS --topic $TOPIC"
+          [ -n "$ROUND" ]      && ARGS="$ARGS --round $ROUND"
+          echo "Args: $ARGS"
+          node scripts/research-runner.js $ARGS
+
+      - name: Commit + push Kandidaten
+        run: |
+          # Nur committen wenn tatsächlich Files entstanden sind.
+          if ! git diff --quiet -- data/incident-candidates/ \
+             || ! git diff --cached --quiet -- data/incident-candidates/ \
+             || [ -n "$(git ls-files --others --exclude-standard -- data/incident-candidates/)" ]; then
+            git config user.name 'aistrikemap-research-bot'
+            git config user.email 'research-bot@aistrikemap.org'
+            git add data/incident-candidates/
+            RUN_LABEL="research-runner ${{ github.run_id }}"
+            git commit -m "Research-Runner Round: neue Kandidaten ($RUN_LABEL)
+
+Auto-generiert von .github/workflows/research-runner.yml.
+Nichts hier ist verifiziert — Promote-Schritt erforderlich.
+Siehe data/incident-candidates/_README.md.
+
+Workflow-Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            git push
+            echo "Commit + push done."
+          else
+            echo "Keine Änderungen in data/incident-candidates/ — kein Commit."
+          fi
