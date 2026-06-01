@@ -34,8 +34,12 @@ const path = require('path');
 const MODEL = process.env.RESEARCH_MODEL || 'claude-sonnet-4-5-20250929';
 const API_URL = 'https://api.anthropic.com/v1/messages';
 const ANTHROPIC_VERSION = '2023-06-01';
-const MAX_OUTPUT_TOKENS = 8000;
-const MAX_WEB_SEARCHES_PER_TOPIC = 25;
+const MAX_OUTPUT_TOKENS = 5000;
+const MAX_WEB_SEARCHES_PER_TOPIC = 5;
+// Pause zwischen Topics, damit das 30k-input-tokens/minute-Rate-Limit
+// (Tier 1 Anthropic) eingehalten wird. Ein Topic-Call inkl. web_search-
+// Snippets liegt typisch bei 20-30k Input-Tokens.
+const INTER_TOPIC_DELAY_MS = parseInt(process.env.RESEARCH_DELAY_MS || '75000', 10);
 
 const TOPICS_FILE = path.join(__dirname, 'research-topics.json');
 const OUTPUT_DIR = path.join(__dirname, '..', 'data', 'incident-candidates');
@@ -88,26 +92,33 @@ function selectTopics(allTopics, args) {
 
 function buildSystemPrompt() {
   return [
-    'Du bist ein Research-Agent für AIStrikeMap, eine investigative Plattform die KI-bezogene Menschenrechts-Vorfälle weltweit dokumentiert.',
+    'Du bist ein Research-Agent für AIStrikeMap, eine investigative Plattform die KI-bezogene Menschenrechts-Vorfälle dokumentiert.',
     '',
-    'Hard rules — kein einziger Verstoß:',
-    '1. NIE Fälle erfinden. Ohne fetchbare reale Quelle: weglassen.',
-    '2. NIE URLs fabrizieren. Nur URLs eintragen die in echten Search-Results aufgetaucht sind und plausibel laden.',
-    '3. Mindestens 1 Source pro Kandidat, idealerweise 2+.',
+    'KRITISCH — DEIN OUTPUT IST AUSSCHLIESSLICH DAS save_candidates TOOL:',
+    '- Du DARFST nicht ohne Aufruf von save_candidates fertig werden.',
+    '- Auch wenn dein Search-Budget knapp wird, rufe save_candidates mit dem was du bisher hast.',
+    '- Auch wenn du 0 oder 1 Kandidaten gefunden hast, rufe save_candidates trotzdem (mit dem Array, ggf. leer).',
+    '- Kein Prosa-Output ist erwünscht.',
+    '',
+    'Hard rules:',
+    '1. NIE Fälle erfinden. Ohne real existierende Quelle aus deinen Search-Results: weglassen.',
+    '2. NIE URLs fabrizieren. Nur URLs die du im web_search-Resultat gesehen hast.',
+    '3. Mindestens 1 Source pro Kandidat.',
     '4. DE-Beschreibungen mit echten Umlauten (ä/ö/ü/ß), niemals ae/oe/ue/ss.',
-    '5. Du gibst Resultate AUSSCHLIESSLICH über das save_candidates Tool ab. Kein Prosa-Output.',
     '',
-    'Schema pro Kandidat (genau diese Form):',
-    '  candidate_id, discovered_at (ISO UTC), researcher, round, status="candidate",',
+    'Token-Budget: web_search Resultate sind teuer. Mache MAX 5 gezielte Suchen, dann sammle. Lieber 5 hochwertige Kandidaten als 25 schwache.',
+    '',
+    'Schema pro Kandidat:',
+    '  candidate_id (slug-style), discovered_at (ISO UTC), researcher (gegeben), round (gegeben), status="candidate",',
     '  candidate_data: { name_de, name_en, startDate, location: {name_de, name_en, country, lat?, lng?},',
     '                    incidentType[], candidate_severity (1-5), candidate_verification (1-4),',
     '                    description_de, description_en, actors[], sources[] },',
     '  researcher_notes, dedup_hint.',
     '',
-    'incidentType vocabulary: surveillance, predictive-policing, autonomous-weapons, discrimination, deepfakes, data-misuse, military-ai, facial-recognition, censorship, labor-exploitation, political-pressure.',
-    'sources[].type vocabulary: news-article, research-paper, ngo-report, government-document, court-filing, legal-ruling, regulatory-decision, encyclopedia, analysis, whistleblower-document.',
+    'incidentType vocab: surveillance, predictive-policing, autonomous-weapons, discrimination, deepfakes, data-misuse, military-ai, facial-recognition, censorship, labor-exploitation, political-pressure.',
+    'sources[].type vocab: news-article, research-paper, ngo-report, government-document, court-filing, legal-ruling, regulatory-decision, encyclopedia, analysis, whistleblower-document.',
     '',
-    'Verwende web_search aggressiv um Treffer zu finden, lies die Search-Results sorgfältig, und konsolidiere zu ~15-25 Kandidaten pro Topic.'
+    'Ziel: 5-12 hochwertige Kandidaten pro Topic. RUFE save_candidates AM ENDE.'
   ].join('\n');
 }
 
@@ -208,6 +219,27 @@ function extractCandidatesFromResponse(resp) {
   return [];
 }
 
+// Diagnostic: when save_candidates was NOT called, summarize what
+// blocks we did get so the operator can debug.
+function summarizeResponseBlocks(resp) {
+  if (!resp || !Array.isArray(resp.content)) return 'no content array';
+  const summary = [];
+  for (const block of resp.content) {
+    if (block.type === 'text') {
+      summary.push('text(' + (block.text || '').length + ' chars)');
+    } else if (block.type === 'tool_use') {
+      summary.push('tool_use:' + block.name);
+    } else if (block.type === 'server_tool_use') {
+      summary.push('server_tool_use:' + (block.name || '?'));
+    } else if (block.type === 'web_search_tool_result') {
+      summary.push('web_search_result');
+    } else {
+      summary.push(block.type);
+    }
+  }
+  return summary.join(',') + ' (stop_reason=' + (resp.stop_reason || '?') + ')';
+}
+
 // --- Output ------------------------------------------------------------------
 
 function ensureOutputDir() {
@@ -254,17 +286,24 @@ async function main(argv) {
       continue;
     }
 
+    // Rate-limit-Sleep zwischen Topics (außer vor dem ersten).
+    if (i > 0 && INTER_TOPIC_DELAY_MS > 0) {
+      console.log('      sleep ' + Math.round(INTER_TOPIC_DELAY_MS / 1000) + 's vor Topic ' + (i + 1) + ' (rate-limit)');
+      await new Promise((r) => setTimeout(r, INTER_TOPIC_DELAY_MS));
+    }
+
     try {
       const userPrompt = buildUserPrompt(topic, roundId);
       const resp = await callAnthropicWithWebSearch(system, userPrompt);
       const candidates = extractCandidatesFromResponse(resp);
       writeCandidates(outFile, candidates);
       const usage = resp.usage || {};
-      console.log('      candidates=' + candidates.length + ' input_tokens=' + (usage.input_tokens || '?') + ' output_tokens=' + (usage.output_tokens || '?'));
+      const debug = candidates.length === 0 ? ' [no candidates; blocks=' + summarizeResponseBlocks(resp) + ']' : '';
+      console.log('      candidates=' + candidates.length + ' input_tokens=' + (usage.input_tokens || '?') + ' output_tokens=' + (usage.output_tokens || '?') + debug);
       summary.push({ topic: topic.slug, candidates: candidates.length, file: outFile });
     } catch (err) {
-      console.error('      FAILED: ' + (err.message || err));
-      summary.push({ topic: topic.slug, error: err.message || String(err), file: outFile });
+      console.error('      FAILED: ' + (err.message || err).slice(0, 300));
+      summary.push({ topic: topic.slug, error: (err.message || String(err)).slice(0, 200), file: outFile });
     }
   }
 

@@ -44,7 +44,9 @@ jobs:
   research:
     name: Research + Commit Kandidaten
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # Topics laufen sequentiell mit Rate-Limit-Pause; ~3 Min/Topic × 22 Topics
+    # plus Safety-Margin. Anpassbar wenn sich Rate-Limit ändert.
+    timeout-minutes: 120
     steps:
       - name: Checkout repo
         uses: actions/checkout@v5
