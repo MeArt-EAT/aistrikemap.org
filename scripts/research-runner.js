@@ -105,6 +105,7 @@ function buildSystemPrompt() {
     '2. NIE URLs fabrizieren. Nur URLs die du im web_search-Resultat gesehen hast.',
     '3. Mindestens 1 Source pro Kandidat.',
     '4. DE-Beschreibungen mit echten Umlauten (ä/ö/ü/ß), niemals ae/oe/ue/ss.',
+    '5. JSON-Strings sind ASCII-quote-only ("..."), KEINE typografischen/Smart-Quotes (NIE „..." oder \'\'...\'\' oder ‚...\'). Auch innerhalb der Texte (description_de etc.) NIEMALS „X" oder \'X\' verwenden — wenn du wirklich Anführungszeichen im Text brauchst, escape sie als \\"X\\" innerhalb des JSON-Strings.',
     '',
     'Token-Budget: web_search Resultate sind teuer. Mache MAX 5 gezielte Suchen, dann sammle. Lieber 5 hochwertige Kandidaten als 25 schwache.',
     '',
