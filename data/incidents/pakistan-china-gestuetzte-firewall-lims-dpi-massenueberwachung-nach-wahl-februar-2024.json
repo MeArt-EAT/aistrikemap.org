@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/pakistan-china-gestuetzte-firewall-lims-dpi-massenueberwachung-nach-wahl-februar-2024",
+  "name": "Pakistan: China-gestützte Firewall + LIMS — DPI-Massenüberwachung nach Wahl Februar 2024",
+  "name_de": "Pakistan: China-gestützte Firewall + LIMS — DPI-Massenüberwachung nach Wahl Februar 2024",
+  "name_en": "Pakistan: China-backed firewall + LIMS — DPI mass surveillance after February 2024 election",
+  "description": "Nach der umstrittenen Februar-2024-Wahl ordnete der pakistanische Regulierer alle Telekomanbieter an, das Lawful Intercept Management System (LIMS) zu installieren — Geheimdienste erhalten damit Echtzeit-Zugriff auf Anrufprotokolle, Nachrichten und Browsing. Parallel wurde im Juli/August 2024 das Web Management System auf chinesische Deep-Packet-Inspection-Hardware umgerüstet, das Metadaten auch aus verschlüsselten Verbindungen sammelt und gezielt einzelne Funktionen von Apps blockieren kann (WhatsApp-Voice, X). Al Jazeera, The Register und net4people dokumentieren erhebliche Verlangsamung des landesweiten Internets sowie zielgerichtete Drosselung gegen die Imran-Khan-Opposition.",
+  "description_de": "Nach der umstrittenen Februar-2024-Wahl ordnete der pakistanische Regulierer alle Telekomanbieter an, das Lawful Intercept Management System (LIMS) zu installieren — Geheimdienste erhalten damit Echtzeit-Zugriff auf Anrufprotokolle, Nachrichten und Browsing. Parallel wurde im Juli/August 2024 das Web Management System auf chinesische Deep-Packet-Inspection-Hardware umgerüstet, das Metadaten auch aus verschlüsselten Verbindungen sammelt und gezielt einzelne Funktionen von Apps blockieren kann (WhatsApp-Voice, X). Al Jazeera, The Register und net4people dokumentieren erhebliche Verlangsamung des landesweiten Internets sowie zielgerichtete Drosselung gegen die Imran-Khan-Opposition.",
+  "description_en": "After the contested February 2024 election Pakistan's regulator ordered all telecom operators to install the Lawful Intercept Management System (LIMS) — giving intelligence agencies real-time access to call logs, messages and browsing histories. In parallel, in July/August 2024 the Web Management System was upgraded with Chinese deep-packet-inspection hardware capable of collecting metadata from encrypted connections and selectively blocking individual app features (WhatsApp Voice, X). Al Jazeera, The Register and net4people document significant nationwide slowdowns and targeted throttling against the Imran Khan opposition.",
+  "startDate": "2024-07",
+  "location": {
+    "@type": "Place",
+    "name": "Pakistan (Islamabad, landesweit)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.6844,
+      "longitude": 73.0479
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PK"
+    },
+    "name_de": "Pakistan (Islamabad, landesweit)",
+    "name_en": "Pakistan (Islamabad, nationwide)"
+  },
+  "asm:incidentType": [
+    "surveillance",
+    "censorship",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Pakistan Telecommunication Authority (PTA)",
+      "type": "government",
+      "asm:systems": [
+        "Web Management System (WMS)",
+        "Lawful Intercept Management System (LIMS)"
+      ],
+      "name_de": "Pakistan Telecommunication Authority (PTA)",
+      "name_en": "Pakistan Telecommunication Authority (PTA)"
+    },
+    {
+      "name": "Chinese DPI equipment vendor (unverified, replacing Canadian Sandvine)",
+      "type": "company",
+      "asm:systems": [
+        "Deep Packet Inspection hardware"
+      ],
+      "name_de": "Chinese DPI equipment vendor (unverified, replacing Canadian Sandvine)",
+      "name_en": "Chinese DPI equipment vendor (unverified, replacing Canadian Sandvine)"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.aljazeera.com/news/2024/11/26/pakistan-tests-china-like-digital-firewall-to-tighten-online-surveillance",
+      "title": "Pakistan tests secret China-like 'firewall' to tighten online surveillance",
+      "publisher": "Al Jazeera",
+      "date": "2024-11-26",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Pakistan tests secret China-like 'firewall' to tighten online surveillance",
+      "title_en": "Pakistan tests secret China-like 'firewall' to tighten online surveillance"
+    },
+    {
+      "url": "https://www.theregister.com/2024/08/20/pakistan_minister_denies_firewall/",
+      "title": "Pakistan's internet slows, industry group blames censorship",
+      "publisher": "The Register",
+      "date": "2024-08-20",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Pakistan's internet slows, industry group blames censorship",
+      "title_en": "Pakistan's internet slows, industry group blames censorship"
+    },
+    {
+      "url": "https://github.com/net4people/bbs/issues/510",
+      "title": "National 'web management system' firewall in Pakistan reportedly uses equipment from China",
+      "publisher": "net4people (technical community)",
+      "date": "2024",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "National 'web management system' firewall in Pakistan reportedly uses equipment from China",
+      "title_en": "National 'web management system' firewall in Pakistan reportedly uses equipment from China"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "pakistan-firewall-china-dpi-2024-lims-wahlen",
+    "promotedFromRound": "round-1-2026-06-01"
+  }
+}

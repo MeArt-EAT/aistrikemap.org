@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/japan-line-yahoo-naver-datenleck-510-000-nutzer-offengelegt-regierungsdirektive-zur",
+  "name": "Japan: LINE-Yahoo-NAVER-Datenleck — 510.000 Nutzer offengelegt, Regierungsdirektive zur Entkopplung",
+  "name_de": "Japan: LINE-Yahoo-NAVER-Datenleck — 510.000 Nutzer offengelegt, Regierungsdirektive zur Entkopplung",
+  "name_en": "Japan: LINE-Yahoo-NAVER data breach — 510,000 users exposed, government directive to disentangle",
+  "description": "Im November 2023 wurden mehr als 510.000 Datensätze von LINE-Nutzer:innen kompromittiert, nachdem Angreifer über NAVER-Cloud-Zugangsdaten ehemaliger Mitarbeitender in LY-Corp-Systeme eindrangen. Im März 2024 erließ das japanische Innenministerium eine 'administrative Guidance', die LINE und NAVER zur technischen Entkopplung zwingt; im April 2024 lehnte das Ministerium den Sicherheitsplan von Yahoo Japan als unzureichend ab. LY Corp kündigte an, die System-Trennung bis Ende 2024 abzuschließen. Der Vorfall führte zu diplomatischen Spannungen zwischen Tokio und Seoul, da NAVER zur Reduzierung seiner Anteile gedrängt wurde.",
+  "description_de": "Im November 2023 wurden mehr als 510.000 Datensätze von LINE-Nutzer:innen kompromittiert, nachdem Angreifer über NAVER-Cloud-Zugangsdaten ehemaliger Mitarbeitender in LY-Corp-Systeme eindrangen. Im März 2024 erließ das japanische Innenministerium eine 'administrative Guidance', die LINE und NAVER zur technischen Entkopplung zwingt; im April 2024 lehnte das Ministerium den Sicherheitsplan von Yahoo Japan als unzureichend ab. LY Corp kündigte an, die System-Trennung bis Ende 2024 abzuschließen. Der Vorfall führte zu diplomatischen Spannungen zwischen Tokio und Seoul, da NAVER zur Reduzierung seiner Anteile gedrängt wurde.",
+  "description_en": "In November 2023 over 510,000 LINE user records were compromised after attackers used former-employee NAVER Cloud credentials to access LY Corp systems. In March 2024 Japan's Ministry of Internal Affairs and Communications issued an administrative guidance requiring LINE and NAVER to disentangle their tech stacks; in April 2024 the ministry rejected Yahoo Japan's remediation plan as inadequate. LY Corp announced full system separation from NAVER Cloud by end of 2024. The case provoked Tokyo-Seoul diplomatic friction since NAVER was pressured to reduce its stake.",
+  "startDate": "2024-03",
+  "location": {
+    "@type": "Place",
+    "name": "Japan (Tokio)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.6762,
+      "longitude": 139.6503
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "JP"
+    },
+    "name_de": "Japan (Tokio)",
+    "name_en": "Japan (Tokyo)"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "surveillance"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "LY Corporation (LINE + Yahoo Japan)",
+      "type": "company",
+      "asm:systems": [
+        "LINE messaging platform"
+      ],
+      "name_de": "LY Corporation (LINE + Yahoo Japan)",
+      "name_en": "LY Corporation (LINE + Yahoo Japan)"
+    },
+    {
+      "name": "NAVER Corporation (Korea)",
+      "type": "company",
+      "asm:systems": [
+        "NAVER Cloud infrastructure"
+      ],
+      "name_de": "NAVER Corporation (Korea)",
+      "name_en": "NAVER Corporation (Korea)"
+    },
+    {
+      "name": "Japan Ministry of Internal Affairs and Communications",
+      "type": "government",
+      "asm:systems": [
+        "Administrative guidance (gyoseishido)"
+      ],
+      "name_de": "Japan Ministry of Internal Affairs and Communications",
+      "name_en": "Japan Ministry of Internal Affairs and Communications"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.theregister.com/2024/03/06/japan_line_naver_infosec_guidance/",
+      "title": "Japan orders LINE and NAVER to disentangle their tech",
+      "publisher": "The Register",
+      "date": "2024-03-06",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Japan orders LINE and NAVER to disentangle their tech",
+      "title_en": "Japan orders LINE and NAVER to disentangle their tech"
+    },
+    {
+      "url": "https://www.theregister.com/2024/04/17/japan_rejects_line_yahoo_security_plan/",
+      "title": "Japanese government rejects Yahoo's plan to fix security",
+      "publisher": "The Register",
+      "date": "2024-04-17",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Japanese government rejects Yahoo's plan to fix security",
+      "title_en": "Japanese government rejects Yahoo's plan to fix security"
+    },
+    {
+      "url": "https://www.darkreading.com/cybersecurity-operations/japan-line-breach-clean-up-post-merger-tech-sprawl",
+      "title": "Japan on Line Breach: Clean Up Post-Merger Tech Sprawl",
+      "publisher": "Dark Reading",
+      "date": "2024",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Japan on Line Breach: Clean Up Post-Merger Tech Sprawl",
+      "title_en": "Japan on Line Breach: Clean Up Post-Merger Tech Sprawl"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "japan-line-naver-datenleck-2023-2024-tokio-direktive",
+    "promotedFromRound": "round-1-2026-06-01"
+  }
+}

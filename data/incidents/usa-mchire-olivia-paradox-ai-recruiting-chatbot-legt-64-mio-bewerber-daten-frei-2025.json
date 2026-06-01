@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-mchire-olivia-paradox-ai-recruiting-chatbot-legt-64-mio-bewerber-daten-frei-2025",
+  "name": "USA: McHire/Olivia — Paradox.ai-Recruiting-Chatbot legt 64 Mio. Bewerber-Daten frei",
+  "name_de": "USA: McHire/Olivia — Paradox.ai-Recruiting-Chatbot legt 64 Mio. Bewerber-Daten frei",
+  "name_en": "USA: McHire/Olivia — Paradox.ai recruiting chatbot exposes 64M applicants' data",
+  "description": "Am 30. Juni 2025 fanden die Sicherheitsforscher Ian Carroll und Sam Curry über McHire — McDonald's KI-Recruiting-Plattform von Paradox.ai mit dem Chatbot „Olivia“ — eine Admin-Konsole mit dem Standardpasswort „123456“. Über eine Insecure-Direct-Object-Reference-Lücke konnten sie Bewerber-IDs absteigend durchzählen und Datensätze von mehr als 64 Millionen Job-Bewerber:innen einsehen: Namen, E-Mails, Telefonnummern, Auth-Tokens — ohne Rate-Limit oder MFA. McDonald's und Paradox.ai bestätigten und schlossen die Lücke innerhalb eines Tages.",
+  "description_de": "Am 30. Juni 2025 fanden die Sicherheitsforscher Ian Carroll und Sam Curry über McHire — McDonald's KI-Recruiting-Plattform von Paradox.ai mit dem Chatbot „Olivia“ — eine Admin-Konsole mit dem Standardpasswort „123456“. Über eine Insecure-Direct-Object-Reference-Lücke konnten sie Bewerber-IDs absteigend durchzählen und Datensätze von mehr als 64 Millionen Job-Bewerber:innen einsehen: Namen, E-Mails, Telefonnummern, Auth-Tokens — ohne Rate-Limit oder MFA. McDonald's und Paradox.ai bestätigten und schlossen die Lücke innerhalb eines Tages.",
+  "description_en": "On 30 June 2025 security researchers Ian Carroll and Sam Curry accessed McHire — McDonald's AI recruiting platform built by Paradox.ai with the ‘Olivia' chatbot — by logging in to the admin console with the default password ‘123456'. An Insecure Direct Object Reference flaw let them iterate applicant IDs and view records of more than 64 million job applicants: names, emails, phone numbers, auth tokens — no rate limit, no MFA. McDonald's and Paradox.ai confirmed and patched within hours.",
+  "startDate": "2025-06-30",
+  "location": {
+    "@type": "Place",
+    "name": "Scottsdale, Arizona (Paradox.ai HQ)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.4942,
+      "longitude": -111.9261
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Scottsdale, Arizona (Paradox.ai HQ)",
+    "name_en": "Scottsdale, Arizona (Paradox.ai HQ)"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "labor-exploitation"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Paradox.ai",
+      "type": "company",
+      "asm:systems": [
+        "McHire",
+        "Olivia chatbot"
+      ],
+      "name_de": "Paradox.ai",
+      "name_en": "Paradox.ai"
+    },
+    {
+      "name": "McDonald's Corporation",
+      "type": "company",
+      "asm:systems": [],
+      "name_de": "McDonald's Corporation",
+      "name_en": "McDonald's Corporation"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.csoonline.com/article/4020919/mcdonalds-ai-hiring-tools-password-123456-exposes-data-of-64m-applicants.html",
+      "title": "McDonald's AI hiring tool's password '123456' exposed data of 64M applicants",
+      "publisher": "CSO Online",
+      "date": "2025-07",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "McDonald's AI hiring tool's password '123456' exposed data of 64M applicants",
+      "title_en": "McDonald's AI hiring tool's password '123456' exposed data of 64M applicants"
+    },
+    {
+      "url": "https://adversa.ai/blog/mcdonalds-ai-hiring-chatbot-olivia-by-paradox-ai-security-incident/",
+      "title": "McDonald's AI Chatbot Incident: Key Takeaways",
+      "publisher": "Adversa AI",
+      "date": "2025-07",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "McDonald's AI Chatbot Incident: Key Takeaways",
+      "title_en": "McDonald's AI Chatbot Incident: Key Takeaways"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "usa-mcdonalds-paradox-mchire-olivia-leak-2025",
+    "promotedFromRound": "round-1-2026-06-01"
+  }
+}
