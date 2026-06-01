@@ -225,6 +225,19 @@ function loadAllLayers(country, isco, year) {
   ].filter(Boolean);
 }
 
+// --- Taxonomy ----------------------------------------------------------------
+
+/**
+ * Load the curated ISCO-08 4-digit taxonomy (MVP step 3).
+ * Returns { version, isco_revision, cluster_groups[], occupations[] }.
+ * Path is overridable for tests via the `taxonomyPath` parameter.
+ */
+function loadTaxonomy(taxonomyPath) {
+  const file = taxonomyPath || path.join(__dirname, '..', 'data', 'career', 'taxonomy.json');
+  const raw = fs.readFileSync(file, 'utf8');
+  return JSON.parse(raw);
+}
+
 // --- Manifest ----------------------------------------------------------------
 
 function buildManifest({ countries, generatedAt, sourcesUsed }) {
@@ -359,6 +372,7 @@ module.exports = {
   flagEdgeCases,
   buildEntry,
   loadAllLayers,
+  loadTaxonomy,
   // manifest + IO
   buildManifest,
   collectSourcesUsed,

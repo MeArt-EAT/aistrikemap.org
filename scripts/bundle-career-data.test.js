@@ -12,6 +12,7 @@ const {
   median, mean, stddev, round,
   aggregateScore, markOutliers, classifyConfidence, flagEdgeCases, buildEntry,
   buildManifest, collectSourcesUsed,
+  loadTaxonomy,
   DIVERGENT_STDDEV_CUTOFF, OUTLIER_FACTOR, STALE_THRESHOLD_YEARS
 } = require('./bundle-career-data');
 
@@ -301,6 +302,80 @@ test('collectSourcesUsed dedupes by layer + name', () => {
 });
 test('collectSourcesUsed handles entries with no sources', () => {
   assert.deepEqual(collectSourcesUsed([{}, { sources: [] }]), []);
+});
+
+// --- taxonomy (MVP step 3) ---------------------------------------------------
+
+group('taxonomy');
+
+const tax = loadTaxonomy();
+
+test('taxonomy loads with correct top-level metadata', () => {
+  assert.equal(tax.isco_revision, 'ISCO-08');
+  assert.ok(typeof tax.version === 'string');
+  assert.ok(Array.isArray(tax.cluster_groups));
+  assert.ok(Array.isArray(tax.occupations));
+});
+
+test('taxonomy has exactly the planned 82 occupations', () => {
+  // MVP-Scope (career-dashboard-mvp-scope.md): 10+8+10+6+12+10+8+6+6+6 = 82
+  assert.equal(tax.occupations.length, 82);
+});
+
+test('taxonomy has 10 cluster groups', () => {
+  assert.equal(tax.cluster_groups.length, 10);
+});
+
+test('taxonomy: every ISCO code is unique', () => {
+  const seen = new Set();
+  for (const occ of tax.occupations) {
+    assert.ok(!seen.has(occ.isco), `duplicate ISCO ${occ.isco}`);
+    seen.add(occ.isco);
+  }
+});
+
+test('taxonomy: every ISCO code is a 4-digit string', () => {
+  for (const occ of tax.occupations) {
+    assert.match(occ.isco, /^\d{4}$/, `bad ISCO format: ${occ.isco}`);
+  }
+});
+
+test('taxonomy: every occupation has required fields', () => {
+  for (const occ of tax.occupations) {
+    assert.ok(typeof occ.label_de === 'string' && occ.label_de.length > 0, `missing label_de on ${occ.isco}`);
+    assert.ok(typeof occ.label_en === 'string' && occ.label_en.length > 0, `missing label_en on ${occ.isco}`);
+    assert.ok(Array.isArray(occ.aliases_de), `missing aliases_de on ${occ.isco}`);
+    assert.ok(Array.isArray(occ.aliases_en), `missing aliases_en on ${occ.isco}`);
+  }
+});
+
+test('taxonomy: every cluster reference resolves to a cluster_group', () => {
+  const clusterKeys = new Set(tax.cluster_groups.map(c => c.key));
+  for (const occ of tax.occupations) {
+    assert.ok(clusterKeys.has(occ.cluster), `unknown cluster on ${occ.isco}: ${occ.cluster}`);
+  }
+});
+
+test('taxonomy: every cluster_group has required i18n metadata', () => {
+  for (const cg of tax.cluster_groups) {
+    assert.ok(typeof cg.key === 'string' && cg.key.length > 0);
+    assert.ok(typeof cg.i18n_key === 'string' && cg.i18n_key.startsWith('career.cluster.'),
+      `bad i18n_key on cluster ${cg.key}`);
+    assert.ok(typeof cg.label_de === 'string' && cg.label_de.length > 0);
+    assert.ok(typeof cg.label_en === 'string' && cg.label_en.length > 0);
+  }
+});
+
+test('taxonomy: cluster distribution matches MVP-Scope plan', () => {
+  const expected = {
+    healthcare: 10, it: 8, admin: 10, education: 6, crafts: 12,
+    service: 10, transport: 8, legal: 6, creative: 6, industry: 6
+  };
+  const actual = {};
+  for (const occ of tax.occupations) {
+    actual[occ.cluster] = (actual[occ.cluster] || 0) + 1;
+  }
+  assert.deepEqual(actual, expected);
 });
 
 // --- summary -----------------------------------------------------------------
