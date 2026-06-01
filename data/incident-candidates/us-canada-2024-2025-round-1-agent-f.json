@@ -4,7 +4,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Mobley v. Workday — Sammelklage gegen KI-Bewerber-Screening wegen Altersdiskriminierung",
       "name_en": "USA: Mobley v. Workday — Collective action over AI applicant screening and age discrimination",
@@ -60,7 +60,7 @@
     "researcher_notes": "Confidence hoch: mehrere Anwaltskanzlei-Bestätigungen, Court-Filing-Tracker. Severity 3 (kollektive Diskriminierung, kein körperlicher Schaden). Verification 4 (Court order + öffentliche Filings).",
     "dedup_hint": "mobley workday adea age discrimination ai hiring 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:20:21.999Z",
+      "verified_at": "2026-06-01T11:50:47.200Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -93,7 +93,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: NHTSA-Untersuchung gegen Tesla Full Self-Driving — Sichtbehinderungs-Crashs mit Todesfall",
       "name_en": "USA: NHTSA investigation into Tesla Full Self-Driving — reduced-visibility crashes with fatality",
@@ -154,7 +154,7 @@
     "researcher_notes": "Distinkt vom bestehenden usa-tesla-autopilot-todesfaelle (das war Autopilot-historisch). Hier: spezifische FSD-Sichtbehinderungs-Probe ab Okt. 2024, neuer Todesfall, 7 Monate Melde-Verzögerung. Verification 4 (NHTSA-Aktionen sind öffentlich dokumentiert).",
     "dedup_hint": "tesla fsd nhtsa visibility 2024 engineering analysis recall",
     "verification_log": {
-      "verified_at": "2026-06-01T09:20:47.190Z",
+      "verified_at": "2026-06-01T11:50:48.927Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -171,12 +171,12 @@
         },
         {
           "url": "https://www.insurancejournal.com/news/national/2026/03/20/862650.htm",
-          "http_status": null,
-          "matches_content": false,
-          "note": "fetch-error: This operation was aborted"
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.80 hits=8 year=2024"
         }
       ],
-      "match_count": 2,
+      "match_count": 3,
       "sources_count": 3
     },
     "promoted_to_slug": "usa-nhtsa-untersuchung-gegen-tesla-full-self-driving-sichtbehinderungs-crashs-mit",
@@ -187,7 +187,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "USA: Thomson Reuters v. Ross Intelligence — erstes US-Urteil gegen Fair-Use beim KI-Training",
       "name_en": "USA: Thomson Reuters v. Ross Intelligence — first US ruling rejecting fair use for AI training",
@@ -249,7 +249,7 @@
     "researcher_notes": "Confidence hoch. Severity 2 (kein direkter Personenschaden, aber präzedenzielle Wirkung auf KI-Industrie). Verification 4 (öffentliches Urteil).",
     "dedup_hint": "thomson reuters ross intelligence westlaw fair use ai training 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:20:50.467Z",
+      "verified_at": "2026-06-01T11:50:49.929Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -260,9 +260,9 @@
         },
         {
           "url": "https://www.jenner.com/en/news-insights/publications/client-alert-court-decides-that-use-of-copyrighted-works-in-ai-training-is-not-fair-use-thomson-reuters-enterprise-centre-gmbh-v-ross-intelligence-inc",
-          "http_status": 200,
-          "matches_content": true,
-          "note": "match score=0.96 hits=8 year=2025"
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
         },
         {
           "url": "https://patentlyo.com/patent/2025/09/headnote-thomson-reuters.html",
@@ -271,7 +271,7 @@
           "note": "http-error"
         }
       ],
-      "match_count": 2,
+      "match_count": 1,
       "sources_count": 3
     },
     "promoted_to_slug": "usa-thomson-reuters-v-ross-intelligence-erstes-us-urteil-gegen-fair-use-beim-ki-training",
@@ -282,7 +282,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Bartz v. Anthropic — 1,5-Mrd.-Dollar-Vergleich wegen Training mit Piraten-Büchern",
       "name_en": "USA: Bartz v. Anthropic — $1.5 billion settlement over training on pirated books",
@@ -337,7 +337,7 @@
     "researcher_notes": "Confidence sehr hoch. Wirkungsstark als Präzedenz für AI-Training-Urheberrecht. Verification 4.",
     "dedup_hint": "bartz anthropic libgen claude copyright settlement 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:15.642Z",
+      "verified_at": "2026-06-01T11:51:15.104Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -370,7 +370,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: McHire/Olivia — Paradox.ai-Recruiting-Chatbot legt 64 Mio. Bewerber-Daten frei",
       "name_en": "USA: McHire/Olivia — Paradox.ai recruiting chatbot exposes 64M applicants' data",
@@ -425,7 +425,7 @@
     "researcher_notes": "Confidence hoch (mehrere unabhängige Tech-Outlets, Original-Forscher namentlich). Severity 3 (massive Datenfreigabe, kein direkter körperlicher Schaden). Verification 4.",
     "dedup_hint": "mcdonalds mchire paradox olivia chatbot data leak 64m 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:18.326Z",
+      "verified_at": "2026-06-01T11:51:17.362Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -452,7 +452,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Kanada: Clearview AI v. Alberta — Datenschutz-Urteil zur Anwendbarkeit von PIPA auf US-Scraping",
       "name_en": "Canada: Clearview AI v. Alberta — privacy ruling on extraterritorial reach of PIPA over US scraping",
@@ -514,7 +514,7 @@
     "researcher_notes": "Distinkt von bestehendem kanada-rcmp-clearview (Polizei-Nutzung). Hier: Provinz-Datenschutzbehörden-Verfahren in Alberta + BC. Verification 4 (zwei Court-Urteile dokumentiert).",
     "dedup_hint": "clearview ai alberta pipa kbb 2025 privacy commissioner ruling",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:22.935Z",
+      "verified_at": "2026-06-01T11:51:19.854Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -525,9 +525,9 @@
         },
         {
           "url": "https://mcmillan.ca/insights/publications/alberta-court-weighs-in-on-clearview-ai-wins-losses-and-key-takeaways/",
-          "http_status": 200,
-          "matches_content": true,
-          "note": "match score=0.95 hits=8 year=2025"
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
         },
         {
           "url": "https://www.biometricupdate.com/202501/canadian-court-upholds-clearview-biometric-data-ban",
@@ -536,7 +536,7 @@
           "note": "match score=0.75 hits=8 year=2025"
         }
       ],
-      "match_count": 3,
+      "match_count": 2,
       "sources_count": 3
     },
     "promoted_to_slug": "kanada-clearview-ai-v-alberta-datenschutz-urteil-zur-anwendbarkeit-von-pipa-auf-us",
@@ -547,7 +547,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Amazon „Just Walk Out“ — angebliche KI lief in Wahrheit über 1.000 Niedriglohn-Worker in Indien",
       "name_en": "USA: Amazon ‘Just Walk Out' — purported AI actually relied on ~1,000 low-paid Indian workers",
@@ -596,7 +596,7 @@
     "researcher_notes": "Confidence medium-hoch. Zahl 1.000 ist branchenweit zitiert, Amazon hat sie nicht offiziell bestätigt. Severity 2 (Arbeits- und Verbraucher-Täuschung, kein körperlicher Schaden). Verification 3.",
     "dedup_hint": "amazon just walk out fake ai india workers ghost work 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:23.952Z",
+      "verified_at": "2026-06-01T11:51:20.319Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -623,7 +623,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Perplexity AI verklagt von Dow Jones / New York Post und New York Times wegen Urheberrechts-Massenkopien",
       "name_en": "USA: Perplexity AI sued by Dow Jones / New York Post and the New York Times for mass copyright infringement",
@@ -671,7 +671,7 @@
     "researcher_notes": "Confidence hoch. Severity 2 (Wirtschafts-/Presse-Schaden, kein körperlicher). Verification 4.",
     "dedup_hint": "perplexity ai dow jones wsj ny post nytimes copyright lawsuit 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:25.804Z",
+      "verified_at": "2026-06-01T11:51:21.387Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -698,7 +698,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "USA: Texas v. Allstate / Arity — Daten-Sammelklage gegen Fahrer-Tracking für KI-Underwriting",
       "name_en": "USA: Texas v. Allstate / Arity — state lawsuit over driver tracking for AI insurance underwriting",
@@ -755,7 +755,7 @@
     "researcher_notes": "Confidence hoch. KI-Nexus: Tracking-Daten in algorithmischem Underwriting. Verification 4 (öffentliche AG-Klage).",
     "dedup_hint": "texas allstate arity driver tracking ai underwriting tdpsa 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:28.354Z",
+      "verified_at": "2026-06-01T11:51:23.078Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -782,7 +782,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Porcha Woodruff v. Detroit — Fehl-Festnahme einer Hochschwangeren durch Gesichtserkennung führt zu Reform",
       "name_en": "USA: Porcha Woodruff v. Detroit — pregnant woman's wrongful arrest by facial recognition forces policy reform",
@@ -839,7 +839,7 @@
     "researcher_notes": "Distinkt von usa-angela-lipps-fargo-clearview-fehlhaftung (anderer Fall). Severity 4 (Festnahme einer Hochschwangeren, Trauma-Konsequenzen, breitere Reform). Verification 4.",
     "dedup_hint": "porcha woodruff detroit facial recognition pregnant arrest 2024 policy",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:30.406Z",
+      "verified_at": "2026-06-01T11:51:24.928Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -872,7 +872,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "USA: Disney und Universal verklagen Midjourney wegen massiver Urheberrechts-Verletzung durch KI-Bildgenerator",
       "name_en": "USA: Disney and Universal sue Midjourney for mass copyright infringement by AI image generator",
@@ -920,7 +920,7 @@
     "researcher_notes": "Confidence hoch. Severity 2 (Verleger-/Studio-Konflikt, kein Personenschaden). Verification 4.",
     "dedup_hint": "disney universal midjourney copyright lawsuit 2025 hollywood ai",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:55.571Z",
+      "verified_at": "2026-06-01T11:51:50.122Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -947,7 +947,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Reddit v. Anthropic — Plattform klagt gegen KI-Anbieter wegen Scraping ohne Erlaubnis",
       "name_en": "USA: Reddit v. Anthropic — platform sues AI provider over unauthorized scraping",
@@ -1000,7 +1000,7 @@
     "researcher_notes": "Confidence hoch. Verification 4 (öffentliche Court-Filing).",
     "dedup_hint": "reddit anthropic claude scraping training data lawsuit 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:21:57.643Z",
+      "verified_at": "2026-06-01T11:51:50.627Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1079,7 +1079,7 @@
     "researcher_notes": "Confidence hoch. Distinkt von usa-westfield-nj-schul-deepfake-mani (Schüler-Opfer). Verification 4 (Polizei-Ermittlung + Forensik).",
     "dedup_hint": "pikesville eiswert darien ai voice deepfake racist principal maryland 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T09:22:22.816Z",
+      "verified_at": "2026-06-01T11:52:15.800Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1104,7 +1104,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Randal Quran Reid — Fehl-Festnahme durch Gesichtserkennung in Louisiana, sechs Tage in Haft",
       "name_en": "USA: Randal Quran Reid — wrongful facial-recognition arrest in Louisiana, six days in jail",
@@ -1153,7 +1153,7 @@
     "researcher_notes": "Confidence hoch. Vorgang 2022/23, Klage 2024 — passt in Round-Scope. Severity 3. Verification 4.",
     "dedup_hint": "randal quran reid louisiana jefferson parish facial recognition wrongful arrest 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T09:22:25.085Z",
+      "verified_at": "2026-06-01T11:52:16.969Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1180,7 +1180,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Teslas Robotaxi-Start in Austin — NHTSA-Aufmerksamkeit nach erratischem Fahrverhalten",
       "name_en": "USA: Tesla Robotaxi launch in Austin — NHTSA attention after erratic driving",
@@ -1240,7 +1240,7 @@
     "researcher_notes": "Confidence hoch, distinkt von Waymo/Cruise-Eintrag und FSD-Eintrag (anderes Programm: kommerzieller Robotaxi-Dienst). Verification 4.",
     "dedup_hint": "tesla robotaxi austin launch nhtsa erratic driving 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:22:27.648Z",
+      "verified_at": "2026-06-01T11:52:19.017Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1273,7 +1273,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Chris Pelkey — KI-Avatar eines getöteten Mannes spricht eigenes Opfer-Statement vor Gericht in Arizona",
       "name_en": "USA: Chris Pelkey — AI avatar of murder victim delivers his own impact statement in Arizona court",
@@ -1331,7 +1331,7 @@
     "researcher_notes": "Confidence hoch. Severity 2 (kein Personenschaden, aber bedeutender Präzedenzfall für Justiz + KI). Verification 4.",
     "dedup_hint": "pelkey horcasitas arizona ai avatar victim impact statement court 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:22:52.824Z",
+      "verified_at": "2026-06-01T11:52:44.200Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1364,7 +1364,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Scale AI / Surge AI — Klagen und DOL-Untersuchung wegen Fehl-Klassifizierung von KI-Trainings-Worker:innen",
       "name_en": "USA: Scale AI / Surge AI — lawsuits and DOL investigation over misclassification of AI training workers",
@@ -1429,7 +1429,7 @@
     "researcher_notes": "Confidence hoch. Severity 3 (massive Arbeits-/Vergütungsrechts-Verletzungen, plus Trauma-Exposition). Verification 4.",
     "dedup_hint": "scale ai surge ai taskers misclassification wage theft dol 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T09:22:54.987Z",
+      "verified_at": "2026-06-01T11:52:46.126Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1462,7 +1462,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Pasco County Sheriff — Vergleich beendet algorithmisches „Intelligence-Led Policing“-Programm",
       "name_en": "USA: Pasco County Sheriff — settlement ends algorithmic ‘Intelligence-Led Policing' programme",
@@ -1519,14 +1519,14 @@
     "researcher_notes": "Distinkt von usa-predictive-policing-chicago / usa-predpol-la-aufloesung. Severity 3 (jahrelange Belästigung von Familien, viele Minderjährige). Verification 4 (öffentlicher Vergleich + Eingeständnis).",
     "dedup_hint": "pasco county florida intelligence led policing settlement institute for justice 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T09:23:01.017Z",
+      "verified_at": "2026-06-01T11:52:47.657Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
           "url": "https://ij.org/press-release/case-closed-pasco-sheriff-admits-predictive-policing-program-violated-constitution/",
-          "http_status": 200,
-          "matches_content": true,
-          "note": "match score=0.62 hits=8 year=2024"
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
         },
         {
           "url": "https://www.tampabay.com/news/pasco/2024/12/04/pasco-sheriff-settles-lawsuit-filed-over-controversial-policing-program/",
@@ -1541,7 +1541,7 @@
           "note": "match score=0.68 hits=8 year=2024"
         }
       ],
-      "match_count": 3,
+      "match_count": 2,
       "sources_count": 3
     },
     "promoted_to_slug": "usa-pasco-county-sheriff-vergleich-beendet-algorithmisches-intelligence-led-policing",
@@ -1552,7 +1552,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "USA: EEOC v. iTutorGroup — erster KI-Diskriminierungs-Vergleich der US-Gleichstellungsbehörde",
       "name_en": "USA: EEOC v. iTutorGroup — first AI-discrimination settlement by the U.S. equal-opportunity agency",
@@ -1606,7 +1606,7 @@
     "researcher_notes": "Vergleich 2023, Implementierung/Auszahlungen 2024 — passt knapp in Scope. Wichtiger Präzedenzfall. Severity 2 (kein Körperschaden). Verification 4 (EEOC-eigene Pressemitteilung).",
     "dedup_hint": "eeoc itutorgroup ai age discrimination hiring settlement 2023 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T09:23:03.378Z",
+      "verified_at": "2026-06-01T11:52:48.840Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1617,12 +1617,12 @@
         },
         {
           "url": "https://www.akingump.com/en/insights/blogs/ag-data-dive/eeoc-settles-over-recruiting-software-in-possible-first-ever-ai-related-case",
-          "http_status": 200,
-          "matches_content": true,
-          "note": "match score=0.84 hits=8 year=2023"
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
         }
       ],
-      "match_count": 2,
+      "match_count": 1,
       "sources_count": 2
     },
     "promoted_to_slug": "usa-eeoc-v-itutorgroup-erster-ki-diskriminierungs-vergleich-der-us",

@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uk-nhs-ki-tool-annie-von-anima-health-erfindet-diabetes-und-herzdiagnosen-fuer-londoner",
+  "name": "Grossbritannien: NHS-KI-Tool Annie von Anima Health erfindet Diabetes- und Herzdiagnosen für Londoner Patienten",
+  "name_de": "Grossbritannien: NHS-KI-Tool Annie von Anima Health erfindet Diabetes- und Herzdiagnosen für Londoner Patienten",
+  "name_en": "UK: NHS AI tool Annie by Anima Health fabricates diabetes and heart diagnoses for London patient",
+  "description": "Ein Patient einer Londoner GP-Praxis stellte fest, dass das in seine Akte uebernommene KI-Summary von Anima Healths Tool Annie eine Diabetes-Diagnose und eine vermeintliche koronare Herzerkrankung erfunden hatte, obwohl er nur wegen Mandelentzuendung erschienen war. Er wurde daraufhin faelschlich zum Diabetes-Screening eingeladen. Das Tool ist bei der MHRA nur als Class-I-Medizinprodukt registriert; NHS England raeumte ein, dass die Hausarztpraxis das KI-Summary fehlerhaft in die Akte gespeichert hatte.",
+  "description_de": "Ein Patient einer Londoner GP-Praxis stellte fest, dass das in seine Akte uebernommene KI-Summary von Anima Healths Tool Annie eine Diabetes-Diagnose und eine vermeintliche koronare Herzerkrankung erfunden hatte, obwohl er nur wegen Mandelentzuendung erschienen war. Er wurde daraufhin faelschlich zum Diabetes-Screening eingeladen. Das Tool ist bei der MHRA nur als Class-I-Medizinprodukt registriert; NHS England raeumte ein, dass die Hausarztpraxis das KI-Summary fehlerhaft in die Akte gespeichert hatte.",
+  "description_en": "A patient at a London GP practice discovered that an AI-generated summary added to his record by Anima Health's tool Annie had fabricated a diabetes diagnosis and suspected coronary artery disease, despite him only attending for tonsillitis. He was subsequently invited to a diabetic screening based on the false data. The tool is registered with the UK MHRA only as a Class I medical device; NHS England conceded the GP practice had inadvertently saved the AI-generated version instead of a corrected one.",
+  "startDate": "2025-07",
+  "location": {
+    "@type": "Place",
+    "name": "London, Grossbritannien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    },
+    "name_de": "London, Grossbritannien",
+    "name_en": "London, United Kingdom"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "discrimination"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Anima Health",
+      "type": "company",
+      "asm:systems": [
+        "Annie AI summariser"
+      ],
+      "name_de": "Anima Health",
+      "name_en": "Anima Health"
+    },
+    {
+      "name": "NHS England / Londoner GP-Praxis",
+      "type": "government",
+      "asm:systems": [
+        "primary-care record system"
+      ],
+      "name_de": "NHS England / Londoner GP-Praxis",
+      "name_en": "NHS England / Londoner GP-Praxis"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://fortune.com/2025/07/20/uk-health-service-ai-tool-false-diagnoses-patient-screening-nhs-anima-health-annie/",
+      "title": "UK health service AI tool generated a set of false diagnoses for a patient",
+      "publisher": "Fortune",
+      "date": "2025-07-20",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "UK health service AI tool generated a set of false diagnoses for a patient",
+      "title_en": "UK health service AI tool generated a set of false diagnoses for a patient"
+    },
+    {
+      "url": "https://www.pslhub.org/blogs/entry/8770-uk-health-service-ai-tool-generated-a-set-of-false-diagnoses-for-one-patient-that-led-to-him-being-wrongly-invited-to-a-diabetes-screening-appointment/",
+      "title": "NHS AI tool generated false diagnoses leading to wrong diabetes invitation",
+      "publisher": "Patient Safety Learning Hub",
+      "date": "2025-07-21",
+      "type": "ngo-report",
+      "asm:linkHealth": "unverified",
+      "title_de": "NHS AI tool generated false diagnoses leading to wrong diabetes invitation",
+      "title_en": "NHS AI tool generated false diagnoses leading to wrong diabetes invitation"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "uk-nhs-anima-health-annie-falsche-diagnose-london-2025",
+    "promotedFromRound": "round-2-2026-06-01"
+  }
+}

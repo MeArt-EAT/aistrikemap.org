@@ -1,0 +1,1440 @@
+[
+  {
+    "candidate_id": "uk-nhs-anima-health-annie-falsche-diagnose-london-2025",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Grossbritannien: NHS-KI-Tool Annie von Anima Health erfindet Diabetes- und Herzdiagnosen fuer Londoner Patienten",
+      "name_en": "UK: NHS AI tool Annie by Anima Health fabricates diabetes and heart diagnoses for London patient",
+      "startDate": "2025-07",
+      "location": {
+        "name_de": "London, Grossbritannien",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "data-misuse",
+        "discrimination"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Ein Patient einer Londoner GP-Praxis stellte fest, dass das in seine Akte uebernommene KI-Summary von Anima Healths Tool Annie eine Diabetes-Diagnose und eine vermeintliche koronare Herzerkrankung erfunden hatte, obwohl er nur wegen Mandelentzuendung erschienen war. Er wurde daraufhin faelschlich zum Diabetes-Screening eingeladen. Das Tool ist bei der MHRA nur als Class-I-Medizinprodukt registriert; NHS England raeumte ein, dass die Hausarztpraxis das KI-Summary fehlerhaft in die Akte gespeichert hatte.",
+      "description_en": "A patient at a London GP practice discovered that an AI-generated summary added to his record by Anima Health's tool Annie had fabricated a diabetes diagnosis and suspected coronary artery disease, despite him only attending for tonsillitis. He was subsequently invited to a diabetic screening based on the false data. The tool is registered with the UK MHRA only as a Class I medical device; NHS England conceded the GP practice had inadvertently saved the AI-generated version instead of a corrected one.",
+      "actors": [
+        {
+          "name": "Anima Health",
+          "type": "company",
+          "systems": [
+            "Annie AI summariser"
+          ]
+        },
+        {
+          "name": "NHS England / Londoner GP-Praxis",
+          "type": "government",
+          "systems": [
+            "primary-care record system"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://fortune.com/2025/07/20/uk-health-service-ai-tool-false-diagnoses-patient-screening-nhs-anima-health-annie/",
+          "title": "UK health service AI tool generated a set of false diagnoses for a patient",
+          "publisher": "Fortune",
+          "date": "2025-07-20",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.pslhub.org/blogs/entry/8770-uk-health-service-ai-tool-generated-a-set-of-false-diagnoses-for-one-patient-that-led-to-him-being-wrongly-invited-to-a-diabetes-screening-appointment/",
+          "title": "NHS AI tool generated false diagnoses leading to wrong diabetes invitation",
+          "publisher": "Patient Safety Learning Hub",
+          "date": "2025-07-21",
+          "type": "ngo-report"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: Mehrere Quellen, Fortune-Bericht namentlich erwaehnt. Anima ist Y-Combinator-Startup. Class-I-Registrierung als regulatorische Luecke gut belegt. Unklar bleibt, ob MHRA formelle Untersuchung eingeleitet hat.",
+    "dedup_hint": "anima health | annie ai | nhs | london | false diagnosis | 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:42:57.661Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://fortune.com/2025/07/20/uk-health-service-ai-tool-false-diagnoses-patient-screening-nhs-anima-health-annie/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.pslhub.org/blogs/entry/8770-uk-health-service-ai-tool-generated-a-set-of-false-diagnoses-for-one-patient-that-led-to-him-being-wrongly-invited-to-a-diabetes-screening-appointment/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.55 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "uk-nhs-ki-tool-annie-von-anima-health-erfindet-diabetes-und-herzdiagnosen-fuer-londoner",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "frankreich-iqva-cnil-bussgeld-gesundheitsdaten-2026",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Frankreich: CNIL verhaengt 5-Millionen-Euro-Bussgeld gegen IQVIA wegen unrechtmaessiger Gesundheitsdaten-Warehouses",
+      "name_en": "France: CNIL fines IQVIA 5 million euros for unlawful health data warehouses",
+      "startDate": "2026-05",
+      "location": {
+        "name_de": "Paris, Frankreich",
+        "name_en": "Paris, France",
+        "country": "FR",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Die franzoesische Datenschutzbehoerde CNIL verhaengte am 26. Mai 2026 ein Bussgeld von 5 Millionen Euro gegen IQVIA Operations France. Das Pharma-Analytics-Unternehmen hatte Daten aus rund 14.000 Apotheken (LRX-Warehouse) und tausenden Arztpraxen (EMR-Warehouse) ohne Patienten-Information verarbeitet, eigene Studien ausserhalb des Rechtsrahmens durchgefuehrt und unzureichende Sicherheitsmassnahmen wie fehlende Mehrfaktorauthentifizierung verwendet. Die CNIL stufte die angeblich anonymen Daten als pseudonymisiert ein.",
+      "description_en": "On 26 May 2026, France's data protection authority CNIL fined IQVIA Operations France 5 million euros. The pharma analytics company had processed data from around 14,000 pharmacies (LRX warehouse) and thousands of doctors' practices (EMR warehouse) without informing patients, ran studies on its own behalf outside the legal framework, and used insufficient security measures including absent multi-factor authentication. The CNIL ruled the supposedly anonymous data was in fact pseudonymous.",
+      "actors": [
+        {
+          "name": "IQVIA Operations France",
+          "type": "company",
+          "systems": [
+            "LRX warehouse",
+            "EMR warehouse"
+          ]
+        },
+        {
+          "name": "Commission Nationale de l'Informatique et des Libertes (CNIL)",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/en/health-data-fine-5-million-euros-against-iqvia",
+          "title": "Health data: fine of 5 million euros against IQVIA",
+          "publisher": "CNIL",
+          "date": "2026-05-26",
+          "type": "regulatory-decision"
+        },
+        {
+          "url": "https://www.mlex.com/mlex/articles/2482726/iqvia-fined-5m-for-gdpr-breach-during-health-study",
+          "title": "IQVIA fined 5m for GDPR breach during health study",
+          "publisher": "MLex",
+          "date": "2026-05-26",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch: CNIL-Pressemitteilung als Primaerquelle. Industrieweit relevant, da IQVIA globaler Pharma-Datenanalytik-Akteur ist.",
+    "dedup_hint": "iqvia | cnil | france | health data warehouse | 5 million | 2026",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:42:58.952Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.cnil.fr/en/health-data-fine-5-million-euros-against-iqvia",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.73 hits=8 year=2026"
+        },
+        {
+          "url": "https://www.mlex.com/mlex/articles/2482726/iqvia-fined-5m-for-gdpr-breach-during-health-study",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.44 hits=7 year=2026"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "frankreich-cnil-verhaengt-5-millionen-euro-bussgeld-gegen-iqvia-wegen-unrechtmaessiger",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "frankreich-cegedim-cnil-bussgeld-gesundheitsdaten-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Frankreich: CNIL verhaengt 800.000 Euro Bussgeld gegen Cegedim Sante wegen unbefugter Verarbeitung von Gesundheitsdaten",
+      "name_en": "France: CNIL fines Cegedim Sante 800,000 euros for unauthorised health data processing",
+      "startDate": "2024-09-05",
+      "location": {
+        "name_de": "Paris, Frankreich",
+        "name_en": "Paris, France",
+        "country": "FR",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Am 5. September 2024 wurde Cegedim Sante, Anbieter von Praxis-Software fuer rund 25.000 Arztpraxen und 500 Gesundheitszentren in Frankreich, von der CNIL zu 800.000 Euro Bussgeld verurteilt. CNIL-Kontrollen 2021 hatten festgestellt, dass das Unternehmen nicht-anonymisierte Gesundheitsdaten ohne Genehmigung an Kunden zur Erstellung von Statistiken weitergegeben hatte. Cegedims Argument der angeblichen Anonymisierung wurde als blosse Pseudonymisierung zurueckgewiesen.",
+      "description_en": "On 5 September 2024, Cegedim Sante - provider of practice management software used by some 25,000 medical practices and 500 health centres in France - was fined 800,000 euros by the CNIL. Inspections from 2021 had revealed the company processed non-anonymous health data without authorisation, transmitting it to customers to produce health-sector statistics. Cegedim's claim of anonymisation was rejected as pseudonymisation only.",
+      "actors": [
+        {
+          "name": "Cegedim Sante",
+          "type": "company",
+          "systems": [
+            "MonLogicielMedical (MLM)"
+          ]
+        },
+        {
+          "name": "CNIL",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/en/health-data-cegedim-sante-fined-eu800000",
+          "title": "Health data: CEGEDIM SANTE fined 800,000 euros",
+          "publisher": "CNIL",
+          "date": "2024-09-05",
+          "type": "regulatory-decision"
+        },
+        {
+          "url": "https://gdprhub.eu/index.php?title=CNIL_(France)_-_SAN-2024-013",
+          "title": "CNIL (France) - SAN-2024-013",
+          "publisher": "GDPRhub",
+          "date": "2024-09-05",
+          "type": "legal-ruling"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch. CNIL-Bescheid offen verfuegbar. Folgekomplex: Im Februar/Maerz 2026 wurde derselbe Anbieter Opfer eines Cyberangriffs mit 15,8 Mio. betroffenen Patientendaten - separater Kandidat unten.",
+    "dedup_hint": "cegedim sante | cnil | san-2024-013 | france | health data | 800000",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:00.511Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.cnil.fr/en/health-data-cegedim-sante-fined-eu800000",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2024"
+        },
+        {
+          "url": "https://gdprhub.eu/index.php?title=CNIL_(France)_-_SAN-2024-013",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "frankreich-cnil-verhaengt-800-000-euro-bussgeld-gegen-cegedim-sante-wegen-unbefugter",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "frankreich-cegedim-cyberangriff-15-millionen-patientendaten-2026",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Frankreich: Cyberangriff auf Cegedim Sante - 15,8 Millionen Patientendaten gestohlen",
+      "name_en": "France: Cegedim Sante cyberattack - 15.8 million patient records stolen",
+      "startDate": "2025-10",
+      "location": {
+        "name_de": "Frankreich (nationale Auswirkung)",
+        "name_en": "France (nationwide impact)",
+        "country": "FR",
+        "lat": 46.2276,
+        "lng": 2.2137
+      },
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Cegedim Sante meldete Ende 2025 einen Einbruch in seine MonLogicielMedical-Software, der etwa 15,8 Millionen administrative Patientenakten von 1.500 betroffenen Aerzten kompromittierte. Rund 165.000 Akten enthielten freie Notizen mit teils hochsensiblen Angaben wie HIV-Status oder sexuelle Orientierung. Cegedim deckte den Einbruch Ende 2025 auf, reichte im Oktober Strafanzeige ein, informierte die Oeffentlichkeit aber erst Anfang Maerz 2026 nach France-24-Bericht - vier Monate spaeter.",
+      "description_en": "Cegedim Sante reported in late 2025 a breach of its MonLogicielMedical software exposing some 15.8 million administrative patient records belonging to 1,500 affected doctors. About 165,000 records contained free-text doctor notes that, in limited cases, included highly sensitive details such as HIV status or sexual orientation. Cegedim detected the intrusion in late 2025, filed a criminal complaint in October, but only disclosed publicly in early March 2026 - four months later - after France24's reporting.",
+      "actors": [
+        {
+          "name": "Cegedim Sante",
+          "type": "company",
+          "systems": [
+            "MonLogicielMedical (MLM)"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.theregister.com/2026/03/03/french_medical_leak/",
+          "title": "15.8M medical records stolen from French health ministry vendor",
+          "publisher": "The Register",
+          "date": "2026-03-03",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.connexionfrance.com/news/doctors-records-hit-by-cyberattack-up-to-15-million-patients-in-france-affected/773980",
+          "title": "Doctors records hit by cyberattack: up to 15 million patients in France affected",
+          "publisher": "Connexion France",
+          "date": "2026-03",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: Multiple Quellen, Cegedim hat den Vorfall offiziell bestaetigt. Zusammenhang zum CNIL-Bussgeld 2024 makro-narrativ: derselbe Anbieter, dem bereits Datenschutzverstoesse nachgewiesen wurden.",
+    "dedup_hint": "cegedim sante | data breach | 15 million | france | mlm | 2026",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:01.803Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.theregister.com/2026/03/03/french_medical_leak/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.50 hits=6 year=2025"
+        },
+        {
+          "url": "https://www.connexionfrance.com/news/doctors-records-hit-by-cyberattack-up-to-15-million-patients-in-france-affected/773980",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.50 hits=6 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "frankreich-cyberangriff-auf-cegedim-sante-15-8-millionen-patientendaten-gestohlen-2025",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "italien-garante-drei-krankenhaeuser-ki-risikostratifizierung-2023",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "rejected",
+    "candidate_data": {
+      "name_de": "Italien: Garante verhaengt Bussgeld gegen drei Krankenhaeuser fuer unrechtmaessige KI-Risikostratifizierung von Patient:innen",
+      "name_en": "Italy: Garante fines three hospitals for unlawful AI risk stratification of patients",
+      "startDate": "2023-01-24",
+      "location": {
+        "name_de": "Italien (drei Krankenhaeuser)",
+        "name_en": "Italy (three hospitals)",
+        "country": "IT",
+        "lat": 41.8719,
+        "lng": 12.5674
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Die italienische Datenschutzbehoerde Garante per la protezione dei dati personali verhaengte am 24. Januar 2023 jeweils 55.000 Euro Bussgeld gegen drei Krankenhaeuser, die ein KI-System zur Risikostratifizierung ihrer Patient:innen einsetzten. Die Systeme profilierten Patient:innen, prognostizierten kuenftige Erkrankungen und ordneten sie Risikogruppen sowie Wartelistenprioritaeten zu - ohne explizite informierte Einwilligung. Der Garante stellte fest, dass praediktive Medizin als eigenstaendige Verarbeitung gesonderte Zustimmung erfordert und ordnete die Loeschung der so gewonnenen Daten an.",
+      "description_en": "Italy's data protection authority Garante fined three hospitals 55,000 euros each on 24 January 2023 for unlawfully using an AI system to risk-stratify patients. The systems profiled patients, predicted future pathologies and assigned them to risk groups and waiting-list priority classes - without explicit informed consent. The Garante ruled that predictive medicine is a separate processing activity requiring specific consent and ordered the erasure of all data obtained.",
+      "actors": [
+        {
+          "name": "Drei italienische Krankenhaeuser (im Bescheid nicht namentlich genannt)",
+          "type": "government",
+          "systems": [
+            "AI risk-stratification system"
+          ]
+        },
+        {
+          "name": "Garante per la protezione dei dati personali",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.insideprivacy.com/digital-health/italian-garante-fines-three-hospitals-over-their-use-of-ai-for-risk-stratification-purposes-establishes-that-predictive-medicine-processing-requires-the-patients-explicit-consent/",
+          "title": "Italian Garante Fines Three Hospitals Over AI Risk Stratification",
+          "publisher": "Inside Privacy / Covington",
+          "date": "2023-02",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.lexology.com/library/detail.aspx?g=cd70db7f-2219-4c83-a787-c2a846379ea9",
+          "title": "Italian Garante Fines Three Hospitals AI Risk Stratification",
+          "publisher": "Lexology",
+          "date": "2023-02",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch fuer Existenz und Bussgeld-Hoehe. Krankenhausnamen wurden im Bescheid nicht oeffentlich genannt - vor Promote nachrecherchieren. Praezedenzfall fuer Predictive-Medicine-Zustimmung in der EU.",
+    "dedup_hint": "italy | garante | three hospitals | risk stratification | predictive medicine | 2023",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:02.136Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.insideprivacy.com/digital-health/italian-garante-fines-three-hospitals-over-their-use-of-ai-for-risk-stratification-purposes-establishes-that-predictive-medicine-processing-requires-the-patients-explicit-consent/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.lexology.com/library/detail.aspx?g=cd70db7f-2219-4c83-a787-c2a846379ea9",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 0,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "uk-synnovis-ransomware-pathologie-patiententod-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Grossbritannien: Ransomware-Angriff auf NHS-Pathologiedienstleister Synnovis trug zum Tod eines Patienten bei",
+      "name_en": "UK: Ransomware attack on NHS pathology provider Synnovis contributed to a patient's death",
+      "startDate": "2024-06-03",
+      "location": {
+        "name_de": "London, Grossbritannien",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 5,
+      "candidate_verification": 4,
+      "description_de": "Am 3. Juni 2024 verschluesselte die Ransomware-Gruppe Qilin Systeme bei Synnovis, einem Pathologie-Dienstleister mehrerer Londoner NHS-Trusts. Folge: rund 1.134 geplante Operationen und 2.194 ambulante Termine in den ersten 13 Tagen abgesagt; Bluttests teils nur 10 Prozent Kapazitaet. Im Juni 2025 bestaetigte NHS England, dass der Angriff ein mitwirkender Faktor beim Tod eines Patienten war. 400 GB Daten wurden veroeffentlicht. Auch wenn der Angriff selbst nicht KI-gesteuert war, traf er das automatisierte Pathologie-Backbone und ist Teil der breiteren Diskussion um KI-/IT-Abhaengigkeiten im Gesundheitswesen.",
+      "description_en": "On 3 June 2024 the Qilin ransomware group encrypted systems at Synnovis, a pathology services provider for several London NHS trusts. As a result, around 1,134 planned operations and 2,194 outpatient appointments were cancelled in the first 13 days; blood testing fell to about 10% of normal capacity. In June 2025 NHS England confirmed the attack was a contributing factor in a patient's death. Some 400 GB of data was leaked. While not itself an AI attack, it struck the automated pathology backbone and feeds the wider debate over AI/IT dependency in healthcare.",
+      "actors": [
+        {
+          "name": "Synnovis",
+          "type": "company",
+          "systems": [
+            "pathology lab IT"
+          ]
+        },
+        {
+          "name": "Qilin ransomware group",
+          "type": "non-state-actor",
+          "systems": []
+        },
+        {
+          "name": "NHS England",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.england.nhs.uk/synnovis-cyber-incident/",
+          "title": "Synnovis cyber incident",
+          "publisher": "NHS England",
+          "date": "2024-06",
+          "type": "government-document"
+        },
+        {
+          "url": "https://insight.scmagazineuk.com/synnovis-2024-attack-contributing-factor-in-patient-death",
+          "title": "Synnovis 2024 Attack 'Contributing Factor' in Patient Death",
+          "publisher": "SC Media UK",
+          "date": "2025-06",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch. Vor Promote pruefen, ob das Incident-Type-Vokabular passt (Hauptpunkt ist Kombi aus Cyberangriff + Auswirkung auf algorithmus-basierte Lab-Infrastruktur). Falls Scope nur reine KI-Vorfaelle umfassen soll, dann ggf. weglassen oder als IT-/KI-Resilienz-Episode markieren.",
+    "dedup_hint": "synnovis | qilin | ransomware | nhs | london | pathology | patient death | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:03.253Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.england.nhs.uk/synnovis-cyber-incident/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.52 hits=7 year=2024"
+        },
+        {
+          "url": "https://insight.scmagazineuk.com/synnovis-2024-attack-contributing-factor-in-patient-death",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "uk-ransomware-angriff-auf-nhs-pathologiedienstleister-synnovis-trug-zum-tod-eines",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "uk-nhs-foresight-llama-57m-pause-datenschutz-2025",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Grossbritannien: NHS stoppt Foresight-KI-Projekt nach Datenschutzbedenken zu 57 Millionen Patientenakten",
+      "name_en": "UK: NHS pauses Foresight AI project over privacy concerns about 57 million patient records",
+      "startDate": "2025-06",
+      "location": {
+        "name_de": "England, Grossbritannien",
+        "name_en": "England, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Im Juni 2025 setzte NHS England das Forschungsprojekt Foresight aus, das ein auf Metas Open-Source-Modell Llama 2 basierendes generatives KI-Modell auf de-identifizierten Akten von rund 57 Millionen englischen Patient:innen trainierte, um Krankheitsverlaeufe und Hospitalisierungen vorherzusagen. British Medical Association und Royal College of General Practitioners kritisierten, dass GP-Daten ohne ausreichende Patient:innen-Information oder Hausarzt-Einwilligung genutzt wurden. Datenschuetzer:innen verwiesen auf Re-Identifizierungs-Risiken. NHS-Datenschutzbeauftragte pruefen den Fall.",
+      "description_en": "In June 2025, NHS England paused the Foresight research project, which trained a generative AI model based on Meta's open-source Llama 2 on de-identified records of around 57 million English patients to predict disease trajectories and hospitalisations. The British Medical Association and Royal College of General Practitioners criticised the use of GP data without adequate patient information or GP consent. Privacy advocates pointed to re-identification risks. The NHS Data Protection Officer is reviewing the project.",
+      "actors": [
+        {
+          "name": "NHS England",
+          "type": "government",
+          "systems": [
+            "Foresight AI"
+          ]
+        },
+        {
+          "name": "University College London / Kings College London",
+          "type": "research-institution",
+          "systems": [
+            "Foresight AI"
+          ]
+        },
+        {
+          "name": "Meta (Llama 2 base model)",
+          "type": "company",
+          "systems": [
+            "Llama 2"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.digitalhealth.net/2025/06/ai-project-to-predict-health-outcomes-paused-over-gp-data-concern/",
+          "title": "AI project to predict health outcomes paused over GP data concern",
+          "publisher": "Digital Health",
+          "date": "2025-06",
+          "type": "news-article"
+        },
+        {
+          "url": "https://digital.nhs.uk/data-and-information/research-powered-by-data/life-saving-research/case-studies/foresight-ai/",
+          "title": "Foresight AI case study",
+          "publisher": "NHS England Digital",
+          "date": "2025",
+          "type": "government-document"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch. Praezedenzfall fuer EHR-Trainingsdaten-Governance auf NHS-Skala.",
+    "dedup_hint": "foresight | nhs | llama | 57 million | gp data | pause | 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:03.817Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.digitalhealth.net/2025/06/ai-project-to-predict-health-outcomes-paused-over-gp-data-concern/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2025"
+        },
+        {
+          "url": "https://digital.nhs.uk/data-and-information/research-powered-by-data/life-saving-research/case-studies/foresight-ai/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "korea-lunit-mammografie-14-prozent-uebersehene-invasive-krebse-2025",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Suedkorea: Lunit-INSIGHT-MMG uebersieht in koreanischer Studie 14 Prozent invasiver Brustkrebse",
+      "name_en": "South Korea: Lunit INSIGHT MMG misses 14% of invasive breast cancers in Korean study",
+      "startDate": "2025-06",
+      "location": {
+        "name_de": "Seoul, Suedkorea",
+        "name_en": "Seoul, South Korea",
+        "country": "KR",
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      "incidentType": [
+        "discrimination"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Eine in Radiology veroeffentlichte retrospektive Studie der Korea University College of Medicine analysierte 1.097 invasive Brustkrebsfaelle der Jahre 2014-2020 mit der kommerziellen KI-Mammografie-Software Lunit INSIGHT MMG (Version 1.1.7.3). Die KI verfehlte 14 Prozent (154 von 1.097) der invasiven Krebse - insbesondere bei juengeren Frauen, kleineren Tumoren, dichtem Brustgewebe und Tumoren ausserhalb der Mammazonen. Die luminalen Subtypen wurden in 17,2 Prozent uebersehen. Studie hat unmittelbare Patientensicherheits-Relevanz fuer Screening-Programme in Korea, USA und UK.",
+      "description_en": "A retrospective study by Korea University College of Medicine, published in Radiology in 2025, analysed 1,097 invasive breast cancer cases from 2014-2020 using the commercial AI mammography software Lunit INSIGHT MMG (version 1.1.7.3). The AI missed 14% (154 of 1,097) of invasive cancers - particularly in younger women, smaller tumours, dense breast tissue, and tumours outside the glandular area. Luminal-subtype cancers were missed in 17.2% of cases. The study has immediate patient-safety relevance for screening programmes in Korea, the US and UK.",
+      "actors": [
+        {
+          "name": "Lunit Inc.",
+          "type": "company",
+          "systems": [
+            "Lunit INSIGHT MMG v1.1.7.3"
+          ]
+        },
+        {
+          "name": "Korea University College of Medicine, Breast Center",
+          "type": "research-institution",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://pubs.rsna.org/doi/10.1148/radiol.242408",
+          "title": "Invasive Breast Cancers Missed by AI Screening of Mammograms",
+          "publisher": "Radiology / RSNA",
+          "date": "2025-06",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40553002/",
+          "title": "Invasive Breast Cancers Missed by AI Screening of Mammograms",
+          "publisher": "PubMed",
+          "date": "2025-06",
+          "type": "research-paper"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch: peer-reviewed in Radiology. Wichtig fuer Diskurs ueber AI-Standalone-Screening und Bias gegenueber juengeren/dichtbrust Patient:innen.",
+    "dedup_hint": "lunit insight | mammogram | korea university | 14 percent missed | radiology | 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:04.549Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://pubs.rsna.org/doi/10.1148/radiol.242408",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40553002/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2025"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "uk-deepmind-streams-royal-free-class-action-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Grossbritannien: Sammelklage gegen Google/DeepMind wegen unrechtmaessiger Nutzung der NHS-Daten von 1,6 Millionen Royal-Free-Patient:innen",
+      "name_en": "UK: Class-action lawsuit against Google/DeepMind over unlawful use of 1.6 million Royal Free NHS patients' data",
+      "startDate": "2022-05",
+      "location": {
+        "name_de": "London, Grossbritannien",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Eine Sammelklage von Mishcon de Reya gegen Google und DeepMind, eingereicht ab 2022 am High Court, betrifft eine 2015 zwischen DeepMind und dem Royal Free London NHS Foundation Trust geschlossene Vereinbarung. Im Rahmen der Streams-App zur Erkennung akuter Nierenschaedigungen wurden Akten von 1,6 Millionen Patient:innen ohne Einwilligung an DeepMind weitergegeben. Die britische ICO hatte den Datenaustausch bereits 2017 als unrechtmaessig eingestuft. Die Klage wurde 2024 in Teilen vom Gericht zurueckgewiesen, da die Kategorie der repraesentativen Klage nicht trage; ein Berufungsverfahren laeuft.",
+      "description_en": "A class-action lawsuit by Mishcon de Reya against Google and DeepMind, filed from 2022 at the High Court of England and Wales, concerns a 2015 arrangement between DeepMind and the Royal Free London NHS Foundation Trust. Under the Streams app for detecting acute kidney injury, records of 1.6 million patients were shared with DeepMind without consent. The UK ICO had already ruled the data sharing unlawful in 2017. The court rejected key parts of the representative action in 2024, but appeal proceedings continue.",
+      "actors": [
+        {
+          "name": "Google / DeepMind Technologies",
+          "type": "company",
+          "systems": [
+            "Streams app"
+          ]
+        },
+        {
+          "name": "Royal Free London NHS Foundation Trust",
+          "type": "government",
+          "systems": []
+        },
+        {
+          "name": "Mishcon de Reya (Klaegervertretung)",
+          "type": "ngo",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ukhumanrightsblog.com/2024/12/13/misuse-of-private-information-google-and-deepmind-technologies/",
+          "title": "Misuse of private information: Google and DeepMind Technologies",
+          "publisher": "UK Human Rights Blog",
+          "date": "2024-12-13",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.healthcareitnews.com/news/emea/google-and-deepmind-face-legal-claim-unauthorised-use-nhs-medical-records",
+          "title": "Google and DeepMind face legal claim for unauthorised use of NHS medical records",
+          "publisher": "Healthcare IT News",
+          "date": "2022",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch. Wichtiges Praezedenz-Verfahren zur Unterscheidung zwischen Klinik-Tool und Forschung; 2024er Urteil rueckte die Beweislast in den Vordergrund.",
+    "dedup_hint": "deepmind | streams | royal free | nhs | 1.6 million | class action",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:05.724Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://ukhumanrightsblog.com/2024/12/13/misuse-of-private-information-google-and-deepmind-technologies/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.55 hits=8"
+        },
+        {
+          "url": "https://www.healthcareitnews.com/news/emea/google-and-deepmind-face-legal-claim-unauthorised-use-nhs-medical-records",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.74 hits=8 year=2022"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "uk-sammelklage-gegen-google-deepmind-wegen-unrechtmaessiger-nutzung-der-nhs-daten-von-1-6",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "uk-babylon-health-zusammenbruch-mhra-gp-at-hand-2023",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Grossbritannien: Babylon-Health-Insolvenz nach jahrelangen MHRA-Bedenken zur KI-Triage und Patientensicherheit",
+      "name_en": "UK: Babylon Health bankruptcy after years of MHRA concerns over AI triage and patient safety",
+      "startDate": "2023-09-11",
+      "location": {
+        "name_de": "London, Grossbritannien",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "data-misuse",
+        "discrimination"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Babylon Health, einst mit 4,2 Milliarden US-Dollar bewertet, ging am 11. September 2023 in die Insolvenz; das UK-Geschaeft inkl. der NHS-Praxis GP at Hand mit ueber 100.000 Patient:innen wurde an eMed Healthcare UK verkauft. Jahrelang hatte NHS-Onkologe Dr. David Watkins Sicherheitsbedenken zu Babylons KI-Triage-Chatbot dokumentiert; die MHRA erkannte diese Bedenken in einem Brief 2021 explizit an. Kritisiert wurden unter anderem verpasste Herzinfarkt-Symptome und nicht klinisch validierte Vergleichsstudien. Bereits 2017 hatte Babylon vor Gericht erfolglos versucht, einen CQC-Bericht zu unterdruecken.",
+      "description_en": "Babylon Health, once valued at $4.2 billion, entered administration on 11 September 2023; its UK business including the NHS practice GP at Hand with over 100,000 patients was sold to eMed Healthcare UK. For years NHS oncologist Dr. David Watkins had documented safety concerns about Babylon's AI triage chatbot; the UK regulator MHRA explicitly acknowledged these concerns in a 2021 letter. Criticism included missed heart-attack symptoms and clinical-validation studies lacking real-world evidence. Babylon had also tried unsuccessfully in 2017 to block a CQC inspection report via the High Court.",
+      "actors": [
+        {
+          "name": "Babylon Health",
+          "type": "company",
+          "systems": [
+            "Babylon symptom-checker chatbot",
+            "GP at Hand"
+          ]
+        },
+        {
+          "name": "Medicines and Healthcare products Regulatory Agency (MHRA)",
+          "type": "government",
+          "systems": []
+        },
+        {
+          "name": "eMed Healthcare UK (Nachfolger)",
+          "type": "company",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2023/08/31/the-fall-of-babylon-failed-tele-health-startup-once-valued-at-nearly-2b-goes-bankrupt-and-sold-for-parts/",
+          "title": "The fall of Babylon: Failed telehealth startup goes bankrupt",
+          "publisher": "TechCrunch",
+          "date": "2023-08-31",
+          "type": "news-article"
+        },
+        {
+          "url": "https://techcrunch.com/2021/03/05/uks-mhra-says-it-has-concerns-about-babylon-health-and-flags-legal-gap-around-triage-chatbots/",
+          "title": "UK's MHRA says it has 'concerns' about Babylon Health",
+          "publisher": "TechCrunch",
+          "date": "2021-03-05",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/regulator-raises-doubts-about-babylon-health-triage-system",
+          "title": "Regulator raises doubts about Babylon Health triage system",
+          "publisher": "AIAAIC Repository",
+          "date": "2021",
+          "type": "ngo-report"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch. Wichtigster Watershed-Fall fuer KI-Triage-Regulierung; das Tool wurde aus dem Markt genommen, aber NHS-Patient:innen wurden ueber Jahre exponiert.",
+    "dedup_hint": "babylon health | gp at hand | mhra | watkins | bankruptcy | uk | 2023",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:07.153Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techcrunch.com/2023/08/31/the-fall-of-babylon-failed-tele-health-startup-once-valued-at-nearly-2b-goes-bankrupt-and-sold-for-parts/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.54 hits=8 year=2023"
+        },
+        {
+          "url": "https://techcrunch.com/2021/03/05/uks-mhra-says-it-has-concerns-about-babylon-health-and-flags-legal-gap-around-triage-chatbots/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2023"
+        },
+        {
+          "url": "https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/regulator-raises-doubts-about-babylon-health-triage-system",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.48 hits=8"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "uk-babylon-health-insolvenz-nach-jahrelangen-mhra-bedenken-zur-ki-triage-und",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "deutschland-frankreich-ada-symptoma-symptomchecker-unterdiagnose-er-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Europa: Symptomchecker Ada und Symptoma uebersehen lebensbedrohliche Diagnosen bei 13-14 Prozent der Patient:innen",
+      "name_en": "Europe: Symptom checkers Ada and Symptoma fail to flag life-threatening diagnoses in 13-14% of patients",
+      "startDate": "2024-08",
+      "location": {
+        "name_de": "Wien, Oesterreich (Notaufnahme-Studie); Hauptsitze Berlin (Ada Health) und Wien (Symptoma)",
+        "name_en": "Vienna, Austria (ED study); HQ Berlin (Ada Health) and Vienna (Symptoma)",
+        "country": "AT",
+        "lat": 48.2082,
+        "lng": 16.3738
+      },
+      "incidentType": [
+        "discrimination"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Eine randomisierte, doppelblinde Crossover-Studie im Journal of Medical Internet Research (2024) verglich Ada Health (Berlin) und Symptoma (Wien) in einer Notaufnahme. Ergebnis: Ada wies die korrekte Diagnose nur in 14 Prozent der Faelle an erster Stelle aus, Symptoma in 4 Prozent. Beide Tools versagten dabei, potenziell lebensbedrohliche Diagnosen vorzuschlagen - Ada in 13 Prozent, Symptoma in 14 Prozent der Patient:innen. Ada triagierte 34 Prozent korrekt, untertriagierte 13 Prozent und uebertriagierte 53 Prozent.",
+      "description_en": "A randomized double-blinded crossover study in the Journal of Medical Internet Research (2024) compared Ada Health (Berlin) and Symptoma (Vienna) in an emergency department. Ada placed the correct diagnosis first in only 14% of cases, Symptoma in 4%. Both tools failed to flag potentially life-threatening diagnoses - Ada in 13%, Symptoma in 14% of patients. Ada triaged 34% correctly, undertriaged 13% and overtriaged 53%.",
+      "actors": [
+        {
+          "name": "Ada Health GmbH",
+          "type": "company",
+          "systems": [
+            "Ada symptom checker"
+          ]
+        },
+        {
+          "name": "Symptoma GmbH",
+          "type": "company",
+          "systems": [
+            "Symptoma"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.jmir.org/2024/1/e56514",
+          "title": "Comparison of Two Symptom Checkers (Ada and Symptoma) in the Emergency Department",
+          "publisher": "Journal of Medical Internet Research",
+          "date": "2024-08",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11372320/",
+          "title": "Comparison of Two Symptom Checkers (Ada and Symptoma) in the ED",
+          "publisher": "PubMed Central",
+          "date": "2024-08",
+          "type": "research-paper"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: peer-reviewed Studie. Standort-Frage: Studie in Wien durchgefuehrt, beide Anbieter sind im DACH/EU-Markt - daher unter Oesterreich/Austria geo-codiert, aber EU-weite Relevanz. Vor Promote evtl. zwei separate Marker (Berlin/Wien) erwaegen.",
+    "dedup_hint": "ada health | symptoma | symptom checker | emergency department | jmir | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:08.853Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.jmir.org/2024/1/e56514",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.56 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11372320/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.60 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "oesterreich-symptomchecker-ada-und-symptoma-uebersehen-lebensbedrohliche-diagnosen-bei-13",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "niederlande-uwv-algorithmische-diskriminierung-betrug-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Niederlande: Datenschutzbehoerde stellt unrechtmaessigen Algorithmus-Einsatz bei UWV zur Betrugssuche im Sozial- und Gesundheitsleistungssystem fest",
+      "name_en": "Netherlands: Data Protection Authority finds unlawful algorithm use by UWV for fraud detection in social and health-benefit system",
+      "startDate": "2024-09",
+      "location": {
+        "name_de": "Amsterdam, Niederlande",
+        "name_en": "Amsterdam, Netherlands",
+        "country": "NL",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      "incidentType": [
+        "discrimination",
+        "surveillance"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Im Jahresbericht 2023/2024 prangerte die Autoriteit Persoonsgegevens (AP) algorithmische Diskriminierung in mehreren niederlaendischen Behoerden an. Beispielhaft genannt wurde die UWV (Arbeitsmarkt- und Krankengeld-Behoerde), die Daten unrechtmaessig zur Aufdeckung von Sozialleistungs-Betrug verwendet hatte. Bei der WIA-Erwerbsminderungsrente wurden zudem Berechnungsfehler in vermutlich Zehntausenden Faellen festgestellt; bei Long-COVID-Antragstellern wurden in 75 Prozent der Akten Fehler dokumentiert.",
+      "description_en": "In its 2023/2024 annual report the Dutch Data Protection Authority (Autoriteit Persoonsgegevens, AP) called out algorithmic discrimination in several Dutch agencies. It explicitly named UWV (employee insurance and sickness-benefit agency) for unlawfully using data to detect benefit fraud. Separately, calculation errors in WIA disability benefits affected likely tens of thousands of cases; errors were documented in 75% of long-COVID applicant files.",
+      "actors": [
+        {
+          "name": "Uitvoeringsinstituut Werknemersverzekeringen (UWV)",
+          "type": "government",
+          "systems": [
+            "fraud-detection algorithm",
+            "WIA calculation system"
+          ]
+        },
+        {
+          "name": "Autoriteit Persoonsgegevens (AP)",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://racismandtechnology.center/2024/09/16/in-the-netherlands-algorithmic-discrimination-is-everywhere-according-to-the-dutch-data-protection-authority/",
+          "title": "In the Netherlands, algorithmic discrimination is everywhere",
+          "publisher": "Racism and Technology Center",
+          "date": "2024-09-16",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://nltimes.nl/2024/09/05/mistakes-disability-benefits-affect-tens-thousands-may-repay",
+          "title": "Mistakes with disability benefits could affect tens of thousands",
+          "publisher": "NL Times",
+          "date": "2024-09-05",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch fuer Diskriminierungs-Befund der AP. Schnittstelle Sozial-/Gesundheitsleistungen wegen WIA-Erwerbsminderung. Long-COVID-Akten-Fehler kann eigener Marker werden.",
+    "dedup_hint": "netherlands | uwv | ap | algorithmic discrimination | wia | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:10.996Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://racismandtechnology.center/2024/09/16/in-the-netherlands-algorithmic-discrimination-is-everywhere-according-to-the-dutch-data-protection-authority/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.58 hits=8 year=2024"
+        },
+        {
+          "url": "https://nltimes.nl/2024/09/05/mistakes-disability-benefits-affect-tens-thousands-may-repay",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.33 hits=5 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "niederlande-datenschutzbehoerde-stellt-unrechtmaessigen-algorithmus-einsatz-bei-uwv-zur",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "australien-imed-harrison-annalise-ki-training-radiologie-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Australien: OAIC-Voruntersuchung gegen I-MED, Harrison.ai und Annalise.ai wegen Weitergabe medizinischer Scans an KI-Training",
+      "name_en": "Australia: OAIC preliminary inquiry into I-MED, Harrison.ai and Annalise.ai over disclosure of medical scans for AI training",
+      "startDate": "2024-09-20",
+      "location": {
+        "name_de": "Sydney, Australien",
+        "name_en": "Sydney, Australia",
+        "country": "AU",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Am 20. September 2024 eroeffnete die australische Datenschutzbehoerde OAIC Voruntersuchungen gegen den Radiologieanbieter I-MED, Harrison.ai und Annalise.ai. Anlass waren Medienberichte ueber die Weitergabe privater medizinischer Scans an Dritte fuer das Training eines KI-Modells. Die OAIC pruefte Form und Inhalt der weitergegebenen Patient:innendaten, den Datenfluss und die Anonymisierungsschritte. Im Ergebnis stellte sie fest, dass die Daten ausreichend de-identifiziert waren - der Vorfall wirft jedoch grundsaetzliche Einwilligungs- und Transparenzfragen fuer KI-Training in der australischen Radiologie auf.",
+      "description_en": "On 20 September 2024, Australia's privacy regulator OAIC opened preliminary inquiries into radiology provider I-MED, Harrison.ai and Annalise.ai after media reports that private medical scans were shared with a third party to train an AI model. OAIC examined the form and content of the patient data, the data flow and the de-identification steps. It ultimately found the data sufficiently de-identified, but the case raised fundamental consent and transparency questions for AI training in Australian radiology.",
+      "actors": [
+        {
+          "name": "I-MED Radiology Network",
+          "type": "company",
+          "systems": []
+        },
+        {
+          "name": "Harrison.ai",
+          "type": "company",
+          "systems": []
+        },
+        {
+          "name": "Annalise.ai",
+          "type": "company",
+          "systems": [
+            "Annalise CXR / CTB AI"
+          ]
+        },
+        {
+          "name": "Office of the Australian Information Commissioner (OAIC)",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/Investigation-inquiry-reports/report-into-preliminary-inquiries-of-i-med",
+          "title": "Report into preliminary inquiries of I-MED",
+          "publisher": "Office of the Australian Information Commissioner",
+          "date": "2024-2025",
+          "type": "regulatory-decision"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: OAIC-Bericht als Primaerquelle. Gut belegter Patient-Consent-Praezedenzfall fuer Radiologie-KI-Training, auch wenn die Behoerde den Fall am Ende nicht ahndete.",
+    "dedup_hint": "i-med | harrison.ai | annalise.ai | oaic | radiology | ai training | australia | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:13.861Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/Investigation-inquiry-reports/report-into-preliminary-inquiries-of-i-med",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.83 hits=8 year=2024"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 1
+    }
+  },
+  {
+    "candidate_id": "indien-aadhaar-biometrische-authentifizierungsausschluss-gesundheit-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Indien: Aadhaar-Biometrie-Fehler schliessen Arme, Aeltere und Behinderte vom Zugang zu Gesundheitsleistungen aus",
+      "name_en": "India: Aadhaar biometric authentication failures exclude poor, elderly and disabled people from healthcare access",
+      "startDate": "2024-05",
+      "location": {
+        "name_de": "Indien (landesweit)",
+        "name_en": "India (nationwide)",
+        "country": "IN",
+        "lat": 20.5937,
+        "lng": 78.9629
+      },
+      "incidentType": [
+        "discrimination",
+        "surveillance"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 3,
+      "description_de": "Bis 2024 dokumentierten Forschende und The Wire systematische Aadhaar-Authentifizierungsausfaelle bei Bauarbeiter:innen, Bauern und Hausangestellten mit 6-12 Prozent Fehlerquote sowie bei Aelteren (abgenutzte Fingerabdruecke), Kindern (instabile Biometrie) und Menschen mit Behinderung. Trotz Regel 5/6 der Unique-Health-Identifier-Rules 2021, die Leistungsverweigerung wegen fehlender Aadhaar verbieten, dokumentierte indiastack.in deaths, denials und exclusions im Gesundheitssystem. Krankenhaeuser bestanden faktisch auf Aadhaar-Verifizierung; Personen mit fehlerhaften biometrischen Eintraegen warteten wochenlang auf Korrekturen.",
+      "description_en": "By 2024 researchers and The Wire had documented systematic Aadhaar authentication failures: construction workers, farmers and domestic workers face 6-12% failure rates; elderly people have degraded fingerprints; children's biometrics are unstable; people with disabilities face accessibility barriers. Despite Rules 5/6 of the Unique Health Identifier Rules 2021, which prohibit denial of health services for lack of Aadhaar, indiastack.in documented deaths, denials and exclusions in the health system. Hospitals routinely insisted on Aadhaar verification; people with broken biometric records waited weeks for corrections.",
+      "actors": [
+        {
+          "name": "Unique Identification Authority of India (UIDAI)",
+          "type": "government",
+          "systems": [
+            "Aadhaar biometric authentication"
+          ]
+        },
+        {
+          "name": "Ministry of Health and Family Welfare (MoHFW)",
+          "type": "government",
+          "systems": [
+            "Unique Health Identifier"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://indiastack.in/exclusion/",
+          "title": "Human Cost of India Stack: Deaths, Denials, Exclusion",
+          "publisher": "Project Documentation: indiastack.in",
+          "date": "2024",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://m.thewire.in/article/rights/digital-exclusion-poor-elderly-face-the-brunt-of-aadhaar-based-authentication-errors",
+          "title": "Digital Exclusion: Poor, Elderly Face the Brunt of Aadhaar-Based Authentication Errors",
+          "publisher": "The Wire",
+          "date": "2024-05",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence mittel-hoch: indiastack.in ist Aktivisten-Quelle, aber gut dokumentiert; The Wire als unabhaengige journalistische Quelle. Existierender Aadhaar-Massenbiometrie-Marker im Bestand - dieser Kandidat fokussiert spezifisch Gesundheitssektor-Ausschluss und ist daher kein reines Duplikat.",
+    "dedup_hint": "aadhaar | health | biometric | authentication failure | exclusion | india | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:16.515Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://indiastack.in/exclusion/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8 year=2024"
+        },
+        {
+          "url": "https://m.thewire.in/article/rights/digital-exclusion-poor-elderly-face-the-brunt-of-aadhaar-based-authentication-errors",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "indien-aadhaar-biometrie-fehler-schliessen-arme-aeltere-und-behinderte-vom-zugang-zu",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "korea-scatterlab-iruda-kakaotalk-pipc-bussgeld-2021",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Suedkorea: PIPC verhaengt 103 Millionen Won Bussgeld gegen ScatterLab fuer KI-Chatbot Iruda - 9,4 Milliarden Privatnachrichten unrechtmaessig fuer KI-Training genutzt",
+      "name_en": "South Korea: PIPC fines ScatterLab 103 million won for Iruda AI chatbot - 9.4 billion private messages unlawfully used for AI training",
+      "startDate": "2021-04-28",
+      "location": {
+        "name_de": "Seoul, Suedkorea",
+        "name_en": "Seoul, South Korea",
+        "country": "KR",
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Am 28. April 2021 belegte die suedkoreanische Personal Information Protection Commission (PIPC) erstmals ein KI-Technologieunternehmen mit einem Bussgeld: 103,3 Millionen Won (rund 92.900 USD) gegen ScatterLab fuer den Chatbot Iruda. ScatterLab hatte rund 9,4 Milliarden KakaoTalk-Nachrichten von 600.000 Nutzer:innen aus seinen Apps Text At und Science of Love zur Entwicklung und zum Betrieb von Iruda verwendet - ohne Loeschung oder Verschluesselung persoenlicher Informationen wie Namen, Mobilnummern und Adressen. Praezedenzfall fuer den PIPA-Vollzug gegen KI-Systeme - relevant auch fuer Gesundheits-Chatbots in Korea.",
+      "description_en": "On 28 April 2021 South Korea's Personal Information Protection Commission (PIPC) for the first time sanctioned an AI technology company: 103.3 million won (about USD 92,900) against ScatterLab for the chatbot Iruda. ScatterLab had used some 9.4 billion KakaoTalk messages from 600,000 users of its apps Text At and Science of Love to develop and operate Iruda - without deleting or encrypting personal information such as names, mobile numbers and addresses. The precedent for PIPA enforcement against AI systems is highly relevant for health chatbots in Korea.",
+      "actors": [
+        {
+          "name": "ScatterLab Inc.",
+          "type": "company",
+          "systems": [
+            "Iruda chatbot",
+            "Text At",
+            "Science of Love"
+          ]
+        },
+        {
+          "name": "Personal Information Protection Commission (PIPC)",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://fpf.org/blog/south-korea-the-first-case-where-the-personal-information-protection-act-was-applied-to-an-ai-system/",
+          "title": "South Korea: The First Case Where the Personal Information Protection Act was Applied to an AI System",
+          "publisher": "Future of Privacy Forum",
+          "date": "2021",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch: PIPC-Bescheid und FPF-Analyse. Auch wenn nicht primaer Gesundheits-Chatbot, ist Iruda Praezedenzfall fuer KI-Trainingsdaten in Asia-Pacific und wird in koreanischer Healthcare-AI-Governance-Diskussion stark referenziert. Vor Promote pruefen, ob Scope (Healthcare AI) tatsaechlich passt - sonst weglassen.",
+    "dedup_hint": "scatterlab | iruda | pipc | kakaotalk | south korea | 2021",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:17.433Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://fpf.org/blog/south-korea-the-first-case-where-the-personal-information-protection-act-was-applied-to-an-ai-system/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.72 hits=8 year=2021"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 1
+    }
+  },
+  {
+    "candidate_id": "italien-garante-ki-medizindaten-statement-2025",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "rejected",
+    "candidate_data": {
+      "name_de": "Italien: Garante warnt vor KI-Tools, die Medizindaten interpretieren, ohne als Medizinprodukt zugelassen zu sein",
+      "name_en": "Italy: Garante warns against AI tools interpreting medical data without medical-device certification",
+      "startDate": "2025-07-30",
+      "location": {
+        "name_de": "Rom, Italien",
+        "name_en": "Rome, Italy",
+        "country": "IT",
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 4,
+      "description_de": "Am 30. Juli 2025 veroeffentlichte der italienische Garante per la protezione dei dati personali ein Statement zu Risiken beim Einsatz von KI-Tools zur Interpretation von Gesundheitsdaten. Die Behoerde warnte insbesondere vor KI-Loesungen, die nicht als Medizinprodukt zertifiziert sind und daher keiner regulatorischen Pruefung auf medizinische Sicherheit unterliegen. Damit forderte der Garante explizit eine strengere Kopplung von DSGVO-Health-Data-Auflagen und EU-AI-Act/Medical-Device-Regulation - mit direkten Auswirkungen auf Konsumenten-Apps wie ChatGPT-basierte Symptom-Erklaerer, die Italiener:innen nutzen.",
+      "description_en": "On 30 July 2025, Italy's Garante per la protezione dei dati personali released a statement on the risks of using AI tools to interpret medical data. The authority specifically warned against AI solutions not certified as medical devices and thus not subject to regulatory checks on medical safety. The Garante explicitly called for tighter coupling of GDPR health-data rules with the EU AI Act and Medical Device Regulation - directly affecting consumer apps such as ChatGPT-based symptom explainers used by Italian citizens.",
+      "actors": [
+        {
+          "name": "Garante per la protezione dei dati personali",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.insideprivacy.com/artificial-intelligence/italian-garante-adopts-statement-on-health-data-and-ai/",
+          "title": "Italian Garante Adopts Statement on Health Data and AI",
+          "publisher": "Inside Privacy / Covington",
+          "date": "2025-07",
+          "type": "regulatory-decision"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch. Eher 'regulatorisches Statement' als 'Incident im engeren Sinne'. Severity bewusst niedrig gehalten; vor Promote pruefen, ob als Phase-2-Radar oder Phase-1-Incident.",
+    "dedup_hint": "garante | italy | ai medical data | statement | 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:17.731Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.insideprivacy.com/artificial-intelligence/italian-garante-adopts-statement-on-health-data-and-ai/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 0,
+      "sources_count": 1
+    }
+  },
+  {
+    "candidate_id": "frankreich-health-data-hub-microsoft-conseil-etat-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Frankreich: Conseil d'Etat bestaetigt Hosting des Health Data Hub durch Microsoft trotz Souveraenitaets- und Datenschutzbedenken",
+      "name_en": "France: Conseil d'Etat upholds hosting of Health Data Hub by Microsoft despite sovereignty and privacy concerns",
+      "startDate": "2024-11-13",
+      "location": {
+        "name_de": "Paris, Frankreich",
+        "name_en": "Paris, France",
+        "country": "FR",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Am 13. November 2024 wies der Conseil d'Etat den Eilantrag der InterHop-Vereinigung gegen die CNIL-Genehmigung der Microsoft-Azure-Hosting-Loesung des Health Data Hub zurueck; am 19. November 2024 folgte die Ablehnung der Klagen gegen das EMC2-Projekt. Cleyrop und Clever Cloud hatten den fehlenden Wechsel auf eine souveraene Loesung - 2020 von der Regierung zugesagt - kritisiert. Das Gericht stuetzte sich auf mehrfache Pseudonymisierung und beschraenkte technische US-Datenfluesse, raeumte jedoch implizit ein, dass die franzoesischen Gesundheitsdaten von 60+ Millionen Menschen weiter US-Cloud-Recht ausgesetzt sind. Eine Uebergangsloesung soll erst Anfang 2026 deployt werden.",
+      "description_en": "On 13 November 2024 the French Conseil d'Etat rejected InterHop's emergency appeal against the CNIL authorisation of Microsoft Azure hosting for the Health Data Hub; on 19 November 2024 it dismissed claims against the EMC2 project. Cleyrop and Clever Cloud had challenged the failure to migrate to a sovereign solution - promised by the government in 2020. The court relied on multiple pseudonymisation steps and limited technical US-bound data flows, but implicitly acknowledged that the health data of 60+ million French citizens remains subject to US cloud law. A transitional solution is only expected to deploy in early 2026.",
+      "actors": [
+        {
+          "name": "Health Data Hub",
+          "type": "government",
+          "systems": [
+            "Microsoft Azure hosting"
+          ]
+        },
+        {
+          "name": "Microsoft France",
+          "type": "company",
+          "systems": [
+            "Azure"
+          ]
+        },
+        {
+          "name": "InterHop / Cleyrop / Clever Cloud (Klaeger)",
+          "type": "ngo",
+          "systems": []
+        },
+        {
+          "name": "Conseil d'Etat",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://incyber.org/en/article/the-french-council-of-state-upholds-the-hosting-of-health-data-hub-by-microsoft/",
+          "title": "The French Council of State Upholds the Hosting of Health Data Hub by Microsoft",
+          "publisher": "InCyber News",
+          "date": "2024-11",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.banquedesterritoires.fr/le-conseil-detat-valide-lhebergement-des-donnees-de-sante-par-microsoft",
+          "title": "Le Conseil d'Etat valide l'hebergement des donnees de sante par Microsoft",
+          "publisher": "Banque des Territoires",
+          "date": "2024-11",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch. Strukturelle Souveraenitaets-Episode mit unmittelbaren Folgen fuer KI-Forschung auf Health Data Hub.",
+    "dedup_hint": "health data hub | microsoft | conseil etat | interhop | france | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:19.107Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://incyber.org/en/article/the-french-council-of-state-upholds-the-hosting-of-health-data-hub-by-microsoft/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.58 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.banquedesterritoires.fr/le-conseil-detat-valide-lhebergement-des-donnees-de-sante-par-microsoft",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.45 hits=7 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "frankreich-conseil-detat-bestaetigt-hosting-des-health-data-hub-durch-microsoft-trotz",
+    "promoted_at": "2026-06-01T12:02:57.757Z"
+  },
+  {
+    "candidate_id": "deutschland-charite-ki-fairness-erhebung-2023",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-healthcare-eu-asia-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Deutschland: Charite-Studie zeigt - nur ein Drittel der KI-Entwickler:innen im Gesundheitswesen halten eigene Projekte fuer fair",
+      "name_en": "Germany: Charite study shows only one third of healthcare AI developers rate their own projects as fair",
+      "startDate": "2023",
+      "location": {
+        "name_de": "Berlin, Deutschland",
+        "name_en": "Berlin, Germany",
+        "country": "DE",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      "incidentType": [
+        "discrimination"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "Eine im Journal of Medical Internet Research veroeffentlichte Web-Umfrage der Charite - Universitaetsmedizin Berlin unter 151 KI-Spezialist:innen im Gesundheitswesen ergab: Nur 31 Prozent halten ihre eigenen KI-Projekte fuer fair, 34 Prozent fuer maessig fair, 12 Prozent fuer kaum fair, 1 Prozent fuer nicht fair. Die Autor:innen forderten verpflichtende Schulungen zu Fairness, repraesentativen Trainingsdaten und Einbezug soziodemografischer Faktoren. Selbst-Eingestaendnis-Studie mit unmittelbaren Implikationen fuer EU-AI-Act-Konformitaet deutscher Klinik-KI.",
+      "description_en": "A web-based survey published in the Journal of Medical Internet Research by Charite - Universitatsmedizin Berlin among 151 healthcare AI specialists found that only 31% rated their own AI projects as fair, 34% as moderately fair, 12% as barely fair, and 1% as not fair. The authors called for mandatory training on fairness, representative training data and inclusion of socio-demographic factors. A self-admission study with immediate implications for EU AI Act compliance of German clinical AI.",
+      "actors": [
+        {
+          "name": "Charite - Universitaetsmedizin Berlin",
+          "type": "research-institution",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.jmir.org/2023/1/e41089",
+          "title": "Artificial Intelligence Bias in Health Care: Web-Based Survey",
+          "publisher": "Journal of Medical Internet Research",
+          "date": "2023",
+          "type": "research-paper"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch fuer Studie selbst. Eher Background-/Risiko-Datenpunkt als Einzel-Incident; Severity entsprechend niedrig. Vor Promote ggf. als Phase-2-Radar einordnen statt als Incident.",
+    "dedup_hint": "charite | germany | ai bias survey | jmir | 2023",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:43:20.819Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.jmir.org/2023/1/e41089",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2023"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 1
+    }
+  }
+]

@@ -1,0 +1,1323 @@
+[
+  {
+    "candidate_id": "niederlande-uber-ola-amsterdam-court-of-appeal-art22-2023",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Niederlande: Berufungsgericht Amsterdam verurteilt Uber und Ola wegen automatisierter Entscheidungen (Art. 22 DSGVO)",
+      "name_en": "Netherlands: Amsterdam Court of Appeal rules against Uber and Ola over automated decision-making (GDPR Art. 22)",
+      "startDate": "2023-04",
+      "location": {
+        "name_de": "Amsterdam, Niederlande",
+        "name_en": "Amsterdam, Netherlands",
+        "country": "NL",
+        "lat": 52.3676,
+        "lng": 4.9041
+      },
+      "incidentType": [
+        "labor-exploitation",
+        "data-misuse",
+        "discrimination"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Das Berufungsgericht Amsterdam entschied 2023 in drei wegweisenden Verfahren zugunsten von Plattform-Fahrer:innen, die von Worker Info Exchange und der App Drivers & Couriers Union vertreten wurden. Es stellte fest, dass zentrale Uber- und Ola-Prozesse — Auftragsverteilung, Preisberechnung, Fahrer-Ratings, „Betrugswahrscheinlichkeits-Scores“ und automatische Account-Deaktivierungen — automatisierte Einzelentscheidungen im Sinne von Art. 22 DSGVO darstellen. Fahrer:innen haben Anspruch auf Auskunft über die zugrundeliegende Logik; vier Uber-Fahrer galten als faktisch „robo-gefeuert“ ohne Rechtsmittel.",
+      "description_en": "The Amsterdam Court of Appeal ruled in 2023 in three landmark cases in favour of platform drivers represented by Worker Info Exchange and the App Drivers & Couriers Union. It found that several Uber and Ola processes — ride assignment, price calculation, driver ratings, 'fraud probability scores' and automatic account deactivations — qualify as automated decision-making under GDPR Article 22. Drivers are entitled to information on the underlying logic; four Uber drivers were effectively 'robo-fired' without recourse.",
+      "actors": [
+        {
+          "name": "Uber B.V.",
+          "type": "company",
+          "systems": [
+            "ride-assignment",
+            "fraud-probability-score",
+            "automated deactivation"
+          ]
+        },
+        {
+          "name": "Ola Cabs",
+          "type": "company",
+          "systems": [
+            "ride-assignment"
+          ]
+        },
+        {
+          "name": "Worker Info Exchange / App Drivers & Couriers Union",
+          "type": "ngo"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.workerinfoexchange.org/post/historic-digital-rights-win-for-wie-and-the-adcu-over-uber-and-ola-at-amsterdam-court-of-appeal",
+          "title": "Historic digital rights win for WIE and the ADCU over Uber and Ola at Amsterdam Court of Appeal",
+          "publisher": "Worker Info Exchange",
+          "date": "2023-04-04",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://www.staffingindustry.com/news/global-daily-news/europe-dutch-court-appeals-rules-against-uber-and-ola-cabs-gdpr-case",
+          "title": "Europe – Dutch Court of Appeals rules against Uber and Ola Cabs in GDPR case",
+          "publisher": "Staffing Industry Analysts",
+          "date": "2023-04",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: WIE-eigene Verlautbarung + Branchenpresse + GDPRhub-Eintrag (Rb. Amsterdam C/13/696010). Konkretes Urteilsdatum 4.4.2023, betrifft mehrere parallele Verfahren. Sehr starker Anker für Art-22-Rechtsprechung.",
+    "dedup_hint": "uber | ola | amsterdam | art 22 | gdpr | worker info exchange | robo-fired | netherlands",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:31.712Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.workerinfoexchange.org/post/historic-digital-rights-win-for-wie-and-the-adcu-over-uber-and-ola-at-amsterdam-court-of-appeal",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.82 hits=8 year=2023"
+        },
+        {
+          "url": "https://www.staffingindustry.com/news/global-daily-news/europe-dutch-court-appeals-rules-against-uber-and-ola-cabs-gdpr-case",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "niederlande-uber-290m-eurofine-gdpr-2024",
+    "discovered_at": "2026-06-01T15:01:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Niederlande: Datenschutzbehörde verhängt 290-Mio-Euro-Bußgeld gegen Uber wegen Fahrer-Datentransfers in die USA",
+      "name_en": "Netherlands: Data Protection Authority fines Uber 290 million euros over driver data transfers to the US",
+      "startDate": "2024-07-22",
+      "location": {
+        "name_de": "Den Haag, Niederlande",
+        "name_en": "The Hague, Netherlands",
+        "country": "NL",
+        "lat": 52.0705,
+        "lng": 4.3007
+      },
+      "incidentType": [
+        "data-misuse",
+        "labor-exploitation"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Die niederländische Datenschutzbehörde Autoriteit Persoonsgegevens verhängte am 22. Juli 2024 ein Bußgeld von 290 Millionen Euro gegen Uber wegen unzulässiger Übermittlung sensibler Fahrer-Daten an Uber-Server in den USA. Betroffen waren Standort-, Lizenz-, Foto- und teilweise Gesundheits- und Strafregister-Daten europäischer Fahrer:innen. Es ist das bislang höchste DSGVO-Bußgeld für einen Datentransfer-Verstoss in der EU.",
+      "description_en": "On 22 July 2024 the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) fined Uber 290 million euros for unlawfully transferring sensitive driver data to Uber servers in the United States. The data included location, licence, photo and partly health and criminal-record information of European drivers. It is the largest GDPR fine for a data-transfer violation in EU history.",
+      "actors": [
+        {
+          "name": "Uber B.V.",
+          "type": "company"
+        },
+        {
+          "name": "Autoriteit Persoonsgegevens (Dutch DPA)",
+          "type": "regulator"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.edpb.europa.eu/news/news/2024/dutch-sa-imposes-fine-290-million-euro-uber-because-transfers-drivers-data-us_en",
+          "title": "Dutch SA imposes a fine of 290 million euro on Uber because of transfers of drivers' data to the US",
+          "publisher": "European Data Protection Board",
+          "date": "2024-07",
+          "type": "regulatory-decision"
+        },
+        {
+          "url": "https://www.loc.gov/item/global-legal-monitor/2024-09-12/netherlands-uber-heavily-fined-for-violating-eus-general-data-protection-regulation/",
+          "title": "Netherlands: Uber Heavily Fined for Violating EU's GDPR",
+          "publisher": "Library of Congress – Global Legal Monitor",
+          "date": "2024-09-12",
+          "type": "government-document"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch: EDPB-Mitteilung + Library of Congress + breite Sekundärquellen. Sauberer Datenschutz-Anker, betrifft direkt das Daten-Substrat algorithmischer Steuerung.",
+    "dedup_hint": "uber | 290 million | dutch dpa | gdpr | data transfer | autoriteit persoonsgegevens | netherlands",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:32.220Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.edpb.europa.eu/news/news/2024/dutch-sa-imposes-fine-290-million-euro-uber-because-transfers-drivers-data-us_en",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.loc.gov/item/global-legal-monitor/2024-09-12/netherlands-uber-heavily-fined-for-violating-eus-general-data-protection-regulation/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "uk-uber-eats-manjang-facial-recognition-settlement-2024",
+    "discovered_at": "2026-06-01T15:02:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Grossbritannien: Uber Eats zahlt Entschädigung an Pa Edrissa Manjang wegen rassistisch versagender Gesichtserkennung",
+      "name_en": "United Kingdom: Uber Eats settles with Pa Edrissa Manjang over racially biased facial-recognition checks",
+      "startDate": "2024-03",
+      "location": {
+        "name_de": "London, Vereinigtes Königreich",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "facial-recognition",
+        "discrimination",
+        "labor-exploitation"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Uber Eats einigte sich im März 2024 mit dem schwarzen Kurier Pa Edrissa Manjang auf eine Entschädigungszahlung, nachdem das von Microsoft betriebene „Real Time ID Check“-System ihn wiederholt falsch identifiziert und 2021 dauerhaft gesperrt hatte. Der Fall, unterstützt von der Equality and Human Rights Commission und der App Drivers & Couriers Union, gilt als einer der ersten in Grossbritannien, der KI-basierte Diskriminierung im Arbeitskontext nach dem Equality Act 2010 adressierte; eine 17-tägige Verhandlung war für November 2024 angesetzt, bevor die Einigung erfolgte.",
+      "description_en": "In March 2024 Uber Eats settled with Black courier Pa Edrissa Manjang after Microsoft-powered 'Real Time ID Check' facial verification repeatedly failed to recognise him and led to a permanent suspension in 2021. Backed by the Equality and Human Rights Commission and the App Drivers & Couriers Union, the case is among the first in the UK addressing AI-driven discrimination in work under the Equality Act 2010; a 17-day hearing was scheduled for November 2024 before settlement was reached.",
+      "actors": [
+        {
+          "name": "Uber Eats / Uber B.V.",
+          "type": "company",
+          "systems": [
+            "Real Time ID Check"
+          ]
+        },
+        {
+          "name": "Microsoft (face-API provider)",
+          "type": "company"
+        },
+        {
+          "name": "Equality and Human Rights Commission",
+          "type": "government"
+        },
+        {
+          "name": "App Drivers & Couriers Union",
+          "type": "ngo"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/03/28/uber-eats-ai-bias-settlement/",
+          "title": "Uber Eats courier's fight against AI bias shows justice under UK law is hard won",
+          "publisher": "TechCrunch",
+          "date": "2024-03-28",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.business-humanrights.org/en/latest-news/uk-drivers-couriers-sue-uber-over-allegedly-racist-facial-recognition-checks/",
+          "title": "UK: Drivers & couriers sue Uber over alleged racist facial recognition checks",
+          "publisher": "Business & Human Rights Resource Centre",
+          "date": "2024",
+          "type": "ngo-report"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: namentlich genannter Kläger, EHRC-Beteiligung, mehrere Bestätigungen. Vergleichshöhe nicht offengelegt — entsprechend in Beschreibung markiert.",
+    "dedup_hint": "uber eats | manjang | facial recognition | real time id check | microsoft | uk | discrimination",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:33.668Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techcrunch.com/2024/03/28/uber-eats-ai-bias-settlement/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.81 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.business-humanrights.org/en/latest-news/uk-drivers-couriers-sue-uber-over-allegedly-racist-facial-recognition-checks/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.53 hits=8"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "uk-uber-eats-zahlt-entschaedigung-an-pa-edrissa-manjang-wegen-rassistisch-versagender",
+    "promoted_at": "2026-06-01T12:02:57.775Z"
+  },
+  {
+    "candidate_id": "uk-bolt-employment-tribunal-worker-status-2024",
+    "discovered_at": "2026-06-01T15:03:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Grossbritannien: Employment Tribunal stuft Bolt-Fahrer als „Worker“ ein — algorithmische Steuerung als Indiz",
+      "name_en": "United Kingdom: Employment Tribunal rules Bolt drivers are 'workers' — algorithmic control cited as evidence",
+      "startDate": "2024-11-08",
+      "location": {
+        "name_de": "London, Vereinigtes Königreich",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Am 8. November 2024 entschied ein britisches Employment Tribunal nach dreiwöchiger Verhandlung, dass die rund 100.000 Bolt-Fahrer:innen im Vereinigten Königreich keine Selbständigen, sondern „workers“ sind und damit Anspruch auf Mindestlohn, bezahlten Urlaub und Pausen haben. Das Gericht wertete insbesondere die algorithmische Kontrolle der App, einseitige AGB und Preissetzung als entscheidende Faktoren. Anwält:innen schätzen die mögliche Gesamtkompensation auf über 200 Millionen Pfund; Bolt erhielt die Berufung zugesprochen.",
+      "description_en": "On 8 November 2024, after a three-week hearing, a UK Employment Tribunal ruled that around 100,000 Bolt drivers in the UK are not self-employed but 'workers', entitling them to the minimum wage, paid holidays and rest breaks. The court treated algorithmic control through the app, unilateral terms, and price-setting as decisive factors. Lawyers estimated total potential compensation above 200 million pounds; Bolt was granted permission to appeal.",
+      "actors": [
+        {
+          "name": "Bolt Operations OÜ",
+          "type": "company"
+        },
+        {
+          "name": "Leigh Day (legal representatives of claimants)",
+          "type": "ngo"
+        },
+        {
+          "name": "UK Employment Tribunal",
+          "type": "government"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.leighday.co.uk/news/news/2024-news/bolt-drivers-win-ruling-that-they-are-workers-in-legal-claim-believed-to-be-worth-more-than-200-million/",
+          "title": "Bolt drivers win ruling that they are workers in legal claim believed to be worth more than £200 million",
+          "publisher": "Leigh Day",
+          "date": "2024-11-08",
+          "type": "legal-ruling"
+        },
+        {
+          "url": "https://www.computerweekly.com/news/366615517/UK-Bolt-drivers-win-legal-claim-to-be-classed-as-workers",
+          "title": "UK Bolt drivers win legal claim to be classed as workers",
+          "publisher": "Computer Weekly",
+          "date": "2024-11",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: Anwaltskanzlei + Branchenpresse + Lewis Silkin / Business & Human Rights. Berufung anhängig — sollte beim Promote berücksichtigt werden.",
+    "dedup_hint": "bolt | uk | employment tribunal | worker status | leigh day | 100000 | algorithmic control",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:34.216Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.leighday.co.uk/news/news/2024-news/bolt-drivers-win-ruling-that-they-are-workers-in-legal-claim-believed-to-be-worth-more-than-200-million/",
+          "http_status": 404,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.computerweekly.com/news/366615517/UK-Bolt-drivers-win-legal-claim-to-be-classed-as-workers",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.48 hits=8 year=2024"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "italien-foodinho-glovo-garante-5mio-2024",
+    "discovered_at": "2026-06-01T15:04:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Italien: Garante verhängt 5-Mio-Euro-Bussgeld gegen Foodinho (Glovo) wegen GPS-Dauerüberwachung und automatischer Sperren",
+      "name_en": "Italy: Garante fines Foodinho (Glovo) 5 million euros over GPS over-tracking and automated rider suspensions",
+      "startDate": "2024-11",
+      "location": {
+        "name_de": "Rom/Mailand, Italien",
+        "name_en": "Rome/Milan, Italy",
+        "country": "IT",
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
+      "incidentType": [
+        "surveillance",
+        "labor-exploitation",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Die italienische Datenschutzbehörde Garante verhängte im November 2024 ein erneutes Bussgeld von 5 Millionen Euro gegen Foodinho S.r.l., das Glovo in Italien betreibt. Die Behörde stellte fest, dass das Geolokalisierungs-System bis August 2023 die Position von über 35.000 Rider:innen auch ausserhalb von Lieferungen und bei geschlossener App weiterverfolgte. Account-Sperrungen erfolgten per Automatik-Nachricht ohne Anfechtungsmöglichkeit; Foodinho muss Nachrichten umformulieren und sicherstellen, dass algorithmische Entscheidungen von geschultem Personal überprüft werden.",
+      "description_en": "In November 2024 Italy's Garante imposed a renewed fine of 5 million euros on Foodinho S.r.l., which operates Glovo in Italy. The authority found that until August 2023 the platform's geolocation system tracked the position of more than 35,000 riders even outside deliveries and when the app was closed. Account suspensions were issued via automated messages with no contestation route; Foodinho must reformulate notices and ensure algorithmic decisions are reviewed by trained human staff.",
+      "actors": [
+        {
+          "name": "Foodinho S.r.l. (Glovo Italia)",
+          "type": "company",
+          "systems": [
+            "geolocation tracking",
+            "automated suspension"
+          ]
+        },
+        {
+          "name": "Garante per la protezione dei dati personali",
+          "type": "regulator"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gigpedia.org/resources/news/2024/november/november-2024-italy-new-fine-for-glovo-for-violating-riders-privacy",
+          "title": "November 2024 – Italy – New fine for Glovo for violating riders' privacy",
+          "publisher": "Gigpedia",
+          "date": "2024-11",
+          "type": "news-article"
+        },
+        {
+          "url": "https://apps.eurofound.europa.eu/platformeconomydb/italy-privacy-authority-fines-foodinho-5-million-euro-for-rider-data-breaches-110198",
+          "title": "Italy privacy authority fines Foodinho 5 million euro for rider data breaches",
+          "publisher": "Eurofound Platform Economy Repository",
+          "date": "2024-11",
+          "type": "regulatory-decision"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: Eurofound-Behördeneintrag + Gigpedia + Centro di Ateneo per i Diritti Umani (Unipd). Zweiter Strafzug nach 2021 (2,6 Mio). Klare Verbindung Algorithmus + Überwachung + Arbeit.",
+    "dedup_hint": "foodinho | glovo | italy | garante | 5 million | gps | automated suspension | 35000 riders",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:35.217Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://gigpedia.org/resources/news/2024/november/november-2024-italy-new-fine-for-glovo-for-violating-riders-privacy",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.19"
+        },
+        {
+          "url": "https://apps.eurofound.europa.eu/platformeconomydb/italy-privacy-authority-fines-foodinho-5-million-euro-for-rider-data-breaches-110198",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2024"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "italien-glovo-palermo-jarvis-disclosure-2023",
+    "discovered_at": "2026-06-01T15:05:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "rejected",
+    "candidate_data": {
+      "name_de": "Italien: Gericht Palermo zwingt Glovo zur Offenlegung der Logik des Auftragsverteilungs-Algorithmus „Jarvis“",
+      "name_en": "Italy: Court of Palermo orders Glovo to disclose the logic of its delivery-assignment algorithm 'Jarvis'",
+      "startDate": "2023-06-20",
+      "location": {
+        "name_de": "Palermo, Italien",
+        "name_en": "Palermo, Italy",
+        "country": "IT",
+        "lat": 38.1157,
+        "lng": 13.3615
+      },
+      "incidentType": [
+        "labor-exploitation",
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Das Gericht Palermo formalisierte am 20. Juni 2023 ein Urteil, das Glovo verpflichtet, die Logik und Auswahl-Mechanismen seines Auftragsverteilungs-Algorithmus „Jarvis“ offenzulegen. Glovos Einwand, Geschäftsgeheimnis-Schutz stehe entgegen, wurde verworfen. Ziel ist nachzuweisen, dass Schichten und Aufträge diskriminierungsfrei zugewiesen werden — eines der ersten europäischen Urteile, das die Black-Box-Verteidigung im Plattform-Arbeitsrecht durchbricht.",
+      "description_en": "On 20 June 2023 the Court of Palermo formalised a ruling requiring Glovo to disclose the logic and selection mechanisms of its delivery-assignment algorithm 'Jarvis'. Glovo's argument that trade-secret protection prevented disclosure was rejected. The purpose is to verify that shifts and orders are assigned without discrimination — one of the first European judgments to pierce the black-box defence in platform-labour law.",
+      "actors": [
+        {
+          "name": "Glovoapp23 S.A. / Foodinho S.r.l.",
+          "type": "company",
+          "systems": [
+            "Jarvis (order-assignment algorithm)"
+          ]
+        },
+        {
+          "name": "Court of Palermo",
+          "type": "government"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://apps.eurofound.europa.eu/platformeconomydb/italian-court-rules-glovo-must-disclose-ai-logic-and-mechanism-for-assigning-deliveries-to-riders-110036",
+          "title": "Italian Court rules Glovo must disclose AI logic and mechanism for assigning deliveries to riders",
+          "publisher": "Eurofound Platform Economy Repository",
+          "date": "2023-06-20",
+          "type": "legal-ruling"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch für Existenz und Datum (Eurofound-Behördenrepo). Nur eine starke Quelle gefunden — beim Promote zweite suchen (CGIL-Mitteilung wahrscheinlich verfügbar).",
+    "dedup_hint": "glovo | palermo | jarvis | algorithm disclosure | italy | 2023 | trade secret",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:36.937Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://apps.eurofound.europa.eu/platformeconomydb/italian-court-rules-glovo-must-disclose-ai-logic-and-mechanism-for-assigning-deliveries-to-riders-110036",
+          "http_status": 500,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 0,
+      "sources_count": 1
+    }
+  },
+  {
+    "candidate_id": "spanien-glovo-205mio-rider-law-2024",
+    "discovered_at": "2026-06-01T15:06:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Spanien: Glovo akzeptiert nach 205-Mio-Euro-Bussgeldern und Strafanzeige Festanstellung tausender Rider:innen",
+      "name_en": "Spain: After 205 million euros in fines and criminal proceedings, Glovo agrees to formally employ thousands of riders",
+      "startDate": "2024-12",
+      "location": {
+        "name_de": "Madrid/Barcelona, Spanien",
+        "name_en": "Madrid/Barcelona, Spain",
+        "country": "ES",
+        "lat": 40.4168,
+        "lng": -3.7038
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Nach Bussgeldern von insgesamt 205 Millionen Euro durch die spanische Arbeitsinspektion wegen Verstoss gegen die „Ley Rider“ (2021) — die erste europäische Regelung, die algorithmische Transparenz und Festanstellung von Plattform-Rider:innen vorschreibt — kündigte Glovo Anfang Dezember 2024 an, tausende seiner bis dahin als Subunternehmer geführten Rider:innen anzustellen. Der Schritt fiel zusammen mit dem geplanten Erscheinen von Gründer Oscar Pierre vor einem Barceloneser Ermittlungsrichter; betroffen waren rund 37.000 Rider:innen.",
+      "description_en": "After Spain's labour inspectorate imposed fines totalling 205 million euros for violations of the 2021 'Ley Rider' — Europe's first law requiring algorithmic transparency and formal employment of platform riders — Glovo announced in early December 2024 that it would directly employ thousands of riders previously routed through subcontractors. The move coincided with the planned appearance of founder Oscar Pierre before a Barcelona investigating judge; some 37,000 riders were affected.",
+      "actors": [
+        {
+          "name": "Glovoapp23 S.A. / Delivery Hero",
+          "type": "company"
+        },
+        {
+          "name": "Spanish Labour Inspectorate (Inspección de Trabajo)",
+          "type": "regulator"
+        },
+        {
+          "name": "Government of Spain (Ministerio de Trabajo)",
+          "type": "government"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/12/03/delivery-app-glovo-bends-to-spains-riders-law-will-hire-thousands-of-couriers/",
+          "title": "Delivery app Glovo bends to Spain's riders' law, will hire thousands of couriers",
+          "publisher": "TechCrunch",
+          "date": "2024-12-03",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.business-humanrights.org/en/latest-news/spain-government-fines-delivery-heros-glovo-a-further-567-million-euros-for-allegedly-violating-laws-on-hiring-riders/",
+          "title": "Spain: Government fines Delivery Hero's Glovo a further 56.7 million euros for allegedly violating laws on hiring riders",
+          "publisher": "Business & Human Rights Resource Centre",
+          "date": "2024",
+          "type": "ngo-report"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: Mehrere Bestätigungen für 205-Mio-Summe und Dezember-2024-Ankündigung. Italienisches Foodinho-Bundle separat. Dedup-Hinweis: Bestand `italien-ki-arbeitsbewertung-glovo` ist eine andere Geographie/Vorgang.",
+    "dedup_hint": "glovo | spain | ley rider | 205 million | oscar pierre | 37000 | barcelona | criminal investigation",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:37.776Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techcrunch.com/2024/12/03/delivery-app-glovo-bends-to-spains-riders-law-will-hire-thousands-of-couriers/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.51 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.business-humanrights.org/en/latest-news/spain-government-fines-delivery-heros-glovo-a-further-567-million-euros-for-allegedly-violating-laws-on-hiring-riders/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.73 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "spanien-glovo-akzeptiert-nach-205-mio-euro-bussgeldern-und-strafanzeige-festanstellung",
+    "promoted_at": "2026-06-01T12:02:57.775Z"
+  },
+  {
+    "candidate_id": "frankreich-deliveroo-cour-cassation-algorithmische-sanktionen-2024",
+    "discovered_at": "2026-06-01T15:07:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Frankreich: Cour de Cassation wertet algorithmische Disconnects und Prio-Strafen von Deliveroo als Hinweis auf Arbeitnehmer-Status",
+      "name_en": "France: Cour de Cassation treats Deliveroo's algorithmic disconnections and priority-penalties as evidence of employee subordination",
+      "startDate": "2024-04",
+      "location": {
+        "name_de": "Paris, Frankreich",
+        "name_en": "Paris, France",
+        "country": "FR",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Im April 2024 befasste sich die Cour de Cassation (Aktenzeichen 22-17995) mit der Sanktionsmacht der Plattform Deliveroo durch algorithmische Steuerung: Rider:innen wurden 20 Minuten lang von der App getrennt, wenn sie Aufträge ablehnten, und verloren für 15 Tage prioritäre Auftragszuweisungen. Die Cour bestätigte, dass diese automatisierten Sanktionsmechanismen als Beleg für ein Unterordnungsverhältnis zu werten sind und schloss damit an die Verurteilung wegen „travail dissimulé“ (Schwarzarbeit) durch das Pariser Berufungsgericht 2022 an.",
+      "description_en": "In April 2024 the French Cour de Cassation (case 22-17995) examined Deliveroo's sanction power through algorithmic management: riders were disconnected from the app for 20 minutes if they refused trips and lost priority assignments for 15 days. The court confirmed that these automated sanction mechanisms count as evidence of a subordination relationship, building on the 2022 Paris Court of Appeal conviction for 'travail dissimulé' (concealed employment).",
+      "actors": [
+        {
+          "name": "Deliveroo France SAS",
+          "type": "company",
+          "systems": [
+            "disconnect-penalty",
+            "priority-assignment downgrade"
+          ]
+        },
+        {
+          "name": "Cour de Cassation, chambre sociale",
+          "type": "government"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.actu-juridique.fr/social/travail/affaire-deliveroo-une-severite-avant-tout-apparente-neanmoins-sur-la-bonne-voie/",
+          "title": "Affaire Deliveroo : une sévérité avant tout apparente, néanmoins sur la bonne voie",
+          "publisher": "Actu-Juridique",
+          "date": "2024",
+          "type": "analysis"
+        },
+        {
+          "url": "https://jurisprudence.lefebvre-dalloz.fr/jurisprudence/deliveroo",
+          "title": "Jurisprudence Deliveroo: Arrêts, décisions, commentaires",
+          "publisher": "Lefebvre Dalloz",
+          "date": "2024",
+          "type": "legal-ruling"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence medium-hoch: Aktenzeichen 22-17995 + Dalloz-Jurisprudenz-Tracker. Genaues Urteilsdatum + Tenor beim Promote auf Légifrance/courdecassation.fr nachhärten.",
+    "dedup_hint": "deliveroo | france | cour de cassation | 22-17995 | algorithmic sanction | disconnect | travail dissimule",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:38.932Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.actu-juridique.fr/social/travail/affaire-deliveroo-une-severite-avant-tout-apparente-neanmoins-sur-la-bonne-voie/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.33 hits=8"
+        },
+        {
+          "url": "https://jurisprudence.lefebvre-dalloz.fr/jurisprudence/deliveroo",
+          "http_status": 202,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "brasilien-ifood-trt2-r10mio-2024",
+    "discovered_at": "2026-06-01T15:08:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "rejected",
+    "candidate_data": {
+      "name_de": "Brasilien: Arbeitsgericht São Paulo (TRT2) erkennt Beschäftigungsverhältnis bei iFood an und verhängt 10-Mio-Real-Bussgeld",
+      "name_en": "Brazil: São Paulo labour court (TRT2) recognises employment relationship with iFood couriers and orders 10-million-real payment",
+      "startDate": "2024-12",
+      "location": {
+        "name_de": "São Paulo, Brasilien",
+        "name_en": "São Paulo, Brazil",
+        "country": "BR",
+        "lat": -23.5505,
+        "lng": -46.6333
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Im Dezember 2024 verurteilte die 14. Kammer des Regional-Arbeitsgerichts São Paulo (TRT2) iFood zu einer Strafzahlung von 10 Millionen Real und stellte fest, dass zwischen der Plattform und ihren Liefer-Fahrer:innen ein Beschäftigungsverhältnis besteht. iFood kündigte Berufung an. Die Entscheidung folgte auf ein einzelfall-bezogenes Urteil im November 2024, das die wiederrechtliche Sperrung eines Fahrers durch den Algorithmus für rechtswidrig erklärte.",
+      "description_en": "In December 2024 the 14th Panel of the São Paulo Regional Labour Court (TRT2) ordered iFood to pay 10 million reais and recognised an employment relationship between the platform and its delivery couriers. iFood said it would appeal. The decision followed a November 2024 individual ruling that an algorithmic account block of a courier without prior notice violated his rights.",
+      "actors": [
+        {
+          "name": "iFood.com Agência de Restaurantes Online S.A.",
+          "type": "company",
+          "systems": [
+            "automated account block"
+          ]
+        },
+        {
+          "name": "Tribunal Regional do Trabalho da 2ª Região (TRT2)",
+          "type": "government"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gigpedia.org/resources/news/2024/december/december-2024-brazil-labour-court-fines-ifood-r-10-million-and-recognises-link-with-delivery-drivers",
+          "title": "December 2024 – Brazil – Labour Court fines iFood R$10 million and recognises link with delivery drivers",
+          "publisher": "Gigpedia",
+          "date": "2024-12",
+          "type": "news-article"
+        },
+        {
+          "url": "https://gigpedia.org/resources/news/2024/november/november-2024-brazil-judge-orders-ifood-to-reactivate-delivery-persons-account-and-compensate-for-damages",
+          "title": "November 2024 – Brazil – Judge orders iFood to reactivate delivery person's account",
+          "publisher": "Gigpedia",
+          "date": "2024-11",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: zwei eigenständige Urteile auf Gigpedia mit klaren Daten/Beträgen. Beim Promote Originalentscheidungen beim TRT2 ergänzen.",
+    "dedup_hint": "ifood | brazil | trt2 | sao paulo | 10 million reais | employment relationship | account block",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:39.564Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://gigpedia.org/resources/news/2024/december/december-2024-brazil-labour-court-fines-ifood-r-10-million-and-recognises-link-with-delivery-drivers",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.19"
+        },
+        {
+          "url": "https://gigpedia.org/resources/news/2024/november/november-2024-brazil-judge-orders-ifood-to-reactivate-delivery-persons-account-and-compensate-for-damages",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.19"
+        }
+      ],
+      "match_count": 0,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "eu-platform-workers-directive-adoption-2024",
+    "discovered_at": "2026-06-01T15:09:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "EU: Plattform-Arbeits-Richtlinie 2024/2831 in Kraft — erste EU-weite Regulierung algorithmischer Personalführung",
+      "name_en": "EU: Platform Work Directive 2024/2831 enters into force — first EU-wide regulation of algorithmic management",
+      "startDate": "2024-12-01",
+      "location": {
+        "name_de": "Brüssel, Belgien (EU-Ebene)",
+        "name_en": "Brussels, Belgium (EU level)",
+        "country": "BE",
+        "lat": 50.8503,
+        "lng": 4.3517
+      },
+      "incidentType": [
+        "labor-exploitation",
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Am 14. Oktober 2024 verabschiedete der EU-Rat formell die Plattform-Arbeits-Richtlinie 2024/2831, am 11. November veröffentlicht, am 1. Dezember 2024 in Kraft getreten. Sie ist die erste EU-Regelung, die algorithmische Personalführung verbindlich macht: Plattformen müssen automatische Entscheidungen offenlegen, qualifizierte Menschen müssen sie überwachen, Kündigung oder Account-Sperre allein durch ein automatisiertes System sind verboten, und das Verarbeiten emotionaler oder psychologischer Daten ist untersagt. Die Mitgliedstaaten müssen bis 2. Dezember 2026 umsetzen.",
+      "description_en": "On 14 October 2024 the EU Council formally adopted the Platform Work Directive 2024/2831, published on 11 November and entering into force on 1 December 2024. It is the first EU instrument to regulate algorithmic management in employment: platforms must disclose automated decisions, qualified human staff must supervise them, dismissal or account suspension by an automated system alone is prohibited, and processing of emotional or psychological data is forbidden. Member States must transpose by 2 December 2026.",
+      "actors": [
+        {
+          "name": "Council of the European Union",
+          "type": "government"
+        },
+        {
+          "name": "European Parliament",
+          "type": "government"
+        },
+        {
+          "name": "European Commission (DG EMPL)",
+          "type": "government"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/10/14/platform-workers-council-adopts-new-rules-to-improve-their-working-conditions/",
+          "title": "Platform workers: Council adopts new rules to improve their working conditions",
+          "publisher": "Council of the EU",
+          "date": "2024-10-14",
+          "type": "government-document"
+        },
+        {
+          "url": "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/the-eu-platform-workers-directive-effective-as-of-1-december-2024-what-does-thi-102jqg1",
+          "title": "The EU platform workers directive: effective as of 1 December 2024!",
+          "publisher": "Freshfields (Technology Quotient)",
+          "date": "2024-12",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch: Rats-Pressemitteilung + grosse Kanzlei-Analyse. Strukturelle Entscheidung, kein Einzelvorfall — als „regulatorischer Anker“ in der Timeline sinnvoll.",
+    "dedup_hint": "eu directive | platform work | 2024/2831 | algorithmic management | brussels | december 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:40.374Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/10/14/platform-workers-council-adopts-new-rules-to-improve-their-working-conditions/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/the-eu-platform-workers-directive-effective-as-of-1-december-2024-what-does-thi-102jqg1",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2024"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "kenia-uber-bolt-fahrer-streik-algorithm-2024",
+    "discovered_at": "2026-06-01T15:10:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Kenia: Landesweite Streiks von Uber- und Bolt-Fahrer:innen gegen algorithmische Preissetzung",
+      "name_en": "Kenya: Nationwide strikes by Uber and Bolt drivers against algorithmic pricing",
+      "startDate": "2024-07-15",
+      "location": {
+        "name_de": "Nairobi, Kenia",
+        "name_en": "Nairobi, Kenya",
+        "country": "KE",
+        "lat": -1.2921,
+        "lng": 36.8219
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Im Juli 2024 traten Fahrer:innen mehrerer App-Plattformen in Kenia in einen fünftägigen landesweiten Streik gegen die algorithmische Preissetzung von Uber und Bolt, die Nicht-Umsetzung einer 18%-Provisionsobergrenze und der 300-KES-Mindestfahrtkosten. Im September 2024 folgte eine zweite Streikwelle. Zahlreiche Fahrer:innen umgehen die Plattform-Algorithmen mittlerweile, indem sie über Walkie-Talkie-Apps wie Zello eigene Tarife abstimmen — Uber drohte daraufhin mit Sanktionen.",
+      "description_en": "In July 2024 drivers for several app platforms in Kenya staged a five-day nationwide strike against Uber and Bolt's algorithmic pricing, the non-implementation of an 18% commission cap and a 300-KES minimum fare. A second wave followed in September 2024. Many drivers now bypass platform algorithms by coordinating their own fares via walkie-talkie apps such as Zello — Uber has warned drivers this violates platform rules.",
+      "actors": [
+        {
+          "name": "Uber Kenya",
+          "type": "company"
+        },
+        {
+          "name": "Bolt Kenya",
+          "type": "company"
+        },
+        {
+          "name": "Organisation of Online Drivers (OOD) Kenya",
+          "type": "ngo"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://techcabal.com/2024/07/15/kenya-ride-hailing-strike/",
+          "title": "Uber, Bolt drivers begin five-day strike, demand inclusion in pricing decisions",
+          "publisher": "TechCabal",
+          "date": "2024-07-15",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.fastcompany.com/91175106/uber-kenya-drivers-setting-fares",
+          "title": "Uber pushes back against Kenyan drivers setting their own fares",
+          "publisher": "Fast Company",
+          "date": "2024",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: TechCabal + Fast Company + Capital FM Kenia. Datum 15.7.2024 für ersten Streikbeginn solide belegt.",
+    "dedup_hint": "kenya | nairobi | uber | bolt | strike | 2024 | algorithmic pricing | zello",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:46:41.263Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techcabal.com/2024/07/15/kenya-ride-hailing-strike/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.48 hits=6 year=2024"
+        },
+        {
+          "url": "https://www.fastcompany.com/91175106/uber-kenya-drivers-setting-fares",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "australien-fair-work-closing-loopholes-deactivation-2024",
+    "discovered_at": "2026-06-01T15:11:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Australien: Closing-Loopholes-Reform schützt Plattform-Arbeit vor unfairer algorithmischer Deaktivierung",
+      "name_en": "Australia: Closing Loopholes reform protects platform workers from unfair algorithmic deactivation",
+      "startDate": "2024-08-26",
+      "location": {
+        "name_de": "Canberra, Australien",
+        "name_en": "Canberra, Australia",
+        "country": "AU",
+        "lat": -35.2809,
+        "lng": 149.13
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Mit dem Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024 schuf Australien als weltweit erstes Land eine eigene Kategorie „employee-like workers“ für Plattform-Beschäftigte und schützt sie seit 26. August 2024 vor unfairer algorithmischer Deaktivierung. Die Fair Work Commission kann Mindeststandards für Bezahlung, Sicherheit, Konsultation bei Algorithmus-Änderungen und Streitbeilegung festlegen. Vor Deaktivierung ist ein „Deactivation Code“ mit menschlichem Urteil verpflichtend; Uber, DoorDash und die Transport Workers Union schlossen eine erste branchenweite Vereinbarung.",
+      "description_en": "Australia's Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024 created a world-first 'employee-like workers' category for platform workers and, as of 26 August 2024, protects them from unfair algorithmic deactivation. The Fair Work Commission can set minimum standards on pay, safety, consultation when platforms change algorithms, and dispute resolution. A 'Deactivation Code' requires genuine human judgment before deactivation; Uber, DoorDash and the Transport Workers Union concluded an early sector-wide agreement.",
+      "actors": [
+        {
+          "name": "Australian Government / Department of Employment and Workplace Relations",
+          "type": "government"
+        },
+        {
+          "name": "Fair Work Commission",
+          "type": "government"
+        },
+        {
+          "name": "Transport Workers Union (TWU)",
+          "type": "ngo"
+        },
+        {
+          "name": "Uber Australia / DoorDash",
+          "type": "company"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ministers.dewr.gov.au/rishworth/australia-leading-world-gig-worker-protections",
+          "title": "Australia leading the world with gig worker protections",
+          "publisher": "Australian Government – Ministers' Media Centre",
+          "date": "2024",
+          "type": "government-document"
+        },
+        {
+          "url": "https://hrlegal.com.au/fair-work-act-2024-gig-worker-unfair-deactivation-protections/",
+          "title": "Fair Work Act 2024: New Protections for Gig Workers Against Unfair Deactivation",
+          "publisher": "HR Legal Australia",
+          "date": "2024",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch: Regierungsquelle + Kanzlei-Analyse. Strukturelle Reform; konkrete einzelne Fair-Work-Commission-Sachen (Uber Eats reinstatement) als spätere separate Vorfälle denkbar.",
+    "dedup_hint": "australia | fair work | closing loopholes | employee-like | algorithmic deactivation | 2024 | twu",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:47:06.446Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://ministers.dewr.gov.au/rishworth/australia-leading-world-gig-worker-protections",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://hrlegal.com.au/fair-work-act-2024-gig-worker-unfair-deactivation-protections/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2024"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "indien-swiggy-zomato-strike-phantom-boss-2024",
+    "discovered_at": "2026-06-01T15:12:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Indien: 200.000 Plattform-Lieferfahrer:innen streiken gegen 10-Minuten-Algorithmen und „Phantom Boss“",
+      "name_en": "India: 200,000 platform delivery workers strike against 10-minute algorithms and the 'phantom boss'",
+      "startDate": "2024-12-31",
+      "location": {
+        "name_de": "Indien (landesweit)",
+        "name_en": "India (nationwide)",
+        "country": "IN",
+        "lat": 20.5937,
+        "lng": 78.9629
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 3,
+      "description_de": "An Silvester 2024 traten laut Indian Federation of App Based Transport Workers (IFAT) über 200.000 Liefer- und Rideshare-Fahrer:innen in einen landesweiten Streik gegen die Bedingungen auf Swiggy, Zomato, Blinkit, Urban Company und anderen Plattformen. Hauptforderungen: faire Bezahlung (Basisrate teils unter 5 INR pro Auftrag), Ende der Quick-Commerce-Versprechen von Lieferung in unter 10 Minuten, Stopp automatisierter Ratings-Strafen und Abschaltungen ohne transparente Prüfung sowie soziale Absicherung.",
+      "description_en": "On New Year's Eve 2024 the Indian Federation of App Based Transport Workers (IFAT) reported over 200,000 delivery and rideshare workers joining a nationwide strike against conditions on Swiggy, Zomato, Blinkit, Urban Company and others. Core demands: fair pay (with base rates reportedly below 5 INR per order), an end to sub-10-minute quick-commerce promises, halting automated rating penalties and opaque account suspensions, and comprehensive social security.",
+      "actors": [
+        {
+          "name": "Swiggy",
+          "type": "company"
+        },
+        {
+          "name": "Zomato / Blinkit",
+          "type": "company"
+        },
+        {
+          "name": "Urban Company",
+          "type": "company"
+        },
+        {
+          "name": "Indian Federation of App Based Transport Workers (IFAT)",
+          "type": "ngo"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2026/01/01/india/india-gig-workers-delivery-strike-intl-hnk",
+          "title": "In India, door deliveries can come in under 10 minutes. But many drivers are fed up",
+          "publisher": "CNN",
+          "date": "2026-01-01",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence medium: nur eine starke Mainstream-Quelle (CNN) und ein lokaler Bericht; IFAT-Zahlen sollten beim Promote bestätigt werden. Startdatum ist Streikbeginn 31.12.2024.",
+    "dedup_hint": "india | swiggy | zomato | blinkit | ifat | strike | new year 2024 | phantom boss | 10 minutes",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:47:07.441Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.cnn.com/2026/01/01/india/india-gig-workers-delivery-strike-intl-hnk",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.74 hits=8 year=2024"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 1
+    }
+  },
+  {
+    "candidate_id": "italien-glovo-iudicial-supervision-2024",
+    "discovered_at": "2026-06-01T15:13:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Italien: Glovo-Tochter wegen Verdacht auf Ausbeutung migrantischer Rider:innen unter gerichtliche Aufsicht gestellt",
+      "name_en": "Italy: Glovo's Italian subsidiary placed under judicial supervision over alleged exploitation of migrant riders",
+      "startDate": "2024",
+      "location": {
+        "name_de": "Mailand, Italien",
+        "name_en": "Milan, Italy",
+        "country": "IT",
+        "lat": 45.4642,
+        "lng": 9.19
+      },
+      "incidentType": [
+        "labor-exploitation",
+        "discrimination"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 3,
+      "description_de": "Im Verlauf eines italienischen Strafverfahrens wegen mutmasslicher Ausbeutung überwiegend migrantischer Lieferfahrer:innen wurde die italienische Glovo-Tochter unter gerichtliche Aufsicht („amministrazione giudiziaria“) gestellt. Mutterkonzern Delivery Hero erhöhte die Rückstellungen für rechtliche Risiken um 183 Mio Euro, um mögliche Sozialversicherungsbeiträge, Zinsen und Bussgelder italienischer Behörden für den Zeitraum 2016 bis Ende 2024 abzudecken. Die Aufsicht folgt auf eine Reihe italienischer Urteile, die Plattform-Algorithmen und Subunternehmer-Ketten als Werkzeuge der Scheinselbständigkeit werten.",
+      "description_en": "During Italian criminal proceedings over alleged exploitation of mostly migrant delivery riders, Glovo's Italian subsidiary was placed under judicial supervision ('amministrazione giudiziaria'). Parent Delivery Hero increased its legal-risk provisions by 183 million euros to cover possible social-security contributions, interest and fines that Italian authorities may claim for the 2016 – end-2024 period. The supervision follows a string of Italian rulings treating platform algorithms and subcontractor chains as instruments of sham self-employment.",
+      "actors": [
+        {
+          "name": "Foodinho S.r.l. (Glovo Italia)",
+          "type": "company"
+        },
+        {
+          "name": "Delivery Hero SE",
+          "type": "company"
+        },
+        {
+          "name": "Italian Public Prosecutor (Milan)",
+          "type": "government"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.verdictfoodservice.com/news/glovos-italian-food-delivery/",
+          "title": "Glovo's Italian food delivery arm placed under judicial supervision",
+          "publisher": "Verdict Food Service",
+          "date": "2024",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.rttnews.com/3528328/delivery-hero-increases-provisions-for-legal-risks.aspx",
+          "title": "Delivery Hero Increases Provisions For Legal Risks",
+          "publisher": "RTT News",
+          "date": "2024",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence medium-hoch. Konkretes Monatsdatum beim Promote prüfen; Quellen bestätigen das „amministrazione giudiziaria“-Verfahren und die 183-Mio-Provisionen klar.",
+    "dedup_hint": "glovo | italy | milan | judicial supervision | foodinho | delivery hero | 183 million | migrant riders",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:47:09.184Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.verdictfoodservice.com/news/glovos-italian-food-delivery/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.60 hits=8"
+        },
+        {
+          "url": "https://www.rttnews.com/3528328/delivery-hero-increases-provisions-for-legal-risks.aspx",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.48 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "italien-glovo-tochter-wegen-verdacht-auf-ausbeutung-migrantischer-rider-innen-unter",
+    "promoted_at": "2026-06-01T12:02:57.775Z"
+  },
+  {
+    "candidate_id": "kolumbien-rappi-defensoria-mediator-kritik-2024",
+    "discovered_at": "2026-06-01T15:14:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Kolumbien: Rappi richtet „Defensoría al Repartidor“ ein — Fairwork und Rider:innen kritisieren Scheinneutralität",
+      "name_en": "Colombia: Rappi introduces 'Defensoría al Repartidor' — Fairwork and couriers criticise it as performative",
+      "startDate": "2024",
+      "location": {
+        "name_de": "Bogotá, Kolumbien",
+        "name_en": "Bogotá, Colombia",
+        "country": "CO",
+        "lat": 4.711,
+        "lng": -74.0721
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "Rappi setzte 2024 eine sogenannte „Defensoría al Repartidor“ ein, die als neutrale Schlichtungsstelle zwischen Plattform und Lieferfahrer:innen vermarktet wurde. Lieferfahrer:innen und Fairwork Colombia kritisieren, dass die Stelle nicht unabhängig von Rappi sei und vorhandene Beschwerdekanäle dupliziere statt zu ersetzen. Im Hintergrund: über 100 aktive Verbraucherschutz-Klagen gegen Rappi und anhaltende Kontroversen um algorithmische Auftragsverteilung und Account-Sperrungen, die migrantische Kurier:innen besonders treffen.",
+      "description_en": "In 2024 Rappi launched a 'Defensoría al Repartidor', marketed as a neutral mediator between the platform and couriers. Couriers and Fairwork Colombia argue that the body lacks autonomy from Rappi and duplicates existing complaint channels rather than replacing them. Backdrop: more than 100 active consumer-protection lawsuits against Rappi and continued controversy over algorithmic order assignment and account suspensions, which hit migrant couriers especially hard.",
+      "actors": [
+        {
+          "name": "Rappi",
+          "type": "company",
+          "systems": [
+            "order-assignment algorithm",
+            "automated account suspension"
+          ]
+        },
+        {
+          "name": "Fairwork Colombia",
+          "type": "ngo"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://restofworld.org/2024/rappi-mediator-service/",
+          "title": "Rappi delivery workers say the new mediator for them is useless, not neutral",
+          "publisher": "Rest of World",
+          "date": "2024",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.context.news/digital-rights/colombias-rappi-app-draws-ire-of-venezuelan-migrant-couriers",
+          "title": "Colombia's Rappi app draws ire of Venezuelan migrant couriers",
+          "publisher": "Context (Thomson Reuters Foundation)",
+          "date": "2024",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence medium: zwei seriöse Quellen, aber kein gerichtliches Urteil — eher dokumentierter strukureller Konflikt. Schwächer als Direkt-Klagen; eventuell beim Triage downgrade.",
+    "dedup_hint": "rappi | colombia | bogota | defensoria al repartidor | fairwork | migrant couriers | mediator",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:47:10.456Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://restofworld.org/2024/rappi-mediator-service/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.56 hits=7 year=2024"
+        },
+        {
+          "url": "https://www.context.news/digital-rights/colombias-rappi-app-draws-ire-of-venezuelan-migrant-couriers",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.24"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "deutschland-getir-gorillas-marktaustritt-2024",
+    "discovered_at": "2026-06-01T15:15:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Deutschland: Getir/Gorillas zieht sich aus Deutschland zurück — algorithmisch gesteuertes Quick-Commerce-Modell scheitert nach Wildcat-Streiks und Sammelklagen",
+      "name_en": "Germany: Getir/Gorillas exits Germany — algorithmically driven quick-commerce model collapses after wildcat strikes and mass dismissal lawsuits",
+      "startDate": "2024-04-29",
+      "location": {
+        "name_de": "Berlin, Deutschland",
+        "name_en": "Berlin, Germany",
+        "country": "DE",
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Ende April 2024 verkündete Getir den Ausstieg aus dem deutschen Markt mit den Marken Getir und Gorillas. Vorausgegangen waren mehrere Jahre wildcat-Streiks der grösstenteils migrantischen Berliner Belegschaft und Sammelklagen vor dem Arbeitsgericht gegen rund 350 fristlose Kündigungen nach Protesten im Oktober 2021 sowie gegen die algorithmisch berechneten Lasten- und Schichtvorgaben. Die Rider behaupteten unter anderem ungültige elektronische Signaturen unter den Arbeitsverträgen.",
+      "description_en": "In late April 2024 Getir announced its exit from the German market with both the Getir and Gorillas brands. The retreat followed years of wildcat strikes by the largely migrant Berlin workforce and labour-court mass claims over around 350 summary dismissals after October 2021 protests, as well as over algorithmically calculated load and shift assignments. Riders also challenged the contracts as signed with an invalid electronic-signature system.",
+      "actors": [
+        {
+          "name": "Getir / Gorillas (Berlin)",
+          "type": "company",
+          "systems": [
+            "load-calculation algorithm",
+            "shift-assignment"
+          ]
+        },
+        {
+          "name": "Gorillas Workers Collective",
+          "type": "ngo"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.thelocal.de/20240429/why-two-leading-grocery-delivery-apps-are-leaving-germany-in-may",
+          "title": "Why two leading grocery delivery apps are leaving Germany in May",
+          "publisher": "The Local Germany",
+          "date": "2024-04-29",
+          "type": "news-article"
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/ntwe.12312",
+          "title": "Building labour power in the platform economy: A comparative analysis of worker struggles in German and Norwegian food and grocery delivery",
+          "publisher": "New Technology, Work and Employment (Wiley)",
+          "date": "2025",
+          "type": "research-paper"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence medium: Marktaustritt 2024 belegt, frühere Streiks und Klagen belegt; direkter kausaler Zusammenhang („algorithmische Steuerung hat scheitern verursacht“) ist Interpretation und sollte beim Promote verbal abgesichert werden.",
+    "dedup_hint": "gorillas | getir | germany | berlin | quick commerce | exit 2024 | wildcat strike | 350 dismissals",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:47:13.662Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.thelocal.de/20240429/why-two-leading-grocery-delivery-apps-are-leaving-germany-in-may",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.48 hits=8 year=2024"
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/ntwe.12312",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
+  },
+  {
+    "candidate_id": "uk-cma-uber-bolt-pricing-investigation-2024",
+    "discovered_at": "2026-06-01T15:16:00Z",
+    "researcher": "agent-research-gig-platforms-round-2",
+    "round": "round-2-2026-06-01",
+    "status": "rejected",
+    "candidate_data": {
+      "name_de": "Grossbritannien: Bolt darf gegen Worker-Status-Urteil in Berufung gehen — Konflikt um algorithmische Personalführung geht in nächste Runde",
+      "name_en": "United Kingdom: Bolt granted permission to appeal worker-status ruling — fight over algorithmic management continues",
+      "startDate": "2025",
+      "location": {
+        "name_de": "London, Vereinigtes Königreich",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "labor-exploitation"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "Nach dem Employment-Tribunal-Urteil vom November 2024 erhielt Bolt 2025 die Erlaubnis, gegen die Worker-Klassifizierung seiner britischen Fahrer:innen in Berufung zu gehen. Das Verfahren wird der zentrale Test für die Übertragbarkeit der Uber-BV-v-Aslam-Logik (Supreme Court 2021) auf Konkurrenten und für die rechtliche Bewertung algorithmischer Steuerung als Subordinationsmerkmal. Bolt argumentiert, das Modell unterscheide sich substantiell von Uber; die ADCU und Leigh Day halten die Berufung für aussichtslos.",
+      "description_en": "Following the November 2024 Employment Tribunal ruling, Bolt was granted permission in 2025 to appeal the worker classification of its UK drivers. The appeal will be a key test of how far the Uber BV v Aslam logic (UK Supreme Court 2021) extends to competitors and of how algorithmic control is treated as evidence of subordination. Bolt argues its model differs substantially from Uber's; the App Drivers & Couriers Union and Leigh Day consider the appeal unlikely to succeed.",
+      "actors": [
+        {
+          "name": "Bolt Operations OÜ",
+          "type": "company"
+        },
+        {
+          "name": "App Drivers & Couriers Union (ADCU)",
+          "type": "ngo"
+        },
+        {
+          "name": "Leigh Day",
+          "type": "ngo"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://employeebenefits.co.uk/tax-and-legislation/bolt-granted-permission-to-appeal-worker-status-tribunal-ruling/281929.article",
+          "title": "Bolt granted permission to appeal employment tribunal worker status ruling",
+          "publisher": "Employee Benefits",
+          "date": "2025",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence medium: nur eine starke Quelle (Employee Benefits) und Sekundärbestätigungen; das Datum der Berufungs-Erlaubnis muss beim Promote nachgeschärft werden. Dies ist eher ein Anschluss-Vorfall zum Bolt-Nov-2024-Eintrag.",
+    "dedup_hint": "bolt | uk | appeal | worker status | 2025 | adcu | leigh day",
+    "verification_log": {
+      "verified_at": "2026-06-01T11:47:15.175Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://employeebenefits.co.uk/tax-and-legislation/bolt-granted-permission-to-appeal-worker-status-tribunal-ruling/281929.article",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.24"
+        }
+      ],
+      "match_count": 0,
+      "sources_count": 1
+    }
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uk-ransomware-angriff-auf-nhs-pathologiedienstleister-synnovis-trug-zum-tod-eines",
+  "name": "Grossbritannien: Ransomware-Angriff auf NHS-Pathologiedienstleister Synnovis trug zum Tod eines Patienten bei",
+  "name_de": "Grossbritannien: Ransomware-Angriff auf NHS-Pathologiedienstleister Synnovis trug zum Tod eines Patienten bei",
+  "name_en": "UK: Ransomware attack on NHS pathology provider Synnovis contributed to a patient's death",
+  "description": "Am 3. Juni 2024 verschluesselte die Ransomware-Gruppe Qilin Systeme bei Synnovis, einem Pathologie-Dienstleister mehrerer Londoner NHS-Trusts. Folge: rund 1.134 geplante Operationen und 2.194 ambulante Termine in den ersten 13 Tagen abgesagt; Bluttests teils nur 10 Prozent Kapazitaet. Im Juni 2025 bestaetigte NHS England, dass der Angriff ein mitwirkender Faktor beim Tod eines Patienten war. 400 GB Daten wurden veroeffentlicht. Auch wenn der Angriff selbst nicht KI-gesteuert war, traf er das automatisierte Pathologie-Backbone und ist Teil der breiteren Diskussion um KI-/IT-Abhaengigkeiten im Gesundheitswesen.",
+  "description_de": "Am 3. Juni 2024 verschluesselte die Ransomware-Gruppe Qilin Systeme bei Synnovis, einem Pathologie-Dienstleister mehrerer Londoner NHS-Trusts. Folge: rund 1.134 geplante Operationen und 2.194 ambulante Termine in den ersten 13 Tagen abgesagt; Bluttests teils nur 10 Prozent Kapazitaet. Im Juni 2025 bestaetigte NHS England, dass der Angriff ein mitwirkender Faktor beim Tod eines Patienten war. 400 GB Daten wurden veroeffentlicht. Auch wenn der Angriff selbst nicht KI-gesteuert war, traf er das automatisierte Pathologie-Backbone und ist Teil der breiteren Diskussion um KI-/IT-Abhaengigkeiten im Gesundheitswesen.",
+  "description_en": "On 3 June 2024 the Qilin ransomware group encrypted systems at Synnovis, a pathology services provider for several London NHS trusts. As a result, around 1,134 planned operations and 2,194 outpatient appointments were cancelled in the first 13 days; blood testing fell to about 10% of normal capacity. In June 2025 NHS England confirmed the attack was a contributing factor in a patient's death. Some 400 GB of data was leaked. While not itself an AI attack, it struck the automated pathology backbone and feeds the wider debate over AI/IT dependency in healthcare.",
+  "startDate": "2024-06-03",
+  "location": {
+    "@type": "Place",
+    "name": "London, Grossbritannien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    },
+    "name_de": "London, Grossbritannien",
+    "name_en": "London, United Kingdom"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Synnovis",
+      "type": "company",
+      "asm:systems": [
+        "pathology lab IT"
+      ],
+      "name_de": "Synnovis",
+      "name_en": "Synnovis"
+    },
+    {
+      "name": "Qilin ransomware group",
+      "type": "non-state-actor",
+      "asm:systems": [],
+      "name_de": "Qilin ransomware group",
+      "name_en": "Qilin ransomware group"
+    },
+    {
+      "name": "NHS England",
+      "type": "government",
+      "asm:systems": [],
+      "name_de": "NHS England",
+      "name_en": "NHS England"
+    }
+  ],
+  "asm:severity": 5,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.england.nhs.uk/synnovis-cyber-incident/",
+      "title": "Synnovis cyber incident",
+      "publisher": "NHS England",
+      "date": "2024-06",
+      "type": "government-document",
+      "asm:linkHealth": "unverified",
+      "title_de": "Synnovis cyber incident",
+      "title_en": "Synnovis cyber incident"
+    },
+    {
+      "url": "https://insight.scmagazineuk.com/synnovis-2024-attack-contributing-factor-in-patient-death",
+      "title": "Synnovis 2024 Attack 'Contributing Factor' in Patient Death",
+      "publisher": "SC Media UK",
+      "date": "2025-06",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Synnovis 2024 Attack 'Contributing Factor' in Patient Death",
+      "title_en": "Synnovis 2024 Attack 'Contributing Factor' in Patient Death"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "uk-synnovis-ransomware-pathologie-patiententod-2024",
+    "promotedFromRound": "round-2-2026-06-01"
+  }
+}

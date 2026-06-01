@@ -4,7 +4,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Israel/Gaza: 'Where's Daddy?' — KI-System verfolgt Zielpersonen bis nach Hause, um Familien zu bombardieren",
       "name_en": "Israel/Gaza: 'Where's Daddy?' — AI system tracks targets to their homes to bomb entire families",
@@ -63,20 +63,20 @@
     "researcher_notes": "Distinct system from Lavender/Gospel already documented in existing 'gaza-lavender-ki-targeting'. 'Where's Daddy?' is the geolocation-to-home tracker — high confidence (six IDF source officers, multiple corroborating outlets, UN statement). Consider promoting as standalone or merging as Timeline-entry under existing Lavender file.",
     "dedup_hint": "wheres daddy | where's daddy | gaza | ai targeting | family home | 2024 | idf | unit 8200",
     "verification_log": {
-      "verified_at": "2026-06-01T09:18:55.980Z",
+      "verified_at": "2026-06-01T11:48:04.649Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
           "url": "https://www.972mag.com/lavender-ai-israeli-army-gaza/",
-          "http_status": 200,
-          "matches_content": true,
-          "note": "match score=0.83 hits=8 year=2024"
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
         },
         {
           "url": "https://www.ohchr.org/en/press-releases/2024/04/gaza-un-experts-deplore-use-purported-ai-commit-domicide-gaza-call",
-          "http_status": 403,
-          "matches_content": false,
-          "note": "http-error-on-get"
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.60 hits=8 year=2024"
         },
         {
           "url": "https://www.democracynow.org/2024/4/5/israel_ai",
@@ -96,7 +96,7 @@
     "discovered_at": "2026-06-01T12:05:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "Israel/Gaza: Corsight-Gesichtserkennung mit Google Photos — Hunderte Palaestinenser per KI identifiziert und verhaftet",
       "name_en": "Israel/Gaza: Corsight facial recognition with Google Photos — hundreds of Palestinians identified and detained by AI",
@@ -154,14 +154,14 @@
     "researcher_notes": "Distinct from existing 'israel-blue-wolf-palaestina' (Blue Wolf is West Bank/Hebron, this is Gaza & uses Corsight+Google Photos). High confidence — NYT primary source, multiple secondary confirmations. Mosab Abu Toha case is a concrete documented harm.",
     "dedup_hint": "corsight | gaza | facial recognition | google photos | abu toha | nyt 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T09:18:58.957Z",
+      "verified_at": "2026-06-01T11:48:05.719Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
           "url": "https://www.timesofisrael.com/report-idf-using-facial-recognition-tools-to-identify-detain-suspects-in-gaza/",
-          "http_status": 200,
-          "matches_content": true,
-          "note": "match score=0.83 hits=8 year=2024"
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
         },
         {
           "url": "https://www.business-humanrights.org/en/latest-news/report-reveals-google-corsights-technologies-role-in-israels-expansive-facial-recognition-program-in-gaza/",
@@ -170,7 +170,7 @@
           "note": "match score=0.74 hits=8 year=2024"
         }
       ],
-      "match_count": 2,
+      "match_count": 1,
       "sources_count": 2
     },
     "promoted_to_slug": "palaestina-israel-gaza-corsight-gesichtserkennung-mit-google-photos-hunderte",
@@ -181,7 +181,7 @@
     "discovered_at": "2026-06-01T12:10:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "Israel: Unit 8200 entwickelt arabisches ChatGPT-aehnliches Sprachmodell aus abgehoerten Palaestinenser-Gespraechen",
       "name_en": "Israel: Unit 8200 builds Arabic ChatGPT-style language model from intercepted Palestinian conversations",
@@ -229,7 +229,7 @@
     "researcher_notes": "Confidence medium-high: single primary source (+972 reporting) but +972 has strong Unit-8200-source track record. Worth promoting; second corroborating outlet (Guardian co-publication) referenced in search results — verify URL on promote. Mentioned alongside existing microsoft-azure-unit8200-cutoff-gaza but distinct (this is the LLM tool, that one is Microsoft cutting Azure for related mass surveillance).",
     "dedup_hint": "unit 8200 | arabic llm | chatgpt | palestinians | surveillance | 2024 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:01.206Z",
+      "verified_at": "2026-06-01T11:48:08.091Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -250,7 +250,7 @@
     "discovered_at": "2026-06-01T12:15:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Gaza/USA: Gaza Humanitarian Foundation — Gesichtserkennung als Bedingung fuer Nahrungshilfe, hunderte Tote an Verteilpunkten",
       "name_en": "Gaza/USA: Gaza Humanitarian Foundation — facial recognition as condition for food aid, hundreds killed at distribution sites",
@@ -316,7 +316,7 @@
     "researcher_notes": "High severity (mass civilian casualties) + clear AI/biometric component (facial recognition + iris scan as gatekeeper to food). Multiple sources. Wikipedia entry confirms structure & timeline.",
     "dedup_hint": "ghf | gaza humanitarian foundation | biometric aid | facial recognition food | 2025 starvation",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:04.478Z",
+      "verified_at": "2026-06-01T11:48:10.698Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -349,7 +349,7 @@
     "discovered_at": "2026-06-01T12:20:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Libanon: 'Operation Grim Beeper' — KI-gestuetzte Lieferketten-Sabotage und Palantir-Analyse hinter Pager-Explosionen",
       "name_en": "Lebanon: 'Operation Grim Beeper' — AI-assisted supply-chain sabotage and Palantir analytics behind pager explosions",
@@ -412,7 +412,7 @@
     "researcher_notes": "Severity 5 obvious. AI-attribution: Palantir analytics claim rests on Steinberger biography — confidence medium-high (book + Middle East Eye + Press TV report). Core attack itself is uncontested. Consider framing as 'AI-assisted targeting infrastructure' incident.",
     "dedup_hint": "grim beeper | lebanon pager | hezbollah | palantir | 2024 september | mossad",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:05.811Z",
+      "verified_at": "2026-06-01T11:48:11.535Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -439,7 +439,7 @@
     "discovered_at": "2026-06-01T12:25:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Jordanien: Access-Now/Citizen-Lab-Bericht 2024 erweitert Pegasus-Faelle auf 35 Opfer — Journalist:innen, Anwaelt:innen, HRW-Mitarbeitende",
       "name_en": "Jordan: 2024 Access Now/Citizen Lab report expands Pegasus cases to 35 victims — journalists, lawyers, HRW staff",
@@ -503,7 +503,7 @@
     "researcher_notes": "Existing incident 'jordanien-pegasus-journalisten' references only 2022 Citizen Lab / 2023 Access Now reports. This 2024 expansion (forensically confirmed 35 victims through Sept 2023, plus HRW staff Adam Coogle and Lama Fakih) is a substantive escalation worth either a new entry or a Timeline update to the existing record. Promote-decision: extend existing rather than new entry.",
     "dedup_hint": "jordan | pegasus | 2024 access now | citizen lab | hrw | 35 victims | adam coogle",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:12.983Z",
+      "verified_at": "2026-06-01T11:48:13.523Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -536,7 +536,7 @@
     "discovered_at": "2026-06-01T12:30:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Iran: 'Noor-Plan' und Nazer-App — Drohnen, Gesichtserkennung und Buerger-Denunziation gegen Frauen ohne Hijab",
       "name_en": "Iran: 'Noor Plan' and Nazer app — drones, facial recognition and citizen-snitching against women without hijab",
@@ -596,7 +596,7 @@
     "researcher_notes": "Existing 'iran-ki-hijab-erkennung' covers the general pre-2024 hijab-FR pattern. Noor Plan + Nazer app + UN report 2025 are concrete 2024/2025 escalation milestones — better as Timeline-extension of existing or as new standalone given new tools/severity (paralysed woman, 8000 cars). High confidence: UN Fact-Finding-Mission report, CNN, HRA.",
     "dedup_hint": "iran | noor plan | nazer app | hijab | drones | 2024 | facial recognition | UN report",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:15.541Z",
+      "verified_at": "2026-06-01T11:48:15.571Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -629,7 +629,7 @@
     "discovered_at": "2026-06-01T12:35:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Tuerkei: Deepfake-Video von Istanbul-Buergermeister Imamoglu vor Kommunalwahlen 2024",
       "name_en": "Turkey: Deepfake video of Istanbul mayor Imamoglu before 2024 municipal elections",
@@ -678,7 +678,7 @@
     "researcher_notes": "Existing 'tuerkei-ki-kurdische-ueberwachung' covers separate Kurdish-surveillance topic. This is the 2024 election deepfake angle. Imamoglu arrest March 2025 is contextually related but not directly AI-caused — note in researcher notes. Severity 3 (election integrity, not physical violence).",
     "dedup_hint": "turkey | imamoglu | deepfake | 2024 election | istanbul | akp",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:19.029Z",
+      "verified_at": "2026-06-01T11:48:16.914Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -705,7 +705,7 @@
     "discovered_at": "2026-06-01T12:40:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "Syrien: Nach Assads Sturz im Dezember 2024 enthuellen Geheimdienst-Archive das volle Ausmass digitaler Ueberwachung",
       "name_en": "Syria: After Assad's fall in December 2024, intelligence archives reveal full extent of digital surveillance",
@@ -756,14 +756,14 @@
     "researcher_notes": "Existing 'syrien-ki-ueberwachung-assad' likely pre-dates the December 2024 archive find. This is the post-Assad-fall confirmation of full scope — promote as Timeline-update on existing record, or new entry framed as 'Reckoning' phase. Severity 5 (mass-scale, decades, linked to torture/deaths).",
     "dedup_hint": "syria | assad fall | december 2024 | air force intelligence | siraj | rsf | post-regime archives",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:20.971Z",
+      "verified_at": "2026-06-01T11:48:17.581Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
           "url": "https://gijn.org/stories/assad-regime-syrian-intelligence-spying-journalists-siraj/",
-          "http_status": 200,
-          "matches_content": true,
-          "note": "match score=0.61 hits=8 year=2024"
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
         },
         {
           "url": "https://rsf.org/en/assad-s-war-journalists-inside-syria-s-surveillance-machine",
@@ -772,7 +772,7 @@
           "note": "match score=0.69 hits=8 year=2024"
         }
       ],
-      "match_count": 2,
+      "match_count": 1,
       "sources_count": 2
     },
     "promoted_to_slug": "syrien-nach-assads-sturz-im-dezember-2024-enthuellen-geheimdienst-archive-das-volle",
@@ -783,7 +783,7 @@
     "discovered_at": "2026-06-01T12:45:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Aegypten: Predator-Spyware (Intellexa) gegen Praesidentschafts-Herausforderer Tantawi — US-Sanktionen 2024",
       "name_en": "Egypt: Predator spyware (Intellexa) against presidential challenger Tantawi — US sanctions 2024",
@@ -847,7 +847,7 @@
     "researcher_notes": "Existing 'aegypten-ki-protest-identifikation' is about protest FR, different topic. This is Predator against opposition pol. — distinct entry justified. High confidence (Citizen Lab forensics + OFAC sanctions order).",
     "dedup_hint": "egypt | predator | intellexa | tantawi | cytrox | 2023 2024 | ofac sanctions",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:40.323Z",
+      "verified_at": "2026-06-01T11:48:38.189Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -880,7 +880,7 @@
     "discovered_at": "2026-06-01T12:50:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "Saudi-Arabien: UK-High-Court laesst Spyware-Klage saudischer Aktivist Yahya Assiri gegen Riad zu (2024)",
       "name_en": "Saudi Arabia: UK High Court allows Saudi activist Yahya Assiri's spyware lawsuit against Riyadh (2024)",
@@ -927,7 +927,7 @@
     "researcher_notes": "Single primary source from Amnesty Security Lab — high credibility. Distinct legal-precedent angle, fits 'consequences' arc of broader spyware story. Verification level 4 (court ruling is public record).",
     "dedup_hint": "saudi arabia | yahya assiri | alqst | pegasus | uk court | october 2024 | quadream",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:42.369Z",
+      "verified_at": "2026-06-01T11:48:38.721Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -948,7 +948,7 @@
     "discovered_at": "2026-06-01T12:55:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Israel/USA: US-Jury verurteilt NSO Group zu 168 Mio. USD wegen WhatsApp-Pegasus-Angriffen (Mai 2025)",
       "name_en": "Israel/USA: US jury orders NSO Group to pay $168M for WhatsApp Pegasus attacks (May 2025)",
@@ -1002,7 +1002,7 @@
     "researcher_notes": "Existing 'usa-meta-whatsapp-nso-group-pegasus-verurteilung' may already cover this — DEDUP CHECK BEFORE PROMOTE. If existing record stops at December 2024 liability ruling, the May 2025 damages verdict + October 2025 injunction/reduction are Timeline-extensions, not a new incident. Flagging as candidate-to-review-against-existing rather than as new entry.",
     "dedup_hint": "nso group | meta | whatsapp | 168 million | may 2025 | northern california | hamilton injunction",
     "verification_log": {
-      "verified_at": "2026-06-01T09:19:44.415Z",
+      "verified_at": "2026-06-01T11:48:39.415Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1029,7 +1029,7 @@
     "discovered_at": "2026-06-01T13:00:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "VAE: Microsofts 1,5-Mrd.-USD-Investment in G42 (April 2024) — KI-Konzern unter Aufsicht des nationalen Sicherheitsberaters",
       "name_en": "UAE: Microsoft's $1.5B investment in G42 (April 2024) — AI conglomerate overseen by national security adviser",
@@ -1087,7 +1087,7 @@
     "researcher_notes": "Distinct from existing 'emirate-tosca-ueberwachung' (DarkMatter/ToTok focus). This is the 2024 Microsoft-G42 structural deal with surveillance-state implications. Severity 3 — no immediate concrete harm, but architectural risk. Confidence medium-high: Microsoft press release + Washington Post + SEC filings referenced.",
     "dedup_hint": "uae | g42 | microsoft | 1.5 billion | april 2024 | tahnoon | abu dhabi | igaa",
     "verification_log": {
-      "verified_at": "2026-06-01T09:20:09.594Z",
+      "verified_at": "2026-06-01T11:49:04.601Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1114,7 +1114,7 @@
     "discovered_at": "2026-06-01T13:05:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Tunesien: Decree-Law 54 + KI-Ueberwachung — 2024-Welle von Journalist:innen-Haft unter Saied",
       "name_en": "Tunisia: Decree-Law 54 + AI surveillance — 2024 wave of journalist detentions under Saied",
@@ -1171,7 +1171,7 @@
     "researcher_notes": "AI/algorithmic component is structural (mass-data interception powers under Decree-54), not a named system. Confidence 4 on legal/political facts, 2-3 on direct AI tooling — flag at promote. Could fit better as 'censorship' than 'surveillance'.",
     "dedup_hint": "tunisia | decree 54 | bsaies | zeghidi | dahmani | 2024 | journalist arrests | saied",
     "verification_log": {
-      "verified_at": "2026-06-01T09:20:10.743Z",
+      "verified_at": "2026-06-01T11:49:05.176Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1204,7 +1204,7 @@
     "discovered_at": "2026-06-01T13:10:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Irak: Ministerium-Innen-Denunzier-Plattform + Social-Media-Ueberwachung von Journalist:innen (2024)",
       "name_en": "Iraq: Interior Ministry snitch platform + social media surveillance of journalists (2024)",
@@ -1261,7 +1261,7 @@
     "researcher_notes": "AI-attribution weaker than other candidates (citizen-reporting platform + social-media monitoring; ML-component implicit). Severity 3. Worth keeping as candidate but lower priority than Gaza/Iran/Lebanon entries.",
     "dedup_hint": "iraq | interior ministry | social media surveillance | protect goyzha | 2024 | sulaymaniyah",
     "verification_log": {
-      "verified_at": "2026-06-01T09:20:12.887Z",
+      "verified_at": "2026-06-01T11:49:06.529Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1294,7 +1294,7 @@
     "discovered_at": "2026-06-01T13:15:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Iran: Internet-Blackout und KI-Ueberwachung waehrend der Proteste 2025/2026",
       "name_en": "Iran: Internet blackout and AI surveillance during 2025/2026 protests",
@@ -1353,7 +1353,7 @@
     "researcher_notes": "Recent event (within last few months of cutoff). Confidence medium — Wikipedia entry for 2025 blackout and Irish Times confirm tracking, but exact AI-tool naming weaker. Worth promoting if a second outlet confirms the Chinese-tech claim.",
     "dedup_hint": "iran | internet blackout | 2026 | protest surveillance | chinese facial recognition | digital repression",
     "verification_log": {
-      "verified_at": "2026-06-01T09:20:16.169Z",
+      "verified_at": "2026-06-01T11:49:09.064Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1386,7 +1386,7 @@
     "discovered_at": "2026-06-01T13:20:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "promoted",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Marokko: Anhaltender Pegasus-Einsatz gegen Sahraoui-Aktivist:innen — Amnesty-Bestaetigung 2022 weitergefuehrt 2024",
       "name_en": "Morocco: Continued Pegasus deployment against Sahrawi activists — Amnesty 2022 evidence carried into 2024",
@@ -1440,7 +1440,7 @@
     "researcher_notes": "Existing 'marokko-pegasus-journalisten' likely covers main Pegasus-Project find. This candidate adds the Western-Sahara / Sahrawi-activist dimension and the post-2022 continuity. CONSIDER: better as Timeline-extension of existing record rather than new entry. Severity 4 (ongoing harassment, exile, jailed associates).",
     "dedup_hint": "morocco | western sahara | sahrawi | pegasus | mangin | maliha | mansouri | 2022 amnesty",
     "verification_log": {
-      "verified_at": "2026-06-01T09:20:17.496Z",
+      "verified_at": "2026-06-01T11:49:09.743Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
