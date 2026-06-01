@@ -374,27 +374,87 @@ function sampleEntries(currentYear) {
   return [robust, sparse];
 }
 
+// --- Build from real loaders -------------------------------------------------
+
+/**
+ * Iterate taxonomy.occupations × MVP_COUNTRIES × year, call buildEntry for
+ * each cell, filter to non-empty (= at least one Layer-A/B/C source present),
+ * and return the resulting entries list. Used by --build mode.
+ *
+ * Year-scope: by default just the current year (MVP focus on the live
+ * snapshot). Pass `years: [2020, 2021, ...]` to expand. Multi-year output is
+ * what the Chart-Modus (Step 6) will consume.
+ */
+function buildFromLoaders({ taxonomy, countries, years, currentYear }) {
+  const tax = taxonomy || loadTaxonomy();
+  const cs = countries || MVP_COUNTRIES;
+  const cy = currentYear || new Date().getFullYear();
+  // Default: current year + previous year, to absorb publication lag (most
+  // national stats labs release the year-N report in year-N+1). Pass explicit
+  // years for historical-time-series builds (Chart-Modus, Step 6).
+  const ys = years && years.length ? years : [cy, cy - 1];
+
+  const entries = [];
+  for (const country of cs) {
+    for (const occ of tax.occupations) {
+      for (const year of ys) {
+        const sources = loadAllLayers(country, occ.isco, year);
+        if (!sources.length) continue; // skip empty cells
+        entries.push(buildEntry({
+          isco: occ.isco,
+          country,
+          year,
+          sources,
+          currentYear: cy
+        }));
+      }
+    }
+  }
+  return entries;
+}
+
 // --- Entry point -------------------------------------------------------------
 
 function main(argv) {
   const isSample = argv.includes('--sample');
+  const isBuild = argv.includes('--build');
   const outDir = path.join(__dirname, '..', 'data', 'career');
   const currentYear = new Date().getFullYear();
 
-  if (!isSample) {
-    console.log('Layer loaders are stubs (MVP step 2 wires real APIs).');
-    console.log('Run with --sample to materialize a fixture bundle in data/career/.');
+  if (!isSample && !isBuild) {
+    console.log('Usage:');
+    console.log('  node scripts/bundle-career-data.js --build');
+    console.log('    Bundle from real Layer-A/B/C loaders (taxonomy × MVP_COUNTRIES × current year).');
+    console.log('    Empty cells (no source data) are dropped. Writes per-country JSON + manifest.');
+    console.log('  node scripts/bundle-career-data.js --sample');
+    console.log('    Write fixture bundle with 2 illustrative entries (DE robust + AU sparse).');
+    console.log('  node scripts/bundle-career-data.test.js');
+    console.log('    Run unit tests.');
     return;
   }
 
-  const entries = sampleEntries(currentYear);
-  const countries = writeBundle(outDir, entries);
+  // Need to also write empty per-country files so the frontend can fetch them
+  // without 404s. Discover countries-to-emit independent of the entries list.
+  const targetCountries = isBuild ? MVP_COUNTRIES : ['DE', 'AU'];
+  const entries = isSample ? sampleEntries(currentYear) : buildFromLoaders({ currentYear });
+
+  // Ensure every target country has an output file, even if empty.
+  fs.mkdirSync(outDir, { recursive: true });
+  const byCountry = new Map(targetCountries.map(c => [c, []]));
+  for (const e of entries) {
+    if (byCountry.has(e.country)) byCountry.get(e.country).push(e);
+  }
+  for (const [country, rows] of byCountry) {
+    const file = path.join(outDir, `${country.toLowerCase()}.json`);
+    fs.writeFileSync(file, JSON.stringify(rows));
+    console.log(`  ${rows.length.toString().padStart(3)} entries -> ${path.relative(process.cwd(), file)}`);
+  }
   writeManifest(outDir, buildManifest({
-    countries,
+    countries: targetCountries,
     generatedAt: new Date().toISOString(),
     sourcesUsed: collectSourcesUsed(entries)
   }));
-  console.log(`Done. ${entries.length} sample entries across ${countries.length} country file(s).`);
+  console.log(`Done. ${entries.length} non-empty entries across ${targetCountries.length} countries.`);
 }
 
 if (require.main === module) {
@@ -428,6 +488,7 @@ module.exports = {
   clearLayerASourceCache,
   LAYER_A_SOURCE_FILES,
   loadTaxonomy,
+  buildFromLoaders,
   // manifest + IO
   buildManifest,
   collectSourcesUsed,

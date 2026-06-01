@@ -10,6 +10,9 @@
   <meta property="og:description" content="Bandbreiten-Anzeige für KI-Substituierbarkeit von Berufen, nach Land." data-i18n-content="meta.career.description">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aistrikemap.org/career.html">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="">
   <link rel="stylesheet" href="css/base.css?v=1">
   <link rel="stylesheet" href="css/layout.css?v=1">
   <link rel="stylesheet" href="css/controls.css?v=1">
@@ -19,7 +22,7 @@
   <link rel="stylesheet" href="css/cross-links.css?v=1">
   <link rel="stylesheet" href="css/subpages.css?v=1">
   <link rel="stylesheet" href="css/responsive.css?v=1">
-  <link rel="stylesheet" href="css/career.css?v=1">
+  <link rel="stylesheet" href="css/career.css?v=2">
 </head>
 <body>
   <!-- Skip Link -->
@@ -86,18 +89,32 @@
       </div>
     </div>
 
-    <!-- Placeholder content area -->
-    <div class="career-stage" id="career-stage" aria-live="polite">
-      <div class="career-placeholder" id="career-placeholder">
-        <h2 data-i18n="career.placeholder.title">Daten-Anbindung in Vorbereitung</h2>
-        <p data-i18n="career.placeholder.body">Schicht-A-Loader-Infrastruktur ist live; Bulk-Daten-Import aus IAB, BLS, ONS, DARES, StatCan, CBS, Arbetsförmedlingen und JSA folgt als nächste Welle. Beruf-Katalog (82 ISCO-08 Codes) und Quellen-Schema sind im Repository.</p>
-        <p class="career-placeholder__meta">
-          <a href="https://github.com/MeArt-EAT/aistrikemap.org/blob/main/docs/planung/career-dashboard-mvp-scope.md" target="_blank" rel="noopener" data-i18n="career.placeholder.linkMvp">MVP-Scoping ansehen</a>
-          <span aria-hidden="true"> · </span>
-          <a href="https://github.com/MeArt-EAT/aistrikemap.org/blob/main/data/career/sources/_schema.md" target="_blank" rel="noopener" data-i18n="career.placeholder.linkSchema">Quellen-Schema</a>
-        </p>
+    <!-- Stage: Map (default) or Chart -->
+    <div class="career-stage" id="career-stage" aria-live="polite" data-mode="map">
+      <div id="career-map" class="career-map" data-i18n-aria="career.map.aria" aria-label="Choropleth: KI-Substituierbarkeit nach Land"></div>
+      <div class="career-legend" id="career-legend" aria-hidden="true">
+        <span class="career-legend__title" data-i18n="career.legend.title">Substituierbarkeit</span>
+        <ul class="career-legend__list">
+          <li><span class="career-legend__swatch" data-bucket="no-data"></span><span data-i18n="career.legend.noData">Keine Daten</span></li>
+          <li><span class="career-legend__swatch" data-bucket="low"></span><span data-i18n="career.legend.low">Niedrig (0–0.3)</span></li>
+          <li><span class="career-legend__swatch" data-bucket="mid"></span><span data-i18n="career.legend.mid">Mittel (0.3–0.6)</span></li>
+          <li><span class="career-legend__swatch" data-bucket="high"></span><span data-i18n="career.legend.high">Hoch (0.6–0.9)</span></li>
+          <li><span class="career-legend__swatch" data-bucket="very-high"></span><span data-i18n="career.legend.veryHigh">Sehr hoch (>0.9)</span></li>
+        </ul>
       </div>
     </div>
+
+    <!-- Detail Panel (slide-in from right) -->
+    <aside id="career-detail-panel" class="career-detail-panel" data-i18n-aria="career.detail.aria" aria-label="Career-Detail-Panel" tabindex="-1" aria-hidden="true">
+      <div class="career-detail-panel__header">
+        <div class="career-detail-panel__titles">
+          <h2 class="career-detail-panel__country"></h2>
+          <p class="career-detail-panel__occupation"></p>
+        </div>
+        <button type="button" class="career-detail-panel__close" data-i18n-aria="detail.close" aria-label="Schließen">&times;</button>
+      </div>
+      <div class="career-detail-panel__body"></div>
+    </aside>
 
     <!-- Footer methodology link -->
     <div class="career-foot-meta">
@@ -112,9 +129,12 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
   <script src="js/i18n.js?v=5"></script>
   <script src="js/nav.js?v=3"></script>
-  <script src="js/career.js?v=1"></script>
+  <script src="js/career.js?v=2"></script>
   <script>
     (async function () {
       await I18n.load(I18n.getStoredLang());
