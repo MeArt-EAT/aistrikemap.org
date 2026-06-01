@@ -446,6 +446,107 @@
   opacity: 0.85;
 }
 
+/* --- methodik-career.html — sub-page editorial styles -------------------- */
+
+.page-content__breadcrumb {
+  font-size: 0.88rem;
+  margin: 0 0 1rem;
+}
+
+.page-content__breadcrumb a {
+  color: var(--color-accent, #4fc3f7);
+  text-decoration: none;
+}
+
+.page-content__breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.methodik-layer-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  border-left: 3px solid var(--color-accent, #4fc3f7);
+  border-radius: 0.45rem;
+  padding: 1rem 1.1rem;
+  margin: 0.75rem 0;
+}
+
+.methodik-layer-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+}
+
+.methodik-layer-card p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.methodik-confidence-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.methodik-confidence-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.7rem 0.85rem;
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 0.4rem;
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+}
+
+.methodik-confidence__badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 0.3rem;
+  flex-shrink: 0;
+}
+
+.methodik-confidence__badge[data-conf="robust"] {
+  background: rgba(46, 204, 113, 0.18);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.4);
+}
+
+.methodik-confidence__badge[data-conf="divergent"] {
+  background: rgba(241, 196, 15, 0.18);
+  color: #f1c40f;
+  border: 1px solid rgba(241, 196, 15, 0.4);
+}
+
+.methodik-confidence__badge[data-conf="sparse"] {
+  background: rgba(149, 165, 166, 0.18);
+  color: #bdc3c7;
+  border: 1px solid rgba(149, 165, 166, 0.4);
+}
+
+.methodik-sources-table {
+  font-size: 0.88rem;
+  margin-top: 0.75rem;
+}
+
+.methodik-sources-table td:first-child {
+  font-weight: 700;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.methodik-sources-table td:nth-child(3) {
+  white-space: nowrap;
+  color: var(--color-text-secondary);
+  font-size: 0.82rem;
+}
+
 /* --- Footer methodology link --------------------------------------------- */
 
 .career-foot-meta {
