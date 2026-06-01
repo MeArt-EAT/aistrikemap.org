@@ -148,11 +148,17 @@ function generateSlug(candidate) {
   const prefix = countryPrefix(cc);
   // Slug-Body: deutscher Name ohne Land-Doppelung (z.B. "Brasilien: X" → "X")
   let body = cd.name_de || cd.name_en || candidate.candidate_id || 'untitled';
-  // Remove leading "Land: " prefix if present
-  body = body.replace(/^[A-Za-zÄÖÜäöüß-]+:\s*/, '');
+  // Remove leading "Land: " prefix if present (handles "USA: Foo", "Burkina-Faso: Foo")
+  body = body.replace(/^[A-Za-zÄÖÜäöüß][A-Za-zÄÖÜäöüß\s-]*:\s*/, '');
   // Year from startDate
   const year = (cd.startDate || '').slice(0, 4).match(/^\d{4}$/) ? (cd.startDate || '').slice(0, 4) : null;
-  const slugBody = slugify(body);
+  let slugBody = slugify(body);
+  // Safety-Net: wenn der Agent den Country-Prefix in name_de bereits vorangestellt
+  // hat (ohne Doppelpunkt), würde ein naives prefix + '-' + slugBody zu
+  // "usa-usa-..." führen. Strippe doppelten Prefix.
+  if (slugBody.startsWith(prefix + '-')) {
+    slugBody = slugBody.slice(prefix.length + 1);
+  }
   let full = prefix + '-' + slugBody;
   // Append year if not already in slug
   if (year && !full.includes(year)) full += '-' + year;
