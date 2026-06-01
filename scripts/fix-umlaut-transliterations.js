@@ -2,7 +2,7 @@
 /**
  * scripts/fix-umlaut-transliterations.js
  *
- * Einmal-Fixer für die Findings aus audit-bilingual-incidents.js
+ * Lint-Fixer für die Findings aus audit-bilingual-incidents.js
  * (Kategorie `umlaut_transliteration`). Ersetzt bekannte deutsche
  * Wörter, die mit ae/oe/ue/ss statt ä/ö/ü/ß geschrieben wurden, durch
  * ihre korrekte Form. Word-boundary, case-erhaltend (Großschreibung am
@@ -12,6 +12,31 @@
  * data/incidents/*.json. Source-Titles werden ausgelassen (können in
  * beliebigen Sprachen sein). Bilingual-Bundle wird NICHT überschrieben —
  * danach `node scripts/bundle-incidents.js` ausführen.
+ *
+ * Anwendung:
+ *   node scripts/fix-umlaut-transliterations.js
+ *   node scripts/audit-bilingual-incidents.js   # zur Verifikation
+ *   node scripts/bundle-incidents.js            # Bundle neu bauen
+ *
+ * Wann ausführen:
+ *   - Nach jedem KI-generierten oder von außen importierten Incident-Batch
+ *     (typischerweise transliterieren LLMs Umlaute zu ae/oe/ue).
+ *   - Wenn audit-bilingual-incidents.js Findings der Kategorie
+ *     `umlaut_transliteration` meldet.
+ *   - Vor einem Release-Commit als sanity-Check.
+ *
+ * Idempotenz: auf bereits sauberen Dateien ist es ein No-Op
+ * ("Files changed: 0"). Mehrfach hintereinander ausführbar.
+ *
+ * Erweitern:
+ *   FIX_MAP / COMPOUND_SUFFIX_MAP unten haben sprachlich kuratierte Einträge.
+ *   Bei neuen Pattern-Bugs den Eintrag dazufügen und parallel in
+ *   audit-bilingual-incidents.js den entsprechenden Eintrag in
+ *   TRANSLITERATED_GERMAN_WORDS / TRANSLITERATED_COMPOUND_ROOTS ergänzen
+ *   (Audit + Fix müssen synchron bleiben).
+ *
+ * History: ~1.400 Korrekturen über 3 Wellen (Commits 45cf17f, 3e51fff, 428c0db)
+ * bei initialer Einführung im Mai 2026.
  */
 const fs = require('fs');
 const path = require('path');

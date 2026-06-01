@@ -101,5 +101,7 @@ Each incident JSON-LD file contains:
 - **Add labor-impact case**: Create JSON in `data/labor-impact-cases/{firma-slug}-{jahr}-{kontext}.json` per `_schema.md` (mind. 2 sources, ai_attribution_strength 1-5, tags + severity_class), then run `node scripts/bundle-labor-cases.js` (regenerates aggregate + per-country bundles)
 - **Regenerate feed**: `node scripts/generate-feed.js` (Atom feed at `feed.xml`)
 - **Add i18n string**: Add key to both `i18n/de.json` and `i18n/en.json`
+- **Audit translations**: `node scripts/audit-bilingual-incidents.js` — prüft jede Incident-Datei auf DE↔EN-Konsistenz, fehlende EN-Felder, Längen-Plausibilität, Eigennamen-Erhaltung UND CLAUDE.md-Umlaut-Compliance (Kategorie `umlaut_transliteration`). Schreibt Report nach `audit-translation-report.md`.
+- **Fix Umlaut-Transliterationen**: `node scripts/fix-umlaut-transliterations.js` — fixt automatisch `ae/oe/ue/ss` → `ä/ö/ü/ß` in DE-Feldern für eine kuratierte Wortliste. Idempotent. Nach Lauf: `node scripts/bundle-incidents.js`. Typisch nach KI-generierten Incident-Batches anwenden.
 - **Test locally**: Open `index.html`, `radar.html`, `labor-impact.html`, or `labor-impact-map.html` in browser (or use any static server)
 - **Deploy**: Push to main — GitHub Pages auto-deploys
