@@ -129,14 +129,68 @@ const TRANSLITERATED_GERMAN_WORDS = [
   'regulierungslucke', 'regulierungsluecke',
   'gesichtszuge', 'gesichtszuege',
   'gestutzte', 'gestuetzte',
+  'gestutzten', 'gestuetzten', 'gestutztem', 'gestuetztem',
+  'gestutzter', 'gestuetzter', 'gestutztes', 'gestuetztes',
+  'temporaren', 'temporaeren', 'temporare', 'temporaere',
+  'manner', 'maenner',
+  'fluchtling', 'fluechtling',
+  'fluchtlinge', 'fluechtlinge',
+  'fluchtlingen', 'fluechtlingen',
   'begrundet', 'begruendet',
   // ß-Bugs
   'abzuschliessen',
   'grosse', 'grossen', 'grosser', 'grosseren', 'grosseres',
+  'grosstes', 'groesstes', 'grosster', 'groesster',
+  'grossere', 'groessere',
   'massnahme', 'massnahmen',
+  // Adverbien / Konjunktionen / häufige Adjektive
+  'wahrend', 'waehrend',
+  'spater', 'spaeter',
+  'haufig', 'haeufig', 'haufige', 'haeufige', 'haufigen', 'haeufigen',
+  'jahrlich', 'jaehrlich', 'jahrliche', 'jaehrliche',
+  'jahrlichen', 'jaehrlichen',
+  'taglich', 'taeglich', 'tagliche', 'taegliche',
+  'taglichen', 'taeglichen',
+  'kunftig', 'kuenftig', 'kunftige', 'kuenftige',
+  'gefahrlich', 'gefaehrlich', 'gefahrliche', 'gefaehrliche',
+  'gefahrlichen', 'gefaehrlichen',
+  'gefahrdet', 'gefaehrdet',
+  'gefahrdung', 'gefaehrdung',
+  'verstandlich', 'verstaendlich',
+  'willkurlich', 'willkuerlich',
+  'willkurliche', 'willkuerliche',
+  'willkurlichen', 'willkuerlichen',
+  'willkurlicher', 'willkuerlicher',
+  'unterstutzung', 'unterstuetzung',
+  'unterstutzt', 'unterstuetzt',
+  'unterstutzen', 'unterstuetzen',
+  'zugehorigkeit', 'zugehoerigkeit',
+  'einkunfte', 'einkuenfte',
+  'zuruckweisung', 'zueckweisung',
+  'zuruckweisungen', 'zueckweisungen',
+  'erhohung', 'erhoehung',
+  'unverhaltnismassig', 'unverhaltnismaessig',
+  'unverhaeltnismassig', 'unverhaeltnismaessig',
+  'unverhaltnismassige', 'unverhaltnismaessige',
+  'unverhaeltnismassige', 'unverhaeltnismaessige',
+  'unverhaltnismassiger', 'unverhaltnismaessiger',
+  'unverhaeltnismassiger', 'unverhaeltnismaessiger',
+];
+// Compound-Suffix-Wurzeln: matchen am Wortende, egal ob die Wurzel allein
+// steht ("Behorde") oder als Suffix in einem Kompositum ("Grenzbehorde",
+// "Massenueberwachung"). Nur sichere Wurzeln, die nicht zufällig in anderen
+// Wörtern auftreten würden.
+const TRANSLITERATED_COMPOUND_ROOTS = [
+  'behorde', 'behoerde', 'behorden', 'behoerden',
+  'uberwachung', 'ueberwachung',
+  'fuhrung', 'fuehrung', 'fuhrungen', 'fuehrungen',
 ];
 const TRANSLITERATION_RE = new RegExp(
   '\\b(?:' + TRANSLITERATED_GERMAN_WORDS.join('|') + ')\\b',
+  'gi'
+);
+const COMPOUND_TRANSLITERATION_RE = new RegExp(
+  '(?:' + TRANSLITERATED_COMPOUND_ROOTS.join('|') + ')\\b',
   'gi'
 );
 // "Uber" as a standalone German preposition (= "Über") almost always shows up
@@ -144,7 +198,8 @@ const TRANSLITERATION_RE = new RegExp(
 // "Uber 1,8 Milliarden". The company "Uber" instead occurs in proper-noun
 // contexts ("Uber Technologies", "Uber Eats"). Tighten to digit/quantifier
 // follow-up to keep false positives off the company name.
-const UBER_PREPOSITION_RE = /\bUber\s+(?:\d|tausend|hundert|million|milliard)/g;
+const UBER_PREPOSITION_RE = /\b[Uu]ber\s+(?:\d|tausend|hundert|million|milliard)/g;
+const UBER_PREPOSITION_LC_RE = /\buber\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüß])/g;
 
 function findTransliterations(text) {
   if (typeof text !== 'string' || !text) return [];
@@ -154,9 +209,17 @@ function findTransliterations(text) {
   while ((m = TRANSLITERATION_RE.exec(text)) !== null) {
     matches.add(m[0]);
   }
+  COMPOUND_TRANSLITERATION_RE.lastIndex = 0;
+  while ((m = COMPOUND_TRANSLITERATION_RE.exec(text)) !== null) {
+    matches.add(m[0]);
+  }
   UBER_PREPOSITION_RE.lastIndex = 0;
   while ((m = UBER_PREPOSITION_RE.exec(text)) !== null) {
-    matches.add(m[0].split(/\s+/)[0]); // just the "Uber" token
+    matches.add(m[0].split(/\s+/)[0]); // just the "Uber"/"uber" token
+  }
+  UBER_PREPOSITION_LC_RE.lastIndex = 0;
+  while ((m = UBER_PREPOSITION_LC_RE.exec(text)) !== null) {
+    matches.add('uber');
   }
   return Array.from(matches);
 }
