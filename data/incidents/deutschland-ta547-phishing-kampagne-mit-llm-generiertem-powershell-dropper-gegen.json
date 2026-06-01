@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/deutschland-ta547-phishing-kampagne-mit-llm-generiertem-powershell-dropper-gegen",
+  "name": "Deutschland: TA547-Phishing-Kampagne mit LLM-generiertem PowerShell-Dropper gegen Unternehmen",
+  "name_de": "Deutschland: TA547-Phishing-Kampagne mit LLM-generiertem PowerShell-Dropper gegen Unternehmen",
+  "name_en": "Germany: TA547 phishing campaign using LLM-generated PowerShell dropper against companies",
+  "description": "Proofpoint dokumentierte im April 2024 eine Phishing-Welle des kriminellen Akteurs TA547, die sich als deutscher Metro-Konzern ausgab und Rechnungs-Mails an zahlreiche deutsche Unternehmen verschickte. Anhang: passwortgeschützte ZIP-Datei mit LNK-Datei, die einen PowerShell-Dropper startete und den Rhadamanthys-Infostealer im Speicher lud. Auffällig: Der PowerShell-Code enthielt grammatikalisch korrekte, hyperspezifische Kommentare über jeder Funktion — laut Proofpoint typische Signatur eines LLM-Outputs (ChatGPT, Gemini oder Copilot). Erste TA547-Kampagne mit Rhadamanthys.",
+  "description_de": "Proofpoint dokumentierte im April 2024 eine Phishing-Welle des kriminellen Akteurs TA547, die sich als deutscher Metro-Konzern ausgab und Rechnungs-Mails an zahlreiche deutsche Unternehmen verschickte. Anhang: passwortgeschützte ZIP-Datei mit LNK-Datei, die einen PowerShell-Dropper startete und den Rhadamanthys-Infostealer im Speicher lud. Auffällig: Der PowerShell-Code enthielt grammatikalisch korrekte, hyperspezifische Kommentare über jeder Funktion — laut Proofpoint typische Signatur eines LLM-Outputs (ChatGPT, Gemini oder Copilot). Erste TA547-Kampagne mit Rhadamanthys.",
+  "description_en": "Proofpoint documented in April 2024 a phishing campaign by the criminal actor TA547 impersonating Germany's Metro retail group and sending invoice-themed emails to numerous German companies across industries. The attachment was a password-protected ZIP containing an LNK that triggered a PowerShell dropper, loading the Rhadamanthys infostealer directly into memory. The PowerShell script carried grammatically correct, hyper-specific comments above each function — per Proofpoint a hallmark of LLM-generated code (ChatGPT, Gemini or Copilot). First observed use of Rhadamanthys by TA547.",
+  "startDate": "2024-04",
+  "location": {
+    "@type": "Place",
+    "name": "Deutschland (deutsche Unternehmen quer durch Branchen)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.1657,
+      "longitude": 10.4515
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "DE"
+    },
+    "name_de": "Deutschland (deutsche Unternehmen quer durch Branchen)",
+    "name_en": "Germany (German companies across industries)"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "TA547 (criminal threat actor)",
+      "type": "criminal",
+      "asm:systems": [
+        "Rhadamanthys",
+        "PowerShell dropper",
+        "LLM (ChatGPT/Gemini/Copilot suspected)"
+      ],
+      "name_de": "TA547 (criminal threat actor)",
+      "name_en": "TA547 (criminal threat actor)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.proofpoint.com/uk/blog/threat-insight/security-brief-ta547-targets-german-organizations-rhadamanthys-stealer",
+      "title": "Security Brief: TA547 Targets German Organisations with Rhadamanthys Stealer",
+      "publisher": "Proofpoint",
+      "date": "2024-04-10",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Security Brief: TA547 Targets German Organisations with Rhadamanthys Stealer",
+      "title_en": "Security Brief: TA547 Targets German Organisations with Rhadamanthys Stealer"
+    },
+    {
+      "url": "https://thehackernews.com/2024/04/ta547-phishing-attack-hits-german-firms.html",
+      "title": "TA547 Phishing Attack Hits German Firms with Rhadamanthys Stealer",
+      "publisher": "The Hacker News",
+      "date": "2024-04-10",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "TA547 Phishing Attack Hits German Firms with Rhadamanthys Stealer",
+      "title_en": "TA547 Phishing Attack Hits German Firms with Rhadamanthys Stealer"
+    },
+    {
+      "url": "https://www.darkreading.com/threat-intelligence/ta547-uses-llm-generated-dropper-infect-german-orgs",
+      "title": "TA547 Uses an LLM-Generated Dropper to Infect German Orgs",
+      "publisher": "Dark Reading",
+      "date": "2024-04-11",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "TA547 Uses an LLM-Generated Dropper to Infect German Orgs",
+      "title_en": "TA547 Uses an LLM-Generated Dropper to Infect German Orgs"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "ta547-rhadamanthys-llm-powershell-germany-2024",
+    "promotedFromRound": "round-4-2026-06-01"
+  }
+}

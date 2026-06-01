@@ -1,0 +1,128 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-openai-und-microsoft-sperren-fuenf-staatlich-gelenkte-akteure-russland-china-iran",
+  "name": "Global: OpenAI und Microsoft sperren fünf staatlich gelenkte Akteure (Russland/China/Iran/Nordkorea) wegen LLM-Cybernutzung",
+  "name_de": "Global: OpenAI und Microsoft sperren fünf staatlich gelenkte Akteure (Russland/China/Iran/Nordkorea) wegen LLM-Cybernutzung",
+  "name_en": "Global: OpenAI and Microsoft disable five state-affiliated actors (Russia/China/Iran/North Korea) for LLM cyber misuse",
+  "description": "Am 14. Februar 2024 gaben OpenAI und Microsoft Threat Intelligence gemeinsam die Sperrung von Konten fünf staatlich gelenkter Akteure bekannt: Forest Blizzard (Russland/GRU 26165, Satelliten- und Radar-Recherche zur Ukraine), Charcoal Typhoon und Salmon Typhoon (China, Phishing-Skripte bzw. Aufklärung zu US-Verteidigung), Crimson Sandstorm (Iran/IRGC, Phishing- und Malware-Code) sowie Emerald Sleet (Nordkorea/Kimsuky, Spear-Phishing gegen Asien-Pazifik-Experten und Follina-Recherche). Die Akteure nutzten ChatGPT vor allem für Recherche, Skripting, Übersetzung und Phishing-Content. Alle Konten wurden geschlossen.",
+  "description_de": "Am 14. Februar 2024 gaben OpenAI und Microsoft Threat Intelligence gemeinsam die Sperrung von Konten fünf staatlich gelenkter Akteure bekannt: Forest Blizzard (Russland/GRU 26165, Satelliten- und Radar-Recherche zur Ukraine), Charcoal Typhoon und Salmon Typhoon (China, Phishing-Skripte bzw. Aufklärung zu US-Verteidigung), Crimson Sandstorm (Iran/IRGC, Phishing- und Malware-Code) sowie Emerald Sleet (Nordkorea/Kimsuky, Spear-Phishing gegen Asien-Pazifik-Experten und Follina-Recherche). Die Akteure nutzten ChatGPT vor allem für Recherche, Skripting, Übersetzung und Phishing-Content. Alle Konten wurden geschlossen.",
+  "description_en": "On 14 February 2024 OpenAI and Microsoft Threat Intelligence jointly disclosed the termination of accounts belonging to five state-affiliated actors: Forest Blizzard (Russia, GRU Unit 26165, satellite and radar research tied to Ukraine), Charcoal Typhoon and Salmon Typhoon (China, phishing scripts and US-defence reconnaissance respectively), Crimson Sandstorm (Iran/IRGC, phishing and malware code), and Emerald Sleet (North Korea/Kimsuky, spear-phishing of Asia-Pacific experts and Follina vulnerability research). Actors used ChatGPT mainly for research, scripting, translation and phishing-content drafting. All accounts were disabled.",
+  "startDate": "2024-02",
+  "location": {
+    "@type": "Place",
+    "name": "Global (Akteure in Russland, China, Iran, Nordkorea)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Global (Akteure in Russland, China, Iran, Nordkorea)",
+    "name_en": "Global (actors in Russia, China, Iran, North Korea)"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Forest Blizzard (Russia, GRU 26165)",
+      "type": "government",
+      "asm:systems": [
+        "ChatGPT"
+      ],
+      "name_de": "Forest Blizzard (Russia, GRU 26165)",
+      "name_en": "Forest Blizzard (Russia, GRU 26165)"
+    },
+    {
+      "name": "Charcoal Typhoon (China)",
+      "type": "government",
+      "asm:systems": [
+        "ChatGPT"
+      ],
+      "name_de": "Charcoal Typhoon (China)",
+      "name_en": "Charcoal Typhoon (China)"
+    },
+    {
+      "name": "Salmon Typhoon (China)",
+      "type": "government",
+      "asm:systems": [
+        "ChatGPT"
+      ],
+      "name_de": "Salmon Typhoon (China)",
+      "name_en": "Salmon Typhoon (China)"
+    },
+    {
+      "name": "Crimson Sandstorm (Iran, IRGC)",
+      "type": "government",
+      "asm:systems": [
+        "ChatGPT"
+      ],
+      "name_de": "Crimson Sandstorm (Iran, IRGC)",
+      "name_en": "Crimson Sandstorm (Iran, IRGC)"
+    },
+    {
+      "name": "Emerald Sleet (North Korea, Kimsuky)",
+      "type": "government",
+      "asm:systems": [
+        "ChatGPT"
+      ],
+      "name_de": "Emerald Sleet (North Korea, Kimsuky)",
+      "name_en": "Emerald Sleet (North Korea, Kimsuky)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors/",
+      "title": "Disrupting malicious uses of AI by state-affiliated threat actors",
+      "publisher": "OpenAI",
+      "date": "2024-02-14",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Disrupting malicious uses of AI by state-affiliated threat actors",
+      "title_en": "Disrupting malicious uses of AI by state-affiliated threat actors"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/",
+      "title": "Staying ahead of threat actors in the age of AI",
+      "publisher": "Microsoft Security Blog",
+      "date": "2024-02-14",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Staying ahead of threat actors in the age of AI",
+      "title_en": "Staying ahead of threat actors in the age of AI"
+    },
+    {
+      "url": "https://thehackernews.com/2024/02/microsoft-openai-warn-of-nation-state.html",
+      "title": "Microsoft, OpenAI Warn of Nation-State Hackers Weaponizing AI for Cyber Attacks",
+      "publisher": "The Hacker News",
+      "date": "2024-02-14",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Microsoft, OpenAI Warn of Nation-State Hackers Weaponizing AI for Cyber Attacks",
+      "title_en": "Microsoft, OpenAI Warn of Nation-State Hackers Weaponizing AI for Cyber Attacks"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "openai-disruption-five-state-actors-2024-02",
+    "promotedFromRound": "round-4-2026-06-01"
+  }
+}

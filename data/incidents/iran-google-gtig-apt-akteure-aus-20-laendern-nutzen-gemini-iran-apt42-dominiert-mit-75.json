@@ -1,0 +1,119 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/iran-google-gtig-apt-akteure-aus-20-laendern-nutzen-gemini-iran-apt42-dominiert-mit-75",
+  "name": "Global: Google GTIG — APT-Akteure aus 20+ Ländern nutzen Gemini, Iran (APT42) dominiert mit 75% der Missbrauchsfälle",
+  "name_de": "Global: Google GTIG — APT-Akteure aus 20+ Ländern nutzen Gemini, Iran (APT42) dominiert mit 75% der Missbrauchsfälle",
+  "name_en": "Global: Google GTIG — APT actors from 20+ countries use Gemini, Iran (APT42) accounts for 75% of abuse",
+  "description": "Google Threat Intelligence Group (GTIG) berichtete am 31. Januar 2025, dass APT-Gruppen aus über 20 Ländern Gemini in allen Phasen des Cyber-Kill-Chains einsetzen. Iran stellte 75% der dokumentierten Missbrauchsfälle — insbesondere APT42 nutzte Gemini, um aus Zielprofilen überzeugende Phishing-Personas zu generieren. Chinesische Akteure recherchierten US-Militär und IT-Dienstleister, schrieben Active-Directory-Angriffsskripte und analysierten EDR-Tools. Nordkoreanische Akteure entwickelten Payloads und unterstützten ihre IT-Worker-Operationen. Im September 2025 fand GTIG die HONESTCUE-Malware, die Gemini's API zur Laufzeit nach C#-Code abfragt.",
+  "description_de": "Google Threat Intelligence Group (GTIG) berichtete am 31. Januar 2025, dass APT-Gruppen aus über 20 Ländern Gemini in allen Phasen des Cyber-Kill-Chains einsetzen. Iran stellte 75% der dokumentierten Missbrauchsfälle — insbesondere APT42 nutzte Gemini, um aus Zielprofilen überzeugende Phishing-Personas zu generieren. Chinesische Akteure recherchierten US-Militär und IT-Dienstleister, schrieben Active-Directory-Angriffsskripte und analysierten EDR-Tools. Nordkoreanische Akteure entwickelten Payloads und unterstützten ihre IT-Worker-Operationen. Im September 2025 fand GTIG die HONESTCUE-Malware, die Gemini's API zur Laufzeit nach C#-Code abfragt.",
+  "description_en": "Google Threat Intelligence Group (GTIG) reported on 31 January 2025 that APT groups from more than 20 countries were using Gemini across the cyber kill chain. Iran accounted for 75 % of documented abuse — APT42 in particular used Gemini to turn target dossiers into convincing phishing personas. Chinese actors researched US military and IT-service providers, wrote Active Directory attack scripts and analysed EDR tools. North Korean actors built payloads and supported their IT-worker schemes. In September 2025 GTIG identified HONESTCUE malware that queries Gemini's API at runtime to fetch C# code.",
+  "startDate": "2025-01",
+  "location": {
+    "@type": "Place",
+    "name": "Global (Hauptakteure: Iran, China, Nordkorea, Russland)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.4279,
+      "longitude": 53.688
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IR"
+    },
+    "name_de": "Global (Hauptakteure: Iran, China, Nordkorea, Russland)",
+    "name_en": "Global (main actors: Iran, China, North Korea, Russia)"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "political-pressure"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "APT42 (Iran)",
+      "type": "government",
+      "asm:systems": [
+        "Google Gemini"
+      ],
+      "name_de": "APT42 (Iran)",
+      "name_en": "APT42 (Iran)"
+    },
+    {
+      "name": "Chinese APT groups",
+      "type": "government",
+      "asm:systems": [
+        "Google Gemini"
+      ],
+      "name_de": "Chinese APT groups",
+      "name_en": "Chinese APT groups"
+    },
+    {
+      "name": "North Korean APT groups",
+      "type": "government",
+      "asm:systems": [
+        "Google Gemini"
+      ],
+      "name_de": "North Korean APT groups",
+      "name_en": "North Korean APT groups"
+    },
+    {
+      "name": "Google (defender / disclosure)",
+      "type": "company",
+      "asm:systems": [
+        "Gemini"
+      ],
+      "name_de": "Google (defender / disclosure)",
+      "name_en": "Google (defender / disclosure)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/distillation-experimentation-integration-ai-adversarial-use",
+      "title": "GTIG AI Threat Tracker: Distillation, Experimentation, and (Continued) Integration of AI for Adversarial Use",
+      "publisher": "Google Cloud Threat Intelligence",
+      "date": "2025-01-31",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "GTIG AI Threat Tracker: Distillation, Experimentation, and (Continued) Integration of AI for Adversarial Use",
+      "title_en": "GTIG AI Threat Tracker: Distillation, Experimentation, and (Continued) Integration of AI for Adversarial Use"
+    },
+    {
+      "url": "https://therecord.media/nation-state-hackers-using-gemini-for-malicious-campaigns",
+      "title": "Nation-state hackers ramping up use of Gemini for target reconnaissance, malware coding, Google says",
+      "publisher": "The Record",
+      "date": "2025-01-31",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Nation-state hackers ramping up use of Gemini for target reconnaissance, malware coding, Google says",
+      "title_en": "Nation-state hackers ramping up use of Gemini for target reconnaissance, malware coding, Google says"
+    },
+    {
+      "url": "https://www.theregister.com/2025/01/31/state_spies_google_gemini/",
+      "title": "Google details nefarious Gemini use by Iranian spies",
+      "publisher": "The Register",
+      "date": "2025-01-31",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Google details nefarious Gemini use by Iranian spies",
+      "title_en": "Google details nefarious Gemini use by Iranian spies"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "google-gtig-gemini-apt-2025",
+    "promotedFromRound": "round-4-2026-06-01"
+  }
+}

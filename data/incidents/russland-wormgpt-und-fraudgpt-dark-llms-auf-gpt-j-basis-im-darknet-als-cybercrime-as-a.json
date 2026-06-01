@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/russland-wormgpt-und-fraudgpt-dark-llms-auf-gpt-j-basis-im-darknet-als-cybercrime-as-a",
+  "name": "Global: WormGPT und FraudGPT — Dark-LLMs auf GPT-J-Basis im Darknet als Cybercrime-as-a-Service",
+  "name_de": "Global: WormGPT und FraudGPT — Dark-LLMs auf GPT-J-Basis im Darknet als Cybercrime-as-a-Service",
+  "name_en": "Global: WormGPT and FraudGPT — GPT-J-based dark LLMs sold on the dark web as cybercrime-as-a-service",
+  "description": "SlashNext entdeckte im Juli 2023 WormGPT, einen auf GPT-J basierenden Chatbot, den ein Entwickler namens 'last/laste' explizit für Cybercrime vermarktete — Schwerpunkt Business-Email-Compromise, Phishing-Mails ohne Sprachfehler und polymorphe Malware. Kurz darauf folgte FraudGPT auf Darknet-Boards und Telegram-Kanälen, vermarktet für Malware-Erstellung, Phishing-Pages, Lecks- und Schwachstellen-Recherche, Abos 200 USD/Monat bis 1.700 USD/Jahr. Beide Tools zementierten das 'Cybercrime-as-a-Service'-Modell mit dedizierten LLMs ohne Sicherheits-Guardrails und wurden 2024 von zahlreichen Akteuren in BEC- und Phishing-Kampagnen eingesetzt.",
+  "description_de": "SlashNext entdeckte im Juli 2023 WormGPT, einen auf GPT-J basierenden Chatbot, den ein Entwickler namens 'last/laste' explizit für Cybercrime vermarktete — Schwerpunkt Business-Email-Compromise, Phishing-Mails ohne Sprachfehler und polymorphe Malware. Kurz darauf folgte FraudGPT auf Darknet-Boards und Telegram-Kanälen, vermarktet für Malware-Erstellung, Phishing-Pages, Lecks- und Schwachstellen-Recherche, Abos 200 USD/Monat bis 1.700 USD/Jahr. Beide Tools zementierten das 'Cybercrime-as-a-Service'-Modell mit dedizierten LLMs ohne Sicherheits-Guardrails und wurden 2024 von zahlreichen Akteuren in BEC- und Phishing-Kampagnen eingesetzt.",
+  "description_en": "SlashNext discovered WormGPT in July 2023, a GPT-J-based chatbot marketed by a developer using the handle 'last/laste' explicitly for cybercrime — focused on business email compromise, error-free phishing emails and polymorphic malware. Shortly afterwards FraudGPT appeared on dark-web boards and Telegram, marketed for malware creation, phishing pages, leak and vulnerability research, with subscriptions from USD 200/month up to USD 1,700/year. Both tools cemented the cybercrime-as-a-service model around dedicated guardrail-free LLMs and were used by multiple actors in 2024 BEC and phishing campaigns.",
+  "startDate": "2023-07",
+  "location": {
+    "@type": "Place",
+    "name": "Global (Darknet-Foren)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 55.7558,
+      "longitude": 37.6173
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RU"
+    },
+    "name_de": "Global (Darknet-Foren)",
+    "name_en": "Global (dark-web forums)"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "'last/laste' (WormGPT developer)",
+      "type": "criminal",
+      "asm:systems": [
+        "WormGPT"
+      ],
+      "name_de": "'last/laste' (WormGPT developer)",
+      "name_en": "'last/laste' (WormGPT developer)"
+    },
+    {
+      "name": "Operators of FraudGPT",
+      "type": "criminal",
+      "asm:systems": [
+        "FraudGPT"
+      ],
+      "name_de": "Operators of FraudGPT",
+      "name_en": "Operators of FraudGPT"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.levelblue.com/blogs/spiderlabs-blog/wormgpt-and-fraudgpt-the-rise-of-malicious-llms",
+      "title": "WormGPT and FraudGPT – The Rise of Malicious LLMs",
+      "publisher": "LevelBlue Spiderlabs",
+      "date": "2023-08-22",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "WormGPT and FraudGPT – The Rise of Malicious LLMs",
+      "title_en": "WormGPT and FraudGPT – The Rise of Malicious LLMs"
+    },
+    {
+      "url": "https://asiatimes.com/2024/07/fraudgpt-wormgpt-and-the-rise-of-dark-llms/",
+      "title": "FraudGPT, WormGPT and the rise of dark LLMs",
+      "publisher": "Asia Times",
+      "date": "2024-07",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "FraudGPT, WormGPT and the rise of dark LLMs",
+      "title_en": "FraudGPT, WormGPT and the rise of dark LLMs"
+    },
+    {
+      "url": "https://www.rapid7.com/fundamentals/what-is-wormgpt/",
+      "title": "What Is WormGPT? Malicious AI Model Explained",
+      "publisher": "Rapid7",
+      "date": "2024",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "What Is WormGPT? Malicious AI Model Explained",
+      "title_en": "What Is WormGPT? Malicious AI Model Explained"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "wormgpt-fraudgpt-dark-llm-2023-2024",
+    "promotedFromRound": "round-4-2026-06-01"
+  }
+}

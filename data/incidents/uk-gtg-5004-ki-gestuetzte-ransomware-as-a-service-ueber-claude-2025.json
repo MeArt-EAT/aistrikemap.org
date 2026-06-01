@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/uk-gtg-5004-ki-gestuetzte-ransomware-as-a-service-ueber-claude-2025",
+  "name": "Großbritannien: GTG-5004 — KI-gestützte Ransomware-as-a-Service über Claude",
+  "name_de": "Großbritannien: GTG-5004 — KI-gestützte Ransomware-as-a-Service über Claude",
+  "name_en": "United Kingdom: GTG-5004 — AI-assisted Ransomware-as-a-Service built with Claude",
+  "description": "Ein britischer Akteur, von Anthropic als GTG-5004 verfolgt, nutzte ab Januar 2025 Anthropics Claude, um mehrere Ransomware-Varianten mit ChaCha20-Verschlüsselung, Anti-EDR-Techniken und Windows-Internals-Ausnutzung zu entwickeln und auf Darknet-Foren (Dread, CryptBB, Nulled) als Ransomware-as-a-Service zu verkaufen — Basispaket 400 USD, RaaS-Kit 800 USD, FUD-Crypter 1200 USD. Anthropic stellte fest, dass der Täter ohne KI-Hilfe weder die Komponenten implementieren noch debuggen konnte, sperrte die Konten und meldete den Fall im August-2025-Threat-Intelligence-Report.",
+  "description_de": "Ein britischer Akteur, von Anthropic als GTG-5004 verfolgt, nutzte ab Januar 2025 Anthropics Claude, um mehrere Ransomware-Varianten mit ChaCha20-Verschlüsselung, Anti-EDR-Techniken und Windows-Internals-Ausnutzung zu entwickeln und auf Darknet-Foren (Dread, CryptBB, Nulled) als Ransomware-as-a-Service zu verkaufen — Basispaket 400 USD, RaaS-Kit 800 USD, FUD-Crypter 1200 USD. Anthropic stellte fest, dass der Täter ohne KI-Hilfe weder die Komponenten implementieren noch debuggen konnte, sperrte die Konten und meldete den Fall im August-2025-Threat-Intelligence-Report.",
+  "description_en": "A UK-based actor tracked by Anthropic as GTG-5004 used Claude from January 2025 onwards to develop multiple ransomware variants featuring ChaCha20 encryption, anti-EDR techniques and Windows internals exploitation, and sold them as Ransomware-as-a-Service on dark-web forums Dread, CryptBB and Nulled — basic kit USD 400, full RaaS USD 800, FUD crypter USD 1,200. Anthropic concluded the operator was unable to implement or troubleshoot components without AI assistance, banned the accounts and disclosed the case in its August 2025 Threat Intelligence Report.",
+  "startDate": "2025-01",
+  "location": {
+    "@type": "Place",
+    "name": "Großbritannien (Forenpräsenz: Dread, CryptBB, Nulled)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 54,
+      "longitude": -2
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    },
+    "name_de": "Großbritannien (Forenpräsenz: Dread, CryptBB, Nulled)",
+    "name_en": "United Kingdom (forum presence: Dread, CryptBB, Nulled)"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "GTG-5004 (unidentified UK threat actor)",
+      "type": "criminal",
+      "asm:systems": [
+        "Anthropic Claude"
+      ],
+      "name_de": "GTG-5004 (unidentified UK threat actor)",
+      "name_en": "GTG-5004 (unidentified UK threat actor)"
+    },
+    {
+      "name": "Anthropic (defender / disclosure)",
+      "type": "company",
+      "asm:systems": [
+        "Claude"
+      ],
+      "name_de": "Anthropic (defender / disclosure)",
+      "name_en": "Anthropic (defender / disclosure)"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf",
+      "title": "Threat Intelligence Report: August 2025",
+      "publisher": "Anthropic",
+      "date": "2025-08",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Threat Intelligence Report: August 2025",
+      "title_en": "Threat Intelligence Report: August 2025"
+    },
+    {
+      "url": "https://thehackernews.com/2025/08/anthropic-disrupts-ai-powered.html",
+      "title": "Anthropic Disrupts AI-Powered Cyberattacks Automating Theft and Extortion",
+      "publisher": "The Hacker News",
+      "date": "2025-08-27",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Anthropic Disrupts AI-Powered Cyberattacks Automating Theft and Extortion",
+      "title_en": "Anthropic Disrupts AI-Powered Cyberattacks Automating Theft and Extortion"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/malware-devs-abuse-anthropics-claude-ai-to-build-ransomware/",
+      "title": "Malware devs abuse Anthropic's Claude AI to build ransomware",
+      "publisher": "BleepingComputer",
+      "date": "2025-08-27",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Malware devs abuse Anthropic's Claude AI to build ransomware",
+      "title_en": "Malware devs abuse Anthropic's Claude AI to build ransomware"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "anthropic-gtg-5004-uk-ransomware-as-a-service-2025",
+    "promotedFromRound": "round-4-2026-06-01"
+  }
+}

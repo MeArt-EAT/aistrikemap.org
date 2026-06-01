@@ -1,0 +1,1076 @@
+[
+  {
+    "candidate_id": "anthropic-gtg-5004-uk-ransomware-as-a-service-2025",
+    "discovered_at": "2026-06-01T10:00:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Großbritannien: GTG-5004 — KI-gestützte Ransomware-as-a-Service über Claude",
+      "name_en": "United Kingdom: GTG-5004 — AI-assisted Ransomware-as-a-Service built with Claude",
+      "startDate": "2025-01",
+      "location": {
+        "name_de": "Großbritannien (Forenpräsenz: Dread, CryptBB, Nulled)",
+        "name_en": "United Kingdom (forum presence: Dread, CryptBB, Nulled)",
+        "country": "GB",
+        "lat": 54,
+        "lng": -2
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 3,
+      "description_de": "Ein britischer Akteur, von Anthropic als GTG-5004 verfolgt, nutzte ab Januar 2025 Anthropics Claude, um mehrere Ransomware-Varianten mit ChaCha20-Verschlüsselung, Anti-EDR-Techniken und Windows-Internals-Ausnutzung zu entwickeln und auf Darknet-Foren (Dread, CryptBB, Nulled) als Ransomware-as-a-Service zu verkaufen — Basispaket 400 USD, RaaS-Kit 800 USD, FUD-Crypter 1200 USD. Anthropic stellte fest, dass der Täter ohne KI-Hilfe weder die Komponenten implementieren noch debuggen konnte, sperrte die Konten und meldete den Fall im August-2025-Threat-Intelligence-Report.",
+      "description_en": "A UK-based actor tracked by Anthropic as GTG-5004 used Claude from January 2025 onwards to develop multiple ransomware variants featuring ChaCha20 encryption, anti-EDR techniques and Windows internals exploitation, and sold them as Ransomware-as-a-Service on dark-web forums Dread, CryptBB and Nulled — basic kit USD 400, full RaaS USD 800, FUD crypter USD 1,200. Anthropic concluded the operator was unable to implement or troubleshoot components without AI assistance, banned the accounts and disclosed the case in its August 2025 Threat Intelligence Report.",
+      "actors": [
+        {
+          "name": "GTG-5004 (unidentified UK threat actor)",
+          "type": "criminal",
+          "systems": [
+            "Anthropic Claude"
+          ]
+        },
+        {
+          "name": "Anthropic (defender / disclosure)",
+          "type": "company",
+          "systems": [
+            "Claude"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf",
+          "title": "Threat Intelligence Report: August 2025",
+          "publisher": "Anthropic",
+          "date": "2025-08",
+          "type": "analysis"
+        },
+        {
+          "url": "https://thehackernews.com/2025/08/anthropic-disrupts-ai-powered.html",
+          "title": "Anthropic Disrupts AI-Powered Cyberattacks Automating Theft and Extortion",
+          "publisher": "The Hacker News",
+          "date": "2025-08-27",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/malware-devs-abuse-anthropics-claude-ai-to-build-ransomware/",
+          "title": "Malware devs abuse Anthropic's Claude AI to build ransomware",
+          "publisher": "BleepingComputer",
+          "date": "2025-08-27",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Quelle = Anthropic-Report selbst plus mehrere Tech-Outlets. Confidence hoch für Existenz; geografische Zuordnung 'UK' stammt von Anthropic, nicht extern bestätigt. Keine identifizierten Opfer der Ransomware bekannt.",
+    "dedup_hint": "gtg-5004 | ransomware | claude | anthropic | uk | raas | 2025",
+    "promoted_to_slug": "uk-gtg-5004-ki-gestuetzte-ransomware-as-a-service-ueber-claude-2025",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "anthropic-vibe-hacking-extortion-17-orgs-2025",
+    "discovered_at": "2026-06-01T10:05:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Global: 'Vibe-Hacking' — KI-automatisierte Erpressung von 17 Organisationen mit Claude Code",
+      "name_en": "Global: 'Vibe Hacking' — AI-automated extortion of 17 organisations with Claude Code",
+      "startDate": "2025-07",
+      "location": {
+        "name_de": "Global (17 Opfer in Gesundheits-, Notfall-, Regierungs- und religiösen Sektoren)",
+        "name_en": "Global (17 victims across healthcare, emergency services, government and religious sectors)",
+        "country": "US",
+        "lat": 39,
+        "lng": -98
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Im Juli 2025 deckte Anthropic einen Einzeltäter auf, der Claude Code agentisch einsetzte, um mindestens 17 Organisationen in den USA — darunter Krankenhäuser, Notfalldienste, Regierungsstellen und religiöse Einrichtungen — auszuspähen, einzudringen und zu erpressen. Claude führte 'on-keyboard'-Aktionen aus: scannte VPN-Endpoints, schrieb maßgeschneiderte Malware, analysierte gestohlene Daten zur Zahlungsfähigkeits-Bewertung und generierte personalisierte Erpressungsbriefe mit Bitcoin-Wallet-Adressen. Lösegeldforderungen erreichten teils 500.000 USD. Anthropic dokumentierte den Fall als 'Vibe Hacking' im August-2025-Report.",
+      "description_en": "In July 2025 Anthropic disrupted a single operator who used Claude Code agentically to reconnoitre, infiltrate and extort at least 17 US-based organisations — including hospitals, emergency services, government bodies and religious institutions. Claude performed on-keyboard actions: scanning VPN endpoints, writing custom malware, analysing stolen data to estimate ability-to-pay, and auto-generating victim-specific ransom notes with Bitcoin wallet addresses. Ransom demands reached USD 500,000 in some cases. Anthropic documented the case as 'vibe hacking' in its August 2025 report.",
+      "actors": [
+        {
+          "name": "Unidentified single operator",
+          "type": "criminal",
+          "systems": [
+            "Anthropic Claude Code"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf",
+          "title": "Threat Intelligence Report: August 2025",
+          "publisher": "Anthropic",
+          "date": "2025-08",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.nbcnews.com/tech/security/hacker-used-ai-automate-unprecedented-cybercrime-spree-anthropic-says-rcna227309",
+          "title": "A hacker used AI to automate an 'unprecedented' cybercrime spree, Anthropic says",
+          "publisher": "NBC News",
+          "date": "2025-08-27",
+          "type": "news-article"
+        },
+        {
+          "url": "https://thehackernews.com/2025/08/anthropic-disrupts-ai-powered.html",
+          "title": "Anthropic Disrupts AI-Powered Cyberattacks Automating Theft and Extortion",
+          "publisher": "The Hacker News",
+          "date": "2025-08-27",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Anthropic-Primärquelle plus NBC/The Hacker News. Genaue Opferliste nicht veröffentlicht — 17 ist Anthropics Zählung. Country-Code US gewählt, da Anthropic angibt 'critical sectors' und US-Bezug, aber global einsetzbar.",
+    "dedup_hint": "vibe hacking | claude code | extortion | 17 organizations | anthropic | 2025",
+    "promoted_to_slug": "usa-vibe-hacking-ki-automatisierte-erpressung-von-17-organisationen-mit-claude-code-2025",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "hp-wolf-asyncrat-ai-malware-france-2024",
+    "discovered_at": "2026-06-01T10:10:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Frankreich: Erste in freier Wildbahn dokumentierte KI-generierte Malware (AsyncRAT-Kampagne)",
+      "name_en": "France: First documented in-the-wild AI-generated malware (AsyncRAT campaign)",
+      "startDate": "2024-06",
+      "location": {
+        "name_de": "Frankreich (französischsprachige Empfänger)",
+        "name_en": "France (French-speaking recipients)",
+        "country": "FR",
+        "lat": 46.2276,
+        "lng": 2.2137
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "HP Wolf Security veröffentlichte im September 2024 die erste reputable Dokumentation einer in freier Wildbahn entdeckten KI-generierten Malware-Kampagne. Französischsprachige Empfänger erhielten Phishing-Mails mit verschlüsselten HTML-Anhängen (Rechnungs-Köder), die per HTML-Smuggling VBScript- und JavaScript-Dropper auslieferten — die Skripte enthielten strukturierte, unverschleierte Kommentare zu jeder Zeile, ein typisches Merkmal für LLM-generierten Code. Endstufe war AsyncRAT, das Tastatureingaben, Screenshots und Zugangsdaten stahl.",
+      "description_en": "In September 2024 HP Wolf Security published the first reputable documentation of an AI-generated malware campaign found in the wild. French-speaking recipients received phishing emails with encrypted HTML attachments (invoice lure) that used HTML smuggling to drop VBScript and JavaScript loaders — the scripts featured structured, unobfuscated comments above each line, a hallmark of LLM-generated code. The final payload was AsyncRAT, capable of capturing keystrokes, screens and credentials.",
+      "actors": [
+        {
+          "name": "Unidentified threat actor",
+          "type": "criminal",
+          "systems": [
+            "AsyncRAT",
+            "GenAI-generated VBScript/JavaScript"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hp.com/us-en/newsroom/press-releases/2024/ai-generate-malware.html",
+          "title": "HP Wolf Security Uncovers Evidence of Attackers Using AI to Generate Malware",
+          "publisher": "HP",
+          "date": "2024-09-24",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.darkreading.com/cyber-risk/genai-writes-malicious-code-spread-asyncrat",
+          "title": "GenAI Writes Malicious Code to Spread AsyncRAT",
+          "publisher": "Dark Reading",
+          "date": "2024-09-24",
+          "type": "news-article"
+        },
+        {
+          "url": "https://threatresearch.ext.hp.com/hp-wolf-security-threat-insights-report-september-2024/",
+          "title": "HP Wolf Security Threat Insights Report: September 2024",
+          "publisher": "HP Wolf Security",
+          "date": "2024-09",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "HP Wolf hat Primärbericht; Dark Reading bestätigt. AI-Attribution ist Inferenz (strukturierte Kommentare), nicht harter Beweis — daher Verification 3.",
+    "dedup_hint": "hp wolf | asyncrat | ai generated malware | france | 2024 | first in the wild",
+    "promoted_to_slug": "frankreich-erste-in-freier-wildbahn-dokumentierte-ki-generierte-malware-asyncrat-kampagne",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "ta547-rhadamanthys-llm-powershell-germany-2024",
+    "discovered_at": "2026-06-01T10:15:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Deutschland: TA547-Phishing-Kampagne mit LLM-generiertem PowerShell-Dropper gegen Unternehmen",
+      "name_en": "Germany: TA547 phishing campaign using LLM-generated PowerShell dropper against companies",
+      "startDate": "2024-04",
+      "location": {
+        "name_de": "Deutschland (deutsche Unternehmen quer durch Branchen)",
+        "name_en": "Germany (German companies across industries)",
+        "country": "DE",
+        "lat": 51.1657,
+        "lng": 10.4515
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Proofpoint dokumentierte im April 2024 eine Phishing-Welle des kriminellen Akteurs TA547, die sich als deutscher Metro-Konzern ausgab und Rechnungs-Mails an zahlreiche deutsche Unternehmen verschickte. Anhang: passwortgeschützte ZIP-Datei mit LNK-Datei, die einen PowerShell-Dropper startete und den Rhadamanthys-Infostealer im Speicher lud. Auffällig: Der PowerShell-Code enthielt grammatikalisch korrekte, hyperspezifische Kommentare über jeder Funktion — laut Proofpoint typische Signatur eines LLM-Outputs (ChatGPT, Gemini oder Copilot). Erste TA547-Kampagne mit Rhadamanthys.",
+      "description_en": "Proofpoint documented in April 2024 a phishing campaign by the criminal actor TA547 impersonating Germany's Metro retail group and sending invoice-themed emails to numerous German companies across industries. The attachment was a password-protected ZIP containing an LNK that triggered a PowerShell dropper, loading the Rhadamanthys infostealer directly into memory. The PowerShell script carried grammatically correct, hyper-specific comments above each function — per Proofpoint a hallmark of LLM-generated code (ChatGPT, Gemini or Copilot). First observed use of Rhadamanthys by TA547.",
+      "actors": [
+        {
+          "name": "TA547 (criminal threat actor)",
+          "type": "criminal",
+          "systems": [
+            "Rhadamanthys",
+            "PowerShell dropper",
+            "LLM (ChatGPT/Gemini/Copilot suspected)"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.proofpoint.com/uk/blog/threat-insight/security-brief-ta547-targets-german-organizations-rhadamanthys-stealer",
+          "title": "Security Brief: TA547 Targets German Organisations with Rhadamanthys Stealer",
+          "publisher": "Proofpoint",
+          "date": "2024-04-10",
+          "type": "analysis"
+        },
+        {
+          "url": "https://thehackernews.com/2024/04/ta547-phishing-attack-hits-german-firms.html",
+          "title": "TA547 Phishing Attack Hits German Firms with Rhadamanthys Stealer",
+          "publisher": "The Hacker News",
+          "date": "2024-04-10",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.darkreading.com/threat-intelligence/ta547-uses-llm-generated-dropper-infect-german-orgs",
+          "title": "TA547 Uses an LLM-Generated Dropper to Infect German Orgs",
+          "publisher": "Dark Reading",
+          "date": "2024-04-11",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Proofpoint-Primärquelle solide; AI-Attribution bleibt Inferenz (Kommentar-Stil), kein direkter Beweis.",
+    "dedup_hint": "ta547 | rhadamanthys | germany | metro | llm | powershell | 2024",
+    "promoted_to_slug": "deutschland-ta547-phishing-kampagne-mit-llm-generiertem-powershell-dropper-gegen",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "ferrari-deepfake-ceo-vigna-2024",
+    "discovered_at": "2026-06-01T10:20:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Italien: Ferrari — Deepfake-Anruf imitiert CEO Vigna, vereitelt durch Buch-Frage",
+      "name_en": "Italy: Ferrari — deepfake call impersonates CEO Vigna, foiled by a book-title question",
+      "startDate": "2024-07",
+      "location": {
+        "name_de": "Maranello, Italien",
+        "name_en": "Maranello, Italy",
+        "country": "IT",
+        "lat": 44.5325,
+        "lng": 10.8645
+      },
+      "incidentType": [
+        "deepfakes"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 4,
+      "description_de": "Im Juli 2024 erhielt eine Ferrari-Führungskraft WhatsApp-Nachrichten von einer unbekannten Nummer, angeblich von CEO Benedetto Vigna, mit Verweis auf eine geheime Akquisition und Aufforderung zur sofortigen NDA-Unterzeichnung. Ein darauffolgender Anruf verwendete einen Deepfake mit Vignas süditalienischem Akzent. Die Führungskraft wurde misstrauisch und stellte eine Frage, die nur Vigna beantworten konnte (Titel eines Buches, das Vigna ihm Tage zuvor empfohlen hatte) — der Angreifer legte auf. Ferrari leitete eine interne Untersuchung ein.",
+      "description_en": "In July 2024 a Ferrari executive received WhatsApp messages from an unknown number purportedly from CEO Benedetto Vigna, referencing a confidential acquisition and demanding immediate NDA signing. A follow-up call used a deepfake of Vigna's southern Italian accent. The executive grew suspicious and asked a question only Vigna could answer (the title of a book Vigna had recommended days earlier) — the attacker hung up. Ferrari opened an internal investigation.",
+      "actors": [
+        {
+          "name": "Unidentified attackers",
+          "type": "criminal",
+          "systems": [
+            "voice deepfake"
+          ]
+        },
+        {
+          "name": "Ferrari N.V. (target)",
+          "type": "company",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://fortune.com/2024/07/27/ferrari-deepfake-attempt-scammer-security-question-ceo-benedetto-vigna-cybersecurity-ai/",
+          "title": "Ferrari exec foils deepfake attempt by asking the scammer a question only CEO Benedetto Vigna could answer",
+          "publisher": "Fortune",
+          "date": "2024-07-27",
+          "type": "news-article"
+        },
+        {
+          "url": "https://incidentdatabase.ai/cite/966/",
+          "title": "Incident 966: Ferrari Executive Targeted by AI Deepfake Scam Impersonating CEO Benedetto Vigna",
+          "publisher": "AI Incident Database",
+          "date": "2024-07",
+          "type": "analysis"
+        },
+        {
+          "url": "https://sloanreview.mit.edu/article/how-ferrari-hit-the-brakes-on-a-deepfake-ceo/",
+          "title": "How Ferrari Hit the Brakes on a Deepfake CEO",
+          "publisher": "MIT Sloan Management Review",
+          "date": "2024-08",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Mehrere unabhängige Quellen, kein finanzieller Schaden — daher Severity 2. Verification 4 (gut belegt).",
+    "dedup_hint": "ferrari | vigna | deepfake | italy | 2024 | ceo voice",
+    "promoted_to_slug": "italien-ferrari-deepfake-anruf-imitiert-ceo-vigna-vereitelt-durch-buch-frage-2024",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "wiz-deepfake-rappaport-voice-2024",
+    "discovered_at": "2026-06-01T10:25:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA/Israel: Wiz (Cloud-Security) — Deepfake-Voicemail von CEO Rappaport an Dutzende Mitarbeitende",
+      "name_en": "USA/Israel: Wiz (cloud security) — deepfake voicemail of CEO Rappaport to dozens of staff",
+      "startDate": "2024-10",
+      "location": {
+        "name_de": "New York, USA (Wiz-Hauptsitz)",
+        "name_en": "New York, USA (Wiz HQ)",
+        "country": "US",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "incidentType": [
+        "deepfakes"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 4,
+      "description_de": "Im Oktober 2024 gab Wiz-CEO Assaf Rappaport auf der TechCrunch Disrupt bekannt, dass Angreifer aus Audio-Schnipseln einer öffentlichen Konferenzrede einen Voice-Deepfake von ihm gebaut und an Dutzende Wiz-Mitarbeitende geschickt hatten, um Zugangsdaten abzugreifen. Der Angriff scheiterte, weil Rappaports Vortragsstimme deutlich von seiner Alltagsstimme abweicht (Lampenfieber) und die Mitarbeitenden misstrauisch wurden. Wiz war zu diesem Zeitpunkt ein 12-Mrd-Dollar-Cloud-Security-Start-up.",
+      "description_en": "In October 2024 Wiz CEO Assaf Rappaport disclosed at TechCrunch Disrupt that attackers had built a voice deepfake of him from audio clips of a public conference speech and sent it to dozens of Wiz employees attempting to harvest login credentials. The attack failed because Rappaport's speaking-anxiety-affected stage voice differs noticeably from his everyday voice, raising suspicion. Wiz was a USD 12 bn cloud-security start-up at the time.",
+      "actors": [
+        {
+          "name": "Unidentified attackers",
+          "type": "criminal",
+          "systems": [
+            "voice deepfake"
+          ]
+        },
+        {
+          "name": "Wiz Inc. (target)",
+          "type": "company",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/10/28/wiz-ceo-says-company-was-targeted-with-deepfake-attack-that-used-his-voice/",
+          "title": "Wiz CEO says company was targeted with deepfake attack that used his voice",
+          "publisher": "TechCrunch",
+          "date": "2024-10-28",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.entrepreneur.com/business-news/hackers-sent-a-deepfake-of-wiz-ceo-to-dozens-of-employees/482027",
+          "title": "Hackers Sent a Deepfake of Wiz CEO to Dozens of Employees",
+          "publisher": "Entrepreneur",
+          "date": "2024-10-29",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Direkt von CEO öffentlich bestätigt — Verification 4. Kein Erfolg/finanzieller Schaden, Severity 2.",
+    "dedup_hint": "wiz | rappaport | deepfake voice | 2024 | techcrunch disrupt",
+    "promoted_to_slug": "usa-usa-israel-wiz-cloud-security-deepfake-voicemail-von-ceo-rappaport-an-dutzende",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "openai-disruption-five-state-actors-2024-02",
+    "discovered_at": "2026-06-01T10:30:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Global: OpenAI und Microsoft sperren fünf staatlich gelenkte Akteure (Russland/China/Iran/Nordkorea) wegen LLM-Cybernutzung",
+      "name_en": "Global: OpenAI and Microsoft disable five state-affiliated actors (Russia/China/Iran/North Korea) for LLM cyber misuse",
+      "startDate": "2024-02",
+      "location": {
+        "name_de": "Global (Akteure in Russland, China, Iran, Nordkorea)",
+        "name_en": "Global (actors in Russia, China, Iran, North Korea)",
+        "country": "US",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      "incidentType": [
+        "data-misuse",
+        "political-pressure"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Am 14. Februar 2024 gaben OpenAI und Microsoft Threat Intelligence gemeinsam die Sperrung von Konten fünf staatlich gelenkter Akteure bekannt: Forest Blizzard (Russland/GRU 26165, Satelliten- und Radar-Recherche zur Ukraine), Charcoal Typhoon und Salmon Typhoon (China, Phishing-Skripte bzw. Aufklärung zu US-Verteidigung), Crimson Sandstorm (Iran/IRGC, Phishing- und Malware-Code) sowie Emerald Sleet (Nordkorea/Kimsuky, Spear-Phishing gegen Asien-Pazifik-Experten und Follina-Recherche). Die Akteure nutzten ChatGPT vor allem für Recherche, Skripting, Übersetzung und Phishing-Content. Alle Konten wurden geschlossen.",
+      "description_en": "On 14 February 2024 OpenAI and Microsoft Threat Intelligence jointly disclosed the termination of accounts belonging to five state-affiliated actors: Forest Blizzard (Russia, GRU Unit 26165, satellite and radar research tied to Ukraine), Charcoal Typhoon and Salmon Typhoon (China, phishing scripts and US-defence reconnaissance respectively), Crimson Sandstorm (Iran/IRGC, phishing and malware code), and Emerald Sleet (North Korea/Kimsuky, spear-phishing of Asia-Pacific experts and Follina vulnerability research). Actors used ChatGPT mainly for research, scripting, translation and phishing-content drafting. All accounts were disabled.",
+      "actors": [
+        {
+          "name": "Forest Blizzard (Russia, GRU 26165)",
+          "type": "government",
+          "systems": [
+            "ChatGPT"
+          ]
+        },
+        {
+          "name": "Charcoal Typhoon (China)",
+          "type": "government",
+          "systems": [
+            "ChatGPT"
+          ]
+        },
+        {
+          "name": "Salmon Typhoon (China)",
+          "type": "government",
+          "systems": [
+            "ChatGPT"
+          ]
+        },
+        {
+          "name": "Crimson Sandstorm (Iran, IRGC)",
+          "type": "government",
+          "systems": [
+            "ChatGPT"
+          ]
+        },
+        {
+          "name": "Emerald Sleet (North Korea, Kimsuky)",
+          "type": "government",
+          "systems": [
+            "ChatGPT"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors/",
+          "title": "Disrupting malicious uses of AI by state-affiliated threat actors",
+          "publisher": "OpenAI",
+          "date": "2024-02-14",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/",
+          "title": "Staying ahead of threat actors in the age of AI",
+          "publisher": "Microsoft Security Blog",
+          "date": "2024-02-14",
+          "type": "analysis"
+        },
+        {
+          "url": "https://thehackernews.com/2024/02/microsoft-openai-warn-of-nation-state.html",
+          "title": "Microsoft, OpenAI Warn of Nation-State Hackers Weaponizing AI for Cyber Attacks",
+          "publisher": "The Hacker News",
+          "date": "2024-02-14",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Primärquellen OpenAI + Microsoft. Severity 3 wegen begrenzter Wirkung der einzelnen Operationen (laut Berichten 'noch keine durchschlagenden Capability-Gewinne'), aber Verification 4 wegen offizieller Disclosure.",
+    "dedup_hint": "openai | microsoft | forest blizzard | charcoal typhoon | salmon typhoon | crimson sandstorm | emerald sleet | 2024-02",
+    "promoted_to_slug": "usa-openai-und-microsoft-sperren-fuenf-staatlich-gelenkte-akteure-russland-china-iran",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "openai-sweetspecter-storm0817-cyberav3ngers-2024-10",
+    "discovered_at": "2026-06-01T10:35:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Global: OpenAI Oktober-2024-Report — SweetSpecter, Storm-0817 und CyberAv3ngers nutzen ChatGPT für Malware und Spear-Phishing",
+      "name_en": "Global: OpenAI October 2024 report — SweetSpecter, Storm-0817 and CyberAv3ngers use ChatGPT for malware and spear phishing",
+      "startDate": "2024-10",
+      "location": {
+        "name_de": "Global (China, Iran)",
+        "name_en": "Global (China, Iran)",
+        "country": "US",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Im Oktober-2024-Threat-Report 'Influence and Cyber Operations: An Update' dokumentierte OpenAI über 20 disruptierte Operationen seit Anfang 2024. Drei Cybercrime-Fälle stachen heraus: (1) SweetSpecter (China) griff OpenAI-Mitarbeitende direkt mit Spear-Phishing-ZIPs an, die SugarGh0st-RAT droppten, nutzte ChatGPT zur Log4Shell-Vulnerability-Recherche und Skript-Debugging; (2) Storm-0817 (Iran) entwickelte mit ChatGPT-Hilfe eine rudimentäre Android-Surveillanceware (Pakete com.example.myttt, com.mihanwebmaster.ashpazi) plus WAMP-C2-Server und scrapte Instagram-Follower eines regierungskritischen iranischen Journalisten; (3) CyberAv3ngers (Iran/IRGC) recherchierte ICS-/Wasserwerk-Schwachstellen.",
+      "description_en": "In its October 2024 threat report 'Influence and Cyber Operations: An Update' OpenAI documented over 20 disrupted operations since the start of 2024. Three cybercrime cases stood out: (1) SweetSpecter (China) targeted OpenAI staff directly with spear-phishing ZIPs dropping SugarGh0st RAT, used ChatGPT for Log4Shell vulnerability research and script debugging; (2) Storm-0817 (Iran) used ChatGPT to develop rudimentary Android surveillanceware (packages com.example.myttt, com.mihanwebmaster.ashpazi) plus a WAMP C2 server, and scraped Instagram followers of an Iranian dissident journalist; (3) CyberAv3ngers (Iran/IRGC) researched ICS and water-utility vulnerabilities.",
+      "actors": [
+        {
+          "name": "SweetSpecter (China)",
+          "type": "government",
+          "systems": [
+            "ChatGPT",
+            "SugarGh0st RAT"
+          ]
+        },
+        {
+          "name": "Storm-0817 (Iran)",
+          "type": "government",
+          "systems": [
+            "ChatGPT",
+            "Android surveillanceware"
+          ]
+        },
+        {
+          "name": "CyberAv3ngers (Iran/IRGC)",
+          "type": "government",
+          "systems": [
+            "ChatGPT"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf",
+          "title": "Influence and Cyber Operations: An Update (October 2024)",
+          "publisher": "OpenAI",
+          "date": "2024-10",
+          "type": "analysis"
+        },
+        {
+          "url": "https://thehackernews.com/2024/10/openai-blocks-20-global-malicious.html",
+          "title": "OpenAI Blocks 20 Global Malicious Campaigns Using AI for Cybercrime and Disinformation",
+          "publisher": "The Hacker News",
+          "date": "2024-10-10",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.bleepingcomputer.com/news/security/openai-confirms-threat-actors-use-chatgpt-to-write-malware/",
+          "title": "OpenAI confirms threat actors use ChatGPT to write malware",
+          "publisher": "BleepingComputer",
+          "date": "2024-10-09",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Drei Akteure in einem Eintrag (gemeinsame Disclosure). Falls Promotion gewünscht: ggf. splitten. SweetSpecter-Angriff auf OpenAI selbst wurde durch deren Filter geblockt.",
+    "dedup_hint": "openai | sweetspecter | storm-0817 | cyberav3ngers | october 2024 | sugargh0st",
+    "promoted_to_slug": "usa-openai-oktober-2024-report-sweetspecter-storm-0817-und-cyberav3ngers-nutzen-chatgpt",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "google-gtig-gemini-apt-2025",
+    "discovered_at": "2026-06-01T10:40:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Global: Google GTIG — APT-Akteure aus 20+ Ländern nutzen Gemini, Iran (APT42) dominiert mit 75% der Missbrauchsfälle",
+      "name_en": "Global: Google GTIG — APT actors from 20+ countries use Gemini, Iran (APT42) accounts for 75% of abuse",
+      "startDate": "2025-01",
+      "location": {
+        "name_de": "Global (Hauptakteure: Iran, China, Nordkorea, Russland)",
+        "name_en": "Global (main actors: Iran, China, North Korea, Russia)",
+        "country": "IR",
+        "lat": 32.4279,
+        "lng": 53.688
+      },
+      "incidentType": [
+        "data-misuse",
+        "political-pressure"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Google Threat Intelligence Group (GTIG) berichtete am 31. Januar 2025, dass APT-Gruppen aus über 20 Ländern Gemini in allen Phasen des Cyber-Kill-Chains einsetzen. Iran stellte 75% der dokumentierten Missbrauchsfälle — insbesondere APT42 nutzte Gemini, um aus Zielprofilen überzeugende Phishing-Personas zu generieren. Chinesische Akteure recherchierten US-Militär und IT-Dienstleister, schrieben Active-Directory-Angriffsskripte und analysierten EDR-Tools. Nordkoreanische Akteure entwickelten Payloads und unterstützten ihre IT-Worker-Operationen. Im September 2025 fand GTIG die HONESTCUE-Malware, die Gemini's API zur Laufzeit nach C#-Code abfragt.",
+      "description_en": "Google Threat Intelligence Group (GTIG) reported on 31 January 2025 that APT groups from more than 20 countries were using Gemini across the cyber kill chain. Iran accounted for 75 % of documented abuse — APT42 in particular used Gemini to turn target dossiers into convincing phishing personas. Chinese actors researched US military and IT-service providers, wrote Active Directory attack scripts and analysed EDR tools. North Korean actors built payloads and supported their IT-worker schemes. In September 2025 GTIG identified HONESTCUE malware that queries Gemini's API at runtime to fetch C# code.",
+      "actors": [
+        {
+          "name": "APT42 (Iran)",
+          "type": "government",
+          "systems": [
+            "Google Gemini"
+          ]
+        },
+        {
+          "name": "Chinese APT groups",
+          "type": "government",
+          "systems": [
+            "Google Gemini"
+          ]
+        },
+        {
+          "name": "North Korean APT groups",
+          "type": "government",
+          "systems": [
+            "Google Gemini"
+          ]
+        },
+        {
+          "name": "Google (defender / disclosure)",
+          "type": "company",
+          "systems": [
+            "Gemini"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/distillation-experimentation-integration-ai-adversarial-use",
+          "title": "GTIG AI Threat Tracker: Distillation, Experimentation, and (Continued) Integration of AI for Adversarial Use",
+          "publisher": "Google Cloud Threat Intelligence",
+          "date": "2025-01-31",
+          "type": "analysis"
+        },
+        {
+          "url": "https://therecord.media/nation-state-hackers-using-gemini-for-malicious-campaigns",
+          "title": "Nation-state hackers ramping up use of Gemini for target reconnaissance, malware coding, Google says",
+          "publisher": "The Record",
+          "date": "2025-01-31",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.theregister.com/2025/01/31/state_spies_google_gemini/",
+          "title": "Google details nefarious Gemini use by Iranian spies",
+          "publisher": "The Register",
+          "date": "2025-01-31",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Country IR gewählt (75% Iran). Falls Promotion: könnte als 'Global' kuratiert werden. Mehrere unabhängige Bestätigungen.",
+    "dedup_hint": "gtig | gemini | apt42 | iran | china | north korea | 2025 | honestcue",
+    "promoted_to_slug": "iran-google-gtig-apt-akteure-aus-20-laendern-nutzen-gemini-iran-apt42-dominiert-mit-75",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "funksec-ai-ransomware-algeria-2024",
+    "discovered_at": "2026-06-01T10:45:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Algerien/Global: FunkSec — KI-gestützte Ransomware-Gruppe mit 85 Opfern in einem Monat",
+      "name_en": "Algeria/Global: FunkSec — AI-assisted ransomware group with 85 victims in a single month",
+      "startDate": "2024-12",
+      "location": {
+        "name_de": "Algerien (mutmaßlicher Standort des Entwicklers)",
+        "name_en": "Algeria (suspected developer location)",
+        "country": "DZ",
+        "lat": 28.0339,
+        "lng": 1.6596
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Check Point Research und Bitdefender dokumentierten Anfang 2025 die Ende 2024 aufgetauchte Ransomware-Gruppe FunkSec. Allein im Dezember 2024 veröffentlichte die Gruppe über 85 Opfer auf ihrer Leak-Site, mehr als jede andere Ransomware-Gang in diesem Monat. Der Encryptor zeigte deutliche Spuren KI-assistierter Entwicklung: perfekt englischsprachige Code-Kommentare (im Kontrast zu schwachem Englisch der Akteure), schnelle Iterationszyklen trotz Anfänger-Niveau. Die Gruppe veröffentlichte außerdem einen eigenen Miniapps-basierten AI-Chatbot. Screenshots verrieten algerischen Standort des Entwicklers; viele Leak-Daten waren aus älteren Hacktivismus-Kampagnen recycelt, also Mengenangaben aufgebläht.",
+      "description_en": "Check Point Research and Bitdefender documented in early 2025 the FunkSec ransomware group that emerged in late 2024. In December 2024 alone the group posted more than 85 victims on its leak site — more than any other ransomware gang that month. The encryptor showed clear signs of AI-assisted development: perfectly written English code comments (contrasting with the actors' weak English in other channels) and rapid iteration despite beginner-level skill. The group also released its own Miniapps-based AI chatbot. Screenshots revealed an Algerian developer location; many leaked datasets were recycled from prior hacktivism campaigns, inflating the headline numbers.",
+      "actors": [
+        {
+          "name": "FunkSec ransomware group",
+          "type": "criminal",
+          "systems": [
+            "AI-assisted encryptor",
+            "Miniapps AI chatbot"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://research.checkpoint.com/2025/funksec-alleged-top-ransomware-group-powered-by-ai/",
+          "title": "FunkSec — Alleged Top Ransomware Group Powered by AI",
+          "publisher": "Check Point Research",
+          "date": "2025-01-10",
+          "type": "analysis"
+        },
+        {
+          "url": "https://thehackernews.com/2025/01/ai-driven-ransomware-funksec-targets-85.html",
+          "title": "AI-Driven Ransomware FunkSec Targets 85 Victims Using Double Extortion Tactics",
+          "publisher": "The Hacker News",
+          "date": "2025-01-10",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.securityweek.com/emerging-funksec-ransomware-developed-using-ai/",
+          "title": "Emerging FunkSec Ransomware Developed Using AI",
+          "publisher": "SecurityWeek",
+          "date": "2025-01-13",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Algerien-Lokation per Screenshot-Indizien; KI-Attribution auf Code-Kommentare. Check Point notiert, dass viele 'Opfer' recycelt sind — daher Wirkungs-Severity 3, nicht 4.",
+    "dedup_hint": "funksec | ransomware | ai | algeria | 2024 | check point",
+    "promoted_to_slug": "algerien-algerien-global-funksec-ki-gestuetzte-ransomware-gruppe-mit-85-opfern-in-einem",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "anthropic-north-korea-it-worker-claude-2025",
+    "discovered_at": "2026-06-01T10:50:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Nordkorea/USA: Claude unterstützt nordkoreanische IT-Worker-Infiltration in Fortune-500-Konzernen",
+      "name_en": "North Korea/USA: Claude assists North Korean IT-worker infiltration of Fortune 500 firms",
+      "startDate": "2025-08",
+      "location": {
+        "name_de": "USA / Nordkorea (operativ remote)",
+        "name_en": "USA / North Korea (remote operation)",
+        "country": "KP",
+        "lat": 40.3399,
+        "lng": 127.5101
+      },
+      "incidentType": [
+        "data-misuse",
+        "labor-exploitation"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Anthropics August-2025-Threat-Intelligence-Report dokumentiert, dass nordkoreanische Operatoren Claude einsetzten, um sich als Remote-Softwareentwickler bei US-Fortune-500-Tech-Firmen einzustellen — Claude half bei gefälschten Lebensläufen, Coding-Tests, Bewerbungsgesprächen und der tatsächlichen Arbeit nach Anstellung. Die Schemata generierten Einkommen für das Kim-Jong-Un-Regime in Umgehung internationaler Sanktionen. Laut FBI/Fortune wuchs die Zahl betroffener Unternehmen 2024/25 um 220%, mit über 320 Firmen in 12 Monaten; geschätzter jährlicher Erlös in Hunderten Millionen USD seit 2018.",
+      "description_en": "Anthropic's August 2025 Threat Intelligence Report documents that North Korean operatives used Claude to obtain remote software-engineering jobs at US Fortune 500 tech companies — Claude helped fabricate résumés, ace coding tests, prep interviews, and perform actual technical work once hired. The schemes funneled income to the Kim Jong Un regime in defiance of international sanctions. Per FBI/Fortune reporting, the number of affected companies grew 220 % in 2024/25, with more than 320 firms hit in 12 months and estimated annual proceeds in the hundreds of millions of USD since 2018.",
+      "actors": [
+        {
+          "name": "DPRK IT-worker operatives",
+          "type": "government",
+          "systems": [
+            "Anthropic Claude"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+          "title": "Detecting and countering misuse of AI: August 2025",
+          "publisher": "Anthropic",
+          "date": "2025-08-27",
+          "type": "analysis"
+        },
+        {
+          "url": "https://fortune.com/2025/08/04/north-korean-it-worker-infiltrations-exploded/",
+          "title": "North Korean IT worker infiltrations exploded 220% over the past 12 months, with gen AI weaponized at every stage of the hiring process",
+          "publisher": "Fortune",
+          "date": "2025-08-04",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.axios.com/2025/08/19/north-korea-it-worker-fraud-fortune-500",
+          "title": "North Korea's IT worker fraud has fooled nearly every Fortune 500 firm",
+          "publisher": "Axios",
+          "date": "2025-08-19",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Country KP gewählt. Verification 4 (FBI, Anthropic, Fortune). Severity 3 (kein direkter physischer Schaden, aber Sanktionsumgehung + Sicherheitsrisiko).",
+    "dedup_hint": "north korea | it worker | claude | anthropic | fortune 500 | 2025",
+    "promoted_to_slug": "nordkorea-nordkorea-usa-claude-unterstuetzt-nordkoreanische-it-worker-infiltration-in",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "kimsuky-deepfake-south-korea-military-id-2025",
+    "discovered_at": "2026-06-01T10:55:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Südkorea: Kimsuky generiert mit ChatGPT Deepfake-Militärausweise für Spear-Phishing gegen Nordkorea-Analysten",
+      "name_en": "South Korea: Kimsuky uses ChatGPT to generate deepfake military IDs for spear phishing against North Korea analysts",
+      "startDate": "2025-07",
+      "location": {
+        "name_de": "Südkorea (Ziele); Operationen aus Nordkorea",
+        "name_en": "South Korea (targets); operations from North Korea",
+        "country": "KR",
+        "lat": 37.5665,
+        "lng": 126.978
+      },
+      "incidentType": [
+        "deepfakes",
+        "political-pressure"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Forscher (u.a. Genians Security Center) und OpenAI dokumentierten 2025, dass die nordkoreanische APT-Gruppe Kimsuky (Velvet Chollima / Emerald Sleet) ChatGPT genutzt hat, um gefälschte südkoreanische Militärausweise als Deepfake-Bilder zu generieren. Diese wurden in Spear-Phishing-Mails an Nordkorea-Analysten, Journalisten, Menschenrechtsaktivisten und Verteidigungsexperten verwendet, um Legitimität vorzutäuschen.",
+      "description_en": "Researchers (notably Genians Security Center) and OpenAI documented in 2025 that the North Korean APT group Kimsuky (Velvet Chollima / Emerald Sleet) used ChatGPT to generate deepfake images of South Korean military IDs. These were used in spear-phishing emails against North Korea analysts, journalists, human rights activists and defence experts to fake legitimacy.",
+      "actors": [
+        {
+          "name": "Kimsuky / Velvet Chollima / Emerald Sleet (DPRK)",
+          "type": "government",
+          "systems": [
+            "ChatGPT"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cybersecurity-help.cz/blog/4947.html",
+          "title": "North Korean hackers use ChatGPT to create deepfake military IDs",
+          "publisher": "Cybersecurity Help",
+          "date": "2025-09-15",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.findarticles.com/kimsuky-phishers-employed-chatgpt-to-craft-id-images/",
+          "title": "Kimsuky Phishers Employed ChatGPT to Craft ID Images",
+          "publisher": "Find Articles",
+          "date": "2025-09",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Genians-Primärquelle, plus Sekundärberichte. Vorgang weniger gut sourced als die Anthropic/OpenAI-Reports — Verification 3.",
+    "dedup_hint": "kimsuky | velvet chollima | deepfake | military id | south korea | chatgpt | 2025",
+    "promoted_to_slug": "suedkorea-kimsuky-generiert-mit-chatgpt-deepfake-militaerausweise-fuer-spear-phishing",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "deepseek-r1-jailbreak-malware-2025",
+    "discovered_at": "2026-06-01T11:00:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "China: DeepSeek-R1 — Open-Source-LLM versagt in 58% der Jailbreak-Tests, generiert Keylogger- und Ransomware-Code",
+      "name_en": "China: DeepSeek-R1 — open-source LLM fails 58% of jailbreak tests, generates keylogger and ransomware code",
+      "startDate": "2025-01",
+      "location": {
+        "name_de": "Hangzhou, China (DeepSeek-Hauptsitz)",
+        "name_en": "Hangzhou, China (DeepSeek HQ)",
+        "country": "CN",
+        "lat": 30.2741,
+        "lng": 120.1551
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Nach dem Launch von DeepSeek-R1 im Januar 2025 publizierten mehrere Security-Teams (KELA, Qualys, Palo Alto Unit 42, Enkrypt AI, Cisco) Tests, in denen das Modell in 58% der Jailbreak-Versuche scheiterte. KELAs Red-Team brachte R1 dazu, funktionalen C++-Keylogger-Code zu erzeugen sowie Anleitungen zur Ransomware-Entwicklung. Enkrypt AI fand, dass R1 viermal häufiger unsicheren Code schreibt als OpenAIs o1. Das Wall Street Journal demonstrierte, dass R1 nach Jailbreak Phishing-Mails mit Malware, Hitler-Manifeste und Biowaffen-Anleitungen generierte. Folge: Mehrere Länder und Behörden (Italien, Australien, US-Navy) sperrten DeepSeek temporär oder dauerhaft.",
+      "description_en": "Following the January 2025 launch of DeepSeek-R1 multiple security teams (KELA, Qualys, Palo Alto Unit 42, Enkrypt AI, Cisco) published tests in which the model failed 58 % of jailbreak attempts. KELA's red team coaxed R1 into producing functional C++ keylogger code as well as ransomware-development instructions. Enkrypt AI found R1 was four times more likely to write insecure code than OpenAI's o1. The Wall Street Journal demonstrated R1 producing phishing emails with malware payloads, pro-Hitler manifestos and bioweapon instructions after jailbreak. Several governments and agencies (Italy, Australia, US Navy) blocked DeepSeek temporarily or permanently as a result.",
+      "actors": [
+        {
+          "name": "DeepSeek (Hangzhou DeepSeek Artificial Intelligence)",
+          "type": "company",
+          "systems": [
+            "DeepSeek-R1"
+          ]
+        },
+        {
+          "name": "KELA / Qualys / Palo Alto Unit 42 / Enkrypt AI / Cisco (researchers)",
+          "type": "research",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.kelacyber.com/blog/deepseek-r1-security-flaws/",
+          "title": "DeepSeek R1 Exposed: Security Flaws in China's AI Model",
+          "publisher": "KELA Cyber",
+          "date": "2025-01-27",
+          "type": "analysis"
+        },
+        {
+          "url": "https://unit42.paloaltonetworks.com/jailbreaking-deepseek-three-techniques/",
+          "title": "Recent Jailbreaks Demonstrate Emerging Threat to DeepSeek",
+          "publisher": "Palo Alto Unit 42",
+          "date": "2025-01-30",
+          "type": "analysis"
+        },
+        {
+          "url": "https://techcrunch.com/2025/02/09/deepseeks-r1-reportedly-more-vulnerable-to-jailbreaking-than-other-ai-models/",
+          "title": "DeepSeek's R1 reportedly 'more vulnerable' to jailbreaking than other AI models",
+          "publisher": "TechCrunch",
+          "date": "2025-02-09",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Mehrere unabhängige Red-Team-Reports. Klassischer 'AI-defense-failure'-Fall. Severity 3, Verification 4.",
+    "dedup_hint": "deepseek | r1 | jailbreak | malware | keylogger | 2025 | china",
+    "promoted_to_slug": "china-deepseek-r1-open-source-llm-versagt-in-58-der-jailbreak-tests-generiert-keylogger",
+    "promoted_at": "2026-06-01T13:21:04.287Z"
+  },
+  {
+    "candidate_id": "omnigpt-data-breach-2025-02",
+    "discovered_at": "2026-06-01T11:05:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Global: OmniGPT-Datenleck — 30.000 Nutzer und 34 Mio. Chat-Nachrichten auf BreachForums verkauft",
+      "name_en": "Global: OmniGPT data breach — 30,000 users and 34 million chat messages sold on BreachForums",
+      "startDate": "2025-02",
+      "location": {
+        "name_de": "Global (Plattform-Nutzer weltweit)",
+        "name_en": "Global (platform users worldwide)",
+        "country": "US",
+        "lat": 39,
+        "lng": -98
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Im Februar 2025 stellte ein Akteur namens 'Gloomer' auf BreachForums Daten zum Verkauf, die er aus der KI-Aggregator-Plattform OmniGPT entwendet haben soll: 30.000 E-Mail-Adressen und Telefonnummern, plus 34 Millionen Zeilen Chat-Nachrichten inklusive API-Keys, Login-Daten, Datei-Links und kryptografische Private Keys. OmniGPT integriert Claude 3, GPT-4o, Gemini und Perplexity sowie Workplace-Tools (WhatsApp, Slack, Google Workspace, Notion). Das Unternehmen hat den Vorfall öffentlich nicht bestätigt. Sicherheitsforscher (Forcepoint, Skyhigh) warnten vor Phishing- und Account-Übernahme-Folgerisiken.",
+      "description_en": "In February 2025 an actor calling themselves 'Gloomer' offered for sale on BreachForums data allegedly stolen from the AI-aggregator platform OmniGPT: 30,000 email addresses and phone numbers plus 34 million lines of chat messages including API keys, login credentials, file links and crypto private keys. OmniGPT integrates Claude 3, GPT-4o, Gemini and Perplexity together with workplace tools (WhatsApp, Slack, Google Workspace, Notion). The company has not publicly acknowledged the breach. Security researchers (Forcepoint, Skyhigh) warned of phishing and account-takeover follow-on risk.",
+      "actors": [
+        {
+          "name": "'Gloomer' (BreachForums user)",
+          "type": "criminal",
+          "systems": []
+        },
+        {
+          "name": "OmniGPT (platform)",
+          "type": "company",
+          "systems": [
+            "OmniGPT aggregator"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://hackread.com/omnigpt-ai-chatbot-breach-hacker-leak-user-data-messages/",
+          "title": "OmniGPT AI Chatbot Alleged Breach: Hacker Leaks User Data, 34M Messages",
+          "publisher": "HackRead",
+          "date": "2025-02-10",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.csoonline.com/article/3822911/hacker-allegedly-puts-massive-omnigpt-breach-data-for-sale-on-the-dark-web.html",
+          "title": "Hacker allegedly puts massive OmniGPT breach data for sale on the dark web",
+          "publisher": "CSO Online",
+          "date": "2025-02-10",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.cpomagazine.com/cyber-security/ai-aggregator-omnigpt-suffers-a-security-breach-exposing-sensitive-data-including-credentials/",
+          "title": "AI Aggregator OmniGPT Suffers a Security Breach Exposing Sensitive Data",
+          "publisher": "CPO Magazine",
+          "date": "2025-02-14",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "'Allegedly' — OmniGPT hat nicht bestätigt. Verification 3. Datenschutzimplikationen erheblich (gespeicherte LLM-Konversationen).",
+    "dedup_hint": "omnigpt | breach | 2025 | gloomer | breachforums | data leak",
+    "promoted_to_slug": "usa-omnigpt-datenleck-30-000-nutzer-und-34-mio-chat-nachrichten-auf-breachforums-verkauft",
+    "promoted_at": "2026-06-01T13:21:04.288Z"
+  },
+  {
+    "candidate_id": "wormgpt-fraudgpt-dark-llm-2023-2024",
+    "discovered_at": "2026-06-01T11:10:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Global: WormGPT und FraudGPT — Dark-LLMs auf GPT-J-Basis im Darknet als Cybercrime-as-a-Service",
+      "name_en": "Global: WormGPT and FraudGPT — GPT-J-based dark LLMs sold on the dark web as cybercrime-as-a-service",
+      "startDate": "2023-07",
+      "location": {
+        "name_de": "Global (Darknet-Foren)",
+        "name_en": "Global (dark-web forums)",
+        "country": "RU",
+        "lat": 55.7558,
+        "lng": 37.6173
+      },
+      "incidentType": [
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "SlashNext entdeckte im Juli 2023 WormGPT, einen auf GPT-J basierenden Chatbot, den ein Entwickler namens 'last/laste' explizit für Cybercrime vermarktete — Schwerpunkt Business-Email-Compromise, Phishing-Mails ohne Sprachfehler und polymorphe Malware. Kurz darauf folgte FraudGPT auf Darknet-Boards und Telegram-Kanälen, vermarktet für Malware-Erstellung, Phishing-Pages, Lecks- und Schwachstellen-Recherche, Abos 200 USD/Monat bis 1.700 USD/Jahr. Beide Tools zementierten das 'Cybercrime-as-a-Service'-Modell mit dedizierten LLMs ohne Sicherheits-Guardrails und wurden 2024 von zahlreichen Akteuren in BEC- und Phishing-Kampagnen eingesetzt.",
+      "description_en": "SlashNext discovered WormGPT in July 2023, a GPT-J-based chatbot marketed by a developer using the handle 'last/laste' explicitly for cybercrime — focused on business email compromise, error-free phishing emails and polymorphic malware. Shortly afterwards FraudGPT appeared on dark-web boards and Telegram, marketed for malware creation, phishing pages, leak and vulnerability research, with subscriptions from USD 200/month up to USD 1,700/year. Both tools cemented the cybercrime-as-a-service model around dedicated guardrail-free LLMs and were used by multiple actors in 2024 BEC and phishing campaigns.",
+      "actors": [
+        {
+          "name": "'last/laste' (WormGPT developer)",
+          "type": "criminal",
+          "systems": [
+            "WormGPT"
+          ]
+        },
+        {
+          "name": "Operators of FraudGPT",
+          "type": "criminal",
+          "systems": [
+            "FraudGPT"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.levelblue.com/blogs/spiderlabs-blog/wormgpt-and-fraudgpt-the-rise-of-malicious-llms",
+          "title": "WormGPT and FraudGPT – The Rise of Malicious LLMs",
+          "publisher": "LevelBlue Spiderlabs",
+          "date": "2023-08-22",
+          "type": "analysis"
+        },
+        {
+          "url": "https://asiatimes.com/2024/07/fraudgpt-wormgpt-and-the-rise-of-dark-llms/",
+          "title": "FraudGPT, WormGPT and the rise of dark LLMs",
+          "publisher": "Asia Times",
+          "date": "2024-07",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.rapid7.com/fundamentals/what-is-wormgpt/",
+          "title": "What Is WormGPT? Malicious AI Model Explained",
+          "publisher": "Rapid7",
+          "date": "2024",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Standortzuordnung: Darknet-Marktplätze haben kein klar lokalisierbares Heimat-Land; viele Quellen verorten Verkäufer auf russischsprachigen Foren — daher RU als best-fit-Marker (kann im Promote-Schritt angepasst werden).",
+    "dedup_hint": "wormgpt | fraudgpt | dark llm | gpt-j | slashnext | 2023 | 2024",
+    "promoted_to_slug": "russland-wormgpt-und-fraudgpt-dark-llms-auf-gpt-j-basis-im-darknet-als-cybercrime-as-a",
+    "promoted_at": "2026-06-01T13:21:04.288Z"
+  },
+  {
+    "candidate_id": "arup-hong-kong-deepfake-cfo-25m-2024",
+    "discovered_at": "2026-06-01T11:15:00Z",
+    "researcher": "agent-research-cybersecurity-round-4",
+    "round": "round-4-2026-06-01",
+    "status": "verified",
+    "candidate_data": {
+      "name_de": "Hongkong: Arup — Finance-Mitarbeiter überweist 25 Mio. USD nach Deepfake-Videocall mit gefälschtem CFO (Aktualisierungs-Hinweis)",
+      "name_en": "Hong Kong: Arup — finance worker transfers USD 25 m after deepfake video call with fake CFO (update note)",
+      "startDate": "2024-01",
+      "location": {
+        "name_de": "Hongkong (Arup-Niederlassung)",
+        "name_en": "Hong Kong (Arup office)",
+        "country": "HK",
+        "lat": 22.3193,
+        "lng": 114.1694
+      },
+      "incidentType": [
+        "deepfakes"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "ACHTUNG DEDUP: Hauptfall bereits als 'hongkong-arup-deepfake-cfo' im Bestand. Dieser Eintrag dient nur als Verweis und sollte beim Promote weggelassen werden. Inhalt: Im Januar 2024 überwies ein Arup-Mitarbeiter in Hongkong nach einem Deepfake-Videocall mit gefälschtem CFO und weiteren scheinbaren Kollegen 200 Mio. HKD (~25 Mio. USD) in 15 Tranchen an fünf Hongkonger Konten. Im Mai 2024 bestätigte Arup öffentlich, das Opfer gewesen zu sein. Erster bekannter Fall, in dem eine gesamte Meeting-Runde per Deepfake imitiert wurde.",
+      "description_en": "DEDUP NOTE: main case already in inventory as 'hongkong-arup-deepfake-cfo'. This entry is a pointer and should be dropped at promote. Content: in January 2024 an Arup employee in Hong Kong transferred HKD 200 m (~USD 25 m) in 15 tranches to five Hong Kong accounts after a deepfake video call featuring a fake CFO and other apparent colleagues. Arup publicly confirmed it was the victim in May 2024. First known case where an entire meeting was impersonated via deepfake.",
+      "actors": [
+        {
+          "name": "Arup (target)",
+          "type": "company",
+          "systems": []
+        },
+        {
+          "name": "Unidentified scammers",
+          "type": "criminal",
+          "systems": [
+            "video deepfake"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk",
+          "title": "Arup revealed as victim of $25 million deepfake scam involving Hong Kong employee",
+          "publisher": "CNN",
+          "date": "2024-05-16",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Bewusst belassen als expliziter Dedup-Marker — promote diesen Eintrag NICHT, Hauptfall existiert bereits.",
+    "dedup_hint": "arup | hong kong | deepfake | cfo | 25 million | 2024 | DEDUP-existing"
+  }
+]
