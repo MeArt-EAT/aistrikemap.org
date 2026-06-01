@@ -83,24 +83,28 @@ jobs:
           node scripts/research-runner.js $ARGS
 
       - name: Commit + push Kandidaten
+        env:
+          RUN_ID: ${{ github.run_id }}
+          REPO: ${{ github.repository }}
         run: |
           # Nur committen wenn tatsächlich Files entstanden sind.
-          if ! git diff --quiet -- data/incident-candidates/ \
-             || ! git diff --cached --quiet -- data/incident-candidates/ \
-             || [ -n "$(git ls-files --others --exclude-standard -- data/incident-candidates/)" ]; then
-            git config user.name 'aistrikemap-research-bot'
-            git config user.email 'research-bot@aistrikemap.org'
-            git add data/incident-candidates/
-            RUN_LABEL="research-runner ${{ github.run_id }}"
-            git commit -m "Research-Runner Round: neue Kandidaten ($RUN_LABEL)
-
-Auto-generiert von .github/workflows/research-runner.yml.
-Nichts hier ist verifiziert — Promote-Schritt erforderlich.
-Siehe data/incident-candidates/_README.md.
-
-Workflow-Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-            git push
-            echo "Commit + push done."
-          else
+          if git diff --quiet -- data/incident-candidates/ \
+             && git diff --cached --quiet -- data/incident-candidates/ \
+             && [ -z "$(git ls-files --others --exclude-standard -- data/incident-candidates/)" ]; then
             echo "Keine Änderungen in data/incident-candidates/ — kein Commit."
+            exit 0
           fi
+          git config user.name 'aistrikemap-research-bot'
+          git config user.email 'research-bot@aistrikemap.org'
+          git add data/incident-candidates/
+          MSG_FILE="$(mktemp)"
+          {
+            printf 'Research-Runner Round: neue Kandidaten (research-runner %s)\n\n' "$RUN_ID"
+            printf 'Auto-generiert von .github/workflows/research-runner.yml.\n'
+            printf 'Nichts hier ist verifiziert — Promote-Schritt erforderlich.\n'
+            printf 'Siehe data/incident-candidates/_README.md.\n\n'
+            printf 'Workflow-Run: https://github.com/%s/actions/runs/%s\n' "$REPO" "$RUN_ID"
+          } > "$MSG_FILE"
+          git commit -F "$MSG_FILE"
+          git push
+          echo "Commit + push done."
