@@ -4,7 +4,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Mobley v. Workday — Sammelklage gegen KI-Bewerber-Screening wegen Altersdiskriminierung",
       "name_en": "USA: Mobley v. Workday — Collective action over AI applicant screening and age discrimination",
@@ -16,7 +16,10 @@
         "lat": 37.7749,
         "lng": -122.4194
       },
-      "incidentType": ["discrimination", "labor-exploitation"],
+      "incidentType": [
+        "discrimination",
+        "labor-exploitation"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 16. Mai 2025 erteilte Richterin Rita Lin am U.S. District Court for the Northern District of California die vorläufige Sammelklage-Zulassung (ADEA-Collective) gegen Workday. Die Klage von Derek Mobley und weiteren über-40-jährigen Bewerber:innen wirft dem KI-Screening-System des Personal-Software-Anbieters disparate impact wegen Alters vor — laut Workdays eigenen Angaben wurden im fraglichen Zeitraum 1,1 Milliarden Bewerbungen automatisiert abgelehnt. Es ist der erste großflächige Test, ob KI-Anbieter selbst als „Agent” der Arbeitgeber für Diskriminierung haften.",
@@ -25,7 +28,9 @@
         {
           "name": "Workday, Inc.",
           "type": "company",
-          "systems": ["Workday Applicant Recommendation"]
+          "systems": [
+            "Workday Applicant Recommendation"
+          ]
         }
       ],
       "sources": [
@@ -53,14 +58,40 @@
       ]
     },
     "researcher_notes": "Confidence hoch: mehrere Anwaltskanzlei-Bestätigungen, Court-Filing-Tracker. Severity 3 (kollektive Diskriminierung, kein körperlicher Schaden). Verification 4 (Court order + öffentliche Filings).",
-    "dedup_hint": "mobley workday adea age discrimination ai hiring 2025"
+    "dedup_hint": "mobley workday adea age discrimination ai hiring 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:20:21.999Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.hklaw.com/en/insights/publications/2025/05/federal-court-allows-collective-action-lawsuit-over-alleged",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.72 hits=8 year=2025"
+        },
+        {
+          "url": "https://clearinghouse.net/case/44074/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.insidetechlaw.com/blog/2025/06/workday-ai-lawsuit-receives-the-greenlight-to-proceed-as-a-class-action",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.72 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-tesla-fsd-nhtsa-engineering-analysis-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: NHTSA-Untersuchung gegen Tesla Full Self-Driving — Sichtbehinderungs-Crashs mit Todesfall",
       "name_en": "USA: NHTSA investigation into Tesla Full Self-Driving — reduced-visibility crashes with fatality",
@@ -72,7 +103,10 @@
         "lat": 38.8951,
         "lng": -77.0364
       },
-      "incidentType": ["autonomous-weapons", "data-misuse"],
+      "incidentType": [
+        "autonomous-weapons",
+        "data-misuse"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Im Oktober 2024 eröffnete die National Highway Traffic Safety Administration (NHTSA) eine Voruntersuchung gegen Teslas Full-Self-Driving-System nach vier Crashs bei eingeschränkter Sicht (Sonnenblendung, Staub, Nebel). Die Untersuchung wurde 2026 zur Engineering Analysis — der letzten Stufe vor einem Rückruf — eskaliert und deckt rund 3,2 Millionen Fahrzeuge ab. Bestätigt: ein Todesfall (November 2023, von Tesla erst Juni 2024 gemeldet) und mehrere Verletzte. NHTSA stellte fest, dass das Degradations-Erkennungs-System Sicht-Beeinträchtigungen erst unmittelbar vor dem Aufprall identifiziert.",
@@ -81,7 +115,9 @@
         {
           "name": "Tesla, Inc.",
           "type": "company",
-          "systems": ["Full Self-Driving (Supervised)"]
+          "systems": [
+            "Full Self-Driving (Supervised)"
+          ]
         },
         {
           "name": "National Highway Traffic Safety Administration (NHTSA)",
@@ -114,14 +150,40 @@
       ]
     },
     "researcher_notes": "Distinkt vom bestehenden usa-tesla-autopilot-todesfaelle (das war Autopilot-historisch). Hier: spezifische FSD-Sichtbehinderungs-Probe ab Okt. 2024, neuer Todesfall, 7 Monate Melde-Verzögerung. Verification 4 (NHTSA-Aktionen sind öffentlich dokumentiert).",
-    "dedup_hint": "tesla fsd nhtsa visibility 2024 engineering analysis recall"
+    "dedup_hint": "tesla fsd nhtsa visibility 2024 engineering analysis recall",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:20:47.190Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://electrek.co/2026/03/19/nhtsa-upgrades-tesla-fsd-visibility-investigation-3-2-million-vehicles/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.70 hits=8 year=2024"
+        },
+        {
+          "url": "https://abcnews.go.com/Business/tesla-driving-crash-reports-prompt-nhtsa-investigation/story?id=114922283",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.90 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.insurancejournal.com/news/national/2026/03/20/862650.htm",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-thomson-reuters-ross-intelligence-fair-use-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Thomson Reuters v. Ross Intelligence — erstes US-Urteil gegen Fair-Use beim KI-Training",
       "name_en": "USA: Thomson Reuters v. Ross Intelligence — first US ruling rejecting fair use for AI training",
@@ -133,7 +195,9 @@
         "lat": 39.7447,
         "lng": -75.5466
       },
-      "incidentType": ["data-misuse"],
+      "incidentType": [
+        "data-misuse"
+      ],
       "candidate_severity": 2,
       "candidate_verification": 4,
       "description_de": "Am 11. Februar 2025 entschied US-Bundesrichter Stephanos Bibas in Thomson Reuters Enterprise Centre GmbH v. Ross Intelligence (D. Del.) erstmals in einem US-Gericht, dass das Trainieren eines KI-Rechtsrecherche-Tools mit fremden Westlaw-Headnotes keine Fair Use ist. Das Gericht stellte direkte Urheberrechtsverletzung an 2.243 Headnotes fest und wies die kommerzielle, nicht-transformative Nutzung als Fair-Use-Verteidigung zurück. Im Mai 2025 erlaubte das Gericht eine Interlocutory Appeal an den Third Circuit.",
@@ -142,12 +206,16 @@
         {
           "name": "Ross Intelligence Inc.",
           "type": "company",
-          "systems": ["Ross AI legal-research engine"]
+          "systems": [
+            "Ross AI legal-research engine"
+          ]
         },
         {
           "name": "Thomson Reuters Enterprise Centre GmbH",
           "type": "company",
-          "systems": ["Westlaw"]
+          "systems": [
+            "Westlaw"
+          ]
         }
       ],
       "sources": [
@@ -175,14 +243,40 @@
       ]
     },
     "researcher_notes": "Confidence hoch. Severity 2 (kein direkter Personenschaden, aber präzedenzielle Wirkung auf KI-Industrie). Verification 4 (öffentliches Urteil).",
-    "dedup_hint": "thomson reuters ross intelligence westlaw fair use ai training 2025"
+    "dedup_hint": "thomson reuters ross intelligence westlaw fair use ai training 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:20:50.467Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2025/02/reuters-ross-court-ruling-ai-copyright-fair-use",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.84 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.jenner.com/en/news-insights/publications/client-alert-court-decides-that-use-of-copyrighted-works-in-ai-training-is-not-fair-use-thomson-reuters-enterprise-centre-gmbh-v-ross-intelligence-inc",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.96 hits=8 year=2025"
+        },
+        {
+          "url": "https://patentlyo.com/patent/2025/09/headnote-thomson-reuters.html",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-bartz-anthropic-copyright-settlement-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Bartz v. Anthropic — 1,5-Mrd.-Dollar-Vergleich wegen Training mit Piraten-Büchern",
       "name_en": "USA: Bartz v. Anthropic — $1.5 billion settlement over training on pirated books",
@@ -194,7 +288,9 @@
         "lat": 37.7749,
         "lng": -122.4194
       },
-      "incidentType": ["data-misuse"],
+      "incidentType": [
+        "data-misuse"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Autor:innen Andrea Bartz, Charles Graeber und Kirk Wallace Johnson klagten im August 2024 gegen Anthropic, weil es Claude unter anderem mit Raubkopien aus Schatten-Bibliotheken wie LibGen trainierte. Richter William Alsup urteilte im Juni 2025: Das Training mit legal erworbenen Büchern ist transformative Fair Use, aber das Speichern raubkopierter Versionen nicht. Am 26. August 2025 wurde ein Klassen-Vergleich über 1,5 Milliarden US-Dollar (≈ 3.000 USD pro Werk) für 482.460 Bücher eingereicht — der größte Urheberrechts-Vergleich in der US-Geschichte.",
@@ -203,7 +299,9 @@
         {
           "name": "Anthropic, PBC",
           "type": "company",
-          "systems": ["Claude"]
+          "systems": [
+            "Claude"
+          ]
         }
       ],
       "sources": [
@@ -231,14 +329,40 @@
       ]
     },
     "researcher_notes": "Confidence sehr hoch. Wirkungsstark als Präzedenz für AI-Training-Urheberrecht. Verification 4.",
-    "dedup_hint": "bartz anthropic libgen claude copyright settlement 2025"
+    "dedup_hint": "bartz anthropic libgen claude copyright settlement 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:15.642Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.npr.org/2025/06/25/nx-s1-5445242/federal-rules-in-ai-companys-favor-in-landmark-copyright-infringement-lawsuit-authors-bartz-graeber-wallace-johnson-anthropic",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://authorsguild.org/advocacy/artificial-intelligence/what-authors-need-to-know-about-the-anthropic-settlement/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=7 year=2025"
+        },
+        {
+          "url": "https://copyrightalliance.org/participating-bartz-v-anthropic-settlement/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=7 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-mcdonalds-paradox-mchire-olivia-leak-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: McHire/Olivia — Paradox.ai-Recruiting-Chatbot legt 64 Mio. Bewerber-Daten frei",
       "name_en": "USA: McHire/Olivia — Paradox.ai recruiting chatbot exposes 64M applicants' data",
@@ -250,7 +374,10 @@
         "lat": 33.4942,
         "lng": -111.9261
       },
-      "incidentType": ["data-misuse", "labor-exploitation"],
+      "incidentType": [
+        "data-misuse",
+        "labor-exploitation"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 30. Juni 2025 fanden die Sicherheitsforscher Ian Carroll und Sam Curry über McHire — McDonald's KI-Recruiting-Plattform von Paradox.ai mit dem Chatbot „Olivia“ — eine Admin-Konsole mit dem Standardpasswort „123456“. Über eine Insecure-Direct-Object-Reference-Lücke konnten sie Bewerber-IDs absteigend durchzählen und Datensätze von mehr als 64 Millionen Job-Bewerber:innen einsehen: Namen, E-Mails, Telefonnummern, Auth-Tokens — ohne Rate-Limit oder MFA. McDonald's und Paradox.ai bestätigten und schlossen die Lücke innerhalb eines Tages.",
@@ -259,7 +386,10 @@
         {
           "name": "Paradox.ai",
           "type": "company",
-          "systems": ["McHire", "Olivia chatbot"]
+          "systems": [
+            "McHire",
+            "Olivia chatbot"
+          ]
         },
         {
           "name": "McDonald's Corporation",
@@ -285,14 +415,34 @@
       ]
     },
     "researcher_notes": "Confidence hoch (mehrere unabhängige Tech-Outlets, Original-Forscher namentlich). Severity 3 (massive Datenfreigabe, kein direkter körperlicher Schaden). Verification 4.",
-    "dedup_hint": "mcdonalds mchire paradox olivia chatbot data leak 64m 2025"
+    "dedup_hint": "mcdonalds mchire paradox olivia chatbot data leak 64m 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:18.326Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.csoonline.com/article/4020919/mcdonalds-ai-hiring-tools-password-123456-exposes-data-of-64m-applicants.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.53 hits=6 year=2025"
+        },
+        {
+          "url": "https://adversa.ai/blog/mcdonalds-ai-hiring-chatbot-olivia-by-paradox-ai-security-incident/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "kanada-clearview-ai-alberta-kbb-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Kanada: Clearview AI v. Alberta — Datenschutz-Urteil zur Anwendbarkeit von PIPA auf US-Scraping",
       "name_en": "Canada: Clearview AI v. Alberta — privacy ruling on extraterritorial reach of PIPA over US scraping",
@@ -304,7 +454,11 @@
         "lat": 53.5461,
         "lng": -113.4938
       },
-      "incidentType": ["facial-recognition", "surveillance", "data-misuse"],
+      "incidentType": [
+        "facial-recognition",
+        "surveillance",
+        "data-misuse"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 8. Mai 2025 entschied der Court of King's Bench of Alberta in Clearview AI Inc v Alberta (Information and Privacy Commissioner), 2025 ABKB 287: Albertas Personal Information Protection Act (PIPA) gilt extraterritorial für Clearview AI, weil die Daten-Scraping-Aktivitäten ein „real and substantial connection“ zur Provinz haben. Das Gericht bestätigte die enge Auslegung der „publicly available information“-Ausnahme — verwarf jedoch Teile des PIPA als verfassungswidrigen Eingriff in das Charter-Recht auf Meinungsäußerung. Parallel hatte ein BC-Gericht 2024 die Anordnung des dortigen Datenschutzbeauftragten gegen Clearview bestätigt.",
@@ -313,7 +467,9 @@
         {
           "name": "Clearview AI Inc.",
           "type": "company",
-          "systems": ["Clearview face-search database"]
+          "systems": [
+            "Clearview face-search database"
+          ]
         },
         {
           "name": "Office of the Information and Privacy Commissioner of Alberta",
@@ -346,14 +502,40 @@
       ]
     },
     "researcher_notes": "Distinkt von bestehendem kanada-rcmp-clearview (Polizei-Nutzung). Hier: Provinz-Datenschutzbehörden-Verfahren in Alberta + BC. Verification 4 (zwei Court-Urteile dokumentiert).",
-    "dedup_hint": "clearview ai alberta pipa kbb 2025 privacy commissioner ruling"
+    "dedup_hint": "clearview ai alberta pipa kbb 2025 privacy commissioner ruling",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:22.935Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.blg.com/en/insights/2025/06/alberta-judgment-opens-the-door-to-the-legitimization-of-data-scraping-and-ai-model-training",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.85 hits=8 year=2025"
+        },
+        {
+          "url": "https://mcmillan.ca/insights/publications/alberta-court-weighs-in-on-clearview-ai-wins-losses-and-key-takeaways/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.95 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.biometricupdate.com/202501/canadian-court-upholds-clearview-biometric-data-ban",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.75 hits=8 year=2025"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-amazon-just-walk-out-india-workers-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Amazon „Just Walk Out“ — angebliche KI lief in Wahrheit über 1.000 Niedriglohn-Worker in Indien",
       "name_en": "USA: Amazon ‘Just Walk Out' — purported AI actually relied on ~1,000 low-paid Indian workers",
@@ -365,7 +547,10 @@
         "lat": 47.6062,
         "lng": -122.3321
       },
-      "incidentType": ["labor-exploitation", "data-misuse"],
+      "incidentType": [
+        "labor-exploitation",
+        "data-misuse"
+      ],
       "candidate_severity": 2,
       "candidate_verification": 3,
       "description_de": "Im April 2024 wurde öffentlich, dass Amazons als „KI“ vermarktete „Just Walk Out“-Kassenlos-Technologie in Amazon-Fresh- und Whole-Foods-Filialen in Wirklichkeit von etwa 1.000 niedrig bezahlten Beschäftigten in Indien manuell betreut wurde: Sie sichteten Video-Aufnahmen und labelten Käufe. Laut Berichten benötigten 700 von 1.000 Transaktionen in 2022 menschliche Nachprüfung — weit über Amazons internem Ziel. Amazon stellte die Technologie in den US-Amazon-Fresh-Filialen ein. Der Fall illustriert das „Fake-AI“-Phänomen und die Ausnutzung von Outsourcing-Arbeitskräften für vermeintlich autonome KI-Systeme.",
@@ -374,7 +559,9 @@
         {
           "name": "Amazon.com, Inc.",
           "type": "company",
-          "systems": ["Just Walk Out"]
+          "systems": [
+            "Just Walk Out"
+          ]
         }
       ],
       "sources": [
@@ -395,14 +582,34 @@
       ]
     },
     "researcher_notes": "Confidence medium-hoch. Zahl 1.000 ist branchenweit zitiert, Amazon hat sie nicht offiziell bestätigt. Severity 2 (Arbeits- und Verbraucher-Täuschung, kein körperlicher Schaden). Verification 3.",
-    "dedup_hint": "amazon just walk out fake ai india workers ghost work 2024"
+    "dedup_hint": "amazon just walk out fake ai india workers ghost work 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:23.952Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://futurism.com/the-byte/amazon-abandons-ai-stores",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.41 hits=5 year=2024"
+        },
+        {
+          "url": "https://dataethicsclub.com/write_ups/2024-05-08_writeup.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.52 hits=7 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "usa-perplexity-ai-wsj-nytimes-copyright-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Perplexity AI verklagt von Dow Jones / New York Post und New York Times wegen Urheberrechts-Massenkopien",
       "name_en": "USA: Perplexity AI sued by Dow Jones / New York Post and the New York Times for mass copyright infringement",
@@ -414,7 +621,9 @@
         "lat": 40.7128,
         "lng": -74.006
       },
-      "incidentType": ["data-misuse"],
+      "incidentType": [
+        "data-misuse"
+      ],
       "candidate_severity": 2,
       "candidate_verification": 4,
       "description_de": "Im Oktober 2024 reichten Dow Jones (Wall Street Journal) und New York Post Klage gegen Perplexity AI ein wegen „massiver“ Urheberrechts- und Markenverletzungen durch das Scraping von Artikel-Inhalten zur Antwortgenerierung. Die Verleger fordern Schadensersatz bis zu 150.000 USD pro Verletzung. Die New York Times erließ im Oktober 2024 ein Cease-and-Desist und erweiterte ihren Rechtskampf gegen KI-Anbieter um Perplexity. Ein Bundesrichter wies Perplexitys Antrag auf Abweisung 2025 zurück.",
@@ -423,7 +632,9 @@
         {
           "name": "Perplexity AI, Inc.",
           "type": "company",
-          "systems": ["Perplexity answer engine"]
+          "systems": [
+            "Perplexity answer engine"
+          ]
         }
       ],
       "sources": [
@@ -444,14 +655,34 @@
       ]
     },
     "researcher_notes": "Confidence hoch. Severity 2 (Wirtschafts-/Presse-Schaden, kein körperlicher). Verification 4.",
-    "dedup_hint": "perplexity ai dow jones wsj ny post nytimes copyright lawsuit 2024"
+    "dedup_hint": "perplexity ai dow jones wsj ny post nytimes copyright lawsuit 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:25.804Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techxplore.com/news/2024-10-wall-street-journal-sues-perplexity.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=7 year=2024"
+        },
+        {
+          "url": "https://variety.com/2024/digital/news/perplexity-ai-responds-lawsuit-news-corp-dow-jones-1236190651/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.72 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "usa-allstate-arity-texas-driver-data-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "USA: Texas v. Allstate / Arity — Daten-Sammelklage gegen Fahrer-Tracking für KI-Underwriting",
       "name_en": "USA: Texas v. Allstate / Arity — state lawsuit over driver tracking for AI insurance underwriting",
@@ -463,7 +694,11 @@
         "lat": 30.2672,
         "lng": -97.7431
       },
-      "incidentType": ["surveillance", "data-misuse", "discrimination"],
+      "incidentType": [
+        "surveillance",
+        "data-misuse",
+        "discrimination"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Texas Attorney General Ken Paxton verklagte Anfang 2025 Allstate und seine Datenanalyse-Tochter Arity wegen Verletzung des Texas Data Privacy and Security Act (TDPSA). Vorwurf: heimliche Sammlung von Standort- und Telematik-Daten von über 45 Millionen US-amerikanischen Fahrer:innen über in Apps eingebettete Arity-Tracking-SDKs — alle 15 Sekunden ein Datenpunkt — und Verkauf an Versicherer. Die Daten flossen in Allstates KI-Underwriting und führten laut Klage zu Prämien-Erhöhungen und Deckungs-Verweigerungen. Es ist die erste Vollstreckungs-Aktion unter dem TDPSA.",
@@ -472,12 +707,16 @@
         {
           "name": "Allstate Corporation",
           "type": "company",
-          "systems": ["Allstate AI underwriting"]
+          "systems": [
+            "Allstate AI underwriting"
+          ]
         },
         {
           "name": "Arity",
           "type": "company",
-          "systems": ["Arity tracking SDK"]
+          "systems": [
+            "Arity tracking SDK"
+          ]
         }
       ],
       "sources": [
@@ -498,14 +737,34 @@
       ]
     },
     "researcher_notes": "Confidence hoch. KI-Nexus: Tracking-Daten in algorithmischem Underwriting. Verification 4 (öffentliche AG-Klage).",
-    "dedup_hint": "texas allstate arity driver tracking ai underwriting tdpsa 2025"
+    "dedup_hint": "texas allstate arity driver tracking ai underwriting tdpsa 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:28.354Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://ourtake.bakerbotts.com/post/102jty1/a-landmark-lawsuit-in-data-privacy-texas-v-allstate",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.90 hits=8 year=2025"
+        },
+        {
+          "url": "https://themercury.com/news/national/allstate-faces-data-collection-lawsuit-from-texas-attorney-general-insurify/article_96c34d46-011f-5522-87c8-21ff1ef23191.html",
+          "http_status": 429,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "usa-detroit-porcha-woodruff-frt-policy-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Porcha Woodruff v. Detroit — Fehl-Festnahme einer Hochschwangeren durch Gesichtserkennung führt zu Reform",
       "name_en": "USA: Porcha Woodruff v. Detroit — pregnant woman's wrongful arrest by facial recognition forces policy reform",
@@ -517,7 +776,11 @@
         "lat": 42.3314,
         "lng": -83.0458
       },
-      "incidentType": ["facial-recognition", "discrimination", "predictive-policing"],
+      "incidentType": [
+        "facial-recognition",
+        "discrimination",
+        "predictive-policing"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Porcha Woodruff, achte Monat schwanger, wurde im Februar 2023 in Detroit wegen Carjackings verhaftet, nachdem ein Opfer sie aus einer Foto-Aufstellung identifiziert hatte, die per Gesichtserkennung erstellt worden war. Sie hatte mit der Tat nichts zu tun. 2024 schloss Detroit einen weitreichenden Vergleich mit Robert Williams und änderte daraufhin die Polizei-Regeln: Festnahmen dürfen nicht mehr allein auf Gesichtserkennungs-Treffern oder darauf basierenden Foto-Aufstellungen beruhen. Woodruffs Zivilklage wurde 2024 von einer Richterin gegen den Antragsteller-Officer abgewiesen, sie war jedoch der 14. dokumentierte Fall einer Fehl-Festnahme durch Gesichtserkennung — nahezu alle Betroffenen sind Schwarz.",
@@ -526,7 +789,9 @@
         {
           "name": "Detroit Police Department",
           "type": "government",
-          "systems": ["DataWorks Plus facial recognition"]
+          "systems": [
+            "DataWorks Plus facial recognition"
+          ]
         }
       ],
       "sources": [
@@ -554,14 +819,40 @@
       ]
     },
     "researcher_notes": "Distinkt von usa-angela-lipps-fargo-clearview-fehlhaftung (anderer Fall). Severity 4 (Festnahme einer Hochschwangeren, Trauma-Konsequenzen, breitere Reform). Verification 4.",
-    "dedup_hint": "porcha woodruff detroit facial recognition pregnant arrest 2024 policy"
+    "dedup_hint": "porcha woodruff detroit facial recognition pregnant arrest 2024 policy",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:30.406Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.michiganpublic.org/criminal-justice-legal-system/2024-06-28/it-didnt-make-sense-at-all-wrongful-facial-recognition-arrest-leads-to-landmark-settlement",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.80 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.aclu.org/news/privacy-technology/more-than-a-dozen-wrongful-arrests-due-to-police-reliance-on-facial-recognition-technology",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.80 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.cbsnews.com/detroit/news/woman-wrongly-accused-carjacking-loses-lawsuit-detroit-police-used-facial-tech/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.60 hits=8"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-disney-universal-midjourney-copyright-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "USA: Disney und Universal verklagen Midjourney wegen massiver Urheberrechts-Verletzung durch KI-Bildgenerator",
       "name_en": "USA: Disney and Universal sue Midjourney for mass copyright infringement by AI image generator",
@@ -573,7 +864,9 @@
         "lat": 34.0522,
         "lng": -118.2437
       },
-      "incidentType": ["data-misuse"],
+      "incidentType": [
+        "data-misuse"
+      ],
       "candidate_severity": 2,
       "candidate_verification": 4,
       "description_de": "Am 11. Juni 2025 reichten Disney und Universal eine 110-seitige Bundes-Klage im Central District of California gegen Midjourney ein und nannten den KI-Bildgenerator einen „virtuellen Verkaufsautomaten“ für unlizenzierte Kopien geschützter Figuren — von Yoda über Homer Simpson bis Shrek. Sie fordern 150.000 USD pro verletztem Werk; eine Anlage listet über 150 betroffene Werke (Schadens-Potential ca. 20 Mio. USD plus Unterlassung). Midjourney verteidigt sich mit Fair Use.",
@@ -582,7 +875,9 @@
         {
           "name": "Midjourney, Inc.",
           "type": "company",
-          "systems": ["Midjourney v5/v6"]
+          "systems": [
+            "Midjourney v5/v6"
+          ]
         }
       ],
       "sources": [
@@ -603,14 +898,34 @@
       ]
     },
     "researcher_notes": "Confidence hoch. Severity 2 (Verleger-/Studio-Konflikt, kein Personenschaden). Verification 4.",
-    "dedup_hint": "disney universal midjourney copyright lawsuit 2025 hollywood ai"
+    "dedup_hint": "disney universal midjourney copyright lawsuit 2025 hollywood ai",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:55.571Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.npr.org/2025/06/12/nx-s1-5431684/ai-disney-universal-midjourney-copyright-infringement-lawsuit",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://www.cnbc.com/2025/06/11/disney-universal-midjourney-ai-copyright.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=8 year=2025"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "usa-reddit-anthropic-scraping-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Reddit v. Anthropic — Plattform klagt gegen KI-Anbieter wegen Scraping ohne Erlaubnis",
       "name_en": "USA: Reddit v. Anthropic — platform sues AI provider over unauthorized scraping",
@@ -622,7 +937,9 @@
         "lat": 37.7749,
         "lng": -122.4194
       },
-      "incidentType": ["data-misuse"],
+      "incidentType": [
+        "data-misuse"
+      ],
       "candidate_severity": 2,
       "candidate_verification": 4,
       "description_de": "Am 4. Juni 2025 reichte Reddit, Inc. Klage gegen Anthropic, PBC am Superior Court of California ein. Vorwurf: Anthropic habe öffentliche Reddit-Posts und Kommentare zwischen Dezember 2021 und Oktober 2024 ohne Erlaubnis gescraped und für das Training von Claude verwendet — auch nachdem Anthropic 2024 öffentlich behauptet hatte, Reddit-Bots geblockt zu haben, soll es über 100.000 weitere unautorisierte Requests gegeben haben. Reddit fordert u. a. wegen Vertragsverletzung, Trespass to Chattels und Unfair Competition Schadenersatz. Reddit ist der erste Big-Tech-Plattformbetreiber, der einen KI-Anbieter direkt verklagt.",
@@ -631,7 +948,9 @@
         {
           "name": "Anthropic, PBC",
           "type": "company",
-          "systems": ["Claude"]
+          "systems": [
+            "Claude"
+          ]
         },
         {
           "name": "Reddit, Inc.",
@@ -657,14 +976,34 @@
       ]
     },
     "researcher_notes": "Confidence hoch. Verification 4 (öffentliche Court-Filing).",
-    "dedup_hint": "reddit anthropic claude scraping training data lawsuit 2025"
+    "dedup_hint": "reddit anthropic claude scraping training data lawsuit 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:21:57.643Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techcrunch.com/2025/06/04/reddit-sues-anthropic-for-allegedly-not-paying-for-training-data/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.courthousenews.com/reddit-privacy-case-against-anthropic-kicked-back-to-state-court/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "usa-eiswert-pikesville-ai-voice-deepfake-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "USA: Pikesville-Schule, Maryland — KI-Stimm-Deepfake macht Schulleiter Eric Eiswert zum rassistischen Hassobjekt",
       "name_en": "USA: Pikesville High School, Maryland — AI voice deepfake makes principal Eric Eiswert the target of racist hate",
@@ -676,7 +1015,10 @@
         "lat": 39.3859,
         "lng": -76.7269
       },
-      "incidentType": ["deepfakes", "discrimination"],
+      "incidentType": [
+        "deepfakes",
+        "discrimination"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Im Januar 2024 verbreitete sich ein Audio, in dem Pikesville-High-School-Direktor Eric Eiswert vermeintlich rassistische und antisemitische Äußerungen über Schüler:innen und Lehrkräfte machte. Im April 2024 wurde der ehemalige Sport-Direktor der Schule, Dazhon Darien, festgenommen: Er soll laut Polizei den Audio-Schnipsel per KI-Stimm-Klon erzeugt und verbreitet haben — als Reaktion auf eine schlechte Leistungs-Beurteilung. Eiswert erhielt Hassnachrichten und musste die Schule vorübergehend verlassen, bevor die Polizei den Deepfake-Charakter forensisch nachwies.",
@@ -711,14 +1053,34 @@
       ]
     },
     "researcher_notes": "Confidence hoch. Distinkt von usa-westfield-nj-schul-deepfake-mani (Schüler-Opfer). Verification 4 (Polizei-Ermittlung + Forensik).",
-    "dedup_hint": "pikesville eiswert darien ai voice deepfake racist principal maryland 2024"
+    "dedup_hint": "pikesville eiswert darien ai voice deepfake racist principal maryland 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:22:22.816Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.washingtonpost.com/dc-md-va/2024/04/26/baltimore-ai-voice-audio-framing-principal/",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://www.npr.org/2024/04/26/1247237175/baltimore-ai-generated-racist-audio-crime",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        }
+      ],
+      "match_count": 0,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "usa-quran-reid-louisiana-frt-arrest-2023",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Randal Quran Reid — Fehl-Festnahme durch Gesichtserkennung in Louisiana, sechs Tage in Haft",
       "name_en": "USA: Randal Quran Reid — wrongful facial-recognition arrest in Louisiana, six days in jail",
@@ -730,7 +1092,10 @@
         "lat": 29.9311,
         "lng": -90.1465
       },
-      "incidentType": ["facial-recognition", "discrimination"],
+      "incidentType": [
+        "facial-recognition",
+        "discrimination"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Randal Quran Reid, ein schwarzer Georgier, wurde im November 2022 in der Nähe von Atlanta auf Grundlage eines aus Jefferson Parish (Louisiana) ausgestellten Haftbefehls verhaftet — obwohl er noch nie in Louisiana war. Detektive hatten ihn nur über einen Gesichtserkennungs-Treffer als „credible source“ identifiziert; er saß sechs Tage in einem DeKalb-County-Gefängnis. Nach Vorlage von Foto-Beweisen wurde der Haftbefehl zurückgezogen. 2024 reichte Reid Schadensersatzklage gegen die ermittelnden Beamten ein. Sein Fall ist Teil einer Serie von mindestens 14 bekannten Gesichtserkennungs-Fehl-Festnahmen — fast alle Opfer sind Schwarz.",
@@ -739,7 +1104,9 @@
         {
           "name": "Jefferson Parish Sheriff's Office",
           "type": "government",
-          "systems": ["Clearview AI / DataWorks Plus FRT"]
+          "systems": [
+            "Clearview AI / DataWorks Plus FRT"
+          ]
         }
       ],
       "sources": [
@@ -760,14 +1127,34 @@
       ]
     },
     "researcher_notes": "Confidence hoch. Vorgang 2022/23, Klage 2024 — passt in Round-Scope. Severity 3. Verification 4.",
-    "dedup_hint": "randal quran reid louisiana jefferson parish facial recognition wrongful arrest 2024"
+    "dedup_hint": "randal quran reid louisiana jefferson parish facial recognition wrongful arrest 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:22:25.085Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.aclu.org/news/privacy-technology/more-than-a-dozen-wrongful-arrests-due-to-police-reliance-on-facial-recognition-technology",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.82 hits=8 year=2024"
+        },
+        {
+          "url": "https://abcnews.go.com/US/lawsuit-man-claims-falsely-arrested-misuse-facial-recognition/story?id=103687845",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "usa-tesla-robotaxi-austin-launch-incidents-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Teslas Robotaxi-Start in Austin — NHTSA-Aufmerksamkeit nach erratischem Fahrverhalten",
       "name_en": "USA: Tesla Robotaxi launch in Austin — NHTSA attention after erratic driving",
@@ -779,7 +1166,9 @@
         "lat": 30.2672,
         "lng": -97.7431
       },
-      "incidentType": ["autonomous-weapons"],
+      "incidentType": [
+        "autonomous-weapons"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 22. Juni 2025 startete Tesla seinen Robotaxi-Dienst in Austin mit 10–20 Model-Y-Fahrzeugen und einem menschlichen „Safety Monitor“ auf dem Beifahrersitz. Innerhalb weniger Tage dokumentierten Fahrgäste auf Video: Fahrten auf der falschen Straßenseite, Phantom-Bremsen, Ablieferung in Kreuzungen, Verkehrsverstöße. Am 23. Juni 2025 bestätigte die NHTSA, sich mit Tesla in Verbindung gesetzt zu haben. Bis März 2026 listeten NHTSA-Daten 17 gemeldete Vorfälle, davon 6 leichte Berührungs-Ereignisse, in denen Teslas ADS als Mit- oder Hauptverursacher galt — keine schweren Crashs.",
@@ -788,7 +1177,9 @@
         {
           "name": "Tesla, Inc.",
           "type": "company",
-          "systems": ["Robotaxi (FSD-based)"]
+          "systems": [
+            "Robotaxi (FSD-based)"
+          ]
         },
         {
           "name": "National Highway Traffic Safety Administration (NHTSA)",
@@ -821,14 +1212,40 @@
       ]
     },
     "researcher_notes": "Confidence hoch, distinkt von Waymo/Cruise-Eintrag und FSD-Eintrag (anderes Programm: kommerzieller Robotaxi-Dienst). Verification 4.",
-    "dedup_hint": "tesla robotaxi austin launch nhtsa erratic driving 2025"
+    "dedup_hint": "tesla robotaxi austin launch nhtsa erratic driving 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:22:27.648Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.cbsnews.com/news/tesla-robotaxi-austin-14-crashes-nhtsa/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.89 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.cnbc.com/2025/06/23/tesla-robotaxi-incidents-caught-on-camera-in-austin-get-nhtsa-concern.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.89 hits=8 year=2025"
+        },
+        {
+          "url": "https://techcrunch.com/2025/06/23/teslas-robotaxis-have-already-caught-the-attention-of-federal-safety-regulators/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.83 hits=8 year=2025"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-pelkey-ai-victim-impact-statement-arizona-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Chris Pelkey — KI-Avatar eines getöteten Mannes spricht eigenes Opfer-Statement vor Gericht in Arizona",
       "name_en": "USA: Chris Pelkey — AI avatar of murder victim delivers his own impact statement in Arizona court",
@@ -840,7 +1257,9 @@
         "lat": 33.4484,
         "lng": -112.074
       },
-      "incidentType": ["deepfakes"],
+      "incidentType": [
+        "deepfakes"
+      ],
       "candidate_severity": 2,
       "candidate_verification": 4,
       "description_de": "Im Sentencing-Hearing am 1. Mai 2025 für Gabriel Horcasitas, der 2021 in einem Road-Rage-Vorfall den Army-Veteranen Christopher Pelkey erschossen hatte, ließ Pelkeys Schwester Stacey Wales einen KI-generierten Video-Avatar ihres Bruders auftreten — er las (in Pelkeys geklonter Stimme) ein von ihr verfasstes Vergebungs-Statement vor. Richter Todd Lang erlaubte den Auftritt, lobte ihn und verhängte 10,5 Jahre (statt der von der Staatsanwaltschaft geforderten 9,5). Es war laut Berichten das erste Mal in Arizona — und möglicherweise USA-weit — dass eine KI das eigene Victim-Impact-Statement eines Toten hielt. Juristen warnen vor Manipulationsgefahr und fehlenden Gerichts-Standards.",
@@ -882,14 +1301,40 @@
       ]
     },
     "researcher_notes": "Confidence hoch. Severity 2 (kein Personenschaden, aber bedeutender Präzedenzfall für Justiz + KI). Verification 4.",
-    "dedup_hint": "pelkey horcasitas arizona ai avatar victim impact statement court 2025"
+    "dedup_hint": "pelkey horcasitas arizona ai avatar victim impact statement court 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:22:52.824Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.cbsnews.com/news/chris-pelkey-murder-victim-ai-statement-sentencing/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.80 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.npr.org/2025/05/07/g-s1-64640/ai-impact-statement-murder-victim",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://judicature.duke.edu/articles/ai-victim-impact-statement/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.54 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-scale-surge-ai-tasker-misclassification-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Scale AI / Surge AI — Klagen und DOL-Untersuchung wegen Fehl-Klassifizierung von KI-Trainings-Worker:innen",
       "name_en": "USA: Scale AI / Surge AI — lawsuits and DOL investigation over misclassification of AI training workers",
@@ -901,7 +1346,9 @@
         "lat": 37.7749,
         "lng": -122.4194
       },
-      "incidentType": ["labor-exploitation"],
+      "incidentType": [
+        "labor-exploitation"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Im Dezember 2024 und Januar 2025 reichten ehemalige Scale-AI-Worker („Taskers“) Klagen ein: Sie seien zwingend als Contractor klassifiziert worden, obwohl sie Kernarbeiten verrichten (Daten-Labelling, RLHF-Bewertungen), unterliegen Hubstaff-Keystroke-Tracking, müssen unbezahlte Mehrarbeit leisten und werden teilweise gar nicht bezahlt. Eine separate Klage Schuster v. Scale AI thematisiert Belastung durch traumatisierende Inhalte — kenianische Worker wurden für so wenig wie 2 USD/Std. eingesetzt. Im Mai 2025 wurde eine California-Sammelklage gegen Surge AI eingereicht. Das US Department of Labor untersucht Scale AI seit mindestens August 2024.",
@@ -910,7 +1357,9 @@
         {
           "name": "Scale AI, Inc.",
           "type": "company",
-          "systems": ["Outlier/Remotasks platform"]
+          "systems": [
+            "Outlier/Remotasks platform"
+          ]
         },
         {
           "name": "Surge AI (Surge Labs)",
@@ -948,14 +1397,40 @@
       ]
     },
     "researcher_notes": "Confidence hoch. Severity 3 (massive Arbeits-/Vergütungsrechts-Verletzungen, plus Trauma-Exposition). Verification 4.",
-    "dedup_hint": "scale ai surge ai taskers misclassification wage theft dol 2024"
+    "dedup_hint": "scale ai surge ai taskers misclassification wage theft dol 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:22:54.987Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techcrunch.com/2025/03/06/scale-ai-is-being-investigated-by-the-us-department-of-labor/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.sfexaminer.com/news/technology/scale-ai-lawsuit-charges-sf-tech-startup-with-wage-theft/article_b6b3781a-b827-11ef-8cc7-c320ca742702.html",
+          "http_status": 429,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.workforcebulletin.com/training-artificial-intelligence-and-employer-liability-lessons-from-schuster-v-scale-ai",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.48 hits=7 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-pasco-county-predictive-policing-settlement-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: Pasco County Sheriff — Vergleich beendet algorithmisches „Intelligence-Led Policing“-Programm",
       "name_en": "USA: Pasco County Sheriff — settlement ends algorithmic ‘Intelligence-Led Policing' programme",
@@ -967,7 +1442,11 @@
         "lat": 28.295,
         "lng": -82.4319
       },
-      "incidentType": ["predictive-policing", "surveillance", "discrimination"],
+      "incidentType": [
+        "predictive-policing",
+        "surveillance",
+        "discrimination"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 4. Dezember 2024 schlossen das Pasco County Sheriff's Office und die Plaintiffs (vertreten durch das Institute for Justice) am Vorabend des Prozesses einen Vergleich: 105.000 USD an vier Bürger:innen, und die Behörde verpflichtet sich, das algorithmische „Intelligence-Led Policing“-Programm dauerhaft einzustellen und kein ähnliches mehr aufzulegen. Das Programm (von der Tampa Bay Times 2020 enthüllt) nutzte einen Algorithmus, um vermeintliche „prolific offenders“ — viele davon Minderjährige — zu identifizieren. Deputies suchten Familien jahrelang unangekündigt zu Hause auf. Das Sheriff's Office räumte ein, dass das Programm First-, Fourth- und Fourteenth-Amendment-Rechte verletzte.",
@@ -976,7 +1455,9 @@
         {
           "name": "Pasco County Sheriff's Office",
           "type": "government",
-          "systems": ["Intelligence-Led Policing (ILP) algorithm"]
+          "systems": [
+            "Intelligence-Led Policing (ILP) algorithm"
+          ]
         }
       ],
       "sources": [
@@ -1004,14 +1485,40 @@
       ]
     },
     "researcher_notes": "Distinkt von usa-predictive-policing-chicago / usa-predpol-la-aufloesung. Severity 3 (jahrelange Belästigung von Familien, viele Minderjährige). Verification 4 (öffentlicher Vergleich + Eingeständnis).",
-    "dedup_hint": "pasco county florida intelligence led policing settlement institute for justice 2024"
+    "dedup_hint": "pasco county florida intelligence led policing settlement institute for justice 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:23:01.017Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://ij.org/press-release/case-closed-pasco-sheriff-admits-predictive-policing-program-violated-constitution/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.tampabay.com/news/pasco/2024/12/04/pasco-sheriff-settles-lawsuit-filed-over-controversial-policing-program/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.29 hits=5"
+        },
+        {
+          "url": "https://www.techdirt.com/2024/12/13/florida-sheriffs-office-agrees-to-end-predictive-policing-program-that-targeted-students-and-their-families/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.68 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "usa-itutorgroup-eeoc-age-ai-settlement-2023-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-us-canada-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "USA: EEOC v. iTutorGroup — erster KI-Diskriminierungs-Vergleich der US-Gleichstellungsbehörde",
       "name_en": "USA: EEOC v. iTutorGroup — first AI-discrimination settlement by the U.S. equal-opportunity agency",
@@ -1023,7 +1530,10 @@
         "lat": 40.6782,
         "lng": -73.9442
       },
-      "incidentType": ["discrimination", "labor-exploitation"],
+      "incidentType": [
+        "discrimination",
+        "labor-exploitation"
+      ],
       "candidate_severity": 2,
       "candidate_verification": 4,
       "description_de": "Am 9. August 2023 verkündete die Equal Employment Opportunity Commission (EEOC) den ersten Vergleich der Behörde wegen KI-basierter Beschäftigungs-Diskriminierung. In EEOC v. iTutorGroup, Inc. (E.D.N.Y.) hatte das Online-Tutor-Unternehmen über seine Bewerber-Software automatisch Frauen ab 55 und Männer ab 60 Jahren abgelehnt — mehr als 200 Bewerber:innen betroffen. Aufgedeckt wurde es, weil eine Bewerberin mit demselben Lebenslauf, aber jüngerem Geburtsdatum, plötzlich eingeladen wurde. iTutorGroup zahlt 365.000 USD, verpflichtet sich zu Training, neuer Antidiskriminierungs-Policy und gerichtlicher Aufsicht. Das Verfahren wurde 2024 mit Auszahlung an die Geschädigten abgeschlossen.",
@@ -1032,7 +1542,9 @@
         {
           "name": "iTutorGroup, Inc.",
           "type": "company",
-          "systems": ["iTutorGroup applicant-screening software"]
+          "systems": [
+            "iTutorGroup applicant-screening software"
+          ]
         },
         {
           "name": "U.S. Equal Employment Opportunity Commission (EEOC)",
@@ -1058,6 +1570,26 @@
       ]
     },
     "researcher_notes": "Vergleich 2023, Implementierung/Auszahlungen 2024 — passt knapp in Scope. Wichtiger Präzedenzfall. Severity 2 (kein Körperschaden). Verification 4 (EEOC-eigene Pressemitteilung).",
-    "dedup_hint": "eeoc itutorgroup ai age discrimination hiring settlement 2023 2024"
+    "dedup_hint": "eeoc itutorgroup ai age discrimination hiring settlement 2023 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:23:03.378Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.eeoc.gov/newsroom/itutorgroup-pay-365000-settle-eeoc-discriminatory-hiring-suit",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.84 hits=8 year=2023"
+        },
+        {
+          "url": "https://www.akingump.com/en/insights/blogs/ag-data-dive/eeoc-settles-over-recruiting-software-in-possible-first-ever-ai-related-case",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.84 hits=8 year=2023"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    }
   }
 ]

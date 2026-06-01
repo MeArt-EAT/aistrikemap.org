@@ -4,7 +4,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Dänemark: Udbetaling Danmark — bis zu 60 KI-Modelle für Sozialbetrugs-Jagd, Amnesty-Bericht \"Coded Injustice\" 2024",
       "name_en": "Denmark: Udbetaling Danmark — up to 60 AI models hunting welfare fraud, Amnesty 'Coded Injustice' report 2024",
@@ -16,7 +16,10 @@
         "lat": 55.6761,
         "lng": 12.5683
       },
-      "incidentType": ["surveillance", "discrimination"],
+      "incidentType": [
+        "surveillance",
+        "discrimination"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Die dänische Sozialbehörde Udbetaling Danmark (UDK) und der Pensionsverwalter ATP setzen laut einem zweijährigen Amnesty-International-Bericht (November 2024) bis zu 60 algorithmische Modelle ein, um vermutete Sozialbetrüger zu identifizieren. Algorithmen wie \"Really Single\" (prüft Beziehungs-Status anhand \"untypischer\" Wohnverhältnisse) und \"Model Abroad\" (priorisiert Menschen mit Bindungen zu Nicht-EWR-Staaten) diskriminieren systematisch Menschen mit Behinderungen, niedrigem Einkommen, Migranten und rassifizierte Gruppen. Der Bericht dokumentiert flächendeckende Massenüberwachung und psychische Belastung der Betroffenen.",
@@ -25,7 +28,11 @@
         {
           "name": "Udbetaling Danmark (UDK)",
           "type": "government",
-          "systems": ["Really Single", "Model Abroad", "ca. 60 Fraud-Detection-Modelle"]
+          "systems": [
+            "Really Single",
+            "Model Abroad",
+            "ca. 60 Fraud-Detection-Modelle"
+          ]
         },
         {
           "name": "ATP (Arbejdsmarkedets Tillægspension)",
@@ -57,14 +64,40 @@
       ]
     },
     "researcher_notes": "High confidence: Amnesty-Hauptbericht 'Coded Injustice' (Nov 2024) ist der primaere Beleg, gestuetzt durch 34 Interviews. UDK/ATP-Algorithmus-Namen ('Really Single', 'Model Abroad') sind direkt aus dem Bericht zitiert. Geo: Kopenhagen als Sitz UDK gewaehlt. Severity 4 wegen systematischer Diskriminierung vulnerabler Gruppen + Mental-Health-Folgen.",
-    "dedup_hint": "denmark | udbetaling danmark | UDK | welfare algorithm | really single | model abroad | amnesty coded injustice 2024"
+    "dedup_hint": "denmark | udbetaling danmark | UDK | welfare algorithm | really single | model abroad | amnesty coded injustice 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:08.566Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.amnesty.org/en/latest/news/2024/11/denmark-ai-powered-welfare-system-fuels-mass-surveillance-and-risks-discriminating-against-marginalized-groups-report/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.77 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.amnesty.org/en/documents/eur18/8709/2024/en/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.77 hits=8 year=2024"
+        },
+        {
+          "url": "https://fortune.com/europe/2024/11/13/denmark-renowned-safety-net-turns-into-a-political-battleground-ai-algorithms-target-welfare-recipients/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.48 hits=7 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "schweden-foersaekringskassan-suspicion-machine-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Schweden: Försäkringskassan-\"Suspicion Machine\" — Sozialamts-KI diskriminiert Frauen und Migranten (Lighthouse-Investigation 2024)",
       "name_en": "Sweden: Försäkringskassan 'Suspicion Machine' — welfare AI discriminates against women and migrants (Lighthouse investigation 2024)",
@@ -76,7 +109,10 @@
         "lat": 59.3293,
         "lng": 18.0686
       },
-      "incidentType": ["discrimination", "surveillance"],
+      "incidentType": [
+        "discrimination",
+        "surveillance"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Eine gemeinsame Recherche von Lighthouse Reports und Svenska Dagbladet, veröffentlicht am 27. November 2024, deckt auf: Das Machine-Learning-System der schwedischen Sozialversicherungs-Agentur Försäkringskassan markiert Frauen, Menschen mit \"ausländischem\" Hintergrund, Geringverdienende und Personen ohne Hochschulabschluss überproportional häufig für Betrugs-Ermittlungen. Tests gegen sechs Fairness-Metriken bestätigten die Diskriminierung — Frauen sind 1,5-mal häufiger Ziel von Ermittlungen, obwohl sie statistisch nicht mehr Fehler machen. Amnesty International forderte die Abschaltung; die Behörde nahm das System während der Inspektion außer Betrieb.",
@@ -85,7 +121,9 @@
         {
           "name": "Försäkringskassan (Schwedische Sozialversicherungs-Agentur)",
           "type": "government",
-          "systems": ["Machine-Learning-Fraud-Detection-System"]
+          "systems": [
+            "Machine-Learning-Fraud-Detection-System"
+          ]
         }
       ],
       "sources": [
@@ -113,14 +151,40 @@
       ]
     },
     "researcher_notes": "High confidence — Lighthouse Reports + Svenska Dagbladet Co-Publication mit eigener statistischer Analyse, Amnesty bestaetigt. Existierender Eintrag 'schweden-ki-polizei-reva' ist Polizei-Migration, nicht Welfare — kein Duplikat. GitHub-Repo der Investigation oeffentlich.",
-    "dedup_hint": "sweden | forsakringskassan | suspicion machine | lighthouse reports | welfare ai discrimination 2024"
+    "dedup_hint": "sweden | forsakringskassan | suspicion machine | lighthouse reports | welfare ai discrimination 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:09.891Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.lighthousereports.com/investigation/swedens-suspicion-machine/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.amnesty.org/en/latest/news/2024/11/sweden-authorities-must-discontinue-discriminatory-ai-systems-used-by-welfare-agency/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.computerweekly.com/news/366634703/Swedish-welfare-authorities-suspend-discriminatory-AI-model",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.60 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "niederlande-duo-studienbeihilfe-ethnic-profiling-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Niederlande: DUO-Studienbeihilfe-Algorithmus diskriminierte ethnische Minderheiten — 61 Mio. € Entschädigung",
       "name_en": "Netherlands: DUO student-grant algorithm discriminated against ethnic minorities — €61 million compensation",
@@ -132,7 +196,10 @@
         "lat": 53.2194,
         "lng": 6.5665
       },
-      "incidentType": ["discrimination", "data-misuse"],
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Die niederländische Bildungsbehörde DUO (Dienst Uitvoering Onderwijs) setzte einen Risiko-Scoring-Algorithmus für Studienbeihilfe-Betrugsprüfungen ein, der Studierende mit Migrationshintergrund 6,2-mal häufiger für Hausbesuche und 1,8-mal häufiger als \"hochriskant\" einstufte. Eine NOS/Investico-Recherche im Juni 2023 brachte den Skandal ans Licht; im März 2024 entschuldigte sich die Regierung offiziell, im November 2024 ordnete die Autoriteit Persoonsgegevens das Verfahren als rechtswidrig diskriminierend ein. Rund 10.000 Studierende erhalten Entschädigungen aus einem 61-Mio.-€-Fonds. 97 % von 376 dokumentierten Fällen betrafen Studierende mit Minderheiten-Hintergrund.",
@@ -141,7 +208,9 @@
         {
           "name": "DUO (Dienst Uitvoering Onderwijs)",
           "type": "government",
-          "systems": ["Risiko-Scoring-Algorithmus Studienbeihilfe"]
+          "systems": [
+            "Risiko-Scoring-Algorithmus Studienbeihilfe"
+          ]
         },
         {
           "name": "Autoriteit Persoonsgegevens (Niederländische DSB)",
@@ -173,14 +242,40 @@
       ]
     },
     "researcher_notes": "High confidence — Dutch DPA ruling ist authoritativ. Existierender Eintrag 'niederlande-ki-kindesgeld-skandal' (toeslagenaffaire) ist ANDERE Behoerde (Belastingdienst, Kindergeld) — kein Duplikat. DUO sitzt in Groningen.",
-    "dedup_hint": "netherlands | DUO | student grant | dienst uitvoering onderwijs | ethnic profiling | autoriteit persoonsgegevens 2024"
+    "dedup_hint": "netherlands | DUO | student grant | dienst uitvoering onderwijs | ethnic profiling | autoriteit persoonsgegevens 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:11.428Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.autoriteitpersoonsgegevens.nl/en/current/duos-approach-to-fraud-found-to-be-discriminatory-and-illegal",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.45 hits=7 year=2024"
+        },
+        {
+          "url": "https://www.dutchnews.nl/2024/03/student-finance-group-duo-did-discriminate-in-fraud-probes/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.41 hits=6 year=2024"
+        },
+        {
+          "url": "https://nltimes.nl/2024/11/12/government-refund-10000-students-discriminatory-duo-fraud-checks",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.41 hits=6 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "frankreich-cnaf-scoring-conseil-detat-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Frankreich: CNAF-Familienkassen-Scoring-Algorithmus — Koalition aus 15+ NGOs klagt vor Conseil d'État (Oktober 2024)",
       "name_en": "France: CNAF family-welfare scoring algorithm — 15+ NGO coalition takes case to Conseil d'État (October 2024)",
@@ -192,7 +287,10 @@
         "lat": 48.8566,
         "lng": 2.3522
       },
-      "incidentType": ["discrimination", "surveillance"],
+      "incidentType": [
+        "discrimination",
+        "surveillance"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Am 15. Oktober 2024 reichte eine Koalition aus 15 Organisationen unter Führung von La Quadrature du Net und mit Amnesty International eine Klage beim französischen Conseil d'État ein, um den seit 2010 von der Familienkasse CNAF eingesetzten Risiko-Scoring-Algorithmus stoppen zu lassen. Das System weist allen Empfängern von Familien- und Wohngeld einen Risiko-Score zu — Faktoren wie niedriges Einkommen, Arbeitslosigkeit, Wohnen in benachteiligten Vierteln, hoher Miet-Anteil am Einkommen und Behinderung erhöhen den Score systematisch. Der französische Ombudsmann (Défenseur des Droits) bestätigte die diskriminierende Wirkung; eine interne CNAF-Studie 2025 räumt sie ein. Bis Januar 2026 war die Koalition auf 25 Organisationen gewachsen.",
@@ -201,7 +299,9 @@
         {
           "name": "Caisse nationale des allocations familiales (CNAF)",
           "type": "government",
-          "systems": ["Risiko-Scoring-Algorithmus Familienleistungen"]
+          "systems": [
+            "Risiko-Scoring-Algorithmus Familienleistungen"
+          ]
         },
         {
           "name": "La Quadrature du Net",
@@ -237,14 +337,40 @@
       ]
     },
     "researcher_notes": "High confidence. WICHTIG: Existierender Eintrag 'frankreich-caf-algorithmus-diskriminierung-klage' ueberlappt thematisch — pruefen, ob dieser bereits den Oktober-2024-Coalition-Filing-Schritt enthaelt oder einen frueheren Zeitstand. Wenn er den Oktober-2024-Schritt bereits abdeckt → status auf 'duplicate' setzen. Sonst behandeln als update/eskalation. CNAF = Caisse Nationale d'Allocations Familiales.",
-    "dedup_hint": "france | CNAF | CAF | family welfare scoring | la quadrature du net | conseil d'etat | 2024"
+    "dedup_hint": "france | CNAF | CAF | family welfare scoring | la quadrature du net | conseil d'etat | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:13.268Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.amnesty.org/en/latest/news/2024/10/france-discriminatory-algorithm-used-by-the-social-security-agency-must-be-stopped/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.53 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.laquadrature.net/en/2024/10/16/french-family-welfare-scoring-algorithm-challenged-in-court-by-15-organisations/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.77 hits=8 year=2024"
+        },
+        {
+          "url": "https://edri.org/our-work/cnafs-discriminatory-scoring-algorithm-10-new-organisations-join-the-case-before-the-conseil-detat-in-france/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.73 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "griechenland-centaur-hyperion-asyl-ueberwachung-fine-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Griechenland: 175.000 € Rekordbußgeld gegen Migrationsministerium für KI-Überwachungssysteme \"Kentauros\" und \"Hyperion\" in Asyl-Camps",
       "name_en": "Greece: Record €175,000 fine on Migration Ministry over 'Kentauros' and 'Hyperion' AI surveillance systems in asylum camps",
@@ -256,7 +382,10 @@
         "lat": 37.7546,
         "lng": 26.9772
       },
-      "incidentType": ["surveillance", "facial-recognition"],
+      "incidentType": [
+        "surveillance",
+        "facial-recognition"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Am 3. April 2024 verhängte die griechische Datenschutzbehörde gegen das Migrationsministerium ein Rekordbußgeld von 175.000 € — die höchste je gegen eine griechische Behörde verhängte DSGVO-Strafe. Es betrifft die EU-kofinanzierten Systeme \"Kentauros\" (Centaur: Kameras, Sensoren, KI-Verhaltensanalyse, Drohnen) und \"Hyperion\" (RFID-Karten und Fingerabdrücke beim Ein- und Ausgang) in den \"Neu-Generation\"-Asyl-Camps auf den Ägäis-Inseln. Die Behörde stellte fest: keine vollständige Datenschutz-Folgenabschätzung vor Beschaffung und Einsatz; Verstöße gegen Art. 31 DSGVO (75.000 €) plus Art. 35 (DPIA, 100.000 €). EU-Mittel: Covid-Recovery-Fund und Internal Security Fund.",
@@ -265,7 +394,10 @@
         {
           "name": "Griechisches Migrationsministerium (Hellenic Ministry of Migration and Asylum)",
           "type": "government",
-          "systems": ["Kentauros / Centaur", "Hyperion"]
+          "systems": [
+            "Kentauros / Centaur",
+            "Hyperion"
+          ]
         },
         {
           "name": "Hellenic Data Protection Authority (HDPA)",
@@ -304,14 +436,46 @@
       ]
     },
     "researcher_notes": "High confidence — Regulator-Entscheidung der HDPA, durch EDPB bestaetigt. Existierende Eintraege 'griechenland-predpol-migration' und 'griechenland-predpol-gefluechtete-evros' sind andere PredPol-Systeme am Festland-Grenze — kein Duplikat. Kentauros/Hyperion sind die spezifischen Camp-Inneren-Systeme. Samos als Beispiel-Camp; Mytilini (Lesbos), Leros, Kos sind weitere.",
-    "dedup_hint": "greece | centaur | kentauros | hyperion | asylum camps | aegean | HDPA fine 175000 | 2024"
+    "dedup_hint": "greece | centaur | kentauros | hyperion | asylum camps | aegean | HDPA fine 175000 | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:16.551Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.edpb.europa.eu/news/national-news/2024/ministry-migration-and-asylum-receives-administrative-fine-and-gdpr_en",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8 year=2024"
+        },
+        {
+          "url": "https://edri.org/our-work/greek-ministry-of-asylum-and-migration-face-a-record-breaking-e175000-fine-for-the-border-management-systems-kentauros-hyperion/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2024"
+        },
+        {
+          "url": "https://balkaninsight.com/2024/04/03/greek-ministry-fined-over-surveillance-systems-at-asylum-centres/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.computerweekly.com/news/366580074/Greek-government-fined-over-AI-surveillance-in-refugee-camps",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2024"
+        }
+      ],
+      "match_count": 4,
+      "sources_count": 4
+    }
   },
   {
     "candidate_id": "italien-deepseek-garante-blockierung-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Italien: Garante blockiert chinesische KI DeepSeek wegen GDPR-Verstößen (Januar 2025)",
       "name_en": "Italy: Garante blocks Chinese AI DeepSeek over GDPR breaches (January 2025)",
@@ -323,7 +487,10 @@
         "lat": 41.9028,
         "lng": 12.4964
       },
-      "incidentType": ["data-misuse", "censorship"],
+      "incidentType": [
+        "data-misuse",
+        "censorship"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 30. Januar 2025 verhängte die italienische Datenschutzbehörde Garante mit sofortiger Wirkung eine endgültige Verarbeitungs-Beschränkung gegen die Betreiber des chinesischen KI-Chatbots DeepSeek (Hangzhou DeepSeek AI und Beijing DeepSeek AI). Auslöser: Die am 28. Januar versandte Auskunftsanfrage zu Datenkategorien, Quellen, Rechtsgrundlagen, Speicherort und Nutzer-Information wurde laut Garante unzureichend beantwortet. Die Datenschutz-Erklärung des Dienstes räumt explizit ein, dass Daten in China gespeichert werden — Verstoß gegen GDPR-Drittstaaten-Garantien und Art. 32 (Sicherheit der Verarbeitung). Die Behörde leitete zusätzlich ein formelles Verfahren ein.",
@@ -332,7 +499,9 @@
         {
           "name": "Hangzhou DeepSeek Artificial Intelligence",
           "type": "company",
-          "systems": ["DeepSeek (Chatbot/LLM)"]
+          "systems": [
+            "DeepSeek (Chatbot/LLM)"
+          ]
         },
         {
           "name": "Beijing DeepSeek Artificial Intelligence",
@@ -368,14 +537,40 @@
       ]
     },
     "researcher_notes": "High confidence — Garante-Entscheidung, EDPB-Coverage. Existierender 'italien-chatgpt-garante-dsgvo-strafe' ist OpenAI/ChatGPT — kein Duplikat. DeepSeek ist eigene Story.",
-    "dedup_hint": "italy | garante | deepseek | chinese ai | january 2025 | gdpr block"
+    "dedup_hint": "italy | garante | deepseek | chinese ai | january 2025 | gdpr block",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:18.494Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.twobirds.com/en/insights/2025/the-garante-imposes-a-definitive-limitation-on-the-processing-of-italian-users%E2%80%99-personal-data",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2025"
+        },
+        {
+          "url": "https://thehackernews.com/2025/01/italy-bans-chinese-deepseek-ai-over.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.euronews.com/next/2025/01/31/deepseek-ai-blocked-by-italian-authorities-as-others-member-states-open-probes",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2025"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "italien-replika-garante-fine-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Italien: Garante verhängt 5 Mio. € Strafe gegen Replika-Macher Luka Inc. wegen Datenschutz- und Jugendschutz-Verstößen",
       "name_en": "Italy: Garante fines Replika-maker Luka Inc. €5 million for data-protection and child-safety failings",
@@ -387,7 +582,9 @@
         "lat": 41.9028,
         "lng": 12.4964
       },
-      "incidentType": ["data-misuse"],
+      "incidentType": [
+        "data-misuse"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Die italienische Datenschutzbehörde Garante verhängte im Mai 2025 eine Strafe von 5 Mio. € (rund 5,64 Mio. US-Dollar) gegen Luka Inc., die Betreiberin des KI-Companion-Chatbots Replika. Die Untersuchung deckte zwei zentrale Verstöße auf: Replika verarbeitete Nutzer-Daten ohne tragfähige Rechtsgrundlage und implementierte keinerlei Altersverifizierung, um Minderjährige vom Dienst auszuschließen. Garante hatte den Dienst bereits 2023 wegen Risiken für Kinder und emotional verletzbare Nutzer zeitweise gesperrt; das 2025er Verfahren bestätigt das Verbot.",
@@ -396,7 +593,9 @@
         {
           "name": "Luka Inc. (Replika)",
           "type": "company",
-          "systems": ["Replika AI-Companion"]
+          "systems": [
+            "Replika AI-Companion"
+          ]
         },
         {
           "name": "Garante per la protezione dei dati personali",
@@ -428,14 +627,40 @@
       ]
     },
     "researcher_notes": "High confidence — EDPB-Bestaetigung und IAPP-Coverage. Nicht zu verwechseln mit 'italien-chatgpt-garante-dsgvo-strafe' (OpenAI).",
-    "dedup_hint": "italy | garante | replika | luka inc | 5 million euro fine | age verification | 2025"
+    "dedup_hint": "italy | garante | replika | luka inc | 5 million euro fine | age verification | 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:20.546Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.edpb.europa.eu/news/national-news/2025/ai-italian-supervisory-authority-fines-company-behind-chatbot-replika_en",
+          "http_status": 429,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://iapp.org/news/a/italy-s-dpa-reaffirms-ban-on-replika-over-ai-and-children-s-privacy-concerns",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.44 hits=7 year=2025"
+        },
+        {
+          "url": "https://www.technology.org/2025/05/20/italy-slaps-5-6m-fine-on-replika-ai-for-data-privacy-violations/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "portugal-worldcoin-iris-scan-suspendierung-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Portugal: CNPD suspendiert Worldcoin-Iris-Scan-Operation für 90 Tage wegen Datenerfassung bei Minderjährigen (März 2024)",
       "name_en": "Portugal: CNPD suspends Worldcoin iris-scanning operation for 90 days over collection of minors' data (March 2024)",
@@ -447,7 +672,10 @@
         "lat": 38.7223,
         "lng": -9.1393
       },
-      "incidentType": ["data-misuse", "surveillance"],
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Im März 2024 verhängte Portugals Datenschutzbehörde CNPD (Comissão Nacional de Proteção de Dados) eine 90-tägige Aussetzung der biometrischen Datenerfassung durch Worldcoin (Sam Altmans \"Proof of Personhood\"-Projekt). Anlass waren Beschwerden über die unautorisierte Erfassung von Iris-Scans von Minderjährigen, mangelhafte Information beim Orb-Iris-Scan-Programm (Krypto-Token gegen Biometrie) und weitere Risiken für digitale Persönlichkeitsrechte. Vor der Sperre hatten in Portugal bereits rund 300.000 Menschen ihre Iris scannen lassen, darunter Minderjährige. Spaniens AEPD verhängte zeitgleich ähnliche Sperren.",
@@ -456,7 +684,10 @@
         {
           "name": "Tools for Humanity / Worldcoin Foundation",
           "type": "company",
-          "systems": ["Worldcoin Orb (Iris-Scan)", "World ID"]
+          "systems": [
+            "Worldcoin Orb (Iris-Scan)",
+            "World ID"
+          ]
         },
         {
           "name": "CNPD (Comissão Nacional de Proteção de Dados)",
@@ -495,14 +726,46 @@
       ]
     },
     "researcher_notes": "High confidence. Spaniens AEPD-Sperre koennte separater Kandidat sein (Madrid), aber gemeinsam in dieser Beschreibung vermerkt. Lissabon als CNPD-Sitz gewaehlt.",
-    "dedup_hint": "portugal | worldcoin | cnpd | iris scan | sam altman | biometric | 90 day suspension | march 2024"
+    "dedup_hint": "portugal | worldcoin | cnpd | iris scan | sam altman | biometric | 90 day suspension | march 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:22.694Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.biometricupdate.com/202403/portugal-orders-worldcoin-to-stop-collecting-iris-biometrics-for-90-days",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.82 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.courthousenews.com/portugal-suspends-sam-altmans-worldcoin-over-data-privacy-fears/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.59 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.pymnts.com/news/biometrics/2024/portugal-shuts-down-worldcoin-biometric-data-collection/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.56 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.europarl.europa.eu/doceo/document/E-9-2024-000961_EN.html",
+          "http_status": 202,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 4
+    }
   },
   {
     "candidate_id": "spanien-worldcoin-aepd-iris-sperre-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "Spanien: AEPD verhängt Sofortmaßnahme gegen Worldcoin — Iris-Scan-Stopp wegen Minderjährigen-Daten und nicht-widerrufbarer Einwilligung (März 2024)",
       "name_en": "Spain: AEPD imposes emergency order on Worldcoin — iris-scan halt over minors' data and non-revocable consent (March 2024)",
@@ -514,7 +777,10 @@
         "lat": 40.4168,
         "lng": -3.7038
       },
-      "incidentType": ["data-misuse", "surveillance"],
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Anfang März 2024 ordnete die spanische Datenschutzbehörde AEPD (Agencia Española de Protección de Datos) als Sofortmaßnahme die Einstellung der Worldcoin-Iris-Scan-Aktivitäten in Spanien an. Auslöser waren Beschwerden über die Sammlung biometrischer Daten von Minderjährigen sowie die Tatsache, dass eine einmal erteilte Einwilligung nicht widerrufen werden kann. Worldcoin habe Betroffenen weder das Recht auf Löschung noch auf Widerruf eingeräumt — beides explizit von der DSGVO verlangt. Die Aussetzung war zeitlich befristet, aber rechtlich präzedenzbildend für andere EU-Datenschutzbehörden.",
@@ -523,7 +789,10 @@
         {
           "name": "Tools for Humanity / Worldcoin Foundation",
           "type": "company",
-          "systems": ["Worldcoin Orb (Iris-Scan)", "World ID"]
+          "systems": [
+            "Worldcoin Orb (Iris-Scan)",
+            "World ID"
+          ]
         },
         {
           "name": "AEPD (Agencia Española de Protección de Datos)",
@@ -548,14 +817,34 @@
       ]
     },
     "researcher_notes": "Medium-high confidence. Bezug auf AEPD-Sofortmassnahme ist in mehreren Quellen erwaehnt, aber explizit AEPD-Pressemitteilung noch nicht direkt gefetcht. Ggf. beim Promote zusaetzliche AEPD-Originalquelle ergaenzen.",
-    "dedup_hint": "spain | aepd | worldcoin | iris scan | minors | march 2024"
+    "dedup_hint": "spain | aepd | worldcoin | iris scan | minors | march 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:24.538Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.pymnts.com/news/biometrics/2024/worldcoins-iris-scanning-tech-faces-global-pushback/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.36 hits=7 year=2024"
+        },
+        {
+          "url": "https://www.europarl.europa.eu/doceo/document/E-9-2024-000961_EN.html",
+          "http_status": 202,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "irland-dpc-x-grok-eu-trainingsdaten-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Irland: DPC erzwingt Stopp der Grok-KI-Training-Datenverwendung von X (Twitter) — Erstmaliger §134-Eilantrag vor dem High Court (August 2024)",
       "name_en": "Ireland: DPC forces X (Twitter) to stop using EU user data for Grok AI training — first-ever §134 emergency action before the High Court (August 2024)",
@@ -567,7 +856,9 @@
         "lat": 53.3498,
         "lng": -6.2603
       },
-      "incidentType": ["data-misuse"],
+      "incidentType": [
+        "data-misuse"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 6. August 2024 reichte die irische Datenschutzbehörde DPC erstmals einen Eilantrag nach §134 des irischen Datenschutzgesetzes 2018 vor dem High Court ein, um die Verarbeitung personenbezogener EU/EWR-Nutzerdaten durch X (vormals Twitter) für das Training des Grok-KI-Modells zu stoppen. X hatte ab dem 7. Mai 2024 ohne Information oder Opt-In Nutzer-Posts verwendet. Am 8. August stimmte X zu, die Verarbeitung auszusetzen; am 4. September 2024 wurde das Verfahren eingestellt — X verpflichtete sich dauerhaft, EU-Daten nicht für Grok-Training zu verwenden und die zwischen 7. Mai und 1. August verarbeiteten Daten zu löschen. Erstmaliger Lead-Supervisory-Authority-Eingriff dieser Art.",
@@ -576,7 +867,9 @@
         {
           "name": "X Corp. (vormals Twitter)",
           "type": "company",
-          "systems": ["Grok AI / xAI"]
+          "systems": [
+            "Grok AI / xAI"
+          ]
         },
         {
           "name": "Data Protection Commission (DPC) Irland",
@@ -612,14 +905,40 @@
       ]
     },
     "researcher_notes": "High confidence — zwei offizielle DPC-Pressemitteilungen. Existierender 'irland-dpc-x-grok-eu-trainingsdaten-verfahren' im Index — moeglicherweise Duplikat. Falls Promote: status auf 'duplicate' setzen ODER pruefen ob existierender Eintrag ein anderes Verfahrens-Stadium betrifft. Ich habe als candidate gefuehrt, finale Pruefung beim manuellen Dedup.",
-    "dedup_hint": "ireland | DPC | X twitter | grok | xAI | high court | section 134 | EU training data | august 2024"
+    "dedup_hint": "ireland | DPC | X twitter | grok | xAI | high court | section 134 | EU training data | august 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:26.380Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.dataprotection.ie/en/news-media/press-releases/dpc-welcomes-xs-agreement-suspend-its-processing-personal-data-purpose-training-ai-tool-grok",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-welcomes-conclusion-proceedings-relating-xs-ai-tool-grok",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2024"
+        },
+        {
+          "url": "https://techcrunch.com/2024/09/04/irelands-privacy-watchdog-ends-legal-fight-with-x-over-data-use-for-ai-after-it-agrees-to-permanent-limits/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.74 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "irland-dpc-meta-ai-eu-trainingsdaten-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Irland: DPC stoppt Metas EU-Nutzer-AI-Training auf Facebook/Instagram (Juni 2024), EDPB-Opinion Dezember 2024",
       "name_en": "Ireland: DPC pauses Meta's AI training on EU Facebook/Instagram users (June 2024), EDPB opinion December 2024",
@@ -631,7 +950,9 @@
         "lat": 53.3498,
         "lng": -6.2603
       },
-      "incidentType": ["data-misuse"],
+      "incidentType": [
+        "data-misuse"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Im März 2024 informierte Meta die irische DPC über Pläne, sein Large-Language-Model mit öffentlichen Posts von Facebook- und Instagram-Erwachsenen-Konten im EU/EWR zu trainieren. Nach Beanstandungen der DPC pausierte Meta im Juni 2024 das Training. Die DPC bat im September 2024 das European Data Protection Board (EDPB) um eine formelle GDPR-Opinion; diese erging im Dezember 2024 und definierte allgemeine Kriterien für die GDPR-Konformität von KI-Trainings-Datenverarbeitung. Erst nach erneuter Anpassung (Transparenz-Hinweise, längere Vorabinformation, In-App-Widerspruchsformulare, De-Identifikation) startete Meta am 27. Mai 2025 das KI-Training für EU-Nutzer.",
@@ -640,7 +961,9 @@
         {
           "name": "Meta Platforms Ireland",
           "type": "company",
-          "systems": ["Meta AI / Llama"]
+          "systems": [
+            "Meta AI / Llama"
+          ]
         },
         {
           "name": "Data Protection Commission (DPC) Irland",
@@ -676,14 +999,40 @@
       ]
     },
     "researcher_notes": "High confidence — zwei offizielle DPC-Statements 2024 und 2025. EDPB-Opinion Dezember 2024 ist EU-weit relevant. Nicht zu verwechseln mit Grok/X-Fall.",
-    "dedup_hint": "ireland | DPC | meta | facebook instagram | AI training | EDPB opinion december 2024 | llama"
+    "dedup_hint": "ireland | DPC | meta | facebook instagram | AI training | EDPB opinion december 2024 | llama",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:28.427Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.dataprotection.ie/en/news-media/latest-news/dpcs-engagement-meta-ai",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.55 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.dataprotection.ie/en/news-media/latest-news/dpc-statement-meta-ai",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.87 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.privacylaws.com/news/ireland-hamburg-dpas-take-action-on-meta-s-ai-training-model/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.59 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "uk-home-office-ipic-immigration-ai-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Großbritannien: Geheimer Home-Office-Algorithmus IPIC beeinflusst Abschiebungen von 41.000 Migranten — Enthüllung 2024",
       "name_en": "United Kingdom: Secret Home Office IPIC algorithm influences deportation decisions for 41,000 migrants — disclosure 2024",
@@ -695,7 +1044,10 @@
         "lat": 51.5074,
         "lng": -0.1278
       },
-      "incidentType": ["surveillance", "discrimination"],
+      "incidentType": [
+        "surveillance",
+        "discrimination"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 3,
       "description_de": "Das System IPIC (\"Identify and Prioritise Immigration Cases\") des britischen Home Office, seit 2019/20 im Einsatz, empfiehlt automatisiert Migranten für Abschiebung, Inhaftierung, Entzug von Leistungen oder Übergabe an andere Behörden. Es verarbeitet biometrische Daten, ethnische Herkunft, Strafregister-Einträge und sogar Live-GPS-Daten. Erst nach Monaten juristischen Drucks deckten Privacy International und Open-Rights-Aktivisten 2024 die Existenz auf. Aktuell betrifft das System rund 41.000 Menschen mit drohender Abschiebung. Interne Anleitungen weisen Sachbearbeiter an, IPIC-Empfehlungen ohne Begründung anzunehmen, aber Ablehnungen schriftlich zu rechtfertigen — eingebauter Akzeptanz-Bias. Beachte: GB ist nicht im EU-Scope, aber Pan-Europa.",
@@ -704,7 +1056,9 @@
         {
           "name": "UK Home Office",
           "type": "government",
-          "systems": ["IPIC (Identify and Prioritise Immigration Cases)"]
+          "systems": [
+            "IPIC (Identify and Prioritise Immigration Cases)"
+          ]
         },
         {
           "name": "Privacy International",
@@ -736,14 +1090,40 @@
       ]
     },
     "researcher_notes": "GB ist NICHT in der vorgegebenen Laenderliste (DE/FR/IT/ES/PL/NL/BE/SE/FI/DK/IE/AT/GR/RO/BG/CZ/HU/PT/EE/LV), aber Pan-Europa und sehr relevant. Markiere fuer manuelle Entscheidung: aufnehmen oder fallenlassen. Wenn Scope strikt EU+gelistete Laender, dann ggf. nachreichen in UK-Runde.",
-    "dedup_hint": "uk | united kingdom | home office | IPIC | immigration ai | privacy international | 2024"
+    "dedup_hint": "uk | united kingdom | home office | IPIC | immigration ai | privacy international | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:32.438Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://privacyinternational.org/news-analysis/5452/automating-hostile-environment-uncovering-secretive-home-office-algorithm-heart",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.tasnimnews.com/en/news/2024/11/11/3197698/concerns-rise-over-ai-s-role-in-uk-immigration-enforcement-as-calls-for-transparency-grow",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: fetch failed"
+        },
+        {
+          "url": "https://www.humanrightsresearch.org/post/artificial-intelligence-tool-influences-immigration-enforcement-in-united-kingdom",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "frontex-heron-drohnen-mediterranean-pullback-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Frontex: 50%-Anstieg der Drohnen-Flugstunden 2024 — Heron- und Hermes-900-KI-Überwachung im Mittelmeer ermöglichte 473 Libyen-Pullbacks",
       "name_en": "Frontex: 50% jump in drone flight hours in 2024 — Heron and Hermes 900 AI surveillance in the Mediterranean enabled 473 Libya pullbacks",
@@ -755,7 +1135,10 @@
         "lat": 52.2297,
         "lng": 21.0122
       },
-      "incidentType": ["surveillance", "discrimination"],
+      "incidentType": [
+        "surveillance",
+        "discrimination"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 3,
       "description_de": "Eine Untersuchung von Matthias Monroy und ECRE-Bericht 2024 zeigt: Frontex investierte seit 2017 über 500 Mio. € in Luftüberwachung. Die jährlichen Drohnen-Flugstunden stiegen von 3.307 (2023) auf 4.993 (2024) — plus 50 %. Im Einsatz: Heron-Drohnen (IAI/Airbus, 50 Mio. € Vertrag) und Hermes-900 (Elbit Systems, 50 Mio. €). In 473 dokumentierten Fällen 2024 entdeckte Frontex Flüchtlingsboote vor libyschen oder tunesischen Einheiten und gab Positionen weiter — was zu Pullbacks nach Libyen führte. Eine Bellingcat/Lighthouse/Spiegel/ARD-Joint-Investigation belegt mindestens einen aktiven Push-back-Beitrag im ägäischen Grenzraum. EU-Kommission rief 2024 Dringlichkeitstreffen zu Frontex-Komplizenschaft ein.",
@@ -764,7 +1147,11 @@
         {
           "name": "Frontex (European Border and Coast Guard Agency)",
           "type": "government",
-          "systems": ["Heron UAV (IAI)", "Hermes 900 UAV (Elbit)", "EUROSUR-Aerial Surveillance"]
+          "systems": [
+            "Heron UAV (IAI)",
+            "Hermes 900 UAV (Elbit)",
+            "EUROSUR-Aerial Surveillance"
+          ]
         },
         {
           "name": "Israel Aerospace Industries (IAI)",
@@ -800,14 +1187,40 @@
       ]
     },
     "researcher_notes": "High confidence durch ECRE + Statewatch + Monroy. Existierender 'eu-frontex-ki-grenzen' ist allgemeiner — dieser Kandidat ist spezifisch 2024-Eskalation mit Zahlen (50% Drohnen-Stunden, 473 Pullbacks). Beim Promote ggf. als Update-Event zum Bestandseintrag oder als separate Periode. Sitz Warschau, ggf. Verlagerung in Mittelmeer-Region empfohlen.",
-    "dedup_hint": "frontex | heron drone | hermes 900 | aerial surveillance | libya pullback | mediterranean | 2024 | 50 percent increase"
+    "dedup_hint": "frontex | heron drone | hermes 900 | aerial surveillance | libya pullback | mediterranean | 2024 | 50 percent increase",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:34.470Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://digit.site36.net/2024/10/31/frontex-spends-half-a-billion-on-aerial-surveillance-new-research-shows-more-involvement-in-pullbacks/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.77 hits=8 year=2024"
+        },
+        {
+          "url": "https://ecre.org/frontex-commission-calls-for-urgent-meeting-over-complicity-in-pushbacks-critique-of-100-million-euro-investment-in-drone-surveillance/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.38 hits=8"
+        },
+        {
+          "url": "https://www.statewatch.org/media/documents/analyses/no-354-frontex-drones.pdf",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "germany-isd-ai-disinformation-bundestagswahl-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Deutschland: Koordiniertes AI-Disinformations-Netzwerk auf X gegen Bundestagswahl 2025 (ISD-Untersuchung)",
       "name_en": "Germany: Coordinated AI-driven disinformation network on X targets the 2025 federal election (ISD investigation)",
@@ -816,10 +1229,13 @@
         "name_de": "Berlin, Deutschland",
         "name_en": "Berlin, Germany",
         "country": "DE",
-        "lat": 52.5200,
-        "lng": 13.4050
+        "lat": 52.52,
+        "lng": 13.405
       },
-      "incidentType": ["deepfakes", "political-pressure"],
+      "incidentType": [
+        "deepfakes",
+        "political-pressure"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 3,
       "description_de": "Das Institute for Strategic Dialogue (ISD) dokumentiert für die deutsche Bundestagswahl am 23. Februar 2025 ein koordiniertes Netzwerk von mindestens 48 X-Konten, das ab November 2024 aktiv wurde. Ursprünglich gegen vermeintlichen Antisemitismus gerichtet, schwenkte das Netzwerk im Januar 2025 auf Wahlthemen um: gefälschte Terror-Warnungen, falsche Pädophilie-Vorwürfe gegen deutsche Politiker, KI-generierte Bilder von Massenmigration. Ein sekundäres Netzwerk aus 6.000+ Konten verstärkte die Inhalte binnen Minuten. Posts erreichten von 23.689 (Nov/Dez 2024) auf 65.578 Views (Jan 2025) durchschnittlich. Die AfD nutzte zusätzlich eigenständig KI-Bilder anti-migrantischer Szenarien.",
@@ -856,14 +1272,34 @@
       ]
     },
     "researcher_notes": "Medium-high confidence. Existierender 'deutschland-afd-ki-bilder-bundestagswahl-2025' ueberlappt teilweise — pruefen, ob er auch das koordinierte X-Netzwerk (ISD) abdeckt oder nur die AfD-eigenen KI-Bilder. Falls letzteres, ist dieser Kandidat ergaenzend. Falls beide deckungsgleich → status auf duplicate.",
-    "dedup_hint": "germany | bundestagswahl 2025 | ISD | coordinated disinformation | X twitter network | AfD AI images"
+    "dedup_hint": "germany | bundestagswahl 2025 | ISD | coordinated disinformation | X twitter network | AfD AI images",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:36.315Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.isdglobal.org/digital-dispatch/coordinated-disinformation-network-uses-ai-media-impersonation-to-target-german-election/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.90 hits=8 year=2024"
+        },
+        {
+          "url": "https://lamarr-institute.org/blog/2024-elections-deepfakes/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.53 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    }
   },
   {
     "candidate_id": "spanien-bosco-civio-algorithmus-court-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Spanien: BOSCO-Algorithmus für Strom-Sozialtarif — Audiencia Nacional verweigert 2024 erneut Quellcode-Offenlegung, Supreme Court kippt das 2025",
       "name_en": "Spain: BOSCO algorithm for electricity social tariff — National Court again refuses source-code disclosure in 2024, Supreme Court overturns in 2025",
@@ -875,7 +1311,10 @@
         "lat": 40.4168,
         "lng": -3.7038
       },
-      "incidentType": ["discrimination", "censorship"],
+      "incidentType": [
+        "discrimination",
+        "censorship"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Der BOSCO-Algorithmus des spanischen Ministeriums für ökologische Transition entscheidet über die Vergabe des \"bono social\" (Strom-Sozialtarif). 2018 zeigte die NGO Civio: Tausende Berechtigte erhalten die Hilfe nicht. Am 30. April 2024 lehnte die Audiencia Nacional erneut ab, den Quellcode offenzulegen — Begründung: Urheberrecht. Civio rief im Februar 2025 den Tribunal Supremo (Oberster Gerichtshof) an. Im September 2025 entschied dieser zugunsten von Civio: Behörden müssen die Funktionsweise von KI-/Algorithmus-Entscheidungssystemen \"verständlich\" erklären. Präzedenzfall für algorithmische Transparenz in der EU.",
@@ -884,7 +1323,9 @@
         {
           "name": "Ministerio para la Transición Ecológica",
           "type": "government",
-          "systems": ["BOSCO (Bono Social aid eligibility algorithm)"]
+          "systems": [
+            "BOSCO (Bono Social aid eligibility algorithm)"
+          ]
         },
         {
           "name": "Civio Foundation",
@@ -927,14 +1368,46 @@
       ]
     },
     "researcher_notes": "High confidence — mehrere unabhaengige Quellen (Civio Pressrooms, Tech-Litigation Repository, AlgorithmWatch). Bestehende 'spanien-ki-arbeitsmarkt-algorithmus' / 'spanien-ki-sozialhilfe-diskriminierung' sind ANDERE Algorithmen — kein Duplikat.",
-    "dedup_hint": "spain | BOSCO | civio | bono social | electricity subsidy | audiencia nacional | tribunal supremo | 2024 2025"
+    "dedup_hint": "spain | BOSCO | civio | bono social | electricity subsidy | audiencia nacional | tribunal supremo | 2024 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:37.752Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://civio.es/novedades/2024/05/08/spanish-national-court-rejects-opening-source-code-for-electricity-subsidy-applications/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.54 hits=8 year=2024"
+        },
+        {
+          "url": "https://tech-litigation.com/case/spain-national-court-of-justice-30th-april-2024-bosco-case/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.54 hits=8 year=2024"
+        },
+        {
+          "url": "https://civio.es/novedades/2025/09/18/civio-pulls-back-the-curtain-on-public-algorithms-spains-supreme-court-orders-the-government-to-release-boscos-source-code/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2024"
+        },
+        {
+          "url": "https://algorithmwatch.org/en/spain-legal-fight-over-an-algorithms-code/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.34 hits=8"
+        }
+      ],
+      "match_count": 4,
+      "sources_count": 4
+    }
   },
   {
     "candidate_id": "poland-pl-belarus-grenze-ai-surveillance-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-eu-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Polen: 14.266 Pushbacks an der Belarus-Grenze 2024 — KI-Akustik-Sensoren, Wärmebild-Drohnen und 18 Mio. € Notmittel begleiten die Mauer",
       "name_en": "Poland: 14,266 pushbacks at the Belarus border in 2024 — AI acoustic sensors, thermal-imaging drones and €18 million in emergency funds reinforce the wall",
@@ -943,10 +1416,13 @@
         "name_de": "Polnisch-belarussische Grenze (Białowieża/Podlachien)",
         "name_en": "Polish-Belarusian border (Białowieża/Podlasie)",
         "country": "PL",
-        "lat": 52.7000,
+        "lat": 52.7,
         "lng": 23.8667
       },
-      "incidentType": ["surveillance", "discrimination"],
+      "incidentType": [
+        "surveillance",
+        "discrimination"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 3,
       "description_de": "Die polnische Grenzwache räumte für 2024 14.266 Pushbacks an der Belarus-Grenze ein; \"We Are Monitoring\" zählt 3.183 dokumentierte Fälle mit 1.555 Betroffenen und 703 Berichten über Gewalt durch Grenzbeamte. Die 200 km lange 5-Meter-Stahlmauer wird durch Vibrationssensoren, integrierte elektronische Überwachungssysteme und 18 Mio. € Innenministeriums-Notmittel für Bodenradar, KI-Akustik-Arrays und Wärmebild-Drohnen ergänzt. Die EU stellte 170 Mio. € für PL, FI, EE, LV, LT und NO bereit. Human Rights Watch dokumentierte im Dezember 2024 brutale Pushbacks an der Belarus-Grenze.",
@@ -955,7 +1431,11 @@
         {
           "name": "Polnische Grenzwache (Straż Graniczna)",
           "type": "government",
-          "systems": ["AI Acoustic Arrays", "Wärmebild-Drohnen", "Bodenradar"]
+          "systems": [
+            "AI Acoustic Arrays",
+            "Wärmebild-Drohnen",
+            "Bodenradar"
+          ]
         },
         {
           "name": "Polnisches Innenministerium",
@@ -987,6 +1467,32 @@
       ]
     },
     "researcher_notes": "High confidence fuer Pushback-Zahlen und Gewalt (HRW + WAM). KI-Komponenten (akustische Arrays, Drohnen) sind in WAM/visahq Berichten genannt; die spezifische KI-Modellierung wird nicht detailliert. Geo-Koordinaten: Bialowieza als symbolisches Zentrum der pushback-Berichte.",
-    "dedup_hint": "poland | belarus border | pushback | 14266 | AI acoustic | thermal drones | 2024 | strazgraniczna"
+    "dedup_hint": "poland | belarus border | pushback | 14266 | AI acoustic | thermal drones | 2024 | strazgraniczna",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:17:42.058Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://wearemonitoring.org.pl/wp-content/uploads/2025/04/WAM-summary-2024.pdf",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.03"
+        },
+        {
+          "url": "https://www.hrw.org/news/2024/12/10/poland-brutal-pushbacks-belarus-border",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.42 hits=8 year=2024"
+        },
+        {
+          "url": "https://balkaninsight.com/2024/10/01/poland-belarus-border-under-tusk-patriot-patrols-slashed-tyres-despair/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.42 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   }
 ]

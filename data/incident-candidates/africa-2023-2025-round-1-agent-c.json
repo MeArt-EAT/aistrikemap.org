@@ -4,7 +4,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Kenia: Berufungsgericht erlaubt 185 Facebook-Moderator:innen Sammelklage gegen Meta — Eskalation des Sama-Falls",
       "name_en": "Kenya: Court of Appeal lets 185 Facebook moderators take Meta to trial — Sama case escalates",
@@ -16,7 +16,9 @@
         "lat": -1.2921,
         "lng": 36.8219
       },
-      "incidentType": ["labor-exploitation"],
+      "incidentType": [
+        "labor-exploitation"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Im September 2024 erlaubte das kenianische Berufungsgericht 185 ehemaligen Facebook- und Instagram-Content-Moderator:innen, Meta wegen unrechtmäßiger Entlassung und Schwarzlistung vor Gericht zu bringen — nach 18-monatigem Rechtsstreit, in dem Meta argumentiert hatte, kenianische Gerichte hätten keine Zuständigkeit. Die Worker, die für den Outsourcing-Partner Sama bis zu acht Stunden täglich extrem belastendes Material moderierten, fordern 1,6 Milliarden US-Dollar Entschädigung. Der Fall ergänzt die bestehende Akte zur Sama-Ausbeutung im Bestand um eine entscheidende juristische Wende.",
@@ -25,12 +27,16 @@
         {
           "name": "Meta Platforms",
           "type": "private-company",
-          "systems": ["Facebook content moderation queue"]
+          "systems": [
+            "Facebook content moderation queue"
+          ]
         },
         {
           "name": "Sama (Samasource)",
           "type": "private-company",
-          "systems": ["Nairobi moderation hub"]
+          "systems": [
+            "Nairobi moderation hub"
+          ]
         }
       ],
       "sources": [
@@ -58,14 +64,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestehender Bestandsfall 'kenya-content-moderation' bezieht sich auf die ursprüngliche Ausbeutung; dieser Eintrag dokumentiert die juristische Eskalation 2024. Vor Promotion ggf. mit Bestand zusammenführen statt parallel führen.",
-    "dedup_hint": "kenya | meta | sama | content moderation | court of appeal | 2024"
+    "dedup_hint": "kenya | meta | sama | content moderation | court of appeal | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:06.803Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.foxglove.org.uk/2024/09/23/facebook-content-moderators-kenya-meta-appeal/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.business-humanrights.org/en/latest-news/kenya-appellate-court-rules-that-meta-can-be-sued-in-kenya-over-poor-working-conditions-and-unlawful-dismissal/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.72 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.computerweekly.com/feature/Kenyan-workers-win-High-Court-appeal-to-take-Meta-to-trial",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.72 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "kenia-worldcoin-high-court-verbot-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Kenia: High Court erklärt Worldcoin-Iris-Scans für verfassungswidrig und ordnet Löschung der Daten von 300.000 Bürger:innen an",
       "name_en": "Kenya: High Court declares Worldcoin iris scans unconstitutional, orders deletion of biometric data of 300,000 citizens",
@@ -77,7 +109,10 @@
         "lat": -1.2921,
         "lng": 36.8219
       },
-      "incidentType": ["surveillance", "data-misuse"],
+      "incidentType": [
+        "surveillance",
+        "data-misuse"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Am 5. Mai 2025 erklärte Richterin Roselyne Aburili am kenianischen High Court die Erhebung und Verarbeitung biometrischer Daten durch Worldcoin (Tools for Humanity) für verfassungswidrig und ordnete die Löschung aller Iris-Scans und Gesichtsbilder von über 300.000 Kenianer:innen innerhalb von sieben Tagen unter Aufsicht der Datenschutzbehörde an. Das Gericht stellte fest, dass Worldcoin gegen Kenias Data Protection Act verstoßen hatte — kein gültiges Einverständnis, keine Datenschutz-Folgenabschätzung. Das Urteil unterminierte die Worldcoin-Pläne, 2024 in Kenia wieder zu starten.",
@@ -86,7 +121,10 @@
         {
           "name": "Tools for Humanity / Worldcoin Foundation",
           "type": "private-company",
-          "systems": ["Worldcoin Orb", "World ID"]
+          "systems": [
+            "Worldcoin Orb",
+            "World ID"
+          ]
         },
         {
           "name": "High Court of Kenya",
@@ -122,14 +160,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand führt 'kenia-worldcoin-iris-scan' für die ursprüngliche Sammlung — dieses Urteil 2025 ist die juristische Konsequenz und sollte als separater Folge-Incident oder als Update am Bestandsfall promoted werden.",
-    "dedup_hint": "kenya | worldcoin | tools for humanity | high court | aburili | 2025 | data deletion"
+    "dedup_hint": "kenya | worldcoin | tools for humanity | high court | aburili | 2025 | data deletion",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:10.799Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://iclg.com/news/22583-kenyan-high-court-delivers-landmark-biometric-data-ruling",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.74 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.theblock.co/post/353182/kenya-court-rules-against-sam-altmans-world-orders-data-deletion-and-halts-biometrics-collection",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://cipit.strathmore.edu/kenya-high-courts-worldcoin-determination-upholding-consent-accountability-and-data-sovereignty-in-biometric-data-processing/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.70 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "suedafrika-sassa-srd-grant-algorithmus-ausschluss-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Südafrika: SASSA-SRD-Algorithmus verweigert 98 Prozent der Einsprüche — High Court erklärt Sozialhilfe-Regeln teilweise rechtswidrig",
       "name_en": "South Africa: SASSA SRD algorithm denies 98 percent of appeals — High Court rules grant regulations partly unlawful",
@@ -141,7 +205,10 @@
         "lat": -25.7479,
         "lng": 28.2293
       },
-      "incidentType": ["discrimination", "data-misuse"],
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Die südafrikanische Sozialhilfeagentur SASSA nutzt einen automatisierten Verifizierungs-Algorithmus, um Berechtigung für den 370-Rand-Sozialhilfegrant (SRD) zu prüfen — mit dem Ergebnis, dass laut SASSA-eigenen Daten im Haushaltsjahr 2024 98 Prozent von rund zehn Millionen Einsprüchen abgelehnt wurden. Das Institute for Economic Justice und PayTheGrants brachten den Fall 2024 vor das Pretoria High Court; im Januar 2025 erklärte das Gericht mehrere SRD-Regelungen für rechtswidrig — darunter die rein Online-Antragsstellung, die Einkommensschwelle von 624 Rand und den Wert des Grants. Der Algorithmus wurde wegen Falsch-Klassifizierung kleiner Bargeld-Transfers (z.B. Familienhilfen) als Einkommen kritisiert.",
@@ -150,7 +217,10 @@
         {
           "name": "South African Social Security Agency (SASSA)",
           "type": "government",
-          "systems": ["SRD verification algorithm", "Automated bank-data check"]
+          "systems": [
+            "SRD verification algorithm",
+            "Automated bank-data check"
+          ]
         },
         {
           "name": "Institute for Economic Justice (IEJ)",
@@ -182,14 +252,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand hat 'suedafrika-ki-ungleichheit-scoring' — bitte vor Promotion abgleichen, ob das den SASSA-Fall bereits abdeckt oder ob das ein separater Komplex ist. Genaue Court-Order-Quelle (z.B. SAFLII) beim Promote nachschlagen.",
-    "dedup_hint": "south africa | sassa | srd | algorithm | grant | iej | pretoria high court | 2024 2025"
+    "dedup_hint": "south africa | sassa | srd | algorithm | grant | iej | pretoria high court | 2024 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:13.773Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.dailymaverick.co.za/article/2024-10-31-iej-legal-action-targets-flaws-in-social-relief-of-distress-grant-distribution/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.context.news/digital-divides/how-is-south-africas-algorithm-failing-the-poor",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.68 hits=8 year=2024"
+        },
+        {
+          "url": "https://borgenproject.org/south-african-grant-algorithms/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.53 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "mosambik-internet-shutdown-wahl-protest-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Mosambik: Internet- und Social-Media-Sperren nach umstrittener Wahl 2024 — 315 Tote bei Protesten dokumentiert",
       "name_en": "Mozambique: Internet and social media throttling after disputed 2024 election — 315 protest deaths documented",
@@ -201,7 +297,11 @@
         "lat": -25.9692,
         "lng": 32.5732
       },
-      "incidentType": ["censorship", "surveillance", "political-pressure"],
+      "incidentType": [
+        "censorship",
+        "surveillance",
+        "political-pressure"
+      ],
       "candidate_severity": 5,
       "candidate_verification": 4,
       "description_de": "Nach der Verkündung am 24. Oktober 2024, dass Daniel Chapo und die Regierungspartei FRELIMO die Wahlen gewonnen hätten, kam es ab dem 25. Oktober landesweit zu Internetstörungen — nachdem Oppositionskandidat Venâncio Mondlane auf Facebook zu nationalen Protesten aufgerufen hatte. Internetprovider Vodacom Mozambique, Tmcel, TV Cabo und Movitel blockierten oder drosselten Facebook, Instagram und WhatsApp zu Schlüsselmomenten der Proteste. Laut der zivilgesellschaftlichen Organisation Plataforma DECIDE wurden zwischen dem 21. Oktober 2024 und dem 16. Januar 2025 rund 315 Menschen getötet und über 3.000 verletzt; Human Rights Watch und Amnesty International dokumentierten den Crackdown.",
@@ -245,14 +345,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand hat 'mosambik-internet-manipulation' für Cabo-Delgado-Konflikt — dieser Wahl-Shutdown 2024 ist ein eigener Vorgang und sollte vermutlich als separater Incident promotet werden, ggf. mit Querverweis.",
-    "dedup_hint": "mozambique | maputo | election | shutdown | mondlane | chapo | 2024"
+    "dedup_hint": "mozambique | maputo | election | shutdown | mondlane | chapo | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:20.940Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.hrw.org/news/2024/11/06/mozambique-post-election-internet-restrictions-hinder-rights",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.amnesty.org/en/latest/research/2025/04/mozambique-police-protest-crackdown/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.79 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.accessnow.org/press-release/keepiton-mozambique-authorities-must-respect-human-rights/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.51 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "tansania-internet-shutdown-wahl-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Tansania: Sechs-tägiger landesweiter Internet-Shutdown bei Wahl 2025 — UN-Expert:innen verurteilen tödlichen Crackdown",
       "name_en": "Tanzania: Six-day nationwide internet shutdown during 2025 election — UN experts condemn lethal crackdown",
@@ -261,10 +387,14 @@
         "name_de": "Dodoma, Tansania",
         "name_en": "Dodoma, Tanzania",
         "country": "TZ",
-        "lat": -6.1630,
+        "lat": -6.163,
         "lng": 35.7516
       },
-      "incidentType": ["censorship", "surveillance", "political-pressure"],
+      "incidentType": [
+        "censorship",
+        "surveillance",
+        "political-pressure"
+      ],
       "candidate_severity": 5,
       "candidate_verification": 4,
       "description_de": "Vom 29. Oktober bis 3. November 2025 verhängte Tansania den längsten landesweiten wahlbezogenen Internet-Shutdown der Geschichte des Landes — vor und während der Generalwahlen waren X, WhatsApp und Instagram unzugänglich, später kam ein vollständiger Internet-Blackout hinzu. Im Mai 2025 hatten die Behörden bereits 80.000 Websites, Social-Media-Konten, Blogs und Plattformen blockiert; im Oktober wurden TikTok Live und Instagram Live deaktiviert. UN-Expert:innen und die Afrikanische Kommission für Menschenrechte verurteilten den Blackout und den begleitenden tödlichen Crackdown auf Wahlbeobachter:innen, Journalist:innen und Aktivist:innen.",
@@ -304,14 +434,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand hat 'tansania-internet-kontrolle-wahlen' für frühere Vorgänge — dieser 2025-Vorfall ist neu und sollte als separater Eintrag oder als Update behandelt werden.",
-    "dedup_hint": "tanzania | election | shutdown | 2025 | un | achpr"
+    "dedup_hint": "tanzania | election | shutdown | 2025 | un | achpr",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:23.285Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.ohchr.org/en/press-releases/2025/12/tanzania-un-experts-condemn-post-election-lethal-crackdown-and-digital",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://achpr.au.int/en/news/press-releases/2025-11-01/nationwide-internet-outage-election-day-tanzania",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.context.news/digital-rights/how-an-internet-blackout-affected-tanzanias-election",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.50 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "sudan-rsf-ki-deepfake-burhan-bashir-2023-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Sudan: RSF-nahe Akteure setzen KI-Deepfakes von Bashir und Burhan als Waffe im Bürgerkrieg ein",
       "name_en": "Sudan: RSF-aligned actors weaponise AI deepfakes of Bashir and Burhan in the civil war",
@@ -323,7 +479,11 @@
         "lat": 15.5007,
         "lng": 32.5599
       },
-      "incidentType": ["deepfakes", "political-pressure", "censorship"],
+      "incidentType": [
+        "deepfakes",
+        "political-pressure",
+        "censorship"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Ab Oktober 2023 veröffentlichten RSF-nahe Quellen auf einem TikTok-Kanal namens 'The Voice of Sudan' KI-generierte Tonaufnahmen des Ex-Präsidenten Omar al-Bashir, die General al-Burhan kritisierten. Im März 2024 wurde eine angebliche Tonaufnahme veröffentlicht, in der al-Burhan die Massentötung von Zivilist:innen anordnet — sie wurde über 230.000-mal gesehen und von Politiker:innen geteilt. Ebenfalls im März 2024 zeigte ein KI-generiertes Audio ein angebliches Geheimtreffen zwischen RSF-Führern und der Freedom-and-Change-Koalition zur Planung eines Putsches. BBC, Deutsche Welle und AFP entlarvten zudem KI-generierte Bilder aus El-Fasher. Das Land ist in der Region das wohl prominenteste Beispiel für die Bewaffnung generativer KI durch nicht-staatliche Akteure.",
@@ -363,14 +523,40 @@
       ]
     },
     "researcher_notes": "Confidence high für Existenz mehrerer Deepfake-Vorfälle (mehrere unabhängige Quellen). Bestand hat 'sudan-internet-shutdown-krieg' — dieser KI-Deepfake-Komplex ist ein eigener Vorgang. Country-Code 'SD' korrekt setzen beim Promote (nicht SS — siehe Notiz: ISO Sudan = SD).",
-    "dedup_hint": "sudan | rsf | bashir | burhan | deepfake | tiktok | voice of sudan | 2023 2024"
+    "dedup_hint": "sudan | rsf | bashir | burhan | deepfake | tiktok | voice of sudan | 2023 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:24.829Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://africanarguments.org/2024/10/the-deepfake-is-a-powerful-weapon-in-the-war-in-sudan/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.70 hits=8 year=2023"
+        },
+        {
+          "url": "https://allafrica.com/stories/202410240010.html",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://eupoliticalreport.com/sudan-bbc-deutsche-welle-and-agence-france-presse-expose-ai-generated-images-from-el-fasher/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.47 hits=7 year=2023"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "suedafrika-trump-zuma-mk-deepfake-wahl-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "Südafrika: Duduzile Zuma-Sambudla verbreitet Trump-Deepfake zur Wahl-Werbung für MK-Partei",
       "name_en": "South Africa: Duduzile Zuma-Sambudla shares Trump deepfake endorsing MK party for the 2024 vote",
@@ -382,7 +568,10 @@
         "lat": -26.2041,
         "lng": 28.0473
       },
-      "incidentType": ["deepfakes", "political-pressure"],
+      "incidentType": [
+        "deepfakes",
+        "political-pressure"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 9. März 2024 verbreitete Duduzile Zuma-Sambudla, Tochter des Ex-Präsidenten Jacob Zuma und prominente Stimme der neuen uMkhonto-weSizwe-Partei (MK), auf X ein Deepfake-Video, in dem der ehemalige US-Präsident Donald Trump scheinbar alle Südafrikaner:innen aufruft, am 29. Mai für MK zu stimmen. Die Audioqualität war so hochwertig, dass nicht alle Nutzer:innen es als Fake erkannten. Die südafrikanische Finanzmarktaufsicht warnte zudem 2024 vor Deepfake-Videos von Präsident Cyril Ramaphosa, die für betrügerische Investment-Schemes eingesetzt wurden.",
@@ -422,14 +611,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand hat keine SA-spezifischen Deepfake-Wahl-Incidents. Schwere: 3 (kein dokumentierter Massen-Effekt, aber prominente Akteurin + State-Capture-Kontext).",
-    "dedup_hint": "south africa | trump | deepfake | mk party | duduzile | zuma | 2024 election"
+    "dedup_hint": "south africa | trump | deepfake | mk party | duduzile | zuma | 2024 election",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:28.100Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://allafrica.com/stories/202403290300.html",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://africacheck.org/fact-checks/blog/expectations-versus-reality-use-generative-ai-south-africas-2024-election",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.moonstone.co.za/ramaphosa-deepfake-scam-highlights-rising-threat-of-ai-driven-investment-fraud/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.30 hits=6"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "kenia-ruto-finance-bill-deepfake-ueberwachung-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Kenia: KI-Deepfakes und gedrosseltes Internet bei #RejectFinanceBill-Protesten — Ruto-Regierung im Verdacht der illegalen Überwachung",
       "name_en": "Kenya: AI deepfakes and throttled mobile data during #RejectFinanceBill protests — Ruto government accused of illegal surveillance",
@@ -441,7 +656,12 @@
         "lat": -1.2921,
         "lng": 36.8219
       },
-      "incidentType": ["surveillance", "deepfakes", "censorship", "political-pressure"],
+      "incidentType": [
+        "surveillance",
+        "deepfakes",
+        "censorship",
+        "political-pressure"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Während der Proteste gegen das Finance Bill 2024 wurden in Kenia am 25. Juni 2024 — einen Tag nach der öffentlichen Zusicherung der Communications Authority, das Internet nicht zu drosseln — die mobilen Datengeschwindigkeiten in Nairobi, Mombasa und Kisumu um rund 40 Prozent reduziert, was Live-Streams und verschlüsselte Kommunikation behinderte. Parallel dokumentierten DFRLab und Global Voices ein koordiniertes pro-Regierungs-Netzwerk auf X, das mit Deepfake-Face-Swaps Oppositionelle diskreditierte und KI-generierte Bilder zur Verleumdung der Demonstrierenden verwendete. Ab 2025 zeigte Citizen Lab, dass auf dem Telefon des Aktivisten Boniface Mwangi nach den Protesten Cellebrite-Spyware installiert wurde; Aktivist:innen wie Billy Mwangi wurden für KI-Satire-Posts entführt.",
@@ -458,7 +678,9 @@
         {
           "name": "Cellebrite",
           "type": "private-company",
-          "systems": ["Cellebrite UFED"]
+          "systems": [
+            "Cellebrite UFED"
+          ]
         }
       ],
       "sources": [
@@ -486,14 +708,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bündelt drei zusammenhängende Phänomene: Internet-Drosselung, Deepfake-Smear-Kampagne, Spyware/Abductions. Beim Promote ggf. in zwei Incidents splitten.",
-    "dedup_hint": "kenya | ruto | finance bill | 2024 | deepfake | throttling | cellebrite | mwangi | dfrlab"
+    "dedup_hint": "kenya | ruto | finance bill | 2024 | deepfake | throttling | cellebrite | mwangi | dfrlab",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:29.635Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://dfrlab.org/2024/12/20/ai-tools-used-in-kenya-to-discredit-protesters-and-allege-russian-connections/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.48 hits=8 year=2024"
+        },
+        {
+          "url": "https://globalvoices.org/2025/07/12/how-kenyans-are-using-ai-during-protests/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.tuko.co.ke/politics/627494-william-rutos-govt-spot-alleged-illegal-spying-civilians-2024-protests/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "nigeria-nimc-nin-biometric-datenleak-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Nigeria: NIMC-Datenleck — Identitäts- und Biometriedaten von rund 100 Millionen Nigerianer:innen über Dritt-Portale wie expressverify.com verkauft",
       "name_en": "Nigeria: NIMC data breach — identity and biometric data of around 100 million Nigerians sold via third-party portals such as expressverify.com",
@@ -505,7 +753,10 @@
         "lat": 9.0765,
         "lng": 7.3986
       },
-      "incidentType": ["data-misuse", "surveillance"],
+      "incidentType": [
+        "data-misuse",
+        "surveillance"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Im März 2024 berichteten nigerianische Medien, dass Webseiten wie expressverify.com, idfinder.com.ng, verify.ng, championtech.com.ng, trustyonline.com und anyverify.com gegen Bezahlung National-Identity-Number- und persönliche Daten aus der NIMC-Datenbank (National Identity Management Commission) zugänglich machten — laut TheCable wurden so Daten von rund 100 Millionen Nigerianer:innen exponiert. NIMC sperrte daraufhin lizenzierte Agenten-Zugänge zur NIN-Datenbank; die Nigerian Data Protection Commission (NDPC) leitete eine Untersuchung ein, die laut TechCabal zu Strafen führen könnte. Bis 2025 berichtete Biometric Update, dass persönliche Identitätsdaten weiterhin im Darknet gehandelt würden.",
@@ -514,7 +765,9 @@
         {
           "name": "National Identity Management Commission (NIMC)",
           "type": "government",
-          "systems": ["NIN database"]
+          "systems": [
+            "NIN database"
+          ]
         },
         {
           "name": "expressverify.com and affiliated verification sites",
@@ -550,14 +803,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand führt keine NIMC-Datenpanne. Zahl 100 Mio ist TheCable-Schätzung; bei Promotion abklären, ob NDPC-Untersuchung 2024/2025 die Schätzung bestätigt hat.",
-    "dedup_hint": "nigeria | nimc | nin | data breach | expressverify | ndpc | 2024"
+    "dedup_hint": "nigeria | nimc | nin | data breach | expressverify | ndpc | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:32.407Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.thecable.ng/revealed-how-nimc-exposed-private-data-of-100m-nigerians-to-dubious-verification-agents/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.55 hits=8 year=2024"
+        },
+        {
+          "url": "https://techcabal.com/2024/04/25/nimc-nin-breach/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.58 hits=8 year=2024"
+        },
+        {
+          "url": "https://nairametrics.com/2024/03/29/data-breach-nimc-restricts-licensed-agents-access-to-nin-database/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.64 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "suedafrika-vumacam-anpr-johannesburg-cctv-rechtsstreit-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Südafrika: Vumacam-Überwachungsnetz in Johannesburg — 6.600 KI-Kameras, ANPR und Bewegungs-KI lösen täglich 28.000 Alarme aus",
       "name_en": "South Africa: Vumacam surveillance network in Johannesburg — 6,600 AI cameras, ANPR and movement AI trigger 28,000 alerts daily",
@@ -569,7 +848,10 @@
         "lat": -26.2041,
         "lng": 28.0473
       },
-      "incidentType": ["surveillance", "predictive-policing"],
+      "incidentType": [
+        "surveillance",
+        "predictive-policing"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Das private Vumacam-Netzwerk betreibt in Johannesburg über 6.600 vernetzte Kameras, die mit Automatic Number Plate Recognition und unüberwachter KI-basierter Bewegungserkennung arbeiten — täglich werden rund 28.000 'Vehicles of Interest'-Alarme erzeugt; in der ersten Hälfte 2024 lösten 14.255 Alarme 783 Polizei-Interventionen, 370 Festnahmen und 335 beschlagnahmte Fahrzeuge aus. Im Oktober 2024 verpflichtete das South Gauteng High Court die Johannesburg Roads Agency, Vumacams Genehmigungsanträge zu bearbeiten; im Februar 2025 erließ die Stadt eine umstrittene CCTV-Verordnung, gegen die OUTA klagt. Forscher:innen und der Legal Resources Centre warnen vor 'digitalem Apartheid' und Bias gegenüber schwarzen Bewohner:innen — Vumacam selbst hat Gesichtserkennung bisher nicht aktiviert, doch die Integrated Intelligence Operation Centre der Stadt testet sie.",
@@ -578,7 +860,11 @@
         {
           "name": "Vumacam (Pty) Ltd",
           "type": "private-company",
-          "systems": ["AI camera network", "ANPR", "movement analytics"]
+          "systems": [
+            "AI camera network",
+            "ANPR",
+            "movement analytics"
+          ]
         },
         {
           "name": "City of Johannesburg / Integrated Intelligence Operation Centre",
@@ -610,14 +896,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand führt keinen Vumacam-Fall. Vorsicht beim Schweregrad: dokumentierte direkte Schäden (Falsch-Identifikation) sind in den genutzten Quellen nicht hart belegt — Severity 3 = Strukturrisiko.",
-    "dedup_hint": "south africa | johannesburg | vumacam | cctv | anpr | digital apartheid | 2024"
+    "dedup_hint": "south africa | johannesburg | vumacam | cctv | anpr | digital apartheid | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:41.433Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.itweb.co.za/content/Kjlyr7wdroAMk6am",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.58 hits=8"
+        },
+        {
+          "url": "https://lrc.org.za/wp-content/uploads/2024/11/The-Use-of-Facial-Recognition-Technology-in-South-Africa_FINAL.pdf",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        },
+        {
+          "url": "https://techcentral.co.za/vumacam-slams-joburg-plan-to-appeal-cctv-court-judgment/176958/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "sambia-cyber-security-act-massenueberwachung-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Sambia: Cyber Security Act 2024 ermöglicht Echtzeit-Überwachung und Datenlokalisierung — Civil Society warnt vor Repressions-Re-Branding",
       "name_en": "Zambia: Cyber Security Act 2024 enables real-time surveillance and data localisation — civil society warns of repression re-brand",
@@ -629,7 +941,11 @@
         "lat": -15.3875,
         "lng": 28.3228
       },
-      "incidentType": ["surveillance", "censorship", "political-pressure"],
+      "incidentType": [
+        "surveillance",
+        "censorship",
+        "political-pressure"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Im Dezember 2024 verabschiedete Sambia den Cyber Security Bill und den Cyber Crimes Bill, die den Act von 2021 ersetzen. Section 22 des Cyber Security Act erlaubt Echtzeit-Überwachung und Kommunikationsabhörung ohne ausreichende richterliche Kontrolle und gibt diese Befugnisse einer Vielzahl staatlicher Akteure (Polizei, Drug Enforcement Commission, Anti-Corruption Commission, vom Präsidenten benannte Personen). Das Gesetz schreibt zudem strenge Datenlokalisierung 'kritischer' Informationen vor — was Social-Media-Plattformen zwingen kann, Daten lokal vorzuhalten. CIPESA, Global Network Initiative, Transparency International Zambia und das Journal of Democracy warnten, dass das Gesetz keinerlei Schutzmechanismen wie Verhältnismäßigkeit oder Transparenz enthält.",
@@ -669,14 +985,40 @@
       ]
     },
     "researcher_notes": "Confidence high — Gesetz und Civil-Society-Kritik mehrfach unabhängig belegt. Severity 4 weil noch keine dokumentierten konkreten Massenüberwachungs-Vorfälle berichtet, aber strukturell extrem weitreichend.",
-    "dedup_hint": "zambia | cyber security act | cipesa | gni | 2024 | surveillance"
+    "dedup_hint": "zambia | cyber security act | cipesa | gni | 2024 | surveillance",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:49.198Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://cipesa.org/2024/12/zambia-cyber-security-bill-2024/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=8 year=2024"
+        },
+        {
+          "url": "https://globalnetworkinitiative.org/gni-statement-on-zambias-new-cyber-laws-a-blow-to-freedom-of-expression-and-privacy/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.68 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.journalofdemocracy.org/online-exclusive/how-zambias-cyber-laws-rebrand-repression/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "drc-ki-desinformation-m23-konflikt-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "DR Kongo: KI-gestützte Desinformation und Hassrede im M23-Konflikt — UN-Sicherheitsrat warnt vor Eskalation",
       "name_en": "DR Congo: AI-fuelled disinformation and hate speech in the M23 conflict — UN Security Council warns of escalation",
@@ -688,7 +1030,11 @@
         "lat": -1.6792,
         "lng": 29.2228
       },
-      "incidentType": ["deepfakes", "political-pressure", "censorship"],
+      "incidentType": [
+        "deepfakes",
+        "political-pressure",
+        "censorship"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 3,
       "description_de": "Während der erneuten M23-Offensive im Osten der DR Kongo eskalierte 2024 die KI-gestützte Desinformation: das Africa Defense Forum und das Africa Center for Strategic Studies dokumentierten verfälschte Bilder und Deepfakes, die ethnische Hassrede gegen Kinyarwanda-Sprecher:innen und Tutsi anheizten; der UN-Sicherheitsrat (Resolution-Briefings 2024/2025) verurteilte explizit die Zunahme von Mis- und Desinformation rund um den DRC-Konflikt und betonte das Risiko für MONUSCO-Operationen. Journalist:innen wird sowohl von der Regierung als auch von M23 die Berichterstattung untersagt; Trust and Safety Foundation dokumentierte zudem KI-generierte Desinformations-Kampagnen aus dem COVID-19-Kontext, die in den Konflikt-Narrativen reaktiviert wurden.",
@@ -728,14 +1074,40 @@
       ]
     },
     "researcher_notes": "Confidence medium-high für strukturelles AI-Disinfo-Phänomen, lower für konkrete Einzel-Deepfakes (Quellen verweisen auf Doctored Images, ohne forensisch belegte spezifische Beispiele zu nennen). Beim Promote: ein konkretes Deepfake-Beispiel aus Reuters/AFP Fact Check nachsuchen.",
-    "dedup_hint": "drc | congo | m23 | goma | disinformation | deepfake | un security council | 2024"
+    "dedup_hint": "drc | congo | m23 | goma | disinformation | deepfake | un security council | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:51.446Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://adf-magazine.com/2024/07/experts-warn-of-ai-powered-disinformation/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.46 hits=8 year=2024"
+        },
+        {
+          "url": "https://press.un.org/en/2024/sc15654.doc.htm",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        },
+        {
+          "url": "https://institute.aljazeera.net/en/ajr/article/3077",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "kenia-uber-bolt-algorithmus-tawu-petition-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Kenia: TAWU-Gewerkschaft verklagt Uber und Bolt wegen algorithmischer Kontrolle, willkürlicher Deaktivierungen und Verstoß gegen 18-Prozent-Kommissions-Deckel",
       "name_en": "Kenya: TAWU union petitions Uber and Bolt over algorithmic control, arbitrary deactivations and breaches of the 18 percent commission cap",
@@ -747,7 +1119,10 @@
         "lat": -1.2921,
         "lng": 36.8219
       },
-      "incidentType": ["labor-exploitation", "data-misuse"],
+      "incidentType": [
+        "labor-exploitation",
+        "data-misuse"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Im November 2025 kündigte die kenianische Transport Workers Union (TAWU-Kenya) eine Verfassungsbeschwerde gegen Uber und Bolt an: Vorwürfe umfassen exzessive Kommissions-Abzüge (über dem 2022 in den Digital Hailing Regulations festgelegten 18-Prozent-Deckel), willkürliche algorithmische Account-Deaktivierungen ('digital dismissal'), intransparenten Umgang mit Fahrer:innen-Daten und algorithmische Kontrolle, die Fahrer:innen keinerlei Mitspracherecht über ihre Arbeitsbedingungen lässt. Bereits 2024 hatten Fahrer:innen das Pricing der Plattformen mit eigenen Tarifen ausgehebelt.",
@@ -756,12 +1131,16 @@
         {
           "name": "Uber Technologies Inc.",
           "type": "private-company",
-          "systems": ["Uber dispatch algorithm"]
+          "systems": [
+            "Uber dispatch algorithm"
+          ]
         },
         {
           "name": "Bolt Technology OÜ",
           "type": "private-company",
-          "systems": ["Bolt pricing algorithm"]
+          "systems": [
+            "Bolt pricing algorithm"
+          ]
         },
         {
           "name": "Transport Workers Union Kenya (TAWU-Kenya)",
@@ -793,14 +1172,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand hat keinen Gig-Economy-Fall in Kenia. Beim Promote die Tarifaufsicht NTSA und das exakte Verfahrens-Aktenzeichen ergänzen.",
-    "dedup_hint": "kenya | uber | bolt | algorithm | tawu | digital hailing | 2025 | gig economy"
+    "dedup_hint": "kenya | uber | bolt | algorithm | tawu | digital hailing | 2025 | gig economy",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:14:55.251Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techweez.com/2025/11/05/why-kenyan-drivers-are-taking-uber-and-bolt-to-court/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.58 hits=8 year=2025"
+        },
+        {
+          "url": "https://hapakenya.com/2025/11/05/tawu-kenya-plans-to-sue-uber-bolt-over-exploitative-digital-labour-practices/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.55 hits=8 year=2025"
+        },
+        {
+          "url": "https://technext24.com/2025/11/07/kenyan-union-to-petition-uber-and-bolt/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.40 hits=8"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "nigeria-cybercrime-amendment-act-journalisten-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "Nigeria: Cybercrime-Amendment-Act 2024 ermöglicht Überwachung ohne Gerichtsbeschluss — Journalist Daniel Ojukwu nach FIJ-Korruptionsrecherche verhaftet",
       "name_en": "Nigeria: 2024 Cybercrime Amendment Act allows warrantless surveillance — journalist Daniel Ojukwu detained after FIJ corruption reporting",
@@ -812,7 +1217,11 @@
         "lat": 6.5244,
         "lng": 3.3792
       },
-      "incidentType": ["censorship", "surveillance", "political-pressure"],
+      "incidentType": [
+        "censorship",
+        "surveillance",
+        "political-pressure"
+      ],
       "candidate_severity": 4,
       "candidate_verification": 4,
       "description_de": "Am 28. Februar 2024 unterzeichnete Präsident Bola Tinubu den Cybercrimes (Prohibition, Prevention, Etc.) (Amendment) Act 2024, der Sicherheitsbehörden in 'dringenden' Fällen die Kommunikationsabhörung ohne Gerichtsbeschluss erlaubt, Telekoms zu längerer Speicherung von Nutzerdaten verpflichtet und 'falsche' oder 'irreführende' Posts kriminalisiert. Am 1. Mai 2024 wurde der investigative Journalist Daniel Ojukwu (26) von der Foundation for Investigative Journalism in Lagos verhaftet, nach Abuja verbracht und neun Tage festgehalten — wegen seiner Berichterstattung über Korruption hochrangiger Beamter. Paradigm Initiative, SERAP, Amnesty International und CPJ haben den Fall dokumentiert; die Gesetzesänderung wurde als verfassungswidrig eingestuft.",
@@ -856,14 +1265,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand hat 'nigeria-social-media-bill-ki' — beim Promote prüfen, ob das den Cybercrime-Komplex schon abdeckt; vermutlich separat.",
-    "dedup_hint": "nigeria | tinubu | cybercrime amendment | ojukwu | fij | warrantless surveillance | 2024"
+    "dedup_hint": "nigeria | tinubu | cybercrime amendment | ojukwu | fij | warrantless surveillance | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:15:20.433Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://cpj.org/2024/05/nigerian-police-secretly-arrest-journalist-daniel-ojukwu-over-critical-report/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.79 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.npr.org/2024/05/09/1250008596/nigeria-detained-daniel-ojukwu-investigative-journalist-corruption",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://legalafrica.org/nigerias-cybercrime-act-amendments-how-new-govt-powers-threaten-privacy-free-speech/",
+          "http_status": 404,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "aethiopien-amhara-internet-shutdown-2023-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Äthiopien: Fast einjähriger Internet-Blackout in der Amhara-Region (August 2023 — Juli 2024) während des Fano-Konflikts",
       "name_en": "Ethiopia: Near year-long internet blackout in the Amhara region (August 2023 — July 2024) during the Fano conflict",
@@ -875,7 +1310,11 @@
         "lat": 11.5942,
         "lng": 37.3905
       },
-      "incidentType": ["censorship", "surveillance", "political-pressure"],
+      "incidentType": [
+        "censorship",
+        "surveillance",
+        "political-pressure"
+      ],
       "candidate_severity": 5,
       "candidate_verification": 4,
       "description_de": "Im August 2023 verhängten die äthiopischen Behörden nach Zusammenstößen zwischen der Fano-Miliz und Regierungstruppen einen mobilen Internet- und Telefon-Shutdown in 19 Städten der Amhara-Region; der Blackout dauerte bis zum 14. Juli 2024 — fast ein ganzes Jahr. Während des Notstands wurden Journalist:innen ohne Anklage bis zu zehn Monate festgehalten; berichtet wurden Folter und fehlende medizinische Versorgung. Die Ethiopian Human Rights Commission dokumentierte willkürliche Festnahmen, außergerichtliche Tötungen und Zivilist:innen-Opfer durch die ENDF; Top10VPN schätzte Äthiopiens wirtschaftliche Verluste durch Internet-Shutdowns 2023 auf rund 1,9 Milliarden USD (weltweit Rang 2).",
@@ -919,14 +1358,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand hat 'aethiopien-internet-abschaltung' und 'aethiopien-telecom-ueberwachung' — beim Promote prüfen, ob das den Amhara-Vorfall 2023/2024 schon abdeckt. Wenn ja, hier als Update verwenden; wenn nicht, separat promoten.",
-    "dedup_hint": "ethiopia | amhara | fano | shutdown | 2023 2024 | bahir dar | ehrc"
+    "dedup_hint": "ethiopia | amhara | fano | shutdown | 2023 2024 | bahir dar | ehrc",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:15:22.162Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://pulse.internetsociety.org/en/shutdowns/internet-shutdown-in-amhara-region-ethiopia-august-2023/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.74 hits=8 year=2023"
+        },
+        {
+          "url": "https://addisstandard.com/internet-services-resume-across-amhara-region-after-near-year-long-shutdown/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://therecord.media/ethiopia-internet-blackout-amhara-region",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.84 hits=8 year=2023"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "aethiopien-meta-tigray-hassrede-klage-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Äthiopien/Kenia: 2-Milliarden-Pfund-Klage gegen Meta wegen Tigray-Hassrede überwindet Verfahrenshürde 2025 — Tod von Professor Meareg Amare im Zentrum",
       "name_en": "Ethiopia/Kenya: GBP 2 billion Meta lawsuit over Tigray hate speech clears procedural hurdle in 2025 — death of Professor Meareg Amare at the centre",
@@ -938,7 +1403,11 @@
         "lat": 11.5942,
         "lng": 37.3905
       },
-      "incidentType": ["political-pressure", "discrimination", "censorship"],
+      "incidentType": [
+        "political-pressure",
+        "discrimination",
+        "censorship"
+      ],
       "candidate_severity": 5,
       "candidate_verification": 4,
       "description_de": "Im April 2025 überwand eine 2-Milliarden-Pfund-Klage gegen Meta wegen Facebook-Hassrede während des Tigray-Konflikts eine entscheidende Verfahrenshürde am kenianischen Gerichtsstand. Hauptkläger Abrham Meareg Amare führt an, dass sein Vater, Professor Meareg Amare an der Bahir Dar University, im November 2021 ermordet wurde, nachdem Facebook-Posts mit Foto, Wohnadresse und falschen Korruptions-Vorwürfen ihn als Angehörigen der Tigray-Volksgruppe ins Visier nahmen. Mit-Petent Fisseha Tekle (ehemaliger Amnesty-Researcher) und das Katiba Institute klagen gegen Metas Algorithmus, der hochaufgeladene Hass-Inhalte verstärkt habe; die Klage wurde 2022 in Kenia eingereicht, weil dort Metas regionales Moderations-Hub sitzt.",
@@ -947,7 +1416,9 @@
         {
           "name": "Meta Platforms",
           "type": "private-company",
-          "systems": ["Facebook ranking & recommendation algorithm"]
+          "systems": [
+            "Facebook ranking & recommendation algorithm"
+          ]
         },
         {
           "name": "Katiba Institute (Kenya)",
@@ -979,14 +1450,40 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand hat 'aethiopien-ki-ethnische-gewalt' — höchstwahrscheinlich Überschneidung. Beim Promote prüfen, ob als Update am Bestandsfall oder als neuer Einzelfall (Klage-Verfahren 2025) zu führen.",
-    "dedup_hint": "ethiopia | tigray | meta | facebook | meareg | bahir dar | hate speech | nairobi | 2022 2025"
+    "dedup_hint": "ethiopia | tigray | meta | facebook | meareg | bahir dar | hate speech | nairobi | 2022 2025",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:15:24.310Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.thebureauinvestigates.com/stories/2025-04-03/2bn-meta-court-case-over-ethiopian-hate-speech-clears-legal-hurdle",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2025"
+        },
+        {
+          "url": "https://techcrunch.com/2023/04/28/kenyan-court-paves-way-for-lawsuit-alleging-facebook-played-role-in-fuelling-ethiopias-tigray-conflict/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.42 hits=8"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/world/ethiopians-file-lawsuit-against-meta-over-hate-speech-in-tigray-war",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.37 hits=8"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "suedafrika-shopping-mall-facial-recognition-lrc-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Südafrika: Gesichtserkennung in Shopping Malls ohne Einwilligung — LRC-Bericht 2024 warnt vor Bias gegen Schwarze und POPIA-Verstößen",
       "name_en": "South Africa: Facial recognition in shopping malls without consent — 2024 LRC report warns of bias against Black people and POPIA breaches",
@@ -995,10 +1492,14 @@
         "name_de": "Johannesburg, Kapstadt, Durban, Südafrika",
         "name_en": "Johannesburg, Cape Town, Durban, South Africa",
         "country": "ZA",
-        "lat": -29.0,
-        "lng": 24.0
+        "lat": -29,
+        "lng": 24
       },
-      "incidentType": ["facial-recognition", "discrimination", "surveillance"],
+      "incidentType": [
+        "facial-recognition",
+        "discrimination",
+        "surveillance"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 3,
       "description_de": "Im August 2024 veröffentlichte das südafrikanische Legal Resources Centre einen Bericht zur Verbreitung von Gesichtserkennungstechnologie in Shopping Malls in Johannesburg, Kapstadt und Durban: Besucher:innen werden gescannt, geloggt und analysiert, ohne dass — wie POPIA verlangt — eine Information über die Datenerhebung erfolgt. Studien zeigen erhöhte Fehlerquoten bei Frauen und People of Color; die Mail & Guardian und ITWeb warnten, dass überwiegend Schwarze Bewohner:innen überwacht werden, während überwiegend weiße Bewohner:innen über die Mittel verfügen, Überwachung zu finanzieren — ein 'digital apartheid'-Muster.",
@@ -1038,14 +1539,40 @@
       ]
     },
     "researcher_notes": "Confidence medium-high. Konkrete Mall-Namen + dokumentierte Einzelfälle beim Promote nachrecherchieren (LRC-PDF lesen). Mögliche Überschneidung mit Vumacam-Eintrag — hier liegt Fokus auf Retail-Sektor.",
-    "dedup_hint": "south africa | shopping mall | facial recognition | lrc | popia | 2024 | digital apartheid"
+    "dedup_hint": "south africa | shopping mall | facial recognition | lrc | popia | 2024 | digital apartheid",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:15:33.721Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://lrc.org.za/wp-content/uploads/2024/11/The-Use-of-Facial-Recognition-Technology-in-South-Africa_FINAL.pdf",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        },
+        {
+          "url": "https://mg.co.za/thought-leader/2025-08-20-south-africa-is-sleepwalking-into-becoming-a-surveillance-state/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.47 hits=8"
+        },
+        {
+          "url": "https://www.fluxmans.com/article/the-watcher-anonymity-erosion-south-africa-jupiter-lesabe",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.45 hits=8"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "nigeria-atiku-deepfake-audio-wahl-2023",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Nigeria: Viraler Deepfake-Audio über Atiku Abubakar, Okowa und Tambuwal angeblich zur Wahlmanipulation 2023",
       "name_en": "Nigeria: Viral deepfake audio of Atiku Abubakar, Okowa and Tambuwal allegedly planning to rig the 2023 vote",
@@ -1057,7 +1584,10 @@
         "lat": 9.0765,
         "lng": 7.3986
       },
-      "incidentType": ["deepfakes", "political-pressure"],
+      "incidentType": [
+        "deepfakes",
+        "political-pressure"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 3,
       "description_de": "Wenige Stunden vor der Stimmabgabe in Nigerias Präsidentschaftswahl 2023 verbreitete sich auf WhatsApp, Facebook und X eine Audio-Datei, die angeblich PDP-Kandidat Atiku Abubakar, seinen Running Mate Ifeanyi Okowa und Wahlkampf-Direktor Aminu Tambuwal beim Planen von Wahlbetrug zeigte. Reuters und PRNigeria stuften das Audio als manipuliert/Deepfake ein. Parallel dazu dokumentierten Forscher:innen und das Institute for Security and Technology, dass X-Netzwerke koordiniert AI-generierte Bilder einsetzten, um falsche öffentliche Unterstützung für Kandidaten zu simulieren; Tinubu war zudem Ziel eines Shallow-Fake-Videos vom Chatham-House-Event.",
@@ -1097,14 +1627,40 @@
       ]
     },
     "researcher_notes": "Confidence medium-high. Bestand hat 'nigeria-ki-wahlmanipulation-deepfakes' — sehr wahrscheinlich Überschneidung; beim Promote zwingend mit Bestandsfall mergen.",
-    "dedup_hint": "nigeria | atiku | okowa | tambuwal | deepfake audio | 2023 election | rigging"
+    "dedup_hint": "nigeria | atiku | okowa | tambuwal | deepfake audio | 2023 election | rigging",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:15:36.510Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://prnigeria.com/2023/02/24/atiku-okowa-election/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://securityandtechnology.org/blog/qa-hannah-ajakaiye/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2023"
+        },
+        {
+          "url": "https://factcheck.thecable.ng/insight-how-deepfakes-are-fuelling-disinformation-in-nigerias-political-scene/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2023"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "senegal-deepfake-frauen-kandidatinnen-russland-disinfo-2024",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Senegal: Koordinierte Deepfake-Kampagnen gegen weibliche Kandidatinnen und russisch-gesponserte Desinformation rund um die Wahl 2024",
       "name_en": "Senegal: Coordinated deepfake campaigns against women candidates and Russian-sponsored disinformation around the 2024 election",
@@ -1116,7 +1672,11 @@
         "lat": 14.7167,
         "lng": -17.4677
       },
-      "incidentType": ["deepfakes", "discrimination", "political-pressure"],
+      "incidentType": [
+        "deepfakes",
+        "discrimination",
+        "political-pressure"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 3,
       "description_de": "Im Vorfeld der senegalesischen Präsidentschaftswahl 2024 dokumentierten Upgrade Democracy, Africa Center for Strategic Studies und AFP Fact Check koordinierte Desinformations-Kampagnen, darunter Deepfake-Videos zur Diskreditierung weiblicher Kandidatinnen. Parallel verzeichnete Senegal eine Ausweitung russisch-gesponserter Desinformations-Operationen, die Misstrauen gegenüber Demokratie und den Verbindungen zum Westen schüren sollten; das umstrittene Fake-News-Gesetz wurde von Article 19 und Bloomberg als Werkzeug zur Unterdrückung von Dissens kritisiert, das die Wahl Bassirou Diomaye Fayes mitprägte (Faye saß zuvor wegen angeblicher Falschinformations-Verbreitung in Haft).",
@@ -1156,14 +1716,40 @@
       ]
     },
     "researcher_notes": "Confidence medium. Konkrete Deepfake-Einzelfälle (Welche Kandidatinnen? Welche Plattform?) sind im Quellen-Material nicht namentlich genannt. Beim Promote nachrecherchieren oder als 'Strukturbefund' positionieren.",
-    "dedup_hint": "senegal | dakar | deepfake | women candidates | russian disinfo | faye | sall | 2024 election"
+    "dedup_hint": "senegal | dakar | deepfake | women candidates | russian disinfo | faye | sall | 2024 election",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:15:38.284Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://upgradedemocracy.de/en/superwahljahr-2024-superjahr-desinformation/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.54 hits=8 year=2024"
+        },
+        {
+          "url": "https://africacenter.org/spotlight/2024-elections/senegal/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.article19.org/wp-content/uploads/2024/01/ARTICLE-19-Senegal-Analysis-of-false-news-legislation-16-Jan.pdf",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.18"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   },
   {
     "candidate_id": "suedsudan-tiktok-facebook-shutdown-2025",
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-africa-round-1",
     "round": "round-1-2026-06-01",
-    "status": "candidate",
+    "status": "verified",
     "candidate_data": {
       "name_de": "Südsudan: 90-Tage-Social-Media-Sperre für Facebook und TikTok ab 22. Januar 2025 — nach Viral-Videos von Gewalt gegen Südsudanes:innen in Wad Madani",
       "name_en": "South Sudan: 90-day social media block on Facebook and TikTok from 22 January 2025 — after viral videos of violence against South Sudanese in Wad Madani",
@@ -1175,7 +1761,10 @@
         "lat": 4.8594,
         "lng": 31.5713
       },
-      "incidentType": ["censorship", "political-pressure"],
+      "incidentType": [
+        "censorship",
+        "political-pressure"
+      ],
       "candidate_severity": 3,
       "candidate_verification": 4,
       "description_de": "Am 22. Januar 2025 ordnete die National Communication Authority (NCA) des Südsudan an, dass alle Internet-Provider den Zugang zu allen Social-Media-Plattformen — insbesondere Facebook und TikTok — für 90 Tage blockieren müssen; als Grund wurde die Verbreitung grausamer Inhalte aus dem benachbarten Sudan-Bürgerkrieg genannt (Videos angeblicher Angriffe sudanesischer Soldaten auf südsudanesische Geflüchtete in Wad Madani, Gezira). Internet Society South Sudan, Access Now und Radio Tamazuj kritisierten die Sperre als Zensur; nach starkem Protest hob die NCA die Sperre am 27. Januar 2025 nach nur fünf Tagen wieder auf.",
@@ -1215,6 +1804,32 @@
       ]
     },
     "researcher_notes": "Confidence high. Bestand führt keinen Südsudan-Fall. Verbindung zu Sudan-Bürgerkrieg + Wad-Madani-Massaker beim Promote ggf. mit Sudan-Bestandsfall querverlinken.",
-    "dedup_hint": "south sudan | juba | nca | tiktok | facebook | wad madani | 2025 | shutdown"
+    "dedup_hint": "south sudan | juba | nca | tiktok | facebook | wad madani | 2025 | shutdown",
+    "verification_log": {
+      "verified_at": "2026-06-01T09:15:39.878Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://pulse.internetsociety.org/en/shutdowns/government-of-south-sudan-orders-blocking-of-social-media-for-at-least-30-days/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.83 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.arabnews.com/node/2588155/media",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.radiotamazuj.org/en/news/article/south-sudan-lifts-ban-on-facebook-and-tiktok",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.79 hits=8 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    }
   }
 ]
