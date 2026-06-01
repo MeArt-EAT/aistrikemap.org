@@ -212,6 +212,34 @@ const TRANSLITERATED_GERMAN_WORDS = [
   'dunkelhautigen', 'dunkelhaeutigen',
   'einjahrig', 'einjaehrig', 'einjahrige', 'einjaehrige',
   'einjahriges', 'einjaehriges', 'einjahrigen', 'einjaehrigen',
+  // Welle 3
+  'mannern', 'maennern',
+  'ursprunglich', 'urspruenglich',
+  'ursprungliche', 'urspruengliche',
+  'ursprunglichen', 'urspruenglichen',
+  'ursprunglicher', 'urspruenglicher',
+  'hellhautig', 'hellhaeutig',
+  'hellhautige', 'hellhaeutige',
+  'hellhautigen', 'hellhaeutigen',
+  'hellhautiger', 'hellhaeutiger',
+  'ladt', 'laedt',
+  'ankundigung', 'ankuendigung',
+  'ankundigungen', 'ankuendigungen',
+  'bewaltigen', 'bewaeltigen',
+  'bewaltigt', 'bewaeltigt',
+  'bewaltigung', 'bewaeltigung',
+  'fluchtig', 'fluechtig',
+  'fluchtige', 'fluechtige',
+  'begunstigt', 'beguenstigt',
+  'begunstigen', 'beguenstigen',
+  'begunstigung', 'beguenstigung',
+  'standig', 'staendig',
+  'standige', 'staendige',
+  'standigen', 'staendigen',
+  'standiger', 'staendiger',
+  'fruh', 'frueh', 'fruhe', 'fruehe', 'fruhen', 'fruehen',
+  'fruher', 'frueher', 'fruhes',
+  'verfugung', 'verfuegung', 'verfugungen', 'verfuegungen',
 ];
 // Compound-Suffix-Wurzeln: matchen am Wortende, egal ob die Wurzel allein
 // steht ("Behorde") oder als Suffix in einem Kompositum ("Grenzbehorde",
@@ -224,6 +252,11 @@ const TRANSLITERATED_COMPOUND_ROOTS = [
   'horigkeit', 'hoerigkeit',
   'verbande', 'verbaende',
   'anhorung', 'anhoerung', 'anhorungen', 'anhoerungen',
+  'angehorige', 'angehoerige',
+  'angehorigen', 'angehoerigen',
+  'angehoriger', 'angehoeriger',
+  'ubertritt', 'uebertritt',
+  'ubertritte', 'uebertritte',
 ];
 const TRANSLITERATION_RE = new RegExp(
   '\\b(?:' + TRANSLITERATED_GERMAN_WORDS.join('|') + ')\\b',
@@ -240,6 +273,9 @@ const COMPOUND_TRANSLITERATION_RE = new RegExp(
 // follow-up to keep false positives off the company name.
 const UBER_PREPOSITION_RE = /\b[Uu]ber\s+(?:\d|tausend|hundert|million|milliard)/g;
 const UBER_PREPOSITION_LC_RE = /\buber\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüßA-ZÄÖÜ])/g;
+// Generelles "[Uu]ber + Lowercase" → "[Üü]ber" + Rest. Spiegelt UBER_COMPOUND_RE
+// im Fixer-Script, damit das Audit dieselbe Klasse erkennt.
+const UBER_COMPOUND_RE = /\b[Uu]ber[a-zäöüß]{2,}\b/g;
 
 function findTransliterations(text) {
   if (typeof text !== 'string' || !text) return [];
@@ -260,6 +296,10 @@ function findTransliterations(text) {
   UBER_PREPOSITION_LC_RE.lastIndex = 0;
   while ((m = UBER_PREPOSITION_LC_RE.exec(text)) !== null) {
     matches.add('uber');
+  }
+  UBER_COMPOUND_RE.lastIndex = 0;
+  while ((m = UBER_COMPOUND_RE.exec(text)) !== null) {
+    matches.add(m[0]);
   }
   return Array.from(matches);
 }

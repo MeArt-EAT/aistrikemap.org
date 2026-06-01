@@ -249,6 +249,69 @@ const FIX_MAP = {
   'einjaehriges': 'einjähriges',
   'einjahrigen': 'einjährigen',
   'einjaehrigen': 'einjährigen',
+  // Welle 3 — long-tail aus 2. Sweep-Review
+  'mannern': 'männern',
+  'maennern': 'männern',
+  'ursprunglich': 'ursprünglich',
+  'urspruenglich': 'ursprünglich',
+  'ursprungliche': 'ursprüngliche',
+  'urspruengliche': 'ursprüngliche',
+  'ursprunglichen': 'ursprünglichen',
+  'urspruenglichen': 'ursprünglichen',
+  'ursprunglicher': 'ursprünglicher',
+  'urspruenglicher': 'ursprünglicher',
+  'hellhautig': 'hellhäutig',
+  'hellhaeutig': 'hellhäutig',
+  'hellhautige': 'hellhäutige',
+  'hellhaeutige': 'hellhäutige',
+  'hellhautigen': 'hellhäutigen',
+  'hellhaeutigen': 'hellhäutigen',
+  'hellhautiger': 'hellhäutiger',
+  'hellhaeutiger': 'hellhäutiger',
+  'ladt': 'lädt',
+  'laedt': 'lädt',
+  'ankundigung': 'ankündigung',
+  'ankuendigung': 'ankündigung',
+  'ankundigungen': 'ankündigungen',
+  'ankuendigungen': 'ankündigungen',
+  'bewaltigen': 'bewältigen',
+  'bewaeltigen': 'bewältigen',
+  'bewaltigt': 'bewältigt',
+  'bewaeltigt': 'bewältigt',
+  'bewaltigung': 'bewältigung',
+  'bewaeltigung': 'bewältigung',
+  'fluchtig': 'flüchtig',
+  'fluechtig': 'flüchtig',
+  'fluchtige': 'flüchtige',
+  'fluechtige': 'flüchtige',
+  'begunstigt': 'begünstigt',
+  'beguenstigt': 'begünstigt',
+  'begunstigen': 'begünstigen',
+  'beguenstigen': 'begünstigen',
+  'begunstigung': 'begünstigung',
+  'beguenstigung': 'begünstigung',
+  'standig': 'ständig',
+  'staendig': 'ständig',
+  'standige': 'ständige',
+  'staendige': 'ständige',
+  'standigen': 'ständigen',
+  'staendigen': 'ständigen',
+  'standiger': 'ständiger',
+  'staendiger': 'ständiger',
+  'fruh': 'früh',
+  'frueh': 'früh',
+  'fruhe': 'frühe',
+  'fruehe': 'frühe',
+  'fruhen': 'frühen',
+  'fruehen': 'frühen',
+  'fruher': 'früher',
+  'frueher': 'früher',
+  'fruhes': 'frühes',
+  'frueheres': 'frühes',
+  'verfugung': 'verfügung',
+  'verfuegung': 'verfügung',
+  'verfugungen': 'verfügungen',
+  'verfuegungen': 'verfügungen',
   'begrundet': 'begründet',
   'begruendet': 'begründet',
   // ß-Bugs
@@ -368,6 +431,16 @@ const COMPOUND_SUFFIX_MAP = {
   'anhoerung': 'anhörung',
   'anhorungen': 'anhörungen',
   'anhoerungen': 'anhörungen',
+  'angehorige': 'angehörige',        // Familienangehörige, Staatsangehörige
+  'angehoerige': 'angehörige',
+  'angehorigen': 'angehörigen',
+  'angehoerigen': 'angehörigen',
+  'angehoriger': 'angehöriger',
+  'angehoeriger': 'angehöriger',
+  'ubertritt': 'übertritt',          // Grenzübertritt
+  'uebertritt': 'übertritt',
+  'ubertritte': 'übertritte',
+  'uebertritte': 'übertritte',
 };
 
 // Build word-boundary regex from keys, case-insensitive.
@@ -388,6 +461,12 @@ const UBER_PREPOSITION_RE = /\b[Uu]ber(?=\s+(?:\d|tausend|hundert|million|millia
 // "Transparenz uber Algorithmen", "Berichte uber die Lage". "Uber" mit Großbuchstabe
 // wird hier NICHT gefasst, weil das die Firma sein könnte.
 const UBER_PREPOSITION_LC_RE = /\buber(?=\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüßA-ZÄÖÜ]))/g;
+// Generelles "[Uu]ber + Lowercase-Folge" → "[Üü]ber" + Rest.
+// Fängt alle uber-Komposita ohne sie einzeln zu listen (Übereinstimmung,
+// überproportional, Überraschung, Übergewicht, überraschend, übertragen, …).
+// Mindestens 2 Lowercase-Letters nach "uber", damit "Uber Eats" (mit Leerzeichen)
+// und "UberTechnologies" (Capital nach Uber) nicht gefasst werden.
+const UBER_COMPOUND_RE = /\b([Uu])ber([a-zäöüß]{2,})\b/g;
 
 function preserveCase(original, replacement) {
   // Wenn das Original mit Großbuchstaben anfängt, Ersatz kapitalisieren.
@@ -419,6 +498,13 @@ function fixString(text) {
     return match[0] === 'U' ? 'Über' : 'über';
   });
   out = out.replace(UBER_PREPOSITION_LC_RE, () => { changed++; return 'über'; });
+  // General-Pass für uber-Komposita. Läuft NACH den expliziten Maps, damit
+  // "uberwachung" → "überwachung" (FIX_MAP) Vorrang hat. Was hier noch matcht,
+  // sind unenumerierte Compounds wie "Ubergewicht", "uberraschend".
+  out = out.replace(UBER_COMPOUND_RE, (match, p1, p2) => {
+    changed++;
+    return (p1 === 'U' ? 'Über' : 'über') + p2;
+  });
   return { text: out, changed };
 }
 
