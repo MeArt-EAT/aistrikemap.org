@@ -389,10 +389,17 @@ function buildFromLoaders({ taxonomy, countries, years, currentYear }) {
   const tax = taxonomy || loadTaxonomy();
   const cs = countries || MVP_COUNTRIES;
   const cy = currentYear || new Date().getFullYear();
-  // Default: current year + previous year, to absorb publication lag (most
-  // national stats labs release the year-N report in year-N+1). Pass explicit
-  // years for historical-time-series builds (Chart-Modus, Step 6).
-  const ys = years && years.length ? years : [cy, cy - 1];
+  // Default-Range: 2018 bis aktuelles Jahr (MVP-Scope-Zeitachse). Erlaubt
+  // Chart-Modus die Time-Series-Darstellung ohne weitere Configuration.
+  // Loader-Calls auf leere Cells sind billig (Map-Lookups), nichtleere
+  // Entries werden weiter unten gefiltert.
+  let ys;
+  if (years && years.length) {
+    ys = years;
+  } else {
+    ys = [];
+    for (let y = 2018; y <= cy; y++) ys.push(y);
+  }
 
   const entries = [];
   for (const country of cs) {

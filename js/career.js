@@ -175,6 +175,19 @@ const Career = (function () {
     }));
   }
 
+  /**
+   * Build a country → entries[] map for chart rendering (all years).
+   * Reuses the bundle cache from loadCountryBundle, so no extra fetches.
+   */
+  async function fullEntriesByCountry() {
+    const out = new Map();
+    await Promise.all(MVP_COUNTRIES.map(async function (cc) {
+      const bundle = await loadCountryBundle(cc);
+      out.set(cc, bundle || []);
+    }));
+    return out;
+  }
+
   // --- Leaflet map + choropleth --------------------------------------------
 
   function initMap() {
@@ -370,7 +383,7 @@ const Career = (function () {
 
   // --- Mode-Toggle ---------------------------------------------------------
 
-  function setMode(mode) {
+  async function setMode(mode) {
     if (mode !== 'map' && mode !== 'chart') return;
     currentMode = mode;
     $$('.career-mode-btn').forEach(function (btn) {
@@ -380,9 +393,18 @@ const Career = (function () {
     });
     const stage = $('#career-stage');
     if (stage) stage.setAttribute('data-mode', mode);
+    const legend = $('#career-legend');
+    const chartWrap = $('#career-chart-wrap');
+    if (legend) legend.setAttribute('aria-hidden', mode === 'map' ? 'false' : 'true');
+    if (chartWrap) chartWrap.setAttribute('aria-hidden', mode === 'chart' ? 'false' : 'true');
+
     if (mode === 'map' && leafletMap) {
       // Leaflet braucht ein invalidateSize nach unhidden, sonst zeichnet es falsch.
       setTimeout(function () { leafletMap.invalidateSize(); }, 50);
+    }
+    if (mode === 'chart' && typeof CareerChart !== 'undefined') {
+      const all = await fullEntriesByCountry();
+      CareerChart.render(all, currentIsco);
     }
   }
 
@@ -399,6 +421,10 @@ const Career = (function () {
       currentIsco = sel.value || null;
       await refreshCountryDataForIsco(currentIsco);
       renderChoropleth();
+      if (currentMode === 'chart' && typeof CareerChart !== 'undefined') {
+        const all = await fullEntriesByCountry();
+        CareerChart.render(all, currentIsco);
+      }
       if (currentCountry) {
         // Refresh open panel with new ISCO context.
         openDetailPanel(currentCountry);

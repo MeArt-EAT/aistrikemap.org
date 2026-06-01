@@ -129,6 +129,51 @@
   background: #0a0a0a;
 }
 
+/* Stage swaps between map and chart via data-mode toggle. */
+.career-stage[data-mode="chart"] .career-map,
+.career-stage[data-mode="chart"] .career-legend {
+  display: none;
+}
+.career-stage[data-mode="map"] .career-chart-wrap {
+  display: none;
+}
+
+/* --- Chart container ----------------------------------------------------- */
+
+.career-chart-wrap {
+  position: relative;
+  width: 100%;
+  height: clamp(420px, 65vh, 720px);
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+}
+
+.career-chart {
+  flex: 1;
+  min-height: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.career-chart-empty {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.career-chart-empty p {
+  margin: 0;
+  padding: 0 1rem;
+  max-width: 48ch;
+}
+
 /* Leaflet attribution lighter on dark theme */
 .career-map .leaflet-control-attribution {
   background: rgba(0, 0, 0, 0.6);

@@ -102,6 +102,12 @@
           <li><span class="career-legend__swatch" data-bucket="very-high"></span><span data-i18n="career.legend.veryHigh">Sehr hoch (>0.9)</span></li>
         </ul>
       </div>
+      <div class="career-chart-wrap" id="career-chart-wrap" aria-hidden="true">
+        <canvas id="career-chart" class="career-chart" data-i18n-aria="career.chart.aria" aria-label="Zeitverlauf der KI-Substituierbarkeit"></canvas>
+        <div class="career-chart-empty" id="career-chart-empty" hidden>
+          <p data-i18n="career.chart.empty">Wähle einen Beruf, um den Zeitverlauf anzuzeigen.</p>
+        </div>
+      </div>
     </div>
 
     <!-- Detail Panel (slide-in from right) -->
@@ -132,9 +138,11 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script src="js/i18n.js?v=5"></script>
   <script src="js/nav.js?v=3"></script>
-  <script src="js/career.js?v=2"></script>
+  <script src="js/career-chart.js?v=1"></script>
+  <script src="js/career.js?v=3"></script>
   <script>
     (async function () {
       await I18n.load(I18n.getStoredLang());
