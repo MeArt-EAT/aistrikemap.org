@@ -4,7 +4,7 @@
     "discovered_at": "2026-06-01T12:00:00Z",
     "researcher": "agent-research-mena-round-1",
     "round": "round-1-2026-06-01",
-    "status": "verified",
+    "status": "needs-review",
     "candidate_data": {
       "name_de": "Israel/Gaza: 'Where's Daddy?' — KI-System verfolgt Zielpersonen bis nach Hause, um Familien zu bombardieren",
       "name_en": "Israel/Gaza: 'Where's Daddy?' — AI system tracks targets to their homes to bomb entire families",
@@ -63,7 +63,7 @@
     "researcher_notes": "Distinct system from Lavender/Gospel already documented in existing 'gaza-lavender-ki-targeting'. 'Where's Daddy?' is the geolocation-to-home tracker — high confidence (six IDF source officers, multiple corroborating outlets, UN statement). Consider promoting as standalone or merging as Timeline-entry under existing Lavender file.",
     "dedup_hint": "wheres daddy | where's daddy | gaza | ai targeting | family home | 2024 | idf | unit 8200",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:04.649Z",
+      "verified_at": "2026-06-01T12:52:14.206Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -74,9 +74,9 @@
         },
         {
           "url": "https://www.ohchr.org/en/press-releases/2024/04/gaza-un-experts-deplore-use-purported-ai-commit-domicide-gaza-call",
-          "http_status": 200,
-          "matches_content": true,
-          "note": "match score=0.60 hits=8 year=2024"
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
         },
         {
           "url": "https://www.democracynow.org/2024/4/5/israel_ai",
@@ -85,7 +85,7 @@
           "note": "match score=0.79 hits=8 year=2024"
         }
       ],
-      "match_count": 2,
+      "match_count": 1,
       "sources_count": 3
     },
     "promoted_to_slug": "palaestina-israel-gaza-wheres-daddy-ki-system-verfolgt-zielpersonen-bis-nach-hause-um",
@@ -154,7 +154,7 @@
     "researcher_notes": "Distinct from existing 'israel-blue-wolf-palaestina' (Blue Wolf is West Bank/Hebron, this is Gaza & uses Corsight+Google Photos). High confidence — NYT primary source, multiple secondary confirmations. Mosab Abu Toha case is a concrete documented harm.",
     "dedup_hint": "corsight | gaza | facial recognition | google photos | abu toha | nyt 2024",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:05.719Z",
+      "verified_at": "2026-06-01T12:52:15.238Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -229,7 +229,7 @@
     "researcher_notes": "Confidence medium-high: single primary source (+972 reporting) but +972 has strong Unit-8200-source track record. Worth promoting; second corroborating outlet (Guardian co-publication) referenced in search results — verify URL on promote. Mentioned alongside existing microsoft-azure-unit8200-cutoff-gaza but distinct (this is the LLM tool, that one is Microsoft cutting Azure for related mass surveillance).",
     "dedup_hint": "unit 8200 | arabic llm | chatgpt | palestinians | surveillance | 2024 2025",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:08.091Z",
+      "verified_at": "2026-06-01T12:52:16.948Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -316,7 +316,7 @@
     "researcher_notes": "High severity (mass civilian casualties) + clear AI/biometric component (facial recognition + iris scan as gatekeeper to food). Multiple sources. Wikipedia entry confirms structure & timeline.",
     "dedup_hint": "ghf | gaza humanitarian foundation | biometric aid | facial recognition food | 2025 starvation",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:10.698Z",
+      "verified_at": "2026-06-01T12:52:18.516Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -412,7 +412,7 @@
     "researcher_notes": "Severity 5 obvious. AI-attribution: Palantir analytics claim rests on Steinberger biography — confidence medium-high (book + Middle East Eye + Press TV report). Core attack itself is uncontested. Consider framing as 'AI-assisted targeting infrastructure' incident.",
     "dedup_hint": "grim beeper | lebanon pager | hezbollah | palantir | 2024 september | mossad",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:11.535Z",
+      "verified_at": "2026-06-01T12:52:19.313Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -503,7 +503,7 @@
     "researcher_notes": "Existing incident 'jordanien-pegasus-journalisten' references only 2022 Citizen Lab / 2023 Access Now reports. This 2024 expansion (forensically confirmed 35 victims through Sept 2023, plus HRW staff Adam Coogle and Lama Fakih) is a substantive escalation worth either a new entry or a Timeline update to the existing record. Promote-decision: extend existing rather than new entry.",
     "dedup_hint": "jordan | pegasus | 2024 access now | citizen lab | hrw | 35 victims | adam coogle",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:13.523Z",
+      "verified_at": "2026-06-01T12:52:21.163Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -596,7 +596,7 @@
     "researcher_notes": "Existing 'iran-ki-hijab-erkennung' covers the general pre-2024 hijab-FR pattern. Noor Plan + Nazer app + UN report 2025 are concrete 2024/2025 escalation milestones — better as Timeline-extension of existing or as new standalone given new tools/severity (paralysed woman, 8000 cars). High confidence: UN Fact-Finding-Mission report, CNN, HRA.",
     "dedup_hint": "iran | noor plan | nazer app | hijab | drones | 2024 | facial recognition | UN report",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:15.571Z",
+      "verified_at": "2026-06-01T12:52:23.052Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -678,7 +678,7 @@
     "researcher_notes": "Existing 'tuerkei-ki-kurdische-ueberwachung' covers separate Kurdish-surveillance topic. This is the 2024 election deepfake angle. Imamoglu arrest March 2025 is contextually related but not directly AI-caused — note in researcher notes. Severity 3 (election integrity, not physical violence).",
     "dedup_hint": "turkey | imamoglu | deepfake | 2024 election | istanbul | akp",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:16.914Z",
+      "verified_at": "2026-06-01T12:52:24.609Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -756,7 +756,7 @@
     "researcher_notes": "Existing 'syrien-ki-ueberwachung-assad' likely pre-dates the December 2024 archive find. This is the post-Assad-fall confirmation of full scope — promote as Timeline-update on existing record, or new entry framed as 'Reckoning' phase. Severity 5 (mass-scale, decades, linked to torture/deaths).",
     "dedup_hint": "syria | assad fall | december 2024 | air force intelligence | siraj | rsf | post-regime archives",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:17.581Z",
+      "verified_at": "2026-06-01T12:52:25.454Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -847,7 +847,7 @@
     "researcher_notes": "Existing 'aegypten-ki-protest-identifikation' is about protest FR, different topic. This is Predator against opposition pol. — distinct entry justified. High confidence (Citizen Lab forensics + OFAC sanctions order).",
     "dedup_hint": "egypt | predator | intellexa | tantawi | cytrox | 2023 2024 | ofac sanctions",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:38.189Z",
+      "verified_at": "2026-06-01T12:52:44.107Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -927,7 +927,7 @@
     "researcher_notes": "Single primary source from Amnesty Security Lab — high credibility. Distinct legal-precedent angle, fits 'consequences' arc of broader spyware story. Verification level 4 (court ruling is public record).",
     "dedup_hint": "saudi arabia | yahya assiri | alqst | pegasus | uk court | october 2024 | quadream",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:38.721Z",
+      "verified_at": "2026-06-01T12:52:44.666Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1002,7 +1002,7 @@
     "researcher_notes": "Existing 'usa-meta-whatsapp-nso-group-pegasus-verurteilung' may already cover this — DEDUP CHECK BEFORE PROMOTE. If existing record stops at December 2024 liability ruling, the May 2025 damages verdict + October 2025 injunction/reduction are Timeline-extensions, not a new incident. Flagging as candidate-to-review-against-existing rather than as new entry.",
     "dedup_hint": "nso group | meta | whatsapp | 168 million | may 2025 | northern california | hamilton injunction",
     "verification_log": {
-      "verified_at": "2026-06-01T11:48:39.415Z",
+      "verified_at": "2026-06-01T12:52:45.779Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1087,7 +1087,7 @@
     "researcher_notes": "Distinct from existing 'emirate-tosca-ueberwachung' (DarkMatter/ToTok focus). This is the 2024 Microsoft-G42 structural deal with surveillance-state implications. Severity 3 — no immediate concrete harm, but architectural risk. Confidence medium-high: Microsoft press release + Washington Post + SEC filings referenced.",
     "dedup_hint": "uae | g42 | microsoft | 1.5 billion | april 2024 | tahnoon | abu dhabi | igaa",
     "verification_log": {
-      "verified_at": "2026-06-01T11:49:04.601Z",
+      "verified_at": "2026-06-01T12:53:10.964Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1171,7 +1171,7 @@
     "researcher_notes": "AI/algorithmic component is structural (mass-data interception powers under Decree-54), not a named system. Confidence 4 on legal/political facts, 2-3 on direct AI tooling — flag at promote. Could fit better as 'censorship' than 'surveillance'.",
     "dedup_hint": "tunisia | decree 54 | bsaies | zeghidi | dahmani | 2024 | journalist arrests | saied",
     "verification_log": {
-      "verified_at": "2026-06-01T11:49:05.176Z",
+      "verified_at": "2026-06-01T12:53:11.511Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1261,7 +1261,7 @@
     "researcher_notes": "AI-attribution weaker than other candidates (citizen-reporting platform + social-media monitoring; ML-component implicit). Severity 3. Worth keeping as candidate but lower priority than Gaza/Iran/Lebanon entries.",
     "dedup_hint": "iraq | interior ministry | social media surveillance | protect goyzha | 2024 | sulaymaniyah",
     "verification_log": {
-      "verified_at": "2026-06-01T11:49:06.529Z",
+      "verified_at": "2026-06-01T12:53:13.014Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1353,7 +1353,7 @@
     "researcher_notes": "Recent event (within last few months of cutoff). Confidence medium — Wikipedia entry for 2025 blackout and Irish Times confirm tracking, but exact AI-tool naming weaker. Worth promoting if a second outlet confirms the Chinese-tech claim.",
     "dedup_hint": "iran | internet blackout | 2026 | protest surveillance | chinese facial recognition | digital repression",
     "verification_log": {
-      "verified_at": "2026-06-01T11:49:09.064Z",
+      "verified_at": "2026-06-01T12:53:14.820Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {
@@ -1440,7 +1440,7 @@
     "researcher_notes": "Existing 'marokko-pegasus-journalisten' likely covers main Pegasus-Project find. This candidate adds the Western-Sahara / Sahrawi-activist dimension and the post-2022 continuity. CONSIDER: better as Timeline-extension of existing record rather than new entry. Severity 4 (ongoing harassment, exile, jailed associates).",
     "dedup_hint": "morocco | western sahara | sahrawi | pegasus | mangin | maliha | mansouri | 2022 amnesty",
     "verification_log": {
-      "verified_at": "2026-06-01T11:49:09.743Z",
+      "verified_at": "2026-06-01T12:53:15.309Z",
       "agent": "scripts/verify-candidates.js",
       "per_source": [
         {

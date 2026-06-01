@@ -4,8 +4,8 @@ Datum: 2026-06-01
 
 ## Zusammenfassung
 
-- Geprüfte Dateien: **478**
-- Saubere Dateien (keine Findings): **478**
+- Geprüfte Dateien: **541**
+- Saubere Dateien (keine Findings): **541**
 - Dateien mit Findings: **0**
 - Findings insgesamt: **0**
 

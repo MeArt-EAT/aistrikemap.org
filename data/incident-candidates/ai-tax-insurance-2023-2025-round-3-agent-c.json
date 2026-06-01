@@ -1,0 +1,1658 @@
+[
+  {
+    "candidate_id": "usa-irs-eitc-rassendisparitaet-audit-algorithmus",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: IRS-Pruefungsalgorithmus benachteiligt Schwarze Steuerzahler:innen beim EITC",
+      "name_en": "USA: IRS audit algorithm disproportionately targets Black taxpayers claiming EITC",
+      "startDate": "2023-01",
+      "location": {
+        "name_de": "Washington, D.C., USA",
+        "name_en": "Washington, D.C., USA",
+        "country": "US",
+        "lat": 38.8951,
+        "lng": -77.0364
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Eine Stanford-Studie vom Januar 2023 wies anhand von rund 148 Millionen Steuererklaerungen und 780.000 Pruefungen (2010-2018) nach, dass Schwarze Steuerzahler:innen 2,9- bis 4,7-mal haeufiger vom IRS gepruet wurden als nicht-Schwarze. Fast 80 Prozent des Unterschieds entfielen auf EITC-Antragsteller:innen, deren Faelle von einem Auswahlalgorithmus disproportional fuer Pruefung markiert wurden. IRS-Commissioner Werfel bestaetigte im Mai 2023 die Disparitaeten; TIGTA leitete drei Folge-Audits ein.",
+      "description_en": "A Stanford study published in January 2023, based on approximately 148 million returns and 780,000 audits (2010-2018), found that Black taxpayers were audited 2.9 to 4.7 times more often than non-Black taxpayers. Nearly 80% of the gap stemmed from EITC claimants whose returns an automated selection algorithm flagged disproportionately. IRS Commissioner Werfel confirmed the disparity in May 2023; TIGTA opened three follow-up audits.",
+      "actors": [
+        {
+          "name": "Internal Revenue Service (IRS)",
+          "type": "government",
+          "systems": [
+            "EITC audit selection algorithm",
+            "Dependent Database"
+          ]
+        },
+        {
+          "name": "Stanford Institute for Economic Policy Research (SIEPR)",
+          "type": "academic",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://siepr.stanford.edu/publications/working-paper/measuring-and-mitigating-racial-disparities-tax-audits",
+          "title": "Measuring and Mitigating Racial Disparities in Tax Audits",
+          "publisher": "Stanford SIEPR",
+          "date": "2023-01",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://law.stanford.edu/press/irs-confirms-stanford-study-of-racial-bias-in-audits/",
+          "title": "IRS Confirms Stanford Study of Racial Bias in Audits",
+          "publisher": "Stanford Law School",
+          "date": "2023-05-15",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.taxnotes.com/research/federal/other-documents/treasury-reports/irs-must-better-address-racial-disparities-audits-tigta-says/7s6h5",
+          "title": "IRS Must Better Address Racial Disparities in Audits, TIGTA Says",
+          "publisher": "Tax Notes / TIGTA",
+          "date": "2024",
+          "type": "government-document"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch: peer-reviewed Studie + offizielle IRS-Bestaetigung + TIGTA-Audits. Verification 4 gerechtfertigt. Datum 2023-01 = Stanford-Paper-Release.",
+    "dedup_hint": "irs | eitc | audit bias | stanford | racial disparity | 2023",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:46:55.642Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://siepr.stanford.edu/publications/working-paper/measuring-and-mitigating-racial-disparities-tax-audits",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.85 hits=8 year=2023"
+        },
+        {
+          "url": "https://law.stanford.edu/press/irs-confirms-stanford-study-of-racial-bias-in-audits/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.85 hits=8 year=2023"
+        },
+        {
+          "url": "https://www.taxnotes.com/research/federal/other-documents/treasury-reports/irs-must-better-address-racial-disparities-audits-tigta-says/7s6h5",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-irs-pruefungsalgorithmus-benachteiligt-schwarze-steuerzahler-innen-beim-eitc-2023",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "niederlande-belastingdienst-fsv-bussgeld-2022",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Niederlande: 3,7-Mio-EUR-Bussgeld gegen Belastingdienst fuer illegale FSV-Schwarzliste",
+      "name_en": "Netherlands: EUR 3.7 million fine against Belastingdienst for illegal FSV blacklist",
+      "startDate": "2022-04",
+      "location": {
+        "name_de": "Den Haag, Niederlande",
+        "name_en": "The Hague, Netherlands",
+        "country": "NL",
+        "lat": 52.0705,
+        "lng": 4.3007
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse",
+        "surveillance"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Die niederlaendische Datenschutzbehoerde Autoriteit Persoonsgegevens verhaengte im April 2022 ein Bussgeld von 3,7 Millionen Euro gegen den Belastingdienst, weil dieser von Ende 2013 bis Anfang 2020 in der Fraude Signalering Voorziening (FSV) ueber 270.000 Menschen ohne Rechtsgrundlage als Betrugsverdaechtige fuehrte. Mitarbeitende basierten Risikobewertungen teils auf Nationalitaet und Aeusserem; tuerkische, marokkanische und osteuropaeische Buerger:innen wurden ohne Grund weiter untersucht. Beschwerden gegen die Akteneinsicht laufen bis 2024 weiter.",
+      "description_en": "The Dutch data protection authority Autoriteit Persoonsgegevens fined the Belastingdienst EUR 3.7 million in April 2022 for keeping more than 270,000 people on the Fraude Signalering Voorziening (FSV) blacklist between late 2013 and early 2020 without any legal basis. Staff partly based fraud-risk scoring on nationality and appearance; Turkish, Moroccan and Eastern European citizens were singled out for further investigation. Disputes over file access continued into 2024.",
+      "actors": [
+        {
+          "name": "Belastingdienst (Dutch Tax Administration)",
+          "type": "government",
+          "systems": [
+            "Fraude Signalering Voorziening (FSV)"
+          ]
+        },
+        {
+          "name": "Autoriteit Persoonsgegevens (Dutch DPA)",
+          "type": "regulator",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.edpb.europa.eu/news/national-news/2022/tax-administration-fined-fraud-black-list_en",
+          "title": "Tax Administration fined for fraud 'black list'",
+          "publisher": "European Data Protection Board / Autoriteit Persoonsgegevens",
+          "date": "2022-04",
+          "type": "regulatory-decision"
+        },
+        {
+          "url": "https://nltimes.nl/2023/11/02/dutch-data-privacy-investigation-targets-tax-authority-keeping-mega-database",
+          "title": "Dutch Data Privacy investigation targets the Tax Authority for keeping mega database",
+          "publisher": "NL Times",
+          "date": "2023-11-02",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.itenrecht.nl/artikelen/belastingdienst-gaf-genoeg-inzage-in-fsv-gegevens-geen-extra-informatie-of-schadevergoeding-toegewezen",
+          "title": "Belastingdienst gaf genoeg inzage in FSV-gegevens",
+          "publisher": "ITenRecht",
+          "date": "2024",
+          "type": "legal-ruling"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence hoch. FSV ist eigenstaendig zur Toeslagenaffaire (die im Bestand bereits dokumentiert ist); FSV betrifft generelle Betrugsschwarzliste, nicht nur Kindergeld. Sollte als separater Vorfall promotbar sein.",
+    "dedup_hint": "belastingdienst | fsv | blacklist | dutch dpa fine | 2022 | not toeslagen",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:46:56.583Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.edpb.europa.eu/news/national-news/2022/tax-administration-fined-fraud-black-list_en",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=8 year=2022"
+        },
+        {
+          "url": "https://nltimes.nl/2023/11/02/dutch-data-privacy-investigation-targets-tax-authority-keeping-mega-database",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.41 hits=7"
+        },
+        {
+          "url": "https://www.itenrecht.nl/artikelen/belastingdienst-gaf-genoeg-inzage-in-fsv-gegevens-geen-extra-informatie-of-schadevergoeding-toegewezen",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.12"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "niederlande-3-7-mio-eur-bussgeld-gegen-belastingdienst-fuer-illegale-fsv-schwarzliste-2022",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "italien-agenzia-entrate-vera-algorithmus-2022",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Italien: VeRa-KI der Agenzia delle Entrate scannt Bankkonten und E-Rechnungen",
+      "name_en": "Italy: Agenzia delle Entrate's VeRa AI cross-references bank accounts and e-invoices",
+      "startDate": "2022-06",
+      "location": {
+        "name_de": "Rom, Italien",
+        "name_en": "Rome, Italy",
+        "country": "IT",
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
+      "incidentType": [
+        "surveillance",
+        "data-misuse"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "Die italienische Steuerbehoerde Agenzia delle Entrate setzt seit Juni 2022 den KI-Algorithmus VeRa (Verifica dei Rapporti finanziari) ein, der Steuererklaerungen mit Einkommens-, Eigentums-, Bankkonto- und elektronischen Zahlungsdaten abgleicht. 2022 flaggte VeRa eine Million Hochrisiko-Mehrwertsteuerfaelle. Datenschuetzer:innen kritisieren den Eingriff in Bankgeheimnis und Privatsphaere; ein erweiterter Chatbot wurde 2024 ausgerollt.",
+      "description_en": "Italy's tax authority Agenzia delle Entrate has been deploying the VeRa AI algorithm (Verifica dei Rapporti finanziari) since June 2022. It cross-references tax filings with income, property, bank-account and electronic-payment data. In 2022 alone VeRa flagged one million high-risk VAT cases. Privacy advocates criticised the encroachment on banking secrecy; an expanded chatbot layer launched in 2024.",
+      "actors": [
+        {
+          "name": "Agenzia delle Entrate",
+          "type": "government",
+          "systems": [
+            "VeRa",
+            "Sogei e-invoice cross-check chatbot"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://oecd.ai/en/incidents/2022-06-30-4ba2",
+          "title": "Italy Deploys AI Algorithm 'Vera' to Combat Tax Evasion",
+          "publisher": "OECD AI Incidents Database",
+          "date": "2022-06-30",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://www.vatcalc.com/italy/italy-ai-tackling-vat-fraud/",
+          "title": "Italy AI tackling VAT fraud",
+          "publisher": "vatcalc.com",
+          "date": "2024",
+          "type": "analysis"
+        },
+        {
+          "url": "https://taxadmin.ai/country/italy-ai-country-report/",
+          "title": "Italy - AI Country Report",
+          "publisher": "TaxAdmin.AI",
+          "date": "2024",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Existenz und Scope von VeRa gut belegt. Konkrete Schadensfaelle (False-Positives gegen Buerger:innen) bislang nicht oeffentlich quantifiziert, daher severity 2 / verification 3. Risiko-Vorfall, nicht Schadens-Vorfall.",
+    "dedup_hint": "italy | vera | agenzia entrate | vat ai | 2022",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:46:58.740Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://oecd.ai/en/incidents/2022-06-30-4ba2",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.55 hits=6 year=2022"
+        },
+        {
+          "url": "https://www.vatcalc.com/italy/italy-ai-tackling-vat-fraud/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://taxadmin.ai/country/italy-ai-country-report/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.35 hits=3 year=2022"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "italien-vera-ki-der-agenzia-delle-entrate-scannt-bankkonten-und-e-rechnungen-2022",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "australien-ato-robotax-altschulden-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "Australien: ATO-Robotax loest Altschulden gegen Klein-Steuerzahler:innen aus",
+      "name_en": "Australia: ATO 'robotax' auto-collects historic debts from small taxpayers",
+      "startDate": "2024-02",
+      "location": {
+        "name_de": "Canberra, Australien",
+        "name_en": "Canberra, Australia",
+        "country": "AU",
+        "lat": -35.2809,
+        "lng": 149.13
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Anfang 2024 begann das Australian Taxation Office (ATO), teils Jahre alte Steuerschulden bei Privatpersonen und Kleinunternehmen automatisiert wiederzubeleben und mit Erstattungen zu verrechnen. Medien und Buendnisgruene zogen Parallelen zum Robodebt-Skandal und tauften den Vorgang Robotax. Im Geschaeftsjahr 2023-24 stellte das ATO 6.150 Garnishee-Notices aus; der australische Auditor-General attestierte dem ATO Anfang 2025 nur teilweise wirksame Governance fuer KI-Adoption.",
+      "description_en": "In early 2024 the Australian Taxation Office began auto-reviving years-old tax debts of individuals and small businesses and offsetting them against refunds. The Guardian and the Greens labelled it 'robotax' in a deliberate echo of the Robodebt scandal. The ATO issued 6,150 garnishee notices in FY 2023-24; the Auditor-General found in early 2025 that ATO's AI-adoption governance was only partly effective.",
+      "actors": [
+        {
+          "name": "Australian Taxation Office (ATO)",
+          "type": "government",
+          "systems": [
+            "Automated debt collection / garnishee system"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.crikey.com.au/2024/04/02/robotax-australia-tax-office-guardian-the-greens/",
+          "title": "Robotax? More like a robo-beatup that misleads readers and duds taxpayers",
+          "publisher": "Crikey",
+          "date": "2024-04-02",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.anao.gov.au/sites/default/files/2025-02/Auditor-General_Report_2024-25_26.pdf",
+          "title": "Auditor-General Report No. 26 2024-25: Governance of AI adoption at the ATO",
+          "publisher": "Australian National Audit Office",
+          "date": "2025-02",
+          "type": "government-document"
+        },
+        {
+          "url": "https://www.lexology.com/library/detail.aspx?g=e066bded-3474-4263-9ecb-ab3a3a10bfbe",
+          "title": "Australian Taxation Office Corporate Plan 2024-25: key focus areas",
+          "publisher": "Lexology",
+          "date": "2024",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Robotax ist umstrittener Begriff (Crikey ordnet ihn polemisch ein), aber ANAO-Bericht bestaetigt Governance-Defizite bei KI-Adoption. Promotion-faehig als Risiko-/Verwaltungsvorfall.",
+    "dedup_hint": "ato | robotax | australia | garnishee | 2024 | not robodebt",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:23.924Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.crikey.com.au/2024/04/02/robotax-australia-tax-office-guardian-the-greens/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.anao.gov.au/sites/default/files/2025-02/Auditor-General_Report_2024-25_26.pdf",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://www.lexology.com/library/detail.aspx?g=e066bded-3474-4263-9ecb-ab3a3a10bfbe",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 3
+    }
+  },
+  {
+    "candidate_id": "frankreich-dgfip-foncier-innovant-pool-detektion-2023",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Frankreich: DGFiP-KI 'Foncier Innovant' identifiziert 140.000 nicht gemeldete Pools",
+      "name_en": "France: DGFiP's 'Foncier Innovant' AI flags 140,000 undeclared swimming pools",
+      "startDate": "2023-08",
+      "location": {
+        "name_de": "Paris, Frankreich",
+        "name_en": "Paris, France",
+        "country": "FR",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      "incidentType": [
+        "surveillance",
+        "data-misuse"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 4,
+      "description_de": "Die franzoesische Steuerverwaltung DGFiP setzt seit 2021 das mit Google und Capgemini entwickelte KI-System Foncier Innovant ein, das Luftbilder des IGN automatisch nach nicht gemeldeten Bauten auf Privatgrundstuecken durchsucht. 2023 wurden 140.000 nicht deklarierte Pools entdeckt, was 40 Millionen Euro zusaetzliche Grundsteuer einbrachte. Der Guardian dokumentierte eine Fehlerrate von rund 30 Prozent (Solarpanels als Pools falsch erkannt). Die DGFiP plant Ausweitung auf Veranden und Gartenhaeuser.",
+      "description_en": "Since 2021 France's DGFiP has used 'Foncier Innovant', an AI system built with Google and Capgemini, to scan IGN aerial imagery for undeclared structures on private property. In 2023 it flagged 140,000 unreported pools, yielding EUR 40 million in extra property tax. The Guardian documented a roughly 30% error rate (solar panels misread as pools). DGFiP plans to extend the system to verandas and garden sheds.",
+      "actors": [
+        {
+          "name": "Direction generale des Finances publiques (DGFiP)",
+          "type": "government",
+          "systems": [
+            "Foncier Innovant"
+          ]
+        },
+        {
+          "name": "Google / Capgemini",
+          "type": "company",
+          "systems": [
+            "Foncier Innovant"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://oecd.ai/en/incidents/2024-06-11-2141",
+          "title": "French tax authority uses AI to detect undeclared pools",
+          "publisher": "OECD AI Incidents Database",
+          "date": "2024-06-11",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://www.connexionfrance.com/practical/tax-authorities-discover-120000-undeclared-swimming-pools-in-france/107218",
+          "title": "Tax authorities discover undeclared swimming pools in France",
+          "publisher": "Connexion France",
+          "date": "2023",
+          "type": "news-article"
+        },
+        {
+          "url": "https://taxnatives.com/blog/french-tax-office-gets-an-ai-tool-to-inspect-your-swimming-pools/",
+          "title": "French Tax Office Gets an AI Tool to Inspect Your Swimming Pools",
+          "publisher": "Tax Natives",
+          "date": "2023",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Existenz und Skalierung gut belegt, 30%-Fehlerrate via Guardian. Severity 2: Eingriff in Privatsphaere, aber keine groben Diskriminierungs-Disparitaeten gemeldet.",
+    "dedup_hint": "france | dgfip | foncier innovant | pool detection | 2023 | aerial ai",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:24.879Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://oecd.ai/en/incidents/2024-06-11-2141",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=8 year=2023"
+        },
+        {
+          "url": "https://www.connexionfrance.com/practical/tax-authorities-discover-120000-undeclared-swimming-pools-in-france/107218",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2023"
+        },
+        {
+          "url": "https://taxnatives.com/blog/french-tax-office-gets-an-ai-tool-to-inspect-your-swimming-pools/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2023"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "frankreich-dgfip-ki-foncier-innovant-identifiziert-140-000-nicht-gemeldete-pools-2023",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "spanien-aeat-teseo-hlf-risikoscoring-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Spanien: AEAT-Strategieplan 2024-2027 erweitert KI-Risikoscoring (TESEO, HLF)",
+      "name_en": "Spain: AEAT's 2024-2027 strategic plan expands AI risk-scoring (TESEO, HLF)",
+      "startDate": "2024-03",
+      "location": {
+        "name_de": "Madrid, Spanien",
+        "name_en": "Madrid, Spain",
+        "country": "ES",
+        "lat": 40.4168,
+        "lng": -3.7038
+      },
+      "incidentType": [
+        "surveillance",
+        "data-misuse"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "Die spanische Steuerbehoerde Agencia Tributaria (AEAT) verankerte 2024 in ihrem Strategischen Plan 2024-2027 den breiten Einsatz von KI: TESEO analysiert Netzwerke ultrareicher Steuerzahler:innen mit Graphentheorie, HLF prognostiziert Risiko fuer Schwarzarbeit und Scheinbeschaeftigung, ergaenzt durch Web-Scraping von E-Commerce-Plattformen. Datenschuetzer:innen kritisieren fehlende Transparenz: Steuerzahler:innen haben keine Einsicht in Algorithmen, Daten oder Logik der Entscheidungen.",
+      "description_en": "Spain's tax authority Agencia Tributaria (AEAT) embedded broad AI deployment in its 2024-2027 Strategic Plan: TESEO maps networks of ultra-high-net-worth taxpayers using graph theory, HLF predicts non-compliance for undeclared work and bogus employment, complemented by web-scraping of e-commerce platforms. Privacy advocates criticise the lack of transparency: taxpayers have no access to the algorithms, data or logic behind decisions.",
+      "actors": [
+        {
+          "name": "Agencia Estatal de Administracion Tributaria (AEAT)",
+          "type": "government",
+          "systems": [
+            "TESEO",
+            "HLF",
+            "Web-scraping system"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://blogtributario.garrigues.com/en/procedure/this-is-the-artificial-intelligence-strategy-in-the-strategic-plan-of-the-tax-agency",
+          "title": "AI Strategy in the Strategic Plan of the Tax Agency",
+          "publisher": "Garrigues Blog Tributario",
+          "date": "2024",
+          "type": "analysis"
+        },
+        {
+          "url": "https://taxadmin.ai/country/spain-ai-country-report/",
+          "title": "Spain - AI Country Report",
+          "publisher": "TaxAdmin.AI",
+          "date": "2024",
+          "type": "analysis"
+        },
+        {
+          "url": "https://sede.agenciatributaria.gob.es/Sede/en_gb/gobierno-abierto/transparencia/informacion-institucional-organizativa-planificacion/inteligencia-artificial.html",
+          "title": "Tax Agency: Artificial Intelligence",
+          "publisher": "Agencia Tributaria",
+          "date": "2024",
+          "type": "government-document"
+        }
+      ]
+    },
+    "researcher_notes": "Verification 3: offizielle AEAT-Seite + Garrigues + TaxAdmin.AI bestaetigen Systeme. Keine konkreten False-Positive-Faelle aus 2024 oeffentlich; Risiko-/Strukturvorfall.",
+    "dedup_hint": "spain | aeat | teseo | hlf | tax ai | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:28.936Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://blogtributario.garrigues.com/en/procedure/this-is-the-artificial-intelligence-strategy-in-the-strategic-plan-of-the-tax-agency",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.47 hits=6 year=2024"
+        },
+        {
+          "url": "https://taxadmin.ai/country/spain-ai-country-report/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.32 hits=6"
+        },
+        {
+          "url": "https://sede.agenciatributaria.gob.es/Sede/en_gb/gobierno-abierto/transparencia/informacion-institucional-organizativa-planificacion/inteligencia-artificial.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.41 hits=5 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "spanien-aeat-strategieplan-2024-2027-erweitert-ki-risikoscoring-teseo-hlf",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "uk-hmrc-quantexa-connect-2024-vertrag",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Grossbritannien: HMRC unterzeichnet 175-Mio-GBP-Vertrag mit Quantexa fuer KI-Steuerfahndung",
+      "name_en": "UK: HMRC signs GBP 175 million Quantexa contract for AI tax enforcement",
+      "startDate": "2024",
+      "location": {
+        "name_de": "London, Grossbritannien",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "surveillance",
+        "data-misuse"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "Die britische Steuer- und Zollbehoerde HMRC unterzeichnete 2024 einen Zehn-Jahres-Vertrag im Wert von 175 Millionen Pfund mit der KI-Firma Quantexa und vertiefte parallel die Microsoft-Partnerschaft fuer generative KI. Die bestehende Connect-Plattform (seit 2010, mittlerweile staendig erweitert) generierte 2024/25 zusaetzliche Steuereinnahmen von 4,6 Milliarden Pfund durch Mustererkennung in Bankdaten, Sozialmedien und Lebensstil-Indikatoren. HMRC betont, dass finale Entscheidungen menschlich getroffen werden.",
+      "description_en": "Britain's HMRC signed a 10-year, GBP 175 million contract with AI firm Quantexa in 2024 and expanded its Microsoft partnership for generative AI. The existing Connect platform (in use since 2010 and steadily expanded) generated an additional GBP 4.6 billion in tax revenue in 2024/25 through pattern detection across bank data, social media and lifestyle indicators. HMRC stresses that final determinations remain human-made.",
+      "actors": [
+        {
+          "name": "HM Revenue & Customs (HMRC)",
+          "type": "government",
+          "systems": [
+            "Connect",
+            "Quantexa graph analytics",
+            "Microsoft generative AI"
+          ]
+        },
+        {
+          "name": "Quantexa",
+          "type": "company",
+          "systems": [
+            "Connect / Quantexa graph platform"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.taxassist.co.uk/resources/articles/what-is-hmrc-s-connect-ai-system",
+          "title": "What is HMRC's Connect AI System?",
+          "publisher": "TaxAssist Accountants",
+          "date": "2024",
+          "type": "analysis"
+        },
+        {
+          "url": "https://fintechmagazine.com/news/hmrc-how-ai-is-transforming-tax-collection-and-fraud-tech",
+          "title": "HMRC: How AI is Transforming Tax Collection and Fraud Tech",
+          "publisher": "FinTech Magazine",
+          "date": "2024",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.finsburyrobinson.co.uk/articles/hmrc-using-technology-and-ai-to-close-the-tax-gap",
+          "title": "HMRC: Using technology and AI to close the tax gap",
+          "publisher": "Finsbury Robinson",
+          "date": "2024",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Strukturvorfall. Verification 3: Vertragswert/Skalierung gut belegt, aber keine spezifischen Diskriminierungsfaelle gemeldet bislang.",
+    "dedup_hint": "hmrc | connect | quantexa | uk tax ai | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:32.003Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.taxassist.co.uk/resources/articles/what-is-hmrc-s-connect-ai-system",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://fintechmagazine.com/news/hmrc-how-ai-is-transforming-tax-collection-and-fraud-tech",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.59 hits=7 year=2024"
+        },
+        {
+          "url": "https://www.finsburyrobinson.co.uk/articles/hmrc-using-technology-and-ai-to-close-the-tax-gap",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.34 hits=3 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "uk-hmrc-unterzeichnet-175-mio-gbp-vertrag-mit-quantexa-fuer-ki-steuerfahndung-2024",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "usa-allstate-arity-texas-paxton-klage-2025",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Texas verklagt Allstate und Arity wegen heimlicher Fahrdaten-Sammlung von 45 Millionen Nutzer:innen",
+      "name_en": "USA: Texas sues Allstate and Arity over covert driving-data collection from 45 million users",
+      "startDate": "2025-01",
+      "location": {
+        "name_de": "Austin, Texas, USA",
+        "name_en": "Austin, Texas, USA",
+        "country": "US",
+        "lat": 30.2672,
+        "lng": -97.7431
+      },
+      "incidentType": [
+        "surveillance",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Am 13. Januar 2025 verklagte der texanische Generalstaatsanwalt Ken Paxton Allstate und seine Tochter Arity wegen illegaler Sammlung von Bewegungs- und Geodaten von ueber 45 Millionen US-Verbraucher:innen via heimlich eingebetteter SDKs in Apps wie Life360, Routely und Fuel Rewards. Die so entstandene 'weltgroesste Datenbank zu Fahrverhalten' wurde an Versicherer verkauft, um Praemien fuer Texaner:innen zu erhoehen. Es handelt sich um den ersten Vollstreckungsfall des Texas Data Privacy and Security Act (TDPSA).",
+      "description_en": "On 13 January 2025 Texas Attorney General Ken Paxton sued Allstate and its subsidiary Arity for unlawfully collecting movement and geolocation data from over 45 million U.S. consumers via covertly embedded SDKs in apps such as Life360, Routely and Fuel Rewards. The resulting 'world's largest driving-behaviour database' was sold to insurers to justify raising premiums for Texans. It is the first enforcement action under the Texas Data Privacy and Security Act (TDPSA).",
+      "actors": [
+        {
+          "name": "Allstate Corporation",
+          "type": "company",
+          "systems": [
+            "Arity SDK"
+          ]
+        },
+        {
+          "name": "Arity (Allstate subsidiary)",
+          "type": "company",
+          "systems": [
+            "Driving-behaviour analytics platform"
+          ]
+        },
+        {
+          "name": "Texas Office of the Attorney General",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-sues-allstate-and-arity-unlawfully-collecting-using-and-selling-over-45",
+          "title": "Attorney General Ken Paxton Sues Allstate and Arity",
+          "publisher": "Texas Office of the Attorney General",
+          "date": "2025-01-13",
+          "type": "government-document"
+        },
+        {
+          "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20250121-texas-ag-brings-first-ever-lawsuit-under-a-state-comprehensive-privacy-law",
+          "title": "Texas AG Brings First Ever Lawsuit Under a State Comprehensive Privacy Law",
+          "publisher": "WilmerHale",
+          "date": "2025-01-21",
+          "type": "analysis"
+        },
+        {
+          "url": "https://ourtake.bakerbotts.com/post/102jty1/a-landmark-lawsuit-in-data-privacy-texas-v-allstate",
+          "title": "A Landmark Lawsuit in Data Privacy: Texas v. Allstate",
+          "publisher": "Baker Botts",
+          "date": "2025",
+          "type": "court-filing"
+        }
+      ]
+    },
+    "researcher_notes": "Confidence sehr hoch (offizielle State-AG-Klage). Severity 4 wegen Massstab (45 Mio Personen) und Versicherungspreiseffekt.",
+    "dedup_hint": "allstate | arity | texas paxton | driving data | 2025 | tdpsa",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:34.203Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-sues-allstate-and-arity-unlawfully-collecting-using-and-selling-over-45",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.69 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20250121-texas-ag-brings-first-ever-lawsuit-under-a-state-comprehensive-privacy-law",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2025"
+        },
+        {
+          "url": "https://ourtake.bakerbotts.com/post/102jty1/a-landmark-lawsuit-in-data-privacy-texas-v-allstate",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.69 hits=8 year=2025"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-texas-verklagt-allstate-und-arity-wegen-heimlicher-fahrdaten-sammlung-von-45",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "usa-state-farm-kelly-alabama-ki-diskriminierung-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: State Farm verklagt wegen KI-Diskriminierung Schwarzer behinderter Hausbesitzer in Alabama",
+      "name_en": "USA: State Farm sued over AI discrimination against Black disabled homeowners in Alabama",
+      "startDate": "2024",
+      "location": {
+        "name_de": "Montgomery, Alabama, USA",
+        "name_en": "Montgomery, Alabama, USA",
+        "country": "US",
+        "lat": 32.3792,
+        "lng": -86.3077
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Die aelteren, behinderten Schwarzen Eheleute Gregory und Annette B. Kelly aus Montgomery, Alabama, verklagten 2024 State Farm vor einem US-Bundesgericht. Sie werfen dem Versicherer vor, ihre Hausrat-Schadensanmeldungen aufgrund algorithmischer Risikoscoring-Verfahren systematisch staerker zu pruefen, zu verzoegern und teilweise abzulehnen. Die Klage reiht sich in eine wachsende Welle gegen Versicherer (Cigna, Humana, UnitedHealth, State Farm), die KI-Systeme fuer Massen-Schadensabwicklung einsetzen.",
+      "description_en": "Elderly, disabled Black spouses Gregory and Annette B. Kelly of Montgomery, Alabama, sued State Farm in U.S. federal court in 2024. They allege the insurer subjected their homeowner claims to heightened algorithmic scrutiny, delay and partial denial because of race and disability. The suit joins a growing wave of cases against insurers (Cigna, Humana, UnitedHealth, State Farm) using AI systems to handle claims at scale.",
+      "actors": [
+        {
+          "name": "State Farm Insurance",
+          "type": "company",
+          "systems": [
+            "Claims-handling algorithm"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://beinsure.com/news/state-farm-hit-lawsuit-ai-bias-discrimination/",
+          "title": "State Farm hit with lawsuit over AI bias, discrimination and unpaid insurance claims",
+          "publisher": "Beinsure",
+          "date": "2024",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.insurancebusinessmag.com/us/news/claims/state-farm-hit-with-lawsuit-as-policyholders-claim-aidriven-discrimination-552156.aspx",
+          "title": "State Farm hit with lawsuit as policyholders claim AI-driven discrimination",
+          "publisher": "Insurance Business Magazine",
+          "date": "2024",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.quinnemanuel.com/the-firm/publications/when-machines-discriminate-the-rise-of-ai-bias-lawsuits/",
+          "title": "When Machines Discriminate: The Rise of AI Bias Lawsuits",
+          "publisher": "Quinn Emanuel",
+          "date": "2024",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Klage real und dokumentiert. Beim Promoten Caption-Datum praezisieren (Filing-Datum nachrecherchieren).",
+    "dedup_hint": "state farm | kelly v state farm | alabama | ai discrimination | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:36.094Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://beinsure.com/news/state-farm-hit-lawsuit-ai-bias-discrimination/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.50 hits=8"
+        },
+        {
+          "url": "https://www.insurancebusinessmag.com/us/news/claims/state-farm-hit-with-lawsuit-as-policyholders-claim-aidriven-discrimination-552156.aspx",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8"
+        },
+        {
+          "url": "https://www.quinnemanuel.com/the-firm/publications/when-machines-discriminate-the-rise-of-ai-bias-lawsuits/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.59 hits=7 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-state-farm-verklagt-wegen-ki-diskriminierung-schwarzer-behinderter-hausbesitzer-in",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "usa-lemonade-bipa-biometrie-klage-illinois",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Lemonade-Sammelklage wegen heimlicher Gesichts-Biometrie zur KI-Betrugserkennung",
+      "name_en": "USA: Lemonade class action over covert facial biometrics for AI fraud detection",
+      "startDate": "2021-05",
+      "location": {
+        "name_de": "Chicago / Illinois, USA",
+        "name_en": "Chicago / Illinois, USA",
+        "country": "US",
+        "lat": 41.8781,
+        "lng": -87.6298
+      },
+      "incidentType": [
+        "facial-recognition",
+        "data-misuse",
+        "discrimination"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Mai 2021 prahlte das KI-Versicherungs-Startup Lemonade auf Twitter damit, dass seine Betrugs-KI 'non-verbale Hinweise' in Video-Schadensmeldungen analysiere. Nach Backlash relativierte Lemonade die Aussage als 'schlechte Wortwahl' fuer Gesichtserkennung. Eine BIPA-Sammelklage in Illinois warf dem Unternehmen vor, Gesichtsgeometrien ohne vorherige Offenlegung und Einwilligung erfasst zu haben. Die Anhoerung zur Schlussgenehmigung des Vergleichs war fuer 25.8.2022 angesetzt. Faelle illustrieren strukturelle Risiken affektbasierter Versicherungs-KI.",
+      "description_en": "In May 2021 the AI insurance startup Lemonade boasted on Twitter that its anti-fraud AI analyses 'non-verbal cues' in video claim submissions. After backlash, Lemonade reframed the post as a 'bad choice of words' for facial-recognition technology. A class action under the Illinois Biometric Information Privacy Act (BIPA) accused the firm of capturing facial geometries without prior disclosure or consent. A final-approval hearing was set for 25 August 2022. The case illustrates structural risks of affect-based insurance AI.",
+      "actors": [
+        {
+          "name": "Lemonade, Inc.",
+          "type": "company",
+          "systems": [
+            "AI Jim claims bot",
+            "Facial-geometry fraud detection"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.classaction.org/news/ai-driven-insurer-lemonade-illegally-captures-ill-residents-biometric-data-class-action-alleges",
+          "title": "AI-Driven Insurer Lemonade Illegally Captures Ill. Residents' Biometric Data, Class Action Alleges",
+          "publisher": "ClassAction.org",
+          "date": "2021",
+          "type": "court-filing"
+        },
+        {
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/lemonade-faces-class-action-lawsuit-over-alleged-mishandling-of-customers-biometric-data-308303.aspx",
+          "title": "Lemonade faces class action lawsuit over alleged mishandling of customers' biometric data",
+          "publisher": "Insurance Business Magazine",
+          "date": "2021",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.raiznerlaw.com/insights/lemonade-insurances-ai-technology-could-lead-to-wrongful-denial-of-claims/",
+          "title": "Lemonade Insurance's AI Technology Could Lead to Wrongful Denial of Claims",
+          "publisher": "Raizner Slania LLP",
+          "date": "2023",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Aelteres Ereignis (2021) aber bleibender Praezedenzfall. Spaeter durch BIPA-Vergleich abgeschlossen. Im Round-3-Scope grenzwertig; Promote-Pruefer entscheiden.",
+    "dedup_hint": "lemonade | bipa | facial geometry | ai jim | illinois | 2021-2022",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:37.463Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.classaction.org/news/ai-driven-insurer-lemonade-illegally-captures-ill-residents-biometric-data-class-action-alleges",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.53 hits=6 year=2021"
+        },
+        {
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/lemonade-faces-class-action-lawsuit-over-alleged-mishandling-of-customers-biometric-data-308303.aspx",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.46 hits=5 year=2021"
+        },
+        {
+          "url": "https://www.raiznerlaw.com/insights/lemonade-insurances-ai-technology-could-lead-to-wrongful-denial-of-claims/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.46 hits=5 year=2021"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-lemonade-sammelklage-wegen-heimlicher-gesichts-biometrie-zur-ki-betrugserkennung-2021",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "usa-humana-nh-predict-medicare-klage-2023",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Sammelklage gegen Humana wegen nH-Predict-KI bei Medicare-Advantage-Ablehnungen",
+      "name_en": "USA: Class action against Humana over nH Predict AI denying Medicare Advantage claims",
+      "startDate": "2023-12",
+      "location": {
+        "name_de": "Louisville, Kentucky, USA",
+        "name_en": "Louisville, Kentucky, USA",
+        "country": "US",
+        "lat": 38.2527,
+        "lng": -85.7585
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Am 12. Dezember 2023 wurde am US-Bezirksgericht fuer den Western District of Kentucky eine Sammelklage gegen Humana eingereicht (Barrows et al. v. Humana). Vorwurf: Humana setzt die KI nH Predict ein, um die Aufenthaltsdauer in Pflegeeinrichtungen vorherzusagen und Reha-Leistungen fuer Medicare-Advantage-Senior:innen abzulehnen, auch gegen aerztliche Empfehlungen. Mitarbeitende mussten den Algorithmus-Vorgaben folgen, oder ihnen drohte Entlassung. Im August 2025 erlaubte Richterin Jennings den Fortgang ohne vorgelagerte Medicare-Beschwerdeprozedur.",
+      "description_en": "On 12 December 2023 a class action was filed against Humana in the U.S. District Court for the Western District of Kentucky (Barrows et al. v. Humana). The complaint alleges Humana uses the nH Predict AI to predict skilled-nursing length of stay and to deny rehab coverage for Medicare Advantage seniors, overriding treating-physician recommendations. Staff were required to stay within algorithmic targets or face discipline. In August 2025 Judge Jennings allowed the case to proceed without requiring prior Medicare administrative exhaustion.",
+      "actors": [
+        {
+          "name": "Humana Inc.",
+          "type": "company",
+          "systems": [
+            "nH Predict (via naviHealth)"
+          ]
+        },
+        {
+          "name": "naviHealth (Optum subsidiary)",
+          "type": "company",
+          "systems": [
+            "nH Predict"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.statnews.com/2023/12/12/humana-algorithm-medicare-advantage-patients-lawsuit/",
+          "title": "Humana used algorithm in 'fraudulent scheme' to deny care to Medicare Advantage patients",
+          "publisher": "STAT News",
+          "date": "2023-12-12",
+          "type": "news-article"
+        },
+        {
+          "url": "https://litigationtracker.law.georgetown.edu/litigation/barrows-et-al-v-humana-inc/",
+          "title": "Barrows et al. v. Humana, Inc.",
+          "publisher": "Georgetown Law Health Care Litigation Tracker",
+          "date": "2023-12",
+          "type": "court-filing"
+        },
+        {
+          "url": "https://www.healthcaredive.com/news/medicare-advantage-AI-denials-cvs-humana-unitedhealthcare-senate-report/730383/",
+          "title": "Senate report slams Medicare Advantage insurers for using predictive technology to deny claims",
+          "publisher": "Healthcare Dive / US Senate Permanent Subcommittee on Investigations",
+          "date": "2024-10",
+          "type": "government-document"
+        }
+      ]
+    },
+    "researcher_notes": "Eigenstaendig zur UnitedHealth-nH-Predict-Klage (im Bestand). Humana-Klage ist separater Vorfall. Senate-Report 2024 erhoeht Belegdichte.",
+    "dedup_hint": "humana | nh predict | barrows | medicare advantage | 2023 | not unitedhealth",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:39.502Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.statnews.com/2023/12/12/humana-algorithm-medicare-advantage-patients-lawsuit/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2023"
+        },
+        {
+          "url": "https://litigationtracker.law.georgetown.edu/litigation/barrows-et-al-v-humana-inc/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.59 hits=7 year=2023"
+        },
+        {
+          "url": "https://www.healthcaredive.com/news/medicare-advantage-AI-denials-cvs-humana-unitedhealthcare-senate-report/730383/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2023"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-sammelklage-gegen-humana-wegen-nh-predict-ki-bei-medicare-advantage-ablehnungen-2023",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "usa-naic-model-bulletin-ai-2023",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: NAIC Model Bulletin zu KI-Einsatz in Versicherungen — von 24 Bundesstaaten uebernommen",
+      "name_en": "USA: NAIC Model Bulletin on insurance AI — adopted by 24 states",
+      "startDate": "2023-12",
+      "location": {
+        "name_de": "Kansas City, USA",
+        "name_en": "Kansas City, USA",
+        "country": "US",
+        "lat": 39.0997,
+        "lng": -94.5786
+      },
+      "incidentType": [
+        "data-misuse",
+        "discrimination"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 4,
+      "description_de": "Im Dezember 2023 verabschiedete die National Association of Insurance Commissioners (NAIC) das Model Bulletin on the Use of Artificial Intelligence Systems by Insurers. Bis Maerz 2025 haben 24 US-Bundesstaaten das Bulletin im Wesentlichen unverdaendert uebernommen; bis Anfang 2026 ueber die Haelfte aller Staaten. Versicherer muessen Governance, Risikomanagement, Bias-Tests und Dokumentation fuer KI-Systeme nachweisen. Auswirkung: erste verbindliche Compliance-Schicht gegen algorithmische Diskriminierung in US-Versicherungen.",
+      "description_en": "In December 2023 the National Association of Insurance Commissioners (NAIC) adopted the Model Bulletin on the Use of Artificial Intelligence Systems by Insurers. By March 2025 24 U.S. states had adopted the bulletin with little or no material change; by early 2026 more than half of all states. Insurers must demonstrate governance, risk-management, bias-testing and documentation for AI systems. Effect: the first binding compliance layer against algorithmic discrimination in U.S. insurance.",
+      "actors": [
+        {
+          "name": "National Association of Insurance Commissioners (NAIC)",
+          "type": "regulator",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://content.naic.org/sites/default/files/inline-files/AI%20Model%20Bulletin%20-%20April%202024.pdf",
+          "title": "AI Model Bulletin",
+          "publisher": "NAIC",
+          "date": "2023-12 / 2024-04",
+          "type": "regulatory-decision"
+        },
+        {
+          "url": "https://www.mwe.com/insights/state-regulators-address-insurers-use-of-ai-11-states-adopt-naic-model-bulletin/",
+          "title": "State Regulators Address Insurers' Use of AI: 11 States Adopt NAIC Model Bulletin",
+          "publisher": "McDermott Will & Emery",
+          "date": "2024",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.quarles.com/newsroom/publications/nearly-half-of-states-have-now-adopted-naic-model-bulletin-on-insurers-use-of-ai",
+          "title": "Nearly Half of States Have Now Adopted NAIC Model Bulletin",
+          "publisher": "Quarles Law Firm",
+          "date": "2025-2026",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Regulatorisches Gegen-Ereignis ('Consequences'-Achse), nicht Schadensfall. Severity 2 — qualifiziert als wichtige Doktrin-Marke.",
+    "dedup_hint": "naic | model bulletin | insurance ai | 2023-2024 | state adoption",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:41.690Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://content.naic.org/sites/default/files/inline-files/AI%20Model%20Bulletin%20-%20April%202024.pdf",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        },
+        {
+          "url": "https://www.mwe.com/insights/state-regulators-address-insurers-use-of-ai-11-states-adopt-naic-model-bulletin/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.75 hits=8 year=2023"
+        },
+        {
+          "url": "https://www.quarles.com/newsroom/publications/nearly-half-of-states-have-now-adopted-naic-model-bulletin-on-insurers-use-of-ai",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.82 hits=8 year=2023"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-naic-model-bulletin-zu-ki-einsatz-in-versicherungen-von-24-bundesstaaten-uebernommen",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "usa-nydfs-circular-letter-7-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: New York DFS Circular Letter No. 7 (2024) — verbindliche KI-Regeln fuer Versicherungs-Underwriting",
+      "name_en": "USA: New York DFS Circular Letter No. 7 (2024) — binding AI rules for insurance underwriting",
+      "startDate": "2024-07-11",
+      "location": {
+        "name_de": "New York City, USA",
+        "name_en": "New York City, USA",
+        "country": "US",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "incidentType": [
+        "data-misuse",
+        "discrimination"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 4,
+      "description_de": "Am 11. Juli 2024 finalisierte das New York Department of Financial Services das Insurance Circular Letter No. 7. Versicherer in NY duerfen KI-Systeme (AIS) und externe Verbraucherdatenquellen (ECDIS) im Underwriting und Pricing nur einsetzen, wenn nachgewiesen ist, dass diese keinen Bezug zu Article-26-Schutzklassen haben. Bei adversen Entscheidungen muss binnen 15 Tagen schriftlich erklaert werden, welche Daten und Quellen verwendet wurden. Carrier haften auch fuer Drittanbieter-Modelle.",
+      "description_en": "On 11 July 2024 the New York Department of Financial Services finalised Insurance Circular Letter No. 7. Insurers in New York may use AI systems (AIS) and external consumer data and information sources (ECDIS) in underwriting and pricing only if they can demonstrate that these do not use or rely on Article 26 protected classes. Adverse decisions trigger a 15-day written notice naming all data and sources. Carriers remain liable for third-party models.",
+      "actors": [
+        {
+          "name": "New York State Department of Financial Services (NYDFS)",
+          "type": "regulator",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.dfs.ny.gov/industry-guidance/circular-letters/cl2024-07",
+          "title": "Insurance Circular Letter No. 7 (2024)",
+          "publisher": "New York State DFS",
+          "date": "2024-07-11",
+          "type": "regulatory-decision"
+        },
+        {
+          "url": "https://www.debevoise.com/insights/publications/2024/07/nydfs-adopts-final-circular-on-use-of-ai",
+          "title": "NYDFS Adopts Final Circular on Use of AI or External Data by Insurers",
+          "publisher": "Debevoise & Plimpton",
+          "date": "2024-07",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.foley.com/insights/publications/2024/07/ny-dept-financial-services-guidance-ai-insurance/",
+          "title": "NY Dept Financial Services Guidance AI Insurance",
+          "publisher": "Foley & Lardner",
+          "date": "2024-07",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Doktrin-/Regulierungsmarke. Severity 2. Komplementaer zu NAIC Model Bulletin.",
+    "dedup_hint": "nydfs | circular letter 7 | new york | insurance ai | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:42.671Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.dfs.ny.gov/industry-guidance/circular-letters/cl2024-07",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.82 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.debevoise.com/insights/publications/2024/07/nydfs-adopts-final-circular-on-use-of-ai",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.76 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.foley.com/insights/publications/2024/07/ny-dept-financial-services-guidance-ai-insurance/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.76 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-new-york-dfs-circular-letter-no-7-2024-verbindliche-ki-regeln-fuer-versicherungs",
+    "promoted_at": "2026-06-01T12:57:02.103Z"
+  },
+  {
+    "candidate_id": "usa-colorado-sb21-169-lebensversicherung-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Colorado SB21-169 wird operativ — Lebensversicherer muessen bis Dezember 2024 KI-Bias-Tests vorlegen",
+      "name_en": "USA: Colorado SB21-169 takes effect — life insurers must prove AI bias tests by December 2024",
+      "startDate": "2024-06-01",
+      "location": {
+        "name_de": "Denver, Colorado, USA",
+        "name_en": "Denver, Colorado, USA",
+        "country": "US",
+        "lat": 39.7392,
+        "lng": -104.9903
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Colorados Senate Bill 21-169 (verabschiedet 2021) wurde 2024 erstmals operativ vollstreckbar: Bis 1. Juni 2024 mussten Lebensversicherer in Colorado erste Compliance-Berichte vorlegen, bis 1. Dezember 2024 nachweisen, dass externe Verbraucherdaten (ECDIS), Algorithmen und Vorhersagemodelle keine unzulaessige Diskriminierung nach Rasse, Hautfarbe, Geschlecht, sexueller Orientierung, Behinderung oder Identitaet erzeugen. Regulation 10-1-1 (gueltig seit November 2023) gibt Governance- und Modellinventar-Anforderungen vor.",
+      "description_en": "Colorado's Senate Bill 21-169 (passed 2021) reached its first operational enforcement milestones in 2024: by 1 June 2024 life insurers in Colorado had to submit initial compliance reports, and by 1 December 2024 had to demonstrate that external consumer data (ECDIS), algorithms and predictive models do not cause unfair discrimination by race, colour, sex, sexual orientation, disability or identity. Regulation 10-1-1 (in force since November 2023) sets governance and model-inventory requirements.",
+      "actors": [
+        {
+          "name": "Colorado Division of Insurance (DOI)",
+          "type": "regulator",
+          "systems": []
+        },
+        {
+          "name": "Colorado General Assembly",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://doi.colorado.gov/for-consumers/sb21-169-protecting-consumers-from-unfair-discrimination-in-insurance-practices",
+          "title": "SB21-169 - Protecting Consumers from Unfair Discrimination in Insurance Practices",
+          "publisher": "Colorado Division of Insurance",
+          "date": "2024",
+          "type": "government-document"
+        },
+        {
+          "url": "https://www.lumenova.ai/blog/colorado-10-1-1-milestone/",
+          "title": "Colorado 10-1-1 - 1st milestone: June 1, 2024",
+          "publisher": "Lumenova AI",
+          "date": "2024",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.credo.ai/blog/colorado-sb21-169-8-things-you-need-to-know-about-colorados-new-ai-insurance-regulation",
+          "title": "8 Things You Need To Know About Colorado's New AI Insurance Regulation",
+          "publisher": "Credo AI",
+          "date": "2024",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Doktrin/Regulierungsmarke. Severity 3 wegen direkter Auswirkung auf Lebensversicherungs-Underwriting fuer marginalisierte Gruppen.",
+    "dedup_hint": "colorado | sb21-169 | regulation 10-1-1 | life insurance ai | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:44.128Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://doi.colorado.gov/for-consumers/sb21-169-protecting-consumers-from-unfair-discrimination-in-insurance-practices",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.lumenova.ai/blog/colorado-10-1-1-milestone/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.credo.ai/blog/colorado-sb21-169-8-things-you-need-to-know-about-colorados-new-ai-insurance-regulation",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.70 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-colorado-sb21-169-wird-operativ-lebensversicherer-muessen-bis-dezember-2024-ki-bias",
+    "promoted_at": "2026-06-01T12:57:02.104Z"
+  },
+  {
+    "candidate_id": "uk-fca-ai-uninsurable-warnung-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Grossbritannien: FCA-Chef warnt vor 'uninsurable' Buerger:innen durch Hyper-Personalisierung",
+      "name_en": "UK: FCA chief warns hyper-personalisation could render citizens 'uninsurable'",
+      "startDate": "2024-09",
+      "location": {
+        "name_de": "London, Grossbritannien",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "In einer Rede zur Finanzinklusion im September 2024 warnte FCA-Chef Nikhil Rathi, dass KI-gestuetzte Hyper-Personalisierung von Versicherungspraemien einzelne Kund:innengruppen 'uninsurable' machen oder diskriminieren koenne. Die FCA kuendigte im Dezember 2024 eigene Forschungsarbeit zu Bias in Supervised Machine Learning an und veroeffentlichte ein erstes Research Note. Firmen, deren KI Bias verstaerkt, koennten gegen Principle 6 und die Consumer Duty (gueltig seit 2023) verstossen.",
+      "description_en": "In a September 2024 speech on financial inclusion, FCA chief executive Nikhil Rathi warned that AI-enabled hyper-personalisation of insurance premiums could render some customer groups 'uninsurable' or expose them to discrimination. In December 2024 the FCA announced its own research on bias in supervised machine learning and published a first research note. Firms whose AI amplifies bias may breach Principle 6 and the Consumer Duty (in force since 2023).",
+      "actors": [
+        {
+          "name": "Financial Conduct Authority (FCA)",
+          "type": "regulator",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://uktech.news/news/government-and-policy/uninsurable-ai-risks-discrimination-in-insurance-warns-fca-boss-20240920",
+          "title": "'Uninsurable': AI risks discrimination in insurance warns FCA boss",
+          "publisher": "UKTech News",
+          "date": "2024-09-20",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.dacbeachcroft.com/en/What-we-think/FCA-warns-of-AI-risks-what-this-means",
+          "title": "FCA warns of AI risks: What this means",
+          "publisher": "DAC Beachcroft",
+          "date": "2024",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.bankofengland.co.uk/report/2024/artificial-intelligence-in-uk-financial-services-2024",
+          "title": "Artificial intelligence in UK financial services - 2024",
+          "publisher": "Bank of England / FCA",
+          "date": "2024",
+          "type": "government-document"
+        }
+      ]
+    },
+    "researcher_notes": "Doktrin-Vorfall, kein Schadenscase. Severity 2. Wichtig als regulatorische Warnschuss-Marke.",
+    "dedup_hint": "fca | rathi | uninsurable | uk insurance ai | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:48.706Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://uktech.news/news/government-and-policy/uninsurable-ai-risks-discrimination-in-insurance-warns-fca-boss-20240920",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.dacbeachcroft.com/en/What-we-think/FCA-warns-of-AI-risks-what-this-means",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.70 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.bankofengland.co.uk/report/2024/artificial-intelligence-in-uk-financial-services-2024",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.50 hits=7 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "uk-fca-chef-warnt-vor-uninsurable-buerger-innen-durch-hyper-personalisierung-2024",
+    "promoted_at": "2026-06-01T12:57:02.104Z"
+  },
+  {
+    "candidate_id": "usa-mobley-workday-ki-altersdiskriminierung-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Mobley v. Workday — EEOC stuetzt Sammelklage zu KI-Bewerber-Screening (Alter, Race, Behinderung)",
+      "name_en": "USA: Mobley v. Workday — EEOC backs class action over AI applicant screening (age, race, disability)",
+      "startDate": "2024-07",
+      "location": {
+        "name_de": "San Francisco, Kalifornien, USA",
+        "name_en": "San Francisco, California, USA",
+        "country": "US",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      "incidentType": [
+        "discrimination",
+        "labor-exploitation"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Im Juli 2024 erlaubte ein US-Bundesgericht in Kalifornien die Fortsetzung der Klage Mobley v. Workday. Derek Mobley, ein ueber 40-jaehriger Schwarzer Mann mit psychischer Behinderung, hatte sich auf ueber 100 Stellen bei Firmen mit Workday-KI-Bewerbungstools beworben und wurde jedes Mal abgelehnt — teils innerhalb von Minuten oder nachts, was eine algorithmische Auto-Ablehnung nahelegt. Die EEOC argumentiert im Amicus Brief (9.4.2024), KI-Anbieter koennten direkt nach Title VII, ADA und ADEA haften. Mai 2025: Conditional class certification fuer ADEA-Sammelklage.",
+      "description_en": "In July 2024 a U.S. federal court in California allowed Mobley v. Workday to proceed. Derek Mobley, a Black man over 40 with a mental-health disability, had applied to over 100 jobs at companies using Workday's AI hiring tools and was rejected every time — sometimes within minutes or in the middle of the night, suggesting automatic algorithmic rejection. The EEOC argues in an amicus brief (9 April 2024) that AI vendors can be directly liable under Title VII, the ADA and the ADEA. May 2025: conditional class certification for ADEA collective action.",
+      "actors": [
+        {
+          "name": "Workday, Inc.",
+          "type": "company",
+          "systems": [
+            "Workday Recruiting AI screening"
+          ]
+        },
+        {
+          "name": "U.S. Equal Employment Opportunity Commission (EEOC)",
+          "type": "regulator",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.seyfarth.com/news-insights/legal-update-eeoc-argues-vendors-using-artificial-intelligence-tools-are-subject-to-title-vii-the-ada-and-adea-under-novel-theories-in-workday-litigation.html",
+          "title": "EEOC Argues Vendors Using AI Tools Are Subject to Title VII, ADA and ADEA in Workday Litigation",
+          "publisher": "Seyfarth Shaw LLP",
+          "date": "2024-04",
+          "type": "court-filing"
+        },
+        {
+          "url": "https://www.fisherphillips.com/en/insights/insights/discrimination-lawsuit-over-workdays-ai-hiring-tools-can-proceed-as-class-action-6-things",
+          "title": "Discrimination Lawsuit Over Workday's AI Hiring Tools Can Proceed as Class Action",
+          "publisher": "Fisher Phillips",
+          "date": "2025",
+          "type": "analysis"
+        },
+        {
+          "url": "https://lawreview.law.miami.edu/help-wanted-screened-by-algorithms-mobley-v-workday-and-the-legal-limits-of-ai-hiring/",
+          "title": "Help Wanted, Screened by Algorithms: Mobley v. Workday",
+          "publisher": "University of Miami Law Review",
+          "date": "2024",
+          "type": "research-paper"
+        }
+      ]
+    },
+    "researcher_notes": "Beruehrt Versicherungs-/Underwriting nur indirekt; klar Hiring-AI. Aber gleicher Patternraum: KI-gestuetzte Auto-Ablehnung gegen geschuetzte Klassen. Sehr starker Praezedenzfall; passt in Scope der Round-3-Anlage (Arbeit + Discrimination).",
+    "dedup_hint": "mobley | workday | ai hiring | adea | eeoc | 2024",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:56.330Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.seyfarth.com/news-insights/legal-update-eeoc-argues-vendors-using-artificial-intelligence-tools-are-subject-to-title-vii-the-ada-and-adea-under-novel-theories-in-workday-litigation.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.74 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.fisherphillips.com/en/insights/insights/discrimination-lawsuit-over-workdays-ai-hiring-tools-can-proceed-as-class-action-6-things",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.60 hits=8 year=2024"
+        },
+        {
+          "url": "https://lawreview.law.miami.edu/help-wanted-screened-by-algorithms-mobley-v-workday-and-the-legal-limits-of-ai-hiring/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.70 hits=8 year=2024"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-mobley-v-workday-eeoc-stuetzt-sammelklage-zu-ki-bewerber-screening-alter-race",
+    "promoted_at": "2026-06-01T12:57:02.104Z"
+  },
+  {
+    "candidate_id": "usa-senate-pmi-medicare-advantage-ki-bericht-2024",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: US-Senatsbericht dokumentiert sprunghaften Anstieg algorithmischer Ablehnungen in Medicare Advantage",
+      "name_en": "USA: U.S. Senate report documents surge in algorithmic Medicare Advantage denials",
+      "startDate": "2024-10",
+      "location": {
+        "name_de": "Washington, D.C., USA",
+        "name_en": "Washington, D.C., USA",
+        "country": "US",
+        "lat": 38.8951,
+        "lng": -77.0364
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Im Oktober 2024 veroeffentlichte das Senate Permanent Subcommittee on Investigations einen Bericht, der UnitedHealthcare, Humana und CVS/Aetna vorwirft, zwischen 2019 und 2022 algorithmische Tools systematisch einzusetzen, um Anspruchsleistungen in Medicare-Advantage-Plaenen scharf zu erhoehen. Besonders nachakutpflegerische Leistungen wurden ueberproportional abgelehnt; algorithmische Vorhersagen wurden routinemaessig ueber aerztliche Empfehlungen gestellt. Der Bericht stuetzt mehrere zivile Sammelklagen.",
+      "description_en": "In October 2024 the U.S. Senate Permanent Subcommittee on Investigations published a report accusing UnitedHealthcare, Humana and CVS/Aetna of systematically using algorithmic tools between 2019 and 2022 to sharply raise claim-denial rates in Medicare Advantage plans. Post-acute care was denied disproportionately; algorithmic predictions routinely overrode treating-physician recommendations. The report buttresses several ongoing civil class actions.",
+      "actors": [
+        {
+          "name": "Senate Permanent Subcommittee on Investigations",
+          "type": "government",
+          "systems": []
+        },
+        {
+          "name": "UnitedHealthcare, Humana, CVS/Aetna",
+          "type": "company",
+          "systems": [
+            "nH Predict and similar prior-authorisation algorithms"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.healthcaredive.com/news/medicare-advantage-AI-denials-cvs-humana-unitedhealthcare-senate-report/730383/",
+          "title": "Senate report slams Medicare Advantage insurers for using predictive technology to deny claims",
+          "publisher": "Healthcare Dive",
+          "date": "2024-10",
+          "type": "government-document"
+        },
+        {
+          "url": "https://www.wbur.org/onpoint/2024/12/18/unitedhealth-ai-insurance-claims-healthcare",
+          "title": "How insurance companies use AI to deny claims",
+          "publisher": "WBUR On Point",
+          "date": "2024-12-18",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Eigenstaendig zur konkreten UnitedHealth-Sammelklage (Bestand). Dies ist der Senate-Bericht als Doktrin-Marke + Folgewirkung.",
+    "dedup_hint": "senate pmi | medicare advantage | ai denial | 2024 report | not unitedhealth lawsuit",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:57.771Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.healthcaredive.com/news/medicare-advantage-AI-denials-cvs-humana-unitedhealthcare-senate-report/730383/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.67 hits=8 year=2024"
+        },
+        {
+          "url": "https://www.wbur.org/onpoint/2024/12/18/unitedhealth-ai-insurance-claims-healthcare",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.72 hits=8 year=2024"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "usa-us-senatsbericht-dokumentiert-sprunghaften-anstieg-algorithmischer-ablehnungen-in",
+    "promoted_at": "2026-06-01T12:57:02.104Z"
+  },
+  {
+    "candidate_id": "deutschland-finanzamt-ki-risikomanagement-nrw-2025",
+    "discovered_at": "2026-06-01T12:00:00Z",
+    "researcher": "agent-research-tax-insurance-round-3",
+    "round": "round-3-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Deutschland: NRW-Finanzaemter starten KI-Pilot zur Steuerpruefung — bundesweiter Rollout 2026",
+      "name_en": "Germany: North Rhine-Westphalia tax offices launch AI audit pilot — nationwide rollout 2026",
+      "startDate": "2025-05",
+      "location": {
+        "name_de": "Duesseldorf, Nordrhein-Westfalen, Deutschland",
+        "name_en": "Duesseldorf, North Rhine-Westphalia, Germany",
+        "country": "DE",
+        "lat": 51.2277,
+        "lng": 6.7735
+      },
+      "incidentType": [
+        "surveillance",
+        "data-misuse"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "Im Mai 2025 startete Nordrhein-Westfalen in vier Finanzaemtern einen KI-Pilot zur automatischen Risikobewertung von Steuererklaerungen, bis Oktober 2025 auf acht Aemter ausgeweitet. Ein BMF-Erlass und ein BFH-Grundsatzurteil hatten den 'algorithmischen Pruefdurchgang' rechtlich abgesichert. Ab Januar 2026 wird KI offiziell zum Standardwerkzeug deutscher Finanzaemter; bundesweiter Rollout Fruehjahr 2026. Das BMF betont das Human-in-the-Loop-Prinzip — finale Entscheidungen treffen Sachbearbeiter:innen.",
+      "description_en": "In May 2025 North Rhine-Westphalia launched an AI pilot for automated risk scoring of tax returns at four tax offices, extended to eight offices by October 2025. A Federal Finance Ministry decree and a Federal Tax Court ruling provided legal cover for 'algorithmic audit selection'. From January 2026 AI becomes the standard tool of German tax offices; nationwide rollout in spring 2026. The Ministry stresses the human-in-the-loop principle — final decisions rest with case officers.",
+      "actors": [
+        {
+          "name": "Finanzministerium Nordrhein-Westfalen",
+          "type": "government",
+          "systems": [
+            "KI-Risikomanagement-Modul"
+          ]
+        },
+        {
+          "name": "Bundesministerium der Finanzen (BMF)",
+          "type": "government",
+          "systems": []
+        },
+        {
+          "name": "Bundesfinanzhof (BFH)",
+          "type": "government",
+          "systems": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-wird-zur-standardwaffe-der-deutschen-finanzaemter/68461372",
+          "title": "KI wird zur Standardwaffe der deutschen Finanzaemter",
+          "publisher": "ad-hoc-news.de",
+          "date": "2026-01",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.heise.de/news/Finanzamt-2-0-Steuerbehoerden-sollen-KI-mit-echten-Buergerdaten-trainieren-11312693.html",
+          "title": "Finanzamt 2.0: Steuerbehoerden sollen KI mit echten Buergerdaten trainieren",
+          "publisher": "Heise Online",
+          "date": "2025-2026",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.steuertipps.de/finanzamt-formalitaeten/risikomanagement-und-ki-die-zukunft-der-steuerverwaltung",
+          "title": "Risikomanagement und KI: Die Zukunft der Steuerverwaltung",
+          "publisher": "steuertipps.de",
+          "date": "2025-2026",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Strukturvorfall ohne (bislang) dokumentierte Schaeden. Severity 2. BFH-Urteil und BMF-Erlass-Datum beim Promoten praezisieren.",
+    "dedup_hint": "germany | finanzamt | nrw | bmf | bfh | tax ai | 2025-2026",
+    "verification_log": {
+      "verified_at": "2026-06-01T12:47:58.389Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-wird-zur-standardwaffe-der-deutschen-finanzaemter/68461372",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.54 hits=8 year=2025"
+        },
+        {
+          "url": "https://www.heise.de/news/Finanzamt-2-0-Steuerbehoerden-sollen-KI-mit-echten-Buergerdaten-trainieren-11312693.html",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.24"
+        },
+        {
+          "url": "https://www.steuertipps.de/finanzamt-formalitaeten/risikomanagement-und-ki-die-zukunft-der-steuerverwaltung",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.45 hits=7 year=2025"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "deutschland-nrw-finanzaemter-starten-ki-pilot-zur-steuerpruefung-bundesweiter-rollout",
+    "promoted_at": "2026-06-01T12:57:02.104Z"
+  }
+]
