@@ -13,6 +13,7 @@ const {
   aggregateScore, markOutliers, classifyConfidence, flagEdgeCases, buildEntry,
   buildManifest, collectSourcesUsed,
   loadTaxonomy,
+  loadLayerA, loadLayerASource, clearLayerASourceCache, LAYER_A_SOURCE_FILES,
   DIVERGENT_STDDEV_CUTOFF, OUTLIER_FACTOR, STALE_THRESHOLD_YEARS
 } = require('./bundle-career-data');
 
@@ -365,6 +366,79 @@ test('taxonomy: every cluster_group has required i18n metadata', () => {
     assert.ok(typeof cg.label_en === 'string' && cg.label_en.length > 0);
   }
 });
+
+// --- Layer A loader (MVP step 2) ---------------------------------------------
+
+group('Layer A loader (DE / IAB)');
+
+// Cache uses the real data/career/sources/de-iab.json file (1 example entry).
+// Reset before each test so cache state doesn't leak.
+
+test('LAYER_A_SOURCE_FILES has DE mapped, others TODO', () => {
+  assert.equal(LAYER_A_SOURCE_FILES.DE, 'de-iab.json');
+  assert.equal(LAYER_A_SOURCE_FILES.US, undefined);
+});
+
+test('loadLayerASource returns null for unmapped country', () => {
+  clearLayerASourceCache();
+  assert.equal(loadLayerASource('XX'), null);
+  assert.equal(loadLayerASource('JP'), null);
+});
+
+test('loadLayerASource returns metadata for DE', () => {
+  clearLayerASourceCache();
+  const src = loadLayerASource('DE');
+  assert.equal(src.country, 'DE');
+  assert.equal(src.source, 'IAB Substituierbarkeitspotenzial');
+  assert.equal(src.license, 'DL-DE BY 2.0');
+  assert.equal(src.isco_revision, 'ISCO-08');
+  assert.ok(Array.isArray(src.data));
+});
+
+test('loadLayerA returns Layer-A source for matching ISCO + year', () => {
+  clearLayerASourceCache();
+  const row = loadLayerA('DE', '2211', 2025);
+  assert.ok(row, 'expected a result');
+  assert.equal(row.layer, 'A');
+  assert.equal(row.name, 'IAB Substituierbarkeitspotenzial');
+  assert.equal(row.license, 'DL-DE BY 2.0');
+  assert.equal(row.value, 0.13);
+  assert.equal(row.year, 2025);
+  assert.ok(row.methodology.length > 0);
+  assert.ok(row.url.startsWith('https://'));
+});
+
+test('loadLayerA returns null when ISCO not in source', () => {
+  clearLayerASourceCache();
+  assert.equal(loadLayerA('DE', '9999', 2025), null);
+});
+
+test('loadLayerA returns null when year not in source (no fallback)', () => {
+  clearLayerASourceCache();
+  // 2211 exists for 2025 only in current seed.
+  assert.equal(loadLayerA('DE', '2211', 2019), null);
+});
+
+test('loadLayerA returns null for unmapped country', () => {
+  clearLayerASourceCache();
+  assert.equal(loadLayerA('XX', '2211', 2025), null);
+});
+
+test('loadLayerASource caches reads — second call returns same object', () => {
+  clearLayerASourceCache();
+  const a = loadLayerASource('DE');
+  const b = loadLayerASource('DE');
+  assert.equal(a, b); // referential equality proves cache hit
+});
+
+test('loadLayerA falls back gracefully when source file is missing', () => {
+  clearLayerASourceCache();
+  // sourcesDir override to non-existent folder simulates missing file.
+  const missing = loadLayerASource('DE', '/nonexistent/path/that/does/not/exist');
+  assert.equal(missing, null);
+});
+
+// --- taxonomy: end-block ---
 
 test('taxonomy: cluster distribution matches MVP-Scope plan', () => {
   const expected = {

@@ -194,13 +194,64 @@ function buildEntry({ isco, country, year, sources, currentYear }) {
   };
 }
 
-// --- Layer loaders (stubs, replaced in MVP step 2) ---------------------------
+// --- Layer loaders (MVP step 2) ---------------------------------------------
 
+// Per-country Layer-A source-file map. Adding a country = adding its file
+// here + dropping its normalized JSON into data/career/sources/.
+// Schema documented in data/career/sources/_schema.md.
+const LAYER_A_SOURCE_FILES = {
+  DE: 'de-iab.json'
+  // US, UK, FR, CA, NL, SE, AU: TODO — per-country source files come next.
+};
+
+// Cache: source files are read once per process and reused across queries.
+// Reset via clearLayerASourceCache() in tests.
+const _layerASourceCache = new Map();
+
+function clearLayerASourceCache() {
+  _layerASourceCache.clear();
+}
+
+function loadLayerASource(country, sourcesDir) {
+  if (_layerASourceCache.has(country)) return _layerASourceCache.get(country);
+  const filename = LAYER_A_SOURCE_FILES[country];
+  if (!filename) {
+    _layerASourceCache.set(country, null);
+    return null;
+  }
+  const dir = sourcesDir || path.join(__dirname, '..', 'data', 'career', 'sources');
+  const file = path.join(dir, filename);
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, 'utf8'));
+    _layerASourceCache.set(country, parsed);
+    return parsed;
+  } catch (err) {
+    // File missing or malformed: treat as "no Layer A available for this country".
+    // Caller falls back to Layer B/C; edge-case-flagger emits `noNationalData`.
+    _layerASourceCache.set(country, null);
+    return null;
+  }
+}
+
+/**
+ * Look up a single Layer-A datapoint for (country, isco, year).
+ * Returns a source record consumable by buildEntry(), or null if absent.
+ * Exact year match — no fallback (MVP decision per career-dashboard-mvp-scope.md).
+ */
 function loadLayerA(country, isco, year) {
-  // TODO step 2: per-country adapter (DE IAB, US BLS+O*NET, UK ONS, FR DARES,
-  // CA StatCan, NL CBS, SE Arbetsförmedlingen, AU JSA).
-  void country; void isco; void year;
-  return null;
+  const src = loadLayerASource(country);
+  if (!src || !Array.isArray(src.data)) return null;
+  const row = src.data.find(d => d.isco === isco && d.year === year);
+  if (!row) return null;
+  return {
+    layer: 'A',
+    name: src.source,
+    license: src.license,
+    url: row.url || src.url,
+    methodology: src.methodology,
+    value: row.value,
+    year: row.year
+  };
 }
 
 function loadLayerB(country, isco, year) {
@@ -372,6 +423,10 @@ module.exports = {
   flagEdgeCases,
   buildEntry,
   loadAllLayers,
+  loadLayerA,
+  loadLayerASource,
+  clearLayerASourceCache,
+  LAYER_A_SOURCE_FILES,
   loadTaxonomy,
   // manifest + IO
   buildManifest,
