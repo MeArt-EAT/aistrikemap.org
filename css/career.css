@@ -1,0 +1,206 @@
+/**
+ * Career-Dashboard-spezifische Styles. Baut auf base.css / layout.css /
+ * controls.css / filters.css / detail-panel.css auf — nur was
+ * Career-spezifisch ist hier definieren.
+ *
+ * MVP Step 4 (Skelett): Header, Filterleiste, Mode-Toggle, Placeholder.
+ * Choropleth-Color-Scale + Confidence-Band-Stile folgen in Step 5/6.
+ */
+
+/* --- Layout-Wrapper ------------------------------------------------------- */
+
+.career-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1rem, 2.5vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.75rem);
+}
+
+/* --- Page Header ---------------------------------------------------------- */
+
+.career-header__title h1 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+  color: var(--color-text-primary);
+}
+
+.career-header__subtitle {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+/* --- Filter Bar ----------------------------------------------------------- */
+
+.career-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.6rem, 1.2vw, 1rem);
+  align-items: flex-end;
+  padding: 0.85rem 1rem;
+  background: var(--color-surface-elevated, rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  border-radius: 0.6rem;
+}
+
+.career-filter-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  min-width: 14rem;
+  flex: 1 1 14rem;
+}
+
+.career-select {
+  padding: 0.5rem 0.7rem;
+  background: var(--color-surface, rgba(0, 0, 0, 0.3));
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.12));
+  border-radius: 0.4rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.career-select:hover,
+.career-select:focus {
+  border-color: var(--color-accent, #4fc3f7);
+  outline: none;
+}
+
+/* --- Mode Toggle (segmented button) -------------------------------------- */
+
+.career-mode-toggle {
+  display: inline-flex;
+  background: var(--color-surface, rgba(0, 0, 0, 0.3));
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.12));
+  border-radius: 0.4rem;
+  overflow: hidden;
+  align-self: flex-end;
+}
+
+.career-mode-btn {
+  background: transparent;
+  color: var(--color-text-secondary);
+  border: none;
+  padding: 0.55rem 1.1rem;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.career-mode-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text-primary);
+}
+
+.career-mode-btn.is-active {
+  background: var(--color-accent, #4fc3f7);
+  color: var(--color-bg, #0a0a0a);
+  font-weight: 600;
+}
+
+.career-mode-btn:focus-visible {
+  outline: 2px solid var(--color-accent, #4fc3f7);
+  outline-offset: 2px;
+}
+
+/* --- Stage (Map/Chart-Container) ----------------------------------------- */
+
+.career-stage {
+  position: relative;
+  min-height: 60vh;
+  background: var(--color-surface-elevated, rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.06));
+  border-radius: 0.6rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  display: grid;
+  place-items: center;
+}
+
+/* --- Placeholder (Step 4 milestone state) -------------------------------- */
+
+.career-placeholder {
+  max-width: 56ch;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.career-placeholder h2 {
+  margin: 0 0 0.75rem;
+  color: var(--color-text-primary);
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+}
+
+.career-placeholder p {
+  margin: 0 0 0.75rem;
+  line-height: 1.6;
+}
+
+.career-placeholder__meta {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.career-placeholder__meta a {
+  color: var(--color-accent, #4fc3f7);
+  text-decoration: none;
+}
+
+.career-placeholder__meta a:hover,
+.career-placeholder__meta a:focus {
+  text-decoration: underline;
+}
+
+/* --- Footer methodology link --------------------------------------------- */
+
+.career-foot-meta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+
+.career-methodology-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+  padding-bottom: 1px;
+}
+
+.career-methodology-link[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+/* --- Mobile Breakpoint --------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .career-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .career-filter-label,
+  .career-mode-toggle {
+    width: 100%;
+  }
+
+  .career-mode-toggle {
+    align-self: stretch;
+  }
+
+  .career-mode-btn {
+    flex: 1;
+  }
+
+  .career-stage {
+    min-height: 50vh;
+  }
+}
