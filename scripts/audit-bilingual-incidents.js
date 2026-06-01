@@ -175,6 +175,43 @@ const TRANSLITERATED_GERMAN_WORDS = [
   'unverhaeltnismassige', 'unverhaeltnismaessige',
   'unverhaltnismassiger', 'unverhaltnismaessiger',
   'unverhaeltnismassiger', 'unverhaeltnismaessiger',
+  // Weitere häufige Wörter
+  'turkei', 'tuerkei',
+  'lander', 'laender',
+  'prufen', 'pruefen', 'pruft', 'prueft', 'pruefung', 'prufung',
+  'ahnlich', 'aehnlich', 'ahnliche', 'aehnliche',
+  'ahnlichen', 'aehnlichen', 'ahnlicher', 'aehnlicher',
+  'falle', 'faelle', 'fallen', 'faellen',
+  'aufgespurt', 'aufgespuert',
+  'bemangeln', 'bemaengeln', 'bemangelt', 'bemaengelt',
+  'uberwacht', 'ueberwacht',
+  'verdachtig', 'verdaechtig',
+  'verdachtige', 'verdaechtige',
+  'verdachtigen', 'verdaechtigen',
+  'ruckforderung', 'rueckforderung',
+  'ruckforderungen', 'rueckforderungen',
+  // Tippfehler im Originalkorpus
+  'unverhaltnisamssig', 'unverhaltnisamssige',
+  'unverhaltnisamssiger', 'unverhaltnisamssiges',
+  'sozioonomisch', 'sozioonomische',
+  'sozioonomischen', 'sozioonomischer',
+  'verlangerer', 'verlanger',
+  'gerubmtes', 'geruhmtes', 'gerubmt', 'geruhmt',
+  // Long-tail Wörter
+  'verlangert', 'verlaengert', 'verlangerte', 'verlaengerte',
+  'verlangerten', 'verlaengerten',
+  'verfugbar', 'verfuegbar', 'verfugbare', 'verfuegbare',
+  'erklart', 'erklaert', 'erklarte', 'erklaerte',
+  'erklarten', 'erklaerten',
+  'verhangt', 'verhaengt', 'verhangte', 'verhaengte',
+  'verhangen', 'verhaengen',
+  'verzogert', 'verzoegert', 'verzogerte', 'verzoegerte',
+  'dunkelhautig', 'dunkelhaeutig',
+  'dunkelhautige', 'dunkelhaeutige',
+  'dunkelhautiger', 'dunkelhaeutiger',
+  'dunkelhautigen', 'dunkelhaeutigen',
+  'einjahrig', 'einjaehrig', 'einjahrige', 'einjaehrige',
+  'einjahriges', 'einjaehriges', 'einjahrigen', 'einjaehrigen',
 ];
 // Compound-Suffix-Wurzeln: matchen am Wortende, egal ob die Wurzel allein
 // steht ("Behorde") oder als Suffix in einem Kompositum ("Grenzbehorde",
@@ -184,6 +221,9 @@ const TRANSLITERATED_COMPOUND_ROOTS = [
   'behorde', 'behoerde', 'behorden', 'behoerden',
   'uberwachung', 'ueberwachung',
   'fuhrung', 'fuehrung', 'fuhrungen', 'fuehrungen',
+  'horigkeit', 'hoerigkeit',
+  'verbande', 'verbaende',
+  'anhorung', 'anhoerung', 'anhorungen', 'anhoerungen',
 ];
 const TRANSLITERATION_RE = new RegExp(
   '\\b(?:' + TRANSLITERATED_GERMAN_WORDS.join('|') + ')\\b',
@@ -199,7 +239,7 @@ const COMPOUND_TRANSLITERATION_RE = new RegExp(
 // contexts ("Uber Technologies", "Uber Eats"). Tighten to digit/quantifier
 // follow-up to keep false positives off the company name.
 const UBER_PREPOSITION_RE = /\b[Uu]ber\s+(?:\d|tausend|hundert|million|milliard)/g;
-const UBER_PREPOSITION_LC_RE = /\buber\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüß])/g;
+const UBER_PREPOSITION_LC_RE = /\buber\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüßA-ZÄÖÜ])/g;
 
 function findTransliterations(text) {
   if (typeof text !== 'string' || !text) return [];
