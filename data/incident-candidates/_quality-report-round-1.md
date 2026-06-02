@@ -1,101 +1,121 @@
 # Round-1 Quality-Report
 
-Erzeugt: 2026-06-01T09:13:07.594Z
+Erzeugt: 2026-06-01T21:04:42.423Z
 
 Reine File-Analyse (keine Web-Calls) — Scoring-Heuristik siehe `scripts/score-candidates.js`.
 
 ## Histogramm
 
-Gesamt: **111** Kandidaten
+Gesamt: **412** Kandidaten
 
 | Bucket | Score | Anzahl | Anteil |
 |---|---|---|---|
 | Schwach | 0–3 | 0 | 0.0 % |
-| Mittel  | 4–6 | 13 | 11.7 % |
-| Stark   | 7–10 | 98 | 88.3 % |
+| Mittel  | 4–6 | 81 | 19.7 % |
+| Stark   | 7–10 | 331 | 80.3 % |
 
 ## Pro File
 
 | File | gesamt | 0–3 | 4–6 | 7–10 |
 |---|---|---|---|---|
 | `africa-2023-2025-round-1-agent-c.json` | 20 | 0 | 1 | 19 |
+| `ai-criminal-justice-sentencing-bail-round-5-2026-06-01.json` | 15 | 0 | 2 | 13 |
+| `ai-crypto-scams-2024-2025-round-3-agent-a.json` | 16 | 0 | 7 | 9 |
+| `ai-csam-enforcement-2024-2025-round-2-agent-d.json` | 15 | 0 | 1 | 14 |
+| `ai-health-misinformation-round-5-2026-06-01.json` | 12 | 0 | 7 | 5 |
+| `ai-healthcare-eu-asia-round-2-agent-c.json` | 18 | 0 | 12 | 6 |
+| `ai-tax-insurance-2023-2025-round-3-agent-c.json` | 18 | 0 | 5 | 13 |
 | `asia-pacific-2024-2025-round-1-agent-e.json` | 20 | 0 | 6 | 14 |
+| `autonomous-weapons-military-ai-2022-2025-round-4-agent-a.json` | 16 | 0 | 0 | 16 |
+| `brain-computer-interface-privacy-round-5-2026-06-01.json` | 11 | 0 | 5 | 6 |
+| `brics-ai-cooperation-round-5-2026-06-01.json` | 13 | 0 | 0 | 13 |
+| `central-asia-2022-2025-round-2-agent-a.json` | 18 | 0 | 0 | 18 |
+| `climate-protest-surveillance-2023-2025-round-4-agent-d.json` | 14 | 0 | 0 | 14 |
+| `content-moderation-worker-exploitation-2022-2025-round-4-agent-b.json` | 15 | 0 | 7 | 8 |
+| `cybersecurity-ai-2023-2025-round-4-agent-c.json` | 16 | 0 | 1 | 15 |
 | `eu-2024-2025-round-1-agent-d.json` | 16 | 0 | 0 | 16 |
+| `francophone-africa-sahel-2023-2025-round-2-agent-f.json` | 15 | 0 | 5 | 10 |
+| `gig-worker-platforms-2023-2025-round-2-agent-e.json` | 17 | 0 | 2 | 15 |
+| `global-elections-deepfakes-2024-round-2026-06-01.json` | 0 | 0 | 0 | 0 |
 | `latam-2023-2025-round-1-agent-a.json` | 19 | 0 | 0 | 19 |
 | `mena-2024-2025-round-1-agent-b.json` | 17 | 0 | 6 | 11 |
+| `migration-border-ai-2023-2025-round-3-agent-d.json` | 19 | 0 | 7 | 12 |
+| `pacific-caribbean-2023-2025-round-2-agent-b.json` | 18 | 0 | 0 | 18 |
+| `pre-2022-historical-round-5-2026-06-01.json` | 19 | 0 | 7 | 12 |
+| `religion-ai-censorship-2023-2025-round-3-agent-b.json` | 16 | 0 | 0 | 16 |
 | `us-canada-2024-2025-round-1-agent-f.json` | 19 | 0 | 0 | 19 |
 
 ## Top-10 Kandidaten
 
+- **9** `australia-operation-cumberland-arrests-2025` (ai-csam-enforcement-2024-2025-round-2-agent-d.json)
+  - Australien: AFP-Anklage gegen zwei Männer im Rahmen der Operation Cumberland — KI-CSAM-Vertriebsring
+  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **9** `australia-tasmania-ai-csam-jailed-2024` (ai-csam-enforcement-2024-2025-round-2-agent-d.json)
+  - Australien: Erste tasmanische Verurteilung wegen KI-generiertem Kindesmissbrauchsmaterial — 2 Jahre Haft
+  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **9** `australien-fair-work-closing-loopholes-deactivation-2024` (gig-worker-platforms-2023-2025-round-2-agent-e.json)
+  - Australien: Closing-Loopholes-Reform schützt Plattform-Arbeit vor unfairer algorithmischer Deaktivierung
+  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **9** `bahamas-rbpf-facial-recognition-expansion-2024` (pacific-caribbean-2023-2025-round-2-agent-b.json)
+  - Bahamas: Royal Bahamas Police Force weitet Gesichtserkennungs-CCTV mit BriefCam und ShotSpotter aus
+  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **9** `bangladesh-rohingya-biometrische-registrierung-2024` (religion-ai-censorship-2023-2025-round-3-agent-b.json)
+  - Bangladesch: UNHCR-Biometrie-Registrierung neuer Rohingya-Geflüchteter ab Dezember 2024 — Datenfluss-Risiken nach Myanmar nach 830.000-Namen-Skandal
+  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
 - **9** `brazil-sao-paulo-smart-sampa-2024` (latam-2023-2025-round-1-agent-a.json)
   - Brasilien: Smart Sampa — São Paulos KI-Überwachungsnetz mit Gesichtserkennung startet trotz Rassismus-Warnungen
   - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **9** `griechenland-centaur-hyperion-asyl-ueberwachung-fine-2024` (eu-2024-2025-round-1-agent-d.json)
-  - Griechenland: 175.000 € Rekordbußgeld gegen Migrationsministerium für KI-Überwachungssysteme "Kentauros" und "Hyperion" in Asyl-Camps
+- **9** `china-shen-yun-falun-gong-transnational-repression-2024` (religion-ai-censorship-2023-2025-round-3-agent-b.json)
+  - USA/Global: Koordinierte CCP-Kampagne aus 230+ anonymen Todesdrohungen und Bombendrohungen gegen Falun-Gong-Shen-Yun-Aufführungen ab März 2024
   - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **9** `italien-replika-garante-fine-2025` (eu-2024-2025-round-1-agent-d.json)
-  - Italien: Garante verhängt 5 Mio. € Strafe gegen Replika-Macher Luka Inc. wegen Datenschutz- und Jugendschutz-Verstößen
+- **9** `china-tibet-monastery-facial-recognition-gate-2024` (religion-ai-censorship-2023-2025-round-3-agent-b.json)
+  - China: Gesichtserkennungs-Schleusen am Eingang tibetisch-buddhistischer Klöster 2024 — KI-Klassifikation von Tibetern als 'problematische Gruppe'
   - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **9** `mexico-curp-mandatory-biometric-2025` (latam-2023-2025-round-1-agent-a.json)
-  - Mexiko: Biometrische CURP wird verpflichtend — KI-gestützte Gesicht-, Fingerabdruck- und Iris-Erkennung für alle Bürger:innen
+- **9** `cn-russia-garpiya-drone-2024` (brics-ai-cooperation-round-5-2026-06-01.json)
+  - China: Garpiya-Kampfdrohne für Russland in chinesischen Fabriken entwickelt
   - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **9** `portugal-worldcoin-iris-scan-suspendierung-2024` (eu-2024-2025-round-1-agent-d.json)
-  - Portugal: CNPD suspendiert Worldcoin-Iris-Scan-Operation für 90 Tage wegen Datenerfassung bei Minderjährigen (März 2024)
+- **9** `dominican-republic-mass-deportation-haitians-2024-2025` (pacific-caribbean-2023-2025-round-2-agent-b.json)
+  - Dominikanische Republik: Massendeportation von Haitianer:innen mit biometrischer Erfassung (10.000 pro Woche)
   - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **9** `spanien-bosco-civio-algorithmus-court-2024` (eu-2024-2025-round-1-agent-d.json)
-  - Spanien: BOSCO-Algorithmus für Strom-Sozialtarif — Audiencia Nacional verweigert 2024 erneut Quellcode-Offenlegung, Supreme Court kippt das 2025
-  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **9** `spanien-worldcoin-aepd-iris-sperre-2024` (eu-2024-2025-round-1-agent-d.json)
-  - Spanien: AEPD verhängt Sofortmaßnahme gegen Worldcoin — Iris-Scan-Stopp wegen Minderjährigen-Daten und nicht-widerrufbarer Einwilligung (März 2024)
-  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **9** `tansania-internet-shutdown-wahl-2025` (africa-2023-2025-round-1-agent-c.json)
-  - Tansania: Sechs-tägiger landesweiter Internet-Shutdown bei Wahl 2025 — UN-Expert:innen verurteilen tödlichen Crackdown
-  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **9** `usa-itutorgroup-eeoc-age-ai-settlement-2023-2024` (us-canada-2024-2025-round-1-agent-f.json)
-  - USA: EEOC v. iTutorGroup — erster KI-Diskriminierungs-Vergleich der US-Gleichstellungsbehörde
-  - +2 ≥2 Quellen, +1 Whitelist-Outlet, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **8** `argentina-bullrich-uiaas-ai-security-unit-2024` (latam-2023-2025-round-1-agent-a.json)
-  - Argentinien: Bullrich-Resolution schafft KI-Einheit zur 'Patrouille' von Social Media und Dark Web
-  - +2 ≥2 Quellen, +1 offiz. Doc, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
 
 ## Bottom-10 Kandidaten
 
+- **4** `usa-clearview-ai-nyt-expose-2020` (pre-2022-historical-round-5-2026-06-01.json)
+  - USA: Clearview AI — Kashmir-Hills NYT-Enthuellung deckt Geheim-Datenbank von 3 Milliarden Gesichtern auf
+  - +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **4** `uk-channel-ai-surveillance-isr-network-2025` (migration-border-ai-2023-2025-round-3-agent-d.json)
+  - Grossbritannien: Autonomes KI-Ueberwachungsnetz im Dover-Strait gegen Kleinboote
+  - +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **4** `korea-scatterlab-iruda-kakaotalk-pipc-bussgeld-2021` (ai-healthcare-eu-asia-round-2-agent-c.json)
+  - Suedkorea: PIPC verhaengt 103 Millionen Won Bussgeld gegen ScatterLab fuer KI-Chatbot Iruda - 9,4 Milliarden Privatnachrichten unrechtmaessig fuer KI-Training genutzt
+  - +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
 - **4** `israel-unit8200-arabic-chatgpt-2024` (mena-2024-2025-round-1-agent-b.json)
   - Israel: Unit 8200 entwickelt arabisches ChatGPT-aehnliches Sprachmodell aus abgehoerten Palaestinenser-Gespraechen
   - +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **4** `deutschland-charite-ki-fairness-erhebung-2023` (ai-healthcare-eu-asia-round-2-agent-c.json)
+  - Deutschland: Charite-Studie zeigt - nur ein Drittel der KI-Entwickler:innen im Gesundheitswesen halten eigene Projekte fuer fair
+  - +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **4** `cote-divoire-coup-disinformation-2024` (francophone-africa-sahel-2023-2025-round-2-agent-f.json)
+  - Cote d'Ivoire: Virale Social-Media-Falschmeldungen ueber angeblichen Putsch — pro-russische und panafrikanistische Netzwerke befeuern Desinformation (2024)
+  - +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **5** `uk-cma-uber-bolt-pricing-investigation-2024` (gig-worker-platforms-2023-2025-round-2-agent-e.json)
+  - Grossbritannien: Bolt darf gegen Worker-Status-Urteil in Berufung gehen — Konflikt um algorithmische Personalführung geht in nächste Runde
+  - +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
 - **5** `saudi-arabia-yahya-assiri-uk-court-2024` (mena-2024-2025-round-1-agent-b.json)
   - Saudi-Arabien: UK-High-Court laesst Spyware-Klage saudischer Aktivist Yahya Assiri gegen Riad zu (2024)
   - +1 Whitelist-Outlet, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **6** `taiwan-china-deepfake-wahl-2024-msmtv-tsai-lai-ko` (asia-pacific-2024-2025-round-1-agent-e.json)
-  - Taiwan: Wahl 2024 — chinesische KI-Deepfakes von Tsai, Lai und Ko, Microsoft dokumentiert MSS-Operation
-  - +2 ≥2 Quellen, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo, -1 unsicher
-- **6** `suedkorea-yoon-kriegsrecht-deepfake-verwirrung-dezember-2024` (asia-pacific-2024-2025-round-1-agent-e.json)
-  - Südkorea: Yoons Kriegsrechts-Erklärung 3. Dezember 2024 — Opposition und Bank-Chef hielten Video für KI-Fälschung
-  - +2 ≥2 Quellen, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo, -1 unsicher
-- **6** `sri-lanka-online-safety-act-2024-osc-presse` (asia-pacific-2024-2025-round-1-agent-e.json)
-  - Sri Lanka: Online Safety Act No. 9/2024 — Online Safety Commission ohne richterliche Kontrolle, Journalist:innen-Selbstzensur
-  - +2 ≥2 Quellen, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo, -1 unsicher
-- **6** `nigeria-cybercrime-amendment-act-journalisten-2024` (africa-2023-2025-round-1-agent-c.json)
-  - Nigeria: Cybercrime-Amendment-Act 2024 ermöglicht Überwachung ohne Gerichtsbeschluss — Journalist Daniel Ojukwu nach FIJ-Korruptionsrecherche verhaftet
-  - +2 ≥2 Quellen, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo, -1 unsicher
-- **6** `neuseeland-msd-ki-sozialhilfe-amendment-2026-maori` (asia-pacific-2024-2025-round-1-agent-e.json)
-  - Neuseeland: Social Security Modernisation Amendment — Ministerium darf KI über Sozialhilfe entscheiden, Māori-Diskriminierung befürchtet
-  - +2 ≥2 Quellen, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo, -1 unsicher
-- **6** `lebanon-grim-beeper-palantir-2024` (mena-2024-2025-round-1-agent-b.json)
-  - Libanon: 'Operation Grim Beeper' — KI-gestuetzte Lieferketten-Sabotage und Palantir-Analyse hinter Pager-Explosionen
-  - +2 ≥2 Quellen, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
-- **6** `japan-line-naver-datenleck-2023-2024-tokio-direktive` (asia-pacific-2024-2025-round-1-agent-e.json)
-  - Japan: LINE-Yahoo-NAVER-Datenleck — 510.000 Nutzer offengelegt, Regierungsdirektive zur Entkopplung
-  - +2 ≥2 Quellen, +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo, -1 unsicher
-- **6** `israel-ghf-biometric-aid-gaza-2025` (mena-2024-2025-round-1-agent-b.json)
-  - Gaza/USA: Gaza Humanitarian Foundation — Gesichtserkennung als Bedingung fuer Nahrungshilfe, hunderte Tote an Verteilpunkten
-  - +2 ≥2 Quellen, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **5** `italy-justemotions-ai-courts-2024` (ai-criminal-justice-sentencing-bail-round-5-2026-06-01.json)
+  - Italien: Justemotions-Studie dokumentiert Misalignment zwischen KI-Empfehlungen und richterlicher Entscheidungsfindung
+  - +1 DE-Desc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
+- **5** `italien-garante-ki-medizindaten-statement-2025` (ai-healthcare-eu-asia-round-2-agent-c.json)
+  - Italien: Garante warnt vor KI-Tools, die Medizindaten interpretieren, ohne als Medizinprodukt zugelassen zu sein
+  - +1 offiz. Doc, +1 EN-Desc, +1 Akteur, +1 Type, +1 Geo
 
 ## Promote-ready Schwellenwert
 
 Vorschlag: **Score ≥ 6** = direkt promote-tauglich (vorbehaltlich Dedup-Check).
 
-Aktuell erfüllen **109** von 111 Kandidaten (98.2 %) diese Schwelle.
+Aktuell erfüllen **401** von 412 Kandidaten (97.3 %) diese Schwelle.
 
 ### Begründung
 

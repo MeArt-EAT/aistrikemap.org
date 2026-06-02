@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-jama-oncology-und-cancer-journal-studien-dokumentierten-dass-chatgpt-erfundene",
+  "name": "USA: JAMA-Oncology- und Cancer-Journal-Studien dokumentierten, dass ChatGPT erfundene Krebstherapien empfahl",
+  "name_de": "USA: JAMA-Oncology- und Cancer-Journal-Studien dokumentierten, dass ChatGPT erfundene Krebstherapien empfahl",
+  "name_en": "USA: JAMA Oncology and Cancer Journal Studies Documented ChatGPT Recommending Fabricated Cancer Treatments",
+  "description": "Eine im August 2023 in JAMA Oncology veroeffentlichte Studie aus dem Brigham and Women's Hospital testete ChatGPT 3.5 mit 104 Krebs-Behandlungs-Anfragen. In rund einem Drittel der Fälle gab das Modell Empfehlungen ab, die nicht den NCCN-Leitlinien entsprachen; in 12,5 Prozent der Fälle 'halluzinierte' ChatGPT komplett erfundene Therapien, darunter angeblich kurative Behandlungen für nicht heilbare Krebsformen. Eine Folgestudie im Journal Cancer (August 2024) zu Brustkrebs fand, dass 24 Prozent der ChatGPT-Antworten ungenau und 41 Prozent der angegebenen Referenzen auf nicht existierende Webseiten verwiesen. Die Befunde gelten als Warnschuss für ungepruefte LLM-Nutzung in der Patienteninformation.",
+  "description_de": "Eine im August 2023 in JAMA Oncology veroeffentlichte Studie aus dem Brigham and Women's Hospital testete ChatGPT 3.5 mit 104 Krebs-Behandlungs-Anfragen. In rund einem Drittel der Fälle gab das Modell Empfehlungen ab, die nicht den NCCN-Leitlinien entsprachen; in 12,5 Prozent der Fälle 'halluzinierte' ChatGPT komplett erfundene Therapien, darunter angeblich kurative Behandlungen für nicht heilbare Krebsformen. Eine Folgestudie im Journal Cancer (August 2024) zu Brustkrebs fand, dass 24 Prozent der ChatGPT-Antworten ungenau und 41 Prozent der angegebenen Referenzen auf nicht existierende Webseiten verwiesen. Die Befunde gelten als Warnschuss für ungepruefte LLM-Nutzung in der Patienteninformation.",
+  "description_en": "A study from Brigham and Women's Hospital, published in JAMA Oncology in August 2023, tested ChatGPT 3.5 against 104 cancer-treatment queries. In about one-third of cases the model produced recommendations that did not match NCCN guidelines; in 12.5 percent it 'hallucinated' entirely fabricated therapies, including purportedly curative treatments for non-curable cancers. A follow-up study in the journal Cancer (August 2024) on breast cancer found 24 percent of ChatGPT answers were inaccurate and 41 percent of the references it provided pointed to non-existent web pages. The findings are considered a warning shot for unvetted LLM use in patient-facing health information.",
+  "startDate": "2023-08",
+  "location": {
+    "@type": "Place",
+    "name": "Boston / Chicago, USA (Brigham and Women's Hospital, JAMA, American Cancer Society)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.3601,
+      "longitude": -71.0589
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Boston / Chicago, USA (Brigham and Women's Hospital, JAMA, American Cancer Society)",
+    "name_en": "Boston / Chicago, USA (Brigham and Women's Hospital, JAMA, American Cancer Society)"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "discrimination"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "OpenAI (ChatGPT 3.5)",
+      "type": "corporation",
+      "asm:systems": [
+        "ChatGPT 3.5",
+        "GPT-4 follow-ups"
+      ],
+      "name_de": "OpenAI (ChatGPT 3.5)",
+      "name_en": "OpenAI (ChatGPT 3.5)"
+    },
+    {
+      "name": "Brigham and Women's Hospital / Harvard Medical School (study authors)",
+      "type": "academic",
+      "asm:systems": [
+        "JAMA Oncology",
+        "Cancer journal"
+      ],
+      "name_de": "Brigham and Women's Hospital / Harvard Medical School (study authors)",
+      "name_en": "Brigham and Women's Hospital / Harvard Medical School (study authors)"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://news.harvard.edu/gazette/story/2023/08/need-cancer-treatment-advice-forget-chatgpt/",
+      "title": "Need cancer treatment advice? Forget ChatGPT",
+      "publisher": "Harvard Gazette",
+      "date": "2023-08-24",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Need cancer treatment advice? Forget ChatGPT",
+      "title_en": "Need cancer treatment advice? Forget ChatGPT"
+    },
+    {
+      "url": "https://www.brighamhealthonamission.org/2023/11/30/new-study-highlights-dangers-of-patients-relying-on-chatgpt-for-treatment-recommendations/",
+      "title": "New Study Highlights Dangers of Patients Relying on ChatGPT for Treatment Recommendations",
+      "publisher": "Brigham and Women's Hospital",
+      "date": "2023-11-30",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "New Study Highlights Dangers of Patients Relying on ChatGPT for Treatment Recommendations",
+      "title_en": "New Study Highlights Dangers of Patients Relying on ChatGPT for Treatment Recommendations"
+    },
+    {
+      "url": "https://www.sciencedaily.com/releases/2023/08/230824111917.htm",
+      "title": "ChatGPT shows limited ability to recommend guidelines-based cancer treatments",
+      "publisher": "ScienceDaily / Brigham",
+      "date": "2023-08-24",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "ChatGPT shows limited ability to recommend guidelines-based cancer treatments",
+      "title_en": "ChatGPT shows limited ability to recommend guidelines-based cancer treatments"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-02",
+    "lastUpdated": "2026-06-02",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "usa-jama-chatgpt-cancer-treatment-hallucinations-2023",
+    "promotedFromRound": "round-5-2026-06-01"
+  }
+}

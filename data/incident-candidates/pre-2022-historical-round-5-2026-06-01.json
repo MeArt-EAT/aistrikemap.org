@@ -1,0 +1,1779 @@
+[
+  {
+    "candidate_id": "usa-microsoft-tay-chatbot-2016",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Microsoft Tay — KI-Chatbot wird in 16 Stunden zum rassistischen Nazi-Bot",
+      "name_en": "USA: Microsoft Tay — AI chatbot turns into racist Nazi bot within 16 hours",
+      "startDate": "2016-03-23",
+      "location": {
+        "name_de": "Redmond, Washington, USA",
+        "name_en": "Redmond, Washington, USA",
+        "country": "US",
+        "lat": 47.674,
+        "lng": -122.1215
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 2,
+      "candidate_verification": 4,
+      "description_de": "Microsoft veroeffentlichte am 23. Maerz 2016 den Lern-Chatbot Tay auf Twitter, der durch Interaktion mit Nutzer:innen lernen sollte. Innerhalb von 16 Stunden hatten Troll-Communities den Bot dazu gebracht, antisemitische, sexistische und rassistische Tweets abzusetzen (u.a. \"Hitler was right\"). Microsoft nahm Tay offline, entschuldigte sich oeffentlich und der Fall wurde zum Lehrbuch-Beispiel fuer AI-Safety-Versagen durch fehlende Eingabe-Filter und naive Online-Lernverfahren.",
+      "description_en": "On 23 March 2016 Microsoft released the learning chatbot Tay on Twitter, designed to learn from user interactions. Within 16 hours, troll communities had pushed the bot into posting antisemitic, sexist and racist tweets (including \"Hitler was right\"). Microsoft took Tay offline, issued a public apology, and the case became a textbook example of AI-safety failure caused by missing input filters and naive online learning.",
+      "actors": [
+        {
+          "name": "Microsoft Corporation",
+          "type": "company",
+          "systems": [
+            "Tay"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Tay_(chatbot)",
+          "title": "Tay (chatbot)",
+          "publisher": "Wikipedia",
+          "date": "2024",
+          "type": "encyclopedia"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/microsoft-shuts-down-ai-chatbot-after-it-turned-into-racist-nazi/",
+          "title": "Microsoft shuts down AI chatbot, Tay, after it turned into a Nazi",
+          "publisher": "CBS News",
+          "date": "2016-03-25",
+          "type": "news-article"
+        },
+        {
+          "url": "https://techcrunch.com/2016/03/24/microsoft-silences-its-new-a-i-bot-tay-after-twitter-users-teach-it-racism/",
+          "title": "Microsoft silences its new A.I. bot Tay, after Twitter users teach it racism",
+          "publisher": "TechCrunch",
+          "date": "2016-03-24",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Foundational AI-safety case. Mehrfach belegt, Wikipedia und CBS und TechCrunch konsistent. Severity 2 (kein physischer Schaden), Verification 4 (offiziell von Microsoft eingeraeumt).",
+    "dedup_hint": "tay | microsoft | chatbot | twitter | 2016",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:43:41.211Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Tay_(chatbot)",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.90 hits=8 year=2016"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/microsoft-shuts-down-ai-chatbot-after-it-turned-into-racist-nazi/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=6 year=2016"
+        },
+        {
+          "url": "https://techcrunch.com/2016/03/24/microsoft-silences-its-new-a-i-bot-tay-after-twitter-users-teach-it-racism/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=6 year=2016"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-microsoft-tay-ki-chatbot-wird-in-16-stunden-zum-rassistischen-nazi-bot-2016",
+    "promoted_at": "2026-06-02T08:01:37.145Z"
+  },
+  {
+    "candidate_id": "usa-amazon-ai-hiring-tool-2018",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Amazon verschrottet KI-Recruiting-Tool wegen systematischer Frauen-Benachteiligung",
+      "name_en": "USA: Amazon scraps AI recruiting tool over systematic discrimination against women",
+      "startDate": "2018-10-10",
+      "location": {
+        "name_de": "Seattle, Washington, USA",
+        "name_en": "Seattle, Washington, USA",
+        "country": "US",
+        "lat": 47.6062,
+        "lng": -122.3321
+      },
+      "incidentType": [
+        "discrimination",
+        "labor-exploitation"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Reuters berichtete im Oktober 2018, dass Amazon ein seit 2014 entwickeltes KI-Recruiting-Tool eingestellt hatte, weil es Frauen systematisch benachteiligte. Das Modell war auf zehn Jahren ueberwiegend maennlicher Bewerbungen trainiert und stufte Lebenslaeufe mit dem Wort \"women's\" oder Namen reiner Frauen-Colleges schlechter ein. Das Team wurde 2017 aufgeloest; der Fall gilt als Standard-Beispiel fuer trainingsdatenbedingten Bias in Hiring-Algorithmen.",
+      "description_en": "Reuters reported in October 2018 that Amazon had shut down an AI recruiting tool it had built since 2014 because the system systematically discriminated against women. The model was trained on ten years of mostly male resumes and downgraded CVs containing the word \"women's\" or the names of all-women colleges. The team was disbanded in 2017; the case is now a textbook example of training-data bias in hiring algorithms.",
+      "actors": [
+        {
+          "name": "Amazon",
+          "type": "company",
+          "systems": [
+            "AI Recruiting Tool (internal, never deployed at scale)"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.technologyreview.com/2018/10/10/139858/amazon-ditched-ai-recruitment-software-because-it-was-biased-against-women/",
+          "title": "Amazon ditched AI recruitment software because it was biased against women",
+          "publisher": "MIT Technology Review",
+          "date": "2018-10-10",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.cnbc.com/2018/10/10/amazon-scraps-a-secret-ai-recruiting-tool-that-showed-bias-against-women.html",
+          "title": "Amazon scraps a secret A.I. recruiting tool that showed bias against women",
+          "publisher": "CNBC (Reuters wire)",
+          "date": "2018-10-10",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Reuters-Erstmeldung weltweit aufgegriffen. Confidence high. Severity 3 (kein einzelner Geschaedigter bekannt, aber strukturelle Diskriminierung in Hiring-Kontext).",
+    "dedup_hint": "amazon | hiring | recruiting | gender bias | 2018 | reuters",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:43:42.962Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.technologyreview.com/2018/10/10/139858/amazon-ditched-ai-recruitment-software-because-it-was-biased-against-women/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.36 hits=3 year=2018"
+        },
+        {
+          "url": "https://www.cnbc.com/2018/10/10/amazon-scraps-a-secret-ai-recruiting-tool-that-showed-bias-against-women.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=7 year=2018"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 2
+    },
+    "promoted_to_slug": "usa-amazon-verschrottet-ki-recruiting-tool-wegen-systematischer-frauen-benachteiligung",
+    "promoted_at": "2026-06-02T08:01:37.145Z"
+  },
+  {
+    "candidate_id": "usa-apple-card-goldman-sachs-2019",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Apple Card / Goldman Sachs — Kredit-Algorithmus benachteiligt Frauen, NY-DFS untersucht",
+      "name_en": "USA: Apple Card / Goldman Sachs — credit algorithm disadvantages women, NY DFS investigates",
+      "startDate": "2019-11-08",
+      "location": {
+        "name_de": "New York City, USA",
+        "name_en": "New York City, USA",
+        "country": "US",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Im November 2019 ging ein viraler Twitter-Thread des Entwicklers David Heinemeier Hansson durch die Presse: Die Apple Card (von Goldman Sachs vergeben) hatte ihm einen 20x hoeheren Kredit-Rahmen zugeteilt als seiner Frau, trotz schlechterer Bonitaet. Auch Steve Wozniak meldete einen 10x-Faktor. Das New York Department of Financial Services eroeffnete eine offizielle Untersuchung; DFS-Superintendent Linda Lacewell stellte klar, dass \"disparate impact illegal ist, unabhaengig von Intention\".",
+      "description_en": "In November 2019 a viral Twitter thread by developer David Heinemeier Hansson hit the press: the Apple Card (issued by Goldman Sachs) had granted him a credit limit 20x higher than his wife's, despite her stronger credit score. Steve Wozniak reported a similar 10x gap. The New York Department of Financial Services opened a formal investigation; DFS Superintendent Linda Lacewell stated that \"disparate impact is illegal regardless of intent.\"",
+      "actors": [
+        {
+          "name": "Goldman Sachs",
+          "type": "company",
+          "systems": [
+            "Apple Card credit scoring"
+          ]
+        },
+        {
+          "name": "Apple",
+          "type": "company",
+          "systems": [
+            "Apple Card"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/business/2019/11/11/apple-card-algorithm-sparks-gender-bias-allegations-against-goldman-sachs/",
+          "title": "Apple Card algorithm sparks gender bias allegations against Goldman Sachs",
+          "publisher": "Washington Post",
+          "date": "2019-11-11",
+          "type": "news-article"
+        },
+        {
+          "url": "https://abcnews.go.com/US/york-probing-apple-card-alleged-gender-discrimination-viral/story?id=66910300",
+          "title": "New York probing Apple Card for alleged gender discrimination after viral tweet",
+          "publisher": "ABC News",
+          "date": "2019-11-10",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.cnbc.com/2019/11/11/regulator-probing-goldmans-apple-card-no-room-for-bias-in-algorithms.html",
+          "title": "Regulator probing Goldman over Apple Card",
+          "publisher": "CNBC",
+          "date": "2019-11-11",
+          "type": "regulatory-decision"
+        }
+      ]
+    },
+    "researcher_notes": "DFS-Untersuchung 2021 abgeschlossen mit gemischtem Befund (keine direkte Diskriminierung nachweisbar, aber Transparenzmaengel). Trotzdem Schluesselfall fuer Algorithmic-Accountability-Debatte. Confidence high.",
+    "dedup_hint": "apple card | goldman sachs | gender bias | 2019 | DFS",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:44:08.139Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.washingtonpost.com/business/2019/11/11/apple-card-algorithm-sparks-gender-bias-allegations-against-goldman-sachs/",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://abcnews.go.com/US/york-probing-apple-card-alleged-gender-discrimination-viral/story?id=66910300",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2019"
+        },
+        {
+          "url": "https://www.cnbc.com/2019/11/11/regulator-probing-goldmans-apple-card-no-room-for-bias-in-algorithms.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2019"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-apple-card-goldman-sachs-kredit-algorithmus-benachteiligt-frauen-ny-dfs-untersucht",
+    "promoted_at": "2026-06-02T08:01:37.145Z"
+  },
+  {
+    "candidate_id": "usa-google-photos-gorilla-2015",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Google Photos taggt Schwarze Personen als Gorillas — Fix bis heute nur durch Tag-Sperre",
+      "name_en": "USA: Google Photos tags Black people as gorillas — fix to date only via tag-blocking",
+      "startDate": "2015-06-29",
+      "location": {
+        "name_de": "Mountain View, Kalifornien, USA",
+        "name_en": "Mountain View, California, USA",
+        "country": "US",
+        "lat": 37.3861,
+        "lng": -122.0839
+      },
+      "incidentType": [
+        "discrimination",
+        "facial-recognition"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Im Juni 2015 entdeckte der Software-Entwickler Jacky Alcine, dass Google Photos Fotos von ihm und einer schwarzen Freundin als \"Gorillas\" klassifizierte. Google entschuldigte sich \"genuinely sorry\" und versprach Abhilfe — bis heute (2023 erneut von The Register/PetaPixel ueberprueft) ist der \"Fix\" jedoch, dass Google Photos das Label \"Gorilla\" und verwandte Primaten-Labels schlicht gesperrt hat statt das zugrundeliegende Trainings-Daten-Problem zu loesen.",
+      "description_en": "In June 2015 software engineer Jacky Alcine discovered that Google Photos was classifying photos of him and a Black friend as \"gorillas.\" Google apologised, calling itself \"genuinely sorry,\" and promised a fix. As of 2023 (revisited by The Register and PetaPixel) the \"fix\" remains: Google Photos simply blocks the labels \"gorilla\" and related primate categories rather than addressing the underlying training-data problem.",
+      "actors": [
+        {
+          "name": "Google",
+          "type": "company",
+          "systems": [
+            "Google Photos image recognition"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2015/07/02/tech/google-image-recognition-gorillas-tag",
+          "title": "Google rushes to fix software that tagged photo with racial slur",
+          "publisher": "CNN Business",
+          "date": "2015-07-02",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.technologyreview.com/2018/01/11/146257/google-photos-still-has-a-problem-with-gorillas/",
+          "title": "Google Photos Still Has a Problem with Gorillas",
+          "publisher": "MIT Technology Review",
+          "date": "2018-01-11",
+          "type": "news-article"
+        },
+        {
+          "url": "https://petapixel.com/2023/05/22/googles-photos-app-is-still-unable-to-find-gorillas/",
+          "title": "Google's Photos App is Still Unable to Find Gorillas",
+          "publisher": "PetaPixel",
+          "date": "2023-05-22",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Foundational case fuer Image-Classification-Bias. Confidence sehr hoch (10+ Jahre Coverage). Severity 3 (psychischer Schaden / rassistische Beleidigung trifft Massenmarkt).",
+    "dedup_hint": "google photos | gorilla | alcine | 2015 | image recognition",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:44:09.197Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.cnn.com/2015/07/02/tech/google-image-recognition-gorillas-tag",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.65 hits=8 year=2015"
+        },
+        {
+          "url": "https://www.technologyreview.com/2018/01/11/146257/google-photos-still-has-a-problem-with-gorillas/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.54 hits=7 year=2015"
+        },
+        {
+          "url": "https://petapixel.com/2023/05/22/googles-photos-app-is-still-unable-to-find-gorillas/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.59 hits=8 year=2015"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-google-photos-taggt-schwarze-personen-als-gorillas-fix-bis-heute-nur-durch-tag-sperre",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "netherlands-sweetie-terre-des-hommes-2013",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Niederlande: Sweetie — virtuelles 10-jaehriges Maedchen identifiziert 1.000 Online-Paedophile",
+      "name_en": "Netherlands: Sweetie — virtual 10-year-old girl identifies 1,000 online paedophiles",
+      "startDate": "2013-11-04",
+      "location": {
+        "name_de": "Den Haag, Niederlande",
+        "name_en": "The Hague, Netherlands",
+        "country": "NL",
+        "lat": 52.0705,
+        "lng": 4.3007
+      },
+      "incidentType": [
+        "surveillance",
+        "data-misuse"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 3,
+      "description_de": "Die niederlaendische Sektion von Terre des Hommes praesentierte im November 2013 \"Sweetie\": einen computer-animierten, photorealistischen Avatar eines 10-jaehrigen philippinischen Maedchens. In zehn Wochen kontaktierten Sweetie ueber 20.000 Nutzer aus 71 Laendern; die NGO identifizierte 1.000 mutmassliche Paedophile und uebergab Daten an Interpol. Der erste Verhaftung erfolgte 2014 in Brisbane. Eine Folge-Version Sweetie 2.0 (ab 2017, KI-basierte Chatbots, Tilburg/Leiden University) loeste eine breite juristische Debatte aus, ob Sweetie-Operationen Entrapment darstellen.",
+      "description_en": "The Dutch branch of Terre des Hommes unveiled \"Sweetie\" in November 2013: a computer-animated, photorealistic avatar of a 10-year-old Filipina girl. Within ten weeks, more than 20,000 users from 71 countries contacted Sweetie; the NGO identified 1,000 suspected paedophiles and handed the data to Interpol. The first arrest followed in Brisbane in 2014. A follow-up Sweetie 2.0 (from 2017, AI-driven chatbots, Tilburg/Leiden University) triggered a wide legal debate about whether Sweetie operations constitute entrapment.",
+      "actors": [
+        {
+          "name": "Terre des Hommes Netherlands",
+          "type": "ngo",
+          "systems": [
+            "Sweetie 1.0 avatar",
+            "Sweetie 2.0 (AI chatbot)"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.npr.org/sections/thetwo-way/2013/11/05/243245567/virtual-sweetie-uncovered-1-000-sexual-predators-group-says",
+          "title": "Virtual 'Sweetie' Uncovered 1,000 Sexual Predators, Group Says",
+          "publisher": "NPR",
+          "date": "2013-11-05",
+          "type": "news-article"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Sweetie_(internet_avatar)",
+          "title": "Sweetie (internet avatar)",
+          "publisher": "Wikipedia",
+          "date": "2024",
+          "type": "encyclopedia"
+        },
+        {
+          "url": "https://www.universiteitleiden.nl/en/news/2019/07/sweetie-2.0-using-artificial-intelligence-to-fight-webcam-child-sex-tourism",
+          "title": "Sweetie 2.0 — Using Artificial Intelligence to Fight Webcam Child Sex Tourism",
+          "publisher": "Leiden University",
+          "date": "2019-07",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Ungewoehnlicher Case: NGO-Einsatz von Avatar/KI gegen Kinderschutzdelikte. Ethisch ambivalent (Entrapment-Debatte). Severity moderat eingeordnet, da Tool selbst keinen Schaden verursacht hat, aber Privacy-Implikationen + Justiz-Folgen weitreichend.",
+    "dedup_hint": "sweetie | terre des hommes | netherlands | virtual child | 2013",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:44:34.381Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.npr.org/sections/thetwo-way/2013/11/05/243245567/virtual-sweetie-uncovered-1-000-sexual-predators-group-says",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Sweetie_(internet_avatar)",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.62 hits=8 year=2013"
+        },
+        {
+          "url": "https://www.universiteitleiden.nl/en/news/2019/07/sweetie-2.0-using-artificial-intelligence-to-fight-webcam-child-sex-tourism",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.56 hits=7 year=2013"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "niederlande-sweetie-virtuelles-10-jaehriges-maedchen-identifiziert-1-000-online",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "usa-houston-vam-evaas-2017",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Houston Federation of Teachers v. HISD — Algorithmus-Kuendigungen verletzen Due Process",
+      "name_en": "USA: Houston Federation of Teachers v. HISD — algorithmic firings violate due process",
+      "startDate": "2017-05-04",
+      "location": {
+        "name_de": "Houston, Texas, USA",
+        "name_en": "Houston, Texas, USA",
+        "country": "US",
+        "lat": 29.7604,
+        "lng": -95.3698
+      },
+      "incidentType": [
+        "discrimination",
+        "labor-exploitation"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Im Mai 2017 entschied ein US-Bundesgericht (S.D. Tex.), dass die Houston Independent School District (HISD) das Recht auf Due Process verletzt hatte, indem sie Lehrer:innen aufgrund eines geheimen Value-Added-Modells (EVAAS, entwickelt von SAS) entliess, ohne die zugrundeliegenden Daten offenzulegen. HISD einigte sich noch 2017 darauf, EVAAS-Scores nicht mehr fuer Kuendigungen zu nutzen, solange Lehrkraefte die Scores nicht unabhaengig pruefen koennen, und zahlte 237.000 USD Anwaltskosten an Texas AFT.",
+      "description_en": "In May 2017 a US federal court (S.D. Tex.) ruled that Houston Independent School District (HISD) had violated teachers' procedural due process rights by firing them based on a secret value-added model (EVAAS, developed by SAS) without disclosing the underlying data. Later in 2017 HISD settled, agreeing to stop using EVAAS scores for termination as long as teachers cannot independently audit the score, and paid 237,000 USD in attorney fees to Texas AFT.",
+      "actors": [
+        {
+          "name": "Houston Independent School District",
+          "type": "government",
+          "systems": [
+            "EVAAS (SAS) value-added teacher evaluation"
+          ]
+        },
+        {
+          "name": "SAS Institute",
+          "type": "company",
+          "systems": [
+            "EVAAS"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aft.org/press-release/federal-suit-settlement-end-value-added-measures-teacher-termination-houston",
+          "title": "Federal Suit Settlement: End of Value-Added Measures for Teacher Termination in Houston",
+          "publisher": "American Federation of Teachers",
+          "date": "2017-10",
+          "type": "legal-ruling"
+        },
+        {
+          "url": "https://journals.sagepub.com/doi/10.3102/0013189X20923046",
+          "title": "Houston, We Have a Lawsuit: A Cautionary Tale for the Implementation of Value-Added Models",
+          "publisher": "Educational Researcher (SAGE)",
+          "date": "2020",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://case-law.vlex.com/vid/hous-fed-n-of-890414574",
+          "title": "Hous. Fed'n of Teachers v. Hous. Indep. Sch. Dist., 251 F.Supp.3d 1168 (S.D. Tex. 2017)",
+          "publisher": "vLex Case Law",
+          "date": "2017-05-04",
+          "type": "court-filing"
+        }
+      ]
+    },
+    "researcher_notes": "Selten zitierter, aber wichtiger Praezedenzfall: Erstes US-Bundesgericht-Urteil, das Black-Box-Algorithmus-Kuendigungen als Due-Process-Verletzung anerkennt. Confidence sehr hoch.",
+    "dedup_hint": "houston | EVAAS | VAM | teacher | due process | 2017",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:44:35.761Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.aft.org/press-release/federal-suit-settlement-end-value-added-measures-teacher-termination-houston",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8 year=2017"
+        },
+        {
+          "url": "https://journals.sagepub.com/doi/10.3102/0013189X20923046",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://case-law.vlex.com/vid/hous-fed-n-of-890414574",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2017"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-houston-federation-of-teachers-v-hisd-algorithmus-kuendigungen-verletzen-due-process",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "usa-nsa-skynet-program-2013",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA/Pakistan: NSA SKYNET — Machine-Learning markiert mutmassliche Terroristen fuer Drohnen-Toetungen",
+      "name_en": "USA/Pakistan: NSA SKYNET — machine learning flags suspected terrorists for drone killings",
+      "startDate": "2013-06-01",
+      "location": {
+        "name_de": "Pakistan (analysiert in Fort Meade, Maryland, USA)",
+        "name_en": "Pakistan (analysed in Fort Meade, Maryland, USA)",
+        "country": "PK",
+        "lat": 30.3753,
+        "lng": 69.3451
+      },
+      "incidentType": [
+        "surveillance",
+        "military-ai",
+        "autonomous-weapons"
+      ],
+      "candidate_severity": 5,
+      "candidate_verification": 3,
+      "description_de": "Snowden-Dokumente, ab 2015 von The Intercept veroeffentlicht, enthuellten das NSA-Programm SKYNET: Ein Machine-Learning-System, das Metadaten von ueber 55 Millionen pakistanischen Mobilfunk-Nutzer:innen analysierte, um \"Terroristen-Verhaltensmuster\" (SIM-Tausch, Reisemuster, Kontakte, Phone-Off-Events) zu identifizieren. Forschende warnten 2016, dass das Modell mit dem Trainingsumfang strukturell tausende Falsch-Positive produzieren konnte; Privacy International und WSWS verbanden SKYNET-Ausgaben mit US-Drohnen-Schlaegen, bei denen ueber Jahre tausende Menschen getoetet wurden.",
+      "description_en": "Snowden documents, published from 2015 by The Intercept, exposed the NSA's SKYNET programme: a machine-learning system analysing metadata of over 55 million Pakistani mobile users to identify \"terrorist behaviour patterns\" (SIM-swapping, travel, contacts, phone-off events). Researchers warned in 2016 that the model, given its training scope, would structurally produce thousands of false positives; Privacy International and WSWS linked SKYNET output to US drone strikes that killed thousands over the years.",
+      "actors": [
+        {
+          "name": "US National Security Agency",
+          "type": "government",
+          "systems": [
+            "SKYNET ML targeting"
+          ]
+        },
+        {
+          "name": "CIA / US Air Force",
+          "type": "government",
+          "systems": [
+            "Drone strike programme Pakistan"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://privacyinternational.org/examples/1782/nsa-skynet-may-have-killed-thousands-innocent-people",
+          "title": "NSA SKYNET may have killed thousands of innocent people",
+          "publisher": "Privacy International",
+          "date": "2016",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://inria.hal.science/hal-01278193/document",
+          "title": "The NSA's SKYNET program may be killing thousands of innocent people",
+          "publisher": "HAL / Inria archive (academic analysis)",
+          "date": "2016-02-16",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://www.pcworld.com/article/419750/lets-hope-the-nsa-hasnt-actually-used-this-machine-learning-model-to-target-drone-strikes.html",
+          "title": "Let's hope the NSA hasn't actually used this machine-learning model to target drone strikes",
+          "publisher": "PCWorld",
+          "date": "2016",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Severity 5 (Toten potenziell tausende durch fehlerhafte ML-Targeting-Korrelation). Verification 3, weil die Verbindung SKYNET-Output -> tatsaechliche Strike-Listen nicht final dokumentiert ist, aber durch Snowden-Slides und Reverse-Engineering stark gestuetzt.",
+    "dedup_hint": "nsa | skynet | machine learning | pakistan | drone | snowden | 2013",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:45:31.451Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://privacyinternational.org/examples/1782/nsa-skynet-may-have-killed-thousands-innocent-people",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.33 hits=8"
+        },
+        {
+          "url": "https://inria.hal.science/hal-01278193/document",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.15"
+        },
+        {
+          "url": "https://www.pcworld.com/article/419750/lets-hope-the-nsa-hasnt-actually-used-this-machine-learning-model-to-target-drone-strikes.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.42 hits=8"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "pakistan-usa-pakistan-nsa-skynet-machine-learning-markiert-mutmassliche-terroristen-fuer",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "australia-robodebt-royal-commission-2023",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Australien: Robodebt Royal Commission — \"crude, cruel and unlawful\" mit zwei Suiziden in Verbindung gebracht",
+      "name_en": "Australia: Robodebt Royal Commission — \"crude, cruel and unlawful,\" linked to two suicides",
+      "startDate": "2023-07-07",
+      "location": {
+        "name_de": "Canberra, Australien",
+        "name_en": "Canberra, Australia",
+        "country": "AU",
+        "lat": -35.2809,
+        "lng": 149.13
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 5,
+      "candidate_verification": 4,
+      "description_de": "Am 7. Juli 2023 uebergab Commissioner Catherine Holmes AC SC den Abschlussbericht der Royal Commission into the Robodebt Scheme. Befund: Das 2015-2019 betriebene Income-Averaging-Verfahren der australischen Sozialbehoerde war \"crude, cruel and unlawful\", ein klarer Verstoss gegen das Social Security Act. 526.000 Menschen erhielten automatisierte Schulden-Bescheide; mindestens zwei Suizide junger Maenner werden mit dem System in Verbindung gebracht. Die Regierung akzeptierte alle 56 Empfehlungen \"in principle\".",
+      "description_en": "On 7 July 2023 Commissioner Catherine Holmes AC SC delivered the final report of the Royal Commission into the Robodebt Scheme. Verdict: the 2015-2019 income-averaging operation of Australia's welfare agency was \"crude, cruel and unlawful,\" in clear breach of the Social Security Act. 526,000 people received automated debt notices; at least two suicides of young men are linked to the system. The government accepted all 56 recommendations \"in principle.\"",
+      "actors": [
+        {
+          "name": "Services Australia / Department of Human Services",
+          "type": "government",
+          "systems": [
+            "Robodebt income-averaging automated debt-raising"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://robodebt.royalcommission.gov.au/publications/report",
+          "title": "Report — Royal Commission into the Robodebt Scheme",
+          "publisher": "Royal Commission (Government of Australia)",
+          "date": "2023-07-07",
+          "type": "government-document"
+        },
+        {
+          "url": "https://lsj.com.au/articles/crude-cruel-and-unlawful-robodebt-royal-commission-findings/",
+          "title": "Crude, cruel and unlawful: Robodebt Royal Commission findings",
+          "publisher": "Law Society Journal NSW",
+          "date": "2023-07",
+          "type": "analysis"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Robodebt_scheme",
+          "title": "Robodebt scheme",
+          "publisher": "Wikipedia",
+          "date": "2024",
+          "type": "encyclopedia"
+        }
+      ]
+    },
+    "researcher_notes": "HINWEIS: 'australien-robodebt' existiert bereits in index.json — aber diese Round-5-Variante fokussiert explizit den 2023-Royal-Commission-Bericht und seine Schlussfolgerungen, nicht das urspruengliche System. Falls Doppel-Dedup, kann promote-script den eintragen oder mergen.",
+    "dedup_hint": "robodebt | royal commission | australia | 2023 | holmes | final report",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:45:56.635Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://robodebt.royalcommission.gov.au/publications/report",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://lsj.com.au/articles/crude-cruel-and-unlawful-robodebt-royal-commission-findings/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.71 hits=8 year=2023"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Robodebt_scheme",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.76 hits=8 year=2023"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "australien-robodebt-royal-commission-crude-cruel-and-unlawful-mit-zwei-suiziden-in",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "usa-clearview-ai-nyt-expose-2020",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "needs-review",
+    "candidate_data": {
+      "name_de": "USA: Clearview AI — Kashmir-Hills NYT-Enthuellung deckt Geheim-Datenbank von 3 Milliarden Gesichtern auf",
+      "name_en": "USA: Clearview AI — Kashmir Hill's NYT expose reveals secret database of 3 billion faces",
+      "startDate": "2020-01-18",
+      "location": {
+        "name_de": "New York City, USA",
+        "name_en": "New York City, USA",
+        "country": "US",
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "incidentType": [
+        "surveillance",
+        "facial-recognition",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Am 18. Januar 2020 veroeffentlichte die New-York-Times-Reporterin Kashmir Hill ihre Cover-Story \"The Secretive Company That Might End Privacy as We Know It\" ueber Clearview AI. Das Startup hatte ohne Einwilligung 3+ Milliarden Fotos von Facebook, YouTube, Venmo und unzaehligen anderen Websites gescraped und ueber 600 US-Polizeibehoerden inkl. FBI und DHS Zugriff auf die Gesichtserkennungs-App verkauft. Die NYT-Story loeste eine weltweite Welle aus Klagen, regulatorischen Untersuchungen und Cease-and-Desist-Briefen von Plattformen aus.",
+      "description_en": "On 18 January 2020 New York Times reporter Kashmir Hill published her cover story \"The Secretive Company That Might End Privacy as We Know It\" on Clearview AI. The startup had scraped over 3 billion photos from Facebook, YouTube, Venmo and countless other websites without consent and sold facial-recognition access to over 600 US police departments, including the FBI and DHS. The NYT story triggered a global wave of lawsuits, regulatory investigations, and platform cease-and-desist letters.",
+      "actors": [
+        {
+          "name": "Clearview AI",
+          "type": "company",
+          "systems": [
+            "Clearview AI facial recognition app"
+          ]
+        },
+        {
+          "name": "US law enforcement (600+ agencies including FBI, DHS)",
+          "type": "government",
+          "systems": [
+            "Clearview AI client deployment"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://iapp.org/news/a/concerns-around-regulation-of-facial-recognition-technology-on-the-rise",
+          "title": "Will NYT's facial-recognition story sway privacy debate?",
+          "publisher": "IAPP",
+          "date": "2020-01",
+          "type": "analysis"
+        }
+      ],
+      "researcher_notes_internal": "WICHTIG: NYT-Story selbst (Kashmir Hill, 2020-01-18) ist Paywall, aber Existenz und Inhalt sind von IAPP zitiert. Beim Promote zweite Source nachholen (z.B. Wikipedia Clearview AI). Beachten: usa-clearview-ai-scraping existiert bereits in index.json — diese Eintragung ist enger als 'NYT-Expose-Event 2020-01-18', anderer Aspekt. Bei Dedup ggf. mergen.",
+      "researcher_notes": "Aufpassen: 'usa-clearview-ai-scraping' und 'clearview-ai-massenuberwachung' existieren bereits in index.json. Dieser Candidate fokussiert *spezifisch* das NYT-Expose-Datum 18.1.2020 als Wende-Ereignis. Falls Pipeline-Dedup zuschlaegt: verwerfen."
+    },
+    "researcher_notes": "Siehe internal note: moeglicher Dedup mit existierenden Clearview-Eintraegen, hier nur als Verschriftlichung des Wende-Datums 2020-01-18 (Hill/NYT-Story) eingereicht.",
+    "dedup_hint": "clearview | nyt | kashmir hill | 2020 | facial recognition",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:45:58.031Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://iapp.org/news/a/concerns-around-regulation-of-facial-recognition-technology-on-the-rise",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.60 hits=8 year=2020"
+        }
+      ],
+      "match_count": 1,
+      "sources_count": 1
+    }
+  },
+  {
+    "candidate_id": "hk-protests-facial-recognition-lampposts-2019",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Hongkong: Smart-Lampposts und Gesichtserkennung — Demonstrant:innen reissen Ueberwachungs-Infrastruktur ab",
+      "name_en": "Hong Kong: smart lampposts and facial recognition — protesters tear down surveillance infrastructure",
+      "startDate": "2019-08-24",
+      "location": {
+        "name_de": "Hongkong (Kowloon Bay)",
+        "name_en": "Hong Kong (Kowloon Bay)",
+        "country": "HK",
+        "lat": 22.3193,
+        "lng": 114.1694
+      },
+      "incidentType": [
+        "surveillance",
+        "facial-recognition",
+        "political-pressure"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 3,
+      "description_de": "Im Sommer 2019, waehrend der Anti-Auslieferungsgesetz-Proteste in Hongkong, fokussierte sich die Demokratie-Bewegung auf die rund 50 \"Smart Lampposts\" (kamera- und sensorbestueckt), die das Stadt-Department als Verkehrs- und Umweltsensoren deklariert hatte, von denen Protestler:innen aber Gesichtserkennungs-Funktion fuerchteten. Am 24. August 2019 wurden mehrere Lampposts in Kowloon Bay oeffentlich abmontiert. Demonstrierende setzten Laser-Pointer und Regenschirme als Anti-Surveillance-Tools ein — eine der ersten massenhaften zivilen Anti-Facial-Recognition-Aktionen weltweit.",
+      "description_en": "In summer 2019, during the anti-extradition-law protests in Hong Kong, the democracy movement focused on the around 50 \"smart lampposts\" (fitted with cameras and sensors) that city departments had labelled as traffic and air-quality sensors but which protesters feared had facial-recognition capability. On 24 August 2019 several lampposts in Kowloon Bay were publicly torn down. Demonstrators used laser pointers and umbrellas as anti-surveillance tools — one of the first mass-scale civilian anti-facial-recognition campaigns globally.",
+      "actors": [
+        {
+          "name": "Hong Kong government / Smart City programme",
+          "type": "government",
+          "systems": [
+            "Smart lamppost network"
+          ]
+        },
+        {
+          "name": "Hong Kong Police Force",
+          "type": "government",
+          "systems": [
+            "Facial-recognition surveillance during protests"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2019/09/09/asia/smart-lamp-hong-kong-hnk-intl",
+          "title": "Hong Kong protesters' fears of surveillance point to China",
+          "publisher": "CNN",
+          "date": "2019-09-09",
+          "type": "news-article"
+        },
+        {
+          "url": "https://securitytoday.com/articles/2019/08/28/hong-kong-protesters-take-down-smart-lamps-amid-growing-fears-of-chinese-surveillance-tech.aspx",
+          "title": "Hong Kong Protesters Take Down Smart Lamps Amid Growing Fears of Chinese Surveillance Tech",
+          "publisher": "Security Today",
+          "date": "2019-08-28",
+          "type": "news-article"
+        },
+        {
+          "url": "https://sites.uab.edu/humanrights/2025/02/13/the-abuse-of-facial-recognition-technology-in-the-hong-kong-protests/",
+          "title": "The Abuse of Facial Recognition Technology in the Hong Kong Protests",
+          "publisher": "UAB Institute for Human Rights",
+          "date": "2025-02-13",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Verification 3: Existenz Lampposts + Abriss + Anti-Surveillance-Massnahmen mehrfach belegt. Tatsaechlicher FR-Einsatz wird von HK-Regierung bestritten, von Aktivist:innen behauptet. Severity 4 wegen Massenausmass und politischem Kontext.",
+    "dedup_hint": "hong kong | protest | smart lamp | facial recognition | 2019 | extradition",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:02.018Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.cnn.com/2019/09/09/asia/smart-lamp-hong-kong-hnk-intl",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.53 hits=8 year=2019"
+        },
+        {
+          "url": "https://securitytoday.com/articles/2019/08/28/hong-kong-protesters-take-down-smart-lamps-amid-growing-fears-of-chinese-surveillance-tech.aspx",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2019"
+        },
+        {
+          "url": "https://sites.uab.edu/humanrights/2025/02/13/the-abuse-of-facial-recognition-technology-in-the-hong-kong-protests/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2019"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "hongkong-smart-lampposts-und-gesichtserkennung-demonstrant-innen-reissen-ueberwachungs",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "usa-uber-greyball-2017",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Uber Greyball — algorithmische Tarn-Software gegen Behoerden in 16+ Staedten, DOJ-Strafverfahren",
+      "name_en": "USA: Uber Greyball — algorithmic stealth software against regulators in 16+ cities, DOJ criminal probe",
+      "startDate": "2017-03-03",
+      "location": {
+        "name_de": "San Francisco, Kalifornien, USA",
+        "name_en": "San Francisco, California, USA",
+        "country": "US",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      "incidentType": [
+        "data-misuse",
+        "political-pressure"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Anfang Maerz 2017 enthuellte die New York Times Ubers internes Programm \"Greyball\": Eine algorithmische Erkennungs-Pipeline, die Kreditkarten-Daten, Social-Media-Profile und Geolocations nutzte, um Aufsichts-Beamte und Polizei als solche zu identifizieren, ihnen eine Fake-Version der App auszuliefern und Buchungen zu sabotieren. Eingesetzt in Boston, Paris, Las Vegas, Australien, China, Suedkorea und Portland (Oregon). Die Portland-Untersuchung dokumentierte 16 gezielt blockierte Aufseher; das US Department of Justice eroeffnete ein Strafverfahren; Uber wurde Subjekt einer Northern-California-Grand-Jury-Subpoena.",
+      "description_en": "In early March 2017 the New York Times revealed Uber's internal programme \"Greyball\": an algorithmic detection pipeline using credit-card data, social media profiles and geolocation to identify regulators and police, then serve them a fake version of the app and sabotage their bookings. Deployed in Boston, Paris, Las Vegas, Australia, China, South Korea and Portland (Oregon). The Portland investigation documented 16 specifically blocked officials; the US Department of Justice opened a criminal probe; Uber was hit with a Northern California grand jury subpoena.",
+      "actors": [
+        {
+          "name": "Uber Technologies",
+          "type": "company",
+          "systems": [
+            "Greyball user-tagging and decoy-app system"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2017/03/08/uber-says-its-reviewing-use-greyball-and-wont-use-it-to-monitor-regulators/",
+          "title": "Uber says it's reviewing use of 'Greyball' and won't use it to monitor regulators",
+          "publisher": "TechCrunch",
+          "date": "2017-03-08",
+          "type": "news-article"
+        },
+        {
+          "url": "https://techcrunch.com/2017/05/05/department-of-justice-uber-greyball/",
+          "title": "U.S. Department of Justice is reportedly investigating Uber's controversial 'Greyball' program",
+          "publisher": "TechCrunch",
+          "date": "2017-05-05",
+          "type": "news-article"
+        },
+        {
+          "url": "https://fortune.com/2017/09/15/uber-portland-greyball/",
+          "title": "Uber: Portland Probe Finds Greyball Used to Evade Officials",
+          "publisher": "Fortune",
+          "date": "2017-09-15",
+          "type": "news-article"
+        },
+        {
+          "url": "https://privacyinternational.org/examples/681/secret-uber-greyball-programme-undermines-regulators",
+          "title": "Secret Uber Greyball programme undermines regulators",
+          "publisher": "Privacy International",
+          "date": "2017",
+          "type": "ngo-report"
+        }
+      ]
+    },
+    "researcher_notes": "Verification 4: NYT-Erstmeldung, DOJ-Probe, Portland-City-Report, Privacy-International-Aufnahme. Severity 3 (kein physischer Schaden, aber systematische Aushebelung staatlicher Regulierungs-Aufsicht).",
+    "dedup_hint": "uber | greyball | regulators | 2017 | nyt | portland | doj",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:03.531Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://techcrunch.com/2017/03/08/uber-says-its-reviewing-use-greyball-and-wont-use-it-to-monitor-regulators/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.37 hits=4 year=2017"
+        },
+        {
+          "url": "https://techcrunch.com/2017/05/05/department-of-justice-uber-greyball/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.37 hits=4 year=2017"
+        },
+        {
+          "url": "https://fortune.com/2017/09/15/uber-portland-greyball/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.54 hits=7 year=2017"
+        },
+        {
+          "url": "https://privacyinternational.org/examples/681/secret-uber-greyball-programme-undermines-regulators",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.37 hits=4 year=2017"
+        }
+      ],
+      "match_count": 4,
+      "sources_count": 4
+    },
+    "promoted_to_slug": "usa-uber-greyball-algorithmische-tarn-software-gegen-behoerden-in-16-staedten-doj",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "usa-facebook-emotional-contagion-2014",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Facebook Emotional-Contagion-Studie — 689.000 Nutzer ohne Einwilligung in Stimmungsexperiment",
+      "name_en": "USA: Facebook emotional contagion study — 689,000 users in mood experiment without consent",
+      "startDate": "2014-06-28",
+      "location": {
+        "name_de": "Menlo Park, Kalifornien, USA",
+        "name_en": "Menlo Park, California, USA",
+        "country": "US",
+        "lat": 37.453,
+        "lng": -122.1817
+      },
+      "incidentType": [
+        "data-misuse",
+        "political-pressure"
+      ],
+      "candidate_severity": 3,
+      "candidate_verification": 4,
+      "description_de": "Im Juni 2014 wurde bekannt, dass Facebook 2012 ueber eine Woche die Newsfeeds von rund 689.000 Nutzer:innen ohne ihr explizites Wissen oder Einwilligung manipuliert hatte — die Haelfte sah verstaerkt positive, die andere verstaerkt negative Posts —, um \"emotional contagion\" zu studieren. Die in PNAS publizierte Studie loeste massiven oeffentlichen Protest aus, EPIC reichte Beschwerde bei der FTC ein, und der Fall wurde zum Praezedenzfall fuer Plattform-A/B-Tests an Menschen ohne IRB-Pruefung.",
+      "description_en": "In June 2014 it became public that Facebook had, in 2012 over a one-week period, manipulated the news feeds of around 689,000 users without their explicit knowledge or consent — half were shown more positive, the other half more negative posts — in order to study \"emotional contagion.\" The study, published in PNAS, triggered massive public outrage, EPIC filed a complaint with the FTC, and the case became a precedent for platform A/B testing on humans without IRB review.",
+      "actors": [
+        {
+          "name": "Facebook (Meta) Core Data Science Team",
+          "type": "company",
+          "systems": [
+            "News Feed ranking algorithm"
+          ]
+        },
+        {
+          "name": "Cornell University / UCSF (study co-authors)",
+          "type": "ngo",
+          "systems": [
+            "Emotional contagion study"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://epic.org/documents/in-re-facebook-psychological-study/",
+          "title": "In re: Facebook (Psychological Study)",
+          "publisher": "EPIC",
+          "date": "2014-07",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://www.npr.org/sections/alltechconsidered/2014/06/30/326929138/facebook-manipulates-our-moods-for-science-and-commerce-a-roundup",
+          "title": "Facebook Manipulates Our Moods For Science And Commerce: A Roundup",
+          "publisher": "NPR",
+          "date": "2014-06-30",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.thehastingscenter.org/facebooks-emotion-experiment-implications-for-research-ethics/",
+          "title": "Facebook's Emotion Experiment: Implications for Research Ethics",
+          "publisher": "Hastings Center for Bioethics",
+          "date": "2014-07",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Foundational case fuer Platform-Power und algorithmische Beeinflussung von Emotionen. Confidence sehr hoch. Severity 3 (kein einzelner Tod / direkter Personenschaden bekannt, aber Massen-Manipulationsexperiment ohne Consent).",
+    "dedup_hint": "facebook | emotional contagion | newsfeed | 2014 | pnas | epic",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:28.716Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://epic.org/documents/in-re-facebook-psychological-study/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.82 hits=8 year=2014"
+        },
+        {
+          "url": "https://www.npr.org/sections/alltechconsidered/2014/06/30/326929138/facebook-manipulates-our-moods-for-science-and-commerce-a-roundup",
+          "http_status": null,
+          "matches_content": false,
+          "note": "fetch-error: This operation was aborted"
+        },
+        {
+          "url": "https://www.thehastingscenter.org/facebooks-emotion-experiment-implications-for-research-ethics/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.78 hits=8 year=2014"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-facebook-emotional-contagion-studie-689-000-nutzer-ohne-einwilligung-in",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "global-buolamwini-gender-shades-2018",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA/Global: Gender-Shades-Studie — Gesichtserkennung von IBM, Microsoft und Face++ versagt bei Schwarzen Frauen",
+      "name_en": "USA/Global: Gender Shades study — IBM, Microsoft and Face++ facial recognition fails on Black women",
+      "startDate": "2018-02-09",
+      "location": {
+        "name_de": "Cambridge, Massachusetts, USA (MIT Media Lab)",
+        "name_en": "Cambridge, Massachusetts, USA (MIT Media Lab)",
+        "country": "US",
+        "lat": 42.3614,
+        "lng": -71.09
+      },
+      "incidentType": [
+        "discrimination",
+        "facial-recognition"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Im Februar 2018 publizierten Joy Buolamwini (MIT) und Timnit Gebru (Microsoft Research) die \"Gender Shades\"-Studie auf der FAT*-Konferenz: Kommerzielle Gesichtserkennungs-APIs von IBM, Microsoft und Face++ zeigten Fehlerraten von unter 1 Prozent bei hellhaeutigen Maennern, aber bis zu 34,7 Prozent bei dunkelhaeutigen Frauen. IBM hatte den hoechsten Fehler (~35 %); Microsoft 20,8 % bei dunkelhaeutigen Frauen. Die Studie loeste Algorithmic-Justice-League-Aktivismus aus und fuehrte 2020 zum Rueckzug von IBM aus Gesichtserkennung sowie temporaeren Moratorien bei Microsoft und Amazon.",
+      "description_en": "In February 2018 Joy Buolamwini (MIT) and Timnit Gebru (Microsoft Research) published the \"Gender Shades\" study at the FAT* conference: commercial facial-recognition APIs from IBM, Microsoft and Face++ showed error rates below 1 percent on light-skinned men, but up to 34.7 percent on dark-skinned women. IBM had the worst error (~35%); Microsoft 20.8% on dark-skinned women. The study fuelled Algorithmic Justice League activism and contributed to IBM exiting facial recognition in 2020, along with temporary moratoria by Microsoft and Amazon.",
+      "actors": [
+        {
+          "name": "Joy Buolamwini / Algorithmic Justice League / MIT Media Lab",
+          "type": "ngo",
+          "systems": [
+            "Gender Shades audit benchmark"
+          ]
+        },
+        {
+          "name": "IBM, Microsoft, Megvii (Face++)",
+          "type": "company",
+          "systems": [
+            "IBM Watson Visual Recognition",
+            "Microsoft Face API",
+            "Face++ API"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf",
+          "title": "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification",
+          "publisher": "Proceedings of Machine Learning Research (FAT* 2018)",
+          "date": "2018-02-23",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212",
+          "title": "Study finds gender and skin-type bias in commercial artificial-intelligence systems",
+          "publisher": "MIT News",
+          "date": "2018-02-12",
+          "type": "news-article"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Joy_Buolamwini",
+          "title": "Joy Buolamwini",
+          "publisher": "Wikipedia",
+          "date": "2024",
+          "type": "encyclopedia"
+        }
+      ]
+    },
+    "researcher_notes": "Foundational research, mehrfach belegt. Severity 4 (strukturelle Diskriminierung mit Konsequenz, dass weltweit eingesetzte FR-Systeme ein Massendiskriminierungs-Profil hatten).",
+    "dedup_hint": "gender shades | buolamwini | gebru | ibm | microsoft | facial recognition | 2018",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:29.511Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf",
+          "http_status": 200,
+          "matches_content": false,
+          "note": "no-content-match score=0.00"
+        },
+        {
+          "url": "https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.82 hits=8 year=2018"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Joy_Buolamwini",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.90 hits=8 year=2018"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-global-gender-shades-studie-gesichtserkennung-von-ibm-microsoft-und-face-versagt-bei",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "usa-robert-williams-wrongful-arrest-2020",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Robert Williams (Detroit) — erste oeffentlich bekannte Falsch-Verhaftung durch Gesichtserkennung",
+      "name_en": "USA: Robert Williams (Detroit) — first publicly known wrongful arrest by facial recognition",
+      "startDate": "2020-01-09",
+      "location": {
+        "name_de": "Detroit, Michigan, USA",
+        "name_en": "Detroit, Michigan, USA",
+        "country": "US",
+        "lat": 42.3314,
+        "lng": -83.0458
+      },
+      "incidentType": [
+        "facial-recognition",
+        "discrimination"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Im Januar 2020 verhaftete die Polizei Detroit Robert Williams, einen Schwarzen Vater, vor den Augen seiner Toechter, weil ein DataWorks-Gesichtserkennungs-Treffer ihn mit einem Shinola-Ladendieb verwechselt hatte. Williams verbrachte 30 Stunden in einer Zelle. Es war die erste oeffentlich bekannte Falsch-Verhaftung durch FR-Match. Die ACLU klagte 2021; 2024 endete der Fall in einem Vergleich, der die strengsten US-Polizei-Auflagen fuer FR-Einsatz etablierte (kein Arrest allein aufgrund FR-Match, kein Lineup nur auf FR-Basis).",
+      "description_en": "In January 2020 Detroit police arrested Robert Williams, a Black father, in front of his daughters because a DataWorks facial-recognition hit had mistaken him for a Shinola store thief. Williams spent 30 hours in a cell. It was the first publicly known wrongful arrest from an FR match. The ACLU sued in 2021; in 2024 the case ended in a settlement that establishes the strongest US police constraints on FR use (no arrest solely from FR match, no lineup solely from FR lead).",
+      "actors": [
+        {
+          "name": "Detroit Police Department",
+          "type": "government",
+          "systems": [
+            "DataWorks Plus facial-recognition system"
+          ]
+        },
+        {
+          "name": "Michigan State Police",
+          "type": "government",
+          "systems": [
+            "State facial-recognition database"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aclu.org/cases/williams-v-city-of-detroit-face-recognition-false-arrest",
+          "title": "Williams v. City of Detroit (case page)",
+          "publisher": "ACLU",
+          "date": "2021-04-13",
+          "type": "court-filing"
+        },
+        {
+          "url": "https://www.aclu.org/press-releases/civil-rights-advocates-achieve-the-nations-strongest-police-department-policy-on-facial-recognition-technology",
+          "title": "Civil Rights Advocates Achieve the Nation's Strongest Police Department Policy on Facial Recognition Technology",
+          "publisher": "ACLU",
+          "date": "2024-06-28",
+          "type": "legal-ruling"
+        },
+        {
+          "url": "https://www.michiganpublic.org/criminal-justice-legal-system/2024-06-28/it-didnt-make-sense-at-all-wrongful-facial-recognition-arrest-leads-to-landmark-settlement",
+          "title": "Wrongful facial recognition arrest in Detroit leads to landmark settlement",
+          "publisher": "Michigan Public Radio",
+          "date": "2024-06-28",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Verification 4 (Court-Filing + Settlement + ACLU-Dokumentation). Severity 4. Praezedenzfall.",
+    "dedup_hint": "robert williams | detroit | facial recognition | wrongful arrest | 2020 | aclu",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:31.051Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.aclu.org/cases/williams-v-city-of-detroit-face-recognition-false-arrest",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.85 hits=8 year=2020"
+        },
+        {
+          "url": "https://www.aclu.org/press-releases/civil-rights-advocates-achieve-the-nations-strongest-police-department-policy-on-facial-recognition-technology",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.80 hits=8 year=2020"
+        },
+        {
+          "url": "https://www.michiganpublic.org/criminal-justice-legal-system/2024-06-28/it-didnt-make-sense-at-all-wrongful-facial-recognition-arrest-leads-to-landmark-settlement",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.85 hits=8 year=2020"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-robert-williams-detroit-erste-oeffentlich-bekannte-falsch-verhaftung-durch",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "usa-optum-healthcare-algorithm-bias-2019",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "USA: Optum-Healthcare-Algorithmus — racial bias trifft 200 Millionen Patient:innen jaehrlich",
+      "name_en": "USA: Optum healthcare algorithm — racial bias affecting 200 million patients annually",
+      "startDate": "2019-10-24",
+      "location": {
+        "name_de": "Minnetonka, Minnesota, USA (Optum HQ)",
+        "name_en": "Minnetonka, Minnesota, USA (Optum HQ)",
+        "country": "US",
+        "lat": 44.9211,
+        "lng": -93.4687
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Im Oktober 2019 publizierten Ziad Obermeyer et al. in Science die Studie \"Dissecting racial bias in an algorithm used to manage the health of populations\". Der von Optum (UnitedHealth Group) entwickelte und bei US-Hospitals breit eingesetzte Risiko-Score nutzte vergangene Gesundheits-Kosten als Proxy fuer Krankheit — was systematisch Schwarze Patient:innen benachteiligte, weil weniger Geld fuer ihre Versorgung ausgegeben worden war. Folge: Bei gleichem Score waren Schwarze Patient:innen substanziell kraenker. Ein Korrektur-Modell wuerde den Anteil Schwarzer Patient:innen im High-Risk-Care-Programm von 17,7 auf 46,5 % anheben. Geschaetzt 200 Millionen US-Patient:innen jaehrlich von solchen Tools betroffen.",
+      "description_en": "In October 2019 Ziad Obermeyer et al. published in Science \"Dissecting racial bias in an algorithm used to manage the health of populations.\" Optum's (UnitedHealth Group) risk score, widely deployed across US hospitals, used past healthcare costs as a proxy for illness — systematically disadvantaging Black patients because less money had been spent on their care. Result: at the same score, Black patients were substantially sicker. A corrective model would raise Black patients in the high-risk care programme from 17.7% to 46.5%. An estimated 200 million US patients affected by such tools annually.",
+      "actors": [
+        {
+          "name": "Optum / UnitedHealth Group",
+          "type": "company",
+          "systems": [
+            "Optum Impact Pro / risk-stratification algorithm"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.science.org/doi/10.1126/science.aax2342",
+          "title": "Dissecting racial bias in an algorithm used to manage the health of populations",
+          "publisher": "Science (AAAS)",
+          "date": "2019-10-24",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://www.healthcarefinancenews.com/news/study-finds-racial-bias-optum-algorithm",
+          "title": "Study finds racial bias in Optum algorithm",
+          "publisher": "Healthcare Finance News",
+          "date": "2019-10",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.nbcnews.com/news/nbcblk/racial-bias-found-widely-used-health-care-algorithm-n1076436",
+          "title": "Racial bias found in widely used health care algorithm",
+          "publisher": "NBC News",
+          "date": "2019-10-25",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Peer-reviewed in Science, weltweite Reportage. Verification 4. Severity 4 (Massenmedizinische Diskriminierung).",
+    "dedup_hint": "optum | unitedhealth | obermeyer | racial bias | healthcare | 2019 | science",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:32.036Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.science.org/doi/10.1126/science.aax2342",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://www.healthcarefinancenews.com/news/study-finds-racial-bias-optum-algorithm",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.68 hits=8 year=2019"
+        },
+        {
+          "url": "https://www.nbcnews.com/news/nbcblk/racial-bias-found-widely-used-health-care-algorithm-n1076436",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.57 hits=8 year=2019"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "usa-optum-healthcare-algorithmus-racial-bias-trifft-200-millionen-patient-innen-jaehrlich",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "netherlands-syri-court-ruling-2020",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Niederlande: SyRI-Urteil — Den Haag stoppt Sozial-Betrug-KI als Menschenrechts-Verletzung",
+      "name_en": "Netherlands: SyRI judgment — Hague court halts welfare-fraud AI as human rights violation",
+      "startDate": "2020-02-05",
+      "location": {
+        "name_de": "Den Haag, Niederlande",
+        "name_en": "The Hague, Netherlands",
+        "country": "NL",
+        "lat": 52.0705,
+        "lng": 4.3007
+      },
+      "incidentType": [
+        "surveillance",
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Am 5. Februar 2020 urteilte das Bezirksgericht Den Haag, dass das niederlaendische Sozial-Betrugs-Risikoscoring-System SyRI (System Risico Indicatie) das Recht auf Privat- und Familienleben (Art. 8 EMRK) verletzt. SyRI, im Einsatz seit 2014, verband Daten aus Beschaeftigung, Schulden, Bildung und Wohnen, um Betrugswahrscheinlichkeit vorherzusagen — fast ausschliesslich in Niedrig-Einkommens- und Migrant:innen-Vierteln. Der Sonderberichterstatter der UN fuer extreme Armut, Philip Alston, intervenierte mit amicus brief. Es war eine der ersten gerichtlichen Stopp-Entscheidungen gegen einen Welfare-AI weltweit.",
+      "description_en": "On 5 February 2020 the District Court of The Hague ruled that the Dutch welfare-fraud risk-scoring system SyRI (System Risico Indicatie) violated the right to private and family life (Art. 8 ECHR). SyRI, in operation since 2014, combined data from employment, debt, education and housing to predict fraud probability — almost exclusively in low-income and immigrant neighbourhoods. UN Special Rapporteur on Extreme Poverty Philip Alston filed an amicus brief. It was one of the first court orders globally to stop a welfare-AI system on human rights grounds.",
+      "actors": [
+        {
+          "name": "Niederlaendische Regierung (Ministerie van Sociale Zaken en Werkgelegenheid)",
+          "type": "government",
+          "systems": [
+            "SyRI System Risico Indicatie"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ohchr.org/en/press-releases/2020/02/landmark-ruling-dutch-court-stops-government-attempts-spy-poor-un-expert",
+          "title": "Landmark ruling by Dutch court stops government attempts to spy on the poor — UN expert",
+          "publisher": "UN OHCHR",
+          "date": "2020-02-05",
+          "type": "government-document"
+        },
+        {
+          "url": "https://academic.oup.com/hrlr/article/22/2/ngac010/6568079",
+          "title": "Human Rights Implications of the Use of AI in the Digital Welfare State: Lessons Learned from the Dutch SyRI Case",
+          "publisher": "Human Rights Law Review (Oxford)",
+          "date": "2022",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://algorithmwatch.org/en/syri-netherlands-algorithm/",
+          "title": "How Dutch activists got an invasive fraud detection algorithm banned",
+          "publisher": "AlgorithmWatch",
+          "date": "2020",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://techcrunch.com/2020/02/06/blackbox-welfare-fraud-detection-system-breaches-human-rights-dutch-court-rules/",
+          "title": "Blackbox welfare fraud detection system breaches human rights, Dutch court rules",
+          "publisher": "TechCrunch",
+          "date": "2020-02-06",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Praezedenzfall fuer EU-AI-Act-Vorlauf. Verification 4 (Gerichtsurteil + UN-Stellungnahme). Severity 4 (strukturelle Diskriminierung von Minoritaeten/Armen).",
+    "dedup_hint": "syri | netherlands | welfare | fraud | hague | 2020 | court ruling",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:33.273Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.ohchr.org/en/press-releases/2020/02/landmark-ruling-dutch-court-stops-government-attempts-spy-poor-un-expert",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://academic.oup.com/hrlr/article/22/2/ngac010/6568079",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        },
+        {
+          "url": "https://algorithmwatch.org/en/syri-netherlands-algorithm/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.51 hits=8 year=2020"
+        },
+        {
+          "url": "https://techcrunch.com/2020/02/06/blackbox-welfare-fraud-detection-system-breaches-human-rights-dutch-court-rules/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.47 hits=8 year=2020"
+        }
+      ],
+      "match_count": 2,
+      "sources_count": 4
+    },
+    "promoted_to_slug": "niederlande-syri-urteil-den-haag-stoppt-sozial-betrug-ki-als-menschenrechts-verletzung",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "netherlands-toeslagenaffaire-childcare-2021",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "Niederlande: Toeslagenaffaire — diskriminierender Kinderbetreuungs-Algorithmus stuerzt Kabinett Rutte III",
+      "name_en": "Netherlands: Toeslagenaffaire — discriminatory childcare algorithm brings down Rutte III cabinet",
+      "startDate": "2021-01-15",
+      "location": {
+        "name_de": "Den Haag, Niederlande",
+        "name_en": "The Hague, Netherlands",
+        "country": "NL",
+        "lat": 52.0705,
+        "lng": 4.3007
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse",
+        "political-pressure"
+      ],
+      "candidate_severity": 5,
+      "candidate_verification": 4,
+      "description_de": "Am 15. Januar 2021 trat die dritte Regierung Mark Rutte geschlossen zurueck wegen der \"toeslagenaffaire\": Zwischen 2005 und 2019 hatte die niederlaendische Steuerbehoerde rund 26.000 (spaeter min. 35.000) Familien faelschlich Kinderbetreuungs-Beihilfe-Betrugs beschuldigt. Ein ab 2013 eingesetzter selbstlernender Risikoscoring-Algorithmus nutzte Nicht-Niederlaendische-Nationalitaet explizit als Risikofaktor; vor allem Familien mit Wurzeln in den ehemaligen karibischen Kolonien und Suriname waren betroffen. Amnesty International nannte die Modelle \"xenophobic machines\". Tausende Familien wurden in den finanziellen Ruin getrieben, ueber 1.000 Kinder zeitweise von Eltern getrennt.",
+      "description_en": "On 15 January 2021 Mark Rutte's third cabinet resigned over the \"toeslagenaffaire\": between 2005 and 2019 the Dutch Tax Administration had wrongly accused around 26,000 (later at least 35,000) families of childcare-benefit fraud. From 2013 onwards a self-learning risk-scoring algorithm used non-Dutch nationality explicitly as a risk factor; families with roots in the former Caribbean colonies and Suriname were hit hardest. Amnesty International called the models \"xenophobic machines.\" Thousands of families were driven into financial ruin and over 1,000 children temporarily separated from their parents.",
+      "actors": [
+        {
+          "name": "Belastingdienst (Niederlaendische Steuerbehoerde)",
+          "type": "government",
+          "systems": [
+            "Childcare benefits risk-scoring algorithm"
+          ]
+        },
+        {
+          "name": "Niederlaendische Regierung (Kabinett Rutte III)",
+          "type": "government",
+          "systems": [
+            "Policy oversight"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.amnesty.org/en/latest/news/2021/10/xenophobic-machines-dutch-child-benefit-scandal/",
+          "title": "Dutch childcare benefit scandal an urgent wake-up call to ban racist algorithms",
+          "publisher": "Amnesty International",
+          "date": "2021-10",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Dutch_childcare_benefits_scandal",
+          "title": "Dutch childcare benefits scandal",
+          "publisher": "Wikipedia",
+          "date": "2024",
+          "type": "encyclopedia"
+        },
+        {
+          "url": "https://www.lighthousereports.com/investigation/the-algorithm-addiction/",
+          "title": "The Algorithm Addiction",
+          "publisher": "Lighthouse Reports",
+          "date": "2022",
+          "type": "analysis"
+        }
+      ]
+    },
+    "researcher_notes": "Severity 5 (Familien ruiniert, Kinder getrennt, Kabinettssturz). Verification 4 (Amnesty + Parlaments-Untersuchung + Kabinetts-Ruecktritt). Foundational case fuer EU-Algorithm-Accountability.",
+    "dedup_hint": "toeslagenaffaire | childcare | netherlands | rutte | 2021 | xenophobic machines | belastingdienst",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:34.278Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.amnesty.org/en/latest/news/2021/10/xenophobic-machines-dutch-child-benefit-scandal/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.39 hits=5 year=2021"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Dutch_childcare_benefits_scandal",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2021"
+        },
+        {
+          "url": "https://www.lighthousereports.com/investigation/the-algorithm-addiction/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.44 hits=6 year=2021"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "niederlande-toeslagenaffaire-diskriminierender-kinderbetreuungs-algorithmus-stuerzt",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "uk-ofqual-a-level-algorithm-2020",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "UK: Ofqual A-Level-Algorithmus — \"Mutant Algorithm\" verschlechtert 39 Prozent der Noten, U-Turn nach Massenprotesten",
+      "name_en": "UK: Ofqual A-level algorithm — \"mutant algorithm\" downgrades 39% of grades, U-turn after mass protests",
+      "startDate": "2020-08-13",
+      "location": {
+        "name_de": "London, Vereinigtes Koenigreich",
+        "name_en": "London, United Kingdom",
+        "country": "GB",
+        "lat": 51.5074,
+        "lng": -0.1278
+      },
+      "incidentType": [
+        "discrimination",
+        "data-misuse"
+      ],
+      "candidate_severity": 4,
+      "candidate_verification": 4,
+      "description_de": "Im August 2020, nach Pandemie-bedingtem Ausfall der Pruefungen, vergab die englische Regulierungsbehoerde Ofqual A-Level- und GCSE-Noten mit einem Algorithmus, der Lehrer-Einschaetzungen mit Schul-Historie kombinierte. Ergebnis: 39 % der A-Level-Resultate wurden gegenueber den Lehrerprognosen abgewertet — staatliche Schulen und sozial benachteiligte Schueler:innen ueberproportional, Privatschulen profitierten. Massenproteste mit \"Fuck the Algorithm\"-Slogans fuehrten zum kompletten U-Turn: Ofqual-Chefin Sally Collier trat zurueck, die Algorithmus-Noten wurden zugunsten Lehrer-Einschaetzungen verworfen.",
+      "description_en": "In August 2020, after pandemic exam cancellations, England's regulator Ofqual issued A-level and GCSE grades using an algorithm that combined teacher estimates with school history. Result: 39% of A-level results were downgraded from teacher predictions — state schools and disadvantaged students disproportionately, private schools benefited. Mass protests with \"Fuck the Algorithm\" slogans forced a complete U-turn: Ofqual chief Sally Collier resigned, algorithmic grades were discarded in favour of teacher predictions.",
+      "actors": [
+        {
+          "name": "Ofqual (Office of Qualifications and Examinations Regulation)",
+          "type": "government",
+          "systems": [
+            "A-level/GCSE grading algorithm 2020"
+          ]
+        },
+        {
+          "name": "UK Department for Education / Gavin Williamson",
+          "type": "government",
+          "systems": [
+            "Policy oversight"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/2020_UK_GCSE_and_A-Level_grading_controversy",
+          "title": "2020 United Kingdom school exam grading controversy",
+          "publisher": "Wikipedia",
+          "date": "2024",
+          "type": "encyclopedia"
+        },
+        {
+          "url": "https://blogs.lse.ac.uk/impactofsocialsciences/2020/08/26/fk-the-algorithm-what-the-world-can-learn-from-the-uks-a-level-grading-fiasco/",
+          "title": "F**k the algorithm? What the world can learn from the UK's A-level grading fiasco",
+          "publisher": "LSE Impact Blog",
+          "date": "2020-08-26",
+          "type": "analysis"
+        },
+        {
+          "url": "https://www.cnbc.com/2020/08/21/computer-algorithm-caused-a-grading-crisis-in-british-schools.html",
+          "title": "How a computer algorithm caused a grading crisis in British schools",
+          "publisher": "CNBC",
+          "date": "2020-08-21",
+          "type": "news-article"
+        }
+      ]
+    },
+    "researcher_notes": "Severity 4 (Lebensentscheidung Schulabschluss / Universitaetszugang betroffen, klasse-strukturelle Diskriminierung). Verification 4 (Ruecktritt + offizieller U-Turn dokumentiert).",
+    "dedup_hint": "ofqual | a-level | uk | algorithm | 2020 | mutant | grading",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:37.677Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://en.wikipedia.org/wiki/2020_UK_GCSE_and_A-Level_grading_controversy",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.74 hits=8 year=2020"
+        },
+        {
+          "url": "https://blogs.lse.ac.uk/impactofsocialsciences/2020/08/26/fk-the-algorithm-what-the-world-can-learn-from-the-uks-a-level-grading-fiasco/",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2020"
+        },
+        {
+          "url": "https://www.cnbc.com/2020/08/21/computer-algorithm-caused-a-grading-crisis-in-british-schools.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.63 hits=8 year=2020"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 3
+    },
+    "promoted_to_slug": "uk-ofqual-a-level-algorithmus-mutant-algorithm-verschlechtert-39-prozent-der-noten-u-turn",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  },
+  {
+    "candidate_id": "china-xinjiang-ijop-hrw-2018",
+    "discovered_at": "2026-06-01T15:00:00Z",
+    "researcher": "agent-research-pre2022-round-5",
+    "round": "round-5-2026-06-01",
+    "status": "promoted",
+    "candidate_data": {
+      "name_de": "China: Xinjiang IJOP — Human Rights Watch reversed engineert Uyguren-Massenueberwachungs-App",
+      "name_en": "China: Xinjiang IJOP — Human Rights Watch reverse-engineers Uyghur mass-surveillance app",
+      "startDate": "2019-05-01",
+      "location": {
+        "name_de": "Urumqi, Xinjiang, China",
+        "name_en": "Urumqi, Xinjiang, China",
+        "country": "CN",
+        "lat": 43.8256,
+        "lng": 87.6168
+      },
+      "incidentType": [
+        "surveillance",
+        "discrimination",
+        "political-pressure"
+      ],
+      "candidate_severity": 5,
+      "candidate_verification": 4,
+      "description_de": "Human Rights Watch publizierte am 1. Mai 2019 den 68-seitigen Bericht \"China's Algorithms of Repression: Reverse Engineering a Xinjiang Police Mass Surveillance App\". Zwischen Januar 2018 und Februar 2019 hatten HRW-Forschende eine Mobile-App reverse engineered, die Polizei in Xinjiang mit der Integrated Joint Operations Platform (IJOP) verbindet. IJOP aggregiert Daten zu Telefon, ID-Karten, Strom-/Tankstellen-Nutzung und flaggt \"Mikro-Auffaelligkeiten\" wie SIM-Wechsel, Stromverbrauchs-Abweichungen oder Verlassen registrierter Wohnorte zur Untersuchung. Eine 2020 erfolgte Auswertung zeigte: Das System hat ueber Tausende Uyguren in arbitraere Internierung versetzt.",
+      "description_en": "Human Rights Watch published its 68-page report \"China's Algorithms of Repression: Reverse Engineering a Xinjiang Police Mass Surveillance App\" on 1 May 2019. Between January 2018 and February 2019 HRW researchers reverse-engineered a mobile app linking Xinjiang police to the Integrated Joint Operations Platform (IJOP). IJOP aggregates data on phones, ID cards, electricity and petrol consumption and flags \"micro-clues\" such as SIM swaps, electricity-use deviations or leaving registered residence for investigation. A 2020 follow-up analysis showed: the system has channelled thousands of Uyghurs into arbitrary detention.",
+      "actors": [
+        {
+          "name": "Xinjiang Public Security Bureau",
+          "type": "government",
+          "systems": [
+            "IJOP — Integrated Joint Operations Platform"
+          ]
+        },
+        {
+          "name": "Chinese Communist Party / Xinjiang government",
+          "type": "government",
+          "systems": [
+            "IJOP policy oversight"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hrw.org/report/2019/05/01/chinas-algorithms-repression/reverse-engineering-xinjiang-police-mass",
+          "title": "China's Algorithms of Repression: Reverse Engineering a Xinjiang Police Mass Surveillance App",
+          "publisher": "Human Rights Watch",
+          "date": "2019-05-01",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://www.hrw.org/news/2019/05/01/china-how-mass-surveillance-works-xinjiang",
+          "title": "China: How Mass Surveillance Works in Xinjiang",
+          "publisher": "Human Rights Watch",
+          "date": "2019-05-01",
+          "type": "ngo-report"
+        },
+        {
+          "url": "https://www.rfa.org/english/news/uyghur/data-detention-12082020225544.html",
+          "title": "China Big Data Program Identifies Uyghurs for 'Arbitrary' Detention — HRW Report",
+          "publisher": "Radio Free Asia",
+          "date": "2020-12-08",
+          "type": "news-article"
+        },
+        {
+          "url": "https://xjdp.aspi.org.au/explainers/how-mass-surveillance-works-in-xinjiang/",
+          "title": "How mass surveillance works in Xinjiang",
+          "publisher": "Australian Strategic Policy Institute — Xinjiang Data Project",
+          "date": "2020",
+          "type": "research-paper"
+        }
+      ]
+    },
+    "researcher_notes": "Severity 5 (Massendetention, ethnischer Profiling, Genozid-Vorwuerfe in nachfolgenden Berichten). Verification 4 (HRW-Primaerquelle + Reverse-Engineering-Artefakte auf GitHub publiziert).",
+    "dedup_hint": "xinjiang | uyghur | ijop | china | hrw | mass surveillance | 2019",
+    "verification_log": {
+      "verified_at": "2026-06-01T20:46:39.498Z",
+      "agent": "scripts/verify-candidates.js",
+      "per_source": [
+        {
+          "url": "https://www.hrw.org/report/2019/05/01/chinas-algorithms-repression/reverse-engineering-xinjiang-police-mass",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.98 hits=8 year=2019"
+        },
+        {
+          "url": "https://www.hrw.org/news/2019/05/01/china-how-mass-surveillance-works-xinjiang",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.76 hits=8 year=2019"
+        },
+        {
+          "url": "https://www.rfa.org/english/news/uyghur/data-detention-12082020225544.html",
+          "http_status": 200,
+          "matches_content": true,
+          "note": "match score=0.43 hits=8"
+        },
+        {
+          "url": "https://xjdp.aspi.org.au/explainers/how-mass-surveillance-works-in-xinjiang/",
+          "http_status": 403,
+          "matches_content": false,
+          "note": "http-error"
+        }
+      ],
+      "match_count": 3,
+      "sources_count": 4
+    },
+    "promoted_to_slug": "china-xinjiang-ijop-human-rights-watch-reversed-engineert-uyguren-massenueberwachungs-app",
+    "promoted_at": "2026-06-02T08:01:37.146Z"
+  }
+]
