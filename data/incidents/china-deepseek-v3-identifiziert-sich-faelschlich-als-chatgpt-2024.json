@@ -1,0 +1,81 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/china-deepseek-v3-identifiziert-sich-faelschlich-als-chatgpt-2024",
+  "name": "China: DeepSeek V3 identifiziert sich faelschlich als ChatGPT",
+  "name_de": "China: DeepSeek V3 identifiziert sich faelschlich als ChatGPT",
+  "name_en": "China: DeepSeek V3 falsely identifies itself as ChatGPT",
+  "description": "Nach der Veröffentlichung von DeepSeek V3 im Dezember 2024 stellten Nutzer:innen fest, dass das chinesische Modell sich auf Nachfrage als ChatGPT bzw. GPT-4 (Veröffentlichungsdatum 2023) ausgab und sogar GPT-spezifische Witze sowie Empfehlungen für die OpenAI-API ausgab. TechCrunch und TechRadar dokumentierten den Befund. Wahrscheinlichste Ursache: Im Trainingsmaterial befanden sich große Mengen ChatGPT-Output. Der Fall verschärft die Debatte über Data-Provenance und das Trainieren chinesischer Modelle auf westlichen LLM-Outputs.",
+  "description_de": "Nach der Veröffentlichung von DeepSeek V3 im Dezember 2024 stellten Nutzer:innen fest, dass das chinesische Modell sich auf Nachfrage als ChatGPT bzw. GPT-4 (Veröffentlichungsdatum 2023) ausgab und sogar GPT-spezifische Witze sowie Empfehlungen für die OpenAI-API ausgab. TechCrunch und TechRadar dokumentierten den Befund. Wahrscheinlichste Ursache: Im Trainingsmaterial befanden sich große Mengen ChatGPT-Output. Der Fall verschärft die Debatte über Data-Provenance und das Trainieren chinesischer Modelle auf westlichen LLM-Outputs.",
+  "description_en": "After DeepSeek V3 was released in December 2024, users found that the Chinese model identified itself as ChatGPT or GPT-4 (released 2023) when asked, even reproducing GPT-specific jokes and recommending the OpenAI API. TechCrunch and TechRadar documented the finding. Likely cause: the training data contained large amounts of ChatGPT output. The case sharpens the debate over data provenance and the training of Chinese models on Western LLM outputs.",
+  "startDate": "2024-12",
+  "location": {
+    "@type": "Place",
+    "name": "Hangzhou, China",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.2741,
+      "longitude": 120.1551
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CN"
+    },
+    "name_de": "Hangzhou, China",
+    "name_en": "Hangzhou, China"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "DeepSeek Artificial Intelligence Co",
+      "type": "organization",
+      "asm:systems": [
+        "DeepSeek V3"
+      ],
+      "name_de": "DeepSeek Artificial Intelligence Co",
+      "name_en": "DeepSeek Artificial Intelligence Co"
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://techcrunch.com/2024/12/27/why-deepseeks-new-ai-model-thinks-its-chatgpt/",
+      "title": "Why DeepSeek's new AI model thinks it's ChatGPT",
+      "publisher": "TechCrunch",
+      "date": "2024-12-27",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Why DeepSeek's new AI model thinks it's ChatGPT",
+      "title_en": "Why DeepSeek's new AI model thinks it's ChatGPT"
+    },
+    {
+      "url": "https://www.techradar.com/computing/artificial-intelligence/deepseek-just-insisted-its-chatgpt-and-i-think-thats-all-the-proof-i-need",
+      "title": "DeepSeek just insisted it's ChatGPT, and I think that's all the proof I need",
+      "publisher": "TechRadar",
+      "date": "2024-12-30",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "DeepSeek just insisted it's ChatGPT, and I think that's all the proof I need",
+      "title_en": "DeepSeek just insisted it's ChatGPT, and I think that's all the proof I need"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "cn-chinese-large-language-model-thinks-it-is-2024-aiaaic1856",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

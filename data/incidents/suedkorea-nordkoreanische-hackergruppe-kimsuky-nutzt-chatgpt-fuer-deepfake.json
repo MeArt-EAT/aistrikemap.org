@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/suedkorea-nordkoreanische-hackergruppe-kimsuky-nutzt-chatgpt-fuer-deepfake",
+  "name": "Südkorea: Nordkoreanische Hackergruppe Kimsuky nutzt ChatGPT für Deepfake-Militärausweise",
+  "name_de": "Südkorea: Nordkoreanische Hackergruppe Kimsuky nutzt ChatGPT für Deepfake-Militärausweise",
+  "name_en": "South Korea: North Korean group Kimsuky uses ChatGPT to forge deepfake military IDs",
+  "description": "Die südkoreanische Cybersecurity-Firma Genians dokumentierte am 17. Juli 2025 eine Spear-Phishing-Kampagne der nordkoreanischen APT-Gruppe Kimsuky gegen eine Verteidigungseinrichtung. Die Angreifer umgingen ChatGPT-Schutzmechanismen via Prompt-Engineering und generierten realistische Fake-Bilder südkoreanischer Militärausweise. Deepfake-Detektoren bestätigten den KI-Ursprung mit 98 Prozent Wahrscheinlichkeit. Berichterstattung durch Bloomberg und The Record verstärkte den Fall international.",
+  "description_de": "Die südkoreanische Cybersecurity-Firma Genians dokumentierte am 17. Juli 2025 eine Spear-Phishing-Kampagne der nordkoreanischen APT-Gruppe Kimsuky gegen eine Verteidigungseinrichtung. Die Angreifer umgingen ChatGPT-Schutzmechanismen via Prompt-Engineering und generierten realistische Fake-Bilder südkoreanischer Militärausweise. Deepfake-Detektoren bestätigten den KI-Ursprung mit 98 Prozent Wahrscheinlichkeit. Berichterstattung durch Bloomberg und The Record verstärkte den Fall international.",
+  "description_en": "South Korean cybersecurity firm Genians documented a 17 July 2025 spear-phishing campaign by North Korean APT group Kimsuky against a defence-related institution. The attackers bypassed ChatGPT safeguards via prompt engineering and generated realistic fake South Korean military ID images. Deepfake detection tools confirmed the AI origin with 98% probability. Bloomberg and The Record amplified the case internationally.",
+  "startDate": "2025-07-17",
+  "location": {
+    "@type": "Place",
+    "name": "Seoul, Südkorea",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.5665,
+      "longitude": 126.978
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "KR"
+    },
+    "name_de": "Seoul, Südkorea",
+    "name_en": "Seoul, South Korea"
+  },
+  "asm:incidentType": [
+    "deepfakes",
+    "data-misuse",
+    "military-ai"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Kimsuky (North Korean state-sponsored APT)",
+      "type": "government",
+      "asm:systems": [],
+      "name_de": "Kimsuky (North Korean state-sponsored APT)",
+      "name_en": "Kimsuky (North Korean state-sponsored APT)"
+    },
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "ChatGPT"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    },
+    {
+      "name": "Genians (researchers)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Genians (researchers)",
+      "name_en": "Genians (researchers)"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.genians.co.kr/en/blog/threat_intelligence/deepfake",
+      "title": "AI-Driven Deepfake-Based Military ID Forgery APT Campaign",
+      "publisher": "Genians",
+      "date": "2025-09-14",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "AI-Driven Deepfake-Based Military ID Forgery APT Campaign",
+      "title_en": "AI-Driven Deepfake-Based Military ID Forgery APT Campaign"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2025-09-14/north-korean-hackers-used-chatgpt-to-help-forge-deepfake-id",
+      "title": "North Korean Hackers Used ChatGPT to Help Forge Deepfake ID",
+      "publisher": "Bloomberg",
+      "date": "2025-09-14",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "North Korean Hackers Used ChatGPT to Help Forge Deepfake ID",
+      "title_en": "North Korean Hackers Used ChatGPT to Help Forge Deepfake ID"
+    },
+    {
+      "url": "https://therecord.media/north-korea-kimsuky-hackers-phishing-fake-military-ids-chatgpt",
+      "title": "North Korean operation uses ChatGPT to forge military IDs as part of cyberattack",
+      "publisher": "The Record (Recorded Future)",
+      "date": "2025-09-15",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "North Korean operation uses ChatGPT to forge military IDs as part of cyberattack",
+      "title_en": "North Korean operation uses ChatGPT to forge military IDs as part of cyberattack"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "kr-north-korean-hackers-use-chatgpt-to-make-deepfake-military-2025-aiaaic2034",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

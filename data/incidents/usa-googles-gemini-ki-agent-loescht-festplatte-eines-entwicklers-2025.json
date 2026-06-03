@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-googles-gemini-ki-agent-loescht-festplatte-eines-entwicklers-2025",
+  "name": "USA: Googles Gemini-KI-Agent löscht Festplatte eines Entwicklers",
+  "name_de": "USA: Googles Gemini-KI-Agent löscht Festplatte eines Entwicklers",
+  "name_en": "USA: Google's Gemini AI agent deletes a developer's hard drive",
+  "description": "Im Juli 2025 dokumentierte Produktmanager Anuraag Gupta, wie Googles Gemini-CLI-Agent nach einem fehlgeschlagenen Verzeichnis-Befehl in einer Endlosfehler-Kaskade seine Arbeitsdateien unwiederbringlich löschte. Der Agent gestand danach: Ich habe Sie vollständig und katastrophal im Stich gelassen. Im November 2025 wiederholte sich ein ähnlicher Vorfall mit Gemini 3 Pro im Google-Antigravity-IDE: Ein griechischer Entwickler verlor seine komplette D:-Festplatte, weil der Agent rmdir /s /q d:\\ ausführte, um den Cache zu leeren.",
+  "description_de": "Im Juli 2025 dokumentierte Produktmanager Anuraag Gupta, wie Googles Gemini-CLI-Agent nach einem fehlgeschlagenen Verzeichnis-Befehl in einer Endlosfehler-Kaskade seine Arbeitsdateien unwiederbringlich löschte. Der Agent gestand danach: Ich habe Sie vollständig und katastrophal im Stich gelassen. Im November 2025 wiederholte sich ein ähnlicher Vorfall mit Gemini 3 Pro im Google-Antigravity-IDE: Ein griechischer Entwickler verlor seine komplette D:-Festplatte, weil der Agent rmdir /s /q d:\\ ausführte, um den Cache zu leeren.",
+  "description_en": "In July 2025 product manager Anuraag Gupta documented how Google's Gemini CLI agent permanently destroyed his project files in a cascade of errors after misinterpreting a failed directory command. The agent confessed: I have failed you completely and catastrophically. My review of the commands confirms my gross incompetence. A similar incident in November 2025 involved Gemini 3 Pro inside Google's Antigravity IDE wiping a Greek developer's entire D: drive after executing rmdir /s /q d:\\ while attempting to clear a project cache.",
+  "startDate": "2025-07",
+  "location": {
+    "@type": "Place",
+    "name": "USA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "USA",
+    "name_en": "USA"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Google",
+      "type": "organization",
+      "asm:systems": [
+        "Gemini CLI",
+        "Gemini 3 Pro",
+        "Antigravity IDE"
+      ],
+      "name_de": "Google",
+      "name_en": "Google"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.windowscentral.com/artificial-intelligence/google-antigravity-ai-delete-drive",
+      "title": "This is a critical failure on my part — Google's AI coding assistant deletes user's entire D: drive",
+      "publisher": "Windows Central",
+      "date": "2025-11-01",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "This is a critical failure on my part — Google's AI coding assistant deletes user's entire D: drive",
+      "title_en": "This is a critical failure on my part — Google's AI coding assistant deletes user's entire D: drive"
+    },
+    {
+      "url": "https://cybernews.com/security/deeply-sorry-gemini-deletes-developers-drive/",
+      "title": "Gemini 3 Pro agent wipes developer's drive",
+      "publisher": "Cybernews",
+      "date": "2025-11-01",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Gemini 3 Pro agent wipes developer's drive",
+      "title_en": "Gemini 3 Pro agent wipes developer's drive"
+    },
+    {
+      "url": "https://winbuzzer.com/2025/07/26/googles-gemini-cli-deletes-user-files-confesses-catastrophic-failure-xcxwbn/",
+      "title": "Google's Gemini CLI Deletes User Files, Confesses Catastrophic Failure",
+      "publisher": "WinBuzzer",
+      "date": "2025-07-26",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Google's Gemini CLI Deletes User Files, Confesses Catastrophic Failure",
+      "title_en": "Google's Gemini CLI Deletes User Files, Confesses Catastrophic Failure"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-google-ai-agent-deletes-users-hard-drive-and-2025-aiaaic2154",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

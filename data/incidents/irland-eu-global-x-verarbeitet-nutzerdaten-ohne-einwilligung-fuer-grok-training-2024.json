@@ -1,0 +1,101 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/irland-eu-global-x-verarbeitet-nutzerdaten-ohne-einwilligung-fuer-grok-training-2024",
+  "name": "EU/Global: X verarbeitet Nutzerdaten ohne Einwilligung für Grok-Training",
+  "name_de": "EU/Global: X verarbeitet Nutzerdaten ohne Einwilligung für Grok-Training",
+  "name_en": "EU/Global: X harvests user data without consent to train Grok chatbot",
+  "description": "Im Juli 2024 entdeckten X-Nutzer eine tief vergrabene, standardmaessig aktivierte Einstellung, die X erlaubte, öffentliche Posts und Grok-Konversationen zum Training des Chatbots zu verwenden. Die irische Datenschutzbehörde DPC strengte Eilverfahren am High Court an, weil X bereits seit dem 7. Mai 2024 EU-Nutzerdaten ohne gueltige Rechtsgrundlage verarbeitete und der Opt-out erst Wochen später eingefuehrt wurde. Im September 2024 verpflichtete sich X per Gerichtsanordnung, die zwischen Mai und August 2024 erhobenen EU/EEA-Posts dauerhaft nicht für Grok-Training zu nutzen.",
+  "description_de": "Im Juli 2024 entdeckten X-Nutzer eine tief vergrabene, standardmaessig aktivierte Einstellung, die X erlaubte, öffentliche Posts und Grok-Konversationen zum Training des Chatbots zu verwenden. Die irische Datenschutzbehörde DPC strengte Eilverfahren am High Court an, weil X bereits seit dem 7. Mai 2024 EU-Nutzerdaten ohne gueltige Rechtsgrundlage verarbeitete und der Opt-out erst Wochen später eingefuehrt wurde. Im September 2024 verpflichtete sich X per Gerichtsanordnung, die zwischen Mai und August 2024 erhobenen EU/EEA-Posts dauerhaft nicht für Grok-Training zu nutzen.",
+  "description_en": "In July 2024 X users discovered a default-on setting buried deep in the privacy menu that allowed X to use public posts and Grok conversations to train the chatbot. Ireland's Data Protection Commission filed urgent High Court proceedings, since X had been processing EU users' data without a valid legal basis from 7 May 2024 onward and only added an opt-out weeks later. In September 2024 X agreed under a court order to permanently refrain from using EU/EEA posts collected between May and August 2024 for Grok training.",
+  "startDate": "2024-05",
+  "location": {
+    "@type": "Place",
+    "name": "EU/EWR (Klage Irland)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IE"
+    },
+    "name_de": "EU/EWR (Klage Irland)",
+    "name_en": "EU/EEA (case filed in Ireland)"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "surveillance"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "X Corp",
+      "type": "organization",
+      "asm:systems": [
+        "Grok"
+      ],
+      "name_de": "X Corp",
+      "name_en": "X Corp"
+    },
+    {
+      "name": "xAI",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "xAI",
+      "name_en": "xAI"
+    },
+    {
+      "name": "Irish Data Protection Commission",
+      "type": "government",
+      "asm:systems": [],
+      "name_de": "Irish Data Protection Commission",
+      "name_en": "Irish Data Protection Commission"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.dataprotection.ie/en/news-media/press-releases/dpc-welcomes-xs-agreement-suspend-its-processing-personal-data-purpose-training-ai-tool-grok",
+      "title": "DPC welcomes X's agreement to suspend its processing of personal data for the purpose of training AI tool 'Grok'",
+      "publisher": "Irish Data Protection Commission",
+      "date": "2024-08-08",
+      "type": "government-document",
+      "asm:linkHealth": "unverified",
+      "title_de": "DPC welcomes X's agreement to suspend its processing of personal data for the purpose of training AI tool 'Grok'",
+      "title_en": "DPC welcomes X's agreement to suspend its processing of personal data for the purpose of training AI tool 'Grok'"
+    },
+    {
+      "url": "https://techcrunch.com/2024/09/04/irelands-privacy-watchdog-ends-legal-fight-with-x-over-data-use-for-ai-after-it-agrees-to-permanent-limits/",
+      "title": "Ireland's privacy watchdog ends legal fight with X over data use for AI after it agrees to permanent limits",
+      "publisher": "TechCrunch",
+      "date": "2024-09-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Ireland's privacy watchdog ends legal fight with X over data use for AI after it agrees to permanent limits",
+      "title_en": "Ireland's privacy watchdog ends legal fight with X over data use for AI after it agrees to permanent limits"
+    },
+    {
+      "url": "https://www.euronews.com/next/2024/09/06/irish-court-drops-privacy-case-after-x-agrees-to-never-use-eu-users-tweets-to-train-grok-a",
+      "title": "Irish court drops privacy case after X agrees to never use EU users' tweets to train Grok AI model",
+      "publisher": "Euronews",
+      "date": "2024-09-06",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Irish court drops privacy case after X agrees to never use EU users' tweets to train Grok AI model",
+      "title_en": "Irish court drops privacy case after X agrees to never use EU users' tweets to train Grok AI model"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-x-automatically-harvests-user-data-to-train-ai-2024-aiaaic1620",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

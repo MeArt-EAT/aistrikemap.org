@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/global-akirabot-nutzt-openai-gpt-4o-mini-fuer-spam-angriffe-auf-240-000-webseiten-2024",
+  "name": "Global: AkiraBot nutzt OpenAI GPT-4o-mini für Spam-Angriffe auf 240.000 Webseiten",
+  "name_de": "Global: AkiraBot nutzt OpenAI GPT-4o-mini für Spam-Angriffe auf 240.000 Webseiten",
+  "name_en": "Global: AkiraBot uses OpenAI GPT-4o-mini to spam 240,000 websites",
+  "description": "SentinelLabs-Forscher deckten im April 2025 das \"AkiraBot\"-Framework auf: Spammer nutzten OpenAIs GPT-4o-mini-API ab September 2024, um massgeschneiderte Nachrichten an Kontaktformulare und Chat-Widgets von über 240.000 kleinen und mittleren Unternehmens-Webseiten auf Plattformen wie Shopify, Wix, GoDaddy und Squarespace zu schicken. Etwa 80.000 Webseiten wurden erfolgreich angesprochen. CAPTCHAs wurden umgangen, OpenAI sperrte den Zugang erst nach Hinweis der Forschenden.",
+  "description_de": "SentinelLabs-Forscher deckten im April 2025 das \"AkiraBot\"-Framework auf: Spammer nutzten OpenAIs GPT-4o-mini-API ab September 2024, um massgeschneiderte Nachrichten an Kontaktformulare und Chat-Widgets von über 240.000 kleinen und mittleren Unternehmens-Webseiten auf Plattformen wie Shopify, Wix, GoDaddy und Squarespace zu schicken. Etwa 80.000 Webseiten wurden erfolgreich angesprochen. CAPTCHAs wurden umgangen, OpenAI sperrte den Zugang erst nach Hinweis der Forschenden.",
+  "description_en": "In April 2025 SentinelLabs researchers exposed the \"AkiraBot\" framework: starting in September 2024, spammers used OpenAI's GPT-4o-mini API to generate personalised spam targeting the contact forms and chat widgets of more than 240,000 small and medium business websites on platforms including Shopify, Wix, GoDaddy and Squarespace. Roughly 80,000 sites were successfully spammed. The bot bypassed CAPTCHA protections; OpenAI only revoked the attackers' API access after being alerted.",
+  "startDate": "2024-09",
+  "location": {
+    "@type": "Place",
+    "name": "Global",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GLOBAL"
+    },
+    "name_de": "Global",
+    "name_en": "Global"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "GPT-4o-mini API"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    },
+    {
+      "name": "AkiraBot operators (unidentified)",
+      "type": "individual",
+      "asm:systems": [],
+      "name_de": "AkiraBot operators (unidentified)",
+      "name_en": "AkiraBot operators (unidentified)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.sentinelone.com/labs/akirabot-ai-powered-bot-bypasses-captchas-spams-websites-at-scale/",
+      "title": "AkiraBot | AI-Powered Bot Bypasses CAPTCHAs, Spams Websites At Scale",
+      "publisher": "SentinelLabs",
+      "date": "2025-04",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "AkiraBot | AI-Powered Bot Bypasses CAPTCHAs, Spams Websites At Scale",
+      "title_en": "AkiraBot | AI-Powered Bot Bypasses CAPTCHAs, Spams Websites At Scale"
+    },
+    {
+      "url": "https://thehackernews.com/2025/04/akirabot-targets-420000-sites-with.html",
+      "title": "AkiraBot Targets 420,000 Sites with OpenAI-Generated Spam",
+      "publisher": "The Hacker News",
+      "date": "2025-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "AkiraBot Targets 420,000 Sites with OpenAI-Generated Spam",
+      "title_en": "AkiraBot Targets 420,000 Sites with OpenAI-Generated Spam"
+    },
+    {
+      "url": "https://hackread.com/akirabot-abuses-openai-api-spam-website-contact-forms/",
+      "title": "New AkiraBot Abuses OpenAI API to Spam Website Contact Forms",
+      "publisher": "Hackread",
+      "date": "2025-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "New AkiraBot Abuses OpenAI API to Spam Website Contact Forms",
+      "title_en": "New AkiraBot Abuses OpenAI API to Spam Website Contact Forms"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-spammers-use-openai-to-blast-240-000-websites-with-unwanted-2024-aiaaic1946",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

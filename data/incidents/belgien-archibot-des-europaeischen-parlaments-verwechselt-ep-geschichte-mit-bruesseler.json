@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/belgien-archibot-des-europaeischen-parlaments-verwechselt-ep-geschichte-mit-bruesseler",
+  "name": "Belgien: \"Archibot\" des Europäischen Parlaments verwechselt EP-Geschichte mit Brüsseler Café-Adresse",
+  "name_de": "Belgien: \"Archibot\" des Europäischen Parlaments verwechselt EP-Geschichte mit Brüsseler Café-Adresse",
+  "name_en": "Belgium: European Parliament 'Archibot' confuses EP history with Brussels café address",
+  "description": "Das Europäische Parlament stellte im Oktober 2024 den auf Anthropics Claude (via Amazon Bedrock) basierenden Chatbot \"Archibot\" / \"Ask the EP Archives\" vor, der historische Fragen zu EP und EU beantworten soll. Im offiziellen Test des Parlaments nannte Claude als ersten Präsidenten der Europäischen Kommission \"Robert Schuman 7\" – tatsächlich die Adresse eines Brüsseler Cafés, die das Modell offenbar memoriert hatte. Bürgerrechtsorganisationen (z. B. Irish Council for Civil Liberties) kritisierten den unkritischen Einsatz generativer KI in einer öffentlichen Wissens-Funktion.",
+  "description_de": "Das Europäische Parlament stellte im Oktober 2024 den auf Anthropics Claude (via Amazon Bedrock) basierenden Chatbot \"Archibot\" / \"Ask the EP Archives\" vor, der historische Fragen zu EP und EU beantworten soll. Im offiziellen Test des Parlaments nannte Claude als ersten Präsidenten der Europäischen Kommission \"Robert Schuman 7\" – tatsächlich die Adresse eines Brüsseler Cafés, die das Modell offenbar memoriert hatte. Bürgerrechtsorganisationen (z. B. Irish Council for Civil Liberties) kritisierten den unkritischen Einsatz generativer KI in einer öffentlichen Wissens-Funktion.",
+  "description_en": "In October 2024 the European Parliament launched 'Archibot' / 'Ask the EP Archives', a chatbot built on Anthropic's Claude (via Amazon Bedrock) intended to answer questions about EP and EU history. In the Parliament's own demo, Claude identified the first president of the European Commission as 'Robert Schuman 7' – in fact the address of a Brussels café the model had apparently memorised. Digital-rights groups including the Irish Council for Civil Liberties criticised the uncritical deployment of generative AI in a public-information role.",
+  "startDate": "2024-10",
+  "location": {
+    "@type": "Place",
+    "name": "Brüssel, Belgien",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.8503,
+      "longitude": 4.3517
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BE"
+    },
+    "name_de": "Brüssel, Belgien",
+    "name_en": "Brussels, Belgium"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "European Parliament",
+      "type": "government",
+      "asm:systems": [
+        "Archibot / Ask the EP Archives"
+      ],
+      "name_de": "European Parliament",
+      "name_en": "European Parliament"
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "asm:systems": [
+        "Claude"
+      ],
+      "name_de": "Anthropic",
+      "name_en": "Anthropic"
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.iccl.ie/press-release/how-not-to-deploy-generative-ai-the-story-of-the-european-parliament/",
+      "title": "How not to deploy generative AI: the Story of the European Parliament",
+      "publisher": "Irish Council for Civil Liberties",
+      "date": "2024",
+      "type": "ngo-report",
+      "asm:linkHealth": "unverified",
+      "title_de": "How not to deploy generative AI: the Story of the European Parliament",
+      "title_en": "How not to deploy generative AI: the Story of the European Parliament"
+    },
+    {
+      "url": "https://www.euronews.com/next/2024/10/22/an-ai-tool-is-making-the-european-parliaments-history-easier-to-understand-in-all-eu-langu",
+      "title": "An AI tool is making the European Parliament's history easier to understand in all EU languages",
+      "publisher": "Euronews",
+      "date": "2024-10-22",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "An AI tool is making the European Parliament's history easier to understand in all EU languages",
+      "title_en": "An AI tool is making the European Parliament's history easier to understand in all EU languages"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "be-european-parliament-ai-model-is-unable-to-identify-first-2025-aiaaic1938",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

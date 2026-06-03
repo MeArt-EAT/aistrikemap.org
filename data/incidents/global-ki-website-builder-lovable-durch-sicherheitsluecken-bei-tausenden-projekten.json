@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/global-ki-website-builder-lovable-durch-sicherheitsluecken-bei-tausenden-projekten",
+  "name": "Global: KI-Website-Builder Lovable durch Sicherheitslücken bei tausenden Projekten kompromittiert",
+  "name_de": "Global: KI-Website-Builder Lovable durch Sicherheitslücken bei tausenden Projekten kompromittiert",
+  "name_en": "Global: AI website builder Lovable compromised by security flaws affecting thousands of projects",
+  "description": "Die KI-Website-Generierungsplattform Lovable wurde 2025 zweimal von gravierenden Sicherheitslücken erschüttert: Im Mai legte eine fehlerhafte Row-Level-Security-Konfiguration (CVE-2025-48757) bei über 170 mit Lovable erstellten Apps sensible Daten frei — unauthentifizierte Besucher konnten Tabellen direkt abfragen. Im Februar 2026 dokumentierten Sicherheitsforschende (The Register) eine Broken-Object-Level-Authorization-Lücke (BOLA): Projekte, die vor November 2025 erstellt wurden, gaben Quellcode, Zugangsdaten und Nutzerdaten preis. Berichten zufolge betraf das Daten aus rund 18.000 Apps. Proofpoint berichtete zudem, Phishing-Akteure missbrauchten die Plattform.",
+  "description_de": "Die KI-Website-Generierungsplattform Lovable wurde 2025 zweimal von gravierenden Sicherheitslücken erschüttert: Im Mai legte eine fehlerhafte Row-Level-Security-Konfiguration (CVE-2025-48757) bei über 170 mit Lovable erstellten Apps sensible Daten frei — unauthentifizierte Besucher konnten Tabellen direkt abfragen. Im Februar 2026 dokumentierten Sicherheitsforschende (The Register) eine Broken-Object-Level-Authorization-Lücke (BOLA): Projekte, die vor November 2025 erstellt wurden, gaben Quellcode, Zugangsdaten und Nutzerdaten preis. Berichten zufolge betraf das Daten aus rund 18.000 Apps. Proofpoint berichtete zudem, Phishing-Akteure missbrauchten die Plattform.",
+  "description_en": "AI website-generation platform Lovable was hit by two major security flaws in 2025: in May, a Row-Level Security misconfiguration (CVE-2025-48757) exposed sensitive data from over 170 Lovable-built apps — unauthenticated visitors could query tables directly. In February 2026, security researchers (The Register) documented a Broken Object Level Authorization (BOLA) flaw: projects created before November 2025 leaked source code, credentials and user data; reportedly data from roughly 18,000 apps was affected. Proofpoint separately reported phishing actors abusing the platform.",
+  "startDate": "2025-05",
+  "location": {
+    "@type": "Place",
+    "name": "Global (Lovable-Plattform, Stockholm-basiert)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GLOBAL"
+    },
+    "name_de": "Global (Lovable-Plattform, Stockholm-basiert)",
+    "name_en": "Global (Lovable platform, Stockholm-based)"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Lovable Labs",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Lovable Labs",
+      "name_en": "Lovable Labs"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/",
+      "title": "AI-built app on Lovable exposed 18K users, researcher claims",
+      "publisher": "The Register",
+      "date": "2026-02-27",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "AI-built app on Lovable exposed 18K users, researcher claims",
+      "title_en": "AI-built app on Lovable exposed 18K users, researcher claims"
+    },
+    {
+      "url": "https://www.superblocks.com/blog/lovable-vulnerabilities",
+      "title": "Lovable Vulnerability Explained: How 170+ Apps Were Exposed",
+      "publisher": "Superblocks",
+      "date": "2025",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Lovable Vulnerability Explained: How 170+ Apps Were Exposed",
+      "title_en": "Lovable Vulnerability Explained: How 170+ Apps Were Exposed"
+    },
+    {
+      "url": "https://www.proofpoint.com/us/blog/threat-insight/cybercriminals-abuse-ai-website-creation-app-phishing",
+      "title": "Cybercriminals Abuse AI Website Creation App For Phishing",
+      "publisher": "Proofpoint",
+      "date": "2025",
+      "type": "ngo-report",
+      "asm:linkHealth": "unverified",
+      "title_de": "Cybercriminals Abuse AI Website Creation App For Phishing",
+      "title_en": "Cybercriminals Abuse AI Website Creation App For Phishing"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-ai-website-generation-tool-lovable-accused-of-being-highly-2025-aiaaic2005",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

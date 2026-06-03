@@ -1,0 +1,116 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-mcdonalds-ki-chatbot-olivia-exponiert-daten-von-bis-zu-64-mio-bewerber-innen-durch",
+  "name": "Global: McDonald's-KI-Chatbot 'Olivia' exponiert Daten von bis zu 64 Mio. Bewerber:innen durch Schwachstelle bei Paradox.ai",
+  "name_de": "Global: McDonald's-KI-Chatbot 'Olivia' exponiert Daten von bis zu 64 Mio. Bewerber:innen durch Schwachstelle bei Paradox.ai",
+  "name_en": "Global: McDonald's AI chatbot 'Olivia' exposes up to 64M job applicants via Paradox.ai flaw",
+  "description": "Am 30. Juni 2025 entdeckten die Sicherheitsforscher Ian Carroll und Sam Curry, dass das von Paradox.ai betriebene McDonald's-Bewerbungssystem 'McHire' mit dem KI-Chatbot 'Olivia' ueber das Default-Passwort '123456' und eine IDOR-Schwachstelle die Daten von bis zu 64 Millionen Bewerber:innen offenlegte: Namen, E-Mails, Adressen, Telefonnummern, Bewerbungsstatus, Schichtwuensche sowie Auth-Tokens für Bewerber-Konten. McDonald's behob die Default-Credentials innerhalb von 2 Stunden; Paradox.ai bestaetigte die Behebung am 1. Juli. Paradox.ai bestritt die Bewerber-Zahl von 64 Mio. und gab an, nur fuenf US-Bewerber-Datensaetze seien tatsaechlich abgegriffen worden.",
+  "description_de": "Am 30. Juni 2025 entdeckten die Sicherheitsforscher Ian Carroll und Sam Curry, dass das von Paradox.ai betriebene McDonald's-Bewerbungssystem 'McHire' mit dem KI-Chatbot 'Olivia' ueber das Default-Passwort '123456' und eine IDOR-Schwachstelle die Daten von bis zu 64 Millionen Bewerber:innen offenlegte: Namen, E-Mails, Adressen, Telefonnummern, Bewerbungsstatus, Schichtwuensche sowie Auth-Tokens für Bewerber-Konten. McDonald's behob die Default-Credentials innerhalb von 2 Stunden; Paradox.ai bestaetigte die Behebung am 1. Juli. Paradox.ai bestritt die Bewerber-Zahl von 64 Mio. und gab an, nur fuenf US-Bewerber-Datensaetze seien tatsaechlich abgegriffen worden.",
+  "description_en": "On 30 June 2025, security researchers Ian Carroll and Sam Curry discovered that McDonald's 'McHire' applicant system, operated by Paradox.ai with the AI chatbot 'Olivia', exposed up to 64 million applicants' data via the default password '123456' combined with an IDOR vulnerability: names, emails, addresses, phone numbers, candidacy status, shift preferences and auth tokens for applicant accounts. McDonald's fixed the default credentials within two hours; Paradox.ai confirmed full remediation on 1 July. Paradox.ai disputed the 64M applicant figure, saying only five US applicant records were actually accessed.",
+  "startDate": "2025-06-30",
+  "location": {
+    "@type": "Place",
+    "name": "USA (Plattform); global betroffene Bewerber:innen",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.8781,
+      "longitude": -87.6298
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "USA (Plattform); global betroffene Bewerber:innen",
+    "name_en": "USA (platform); applicants affected globally"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "labor-exploitation"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "McDonald's",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "McDonald's",
+      "name_en": "McDonald's"
+    },
+    {
+      "name": "Paradox.ai",
+      "type": "organization",
+      "asm:systems": [
+        "McHire / 'Olivia' AI chatbot"
+      ],
+      "name_de": "Paradox.ai",
+      "name_en": "Paradox.ai"
+    },
+    {
+      "name": "Ian Carroll / Sam Curry (security researchers)",
+      "type": "individual",
+      "asm:systems": [],
+      "name_de": "Ian Carroll / Sam Curry (security researchers)",
+      "name_en": "Ian Carroll / Sam Curry (security researchers)"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://krebsonsecurity.com/2025/07/poor-passwords-tattle-on-ai-hiring-bot-maker-paradox-ai/",
+      "title": "Poor Passwords Tattle on AI Hiring Bot Maker Paradox.ai",
+      "publisher": "Krebs on Security",
+      "date": "2025-07",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Poor Passwords Tattle on AI Hiring Bot Maker Paradox.ai",
+      "title_en": "Poor Passwords Tattle on AI Hiring Bot Maker Paradox.ai"
+    },
+    {
+      "url": "https://www.csoonline.com/article/4020919/mcdonalds-ai-hiring-tools-password-123456-exposes-data-of-64m-applicants.html",
+      "title": "McDonald's AI hiring tool's password '123456' exposed data of 64M applicants",
+      "publisher": "CSO Online",
+      "date": "2025-07",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "McDonald's AI hiring tool's password '123456' exposed data of 64M applicants",
+      "title_en": "McDonald's AI hiring tool's password '123456' exposed data of 64M applicants"
+    },
+    {
+      "url": "https://www.darkreading.com/application-security/lessons-learned-mcdonalds-ai-flub",
+      "title": "Lessons Learned From McDonald's Big AI Flub",
+      "publisher": "Dark Reading",
+      "date": "2025-07",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Lessons Learned From McDonald's Big AI Flub",
+      "title_en": "Lessons Learned From McDonald's Big AI Flub"
+    },
+    {
+      "url": "https://www.malwarebytes.com/blog/news/2025/07/mcdonalds-ai-bot-spills-data-on-job-applicants",
+      "title": "McDonald's AI bot spills data on job applicants",
+      "publisher": "Malwarebytes Labs",
+      "date": "2025-07",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "McDonald's AI bot spills data on job applicants",
+      "title_en": "McDonald's AI bot spills data on job applicants"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-mcdonald-s-ai-chatbot-exposes-64-million-job-applicants-2025-aiaaic2059",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

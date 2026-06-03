@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/global-guardian-test-zeigt-dass-versteckter-text-chatgpt-suche-manipulieren-kann-2024",
+  "name": "Global: Guardian-Test zeigt, dass versteckter Text ChatGPT-Suche manipulieren kann",
+  "name_de": "Global: Guardian-Test zeigt, dass versteckter Text ChatGPT-Suche manipulieren kann",
+  "name_en": "Global: Guardian test shows hidden text can manipulate ChatGPT search",
+  "description": "Im Dezember 2024 wies The Guardian in exklusiven Tests nach, dass ChatGPT Search durch versteckten Text auf Webseiten (Indirect Prompt Injection) manipulierbar ist. In einem Versuch erstellte das System aus einer Seite mit negativen Produktrezensionen eine durchweg positive Zusammenfassung, weil versteckte Anweisungen das Modell überschrieben. In einem zweiten Versuch übernahm ChatGPT bösartigen Code aus versteckten Bereichen. Sicherheitsforscher Karsten Nohl verglich das mit SEO-Poisoning. Es war einer der ersten dokumentierten Live-Angriffe auf ein KI-Suchprodukt.",
+  "description_de": "Im Dezember 2024 wies The Guardian in exklusiven Tests nach, dass ChatGPT Search durch versteckten Text auf Webseiten (Indirect Prompt Injection) manipulierbar ist. In einem Versuch erstellte das System aus einer Seite mit negativen Produktrezensionen eine durchweg positive Zusammenfassung, weil versteckte Anweisungen das Modell überschrieben. In einem zweiten Versuch übernahm ChatGPT bösartigen Code aus versteckten Bereichen. Sicherheitsforscher Karsten Nohl verglich das mit SEO-Poisoning. Es war einer der ersten dokumentierten Live-Angriffe auf ein KI-Suchprodukt.",
+  "description_en": "In December 2024 The Guardian published exclusive tests showing that ChatGPT Search can be manipulated via hidden text on webpages - a form of indirect prompt injection. In one test the system produced an entirely positive summary of a page filled with negative product reviews because hidden instructions overrode the model. In a second test ChatGPT surfaced malicious code embedded in hidden sections. Security researcher Karsten Nohl compared the attack to SEO poisoning. It was one of the first documented live attacks on an AI-powered search product.",
+  "startDate": "2024-12",
+  "location": {
+    "@type": "Place",
+    "name": "London, Vereinigtes Königreich",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GLOBAL"
+    },
+    "name_de": "London, Vereinigtes Königreich",
+    "name_en": "London, United Kingdom"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "ChatGPT Search"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    },
+    {
+      "name": "The Guardian",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "The Guardian",
+      "name_en": "The Guardian"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://techcrunch.com/2024/12/26/chatgpt-search-can-be-tricked-into-misleading-users-new-research-reveals/",
+      "title": "ChatGPT Search can be tricked into misleading users, new research reveals",
+      "publisher": "TechCrunch",
+      "date": "2024-12-26",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "ChatGPT Search can be tricked into misleading users, new research reveals",
+      "title_en": "ChatGPT Search can be tricked into misleading users, new research reveals"
+    },
+    {
+      "url": "https://www.wizcase.com/news/the-guardian-shows-hidden-text-can-manipulate-chatgpts-search-results/",
+      "title": "The Guardian Shows Hidden Text Can Manipulate ChatGPT's Search Results",
+      "publisher": "WizCase",
+      "date": "2024-12-27",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "The Guardian Shows Hidden Text Can Manipulate ChatGPT's Search Results",
+      "title_en": "The Guardian Shows Hidden Text Can Manipulate ChatGPT's Search Results"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-report-hidden-text-able-to-manipulate-2024-aiaaic1732",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

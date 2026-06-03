@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/global-apple-aktiviert-enhanced-visual-search-standardmaessig-foto-daten-gehen-an-apple",
+  "name": "Global: Apple aktiviert 'Enhanced Visual Search' standardmaessig, Foto-Daten gehen an Apple-Server",
+  "name_de": "Global: Apple aktiviert 'Enhanced Visual Search' standardmaessig, Foto-Daten gehen an Apple-Server",
+  "name_en": "Global: Apple enables 'Enhanced Visual Search' by default, sending photo data to Apple servers",
+  "description": "Mit iOS 18 und macOS Sequoia führte Apple Ende 2024 stillschweigend die Funktion 'Enhanced Visual Search' ein, die Foto-Daten zur Sehenswürdigkeiten-Identifikation an Apple-Server sendet — standardmässig aktiviert und ohne Hinweis auf den Trade-off. Der Entwickler Jeff Johnson und der Sicherheitsforscher Matthew Green (Johns Hopkins) kritisierten den Vorgang. Apple verteidigt das Verfahren mit homomorpher Verschlüsselung, Differential Privacy und einem OHTTP-Relay; Kritiker:innen halten den fehlenden Consent für rechtlich problematisch (insbesondere in der EU).",
+  "description_de": "Mit iOS 18 und macOS Sequoia führte Apple Ende 2024 stillschweigend die Funktion 'Enhanced Visual Search' ein, die Foto-Daten zur Sehenswürdigkeiten-Identifikation an Apple-Server sendet — standardmässig aktiviert und ohne Hinweis auf den Trade-off. Der Entwickler Jeff Johnson und der Sicherheitsforscher Matthew Green (Johns Hopkins) kritisierten den Vorgang. Apple verteidigt das Verfahren mit homomorpher Verschlüsselung, Differential Privacy und einem OHTTP-Relay; Kritiker:innen halten den fehlenden Consent für rechtlich problematisch (insbesondere in der EU).",
+  "description_en": "With iOS 18 and macOS Sequoia, Apple silently rolled out 'Enhanced Visual Search' in late 2024, sending photo data to Apple servers for landmark identification — enabled by default and without disclosing the trade-off. Developer Jeff Johnson and security researcher Matthew Green (Johns Hopkins) criticised the move. Apple defends the process via homomorphic encryption, differential privacy and an OHTTP relay; critics argue the lack of consent is legally problematic (especially under EU law).",
+  "startDate": "2024-12",
+  "location": {
+    "@type": "Place",
+    "name": "Mehrere",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GLOBAL"
+    },
+    "name_de": "Mehrere",
+    "name_en": "Multiple"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "surveillance"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Apple",
+      "type": "organization",
+      "asm:systems": [
+        "Enhanced Visual Search (iOS 18 / macOS Sequoia)"
+      ],
+      "name_de": "Apple",
+      "name_en": "Apple"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://9to5mac.com/2024/12/30/enhanced-visual-search-shares-your-photos-with-apple-by-default-to-identify-landmarks/",
+      "title": "Enhanced Visual Search shares your photos with Apple by default",
+      "publisher": "9to5Mac",
+      "date": "2024-12-30",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Enhanced Visual Search shares your photos with Apple by default",
+      "title_en": "Enhanced Visual Search shares your photos with Apple by default"
+    },
+    {
+      "url": "https://www.theregister.com/2025/01/03/apple_enhanced_visual_search/",
+      "title": "Apple opts everyone into having their Photos analyzed by AI",
+      "publisher": "The Register",
+      "date": "2025-01-03",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Apple opts everyone into having their Photos analyzed by AI",
+      "title_en": "Apple opts everyone into having their Photos analyzed by AI"
+    },
+    {
+      "url": "https://cybernews.com/privacy/apples-stealthy-photo-scanning-feature-enhanced-visual-search/",
+      "title": "Apple's stealthy photo scanning feature raises privacy concerns",
+      "publisher": "Cybernews",
+      "date": "2025-01-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Apple's stealthy photo scanning feature raises privacy concerns",
+      "title_en": "Apple's stealthy photo scanning feature raises privacy concerns"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-03",
+    "lastUpdated": "2026-06-03",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-apple-automated-photo-data-sharing-prompts-privacy-2024-aiaaic1863",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}
