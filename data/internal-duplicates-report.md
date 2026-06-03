@@ -1,6 +1,6 @@
 # Interne Dubletten-Analyse — Bestand vs. sich selbst
 
-Stand: 2026-06-03 · Incidents: 1306
+Stand: 2026-06-03 · Incidents: 1304
 
 | Klasse | Paare |
 |---|---|
