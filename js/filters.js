@@ -10,7 +10,7 @@ const Filters = (function () {
   let timeRangeMonths = 0; // 0 = all time
   let searchQuery = '';
   let allTypes = [
-    'surveillance', 'predictive-policing', 'autonomous-weapons',
+    'surveillance', 'predictive-policing', 'autonomous-weapons', 'autonomous-vehicle',
     'discrimination', 'deepfakes', 'data-misuse', 'military-ai',
     'facial-recognition', 'censorship', 'labor-exploitation', 'political-pressure'
   ];

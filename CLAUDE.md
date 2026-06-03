@@ -52,7 +52,7 @@ Each incident JSON-LD file contains:
 - **No npm/node**: Everything via CDN or vanilla JS. Do not introduce a build step.
 - **CSS variables**: All colors/spacing via `:root` custom properties in main.css
 - **i18n keys**: Flat keys in de.json/en.json, referenced via `data-i18n` attributes
-- **Incident types**: surveillance, predictive-policing, autonomous-weapons, discrimination, deepfakes, data-misuse, military-ai, facial-recognition, censorship, labor-exploitation, political-pressure
+- **Incident types**: surveillance, predictive-policing, autonomous-weapons, autonomous-vehicle, discrimination, deepfakes, data-misuse, military-ai, facial-recognition, censorship, labor-exploitation, political-pressure
 - **Severity colors**: 1=#3498db, 2=#f39c12, 3=#e67e22, 4=#e74c3c, 5=#ba68c8
 
 ## Planning
