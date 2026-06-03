@@ -346,9 +346,17 @@ function stripParentheticals(text) {
 
 // Returns leakage kind ('umlaut' | 'german-word') if EN text shows German leakage
 // AFTER stripping bracketed glosses, OR null if clean (or only proper-noun umlauts).
+// Bekannte Fremd-Eigennamen, die deutsche/niederlaendische Namenspartikel
+// ("von der", "van der") enthalten, aber in EN identisch geschrieben werden.
+// Sie duerfen nicht als german-word-Leakage zaehlen (z.B. Ursula von der Leyen).
+const FOREIGN_NAME_PARTICLES = ['von der Leyen', 'van der Bellen', 'de la Rey'];
+
 function hasGermanLeakage(text) {
   if (typeof text !== 'string' || !text) return null;
   var stripped = stripParentheticals(text);
+  for (var fn = 0; fn < FOREIGN_NAME_PARTICLES.length; fn++) {
+    stripped = stripped.split(FOREIGN_NAME_PARTICLES[fn]).join(' ');
+  }
   if (UMLAUT_RE.test(stripped)) {
     // Allow umlauts that occur only inside capitalized tokens (likely proper
     // nouns like "Berlin Südkreuz", "Düsseldorf"). If every umlaut occurrence
@@ -395,6 +403,19 @@ const ACRONYM_EXPANSIONS = {
   'NSO': ['NSO Group']
 };
 
+// Sprachspezifische Eigennamen-Schreibweisen: der DE-Whitelist-Name (links)
+// gilt als praesent, wenn eine seiner EN-Varianten (rechts) im EN-Text steht.
+// Verhindert dropped_proper_name false-positives bei korrekt uebersetzten
+// Namen (z.B. DE "Hisbollah" -> EN "Hezbollah").
+const NAME_EQUIVALENTS = {
+  'Hisbollah': ['Hezbollah'],
+  'Netanjahu': ['Netanyahu'],
+  'Selenskyj': ['Zelensky', 'Zelenskyy', 'Zelenskiy'],
+  'Erdogan': ['Erdoğan'],
+  'Saudi-Arabien': ['Saudi Arabia'],
+  'Tuerkei': ['Turkey', 'Türkiye']
+};
+
 // Word-boundary-aware proper-name presence check. Always uses word boundaries
 // so that e.g. "Uber" (the company, on the whitelist) does NOT match inside
 // "Uberwachung" (transliterated Überwachung). Names containing characters that
@@ -422,6 +443,10 @@ function namePresentInEn(name, enText) {
   var expansions = ACRONYM_EXPANSIONS[name] || [];
   for (var i = 0; i < expansions.length; i++) {
     if (enText.indexOf(expansions[i]) !== -1) return true;
+  }
+  var equivalents = NAME_EQUIVALENTS[name] || [];
+  for (var j = 0; j < equivalents.length; j++) {
+    if (enText.indexOf(equivalents[j]) !== -1) return true;
   }
   return false;
 }
