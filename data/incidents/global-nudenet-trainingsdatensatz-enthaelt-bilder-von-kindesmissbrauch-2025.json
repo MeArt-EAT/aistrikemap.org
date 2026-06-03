@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Kinderrechte",
+    "Würde des Menschen",
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor sexueller Ausbeutung"
+  ],
+  "asm:affectedRights_de": [
+    "Kinderrechte",
+    "Würde des Menschen",
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor sexueller Ausbeutung"
+  ],
+  "asm:affectedRights_en": [
+    "Children's rights",
+    "Human dignity",
+    "Right to privacy",
+    "Data protection",
+    "Protection from sexual exploitation"
+  ],
   "asm:actors": [
     {
       "name": "Bedapudi Praneeth",
@@ -48,7 +66,73 @@
   ],
   "asm:severity": 5,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-06",
+      "phase": "infrastructure",
+      "title": "NudeNet-Datensatz aus dem Web zusammengescrapt",
+      "description": "Der Entwickler Bedapudi Praneeth stellte ab Juni 2019 den Trainingsdatensatz für sein Open-Source-Tool NudeNet bereit. Die über 700.000 Bilder wurden ungefiltert aus dem Netz gezogen - von NSFW-Subreddits über Bild-Hoster bis zu Pornoseiten. Eine systematische Prüfung der Herkunft oder des Alters der abgebildeten Personen fand nicht statt.",
+      "title_de": "NudeNet-Datensatz aus dem Web zusammengescrapt",
+      "description_de": "Der Entwickler Bedapudi Praneeth stellte ab Juni 2019 den Trainingsdatensatz für sein Open-Source-Tool NudeNet bereit. Die über 700.000 Bilder wurden ungefiltert aus dem Netz gezogen - von NSFW-Subreddits über Bild-Hoster bis zu Pornoseiten. Eine systematische Prüfung der Herkunft oder des Alters der abgebildeten Personen fand nicht statt.",
+      "title_en": "NudeNet dataset scraped together from the web",
+      "description_en": "From June 2019 onward, developer Bedapudi Praneeth published the training dataset for his open-source tool NudeNet. Its 700,000-plus images were pulled indiscriminately from the internet - from NSFW subreddits to image hosts to pornography sites. No systematic check of the provenance or the age of the depicted people took place.",
+      "sources": [
+        "https://praneethbedapudi.medium.com/nudenet-an-ensemble-of-neural-nets-for-nudity-detection-and-censoring-d9f3da721e3"
+      ]
+    },
+    {
+      "date": "2019-06",
+      "phase": "doctrine",
+      "title": "Freie Weiterverbreitung über Academic Torrents",
+      "description": "Der Datensatz wurde unter einer offenen Lizenz über die Forschungsplattform Academic Torrents zum Download angeboten. Das Geschäftsmodell der freien Wiederverwendbarkeit führte dazu, dass mehr als 250 wissenschaftliche Arbeiten den Datensatz zitierten oder einsetzten und zahllose Entwickler ihn lokal speicherten, um KI-Moderationsmodelle zu trainieren.",
+      "title_de": "Freie Weiterverbreitung über Academic Torrents",
+      "description_de": "Der Datensatz wurde unter einer offenen Lizenz über die Forschungsplattform Academic Torrents zum Download angeboten. Das Geschäftsmodell der freien Wiederverwendbarkeit führte dazu, dass mehr als 250 wissenschaftliche Arbeiten den Datensatz zitierten oder einsetzten und zahllose Entwickler ihn lokal speicherten, um KI-Moderationsmodelle zu trainieren.",
+      "title_en": "Free redistribution via Academic Torrents",
+      "description_en": "The dataset was offered for download under an open licence through the research platform Academic Torrents. The model of free reusability meant that more than 250 academic works cited or used the dataset and countless developers stored it locally to train AI moderation models.",
+      "sources": [
+        "https://www.protectchildren.ca/en/press-and-media/news-releases/2025/csam-nude-net"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "event",
+      "title": "C3P weist rund 680 Missbrauchsbilder im Datensatz nach",
+      "description": "Das Canadian Centre for Child Protection (C3P) glich den Datensatz mit Bild-Erkennungstechnik und manueller Prüfung ab und identifizierte rund 680 bestätigte oder mutmaßliche Bilder kindlichen sexuellen Missbrauchsmaterials. Über 120 davon zeigten bekannte Opfer aus Kanada und den USA. Wer den Datensatz heruntergeladen hatte, besaß damit unwissentlich illegales Material.",
+      "title_de": "C3P weist rund 680 Missbrauchsbilder im Datensatz nach",
+      "description_de": "Das Canadian Centre for Child Protection (C3P) glich den Datensatz mit Bild-Erkennungstechnik und manueller Prüfung ab und identifizierte rund 680 bestätigte oder mutmaßliche Bilder kindlichen sexuellen Missbrauchsmaterials. Über 120 davon zeigten bekannte Opfer aus Kanada und den USA. Wer den Datensatz heruntergeladen hatte, besaß damit unwissentlich illegales Material.",
+      "title_en": "C3P identifies around 680 abuse images in the dataset",
+      "description_en": "The Canadian Centre for Child Protection (C3P) cross-checked the dataset using image-matching technology and manual review and identified around 680 confirmed or suspected images of child sexual abuse material. Over 120 of these depicted known victims from Canada and the United States. Anyone who had downloaded the dataset thereby unknowingly possessed illegal material.",
+      "sources": [
+        "https://www.404media.co/ai-dataset-for-detecting-nudity-contained-child-sexual-abuse-images/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Takedown bei Academic Torrents und Ethik-Debatte",
+      "description": "Nach der C3P-Meldung entfernte Academic Torrents den Datensatz und die markierten Bilder waren nicht mehr verfügbar. Fachleute wie der Forensiker Hany Farid (UC Berkeley) verwiesen auf das grundlegende Einwilligungsproblem: Die abgebildeten Opfer hatten der Verbreitung und Trainingsnutzung ihrer Bilder nie zugestimmt. Eine später bereinigte Version wurde wieder online gestellt.",
+      "title_de": "Takedown bei Academic Torrents und Ethik-Debatte",
+      "description_de": "Nach der C3P-Meldung entfernte Academic Torrents den Datensatz und die markierten Bilder waren nicht mehr verfügbar. Fachleute wie der Forensiker Hany Farid (UC Berkeley) verwiesen auf das grundlegende Einwilligungsproblem: Die abgebildeten Opfer hatten der Verbreitung und Trainingsnutzung ihrer Bilder nie zugestimmt. Eine später bereinigte Version wurde wieder online gestellt.",
+      "title_en": "Takedown at Academic Torrents and ethics debate",
+      "description_en": "Following the C3P notification, Academic Torrents removed the dataset and the flagged images were no longer available. Experts such as forensic scientist Hany Farid (UC Berkeley) pointed to the underlying consent problem: the victims depicted had never agreed to the distribution and training use of their images. A cleaned version was later put back online.",
+      "sources": [
+        "https://www.ischool.berkeley.edu/news/2025/ai-dataset-containing-child-sexual-abuse-images-consent-issue-hany-farid-says"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "phase": "consequences",
+      "title": "Google sperrt Konto eines Entwicklers wegen des Datensatzes",
+      "description": "Ein Entwickler, der den NudeNet-Datensatz zum Benchmarking eines NSFW-Filters in seine Google-Cloud geladen hatte, erhielt von Google eine Sperrung wegen gespeicherten Missbrauchsmaterials. Der Fall zeigte exemplarisch, wie eine offen geteilte Trainingsbasis ahnungslose Nachnutzer in Strafbarkeit und Plattform-Sanktionen bringen konnte; Google stellte das Konto nach Prüfung wieder her.",
+      "title_de": "Google sperrt Konto eines Entwicklers wegen des Datensatzes",
+      "description_de": "Ein Entwickler, der den NudeNet-Datensatz zum Benchmarking eines NSFW-Filters in seine Google-Cloud geladen hatte, erhielt von Google eine Sperrung wegen gespeicherten Missbrauchsmaterials. Der Fall zeigte exemplarisch, wie eine offen geteilte Trainingsbasis ahnungslose Nachnutzer in Strafbarkeit und Plattform-Sanktionen bringen konnte; Google stellte das Konto nach Prüfung wieder her.",
+      "title_en": "Google suspends a developer's account over the dataset",
+      "description_en": "A developer who had loaded the NudeNet dataset into his Google cloud to benchmark an NSFW filter received an account suspension from Google for storing abuse material. The case illustrated how an openly shared training base could expose unsuspecting downstream users to criminal liability and platform sanctions; Google restored the account after review.",
+      "sources": [
+        "https://gigazine.net/gsc_news/en/20251212-developer-ai-data-google-ban/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.protectchildren.ca/en/press-and-media/news-releases/2025/csam-nude-net",
