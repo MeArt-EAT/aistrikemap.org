@@ -1,5 +1,11 @@
 # CLAUDE.md — AIStrikeMap
 
+> 📍 **ZUERST `STATUS.md` (Projekt-Root) LESEN** — zeigt den aktuellen Stand
+> (Bestand-Zahl, letzter/nächster Schritt, Liga). **Bei jedem Session-Ende
+> aktualisieren** (Bestand, Übergabe-Nr, nächster Schritt) + neues
+> `docs/planung/übergabe-JJJJ-MM-TT-*.md` verlinken. So bleibt bei vielen
+> Projekten sofort erkennbar, wo dieses hier steht.
+
 ## Project Overview
 
 AIStrikeMap is an investigative research platform mapping AI-related human rights incidents globally. Each incident is presented as a **reverse timeline** (Infrastructure → Doctrine → Event → Consequences). Live at **aistrikemap.org**, hosted on GitHub Pages.

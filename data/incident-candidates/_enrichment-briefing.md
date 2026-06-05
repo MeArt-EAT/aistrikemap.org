@@ -25,6 +25,36 @@ Für jeden Stub im Chunk:
 - Wenn nach 2-3 Suchen keine belastbaren Quellen → status = "rejected",
   researcher_notes ergänzen mit Skip-Grund
 
+### 1b. Datum verifizieren (KRITISCH — häufigste Fehlerquelle)
+
+Das `startDate` im Stub stammt aus der AIAAIC-Quelle und ist SYSTEMATISCH
+UNZUVERLÄSSIG: Es gibt oft das Jahr des zugrunde liegenden KI-Systems oder
+eines frühen Berichts an, NICHT das Jahr des dokumentierten Ereignisses.
+Auch das Jahr im `candidate_id` ist nur dieses Stub-Jahr — NICHT ungeprüft
+übernehmen.
+
+**Du MUSST das Datum des dokumentierten Ereignisses per WebSearch
+bestimmen** — also des Vorgangs, den der Incident beschreibt (Klage,
+Urteil, Crash, Daten-Leak, Untersuchung, Verbot, Veröffentlichung,
+Entlassungswelle). Setze `startDate` auf dieses Ereignis, so genau wie
+belegbar (YYYY-MM-DD > YYYY-MM > YYYY).
+
+Faustregel: Wenn deine eigenen Quellen alle z.B. aus 2025 stammen, das
+Stub-Jahr aber 2021 ist, ist das Stub-Jahr fast sicher falsch — das
+Ereignis ist 2025.
+
+Belegte Beispiele (aus chunk-01):
+- Anthropic Buch-Scanning: Stub 2021 → Scan-Projekt 2024, Bericht 2026
+- Hingham High School (KI-Plagiat-Klage): Stub 2023 → Klage/Urteil Nov 2024
+- Spotify 75M Tracks Crackdown: Stub 2023 → Sep 2025
+- Tesla "drifts off road" (Shawn Kroll): Stub 2022 → 2023-06-05
+- Robby Starbuck Klage: Stub 2023 → Klage 2025
+
+Wenn du das Ereignisdatum nach 2-3 Suchen NICHT belegen kannst: behalte das
+Stub-Jahr, vermerke die Unsicherheit in `researcher_notes` ("startDate
+unbestätigt — Stub-Jahr übernommen") und setze status auf höchstens
+"needs-review". NIE ein Datum raten.
+
 ### 2. Felder ausfüllen
 
 ```jsonc
@@ -34,7 +64,7 @@ Für jeden Stub im Chunk:
     "name_en": "Land: Short EN headline of case (max 100 chars)",
     "description_de": "2-4 Sätze DE — was ist passiert, wer war beteiligt, welcher Schaden. EIGENE Worte. KEINE AIAAIC-Wortlaute.",
     "description_en": "2-4 sentences EN — what happened, who was involved, what harm. OWN words. NO AIAAIC wording.",
-    "startDate": "YYYY oder YYYY-MM oder YYYY-MM-DD",
+    "startDate": "YYYY-MM-DD bevorzugt - Datum des DOKUMENTIERTEN EREIGNISSES, NICHT das Stub-Jahr (siehe 1b)",
     "location": {
       "name_de": "Stadt/Region, Land",
       "name_en": "City/Region, Country",
@@ -111,6 +141,8 @@ Vermeiden als alleinige Quelle:
    status = "rejected", NICHT halluzinieren.
 5. **2+ Sources** pro `verified`-Status. 1 Source = `needs-review`.
 6. **Keine AIAAIC-URL** als Source. Sie bleibt nur im `researcher_notes`.
+7. **Datum verifizieren**: `startDate` = Datum des dokumentierten Ereignisses
+   per WebSearch, NICHT das Stub-Jahr aus candidate_id/Stub. Siehe 1b.
 
 ## Output
 
