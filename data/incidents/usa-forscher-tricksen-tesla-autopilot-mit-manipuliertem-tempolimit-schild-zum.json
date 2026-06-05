@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-forscher-tricksen-tesla-autopilot-mit-manipuliertem-tempolimit-schild-zum",
+  "name": "USA: Forscher tricksen Tesla-Autopilot mit manipuliertem Tempolimit-Schild zum Beschleunigen",
+  "name_de": "USA: Forscher tricksen Tesla-Autopilot mit manipuliertem Tempolimit-Schild zum Beschleunigen",
+  "name_en": "USA: Researchers trick Tesla Autopilot into accelerating via doctored speed-limit sign",
+  "description": "Im Februar 2020 zeigten Sicherheitsforscher von McAfee, dass sich aeltere Tesla-Modelle mit der MobilEye-EyeQ3-Kamera taeuschen lassen: Ein nur etwa fuenf Zentimeter langes Stueck schwarzes Klebeband auf einem 35-mph-Tempolimit-Schild verlängerte die Ziffer so, dass die Kamera '85' las und das Fahrzeug per Traffic-Aware Cruise Control auf 85 mph beschleunigte. Der Befund demonstrierte die Anfaelligkeit kamerabasierter Fahrassistenz gegenüber Adversarial-Manipulation. Es handelte sich um ein kontrolliertes Forschungsexperiment ohne realen Unfall.",
+  "description_de": "Im Februar 2020 zeigten Sicherheitsforscher von McAfee, dass sich aeltere Tesla-Modelle mit der MobilEye-EyeQ3-Kamera taeuschen lassen: Ein nur etwa fuenf Zentimeter langes Stueck schwarzes Klebeband auf einem 35-mph-Tempolimit-Schild verlängerte die Ziffer so, dass die Kamera '85' las und das Fahrzeug per Traffic-Aware Cruise Control auf 85 mph beschleunigte. Der Befund demonstrierte die Anfaelligkeit kamerabasierter Fahrassistenz gegenüber Adversarial-Manipulation. Es handelte sich um ein kontrolliertes Forschungsexperiment ohne realen Unfall.",
+  "description_en": "In February 2020, security researchers at McAfee showed that older Tesla models with the MobilEye EyeQ3 camera can be fooled: a roughly two-inch strip of black tape on a 35 mph speed-limit sign extended the digit so the camera read '85', causing the car to accelerate to 85 mph via Traffic-Aware Cruise Control. The finding demonstrated the vulnerability of camera-based driver assistance to adversarial manipulation. It was a controlled research experiment with no real-world crash.",
+  "startDate": "2020-02",
+  "location": {
+    "@type": "Place",
+    "name": "USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.8283,
+      "longitude": -98.5795
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "USA",
+    "name_en": "USA"
+  },
+  "asm:incidentType": [
+    "autonomous-vehicle"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "McAfee (Advanced Threat Research)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "McAfee (Advanced Threat Research)",
+      "name_en": "McAfee (Advanced Threat Research)"
+    },
+    {
+      "name": "Tesla",
+      "type": "organization",
+      "asm:systems": [
+        "Autopilot / MobilEye EyeQ3"
+      ],
+      "name_de": "Tesla",
+      "name_en": "Tesla"
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.technologyreview.com/2020/02/19/868188/hackers-can-trick-a-tesla-into-accelerating-by-50-miles-per-hour/",
+      "title": "Hackers can trick a Tesla into accelerating by 50 miles per hour",
+      "publisher": "MIT Technology Review",
+      "date": "2020-02-19",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Hackers can trick a Tesla into accelerating by 50 miles per hour",
+      "title_en": "Hackers can trick a Tesla into accelerating by 50 miles per hour"
+    },
+    {
+      "url": "https://www.theregister.com/2020/02/20/tesla_ai_tricked_85_mph/",
+      "title": "Researchers trick Tesla into massively breaking the speed limit with a 2-inch piece of electrical tape",
+      "publisher": "The Register",
+      "date": "2020-02-20",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Researchers trick Tesla into massively breaking the speed limit with a 2-inch piece of electrical tape",
+      "title_en": "Researchers trick Tesla into massively breaking the speed limit with a 2-inch piece of electrical tape"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-tesla-autopilot-tricked-into-2020-aiaaic0494",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

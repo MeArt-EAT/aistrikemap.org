@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-cruise-robotaxi-faehrt-auf-linienbus-auf-300er-rueckruf-in-san-francisco-2023",
+  "name": "USA: Cruise-Robotaxi faehrt auf Linienbus auf, 300er-Rueckruf in San Francisco",
+  "name_de": "USA: Cruise-Robotaxi faehrt auf Linienbus auf, 300er-Rueckruf in San Francisco",
+  "name_en": "USA: Cruise robotaxi rear-ends transit bus, 300-vehicle recall in San Francisco",
+  "description": "Am 23. Maerz 2023 fuhr ein autonomes Cruise-Robotaxi in San Francisco auf das Heck eines Muni-Gelenkbusses auf. Das Fahrsystem hatte die Bewegung des Busses falsch vorhergesagt, weil der hintere Teil des Gelenkbusses den vorderen verdeckte und das System faelschlich von Weiterfahrt ausging. Verletzt wurde niemand. Cruise (General Motors) rief daraufhin freiwillig 300 Fahrzeuge zur Software-Aktualisierung zurueck und meldete dies der NHTSA.",
+  "description_de": "Am 23. Maerz 2023 fuhr ein autonomes Cruise-Robotaxi in San Francisco auf das Heck eines Muni-Gelenkbusses auf. Das Fahrsystem hatte die Bewegung des Busses falsch vorhergesagt, weil der hintere Teil des Gelenkbusses den vorderen verdeckte und das System faelschlich von Weiterfahrt ausging. Verletzt wurde niemand. Cruise (General Motors) rief daraufhin freiwillig 300 Fahrzeuge zur Software-Aktualisierung zurueck und meldete dies der NHTSA.",
+  "description_en": "On 23 March 2023 an autonomous Cruise robotaxi in San Francisco rear-ended the back of an articulated Muni bus. The driving system had mispredicted the bus's movement because the rear section of the articulated bus obscured the front, leading the system to wrongly assume it kept moving forward. No one was injured. Cruise (General Motors) then voluntarily recalled 300 vehicles for a software update and reported it to NHTSA.",
+  "startDate": "2023-03-23",
+  "location": {
+    "@type": "Place",
+    "name": "San Francisco, Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.774,
+      "longitude": -122.419
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "San Francisco, Kalifornien, USA",
+    "name_en": "San Francisco, California, USA"
+  },
+  "asm:incidentType": [
+    "autonomous-vehicle"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Cruise LLC (General Motors)",
+      "type": "organization",
+      "asm:systems": [
+        "Cruise self-driving system"
+      ],
+      "name_de": "Cruise LLC (General Motors)",
+      "name_en": "Cruise LLC (General Motors)"
+    },
+    {
+      "name": "National Highway Traffic Safety Administration (NHTSA)",
+      "type": "government",
+      "asm:systems": [],
+      "name_de": "National Highway Traffic Safety Administration (NHTSA)",
+      "name_en": "National Highway Traffic Safety Administration (NHTSA)"
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.cbsnews.com/sanfrancisco/news/gm-cruise-recalls-300-robotaxis-after-crash-involving-bus/",
+      "title": "GM Cruise recalls 300 robotaxis after crash involving San Francisco Muni bus",
+      "publisher": "CBS News",
+      "date": "2023-04-07",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "GM Cruise recalls 300 robotaxis after crash involving San Francisco Muni bus",
+      "title_en": "GM Cruise recalls 300 robotaxis after crash involving San Francisco Muni bus"
+    },
+    {
+      "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23E029-4270.PDF",
+      "title": "Part 573 Safety Recall Report 23E-029 (Cruise)",
+      "publisher": "NHTSA",
+      "date": "2023-04-06",
+      "type": "government-document",
+      "asm:linkHealth": "unverified",
+      "title_de": "Part 573 Safety Recall Report 23E-029 (Cruise)",
+      "title_en": "Part 573 Safety Recall Report 23E-029 (Cruise)"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-cruise-av-rear-ends-san-francisco-transit-2023-aiaaic0979",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

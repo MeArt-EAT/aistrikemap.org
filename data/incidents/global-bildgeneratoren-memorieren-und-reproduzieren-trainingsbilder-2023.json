@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/global-bildgeneratoren-memorieren-und-reproduzieren-trainingsbilder-2023",
+  "name": "Studie: Bildgeneratoren memorieren und reproduzieren Trainingsbilder",
+  "name_de": "Studie: Bildgeneratoren memorieren und reproduzieren Trainingsbilder",
+  "name_en": "Study: image generators memorise and reproduce training images",
+  "description": "Ein Forschungsteam um Nicholas Carlini (u.a. Google DeepMind, Stanford, Princeton, UC Berkeley) zeigte im Januar 2023, dass Diffusionsmodelle wie Stable Diffusion und Imagen einzelne Trainingsbilder auswendig lernen und bei der Generierung nahezu identisch wieder ausgeben können. Mit einem Generate-and-Filter-Verfahren extrahierten sie über tausend Trainingsbeispiele - von Personenfotos bis zu markenrechtlich geschützten Logos. Das wirft Datenschutz- und Urheberrechtsfragen auf.",
+  "description_de": "Ein Forschungsteam um Nicholas Carlini (u.a. Google DeepMind, Stanford, Princeton, UC Berkeley) zeigte im Januar 2023, dass Diffusionsmodelle wie Stable Diffusion und Imagen einzelne Trainingsbilder auswendig lernen und bei der Generierung nahezu identisch wieder ausgeben können. Mit einem Generate-and-Filter-Verfahren extrahierten sie über tausend Trainingsbeispiele - von Personenfotos bis zu markenrechtlich geschützten Logos. Das wirft Datenschutz- und Urheberrechtsfragen auf.",
+  "description_en": "A research team led by Nicholas Carlini (including Google DeepMind, Stanford, Princeton, UC Berkeley) showed in January 2023 that diffusion models such as Stable Diffusion and Imagen memorise individual training images and can emit near-identical copies at generation time. Using a generate-and-filter method they extracted over a thousand training examples - from photos of people to trademarked logos - raising privacy and copyright concerns.",
+  "startDate": "2023-01",
+  "location": {
+    "@type": "Place",
+    "name": "Mehrere Länder (Forschungskooperation)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GLOBAL"
+    },
+    "name_de": "Mehrere Länder (Forschungskooperation)",
+    "name_en": "Multiple countries (research collaboration)"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Nicholas Carlini et al. (researchers)",
+      "type": "individual",
+      "asm:systems": [],
+      "name_de": "Nicholas Carlini et al. (researchers)",
+      "name_en": "Nicholas Carlini et al. (researchers)"
+    },
+    {
+      "name": "Google; OpenAI; Stability AI",
+      "type": "organization",
+      "asm:systems": [
+        "Stable Diffusion",
+        "Imagen",
+        "DALL-E 2"
+      ],
+      "name_de": "Google; OpenAI; Stability AI",
+      "name_en": "Google; OpenAI; Stability AI"
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://arxiv.org/abs/2301.13188",
+      "title": "Extracting Training Data from Diffusion Models",
+      "publisher": "arXiv (USENIX Security 2023)",
+      "date": "2023-01-30",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Extracting Training Data from Diffusion Models",
+      "title_en": "Extracting Training Data from Diffusion Models"
+    },
+    {
+      "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/carlini",
+      "title": "Extracting Training Data from Diffusion Models",
+      "publisher": "USENIX Security Symposium",
+      "date": "2023-08-09",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Extracting Training Data from Diffusion Models",
+      "title_en": "Extracting Training Data from Diffusion Models"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-image-generation-ais-memorise-training-2023-aiaaic1237",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

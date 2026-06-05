@@ -1,0 +1,89 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-studie-chatgpts-code-genauigkeit-faellt-zwischen-maerz-und-juni-2023-stark-ab",
+  "name": "Global: Studie - ChatGPTs Code-Genauigkeit fällt zwischen März und Juni 2023 stark ab",
+  "name_de": "Global: Studie - ChatGPTs Code-Genauigkeit fällt zwischen März und Juni 2023 stark ab",
+  "name_en": "Global: Study - ChatGPT's code accuracy drops sharply between March and June 2023",
+  "description": "Forschende von Stanford und UC Berkeley (Lingjiao Chen, Matei Zaharia, James Zou) dokumentierten im Juli 2023 ein 'Modell-Drift': Bei 50 einfachen LeetCode-Aufgaben sank der Anteil direkt ausführbaren GPT-4-Codes von 52 Prozent im März auf 10 Prozent im Juni; GPT-3.5 fiel von 22 auf 2 Prozent. Auch bei einer Primzahl-Aufgabe brach die Trefferquote ein. Die Studie warnte Entwickler, das Verhalten der Modelle regelmässig zu testen, da stille Änderungen nachgelagerte Anwendungen brechen können - obwohl Teile der Methodik (Formatierungsbewertung) später kritisch diskutiert wurden.",
+  "description_de": "Forschende von Stanford und UC Berkeley (Lingjiao Chen, Matei Zaharia, James Zou) dokumentierten im Juli 2023 ein 'Modell-Drift': Bei 50 einfachen LeetCode-Aufgaben sank der Anteil direkt ausführbaren GPT-4-Codes von 52 Prozent im März auf 10 Prozent im Juni; GPT-3.5 fiel von 22 auf 2 Prozent. Auch bei einer Primzahl-Aufgabe brach die Trefferquote ein. Die Studie warnte Entwickler, das Verhalten der Modelle regelmässig zu testen, da stille Änderungen nachgelagerte Anwendungen brechen können - obwohl Teile der Methodik (Formatierungsbewertung) später kritisch diskutiert wurden.",
+  "description_en": "Researchers from Stanford and UC Berkeley (Lingjiao Chen, Matei Zaharia, James Zou) documented 'model drift' in July 2023: on 50 easy LeetCode problems, the share of directly executable GPT-4 code fell from 52 percent in March to 10 percent in June; GPT-3.5 dropped from 22 to 2 percent. Accuracy on a prime-number task also collapsed. The study warned developers to test model behaviour regularly, since silent changes can break downstream applications - though parts of the methodology (formatting scoring) were later debated.",
+  "startDate": "2023-07",
+  "location": {
+    "@type": "Place",
+    "name": "Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.43,
+      "longitude": -122.17
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Kalifornien, USA",
+    "name_en": "California, USA"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Stanford University; UC Berkeley",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Stanford University; UC Berkeley",
+      "name_en": "Stanford University; UC Berkeley"
+    },
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "GPT-4",
+        "GPT-3.5"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://arxiv.org/pdf/2307.09009",
+      "title": "How Is ChatGPT's Behavior Changing over Time?",
+      "publisher": "arXiv (Chen, Zaharia, Zou)",
+      "date": "2023-07-18",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "How Is ChatGPT's Behavior Changing over Time?",
+      "title_en": "How Is ChatGPT's Behavior Changing over Time?"
+    },
+    {
+      "url": "https://www.theregister.com/2023/07/20/gpt4_chatgpt_performance/",
+      "title": "ChatGPT study suggests its LLMs are getting dumber",
+      "publisher": "The Register",
+      "date": "2023-07-20",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "ChatGPT study suggests its LLMs are getting dumber",
+      "title_en": "ChatGPT study suggests its LLMs are getting dumber"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-chatgpts-ability-to-generate-accurate-computer-code-2023-aiaaic1219",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

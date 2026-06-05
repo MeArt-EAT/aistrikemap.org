@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-studie-extrahiert-trainingsdaten-samt-persoenlicher-infos-aus-chatgpt-2023",
+  "name": "Global: Studie extrahiert Trainingsdaten samt persönlicher Infos aus ChatGPT",
+  "name_de": "Global: Studie extrahiert Trainingsdaten samt persönlicher Infos aus ChatGPT",
+  "name_en": "Global: Study extracts training data including personal info from ChatGPT",
+  "description": "Ein Forschungsteam um Milad Nasr und Nicholas Carlini (Google DeepMind und akademische Partner) zeigte Ende November 2023, dass sich aus dem produktiven ChatGPT-Modell wörtliche Trainingsdaten extrahieren lassen. Mit einem 'Divergenz-Angriff' - etwa der Aufforderung, ein Wort endlos zu wiederholen - gab das Modell mit 150-fach erhöhter Rate Originaldaten aus, darunter Namen, Telefonnummern und E-Mail-Adressen realer Personen. In der stärksten Konfiguration waren über fünf Prozent der Ausgabe wörtliche 50-Token-Kopien aus dem Trainingskorpus.",
+  "description_de": "Ein Forschungsteam um Milad Nasr und Nicholas Carlini (Google DeepMind und akademische Partner) zeigte Ende November 2023, dass sich aus dem produktiven ChatGPT-Modell wörtliche Trainingsdaten extrahieren lassen. Mit einem 'Divergenz-Angriff' - etwa der Aufforderung, ein Wort endlos zu wiederholen - gab das Modell mit 150-fach erhöhter Rate Originaldaten aus, darunter Namen, Telefonnummern und E-Mail-Adressen realer Personen. In der stärksten Konfiguration waren über fünf Prozent der Ausgabe wörtliche 50-Token-Kopien aus dem Trainingskorpus.",
+  "description_en": "A research team led by Milad Nasr and Nicholas Carlini (Google DeepMind and academic partners) showed in late November 2023 that verbatim training data can be extracted from the production ChatGPT model. Using a 'divergence attack' - for example prompting the model to repeat a word endlessly - the model emitted original data at 150x the normal rate, including names, phone numbers and email addresses of real people. In its strongest configuration, over five percent of output was verbatim 50-token copies from the training corpus.",
+  "startDate": "2023-11-28",
+  "location": {
+    "@type": "Place",
+    "name": "Mehrere Länder",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Mehrere Länder",
+    "name_en": "Multiple countries"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Google DeepMind; academic researchers (Nasr, Carlini et al.)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Google DeepMind; academic researchers (Nasr, Carlini et al.)",
+      "name_en": "Google DeepMind; academic researchers (Nasr, Carlini et al.)"
+    },
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "ChatGPT"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://arxiv.org/abs/2311.17035",
+      "title": "Scalable Extraction of Training Data from (Production) Language Models",
+      "publisher": "arXiv",
+      "date": "2023-11-28",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Scalable Extraction of Training Data from (Production) Language Models",
+      "title_en": "Scalable Extraction of Training Data from (Production) Language Models"
+    },
+    {
+      "url": "https://not-just-memorization.github.io/extracting-training-data-from-chatgpt.html",
+      "title": "Extracting Training Data from ChatGPT",
+      "publisher": "Carlini et al. (research blog)",
+      "date": "2023-11-28",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Extracting Training Data from ChatGPT",
+      "title_en": "Extracting Training Data from ChatGPT"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-study-chatgpt-can-be-used-to-identify-individual-internet-2023-aiaaic1225",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

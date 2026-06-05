@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-bild-modelle-igpt-und-simclr-weisen-rassistische-und-sexistische-verzerrungen-auf-2021",
+  "name": "USA: Bild-Modelle iGPT und SimCLR weisen rassistische und sexistische Verzerrungen auf",
+  "name_de": "USA: Bild-Modelle iGPT und SimCLR weisen rassistische und sexistische Verzerrungen auf",
+  "name_en": "USA: iGPT and SimCLR image models found to contain racial and gender bias",
+  "description": "Ryan Steed (Carnegie Mellon) und Aylin Caliskan (George Washington University) zeigten 2021, dass die auf ImageNet vortrainierten Bildmodelle OpenAIs iGPT und Googles SimCLR menschenaehnliche Vorurteile reproduzieren. Beide assoziierten weisse Personen mit Werkzeugen und schwarze Personen mit Waffen. Bei der Bildvervollstaendigung ergaenzte iGPT zugeschnittene Fotos von Frauen ueberproportional mit Bikini- oder freizuegigen Darstellungen - mit Risiken für die Erzeugung sexualisierter Bilder. Die Arbeit erschien auf der ACM-Konferenz FAccT 2021.",
+  "description_de": "Ryan Steed (Carnegie Mellon) und Aylin Caliskan (George Washington University) zeigten 2021, dass die auf ImageNet vortrainierten Bildmodelle OpenAIs iGPT und Googles SimCLR menschenaehnliche Vorurteile reproduzieren. Beide assoziierten weisse Personen mit Werkzeugen und schwarze Personen mit Waffen. Bei der Bildvervollstaendigung ergaenzte iGPT zugeschnittene Fotos von Frauen ueberproportional mit Bikini- oder freizuegigen Darstellungen - mit Risiken für die Erzeugung sexualisierter Bilder. Die Arbeit erschien auf der ACM-Konferenz FAccT 2021.",
+  "description_en": "In 2021, Ryan Steed (Carnegie Mellon) and Aylin Caliskan (George Washington University) showed that the ImageNet-pretrained image models OpenAI's iGPT and Google's SimCLR reproduce human-like biases. Both associated White people with tools and Black people with weapons. In image completion, iGPT disproportionately completed cropped photos of women with bikini or revealing depictions - posing risks for generating sexualised imagery. The work was published at the ACM FAccT 2021 conference.",
+  "startDate": "2021-01",
+  "location": {
+    "@type": "Place",
+    "name": "Pittsburgh, Pennsylvania, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.4406,
+      "longitude": -79.9959
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Pittsburgh, Pennsylvania, USA",
+    "name_en": "Pittsburgh, Pennsylvania, USA"
+  },
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "iGPT"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    },
+    {
+      "name": "Google",
+      "type": "organization",
+      "asm:systems": [
+        "SimCLR"
+      ],
+      "name_de": "Google",
+      "name_en": "Google"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.technologyreview.com/2021/01/29/1017065/ai-image-generation-is-racist-sexist/",
+      "title": "An AI saw a cropped photo of AOC. It autocompleted her wearing a bikini.",
+      "publisher": "MIT Technology Review",
+      "date": "2021-01-29",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "An AI saw a cropped photo of AOC. It autocompleted her wearing a bikini.",
+      "title_en": "An AI saw a cropped photo of AOC. It autocompleted her wearing a bikini."
+    },
+    {
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3442188.3445932",
+      "title": "Image Representations Learned With Unsupervised Pre-Training Contain Human-like Biases",
+      "publisher": "ACM FAccT (Steed & Caliskan)",
+      "date": "2021-03-01",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Image Representations Learned With Unsupervised Pre-Training Contain Human-like Biases",
+      "title_en": "Image Representations Learned With Unsupervised Pre-Training Contain Human-like Biases"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-simclr-igpt-image-generation-systems-found-to-contain-2021-aiaaic0511",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

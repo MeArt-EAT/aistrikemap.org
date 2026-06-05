@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-proctorio-gesichtserkennung-erkannte-schwarze-gesichter-zu-57-prozent-nicht-2021",
+  "name": "USA: Proctorio-Gesichtserkennung erkannte Schwarze Gesichter zu 57 Prozent nicht",
+  "name_de": "USA: Proctorio-Gesichtserkennung erkannte Schwarze Gesichter zu 57 Prozent nicht",
+  "name_en": "USA: Proctorio face detection failed on 57% of Black faces",
+  "description": "Im April 2021 analysierte der Student und Software-Forscher Akash Satheesan die Gesichtserkennung der Prüfungssoftware Proctorio und stellte fest, dass sie auf denselben quelloffenen OpenCV-Modellen beruht. In Tests mit fast 11.000 Gesichtern aus dem FairFaces-Datensatz erkannte das System Schwarze Gesichter in 57 Prozent der Fälle nicht - deutlich häufiger als weiße. Ein von Vice/Motherboard hinzugezogener Sicherheitsforscher bestätigte die Ergebnisse. Studierende mit dunkler Hautfarbe wurden so eher fälschlich markiert.",
+  "description_de": "Im April 2021 analysierte der Student und Software-Forscher Akash Satheesan die Gesichtserkennung der Prüfungssoftware Proctorio und stellte fest, dass sie auf denselben quelloffenen OpenCV-Modellen beruht. In Tests mit fast 11.000 Gesichtern aus dem FairFaces-Datensatz erkannte das System Schwarze Gesichter in 57 Prozent der Fälle nicht - deutlich häufiger als weiße. Ein von Vice/Motherboard hinzugezogener Sicherheitsforscher bestätigte die Ergebnisse. Studierende mit dunkler Hautfarbe wurden so eher fälschlich markiert.",
+  "description_en": "In April 2021, student and software researcher Akash Satheesan analysed the facial detection in the Proctorio exam software and found it relied on the same open-source OpenCV models. In tests with nearly 11,000 faces from the FairFaces dataset, the system failed to detect Black faces 57% of the time - far more often than white faces. A security researcher consulted by Vice/Motherboard reproduced the findings. Darker-skinned students were thus more likely to be wrongly flagged.",
+  "startDate": "2021-04",
+  "location": {
+    "@type": "Place",
+    "name": "USA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "USA",
+    "name_en": "USA"
+  },
+  "asm:incidentType": [
+    "facial-recognition",
+    "surveillance"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Proctorio",
+      "type": "organization",
+      "asm:systems": [
+        "Proctorio facial detection (OpenCV)"
+      ],
+      "name_de": "Proctorio",
+      "name_en": "Proctorio"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.vice.com/en/article/proctorio-is-using-racist-algorithms-to-detect-faces/",
+      "title": "Proctorio Is Using Racist Algorithms to Detect Faces",
+      "publisher": "Vice (Motherboard)",
+      "date": "2021-04-08",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Proctorio Is Using Racist Algorithms to Detect Faces",
+      "title_en": "Proctorio Is Using Racist Algorithms to Detect Faces"
+    },
+    {
+      "url": "https://www.insidehighered.com/quicktakes/2021/04/06/proctoring-tool-failed-recognize-dark-skin-students-say",
+      "title": "Proctoring Tool Failed to Recognize Dark Skin, Students Say",
+      "publisher": "Inside Higher Ed",
+      "date": "2021-04-06",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Proctoring Tool Failed to Recognize Dark Skin, Students Say",
+      "title_en": "Proctoring Tool Failed to Recognize Dark Skin, Students Say"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-proctorio-uses-racist-algorithms-to-detect-students-2021-aiaaic0574",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

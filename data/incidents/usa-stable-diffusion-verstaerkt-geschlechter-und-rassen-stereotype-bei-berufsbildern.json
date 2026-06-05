@@ -1,0 +1,89 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-stable-diffusion-verstaerkt-geschlechter-und-rassen-stereotype-bei-berufsbildern",
+  "name": "USA: Stable Diffusion verstärkt Geschlechter- und Rassen-Stereotype bei Berufsbildern (Bloomberg-Analyse)",
+  "name_de": "USA: Stable Diffusion verstärkt Geschlechter- und Rassen-Stereotype bei Berufsbildern (Bloomberg-Analyse)",
+  "name_en": "USA: Stable Diffusion amplifies gender and racial stereotypes in job imagery (Bloomberg analysis)",
+  "description": "Eine Bloomberg-Analyse von 2023 erzeugte tausende Bilder mit Stable Diffusion und zeigte starke stereotype Verzerrungen: Bei hochbezahlten Berufen wie 'Politiker', 'Anwalt', 'Richter' oder 'CEO' dominierten hellhäutige Männer (über 80 Prozent), während Menschen mit dunklerer Haut in niedrig bezahlten Tätigkeiten überrepräsentiert waren (z.B. 70 Prozent bei 'Fast-Food-Worker'), stärker als reale Beschaeftigungsstatistiken. Ursache ist der ungefilterte Trainingsdatensatz LAION-5B. Die Analyse trug zum Titel 'Humans Are Biased. Generative AI Is Even Worse.' bei und befeuerte die Debatte um Bias in Bildgeneratoren.",
+  "description_de": "Eine Bloomberg-Analyse von 2023 erzeugte tausende Bilder mit Stable Diffusion und zeigte starke stereotype Verzerrungen: Bei hochbezahlten Berufen wie 'Politiker', 'Anwalt', 'Richter' oder 'CEO' dominierten hellhäutige Männer (über 80 Prozent), während Menschen mit dunklerer Haut in niedrig bezahlten Tätigkeiten überrepräsentiert waren (z.B. 70 Prozent bei 'Fast-Food-Worker'), stärker als reale Beschaeftigungsstatistiken. Ursache ist der ungefilterte Trainingsdatensatz LAION-5B. Die Analyse trug zum Titel 'Humans Are Biased. Generative AI Is Even Worse.' bei und befeuerte die Debatte um Bias in Bildgeneratoren.",
+  "description_en": "A 2023 Bloomberg analysis generated thousands of images with Stable Diffusion and found strong stereotypical bias: high-paying roles such as 'politician,' 'lawyer,' 'judge,' or 'CEO' were dominated by light-skinned men (over 80 percent), while people with darker skin were overrepresented in low-paying jobs (e.g., 70 percent for 'fast-food worker'), exceeding real employment statistics. The cause is the unfiltered LAION-5B training dataset. The analysis, titled 'Humans Are Biased. Generative AI Is Even Worse,' fueled the debate over bias in image generators.",
+  "startDate": "2023-06",
+  "location": {
+    "@type": "Place",
+    "name": "USA (global verfügbares Modell)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.0902,
+      "longitude": -95.7129
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "USA (global verfügbares Modell)",
+    "name_en": "USA (globally available model)"
+  },
+  "asm:incidentType": [
+    "discrimination",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Stability AI",
+      "type": "organization",
+      "asm:systems": [
+        "Stable Diffusion (text-to-image)"
+      ],
+      "name_de": "Stability AI",
+      "name_en": "Stability AI"
+    },
+    {
+      "name": "Bloomberg (Investigativ-Analyse)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Bloomberg (Investigativ-Analyse)",
+      "name_en": "Bloomberg (Investigativ-Analyse)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.bloomberg.com/graphics/2023-generative-ai-bias/",
+      "title": "Humans Are Biased. Generative AI Is Even Worse.",
+      "publisher": "Bloomberg",
+      "date": "2023-06",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Humans Are Biased. Generative AI Is Even Worse.",
+      "title_en": "Humans Are Biased. Generative AI Is Even Worse."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2310.19981",
+      "title": "'Person' == Light-skinned, Western Man, and Sexualization of Women of Color: Stereotypes in Stable Diffusion",
+      "publisher": "arXiv (academic preprint)",
+      "date": "2023-10",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "'Person' == Light-skinned, Western Man, and Sexualization of Women of Color: Stereotypes in Stable Diffusion",
+      "title_en": "'Person' == Light-skinned, Western Man, and Sexualization of Women of Color: Stereotypes in Stable Diffusion"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-stable-diffusion-generates-job-type-gender-racial-2023-aiaaic1053",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

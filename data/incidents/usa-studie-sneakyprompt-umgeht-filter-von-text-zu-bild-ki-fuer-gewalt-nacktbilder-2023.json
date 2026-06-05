@@ -1,0 +1,89 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-studie-sneakyprompt-umgeht-filter-von-text-zu-bild-ki-fuer-gewalt-nacktbilder-2023",
+  "name": "Global: Studie 'SneakyPrompt' umgeht Filter von Text-zu-Bild-KI für Gewalt-/Nacktbilder",
+  "name_de": "Global: Studie 'SneakyPrompt' umgeht Filter von Text-zu-Bild-KI für Gewalt-/Nacktbilder",
+  "name_en": "Global: 'SneakyPrompt' study bypasses text-to-image AI filters for violent/nude images",
+  "description": "Forschende der Johns Hopkins University und der Duke University stellten 2023 die Methode 'SneakyPrompt' vor, die mittels Reinforcement Learning für Menschen unverständliche Zeichenfolgen erzeugt, die Text-zu-Bild-Modelle dennoch als verbotene Anfragen interpretieren. Damit ließen sich die Sicherheitsfilter von DALL-E 2 und Stable Diffusion umgehen, sodass die Systeme NSFW-Inhalte wie Gewalt- und Nacktdarstellungen generierten. Die Arbeit wurde auf dem IEEE Symposium on Security and Privacy präsentiert und deckte eine systematische Schwachstelle der Schutzmechanismen auf.",
+  "description_de": "Forschende der Johns Hopkins University und der Duke University stellten 2023 die Methode 'SneakyPrompt' vor, die mittels Reinforcement Learning für Menschen unverständliche Zeichenfolgen erzeugt, die Text-zu-Bild-Modelle dennoch als verbotene Anfragen interpretieren. Damit ließen sich die Sicherheitsfilter von DALL-E 2 und Stable Diffusion umgehen, sodass die Systeme NSFW-Inhalte wie Gewalt- und Nacktdarstellungen generierten. Die Arbeit wurde auf dem IEEE Symposium on Security and Privacy präsentiert und deckte eine systematische Schwachstelle der Schutzmechanismen auf.",
+  "description_en": "In 2023, researchers from Johns Hopkins University and Duke University introduced 'SneakyPrompt', a method that uses reinforcement learning to craft character strings unintelligible to humans but interpreted by text-to-image models as banned requests. It bypassed the safety filters of DALL-E 2 and Stable Diffusion, causing the systems to generate NSFW content such as violent and nude imagery. Presented at the IEEE Symposium on Security and Privacy, the work exposed a systematic weakness in these guardrails.",
+  "startDate": "2023-11",
+  "location": {
+    "@type": "Place",
+    "name": "USA (Johns Hopkins / Duke University)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.33,
+      "longitude": -76.62
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "USA (Johns Hopkins / Duke University)",
+    "name_en": "USA (Johns Hopkins / Duke University)"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Johns Hopkins University; Duke University",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Johns Hopkins University; Duke University",
+      "name_en": "Johns Hopkins University; Duke University"
+    },
+    {
+      "name": "OpenAI; Stability AI",
+      "type": "organization",
+      "asm:systems": [
+        "DALL-E 2",
+        "Stable Diffusion"
+      ],
+      "name_de": "OpenAI; Stability AI",
+      "name_en": "OpenAI; Stability AI"
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.technologyreview.com/2023/11/17/1083593/text-to-image-ai-models-can-be-tricked-into-generating-disturbing-images/",
+      "title": "Text-to-image AI models can be tricked into generating disturbing images",
+      "publisher": "MIT Technology Review",
+      "date": "2023-11-17",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Text-to-image AI models can be tricked into generating disturbing images",
+      "title_en": "Text-to-image AI models can be tricked into generating disturbing images"
+    },
+    {
+      "url": "https://engineering.jhu.edu/news/ai-image-generators-can-be-tricked-into-making-nsfw-content/",
+      "title": "AI Image Generators Can Be Tricked Into Making NSFW Content",
+      "publisher": "Johns Hopkins Whiting School of Engineering",
+      "date": "2023-11-17",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "AI Image Generators Can Be Tricked Into Making NSFW Content",
+      "title_en": "AI Image Generators Can Be Tricked Into Making NSFW Content"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-study-text-to-image-ai-models-generate-violent-nude-2023-aiaaic1203",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

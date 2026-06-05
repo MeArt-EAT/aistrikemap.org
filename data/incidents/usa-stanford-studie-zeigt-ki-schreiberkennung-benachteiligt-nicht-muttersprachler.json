@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-stanford-studie-zeigt-ki-schreiberkennung-benachteiligt-nicht-muttersprachler",
+  "name": "USA: Stanford-Studie zeigt - KI-Schreiberkennung benachteiligt Nicht-Muttersprachler systematisch",
+  "name_de": "USA: Stanford-Studie zeigt - KI-Schreiberkennung benachteiligt Nicht-Muttersprachler systematisch",
+  "name_en": "USA: Stanford study shows AI writing detection systematically biased against non-native speakers",
+  "description": "Informatiker der Stanford University (um James Zou) wiesen in einer Studie nach, dass gängige KI-Schreiberkennungswerkzeuge Texte von Nicht-Muttersprachlern systematisch als KI-generiert fehlklassifizieren. Während die Detektoren Aufsätze von in den USA geborenen Achtklässlern nahezu fehlerfrei bewerteten, stuften sie über 61 Prozent der TOEFL-Aufsätze internationaler Studierender fälschlich als KI-Text ein; mindestens einer von sieben Detektoren markierte 97 Prozent der TOEFL-Aufsätze. Ursache ist die Bewertung anhand der 'Perplexity', die sprachlich einfachere Texte benachteiligt. Die Autoren warnten ausdrücklich vor dem Einsatz solcher Tools im Bildungsbereich.",
+  "description_de": "Informatiker der Stanford University (um James Zou) wiesen in einer Studie nach, dass gängige KI-Schreiberkennungswerkzeuge Texte von Nicht-Muttersprachlern systematisch als KI-generiert fehlklassifizieren. Während die Detektoren Aufsätze von in den USA geborenen Achtklässlern nahezu fehlerfrei bewerteten, stuften sie über 61 Prozent der TOEFL-Aufsätze internationaler Studierender fälschlich als KI-Text ein; mindestens einer von sieben Detektoren markierte 97 Prozent der TOEFL-Aufsätze. Ursache ist die Bewertung anhand der 'Perplexity', die sprachlich einfachere Texte benachteiligt. Die Autoren warnten ausdrücklich vor dem Einsatz solcher Tools im Bildungsbereich.",
+  "description_en": "Computer scientists at Stanford University (led by James Zou) demonstrated in a study that common AI writing detectors systematically misclassify text by non-native speakers as AI-generated. While the detectors rated essays by US-born eighth-graders near-perfectly, they wrongly flagged over 61 percent of TOEFL essays by international students as AI text; at least one of seven detectors flagged 97 percent of TOEFL essays. The cause is scoring based on 'perplexity', which penalises linguistically simpler writing. The authors explicitly warned against using such tools in education.",
+  "startDate": "2023-07",
+  "location": {
+    "@type": "Place",
+    "name": "Stanford, Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.428,
+      "longitude": -122.169
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Stanford, Kalifornien, USA",
+    "name_en": "Stanford, California, USA"
+  },
+  "asm:incidentType": [
+    "discrimination"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Stanford University researchers (James Zou et al.)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Stanford University researchers (James Zou et al.)",
+      "name_en": "Stanford University researchers (James Zou et al.)"
+    },
+    {
+      "name": "GPT detector vendors (incl. Turnitin, GPTZero)",
+      "type": "organization",
+      "asm:systems": [
+        "GPT/AI text detectors"
+      ],
+      "name_de": "GPT detector vendors (incl. Turnitin, GPTZero)",
+      "name_en": "GPT detector vendors (incl. Turnitin, GPTZero)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://arxiv.org/pdf/2304.02819",
+      "title": "GPT detectors are biased against non-native English writers",
+      "publisher": "arXiv / Patterns (Liang, Yuksekgonul, Mao, Wu, Zou)",
+      "date": "2023-07-10",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "GPT detectors are biased against non-native English writers",
+      "title_en": "GPT detectors are biased against non-native English writers"
+    },
+    {
+      "url": "https://themarkup.org/machine-learning/2023/08/14/ai-detection-tools-falsely-accuse-international-students-of-cheating",
+      "title": "AI Detection Tools Falsely Accuse International Students of Cheating",
+      "publisher": "The Markup",
+      "date": "2023-08-14",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "AI Detection Tools Falsely Accuse International Students of Cheating",
+      "title_en": "AI Detection Tools Falsely Accuse International Students of Cheating"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-researchers-ai-writing-detection-tools-dont-2023-aiaaic1715",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

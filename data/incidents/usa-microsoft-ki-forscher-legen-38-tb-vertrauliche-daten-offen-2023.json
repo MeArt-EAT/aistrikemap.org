@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-microsoft-ki-forscher-legen-38-tb-vertrauliche-daten-offen-2023",
+  "name": "USA: Microsoft-KI-Forscher legen 38 TB vertrauliche Daten offen",
+  "name_de": "USA: Microsoft-KI-Forscher legen 38 TB vertrauliche Daten offen",
+  "name_en": "USA: Microsoft AI researchers expose 38TB of confidential data",
+  "description": "Sicherheitsforscher von Wiz deckten 2023 auf, dass das KI-Forschungsteam von Microsoft ueber ein falsch konfiguriertes Azure-SAS-Token versehentlich 38 Terabyte interne Daten öffentlich zugaenglich gemacht hatte. Darunter befanden sich Festplatten-Backups zweier Mitarbeitender mit Passwoertern, privaten Schluesseln und ueber 30.000 internen Teams-Nachrichten. Das Token gewaehrte fast drei Jahre lang vollen Schreibzugriff; Microsoft widerrief es nach Meldung binnen zwei Tagen.",
+  "description_de": "Sicherheitsforscher von Wiz deckten 2023 auf, dass das KI-Forschungsteam von Microsoft ueber ein falsch konfiguriertes Azure-SAS-Token versehentlich 38 Terabyte interne Daten öffentlich zugaenglich gemacht hatte. Darunter befanden sich Festplatten-Backups zweier Mitarbeitender mit Passwoertern, privaten Schluesseln und ueber 30.000 internen Teams-Nachrichten. Das Token gewaehrte fast drei Jahre lang vollen Schreibzugriff; Microsoft widerrief es nach Meldung binnen zwei Tagen.",
+  "description_en": "In 2023, Wiz security researchers found that Microsoft's AI research team had accidentally exposed 38 terabytes of internal data via a misconfigured Azure SAS token. The trove included disk backups of two employees' workstations with passwords, private keys, and over 30,000 internal Teams messages. The token granted full write access for nearly three years; Microsoft revoked it within two days of disclosure.",
+  "startDate": "2023-09",
+  "location": {
+    "@type": "Place",
+    "name": "Redmond, Washington, USA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Redmond, Washington, USA",
+    "name_en": "Redmond, Washington, USA"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Microsoft",
+      "type": "organization",
+      "asm:systems": [
+        "Azure Storage",
+        "GitHub AI research repo"
+      ],
+      "name_de": "Microsoft",
+      "name_en": "Microsoft"
+    }
+  ],
+  "asm:severity": 4,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://techcrunch.com/2023/09/18/microsoft-ai-researchers-accidentally-exposed-terabytes-of-internal-sensitive-data/",
+      "title": "Microsoft AI researchers accidentally exposed terabytes of internal sensitive data",
+      "publisher": "TechCrunch",
+      "date": "2023-09-18",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Microsoft AI researchers accidentally exposed terabytes of internal sensitive data",
+      "title_en": "Microsoft AI researchers accidentally exposed terabytes of internal sensitive data"
+    },
+    {
+      "url": "https://www.wiz.io/blog/38-terabytes-of-private-data-accidentally-exposed-by-microsoft-ai-researchers",
+      "title": "38TB of data accidentally exposed by Microsoft AI researchers",
+      "publisher": "Wiz Research",
+      "date": "2023-09-18",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "38TB of data accidentally exposed by Microsoft AI researchers",
+      "title_en": "38TB of data accidentally exposed by Microsoft AI researchers"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-microsoft-ai-researchers-expose-38tb-confidential-2023-aiaaic1157",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

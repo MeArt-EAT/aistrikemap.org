@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-c4-datensatz-enthaelt-unsichere-urheberrechtlich-geschuetzte-web-inhalte-2023",
+  "name": "USA: C4-Datensatz enthält unsichere, urheberrechtlich geschützte Web-Inhalte",
+  "name_de": "USA: C4-Datensatz enthält unsichere, urheberrechtlich geschützte Web-Inhalte",
+  "name_en": "C4 dataset is trained on unsafe, copyright-protected web content",
+  "description": "Eine gemeinsame Untersuchung der Washington Post und des Allen Institute for AI analysierte 2023 Googles öffentlichen Trainingsdatensatz C4 - einen Schnappschuss von rund 15 Millionen Websites, der unter anderem Googles T5 und Metas LLaMA speist. Die Recherche zeigte, dass urheberrechtlich geschütztes Material massenhaft enthalten ist (das Copyright-Symbol erschien über 200 Millionen Mal) und dass Texte von Hass- und Doxing-Seiten wie Stormfront, Kiwi Farms und 4chan eingeflossen sind. Der Fall verdeutlichte, wie wenig Kontrolle über Herkunft und Qualität großer KI-Trainingskorpora besteht.",
+  "description_de": "Eine gemeinsame Untersuchung der Washington Post und des Allen Institute for AI analysierte 2023 Googles öffentlichen Trainingsdatensatz C4 - einen Schnappschuss von rund 15 Millionen Websites, der unter anderem Googles T5 und Metas LLaMA speist. Die Recherche zeigte, dass urheberrechtlich geschütztes Material massenhaft enthalten ist (das Copyright-Symbol erschien über 200 Millionen Mal) und dass Texte von Hass- und Doxing-Seiten wie Stormfront, Kiwi Farms und 4chan eingeflossen sind. Der Fall verdeutlichte, wie wenig Kontrolle über Herkunft und Qualität großer KI-Trainingskorpora besteht.",
+  "description_en": "A joint investigation by The Washington Post and the Allen Institute for AI analysed Google's public C4 training dataset in 2023, a snapshot of around 15 million websites that feeds models including Google's T5 and Meta's LLaMA. The reporting showed that copyrighted material is included en masse (the copyright symbol appeared over 200 million times) and that text from hate and doxing sites such as Stormfront, Kiwi Farms and 4chan had been swept in. The case highlighted how little control exists over the provenance and quality of large AI training corpora.",
+  "startDate": "2023-04",
+  "location": {
+    "@type": "Place",
+    "name": "USA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "USA",
+    "name_en": "USA"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Google",
+      "type": "organization",
+      "asm:systems": [
+        "C4 (Colossal Clean Crawled Corpus)"
+      ],
+      "name_de": "Google",
+      "name_en": "Google"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/",
+      "title": "Inside the secret list of websites that make AI like ChatGPT sound smart",
+      "publisher": "The Washington Post",
+      "date": "2023-04-19",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Inside the secret list of websites that make AI like ChatGPT sound smart",
+      "title_en": "Inside the secret list of websites that make AI like ChatGPT sound smart"
+    },
+    {
+      "url": "https://www.theregister.com/2023/04/20/google_c4_data_nasty_sources/",
+      "title": "Google's C4 ML training data drew from 4chan, racist sources",
+      "publisher": "The Register",
+      "date": "2023-04-20",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Google's C4 ML training data drew from 4chan, racist sources",
+      "title_en": "Google's C4 ML training data drew from 4chan, racist sources"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-c4-dataset-is-trained-on-unsafe-copyright-protected-web-2023-aiaaic1519",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

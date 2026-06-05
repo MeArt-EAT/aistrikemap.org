@@ -1,0 +1,101 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-chatgpt-bug-legt-chat-titel-und-zahlungsdaten-anderer-nutzer-offen-maerz-2023",
+  "name": "USA: ChatGPT-Bug legt Chat-Titel und Zahlungsdaten anderer Nutzer offen (März 2023)",
+  "name_de": "USA: ChatGPT-Bug legt Chat-Titel und Zahlungsdaten anderer Nutzer offen (März 2023)",
+  "name_en": "USA: ChatGPT bug exposes other users' chat titles and payment data (March 2023)",
+  "description": "Am 20. März 2023 nahm OpenAI ChatGPT vorübergehend offline, nachdem ein Fehler in der Open-Source-Bibliothek redis-py es einigen Nutzern ermöglicht hatte, Chat-Verlaufs-Titel anderer aktiver Nutzer zu sehen. Derselbe Bug machte in einem rund neunstündigen Fenster bei etwa 1,2 Prozent der aktiven ChatGPT-Plus-Abonnenten zahlungsbezogene Daten sichtbar (Name, E-Mail, Rechnungsadresse, Kreditkartentyp und letzte vier Ziffern). Vollständige Kreditkartennummern waren nicht betroffen. OpenAI behob den Fehler und bestätigte den Vorfall öffentlich.",
+  "description_de": "Am 20. März 2023 nahm OpenAI ChatGPT vorübergehend offline, nachdem ein Fehler in der Open-Source-Bibliothek redis-py es einigen Nutzern ermöglicht hatte, Chat-Verlaufs-Titel anderer aktiver Nutzer zu sehen. Derselbe Bug machte in einem rund neunstündigen Fenster bei etwa 1,2 Prozent der aktiven ChatGPT-Plus-Abonnenten zahlungsbezogene Daten sichtbar (Name, E-Mail, Rechnungsadresse, Kreditkartentyp und letzte vier Ziffern). Vollständige Kreditkartennummern waren nicht betroffen. OpenAI behob den Fehler und bestätigte den Vorfall öffentlich.",
+  "description_en": "On 20 March 2023, OpenAI temporarily took ChatGPT offline after a bug in the open-source library redis-py allowed some users to see chat history titles of other active users. The same bug exposed payment-related data for about 1.2 percent of active ChatGPT Plus subscribers during a roughly nine-hour window (name, email, billing address, credit-card type and last four digits). Full credit-card numbers were not affected. OpenAI fixed the bug and publicly confirmed the incident.",
+  "startDate": "2023-03-20",
+  "location": {
+    "@type": "Place",
+    "name": "San Francisco, Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "San Francisco, Kalifornien, USA",
+    "name_en": "San Francisco, California, USA"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "ChatGPT"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://openai.com/index/march-20-chatgpt-outage/",
+      "title": "March 20 ChatGPT outage: Here's what happened",
+      "publisher": "OpenAI",
+      "date": "2023-03-24",
+      "type": "government-document",
+      "asm:linkHealth": "unverified",
+      "title_de": "March 20 ChatGPT outage: Here's what happened",
+      "title_en": "March 20 ChatGPT outage: Here's what happened"
+    },
+    {
+      "url": "https://www.cnbc.com/2023/03/23/openai-ceo-says-a-bug-allowed-some-chatgpt-to-see-others-chat-titles.html",
+      "title": "OpenAI CEO admits a bug allowed some ChatGPT users to see others' conversation titles",
+      "publisher": "CNBC",
+      "date": "2023-03-23",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "OpenAI CEO admits a bug allowed some ChatGPT users to see others' conversation titles",
+      "title_en": "OpenAI CEO admits a bug allowed some ChatGPT users to see others' conversation titles"
+    },
+    {
+      "url": "https://thehackernews.com/2023/03/openai-reveals-redis-bug-behind-chatgpt.html",
+      "title": "OpenAI Reveals Redis Bug Behind ChatGPT User Data Exposure Incident",
+      "publisher": "The Hacker News",
+      "date": "2023-03-25",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "OpenAI Reveals Redis Bug Behind ChatGPT User Data Exposure Incident",
+      "title_en": "OpenAI Reveals Redis Bug Behind ChatGPT User Data Exposure Incident"
+    },
+    {
+      "url": "https://www.helpnetsecurity.com/2023/03/27/chatgpt-data-leak/",
+      "title": "A bug revealed ChatGPT users' chat history, personal and billing data",
+      "publisher": "Help Net Security",
+      "date": "2023-03-27",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "A bug revealed ChatGPT users' chat history, personal and billing data",
+      "title_en": "A bug revealed ChatGPT users' chat history, personal and billing data"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-chatgpt-leaks-user-conversations-personal-2023-aiaaic1120",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}
