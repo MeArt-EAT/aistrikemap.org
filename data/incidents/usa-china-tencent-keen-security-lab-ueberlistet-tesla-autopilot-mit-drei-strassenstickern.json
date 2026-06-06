@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-china-tencent-keen-security-lab-ueberlistet-tesla-autopilot-mit-drei-strassenstickern",
+  "name": "USA/China: Tencent Keen Security Lab überlistet Tesla-Autopilot mit drei Strassenstickern",
+  "name_de": "USA/China: Tencent Keen Security Lab überlistet Tesla-Autopilot mit drei Strassenstickern",
+  "name_en": "USA/China: Tencent Keen Security Lab tricks Tesla Autopilot with three road stickers",
+  "description": "Am 29. März 2019 veröffentlichte Tencents Keen Security Lab ein Papier, in dem es zeigte, wie drei kleine Sticker auf der Fahrbahn das Spurhalte-System eines Tesla Model S dazu bringen können, in die Gegenfahrbahn zu schwenken — auch in einer mit roten, kaum sichtbaren Markern arbeitenden Variante. Die gleiche Studie demonstrierte auch eine Manipulation des Regen-Erkennungssystems. Tesla räumte ein, dass die Forschenden die physische Umgebung des Fahrzeugs verändert hätten, und arbeitete im Bug-Bounty-Programm mit Keen Lab zusammen.",
+  "description_de": "Am 29. März 2019 veröffentlichte Tencents Keen Security Lab ein Papier, in dem es zeigte, wie drei kleine Sticker auf der Fahrbahn das Spurhalte-System eines Tesla Model S dazu bringen können, in die Gegenfahrbahn zu schwenken — auch in einer mit roten, kaum sichtbaren Markern arbeitenden Variante. Die gleiche Studie demonstrierte auch eine Manipulation des Regen-Erkennungssystems. Tesla räumte ein, dass die Forschenden die physische Umgebung des Fahrzeugs verändert hätten, und arbeitete im Bug-Bounty-Programm mit Keen Lab zusammen.",
+  "description_en": "On 29 March 2019, Tencent's Keen Security Lab published a paper showing how three small stickers on the road could push the lane-keeping system of a Tesla Model S into oncoming traffic — including a variant using barely-visible red markers. The same study also demonstrated manipulation of the wiper-activation rain-detection model. Tesla acknowledged that the researchers had altered the vehicle's physical environment and engaged with Keen Lab through its bug-bounty programme.",
+  "startDate": "2019-03-29",
+  "location": {
+    "@type": "Place",
+    "name": "Palo Alto, Kalifornien, USA / Shenzhen, China (Forschung von Tencent)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.4419,
+      "longitude": -122.143
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Palo Alto, Kalifornien, USA / Shenzhen, China (Forschung von Tencent)",
+    "name_en": "Palo Alto, California, USA / Shenzhen, China (Tencent research)"
+  },
+  "asm:incidentType": [
+    "autonomous-vehicle"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Tencent Keen Security Lab",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Tencent Keen Security Lab",
+      "name_en": "Tencent Keen Security Lab"
+    },
+    {
+      "name": "Tesla, Inc.",
+      "type": "organization",
+      "asm:systems": [
+        "Autopilot lane-keeping (HW2.5)"
+      ],
+      "name_de": "Tesla, Inc.",
+      "name_en": "Tesla, Inc."
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://keenlab.tencent.com/en/2019/03/29/Tencent-Keen-Security-Lab-Experimental-Security-Research-of-Tesla-Autopilot/",
+      "title": "Experimental Security Research of Tesla Autopilot",
+      "publisher": "Tencent Keen Security Lab",
+      "date": "2019-03-29",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Experimental Security Research of Tesla Autopilot",
+      "title_en": "Experimental Security Research of Tesla Autopilot"
+    },
+    {
+      "url": "https://spectrum.ieee.org/three-small-stickers-on-road-can-steer-tesla-autopilot-into-oncoming-lane",
+      "title": "Three Small Stickers in Intersection Can Cause Tesla Autopilot to Swerve Into Wrong Lane",
+      "publisher": "IEEE Spectrum",
+      "date": "2019-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Three Small Stickers in Intersection Can Cause Tesla Autopilot to Swerve Into Wrong Lane",
+      "title_en": "Three Small Stickers in Intersection Can Cause Tesla Autopilot to Swerve Into Wrong Lane"
+    },
+    {
+      "url": "https://www.cnbc.com/2019/04/03/chinese-hackers-tricked-teslas-autopilot-into-switching-lanes.html",
+      "title": "These Chinese hackers tricked Tesla's Autopilot into suddenly switching lanes",
+      "publisher": "CNBC",
+      "date": "2019-04-03",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "These Chinese hackers tricked Tesla's Autopilot into suddenly switching lanes",
+      "title_en": "These Chinese hackers tricked Tesla's Autopilot into suddenly switching lanes"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-tesla-model-s-tricked-into-veering-into-wrong-2019-aiaaic0294",
+    "promotedFromRound": "round-6-aiaaic-batch-c-2026-06-05"
+  }
+}

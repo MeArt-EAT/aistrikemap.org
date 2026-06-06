@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-bdd100k-datensatz-erkennt-dunkelhaeutige-fussgaenger-schlechter-2019",
+  "name": "USA: BDD100K-Datensatz erkennt dunkelhäutige Fußgänger schlechter",
+  "name_de": "USA: BDD100K-Datensatz erkennt dunkelhäutige Fußgänger schlechter",
+  "name_en": "USA: BDD100K dataset detects darker-skinned pedestrians worse",
+  "description": "Eine Studie des Georgia Institute of Technology zeigte, dass gängige Objekterkennungssysteme, trainiert auf dem BDD100K-Datensatz der UC Berkeley, hellhäutige Fußgänger im Schnitt 4,8 Prozent treffsicherer und dunkelhäutige Personen bis zu 12 Prozent schlechter detektierten. Die Autorinnen und Autoren werteten Hauttöne nach Fitzpatrick-Skala aus und schlossen Tageszeit oder Verdeckung als Erklärung aus. Für autonome Fahrzeuge bedeutet das systematisch höheres Risiko für Schwarze Verkehrsteilnehmende.",
+  "description_de": "Eine Studie des Georgia Institute of Technology zeigte, dass gängige Objekterkennungssysteme, trainiert auf dem BDD100K-Datensatz der UC Berkeley, hellhäutige Fußgänger im Schnitt 4,8 Prozent treffsicherer und dunkelhäutige Personen bis zu 12 Prozent schlechter detektierten. Die Autorinnen und Autoren werteten Hauttöne nach Fitzpatrick-Skala aus und schlossen Tageszeit oder Verdeckung als Erklärung aus. Für autonome Fahrzeuge bedeutet das systematisch höheres Risiko für Schwarze Verkehrsteilnehmende.",
+  "description_en": "A Georgia Institute of Technology study showed that common object detection systems trained on UC Berkeley's BDD100K dataset detected light-skinned pedestrians about 4.8 percent more reliably and dark-skinned pedestrians up to 12 percent less accurately. The authors annotated faces using the Fitzpatrick skin tone scale and ruled out time of day or occlusion as explanations. For self-driving cars this implies systematically higher risk for Black road users.",
+  "startDate": "2019-02-28",
+  "location": {
+    "@type": "Place",
+    "name": "Atlanta, Georgia, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.749,
+      "longitude": -84.388
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Atlanta, Georgia, USA",
+    "name_en": "Atlanta, Georgia, USA"
+  },
+  "asm:incidentType": [
+    "discrimination",
+    "autonomous-vehicle"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "UC Berkeley (BDD100K)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "UC Berkeley (BDD100K)",
+      "name_en": "UC Berkeley (BDD100K)"
+    },
+    {
+      "name": "Georgia Institute of Technology",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Georgia Institute of Technology",
+      "name_en": "Georgia Institute of Technology"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://ar5iv.labs.arxiv.org/html/1902.11097",
+      "title": "Predictive Inequity in Object Detection",
+      "publisher": "arXiv (Georgia Tech)",
+      "date": "2019-02-28",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Predictive Inequity in Object Detection",
+      "title_en": "Predictive Inequity in Object Detection"
+    },
+    {
+      "url": "https://www.vox.com/future-perfect/2019/3/5/18251924/self-driving-car-racial-bias-study-autonomous-vehicle-dark-skin",
+      "title": "Self-driving cars may be more likely to drive into Black people",
+      "publisher": "Vox",
+      "date": "2019-03-06",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Self-driving cars may be more likely to drive into Black people",
+      "title_en": "Self-driving cars may be more likely to drive into Black people"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-bdd100k-dataset-is-worse-at-spotting-people-with-darker-2019-aiaaic1529",
+    "promotedFromRound": "round-6-aiaaic-batch-c-2026-06-05"
+  }
+}

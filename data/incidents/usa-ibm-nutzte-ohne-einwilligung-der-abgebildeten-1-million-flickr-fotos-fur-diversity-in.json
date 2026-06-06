@@ -1,0 +1,112 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-ibm-nutzte-ohne-einwilligung-der-abgebildeten-1-million-flickr-fotos-fur-diversity-in",
+  "name": "USA: IBM nutzte ohne Einwilligung der Abgebildeten 1 Million Flickr-Fotos für 'Diversity in Faces'-Trainingsdatensatz",
+  "name_de": "USA: IBM nutzte ohne Einwilligung der Abgebildeten 1 Million Flickr-Fotos für 'Diversity in Faces'-Trainingsdatensatz",
+  "name_en": "USA: IBM used 1 million Flickr photos without subjects' consent for 'Diversity in Faces' training dataset",
+  "description": "IBM Research veroffentlichte im Januar 2019 den 'Diversity in Faces'-Datensatz mit etwa einer Million annotierten Gesichtsbildern, die aus einer Creative-Commons-Sammlung auf Flickr gezogen wurden — ohne Einwilligung der abgebildeten Personen und ohne praktikable Opt-out-Möglichkeit. NBC News deckte am 12. Marz 2019 auf, dass Fotograf:innen und Fotografierte ihre Bilder kaum aus dem Datensatz entfernen lassen konnten. IBM argumentierte mit der CC-Lizenz; Kritiker:innen wiesen darauf hin, dass diese die biometrische Verwertung nicht abdeckt.",
+  "description_de": "IBM Research veroffentlichte im Januar 2019 den 'Diversity in Faces'-Datensatz mit etwa einer Million annotierten Gesichtsbildern, die aus einer Creative-Commons-Sammlung auf Flickr gezogen wurden — ohne Einwilligung der abgebildeten Personen und ohne praktikable Opt-out-Möglichkeit. NBC News deckte am 12. Marz 2019 auf, dass Fotograf:innen und Fotografierte ihre Bilder kaum aus dem Datensatz entfernen lassen konnten. IBM argumentierte mit der CC-Lizenz; Kritiker:innen wiesen darauf hin, dass diese die biometrische Verwertung nicht abdeckt.",
+  "description_en": "IBM Research published the 'Diversity in Faces' dataset in January 2019 with about one million annotated face images pulled from a Creative Commons-licensed Flickr collection — without consent from the people depicted and without a workable opt-out path. NBC News revealed on March 12, 2019 that photographers and subjects struggled to have their images removed. IBM cited the CC licence; critics noted that this licence does not cover biometric processing.",
+  "startDate": "2019-03-12",
+  "location": {
+    "@type": "Place",
+    "name": "USA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "USA",
+    "name_en": "USA"
+  },
+  "asm:incidentType": [
+    "facial-recognition",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "IBM Research",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "IBM Research",
+      "name_en": "IBM Research"
+    },
+    {
+      "name": "Yahoo / Flickr (YFCC100M dataset)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Yahoo / Flickr (YFCC100M dataset)",
+      "name_en": "Yahoo / Flickr (YFCC100M dataset)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.nbcnews.com/tech/internet/facial-recognition-s-dirty-little-secret-millions-online-photos-scraped-n981921",
+      "title": "Facial recognition's 'dirty little secret': Millions of online photos scraped without consent",
+      "publisher": "NBC News",
+      "date": "2019-03-12",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Facial recognition's 'dirty little secret': Millions of online photos scraped without consent",
+      "title_en": "Facial recognition's 'dirty little secret': Millions of online photos scraped without consent"
+    },
+    {
+      "url": "https://exposing.ai/ibm_dif/",
+      "title": "IBM Diversity in Faces (DiF)",
+      "publisher": "Exposing.ai",
+      "date": "2021",
+      "type": "ngo-report",
+      "asm:linkHealth": "unverified",
+      "title_de": "IBM Diversity in Faces (DiF)",
+      "title_en": "IBM Diversity in Faces (DiF)"
+    },
+    {
+      "url": "https://research.ibm.com/blog/diversity-in-faces",
+      "title": "IBM Research releases 'Diversity in Faces' dataset",
+      "publisher": "IBM Research",
+      "date": "2019-01-29",
+      "type": "government-document",
+      "asm:linkHealth": "unverified",
+      "title_de": "IBM Research releases 'Diversity in Faces' dataset",
+      "title_en": "IBM Research releases 'Diversity in Faces' dataset"
+    },
+    {
+      "url": "https://www.axios.com/2019/03/13/ibm-facial-recognition-flickr-images",
+      "title": "IBM trained facial recognition using 1 million Flickr images",
+      "publisher": "Axios",
+      "date": "2019-03-13",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "IBM trained facial recognition using 1 million Flickr images",
+      "title_en": "IBM trained facial recognition using 1 million Flickr images"
+    },
+    {
+      "url": "https://www.theregister.com/2019/03/18/ai_roundup_150319/",
+      "title": "Brouhaha over IBM using Flickr faces for AI training",
+      "publisher": "The Register",
+      "date": "2019-03-18",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Brouhaha over IBM using Flickr faces for AI training",
+      "title_en": "Brouhaha over IBM using Flickr faces for AI training"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-ibm-accused-of-secretly-using-nypd-images-to-train-object-2018-aiaaic0124",
+    "promotedFromRound": "round-6-aiaaic-batch-c-2026-06-05"
+  }
+}

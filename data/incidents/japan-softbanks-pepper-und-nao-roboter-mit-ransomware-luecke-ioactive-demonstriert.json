@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/japan-softbanks-pepper-und-nao-roboter-mit-ransomware-luecke-ioactive-demonstriert",
+  "name": "Japan: SoftBanks Pepper- und NAO-Roboter mit Ransomware-Lücke – IOActive demonstriert Angriff",
+  "name_de": "Japan: SoftBanks Pepper- und NAO-Roboter mit Ransomware-Lücke – IOActive demonstriert Angriff",
+  "name_en": "Japan: SoftBank Pepper and NAO robots carry ransomware vulnerability – IOActive demonstrates attack",
+  "description": "IOActive-Sicherheitsforscher Lucas Apa zeigte am 8. März 2018 auf dem Kaspersky Security Analyst Summit in Cancún, dass SoftBank Robotics' Pepper- und NAO-Roboter (über 30.000 verkaufte Einheiten) eine undokumentierte Funktion für Remote-Code-Execution besitzen. Apa demonstrierte, wie sich Ransomware aufspielen lässt, mit der Roboter in Geschäften und Banken Kund:innen beschimpfen, Pornografie zeigen oder Bitcoin-Lösegeld fordern. Die Sicherheitslücke war SoftBank bereits Januar 2017 gemeldet worden, blieb aber ungepatcht. Auch der Werks-Reset arbeitete nicht zuverlässig.",
+  "description_de": "IOActive-Sicherheitsforscher Lucas Apa zeigte am 8. März 2018 auf dem Kaspersky Security Analyst Summit in Cancún, dass SoftBank Robotics' Pepper- und NAO-Roboter (über 30.000 verkaufte Einheiten) eine undokumentierte Funktion für Remote-Code-Execution besitzen. Apa demonstrierte, wie sich Ransomware aufspielen lässt, mit der Roboter in Geschäften und Banken Kund:innen beschimpfen, Pornografie zeigen oder Bitcoin-Lösegeld fordern. Die Sicherheitslücke war SoftBank bereits Januar 2017 gemeldet worden, blieb aber ungepatcht. Auch der Werks-Reset arbeitete nicht zuverlässig.",
+  "description_en": "On 8 March 2018 IOActive security researcher Lucas Apa demonstrated at the Kaspersky Security Analyst Summit in Cancún that SoftBank Robotics' Pepper and NAO robots (over 30,000 units sold) contain an undocumented remote-code-execution feature. Apa showed that ransomware could be installed to make robots in shops and banks curse at customers, display pornography or demand bitcoin. The flaw had been disclosed to SoftBank in January 2017 but remained unpatched, and the factory reset did not work reliably.",
+  "startDate": "2018-03-08",
+  "location": {
+    "@type": "Place",
+    "name": "Tokio, Japan (SoftBank Robotics)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.6762,
+      "longitude": 139.6503
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "JP"
+    },
+    "name_de": "Tokio, Japan (SoftBank Robotics)",
+    "name_en": "Tokyo, Japan (SoftBank Robotics)"
+  },
+  "asm:incidentType": [
+    "surveillance",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "SoftBank Robotics",
+      "type": "organization",
+      "asm:systems": [
+        "Pepper robot",
+        "NAO robot"
+      ],
+      "name_de": "SoftBank Robotics",
+      "name_en": "SoftBank Robotics"
+    },
+    {
+      "name": "IOActive (Lucas Apa)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "IOActive (Lucas Apa)",
+      "name_en": "IOActive (Lucas Apa)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.ioactive.com/article/ioactive-conducts-first-ever-ransomware-attack-on-robots-at-kaspersky-security-analyst-summit-2018/",
+      "title": "IOActive Conducts First-Ever Ransomware Attack on Robots",
+      "publisher": "IOActive",
+      "date": "2018-03-08",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "IOActive Conducts First-Ever Ransomware Attack on Robots",
+      "title_en": "IOActive Conducts First-Ever Ransomware Attack on Robots"
+    },
+    {
+      "url": "https://threatpost.com/vulnerability-in-robots-can-lead-to-costly-ransomware-attacks/130245/",
+      "title": "Vulnerability in Robots Can Lead To Costly Ransomware Attacks",
+      "publisher": "Threatpost",
+      "date": "2018-03-09",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Vulnerability in Robots Can Lead To Costly Ransomware Attacks",
+      "title_en": "Vulnerability in Robots Can Lead To Costly Ransomware Attacks"
+    },
+    {
+      "url": "https://money.cnn.com/2018/03/09/technology/robots-ransomware/index.html",
+      "title": "Ransomware experiment shows the dangers of hacking robots",
+      "publisher": "CNN Money",
+      "date": "2018-03-09",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Ransomware experiment shows the dangers of hacking robots",
+      "title_en": "Ransomware experiment shows the dangers of hacking robots"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "jp-pepper-robot-discovered-to-have-security-2018-aiaaic0680",
+    "promotedFromRound": "round-6-aiaaic-batch-c-2026-06-05"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/china-usa-china-tencent-keen-security-lab-demonstriert-fernsteuerung-eines-tesla-model-s",
+  "name": "USA/China: Tencent Keen Security Lab demonstriert Fernsteuerung eines Tesla Model S",
+  "name_de": "USA/China: Tencent Keen Security Lab demonstriert Fernsteuerung eines Tesla Model S",
+  "name_en": "USA/China: Tencent Keen Security Lab demonstrates remote control of Tesla Model S",
+  "description": "Am 19. September 2016 veröffentlichte Tencents Keen Security Lab ein Whitepaper plus Demo-Video, in dem das Team ein Tesla Model S aus rund 19 km Entfernung fernsteuerte: über einen präparierten WLAN-Hotspot griff es auf den CAN-Bus zu und konnte Bremsen, Kofferraum, Spiegel und Instrumenten-Display kontrollieren. Tesla bestätigte die Schwachstellen und veröffentlichte binnen 10 Tagen einen Over-the-Air-Patch. Es war der erste publik gewordene CAN-Bus-Remote-Angriff auf einen Tesla.",
+  "description_de": "Am 19. September 2016 veröffentlichte Tencents Keen Security Lab ein Whitepaper plus Demo-Video, in dem das Team ein Tesla Model S aus rund 19 km Entfernung fernsteuerte: über einen präparierten WLAN-Hotspot griff es auf den CAN-Bus zu und konnte Bremsen, Kofferraum, Spiegel und Instrumenten-Display kontrollieren. Tesla bestätigte die Schwachstellen und veröffentlichte binnen 10 Tagen einen Over-the-Air-Patch. Es war der erste publik gewordene CAN-Bus-Remote-Angriff auf einen Tesla.",
+  "description_en": "On 19 September 2016 Tencent's Keen Security Lab published a whitepaper and demo video showing the team remotely controlling a Tesla Model S from about 19 km away: via a malicious Wi-Fi hotspot they accessed the CAN bus and could manipulate brakes, trunk, mirrors and instrument display. Tesla confirmed the vulnerabilities and pushed an over-the-air patch within 10 days. It was the first publicly disclosed CAN-bus remote attack on a Tesla.",
+  "startDate": "2016-09-19",
+  "location": {
+    "@type": "Place",
+    "name": "Shanghai, China (Forschung); Tesla-Fahrzeuge weltweit betroffen",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.2304,
+      "longitude": 121.4737
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CN"
+    },
+    "name_de": "Shanghai, China (Forschung); Tesla-Fahrzeuge weltweit betroffen",
+    "name_en": "Shanghai, China (research); Tesla vehicles globally affected"
+  },
+  "asm:incidentType": [
+    "autonomous-vehicle",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Tencent Keen Security Lab",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Tencent Keen Security Lab",
+      "name_en": "Tencent Keen Security Lab"
+    },
+    {
+      "name": "Tesla",
+      "type": "organization",
+      "asm:systems": [
+        "Model S CAN bus, infotainment, OTA update"
+      ],
+      "name_de": "Tesla",
+      "name_en": "Tesla"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://keenlab.tencent.com/en/2016/09/19/Keen-Security-Lab-of-Tencent-Car-Hacking-Research-Remote-Attack-to-Tesla-Cars/",
+      "title": "Car Hacking Research: Remote Attack to Tesla Cars",
+      "publisher": "Keen Security Lab (Tencent)",
+      "date": "2016-09-19",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Car Hacking Research: Remote Attack to Tesla Cars",
+      "title_en": "Car Hacking Research: Remote Attack to Tesla Cars"
+    },
+    {
+      "url": "https://www.engadget.com/2016-09-20-tesla-model-s-remote-hack-keen-security.html",
+      "title": "Hackers were able to remotely control a moving Tesla Model S",
+      "publisher": "Engadget",
+      "date": "2016-09-20",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Hackers were able to remotely control a moving Tesla Model S",
+      "title_en": "Hackers were able to remotely control a moving Tesla Model S"
+    },
+    {
+      "url": "https://electrek.co/2016/09/20/first-tesla-model-s-remotely-controlled-hackers-tesla-pushed-a-fix/",
+      "title": "First Tesla Model S remotely controlled by hackers, Tesla already pushed a fix",
+      "publisher": "Electrek",
+      "date": "2016-09-20",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "First Tesla Model S remotely controlled by hackers, Tesla already pushed a fix",
+      "title_en": "First Tesla Model S remotely controlled by hackers, Tesla already pushed a fix"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-tesla-model-s-remotely-controlled-by-2016-aiaaic067",
+    "promotedFromRound": "round-6-aiaaic-batch-c-2026-06-05"
+  }
+}

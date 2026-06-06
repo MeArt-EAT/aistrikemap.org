@@ -2,10 +2,8 @@
 /**
  * scripts/merge-aiaaic-chunks.js
  *
- * Mergt alle data/incident-candidates/aiaaic-batch-a-chunks/chunk-*.json
- * zurück in EIN großes Array nach
- * data/incident-candidates/aiaaic-batch-a-2024-2026-round-6.json
- * (überschreibt das ursprüngliche Stub-File).
+ * Mergt alle data/incident-candidates/aiaaic-batch-<X>-chunks/chunk-*.json
+ * zurück in das passende Round-6-File (überschreibt das Stub-File).
  *
  * Sanity-Checks:
  *   - Anzahl Kandidaten total
@@ -15,7 +13,8 @@
  *   - Kandidaten ohne name_de / description_de
  *
  * Usage:
- *   node scripts/merge-aiaaic-chunks.js
+ *   node scripts/merge-aiaaic-chunks.js --batch a
+ *   node scripts/merge-aiaaic-chunks.js --batch c
  */
 'use strict';
 
@@ -23,8 +22,30 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const CHUNK_DIR = path.join(ROOT, 'data', 'incident-candidates', 'aiaaic-batch-a-chunks');
-const OUT_FILE = path.join(ROOT, 'data', 'incident-candidates', 'aiaaic-batch-a-2024-2026-round-6.json');
+const CAND_DIR = path.join(ROOT, 'data', 'incident-candidates');
+
+// CLI-Arg parsen: --batch <key>
+const argv = process.argv.slice(2);
+let batch = 'a';
+for (let i = 0; i < argv.length; i++) {
+  if (argv[i] === '--batch' && argv[i+1]) { batch = argv[i+1].toLowerCase(); i++; }
+}
+
+const CHUNK_DIR = path.join(CAND_DIR, 'aiaaic-batch-' + batch + '-chunks');
+if (!fs.existsSync(CHUNK_DIR)) {
+  console.error('Chunk-Dir fehlt: ' + path.relative(ROOT, CHUNK_DIR));
+  process.exit(1);
+}
+// Round-6-File per Glob: aiaaic-batch-<batch>-*-round-6.json
+const outCandidates = fs.readdirSync(CAND_DIR)
+  .filter(f => new RegExp('^aiaaic-batch-' + batch + '-.*-round-6\\.json$').test(f));
+if (outCandidates.length !== 1) {
+  console.error('Erwartet genau 1 Round-6-File für Batch ' + batch + ', gefunden: ' + outCandidates.length);
+  console.error(outCandidates.join('\n'));
+  process.exit(1);
+}
+const OUT_FILE = path.join(CAND_DIR, outCandidates[0]);
+console.log('Batch: ' + batch + '  Chunks: ' + path.relative(ROOT, CHUNK_DIR) + '  Out: ' + outCandidates[0]);
 
 function main() {
   const files = fs.readdirSync(CHUNK_DIR).filter(f => /^chunk-\d+\.json$/.test(f)).sort();

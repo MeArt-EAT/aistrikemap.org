@@ -56,7 +56,14 @@ const GROUPS = [
   { keep: 'usa-riaa-suno-udio-ki-musik-urheberrecht',
     drop: ['usa-sony-universal-und-warner-verklagen-suno-und-udi'] },
   { keep: 'suedkorea-nordkoreanische-hackergruppe-kimsuky-nutzt',
-    drop: ['suedkorea-kimsuky-generiert-mit-chatgpt-deepfake-mil'] }
+    drop: ['suedkorea-kimsuky-generiert-mit-chatgpt-deepfake-mil'] },
+  // Batch C internal-dedup (2026-06-06):
+  { keep: 'ibm-nutzte-ohne-einwilligung-der-abgebildeten',
+    drop: ['ibms-diversity-in-faces-nutzte-eine-million'] },
+  { keep: 'obermeyer-studie-deckt-rassen-bias',
+    drop: ['optum-healthcare-algorithmus-racial-bias'] },
+  { keep: 'sprecherinnen-klagen-gegen-lovo-wegen-unautorisi',
+    drop: ['synchronsprecher-innen-verklagen-ki-start-up-lov'] }
 ];
 
 function listSlugs() {
@@ -82,11 +89,16 @@ function main(argv) {
   const toDelete = [];
   let sourcesMerged = 0;
 
+  let skippedGroups = 0;
   for (const g of GROUPS) {
+    // Drops idempotent: bereits gemergte (= nicht mehr existierende) ueberspringen.
+    const liveDrops = g.drop.filter(d => slugs.some(s => s.includes(d)));
+    if (liveDrops.length === 0) { skippedGroups++; continue; }
+    // Keep muss existieren, sonst Konfig-Fehler.
     const keepSlug = resolve(slugs, g.keep);
     const keepInc = loadInc(keepSlug);
     const keepUrls = srcUrls(keepInc);
-    const dropSlugs = g.drop.map(d => resolve(slugs, d));
+    const dropSlugs = liveDrops.map(d => resolve(slugs, d));
 
     console.log('\nKEEP ' + keepSlug + ' (' + (keepInc['asm:sources'] || []).length + 's'
       + ((keepInc['asm:reverseTimeline'] || []).length ? ',TL' : '') + ')');
@@ -120,9 +132,10 @@ function main(argv) {
   }
 
   console.log('\n=== Summary ===');
-  console.log('  groups:          ' + GROUPS.length);
-  console.log('  files to delete: ' + toDelete.length);
-  console.log('  sources merged:  ' + sourcesMerged);
+  console.log('  groups configured: ' + GROUPS.length);
+  console.log('  groups skipped:    ' + skippedGroups + ' (drops bereits gemergt)');
+  console.log('  files to delete:   ' + toDelete.length);
+  console.log('  sources merged:    ' + sourcesMerged);
   if (!apply) console.log('\n  DRY-RUN — nichts geaendert. Mit --apply ausfuehren.');
   else {
     console.log('\nNaechste Schritte:');

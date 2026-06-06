@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-sicherheitsluecken-in-mattels-vernetzter-hello-barbie-puppe-2015",
+  "name": "USA: Sicherheitslücken in Mattels vernetzter Hello-Barbie-Puppe",
+  "name_de": "USA: Sicherheitslücken in Mattels vernetzter Hello-Barbie-Puppe",
+  "name_en": "USA: Security flaws in Mattel's connected Hello Barbie doll",
+  "description": "Sicherheitsforscher von Bluebox Labs deckten im Dezember 2015 mehrere Schwachstellen in Mattels WLAN-fähiger Hello-Barbie-Puppe auf, die mit Spracherkennung von ToyTalk Kinder beantworten sollte. Die App verband sich mit jedem WLAN, das das Wort 'Barbie' enthielt, die Server waren anfällig für POODLE und gefälschte Zertifikate, und in der App war ein fest eingebautes Passwort enthalten, das sich rückentwickeln ließ. Damit hätten Angreifer Mitschnitte von Kindergesprächen und Zugangsdaten abgreifen können.",
+  "description_de": "Sicherheitsforscher von Bluebox Labs deckten im Dezember 2015 mehrere Schwachstellen in Mattels WLAN-fähiger Hello-Barbie-Puppe auf, die mit Spracherkennung von ToyTalk Kinder beantworten sollte. Die App verband sich mit jedem WLAN, das das Wort 'Barbie' enthielt, die Server waren anfällig für POODLE und gefälschte Zertifikate, und in der App war ein fest eingebautes Passwort enthalten, das sich rückentwickeln ließ. Damit hätten Angreifer Mitschnitte von Kindergesprächen und Zugangsdaten abgreifen können.",
+  "description_en": "Security researchers at Bluebox Labs disclosed in December 2015 multiple flaws in Mattel's Wi-Fi-connected Hello Barbie doll, which used voice recognition from ToyTalk to chat with children. The companion app connected to any Wi-Fi network containing the word 'Barbie', the servers were vulnerable to POODLE and forged certificates, and a hardcoded password could be reverse-engineered from the app. Attackers could in principle have accessed recorded conversations with children and linked accounts.",
+  "startDate": "2015-12-04",
+  "location": {
+    "@type": "Place",
+    "name": "El Segundo, Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.9192,
+      "longitude": -118.4165
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "El Segundo, Kalifornien, USA",
+    "name_en": "El Segundo, California, USA"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "surveillance"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Mattel",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Mattel",
+      "name_en": "Mattel"
+    },
+    {
+      "name": "ToyTalk",
+      "type": "organization",
+      "asm:systems": [
+        "Hello Barbie"
+      ],
+      "name_de": "ToyTalk",
+      "name_en": "ToyTalk"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://www.washingtonpost.com/news/the-switch/wp/2015/12/04/hello-hackable-barbie/",
+      "title": "Hello (hackable) Barbie",
+      "publisher": "The Washington Post",
+      "date": "2015-12-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Hello (hackable) Barbie",
+      "title_en": "Hello (hackable) Barbie"
+    },
+    {
+      "url": "https://www.nbcnews.com/tech/gadgets/hello-barbie-goodbye-privacy-expert-says-connected-doll-has-security-n474446",
+      "title": "Hello Barbie, Goodbye Privacy? Expert Says Connected Doll Has Security Issues",
+      "publisher": "NBC News",
+      "date": "2015-12-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Hello Barbie, Goodbye Privacy? Expert Says Connected Doll Has Security Issues",
+      "title_en": "Hello Barbie, Goodbye Privacy? Expert Says Connected Doll Has Security Issues"
+    },
+    {
+      "url": "https://securityledger.com/2015/12/hello-barbie-fails-another-security-test/",
+      "title": "Hello Barbie Fails Another Security Test",
+      "publisher": "Security Ledger",
+      "date": "2015-12-07",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Hello Barbie Fails Another Security Test",
+      "title_en": "Hello Barbie Fails Another Security Test"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-researchers-reveal-hello-barbie-security-2015-aiaaic1338",
+    "promotedFromRound": "round-6-aiaaic-batch-c-2026-06-05"
+  }
+}

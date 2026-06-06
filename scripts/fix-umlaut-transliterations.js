@@ -344,6 +344,8 @@ const FIX_MAP = {
   'grosse': 'große',
   'grossen': 'großen',
   'grosser': 'großer',
+  'grossbritannien': 'großbritannien',
+  'grossbritanien': 'großbritannien',
   'grosseren': 'größeren',
   'grosseres': 'größeres',
   'grosstes': 'größtes',

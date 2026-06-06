@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/israel-ben-gurion-forschende-ueberlisten-mobileye-630-pro-mit-drohnen-projizierten",
+  "name": "Israel: Ben-Gurion-Forschende überlisten Mobileye 630 PRO mit Drohnen-projizierten Phantom-Verkehrszeichen",
+  "name_de": "Israel: Ben-Gurion-Forschende überlisten Mobileye 630 PRO mit Drohnen-projizierten Phantom-Verkehrszeichen",
+  "name_en": "Israel: Ben-Gurion researchers spoof Mobileye 630 PRO with drone-projected phantom road signs",
+  "description": "Forschende um Ben Nassi an der Ben-Gurion-Universität in Be'er Scheva zeigten 2019, dass das Fahrerassistenz-Modul Mobileye 630 PRO durch projizierte Phantom-Verkehrszeichen — etwa von einer Drohne mit Mini-Beamer auf eine Hausfassade geworfen — zu falschen Warnmeldungen verleitet werden kann. Das gleiche Verfahren brachte Tesla-Autopiloten dazu, vor projizierten Geistererscheinungen zu bremsen. Die Befunde wurden mit Tesla und Mobileye im Bug-Bounty zwischen Mai und Oktober 2019 abgestimmt und 2020 auf der ACM CCS publiziert.",
+  "description_de": "Forschende um Ben Nassi an der Ben-Gurion-Universität in Be'er Scheva zeigten 2019, dass das Fahrerassistenz-Modul Mobileye 630 PRO durch projizierte Phantom-Verkehrszeichen — etwa von einer Drohne mit Mini-Beamer auf eine Hausfassade geworfen — zu falschen Warnmeldungen verleitet werden kann. Das gleiche Verfahren brachte Tesla-Autopiloten dazu, vor projizierten Geistererscheinungen zu bremsen. Die Befunde wurden mit Tesla und Mobileye im Bug-Bounty zwischen Mai und Oktober 2019 abgestimmt und 2020 auf der ACM CCS publiziert.",
+  "description_en": "Researchers led by Ben Nassi at Ben-Gurion University in Beersheba demonstrated in 2019 that the Mobileye 630 PRO driver-assistance module can be tricked into false alerts by projected phantom road signs — for example, beamed onto a building facade by a drone-mounted mini-projector. The same technique caused Tesla Autopilot to brake for projected phantom pedestrians. Findings were coordinated with Tesla and Mobileye via bug-bounty between May and October 2019 and published at ACM CCS 2020.",
+  "startDate": "2019-10",
+  "location": {
+    "@type": "Place",
+    "name": "Be'er Scheva, Israel (Ben-Gurion University)",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.2624,
+      "longitude": 34.7995
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IL"
+    },
+    "name_de": "Be'er Scheva, Israel (Ben-Gurion University)",
+    "name_en": "Beersheba, Israel (Ben-Gurion University)"
+  },
+  "asm:incidentType": [
+    "autonomous-vehicle"
+  ],
+  "asm:affectedRights": [],
+  "asm:affectedRights_de": [],
+  "asm:affectedRights_en": [],
+  "asm:actors": [
+    {
+      "name": "Ben-Gurion University of the Negev (Ben Nassi et al.)",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Ben-Gurion University of the Negev (Ben Nassi et al.)",
+      "name_en": "Ben-Gurion University of the Negev (Ben Nassi et al.)"
+    },
+    {
+      "name": "Mobileye (Intel)",
+      "type": "organization",
+      "asm:systems": [
+        "Mobileye 630 PRO ADAS"
+      ],
+      "name_de": "Mobileye (Intel)",
+      "name_en": "Mobileye (Intel)"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [],
+  "asm:sources": [
+    {
+      "url": "https://dl.acm.org/doi/10.1145/3372297.3423359",
+      "title": "Phantom of the ADAS: Securing Advanced Driver-Assistance Systems from Split-Second Phantom Attacks",
+      "publisher": "ACM CCS 2020 / ACM Digital Library",
+      "date": "2020-11",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Phantom of the ADAS: Securing Advanced Driver-Assistance Systems from Split-Second Phantom Attacks",
+      "title_en": "Phantom of the ADAS: Securing Advanced Driver-Assistance Systems from Split-Second Phantom Attacks"
+    },
+    {
+      "url": "https://threatpost.com/tesla-autopilot-duped-by-phantom-images/152491/",
+      "title": "Tesla, Mobileye Autopilots Duped By 'Phantom' Images",
+      "publisher": "Threatpost",
+      "date": "2020-01",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Tesla, Mobileye Autopilots Duped By 'Phantom' Images",
+      "title_en": "Tesla, Mobileye Autopilots Duped By 'Phantom' Images"
+    },
+    {
+      "url": "https://www.nassiben.com/phantoms",
+      "title": "Phantom of the ADAS",
+      "publisher": "Ben Nassi (Ben-Gurion University)",
+      "date": "2019",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Phantom of the ADAS",
+      "title_en": "Phantom of the ADAS"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-06-05",
+    "lastUpdated": "2026-06-05",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "il-mobileye-630-pro-tricked-by-drones-2019-aiaaic0293",
+    "promotedFromRound": "round-6-aiaaic-batch-c-2026-06-05"
+  }
+}
