@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2458 Incidents** · 304 mit Reverse-TL (12.4 %) · 0 Audit-Findings · Bundle 12.7 MB |
+| 📊 **Bestand** | **2458 Incidents** · 352 mit Reverse-TL (14.3 %) · 0 Audit-Findings · Bundle 13.2 MB |
 | 🔢 **Übergabe-Nr** | **#5** (2026-06-06) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **TL-Pilot-Welle 1**: 12 Severity-5-Cases (Suizide via KI, Drohnenangriffe, Internet-Shutdown, GHF-Gaza, Scam-Compounds) bekamen Reverse-Timelines + affectedRights. 4 Agenten à 3 Cases, ~13 Tool-Calls/Agent. |
-| ➡️ **Nächster Schritt** | **TL Welle 2-9** (99 weitere Sev-5-Cases ohne TL) · ODER AIAAIC **Batch D** (pre-2015, ~300 Stubs) · ODER Frontend-Check bei 2458 Markern |
+| ✅ **Zuletzt fertig** | **TL-Wellen 1-5**: 60 Severity-5-Cases (Drohnenangriffe Mali/Sudan/Burkina/Ethiopia/Mali/Libyen, IDF-Lavender/Red Wolf, Tesla-Crashes, KI-Suizide, Internet-Shutdowns, MCAS Lion Air, Cambridge Analytica) bekamen Reverse-Timelines + affectedRights. 20 Agenten total, ~12-18 Tool-Calls/Agent, 0 Crashes. Sev-5 mit TL: 78 → **138**. |
+| ➡️ **Nächster Schritt** | **TL Welle 6-9** (51 verbleibende Sev-5 ohne TL) · ODER Sev-4 angreifen (574 Cases ohne TL) · ODER AIAAIC Batch D · ODER Frontend-Check |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -27,11 +27,11 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 1. **AIAAIC Batch D** (pre-2015, ~300 Stubs) — letzter AIAAIC-Block, niedrige
    Prio (frühe Cases haben weniger Aktualität). Bringt aber historische Tiefe.
    Workflow: siehe Memory `aiaaic-import-workflow` + Übergabe #5.
-2. **Reverse-Timelines** — 304 von 2458 (12.4 %) haben die TL (Kern-Feature).
-   Pilot-Welle 1 (12 Cases) bewiesen: Pipeline funktioniert, ~13 Tool-Calls/Agent,
-   sehr saubere Ergebnisse. 99 Sev-5-Cases ohne TL bleiben (priorisierter Rest);
-   bei Wellengröße 4×3 = ~8-9 weitere Wellen für vollen Sev-5-Block.
-   Briefing: `data/incident-candidates/_timeline-briefing.md`.
+2. **Reverse-Timelines** — 352 von 2458 (14.3 %) haben die TL (Kern-Feature).
+   5 Wellen à 4 Agents x 3 Cases = 60 Sev-5-Cases mit neuen TLs durch
+   (sehr starke Quellenlage: Amnesty, HRW, UN-OHCHR, NYT, NTSB, ICO).
+   51 Sev-5 ohne TL noch verbleibend → ~5 weitere Wellen für vollen Sev-5-Block.
+   Danach Sev-4 (574 Cases ohne TL). Briefing: `_timeline-briefing.md`.
 3. **Frontend-Recheck bei 2458 Markern** — Clustering + gzip tragen es, aber
    Bundle ist 12.6 MB. Vor Batch D Lazy-Loading/Tiling evaluieren.
 4. **needs-review-Cases** — Batch A+B+C haben zusammen ~180 needs-review (oft

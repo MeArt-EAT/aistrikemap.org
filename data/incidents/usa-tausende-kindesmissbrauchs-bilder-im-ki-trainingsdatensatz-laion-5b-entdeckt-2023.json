@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Kinderrechte",
+    "Würde des Menschen",
+    "Recht auf körperliche Unversehrtheit",
+    "Datenschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Kinderrechte",
+    "Würde des Menschen",
+    "Recht auf körperliche Unversehrtheit",
+    "Datenschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Children's rights",
+    "Human dignity",
+    "Right to bodily integrity",
+    "Data protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "LAION",
@@ -53,7 +71,64 @@
   ],
   "asm:severity": 5,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-03",
+      "phase": "infrastructure",
+      "title": "LAION veröffentlicht LAION-5B mit 5,85 Milliarden Bild-Text-Paaren aus Common Crawl",
+      "description": "Das deutsche Non-Profit LAION (Large-scale Artificial Intelligence Open Network) veröffentlicht im März 2022 LAION-5B, einen offenen Datensatz mit 5,85 Milliarden Bild-Text-Paaren, die per Python-Skript aus den Common-Crawl-Snapshots geparst wurden. CLIP-Similarity-Scores filtern Paare unzureichender Qualität, aber es findet keine systematische Filterung auf illegale oder schädliche Inhalte statt. LAION-5B wird sofort zum De-facto-Standard für das Training generativer Bild-KI.",
+      "title_de": "LAION veröffentlicht LAION-5B mit 5,85 Milliarden Bild-Text-Paaren aus Common Crawl",
+      "description_de": "Das deutsche Non-Profit LAION (Large-scale Artificial Intelligence Open Network) veröffentlicht im März 2022 LAION-5B, einen offenen Datensatz mit 5,85 Milliarden Bild-Text-Paaren, die per Python-Skript aus den Common-Crawl-Snapshots geparst wurden. CLIP-Similarity-Scores filtern Paare unzureichender Qualität, aber es findet keine systematische Filterung auf illegale oder schädliche Inhalte statt. LAION-5B wird sofort zum De-facto-Standard für das Training generativer Bild-KI.",
+      "title_en": "LAION releases LAION-5B with 5.85 billion image-text pairs from Common Crawl",
+      "description_en": "In March 2022 the German non-profit LAION (Large-scale Artificial Intelligence Open Network) releases LAION-5B, an open dataset of 5.85 billion image-text pairs parsed from Common Crawl snapshots via a Python script. CLIP similarity scores filter pairs of insufficient quality, but no systematic filtering for illegal or harmful content takes place. LAION-5B immediately becomes the de-facto standard for training generative image AI.",
+      "sources": [
+        "https://laion.ai/blog/laion-5b/",
+        "https://arxiv.org/abs/2210.08402"
+      ]
+    },
+    {
+      "date": "2022-08",
+      "phase": "doctrine",
+      "title": "Stability AI trainiert Stable Diffusion auf LAION-Subset und veröffentlicht Modell als Open Source",
+      "description": "Im August 2022 veröffentlicht Stability AI unter Emad Mostaque Stable Diffusion, basierend auf der CompVis-Architektur, trainiert auf einem 2-Milliarden-Bild-Subset von LAION-5B. Das Open-Source-Modell wird ohne Output-Filter veröffentlicht und kann fotorealistische Bilder generieren. Die Doktrin Open-Weights-für-Forschung führt dazu, dass weder Trainings-Korpus noch Modell vor Veröffentlichung auf CSAM gescreent werden - eine bewusste Designentscheidung gegen Filter-Latenz.",
+      "title_de": "Stability AI trainiert Stable Diffusion auf LAION-Subset und veröffentlicht Modell als Open Source",
+      "description_de": "Im August 2022 veröffentlicht Stability AI unter Emad Mostaque Stable Diffusion, basierend auf der CompVis-Architektur, trainiert auf einem 2-Milliarden-Bild-Subset von LAION-5B. Das Open-Source-Modell wird ohne Output-Filter veröffentlicht und kann fotorealistische Bilder generieren. Die Doktrin Open-Weights-für-Forschung führt dazu, dass weder Trainings-Korpus noch Modell vor Veröffentlichung auf CSAM gescreent werden - eine bewusste Designentscheidung gegen Filter-Latenz.",
+      "title_en": "Stability AI trains Stable Diffusion on LAION subset and releases the model as open source",
+      "description_en": "In August 2022 Stability AI under Emad Mostaque releases Stable Diffusion, based on the CompVis architecture and trained on a 2 billion-image subset of LAION-5B. The open-source model is released without output filters and can generate photorealistic images. The open-weights-for-research doctrine means neither the training corpus nor the model are screened for CSAM before release - a deliberate design choice against filtering latency.",
+      "sources": [
+        "https://www.deeplearning.ai/the-batch/the-story-of-laion-the-dataset-behind-stable-diffusion",
+        "https://en.wikipedia.org/wiki/LAION"
+      ]
+    },
+    {
+      "date": "2023-12-20",
+      "phase": "event",
+      "title": "Stanford Internet Observatory weist über 3.200 CSAM-Treffer in LAION-5B nach",
+      "description": "David Thiel vom Stanford Internet Observatory veröffentlicht im Dezember 2023 die Studie Identifying and Eliminating CSAM in Generative ML Training Data. Sie weist mehr als 3.200 mutmaßliche Darstellungen sexuellen Kindesmissbrauchs (CSAM) in LAION-5B nach. 1.008 Treffer werden extern mit NCMEC und dem Canadian Centre for Child Protection per PhotoDNA validiert. Der Besitz einer befüllten LAION-5B-Kopie impliziert in vielen Jurisdiktionen den Besitz tausender illegaler Bilder.",
+      "title_de": "Stanford Internet Observatory weist über 3.200 CSAM-Treffer in LAION-5B nach",
+      "description_de": "David Thiel vom Stanford Internet Observatory veröffentlicht im Dezember 2023 die Studie Identifying and Eliminating CSAM in Generative ML Training Data. Sie weist mehr als 3.200 mutmaßliche Darstellungen sexuellen Kindesmissbrauchs (CSAM) in LAION-5B nach. 1.008 Treffer werden extern mit NCMEC und dem Canadian Centre for Child Protection per PhotoDNA validiert. Der Besitz einer befüllten LAION-5B-Kopie impliziert in vielen Jurisdiktionen den Besitz tausender illegaler Bilder.",
+      "title_en": "Stanford Internet Observatory identifies over 3,200 CSAM hits in LAION-5B",
+      "description_en": "In December 2023 David Thiel of the Stanford Internet Observatory publishes the study Identifying and Eliminating CSAM in Generative ML Training Data, identifying more than 3,200 suspected depictions of child sexual abuse material (CSAM) in LAION-5B. 1,008 hits are externally validated with NCMEC and the Canadian Centre for Child Protection using PhotoDNA. Possessing a populated copy of LAION-5B implies, in many jurisdictions, possession of thousands of illegal images.",
+      "sources": [
+        "https://www.404media.co/laion-datasets-removed-stanford-csam-child-abuse/",
+        "https://www.axios.com/2023/12/20/ai-training-data-child-abuse-images-stanford"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "LAION nimmt Datensatz offline, Re-Release als LAION-5B-NSF, breite Debatte um KI-Trainingsdaten",
+      "description": "LAION nimmt LAION-5B unmittelbar nach der Stanford-Veröffentlichung vom Netz. 2024 erscheint mit Re-LAION-5B eine bereinigte Version, die die identifizierten CSAM-Hashes ausschließt. Die Studie löst eine internationale Debatte über Sorgfaltspflichten beim Web-Scraping aus; in den USA Klagen gegen Stable Diffusion und andere auf LAION trainierte Modelle (u.a. Getty Images, Künstler-Sammelklage); EU-Regulierung mit AI Act und DSA forciert Trainingsdaten-Transparenz und CSAM-Hashing-Pflichten.",
+      "title_de": "LAION nimmt Datensatz offline, Re-Release als LAION-5B-NSF, breite Debatte um KI-Trainingsdaten",
+      "description_de": "LAION nimmt LAION-5B unmittelbar nach der Stanford-Veröffentlichung vom Netz. 2024 erscheint mit Re-LAION-5B eine bereinigte Version, die die identifizierten CSAM-Hashes ausschließt. Die Studie löst eine internationale Debatte über Sorgfaltspflichten beim Web-Scraping aus; in den USA Klagen gegen Stable Diffusion und andere auf LAION trainierte Modelle (u.a. Getty Images, Künstler-Sammelklage); EU-Regulierung mit AI Act und DSA forciert Trainingsdaten-Transparenz und CSAM-Hashing-Pflichten.",
+      "title_en": "LAION takes dataset offline, releases Re-LAION-5B, broad debate on AI training data",
+      "description_en": "LAION takes LAION-5B offline immediately after the Stanford publication. In 2024 a cleaned version, Re-LAION-5B, is released that excludes the identified CSAM hashes. The study triggers an international debate on due diligence in web scraping; lawsuits in the US against Stable Diffusion and other models trained on LAION (including Getty Images and artist class-action suits); EU regulation via the AI Act and DSA pushes for training-data transparency and CSAM hashing obligations.",
+      "sources": [
+        "https://arxiv.org/pdf/2506.17185",
+        "https://en.wikipedia.org/wiki/LAION"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.404media.co/laion-datasets-removed-stanford-csam-child-abuse/",
