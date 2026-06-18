@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Schutz vor Manipulation",
+    "Recht am eigenen Bild"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Schutz vor Manipulation",
+    "Recht am eigenen Bild"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Human dignity",
+    "Protection from discrimination",
+    "Protection from manipulation",
+    "Right to one's own image"
+  ],
   "asm:actors": [
     {
       "name": "DeepNude (Estonia-based anonymous developer team)",
@@ -41,7 +59,74 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "pix2pix: Berkeley veröffentlicht Open-Source-GAN für Bild-zu-Bild-Übersetzung",
+      "description": "Forscher um Phillip Isola an der UC Berkeley stellen 'pix2pix' vor, ein quelloffenes conditional Generative Adversarial Network zur Bild-zu-Bild-Übersetzung (CVPR 2017). Die frei verfügbare Architektur erlaubt es, aus einem Eingabebild ein passendes Ausgabebild zu erzeugen. Sie wird zur technischen Grundlage zahlreicher Folgeanwendungen - darunter später DeepNude.",
+      "title_de": "pix2pix: Berkeley veröffentlicht Open-Source-GAN für Bild-zu-Bild-Übersetzung",
+      "description_de": "Forscher um Phillip Isola an der UC Berkeley stellen 'pix2pix' vor, ein quelloffenes conditional Generative Adversarial Network zur Bild-zu-Bild-Übersetzung (CVPR 2017). Die frei verfügbare Architektur erlaubt es, aus einem Eingabebild ein passendes Ausgabebild zu erzeugen. Sie wird zur technischen Grundlage zahlreicher Folgeanwendungen - darunter später DeepNude.",
+      "title_en": "pix2pix: Berkeley releases open-source GAN for image-to-image translation",
+      "description_en": "Researchers led by Phillip Isola at UC Berkeley present 'pix2pix', an open-source conditional Generative Adversarial Network for image-to-image translation (CVPR 2017). The freely available architecture lets a model turn an input image into a corresponding output image. It becomes the technical foundation for many downstream applications - including, later, DeepNude.",
+      "sources": [
+        "https://openaccess.thecvf.com/content_cvpr_2017/papers/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.pdf",
+        "https://github.com/phillipi/pix2pix"
+      ]
+    },
+    {
+      "date": "2017-12",
+      "phase": "doctrine",
+      "title": "Deepfake-Kultur normalisiert nicht-einvernehmliche Bildmanipulation",
+      "description": "Ende 2017 verbreiten sich auf Reddit und in Foren die ersten 'Deepfakes' - per KI in Pornografie montierte Gesichter von Prominenten und Privatpersonen. Eine Subkultur entsteht, die das nicht-einvernehmliche Manipulieren von Frauenbildern als technische Spielerei normalisiert und nach immer einfacheren Werkzeugen verlangt. Dieses Klima liefert die Nachfrage und die Legitimationserzählung für eine 'Ein-Klick'-Entkleidungs-App.",
+      "title_de": "Deepfake-Kultur normalisiert nicht-einvernehmliche Bildmanipulation",
+      "description_de": "Ende 2017 verbreiten sich auf Reddit und in Foren die ersten 'Deepfakes' - per KI in Pornografie montierte Gesichter von Prominenten und Privatpersonen. Eine Subkultur entsteht, die das nicht-einvernehmliche Manipulieren von Frauenbildern als technische Spielerei normalisiert und nach immer einfacheren Werkzeugen verlangt. Dieses Klima liefert die Nachfrage und die Legitimationserzählung für eine 'Ein-Klick'-Entkleidungs-App.",
+      "title_en": "Deepfake culture normalises non-consensual image manipulation",
+      "description_en": "In late 2017 the first 'deepfakes' - AI-composited faces of celebrities and private individuals in pornography - spread across Reddit and forums. A subculture emerges that frames the non-consensual manipulation of women's images as a technical pastime and demands ever simpler tools. This climate supplies both the demand and the rationalisation for a 'one-click' undressing app.",
+      "sources": [
+        "https://www.vice.com/en/article/deepnude-app-creates-fake-nudes-of-any-woman/"
+      ]
+    },
+    {
+      "date": "2019-06-26",
+      "phase": "event",
+      "title": "Motherboard enthüllt DeepNude - GAN trainiert auf über 10.000 Nacktbildern",
+      "description": "Motherboard (Vice) berichtet über DeepNude, eine Desktop-App, die bekleidete Frauenfotos in Sekunden in nackte umwandelt. Der anonyme Entwickler ('Alberto', Standort Estland) erklärt, die Software basiere auf pix2pix und sei auf mehr als 10.000 Nacktfotos von Frauen trainiert. Männliche Eingaben liefern Fehl-Output - die App ist explizit auf Frauenkörper ausgerichtet.",
+      "title_de": "Motherboard enthüllt DeepNude - GAN trainiert auf über 10.000 Nacktbildern",
+      "description_de": "Motherboard (Vice) berichtet über DeepNude, eine Desktop-App, die bekleidete Frauenfotos in Sekunden in nackte umwandelt. Der anonyme Entwickler ('Alberto', Standort Estland) erklärt, die Software basiere auf pix2pix und sei auf mehr als 10.000 Nacktfotos von Frauen trainiert. Männliche Eingaben liefern Fehl-Output - die App ist explizit auf Frauenkörper ausgerichtet.",
+      "title_en": "Motherboard exposes DeepNude - GAN trained on over 10,000 nude images",
+      "description_en": "Motherboard (Vice) reports on DeepNude, a desktop app that turns clothed photos of women into nude images in seconds. The anonymous developer ('Alberto', based in Estonia) explains the software is built on pix2pix and trained on more than 10,000 nude photos of women. Male inputs produce glitched output - the app is explicitly designed for women's bodies.",
+      "sources": [
+        "https://www.vice.com/en/article/deepnude-app-creates-fake-nudes-of-any-woman/"
+      ]
+    },
+    {
+      "date": "2019-06-27",
+      "phase": "consequences",
+      "title": "Entwickler schalten App nach öffentlichem Aufschrei ab",
+      "description": "Nach massivem öffentlichem Druck nehmen die Entwickler DeepNude binnen eines Tages vom Markt, stoppen Downloads und Aktivierungen und begründen dies mit der Missbrauchsgefahr. Sie bitten die Öffentlichkeit, den Vorfall zu vergessen.",
+      "title_de": "Entwickler schalten App nach öffentlichem Aufschrei ab",
+      "description_de": "Nach massivem öffentlichem Druck nehmen die Entwickler DeepNude binnen eines Tages vom Markt, stoppen Downloads und Aktivierungen und begründen dies mit der Missbrauchsgefahr. Sie bitten die Öffentlichkeit, den Vorfall zu vergessen.",
+      "title_en": "Developers shut the app down after public outcry",
+      "description_en": "Under intense public pressure the developers pull DeepNude within a day, halt downloads and activations, and cite abuse risk as the reason. They ask the public to forget the whole affair.",
+      "sources": [
+        "https://www.france24.com/en/20190628-deepnude-app-undress-women-shut-down-after-furor"
+      ]
+    },
+    {
+      "date": "2019-07-02",
+      "phase": "consequences",
+      "title": "Geknackte Kopien verbreiten sich trotz Abschaltung weiter",
+      "description": "Wenige Tage nach der Abschaltung tauchen dekompilierte und geknackte Versionen von DeepNude in Online-Foren und auf File-Sharing-Plattformen auf. Die Abschaltung der Originals erweist sich als wirkungslos; die Technik ist nicht mehr einzufangen. Der Fall wird zum Wendepunkt der Debatte um nicht-einvernehmliche KI-Pornografie und befeuert spätere Gesetzgebung gegen Deepfake-Missbrauch.",
+      "title_de": "Geknackte Kopien verbreiten sich trotz Abschaltung weiter",
+      "description_de": "Wenige Tage nach der Abschaltung tauchen dekompilierte und geknackte Versionen von DeepNude in Online-Foren und auf File-Sharing-Plattformen auf. Die Abschaltung der Originals erweist sich als wirkungslos; die Technik ist nicht mehr einzufangen. Der Fall wird zum Wendepunkt der Debatte um nicht-einvernehmliche KI-Pornografie und befeuert spätere Gesetzgebung gegen Deepfake-Missbrauch.",
+      "title_en": "Cracked copies keep spreading despite the shutdown",
+      "description_en": "Within days of the shutdown, decompiled and cracked versions of DeepNude appear in online forums and on file-sharing platforms. Pulling the original proves futile; the technology can no longer be contained. The case becomes a turning point in the debate over non-consensual AI pornography and fuels later legislation against deepfake abuse.",
+      "sources": [
+        "https://www.theregister.com/2019/07/02/deepnude_ai_spreads/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.france24.com/en/20190628-deepnude-app-undress-women-shut-down-after-furor",

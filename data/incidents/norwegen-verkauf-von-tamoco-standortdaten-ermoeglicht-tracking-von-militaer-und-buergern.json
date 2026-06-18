@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Informationelle Selbstbestimmung",
+    "Nationale Sicherheit",
+    "Schutz vor Überwachung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Informationelle Selbstbestimmung",
+    "Nationale Sicherheit",
+    "Schutz vor Überwachung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Informational self-determination",
+    "National security",
+    "Protection from surveillance"
+  ],
   "asm:actors": [
     {
       "name": "Tamoco",
@@ -45,7 +63,60 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Datenhandel mit App-Standortdaten als Geschaeftsmodell",
+      "description": "Datenhaendler wie Tamoco sammeln ueber in Smartphone- und Tablet-Apps eingebettete Software-Bausteine (SDKs) massenhaft Standortdaten und verkaufen sie als angeblich anonymisierte Datensaetze. Diese Infrastruktur aus kommerzieller Standortverfolgung machte praezise Bewegungsprofile einzelner Geraete handelbar. Nutzer:innen wussten in der Regel nicht, dass ihre Position weiterverkauft wurde.",
+      "title_de": "Datenhandel mit App-Standortdaten als Geschaeftsmodell",
+      "description_de": "Datenhaendler wie Tamoco sammeln ueber in Smartphone- und Tablet-Apps eingebettete Software-Bausteine (SDKs) massenhaft Standortdaten und verkaufen sie als angeblich anonymisierte Datensaetze. Diese Infrastruktur aus kommerzieller Standortverfolgung machte praezise Bewegungsprofile einzelner Geraete handelbar. Nutzer:innen wussten in der Regel nicht, dass ihre Position weiterverkauft wurde.",
+      "title_en": "App location-data trade as a business model",
+      "description_en": "Data brokers such as Tamoco collect location data en masse via software kits (SDKs) embedded in smartphone and tablet apps and sell them as supposedly anonymised datasets. This infrastructure of commercial location tracking made precise movement profiles of individual devices tradable. Users were generally unaware that their position was being resold.",
+      "sources": [
+        "https://www.tamoco.com/blog/tamocos-full-response-to-questions-on-articles-published-in-nrk/"
+      ]
+    },
+    {
+      "date": "2019-11",
+      "phase": "doctrine",
+      "title": "NRK erwirbt Datensatz zur journalistischen Prüfung",
+      "description": "Im November 2019 kaufte der norwegische Rundfunk NRK für rund 3.000 britische Pfund einen kommerziellen Standortdatensatz bei Tamoco. Ziel der Redaktion war es, die Behauptung der Anonymitaet zu prüfen und das Risiko des Datenhandels für Privatsphäre und Sicherheit offenzulegen. Der Kauf war ohne Sonderzugang möglich und zeigte, wie niedrigschwellig solche Daten zu beschaffen sind.",
+      "title_de": "NRK erwirbt Datensatz zur journalistischen Prüfung",
+      "description_de": "Im November 2019 kaufte der norwegische Rundfunk NRK für rund 3.000 britische Pfund einen kommerziellen Standortdatensatz bei Tamoco. Ziel der Redaktion war es, die Behauptung der Anonymitaet zu prüfen und das Risiko des Datenhandels für Privatsphäre und Sicherheit offenzulegen. Der Kauf war ohne Sonderzugang möglich und zeigte, wie niedrigschwellig solche Daten zu beschaffen sind.",
+      "title_en": "NRK buys a dataset for journalistic scrutiny",
+      "description_en": "In November 2019 Norwegian broadcaster NRK bought a commercial location dataset from Tamoco for about GBP 3,000. The newsroom's aim was to test the claim of anonymity and expose the risk that this data trade posed to privacy and security. The purchase required no special access and showed how easily such data could be obtained.",
+      "sources": [
+        "https://news.ycombinator.com/item?id=23219782"
+      ]
+    },
+    {
+      "date": "2020-05",
+      "phase": "event",
+      "title": "Tracking von Soldaten an der Radarstation Vardoe",
+      "description": "Der Datensatz umfasste 460 Millionen Standort-Datenpunkte von rund 140.000 Geraeten. NRK konnte damit einzelne Personen reidentifizieren - darunter Soldaten an gesperrten Militaerstandorten wie der Radarstation Vardoe nahe der russischen Grenze. Die angeblich anonymen Daten liessen sich durch Kombination mit Adressen und Bewegungsmustern konkreten Personen zuordnen, was ein erhebliches Sicherheitsrisiko offenlegte.",
+      "title_de": "Tracking von Soldaten an der Radarstation Vardoe",
+      "description_de": "Der Datensatz umfasste 460 Millionen Standort-Datenpunkte von rund 140.000 Geraeten. NRK konnte damit einzelne Personen reidentifizieren - darunter Soldaten an gesperrten Militaerstandorten wie der Radarstation Vardoe nahe der russischen Grenze. Die angeblich anonymen Daten liessen sich durch Kombination mit Adressen und Bewegungsmustern konkreten Personen zuordnen, was ein erhebliches Sicherheitsrisiko offenlegte.",
+      "title_en": "Tracking of soldiers at the Vardoe radar station",
+      "description_en": "The dataset contained 460 million location points from around 140,000 devices. NRK used it to re-identify individuals - including soldiers at restricted military sites such as the Vardoe radar station near the Russian border. The supposedly anonymous data could be tied to specific people by combining it with addresses and movement patterns, exposing a significant security risk.",
+      "sources": [
+        "https://www.highnorthnews.com/en/make-vardo-great-again"
+      ]
+    },
+    {
+      "date": "2020-05",
+      "phase": "consequences",
+      "title": "Datatilsynet verurteilt Verkauf, ICO eroeffnet Untersuchung",
+      "description": "Die norwegische Datenschutzbehörde Datatilsynet verurteilte den Verkauf als moeglichen Verstoss gegen die DSGVO und alarmierte weitere EU-Aufsichtsbehörden. Die britische Datenschutzbehörde ICO leitete eine eigene Untersuchung gegen Tamoco ein. Der Fall verstaerkte die Debatte ueber die Regulierung des kommerziellen Standortdatenhandels und seine nationalen Sicherheitsrisiken.",
+      "title_de": "Datatilsynet verurteilt Verkauf, ICO eroeffnet Untersuchung",
+      "description_de": "Die norwegische Datenschutzbehörde Datatilsynet verurteilte den Verkauf als moeglichen Verstoss gegen die DSGVO und alarmierte weitere EU-Aufsichtsbehörden. Die britische Datenschutzbehörde ICO leitete eine eigene Untersuchung gegen Tamoco ein. Der Fall verstaerkte die Debatte ueber die Regulierung des kommerziellen Standortdatenhandels und seine nationalen Sicherheitsrisiken.",
+      "title_en": "Datatilsynet condemns the sale, ICO opens an inquiry",
+      "description_en": "Norway's data protection authority Datatilsynet condemned the sale as a possible GDPR breach and alerted other EU supervisory authorities. The UK Information Commissioner's Office (ICO) opened its own investigation into Tamoco. The case intensified the debate over regulating the commercial location-data trade and its national-security risks.",
+      "sources": [
+        "https://news.bloomberglaw.com/tech-and-telecom-law/norway-probes-u-s-u-k-companies-for-alleged-privacy-breaches"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://news.bloomberglaw.com/tech-and-telecom-law/norway-probes-u-s-u-k-companies-for-alleged-privacy-breaches",

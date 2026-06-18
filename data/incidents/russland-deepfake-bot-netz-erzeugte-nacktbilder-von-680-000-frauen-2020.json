@@ -25,9 +25,30 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Körperliche Unversehrtheit",
+    "Kinderrechte",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Körperliche Unversehrtheit",
+    "Kinderrechte",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Human dignity",
+    "Protection from discrimination",
+    "Bodily integrity",
+    "Children's rights",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Telegram (hosting platform)",
@@ -48,7 +69,60 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-06",
+      "phase": "infrastructure",
+      "title": "DeepNude-App auf GAN-Basis veröffentlicht und nach Aufschrei zurückgezogen",
+      "description": "Ein anonymer Entwickler ('Alberto') veröffentlichte im Juni 2019 die App DeepNude, die per Generative Adversarial Network aus einem Foto bekleideter Frauen ein gefälschtes Nacktbild erzeugte. Nach einem Vice-Bericht und massivem Aufschrei nahmen die Macher die App binnen Tagen vom Netz. Der Quellcode war da bereits auf GitHub gespiegelt und verbreitete sich über Foren und Torrents weiter.",
+      "title_de": "DeepNude-App auf GAN-Basis veröffentlicht und nach Aufschrei zurückgezogen",
+      "description_de": "Ein anonymer Entwickler ('Alberto') veröffentlichte im Juni 2019 die App DeepNude, die per Generative Adversarial Network aus einem Foto bekleideter Frauen ein gefälschtes Nacktbild erzeugte. Nach einem Vice-Bericht und massivem Aufschrei nahmen die Macher die App binnen Tagen vom Netz. Der Quellcode war da bereits auf GitHub gespiegelt und verbreitete sich über Foren und Torrents weiter.",
+      "title_en": "GAN-based DeepNude app released and pulled after public outcry",
+      "description_en": "In June 2019 an anonymous developer ('Alberto') released DeepNude, an app that used a Generative Adversarial Network to turn a photo of a clothed woman into a fake nude image. After a Vice report and intense backlash the makers took the app offline within days. By then the source code had been mirrored on GitHub and kept spreading via forums and torrents.",
+      "sources": [
+        "https://hackmag.com/security/deepnude"
+      ]
+    },
+    {
+      "date": "2020-01",
+      "phase": "doctrine",
+      "title": "Open-Source-Forks als kostenlose Telegram-Bots paketiert",
+      "description": "Unbekannte Betreiber bündelten Open-Source-Forks der DeepNude-Technologie zu Telegram-Bots, die das 'Entkleiden' eines hochgeladenen Fotos in unter 60 Sekunden anboten. Die niedrigschwellige, größtenteils kostenlose Bedienung über einen Chat verwandelte ein Nischen-Tool in ein Massenangebot. Sensity meldete die Aktivität bereits Anfang 2020 an Telegram.",
+      "title_de": "Open-Source-Forks als kostenlose Telegram-Bots paketiert",
+      "description_de": "Unbekannte Betreiber bündelten Open-Source-Forks der DeepNude-Technologie zu Telegram-Bots, die das 'Entkleiden' eines hochgeladenen Fotos in unter 60 Sekunden anboten. Die niedrigschwellige, größtenteils kostenlose Bedienung über einen Chat verwandelte ein Nischen-Tool in ein Massenangebot. Sensity meldete die Aktivität bereits Anfang 2020 an Telegram.",
+      "title_en": "Open-source forks packaged as free Telegram bots",
+      "description_en": "Unknown operators bundled open-source forks of the DeepNude technology into Telegram bots that offered to 'undress' an uploaded photo in under 60 seconds. The low-barrier, largely free chat interface turned a niche tool into a mass-market service. Sensity reported the activity to Telegram as early as the start of 2020.",
+      "sources": [
+        "https://www.technologyreview.com/2020/10/20/1010789/ai-deepfake-bot-undresses-women-and-underage-girls/"
+      ]
+    },
+    {
+      "date": "2020-10-20",
+      "phase": "event",
+      "title": "Sensity dokumentiert Netz mit über 680.000 missbrauchten Frauen",
+      "description": "Die Threat-Intelligence-Firma Sensity veröffentlichte ihren Report 'Automating Image Abuse' und schätzte, dass das Telegram-Bot-Netz Bilder von mehr als 680.000 Frauen missbraucht hatte - überwiegend Privatpersonen, deren Fotos aus sozialen Netzwerken stammten. Ein Teil der Betroffenen erschien minderjährig, was die Inhalte rechtlich zu Darstellungen von Kindesmissbrauch machte.",
+      "title_de": "Sensity dokumentiert Netz mit über 680.000 missbrauchten Frauen",
+      "description_de": "Die Threat-Intelligence-Firma Sensity veröffentlichte ihren Report 'Automating Image Abuse' und schätzte, dass das Telegram-Bot-Netz Bilder von mehr als 680.000 Frauen missbraucht hatte - überwiegend Privatpersonen, deren Fotos aus sozialen Netzwerken stammten. Ein Teil der Betroffenen erschien minderjährig, was die Inhalte rechtlich zu Darstellungen von Kindesmissbrauch machte.",
+      "title_en": "Sensity documents network abusing over 680,000 women",
+      "description_en": "Threat-intelligence firm Sensity published its 'Automating Image Abuse' report, estimating that the Telegram bot network had abused images of more than 680,000 women - mostly private individuals whose photos came from social media. Some of those targeted appeared to be underage, legally making the content child sexual abuse material.",
+      "sources": [
+        "https://fightthenewdrug.org/deepfakes-on-telegram-messaging-app-sensity-report/"
+      ]
+    },
+    {
+      "date": "2020-10-26",
+      "phase": "consequences",
+      "title": "Italienische Behörden ermitteln, Telegram bleibt zunächst untätig",
+      "description": "Nach dem Report leitete die italienische Datenschutzbehörde eine Untersuchung der Telegram-Deepfake-Bots ein. Telegram und Gründer Pavel Durow reagierten zunächst nicht öffentlich und ließen die zentralen Bots monatelang aktiv. Der Fall wurde zu einem Schlüsselbeleg für die Forderung nach Strafbarkeit nicht-einvernehmlicher Deepfake-Pornografie.",
+      "title_de": "Italienische Behörden ermitteln, Telegram bleibt zunächst untätig",
+      "description_de": "Nach dem Report leitete die italienische Datenschutzbehörde eine Untersuchung der Telegram-Deepfake-Bots ein. Telegram und Gründer Pavel Durow reagierten zunächst nicht öffentlich und ließen die zentralen Bots monatelang aktiv. Der Fall wurde zu einem Schlüsselbeleg für die Forderung nach Strafbarkeit nicht-einvernehmlicher Deepfake-Pornografie.",
+      "title_en": "Italian authorities investigate while Telegram initially fails to act",
+      "description_en": "Following the report, Italy's data protection authority opened an investigation into the Telegram deepfake bots. Telegram and founder Pavel Durov did not respond publicly at first and left the core bots active for months. The case became a key piece of evidence for demands to criminalise non-consensual deepfake pornography.",
+      "sources": [
+        "https://internetprotocol.co/web/2020/10/26/italian-investigation-into-telegram/amp/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://fightthenewdrug.org/deepfakes-on-telegram-messaging-app-sensity-report/",
