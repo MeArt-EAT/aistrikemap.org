@@ -9,7 +9,7 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2458 Incidents** · 977 mit Reverse-TL (39.7 %) · 0 Audit-Findings · Bundle 16+ MB |
+| 📊 **Bestand** | **2457 Incidents** · 977 mit Reverse-TL (39.8 %) · 0 Audit-Findings · Bundle 18+ MB |
 | 🔢 **Übergabe-Nr** | **#5** (2026-06-06) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
 | ✅ **Zuletzt fertig** | **Severity-4-Block zu 100 % geschlossen** ✓ (671/671). Letzte 98 Cases via manuelle Wellen (5 Runden × ~20). Sev-5 + Sev-4 jetzt beide vollständig. fix-umlaut-Wortliste um ~45 Begriffe erweitert → 1270 Korpus-Fixes in 343 Files. |
