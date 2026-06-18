@@ -32,9 +32,30 @@
     "discrimination",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Faires Verfahren",
+    "Bewegungsfreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Faires Verfahren",
+    "Bewegungsfreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Data protection",
+    "Right to privacy",
+    "Fair trial",
+    "Freedom of movement",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Thames Valley Police",
@@ -60,7 +81,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "Polizei-Bilddatenbank mit Millionen Polizeifotos - trotz Rechtswidrigkeits-Urteil weiter betrieben",
+      "description": "Die Police National Database (PND) speichert mehr als 19 Millionen Polizeifotos, von denen rund 16 Millionen per Gesichtserkennung durchsuchbar sind - darunter auch Aufnahmen nie verurteilter oder als Opfer erfasster Personen. Bereits 2012 entschied der High Court, dass die undifferenzierte Speicherung der Polizeifotos von Unverurteilten rechtswidrig ist. Das Innenministerium löschte die Bilder dennoch nicht, mit der Begründung, der Datenbank fehle eine Massenlösch-Funktion. Genau auf diesem Bestand basierte später der Falsch-Treffer gegen Alvi Choudhury.",
+      "title_de": "Polizei-Bilddatenbank mit Millionen Polizeifotos - trotz Rechtswidrigkeits-Urteil weiter betrieben",
+      "description_de": "Die Police National Database (PND) speichert mehr als 19 Millionen Polizeifotos, von denen rund 16 Millionen per Gesichtserkennung durchsuchbar sind - darunter auch Aufnahmen nie verurteilter oder als Opfer erfasster Personen. Bereits 2012 entschied der High Court, dass die undifferenzierte Speicherung der Polizeifotos von Unverurteilten rechtswidrig ist. Das Innenministerium löschte die Bilder dennoch nicht, mit der Begründung, der Datenbank fehle eine Massenlösch-Funktion. Genau auf diesem Bestand basierte später der Falsch-Treffer gegen Alvi Choudhury.",
+      "title_en": "Police image database with millions of custody photos - kept running despite an unlawfulness ruling",
+      "description_en": "The Police National Database (PND) holds more than 19 million custody photos, around 16 million of which are searchable by facial recognition - including images of people never convicted or recorded as crime victims. As early as 2012 the High Court ruled that the indiscriminate retention of custody photos of unconvicted people was unlawful. The Home Office nonetheless did not delete the images, arguing the database had no bulk-deletion capability. It was precisely this stock of images that later produced the false match against Alvi Choudhury.",
+      "sources": [
+        "https://www.computerweekly.com/news/366616908/UK-police-continue-to-hold-millions-of-custody-images-unlawfully"
+      ]
+    },
+    {
+      "date": "2023-11",
+      "phase": "doctrine",
+      "title": "Nationales Programm baut nachträgliche Gesichtserkennung als Routine-Ermittlungsmittel aus",
+      "description": "Im November 2023 startete ein gemeinsames Programm von Polizei (NPCC) und Innenministerium, das die nachträgliche Gesichtserkennung (Retrospective Facial Recognition) standardisierte und ausweitete. Polizeibehörden wie Thames Valley Police gleichen Tatort-Aufnahmen mit der PND ab, technisch über den Algorithmus Cognitec FaceVACS DBScan ID. Inzwischen werden landesweit über 25.000 solcher Abgleiche pro Monat durchgeführt. Die offizielle Doktrin behandelt einen Treffer nur als Ermittlungshinweis, der menschlich geprüft werden müsse - eine Sicherung, die im Fall Choudhury versagte.",
+      "title_de": "Nationales Programm baut nachträgliche Gesichtserkennung als Routine-Ermittlungsmittel aus",
+      "description_de": "Im November 2023 startete ein gemeinsames Programm von Polizei (NPCC) und Innenministerium, das die nachträgliche Gesichtserkennung (Retrospective Facial Recognition) standardisierte und ausweitete. Polizeibehörden wie Thames Valley Police gleichen Tatort-Aufnahmen mit der PND ab, technisch über den Algorithmus Cognitec FaceVACS DBScan ID. Inzwischen werden landesweit über 25.000 solcher Abgleiche pro Monat durchgeführt. Die offizielle Doktrin behandelt einen Treffer nur als Ermittlungshinweis, der menschlich geprüft werden müsse - eine Sicherung, die im Fall Choudhury versagte.",
+      "title_en": "National programme scales up retrospective facial recognition as a routine investigative tool",
+      "description_en": "In November 2023 a joint programme between policing (NPCC) and the Home Office standardised and expanded Retrospective Facial Recognition. Forces such as Thames Valley Police match crime-scene images against the PND using the Cognitec FaceVACS DBScan ID algorithm. More than 25,000 such searches are now run nationwide every month. The official doctrine treats a match merely as an intelligence indicator that must be reviewed by a human - a safeguard that failed in the Choudhury case.",
+      "sources": [
+        "https://libertyinvestigates.org.uk/articles/the-rise-of-facial-recognition-policing/"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "phase": "infrastructure",
+      "title": "Staatliches Prüfinstitut belegt erhöhte Fehlerrate bei Schwarzen und asiatischen Gesichtern",
+      "description": "Im Dezember 2025 dokumentierte das National Physical Laboratory (NPL) statistisch signifikante Fehlerraten-Unterschiede beim polizeilich genutzten Cognitec-Algorithmus FaceVACS-DBScan ID: Die Falsch-Treffer-Rate lag bei weißen Gesichtern bei 0,04 Prozent, bei asiatischen jedoch bei 4,0 und bei Schwarzen bei 5,5 Prozent. Dieser dokumentierte Bias war die technische Vorbedingung, die den Falsch-Treffer gegen einen britisch-bangladeschischen Mann wenige Wochen später wahrscheinlicher machte. Der Befund stützt den späteren Diskriminierungsvorwurf.",
+      "title_de": "Staatliches Prüfinstitut belegt erhöhte Fehlerrate bei Schwarzen und asiatischen Gesichtern",
+      "description_de": "Im Dezember 2025 dokumentierte das National Physical Laboratory (NPL) statistisch signifikante Fehlerraten-Unterschiede beim polizeilich genutzten Cognitec-Algorithmus FaceVACS-DBScan ID: Die Falsch-Treffer-Rate lag bei weißen Gesichtern bei 0,04 Prozent, bei asiatischen jedoch bei 4,0 und bei Schwarzen bei 5,5 Prozent. Dieser dokumentierte Bias war die technische Vorbedingung, die den Falsch-Treffer gegen einen britisch-bangladeschischen Mann wenige Wochen später wahrscheinlicher machte. Der Befund stützt den späteren Diskriminierungsvorwurf.",
+      "title_en": "Government testing institute documents higher error rates for Black and Asian faces",
+      "description_en": "In December 2025 the National Physical Laboratory (NPL) documented statistically significant error-rate differences in the police's Cognitec FaceVACS-DBScan ID algorithm: the false-match rate was 0.04 percent for white faces but 4.0 percent for Asian and 5.5 percent for Black subjects. This documented bias was the technical pre-condition that made the false match against a British Bangladeshi man weeks later more likely. The finding underpins the later discrimination claim.",
+      "sources": [
+        "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/12/statement-on-the-national-physical-laboratory-facial-recognition-technology-report/"
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "phase": "event",
+      "title": "Softwareentwickler wegen Falsch-Treffers fast zehn Stunden inhaftiert",
+      "description": "Am 8. Januar 2026 verhaftete die Thames Valley Police den 26-jährigen Softwareentwickler Alvi Choudhury in Southampton wegen eines 3.000-Pfund-Einbruchs in Milton Keynes, rund 100 Meilen entfernt. Grundlage war ein automatisierter Gesichtserkennungs-Treffer mit seinem Polizeifoto, das nur deshalb gespeichert war, weil er 2021 selbst Opfer eines Angriffs geworden war. Choudhury wurde in Handschellen abgeführt und fast zehn Stunden festgehalten, obwohl das CCTV-Bild einen deutlich jüngeren Mann mit hellerer Haut und anderen Gesichtszügen zeigte.",
+      "title_de": "Softwareentwickler wegen Falsch-Treffers fast zehn Stunden inhaftiert",
+      "description_de": "Am 8. Januar 2026 verhaftete die Thames Valley Police den 26-jährigen Softwareentwickler Alvi Choudhury in Southampton wegen eines 3.000-Pfund-Einbruchs in Milton Keynes, rund 100 Meilen entfernt. Grundlage war ein automatisierter Gesichtserkennungs-Treffer mit seinem Polizeifoto, das nur deshalb gespeichert war, weil er 2021 selbst Opfer eines Angriffs geworden war. Choudhury wurde in Handschellen abgeführt und fast zehn Stunden festgehalten, obwohl das CCTV-Bild einen deutlich jüngeren Mann mit hellerer Haut und anderen Gesichtszügen zeigte.",
+      "title_en": "Software engineer detained for nearly ten hours over a false match",
+      "description_en": "On 8 January 2026 Thames Valley Police arrested 26-year-old software engineer Alvi Choudhury in Southampton over a £3,000 burglary in Milton Keynes some 100 miles away. The basis was an automated facial-recognition match against his custody photo, which existed only because he had himself been the victim of an assault in 2021. Choudhury was handcuffed and held for nearly ten hours, even though the CCTV image showed a noticeably younger man with lighter skin and different features.",
+      "sources": [
+        "https://libertyinvestigates.org.uk/articles/facial-recognition-arrest-alvi-choudhury-police-bias/"
+      ]
+    },
+    {
+      "date": "2026-02",
+      "phase": "consequences",
+      "title": "Schadensersatzklage wegen rechtswidriger Haft, Datenschutz- und EMRK-Verstoß",
+      "description": "Im Februar 2026 beauftragte die Kanzlei DPP Law den Anwalt Nick Stanage mit einer Schadensersatzklage gegen Thames Valley Police und Hampshire Constabulary. Vorgeworfen werden rechtswidrige Inhaftierung (false imprisonment), Verstoß gegen das Datenschutzrecht, Verletzung von Artikel 8 EMRK und des Equality Act 2010. Der Fall verstärkte die öffentliche Debatte über polizeiliche Gesichtserkennung und die Forderung nach einem gesetzlichen Rahmen oder einem Einsatzverbot.",
+      "title_de": "Schadensersatzklage wegen rechtswidriger Haft, Datenschutz- und EMRK-Verstoß",
+      "description_de": "Im Februar 2026 beauftragte die Kanzlei DPP Law den Anwalt Nick Stanage mit einer Schadensersatzklage gegen Thames Valley Police und Hampshire Constabulary. Vorgeworfen werden rechtswidrige Inhaftierung (false imprisonment), Verstoß gegen das Datenschutzrecht, Verletzung von Artikel 8 EMRK und des Equality Act 2010. Der Fall verstärkte die öffentliche Debatte über polizeiliche Gesichtserkennung und die Forderung nach einem gesetzlichen Rahmen oder einem Einsatzverbot.",
+      "title_en": "Damages claim for false imprisonment, data-protection and ECHR breaches",
+      "description_en": "In February 2026 the firm DPP Law instructed barrister Nick Stanage to bring a damages claim against Thames Valley Police and Hampshire Constabulary. The claim alleges false imprisonment, breach of data-protection law, violation of Article 8 ECHR and the Equality Act 2010. The case intensified the public debate over police facial recognition and calls for a statutory framework or an outright ban.",
+      "sources": [
+        "https://www.doughtystreet.co.uk/news/automated-facial-recognition-software-innocent-man-arrested"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://libertyinvestigates.org.uk/articles/facial-recognition-arrest-alvi-choudhury-police-bias/",

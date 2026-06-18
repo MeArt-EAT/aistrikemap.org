@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "OpenClaw / Peter Steinberger",
@@ -41,7 +56,86 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2025-11",
+      "phase": "infrastructure",
+      "title": "OpenClaw entsteht als lokales KI-Agenten-Framework",
+      "description": "Der österreichische Entwickler Peter Steinberger startet im November 2025 ein Experiment namens WhatsApp Relay (später ClawdBot, dann OpenClaw), das ein Sprachmodell über Messenger steuerbar macht. Das Open-Source-Framework läuft als lokaler Gateway-Prozess, der Sitzungen, Werkzeuge und Anmeldedaten verwaltet und Shell-Befehle, Dateizugriffe und Web-Automatisierung im Namen des Nutzers ausführt. Damit entsteht ein hochprivilegierter Agent, der Zugangsdaten speichert und extern handeln kann.",
+      "title_de": "OpenClaw entsteht als lokales KI-Agenten-Framework",
+      "description_de": "Der österreichische Entwickler Peter Steinberger startet im November 2025 ein Experiment namens WhatsApp Relay (später ClawdBot, dann OpenClaw), das ein Sprachmodell über Messenger steuerbar macht. Das Open-Source-Framework läuft als lokaler Gateway-Prozess, der Sitzungen, Werkzeuge und Anmeldedaten verwaltet und Shell-Befehle, Dateizugriffe und Web-Automatisierung im Namen des Nutzers ausführt. Damit entsteht ein hochprivilegierter Agent, der Zugangsdaten speichert und extern handeln kann.",
+      "title_en": "OpenClaw emerges as a local AI agent framework",
+      "description_en": "In November 2025 Austrian developer Peter Steinberger starts an experiment called WhatsApp Relay (later ClawdBot, then OpenClaw) that makes a language model controllable via messengers. The open-source framework runs as a local gateway process managing sessions, tools and credentials, and executes shell commands, file access and web automation on the user's behalf. The result is a highly privileged agent that stores credentials and can act externally.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/OpenClaw"
+      ]
+    },
+    {
+      "date": "2026-01",
+      "phase": "doctrine",
+      "title": "Insecure-by-default: localhost wird blind vertraut",
+      "description": "OpenClaw folgt einer Local-First-Philosophie: Der Gateway bindet sich standardmäßig ohne Authentifizierung an die Netzwerkschnittstelle und behandelt jeden Zugriff über localhost als vertrauenswürdig. In der Praxis stellen viele Nutzer den Dienst hinter einen Reverse-Proxy (nginx/Caddy), wodurch externer Datenverkehr als lokal-vertrauter Befehl durchgereicht wird. Während OpenClaw im Januar 2026 zum am schnellsten wachsenden Open-Source-Projekt der GitHub-Geschichte wird, vervielfacht dieses Designmodell die Angriffsfläche.",
+      "title_de": "Insecure-by-default: localhost wird blind vertraut",
+      "description_de": "OpenClaw folgt einer Local-First-Philosophie: Der Gateway bindet sich standardmäßig ohne Authentifizierung an die Netzwerkschnittstelle und behandelt jeden Zugriff über localhost als vertrauenswürdig. In der Praxis stellen viele Nutzer den Dienst hinter einen Reverse-Proxy (nginx/Caddy), wodurch externer Datenverkehr als lokal-vertrauter Befehl durchgereicht wird. Während OpenClaw im Januar 2026 zum am schnellsten wachsenden Open-Source-Projekt der GitHub-Geschichte wird, vervielfacht dieses Designmodell die Angriffsfläche.",
+      "title_en": "Insecure by default: blind trust in localhost",
+      "description_en": "OpenClaw follows a local-first philosophy: the gateway binds to the network interface without authentication by default and treats any access via localhost as trusted. In practice many users place the service behind a reverse proxy (nginx/Caddy), so external traffic is passed through as a trusted local command. As OpenClaw becomes the fastest-growing open-source project in GitHub history in January 2026, this design model multiplies the attack surface.",
+      "sources": [
+        "https://venturebeat.com/security/openclaw-agentic-ai-security-risk-ciso-guide"
+      ]
+    },
+    {
+      "date": "2026-02-13",
+      "phase": "event",
+      "title": "Erster Infostealer greift OpenClaw-Zugangsdaten ab",
+      "description": "Am 13. Februar 2026 dokumentiert Hudson Rock den ersten realen Fall, in dem Infostealer-Malware gezielt die Konfigurationsdaten eines KI-Agenten exfiltriert. Eine Vidar-Variante stiehlt OpenClaw-Konfigurationsdateien mit Gateway-Tokens, kryptografischen Schlüsseln, API-Keys und gespeicherten Verhaltensregeln vom Entwicklerrechner. Mit dem Gateway-Token als Generalschlüssel können Angreifer sich remote mit der OpenClaw-Instanz verbinden oder sich als legitimer Client ausgeben.",
+      "title_de": "Erster Infostealer greift OpenClaw-Zugangsdaten ab",
+      "description_de": "Am 13. Februar 2026 dokumentiert Hudson Rock den ersten realen Fall, in dem Infostealer-Malware gezielt die Konfigurationsdaten eines KI-Agenten exfiltriert. Eine Vidar-Variante stiehlt OpenClaw-Konfigurationsdateien mit Gateway-Tokens, kryptografischen Schlüsseln, API-Keys und gespeicherten Verhaltensregeln vom Entwicklerrechner. Mit dem Gateway-Token als Generalschlüssel können Angreifer sich remote mit der OpenClaw-Instanz verbinden oder sich als legitimer Client ausgeben.",
+      "title_en": "First infostealer harvests OpenClaw credentials",
+      "description_en": "On 13 February 2026 Hudson Rock documents the first real-world case in which infostealer malware specifically exfiltrates an AI agent's configuration data. A Vidar variant steals OpenClaw configuration files containing gateway tokens, cryptographic keys, API keys and stored behavioural rules from the developer's machine. With the gateway token as a master key, attackers can connect remotely to the OpenClaw instance or impersonate the legitimate client.",
+      "sources": [
+        "https://thehackernews.com/2026/02/infostealer-steals-openclaw-ai-agent.html"
+      ]
+    },
+    {
+      "date": "2026-02",
+      "phase": "event",
+      "title": "Zehntausende ungeschützte Instanzen und CVE-2026-25253",
+      "description": "Sicherheitsforscher beobachten, wie die Zahl der ohne Authentifizierung im Netz erreichbaren OpenClaw-Instanzen binnen einer Woche von rund 1.000 (Censys) auf zehntausende ansteigt; unabhängige Scans zählen über 42.000 exponierte Instanzen, ein großer Teil mit Authentifizierungs-Bypass. Die Schwachstelle CVE-2026-25253 (CVSS 8.8) ermöglicht eine Ein-Klick-Übernahme: Eine präparierte Webseite lässt den Agenten das Gateway-Token leaken und verschafft Angreifern in Millisekunden volle Kontrolle inklusive Codeausführung.",
+      "title_de": "Zehntausende ungeschützte Instanzen und CVE-2026-25253",
+      "description_de": "Sicherheitsforscher beobachten, wie die Zahl der ohne Authentifizierung im Netz erreichbaren OpenClaw-Instanzen binnen einer Woche von rund 1.000 (Censys) auf zehntausende ansteigt; unabhängige Scans zählen über 42.000 exponierte Instanzen, ein großer Teil mit Authentifizierungs-Bypass. Die Schwachstelle CVE-2026-25253 (CVSS 8.8) ermöglicht eine Ein-Klick-Übernahme: Eine präparierte Webseite lässt den Agenten das Gateway-Token leaken und verschafft Angreifern in Millisekunden volle Kontrolle inklusive Codeausführung.",
+      "title_en": "Tens of thousands of unsecured instances and CVE-2026-25253",
+      "description_en": "Security researchers observe the number of OpenClaw instances reachable online without authentication rising from around 1,000 (Censys) to tens of thousands within a week; independent scans count over 42,000 exposed instances, many with authentication bypass. The vulnerability CVE-2026-25253 (CVSS 8.8) enables a one-click takeover: a crafted web page makes the agent leak its gateway token and grants attackers full control including code execution in milliseconds.",
+      "sources": [
+        "https://www.proarch.com/blog/threats-vulnerabilities/openclaw-rce-vulnerability-cve-2026-25253"
+      ]
+    },
+    {
+      "date": "2026-02-15",
+      "phase": "consequences",
+      "title": "Hardening-Tool SecureClaw und Branchen-Weckruf",
+      "description": "Als Reaktion auf die Krise veröffentlicht Alex Polyakov (Adversa AI) das freie Open-Source-Tool SecureClaw, das mit 55 automatisierten Prüfungen einzelne Deployments auditiert und Schutzmaßnahmen auf die OWASP Agentic Security Initiative, MITRE ATLAS und CoSAI abbildet. Anbieter wie Kaspersky, Acronis und NCC Group warnen, dass agentische KI mit Klartext-Zugangsdaten und autonomer Handlungsfähigkeit ein grundlegend neues Sicherheitsmodell erfordert.",
+      "title_de": "Hardening-Tool SecureClaw und Branchen-Weckruf",
+      "description_de": "Als Reaktion auf die Krise veröffentlicht Alex Polyakov (Adversa AI) das freie Open-Source-Tool SecureClaw, das mit 55 automatisierten Prüfungen einzelne Deployments auditiert und Schutzmaßnahmen auf die OWASP Agentic Security Initiative, MITRE ATLAS und CoSAI abbildet. Anbieter wie Kaspersky, Acronis und NCC Group warnen, dass agentische KI mit Klartext-Zugangsdaten und autonomer Handlungsfähigkeit ein grundlegend neues Sicherheitsmodell erfordert.",
+      "title_en": "Hardening tool SecureClaw and an industry wake-up call",
+      "description_en": "In response to the crisis Alex Polyakov (Adversa AI) releases the free open-source tool SecureClaw, which audits individual deployments with 55 automated checks and maps protections to the OWASP Agentic Security Initiative, MITRE ATLAS and CoSAI. Vendors such as Kaspersky, Acronis and NCC Group warn that agentic AI with plaintext credentials and autonomous capability demands a fundamentally new security model.",
+      "sources": [
+        "https://www.securityweek.com/openclaw-security-issues-continue-as-secureclaw-open-source-tool-debuts/"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "phase": "consequences",
+      "title": "OpenAI verpflichtet Steinberger mitten in der Krise",
+      "description": "Während die Sicherheitskrise eskaliert, wird bekannt, dass OpenAI den OpenClaw-Schöpfer Peter Steinberger anwirbt. Der Wechsel verschärft die Debatte über Verantwortung und Governance: Ein viral verbreitetes, insecure-by-default ausgeliefertes Agenten-Framework hinterlässt zehntausende exponierte Nutzer, während sein Urheber zu einem führenden KI-Labor wechselt.",
+      "title_de": "OpenAI verpflichtet Steinberger mitten in der Krise",
+      "description_de": "Während die Sicherheitskrise eskaliert, wird bekannt, dass OpenAI den OpenClaw-Schöpfer Peter Steinberger anwirbt. Der Wechsel verschärft die Debatte über Verantwortung und Governance: Ein viral verbreitetes, insecure-by-default ausgeliefertes Agenten-Framework hinterlässt zehntausende exponierte Nutzer, während sein Urheber zu einem führenden KI-Labor wechselt.",
+      "title_en": "OpenAI hires Steinberger in the middle of the crisis",
+      "description_en": "As the security crisis escalates, it emerges that OpenAI has hired OpenClaw creator Peter Steinberger. The move sharpens the debate over responsibility and governance: a virally adopted, insecure-by-default agent framework leaves tens of thousands of exposed users while its creator joins a leading AI lab.",
+      "sources": [
+        "https://www.theregister.com/2026/02/16/open_ai_grabs_openclaw/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2026/02/16/open_ai_grabs_openclaw/",

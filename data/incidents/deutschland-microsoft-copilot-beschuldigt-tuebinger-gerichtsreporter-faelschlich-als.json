@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Recht auf Achtung des guten Rufs"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Recht auf Achtung des guten Rufs"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Human dignity",
+    "Protection from manipulation",
+    "Right to protection of reputation"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -53,7 +71,62 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-02",
+      "phase": "infrastructure",
+      "title": "Microsoft integriert generative KI in Bing/Copilot",
+      "description": "Microsoft startete Anfang 2023 den auf OpenAI-Modellen basierenden Bing-Chat, der später zu Copilot wurde, und band den Chatbot tief in Suche und Windows ein. Die zugrundeliegenden großen Sprachmodelle aggregieren Webinhalte zu plausibel klingenden, aber nicht zwingend faktischen Aussagen über reale Personen. Diese Architektur ist die technische Vorbedingung dafür, dass Berichterstattung über Straftaten dem berichtenden Journalisten zugeschrieben werden konnte.",
+      "title_de": "Microsoft integriert generative KI in Bing/Copilot",
+      "description_de": "Microsoft startete Anfang 2023 den auf OpenAI-Modellen basierenden Bing-Chat, der später zu Copilot wurde, und band den Chatbot tief in Suche und Windows ein. Die zugrundeliegenden großen Sprachmodelle aggregieren Webinhalte zu plausibel klingenden, aber nicht zwingend faktischen Aussagen über reale Personen. Diese Architektur ist die technische Vorbedingung dafür, dass Berichterstattung über Straftaten dem berichtenden Journalisten zugeschrieben werden konnte.",
+      "title_en": "Microsoft integrates generative AI into Bing/Copilot",
+      "description_en": "In early 2023 Microsoft launched the OpenAI-based Bing Chat, later rebranded Copilot, and embedded the chatbot deep into search and Windows. The underlying large language models aggregate web content into plausible-sounding but not necessarily factual statements about real people. This architecture is the technical precondition that allowed reporting about crimes to be attributed to the journalist who covered them.",
+      "sources": [
+        "https://www.theregister.com/2024/08/26/microsoft_bing_copilot_ai_halluciation/"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Massen-Rollout von Copilot als Antwort-Maschine ohne Personenschutz",
+      "description": "Microsoft positionierte Copilot 2024 aggressiv als Standard-Assistenten in Windows und Bing-Suche, der auf direkte Fragen unmittelbar zusammenfassende Antworten über Personen liefert. Das Geschäftsmodell, einen autoritativ wirkenden Antwort-Generator breit auszurollen, ohne robuste Schutzmechanismen gegen die Verwechslung von Tätern und unbeteiligten Berichterstattern, legte die Grundlage für rufschädigende Falschaussagen.",
+      "title_de": "Massen-Rollout von Copilot als Antwort-Maschine ohne Personenschutz",
+      "description_de": "Microsoft positionierte Copilot 2024 aggressiv als Standard-Assistenten in Windows und Bing-Suche, der auf direkte Fragen unmittelbar zusammenfassende Antworten über Personen liefert. Das Geschäftsmodell, einen autoritativ wirkenden Antwort-Generator breit auszurollen, ohne robuste Schutzmechanismen gegen die Verwechslung von Tätern und unbeteiligten Berichterstattern, legte die Grundlage für rufschädigende Falschaussagen.",
+      "title_en": "Mass rollout of Copilot as an answer machine without personal-data safeguards",
+      "description_en": "In 2024 Microsoft aggressively positioned Copilot as the default assistant in Windows and Bing search, returning immediate summarising answers about individuals in response to direct questions. The business model of broadly deploying an authoritative-seeming answer generator without robust safeguards against conflating perpetrators with the uninvolved reporters covering them laid the groundwork for reputation-damaging falsehoods.",
+      "sources": [
+        "https://the-decoder.com/microsofts-copilot-falsely-accuses-court-reporter-of-crimes-he-covered/"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "event",
+      "title": "Copilot beschuldigt Gerichtsreporter Bernklau fälschlich schwerster Straftaten",
+      "description": "Microsofts Copilot beschrieb den langjährigen Tübinger Gerichtsreporter Martin Bernklau fälschlich als Kinderschänder, Witwenbetrüger und aus der Psychiatrie entflohenen Häftling. Die KI verwechselte ihn systematisch mit Tätern, über deren Prozesse er berichtet hatte, und nannte zusätzlich seine vollständige Adresse, Telefonnummer und einen Routenplaner zu seiner Wohnung. Microsoft filterte die Antworten kurzfristig, die Vorwürfe tauchten jedoch wieder auf.",
+      "title_de": "Copilot beschuldigt Gerichtsreporter Bernklau fälschlich schwerster Straftaten",
+      "description_de": "Microsofts Copilot beschrieb den langjährigen Tübinger Gerichtsreporter Martin Bernklau fälschlich als Kinderschänder, Witwenbetrüger und aus der Psychiatrie entflohenen Häftling. Die KI verwechselte ihn systematisch mit Tätern, über deren Prozesse er berichtet hatte, und nannte zusätzlich seine vollständige Adresse, Telefonnummer und einen Routenplaner zu seiner Wohnung. Microsoft filterte die Antworten kurzfristig, die Vorwürfe tauchten jedoch wieder auf.",
+      "title_en": "Copilot falsely accuses court reporter Bernklau of the gravest crimes",
+      "description_en": "Microsoft's Copilot falsely described long-time Tübingen court reporter Martin Bernklau as a child molester, a widow fraudster and a psychiatric-ward escapee. The AI systematically confused him with the defendants whose trials he had covered, and additionally disclosed his full address, phone number and a route planner to his home. Microsoft briefly filtered the responses, but the accusations reappeared.",
+      "sources": [
+        "https://www.heise.de/en/news/Copilot-turns-a-court-reporter-into-a-child-molester-9840612.html",
+        "https://www.theregister.com/2024/08/26/microsoft_bing_copilot_ai_halluciation/"
+      ]
+    },
+    {
+      "date": "2024-08-23",
+      "phase": "consequences",
+      "title": "Behörden weichen aus, Bernklau klagt gegen Microsoft",
+      "description": "Die Tübinger Staatsanwaltschaft sah keine Straftat, da die Falschbehauptungen von einer KI und nicht von einer Person stammten; die bayerische Datenschutzaufsicht kontaktierte Microsoft, das die Antworten zunächst filterte. Da die Vorwürfe wiederkehrten, beauftragte Bernklau einen Anwalt und ging zivilrechtlich gegen Microsoft auf Unterlassung wegen Rufschädigung und Persönlichkeitsrechtsverletzung vor. Der Fall wurde zu einem vielzitierten Präzedenzfall zur Haftung für KI-Verleumdung.",
+      "title_de": "Behörden weichen aus, Bernklau klagt gegen Microsoft",
+      "description_de": "Die Tübinger Staatsanwaltschaft sah keine Straftat, da die Falschbehauptungen von einer KI und nicht von einer Person stammten; die bayerische Datenschutzaufsicht kontaktierte Microsoft, das die Antworten zunächst filterte. Da die Vorwürfe wiederkehrten, beauftragte Bernklau einen Anwalt und ging zivilrechtlich gegen Microsoft auf Unterlassung wegen Rufschädigung und Persönlichkeitsrechtsverletzung vor. Der Fall wurde zu einem vielzitierten Präzedenzfall zur Haftung für KI-Verleumdung.",
+      "title_en": "Authorities deflect, Bernklau sues Microsoft",
+      "description_en": "Tübingen prosecutors found no criminal offence, arguing the false claims came from an AI rather than a person; the Bavarian data protection authority contacted Microsoft, which initially filtered the responses. Because the accusations recurred, Bernklau retained a lawyer and pursued a civil injunction against Microsoft for defamation and violation of personality rights. The case became a widely cited precedent on liability for AI-generated defamation.",
+      "sources": [
+        "https://getcoai.com/news/copilot-falsely-accuses-journalist-who-is-now-suing-microsoft/",
+        "https://the-decoder.com/microsofts-copilot-falsely-accuses-court-reporter-of-crimes-he-covered/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2024/08/26/microsoft_bing_copilot_ai_halluciation/",

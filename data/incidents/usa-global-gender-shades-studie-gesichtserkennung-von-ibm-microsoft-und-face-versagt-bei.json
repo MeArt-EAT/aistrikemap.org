@@ -31,9 +31,27 @@
     "discrimination",
     "facial-recognition"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Gleichbehandlung",
+    "Privatsphäre",
+    "Faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Gleichbehandlung",
+    "Privatsphäre",
+    "Faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Protection against discrimination",
+    "Human dignity",
+    "Equal treatment",
+    "Privacy",
+    "Fair trial / due process"
+  ],
   "asm:actors": [
     {
       "name": "Joy Buolamwini / Algorithmic Justice League / MIT Media Lab",
@@ -58,7 +76,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Gesichtserkennung wird zum Cloud-Service von Microsoft, IBM und Amazon",
+      "description": "Ab 2016 wurde Gesichts- und Geschlechtsklassifikation fester Bestandteil der Cloud-Plattformen von Microsoft (Azure Face API), IBM (Watson Visual Recognition) und Megvii (Face++). Jedes Unternehmen konnte die APIs gegen geringe Gebühren nutzen. Trainiert wurden die Modelle auf Benchmark-Datensätzen wie IJB-A und Adience, die zu 79,6 beziehungsweise 86,2 Prozent aus hellhäutigen Personen bestanden und dunkelhäutige Frauen kaum abbildeten.",
+      "title_de": "Gesichtserkennung wird zum Cloud-Service von Microsoft, IBM und Amazon",
+      "description_de": "Ab 2016 wurde Gesichts- und Geschlechtsklassifikation fester Bestandteil der Cloud-Plattformen von Microsoft (Azure Face API), IBM (Watson Visual Recognition) und Megvii (Face++). Jedes Unternehmen konnte die APIs gegen geringe Gebühren nutzen. Trainiert wurden die Modelle auf Benchmark-Datensätzen wie IJB-A und Adience, die zu 79,6 beziehungsweise 86,2 Prozent aus hellhäutigen Personen bestanden und dunkelhäutige Frauen kaum abbildeten.",
+      "title_en": "Facial recognition becomes a cloud service from Microsoft, IBM and Amazon",
+      "description_en": "From 2016 on, face and gender classification became a standard feature of the cloud platforms of Microsoft (Azure Face API), IBM (Watson Visual Recognition) and Megvii (Face++). Any company could use the APIs for minimal fees. The models were trained on benchmark datasets such as IJB-A and Adience, which were 79.6 and 86.2 percent light-skinned respectively and barely represented dark-skinned women.",
+      "sources": [
+        "https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212"
+      ]
+    },
+    {
+      "date": "2017",
+      "phase": "doctrine",
+      "title": "Verkauf ohne Bias-Audit — die Annahme der Neutralität",
+      "description": "Die Anbieter vermarkteten ihre Gesichtserkennungs-APIs als objektive, einsatzbereite Werkzeuge und verkauften sie unter anderem an Strafverfolgungsbehörden, bevor systematische Genauigkeits-Audits nach demografischen Gruppen durchgeführt wurden. Die unausgesprochene Doktrin lautete, dass die Modelle universell funktionieren; Disparitäten zwischen Hautfarben und Geschlechtern wurden weder gemessen noch offengelegt.",
+      "title_de": "Verkauf ohne Bias-Audit — die Annahme der Neutralität",
+      "description_de": "Die Anbieter vermarkteten ihre Gesichtserkennungs-APIs als objektive, einsatzbereite Werkzeuge und verkauften sie unter anderem an Strafverfolgungsbehörden, bevor systematische Genauigkeits-Audits nach demografischen Gruppen durchgeführt wurden. Die unausgesprochene Doktrin lautete, dass die Modelle universell funktionieren; Disparitäten zwischen Hautfarben und Geschlechtern wurden weder gemessen noch offengelegt.",
+      "title_en": "Sold without a bias audit — the assumption of neutrality",
+      "description_en": "Vendors marketed their facial-recognition APIs as objective, ready-to-use tools and sold them, among others, to law-enforcement agencies before any systematic accuracy audits by demographic group were performed. The unspoken doctrine was that the models work universally; disparities across skin tones and genders were neither measured nor disclosed.",
+      "sources": [
+        "https://www.eff.org/wp/law-enforcement-use-face-recognition"
+      ]
+    },
+    {
+      "date": "2018-02-09",
+      "phase": "event",
+      "title": "Gender-Shades-Studie deckt bis zu 34,7 Prozent Fehlerrate bei Schwarzen Frauen auf",
+      "description": "Joy Buolamwini (MIT) und Timnit Gebru (Microsoft Research) präsentierten auf der FAT*-Konferenz die Gender-Shades-Studie. Mit dem selbst erstellten Pilot Parliaments Benchmark (44,4 Prozent Frauen, 47 Prozent dunkelhäutig) prüften sie die APIs von IBM, Microsoft und Face++. Ergebnis: unter 1 Prozent Fehler bei hellhäutigen Männern, aber bis zu 34,7 Prozent bei dunkelhäutigen Frauen. IBM schnitt mit rund 35 Prozent am schlechtesten ab, Microsoft mit 20,8 Prozent.",
+      "title_de": "Gender-Shades-Studie deckt bis zu 34,7 Prozent Fehlerrate bei Schwarzen Frauen auf",
+      "description_de": "Joy Buolamwini (MIT) und Timnit Gebru (Microsoft Research) präsentierten auf der FAT*-Konferenz die Gender-Shades-Studie. Mit dem selbst erstellten Pilot Parliaments Benchmark (44,4 Prozent Frauen, 47 Prozent dunkelhäutig) prüften sie die APIs von IBM, Microsoft und Face++. Ergebnis: unter 1 Prozent Fehler bei hellhäutigen Männern, aber bis zu 34,7 Prozent bei dunkelhäutigen Frauen. IBM schnitt mit rund 35 Prozent am schlechtesten ab, Microsoft mit 20,8 Prozent.",
+      "title_en": "Gender Shades study reveals up to 34.7 percent error rate for Black women",
+      "description_en": "Joy Buolamwini (MIT) and Timnit Gebru (Microsoft Research) presented the Gender Shades study at the FAT* conference. Using their self-built Pilot Parliaments Benchmark (44.4 percent female, 47 percent dark-skinned), they audited the APIs of IBM, Microsoft and Face++. Result: under 1 percent error for light-skinned men, but up to 34.7 percent for dark-skinned women. IBM was worst at around 35 percent, Microsoft at 20.8 percent.",
+      "sources": [
+        "https://proceedings.mlr.press/v81/buolamwini18a.html"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "consequences",
+      "title": "Anbieter überarbeiten ihre APIs binnen Monaten",
+      "description": "Innerhalb von weniger als sechs Monaten nach der Veröffentlichung brachten Microsoft und IBM überarbeitete API-Versionen heraus, die die Fehlerraten bei dunkelhäutigen Frauen deutlich senkten. Die Studie wurde zum Gründungsbeleg der Algorithmic Justice League und etablierte demografische Genauigkeits-Audits als Standardforderung an kommerzielle KI.",
+      "title_de": "Anbieter überarbeiten ihre APIs binnen Monaten",
+      "description_de": "Innerhalb von weniger als sechs Monaten nach der Veröffentlichung brachten Microsoft und IBM überarbeitete API-Versionen heraus, die die Fehlerraten bei dunkelhäutigen Frauen deutlich senkten. Die Studie wurde zum Gründungsbeleg der Algorithmic Justice League und etablierte demografische Genauigkeits-Audits als Standardforderung an kommerzielle KI.",
+      "title_en": "Vendors revise their APIs within months",
+      "description_en": "Within less than six months of publication, Microsoft and IBM released revised API versions that markedly reduced error rates for dark-skinned women. The study became a founding piece of evidence for the Algorithmic Justice League and established demographic accuracy audits as a standard expectation for commercial AI.",
+      "sources": [
+        "https://onezero.medium.com/how-a-2018-research-paper-led-to-amazon-and-ibm-curbing-their-facial-recognition-programs-db9d6cb8a420"
+      ]
+    },
+    {
+      "date": "2020-06",
+      "phase": "consequences",
+      "title": "IBM steigt aus, Microsoft und Amazon verhängen Moratorien",
+      "description": "Im Juni 2020, im Zuge der Black-Lives-Matter-Proteste, kündigte IBM-CEO Arvind Krishna an, keine Gesichtserkennung mehr zu verkaufen oder zu erforschen, und verwies auf das Risiko rassistischer Überwachung. Stunden später verhängte Amazon ein einjähriges Moratorium für den Polizeieinsatz von Rekognition, Microsoft zog mit einem Verkaufsstopp an US-Polizeibehörden nach. Die Gender-Shades-Arbeit gilt als wesentlicher Auslöser dieser Kehrtwende.",
+      "title_de": "IBM steigt aus, Microsoft und Amazon verhängen Moratorien",
+      "description_de": "Im Juni 2020, im Zuge der Black-Lives-Matter-Proteste, kündigte IBM-CEO Arvind Krishna an, keine Gesichtserkennung mehr zu verkaufen oder zu erforschen, und verwies auf das Risiko rassistischer Überwachung. Stunden später verhängte Amazon ein einjähriges Moratorium für den Polizeieinsatz von Rekognition, Microsoft zog mit einem Verkaufsstopp an US-Polizeibehörden nach. Die Gender-Shades-Arbeit gilt als wesentlicher Auslöser dieser Kehrtwende.",
+      "title_en": "IBM exits, Microsoft and Amazon impose moratoria",
+      "description_en": "In June 2020, amid the Black Lives Matter protests, IBM CEO Arvind Krishna announced the company would no longer sell or research facial recognition, citing the risk of racially biased surveillance. Hours later Amazon imposed a one-year moratorium on police use of Rekognition, and Microsoft followed by halting sales to US police departments. The Gender Shades work is regarded as a key trigger of this turnaround.",
+      "sources": [
+        "https://www.npr.org/2020/06/09/873298837/ibm-abandons-facial-recognition-products-condemns-racially-biased-surveillance"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf",

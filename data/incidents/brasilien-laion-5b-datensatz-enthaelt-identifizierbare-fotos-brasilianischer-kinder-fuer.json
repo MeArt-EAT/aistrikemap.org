@@ -31,9 +31,27 @@
     "data-misuse",
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Kinderrechte",
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor sexualisierter Gewalt",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Kinderrechte",
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor sexualisierter Gewalt",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Children's rights",
+    "Data protection",
+    "Privacy",
+    "Protection from sexual violence",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Human Rights Watch",
@@ -54,7 +72,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-03",
+      "phase": "infrastructure",
+      "title": "LAION veroeffentlicht den Datensatz LAION-5B aus Web-Scraping",
+      "description": "Im Maerz 2022 veroeffentlichte der deutsche Verein LAION den offenen Datensatz LAION-5B mit 5,85 Milliarden Bild-Text-Paaren. Die Daten stammen aus Common-Crawl-Archiven öffentlicher Webseiten (Schwerpunkt 2014 bis 2021): Die Pipeline extrahierte aus jedem <img>-Tag die Bild-URL und den Alt-Text als Bildunterschrift. LAION-5B wurde zur Trainingsgrundlage einer ganzen Generation generativer Bildmodelle, darunter Stable Diffusion.",
+      "title_de": "LAION veroeffentlicht den Datensatz LAION-5B aus Web-Scraping",
+      "description_de": "Im Maerz 2022 veroeffentlichte der deutsche Verein LAION den offenen Datensatz LAION-5B mit 5,85 Milliarden Bild-Text-Paaren. Die Daten stammen aus Common-Crawl-Archiven öffentlicher Webseiten (Schwerpunkt 2014 bis 2021): Die Pipeline extrahierte aus jedem <img>-Tag die Bild-URL und den Alt-Text als Bildunterschrift. LAION-5B wurde zur Trainingsgrundlage einer ganzen Generation generativer Bildmodelle, darunter Stable Diffusion.",
+      "title_en": "LAION releases the web-scraped LAION-5B dataset",
+      "description_en": "In March 2022 the German non-profit LAION released the open dataset LAION-5B with 5.85 billion image-text pairs. The data came from Common Crawl archives of public web pages (mostly 2014-2021): the pipeline extracted the image URL and the alt text as a caption from every <img> tag. LAION-5B became the training basis for an entire generation of generative image models, including Stable Diffusion.",
+      "sources": [
+        "https://laion.ai/blog/laion-5b/"
+      ]
+    },
+    {
+      "date": "2022",
+      "phase": "doctrine",
+      "title": "Geschaeftslogik 'öffentlich = nutzbar' ohne Einwilligung",
+      "description": "Der Aufbau folgte der in der KI-Branche verbreiteten Annahme, dass im offenen Web auffindbare Bilder ohne gesonderte Einwilligung für Training genutzt werden dürfen. Weder LAION noch die quellenden Plattformen holten Einwilligungen der abgebildeten Personen ein; auch Fotos von Kindern aus Familienblogs, Schul- und YouTube-Seiten flossen ungeprueft ein. Es gab keine systematische Filterung nach abgebildeten Minderjaehrigen.",
+      "title_de": "Geschaeftslogik 'öffentlich = nutzbar' ohne Einwilligung",
+      "description_de": "Der Aufbau folgte der in der KI-Branche verbreiteten Annahme, dass im offenen Web auffindbare Bilder ohne gesonderte Einwilligung für Training genutzt werden dürfen. Weder LAION noch die quellenden Plattformen holten Einwilligungen der abgebildeten Personen ein; auch Fotos von Kindern aus Familienblogs, Schul- und YouTube-Seiten flossen ungeprueft ein. Es gab keine systematische Filterung nach abgebildeten Minderjaehrigen.",
+      "title_en": "Business logic of 'public means usable' without consent",
+      "description_en": "The build followed the AI industry's common assumption that images findable on the open web may be used for training without separate consent. Neither LAION nor the source platforms obtained consent from the people depicted; photos of children from family blogs, school and YouTube pages were ingested unchecked. There was no systematic filtering for depicted minors.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/LAION"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "doctrine",
+      "title": "Stanford findet CSAM in LAION-5B, Datensatz wird zurueckgezogen",
+      "description": "Im Dezember 2023 identifizierten Forschende des Stanford Internet Observatory ueber 3.200 mutmassliche Verweise auf Darstellungen sexuellen Kindesmissbrauchs (CSAM) in LAION-5B, von denen 1.008 extern bestaetigt wurden. LAION zog den Datensatz daraufhin vorlaeufig aus der öffentlichen Verteilung zurueck. Der Befund machte deutlich, dass der ungeprueft gescrapte Korpus systematisch schaedliche Inhalte ueber Kinder enthielt.",
+      "title_de": "Stanford findet CSAM in LAION-5B, Datensatz wird zurueckgezogen",
+      "description_de": "Im Dezember 2023 identifizierten Forschende des Stanford Internet Observatory ueber 3.200 mutmassliche Verweise auf Darstellungen sexuellen Kindesmissbrauchs (CSAM) in LAION-5B, von denen 1.008 extern bestaetigt wurden. LAION zog den Datensatz daraufhin vorlaeufig aus der öffentlichen Verteilung zurueck. Der Befund machte deutlich, dass der ungeprueft gescrapte Korpus systematisch schaedliche Inhalte ueber Kinder enthielt.",
+      "title_en": "Stanford finds CSAM in LAION-5B, dataset is withdrawn",
+      "description_en": "In December 2023 researchers at the Stanford Internet Observatory identified more than 3,200 suspected links to child sexual abuse material (CSAM) in LAION-5B, 1,008 of which were externally validated. LAION temporarily withdrew the dataset from public distribution. The finding showed that the unchecked scraped corpus systematically contained harmful content about children.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/LAION"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "event",
+      "title": "HRW findet ueber 170 identifizierbare Fotos brasilianischer Kinder",
+      "description": "Human Rights Watch identifizierte im Juni 2024 ueber 170 Fotos brasilianischer Kinder aus zehn Bundesstaaten in LAION-5B, oft mit Namen, Alter und Ort. Die Organisation untersuchte nur 0,0001 Prozent des Datensatzes, sodass die Dunkelziffer weit hoeher liegen duerfte. Mindestens 85 Maedchen berichteten zudem von Belaestigungen durch Mitschueler, die KI-Tools zur Erzeugung sexueller Deepfakes nutzten.",
+      "title_de": "HRW findet ueber 170 identifizierbare Fotos brasilianischer Kinder",
+      "description_de": "Human Rights Watch identifizierte im Juni 2024 ueber 170 Fotos brasilianischer Kinder aus zehn Bundesstaaten in LAION-5B, oft mit Namen, Alter und Ort. Die Organisation untersuchte nur 0,0001 Prozent des Datensatzes, sodass die Dunkelziffer weit hoeher liegen duerfte. Mindestens 85 Maedchen berichteten zudem von Belaestigungen durch Mitschueler, die KI-Tools zur Erzeugung sexueller Deepfakes nutzten.",
+      "title_en": "HRW finds over 170 identifiable photos of Brazilian children",
+      "description_en": "In June 2024 Human Rights Watch identified more than 170 photos of Brazilian children from ten states in LAION-5B, often with names, ages and locations. The organisation reviewed just 0.0001% of the dataset, suggesting the true scale is far larger. At least 85 girls also reported harassment by classmates using AI tools to create sexual deepfakes.",
+      "sources": [
+        "https://www.hrw.org/news/2024/06/10/brazil-childrens-personal-photos-misused-power-ai-tools"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "consequences",
+      "title": "LAION entfernt Verweise und veroeffentlicht bereinigtes Re-LAION-5B",
+      "description": "Nach dem HRW-Hinweis entfernte LAION einige der gemeldeten Verweise. Am 30. August 2024 veroeffentlichte der Verein in Zusammenarbeit mit der Internet Watch Foundation, dem Canadian Centre for Child Protection und Stanford eine bereinigte Nachfolgeversion Re-LAION-5B. Der Fall verstaerkte die Debatte ueber Einwilligung, Kinderschutz und das Recht auf Loeschung in KI-Trainingsdaten.",
+      "title_de": "LAION entfernt Verweise und veroeffentlicht bereinigtes Re-LAION-5B",
+      "description_de": "Nach dem HRW-Hinweis entfernte LAION einige der gemeldeten Verweise. Am 30. August 2024 veroeffentlichte der Verein in Zusammenarbeit mit der Internet Watch Foundation, dem Canadian Centre for Child Protection und Stanford eine bereinigte Nachfolgeversion Re-LAION-5B. Der Fall verstaerkte die Debatte ueber Einwilligung, Kinderschutz und das Recht auf Loeschung in KI-Trainingsdaten.",
+      "title_en": "LAION removes links and releases cleaned Re-LAION-5B",
+      "description_en": "Following the HRW notification LAION removed some of the flagged links. On 30 August 2024 the non-profit, in collaboration with the Internet Watch Foundation, the Canadian Centre for Child Protection and Stanford, released a cleaned successor, Re-LAION-5B. The case intensified the debate over consent, child protection and the right to erasure in AI training data.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/LAION"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.hrw.org/news/2024/06/10/brazil-childrens-personal-photos-misused-power-ai-tools",

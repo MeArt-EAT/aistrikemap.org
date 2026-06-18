@@ -26,9 +26,27 @@
     "deepfakes",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Kinderrechte",
+    "Schutz vor sexueller Ausbeutung",
+    "Wuerde des Menschen",
+    "Datenschutz",
+    "Recht auf Privatsphäre"
+  ],
+  "asm:affectedRights_de": [
+    "Kinderrechte",
+    "Schutz vor sexueller Ausbeutung",
+    "Wuerde des Menschen",
+    "Datenschutz",
+    "Recht auf Privatsphäre"
+  ],
+  "asm:affectedRights_en": [
+    "Children's rights",
+    "Protection from sexual exploitation",
+    "Human dignity",
+    "Data protection",
+    "Right to privacy"
+  ],
   "asm:actors": [
     {
       "name": "MuahAI / Muah.AI",
@@ -40,7 +58,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-04",
+      "phase": "infrastructure",
+      "title": "Muah.AI startet als ungefilterte Companion-Plattform",
+      "description": "Muah.AI ging im April 2023 als KI-Companion-Plattform an den Start, die Text-Chat, Sprache, Telefonate und KI-generierte Fotos zu individuell anpassbaren virtuellen Partnern verbindet. Laut dem spaeteren Hacker bestand das Backend aus 'einer Handvoll zusammengeklebter Open-Source-Projekte' mit leicht auffindbaren Sicherheitsluecken - eine fragile Infrastruktur, die schneller ausgeliefert als abgesichert wurde.",
+      "title_de": "Muah.AI startet als ungefilterte Companion-Plattform",
+      "description_de": "Muah.AI ging im April 2023 als KI-Companion-Plattform an den Start, die Text-Chat, Sprache, Telefonate und KI-generierte Fotos zu individuell anpassbaren virtuellen Partnern verbindet. Laut dem spaeteren Hacker bestand das Backend aus 'einer Handvoll zusammengeklebter Open-Source-Projekte' mit leicht auffindbaren Sicherheitsluecken - eine fragile Infrastruktur, die schneller ausgeliefert als abgesichert wurde.",
+      "title_en": "Muah.AI launches as an unfiltered companion platform",
+      "description_en": "Muah.AI launched in April 2023 as an AI companion platform combining text chat, voice, phone calls and AI-generated photos into customisable virtual partners. According to the later hacker, the backend was 'a handful of open-source projects duct-taped together' with easily found security flaws - a fragile infrastructure shipped faster than it was hardened.",
+      "sources": [
+        "https://www.troyhunt.com/weekly-update-421/"
+      ]
+    },
+    {
+      "date": "2024-01",
+      "phase": "doctrine",
+      "title": "Geschaeftsmodell: 'Zero-Censorship, Zero-Filtering'",
+      "description": "Muah.AI bewarb sich ausdruecklich als unzensierte Plattform mit einem 'Zero-Censorship, Zero-Filtering'-Versprechen für Erwachseneninhalte. Der bewusste Verzicht auf inhaltliche Schutzfilter bei zugleich offener Bildgenerierung schuf den Rahmen, in dem Nutzer ungehindert auch missbraeuchliche Szenarien anfragen konnten.",
+      "title_de": "Geschaeftsmodell: 'Zero-Censorship, Zero-Filtering'",
+      "description_de": "Muah.AI bewarb sich ausdruecklich als unzensierte Plattform mit einem 'Zero-Censorship, Zero-Filtering'-Versprechen für Erwachseneninhalte. Der bewusste Verzicht auf inhaltliche Schutzfilter bei zugleich offener Bildgenerierung schuf den Rahmen, in dem Nutzer ungehindert auch missbraeuchliche Szenarien anfragen konnten.",
+      "title_en": "Business model: 'zero-censorship, zero-filtering'",
+      "description_en": "Muah.AI explicitly marketed itself as an uncensored platform with a 'zero-censorship, zero-filtering' promise for adult content. The deliberate absence of content safeguards combined with open image generation created the conditions in which users could freely request abusive scenarios as well.",
+      "sources": [
+        "https://autogpt.net/the-problem-with-muah-ai/"
+      ]
+    },
+    {
+      "date": "2024-09-17",
+      "phase": "event",
+      "title": "Hack legt 1,9 Millionen Konten und Prompts offen",
+      "description": "Am 17. September 2024 wurde Muah.AI gehackt; am 8. Oktober veroeffentlichte 404 Media die Auswertung. Der Hack legte 1,9 Millionen E-Mail-Adressen samt der zur Bildgenerierung genutzten Prompts offen. Zehntausende Prompts beschrieben Szenarien sexueller Ausbeutung von Kindern - in UK und USA strafrechtlich relevante Pseudo-Bilder.",
+      "title_de": "Hack legt 1,9 Millionen Konten und Prompts offen",
+      "description_de": "Am 17. September 2024 wurde Muah.AI gehackt; am 8. Oktober veroeffentlichte 404 Media die Auswertung. Der Hack legte 1,9 Millionen E-Mail-Adressen samt der zur Bildgenerierung genutzten Prompts offen. Zehntausende Prompts beschrieben Szenarien sexueller Ausbeutung von Kindern - in UK und USA strafrechtlich relevante Pseudo-Bilder.",
+      "title_en": "Breach exposes 1.9 million accounts and prompts",
+      "description_en": "On 17 September 2024 Muah.AI was hacked; on 8 October 404 Media published its analysis. The breach exposed 1.9 million email addresses together with the prompts used for image generation. Tens of thousands of prompts described child sexual abuse scenarios - pseudo-imagery that is criminal under UK and US law.",
+      "sources": [
+        "https://www.404media.co/hacked-ai-girlfriend-data-shows-prompts-describing-child-sexual-abuse-2/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Strafbarkeitsrisiko und Erpressungsdrohungen",
+      "description": "Juristische Analysen warnten, dass Nutzer mit entsprechenden Prompts in Großbritannien Strafverfolgung, Haft und Eintrag im Sexualstraftaeter-Register riskieren. Zugleich nutzten Angreifer die offengelegten Daten für Erpressung: Berichten zufolge wurden hochrangige IT-Mitarbeiter kontaktiert, um Zugang zu Arbeitgeber-Systemen zu erpressen.",
+      "title_de": "Strafbarkeitsrisiko und Erpressungsdrohungen",
+      "description_de": "Juristische Analysen warnten, dass Nutzer mit entsprechenden Prompts in Großbritannien Strafverfolgung, Haft und Eintrag im Sexualstraftaeter-Register riskieren. Zugleich nutzten Angreifer die offengelegten Daten für Erpressung: Berichten zufolge wurden hochrangige IT-Mitarbeiter kontaktiert, um Zugang zu Arbeitgeber-Systemen zu erpressen.",
+      "title_en": "Criminal liability risk and extortion threats",
+      "description_en": "Legal analyses warned that users with such prompts risk prosecution, imprisonment and registration on the Sex Offenders Register in the UK. At the same time, attackers used the exposed data for extortion: reportedly, senior IT staff were contacted in attempts to extort access to their employers' systems.",
+      "sources": [
+        "https://www.linklaters.com/en/insights/blogs/digilinks/2024/october/the-muah-ai-data-breach---extortion-threats-and-cyber-vulnerabilities"
+      ]
+    },
+    {
+      "date": "2025-02",
+      "phase": "consequences",
+      "title": "Gesetze gegen KI-Missbrauchsbilder nach Fallserie",
+      "description": "Fälle wie Muah.AI verschaerften eine breite Debatte: Die britische Stiftung IWF meldete für 2024 einen Anstieg bestaetigter KI-Missbrauchsdarstellungen um 380 Prozent gegenüber 2023. Im Februar 2025 kuendigte die britische Regierung Gesetze an, die Besitz und Verbreitung von auf Missbrauchsbilder optimierten KI-Modellen sowie entsprechender Anleitungen unter Strafe stellen.",
+      "title_de": "Gesetze gegen KI-Missbrauchsbilder nach Fallserie",
+      "description_de": "Fälle wie Muah.AI verschaerften eine breite Debatte: Die britische Stiftung IWF meldete für 2024 einen Anstieg bestaetigter KI-Missbrauchsdarstellungen um 380 Prozent gegenüber 2023. Im Februar 2025 kuendigte die britische Regierung Gesetze an, die Besitz und Verbreitung von auf Missbrauchsbilder optimierten KI-Modellen sowie entsprechender Anleitungen unter Strafe stellen.",
+      "title_en": "Laws against AI abuse imagery after a series of cases",
+      "description_en": "Cases like Muah.AI sharpened a broad debate: the UK's IWF reported a 380 percent rise in confirmed AI abuse imagery in 2024 over 2023. In February 2025 the UK government announced laws criminalising the possession and distribution of AI models optimised to create abuse imagery, as well as related instruction manuals.",
+      "sources": [
+        "https://www.gov.uk/government/news/new-law-to-tackle-ai-child-abuse-images-at-source-as-reports-more-than-double"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.404media.co/hacked-ai-girlfriend-data-shows-prompts-describing-child-sexual-abuse-2/",

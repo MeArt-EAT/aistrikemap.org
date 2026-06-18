@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Datenschutz",
+    "Recht auf Eigentum",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Datenschutz",
+    "Recht auf Eigentum",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Data protection",
+    "Right to property",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Meta Platforms",
@@ -42,7 +60,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Meta automatisiert Anzeigenauslieferung mit Advantage+",
+      "description": "Meta führt mit Advantage+ ein KI-gesteuertes Werbesystem ein, das Zielgruppen, Gebote und Budgetverteilung in Echtzeit automatisiert und nahezu ohne manuelle Kontrolle Anzeigen ausliefert. Eine spätere Retrieval-Engine (Andromeda, Ende 2024) wertet Millionen Anzeige-Nutzer-Kombinationen in Millisekunden aus. Diese Auktions- und Ranking-Architektur entscheidet maschinell, welche Anzeige wem gezeigt wird, und bildet die technische Grundlage für die massenhafte Auslieferung auch betrügerischer Anzeigen.",
+      "title_de": "Meta automatisiert Anzeigenauslieferung mit Advantage+",
+      "description_de": "Meta führt mit Advantage+ ein KI-gesteuertes Werbesystem ein, das Zielgruppen, Gebote und Budgetverteilung in Echtzeit automatisiert und nahezu ohne manuelle Kontrolle Anzeigen ausliefert. Eine spätere Retrieval-Engine (Andromeda, Ende 2024) wertet Millionen Anzeige-Nutzer-Kombinationen in Millisekunden aus. Diese Auktions- und Ranking-Architektur entscheidet maschinell, welche Anzeige wem gezeigt wird, und bildet die technische Grundlage für die massenhafte Auslieferung auch betrügerischer Anzeigen.",
+      "title_en": "Meta automates ad delivery with Advantage+",
+      "description_en": "With Advantage+, Meta introduces an AI-driven advertising system that automates audience targeting, bidding and budget allocation in real time, delivering ads with almost no manual oversight. A later retrieval engine (Andromeda, late 2024) evaluates millions of ad-user combinations in milliseconds. This auction and ranking architecture decides by machine which ad is shown to whom and forms the technical basis for delivering fraudulent ads at massive scale.",
+      "sources": [
+        "https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/"
+      ]
+    },
+    {
+      "date": "2022",
+      "phase": "doctrine",
+      "title": "Umsatz vor Betrugsbekämpfung: Strafgebote statt Sperren",
+      "description": "Interne Unterlagen aus den Jahren 2021 bis 2025 zeigen ein Geschäftsmodell, das Werbeeinnahmen über die Eindämmung von Betrug stellt. Statt verdächtige Werbetreibende auszuschließen, verlangt Meta von ihnen über sogenannte Strafgebote höhere Preise und verlangt eine maschinelle Sicherheit von mindestens 95 Prozent, bevor ein Konto gesperrt wird. Als Integritäts-Mitarbeiter Abschaltungen vorschlugen, wurde abgesichert, dass die Wachstumsteams angesichts der Umsatzwirkung keine Einwände hätten.",
+      "title_de": "Umsatz vor Betrugsbekämpfung: Strafgebote statt Sperren",
+      "description_de": "Interne Unterlagen aus den Jahren 2021 bis 2025 zeigen ein Geschäftsmodell, das Werbeeinnahmen über die Eindämmung von Betrug stellt. Statt verdächtige Werbetreibende auszuschließen, verlangt Meta von ihnen über sogenannte Strafgebote höhere Preise und verlangt eine maschinelle Sicherheit von mindestens 95 Prozent, bevor ein Konto gesperrt wird. Als Integritäts-Mitarbeiter Abschaltungen vorschlugen, wurde abgesichert, dass die Wachstumsteams angesichts der Umsatzwirkung keine Einwände hätten.",
+      "title_en": "Revenue over fraud control: penalty bids instead of bans",
+      "description_en": "Internal documents from 2021 to 2025 reveal a business model that prioritises ad revenue over curbing fraud. Rather than excluding suspect advertisers, Meta charges them higher prices via so-called penalty bids and requires at least 95 percent machine certainty before banning an account. When integrity staff proposed shutdowns, the company sought assurance that growth teams would not object given the revenue impact.",
+      "sources": [
+        "https://www.lawfaremedia.org/article/reuters-blows-lid-on-meta's-fraud-profit-scandal"
+      ]
+    },
+    {
+      "date": "2025-11",
+      "phase": "event",
+      "title": "Reuters deckt projektierte Milliarden-Umsätze aus Scam-Anzeigen auf",
+      "description": "Eine Reuters-Recherche im November 2025 legt anhand geleakter interner Dokumente offen, dass Meta etwa 10 Prozent seines globalen Umsatzes von 2024, rund 16 Milliarden Dollar, aus Anzeigen für Betrug und verbotene Produkte projektierte. Die Unterlagen belegen geschätzte 15 Milliarden als höheres Risiko eingestufte Scam-Anzeigen pro Tag. China wird intern als wichtigstes scam-exportierendes Land geführt.",
+      "title_de": "Reuters deckt projektierte Milliarden-Umsätze aus Scam-Anzeigen auf",
+      "description_de": "Eine Reuters-Recherche im November 2025 legt anhand geleakter interner Dokumente offen, dass Meta etwa 10 Prozent seines globalen Umsatzes von 2024, rund 16 Milliarden Dollar, aus Anzeigen für Betrug und verbotene Produkte projektierte. Die Unterlagen belegen geschätzte 15 Milliarden als höheres Risiko eingestufte Scam-Anzeigen pro Tag. China wird intern als wichtigstes scam-exportierendes Land geführt.",
+      "title_en": "Reuters exposes projected billions in revenue from scam ads",
+      "description_en": "A Reuters investigation in November 2025 uses leaked internal documents to reveal that Meta projected roughly 10 percent of its 2024 global revenue, about 16 billion dollars, from ads for scams and banned products. The documents show an estimated 15 billion ads flagged as higher-risk scams per day. China is internally listed as the top scam-exporting nation.",
+      "sources": [
+        "https://www.marketingbrew.com/stories/2025/11/10/meta-scammy-ads-reuters-report"
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "phase": "event",
+      "title": "Santa Clara County reicht zivilrechtliche Klage gegen Meta ein",
+      "description": "Am 11. Mai 2026 reicht der County Counsel von Santa Clara, Tony LoPresti, eine zivilrechtliche Klage gegen Meta ein, die als erste ihrer Art in Kalifornien und erste eines lokalen Zivilstrafverfolgers landesweit gilt. Die Klage wirft Meta vor, milliardenfach betrügerische Anzeigen wissentlich zuzulassen und davon zu profitieren, und beziffert die geschätzten jährlichen Verstoß-Umsätze auf rund 7 Milliarden Dollar. Sie stützt sich maßgeblich auf die zuvor von Reuters berichteten internen Dokumente.",
+      "title_de": "Santa Clara County reicht zivilrechtliche Klage gegen Meta ein",
+      "description_de": "Am 11. Mai 2026 reicht der County Counsel von Santa Clara, Tony LoPresti, eine zivilrechtliche Klage gegen Meta ein, die als erste ihrer Art in Kalifornien und erste eines lokalen Zivilstrafverfolgers landesweit gilt. Die Klage wirft Meta vor, milliardenfach betrügerische Anzeigen wissentlich zuzulassen und davon zu profitieren, und beziffert die geschätzten jährlichen Verstoß-Umsätze auf rund 7 Milliarden Dollar. Sie stützt sich maßgeblich auf die zuvor von Reuters berichteten internen Dokumente.",
+      "title_en": "Santa Clara County files civil prosecution against Meta",
+      "description_en": "On 11 May 2026, Santa Clara County Counsel Tony LoPresti files a civil prosecution against Meta, described as the first of its kind in California and the first brought by a local civil prosecutor nationwide. The action accuses Meta of knowingly allowing and profiting from billions of fraudulent ads, putting estimated annual violating revenue at about 7 billion dollars. It relies heavily on the internal documents previously reported by Reuters.",
+      "sources": [
+        "https://news.santaclaracounty.gov/county-counsel-files-landmark-civil-prosecution-taking-metas-role-massive-consumer-fraud"
+      ]
+    },
+    {
+      "date": "2026-05",
+      "phase": "consequences",
+      "title": "Forderungen nach Bundesermittlung und Schadensersatz",
+      "description": "Die Klage verlangt Unterlassung der beanstandeten Praktiken, Rückerstattung der Verluste sowie zivilrechtliche Strafen, einschließlich verschärfter Sanktionen für Verstöße zulasten von Senioren und dreifachem Schadensersatz nach kalifornischem Recht. Parallel forderten US-Senatoren eine bundesweite Untersuchung von Metas Profiten aus Betrug. Der Fall verschärft den Druck auf das werbefinanzierte Geschäftsmodell der Plattform.",
+      "title_de": "Forderungen nach Bundesermittlung und Schadensersatz",
+      "description_de": "Die Klage verlangt Unterlassung der beanstandeten Praktiken, Rückerstattung der Verluste sowie zivilrechtliche Strafen, einschließlich verschärfter Sanktionen für Verstöße zulasten von Senioren und dreifachem Schadensersatz nach kalifornischem Recht. Parallel forderten US-Senatoren eine bundesweite Untersuchung von Metas Profiten aus Betrug. Der Fall verschärft den Druck auf das werbefinanzierte Geschäftsmodell der Plattform.",
+      "title_en": "Calls for federal investigation and damages",
+      "description_en": "The action seeks an injunction against the contested practices, restitution of losses and civil penalties, including enhanced sanctions for violations affecting senior citizens and treble damages available under California law. In parallel, US senators called for a federal investigation into Meta's profiting from scams. The case intensifies pressure on the platform's ad-funded business model.",
+      "sources": [
+        "https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-and-hawley-call-for-federal-investigation-of-metas-profiting-from-scams_fraud"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://iclg.com/news/23854-meta-accused-of-profiting-from-billions-of-scam-ads/",

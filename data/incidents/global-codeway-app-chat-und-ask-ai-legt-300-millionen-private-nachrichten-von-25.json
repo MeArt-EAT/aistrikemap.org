@@ -26,9 +26,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Consumer protection",
+    "Protection from manipulation",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Codeway",
@@ -42,7 +60,75 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-03",
+      "phase": "infrastructure",
+      "title": "Codeway startet 'Chat & Ask AI' als Wrapper-App auf Google-Firebase-Backend",
+      "description": "Im Maerz 2023, mitten im ChatGPT-Boom, veroeffentlichte das Istanbuler Software-Haus Codeway die App 'Chat & Ask AI'. Sie buendelt fremde KI-Modelle (ChatGPT, Gemini, Claude) hinter einer eigenen Oberflaeche und speichert jeden Prompt, jede Antwort, jeden Zeitstempel und alle Einstellungen in einem Google-Firebase-Backend. Die App erreichte ueber 50 Millionen Downloads. Damit entstand eine zentrale Datenbasis mit den kompletten Chatverlaeufen von Millionen Nutzer:innen.",
+      "title_de": "Codeway startet 'Chat & Ask AI' als Wrapper-App auf Google-Firebase-Backend",
+      "description_de": "Im Maerz 2023, mitten im ChatGPT-Boom, veroeffentlichte das Istanbuler Software-Haus Codeway die App 'Chat & Ask AI'. Sie buendelt fremde KI-Modelle (ChatGPT, Gemini, Claude) hinter einer eigenen Oberflaeche und speichert jeden Prompt, jede Antwort, jeden Zeitstempel und alle Einstellungen in einem Google-Firebase-Backend. Die App erreichte ueber 50 Millionen Downloads. Damit entstand eine zentrale Datenbasis mit den kompletten Chatverlaeufen von Millionen Nutzer:innen.",
+      "title_en": "Codeway launches 'Chat & Ask AI' as a wrapper app on a Google Firebase backend",
+      "description_en": "In March 2023, during the ChatGPT boom, the Istanbul software house Codeway released the 'Chat & Ask AI' app. It bundles third-party AI models (ChatGPT, Gemini, Claude) behind its own interface and stores every prompt, every response, every timestamp and all settings in a Google Firebase backend. The app reached more than 50 million downloads, creating a central data store holding the complete chat histories of millions of users.",
+      "sources": [
+        "https://www.glbgpt.com/resource/codeway-turkeys-factory-of-viral-ai-apps"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "App-Fabrik-Geschaeftsmodell: maximale Reichweite, vollstaendige Chat-Speicherung",
+      "description": "Codeway betreibt ein 'App-Fabrik'-Modell mit hoher Veroeffentlichungsgeschwindigkeit ueber mehr als 60 Apps und 300 Millionen Downloads. Bei Utility-Apps wie 'Chat & Ask AI' soll begrenzte Gratis-Nutzung zu Abos draengen, finanziert durch Abos und Werbung. Zur Personalisierung und Funktion werden die kompletten Gespraechsdaten serverseitig vorgehalten. Datenminimierung und harte Zugriffskontrolle hatten in diesem auf Wachstum getrimmten Modell keine Prioritaet.",
+      "title_de": "App-Fabrik-Geschaeftsmodell: maximale Reichweite, vollstaendige Chat-Speicherung",
+      "description_de": "Codeway betreibt ein 'App-Fabrik'-Modell mit hoher Veroeffentlichungsgeschwindigkeit ueber mehr als 60 Apps und 300 Millionen Downloads. Bei Utility-Apps wie 'Chat & Ask AI' soll begrenzte Gratis-Nutzung zu Abos draengen, finanziert durch Abos und Werbung. Zur Personalisierung und Funktion werden die kompletten Gespraechsdaten serverseitig vorgehalten. Datenminimierung und harte Zugriffskontrolle hatten in diesem auf Wachstum getrimmten Modell keine Prioritaet.",
+      "title_en": "App-factory business model: maximum reach, full chat retention",
+      "description_en": "Codeway runs an 'app factory' model of high-velocity releases across more than 60 apps and 300 million downloads. For utility apps like 'Chat & Ask AI', limited free usage is meant to nudge users toward subscriptions, funded by subscriptions and ads. To enable personalisation and features, complete conversation data is retained server-side. Data minimisation and strict access control were not priorities in this growth-driven model.",
+      "sources": [
+        "https://www.glbgpt.com/resource/codeway-turkeys-factory-of-viral-ai-apps"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "phase": "event",
+      "title": "Offene Firebase-Regeln legen rund 300 Millionen private Nachrichten offen",
+      "description": "Am 20. Januar 2026 entdeckte der unabhaengige Sicherheitsforscher 'Harry', dass die Firebase-Sicherheitsregeln der App auf 'public' standen: Jede:r mit der Projekt-URL konnte ohne Anmeldung die Daten lesen, aendern oder loeschen. Exponiert waren rund 300 Millionen Chat-Nachrichten von ueber 25 Millionen Nutzer:innen samt Chatverlaeufen, genutzten Modellen und Einstellungen. Darunter befanden sich hochsensible Inhalte, etwa Anfragen zu illegalen Aktivitaeten und Suizid-Hilfe.",
+      "title_de": "Offene Firebase-Regeln legen rund 300 Millionen private Nachrichten offen",
+      "description_de": "Am 20. Januar 2026 entdeckte der unabhaengige Sicherheitsforscher 'Harry', dass die Firebase-Sicherheitsregeln der App auf 'public' standen: Jede:r mit der Projekt-URL konnte ohne Anmeldung die Daten lesen, aendern oder loeschen. Exponiert waren rund 300 Millionen Chat-Nachrichten von ueber 25 Millionen Nutzer:innen samt Chatverlaeufen, genutzten Modellen und Einstellungen. Darunter befanden sich hochsensible Inhalte, etwa Anfragen zu illegalen Aktivitaeten und Suizid-Hilfe.",
+      "title_en": "Public Firebase rules expose roughly 300 million private messages",
+      "description_en": "On 20 January 2026 independent security researcher 'Harry' found the app's Firebase security rules set to 'public': anyone with the project URL could read, modify or delete the data without authentication. Exposed were roughly 300 million chat messages from more than 25 million users, including chat histories, models used and settings. The data included highly sensitive content such as requests about illegal activity and suicide assistance.",
+      "sources": [
+        "https://hackread.com/firebase-misconfiguration-chat-ask-ai-users-expose/",
+        "https://www.scworld.com/brief/nearly-300m-chat-ask-ai-user-messages-spilled-by-firebase-misconfiguration"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "phase": "consequences",
+      "title": "Codeway schliesst Lücke binnen Stunden, doch ohne Zugriffslogs",
+      "description": "Codeway behob den Fehler nach der Meldung binnen Stunden ueber alle betroffenen Apps hinweg. Weil jedoch Zugriffslogs fehlten, ist nicht nachweisbar, ob und wer die ungeschuetzten Daten zuvor abgegriffen hat; die Datenbank koennte ueber einen langen Zeitraum offen gewesen sein. Betroffene Nutzer:innen wurden nicht zuverlaessig benachrichtigt, da der Anbieter selbst nicht wusste, welche Daten kompromittiert waren.",
+      "title_de": "Codeway schliesst Lücke binnen Stunden, doch ohne Zugriffslogs",
+      "description_de": "Codeway behob den Fehler nach der Meldung binnen Stunden ueber alle betroffenen Apps hinweg. Weil jedoch Zugriffslogs fehlten, ist nicht nachweisbar, ob und wer die ungeschuetzten Daten zuvor abgegriffen hat; die Datenbank koennte ueber einen langen Zeitraum offen gewesen sein. Betroffene Nutzer:innen wurden nicht zuverlaessig benachrichtigt, da der Anbieter selbst nicht wusste, welche Daten kompromittiert waren.",
+      "title_en": "Codeway closes the gap within hours, but without access logs",
+      "description_en": "After the report, Codeway fixed the flaw within hours across all affected apps. However, because access logs were missing, it cannot be proven whether or by whom the unprotected data was harvested beforehand; the database may have been open for a long period. Affected users could not be reliably notified, as the provider itself did not know which data had been compromised.",
+      "sources": [
+        "https://www.malwarebytes.com/blog/news/2026/02/ai-chat-app-leak-exposes-300-million-messages-tied-to-25-million-users"
+      ]
+    },
+    {
+      "date": "2026-02",
+      "phase": "consequences",
+      "title": "Scan zeigt: Fehlkonfiguration ist Branchenmuster, nicht Einzelfall",
+      "description": "Nach dem Fund baute der Forscher ein Werkzeug, das weitere Apps auf dieselbe Schwachstelle prüft, und fand 103 von 200 getesteten iOS-Apps mit derselben offenen Firebase-Konfiguration, die zusaetzlich Millionen Dateien exponierten. Auch andere Codeway-Apps waren betroffen. Die im Februar 2026 publik gewordenen Befunde zeigten, dass die unsichere Standardkonfiguration ein verbreitetes Branchenmuster ist und nicht auf eine einzelne App beschraenkt blieb.",
+      "title_de": "Scan zeigt: Fehlkonfiguration ist Branchenmuster, nicht Einzelfall",
+      "description_de": "Nach dem Fund baute der Forscher ein Werkzeug, das weitere Apps auf dieselbe Schwachstelle prüft, und fand 103 von 200 getesteten iOS-Apps mit derselben offenen Firebase-Konfiguration, die zusaetzlich Millionen Dateien exponierten. Auch andere Codeway-Apps waren betroffen. Die im Februar 2026 publik gewordenen Befunde zeigten, dass die unsichere Standardkonfiguration ein verbreitetes Branchenmuster ist und nicht auf eine einzelne App beschraenkt blieb.",
+      "title_en": "Scan reveals the misconfiguration is an industry pattern, not an isolated case",
+      "description_en": "After the discovery, the researcher built a tool to test other apps for the same flaw and found 103 of 200 tested iOS apps with the same public Firebase configuration, additionally exposing millions of files. Other Codeway apps were affected as well. The findings, made public in February 2026, showed that the insecure default configuration is a widespread industry pattern rather than limited to a single app.",
+      "sources": [
+        "https://www.foxnews.com/tech/millions-ai-chat-messages-exposed-app-data-leak",
+        "https://hackread.com/firebase-misconfiguration-chat-ask-ai-users-expose/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.malwarebytes.com/blog/news/2026/02/ai-chat-app-leak-exposes-300-million-messages-tied-to-25-million-users",

@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Produktsicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Produktsicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection",
+    "Protection from manipulation",
+    "Product safety"
+  ],
   "asm:actors": [
     {
       "name": "Xiaomi",
@@ -60,7 +78,92 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-03",
+      "phase": "infrastructure",
+      "title": "Marktstart des Xiaomi SU7 mit OTA-fähigem Assistenz-Fahrsystem und elektronischen Türgriffen",
+      "description": "Am 28. März 2024 brachte Xiaomi den SU7 auf den Markt. Die höheren Varianten enthielten das Fahrassistenzsystem Xiaomi Pilot/HAD mit Highway-NOA (Navigate on Autopilot), das per Funk-Update (OTA) erweitert wurde und auf Nvidia-Drive-Orin-Chips sowie Kamera- bzw. LiDAR-Sensorik basiert. Wie viele chinesische E-Autos setzte der SU7 auf elektronische Türöffner ohne äußere mechanische Notentriegelung. Beide Bausteine – ein als quasi-autonom vermarktetes Level-2-System und stromabhängige Türverriegelungen – bildeten die technische Vorbedingung der späteren tödlichen Vorfälle.",
+      "title_de": "Marktstart des Xiaomi SU7 mit OTA-fähigem Assistenz-Fahrsystem und elektronischen Türgriffen",
+      "description_de": "Am 28. März 2024 brachte Xiaomi den SU7 auf den Markt. Die höheren Varianten enthielten das Fahrassistenzsystem Xiaomi Pilot/HAD mit Highway-NOA (Navigate on Autopilot), das per Funk-Update (OTA) erweitert wurde und auf Nvidia-Drive-Orin-Chips sowie Kamera- bzw. LiDAR-Sensorik basiert. Wie viele chinesische E-Autos setzte der SU7 auf elektronische Türöffner ohne äußere mechanische Notentriegelung. Beide Bausteine – ein als quasi-autonom vermarktetes Level-2-System und stromabhängige Türverriegelungen – bildeten die technische Vorbedingung der späteren tödlichen Vorfälle.",
+      "title_en": "Xiaomi SU7 launches with OTA-updatable assisted-driving system and electronic door handles",
+      "description_en": "On 28 March 2024 Xiaomi launched the SU7. Higher trims included the Xiaomi Pilot/HAD driver-assistance system with highway NOA (Navigate on Autopilot), expanded via over-the-air updates and built on Nvidia Drive Orin chips with camera and LiDAR sensing. Like many Chinese EVs, the SU7 used electronic door releases with no external mechanical emergency handle. Both elements – a Level-2 system marketed as quasi-autonomous and power-dependent door locks – formed the technical precondition for the later fatal incidents.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Xiaomi_SU7",
+        "https://cnevpost.com/2024/03/28/xiaomi-launches-su7/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "doctrine",
+      "title": "Aggressives Marketing und Pioneer-User-Betatests treiben breiten Einsatz des Fahrassistenten",
+      "description": "Ab Juni 2024 rollte Xiaomi per OTA die City-NOA-Funktion in zehn Städten aus, darunter Chengdu, und vermarktete den SU7 wie die gesamte Branche mit Begriffen wie smart driving und intelligentem Fahren. Über sogenannte Pioneer-User-Programme wurden Assistenzfunktionen breit an Endkunden als faktischer Live-Betatest verteilt. Dieses Geschäftsmodell – ein nur überwachungspflichtiges Level-2-System als nahezu autonom zu bewerben und schnell zu skalieren – legitimierte einen Einsatz, der das Vertrauen der Fahrer in die Automatik überschätzte.",
+      "title_de": "Aggressives Marketing und Pioneer-User-Betatests treiben breiten Einsatz des Fahrassistenten",
+      "description_de": "Ab Juni 2024 rollte Xiaomi per OTA die City-NOA-Funktion in zehn Städten aus, darunter Chengdu, und vermarktete den SU7 wie die gesamte Branche mit Begriffen wie smart driving und intelligentem Fahren. Über sogenannte Pioneer-User-Programme wurden Assistenzfunktionen breit an Endkunden als faktischer Live-Betatest verteilt. Dieses Geschäftsmodell – ein nur überwachungspflichtiges Level-2-System als nahezu autonom zu bewerben und schnell zu skalieren – legitimierte einen Einsatz, der das Vertrauen der Fahrer in die Automatik überschätzte.",
+      "title_en": "Aggressive marketing and pioneer-user beta tests drive wide deployment of the driver assistant",
+      "description_en": "From June 2024 Xiaomi pushed the City NOA feature via OTA to ten cities including Chengdu and, like the wider industry, marketed the SU7 with terms such as smart driving and intelligent driving. Through so-called pioneer-user programmes, assistance features were distributed broadly to customers as a de facto live beta test. This business model – advertising a supervision-only Level-2 system as near-autonomous and scaling it rapidly – legitimised a deployment that overstated drivers' trust in the automation.",
+      "sources": [
+        "https://carnewschina.com/2024/06/03/xiaomi-su7-to-gain-smart-city-noa-and-other-upgrades-from-june-6-in-china/",
+        "https://carnewschina.com/2025/04/17/chinas-miit-tightens-regulations-on-autonomous-driving-features-banning-key-functions/"
+      ]
+    },
+    {
+      "date": "2025-03-29",
+      "phase": "event",
+      "title": "Tödlicher SU7-Unfall in Anhui mit aktiviertem NOA-System – drei Tote",
+      "description": "Am 29. März 2025 verunglückte auf der Autobahn G0321 nahe Tongling in Anhui ein Xiaomi SU7 Standard, in dem das NOA-Fahrassistenzsystem aktiv war. Laut Xiaomi fuhr der Wagen mit 116 km/h, erkannte eine Baustellensperrung, warnte und bremste; der Fahrer übernahm manuell, kollidierte aber bei rund 97 km/h mit einer Betonbarriere. Drei junge Studentinnen starben – der erste tödliche Unfall mit dem SU7.",
+      "title_de": "Tödlicher SU7-Unfall in Anhui mit aktiviertem NOA-System – drei Tote",
+      "description_de": "Am 29. März 2025 verunglückte auf der Autobahn G0321 nahe Tongling in Anhui ein Xiaomi SU7 Standard, in dem das NOA-Fahrassistenzsystem aktiv war. Laut Xiaomi fuhr der Wagen mit 116 km/h, erkannte eine Baustellensperrung, warnte und bremste; der Fahrer übernahm manuell, kollidierte aber bei rund 97 km/h mit einer Betonbarriere. Drei junge Studentinnen starben – der erste tödliche Unfall mit dem SU7.",
+      "title_en": "Fatal SU7 crash in Anhui with NOA system engaged – three dead",
+      "description_en": "On 29 March 2025 a Xiaomi SU7 Standard crashed on the G0321 highway near Tongling in Anhui while the NOA driver-assistance system was active. According to Xiaomi the car was travelling at 116 km/h, detected a construction-zone closure, warned and braked; the driver took manual control but hit a concrete barrier at about 97 km/h. Three young female students died – the first fatal crash involving the SU7.",
+      "sources": [
+        "https://carnewschina.com/2025/04/01/first-fatal-accident-involving-xiaomi-su7-claims-three-lives-on-chinese-highway/",
+        "https://carnewschina.com/2025/04/11/xiaomi-discloses-logs-after-su7s-fatal-crash-that-killed-3-students/"
+      ]
+    },
+    {
+      "date": "2025-04-16",
+      "phase": "consequences",
+      "title": "MIIT verschärft Regeln für Fahrassistenz und verbietet irreführende Autonomie-Werbung",
+      "description": "Nach dem Anhui-Unfall verkündete Chinas Industrieministerium (MIIT) am 16. April 2025 deutlich strengere Regeln. Hersteller dürfen nicht mehr mit autonomes oder intelligentes Fahren werben und müssen Stufen wie L2-Fahrassistenz korrekt benennen. Fahrerüberwachung darf nicht abschaltbar sein, funktionsfreie Funktionen wie Valet-Parken und Herbeirufen wurden verboten, und die verbreiteten Pioneer-User-Betatests müssen künftig offizielle Genehmigungen durchlaufen.",
+      "title_de": "MIIT verschärft Regeln für Fahrassistenz und verbietet irreführende Autonomie-Werbung",
+      "description_de": "Nach dem Anhui-Unfall verkündete Chinas Industrieministerium (MIIT) am 16. April 2025 deutlich strengere Regeln. Hersteller dürfen nicht mehr mit autonomes oder intelligentes Fahren werben und müssen Stufen wie L2-Fahrassistenz korrekt benennen. Fahrerüberwachung darf nicht abschaltbar sein, funktionsfreie Funktionen wie Valet-Parken und Herbeirufen wurden verboten, und die verbreiteten Pioneer-User-Betatests müssen künftig offizielle Genehmigungen durchlaufen.",
+      "title_en": "MIIT tightens driver-assistance rules and bans misleading autonomy advertising",
+      "description_en": "After the Anhui crash, China's Ministry of Industry and Information Technology (MIIT) announced markedly stricter rules on 16 April 2025. Manufacturers may no longer advertise autonomous or intelligent driving and must label levels such as L2 assisted driving correctly. Driver monitoring cannot be disabled, unsupervised functions such as valet parking and summoning were banned, and the widespread pioneer-user beta tests must now go through official approval channels.",
+      "sources": [
+        "https://carnewschina.com/2025/04/17/chinas-miit-tightens-regulations-on-autonomous-driving-features-banning-key-functions/",
+        "https://www.electrive.com/2025/04/17/china-bans-advertising-ban-on-misleading-autonomous-driving-functions/"
+      ]
+    },
+    {
+      "date": "2025-09",
+      "phase": "consequences",
+      "title": "Rückruf von 116.887 SU7 wegen Software-Grenzen der Fahrassistenz",
+      "description": "Im September 2025 rief Xiaomi 116.887 SU7-Standard-Fahrzeuge zurück, um Grenzen der Fahrassistenz-Software unter extremen Bedingungen per Update zu beheben. Der Rückruf war eine direkte Folge der Sicherheitszweifel nach dem tödlichen Anhui-Unfall und der verschärften MIIT-Vorgaben.",
+      "title_de": "Rückruf von 116.887 SU7 wegen Software-Grenzen der Fahrassistenz",
+      "description_de": "Im September 2025 rief Xiaomi 116.887 SU7-Standard-Fahrzeuge zurück, um Grenzen der Fahrassistenz-Software unter extremen Bedingungen per Update zu beheben. Der Rückruf war eine direkte Folge der Sicherheitszweifel nach dem tödlichen Anhui-Unfall und der verschärften MIIT-Vorgaben.",
+      "title_en": "Recall of 116,887 SU7 over driver-assistance software limits",
+      "description_en": "In September 2025 Xiaomi recalled 116,887 SU7 Standard vehicles to fix limits of the driver-assistance software under extreme conditions via an update. The recall was a direct consequence of the safety doubts after the fatal Anhui crash and the tightened MIIT requirements.",
+      "sources": [
+        "https://www.arenaev.com/xiaomi_recalls_over_116000_su7_evs_due_to_selfdriving_software_flaw-news-5139.php",
+        "https://autos.yahoo.com/safety-and-recalls/articles/xiaomi-recalls-nearly-117-000-093000896.html"
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "phase": "consequences",
+      "title": "SU7-Ultra-Brand in Chengdu: Türen blockiert, Fahrer eingeschlossen, 10 Mrd. USD Börsenverlust",
+      "description": "Am 13. Oktober 2025 kollidierte ein Xiaomi SU7 Ultra in Chengdu, geriet in Brand und der Fahrer (Familienname Deng) konnte nicht entkommen, weil die elektronischen Türöffner nach dem Ausfall des Niederspannungssystems versagten und keine äußere mechanische Notentriegelung vorhanden war. Der Vorfall verschärfte die öffentliche Sicherheitsdebatte; Xiaomis Aktie verlor an einem Tag rund 10 Milliarden USD an Börsenwert. Das Unternehmen richtete ein Sicherheits-Komitee ein, während Familien und Behörden weitere Antworten zu Türdesign und Brandverhalten forderten.",
+      "title_de": "SU7-Ultra-Brand in Chengdu: Türen blockiert, Fahrer eingeschlossen, 10 Mrd. USD Börsenverlust",
+      "description_de": "Am 13. Oktober 2025 kollidierte ein Xiaomi SU7 Ultra in Chengdu, geriet in Brand und der Fahrer (Familienname Deng) konnte nicht entkommen, weil die elektronischen Türöffner nach dem Ausfall des Niederspannungssystems versagten und keine äußere mechanische Notentriegelung vorhanden war. Der Vorfall verschärfte die öffentliche Sicherheitsdebatte; Xiaomis Aktie verlor an einem Tag rund 10 Milliarden USD an Börsenwert. Das Unternehmen richtete ein Sicherheits-Komitee ein, während Familien und Behörden weitere Antworten zu Türdesign und Brandverhalten forderten.",
+      "title_en": "SU7 Ultra fire in Chengdu: doors blocked, driver trapped, USD 10 billion market loss",
+      "description_en": "On 13 October 2025 a Xiaomi SU7 Ultra crashed in Chengdu, caught fire, and the driver (surname Deng) could not escape because the electronic door releases failed after the low-voltage system died and no external mechanical emergency handle existed. The incident intensified the public safety debate; Xiaomi shares lost roughly USD 10 billion in market value in a single day. The company set up a safety committee while families and authorities demanded further answers on door design and fire behaviour.",
+      "sources": [
+        "https://www.caixinglobal.com/2025-10-14/xiaomi-stock-drops-57-after-fatal-su7-crash-and-fire-102371176.html",
+        "https://www.autoevolution.com/news/deadly-electronic-door-locks-claim-another-life-in-fiery-xiaomi-su7-ultra-crash-259090.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.caixinglobal.com/2025-10-14/xiaomi-stock-drops-57-after-fatal-su7-crash-and-fire-102371176.html",

@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Eigentumsschutz",
+    "Recht auf Gesundheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Eigentumsschutz",
+    "Recht auf Gesundheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Protection of property",
+    "Right to health",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "GTG-5004 (unidentified UK threat actor)",
@@ -55,7 +73,60 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024",
+      "phase": "infrastructure",
+      "title": "Agentische KI-Coding-Assistenten werden breit verfügbar",
+      "description": "Mit der Verbreitung leistungsfähiger KI-Coding-Assistenten wie Anthropics Claude und Claude Code wurde es möglich, komplexen Schadcode auch ohne tiefes Programmierwissen zu erzeugen und zu debuggen. Diese Werkzeuge senkten die technische Einstiegshürde für Malware-Entwicklung drastisch und legten die Grundlage für sogenanntes Vibe-Hacking.",
+      "title_de": "Agentische KI-Coding-Assistenten werden breit verfügbar",
+      "description_de": "Mit der Verbreitung leistungsfähiger KI-Coding-Assistenten wie Anthropics Claude und Claude Code wurde es möglich, komplexen Schadcode auch ohne tiefes Programmierwissen zu erzeugen und zu debuggen. Diese Werkzeuge senkten die technische Einstiegshürde für Malware-Entwicklung drastisch und legten die Grundlage für sogenanntes Vibe-Hacking.",
+      "title_en": "Agentic AI coding assistants become widely available",
+      "description_en": "As powerful AI coding assistants such as Anthropic's Claude and Claude Code became widespread, it became possible to generate and debug complex malicious code even without deep programming knowledge. These tools drastically lowered the technical barrier to malware development and laid the groundwork for so-called vibe-hacking.",
+      "sources": [
+        "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Ransomware-as-a-Service als etabliertes Kriminalitäts-Geschäftsmodell",
+      "description": "Im cyberkriminellen Untergrund hatte sich Ransomware-as-a-Service (RaaS) als arbeitsteiliges Geschäftsmodell etabliert: Entwickler verkaufen fertige Erpressungs-Baukästen über Darknet-Foren wie Dread, CryptBB und Nulled an weniger versierte Affiliates. Dieses Modell schuf einen Markt, der eine KI-gestützte Massenproduktion von Schadsoftware unmittelbar monetarisierbar machte.",
+      "title_de": "Ransomware-as-a-Service als etabliertes Kriminalitäts-Geschäftsmodell",
+      "description_de": "Im cyberkriminellen Untergrund hatte sich Ransomware-as-a-Service (RaaS) als arbeitsteiliges Geschäftsmodell etabliert: Entwickler verkaufen fertige Erpressungs-Baukästen über Darknet-Foren wie Dread, CryptBB und Nulled an weniger versierte Affiliates. Dieses Modell schuf einen Markt, der eine KI-gestützte Massenproduktion von Schadsoftware unmittelbar monetarisierbar machte.",
+      "title_en": "Ransomware-as-a-Service as an established criminal business model",
+      "description_en": "In the cybercriminal underground, Ransomware-as-a-Service (RaaS) had become an established division-of-labour business model: developers sell ready-made extortion kits via dark-web forums such as Dread, CryptBB and Nulled to less skilled affiliates. This model created a market that made AI-assisted mass production of malware immediately monetisable.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/malware-devs-abuse-anthropics-claude-ai-to-build-ransomware/"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "phase": "event",
+      "title": "GTG-5004 entwickelt und verkauft KI-gebaute Ransomware",
+      "description": "Ein britischer Akteur, von Anthropic als GTG-5004 verfolgt, nutzte ab Januar 2025 Claude, um mehrere Ransomware-Varianten mit ChaCha20-Verschlüsselung, Anti-EDR-Techniken und Windows-Internals-Ausnutzung zu bauen. Er bot sie auf Dread, CryptBB und Nulled als Ransomware-as-a-Service an — Basispaket 400 USD, RaaS-Kit 800 USD, FUD-Crypter 1200 USD.",
+      "title_de": "GTG-5004 entwickelt und verkauft KI-gebaute Ransomware",
+      "description_de": "Ein britischer Akteur, von Anthropic als GTG-5004 verfolgt, nutzte ab Januar 2025 Claude, um mehrere Ransomware-Varianten mit ChaCha20-Verschlüsselung, Anti-EDR-Techniken und Windows-Internals-Ausnutzung zu bauen. Er bot sie auf Dread, CryptBB und Nulled als Ransomware-as-a-Service an — Basispaket 400 USD, RaaS-Kit 800 USD, FUD-Crypter 1200 USD.",
+      "title_en": "GTG-5004 develops and sells AI-built ransomware",
+      "description_en": "A UK-based actor tracked by Anthropic as GTG-5004 used Claude from January 2025 onwards to build multiple ransomware variants featuring ChaCha20 encryption, anti-EDR techniques and Windows internals exploitation. He offered them on Dread, CryptBB and Nulled as Ransomware-as-a-Service — basic kit USD 400, full RaaS USD 800, FUD crypter USD 1,200.",
+      "sources": [
+        "https://thehackernews.com/2025/08/anthropic-disrupts-ai-powered.html"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "phase": "consequences",
+      "title": "Anthropic sperrt Konten und veröffentlicht Threat-Intelligence-Report",
+      "description": "Anthropic stellte fest, dass der Täter ohne KI-Hilfe weder die Komponenten implementieren noch debuggen konnte, sperrte die zugehörigen Konten und legte den Fall im August-2025-Threat-Intelligence-Report offen. Der Bericht warnte, dass KI die Einstiegshürde für anspruchsvolle Cyberkriminalität drastisch senkt.",
+      "title_de": "Anthropic sperrt Konten und veröffentlicht Threat-Intelligence-Report",
+      "description_de": "Anthropic stellte fest, dass der Täter ohne KI-Hilfe weder die Komponenten implementieren noch debuggen konnte, sperrte die zugehörigen Konten und legte den Fall im August-2025-Threat-Intelligence-Report offen. Der Bericht warnte, dass KI die Einstiegshürde für anspruchsvolle Cyberkriminalität drastisch senkt.",
+      "title_en": "Anthropic bans accounts and publishes Threat Intelligence Report",
+      "description_en": "Anthropic concluded the operator was unable to implement or debug the components without AI assistance, banned the associated accounts and disclosed the case in its August 2025 Threat Intelligence Report. The report warned that AI drastically lowers the barrier to entry for sophisticated cybercrime.",
+      "sources": [
+        "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf",

@@ -31,9 +31,27 @@
     "data-misuse",
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Kinderrechte",
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Kinderrechte",
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Children's rights",
+    "Right to privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Human Rights Watch",
@@ -54,7 +72,75 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-03",
+      "phase": "infrastructure",
+      "title": "LAION e.V. veröffentlicht LAION-5B mit 5,85 Milliarden Bild-Text-Paaren",
+      "description": "Der gemeinnützige Verein LAION e.V. veröffentlicht LAION-5B, den damals größten frei verfügbaren Bild-Text-Datensatz. Die Paare wurden automatisiert aus dem Common-Crawl-Webarchiv extrahiert, indem HTML-Bild-Tags mit Alt-Texten gesammelt wurden. Es gab keine Einwilligungsabfrage und keine systematische Filterung personenbezogener Aufnahmen.",
+      "title_de": "LAION e.V. veröffentlicht LAION-5B mit 5,85 Milliarden Bild-Text-Paaren",
+      "description_de": "Der gemeinnützige Verein LAION e.V. veröffentlicht LAION-5B, den damals größten frei verfügbaren Bild-Text-Datensatz. Die Paare wurden automatisiert aus dem Common-Crawl-Webarchiv extrahiert, indem HTML-Bild-Tags mit Alt-Texten gesammelt wurden. Es gab keine Einwilligungsabfrage und keine systematische Filterung personenbezogener Aufnahmen.",
+      "title_en": "LAION e.V. releases LAION-5B with 5.85 billion image-text pairs",
+      "description_en": "The non-profit LAION e.V. releases LAION-5B, at the time the largest freely available image-text dataset. The pairs were automatically extracted from the Common Crawl web archive by collecting HTML image tags with alt-text. There was no consent mechanism and no systematic filtering of personal photos.",
+      "sources": [
+        "https://laion.ai/blog/laion-5b/",
+        "https://en.wikipedia.org/wiki/LAION"
+      ]
+    },
+    {
+      "date": "2022-2023",
+      "phase": "doctrine",
+      "title": "Scrape-everything-Doktrin: öffentlich auffindbare Bilder gelten als faires Trainingsmaterial",
+      "description": "Die Branche etabliert die Praxis, sämtliche im Web auffindbaren Bilder als legitimes Trainingsmaterial zu behandeln. LAION-5B wird zur Grundlage generativer Modelle wie Stable Diffusion. Der Grundsatz lautet: Wer ein Bild online stellt, hat dessen Verwendung implizit erlaubt - unabhängig davon, ob abgebildete Personen oder Familien davon wissen.",
+      "title_de": "Scrape-everything-Doktrin: öffentlich auffindbare Bilder gelten als faires Trainingsmaterial",
+      "description_de": "Die Branche etabliert die Praxis, sämtliche im Web auffindbaren Bilder als legitimes Trainingsmaterial zu behandeln. LAION-5B wird zur Grundlage generativer Modelle wie Stable Diffusion. Der Grundsatz lautet: Wer ein Bild online stellt, hat dessen Verwendung implizit erlaubt - unabhängig davon, ob abgebildete Personen oder Familien davon wissen.",
+      "title_en": "Scrape-everything doctrine: any findable image counts as fair training material",
+      "description_en": "The industry establishes the practice of treating any image findable on the web as legitimate training material. LAION-5B becomes the basis for generative models such as Stable Diffusion. The underlying principle: posting an image online implies permission to use it - regardless of whether the depicted people or families are aware.",
+      "sources": [
+        "https://laion.ai/blog/laion-5b/"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "doctrine",
+      "title": "Stanford-Bericht findet über 3.200 CSAM-Verdachtsbilder, LAION nimmt Datensatz offline",
+      "description": "Das Stanford Internet Observatory dokumentiert über 3.200 mutmaßliche Darstellungen sexuellen Kindesmissbrauchs im LAION-5B-Datensatz. LAION e.V. nimmt daraufhin alle bekannten LAION-5B-Versionen offline. Der Vorfall zeigt, dass der ungefilterte Scrape-Ansatz selbst illegale und höchst sensible Aufnahmen einsammelte.",
+      "title_de": "Stanford-Bericht findet über 3.200 CSAM-Verdachtsbilder, LAION nimmt Datensatz offline",
+      "description_de": "Das Stanford Internet Observatory dokumentiert über 3.200 mutmaßliche Darstellungen sexuellen Kindesmissbrauchs im LAION-5B-Datensatz. LAION e.V. nimmt daraufhin alle bekannten LAION-5B-Versionen offline. Der Vorfall zeigt, dass der ungefilterte Scrape-Ansatz selbst illegale und höchst sensible Aufnahmen einsammelte.",
+      "title_en": "Stanford report finds over 3,200 suspected CSAM images, LAION takes dataset offline",
+      "description_en": "The Stanford Internet Observatory documents over 3,200 suspected child sexual abuse images in the LAION-5B dataset. LAION e.V. responds by taking all known LAION-5B versions offline. The incident shows the unfiltered scraping approach swept up even illegal and highly sensitive images.",
+      "sources": [
+        "https://cyber.fsi.stanford.edu/news/investigation-finds-ai-image-generation-models-trained-child-abuse"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "event",
+      "title": "HRW identifiziert Fotos australischer Kinder im LAION-5B-Datensatz",
+      "description": "Eine Recherche von Human Rights Watch findet im LAION-5B-Datensatz identifizierbare Fotos von mindestens 190 (später 362) australischen Kindern - oft mit Klarnamen, Aufnahmeort und -datum. Manche Aufnahmen stammten aus nicht öffentlich auffindbaren Quellen und wurden ohne Wissen der Familien für KI-Training verwendet. Parallel dokumentiert HRW 50 Melbourner Mädchen, deren Fotos zu sexuellen Deepfakes verarbeitet wurden.",
+      "title_de": "HRW identifiziert Fotos australischer Kinder im LAION-5B-Datensatz",
+      "description_de": "Eine Recherche von Human Rights Watch findet im LAION-5B-Datensatz identifizierbare Fotos von mindestens 190 (später 362) australischen Kindern - oft mit Klarnamen, Aufnahmeort und -datum. Manche Aufnahmen stammten aus nicht öffentlich auffindbaren Quellen und wurden ohne Wissen der Familien für KI-Training verwendet. Parallel dokumentiert HRW 50 Melbourner Mädchen, deren Fotos zu sexuellen Deepfakes verarbeitet wurden.",
+      "title_en": "HRW identifies photos of Australian children in the LAION-5B dataset",
+      "description_en": "A Human Rights Watch investigation finds identifiable photos of at least 190 (later 362) Australian children in the LAION-5B dataset - often with real names, location and date. Some came from sources not publicly findable on the open web and were used for AI training without families' knowledge. HRW also documents 50 Melbourne schoolgirls whose photos were turned into sexual deepfakes.",
+      "sources": [
+        "https://www.hrw.org/news/2024/07/03/australia-childrens-personal-photos-misused-power-ai-tools"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "consequences",
+      "title": "LAION veröffentlicht bereinigtes Re-LAION-5B, Forderungen nach Schutzgesetzen",
+      "description": "LAION e.V. veröffentlicht Re-LAION-5B, aus dem 2.236 Links zu mutmaßlichem Missbrauchsmaterial entfernt wurden. Human Rights Watch fordert die australische Regierung auf, im geplanten Datenschutzgesetz besondere Schutzregeln für Kinderdaten zu verankern, da bereits gescrapte Bilder kaum wieder aus trainierten Modellen entfernt werden können.",
+      "title_de": "LAION veröffentlicht bereinigtes Re-LAION-5B, Forderungen nach Schutzgesetzen",
+      "description_de": "LAION e.V. veröffentlicht Re-LAION-5B, aus dem 2.236 Links zu mutmaßlichem Missbrauchsmaterial entfernt wurden. Human Rights Watch fordert die australische Regierung auf, im geplanten Datenschutzgesetz besondere Schutzregeln für Kinderdaten zu verankern, da bereits gescrapte Bilder kaum wieder aus trainierten Modellen entfernt werden können.",
+      "title_en": "LAION releases cleaned Re-LAION-5B, calls for protective legislation",
+      "description_en": "LAION e.V. releases Re-LAION-5B, from which 2,236 links to suspected abuse material were removed. Human Rights Watch urges the Australian government to enshrine special safeguards for children's data in its planned privacy law, since images already scraped can hardly be removed from trained models.",
+      "sources": [
+        "https://laion.ai/blog/relaion-5b/",
+        "https://www.hrw.org/news/2024/07/03/australia-childrens-personal-photos-misused-power-ai-tools"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.hrw.org/news/2024/07/03/australia-childrens-personal-photos-misused-power-ai-tools",

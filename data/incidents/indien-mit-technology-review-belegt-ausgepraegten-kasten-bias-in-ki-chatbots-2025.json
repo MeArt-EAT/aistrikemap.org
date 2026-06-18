@@ -31,9 +31,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Wuerde des Menschen",
+    "Recht auf Gleichbehandlung",
+    "Recht auf Arbeit",
+    "Recht auf Bildung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Wuerde des Menschen",
+    "Recht auf Gleichbehandlung",
+    "Recht auf Arbeit",
+    "Recht auf Bildung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Right to equal treatment",
+    "Right to work",
+    "Right to education"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -64,7 +82,76 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Große Sprachmodelle lernen Kasten-Stereotype aus Web-Korpora",
+      "description": "Moderne LLMs wie GPT und offene Modelle (Gemma, Llama, später Sarvam) werden auf riesigen aus dem Web gescrapten Textkorpora trainiert, in denen Kasten-Stereotype tief verankert sind — etwa die Darstellung von Dalit als arm, schmutzig oder nur für niedere Arbeiten geeignet. Da Kaste in den gaengigen Fairness-Benchmarks und Sicherheits-Tests der westlichen KI-Branche praktisch nicht vorkommt, wird dieser Bias beim Training weder gemessen noch korrigiert.",
+      "title_de": "Große Sprachmodelle lernen Kasten-Stereotype aus Web-Korpora",
+      "description_de": "Moderne LLMs wie GPT und offene Modelle (Gemma, Llama, später Sarvam) werden auf riesigen aus dem Web gescrapten Textkorpora trainiert, in denen Kasten-Stereotype tief verankert sind — etwa die Darstellung von Dalit als arm, schmutzig oder nur für niedere Arbeiten geeignet. Da Kaste in den gaengigen Fairness-Benchmarks und Sicherheits-Tests der westlichen KI-Branche praktisch nicht vorkommt, wird dieser Bias beim Training weder gemessen noch korrigiert.",
+      "title_en": "Large language models learn caste stereotypes from web corpora",
+      "description_en": "Modern LLMs such as GPT and open models (Gemma, Llama, later Sarvam) are trained on vast web-scraped text corpora in which caste stereotypes are deeply embedded — for example depicting Dalits as poor, dirty, or fit only for menial work. Because caste barely features in the standard fairness benchmarks and safety tests of the Western AI industry, this bias is neither measured nor corrected during training.",
+      "sources": [
+        "https://www.technologyreview.com/2025/10/01/1124621/openai-india-caste-bias/"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "phase": "doctrine",
+      "title": "OpenAI macht Indien zum Wachstumsmarkt, Firmen setzen offene LLMs in HR ein",
+      "description": "Indien wird 2025 zu OpenAIs zweitgroesstem Markt mit rund 100 Millionen woechentlichen ChatGPT-Nutzern; im August 2025 eroeffnet OpenAI ein Buero in Neu-Delhi und senkt mit einem Sub-5-Dollar-Tarif die Einstiegshuerde. Gleichzeitig folgen viele indische Firmen dem Geschaeftsmodell, kostenlose Open-Source-LLMs herunterzuladen und für lokale Anwendungen — auch HR und Bewerber-Screening — anzupassen. Weder die Anbieter noch die einsetzenden Firmen testen ihre Modelle systematisch auf Kasten-Bias.",
+      "title_de": "OpenAI macht Indien zum Wachstumsmarkt, Firmen setzen offene LLMs in HR ein",
+      "description_de": "Indien wird 2025 zu OpenAIs zweitgroesstem Markt mit rund 100 Millionen woechentlichen ChatGPT-Nutzern; im August 2025 eroeffnet OpenAI ein Buero in Neu-Delhi und senkt mit einem Sub-5-Dollar-Tarif die Einstiegshuerde. Gleichzeitig folgen viele indische Firmen dem Geschaeftsmodell, kostenlose Open-Source-LLMs herunterzuladen und für lokale Anwendungen — auch HR und Bewerber-Screening — anzupassen. Weder die Anbieter noch die einsetzenden Firmen testen ihre Modelle systematisch auf Kasten-Bias.",
+      "title_en": "OpenAI turns India into a growth market while firms deploy open LLMs in HR",
+      "description_en": "In 2025 India becomes OpenAI's second-largest market with around 100 million weekly ChatGPT users; in August 2025 OpenAI opens a New Delhi office and lowers the entry barrier with a sub-5-dollar plan. At the same time many Indian firms follow the business model of downloading free open-source LLMs and adapting them for local applications — including HR and applicant screening. Neither the providers nor the deploying firms systematically test their models for caste bias.",
+      "sources": [
+        "https://www.cnbc.com/2025/09/05/openai-in-india-what-the-chatgpt-maker-is-doing-in-the-country.html",
+        "https://www.technologyreview.com/2025/10/01/1124621/openai-india-caste-bias/"
+      ]
+    },
+    {
+      "date": "2025-10-01",
+      "phase": "event",
+      "title": "MIT Technology Review belegt ausgepraegten Kasten-Bias in KI-Chatbots",
+      "description": "MIT Technology Review veroeffentlicht eine Untersuchung, wonach OpenAIs ChatGPT (GPT-5) und der Videogenerator Sora sowie das indische Modell Sarvam AI Kastenstereotype reproduzieren. Dokumentiertes Beispiel: ChatGPT tauschte den Dalit-Nachnamen Singha eines Postdoc-Bewerbers gegen das hochkastige Sharma aus. In Tests mit dem Inspect-Framework, entwickelt mit dem Harvard-Forscher Jay Chooi, waehlten die Modelle in Lueckentext-Aufgaben systematisch Brahmin- gegenüber Dalit-Optionen; Sarvam zeigte deutlich hoeheren Bias als Googles Gemma.",
+      "title_de": "MIT Technology Review belegt ausgepraegten Kasten-Bias in KI-Chatbots",
+      "description_de": "MIT Technology Review veroeffentlicht eine Untersuchung, wonach OpenAIs ChatGPT (GPT-5) und der Videogenerator Sora sowie das indische Modell Sarvam AI Kastenstereotype reproduzieren. Dokumentiertes Beispiel: ChatGPT tauschte den Dalit-Nachnamen Singha eines Postdoc-Bewerbers gegen das hochkastige Sharma aus. In Tests mit dem Inspect-Framework, entwickelt mit dem Harvard-Forscher Jay Chooi, waehlten die Modelle in Lueckentext-Aufgaben systematisch Brahmin- gegenüber Dalit-Optionen; Sarvam zeigte deutlich hoeheren Bias als Googles Gemma.",
+      "title_en": "MIT Technology Review documents significant caste bias in AI chatbots",
+      "description_en": "MIT Technology Review publishes an investigation finding that OpenAI's ChatGPT (GPT-5) and the video generator Sora as well as India's Sarvam AI reproduce caste stereotypes. Documented example: ChatGPT swapped the Dalit surname Singha of a postdoctoral applicant for the high-caste Sharma. In tests using the Inspect framework, developed with Harvard researcher Jay Chooi, the models systematically chose Brahmin over Dalit options in fill-in-the-blank tasks; Sarvam showed considerably more bias than Google's Gemma.",
+      "sources": [
+        "https://www.technologyreview.com/2025/10/01/1124621/openai-india-caste-bias/",
+        "https://www.technologyreview.com/2025/10/01/1124630/the-download-openais-caste-bias-problem-and-how-ai-videos-are-made/"
+      ]
+    },
+    {
+      "date": "2025-10",
+      "phase": "consequences",
+      "title": "OpenAI weicht aus, Debatte ueber systemische Diskriminierung durch KI",
+      "description": "OpenAI beantwortet die Fragen der Redaktion nicht inhaltlich, sondern verweist nur auf öffentlich verfügbare Angaben zum Training und zur Evaluation von Sora. Forschende und Aktivisten warnen, dass subtile Verzerrungen in einem Land mit ueber einer Milliarde Menschen zu systemischer Diskriminierung anwachsen können, sobald KI in Einstellung, Studienzulassung und Schule eindringt — und dass die Schaedigung gerade die ohnehin marginalisierten Dalit trifft.",
+      "title_de": "OpenAI weicht aus, Debatte ueber systemische Diskriminierung durch KI",
+      "description_de": "OpenAI beantwortet die Fragen der Redaktion nicht inhaltlich, sondern verweist nur auf öffentlich verfügbare Angaben zum Training und zur Evaluation von Sora. Forschende und Aktivisten warnen, dass subtile Verzerrungen in einem Land mit ueber einer Milliarde Menschen zu systemischer Diskriminierung anwachsen können, sobald KI in Einstellung, Studienzulassung und Schule eindringt — und dass die Schaedigung gerade die ohnehin marginalisierten Dalit trifft.",
+      "title_en": "OpenAI deflects as debate grows over systemic AI discrimination",
+      "description_en": "OpenAI does not answer the questions substantively but merely points to publicly available details about the training and evaluation of Sora. Researchers and activists warn that subtle biases in a country of over a billion people can snowball into systemic discrimination once AI enters hiring, admissions, and classrooms — and that the harm falls precisely on the already-marginalised Dalits.",
+      "sources": [
+        "https://www.technologyreview.com/2025/10/01/1124621/openai-india-caste-bias/"
+      ]
+    },
+    {
+      "date": "2026",
+      "phase": "consequences",
+      "title": "Forschung quantifiziert Kasten-Bias, fordert indische Fairness-Benchmarks",
+      "description": "Im Nachgang entstehen mehrere akademische Benchmarks, die Kasten-Bias messbar machen — darunter BharatBBQ, INDIC-BIAS und FairI Tales — und die wiederholt zeigen, dass offene Modelle wie Sarvam in indischen Sprachen besonders hohe Verzerrungen aufweisen, während Gemma nahezu kein Kasten-Bias zeigt. Die Arbeiten untermauern die Forderung, Kaste verbindlich in Sicherheits- und Fairness-Tests von LLMs aufzunehmen, bevor diese in sensiblen Anwendungen eingesetzt werden.",
+      "title_de": "Forschung quantifiziert Kasten-Bias, fordert indische Fairness-Benchmarks",
+      "description_de": "Im Nachgang entstehen mehrere akademische Benchmarks, die Kasten-Bias messbar machen — darunter BharatBBQ, INDIC-BIAS und FairI Tales — und die wiederholt zeigen, dass offene Modelle wie Sarvam in indischen Sprachen besonders hohe Verzerrungen aufweisen, während Gemma nahezu kein Kasten-Bias zeigt. Die Arbeiten untermauern die Forderung, Kaste verbindlich in Sicherheits- und Fairness-Tests von LLMs aufzunehmen, bevor diese in sensiblen Anwendungen eingesetzt werden.",
+      "title_en": "Research quantifies caste bias and calls for Indian fairness benchmarks",
+      "description_en": "In the aftermath several academic benchmarks emerge that make caste bias measurable — including BharatBBQ, INDIC-BIAS, and FairI Tales — repeatedly showing that open models like Sarvam exhibit especially high bias in Indian languages, while Gemma shows almost no caste bias. The work reinforces the demand to make caste a mandatory part of LLM safety and fairness testing before deployment in sensitive applications.",
+      "sources": [
+        "https://arxiv.org/html/2508.07090v1",
+        "https://arxiv.org/pdf/2506.23111"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2025/10/01/1124621/openai-india-caste-bias/",

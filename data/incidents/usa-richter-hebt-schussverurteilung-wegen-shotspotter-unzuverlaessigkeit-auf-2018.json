@@ -31,9 +31,27 @@
     "predictive-policing",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf ein faires Verfahren",
+    "Unschuldsvermutung",
+    "Recht auf körperliche Unversehrtheit",
+    "Schutz vor willkürlicher Strafverfolgung",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf ein faires Verfahren",
+    "Unschuldsvermutung",
+    "Recht auf körperliche Unversehrtheit",
+    "Schutz vor willkürlicher Strafverfolgung",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to a fair trial",
+    "Presumption of innocence",
+    "Right to bodily integrity",
+    "Protection from arbitrary prosecution",
+    "Protection from discrimination"
+  ],
   "asm:actors": [
     {
       "name": "Rochester Police Department",
@@ -54,7 +72,76 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "1996",
+      "phase": "infrastructure",
+      "title": "ShotSpotter wird als akustisches Schusserkennungssystem gegründet",
+      "description": "Der Physiker Robert Showen gründet 1996 die Firma ShotSpotter, deren Technik auf Verfahren zur Ortung von Erdbebenherden zurückgeht. Über Stadtgebiete verteilte Akustiksensoren registrieren laute Knallgeräusche; löst ein Geräusch mehrere Sensoren aus, berechnet ein Algorithmus per Laufzeitunterschied den vermeintlichen Schussort. Das System wird ab Ende der 1990er an US-Polizeibehörden verkauft und bildet die technische Grundlage, auf der später Beweise gegen Silvon Simmons gestützt werden.",
+      "title_de": "ShotSpotter wird als akustisches Schusserkennungssystem gegründet",
+      "description_de": "Der Physiker Robert Showen gründet 1996 die Firma ShotSpotter, deren Technik auf Verfahren zur Ortung von Erdbebenherden zurückgeht. Über Stadtgebiete verteilte Akustiksensoren registrieren laute Knallgeräusche; löst ein Geräusch mehrere Sensoren aus, berechnet ein Algorithmus per Laufzeitunterschied den vermeintlichen Schussort. Das System wird ab Ende der 1990er an US-Polizeibehörden verkauft und bildet die technische Grundlage, auf der später Beweise gegen Silvon Simmons gestützt werden.",
+      "title_en": "ShotSpotter is founded as an acoustic gunshot detection system",
+      "description_en": "In 1996 physicist Robert Showen founds ShotSpotter, whose technology derives from methods for locating earthquake epicentres. Acoustic sensors distributed across city areas register loud bangs; when one sound triggers several sensors, an algorithm calculates the presumed location from the time differences. From the late 1990s the system is sold to US police forces and forms the technical basis on which evidence against Silvon Simmons is later built.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SoundThinking"
+      ]
+    },
+    {
+      "date": "2013",
+      "phase": "doctrine",
+      "title": "Geschäftsmodell mit nachträglich von Menschen änderbaren Forensik-Berichten",
+      "description": "ShotSpotter trennt schnelle Echtzeit-Alarme von kostenpflichtigen Detailed Forensic Reports, die nach stundenlanger Audio-Auswertung durch Mitarbeitende als Gerichtsbeweis dienen. Diese menschliche Nachbearbeitung erlaubt es, die ursprüngliche Algorithmus-Einstufung zu überschreiben - auch auf Anfrage der Polizei. Das Rochester Police Department setzt ShotSpotter spätestens seit 2013 ein; ShotSpotter-Ingenieur Paul Greene sagte später aus, eine Umklassifizierung auf Polizeianfrage geschehe ständig.",
+      "title_de": "Geschäftsmodell mit nachträglich von Menschen änderbaren Forensik-Berichten",
+      "description_de": "ShotSpotter trennt schnelle Echtzeit-Alarme von kostenpflichtigen Detailed Forensic Reports, die nach stundenlanger Audio-Auswertung durch Mitarbeitende als Gerichtsbeweis dienen. Diese menschliche Nachbearbeitung erlaubt es, die ursprüngliche Algorithmus-Einstufung zu überschreiben - auch auf Anfrage der Polizei. Das Rochester Police Department setzt ShotSpotter spätestens seit 2013 ein; ShotSpotter-Ingenieur Paul Greene sagte später aus, eine Umklassifizierung auf Polizeianfrage geschehe ständig.",
+      "title_en": "Business model with forensic reports that humans can revise after the fact",
+      "description_en": "ShotSpotter separates fast real-time alerts from paid Detailed Forensic Reports, which serve as court evidence after hours of audio review by staff. This human post-processing makes it possible to override the original algorithmic classification - including at police request. Rochester Police Department has used ShotSpotter since at least 2013; ShotSpotter engineer Paul Greene later testified that reclassification at police request happens all the time.",
+      "sources": [
+        "https://www.vice.com/en/article/police-are-telling-shotspotter-to-alter-evidence-from-gunshot-detecting-ai/",
+        "https://www.atlasofsurveillance.org/a/aos000006-rochester-police-department-gunshot-detection"
+      ]
+    },
+    {
+      "date": "2016-04-01",
+      "phase": "event",
+      "title": "Algorithmus stuft Geräusche als Helikopter ein, Analyst macht daraus vier Schüsse",
+      "description": "Silvon Simmons wird in Rochester von einem Polizisten dreimal in den Rücken geschossen und anschließend des versuchten Polizistenmordes angeklagt. Der ShotSpotter-Algorithmus klassifiziert die Geräusche zunächst nicht als Schüsse, sondern als Helikopter-Rotorlärm. Erst nach Kontakt durch die Polizei änderten ShotSpotter-Mitarbeitende ihre Auswertung und meldeten - nach mehreren wechselnden Zahlen - genau vier Schüsse, also exakt die Zahl der abgegebenen Polizeischüsse.",
+      "title_de": "Algorithmus stuft Geräusche als Helikopter ein, Analyst macht daraus vier Schüsse",
+      "description_de": "Silvon Simmons wird in Rochester von einem Polizisten dreimal in den Rücken geschossen und anschließend des versuchten Polizistenmordes angeklagt. Der ShotSpotter-Algorithmus klassifiziert die Geräusche zunächst nicht als Schüsse, sondern als Helikopter-Rotorlärm. Erst nach Kontakt durch die Polizei änderten ShotSpotter-Mitarbeitende ihre Auswertung und meldeten - nach mehreren wechselnden Zahlen - genau vier Schüsse, also exakt die Zahl der abgegebenen Polizeischüsse.",
+      "title_en": "Algorithm classifies sounds as a helicopter, analyst turns them into four shots",
+      "description_en": "Silvon Simmons is shot three times in the back by a Rochester police officer and then charged with attempted murder of a police officer. The ShotSpotter algorithm initially classifies the sounds not as gunshots but as helicopter rotor noise. Only after contact from police do ShotSpotter staff revise their analysis and report - after several changing figures - exactly four shots, precisely matching the number of shots fired by police.",
+      "sources": [
+        "https://www.vice.com/en/article/police-are-telling-shotspotter-to-alter-evidence-from-gunshot-detecting-ai/",
+        "https://pulitzercenter.org/stories/how-ai-powered-tech-landed-man-jail-scant-evidence"
+      ]
+    },
+    {
+      "date": "2018-01-11",
+      "phase": "consequences",
+      "title": "Richter hebt Verurteilung wegen unzuverlässiger ShotSpotter-Beweise auf",
+      "description": "Im Januar 2018 hebt Richter Christopher Ciaccio die Waffenbesitz-Verurteilung von Silvon Simmons auf und stuft die ShotSpotter-Beweise als unzuverlässig ein. Ein Geschworenengericht hatte Simmons bereits vom Vorwurf des versuchten Polizistenmordes freigesprochen. Ohne die ShotSpotter-Auswertung blieb von der Anklage nichts Tragfähiges übrig - ein früher Präzedenzfall für die Anfechtbarkeit algorithmischer Forensik vor Gericht.",
+      "title_de": "Richter hebt Verurteilung wegen unzuverlässiger ShotSpotter-Beweise auf",
+      "description_de": "Im Januar 2018 hebt Richter Christopher Ciaccio die Waffenbesitz-Verurteilung von Silvon Simmons auf und stuft die ShotSpotter-Beweise als unzuverlässig ein. Ein Geschworenengericht hatte Simmons bereits vom Vorwurf des versuchten Polizistenmordes freigesprochen. Ohne die ShotSpotter-Auswertung blieb von der Anklage nichts Tragfähiges übrig - ein früher Präzedenzfall für die Anfechtbarkeit algorithmischer Forensik vor Gericht.",
+      "title_en": "Judge overturns the conviction over unreliable ShotSpotter evidence",
+      "description_en": "In January 2018 Judge Christopher Ciaccio overturns Silvon Simmons's weapons-possession conviction, ruling the ShotSpotter evidence unreliable. A jury had already acquitted Simmons of the attempted-murder charge against a police officer. Without the ShotSpotter analysis, nothing viable remained of the prosecution - an early precedent for challenging algorithmic forensics in court.",
+      "sources": [
+        "https://spectrumlocalnews.com/nys/rochester/crime-safety/2018/01/11/conviction-overturned-man-accused-shooting-rpd-officer-rochester-silvon-simmons"
+      ]
+    },
+    {
+      "date": "2021-07",
+      "phase": "consequences",
+      "title": "Investigativ-Berichte weiten Kritik an manipulierbaren Schuss-Beweisen aus",
+      "description": "2021 dokumentieren Vice/Motherboard und weitere Recherchen, dass ShotSpotter-Analysten Einstufungen wiederholt auf Polizeianfrage änderten - der Rochester-Fall wird dabei als Musterbeispiel genannt. In Chicago zogen Staatsanwälte ShotSpotter-Beweise zurück, statt sie in einem Frye-Hearing zu verteidigen. Der Fall Simmons befeuert eine breitere juristische und öffentliche Debatte über die Beweiskraft proprietärer, intransparenter Forensik-KI.",
+      "title_de": "Investigativ-Berichte weiten Kritik an manipulierbaren Schuss-Beweisen aus",
+      "description_de": "2021 dokumentieren Vice/Motherboard und weitere Recherchen, dass ShotSpotter-Analysten Einstufungen wiederholt auf Polizeianfrage änderten - der Rochester-Fall wird dabei als Musterbeispiel genannt. In Chicago zogen Staatsanwälte ShotSpotter-Beweise zurück, statt sie in einem Frye-Hearing zu verteidigen. Der Fall Simmons befeuert eine breitere juristische und öffentliche Debatte über die Beweiskraft proprietärer, intransparenter Forensik-KI.",
+      "title_en": "Investigative reports widen criticism of manipulable gunshot evidence",
+      "description_en": "In 2021 Vice/Motherboard and further investigations document that ShotSpotter analysts repeatedly changed classifications at police request - with the Rochester case cited as a prime example. In Chicago prosecutors withdrew ShotSpotter evidence rather than defend it in a Frye hearing. The Simmons case fuels a broader legal and public debate about the evidentiary weight of proprietary, opaque forensic AI.",
+      "sources": [
+        "https://www.aclu.org/news/privacy-technology/four-problems-with-the-shotspotter-gunshot-detection-system",
+        "https://www.criminallegalnews.org/news/2022/jan/15/shotspotter-acoustic-detection-system-another-example-forensic-tool-shrouded-secrecy-and-prone-questionable-results/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://spectrumlocalnews.com/nys/rochester/crime-safety/2018/01/11/conviction-overturned-man-accused-shooting-rpd-officer-rochester-silvon-simmons",

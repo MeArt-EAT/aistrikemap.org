@@ -31,9 +31,27 @@
     "surveillance",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vertraulicher Kommunikation",
+    "Informationelle Selbstbestimmung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vertraulicher Kommunikation",
+    "Informationelle Selbstbestimmung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Confidentiality of communications",
+    "Informational self-determination",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Google (Alphabet)",
@@ -47,7 +65,64 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-02",
+      "phase": "infrastructure",
+      "title": "Google integriert Gemini tief in Workspace und Gmail",
+      "description": "Im Februar 2024 fuehrte Google sein KI-Modell Gemini ein und ersetzte damit Bard und Duet AI als zentralen Assistenten im gesamten Workspace-Oekosystem. Gemini wurde in Gmail, Docs, Chat und Meet eingebaut und erhielt technischen Zugriff auf E-Mail-Inhalte, Anhaenge und Gespraechsverlaeufe, um Funktionen wie Zusammenfassungen und Antwortvorschlaege zu liefern. Damit entstand die Infrastruktur, die ein flaechendeckendes Auswerten privater Kommunikation ueberhaupt erst möglich machte.",
+      "title_de": "Google integriert Gemini tief in Workspace und Gmail",
+      "description_de": "Im Februar 2024 fuehrte Google sein KI-Modell Gemini ein und ersetzte damit Bard und Duet AI als zentralen Assistenten im gesamten Workspace-Oekosystem. Gemini wurde in Gmail, Docs, Chat und Meet eingebaut und erhielt technischen Zugriff auf E-Mail-Inhalte, Anhaenge und Gespraechsverlaeufe, um Funktionen wie Zusammenfassungen und Antwortvorschlaege zu liefern. Damit entstand die Infrastruktur, die ein flaechendeckendes Auswerten privater Kommunikation ueberhaupt erst möglich machte.",
+      "title_en": "Google embeds Gemini deeply into Workspace and Gmail",
+      "description_en": "In February 2024 Google introduced its Gemini AI model, replacing Bard and Duet AI as the central assistant across the Workspace ecosystem. Gemini was built into Gmail, Docs, Chat and Meet and given technical access to email content, attachments and conversation histories to power features such as summaries and reply suggestions. This created the infrastructure that made large-scale processing of private communications possible in the first place.",
+      "sources": [
+        "https://workspaceupdates.googleblog.com/2024/02/gemini-for-google-workspace.html",
+        "https://blog.google/products/workspace/google-gemini-workspace-may-2024-updates/"
+      ]
+    },
+    {
+      "date": "2025-10-10",
+      "phase": "doctrine",
+      "title": "Google schaltet Smart-Features standardmaessig für alle US-Konten ein",
+      "description": "Um den 10. Oktober 2025 stellte Google die zuvor freiwilligen Gemini-Smart-Features für Gmail, Chat und Meet bei US-Konten auf standardmaessig aktiviert um. Statt eines Opt-in mussten Nutzer die Auswertung ihrer Kommunikation nun aktiv in tief verschachtelten Datenschutzeinstellungen abschalten. In der EU, Japan, der Schweiz und Großbritannien blieb die Funktion aus Datenschutzgruenden standardmaessig deaktiviert.",
+      "title_de": "Google schaltet Smart-Features standardmaessig für alle US-Konten ein",
+      "description_de": "Um den 10. Oktober 2025 stellte Google die zuvor freiwilligen Gemini-Smart-Features für Gmail, Chat und Meet bei US-Konten auf standardmaessig aktiviert um. Statt eines Opt-in mussten Nutzer die Auswertung ihrer Kommunikation nun aktiv in tief verschachtelten Datenschutzeinstellungen abschalten. In der EU, Japan, der Schweiz und Großbritannien blieb die Funktion aus Datenschutzgruenden standardmaessig deaktiviert.",
+      "title_en": "Google switches Smart Features on by default for all US accounts",
+      "description_en": "Around 10 October 2025 Google flipped the previously voluntary Gemini Smart Features for Gmail, Chat and Meet to on-by-default for US accounts. Instead of an opt-in, users now had to actively disable the processing of their communications via deeply buried privacy settings. In the EU, Japan, Switzerland and the UK the feature remained off by default for data-protection reasons.",
+      "sources": [
+        "https://www.huffpost.com/entry/gmail-opt-out-gemini-goog_l_69c6a7eae4b0a6ee60c47ed0",
+        "https://proton.me/blog/turn-off-gemini-gmail"
+      ]
+    },
+    {
+      "date": "2025-11-11",
+      "phase": "event",
+      "title": "Sammelklage Thele v. Google wegen verdeckter Gemini-Auswertung",
+      "description": "Am 11. November 2025 wurde vor dem US-Bundesgericht in San Jose die Sammelklage Thele v. Google (Az. 5:25-cv-09704) eingereicht. Sie wirft Google vor, Gemini ohne ausdrueckliche Zustimmung aktiviert zu haben, sodass die KI die gesamte private Kommunikation in Gmail, Chat und Meet auswertet. Die Klage stuetzt sich auf den California Invasion of Privacy Act (CIPA), insbesondere Section 632 zum Abhoeren vertraulicher Kommunikation.",
+      "title_de": "Sammelklage Thele v. Google wegen verdeckter Gemini-Auswertung",
+      "description_de": "Am 11. November 2025 wurde vor dem US-Bundesgericht in San Jose die Sammelklage Thele v. Google (Az. 5:25-cv-09704) eingereicht. Sie wirft Google vor, Gemini ohne ausdrueckliche Zustimmung aktiviert zu haben, sodass die KI die gesamte private Kommunikation in Gmail, Chat und Meet auswertet. Die Klage stuetzt sich auf den California Invasion of Privacy Act (CIPA), insbesondere Section 632 zum Abhoeren vertraulicher Kommunikation.",
+      "title_en": "Class action Thele v. Google over covert Gemini scanning",
+      "description_en": "On 11 November 2025 the class action Thele v. Google (No. 5:25-cv-09704) was filed in federal court in San Jose. It accuses Google of activating Gemini without explicit consent so that the AI processes users' entire private communications in Gmail, Chat and Meet. The suit relies on California's Invasion of Privacy Act (CIPA), in particular Section 632 on intercepting confidential communications.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2025-11-12/google-accused-in-suit-of-using-gemini-ai-tool-to-snoop-on-users",
+        "https://www.classaction.org/news/thele-v.-google-llc"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "phase": "consequences",
+      "title": "Debatte um KI-Einwilligung und kognitive Privatsphäre",
+      "description": "Die Klage loeste eine breite Debatte ueber Einwilligungsmechanismen bei KI-Funktionen und ueber sogenannte kognitive Privatsphäre aus. Datenschuetzer und Anwaltskanzleien werteten den Fall als Praezedenz dafuer, ob das stille Einschalten von KI-Auswertung gegen Abhoergesetze verstoesst. Sicherheitsexperten und Medien veroeffentlichten parallel Anleitungen, wie Nutzer die Gemini-Smart-Features in ihren Konten wieder abschalten können.",
+      "title_de": "Debatte um KI-Einwilligung und kognitive Privatsphäre",
+      "description_de": "Die Klage loeste eine breite Debatte ueber Einwilligungsmechanismen bei KI-Funktionen und ueber sogenannte kognitive Privatsphäre aus. Datenschuetzer und Anwaltskanzleien werteten den Fall als Praezedenz dafuer, ob das stille Einschalten von KI-Auswertung gegen Abhoergesetze verstoesst. Sicherheitsexperten und Medien veroeffentlichten parallel Anleitungen, wie Nutzer die Gemini-Smart-Features in ihren Konten wieder abschalten können.",
+      "title_en": "Debate over AI consent and cognitive privacy",
+      "description_en": "The lawsuit triggered a broad debate over consent mechanisms for AI features and over so-called cognitive privacy. Privacy advocates and law firms treated the case as a test of whether silently switching on AI processing violates wiretapping statutes. In parallel, security experts and media published guides explaining how users can turn the Gemini Smart Features back off in their accounts.",
+      "sources": [
+        "https://natlawreview.com/article/silent-switch-new-lawsuit-alleges-google-uses-gemini-ai-secretly-read-gmail-chat",
+        "https://www.aicerts.ai/news/google-lawsuit-tests-cognitive-privacy-regulation/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bloomberg.com/news/articles/2025-11-12/google-accused-in-suit-of-using-gemini-ai-tool-to-snoop-on-users",

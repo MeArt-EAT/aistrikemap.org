@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Schutz vertraulicher Informationen",
+    "Berufsgeheimnis"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Schutz vertraulicher Informationen",
+    "Berufsgeheimnis"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Protection of confidential information",
+    "Professional confidentiality"
+  ],
   "asm:actors": [
     {
       "name": "McKinsey & Company",
@@ -48,7 +63,78 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-07",
+      "phase": "infrastructure",
+      "title": "McKinsey nimmt 'Lilli' firmenweit in Betrieb",
+      "description": "Im Juli 2023 rollte McKinsey seinen internen generativen KI-Assistenten 'Lilli' für die gesamte Belegschaft aus. Die Plattform buendelt ueber 40 Wissensquellen und mehr als 100.000 interne Dokumente und beantwortet per Retrieval-Augmented-Generation Anfragen zu Strategie- und Mandantenprojekten. Damit entstand ein einziges KI-Frontend, das direkt vor riesigen Mengen vertraulicher Unternehmens- und Mandantendaten sass.",
+      "title_de": "McKinsey nimmt 'Lilli' firmenweit in Betrieb",
+      "description_de": "Im Juli 2023 rollte McKinsey seinen internen generativen KI-Assistenten 'Lilli' für die gesamte Belegschaft aus. Die Plattform buendelt ueber 40 Wissensquellen und mehr als 100.000 interne Dokumente und beantwortet per Retrieval-Augmented-Generation Anfragen zu Strategie- und Mandantenprojekten. Damit entstand ein einziges KI-Frontend, das direkt vor riesigen Mengen vertraulicher Unternehmens- und Mandantendaten sass.",
+      "title_en": "McKinsey rolls out 'Lilli' firmwide",
+      "description_en": "In July 2023 McKinsey rolled out its internal generative-AI assistant 'Lilli' to the entire workforce. The platform aggregates more than 40 knowledge sources and over 100,000 internal documents and answers questions on strategy and client engagements via retrieval-augmented generation. This created a single AI front end sitting directly in front of vast volumes of confidential corporate and client data.",
+      "sources": [
+        "https://www.mckinsey.com/capabilities/tech-and-ai/how-we-help-clients/rewiring-the-way-mckinsey-works-with-lilli",
+        "https://www.ciodive.com/news/McKinsey-generative-AI-Lilli-platform-internal-employees/691231/"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Wettlauf um Enterprise-KI stellt Tempo vor Absicherung",
+      "description": "Mit der breiten Einführung generativer KI in Unternehmen setzte sich das Muster durch, KI-Assistenten schnell ueber bestehende Datenbestaende zu stuelpen, um Produktivitaetsgewinne zu erzielen. Bei Lilli waren bis 72 Prozent der Belegschaft aktiv, bei mehr als 500.000 Prompts pro Monat. Authentifizierung, API-Absicherung und Datenbank-Haertung der KI-Schicht hinkten diesem Tempo hinterher.",
+      "title_de": "Wettlauf um Enterprise-KI stellt Tempo vor Absicherung",
+      "description_de": "Mit der breiten Einführung generativer KI in Unternehmen setzte sich das Muster durch, KI-Assistenten schnell ueber bestehende Datenbestaende zu stuelpen, um Produktivitaetsgewinne zu erzielen. Bei Lilli waren bis 72 Prozent der Belegschaft aktiv, bei mehr als 500.000 Prompts pro Monat. Authentifizierung, API-Absicherung und Datenbank-Haertung der KI-Schicht hinkten diesem Tempo hinterher.",
+      "title_en": "Enterprise-AI race put speed before security",
+      "description_en": "As generative AI spread across enterprises, the prevailing pattern was to bolt AI assistants quickly onto existing data stores to capture productivity gains. On Lilli up to 72 percent of the workforce were active, generating more than 500,000 prompts per month. Authentication, API hardening and database protection of the AI layer lagged behind that pace.",
+      "sources": [
+        "https://traefik.io/blog/mckinsey-breach-is-about-ai-governance",
+        "https://outpost24.com/blog/ai-agent-hacked-mckinsey-ai-platform/"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "phase": "event",
+      "title": "Autonomer KI-Agent erlangt in zwei Stunden Vollzugriff",
+      "description": "Am 28. Februar 2026 richteten Forscher des Red-Team-Startups CodeWall einen autonomen KI-Agenten gegen Lilli, ohne Insiderwissen. Der Agent fand die öffentlich einsehbare API-Doku mit ueber 200 Endpunkten, davon 22 ohne Authentifizierung, und entdeckte eine SQL-Injection, weil JSON-Schluessel ungeprueft in SQL-Abfragen eingefuegt wurden. Innerhalb von zwei Stunden erhielt er Lese-/Schreibzugriff auf rund 46,5 Mio. Chat-Nachrichten, 728.000 vertrauliche Mandantenfiles, 3,68 Mio. RAG-Dokumentenfragmente und 57.000 Nutzerkonten.",
+      "title_de": "Autonomer KI-Agent erlangt in zwei Stunden Vollzugriff",
+      "description_de": "Am 28. Februar 2026 richteten Forscher des Red-Team-Startups CodeWall einen autonomen KI-Agenten gegen Lilli, ohne Insiderwissen. Der Agent fand die öffentlich einsehbare API-Doku mit ueber 200 Endpunkten, davon 22 ohne Authentifizierung, und entdeckte eine SQL-Injection, weil JSON-Schluessel ungeprueft in SQL-Abfragen eingefuegt wurden. Innerhalb von zwei Stunden erhielt er Lese-/Schreibzugriff auf rund 46,5 Mio. Chat-Nachrichten, 728.000 vertrauliche Mandantenfiles, 3,68 Mio. RAG-Dokumentenfragmente und 57.000 Nutzerkonten.",
+      "title_en": "Autonomous AI agent gains full access in two hours",
+      "description_en": "On 28 February 2026 researchers at red-team startup CodeWall pointed an autonomous AI agent at Lilli with no insider knowledge. The agent found the publicly exposed API documentation listing over 200 endpoints, 22 of them unauthenticated, and detected an SQL injection because JSON keys were concatenated unchecked into SQL queries. Within two hours it gained read-write access to roughly 46.5 million chat messages, 728,000 confidential client files, 3.68 million RAG document chunks and 57,000 user accounts.",
+      "sources": [
+        "https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform",
+        "https://the-decoder.com/an-ai-agent-hacked-mckinseys-internal-ai-platform-in-two-hours-using-a-decades-old-technique/"
+      ]
+    },
+    {
+      "date": "2026-03-01",
+      "phase": "consequences",
+      "title": "McKinsey schliesst die Luecken nach Disclosure",
+      "description": "Am 1. Maerz 2026 ging CodeWalls Offenlegungs-E-Mail beim McKinsey-Sicherheitsteam ein. Der CISO bestaetigte sie am Folgetag und liess die ungesicherten Endpunkte umgehend patchen. Es wurde kein boeswilliger Zugriff Dritter festgestellt; der Zugriff erfolgte durch die beauftragten Forscher.",
+      "title_de": "McKinsey schliesst die Luecken nach Disclosure",
+      "description_de": "Am 1. Maerz 2026 ging CodeWalls Offenlegungs-E-Mail beim McKinsey-Sicherheitsteam ein. Der CISO bestaetigte sie am Folgetag und liess die ungesicherten Endpunkte umgehend patchen. Es wurde kein boeswilliger Zugriff Dritter festgestellt; der Zugriff erfolgte durch die beauftragten Forscher.",
+      "title_en": "McKinsey patches the flaws after disclosure",
+      "description_en": "On 1 March 2026 CodeWall's disclosure email reached McKinsey's security team. The CISO acknowledged it the next day and had the unauthenticated endpoints patched immediately. No malicious third-party access was reported; the access was carried out by the commissioned researchers.",
+      "sources": [
+        "https://www.theregister.com/2026/03/09/mckinsey_ai_chatbot_hacked/",
+        "https://outpost24.com/blog/ai-agent-hacked-mckinsey-ai-platform/"
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "phase": "consequences",
+      "title": "Bericht macht Fall zum Lehrstueck für Enterprise-KI-Sicherheit",
+      "description": "Am 9. Maerz 2026 veroeffentlichte CodeWall den Bericht, der breit von Fachmedien aufgegriffen wurde. Der Fall gilt seither als Warnschuss für KI-native Sicherheit: Generative KI-Frontends, die direkt vor Mandantendaten sitzen, vergroessern die Angriffsflaeche dramatisch, und autonome Agenten finden mit einer jahrzehntealten Technik wie SQL-Injection in Stunden, wofuer früher spezialisierte Teams noetig waren.",
+      "title_de": "Bericht macht Fall zum Lehrstueck für Enterprise-KI-Sicherheit",
+      "description_de": "Am 9. Maerz 2026 veroeffentlichte CodeWall den Bericht, der breit von Fachmedien aufgegriffen wurde. Der Fall gilt seither als Warnschuss für KI-native Sicherheit: Generative KI-Frontends, die direkt vor Mandantendaten sitzen, vergroessern die Angriffsflaeche dramatisch, und autonome Agenten finden mit einer jahrzehntealten Technik wie SQL-Injection in Stunden, wofuer früher spezialisierte Teams noetig waren.",
+      "title_en": "Report turns the case into an enterprise-AI security lesson",
+      "description_en": "On 9 March 2026 CodeWall published the report, which was widely picked up by trade media. The case has since been treated as a warning shot for AI-native security: generative AI front ends sitting directly in front of client data dramatically enlarge the attack surface, and autonomous agents find in hours, using a decades-old technique like SQL injection, what previously required specialised teams.",
+      "sources": [
+        "https://cybernews.com/security/ai-agent-cracked-mckinsey-chatbot/",
+        "https://www.harness.io/blog/the-mckinsey-incident-is-a-warning-shot-for-ai-native-design"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2026/03/09/mckinsey_ai_chatbot_hacked/",

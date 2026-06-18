@@ -31,9 +31,24 @@
     "facial-recognition",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Right to privacy",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "IBM",
@@ -66,7 +81,89 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Kommerzielle Gesichtsanalyse-APIs von IBM, Microsoft und Face++ am Markt",
+      "description": "Bis 2016 boten IBM (Watson Visual Recognition), Microsoft (Face API/Cognitive Services) und das chinesische Megvii (Face++) öffentlich zugängliche Cloud-APIs zur automatischen Geschlechts- und Attributklassifikation aus Gesichtsbildern an. Trainiert wurden diese Systeme auf Bild-Datensätzen, die überproportional hellhäutige Männer enthielten. Der Markt für Gesichtserkennung wuchs rasant (geschätzt 3 Mrd. USD 2016, Prognose 10 Mrd. USD bis 2024), ohne dass die Anbieter die Genauigkeit nach Hautton und Geschlecht aufschlüsselten.",
+      "title_de": "Kommerzielle Gesichtsanalyse-APIs von IBM, Microsoft und Face++ am Markt",
+      "description_de": "Bis 2016 boten IBM (Watson Visual Recognition), Microsoft (Face API/Cognitive Services) und das chinesische Megvii (Face++) öffentlich zugängliche Cloud-APIs zur automatischen Geschlechts- und Attributklassifikation aus Gesichtsbildern an. Trainiert wurden diese Systeme auf Bild-Datensätzen, die überproportional hellhäutige Männer enthielten. Der Markt für Gesichtserkennung wuchs rasant (geschätzt 3 Mrd. USD 2016, Prognose 10 Mrd. USD bis 2024), ohne dass die Anbieter die Genauigkeit nach Hautton und Geschlecht aufschlüsselten.",
+      "title_en": "Commercial facial-analysis APIs from IBM, Microsoft and Face++ on the market",
+      "description_en": "By 2016, IBM (Watson Visual Recognition), Microsoft (Face API/Cognitive Services) and China's Megvii (Face++) offered publicly available cloud APIs for automatic gender and attribute classification from face images. These systems were trained on image datasets that over-represented lighter-skinned men. The facial-recognition market was growing fast (an estimated USD 3 billion in 2016, projected USD 10 billion by 2024) without vendors disclosing accuracy broken down by skin tone and gender.",
+      "sources": [
+        "https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212"
+      ]
+    },
+    {
+      "date": "2017-05",
+      "phase": "doctrine",
+      "title": "Buolamwini und Gebru bauen den Pilot Parliaments Benchmark als Audit-Methode",
+      "description": "Weil gängige Test-Datensätze selbst verzerrt waren (mehrheitlich hellhäutig und männlich), erstellten Joy Buolamwini (MIT Media Lab) und Timnit Gebru einen eigenen, ausgewogenen Benchmark: 1.270 Porträts von Parlamentsabgeordneten aus drei afrikanischen (Ruanda, Senegal, Südafrika) und drei europäischen Ländern (Island, Finnland, Schweden), ausgewählt nach Geschlechterparität der Parlamente (Stand Mai 2017). Hauttöne wurden über die dermatologische Fitzpatrick-Skala klassifiziert. Diese Methode machte intersektionale Fehlerraten - dunkelhäutige Frauen vs. hellhäutige Männer - erstmals systematisch messbar.",
+      "title_de": "Buolamwini und Gebru bauen den Pilot Parliaments Benchmark als Audit-Methode",
+      "description_de": "Weil gängige Test-Datensätze selbst verzerrt waren (mehrheitlich hellhäutig und männlich), erstellten Joy Buolamwini (MIT Media Lab) und Timnit Gebru einen eigenen, ausgewogenen Benchmark: 1.270 Porträts von Parlamentsabgeordneten aus drei afrikanischen (Ruanda, Senegal, Südafrika) und drei europäischen Ländern (Island, Finnland, Schweden), ausgewählt nach Geschlechterparität der Parlamente (Stand Mai 2017). Hauttöne wurden über die dermatologische Fitzpatrick-Skala klassifiziert. Diese Methode machte intersektionale Fehlerraten - dunkelhäutige Frauen vs. hellhäutige Männer - erstmals systematisch messbar.",
+      "title_en": "Buolamwini and Gebru build the Pilot Parliaments Benchmark as an audit method",
+      "description_en": "Because common test datasets were themselves skewed (mostly lighter-skinned and male), Joy Buolamwini (MIT Media Lab) and Timnit Gebru built their own balanced benchmark: 1,270 portraits of parliamentarians from three African (Rwanda, Senegal, South Africa) and three European countries (Iceland, Finland, Sweden), selected by gender parity of the parliaments (as of May 2017). Skin tones were classified using the dermatological Fitzpatrick scale. This method made intersectional error rates - darker-skinned women vs. lighter-skinned men - systematically measurable for the first time.",
+      "sources": [
+        "https://www.media.mit.edu/projects/gender-shades/overview/"
+      ]
+    },
+    {
+      "date": "2018-02-12",
+      "phase": "event",
+      "title": "Gender-Shades-Studie weist 34,7% Fehlerrate bei dunkelhäutigen Frauen nach",
+      "description": "Buolamwini und Gebru veröffentlichten die Studie 'Gender Shades' (vorgestellt auf der FAT*-Konferenz in New York). Bei hellhäutigen Männern lag die Geschlechts-Fehlerrate unter 1%, bei dunkelhäutigen Frauen dagegen bei bis zu 34,7%. Bei Microsofts API waren 93,6% aller Fehlklassifikationen Gesichter dunkelhäutiger Personen. Die Studienergebnisse waren den Unternehmen bereits am 22. Dezember 2017 vorab zugestellt worden.",
+      "title_de": "Gender-Shades-Studie weist 34,7% Fehlerrate bei dunkelhäutigen Frauen nach",
+      "description_de": "Buolamwini und Gebru veröffentlichten die Studie 'Gender Shades' (vorgestellt auf der FAT*-Konferenz in New York). Bei hellhäutigen Männern lag die Geschlechts-Fehlerrate unter 1%, bei dunkelhäutigen Frauen dagegen bei bis zu 34,7%. Bei Microsofts API waren 93,6% aller Fehlklassifikationen Gesichter dunkelhäutiger Personen. Die Studienergebnisse waren den Unternehmen bereits am 22. Dezember 2017 vorab zugestellt worden.",
+      "title_en": "Gender Shades study documents 34.7% error rate for darker-skinned women",
+      "description_en": "Buolamwini and Gebru published the 'Gender Shades' study (presented at the FAT* conference in New York). For lighter-skinned men the gender error rate was under 1%, while for darker-skinned women it reached up to 34.7%. For Microsoft's API, 93.6% of all misclassifications were faces of darker-skinned individuals. The study results had already been shared with the companies in advance on 22 December 2017.",
+      "sources": [
+        "https://proceedings.mlr.press/v81/buolamwini18a.html",
+        "https://www.nytimes.com/2018/02/09/technology/facial-recognition-race-artificial-intelligence.html"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "consequences",
+      "title": "IBM und Microsoft korrigieren ihre APIs binnen Monaten",
+      "description": "Auf den Befund reagierten IBM und Microsoft innerhalb weniger Monate mit überarbeiteten, demografisch ausgewogeneren Trainingsdaten und veröffentlichten verbesserte APIs. Microsoft senkte die Fehlerrate für Gesichter dunkelhäutiger Frauen nach eigenen Angaben von rund 21% auf unter 5%. Gender Shades wurde zum Standard-Referenzfall dafür, dass algorithmische Systeme intersektional auditiert werden müssen.",
+      "title_de": "IBM und Microsoft korrigieren ihre APIs binnen Monaten",
+      "description_de": "Auf den Befund reagierten IBM und Microsoft innerhalb weniger Monate mit überarbeiteten, demografisch ausgewogeneren Trainingsdaten und veröffentlichten verbesserte APIs. Microsoft senkte die Fehlerrate für Gesichter dunkelhäutiger Frauen nach eigenen Angaben von rund 21% auf unter 5%. Gender Shades wurde zum Standard-Referenzfall dafür, dass algorithmische Systeme intersektional auditiert werden müssen.",
+      "title_en": "IBM and Microsoft correct their APIs within months",
+      "description_en": "In response to the findings, IBM and Microsoft reacted within months with revised, more demographically balanced training data and released improved APIs. Microsoft reported reducing the error rate for darker-skinned women's faces from about 21% to under 5%. Gender Shades became the standard reference case for the need to audit algorithmic systems intersectionally.",
+      "sources": [
+        "https://onezero.medium.com/how-a-2018-research-paper-led-to-amazon-and-ibm-curbing-their-facial-recognition-programs-db9d6cb8a420"
+      ]
+    },
+    {
+      "date": "2019-05",
+      "phase": "consequences",
+      "title": "Erste kommunale Verbote und NIST-Bestätigung der Demografie-Effekte",
+      "description": "San Francisco verbot im Mai 2019 als erste US-Stadt den Einsatz von Gesichtserkennung durch städtische Behörden und Polizei; weitere Städte folgten. Im Dezember 2019 bestätigte das US-Bundesinstitut NIST in seinem Face-Recognition-Vendor-Test (NISTIR 8280, fast 200 Algorithmen, über 18 Mio. Bilder) systematisch demografische Genauigkeitsunterschiede - eine unabhängige Bestätigung des Gender-Shades-Befunds auf breiter Datenbasis.",
+      "title_de": "Erste kommunale Verbote und NIST-Bestätigung der Demografie-Effekte",
+      "description_de": "San Francisco verbot im Mai 2019 als erste US-Stadt den Einsatz von Gesichtserkennung durch städtische Behörden und Polizei; weitere Städte folgten. Im Dezember 2019 bestätigte das US-Bundesinstitut NIST in seinem Face-Recognition-Vendor-Test (NISTIR 8280, fast 200 Algorithmen, über 18 Mio. Bilder) systematisch demografische Genauigkeitsunterschiede - eine unabhängige Bestätigung des Gender-Shades-Befunds auf breiter Datenbasis.",
+      "title_en": "First municipal bans and NIST confirmation of demographic effects",
+      "description_en": "In May 2019, San Francisco became the first US city to ban the use of facial recognition by city agencies and police; other cities followed. In December 2019, the US federal institute NIST confirmed systematic demographic accuracy differentials in its Face Recognition Vendor Test (NISTIR 8280, nearly 200 algorithms, over 18 million images) - an independent confirmation of the Gender Shades finding on a broad data basis.",
+      "sources": [
+        "https://www.npr.org/2019/05/14/723193785/san-francisco-considers-ban-on-governments-use-of-facial-recognition-technology",
+        "https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software"
+      ]
+    },
+    {
+      "date": "2020-06",
+      "phase": "consequences",
+      "title": "IBM verlässt Geschäft, Amazon und Microsoft stoppen Verkauf an Polizei",
+      "description": "Im Zuge der Black-Lives-Matter-Proteste nach dem Tod von George Floyd zog IBM sich im Juni 2020 vollständig aus dem Geschäft mit universeller Gesichtserkennung zurück; CEO Arvind Krishna verwies auf das Risiko diskriminierender Ergebnisse. Amazon verhängte ein einjähriges Moratorium für den Polizeieinsatz von Rekognition, Microsoft kündigte an, bis zu einer bundesweiten, menschenrechtsbasierten Regulierung nicht an US-Polizeibehörden zu verkaufen.",
+      "title_de": "IBM verlässt Geschäft, Amazon und Microsoft stoppen Verkauf an Polizei",
+      "description_de": "Im Zuge der Black-Lives-Matter-Proteste nach dem Tod von George Floyd zog IBM sich im Juni 2020 vollständig aus dem Geschäft mit universeller Gesichtserkennung zurück; CEO Arvind Krishna verwies auf das Risiko diskriminierender Ergebnisse. Amazon verhängte ein einjähriges Moratorium für den Polizeieinsatz von Rekognition, Microsoft kündigte an, bis zu einer bundesweiten, menschenrechtsbasierten Regulierung nicht an US-Polizeibehörden zu verkaufen.",
+      "title_en": "IBM exits the business, Amazon and Microsoft halt police sales",
+      "description_en": "Amid the Black Lives Matter protests following the death of George Floyd, IBM withdrew entirely from the general-purpose facial-recognition business in June 2020; CEO Arvind Krishna cited the risk of discriminatory results. Amazon imposed a one-year moratorium on police use of Rekognition, and Microsoft announced it would not sell to US police agencies until a federal, human-rights-based regulation was in place.",
+      "sources": [
+        "https://www.npr.org/2020/06/09/873298837/ibm-abandons-facial-recognition-products-condemns-racially-biased-surveillance",
+        "https://www.cnn.com/2020/07/03/tech/facial-recognition-police"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf",
