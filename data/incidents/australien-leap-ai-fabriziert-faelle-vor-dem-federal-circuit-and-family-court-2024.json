@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf ein faires Verfahren",
+    "Zugang zum Recht",
+    "Integrität der Rechtspflege",
+    "Schutz vor Falschinformation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf ein faires Verfahren",
+    "Zugang zum Recht",
+    "Integrität der Rechtspflege",
+    "Schutz vor Falschinformation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to a fair trial",
+    "Access to justice",
+    "Integrity of the administration of justice",
+    "Protection against misinformation"
+  ],
   "asm:actors": [
     {
       "name": "LEAP Legal Software",
@@ -41,7 +56,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "LEAP integriert generative KI in seine Kanzlei-Software",
+      "description": "Der in Australien weit verbreitete Kanzlei-Softwareanbieter LEAP Legal Software baute generative KI-Funktionen in sein Produkt ein, darunter den Recherche-Assistenten LawY. Wie alle großen Sprachmodelle kann das System plausibel klingende, aber frei erfundene Fall-Zitate erzeugen (Halluzination). LEAP bot zur Absicherung einen Verifikations-Service an, bei dem von Menschen geprüfte, korrigierte Zitate zurückgeliefert werden.",
+      "title_de": "LEAP integriert generative KI in seine Kanzlei-Software",
+      "description_de": "Der in Australien weit verbreitete Kanzlei-Softwareanbieter LEAP Legal Software baute generative KI-Funktionen in sein Produkt ein, darunter den Recherche-Assistenten LawY. Wie alle großen Sprachmodelle kann das System plausibel klingende, aber frei erfundene Fall-Zitate erzeugen (Halluzination). LEAP bot zur Absicherung einen Verifikations-Service an, bei dem von Menschen geprüfte, korrigierte Zitate zurückgeliefert werden.",
+      "title_en": "LEAP integrates generative AI into its law-firm software",
+      "description_en": "LEAP Legal Software, a case-management vendor widely used by Australian law firms, embedded generative AI features into its product, including the LawY research assistant. Like all large language models, the system can produce plausible-sounding but entirely fabricated case citations (hallucination). To mitigate this, LEAP offered a verification service that returns human-checked, corrected citations.",
+      "sources": [
+        "https://nswcourts.com.au/articles/lawyer-caught-out-submitting-ai-generated-list-of-fabricated-cases-to-court/"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "doctrine",
+      "title": "Ungeprüfter KI-Output wird in die Akte eingereicht",
+      "description": "Ein als Mr B bezeichneter Anwalt der D Law Firm erstellte mit LEAP eine Liste von Autoritäten für eine Vollstreckungssache im Familienrecht. Er forderte über den LawY-Dienst zwar korrigierte Zitate an und erhielt sie auch, verwendete diese aber nicht. Die ungeprüften, vom Modell halluzinierten Zitate gingen so direkt an das Gericht - ein Versäumnis der anwaltlichen Sorgfalts- und Verifikationspflicht.",
+      "title_de": "Ungeprüfter KI-Output wird in die Akte eingereicht",
+      "description_de": "Ein als Mr B bezeichneter Anwalt der D Law Firm erstellte mit LEAP eine Liste von Autoritäten für eine Vollstreckungssache im Familienrecht. Er forderte über den LawY-Dienst zwar korrigierte Zitate an und erhielt sie auch, verwendete diese aber nicht. Die ungeprüften, vom Modell halluzinierten Zitate gingen so direkt an das Gericht - ein Versäumnis der anwaltlichen Sorgfalts- und Verifikationspflicht.",
+      "title_en": "Unverified AI output is filed with the court",
+      "description_en": "A solicitor identified as Mr B of D Law Firm used LEAP to compile a list of authorities for an enforcement matter in family law. He did request corrected citations through the LawY service and received them, but did not use them. The unverified, model-hallucinated citations thus went straight to the court - a breach of the lawyer's duty of care and verification.",
+      "sources": [
+        "https://legaltechnology.com/2024/10/15/australian-lawyer-reported-to-regulator-for-filing-fake-gen-ai-cases-in-court/"
+      ]
+    },
+    {
+      "date": "2024-07-19",
+      "phase": "event",
+      "title": "Richterin Humphreys vertagt die Verhandlung",
+      "description": "Am 19. Juli 2024 vertagte Richterin Amanda Humphreys am Federal Circuit and Family Court of Australia die Verhandlung, weil die eingereichten Präzedenzfälle nicht existierten. Sie ordnete an, dass Mr B schriftlich darlegen müsse, warum er nicht an die Anwaltsaufsicht gemeldet werden sollte.",
+      "title_de": "Richterin Humphreys vertagt die Verhandlung",
+      "description_de": "Am 19. Juli 2024 vertagte Richterin Amanda Humphreys am Federal Circuit and Family Court of Australia die Verhandlung, weil die eingereichten Präzedenzfälle nicht existierten. Sie ordnete an, dass Mr B schriftlich darlegen müsse, warum er nicht an die Anwaltsaufsicht gemeldet werden sollte.",
+      "title_en": "Judge Humphreys adjourns the hearing",
+      "description_en": "On 19 July 2024 Judge Amanda Humphreys of the Federal Circuit and Family Court of Australia adjourned the hearing because the cited precedents did not exist. She ordered Mr B to explain in writing why he should not be referred to the legal regulator.",
+      "sources": [
+        "https://legaltechnology.com/2024/10/15/australian-lawyer-reported-to-regulator-for-filing-fake-gen-ai-cases-in-court/"
+      ]
+    },
+    {
+      "date": "2024-08-27",
+      "phase": "consequences",
+      "title": "Meldung an die Anwaltsaufsicht angeordnet",
+      "description": "In einer Verfügung vom 27. August 2024 entschied Richterin Humphreys, dass Mr B - der anonym bleiben durfte - an das Office of the Victorian Legal Services Board and Commissioner gemeldet und untersucht werden muss, nachdem er eingeräumt hatte, die fabrizierten Zitate ohne Prüfung eingereicht zu haben.",
+      "title_de": "Meldung an die Anwaltsaufsicht angeordnet",
+      "description_de": "In einer Verfügung vom 27. August 2024 entschied Richterin Humphreys, dass Mr B - der anonym bleiben durfte - an das Office of the Victorian Legal Services Board and Commissioner gemeldet und untersucht werden muss, nachdem er eingeräumt hatte, die fabrizierten Zitate ohne Prüfung eingereicht zu haben.",
+      "title_en": "Referral to the legal regulator ordered",
+      "description_en": "In an order dated 27 August 2024, Judge Humphreys ruled that Mr B - who was permitted to remain anonymous - must be referred to and investigated by the Office of the Victorian Legal Services Board and Commissioner, after he admitted filing the fabricated citations without review.",
+      "sources": [
+        "https://legaltechnology.com/2024/10/15/australian-lawyer-reported-to-regulator-for-filing-fake-gen-ai-cases-in-court/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Weiterpraxis unter Aufsicht; Gerichte verschärfen KI-Regeln",
+      "description": "Der Anwalt durfte unter Aufsicht weiter praktizieren. Der Fall reihte sich in eine wachsende Zahl australischer KI-Halluzinationsfälle vor Gericht ein und befeuerte die Entwicklung verbindlicher Vorgaben: Der Federal Court sowie die Supreme Courts von New South Wales und Victoria erließen in der Folge Practice Notes und Richtlinien, die eine persönliche Verifikation von KI-erzeugten Zitaten durch die verantwortlichen Anwälte verlangen.",
+      "title_de": "Weiterpraxis unter Aufsicht; Gerichte verschärfen KI-Regeln",
+      "description_de": "Der Anwalt durfte unter Aufsicht weiter praktizieren. Der Fall reihte sich in eine wachsende Zahl australischer KI-Halluzinationsfälle vor Gericht ein und befeuerte die Entwicklung verbindlicher Vorgaben: Der Federal Court sowie die Supreme Courts von New South Wales und Victoria erließen in der Folge Practice Notes und Richtlinien, die eine persönliche Verifikation von KI-erzeugten Zitaten durch die verantwortlichen Anwälte verlangen.",
+      "title_en": "Practice continues under supervision; courts tighten AI rules",
+      "description_en": "The solicitor was allowed to keep practising under supervision. The case joined a growing number of Australian AI-hallucination matters before the courts and helped drive binding guidance: the Federal Court and the Supreme Courts of New South Wales and Victoria subsequently issued practice notes and guidelines requiring responsible lawyers to personally verify AI-generated citations.",
+      "sources": [
+        "https://www.lawgazette.co.uk/news/australian-lawyer-who-submitted-fake-ai-cases-allowed-to-stay-in-practice/5124347.article",
+        "https://www.lawsociety.com.au/AI-hub/court-protocols-ai"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://legaltechnology.com/2024/10/15/australian-lawyer-reported-to-regulator-for-filing-fake-gen-ai-cases-in-court/",
