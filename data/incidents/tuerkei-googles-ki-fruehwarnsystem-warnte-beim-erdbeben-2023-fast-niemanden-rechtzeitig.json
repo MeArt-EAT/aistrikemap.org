@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Recht auf Gesundheit",
+    "Recht auf körperliche Unversehrtheit",
+    "Recht auf Information",
+    "Recht auf wirksamen Katastrophenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Recht auf Gesundheit",
+    "Recht auf körperliche Unversehrtheit",
+    "Recht auf Information",
+    "Recht auf wirksamen Katastrophenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Right to health",
+    "Right to physical integrity",
+    "Right to information",
+    "Right to effective disaster protection"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -46,7 +64,64 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-08",
+      "phase": "infrastructure",
+      "title": "Google startet Android Earthquake Alerts als weltweit größtes Sensornetz",
+      "description": "Im August 2020 verwandelte Google gewöhnliche Android-Telefone in Mini-Seismometer: Die eingebauten Beschleunigungssensoren melden mögliche Erschütterungen an einen Detektionsserver, der die Signale von Millionen Geräten kombiniert, um ein Erdbeben zu erkennen und seine Stärke zu schätzen. Damit baute Google ein crowdgesourctes Frühwarnsystem auf, das auch in Ländern ohne eigenes seismisches Messnetz funktionieren sollte. Genau dieser Algorithmus war die technische Vorbedingung für das spätere Versagen in der Türkei.",
+      "title_de": "Google startet Android Earthquake Alerts als weltweit größtes Sensornetz",
+      "description_de": "Im August 2020 verwandelte Google gewöhnliche Android-Telefone in Mini-Seismometer: Die eingebauten Beschleunigungssensoren melden mögliche Erschütterungen an einen Detektionsserver, der die Signale von Millionen Geräten kombiniert, um ein Erdbeben zu erkennen und seine Stärke zu schätzen. Damit baute Google ein crowdgesourctes Frühwarnsystem auf, das auch in Ländern ohne eigenes seismisches Messnetz funktionieren sollte. Genau dieser Algorithmus war die technische Vorbedingung für das spätere Versagen in der Türkei.",
+      "title_en": "Google launches Android Earthquake Alerts as the world's largest sensor network",
+      "description_en": "In August 2020, Google turned ordinary Android phones into mini-seismometers: their built-in accelerometers report possible shaking to a detection server, which combines signals from millions of devices to detect an earthquake and estimate its magnitude. This created a crowdsourced early-warning system intended to work even in countries without their own seismic monitoring network. This very algorithm was the technical precondition for the later failure in Turkey.",
+      "sources": [
+        "https://blog.google/products/android/earthquake-detection-and-alerts/",
+        "https://research.google/blog/android-earthquake-alerts-a-global-system-for-early-warning/"
+      ]
+    },
+    {
+      "date": "2021-04",
+      "phase": "doctrine",
+      "title": "Globaler Roll-out: Warnungen standardmäßig aktiv, auch in der Türkei",
+      "description": "Ab April 2021 rollte Google die algorithmisch erzeugten Warnungen weltweit aus, beginnend mit Neuseeland und Griechenland; bis Ende 2023 war das System in 98 Ländern aktiv. Die Warnungen sind auf Android-Geräten standardmäßig eingeschaltet, ohne dass Nutzer oder nationale Behörden sie prüfen oder konfigurieren. Google übernahm damit faktisch eine Katastrophenschutz-Funktion für Hunderte Millionen Menschen, ohne dass eine staatliche Stelle die Treffsicherheit des Systems kontrollierte.",
+      "title_de": "Globaler Roll-out: Warnungen standardmäßig aktiv, auch in der Türkei",
+      "description_de": "Ab April 2021 rollte Google die algorithmisch erzeugten Warnungen weltweit aus, beginnend mit Neuseeland und Griechenland; bis Ende 2023 war das System in 98 Ländern aktiv. Die Warnungen sind auf Android-Geräten standardmäßig eingeschaltet, ohne dass Nutzer oder nationale Behörden sie prüfen oder konfigurieren. Google übernahm damit faktisch eine Katastrophenschutz-Funktion für Hunderte Millionen Menschen, ohne dass eine staatliche Stelle die Treffsicherheit des Systems kontrollierte.",
+      "title_en": "Global roll-out: alerts enabled by default, including in Turkey",
+      "description_en": "From April 2021 Google rolled out its algorithmically generated alerts worldwide, starting with New Zealand and Greece; by the end of 2023 the system was active in 98 countries. The alerts are switched on by default on Android devices, without users or national authorities reviewing or configuring them. Google thereby effectively took on a disaster-protection role for hundreds of millions of people, with no state body verifying the system's accuracy.",
+      "sources": [
+        "https://blog.google/products/android/android-earthquake-alerts-expansion/",
+        "https://research.google/blog/android-earthquake-alerts-a-global-system-for-early-warning/"
+      ]
+    },
+    {
+      "date": "2023-02-06",
+      "phase": "event",
+      "title": "Erdbeben der Stärke 7,8 - das System warnt fast niemanden rechtzeitig",
+      "description": "Beim verheerenden Erdbeben in der Südtürkei am 6. Februar 2023 schätzte Googles Algorithmus die Stärke des ersten Bebens auf nur 4,5 bis 4,9 statt der tatsächlichen 7,8. Dadurch erhielten lediglich 469 Menschen die höchste Warnstufe 'Take Action', obwohl bis zu 10 Millionen Menschen im Umkreis von 158 km hätten gewarnt werden können; rund 500.000 bekamen nur die schwächere Meldung 'Be Aware'. Wertvolle Sekunden, in denen Menschen aus einsturzgefährdeten Gebäuden hätten fliehen können, verstrichen ungenutzt.",
+      "title_de": "Erdbeben der Stärke 7,8 - das System warnt fast niemanden rechtzeitig",
+      "description_de": "Beim verheerenden Erdbeben in der Südtürkei am 6. Februar 2023 schätzte Googles Algorithmus die Stärke des ersten Bebens auf nur 4,5 bis 4,9 statt der tatsächlichen 7,8. Dadurch erhielten lediglich 469 Menschen die höchste Warnstufe 'Take Action', obwohl bis zu 10 Millionen Menschen im Umkreis von 158 km hätten gewarnt werden können; rund 500.000 bekamen nur die schwächere Meldung 'Be Aware'. Wertvolle Sekunden, in denen Menschen aus einsturzgefährdeten Gebäuden hätten fliehen können, verstrichen ungenutzt.",
+      "title_en": "Magnitude 7.8 earthquake - the system warns almost no one in time",
+      "description_en": "During the devastating earthquake in southern Turkey on 6 February 2023, Google's algorithm estimated the first quake's magnitude at just 4.5 to 4.9 instead of the actual 7.8. As a result only 469 people received the highest 'Take Action' alert, although up to 10 million people within 158 km could have been warned; around 500,000 received only the weaker 'Be Aware' notification. Precious seconds in which people could have fled collapse-prone buildings passed unused.",
+      "sources": [
+        "https://www.androidauthority.com/google-android-earthquake-alerts-turkey-earthquake-faliure-3581473/",
+        "https://www.science.org/doi/10.1126/science.ads4779"
+      ]
+    },
+    {
+      "date": "2025-07-28",
+      "phase": "consequences",
+      "title": "Google räumt Versagen ein - über 55.000 Tote, nachträgliche Korrektur",
+      "description": "Erst im Juli 2025, mehr als zwei Jahre nach der Katastrophe mit über 55.000 Toten und mehr als 100.000 Verletzten, räumte Google in einer Veröffentlichung im Fachjournal Science ein, dass 'Grenzen der Detektionsalgorithmen' das Versagen verursacht hatten. In einer nachträglichen Simulation mit überarbeiteten Algorithmen hätte das System 10 Millionen 'Take Action'- und 67 Millionen 'Be Aware'-Warnungen ausgelöst. Kritiker bemängelten, dass sich Betroffene auf ein intransparentes System verlassen hatten, dessen Schwäche erst Jahre später offengelegt wurde.",
+      "title_de": "Google räumt Versagen ein - über 55.000 Tote, nachträgliche Korrektur",
+      "description_de": "Erst im Juli 2025, mehr als zwei Jahre nach der Katastrophe mit über 55.000 Toten und mehr als 100.000 Verletzten, räumte Google in einer Veröffentlichung im Fachjournal Science ein, dass 'Grenzen der Detektionsalgorithmen' das Versagen verursacht hatten. In einer nachträglichen Simulation mit überarbeiteten Algorithmen hätte das System 10 Millionen 'Take Action'- und 67 Millionen 'Be Aware'-Warnungen ausgelöst. Kritiker bemängelten, dass sich Betroffene auf ein intransparentes System verlassen hatten, dessen Schwäche erst Jahre später offengelegt wurde.",
+      "title_en": "Google admits the failure - over 55,000 dead, a retroactive correction",
+      "description_en": "Only in July 2025, more than two years after the disaster that killed over 55,000 people and injured more than 100,000, did Google admit in a publication in the journal Science that 'limitations to the detection algorithms' had caused the failure. In a retrospective simulation with revised algorithms, the system would have triggered 10 million 'Take Action' and 67 million 'Be Aware' alerts. Critics noted that affected people had relied on an opaque system whose weakness was disclosed only years later.",
+      "sources": [
+        "https://www.androidauthority.com/google-android-earthquake-alerts-turkey-earthquake-faliure-3581473/",
+        "https://www.science.org/doi/10.1126/science.ads4779"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.euronews.com/next/2025/07/28/google-admits-earthquake-alert-system-failed-to-warn-most-users-before-2023-turkey-quake",

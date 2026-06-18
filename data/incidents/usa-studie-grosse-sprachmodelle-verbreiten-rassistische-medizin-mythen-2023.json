@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Gleichbehandlung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Gleichbehandlung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Protection from discrimination",
+    "Human dignity",
+    "Right to equal treatment",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Stanford University",
@@ -56,7 +74,64 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2009",
+      "phase": "infrastructure",
+      "title": "Rassebasierte Korrekturfaktoren in klinischen Standardwerkzeugen verankert",
+      "description": "Über Jahrzehnte schrieben Lehrbücher, Fachliteratur und klinische Rechner der Medizin rassebasierte Korrekturen fest: Spirometer ziehen seit dem 19. Jahrhundert die Lungenfunktion Schwarzer Patienten pauschal um bis zu 10-15 Prozent niedriger an, und die 2009 veröffentlichte CKD-EPI-Formel rechnete bei der Nierenfunktion (eGFR) einen Rasse-Modifikator ein. Diese Inhalte durchziehen die digitalisierten medizinischen Texte, auf denen spätere Sprachmodelle trainiert wurden.",
+      "title_de": "Rassebasierte Korrekturfaktoren in klinischen Standardwerkzeugen verankert",
+      "description_de": "Über Jahrzehnte schrieben Lehrbücher, Fachliteratur und klinische Rechner der Medizin rassebasierte Korrekturen fest: Spirometer ziehen seit dem 19. Jahrhundert die Lungenfunktion Schwarzer Patienten pauschal um bis zu 10-15 Prozent niedriger an, und die 2009 veröffentlichte CKD-EPI-Formel rechnete bei der Nierenfunktion (eGFR) einen Rasse-Modifikator ein. Diese Inhalte durchziehen die digitalisierten medizinischen Texte, auf denen spätere Sprachmodelle trainiert wurden.",
+      "title_en": "Race-based correction factors embedded in standard clinical tools",
+      "description_en": "For decades, medical textbooks, literature and clinical calculators codified race-based corrections: since the 19th century spirometers have assumed Black patients' lung function to be 10-15 percent lower across the board, and the CKD-EPI equation published in 2009 built a race modifier into kidney-function (eGFR) estimates. This content pervades the digitised medical texts on which later language models were trained.",
+      "sources": [
+        "https://www.kidney.org/press-room/removing-race-estimates-kidney-function",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4631137/"
+      ]
+    },
+    {
+      "date": "2021-09",
+      "phase": "doctrine",
+      "title": "Fachgesellschaften verwerfen Rasse als medizinische Rechengröße",
+      "description": "Im September 2021 empfahl die Task Force von National Kidney Foundation und American Society of Nephrology rasse-freie eGFR-Formeln; 2023 folgte die American Thoracic Society mit rasse-neutralen Spirometrie-Referenzwerten. Damit war fachlich klar belegt, dass rassebasierte Medizin diskreditiert ist. Die zur selben Zeit kommerziell ausgerollten Sprachmodelle wurden dennoch ohne medizinische Kuratierung auf große, ungefilterte Textkorpora trainiert und als universelle Assistenten angeboten.",
+      "title_de": "Fachgesellschaften verwerfen Rasse als medizinische Rechengröße",
+      "description_de": "Im September 2021 empfahl die Task Force von National Kidney Foundation und American Society of Nephrology rasse-freie eGFR-Formeln; 2023 folgte die American Thoracic Society mit rasse-neutralen Spirometrie-Referenzwerten. Damit war fachlich klar belegt, dass rassebasierte Medizin diskreditiert ist. Die zur selben Zeit kommerziell ausgerollten Sprachmodelle wurden dennoch ohne medizinische Kuratierung auf große, ungefilterte Textkorpora trainiert und als universelle Assistenten angeboten.",
+      "title_en": "Professional bodies reject race as a medical variable",
+      "description_en": "In September 2021 the National Kidney Foundation and American Society of Nephrology task force recommended race-free eGFR equations; in 2023 the American Thoracic Society followed with race-neutral spirometry reference values. The professional consensus that race-based medicine is discredited was therefore well established. Yet the language models rolled out commercially in the same period were trained on large, unfiltered text corpora without medical curation and offered as general-purpose assistants.",
+      "sources": [
+        "https://www.kidney.org/press-room/nkf-and-asn-release-new-way-to-diagnose-kidney-diseases",
+        "https://site.thoracic.org/about-us/news/ats-publishes-official-statement-on-race-ethnicity-and-pulmonary-function-test-interpretation"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "event",
+      "title": "Stanford-Studie: alle vier Modelle reproduzieren widerlegte Rasse-Mythen",
+      "description": "Eine in npj Digital Medicine veröffentlichte Stanford-Studie testete zwischen Mai und August 2023 ChatGPT, GPT-4, Googles Bard und Anthropics Claude mit medizinischen Fragen. Alle Modelle gaben widerlegte, rassebasierte Aussagen zurück - GPT-4 behauptete etwa eine um 10-15 Prozent niedrigere normale Lungenfunktion bei Schwarzen Menschen, mehrere Modelle stützten die diskreditierte Rasse-Verwendung bei der eGFR-Berechnung. Jede Frage wurde fünfmal gestellt; die Antworten waren teils widersprüchlich.",
+      "title_de": "Stanford-Studie: alle vier Modelle reproduzieren widerlegte Rasse-Mythen",
+      "description_de": "Eine in npj Digital Medicine veröffentlichte Stanford-Studie testete zwischen Mai und August 2023 ChatGPT, GPT-4, Googles Bard und Anthropics Claude mit medizinischen Fragen. Alle Modelle gaben widerlegte, rassebasierte Aussagen zurück - GPT-4 behauptete etwa eine um 10-15 Prozent niedrigere normale Lungenfunktion bei Schwarzen Menschen, mehrere Modelle stützten die diskreditierte Rasse-Verwendung bei der eGFR-Berechnung. Jede Frage wurde fünfmal gestellt; die Antworten waren teils widersprüchlich.",
+      "title_en": "Stanford study: all four models reproduce debunked race myths",
+      "description_en": "A Stanford study published in npj Digital Medicine tested ChatGPT, GPT-4, Google's Bard and Anthropic's Claude with medical questions between May and August 2023. All models returned debunked, race-based statements - GPT-4, for instance, claimed normal lung function to be 10-15 percent lower in Black people, and several models endorsed the discredited use of race in eGFR calculation. Each question was asked five times; responses were at times inconsistent.",
+      "sources": [
+        "https://www.nature.com/articles/s41746-023-00939-z",
+        "https://pubmed.ncbi.nlm.nih.gov/37864012/"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "consequences",
+      "title": "Warnung vor klinischem Einsatz und Ruf nach Schutzmechanismen",
+      "description": "Die Autoren warnten, dass solche Modelle bei klinischem Einsatz reale Schäden verursachen und gesundheitliche Ungleichheit verstärken könnten, da rassebasierte Falschaussagen unhinterfragt übernommen würden. Medien und Fachöffentlichkeit griffen den Befund auf und forderten Kuratierung der Trainingsdaten, klinische Validierung und Sicherheitsmechanismen, bevor Sprachmodelle in der Patientenversorgung eingesetzt werden. Der Fall wurde zum vielzitierten Beleg dafür, dass historische Verzerrungen in Trainingsdaten fortwirken.",
+      "title_de": "Warnung vor klinischem Einsatz und Ruf nach Schutzmechanismen",
+      "description_de": "Die Autoren warnten, dass solche Modelle bei klinischem Einsatz reale Schäden verursachen und gesundheitliche Ungleichheit verstärken könnten, da rassebasierte Falschaussagen unhinterfragt übernommen würden. Medien und Fachöffentlichkeit griffen den Befund auf und forderten Kuratierung der Trainingsdaten, klinische Validierung und Sicherheitsmechanismen, bevor Sprachmodelle in der Patientenversorgung eingesetzt werden. Der Fall wurde zum vielzitierten Beleg dafür, dass historische Verzerrungen in Trainingsdaten fortwirken.",
+      "title_en": "Warning against clinical use and calls for safeguards",
+      "description_en": "The authors warned that such models, if deployed clinically, could cause real harm and deepen health inequities, since race-based falsehoods would be adopted unquestioned. Media and the medical community took up the finding and demanded curation of training data, clinical validation and safety mechanisms before language models are used in patient care. The case became a widely cited example of historical bias in training data persisting downstream.",
+      "sources": [
+        "https://stanforddaily.com/2023/12/07/ai-models-propagate-false-race-based-medical-information-stanford-researchers-find/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10589311/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.nature.com/articles/s41746-023-00939-z",

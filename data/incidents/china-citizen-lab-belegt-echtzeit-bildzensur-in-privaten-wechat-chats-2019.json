@@ -31,9 +31,27 @@
     "censorship",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Recht auf Privatsphäre",
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Recht auf Privatsphäre",
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Right to privacy",
+    "Right to information",
+    "Protection from manipulation",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Tencent",
@@ -54,7 +72,88 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2011",
+      "phase": "infrastructure",
+      "title": "Tencent startet WeChat als zentrale Messaging-Plattform",
+      "description": "Tencent veröffentlicht 2011 WeChat (Weixin), das zur dominierenden Messaging-, Social-Media- und Bezahl-App Chinas wird und bis 2018 über eine Milliarde monatlich aktive Nutzer erreicht. Alle Inhalte laufen über Tencents Server in Shenzhen, was eine serverseitige Inhaltsanalyse jeder gesendeten Nachricht und jedes Bildes technisch ermöglicht.",
+      "title_de": "Tencent startet WeChat als zentrale Messaging-Plattform",
+      "description_de": "Tencent veröffentlicht 2011 WeChat (Weixin), das zur dominierenden Messaging-, Social-Media- und Bezahl-App Chinas wird und bis 2018 über eine Milliarde monatlich aktive Nutzer erreicht. Alle Inhalte laufen über Tencents Server in Shenzhen, was eine serverseitige Inhaltsanalyse jeder gesendeten Nachricht und jedes Bildes technisch ermöglicht.",
+      "title_en": "Tencent launches WeChat as a central messaging platform",
+      "description_en": "In 2011 Tencent releases WeChat (Weixin), which becomes China's dominant messaging, social media and payment app and surpasses one billion monthly active users by 2018. All content passes through Tencent's servers in Shenzhen, technically enabling server-side content analysis of every message and image sent.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/WeChat"
+      ]
+    },
+    {
+      "date": "2017-06",
+      "phase": "doctrine",
+      "title": "Chinas Cybersicherheitsgesetz macht Plattformen für Inhalte haftbar",
+      "description": "Am 1. Juni 2017 tritt Chinas Cybersicherheitsgesetz in Kraft. Es verpflichtet Plattformbetreiber, von Nutzern verbreitete verbotene Inhalte unverzüglich zu erkennen und zu entfernen; bei Verstößen droht strafrechtliche Haftung. Behörden leiteten kurz darauf Untersuchungen gegen Tencent, Sina und Baidu ein. Daraus erwächst der Anreiz, Filterung präventiv und automatisiert in die Plattform einzubauen.",
+      "title_de": "Chinas Cybersicherheitsgesetz macht Plattformen für Inhalte haftbar",
+      "description_de": "Am 1. Juni 2017 tritt Chinas Cybersicherheitsgesetz in Kraft. Es verpflichtet Plattformbetreiber, von Nutzern verbreitete verbotene Inhalte unverzüglich zu erkennen und zu entfernen; bei Verstößen droht strafrechtliche Haftung. Behörden leiteten kurz darauf Untersuchungen gegen Tencent, Sina und Baidu ein. Daraus erwächst der Anreiz, Filterung präventiv und automatisiert in die Plattform einzubauen.",
+      "title_en": "China's Cybersecurity Law makes platforms liable for content",
+      "description_en": "On 1 June 2017 China's Cybersecurity Law takes effect. It obliges platform operators to promptly detect and remove prohibited user content, with criminal liability for non-compliance. Authorities soon opened investigations into Tencent, Sina and Baidu. This creates a strong incentive to build preemptive, automated filtering directly into the platform.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cybersecurity_Law_of_the_People's_Republic_of_China",
+        "https://www.scmp.com/tech/enterprises/article/2106910/chinas-new-cybersecurity-law-lacks-detail-says-tencent-vp"
+      ]
+    },
+    {
+      "date": "2018-08",
+      "phase": "infrastructure",
+      "title": "Citizen Lab dokumentiert Bildfilterung in WeChat Moments",
+      "description": "In einer ersten Analyse zeigt das Citizen Lab, dass WeChat Bilder im öffentlichen Moments-Feed mit zwei Verfahren filtert: einem visuellen Abgleich gegen eine Bild-Blacklist und einer OCR-Erkennung sensibler Texte in Bildern. Tencent pflegt dafür einen Index aus MD5-Hashes; unbekannte Bilder werden zur automatischen Analyse in eine Warteschlange gestellt. Damit liegt die technische Grundlage für spätere Echtzeit-Filterung bereits offen.",
+      "title_de": "Citizen Lab dokumentiert Bildfilterung in WeChat Moments",
+      "description_de": "In einer ersten Analyse zeigt das Citizen Lab, dass WeChat Bilder im öffentlichen Moments-Feed mit zwei Verfahren filtert: einem visuellen Abgleich gegen eine Bild-Blacklist und einer OCR-Erkennung sensibler Texte in Bildern. Tencent pflegt dafür einen Index aus MD5-Hashes; unbekannte Bilder werden zur automatischen Analyse in eine Warteschlange gestellt. Damit liegt die technische Grundlage für spätere Echtzeit-Filterung bereits offen.",
+      "title_en": "Citizen Lab documents image filtering in WeChat Moments",
+      "description_en": "In a first analysis, the Citizen Lab shows that WeChat filters images in the public Moments feed using two methods: a visual match against an image blacklist and OCR detection of sensitive text in images. Tencent maintains an index of MD5 hashes for this; unknown images are queued for automatic analysis. The technical basis for later real-time filtering is thus already exposed.",
+      "sources": [
+        "https://citizenlab.ca/2018/08/cant-picture-this-an-analysis-of-image-filtering-on-wechat-moments/"
+      ]
+    },
+    {
+      "date": "2019-07-15",
+      "phase": "event",
+      "title": "Citizen Lab belegt Echtzeit-Bildzensur in privaten WeChat-Chats",
+      "description": "Das Citizen Lab der Universität Toronto weist nach, dass WeChat auch in privaten Eins-zu-eins- und Gruppenchats Bilder serverseitig in Echtzeit blockiert: per MD5-Hash-Index sowie OCR- und Bilderkennung. Weder Sender noch Empfänger werden über die Blockade informiert. Die Filterung reagierte auf tagespolitische Ereignisse wie die Verhaftung der Huawei-Finanzchefin Meng Wanzhou und den Handelskrieg.",
+      "title_de": "Citizen Lab belegt Echtzeit-Bildzensur in privaten WeChat-Chats",
+      "description_de": "Das Citizen Lab der Universität Toronto weist nach, dass WeChat auch in privaten Eins-zu-eins- und Gruppenchats Bilder serverseitig in Echtzeit blockiert: per MD5-Hash-Index sowie OCR- und Bilderkennung. Weder Sender noch Empfänger werden über die Blockade informiert. Die Filterung reagierte auf tagespolitische Ereignisse wie die Verhaftung der Huawei-Finanzchefin Meng Wanzhou und den Handelskrieg.",
+      "title_en": "Citizen Lab documents real-time image censorship in private WeChat chats",
+      "description_en": "The University of Toronto's Citizen Lab demonstrates that WeChat also blocks images server-side in real time in private one-to-one and group chats, using an MD5 hash index plus OCR and image recognition. Neither sender nor recipient is notified of the block. The filtering reacted to current events such as the arrest of Huawei CFO Meng Wanzhou and the trade war.",
+      "sources": [
+        "https://citizenlab.ca/2019/07/cant-picture-this-2-an-analysis-of-wechats-realtime-image-filtering-in-chats/",
+        "https://www.technologyreview.com/2019/07/15/134178/how-wechat-censors-private-conversations-automatically-in-real-time/"
+      ]
+    },
+    {
+      "date": "2019-07-17",
+      "phase": "consequences",
+      "title": "Nutzer trainieren das Zensursystem unbeabsichtigt mit",
+      "description": "Berichte arbeiten heraus, dass jedes neu gesendete, noch unbekannte Bild zur automatischen Prüfung in die Warteschlange läuft und bei Einstufung als sensibel in den Hash-Index aufgenommen wird. Dadurch erweitern Nutzer durch normales Versenden von Bildern die Blacklist fortlaufend selbst, ohne es zu wissen, und verbessern so unbeabsichtigt die Treffsicherheit der Zensur.",
+      "title_de": "Nutzer trainieren das Zensursystem unbeabsichtigt mit",
+      "description_de": "Berichte arbeiten heraus, dass jedes neu gesendete, noch unbekannte Bild zur automatischen Prüfung in die Warteschlange läuft und bei Einstufung als sensibel in den Hash-Index aufgenommen wird. Dadurch erweitern Nutzer durch normales Versenden von Bildern die Blacklist fortlaufend selbst, ohne es zu wissen, und verbessern so unbeabsichtigt die Treffsicherheit der Zensur.",
+      "title_en": "Users unwittingly help train the censorship system",
+      "description_en": "Reporting highlights that every newly sent, previously unknown image is queued for automatic review and, if classified as sensitive, added to the hash index. As a result, by simply sending images users continuously expand the blacklist themselves without realizing it, unwittingly improving the accuracy of the censorship.",
+      "sources": [
+        "https://technode.com/2019/07/17/wechat-censorship-images/"
+      ]
+    },
+    {
+      "date": "2020-05",
+      "phase": "consequences",
+      "title": "Internationale Nutzer speisen Chinas Zensur-Apparat",
+      "description": "In der Folgestudie We Chat, They Watch zeigt das Citizen Lab, dass auch Kommunikation von WeChat-Konten außerhalb Chinas überwacht wird und zur Trainingsbasis der Bild- und Textklassifikatoren für chinesische Konten beiträgt. Internationale Nutzer bauen damit unfreiwillig den chinesischen Zensur-Apparat mit auf, was die globale Reichweite serverseitiger Echtzeit-Filterung verdeutlicht.",
+      "title_de": "Internationale Nutzer speisen Chinas Zensur-Apparat",
+      "description_de": "In der Folgestudie We Chat, They Watch zeigt das Citizen Lab, dass auch Kommunikation von WeChat-Konten außerhalb Chinas überwacht wird und zur Trainingsbasis der Bild- und Textklassifikatoren für chinesische Konten beiträgt. Internationale Nutzer bauen damit unfreiwillig den chinesischen Zensur-Apparat mit auf, was die globale Reichweite serverseitiger Echtzeit-Filterung verdeutlicht.",
+      "title_en": "International users feed China's censorship apparatus",
+      "description_en": "In the follow-up study We Chat, They Watch, the Citizen Lab shows that communication from WeChat accounts outside China is also surveilled and contributes to the training base of the image and text classifiers used for Chinese accounts. International users thus help build up China's censorship apparatus involuntarily, underscoring the global reach of server-side real-time filtering.",
+      "sources": [
+        "https://citizenlab.ca/2020/05/we-chat-they-watch/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://citizenlab.ca/2019/07/cant-picture-this-2-an-analysis-of-wechats-realtime-image-filtering-in-chats/",

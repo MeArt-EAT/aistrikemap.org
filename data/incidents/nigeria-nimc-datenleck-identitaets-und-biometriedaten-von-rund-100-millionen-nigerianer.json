@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz biometrischer Daten",
+    "Würde des Menschen",
+    "Schutz vor Identitätsdiebstahl"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz biometrischer Daten",
+    "Würde des Menschen",
+    "Schutz vor Identitätsdiebstahl"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Protection of biometric data",
+    "Human dignity",
+    "Protection from identity theft"
+  ],
   "asm:actors": [
     {
       "name": "National Identity Management Commission (NIMC)",
@@ -61,7 +79,74 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2011",
+      "phase": "infrastructure",
+      "title": "Aufbau der zentralen NIN-Biometriedatenbank durch die NIMC",
+      "description": "Nach dem NIMC Act von 2007 nahm die National Identity Management Commission 2010/2011 die landesweite Erfassung auf. Für jede Person werden eine 11-stellige National Identity Number sowie biometrische Daten (Fingerabdrücke, Gesichtsbild) und biografische Stammdaten zentral gespeichert. Diese eine Datenbank bündelte über Jahre die Identitätsdaten von über 100 Millionen Nigerianer:innen und wurde damit zur kritischen Vorbedingung des späteren Lecks.",
+      "title_de": "Aufbau der zentralen NIN-Biometriedatenbank durch die NIMC",
+      "description_de": "Nach dem NIMC Act von 2007 nahm die National Identity Management Commission 2010/2011 die landesweite Erfassung auf. Für jede Person werden eine 11-stellige National Identity Number sowie biometrische Daten (Fingerabdrücke, Gesichtsbild) und biografische Stammdaten zentral gespeichert. Diese eine Datenbank bündelte über Jahre die Identitätsdaten von über 100 Millionen Nigerianer:innen und wurde damit zur kritischen Vorbedingung des späteren Lecks.",
+      "title_en": "NIMC builds Nigeria's central NIN biometric database",
+      "description_en": "Following the NIMC Act of 2007, the National Identity Management Commission began nationwide enrolment in 2010/2011. For each person an 11-digit National Identity Number plus biometric data (fingerprints, facial image) and biographic records are stored centrally. Over the years this single database pooled the identity data of more than 100 million Nigerians, becoming the critical precondition for the later leak.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/National_Identity_Management_Commission"
+      ]
+    },
+    {
+      "date": "2020-12",
+      "phase": "doctrine",
+      "title": "Pflicht-Verknüpfung von NIN mit SIM-Karten und Banken — API-Verifizierung für Drittagenten",
+      "description": "Ab Dezember 2020 ordnete die Regierung an, alle SIM-Karten mit der NIN zu verknüpfen, begründet mit nationaler Sicherheit und Betrugsbekämpfung. NIN wurde faktisch zum Pflicht-Identitätsnachweis für SIM, Banken und Behördengänge. Um die Massen-Verifizierung zu bewältigen, lizenzierte die NIMC Drittanbieter, die per API auf die NIN-Datenbank zugreifen durften — ein Verifizierungs-Ökosystem, dessen Weiterverkauf von Zugängen nur unzureichend überwacht wurde.",
+      "title_de": "Pflicht-Verknüpfung von NIN mit SIM-Karten und Banken — API-Verifizierung für Drittagenten",
+      "description_de": "Ab Dezember 2020 ordnete die Regierung an, alle SIM-Karten mit der NIN zu verknüpfen, begründet mit nationaler Sicherheit und Betrugsbekämpfung. NIN wurde faktisch zum Pflicht-Identitätsnachweis für SIM, Banken und Behördengänge. Um die Massen-Verifizierung zu bewältigen, lizenzierte die NIMC Drittanbieter, die per API auf die NIN-Datenbank zugreifen durften — ein Verifizierungs-Ökosystem, dessen Weiterverkauf von Zugängen nur unzureichend überwacht wurde.",
+      "title_en": "Mandatory NIN-SIM and NIN-bank linkage — API verification opened to third-party agents",
+      "description_en": "From December 2020 the government ordered all SIM cards to be linked to the NIN, citing national security and fraud prevention. The NIN effectively became a compulsory identity proof for SIMs, banks and government services. To handle mass verification, NIMC licensed third-party providers that could query the NIN database via API — a verification ecosystem whose reselling of access was poorly monitored.",
+      "sources": [
+        "https://consumer.ncc.gov.ng/articles/92-ncc-announces-final-deadline-for-nin-sim-linkage-compliance-september-14-2024"
+      ]
+    },
+    {
+      "date": "2024-03",
+      "phase": "event",
+      "title": "Drittportale verkaufen NIN- und Biometriedaten von rund 100 Millionen Nigerianer:innen",
+      "description": "Im März 2024 berichteten nigerianische Medien, dass Webseiten wie expressverify.com, idfinder.com.ng, verify.ng, trustyonline.com und anyverify.com gegen geringe Gebühren NIN-Abfragen samt persönlicher Daten aus der NIMC-Datenbank zugänglich machten. Laut TheCable wurden so Daten von rund 100 Millionen Nigerianer:innen exponiert. Die Portale nutzten offenbar weiterverkaufte Verifizierungs-Zugänge lizenzierter Agenten.",
+      "title_de": "Drittportale verkaufen NIN- und Biometriedaten von rund 100 Millionen Nigerianer:innen",
+      "description_de": "Im März 2024 berichteten nigerianische Medien, dass Webseiten wie expressverify.com, idfinder.com.ng, verify.ng, trustyonline.com und anyverify.com gegen geringe Gebühren NIN-Abfragen samt persönlicher Daten aus der NIMC-Datenbank zugänglich machten. Laut TheCable wurden so Daten von rund 100 Millionen Nigerianer:innen exponiert. Die Portale nutzten offenbar weiterverkaufte Verifizierungs-Zugänge lizenzierter Agenten.",
+      "title_en": "Third-party portals sell NIN and biometric data of around 100 million Nigerians",
+      "description_en": "In March 2024 Nigerian media reported that sites such as expressverify.com, idfinder.com.ng, verify.ng, trustyonline.com and anyverify.com were selling NIN lookups and personal data from the NIMC database for small fees. According to TheCable, data of around 100 million Nigerians was exposed. The portals apparently relied on resold verification credentials of licensed agents.",
+      "sources": [
+        "https://www.thecable.ng/revealed-how-nimc-exposed-private-data-of-100m-nigerians-to-dubious-verification-agents/"
+      ]
+    },
+    {
+      "date": "2024-03",
+      "phase": "consequences",
+      "title": "NIMC sperrt Agenten-Zugänge, NDPC leitet Untersuchung und Bußgeld-Prüfung ein",
+      "description": "Die NIMC schränkte den Zugriff lizenzierter Agenten auf die NIN-Datenbank ein und kündigte an, künftig nur noch nachweislich konforme Verarbeiter zuzulassen. Die Nigerian Data Protection Commission (NDPC) eröffnete eine Untersuchung und warnte die Bevölkerung zur Wachsamkeit; laut TechCabal drohten Sanktionen nach dem Nigeria Data Protection Act 2023, sofern eine unbefugte Datenverarbeitung nachgewiesen würde.",
+      "title_de": "NIMC sperrt Agenten-Zugänge, NDPC leitet Untersuchung und Bußgeld-Prüfung ein",
+      "description_de": "Die NIMC schränkte den Zugriff lizenzierter Agenten auf die NIN-Datenbank ein und kündigte an, künftig nur noch nachweislich konforme Verarbeiter zuzulassen. Die Nigerian Data Protection Commission (NDPC) eröffnete eine Untersuchung und warnte die Bevölkerung zur Wachsamkeit; laut TechCabal drohten Sanktionen nach dem Nigeria Data Protection Act 2023, sofern eine unbefugte Datenverarbeitung nachgewiesen würde.",
+      "title_en": "NIMC restricts agent access; NDPC opens investigation and penalty review",
+      "description_en": "NIMC restricted licensed agents' access to the NIN database and announced that only verifiably compliant processors would be cleared going forward. The Nigerian Data Protection Commission (NDPC) opened an investigation and urged public vigilance; per TechCabal, sanctions under the Nigeria Data Protection Act 2023 loomed if unauthorised data processing were established.",
+      "sources": [
+        "https://nairametrics.com/2024/03/29/data-breach-nimc-restricts-licensed-agents-access-to-nin-database/",
+        "https://techcabal.com/2024/04/25/nimc-nin-breach/"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "phase": "consequences",
+      "title": "Identitätsdaten weiterhin im Darknet und auf Schattenportalen handelbar",
+      "description": "Bis 2025 berichtete Biometric Update unter Berufung auf die Foundation for Investigative Journalism, dass NIN, BVN und Gesichtsfotos von Nigerianer:innen weiterhin über NIMC-fremde Webseiten wie NINPrint.com für wenige hundert Naira abrufbar seien — bis hin zu Daten von Ministern und Personen aus dem Umfeld der Präsidentschaft. Zivilgesellschaftliche Gruppen kritisierten die schwache Durchsetzung durch die NDPC trotz NIMC Act 2007 und Datenschutzgesetz 2023.",
+      "title_de": "Identitätsdaten weiterhin im Darknet und auf Schattenportalen handelbar",
+      "description_de": "Bis 2025 berichtete Biometric Update unter Berufung auf die Foundation for Investigative Journalism, dass NIN, BVN und Gesichtsfotos von Nigerianer:innen weiterhin über NIMC-fremde Webseiten wie NINPrint.com für wenige hundert Naira abrufbar seien — bis hin zu Daten von Ministern und Personen aus dem Umfeld der Präsidentschaft. Zivilgesellschaftliche Gruppen kritisierten die schwache Durchsetzung durch die NDPC trotz NIMC Act 2007 und Datenschutzgesetz 2023.",
+      "title_en": "Identity data still traded on the dark web and shadow portals",
+      "description_en": "By 2025 Biometric Update, citing the Foundation for Investigative Journalism, reported that NIN, BVN and facial photos of Nigerians remained obtainable for a few hundred naira via non-NIMC sites such as NINPrint.com — including data of ministers and people close to the presidency. Civil-society groups criticised weak enforcement by the NDPC despite the NIMC Act 2007 and the 2023 data protection law.",
+      "sources": [
+        "https://www.biometricupdate.com/202508/personal-identity-data-still-sold-on-dark-web-in-nigeria"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.thecable.ng/revealed-how-nimc-exposed-private-data-of-100m-nigerians-to-dubious-verification-agents/",

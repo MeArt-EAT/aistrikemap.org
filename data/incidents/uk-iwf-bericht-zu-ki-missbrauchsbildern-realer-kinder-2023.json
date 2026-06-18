@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Kinderrechte",
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Körperliche Unversehrtheit"
+  ],
+  "asm:affectedRights_de": [
+    "Kinderrechte",
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Körperliche Unversehrtheit"
+  ],
+  "asm:affectedRights_en": [
+    "Children's rights",
+    "Human dignity",
+    "Privacy",
+    "Protection from manipulation",
+    "Physical integrity"
+  ],
   "asm:actors": [
     {
       "name": "Dark web offenders (using open text-to-image models)",
@@ -41,7 +59,63 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-08",
+      "phase": "infrastructure",
+      "title": "Stability AI veröffentlicht Stable Diffusion mit offenen Modellgewichten",
+      "description": "Im August 2022 wurde das Text-zu-Bild-Modell Stable Diffusion unter einer offenen Lizenz öffentlich freigegeben, inklusive der vollständigen Modellgewichte. Trainiert auf einem Teil des Web-Datensatzes LAION-5B, ließ es sich ohne zentrale Kontrolle lokal ausführen und auf eigenen Bildern feinabstimmen. Damit entstand die technische Grundlage, mit der auch Täter beliebige Inhalte ohne Plattform-Filter erzeugen konnten.",
+      "title_de": "Stability AI veröffentlicht Stable Diffusion mit offenen Modellgewichten",
+      "description_de": "Im August 2022 wurde das Text-zu-Bild-Modell Stable Diffusion unter einer offenen Lizenz öffentlich freigegeben, inklusive der vollständigen Modellgewichte. Trainiert auf einem Teil des Web-Datensatzes LAION-5B, ließ es sich ohne zentrale Kontrolle lokal ausführen und auf eigenen Bildern feinabstimmen. Damit entstand die technische Grundlage, mit der auch Täter beliebige Inhalte ohne Plattform-Filter erzeugen konnten.",
+      "title_en": "Stability AI releases Stable Diffusion with open model weights",
+      "description_en": "In August 2022 the text-to-image model Stable Diffusion was publicly released under an open licence, including its full model weights. Trained on a subset of the LAION-5B web dataset, it could be run locally without central control and fine-tuned on a user's own images. This created the technical basis that also allowed offenders to generate arbitrary content free of any platform filter.",
+      "sources": [
+        "https://huggingface.co/blog/stable_diffusion",
+        "https://github.com/CompVis/stable-diffusion"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Feinabstimmung offener Modelle auf Bildern realer, identifizierter Opfer",
+      "description": "Weil offene Modelle frei nachtrainierbar sind, etablierte sich in Täterforen die Praxis, KI gezielt auf bereits existierenden Missbrauchsbildern bekannter, identifizierbarer Kinder feinabzustimmen. Ziel war es, immer neue Missbrauchsdarstellungen genau dieser realen Opfer zu erzeugen. Die offene Weiterverbreitbarkeit der Gewichte wurde so zur faktischen Methode der Tatbegehung.",
+      "title_de": "Feinabstimmung offener Modelle auf Bildern realer, identifizierter Opfer",
+      "description_de": "Weil offene Modelle frei nachtrainierbar sind, etablierte sich in Täterforen die Praxis, KI gezielt auf bereits existierenden Missbrauchsbildern bekannter, identifizierbarer Kinder feinabzustimmen. Ziel war es, immer neue Missbrauchsdarstellungen genau dieser realen Opfer zu erzeugen. Die offene Weiterverbreitbarkeit der Gewichte wurde so zur faktischen Methode der Tatbegehung.",
+      "title_en": "Fine-tuning open models on images of real, identified victims",
+      "description_en": "Because open models can be freely retrained, offender forums developed the practice of deliberately fine-tuning AI on existing abuse images of known, identifiable children. The aim was to generate ever more new abuse depictions of these very real victims. The open redistributability of the weights thus became the practical method of committing the offence.",
+      "sources": [
+        "https://www.iwf.org.uk/media/q4zll2ya/iwf-ai-csam-report_public-oct23v1.pdf"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "event",
+      "title": "IWF-Bericht: über 20.000 KI-Missbrauchsbilder in einem Forum binnen eines Monats",
+      "description": "Im Oktober 2023 dokumentierte die Internet Watch Foundation in einer Momentaufnahme eines einzigen Dark-Web-Forums über 20.000 KI-generierte Missbrauchsbilder innerhalb eines Monats. Von 11.108 untersuchten KI-Bildern verstießen 2.978 nach britischem Recht klar gegen das Gesetz; 2.562 waren so realistisch, dass sie rechtlich wie echte Missbrauchsaufnahmen zu behandeln waren. Die IWF warnte vor einer drohenden Überflutung des Internets.",
+      "title_de": "IWF-Bericht: über 20.000 KI-Missbrauchsbilder in einem Forum binnen eines Monats",
+      "description_de": "Im Oktober 2023 dokumentierte die Internet Watch Foundation in einer Momentaufnahme eines einzigen Dark-Web-Forums über 20.000 KI-generierte Missbrauchsbilder innerhalb eines Monats. Von 11.108 untersuchten KI-Bildern verstießen 2.978 nach britischem Recht klar gegen das Gesetz; 2.562 waren so realistisch, dass sie rechtlich wie echte Missbrauchsaufnahmen zu behandeln waren. Die IWF warnte vor einer drohenden Überflutung des Internets.",
+      "title_en": "IWF report: over 20,000 AI abuse images in one forum within a month",
+      "description_en": "In October 2023 the Internet Watch Foundation documented, in a snapshot of a single dark web forum, over 20,000 AI-generated abuse images within one month. Of 11,108 AI images examined, 2,978 clearly breached UK law; 2,562 were so realistic they had to be treated legally as genuine abuse photographs. The IWF warned of a looming flood of such content online.",
+      "sources": [
+        "https://www.iwf.org.uk/news-media/news/worst-nightmares-come-true-as-predators-are-able-to-make-thousands-of-new-ai-images-of-real-child-victims/",
+        "https://www.washingtonpost.com/business/2023/10/24/ai-artificial-intelligence-child-sexual-abuse/61ad67dc-72c2-11ee-936d-7a16ee667359_story.html"
+      ]
+    },
+    {
+      "date": "2025-02",
+      "phase": "consequences",
+      "title": "Großbritannien kündigt erstes Gesetz gegen KI-Missbrauchswerkzeuge an",
+      "description": "Anfang 2025 kündigte die britische Regierung als erstes Land an, gezielt das Besitzen, Erstellen und Verbreiten von KI-Werkzeugen zu kriminalisieren, die zur Erzeugung von Missbrauchsdarstellungen optimiert sind, mit bis zu fünf Jahren Haft. Ebenfalls strafbar werden KI-gestützte Anleitungen, die erklären, wie sich KI für Kindesmissbrauch nutzen lässt. Damit reagierte die Politik direkt auf die von der IWF dokumentierte Entwicklung.",
+      "title_de": "Großbritannien kündigt erstes Gesetz gegen KI-Missbrauchswerkzeuge an",
+      "description_de": "Anfang 2025 kündigte die britische Regierung als erstes Land an, gezielt das Besitzen, Erstellen und Verbreiten von KI-Werkzeugen zu kriminalisieren, die zur Erzeugung von Missbrauchsdarstellungen optimiert sind, mit bis zu fünf Jahren Haft. Ebenfalls strafbar werden KI-gestützte Anleitungen, die erklären, wie sich KI für Kindesmissbrauch nutzen lässt. Damit reagierte die Politik direkt auf die von der IWF dokumentierte Entwicklung.",
+      "title_en": "UK announces first law against AI abuse tools",
+      "description_en": "In early 2025 the UK government announced it would be the first country to specifically criminalise possessing, creating and distributing AI tools optimised to generate abuse imagery, punishable by up to five years in prison. AI-assisted manuals explaining how to use AI to abuse children were also made criminal. This was a direct policy response to the trend documented by the IWF.",
+      "sources": [
+        "https://www.aljazeera.com/news/2025/2/2/uk-to-become-first-country-to-criminalise-ai-child-abuse-tools",
+        "https://www.gov.uk/government/news/new-law-to-tackle-ai-child-abuse-images-at-source-as-reports-more-than-double"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.iwf.org.uk/news-media/news/worst-nightmares-come-true-as-predators-are-able-to-make-thousands-of-new-ai-images-of-real-child-victims/",

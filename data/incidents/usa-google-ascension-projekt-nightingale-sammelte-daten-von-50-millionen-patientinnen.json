@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Recht auf Gesundheit",
+    "Informationelle Selbstbestimmung",
+    "Menschenwürde"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Recht auf Gesundheit",
+    "Informationelle Selbstbestimmung",
+    "Menschenwürde"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Right to health",
+    "Informational self-determination",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -62,7 +80,78 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-03",
+      "phase": "infrastructure",
+      "title": "Google startet die Cloud Healthcare API als Plattform für Massen-Patientendaten",
+      "description": "Im März 2018 stellte Google die Cloud Healthcare API vor — eine Infrastruktur, die Gesundheitsdaten in den Industriestandards FHIR, HL7v2 und DICOM aufnimmt, speichert und für Analyse und maschinelles Lernen in der Cloud durchsuchbar macht. Damit entstand die technische Grundlage, ganze Krankenhaus-Datenbestände zentral zu aggregieren. Parallel bündelte Google im November 2018 mit der Gründung von Google Health seine Gesundheitsambitionen und übernahm das DeepMind-Health-Team.",
+      "title_de": "Google startet die Cloud Healthcare API als Plattform für Massen-Patientendaten",
+      "description_de": "Im März 2018 stellte Google die Cloud Healthcare API vor — eine Infrastruktur, die Gesundheitsdaten in den Industriestandards FHIR, HL7v2 und DICOM aufnimmt, speichert und für Analyse und maschinelles Lernen in der Cloud durchsuchbar macht. Damit entstand die technische Grundlage, ganze Krankenhaus-Datenbestände zentral zu aggregieren. Parallel bündelte Google im November 2018 mit der Gründung von Google Health seine Gesundheitsambitionen und übernahm das DeepMind-Health-Team.",
+      "title_en": "Google launches the Cloud Healthcare API as a platform for mass patient data",
+      "description_en": "In March 2018 Google introduced the Cloud Healthcare API — infrastructure that ingests, stores and makes health data searchable in the industry standards FHIR, HL7v2 and DICOM for cloud-based analytics and machine learning. This created the technical foundation for centrally aggregating entire hospital data holdings. In November 2018 Google also consolidated its health ambitions by founding Google Health and absorbing the DeepMind Health team.",
+      "sources": [
+        "https://blog.google/products/google-cloud/google-cloud-healthcare-new-apis-customers-partners-and-security-updates/",
+        "https://www.cnbc.com/2018/11/13/google-health-unit-absorbs-deepmind-health.html"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "HIPAA-Business-Associate-Modell legitimiert Datentransfer ohne Patienteneinwilligung",
+      "description": "Google und Ascension schlossen eine Vereinbarung als Business Associate nach dem US-Gesundheitsdatengesetz HIPAA. Dieses Geschäftsmodell erlaubt es, Patientendaten an einen Dienstleister weiterzugeben, ohne Patienten oder Ärzte einzeln um Zustimmung zu bitten, solange der Dienstleister die Daten nur zur Leistungserbringung nutzt. Auf dieser rechtlichen Konstruktion baute das Projekt Nightingale auf, das ab 2018 anlief.",
+      "title_de": "HIPAA-Business-Associate-Modell legitimiert Datentransfer ohne Patienteneinwilligung",
+      "description_de": "Google und Ascension schlossen eine Vereinbarung als Business Associate nach dem US-Gesundheitsdatengesetz HIPAA. Dieses Geschäftsmodell erlaubt es, Patientendaten an einen Dienstleister weiterzugeben, ohne Patienten oder Ärzte einzeln um Zustimmung zu bitten, solange der Dienstleister die Daten nur zur Leistungserbringung nutzt. Auf dieser rechtlichen Konstruktion baute das Projekt Nightingale auf, das ab 2018 anlief.",
+      "title_en": "HIPAA business-associate model legitimises data transfer without patient consent",
+      "description_en": "Google and Ascension signed a Business Associate Agreement under the US health-data law HIPAA. This business model allows patient data to be handed to a service provider without seeking individual consent from patients or physicians, as long as the provider uses the data only to deliver services. Project Nightingale, which began in 2018, was built on this legal construction.",
+      "sources": [
+        "https://www.techtarget.com/searchhealthit/definition/Project-Nightingale",
+        "https://www.aapc.com/blog/49246-ascension-enters-contract-with-google-to-share-phi/"
+      ]
+    },
+    {
+      "date": "2019-11-11",
+      "phase": "event",
+      "title": "Wall Street Journal enthuellt das geheime Projekt Nightingale",
+      "description": "Am 11. November 2019 deckte das Wall Street Journal auf, dass Google und Ascension seit 2018 die Gesundheitsdaten von rund 50 Millionen Patientinnen — Namen, Geburtsdaten, Labor- und Diagnose-Berichte — mit Google Cloud teilten, ohne Ärzte oder Patienten zu informieren. Rund 150 Google-Mitarbeiterinnen hatten Zugriff. Ein Whistleblower hatte die Zeitung alarmiert.",
+      "title_de": "Wall Street Journal enthuellt das geheime Projekt Nightingale",
+      "description_de": "Am 11. November 2019 deckte das Wall Street Journal auf, dass Google und Ascension seit 2018 die Gesundheitsdaten von rund 50 Millionen Patientinnen — Namen, Geburtsdaten, Labor- und Diagnose-Berichte — mit Google Cloud teilten, ohne Ärzte oder Patienten zu informieren. Rund 150 Google-Mitarbeiterinnen hatten Zugriff. Ein Whistleblower hatte die Zeitung alarmiert.",
+      "title_en": "Wall Street Journal exposes the secret Project Nightingale",
+      "description_en": "On 11 November 2019 the Wall Street Journal revealed that Google and Ascension had been sharing health data on around 50 million patients — names, dates of birth, lab results and diagnoses — with Google Cloud since 2018, without notifying physicians or patients. Around 150 Google employees had access. A whistleblower had alerted the newspaper.",
+      "sources": [
+        "https://www.healthcareitnews.com/news/ascension-google-working-secret-patient-data-project-says-wsj",
+        "https://en.wikipedia.org/wiki/Project_Nightingale"
+      ]
+    },
+    {
+      "date": "2019-11-13",
+      "phase": "consequences",
+      "title": "US-Gesundheitsministerium leitet HIPAA-Untersuchung ein",
+      "description": "Zwei Tage nach der Enthüllung eröffnete das Office for Civil Rights des US-Gesundheitsministeriums (HHS) eine Untersuchung. Sie konzentrierte sich darauf, wie die Daten übertragen wurden, welche Schutzmaßnahmen für Vertraulichkeit und Integrität der geschützten Gesundheitsdaten galten und ob die HIPAA-Regeln eingehalten wurden.",
+      "title_de": "US-Gesundheitsministerium leitet HIPAA-Untersuchung ein",
+      "description_de": "Zwei Tage nach der Enthüllung eröffnete das Office for Civil Rights des US-Gesundheitsministeriums (HHS) eine Untersuchung. Sie konzentrierte sich darauf, wie die Daten übertragen wurden, welche Schutzmaßnahmen für Vertraulichkeit und Integrität der geschützten Gesundheitsdaten galten und ob die HIPAA-Regeln eingehalten wurden.",
+      "title_en": "US Department of Health and Human Services opens a HIPAA inquiry",
+      "description_en": "Two days after the disclosure, the Office for Civil Rights at the US Department of Health and Human Services (HHS) opened an investigation. It focused on how the data was being transferred, what safeguards protected the confidentiality and integrity of the protected health information, and whether HIPAA rules were being followed.",
+      "sources": [
+        "https://www.healthcaredive.com/news/googles-project-nightingale-prompts-hhs-investigation/567078/",
+        "https://www.statnews.com/2019/11/13/hhs-probe-google-ascension-project-nightingale/"
+      ]
+    },
+    {
+      "date": "2019-11-18",
+      "phase": "consequences",
+      "title": "Kongress-Abgeordnete fordern Aufklärung von Google und Ascension",
+      "description": "Am 18. November 2019 verlangten die Vorsitzenden des House Energy and Commerce Committee schriftlich Antworten von Google und Ascension zur Datenweitergabe im Projekt Nightingale. Später folgten auch Senatorinnen mit weiteren Fragen, nachdem Googles Antwort als unvollständig bewertet wurde. Der Fall löste eine breite Debatte über Patientendatenschutz und die Grenzen des HIPAA-Geschäftsmodells aus.",
+      "title_de": "Kongress-Abgeordnete fordern Aufklärung von Google und Ascension",
+      "description_de": "Am 18. November 2019 verlangten die Vorsitzenden des House Energy and Commerce Committee schriftlich Antworten von Google und Ascension zur Datenweitergabe im Projekt Nightingale. Später folgten auch Senatorinnen mit weiteren Fragen, nachdem Googles Antwort als unvollständig bewertet wurde. Der Fall löste eine breite Debatte über Patientendatenschutz und die Grenzen des HIPAA-Geschäftsmodells aus.",
+      "title_en": "Members of Congress demand answers from Google and Ascension",
+      "description_en": "On 18 November 2019 the leaders of the House Energy and Commerce Committee sent written demands for answers from Google and Ascension about the data sharing in Project Nightingale. Senators later followed up with further questions after Google's response was deemed incomplete. The case triggered a broad debate about patient privacy and the limits of the HIPAA business model.",
+      "sources": [
+        "https://www.hipaajournal.com/house-committee-leaders-demand-answers-from-google-and-ascension-on-project-nightingale-partnership/",
+        "https://www.hipaajournal.com/senators-demand-answers-from-ascension-about-project-nightingale-as-googles-response-was-deemed-incomplete/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.hipaajournal.com/google-confirms-it-has-legitimate-access-to-millions-of-ascension-patients-health-records/",

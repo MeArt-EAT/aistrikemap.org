@@ -26,9 +26,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Chancengleichheit im Beruf",
+    "Geschlechtergleichheit",
+    "Datenschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Chancengleichheit im Beruf",
+    "Geschlechtergleichheit",
+    "Datenschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal employment opportunity",
+    "Gender equality",
+    "Data protection",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Facebook (Meta)",
@@ -42,7 +60,74 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Facebooks Optimierungs-Algorithmus für die Anzeigen-Auslieferung",
+      "description": "Facebook baute seine Werbeplattform um eine maschinell lernende Auslieferungs-Optimierung herum auf: Selbst wenn Werbetreibende eine breite Zielgruppe buchen, entscheidet Facebooks Algorithmus anhand vergangenen Klick- und Profilverhaltens, welchen Nutzerinnen und Nutzern eine Anzeige tatsaechlich gezeigt wird. Damit kann das System Stellenanzeigen entlang erlernter demografischer Muster - etwa Geschlecht - verteilen, ohne dass der Werbetreibende dies vorgibt. Diese Optimierungslogik bildete die technische Vorbedingung der später dokumentierten Verzerrung.",
+      "title_de": "Facebooks Optimierungs-Algorithmus für die Anzeigen-Auslieferung",
+      "description_de": "Facebook baute seine Werbeplattform um eine maschinell lernende Auslieferungs-Optimierung herum auf: Selbst wenn Werbetreibende eine breite Zielgruppe buchen, entscheidet Facebooks Algorithmus anhand vergangenen Klick- und Profilverhaltens, welchen Nutzerinnen und Nutzern eine Anzeige tatsaechlich gezeigt wird. Damit kann das System Stellenanzeigen entlang erlernter demografischer Muster - etwa Geschlecht - verteilen, ohne dass der Werbetreibende dies vorgibt. Diese Optimierungslogik bildete die technische Vorbedingung der später dokumentierten Verzerrung.",
+      "title_en": "Facebook's optimization algorithm for ad delivery",
+      "description_en": "Facebook built its advertising platform around a machine-learning delivery optimizer: even when advertisers book a broad audience, Facebook's algorithm decides - based on past click and profile behavior - which users actually see an ad. This lets the system distribute job ads along learned demographic patterns such as gender, without the advertiser specifying it. This optimization logic formed the technical precondition for the bias later documented.",
+      "sources": [
+        "https://www.technologyreview.com/2021/04/09/1022217/facebook-ad-algorithm-sex-discrimination/"
+      ]
+    },
+    {
+      "date": "2019-03",
+      "phase": "doctrine",
+      "title": "Vergleich beseitigt explizites Targeting, nicht den Auslieferungs-Algorithmus",
+      "description": "Nach EEOC-Beschwerden, einer HUD-Klage und ACLU-Verfahren schloss Facebook im Maerz 2019 einen weitreichenden Vergleich: Für Job-, Wohnungs- und Kreditanzeigen wurden Alters-, Geschlechts- und Postleitzahl-Targeting sowie diskriminierende Lookalike-Audiences abgeschafft. Der Vergleich adressierte jedoch nur die von Werbetreibenden gewaehlten Optionen, nicht die algorithmische Auslieferungs-Optimierung selbst. Damit blieb die Geschaeftslogik bestehen, die Anzeigen weiterhin geschlechtsabhaengig verteilen konnte.",
+      "title_de": "Vergleich beseitigt explizites Targeting, nicht den Auslieferungs-Algorithmus",
+      "description_de": "Nach EEOC-Beschwerden, einer HUD-Klage und ACLU-Verfahren schloss Facebook im Maerz 2019 einen weitreichenden Vergleich: Für Job-, Wohnungs- und Kreditanzeigen wurden Alters-, Geschlechts- und Postleitzahl-Targeting sowie diskriminierende Lookalike-Audiences abgeschafft. Der Vergleich adressierte jedoch nur die von Werbetreibenden gewaehlten Optionen, nicht die algorithmische Auslieferungs-Optimierung selbst. Damit blieb die Geschaeftslogik bestehen, die Anzeigen weiterhin geschlechtsabhaengig verteilen konnte.",
+      "title_en": "Settlement removes explicit targeting, not the delivery algorithm",
+      "description_en": "After EEOC charges, a HUD complaint and ACLU litigation, Facebook reached a sweeping settlement in March 2019: for job, housing and credit ads it eliminated age-, gender- and ZIP-code targeting as well as discriminatory Lookalike Audiences. The settlement, however, addressed only the options chosen by advertisers, not the algorithmic delivery optimization itself. The business logic that could still distribute ads by gender therefore remained in place.",
+      "sources": [
+        "https://www.aclu.org/news/womens-rights/facebook-settles-civil-rights-cases-making-sweeping"
+      ]
+    },
+    {
+      "date": "2021-04",
+      "phase": "event",
+      "title": "USC-Studie belegt geschlechtsabhaengige Auslieferung von Stellenanzeigen",
+      "description": "Forschende der University of Southern California schalteten Paare von Stellenanzeigen mit identischen Qualifikationsanforderungen, aber unterschiedlicher realer Geschlechterverteilung der Belegschaft (etwa Domino's gegenüber Instacart als Lieferfahrer). Facebooks Algorithmus lieferte Anzeigen überwiegend maennlich besetzter Firmen haeufiger an Männer und solche überwiegend weiblich besetzter Firmen haeufiger an Frauen aus - auch bei besser bezahlten Technik-Jobs. Bei LinkedIn trat kein vergleichbarer Bias auf; die Autoren folgerten, Facebook koenne damit gegen US-Antidiskriminierungsrecht verstossen.",
+      "title_de": "USC-Studie belegt geschlechtsabhaengige Auslieferung von Stellenanzeigen",
+      "description_de": "Forschende der University of Southern California schalteten Paare von Stellenanzeigen mit identischen Qualifikationsanforderungen, aber unterschiedlicher realer Geschlechterverteilung der Belegschaft (etwa Domino's gegenüber Instacart als Lieferfahrer). Facebooks Algorithmus lieferte Anzeigen überwiegend maennlich besetzter Firmen haeufiger an Männer und solche überwiegend weiblich besetzter Firmen haeufiger an Frauen aus - auch bei besser bezahlten Technik-Jobs. Bei LinkedIn trat kein vergleichbarer Bias auf; die Autoren folgerten, Facebook koenne damit gegen US-Antidiskriminierungsrecht verstossen.",
+      "title_en": "USC study documents gender-based delivery of job ads",
+      "description_en": "Researchers at the University of Southern California ran pairs of job ads with identical qualification requirements but different real-world gender composition of the workforce (e.g. Domino's versus Instacart for delivery drivers). Facebook's algorithm delivered ads for predominantly male companies more to men and those for predominantly female companies more to women - even for higher-paying tech jobs. No comparable bias appeared on LinkedIn; the authors concluded Facebook could thereby be violating US anti-discrimination law.",
+      "sources": [
+        "https://arxiv.org/pdf/2104.04502",
+        "https://www.technologyreview.com/2021/04/09/1022217/facebook-ad-algorithm-sex-discrimination/"
+      ]
+    },
+    {
+      "date": "2022-06",
+      "phase": "consequences",
+      "title": "DOJ-Vergleich zwingt Meta zum Variance Reduction System",
+      "description": "Im Juni 2022 verklagte das US-Justizministerium Meta wegen diskriminierender Auslieferung von Wohnungsanzeigen und schloss zugleich einen Vergleich. Meta musste das beanstandete Auslieferungswerkzeug aufgeben und ein neues Variance Reduction System entwickeln, das algorithmisch erzeugte Verzerrungen nach Geschlecht und geschaetzter ethnischer Zugehörigkeit messbar reduzieren soll. Anfang 2023 einigten sich beide Seiten auf konkrete Compliance-Kennzahlen für die zulaessige Abweichung.",
+      "title_de": "DOJ-Vergleich zwingt Meta zum Variance Reduction System",
+      "description_de": "Im Juni 2022 verklagte das US-Justizministerium Meta wegen diskriminierender Auslieferung von Wohnungsanzeigen und schloss zugleich einen Vergleich. Meta musste das beanstandete Auslieferungswerkzeug aufgeben und ein neues Variance Reduction System entwickeln, das algorithmisch erzeugte Verzerrungen nach Geschlecht und geschaetzter ethnischer Zugehörigkeit messbar reduzieren soll. Anfang 2023 einigten sich beide Seiten auf konkrete Compliance-Kennzahlen für die zulaessige Abweichung.",
+      "title_en": "DOJ settlement forces Meta to build a Variance Reduction System",
+      "description_en": "In June 2022 the US Department of Justice sued Meta over discriminatory delivery of housing ads and simultaneously reached a settlement. Meta had to abandon the contested delivery tool and develop a new Variance Reduction System intended to measurably reduce algorithmically produced disparities by sex and estimated race/ethnicity. In early 2023 both sides agreed on concrete compliance metrics for the permissible variance.",
+      "sources": [
+        "https://www.justice.gov/crt/case/united-states-v-meta-platforms-inc-fka-facebook-inc-sdny"
+      ]
+    },
+    {
+      "date": "2023-06",
+      "phase": "consequences",
+      "title": "Niederlaendisches Menschenrechtsgremium stuft Metas Job-Algorithmus als diskriminierend ein",
+      "description": "Im Juni 2023 entschied das niederlaendische Menschenrechtsinstitut auf Beschwerde von Buergerrechtsorganisationen, dass Meta beim Ausspielen von Stellenanzeigen verbotene Geschlechterdiskriminierung betreibe, und forderte eine Aenderung des Auslieferungs-Algorithmus. Auch eine franzoesische Regulierungsstelle bewertete Metas Job-Anzeigen-Algorithmus später als diskriminierend. Damit bestaetigten unabhaengige Stellen ausserhalb der USA das Kernergebnis der USC-Studie.",
+      "title_de": "Niederlaendisches Menschenrechtsgremium stuft Metas Job-Algorithmus als diskriminierend ein",
+      "description_de": "Im Juni 2023 entschied das niederlaendische Menschenrechtsinstitut auf Beschwerde von Buergerrechtsorganisationen, dass Meta beim Ausspielen von Stellenanzeigen verbotene Geschlechterdiskriminierung betreibe, und forderte eine Aenderung des Auslieferungs-Algorithmus. Auch eine franzoesische Regulierungsstelle bewertete Metas Job-Anzeigen-Algorithmus später als diskriminierend. Damit bestaetigten unabhaengige Stellen ausserhalb der USA das Kernergebnis der USC-Studie.",
+      "title_en": "Dutch human rights body rules Meta's job algorithm discriminatory",
+      "description_en": "In June 2023 the Netherlands Institute for Human Rights, acting on a complaint by civil rights organizations, ruled that Meta engaged in prohibited gender discrimination when delivering job ads and demanded a change to the delivery algorithm. A French regulator later likewise assessed Meta's job-ad algorithm as discriminatory. Independent bodies outside the US thereby confirmed the core finding of the USC study.",
+      "sources": [
+        "https://www.cnn.com/2023/06/12/tech/facebook-job-ads-gender-discrimination-asequals-intl-cmd/index.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2021/04/09/1022217/facebook-ad-algorithm-sex-discrimination/",

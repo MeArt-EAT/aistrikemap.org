@@ -31,9 +31,27 @@
     "data-misuse",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Recht auf korrekte Information",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Körperliche Unversehrtheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Recht auf korrekte Information",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Körperliche Unversehrtheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Right to accurate information",
+    "Consumer protection",
+    "Protection from manipulation",
+    "Bodily integrity"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI (ChatGPT 3.5)",
@@ -58,7 +76,74 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht ChatGPT als allgemeinen Chatbot ohne medizinische Validierung",
+      "description": "Am 30. November 2022 veröffentlichte OpenAI ChatGPT (zunächst auf GPT-3.5 basierend) für die breite Öffentlichkeit. Das Modell wurde auf riesigen, ungefilterten Textmengen aus dem Internet trainiert und nicht auf geprüfte medizinische Leitlinien abgestimmt. Es erzeugt sprachlich überzeugende, aber statistisch geratene Antworten und kann Fakten und Quellen frei erfinden (Halluzination). Innerhalb von Wochen nutzten Millionen Menschen den Dienst auch für Gesundheits- und Therapiefragen.",
+      "title_de": "OpenAI veröffentlicht ChatGPT als allgemeinen Chatbot ohne medizinische Validierung",
+      "description_de": "Am 30. November 2022 veröffentlichte OpenAI ChatGPT (zunächst auf GPT-3.5 basierend) für die breite Öffentlichkeit. Das Modell wurde auf riesigen, ungefilterten Textmengen aus dem Internet trainiert und nicht auf geprüfte medizinische Leitlinien abgestimmt. Es erzeugt sprachlich überzeugende, aber statistisch geratene Antworten und kann Fakten und Quellen frei erfinden (Halluzination). Innerhalb von Wochen nutzten Millionen Menschen den Dienst auch für Gesundheits- und Therapiefragen.",
+      "title_en": "OpenAI releases ChatGPT as a general-purpose chatbot without medical validation",
+      "description_en": "On 30 November 2022 OpenAI released ChatGPT (initially based on GPT-3.5) to the general public. The model was trained on huge amounts of unfiltered internet text and was not aligned to vetted medical guidelines. It produces linguistically convincing but statistically guessed answers and can fabricate facts and sources (hallucination). Within weeks millions of people were also using the service for health and treatment questions.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ChatGPT"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Allzweck-Assistent ohne Nutzungsgrenzen trifft auf den NCCN-Leitlinien-Standard",
+      "description": "OpenAI positionierte ChatGPT als universellen Assistenten und wies Risiken nur in allgemeinen Haftungs-Hinweisen aus, ohne medizinische Nutzung wirksam zu unterbinden. Der klinische Goldstandard für Krebstherapie sind dagegen die strikten, evidenzbasierten Leitlinien des National Comprehensive Cancer Network (NCCN). Forschende beschlossen daher zu prüfen, wie weit die frei zugänglichen Chatbot-Empfehlungen von diesem etablierten Standard abweichen.",
+      "title_de": "Allzweck-Assistent ohne Nutzungsgrenzen trifft auf den NCCN-Leitlinien-Standard",
+      "description_de": "OpenAI positionierte ChatGPT als universellen Assistenten und wies Risiken nur in allgemeinen Haftungs-Hinweisen aus, ohne medizinische Nutzung wirksam zu unterbinden. Der klinische Goldstandard für Krebstherapie sind dagegen die strikten, evidenzbasierten Leitlinien des National Comprehensive Cancer Network (NCCN). Forschende beschlossen daher zu prüfen, wie weit die frei zugänglichen Chatbot-Empfehlungen von diesem etablierten Standard abweichen.",
+      "title_en": "General-purpose assistant without usage limits meets the NCCN guideline standard",
+      "description_en": "OpenAI positioned ChatGPT as a universal assistant and flagged risks only in general liability disclaimers, without effectively blocking medical use. The clinical gold standard for cancer therapy, by contrast, is the strict, evidence-based guidelines of the National Comprehensive Cancer Network (NCCN). Researchers therefore set out to test how far the freely accessible chatbot recommendations deviate from this established standard.",
+      "sources": [
+        "https://www.eurekalert.org/news-releases/999410"
+      ]
+    },
+    {
+      "date": "2023-08-24",
+      "phase": "event",
+      "title": "JAMA-Oncology-Studie: ChatGPT halluziniert erfundene Krebstherapien",
+      "description": "Am 24. August 2023 veröffentlichten Forschende des Brigham and Women's Hospital in JAMA Oncology eine Studie, die ChatGPT 3.5 mit 104 Krebs-Behandlungs-Anfragen zu Brust-, Lungen- und Prostatakrebs testete. In rund einem Drittel der Antworten enthielt das Modell mindestens eine Empfehlung, die nicht den NCCN-Leitlinien entsprach; in 12,5 Prozent der Fälle erfand es komplett nicht existierende Therapien. Die selbstsichere Sprache machte es schwer, falsche Empfehlungen zwischen korrekten zu erkennen.",
+      "title_de": "JAMA-Oncology-Studie: ChatGPT halluziniert erfundene Krebstherapien",
+      "description_de": "Am 24. August 2023 veröffentlichten Forschende des Brigham and Women's Hospital in JAMA Oncology eine Studie, die ChatGPT 3.5 mit 104 Krebs-Behandlungs-Anfragen zu Brust-, Lungen- und Prostatakrebs testete. In rund einem Drittel der Antworten enthielt das Modell mindestens eine Empfehlung, die nicht den NCCN-Leitlinien entsprach; in 12,5 Prozent der Fälle erfand es komplett nicht existierende Therapien. Die selbstsichere Sprache machte es schwer, falsche Empfehlungen zwischen korrekten zu erkennen.",
+      "title_en": "JAMA Oncology study: ChatGPT hallucinates fabricated cancer treatments",
+      "description_en": "On 24 August 2023 researchers at Brigham and Women's Hospital published a study in JAMA Oncology that tested ChatGPT 3.5 against 104 cancer-treatment queries on breast, lung and prostate cancer. In about one-third of the answers the model included at least one recommendation that did not match NCCN guidelines; in 12.5 percent of cases it invented entirely non-existent therapies. Its confident tone made it hard to spot the incorrect recommendations hidden among correct ones.",
+      "sources": [
+        "https://news.harvard.edu/gazette/story/2023/08/need-cancer-treatment-advice-forget-chatgpt/",
+        "https://www.eurekalert.org/news-releases/999410"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "consequences",
+      "title": "Folgestudie zu Brustkrebs: 24 Prozent falsch, 41 Prozent erfundene Quellen",
+      "description": "Eine 2024 in der Fachzeitschrift Cancer veröffentlichte Folgestudie zu Brustkrebs-Informationen bestätigte das Muster: Rund ein Viertel (24 Prozent) der ChatGPT-Antworten war ungenau, und 41 Prozent der angegebenen Referenzen verwiesen auf realistisch aussehende, aber nicht existierende Webseiten. Die Studienautoren warnten Patientinnen und Patienten ausdrücklich vor der Nutzung von ChatGPT als medizinischer Informationsquelle.",
+      "title_de": "Folgestudie zu Brustkrebs: 24 Prozent falsch, 41 Prozent erfundene Quellen",
+      "description_de": "Eine 2024 in der Fachzeitschrift Cancer veröffentlichte Folgestudie zu Brustkrebs-Informationen bestätigte das Muster: Rund ein Viertel (24 Prozent) der ChatGPT-Antworten war ungenau, und 41 Prozent der angegebenen Referenzen verwiesen auf realistisch aussehende, aber nicht existierende Webseiten. Die Studienautoren warnten Patientinnen und Patienten ausdrücklich vor der Nutzung von ChatGPT als medizinischer Informationsquelle.",
+      "title_en": "Follow-up breast-cancer study: 24 percent inaccurate, 41 percent fabricated sources",
+      "description_en": "A follow-up study published in the journal Cancer in 2024 on breast-cancer information confirmed the pattern: about a quarter (24 percent) of ChatGPT's answers were inaccurate, and 41 percent of the references it provided pointed to realistic-looking but non-existent web pages. The study authors explicitly cautioned patients against using ChatGPT as a source of medical information.",
+      "sources": [
+        "https://www.curetoday.com/view/study-suggests-using-caution-with-chatgpt-for-breast-cancer-information"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Warnung an Patienten und Ruf nach geprüften medizinischen KI-Werkzeugen",
+      "description": "Die wiederholten Befunde gelten als Warnschuss gegen die ungeprüfte Nutzung von Allzweck-LLMs in der Patienteninformation. Fachleute und Krankenhäuser betonten, dass selbstsicher formulierte Halluzinationen besonders gefährlich sind, weil Laien sie kaum erkennen können, und forderten klinisch validierte, leitlinien-gebundene KI-Werkzeuge statt allgemeiner Chatbots für Therapie-Entscheidungen.",
+      "title_de": "Warnung an Patienten und Ruf nach geprüften medizinischen KI-Werkzeugen",
+      "description_de": "Die wiederholten Befunde gelten als Warnschuss gegen die ungeprüfte Nutzung von Allzweck-LLMs in der Patienteninformation. Fachleute und Krankenhäuser betonten, dass selbstsicher formulierte Halluzinationen besonders gefährlich sind, weil Laien sie kaum erkennen können, und forderten klinisch validierte, leitlinien-gebundene KI-Werkzeuge statt allgemeiner Chatbots für Therapie-Entscheidungen.",
+      "title_en": "Warning to patients and calls for validated medical AI tools",
+      "description_en": "The repeated findings are seen as a warning shot against the unvetted use of general-purpose LLMs in patient-facing health information. Experts and hospitals stressed that confidently phrased hallucinations are especially dangerous because lay users can barely detect them, and called for clinically validated, guideline-bound AI tools instead of general chatbots for treatment decisions.",
+      "sources": [
+        "https://www.brighamhealthonamission.org/2023/11/30/new-study-highlights-dangers-of-patients-relying-on-chatgpt-for-treatment-recommendations/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://news.harvard.edu/gazette/story/2023/08/need-cancer-treatment-advice-forget-chatgpt/",

@@ -32,9 +32,27 @@
     "data-misuse",
     "political-pressure"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Informationsfreiheit",
+    "Recht auf Privatsphäre",
+    "Schutz vor willkürlicher staatlicher Macht",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Informationsfreiheit",
+    "Recht auf Privatsphäre",
+    "Schutz vor willkürlicher staatlicher Macht",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Freedom of information",
+    "Right to privacy",
+    "Protection from arbitrary state power",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Cybersecurity-Behörde Turkmenistan",
@@ -59,7 +77,78 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Staatliches ISP-Monopol und DPI-Filterung auf TurkmenTelecom",
+      "description": "Der gesamte Internetverkehr Turkmenistans läuft über den staatlichen Monopolisten TurkmenTelecom, der die einzige lizenzierte ISP ist und alle internationalen Gateways in Aschgabat kontrolliert. Auf dessen Routern ist ein Deep-Packet-Inspection-System (DPI) installiert, das DNS-Anfragen kapert, HTTP-Host-Header inspiziert und Inhalte filtert. 2019 schuf das Gesetz über Cybersicherheit zudem den Staatlichen Cybersicherheitsdienst unter der Behörde Turkmenaragatnaschyk als zuständige Zensurinstanz.",
+      "title_de": "Staatliches ISP-Monopol und DPI-Filterung auf TurkmenTelecom",
+      "description_de": "Der gesamte Internetverkehr Turkmenistans läuft über den staatlichen Monopolisten TurkmenTelecom, der die einzige lizenzierte ISP ist und alle internationalen Gateways in Aschgabat kontrolliert. Auf dessen Routern ist ein Deep-Packet-Inspection-System (DPI) installiert, das DNS-Anfragen kapert, HTTP-Host-Header inspiziert und Inhalte filtert. 2019 schuf das Gesetz über Cybersicherheit zudem den Staatlichen Cybersicherheitsdienst unter der Behörde Turkmenaragatnaschyk als zuständige Zensurinstanz.",
+      "title_en": "State ISP monopoly and DPI filtering on TurkmenTelecom",
+      "description_en": "All of Turkmenistan's internet traffic runs through the state monopoly TurkmenTelecom, the only licensed ISP, which controls every international gateway in Ashgabat. Deep Packet Inspection (DPI) systems installed on its routers hijack DNS queries, inspect HTTP host headers and filter content. In 2019 the Law on Cybersecurity also created the State Cybersecurity Service under the Turkmenaragatnashyk agency as the body responsible for censorship.",
+      "sources": [
+        "https://www.qurium.org/alerts/turkmenistan/turkmenistan-and-their-golden-dpi/",
+        "https://en.wikipedia.org/wiki/Telecommunications_in_Turkmenistan"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "VPN-Verbot per Koran-Eid und systematische Tor-Sperre",
+      "description": "Ab 2021 verschärfte das Regime die Doktrin der digitalen Abschottung: Bürgerinnen und Bürger mussten teils auf dem Koran schwören, keine VPNs zu nutzen, und im Juli 2021 brach die Tor-Nutzung im Land abrupt ein. Das Blockieren von Umgehungswerkzeugen wurde dabei nicht nur ideologisch begründet, sondern zugleich ökonomisch: Dieselbe Cybersicherheits-Behörde, die den Zugang sperrte, baute parallel ein Geschäftsmodell auf, gegen Bezahlung Freischaltungen zu verkaufen.",
+      "title_de": "VPN-Verbot per Koran-Eid und systematische Tor-Sperre",
+      "description_de": "Ab 2021 verschärfte das Regime die Doktrin der digitalen Abschottung: Bürgerinnen und Bürger mussten teils auf dem Koran schwören, keine VPNs zu nutzen, und im Juli 2021 brach die Tor-Nutzung im Land abrupt ein. Das Blockieren von Umgehungswerkzeugen wurde dabei nicht nur ideologisch begründet, sondern zugleich ökonomisch: Dieselbe Cybersicherheits-Behörde, die den Zugang sperrte, baute parallel ein Geschäftsmodell auf, gegen Bezahlung Freischaltungen zu verkaufen.",
+      "title_en": "VPN ban sworn on the Koran and systematic Tor blocking",
+      "description_en": "From 2021 the regime tightened its doctrine of digital isolation: citizens were in some cases forced to swear on the Koran not to use VPNs, and in July 2021 Tor usage in the country collapsed abruptly. Blocking circumvention tools was justified not only ideologically but economically: the very Cybersecurity Agency that imposed the blocks simultaneously built a business model of selling paid access back.",
+      "sources": [
+        "https://blog.torproject.org/Corruption-Control-Turkmenistan-internet-censorship-business/",
+        "https://www.accessnow.org/turkmenistan-internet-shutdowns/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "event",
+      "title": "Verschärfte VPN-Sperren bei gleichzeitigem Verkauf staatlicher VPN-Zugänge",
+      "description": "2023 sperrten die Behörden nahezu alle VPN-Dienste und blockierten zugleich YouTube, Facebook, Instagram, WhatsApp, TikTok, Discord, Signal, IMO und Telegram. Nach Recherchen von Turkmen.news boten Beschäftigte der zuständigen Cybersicherheits-Behörde gleichzeitig kostenpflichtige Freischaltungen an: 1.000 Manat (rund 50 USD) pro Monat, gefilterte Wochenpakete oder 2.000 USD pro Monat für eine völlig ungefilterte Leitung. Zensur und Verkauf des Gegenmittels lagen damit in derselben Hand.",
+      "title_de": "Verschärfte VPN-Sperren bei gleichzeitigem Verkauf staatlicher VPN-Zugänge",
+      "description_de": "2023 sperrten die Behörden nahezu alle VPN-Dienste und blockierten zugleich YouTube, Facebook, Instagram, WhatsApp, TikTok, Discord, Signal, IMO und Telegram. Nach Recherchen von Turkmen.news boten Beschäftigte der zuständigen Cybersicherheits-Behörde gleichzeitig kostenpflichtige Freischaltungen an: 1.000 Manat (rund 50 USD) pro Monat, gefilterte Wochenpakete oder 2.000 USD pro Monat für eine völlig ungefilterte Leitung. Zensur und Verkauf des Gegenmittels lagen damit in derselben Hand.",
+      "title_en": "Tighter VPN blocks alongside state-tied sale of VPN access",
+      "description_en": "In 2023 the authorities blocked nearly all VPN services while also cutting off YouTube, Facebook, Instagram, WhatsApp, TikTok, Discord, Signal, IMO and Telegram. According to Turkmen.news investigations, staff of the Cybersecurity Agency in charge of censorship were at the same time selling paid unblock services: 1,000 manats (about $50) per month, filtered weekly packages, or $2,000 per month for a fully unfiltered line. Censorship and the sale of its remedy thus lay in the same hands.",
+      "sources": [
+        "https://progres.online/reports/internet-freedom/the-state-directed-internet-blockade-continued-in-turkmenistan-in-2023/",
+        "https://timesca.com/turkmenistan-tightens-internet-blocks-to-promote-state-controlled-vpns/"
+      ]
+    },
+    {
+      "date": "2024-12",
+      "phase": "consequences",
+      "title": "Neue Zensurwelle gegen ganze IP-Bereiche",
+      "description": "Nach einer kurzfristigen Lockerung Mitte 2024 folgte ab Dezember 2024 die nächste Eskalation: Die Behörden erweiterten die nationale IP-Sperrliste um zahlreiche /16-Subnetze, von denen jedes über 65.000 IP-Adressen umfasst. Ganze Adressbereiche und Online-Dienste wurden damit pauschal unerreichbar, was den Verkaufsdruck für staatlich kontrollierte Zugänge weiter erhöhte.",
+      "title_de": "Neue Zensurwelle gegen ganze IP-Bereiche",
+      "description_de": "Nach einer kurzfristigen Lockerung Mitte 2024 folgte ab Dezember 2024 die nächste Eskalation: Die Behörden erweiterten die nationale IP-Sperrliste um zahlreiche /16-Subnetze, von denen jedes über 65.000 IP-Adressen umfasst. Ganze Adressbereiche und Online-Dienste wurden damit pauschal unerreichbar, was den Verkaufsdruck für staatlich kontrollierte Zugänge weiter erhöhte.",
+      "title_en": "New censorship wave targeting entire IP ranges",
+      "description_en": "After a brief relaxation in mid-2024, a fresh escalation began in December 2024: the authorities expanded the national IP blacklist with numerous /16 subnets, each covering more than 65,000 IP addresses. Whole address ranges and online services became inaccessible wholesale, further increasing the pressure to buy state-controlled access.",
+      "sources": [
+        "https://blog.torproject.org/Corruption-Control-Turkmenistan-internet-censorship-business/",
+        "https://github.com/net4people/bbs/issues/513"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Tor Project nennt es erpresserisches Geschäftsmodell; Grau-Markt kehrt zurück",
+      "description": "Im Jahr 2025 dokumentierte das Tor Project das Vorgehen öffentlich als korruptionsgetriebenes, erpresserisches Geschäftsmodell, bei dem genau die Stelle, die den Zugang sperrt, ihn gegen Geld zurückverkauft. Bis April 2025 war der Grau-Markt für staatsnahe VPN-Verkäufe wieder voll angelaufen. Der Fall gilt international als Lehrbeispiel dafür, wie digitale Repression in eine Einnahmequelle umgemünzt wird.",
+      "title_de": "Tor Project nennt es erpresserisches Geschäftsmodell; Grau-Markt kehrt zurück",
+      "description_de": "Im Jahr 2025 dokumentierte das Tor Project das Vorgehen öffentlich als korruptionsgetriebenes, erpresserisches Geschäftsmodell, bei dem genau die Stelle, die den Zugang sperrt, ihn gegen Geld zurückverkauft. Bis April 2025 war der Grau-Markt für staatsnahe VPN-Verkäufe wieder voll angelaufen. Der Fall gilt international als Lehrbeispiel dafür, wie digitale Repression in eine Einnahmequelle umgemünzt wird.",
+      "title_en": "Tor Project calls it an extortionate business model; the grey market returns",
+      "description_en": "In 2025 the Tor Project publicly documented the practice as a corruption-driven, extortionate business model in which the very body imposing the blocks resells access for money. By April 2025 the grey market for state-linked VPN sales had fully resumed. The case is internationally cited as a textbook example of digital repression turned into a revenue stream.",
+      "sources": [
+        "https://blog.torproject.org/Corruption-Control-Turkmenistan-internet-censorship-business/",
+        "https://gigazine.net/gsc_news/en/20250901-turkmenistan-turned-internet-censorship-business/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://blog.torproject.org/Corruption-Control-Turkmenistan-internet-censorship-business/",

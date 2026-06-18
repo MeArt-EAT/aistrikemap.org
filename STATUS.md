@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2458 Incidents** · 499 mit Reverse-TL (20.3 %) · 0 Audit-Findings · Bundle 14.5 MB |
+| 📊 **Bestand** | **2458 Incidents** · 649 mit Reverse-TL (26.4 %) · 0 Audit-Findings · Bundle 15.9 MB |
 | 🔢 **Übergabe-Nr** | **#5** (2026-06-06) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **TL-Wellen 11-18 (Sev-4)**: 96 weitere Severity-4-Cases mit Reverse-Timelines. 32 Agenten parallel, ~12-30 Tool-Calls/Agent, 0 Crashes. Sev-4 mit TL: 97 → **193** (29 % aller Sev-4). |
-| ➡️ **Nächster Schritt** | **Sev-4 fortsetzen** (478 weitere Cases ohne TL) · ODER AIAAIC Batch D (~300) · ODER Frontend-Check bei 2458 Markern |
+| ✅ **Zuletzt fertig** | **Workflow-Orchestrierung (150 Sev-4)**: erster Multi-Agent-Workflow `pipeline(build → adversarial-verify)`. 300 Agenten, 13.4M Tokens. Verify-Pass fand 6 echte Faktenfehler (Halluzinationen/Fehldatierungen), die 6 Korrektur-Agenten mit Quelle behoben. Sev-4 mit TL: 193 → **343** (51 %). |
+| ➡️ **Nächster Schritt** | **Sev-4 abschließen** (328 weitere ohne TL, ~2-3 Workflow-Batches) · ODER Sev-3 (953 ohne TL) · ODER AIAAIC Batch D · ODER Frontend-Check |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -27,12 +27,16 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 1. **AIAAIC Batch D** (pre-2015, ~300 Stubs) — letzter AIAAIC-Block, niedrige
    Prio (frühe Cases haben weniger Aktualität). Bringt aber historische Tiefe.
    Workflow: siehe Memory `aiaaic-import-workflow` + Übergabe #5.
-2. **Reverse-Timelines** — 499 von 2458 (20.3 %) haben die TL (Kern-Feature).
-   **Severity-5-Block 100 % geschlossen** ✓ (alle 189 Sev-5-Cases mit TL).
-   **Severity-4: 193/671 (29 %)** mit TL — Sev-4-Pilot mit 8 Wellen (96 Cases)
-   durch, Quellenlage SEHR stark (alle v=4 in den Top 96). 478 Sev-4 ohne TL
-   verbleiben (~40 Wellen). Sev-3-Block: 1056 Cases mit nur 103 TL (~10 %).
-   Briefing: `data/incident-candidates/_timeline-briefing.md`.
+2. **Reverse-Timelines** — 649 von 2458 (26.4 %) haben die TL (Kern-Feature).
+   **Severity-5-Block 100 % geschlossen** ✓. **Severity-4: 343/671 (51 %)** mit TL.
+   Methode jetzt **Workflow-orchestriert** (statt manuelle Wellen): ein
+   `Workflow`-Script mit `pipeline(build → adversarial-verify)` baut + prüft
+   pro Lauf 150 Cases. Der Verify-Pass (eigener Agent pro Case, gezielte
+   Gegenrecherche) fängt Halluzinationen/Fehldatierungen, die manuelle Wellen
+   nicht fanden (Batch 1: 6 echte Faktenfehler korrigiert). 328 Sev-4 ohne TL
+   verbleiben (~2-3 Workflow-Batches à 150). Danach Sev-3 (953 ohne TL).
+   Briefing: `_timeline-briefing.md`. **WICHTIG fürs Workflow-Script: Slugs
+   inline als Literal einbetten — `args` kam im Script als undefined an.**
 3. **Frontend-Recheck bei 2458 Markern** — Clustering + gzip tragen es, aber
    Bundle ist 12.6 MB. Vor Batch D Lazy-Loading/Tiling evaluieren.
 4. **needs-review-Cases** — Batch A+B+C haben zusammen ~180 needs-review (oft

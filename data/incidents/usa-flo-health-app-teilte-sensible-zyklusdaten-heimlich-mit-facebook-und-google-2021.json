@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Recht auf Gesundheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Recht auf Gesundheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Consumer protection",
+    "Right to health",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Flo Health Inc.",
@@ -54,7 +72,86 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-06",
+      "phase": "infrastructure",
+      "title": "Flo integriert Marketing- und Analyse-SDKs von Facebook, Google und anderen",
+      "description": "Bereits ab Juni 2016 band die App Software-Development-Kits (SDKs) zahlreicher Marketing- und Analyse-Firmen ein, darunter Facebook, Google, Flurry, Fabric und AppsFlyer. Diese SDKs erfassten sogenannte App Events, also Aufzeichnungen darüber, wie Nutzerinnen einzelne Funktionen der App benutzten. Damit entstand die technische Infrastruktur, über die sensible Gesundheitsdaten an Dritte abfließen konnten.",
+      "title_de": "Flo integriert Marketing- und Analyse-SDKs von Facebook, Google und anderen",
+      "description_de": "Bereits ab Juni 2016 band die App Software-Development-Kits (SDKs) zahlreicher Marketing- und Analyse-Firmen ein, darunter Facebook, Google, Flurry, Fabric und AppsFlyer. Diese SDKs erfassten sogenannte App Events, also Aufzeichnungen darüber, wie Nutzerinnen einzelne Funktionen der App benutzten. Damit entstand die technische Infrastruktur, über die sensible Gesundheitsdaten an Dritte abfließen konnten.",
+      "title_en": "Flo integrates marketing and analytics SDKs from Facebook, Google and others",
+      "description_en": "As far back as June 2016 the app embedded software development kits (SDKs) from numerous marketing and analytics firms, including Facebook, Google, Flurry, Fabric and AppsFlyer. These SDKs captured so-called App Events, records of how users interacted with individual app features. This created the technical infrastructure through which sensitive health data could flow to third parties.",
+      "sources": [
+        "https://www.ftc.gov/business-guidance/blog/2021/01/health-app-broke-its-privacy-promises-disclosing-intimate-details-about-users"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Freemium-Geschäftsmodell trifft auf ausdrückliche Datenschutz-Versprechen",
+      "description": "Flo finanzierte das kostenlose Tracking über Premium-Abos und nutzte parallel Analyse-Dienste zur Wachstums- und Werbe-Optimierung. Zugleich versicherte die App ausdrücklich, Angaben zu Zyklus, Schwangerschaft und Symptomen nicht an Dritte weiterzugeben und Daten nur zur Erbringung der App-Dienste zu verwenden. Dieses Spannungsverhältnis zwischen datengetriebener Vermarktung und den Versprechen legitimierte intern die Weitergabe sensibler Ereignisdaten.",
+      "title_de": "Freemium-Geschäftsmodell trifft auf ausdrückliche Datenschutz-Versprechen",
+      "description_de": "Flo finanzierte das kostenlose Tracking über Premium-Abos und nutzte parallel Analyse-Dienste zur Wachstums- und Werbe-Optimierung. Zugleich versicherte die App ausdrücklich, Angaben zu Zyklus, Schwangerschaft und Symptomen nicht an Dritte weiterzugeben und Daten nur zur Erbringung der App-Dienste zu verwenden. Dieses Spannungsverhältnis zwischen datengetriebener Vermarktung und den Versprechen legitimierte intern die Weitergabe sensibler Ereignisdaten.",
+      "title_en": "Freemium business model collides with explicit privacy promises",
+      "description_en": "Flo funded its free tracking through premium subscriptions while relying on analytics services to optimise growth and advertising. At the same time the app explicitly assured users that details about their cycle, pregnancy and symptoms would not be shared with third parties and that data would only be used to deliver the app's services. This tension between data-driven marketing and the privacy promises internally legitimised the disclosure of sensitive event data.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2021/01/developer-popular-womens-fertility-tracking-app-settles-ftc-allegations-it-misled-consumers-about"
+      ]
+    },
+    {
+      "date": "2019-02-22",
+      "phase": "event",
+      "title": "Wall-Street-Journal-Recherche deckt heimliche Weitergabe an Facebook auf",
+      "description": "Das Wall Street Journal berichtete, dass Flo binnen Sekunden nach der Eingabe sensible Daten als Custom App Events an Facebook übermittelte, etwa wenn Nutzerinnen ihre Menstruation oder Schwangerschaftswoche eintrugen. Die Daten wurden mit einer eindeutigen Werbe-Kennung verknüpft, die einem Gerät oder Profil zugeordnet werden konnte. Einen Tag nach der Veröffentlichung stoppte Flo das Teilen mit Facebook und kündigte ein Datenschutz-Audit an.",
+      "title_de": "Wall-Street-Journal-Recherche deckt heimliche Weitergabe an Facebook auf",
+      "description_de": "Das Wall Street Journal berichtete, dass Flo binnen Sekunden nach der Eingabe sensible Daten als Custom App Events an Facebook übermittelte, etwa wenn Nutzerinnen ihre Menstruation oder Schwangerschaftswoche eintrugen. Die Daten wurden mit einer eindeutigen Werbe-Kennung verknüpft, die einem Gerät oder Profil zugeordnet werden konnte. Einen Tag nach der Veröffentlichung stoppte Flo das Teilen mit Facebook und kündigte ein Datenschutz-Audit an.",
+      "title_en": "Wall Street Journal investigation exposes covert sharing with Facebook",
+      "description_en": "The Wall Street Journal reported that within seconds of data entry Flo transmitted sensitive data to Facebook as Custom App Events, for example when users logged their menstruation or pregnancy week. The data was linked to a unique advertising identifier that could be matched to a device or profile. The day after publication Flo stopped sharing with Facebook and announced a privacy audit.",
+      "sources": [
+        "https://www.cnbc.com/2019/02/22/facebook-receives-personal-health-data-from-apps-wsj.html"
+      ]
+    },
+    {
+      "date": "2021-01-13",
+      "phase": "consequences",
+      "title": "FTC kündigt Vergleich wegen irreführender Datenschutz-Versprechen an",
+      "description": "Die Federal Trade Commission warf Flo vor, Verbraucherinnen über den Umgang mit Gesundheitsdaten getäuscht zu haben, obwohl Vertraulichkeit zugesichert worden war. Der angekündigte Vergleich verpflichtete Flo, künftig vorab ausdrückliche Zustimmung einzuholen und eine unabhängige Prüfung der Datenschutzpraktiken durchführen zu lassen. Zwei FTC-Kommissarinnen forderten zusätzlich, das Vorgehen als Verstoß gegen die Health-Breach-Notification-Rule zu werten.",
+      "title_de": "FTC kündigt Vergleich wegen irreführender Datenschutz-Versprechen an",
+      "description_de": "Die Federal Trade Commission warf Flo vor, Verbraucherinnen über den Umgang mit Gesundheitsdaten getäuscht zu haben, obwohl Vertraulichkeit zugesichert worden war. Der angekündigte Vergleich verpflichtete Flo, künftig vorab ausdrückliche Zustimmung einzuholen und eine unabhängige Prüfung der Datenschutzpraktiken durchführen zu lassen. Zwei FTC-Kommissarinnen forderten zusätzlich, das Vorgehen als Verstoß gegen die Health-Breach-Notification-Rule zu werten.",
+      "title_en": "FTC announces settlement over misleading privacy promises",
+      "description_en": "The Federal Trade Commission accused Flo of having deceived consumers about how it handled health data despite assurances of confidentiality. The announced settlement required Flo to obtain affirmative consent going forward and to undergo an independent review of its privacy practices. Two FTC commissioners additionally argued the conduct should be treated as a violation of the Health Breach Notification Rule.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2021/01/developer-popular-womens-fertility-tracking-app-settles-ftc-allegations-it-misled-consumers-about"
+      ]
+    },
+    {
+      "date": "2021-06-22",
+      "phase": "consequences",
+      "title": "FTC macht Beschluss endgültig; Flo muss Betroffene informieren und Dritte zur Löschung anweisen",
+      "description": "Die FTC finalisierte ihren Beschluss gegen Flo Health. Das Unternehmen musste betroffene Nutzerinnen über die Weitergabe ihrer Daten informieren und die beteiligten Dritten, darunter Facebook und Google, anweisen, die erhaltenen Daten zu löschen. Künftig darf Flo sensible Gesundheitsdaten nur noch nach ausdrücklicher Einwilligung weitergeben.",
+      "title_de": "FTC macht Beschluss endgültig; Flo muss Betroffene informieren und Dritte zur Löschung anweisen",
+      "description_de": "Die FTC finalisierte ihren Beschluss gegen Flo Health. Das Unternehmen musste betroffene Nutzerinnen über die Weitergabe ihrer Daten informieren und die beteiligten Dritten, darunter Facebook und Google, anweisen, die erhaltenen Daten zu löschen. Künftig darf Flo sensible Gesundheitsdaten nur noch nach ausdrücklicher Einwilligung weitergeben.",
+      "title_en": "FTC finalizes order; Flo must notify affected users and instruct third parties to destroy data",
+      "description_en": "The FTC finalized its order against Flo Health. The company had to notify affected users about the disclosure of their data and instruct the third parties involved, including Facebook and Google, to destroy the data they had received. Going forward Flo may only share sensitive health data with affirmative consent.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2021/06/ftc-finalizes-order-flo-health-fertility-tracking-app-shared-sensitive-health-data-facebook-google"
+      ]
+    },
+    {
+      "date": "2024-02",
+      "phase": "consequences",
+      "title": "Sammelklage gegen Flo, Facebook und Google wird zugelassen",
+      "description": "Ein US-Gericht ließ eine Sammelklage zu, in der Flo Health vorgeworfen wird, intime Daten ohne Einwilligung mit Facebook und Google geteilt zu haben. Der Fall weitete die Folgen über die behördliche FTC-Maßnahme hinaus auf zivilrechtliche Haftung aus und stellte auch die Rolle der empfangenden Plattformen in Frage.",
+      "title_de": "Sammelklage gegen Flo, Facebook und Google wird zugelassen",
+      "description_de": "Ein US-Gericht ließ eine Sammelklage zu, in der Flo Health vorgeworfen wird, intime Daten ohne Einwilligung mit Facebook und Google geteilt zu haben. Der Fall weitete die Folgen über die behördliche FTC-Maßnahme hinaus auf zivilrechtliche Haftung aus und stellte auch die Rolle der empfangenden Plattformen in Frage.",
+      "title_en": "Class action against Flo, Facebook and Google is greenlit",
+      "description_en": "A US court allowed a class action alleging that Flo Health shared intimate data with Facebook and Google without consent to proceed. The case extended the fallout beyond the regulatory FTC action into civil liability and also called into question the role of the receiving platforms.",
+      "sources": [
+        "https://www.cbc.ca/news/canada/british-columbia/flo-health-privacy-class-action-1.7137600"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.ftc.gov/news-events/news/press-releases/2021/01/developer-popular-womens-fertility-tracking-app-settles-ftc-allegations-it-misled-consumers-about",

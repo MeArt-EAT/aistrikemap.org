@@ -32,9 +32,27 @@
     "political-pressure",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Meinungsfreiheit",
+    "Recht auf politische Teilhabe",
+    "Faires Verfahren",
+    "Schutz vor willkürlicher Überwachung"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Meinungsfreiheit",
+    "Recht auf politische Teilhabe",
+    "Faires Verfahren",
+    "Schutz vor willkürlicher Überwachung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Freedom of expression",
+    "Right to political participation",
+    "Fair trial",
+    "Protection from arbitrary surveillance"
+  ],
   "asm:actors": [
     {
       "name": "Egyptian Government (suspected operator)",
@@ -57,7 +75,77 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Intellexa-Allianz buendelt Predator-Spyware zum kommerziellen Produkt",
+      "description": "Das 2017 in Nordmazedonien gegruendete Unternehmen Cytrox, Entwickler der Predator-Spyware, wurde 2019 vom ehemaligen israelischen Geheimdienstoffizier Tal Dilian in die Intellexa-Allianz eingegliedert. Der Verbund aus Cytrox, WiSpear und Senpai Technologies vermarktete Predator als schluesselfertiges Ueberwachungssystem an staatliche Kunden. Predator verschafft dem Betreiber vollstaendigen, dauerhaften Zugriff auf das Zielgeraet inklusive Passwoertern, Dateien, Fotos und Kontakten.",
+      "title_de": "Intellexa-Allianz buendelt Predator-Spyware zum kommerziellen Produkt",
+      "description_de": "Das 2017 in Nordmazedonien gegruendete Unternehmen Cytrox, Entwickler der Predator-Spyware, wurde 2019 vom ehemaligen israelischen Geheimdienstoffizier Tal Dilian in die Intellexa-Allianz eingegliedert. Der Verbund aus Cytrox, WiSpear und Senpai Technologies vermarktete Predator als schluesselfertiges Ueberwachungssystem an staatliche Kunden. Predator verschafft dem Betreiber vollstaendigen, dauerhaften Zugriff auf das Zielgeraet inklusive Passwoertern, Dateien, Fotos und Kontakten.",
+      "title_en": "Intellexa Alliance packages Predator spyware into a commercial product",
+      "description_en": "Cytrox, founded in North Macedonia in 2017 and developer of the Predator spyware, was folded in 2019 into the Intellexa Alliance by former Israeli intelligence officer Tal Dilian. The grouping of Cytrox, WiSpear and Senpai Technologies marketed Predator as a turnkey surveillance system sold to government clients. Predator grants its operator complete and persistent access to a target's device, including passwords, files, photos and contacts.",
+      "sources": [
+        "https://blog.talosintelligence.com/intellexa-and-cytrox-intel-agency-grade-spyware/",
+        "https://www.recordedfuture.com/research/intellexas-global-corporate-web"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "doctrine",
+      "title": "Ueberwachungs-Praxis gegen Oppositionelle und Netzwerk-Injektion am Provider-Rand",
+      "description": "Aegyptens Sicherheitsapparat setzte kommerzielle Spyware systematisch gegen Regierungskritiker:innen ein. Technische Grundlage war ein am Netzwerk-Rand von Vodafone Egypt installiertes Sandvine-PacketLogic-Geraet, das Verbindungen einzelner Ziele zur Injektion auswaehlen konnte. Tantawi geriet ins Visier, nachdem er im Maerz 2023 seine Praesidentschaftsambitionen öffentlich gemacht hatte.",
+      "title_de": "Ueberwachungs-Praxis gegen Oppositionelle und Netzwerk-Injektion am Provider-Rand",
+      "description_de": "Aegyptens Sicherheitsapparat setzte kommerzielle Spyware systematisch gegen Regierungskritiker:innen ein. Technische Grundlage war ein am Netzwerk-Rand von Vodafone Egypt installiertes Sandvine-PacketLogic-Geraet, das Verbindungen einzelner Ziele zur Injektion auswaehlen konnte. Tantawi geriet ins Visier, nachdem er im Maerz 2023 seine Praesidentschaftsambitionen öffentlich gemacht hatte.",
+      "title_en": "Surveillance practice against opposition figures and provider-edge network injection",
+      "description_en": "Egypt's security apparatus systematically deployed commercial spyware against government critics. The technical basis was a Sandvine PacketLogic device installed at the edge of Vodafone Egypt's network, capable of selecting individual targets' connections for injection. Tantawi was put under surveillance after he publicly declared his presidential ambitions in March 2023.",
+      "sources": [
+        "https://citizenlab.ca/research/predator-in-the-wires-ahmed-eltantawy-targeted-with-predator-spyware-after-announcing-presidential-ambitions/"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "event",
+      "title": "Predator-Infektionsversuche gegen Tantawis iPhone per Netzwerk-Injektion",
+      "description": "Zwischen Mai und September 2023 dokumentierten Citizen Lab und Googles Threat Analysis Group wiederholte Predator-Infektionsversuche gegen Ahmed Tantawis iPhone. Im August und September 2023 wurde seine Vodafone-Egypt-Verbindung anhaltend zur Netzwerk-Injektion ausgewaehlt: Besuchte er eine nicht per HTTPS gesicherte Website, leitete ihn ein Geraet am Netzrand auf eine boesartige Seite um, die Predator ueber eine Apple-Zero-Day-Exploit-Kette installierte. Die Provider-Beteiligung legt staatliche Steuerung nahe.",
+      "title_de": "Predator-Infektionsversuche gegen Tantawis iPhone per Netzwerk-Injektion",
+      "description_de": "Zwischen Mai und September 2023 dokumentierten Citizen Lab und Googles Threat Analysis Group wiederholte Predator-Infektionsversuche gegen Ahmed Tantawis iPhone. Im August und September 2023 wurde seine Vodafone-Egypt-Verbindung anhaltend zur Netzwerk-Injektion ausgewaehlt: Besuchte er eine nicht per HTTPS gesicherte Website, leitete ihn ein Geraet am Netzrand auf eine boesartige Seite um, die Predator ueber eine Apple-Zero-Day-Exploit-Kette installierte. Die Provider-Beteiligung legt staatliche Steuerung nahe.",
+      "title_en": "Predator infection attempts against Tantawi's iPhone via network injection",
+      "description_en": "Between May and September 2023, Citizen Lab and Google's Threat Analysis Group documented repeated Predator infection attempts against Ahmed Tantawi's iPhone. In August and September 2023 his Vodafone Egypt connection was persistently selected for network injection: when he visited a non-HTTPS website, a device at the network edge redirected him to a malicious site that installed Predator via an Apple zero-day exploit chain. The provider's involvement points to state direction.",
+      "sources": [
+        "https://citizenlab.ca/research/predator-in-the-wires-ahmed-eltantawy-targeted-with-predator-spyware-after-announcing-presidential-ambitions/",
+        "https://www.aljazeera.com/news/2023/9/24/leading-egyptian-opposition-presidential-candidate-targeted-by-spyware"
+      ]
+    },
+    {
+      "date": "2024-02",
+      "phase": "consequences",
+      "title": "Tantawi und 22 Wahlkampf-Helfer:innen verurteilt, fuenf Jahre Wahlverbot",
+      "description": "Im Februar 2024 verurteilte ein aegyptisches Gericht Tantawi und 22 seiner Unterstuetzer:innen zu je einem Jahr Haft wegen des angeblichen Drucks und der Verbreitung von Wahlunterlagen ohne Genehmigung. Im Mai 2024 bestaetigte ein Berufungsgericht das Urteil; Tantawi wurde im Gerichtssaal verhaftet und erhielt zusaetzlich ein fuenfjaehriges Wahlverbot. Menschenrechtsorganisationen werteten das Verfahren als politisch motiviert.",
+      "title_de": "Tantawi und 22 Wahlkampf-Helfer:innen verurteilt, fuenf Jahre Wahlverbot",
+      "description_de": "Im Februar 2024 verurteilte ein aegyptisches Gericht Tantawi und 22 seiner Unterstuetzer:innen zu je einem Jahr Haft wegen des angeblichen Drucks und der Verbreitung von Wahlunterlagen ohne Genehmigung. Im Mai 2024 bestaetigte ein Berufungsgericht das Urteil; Tantawi wurde im Gerichtssaal verhaftet und erhielt zusaetzlich ein fuenfjaehriges Wahlverbot. Menschenrechtsorganisationen werteten das Verfahren als politisch motiviert.",
+      "title_en": "Tantawi and 22 campaign aides convicted, five-year electoral ban",
+      "description_en": "In February 2024 an Egyptian court sentenced Tantawi and 22 of his supporters to one year in prison each for allegedly printing and circulating electoral papers without authorization. In May 2024 an appeals court upheld the verdict; Tantawi was arrested in the courtroom and additionally barred from running in elections for five years. Human rights organizations judged the proceedings to be politically motivated.",
+      "sources": [
+        "https://cihrs.org/egypt-tantawi-arrested-in-court-to-serve-a-prison-sentence-for-challenging-president-sisi-in-2024-elections/?lang=en",
+        "https://www.icj.org/egypt-authorities-must-immediately-release-political-opponent-ahmad-tantawi-and-quash-his-politically-motivated-and-wrongful-conviction/"
+      ]
+    },
+    {
+      "date": "2024-09",
+      "phase": "consequences",
+      "title": "US-Finanzministerium sanktioniert Intellexa und Hintermaenner",
+      "description": "Im Maerz 2024 sanktionierte das US-Finanzministerium (OFAC) erstmals das Intellexa-Konsortium und Tochterfirmen wie Cytrox als Vergeltung für die Verbreitung von Predator-Spyware. Im September 2024 weitete OFAC die Sanktionen auf weitere Personen und Firmen aus, die das Konsortium ermoeglichten. Die Maßnahmen markierten einen der haertesten staatlichen Schritte gegen einen kommerziellen Spyware-Anbieter.",
+      "title_de": "US-Finanzministerium sanktioniert Intellexa und Hintermaenner",
+      "description_de": "Im Maerz 2024 sanktionierte das US-Finanzministerium (OFAC) erstmals das Intellexa-Konsortium und Tochterfirmen wie Cytrox als Vergeltung für die Verbreitung von Predator-Spyware. Im September 2024 weitete OFAC die Sanktionen auf weitere Personen und Firmen aus, die das Konsortium ermoeglichten. Die Maßnahmen markierten einen der haertesten staatlichen Schritte gegen einen kommerziellen Spyware-Anbieter.",
+      "title_en": "US Treasury sanctions Intellexa and its enablers",
+      "description_en": "In March 2024 the US Treasury (OFAC) sanctioned the Intellexa consortium and subsidiaries such as Cytrox for the first time, in retaliation for the proliferation of Predator spyware. In September 2024 OFAC extended the sanctions to additional individuals and companies that enabled the consortium. The measures marked one of the toughest state actions against a commercial spyware vendor.",
+      "sources": [
+        "https://home.treasury.gov/news/press-releases/jy2155",
+        "https://home.treasury.gov/news/press-releases/jy2581"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.aljazeera.com/news/2023/9/24/leading-egyptian-opposition-presidential-candidate-targeted-by-spyware",

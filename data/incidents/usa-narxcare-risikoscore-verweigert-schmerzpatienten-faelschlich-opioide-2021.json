@@ -31,9 +31,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Protection from discrimination",
+    "Data protection",
+    "Human dignity",
+    "Due process"
+  ],
   "asm:actors": [
     {
       "name": "Bamboo Health (formerly Appriss Health)",
@@ -47,7 +65,76 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2015",
+      "phase": "infrastructure",
+      "title": "Bundesstaatliche PDMP-Datenbanken und der NarxCare-Score",
+      "description": "Fast alle US-Bundesstaaten betreiben Prescription Drug Monitoring Programs (PDMP), in denen jede Abgabe kontrollierter Substanzen erfasst wird. Auf dieser Datenbasis baut der NarxCare-Algorithmus auf, der Patienten einen Risiko-Score von 000 bis 999 zuweist. Das zugrunde liegende Patent stammt aus einer Anmeldung von 2011 und ging bei der Verlängerung 2015 an Appriss (später Bamboo Health) über. Der Score-Mechanismus blieb proprietär und wurde nie extern oder von Fachgutachtern überprüft.",
+      "title_de": "Bundesstaatliche PDMP-Datenbanken und der NarxCare-Score",
+      "description_de": "Fast alle US-Bundesstaaten betreiben Prescription Drug Monitoring Programs (PDMP), in denen jede Abgabe kontrollierter Substanzen erfasst wird. Auf dieser Datenbasis baut der NarxCare-Algorithmus auf, der Patienten einen Risiko-Score von 000 bis 999 zuweist. Das zugrunde liegende Patent stammt aus einer Anmeldung von 2011 und ging bei der Verlängerung 2015 an Appriss (später Bamboo Health) über. Der Score-Mechanismus blieb proprietär und wurde nie extern oder von Fachgutachtern überprüft.",
+      "title_en": "State PDMP databases and the NarxCare score",
+      "description_en": "Nearly all US states run Prescription Drug Monitoring Programs (PDMPs) that record every dispensing of a controlled substance. The NarxCare algorithm draws on this data to assign patients a risk score from 000 to 999. Its underlying patent originated in a 2011 filing and was transferred to Appriss (later Bamboo Health) when renewed in 2015. The scoring mechanism remained proprietary and was never subjected to outside or peer review.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Prescription_monitoring_program",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9869303/"
+      ]
+    },
+    {
+      "date": "2016-03",
+      "phase": "doctrine",
+      "title": "CDC-Opioid-Leitlinie und PDMP-Abfragepflichten",
+      "description": "Die CDC-Leitlinie zur Opioid-Verschreibung von 2016 setzte enge Dosis-Schwellen (Vorsicht ab 50, Vermeidung ab 90 MME/Tag) und empfahl, vor Verschreibungen die PDMP-Datenbank abzufragen. Die meisten Bundesstaaten machten diese Abfrage gesetzlich verpflichtend. Damit wurde der algorithmische NarxCare-Score faktisch zum Standard-Entscheidungsinstrument für Ärzte und Apotheken, obwohl er nie als Diagnose-Werkzeug validiert war.",
+      "title_de": "CDC-Opioid-Leitlinie und PDMP-Abfragepflichten",
+      "description_de": "Die CDC-Leitlinie zur Opioid-Verschreibung von 2016 setzte enge Dosis-Schwellen (Vorsicht ab 50, Vermeidung ab 90 MME/Tag) und empfahl, vor Verschreibungen die PDMP-Datenbank abzufragen. Die meisten Bundesstaaten machten diese Abfrage gesetzlich verpflichtend. Damit wurde der algorithmische NarxCare-Score faktisch zum Standard-Entscheidungsinstrument für Ärzte und Apotheken, obwohl er nie als Diagnose-Werkzeug validiert war.",
+      "title_en": "CDC opioid guideline and mandatory PDMP checks",
+      "description_en": "The 2016 CDC opioid-prescribing guideline set tight dose thresholds (caution above 50, avoidance above 90 MME/day) and recommended querying the PDMP before prescribing. Most states made this query legally mandatory. As a result the algorithmic NarxCare score became a de facto standard decision tool for doctors and pharmacies, even though it had never been validated as a diagnostic instrument.",
+      "sources": [
+        "https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm",
+        "https://www.aafp.org/pubs/afp/issues/2020/0415/p458.html"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "event",
+      "title": "Wired-Recherche deckt fälschliche Hochrisiko-Markierungen auf",
+      "description": "Eine Recherche von Maia Szalavitz in Wired (August 2021) dokumentierte, dass NarxCare Patienten fälschlich als Drogenmissbraucher markiert und ihnen daraufhin Schmerzmittel verweigert wird. Eine Frau erhielt einen hohen Score, weil ihre Hunde unter ihrem Namen Schmerzmittel verschrieben bekommen hatten. Forschende belegten eine disparate Wirkung gegen Frauen und People of Color mit komplexen Krankengeschichten.",
+      "title_de": "Wired-Recherche deckt fälschliche Hochrisiko-Markierungen auf",
+      "description_de": "Eine Recherche von Maia Szalavitz in Wired (August 2021) dokumentierte, dass NarxCare Patienten fälschlich als Drogenmissbraucher markiert und ihnen daraufhin Schmerzmittel verweigert wird. Eine Frau erhielt einen hohen Score, weil ihre Hunde unter ihrem Namen Schmerzmittel verschrieben bekommen hatten. Forschende belegten eine disparate Wirkung gegen Frauen und People of Color mit komplexen Krankengeschichten.",
+      "title_en": "Wired investigation exposes wrongful high-risk flags",
+      "description_en": "An August 2021 investigation by Maia Szalavitz in Wired documented that NarxCare wrongly flags patients as drug abusers, after which they are denied pain medication. One woman received a high score because her dogs had been prescribed pain meds under her name. Researchers showed a disparate impact on women and people of colour with complex medical histories.",
+      "sources": [
+        "https://www.techmeme.com/210812/p36"
+      ]
+    },
+    {
+      "date": "2023-06",
+      "phase": "consequences",
+      "title": "Fachzeitschrift fordert bessere Validierung der Risiko-Algorithmen",
+      "description": "Im Journal of the American Medical Informatics Association (JAMIA) forderten Fachleute 2023 eine bessere Validierung von Opioid-Risiko-Algorithmen. Die einzige veröffentlichte Validierungsstudie ergab eine Falsch-Positiv-Rate von rund 17 Prozent und eine Falsch-Negativ-Rate von rund 13 Prozent; ein Zusammenhang der Scores mit relevanten klinischen Ergebnissen war nie belegt worden. Kritiker bemängelten, dass die Score-Formel geheim bleibt.",
+      "title_de": "Fachzeitschrift fordert bessere Validierung der Risiko-Algorithmen",
+      "description_de": "Im Journal of the American Medical Informatics Association (JAMIA) forderten Fachleute 2023 eine bessere Validierung von Opioid-Risiko-Algorithmen. Die einzige veröffentlichte Validierungsstudie ergab eine Falsch-Positiv-Rate von rund 17 Prozent und eine Falsch-Negativ-Rate von rund 13 Prozent; ein Zusammenhang der Scores mit relevanten klinischen Ergebnissen war nie belegt worden. Kritiker bemängelten, dass die Score-Formel geheim bleibt.",
+      "title_en": "Medical journal calls for better validation of risk algorithms",
+      "description_en": "In 2023 experts writing in the Journal of the American Medical Informatics Association (JAMIA) called for better validation of opioid overdose risk algorithms. The only published validation study found a false-positive rate of about 17 percent and a false-negative rate of about 13 percent, and no link between the scores and relevant clinical outcomes had ever been demonstrated. Critics objected that the scoring formula remains secret.",
+      "sources": [
+        "https://academic.oup.com/jamia/article/30/10/1741/7222347",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11043299/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Petition fordert FDA-Marktrücknahme von NarxCare",
+      "description": "2023 verlangte eine Bürger-Petition von der US-Arzneimittelbehörde FDA, NarxCare vom Markt zu nehmen, da das Werkzeug als nicht validiertes, unreguliertes klinisches Entscheidungshilfesystem Patienten mit komplexen Schmerzleiden schädige. Ärzte und Patientenvertreter argumentierten, dass unversicherte und behinderte Menschen sowie Patienten mit Begleiterkrankungen besonders betroffen seien.",
+      "title_de": "Petition fordert FDA-Marktrücknahme von NarxCare",
+      "description_de": "2023 verlangte eine Bürger-Petition von der US-Arzneimittelbehörde FDA, NarxCare vom Markt zu nehmen, da das Werkzeug als nicht validiertes, unreguliertes klinisches Entscheidungshilfesystem Patienten mit komplexen Schmerzleiden schädige. Ärzte und Patientenvertreter argumentierten, dass unversicherte und behinderte Menschen sowie Patienten mit Begleiterkrankungen besonders betroffen seien.",
+      "title_en": "Petition urges FDA to pull NarxCare from the market",
+      "description_en": "In 2023 a citizen petition asked the US Food and Drug Administration to take NarxCare off the market, arguing that as an unvalidated, unregulated clinical decision-support tool it harms patients with complex pain conditions. Clinicians and patient advocates argued that uninsured and disabled people, and patients with co-morbidities, are especially affected.",
+      "sources": [
+        "https://www.painnewsnetwork.org/stories/2023/4/28/citizens-petition-calls-on-fda-to-take-narxcare-off-the-market-nbsp"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.techmeme.com/210812/p36",

@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Recht auf Leben",
+    "Patientensicherheit",
+    "Recht auf Transparenz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Recht auf Leben",
+    "Patientensicherheit",
+    "Recht auf Transparenz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Right to life",
+    "Patient safety",
+    "Right to transparency",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Epic Systems Corporation",
@@ -39,7 +57,74 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Epic startet sein proprietäres Sepsis-Vorhersagemodell in der marktführenden Krankenhaus-Software",
+      "description": "Epic Systems führte 2017 das Epic Sepsis Model (ESM) ein, ein in seine elektronische Patientenakte eingebettetes Vorhersagemodell. Es errechnet bei stationären Patienten etwa alle 20 Minuten automatisch einen Sepsis-Risikowert. Da Epic die in den USA dominierende Krankenhaussoftware betreibt, wurde das Modell binnen weniger Jahre an hunderten Kliniken aktiv.",
+      "title_de": "Epic startet sein proprietäres Sepsis-Vorhersagemodell in der marktführenden Krankenhaus-Software",
+      "description_de": "Epic Systems führte 2017 das Epic Sepsis Model (ESM) ein, ein in seine elektronische Patientenakte eingebettetes Vorhersagemodell. Es errechnet bei stationären Patienten etwa alle 20 Minuten automatisch einen Sepsis-Risikowert. Da Epic die in den USA dominierende Krankenhaussoftware betreibt, wurde das Modell binnen weniger Jahre an hunderten Kliniken aktiv.",
+      "title_en": "Epic launches its proprietary sepsis prediction model inside the market-leading hospital software",
+      "description_en": "In 2017, Epic Systems introduced the Epic Sepsis Model (ESM), a prediction model embedded in its electronic health record. It automatically computes a sepsis risk score for hospitalized patients roughly every 20 minutes. Because Epic runs the dominant US hospital software, the model became active at hundreds of hospitals within a few years.",
+      "sources": [
+        "https://www.healthcareitnews.com/news/ehr-based-sepsis-detection-epic-and-cerner-have-different-approaches"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Modell als Geschäftsgeheimnis behandelt, beworbene Genauigkeit ohne unabhängige Prüfung",
+      "description": "Epic entwickelte das Modell auf Basis von rund 500.000 Patientenfällen und etwa 80 Variablen, behandelte es jedoch als proprietäres Geschäftsgeheimnis. Der Anbieter bewarb eine Genauigkeit von 76 bis 83 Prozent, veröffentlichte aber keine peer-reviewten Wirksamkeitsstudien. Diese Geheimhaltung verhinderte, dass externe Forschende die Leistung prüfen konnten, bevor das Modell breit eingesetzt wurde.",
+      "title_de": "Modell als Geschäftsgeheimnis behandelt, beworbene Genauigkeit ohne unabhängige Prüfung",
+      "description_de": "Epic entwickelte das Modell auf Basis von rund 500.000 Patientenfällen und etwa 80 Variablen, behandelte es jedoch als proprietäres Geschäftsgeheimnis. Der Anbieter bewarb eine Genauigkeit von 76 bis 83 Prozent, veröffentlichte aber keine peer-reviewten Wirksamkeitsstudien. Diese Geheimhaltung verhinderte, dass externe Forschende die Leistung prüfen konnten, bevor das Modell breit eingesetzt wurde.",
+      "title_en": "Model treated as a trade secret, advertised accuracy without independent scrutiny",
+      "description_en": "Epic developed the model using about 500,000 patient encounters and roughly 80 variables, but treated it as a proprietary trade secret. The vendor advertised accuracy of 76 to 83 percent yet published no peer-reviewed efficacy studies. This secrecy prevented external researchers from assessing performance before the model was deployed widely.",
+      "sources": [
+        "https://ethicsunwrapped.utexas.edu/case-study/a-i-transparency-an-epic-deception"
+      ]
+    },
+    {
+      "date": "2021-06-21",
+      "phase": "event",
+      "title": "Externe Validierung in JAMA: Modell deutlich schlechter als beworben",
+      "description": "Am 21. Juni 2021 veröffentlichten Wong und Kollegen in JAMA Internal Medicine die erste große unabhängige Validierung des Modells. An über 27.000 Patienten der University of Michigan erreichte das ESM nur eine AUC von 0,63 statt der vom Anbieter angegebenen 0,76 bis 0,83. Das Modell übersah einen erheblichen Teil der Sepsisfälle und löste zugleich viele Fehlalarme aus.",
+      "title_de": "Externe Validierung in JAMA: Modell deutlich schlechter als beworben",
+      "description_de": "Am 21. Juni 2021 veröffentlichten Wong und Kollegen in JAMA Internal Medicine die erste große unabhängige Validierung des Modells. An über 27.000 Patienten der University of Michigan erreichte das ESM nur eine AUC von 0,63 statt der vom Anbieter angegebenen 0,76 bis 0,83. Das Modell übersah einen erheblichen Teil der Sepsisfälle und löste zugleich viele Fehlalarme aus.",
+      "title_en": "External validation in JAMA: model markedly worse than advertised",
+      "description_en": "On 21 June 2021, Wong and colleagues published the first large independent validation in JAMA Internal Medicine. Across more than 27,000 University of Michigan patients, the ESM achieved an AUC of only 0.63 rather than the vendor's claimed 0.76 to 0.83. The model missed a substantial share of sepsis cases while also generating many false alerts.",
+      "sources": [
+        "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307",
+        "https://www.healthcareitnews.com/news/research-suggests-epic-sepsis-model-lacking-predictive-power"
+      ]
+    },
+    {
+      "date": "2021-06-21",
+      "phase": "consequences",
+      "title": "Forschende warnen vor Patientensicherheitsrisiken und Alarmmüdigkeit",
+      "description": "Ein begleitendes JAMA-Editorial und weitere Fachstimmen warnten, dass ein an hunderten Kliniken eingesetztes Modell mit schwacher Trefferquote die Patientensicherheit gefährde. Kritisiert wurde besonders, dass die hohe Zahl an Fehlalarmen zu Alarmmüdigkeit beim Klinikpersonal führe und der Warnvorlauf in vielen Fällen praktisch null betrug. Der Fall wurde zum Lehrbeispiel für die Notwendigkeit externer Validierung kommerzieller Klinik-KI.",
+      "title_de": "Forschende warnen vor Patientensicherheitsrisiken und Alarmmüdigkeit",
+      "description_de": "Ein begleitendes JAMA-Editorial und weitere Fachstimmen warnten, dass ein an hunderten Kliniken eingesetztes Modell mit schwacher Trefferquote die Patientensicherheit gefährde. Kritisiert wurde besonders, dass die hohe Zahl an Fehlalarmen zu Alarmmüdigkeit beim Klinikpersonal führe und der Warnvorlauf in vielen Fällen praktisch null betrug. Der Fall wurde zum Lehrbeispiel für die Notwendigkeit externer Validierung kommerzieller Klinik-KI.",
+      "title_en": "Researchers warn of patient-safety risks and alert fatigue",
+      "description_en": "An accompanying JAMA editorial and other experts warned that a model deployed at hundreds of hospitals with a weak hit rate endangered patient safety. Critics highlighted that the high false-alert volume drove alert fatigue among clinical staff and that warning lead time was effectively zero in many cases. The case became a textbook example of why commercial clinical AI needs external validation.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/34152360/"
+      ]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Epic überarbeitet das Modell, FDA verschärft Leitlinien für klinische Entscheidungsunterstützung",
+      "description": "Als Reaktion auf die Kritik überarbeitete Epic sein Modell zur Version 2.0. Im September 2022 veröffentlichte die US-Arzneimittelbehörde FDA neue Leitlinien zur klinischen Entscheidungsunterstützung, die die Frage aufwarfen, ob eingebettete Vorhersagealgorithmen ohne FDA-Zulassung betrieben werden dürfen. Der Vorfall verstärkte die Forderung nach Transparenz und unabhängiger Prüfung kommerzieller Gesundheits-KI.",
+      "title_de": "Epic überarbeitet das Modell, FDA verschärft Leitlinien für klinische Entscheidungsunterstützung",
+      "description_de": "Als Reaktion auf die Kritik überarbeitete Epic sein Modell zur Version 2.0. Im September 2022 veröffentlichte die US-Arzneimittelbehörde FDA neue Leitlinien zur klinischen Entscheidungsunterstützung, die die Frage aufwarfen, ob eingebettete Vorhersagealgorithmen ohne FDA-Zulassung betrieben werden dürfen. Der Vorfall verstärkte die Forderung nach Transparenz und unabhängiger Prüfung kommerzieller Gesundheits-KI.",
+      "title_en": "Epic revises the model, FDA tightens clinical-decision-support guidance",
+      "description_en": "In response to the criticism, Epic revised its model to version 2.0. In September 2022 the US Food and Drug Administration released new clinical-decision-support guidance that raised the question of whether embedded prediction algorithms may operate without FDA clearance. The incident reinforced calls for transparency and independent scrutiny of commercial healthcare AI.",
+      "sources": [
+        "https://ambientclinical.com/2022/10/31/newly-released-fda-guidelines-sepsis-detection-means-hospitals/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://pubmed.ncbi.nlm.nih.gov/34152360/",
