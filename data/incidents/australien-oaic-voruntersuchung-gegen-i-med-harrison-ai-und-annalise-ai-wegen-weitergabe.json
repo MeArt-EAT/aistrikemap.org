@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz von Gesundheitsdaten",
+    "Recht auf informierte Einwilligung",
+    "Transparenz und informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz von Gesundheitsdaten",
+    "Recht auf informierte Einwilligung",
+    "Transparenz und informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Protection of health data",
+    "Right to informed consent",
+    "Transparency and informational self-determination"
+  ],
   "asm:actors": [
     {
       "name": "I-MED Radiology Network",
@@ -68,7 +86,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "I-MED liefert Annalise.ai medizinische Bilddaten zum KI-Training",
+      "description": "Zwischen 2020 und 2022 stellte das größte australische Radiologie-Netzwerk I-MED dem KI-Unternehmen Annalise.ai - einem damaligen Gemeinschaftsunternehmen von I-MED und Harrison.ai - sehr große Mengen an Patientendaten zur Verfügung. Übermittelt wurden Röntgenaufnahmen des Brustkorbs, CT-Bilder und zugehörige Befunde (später beziffert auf weniger als 30 Millionen Datensätze), um diagnostische KI-Modelle zu entwickeln und zu trainieren.",
+      "title_de": "I-MED liefert Annalise.ai medizinische Bilddaten zum KI-Training",
+      "description_de": "Zwischen 2020 und 2022 stellte das größte australische Radiologie-Netzwerk I-MED dem KI-Unternehmen Annalise.ai - einem damaligen Gemeinschaftsunternehmen von I-MED und Harrison.ai - sehr große Mengen an Patientendaten zur Verfügung. Übermittelt wurden Röntgenaufnahmen des Brustkorbs, CT-Bilder und zugehörige Befunde (später beziffert auf weniger als 30 Millionen Datensätze), um diagnostische KI-Modelle zu entwickeln und zu trainieren.",
+      "title_en": "I-MED supplies Annalise.ai with medical imaging data for AI training",
+      "description_en": "Between 2020 and 2022, Australia's largest radiology network I-MED provided very large volumes of patient data to the AI company Annalise.ai - then a joint venture between I-MED and Harrison.ai. Chest X-rays, CT images and related reports (later quantified at fewer than 30 million records) were transferred in order to develop and train diagnostic AI models.",
+      "sources": [
+        "https://www.corrs.com.au/insights/de-identified-data-ai-what-the-i-med-decision-means-for-privacy-compliance"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Weitergabe auf Grundlage von De-Identifikation statt Einwilligung",
+      "description": "Die Datenweitergabe stützte sich nicht auf eine ausdrückliche Einwilligung der Patient:innen, sondern auf die Annahme, dass die Daten ausreichend de-identifiziert seien und damit nicht mehr als personenbezogene Daten im Sinne des australischen Privacy Act gelten. Dieses Geschäftsmodell - Gesundheitsdaten als Trainingsgrundlage ohne explizite Zustimmung der Betroffenen - bildete die rechtliche und unternehmerische Begründung für den Datentransfer.",
+      "title_de": "Weitergabe auf Grundlage von De-Identifikation statt Einwilligung",
+      "description_de": "Die Datenweitergabe stützte sich nicht auf eine ausdrückliche Einwilligung der Patient:innen, sondern auf die Annahme, dass die Daten ausreichend de-identifiziert seien und damit nicht mehr als personenbezogene Daten im Sinne des australischen Privacy Act gelten. Dieses Geschäftsmodell - Gesundheitsdaten als Trainingsgrundlage ohne explizite Zustimmung der Betroffenen - bildete die rechtliche und unternehmerische Begründung für den Datentransfer.",
+      "title_en": "Sharing justified by de-identification rather than consent",
+      "description_en": "The data sharing did not rely on explicit patient consent but on the assumption that the data was sufficiently de-identified and therefore no longer personal information under Australia's Privacy Act. This business model - health data as a training basis without the explicit consent of those affected - formed the legal and commercial justification for the data transfer.",
+      "sources": [
+        "https://www.corrs.com.au/insights/de-identified-data-ai-what-the-i-med-decision-means-for-privacy-compliance"
+      ]
+    },
+    {
+      "date": "2024-09-20",
+      "phase": "event",
+      "title": "OAIC eröffnet Voruntersuchungen nach Medienberichten",
+      "description": "Am 20. September 2024 eröffnete die australische Datenschutzbehörde OAIC nach Medienberichten Voruntersuchungen gegen I-MED, Harrison.ai und Annalise.ai. Geprüft wurden Form und Inhalt der weitergegebenen Patientendaten, der Datenfluss sowie die Anonymisierungsschritte, um zu entscheiden, ob ein förmliches Verfahren nach dem Privacy Act eröffnet werden sollte.",
+      "title_de": "OAIC eröffnet Voruntersuchungen nach Medienberichten",
+      "description_de": "Am 20. September 2024 eröffnete die australische Datenschutzbehörde OAIC nach Medienberichten Voruntersuchungen gegen I-MED, Harrison.ai und Annalise.ai. Geprüft wurden Form und Inhalt der weitergegebenen Patientendaten, der Datenfluss sowie die Anonymisierungsschritte, um zu entscheiden, ob ein förmliches Verfahren nach dem Privacy Act eröffnet werden sollte.",
+      "title_en": "OAIC opens preliminary inquiries after media reports",
+      "description_en": "On 20 September 2024, Australia's privacy regulator OAIC opened preliminary inquiries into I-MED, Harrison.ai and Annalise.ai following media reports. It examined the form and content of the shared patient data, the data flow and the de-identification steps in order to decide whether to open a formal investigation under the Privacy Act.",
+      "sources": [
+        "https://www.capitalbrief.com/briefing/privacy-commissioner-to-examine-i-med-for-collecting-data-to-train-ai-597cbb2c-8870-4e09-85c1-73ae205fa178/"
+      ]
+    },
+    {
+      "date": "2025-04-07",
+      "phase": "consequences",
+      "title": "OAIC schließt Verfahren - Daten als ausreichend de-identifiziert eingestuft",
+      "description": "Am 7. April 2025 schloss die OAIC die Voruntersuchungen ohne weitere Maßnahmen. Sie stufte die geteilten Patientendaten als ausreichend de-identifiziert ein, sodass sie nicht mehr als personenbezogene Daten im Sinne des Privacy Act galten. In einer sehr kleinen Zahl von Fällen waren personenbezogene Daten unbeabsichtigt offengelegt worden; diese wertete die Behörde jedoch als geringfügige, angemessen behobene Vorfälle.",
+      "title_de": "OAIC schließt Verfahren - Daten als ausreichend de-identifiziert eingestuft",
+      "description_de": "Am 7. April 2025 schloss die OAIC die Voruntersuchungen ohne weitere Maßnahmen. Sie stufte die geteilten Patientendaten als ausreichend de-identifiziert ein, sodass sie nicht mehr als personenbezogene Daten im Sinne des Privacy Act galten. In einer sehr kleinen Zahl von Fällen waren personenbezogene Daten unbeabsichtigt offengelegt worden; diese wertete die Behörde jedoch als geringfügige, angemessen behobene Vorfälle.",
+      "title_en": "OAIC closes inquiry - data deemed sufficiently de-identified",
+      "description_en": "On 7 April 2025, the OAIC closed the preliminary inquiries with no further action. It deemed the shared patient data sufficiently de-identified so that it no longer counted as personal information under the Privacy Act. In a very small number of cases personal information had been unintentionally disclosed; the regulator treated these as minor incidents that had been appropriately addressed.",
+      "sources": [
+        "https://www.oaic.gov.au/news/media-centre/statement-on-closure-of-preliminary-inquiries-with-i-med,-harrison.ai-and-annalise.ai"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "phase": "consequences",
+      "title": "Fall wird zum Präzedenzfall für KI-Training mit Gesundheitsdaten",
+      "description": "Trotz der Verfahrenseinstellung wurde der Fall in der australischen Rechts- und Gesundheitsbranche breit diskutiert. Juristische Analysen werteten ihn als Präzedenzfall dafür, dass de-identifizierte Daten den Schutz des Privacy Act verlassen können - und betonten zugleich die offenen Grundsatzfragen zu Einwilligung, Transparenz und Patientenvertrauen beim KI-Training mit sensiblen Gesundheitsdaten.",
+      "title_de": "Fall wird zum Präzedenzfall für KI-Training mit Gesundheitsdaten",
+      "description_de": "Trotz der Verfahrenseinstellung wurde der Fall in der australischen Rechts- und Gesundheitsbranche breit diskutiert. Juristische Analysen werteten ihn als Präzedenzfall dafür, dass de-identifizierte Daten den Schutz des Privacy Act verlassen können - und betonten zugleich die offenen Grundsatzfragen zu Einwilligung, Transparenz und Patientenvertrauen beim KI-Training mit sensiblen Gesundheitsdaten.",
+      "title_en": "Case becomes a precedent for AI training on health data",
+      "description_en": "Despite the closure, the case was widely discussed in Australia's legal and health sectors. Legal analyses treated it as a precedent that de-identified data can fall outside the protection of the Privacy Act - while stressing the open fundamental questions of consent, transparency and patient trust when training AI on sensitive health data.",
+      "sources": [
+        "https://www.peteraclarke.com.au/2025/08/07/information-commissioner-completes-inquiries-into-i-med-harrison-ai-and-annalise-ai-regarding-allegations-of-sharing-personal-information-it-found-the-information-adequately-de-identified/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/Investigation-inquiry-reports/report-into-preliminary-inquiries-of-i-med",

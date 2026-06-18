@@ -31,9 +31,30 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz besonderer Datenkategorien",
+    "Recht auf informierte Einwilligung",
+    "Kinderrechte",
+    "Vertraulichkeit der Kommunikation"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz besonderer Datenkategorien",
+    "Recht auf informierte Einwilligung",
+    "Kinderrechte",
+    "Vertraulichkeit der Kommunikation"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection of special categories of data",
+    "Right to informed consent",
+    "Children's rights",
+    "Confidentiality of communications"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -55,7 +76,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-05",
+      "phase": "infrastructure",
+      "title": "Google Assistant und Google Home erfassen Sprachaufnahmen für die Spracherkennung",
+      "description": "Mit dem Start von Google Assistant und den Google-Home-Lautsprechern (ab Mai 2016) baute Google ein Sprachdaten-Ökosystem auf, in dem Geräte permanent auf das Aktivierungswort 'OK Google' lauschen. Zur Verbesserung der Spracherkennung wurde ein Teil der aufgezeichneten Audioschnipsel an menschliche Reviewer ausgelagert - darunter externe Subunternehmer in verschiedenen Sprachräumen, die die Aufnahmen transkribierten.",
+      "title_de": "Google Assistant und Google Home erfassen Sprachaufnahmen für die Spracherkennung",
+      "description_de": "Mit dem Start von Google Assistant und den Google-Home-Lautsprechern (ab Mai 2016) baute Google ein Sprachdaten-Ökosystem auf, in dem Geräte permanent auf das Aktivierungswort 'OK Google' lauschen. Zur Verbesserung der Spracherkennung wurde ein Teil der aufgezeichneten Audioschnipsel an menschliche Reviewer ausgelagert - darunter externe Subunternehmer in verschiedenen Sprachräumen, die die Aufnahmen transkribierten.",
+      "title_en": "Google Assistant and Google Home capture voice recordings for speech recognition",
+      "description_en": "With the launch of Google Assistant and the Google Home speakers (from May 2016), Google built a voice-data ecosystem in which devices constantly listen for the 'OK Google' wake word. To improve speech recognition, a portion of the recorded audio snippets was outsourced to human reviewers - including external contractors across language regions who transcribed the recordings.",
+      "sources": [
+        "https://voicebot.ai/2019/07/10/google-contractors-listen-to-belgian-and-dutch-voice-assistant-conversations/"
+      ]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Menschliche Auswertung der Aufnahmen ohne klare Nutzer-Einwilligung",
+      "description": "Googles Geschäftsmodell sah vor, einen Teil der Sprachaufnahmen durch menschliche Sprach-Reviewer transkribieren zu lassen, um die KI-Modelle zu trainieren. Die Nutzer:innen wurden über das Ausmaß dieser menschlichen Auswertung nicht transparent informiert; eine ausdrückliche, gesonderte Einwilligung in das Mithören durch externe Subunternehmer lag nicht vor. Diese Praxis bildete die Grundlage für den späteren Vorfall.",
+      "title_de": "Menschliche Auswertung der Aufnahmen ohne klare Nutzer-Einwilligung",
+      "description_de": "Googles Geschäftsmodell sah vor, einen Teil der Sprachaufnahmen durch menschliche Sprach-Reviewer transkribieren zu lassen, um die KI-Modelle zu trainieren. Die Nutzer:innen wurden über das Ausmaß dieser menschlichen Auswertung nicht transparent informiert; eine ausdrückliche, gesonderte Einwilligung in das Mithören durch externe Subunternehmer lag nicht vor. Diese Praxis bildete die Grundlage für den späteren Vorfall.",
+      "title_en": "Human review of recordings without clear user consent",
+      "description_en": "Google's business model had part of the voice recordings transcribed by human speech reviewers to train the AI models. Users were not transparently informed about the extent of this human review, and no explicit, separate consent to being listened to by external contractors existed. This practice formed the basis for the later incident.",
+      "sources": [
+        "https://abcnews.go.com/Business/google-workers-listen-google-assistant-recordings-company-acknowledges/story?id=64291108"
+      ]
+    },
+    {
+      "date": "2019-07-10",
+      "phase": "event",
+      "title": "VRT NWS enthüllt Mithören privater Aufnahmen durch Google-Subunternehmer",
+      "description": "Am 10. Juli 2019 berichtete der belgische öffentlich-rechtliche Sender VRT NWS, dass ein Google-Subunternehmer Reporter:innen über 1.000 Sprachaufnahmen aus Google Assistant und Google Home zugespielt hatte. Rund 153 Aufnahmen waren versehentlich ohne Aktivierungswort entstanden und enthielten teils hochsensible Inhalte - medizinische Gespräche, Adressen und Gespräche mit Kindern. Anhand der Aufnahmen ließen sich einzelne Personen identifizieren.",
+      "title_de": "VRT NWS enthüllt Mithören privater Aufnahmen durch Google-Subunternehmer",
+      "description_de": "Am 10. Juli 2019 berichtete der belgische öffentlich-rechtliche Sender VRT NWS, dass ein Google-Subunternehmer Reporter:innen über 1.000 Sprachaufnahmen aus Google Assistant und Google Home zugespielt hatte. Rund 153 Aufnahmen waren versehentlich ohne Aktivierungswort entstanden und enthielten teils hochsensible Inhalte - medizinische Gespräche, Adressen und Gespräche mit Kindern. Anhand der Aufnahmen ließen sich einzelne Personen identifizieren.",
+      "title_en": "VRT NWS reveals Google subcontractors listening to private recordings",
+      "description_en": "On 10 July 2019, Belgian public broadcaster VRT NWS reported that a Google contractor had leaked more than 1,000 Google Assistant and Google Home voice recordings to journalists. About 153 recordings had been captured accidentally without the wake word and contained highly sensitive content - medical conversations, addresses and conversations with children. Individuals could be identified from the recordings.",
+      "sources": [
+        "https://www.vrt.be/vrtnws/en/2019/07/10/google-employees-are-eavesdropping-even-in-flemish-living-rooms/"
+      ]
+    },
+    {
+      "date": "2019-07-26",
+      "phase": "consequences",
+      "title": "Google setzt menschliche Auswertung der Sprachaufnahmen in der EU aus",
+      "description": "Als Reaktion auf den Bericht setzte Google das manuelle Mithören von Google-Assistant-Aufnahmen in ganz Europa aus. Gegenüber der irischen Datenschutzbehörde erklärte das Unternehmen am 26. Juli 2019, es habe die Praxis bereits am 10. Juli, dem Tag des VRT-Berichts, gestoppt. Die irische Data Protection Commission leitete eine Prüfung nach der DSGVO ein.",
+      "title_de": "Google setzt menschliche Auswertung der Sprachaufnahmen in der EU aus",
+      "description_de": "Als Reaktion auf den Bericht setzte Google das manuelle Mithören von Google-Assistant-Aufnahmen in ganz Europa aus. Gegenüber der irischen Datenschutzbehörde erklärte das Unternehmen am 26. Juli 2019, es habe die Praxis bereits am 10. Juli, dem Tag des VRT-Berichts, gestoppt. Die irische Data Protection Commission leitete eine Prüfung nach der DSGVO ein.",
+      "title_en": "Google suspends human review of voice recordings in the EU",
+      "description_en": "In response to the report, Google suspended manual review of Google Assistant recordings across Europe. The company told Ireland's data protection authority on 26 July 2019 that it had already stopped the practice on 10 July, the day of the VRT report. Ireland's Data Protection Commission opened a review under the GDPR.",
+      "sources": [
+        "https://9to5google.com/2019/08/01/google-to-cease-listening-to-assistant-recordings-in-eu-pending-investigation/"
+      ]
+    },
+    {
+      "date": "2019-08-01",
+      "phase": "consequences",
+      "title": "Hamburger Datenschutzbehörde startet Eilverfahren nach Artikel 66 DSGVO",
+      "description": "Anfang August 2019 kündigte die Hamburger Datenschutzbehörde ein Eilverfahren nach Artikel 66 DSGVO an, um die menschliche Auswertung der Google-Sprachaufnahmen zu stoppen. Im September 2019 veröffentlichte die Behörde Leitlinien, die eine ausdrückliche Einwilligung als Rechtsgrundlage für das Abhören durch Beschäftigte und Subunternehmer verlangen. Der Fall trug maßgeblich dazu bei, dass auch Apple und Amazon ihre Mithör-Programme überarbeiteten.",
+      "title_de": "Hamburger Datenschutzbehörde startet Eilverfahren nach Artikel 66 DSGVO",
+      "description_de": "Anfang August 2019 kündigte die Hamburger Datenschutzbehörde ein Eilverfahren nach Artikel 66 DSGVO an, um die menschliche Auswertung der Google-Sprachaufnahmen zu stoppen. Im September 2019 veröffentlichte die Behörde Leitlinien, die eine ausdrückliche Einwilligung als Rechtsgrundlage für das Abhören durch Beschäftigte und Subunternehmer verlangen. Der Fall trug maßgeblich dazu bei, dass auch Apple und Amazon ihre Mithör-Programme überarbeiteten.",
+      "title_en": "Hamburg data protection authority launches Article 66 GDPR urgency procedure",
+      "description_en": "In early August 2019, the Hamburg data protection authority announced an Article 66 GDPR urgency procedure to halt the human review of Google's voice recordings. In September 2019 the authority issued guidelines requiring explicit consent as the legal basis for review by employees and contractors. The case significantly contributed to Apple and Amazon overhauling their own review programmes.",
+      "sources": [
+        "https://techcrunch.com/2019/08/02/google-ordered-to-halt-human-review-of-voice-ai-recordings-over-privacy-risks/",
+        "https://www.cpomagazine.com/data-privacy/amazon-google-apple-stopping-human-review-of-recordings-from-voice-assistants/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.vrt.be/vrtnws/en/2019/07/10/google-employees-are-eavesdropping-even-in-flemish-living-rooms/",
