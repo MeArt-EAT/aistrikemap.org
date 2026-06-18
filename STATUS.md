@@ -5,12 +5,12 @@
 
 ---
 
-## ⏱️ STAND: 2026-06-06
+## ⏱️ STAND: 2026-06-18
 
 | | |
 |---|---|
 | 📊 **Bestand** | **2457 Incidents** · 977 mit Reverse-TL (39.8 %) · 0 Audit-Findings · Lite-Bundle 1.6 MB gzip |
-| 🔢 **Übergabe-Nr** | **#5** (2026-06-06) |
+| 🔢 **Übergabe-Nr** | **#6** (2026-06-18) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
 | ✅ **Zuletzt fertig** | **Frontend-Performance-Refactor**: Map lädt jetzt `all-incidents-lite.json` (ohne TL/Quellen, 3.9→1.6 MB gzip, −59 %), Detail-Panel lazy-lädt Einzeldatei beim Klick. Cache-Busting `?v=Date.now()` entfernt (GH-Pages-ETag greift). Länderzähler-Bug 708→**135** gefixt. Verifiziert im Preview, live. |
 | ➡️ **Nächster Schritt** | **Sev-3-Block** (953 ohne TL, der grosse Rest) — skaliert jetzt sauber, da TL nur noch lazy/Einzeldatei · ODER AIAAIC Batch D · ODER Dedup-Backlog |
@@ -65,6 +65,7 @@ Briefings: `data/incident-candidates/_enrichment-briefing.md` (Abschnitt 1b
 Datums-Verifikation), `_timeline-briefing.md`.
 
 ## 📜 Übergabe-Historie (neueste zuerst)
+- **#6** 2026-06-18 → `docs/planung/übergabe-2026-06-18-tl-offensive-und-frontend.md` — TL 11.9→39.8 % (Sev-5+Sev-4 zu 100 %), Brasilien-Dedup, Frontend-Lite-Bundle
 - **#5** 2026-06-06 → `docs/planung/übergabe-2026-06-06-batch-c.md` — Batch C, 2154→2458
 - **#4** 2026-06-06 → `docs/planung/übergabe-2026-06-06-batch-b.md` — Batch B, 1304→2154
 - **#3** 2026-06-03 → `docs/planung/übergabe-2026-06-03-aiaaic-import-und-quick-wins.md` — Batch A + Quick Wins, 666→1304
