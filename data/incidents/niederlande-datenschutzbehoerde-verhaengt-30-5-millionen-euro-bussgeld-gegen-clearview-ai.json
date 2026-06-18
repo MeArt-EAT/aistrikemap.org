@@ -31,9 +31,27 @@
     "facial-recognition",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Schutz personenbezogener Daten",
+    "Recht auf informationelle Selbstbestimmung",
+    "Schutz biometrischer Daten",
+    "Recht auf Auskunft"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Schutz personenbezogener Daten",
+    "Recht auf informationelle Selbstbestimmung",
+    "Schutz biometrischer Daten",
+    "Recht auf Auskunft"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Protection of personal data",
+    "Right to informational self-determination",
+    "Protection of biometric data",
+    "Right to access personal data"
+  ],
   "asm:actors": [
     {
       "name": "Clearview AI",
@@ -52,7 +70,62 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-2020",
+      "phase": "infrastructure",
+      "title": "Clearview AI baut Gesichts-Datenbank durch Massen-Scraping auf",
+      "description": "Clearview AI, gegründet 2017 vom australischen Unternehmer Hoan Ton-That, scrapt automatisiert Bilder aus dem öffentlich zugänglichen Internet: Social-Media-Profile, News-Sites, Foren. Bis 2024 wächst die Datenbank auf über 30 Milliarden Fotos. Aus jedem Bild wird ein eindeutiger biometrischer Vektor extrahiert und mit Metadaten verknüpft. Das Geschäftsmodell: Strafverfolgungsbehörden weltweit zahlen für Suchabfragen, die ein Foto mit allen passenden Treffern in der Datenbank verbinden. Plattformbetreiber wie Facebook, Google und Twitter widersprechen dem Scraping als ToS-Verletzung.",
+      "title_de": "Clearview AI baut Gesichts-Datenbank durch Massen-Scraping auf",
+      "description_de": "Clearview AI, gegründet 2017 vom australischen Unternehmer Hoan Ton-That, scrapt automatisiert Bilder aus dem öffentlich zugänglichen Internet: Social-Media-Profile, News-Sites, Foren. Bis 2024 wächst die Datenbank auf über 30 Milliarden Fotos. Aus jedem Bild wird ein eindeutiger biometrischer Vektor extrahiert und mit Metadaten verknüpft. Das Geschäftsmodell: Strafverfolgungsbehörden weltweit zahlen für Suchabfragen, die ein Foto mit allen passenden Treffern in der Datenbank verbinden. Plattformbetreiber wie Facebook, Google und Twitter widersprechen dem Scraping als ToS-Verletzung.",
+      "title_en": "Clearview AI builds face database through mass scraping",
+      "description_en": "Clearview AI, founded in 2017 by Australian entrepreneur Hoan Ton-That, automatically scrapes images from the publicly accessible internet: social-media profiles, news sites, forums. By 2024 the database grows to more than 30 billion photos. Each image is converted into a unique biometric vector and linked to metadata. The business model: law-enforcement agencies worldwide pay for search queries that link a photo to all matching hits in the database. Platform operators including Facebook, Google and Twitter object to the scraping as a terms-of-service violation.",
+      "sources": [
+        "https://www.autoriteitpersoonsgegevens.nl/en/current/dutch-dpa-imposes-a-fine-on-clearview-because-of-illegal-data-collection-for-facial-recognition",
+        "https://techcrunch.com/2024/09/03/clearview-ai-hit-with-its-largest-gdpr-fine-yet-as-dutch-regulator-considers-holding-execs-personally-liable/"
+      ]
+    },
+    {
+      "date": "2021-2023",
+      "phase": "doctrine",
+      "title": "Europäische DSGVO-Behörden klassifizieren Clearview als illegal",
+      "description": "Mehrere europäische Datenschutzbehörden stellen fest, dass Clearview gegen die DSGVO verstößt: Italien (Garante, 20 Mio. Euro), Frankreich (CNIL, 20 Mio. Euro), Griechenland und Großbritannien (ICO, zunächst 7,5 Mio. Pfund). Gemeinsamer rechtlicher Befund: Clearview verarbeitet biometrische Daten (Art. 9 DSGVO) ohne Rechtsgrundlage (Art. 6 DSGVO), informiert Betroffene nicht (Art. 14 DSGVO) und verweigert Auskunftsrechte. Die Bußgelder bleiben jedoch weitgehend uneintreibbar, da Clearview keine Niederlassung in der EU hat. Die Doktrin verfestigt sich: Web-Scraping zu biometrischen Zwecken ist in der EU rechtswidrig.",
+      "title_de": "Europäische DSGVO-Behörden klassifizieren Clearview als illegal",
+      "description_de": "Mehrere europäische Datenschutzbehörden stellen fest, dass Clearview gegen die DSGVO verstößt: Italien (Garante, 20 Mio. Euro), Frankreich (CNIL, 20 Mio. Euro), Griechenland und Großbritannien (ICO, zunächst 7,5 Mio. Pfund). Gemeinsamer rechtlicher Befund: Clearview verarbeitet biometrische Daten (Art. 9 DSGVO) ohne Rechtsgrundlage (Art. 6 DSGVO), informiert Betroffene nicht (Art. 14 DSGVO) und verweigert Auskunftsrechte. Die Bußgelder bleiben jedoch weitgehend uneintreibbar, da Clearview keine Niederlassung in der EU hat. Die Doktrin verfestigt sich: Web-Scraping zu biometrischen Zwecken ist in der EU rechtswidrig.",
+      "title_en": "European GDPR regulators classify Clearview as illegal",
+      "description_en": "Several European data-protection authorities find that Clearview violates the GDPR: Italy (Garante, 20 million euros), France (CNIL, 20 million euros), Greece and the United Kingdom (ICO, initially 7.5 million pounds). Common legal finding: Clearview processes biometric data (Art. 9 GDPR) without a legal basis (Art. 6 GDPR), fails to inform data subjects (Art. 14 GDPR) and refuses access requests. However the fines remain largely unenforceable because Clearview has no EU establishment. The doctrine consolidates: web scraping for biometric purposes is unlawful in the EU.",
+      "sources": [
+        "https://www.edpb.europa.eu/news/national-news/2024/dutch-supervisory-authority-imposes-fine-clearview-because-illegal-data_en"
+      ]
+    },
+    {
+      "date": "2024-09-03",
+      "phase": "event",
+      "title": "Dutch DPA verhängt 30,5 Mio. Euro Bußgeld plus Zwangsgelder",
+      "description": "Die niederländische Datenschutzbehörde Autoriteit Persoonsgegevens verhängt mit 30,5 Millionen Euro das bisher höchste DSGVO-Bußgeld gegen Clearview AI. Sie stellt Verstöße gegen Art. 5(1)(a), 6(1), 9(1) und 14 DSGVO fest und ordnet vier Anordnungen mit Zwangsgeldern von bis zu 5,1 Millionen Euro bei fortdauerndem Verstoß an. Erstmals prüft eine EU-Behörde zusätzlich die persönliche Haftung der Clearview-Geschäftsleitung wegen wissentlich fortgesetzter Rechtsverstöße. Die Behörde warnt explizit niederländische Unternehmen vor der Nutzung von Clearview-Diensten.",
+      "title_de": "Dutch DPA verhängt 30,5 Mio. Euro Bußgeld plus Zwangsgelder",
+      "description_de": "Die niederländische Datenschutzbehörde Autoriteit Persoonsgegevens verhängt mit 30,5 Millionen Euro das bisher höchste DSGVO-Bußgeld gegen Clearview AI. Sie stellt Verstöße gegen Art. 5(1)(a), 6(1), 9(1) und 14 DSGVO fest und ordnet vier Anordnungen mit Zwangsgeldern von bis zu 5,1 Millionen Euro bei fortdauerndem Verstoß an. Erstmals prüft eine EU-Behörde zusätzlich die persönliche Haftung der Clearview-Geschäftsleitung wegen wissentlich fortgesetzter Rechtsverstöße. Die Behörde warnt explizit niederländische Unternehmen vor der Nutzung von Clearview-Diensten.",
+      "title_en": "Dutch DPA imposes 30.5 million euro fine plus penalty orders",
+      "description_en": "The Dutch Data Protection Authority (Autoriteit Persoonsgegevens) imposes the highest GDPR fine against Clearview AI to date, at 30.5 million euros. It finds violations of Articles 5(1)(a), 6(1), 9(1) and 14 GDPR and issues four enforcement orders with penalty payments of up to 5.1 million euros for continued non-compliance. For the first time an EU regulator also considers holding Clearview's management personally liable for knowingly continuing the violations. The authority explicitly warns Dutch companies against using Clearview services.",
+      "sources": [
+        "https://www.autoriteitpersoonsgegevens.nl/en/current/dutch-dpa-imposes-a-fine-on-clearview-because-of-illegal-data-collection-for-facial-recognition"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Präzedenz für Manager-Haftung und Druck auf Geschäftsmodell",
+      "description": "Das niederländische Bußgeld setzt ein Signal weit über die Niederlande hinaus: Die Drohung persönlicher Haftung der Geschäftsleitung bricht mit der bisherigen Strategie europäischer Behörden, die nur das Unternehmen ins Visier nahm. Clearview kündigt an, das Bußgeld nicht zu zahlen und beruft sich darauf, in der EU keine Geschäftstätigkeit zu unterhalten. Datenschutz-NGOs wie noyb und Privacy International nutzen das Verfahren als Hebel für weitere Beschwerden gegen Scraping-basierte KI-Anbieter. Die Diskussion um KI-Trainingsdaten aus dem Web verschiebt sich endgültig in den regulatorischen Mainstream.",
+      "title_de": "Präzedenz für Manager-Haftung und Druck auf Geschäftsmodell",
+      "description_de": "Das niederländische Bußgeld setzt ein Signal weit über die Niederlande hinaus: Die Drohung persönlicher Haftung der Geschäftsleitung bricht mit der bisherigen Strategie europäischer Behörden, die nur das Unternehmen ins Visier nahm. Clearview kündigt an, das Bußgeld nicht zu zahlen und beruft sich darauf, in der EU keine Geschäftstätigkeit zu unterhalten. Datenschutz-NGOs wie noyb und Privacy International nutzen das Verfahren als Hebel für weitere Beschwerden gegen Scraping-basierte KI-Anbieter. Die Diskussion um KI-Trainingsdaten aus dem Web verschiebt sich endgültig in den regulatorischen Mainstream.",
+      "title_en": "Precedent for executive liability and pressure on the business model",
+      "description_en": "The Dutch fine sends a signal well beyond the Netherlands: the threat of personal liability for management breaks with the previous strategy of European regulators that only targeted the company. Clearview announces it will not pay the fine, arguing it has no business activity in the EU. Data-protection NGOs such as noyb and Privacy International use the case as leverage for further complaints against scraping-based AI providers. The debate over AI training data from the web shifts decisively into the regulatory mainstream.",
+      "sources": [
+        "https://techcrunch.com/2024/09/03/clearview-ai-hit-with-its-largest-gdpr-fine-yet-as-dutch-regulator-considers-holding-execs-personally-liable/",
+        "https://www.loc.gov/item/global-legal-monitor/2024-10-16/netherlands-face-recognition-company-clearview-ai-fined-for-violating-eus-general-data-protection-regulation/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.autoriteitpersoonsgegevens.nl/en/current/dutch-dpa-imposes-a-fine-on-clearview-because-of-illegal-data-collection-for-facial-recognition",

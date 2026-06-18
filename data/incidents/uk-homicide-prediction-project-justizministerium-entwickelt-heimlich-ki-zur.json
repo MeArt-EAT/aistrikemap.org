@@ -32,9 +32,30 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Diskriminierung",
+    "Unschuldsvermutung",
+    "Faires Verfahren",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Diskriminierung",
+    "Unschuldsvermutung",
+    "Faires Verfahren",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Protection from discrimination",
+    "Presumption of innocence",
+    "Right to a fair trial",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "UK Ministry of Justice",
@@ -58,7 +79,70 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2001",
+      "phase": "infrastructure",
+      "title": "OASys: britisches Justizministerium führt algorithmische Rückfallprognose ein",
+      "description": "Das Offender Assessment System (OASys) wird 2001 landesweit in England und Wales eingeführt. Es kombiniert strukturierte Bewertungen durch Bewährungshilfe und einen statistischen Risiko-Score (OGRS) und übernimmt Aufgaben menschlicher Bewährungshelfer:innen. MoJ-eigene Validierungen zeigen später, dass die Prognosen für schwarze und gemischt-ethnische Personen schlechter funktionieren als für weiße.",
+      "title_de": "OASys: britisches Justizministerium führt algorithmische Rückfallprognose ein",
+      "description_de": "Das Offender Assessment System (OASys) wird 2001 landesweit in England und Wales eingeführt. Es kombiniert strukturierte Bewertungen durch Bewährungshilfe und einen statistischen Risiko-Score (OGRS) und übernimmt Aufgaben menschlicher Bewährungshelfer:innen. MoJ-eigene Validierungen zeigen später, dass die Prognosen für schwarze und gemischt-ethnische Personen schlechter funktionieren als für weiße.",
+      "title_en": "OASys: UK Ministry of Justice introduces algorithmic reoffending prediction",
+      "description_en": "The Offender Assessment System (OASys) is rolled out across England and Wales in 2001. It combines structured probation assessments with a statistical risk score (OGRS) and takes over tasks from human probation officers. MoJ's own validation studies later show predictive accuracy is worse for Black and mixed-ethnicity individuals than for white offenders.",
+      "sources": []
+    },
+    {
+      "date": "2023-01",
+      "phase": "doctrine",
+      "title": "MoJ startet 'Homicide Prediction Project' mit Polizeibehörden",
+      "description": "Im Januar 2023 beginnt das Justizministerium gemeinsam mit Home Office, Greater Manchester Police und Metropolitan Police ein neues Forschungsprojekt unter dem internen Titel 'Homicide Prediction Project'. Ziel: ein Profilierungssystem, das potenzielle Mörder vorhersagen soll. Trainingsdaten stammen aus Polizei- und Regierungsbeständen, das Projekt erweitert die OASys-Logik auf bis zu 500.000 Personen.",
+      "title_de": "MoJ startet 'Homicide Prediction Project' mit Polizeibehörden",
+      "description_de": "Im Januar 2023 beginnt das Justizministerium gemeinsam mit Home Office, Greater Manchester Police und Metropolitan Police ein neues Forschungsprojekt unter dem internen Titel 'Homicide Prediction Project'. Ziel: ein Profilierungssystem, das potenzielle Mörder vorhersagen soll. Trainingsdaten stammen aus Polizei- und Regierungsbeständen, das Projekt erweitert die OASys-Logik auf bis zu 500.000 Personen.",
+      "title_en": "MoJ launches 'Homicide Prediction Project' with police forces",
+      "description_en": "In January 2023 the Ministry of Justice, together with the Home Office, Greater Manchester Police and the Metropolitan Police, begins a new research project under the internal title 'Homicide Prediction Project'. The goal: a profiling system to predict potential murderers. Training data are drawn from police and government records, extending OASys-style logic to up to 500,000 individuals.",
+      "sources": [
+        "https://www.statewatch.org/news/2025/april/uk-ministry-of-justice-secretly-developing-murder-prediction-system/"
+      ]
+    },
+    {
+      "date": "2024-12",
+      "phase": "infrastructure",
+      "title": "Projekt umbenannt in 'Sharing Data to Improve Risk Assessment', Pilotphase endet",
+      "description": "Der ursprüngliche Name 'Homicide Prediction Project' wird in 'Sharing Data to Improve Risk Assessment' geändert, der Forschungsteil offiziell abgeschlossen. Im Dezember 2024 startet zugleich der Pilot des Nachfolgesystems ARNS (Assess Risks, Needs and Strengths), das OASys langfristig ersetzen soll. Eine Deployment-Entscheidung steht aus.",
+      "title_de": "Projekt umbenannt in 'Sharing Data to Improve Risk Assessment', Pilotphase endet",
+      "description_de": "Der ursprüngliche Name 'Homicide Prediction Project' wird in 'Sharing Data to Improve Risk Assessment' geändert, der Forschungsteil offiziell abgeschlossen. Im Dezember 2024 startet zugleich der Pilot des Nachfolgesystems ARNS (Assess Risks, Needs and Strengths), das OASys langfristig ersetzen soll. Eine Deployment-Entscheidung steht aus.",
+      "title_en": "Project renamed 'Sharing Data to Improve Risk Assessment', pilot phase ends",
+      "description_en": "The original name 'Homicide Prediction Project' is changed to 'Sharing Data to Improve Risk Assessment'; the research phase formally concludes. In December 2024 the pilot of the successor system ARNS (Assess Risks, Needs and Strengths), intended to eventually replace OASys, also begins. A deployment decision is pending.",
+      "sources": []
+    },
+    {
+      "date": "2025-04-08",
+      "phase": "event",
+      "title": "Statewatch enthüllt das Geheimprojekt per Freedom-of-Information-Anfrage",
+      "description": "Die Bürgerrechtsorganisation Statewatch macht das Projekt durch FoI-Dokumente öffentlich. Es wird klar: Auch Opfer, Zeug:innen und unbescholtene Personen mit psychischer Vorgeschichte sind in den Trainingsdaten. The Register, France 24, Computer Weekly und The Guardian berichten breit. Aktivist:innen vergleichen das System mit dem 'Minority Report'-Szenario der Vorab-Verdächtigung.",
+      "title_de": "Statewatch enthüllt das Geheimprojekt per Freedom-of-Information-Anfrage",
+      "description_de": "Die Bürgerrechtsorganisation Statewatch macht das Projekt durch FoI-Dokumente öffentlich. Es wird klar: Auch Opfer, Zeug:innen und unbescholtene Personen mit psychischer Vorgeschichte sind in den Trainingsdaten. The Register, France 24, Computer Weekly und The Guardian berichten breit. Aktivist:innen vergleichen das System mit dem 'Minority Report'-Szenario der Vorab-Verdächtigung.",
+      "title_en": "Statewatch exposes the secret project via Freedom of Information request",
+      "description_en": "Civil-liberties group Statewatch makes the project public through FoI documents. It becomes clear that victims, witnesses and people flagged for mental-health concerns are also in the training data. The Register, France 24, Computer Weekly and The Guardian report widely. Activists compare the system to the 'Minority Report' scenario of pre-emptive suspicion.",
+      "sources": [
+        "https://www.theregister.com/2025/04/09/uks_ministry_of_justice_algorithm_murders/",
+        "https://www.france24.com/en/europe/20250410-activists-accuse-uk-govt-of-developing-minority-report-style-tool-to-predict-likely-murderers"
+      ]
+    },
+    {
+      "date": "2025-04",
+      "phase": "consequences",
+      "title": "Bürgerrechtler werfen Rassismus vor, MoJ verteidigt 'reine Forschung'",
+      "description": "Statewatch, Big Brother Watch und Amnesty International werfen dem Projekt strukturellen Rassismus vor: Die zugrundeliegenden Daten spiegelten verzerrte Polizeipraxis wider, die Modelle erbten den Bias. Das MoJ verteidigt das Vorhaben als reine Forschung ohne operativen Einsatz und verweist auf strikte Datenzugriffsbeschränkungen. Eine parlamentarische Befragung wird angekündigt.",
+      "title_de": "Bürgerrechtler werfen Rassismus vor, MoJ verteidigt 'reine Forschung'",
+      "description_de": "Statewatch, Big Brother Watch und Amnesty International werfen dem Projekt strukturellen Rassismus vor: Die zugrundeliegenden Daten spiegelten verzerrte Polizeipraxis wider, die Modelle erbten den Bias. Das MoJ verteidigt das Vorhaben als reine Forschung ohne operativen Einsatz und verweist auf strikte Datenzugriffsbeschränkungen. Eine parlamentarische Befragung wird angekündigt.",
+      "title_en": "Rights groups allege racism, MoJ defends it as 'pure research'",
+      "description_en": "Statewatch, Big Brother Watch and Amnesty International accuse the project of structural racism: the underlying data reflect biased policing, and the models inherit that bias. The MoJ defends the work as pure research without operational deployment and points to strict data-access restrictions. A parliamentary inquiry is announced.",
+      "sources": [
+        "https://www.statewatch.org/news/2025/april/uk-ministry-of-justice-secretly-developing-murder-prediction-system/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.statewatch.org/news/2025/april/uk-ministry-of-justice-secretly-developing-murder-prediction-system/",

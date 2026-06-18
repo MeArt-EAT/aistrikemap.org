@@ -31,9 +31,30 @@
     "discrimination",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Privatsphäre",
+    "Recht auf soziale Sicherheit",
+    "Faires Verfahren",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Privatsphäre",
+    "Recht auf soziale Sicherheit",
+    "Faires Verfahren",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection against discrimination",
+    "Right to data protection",
+    "Right to privacy",
+    "Right to social security",
+    "Right to fair procedure",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Caisse nationale des allocations familiales (CNAF)",
@@ -61,7 +82,76 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2010",
+      "phase": "infrastructure",
+      "title": "CNAF führt Risiko-Scoring-Algorithmus für Familienleistungen ein",
+      "description": "Im Jahr 2010 begann die französische Familienkasse Caisse nationale des allocations familiales (CNAF), einen Risiko-Scoring-Algorithmus zur Fraud-Detection einzuführen. Das System bewertet monatlich die personenbezogenen Daten von über 32 Millionen Menschen und berechnet mehr als 13 Millionen Scores auf einer Skala von 0 bis 1. Empfänger mit Werten nahe 1 werden gezielt einer Kontrolle durch CNAF-Inspektoren unterzogen. Faktoren, die den Score erhöhen: niedriges Einkommen, Arbeitslosigkeit, Bezug von RSA oder AAH, Behinderung, Wohnen in benachteiligten Vierteln, hoher Miet-Anteil am Einkommen und Nicht-EU-Staatsangehörigkeit.",
+      "title_de": "CNAF führt Risiko-Scoring-Algorithmus für Familienleistungen ein",
+      "description_de": "Im Jahr 2010 begann die französische Familienkasse Caisse nationale des allocations familiales (CNAF), einen Risiko-Scoring-Algorithmus zur Fraud-Detection einzuführen. Das System bewertet monatlich die personenbezogenen Daten von über 32 Millionen Menschen und berechnet mehr als 13 Millionen Scores auf einer Skala von 0 bis 1. Empfänger mit Werten nahe 1 werden gezielt einer Kontrolle durch CNAF-Inspektoren unterzogen. Faktoren, die den Score erhöhen: niedriges Einkommen, Arbeitslosigkeit, Bezug von RSA oder AAH, Behinderung, Wohnen in benachteiligten Vierteln, hoher Miet-Anteil am Einkommen und Nicht-EU-Staatsangehörigkeit.",
+      "title_en": "CNAF rolls out risk-scoring algorithm for family welfare benefits",
+      "description_en": "In 2010 France's family welfare agency Caisse nationale des allocations familiales (CNAF) began rolling out a risk-scoring algorithm for fraud detection. Every month the system processes the personal data of more than 32 million people and calculates over 13 million scores on a 0-to-1 scale. Recipients scoring close to 1 are targeted for investigation by CNAF inspectors. Factors increasing the score: low income, unemployment, receipt of RSA or AAH, disability, residence in disadvantaged neighbourhoods, high rent-to-income ratio and non-EU citizenship.",
+      "sources": [
+        "https://therecord.media/french-government-biased-algorithm-welfare",
+        "https://www.lighthousereports.com/methodology/how-we-investigated-frances-mass-profiling-machine/"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "doctrine",
+      "title": "Lighthouse Reports und Le Monde decken Quellcode-Logik des Scorings auf",
+      "description": "Im Dezember 2023 veröffentlichten Lighthouse Reports und Le Monde gemeinsam mit La Quadrature du Net eine investigative Recherche zum CNAF-Algorithmus. Sie zeigten, dass der Score arme, alleinerziehende, behinderte und ausländische Familien systematisch häufiger zu Kontrollen führt — eine algorithmische Verstärkung gesellschaftlicher Stigmata. Das CNAF-Geschäftsmodell 'gezielte Kontrolle nach Risiko-Score' wurde damit erstmals öffentlich als diskriminierend belegt. CNAF verweigerte die vollständige Offenlegung des Quellcodes; nur eine ältere Modell-Version war einsehbar.",
+      "title_de": "Lighthouse Reports und Le Monde decken Quellcode-Logik des Scorings auf",
+      "description_de": "Im Dezember 2023 veröffentlichten Lighthouse Reports und Le Monde gemeinsam mit La Quadrature du Net eine investigative Recherche zum CNAF-Algorithmus. Sie zeigten, dass der Score arme, alleinerziehende, behinderte und ausländische Familien systematisch häufiger zu Kontrollen führt — eine algorithmische Verstärkung gesellschaftlicher Stigmata. Das CNAF-Geschäftsmodell 'gezielte Kontrolle nach Risiko-Score' wurde damit erstmals öffentlich als diskriminierend belegt. CNAF verweigerte die vollständige Offenlegung des Quellcodes; nur eine ältere Modell-Version war einsehbar.",
+      "title_en": "Lighthouse Reports and Le Monde expose the scoring model's source-code logic",
+      "description_en": "In December 2023 Lighthouse Reports and Le Monde, together with La Quadrature du Net, published an investigative report on the CNAF algorithm. They showed that the score systematically subjects poor, single-parent, disabled and foreign families to more frequent checks — an algorithmic reinforcement of social stigma. CNAF's operational doctrine of 'targeted risk-based control' was thus publicly documented as discriminatory for the first time. CNAF refused to release the full source code; only an older model version was available.",
+      "sources": [
+        "https://www.lighthousereports.com/methodology/how-we-investigated-frances-mass-profiling-machine/"
+      ]
+    },
+    {
+      "date": "2024-10-15",
+      "phase": "event",
+      "title": "Koalition aus 15 NGOs reicht Klage vor dem Conseil d'État ein",
+      "description": "Am 15. Oktober 2024 reichte eine Koalition aus 15 Organisationen unter Führung von La Quadrature du Net und mit Amnesty International eine Klage beim Conseil d'État ein, um den CNAF-Risiko-Scoring-Algorithmus für rechtswidrig erklären zu lassen. Sie stützten sich auf zwei Argumentationslinien: Verstoß gegen den Datenschutz (DSGVO Art. 22 zur automatisierten Entscheidung) und Verstoß gegen das Diskriminierungsverbot. Der französische Ombudsmann (Défenseur des Droits) hatte den Algorithmus bereits zuvor als 'Über-Kontrolle der vulnerabelsten Bevölkerungsgruppen' bezeichnet und seine Beobachtungen formell an das Gericht übermittelt.",
+      "title_de": "Koalition aus 15 NGOs reicht Klage vor dem Conseil d'État ein",
+      "description_de": "Am 15. Oktober 2024 reichte eine Koalition aus 15 Organisationen unter Führung von La Quadrature du Net und mit Amnesty International eine Klage beim Conseil d'État ein, um den CNAF-Risiko-Scoring-Algorithmus für rechtswidrig erklären zu lassen. Sie stützten sich auf zwei Argumentationslinien: Verstoß gegen den Datenschutz (DSGVO Art. 22 zur automatisierten Entscheidung) und Verstoß gegen das Diskriminierungsverbot. Der französische Ombudsmann (Défenseur des Droits) hatte den Algorithmus bereits zuvor als 'Über-Kontrolle der vulnerabelsten Bevölkerungsgruppen' bezeichnet und seine Beobachtungen formell an das Gericht übermittelt.",
+      "title_en": "15-NGO coalition files lawsuit before the Conseil d'État",
+      "description_en": "On 15 October 2024 a coalition of 15 organisations led by La Quadrature du Net and including Amnesty International filed a complaint with the Conseil d'État seeking to have the CNAF risk-scoring algorithm declared unlawful. They relied on two legal arguments: violation of data-protection law (GDPR Article 22 on automated decision-making) and breach of the non-discrimination principle. France's Ombudsperson (Défenseur des Droits) had previously called the algorithm 'over-control of the most precarious populations' and formally submitted its findings to the court.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/news/2024/10/france-discriminatory-algorithm-used-by-the-social-security-agency-must-be-stopped/",
+        "https://www.laquadrature.net/en/2024/10/16/french-family-welfare-scoring-algorithm-challenged-in-court-by-15-organisations/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Interne CNAF-Studie räumt diskriminierende Wirkung ein",
+      "description": "Im Lauf von 2025 wurde eine interne CNAF-Studie öffentlich, die NGOs im Verfahren erhalten hatten. Die Studie räumt ein, dass der Scoring-Algorithmus tatsächlich diskriminierende Effekte auf bestimmte Empfängergruppen produziert. Dieses Eingeständnis wurde von La Quadrature du Net und der Koalition als zentrales Beweisstück in das Verfahren vor dem Conseil d'État eingebracht. Die schriftliche Phase des Verfahrens schloss Ende Januar 2026; die öffentliche Anhörung wird im Frühjahr 2026 erwartet.",
+      "title_de": "Interne CNAF-Studie räumt diskriminierende Wirkung ein",
+      "description_de": "Im Lauf von 2025 wurde eine interne CNAF-Studie öffentlich, die NGOs im Verfahren erhalten hatten. Die Studie räumt ein, dass der Scoring-Algorithmus tatsächlich diskriminierende Effekte auf bestimmte Empfängergruppen produziert. Dieses Eingeständnis wurde von La Quadrature du Net und der Koalition als zentrales Beweisstück in das Verfahren vor dem Conseil d'État eingebracht. Die schriftliche Phase des Verfahrens schloss Ende Januar 2026; die öffentliche Anhörung wird im Frühjahr 2026 erwartet.",
+      "title_en": "Internal CNAF study acknowledges discriminatory effects",
+      "description_en": "During 2025 an internal CNAF study became public after NGOs obtained it through the litigation. The study acknowledges that the scoring algorithm does produce discriminatory effects on certain recipient groups. This admission was introduced by La Quadrature du Net and the coalition as a central piece of evidence in the Conseil d'État proceedings. The written phase of the litigation closed at the end of January 2026; the public hearing is expected in spring 2026.",
+      "sources": [
+        "https://edri.org/our-work/cnafs-discriminatory-scoring-algorithm-10-new-organisations-join-the-case-before-the-conseil-detat-in-france/"
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "phase": "consequences",
+      "title": "CNAF veröffentlicht Quellcode — Koalition wächst auf 25 Organisationen",
+      "description": "Am 15. Januar 2026 veröffentlichte CNAF erstmals den Quellcode des aktuellen Scoring-Algorithmus, nachdem sie ihn jahrelang zurückgehalten hatte. Am 20. Januar 2026 berichteten La Quadrature du Net und EDRi, dass 10 weitere Organisationen der Klage beigetreten waren — die Koalition umfasste nun 25 Organisationen. Die Veröffentlichung des Codes wurde als Teilerfolg gewürdigt, ersetzt aber laut Klägern nicht die richterliche Klärung der Frage, ob ein systematisches Profiling vulnerabler Gruppen mit dem französischen und europäischen Recht vereinbar ist.",
+      "title_de": "CNAF veröffentlicht Quellcode — Koalition wächst auf 25 Organisationen",
+      "description_de": "Am 15. Januar 2026 veröffentlichte CNAF erstmals den Quellcode des aktuellen Scoring-Algorithmus, nachdem sie ihn jahrelang zurückgehalten hatte. Am 20. Januar 2026 berichteten La Quadrature du Net und EDRi, dass 10 weitere Organisationen der Klage beigetreten waren — die Koalition umfasste nun 25 Organisationen. Die Veröffentlichung des Codes wurde als Teilerfolg gewürdigt, ersetzt aber laut Klägern nicht die richterliche Klärung der Frage, ob ein systematisches Profiling vulnerabler Gruppen mit dem französischen und europäischen Recht vereinbar ist.",
+      "title_en": "CNAF publishes source code — coalition grows to 25 organisations",
+      "description_en": "On 15 January 2026 CNAF for the first time published the source code of its current scoring algorithm, after withholding it for years. On 20 January 2026 La Quadrature du Net and EDRi reported that 10 further organisations had joined the case — the coalition now comprised 25 organisations. The publication of the code was welcomed as a partial success but, according to the claimants, does not replace a judicial decision on whether the systematic profiling of vulnerable groups is compatible with French and European law.",
+      "sources": [
+        "https://www.laquadrature.net/en/2026/01/20/cnafs-discriminatory-scoring-algorithm-10-new-organisations-join-the-case-before-the-conseil-detat-in-france/",
+        "https://edri.org/our-work/cnafs-discriminatory-scoring-algorithm-10-new-organisations-join-the-case-before-the-conseil-detat-in-france/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.amnesty.org/en/latest/news/2024/10/france-discriminatory-algorithm-used-by-the-social-security-agency-must-be-stopped/",

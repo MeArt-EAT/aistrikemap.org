@@ -32,9 +32,30 @@
     "surveillance",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre und Datenschutz",
+    "Recht auf Nichtdiskriminierung",
+    "Recht auf soziale Sicherheit",
+    "Recht auf informationelle Selbstbestimmung",
+    "Recht auf Transparenz behördlicher Entscheidungen",
+    "Recht auf körperliche und geistige Gesundheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre und Datenschutz",
+    "Recht auf Nichtdiskriminierung",
+    "Recht auf soziale Sicherheit",
+    "Recht auf informationelle Selbstbestimmung",
+    "Recht auf Transparenz behördlicher Entscheidungen",
+    "Recht auf körperliche und geistige Gesundheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy and data protection",
+    "Right to non-discrimination",
+    "Right to social security",
+    "Right to informational self-determination",
+    "Right to transparency of administrative decisions",
+    "Right to physical and mental health"
+  ],
   "asm:actors": [
     {
       "name": "Udbetaling Danmark (UDK)",
@@ -60,7 +81,58 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "phase": "infrastructure",
+      "date": "2012",
+      "title": "UDK-Zentralisierung und Datendrehscheibe ATP",
+      "title_de": "UDK-Zentralisierung und Datendrehscheibe ATP",
+      "title_en": "UDK centralisation and ATP as data hub",
+      "description": "Mit der Gründung von Udbetaling Danmark 2012 entsteht eine zentrale Auszahlungsbehörde, die Sozialleistungen für die Kommunen verwaltet. ATP übernimmt die operative Abwicklung und baut Schnittstellen zu zentralen Registern und Verwaltungssystemen auf. Damit entsteht ein staatliches Daten-Backbone, das später die algorithmische Betrugsfahndung ermöglicht.",
+      "description_de": "Mit der Gründung von Udbetaling Danmark 2012 entsteht eine zentrale Auszahlungsbehörde, die Sozialleistungen für die Kommunen verwaltet. ATP übernimmt die operative Abwicklung und baut Schnittstellen zu zentralen Registern und Verwaltungssystemen auf. Damit entsteht ein staatliches Daten-Backbone, das später die algorithmische Betrugsfahndung ermöglicht.",
+      "description_en": "The 2012 creation of Udbetaling Danmark establishes a central payments agency that administers welfare benefits on behalf of municipalities. ATP takes over operational handling and builds interfaces to central registers and administrative systems, creating the state data backbone that later enables algorithmic fraud detection."
+    },
+    {
+      "phase": "doctrine",
+      "date": "2015-2024",
+      "title": "Aufbau von 60+ ML-Modellen mit NNIT",
+      "title_de": "Aufbau von 60+ ML-Modellen mit NNIT",
+      "title_en": "Building 60+ ML models with NNIT",
+      "description": "ATP entwickelt gemeinsam mit dem IT-Dienstleister NNIT mehr als 60 KI- und Machine-Learning-Modelle zur Sozialbetrugs-Erkennung. Die Modelle nutzen sensible Variablen wie Staatsbürgerschaft, Geburtsort und 'untypische' Familienkonstellationen, die als Proxies für ethnische Herkunft wirken. Die Logik der Algorithmen wird gegenüber Betroffenen und Öffentlichkeit nicht offengelegt.",
+      "description_de": "ATP entwickelt gemeinsam mit dem IT-Dienstleister NNIT mehr als 60 KI- und Machine-Learning-Modelle zur Sozialbetrugs-Erkennung. Die Modelle nutzen sensible Variablen wie Staatsbürgerschaft, Geburtsort und 'untypische' Familienkonstellationen, die als Proxies für ethnische Herkunft wirken. Die Logik der Algorithmen wird gegenüber Betroffenen und Öffentlichkeit nicht offengelegt.",
+      "description_en": "Together with IT contractor NNIT, ATP builds more than 60 AI and machine-learning models for welfare-fraud detection. The models use sensitive variables such as citizenship, place of birth and 'atypical' family arrangements that act as proxies for ethnic origin. The logic of the algorithms is not disclosed to affected people or the public."
+    },
+    {
+      "phase": "doctrine",
+      "date": "2022-2024",
+      "title": "Amnesty-Recherche und Interviews mit Betroffenen",
+      "title_de": "Amnesty-Recherche und Interviews mit Betroffenen",
+      "title_en": "Amnesty research and interviews with affected people",
+      "description": "Über zwei Jahre interviewt Amnestys Algorithmic Accountability Lab Betroffene, vor allem Menschen mit Behinderungen, Migrant:innen und einkommensschwache Personen. Berichtet werden permanente Furcht vor Kontrollen, Angstzustände, Depressionen und das Gefühl, als Verdächtige behandelt zu werden. Parallel werden FOI-Anfragen gestellt und vier Algorithmen teilweise zugänglich gemacht.",
+      "description_de": "Über zwei Jahre interviewt Amnestys Algorithmic Accountability Lab Betroffene, vor allem Menschen mit Behinderungen, Migrant:innen und einkommensschwache Personen. Berichtet werden permanente Furcht vor Kontrollen, Angstzustände, Depressionen und das Gefühl, als Verdächtige behandelt zu werden. Parallel werden FOI-Anfragen gestellt und vier Algorithmen teilweise zugänglich gemacht.",
+      "description_en": "Over two years Amnesty's Algorithmic Accountability Lab interviews affected people, predominantly persons with disabilities, migrants and low-income individuals. They describe permanent fear of checks, anxiety, depression and a sense of being treated as suspects. In parallel, freedom-of-information requests are filed and partial access is obtained to four of the algorithms."
+    },
+    {
+      "phase": "event",
+      "date": "2024-11-13",
+      "title": "'Coded Injustice' identifiziert AI-Act-Konflikt",
+      "title_de": "'Coded Injustice' identifiziert AI-Act-Konflikt",
+      "title_en": "'Coded Injustice' identifies AI Act conflict",
+      "description": "Amnesty veröffentlicht den Bericht 'Coded Injustice' und argumentiert: Das UDK/ATP-System klassifiziert und benachteiligt Menschen anhand sozialer und persönlicher Merkmale und fälle damit unter das Social-Scoring-Verbot von Artikel 5 des EU AI Act, der seit August 2024 in Kraft ist. Amnesty fordert sofortigen Stopp der diskriminierenden Modelle, vollständige Transparenz und unabhängige Audits.",
+      "description_de": "Amnesty veröffentlicht den Bericht 'Coded Injustice' und argumentiert: Das UDK/ATP-System klassifiziert und benachteiligt Menschen anhand sozialer und persönlicher Merkmale und fälle damit unter das Social-Scoring-Verbot von Artikel 5 des EU AI Act, der seit August 2024 in Kraft ist. Amnesty fordert sofortigen Stopp der diskriminierenden Modelle, vollständige Transparenz und unabhängige Audits.",
+      "description_en": "Amnesty publishes 'Coded Injustice' and argues: the UDK/ATP system classifies and disadvantages people on the basis of social and personal traits and therefore falls under the social-scoring ban in Article 5 of the EU AI Act, in force since August 2024. Amnesty calls for an immediate halt of the discriminatory models, full transparency and independent audits."
+    },
+    {
+      "phase": "consequences",
+      "date": "2024-11 bis 2025",
+      "title": "UDK-Widerspruch und EU-Aufsichtsdebatte",
+      "title_de": "UDK-Widerspruch und EU-Aufsichtsdebatte",
+      "title_en": "UDK pushback and EU oversight debate",
+      "description": "UDK weist die Einstufung als Social Scoring zurück und verweist auf menschliche Sachbearbeiter:innen bei jeder Entscheidung. Die dänische Regierung lehnt einen Stopp ab und kündigt nur interne Kontrollen an. EDRi und IT-Pol fordern unabhängige Audits; der Europäische Datenschutzausschuss veröffentlicht 2025 Leitlinien zu Fundamentalrechte-Folgenabschätzungen. Der Fall gilt als europäischer Lackmustest für das Social-Scoring-Verbot.",
+      "description_de": "UDK weist die Einstufung als Social Scoring zurück und verweist auf menschliche Sachbearbeiter:innen bei jeder Entscheidung. Die dänische Regierung lehnt einen Stopp ab und kündigt nur interne Kontrollen an. EDRi und IT-Pol fordern unabhängige Audits; der Europäische Datenschutzausschuss veröffentlicht 2025 Leitlinien zu Fundamentalrechte-Folgenabschätzungen. Der Fall gilt als europäischer Lackmustest für das Social-Scoring-Verbot.",
+      "description_en": "UDK rejects the classification as social scoring and points to human caseworkers reviewing every decision. The Danish government refuses to halt the system and announces only internal monitoring. EDRi and IT-Pol call for independent audits; the European Data Protection Board publishes 2025 guidance on fundamental-rights impact assessments. The case is seen as a European litmus test for the social-scoring ban."
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.amnesty.org/en/documents/eur18/8709/2024/en/",

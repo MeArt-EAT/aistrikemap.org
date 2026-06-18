@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Schutz personenbezogener Daten",
+    "Recht auf informationelle Selbstbestimmung",
+    "Schutz von Kindern",
+    "Recht am eigenen Bild"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Schutz personenbezogener Daten",
+    "Recht auf informationelle Selbstbestimmung",
+    "Schutz von Kindern",
+    "Recht am eigenen Bild"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Protection of personal data",
+    "Right to informational self-determination",
+    "Protection of children",
+    "Right to one's own image"
+  ],
   "asm:actors": [
     {
       "name": "Meta Platforms",
@@ -54,7 +72,61 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2007-2023",
+      "phase": "infrastructure",
+      "title": "Meta sammelt anderthalb Jahrzehnte öffentlicher Posts und Fotos",
+      "description": "Facebook startet 2004, der australische Markt wächst ab 2007 stark. Über die folgenden anderthalb Jahrzehnte sammelt Meta sämtliche öffentlich gestellten Inhalte erwachsener Nutzer:innen: Statusmeldungen, Fotos, Kommentare, Geo-Tags. Privatsphäre-Einstellungen filtern nur die Sichtbarkeit für andere Nutzer:innen, nicht die interne Datenverarbeitung. Damit entsteht ein Korpus von hunderten Milliarden öffentlicher Beiträge, der später zur Trainingsgrundlage für Metas Sprachmodelle wird, ohne dass die ursprünglichen Nutzer:innen je um Zustimmung gefragt wurden.",
+      "title_de": "Meta sammelt anderthalb Jahrzehnte öffentlicher Posts und Fotos",
+      "description_de": "Facebook startet 2004, der australische Markt wächst ab 2007 stark. Über die folgenden anderthalb Jahrzehnte sammelt Meta sämtliche öffentlich gestellten Inhalte erwachsener Nutzer:innen: Statusmeldungen, Fotos, Kommentare, Geo-Tags. Privatsphäre-Einstellungen filtern nur die Sichtbarkeit für andere Nutzer:innen, nicht die interne Datenverarbeitung. Damit entsteht ein Korpus von hunderten Milliarden öffentlicher Beiträge, der später zur Trainingsgrundlage für Metas Sprachmodelle wird, ohne dass die ursprünglichen Nutzer:innen je um Zustimmung gefragt wurden.",
+      "title_en": "Meta accumulates a decade and a half of public posts and photos",
+      "description_en": "Facebook launches in 2004 and the Australian market grows strongly from 2007. Over the following decade and a half Meta collects all publicly posted content from adult users: status updates, photos, comments, geo-tags. Privacy settings only filter visibility to other users, not internal data processing. The result is a corpus of hundreds of billions of public posts that later becomes training data for Meta's language models, without the original users ever being asked for consent.",
+      "sources": [
+        "https://ia.acs.org.au/article/2024/meta-grilled-over-australian-posts-used-to-train-ai.html"
+      ]
+    },
+    {
+      "date": "2023-2024",
+      "phase": "doctrine",
+      "title": "Meta etabliert geografisch differenzierte Opt-out-Politik",
+      "description": "Mit der Markteinführung von Llama 2 (2023) und Llama 3 (2024) braucht Meta neue Trainings-Korpora und greift offiziell auf nutzergenerierte Daten zurück. In der EU pausiert Meta wegen DSGVO-Risiken den Launch von KI-Produkten und führt ein Opt-out-Formular ein. In Brasilien stoppt die ANPD den geplanten KI-Training-Start per Eilanordnung. Für Australien, die USA und andere Märkte ohne vergleichbare Pflicht entscheidet Meta dagegen, kein Opt-out anzubieten: Die unternehmensinterne Doktrin lautet, Datenrechte werden nur dort gewährt, wo Regulierer sie erzwingen.",
+      "title_de": "Meta etabliert geografisch differenzierte Opt-out-Politik",
+      "description_de": "Mit der Markteinführung von Llama 2 (2023) und Llama 3 (2024) braucht Meta neue Trainings-Korpora und greift offiziell auf nutzergenerierte Daten zurück. In der EU pausiert Meta wegen DSGVO-Risiken den Launch von KI-Produkten und führt ein Opt-out-Formular ein. In Brasilien stoppt die ANPD den geplanten KI-Training-Start per Eilanordnung. Für Australien, die USA und andere Märkte ohne vergleichbare Pflicht entscheidet Meta dagegen, kein Opt-out anzubieten: Die unternehmensinterne Doktrin lautet, Datenrechte werden nur dort gewährt, wo Regulierer sie erzwingen.",
+      "title_en": "Meta establishes geographically differentiated opt-out policy",
+      "description_en": "With the launch of Llama 2 (2023) and Llama 3 (2024) Meta needs new training corpora and officially turns to user-generated data. In the EU Meta pauses its AI-product launch over GDPR concerns and introduces an opt-out form. In Brazil the ANPD halts the planned start of AI training by emergency order. For Australia, the United States and other markets without comparable obligations, Meta decides not to offer an opt-out: the corporate doctrine is that data rights are only granted where regulators enforce them.",
+      "sources": [
+        "https://fortune.com/2024/09/12/meta-admits-in-australia-hearing-that-it-trains-ai-on-user-data-unless-governments-force-it-not-to/"
+      ]
+    },
+    {
+      "date": "2024-09-10",
+      "phase": "event",
+      "title": "Senatsanhörung Canberra: Claybaugh räumt Scraping ohne Opt-out ein",
+      "description": "Vor dem australischen Senate Select Committee on Adopting Artificial Intelligence sagt Metas Global Privacy Director Melinda Claybaugh aus. Auf wiederholtes Nachhaken von Labor-Senator Tony Sheldon bestätigt sie, dass Meta öffentliche Posts und Fotos australischer Erwachsener bis zurück ins Jahr 2007 für KI-Training nutzt - ohne Opt-out für australische Nutzer:innen. Auf Sheldons Frage, ob auch Posts mit Bildern von Kindern erfasst werden, wenn diese aus Konten Erwachsener stammen, antwortet Claybaugh ausweichend. Sheldon nennt den Vorgang eine 'beispiellose Verletzung'.",
+      "title_de": "Senatsanhörung Canberra: Claybaugh räumt Scraping ohne Opt-out ein",
+      "description_de": "Vor dem australischen Senate Select Committee on Adopting Artificial Intelligence sagt Metas Global Privacy Director Melinda Claybaugh aus. Auf wiederholtes Nachhaken von Labor-Senator Tony Sheldon bestätigt sie, dass Meta öffentliche Posts und Fotos australischer Erwachsener bis zurück ins Jahr 2007 für KI-Training nutzt - ohne Opt-out für australische Nutzer:innen. Auf Sheldons Frage, ob auch Posts mit Bildern von Kindern erfasst werden, wenn diese aus Konten Erwachsener stammen, antwortet Claybaugh ausweichend. Sheldon nennt den Vorgang eine 'beispiellose Verletzung'.",
+      "title_en": "Senate hearing Canberra: Claybaugh admits scraping without opt-out",
+      "description_en": "Before the Australian Senate Select Committee on Adopting Artificial Intelligence, Meta's global privacy director Melinda Claybaugh testifies. After repeated questioning by Labor Senator Tony Sheldon, she confirms that Meta uses public posts and photos of adult Australian users dating back to 2007 for AI training - without an opt-out for Australian users. When Sheldon asks whether posts containing images of children are also captured when they come from adult accounts, Claybaugh gives evasive answers. Sheldon calls the practice an 'unprecedented violation'.",
+      "sources": [
+        "https://www.innovationaus.com/meta-admits-scraping-australian-users-posts-to-train-ai/",
+        "https://ia.acs.org.au/article/2024/meta-grilled-over-australian-posts-used-to-train-ai.html"
+      ]
+    },
+    {
+      "date": "2024-09-12",
+      "phase": "consequences",
+      "title": "Druck auf australische Privacy-Act-Reform und globale KI-Trainings-Debatte",
+      "description": "Die Anhörung beschleunigt die seit Jahren stockende Reform des australischen Privacy Act 1988. Mehrere Senator:innen fordern explizit gesetzliche Opt-out-Rechte für KI-Training. International wird der Fall zum Lehrstück: Meta liefert mit Claybaughs Aussage den Beweis, dass Plattformen Datenschutzrechte als regulatorische Verhandlungsmasse behandeln. Verbraucherverbände, Datenschutzbehörden und Wissenschaftler:innen in Australien, Kanada und Asien greifen die Aussage auf, um nationale Gesetzgebung zu KI-Trainingsdaten und biometrischer Verarbeitung zu fordern.",
+      "title_de": "Druck auf australische Privacy-Act-Reform und globale KI-Trainings-Debatte",
+      "description_de": "Die Anhörung beschleunigt die seit Jahren stockende Reform des australischen Privacy Act 1988. Mehrere Senator:innen fordern explizit gesetzliche Opt-out-Rechte für KI-Training. International wird der Fall zum Lehrstück: Meta liefert mit Claybaughs Aussage den Beweis, dass Plattformen Datenschutzrechte als regulatorische Verhandlungsmasse behandeln. Verbraucherverbände, Datenschutzbehörden und Wissenschaftler:innen in Australien, Kanada und Asien greifen die Aussage auf, um nationale Gesetzgebung zu KI-Trainingsdaten und biometrischer Verarbeitung zu fordern.",
+      "title_en": "Pressure on Australian Privacy Act reform and global AI-training debate",
+      "description_en": "The hearing accelerates the years-long stalled reform of the Australian Privacy Act 1988. Several senators explicitly demand statutory opt-out rights for AI training. Internationally the case becomes a cautionary tale: with Claybaugh's testimony Meta supplies the proof that platforms treat data-protection rights as regulatory bargaining chips. Consumer groups, data-protection authorities and academics in Australia, Canada and Asia pick up the statement to demand national legislation on AI training data and biometric processing.",
+      "sources": [
+        "https://fortune.com/2024/09/12/meta-admits-in-australia-hearing-that-it-trains-ai-on-user-data-unless-governments-force-it-not-to/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.innovationaus.com/meta-admits-scraping-australian-users-posts-to-train-ai/",

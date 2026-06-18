@@ -31,9 +31,27 @@
     "censorship",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Pressefreiheit",
+    "Meinungsfreiheit",
+    "Recht auf Privatsphäre",
+    "Recht auf Information",
+    "Kommunikationsgeheimnis"
+  ],
+  "asm:affectedRights_de": [
+    "Pressefreiheit",
+    "Meinungsfreiheit",
+    "Recht auf Privatsphäre",
+    "Recht auf Information",
+    "Kommunikationsgeheimnis"
+  ],
+  "asm:affectedRights_en": [
+    "freedom of the press",
+    "freedom of expression",
+    "right to privacy",
+    "right to information",
+    "confidentiality of communications"
+  ],
   "asm:actors": [
     {
       "name": "Ministerium für Digitale Entwicklung Kasachstan / kasachische ISPs",
@@ -49,7 +67,56 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2015-11",
+      "phase": "infrastructure",
+      "title": "Gesetzliche Grundlage: Kommunikationsgesetz verpflichtet ISPs auf staatliches Zertifikat",
+      "description": "Kasachstan ändert das Kommunikationsgesetz von 2004. Klausel 11 in Artikel 26 der 'Regeln zur Ausstellung und Anwendung eines Sicherheitszertifikats' verpflichtet alle nationalen Kommunikationsanbieter, den verschlüsselten Internetverkehr ihrer Kunden mit staatlich ausgestellten Zertifikaten zu überwachen. Damit entsteht die rechtliche Infrastruktur für spätere flächendeckende TLS-MITM-Angriffe.",
+      "sources": [],
+      "title_de": "Gesetzliche Grundlage: Kommunikationsgesetz verpflichtet ISPs auf staatliches Zertifikat",
+      "title_en": "Legal foundation: Communications Law obliges ISPs to use state certificate",
+      "description_de": "Kasachstan ändert das Kommunikationsgesetz von 2004. Klausel 11 in Artikel 26 der 'Regeln zur Ausstellung und Anwendung eines Sicherheitszertifikats' verpflichtet alle nationalen Kommunikationsanbieter, den verschlüsselten Internetverkehr ihrer Kunden mit staatlich ausgestellten Zertifikaten zu überwachen. Damit entsteht die rechtliche Infrastruktur für spätere flächendeckende TLS-MITM-Angriffe.",
+      "description_en": "Kazakhstan amends its 2004 Communications Law. Clause 11 of Article 26 of the 'Rules for Issuing and Applying a Security Certificate' obliges all national communications service providers to monitor their customers' encrypted internet traffic with government-issued certificates. This creates the legal infrastructure for later nationwide TLS-MITM attacks."
+    },
+    {
+      "date": "2019-07",
+      "phase": "doctrine",
+      "title": "Erster MITM-Versuch und Sperrung durch Browser-Hersteller",
+      "description": "Am 17. Juli 2019 fordert die Regierung alle ISPs auf, Kunden zur Installation eines staatlichen Root-Zertifikats zu zwingen. Mozilla, Google und Apple blockieren das 'nationale Sicherheitszertifikat' am 21. August 2019 in Firefox, Chrome und Safari, selbst bei manueller Installation. Censored Planet zeigt: Die Zielliste belegt Überwachung sozialer Netzwerke, nicht das offizielle Argument 'Schutz vor Bankbetrug'. Die Regierung pausiert öffentlich — die Doktrin bleibt aktiv.",
+      "sources": [],
+      "title_de": "Erster MITM-Versuch und Sperrung durch Browser-Hersteller",
+      "title_en": "First MITM attempt and pushback from browser vendors",
+      "description_de": "Am 17. Juli 2019 fordert die Regierung alle ISPs auf, Kunden zur Installation eines staatlichen Root-Zertifikats zu zwingen. Mozilla, Google und Apple blockieren das 'nationale Sicherheitszertifikat' am 21. August 2019 in Firefox, Chrome und Safari, selbst bei manueller Installation. Censored Planet zeigt: Die Zielliste belegt Überwachung sozialer Netzwerke, nicht das offizielle Argument 'Schutz vor Bankbetrug'. Die Regierung pausiert öffentlich — die Doktrin bleibt aktiv.",
+      "description_en": "On 17 July 2019, the government orders all ISPs to compel customers to install a government root certificate. Mozilla, Google and Apple block the 'national security certificate' on 21 August 2019 in Firefox, Chrome and Safari, even when installed manually. Censored Planet shows that the target list points to surveillance of social networks, not the official rationale of 'protection from bank fraud'. The government publicly pauses — the doctrine stays alive."
+    },
+    {
+      "date": "2023-06 bis 2024-06",
+      "phase": "event",
+      "title": "NUC RK Root-CA und 7 Intermediates für 12 Monate MITM gegen 17 Sites",
+      "description": "OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation messen zwölf Monate lang koordinierte TLS-MITM-Angriffe. Eine eigens auf staatliche Anweisung erstellte Root-CA 'NUC RK' und drei weitere Root-CAs emittieren sieben Intermediate-Zertifikate. Damit werden 17 Nachrichten- und Menschenrechtsseiten — u. a. Kloop, Centralasia.media, Vice News — sowie Umgehungs-Tools auf mindestens 19 Netzen blockiert. Die Intermediates sind nur 75 Tage gültig; neue werden alle 74 Tage nachgeschoben.",
+      "sources": [
+        "https://ooni.org/post/2024-kazakhstan-report/"
+      ],
+      "title_de": "NUC RK Root-CA und 7 Intermediates für 12 Monate MITM gegen 17 Sites",
+      "title_en": "NUC RK root CA and 7 intermediates for 12 months of MITM against 17 sites",
+      "description_de": "OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation messen zwölf Monate lang koordinierte TLS-MITM-Angriffe. Eine eigens auf staatliche Anweisung erstellte Root-CA 'NUC RK' und drei weitere Root-CAs emittieren sieben Intermediate-Zertifikate. Damit werden 17 Nachrichten- und Menschenrechtsseiten — u. a. Kloop, Centralasia.media, Vice News — sowie Umgehungs-Tools auf mindestens 19 Netzen blockiert. Die Intermediates sind nur 75 Tage gültig; neue werden alle 74 Tage nachgeschoben.",
+      "description_en": "OONI, Internet Freedom Kazakhstan and the Eurasian Digital Foundation measure twelve months of coordinated TLS-MITM attacks. A purpose-built root CA 'NUC RK', created on government demand, and three further root CAs issue seven intermediate certificates. They are used to block 17 news and human-rights sites — including Kloop, Centralasia.media and Vice News — as well as circumvention tools on at least 19 networks. The intermediates are valid for only 75 days; new ones are reissued every 74 days."
+    },
+    {
+      "date": "2024-09",
+      "phase": "consequences",
+      "title": "OONI-Report deckt System auf — Mozilla-Tracking, Methode bleibt",
+      "description": "Am 19. September 2024 veröffentlicht OONI den vollständigen Report. Das Berkman Klein Center und die Mozilla-Bugzilla-Community greifen den Fall auf; technisch wird klar, dass Kasachstan eine permanente, juristisch abgesicherte MITM-Infrastruktur betreibt, die alle 74 Tage rotiert. Für Journalisten und Menschenrechtsverteidiger im Land bedeutet das: jede HTTPS-Verbindung zu kritischen Quellen kann mitgelesen werden, Quellenschutz bricht zusammen.",
+      "sources": [
+        "https://cyber.harvard.edu/story/2024-09/kazakhstan-tls-mitm-attacks-and-blocking-news-media-human-rights-and-circumvention"
+      ],
+      "title_de": "OONI-Report deckt System auf — Mozilla-Tracking, Methode bleibt",
+      "title_en": "OONI report exposes the system — Mozilla tracking, method stays in place",
+      "description_de": "Am 19. September 2024 veröffentlicht OONI den vollständigen Report. Das Berkman Klein Center und die Mozilla-Bugzilla-Community greifen den Fall auf; technisch wird klar, dass Kasachstan eine permanente, juristisch abgesicherte MITM-Infrastruktur betreibt, die alle 74 Tage rotiert. Für Journalisten und Menschenrechtsverteidiger im Land bedeutet das: jede HTTPS-Verbindung zu kritischen Quellen kann mitgelesen werden, Quellenschutz bricht zusammen.",
+      "description_en": "On 19 September 2024 OONI publishes the full report. The Berkman Klein Center and the Mozilla Bugzilla community pick up the case; technically it becomes clear that Kazakhstan runs a permanent, legally backed MITM infrastructure that rotates every 74 days. For journalists and human-rights defenders inside the country this means that every HTTPS connection to critical sources can be intercepted, and source protection collapses."
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://ooni.org/post/2024-kazakhstan-report/",

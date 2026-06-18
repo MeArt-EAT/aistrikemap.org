@@ -32,9 +32,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Faires Verfahren",
+    "Datenschutz",
+    "Unschuldsvermutung",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Faires Verfahren",
+    "Datenschutz",
+    "Unschuldsvermutung",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Right to a fair procedure",
+    "Data protection",
+    "Presumption of innocence",
+    "Right to privacy"
+  ],
   "asm:actors": [
     {
       "name": "New York Police Department (NYPD)",
@@ -48,7 +66,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-12",
+      "phase": "infrastructure",
+      "title": "NYPD startet Patternizr-Algorithmus für Pattern-Erkennung",
+      "description": "Im Dezember 2016 nimmt das NYPD den Machine-Learning-Algorithmus Patternizr in Betrieb. Entwickelt von Alex Chohlas-Wood und Evan Levine, gleicht das System Raub-, Einbruchs- und Großdiebstahls-Anzeigen miteinander ab, um mutmaßlich zusammenhängende Serien zu identifizieren. Trainingsdaten sind historische NYPD-Festnahmen — inklusive versiegelter und vorgeladener Akten, deren Nutzung gesetzlich eingeschränkt ist.",
+      "title_de": "NYPD startet Patternizr-Algorithmus für Pattern-Erkennung",
+      "description_de": "Im Dezember 2016 nimmt das NYPD den Machine-Learning-Algorithmus Patternizr in Betrieb. Entwickelt von Alex Chohlas-Wood und Evan Levine, gleicht das System Raub-, Einbruchs- und Großdiebstahls-Anzeigen miteinander ab, um mutmaßlich zusammenhängende Serien zu identifizieren. Trainingsdaten sind historische NYPD-Festnahmen — inklusive versiegelter und vorgeladener Akten, deren Nutzung gesetzlich eingeschränkt ist.",
+      "title_en": "NYPD deploys Patternizr algorithm for pattern detection",
+      "description_en": "In December 2016 the NYPD puts the machine-learning algorithm Patternizr into operation. Developed by Alex Chohlas-Wood and Evan Levine, the system cross-matches robbery, burglary and grand-larceny complaints to identify likely linked series. Training data are historic NYPD arrest records — including sealed records whose use is statutorily restricted.",
+      "sources": [
+        "https://www.fastcompany.com/90321778/nypd-unveils-controversial-algorithm-to-track-crime-patterns"
+      ]
+    },
+    {
+      "date": "2019-02",
+      "phase": "doctrine",
+      "title": "NYPD legt Patternizr öffentlich offen, Wissenschaft kritisiert Bias",
+      "description": "Erst im Februar 2019 wird die Existenz von Patternizr in einem Fachartikel der Entwickler öffentlich gemacht. Die NYPD verteidigt das System als 'bias-blind', weil Hautfarbe und Geschlecht der Verdächtigen explizit ausgeklammert seien. Bürgerrechtsorganisationen und Forschende — u.a. im Fordham Urban Law Journal — argumentieren dagegen, dass die historischen Trainingsdaten strukturellen Rassismus reproduzieren.",
+      "title_de": "NYPD legt Patternizr öffentlich offen, Wissenschaft kritisiert Bias",
+      "description_de": "Erst im Februar 2019 wird die Existenz von Patternizr in einem Fachartikel der Entwickler öffentlich gemacht. Die NYPD verteidigt das System als 'bias-blind', weil Hautfarbe und Geschlecht der Verdächtigen explizit ausgeklammert seien. Bürgerrechtsorganisationen und Forschende — u.a. im Fordham Urban Law Journal — argumentieren dagegen, dass die historischen Trainingsdaten strukturellen Rassismus reproduzieren.",
+      "title_en": "NYPD discloses Patternizr publicly, scholars criticise bias",
+      "description_en": "Patternizr's existence is only made public in February 2019 in an academic paper by its developers. The NYPD defends the system as 'bias-blind' because suspect race and gender are explicitly excluded. Civil-rights organisations and scholars — including in the Fordham Urban Law Journal — argue that the historic training data reproduce structural racism.",
+      "sources": [
+        "https://ir.lawnet.fordham.edu/cgi/viewcontent.cgi?article=2779&context=ulj"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Bronx Defenders verklagen NYPD wegen versiegelter Akten",
+      "description": "Die Bronx Defenders und die Kanzlei Cleary Gottlieb erheben eine Sammelklage (R.C. v. City of New York) gegen das NYPD wegen systematischer Nutzung versiegelter Festnahme-Akten — entgegen New Yorker Datenschutzrecht (CPL 160.50/160.55). Die Klage zielt sowohl auf interne Datenbanken als auch auf KI- und Pattern-Systeme, die auf diese Akten zugreifen.",
+      "title_de": "Bronx Defenders verklagen NYPD wegen versiegelter Akten",
+      "description_de": "Die Bronx Defenders und die Kanzlei Cleary Gottlieb erheben eine Sammelklage (R.C. v. City of New York) gegen das NYPD wegen systematischer Nutzung versiegelter Festnahme-Akten — entgegen New Yorker Datenschutzrecht (CPL 160.50/160.55). Die Klage zielt sowohl auf interne Datenbanken als auch auf KI- und Pattern-Systeme, die auf diese Akten zugreifen.",
+      "title_en": "Bronx Defenders sue NYPD over sealed arrest records",
+      "description_en": "The Bronx Defenders and law firm Cleary Gottlieb file a class action (R.C. v. City of New York) against the NYPD over systematic use of sealed arrest records in breach of New York privacy law (CPL 160.50/160.55). The suit targets both internal databases and AI and pattern systems that draw on those records.",
+      "sources": [
+        "https://www.bronxdefenders.org/the-bronx-defenders-and-cleary-gottlieb-file-lawsuit-challenging-the-nypds-unlawful-use-of-sealed-arrest-records/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "event",
+      "title": "Manhattan-Richter ordnet Überholung der NYPD-Systeme an",
+      "description": "Im Verfahren R.C. v. City of New York erlässt Justice Lyle E. Frank am Manhattaner Supreme Court eine weitreichende Anordnung: Das NYPD muss seine technischen Systeme grundlegend überarbeiten, versiegelte Datensätze entfernen und sicherstellen, dass Predictive-Policing-Tools — namentlich Patternizr — keinen Zugriff mehr auf gesperrte Akten haben. Das Urteil betrifft potenziell Millionen New Yorker:innen.",
+      "title_de": "Manhattan-Richter ordnet Überholung der NYPD-Systeme an",
+      "description_de": "Im Verfahren R.C. v. City of New York erlässt Justice Lyle E. Frank am Manhattaner Supreme Court eine weitreichende Anordnung: Das NYPD muss seine technischen Systeme grundlegend überarbeiten, versiegelte Datensätze entfernen und sicherstellen, dass Predictive-Policing-Tools — namentlich Patternizr — keinen Zugriff mehr auf gesperrte Akten haben. Das Urteil betrifft potenziell Millionen New Yorker:innen.",
+      "title_en": "Manhattan judge orders overhaul of NYPD systems",
+      "description_en": "In R.C. v. City of New York, Justice Lyle E. Frank of the Manhattan Supreme Court issues a sweeping order: the NYPD must overhaul its technical systems, purge sealed records and ensure that predictive-policing tools — notably Patternizr — no longer access sealed information. The ruling potentially affects millions of New Yorkers.",
+      "sources": [
+        "https://www.bronxdefenders.org/judge-rules-nypd-must-overhaul-its-systems-to-end-its-unlawful-use-of-sealed-arrest-records/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Gerichtliche Aufsicht und periodische Audit-Pflicht für NYPD",
+      "description": "Das Gericht und die Klägeranwälte überwachen den vom NYPD geforderten Reformprozess. Die Behörde muss regelmäßig Fortschrittsberichte vorlegen und Compliance-Audits durchführen. Bürgerrechtsorganisationen werten das Urteil als Präzedenzfall: Erstmals wird ein US-Predictive-Policing-System gerichtlich gezwungen, seine Trainings- und Inputdaten gesetzeskonform zu bereinigen.",
+      "title_de": "Gerichtliche Aufsicht und periodische Audit-Pflicht für NYPD",
+      "description_de": "Das Gericht und die Klägeranwälte überwachen den vom NYPD geforderten Reformprozess. Die Behörde muss regelmäßig Fortschrittsberichte vorlegen und Compliance-Audits durchführen. Bürgerrechtsorganisationen werten das Urteil als Präzedenzfall: Erstmals wird ein US-Predictive-Policing-System gerichtlich gezwungen, seine Trainings- und Inputdaten gesetzeskonform zu bereinigen.",
+      "title_en": "Court oversight and periodic audits imposed on NYPD",
+      "description_en": "The court and plaintiff counsel oversee the NYPD's mandated reform process. The department must submit periodic progress reports and compliance audits. Civil-rights groups read the ruling as a precedent: for the first time a US predictive-policing system is judicially compelled to bring its training and input data into legal compliance.",
+      "sources": [
+        "https://www.bronxdefenders.org/in-a-win-for-millions-of-new-yorkers-court-orders-nypd-to-stop-accessing-sealed-arrest-records/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bronxdefenders.org/judge-rules-nypd-must-overhaul-its-systems-to-end-its-unlawful-use-of-sealed-arrest-records/",

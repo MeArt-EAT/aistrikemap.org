@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz der Vertraulichkeit",
+    "Verbraucherschutz",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz der Vertraulichkeit",
+    "Verbraucherschutz",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Confidentiality",
+    "Consumer protection",
+    "Right to informational self-determination"
+  ],
   "asm:actors": [
     {
       "name": "DeepSeek",
@@ -52,7 +70,86 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "DeepSeek wird in Hangzhou gegründet, baut Open-Source-LLM-Stack auf",
+      "description": "Das chinesische KI-Startup DeepSeek wird 2023 in Hangzhou von dem Quant-Fonds High-Flyer ausgegründet. Das Unternehmen setzt auf einen Open-Source-Ansatz und nutzt für Logging und Telemetrie das verbreitete spaltenorientierte Datenbanksystem ClickHouse. Backend-Infrastruktur, API-Keys und Chat-Verläufe der Nutzer werden zentral in dieser Logging-Pipeline gesammelt.",
+      "title_de": "DeepSeek wird in Hangzhou gegründet, baut Open-Source-LLM-Stack auf",
+      "description_de": "Das chinesische KI-Startup DeepSeek wird 2023 in Hangzhou von dem Quant-Fonds High-Flyer ausgegründet. Das Unternehmen setzt auf einen Open-Source-Ansatz und nutzt für Logging und Telemetrie das verbreitete spaltenorientierte Datenbanksystem ClickHouse. Backend-Infrastruktur, API-Keys und Chat-Verläufe der Nutzer werden zentral in dieser Logging-Pipeline gesammelt.",
+      "title_en": "DeepSeek founded in Hangzhou, builds open-source LLM stack",
+      "description_en": "Chinese AI start-up DeepSeek is spun out of the quant fund High-Flyer in Hangzhou in 2023. The company adopts an open-source approach and uses the widely deployed columnar database ClickHouse for logging and telemetry. Backend infrastructure, API keys and user chat histories are centrally captured in this logging pipeline.",
+      "sources": [
+        "https://www.wiz.io/blog/wiz-research-uncovers-exposed-deepseek-database-leak"
+      ]
+    },
+    {
+      "date": "2025-01-20",
+      "phase": "doctrine",
+      "title": "DeepSeek-R1 erscheint und löst weltweiten Hype aus",
+      "description": "DeepSeek veröffentlicht das Reasoning-Modell R1, das in Benchmarks mit OpenAIs o1 mithält, aber laut Unternehmen für nur 6,5 Millionen US-Dollar trainiert wurde. Innerhalb weniger Tage stürmt die DeepSeek-App in den USA und Europa die App-Store-Charts. Die Nutzerzahlen explodieren, gleichzeitig öffnet das Unternehmen seinen Stack noch breiter und meldet kurz darauf groß angelegte Angriffe auf die Dienste.",
+      "title_de": "DeepSeek-R1 erscheint und löst weltweiten Hype aus",
+      "description_de": "DeepSeek veröffentlicht das Reasoning-Modell R1, das in Benchmarks mit OpenAIs o1 mithält, aber laut Unternehmen für nur 6,5 Millionen US-Dollar trainiert wurde. Innerhalb weniger Tage stürmt die DeepSeek-App in den USA und Europa die App-Store-Charts. Die Nutzerzahlen explodieren, gleichzeitig öffnet das Unternehmen seinen Stack noch breiter und meldet kurz darauf groß angelegte Angriffe auf die Dienste.",
+      "title_en": "DeepSeek-R1 launches and triggers global hype",
+      "description_en": "DeepSeek releases its reasoning model R1, which matches OpenAI's o1 on benchmarks but, the company says, was trained for just USD 6.5 million. Within days the DeepSeek app tops the App Store charts in the US and Europe. User numbers explode, the company opens its stack still further and shortly afterwards reports large-scale attacks on its services.",
+      "sources": [
+        "https://thehackernews.com/2025/01/deepseek-ai-database-exposed-over-1.html"
+      ]
+    },
+    {
+      "date": "2025-01-27",
+      "phase": "doctrine",
+      "title": "DeepSeek stoppt Neuregistrierungen wegen massiver Angriffe",
+      "description": "Wegen groß angelegter böswilliger Angriffe friert DeepSeek die Neuregistrierung von Nutzern ein. Das Unternehmen kommuniziert dazu öffentlich, der eigentliche Logging-Stack mit ClickHouse-Datenbank an den Ports 8123 und 9000 bleibt jedoch unverändert von außen erreichbar — ohne Authentifizierung.",
+      "title_de": "DeepSeek stoppt Neuregistrierungen wegen massiver Angriffe",
+      "description_de": "Wegen groß angelegter böswilliger Angriffe friert DeepSeek die Neuregistrierung von Nutzern ein. Das Unternehmen kommuniziert dazu öffentlich, der eigentliche Logging-Stack mit ClickHouse-Datenbank an den Ports 8123 und 9000 bleibt jedoch unverändert von außen erreichbar — ohne Authentifizierung.",
+      "title_en": "DeepSeek halts new registrations after massive attacks",
+      "description_en": "Citing large-scale malicious attacks, DeepSeek freezes new user registrations. The company communicates publicly about it, but the actual logging stack with its ClickHouse database on ports 8123 and 9000 remains externally reachable — without any authentication.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/deepseek-exposes-database-with-over-1-million-chat-records/"
+      ]
+    },
+    {
+      "date": "2025-01-29",
+      "phase": "event",
+      "title": "Wiz Research entdeckt offene ClickHouse-Datenbank mit Chat-Logs",
+      "description": "Sicherheitsforscher von Wiz scannen DeepSeek-Subdomains und stoßen auf eine ungeschützte ClickHouse-Instanz. Über die HTTP-Schnittstelle und das /play-Endpunkt-Interface können sie ohne Login beliebige SQL-Queries ausführen. Sichtbar werden mehr als eine Million Logzeilen mit Klartext-Chats seit dem 6. Januar 2025, API-Keys, Backend-Details und Operational-Metadaten.",
+      "title_de": "Wiz Research entdeckt offene ClickHouse-Datenbank mit Chat-Logs",
+      "description_de": "Sicherheitsforscher von Wiz scannen DeepSeek-Subdomains und stoßen auf eine ungeschützte ClickHouse-Instanz. Über die HTTP-Schnittstelle und das /play-Endpunkt-Interface können sie ohne Login beliebige SQL-Queries ausführen. Sichtbar werden mehr als eine Million Logzeilen mit Klartext-Chats seit dem 6. Januar 2025, API-Keys, Backend-Details und Operational-Metadaten.",
+      "title_en": "Wiz Research discovers open ClickHouse database with chat logs",
+      "description_en": "Wiz researchers scan DeepSeek subdomains and find an unprotected ClickHouse instance. Via the HTTP interface and the /play endpoint they can run arbitrary SQL queries without authentication. Exposed are more than one million log lines with plaintext chats since 6 January 2025, API keys, backend details and operational metadata.",
+      "sources": [
+        "https://www.wiz.io/blog/wiz-research-uncovers-exposed-deepseek-database-leak"
+      ]
+    },
+    {
+      "date": "2025-01-30",
+      "phase": "consequences",
+      "title": "DeepSeek schließt Datenbank nach verantwortlicher Offenlegung",
+      "description": "Wiz informiert DeepSeek nach den Regeln der verantwortlichen Offenlegung. Das Unternehmen sperrt den Zugriff innerhalb weniger Stunden. Wiz veröffentlicht parallel den Vorfall und betont, dass nicht festgestellt werden kann, ob Dritte die Daten zuvor abgegriffen haben — der Zustand war für unbestimmte Zeit offen.",
+      "title_de": "DeepSeek schließt Datenbank nach verantwortlicher Offenlegung",
+      "description_de": "Wiz informiert DeepSeek nach den Regeln der verantwortlichen Offenlegung. Das Unternehmen sperrt den Zugriff innerhalb weniger Stunden. Wiz veröffentlicht parallel den Vorfall und betont, dass nicht festgestellt werden kann, ob Dritte die Daten zuvor abgegriffen haben — der Zustand war für unbestimmte Zeit offen.",
+      "title_en": "DeepSeek closes database after responsible disclosure",
+      "description_en": "Wiz informs DeepSeek under responsible-disclosure rules. The company restricts access within hours. Wiz publishes the case in parallel and stresses that it cannot be determined whether third parties already pulled the data — the state was open for an undetermined period.",
+      "sources": [
+        "https://techcrunch.com/2025/01/30/deepseek-exposed-internal-database-containing-chat-histories-and-sensitive-data/"
+      ]
+    },
+    {
+      "date": "2025-02",
+      "phase": "consequences",
+      "title": "Internationale Regulatoren prüfen DeepSeek, Verbote in mehreren Ländern",
+      "description": "Italien, Taiwan, Australien und mehrere US-Bundesbehörden verbieten DeepSeek auf Dienstgeräten oder eröffnen Datenschutz-Untersuchungen. Der Vorfall wird zum Lehrbeispiel für die These, dass schnell wachsende KI-Anbieter Grundlagen-Sicherheit bei der Datenhaltung unterlaufen. Computer Weekly nennt den Fall einen 'Rookie-Fehler'.",
+      "title_de": "Internationale Regulatoren prüfen DeepSeek, Verbote in mehreren Ländern",
+      "description_de": "Italien, Taiwan, Australien und mehrere US-Bundesbehörden verbieten DeepSeek auf Dienstgeräten oder eröffnen Datenschutz-Untersuchungen. Der Vorfall wird zum Lehrbeispiel für die These, dass schnell wachsende KI-Anbieter Grundlagen-Sicherheit bei der Datenhaltung unterlaufen. Computer Weekly nennt den Fall einen 'Rookie-Fehler'.",
+      "title_en": "International regulators probe DeepSeek, bans in several countries",
+      "description_en": "Italy, Taiwan, Australia and several US federal agencies ban DeepSeek on work devices or open data-protection investigations. The case becomes a textbook example for the thesis that fast-growing AI vendors undercut basic data-handling security. Computer Weekly calls it a 'rookie error'.",
+      "sources": [
+        "https://www.computerweekly.com/news/366618596/DeepSeek-API-chat-log-exposure-a-rookie-cyber-error"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.wiz.io/blog/wiz-research-uncovers-exposed-deepseek-database-leak",

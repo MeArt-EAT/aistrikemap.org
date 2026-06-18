@@ -5,11 +5,11 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/uk-dwp-algorithmus-markierte-200-000-buerger-innen-faelschlich-als-betrugsverdachtsfall",
-  "name": "Großbritannien: DWP-Algorithmus markierte 200.000 Buerger:innen faelschlich als Betrugsverdachtsfall",
-  "name_de": "Großbritannien: DWP-Algorithmus markierte 200.000 Buerger:innen faelschlich als Betrugsverdachtsfall",
+  "name": "Großbritannien: DWP-Algorithmus markierte 200.000 Bürger:innen fälschlich als Betrugsverdachtsfall",
+  "name_de": "Großbritannien: DWP-Algorithmus markierte 200.000 Bürger:innen fälschlich als Betrugsverdachtsfall",
   "name_en": "United Kingdom: DWP algorithm wrongly flagged 200,000 people for benefit fraud",
-  "description": "Im Juni 2024 wurde durch Freedom-of-Information-Anfragen von Big Brother Watch bekannt, dass der Risk-Based-Verification-Algorithmus des britischen Department for Work and Pensions zwischen 2020 und 2023 ueber 200.000 Wohngeldbezieher:innen faelschlich als Verdachtsfall für Betrug oder Fehler eingestuft hatte. Etwa zwei Drittel der markierten Fälle waren rechtmaessig; trotzdem mussten Betroffene aufwaendige Pruefverfahren durchlaufen. Rund 4,4 Mio. GBP wurden für Pruefungen ausgegeben, die keinerlei Einsparungen brachten. Buergerrechtler:innen warnten vor systematischer Diskriminierung sozial schwacher Gruppen.",
-  "description_de": "Im Juni 2024 wurde durch Freedom-of-Information-Anfragen von Big Brother Watch bekannt, dass der Risk-Based-Verification-Algorithmus des britischen Department for Work and Pensions zwischen 2020 und 2023 ueber 200.000 Wohngeldbezieher:innen faelschlich als Verdachtsfall für Betrug oder Fehler eingestuft hatte. Etwa zwei Drittel der markierten Fälle waren rechtmaessig; trotzdem mussten Betroffene aufwaendige Pruefverfahren durchlaufen. Rund 4,4 Mio. GBP wurden für Pruefungen ausgegeben, die keinerlei Einsparungen brachten. Buergerrechtler:innen warnten vor systematischer Diskriminierung sozial schwacher Gruppen.",
+  "description": "Im Juni 2024 wurde durch Freedom-of-Information-Anfragen von Big Brother Watch bekannt, dass der Risk-Based-Verification-Algorithmus des britischen Department for Work and Pensions zwischen 2020 und 2023 über 200.000 Wohngeldbezieher:innen fälschlich als Verdachtsfall für Betrug oder Fehler eingestuft hatte. Etwa zwei Drittel der markierten Fälle waren rechtmäßig; trotzdem mussten Betroffene aufwändige Prüfverfahren durchlaufen. Rund 4,4 Mio. GBP wurden für Prüfungen ausgegeben, die keinerlei Einsparungen brachten. Bürgerrechtler:innen warnten vor systematischer Diskriminierung sozial schwacher Gruppen.",
+  "description_de": "Im Juni 2024 wurde durch Freedom-of-Information-Anfragen von Big Brother Watch bekannt, dass der Risk-Based-Verification-Algorithmus des britischen Department for Work and Pensions zwischen 2020 und 2023 über 200.000 Wohngeldbezieher:innen fälschlich als Verdachtsfall für Betrug oder Fehler eingestuft hatte. Etwa zwei Drittel der markierten Fälle waren rechtmäßig; trotzdem mussten Betroffene aufwändige Prüfverfahren durchlaufen. Rund 4,4 Mio. GBP wurden für Prüfungen ausgegeben, die keinerlei Einsparungen brachten. Bürgerrechtler:innen warnten vor systematischer Diskriminierung sozial schwacher Gruppen.",
   "description_en": "In June 2024 Freedom of Information requests by Big Brother Watch revealed that the UK Department for Work and Pensions' Risk-Based Verification algorithm had wrongly flagged more than 200,000 housing benefit claimants for fraud or error between 2020 and 2023. Around two thirds of flagged claims were legitimate, yet claimants had to undergo intensive checks. Roughly GBP 4.4m was spent on checks that saved no money. Civil-rights groups warned of systemic discrimination against vulnerable groups.",
   "startDate": "2024-06",
   "location": {
@@ -26,9 +26,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Sozialleistungen ohne diskriminierende Verdachtsschöpfung",
+    "Schutz vor algorithmischer Diskriminierung",
+    "Recht auf gute Verwaltung",
+    "Schutz personenbezogener Daten",
+    "Recht auf wirksamen Rechtsbehelf"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Sozialleistungen ohne diskriminierende Verdachtsschöpfung",
+    "Schutz vor algorithmischer Diskriminierung",
+    "Recht auf gute Verwaltung",
+    "Schutz personenbezogener Daten",
+    "Recht auf wirksamen Rechtsbehelf"
+  ],
+  "asm:affectedRights_en": [
+    "Right to social benefits without discriminatory suspicion",
+    "Protection against algorithmic discrimination",
+    "Right to good administration",
+    "Protection of personal data",
+    "Right to an effective remedy"
+  ],
   "asm:actors": [
     {
       "name": "UK Department for Work and Pensions (DWP)",
@@ -47,7 +65,64 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-2021",
+      "phase": "infrastructure",
+      "title": "DWP baut Daten-Pipelines und Risk-Scoring-Engines für Sozialleistungen auf",
+      "description": "Ab 2018 testet das britische Department for Work and Pensions automatisierte Mustererkennung gegen Betrug bei Sozialleistungen, motiviert von der internen Schätzung, dass jährlich Milliarden GBP an Universal Credit und Wohngeld verloren gehen. Daten aus Steuer-, Banken- und Verwaltungssystemen werden zu Risk-Scoring-Pipelines zusammengeführt; ab dem Steuerjahr 2021/22 läuft ein produktives Machine-Learning-Modell zur Auswahl von Universal-Credit-Vorschüssen für menschliche Prüfung. Parallel wird die ältere, regelbasierte Risk-Based-Verification (RBV) für Housing Benefit auf Council-Ebene ausgerollt. Die technische Infrastruktur für flächendeckende algorithmische Verdachtsschöpfung gegen Sozialleistungsbezieher:innen steht.",
+      "title_de": "DWP baut Daten-Pipelines und Risk-Scoring-Engines für Sozialleistungen auf",
+      "description_de": "Ab 2018 testet das britische Department for Work and Pensions automatisierte Mustererkennung gegen Betrug bei Sozialleistungen, motiviert von der internen Schätzung, dass jährlich Milliarden GBP an Universal Credit und Wohngeld verloren gehen. Daten aus Steuer-, Banken- und Verwaltungssystemen werden zu Risk-Scoring-Pipelines zusammengeführt; ab dem Steuerjahr 2021/22 läuft ein produktives Machine-Learning-Modell zur Auswahl von Universal-Credit-Vorschüssen für menschliche Prüfung. Parallel wird die ältere, regelbasierte Risk-Based-Verification (RBV) für Housing Benefit auf Council-Ebene ausgerollt. Die technische Infrastruktur für flächendeckende algorithmische Verdachtsschöpfung gegen Sozialleistungsbezieher:innen steht.",
+      "title_en": "DWP builds data pipelines and risk-scoring engines for benefits",
+      "description_en": "From 2018 the UK Department for Work and Pensions tests automated pattern detection for benefit fraud, driven by internal estimates of billions of GBP lost each year on Universal Credit and Housing Benefit. Data from tax, banking and administrative systems is integrated into risk-scoring pipelines; from tax year 2021/22 a production machine-learning model selects Universal Credit advance claims for human review. In parallel the older rule-based Risk-Based Verification (RBV) for Housing Benefit is rolled out at council level. The technical infrastructure for blanket algorithmic suspicion against benefit claimants is in place.",
+      "sources": [
+        "https://www.publictechnology.net/2023/07/12/society-and-welfare/dwp-commits-70m-to-algorithms-and-analytics-to-tackle-benefit-fraud/",
+        "https://www.foxglove.org.uk/2025/05/06/dwp-explain-benefits-fraud-algorithm/"
+      ]
+    },
+    {
+      "date": "2020-2023",
+      "phase": "doctrine",
+      "title": "Doktrin der vorgelagerten Verdachtsschöpfung — RBV-Scoring statt Stichproben",
+      "description": "Die Risk-Based-Verification-Doktrin verschiebt die Verifikationslast vom Verdachtsmoment in die Antragstellung selbst: Statt Stichproben oder konkreter Hinweise berechnet ein Score aus Alter, Geschlecht, Kinderzahl, Mietvertragsart und weiteren Variablen, wie intensiv ein:e Antragsteller:in geprüft wird. Etwa 400.000 Fälle pro Jahr werden als 'höchstes Risiko' an Councils gespiegelt, die für die Durchführung einer Full Case Review zentrale Mittel erhalten — ein finanzieller Anreiz zu mehr Prüfungen. Anders als ein Pilot 2019 nahegelegt hatte (64 % der hochgescorten Fälle vermeintlich fehlerhaft), zeigen spätere Reviews nur 37 % tatsächliche Auffälligkeiten — die Doktrin akzeptiert die hohe False-Positive-Quote als Preis abschreckender Wirkung.",
+      "title_de": "Doktrin der vorgelagerten Verdachtsschöpfung — RBV-Scoring statt Stichproben",
+      "description_de": "Die Risk-Based-Verification-Doktrin verschiebt die Verifikationslast vom Verdachtsmoment in die Antragstellung selbst: Statt Stichproben oder konkreter Hinweise berechnet ein Score aus Alter, Geschlecht, Kinderzahl, Mietvertragsart und weiteren Variablen, wie intensiv ein:e Antragsteller:in geprüft wird. Etwa 400.000 Fälle pro Jahr werden als 'höchstes Risiko' an Councils gespiegelt, die für die Durchführung einer Full Case Review zentrale Mittel erhalten — ein finanzieller Anreiz zu mehr Prüfungen. Anders als ein Pilot 2019 nahegelegt hatte (64 % der hochgescorten Fälle vermeintlich fehlerhaft), zeigen spätere Reviews nur 37 % tatsächliche Auffälligkeiten — die Doktrin akzeptiert die hohe False-Positive-Quote als Preis abschreckender Wirkung.",
+      "title_en": "Doctrine of upstream suspicion — RBV scoring replaces sample checks",
+      "description_en": "The Risk-Based Verification doctrine shifts the verification burden from concrete suspicion into the application stage itself: instead of sample checks or actual leads, a score derived from age, gender, number of children, tenancy type and other variables decides how intensively a claimant is examined. Around 400,000 cases per year are flagged as 'highest risk' to councils, who receive central funding for carrying out a Full Case Review — a financial incentive for more checks. Contrary to a 2019 pilot that suggested 64 % of high-risk cases were erroneous, later reviews show only 37 % real anomalies — the doctrine accepts the high false-positive rate as the price of a deterrent effect.",
+      "sources": [
+        "https://www.thecanary.co/global/world-analysis/2024/06/24/benefit-fraud-dwp-algorithm/",
+        "https://bigbrotherwatch.org.uk/press-coverage/the-guardian-dwp-algorithm-mistakenly-flags-200000-people-for-possible-fraud-and-error/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "event",
+      "title": "Big-Brother-Watch-FOI deckt auf — 200.000 fälschlich markiert, 4,4 Mio. GBP fehlinvestiert",
+      "description": "Im Juni 2024 veröffentlicht Big Brother Watch eine FOI-getriebene Untersuchung, die The Guardian zuerst aufgreift: Über drei Jahre hat der RBV-Algorithmus mehr als 200.000 Wohngeld-Anträge fälschlich als hochriskant eingestuft. Zwei Drittel der Fälle waren rechtmäßig; rund 4,4 Mio. GBP wurden für Prüfungen ausgegeben, die keinerlei Einsparungen brachten. Betroffene mussten Belege beschaffen, Termine wahrnehmen und mit Zahlungsstopps leben. Big Brother Watch zeigt, dass das System sozial schwache Gruppen — Alleinerziehende, junge Mieter:innen, Menschen in prekären Wohnverhältnissen — systematisch überproportional markiert.",
+      "title_de": "Big-Brother-Watch-FOI deckt auf — 200.000 fälschlich markiert, 4,4 Mio. GBP fehlinvestiert",
+      "description_de": "Im Juni 2024 veröffentlicht Big Brother Watch eine FOI-getriebene Untersuchung, die The Guardian zuerst aufgreift: Über drei Jahre hat der RBV-Algorithmus mehr als 200.000 Wohngeld-Anträge fälschlich als hochriskant eingestuft. Zwei Drittel der Fälle waren rechtmäßig; rund 4,4 Mio. GBP wurden für Prüfungen ausgegeben, die keinerlei Einsparungen brachten. Betroffene mussten Belege beschaffen, Termine wahrnehmen und mit Zahlungsstopps leben. Big Brother Watch zeigt, dass das System sozial schwache Gruppen — Alleinerziehende, junge Mieter:innen, Menschen in prekären Wohnverhältnissen — systematisch überproportional markiert.",
+      "title_en": "Big Brother Watch FOI uncovers — 200,000 wrongly flagged, GBP 4.4m wasted",
+      "description_en": "In June 2024 Big Brother Watch publishes a FOI-driven investigation, first reported by The Guardian: over three years the RBV algorithm wrongly classified more than 200,000 housing benefit claims as high risk. Two thirds of the cases were legitimate; some GBP 4.4m was spent on checks that produced no savings. Affected claimants had to assemble paperwork, attend interviews and live with payment stops. Big Brother Watch shows that the system disproportionately flags socially vulnerable groups — single parents, young renters, people in precarious housing arrangements.",
+      "sources": [
+        "https://bigbrotherwatch.org.uk/press-coverage/the-guardian-dwp-algorithm-mistakenly-flags-200000-people-for-possible-fraud-and-error/",
+        "https://incidentdatabase.ai/cite/738/"
+      ]
+    },
+    {
+      "date": "2024-2025",
+      "phase": "consequences",
+      "title": "Public Authorities Bill, Foxglove-Klage und 'Poverty Panopticon'-Debatte",
+      "description": "Auf den Skandal folgt politischer Druck: Public Law Project und Foxglove erzwingen 2025 in einem rechtlichen Verfahren weitere Transparenz über die DWP-Fraud-Algorithmen. Big Brother Watch dokumentiert in 'Inside the UK's Poverty Panopticon' die Ausweitung kommunaler Scoring-Systeme und reicht eine Briefing-Stellungnahme zum Public Authorities (Fraud, Error and Recovery) Bill ein — einem Gesetz, das DWP weitere Datenzugriffe auf Bankkonten von Sozialleistungsbeziehenden geben soll. Die Affäre wird in akademischen Arbeiten zur 'False Consensus Bias' algorithmischer Sozialverwaltung zitiert. Sie etabliert international die Frage, wie ein Sozialstaat algorithmische Verdachtsschöpfung gegen die Schwächsten überhaupt rechtfertigen darf.",
+      "title_de": "Public Authorities Bill, Foxglove-Klage und 'Poverty Panopticon'-Debatte",
+      "description_de": "Auf den Skandal folgt politischer Druck: Public Law Project und Foxglove erzwingen 2025 in einem rechtlichen Verfahren weitere Transparenz über die DWP-Fraud-Algorithmen. Big Brother Watch dokumentiert in 'Inside the UK's Poverty Panopticon' die Ausweitung kommunaler Scoring-Systeme und reicht eine Briefing-Stellungnahme zum Public Authorities (Fraud, Error and Recovery) Bill ein — einem Gesetz, das DWP weitere Datenzugriffe auf Bankkonten von Sozialleistungsbeziehenden geben soll. Die Affäre wird in akademischen Arbeiten zur 'False Consensus Bias' algorithmischer Sozialverwaltung zitiert. Sie etabliert international die Frage, wie ein Sozialstaat algorithmische Verdachtsschöpfung gegen die Schwächsten überhaupt rechtfertigen darf.",
+      "title_en": "Public Authorities Bill, Foxglove litigation and 'Poverty Panopticon' debate",
+      "description_en": "The scandal triggers political pressure: Public Law Project and Foxglove force further transparency on DWP's fraud algorithms through legal proceedings in 2025. Big Brother Watch documents the spread of council-level scoring systems in 'Inside the UK's Poverty Panopticon' and files a briefing on the Public Authorities (Fraud, Error and Recovery) Bill — legislation granting DWP further access to claimants' bank accounts. The case is cited in academic work on 'false consensus bias' in algorithmic welfare administration. It internationally raises the question of how a welfare state can ever justify algorithmic suspicion targeted at the most vulnerable.",
+      "sources": [
+        "https://www.foxglove.org.uk/2025/05/06/dwp-explain-benefits-fraud-algorithm/",
+        "https://bigbrotherwatch.shorthandstories.com/poverty-panopticon/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://bigbrotherwatch.org.uk/press-coverage/the-guardian-dwp-algorithm-mistakenly-flags-200000-people-for-possible-fraud-and-error/",

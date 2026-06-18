@@ -32,9 +32,30 @@
     "censorship",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre und Schutz personenbezogener Daten",
+    "Recht auf Meinungs- und Informationsfreiheit",
+    "Recht auf Versammlungs- und Vereinigungsfreiheit",
+    "Recht auf freie Wahlen und politische Teilhabe",
+    "Recht auf vertrauliche Kommunikation",
+    "Pressefreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre und Schutz personenbezogener Daten",
+    "Recht auf Meinungs- und Informationsfreiheit",
+    "Recht auf Versammlungs- und Vereinigungsfreiheit",
+    "Recht auf freie Wahlen und politische Teilhabe",
+    "Recht auf vertrauliche Kommunikation",
+    "Pressefreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy and protection of personal data",
+    "Right to freedom of opinion and information",
+    "Right to freedom of assembly and association",
+    "Right to free elections and political participation",
+    "Right to confidential communication",
+    "Freedom of the press"
+  ],
   "asm:actors": [
     {
       "name": "Pakistan Telecommunication Authority (PTA)",
@@ -58,7 +79,78 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "phase": "infrastructure",
+      "date": "2018",
+      "title": "Pakistan installiert Sandvine Web Management System v1",
+      "title_de": "Pakistan installiert Sandvine Web Management System v1",
+      "title_en": "Pakistan installs Sandvine Web Management System v1",
+      "description": "Unter der PTI-Regierung beschafft die Pakistan Telecommunication Authority die erste Generation des Web Management System vom kanadischen Hersteller Sandvine — Grundlage für landesweites URL-Filtering und Drosselung.",
+      "description_de": "Unter der PTI-Regierung beschafft die Pakistan Telecommunication Authority die erste Generation des Web Management System vom kanadischen Hersteller Sandvine — Grundlage für landesweites URL-Filtering und Drosselung.",
+      "description_en": "Under the PTI government, the Pakistan Telecommunication Authority procures the first generation of the Web Management System from Canadian vendor Sandvine — the foundation for nationwide URL filtering and throttling."
+    },
+    {
+      "phase": "infrastructure",
+      "date": "2023",
+      "title": "Geedge Networks ersetzt Sandvine durch DPI-Hardware aus China",
+      "title_de": "Geedge Networks ersetzt Sandvine durch DPI-Hardware aus China",
+      "title_en": "Geedge Networks replaces Sandvine with Chinese DPI hardware",
+      "description": "Die chinesische Firma Geedge Networks (mit Bezug zum Cyberspace Administration of China) liefert eine neue Generation Deep-Packet-Inspection-Hardware, die bis zu zwei Millionen aktive Internet-Sessions gleichzeitig blockieren oder verlangsamen kann und auch verschlüsselte Verbindungen klassifiziert.",
+      "description_de": "Die chinesische Firma Geedge Networks (mit Bezug zum Cyberspace Administration of China) liefert eine neue Generation Deep-Packet-Inspection-Hardware, die bis zu zwei Millionen aktive Internet-Sessions gleichzeitig blockieren oder verlangsamen kann und auch verschlüsselte Verbindungen klassifiziert.",
+      "description_en": "Chinese firm Geedge Networks (linked to the Cyberspace Administration of China) supplies a new generation of deep-packet-inspection hardware capable of blocking or slowing up to two million active internet sessions simultaneously and classifying even encrypted connections."
+    },
+    {
+      "phase": "doctrine",
+      "date": "2024-02-08",
+      "title": "Wahltag — Internet-Drosselung gegen PTI",
+      "title_de": "Wahltag — Internet-Drosselung gegen PTI",
+      "title_en": "Election day — internet throttling against PTI",
+      "description": "Die OONI dokumentiert am Wahltag systematische Blockaden der PTI-Website, der Kandidatenseiten und des investigativen Mediums Fact Focus. Mobiles Internet wird in mehreren Provinzen abgeschaltet, X (Twitter) ist landesweit gestört.",
+      "description_de": "Die OONI dokumentiert am Wahltag systematische Blockaden der PTI-Website, der Kandidatenseiten und des investigativen Mediums Fact Focus. Mobiles Internet wird in mehreren Provinzen abgeschaltet, X (Twitter) ist landesweit gestört.",
+      "description_en": "OONI documents systematic blocking of the PTI website, candidate pages and the investigative outlet Fact Focus on election day. Mobile internet is shut down in several provinces, X (Twitter) is throttled nationwide."
+    },
+    {
+      "phase": "event",
+      "date": "2024-07",
+      "title": "PTA-Anordnung: LIMS bei allen Telekoms installieren",
+      "title_de": "PTA-Anordnung: LIMS bei allen Telekoms installieren",
+      "title_en": "PTA order: install LIMS at all telcos",
+      "description": "Die Pakistan Telecommunication Authority verpflichtet alle Mobilfunk- und Festnetzanbieter, das Lawful Intercept Management System einzubauen. Geheimdienste erhalten damit Echtzeit-Zugriff auf rund vier Millionen Mobilanschlüsse gleichzeitig — Anrufprotokolle, SMS und Browsing-Metadaten.",
+      "description_de": "Die Pakistan Telecommunication Authority verpflichtet alle Mobilfunk- und Festnetzanbieter, das Lawful Intercept Management System einzubauen. Geheimdienste erhalten damit Echtzeit-Zugriff auf rund vier Millionen Mobilanschlüsse gleichzeitig — Anrufprotokolle, SMS und Browsing-Metadaten.",
+      "description_en": "The Pakistan Telecommunication Authority orders all mobile and fixed-line operators to install the Lawful Intercept Management System. Intelligence agencies thereby gain real-time access to around four million mobile lines simultaneously — call logs, SMS and browsing metadata."
+    },
+    {
+      "phase": "event",
+      "date": "2024-08",
+      "title": "WMS 2.0 in Betrieb — landesweite Verlangsamung",
+      "title_de": "WMS 2.0 in Betrieb — landesweite Verlangsamung",
+      "title_en": "WMS 2.0 goes live — nationwide slowdown",
+      "description": "Die Aktivierung der chinesischen DPI-Hardware führt zu massiven Geschwindigkeitseinbußen; WhatsApp-Sprachnachrichten, Video-Calls und X-Funktionen werden selektiv blockiert. Die Wireless and Internet Service Providers Association of Pakistan beziffert den wirtschaftlichen Schaden auf bis zu 300 Millionen US-Dollar.",
+      "description_de": "Die Aktivierung der chinesischen DPI-Hardware führt zu massiven Geschwindigkeitseinbußen; WhatsApp-Sprachnachrichten, Video-Calls und X-Funktionen werden selektiv blockiert. Die Wireless and Internet Service Providers Association of Pakistan beziffert den wirtschaftlichen Schaden auf bis zu 300 Millionen US-Dollar.",
+      "description_en": "Activation of the Chinese DPI hardware causes massive speed losses; WhatsApp voice notes, video calls and X features are selectively blocked. The Wireless and Internet Service Providers Association of Pakistan estimates the economic damage at up to 300 million US dollars."
+    },
+    {
+      "phase": "consequences",
+      "date": "2024-11-26",
+      "title": "Al Jazeera deckt geheime Firewall-Tests auf",
+      "title_de": "Al Jazeera deckt geheime Firewall-Tests auf",
+      "title_en": "Al Jazeera reveals secret firewall trials",
+      "description": "Al Jazeera publiziert Belege, dass die Regierung die chinesische Firewall trotz öffentlicher Dementis testet. Net4people und The Register bestätigen mit technischen Messungen die Existenz der DPI-Infrastruktur.",
+      "description_de": "Al Jazeera publiziert Belege, dass die Regierung die chinesische Firewall trotz öffentlicher Dementis testet. Net4people und The Register bestätigen mit technischen Messungen die Existenz der DPI-Infrastruktur.",
+      "description_en": "Al Jazeera publishes evidence that the government is testing the Chinese firewall despite public denials. Net4people and The Register confirm the existence of the DPI infrastructure with technical measurements."
+    },
+    {
+      "phase": "consequences",
+      "date": "2025",
+      "title": "Amnesty: Massenüberwachung von Millionen Pakistanis",
+      "title_de": "Amnesty: Massenüberwachung von Millionen Pakistanis",
+      "title_en": "Amnesty: mass surveillance of millions of Pakistanis",
+      "description": "Amnesty International dokumentiert in einem Bericht, dass LIMS und WMS 2.0 zusammen eine flächendeckende Massenüberwachung ermöglichen — ohne richterliche Kontrolle, ohne öffentliche Rechtsgrundlage und gezielt gegen die politische Opposition eingesetzt.",
+      "description_de": "Amnesty International dokumentiert in einem Bericht, dass LIMS und WMS 2.0 zusammen eine flächendeckende Massenüberwachung ermöglichen — ohne richterliche Kontrolle, ohne öffentliche Rechtsgrundlage und gezielt gegen die politische Opposition eingesetzt.",
+      "description_en": "Amnesty International documents in a report that LIMS and WMS 2.0 together enable blanket mass surveillance — without judicial oversight, without a public legal basis and targeted at the political opposition."
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.aljazeera.com/news/2024/11/26/pakistan-tests-china-like-digital-firewall-to-tighten-online-surveillance",

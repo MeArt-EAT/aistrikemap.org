@@ -31,9 +31,30 @@
     "discrimination",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Diskriminierungsschutz",
+    "Recht auf soziale Sicherheit",
+    "Geschlechtergleichheit",
+    "Würde des Menschen",
+    "Recht auf gute Verwaltung",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Diskriminierungsschutz",
+    "Recht auf soziale Sicherheit",
+    "Geschlechtergleichheit",
+    "Würde des Menschen",
+    "Recht auf gute Verwaltung",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Right to social security",
+    "Gender equality",
+    "Human dignity",
+    "Right to good administration",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Försäkringskassan (Schwedische Sozialversicherungs-Agentur)",
@@ -47,7 +68,86 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2013",
+      "phase": "infrastructure",
+      "title": "Försäkringskassan führt Machine-Learning-Risk-Scoring für Sozialleistungs-Anträge ein",
+      "description": "Spätestens ab 2013 setzt die schwedische Sozialversicherungs-Agentur Försäkringskassan ein Machine-Learning-System ein, das jedem Antrag auf Sozialleistungen einen Risk-Score zuweist. Hoch gescorten Fällen werden zur vertieften Prüfung an Betrugs-Ermittler des Kontroll-Bereichs weitergeleitet. Trainingsdaten, Merkmale und Schwellenwerte werden nicht veröffentlicht. Damit entsteht eine technische Infrastruktur, in der hunderttausende Vorgänge pro Jahr automatisch gewichtet werden, ohne dass Antragstellende oder Aufsicht den Algorithmus prüfen können.",
+      "title_de": "Försäkringskassan führt Machine-Learning-Risk-Scoring für Sozialleistungs-Anträge ein",
+      "description_de": "Spätestens ab 2013 setzt die schwedische Sozialversicherungs-Agentur Försäkringskassan ein Machine-Learning-System ein, das jedem Antrag auf Sozialleistungen einen Risk-Score zuweist. Hoch gescorten Fällen werden zur vertieften Prüfung an Betrugs-Ermittler des Kontroll-Bereichs weitergeleitet. Trainingsdaten, Merkmale und Schwellenwerte werden nicht veröffentlicht. Damit entsteht eine technische Infrastruktur, in der hunderttausende Vorgänge pro Jahr automatisch gewichtet werden, ohne dass Antragstellende oder Aufsicht den Algorithmus prüfen können.",
+      "title_en": "Försäkringskassan introduces machine-learning risk scoring for welfare claims",
+      "description_en": "From at least 2013 onwards Sweden's Social Insurance Agency Försäkringskassan deploys a machine-learning system that assigns a risk score to every welfare claim. High-scored cases are forwarded to fraud investigators in the control department for in-depth examination. Training data, features and thresholds are not made public. This creates a technical infrastructure in which hundreds of thousands of cases per year are automatically weighted without claimants or oversight bodies being able to scrutinise the algorithm.",
+      "sources": [
+        "https://www.computerweekly.com/news/366616576/Swedish-authorities-urged-to-discontinue-AI-welfare-system"
+      ]
+    },
+    {
+      "date": "2013-2024",
+      "phase": "doctrine",
+      "title": "Verwaltungs-Doktrin: 'Daten-getriebene' Betrugs-Bekämpfung verschärft Kontrolle vulnerabler Gruppen",
+      "description": "Politik und Behörden in Schweden rahmen das Risk-Scoring über mehr als ein Jahrzehnt als objektives und effizientes Werkzeug der Betrugs-Bekämpfung. Trotz interner Hinweise auf Verzerrungen wird das System ausgebaut. Forschende und Lighthouse Reports zeigen rückblickend, dass die Doktrin der 'datenbasierten' Kontrolle systematisch dazu führt, dass Frauen, Menschen mit ausländischem Hintergrund, Geringverdienende und Personen ohne Hochschulabschluss überproportional ins Visier geraten, während wohlhabende Männer mit tatsächlichem Betrugs-Verhalten häufig unentdeckt bleiben.",
+      "title_de": "Verwaltungs-Doktrin: 'Daten-getriebene' Betrugs-Bekämpfung verschärft Kontrolle vulnerabler Gruppen",
+      "description_de": "Politik und Behörden in Schweden rahmen das Risk-Scoring über mehr als ein Jahrzehnt als objektives und effizientes Werkzeug der Betrugs-Bekämpfung. Trotz interner Hinweise auf Verzerrungen wird das System ausgebaut. Forschende und Lighthouse Reports zeigen rückblickend, dass die Doktrin der 'datenbasierten' Kontrolle systematisch dazu führt, dass Frauen, Menschen mit ausländischem Hintergrund, Geringverdienende und Personen ohne Hochschulabschluss überproportional ins Visier geraten, während wohlhabende Männer mit tatsächlichem Betrugs-Verhalten häufig unentdeckt bleiben.",
+      "title_en": "Administrative doctrine: 'data-driven' fraud control tightens scrutiny of vulnerable groups",
+      "description_en": "For more than a decade Swedish politicians and authorities frame risk scoring as an objective and efficient tool for fraud control. Despite internal warnings about bias, the system is expanded. Researchers and Lighthouse Reports later show that the doctrine of 'data-driven' control systematically focuses on women, people with foreign backgrounds, low-income earners and those without university degrees, while wealthy men engaged in actual fraud often remain undetected.",
+      "sources": [
+        "https://babl.ai/swedish-welfare-agencys-ai-system-faces-accusations-of-discrimination-and-bias/"
+      ]
+    },
+    {
+      "date": "2024-11-27",
+      "phase": "event",
+      "title": "Lighthouse Reports und Svenska Dagbladet veröffentlichen 'Sweden's Suspicion Machine'",
+      "description": "Am 27. November 2024 erscheint die gemeinsame Recherche von Lighthouse Reports und Svenska Dagbladet. Die Reporter testen das Försäkringskassan-System gegen sechs etablierte Fairness-Metriken (u.a. demographic parity, predictive parity, false-positive-Raten) und können quantitativ nachweisen, dass es Frauen, Menschen mit ausländischem Hintergrund, Geringverdienende und Antragstellende ohne Hochschulabschluss überproportional als Verdachtsfall markiert. Frauen werden 1,5-mal häufiger Ziel von Ermittlungen, obwohl sie statistisch nicht mehr Fehler machen.",
+      "title_de": "Lighthouse Reports und Svenska Dagbladet veröffentlichen 'Sweden's Suspicion Machine'",
+      "description_de": "Am 27. November 2024 erscheint die gemeinsame Recherche von Lighthouse Reports und Svenska Dagbladet. Die Reporter testen das Försäkringskassan-System gegen sechs etablierte Fairness-Metriken (u.a. demographic parity, predictive parity, false-positive-Raten) und können quantitativ nachweisen, dass es Frauen, Menschen mit ausländischem Hintergrund, Geringverdienende und Antragstellende ohne Hochschulabschluss überproportional als Verdachtsfall markiert. Frauen werden 1,5-mal häufiger Ziel von Ermittlungen, obwohl sie statistisch nicht mehr Fehler machen.",
+      "title_en": "Lighthouse Reports and Svenska Dagbladet publish 'Sweden's Suspicion Machine'",
+      "description_en": "On 27 November 2024 the joint investigation by Lighthouse Reports and Svenska Dagbladet is published. Reporters test the Försäkringskassan system against six established fairness metrics (including demographic parity, predictive parity and false-positive rates) and quantitatively show that it disproportionately flags women, people with foreign backgrounds, low-income earners and applicants without university degrees as suspects. Women are 1.5 times more likely to be targeted for investigation despite making no more errors than men statistically.",
+      "sources": [
+        "https://www.lighthousereports.com/investigation/swedens-suspicion-machine/"
+      ]
+    },
+    {
+      "date": "2024-11-27",
+      "phase": "event",
+      "title": "Amnesty International: System ist 'entmenschlichend' und muss abgeschaltet werden",
+      "description": "Parallel zur Lighthouse-Veröffentlichung fordert Amnesty International die schwedischen Behörden auf, das System sofort einzustellen. David Nolan, Senior Investigative Researcher bei Amnesty Tech, beschreibt das Risk-Scoring als 'entmenschlichend' und vergleicht die Wirkung auf betroffene Communities mit einer 'Hexenjagd'. Die NGO ordnet den Fall in eine Serie europäischer Sozial-Algorithmen-Skandale ein (u.a. Niederlande, Dänemark) und sieht in ihm einen klaren Verstoß gegen die EU-Grundrechtecharta und potenziell den EU AI Act.",
+      "title_de": "Amnesty International: System ist 'entmenschlichend' und muss abgeschaltet werden",
+      "description_de": "Parallel zur Lighthouse-Veröffentlichung fordert Amnesty International die schwedischen Behörden auf, das System sofort einzustellen. David Nolan, Senior Investigative Researcher bei Amnesty Tech, beschreibt das Risk-Scoring als 'entmenschlichend' und vergleicht die Wirkung auf betroffene Communities mit einer 'Hexenjagd'. Die NGO ordnet den Fall in eine Serie europäischer Sozial-Algorithmen-Skandale ein (u.a. Niederlande, Dänemark) und sieht in ihm einen klaren Verstoß gegen die EU-Grundrechtecharta und potenziell den EU AI Act.",
+      "title_en": "Amnesty International: system is 'dehumanising' and must be shut down",
+      "description_en": "In parallel with the Lighthouse publication, Amnesty International calls on Swedish authorities to discontinue the system immediately. David Nolan, Senior Investigative Researcher at Amnesty Tech, describes the risk scoring as 'dehumanising' and compares its impact on affected communities to a 'witch hunt'. The NGO places the case in a series of European welfare-algorithm scandals (including the Netherlands and Denmark) and sees it as a clear violation of the EU Charter of Fundamental Rights and potentially the EU AI Act.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/news/2024/11/sweden-authorities-must-discontinue-discriminatory-ai-systems-used-by-welfare-agency/"
+      ]
+    },
+    {
+      "date": "2024-11",
+      "phase": "consequences",
+      "title": "Försäkringskassan setzt System während laufender Inspektion außer Betrieb",
+      "description": "Auf den öffentlichen Druck reagiert die Behörde, indem sie die Nutzung des umstrittenen Modells während einer offiziellen Inspektion aussetzt. Computer Weekly und andere Fachmedien berichten von einer faktischen, vorläufigen Abschaltung der ML-gestützten Risk-Scores für Sozialleistungs-Anträge. Eine vollständige Aufarbeitung, Veröffentlichung der Modell-Dokumentation oder Wiedergutmachung für historisch falsch gescorte Antragstellende bleibt zu diesem Zeitpunkt aus.",
+      "title_de": "Försäkringskassan setzt System während laufender Inspektion außer Betrieb",
+      "description_de": "Auf den öffentlichen Druck reagiert die Behörde, indem sie die Nutzung des umstrittenen Modells während einer offiziellen Inspektion aussetzt. Computer Weekly und andere Fachmedien berichten von einer faktischen, vorläufigen Abschaltung der ML-gestützten Risk-Scores für Sozialleistungs-Anträge. Eine vollständige Aufarbeitung, Veröffentlichung der Modell-Dokumentation oder Wiedergutmachung für historisch falsch gescorte Antragstellende bleibt zu diesem Zeitpunkt aus.",
+      "title_en": "Försäkringskassan suspends the system during the ongoing inspection",
+      "description_en": "In response to public pressure the agency suspends use of the contested model during an official inspection. Computer Weekly and other specialist outlets report a de facto, preliminary shutdown of the ML-based risk scores for welfare claims. A full reckoning, publication of model documentation or redress for historically miscored applicants does not yet take place at this stage.",
+      "sources": [
+        "https://www.computerweekly.com/news/366634703/Swedish-welfare-authorities-suspend-discriminatory-AI-model"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Präzedenz für Europa: 'Suspicion Machine' wird Referenzfall gegen Welfare-Algorithmen",
+      "description": "Der Fall Försäkringskassan reiht sich in eine Serie europäischer Skandale um diskriminierende Sozial-Algorithmen ein (Toeslagenaffaire NL, dänische Udbetaling Danmark, französische CAF) und wird zum Argument von NGOs, Datenschutzbehörden und EU-Parlamentariern, automatisierte Risk-Scoring-Systeme im Sozialbereich entweder zu verbieten oder unter strenge Aufsicht und Transparenzpflichten zu stellen. Lighthouse Reports und Amnesty nutzen die schwedischen Daten als Blaupause für weitere Untersuchungen.",
+      "title_de": "Präzedenz für Europa: 'Suspicion Machine' wird Referenzfall gegen Welfare-Algorithmen",
+      "description_de": "Der Fall Försäkringskassan reiht sich in eine Serie europäischer Skandale um diskriminierende Sozial-Algorithmen ein (Toeslagenaffaire NL, dänische Udbetaling Danmark, französische CAF) und wird zum Argument von NGOs, Datenschutzbehörden und EU-Parlamentariern, automatisierte Risk-Scoring-Systeme im Sozialbereich entweder zu verbieten oder unter strenge Aufsicht und Transparenzpflichten zu stellen. Lighthouse Reports und Amnesty nutzen die schwedischen Daten als Blaupause für weitere Untersuchungen.",
+      "title_en": "European precedent: the 'Suspicion Machine' becomes a reference case against welfare algorithms",
+      "description_en": "The Försäkringskassan case joins a series of European scandals around discriminatory welfare algorithms (the Dutch toeslagenaffaire, Denmark's Udbetaling Danmark, France's CAF) and is used by NGOs, data protection authorities and EU parliamentarians to argue that automated risk-scoring systems in social security must either be banned or placed under strict oversight and transparency obligations. Lighthouse Reports and Amnesty use the Swedish data as a blueprint for further investigations.",
+      "sources": [
+        "https://www.amnestyusa.org/press-releases/sweden-authorities-must-discontinue-discriminatory-ai-systems-used-by-welfare-agency/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.lighthousereports.com/investigation/swedens-suspicion-machine/",

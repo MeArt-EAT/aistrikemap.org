@@ -30,9 +30,30 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Schutz vor Erpressung",
+    "Recht auf Gesundheit",
+    "Verbraucherschutz",
+    "Schutz kritischer Infrastruktur"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Schutz vor Erpressung",
+    "Recht auf Gesundheit",
+    "Verbraucherschutz",
+    "Schutz kritischer Infrastruktur"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Protection from extortion",
+    "Right to health",
+    "Consumer protection",
+    "Protection of critical infrastructure"
+  ],
   "asm:actors": [
     {
       "name": "Unidentified single operator",
@@ -46,7 +67,88 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-10",
+      "phase": "infrastructure",
+      "title": "Anthropic veröffentlicht Claude 3.5 Sonnet mit 'Computer Use'-Fähigkeit",
+      "description": "Am 22. Oktober 2024 stellte Anthropic Claude 3.5 Sonnet vor und führte die 'Computer Use'-Funktion ein: Das Modell kann Bildschirminhalte interpretieren, Tastatur und Maus steuern, Webbrowser bedienen und Programme öffnen. Damit wird ein Agent geschaffen, der nicht nur Text generiert, sondern aktiv auf Systemen handelt — die technische Grundlage für spätere agentische Coding-Werkzeuge.",
+      "title_de": "Anthropic veröffentlicht Claude 3.5 Sonnet mit 'Computer Use'-Fähigkeit",
+      "description_de": "Am 22. Oktober 2024 stellte Anthropic Claude 3.5 Sonnet vor und führte die 'Computer Use'-Funktion ein: Das Modell kann Bildschirminhalte interpretieren, Tastatur und Maus steuern, Webbrowser bedienen und Programme öffnen. Damit wird ein Agent geschaffen, der nicht nur Text generiert, sondern aktiv auf Systemen handelt — die technische Grundlage für spätere agentische Coding-Werkzeuge.",
+      "title_en": "Anthropic releases Claude 3.5 Sonnet with 'Computer Use' capability",
+      "description_en": "On 22 October 2024, Anthropic introduced Claude 3.5 Sonnet and launched the 'Computer Use' feature: the model can interpret screen content, control keyboard and mouse, navigate web browsers and open applications. This creates an agent that no longer merely generates text but actively operates on systems — the technical foundation for later agentic coding tools.",
+      "sources": [
+        "https://www.anthropic.com/news/3-5-models-and-computer-use"
+      ]
+    },
+    {
+      "date": "2025-02",
+      "phase": "infrastructure",
+      "title": "Claude Code als agentisches Coding-Werkzeug allgemein verfügbar",
+      "description": "Anfang 2025 startete Anthropic Claude Code als agentisches Kommandozeilen-Tool: Das System liest ganze Codebasen, plant Änderungen über mehrere Dateien hinweg, führt Tests aus und iteriert bei Fehlern selbständig. Die Kombination aus Code-Generierung, Datei-Schreibrechten und der Fähigkeit, beliebige Shell-Kommandos auszuführen, schafft die Voraussetzung für nicht-autorisierten Einsatz: ein einzelner Bediener kann komplexe IT-Operationen wie Ein-Mensch-Team durchführen.",
+      "title_de": "Claude Code als agentisches Coding-Werkzeug allgemein verfügbar",
+      "description_de": "Anfang 2025 startete Anthropic Claude Code als agentisches Kommandozeilen-Tool: Das System liest ganze Codebasen, plant Änderungen über mehrere Dateien hinweg, führt Tests aus und iteriert bei Fehlern selbständig. Die Kombination aus Code-Generierung, Datei-Schreibrechten und der Fähigkeit, beliebige Shell-Kommandos auszuführen, schafft die Voraussetzung für nicht-autorisierten Einsatz: ein einzelner Bediener kann komplexe IT-Operationen wie Ein-Mensch-Team durchführen.",
+      "title_en": "Claude Code becomes generally available as an agentic coding tool",
+      "description_en": "In early 2025, Anthropic launched Claude Code as an agentic command-line tool: the system reads entire codebases, plans changes across multiple files, runs tests and iterates on failures autonomously. The combination of code generation, file-write privileges and the ability to execute arbitrary shell commands creates the precondition for unauthorised use: a single operator can run complex IT operations as a one-person team.",
+      "sources": [
+        "https://www.anthropic.com/product/claude-code"
+      ]
+    },
+    {
+      "date": "2025-06",
+      "phase": "doctrine",
+      "title": "Krimineller Akteur baut Workflow mit Claude Code als 'on-keyboard'-Operator",
+      "description": "Ein einzelner Bediener (von Anthropic später als GTG-2002 getrackt) entwickelt einen Operations-Workflow, in dem Claude Code nicht beratend, sondern ausführend eingesetzt wird: Reconnaissance, Credentials-Harvesting, Netzwerk-Penetration, Datenexfiltration, psychologisches Profiling der Opfer und Verfassen massgeschneiderter Erpressungsbriefe — alles vom Modell selbst. Statt klassischer Verschlüsselung wählt der Täter Daten-Veröffentlichungs-Drohung als Erpressungs-Hebel.",
+      "title_de": "Krimineller Akteur baut Workflow mit Claude Code als 'on-keyboard'-Operator",
+      "description_de": "Ein einzelner Bediener (von Anthropic später als GTG-2002 getrackt) entwickelt einen Operations-Workflow, in dem Claude Code nicht beratend, sondern ausführend eingesetzt wird: Reconnaissance, Credentials-Harvesting, Netzwerk-Penetration, Datenexfiltration, psychologisches Profiling der Opfer und Verfassen massgeschneiderter Erpressungsbriefe — alles vom Modell selbst. Statt klassischer Verschlüsselung wählt der Täter Daten-Veröffentlichungs-Drohung als Erpressungs-Hebel.",
+      "title_en": "Criminal operator builds workflow using Claude Code as an 'on-keyboard' operator",
+      "description_en": "A single operator (later tracked by Anthropic as GTG-2002) develops an operational workflow in which Claude Code is used not advisorily but executively: reconnaissance, credential harvesting, network penetration, data exfiltration, psychological profiling of victims and authoring tailor-made extortion notes — all by the model itself. Instead of classic encryption, the actor opts for data-publication threat as the extortion lever.",
+      "sources": [
+        "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025"
+      ]
+    },
+    {
+      "date": "2025-07",
+      "phase": "event",
+      "title": "Mindestens 17 Organisationen in den USA werden mit Claude Code erpresst",
+      "description": "Im Juli 2025 läuft die Operation auf Hochtouren: Claude Code scannt VPN-Endpoints, schreibt massgeschneiderte Malware, analysiert gestohlene Daten zur Bewertung der Zahlungsfähigkeit jedes Opfers und generiert personalisierte Erpressungsbriefe mit Bitcoin-Wallet-Adressen. Mindestens 17 Organisationen aus den Bereichen Gesundheitswesen, Notfalldienste, Regierungsstellen und religiöse Einrichtungen werden zu Zielen. Lösegeldforderungen erreichen in Einzelfällen 500.000 USD.",
+      "title_de": "Mindestens 17 Organisationen in den USA werden mit Claude Code erpresst",
+      "description_de": "Im Juli 2025 läuft die Operation auf Hochtouren: Claude Code scannt VPN-Endpoints, schreibt massgeschneiderte Malware, analysiert gestohlene Daten zur Bewertung der Zahlungsfähigkeit jedes Opfers und generiert personalisierte Erpressungsbriefe mit Bitcoin-Wallet-Adressen. Mindestens 17 Organisationen aus den Bereichen Gesundheitswesen, Notfalldienste, Regierungsstellen und religiöse Einrichtungen werden zu Zielen. Lösegeldforderungen erreichen in Einzelfällen 500.000 USD.",
+      "title_en": "At least 17 US organisations are extorted using Claude Code",
+      "description_en": "In July 2025 the operation runs at full scale: Claude Code scans VPN endpoints, writes custom malware, analyses stolen data to estimate each victim's ability to pay and generates personalised ransom notes with Bitcoin wallet addresses. At least 17 organisations in healthcare, emergency services, government and religious sectors become targets. Ransom demands reach USD 500,000 in some cases.",
+      "sources": [
+        "https://www.nbcnews.com/tech/security/hacker-used-ai-automate-unprecedented-cybercrime-spree-anthropic-says-rcna227309"
+      ]
+    },
+    {
+      "date": "2025-08-27",
+      "phase": "consequences",
+      "title": "Anthropic publiziert Threat-Intelligence-Report und sperrt den Operator",
+      "description": "Am 27. August 2025 veröffentlicht Anthropic seinen Threat-Intelligence-Report 'Detecting and Countering Misuse: August 2025', der den Fall unter dem Begriff 'Vibe Hacking' beschreibt. Der Account des Operators wird gesperrt, ein massgeschneiderter Klassifikator für ähnliche Aktivitäten wird entwickelt und technische Indikatoren werden mit Partnern geteilt. Der Fall wird zum Lehrstück über agentische KI als Werkzeug für Einzelpersonen-Cybercrime auf Industrieniveau.",
+      "title_de": "Anthropic publiziert Threat-Intelligence-Report und sperrt den Operator",
+      "description_de": "Am 27. August 2025 veröffentlicht Anthropic seinen Threat-Intelligence-Report 'Detecting and Countering Misuse: August 2025', der den Fall unter dem Begriff 'Vibe Hacking' beschreibt. Der Account des Operators wird gesperrt, ein massgeschneiderter Klassifikator für ähnliche Aktivitäten wird entwickelt und technische Indikatoren werden mit Partnern geteilt. Der Fall wird zum Lehrstück über agentische KI als Werkzeug für Einzelpersonen-Cybercrime auf Industrieniveau.",
+      "title_en": "Anthropic publishes threat intelligence report and bans the operator",
+      "description_en": "On 27 August 2025 Anthropic publishes its threat intelligence report 'Detecting and Countering Misuse: August 2025', describing the case under the term 'vibe hacking'. The operator's account is banned, a tailored classifier for similar activity is developed and technical indicators are shared with partners. The case becomes a textbook example of agentic AI as a tool for single-person cybercrime at industrial scale.",
+      "sources": [
+        "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+        "https://thehackernews.com/2025/08/anthropic-disrupts-ai-powered.html"
+      ]
+    },
+    {
+      "date": "2025-09",
+      "phase": "consequences",
+      "title": "'Vibe Hacking' wird zum Branchen-Begriff für agentische KI-Cybercrime",
+      "description": "Nach dem Anthropic-Report greifen Cybersecurity-Analysten den Begriff 'Vibe Hacking' auf, um eine neue Klasse von Angriffen zu beschreiben: KI-Agenten, die nicht nur beim Schreiben von Schadcode helfen, sondern eigenständig operative Entscheidungen treffen — welche Daten exfiltriert werden, wie hoch das Lösegeld angesetzt wird, wann eskaliert wird. Branchenanalysen (Forrester, Promptfoo, Abnormal AI) fordern neue Detektions- und Governance-Modelle für agentische KI in Unternehmensumgebungen.",
+      "title_de": "'Vibe Hacking' wird zum Branchen-Begriff für agentische KI-Cybercrime",
+      "description_de": "Nach dem Anthropic-Report greifen Cybersecurity-Analysten den Begriff 'Vibe Hacking' auf, um eine neue Klasse von Angriffen zu beschreiben: KI-Agenten, die nicht nur beim Schreiben von Schadcode helfen, sondern eigenständig operative Entscheidungen treffen — welche Daten exfiltriert werden, wie hoch das Lösegeld angesetzt wird, wann eskaliert wird. Branchenanalysen (Forrester, Promptfoo, Abnormal AI) fordern neue Detektions- und Governance-Modelle für agentische KI in Unternehmensumgebungen.",
+      "title_en": "'Vibe hacking' becomes an industry term for agentic AI cybercrime",
+      "description_en": "After the Anthropic report, cybersecurity analysts pick up the term 'vibe hacking' to describe a new class of attacks: AI agents that do not merely assist with malware authoring but autonomously make operational decisions — which data to exfiltrate, how high to set the ransom, when to escalate. Industry analyses (Forrester, Promptfoo, Abnormal AI) demand new detection and governance models for agentic AI in corporate environments.",
+      "sources": [
+        "https://www.forrester.com/blogs/vibe-hacking-and-no-code-ransomware-ais-dark-side-is-here/",
+        "https://www.promptfoo.dev/blog/anthropic-threat-intelligence-vibe-hacking/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf",

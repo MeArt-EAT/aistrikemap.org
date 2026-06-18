@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Zugang zu Informationen",
+    "Meinungsfreiheit",
+    "Verbraucherschutz",
+    "Recht auf wirtschaftliche Teilhabe"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Zugang zu Informationen",
+    "Meinungsfreiheit",
+    "Verbraucherschutz",
+    "Recht auf wirtschaftliche Teilhabe"
+  ],
+  "asm:affectedRights_en": [
+    "Right to access information",
+    "Freedom of expression",
+    "Consumer protection",
+    "Right to economic participation"
+  ],
   "asm:actors": [
     {
       "name": "Cloudflare",
@@ -41,7 +56,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Cloudflare führt Machine-Learning-basiertes Bot Management ein",
+      "description": "Cloudflare launcht 2019 sein Bot-Management-Produkt mit dem ersten ML-Detektionsmodell (ML1), das jede HTTP-Anfrage anhand zahlreicher Merkmale als Bot oder Mensch einstuft. Das System wird zentraler Bestandteil der Cloudflare-Edge und wird in den Folgejahren mit Feature-Konfigurationsdateien gefüttert, die mehrfach täglich aus internen ClickHouse-Datenbanken generiert und an alle Edge-Server ausgerollt werden.",
+      "title_de": "Cloudflare führt Machine-Learning-basiertes Bot Management ein",
+      "description_de": "Cloudflare launcht 2019 sein Bot-Management-Produkt mit dem ersten ML-Detektionsmodell (ML1), das jede HTTP-Anfrage anhand zahlreicher Merkmale als Bot oder Mensch einstuft. Das System wird zentraler Bestandteil der Cloudflare-Edge und wird in den Folgejahren mit Feature-Konfigurationsdateien gefüttert, die mehrfach täglich aus internen ClickHouse-Datenbanken generiert und an alle Edge-Server ausgerollt werden.",
+      "title_en": "Cloudflare launches machine-learning-based Bot Management",
+      "description_en": "In 2019 Cloudflare launches its Bot Management product with its first ML detection model (ML1) that classifies each HTTP request as bot or human using many features. The system becomes a core part of Cloudflare's edge and is fed by feature configuration files generated multiple times per day from internal ClickHouse databases and pushed out to every edge server.",
+      "sources": [
+        "https://blog.cloudflare.com/cloudflare-bot-management-machine-learning-and-more/"
+      ]
+    },
+    {
+      "date": "2024-2025",
+      "phase": "doctrine",
+      "title": "Cloudflare wird de-facto-Gatekeeper für etwa 20 Prozent des Web-Traffics",
+      "description": "Cloudflares Geschäftsmodell als Reverse-Proxy und CDN macht das Unternehmen bis 2025 zum kritischen Single-Point-of-Failure für rund ein Fünftel aller Websites weltweit, von Banken über Behörden bis zu Social Media. Trotz wiederholter Warnungen aus der Netzwerk-Community baut Cloudflare die Abhängigkeit interner Subsysteme — inklusive ML-Bot-Management — zur Pflichtschiene für jeden Edge-Request aus, ohne externe regulatorische Resilienz-Vorgaben.",
+      "title_de": "Cloudflare wird de-facto-Gatekeeper für etwa 20 Prozent des Web-Traffics",
+      "description_de": "Cloudflares Geschäftsmodell als Reverse-Proxy und CDN macht das Unternehmen bis 2025 zum kritischen Single-Point-of-Failure für rund ein Fünftel aller Websites weltweit, von Banken über Behörden bis zu Social Media. Trotz wiederholter Warnungen aus der Netzwerk-Community baut Cloudflare die Abhängigkeit interner Subsysteme — inklusive ML-Bot-Management — zur Pflichtschiene für jeden Edge-Request aus, ohne externe regulatorische Resilienz-Vorgaben.",
+      "title_en": "Cloudflare becomes de-facto gatekeeper for roughly 20 percent of web traffic",
+      "description_en": "By 2025 Cloudflare's business model as reverse proxy and CDN has made the company a critical single-point-of-failure for about one fifth of all websites worldwide, from banks and government agencies to social platforms. Despite repeated warnings from the networking community, Cloudflare deepens the role of internal subsystems including ML-driven Bot Management as a mandatory dependency for every edge request, with no external regulatory resilience requirement.",
+      "sources": [
+        "https://www.cloudflare.com/products/bot-management/"
+      ]
+    },
+    {
+      "date": "2025-11-18",
+      "phase": "event",
+      "title": "ClickHouse-Berechtigungsänderung lässt Bot-Management-Feature-Datei über das Limit wachsen",
+      "description": "Am 18. November 2025 um 11:05 UTC wird eine Berechtigungsänderung im ClickHouse-Cluster ausgerollt. Die geänderte Sicht liefert ab sofort Spalten-Metadaten doppelt zurück, sodass die alle paar Minuten neu generierte Bot-Management-Feature-Datei statt rund 60 Features plötzlich über 200 Einträge enthält. Edge-Server, die die Datei laden, panicken am Hardlimit und geben HTTP-5XX-Fehler aus; ab 11:20 UTC bricht das Cloudflare-Kernnetz weltweit ein, was rund 2,4 Milliarden Internetnutzer betrifft.",
+      "title_de": "ClickHouse-Berechtigungsänderung lässt Bot-Management-Feature-Datei über das Limit wachsen",
+      "description_de": "Am 18. November 2025 um 11:05 UTC wird eine Berechtigungsänderung im ClickHouse-Cluster ausgerollt. Die geänderte Sicht liefert ab sofort Spalten-Metadaten doppelt zurück, sodass die alle paar Minuten neu generierte Bot-Management-Feature-Datei statt rund 60 Features plötzlich über 200 Einträge enthält. Edge-Server, die die Datei laden, panicken am Hardlimit und geben HTTP-5XX-Fehler aus; ab 11:20 UTC bricht das Cloudflare-Kernnetz weltweit ein, was rund 2,4 Milliarden Internetnutzer betrifft.",
+      "title_en": "ClickHouse permission change pushes Bot Management feature file past hard limit",
+      "description_en": "At 11:05 UTC on 18 November 2025 a permission change is rolled out in the ClickHouse cluster. The altered view starts returning duplicated column metadata, so the Bot Management feature file regenerated every few minutes now contains over 200 entries instead of about 60. Edge servers loading the file panic at the hard limit and return HTTP 5XX errors; from 11:20 UTC Cloudflare's core network breaks down worldwide, affecting an estimated 2.4 billion internet users.",
+      "sources": [
+        "https://blog.cloudflare.com/18-november-2025-outage/"
+      ]
+    },
+    {
+      "date": "2025-11-18",
+      "phase": "consequences",
+      "title": "Cloudflare identifiziert Ursache und stellt nach 5 Stunden 38 Minuten wieder her",
+      "description": "Um 13:37 UTC isoliert Cloudflare die fehlerhafte Feature-Datei als Auslöser, stoppt die ClickHouse-getriebene Generierung und spielt um 14:30 UTC eine bekannte gute Version ein. Die volle Wiederherstellung aller abhängigen Dienste (Workers KV, Access, Turnstile, Email Security) dauert bis 17:06 UTC, insgesamt 5 Stunden 38 Minuten. Während der Störung sind Behörden-Portale, Banken, Nachrichtenseiten und Social-Media-Dienste in vielen Ländern nicht oder nur eingeschränkt erreichbar.",
+      "title_de": "Cloudflare identifiziert Ursache und stellt nach 5 Stunden 38 Minuten wieder her",
+      "description_de": "Um 13:37 UTC isoliert Cloudflare die fehlerhafte Feature-Datei als Auslöser, stoppt die ClickHouse-getriebene Generierung und spielt um 14:30 UTC eine bekannte gute Version ein. Die volle Wiederherstellung aller abhängigen Dienste (Workers KV, Access, Turnstile, Email Security) dauert bis 17:06 UTC, insgesamt 5 Stunden 38 Minuten. Während der Störung sind Behörden-Portale, Banken, Nachrichtenseiten und Social-Media-Dienste in vielen Ländern nicht oder nur eingeschränkt erreichbar.",
+      "title_en": "Cloudflare identifies cause and restores service after 5 hours 38 minutes",
+      "description_en": "At 13:37 UTC Cloudflare isolates the faulty feature file as the trigger, stops ClickHouse-driven generation and at 14:30 UTC rolls out a known-good version. Full recovery of all dependent services (Workers KV, Access, Turnstile, Email Security) takes until 17:06 UTC, totalling 5 hours 38 minutes. During the disruption government portals, banks, news sites and social media services are unreachable or degraded in many countries.",
+      "sources": [
+        "https://blog.cloudflare.com/18-november-2025-outage/"
+      ]
+    },
+    {
+      "date": "2025-11-19",
+      "phase": "consequences",
+      "title": "Post-Mortem, öffentliche Debatte um Single-Point-of-Failure im Internet",
+      "description": "Cloudflare veröffentlicht am Folgetag ein detailliertes Post-Mortem mit voller Ursachenkette und kündigt Härtungsmaßnahmen an (mehr Feature-Limit-Validierung, Kill-Switches für ML-Konfigurationen, härtere Eingangsfilter). Branchenanalysten, Regulierer und Sicherheitsforscher kritisieren erneut die Konzentrationsrisiken im Web: ein einzelner Konfigurationsfehler bei einem privaten Anbieter habe Milliarden Nutzer und große Teile der kritischen Infrastruktur stillgelegt.",
+      "title_de": "Post-Mortem, öffentliche Debatte um Single-Point-of-Failure im Internet",
+      "description_de": "Cloudflare veröffentlicht am Folgetag ein detailliertes Post-Mortem mit voller Ursachenkette und kündigt Härtungsmaßnahmen an (mehr Feature-Limit-Validierung, Kill-Switches für ML-Konfigurationen, härtere Eingangsfilter). Branchenanalysten, Regulierer und Sicherheitsforscher kritisieren erneut die Konzentrationsrisiken im Web: ein einzelner Konfigurationsfehler bei einem privaten Anbieter habe Milliarden Nutzer und große Teile der kritischen Infrastruktur stillgelegt.",
+      "title_en": "Post-mortem, public debate about single-point-of-failure in the internet",
+      "description_en": "The next day Cloudflare publishes a detailed post-mortem with the full causal chain and announces hardening measures (more feature-limit validation, kill switches for ML configurations, stricter input filters). Industry analysts, regulators and security researchers again criticise concentration risk on the web: a single configuration mistake at one private provider had taken offline billions of users and large parts of critical infrastructure.",
+      "sources": [
+        "https://www.rescana.com/post/cloudflare-bot-management-outage-technical-root-cause-analysis-and-impact-of-the-november-18-2025"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://blog.cloudflare.com/18-november-2025-outage/",
