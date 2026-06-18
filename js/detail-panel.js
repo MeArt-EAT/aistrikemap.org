@@ -9,7 +9,7 @@ const DetailPanel = (function () {
 
   function loadRadarData() {
     if (radarSituations !== null) return;
-    fetch('data/all-radar.json?v=' + Date.now())
+    fetch('data/all-radar.json')
       .then(function (r) { return r.ok ? r.json() : []; })
       .then(function (data) { radarSituations = data; })
       .catch(function () { radarSituations = []; });
@@ -57,12 +57,41 @@ const DetailPanel = (function () {
     }
   }
 
+  function hydrate(incident) {
+    // The lite map bundle omits reverseTimeline/sources/metadata. Fetch the
+    // full per-incident file on first open so timeline + sources render.
+    // No cache-busting param — rely on ETag/max-age revalidation.
+    if (!incident || incident.__hydrated || incident['asm:reverseTimeline'] !== undefined) {
+      return Promise.resolve(incident);
+    }
+    var id = getIncidentId(incident);
+    var slug = id ? id.split('/').pop() : null;
+    if (!slug) { incident.__hydrated = true; return Promise.resolve(incident); }
+    return fetch('data/incidents/' + slug + '.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (full) {
+        if (full) { Object.keys(full).forEach(function (k) { incident[k] = full[k]; }); }
+        incident.__hydrated = true;
+        return incident;
+      })
+      .catch(function () { incident.__hydrated = true; return incident; });
+  }
+
   function show(incident) {
     currentIncident = incident;
     updateUrl(incident);
-    var incidentName = I18n.localized(incident, 'name') || incident.name || '';
-    titleEl.textContent = incidentName;
+    titleEl.textContent = I18n.localized(incident, 'name') || incident.name || '';
+    panelEl.classList.add('open');
+    panelEl.focus();
+    bodyEl.innerHTML = '<p class="detail-description" style="opacity:0.55">…</p>';
+    hydrate(incident).then(function (full) {
+      if (currentIncident !== incident) return; // a different incident was opened meanwhile
+      renderBody(full);
+    });
+  }
 
+  function renderBody(incident) {
+    var incidentName = I18n.localized(incident, 'name') || incident.name || '';
     var severity = incident['asm:severity'] || 1;
     var verLevel = incident['asm:verificationLevel'] || 1;
     var color = StrikeMap.SEVERITY_COLORS[severity];
@@ -224,8 +253,6 @@ const DetailPanel = (function () {
     }
 
     bodyEl.innerHTML = html;
-    panelEl.classList.add('open');
-    panelEl.focus();
 
     // Wire share button
     var shareBtn = bodyEl.querySelector('[data-share]');

@@ -244,7 +244,7 @@ const StrikeMap = (function () {
       });
     }
 
-    fetch('data/all-radar.json?v=' + Date.now())
+    fetch('data/all-radar.json')
       .then(function (r) { return r.ok ? r.json() : []; })
       .then(function (situations) {
         situations.forEach(function (s) {

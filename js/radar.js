@@ -18,7 +18,7 @@ const Radar = (function () {
 
   async function init() {
     try {
-      var resp = await fetch('data/all-radar.json?v=' + Date.now());
+      var resp = await fetch('data/all-radar.json');
       if (!resp.ok) throw new Error('Could not load data/all-radar.json');
       situations = await resp.json();
     } catch (err) {
