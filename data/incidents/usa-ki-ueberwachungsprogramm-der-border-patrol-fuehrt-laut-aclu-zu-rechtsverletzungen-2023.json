@@ -25,9 +25,30 @@
   "asm:incidentType": [
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Bewegungsfreiheit",
+    "Schutz vor Diskriminierung",
+    "Faires Verfahren",
+    "Schutz vor willkürlichen Durchsuchungen",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Bewegungsfreiheit",
+    "Schutz vor Diskriminierung",
+    "Faires Verfahren",
+    "Schutz vor willkürlichen Durchsuchungen",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Freedom of movement",
+    "Protection from discrimination",
+    "Right to a fair trial",
+    "Protection from arbitrary searches",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "US Border Patrol / US Customs and Border Protection (CBP)",
@@ -43,7 +64,52 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "1998",
+      "phase": "infrastructure",
+      "title": "Erste automatische Kennzeichenleser der Grenzpolizei",
+      "description": "Bereits 1998 setzte die US-Grenzpolizei (CBP) automatische Kennzeichenleser (ALPR) ein, zunächst zur Bekämpfung von Menschen- und Drogenhandel. Aus dieser frühen Infrastruktur entwickelte sich über Jahre ein weit über die Grenzregion hinausreichendes Netz fest installierter und verdeckter Kameras.",
+      "title_de": "Erste automatische Kennzeichenleser der Grenzpolizei",
+      "description_de": "Bereits 1998 setzte die US-Grenzpolizei (CBP) automatische Kennzeichenleser (ALPR) ein, zunächst zur Bekämpfung von Menschen- und Drogenhandel. Aus dieser frühen Infrastruktur entwickelte sich über Jahre ein weit über die Grenzregion hinausreichendes Netz fest installierter und verdeckter Kameras.",
+      "title_en": "First automated license plate readers of the Border Patrol",
+      "description_en": "As early as 1998 the US Border Patrol (CBP) deployed automated license plate readers (ALPR), initially to combat human and drug trafficking. Over the years this early infrastructure grew into a network of fixed and covert cameras extending far beyond the border region.",
+      "sources": ["https://gachiefs.com/ga-chief-magazine/policingtechnologies/"]
+    },
+    {
+      "date": "2017-12",
+      "phase": "doctrine",
+      "title": "Behördliche Datenschutz-Bewertung legitimiert breite Kennzeichenerfassung",
+      "description": "Im Dezember 2017 veröffentlichte das Heimatschutzministerium eine Privacy Impact Assessment zur CBP-Kennzeichenlesetechnik, die deren Einsatz und Datenhaltung formal absicherte. Die erfassten Daten flossen in ein vorausschauendes Auswertungsprogramm ein, das die Bewegungen von Millionen Fahrenden auf 'verdächtige' Reisemuster hin durchsucht.",
+      "title_de": "Behördliche Datenschutz-Bewertung legitimiert breite Kennzeichenerfassung",
+      "description_de": "Im Dezember 2017 veröffentlichte das Heimatschutzministerium eine Privacy Impact Assessment zur CBP-Kennzeichenlesetechnik, die deren Einsatz und Datenhaltung formal absicherte. Die erfassten Daten flossen in ein vorausschauendes Auswertungsprogramm ein, das die Bewegungen von Millionen Fahrenden auf 'verdächtige' Reisemuster hin durchsucht.",
+      "title_en": "Agency privacy assessment legitimises broad plate capture",
+      "description_en": "In December 2017 the Department of Homeland Security published a Privacy Impact Assessment for CBP license plate reader technology that formally underpinned its use and data retention. The captured data fed into a predictive analysis program that searches the movements of millions of drivers for 'suspicious' travel patterns.",
+      "sources": ["https://www.dhs.gov/sites/default/files/publications/privacy-pia-cbp049-cbplprtechnology-december2017.pdf"]
+    },
+    {
+      "date": "2023",
+      "phase": "event",
+      "title": "ACLU deckt landesweites verdecktes Überwachungsnetz auf",
+      "description": "Ein Bericht der ACLU beschreibt, wie die Border Patrol heimlich ein landesweites Netz automatischer Kennzeichenleser aufgebaut hat, das die Bewegungen von Millionen Menschen erfasst - mit Kameras bis nach Illinois und Michigan. KI-gestützte 'Intelligence'-Einheiten markieren als verdächtig eingestufte Fahrten; lokale Polizei führt daraufhin Vorwand-Kontrollen mit Befragungen, Durchsuchungen und Beschlagnahmen ohne Tatnachweis durch.",
+      "title_de": "ACLU deckt landesweites verdecktes Überwachungsnetz auf",
+      "description_de": "Ein Bericht der ACLU beschreibt, wie die Border Patrol heimlich ein landesweites Netz automatischer Kennzeichenleser aufgebaut hat, das die Bewegungen von Millionen Menschen erfasst - mit Kameras bis nach Illinois und Michigan. KI-gestützte 'Intelligence'-Einheiten markieren als verdächtig eingestufte Fahrten; lokale Polizei führt daraufhin Vorwand-Kontrollen mit Befragungen, Durchsuchungen und Beschlagnahmen ohne Tatnachweis durch.",
+      "title_en": "ACLU exposes nationwide covert surveillance network",
+      "description_en": "An ACLU report describes how the Border Patrol has secretly built a nationwide network of automated license plate readers that tracks the movements of millions of people - with cameras reaching as far as Illinois and Michigan. AI-assisted 'intelligence' units flag trips deemed suspicious; local police then conduct pretext stops involving questioning, searches and seizures without proof of wrongdoing.",
+      "sources": ["https://www.aclu.org/news/privacy-technology/border-patrol-alpr-dragnet"]
+    },
+    {
+      "date": "2025-05",
+      "phase": "consequences",
+      "title": "Ergänzung durch Gesichtserkennung Mobile Fortify und Clearview AI",
+      "description": "Ab Mai 2025 setzten CBP und ICE die Gesichtserkennungs-App Mobile Fortify ein, mit der Beamte das Gesicht beliebiger Personen im öffentlichen Raum gegen rund 200 Millionen Bilder abgleichen können. CBP schloss zudem einen Vertrag mit Clearview AI für die Intelligence Division ab. Damit wuchs das Überwachungsarsenal vom Kennzeichen- zum Biometrie-Tracking.",
+      "title_de": "Ergänzung durch Gesichtserkennung Mobile Fortify und Clearview AI",
+      "description_de": "Ab Mai 2025 setzten CBP und ICE die Gesichtserkennungs-App Mobile Fortify ein, mit der Beamte das Gesicht beliebiger Personen im öffentlichen Raum gegen rund 200 Millionen Bilder abgleichen können. CBP schloss zudem einen Vertrag mit Clearview AI für die Intelligence Division ab. Damit wuchs das Überwachungsarsenal vom Kennzeichen- zum Biometrie-Tracking.",
+      "title_en": "Augmented by facial recognition Mobile Fortify and Clearview AI",
+      "description_en": "From May 2025 CBP and ICE used the facial recognition app Mobile Fortify, which lets agents match anyone's face in public against around 200 million images. CBP also signed a contract with Clearview AI for its Intelligence Division. The surveillance arsenal thus grew from license plate to biometric tracking.",
+      "sources": ["https://www.techpolicy.press/dhs-ai-surveillance-arsenal-grows-as-agency-defies-courts/"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.aclu.org/news/privacy-technology/border-patrol-alpr-dragnet",

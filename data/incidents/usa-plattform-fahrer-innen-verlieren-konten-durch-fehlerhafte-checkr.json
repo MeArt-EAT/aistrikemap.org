@@ -31,9 +31,27 @@
     "labor-exploitation",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Arbeit",
+    "Faires Verfahren",
+    "Datenschutz",
+    "Schutz vor Diskriminierung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Arbeit",
+    "Faires Verfahren",
+    "Datenschutz",
+    "Schutz vor Diskriminierung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to work",
+    "Due process",
+    "Data protection",
+    "Protection against discrimination",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Checkr, Inc.",
@@ -54,7 +72,74 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "1970",
+      "phase": "infrastructure",
+      "title": "Fair Credit Reporting Act regelt Hintergrundprüfungen",
+      "description": "Der US-Kongress verabschiedet 1970 den Fair Credit Reporting Act (FCRA). Er verpflichtet Auskunfteien und Hintergrundprüfer, 'angemessene Verfahren zur Sicherstellung der grösstmöglichen Richtigkeit' zu führen und Streitfälle binnen 30 Tagen zu prüfen. Damit entsteht der rechtliche Rahmen, dessen wiederholte Verletzung später Checkr vorgeworfen wird.",
+      "title_de": "Fair Credit Reporting Act regelt Hintergrundprüfungen",
+      "description_de": "Der US-Kongress verabschiedet 1970 den Fair Credit Reporting Act (FCRA). Er verpflichtet Auskunfteien und Hintergrundprüfer, 'angemessene Verfahren zur Sicherstellung der grösstmöglichen Richtigkeit' zu führen und Streitfälle binnen 30 Tagen zu prüfen. Damit entsteht der rechtliche Rahmen, dessen wiederholte Verletzung später Checkr vorgeworfen wird.",
+      "title_en": "Fair Credit Reporting Act governs background checks",
+      "description_en": "In 1970 the US Congress passes the Fair Credit Reporting Act (FCRA). It requires consumer reporting agencies and background-check firms to maintain 'reasonable procedures to assure maximum possible accuracy' and to resolve disputes within 30 days. This establishes the legal framework Checkr is later repeatedly accused of violating.",
+      "sources": [
+        "https://www.ftc.gov/legal-library/browse/statutes/fair-credit-reporting-act"
+      ]
+    },
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Checkr baut automatisierte Hintergrundprüfungs-Pipeline auf",
+      "description": "Das 2014 in San Francisco gegründete Start-up Checkr baut sein Geschäft auf Geschwindigkeit und Automatisierung: Millionen Prüfberichte pro Jahr werden durch KI-gestützte Abgleich-Algorithmen erstellt. Checkr wird zur zentralen Prüfinstanz für Gig-Plattformen wie Uber, Lyft, DoorDash und Instacart. Schnelligkeit hat Vorrang vor manueller Kontrolle.",
+      "title_de": "Checkr baut automatisierte Hintergrundprüfungs-Pipeline auf",
+      "description_de": "Das 2014 in San Francisco gegründete Start-up Checkr baut sein Geschäft auf Geschwindigkeit und Automatisierung: Millionen Prüfberichte pro Jahr werden durch KI-gestützte Abgleich-Algorithmen erstellt. Checkr wird zur zentralen Prüfinstanz für Gig-Plattformen wie Uber, Lyft, DoorDash und Instacart. Schnelligkeit hat Vorrang vor manueller Kontrolle.",
+      "title_en": "Checkr builds an automated background-check pipeline",
+      "description_en": "Founded in San Francisco in 2014, the start-up Checkr builds its business on speed and automation, producing millions of screening reports a year through AI-driven matching algorithms. Checkr becomes the central vetting layer for gig platforms such as Uber, Lyft, DoorDash and Instacart, prioritising speed over manual review.",
+      "sources": [
+        "https://research.contrary.com/company/checkr"
+      ]
+    },
+    {
+      "date": "2015",
+      "phase": "doctrine",
+      "title": "Plattform-Modell macht den Algorithmus zum Türsteher",
+      "description": "Gig-Plattformen verlagern das Onboarding vollständig auf automatisierte Prüfungen: Wer im Checkr-Report einen Treffer hat, wird ohne menschliche Einzelfallprüfung deaktiviert. Da Fahrer:innen rechtlich als Selbstständige gelten, fehlen ihnen die Schutzmechanismen abhängig Beschäftigter. Der Algorithmus entscheidet faktisch über den Zugang zur Erwerbsarbeit.",
+      "title_de": "Plattform-Modell macht den Algorithmus zum Türsteher",
+      "description_de": "Gig-Plattformen verlagern das Onboarding vollständig auf automatisierte Prüfungen: Wer im Checkr-Report einen Treffer hat, wird ohne menschliche Einzelfallprüfung deaktiviert. Da Fahrer:innen rechtlich als Selbstständige gelten, fehlen ihnen die Schutzmechanismen abhängig Beschäftigter. Der Algorithmus entscheidet faktisch über den Zugang zur Erwerbsarbeit.",
+      "title_en": "Platform model turns the algorithm into the gatekeeper",
+      "description_en": "Gig platforms shift onboarding entirely onto automated checks: anyone flagged in a Checkr report is deactivated without individual human review. Because drivers are legally classed as independent contractors, they lack the protections of employees. The algorithm effectively decides access to paid work.",
+      "sources": [
+        "https://www.helbocklaw.com/how-uber-and-lyft-background-checks-fail/"
+      ]
+    },
+    {
+      "date": "2019-08-27",
+      "phase": "event",
+      "title": "Recherche deckt fehlerhafte Checkr-Prüfungen auf",
+      "description": "Eine Big-If-True-Recherche dokumentiert am 27. August 2019 Dutzende Fälle, in denen Checkr Plattform-Beschäftigten falsche Strafregister-Treffer, abgelaufene Lizenzen oder Personenverwechslungen zuschrieb. Betroffene verloren ihre Konten und damit ihre Existenzgrundlage, ohne dass die Fehler vor der Deaktivierung geprüft wurden.",
+      "title_de": "Recherche deckt fehlerhafte Checkr-Prüfungen auf",
+      "description_de": "Eine Big-If-True-Recherche dokumentiert am 27. August 2019 Dutzende Fälle, in denen Checkr Plattform-Beschäftigten falsche Strafregister-Treffer, abgelaufene Lizenzen oder Personenverwechslungen zuschrieb. Betroffene verloren ihre Konten und damit ihre Existenzgrundlage, ohne dass die Fehler vor der Deaktivierung geprüft wurden.",
+      "title_en": "Investigation exposes faulty Checkr screenings",
+      "description_en": "A Big If True investigation on 27 August 2019 documents dozens of cases in which Checkr attributed false criminal records, expired licences or identity mix-ups to gig workers. Those affected lost their accounts and their livelihoods before the errors were ever reviewed.",
+      "sources": [
+        "https://www.bigiftrue.org/2019/08/27/uber-lyft-checkr-background-checks/"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "consequences",
+      "title": "Sammelklagen wegen Diskriminierung und FCRA-Verstössen",
+      "description": "Gegen Checkr und die Plattformen häufen sich Klagen: Sammelklagen werfen vor, die Prüfungen benachteiligten schwarze und Latino-Beschäftigte und verletzten den FCRA. Seit Checkrs Gründung wurden rund 70 FCRA-Klagen vor US-Bundesgerichten eingereicht; 2018 zahlte Checkr 4,46 Millionen Dollar in einem Vergleich für rund 96.000 Betroffene.",
+      "title_de": "Sammelklagen wegen Diskriminierung und FCRA-Verstössen",
+      "description_de": "Gegen Checkr und die Plattformen häufen sich Klagen: Sammelklagen werfen vor, die Prüfungen benachteiligten schwarze und Latino-Beschäftigte und verletzten den FCRA. Seit Checkrs Gründung wurden rund 70 FCRA-Klagen vor US-Bundesgerichten eingereicht; 2018 zahlte Checkr 4,46 Millionen Dollar in einem Vergleich für rund 96.000 Betroffene.",
+      "title_en": "Class actions over discrimination and FCRA violations",
+      "description_en": "Lawsuits against Checkr and the platforms mount: class actions allege the checks disadvantaged Black and Latino workers and violated the FCRA. Since Checkr's founding about 70 FCRA suits have been filed in US federal courts; in 2018 Checkr paid 4.46 million dollars in a settlement covering roughly 96,000 people.",
+      "sources": [
+        "https://www.classaction.org/news/class-action-claims-uber-background-checks-discriminate-against-black-latinx-workers",
+        "https://www.agrusslawfirm.com/blog/controversial-background-check-startup-checkr-worth-2-2-billion/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bigiftrue.org/2019/08/27/uber-lyft-checkr-background-checks/",

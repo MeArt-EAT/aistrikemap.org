@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Faires Verfahren",
+    "Unschuldsvermutung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Faires Verfahren",
+    "Unschuldsvermutung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Fair process",
+    "Presumption of innocence",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -45,7 +63,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2008",
+      "phase": "doctrine",
+      "title": "US-Meldepflicht: Provider müssen mutmaßliches CSAM an NCMEC melden",
+      "description": "Der US-amerikanische 18 U.S.C. Paragraph 2258A (etabliert durch den PROTECT Our Children Act von 2008) verpflichtet Anbieter elektronischer Dienste, festgestelltes mutmaßliches Missbrauchsmaterial an die CyberTipline des NCMEC zu melden. NCMEC leitet Meldungen an die Strafverfolgung weiter. Das Gesetz schafft starke Anreize zur aggressiven, automatisierten Erkennung, enthält aber keine Pflicht zur Nutzerbenachrichtigung oder zu einem fairen Wiederherstellungsverfahren bei Fehlalarmen.",
+      "title_de": "US-Meldepflicht: Provider müssen mutmaßliches CSAM an NCMEC melden",
+      "description_de": "Der US-amerikanische 18 U.S.C. Paragraph 2258A (etabliert durch den PROTECT Our Children Act von 2008) verpflichtet Anbieter elektronischer Dienste, festgestelltes mutmaßliches Missbrauchsmaterial an die CyberTipline des NCMEC zu melden. NCMEC leitet Meldungen an die Strafverfolgung weiter. Das Gesetz schafft starke Anreize zur aggressiven, automatisierten Erkennung, enthält aber keine Pflicht zur Nutzerbenachrichtigung oder zu einem fairen Wiederherstellungsverfahren bei Fehlalarmen.",
+      "title_en": "US reporting duty: providers must report suspected CSAM to NCMEC",
+      "description_en": "U.S. law 18 U.S.C. Section 2258A (established by the PROTECT Our Children Act of 2008) requires electronic service providers to report detected suspected abuse material to NCMEC's CyberTipline. NCMEC forwards reports to law enforcement. The law creates strong incentives for aggressive automated detection but imposes no duty of user notification or fair restoration process in cases of false positives.",
+      "sources": [
+        "https://www.koffellaw.com/blog/google-ai-technology-flags-dad-who-took-photos-o/"
+      ]
+    },
+    {
+      "date": "2009",
+      "phase": "infrastructure",
+      "title": "Microsoft entwickelt PhotoDNA - Grundlage der industrieweiten CSAM-Erkennung",
+      "description": "Microsoft entwickelte 2009 die Perceptual-Hashing-Technologie PhotoDNA und spendete sie dem National Center for Missing and Exploited Children (NCMEC). Sie wandelt Bilder in robuste, nicht umkehrbare Hashes um und wurde zum Industriestandard. Google baute darauf aufbauend eigene Erkennungswerkzeuge auf, darunter KI-Klassifikatoren, die nicht nur bekannte Hashes abgleichen, sondern neue, bislang unbekannte Bilder als mutmaßliches Missbrauchsmaterial einstufen.",
+      "title_de": "Microsoft entwickelt PhotoDNA - Grundlage der industrieweiten CSAM-Erkennung",
+      "description_de": "Microsoft entwickelte 2009 die Perceptual-Hashing-Technologie PhotoDNA und spendete sie dem National Center for Missing and Exploited Children (NCMEC). Sie wandelt Bilder in robuste, nicht umkehrbare Hashes um und wurde zum Industriestandard. Google baute darauf aufbauend eigene Erkennungswerkzeuge auf, darunter KI-Klassifikatoren, die nicht nur bekannte Hashes abgleichen, sondern neue, bislang unbekannte Bilder als mutmaßliches Missbrauchsmaterial einstufen.",
+      "title_en": "Microsoft develops PhotoDNA - foundation of industry-wide CSAM detection",
+      "description_en": "In 2009 Microsoft developed the perceptual hashing technology PhotoDNA and donated it to the National Center for Missing and Exploited Children (NCMEC). It converts images into robust, non-reversible hashes and became the industry standard. Google built its own detection tools on top of this, including AI classifiers that not only match known hashes but flag new, previously unknown images as suspected abuse material.",
+      "sources": [
+        "https://technologycoalition.org/wp-content/uploads/CSAM-Identification_Reporting_R3-1.pdf"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Polizei stellt Verfahren ein - Google verweigert Kontowiederherstellung",
+      "description": "Die Polizei von San Francisco ermittelte und stellte fest, dass kein Straftatbestand vorlag und keine Straftat begangen worden war. Trotz der vollständigen Entlastung durch die Strafverfolgung weigerte sich Google, das Konto wiederherzustellen, als Mark dies beantragte. Er verlor dauerhaft den Zugang zu E-Mails, Fotos, Kontakten und seiner Telefonnummer.",
+      "title_de": "Polizei stellt Verfahren ein - Google verweigert Kontowiederherstellung",
+      "description_de": "Die Polizei von San Francisco ermittelte und stellte fest, dass kein Straftatbestand vorlag und keine Straftat begangen worden war. Trotz der vollständigen Entlastung durch die Strafverfolgung weigerte sich Google, das Konto wiederherzustellen, als Mark dies beantragte. Er verlor dauerhaft den Zugang zu E-Mails, Fotos, Kontakten und seiner Telefonnummer.",
+      "title_en": "Police close case - Google refuses to restore account",
+      "description_en": "San Francisco police investigated and determined that no elements of a crime were present and that no crime had occurred. Despite this full exoneration by law enforcement, Google refused to restore the account when Mark requested it. He permanently lost access to his email, photos, contacts and phone number.",
+      "sources": [
+        "https://www.phonearena.com/news/google-wont-reinstate-man-cleared-by-law-enforcement_id142065"
+      ]
+    },
+    {
+      "date": "2021-02",
+      "phase": "event",
+      "title": "Googles KI stuft medizinische Fotos als CSAM ein - Konto gesperrt, Polizei eingeschaltet",
+      "description": "Im Februar 2021 fotografierte ein Vater ('Mark') auf Bitte einer Krankenschwester die entzündete Leistengegend seines Kleinkindes für eine Ferndiagnose. Googles KI-gestützte CSAM-Erkennung stufte die über die Cloud synchronisierten Bilder als Missbrauchsmaterial ein. Google sperrte sein gesamtes Konto - E-Mail, Fotos, Kontakte und die über Google Fi laufende Telefonnummer - und meldete ihn dem NCMEC, was eine Polizeiermittlung auslöste.",
+      "title_de": "Googles KI stuft medizinische Fotos als CSAM ein - Konto gesperrt, Polizei eingeschaltet",
+      "description_de": "Im Februar 2021 fotografierte ein Vater ('Mark') auf Bitte einer Krankenschwester die entzündete Leistengegend seines Kleinkindes für eine Ferndiagnose. Googles KI-gestützte CSAM-Erkennung stufte die über die Cloud synchronisierten Bilder als Missbrauchsmaterial ein. Google sperrte sein gesamtes Konto - E-Mail, Fotos, Kontakte und die über Google Fi laufende Telefonnummer - und meldete ihn dem NCMEC, was eine Polizeiermittlung auslöste.",
+      "title_en": "Google's AI flags medical photos as CSAM - account locked, police notified",
+      "description_en": "In February 2021 a father ('Mark') photographed his toddler's inflamed groin at a nurse's request for a remote diagnosis. Google's AI-based CSAM detection flagged the cloud-synced images as abuse material. Google locked his entire account - email, photos, contacts and the phone number running through Google Fi - and reported him to NCMEC, triggering a police investigation.",
+      "sources": [
+        "https://petapixel.com/2022/08/22/google-flags-photos-of-fathers-sick-son-as-child-abuse-informs-police/"
+      ]
+    },
+    {
+      "date": "2022-08",
+      "phase": "consequences",
+      "title": "New York Times deckt Fall auf - Debatte über Fehlalarme automatisierter Scans",
+      "description": "Im August 2022 berichtete die New York Times über den Fall und löste eine breite Debatte über die Grenzen automatisierter CSAM-Erkennung aus. Kritiker verwiesen auf die Intransparenz der Entscheidungen, fehlende Widerspruchsmöglichkeiten und die Gefahr, dass völlig harmlose medizinische oder familiäre Fotos zu Kontoverlust und Kriminalisierung führen können.",
+      "title_de": "New York Times deckt Fall auf - Debatte über Fehlalarme automatisierter Scans",
+      "description_de": "Im August 2022 berichtete die New York Times über den Fall und löste eine breite Debatte über die Grenzen automatisierter CSAM-Erkennung aus. Kritiker verwiesen auf die Intransparenz der Entscheidungen, fehlende Widerspruchsmöglichkeiten und die Gefahr, dass völlig harmlose medizinische oder familiäre Fotos zu Kontoverlust und Kriminalisierung führen können.",
+      "title_en": "New York Times exposes case - debate over false positives of automated scans",
+      "description_en": "In August 2022 the New York Times reported the case, sparking a broad debate about the limits of automated CSAM detection. Critics pointed to the opacity of the decisions, the lack of appeal mechanisms and the risk that entirely harmless medical or family photos can lead to account loss and criminalization.",
+      "sources": [
+        "https://9to5google.com/2022/08/22/google-locked-account-medical-photo-story/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://petapixel.com/2022/08/22/google-flags-photos-of-fathers-sick-son-as-child-abuse-informs-police/",

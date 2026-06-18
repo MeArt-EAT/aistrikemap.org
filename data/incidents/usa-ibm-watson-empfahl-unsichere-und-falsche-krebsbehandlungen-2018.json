@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Bodily integrity",
+    "Right to life",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "IBM",
@@ -53,7 +71,60 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2012-03",
+      "phase": "infrastructure",
+      "title": "IBM und Memorial Sloan Kettering starten Watson-Kooperation",
+      "description": "Am 22. März 2012 vereinbarten IBM und das Memorial Sloan Kettering Cancer Center (MSK), die Frage-Antwort-Technologie Watson auf die Krebsmedizin anzuwenden. Klinikerinnen und Techniker verbrachten tausende Stunden damit, Watson mit MSK-Falldaten zu 'trainieren', um ein evidenzbasiertes Entscheidungs-Hilfssystem für Onkologen zu schaffen.",
+      "title_de": "IBM und Memorial Sloan Kettering starten Watson-Kooperation",
+      "description_de": "Am 22. März 2012 vereinbarten IBM und das Memorial Sloan Kettering Cancer Center (MSK), die Frage-Antwort-Technologie Watson auf die Krebsmedizin anzuwenden. Klinikerinnen und Techniker verbrachten tausende Stunden damit, Watson mit MSK-Falldaten zu 'trainieren', um ein evidenzbasiertes Entscheidungs-Hilfssystem für Onkologen zu schaffen.",
+      "title_en": "IBM and Memorial Sloan Kettering launch Watson partnership",
+      "description_en": "On 22 March 2012 IBM and Memorial Sloan Kettering Cancer Center (MSK) agreed to apply the Watson question-answering technology to cancer medicine. Clinicians and technologists spent thousands of hours 'teaching' Watson with MSK case data to create an evidence-based decision-support system for oncologists.",
+      "sources": [
+        "https://www.mskcc.org/news-releases/mskcc-ibm-collaborate-applying-watson-technology-help-oncologists"
+      ]
+    },
+    {
+      "date": "2016",
+      "phase": "doctrine",
+      "title": "Watson for Oncology wird als Krebs-Revolution vermarktet",
+      "description": "IBM brachte 2016 'Watson for Oncology' als Produkt auf den Markt und bewarb es als revolutionaere, evidenzbasierte Entscheidungshilfe für Aerzte und Patienten weltweit. Das Geschaeftsmodell setzte auf rasche kommerzielle Ausweitung, obwohl das System nur für wenige Krebsarten trainiert war und sich stark an den lokalen Behandlungsmustern eines einzigen Zentrums orientierte.",
+      "title_de": "Watson for Oncology wird als Krebs-Revolution vermarktet",
+      "description_de": "IBM brachte 2016 'Watson for Oncology' als Produkt auf den Markt und bewarb es als revolutionaere, evidenzbasierte Entscheidungshilfe für Aerzte und Patienten weltweit. Das Geschaeftsmodell setzte auf rasche kommerzielle Ausweitung, obwohl das System nur für wenige Krebsarten trainiert war und sich stark an den lokalen Behandlungsmustern eines einzigen Zentrums orientierte.",
+      "title_en": "Watson for Oncology marketed as a cancer revolution",
+      "description_en": "In 2016 IBM launched 'Watson for Oncology' as a product, promoting it as a revolutionary, evidence-based decision aid for doctors and patients worldwide. The business model relied on rapid commercial expansion, even though the system was trained for only a few cancer types and was heavily shaped by the local treatment patterns of a single centre.",
+      "sources": [
+        "https://www.statnews.com/2017/09/05/watson-ibm-cancer/"
+      ]
+    },
+    {
+      "date": "2018-07-25",
+      "phase": "event",
+      "title": "Interne Dokumente: unsichere und falsche Therapieempfehlungen",
+      "description": "Stat News veroeffentlichte interne IBM-Dokumente, die zeigten, dass Watson for Oncology unsichere und teils gefährliche Therapieempfehlungen ausgab - etwa ein blutungsfoerderndes Medikament für einen fiktiven Lungenkrebspatienten mit schwerer Blutung. Das System war mit hypothetischen Fällen statt mit echten Patientendaten trainiert worden, was die Empfehlungen einseitig und unzureichend belegt machte.",
+      "title_de": "Interne Dokumente: unsichere und falsche Therapieempfehlungen",
+      "description_de": "Stat News veroeffentlichte interne IBM-Dokumente, die zeigten, dass Watson for Oncology unsichere und teils gefährliche Therapieempfehlungen ausgab - etwa ein blutungsfoerderndes Medikament für einen fiktiven Lungenkrebspatienten mit schwerer Blutung. Das System war mit hypothetischen Fällen statt mit echten Patientendaten trainiert worden, was die Empfehlungen einseitig und unzureichend belegt machte.",
+      "title_en": "Internal documents: unsafe and incorrect treatment advice",
+      "description_en": "Stat News published internal IBM documents showing that Watson for Oncology produced unsafe and sometimes dangerous treatment recommendations - such as a bleeding-worsening drug for a hypothetical lung-cancer patient with severe haemorrhaging. The system had been trained on hypothetical cases rather than real patient data, leaving its recommendations narrow and poorly evidenced.",
+      "sources": [
+        "https://www.theverge.com/2018/7/26/17619382/ibms-watson-cancer-ai-healthcare-science"
+      ]
+    },
+    {
+      "date": "2022-01",
+      "phase": "consequences",
+      "title": "Watson Health wird unter Wert verkauft",
+      "description": "Nach dem Vertrauensverlust stoppten oder verkleinerten bis 2018 mehr als ein Dutzend IBM-Partner ihre Onkologie-Projekte mit Watson. IBM stellte Watson for Oncology ein und verkaufte 2022 die Watson-Health-Sparte an die Private-Equity-Firma Francisco Partners (als Merative). Die rund vier Milliarden Dollar teuer aufgebaute Sparte ging für etwa eine Milliarde Dollar weg - ein vielzitiertes Beispiel ueberzogener KI-Versprechen im Gesundheitswesen.",
+      "title_de": "Watson Health wird unter Wert verkauft",
+      "description_de": "Nach dem Vertrauensverlust stoppten oder verkleinerten bis 2018 mehr als ein Dutzend IBM-Partner ihre Onkologie-Projekte mit Watson. IBM stellte Watson for Oncology ein und verkaufte 2022 die Watson-Health-Sparte an die Private-Equity-Firma Francisco Partners (als Merative). Die rund vier Milliarden Dollar teuer aufgebaute Sparte ging für etwa eine Milliarde Dollar weg - ein vielzitiertes Beispiel ueberzogener KI-Versprechen im Gesundheitswesen.",
+      "title_en": "Watson Health sold off below value",
+      "description_en": "After the loss of trust, more than a dozen IBM partners stopped or scaled back their Watson oncology projects by 2018. IBM discontinued Watson for Oncology and in 2022 sold the Watson Health division to private-equity firm Francisco Partners (as Merative). The division, built at a cost of around four billion dollars, went for about one billion - a much-cited example of overblown AI promises in healthcare.",
+      "sources": [
+        "https://slate.com/technology/2022/01/ibm-watson-health-failure-artificial-intelligence.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.statnews.com/wp-content/uploads/2018/09/IBMs-Watson-recommended-unsafe-and-incorrect-cancer-treatments-STAT.pdf",

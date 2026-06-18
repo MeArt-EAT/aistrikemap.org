@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2458 Incidents** · 799 mit Reverse-TL (32.5 %) · 0 Audit-Findings · Bundle 16+ MB |
+| 📊 **Bestand** | **2458 Incidents** · 977 mit Reverse-TL (39.7 %) · 0 Audit-Findings · Bundle 16+ MB |
 | 🔢 **Übergabe-Nr** | **#5** (2026-06-06) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **Sev-4 Batch 2 (150 Cases)**: Workflow stallte 2× nach ~32 Agenten (Runtime-Limit dieser Umgebung) → 70 via Workflow+Resume, 80 via bewährte manuelle Wellen (4 Runden × 20). Sev-4 mit TL: 343 → **493** (73 %). |
-| ➡️ **Nächster Schritt** | **Sev-4 abschließen** (178 ohne TL, ~9 manuelle Wellen) · ODER Sev-3 (953 ohne TL) · ODER AIAAIC Batch D · ODER Frontend-Check |
+| ✅ **Zuletzt fertig** | **Severity-4-Block zu 100 % geschlossen** ✓ (671/671). Letzte 98 Cases via manuelle Wellen (5 Runden × ~20). Sev-5 + Sev-4 jetzt beide vollständig. fix-umlaut-Wortliste um ~45 Begriffe erweitert → 1270 Korpus-Fixes in 343 Files. |
+| ➡️ **Nächster Schritt** | **Sev-3-Block** (953 ohne TL, der grosse Rest) · ODER AIAAIC Batch D · ODER Frontend-Check bei 2458 Markern · ODER Dedup-Backlog abarbeiten |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)

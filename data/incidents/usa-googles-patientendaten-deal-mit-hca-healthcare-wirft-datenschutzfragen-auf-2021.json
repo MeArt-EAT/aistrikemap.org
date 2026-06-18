@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf Gesundheit",
+    "Informationelle Selbstbestimmung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf Gesundheit",
+    "Informationelle Selbstbestimmung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Right to health",
+    "Informational self-determination",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -51,7 +69,60 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-11",
+      "phase": "infrastructure",
+      "title": "Project Nightingale: Google sammelt Millionen Patientenakten von Ascension",
+      "description": "Ab 2019 baute Google im Rahmen von 'Project Nightingale' eine Plattform zur Aggregation und KI-Auswertung von Gesundheitsdaten der Krankenhauskette Ascension auf. Innerhalb von acht Monaten teilte Ascension schätzungsweise 50 Millionen Patientenakten aus 21 Bundesstaaten mit Google. Ein Whistleblower warnte, dass Patient:innen weder ein- noch ausgewilligt werden konnten. Damit etablierte Google die technische Infrastruktur für großflächige Cloud-Verarbeitung klinischer Daten.",
+      "title_de": "Project Nightingale: Google sammelt Millionen Patientenakten von Ascension",
+      "description_de": "Ab 2019 baute Google im Rahmen von 'Project Nightingale' eine Plattform zur Aggregation und KI-Auswertung von Gesundheitsdaten der Krankenhauskette Ascension auf. Innerhalb von acht Monaten teilte Ascension schätzungsweise 50 Millionen Patientenakten aus 21 Bundesstaaten mit Google. Ein Whistleblower warnte, dass Patient:innen weder ein- noch ausgewilligt werden konnten. Damit etablierte Google die technische Infrastruktur für großflächige Cloud-Verarbeitung klinischer Daten.",
+      "title_en": "Project Nightingale: Google amasses millions of Ascension patient records",
+      "description_en": "From 2019, under 'Project Nightingale', Google built a platform to aggregate and apply AI to the health data of hospital chain Ascension. Within eight months Ascension shared an estimated 50 million patient records from 21 states with Google. A whistleblower warned that patients could neither opt in nor out. This established Google's technical infrastructure for large-scale cloud processing of clinical data.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Project_Nightingale"
+      ]
+    },
+    {
+      "date": "2019-12",
+      "phase": "doctrine",
+      "title": "HIPAA Business Associate Agreement als rechtliche Grundlage - HHS billigt Modell",
+      "description": "Die US-Datenschutzregeln des Health Insurance Portability and Accountability Act (HIPAA) erlauben es Anbietern, geschützte Gesundheitsdaten über Business Associate Agreements an Dienstleister weiterzugeben, ohne dass Patient:innen einwilligen müssen. Das Office for Civil Rights des HHS prüfte Project Nightingale und kam zum Schluss, dass es HIPAA-konform war. Dieses Rechtskonstrukt wurde zur Doktrin für nachfolgende Tech-Krankenhaus-Datendeals.",
+      "title_de": "HIPAA Business Associate Agreement als rechtliche Grundlage - HHS billigt Modell",
+      "description_de": "Die US-Datenschutzregeln des Health Insurance Portability and Accountability Act (HIPAA) erlauben es Anbietern, geschützte Gesundheitsdaten über Business Associate Agreements an Dienstleister weiterzugeben, ohne dass Patient:innen einwilligen müssen. Das Office for Civil Rights des HHS prüfte Project Nightingale und kam zum Schluss, dass es HIPAA-konform war. Dieses Rechtskonstrukt wurde zur Doktrin für nachfolgende Tech-Krankenhaus-Datendeals.",
+      "title_en": "HIPAA Business Associate Agreement as legal basis - HHS endorses the model",
+      "description_en": "US privacy rules under the Health Insurance Portability and Accountability Act (HIPAA) let providers share protected health data with service vendors via Business Associate Agreements without patient consent. The HHS Office for Civil Rights reviewed Project Nightingale and concluded it was HIPAA-compliant. This legal construct became the doctrine for subsequent tech-hospital data deals.",
+      "sources": [
+        "https://compliancy-group.com/google-project-nightingale-access-to-patient-data-not-a-hipaa-violation/"
+      ]
+    },
+    {
+      "date": "2021-05",
+      "phase": "event",
+      "title": "HCA Healthcare öffnet Google Cloud die Daten von rund 32 Millionen Patient:innen",
+      "description": "Im Mai 2021 vereinbarte die US-Krankenhauskette HCA Healthcare eine Datenpartnerschaft mit Google Cloud, die dem Konzern Zugang zu klinischen Daten aus über 180 Krankenhäusern und rund 2.000 Einrichtungen verschaffte. Ziel war eine Analyseplattform mit Algorithmen zur Patientenüberwachung und Entscheidungsunterstützung, gestützt auf rund 32 Millionen jährliche Patientenkontakte. HCA erklärte, identifizierende Angaben vor der Weitergabe zu entfernen.",
+      "title_de": "HCA Healthcare öffnet Google Cloud die Daten von rund 32 Millionen Patient:innen",
+      "description_de": "Im Mai 2021 vereinbarte die US-Krankenhauskette HCA Healthcare eine Datenpartnerschaft mit Google Cloud, die dem Konzern Zugang zu klinischen Daten aus über 180 Krankenhäusern und rund 2.000 Einrichtungen verschaffte. Ziel war eine Analyseplattform mit Algorithmen zur Patientenüberwachung und Entscheidungsunterstützung, gestützt auf rund 32 Millionen jährliche Patientenkontakte. HCA erklärte, identifizierende Angaben vor der Weitergabe zu entfernen.",
+      "title_en": "HCA Healthcare opens data of about 32 million patients to Google Cloud",
+      "description_en": "In May 2021 US hospital chain HCA Healthcare struck a data partnership with Google Cloud granting the company access to clinical data from over 180 hospitals and around 2,000 sites. The aim was an analytics platform with algorithms for patient monitoring and decision support, drawing on roughly 32 million annual patient encounters. HCA stated it would remove identifying information before sharing.",
+      "sources": [
+        "https://www.hcinnovationgroup.com/analytics-ai/news/21224673/hca-healthcare-google-partner-on-creation-of-new-data-analytics-platform"
+      ]
+    },
+    {
+      "date": "2021-05",
+      "phase": "consequences",
+      "title": "Ethiker warnen vor Re-Identifizierung - Rufe nach Reform der Datenschutzgesetze",
+      "description": "Datenschützer und Medizinethiker kritisierten den Deal scharf. NYU-Bioethiker Arthur Caplan warnte, ein werbefinanzierter Konzern wie Google könne anonymisierte Gesundheitsdaten re-identifizieren und kommerzialisieren; Patient:innen seien nicht informiert worden. Angesichts vorangegangener Ransomware-Wellen bestanden zudem Sicherheitsbedenken. Beobachter forderten eine Modernisierung der veralteten US-Datenschutzgesetze.",
+      "title_de": "Ethiker warnen vor Re-Identifizierung - Rufe nach Reform der Datenschutzgesetze",
+      "description_de": "Datenschützer und Medizinethiker kritisierten den Deal scharf. NYU-Bioethiker Arthur Caplan warnte, ein werbefinanzierter Konzern wie Google könne anonymisierte Gesundheitsdaten re-identifizieren und kommerzialisieren; Patient:innen seien nicht informiert worden. Angesichts vorangegangener Ransomware-Wellen bestanden zudem Sicherheitsbedenken. Beobachter forderten eine Modernisierung der veralteten US-Datenschutzgesetze.",
+      "title_en": "Ethicists warn of re-identification - calls to reform privacy laws",
+      "description_en": "Privacy advocates and medical ethicists sharply criticized the deal. NYU bioethicist Arthur Caplan warned that an ad-funded company like Google could re-identify and commercialize anonymized health data; patients had not been informed. Given preceding ransomware waves, security concerns also persisted. Observers called for modernizing the outdated US privacy laws.",
+      "sources": [
+        "https://www.cnbc.com/2021/05/26/privacy-laws-need-updating-after-google-deal-with-hca-healthcare-medical-ethics-professor-says.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnbc.com/2021/05/26/privacy-laws-need-updating-after-google-deal-with-hca-healthcare-medical-ethics-professor-says.html",

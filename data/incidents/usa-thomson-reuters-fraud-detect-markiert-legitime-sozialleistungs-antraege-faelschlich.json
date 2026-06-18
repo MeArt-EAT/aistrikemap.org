@@ -26,9 +26,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Soziale Sicherheit",
+    "Faires Verfahren",
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Soziale Sicherheit",
+    "Faires Verfahren",
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Social security",
+    "Due process",
+    "Protection from discrimination",
+    "Data protection",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Thomson Reuters (Pondera / Fraud Detect)",
@@ -49,7 +67,60 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-03",
+      "phase": "infrastructure",
+      "title": "Thomson Reuters übernimmt Pondera und sein Fraud-Detect-System",
+      "description": "Im März 2020 kauft Thomson Reuters die Analytics-Firma Pondera Solutions für rund 125 Millionen Dollar. Deren cloudbasiertes 'Fraud Detect' nutzt einen proprietären, intransparenten Algorithmus, um Anträge auf staatliche Sozialleistungen auf Betrug zu prüfen. Das System wird in der Folge Behörden in mindestens 42 US-Bundesstaaten angeboten.",
+      "title_de": "Thomson Reuters übernimmt Pondera und sein Fraud-Detect-System",
+      "description_de": "Im März 2020 kauft Thomson Reuters die Analytics-Firma Pondera Solutions für rund 125 Millionen Dollar. Deren cloudbasiertes 'Fraud Detect' nutzt einen proprietären, intransparenten Algorithmus, um Anträge auf staatliche Sozialleistungen auf Betrug zu prüfen. Das System wird in der Folge Behörden in mindestens 42 US-Bundesstaaten angeboten.",
+      "title_en": "Thomson Reuters acquires Pondera and its Fraud Detect system",
+      "description_en": "In March 2020 Thomson Reuters buys the analytics firm Pondera Solutions for around 125 million dollars. Its cloud-based 'Fraud Detect' uses a proprietary, opaque algorithm to screen public-benefit claims for fraud. The system is subsequently offered to agencies in at least 42 US states.",
+      "sources": [
+        "https://www.govtech.com/biz/Thomson-Reuters-Uses-Pondera-in-New-Anti-Fraud-Tool.html"
+      ]
+    },
+    {
+      "date": "2020-12",
+      "phase": "doctrine",
+      "title": "Kalifornien setzt das System gegen Pandemie-Betrug im großen Stil ein",
+      "description": "Während der Pandemie steht die Arbeitslosenversicherung unter massivem Betrugsdruck. Im Dezember 2020 beauftragt das California Employment Development Department (EDD) Pondera, rund 10 Millionen Anträge automatisiert zu prüfen, und macht die algorithmische Bewertung zur Grundlage von Auszahlungsstopps. Die politische Doktrin priorisiert die Betrugsabwehr - mit dem Risiko vieler Fehlalarme zulasten Berechtigter.",
+      "title_de": "Kalifornien setzt das System gegen Pandemie-Betrug im großen Stil ein",
+      "description_de": "Während der Pandemie steht die Arbeitslosenversicherung unter massivem Betrugsdruck. Im Dezember 2020 beauftragt das California Employment Development Department (EDD) Pondera, rund 10 Millionen Anträge automatisiert zu prüfen, und macht die algorithmische Bewertung zur Grundlage von Auszahlungsstopps. Die politische Doktrin priorisiert die Betrugsabwehr - mit dem Risiko vieler Fehlalarme zulasten Berechtigter.",
+      "title_en": "California deploys the system against pandemic fraud at scale",
+      "description_en": "During the pandemic, unemployment insurance is under massive fraud pressure. In December 2020 the California Employment Development Department (EDD) tasks Pondera with automatically reviewing around 10 million claims and makes the algorithmic score the basis for payment freezes. The policy doctrine prioritises fraud prevention - at the risk of many false positives against legitimate claimants.",
+      "sources": [
+        "https://epic.org/epic-urges-ftc-to-investigate-thomson-reuters-fraud-detection-system-in-new-complaint/"
+      ]
+    },
+    {
+      "date": "2020-12-26",
+      "phase": "event",
+      "title": "1,1 Millionen Anträge gesperrt - über die Hälfte zu Unrecht",
+      "description": "Der Algorithmus stuft in Kalifornien rund 1,1 Millionen Arbeitslosengeld-Anträge als 'verdächtig' ein, woraufhin sämtliche betroffenen Leistungen ausgesetzt werden. Spätere Prüfungen ergeben, dass über 600.000 Anträge - rund 54 Prozent - tatsächlich berechtigt waren. Betroffene erfahren weder, wie die Bewertung zustande kam, noch erhalten sie ein faires, zügiges Widerspruchsverfahren.",
+      "title_de": "1,1 Millionen Anträge gesperrt - über die Hälfte zu Unrecht",
+      "description_de": "Der Algorithmus stuft in Kalifornien rund 1,1 Millionen Arbeitslosengeld-Anträge als 'verdächtig' ein, woraufhin sämtliche betroffenen Leistungen ausgesetzt werden. Spätere Prüfungen ergeben, dass über 600.000 Anträge - rund 54 Prozent - tatsächlich berechtigt waren. Betroffene erfahren weder, wie die Bewertung zustande kam, noch erhalten sie ein faires, zügiges Widerspruchsverfahren.",
+      "title_en": "1.1 million claims frozen - more than half wrongly",
+      "description_en": "In California the algorithm labels around 1.1 million unemployment claims as 'suspicious', and all affected benefits are suspended. Later reviews show that more than 600,000 claims - roughly 54 percent - were actually legitimate. Those affected learn neither how the score was produced nor receive a fair, timely appeals process.",
+      "sources": [
+        "https://statescoop.com/automated-public-benefit-fraud-detection-state-ftc-complaint/"
+      ]
+    },
+    {
+      "date": "2023-09",
+      "phase": "consequences",
+      "title": "EPIC reicht FTC-Beschwerde gegen Thomson Reuters ein",
+      "description": "Im September 2023 reicht die Bürgerrechtsorganisation EPIC bei der US-Handelsbehörde FTC eine Beschwerde ein. Sie wirft Thomson Reuters unfaire und irreführende Geschäftspraktiken nach Section 5 des FTC Act vor, weil das fehleranfällige Fraud Detect Hunderttausende berechtigte Antragsteller von Leistungen abschnitt. Bemängelt werden vor allem die Intransparenz des Algorithmus und fehlende Standards für verantwortungsvolle KI.",
+      "title_de": "EPIC reicht FTC-Beschwerde gegen Thomson Reuters ein",
+      "description_de": "Im September 2023 reicht die Bürgerrechtsorganisation EPIC bei der US-Handelsbehörde FTC eine Beschwerde ein. Sie wirft Thomson Reuters unfaire und irreführende Geschäftspraktiken nach Section 5 des FTC Act vor, weil das fehleranfällige Fraud Detect Hunderttausende berechtigte Antragsteller von Leistungen abschnitt. Bemängelt werden vor allem die Intransparenz des Algorithmus und fehlende Standards für verantwortungsvolle KI.",
+      "title_en": "EPIC files an FTC complaint against Thomson Reuters",
+      "description_en": "In September 2023 the civil-rights organisation EPIC files a complaint with the US Federal Trade Commission. It accuses Thomson Reuters of unfair and deceptive trade practices under Section 5 of the FTC Act because the error-prone Fraud Detect cut hundreds of thousands of legitimate claimants off from benefits. The complaint criticises above all the algorithm's opacity and the lack of standards for responsible AI.",
+      "sources": [
+        "https://statescoop.com/nonprofit-ftc-complaint-automated-benefits-responsible-ai/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://statescoop.com/automated-public-benefit-fraud-detection-state-ftc-complaint/",

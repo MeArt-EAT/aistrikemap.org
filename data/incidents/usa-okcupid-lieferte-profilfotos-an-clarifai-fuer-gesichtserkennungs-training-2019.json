@@ -31,9 +31,27 @@
     "facial-recognition",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Informationelle Selbstbestimmung",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Informationelle Selbstbestimmung",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Informational self-determination",
+    "Consumer protection",
+    "Protection from discrimination"
+  ],
   "asm:actors": [
     {
       "name": "Clarifai",
@@ -52,7 +70,73 @@
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2013",
+      "phase": "infrastructure",
+      "title": "Clarifai entsteht und braucht riesige Bild-Trainingsdaten",
+      "description": "Das von Matthew Zeiler gegründete KI-Unternehmen Clarifai entwickelte Bilderkennungsmodelle, die zur Schätzung von Alter, Geschlecht und Hautton trainiert werden sollten. Solche Modelle benötigen sehr große Mengen menschlicher Gesichtsfotos. Da Clarifai-Investoren auch bei OkCupid engagiert waren, entstand ein direkter Zugang zu einem realen Foto-Bestand.",
+      "title_de": "Clarifai entsteht und braucht riesige Bild-Trainingsdaten",
+      "description_de": "Das von Matthew Zeiler gegründete KI-Unternehmen Clarifai entwickelte Bilderkennungsmodelle, die zur Schätzung von Alter, Geschlecht und Hautton trainiert werden sollten. Solche Modelle benötigen sehr große Mengen menschlicher Gesichtsfotos. Da Clarifai-Investoren auch bei OkCupid engagiert waren, entstand ein direkter Zugang zu einem realen Foto-Bestand.",
+      "title_en": "Clarifai is founded and needs vast image training data",
+      "description_en": "The AI firm Clarifai, founded by Matthew Zeiler, built image-recognition models intended to estimate age, gender and skin tone. Such models require very large quantities of human face photos. Because Clarifai investors were also involved with OkCupid, a direct route to a real-world photo trove arose.",
+      "sources": [
+        "https://www.nytimes.com/2019/07/13/technology/databases-faces-facial-recognition-technology.html"
+      ]
+    },
+    {
+      "date": "2014",
+      "phase": "doctrine",
+      "title": "OkCupid übergibt rund 3 Mio. Profilfotos ohne Nutzer-Einwilligung",
+      "description": "2014 bat Clarifai die Dating-Plattform OkCupid um Zugang zu deren Daten. OkCupid übergab rund 3 Millionen Nutzerfotos samt Standort- und Demografiedaten - ohne formellen Vertrag, ohne Nutzungsbeschränkung und ohne Nutzer zu informieren oder ein Widerspruchsrecht einzuräumen. Das widersprach OkCupids damaliger Datenschutzerklärung, die eine Weitergabe an Dritte wie Clarifai ausschloss.",
+      "title_de": "OkCupid übergibt rund 3 Mio. Profilfotos ohne Nutzer-Einwilligung",
+      "description_de": "2014 bat Clarifai die Dating-Plattform OkCupid um Zugang zu deren Daten. OkCupid übergab rund 3 Millionen Nutzerfotos samt Standort- und Demografiedaten - ohne formellen Vertrag, ohne Nutzungsbeschränkung und ohne Nutzer zu informieren oder ein Widerspruchsrecht einzuräumen. Das widersprach OkCupids damaliger Datenschutzerklärung, die eine Weitergabe an Dritte wie Clarifai ausschloss.",
+      "title_en": "OkCupid hands over around 3 million profile photos without consent",
+      "description_en": "In 2014 Clarifai asked the dating platform OkCupid for access to its data. OkCupid handed over around 3 million user photos along with location and demographic data - without a formal agreement, without usage restrictions and without notifying users or offering an opt-out. This contradicted OkCupid's privacy policy at the time, which excluded sharing with third parties such as Clarifai.",
+      "sources": [
+        "https://www.nytimes.com/2019/07/13/technology/databases-faces-facial-recognition-technology.html"
+      ]
+    },
+    {
+      "date": "2019-07-13",
+      "phase": "event",
+      "title": "New York Times deckt die heimliche Foto-Weitergabe auf",
+      "description": "Am 13. Juli 2019 enthüllte die New York Times, dass Clarifai 2014 rund 3 Millionen OkCupid-Profilfotos erhalten und damit Gesichtserkennungs-Modelle für Alters-, Geschlechts- und Hauterkennung trainiert hatte. Die Recherche zeigte, wie persönliche Fotos ohne Wissen der Betroffenen zur Grundlage von Überwachungstechnologie wurden.",
+      "title_de": "New York Times deckt die heimliche Foto-Weitergabe auf",
+      "description_de": "Am 13. Juli 2019 enthüllte die New York Times, dass Clarifai 2014 rund 3 Millionen OkCupid-Profilfotos erhalten und damit Gesichtserkennungs-Modelle für Alters-, Geschlechts- und Hauterkennung trainiert hatte. Die Recherche zeigte, wie persönliche Fotos ohne Wissen der Betroffenen zur Grundlage von Überwachungstechnologie wurden.",
+      "title_en": "The New York Times exposes the secret photo transfer",
+      "description_en": "On 13 July 2019 the New York Times revealed that Clarifai had received around 3 million OkCupid profile photos in 2014 and used them to train facial-recognition models for age, gender and skin-tone estimation. The reporting showed how personal photos became the basis of surveillance technology without those affected knowing.",
+      "sources": [
+        "https://www.nytimes.com/2019/07/13/technology/databases-faces-facial-recognition-technology.html"
+      ]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "FTC-Ermittlung und Sammelklage gegen OkCupid/Match Group",
+      "description": "Ausgelöst durch die NYT-Recherche nahm die US-Handelsbehörde FTC Ermittlungen gegen OkCupid und dessen Mutterkonzern Match Group auf; zudem folgte eine Sammelklage. Im Zentrum stand der Vorwurf, OkCupid habe Nutzer über die wahre Reichweite seiner Datenweitergabe getäuscht.",
+      "title_de": "FTC-Ermittlung und Sammelklage gegen OkCupid/Match Group",
+      "description_de": "Ausgelöst durch die NYT-Recherche nahm die US-Handelsbehörde FTC Ermittlungen gegen OkCupid und dessen Mutterkonzern Match Group auf; zudem folgte eine Sammelklage. Im Zentrum stand der Vorwurf, OkCupid habe Nutzer über die wahre Reichweite seiner Datenweitergabe getäuscht.",
+      "title_en": "FTC investigation and class action against OkCupid/Match Group",
+      "description_en": "Triggered by the NYT reporting, the US Federal Trade Commission opened an investigation into OkCupid and its parent Match Group; a class action also followed. At its core was the allegation that OkCupid had misled users about the true scope of its data sharing.",
+      "sources": [
+        "https://www.biometricupdate.com/202206/a-biometric-data-privacy-win-in-court-is-followed-by-a-related-ftc-investigation-and-lawsuit"
+      ]
+    },
+    {
+      "date": "2026-04",
+      "phase": "consequences",
+      "title": "FTC-Vergleich ohne Strafe, Clarifai löscht 3 Mio. Fotos",
+      "description": "Im April 2026 wurde bekannt, dass Clarifai die rund 3 Millionen OkCupid-Fotos und zugehörige Gesichtserkennungs-Modelle gelöscht und der FTC die Einhaltung bestätigt hatte. Der FTC-Vergleich verbietet OkCupid und Match Group künftige Falschdarstellungen über ihre Datenpraxis, verhängte aber keine Geldstrafe, da Erstverstöße dieser Art nicht bußgeldbewehrt sind.",
+      "title_de": "FTC-Vergleich ohne Strafe, Clarifai löscht 3 Mio. Fotos",
+      "description_de": "Im April 2026 wurde bekannt, dass Clarifai die rund 3 Millionen OkCupid-Fotos und zugehörige Gesichtserkennungs-Modelle gelöscht und der FTC die Einhaltung bestätigt hatte. Der FTC-Vergleich verbietet OkCupid und Match Group künftige Falschdarstellungen über ihre Datenpraxis, verhängte aber keine Geldstrafe, da Erstverstöße dieser Art nicht bußgeldbewehrt sind.",
+      "title_en": "FTC settlement without a fine; Clarifai deletes 3 million photos",
+      "description_en": "In April 2026 it emerged that Clarifai had deleted the around 3 million OkCupid photos and associated facial-recognition models and certified compliance to the FTC. The FTC settlement bars OkCupid and Match Group from future misrepresentations about their data practices, but imposed no fine, as first-time offences of this kind cannot be penalised financially.",
+      "sources": [
+        "https://techcrunch.com/2026/04/21/clarifai-okcupid-facial-recognition-ai-ftc-settlement/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.nytimes.com/2019/07/13/technology/databases-faces-facial-recognition-technology.html",
