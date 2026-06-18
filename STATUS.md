@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2457 Incidents** · 977 mit Reverse-TL (39.8 %) · 0 Audit-Findings · Bundle 18+ MB |
+| 📊 **Bestand** | **2457 Incidents** · 977 mit Reverse-TL (39.8 %) · 0 Audit-Findings · Lite-Bundle 1.6 MB gzip |
 | 🔢 **Übergabe-Nr** | **#5** (2026-06-06) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **Severity-4-Block zu 100 % geschlossen** ✓ (671/671). Letzte 98 Cases via manuelle Wellen (5 Runden × ~20). Sev-5 + Sev-4 jetzt beide vollständig. fix-umlaut-Wortliste um ~45 Begriffe erweitert → 1270 Korpus-Fixes in 343 Files. |
-| ➡️ **Nächster Schritt** | **Sev-3-Block** (953 ohne TL, der grosse Rest) · ODER AIAAIC Batch D · ODER Frontend-Check bei 2458 Markern · ODER Dedup-Backlog abarbeiten |
+| ✅ **Zuletzt fertig** | **Frontend-Performance-Refactor**: Map lädt jetzt `all-incidents-lite.json` (ohne TL/Quellen, 3.9→1.6 MB gzip, −59 %), Detail-Panel lazy-lädt Einzeldatei beim Klick. Cache-Busting `?v=Date.now()` entfernt (GH-Pages-ETag greift). Länderzähler-Bug 708→**135** gefixt. Verifiziert im Preview, live. |
+| ➡️ **Nächster Schritt** | **Sev-3-Block** (953 ohne TL, der grosse Rest) — skaliert jetzt sauber, da TL nur noch lazy/Einzeldatei · ODER AIAAIC Batch D · ODER Dedup-Backlog |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -27,17 +27,19 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 1. **AIAAIC Batch D** (pre-2015, ~300 Stubs) — letzter AIAAIC-Block, niedrige
    Prio (frühe Cases haben weniger Aktualität). Bringt aber historische Tiefe.
    Workflow: siehe Memory `aiaaic-import-workflow` + Übergabe #5.
-2. **Reverse-Timelines** — 799 von 2458 (32.5 %) haben die TL (Kern-Feature).
-   **Severity-5-Block 100 % geschlossen** ✓. **Severity-4: 493/671 (73 %)** mit TL,
-   178 verbleibend. Sev-3-Block: 1056 Cases, erst ~10 % TL.
+2. **Reverse-Timelines** — 977 von 2457 (39.8 %) haben die TL (Kern-Feature).
+   **Sev-5 + Sev-4 zu 100 % geschlossen** ✓. **Sev-3: 953 ohne TL** (der grosse
+   Rest, ~10 % gemacht). Sev-2/Sev-1: niedrige Prio.
    **Methoden-Lektion:** Der `Workflow`-Tool-Runtime stallt in dieser Umgebung
-   nach ~30 Min / ~32 Agenten still (kein Fehler, kein Notification — per
+   nach ~30 Min / ~32 Agenten still (kein Fehler, keine Notification — per
    File-mtime-Check erkennbar). Resume via `resumeFromRunId` macht Cache-sicher
-   weiter (+~32/Lauf), aber **die manuellen Agenten-Wellen (4 Agents × 3-4 Cases)
-   sind zuverlässiger** (0 Crashes über 18+4 Wellen) und schneller. Für die
-   178 Rest-Sev-4 + Sev-3: manuelle Wellen bevorzugen. Briefing: `_timeline-briefing.md`.
-3. **Frontend-Recheck bei 2458 Markern** — Clustering + gzip tragen es, aber
-   Bundle ist 12.6 MB. Vor Batch D Lazy-Loading/Tiling evaluieren.
+   weiter (+~32/Lauf), aber **die manuellen Agenten-Wellen (4-5 Agents × 4 Cases)
+   sind zuverlässiger** (0 Crashes über 22 Wellen) und schneller — für Sev-3
+   bevorzugen. Briefing: `_timeline-briefing.md`.
+3. ~~Frontend-Recheck~~ ✓ **ERLEDIGT** (2026-06-18): Lite-Bundle + Lazy-Detail +
+   Caching-Fix. Erstabruf 3.9→1.6 MB gzip; TL-Wachstum trifft nur noch die
+   lazy-geladenen Einzeldateien. `bundle-incidents.js` erzeugt jetzt
+   `all-incidents-lite.json` (Map) neben `all-incidents.json` (Scripts).
 4. **needs-review-Cases** — Batch A+B+C haben zusammen ~180 needs-review (oft
    Bestand-Dubletten oder schwache Quellen) in den `*-round-6.json`-Files,
    nicht promotet. Manuell sichten lohnt für 20-30 weitere Promotes.
