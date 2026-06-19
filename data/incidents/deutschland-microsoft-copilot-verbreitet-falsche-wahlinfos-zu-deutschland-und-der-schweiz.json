@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf wahrheitsgemäße Information",
+    "Freie und faire Wahlen",
+    "Schutz vor Manipulation",
+    "Demokratische Teilhabe",
+    "Meinungsbildungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf wahrheitsgemäße Information",
+    "Freie und faire Wahlen",
+    "Schutz vor Manipulation",
+    "Demokratische Teilhabe",
+    "Meinungsbildungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to truthful information",
+    "Free and fair elections",
+    "Protection from manipulation",
+    "Democratic participation",
+    "Freedom to form opinions"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -54,7 +72,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-02-07",
+      "phase": "infrastructure",
+      "title": "Microsoft startet Bing Chat auf Basis von GPT-4",
+      "description": "Am 7. Februar 2023 stellte Microsoft das neue Bing mit integriertem KI-Chat vor, das auf einer für die Suche angepassten Version von OpenAIs GPT-4 läuft. Der Chatbot beantwortet Fragen in natürlicher Sprache und stützt sich dabei auf Websuche. Wie generative Sprachmodelle generell neigte das System dazu, plausibel klingende, aber falsche Aussagen zu erzeugen ('Halluzinationen').",
+      "title_de": "Microsoft startet Bing Chat auf Basis von GPT-4",
+      "description_de": "Am 7. Februar 2023 stellte Microsoft das neue Bing mit integriertem KI-Chat vor, das auf einer für die Suche angepassten Version von OpenAIs GPT-4 läuft. Der Chatbot beantwortet Fragen in natürlicher Sprache und stützt sich dabei auf Websuche. Wie generative Sprachmodelle generell neigte das System dazu, plausibel klingende, aber falsche Aussagen zu erzeugen ('Halluzinationen').",
+      "title_en": "Microsoft launches Bing Chat based on GPT-4",
+      "description_en": "On 7 February 2023 Microsoft unveiled the new Bing with integrated AI chat, running on a version of OpenAI's GPT-4 customised for search. The chatbot answers questions in natural language drawing on web search. Like generative language models in general, the system tended to produce plausible-sounding but false statements ('hallucinations').",
+      "sources": [
+        "https://techcrunch.com/2023/02/07/microsoft-launches-the-new-bing-with-chatgpt-built-in/"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "doctrine",
+      "title": "Breites Ausrollen des Chatbots ohne Wahl-spezifische Absicherung",
+      "description": "Im Wettlauf mit Google rollte Microsoft Bing Chat ab Mai 2023 breit aus und hob die Warteliste auf, sodass Millionen Nutzer Zugriff erhielten. Der Chatbot wurde als allgemeines Auskunftswerkzeug positioniert, auch für aktuelle Ereignisse, ohne besondere Schutzmechanismen für sensible Wahlinformationen. Damit war ein fehleranfälliges System genau in dem Zeitfenster verfügbar, in dem in mehreren Regionen gewählt wurde.",
+      "title_de": "Breites Ausrollen des Chatbots ohne Wahl-spezifische Absicherung",
+      "description_de": "Im Wettlauf mit Google rollte Microsoft Bing Chat ab Mai 2023 breit aus und hob die Warteliste auf, sodass Millionen Nutzer Zugriff erhielten. Der Chatbot wurde als allgemeines Auskunftswerkzeug positioniert, auch für aktuelle Ereignisse, ohne besondere Schutzmechanismen für sensible Wahlinformationen. Damit war ein fehleranfälliges System genau in dem Zeitfenster verfügbar, in dem in mehreren Regionen gewählt wurde.",
+      "title_en": "Broad rollout of the chatbot without election-specific safeguards",
+      "description_en": "Racing against Google, Microsoft rolled out Bing Chat broadly from May 2023 and lifted the waitlist, giving millions of users access. The chatbot was positioned as a general information tool, including for current events, without specific safeguards for sensitive election information. An error-prone system was thus available precisely during the window when several regions held elections.",
+      "sources": [
+        "https://algorithmwatch.org/en/bing-chat-election-2023/"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "event",
+      "title": "Studie deckt falsche Wahlauskünfte zu Bayern, Hessen und der Schweiz auf",
+      "description": "Von August bis Oktober 2023 testeten AlgorithmWatch und AI Forensics die Auskünfte von Bing Chat zu den Wahlen in Bayern, Hessen und der Schweiz. Rund ein Drittel der Antworten enthielt Faktenfehler: falsche Wahltermine, veraltete Kandidat:innen oder sogar erfundene Skandale, die teils korrekt berichtenden Quellen zugeschrieben wurden. In rund 40 Prozent der Fälle wich der Chatbot aus.",
+      "title_de": "Studie deckt falsche Wahlauskünfte zu Bayern, Hessen und der Schweiz auf",
+      "description_de": "Von August bis Oktober 2023 testeten AlgorithmWatch und AI Forensics die Auskünfte von Bing Chat zu den Wahlen in Bayern, Hessen und der Schweiz. Rund ein Drittel der Antworten enthielt Faktenfehler: falsche Wahltermine, veraltete Kandidat:innen oder sogar erfundene Skandale, die teils korrekt berichtenden Quellen zugeschrieben wurden. In rund 40 Prozent der Fälle wich der Chatbot aus.",
+      "title_en": "Study reveals false election answers on Bavaria, Hesse and Switzerland",
+      "description_en": "From August to October 2023 AlgorithmWatch and AI Forensics tested Bing Chat's answers about the elections in Bavaria, Hesse and Switzerland. About one-third of responses contained factual errors: wrong election dates, outdated candidates, or even invented scandals, sometimes attributed to sources that had reported correctly. The chatbot evaded around 40 percent of questions.",
+      "sources": [
+        "https://aiforensics.org/work/bing-chat-elections"
+      ]
+    },
+    {
+      "date": "2023-12-15",
+      "phase": "consequences",
+      "title": "Abschlussbericht erscheint; Microsoft kündigt Besserung an",
+      "description": "Am 15. Dezember 2023 veröffentlichten AlgorithmWatch und AI Forensics ihren Abschlussbericht, über den unter anderem die Washington Post berichtete. Nach Hinweisen der Forschenden kündigte Microsoft an, die Probleme anzugehen. Eine Folgestichprobe einen Monat später zeigte jedoch kaum Verbesserungen bei der Qualität der gelieferten Informationen.",
+      "title_de": "Abschlussbericht erscheint; Microsoft kündigt Besserung an",
+      "description_de": "Am 15. Dezember 2023 veröffentlichten AlgorithmWatch und AI Forensics ihren Abschlussbericht, über den unter anderem die Washington Post berichtete. Nach Hinweisen der Forschenden kündigte Microsoft an, die Probleme anzugehen. Eine Folgestichprobe einen Monat später zeigte jedoch kaum Verbesserungen bei der Qualität der gelieferten Informationen.",
+      "title_en": "Final report published; Microsoft pledges improvements",
+      "description_en": "On 15 December 2023 AlgorithmWatch and AI Forensics published their final report, covered among others by the Washington Post. After the researchers flagged the issues, Microsoft announced it would address them. A follow-up sample a month later, however, showed little improvement in the quality of the information provided.",
+      "sources": [
+        "https://algorithmwatch.org/en/microsofts-bing-source-misinformation-elections/",
+        "https://www.washingtonpost.com/technology/2023/12/15/microsoft-copilot-bing-ai-hallucinations-elections/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://algorithmwatch.org/en/microsofts-bing-source-misinformation-elections/",
