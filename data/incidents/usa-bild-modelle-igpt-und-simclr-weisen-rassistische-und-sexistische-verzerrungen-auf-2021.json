@@ -31,9 +31,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Rassische Gleichheit",
+    "Gleichbehandlung der Geschlechter",
+    "Würde des Menschen",
+    "Schutz vor sexualisierter Darstellung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Rassische Gleichheit",
+    "Gleichbehandlung der Geschlechter",
+    "Würde des Menschen",
+    "Schutz vor sexualisierter Darstellung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Racial equality",
+    "Equal treatment of the genders",
+    "Human dignity",
+    "Protection from sexualised depiction"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -56,7 +74,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2009",
+      "phase": "infrastructure",
+      "title": "ImageNet entsteht aus dem Web gesammelten Personenfotos",
+      "description": "Forschende in Princeton und Stanford bauen ImageNet auf, indem sie Millionen Bilder aus dem Web (etwa von Flickr) sammeln und durch Crowdworker kategorisieren lassen. Die Personen-Kategorien erweisen sich später als hochproblematisch: Hunderte Labels gelten als offensiv oder kontextabhängig sensibel. ImageNet wird zum Standard-Trainingsdatensatz für die Bilderkennung und gibt damit seine Verzerrungen an alle darauf vortrainierten Modelle weiter.",
+      "title_de": "ImageNet entsteht aus dem Web gesammelten Personenfotos",
+      "description_de": "Forschende in Princeton und Stanford bauen ImageNet auf, indem sie Millionen Bilder aus dem Web (etwa von Flickr) sammeln und durch Crowdworker kategorisieren lassen. Die Personen-Kategorien erweisen sich später als hochproblematisch: Hunderte Labels gelten als offensiv oder kontextabhängig sensibel. ImageNet wird zum Standard-Trainingsdatensatz für die Bilderkennung und gibt damit seine Verzerrungen an alle darauf vortrainierten Modelle weiter.",
+      "title_en": "ImageNet is built from person photos scraped off the web",
+      "description_en": "Researchers at Princeton and Stanford build ImageNet by gathering millions of images from the web (such as Flickr) and having crowdworkers categorise them. The person categories later prove highly problematic: hundreds of labels are deemed offensive or context-dependently sensitive. ImageNet becomes the standard training dataset for image recognition, passing its biases on to every model pretrained on it.",
+      "sources": [
+        "https://www.theartnewspaper.com/2019/09/23/leading-online-database-to-remove-600000-images-after-art-project-reveals-its-racist-bias"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Unüberwachtes Vortraining auf ImageNet wird zum Standardparadigma",
+      "description": "OpenAI veröffentlicht iGPT und Google SimCLR als Bildmodelle, die ohne menschliche Labels allein aus den Bildern selbst Repräsentationen lernen (self-supervised pre-training). Dieses Paradigma gilt als leistungsfähig und skalierbar und wird breit übernommen. Da die Modelle die statistische Struktur der ImageNet-Bilder ungefiltert aufnehmen, übernehmen sie auch deren gesellschaftliche Assoziationen, ohne dass diese gezielt geprüft werden.",
+      "title_de": "Unüberwachtes Vortraining auf ImageNet wird zum Standardparadigma",
+      "description_de": "OpenAI veröffentlicht iGPT und Google SimCLR als Bildmodelle, die ohne menschliche Labels allein aus den Bildern selbst Repräsentationen lernen (self-supervised pre-training). Dieses Paradigma gilt als leistungsfähig und skalierbar und wird breit übernommen. Da die Modelle die statistische Struktur der ImageNet-Bilder ungefiltert aufnehmen, übernehmen sie auch deren gesellschaftliche Assoziationen, ohne dass diese gezielt geprüft werden.",
+      "title_en": "Unsupervised pre-training on ImageNet becomes the standard paradigm",
+      "description_en": "OpenAI releases iGPT and Google releases SimCLR as image models that learn representations from the images themselves without human labels (self-supervised pre-training). This paradigm is seen as powerful and scalable and is widely adopted. Because the models absorb the statistical structure of the ImageNet images unfiltered, they also take on its societal associations, without these being deliberately examined.",
+      "sources": [
+        "https://venturebeat.com/business/researchers-show-that-computer-vision-algorithms-pretrained-on-imagenet-exhibit-multiple-distressing-biases"
+      ]
+    },
+    {
+      "date": "2021-01-29",
+      "phase": "event",
+      "title": "Studie deckt rassistische und sexistische Verzerrungen in iGPT und SimCLR auf",
+      "description": "Ryan Steed (Carnegie Mellon) und Aylin Caliskan (George Washington University) zeigen mit ihrem Image Embedding Association Test, dass die auf ImageNet vortrainierten Modelle iGPT und SimCLR menschenähnliche Vorurteile reproduzieren. Beide assoziieren weiße Personen mit Werkzeugen und schwarze Personen mit Waffen. Bei der Bildvervollständigung ergänzt iGPT zugeschnittene Fotos von Frauen überproportional mit freizügigen oder Bikini-Darstellungen, ein viel zitiertes Beispiel betrifft ein Foto der Politikerin Alexandria Ocasio-Cortez.",
+      "title_de": "Studie deckt rassistische und sexistische Verzerrungen in iGPT und SimCLR auf",
+      "description_de": "Ryan Steed (Carnegie Mellon) und Aylin Caliskan (George Washington University) zeigen mit ihrem Image Embedding Association Test, dass die auf ImageNet vortrainierten Modelle iGPT und SimCLR menschenähnliche Vorurteile reproduzieren. Beide assoziieren weiße Personen mit Werkzeugen und schwarze Personen mit Waffen. Bei der Bildvervollständigung ergänzt iGPT zugeschnittene Fotos von Frauen überproportional mit freizügigen oder Bikini-Darstellungen, ein viel zitiertes Beispiel betrifft ein Foto der Politikerin Alexandria Ocasio-Cortez.",
+      "title_en": "Study reveals racial and sexist biases in iGPT and SimCLR",
+      "description_en": "Ryan Steed (Carnegie Mellon) and Aylin Caliskan (George Washington University) use their Image Embedding Association Test to show that the ImageNet-pretrained models iGPT and SimCLR reproduce human-like biases. Both associate White people with tools and Black people with weapons. In image completion, iGPT disproportionately completes cropped photos of women with revealing or bikini depictions; a widely cited example involves a photo of politician Alexandria Ocasio-Cortez.",
+      "sources": [
+        "https://www.technologyreview.com/2021/01/29/1017065/ai-image-generation-is-racist-sexist/"
+      ]
+    },
+    {
+      "date": "2021-03-01",
+      "phase": "consequences",
+      "title": "Veröffentlichung bei FAccT 2021 und Warnung vor sexualisierten Bildern",
+      "description": "Die Arbeit erscheint auf der ACM-Konferenz FAccT 2021 und liefert die erste maschinelle Replikation von Implicit Association Tests mit Bildreizen. Die Autoren warnen ausdrücklich vor dem Risiko, dass solche Modelle automatisch sexualisierte Darstellungen von Frauen erzeugen. Der Befund wird breit rezipiert und prägt die Folgeforschung zu Verzerrungen in generativen Bild- und Text-zu-Bild-Systemen.",
+      "title_de": "Veröffentlichung bei FAccT 2021 und Warnung vor sexualisierten Bildern",
+      "description_de": "Die Arbeit erscheint auf der ACM-Konferenz FAccT 2021 und liefert die erste maschinelle Replikation von Implicit Association Tests mit Bildreizen. Die Autoren warnen ausdrücklich vor dem Risiko, dass solche Modelle automatisch sexualisierte Darstellungen von Frauen erzeugen. Der Befund wird breit rezipiert und prägt die Folgeforschung zu Verzerrungen in generativen Bild- und Text-zu-Bild-Systemen.",
+      "title_en": "Publication at FAccT 2021 and warning of sexualised imagery",
+      "description_en": "The work is published at the ACM FAccT 2021 conference and provides the first machine replication of Implicit Association Tests using picture stimuli. The authors explicitly warn of the risk that such models automatically generate sexualised depictions of women. The finding is widely received and shapes follow-up research on bias in generative image and text-to-image systems.",
+      "sources": [
+        "https://dl.acm.org/doi/pdf/10.1145/3442188.3445932"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2021/01/29/1017065/ai-image-generation-is-racist-sexist/",

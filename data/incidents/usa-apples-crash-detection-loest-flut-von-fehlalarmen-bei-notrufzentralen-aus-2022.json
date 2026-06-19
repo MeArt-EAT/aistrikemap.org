@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "öffentliche Sicherheit",
+    "Zugang zu Notfalldiensten",
+    "Recht auf Leben",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "öffentliche Sicherheit",
+    "Zugang zu Notfalldiensten",
+    "Recht auf Leben",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Public safety",
+    "Access to emergency services",
+    "Right to life",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Apple",
@@ -46,7 +61,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-09-07",
+      "phase": "infrastructure",
+      "title": "Apple stellt Crash Detection mit neuen Sensoren vor",
+      "description": "Am 7. September 2022 stellte Apple die Funktion 'Crash Detection' für iPhone 14 und Apple Watch Series 8 / Ultra vor. Sie kombiniert einen Hochleistungs-Beschleunigungssensor (bis über 256 G), Gyroskop, Barometer, GPS und Mikrofon. Ein auf über einer Million Stunden Fahr- und Unfalldaten trainiertes maschinelles Lernmodell soll daraus schwere Kollisionen erkennen und automatisch den Notruf wählen.",
+      "title_de": "Apple stellt Crash Detection mit neuen Sensoren vor",
+      "description_de": "Am 7. September 2022 stellte Apple die Funktion 'Crash Detection' für iPhone 14 und Apple Watch Series 8 / Ultra vor. Sie kombiniert einen Hochleistungs-Beschleunigungssensor (bis über 256 G), Gyroskop, Barometer, GPS und Mikrofon. Ein auf über einer Million Stunden Fahr- und Unfalldaten trainiertes maschinelles Lernmodell soll daraus schwere Kollisionen erkennen und automatisch den Notruf wählen.",
+      "title_en": "Apple unveils Crash Detection with new sensors",
+      "description_en": "On 7 September 2022 Apple unveiled the 'Crash Detection' feature for iPhone 14 and Apple Watch Series 8 / Ultra. It combines a high-G accelerometer (over 256 G), gyroscope, barometer, GPS and microphone. A machine-learning model trained on over a million hours of driving and crash data is meant to detect severe collisions and automatically dial emergency services.",
+      "sources": [
+        "https://9to5mac.com/2022/10/10/how-crash-detection-works/"
+      ]
+    },
+    {
+      "date": "2022-09",
+      "phase": "doctrine",
+      "title": "Notruf-Automatik standardmäßig aktiv",
+      "description": "Apple aktivierte Crash Detection standardmäßig auf allen kompatiblen Geräten, mit dem Ziel, in schweren Unfällen ohne Zutun des Verletzten Hilfe zu rufen. Die Funktion löst nach einer kurzen Warnphase selbsttätig einen Notruf aus, wenn der Nutzer nicht reagiert - ein Sicherheitsversprechen, das auf hohe Erkennungsempfindlichkeit setzt.",
+      "title_de": "Notruf-Automatik standardmäßig aktiv",
+      "description_de": "Apple aktivierte Crash Detection standardmäßig auf allen kompatiblen Geräten, mit dem Ziel, in schweren Unfällen ohne Zutun des Verletzten Hilfe zu rufen. Die Funktion löst nach einer kurzen Warnphase selbsttätig einen Notruf aus, wenn der Nutzer nicht reagiert - ein Sicherheitsversprechen, das auf hohe Erkennungsempfindlichkeit setzt.",
+      "title_en": "Automatic emergency call enabled by default",
+      "description_en": "Apple enabled Crash Detection by default on all compatible devices, aiming to summon help in severe crashes without any action from the injured person. After a brief warning the feature automatically places an emergency call if the user does not respond - a safety promise that relies on high detection sensitivity.",
+      "sources": [
+        "https://techcrunch.com/2022/10/10/apple-offers-a-deeper-dive-into-crash-detection/"
+      ]
+    },
+    {
+      "date": "2022-12",
+      "phase": "event",
+      "title": "Flut von Fehlalarmen aus Skigebieten",
+      "description": "Die Funktion erwies sich als überempfindlich gegenüber Stürzen beim Wintersport und überflutete Notrufzentralen in Skiorten in Colorado, Utah, New York und weiteren Regionen mit automatischen Fehlalarmen. Einzelne Zentralen meldeten über 100 Fehlalarme; Cook County in Minnesota zählte zwischen Anfang Dezember und Anfang 2023 rund 155 falsche Notrufe, die Rettungsressourcen banden.",
+      "title_de": "Flut von Fehlalarmen aus Skigebieten",
+      "description_de": "Die Funktion erwies sich als überempfindlich gegenüber Stürzen beim Wintersport und überflutete Notrufzentralen in Skiorten in Colorado, Utah, New York und weiteren Regionen mit automatischen Fehlalarmen. Einzelne Zentralen meldeten über 100 Fehlalarme; Cook County in Minnesota zählte zwischen Anfang Dezember und Anfang 2023 rund 155 falsche Notrufe, die Rettungsressourcen banden.",
+      "title_en": "Flood of false alarms from ski areas",
+      "description_en": "The feature proved over-sensitive to winter-sports falls and flooded ski-town 911 centres in Colorado, Utah, New York and other regions with automated false alarms. Some centres reported over 100 false alerts; Cook County, Minnesota counted about 155 false 911 calls between early December and early 2023, tying up rescue resources.",
+      "sources": [
+        "https://9to5mac.com/2023/01/16/crash-detection-false-alerts/",
+        "https://9to5mac.com/2023/02/03/iphone-crash-detection-criticism/"
+      ]
+    },
+    {
+      "date": "2023-03-22",
+      "phase": "consequences",
+      "title": "Apple optimiert Crash Detection per Software-Updates",
+      "description": "Nach Beschwerden von Rettungsleitstellen in mehreren US-Staaten und Kanada veröffentlichte Apple mehrere Software-Updates zur Optimierung von Crash Detection, darunter iOS 16.1.2, 16.3.1 und am 22. März 2023 iOS 16.4. Apple nannte keine Details zu den Empfindlichkeits-Anpassungen und riet Nutzern, bei versehentlichen Notrufen nicht aufzulegen, sondern den Irrtum den Leitstellen mitzuteilen.",
+      "title_de": "Apple optimiert Crash Detection per Software-Updates",
+      "description_de": "Nach Beschwerden von Rettungsleitstellen in mehreren US-Staaten und Kanada veröffentlichte Apple mehrere Software-Updates zur Optimierung von Crash Detection, darunter iOS 16.1.2, 16.3.1 und am 22. März 2023 iOS 16.4. Apple nannte keine Details zu den Empfindlichkeits-Anpassungen und riet Nutzern, bei versehentlichen Notrufen nicht aufzulegen, sondern den Irrtum den Leitstellen mitzuteilen.",
+      "title_en": "Apple optimizes Crash Detection via software updates",
+      "description_en": "After complaints from emergency dispatch centres in several US states and Canada, Apple released several software updates to optimize Crash Detection, including iOS 16.1.2, 16.3.1 and, on 22 March 2023, iOS 16.4. Apple gave no details on the sensitivity adjustments and advised users not to hang up on accidental emergency calls but to tell dispatchers it was a mistake.",
+      "sources": [
+        "https://www.macrumors.com/2023/03/22/ios-16-4-crash-detection-optimizations/",
+        "https://www.macrumors.com/2023/04/05/crash-detection-support-document-update/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.entrepreneur.com/business-news/apple-crash-detection-is-overwhelming-ski-town-911-centers/444750",

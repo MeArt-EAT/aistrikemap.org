@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung beim Zugang zu Beschäftigung",
+    "Rassische Gleichheit",
+    "Gleichbehandlung der Geschlechter",
+    "Faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung beim Zugang zu Beschäftigung",
+    "Rassische Gleichheit",
+    "Gleichbehandlung der Geschlechter",
+    "Faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal access to employment",
+    "Racial equality",
+    "Equal treatment of the genders",
+    "Fair process"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -41,7 +59,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "ChatGPT auf Basis von GPT-3.5 mit Web-Textdaten startet",
+      "description": "OpenAI veröffentlicht ChatGPT auf Basis des Sprachmodells GPT-3.5, das zu einem großen Teil auf aus dem Web gesammelten Textdaten (unter anderem Common Crawl) trainiert wurde. Diese Trainingsdaten enthalten die in der Gesellschaft vorhandenen Stereotype, etwa die Verknüpfung bestimmter Namen mit Herkunft, Geschlecht und sozialem Status. Das Modell wird binnen Wochen zur am schnellsten wachsenden Verbraucheranwendung und in viele Arbeitsabläufe übernommen.",
+      "title_de": "ChatGPT auf Basis von GPT-3.5 mit Web-Textdaten startet",
+      "description_de": "OpenAI veröffentlicht ChatGPT auf Basis des Sprachmodells GPT-3.5, das zu einem großen Teil auf aus dem Web gesammelten Textdaten (unter anderem Common Crawl) trainiert wurde. Diese Trainingsdaten enthalten die in der Gesellschaft vorhandenen Stereotype, etwa die Verknüpfung bestimmter Namen mit Herkunft, Geschlecht und sozialem Status. Das Modell wird binnen Wochen zur am schnellsten wachsenden Verbraucheranwendung und in viele Arbeitsabläufe übernommen.",
+      "title_en": "ChatGPT launches on GPT-3.5 trained on web text data",
+      "description_en": "OpenAI releases ChatGPT based on the language model GPT-3.5, trained in large part on text scraped from the web (including Common Crawl). This training data carries the stereotypes present in society, such as the association of certain names with origin, gender and social status. Within weeks the model becomes the fastest-growing consumer application and is adopted into many workflows.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ChatGPT"
+      ]
+    },
+    {
+      "date": "2023-07-05",
+      "phase": "doctrine",
+      "title": "Recruiting-Trend trifft auf neue Anti-Bias-Regeln für KI-Tools",
+      "description": "Mit der breiten Verfügbarkeit von Sprachmodellen setzen immer mehr Unternehmen generative KI im Bewerbungsprozess ein, etwa zum Sortieren von Lebensläufen. Zugleich tritt am 5. Juli 2023 in New York City das Local Law 144 in Kraft, das für automatisierte Auswahlsysteme jährliche Bias-Audits und Transparenzpflichten verlangt. Die US-Antidiskriminierungsbehörde EEOC veröffentlicht Leitlinien dazu, wann solche Werkzeuge gegen Title VII verstoßen können.",
+      "title_de": "Recruiting-Trend trifft auf neue Anti-Bias-Regeln für KI-Tools",
+      "description_de": "Mit der breiten Verfügbarkeit von Sprachmodellen setzen immer mehr Unternehmen generative KI im Bewerbungsprozess ein, etwa zum Sortieren von Lebensläufen. Zugleich tritt am 5. Juli 2023 in New York City das Local Law 144 in Kraft, das für automatisierte Auswahlsysteme jährliche Bias-Audits und Transparenzpflichten verlangt. Die US-Antidiskriminierungsbehörde EEOC veröffentlicht Leitlinien dazu, wann solche Werkzeuge gegen Title VII verstoßen können.",
+      "title_en": "Recruiting trend meets new anti-bias rules for AI tools",
+      "description_en": "As language models become widely available, more and more companies use generative AI in hiring, for example to sort resumes. At the same time, on 5 July 2023 New York City's Local Law 144 takes effect, requiring annual bias audits and transparency obligations for automated employment decision tools. The US anti-discrimination agency EEOC issues guidance on when such tools may violate Title VII.",
+      "sources": [
+        "https://www.littler.com/news-analysis/asap/new-york-city-adopts-final-regulations-use-ai-hiring-and-promotion-extends"
+      ]
+    },
+    {
+      "date": "2024-03-08",
+      "phase": "event",
+      "title": "Bloomberg-Test belegt Namens-Bias bei der Lebenslauf-Sortierung",
+      "description": "Bloomberg lässt GPT in tausenden Durchläufen nahezu identische Lebensläufe sortieren, die sich nur im Namen unterscheiden, und testet auf namensbasierte Benachteiligung. Lebensläufe mit Namen, die typischerweise Schwarzen US-Amerikaner:innen zugeordnet werden, landen für Finanzanalyst- und Software-Engineer-Rollen am seltensten auf Platz eins; mit Schwarzen Frauen assoziierte Namen werden für Software-Engineering nur in 11 Prozent der Fälle top platziert. Bloomberg ordnet das Ergebnis als unter US-Maßstäben benachteiligende Wirkung ein.",
+      "title_de": "Bloomberg-Test belegt Namens-Bias bei der Lebenslauf-Sortierung",
+      "description_de": "Bloomberg lässt GPT in tausenden Durchläufen nahezu identische Lebensläufe sortieren, die sich nur im Namen unterscheiden, und testet auf namensbasierte Benachteiligung. Lebensläufe mit Namen, die typischerweise Schwarzen US-Amerikaner:innen zugeordnet werden, landen für Finanzanalyst- und Software-Engineer-Rollen am seltensten auf Platz eins; mit Schwarzen Frauen assoziierte Namen werden für Software-Engineering nur in 11 Prozent der Fälle top platziert. Bloomberg ordnet das Ergebnis als unter US-Maßstäben benachteiligende Wirkung ein.",
+      "title_en": "Bloomberg test documents name bias in resume ranking",
+      "description_en": "Bloomberg has GPT sort near-identical resumes that differ only in the name across thousands of runs, testing for name-based disadvantage. Resumes with names typically associated with Black Americans are least likely to be ranked first for financial analyst and software engineer roles; names associated with Black women are ranked top for software engineering only 11 percent of the time. Bloomberg characterises the result as an adverse effect under US discrimination standards.",
+      "sources": [
+        "https://www.bloomberg.com/graphics/2024-openai-gpt-hiring-racial-discrimination/"
+      ]
+    },
+    {
+      "date": "2024-03",
+      "phase": "consequences",
+      "title": "OpenAI verweist auf Schutzmaßnahmen, Forschende widersprechen der Methodik",
+      "description": "OpenAI erklärt, dass Unternehmen beim Einsatz der Technik zusätzliche Schritte zur Bias-Minderung ergreifen könnten, etwa Feinabstimmung, System-Prompts oder das Entfernen von Namen vor der Verarbeitung. Die Recruiting-Plattform interviewing.io rechnet anhand der offengelegten Bloomberg-Daten nach und bemängelt, dass keine statistische Signifikanzprüfung erfolgt sei; in ihrer Auswertung lasse sich kein rassistischer Bias belegen. Der Fall verstärkt die Debatte über robuste Audit-Standards für KI im Recruiting.",
+      "title_de": "OpenAI verweist auf Schutzmaßnahmen, Forschende widersprechen der Methodik",
+      "description_de": "OpenAI erklärt, dass Unternehmen beim Einsatz der Technik zusätzliche Schritte zur Bias-Minderung ergreifen könnten, etwa Feinabstimmung, System-Prompts oder das Entfernen von Namen vor der Verarbeitung. Die Recruiting-Plattform interviewing.io rechnet anhand der offengelegten Bloomberg-Daten nach und bemängelt, dass keine statistische Signifikanzprüfung erfolgt sei; in ihrer Auswertung lasse sich kein rassistischer Bias belegen. Der Fall verstärkt die Debatte über robuste Audit-Standards für KI im Recruiting.",
+      "title_en": "OpenAI points to safeguards, researchers dispute the methodology",
+      "description_en": "OpenAI states that companies using the technology can take additional steps to mitigate bias, such as fine-tuning, system prompts or stripping out names before processing. The recruiting platform interviewing.io re-runs the published Bloomberg data and criticises that no statistical significance testing was performed; in its analysis no racial bias can be demonstrated. The case intensifies the debate over robust audit standards for AI in hiring.",
+      "sources": [
+        "https://interviewing.io/blog/refuting-bloombergs-analysis-chatgpt-isnt-racist",
+        "https://racismandtechnology.center/2024/04/01/openais-gpt-sorts-resumes-with-a-racial-bias/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bloomberg.com/graphics/2024-openai-gpt-hiring-racial-discrimination/",
