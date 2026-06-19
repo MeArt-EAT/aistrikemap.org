@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz besonderer Datenkategorien (Gesundheitsdaten)",
+    "Transparenz und Auskunftsrecht",
+    "Informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz besonderer Datenkategorien (Gesundheitsdaten)",
+    "Transparenz und Auskunftsrecht",
+    "Informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Protection of special categories of data (health data)",
+    "Transparency and right to information",
+    "Informational self-determination"
+  ],
   "asm:actors": [
     {
       "name": "IQVIA Operations France",
@@ -55,7 +73,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "LRX-Gesundheitsdaten-Warehouse mit Daten aus rund 14.000 Apotheken",
+      "description": "2018 erhielt IQVIA Operations France die Genehmigung für sein LRX-Warehouse, das mit Daten aus rund 14.000 französischen Apotheken gespeist wurde. Es bildete neben dem späteren EMR-Warehouse die technische Datenbasis für die kommerzielle Pharma-Analytics des US-Konzerns. Diese Infrastruktur ermöglichte die spätere großflächige Verarbeitung von Gesundheitsdaten.",
+      "title_de": "LRX-Gesundheitsdaten-Warehouse mit Daten aus rund 14.000 Apotheken",
+      "description_de": "2018 erhielt IQVIA Operations France die Genehmigung für sein LRX-Warehouse, das mit Daten aus rund 14.000 französischen Apotheken gespeist wurde. Es bildete neben dem späteren EMR-Warehouse die technische Datenbasis für die kommerzielle Pharma-Analytics des US-Konzerns. Diese Infrastruktur ermöglichte die spätere großflächige Verarbeitung von Gesundheitsdaten.",
+      "title_en": "LRX health data warehouse fed by around 14,000 pharmacies",
+      "description_en": "In 2018 IQVIA Operations France received authorisation for its LRX warehouse, fed by data from around 14,000 French pharmacies. Alongside the later EMR warehouse it formed the technical data base for the US group's commercial pharma analytics. This infrastructure enabled the later large-scale processing of health data.",
+      "sources": [
+        "https://www.cnil.fr/en/health-data-fine-5-million-euros-against-iqvia"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "EMR-Warehouse genehmigt, Geschäftsmodell setzt auf Anonymitäts-Annahme",
+      "description": "2021 kam das EMR-Warehouse hinzu, gespeist von mehreren tausend Arztpraxen. Das Geschäftsmodell von IQVIA beruhte auf der Annahme, die verarbeiteten Daten seien anonym und damit außerhalb der DSGVO. Auf dieser Grundlage führte das Unternehmen eigene Studien durch, ohne Patient:innen zu informieren, und stützte seine kommerzielle Verwertung auf diese Einstufung.",
+      "title_de": "EMR-Warehouse genehmigt, Geschäftsmodell setzt auf Anonymitäts-Annahme",
+      "description_de": "2021 kam das EMR-Warehouse hinzu, gespeist von mehreren tausend Arztpraxen. Das Geschäftsmodell von IQVIA beruhte auf der Annahme, die verarbeiteten Daten seien anonym und damit außerhalb der DSGVO. Auf dieser Grundlage führte das Unternehmen eigene Studien durch, ohne Patient:innen zu informieren, und stützte seine kommerzielle Verwertung auf diese Einstufung.",
+      "title_en": "EMR warehouse authorised, business model relies on anonymity assumption",
+      "description_en": "In 2021 the EMR warehouse was added, fed by several thousand doctors' practices. IQVIA's business model rested on the assumption that the processed data was anonymous and therefore outside the GDPR. On that basis the company ran studies on its own behalf without informing patients and built its commercial use on this classification.",
+      "sources": [
+        "https://www.dataguidance.com/news/france-cnil-fines-iqvia-eur5-million-health-data"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "phase": "event",
+      "title": "CNIL verhängt 5 Mio. Euro und stuft die Daten als pseudonymisiert ein",
+      "description": "Am 26. Mai 2026 verhängte die CNIL 5 Millionen Euro gegen IQVIA. Das Unternehmen hatte Daten ohne Information der Patient:innen verarbeitet, eigene Studien außerhalb des Rechtsrahmens durchgeführt und unzureichende Sicherheitsmaßnahmen wie fehlende Mehrfaktorauthentifizierung eingesetzt. Die CNIL wies die Anonymitäts-Behauptung zurück: Die Daten seien pseudonymisiert, da eine Re-Identifizierung mit angemessenen Mitteln möglich bleibe, und fielen damit voll unter die DSGVO.",
+      "title_de": "CNIL verhängt 5 Mio. Euro und stuft die Daten als pseudonymisiert ein",
+      "description_de": "Am 26. Mai 2026 verhängte die CNIL 5 Millionen Euro gegen IQVIA. Das Unternehmen hatte Daten ohne Information der Patient:innen verarbeitet, eigene Studien außerhalb des Rechtsrahmens durchgeführt und unzureichende Sicherheitsmaßnahmen wie fehlende Mehrfaktorauthentifizierung eingesetzt. Die CNIL wies die Anonymitäts-Behauptung zurück: Die Daten seien pseudonymisiert, da eine Re-Identifizierung mit angemessenen Mitteln möglich bleibe, und fielen damit voll unter die DSGVO.",
+      "title_en": "CNIL fines 5 million euros and classifies the data as pseudonymised",
+      "description_en": "On 26 May 2026 the CNIL fined IQVIA 5 million euros. The company had processed data without informing patients, ran studies on its own behalf outside the legal framework and used insufficient security measures such as absent multi-factor authentication. The CNIL rejected the anonymity claim: the data was pseudonymised because re-identification remained possible by reasonable means, and therefore fell fully under the GDPR.",
+      "sources": [
+        "https://www.cnil.fr/en/health-data-fine-5-million-euros-against-iqvia"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "phase": "consequences",
+      "title": "Sechs-Monats-Anordnung und Signalwirkung für 102 Betreiber",
+      "description": "Neben dem Bußgeld ordnete die CNIL an, die Verarbeitung binnen sechs Monaten rechtskonform zu machen, andernfalls drohe ein Zwangsgeld von 10.000 Euro pro Tag. Die Entscheidung betrifft 102 Betreiber mit derselben Architektur und stellte klar, dass Pseudonymisierung eine Schutzmaßnahme, aber keine Befreiung von den DSGVO-Pflichten ist. Der Fall gilt als Weckruf für die Gesundheitsdaten-Compliance in Europa.",
+      "title_de": "Sechs-Monats-Anordnung und Signalwirkung für 102 Betreiber",
+      "description_de": "Neben dem Bußgeld ordnete die CNIL an, die Verarbeitung binnen sechs Monaten rechtskonform zu machen, andernfalls drohe ein Zwangsgeld von 10.000 Euro pro Tag. Die Entscheidung betrifft 102 Betreiber mit derselben Architektur und stellte klar, dass Pseudonymisierung eine Schutzmaßnahme, aber keine Befreiung von den DSGVO-Pflichten ist. Der Fall gilt als Weckruf für die Gesundheitsdaten-Compliance in Europa.",
+      "title_en": "Six-month injunction and signal effect for 102 operators",
+      "description_en": "Alongside the fine the CNIL ordered the processing to be brought into compliance within six months, otherwise a daily penalty of 10,000 euros would apply. The decision affects 102 operators using the same architecture and made clear that pseudonymisation is a safeguard, not an exemption from GDPR obligations. The case is regarded as a wake-up call for health data compliance in Europe.",
+      "sources": [
+        "https://www.actuia.com/en/news/the-cnil-fines-iqvia-eur5-million-pseudonymization-remains-gdpr-for-key-holders/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnil.fr/en/health-data-fine-5-million-euros-against-iqvia",
