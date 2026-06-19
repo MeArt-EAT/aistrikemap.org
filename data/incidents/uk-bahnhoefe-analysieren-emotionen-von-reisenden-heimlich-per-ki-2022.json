@@ -31,9 +31,30 @@
     "facial-recognition",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz besonderer Datenkategorien",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz besonderer Datenkategorien",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection of special category data",
+    "Human dignity",
+    "Protection from discrimination",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Network Rail",
@@ -54,7 +75,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-08",
+      "phase": "infrastructure",
+      "title": "Amazon Rekognition mit Emotionsanalyse als kommerzielles Werkzeug",
+      "description": "Amazon bot mit dem 2016 gestarteten Cloud-Dienst Rekognition eine Gesichtsanalyse an, die ab 2019 mehrere vermeintliche Emotionen wie Freude, Trauer oder Angst aus Gesichtsausdrücken ableiten sollte. Wissenschaftler:innen kritisierten schon damals, dass sich aus Mimik nicht verlässlich auf Gefühle schließen lasse und die Genauigkeit bei dunklerer Hautfarbe sinke. Dieses kommerzielle System bildete die technische Grundlage für den späteren Bahnhofs-Einsatz.",
+      "title_de": "Amazon Rekognition mit Emotionsanalyse als kommerzielles Werkzeug",
+      "description_de": "Amazon bot mit dem 2016 gestarteten Cloud-Dienst Rekognition eine Gesichtsanalyse an, die ab 2019 mehrere vermeintliche Emotionen wie Freude, Trauer oder Angst aus Gesichtsausdrücken ableiten sollte. Wissenschaftler:innen kritisierten schon damals, dass sich aus Mimik nicht verlässlich auf Gefühle schließen lasse und die Genauigkeit bei dunklerer Hautfarbe sinke. Dieses kommerzielle System bildete die technische Grundlage für den späteren Bahnhofs-Einsatz.",
+      "title_en": "Amazon Rekognition with emotion analysis as a commercial tool",
+      "description_en": "With its Rekognition cloud service launched in 2016, Amazon offered facial analysis that from 2019 claimed to infer several supposed emotions such as happiness, sadness or fear from facial expressions. Scientists criticised even then that emotions cannot be reliably inferred from facial movements and that accuracy dropped for darker skin tones. This commercial system formed the technical basis for the later station deployment.",
+      "sources": [
+        "https://aws.amazon.com/about-aws/whats-new/2019/08/amazon-rekognition-improves-face-analysis/"
+      ]
+    },
+    {
+      "date": "2022-10",
+      "phase": "doctrine",
+      "title": "ICO warnt öffentlich vor biometrischer Emotionsanalyse",
+      "description": "Im Oktober 2022 warnte die britische Datenschutzbehörde ICO Unternehmen ausdrücklich vor dem Einsatz biometrischer Technik zur Emotionsanalyse und nannte solche Systeme unausgereift und das Risiko systematischer Verzerrung und Diskriminierung hoch. Die Behörde stellte klar, dass Verantwortliche die Verhältnismäßigkeit prüfen müssten. Trotz dieser Warnung lief Network Rails Versuch weiter, was die bewusste Inkaufnahme der Risiken verdeutlicht.",
+      "title_de": "ICO warnt öffentlich vor biometrischer Emotionsanalyse",
+      "description_de": "Im Oktober 2022 warnte die britische Datenschutzbehörde ICO Unternehmen ausdrücklich vor dem Einsatz biometrischer Technik zur Emotionsanalyse und nannte solche Systeme unausgereift und das Risiko systematischer Verzerrung und Diskriminierung hoch. Die Behörde stellte klar, dass Verantwortliche die Verhältnismäßigkeit prüfen müssten. Trotz dieser Warnung lief Network Rails Versuch weiter, was die bewusste Inkaufnahme der Risiken verdeutlicht.",
+      "title_en": "ICO publicly warns against biometric emotion analysis",
+      "description_en": "In October 2022 the UK data protection regulator ICO explicitly warned companies against using biometric technology for emotion analysis, calling such systems immature and the risk of systemic bias and discrimination high. The regulator made clear that controllers must assess proportionality. Despite this warning, Network Rail's trial continued, underlining a deliberate acceptance of the risks.",
+      "sources": [
+        "https://www.computerweekly.com/news/252526548/ICO-warns-against-using-biometrics-for-emotional-analysis"
+      ]
+    },
+    {
+      "date": "2022",
+      "phase": "event",
+      "title": "Network Rail startet heimlichen Emotions-Überwachungsversuch",
+      "description": "Ab 2022 ließ Network Rail an acht britischen Bahnhöfen, darunter London Euston und Waterloo sowie Manchester Piccadilly, Reisende per CCTV fotografieren und durch Amazon Rekognition auswerten. Das System sollte Alter, Geschlecht und Emotionen aus Gesichtsausdrücken ableiten, offiziell zur Sicherheit, in internen Dokumenten aber auch zur Steigerung von Werbe- und Einzelhandelsumsatz. Die Reisenden wurden darüber nicht informiert.",
+      "title_de": "Network Rail startet heimlichen Emotions-Überwachungsversuch",
+      "description_de": "Ab 2022 ließ Network Rail an acht britischen Bahnhöfen, darunter London Euston und Waterloo sowie Manchester Piccadilly, Reisende per CCTV fotografieren und durch Amazon Rekognition auswerten. Das System sollte Alter, Geschlecht und Emotionen aus Gesichtsausdrücken ableiten, offiziell zur Sicherheit, in internen Dokumenten aber auch zur Steigerung von Werbe- und Einzelhandelsumsatz. Die Reisenden wurden darüber nicht informiert.",
+      "title_en": "Network Rail launches covert emotion surveillance trial",
+      "description_en": "From 2022 Network Rail had travellers photographed via CCTV at eight UK stations, including London Euston and Waterloo and Manchester Piccadilly, and analysed by Amazon Rekognition. The system aimed to infer age, gender and emotions from facial expressions, officially for safety but in internal documents also to boost advertising and retail revenue. Travellers were not informed about it.",
+      "sources": [
+        "https://workplaceinsight.net/secret-ai-cameras-have-been-tracking-the-emotions-and-demographics-of-rail-passengers/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "Big Brother Watch deckt den Umfang per Auskunftsanfrage auf",
+      "description": "Im Juni 2024 machte die Bürgerrechtsorganisation Big Brother Watch den über zwei Jahre laufenden Versuch durch eine Informationsfreiheitsanfrage öffentlich. Die enthüllten Dokumente zeigten den Einsatz der pseudowissenschaftlichen Emotionserkennung und die Absicht, Daten für Werbung zu nutzen. Die Organisation reichte eine Beschwerde bei der ICO ein und löste eine breite öffentliche Debatte aus.",
+      "title_de": "Big Brother Watch deckt den Umfang per Auskunftsanfrage auf",
+      "description_de": "Im Juni 2024 machte die Bürgerrechtsorganisation Big Brother Watch den über zwei Jahre laufenden Versuch durch eine Informationsfreiheitsanfrage öffentlich. Die enthüllten Dokumente zeigten den Einsatz der pseudowissenschaftlichen Emotionserkennung und die Absicht, Daten für Werbung zu nutzen. Die Organisation reichte eine Beschwerde bei der ICO ein und löste eine breite öffentliche Debatte aus.",
+      "title_en": "Big Brother Watch exposes the scope via a FOI request",
+      "description_en": "In June 2024 civil liberties group Big Brother Watch made the two-year trial public through a freedom-of-information request. The disclosed documents revealed the use of pseudoscientific emotion recognition and the intent to use data for advertising. The group filed a complaint with the ICO and triggered a broad public debate.",
+      "sources": [
+        "https://bigbrotherwatch.org.uk/press-coverage/wired-eight-uk-train-stations-trialled-amazon-emotion-detection-that-could-feed-you-adverts/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "Fachleute nennen den Einsatz unethisch, Demografie-Teil wird gestoppt",
+      "description": "Nach der Enthüllung bewerteten Rechts- und KI-Fachleute den Emotions-Teil als unethisch und wahrscheinlich rechtswidrig und verwiesen auf die unbelegte Wirksamkeit und mögliche Diskriminierung. Network Rail erklärte, der Teil des Programms zur Erfassung demografischer Merkmale sei beendet. Der Fall verstärkte Forderungen nach klaren Regeln für Emotions- und Biometrieüberwachung im öffentlichen Raum.",
+      "title_de": "Fachleute nennen den Einsatz unethisch, Demografie-Teil wird gestoppt",
+      "description_de": "Nach der Enthüllung bewerteten Rechts- und KI-Fachleute den Emotions-Teil als unethisch und wahrscheinlich rechtswidrig und verwiesen auf die unbelegte Wirksamkeit und mögliche Diskriminierung. Network Rail erklärte, der Teil des Programms zur Erfassung demografischer Merkmale sei beendet. Der Fall verstärkte Forderungen nach klaren Regeln für Emotions- und Biometrieüberwachung im öffentlichen Raum.",
+      "title_en": "Experts call it unethical, demographics part is stopped",
+      "description_en": "After the disclosure, legal and AI experts judged the emotion part to be unethical and probably unlawful, pointing to its unproven efficacy and potential for discrimination. Network Rail stated that the part of the programme recording demographic details had ended. The case strengthened calls for clear rules on emotion and biometric surveillance in public spaces.",
+      "sources": [
+        "https://www.biometricupdate.com/202406/uk-train-stations-trial-amazon-emotion-recognition-on-passengers"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://bigbrotherwatch.org.uk/press-coverage/wired-eight-uk-train-stations-trialled-amazon-emotion-detection-that-could-feed-you-adverts/",

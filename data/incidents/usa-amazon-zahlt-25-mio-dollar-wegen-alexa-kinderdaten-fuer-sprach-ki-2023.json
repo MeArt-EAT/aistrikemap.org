@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Kinderrechte",
+    "Datenschutz",
+    "Privatsphäre",
+    "Recht auf Löschung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Kinderrechte",
+    "Datenschutz",
+    "Privatsphäre",
+    "Recht auf Löschung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Children's rights",
+    "Data protection",
+    "Privacy",
+    "Right to erasure",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Amazon",
@@ -53,7 +71,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014-11",
+      "phase": "infrastructure",
+      "title": "Alexa sammelt und speichert Stimm- und Standortdaten in der Cloud",
+      "description": "Mit dem Start von Echo und Alexa im November 2014 begann Amazon, Sprachaufnahmen und zugehörige Daten wie Standortinformationen zentral in der Cloud zu speichern. Diese Daten dienen dazu, die Spracherkennungs-Algorithmen kontinuierlich zu verbessern. Da Kinder Alexa ebenso nutzten, entstanden umfangreiche Bestände an kindlichen Stimmaufnahmen.",
+      "title_de": "Alexa sammelt und speichert Stimm- und Standortdaten in der Cloud",
+      "description_de": "Mit dem Start von Echo und Alexa im November 2014 begann Amazon, Sprachaufnahmen und zugehörige Daten wie Standortinformationen zentral in der Cloud zu speichern. Diese Daten dienen dazu, die Spracherkennungs-Algorithmen kontinuierlich zu verbessern. Da Kinder Alexa ebenso nutzten, entstanden umfangreiche Bestände an kindlichen Stimmaufnahmen.",
+      "title_en": "Alexa collects and stores voice and location data in the cloud",
+      "description_en": "With the launch of Echo and Alexa in November 2014, Amazon began storing voice recordings and associated data such as location information centrally in the cloud. This data is used to continuously improve the speech-recognition algorithms. Because children also used Alexa, large stores of children's voice recordings accumulated.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amazon_Echo"
+      ]
+    },
+    {
+      "date": "2017",
+      "phase": "doctrine",
+      "title": "Daten als Trainingsressource: unbegrenztes Vorhalten statt Löschen",
+      "description": "Amazon richtete seine Datenpraxis darauf aus, Sprachaufnahmen standardmäßig unbegrenzt vorzuhalten, weil sie als wertvolle Trainingsressource für die Sprach-KI dienen. Nach Darstellung der FTC speicherte das Unternehmen Kinder-Stimmaufnahmen länger als für den Zweck nötig und kam Löschanfragen von Eltern teils nicht vollständig nach. Diese Priorisierung von KI-Training gegenüber Datensparsamkeit verstieß gegen das Kinderdatenschutzgesetz COPPA.",
+      "title_de": "Daten als Trainingsressource: unbegrenztes Vorhalten statt Löschen",
+      "description_de": "Amazon richtete seine Datenpraxis darauf aus, Sprachaufnahmen standardmäßig unbegrenzt vorzuhalten, weil sie als wertvolle Trainingsressource für die Sprach-KI dienen. Nach Darstellung der FTC speicherte das Unternehmen Kinder-Stimmaufnahmen länger als für den Zweck nötig und kam Löschanfragen von Eltern teils nicht vollständig nach. Diese Priorisierung von KI-Training gegenüber Datensparsamkeit verstieß gegen das Kinderdatenschutzgesetz COPPA.",
+      "title_en": "Data as a training resource: indefinite retention instead of deletion",
+      "description_en": "Amazon designed its data practices to retain voice recordings indefinitely by default, because they serve as a valuable training resource for the voice AI. According to the FTC, the company stored children's voice recordings longer than necessary for the purpose and did not fully honour parents' deletion requests in some cases. This prioritisation of AI training over data minimisation violated the COPPA children's privacy law.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever"
+      ]
+    },
+    {
+      "date": "2023-05-31",
+      "phase": "event",
+      "title": "FTC und DOJ verhängen 25 Mio. Dollar Strafe wegen Kinderdaten",
+      "description": "Im Mai 2023 verständigten sich FTC und US-Justizministerium mit Amazon auf eine Strafzahlung von 25 Mio. Dollar und eine dauerhafte Unterlassungsverfügung wegen Verstößen gegen das Kinderdatenschutzgesetz COPPA. Amazon hatte Stimmaufnahmen von Kindern über Alexa unbegrenzt gespeichert und trotz Löschanfragen von Eltern teils weiter vorgehalten. Die Daten dienten unter anderem dazu, die Spracherkennungs-Algorithmen auf kindliche Stimmen zu trainieren.",
+      "title_de": "FTC und DOJ verhängen 25 Mio. Dollar Strafe wegen Kinderdaten",
+      "description_de": "Im Mai 2023 verständigten sich FTC und US-Justizministerium mit Amazon auf eine Strafzahlung von 25 Mio. Dollar und eine dauerhafte Unterlassungsverfügung wegen Verstößen gegen das Kinderdatenschutzgesetz COPPA. Amazon hatte Stimmaufnahmen von Kindern über Alexa unbegrenzt gespeichert und trotz Löschanfragen von Eltern teils weiter vorgehalten. Die Daten dienten unter anderem dazu, die Spracherkennungs-Algorithmen auf kindliche Stimmen zu trainieren.",
+      "title_en": "FTC and DOJ impose USD 25M penalty over children's data",
+      "description_en": "In May 2023 the FTC and the US Department of Justice reached a USD 25 million penalty and permanent injunction with Amazon over violations of the children's privacy law COPPA. Amazon had retained children's Alexa voice recordings indefinitely and, despite parental deletion requests, kept some data available. The recordings were used in part to train its speech-recognition algorithms to understand children's voices.",
+      "sources": [
+        "https://www.justice.gov/archives/opa/pr/amazon-agrees-injunctive-relief-and-25-million-civil-penalty-alleged-violations-childrens"
+      ]
+    },
+    {
+      "date": "2023-05-31",
+      "phase": "consequences",
+      "title": "Löschpflichten, Verbot der Datennutzung und breitere Datenschutz-Kritik",
+      "description": "Der Vergleich verpflichtete Amazon, betroffene Kinder-Stimmaufnahmen und inaktive Kinderprofile zu löschen, sowie die so gewonnenen Daten nicht mehr für das Training seiner Algorithmen zu verwenden. Der Fall reihte sich in eine breitere Welle an Datenschutz-Verfahren gegen Amazon ein, darunter parallele Vorwürfe rund um die Ring-Kameras. Verbraucherschützer werteten die Strafe als wichtig, aber angesichts des Konzernumsatzes als gering.",
+      "title_de": "Löschpflichten, Verbot der Datennutzung und breitere Datenschutz-Kritik",
+      "description_de": "Der Vergleich verpflichtete Amazon, betroffene Kinder-Stimmaufnahmen und inaktive Kinderprofile zu löschen, sowie die so gewonnenen Daten nicht mehr für das Training seiner Algorithmen zu verwenden. Der Fall reihte sich in eine breitere Welle an Datenschutz-Verfahren gegen Amazon ein, darunter parallele Vorwürfe rund um die Ring-Kameras. Verbraucherschützer werteten die Strafe als wichtig, aber angesichts des Konzernumsatzes als gering.",
+      "title_en": "Deletion duties, ban on data use and broader privacy criticism",
+      "description_en": "The settlement required Amazon to delete affected children's voice recordings and inactive child profiles and to stop using the data thus obtained to train its algorithms. The case was part of a broader wave of privacy proceedings against Amazon, including parallel allegations around the Ring cameras. Consumer advocates considered the penalty important but small relative to the company's revenue.",
+      "sources": [
+        "https://variety.com/2023/digital/news/amazon-fine-alexa-settlement-doj-ftc-childrens-privacy-law-violation-1235675702/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever",
