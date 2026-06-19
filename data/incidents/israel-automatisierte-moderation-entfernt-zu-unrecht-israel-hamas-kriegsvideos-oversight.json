@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "censorship"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Recht auf Information",
+    "Recht auf Dokumentation und Beweissicherung",
+    "Recht auf Rechtsbehelf",
+    "Schutz vor willkürlicher Zensur"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Recht auf Information",
+    "Recht auf Dokumentation und Beweissicherung",
+    "Recht auf Rechtsbehelf",
+    "Schutz vor willkürlicher Zensur"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Right to information",
+    "Right to documentation and evidence preservation",
+    "Right to remedy",
+    "Protection from arbitrary censorship"
+  ],
   "asm:actors": [
     {
       "name": "Meta Platforms (Facebook, Instagram)",
@@ -48,7 +66,52 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Meta skaliert automatisierte Inhalts-Moderation per Klassifikatoren",
+      "description": "Meta moderiert Inhalte auf Facebook und Instagram zunehmend mit maschinellen Klassifikatoren, die Beiträge einen Wahrscheinlichkeits-Score für Regelverstöße zuweisen. Bei hohen Scores werden Inhalte automatisch entfernt, oft ohne menschliche Prüfung. Dieses System erlaubt Moderation in großem Maßstab, erhöht aber das Risiko, dass kontextabhängige Beiträge wie Kriegsdokumentation fälschlich gelöscht werden.",
+      "title_de": "Meta skaliert automatisierte Inhalts-Moderation per Klassifikatoren",
+      "description_de": "Meta moderiert Inhalte auf Facebook und Instagram zunehmend mit maschinellen Klassifikatoren, die Beiträge einen Wahrscheinlichkeits-Score für Regelverstöße zuweisen. Bei hohen Scores werden Inhalte automatisch entfernt, oft ohne menschliche Prüfung. Dieses System erlaubt Moderation in großem Maßstab, erhöht aber das Risiko, dass kontextabhängige Beiträge wie Kriegsdokumentation fälschlich gelöscht werden.",
+      "title_en": "Meta scales automated content moderation via classifiers",
+      "description_en": "Meta increasingly moderates content on Facebook and Instagram using machine classifiers that assign each post a probability score for rule violations. At high scores, content is removed automatically, often without human review. This system enables moderation at scale but raises the risk that context-dependent posts such as war documentation are wrongly deleted.",
+      "sources": []
+    },
+    {
+      "date": "2023-10-13",
+      "phase": "doctrine",
+      "title": "Meta senkt nach dem 7. Oktober die Lösch-Schwelle als Krisenmaßnahme",
+      "description": "Nach dem Hamas-Angriff vom 7. Oktober 2023 erklärte Meta am 13. Oktober, es ergreife vorübergehende Risiko-Reaktionsmaßnahmen und senke die Schwelle, ab der gegen potenziell verletzende Inhalte vorgegangen werde. Diese Doktrin priorisierte schnelle Entfernung möglicher Verstöße über die Vermeidung von Fehllöschungen und erhöhte damit die Wahrscheinlichkeit, dass regelkonforme Konfliktbeiträge automatisch gelöscht wurden.",
+      "title_de": "Meta senkt nach dem 7. Oktober die Lösch-Schwelle als Krisenmaßnahme",
+      "description_de": "Nach dem Hamas-Angriff vom 7. Oktober 2023 erklärte Meta am 13. Oktober, es ergreife vorübergehende Risiko-Reaktionsmaßnahmen und senke die Schwelle, ab der gegen potenziell verletzende Inhalte vorgegangen werde. Diese Doktrin priorisierte schnelle Entfernung möglicher Verstöße über die Vermeidung von Fehllöschungen und erhöhte damit die Wahrscheinlichkeit, dass regelkonforme Konfliktbeiträge automatisch gelöscht wurden.",
+      "title_en": "Meta lowers removal threshold after October 7 as a crisis measure",
+      "description_en": "After the Hamas attack of 7 October 2023, Meta stated on 13 October that it was taking temporary risk response measures and lowering the threshold at which it acts against potentially violating content. This doctrine prioritised rapid removal of possible violations over avoiding mistaken removals, thereby raising the likelihood that rule-compliant conflict posts were deleted automatically.",
+      "sources": ["https://www.hrw.org/report/2023/12/21/metas-broken-promises/systemic-censorship-palestine-content-instagram-and"]
+    },
+    {
+      "date": "2023-10",
+      "phase": "event",
+      "title": "Automatische Systeme entfernen zwei Israel-Hamas-Kriegsvideos zu Unrecht",
+      "description": "Metas automatisierte Moderation löschte ein Instagram-Video aus dem Umfeld des Al-Schifa-Krankenhauses in Gaza sowie ein Facebook-Video einer Geiselnahme durch die Hamas. Beide Entfernungen und die Ablehnung des Nutzer-Einspruchs erfolgten allein auf Basis von Klassifikator-Scores ohne menschliche Prüfung. Beide Beiträge dokumentierten Ereignisse von erheblichem öffentlichem Interesse.",
+      "title_de": "Automatische Systeme entfernen zwei Israel-Hamas-Kriegsvideos zu Unrecht",
+      "description_de": "Metas automatisierte Moderation löschte ein Instagram-Video aus dem Umfeld des Al-Schifa-Krankenhauses in Gaza sowie ein Facebook-Video einer Geiselnahme durch die Hamas. Beide Entfernungen und die Ablehnung des Nutzer-Einspruchs erfolgten allein auf Basis von Klassifikator-Scores ohne menschliche Prüfung. Beide Beiträge dokumentierten Ereignisse von erheblichem öffentlichem Interesse.",
+      "title_en": "Automated systems wrongly remove two Israel-Hamas war videos",
+      "description_en": "Meta's automated moderation deleted an Instagram video from the aftermath at Al-Shifa Hospital in Gaza and a Facebook video of a hostage-taking by Hamas. Both removals and the rejection of the user's appeal were carried out solely on the basis of classifier scores without human review. Both posts documented events of significant public interest.",
+      "sources": ["https://www.engadget.com/oversight-board-says-metas-automated-tools-took-down-israel-hamas-war-content-that-didnt-break-its-rules-110034154.html"]
+    },
+    {
+      "date": "2023-12-19",
+      "phase": "consequences",
+      "title": "Oversight Board hebt die Löschungen auf und kritisiert fehlende menschliche Aufsicht",
+      "description": "In seinen ersten beschleunigten Entscheidungen hob Metas Oversight Board am 19. Dezember 2023 beide ursprünglichen Entfernungen auf, billigte aber die spätere Wiederherstellung mit Warnhinweis. Das Gremium kritisierte, dass automatisierte Löschungen ohne menschliche Prüfung in Krisenlagen Inhalte von hohem öffentlichem Interesse und Beweiswert für Menschenrechtsverletzungen unterdrücken könnten.",
+      "title_de": "Oversight Board hebt die Löschungen auf und kritisiert fehlende menschliche Aufsicht",
+      "description_de": "In seinen ersten beschleunigten Entscheidungen hob Metas Oversight Board am 19. Dezember 2023 beide ursprünglichen Entfernungen auf, billigte aber die spätere Wiederherstellung mit Warnhinweis. Das Gremium kritisierte, dass automatisierte Löschungen ohne menschliche Prüfung in Krisenlagen Inhalte von hohem öffentlichem Interesse und Beweiswert für Menschenrechtsverletzungen unterdrücken könnten.",
+      "title_en": "Oversight Board overturns the removals and criticises lack of human oversight",
+      "description_en": "In its first expedited decisions, Meta's Oversight Board overturned both original removals on 19 December 2023 but approved the later restoration with a warning screen. The board criticised that automated removals without human review during crises can suppress content of high public interest and evidentiary value for human rights violations.",
+      "sources": ["https://www.oversightboard.com/news/1109713833718200-oversight-board-issues-first-expedited-decisions-about-israel-hamas-conflict/", "https://edition.cnn.com/2023/12/19/tech/meta-israel-hamas-war-content-oversight-board-decision/index.html"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnn.com/2023/12/19/tech/meta-israel-hamas-war-content-oversight-board-decision",

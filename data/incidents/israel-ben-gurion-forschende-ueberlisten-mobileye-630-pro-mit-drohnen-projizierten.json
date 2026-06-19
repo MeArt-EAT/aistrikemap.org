@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Physical integrity",
+    "Right to life",
+    "Consumer protection",
+    "Right to safety"
+  ],
   "asm:actors": [
     {
       "name": "Ben-Gurion University of the Negev (Ben Nassi et al.)",
@@ -53,7 +68,52 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Fahrerassistenz auf Basis kameragestützter Objekterkennung",
+      "description": "Moderne Fahrerassistenzsysteme wie Mobileye 630 PRO und Tesla Autopilot stützen ihre Erkennung von Verkehrszeichen und Hindernissen maßgeblich auf Kamerabilder und neuronale Netze. Diese Systeme prüfen erkannte Objekte nur eingeschränkt auf Tiefe, Kontext und physische Plausibilität. Damit besteht die strukturelle Anfälligkeit, dass ein flach projiziertes Bild als reales Objekt fehlinterpretiert wird.",
+      "title_de": "Fahrerassistenz auf Basis kameragestützter Objekterkennung",
+      "description_de": "Moderne Fahrerassistenzsysteme wie Mobileye 630 PRO und Tesla Autopilot stützen ihre Erkennung von Verkehrszeichen und Hindernissen maßgeblich auf Kamerabilder und neuronale Netze. Diese Systeme prüfen erkannte Objekte nur eingeschränkt auf Tiefe, Kontext und physische Plausibilität. Damit besteht die strukturelle Anfälligkeit, dass ein flach projiziertes Bild als reales Objekt fehlinterpretiert wird.",
+      "title_en": "Driver assistance based on camera-driven object recognition",
+      "description_en": "Modern driver-assistance systems such as Mobileye 630 PRO and Tesla Autopilot base their detection of road signs and obstacles largely on camera images and neural networks. These systems only check recognised objects to a limited degree for depth, context and physical plausibility. This creates a structural vulnerability in which a flat projected image is misinterpreted as a real object.",
+      "sources": []
+    },
+    {
+      "date": "2019-05",
+      "phase": "doctrine",
+      "title": "Verantwortliche Offenlegung im Bug-Bounty-Rahmen",
+      "description": "Die Forschenden um Ben Nassi an der Ben-Gurion-Universität verfolgten den Ansatz verantwortlicher Sicherheitsforschung: Schwachstellen werden zunächst den Herstellern gemeldet und koordiniert offengelegt, bevor sie öffentlich gemacht werden. Zwischen Mai und Oktober 2019 stimmten sie ihre Befunde mit Tesla und Mobileye im Rahmen von Bug-Bounty-Programmen ab. Diese Doktrin rahmte die Demonstration als kontrollierten Test statt als Angriff.",
+      "title_de": "Verantwortliche Offenlegung im Bug-Bounty-Rahmen",
+      "description_de": "Die Forschenden um Ben Nassi an der Ben-Gurion-Universität verfolgten den Ansatz verantwortlicher Sicherheitsforschung: Schwachstellen werden zunächst den Herstellern gemeldet und koordiniert offengelegt, bevor sie öffentlich gemacht werden. Zwischen Mai und Oktober 2019 stimmten sie ihre Befunde mit Tesla und Mobileye im Rahmen von Bug-Bounty-Programmen ab. Diese Doktrin rahmte die Demonstration als kontrollierten Test statt als Angriff.",
+      "title_en": "Responsible disclosure within a bug-bounty framework",
+      "description_en": "The researchers led by Ben Nassi at Ben-Gurion University followed the approach of responsible security research: vulnerabilities are first reported to manufacturers and disclosed in a coordinated way before being made public. Between May and October 2019 they coordinated their findings with Tesla and Mobileye through bug-bounty programmes. This doctrine framed the demonstration as a controlled test rather than an attack.",
+      "sources": ["https://www.nassiben.com/phantoms"]
+    },
+    {
+      "date": "2019-10",
+      "phase": "event",
+      "title": "Phantom-Verkehrszeichen überlisten Mobileye 630 PRO",
+      "description": "Die Forschenden zeigten, dass sich das Modul Mobileye 630 PRO durch projizierte Phantom-Verkehrszeichen zu falschen Warnmeldungen verleiten lässt, etwa von einer Drohne mit Mini-Beamer auf eine Hausfassade geworfen. Dasselbe Verfahren brachte Tesla-Autopiloten dazu, vor sekundenkurz projizierten Geistererscheinungen zu bremsen. Die für das menschliche Auge kaum wahrnehmbaren Projektionen genügten, die Bilderkennung zu täuschen.",
+      "title_de": "Phantom-Verkehrszeichen überlisten Mobileye 630 PRO",
+      "description_de": "Die Forschenden zeigten, dass sich das Modul Mobileye 630 PRO durch projizierte Phantom-Verkehrszeichen zu falschen Warnmeldungen verleiten lässt, etwa von einer Drohne mit Mini-Beamer auf eine Hausfassade geworfen. Dasselbe Verfahren brachte Tesla-Autopiloten dazu, vor sekundenkurz projizierten Geistererscheinungen zu bremsen. Die für das menschliche Auge kaum wahrnehmbaren Projektionen genügten, die Bilderkennung zu täuschen.",
+      "title_en": "Phantom road signs spoof the Mobileye 630 PRO",
+      "description_en": "The researchers showed that the Mobileye 630 PRO module can be tricked into false alerts by projected phantom road signs, for example beamed onto a building facade by a drone-mounted mini-projector. The same technique caused Tesla Autopilot to brake for phantom apparitions projected for split seconds. The projections, barely perceptible to the human eye, were enough to deceive the image recognition.",
+      "sources": ["https://threatpost.com/tesla-autopilot-duped-by-phantom-images/152491/"]
+    },
+    {
+      "date": "2020-11",
+      "phase": "consequences",
+      "title": "Publikation auf der ACM CCS und Gegenmaßnahme GhostBusters",
+      "description": "Die Befunde wurden 2020 unter dem Titel 'Phantom of the ADAS' auf der ACM-CCS-Konferenz veröffentlicht. Die Forschenden schlugen mit GhostBusters eine Gegenmaßnahme vor, die mehrere leichtgewichtige neuronale Netze kombiniert und Objekte anhand von Licht, Kontext, Oberfläche und Tiefe auf Echtheit prüft. Die Arbeit wurde zu einem viel zitierten Beispiel für die Verwundbarkeit kameragestützter Fahrassistenz gegenüber adversarialen Angriffen.",
+      "title_de": "Publikation auf der ACM CCS und Gegenmaßnahme GhostBusters",
+      "description_de": "Die Befunde wurden 2020 unter dem Titel 'Phantom of the ADAS' auf der ACM-CCS-Konferenz veröffentlicht. Die Forschenden schlugen mit GhostBusters eine Gegenmaßnahme vor, die mehrere leichtgewichtige neuronale Netze kombiniert und Objekte anhand von Licht, Kontext, Oberfläche und Tiefe auf Echtheit prüft. Die Arbeit wurde zu einem viel zitierten Beispiel für die Verwundbarkeit kameragestützter Fahrassistenz gegenüber adversarialen Angriffen.",
+      "title_en": "Publication at ACM CCS and the GhostBusters countermeasure",
+      "description_en": "The findings were published in 2020 under the title 'Phantom of the ADAS' at the ACM CCS conference. The researchers proposed GhostBusters as a countermeasure, combining several lightweight neural networks to verify objects' authenticity based on light, context, surface and depth. The work became a widely cited example of the vulnerability of camera-based driver assistance to adversarial attacks.",
+      "sources": ["https://dl.acm.org/doi/10.1145/3372297.3423359", "https://cacm.acm.org/research/protecting-autonomous-cars-from-phantom-attacks/"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://dl.acm.org/doi/10.1145/3372297.3423359",

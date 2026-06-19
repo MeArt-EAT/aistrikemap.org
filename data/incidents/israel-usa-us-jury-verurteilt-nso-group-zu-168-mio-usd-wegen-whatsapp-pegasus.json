@@ -32,9 +32,27 @@
     "political-pressure",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Meinungsfreiheit",
+    "Pressefreiheit",
+    "Schutz vor willkürlicher Überwachung",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Meinungsfreiheit",
+    "Pressefreiheit",
+    "Schutz vor willkürlicher Überwachung",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Freedom of expression",
+    "Freedom of the press",
+    "Protection from arbitrary surveillance",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "NSO Group (defendant)",
@@ -55,7 +73,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 5,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2010",
+      "phase": "infrastructure",
+      "title": "NSO Group gegründet, Pegasus-Spyware entwickelt",
+      "description": "Die NSO Group wurde 2010 im israelischen Technologiestandort Herzlia nahe Tel Aviv gegründet. Ihr Produkt Pegasus ist eine hochinvasive Spyware, die heimlich Smartphones übernimmt und Nachrichten, Mikrofon und Kamera auslesen kann. NSO vermarktet sie als Werkzeug zur Verbrechens- und Terrorbekämpfung und gibt an, sie nur an geprüfte staatliche Behörden zu verkaufen.",
+      "title_de": "NSO Group gegründet, Pegasus-Spyware entwickelt",
+      "description_de": "Die NSO Group wurde 2010 im israelischen Technologiestandort Herzlia nahe Tel Aviv gegründet. Ihr Produkt Pegasus ist eine hochinvasive Spyware, die heimlich Smartphones übernimmt und Nachrichten, Mikrofon und Kamera auslesen kann. NSO vermarktet sie als Werkzeug zur Verbrechens- und Terrorbekämpfung und gibt an, sie nur an geprüfte staatliche Behörden zu verkaufen.",
+      "title_en": "NSO Group founded, develops Pegasus spyware",
+      "description_en": "NSO Group was founded in 2010 in the Israeli tech hub of Herzliya near Tel Aviv. Its product Pegasus is a highly invasive spyware that covertly takes over smartphones and can read messages and access the microphone and camera. NSO markets it as a tool for fighting crime and terrorism and says it sells only to vetted government agencies.",
+      "sources": [
+        "https://techcrunch.com/2025/05/13/seven-things-we-learned-from-whatsapp-vs-nso-group-spyware-lawsuit"
+      ]
+    },
+    {
+      "date": "2019-05",
+      "phase": "infrastructure",
+      "title": "Zero-Click-Angriff über WhatsApp-Anruf entdeckt",
+      "description": "Im Mai 2019 entdeckten WhatsApp-Ingenieure, dass NSO eine Zero-Click-Schwachstelle in der Anruffunktion von WhatsApp ausnutzte (CVE-2019-3568), um Pegasus allein durch einen Anruf still zu installieren — ohne dass das Opfer abnehmen musste. Rund 1.400 Nutzerinnen und Nutzer, darunter Journalisten, Anwälte und Menschenrechtsaktivisten, wurden so ins Visier genommen.",
+      "title_de": "Zero-Click-Angriff über WhatsApp-Anruf entdeckt",
+      "description_de": "Im Mai 2019 entdeckten WhatsApp-Ingenieure, dass NSO eine Zero-Click-Schwachstelle in der Anruffunktion von WhatsApp ausnutzte (CVE-2019-3568), um Pegasus allein durch einen Anruf still zu installieren — ohne dass das Opfer abnehmen musste. Rund 1.400 Nutzerinnen und Nutzer, darunter Journalisten, Anwälte und Menschenrechtsaktivisten, wurden so ins Visier genommen.",
+      "title_en": "Zero-click attack via WhatsApp call discovered",
+      "description_en": "In May 2019 WhatsApp engineers discovered that NSO was exploiting a zero-click vulnerability in WhatsApp's calling feature (CVE-2019-3568) to install Pegasus silently through a single call, without the victim having to answer. Around 1,400 users, including journalists, lawyers and human-rights activists, were targeted this way.",
+      "sources": [
+        "https://thehackernews.com/2025/05/nso-group-fined-168m-for-targeting-1400.html"
+      ]
+    },
+    {
+      "date": "2019-10",
+      "phase": "doctrine",
+      "title": "Meta verklagt NSO Group in Kalifornien",
+      "description": "Im Oktober 2019 verklagte Meta, der Mutterkonzern von WhatsApp, NSO vor einem Bundesgericht in Nord-Kalifornien. Der Konzern warf NSO vor, den verschlüsselten Dienst missbraucht zu haben, um Journalisten, Anwälte und Aktivisten anzugreifen. Mit der Klage etablierte Meta die Doktrin, dass auch staatliche Spyware-Anbieter zivilrechtlich haftbar gemacht werden können. NSO berief sich auf Staatenimmunität, scheiterte damit aber.",
+      "title_de": "Meta verklagt NSO Group in Kalifornien",
+      "description_de": "Im Oktober 2019 verklagte Meta, der Mutterkonzern von WhatsApp, NSO vor einem Bundesgericht in Nord-Kalifornien. Der Konzern warf NSO vor, den verschlüsselten Dienst missbraucht zu haben, um Journalisten, Anwälte und Aktivisten anzugreifen. Mit der Klage etablierte Meta die Doktrin, dass auch staatliche Spyware-Anbieter zivilrechtlich haftbar gemacht werden können. NSO berief sich auf Staatenimmunität, scheiterte damit aber.",
+      "title_en": "Meta sues NSO Group in California",
+      "description_en": "In October 2019 Meta, WhatsApp's parent company, sued NSO in a federal court in the Northern District of California. Meta accused NSO of abusing the encrypted service to target journalists, lawyers and activists. With the suit Meta established the principle that even state-facing spyware vendors can be held civilly liable. NSO invoked sovereign immunity but failed.",
+      "sources": [
+        "https://www.nbcnews.com/politics/supreme-court/supreme-court-allows-whatsapp-lawsuit-pegasus-spyware-move-forward-rcna64141"
+      ]
+    },
+    {
+      "date": "2025-05-06",
+      "phase": "event",
+      "title": "US-Jury verurteilt NSO zu 168 Mio. USD",
+      "description": "Am 6. Mai 2025 verurteilte eine US-Jury im Bezirksgericht Nord-Kalifornien die NSO Group zu 167 Mio. USD Strafschadensersatz und 444.000 USD Schadensersatz wegen der Hacks von 1.400 WhatsApp-Nutzerinnen und -Nutzern mit Pegasus. Es war eines der ersten Urteile, in dem ein kommerzieller Spyware-Anbieter für Angriffe auf eine große Tech-Plattform haftbar gemacht wurde.",
+      "title_de": "US-Jury verurteilt NSO zu 168 Mio. USD",
+      "description_de": "Am 6. Mai 2025 verurteilte eine US-Jury im Bezirksgericht Nord-Kalifornien die NSO Group zu 167 Mio. USD Strafschadensersatz und 444.000 USD Schadensersatz wegen der Hacks von 1.400 WhatsApp-Nutzerinnen und -Nutzern mit Pegasus. Es war eines der ersten Urteile, in dem ein kommerzieller Spyware-Anbieter für Angriffe auf eine große Tech-Plattform haftbar gemacht wurde.",
+      "title_en": "US jury orders NSO to pay $168M",
+      "description_en": "On 6 May 2025 a US jury in the Northern District of California found NSO Group liable for $167M in punitive damages and $444,000 in compensatory damages over the hacking of 1,400 WhatsApp users with Pegasus. It was one of the first verdicts holding a commercial spyware vendor liable for attacks on a major tech platform.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/news/2025/05/ruling-against-nso-group-in-whatsapp-case-a-momentous-win/"
+      ]
+    },
+    {
+      "date": "2025-10-18",
+      "phase": "consequences",
+      "title": "Permanente Verfügung gegen NSO, Strafzahlung gekürzt",
+      "description": "Im Oktober 2025 erließ Bundesrichterin Phyllis Hamilton eine permanente einstweilige Verfügung, die NSO weitere Angriffe auf WhatsApp untersagt. Zugleich reduzierte sie den Strafschadensersatz auf knapp über 4 Mio. USD, da die ursprüngliche Summe als unverhältnismäßig hoch galt. Menschenrechtsorganisationen wie Amnesty International werteten das Verfahren dennoch als Meilenstein im Kampf gegen den Missbrauch kommerzieller Spyware.",
+      "title_de": "Permanente Verfügung gegen NSO, Strafzahlung gekürzt",
+      "description_de": "Im Oktober 2025 erließ Bundesrichterin Phyllis Hamilton eine permanente einstweilige Verfügung, die NSO weitere Angriffe auf WhatsApp untersagt. Zugleich reduzierte sie den Strafschadensersatz auf knapp über 4 Mio. USD, da die ursprüngliche Summe als unverhältnismäßig hoch galt. Menschenrechtsorganisationen wie Amnesty International werteten das Verfahren dennoch als Meilenstein im Kampf gegen den Missbrauch kommerzieller Spyware.",
+      "title_en": "Permanent injunction against NSO, damages cut",
+      "description_en": "In October 2025 federal judge Phyllis Hamilton issued a permanent injunction barring NSO from further attacks on WhatsApp. At the same time she reduced the punitive damages to just over $4M, deeming the original sum disproportionate. Human-rights organisations such as Amnesty International nonetheless hailed the case as a milestone in the fight against the abuse of commercial spyware.",
+      "sources": [
+        "https://www.aljazeera.com/news/2025/10/18/us-court-bars-israeli-spyware-firm-from-targeting-whatsapp-users"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.amnesty.org/en/latest/news/2025/05/ruling-against-nso-group-in-whatsapp-case-a-momentous-win/",
