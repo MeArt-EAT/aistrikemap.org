@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Geistiges Eigentum",
+    "Urheberrecht",
+    "Faire Vergütung",
+    "Schutz kreativer Arbeit"
+  ],
+  "asm:affectedRights_de": [
+    "Geistiges Eigentum",
+    "Urheberrecht",
+    "Faire Vergütung",
+    "Schutz kreativer Arbeit"
+  ],
+  "asm:affectedRights_en": [
+    "Intellectual property",
+    "Copyright",
+    "Fair remuneration",
+    "Protection of creative work"
+  ],
   "asm:actors": [
     {
       "name": "Anthropic",
@@ -41,7 +56,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-12",
+      "phase": "infrastructure",
+      "title": "Anthropic trainiert Claude auf großen Textmengen aus dem Web",
+      "description": "Anthropic baut sein KI-System Claude als großes Sprachmodell, das aus riesigen Mengen frei zugänglichen Webtexts lernt. Zu solchen Trainingsdaten gehören typischerweise auch Webseiten mit Songtexten, deren Rechte bei Musikverlagen liegen. Die Verlage hatten weder Lizenzen erteilt noch eine Vergütung erhalten.",
+      "title_de": "Anthropic trainiert Claude auf großen Textmengen aus dem Web",
+      "description_de": "Anthropic baut sein KI-System Claude als großes Sprachmodell, das aus riesigen Mengen frei zugänglichen Webtexts lernt. Zu solchen Trainingsdaten gehören typischerweise auch Webseiten mit Songtexten, deren Rechte bei Musikverlagen liegen. Die Verlage hatten weder Lizenzen erteilt noch eine Vergütung erhalten.",
+      "title_en": "Anthropic trains Claude on large volumes of web text",
+      "description_en": "Anthropic builds its AI system Claude as a large language model that learns from vast amounts of freely accessible web text. Such training data typically also includes web pages containing song lyrics owned by music publishers. The publishers had neither granted licenses nor received compensation.",
+      "sources": [
+        "https://www.cnbc.com/2023/10/18/universal-music-sues-anthropic-for-copyright-infringement-over-lyrics.html"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "KI-Branche beruft sich auf Fair Use für Trainingsdaten",
+      "description": "Anthropic und andere KI-Firmen vertreten die Position, dass das Training von Sprachmodellen mit urheberrechtlich geschütztem Material unter die Fair-Use-Schranke des US-Rechts fälle. Auf dieser Annahme beruhte die Praxis, frei verfügbare Texte ohne vorherige Lizenz zu verwenden. Die Rechtsfrage war zu diesem Zeitpunkt ungeklärt.",
+      "title_de": "KI-Branche beruft sich auf Fair Use für Trainingsdaten",
+      "description_de": "Anthropic und andere KI-Firmen vertreten die Position, dass das Training von Sprachmodellen mit urheberrechtlich geschütztem Material unter die Fair-Use-Schranke des US-Rechts fälle. Auf dieser Annahme beruhte die Praxis, frei verfügbare Texte ohne vorherige Lizenz zu verwenden. Die Rechtsfrage war zu diesem Zeitpunkt ungeklärt.",
+      "title_en": "AI industry invokes fair use for training data",
+      "description_en": "Anthropic and other AI companies take the position that training language models on copyrighted material falls under the U.S. fair-use doctrine. This assumption underpinned the practice of using freely available texts without a prior license. The legal question was unsettled at the time.",
+      "sources": [
+        "https://www.hollywoodreporter.com/business/business-news/anthropic-enforce-copyright-guardrails-ai-tools-1236098152/"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "event",
+      "title": "Musikverlage verklagen Anthropic wegen Songtexten",
+      "description": "Im Oktober 2023 verklagen acht Musikverlage um Universal Music Group, Concord und ABKCO Anthropic vor einem Bundesgericht in Tennessee. Sie werfen dem Unternehmen vor, Claude mit Songtexten von mindestens 500 Liedern - etwa von Katy Perry, den Rolling Stones und Beyonce - ohne Lizenz trainiert zu haben. Laut Klage gab Claude auf Anfrage nahezu identische Kopien geschützter Texte aus.",
+      "title_de": "Musikverlage verklagen Anthropic wegen Songtexten",
+      "description_de": "Im Oktober 2023 verklagen acht Musikverlage um Universal Music Group, Concord und ABKCO Anthropic vor einem Bundesgericht in Tennessee. Sie werfen dem Unternehmen vor, Claude mit Songtexten von mindestens 500 Liedern - etwa von Katy Perry, den Rolling Stones und Beyonce - ohne Lizenz trainiert zu haben. Laut Klage gab Claude auf Anfrage nahezu identische Kopien geschützter Texte aus.",
+      "title_en": "Music publishers sue Anthropic over song lyrics",
+      "description_en": "In October 2023, eight music publishers led by Universal Music Group, Concord and ABKCO sue Anthropic in a Tennessee federal court. They allege the company trained Claude on lyrics from at least 500 songs - by artists such as Katy Perry, the Rolling Stones and Beyonce - without a license. According to the complaint, Claude reproduced near-identical copies of protected lyrics on request.",
+      "sources": [
+        "https://www.cnbc.com/2023/10/18/universal-music-sues-anthropic-for-copyright-infringement-over-lyrics.html"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "phase": "consequences",
+      "title": "Gericht genehmigt Schutzmaßnahmen gegen Lyrics-Ausgabe",
+      "description": "Anfang 2025 billigt das Gericht eine Vereinbarung über sogenannte Guardrails: Anthropic muss in Claude Schutzmaßnahmen einbauen, die das Ausgeben geschützter Songtexte der klagenden Verlage verhindern. UMG wertet dies als Anerkennung der Klagepunkte.",
+      "title_de": "Gericht genehmigt Schutzmaßnahmen gegen Lyrics-Ausgabe",
+      "description_de": "Anfang 2025 billigt das Gericht eine Vereinbarung über sogenannte Guardrails: Anthropic muss in Claude Schutzmaßnahmen einbauen, die das Ausgeben geschützter Songtexte der klagenden Verlage verhindern. UMG wertet dies als Anerkennung der Klagepunkte.",
+      "title_en": "Court approves guardrails against lyric output",
+      "description_en": "In early 2025, the court approves an agreement on so-called guardrails: Anthropic must build protective measures into Claude that prevent the output of the plaintiff publishers' protected song lyrics. UMG sees this as an acknowledgment of the merits of its claims.",
+      "sources": [
+        "https://www.hollywoodreporter.com/business/business-news/anthropic-enforce-copyright-guardrails-ai-tools-1236098152/"
+      ]
+    },
+    {
+      "date": "2025-03",
+      "phase": "consequences",
+      "title": "Richterin lehnt einstweilige Verfügung gegen Training ab",
+      "description": "Im März 2025 weist US-Bezirksrichterin Eumi Lee den Antrag der Verlage auf eine einstweilige Verfügung zurück, die Anthropics Nutzung der Songtexte zum Training hätte beschränken sollen. Sie hält den Antrag für zu weit gefasst und sieht keinen nachgewiesenen, nicht wiedergutzumachenden Schaden. Das Hauptverfahren läuft weiter.",
+      "title_de": "Richterin lehnt einstweilige Verfügung gegen Training ab",
+      "description_de": "Im März 2025 weist US-Bezirksrichterin Eumi Lee den Antrag der Verlage auf eine einstweilige Verfügung zurück, die Anthropics Nutzung der Songtexte zum Training hätte beschränken sollen. Sie hält den Antrag für zu weit gefasst und sieht keinen nachgewiesenen, nicht wiedergutzumachenden Schaden. Das Hauptverfahren läuft weiter.",
+      "title_en": "Judge denies preliminary injunction against training",
+      "description_en": "In March 2025, U.S. District Judge Eumi Lee denies the publishers' request for a preliminary injunction that would have restricted Anthropic's use of the lyrics for training. She finds the request overly broad and sees no demonstrated irreparable harm. The main proceedings continue.",
+      "sources": [
+        "https://www.musicbusinessworldwide.com/umgs-ai-training-injunction-request-shot-down-by-judge-in-anthropic-lawsuit-but-music-publishers-can-now-gather-more-evidence-from-platform/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.billboard.com/pro/anthropic-claude-ai-music-lawsuit-argues-fair-use-finding/",

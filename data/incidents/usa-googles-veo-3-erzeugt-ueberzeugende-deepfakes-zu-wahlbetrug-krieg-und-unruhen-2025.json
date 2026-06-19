@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf wahrheitsgemäße Information",
+    "Schutz vor Manipulation",
+    "Recht auf freie und faire Wahlen",
+    "Demokratische Teilhabe",
+    "Schutz vor Gewalt und Aufstachelung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf wahrheitsgemäße Information",
+    "Schutz vor Manipulation",
+    "Recht auf freie und faire Wahlen",
+    "Demokratische Teilhabe",
+    "Schutz vor Gewalt und Aufstachelung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to truthful information",
+    "Protection against manipulation",
+    "Right to free and fair elections",
+    "Democratic participation",
+    "Protection against violence and incitement"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -46,7 +64,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024",
+      "phase": "infrastructure",
+      "title": "Generative Text-zu-Video-Modelle erreichen Foto-Realismus",
+      "description": "Mit der Veo-Modellreihe von Google DeepMind und konkurrierenden Systemen erreichte die KI-Videogenerierung 2024 ein Niveau, das kurze, realistisch wirkende Clips aus reinen Texteingaben ermöglichte. Veo 3 fügte erstmals nativen, lippensynchronen Ton hinzu - womit komplette gefälschte Nachrichtensegmente technisch erzeugbar wurden.",
+      "title_de": "Generative Text-zu-Video-Modelle erreichen Foto-Realismus",
+      "description_de": "Mit der Veo-Modellreihe von Google DeepMind und konkurrierenden Systemen erreichte die KI-Videogenerierung 2024 ein Niveau, das kurze, realistisch wirkende Clips aus reinen Texteingaben ermöglichte. Veo 3 fügte erstmals nativen, lippensynchronen Ton hinzu - womit komplette gefälschte Nachrichtensegmente technisch erzeugbar wurden.",
+      "title_en": "Generative text-to-video models reach photorealism",
+      "description_en": "With Google DeepMind's Veo model line and competing systems, AI video generation reached a level in 2024 that allowed short, realistic-looking clips from text prompts alone. Veo 3 added native, lip-synced audio for the first time - making complete fake news segments technically producible.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Veo_(text-to-video_model)"
+      ]
+    },
+    {
+      "date": "2025-05",
+      "phase": "doctrine",
+      "title": "Google bringt Veo 3 mit SynthID-Wasserzeichen als Schutzkonzept heraus",
+      "description": "Auf der Google I/O im Mai 2025 veröffentlichte Google Veo 3 für AI-Abonnent:innen in der Gemini-App, in Flow und über Vertex AI. Als Schutzkonzept gegen Missbrauch setzte Google auf unsichtbare SynthID-Signaturen und Safety-Classifier statt auf restriktive Generierungssperren. Damit lag die Verantwortung faktisch bei nachgelagerter Erkennung, nicht bei der Verhinderung gefährlicher Clips.",
+      "title_de": "Google bringt Veo 3 mit SynthID-Wasserzeichen als Schutzkonzept heraus",
+      "description_de": "Auf der Google I/O im Mai 2025 veröffentlichte Google Veo 3 für AI-Abonnent:innen in der Gemini-App, in Flow und über Vertex AI. Als Schutzkonzept gegen Missbrauch setzte Google auf unsichtbare SynthID-Signaturen und Safety-Classifier statt auf restriktive Generierungssperren. Damit lag die Verantwortung faktisch bei nachgelagerter Erkennung, nicht bei der Verhinderung gefährlicher Clips.",
+      "title_en": "Google ships Veo 3 with SynthID watermarking as its safety concept",
+      "description_en": "At Google I/O in May 2025, Google released Veo 3 to AI subscribers in the Gemini app, in Flow and via Vertex AI. As its anti-abuse concept, Google relied on invisible SynthID signatures and safety classifiers rather than restrictive generation blocks. Responsibility thus rested effectively on downstream detection, not on preventing dangerous clips.",
+      "sources": [
+        "https://developers.googleblog.com/en/veo-3-now-available-gemini-api/",
+        "https://technologymagazine.com/articles/does-googles-veo-3-do-enough-to-distinguish-ai-and-reality"
+      ]
+    },
+    {
+      "date": "2025-05-29",
+      "phase": "event",
+      "title": "TIME demonstriert überzeugende Veo-3-Deepfakes zu Wahlbetrug und Gewalt",
+      "description": "TIME zeigte im Mai 2025, dass Veo 3 trotz Safety-Filter realistische Falsch-Clips zu Nachrichtenereignissen erzeugte - darunter Wahlhelfer:innen, die Stimmzettel schreddern, eine Menge, die einen Hindu-Tempel anzündet, und gestellte Laborszenen. Fachleute warnten, dass solche Videos mit irreführender Bildunterschrift in akuten Lagen Unruhen befeuern könnten; die bestehenden Safety-Classifier reichten nicht aus.",
+      "title_de": "TIME demonstriert überzeugende Veo-3-Deepfakes zu Wahlbetrug und Gewalt",
+      "description_de": "TIME zeigte im Mai 2025, dass Veo 3 trotz Safety-Filter realistische Falsch-Clips zu Nachrichtenereignissen erzeugte - darunter Wahlhelfer:innen, die Stimmzettel schreddern, eine Menge, die einen Hindu-Tempel anzündet, und gestellte Laborszenen. Fachleute warnten, dass solche Videos mit irreführender Bildunterschrift in akuten Lagen Unruhen befeuern könnten; die bestehenden Safety-Classifier reichten nicht aus.",
+      "title_en": "TIME demonstrates convincing Veo 3 deepfakes of election fraud and violence",
+      "description_en": "In May 2025, TIME showed that Veo 3 produced realistic misleading clips of news events despite safety filters - including election workers shredding ballots, a crowd setting fire to a Hindu temple, and staged lab scenes. Experts warned that such videos, paired with misleading captions in breaking-news situations, could fuel unrest; the existing safety classifiers were insufficient.",
+      "sources": [
+        "https://time.com/7290050/veo-3-google-misinformation-deepfake/"
+      ]
+    },
+    {
+      "date": "2025-06",
+      "phase": "consequences",
+      "title": "Gefälschte Veo-3-Nachrichtenclips kursieren in sozialen Medien",
+      "description": "Bereits in der ersten Woche nach dem Launch tauchten mit Veo 3 erstellte Fake-Nachrichtensegmente in mehreren Sprachen online auf, darunter eine erfundene Meldung über den Tod von J.K. Rowling und gestellte politische Pressekonferenzen. Beobachter:innen warnten vor einer breiteren Welle KI-gestützter Desinformation in Nachrichtenformat.",
+      "title_de": "Gefälschte Veo-3-Nachrichtenclips kursieren in sozialen Medien",
+      "description_de": "Bereits in der ersten Woche nach dem Launch tauchten mit Veo 3 erstellte Fake-Nachrichtensegmente in mehreren Sprachen online auf, darunter eine erfundene Meldung über den Tod von J.K. Rowling und gestellte politische Pressekonferenzen. Beobachter:innen warnten vor einer breiteren Welle KI-gestützter Desinformation in Nachrichtenformat.",
+      "title_en": "Fake Veo 3 news clips circulate on social media",
+      "description_en": "Within the first week after launch, fake news segments created with Veo 3 appeared online in several languages, including a fabricated report of J.K. Rowling's death and staged political press conferences. Observers warned of a broader wave of AI-driven disinformation in news format.",
+      "sources": [
+        "https://www.aljazeera.com/economy/2025/6/26/googles-ai-video-tool-amplifies-fears-of-an-increase-in-misinformation"
+      ]
+    },
+    {
+      "date": "2025-06",
+      "phase": "consequences",
+      "title": "Google führt sichtbares Wasserzeichen ein - Fachleute halten es für unzureichend",
+      "description": "Im Juni 2025 weitete Google Veo 3 auf zahlreiche Länder aus und ergänzte ein kleines sichtbares 'Veo'-Wasserzeichen. Forensik-Experten wie Hany Farid und Forschende des Ada Lovelace Institute kritisierten, dass solche Markierungen im schnellen Social-Media-Scrollen kaum auffielen und sich leicht entfernen ließen - die Schutzlücke blieb bestehen.",
+      "title_de": "Google führt sichtbares Wasserzeichen ein - Fachleute halten es für unzureichend",
+      "description_de": "Im Juni 2025 weitete Google Veo 3 auf zahlreiche Länder aus und ergänzte ein kleines sichtbares 'Veo'-Wasserzeichen. Forensik-Experten wie Hany Farid und Forschende des Ada Lovelace Institute kritisierten, dass solche Markierungen im schnellen Social-Media-Scrollen kaum auffielen und sich leicht entfernen ließen - die Schutzlücke blieb bestehen.",
+      "title_en": "Google adds visible watermark - experts deem it insufficient",
+      "description_en": "In June 2025, Google expanded Veo 3 to numerous countries and added a small visible 'Veo' watermark. Forensics experts such as Hany Farid and researchers at the Ada Lovelace Institute criticised that such markings were barely noticeable in fast social-media scrolling and could be easily removed - the security gap remained.",
+      "sources": [
+        "https://technologymagazine.com/articles/does-googles-veo-3-do-enough-to-distinguish-ai-and-reality"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://time.com/7290050/veo-3-google-misinformation-deepfake/",

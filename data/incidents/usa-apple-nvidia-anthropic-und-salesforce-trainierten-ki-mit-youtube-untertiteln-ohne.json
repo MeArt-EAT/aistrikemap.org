@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Geistiges Eigentum",
+    "Urheberrecht",
+    "Schutz kreativer Arbeit",
+    "Informationelle Selbstbestimmung",
+    "Faire Vergütung"
+  ],
+  "asm:affectedRights_de": [
+    "Geistiges Eigentum",
+    "Urheberrecht",
+    "Schutz kreativer Arbeit",
+    "Informationelle Selbstbestimmung",
+    "Faire Vergütung"
+  ],
+  "asm:affectedRights_en": [
+    "Intellectual property",
+    "Copyright",
+    "Protection of creative work",
+    "Informational self-determination",
+    "Fair remuneration"
+  ],
   "asm:actors": [
     {
       "name": "Anthropic",
@@ -67,7 +85,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-12",
+      "phase": "infrastructure",
+      "title": "EleutherAI veröffentlicht den Textdatensatz The Pile",
+      "description": "Ende Dezember 2020 veröffentlicht die gemeinnützige Forschungsgruppe EleutherAI The Pile, einen rund 800 GB großen Textdatensatz zum Training von Sprachmodellen. Ein Teildatensatz namens YouTube Subtitles enthält Untertitel aus 173.536 YouTube-Videos von über 48.000 Kanälen. Der Datensatz wird frei verfügbar gemacht und von der Branche breit genutzt.",
+      "title_de": "EleutherAI veröffentlicht den Textdatensatz The Pile",
+      "description_de": "Ende Dezember 2020 veröffentlicht die gemeinnützige Forschungsgruppe EleutherAI The Pile, einen rund 800 GB großen Textdatensatz zum Training von Sprachmodellen. Ein Teildatensatz namens YouTube Subtitles enthält Untertitel aus 173.536 YouTube-Videos von über 48.000 Kanälen. Der Datensatz wird frei verfügbar gemacht und von der Branche breit genutzt.",
+      "title_en": "EleutherAI releases the text dataset The Pile",
+      "description_en": "In late December 2020, the non-profit research group EleutherAI releases The Pile, a roughly 800 GB text dataset for training language models. A subset called YouTube Subtitles contains subtitles from 173,536 YouTube videos across more than 48,000 channels. The dataset is made freely available and widely used across the industry.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Pile_(dataset)"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Offene Datensätze als Standard für KI-Training",
+      "description": "In der KI-Branche etabliert sich die Praxis, frei verfügbare, aus dem Web zusammengestellte Datensätze wie The Pile ohne gesonderte Rechteprüfung für das Training zu nutzen. Diese Norm beruht auf der Annahme, dass das Sammeln öffentlich abrufbarer Inhalte zulässig sei - obwohl YouTubes Nutzungsbedingungen das automatisierte Abgreifen von Inhalten ausdrücklich untersagen.",
+      "title_de": "Offene Datensätze als Standard für KI-Training",
+      "description_de": "In der KI-Branche etabliert sich die Praxis, frei verfügbare, aus dem Web zusammengestellte Datensätze wie The Pile ohne gesonderte Rechteprüfung für das Training zu nutzen. Diese Norm beruht auf der Annahme, dass das Sammeln öffentlich abrufbarer Inhalte zulässig sei - obwohl YouTubes Nutzungsbedingungen das automatisierte Abgreifen von Inhalten ausdrücklich untersagen.",
+      "title_en": "Open datasets as a standard for AI training",
+      "description_en": "Across the AI industry, the practice takes hold of using freely available, web-compiled datasets like The Pile for training without a separate rights review. This norm rests on the assumption that collecting publicly accessible content is permissible - even though YouTube's terms of service explicitly prohibit automated scraping of content.",
+      "sources": [
+        "https://www.theregister.com/software/2024/07/17/probe-reveals-174k-youtube-vids-subtitles-used-for-ai/1232488"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "event",
+      "title": "Proof News deckt Nutzung der YouTube-Untertitel auf",
+      "description": "Im Juli 2024 dokumentiert Proof News, dass Anthropic, Nvidia, Apple und Salesforce ein Teilstück von The Pile mit Untertiteln aus 173.536 YouTube-Videos genutzt haben - darunter Inhalte von Khan Academy, MIT, Harvard, WSJ, NPR, BBC sowie Late-Night-Shows. YouTubes Nutzungsbedingungen untersagen ein solches Abgreifen ausdrücklich.",
+      "title_de": "Proof News deckt Nutzung der YouTube-Untertitel auf",
+      "description_de": "Im Juli 2024 dokumentiert Proof News, dass Anthropic, Nvidia, Apple und Salesforce ein Teilstück von The Pile mit Untertiteln aus 173.536 YouTube-Videos genutzt haben - darunter Inhalte von Khan Academy, MIT, Harvard, WSJ, NPR, BBC sowie Late-Night-Shows. YouTubes Nutzungsbedingungen untersagen ein solches Abgreifen ausdrücklich.",
+      "title_en": "Proof News reveals use of YouTube subtitles",
+      "description_en": "In July 2024, Proof News documents that Anthropic, Nvidia, Apple and Salesforce used a subset of The Pile containing subtitles from 173,536 YouTube videos - including content from Khan Academy, MIT, Harvard, WSJ, NPR, BBC and late-night shows. YouTube's terms of service explicitly prohibit such scraping.",
+      "sources": [
+        "https://www.proofnews.org/apple-nvidia-anthropic-used-thousands-of-swiped-youtube-videos-to-train-ai/"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "consequences",
+      "title": "Betroffene Kreative kritisieren Nutzung ohne Erlaubnis",
+      "description": "Nach dem Bericht äußern zahlreiche YouTube-Schaffende, deren Inhalte im Datensatz auftauchen, Kritik, dass ihre Arbeit ohne Erlaubnis und ohne Vergütung verwendet wurde. Anthropic erklärt, der genutzte Datensatz enthalte nur einen sehr kleinen Teil der YouTube-Untertitel, äußert sich aber nicht zu möglichen Verstößen gegen YouTubes Bedingungen.",
+      "title_de": "Betroffene Kreative kritisieren Nutzung ohne Erlaubnis",
+      "description_de": "Nach dem Bericht äußern zahlreiche YouTube-Schaffende, deren Inhalte im Datensatz auftauchen, Kritik, dass ihre Arbeit ohne Erlaubnis und ohne Vergütung verwendet wurde. Anthropic erklärt, der genutzte Datensatz enthalte nur einen sehr kleinen Teil der YouTube-Untertitel, äußert sich aber nicht zu möglichen Verstößen gegen YouTubes Bedingungen.",
+      "title_en": "Affected creators criticize unauthorized use",
+      "description_en": "Following the report, numerous YouTube creators whose content appears in the dataset criticize that their work was used without permission and without compensation. Anthropic states that the dataset used contains only a very small subset of YouTube subtitles, but declines to comment on possible violations of YouTube's terms.",
+      "sources": [
+        "https://www.proofnews.org/apple-nvidia-anthropic-used-thousands-of-swiped-youtube-videos-to-train-ai/"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Bericht befeuert breitere Debatte um KI-Trainingsdaten",
+      "description": "Der Bericht reiht sich in eine wachsende Zahl von Auseinandersetzungen um Trainingsdaten generativer KI ein und verstärkt Klagen und Lizenzgespräche um die Frage, ob und wie Urheber:innen für die Nutzung ihrer Inhalte einwilligen und vergütet werden müssen.",
+      "title_de": "Bericht befeuert breitere Debatte um KI-Trainingsdaten",
+      "description_de": "Der Bericht reiht sich in eine wachsende Zahl von Auseinandersetzungen um Trainingsdaten generativer KI ein und verstärkt Klagen und Lizenzgespräche um die Frage, ob und wie Urheber:innen für die Nutzung ihrer Inhalte einwilligen und vergütet werden müssen.",
+      "title_en": "Report fuels broader debate on AI training data",
+      "description_en": "The report adds to a growing number of disputes over generative-AI training data and intensifies lawsuits and licensing talks around whether and how creators must consent to and be compensated for the use of their content.",
+      "sources": [
+        "https://cryptoslate.com/ai-training-dataset-used-by-tech-giants-allegedly-created-by-scraping-youtube-videos-in-violation-of-terms/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.proofnews.org/apple-nvidia-anthropic-used-thousands-of-swiped-youtube-videos-to-train-ai/",

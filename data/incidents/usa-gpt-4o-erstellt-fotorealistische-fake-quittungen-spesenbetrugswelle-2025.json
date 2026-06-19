@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Betrug",
+    "Schutz vor Manipulation",
+    "Recht auf wahrheitsgemäße Information"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Betrug",
+    "Schutz vor Manipulation",
+    "Recht auf wahrheitsgemäße Information"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection against fraud",
+    "Protection against manipulation",
+    "Right to truthful information"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -46,7 +61,76 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024",
+      "phase": "infrastructure",
+      "title": "KI-Bildgeneratoren mit noch schwacher Textwiedergabe",
+      "description": "Bis 2024 konnten Bildgeneratoren wie DALL-E in ChatGPT zwar realistische Szenen erzeugen, scheiterten aber an sauber lesbarem Text in Bildern. Genau diese Schwäche schützte Belege und Quittungen bis dahin teilweise vor überzeugender Fälschung, weil Beträge und Posten meist verzerrt oder unleserlich blieben.",
+      "title_de": "KI-Bildgeneratoren mit noch schwacher Textwiedergabe",
+      "description_de": "Bis 2024 konnten Bildgeneratoren wie DALL-E in ChatGPT zwar realistische Szenen erzeugen, scheiterten aber an sauber lesbarem Text in Bildern. Genau diese Schwäche schützte Belege und Quittungen bis dahin teilweise vor überzeugender Fälschung, weil Beträge und Posten meist verzerrt oder unleserlich blieben.",
+      "title_en": "AI image generators with still-weak text rendering",
+      "description_en": "Until 2024, image generators such as DALL-E in ChatGPT could produce realistic scenes but failed at cleanly legible text within images. This very weakness partly protected receipts and invoices from convincing forgery, because amounts and line items usually remained distorted or unreadable.",
+      "sources": [
+        "https://techcrunch.com/2025/03/31/chatgpts-new-image-generator-is-really-good-at-faking-receipts"
+      ]
+    },
+    {
+      "date": "2025-03-25",
+      "phase": "doctrine",
+      "title": "GPT-4o-Bildgenerator-Update verbessert Textwiedergabe drastisch",
+      "description": "Am 25. März 2025 veröffentlichte OpenAI ein Update des GPT-4o-Bildgenerators, das die Wiedergabe von Text in Bildern deutlich verbesserte und ChatGPT breit zugänglich machte. Das Update war als kreatives Werkzeug gedacht; Schutzmechanismen gegen das Fälschen von Belegen waren nicht vorgesehen, sodass realistische Quittungen mit lesbaren Beträgen frei generierbar wurden.",
+      "title_de": "GPT-4o-Bildgenerator-Update verbessert Textwiedergabe drastisch",
+      "description_de": "Am 25. März 2025 veröffentlichte OpenAI ein Update des GPT-4o-Bildgenerators, das die Wiedergabe von Text in Bildern deutlich verbesserte und ChatGPT breit zugänglich machte. Das Update war als kreatives Werkzeug gedacht; Schutzmechanismen gegen das Fälschen von Belegen waren nicht vorgesehen, sodass realistische Quittungen mit lesbaren Beträgen frei generierbar wurden.",
+      "title_en": "GPT-4o image generator update sharply improves text rendering",
+      "description_en": "On 25 March 2025, OpenAI released an update to the GPT-4o image generator that markedly improved text rendering within images and made ChatGPT broadly accessible. The update was intended as a creative tool; no safeguards against forging receipts were provided, so realistic receipts with legible amounts became freely generable.",
+      "sources": [
+        "https://techcrunch.com/2025/03/31/chatgpts-new-image-generator-is-really-good-at-faking-receipts",
+        "https://www.dailydot.com/debug/chatgpt-faking-receipts/"
+      ]
+    },
+    {
+      "date": "2025-03-31",
+      "phase": "event",
+      "title": "Nutzende demonstrieren kaum erkennbare Fake-Quittungen",
+      "description": "Wenige Tage nach dem Update demonstrierten Nutzende, dass ChatGPT fotorealistische Fake-Quittungen mit lesbarem Text, Knicken und Flecken erstellt - kaum von echten zu unterscheiden. Berichtet wurden unter anderem erfundene Belege realer Restaurants mit einzeln aufgeführten Posten und Summen, was unmittelbar Sorgen vor Spesen-, Steuer- und Erstattungsbetrug auslöste.",
+      "title_de": "Nutzende demonstrieren kaum erkennbare Fake-Quittungen",
+      "description_de": "Wenige Tage nach dem Update demonstrierten Nutzende, dass ChatGPT fotorealistische Fake-Quittungen mit lesbarem Text, Knicken und Flecken erstellt - kaum von echten zu unterscheiden. Berichtet wurden unter anderem erfundene Belege realer Restaurants mit einzeln aufgeführten Posten und Summen, was unmittelbar Sorgen vor Spesen-, Steuer- und Erstattungsbetrug auslöste.",
+      "title_en": "Users demonstrate barely detectable fake receipts",
+      "description_en": "Within days of the update, users demonstrated that ChatGPT could produce photorealistic fake receipts with legible text, wrinkles and stains - nearly indistinguishable from real ones. Reported examples included fabricated receipts of real restaurants with itemised entries and totals, immediately raising concerns about expense, tax and reimbursement fraud.",
+      "sources": [
+        "https://www.dailydot.com/debug/chatgpt-faking-receipts/",
+        "https://techcrunch.com/2025/03/31/chatgpts-new-image-generator-is-really-good-at-faking-receipts"
+      ]
+    },
+    {
+      "date": "2025-09",
+      "phase": "consequences",
+      "title": "Spesen-Anbieter melden messbare Betrugswelle",
+      "description": "Bis September 2025 meldete der Spesenabwicklungs-Anbieter AppZen, dass rund 14 Prozent der erkannten betrügerischen Belege KI-generiert waren - gegenüber praktisch null im Vorjahr. Das Fintech Ramp markierte binnen drei Monaten über eine Million Dollar an gefälschten Rechnungen. Eine Medius-Umfrage ergab, dass 30 Prozent der Finanzfachleute seit den neuen Bildmodellen mehr Fälschungen beobachteten.",
+      "title_de": "Spesen-Anbieter melden messbare Betrugswelle",
+      "description_de": "Bis September 2025 meldete der Spesenabwicklungs-Anbieter AppZen, dass rund 14 Prozent der erkannten betrügerischen Belege KI-generiert waren - gegenüber praktisch null im Vorjahr. Das Fintech Ramp markierte binnen drei Monaten über eine Million Dollar an gefälschten Rechnungen. Eine Medius-Umfrage ergab, dass 30 Prozent der Finanzfachleute seit den neuen Bildmodellen mehr Fälschungen beobachteten.",
+      "title_en": "Expense vendors report a measurable fraud wave",
+      "description_en": "By September 2025, expense-processing vendor AppZen reported that about 14 percent of detected fraudulent receipts were AI-generated - up from virtually zero the year before. Fintech Ramp flagged more than one million dollars in fake invoices within three months. A Medius survey found that 30 percent of finance professionals had observed more forgeries since the new image models launched.",
+      "sources": [
+        "https://www.pymnts.com/news/security-and-risk/2025/phony-ai-created-receipts-become-real-problem-for-businesses/",
+        "https://www.computerworld.com/article/4079701/new-ai-scam-fake-expense-receipts.html"
+      ]
+    },
+    {
+      "date": "2025-11",
+      "phase": "consequences",
+      "title": "Branche setzt auf Metadaten- und Muster-Erkennung - mit Grenzen",
+      "description": "Als Reaktion bauten Anbieter mehrschichtige KI-Prüfungen aus, die Metadaten, Dateinamen-Muster und Bilddetails analysieren; Fachverbände wie das ICAEW veröffentlichten Anleitungen zum Erkennen KI-generierter Belege. Zugleich blieb die Verteidigung lückenhaft, weil sich Metadaten wie C2PA durch eine einfache Format-Konvertierung oder einen Screenshot entfernen lassen.",
+      "title_de": "Branche setzt auf Metadaten- und Muster-Erkennung - mit Grenzen",
+      "description_de": "Als Reaktion bauten Anbieter mehrschichtige KI-Prüfungen aus, die Metadaten, Dateinamen-Muster und Bilddetails analysieren; Fachverbände wie das ICAEW veröffentlichten Anleitungen zum Erkennen KI-generierter Belege. Zugleich blieb die Verteidigung lückenhaft, weil sich Metadaten wie C2PA durch eine einfache Format-Konvertierung oder einen Screenshot entfernen lassen.",
+      "title_en": "Industry turns to metadata and pattern detection - with limits",
+      "description_en": "In response, vendors expanded multi-layered AI checks analysing metadata, file-name patterns and image details; professional bodies such as the ICAEW published guidance on spotting AI-generated receipts. At the same time, the defence remained incomplete, because metadata such as C2PA can be removed by a simple format conversion or a screenshot.",
+      "sources": [
+        "https://www.icaew.com/insights/viewpoints-on-the-news/2025/nov-2025/expenses-fraud-how-to-spot-an-ai-generated-receipt"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.dailydot.com/debug/chatgpt-faking-receipts/",

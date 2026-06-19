@@ -26,9 +26,24 @@
     "data-misuse",
     "political-pressure"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf freie und faire Wahlen",
+    "Demokratische Teilhabe",
+    "Recht auf wahrheitsgemäße Information",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf freie und faire Wahlen",
+    "Demokratische Teilhabe",
+    "Recht auf wahrheitsgemäße Information",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to free and fair elections",
+    "Democratic participation",
+    "Right to truthful information",
+    "Protection against manipulation"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -49,7 +64,87 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-01",
+      "phase": "infrastructure",
+      "title": "ChatGPT wird zur Massen-Auskunftsquelle für Wahlfragen",
+      "description": "ChatGPT auf Basis von GPT-4o war Anfang 2024 ein frei zugänglicher Chatbot mit hunderten Millionen Nutzer:innen, den viele Menschen wie eine Suchmaschine für Alltagsfragen behandelten - auch für praktische Fragen zur Stimmabgabe. Anders als eine Suchmaschine lieferte das Modell jedoch generierte, selbstsicher formulierte Antworten ohne verlässliche Quellenbindung.",
+      "title_de": "ChatGPT wird zur Massen-Auskunftsquelle für Wahlfragen",
+      "description_de": "ChatGPT auf Basis von GPT-4o war Anfang 2024 ein frei zugänglicher Chatbot mit hunderten Millionen Nutzer:innen, den viele Menschen wie eine Suchmaschine für Alltagsfragen behandelten - auch für praktische Fragen zur Stimmabgabe. Anders als eine Suchmaschine lieferte das Modell jedoch generierte, selbstsicher formulierte Antworten ohne verlässliche Quellenbindung.",
+      "title_en": "ChatGPT becomes a mass information source for voting questions",
+      "description_en": "In early 2024, ChatGPT, built on GPT-4o, was a freely accessible chatbot with hundreds of millions of users, many of whom treated it like a search engine for everyday questions, including practical questions about how to vote. Unlike a search engine, however, the model produced generated, confidently worded answers without reliable sourcing.",
+      "sources": [
+        "https://www.cbsnews.com/news/chatgpt-chatbot-ai-incorrect-answers-questions-how-to-vote-battleground-states/"
+      ]
+    },
+    {
+      "date": "2024-01-15",
+      "phase": "doctrine",
+      "title": "OpenAI kündigt Wahl-Schutzmaßnahmen und CanIVote.org-Weiterleitung an",
+      "description": "Am 15. Januar 2024 stellte OpenAI seinen Plan gegen Wahl-Desinformation vor: In Zusammenarbeit mit der National Association of Secretaries of State sollten Anfragen zum Wahlvorgang an die offizielle Seite CanIVote.org weitergeleitet werden, und ChatGPT sollte keine politischen Empfehlungen geben. Die Weiterleitung war jedoch nicht zuverlässig in das Modellverhalten eingebaut, sondern ein nachträglich aufgesetzter Filter.",
+      "title_de": "OpenAI kündigt Wahl-Schutzmaßnahmen und CanIVote.org-Weiterleitung an",
+      "description_de": "Am 15. Januar 2024 stellte OpenAI seinen Plan gegen Wahl-Desinformation vor: In Zusammenarbeit mit der National Association of Secretaries of State sollten Anfragen zum Wahlvorgang an die offizielle Seite CanIVote.org weitergeleitet werden, und ChatGPT sollte keine politischen Empfehlungen geben. Die Weiterleitung war jedoch nicht zuverlässig in das Modellverhalten eingebaut, sondern ein nachträglich aufgesetzter Filter.",
+      "title_en": "OpenAI announces election safeguards and CanIVote.org redirect",
+      "description_en": "On 15 January 2024, OpenAI presented its plan against election disinformation: in collaboration with the National Association of Secretaries of State, queries about the voting process were to be redirected to the official CanIVote.org site, and ChatGPT was not to give political recommendations. The redirect, however, was not reliably built into model behaviour but rather a filter layered on afterwards.",
+      "sources": [
+        "https://openai.com/index/how-openai-is-approaching-2024-worldwide-elections/"
+      ]
+    },
+    {
+      "date": "2024-02-27",
+      "phase": "doctrine",
+      "title": "AI Democracy Projects: Mehrheit der Chatbot-Wahlantworten falsch",
+      "description": "Eine Studie der AI Democracy Projects und von Proof News, durchgeführt mit über 40 Wahl- und KI-Fachleuten, kam Ende Februar 2024 zu dem Ergebnis, dass mehr als die Hälfte der Antworten führender Sprachmodelle zu Wahlfragen ungenau und rund 40 Prozent geradezu schädlich waren. Damit war vor den CBS-Tests bereits dokumentiert, dass die Schutzmechanismen systematisch versagten.",
+      "title_de": "AI Democracy Projects: Mehrheit der Chatbot-Wahlantworten falsch",
+      "description_de": "Eine Studie der AI Democracy Projects und von Proof News, durchgeführt mit über 40 Wahl- und KI-Fachleuten, kam Ende Februar 2024 zu dem Ergebnis, dass mehr als die Hälfte der Antworten führender Sprachmodelle zu Wahlfragen ungenau und rund 40 Prozent geradezu schädlich waren. Damit war vor den CBS-Tests bereits dokumentiert, dass die Schutzmechanismen systematisch versagten.",
+      "title_en": "AI Democracy Projects: majority of chatbot election answers wrong",
+      "description_en": "A study by the AI Democracy Projects and Proof News, conducted with more than 40 election and AI experts, concluded in late February 2024 that more than half of leading language models' answers to election questions were inaccurate and about 40 percent were outright harmful. This documented, ahead of the CBS tests, that the safeguards were failing systematically.",
+      "sources": [
+        "https://www.cbsnews.com/news/ai-chatbots-inaccurate-election-information-proof-news/",
+        "https://www.nbcnews.com/tech/tech-news/ai-chatbots-got-questions-2024-election-wrong-27-time-study-finds-rcna155640"
+      ]
+    },
+    {
+      "date": "2024-06-25",
+      "phase": "event",
+      "title": "CBS-News-Test: ChatGPT gibt in Swing-States falsche Wahlauskünfte",
+      "description": "Eine Untersuchung von CBS News stellte im Juni 2024 fest, dass ChatGPT auf praktische Fragen zur Stimmabgabe in den Swing-States North Carolina, Pennsylvania, Wisconsin und Michigan falsche oder unvollständige Antworten gab - etwa zu Briefwahl-Fristen oder der in Wisconsin nötigen Zeug:innen-Unterschrift. Die angekündigte Weiterleitung zu CanIVote.org griff in den Tests nicht konsistent, während Microsoft Copilot und Google Gemini die Auskunft verweigerten.",
+      "title_de": "CBS-News-Test: ChatGPT gibt in Swing-States falsche Wahlauskünfte",
+      "description_de": "Eine Untersuchung von CBS News stellte im Juni 2024 fest, dass ChatGPT auf praktische Fragen zur Stimmabgabe in den Swing-States North Carolina, Pennsylvania, Wisconsin und Michigan falsche oder unvollständige Antworten gab - etwa zu Briefwahl-Fristen oder der in Wisconsin nötigen Zeug:innen-Unterschrift. Die angekündigte Weiterleitung zu CanIVote.org griff in den Tests nicht konsistent, während Microsoft Copilot und Google Gemini die Auskunft verweigerten.",
+      "title_en": "CBS News test: ChatGPT gives wrong voting information in swing states",
+      "description_en": "A CBS News investigation found in June 2024 that ChatGPT gave incorrect or incomplete answers to practical voting questions for the swing states of North Carolina, Pennsylvania, Wisconsin and Michigan, including mail-ballot deadlines and Wisconsin's witness-signature requirement. The announced redirect to CanIVote.org did not work consistently in the tests, while Microsoft Copilot and Google Gemini refused to answer.",
+      "sources": [
+        "https://www.cbsnews.com/news/chatgpt-chatbot-ai-incorrect-answers-questions-how-to-vote-battleground-states/"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "consequences",
+      "title": "Secretaries of State greifen wegen weiterer KI-Fehlauskünfte ein",
+      "description": "Im August 2024 forderten fünf Secretaries of State Elon Musk auf, den Chatbot Grok zu korrigieren, der fälschlich behauptet hatte, Kamala Harris habe in neun Bundesstaaten die Frist zur Stimmzettel-Eintragung verpasst. Der Fall zeigte, dass das Problem fehlerhafter KI-Wahlauskünfte nicht auf ChatGPT beschränkt war, sondern ein branchenweites Risiko für die Wahl darstellte.",
+      "title_de": "Secretaries of State greifen wegen weiterer KI-Fehlauskünfte ein",
+      "description_de": "Im August 2024 forderten fünf Secretaries of State Elon Musk auf, den Chatbot Grok zu korrigieren, der fälschlich behauptet hatte, Kamala Harris habe in neun Bundesstaaten die Frist zur Stimmzettel-Eintragung verpasst. Der Fall zeigte, dass das Problem fehlerhafter KI-Wahlauskünfte nicht auf ChatGPT beschränkt war, sondern ein branchenweites Risiko für die Wahl darstellte.",
+      "title_en": "Secretaries of state intervene over further AI misinformation",
+      "description_en": "In August 2024, five secretaries of state urged Elon Musk to correct the chatbot Grok, which had falsely claimed that Kamala Harris had missed the ballot-filing deadline in nine states. The case showed that the problem of faulty AI voting information was not limited to ChatGPT but represented an industry-wide risk to the election.",
+      "sources": [
+        "https://www.axios.com/2024/08/05/elon-musk-grok-2024-election-ballot-misinformation"
+      ]
+    },
+    {
+      "date": "2024-11-01",
+      "phase": "consequences",
+      "title": "Behörden warnen offiziell vor KI-Chatbots als Wahlauskunft",
+      "description": "Kurz vor der Wahl warnten Regierungsstellen ausdrücklich davor, sich für Wahlinformationen auf KI-Chatbots zu verlassen. Das Büro der New Yorker Generalstaatsanwältin testete mehrere Chatbots und stellte fest, dass sie häufig ungenaue Antworten gaben; Bürger:innen riskierten, falsch informiert zu werden und dadurch ihre Stimme zu verlieren. Die offiziellen Warnungen unterstrichen, dass die Anbieter-Maßnahmen das Risiko nicht ausräumen konnten.",
+      "title_de": "Behörden warnen offiziell vor KI-Chatbots als Wahlauskunft",
+      "description_de": "Kurz vor der Wahl warnten Regierungsstellen ausdrücklich davor, sich für Wahlinformationen auf KI-Chatbots zu verlassen. Das Büro der New Yorker Generalstaatsanwältin testete mehrere Chatbots und stellte fest, dass sie häufig ungenaue Antworten gaben; Bürger:innen riskierten, falsch informiert zu werden und dadurch ihre Stimme zu verlieren. Die offiziellen Warnungen unterstrichen, dass die Anbieter-Maßnahmen das Risiko nicht ausräumen konnten.",
+      "title_en": "Officials formally warn against AI chatbots for voting information",
+      "description_en": "Shortly before the election, government bodies explicitly warned against relying on AI chatbots for voting information. The office of the New York Attorney General tested several chatbots and found they frequently gave inaccurate answers; citizens risked being misinformed and thereby losing their vote. The official warnings underscored that the providers' measures could not eliminate the risk.",
+      "sources": [
+        "https://www.cnbc.com/2024/11/01/ai-chatbots-arent-reliable-for-voting-questions-government-officials.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cbsnews.com/news/chatgpt-chatbot-ai-incorrect-answers-questions-how-to-vote-battleground-states/",
