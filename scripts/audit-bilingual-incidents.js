@@ -258,8 +258,16 @@ const TRANSLITERATED_COMPOUND_ROOTS = [
   'ubertritt', 'uebertritt',
   'ubertritte', 'uebertritte',
 ];
+// Korpus-Sweep 2026-06-19: Workflow-validierte Transliterationen aus der GEMEINSAMEN
+// Quelle data/translit-extra-map.json (synchron mit fix-umlaut-transliterations.js).
+const EXTRA_TRANSLITERATED = (() => {
+  try {
+    return Object.keys(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'translit-extra-map.json'), 'utf8')));
+  } catch (e) { return []; }
+})();
+const ALL_TRANSLITERATED = TRANSLITERATED_GERMAN_WORDS.concat(EXTRA_TRANSLITERATED);
 const TRANSLITERATION_RE = new RegExp(
-  '\\b(?:' + TRANSLITERATED_GERMAN_WORDS.join('|') + ')\\b',
+  '\\b(?:' + ALL_TRANSLITERATED.join('|') + ')\\b',
   'gi'
 );
 const COMPOUND_TRANSLITERATION_RE = new RegExp(
@@ -271,11 +279,13 @@ const COMPOUND_TRANSLITERATION_RE = new RegExp(
 // "Uber 1,8 Milliarden". The company "Uber" instead occurs in proper-noun
 // contexts ("Uber Technologies", "Uber Eats"). Tighten to digit/quantifier
 // follow-up to keep false positives off the company name.
-const UBER_PREPOSITION_RE = /\b[Uu]ber\s+(?:\d|tausend|hundert|million|milliard)/g;
-const UBER_PREPOSITION_LC_RE = /\buber\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüßA-ZÄÖÜ])/g;
+// Unicode-Boundary statt ASCII-\b: sonst greift "uber" auch nach einem Umlaut
+// (z.B. in "Räuber", "Saeuberung"->"Säuberung") und erzeugt Falsch-Positive.
+const UBER_PREPOSITION_RE = /(?<![A-Za-zÄÖÜäöüß0-9_])[Uu]ber\s+(?:\d|tausend|hundert|million|milliard)/g;
+const UBER_PREPOSITION_LC_RE = /(?<![A-Za-zÄÖÜäöüß0-9_])uber\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüßA-ZÄÖÜ])/g;
 // Generelles "[Uu]ber + Lowercase" → "[Üü]ber" + Rest. Spiegelt UBER_COMPOUND_RE
 // im Fixer-Script, damit das Audit dieselbe Klasse erkennt.
-const UBER_COMPOUND_RE = /\b[Uu]ber[a-zäöüß]{2,}\b/g;
+const UBER_COMPOUND_RE = /(?<![A-Za-zÄÖÜäöüß0-9_])[Uu]ber[a-zäöüß]{2,}(?![A-Za-zÄÖÜäöüß0-9_])/g;
 
 function findTransliterations(text) {
   if (typeof text !== 'string' || !text) return [];

@@ -526,6 +526,14 @@ const COMPOUND_SUFFIX_MAP = {
   'uebertritte': 'übertritte',
 };
 
+// Korpus-Sweep 2026-06-19: Workflow-validierte Transliterationen, ausgelagert
+// nach data/translit-extra-map.json (GEMEINSAME Quelle mit audit-bilingual-incidents.js,
+// damit Fixer + Audit synchron bleiben). 2774 Mappings aus dem korpusweiten ae/oe/ue/ss-Sweep.
+try {
+  const extra = JSON.parse(fs.readFileSync(path.join(DIR, '..', 'translit-extra-map.json'), 'utf8'));
+  for (const k of Object.keys(extra)) if (!(k in FIX_MAP)) FIX_MAP[k] = extra[k];
+} catch (e) { /* optional: extra-map fehlt -> nur Basis-FIX_MAP */ }
+
 // Build word-boundary regex from keys, case-insensitive.
 const ALL_KEYS = Object.keys(FIX_MAP);
 const FIX_RE = new RegExp('\\b(' + ALL_KEYS.join('|') + ')\\b', 'gi');
@@ -539,17 +547,21 @@ const SUFFIX_RE = new RegExp('(' + SUFFIX_KEYS.join('|') + ')\\b', 'gi');
 // Special: "Uber" + Zahl / Quantifizierer → "Über" (Präposition vor Zahl,
 // nicht die Firma). Großschreibung ist case-insensitive — auch lowercase
 // "uber 1,8 Millionen" wird gefasst.
-const UBER_PREPOSITION_RE = /\b[Uu]ber(?=\s+(?:\d|tausend|hundert|million|milliard))/g;
+// HINWEIS: Fuehrendes \b ist ASCII und wuerde nach einem Umlaut greifen
+// (z.B. in "Raeuber" -> nach dem Fix "Raeuber"->"Raeuber"... -> "uber" in "Raeuber"
+// haette \b davor). Daher Unicode-Boundary via Lookbehind, die Umlaute als
+// Wortzeichen behandelt -> "Raeuber"/"Saeuberung" werden NICHT angefasst.
+const UBER_PREPOSITION_RE = /(?<![A-Za-zÄÖÜäöüß0-9_])[Uu]ber(?=\s+(?:\d|tausend|hundert|million|milliard))/g;
 // Zweites Muster: lowercase "uber" als Präposition vor regulärem Substantiv —
 // "Transparenz uber Algorithmen", "Berichte uber die Lage". "Uber" mit Großbuchstabe
 // wird hier NICHT gefasst, weil das die Firma sein könnte.
-const UBER_PREPOSITION_LC_RE = /\buber(?=\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüßA-ZÄÖÜ]))/g;
+const UBER_PREPOSITION_LC_RE = /(?<![A-Za-zÄÖÜäöüß0-9_])uber(?=\s+(?:die|der|das|den|dem|des|ein|eine|einen|einem|einer|eines|seine|seinen|seiner|ihren|ihrer|ihre|[a-zäöüßA-ZÄÖÜ]))/g;
 // Generelles "[Uu]ber + Lowercase-Folge" → "[Üü]ber" + Rest.
 // Fängt alle uber-Komposita ohne sie einzeln zu listen (Übereinstimmung,
 // überproportional, Überraschung, Übergewicht, überraschend, übertragen, …).
 // Mindestens 2 Lowercase-Letters nach "uber", damit "Uber Eats" (mit Leerzeichen)
 // und "UberTechnologies" (Capital nach Uber) nicht gefasst werden.
-const UBER_COMPOUND_RE = /\b([Uu])ber([a-zäöüß]{2,})\b/g;
+const UBER_COMPOUND_RE = /(?<![A-Za-zÄÖÜäöüß0-9_])([Uu])ber([a-zäöüß]{2,})(?![A-Za-zÄÖÜäöüß0-9_])/g;
 
 function preserveCase(original, replacement) {
   // Wenn das Original mit Großbuchstaben anfängt, Ersatz kapitalisieren.
