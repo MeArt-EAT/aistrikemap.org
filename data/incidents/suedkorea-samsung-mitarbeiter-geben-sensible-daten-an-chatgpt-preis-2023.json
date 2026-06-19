@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz von Geschäftsgeheimnissen",
+    "Datenschutz",
+    "Informationelle Selbstbestimmung",
+    "Schutz geistigen Eigentums"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz von Geschäftsgeheimnissen",
+    "Datenschutz",
+    "Informationelle Selbstbestimmung",
+    "Schutz geistigen Eigentums"
+  ],
+  "asm:affectedRights_en": [
+    "Protection of trade secrets",
+    "Data protection",
+    "Informational self-determination",
+    "Protection of intellectual property"
+  ],
   "asm:actors": [
     {
       "name": "Samsung Electronics",
@@ -53,7 +68,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht ChatGPT als frei zugängliches Cloud-Werkzeug",
+      "description": "Am 30. November 2022 brachte OpenAI ChatGPT auf den Markt, einen über den Browser nutzbaren KI-Chatbot. Eingaben werden an OpenAIs Server übertragen und konnten zu jener Zeit zur Verbesserung der Modelle herangezogen werden. Die niedrige Einstiegshürde führte dazu, dass Beschäftigte das Werkzeug rasch auch für Arbeitsaufgaben einsetzten.",
+      "title_de": "OpenAI veröffentlicht ChatGPT als frei zugängliches Cloud-Werkzeug",
+      "description_de": "Am 30. November 2022 brachte OpenAI ChatGPT auf den Markt, einen über den Browser nutzbaren KI-Chatbot. Eingaben werden an OpenAIs Server übertragen und konnten zu jener Zeit zur Verbesserung der Modelle herangezogen werden. Die niedrige Einstiegshürde führte dazu, dass Beschäftigte das Werkzeug rasch auch für Arbeitsaufgaben einsetzten.",
+      "title_en": "OpenAI releases ChatGPT as a freely accessible cloud tool",
+      "description_en": "On 30 November 2022 OpenAI launched ChatGPT, an AI chatbot usable through the browser. Inputs are transmitted to OpenAI's servers and at that time could be used to improve the models. The low barrier to entry meant employees quickly adopted the tool for work tasks too.",
+      "sources": [
+        "https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-chatgpt-after-april-internal-data-leak"
+      ]
+    },
+    {
+      "date": "2023-03-11",
+      "phase": "doctrine",
+      "title": "Samsung erlaubt der Halbleitersparte den Einsatz generativer KI",
+      "description": "Am 11. März 2023 hob Samsung in seiner Device-Solutions-Sparte (Halbleiter) ein zuvor bestehendes Verbot auf und gestattete den Beschäftigten die Nutzung generativer KI-Werkzeuge wie ChatGPT zur Unterstützung ihrer Arbeit. Klare Schranken für vertrauliche Inhalte fehlten, sodass interne Daten in das externe Cloud-System gelangen konnten.",
+      "title_de": "Samsung erlaubt der Halbleitersparte den Einsatz generativer KI",
+      "description_de": "Am 11. März 2023 hob Samsung in seiner Device-Solutions-Sparte (Halbleiter) ein zuvor bestehendes Verbot auf und gestattete den Beschäftigten die Nutzung generativer KI-Werkzeuge wie ChatGPT zur Unterstützung ihrer Arbeit. Klare Schranken für vertrauliche Inhalte fehlten, sodass interne Daten in das externe Cloud-System gelangen konnten.",
+      "title_en": "Samsung allows its semiconductor division to use generative AI",
+      "description_en": "On 11 March 2023 Samsung lifted a prior ban in its Device Solutions (semiconductor) division and permitted employees to use generative AI tools such as ChatGPT to support their work. Clear limits for confidential content were missing, so internal data could end up in the external cloud system.",
+      "sources": [
+        "https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-chatgpt-after-april-internal-data-leak"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "event",
+      "title": "Südkorea: Samsung-Mitarbeiter geben sensible Daten an ChatGPT preis",
+      "description": "Im April 2023 wurde bekannt, dass Samsung-Ingenieure in mindestens drei Fällen vertrauliche Unternehmensdaten in ChatGPT eingegeben hatten - darunter internen Quellcode zur Fehlersuche, eine transkribierte Besprechung sowie eine Testsequenz zur Chip-Prüfung. Da Eingaben an OpenAIs Server übertragen werden, galten die Daten als potenziell kompromittiert. Samsung untersagte daraufhin generative KI-Tools auf Firmengeräten und kündigte ein eigenes internes KI-System an. Der Vorfall löste eine Welle ähnlicher Verbote bei anderen Konzernen aus.",
+      "title_de": "Südkorea: Samsung-Mitarbeiter geben sensible Daten an ChatGPT preis",
+      "description_de": "Im April 2023 wurde bekannt, dass Samsung-Ingenieure in mindestens drei Fällen vertrauliche Unternehmensdaten in ChatGPT eingegeben hatten - darunter internen Quellcode zur Fehlersuche, eine transkribierte Besprechung sowie eine Testsequenz zur Chip-Prüfung. Da Eingaben an OpenAIs Server übertragen werden, galten die Daten als potenziell kompromittiert. Samsung untersagte daraufhin generative KI-Tools auf Firmengeräten und kündigte ein eigenes internes KI-System an. Der Vorfall löste eine Welle ähnlicher Verbote bei anderen Konzernen aus.",
+      "title_en": "South Korea: Samsung employees leak sensitive data to ChatGPT",
+      "description_en": "In April 2023 it emerged that Samsung engineers had, in at least three instances, entered confidential company data into ChatGPT - including internal source code for debugging, a transcribed meeting and a chip-testing sequence. Because inputs are transmitted to OpenAI's servers, the data was considered potentially compromised. Samsung subsequently banned generative AI tools on company devices and announced plans for its own internal AI system. The incident triggered a wave of similar bans at other firms.",
+      "sources": [
+        "https://gizmodo.com/chatgpt-ai-samsung-employees-leak-data-1850307376"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "consequences",
+      "title": "Konzernweites Verbot generativer KI und eigenes internes System",
+      "description": "Im Mai 2023 untersagte Samsung die Nutzung von ChatGPT und anderer externer generativer KI auf Firmengeräten und im internen Netz vollständig; Verstöße konnten bis zur Kündigung geahndet werden. Das Unternehmen kündigte die Entwicklung eigener interner KI-Werkzeuge an, um vertrauliche Daten im Haus zu halten.",
+      "title_de": "Konzernweites Verbot generativer KI und eigenes internes System",
+      "description_de": "Im Mai 2023 untersagte Samsung die Nutzung von ChatGPT und anderer externer generativer KI auf Firmengeräten und im internen Netz vollständig; Verstöße konnten bis zur Kündigung geahndet werden. Das Unternehmen kündigte die Entwicklung eigener interner KI-Werkzeuge an, um vertrauliche Daten im Haus zu halten.",
+      "title_en": "Company-wide ban on generative AI and an in-house system",
+      "description_en": "In May 2023 Samsung fully banned the use of ChatGPT and other external generative AI on company devices and the internal network; violations could be punished up to termination. The company announced it would develop its own internal AI tools to keep confidential data in-house.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2023-05-02/samsung-bans-chatgpt-and-other-generative-ai-use-by-staff-after-leak"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "consequences",
+      "title": "Welle vergleichbarer Verbote in der Wirtschaft",
+      "description": "Samsungs Schritt verstärkte eine breitere Vorsicht gegenüber öffentlichen KI-Diensten: Banken, Technologie- und Industrieunternehmen schränkten den Einsatz von ChatGPT am Arbeitsplatz ein oder verboten ihn, um den Abfluss von Geschäftsgeheimnissen zu verhindern. Der Fall wurde zu einem oft zitierten Beispiel für die Datenschutzrisiken generativer KI im Unternehmensumfeld.",
+      "title_de": "Welle vergleichbarer Verbote in der Wirtschaft",
+      "description_de": "Samsungs Schritt verstärkte eine breitere Vorsicht gegenüber öffentlichen KI-Diensten: Banken, Technologie- und Industrieunternehmen schränkten den Einsatz von ChatGPT am Arbeitsplatz ein oder verboten ihn, um den Abfluss von Geschäftsgeheimnissen zu verhindern. Der Fall wurde zu einem oft zitierten Beispiel für die Datenschutzrisiken generativer KI im Unternehmensumfeld.",
+      "title_en": "A wave of comparable bans across industry",
+      "description_en": "Samsung's move reinforced broader caution toward public AI services: banks, technology and industrial firms restricted or banned ChatGPT use at work to prevent leakage of trade secrets. The case became a frequently cited example of the data-protection risks of generative AI in the enterprise.",
+      "sources": [
+        "https://fortune.com/2023/05/02/samsung-bans-employee-use-chatgpt-data-leak"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.ciodive.com/news/Samsung-Electronics-ChatGPT-leak-data-privacy/647137/",
