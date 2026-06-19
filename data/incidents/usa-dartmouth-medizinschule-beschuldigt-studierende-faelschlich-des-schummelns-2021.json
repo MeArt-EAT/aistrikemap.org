@@ -30,9 +30,30 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf ein faires Verfahren",
+    "Unschuldsvermutung",
+    "Schutz der Ehre und des Rufs",
+    "Datenschutz",
+    "Bildungsgerechtigkeit",
+    "Schutz vor willkürlicher Überwachung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf ein faires Verfahren",
+    "Unschuldsvermutung",
+    "Schutz der Ehre und des Rufs",
+    "Datenschutz",
+    "Bildungsgerechtigkeit",
+    "Schutz vor willkürlicher Überwachung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to a fair procedure",
+    "Presumption of innocence",
+    "Protection of honour and reputation",
+    "Data protection",
+    "Educational fairness",
+    "Protection from arbitrary surveillance"
+  ],
   "asm:actors": [
     {
       "name": "Dartmouth College (Geisel School of Medicine)",
@@ -46,7 +67,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Fern-Prüfungen auf Canvas mit automatischem Hintergrund-Logging",
+      "description": "Mit der Umstellung auf Online-Lehre liefen Prüfungen an der Geisel School of Medicine über die Lernplattform Canvas. Deren Apps auf Laptops, Smartphones und Tablets synchronisieren im Hintergrund automatisch Daten - auch ohne aktive Nutzung. Diese Hintergrund-Pings erzeugen Aktivitätslogs, die keinen bewussten Seitenaufruf belegen, aber wie menschlicher Zugriff aussehen können.",
+      "title_de": "Fern-Prüfungen auf Canvas mit automatischem Hintergrund-Logging",
+      "description_de": "Mit der Umstellung auf Online-Lehre liefen Prüfungen an der Geisel School of Medicine über die Lernplattform Canvas. Deren Apps auf Laptops, Smartphones und Tablets synchronisieren im Hintergrund automatisch Daten - auch ohne aktive Nutzung. Diese Hintergrund-Pings erzeugen Aktivitätslogs, die keinen bewussten Seitenaufruf belegen, aber wie menschlicher Zugriff aussehen können.",
+      "title_en": "Remote exams on Canvas with automatic background logging",
+      "description_en": "With the shift to online teaching, exams at the Geisel School of Medicine ran through the Canvas learning platform. Its apps on laptops, smartphones and tablets automatically sync data in the background - even without active use. These background pings generate activity logs that do not prove a deliberate page visit but can look like human access.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2021/08/what-do-when-schools-use-canvas-or-blackboard-logs-allege-cheating"
+      ]
+    },
+    {
+      "date": "2021-01",
+      "phase": "doctrine",
+      "title": "Schule wertet Canvas-Logs als Schummel-Beweis - ohne forensische Prüfung",
+      "description": "Anfang 2021 leitete die Schule eine Untersuchung ein und durchsuchte die Canvas-Aktivitätsdaten von rund 40 Studierenden nach Zugriffen während Prüfungen. Die Logs wurden als belastender Beweis für bewusstes Schummeln gewertet, ohne dass die technische Frage geklärt war, ob die Einträge von automatischer Synchronisierung statt von menschlichem Handeln stammten.",
+      "title_de": "Schule wertet Canvas-Logs als Schummel-Beweis - ohne forensische Prüfung",
+      "description_de": "Anfang 2021 leitete die Schule eine Untersuchung ein und durchsuchte die Canvas-Aktivitätsdaten von rund 40 Studierenden nach Zugriffen während Prüfungen. Die Logs wurden als belastender Beweis für bewusstes Schummeln gewertet, ohne dass die technische Frage geklärt war, ob die Einträge von automatischer Synchronisierung statt von menschlichem Handeln stammten.",
+      "title_en": "School treats Canvas logs as cheating proof - without forensic review",
+      "description_en": "In early 2021 the school launched an investigation and searched the Canvas activity data of about 40 students for access during exams. The logs were treated as incriminating proof of intentional cheating, without resolving the technical question of whether the entries stemmed from automatic syncing rather than human action.",
+      "sources": [
+        "https://www.chronicle.com/article/dartmouth-dropped-a-shaky-cheating-investigation-but-concerns-over-digital-surveillance-remain"
+      ]
+    },
+    {
+      "date": "2021-03",
+      "phase": "event",
+      "title": "17 Studierende wegen Schummelns angeklagt",
+      "description": "Im März 2021 verengte sich die Untersuchung auf 17 Studierende, die wegen Verstoßes gegen den Ehrenkodex angeklagt wurden. Einigen drohten Sanktionen bis hin zum Ausschluss. Studierende berichteten zudem von Verfahrensmängeln und Druck, ein Geständnis abzulegen, obwohl die Beweisgrundlage allein auf den umstrittenen Canvas-Logs beruhte.",
+      "title_de": "17 Studierende wegen Schummelns angeklagt",
+      "description_de": "Im März 2021 verengte sich die Untersuchung auf 17 Studierende, die wegen Verstoßes gegen den Ehrenkodex angeklagt wurden. Einigen drohten Sanktionen bis hin zum Ausschluss. Studierende berichteten zudem von Verfahrensmängeln und Druck, ein Geständnis abzulegen, obwohl die Beweisgrundlage allein auf den umstrittenen Canvas-Logs beruhte.",
+      "title_en": "17 students charged with cheating",
+      "description_en": "In March 2021 the investigation narrowed to 17 students charged with violating the honour code. Some faced sanctions up to expulsion. Students also reported procedural flaws and pressure to confess, even though the evidentiary basis rested solely on the disputed Canvas logs.",
+      "sources": [
+        "https://www.bostonglobe.com/2021/04/15/metro/cheating-allegations-chill-students-dartmouth-medical-school/"
+      ]
+    },
+    {
+      "date": "2021-04",
+      "phase": "consequences",
+      "title": "Erste Fälle fällen, als Fachleute die Logs widerlegen",
+      "description": "Nachdem Studierende und Sachverständige darlegten, dass die Canvas-Einträge von automatischer Hintergrund-Synchronisierung stammen konnten, ließ die Schule mehrere Fälle rasch fällen. FIRE und die Electronic Frontier Foundation hatten bereits gewarnt, dass die Datengrundlage keinen bewussten Zugriff belege und Verfahrensrechte verletzt worden seien.",
+      "title_de": "Erste Fälle fällen, als Fachleute die Logs widerlegen",
+      "description_de": "Nachdem Studierende und Sachverständige darlegten, dass die Canvas-Einträge von automatischer Hintergrund-Synchronisierung stammen konnten, ließ die Schule mehrere Fälle rasch fällen. FIRE und die Electronic Frontier Foundation hatten bereits gewarnt, dass die Datengrundlage keinen bewussten Zugriff belege und Verfahrensrechte verletzt worden seien.",
+      "title_en": "First cases collapse as experts refute the logs",
+      "description_en": "After students and technical experts demonstrated that the Canvas entries could stem from automatic background syncing, the school quickly dropped several cases. FIRE and the Electronic Frontier Foundation had already warned that the data did not prove deliberate access and that due-process rights had been violated.",
+      "sources": [
+        "https://www.fire.org/news/dartmouth-drops-cheating-charges-against-med-students-apologizes-flawed-investigation"
+      ]
+    },
+    {
+      "date": "2021-06",
+      "phase": "consequences",
+      "title": "Alle Vorwürfe fallengelassen, Schule entschuldigt sich",
+      "description": "Im Juni 2021 ließ die Geisel School of Medicine alle verbliebenen Vorwürfe fällen und löschte die Verstöße aus den Akten. Dekan Duane Compton entschuldigte sich öffentlich bei den Studierenden. Eine unabhängige Software-Prüfung hatte bestätigt, dass die Geräte der Studierenden auch ungenutzt Canvas-Aktivität erzeugen konnten. Der Fall wurde zum Lehrbeispiel für die Gefahr, automatisch erzeugte Daten als Schuldbeweis misszuverstehen.",
+      "title_de": "Alle Vorwürfe fallengelassen, Schule entschuldigt sich",
+      "description_de": "Im Juni 2021 ließ die Geisel School of Medicine alle verbliebenen Vorwürfe fällen und löschte die Verstöße aus den Akten. Dekan Duane Compton entschuldigte sich öffentlich bei den Studierenden. Eine unabhängige Software-Prüfung hatte bestätigt, dass die Geräte der Studierenden auch ungenutzt Canvas-Aktivität erzeugen konnten. Der Fall wurde zum Lehrbeispiel für die Gefahr, automatisch erzeugte Daten als Schuldbeweis misszuverstehen.",
+      "title_en": "All charges dropped, school apologises",
+      "description_en": "In June 2021 the Geisel School of Medicine dropped all remaining charges and cleared the violations from the records. Dean Duane Compton publicly apologised to the students. An independent software review had confirmed that the students' devices could generate Canvas activity even when unused. The case became a textbook example of the danger of mistaking automatically generated data for proof of guilt.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2021/06/dartmouth-ends-misguided-investigation-after-students-rights-groups-speak-out"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.eff.org/deeplinks/2021/06/dartmouth-ends-misguided-investigation-after-students-rights-groups-speak-out",

@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz der Ehre und des Rufs",
+    "Würde des Menschen",
+    "Unschuldsvermutung",
+    "Schutz vor Manipulation",
+    "Recht auf wirksamen Rechtsschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz der Ehre und des Rufs",
+    "Würde des Menschen",
+    "Unschuldsvermutung",
+    "Schutz vor Manipulation",
+    "Recht auf wirksamen Rechtsschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection of honour and reputation",
+    "Human dignity",
+    "Presumption of innocence",
+    "Protection from manipulation",
+    "Right to an effective remedy"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -42,7 +60,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-02",
+      "phase": "infrastructure",
+      "title": "Microsoft integriert OpenAIs Sprachmodell in die Bing-Suche",
+      "description": "Am 7. Februar 2023 startete Microsoft eine neue Version von Bing, in die ein an die Suche angepasstes Modell der GPT-Reihe von OpenAI eingebettet war (später als GPT-4 bestätigt). Die generative KI fasste Suchergebnisse zu fließenden Antworttexten zusammen, statt nur Links aufzulisten. Damit konnte das System Aussagen über reale Personen formulieren, die nicht mehr direkt einer Quelle zuzuordnen waren.",
+      "title_de": "Microsoft integriert OpenAIs Sprachmodell in die Bing-Suche",
+      "description_de": "Am 7. Februar 2023 startete Microsoft eine neue Version von Bing, in die ein an die Suche angepasstes Modell der GPT-Reihe von OpenAI eingebettet war (später als GPT-4 bestätigt). Die generative KI fasste Suchergebnisse zu fließenden Antworttexten zusammen, statt nur Links aufzulisten. Damit konnte das System Aussagen über reale Personen formulieren, die nicht mehr direkt einer Quelle zuzuordnen waren.",
+      "title_en": "Microsoft embeds OpenAI's language model into Bing search",
+      "description_en": "On 7 February 2023 Microsoft launched a new version of Bing with an OpenAI GPT model customised for search built in (later confirmed as GPT-4). The generative AI summarised search results into flowing answer text instead of merely listing links. This allowed the system to make statements about real people that could no longer be traced to a specific source.",
+      "sources": [
+        "https://techcrunch.com/2023/02/07/microsoft-launches-the-new-bing-with-chatgpt-built-in/"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "doctrine",
+      "title": "KI-Zusammenfassungen prominent ausgespielt - trotz bekannter Halluzinationsgefahr",
+      "description": "Microsoft rollte die generierten Bing-Antworten breit aus und platzierte sie prominent über den klassischen Trefferlisten, obwohl Sprachmodelle bekanntermaßen Fakten erfinden ('halluzinieren') und namensähnliche Personen verwechseln können. Eine verlässliche Identitätsprüfung oder Quellenbindung für Aussagen über benannte Privatpersonen war nicht vorgesehen.",
+      "title_de": "KI-Zusammenfassungen prominent ausgespielt - trotz bekannter Halluzinationsgefahr",
+      "description_de": "Microsoft rollte die generierten Bing-Antworten breit aus und platzierte sie prominent über den klassischen Trefferlisten, obwohl Sprachmodelle bekanntermaßen Fakten erfinden ('halluzinieren') und namensähnliche Personen verwechseln können. Eine verlässliche Identitätsprüfung oder Quellenbindung für Aussagen über benannte Privatpersonen war nicht vorgesehen.",
+      "title_en": "AI summaries surfaced prominently despite known hallucination risk",
+      "description_en": "Microsoft rolled out the generated Bing answers broadly and placed them prominently above the classic results list, even though language models are known to fabricate facts ('hallucinate') and to confuse similarly named people. No reliable identity check or source-binding for statements about named private individuals was in place.",
+      "sources": [
+        "https://techcrunch.com/2023/03/14/microsofts-new-bing-was-using-gpt-4-all-along/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "event",
+      "title": "Bing stellt Dozenten und verurteilten Straftäter als dieselbe Person dar",
+      "description": "Die KI-gestützte Bing-Suche vermengte den Luftfahrt-Dozenten, Unternehmer und Air-Force-Veteranen Jeffery Battle mit dem namensähnlichen Jeffrey Leon Battle, der wegen Verschwörung zu Aufruhr verurteilt worden war. Die generierte Zusammenfassung verknüpfte beide mit einer Formulierung wie 'However, Battle was sentenced ...' zu einer einzigen Person und unterstellte dem Dozenten so fälschlich eine Terror-Verurteilung.",
+      "title_de": "Bing stellt Dozenten und verurteilten Straftäter als dieselbe Person dar",
+      "description_de": "Die KI-gestützte Bing-Suche vermengte den Luftfahrt-Dozenten, Unternehmer und Air-Force-Veteranen Jeffery Battle mit dem namensähnlichen Jeffrey Leon Battle, der wegen Verschwörung zu Aufruhr verurteilt worden war. Die generierte Zusammenfassung verknüpfte beide mit einer Formulierung wie 'However, Battle was sentenced ...' zu einer einzigen Person und unterstellte dem Dozenten so fälschlich eine Terror-Verurteilung.",
+      "title_en": "Bing presents the instructor and a convicted criminal as the same person",
+      "description_en": "The AI-powered Bing search conflated aerospace instructor, entrepreneur and Air Force veteran Jeffery Battle with the similarly named Jeffrey Leon Battle, who had been convicted of seditious conspiracy. The generated summary joined the two with phrasing such as 'However, Battle was sentenced ...', merging them into a single person and thereby falsely attributing a terrorism conviction to the instructor.",
+      "sources": [
+        "https://reason.com/volokh/2023/07/13/new-lawsuit-against-bing-based-on-allegedly-ai-hallucinated-libelous-statements/"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "consequences",
+      "title": "Battle verklagt Microsoft wegen KI-Verleumdung",
+      "description": "Jeffery Battle reichte 2023 eine Verleumdungsklage gegen Microsoft ein und machte geltend, die halluzinierte Verknüpfung habe seinen Ruf und sein Unternehmen geschädigt. Der Fall gilt als einer der ersten US-Defamation-Fälle, der sich gegen von einem KI-Suchprodukt erzeugte Aussagen richtet.",
+      "title_de": "Battle verklagt Microsoft wegen KI-Verleumdung",
+      "description_de": "Jeffery Battle reichte 2023 eine Verleumdungsklage gegen Microsoft ein und machte geltend, die halluzinierte Verknüpfung habe seinen Ruf und sein Unternehmen geschädigt. Der Fall gilt als einer der ersten US-Defamation-Fälle, der sich gegen von einem KI-Suchprodukt erzeugte Aussagen richtet.",
+      "title_en": "Battle sues Microsoft over AI defamation",
+      "description_en": "Jeffery Battle filed a defamation lawsuit against Microsoft in 2023, arguing that the hallucinated conflation damaged his reputation and his business. The case is regarded as one of the first US defamation suits targeting statements produced by an AI search product.",
+      "sources": [
+        "https://yro.slashdot.org/story/23/07/15/1824214/chatgpt-powered-bing-sued-for-libel-over-its-ai-induced-hallucinations"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Gericht verweist den Streit ins Schiedsverfahren",
+      "description": "Am 23. Oktober 2024 gab das Gericht Microsofts Antrag statt, den Streit ins Schiedsverfahren zu verweisen, und setzte das Gerichtsverfahren aus. Der Fall illustriert die ungeklärte Rechtsfrage, ob und wie KI-Anbieter für von ihren Modellen erfundene rufschädigende Aussagen haften.",
+      "title_de": "Gericht verweist den Streit ins Schiedsverfahren",
+      "description_de": "Am 23. Oktober 2024 gab das Gericht Microsofts Antrag statt, den Streit ins Schiedsverfahren zu verweisen, und setzte das Gerichtsverfahren aus. Der Fall illustriert die ungeklärte Rechtsfrage, ob und wie KI-Anbieter für von ihren Modellen erfundene rufschädigende Aussagen haften.",
+      "title_en": "Court sends the dispute to arbitration",
+      "description_en": "On 23 October 2024 the court granted Microsoft's motion to compel arbitration and stayed the court proceedings. The case illustrates the unresolved legal question of whether and how AI providers can be held liable for reputation-damaging statements fabricated by their models.",
+      "sources": [
+        "https://knowingmachines.org/knowing-legal-machines/legal-explainer/cases/battle-v-microsoft"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://reason.com/volokh/2023/07/13/new-lawsuit-against-bing-based-on-allegedly-ai-hallucinated-libelous-statements/",

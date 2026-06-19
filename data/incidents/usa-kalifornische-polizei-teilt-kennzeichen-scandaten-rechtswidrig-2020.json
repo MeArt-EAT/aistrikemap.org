@@ -31,9 +31,27 @@
     "surveillance",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Massenüberwachung",
+    "Bewegungsfreiheit",
+    "Versammlungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Massenüberwachung",
+    "Bewegungsfreiheit",
+    "Versammlungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from mass surveillance",
+    "Freedom of movement",
+    "Freedom of assembly"
+  ],
   "asm:actors": [
     {
       "name": "Los Angeles Police Department (and other California agencies)",
@@ -52,7 +70,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-01",
+      "phase": "infrastructure",
+      "title": "Landesweite ALPR-Netze sammeln Bewegungsprofile per Kennzeichen",
+      "description": "Anbieter wie Vigilant Solutions (später Motorola Solutions) und das Digital Recognition Network betrieben in den USA flächendeckende Netze automatischer Kennzeichenleser. Sie erfassten massenhaft Zeit, Ort und Kennzeichen vorbeifahrender Fahrzeuge und legten daraus durchsuchbare Standort-Historien an - auch von Millionen unbescholtener Fahrer.",
+      "title_de": "Landesweite ALPR-Netze sammeln Bewegungsprofile per Kennzeichen",
+      "description_de": "Anbieter wie Vigilant Solutions (später Motorola Solutions) und das Digital Recognition Network betrieben in den USA flächendeckende Netze automatischer Kennzeichenleser. Sie erfassten massenhaft Zeit, Ort und Kennzeichen vorbeifahrender Fahrzeuge und legten daraus durchsuchbare Standort-Historien an - auch von Millionen unbescholtener Fahrer.",
+      "title_en": "Nationwide ALPR networks build movement profiles by plate",
+      "description_en": "Vendors such as Vigilant Solutions (later Motorola Solutions) and the Digital Recognition Network ran wide-reaching networks of automated licence-plate readers across the US. They captured the time, location and plate of passing vehicles en masse and turned them into searchable location histories - including for millions of innocent drivers.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2019/03/heres-why-you-cant-trust-what-cops-and-companies-claim-about-automated-license"
+      ]
+    },
+    {
+      "date": "2016-01-01",
+      "phase": "doctrine",
+      "title": "SB 34 schreibt Schutzregeln vor, die Behörden ignorieren",
+      "description": "Zum 1. Januar 2016 trat in Kalifornien das Gesetz SB 34 in Kraft. Es verpflichtet Behörden, ALPR-Standortdaten zu schützen, Nutzungs- und Datenschutzrichtlinien zu erlassen und Zugriffe zu protokollieren. In der Praxis setzten viele Behörden die Vorgaben nicht um und teilten Daten weiterhin mit auswärtigen und föderalen Stellen.",
+      "title_de": "SB 34 schreibt Schutzregeln vor, die Behörden ignorieren",
+      "description_de": "Zum 1. Januar 2016 trat in Kalifornien das Gesetz SB 34 in Kraft. Es verpflichtet Behörden, ALPR-Standortdaten zu schützen, Nutzungs- und Datenschutzrichtlinien zu erlassen und Zugriffe zu protokollieren. In der Praxis setzten viele Behörden die Vorgaben nicht um und teilten Daten weiterhin mit auswärtigen und föderalen Stellen.",
+      "title_en": "SB 34 mandates safeguards that agencies ignore",
+      "description_en": "On 1 January 2016 California's SB 34 took effect. It requires agencies to protect ALPR location data, adopt usage and privacy policies, and log access. In practice many agencies failed to implement the requirements and continued sharing data with out-of-state and federal entities.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2018/01/ice-accesses-massive-amount-license-plate-data-will-california-take-action"
+      ]
+    },
+    {
+      "date": "2020-02",
+      "phase": "event",
+      "title": "State-Auditor-Bericht stellt rechtswidrige Datenweitergabe fest",
+      "description": "Ein am 13. Februar 2020 veröffentlichter Bericht des kalifornischen State Auditor stellte fest, dass das LAPD und drei weitere Behörden mit ALPR gesammelte Standortdaten unzureichend schützten und entgegen SB 34 mit hunderten auswärtigen Stellen teilten. Das LAPD verfügte über keinerlei Nutzungs- oder Datenschutzrichtlinie; der Auditor warnte, das Problem dürfte über 230 Behörden im Bundesstaat betreffen.",
+      "title_de": "State-Auditor-Bericht stellt rechtswidrige Datenweitergabe fest",
+      "description_de": "Ein am 13. Februar 2020 veröffentlichter Bericht des kalifornischen State Auditor stellte fest, dass das LAPD und drei weitere Behörden mit ALPR gesammelte Standortdaten unzureichend schützten und entgegen SB 34 mit hunderten auswärtigen Stellen teilten. Das LAPD verfügte über keinerlei Nutzungs- oder Datenschutzrichtlinie; der Auditor warnte, das Problem dürfte über 230 Behörden im Bundesstaat betreffen.",
+      "title_en": "State Auditor report finds unlawful data sharing",
+      "description_en": "A report by the California State Auditor published on 13 February 2020 found that the LAPD and three other agencies inadequately protected ALPR location data and shared it, contrary to SB 34, with hundreds of out-of-state entities. The LAPD had no usage or privacy policy at all; the auditor warned the problem likely affected over 230 agencies statewide.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2020/02/california-auditor-releases-damning-report-about-law-enforcements-use-automated",
+        "https://www.govtech.com/public-safety/california-police-share-license-plate-data-with-ice.html"
+      ]
+    },
+    {
+      "date": "2020-02",
+      "phase": "consequences",
+      "title": "EFF dokumentiert ICE-Zugriff auf Bewegungsdaten",
+      "description": "Bürgerrechtsorganisationen wie die EFF dokumentierten, dass die geteilten ALPR-Daten auch der Einwanderungsbehörde ICE zugänglich wurden. Damit setzte die fahrlässige Weitergabe Millionen unbescholtener Fahrer einer massenhaften Bewegungsüberwachung aus und schuf ein Risiko für Migranten und politisch Aktive.",
+      "title_de": "EFF dokumentiert ICE-Zugriff auf Bewegungsdaten",
+      "description_de": "Bürgerrechtsorganisationen wie die EFF dokumentierten, dass die geteilten ALPR-Daten auch der Einwanderungsbehörde ICE zugänglich wurden. Damit setzte die fahrlässige Weitergabe Millionen unbescholtener Fahrer einer massenhaften Bewegungsüberwachung aus und schuf ein Risiko für Migranten und politisch Aktive.",
+      "title_en": "EFF documents ICE access to movement data",
+      "description_en": "Civil-liberties groups such as the EFF documented that the shared ALPR data also became accessible to the immigration agency ICE. The careless sharing thus exposed millions of innocent drivers to mass location surveillance and created risks for migrants and political activists.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2018/01/ice-accesses-massive-amount-license-plate-data-will-california-take-action"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "consequences",
+      "title": "Generalstaatsanwaltschaft erklärt Weitergabe an Bundesstaaten für rechtswidrig",
+      "description": "Im Oktober 2023 stellte die kalifornische Generalstaatsanwaltschaft in Bulletins an alle Behörden klar, dass die Weitergabe von ALPR-Daten an auswärtige und föderale Stellen unzulässig ist, und entwarf eine Musterrichtlinie. Der Schritt folgte auf Klagen und Aktenrecherchen von EFF und ACLU und gab den seit 2016 erhobenen Datenschutz-Forderungen verbindliche Form.",
+      "title_de": "Generalstaatsanwaltschaft erklärt Weitergabe an Bundesstaaten für rechtswidrig",
+      "description_de": "Im Oktober 2023 stellte die kalifornische Generalstaatsanwaltschaft in Bulletins an alle Behörden klar, dass die Weitergabe von ALPR-Daten an auswärtige und föderale Stellen unzulässig ist, und entwarf eine Musterrichtlinie. Der Schritt folgte auf Klagen und Aktenrecherchen von EFF und ACLU und gab den seit 2016 erhobenen Datenschutz-Forderungen verbindliche Form.",
+      "title_en": "Attorney General declares out-of-state sharing unlawful",
+      "description_en": "In October 2023 the California Attorney General clarified in bulletins to all agencies that sharing ALPR data with out-of-state and federal entities is prohibited, and drafted a model policy. The move followed lawsuits and records research by the EFF and ACLU and gave binding form to the privacy demands raised since 2016.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2023/10/victory-california-department-justice-declares-out-state-sharing-license-plate"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.govtech.com/public-safety/california-police-share-license-plate-data-with-ice.html",

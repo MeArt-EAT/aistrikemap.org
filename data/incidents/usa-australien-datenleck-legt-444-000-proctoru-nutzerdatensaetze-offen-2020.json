@@ -26,9 +26,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Informationelle Selbstbestimmung",
+    "Verbraucherschutz",
+    "Recht auf Bildung"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Informationelle Selbstbestimmung",
+    "Verbraucherschutz",
+    "Recht auf Bildung"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Informational self-determination",
+    "Consumer protection",
+    "Right to education"
+  ],
   "asm:actors": [
     {
       "name": "Meazure Learning / ProctorU",
@@ -42,7 +60,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2008",
+      "phase": "infrastructure",
+      "title": "ProctorU baut zentrale Datenbank für Online-Prüfungsüberwachung auf",
+      "description": "ProctorU wird 2008 in Birmingham, Alabama gegründet und etabliert sich als einer der ersten Anbieter für skalierbare Online-Prüfungsüberwachung. Zur Identitätsprüfung sammelt die Firma Namen, E-Mail- und Postadressen, Telefonnummern, Passwörter und Ausweisdaten der Studierenden in einer zentralen Nutzerdatenbank. Diese gewachsene Datensammlung wird später zum Ziel des Angriffs.",
+      "title_de": "ProctorU baut zentrale Datenbank für Online-Prüfungsüberwachung auf",
+      "description_de": "ProctorU wird 2008 in Birmingham, Alabama gegründet und etabliert sich als einer der ersten Anbieter für skalierbare Online-Prüfungsüberwachung. Zur Identitätsprüfung sammelt die Firma Namen, E-Mail- und Postadressen, Telefonnummern, Passwörter und Ausweisdaten der Studierenden in einer zentralen Nutzerdatenbank. Diese gewachsene Datensammlung wird später zum Ziel des Angriffs.",
+      "title_en": "ProctorU builds central database for online exam monitoring",
+      "description_en": "Founded in 2008 in Birmingham, Alabama, ProctorU became one of the first providers of scalable online exam proctoring. To verify identity, the company collected students' names, email and postal addresses, phone numbers, passwords and ID data in a central user database. This accumulated trove later became the target of the attack.",
+      "sources": [
+        "https://www.meazurelearning.com/exam-proctoring/remote-exam-proctoring"
+      ]
+    },
+    {
+      "date": "2020-03",
+      "phase": "doctrine",
+      "title": "COVID-19 zwingt Hochschulen weltweit in die Fernüberwachung von Prüfungen",
+      "description": "Mit den pandemiebedingten Campus-Schließungen ab März 2020 verlagern Universitäten ihre Prüfungen massenhaft ins Netz. Laut einer EDUCAUSE-Umfrage setzte bereits im April 2020 über die Hälfte der befragten Hochschulen eine Fernüberwachungs-Lösung ein. Die so getriebene Nachfrage konzentriert die persönlichen Daten von hunderttausenden Studierenden bei wenigen Anbietern wie ProctorU.",
+      "title_de": "COVID-19 zwingt Hochschulen weltweit in die Fernüberwachung von Prüfungen",
+      "description_de": "Mit den pandemiebedingten Campus-Schließungen ab März 2020 verlagern Universitäten ihre Prüfungen massenhaft ins Netz. Laut einer EDUCAUSE-Umfrage setzte bereits im April 2020 über die Hälfte der befragten Hochschulen eine Fernüberwachungs-Lösung ein. Die so getriebene Nachfrage konzentriert die persönlichen Daten von hunderttausenden Studierenden bei wenigen Anbietern wie ProctorU.",
+      "title_en": "COVID-19 forces universities worldwide into remote exam monitoring",
+      "description_en": "As campuses closed in March 2020, universities moved exams online en masse. An EDUCAUSE survey found that by April 2020 more than half of responding institutions already used a remote proctoring solution. The resulting demand concentrated the personal data of hundreds of thousands of students with a few vendors such as ProctorU.",
+      "sources": [
+        "https://www.insidehighered.com/news/2020/05/11/online-proctoring-surging-during-covid-19"
+      ]
+    },
+    {
+      "date": "2020-07-27",
+      "phase": "event",
+      "title": "Gestohlene ProctorU-Datenbank mit 444.000 Datensätzen erscheint im Hackerforum",
+      "description": "Am 27. Juli 2020 wird in einem Hackerforum eine gestohlene ProctorU-Datenbank mit rund 444.000 Nutzerdatensätzen veröffentlicht. Sie enthält Namen, E-Mail- und Postadressen, Telefonnummern sowie als bcrypt-Hashes gespeicherte Passwörter. Die Daten gehörten zu Konten, die teils vor 2015, nach BleepingComputer-Analyse jedoch bis 2017 angelegt wurden.",
+      "title_de": "Gestohlene ProctorU-Datenbank mit 444.000 Datensätzen erscheint im Hackerforum",
+      "description_de": "Am 27. Juli 2020 wird in einem Hackerforum eine gestohlene ProctorU-Datenbank mit rund 444.000 Nutzerdatensätzen veröffentlicht. Sie enthält Namen, E-Mail- und Postadressen, Telefonnummern sowie als bcrypt-Hashes gespeicherte Passwörter. Die Daten gehörten zu Konten, die teils vor 2015, nach BleepingComputer-Analyse jedoch bis 2017 angelegt wurden.",
+      "title_en": "Stolen ProctorU database with 444,000 records appears on hacker forum",
+      "description_en": "On 27 July 2020 a stolen ProctorU database with around 444,000 user records was posted on a hacker forum. It contained names, email and postal addresses, phone numbers and passwords stored as bcrypt hashes. The data belonged to accounts created partly before 2015, but according to BleepingComputer analysis up to 2017.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/proctoru-confirms-data-breach-after-database-leaked-online/"
+      ]
+    },
+    {
+      "date": "2020-08",
+      "phase": "consequences",
+      "title": "Australische Universitäten untersuchen Leck, ProctorU bestätigt Zugriff",
+      "description": "Australische Universitäten, darunter Queensland und Sydney, leiten Untersuchungen des als 'zutiefst beunruhigend' bezeichneten Vorfalls ein. ProctorU bestätigt den unbefugten Zugriff, gibt an, die Eindringlinge bereits ausgesperrt und Sicherheitsmaßnahmen verstärkt zu haben. Der Vorfall verschärft die ohnehin laute Kritik an der Prüfungsüberwachung.",
+      "title_de": "Australische Universitäten untersuchen Leck, ProctorU bestätigt Zugriff",
+      "description_de": "Australische Universitäten, darunter Queensland und Sydney, leiten Untersuchungen des als 'zutiefst beunruhigend' bezeichneten Vorfalls ein. ProctorU bestätigt den unbefugten Zugriff, gibt an, die Eindringlinge bereits ausgesperrt und Sicherheitsmaßnahmen verstärkt zu haben. Der Vorfall verschärft die ohnehin laute Kritik an der Prüfungsüberwachung.",
+      "title_en": "Australian universities investigate leak, ProctorU confirms access",
+      "description_en": "Australian universities, including Queensland and Sydney, launched investigations into what was called a 'deeply concerning' incident. ProctorU confirmed the unauthorised access, stating it had already locked out the intruders and strengthened security measures. The incident intensified the already loud criticism of exam surveillance.",
+      "sources": [
+        "https://www.sbs.com.au/news/article/australian-universities-investigating-deeply-concerning-hack-of-controversial-exam-software/hcvj1ezjx"
+      ]
+    },
+    {
+      "date": "2020-09",
+      "phase": "consequences",
+      "title": "US-Kanzlei prüft Sammelklage wegen unzureichenden Datenschutzes",
+      "description": "Im September 2020 kündigt die US-Kanzlei Migliaccio & Rathod LLP eine Untersuchung gegen ProctorU an, weil das Unternehmen Nutzerdaten nicht ausreichend geschützt habe. Der Datensatz wird zudem in den Dienst 'Have I Been Pwned' aufgenommen, sodass Betroffene ihre Betroffenheit prüfen können.",
+      "title_de": "US-Kanzlei prüft Sammelklage wegen unzureichenden Datenschutzes",
+      "description_de": "Im September 2020 kündigt die US-Kanzlei Migliaccio & Rathod LLP eine Untersuchung gegen ProctorU an, weil das Unternehmen Nutzerdaten nicht ausreichend geschützt habe. Der Datensatz wird zudem in den Dienst 'Have I Been Pwned' aufgenommen, sodass Betroffene ihre Betroffenheit prüfen können.",
+      "title_en": "US law firm probes class action over inadequate data protection",
+      "description_en": "In September 2020 US law firm Migliaccio & Rathod LLP announced an investigation into ProctorU for failing to adequately safeguard user data. The dataset was also added to the 'Have I Been Pwned' service so affected users could check their exposure.",
+      "sources": [
+        "https://classlawdc.com/2020/09/21/proctoru-data-breach-investigation/",
+        "https://haveibeenpwned.com/Breach/ProctorU"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bleepingcomputer.com/news/security/proctoru-confirms-data-breach-after-database-leaked-online/",
