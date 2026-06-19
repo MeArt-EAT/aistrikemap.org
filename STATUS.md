@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2457 Incidents** · **1025 mit Reverse-TL (41.7 %)** · **0 Audit-Findings** · Anzeigetext jetzt vollständig ä/ö/ü/ß (~1300 Files bereinigt) · Lite-Bundle 1.6 MB gzip |
+| 📊 **Bestand** | **2457 Incidents** · **1121 mit Reverse-TL (45.6 %)** · **0 Audit-Findings** · Anzeigetext jetzt vollständig ä/ö/ü/ß (~1300 Files bereinigt) · Lite-Bundle 1.6 MB gzip |
 | 🔢 **Übergabe-Nr** | **#6** (2026-06-18) + Arbeit vom 2026-06-19 (noch kein eigenes Doc) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **(2026-06-19)** (1) **3 Sev-3-TL-Wellen** +48 Incidents (TL 39.8→41.7 %). (2) **Korpus-Transliterations-Sweep**: ~1300 Files von `ae/oe/ue/ss` auf echte `ä/ö/ü/ß` bereinigt (2774 Workflow-validierte Mappings, ~17k Wort-Fixes). Dabei latenten `über`-Regex-Bug in **Fixer + Audit** gefunden+gefixt (ASCII-`\b` griff nach Umlaut → `Räuber`→`Räüber`); beide Scripts laden jetzt `data/translit-extra-map.json` (synchron). |
-| ➡️ **Nächster Schritt** | **Sev-3-Block weiter** (904 ohne TL) — Wellen-Methode (4-5 Agents × 4 Cases) · ODER AIAAIC Batch D · ODER Dedup-Backlog |
+| ✅ **Zuletzt fertig** | **(2026-06-19)** (1) **9 Sev-3-TL-Wellen** +144 Incidents (TL 39.8→45.6 %), je verifiziert + Audit 0. (2) **Korpus-Transliterations-Sweep**: ~1300 Files von `ae/oe/ue/ss` auf echte `ä/ö/ü/ß` bereinigt (2774 Workflow-validierte Mappings, ~17k Wort-Fixes). Dabei latenten `über`-Regex-Bug in **Fixer + Audit** gefunden+gefixt (ASCII-`\b` griff nach Umlaut → `Räuber`→`Räüber`); beide Scripts laden jetzt `data/translit-extra-map.json` (synchron). |
+| ➡️ **Nächster Schritt** | **Sev-3-Block weiter** (808 ohne TL) — Wellen-Methode (4-5 Agents × 4 Cases, 0 Crashes über 31 Wellen) · ODER AIAAIC Batch D · ODER Dedup-Backlog |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -27,9 +27,9 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 1. **AIAAIC Batch D** (pre-2015, ~300 Stubs) — letzter AIAAIC-Block, niedrige
    Prio (frühe Cases haben weniger Aktualität). Bringt aber historische Tiefe.
    Workflow: siehe Memory `aiaaic-import-workflow` + Übergabe #5.
-2. **Reverse-Timelines** — **1025 von 2457 (41.7 %)** haben die TL (Kern-Feature).
-   **Sev-5 + Sev-4 zu 100 % geschlossen** ✓. **Sev-3: 904 ohne TL** (~14 % gemacht,
-   +48 in 3 Wellen am 2026-06-19). Sev-2/Sev-1: niedrige Prio.
+2. **Reverse-Timelines** — **1121 von 2457 (45.6 %)** haben die TL (Kern-Feature).
+   **Sev-5 + Sev-4 zu 100 % geschlossen** ✓. **Sev-3: 808 ohne TL** (~23 % gemacht,
+   +144 in 9 Wellen am 2026-06-19, Cluster AU/AR/CN/DE/EU/FR/IN/USA/UK/IL/IT/CA/RU/ES/NL/JP/Afrika/SO-Asien). Sev-2/Sev-1: niedrige Prio.
    **Methoden-Lektion:** Der `Workflow`-Tool-Runtime stallt in dieser Umgebung
    nach ~30 Min / ~32 Agenten still (kein Fehler, keine Notification — per
    File-mtime-Check erkennbar). Resume via `resumeFromRunId` macht Cache-sicher
