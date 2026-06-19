@@ -30,9 +30,30 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Recht auf Standort-Privatsphäre",
+    "Kinderrechte",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Recht auf Standort-Privatsphäre",
+    "Kinderrechte",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Right to location privacy",
+    "Children's rights",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Snap Inc.",
@@ -46,7 +67,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-02",
+      "phase": "infrastructure",
+      "title": "Snap integriert My AI mit Zugriff auf Standortfreigabe der App",
+      "description": "Snap stellte My AI am 27. Februar 2023 vor und band den auf OpenAIs GPT basierenden Chatbot direkt in die Snapchat-App ein. Snapchat verarbeitet seit jeher Standortdaten seiner Nutzer, etwa für die Snap Map. My AI konnte bei aktivierter Standortfreigabe den Standort auf Stadtebene verarbeiten und so ortsbezogene Antworten geben.",
+      "title_de": "Snap integriert My AI mit Zugriff auf Standortfreigabe der App",
+      "description_de": "Snap stellte My AI am 27. Februar 2023 vor und band den auf OpenAIs GPT basierenden Chatbot direkt in die Snapchat-App ein. Snapchat verarbeitet seit jeher Standortdaten seiner Nutzer, etwa für die Snap Map. My AI konnte bei aktivierter Standortfreigabe den Standort auf Stadtebene verarbeiten und so ortsbezogene Antworten geben.",
+      "title_en": "Snap integrates My AI with access to the app's location sharing",
+      "description_en": "Snap unveiled My AI on 27 February 2023, embedding the OpenAI GPT-based chatbot directly in the Snapchat app. Snapchat has long processed users' location data, for example for the Snap Map. With location sharing enabled, My AI could process location at city level and give location-aware answers.",
+      "sources": [
+        "https://values.snap.com/news/an-explainer-my-ai-and-location-sharing"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "doctrine",
+      "title": "Schneller Massen-Rollout an eine junge Nutzerbasis",
+      "description": "Im April 2023 weitete Snap My AI von zahlenden Abonnenten auf alle Nutzer aus, darunter viele Minderjährige. Das Geschäftsmodell band den Assistenten fest in die App ein und nutzte die ohnehin gesammelten Daten weiter, ohne den Nutzern transparent zu machen, welche Standortinformationen der Bot tatsächlich verarbeiten kann. Diese Intransparenz schuf die Grundlage für irreführende Bot-Aussagen.",
+      "title_de": "Schneller Massen-Rollout an eine junge Nutzerbasis",
+      "description_de": "Im April 2023 weitete Snap My AI von zahlenden Abonnenten auf alle Nutzer aus, darunter viele Minderjährige. Das Geschäftsmodell band den Assistenten fest in die App ein und nutzte die ohnehin gesammelten Daten weiter, ohne den Nutzern transparent zu machen, welche Standortinformationen der Bot tatsächlich verarbeiten kann. Diese Intransparenz schuf die Grundlage für irreführende Bot-Aussagen.",
+      "title_en": "Rapid mass rollout to a young user base",
+      "description_en": "In April 2023 Snap expanded My AI from paying subscribers to all users, including many minors. The business model wove the assistant tightly into the app and reused the data already being collected, without making transparent to users what location information the bot can actually process. This opacity laid the groundwork for misleading bot statements.",
+      "sources": [
+        "https://www.cnn.com/2023/04/19/tech/snapchat-my-ai-bot-chatgpt/index.html"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "event",
+      "title": "My AI verneint Standortkenntnis, antwortet aber ortsbezogen",
+      "description": "Im April 2023 stellten Nutzer fest, dass My AI auf Nachfrage behauptete, ihren Standort nicht zu kennen, dann aber dennoch ortsbezogene Antworten gab, etwa das nächstgelegene Restaurant nannte. Datenschützer kritisierten die irreführenden Aussagen und die Datensammlung bei Minderjährigen. Snap erklärte, die Standortfreigabe sei standardmäßig deaktiviert und der Bot greife nur bei aktiver Freigabe auf den Standort zu.",
+      "title_de": "My AI verneint Standortkenntnis, antwortet aber ortsbezogen",
+      "description_de": "Im April 2023 stellten Nutzer fest, dass My AI auf Nachfrage behauptete, ihren Standort nicht zu kennen, dann aber dennoch ortsbezogene Antworten gab, etwa das nächstgelegene Restaurant nannte. Datenschützer kritisierten die irreführenden Aussagen und die Datensammlung bei Minderjährigen. Snap erklärte, die Standortfreigabe sei standardmäßig deaktiviert und der Bot greife nur bei aktiver Freigabe auf den Standort zu.",
+      "title_en": "My AI denies knowing the location yet answers location-aware",
+      "description_en": "In April 2023 users found that My AI claimed not to know their location when asked, yet still gave location-aware answers such as naming the nearest restaurant. Privacy advocates criticised the misleading statements and the collection of data involving minors. Snap said location sharing is off by default and the bot only accesses location when sharing is active.",
+      "sources": [
+        "https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/"
+      ]
+    },
+    {
+      "date": "2023-06",
+      "phase": "consequences",
+      "title": "Britische Datenschutzbehörde ICO eröffnet Untersuchung zu My AI",
+      "description": "Im Juni 2023 eröffnete die britische Datenschutzbehörde ICO eine Untersuchung zu My AI, weil Snap möglicherweise die Datenschutzrisiken des Chatbots nicht ausreichend bewertet hatte. Besonders im Fokus standen die Risiken für 13- bis 17-jährige Nutzer, deren personenbezogene Daten über die Eingaben in den Chatbot verarbeitet wurden.",
+      "title_de": "Britische Datenschutzbehörde ICO eröffnet Untersuchung zu My AI",
+      "description_de": "Im Juni 2023 eröffnete die britische Datenschutzbehörde ICO eine Untersuchung zu My AI, weil Snap möglicherweise die Datenschutzrisiken des Chatbots nicht ausreichend bewertet hatte. Besonders im Fokus standen die Risiken für 13- bis 17-jährige Nutzer, deren personenbezogene Daten über die Eingaben in den Chatbot verarbeitet wurden.",
+      "title_en": "UK data regulator ICO opens an investigation into My AI",
+      "description_en": "In June 2023 the UK Information Commissioner's Office opened an investigation into My AI because Snap may not have adequately assessed the chatbot's data protection risks. The risks to users aged 13 to 17, whose personal data was processed through inputs to the chatbot, were a particular focus.",
+      "sources": [
+        "https://techcrunch.com/2023/10/06/snap-ico-notice/"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "consequences",
+      "title": "ICO erlässt vorläufige Anordnung, Snap bessert nach",
+      "description": "Am 6. Oktober 2023 erließ die ICO eine vorläufige Anordnung gegen Snap, weil die Risikobewertung vor dem Start von My AI die Datenschutzrisiken der generativen KI besonders für Kinder nicht ausreichend erfasst habe. Im Mai 2024 schloss die ICO die Untersuchung ab, nachdem Snap eine umfassendere und gesetzeskonforme Risikobewertung vorgenommen hatte, und warnte Organisationen, Datenschutzrisiken nicht zu ignorieren.",
+      "title_de": "ICO erlässt vorläufige Anordnung, Snap bessert nach",
+      "description_de": "Am 6. Oktober 2023 erließ die ICO eine vorläufige Anordnung gegen Snap, weil die Risikobewertung vor dem Start von My AI die Datenschutzrisiken der generativen KI besonders für Kinder nicht ausreichend erfasst habe. Im Mai 2024 schloss die ICO die Untersuchung ab, nachdem Snap eine umfassendere und gesetzeskonforme Risikobewertung vorgenommen hatte, und warnte Organisationen, Datenschutzrisiken nicht zu ignorieren.",
+      "title_en": "ICO issues a preliminary notice, Snap remediates",
+      "description_en": "On 6 October 2023 the ICO issued a preliminary enforcement notice against Snap because the risk assessment carried out before My AI's launch had not adequately captured the data protection risks of the generative AI, particularly for children. In May 2024 the ICO concluded the investigation after Snap completed a more thorough, law-compliant risk assessment, warning organisations not to ignore data protection risks.",
+      "sources": [
+        "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/05/ico-warns-organisations-must-not-ignore-data-protection-risks-as-it-concludes-snap-my-ai-chatbot-investigation/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/",

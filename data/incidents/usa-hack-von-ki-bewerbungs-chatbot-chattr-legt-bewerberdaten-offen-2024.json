@@ -25,9 +25,30 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Informationelle Selbstbestimmung",
+    "Recht auf Arbeit",
+    "Schutz vor Diskriminierung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Informationelle Selbstbestimmung",
+    "Recht auf Arbeit",
+    "Schutz vor Diskriminierung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Informational self-determination",
+    "Right to work",
+    "Protection from discrimination",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Chattr",
@@ -41,7 +62,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Chattr baut KI-Einstellungsdienst für die Stundenlohn-Branche auf",
+      "description": "Das 2018 in Tampa, Florida, gegründete Unternehmen Chattr entwickelte einen KI-gestützten Bewerbungs- und Einstellungsdienst für die Stundenlohn-Branche. Über einen chat-basierten Assistenten führt das System Bewerber durch den gesamten Einstellungsprozess. Zahlreiche US-Fastfood-Ketten setzten den Dienst zur automatisierten Einstellung ein und speicherten dabei sensible Bewerberdaten in einer Firebase-Datenbank.",
+      "title_de": "Chattr baut KI-Einstellungsdienst für die Stundenlohn-Branche auf",
+      "description_de": "Das 2018 in Tampa, Florida, gegründete Unternehmen Chattr entwickelte einen KI-gestützten Bewerbungs- und Einstellungsdienst für die Stundenlohn-Branche. Über einen chat-basierten Assistenten führt das System Bewerber durch den gesamten Einstellungsprozess. Zahlreiche US-Fastfood-Ketten setzten den Dienst zur automatisierten Einstellung ein und speicherten dabei sensible Bewerberdaten in einer Firebase-Datenbank.",
+      "title_en": "Chattr builds an AI hiring service for the hourly workforce",
+      "description_en": "Founded in 2018 in Tampa, Florida, Chattr developed an AI-driven application and hiring service for the hourly workforce. Through a chat-based assistant the system guides applicants through the entire hiring process. Numerous US fast-food chains used the service for automated hiring, storing sensitive applicant data in a Firebase database.",
+      "sources": [
+        "https://chattr.ai/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Automatisierte Masseneinstellung über zentrale Cloud-Datenbank",
+      "description": "Chattrs Geschäftsmodell automatisierte die Einstellung für viele Marken über eine gemeinsame Cloud-Infrastruktur. Bewerberdaten von Ketten wie Subway, KFC, IHOP und Wendys liefen in einer zentralen Firebase-Datenbank zusammen. Die Sicherheitsregeln dieser Datenbank waren jedoch fehlkonfiguriert, sodass die Registrierungsfunktion missbraucht werden konnte, um umfassenden Zugriff zu erlangen.",
+      "title_de": "Automatisierte Masseneinstellung über zentrale Cloud-Datenbank",
+      "description_de": "Chattrs Geschäftsmodell automatisierte die Einstellung für viele Marken über eine gemeinsame Cloud-Infrastruktur. Bewerberdaten von Ketten wie Subway, KFC, IHOP und Wendys liefen in einer zentralen Firebase-Datenbank zusammen. Die Sicherheitsregeln dieser Datenbank waren jedoch fehlkonfiguriert, sodass die Registrierungsfunktion missbraucht werden konnte, um umfassenden Zugriff zu erlangen.",
+      "title_en": "Automated mass hiring via a central cloud database",
+      "description_en": "Chattr's business model automated hiring for many brands through a shared cloud infrastructure. Applicant data from chains such as Subway, KFC, IHOP and Wendy's flowed into a central Firebase database. However, that database's security rules were misconfigured, so the registration feature could be abused to gain broad access.",
+      "sources": [
+        "https://rhisac.org/threat-intelligence/security-researcher-discloses-misconfiguration-in-chattr-ai-hiring-service/"
+      ]
+    },
+    {
+      "date": "2024-01",
+      "phase": "event",
+      "title": "Forschende erlangen über Firebase-Fehlkonfiguration vollen Zugriff",
+      "description": "Sicherheitsforschende entdeckten Anfang Januar 2024 eine Fehlkonfiguration im KI-Bewerbungsdienst Chattr.ai. Über eine ungesicherte Firebase-Datenbank erhielten sie Lese- und Schreibzugriff samt Admin-Dashboard, konnten Bewerber annehmen oder ablehnen und sahen Namen, Telefonnummern, E-Mails und teils Passwörter im Klartext. Betroffen waren Marken wie Subway, KFC, IHOP und Wendys.",
+      "title_de": "Forschende erlangen über Firebase-Fehlkonfiguration vollen Zugriff",
+      "description_de": "Sicherheitsforschende entdeckten Anfang Januar 2024 eine Fehlkonfiguration im KI-Bewerbungsdienst Chattr.ai. Über eine ungesicherte Firebase-Datenbank erhielten sie Lese- und Schreibzugriff samt Admin-Dashboard, konnten Bewerber annehmen oder ablehnen und sahen Namen, Telefonnummern, E-Mails und teils Passwörter im Klartext. Betroffen waren Marken wie Subway, KFC, IHOP und Wendys.",
+      "title_en": "Researchers gain full access via a Firebase misconfiguration",
+      "description_en": "In early January 2024 security researchers discovered a misconfiguration in the AI hiring service Chattr.ai. Via an unsecured Firebase database they gained read and write access plus an admin dashboard, could accept or reject applicants and saw names, phone numbers, emails and some plaintext passwords. Affected brands included Subway, KFC, IHOP and Wendy's.",
+      "sources": [
+        "https://www.404media.co/hackers-break-into-hiring-ai-chat-bot-chattr/"
+      ]
+    },
+    {
+      "date": "2024-01",
+      "phase": "consequences",
+      "title": "Chattr schließt die Lücke nach einem Tag, schweigt dann",
+      "description": "Nach der verantwortungsvollen Meldung durch die Forschenden behob Chattr die Fehlkonfiguration innerhalb eines Tages. Auf weitere Nachfragen reagierte das Unternehmen jedoch nicht mehr öffentlich. Menschenrechts- und Datenschutzorganisationen werteten den Vorfall als gravierende Datenschutzverletzung, weil Bewerber kaum Kontrolle über ihre bei automatisierten Einstellungssystemen gespeicherten Daten haben.",
+      "title_de": "Chattr schließt die Lücke nach einem Tag, schweigt dann",
+      "description_de": "Nach der verantwortungsvollen Meldung durch die Forschenden behob Chattr die Fehlkonfiguration innerhalb eines Tages. Auf weitere Nachfragen reagierte das Unternehmen jedoch nicht mehr öffentlich. Menschenrechts- und Datenschutzorganisationen werteten den Vorfall als gravierende Datenschutzverletzung, weil Bewerber kaum Kontrolle über ihre bei automatisierten Einstellungssystemen gespeicherten Daten haben.",
+      "title_en": "Chattr closes the hole within a day, then goes silent",
+      "description_en": "After the researchers' responsible disclosure, Chattr fixed the misconfiguration within a day. The company did not respond publicly to further inquiries, however. Human rights and privacy organisations characterised the incident as a serious data protection violation, because applicants have little control over the data stored in automated hiring systems.",
+      "sources": [
+        "https://www.business-humanrights.org/en/latest-news/ai-hiring-chatbot-breach-exposes-alarming-privacy-violations-and-hiring-concerns-in-fast-food-industry/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.404media.co/hackers-break-into-hiring-ai-chat-bot-chattr/",

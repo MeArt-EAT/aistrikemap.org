@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Recht auf wahrheitsgemäße Information",
+    "Körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Informierte Einwilligung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Recht auf wahrheitsgemäße Information",
+    "Körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Informierte Einwilligung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Right to truthful information",
+    "Physical integrity",
+    "Right to life",
+    "Informed consent"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -54,7 +72,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht ChatGPT auf Basis von GPT-3.5",
+      "description": "OpenAI stellt ChatGPT als kostenlose Forschungsvorschau bereit, gestützt auf das Sprachmodell GPT-3.5. Das System wurde auf großen Mengen ungefilterter Internettexte trainiert und nicht für medizinische Anwendungen entwickelt. Innerhalb von zwei Monaten erreicht es rund 100 Millionen Nutzende, von denen viele es auch für Gesundheitsfragen verwenden.",
+      "title_de": "OpenAI veröffentlicht ChatGPT auf Basis von GPT-3.5",
+      "description_de": "OpenAI stellt ChatGPT als kostenlose Forschungsvorschau bereit, gestützt auf das Sprachmodell GPT-3.5. Das System wurde auf großen Mengen ungefilterter Internettexte trainiert und nicht für medizinische Anwendungen entwickelt. Innerhalb von zwei Monaten erreicht es rund 100 Millionen Nutzende, von denen viele es auch für Gesundheitsfragen verwenden.",
+      "title_en": "OpenAI releases ChatGPT built on GPT-3.5",
+      "description_en": "OpenAI makes ChatGPT available as a free research preview, powered by the GPT-3.5 language model. The system was trained on large amounts of unfiltered internet text and was not built for medical use. Within two months it reaches about 100 million users, many of whom also use it for health questions.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ChatGPT"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Konversationelle KI als vermeintliche Gesundheitsberatung",
+      "description": "Da ChatGPT flüssige, autoritativ klingende Antworten liefert, beginnen Patientinnen und Patienten sowie Teile des Klinikbetriebs, es als niedrigschwellige Quelle für medizinische Auskünfte zu nutzen. Das Modell macht jedoch keine geprüften Angaben zu Verlässlichkeit oder Leitlinienkonformität. Forschende des Brigham and Women's Hospital entwerfen daraufhin einen systematischen Test gegen die NCCN-Krebsleitlinien.",
+      "title_de": "Konversationelle KI als vermeintliche Gesundheitsberatung",
+      "description_de": "Da ChatGPT flüssige, autoritativ klingende Antworten liefert, beginnen Patientinnen und Patienten sowie Teile des Klinikbetriebs, es als niedrigschwellige Quelle für medizinische Auskünfte zu nutzen. Das Modell macht jedoch keine geprüften Angaben zu Verlässlichkeit oder Leitlinienkonformität. Forschende des Brigham and Women's Hospital entwerfen daraufhin einen systematischen Test gegen die NCCN-Krebsleitlinien.",
+      "title_en": "Conversational AI treated as health guidance",
+      "description_en": "Because ChatGPT produces fluent, authoritative-sounding answers, patients and parts of clinical practice begin using it as a low-threshold source for medical information. Yet the model gives no verified statement about reliability or guideline concordance. Researchers at Brigham and Women's Hospital therefore design a systematic test against the NCCN cancer guidelines.",
+      "sources": [
+        "https://www.eurekalert.org/news-releases/999410"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "event",
+      "title": "Studie: ChatGPT empfiehlt in einem Drittel der Fälle falsche Krebstherapien",
+      "description": "In JAMA Oncology veröffentlichte Forschende prüfen GPT-3.5-turbo mit 104 Prompts zu Brust-, Prostata- und Lungenkrebs. In rund einem Drittel der Antworten enthält mindestens eine Empfehlung einen Verstoß gegen die NCCN-Leitlinien. In 12,5 Prozent der Fälle erfindet das System Therapien, die in keiner Leitlinie stehen. Falsche und korrekte Empfehlungen sind oft vermischt, sodass selbst Fachleute die Fehler schwer erkennen.",
+      "title_de": "Studie: ChatGPT empfiehlt in einem Drittel der Fälle falsche Krebstherapien",
+      "description_de": "In JAMA Oncology veröffentlichte Forschende prüfen GPT-3.5-turbo mit 104 Prompts zu Brust-, Prostata- und Lungenkrebs. In rund einem Drittel der Antworten enthält mindestens eine Empfehlung einen Verstoß gegen die NCCN-Leitlinien. In 12,5 Prozent der Fälle erfindet das System Therapien, die in keiner Leitlinie stehen. Falsche und korrekte Empfehlungen sind oft vermischt, sodass selbst Fachleute die Fehler schwer erkennen.",
+      "title_en": "Study: ChatGPT gives wrong cancer treatments in one-third of cases",
+      "description_en": "Researchers publishing in JAMA Oncology test GPT-3.5-turbo with 104 prompts on breast, prostate and lung cancer. In about one-third of answers at least one recommendation breaches the NCCN guidelines. In 12.5 percent of cases the system fabricates therapies absent from any guideline. Wrong and correct recommendations are often blended, making errors hard to spot even for experts.",
+      "sources": [
+        "https://www.eurekalert.org/news-releases/999410",
+        "https://ascopost.com/news/august-2023/how-guideline-concordant-are-cancer-treatment-recommendations-from-chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "consequences",
+      "title": "Warnung vor KI-Selbstdiagnose in der Onkologie",
+      "description": "Die Studienautoren und berichtende Medien warnen, dass leitlinienwidrige oder erfundene Empfehlungen die Erwartungen von Krebspatienten verfälschen und das Arzt-Patienten-Verhältnis beschädigen können. Sie betonen, dass GPT-3.5 nicht als klinisches Entscheidungswerkzeug geeignet ist und dass die Vermischung richtiger und falscher Aussagen die Gefahr erhöht.",
+      "title_de": "Warnung vor KI-Selbstdiagnose in der Onkologie",
+      "description_de": "Die Studienautoren und berichtende Medien warnen, dass leitlinienwidrige oder erfundene Empfehlungen die Erwartungen von Krebspatienten verfälschen und das Arzt-Patienten-Verhältnis beschädigen können. Sie betonen, dass GPT-3.5 nicht als klinisches Entscheidungswerkzeug geeignet ist und dass die Vermischung richtiger und falscher Aussagen die Gefahr erhöht.",
+      "title_en": "Warning against AI self-diagnosis in oncology",
+      "description_en": "The study authors and reporting media warn that non-concordant or fabricated recommendations can distort cancer patients' expectations and damage the doctor-patient relationship. They stress that GPT-3.5 is unsuitable as a clinical decision tool and that blending correct and incorrect statements increases the risk.",
+      "sources": [
+        "https://news.harvard.edu/gazette/story/2023/08/need-cancer-treatment-advice-forget-chatgpt/"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Debatte um Regulierung medizinischer KI verschärft sich",
+      "description": "Der Fall reiht sich in eine wachsende Debatte über die Regulierung generativer KI im Gesundheitswesen ein. Fachgesellschaften und Aufsichtsbehörden diskutieren, ob und wie allgemeine Sprachmodelle als klinische Entscheidungsunterstützung einzustufen sind, und mahnen verpflichtende Prüfungen vor jedem medizinischen Einsatz an.",
+      "title_de": "Debatte um Regulierung medizinischer KI verschärft sich",
+      "description_de": "Der Fall reiht sich in eine wachsende Debatte über die Regulierung generativer KI im Gesundheitswesen ein. Fachgesellschaften und Aufsichtsbehörden diskutieren, ob und wie allgemeine Sprachmodelle als klinische Entscheidungsunterstützung einzustufen sind, und mahnen verpflichtende Prüfungen vor jedem medizinischen Einsatz an.",
+      "title_en": "Debate over regulating medical AI intensifies",
+      "description_en": "The case feeds a growing debate over regulating generative AI in healthcare. Professional bodies and regulators discuss whether and how general-purpose language models should be classified as clinical decision support, and call for mandatory evaluation before any medical deployment.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057020/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bloomberg.com/news/articles/2023-08-24/chatgpt-fails-at-recommending-cancer-treatment-study-finds",
