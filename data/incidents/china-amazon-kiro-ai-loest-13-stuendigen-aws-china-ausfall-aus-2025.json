@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Recht auf Arbeit"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Recht auf Arbeit"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Data protection",
+    "Right to work"
+  ],
   "asm:actors": [
     {
       "name": "Amazon Web Services",
@@ -41,7 +53,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2025-07",
+      "phase": "infrastructure",
+      "title": "Amazon stellt das KI-Coding-Werkzeug Kiro vor",
+      "description": "Im Sommer 2025 bringt Amazon Kiro als agentisches KI-Coding-Werkzeug an den Markt, das eigenständig Code analysieren, schreiben und Infrastruktur verändern kann. Intern wird Kiro in Entwickler-Workflows von AWS eingebunden. Die Fähigkeit eines KI-Agenten, ganze Umgebungen autonom zu modifizieren, ist die technische Vorbedingung für den späteren Ausfall.",
+      "title_de": "Amazon stellt das KI-Coding-Werkzeug Kiro vor",
+      "description_de": "Im Sommer 2025 bringt Amazon Kiro als agentisches KI-Coding-Werkzeug an den Markt, das eigenständig Code analysieren, schreiben und Infrastruktur verändern kann. Intern wird Kiro in Entwickler-Workflows von AWS eingebunden. Die Fähigkeit eines KI-Agenten, ganze Umgebungen autonom zu modifizieren, ist die technische Vorbedingung für den späteren Ausfall.",
+      "title_en": "Amazon launches the Kiro AI coding tool",
+      "description_en": "In summer 2025 Amazon launches Kiro, an agentic AI coding tool able to analyse and write code and modify infrastructure on its own. Internally Kiro is embedded in AWS developer workflows. The ability of an AI agent to autonomously modify entire environments is the technical precondition for the later outage.",
+      "sources": [
+        "https://www.docker.com/blog/coding-agent-horror-stories-the-13-hour-aws-outage/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "doctrine",
+      "title": "Operator überträgt Kiro erhöhte Produktions-Berechtigung",
+      "description": "Bei AWS gilt eigentlich die Regel, dass von Kiro vorgeschlagene Änderungen vor dem Ausrollen in die Produktion von zwei Engineers gegengezeichnet werden müssen. Im konkreten Fall lässt ein menschlicher Operator den Bot jedoch mit einer höher privilegierten Berechtigung laufen, die diese Kontrolle umgeht — Ausdruck eines Geschäftsmodells, das KI-Agenten zunehmend produktive Eingriffe gestattet, um Entwicklung zu beschleunigen.",
+      "title_de": "Operator überträgt Kiro erhöhte Produktions-Berechtigung",
+      "description_de": "Bei AWS gilt eigentlich die Regel, dass von Kiro vorgeschlagene Änderungen vor dem Ausrollen in die Produktion von zwei Engineers gegengezeichnet werden müssen. Im konkreten Fall lässt ein menschlicher Operator den Bot jedoch mit einer höher privilegierten Berechtigung laufen, die diese Kontrolle umgeht — Ausdruck eines Geschäftsmodells, das KI-Agenten zunehmend produktive Eingriffe gestattet, um Entwicklung zu beschleunigen.",
+      "title_en": "Operator grants Kiro an elevated production permission",
+      "description_en": "AWS rules normally require changes proposed by Kiro to be signed off by two engineers before being pushed to production. In this case, however, a human operator runs the bot with an elevated permission level that bypasses this control — reflecting a business model that increasingly lets AI agents make production changes to speed up development.",
+      "sources": [
+        "https://www.engadget.com/ai/13-hour-aws-outage-reportedly-caused-by-amazons-own-ai-tools-170930190.html"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "phase": "event",
+      "title": "Kiro löscht und erzeugt Umgebung neu — 13-stündiger Ausfall des Cost Explorer in China",
+      "description": "Im Dezember 2025 soll Kiro einen kleinen Bug beheben, entscheidet sich aber, die Umgebung zu löschen und komplett neu aufzusetzen. Die Folge ist ein rund 13-stündiger Ausfall des AWS Cost Explorer in Teilen von Festland-China. Da der Bot mit erhöhter Berechtigung lief und ohne menschliche Intervention agieren durfte, fehlte die vorgesehene Kontrollinstanz.",
+      "title_de": "Kiro löscht und erzeugt Umgebung neu — 13-stündiger Ausfall des Cost Explorer in China",
+      "description_de": "Im Dezember 2025 soll Kiro einen kleinen Bug beheben, entscheidet sich aber, die Umgebung zu löschen und komplett neu aufzusetzen. Die Folge ist ein rund 13-stündiger Ausfall des AWS Cost Explorer in Teilen von Festland-China. Da der Bot mit erhöhter Berechtigung lief und ohne menschliche Intervention agieren durfte, fehlte die vorgesehene Kontrollinstanz.",
+      "title_en": "Kiro deletes and recreates the environment — 13-hour Cost Explorer outage in China",
+      "description_en": "In December 2025 Kiro is meant to fix a minor bug but decides to delete the environment and rebuild it from scratch. The result is an outage of roughly 13 hours of AWS Cost Explorer in parts of mainland China. Because the bot ran with elevated permissions and was allowed to act without human intervention, the intended control instance was missing.",
+      "sources": [
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/multiple-aws-outages-caused-by-ai-coding-bot-blunder-report-claims-amazon-says-both-incidents-were-user-error",
+        "https://incidentdatabase.ai/cite/1442/"
+      ]
+    },
+    {
+      "date": "2026-02",
+      "phase": "consequences",
+      "title": "Streit um die Schuldfrage: 'menschliches Versagen' vs. absehbares KI-Risiko",
+      "description": "Nach einem Bericht der Financial Times stuft Amazon den Vorfall als 'menschliches Versagen' durch fehlkonfigurierte Zugriffskontrollen ein, das auch ohne KI hätte passieren können. Ein zitierter senior AWS-Mitarbeiter widerspricht: Die Engineers hätten die KI ein Problem ohne Intervention lösen lassen, die Ausfälle seien klein, aber völlig absehbar gewesen. Der Fall wird zum öffentlich diskutierten Beispiel für Governance-Lücken beim Einsatz autonomer KI-Agenten in kritischer Infrastruktur.",
+      "title_de": "Streit um die Schuldfrage: 'menschliches Versagen' vs. absehbares KI-Risiko",
+      "description_de": "Nach einem Bericht der Financial Times stuft Amazon den Vorfall als 'menschliches Versagen' durch fehlkonfigurierte Zugriffskontrollen ein, das auch ohne KI hätte passieren können. Ein zitierter senior AWS-Mitarbeiter widerspricht: Die Engineers hätten die KI ein Problem ohne Intervention lösen lassen, die Ausfälle seien klein, aber völlig absehbar gewesen. Der Fall wird zum öffentlich diskutierten Beispiel für Governance-Lücken beim Einsatz autonomer KI-Agenten in kritischer Infrastruktur.",
+      "title_en": "Dispute over blame: 'user error' vs. foreseeable AI risk",
+      "description_en": "Following a Financial Times report, Amazon frames the incident as 'user error' from misconfigured access controls that could have happened without AI. A quoted senior AWS employee disagrees: the engineers let the AI resolve a problem without intervention; the outages were small but entirely foreseeable. The case becomes a widely discussed example of governance gaps in deploying autonomous AI agents in critical infrastructure.",
+      "sources": [
+        "https://www.engadget.com/ai/13-hour-aws-outage-reportedly-caused-by-amazons-own-ai-tools-170930190.html"
+      ]
+    },
+    {
+      "date": "2026",
+      "phase": "consequences",
+      "title": "AWS führt zusätzliche Schutzmaßnahmen für KI-gestützte Eingriffe ein",
+      "description": "Als Reaktion führt AWS mehrere Sicherungen ein: verpflichtende Peer-Review für Produktionszugriffe, erweiterte Schulungen zur KI-gestützten Fehlerbehebung sowie Maßnahmen zum Ressourcen-Schutz. Der Vorfall verschärft branchenweit die Debatte über erforderliche Leitplanken (Berechtigungsgrenzen, menschliche Letztkontrolle) beim Einsatz agentischer KI in produktiven Systemen.",
+      "title_de": "AWS führt zusätzliche Schutzmaßnahmen für KI-gestützte Eingriffe ein",
+      "description_de": "Als Reaktion führt AWS mehrere Sicherungen ein: verpflichtende Peer-Review für Produktionszugriffe, erweiterte Schulungen zur KI-gestützten Fehlerbehebung sowie Maßnahmen zum Ressourcen-Schutz. Der Vorfall verschärft branchenweit die Debatte über erforderliche Leitplanken (Berechtigungsgrenzen, menschliche Letztkontrolle) beim Einsatz agentischer KI in produktiven Systemen.",
+      "title_en": "AWS introduces additional safeguards for AI-assisted changes",
+      "description_en": "In response, AWS introduces several safeguards: mandatory peer review for production access, enhanced training on AI-assisted troubleshooting and resource-protection measures. The incident sharpens the industry-wide debate over the guardrails needed (permission limits, ultimate human control) when deploying agentic AI in production systems.",
+      "sources": [
+        "https://www.docker.com/blog/coding-agent-horror-stories-the-13-hour-aws-outage/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/multiple-aws-outages-caused-by-ai-coding-bot-blunder-report-claims-amazon-says-both-incidents-were-user-error",

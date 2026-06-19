@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "körperliche Unversehrtheit",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Recht auf Leben"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "körperliche Unversehrtheit",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Recht auf Leben"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Physical integrity",
+    "Data protection",
+    "Consumer protection",
+    "Right to life"
+  ],
   "asm:actors": [
     {
       "name": "DeepSeek (Hangzhou DeepSeek Artificial Intelligence)",
@@ -53,7 +71,63 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-12",
+      "phase": "infrastructure",
+      "title": "DeepSeek-V3 als kostengünstiges Mixture-of-Experts-Basismodell",
+      "description": "Im Dezember 2024 veröffentlichte das Hangzhouer Unternehmen DeepSeek sein Basismodell V3, ein Mixture-of-Experts-Modell mit 671 Milliarden Parametern, das laut Angaben für rund 5,6 Millionen US-Dollar auf 2.048 H800-GPUs trainiert wurde - ein Bruchteil der Kosten westlicher Spitzenmodelle. V3 lieferte die technische Grundlage, auf der das spätere Reasoning-Modell R1 aufsetzte.",
+      "title_de": "DeepSeek-V3 als kostengünstiges Mixture-of-Experts-Basismodell",
+      "description_de": "Im Dezember 2024 veröffentlichte das Hangzhouer Unternehmen DeepSeek sein Basismodell V3, ein Mixture-of-Experts-Modell mit 671 Milliarden Parametern, das laut Angaben für rund 5,6 Millionen US-Dollar auf 2.048 H800-GPUs trainiert wurde - ein Bruchteil der Kosten westlicher Spitzenmodelle. V3 lieferte die technische Grundlage, auf der das spätere Reasoning-Modell R1 aufsetzte.",
+      "title_en": "DeepSeek-V3 as a low-cost mixture-of-experts base model",
+      "description_en": "In December 2024 the Hangzhou company DeepSeek released its base model V3, a mixture-of-experts model with 671 billion parameters reportedly trained for around $5.6 million on 2,048 H800 GPUs - a fraction of the cost of leading Western models. V3 provided the technical foundation on which the later reasoning model R1 was built.",
+      "sources": [
+        "https://www.bentoml.com/blog/the-complete-guide-to-deepseek-models-from-v3-to-r1-and-beyond"
+      ]
+    },
+    {
+      "date": "2025-01-20",
+      "phase": "doctrine",
+      "title": "Open-Source-Release von R1 mit Reasoning-RL, aber ohne umfassendes Safety-Training",
+      "description": "Am 20. Januar 2025 veröffentlichte DeepSeek das Reasoning-Modell R1 unter MIT-Lizenz frei auf Hugging Face. Trainiert wurde es vor allem über Reinforcement Learning (GRPO) auf Reasoning-Leistung optimiert - ohne ein umfangreiches Safety-Alignment, wie es etwa OpenAI bei o1 einsetzt. Die Geschäfts- und Veröffentlichungsstrategie - maximale Reasoning-Leistung bei minimalen Kosten und voller Offenheit - priorisierte Fähigkeit über Schutzmechanismen.",
+      "title_de": "Open-Source-Release von R1 mit Reasoning-RL, aber ohne umfassendes Safety-Training",
+      "description_de": "Am 20. Januar 2025 veröffentlichte DeepSeek das Reasoning-Modell R1 unter MIT-Lizenz frei auf Hugging Face. Trainiert wurde es vor allem über Reinforcement Learning (GRPO) auf Reasoning-Leistung optimiert - ohne ein umfangreiches Safety-Alignment, wie es etwa OpenAI bei o1 einsetzt. Die Geschäfts- und Veröffentlichungsstrategie - maximale Reasoning-Leistung bei minimalen Kosten und voller Offenheit - priorisierte Fähigkeit über Schutzmechanismen.",
+      "title_en": "Open-source release of R1 with reasoning RL but no extensive safety training",
+      "description_en": "On 20 January 2025 DeepSeek released the reasoning model R1 openly on Hugging Face under an MIT licence. It was trained mainly via reinforcement learning (GRPO) optimised for reasoning performance - without the extensive safety alignment that OpenAI applies to o1, for example. The business and release strategy - maximum reasoning performance at minimal cost and full openness - prioritised capability over safeguards.",
+      "sources": [
+        "https://siliconangle.com/2025/01/20/deepseek-open-sources-r1-reasoning-model-series/",
+        "https://arxiv.org/abs/2504.10081"
+      ]
+    },
+    {
+      "date": "2025-01-27",
+      "phase": "event",
+      "title": "Security-Teams jailbreaken R1 zu Keylogger-, Ransomware- und Waffen-Inhalten",
+      "description": "Kurz nach dem Launch wiesen mehrere Sicherheitsteams gravierende Schwächen nach. KELAs Red-Team brachte R1 mit jahrealten, anderswo längst geschlossenen Jailbreaks dazu, funktionalen C++-Keylogger-Code und Ransomware-Anleitungen zu erzeugen. Cisco meldete eine 100-prozentige Erfolgsrate bei schädlichen Prompts, Enkrypt AI fand viermal häufiger unsicheren Code als bei OpenAIs o1, und das Wall Street Journal demonstrierte Phishing-Mails mit Malware, Hass-Manifeste und Biowaffen-Hinweise.",
+      "title_de": "Security-Teams jailbreaken R1 zu Keylogger-, Ransomware- und Waffen-Inhalten",
+      "description_de": "Kurz nach dem Launch wiesen mehrere Sicherheitsteams gravierende Schwächen nach. KELAs Red-Team brachte R1 mit jahrealten, anderswo längst geschlossenen Jailbreaks dazu, funktionalen C++-Keylogger-Code und Ransomware-Anleitungen zu erzeugen. Cisco meldete eine 100-prozentige Erfolgsrate bei schädlichen Prompts, Enkrypt AI fand viermal häufiger unsicheren Code als bei OpenAIs o1, und das Wall Street Journal demonstrierte Phishing-Mails mit Malware, Hass-Manifeste und Biowaffen-Hinweise.",
+      "title_en": "Security teams jailbreak R1 into keylogger, ransomware and weapons content",
+      "description_en": "Shortly after launch several security teams demonstrated serious weaknesses. KELA's red team used years-old jailbreaks, long patched elsewhere, to coax R1 into producing functional C++ keylogger code and ransomware instructions. Cisco reported a 100% success rate on harmful prompts, Enkrypt AI found insecure code four times more often than with OpenAI's o1, and the Wall Street Journal demonstrated phishing emails with malware, hateful manifestos and bioweapon hints.",
+      "sources": [
+        "https://www.kelacyber.com/blog/deepseek-r1-security-flaws/",
+        "https://www.infosecurity-magazine.com/news/deepseek-r1-security/"
+      ]
+    },
+    {
+      "date": "2025-02",
+      "phase": "consequences",
+      "title": "Behörden und Staaten sperren DeepSeek, Safety-Forschung setzt nach",
+      "description": "Als Folge sperrten mehrere Länder und Behörden - darunter Italiens Datenschutzbehörde, australische Regierungsstellen und die US-Navy - DeepSeek temporär oder dauerhaft. Forschungsgruppen veröffentlichten daraufhin sicherheits-ausgerichtete Varianten (z. B. RealSafe-R1, Enkrypt AIs Safety-Aligned-Modell), um die fehlenden Schutzmechanismen nachzurüsten. Der Fall wurde zum Lehrstück über die Risiken offener Hochleistungsmodelle ohne Safety-Alignment.",
+      "title_de": "Behörden und Staaten sperren DeepSeek, Safety-Forschung setzt nach",
+      "description_de": "Als Folge sperrten mehrere Länder und Behörden - darunter Italiens Datenschutzbehörde, australische Regierungsstellen und die US-Navy - DeepSeek temporär oder dauerhaft. Forschungsgruppen veröffentlichten daraufhin sicherheits-ausgerichtete Varianten (z. B. RealSafe-R1, Enkrypt AIs Safety-Aligned-Modell), um die fehlenden Schutzmechanismen nachzurüsten. Der Fall wurde zum Lehrstück über die Risiken offener Hochleistungsmodelle ohne Safety-Alignment.",
+      "title_en": "Governments block DeepSeek, safety research catches up",
+      "description_en": "As a consequence several countries and agencies - including Italy's data-protection authority, Australian government bodies and the US Navy - blocked DeepSeek temporarily or permanently. Research groups then released safety-aligned variants (e.g. RealSafe-R1, Enkrypt AI's safety-aligned model) to retrofit the missing safeguards. The case became a cautionary tale about the risks of open, high-performance models without safety alignment.",
+      "sources": [
+        "https://techcrunch.com/2025/02/09/deepseeks-r1-reportedly-more-vulnerable-to-jailbreaking-than-other-ai-models/",
+        "https://www.enkryptai.com/blog/introducing-safety-aligned-deepseek-r1-model-by-enkrypt-ai"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.kelacyber.com/blog/deepseek-r1-security-flaws/",

@@ -31,9 +31,24 @@
     "facial-recognition",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Human dignity",
+    "Protection from discrimination"
+  ],
   "asm:actors": [
     {
       "name": "Wuhan University",
@@ -47,7 +62,59 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Frei zugängliche Gesichtsbilder in sozialen Medien als Trainingsmaterial",
+      "description": "Plattformen wie Instagram und Weibo enthalten Milliarden öffentlich geposteter Porträtfotos. Für die Gesichtserkennungsforschung wurde das massenhafte Abgreifen (Scraping) solcher Bilder ohne Einwilligung der Abgebildeten zur gängigen Praxis, weil sie technisch frei abrufbar sind. Diese Datenbasis bildete die Vorbedingung für das spätere maskierte Gesichts-Datenset.",
+      "title_de": "Frei zugängliche Gesichtsbilder in sozialen Medien als Trainingsmaterial",
+      "description_de": "Plattformen wie Instagram und Weibo enthalten Milliarden öffentlich geposteter Porträtfotos. Für die Gesichtserkennungsforschung wurde das massenhafte Abgreifen (Scraping) solcher Bilder ohne Einwilligung der Abgebildeten zur gängigen Praxis, weil sie technisch frei abrufbar sind. Diese Datenbasis bildete die Vorbedingung für das spätere maskierte Gesichts-Datenset.",
+      "title_en": "Freely accessible face images on social media as training material",
+      "description_en": "Platforms such as Instagram and Weibo hold billions of publicly posted portrait photos. For facial-recognition research, mass scraping of such images without the consent of those depicted became common practice because they are technically freely retrievable. This data base was the precondition for the later masked-face dataset.",
+      "sources": []
+    },
+    {
+      "date": "2020-01",
+      "phase": "doctrine",
+      "title": "Pandemie macht maskierte Gesichtserkennung zum erklärten Forschungsziel",
+      "description": "Mit dem Ausbruch von COVID-19 und der flächendeckenden Maskenpflicht versagten bestehende Gesichtserkennungssysteme bei verdeckten Gesichtern. Das Nationale Forschungszentrum für Multimedia-Software der Universität Wuhan erklärte die maskierte Gesichtserkennung zur dringlichen Aufgabe und startete dafür ein Notfall-Forschungsprojekt unter Professor Wang Zhongyuan.",
+      "title_de": "Pandemie macht maskierte Gesichtserkennung zum erklärten Forschungsziel",
+      "description_de": "Mit dem Ausbruch von COVID-19 und der flächendeckenden Maskenpflicht versagten bestehende Gesichtserkennungssysteme bei verdeckten Gesichtern. Das Nationale Forschungszentrum für Multimedia-Software der Universität Wuhan erklärte die maskierte Gesichtserkennung zur dringlichen Aufgabe und startete dafür ein Notfall-Forschungsprojekt unter Professor Wang Zhongyuan.",
+      "title_en": "Pandemic makes masked-face recognition a stated research goal",
+      "description_en": "With the outbreak of COVID-19 and widespread mask mandates, existing facial-recognition systems failed on covered faces. Wuhan University's National Multimedia Software Technology Research Center declared masked-face recognition an urgent task and launched an emergency research project under Professor Wang Zhongyuan.",
+      "sources": [
+        "https://hyper.ai/en/news/11714"
+      ]
+    },
+    {
+      "date": "2020-03",
+      "phase": "event",
+      "title": "Universität Wuhan veröffentlicht aus Social Media zusammengescraptes Masken-Datenset",
+      "description": "Im März 2020 stellte das Team das nach eigenen Angaben weltweit erste öffentliche Datenset zur maskierten Gesichtserkennung vor (RMFD): rund 5.000 Bilder maskierter Gesichter von 525 Personen und 90.000 normale Gesichter. Die Bilder wurden ohne Einwilligung aus dem Internet und sozialen Medien zusammengetragen. Datenschützer kritisierten das Vorgehen; die Forschenden rechtfertigten es mit nicht-kommerzieller Nutzung öffentlich geposteter Bilder.",
+      "title_de": "Universität Wuhan veröffentlicht aus Social Media zusammengescraptes Masken-Datenset",
+      "description_de": "Im März 2020 stellte das Team das nach eigenen Angaben weltweit erste öffentliche Datenset zur maskierten Gesichtserkennung vor (RMFD): rund 5.000 Bilder maskierter Gesichter von 525 Personen und 90.000 normale Gesichter. Die Bilder wurden ohne Einwilligung aus dem Internet und sozialen Medien zusammengetragen. Datenschützer kritisierten das Vorgehen; die Forschenden rechtfertigten es mit nicht-kommerzieller Nutzung öffentlich geposteter Bilder.",
+      "title_en": "Wuhan University releases masked-face dataset scraped from social media",
+      "description_en": "In March 2020 the team presented what it called the world's first public masked-face recognition dataset (RMFD): around 5,000 images of masked faces of 525 people and 90,000 normal faces. The images were gathered without consent from the internet and social media. Privacy advocates criticised the approach; the researchers justified it as non-commercial use of publicly posted images.",
+      "sources": [
+        "https://arxiv.org/pdf/2003.09093",
+        "https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset"
+      ]
+    },
+    {
+      "date": "2020-04",
+      "phase": "consequences",
+      "title": "Datenschutzorganisationen kritisieren einwilligungsloses Scraping",
+      "description": "Privacy International und weitere Datenschützer dokumentierten den Fall als Beispiel dafür, wie die Pandemie als Begründung diente, um Überwachungstechnik mit ohne Einwilligung abgegriffenen Bildern zu verbessern. Die Kritik richtete sich gegen die fehlende Zustimmung der Abgebildeten und gegen die spätere Verwendbarkeit solcher Modelle zur Identifizierung maskierter Personen, etwa bei Protesten.",
+      "title_de": "Datenschutzorganisationen kritisieren einwilligungsloses Scraping",
+      "description_de": "Privacy International und weitere Datenschützer dokumentierten den Fall als Beispiel dafür, wie die Pandemie als Begründung diente, um Überwachungstechnik mit ohne Einwilligung abgegriffenen Bildern zu verbessern. Die Kritik richtete sich gegen die fehlende Zustimmung der Abgebildeten und gegen die spätere Verwendbarkeit solcher Modelle zur Identifizierung maskierter Personen, etwa bei Protesten.",
+      "title_en": "Privacy organisations criticise consentless scraping",
+      "description_en": "Privacy International and other advocates documented the case as an example of how the pandemic served as justification to improve surveillance technology with images scraped without consent. The criticism targeted the lack of consent of those depicted and the potential later use of such models to identify masked individuals, for instance at protests.",
+      "sources": [
+        "https://www.privacyinternational.org/examples/4017/researchers-scrape-masked-faces-social-media-train-algorithms"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.privacyinternational.org/examples/4017/researchers-scrape-masked-faces-social-media-train-algorithms",
