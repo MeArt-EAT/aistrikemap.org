@@ -5,15 +5,15 @@
 
 ---
 
-## ⏱️ STAND: 2026-06-18
+## ⏱️ STAND: 2026-06-19
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2457 Incidents** · 977 mit Reverse-TL (39.8 %) · 0 Audit-Findings · Lite-Bundle 1.6 MB gzip |
-| 🔢 **Übergabe-Nr** | **#6** (2026-06-18) |
+| 📊 **Bestand** | **2457 Incidents** · **1025 mit Reverse-TL (41.7 %)** · **0 Audit-Findings** · Anzeigetext jetzt vollständig ä/ö/ü/ß (~1300 Files bereinigt) · Lite-Bundle 1.6 MB gzip |
+| 🔢 **Übergabe-Nr** | **#6** (2026-06-18) + Arbeit vom 2026-06-19 (noch kein eigenes Doc) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **Frontend-Performance-Refactor**: Map lädt jetzt `all-incidents-lite.json` (ohne TL/Quellen, 3.9→1.6 MB gzip, −59 %), Detail-Panel lazy-lädt Einzeldatei beim Klick. Cache-Busting `?v=Date.now()` entfernt (GH-Pages-ETag greift). Länderzähler-Bug 708→**135** gefixt. Verifiziert im Preview, live. |
-| ➡️ **Nächster Schritt** | **Sev-3-Block** (953 ohne TL, der grosse Rest) — skaliert jetzt sauber, da TL nur noch lazy/Einzeldatei · ODER AIAAIC Batch D · ODER Dedup-Backlog |
+| ✅ **Zuletzt fertig** | **(2026-06-19)** (1) **3 Sev-3-TL-Wellen** +48 Incidents (TL 39.8→41.7 %). (2) **Korpus-Transliterations-Sweep**: ~1300 Files von `ae/oe/ue/ss` auf echte `ä/ö/ü/ß` bereinigt (2774 Workflow-validierte Mappings, ~17k Wort-Fixes). Dabei latenten `über`-Regex-Bug in **Fixer + Audit** gefunden+gefixt (ASCII-`\b` griff nach Umlaut → `Räuber`→`Räüber`); beide Scripts laden jetzt `data/translit-extra-map.json` (synchron). |
+| ➡️ **Nächster Schritt** | **Sev-3-Block weiter** (904 ohne TL) — Wellen-Methode (4-5 Agents × 4 Cases) · ODER AIAAIC Batch D · ODER Dedup-Backlog |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -27,9 +27,9 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 1. **AIAAIC Batch D** (pre-2015, ~300 Stubs) — letzter AIAAIC-Block, niedrige
    Prio (frühe Cases haben weniger Aktualität). Bringt aber historische Tiefe.
    Workflow: siehe Memory `aiaaic-import-workflow` + Übergabe #5.
-2. **Reverse-Timelines** — 977 von 2457 (39.8 %) haben die TL (Kern-Feature).
-   **Sev-5 + Sev-4 zu 100 % geschlossen** ✓. **Sev-3: 953 ohne TL** (der grosse
-   Rest, ~10 % gemacht). Sev-2/Sev-1: niedrige Prio.
+2. **Reverse-Timelines** — **1025 von 2457 (41.7 %)** haben die TL (Kern-Feature).
+   **Sev-5 + Sev-4 zu 100 % geschlossen** ✓. **Sev-3: 904 ohne TL** (~14 % gemacht,
+   +48 in 3 Wellen am 2026-06-19). Sev-2/Sev-1: niedrige Prio.
    **Methoden-Lektion:** Der `Workflow`-Tool-Runtime stallt in dieser Umgebung
    nach ~30 Min / ~32 Agenten still (kein Fehler, keine Notification — per
    File-mtime-Check erkennbar). Resume via `resumeFromRunId` macht Cache-sicher
@@ -61,10 +61,17 @@ Cases — NICHT mergen:
 `fix-umlaut-transliterations.js` · `bundle-incidents.js` ·
 `audit-bilingual-incidents.js`
 
+> ⚠️ **Translit-Tooling (2026-06-19):** Fixer + Audit teilen jetzt
+> `data/translit-extra-map.json` (2774 validierte `ae/oe/ue/ss`→`ä/ö/ü/ß`-Mappings,
+> bleiben dadurch synchron). Neue Mappings → in die JSON eintragen, nicht in den
+> Code. Beide `über`-Regexes nutzen Unicode-Lookbehind (vorher ASCII-`\b` →
+> korrumpierte `Räuber`→`Räüber`). Detail: Memory `translit-tooling`.
+
 Briefings: `data/incident-candidates/_enrichment-briefing.md` (Abschnitt 1b
 Datums-Verifikation), `_timeline-briefing.md`.
 
 ## 📜 Übergabe-Historie (neueste zuerst)
+- **2026-06-19** (Commits `8512246`·`f05c1db`·`dc47987`·`3af121b`, kein eigenes Doc): 3 Sev-3-TL-Wellen (+48, TL 39.8→41.7 %) + korpusweiter Transliterations-Sweep (~1300 Files `ae/oe/ue/ss`→`ä/ö/ü/ß`, 2774 validierte Mappings) inkl. `über`-Regex-Bugfix in Fixer+Audit
 - **#6** 2026-06-18 → `docs/planung/übergabe-2026-06-18-tl-offensive-und-frontend.md` — TL 11.9→39.8 % (Sev-5+Sev-4 zu 100 %), Brasilien-Dedup, Frontend-Lite-Bundle
 - **#5** 2026-06-06 → `docs/planung/übergabe-2026-06-06-batch-c.md` — Batch C, 2154→2458
 - **#4** 2026-06-06 → `docs/planung/übergabe-2026-06-06-batch-b.md` — Batch B, 1304→2154
