@@ -31,9 +31,27 @@
     "facial-recognition",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen",
+    "faires Verfahren",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen",
+    "faires Verfahren",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal treatment",
+    "Human dignity",
+    "Fair trial",
+    "Privacy"
+  ],
   "asm:actors": [
     {
       "name": "Xiaolin Wu",
@@ -59,7 +77,52 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "1876",
+      "phase": "infrastructure",
+      "title": "Lombrosos Physiognomik als historische Vorlage",
+      "description": "Bereits 1876 behauptete der italienische Kriminologe Cesare Lombroso, Kriminalität sei an äußeren Körper- und Gesichtsmerkmalen ablesbar - eine Theorie, die als rassistisch und pseudowissenschaftlich gilt und seit dem 20. Jahrhundert diskreditiert ist. Die Idee, von der Erscheinung auf den Charakter zu schließen, bildete die gedankliche Vorlage, die spätere Machine-Learning-Studien unter technischem Vorzeichen reaktivierten.",
+      "title_de": "Lombrosos Physiognomik als historische Vorlage",
+      "description_de": "Bereits 1876 behauptete der italienische Kriminologe Cesare Lombroso, Kriminalität sei an äußeren Körper- und Gesichtsmerkmalen ablesbar - eine Theorie, die als rassistisch und pseudowissenschaftlich gilt und seit dem 20. Jahrhundert diskreditiert ist. Die Idee, von der Erscheinung auf den Charakter zu schließen, bildete die gedankliche Vorlage, die spätere Machine-Learning-Studien unter technischem Vorzeichen reaktivierten.",
+      "title_en": "Lombroso's physiognomy as the historical template",
+      "description_en": "As early as 1876 the Italian criminologist Cesare Lombroso claimed that criminality could be read off external bodily and facial features - a theory regarded as racist and pseudoscientific and discredited since the 20th century. The idea of inferring character from appearance formed the conceptual template that later machine-learning studies revived under a technical guise.",
+      "sources": ["https://www.americanscientist.org/article/the-dark-past-of-algorithms-that-associate-appearance-and-criminality"]
+    },
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "Deep-Learning-Bildklassifikation wird breit verfügbar",
+      "description": "Mit dem Durchbruch tiefer neuronaler Netze in der Bildklassifikation ab etwa 2012 standen Forschern leistungsfähige Klassifikatoren (CNN, SVM, KNN, logistische Regression) zur Verfügung, die auf Gesichtsfotos angewandt werden konnten. Diese Werkzeuge senkten die Hürde, scheinbar objektive Muster aus kuratierten Bilddatensätzen abzuleiten - auch dort, wo die zugrunde liegende Fragestellung methodisch unhaltbar war.",
+      "title_de": "Deep-Learning-Bildklassifikation wird breit verfügbar",
+      "description_de": "Mit dem Durchbruch tiefer neuronaler Netze in der Bildklassifikation ab etwa 2012 standen Forschern leistungsfähige Klassifikatoren (CNN, SVM, KNN, logistische Regression) zur Verfügung, die auf Gesichtsfotos angewandt werden konnten. Diese Werkzeuge senkten die Hürde, scheinbar objektive Muster aus kuratierten Bilddatensätzen abzuleiten - auch dort, wo die zugrunde liegende Fragestellung methodisch unhaltbar war.",
+      "title_en": "Deep-learning image classification becomes widely available",
+      "description_en": "With the breakthrough of deep neural networks in image classification from around 2012, researchers gained powerful classifiers (CNN, SVM, KNN, logistic regression) that could be applied to facial photographs. These tools lowered the barrier to deriving seemingly objective patterns from curated image datasets - even where the underlying research question was methodologically untenable.",
+      "sources": []
+    },
+    {
+      "date": "2016-11-21",
+      "phase": "event",
+      "title": "Preprint behauptet Kriminalitätserkennung aus Gesichtern",
+      "description": "Im November 2016 veröffentlichten Xiaolin Wu (McMaster University / Shanghai Jiao Tong University) und Xi Zhang (Shanghai Jiao Tong University) den arXiv-Preprint 'Automated Inference on Criminality using Face Images'. Sie behaupteten, neuronale Netze könnten anhand von Passfotos mit 89,5 Prozent Genauigkeit Kriminelle erkennen. Der Datensatz umfasste 1.856 Personen, knapp die Hälfte davon verurteilte Straftäter, kontrolliert für Rasse, Geschlecht, Alter und Mimik.",
+      "title_de": "Preprint behauptet Kriminalitätserkennung aus Gesichtern",
+      "description_de": "Im November 2016 veröffentlichten Xiaolin Wu (McMaster University / Shanghai Jiao Tong University) und Xi Zhang (Shanghai Jiao Tong University) den arXiv-Preprint 'Automated Inference on Criminality using Face Images'. Sie behaupteten, neuronale Netze könnten anhand von Passfotos mit 89,5 Prozent Genauigkeit Kriminelle erkennen. Der Datensatz umfasste 1.856 Personen, knapp die Hälfte davon verurteilte Straftäter, kontrolliert für Rasse, Geschlecht, Alter und Mimik.",
+      "title_en": "Preprint claims criminality detection from faces",
+      "description_en": "In November 2016 Xiaolin Wu (McMaster University / Shanghai Jiao Tong University) and Xi Zhang (Shanghai Jiao Tong University) published the arXiv preprint 'Automated Inference on Criminality using Face Images'. They claimed neural networks could identify criminals from ID-style photos with 89.5 percent accuracy. The dataset comprised 1,856 people, nearly half of them convicted offenders, controlled for race, gender, age and facial expression.",
+      "sources": ["https://www.technologyreview.com/2016/11/22/107128/neural-network-learns-to-identify-criminals-by-their-faces/"]
+    },
+    {
+      "date": "2016-11-22",
+      "phase": "consequences",
+      "title": "Scharfe internationale Methodenkritik",
+      "description": "Die Studie wurde umgehend heftig kritisiert. Forscher wiesen nach, dass die Verzerrung der Trainingsdaten - etwa unterschiedliche Aufnahmebedingungen und Gesichtsausdrücke zwischen den Gruppen - die behaupteten Ergebnisse erklärt, und dass eine Verurteilung selbst von subjektiven Eindrücken bei Polizei und Gericht abhängt. Faktisch reaktiviere die Arbeit die diskreditierte Physiognomik. Die Studie erschien nie peer-reviewed; sie gilt heute als Lehrbeispiel für algorithmische Pseudowissenschaft.",
+      "title_de": "Scharfe internationale Methodenkritik",
+      "description_de": "Die Studie wurde umgehend heftig kritisiert. Forscher wiesen nach, dass die Verzerrung der Trainingsdaten - etwa unterschiedliche Aufnahmebedingungen und Gesichtsausdrücke zwischen den Gruppen - die behaupteten Ergebnisse erklärt, und dass eine Verurteilung selbst von subjektiven Eindrücken bei Polizei und Gericht abhängt. Faktisch reaktiviere die Arbeit die diskreditierte Physiognomik. Die Studie erschien nie peer-reviewed; sie gilt heute als Lehrbeispiel für algorithmische Pseudowissenschaft.",
+      "title_en": "Sharp international methodological criticism",
+      "description_en": "The study drew immediate, fierce criticism. Researchers showed that training-data bias - such as differing capture conditions and facial expressions between groups - explained the claimed results, and that a conviction itself depends on subjective impressions formed by police and courts. In effect, the work revived discredited physiognomy. The study was never peer-reviewed and is today cited as a textbook example of algorithmic pseudoscience.",
+      "sources": ["https://callingbullshit.org/case_studies/case_study_criminal_machine_learning.html"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2016/11/22/107128/neural-network-learns-to-identify-criminals-by-their-faces/",

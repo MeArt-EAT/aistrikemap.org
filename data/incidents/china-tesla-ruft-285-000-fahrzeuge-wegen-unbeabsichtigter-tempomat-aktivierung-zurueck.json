@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Tesla",
@@ -51,7 +66,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-12",
+      "phase": "infrastructure",
+      "title": "Shanghai-Gigafactory baut Model 3 mit aktivem Tempomaten und OTA-Updates",
+      "description": "Ab Ende 2019 produzierte Tesla in der Shanghaier Gigafactory Model 3 für den chinesischen Markt; importierte Model 3 wurden ergänzt. Die Fahrzeuge waren mit dem aktiven Tempomaten (Traffic-Aware Cruise Control) und einer Over-the-Air-Update-Architektur ausgestattet, die später Korrekturen per Funk ermöglichte. Diese softwaregesteuerte Fahrassistenz bildete die technische Vorbedingung des Defekts.",
+      "title_de": "Shanghai-Gigafactory baut Model 3 mit aktivem Tempomaten und OTA-Updates",
+      "description_de": "Ab Ende 2019 produzierte Tesla in der Shanghaier Gigafactory Model 3 für den chinesischen Markt; importierte Model 3 wurden ergänzt. Die Fahrzeuge waren mit dem aktiven Tempomaten (Traffic-Aware Cruise Control) und einer Over-the-Air-Update-Architektur ausgestattet, die später Korrekturen per Funk ermöglichte. Diese softwaregesteuerte Fahrassistenz bildete die technische Vorbedingung des Defekts.",
+      "title_en": "Shanghai Gigafactory builds Model 3 with active cruise control and OTA updates",
+      "description_en": "From late 2019 Tesla produced Model 3 for the Chinese market at its Shanghai Gigafactory, supplemented by imported Model 3 vehicles. The cars featured active (traffic-aware) cruise control and an over-the-air update architecture that later allowed fixes to be delivered wirelessly. This software-controlled driver assistance was the technical precondition of the defect.",
+      "sources": [
+        "https://insideevs.com/news/516525/china-tesla-recalls-model-3y/"
+      ]
+    },
+    {
+      "date": "2021-06",
+      "phase": "doctrine",
+      "title": "Marktaufsicht SAMR leitet Defektuntersuchung ein",
+      "description": "Vor dem Rückruf hatte die chinesische Marktaufsichtsbehörde SAMR eine Defektuntersuchung eingeleitet. Erst nachdem die Regulierungsbehörde aktiv wurde, entschied Tesla nach eigener Darstellung, Rueckrufmassnahmen zu ergreifen, um 'potenzielle Sicherheitsrisiken zu beseitigen'. Der regulatorische Druck legitimierte und erzwang den Eingriff.",
+      "title_de": "Marktaufsicht SAMR leitet Defektuntersuchung ein",
+      "description_de": "Vor dem Rückruf hatte die chinesische Marktaufsichtsbehörde SAMR eine Defektuntersuchung eingeleitet. Erst nachdem die Regulierungsbehörde aktiv wurde, entschied Tesla nach eigener Darstellung, Rueckrufmassnahmen zu ergreifen, um 'potenzielle Sicherheitsrisiken zu beseitigen'. Der regulatorische Druck legitimierte und erzwang den Eingriff.",
+      "title_en": "Market regulator SAMR opens a defect investigation",
+      "description_en": "Before the recall, China's market regulator SAMR had launched a defect investigation. Only after regulators became active did Tesla, by its own account, decide to take recall measures to 'eliminate potential safety hazards'. Regulatory pressure legitimised and forced the intervention.",
+      "sources": [
+        "https://www.cnbc.com/2021/06/28/tesla-shares-shrug-off-soft-recall-of-285000-cars-in-china.html"
+      ]
+    },
+    {
+      "date": "2021-06-25",
+      "phase": "event",
+      "title": "Tesla ruft 285.520 Fahrzeuge wegen unbeabsichtigter Tempomat-Aktivierung zurück",
+      "description": "Am 25. Juni 2021 rief Tesla rund 285.520 Model 3 und Model Y in China zurück - darunter 249.855 in Shanghai gebaute sowie 35.665 importierte Model 3. Laut SAMR konnte der aktive Tempomat versehentlich aktiviert werden, etwa beim Herausschalten aus dem Fahrmodus oder in scharfen Kurven, was zu ungewolltem Beschleunigen und Unfällen führen konnte.",
+      "title_de": "Tesla ruft 285.520 Fahrzeuge wegen unbeabsichtigter Tempomat-Aktivierung zurück",
+      "description_de": "Am 25. Juni 2021 rief Tesla rund 285.520 Model 3 und Model Y in China zurück - darunter 249.855 in Shanghai gebaute sowie 35.665 importierte Model 3. Laut SAMR konnte der aktive Tempomat versehentlich aktiviert werden, etwa beim Herausschalten aus dem Fahrmodus oder in scharfen Kurven, was zu ungewolltem Beschleunigen und Unfällen führen konnte.",
+      "title_en": "Tesla recalls 285,520 vehicles over unintended cruise control activation",
+      "description_en": "On 25 June 2021 Tesla recalled about 285,520 Model 3 and Model Y vehicles in China - including 249,855 built in Shanghai and 35,665 imported Model 3. According to SAMR, the active cruise control could be activated inadvertently, for example when shifting out of drive or in sharp turns, potentially causing unintended acceleration and crashes.",
+      "sources": [
+        "https://www.scmp.com/news/china/article/3138892/tesla-recall-285000-cars-china-fix-faulty-cruise-control-function-over"
+      ]
+    },
+    {
+      "date": "2021-06",
+      "phase": "consequences",
+      "title": "Behebung per Over-the-Air-Update, kein Werkstattbesuch nötig",
+      "description": "Tesla kündigte an, die Tempomat-Software per Over-the-Air-Update aus der Ferne zu korrigieren, sodass die meisten Halterinnen und Halter kein Servicecenter aufsuchen mussten. Der 'weiche Rückruf' betraf nahezu jedes in China verkaufte Fahrzeug; konkrete Unfälle mit Personenschaden wurden in diesem Zusammenhang nicht berichtet. Tesla-Aktien reagierten kaum.",
+      "title_de": "Behebung per Over-the-Air-Update, kein Werkstattbesuch nötig",
+      "description_de": "Tesla kündigte an, die Tempomat-Software per Over-the-Air-Update aus der Ferne zu korrigieren, sodass die meisten Halterinnen und Halter kein Servicecenter aufsuchen mussten. Der 'weiche Rückruf' betraf nahezu jedes in China verkaufte Fahrzeug; konkrete Unfälle mit Personenschaden wurden in diesem Zusammenhang nicht berichtet. Tesla-Aktien reagierten kaum.",
+      "title_en": "Fixed via over-the-air update, no service visit required",
+      "description_en": "Tesla announced it would correct the cruise-control software remotely via an over-the-air update, so most owners did not need to visit a service centre. The 'soft recall' affected nearly every car Tesla had sold in China; no specific injury-causing crashes were reported in this context. Tesla shares barely reacted.",
+      "sources": [
+        "https://fortune.com/2021/06/28/tesla-recall-china-safety-autopilot-software-update/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://fortune.com/2021/06/28/tesla-recall-china-safety-autopilot-software-update/amp",

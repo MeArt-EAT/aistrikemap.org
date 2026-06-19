@@ -26,9 +26,27 @@
     "deepfakes",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Human dignity",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Huawei",
@@ -42,7 +60,52 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Generative Bildbearbeitung wird Smartphone-Standardfunktion",
+      "description": "Ab Ende der 2010er Jahre integrierten Smartphone-Hersteller generative KI-Modelle zur Objektentfernung in ihre Kamera-Apps. Solche Inpainting-Verfahren ergänzen entfernte Bildbereiche durch ein vom Modell geschätztes Ersatzbild. Damit war die technische Grundlage geschaffen, dass eine Markierung am Rand eines Kleidungsstücks zur Rekonstruktion vermeintlicher Haut führen konnte.",
+      "title_de": "Generative Bildbearbeitung wird Smartphone-Standardfunktion",
+      "description_de": "Ab Ende der 2010er Jahre integrierten Smartphone-Hersteller generative KI-Modelle zur Objektentfernung in ihre Kamera-Apps. Solche Inpainting-Verfahren ergänzen entfernte Bildbereiche durch ein vom Modell geschätztes Ersatzbild. Damit war die technische Grundlage geschaffen, dass eine Markierung am Rand eines Kleidungsstücks zur Rekonstruktion vermeintlicher Haut führen konnte.",
+      "title_en": "Generative image editing becomes a standard smartphone feature",
+      "description_en": "From the late 2010s onward, smartphone makers built generative AI models for object removal into their camera apps. Such inpainting methods fill removed image areas with a model-estimated replacement. This created the technical basis for a marking at the edge of a garment to result in the reconstruction of apparent skin.",
+      "sources": []
+    },
+    {
+      "date": "2024-04-18",
+      "phase": "doctrine",
+      "title": "Huawei vermarktet KI-Retusche als Kern-Feature der Pura-70-Reihe",
+      "description": "Huawei stellte im April 2024 die Pura-70-Reihe (international P70) vor und bewarb die KI-gestützte Objektentfernung als komfortables Foto-Feature mit Ein-Klick-Bedienung. Eine Schutzschicht, die menschliche Körperpartien von der Rekonstruktion ausschließt, war zum Marktstart nicht vorgesehen. Das Geschäftsmodell setzte auf maximale Bequemlichkeit ohne Einwilligungs- oder Missbrauchsprüfung.",
+      "title_de": "Huawei vermarktet KI-Retusche als Kern-Feature der Pura-70-Reihe",
+      "description_de": "Huawei stellte im April 2024 die Pura-70-Reihe (international P70) vor und bewarb die KI-gestützte Objektentfernung als komfortables Foto-Feature mit Ein-Klick-Bedienung. Eine Schutzschicht, die menschliche Körperpartien von der Rekonstruktion ausschließt, war zum Marktstart nicht vorgesehen. Das Geschäftsmodell setzte auf maximale Bequemlichkeit ohne Einwilligungs- oder Missbrauchsprüfung.",
+      "title_en": "Huawei markets AI retouch as a flagship feature of the Pura 70 line",
+      "description_en": "In April 2024 Huawei launched the Pura 70 series (internationally P70) and promoted the AI object-removal feature as a convenient one-tap photo tool. No safeguard excluding human body parts from reconstruction was in place at launch. The business model prioritised maximum convenience over any consent or abuse check.",
+      "sources": ["https://www.gizmochina.com/2024/04/25/huawei-pura-70-ai-object-removal-raises-privacy-concerns/"]
+    },
+    {
+      "date": "2024-04-23",
+      "phase": "event",
+      "title": "KI-Objektentfernung erzeugt Eindruck nackter Haut",
+      "description": "Im April 2024 dokumentierten Weibo-Nutzer, dass die Objektentfernung der Pura 70 Teile der Kleidung abgebildeter Personen entfernte und durch geschätzte Hauttöne ersetzte, sodass der Eindruck nackter Haut entstand. Es genügte, einen kleinen Bereich am Kragen zu markieren, woraufhin das Modell die Fläche als Körper interpretierte. Beobachter warnten, so ließen sich ohne Zustimmung freizügig wirkende Bilder erzeugen.",
+      "title_de": "KI-Objektentfernung erzeugt Eindruck nackter Haut",
+      "description_de": "Im April 2024 dokumentierten Weibo-Nutzer, dass die Objektentfernung der Pura 70 Teile der Kleidung abgebildeter Personen entfernte und durch geschätzte Hauttöne ersetzte, sodass der Eindruck nackter Haut entstand. Es genügte, einen kleinen Bereich am Kragen zu markieren, woraufhin das Modell die Fläche als Körper interpretierte. Beobachter warnten, so ließen sich ohne Zustimmung freizügig wirkende Bilder erzeugen.",
+      "title_en": "AI object removal creates the impression of bare skin",
+      "description_en": "In April 2024 Weibo users documented that the Pura 70 object-removal feature stripped parts of subjects' clothing and replaced it with estimated skin tones, creating the impression of bare skin. Marking only a small area at the collar was enough for the model to interpret the region as a body. Observers warned that suggestive images could be produced this way without consent.",
+      "sources": ["https://www.phonearena.com/news/ai-leaves-subjects-of-photos-appearing-naked-on-pura-70-ultra_id157783"]
+    },
+    {
+      "date": "2024-04-25",
+      "phase": "consequences",
+      "title": "Huawei räumt Fehler ein und sperrt Körperbereiche",
+      "description": "Nach öffentlicher Kritik räumten Huawei-Ingenieure ein, dass die Funktion fehlende Bereiche anhand eines fleischfarbenen Körperhintergrunds ergänzt hatte. Huawei kündigte eine Korrektur an und sperrte die Funktion für entsprechende Bildpartien: Bei Anwendung auf den Brustbereich erscheint nun der Hinweis, die Eliminierungsfunktion könne für dieses Bild nicht genutzt werden. Der Fall verschärfte die Debatte über nicht-einvernehmliche KI-Bildmanipulation in China.",
+      "title_de": "Huawei räumt Fehler ein und sperrt Körperbereiche",
+      "description_de": "Nach öffentlicher Kritik räumten Huawei-Ingenieure ein, dass die Funktion fehlende Bereiche anhand eines fleischfarbenen Körperhintergrunds ergänzt hatte. Huawei kündigte eine Korrektur an und sperrte die Funktion für entsprechende Bildpartien: Bei Anwendung auf den Brustbereich erscheint nun der Hinweis, die Eliminierungsfunktion könne für dieses Bild nicht genutzt werden. Der Fall verschärfte die Debatte über nicht-einvernehmliche KI-Bildmanipulation in China.",
+      "title_en": "Huawei acknowledges the flaw and blocks body areas",
+      "description_en": "After public criticism, Huawei engineers acknowledged that the feature had filled missing areas based on a flesh-coloured body background. Huawei announced a fix and blocked the function for affected image regions: applied to the chest area, it now displays a notice that the elimination feature cannot be used on this picture. The case intensified the debate over non-consensual AI image manipulation in China.",
+      "sources": ["https://www.gizmochina.com/2024/04/26/gc-daily-huaweis-ai-feature-controversy-casio-watch-recycled-waste/"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.gizmochina.com/2024/04/25/huawei-pura-70-ai-object-removal-raises-privacy-concerns/",

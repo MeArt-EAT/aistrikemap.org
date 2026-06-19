@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Arbeit",
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Arbeit",
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Right to work",
+    "Consumer protection",
+    "Data protection",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Shawn Presser",
@@ -53,7 +68,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-10",
+      "phase": "infrastructure",
+      "title": "Shawn Presser scrapt Bibliotik und veröffentlicht Books3",
+      "description": "Der KI-Forscher Shawn Presser scrapte rund 196.000 Bücher (etwa 37 GB) von der Piraterie-Seite Bibliotik und veröffentlichte sie im Oktober 2020 als offenen Datensatz 'Books3'. Der Datensatz lieferte die Buchtext-Grundlage, die zuvor nur großen Tech-Konzernen zugänglich war, und wurde so zur Infrastruktur für das Training zahlreicher Sprachmodelle.",
+      "title_de": "Shawn Presser scrapt Bibliotik und veröffentlicht Books3",
+      "description_de": "Der KI-Forscher Shawn Presser scrapte rund 196.000 Bücher (etwa 37 GB) von der Piraterie-Seite Bibliotik und veröffentlichte sie im Oktober 2020 als offenen Datensatz 'Books3'. Der Datensatz lieferte die Buchtext-Grundlage, die zuvor nur großen Tech-Konzernen zugänglich war, und wurde so zur Infrastruktur für das Training zahlreicher Sprachmodelle.",
+      "title_en": "Shawn Presser scrapes Bibliotik and releases Books3",
+      "description_en": "AI researcher Shawn Presser scraped around 196,000 books (about 37 GB) from the pirate site Bibliotik and released them in October 2020 as the open dataset 'Books3'. The dataset provided the book-text basis previously accessible only to large tech firms, becoming the infrastructure for training numerous language models.",
+      "sources": [
+        "https://torrentfreak.com/anti-piracy-group-takes-prominent-ai-training-dataset-books3-offline-230816/"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Books3 in The Pile gebündelt, von Meta für LLaMA genutzt",
+      "description": "Books3 wurde in den von EleutherAI zusammengestellten Trainingsdatensatz 'The Pile' aufgenommen und so breit weiterverbreitet. Meta-Forscher bezeichneten Books3 in ihrem LLaMA-Whitepaper als 'öffentlich verfügbaren Datensatz für das Training großer Sprachmodelle' und nutzten ihn zum Training - die Branchenpraxis, urheberrechtlich geschützte Bücher ohne Lizenz als KI-Trainingsmaterial zu behandeln.",
+      "title_de": "Books3 in The Pile gebündelt, von Meta für LLaMA genutzt",
+      "description_de": "Books3 wurde in den von EleutherAI zusammengestellten Trainingsdatensatz 'The Pile' aufgenommen und so breit weiterverbreitet. Meta-Forscher bezeichneten Books3 in ihrem LLaMA-Whitepaper als 'öffentlich verfügbaren Datensatz für das Training großer Sprachmodelle' und nutzten ihn zum Training - die Branchenpraxis, urheberrechtlich geschützte Bücher ohne Lizenz als KI-Trainingsmaterial zu behandeln.",
+      "title_en": "Books3 bundled into The Pile, used by Meta for LLaMA",
+      "description_en": "Books3 was incorporated into the EleutherAI training dataset 'The Pile' and thus widely redistributed. Meta researchers described Books3 in their LLaMA whitepaper as a 'dataset available to the public for training large language models' and used it for training - the industry practice of treating copyrighted books as AI training material without a licence.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Pile_(dataset)"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "event",
+      "title": "Rights Alliance erzwingt Offline-Nahme von Books3",
+      "description": "Mitte 2023 mahnte die dänische Anti-Piraterie-Gruppe Rights Alliance (Rettighedsalliancen) den Host 'The Eye' wegen Urheberrechtsverletzung ab, nachdem sie rund 150 Titel ihrer Mitglieder im Datensatz fand. 'The Eye' entfernte daraufhin den meistgenutzten Download-Link von Books3. Presser verteidigte den Datensatz als einzige Möglichkeit, Modelle wie ChatGPT nachzubilden.",
+      "title_de": "Rights Alliance erzwingt Offline-Nahme von Books3",
+      "description_de": "Mitte 2023 mahnte die dänische Anti-Piraterie-Gruppe Rights Alliance (Rettighedsalliancen) den Host 'The Eye' wegen Urheberrechtsverletzung ab, nachdem sie rund 150 Titel ihrer Mitglieder im Datensatz fand. 'The Eye' entfernte daraufhin den meistgenutzten Download-Link von Books3. Presser verteidigte den Datensatz als einzige Möglichkeit, Modelle wie ChatGPT nachzubilden.",
+      "title_en": "Rights Alliance forces Books3 offline",
+      "description_en": "In mid-2023 the Danish anti-piracy group Rights Alliance (Rettighedsalliancen) sent a copyright notice to the host 'The Eye' after finding around 150 titles from its members in the dataset. 'The Eye' then removed the most-used download link for Books3. Presser defended the dataset as the only way to replicate models like ChatGPT.",
+      "sources": [
+        "https://torrentfreak.com/anti-piracy-group-takes-prominent-ai-training-dataset-books3-offline-230816/"
+      ]
+    },
+    {
+      "date": "2023-08-16",
+      "phase": "consequences",
+      "title": "Ruf nach Transparenz - Datensatz bleibt dennoch zugänglich",
+      "description": "Die Rights Alliance forderte mehr Transparenz über KI-Trainingsdaten und stellte die Aktion als Teil eines breiteren Kampfes gegen urheberrechtsverletzendes KI-Training dar. Trotz der Offline-Nahme blieb Books3 über das Internet Archive und alternative Links verfügbar. Der Fall wurde zum Präzedenzfall in der globalen Debatte über Autorenrechte und nährte spätere Klagen von Schriftstellern gegen KI-Konzerne.",
+      "title_de": "Ruf nach Transparenz - Datensatz bleibt dennoch zugänglich",
+      "description_de": "Die Rights Alliance forderte mehr Transparenz über KI-Trainingsdaten und stellte die Aktion als Teil eines breiteren Kampfes gegen urheberrechtsverletzendes KI-Training dar. Trotz der Offline-Nahme blieb Books3 über das Internet Archive und alternative Links verfügbar. Der Fall wurde zum Präzedenzfall in der globalen Debatte über Autorenrechte und nährte spätere Klagen von Schriftstellern gegen KI-Konzerne.",
+      "title_en": "Call for transparency - yet the dataset remains accessible",
+      "description_en": "Rights Alliance called for more transparency about AI training data and framed the action as part of a broader fight against copyright-infringing AI training. Despite the takedown, Books3 remained available via the Internet Archive and alternative links. The case became a precedent in the global debate over authors' rights and fed later lawsuits by writers against AI companies.",
+      "sources": [
+        "https://rettighedsalliancen.com/rights-alliance-removes-the-illegal-books3-dataset-used-to-train-artificial-intelligence/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://gizmodo.com/anti-piracy-group-takes-ai-training-dataset-books3-off-1850743763",
