@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Informationelle Selbstbestimmung",
+    "Schutz personenbezogener Daten",
+    "Vertraulichkeit der Kommunikation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Informationelle Selbstbestimmung",
+    "Schutz personenbezogener Daten",
+    "Vertraulichkeit der Kommunikation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Informational self-determination",
+    "Protection of personal data",
+    "Confidentiality of communications"
+  ],
   "asm:actors": [
     {
       "name": "LY Corporation (LINE + Yahoo Japan)",
@@ -65,7 +83,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-03",
+      "phase": "infrastructure",
+      "title": "Fusion von Yahoo Japan und LINE schafft eng verflochtene Tech-Infrastruktur mit NAVER",
+      "description": "Im März 2021 brachten Z Holdings (Yahoo Japan) und die LINE Corporation ihre Geschäfte unter dem Dach der von SoftBank und NAVER kontrollierten A Holdings zusammen. LINE blieb dabei technisch stark von der Infrastruktur der koreanischen Mutter NAVER abhängig, einschließlich der NAVER-Cloud und gemeinsam genutzter Verzeichnisdienste. Diese verflochtene Systemlandschaft bildete die Angriffsfläche des späteren Datenlecks.",
+      "title_de": "Fusion von Yahoo Japan und LINE schafft eng verflochtene Tech-Infrastruktur mit NAVER",
+      "description_de": "Im März 2021 brachten Z Holdings (Yahoo Japan) und die LINE Corporation ihre Geschäfte unter dem Dach der von SoftBank und NAVER kontrollierten A Holdings zusammen. LINE blieb dabei technisch stark von der Infrastruktur der koreanischen Mutter NAVER abhängig, einschließlich der NAVER-Cloud und gemeinsam genutzter Verzeichnisdienste. Diese verflochtene Systemlandschaft bildete die Angriffsfläche des späteren Datenlecks.",
+      "title_en": "Yahoo Japan and LINE merger creates tightly entangled tech infrastructure with NAVER",
+      "description_en": "In March 2021 Z Holdings (Yahoo Japan) and LINE Corporation combined their businesses under A Holdings, controlled by SoftBank and NAVER. LINE remained heavily dependent on the infrastructure of its Korean parent NAVER, including NAVER Cloud and shared directory services. This entangled system landscape formed the attack surface for the later data breach.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/LY_Corporation"
+      ]
+    },
+    {
+      "date": "2023-11",
+      "phase": "event",
+      "title": "Angreifer dringen über NAVER-Cloud-Zugangsdaten ein, mehr als 510.000 Datensätze betroffen",
+      "description": "Im November 2023 verschafften sich Angreifer über die NAVER-Cloud-Zugangsdaten ehemaliger Mitarbeitender Zugang zu LY-Corp-Systemen. Dabei wurden mehr als 510.000 Datensätze von LINE-Nutzer:innen kompromittiert. Ein gemeinsam mit NAVER genutztes Active Directory ermöglichte den Übergriff zwischen den verbundenen Systemen.",
+      "title_de": "Angreifer dringen über NAVER-Cloud-Zugangsdaten ein, mehr als 510.000 Datensätze betroffen",
+      "description_de": "Im November 2023 verschafften sich Angreifer über die NAVER-Cloud-Zugangsdaten ehemaliger Mitarbeitender Zugang zu LY-Corp-Systemen. Dabei wurden mehr als 510.000 Datensätze von LINE-Nutzer:innen kompromittiert. Ein gemeinsam mit NAVER genutztes Active Directory ermöglichte den Übergriff zwischen den verbundenen Systemen.",
+      "title_en": "Attackers break in via NAVER Cloud credentials, over 510,000 records affected",
+      "description_en": "In November 2023 attackers used the NAVER Cloud credentials of former employees to access LY Corp systems. More than 510,000 LINE user records were compromised. An Active Directory shared with NAVER enabled the lateral access between the connected systems.",
+      "sources": [
+        "https://www.darkreading.com/cybersecurity-operations/japan-line-breach-clean-up-post-merger-tech-sprawl"
+      ]
+    },
+    {
+      "date": "2024-03-05",
+      "phase": "doctrine",
+      "title": "Japans Innenministerium erlässt administrative Guidance zur technischen Entkopplung",
+      "description": "Am 5. März 2024 erließ das japanische Ministerium für Innere Angelegenheiten und Kommunikation (MIC) eine 'administrative Guidance'. Es rügte die übermäßige Abhängigkeit von LINE Yahoo von NAVER für den Systembetrieb und forderte, LINE und NAVER technisch zu entkoppeln, eigene Authentifizierungssysteme einzuführen und Nutzer-Zugangsdaten nicht länger auf NAVER-Infrastruktur zu speichern. Die Behörde verlangte vierteljährliche Fortschrittsberichte.",
+      "title_de": "Japans Innenministerium erlässt administrative Guidance zur technischen Entkopplung",
+      "description_de": "Am 5. März 2024 erließ das japanische Ministerium für Innere Angelegenheiten und Kommunikation (MIC) eine 'administrative Guidance'. Es rügte die übermäßige Abhängigkeit von LINE Yahoo von NAVER für den Systembetrieb und forderte, LINE und NAVER technisch zu entkoppeln, eigene Authentifizierungssysteme einzuführen und Nutzer-Zugangsdaten nicht länger auf NAVER-Infrastruktur zu speichern. Die Behörde verlangte vierteljährliche Fortschrittsberichte.",
+      "title_en": "Japan's communications ministry issues administrative guidance to disentangle systems",
+      "description_en": "On 5 March 2024 Japan's Ministry of Internal Affairs and Communications (MIC) issued an administrative guidance. It criticised LINE Yahoo's excessive reliance on NAVER for system operations and required LINE and NAVER to disentangle their tech, adopt their own authentication systems and stop storing user credentials on NAVER infrastructure. The ministry demanded quarterly progress reports.",
+      "sources": [
+        "https://www.theregister.com/2024/03/06/japan_line_naver_infosec_guidance/"
+      ]
+    },
+    {
+      "date": "2024-04-16",
+      "phase": "consequences",
+      "title": "Ministerium lehnt Sicherheitsplan von Yahoo Japan als unzureichend ab",
+      "description": "Im April 2024 wies das MIC den vorgelegten Sicherheits- und Sanierungsplan von Yahoo Japan als unzureichend zurück und verlangte weitergehende Maßnahmen. LY Corp kündigte daraufhin an, die System-Trennung von der NAVER-Cloud bis Ende 2024 abzuschließen.",
+      "title_de": "Ministerium lehnt Sicherheitsplan von Yahoo Japan als unzureichend ab",
+      "description_de": "Im April 2024 wies das MIC den vorgelegten Sicherheits- und Sanierungsplan von Yahoo Japan als unzureichend zurück und verlangte weitergehende Maßnahmen. LY Corp kündigte daraufhin an, die System-Trennung von der NAVER-Cloud bis Ende 2024 abzuschließen.",
+      "title_en": "Ministry rejects Yahoo Japan's remediation plan as inadequate",
+      "description_en": "In April 2024 the MIC rejected Yahoo Japan's submitted security and remediation plan as inadequate and demanded further measures. LY Corp then announced it would complete the system separation from NAVER Cloud by the end of 2024.",
+      "sources": [
+        "https://www.theregister.com/2024/04/17/japan_rejects_line_yahoo_security_plan/"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "consequences",
+      "title": "Druck auf NAVER-Beteiligung löst diplomatische Spannungen zwischen Tokio und Seoul aus",
+      "description": "Der regulatorische Druck wurde als Aufforderung gelesen, NAVERs Beteiligung an LY Corp zu reduzieren, was Spannungen zwischen Japan und Südkorea auslöste. Im August 2024 kündigten SoftBank und NAVER über die gemeinsame A Holdings an, im Zuge eines Aktienrückkaufs von LY Corp einen Teil ihrer Beteiligung abzubauen, um den Streubesitz-Anteil über die Schwelle der Tokioter Börse zu heben.",
+      "title_de": "Druck auf NAVER-Beteiligung löst diplomatische Spannungen zwischen Tokio und Seoul aus",
+      "description_de": "Der regulatorische Druck wurde als Aufforderung gelesen, NAVERs Beteiligung an LY Corp zu reduzieren, was Spannungen zwischen Japan und Südkorea auslöste. Im August 2024 kündigten SoftBank und NAVER über die gemeinsame A Holdings an, im Zuge eines Aktienrückkaufs von LY Corp einen Teil ihrer Beteiligung abzubauen, um den Streubesitz-Anteil über die Schwelle der Tokioter Börse zu heben.",
+      "title_en": "Pressure on NAVER's stake triggers diplomatic friction between Tokyo and Seoul",
+      "description_en": "The regulatory pressure was read as a call to reduce NAVER's stake in LY Corp, which triggered friction between Japan and South Korea. In August 2024 SoftBank and NAVER announced via their joint A Holdings that they would sell down part of their stake in an LY Corp tender to lift the free float above the Tokyo Stock Exchange's threshold.",
+      "sources": [
+        "https://www.japantimes.co.jp/business/2024/08/04/companies/softbank-naver-share-sales/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2024/03/06/japan_line_naver_infosec_guidance/",
