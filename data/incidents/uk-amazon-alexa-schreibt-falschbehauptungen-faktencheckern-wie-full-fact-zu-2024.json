@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf wahrheitsgemäße Information",
+    "Schutz vor Manipulation",
+    "Schutz der Ehre und des Rufs",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf wahrheitsgemäße Information",
+    "Schutz vor Manipulation",
+    "Schutz der Ehre und des Rufs",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to truthful information",
+    "Protection from manipulation",
+    "Protection of honour and reputation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Amazon",
@@ -48,7 +63,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-09",
+      "phase": "infrastructure",
+      "title": "Amazon stattet Alexa mit generativem KI-Sprachmodell aus",
+      "description": "Im September 2023 kündigte Amazon an, seine Sprachassistentin Alexa mit einem eigens entwickelten großen Sprachmodell (LLM) auszustatten, das Antworten konversationeller und freier generiert. Damit verschiebt sich Alexa von kuratierten, fest verdrahteten Antworten hin zu generierten Texten, die aus uneinheitlichen Webquellen zusammengesetzt werden. Diese Architektur ermöglicht es, dass widerlegte Behauptungen unkritisch als Fakten reproduziert werden.",
+      "title_de": "Amazon stattet Alexa mit generativem KI-Sprachmodell aus",
+      "description_de": "Im September 2023 kündigte Amazon an, seine Sprachassistentin Alexa mit einem eigens entwickelten großen Sprachmodell (LLM) auszustatten, das Antworten konversationeller und freier generiert. Damit verschiebt sich Alexa von kuratierten, fest verdrahteten Antworten hin zu generierten Texten, die aus uneinheitlichen Webquellen zusammengesetzt werden. Diese Architektur ermöglicht es, dass widerlegte Behauptungen unkritisch als Fakten reproduziert werden.",
+      "title_en": "Amazon gives Alexa a generative AI language model",
+      "description_en": "In September 2023 Amazon announced it would equip its Alexa voice assistant with a custom-built large language model (LLM) generating more conversational, free-form answers. This shifts Alexa from curated, hard-wired responses towards generated text stitched together from inconsistent web sources. The architecture makes it possible for debunked claims to be reproduced uncritically as fact.",
+      "sources": [
+        "https://www.aboutamazon.com/news/devices/new-alexa-generative-artificial-intelligence"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "doctrine",
+      "title": "US-Senatoren warnen vor Alexa-Wahlfehlinformation",
+      "description": "Bereits im Oktober 2023 forderten die US-Senatorin Amy Klobuchar und Abgeordneter Joe Morelle Antworten von Amazon, nachdem Alexa Falschinformationen über die US-Wahl 2020 verbreitet hatte. Das zeigte früh, dass die Geschäftsentscheidung, Alexa-Antworten automatisiert aus dem offenen Web zu generieren, ohne robuste Quellenprüfung Desinformation skaliert. Amazon hielt dennoch an dem generativen Antwortmodell fest.",
+      "title_de": "US-Senatoren warnen vor Alexa-Wahlfehlinformation",
+      "description_de": "Bereits im Oktober 2023 forderten die US-Senatorin Amy Klobuchar und Abgeordneter Joe Morelle Antworten von Amazon, nachdem Alexa Falschinformationen über die US-Wahl 2020 verbreitet hatte. Das zeigte früh, dass die Geschäftsentscheidung, Alexa-Antworten automatisiert aus dem offenen Web zu generieren, ohne robuste Quellenprüfung Desinformation skaliert. Amazon hielt dennoch an dem generativen Antwortmodell fest.",
+      "title_en": "US senators warn over Alexa election misinformation",
+      "description_en": "As early as October 2023, US Senator Amy Klobuchar and Representative Joe Morelle demanded answers from Amazon after Alexa spread false information about the 2020 US election. This showed early on that the business decision to generate Alexa answers automatically from the open web, without robust source verification, scales disinformation. Amazon nonetheless kept the generative answer model.",
+      "sources": [
+        "https://www.klobuchar.senate.gov/public/index.cfm/2023/10/klobuchar-morelle-call-on-amazon-for-answers-after-reports-of-alexa-spreading-election-misinformation"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "event",
+      "title": "Full Fact deckt falsch zugeschriebene Behauptungen bei Alexa auf",
+      "description": "Im Oktober 2024 veröffentlichte die britische Faktencheck-Organisation Full Fact eine Untersuchung, wonach Alexa bereits widerlegte Falschbehauptungen als Tatsachen ausgibt und dabei ausgerechnet Faktencheck-Organisationen wie Full Fact oder die philippinische VERA Files als Quelle zitiert. Beispiele reichten von erfundenen Spesen-Regeln für Abgeordnete bis zu der falschen Behauptung, die Nordlichter seien von der HAARP-Anlage in Alaska erzeugt worden.",
+      "title_de": "Full Fact deckt falsch zugeschriebene Behauptungen bei Alexa auf",
+      "description_de": "Im Oktober 2024 veröffentlichte die britische Faktencheck-Organisation Full Fact eine Untersuchung, wonach Alexa bereits widerlegte Falschbehauptungen als Tatsachen ausgibt und dabei ausgerechnet Faktencheck-Organisationen wie Full Fact oder die philippinische VERA Files als Quelle zitiert. Beispiele reichten von erfundenen Spesen-Regeln für Abgeordnete bis zu der falschen Behauptung, die Nordlichter seien von der HAARP-Anlage in Alaska erzeugt worden.",
+      "title_en": "Full Fact uncovers misattributed claims on Alexa",
+      "description_en": "In October 2024 UK fact-checking charity Full Fact published an investigation showing Alexa repeats already-debunked false claims as fact and cites fact-check organisations like Full Fact and the Philippine VERA Files as the source. Examples ranged from invented MPs' expenses rules to the false claim that the Northern Lights had been generated by the HAARP facility in Alaska.",
+      "sources": [
+        "https://fullfact.org/online/amazon-echo-misleading-voice-assistant/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Amazon kündigt Korrekturen an, Fehler bleiben jedoch bestehen",
+      "description": "Amazon erklärte, an einer Behebung zu arbeiten, und bei einer Wiederholung derselben Fragen gab Alexa die Fehler nicht mehr aus. Als Full Fact jedoch neue Fragen stellte, schrieb Alexa weiterhin falsche Informationen anderen Faktencheckern zu, darunter VERA Files mit der erfundenen Behauptung über Goldbarren von Ferdinand Marcos Sr. in der Bank of England. Die punktuellen Korrekturen lösten das strukturelle Problem nicht.",
+      "title_de": "Amazon kündigt Korrekturen an, Fehler bleiben jedoch bestehen",
+      "description_de": "Amazon erklärte, an einer Behebung zu arbeiten, und bei einer Wiederholung derselben Fragen gab Alexa die Fehler nicht mehr aus. Als Full Fact jedoch neue Fragen stellte, schrieb Alexa weiterhin falsche Informationen anderen Faktencheckern zu, darunter VERA Files mit der erfundenen Behauptung über Goldbarren von Ferdinand Marcos Sr. in der Bank of England. Die punktuellen Korrekturen lösten das strukturelle Problem nicht.",
+      "title_en": "Amazon announces fixes, but errors persist",
+      "description_en": "Amazon said it was working to resolve the issue, and when the same questions were repeated Alexa no longer produced the errors. But when Full Fact asked new questions, Alexa kept attributing false information to other fact checkers, including VERA Files with the invented claim about Ferdinand Marcos Sr.'s gold bars in the Bank of England. The piecemeal corrections did not solve the structural problem.",
+      "sources": [
+        "https://fullfact.org/online/amazon-alexa-misleading-voice-assistant-more-answers/",
+        "https://verafiles.org/articles/amazons-alexa-has-been-attributing-false-information-to-fact-checkers-including-vera-files"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://fullfact.org/online/amazon-echo-misleading-voice-assistant/",

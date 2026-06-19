@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Geistiges Eigentum",
+    "Eigentumsrechte",
+    "Unternehmerische Freiheit",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Geistiges Eigentum",
+    "Eigentumsrechte",
+    "Unternehmerische Freiheit",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Intellectual property",
+    "Property rights",
+    "Freedom to conduct a business",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Anthropic",
@@ -55,7 +70,76 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "1994",
+      "phase": "infrastructure",
+      "title": "Robots.txt als freiwilliger Crawler-Standard etabliert",
+      "description": "Das Robots Exclusion Protocol (robots.txt) entstand 1994 als freiwillige Konvention, mit der Website-Betreiber:innen Crawlern signalisieren, welche Bereiche nicht abgerufen werden sollen. Der Standard ist nicht rechtlich erzwingbar und beruht allein auf der Kooperationsbereitschaft der Crawler. Mit dem Aufstieg datenhungriger KI-Trainings-Crawler geriet dieses Vertrauensmodell unter Druck.",
+      "title_de": "Robots.txt als freiwilliger Crawler-Standard etabliert",
+      "description_de": "Das Robots Exclusion Protocol (robots.txt) entstand 1994 als freiwillige Konvention, mit der Website-Betreiber:innen Crawlern signalisieren, welche Bereiche nicht abgerufen werden sollen. Der Standard ist nicht rechtlich erzwingbar und beruht allein auf der Kooperationsbereitschaft der Crawler. Mit dem Aufstieg datenhungriger KI-Trainings-Crawler geriet dieses Vertrauensmodell unter Druck.",
+      "title_en": "Robots.txt established as a voluntary crawler standard",
+      "description_en": "The Robots Exclusion Protocol (robots.txt) emerged in 1994 as a voluntary convention by which website operators signal to crawlers which areas should not be fetched. The standard is not legally enforceable and relies solely on crawlers' willingness to cooperate. With the rise of data-hungry AI training crawlers, this trust model came under pressure.",
+      "sources": [
+        "https://www.theregister.com/2024/07/30/taming_ai_content_crawlers/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "KI-Branche skaliert Web-Crawling für Trainingsdaten",
+      "description": "Mit dem Wettlauf um leistungsfähige Sprachmodelle wurde großflächiges Web-Crawling zur zentralen Methode der Trainingsdaten-Beschaffung. KI-Anbieter wie Anthropic betreiben dafür eigene Crawler — im Fall von Anthropic den ClaudeBot. Die hohe Frequenz und Breite dieser Crawls entstand aus dem Geschäftsmodell, möglichst viel öffentliches Web als Trainingsmaterial zu erfassen.",
+      "title_de": "KI-Branche skaliert Web-Crawling für Trainingsdaten",
+      "description_de": "Mit dem Wettlauf um leistungsfähige Sprachmodelle wurde großflächiges Web-Crawling zur zentralen Methode der Trainingsdaten-Beschaffung. KI-Anbieter wie Anthropic betreiben dafür eigene Crawler — im Fall von Anthropic den ClaudeBot. Die hohe Frequenz und Breite dieser Crawls entstand aus dem Geschäftsmodell, möglichst viel öffentliches Web als Trainingsmaterial zu erfassen.",
+      "title_en": "AI industry scales up web crawling for training data",
+      "description_en": "As the race for capable language models intensified, large-scale web crawling became the central method of acquiring training data. AI providers such as Anthropic operate their own crawlers for this — in Anthropic's case ClaudeBot. The high frequency and breadth of these crawls stemmed from the business model of capturing as much public web as possible as training material.",
+      "sources": [
+        "https://pivot-to-ai.com/2024/07/29/anthropic-is-scraping-websites-so-fast-its-causing-problems/"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "event",
+      "title": "iFixit und Freelancer berichten massive Crawler-Lasten",
+      "description": "Im Juli 2024 warfen Betreiber:innen großer Websites Anthropic vor, der ClaudeBot ignoriere Robots.txt-Direktiven und schädige durch hohe Lasten den Betrieb. Die Reparatur-Plattform iFixit berichtete von fast einer Million Crawler-Zugriffen innerhalb von 24 Stunden, die Alarme auslösten und Personal nachts weckten. Freelancer.com-CEO Matt Barrie meldete 3,5 Millionen Zugriffe in vier Stunden und nannte Anthropic den 'mit Abstand aggressivsten' KI-Scraper.",
+      "title_de": "iFixit und Freelancer berichten massive Crawler-Lasten",
+      "description_de": "Im Juli 2024 warfen Betreiber:innen großer Websites Anthropic vor, der ClaudeBot ignoriere Robots.txt-Direktiven und schädige durch hohe Lasten den Betrieb. Die Reparatur-Plattform iFixit berichtete von fast einer Million Crawler-Zugriffen innerhalb von 24 Stunden, die Alarme auslösten und Personal nachts weckten. Freelancer.com-CEO Matt Barrie meldete 3,5 Millionen Zugriffe in vier Stunden und nannte Anthropic den 'mit Abstand aggressivsten' KI-Scraper.",
+      "title_en": "iFixit and Freelancer report massive crawler loads",
+      "description_en": "In July 2024 operators of high-traffic websites accused Anthropic that ClaudeBot ignored robots.txt directives and harmed operations through heavy loads. The repair platform iFixit reported nearly one million crawler hits within 24 hours, triggering alerts and waking staff overnight. Freelancer.com CEO Matt Barrie reported 3.5 million hits in four hours, calling Anthropic 'by far the most aggressive' AI scraper.",
+      "sources": [
+        "https://www.404media.co/anthropic-ai-scraper-hits-ifixits-website-a-million-times-in-a-day/",
+        "https://www.engadget.com/websites-accuse-ai-startup-anthropic-of-bypassing-their-anti-scraping-rules-and-protocol-133022756.html"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "consequences",
+      "title": "Anthropic verweist auf Robots.txt, Crawling von iFixit endet",
+      "description": "Anthropic erklärte, Robots.txt zu respektieren, und gab an, das Signal zu befolgen, sobald iFixit es implementiere. Nachdem iFixit eine entsprechende Zeile in die Robots.txt-Datei eingetragen hatte, beendete der ClaudeBot das Crawling der Seite. Betreiber:innen kritisierten weiterhin, dass die Last bereits vor der Anpassung Schaden angerichtet habe und das freiwillige Protokoll unzureichend sei.",
+      "title_de": "Anthropic verweist auf Robots.txt, Crawling von iFixit endet",
+      "description_de": "Anthropic erklärte, Robots.txt zu respektieren, und gab an, das Signal zu befolgen, sobald iFixit es implementiere. Nachdem iFixit eine entsprechende Zeile in die Robots.txt-Datei eingetragen hatte, beendete der ClaudeBot das Crawling der Seite. Betreiber:innen kritisierten weiterhin, dass die Last bereits vor der Anpassung Schaden angerichtet habe und das freiwillige Protokoll unzureichend sei.",
+      "title_en": "Anthropic cites robots.txt, crawling of iFixit ends",
+      "description_en": "Anthropic said it respected robots.txt and stated it would honour the signal once iFixit implemented it. After iFixit added a corresponding line to its robots.txt file, ClaudeBot stopped crawling the site. Operators continued to criticise that the load had already caused damage before the change and that the voluntary protocol was insufficient.",
+      "sources": [
+        "https://www.engadget.com/websites-accuse-ai-startup-anthropic-of-bypassing-their-anti-scraping-rules-and-protocol-133022756.html",
+        "https://www.inc.com/ben-sherry/why-anthropics-web-crawlers-have-been-hammering-websites.html"
+      ]
+    },
+    {
+      "date": "2025-07",
+      "phase": "consequences",
+      "title": "Cloudflare blockiert KI-Crawler standardmäßig",
+      "description": "Als Reaktion auf das Verhalten aggressiver KI-Crawler verschärfte die Infrastruktur-Firma Cloudflare ihre Schutzmechanismen. Im Juli 2025 begann Cloudflare, KI-Crawler ohne Erlaubnis oder Vergütung standardmäßig zu blockieren, und führte ein Pay-per-Crawl-Modell ein. Der Fall Anthropic gehörte zu den Beispielen, die die Debatte über die Grenzen des freiwilligen Robots.txt-Modells befeuerten.",
+      "title_de": "Cloudflare blockiert KI-Crawler standardmäßig",
+      "description_de": "Als Reaktion auf das Verhalten aggressiver KI-Crawler verschärfte die Infrastruktur-Firma Cloudflare ihre Schutzmechanismen. Im Juli 2025 begann Cloudflare, KI-Crawler ohne Erlaubnis oder Vergütung standardmäßig zu blockieren, und führte ein Pay-per-Crawl-Modell ein. Der Fall Anthropic gehörte zu den Beispielen, die die Debatte über die Grenzen des freiwilligen Robots.txt-Modells befeuerten.",
+      "title_en": "Cloudflare blocks AI crawlers by default",
+      "description_en": "In response to the behaviour of aggressive AI crawlers, the infrastructure firm Cloudflare tightened its protective mechanisms. In July 2025 Cloudflare began blocking AI crawlers by default unless they had permission or paid, and introduced a pay-per-crawl model. The Anthropic case was among the examples that fuelled the debate over the limits of the voluntary robots.txt model.",
+      "sources": [
+        "https://www.cloudflare.com/press/press-releases/2025/cloudflare-just-changed-how-ai-crawlers-scrape-the-internet-at-large/",
+        "https://blog.cloudflare.com/control-content-use-for-ai-training/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.404media.co/anthropic-ai-scraper-hits-ifixits-website-a-million-times-in-a-day/",

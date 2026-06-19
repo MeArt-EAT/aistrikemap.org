@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "IT-Sicherheit und Integrität digitaler Systeme",
+    "Verbraucherschutz",
+    "Schutz vor Belästigung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "IT-Sicherheit und Integrität digitaler Systeme",
+    "Verbraucherschutz",
+    "Schutz vor Belästigung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "IT security and integrity of digital systems",
+    "Consumer protection",
+    "Protection from harassment"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -48,7 +63,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-07",
+      "phase": "infrastructure",
+      "title": "Günstige LLM-APIs senken die Hürde für Massen-Textgenerierung",
+      "description": "OpenAI bot mit GPT-4o-mini ein sehr günstiges, leistungsfähiges Sprachmodell über eine offene API an. Solche APIs ermöglichen es, in Sekunden tausende individuell wirkende Texte zu erzeugen. Damit entstand die technische Grundlage, Spam-Nachrichten automatisiert auf den jeweiligen Empfänger zuzuschneiden.",
+      "title_de": "Günstige LLM-APIs senken die Hürde für Massen-Textgenerierung",
+      "description_de": "OpenAI bot mit GPT-4o-mini ein sehr günstiges, leistungsfähiges Sprachmodell über eine offene API an. Solche APIs ermöglichen es, in Sekunden tausende individuell wirkende Texte zu erzeugen. Damit entstand die technische Grundlage, Spam-Nachrichten automatisiert auf den jeweiligen Empfänger zuzuschneiden.",
+      "title_en": "Cheap LLM APIs lower the barrier for mass text generation",
+      "description_en": "With GPT-4o-mini OpenAI offered a very cheap, capable language model through an open API. Such APIs make it possible to generate thousands of seemingly individual texts in seconds. This created the technical basis for automatically tailoring spam messages to each recipient.",
+      "sources": [
+        "https://www.sentinelone.com/labs/akirabot-ai-powered-bot-bypasses-captchas-spams-websites-at-scale/"
+      ]
+    },
+    {
+      "date": "2024-09",
+      "phase": "doctrine",
+      "title": "Spam-Geschäftsmodell kombiniert KI-Texte mit CAPTCHA-Umgehung",
+      "description": "Die Betreiber von AkiraBot bauten ein automatisiertes Framework, das Webseiten ausliest, per GPT-4o-mini passende Werbenachrichten formuliert und über Kontaktformulare und Chat-Widgets verschickt. Zur Tarnung wurden CAPTCHA-Umgehungsdienste wie Capsolver, rotierende Proxys und individuelle Header eingesetzt. Ziel war es, SEO-Dienste durch Massen-Spam zu bewerben.",
+      "title_de": "Spam-Geschäftsmodell kombiniert KI-Texte mit CAPTCHA-Umgehung",
+      "description_de": "Die Betreiber von AkiraBot bauten ein automatisiertes Framework, das Webseiten ausliest, per GPT-4o-mini passende Werbenachrichten formuliert und über Kontaktformulare und Chat-Widgets verschickt. Zur Tarnung wurden CAPTCHA-Umgehungsdienste wie Capsolver, rotierende Proxys und individuelle Header eingesetzt. Ziel war es, SEO-Dienste durch Massen-Spam zu bewerben.",
+      "title_en": "Spam business model combines AI text with CAPTCHA bypass",
+      "description_en": "The AkiraBot operators built an automated framework that scrapes websites, uses GPT-4o-mini to craft matching promotional messages and sends them through contact forms and chat widgets. To evade detection it used CAPTCHA-bypass services such as Capsolver, rotating proxies and custom headers. The goal was to advertise SEO services via mass spam.",
+      "sources": [
+        "https://www.sentinelone.com/labs/akirabot-ai-powered-bot-bypasses-captchas-spams-websites-at-scale/"
+      ]
+    },
+    {
+      "date": "2025-04",
+      "phase": "event",
+      "title": "SentinelLabs deckt KI-Spam gegen 240.000 Webseiten auf",
+      "description": "Im April 2025 veröffentlichte SentinelLabs eine Analyse von AkiraBot. Seit September 2024 hatte das Framework über 240.000 kleine und mittlere Unternehmens-Webseiten auf Plattformen wie Shopify, Wix, GoDaddy und Squarespace ins Visier genommen, rund 80.000 davon erfolgreich. Die per GPT-4o-mini erzeugten Nachrichten wirkten individuell und entzogen sich klassischen Spam-Filtern.",
+      "title_de": "SentinelLabs deckt KI-Spam gegen 240.000 Webseiten auf",
+      "description_de": "Im April 2025 veröffentlichte SentinelLabs eine Analyse von AkiraBot. Seit September 2024 hatte das Framework über 240.000 kleine und mittlere Unternehmens-Webseiten auf Plattformen wie Shopify, Wix, GoDaddy und Squarespace ins Visier genommen, rund 80.000 davon erfolgreich. Die per GPT-4o-mini erzeugten Nachrichten wirkten individuell und entzogen sich klassischen Spam-Filtern.",
+      "title_en": "SentinelLabs exposes AI spam against 240,000 websites",
+      "description_en": "In April 2025 SentinelLabs published an analysis of AkiraBot. Since September 2024 the framework had targeted more than 240,000 small and medium business websites on platforms such as Shopify, Wix, GoDaddy and Squarespace, around 80,000 of them successfully. The messages generated via GPT-4o-mini looked individual and evaded classic spam filters.",
+      "sources": [
+        "https://www.sentinelone.com/labs/akirabot-ai-powered-bot-bypasses-captchas-spams-websites-at-scale/",
+        "https://thehackernews.com/2025/04/akirabot-targets-420000-sites-with.html"
+      ]
+    },
+    {
+      "date": "2025-04",
+      "phase": "consequences",
+      "title": "OpenAI sperrt API-Zugang nach Hinweis der Forschenden",
+      "description": "Nach dem Bericht von SentinelLabs sperrte OpenAI die für AkiraBot verwendeten API-Schlüssel, weil sie gegen die Nutzungsrichtlinien verstießen. Der Fall verdeutlichte, dass solche Missbräuche oft erst nach externer Aufdeckung gestoppt werden, und verstärkte die Diskussion über Pflichten der KI-Anbieter zur laufenden Missbrauchserkennung.",
+      "title_de": "OpenAI sperrt API-Zugang nach Hinweis der Forschenden",
+      "description_de": "Nach dem Bericht von SentinelLabs sperrte OpenAI die für AkiraBot verwendeten API-Schlüssel, weil sie gegen die Nutzungsrichtlinien verstießen. Der Fall verdeutlichte, dass solche Missbräuche oft erst nach externer Aufdeckung gestoppt werden, und verstärkte die Diskussion über Pflichten der KI-Anbieter zur laufenden Missbrauchserkennung.",
+      "title_en": "OpenAI revokes API access after researchers' alert",
+      "description_en": "After the SentinelLabs report, OpenAI revoked the API keys used by AkiraBot because they violated its usage policies. The case highlighted that such abuses are often stopped only after external disclosure and intensified the debate about AI providers' duties to detect misuse on an ongoing basis.",
+      "sources": [
+        "https://thehackernews.com/2025/04/akirabot-targets-420000-sites-with.html",
+        "https://www.infosecurity-magazine.com/news/aipowered-akirabot-captcha-spam/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.sentinelone.com/labs/akirabot-ai-powered-bot-bypasses-captchas-spams-websites-at-scale/",

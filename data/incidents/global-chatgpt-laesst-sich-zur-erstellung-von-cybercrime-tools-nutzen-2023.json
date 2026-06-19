@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "IT-Sicherheit und Integrität digitaler Systeme",
+    "Schutz vor Betrug",
+    "Datenschutz",
+    "Schutz des Eigentums"
+  ],
+  "asm:affectedRights_de": [
+    "IT-Sicherheit und Integrität digitaler Systeme",
+    "Schutz vor Betrug",
+    "Datenschutz",
+    "Schutz des Eigentums"
+  ],
+  "asm:affectedRights_en": [
+    "IT security and integrity of digital systems",
+    "Protection from fraud",
+    "Data protection",
+    "Protection of property"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -48,7 +63,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "Öffentlicher Start von ChatGPT mit Code-Fähigkeiten",
+      "description": "OpenAI veröffentlichte im November 2022 ChatGPT als frei zugänglichen Chatbot. Das Modell konnte funktionsfähigen Programmcode, Texte und Skripte erzeugen. Schutzmechanismen sollten schädliche Anfragen abweisen, ließen sich jedoch durch geschickte Umformulierungen umgehen.",
+      "title_de": "Öffentlicher Start von ChatGPT mit Code-Fähigkeiten",
+      "description_de": "OpenAI veröffentlichte im November 2022 ChatGPT als frei zugänglichen Chatbot. Das Modell konnte funktionsfähigen Programmcode, Texte und Skripte erzeugen. Schutzmechanismen sollten schädliche Anfragen abweisen, ließen sich jedoch durch geschickte Umformulierungen umgehen.",
+      "title_en": "Public launch of ChatGPT with coding abilities",
+      "description_en": "In November 2022 OpenAI released ChatGPT as a freely accessible chatbot. The model could produce working program code, text and scripts. Safeguards were meant to reject harmful requests but could be circumvented through clever rephrasing.",
+      "sources": [
+        "https://research.checkpoint.com/2023/opwnai-cybercriminals-starting-to-use-chatgpt/"
+      ]
+    },
+    {
+      "date": "2022-12",
+      "phase": "doctrine",
+      "title": "Untergrundforen entdecken ChatGPT als Werkzeug für Straftaten",
+      "description": "Bereits Ende 2022 begannen Akteure in Cybercrime-Foren, den Einsatz von ChatGPT für Betrug und Schadcode zu diskutieren. Die Community erprobte systematisch, wie sich die Sicherheitsfilter aushebeln lassen, um Malware und Phishing-Inhalte zu erzeugen. Damit etablierte sich die Nutzungsabsicht, generative KI gezielt für Straftaten einzusetzen.",
+      "title_de": "Untergrundforen entdecken ChatGPT als Werkzeug für Straftaten",
+      "description_de": "Bereits Ende 2022 begannen Akteure in Cybercrime-Foren, den Einsatz von ChatGPT für Betrug und Schadcode zu diskutieren. Die Community erprobte systematisch, wie sich die Sicherheitsfilter aushebeln lassen, um Malware und Phishing-Inhalte zu erzeugen. Damit etablierte sich die Nutzungsabsicht, generative KI gezielt für Straftaten einzusetzen.",
+      "title_en": "Underground forums discover ChatGPT as a tool for crime",
+      "description_en": "As early as late 2022, actors in cybercrime forums began discussing the use of ChatGPT for fraud and malicious code. The community systematically tested how to bypass the safety filters in order to generate malware and phishing content. This established the intent to use generative AI deliberately for crime.",
+      "sources": [
+        "https://research.checkpoint.com/2023/opwnai-cybercriminals-starting-to-use-chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-01",
+      "phase": "event",
+      "title": "Check Point dokumentiert KI-erzeugte Schadsoftware (OPWNAI)",
+      "description": "Anfang 2023 veröffentlichte Check Point Research die Reihe OPWNAI. Sie belegte, dass Kriminelle ChatGPT trotz Schutzmechanismen nutzten, um funktionsfähige Schadsoftware, Phishing-Mails und Verschlüsselungswerkzeuge zu erzeugen, inklusive eines vollständigen Infektionsablaufs. Die technische Hürde für wenig versierte Angreifer sank dadurch deutlich.",
+      "title_de": "Check Point dokumentiert KI-erzeugte Schadsoftware (OPWNAI)",
+      "description_de": "Anfang 2023 veröffentlichte Check Point Research die Reihe OPWNAI. Sie belegte, dass Kriminelle ChatGPT trotz Schutzmechanismen nutzten, um funktionsfähige Schadsoftware, Phishing-Mails und Verschlüsselungswerkzeuge zu erzeugen, inklusive eines vollständigen Infektionsablaufs. Die technische Hürde für wenig versierte Angreifer sank dadurch deutlich.",
+      "title_en": "Check Point documents AI-generated malware (OPWNAI)",
+      "description_en": "In early 2023 Check Point Research published the OPWNAI series. It demonstrated that criminals used ChatGPT, despite safeguards, to produce working malware, phishing emails and encryption tools, including a complete infection chain. This significantly lowered the technical barrier for low-skill attackers.",
+      "sources": [
+        "https://research.checkpoint.com/2023/opwnai-cybercriminals-starting-to-use-chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "consequences",
+      "title": "Spezialisierte Cybercrime-Modelle wie WormGPT und FraudGPT",
+      "description": "Im Sommer 2023 erschienen kommerzielle, eigens auf Straftaten ausgerichtete Sprachmodelle ohne Schutzfilter. WormGPT wurde Ende Juni 2023 in einem Hackerforum beworben, FraudGPT folgte im Juli. Solche Werkzeuge waren auf Phishing und Schadcode zugeschnitten und machten die kriminelle Nutzung generativer KI als Dienstleistung verfügbar.",
+      "title_de": "Spezialisierte Cybercrime-Modelle wie WormGPT und FraudGPT",
+      "description_de": "Im Sommer 2023 erschienen kommerzielle, eigens auf Straftaten ausgerichtete Sprachmodelle ohne Schutzfilter. WormGPT wurde Ende Juni 2023 in einem Hackerforum beworben, FraudGPT folgte im Juli. Solche Werkzeuge waren auf Phishing und Schadcode zugeschnitten und machten die kriminelle Nutzung generativer KI als Dienstleistung verfügbar.",
+      "title_en": "Specialised cybercrime models such as WormGPT and FraudGPT",
+      "description_en": "In summer 2023, commercial language models built specifically for crime and without safety filters appeared. WormGPT was advertised in a hacking forum in late June 2023, with FraudGPT following in July. Such tools were tailored to phishing and malicious code and made the criminal use of generative AI available as a service.",
+      "sources": [
+        "https://www.eftsure.com/blog/cyber-crime/wormgpt/",
+        "https://www.csoonline.com/article/4008912/wormgpt-returns-new-malicious-ai-variants-built-on-grok-and-mixtral-uncovered.html"
+      ]
+    },
+    {
+      "date": "2023-11",
+      "phase": "consequences",
+      "title": "Starker Anstieg KI-gestützter Phishing-Mails",
+      "description": "Ende 2023 berichteten Sicherheitsfirmen über einen massiven Anstieg bösartiger Phishing-Mails, die mit KI-Werkzeugen sprachlich überzeugender und fehlerfreier gestaltet wurden. Die früher typischen Erkennungsmerkmale wie Grammatikfehler entfielen weitgehend, was die Abwehr für Unternehmen und Privatpersonen erschwerte.",
+      "title_de": "Starker Anstieg KI-gestützter Phishing-Mails",
+      "description_de": "Ende 2023 berichteten Sicherheitsfirmen über einen massiven Anstieg bösartiger Phishing-Mails, die mit KI-Werkzeugen sprachlich überzeugender und fehlerfreier gestaltet wurden. Die früher typischen Erkennungsmerkmale wie Grammatikfehler entfielen weitgehend, was die Abwehr für Unternehmen und Privatpersonen erschwerte.",
+      "title_en": "Sharp rise in AI-assisted phishing emails",
+      "description_en": "By late 2023 security firms reported a massive increase in malicious phishing emails made more convincing and error-free with AI tools. Formerly typical warning signs such as grammatical errors largely disappeared, making defence harder for companies and individuals.",
+      "sources": [
+        "https://www.cnbc.com/2023/11/28/ai-like-chatgpt-is-creating-huge-increase-in-malicious-phishing-email.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://research.checkpoint.com/2023/opwnai-cybercriminals-starting-to-use-chatgpt/",

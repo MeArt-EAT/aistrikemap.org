@@ -26,9 +26,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Informationelle Selbstbestimmung",
+    "Recht auf Einwilligung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Informationelle Selbstbestimmung",
+    "Recht auf Einwilligung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Informational self-determination",
+    "Right to consent",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Apple",
@@ -42,7 +60,63 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-08",
+      "phase": "infrastructure",
+      "title": "Apple veröffentlicht Swift-Bibliothek für homomorphe Verschlüsselung",
+      "description": "Apple stellte im August 2024 die Open-Source-Bibliothek swift-homomorphic-encryption vor, die das BFV-Verfahren mit Private Information Retrieval (PIR) und privater Nearest-Neighbor-Suche kombiniert. Diese Technik erlaubt serverseitige Berechnungen auf verschlüsselten Embedding-Vektoren. Sie bildet die technische Grundlage für die spätere Foto-Funktion Enhanced Visual Search.",
+      "title_de": "Apple veröffentlicht Swift-Bibliothek für homomorphe Verschlüsselung",
+      "description_de": "Apple stellte im August 2024 die Open-Source-Bibliothek swift-homomorphic-encryption vor, die das BFV-Verfahren mit Private Information Retrieval (PIR) und privater Nearest-Neighbor-Suche kombiniert. Diese Technik erlaubt serverseitige Berechnungen auf verschlüsselten Embedding-Vektoren. Sie bildet die technische Grundlage für die spätere Foto-Funktion Enhanced Visual Search.",
+      "title_en": "Apple releases Swift library for homomorphic encryption",
+      "description_en": "In August 2024 Apple released the open-source library swift-homomorphic-encryption, combining the BFV scheme with Private Information Retrieval (PIR) and private nearest-neighbor search. The technique enables server-side computation on encrypted embedding vectors. It forms the technical basis for the later Enhanced Visual Search photo feature.",
+      "sources": [
+        "https://www.swift.org/blog/announcing-swift-homomorphic-encryption/",
+        "https://machinelearning.apple.com/research/homomorphic-encryption"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "doctrine",
+      "title": "Apple positioniert serverseitige Foto-Analyse als datenschutzwahrend",
+      "description": "Apple beschrieb in seiner Machine-Learning-Forschung, wie Enhanced Visual Search Orte in Fotos privat gegen einen globalen Server-Index abgleicht. Das Verfahren kombiniert homomorphe Verschlüsselung, Differential Privacy und ein OHTTP-Relay, das die IP-Adresse verbirgt. Diese Architektur sollte serverseitige KI-Funktionen mit dem Datenschutz-Versprechen des Konzerns vereinbar machen.",
+      "title_de": "Apple positioniert serverseitige Foto-Analyse als datenschutzwahrend",
+      "description_de": "Apple beschrieb in seiner Machine-Learning-Forschung, wie Enhanced Visual Search Orte in Fotos privat gegen einen globalen Server-Index abgleicht. Das Verfahren kombiniert homomorphe Verschlüsselung, Differential Privacy und ein OHTTP-Relay, das die IP-Adresse verbirgt. Diese Architektur sollte serverseitige KI-Funktionen mit dem Datenschutz-Versprechen des Konzerns vereinbar machen.",
+      "title_en": "Apple frames server-side photo analysis as privacy-preserving",
+      "description_en": "In its machine-learning research Apple described how Enhanced Visual Search privately matches places in photos against a global server index. The process combines homomorphic encryption, differential privacy and an OHTTP relay that hides the IP address. This architecture was meant to reconcile server-side AI features with the company's privacy promise.",
+      "sources": [
+        "https://machinelearning.apple.com/research/homomorphic-encryption"
+      ]
+    },
+    {
+      "date": "2024-12",
+      "phase": "event",
+      "title": "Enhanced Visual Search standardmäßig aktiviert in iOS 18 und macOS Sequoia",
+      "description": "Mit iOS 18 und macOS Sequoia führte Apple Ende 2024 stillschweigend Enhanced Visual Search ein, das Foto-Daten zur Sehenswürdigkeiten-Identifikation an Apple-Server sendet — standardmäßig aktiviert und ohne Hinweis auf den Trade-off. Der Entwickler Jeff Johnson und der Sicherheitsforscher Matthew Green kritisierten den Vorgang. Kritiker:innen halten den fehlenden Consent für rechtlich problematisch, insbesondere in der EU.",
+      "title_de": "Enhanced Visual Search standardmäßig aktiviert in iOS 18 und macOS Sequoia",
+      "description_de": "Mit iOS 18 und macOS Sequoia führte Apple Ende 2024 stillschweigend Enhanced Visual Search ein, das Foto-Daten zur Sehenswürdigkeiten-Identifikation an Apple-Server sendet — standardmäßig aktiviert und ohne Hinweis auf den Trade-off. Der Entwickler Jeff Johnson und der Sicherheitsforscher Matthew Green kritisierten den Vorgang. Kritiker:innen halten den fehlenden Consent für rechtlich problematisch, insbesondere in der EU.",
+      "title_en": "Enhanced Visual Search enabled by default in iOS 18 and macOS Sequoia",
+      "description_en": "With iOS 18 and macOS Sequoia, Apple silently rolled out Enhanced Visual Search in late 2024, sending photo data to Apple servers for landmark identification — enabled by default and without disclosing the trade-off. Developer Jeff Johnson and security researcher Matthew Green criticised the move. Critics consider the lack of consent legally problematic, especially under EU law.",
+      "sources": [
+        "https://9to5mac.com/2024/12/30/enhanced-visual-search-shares-your-photos-with-apple-by-default-to-identify-landmarks/",
+        "https://mjtsai.com/blog/2025/01/01/privacy-of-photos-apps-enhanced-visual-search/"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "phase": "consequences",
+      "title": "Öffentliche Debatte über Opt-out und fehlende Einwilligung",
+      "description": "Anfang 2025 erschienen zahlreiche Berichte und Anleitungen, wie sich Enhanced Visual Search abschalten lässt. Die Debatte drehte sich um den Widerspruch zwischen Apples Datenschutz-Marketing und einer serverseitigen Foto-Analyse ohne Opt-in. Apple verteidigte das Verfahren als kryptografisch geschützt; Kritiker:innen forderten, die Funktion standardmäßig zu deaktivieren und Nutzer:innen selbst entscheiden zu lassen.",
+      "title_de": "Öffentliche Debatte über Opt-out und fehlende Einwilligung",
+      "description_de": "Anfang 2025 erschienen zahlreiche Berichte und Anleitungen, wie sich Enhanced Visual Search abschalten lässt. Die Debatte drehte sich um den Widerspruch zwischen Apples Datenschutz-Marketing und einer serverseitigen Foto-Analyse ohne Opt-in. Apple verteidigte das Verfahren als kryptografisch geschützt; Kritiker:innen forderten, die Funktion standardmäßig zu deaktivieren und Nutzer:innen selbst entscheiden zu lassen.",
+      "title_en": "Public debate over opt-out and missing consent",
+      "description_en": "In early 2025 numerous reports and guides explained how to turn off Enhanced Visual Search. The debate centred on the contradiction between Apple's privacy marketing and a server-side photo analysis without opt-in. Apple defended the process as cryptographically protected; critics demanded the feature be disabled by default and left to users' choice.",
+      "sources": [
+        "https://www.theregister.com/2025/01/03/apple_enhanced_visual_search/",
+        "https://www.howtogeek.com/what-is-apples-enhanced-visual-search-and-should-you-turn-it-off/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://9to5mac.com/2024/12/30/enhanced-visual-search-shares-your-photos-with-apple-by-default-to-identify-landmarks/",
