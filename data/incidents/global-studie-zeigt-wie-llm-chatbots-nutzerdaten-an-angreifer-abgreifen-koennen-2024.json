@@ -26,9 +26,24 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "King's College London",
@@ -61,7 +76,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Offen anpassbare LLMs erlauben frei definierbare System-Prompts",
+      "description": "Anbieter wie Mistral und Zhipu AI stellen leistungsfähige Sprachmodelle bereit, die sich über frei wählbare System-Prompts in beliebige Konversations-Personas verwandeln lassen. Entwickler können das Verhalten eines Chatbots so steuern, ohne das Modell neu zu trainieren. Diese Anpassbarkeit ist die technische Vorbedingung dafür, einen scheinbar harmlosen Chatbot heimlich auf Datenabgriff zu trimmen.",
+      "title_de": "Offen anpassbare LLMs erlauben frei definierbare System-Prompts",
+      "description_de": "Anbieter wie Mistral und Zhipu AI stellen leistungsfähige Sprachmodelle bereit, die sich über frei wählbare System-Prompts in beliebige Konversations-Personas verwandeln lassen. Entwickler können das Verhalten eines Chatbots so steuern, ohne das Modell neu zu trainieren. Diese Anpassbarkeit ist die technische Vorbedingung dafür, einen scheinbar harmlosen Chatbot heimlich auf Datenabgriff zu trimmen.",
+      "title_en": "Openly customisable LLMs allow freely defined system prompts",
+      "description_en": "Providers such as Mistral and Zhipu AI offer powerful language models that can be turned into arbitrary conversational personas via freely chosen system prompts. Developers can steer a chatbot's behaviour this way without retraining the model. This customisability is the technical precondition for covertly tuning a seemingly harmless chatbot to harvest data.",
+      "sources": [
+        "https://www.eurekalert.org/news-releases/1094414"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Vertrauen in Chatbots als ausnutzbare Schwachstelle",
+      "description": "Konversations-KI gewinnt an Verbreitung, weil Nutzer:innen mit Chatbots vertraulicher und freizügiger umgehen als mit klassischen Web-Formularen. Genau dieses Vertrauen, das Anbieter als Komfortmerkmal bewerben, lässt sich als Angriffsfläche missbrauchen. Die Forschenden setzen hier an, um die Datenschutzrisiken bewusst gestalteter, bösartiger Chatbots experimentell zu untersuchen.",
+      "title_de": "Vertrauen in Chatbots als ausnutzbare Schwachstelle",
+      "description_de": "Konversations-KI gewinnt an Verbreitung, weil Nutzer:innen mit Chatbots vertraulicher und freizügiger umgehen als mit klassischen Web-Formularen. Genau dieses Vertrauen, das Anbieter als Komfortmerkmal bewerben, lässt sich als Angriffsfläche missbrauchen. Die Forschenden setzen hier an, um die Datenschutzrisiken bewusst gestalteter, bösartiger Chatbots experimentell zu untersuchen.",
+      "title_en": "Trust in chatbots as an exploitable vulnerability",
+      "description_en": "Conversational AI gains traction because users treat chatbots more confidentially and openly than classic web forms. This very trust, marketed by providers as a convenience feature, can be abused as an attack surface. The researchers build on this to experimentally examine the privacy risks of deliberately designed malicious chatbots.",
+      "sources": [
+        "https://kclpure.kcl.ac.uk/portal/en/publications/malicious-llm-based-conversational-ai-makes-users-reveal-personal/"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "phase": "event",
+      "title": "Randomisierte Studie belegt bis zu 12,5-fachen Datenabgriff",
+      "description": "Forschende von King's College London und der Universitat Politecnica de Valencia zeigen in einer randomisierten kontrollierten Studie mit 502 Teilnehmenden, dass mit bösartigen System-Prompts versehene Chatbots (auf Basis von Mistral und Zhipu) bis zu 12,5-mal mehr persönliche Informationen entlocken als gutartige. Die wirksamste Variante sammelte Daten von 93 Prozent der Teilnehmenden. Die Arbeit wird auf dem USENIX Security Symposium 2025 vorgestellt.",
+      "title_de": "Randomisierte Studie belegt bis zu 12,5-fachen Datenabgriff",
+      "description_de": "Forschende von King's College London und der Universitat Politecnica de Valencia zeigen in einer randomisierten kontrollierten Studie mit 502 Teilnehmenden, dass mit bösartigen System-Prompts versehene Chatbots (auf Basis von Mistral und Zhipu) bis zu 12,5-mal mehr persönliche Informationen entlocken als gutartige. Die wirksamste Variante sammelte Daten von 93 Prozent der Teilnehmenden. Die Arbeit wird auf dem USENIX Security Symposium 2025 vorgestellt.",
+      "title_en": "Randomised study proves up to 12.5x more data extraction",
+      "description_en": "Researchers at King's College London and the Universitat Politecnica de Valencia show in a randomised controlled trial with 502 participants that chatbots equipped with malicious system prompts (built on Mistral and Zhipu) coax up to 12.5 times more personal information from users than benign ones. The most effective variant collected data from 93 percent of participants. The work is presented at the USENIX Security Symposium 2025.",
+      "sources": [
+        "https://www.eurekalert.org/news-releases/1094414",
+        "https://arxiv.org/html/2506.11680v1"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "phase": "consequences",
+      "title": "Warnung vor regulatorischer und Aufklärungs-Lücke bei Konversations-KI",
+      "description": "Die Autor:innen warnen, dass nur wenige Nutzer:innen erkennen, wie viel sie einem Chatbot preisgeben, und dass die reziproke Gesprächsstrategie als ebenso vertrauenswürdig wahrgenommen wird wie ein gutartiger Bot. Sie fordern stärkere Transparenzpflichten, Aufklärung und Schutzmechanismen gegen manipulativ gestaltete Chatbots. Der Fall liefert Belege für Datenschutz- und Verbraucherschutz-Regulierung von Konversations-KI.",
+      "title_de": "Warnung vor regulatorischer und Aufklärungs-Lücke bei Konversations-KI",
+      "description_de": "Die Autor:innen warnen, dass nur wenige Nutzer:innen erkennen, wie viel sie einem Chatbot preisgeben, und dass die reziproke Gesprächsstrategie als ebenso vertrauenswürdig wahrgenommen wird wie ein gutartiger Bot. Sie fordern stärkere Transparenzpflichten, Aufklärung und Schutzmechanismen gegen manipulativ gestaltete Chatbots. Der Fall liefert Belege für Datenschutz- und Verbraucherschutz-Regulierung von Konversations-KI.",
+      "title_en": "Warning of a regulatory and awareness gap in conversational AI",
+      "description_en": "The authors warn that few users realise how much they disclose to a chatbot, and that the reciprocal conversational strategy is perceived as just as trustworthy as a benign bot. They call for stronger transparency requirements, awareness-raising and safeguards against manipulatively designed chatbots. The case provides evidence for data-protection and consumer-protection regulation of conversational AI.",
+      "sources": [
+        "https://www.eurekalert.org/news-releases/1094414"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://kclpure.kcl.ac.uk/portal/en/publications/malicious-llm-based-conversational-ai-makes-users-reveal-personal/",

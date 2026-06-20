@@ -26,9 +26,24 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -42,7 +57,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-05-20",
+      "phase": "infrastructure",
+      "title": "Microsoft kündigt Recall als KI-Vorzeigefunktion für Copilot+ PCs an",
+      "description": "Auf der Build-Konferenz am 20. Mai 2024 stellt Microsoft Recall vor: eine Funktion, die alle paar Sekunden Screenshots des Bildschirms erstellt und sie per Machine Learning durchsuchbar macht. Sicherheitsforscher zeigen sofort, dass frühe Versionen die Aufnahmen unverschlüsselt im Klartext ablegen. Die Architektur - kontinuierliches Mitschneiden des gesamten Bildschirms - ist die technische Vorbedingung für die spätere Erfassung sensibler Daten.",
+      "title_de": "Microsoft kündigt Recall als KI-Vorzeigefunktion für Copilot+ PCs an",
+      "description_de": "Auf der Build-Konferenz am 20. Mai 2024 stellt Microsoft Recall vor: eine Funktion, die alle paar Sekunden Screenshots des Bildschirms erstellt und sie per Machine Learning durchsuchbar macht. Sicherheitsforscher zeigen sofort, dass frühe Versionen die Aufnahmen unverschlüsselt im Klartext ablegen. Die Architektur - kontinuierliches Mitschneiden des gesamten Bildschirms - ist die technische Vorbedingung für die spätere Erfassung sensibler Daten.",
+      "title_en": "Microsoft announces Recall as the flagship AI feature for Copilot+ PCs",
+      "description_en": "At the Build conference on 20 May 2024, Microsoft unveils Recall: a feature that takes screenshots of the screen every few seconds and makes them searchable via machine learning. Security researchers immediately show that early versions store the snapshots unencrypted in plain text. The architecture - continuous capture of the entire screen - is the technical precondition for the later capture of sensitive data.",
+      "sources": [
+        "https://thehackernews.com/2024/11/microsoft-delays-windows-copilot-recall.html"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "doctrine",
+      "title": "Nach massivem Protest verspricht Microsoft Filter für sensible Daten",
+      "description": "Wegen heftiger Kritik von Sicherheitsforschern und Öffentlichkeit verschiebt Microsoft den Recall-Start mehrfach und kündigt Schutzmaßnahmen an: Opt-in, Windows-Hello-Verschlüsselung und einen Filter, der sensible Informationen wie Kreditkartennummern automatisch von der Aufzeichnung ausschließen soll. Microsoft entscheidet sich, Recall trotz der grundsätzlichen Bedenken auszuliefern und verlässt sich dabei auf diesen Filter als zentrale Datenschutz-Zusage.",
+      "title_de": "Nach massivem Protest verspricht Microsoft Filter für sensible Daten",
+      "description_de": "Wegen heftiger Kritik von Sicherheitsforschern und Öffentlichkeit verschiebt Microsoft den Recall-Start mehrfach und kündigt Schutzmaßnahmen an: Opt-in, Windows-Hello-Verschlüsselung und einen Filter, der sensible Informationen wie Kreditkartennummern automatisch von der Aufzeichnung ausschließen soll. Microsoft entscheidet sich, Recall trotz der grundsätzlichen Bedenken auszuliefern und verlässt sich dabei auf diesen Filter als zentrale Datenschutz-Zusage.",
+      "title_en": "After massive backlash Microsoft promises a sensitive-data filter",
+      "description_en": "Following fierce criticism from security researchers and the public, Microsoft postpones the Recall launch several times and announces safeguards: opt-in, Windows Hello encryption and a filter meant to automatically exclude sensitive information such as credit card numbers from capture. Microsoft decides to ship Recall despite the fundamental concerns, relying on this filter as its central privacy assurance.",
+      "sources": [
+        "https://www.windowscentral.com/software-apps/windows-11/microsoft-postpones-windows-recall-after-major-backlash-will-launch-copilot-pcs-without-headlining-ai-feature"
+      ]
+    },
+    {
+      "date": "2024-11",
+      "phase": "event",
+      "title": "Recall erfasst Kreditkartennummern und Passwörter trotz aktivem Filter",
+      "description": "Beim erneuten Rollout zeigen Sicherheitsforscher und Tester, dass Recalls Filter für sensible Informationen versagt: Die KI-Funktion erfasst weiterhin Kreditkartennummern, Passwörter und Sozialversicherungsnummern. Der Filter wird umgangen, sobald Formulare ohne typische Kontextwörter wie 'checkout' oder 'payment' geladen werden oder Zugangsdaten in unbeschrifteten Klartextdateien stehen. Die zentrale Datenschutz-Zusage hält dem Praxistest nicht stand.",
+      "title_de": "Recall erfasst Kreditkartennummern und Passwörter trotz aktivem Filter",
+      "description_de": "Beim erneuten Rollout zeigen Sicherheitsforscher und Tester, dass Recalls Filter für sensible Informationen versagt: Die KI-Funktion erfasst weiterhin Kreditkartennummern, Passwörter und Sozialversicherungsnummern. Der Filter wird umgangen, sobald Formulare ohne typische Kontextwörter wie 'checkout' oder 'payment' geladen werden oder Zugangsdaten in unbeschrifteten Klartextdateien stehen. Die zentrale Datenschutz-Zusage hält dem Praxistest nicht stand.",
+      "title_en": "Recall captures credit card numbers and passwords despite active filter",
+      "description_en": "During the renewed rollout, security researchers and testers show that Recall's sensitive-information filter fails: the AI feature continues to capture credit card numbers, passwords and Social Security numbers. The filter is bypassed whenever forms load without typical context words such as 'checkout' or 'payment', or when credentials appear in unlabelled plain text files. The central privacy assurance does not survive real-world testing.",
+      "sources": [
+        "https://www.tomshardware.com/software/windows/microsoft-recall-screenshots-credit-cards-and-social-security-numbers-even-with-the-sensitive-information-filter-enabled"
+      ]
+    },
+    {
+      "date": "2025-08-01",
+      "phase": "consequences",
+      "title": "Anhaltende Kritik bei fortgesetztem Rollout",
+      "description": "The Register dokumentiert im August 2025, dass Recall auch nach weiteren Updates weiterhin Kreditkartendaten, Passwörter und persönliche Informationen erfassen kann. Datenschützer und Sicherheitsforscher warnen anhaltend vor der Funktion, während Microsoft das Feature schrittweise breiter ausrollt. Der Fall wird zum Sinnbild für die Spannung zwischen KI-Komfortfunktionen und Datenschutz auf dem persönlichen Endgerät.",
+      "title_de": "Anhaltende Kritik bei fortgesetztem Rollout",
+      "description_de": "The Register dokumentiert im August 2025, dass Recall auch nach weiteren Updates weiterhin Kreditkartendaten, Passwörter und persönliche Informationen erfassen kann. Datenschützer und Sicherheitsforscher warnen anhaltend vor der Funktion, während Microsoft das Feature schrittweise breiter ausrollt. Der Fall wird zum Sinnbild für die Spannung zwischen KI-Komfortfunktionen und Datenschutz auf dem persönlichen Endgerät.",
+      "title_en": "Persistent criticism amid continued rollout",
+      "description_en": "In August 2025 The Register documents that Recall can still capture credit card data, passwords and personal information even after further updates. Privacy advocates and security researchers keep warning about the feature while Microsoft gradually rolls it out more widely. The case becomes emblematic of the tension between AI convenience features and privacy on personal devices.",
+      "sources": [
+        "https://www.theregister.com/2025/08/01/microsoft_recall_captures_credit_card_info/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2025/08/01/microsoft_recall_captures_credit_card_info/",

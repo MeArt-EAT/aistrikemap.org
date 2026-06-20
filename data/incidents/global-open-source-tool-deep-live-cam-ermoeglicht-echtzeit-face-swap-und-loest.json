@@ -26,9 +26,27 @@
     "deepfakes",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Verbraucherschutz",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Verbraucherschutz",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Protection from manipulation",
+    "Human dignity",
+    "Consumer protection",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "hacksider (GitHub maintainer)",
@@ -47,7 +65,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Ein-Bild-Face-Swap wird mit \"roop\" und InsightFace zugänglich",
+      "description": "Die technische Grundlage entstand 2023, als der Entwickler s0md3v das Open-Source-Projekt \"roop\" veröffentlichte, das Gesichter in Videos mit nur einem einzigen Quellbild tauscht. Es nutzte das von der Firma InsightFace stammende KI-Modell \"inswapper\", das aus 2D-Bildern dreidimensionale Gesichtsstrukturen ableitet. GitHub sperrte Forks wegen Verstößen gegen die Nutzungsbedingungen.",
+      "title_de": "Ein-Bild-Face-Swap wird mit \"roop\" und InsightFace zugänglich",
+      "description_de": "Die technische Grundlage entstand 2023, als der Entwickler s0md3v das Open-Source-Projekt \"roop\" veröffentlichte, das Gesichter in Videos mit nur einem einzigen Quellbild tauscht. Es nutzte das von der Firma InsightFace stammende KI-Modell \"inswapper\", das aus 2D-Bildern dreidimensionale Gesichtsstrukturen ableitet. GitHub sperrte Forks wegen Verstößen gegen die Nutzungsbedingungen.",
+      "title_en": "Single-image face swapping becomes accessible via \"roop\" and InsightFace",
+      "description_en": "The technical foundation emerged in 2023 when developer s0md3v released the open-source project \"roop\", which swaps faces in videos from a single source image. It used the \"inswapper\" AI model from the company InsightFace, which infers three-dimensional facial structures from 2D images. GitHub disabled forks over terms-of-service violations.",
+      "sources": [
+        "https://www.biometricupdate.com/202408/free-face-swap-tool-goes-to-number-one-on-github"
+      ]
+    },
+    {
+      "date": "2024-02",
+      "phase": "doctrine",
+      "title": "Hongkong-Deepfake-Betrug zeigt das Schadenspotenzial in Echtzeit",
+      "description": "Im Februar 2024 überwies ein Finanzmitarbeiter der Ingenieurfirma Arup in Hongkong nach einer gefälschten Videokonferenz rund 25,6 Millionen US-Dollar an Betrüger - alle vermeintlichen Kollegen im Call waren Deepfakes. Der Fall wurde zum meistzitierten Beleg dafür, dass Echtzeit-Gesichtstausch praktisch nutzbar ist, und prägte die Risikobewertung frei verfügbarer Face-Swap-Werkzeuge.",
+      "title_de": "Hongkong-Deepfake-Betrug zeigt das Schadenspotenzial in Echtzeit",
+      "description_de": "Im Februar 2024 überwies ein Finanzmitarbeiter der Ingenieurfirma Arup in Hongkong nach einer gefälschten Videokonferenz rund 25,6 Millionen US-Dollar an Betrüger - alle vermeintlichen Kollegen im Call waren Deepfakes. Der Fall wurde zum meistzitierten Beleg dafür, dass Echtzeit-Gesichtstausch praktisch nutzbar ist, und prägte die Risikobewertung frei verfügbarer Face-Swap-Werkzeuge.",
+      "title_en": "Hong Kong deepfake fraud shows the real-time harm potential",
+      "description_en": "In February 2024 a finance worker at engineering firm Arup in Hong Kong transferred around USD 25.6 million to fraudsters after a faked video conference - all the apparent colleagues on the call were deepfakes. The case became the most-cited proof that real-time face swapping is practically usable and shaped the risk assessment of freely available face-swap tools.",
+      "sources": [
+        "https://www.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "event",
+      "title": "Deep-Live-Cam wird zur Nummer 1 auf GitHub",
+      "description": "Im August 2024 erlangte das Open-Source-Tool Deep-Live-Cam, ein Fork von \"roop\" auf Basis von inswapper, große Aufmerksamkeit, weil es Echtzeit-Face-Swaps in Videocalls und Live-Streams aus einem einzigen Quellbild ermöglicht. Das Repository erhielt binnen 24 Stunden über 1.600 GitHub-Sterne und stieg kurzzeitig an die Spitze der Trending-Liste. Vorhandene Safeguards ließen sich durch Forks umgehen.",
+      "title_de": "Deep-Live-Cam wird zur Nummer 1 auf GitHub",
+      "description_de": "Im August 2024 erlangte das Open-Source-Tool Deep-Live-Cam, ein Fork von \"roop\" auf Basis von inswapper, große Aufmerksamkeit, weil es Echtzeit-Face-Swaps in Videocalls und Live-Streams aus einem einzigen Quellbild ermöglicht. Das Repository erhielt binnen 24 Stunden über 1.600 GitHub-Sterne und stieg kurzzeitig an die Spitze der Trending-Liste. Vorhandene Safeguards ließen sich durch Forks umgehen.",
+      "title_en": "Deep-Live-Cam becomes number one on GitHub",
+      "description_en": "In August 2024 the open-source tool Deep-Live-Cam, a fork of \"roop\" built on inswapper, drew major attention because it enables real-time face swaps in video calls and live streams from a single source image. The repository gathered more than 1,600 GitHub stars within 24 hours and briefly topped the trending list. Built-in safeguards could be removed via forks.",
+      "sources": [
+        "https://techstartups.com/2024/08/16/deep-live-cam-a-real-time-face-swap-tool-that-lets-anyone-impersonate-you-in-livestream-or-fake-video-calls/"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "consequences",
+      "title": "Sicherheitsforscher warnen vor sinkender Betrugshürde",
+      "description": "Sicherheitsforscher:innen warnten, das Tool senke die Hürde für Identitätsdiebstahl, Live-Betrug und \"CEO-Fraud\" drastisch, da nun ein einzelnes Foto und ein Standard-Laptop genügen. Die Debatte verschärfte Forderungen nach Liveness-Erkennung in Videocalls, Wasserzeichen-Pflichten und strengeren Regeln für Deepfake-Werkzeuge. Betroffen sind potenziell alle Personen, deren Gesichtsbild öffentlich verfügbar ist.",
+      "title_de": "Sicherheitsforscher warnen vor sinkender Betrugshürde",
+      "description_de": "Sicherheitsforscher:innen warnten, das Tool senke die Hürde für Identitätsdiebstahl, Live-Betrug und \"CEO-Fraud\" drastisch, da nun ein einzelnes Foto und ein Standard-Laptop genügen. Die Debatte verschärfte Forderungen nach Liveness-Erkennung in Videocalls, Wasserzeichen-Pflichten und strengeren Regeln für Deepfake-Werkzeuge. Betroffen sind potenziell alle Personen, deren Gesichtsbild öffentlich verfügbar ist.",
+      "title_en": "Security researchers warn of a lowered fraud barrier",
+      "description_en": "Security researchers warned that the tool dramatically lowers the barrier to identity theft, live fraud and \"CEO fraud\", since a single photo and a standard laptop now suffice. The debate intensified calls for liveness detection in video calls, watermarking requirements and stricter rules for deepfake tools. Potentially affected are all people whose facial image is publicly available.",
+      "sources": [
+        "https://www.biometricupdate.com/202408/free-face-swap-tool-goes-to-number-one-on-github"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techstartups.com/2024/08/16/deep-live-cam-a-real-time-face-swap-tool-that-lets-anyone-impersonate-you-in-livestream-or-fake-video-calls/",

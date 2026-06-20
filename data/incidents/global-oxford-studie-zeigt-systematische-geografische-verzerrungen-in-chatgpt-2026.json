@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal treatment",
+    "Human dignity",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -48,7 +63,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Training großer Sprachmodelle auf web-skaligen, geografisch ungleichen Textkorpora",
+      "description": "Moderne Sprachmodelle wie GPT-3 und die GPT-4-Generation werden auf riesigen Web-Korpora (Common Crawl, Wikipedia, Bücher) trainiert, in denen wohlhabende westliche Regionen massiv überrepräsentiert sind und der globale Süden unterrepräsentiert bleibt. Diese Datenökologie bestimmt, welche Orte das Modell als 'normal', sichtbar und positiv konnotiert ablegt. Die Verzerrung ist damit bereits in der Trainingsbasis angelegt, lange bevor ein Nutzer eine Frage stellt.",
+      "title_de": "Training großer Sprachmodelle auf web-skaligen, geografisch ungleichen Textkorpora",
+      "description_de": "Moderne Sprachmodelle wie GPT-3 und die GPT-4-Generation werden auf riesigen Web-Korpora (Common Crawl, Wikipedia, Bücher) trainiert, in denen wohlhabende westliche Regionen massiv überrepräsentiert sind und der globale Süden unterrepräsentiert bleibt. Diese Datenökologie bestimmt, welche Orte das Modell als 'normal', sichtbar und positiv konnotiert ablegt. Die Verzerrung ist damit bereits in der Trainingsbasis angelegt, lange bevor ein Nutzer eine Frage stellt.",
+      "title_en": "Training of large language models on web-scale, geographically unequal text corpora",
+      "description_en": "Modern language models such as GPT-3 and the GPT-4 generation are trained on vast web corpora (Common Crawl, Wikipedia, books) in which wealthy Western regions are heavily over-represented while the Global South remains under-represented. This data ecology shapes which places the model encodes as 'normal', visible and positively connoted. The bias is thus baked into the training base long before any user asks a question.",
+      "sources": [
+        "https://ora.ox.ac.uk/objects/uuid:80678e44-97a5-4d57-8ed2-400c304389d1"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "phase": "doctrine",
+      "title": "Massendeployment von ChatGPT als universeller Wissens- und Ratgeber-Assistent",
+      "description": "Mit dem öffentlichen Start von ChatGPT im November 2022 wurde ein Sprachmodell als alltäglicher Auskunfts- und Bewertungsdienst für hunderte Millionen Menschen positioniert. Das Geschäftsmodell setzt darauf, dass das System auf nahezu jede normative Frage eine flüssige, autoritativ klingende Antwort gibt - auch auf Fragen wie 'Wo sind Menschen schöner oder klüger?'. Damit werden modellinterne Verzerrungen als scheinbar neutrale Auskünfte in den Alltag getragen.",
+      "title_de": "Massendeployment von ChatGPT als universeller Wissens- und Ratgeber-Assistent",
+      "description_de": "Mit dem öffentlichen Start von ChatGPT im November 2022 wurde ein Sprachmodell als alltäglicher Auskunfts- und Bewertungsdienst für hunderte Millionen Menschen positioniert. Das Geschäftsmodell setzt darauf, dass das System auf nahezu jede normative Frage eine flüssige, autoritativ klingende Antwort gibt - auch auf Fragen wie 'Wo sind Menschen schöner oder klüger?'. Damit werden modellinterne Verzerrungen als scheinbar neutrale Auskünfte in den Alltag getragen.",
+      "title_en": "Mass deployment of ChatGPT as a universal knowledge and advice assistant",
+      "description_en": "With the public launch of ChatGPT in November 2022, a language model was positioned as an everyday information and evaluation service for hundreds of millions of people. The business model relies on the system giving a fluent, authoritative-sounding answer to almost any normative question - including 'Where are people more beautiful or smarter?'. This carries internal model biases into daily life as seemingly neutral information.",
+      "sources": [
+        "https://www.oii.ox.ac.uk/news-events/new-study-finds-that-chatgpt-amplifies-global-inequalities/"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "phase": "event",
+      "title": "Oxford-Studie 'The Silicon Gaze' belegt systematische geografische Verzerrung",
+      "description": "Forscher des Oxford Internet Institute und der University of Kentucky veröffentlichten in Platforms and Society eine Analyse von über 20 Millionen ChatGPT-Anfragen. Bei normativen Fragen bevorzugt ChatGPT systematisch wohlhabende westliche Regionen (USA, Westeuropa, Teile Ostasiens), während Afrika, der Nahe Osten sowie Teile Asiens und Lateinamerikas regelmäßig unten landen. Die Autoren identifizieren fünf Bias-Mechanismen (Verfügbarkeit, Muster, Mittelung, Tropus, Proxy) und prägen den Begriff 'silicon gaze'.",
+      "title_de": "Oxford-Studie 'The Silicon Gaze' belegt systematische geografische Verzerrung",
+      "description_de": "Forscher des Oxford Internet Institute und der University of Kentucky veröffentlichten in Platforms and Society eine Analyse von über 20 Millionen ChatGPT-Anfragen. Bei normativen Fragen bevorzugt ChatGPT systematisch wohlhabende westliche Regionen (USA, Westeuropa, Teile Ostasiens), während Afrika, der Nahe Osten sowie Teile Asiens und Lateinamerikas regelmäßig unten landen. Die Autoren identifizieren fünf Bias-Mechanismen (Verfügbarkeit, Muster, Mittelung, Tropus, Proxy) und prägen den Begriff 'silicon gaze'.",
+      "title_en": "Oxford study 'The Silicon Gaze' documents systematic geographic bias",
+      "description_en": "Researchers at the Oxford Internet Institute and the University of Kentucky published an analysis of over 20 million ChatGPT queries in Platforms and Society. On normative questions ChatGPT systematically favours wealthy Western regions (US, Western Europe, parts of East Asia), while Africa, the Middle East and parts of Asia and Latin America consistently rank at the bottom. The authors identify five bias mechanisms (availability, pattern, averaging, trope, proxy) and coin the term 'silicon gaze'.",
+      "sources": [
+        "https://www.ox.ac.uk/news/2026-01-20-new-study-finds-chatgpt-amplifies-global-inequalities",
+        "https://phys.org/news/2026-01-chatgpt-amplifies-global-inequalities.html"
+      ]
+    },
+    {
+      "date": "2026-02",
+      "phase": "consequences",
+      "title": "Debatte: Bias als strukturelles Merkmal generativer KI, nicht als korrigierbarer Fehler",
+      "description": "Die Studie wurde international rezipiert und befeuerte die Debatte, dass solche Verzerrungen kein behebbarer Einzelfehler, sondern ein intrinsisches Merkmal generativer KI sind, das in historisch ungleichen Datenökologien und Designentscheidungen wurzelt. Kritiker warnen, dass die wachsende Nutzung von Chatbots als Auskunftsquelle bestehende globale Ungleichheiten reproduziert und die Sichtbarkeit ganzer Weltregionen weiter verringert. Forderungen nach Transparenz über Trainingsdaten und unabhängigen Bias-Audits wurden lauter.",
+      "title_de": "Debatte: Bias als strukturelles Merkmal generativer KI, nicht als korrigierbarer Fehler",
+      "description_de": "Die Studie wurde international rezipiert und befeuerte die Debatte, dass solche Verzerrungen kein behebbarer Einzelfehler, sondern ein intrinsisches Merkmal generativer KI sind, das in historisch ungleichen Datenökologien und Designentscheidungen wurzelt. Kritiker warnen, dass die wachsende Nutzung von Chatbots als Auskunftsquelle bestehende globale Ungleichheiten reproduziert und die Sichtbarkeit ganzer Weltregionen weiter verringert. Forderungen nach Transparenz über Trainingsdaten und unabhängigen Bias-Audits wurden lauter.",
+      "title_en": "Debate: bias as a structural feature of generative AI, not a correctable error",
+      "description_en": "The study was widely covered internationally and fuelled the debate that such biases are not a correctable one-off error but an intrinsic feature of generative AI, rooted in historically unequal data ecologies and design choices. Critics warn that the growing use of chatbots as a source of information reproduces existing global inequalities and further reduces the visibility of entire world regions. Calls for transparency about training data and independent bias audits grew louder.",
+      "sources": [
+        "https://cherwell.org/2026/02/10/oxford-study-finds-that-chatgpt-reproduces-global-inequalities/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.ox.ac.uk/news/2026-01-20-new-study-finds-chatgpt-amplifies-global-inequalities",

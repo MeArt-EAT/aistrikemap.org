@@ -8,9 +8,9 @@
   "name": "Ostsee/Schwarzes Meer: Gefälschte AIS-Positionen von NATO-Kriegsschiffen",
   "name_de": "Ostsee/Schwarzes Meer: Gefälschte AIS-Positionen von NATO-Kriegsschiffen",
   "name_en": "Baltic/Black Sea: Spoofed AIS positions of NATO warships",
-  "description": "Eine im Juli 2021 veröffentlichte Analyse von SkyTruth und Global Fishing Watch zeigte, dass die AIS-Positionen von mehr als 100 Kriegsschiffen aus mindestens 14 Nationen seit August 2020 gefälscht (gespooft) wurden. Die falschen Tracks ließen unter anderem NATO-Schiffe scheinbar in russische Hoheitsgewässer nahe Kaliningrad und auf der Krim eindringen, obwohl Satellitenbilder ihre Abwesenheit belegten. Russland wurde verdächtigt; die Manipulationen bargen das Risiko von Fehlinformation und Eskalation auf See.",
-  "description_de": "Eine im Juli 2021 veröffentlichte Analyse von SkyTruth und Global Fishing Watch zeigte, dass die AIS-Positionen von mehr als 100 Kriegsschiffen aus mindestens 14 Nationen seit August 2020 gefälscht (gespooft) wurden. Die falschen Tracks ließen unter anderem NATO-Schiffe scheinbar in russische Hoheitsgewässer nahe Kaliningrad und auf der Krim eindringen, obwohl Satellitenbilder ihre Abwesenheit belegten. Russland wurde verdächtigt; die Manipulationen bargen das Risiko von Fehlinformation und Eskalation auf See.",
-  "description_en": "An analysis published in July 2021 by SkyTruth and Global Fishing Watch showed that the AIS positions of more than 100 warships from at least 14 nations had been faked (spoofed) since August 2020. The false tracks made NATO ships appear to enter Russian territorial waters near Kaliningrad and off Crimea, even though satellite imagery confirmed their absence. Russia was suspected; the manipulation carried a risk of misinformation and escalation at sea.",
+  "description": "Eine im Juli 2021 veröffentlichte Analyse von SkyTruth und Global Fishing Watch zeigte, dass die AIS-Positionen von rund 100 Kriegsschiffen aus mindestens 11 NATO- und verbündeten Nationen seit August 2020 gefälscht (gespooft) wurden. Die falschen Tracks ließen unter anderem NATO-Schiffe scheinbar in russische Hoheitsgewässer nahe Kaliningrad, Murmansk und auf der Krim eindringen, obwohl Satellitenbilder ihre Abwesenheit belegten. Russland wurde verdächtigt; die Manipulationen bargen das Risiko von Fehlinformation und Eskalation auf See.",
+  "description_de": "Eine im Juli 2021 veröffentlichte Analyse von SkyTruth und Global Fishing Watch zeigte, dass die AIS-Positionen von rund 100 Kriegsschiffen aus mindestens 11 NATO- und verbündeten Nationen seit August 2020 gefälscht (gespooft) wurden. Die falschen Tracks ließen unter anderem NATO-Schiffe scheinbar in russische Hoheitsgewässer nahe Kaliningrad, Murmansk und auf der Krim eindringen, obwohl Satellitenbilder ihre Abwesenheit belegten. Russland wurde verdächtigt; die Manipulationen bargen das Risiko von Fehlinformation und Eskalation auf See.",
+  "description_en": "An analysis published in July 2021 by SkyTruth and Global Fishing Watch showed that the AIS positions of around 100 warships from at least 11 NATO and allied nations had been faked (spoofed) since August 2020. The false tracks made NATO ships appear to enter Russian territorial waters near Kaliningrad, Murmansk and off Crimea, even though satellite imagery confirmed their absence. Russia was suspected; the manipulation carried a risk of misinformation and escalation at sea.",
   "startDate": "2021-07",
   "location": {
     "@type": "Place",
@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf Leben",
+    "Bewegungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf Leben",
+    "Bewegungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to life",
+    "Freedom of movement"
+  ],
   "asm:actors": [
     {
       "name": "Unknown AIS spoofing operator (Russia suspected)",
@@ -48,7 +60,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2002",
+      "phase": "infrastructure",
+      "title": "AIS wird zum offenen, unverschlüsselten Schiffsortungs-Standard",
+      "description": "Das Automatic Identification System (AIS) wurde ab 2002 international für die Schiffsverkehrssicherheit verpflichtend eingeführt. Es überträgt Position, Kurs und Identität per UKW-Funk - jedoch ohne Authentifizierung oder Verschlüsselung. Öffentliche Tracking-Plattformen aggregieren diese Daten weltweit, was AIS technisch leicht fälschbar (spoofbar) macht und zur Voraussetzung für gezielte Manipulation wird.",
+      "title_de": "AIS wird zum offenen, unverschlüsselten Schiffsortungs-Standard",
+      "description_de": "Das Automatic Identification System (AIS) wurde ab 2002 international für die Schiffsverkehrssicherheit verpflichtend eingeführt. Es überträgt Position, Kurs und Identität per UKW-Funk - jedoch ohne Authentifizierung oder Verschlüsselung. Öffentliche Tracking-Plattformen aggregieren diese Daten weltweit, was AIS technisch leicht fälschbar (spoofbar) macht und zur Voraussetzung für gezielte Manipulation wird.",
+      "title_en": "AIS becomes an open, unencrypted ship-tracking standard",
+      "description_en": "The Automatic Identification System (AIS) was made internationally mandatory for maritime traffic safety from 2002. It transmits position, course and identity by VHF radio - but without authentication or encryption. Public tracking platforms aggregate this data worldwide, making AIS technically easy to spoof and a precondition for targeted manipulation.",
+      "sources": [
+        "https://globalfishingwatch.org/data/analysis-reveals-false-vessel-tracks/"
+      ]
+    },
+    {
+      "date": "2021-06-18",
+      "phase": "doctrine",
+      "title": "Information als Mittel der Eskalation: der HMS-Defender-Vorfall",
+      "description": "Bereits am 18./19. Juni 2021 zeigten gefälschte AIS-Daten den britischen Zerstörer HMS Defender scheinbar von Odessa nach Sewastopol auf der von Russland besetzten Krim fahren, während das Schiff tatsächlich woanders lag. Solche Manipulationen dienten erkennbar dazu, Misstrauen und Verwirrung über öffentliche Tracking-Daten zu säen und maritime Spannungen zu schüren - ein Muster gezielter Informationsmanipulation an Konfliktgrenzen.",
+      "title_de": "Information als Mittel der Eskalation: der HMS-Defender-Vorfall",
+      "description_de": "Bereits am 18./19. Juni 2021 zeigten gefälschte AIS-Daten den britischen Zerstörer HMS Defender scheinbar von Odessa nach Sewastopol auf der von Russland besetzten Krim fahren, während das Schiff tatsächlich woanders lag. Solche Manipulationen dienten erkennbar dazu, Misstrauen und Verwirrung über öffentliche Tracking-Daten zu säen und maritime Spannungen zu schüren - ein Muster gezielter Informationsmanipulation an Konfliktgrenzen.",
+      "title_en": "Information as a means of escalation: the HMS Defender incident",
+      "description_en": "As early as 18-19 June 2021 spoofed AIS data showed the British destroyer HMS Defender apparently sailing from Odessa to Sevastopol in Russian-occupied Crimea while the ship was actually elsewhere. Such manipulations clearly served to sow distrust and confusion over public tracking data and to inflame maritime tensions - a pattern of targeted information manipulation at conflict borders.",
+      "sources": [
+        "https://www.euronews.com/next/2021/06/28/hms-defender-ais-spoofing-is-opening-up-a-new-front-in-the-war-on-reality"
+      ]
+    },
+    {
+      "date": "2021-07-29",
+      "phase": "event",
+      "title": "SkyTruth/GFW-Analyse deckt über 100 gefälschte Schiffstracks auf",
+      "description": "Eine im Juli 2021 veröffentlichte Analyse von SkyTruth und Global Fishing Watch zeigte, dass die AIS-Positionen von rund 100 Kriegsschiffen aus mindestens 11 NATO- und verbündeten Nationen seit August 2020 gefälscht wurden. Die falschen Tracks ließen NATO-Schiffe scheinbar in russische Hoheitsgewässer nahe Kaliningrad, Murmansk und vor der Krim eindringen, obwohl Satellitenbilder ihre Abwesenheit belegten. Russland wurde verdächtigt.",
+      "title_de": "SkyTruth/GFW-Analyse deckt über 100 gefälschte Schiffstracks auf",
+      "description_de": "Eine im Juli 2021 veröffentlichte Analyse von SkyTruth und Global Fishing Watch zeigte, dass die AIS-Positionen von rund 100 Kriegsschiffen aus mindestens 11 NATO- und verbündeten Nationen seit August 2020 gefälscht wurden. Die falschen Tracks ließen NATO-Schiffe scheinbar in russische Hoheitsgewässer nahe Kaliningrad, Murmansk und vor der Krim eindringen, obwohl Satellitenbilder ihre Abwesenheit belegten. Russland wurde verdächtigt.",
+      "title_en": "SkyTruth/GFW analysis uncovers over 100 falsified ship tracks",
+      "description_en": "An analysis published in July 2021 by SkyTruth and Global Fishing Watch showed that the AIS positions of around 100 warships from at least 11 NATO and allied nations had been faked since August 2020. The false tracks made NATO ships appear to enter Russian territorial waters near Kaliningrad, Murmansk and off Crimea, even though satellite imagery confirmed their absence. Russia was suspected.",
+      "sources": [
+        "https://skytruth.org/2021/07/systematic-data-analysis-reveals-false-vessel-tracks/"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "consequences",
+      "title": "Debatte über Eskalationsrisiko und Vertrauen in maritime Daten",
+      "description": "Die Aufdeckung löste Warnungen aus, dass gefälschte Positionen das Risiko von Fehlinformation, Fehlentscheidungen und militärischer Eskalation auf See bergen. Beobachter werteten die Vorfälle als Test der Fähigkeit, realistische Falschpositionen zu erzeugen, und als Angriff auf das Vertrauen in öffentliche AIS-Daten. Die Debatte verstärkte Forderungen nach Authentifizierung und Manipulationserkennung im maritimen Verkehr.",
+      "title_de": "Debatte über Eskalationsrisiko und Vertrauen in maritime Daten",
+      "description_de": "Die Aufdeckung löste Warnungen aus, dass gefälschte Positionen das Risiko von Fehlinformation, Fehlentscheidungen und militärischer Eskalation auf See bergen. Beobachter werteten die Vorfälle als Test der Fähigkeit, realistische Falschpositionen zu erzeugen, und als Angriff auf das Vertrauen in öffentliche AIS-Daten. Die Debatte verstärkte Forderungen nach Authentifizierung und Manipulationserkennung im maritimen Verkehr.",
+      "title_en": "Debate over escalation risk and trust in maritime data",
+      "description_en": "The disclosure triggered warnings that falsified positions carry a risk of misinformation, misjudgement and military escalation at sea. Observers read the incidents as a test of the ability to produce realistic false positions and as an attack on trust in public AIS data. The debate intensified calls for authentication and manipulation detection in maritime traffic.",
+      "sources": [
+        "https://www.wunc.org/2021-08-07/more-than-100-falsified-ship-locations-cause-confusion-at-sea"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://skytruth.org/2021/07/systematic-data-analysis-reveals-false-vessel-tracks/",

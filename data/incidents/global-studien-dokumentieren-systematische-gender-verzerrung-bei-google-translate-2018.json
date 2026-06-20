@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal treatment",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -41,7 +53,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-11",
+      "phase": "infrastructure",
+      "title": "Google führt neuronale maschinelle Übersetzung (GNMT) ein",
+      "description": "Google stellt sein Google Neural Machine Translation System (GNMT) vor, das die Übersetzungsfehler in mehreren großen Sprachpaaren deutlich senkt. Das System lernt seine Übersetzungen aus riesigen Textkorpora und übernimmt dabei auch die in diesen Daten enthaltenen geschlechtsbezogenen Stereotype. Diese datengetriebene Architektur ist die technische Grundlage der später dokumentierten Gender-Verzerrung.",
+      "title_de": "Google führt neuronale maschinelle Übersetzung (GNMT) ein",
+      "description_de": "Google stellt sein Google Neural Machine Translation System (GNMT) vor, das die Übersetzungsfehler in mehreren großen Sprachpaaren deutlich senkt. Das System lernt seine Übersetzungen aus riesigen Textkorpora und übernimmt dabei auch die in diesen Daten enthaltenen geschlechtsbezogenen Stereotype. Diese datengetriebene Architektur ist die technische Grundlage der später dokumentierten Gender-Verzerrung.",
+      "title_en": "Google introduces neural machine translation (GNMT)",
+      "description_en": "Google unveils its Google Neural Machine Translation system (GNMT), which markedly reduces translation errors across several major language pairs. The system learns its translations from huge text corpora and in doing so absorbs the gender stereotypes contained in that data. This data-driven architecture is the technical basis of the gender bias documented later.",
+      "sources": [
+        "https://link.springer.com/article/10.1007/s00521-019-04144-6"
+      ]
+    },
+    {
+      "date": "2017",
+      "phase": "doctrine",
+      "title": "Geschlechtsneutrale Pronomen werden auf eine Standardform reduziert",
+      "description": "Bei der Übersetzung aus Sprachen mit geschlechtsneutralen Pronomen (z.B. Türkisch, Ungarisch, Chinesisch) ins Englische muss das System ein Geschlecht wählen. Statt mehrdeutige Ausgaben oder beide Formen anzubieten, gibt Google Translate genau eine - stereotyp gewählte - Variante aus. Diese Designentscheidung macht aus statistischer Häufung eine sichtbare, systematische Verzerrung.",
+      "title_de": "Geschlechtsneutrale Pronomen werden auf eine Standardform reduziert",
+      "description_de": "Bei der Übersetzung aus Sprachen mit geschlechtsneutralen Pronomen (z.B. Türkisch, Ungarisch, Chinesisch) ins Englische muss das System ein Geschlecht wählen. Statt mehrdeutige Ausgaben oder beide Formen anzubieten, gibt Google Translate genau eine - stereotyp gewählte - Variante aus. Diese Designentscheidung macht aus statistischer Häufung eine sichtbare, systematische Verzerrung.",
+      "title_en": "Gender-neutral pronouns collapsed into a single default form",
+      "description_en": "When translating from languages with gender-neutral pronouns (e.g. Turkish, Hungarian, Chinese) into English, the system must pick a gender. Instead of offering ambiguous output or both forms, Google Translate returns exactly one - stereotypically chosen - variant. This design decision turns a statistical tendency into a visible, systematic bias.",
+      "sources": [
+        "https://www.fairslator.com/google-translate-versus-gender-bias"
+      ]
+    },
+    {
+      "date": "2018-09-06",
+      "phase": "event",
+      "title": "Prates-et-al.-Studie belegt systematische Gender-Verzerrung empirisch",
+      "description": "Bereits 2017 kursierten Beispiele, in denen Google Translate 'er' für 'Arzt' oder 'Ingenieur' und 'sie' für 'Krankenschwester' oder 'Sekretärin' wählte. Eine peer-reviewte Studie von Prates, Avelar und Lamb (arXiv, September 2018, später in Neural Computing and Applications) bestätigt das Muster empirisch über 12 Sprachen. Verglichen mit Berufsdaten des US Bureau of Labor Statistics zeigt sich eine deutliche Übergewichtung männlicher Standardformen, besonders bei MINT-Berufen.",
+      "title_de": "Prates-et-al.-Studie belegt systematische Gender-Verzerrung empirisch",
+      "description_de": "Bereits 2017 kursierten Beispiele, in denen Google Translate 'er' für 'Arzt' oder 'Ingenieur' und 'sie' für 'Krankenschwester' oder 'Sekretärin' wählte. Eine peer-reviewte Studie von Prates, Avelar und Lamb (arXiv, September 2018, später in Neural Computing and Applications) bestätigt das Muster empirisch über 12 Sprachen. Verglichen mit Berufsdaten des US Bureau of Labor Statistics zeigt sich eine deutliche Übergewichtung männlicher Standardformen, besonders bei MINT-Berufen.",
+      "title_en": "Prates et al. study empirically confirms systematic gender bias",
+      "description_en": "Examples had circulated since 2017 in which Google Translate chose 'he' for 'doctor' or 'engineer' and 'she' for 'nurse' or 'secretary'. A peer-reviewed study by Prates, Avelar and Lamb (arXiv, September 2018, later in Neural Computing and Applications) confirms the pattern empirically across 12 languages. Compared against US Bureau of Labor Statistics occupational data, it shows a strong over-representation of male default forms, especially for STEM jobs.",
+      "sources": [
+        "https://arxiv.org/pdf/1809.02208",
+        "https://link.springer.com/article/10.1007/s00521-019-04144-6"
+      ]
+    },
+    {
+      "date": "2018-12-06",
+      "phase": "consequences",
+      "title": "Google führt geschlechtsspezifische Übersetzungen ein",
+      "description": "Als Reaktion auf die Kritik kündigt Google geschlechtsspezifische Übersetzungen an: Für eindeutig geschlechtsbezogene Begriffe werden nun sowohl die männliche als auch die weibliche Form angezeigt, statt nur einer Standardvariante. Die Funktion startet zunächst für ausgewählte Sprachpaare (u.a. Türkisch-Englisch und Englisch in romanische Sprachen) im Web. Google erklärt zudem, auch nicht-binäre Formen prüfen zu wollen.",
+      "title_de": "Google führt geschlechtsspezifische Übersetzungen ein",
+      "description_de": "Als Reaktion auf die Kritik kündigt Google geschlechtsspezifische Übersetzungen an: Für eindeutig geschlechtsbezogene Begriffe werden nun sowohl die männliche als auch die weibliche Form angezeigt, statt nur einer Standardvariante. Die Funktion startet zunächst für ausgewählte Sprachpaare (u.a. Türkisch-Englisch und Englisch in romanische Sprachen) im Web. Google erklärt zudem, auch nicht-binäre Formen prüfen zu wollen.",
+      "title_en": "Google introduces gender-specific translations",
+      "description_en": "In response to the criticism, Google announces gender-specific translations: for clearly gendered terms it now shows both the masculine and feminine form instead of a single default. The feature launches first for selected language pairs (including Turkish-English and English into Romance languages) on the web. Google also says it is exploring how to handle non-binary forms.",
+      "sources": [
+        "https://research.google/blog/providing-gender-specific-translations-in-google-translate/",
+        "https://www.fairslator.com/google-translate-versus-gender-bias"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/pdf/1809.02208",

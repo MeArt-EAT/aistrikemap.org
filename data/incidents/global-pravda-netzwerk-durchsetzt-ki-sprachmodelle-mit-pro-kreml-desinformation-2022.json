@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation",
+    "Pressefreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation",
+    "Pressefreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Protection from manipulation",
+    "Freedom of the press",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Pravda network (linked to Russia)",
@@ -53,7 +68,64 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-02",
+      "phase": "infrastructure",
+      "title": "Aufbau des 'Portal Kombat'-Webseiten-Netzwerks",
+      "description": "Ab Anfang 2022 baut ein Geflecht aus pro-russischen Webseiten (später als 'Portal Kombat' bzw. 'Pravda'-Netzwerk identifiziert) eine technische Infrastruktur aus automatisiert befüllten Nachrichtenportalen auf. Betrieben unter anderem von der auf der Krim ansässigen Firma TigerWeb, aggregiert das Netzwerk Inhalte russischer Staatsmedien und Telegram-Kanäle und streut sie über zahlreiche Domains und Sprachen. Diese Masse maschinell publizierter Texte bildet die Datenbasis, die später von Web-Crawlern und LLM-Trainingspipelines erfasst wird.",
+      "title_de": "Aufbau des 'Portal Kombat'-Webseiten-Netzwerks",
+      "description_de": "Ab Anfang 2022 baut ein Geflecht aus pro-russischen Webseiten (später als 'Portal Kombat' bzw. 'Pravda'-Netzwerk identifiziert) eine technische Infrastruktur aus automatisiert befüllten Nachrichtenportalen auf. Betrieben unter anderem von der auf der Krim ansässigen Firma TigerWeb, aggregiert das Netzwerk Inhalte russischer Staatsmedien und Telegram-Kanäle und streut sie über zahlreiche Domains und Sprachen. Diese Masse maschinell publizierter Texte bildet die Datenbasis, die später von Web-Crawlern und LLM-Trainingspipelines erfasst wird.",
+      "title_en": "Build-out of the 'Portal Kombat' website network",
+      "description_en": "From early 2022, a web of pro-Russian websites (later identified as the 'Portal Kombat' or 'Pravda' network) builds out a technical infrastructure of automatically populated news portals. Operated in part by the Crimea-based firm TigerWeb, the network aggregates content from Russian state media and Telegram channels and disseminates it across numerous domains and languages. This mass of machine-published text forms the data base later harvested by web crawlers and LLM training pipelines.",
+      "sources": [
+        "https://www.sgdsn.gouv.fr/files/files/20240212_NP_SGDSN_VIGINUM_PORTAL-KOMBAT-NETWORK_ENG_VF.pdf",
+        "https://en.wikipedia.org/wiki/Pravda_network"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Strategie des 'LLM-Grooming' und massive Ausweitung",
+      "description": "2024 weitet das Netzwerk seine Produktion auf Millionen Artikel aus und verfolgt die Strategie, KI-Sprachmodelle gezielt zu vergiften statt nur menschliche Leser zu erreichen. Forscher praegen dafür den Begriff 'LLM-Grooming': Durch schiere Mengen identischer Falschbehauptungen soll die Wahrscheinlichkeit steigen, dass Chatbots diese als vermeintliche Faktenlage übernehmen. Die französische Behörde VIGINUM hatte das Netzwerk im Februar 2024 öffentlich gemacht, ohne dass es eingestellt wurde.",
+      "title_de": "Strategie des 'LLM-Grooming' und massive Ausweitung",
+      "description_de": "2024 weitet das Netzwerk seine Produktion auf Millionen Artikel aus und verfolgt die Strategie, KI-Sprachmodelle gezielt zu vergiften statt nur menschliche Leser zu erreichen. Forscher praegen dafür den Begriff 'LLM-Grooming': Durch schiere Mengen identischer Falschbehauptungen soll die Wahrscheinlichkeit steigen, dass Chatbots diese als vermeintliche Faktenlage übernehmen. Die französische Behörde VIGINUM hatte das Netzwerk im Februar 2024 öffentlich gemacht, ohne dass es eingestellt wurde.",
+      "title_en": "The 'LLM grooming' strategy and massive expansion",
+      "description_en": "In 2024 the network scales output to millions of articles and pursues a strategy of deliberately poisoning AI language models rather than merely reaching human readers. Researchers coin the term 'LLM grooming': sheer volumes of identical falsehoods are meant to raise the odds that chatbots adopt them as apparent fact. France's VIGINUM agency had exposed the network in February 2024, yet it was not shut down.",
+      "sources": [
+        "https://checkfirst.network/pravda-network-worldwide-expansion-and-llm-wikipedia-pollution/",
+        "https://edmo.eu/publications/russian-disinformation-network-pravda-grew-bigger-in-the-eu-even-after-its-uncovering/"
+      ]
+    },
+    {
+      "date": "2025-03",
+      "phase": "event",
+      "title": "NewsGuard belegt Vergiftung führender KI-Chatbots",
+      "description": "Am 6. März 2025 veröffentlicht die Beobachtungsstelle NewsGuard einen Bericht, wonach das Pravda-Netzwerk westliche KI-Werkzeuge weltweit mit russischer Propaganda infiziert hat. In einem Test mit zehn führenden Chatbots (darunter ChatGPT, Gemini, Copilot, Meta AI, Grok und Perplexity) gaben diese die pro-Kreml-Falschbehauptungen in über 33 Prozent der Fälle wieder, teils unter Verweis auf Pravda-Domains als Quelle.",
+      "title_de": "NewsGuard belegt Vergiftung führender KI-Chatbots",
+      "description_de": "Am 6. März 2025 veröffentlicht die Beobachtungsstelle NewsGuard einen Bericht, wonach das Pravda-Netzwerk westliche KI-Werkzeuge weltweit mit russischer Propaganda infiziert hat. In einem Test mit zehn führenden Chatbots (darunter ChatGPT, Gemini, Copilot, Meta AI, Grok und Perplexity) gaben diese die pro-Kreml-Falschbehauptungen in über 33 Prozent der Fälle wieder, teils unter Verweis auf Pravda-Domains als Quelle.",
+      "title_en": "NewsGuard documents poisoning of leading AI chatbots",
+      "description_en": "On 6 March 2025 the watchdog NewsGuard publishes a report finding that the Pravda network has infected Western AI tools worldwide with Russian propaganda. In a test of ten leading chatbots (including ChatGPT, Gemini, Copilot, Meta AI, Grok and Perplexity), they repeated the pro-Kremlin falsehoods more than 33 percent of the time, at times citing Pravda domains as sources.",
+      "sources": [
+        "https://www.newsguardtech.com/special-reports/moscow-based-global-news-network-infected-western-artificial-intelligence-russian-propaganda/",
+        "https://www.axios.com/2025/03/06/exclusive-russian-disinfo-floods-ai-chatbots-study-finds"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Debatte um Daten-Hygiene und unabhängige Bestaetigungen",
+      "description": "Der Bericht löst eine breite Debatte über die Verwundbarkeit von KI-Trainingsdaten und Suchindizes gegenüber gezielter Vergiftung aus. Weitere Organisationen wie EDMO, CheckFirst und das BISI bestätigen Ausweitung und Wirkung des Netzwerks und dokumentieren, dass es selbst nach der Aufdeckung weiterwuchs. KI-Anbieter geraten unter Druck, ihre Quellenfilterung und Faktenprüfung gegen koordinierte Staats-Desinformation zu haerten.",
+      "title_de": "Debatte um Daten-Hygiene und unabhängige Bestaetigungen",
+      "description_de": "Der Bericht löst eine breite Debatte über die Verwundbarkeit von KI-Trainingsdaten und Suchindizes gegenüber gezielter Vergiftung aus. Weitere Organisationen wie EDMO, CheckFirst und das BISI bestätigen Ausweitung und Wirkung des Netzwerks und dokumentieren, dass es selbst nach der Aufdeckung weiterwuchs. KI-Anbieter geraten unter Druck, ihre Quellenfilterung und Faktenprüfung gegen koordinierte Staats-Desinformation zu haerten.",
+      "title_en": "Debate over data hygiene and independent confirmations",
+      "description_en": "The report sparks a broad debate over the vulnerability of AI training data and search indexes to deliberate poisoning. Further organisations such as EDMO, CheckFirst and BISI confirm the network's expansion and impact and document that it kept growing even after exposure. AI providers come under pressure to harden their source filtering and fact-checking against coordinated state disinformation.",
+      "sources": [
+        "https://bisi.org.uk/reports/russias-pravda-network-ai-driven-disinformation-on-a-global-scale",
+        "https://edmo.eu/publications/russian-disinformation-network-pravda-grew-bigger-in-the-eu-even-after-its-uncovering/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.newsguardtech.com/special-reports/moscow-based-global-news-network-infected-western-artificial-intelligence-russian-propaganda/",

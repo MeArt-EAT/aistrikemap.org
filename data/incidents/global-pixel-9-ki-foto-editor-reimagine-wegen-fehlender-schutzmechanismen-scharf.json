@@ -26,9 +26,24 @@
     "deepfakes",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Kinderrechte"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Kinderrechte"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Human dignity",
+    "Privacy",
+    "Children's rights"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -43,7 +58,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-08-13",
+      "phase": "infrastructure",
+      "title": "Google integriert Text-zu-Bild-Generierung (Imagen) in den Pixel-9-Magic-Editor",
+      "description": "Mit dem Marktstart der Pixel-9-Reihe am 13. August 2024 führte Google die Magic-Editor-Funktion 'Reimagine' ein, die Text-zu-Bild-Generierung auf Basis der Imagen-Technologie direkt in die Foto-App eines Massenmarkt-Smartphones bringt. Nutzer geben per Textprompt vor, was im Foto ergänzt oder verändert werden soll, und das Modell rendert die Elemente fotorealistisch in das bestehende Bild. Diese leistungsfähige generative Infrastruktur ab Werk ist die technische Voraussetzung für die spätere Missbrauchskritik.",
+      "title_de": "Google integriert Text-zu-Bild-Generierung (Imagen) in den Pixel-9-Magic-Editor",
+      "description_de": "Mit dem Marktstart der Pixel-9-Reihe am 13. August 2024 führte Google die Magic-Editor-Funktion 'Reimagine' ein, die Text-zu-Bild-Generierung auf Basis der Imagen-Technologie direkt in die Foto-App eines Massenmarkt-Smartphones bringt. Nutzer geben per Textprompt vor, was im Foto ergänzt oder verändert werden soll, und das Modell rendert die Elemente fotorealistisch in das bestehende Bild. Diese leistungsfähige generative Infrastruktur ab Werk ist die technische Voraussetzung für die spätere Missbrauchskritik.",
+      "title_en": "Google integrates text-to-image generation (Imagen) into the Pixel 9 Magic Editor",
+      "description_en": "With the launch of the Pixel 9 series on 13 August 2024, Google introduced the Magic Editor feature 'Reimagine', bringing Imagen-based text-to-image generation directly into the photo app of a mainstream smartphone. Users describe via text prompt what should be added or changed in the photo, and the model renders the elements photorealistically into the existing image. This powerful generative infrastructure shipped by default is the technical precondition for the later abuse criticism.",
+      "sources": [
+        "https://techcrunch.com/2024/08/13/google-adds-new-ai-powered-features-for-photo-editing-and-image-generation"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "doctrine",
+      "title": "Auslieferung mit schwachen Schutzfiltern und nur entfernbarem KI-Metadaten-Tag",
+      "description": "Google lieferte Reimagine standardmäßig auf dem Pixel 9 aus und verließ sich auf inhaltsbasierte Schutzfilter sowie ein KI-Metadaten-Tag zur Kennzeichnung generierter Bilder. Die Designentscheidung, ein mächtiges Inpainting-Werkzeug ohne robuste, manipulationssichere Kennzeichnung breit zu verteilen, schuf die Voraussetzung für glaubwürdige Falschbilder. Das Metadaten-Tag ließ sich zudem trivial entfernen, etwa durch einen Screenshot oder erneutes Speichern.",
+      "title_de": "Auslieferung mit schwachen Schutzfiltern und nur entfernbarem KI-Metadaten-Tag",
+      "description_de": "Google lieferte Reimagine standardmäßig auf dem Pixel 9 aus und verließ sich auf inhaltsbasierte Schutzfilter sowie ein KI-Metadaten-Tag zur Kennzeichnung generierter Bilder. Die Designentscheidung, ein mächtiges Inpainting-Werkzeug ohne robuste, manipulationssichere Kennzeichnung breit zu verteilen, schuf die Voraussetzung für glaubwürdige Falschbilder. Das Metadaten-Tag ließ sich zudem trivial entfernen, etwa durch einen Screenshot oder erneutes Speichern.",
+      "title_en": "Shipped with weak safety filters and only a removable AI metadata tag",
+      "description_en": "Google shipped Reimagine by default on the Pixel 9 and relied on content-based safety filters plus an AI metadata tag to mark generated images. The design decision to widely distribute a powerful inpainting tool without robust, tamper-proof labelling created the conditions for convincing fake images. The metadata tag could also be trivially removed, e.g. by a screenshot or re-saving.",
+      "sources": [
+        "https://www.siliconrepublic.com/machines/pixel-9-reimagine-ai-magic-editor-images"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "event",
+      "title": "Medien dokumentieren täuschend echte, verstörende Falschbilder via Reimagine",
+      "description": "The Verge und andere Medien zeigten, dass Reimagine täuschend realistische, beunruhigende Bilder erzeugt - darunter fingierte Bomben in Klassenzimmern und vermeintlich austretende Giftstoffe an Schulen. Weil die generierten Elemente in echte Fotos eingefügt werden, wirken die Ergebnisse besonders glaubwürdig. Die Berichterstattung warnte vor dem Missbrauchspotenzial für Desinformation, Rufmord und gefälschte Beweismittel.",
+      "title_de": "Medien dokumentieren täuschend echte, verstörende Falschbilder via Reimagine",
+      "description_de": "The Verge und andere Medien zeigten, dass Reimagine täuschend realistische, beunruhigende Bilder erzeugt - darunter fingierte Bomben in Klassenzimmern und vermeintlich austretende Giftstoffe an Schulen. Weil die generierten Elemente in echte Fotos eingefügt werden, wirken die Ergebnisse besonders glaubwürdig. Die Berichterstattung warnte vor dem Missbrauchspotenzial für Desinformation, Rufmord und gefälschte Beweismittel.",
+      "title_en": "Media document convincingly real, disturbing fake images via Reimagine",
+      "description_en": "The Verge and other outlets showed that Reimagine produces convincingly realistic, disturbing images - including fake bombs in classrooms and apparent toxic spills at schools. Because the generated elements are inserted into real photos, the results look especially credible. Coverage warned of the abuse potential for disinformation, defamation and fabricated evidence.",
+      "sources": [
+        "https://www.bgr.com/tech/pixel-9-ai-image-generation-is-a-huge-problem-that-google-needs-to-fix/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Cornell-Red-Team belegt systematisches Versagen der Schutzfilter",
+      "description": "Cornell-Red-Team-Forscher zeigten in einer Analyse, dass die Schutzfilter besonders dann versagen, wenn der schädliche Charakter erst aus dem Zusammenspiel von Prompt und zugrunde liegendem Bild entsteht - ein Fall, den einfache Stichwort-Filter nicht abdecken. Sie kamen zum Schluss, dass Reimagine weiterhin anfällig für Missbrauch bleibe. Der öffentliche und fachliche Druck verstärkte die Forderung nach robusten, nicht entfernbaren Herkunftsnachweisen.",
+      "title_de": "Cornell-Red-Team belegt systematisches Versagen der Schutzfilter",
+      "description_de": "Cornell-Red-Team-Forscher zeigten in einer Analyse, dass die Schutzfilter besonders dann versagen, wenn der schädliche Charakter erst aus dem Zusammenspiel von Prompt und zugrunde liegendem Bild entsteht - ein Fall, den einfache Stichwort-Filter nicht abdecken. Sie kamen zum Schluss, dass Reimagine weiterhin anfällig für Missbrauch bleibe. Der öffentliche und fachliche Druck verstärkte die Forderung nach robusten, nicht entfernbaren Herkunftsnachweisen.",
+      "title_en": "Cornell red team documents systematic failure of the safety filters",
+      "description_en": "Cornell red-team researchers showed in an analysis that the safety filters fail especially when the harmful character only arises from the interplay of prompt and underlying image - a case simple keyword filters do not cover. They concluded that Reimagine remained ripe for abuse. Public and expert pressure reinforced calls for robust, non-removable provenance signals.",
+      "sources": [
+        "https://www.androidpolice.com/google-reimagine-ai-photo-editor-jailbreak-misinformation/"
+      ]
+    },
+    {
+      "date": "2026-05",
+      "phase": "consequences",
+      "title": "Google rollt SynthID-Wasserzeichen und C2PA-Content-Credentials breit aus",
+      "description": "Als Reaktion auf die anhaltende Provenienz-Debatte weitete Google die Nutzung des unsichtbaren SynthID-Wasserzeichens und der C2PA-Content-Credentials über sein Ökosystem aus - inklusive Kennzeichnung KI-generierter Bilder und Verifikation in Suche und Chrome. Das doppelte Verfahren (im Pixel verankertes Wasserzeichen plus signierte Metadaten) soll robuster gegen Entfernung sein als das ursprüngliche, leicht entfernbare Tag. Kritiker verweisen darauf, dass weiterhin Werkzeuge zum Entfernen solcher Wasserzeichen kursieren.",
+      "title_de": "Google rollt SynthID-Wasserzeichen und C2PA-Content-Credentials breit aus",
+      "description_de": "Als Reaktion auf die anhaltende Provenienz-Debatte weitete Google die Nutzung des unsichtbaren SynthID-Wasserzeichens und der C2PA-Content-Credentials über sein Ökosystem aus - inklusive Kennzeichnung KI-generierter Bilder und Verifikation in Suche und Chrome. Das doppelte Verfahren (im Pixel verankertes Wasserzeichen plus signierte Metadaten) soll robuster gegen Entfernung sein als das ursprüngliche, leicht entfernbare Tag. Kritiker verweisen darauf, dass weiterhin Werkzeuge zum Entfernen solcher Wasserzeichen kursieren.",
+      "title_en": "Google rolls out SynthID watermarking and C2PA content credentials broadly",
+      "description_en": "Responding to the ongoing provenance debate, Google expanded use of the invisible SynthID watermark and C2PA content credentials across its ecosystem - including labelling AI-generated images and verification in Search and Chrome. The dual approach (a watermark embedded in the Pixel plus signed metadata) is meant to be more robust against removal than the original, easily removable tag. Critics note that tools for stripping such watermarks still circulate.",
+      "sources": [
+        "https://www.infoq.com/news/2026/05/google-synthid-content-detection/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.androidpolice.com/google-reimagine-ai-photo-editor-jailbreak-misinformation/",

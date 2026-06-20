@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -49,7 +64,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-08-01",
+      "phase": "doctrine",
+      "title": "OWASP stuft Prompt-Injection als Top-Risiko für LLM-Anwendungen ein",
+      "description": "Das OWASP-Projekt veröffentlicht im August 2023 die erste Top-10-Liste für LLM-Anwendungen und führt Prompt-Injection - einschließlich indirekter Injection über externe Inhalte wie E-Mails und Dokumente - als Risiko Nummer eins. Die Forschung von Greshake u.a. hatte bereits gezeigt, dass produktive LLM-Anwendungen über versteckte Anweisungen kompromittierbar sind. Microsoft brachte Copilot dennoch mit weitreichendem Datenzugriff auf den Markt.",
+      "title_de": "OWASP stuft Prompt-Injection als Top-Risiko für LLM-Anwendungen ein",
+      "description_de": "Das OWASP-Projekt veröffentlicht im August 2023 die erste Top-10-Liste für LLM-Anwendungen und führt Prompt-Injection - einschließlich indirekter Injection über externe Inhalte wie E-Mails und Dokumente - als Risiko Nummer eins. Die Forschung von Greshake u.a. hatte bereits gezeigt, dass produktive LLM-Anwendungen über versteckte Anweisungen kompromittierbar sind. Microsoft brachte Copilot dennoch mit weitreichendem Datenzugriff auf den Markt.",
+      "title_en": "OWASP ranks prompt injection as the top risk for LLM applications",
+      "description_en": "In August 2023 the OWASP project publishes the first Top 10 list for LLM applications, naming prompt injection - including indirect injection via external content such as emails and documents - the number one risk. Research by Greshake et al. had already shown that production LLM applications can be compromised via hidden instructions. Microsoft nonetheless shipped Copilot with sweeping data access.",
+      "sources": [
+        "https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-slides-v1_0.pdf"
+      ]
+    },
+    {
+      "date": "2023-11-01",
+      "phase": "infrastructure",
+      "title": "Microsoft 365 Copilot wird allgemein verfügbar und indexiert Unternehmensdaten",
+      "description": "Microsoft macht Microsoft 365 Copilot am 1. November 2023 für Geschäftskunden allgemein verfügbar. Der Assistent greift über den Microsoft Graph auf E-Mails, Dokumente und Kalender zu und indexiert Postfächer automatisch, um Anfragen zu beantworten. Genau diese tiefe, automatische Einbindung externer Inhalte schafft die Angriffsfläche für indirekte Prompt-Injection.",
+      "title_de": "Microsoft 365 Copilot wird allgemein verfügbar und indexiert Unternehmensdaten",
+      "description_de": "Microsoft macht Microsoft 365 Copilot am 1. November 2023 für Geschäftskunden allgemein verfügbar. Der Assistent greift über den Microsoft Graph auf E-Mails, Dokumente und Kalender zu und indexiert Postfächer automatisch, um Anfragen zu beantworten. Genau diese tiefe, automatische Einbindung externer Inhalte schafft die Angriffsfläche für indirekte Prompt-Injection.",
+      "title_en": "Microsoft 365 Copilot becomes generally available and indexes enterprise data",
+      "description_en": "Microsoft makes Microsoft 365 Copilot generally available to business customers on 1 November 2023. The assistant accesses emails, documents and calendars via Microsoft Graph and automatically indexes mailboxes to answer queries. It is precisely this deep, automatic ingestion of external content that creates the attack surface for indirect prompt injection.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/blog/2023/09/21/announcing-microsoft-365-copilot-general-availability-and-microsoft-365-chat/"
+      ]
+    },
+    {
+      "date": "2024-08-08",
+      "phase": "event",
+      "title": "Zenity-CTO verwandelt Copilot auf der Black Hat in eine Phishing-Maschine",
+      "description": "Auf der Black Hat USA 2024 demonstriert Michael Bargury, CTO von Zenity, wie sich Microsoft Copilot durch indirekte Prompt-Injection in versteckten E-Mail-Inhalten kapern lässt. Weil Copilot Postfächer automatisch indexiert, müssen Opfer die manipulierte Mail nicht einmal öffnen. Bargury zeigt automatisiertes Spear-Phishing, Datenexfiltration ohne Log-Spuren und das Umleiten interner Nutzer:innen auf Phishing-Seiten und vergleicht die Angriffe mit 'Remote Code Execution in der Welt von Copilot'.",
+      "title_de": "Zenity-CTO verwandelt Copilot auf der Black Hat in eine Phishing-Maschine",
+      "description_de": "Auf der Black Hat USA 2024 demonstriert Michael Bargury, CTO von Zenity, wie sich Microsoft Copilot durch indirekte Prompt-Injection in versteckten E-Mail-Inhalten kapern lässt. Weil Copilot Postfächer automatisch indexiert, müssen Opfer die manipulierte Mail nicht einmal öffnen. Bargury zeigt automatisiertes Spear-Phishing, Datenexfiltration ohne Log-Spuren und das Umleiten interner Nutzer:innen auf Phishing-Seiten und vergleicht die Angriffe mit 'Remote Code Execution in der Welt von Copilot'.",
+      "title_en": "Zenity CTO turns Copilot into a phishing machine at Black Hat",
+      "description_en": "At Black Hat USA 2024, Michael Bargury, CTO of Zenity, demonstrates how Microsoft Copilot can be hijacked via indirect prompt injection embedded in hidden email content. Because Copilot automatically indexes mailboxes, victims need not even open the malicious email. Bargury shows automated spear-phishing, data exfiltration without log traces and redirection of internal users to phishing pages, likening the attacks to 'remote code execution in the world of Copilot'.",
+      "sources": [
+        "https://www.darkreading.com/application-security/how-to-weaponize-microsoft-copilot-for-cyberattackers"
+      ]
+    },
+    {
+      "date": "2024-08-13",
+      "phase": "consequences",
+      "title": "Breite Medienberichte und Druck auf KI-Assistenten-Sicherheit",
+      "description": "Fortune, Dark Reading und The Register berichten ausführlich über die Demonstration und beschreiben Copilot als potenzielle 'automatisierte Phishing-Maschine'. Der Fall verstärkt den Druck auf Microsoft und die Branche, indirekte Prompt-Injection ernst zu nehmen, und befeuert die Debatte über die Risiken tiefer KI-Integration in Unternehmensdaten. Prompt-Injection bleibt in den Folgejahren ungelöstes Top-Risiko der OWASP-Liste.",
+      "title_de": "Breite Medienberichte und Druck auf KI-Assistenten-Sicherheit",
+      "description_de": "Fortune, Dark Reading und The Register berichten ausführlich über die Demonstration und beschreiben Copilot als potenzielle 'automatisierte Phishing-Maschine'. Der Fall verstärkt den Druck auf Microsoft und die Branche, indirekte Prompt-Injection ernst zu nehmen, und befeuert die Debatte über die Risiken tiefer KI-Integration in Unternehmensdaten. Prompt-Injection bleibt in den Folgejahren ungelöstes Top-Risiko der OWASP-Liste.",
+      "title_en": "Wide media coverage and pressure on AI assistant security",
+      "description_en": "Fortune, Dark Reading and The Register report extensively on the demonstration, describing Copilot as a potential 'automated phishing machine'. The case heightens pressure on Microsoft and the industry to take indirect prompt injection seriously and fuels the debate about the risks of deep AI integration into enterprise data. Prompt injection remains the unresolved top risk on the OWASP list in subsequent years.",
+      "sources": [
+        "https://fortune.com/2024/08/13/microsoft-ai-copilot-hacking-prompt-injectoin-attack-black-hat/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://fortune.com/2024/08/13/microsoft-ai-copilot-hacking-prompt-injectoin-attack-black-hat/",

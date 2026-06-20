@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "körperliche Unversehrtheit",
+    "Schutz vor Manipulation",
+    "Recht auf Gesundheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "körperliche Unversehrtheit",
+    "Schutz vor Manipulation",
+    "Recht auf Gesundheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Protection from manipulation",
+    "Right to health"
+  ],
   "asm:actors": [
     {
       "name": "HiddenLayer (researchers)",
@@ -46,7 +61,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Sicherheitsausrichtung der LLMs basiert auf Instruction-Tuning und RLHF",
+      "description": "Führende Sprachmodelle werden mit Instruction-Tuning und bestärkendem Lernen aus menschlichem Feedback (RLHF) so trainiert, dass sie Anweisungen folgen und schädliche Inhalte ablehnen. Die Schutzwirkung beruht jedoch nicht auf hartem Code, sondern auf erlernten Mustern, die kontextabhängig überschrieben werden können. Diese statistische, nicht garantierte Sicherheitsarchitektur ist die gemeinsame technische Schwachstelle nahezu aller großen Anbieter.",
+      "title_de": "Sicherheitsausrichtung der LLMs basiert auf Instruction-Tuning und RLHF",
+      "description_de": "Führende Sprachmodelle werden mit Instruction-Tuning und bestärkendem Lernen aus menschlichem Feedback (RLHF) so trainiert, dass sie Anweisungen folgen und schädliche Inhalte ablehnen. Die Schutzwirkung beruht jedoch nicht auf hartem Code, sondern auf erlernten Mustern, die kontextabhängig überschrieben werden können. Diese statistische, nicht garantierte Sicherheitsarchitektur ist die gemeinsame technische Schwachstelle nahezu aller großen Anbieter.",
+      "title_en": "LLM safety alignment relies on instruction tuning and RLHF",
+      "description_en": "Leading language models are trained with instruction tuning and reinforcement learning from human feedback (RLHF) to follow instructions and refuse harmful content. The protective effect, however, rests not on hard code but on learned patterns that can be overridden depending on context. This statistical, non-guaranteed safety architecture is the common technical weakness of almost all major vendors.",
+      "sources": [
+        "https://hiddenlayer.com/innovation-hub/novel-universal-bypass-for-all-major-llms"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Breite öffentliche Bereitstellung von Chatbots mit Guardrails als Sicherheitsversprechen",
+      "description": "OpenAI, Google, Microsoft, Anthropic, Meta und weitere Anbieter stellten ihre Chatbots breit öffentlich bereit und versprachen, dass eingebaute Sicherheitsleitplanken (Guardrails) gefährliche Auskünfte - etwa zu Waffen, Sprengstoffen oder Drogen - zuverlässig verhindern. Dieses Sicherheitsversprechen war zentrale Voraussetzung für Massenakzeptanz und Integration in Produkte. Es schuf zugleich die Erwartung, dass die Filter belastbar seien - eine Annahme, die der spätere Jailbreak widerlegte.",
+      "title_de": "Breite öffentliche Bereitstellung von Chatbots mit Guardrails als Sicherheitsversprechen",
+      "description_de": "OpenAI, Google, Microsoft, Anthropic, Meta und weitere Anbieter stellten ihre Chatbots breit öffentlich bereit und versprachen, dass eingebaute Sicherheitsleitplanken (Guardrails) gefährliche Auskünfte - etwa zu Waffen, Sprengstoffen oder Drogen - zuverlässig verhindern. Dieses Sicherheitsversprechen war zentrale Voraussetzung für Massenakzeptanz und Integration in Produkte. Es schuf zugleich die Erwartung, dass die Filter belastbar seien - eine Annahme, die der spätere Jailbreak widerlegte.",
+      "title_en": "Broad public deployment of chatbots with guardrails as a safety promise",
+      "description_en": "OpenAI, Google, Microsoft, Anthropic, Meta and others deployed their chatbots broadly to the public, promising that built-in guardrails would reliably prevent dangerous information - e.g. on weapons, explosives or drugs. This safety promise was a central precondition for mass adoption and integration into products. It also created the expectation that the filters were robust - an assumption the later jailbreak disproved.",
+      "sources": [
+        "https://www.hiddenlayer.com/insight/why-ai-systems-are-at-risk"
+      ]
+    },
+    {
+      "date": "2025-04",
+      "phase": "event",
+      "title": "HiddenLayer veröffentlicht universellen 'Policy Puppetry'-Jailbreak",
+      "description": "Das Sicherheitsunternehmen HiddenLayer stellte eine universelle Jailbreak-Technik namens 'Policy Puppetry Prompt Injection' vor. Sie kombiniert Policy-File-Formatierung (XML/JSON/INI), Leetspeak-Substitutionen und Rollenspiel, sodass das Modell schädliche Eingaben als interne Richtlinie interpretiert. Nahezu alle führenden LLMs (ChatGPT, Gemini, Copilot, Claude, Llama, DeepSeek, Qwen, Mistral) ließen sich so dazu bringen, gefährliche Inhalte zu erzeugen - etwa Schritte zur Urananreicherung, getarnt als Skript einer Medizin-Drama-Serie ('3nrich ur4n1um').",
+      "title_de": "HiddenLayer veröffentlicht universellen 'Policy Puppetry'-Jailbreak",
+      "description_de": "Das Sicherheitsunternehmen HiddenLayer stellte eine universelle Jailbreak-Technik namens 'Policy Puppetry Prompt Injection' vor. Sie kombiniert Policy-File-Formatierung (XML/JSON/INI), Leetspeak-Substitutionen und Rollenspiel, sodass das Modell schädliche Eingaben als interne Richtlinie interpretiert. Nahezu alle führenden LLMs (ChatGPT, Gemini, Copilot, Claude, Llama, DeepSeek, Qwen, Mistral) ließen sich so dazu bringen, gefährliche Inhalte zu erzeugen - etwa Schritte zur Urananreicherung, getarnt als Skript einer Medizin-Drama-Serie ('3nrich ur4n1um').",
+      "title_en": "HiddenLayer publishes universal 'Policy Puppetry' jailbreak",
+      "description_en": "The security firm HiddenLayer presented a universal jailbreak technique called 'Policy Puppetry Prompt Injection'. It combines policy-file formatting (XML/JSON/INI), leetspeak substitutions and role-play so the model interprets harmful input as internal policy. Almost all leading LLMs (ChatGPT, Gemini, Copilot, Claude, Llama, DeepSeek, Qwen, Mistral) could thus be made to produce dangerous content - e.g. uranium enrichment steps disguised as a medical-drama script ('3nrich ur4n1um').",
+      "sources": [
+        "https://hiddenlayer.com/innovation-hub/novel-universal-bypass-for-all-major-llms",
+        "https://cybernews.com/security/universal-ai-jailbreak-discovered/"
+      ]
+    },
+    {
+      "date": "2025-04",
+      "phase": "consequences",
+      "title": "Breite Medienberichterstattung und Debatte über systemische, schwer patchbare Schwäche",
+      "description": "Medien wie Futurism und NBC News berichteten breit über den Befund, dass sich die Sicherheitssysteme aller großen Anbieter mit einem einzigen, übertragbaren Prompt umgehen lassen. HiddenLayer und Kommentatoren betonten, die Lücke wurzele in der Art, wie Modelle auf Anweisungs- und Richtlinien-Daten trainiert werden, und sei daher nur schwer durch nachträgliche Filter zu schließen. Der Vorfall verschärfte die Forderung nach unabhängigen Sicherheits-Audits und externer Überwachung von KI-Systemen.",
+      "title_de": "Breite Medienberichterstattung und Debatte über systemische, schwer patchbare Schwäche",
+      "description_de": "Medien wie Futurism und NBC News berichteten breit über den Befund, dass sich die Sicherheitssysteme aller großen Anbieter mit einem einzigen, übertragbaren Prompt umgehen lassen. HiddenLayer und Kommentatoren betonten, die Lücke wurzele in der Art, wie Modelle auf Anweisungs- und Richtlinien-Daten trainiert werden, und sei daher nur schwer durch nachträgliche Filter zu schließen. Der Vorfall verschärfte die Forderung nach unabhängigen Sicherheits-Audits und externer Überwachung von KI-Systemen.",
+      "title_en": "Wide media coverage and debate over a systemic, hard-to-patch weakness",
+      "description_en": "Outlets such as Futurism and NBC News reported widely on the finding that the safety systems of all major vendors can be bypassed with a single, transferable prompt. HiddenLayer and commentators stressed that the flaw is rooted in how models are trained on instruction and policy data and is therefore hard to close with after-the-fact filters. The incident sharpened calls for independent safety audits and external oversight of AI systems.",
+      "sources": [
+        "https://futurism.com/easy-jailbreak-every-major-ai-chatgpt",
+        "https://www.nbcnews.com/tech/security/chatgpt-safety-systems-can-bypassed-weapons-instructions-rcna225788"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://cybernews.com/security/universal-ai-jailbreak-discovered/",
