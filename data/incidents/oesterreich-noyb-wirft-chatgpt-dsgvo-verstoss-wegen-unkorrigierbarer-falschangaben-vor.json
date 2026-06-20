@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Würde des Menschen",
+    "faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Würde des Menschen",
+    "faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Human dignity",
+    "Fair procedure"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -53,7 +68,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "OpenAI bringt ChatGPT auf Basis großer, aus dem Web gescrapter Sprachmodelle",
+      "description": "ChatGPT wurde am 30. November 2022 veröffentlicht und auf riesigen, aus dem offenen Web gescrapten Textkorpora trainiert, die personenbezogene Daten über benannte Personen enthalten. Die Modellarchitektur generiert Antworten probabilistisch und 'halluziniert' dabei Fakten - es gibt keine Datenbankzeile, die sich gezielt korrigieren oder löschen ließe.",
+      "title_de": "OpenAI bringt ChatGPT auf Basis großer, aus dem Web gescrapter Sprachmodelle",
+      "description_de": "ChatGPT wurde am 30. November 2022 veröffentlicht und auf riesigen, aus dem offenen Web gescrapten Textkorpora trainiert, die personenbezogene Daten über benannte Personen enthalten. Die Modellarchitektur generiert Antworten probabilistisch und 'halluziniert' dabei Fakten - es gibt keine Datenbankzeile, die sich gezielt korrigieren oder löschen ließe.",
+      "title_en": "OpenAI launches ChatGPT on large language models scraped from the web",
+      "description_en": "ChatGPT was released on 30 November 2022, trained on vast text corpora scraped from the open web containing personal data about named individuals. The model architecture generates answers probabilistically and 'hallucinates' facts in the process - there is no database row that could be specifically corrected or deleted.",
+      "sources": [
+        "https://techcrunch.com/2024/04/28/chatgpt-gdpr-complaint-noyb/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "OpenAI behandelt Auskunft und Berichtigung als technisch unloesbar",
+      "description": "OpenAI räumte öffentlich ein, falsche Ausgaben über Einzelpersonen nicht gezielt korrigieren zu können und nicht zu wissen, woher die Daten stammen oder welche Daten über eine Person gespeichert sind. Diese Geschäftshaltung - Genauigkeits- und Berichtigungspflichten der DSGVO als technisch unmöglich zu erklären - legitimierte den Umgang mit Betroffenenanfragen.",
+      "title_de": "OpenAI behandelt Auskunft und Berichtigung als technisch unloesbar",
+      "description_de": "OpenAI räumte öffentlich ein, falsche Ausgaben über Einzelpersonen nicht gezielt korrigieren zu können und nicht zu wissen, woher die Daten stammen oder welche Daten über eine Person gespeichert sind. Diese Geschäftshaltung - Genauigkeits- und Berichtigungspflichten der DSGVO als technisch unmöglich zu erklären - legitimierte den Umgang mit Betroffenenanfragen.",
+      "title_en": "OpenAI treats access and rectification as technically impossible",
+      "description_en": "OpenAI publicly admitted it cannot specifically correct false outputs about individuals and does not know where the data comes from or what data is stored about a person. This corporate stance - declaring the GDPR's accuracy and rectification duties technically impossible - shaped how data-subject requests were handled.",
+      "sources": [
+        "https://www.infosecurity-magazine.com/news/openai-chatgpt-breaking-gdpr-noyb/"
+      ]
+    },
+    {
+      "date": "2024-04-29",
+      "phase": "event",
+      "title": "noyb reicht DSGVO-Beschwerde bei der österreichischen Datenschutzbehörde ein",
+      "description": "Am 29. April 2024 reichte noyb bei der österreichischen Datenschutzbehörde eine Beschwerde gegen OpenAI ein. Eine öffentliche Person hatte festgestellt, dass ChatGPT ein falsches Geburtsdatum über sie ausgab; OpenAI lehnte Berichtigung und Löschung mit dem Hinweis ab, eine Korrektur sei technisch nicht möglich, und gab auch keine vollständige Auskunft. noyb sieht darin Verstöße gegen Art. 5 (Datenrichtigkeit), Art. 15 (Auskunft) und Art. 16 (Berichtigung) und fordert ein Bußgeld.",
+      "title_de": "noyb reicht DSGVO-Beschwerde bei der österreichischen Datenschutzbehörde ein",
+      "description_de": "Am 29. April 2024 reichte noyb bei der österreichischen Datenschutzbehörde eine Beschwerde gegen OpenAI ein. Eine öffentliche Person hatte festgestellt, dass ChatGPT ein falsches Geburtsdatum über sie ausgab; OpenAI lehnte Berichtigung und Löschung mit dem Hinweis ab, eine Korrektur sei technisch nicht möglich, und gab auch keine vollständige Auskunft. noyb sieht darin Verstöße gegen Art. 5 (Datenrichtigkeit), Art. 15 (Auskunft) und Art. 16 (Berichtigung) und fordert ein Bußgeld.",
+      "title_en": "noyb files a GDPR complaint with the Austrian DPA",
+      "description_en": "On 29 April 2024 noyb filed a complaint against OpenAI with the Austrian Data Protection Authority. A public figure had found ChatGPT produced an incorrect date of birth for them; OpenAI refused rectification and erasure, arguing correction was technically impossible, and provided no full access either. noyb argues this breaches Art. 5 (accuracy), Art. 15 (access) and Art. 16 (rectification) and seeks a fine.",
+      "sources": [
+        "https://noyb.eu/en/chatgpt-provides-false-information-about-people-and-openai-cant-correct-it"
+      ]
+    },
+    {
+      "date": "2024-05",
+      "phase": "consequences",
+      "title": "Teil einer Reihe von DSGVO-Verfahren gegen generative KI",
+      "description": "Die Beschwerde reihte sich in eine wachsende Zahl europäischer Datenschutzverfahren gegen ChatGPT ein (u.a. italienische Garante-Sanktion, spätere noyb-Beschwerde in Norwegen 2025 wegen erfundener Straftaten). Sie schaerfte die rechtliche Debatte, ob unkorrigierbare KI-Halluzinationen über reale Personen mit den Genauigkeits- und Betroffenenrechten der DSGVO überhaupt vereinbar sind.",
+      "title_de": "Teil einer Reihe von DSGVO-Verfahren gegen generative KI",
+      "description_de": "Die Beschwerde reihte sich in eine wachsende Zahl europäischer Datenschutzverfahren gegen ChatGPT ein (u.a. italienische Garante-Sanktion, spätere noyb-Beschwerde in Norwegen 2025 wegen erfundener Straftaten). Sie schaerfte die rechtliche Debatte, ob unkorrigierbare KI-Halluzinationen über reale Personen mit den Genauigkeits- und Betroffenenrechten der DSGVO überhaupt vereinbar sind.",
+      "title_en": "Part of a series of GDPR cases against generative AI",
+      "description_en": "The complaint joined a growing number of European data-protection cases against ChatGPT (including the Italian Garante sanction and a later 2025 noyb complaint in Norway over fabricated crimes). It sharpened the legal debate over whether uncorrectable AI hallucinations about real people can be reconciled with the GDPR's accuracy and data-subject rights at all.",
+      "sources": [
+        "https://www.business-humanrights.org/en/latest-news/norway-openai-faces-gdpr-complaint-over-chatgpts-defamatory-ai-hallucinations/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://noyb.eu/en/chatgpt-provides-false-information-about-people-and-openai-cant-correct-it",

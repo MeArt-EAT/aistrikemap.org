@@ -14,7 +14,7 @@
   "startDate": "2024-08",
   "location": {
     "@type": "Place",
-    "name": "Wien, Oesterreich (Notaufnahme-Studie); Hauptsitze Berlin (Ada Health) und Wien (Symptoma)",
+    "name": "Wien, Österreich (Hauptsitz Symptoma); Notaufnahme-Studie am Universitätsklinikum Erlangen; Ada Health mit Sitz in Berlin",
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 48.2082,
@@ -24,15 +24,30 @@
       "@type": "PostalAddress",
       "addressCountry": "AT"
     },
-    "name_de": "Wien, Oesterreich (Notaufnahme-Studie); Hauptsitze Berlin (Ada Health) und Wien (Symptoma)",
-    "name_en": "Vienna, Austria (ED study); HQ Berlin (Ada Health) and Vienna (Symptoma)"
+    "name_de": "Wien, Österreich (Hauptsitz Symptoma); Notaufnahme-Studie am Universitätsklinikum Erlangen; Ada Health mit Sitz in Berlin",
+    "name_en": "Vienna, Austria (Symptoma HQ); ED study at University Hospital Erlangen; Ada Health based in Berlin"
   },
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Physical integrity",
+    "Right to life",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Ada Health GmbH",
@@ -55,7 +70,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Ada Health und Symptoma bringen KI-Symptomchecker auf den Markt",
+      "description": "Ada Health (gegründet 2011 in Berlin) veröffentlicht 2016 seine App, die eine medizinische Datenbank mit probabilistischem KI-Reasoning verbindet, um Nutzer:innen mögliche Krankheitsursachen zu nennen. Symptoma (gegründet 2007, Österreich) entwickelt parallel eine KI-Suchmaschine für Diagnosen über zehntausende Krankheitsbilder. Beide vermarkten ihre Tools als Orientierung für Laien und teils zur Vor-Triage im Gesundheitswesen.",
+      "title_de": "Ada Health und Symptoma bringen KI-Symptomchecker auf den Markt",
+      "description_de": "Ada Health (gegründet 2011 in Berlin) veröffentlicht 2016 seine App, die eine medizinische Datenbank mit probabilistischem KI-Reasoning verbindet, um Nutzer:innen mögliche Krankheitsursachen zu nennen. Symptoma (gegründet 2007, Österreich) entwickelt parallel eine KI-Suchmaschine für Diagnosen über zehntausende Krankheitsbilder. Beide vermarkten ihre Tools als Orientierung für Laien und teils zur Vor-Triage im Gesundheitswesen.",
+      "title_en": "Ada Health and Symptoma launch AI symptom checkers",
+      "description_en": "Ada Health (founded 2011 in Berlin) released its app in 2016, combining a medical database with probabilistic AI reasoning to suggest possible causes of symptoms. Symptoma (founded 2007, Austria) built a parallel AI search engine for diagnoses across tens of thousands of conditions. Both marketed their tools as guidance for laypeople and partly for pre-triage in health systems.",
+      "sources": [
+        "https://www.crunchbase.com/organization/adahealth",
+        "https://www.symptoma.com/en/about"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Symptomchecker werden als entlastendes Triage-Instrument beworben",
+      "description": "Im Zuge des Digital-Health-Booms positionieren Anbieter und Gesundheitssysteme KI-Symptomchecker als Mittel, um Notaufnahmen zu entlasten und Patient:innen vorab nach Dringlichkeit zu sortieren. Marketing und Selbstdarstellung betonen hohe Trefferquoten, während die Tools rechtlich meist als reine Informationsdienste und nicht als Medizinprodukte mit klinischer Validierung gelten. Diese Lücke verschiebt Risiken auf die Nutzer:innen.",
+      "title_de": "Symptomchecker werden als entlastendes Triage-Instrument beworben",
+      "description_de": "Im Zuge des Digital-Health-Booms positionieren Anbieter und Gesundheitssysteme KI-Symptomchecker als Mittel, um Notaufnahmen zu entlasten und Patient:innen vorab nach Dringlichkeit zu sortieren. Marketing und Selbstdarstellung betonen hohe Trefferquoten, während die Tools rechtlich meist als reine Informationsdienste und nicht als Medizinprodukte mit klinischer Validierung gelten. Diese Lücke verschiebt Risiken auf die Nutzer:innen.",
+      "title_en": "Symptom checkers promoted as a triage-relieving instrument",
+      "description_en": "Amid the digital-health boom, vendors and health systems positioned AI symptom checkers as a way to relieve emergency departments and to sort patients by urgency in advance. Marketing emphasised high accuracy, while the tools were legally treated mostly as pure information services rather than clinically validated medical devices. This gap shifted risk onto users.",
+      "sources": [
+        "https://www.eurekanetwork.org/impact/symptoma-the-worlds-most-accurate-ai-symptom-checker/"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "event",
+      "title": "Studie: Ada und Symptoma übersehen lebensbedrohliche Diagnosen bei 13-14 Prozent",
+      "description": "Eine randomisierte, doppelblinde Crossover-Studie im Journal of Medical Internet Research testet beide Tools in einer Notaufnahme. Ada nennt die korrekte Diagnose nur in 14 Prozent der Fälle an erster Stelle, Symptoma in 4 Prozent. Beide versäumen es, potenziell lebensbedrohliche Diagnosen anzubieten - Ada bei 13 Prozent, Symptoma bei 14 Prozent der Patient:innen. Ada triagiert 34 Prozent korrekt, untertriagiert 13 Prozent und übertriagiert 53 Prozent.",
+      "title_de": "Studie: Ada und Symptoma übersehen lebensbedrohliche Diagnosen bei 13-14 Prozent",
+      "description_de": "Eine randomisierte, doppelblinde Crossover-Studie im Journal of Medical Internet Research testet beide Tools in einer Notaufnahme. Ada nennt die korrekte Diagnose nur in 14 Prozent der Fälle an erster Stelle, Symptoma in 4 Prozent. Beide versäumen es, potenziell lebensbedrohliche Diagnosen anzubieten - Ada bei 13 Prozent, Symptoma bei 14 Prozent der Patient:innen. Ada triagiert 34 Prozent korrekt, untertriagiert 13 Prozent und übertriagiert 53 Prozent.",
+      "title_en": "Study: Ada and Symptoma miss life-threatening diagnoses in 13-14%",
+      "description_en": "A randomized double-blinded crossover study in the Journal of Medical Internet Research tested both tools in an emergency department. Ada placed the correct diagnosis first in only 14% of cases, Symptoma in 4%. Both failed to flag potentially life-threatening diagnoses - Ada in 13%, Symptoma in 14% of patients. Ada triaged 34% correctly, undertriaged 13% and overtriaged 53%.",
+      "sources": [
+        "https://www.jmir.org/2024/1/e56514",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11372320/"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Belege für begrenzte Verlässlichkeit nähren Forderung nach Regulierung",
+      "description": "Die Studie verstärkt die wissenschaftliche Kritik, dass KI-Symptomchecker bei kritischen Notfällen nicht zuverlässig genug sind, um Triage-Entscheidungen zu stützen, und bei Untertriage Patient:innen gefährden können. Fachleute fordern klinische Validierung, klare Haftungsregeln und eine Einstufung als Medizinprodukt statt als bloßer Informationsdienst. Der Fall reiht sich in eine Serie von Studien ein, die die beworbenen Trefferquoten relativieren.",
+      "title_de": "Belege für begrenzte Verlässlichkeit nähren Forderung nach Regulierung",
+      "description_de": "Die Studie verstärkt die wissenschaftliche Kritik, dass KI-Symptomchecker bei kritischen Notfällen nicht zuverlässig genug sind, um Triage-Entscheidungen zu stützen, und bei Untertriage Patient:innen gefährden können. Fachleute fordern klinische Validierung, klare Haftungsregeln und eine Einstufung als Medizinprodukt statt als bloßer Informationsdienst. Der Fall reiht sich in eine Serie von Studien ein, die die beworbenen Trefferquoten relativieren.",
+      "title_en": "Evidence of limited reliability fuels calls for regulation",
+      "description_en": "The study reinforced scientific criticism that AI symptom checkers are not reliable enough in critical emergencies to support triage decisions and may endanger patients through undertriage. Experts called for clinical validation, clear liability rules and classification as a medical device rather than a mere information service. The case adds to a series of studies that qualify the accuracy rates such tools advertise.",
+      "sources": [
+        "https://ai.jmir.org/2024/1/e46875"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.jmir.org/2024/1/e56514",
