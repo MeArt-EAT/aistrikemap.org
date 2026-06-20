@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Office of the Privacy Commissioner of Canada (and BC, Quebec, Alberta regulators)",
@@ -53,7 +68,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "OpenAI trainiert GPT-3.5 durch massenhaftes Scraping des öffentlichen Internets",
+      "description": "Die ChatGPT zugrunde liegenden Modelle GPT-3.5 und GPT-4 wurden auf Billionen von Wörtern trainiert, die OpenAI ohne Einwilligung der Betroffenen aus dem offenen Web kratzte. Die Filter schlossen nur einen engen Datenausschnitt aus - Social-Media-Plattformen, Diskussionsforen, Kinder-Websites und Seiten mit medizinischen Gesprächen blieben enthalten. Diese Datenbasis bildete die technische Vorbedingung für den späteren Datenschutz-Konflikt.",
+      "title_de": "OpenAI trainiert GPT-3.5 durch massenhaftes Scraping des öffentlichen Internets",
+      "description_de": "Die ChatGPT zugrunde liegenden Modelle GPT-3.5 und GPT-4 wurden auf Billionen von Wörtern trainiert, die OpenAI ohne Einwilligung der Betroffenen aus dem offenen Web kratzte. Die Filter schlossen nur einen engen Datenausschnitt aus - Social-Media-Plattformen, Diskussionsforen, Kinder-Websites und Seiten mit medizinischen Gesprächen blieben enthalten. Diese Datenbasis bildete die technische Vorbedingung für den späteren Datenschutz-Konflikt.",
+      "title_en": "OpenAI trains GPT-3.5 through mass scraping of the public internet",
+      "description_en": "The GPT-3.5 and GPT-4 models underlying ChatGPT were trained on trillions of words that OpenAI scraped from the open web without the consent of the people involved. Filters excluded only a narrow slice of data - social media platforms, discussion forums, children's websites and pages with medical conversations all remained included. This data foundation became the technical precondition for the later privacy conflict.",
+      "sources": [
+        "https://www.infosecurity-magazine.com/news-features/chatgpts-datascraping-scrutiny/"
+      ]
+    },
+    {
+      "date": "2022-11-30",
+      "phase": "doctrine",
+      "title": "OpenAI veröffentlicht ChatGPT als öffentliches Produkt",
+      "description": "Am 30. November 2022 stellte OpenAI ChatGPT als kostenlos nutzbaren Chatbot bereit, der innerhalb weniger Wochen Millionen Nutzer erreichte. Das Geschäftsmodell beruhte darauf, ein auf gescrapten Personendaten trainiertes Modell breit zu kommerzialisieren - ohne den Betroffenen eine Einwilligungsmöglichkeit zu geben. Damit wurde die zuvor still aufgebaute Datenbasis öffentlich wirksam.",
+      "title_de": "OpenAI veröffentlicht ChatGPT als öffentliches Produkt",
+      "description_de": "Am 30. November 2022 stellte OpenAI ChatGPT als kostenlos nutzbaren Chatbot bereit, der innerhalb weniger Wochen Millionen Nutzer erreichte. Das Geschäftsmodell beruhte darauf, ein auf gescrapten Personendaten trainiertes Modell breit zu kommerzialisieren - ohne den Betroffenen eine Einwilligungsmöglichkeit zu geben. Damit wurde die zuvor still aufgebaute Datenbasis öffentlich wirksam.",
+      "title_en": "OpenAI releases ChatGPT as a public product",
+      "description_en": "On 30 November 2022 OpenAI made ChatGPT available as a free chatbot that reached millions of users within weeks. The business model relied on broadly commercialising a model trained on scraped personal data - without offering the affected individuals any way to consent. This made the previously quietly assembled data foundation publicly effective.",
+      "sources": [
+        "https://openai.com/index/chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "event",
+      "title": "Kanadische Datenschutzbehörden leiten Untersuchung gegen OpenAI ein",
+      "description": "Ausgelöst durch eine Beschwerde über Erhebung, Nutzung und Weitergabe personenbezogener Daten ohne Einwilligung leitete der Bundes-Datenschutzbeauftragte (OPC) gemeinsam mit den Behörden von British Columbia, Quebec und Alberta eine Untersuchung gegen OpenAI ein. Geprüft wurde, ob das Training und der Betrieb von ChatGPT gegen kanadisches Datenschutzrecht verstoßen.",
+      "title_de": "Kanadische Datenschutzbehörden leiten Untersuchung gegen OpenAI ein",
+      "description_de": "Ausgelöst durch eine Beschwerde über Erhebung, Nutzung und Weitergabe personenbezogener Daten ohne Einwilligung leitete der Bundes-Datenschutzbeauftragte (OPC) gemeinsam mit den Behörden von British Columbia, Quebec und Alberta eine Untersuchung gegen OpenAI ein. Geprüft wurde, ob das Training und der Betrieb von ChatGPT gegen kanadisches Datenschutzrecht verstoßen.",
+      "title_en": "Canadian privacy regulators launch investigation into OpenAI",
+      "description_en": "Triggered by a complaint about the collection, use and disclosure of personal information without consent, the federal Privacy Commissioner (OPC) launched an investigation into OpenAI jointly with the regulators of British Columbia, Quebec and Alberta. The inquiry examined whether the training and operation of ChatGPT violated Canadian privacy law.",
+      "sources": [
+        "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2023/an_230525-2/"
+      ]
+    },
+    {
+      "date": "2026-05",
+      "phase": "consequences",
+      "title": "Behörden stellen Verstoß gegen kanadisches Datenschutzrecht fest",
+      "description": "Die nach mehrjähriger Prüfung veröffentlichten Ergebnisse stellten fest, dass das ursprüngliche Training von ChatGPT gegen mehrere kanadische Datenschutzgesetze verstieß - wegen überbordender Datensammlung, fehlender gültiger Einwilligung und mangelnder Transparenz. Statt Strafen sprachen die Behörden Empfehlungen aus und forderten OpenAI zu Korrekturen auf. Der Fall verdeutlichte die Grenzen geltenden Datenschutzrechts gegenüber generativer KI.",
+      "title_de": "Behörden stellen Verstoß gegen kanadisches Datenschutzrecht fest",
+      "description_de": "Die nach mehrjähriger Prüfung veröffentlichten Ergebnisse stellten fest, dass das ursprüngliche Training von ChatGPT gegen mehrere kanadische Datenschutzgesetze verstieß - wegen überbordender Datensammlung, fehlender gültiger Einwilligung und mangelnder Transparenz. Statt Strafen sprachen die Behörden Empfehlungen aus und forderten OpenAI zu Korrekturen auf. Der Fall verdeutlichte die Grenzen geltenden Datenschutzrechts gegenüber generativer KI.",
+      "title_en": "Regulators conclude ChatGPT violated Canadian privacy law",
+      "description_en": "The findings, published after a multi-year inquiry, concluded that ChatGPT's initial training violated several Canadian privacy statutes - because of over-collection of data, lack of valid consent and insufficient transparency. Instead of penalties, the regulators issued recommendations and called on OpenAI to make corrections. The case highlighted the limits of existing privacy law against generative AI.",
+      "sources": [
+        "https://www.cbc.ca/news/politics/privacy-investigation-chatgpt-open-ai-9.7188538"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2023/an_230525-2/",

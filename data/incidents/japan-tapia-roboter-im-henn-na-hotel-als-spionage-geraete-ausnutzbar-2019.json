@@ -31,9 +31,24 @@
     "surveillance",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Human dignity",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "HIS Hotel Group (Henn-na Hotel)",
@@ -52,7 +67,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2015-07",
+      "phase": "infrastructure",
+      "title": "Eröffnung des weltweit ersten Roboter-Hotels Henn-na",
+      "description": "Im Juli 2015 eröffnete die HIS Group das Henn-na Hotel als 'weltweit erstes von Robotern betriebenes Hotel' (Guinness-Eintrag), das Check-in, Gepäck und Zimmerservice durch über 240 Roboter abwickelte. In den Gästezimmern standen Tapia-Sprachassistenz-Roboter des Herstellers MJI Robotics, ausgestattet mit Mikrofon, Kamera und Netzanbindung. Die flächendeckende Ausstattung Hunderter Zimmer mit kameragestützten, bettzugewandten Robotern schuf die Infrastruktur, die später als Spionage-Vektor missbraucht werden konnte.",
+      "title_de": "Eröffnung des weltweit ersten Roboter-Hotels Henn-na",
+      "description_de": "Im Juli 2015 eröffnete die HIS Group das Henn-na Hotel als 'weltweit erstes von Robotern betriebenes Hotel' (Guinness-Eintrag), das Check-in, Gepäck und Zimmerservice durch über 240 Roboter abwickelte. In den Gästezimmern standen Tapia-Sprachassistenz-Roboter des Herstellers MJI Robotics, ausgestattet mit Mikrofon, Kamera und Netzanbindung. Die flächendeckende Ausstattung Hunderter Zimmer mit kameragestützten, bettzugewandten Robotern schuf die Infrastruktur, die später als Spionage-Vektor missbraucht werden konnte.",
+      "title_en": "Opening of the world's first robot hotel, Henn-na",
+      "description_en": "In July 2015 HIS Group opened the Henn-na Hotel as the 'world's first robot-staffed hotel' (a Guinness record), handling check-in, luggage and room service with over 240 robots. Guest rooms housed Tapia voice-assistant robots made by MJI Robotics, equipped with a microphone, camera and network connection. Equipping hundreds of rooms with camera-enabled, bed-facing robots created the infrastructure later abused as a spying vector.",
+      "sources": [
+        "https://boingboing.net/2019/10/23/sorry-for-uneasiness.html"
+      ]
+    },
+    {
+      "date": "2019-07",
+      "phase": "doctrine",
+      "title": "Tapia-Roboter prüfen aufgespielten Code nicht auf Signaturen",
+      "description": "Die Tapia-Roboter waren so konstruiert, dass sich über einen NFC-Tag am Hinterkopf neuer Code aufspielen ließ, ohne dass das Gerät die Software auf kryptografische Signaturen prüfte. Diese Design-Entscheidung - fehlende Code-Signaturprüfung bei einem netzfähigen Zimmergerät - machte das Aufspielen beliebigen, auch bösartigen Codes trivial. Sicherheitsforscher Lance R. Vick meldete den Fehler der HIS Group, die über 90 Tage keine Abhilfe schuf.",
+      "title_de": "Tapia-Roboter prüfen aufgespielten Code nicht auf Signaturen",
+      "description_de": "Die Tapia-Roboter waren so konstruiert, dass sich über einen NFC-Tag am Hinterkopf neuer Code aufspielen ließ, ohne dass das Gerät die Software auf kryptografische Signaturen prüfte. Diese Design-Entscheidung - fehlende Code-Signaturprüfung bei einem netzfähigen Zimmergerät - machte das Aufspielen beliebigen, auch bösartigen Codes trivial. Sicherheitsforscher Lance R. Vick meldete den Fehler der HIS Group, die über 90 Tage keine Abhilfe schuf.",
+      "title_en": "Tapia robots do not verify installed code signatures",
+      "description_en": "The Tapia robots were built so that new code could be installed via an NFC tag at the back of the head without the device checking the software for cryptographic signatures. This design decision - no code-signature verification on a network-capable in-room device - made installing arbitrary, including malicious, code trivial. Security researcher Lance R. Vick reported the flaw to HIS Group, which took no remedial action for over 90 days.",
+      "sources": [
+        "https://threatpost.com/bedside-hotel-robot-hacked-video/149491/"
+      ]
+    },
+    {
+      "date": "2019-10-13",
+      "phase": "event",
+      "title": "Öffentliche Offenlegung der Spionage-Zero-Day im Tapia-Roboter",
+      "description": "Nach 90 Tagen ohne Reaktion veröffentlichte Lance R. Vick die Zero-Day-Lücke am 13. Oktober 2019 auf Twitter. Über den NFC-Tag konnten Angreifer:innen unsignierten Code installieren, Streaming-Apps automatisch starten und so Audio- und Video-Aufzeichnungen aus den Gästezimmern abgreifen - die bettzugewandten Roboter konnten heimlich Personen in intimen Situationen aufnehmen. Betroffen waren rund 100 Tapia-Geräte im Henn-na Hotel Maihama Tokyo Bay.",
+      "title_de": "Öffentliche Offenlegung der Spionage-Zero-Day im Tapia-Roboter",
+      "description_de": "Nach 90 Tagen ohne Reaktion veröffentlichte Lance R. Vick die Zero-Day-Lücke am 13. Oktober 2019 auf Twitter. Über den NFC-Tag konnten Angreifer:innen unsignierten Code installieren, Streaming-Apps automatisch starten und so Audio- und Video-Aufzeichnungen aus den Gästezimmern abgreifen - die bettzugewandten Roboter konnten heimlich Personen in intimen Situationen aufnehmen. Betroffen waren rund 100 Tapia-Geräte im Henn-na Hotel Maihama Tokyo Bay.",
+      "title_en": "Public disclosure of the spying zero-day in the Tapia robot",
+      "description_en": "After 90 days without a response, Lance R. Vick disclosed the zero-day flaw on 13 October 2019 via Twitter. Through the NFC tag attackers could install unsigned code, auto-launch streaming apps and capture audio and video from guest rooms - the bed-facing robots could covertly record people in intimate situations. Around 100 Tapia devices at the Henn-na Hotel Maihama Tokyo Bay were affected.",
+      "sources": [
+        "https://www.vice.com/en/article/high-tech-japanese-hotel-service-robots-easily-hackable/"
+      ]
+    },
+    {
+      "date": "2019-10-22",
+      "phase": "consequences",
+      "title": "HIS Group entschuldigt sich nach internationaler Berichterstattung",
+      "description": "Erst nach der öffentlichen Offenlegung und internationaler Berichterstattung (VICE, Threatpost, Boing Boing) reagierte HIS Group, entschuldigte sich für die 'Unannehmlichkeiten' und räumte ein, dass Hunderte Tapia-Geräte betroffen waren; ein Update wurde aufgespielt. Der Fall wurde zum vielzitierten Beispiel dafür, dass IoT-Service-Roboter ohne Sicherheits-Grundhygiene Gäste einer verdeckten Überwachung aussetzen und wie lange Hersteller Warnungen ignorieren.",
+      "title_de": "HIS Group entschuldigt sich nach internationaler Berichterstattung",
+      "description_de": "Erst nach der öffentlichen Offenlegung und internationaler Berichterstattung (VICE, Threatpost, Boing Boing) reagierte HIS Group, entschuldigte sich für die 'Unannehmlichkeiten' und räumte ein, dass Hunderte Tapia-Geräte betroffen waren; ein Update wurde aufgespielt. Der Fall wurde zum vielzitierten Beispiel dafür, dass IoT-Service-Roboter ohne Sicherheits-Grundhygiene Gäste einer verdeckten Überwachung aussetzen und wie lange Hersteller Warnungen ignorieren.",
+      "title_en": "HIS Group apologises after international coverage",
+      "description_en": "Only after public disclosure and international coverage (VICE, Threatpost, Boing Boing) did HIS Group respond, apologising for the 'inconvenience' and acknowledging that hundreds of Tapia devices were affected; an update was pushed out. The case became a widely cited example of how IoT service robots without basic security hygiene expose guests to covert surveillance, and of how long vendors ignore warnings.",
+      "sources": [
+        "https://boingboing.net/2019/10/23/sorry-for-uneasiness.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://threatpost.com/bedside-hotel-robot-hacked-video/149491/",

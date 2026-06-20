@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Consumer protection",
+    "Freedom of expression"
+  ],
   "asm:actors": [
     {
       "name": "Meta Platforms Ireland",
@@ -60,7 +78,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Meta sammelt seit Jahren öffentliche Nutzerinhalte aus Facebook und Instagram",
+      "description": "Facebook und Instagram im EU/EWR speichern über Jahre einen riesigen Bestand öffentlich geteilter Posts, Fotos und Kommentare erwachsener Nutzer. Dieser kumulierte Datenbestand bildet die technische Grundlage, auf der Meta später seine Large-Language-Models (Llama / Meta AI) trainieren will.",
+      "title_de": "Meta sammelt seit Jahren öffentliche Nutzerinhalte aus Facebook und Instagram",
+      "description_de": "Facebook und Instagram im EU/EWR speichern über Jahre einen riesigen Bestand öffentlich geteilter Posts, Fotos und Kommentare erwachsener Nutzer. Dieser kumulierte Datenbestand bildet die technische Grundlage, auf der Meta später seine Large-Language-Models (Llama / Meta AI) trainieren will.",
+      "title_en": "Meta accumulates years of public user content on Facebook and Instagram",
+      "description_en": "Facebook and Instagram in the EU/EEA hold years of publicly shared posts, photos and comments from adult users. This accumulated dataset forms the technical basis Meta later seeks to use for training its Large Language Models (Llama / Meta AI).",
+      "sources": []
+    },
+    {
+      "date": "2024-05",
+      "phase": "doctrine",
+      "title": "Meta beruft sich auf berechtigtes Interesse statt Einwilligung",
+      "description": "Meta aktualisiert seine Datenschutzrichtlinie und kündigt an, ab 26. Juni 2024 öffentliche Nutzerinhalte für KI-Training zu verwenden. Als Rechtsgrundlage stützt sich Meta auf das berechtigte Interesse (Art. 6 (1) f DSGVO) statt auf eine aktive Einwilligung der Nutzer und sieht nur ein Opt-out-Widerspruchsformular vor. Die Datenschutzorganisation noyb reicht in elf EU-Staaten Beschwerden ein.",
+      "title_de": "Meta beruft sich auf berechtigtes Interesse statt Einwilligung",
+      "description_de": "Meta aktualisiert seine Datenschutzrichtlinie und kündigt an, ab 26. Juni 2024 öffentliche Nutzerinhalte für KI-Training zu verwenden. Als Rechtsgrundlage stützt sich Meta auf das berechtigte Interesse (Art. 6 (1) f DSGVO) statt auf eine aktive Einwilligung der Nutzer und sieht nur ein Opt-out-Widerspruchsformular vor. Die Datenschutzorganisation noyb reicht in elf EU-Staaten Beschwerden ein.",
+      "title_en": "Meta relies on legitimate interest instead of consent",
+      "description_en": "Meta updates its privacy policy and announces it will use public user content for AI training from 26 June 2024. It bases this on legitimate interest (Art. 6(1)(f) GDPR) rather than active user consent, offering only an opt-out objection form. The privacy group noyb files complaints in eleven EU states.",
+      "sources": [
+        "https://www.snopes.com/news/2024/06/13/meta-ai-training-user-data/",
+        "https://about.fb.com/news/2024/06/building-ai-technology-for-europeans-in-a-transparent-and-responsible-way/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "event",
+      "title": "DPC veranlasst Meta zur Pause des EU-KI-Trainings",
+      "description": "Die irische Datenschutzbehörde DPC identifiziert mehrere Probleme an Metas geplantem Rollout und ersucht Meta, das Training zu verschieben. Am 14. Juni 2024 begrüßt die DPC öffentlich, dass Meta das KI-Training mit Daten von EU/EWR-Nutzern pausiert. Meta erklärt sich enttäuscht über die Aufforderung seiner federführenden Aufsichtsbehörde.",
+      "title_de": "DPC veranlasst Meta zur Pause des EU-KI-Trainings",
+      "description_de": "Die irische Datenschutzbehörde DPC identifiziert mehrere Probleme an Metas geplantem Rollout und ersucht Meta, das Training zu verschieben. Am 14. Juni 2024 begrüßt die DPC öffentlich, dass Meta das KI-Training mit Daten von EU/EWR-Nutzern pausiert. Meta erklärt sich enttäuscht über die Aufforderung seiner federführenden Aufsichtsbehörde.",
+      "title_en": "DPC prompts Meta to pause EU AI training",
+      "description_en": "Ireland's Data Protection Commission identifies several issues with Meta's planned rollout and asks Meta to delay training. On 14 June 2024 the DPC publicly welcomes Meta's decision to pause AI training on EU/EEA user data. Meta says it is disappointed by the request from its lead supervisory authority.",
+      "sources": [
+        "https://www.dataprotection.ie/en/news-media/latest-news/dpcs-engagement-meta-ai",
+        "https://www.bitdefender.com/en-us/blog/hotforsecurity/meta-forced-to-pause-ai-training-on-data-collected-from-facebook-and-instagram-users-in-europe"
+      ]
+    },
+    {
+      "date": "2024-12",
+      "phase": "consequences",
+      "title": "EDPB legt allgemeine GDPR-Kriterien für KI-Training fest",
+      "description": "Auf Ersuchen der DPC vom September 2024 gibt das European Data Protection Board im Dezember 2024 eine formelle Stellungnahme ab. Sie definiert allgemeine Kriterien, wann die Verarbeitung von Trainingsdaten für KI-Modelle DSGVO-konform ist, etwa zur Anonymität von Modellen und zur Tragfähigkeit des berechtigten Interesses.",
+      "title_de": "EDPB legt allgemeine GDPR-Kriterien für KI-Training fest",
+      "description_de": "Auf Ersuchen der DPC vom September 2024 gibt das European Data Protection Board im Dezember 2024 eine formelle Stellungnahme ab. Sie definiert allgemeine Kriterien, wann die Verarbeitung von Trainingsdaten für KI-Modelle DSGVO-konform ist, etwa zur Anonymität von Modellen und zur Tragfähigkeit des berechtigten Interesses.",
+      "title_en": "EDPB sets general GDPR criteria for AI training",
+      "description_en": "Following the DPC's September 2024 request, the European Data Protection Board issues a formal opinion in December 2024. It sets general criteria for when processing training data for AI models complies with the GDPR, including model anonymity and the viability of legitimate interest.",
+      "sources": [
+        "https://www.privacylaws.com/news/ireland-hamburg-dpas-take-action-on-meta-s-ai-training-model/"
+      ]
+    },
+    {
+      "date": "2025-05-27",
+      "phase": "consequences",
+      "title": "Meta startet EU-KI-Training nach Anpassungen erneut",
+      "description": "Erst nach zusätzlichen Maßnahmen, Transparenzhinweisen, längerer Vorabinformation, In-App-Widerspruchsformularen und De-Identifikation, nimmt Meta am 27. Mai 2025 das KI-Training mit Daten von EU-Nutzern auf. Die DPC veröffentlicht dazu im Mai 2025 eine begleitende Erklärung. Der Fall bleibt für Datenschützer ein Präzedenzfall zur Frage von Einwilligung versus berechtigtem Interesse beim KI-Training.",
+      "title_de": "Meta startet EU-KI-Training nach Anpassungen erneut",
+      "description_de": "Erst nach zusätzlichen Maßnahmen, Transparenzhinweisen, längerer Vorabinformation, In-App-Widerspruchsformularen und De-Identifikation, nimmt Meta am 27. Mai 2025 das KI-Training mit Daten von EU-Nutzern auf. Die DPC veröffentlicht dazu im Mai 2025 eine begleitende Erklärung. Der Fall bleibt für Datenschützer ein Präzedenzfall zur Frage von Einwilligung versus berechtigtem Interesse beim KI-Training.",
+      "title_en": "Meta restarts EU AI training after adjustments",
+      "description_en": "Only after additional measures, transparency notices, longer prior notice, in-app objection forms and de-identification, does Meta begin AI training on EU user data on 27 May 2025. The DPC issues an accompanying statement in May 2025. The case remains a precedent for privacy advocates on the question of consent versus legitimate interest in AI training.",
+      "sources": [
+        "https://www.dataprotection.ie/en/news-media/latest-news/dpc-statement-meta-ai"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.dataprotection.ie/en/news-media/latest-news/dpcs-engagement-meta-ai",

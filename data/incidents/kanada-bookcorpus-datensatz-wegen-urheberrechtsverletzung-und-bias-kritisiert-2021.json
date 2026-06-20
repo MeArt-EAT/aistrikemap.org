@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung",
+    "Recht auf Arbeit"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung",
+    "Recht auf Arbeit"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Consumer protection",
+    "Protection from discrimination",
+    "Right to work"
+  ],
   "asm:actors": [
     {
       "name": "University of Toronto (BookCorpus authors)",
@@ -46,7 +61,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2015-06",
+      "phase": "infrastructure",
+      "title": "Erstellung von BookCorpus durch Scraping von Smashwords",
+      "description": "Forschende der University of Toronto und des MIT (Zhu, Kiros u.a.) stellen für ihr Paper „Aligning Books and Movies\" einen Datensatz aus tausenden frei verfügbaren, selbstpublizierten Büchern zusammen. Die Texte werden von der Indie-Plattform Smashwords gescrapt — ohne ausdrückliche Zustimmung der Autor:innen. Der Korpus (rund 985 Mio. Wörter) ist stark in Richtung Romance und Fantasy verzerrt.",
+      "title_de": "Erstellung von BookCorpus durch Scraping von Smashwords",
+      "description_de": "Forschende der University of Toronto und des MIT (Zhu, Kiros u.a.) stellen für ihr Paper „Aligning Books and Movies\" einen Datensatz aus tausenden frei verfügbaren, selbstpublizierten Büchern zusammen. Die Texte werden von der Indie-Plattform Smashwords gescrapt — ohne ausdrückliche Zustimmung der Autor:innen. Der Korpus (rund 985 Mio. Wörter) ist stark in Richtung Romance und Fantasy verzerrt.",
+      "title_en": "Creation of BookCorpus by scraping Smashwords",
+      "description_en": "Researchers at the University of Toronto and MIT (Zhu, Kiros et al.) assemble a dataset of thousands of freely available, self-published books for their paper 'Aligning Books and Movies.' The texts are scraped from the indie platform Smashwords without authors' explicit consent. The corpus (around 985 million words) is heavily skewed toward romance and fantasy.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BookCorpus",
+        "https://arxiv.org/abs/1506.06724"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "BookCorpus wird zur Standard-Trainingsgrundlage für Sprachmodelle",
+      "description": "Die ML-Branche etabliert die Praxis, große, im Web gefundene Textkorpora ohne Lizenzklärung als Trainingsdaten zu nutzen. BookCorpus wird zur zentralen Quelle für frühe Sprachmodelle: OpenAI trainiert GPT-1 darauf, Google nutzt es für BERT. Damit fließen die ungeklärten Urheberrechte und die genrebedingten Verzerrungen in eine ganze Generation von Modellen ein.",
+      "title_de": "BookCorpus wird zur Standard-Trainingsgrundlage für Sprachmodelle",
+      "description_de": "Die ML-Branche etabliert die Praxis, große, im Web gefundene Textkorpora ohne Lizenzklärung als Trainingsdaten zu nutzen. BookCorpus wird zur zentralen Quelle für frühe Sprachmodelle: OpenAI trainiert GPT-1 darauf, Google nutzt es für BERT. Damit fließen die ungeklärten Urheberrechte und die genrebedingten Verzerrungen in eine ganze Generation von Modellen ein.",
+      "title_en": "BookCorpus becomes a default training source for language models",
+      "description_en": "The ML field establishes the practice of using large web-scraped text corpora as training data without licensing clearance. BookCorpus becomes a core source for early language models: OpenAI trains GPT-1 on it, Google uses it for BERT. The unresolved copyright status and genre bias thus propagate into a whole generation of models.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BookCorpus"
+      ]
+    },
+    {
+      "date": "2021-05",
+      "phase": "event",
+      "title": "Retrospektives Datasheet deckt Urheberrechtsverstöße und Bias auf",
+      "description": "Jack Bandy und Nicholas Vincent veröffentlichen ein „Retrospective Datasheet for BookCorpus\". Es dokumentiert, dass der Datensatz urheberrechtlich geschützte Werke entgegen den Smashwords-Nutzungsbedingungen enthält, tausende Dubletten aufweist und religiöse sowie thematische Verzerrungen birgt. Die Autoren warnen vor unkritischer Weiterverwendung dieses „Dokumentationsschuld\"-Datensatzes.",
+      "title_de": "Retrospektives Datasheet deckt Urheberrechtsverstöße und Bias auf",
+      "description_de": "Jack Bandy und Nicholas Vincent veröffentlichen ein „Retrospective Datasheet for BookCorpus\". Es dokumentiert, dass der Datensatz urheberrechtlich geschützte Werke entgegen den Smashwords-Nutzungsbedingungen enthält, tausende Dubletten aufweist und religiöse sowie thematische Verzerrungen birgt. Die Autoren warnen vor unkritischer Weiterverwendung dieses „Dokumentationsschuld\"-Datensatzes.",
+      "title_en": "Retrospective datasheet exposes copyright violations and bias",
+      "description_en": "Jack Bandy and Nicholas Vincent publish a 'Retrospective Datasheet for BookCorpus.' It documents that the dataset contains copyrighted works against Smashwords' terms of service, holds thousands of duplicate books, and carries religious and thematic biases. The authors warn against uncritical reuse of this 'documentation-debt' dataset.",
+      "sources": [
+        "https://arxiv.org/pdf/2105.05241",
+        "https://www.jackbandy.com/dirty-secrets-of-bookcorpus-key-dataset-machine-learning/"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Debatte über Datensatz-Dokumentation und Trainingsdaten-Rechte",
+      "description": "Die Befunde verstärken die wissenschaftliche und juristische Debatte über fehlende Datensatz-Dokumentation, das Einverständnis von Urheber:innen und Bias in KI-Trainingsdaten. BookCorpus wird zum Lehrbeispiel für „Documentation Debt\" und für die später eskalierenden Urheberrechtsklagen gegen KI-Trainingspraktiken. Autor:innen selbstpublizierter Werke sehen ihre Inhalte ohne Vergütung in kommerziellen Modellen wieder.",
+      "title_de": "Debatte über Datensatz-Dokumentation und Trainingsdaten-Rechte",
+      "description_de": "Die Befunde verstärken die wissenschaftliche und juristische Debatte über fehlende Datensatz-Dokumentation, das Einverständnis von Urheber:innen und Bias in KI-Trainingsdaten. BookCorpus wird zum Lehrbeispiel für „Documentation Debt\" und für die später eskalierenden Urheberrechtsklagen gegen KI-Trainingspraktiken. Autor:innen selbstpublizierter Werke sehen ihre Inhalte ohne Vergütung in kommerziellen Modellen wieder.",
+      "title_en": "Debate over dataset documentation and training-data rights",
+      "description_en": "The findings amplify the academic and legal debate over missing dataset documentation, authors' consent, and bias in AI training data. BookCorpus becomes a textbook case of 'documentation debt' and of the later escalating copyright lawsuits against AI training practices. Authors of self-published works find their content reused in commercial models without compensation.",
+      "sources": [
+        "https://www.jackbandy.com/dirty-secrets-of-bookcorpus-key-dataset-machine-learning/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/pdf/2105.05241",

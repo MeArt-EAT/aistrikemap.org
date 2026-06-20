@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Pressefreiheit",
+    "Recht auf Eigentum",
+    "Recht auf Arbeit",
+    "faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Pressefreiheit",
+    "Recht auf Eigentum",
+    "Recht auf Arbeit",
+    "faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of the press",
+    "Right to property",
+    "Right to work",
+    "Fair trial"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "OpenAI trainiert ChatGPT auf massenhaft kopierten journalistischen Texten",
+      "description": "Für das Training von GPT-3.5 und GPT-4 kopierte OpenAI nach Angaben zahlreicher Verlage Millionen urheberrechtlich geschützter Artikel aus dem Web, ohne Lizenz oder Vergütung. Schutzmaßnahmen wie Bezahlschranken und Website-AGB wurden dabei laut den Klägern umgangen. Diese Trainingspraxis bildete die technische Grundlage für die spätere Klage der kanadischen Medienhäuser.",
+      "title_de": "OpenAI trainiert ChatGPT auf massenhaft kopierten journalistischen Texten",
+      "description_de": "Für das Training von GPT-3.5 und GPT-4 kopierte OpenAI nach Angaben zahlreicher Verlage Millionen urheberrechtlich geschützter Artikel aus dem Web, ohne Lizenz oder Vergütung. Schutzmaßnahmen wie Bezahlschranken und Website-AGB wurden dabei laut den Klägern umgangen. Diese Trainingspraxis bildete die technische Grundlage für die spätere Klage der kanadischen Medienhäuser.",
+      "title_en": "OpenAI trains ChatGPT on mass-copied journalistic texts",
+      "description_en": "To train GPT-3.5 and GPT-4, OpenAI - according to numerous publishers - copied millions of copyrighted articles from the web without licence or compensation. Protective measures such as paywalls and website terms of service were circumvented in the process, the plaintiffs allege. This training practice formed the technical basis for the later lawsuit by the Canadian media companies.",
+      "sources": [
+        "https://www.americanbar.org/groups/business_law/resources/business-law-today/2025-february/openai-sued-data-scraping-canada/"
+      ]
+    },
+    {
+      "date": "2023-12-27",
+      "phase": "doctrine",
+      "title": "New York Times verklagt OpenAI und schafft Präzedenzfall für Verlage",
+      "description": "Am 27. Dezember 2023 reichte die New York Times als erstes großes Medienhaus eine Urheberrechtsklage gegen OpenAI und Microsoft ein, mit dem Ziel, das Training von Chatbots mit veröffentlichten Inhalten zu beenden. Die Klage setzte einen rechtlichen und strategischen Präzedenzfall, an dem sich Verlage weltweit - auch in Kanada - orientierten.",
+      "title_de": "New York Times verklagt OpenAI und schafft Präzedenzfall für Verlage",
+      "description_de": "Am 27. Dezember 2023 reichte die New York Times als erstes großes Medienhaus eine Urheberrechtsklage gegen OpenAI und Microsoft ein, mit dem Ziel, das Training von Chatbots mit veröffentlichten Inhalten zu beenden. Die Klage setzte einen rechtlichen und strategischen Präzedenzfall, an dem sich Verlage weltweit - auch in Kanada - orientierten.",
+      "title_en": "New York Times sues OpenAI and sets a precedent for publishers",
+      "description_en": "On 27 December 2023 the New York Times became the first major media company to file a copyright lawsuit against OpenAI and Microsoft, aiming to stop the training of chatbots on published content. The suit set a legal and strategic precedent that publishers worldwide - including in Canada - drew upon.",
+      "sources": [
+        "https://www.euronews.com/next/2023/12/27/new-york-times-files-lawsuit-against-openai-and-microsoft-over-use-of-articles-to-train-ai"
+      ]
+    },
+    {
+      "date": "2024-11-29",
+      "phase": "event",
+      "title": "Führende kanadische Medienhäuser reichen gemeinsame Klage gegen OpenAI ein",
+      "description": "Am 29. November 2024 reichten CBC/Radio-Canada, Postmedia, Metroland, der Toronto Star, der Globe and Mail und Canadian Press eine gemeinsame Klage gegen OpenAI vor einem Ontario-Gericht ein. Die Verlage werfen OpenAI Urheberrechtsverletzungen, Umgehung von Schutzmaßnahmen, Verstoß gegen Website-AGB und ungerechtfertigte Bereicherung vor und fordern Strafschadensersatz, Gewinnherausgabe und eine einstweilige Verfügung.",
+      "title_de": "Führende kanadische Medienhäuser reichen gemeinsame Klage gegen OpenAI ein",
+      "description_de": "Am 29. November 2024 reichten CBC/Radio-Canada, Postmedia, Metroland, der Toronto Star, der Globe and Mail und Canadian Press eine gemeinsame Klage gegen OpenAI vor einem Ontario-Gericht ein. Die Verlage werfen OpenAI Urheberrechtsverletzungen, Umgehung von Schutzmaßnahmen, Verstoß gegen Website-AGB und ungerechtfertigte Bereicherung vor und fordern Strafschadensersatz, Gewinnherausgabe und eine einstweilige Verfügung.",
+      "title_en": "Leading Canadian media companies file a joint lawsuit against OpenAI",
+      "description_en": "On 29 November 2024 CBC/Radio-Canada, Postmedia, Metroland, the Toronto Star, the Globe and Mail and the Canadian Press filed a joint lawsuit against OpenAI in an Ontario court. The publishers allege copyright infringement, circumvention of protective measures, breach of website terms and unjust enrichment, and seek punitive damages, disgorgement of profits and an injunction.",
+      "sources": [
+        "https://www.cbc.ca/news/business/openai-canadian-lawsuit-1.7396940"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Verfahren wird zum Testfall für KI-Training und Urheberrecht in Kanada",
+      "description": "Die Klage entwickelte sich zu einem zentralen kanadischen Testfall über die Frage, ob das Scraping journalistischer Inhalte für KI-Training rechtmäßig ist. Juristische Analysen ordneten den Fall in die weltweite Welle von Verlagsklagen gegen generative KI ein und betonten seine Bedeutung für die wirtschaftliche Existenzgrundlage des Journalismus. OpenAI verteidigte sich mit dem Argument fairer Nutzung.",
+      "title_de": "Verfahren wird zum Testfall für KI-Training und Urheberrecht in Kanada",
+      "description_de": "Die Klage entwickelte sich zu einem zentralen kanadischen Testfall über die Frage, ob das Scraping journalistischer Inhalte für KI-Training rechtmäßig ist. Juristische Analysen ordneten den Fall in die weltweite Welle von Verlagsklagen gegen generative KI ein und betonten seine Bedeutung für die wirtschaftliche Existenzgrundlage des Journalismus. OpenAI verteidigte sich mit dem Argument fairer Nutzung.",
+      "title_en": "Case becomes a test for AI training and copyright in Canada",
+      "description_en": "The lawsuit developed into a key Canadian test of whether scraping journalistic content for AI training is lawful. Legal analyses placed the case within the global wave of publisher suits against generative AI and stressed its significance for the economic foundations of journalism. OpenAI defended itself by invoking fair use.",
+      "sources": [
+        "https://www.americanbar.org/groups/business_law/resources/business-law-today/2025-february/openai-sued-data-scraping-canada/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cbc.ca/news/business/openai-canadian-lawsuit-1.7396940",
