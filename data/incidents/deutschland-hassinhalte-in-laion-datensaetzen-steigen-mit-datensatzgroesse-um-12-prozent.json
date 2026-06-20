@@ -26,9 +26,27 @@
     "data-misuse",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen",
+    "Datenschutz",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen",
+    "Datenschutz",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal treatment",
+    "Human dignity",
+    "Data protection",
+    "Privacy"
+  ],
   "asm:actors": [
     {
       "name": "LAION e.V.",
@@ -43,7 +61,63 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-08",
+      "phase": "infrastructure",
+      "title": "LAION-400M: web-gescrapter Bild-Text-Datensatz aus Common Crawl",
+      "description": "Der deutsche Verein LAION veröffentlichte 2021 mit LAION-400M einen offenen Datensatz aus rund 400 Millionen Bild-Text-Paaren, die aus dem Web-Archiv Common Crawl gewonnen und per CLIP-Ähnlichkeit gefiltert wurden. Solche ungefilterten Web-Crawls enthalten zwangsläufig rassistische, sexualisierte und herabwürdigende Inhalte. Der Datensatz wurde Grundlage für Text-Bild-Modelle wie Stable Diffusion.",
+      "title_de": "LAION-400M: web-gescrapter Bild-Text-Datensatz aus Common Crawl",
+      "description_de": "Der deutsche Verein LAION veröffentlichte 2021 mit LAION-400M einen offenen Datensatz aus rund 400 Millionen Bild-Text-Paaren, die aus dem Web-Archiv Common Crawl gewonnen und per CLIP-Ähnlichkeit gefiltert wurden. Solche ungefilterten Web-Crawls enthalten zwangsläufig rassistische, sexualisierte und herabwürdigende Inhalte. Der Datensatz wurde Grundlage für Text-Bild-Modelle wie Stable Diffusion.",
+      "title_en": "LAION-400M: web-scraped image-text dataset from Common Crawl",
+      "description_en": "In 2021 the German non-profit LAION released LAION-400M, an open dataset of around 400 million image-text pairs harvested from the Common Crawl web archive and filtered by CLIP similarity. Such unfiltered web crawls inevitably contain racist, sexualised and demeaning content. The dataset became the basis for text-to-image models such as Stable Diffusion.",
+      "sources": [
+        "https://arxiv.org/pdf/2111.02114",
+        "https://en.wikipedia.org/wiki/LAION"
+      ]
+    },
+    {
+      "date": "2022-03",
+      "phase": "doctrine",
+      "title": "Open-Dataset-Doktrin und Skalierung auf LAION-5B/2B",
+      "description": "LAION verfolgte das Ziel, möglichst große offene Trainingsdatensätze frei verfügbar zu machen, und berief sich dabei auf die Schranke für Text- und Data-Mining im deutschen bzw. EU-Urheberrecht. 2022 folgte mit LAION-5B (davon LAION-2B englischsprachig) eine massive Skalierung. Die Logik 'mehr Daten = bessere Modelle' priorisierte Größe über Inhaltskuratierung.",
+      "title_de": "Open-Dataset-Doktrin und Skalierung auf LAION-5B/2B",
+      "description_de": "LAION verfolgte das Ziel, möglichst große offene Trainingsdatensätze frei verfügbar zu machen, und berief sich dabei auf die Schranke für Text- und Data-Mining im deutschen bzw. EU-Urheberrecht. 2022 folgte mit LAION-5B (davon LAION-2B englischsprachig) eine massive Skalierung. Die Logik 'mehr Daten = bessere Modelle' priorisierte Größe über Inhaltskuratierung.",
+      "title_en": "Open-dataset doctrine and scaling up to LAION-5B/2B",
+      "description_en": "LAION pursued the goal of making the largest possible open training datasets freely available, invoking the text-and-data-mining exception in German and EU copyright law. In 2022 LAION-5B (of which LAION-2B is English) followed as a massive scale-up. The logic of 'more data equals better models' prioritised size over content curation.",
+      "sources": [
+        "https://laion.ai/blog/laion-5b/",
+        "https://www.deeplearning.ai/the-batch/the-story-of-laion-the-dataset-behind-stable-diffusion"
+      ]
+    },
+    {
+      "date": "2023-06",
+      "phase": "event",
+      "title": "Birhane-Studie: Hassinhalte steigen mit der Datensatzgröße um knapp 12 Prozent",
+      "description": "Ein Team um Abeba Birhane verglich LAION-400M und LAION-2B und stellte fest, dass der Anteil hasserfüllter Inhalte mit wachsender Datensatzgröße um knapp 12 Prozent zunahm - qualitativ wie quantitativ. Die Arbeit 'On Hate Scaling Laws For Data-Swamps' (Juni 2023) warnte, dass bloßes Hochskalieren web-gescrapter Daten rassistische und herabwürdigende Assoziationen verstärkt. Die Fortsetzung 'Into the LAION's Den' vertiefte die Befunde Ende 2023.",
+      "title_de": "Birhane-Studie: Hassinhalte steigen mit der Datensatzgröße um knapp 12 Prozent",
+      "description_de": "Ein Team um Abeba Birhane verglich LAION-400M und LAION-2B und stellte fest, dass der Anteil hasserfüllter Inhalte mit wachsender Datensatzgröße um knapp 12 Prozent zunahm - qualitativ wie quantitativ. Die Arbeit 'On Hate Scaling Laws For Data-Swamps' (Juni 2023) warnte, dass bloßes Hochskalieren web-gescrapter Daten rassistische und herabwürdigende Assoziationen verstärkt. Die Fortsetzung 'Into the LAION's Den' vertiefte die Befunde Ende 2023.",
+      "title_en": "Birhane study: hate content rises by nearly 12 percent with dataset size",
+      "description_en": "A team led by Abeba Birhane compared LAION-400M and LAION-2B and found that the share of hateful content rose by nearly 12 percent as dataset size grew, both qualitatively and quantitatively. The paper 'On Hate Scaling Laws For Data-Swamps' (June 2023) warned that simply scaling up web-scraped data amplifies racist and demeaning associations. The follow-up 'Into the LAION's Den' deepened the findings in late 2023.",
+      "sources": [
+        "https://arxiv.org/pdf/2306.13141",
+        "https://arxiv.org/pdf/2311.03449"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "consequences",
+      "title": "Debatte um Datensatz-Sicherheit; LAION-5B vorübergehend zurückgezogen",
+      "description": "Die Befunde verstärkten die wissenschaftliche und öffentliche Kritik daran, dass nachgelagerte Text-Bild-Modelle die Verzerrungen ihrer Trainingsdaten erben. Ende 2023 zog LAION den Datensatz LAION-5B nach einem separaten Befund zu illegalem Material vorübergehend zurück und bereinigte ihn (Re-LAION). Der Fall wurde zum Referenzbeispiel für die Forderung nach Daten-Audits und Kuratierung statt reiner Skalierung.",
+      "title_de": "Debatte um Datensatz-Sicherheit; LAION-5B vorübergehend zurückgezogen",
+      "description_de": "Die Befunde verstärkten die wissenschaftliche und öffentliche Kritik daran, dass nachgelagerte Text-Bild-Modelle die Verzerrungen ihrer Trainingsdaten erben. Ende 2023 zog LAION den Datensatz LAION-5B nach einem separaten Befund zu illegalem Material vorübergehend zurück und bereinigte ihn (Re-LAION). Der Fall wurde zum Referenzbeispiel für die Forderung nach Daten-Audits und Kuratierung statt reiner Skalierung.",
+      "title_en": "Debate over dataset safety; LAION-5B temporarily withdrawn",
+      "description_en": "The findings reinforced scientific and public criticism that downstream text-to-image models inherit the biases of their training data. In late 2023 LAION temporarily withdrew the LAION-5B dataset after a separate finding of illegal material and cleaned it (Re-LAION). The case became a reference example for demands for data audits and curation instead of pure scaling.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/LAION"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/pdf/2306.13141",

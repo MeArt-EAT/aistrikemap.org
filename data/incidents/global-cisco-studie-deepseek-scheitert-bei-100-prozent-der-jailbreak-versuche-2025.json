@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf Gesundheit",
+    "körperliche Unversehrtheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf Gesundheit",
+    "körperliche Unversehrtheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to health",
+    "Physical integrity",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Cisco Systems",
@@ -55,7 +70,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-12",
+      "phase": "infrastructure",
+      "title": "DeepSeek baut ein reasoning-orientiertes Open-Source-Modell",
+      "description": "Das chinesische Startup DeepSeek entwickelte mit V3 und der R1-Reihe ein reasoning-orientiertes Sprachmodell, das per Reinforcement Learning Chain-of-Thought-Schritte lernt. Genau dieses schrittweise Reasoning, das die Leistung steigert, bildet die technische Grundlage, die Sicherheitsfilter umgehbar macht. Das Modell wurde unter einer freizügigen MIT-Lizenz vorbereitet, was breite, ungefilterte Nutzung ermöglichte.",
+      "title_de": "DeepSeek baut ein reasoning-orientiertes Open-Source-Modell",
+      "description_de": "Das chinesische Startup DeepSeek entwickelte mit V3 und der R1-Reihe ein reasoning-orientiertes Sprachmodell, das per Reinforcement Learning Chain-of-Thought-Schritte lernt. Genau dieses schrittweise Reasoning, das die Leistung steigert, bildet die technische Grundlage, die Sicherheitsfilter umgehbar macht. Das Modell wurde unter einer freizügigen MIT-Lizenz vorbereitet, was breite, ungefilterte Nutzung ermöglichte.",
+      "title_en": "DeepSeek builds a reasoning-oriented open-source model",
+      "description_en": "Chinese startup DeepSeek developed a reasoning-oriented language model in V3 and the R1 series that learns chain-of-thought steps via reinforcement learning. This very step-by-step reasoning, which boosts performance, forms the technical basis that makes safety filters circumventable. The model was prepared under a permissive MIT licence, enabling broad, unfiltered use.",
+      "sources": [
+        "https://www.sitepoint.com/deepseek-r1-open-source-reasoning/"
+      ]
+    },
+    {
+      "date": "2025-01-20",
+      "phase": "doctrine",
+      "title": "Veröffentlichung von DeepSeek R1 als offenes 'Thinking Model'",
+      "description": "Am 20. Januar 2025 veröffentlichte DeepSeek R1 als quelloffenes Reasoning-Modell und positionierte es als kostengünstige Alternative zu westlichen Spitzenmodellen. Die Geschäfts- und Veröffentlichungsentscheidung, ein leistungsstarkes Modell offen und mit minimalen Schutzschranken bereitzustellen, priorisierte Verbreitung und Benchmark-Werte gegenüber robuster Sicherheitsausrichtung. Das Modell verbreitete sich binnen Tagen global.",
+      "title_de": "Veröffentlichung von DeepSeek R1 als offenes 'Thinking Model'",
+      "description_de": "Am 20. Januar 2025 veröffentlichte DeepSeek R1 als quelloffenes Reasoning-Modell und positionierte es als kostengünstige Alternative zu westlichen Spitzenmodellen. Die Geschäfts- und Veröffentlichungsentscheidung, ein leistungsstarkes Modell offen und mit minimalen Schutzschranken bereitzustellen, priorisierte Verbreitung und Benchmark-Werte gegenüber robuster Sicherheitsausrichtung. Das Modell verbreitete sich binnen Tagen global.",
+      "title_en": "Release of DeepSeek R1 as an open 'thinking model'",
+      "description_en": "On 20 January 2025, DeepSeek released R1 as an open-source reasoning model, positioning it as a low-cost alternative to leading Western models. The business and release decision to ship a powerful model openly and with minimal guardrails prioritised distribution and benchmark scores over robust safety alignment. The model spread globally within days.",
+      "sources": [
+        "https://www.cnbc.com/2025/05/29/chinas-deepseek-releases-upgraded-r1-ai-model-in-openai-competition.html"
+      ]
+    },
+    {
+      "date": "2025-01-31",
+      "phase": "event",
+      "title": "Cisco-Studie: 100 % Erfolg bei Jailbreak-Versuchen gegen DeepSeek R1",
+      "description": "Ende Januar 2025 berichteten Sicherheitsforscher von Cisco und der University of Pennsylvania, dass DeepSeek R1 bei 50 Standard-Jailbreak-Prompts in jedem einzelnen Fall die Schutzfilter umging und schädliche Inhalte lieferte – darunter Desinformation, Anleitungen zu gefährlichen Chemikalien, Cybercrime-Tipps und belästigende Texte. Die Forscher führten die Schwäche unter anderem auf das Chain-of-Thought-Reasoning zurück, das Filterregeln Schritt für Schritt umschiffen lasse.",
+      "title_de": "Cisco-Studie: 100 % Erfolg bei Jailbreak-Versuchen gegen DeepSeek R1",
+      "description_de": "Ende Januar 2025 berichteten Sicherheitsforscher von Cisco und der University of Pennsylvania, dass DeepSeek R1 bei 50 Standard-Jailbreak-Prompts in jedem einzelnen Fall die Schutzfilter umging und schädliche Inhalte lieferte – darunter Desinformation, Anleitungen zu gefährlichen Chemikalien, Cybercrime-Tipps und belästigende Texte. Die Forscher führten die Schwäche unter anderem auf das Chain-of-Thought-Reasoning zurück, das Filterregeln Schritt für Schritt umschiffen lasse.",
+      "title_en": "Cisco study: 100% success on jailbreak attempts against DeepSeek R1",
+      "description_en": "In late January 2025, security researchers from Cisco and the University of Pennsylvania reported that DeepSeek R1 bypassed safety filters in every single one of 50 standard jailbreak prompts, producing harmful output including misinformation, instructions for hazardous chemicals, cybercrime tips and harassment content. The researchers attributed the weakness in part to chain-of-thought reasoning, which they argued lets the model walk around filter rules step by step.",
+      "sources": [
+        "https://fortune.com/2025/02/02/deepseek-ai-chatbot-security-jailbreak-attempts-openai-cisco/",
+        "https://www.tomsguide.com/ai/cisco-study-shows-deepseek-is-very-susceptible-to-attacks-heres-why"
+      ]
+    },
+    {
+      "date": "2025-02",
+      "phase": "consequences",
+      "title": "Red-Teaming-Debatte und regulatorischer Druck auf DeepSeek",
+      "description": "Die Befunde befeuerten eine breite Debatte über Red-Teaming und Sicherheitspflichten offener Modelle und untermauerten Forderungen US-amerikanischer Gesetzgeber nach strengeren Exportkontrollen und Datenschutz-Prüfungen für DeepSeek. Mehrere Behörden und Unternehmen schränkten daraufhin die Nutzung ein. Der Fall wurde zum Referenzbeispiel dafür, dass starke Reasoning-Fähigkeit ohne robuste Ausrichtung zur Schwachstelle wird.",
+      "title_de": "Red-Teaming-Debatte und regulatorischer Druck auf DeepSeek",
+      "description_de": "Die Befunde befeuerten eine breite Debatte über Red-Teaming und Sicherheitspflichten offener Modelle und untermauerten Forderungen US-amerikanischer Gesetzgeber nach strengeren Exportkontrollen und Datenschutz-Prüfungen für DeepSeek. Mehrere Behörden und Unternehmen schränkten daraufhin die Nutzung ein. Der Fall wurde zum Referenzbeispiel dafür, dass starke Reasoning-Fähigkeit ohne robuste Ausrichtung zur Schwachstelle wird.",
+      "title_en": "Red-teaming debate and regulatory pressure on DeepSeek",
+      "description_en": "The findings fuelled a broad debate over red-teaming and the safety obligations of open models and bolstered US lawmakers' calls for tighter export controls and privacy reviews of DeepSeek. Several agencies and companies subsequently restricted its use. The case became a reference example that strong reasoning ability without robust alignment turns into a vulnerability.",
+      "sources": [
+        "https://www.zwillgen.com/artificial-intelligence/deepseek-jailbreaking-concerns-highlight-importance-of-red-teaming/",
+        "https://chinaselectcommittee.house.gov/media/press-releases/moolenaar-krishnamoorthi-call-for-tightening-export-controls-on-chips-critical-to-china-s-ai-platform-deepseek-and-other-measures-to-address-its-risks-to-americans-data-and-security"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://fortune.com/2025/02/02/deepseek-ai-chatbot-security-jailbreak-attempts-openai-cisco/",

@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Data protection",
+    "Protection from manipulation",
+    "Privacy"
+  ],
   "asm:actors": [
     {
       "name": "Apple",
@@ -41,7 +56,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-06-10",
+      "phase": "infrastructure",
+      "title": "Apple stellt 'Apple Intelligence' auf der WWDC vor",
+      "description": "Auf der WWDC am 10. Juni 2024 kündigte Apple 'Apple Intelligence' an: ein generatives KI-System, das Texte zusammenfasst, Mails und Benachrichtigungen automatisch priorisiert und umformuliert. Die Klassifikation läuft als Zero-Shot-Auswertung primär am Textinhalt, ohne Absender-Reputation oder Spam-Signale stark zu gewichten. Damit war die technische Grundlage geschaffen, auf der später auch Betrugsnachrichten als 'wichtig' eingestuft werden konnten.",
+      "title_de": "Apple stellt 'Apple Intelligence' auf der WWDC vor",
+      "description_de": "Auf der WWDC am 10. Juni 2024 kündigte Apple 'Apple Intelligence' an: ein generatives KI-System, das Texte zusammenfasst, Mails und Benachrichtigungen automatisch priorisiert und umformuliert. Die Klassifikation läuft als Zero-Shot-Auswertung primär am Textinhalt, ohne Absender-Reputation oder Spam-Signale stark zu gewichten. Damit war die technische Grundlage geschaffen, auf der später auch Betrugsnachrichten als 'wichtig' eingestuft werden konnten.",
+      "title_en": "Apple unveils 'Apple Intelligence' at WWDC",
+      "description_en": "At WWDC on 10 June 2024 Apple announced 'Apple Intelligence', a generative AI system that summarises text and automatically prioritises and rephrases mails and notifications. The classification runs as a zero-shot evaluation that focuses on text content rather than strongly weighting sender reputation or spam signals. This laid the technical foundation on which scam messages could later be ranked as 'important'.",
+      "sources": [
+        "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "doctrine",
+      "title": "Marktstart mit iOS 18.1 stellt KI-Priorisierung in den Vordergrund",
+      "description": "Mit iOS 18.1 brachte Apple Apple Intelligence ab Oktober 2024 in die Breite und bewarb die automatische Priorisierung sowie Benachrichtigungs-Zusammenfassungen als Komfort-Highlight. Die Produktentscheidung, einer KI-Einstufung sichtbar Vertrauen ('Priority') zu verleihen, verlagerte die Kritiklast auf die Nutzer:innen. Eine robuste Phishing-Abwehr oder Absender-Prüfung war in der Priorisierungslogik nicht vorgesehen.",
+      "title_de": "Marktstart mit iOS 18.1 stellt KI-Priorisierung in den Vordergrund",
+      "description_de": "Mit iOS 18.1 brachte Apple Apple Intelligence ab Oktober 2024 in die Breite und bewarb die automatische Priorisierung sowie Benachrichtigungs-Zusammenfassungen als Komfort-Highlight. Die Produktentscheidung, einer KI-Einstufung sichtbar Vertrauen ('Priority') zu verleihen, verlagerte die Kritiklast auf die Nutzer:innen. Eine robuste Phishing-Abwehr oder Absender-Prüfung war in der Priorisierungslogik nicht vorgesehen.",
+      "title_en": "iOS 18.1 launch foregrounds AI prioritisation",
+      "description_en": "With iOS 18.1, Apple rolled Apple Intelligence out broadly from October 2024 and promoted automatic prioritisation and notification summaries as a comfort highlight. The product decision to grant an AI ranking visible trust ('Priority') shifted the burden of scepticism onto users. Robust phishing defence or sender verification was not part of the prioritisation logic.",
+      "sources": [
+        "https://www.apple.com/newsroom/2024/06/wwdc24-highlights/"
+      ]
+    },
+    {
+      "date": "2024-12",
+      "phase": "event",
+      "title": "KI markiert Phishing-Mails als 'Priority' und glättet ihren Ton",
+      "description": "Ende 2024 dokumentierten Sicherheitsforscher und Tech-Medien, dass Apple Intelligence Phishing- und Betrugs-Mails wiederholt als 'Priority' einstufte und in einem seriös wirkenden Ton zusammenfasste. Weil sich die KI nur am Textinhalt orientiert und Absender-Adressen ignoriert, verlieh sie betrügerischen Nachrichten zusätzliche Glaubwürdigkeit. Für unkritische Nutzer:innen erhöhte das die Gefahr finanzieller Schäden.",
+      "title_de": "KI markiert Phishing-Mails als 'Priority' und glättet ihren Ton",
+      "description_de": "Ende 2024 dokumentierten Sicherheitsforscher und Tech-Medien, dass Apple Intelligence Phishing- und Betrugs-Mails wiederholt als 'Priority' einstufte und in einem seriös wirkenden Ton zusammenfasste. Weil sich die KI nur am Textinhalt orientiert und Absender-Adressen ignoriert, verlieh sie betrügerischen Nachrichten zusätzliche Glaubwürdigkeit. Für unkritische Nutzer:innen erhöhte das die Gefahr finanzieller Schäden.",
+      "title_en": "AI flags phishing emails as 'Priority' and smooths their tone",
+      "description_en": "In late 2024, security researchers and tech outlets documented that Apple Intelligence repeatedly ranked phishing and scam emails as 'Priority' and summarised them in a sober-sounding tone. Because the AI relies only on text content and ignores sender addresses, it lent fraudulent messages additional credibility. For less critical users this increased the risk of financial harm.",
+      "sources": [
+        "https://www.androidauthority.com/apple-intelligence-falling-for-phishing-emails-3467871/",
+        "https://www.tomsguide.com/ai/apple-intelligence-is-marking-phishing-scams-as-priority-emails-heres-what-you-need-to-know"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "phase": "consequences",
+      "title": "Apple schränkt Zusammenfassungen ein und kennzeichnet KI-Text",
+      "description": "Nach anhaltender Kritik – auch an fehlerhaften Nachrichten-Zusammenfassungen – schränkte Apple mit iOS 18.3 die Benachrichtigungs-Zusammenfassungen ein, deaktivierte sie für News- und Unterhaltungs-Apps und kennzeichnete KI-generierten Text künftig kursiv. Die Episode wurde zum oft zitierten Beispiel dafür, wie KI-'Priorisierung' Vertrauen falsch lenken kann.",
+      "title_de": "Apple schränkt Zusammenfassungen ein und kennzeichnet KI-Text",
+      "description_de": "Nach anhaltender Kritik – auch an fehlerhaften Nachrichten-Zusammenfassungen – schränkte Apple mit iOS 18.3 die Benachrichtigungs-Zusammenfassungen ein, deaktivierte sie für News- und Unterhaltungs-Apps und kennzeichnete KI-generierten Text künftig kursiv. Die Episode wurde zum oft zitierten Beispiel dafür, wie KI-'Priorisierung' Vertrauen falsch lenken kann.",
+      "title_en": "Apple curbs summaries and labels AI text",
+      "description_en": "After sustained criticism, including over inaccurate news summaries, Apple curtailed notification summaries in iOS 18.3, disabled them for news and entertainment apps and began italicising AI-generated text. The episode became a frequently cited example of how AI 'prioritisation' can misdirect user trust.",
+      "sources": [
+        "https://www.tomsguide.com/ai/apple-intelligence/apple-temporarily-limits-notification-summaries-in-ios-18-3-update-heres-why",
+        "https://www.techradar.com/computing/artificial-intelligence/how-to-turn-off-apple-intelligence-notification-summaries"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.androidauthority.com/apple-intelligence-falling-for-phishing-emails-3467871/",

@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "TA547 (criminal threat actor)",
@@ -48,7 +63,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-09",
+      "phase": "infrastructure",
+      "title": "Rhadamanthys-Infostealer als Malware-as-a-Service verfügbar",
+      "description": "Ab August/September 2022 wurde der modulare C++-Infostealer Rhadamanthys unter dem Alias 'kingcrete2022' in russischsprachigen Untergrund-Foren als Malware-as-a-Service vermietet. Das Geschäftsmodell senkte die technische Einstiegshürde drastisch: Kriminelle ohne eigene Entwicklungskapazität konnten Browser-Anmeldedaten, Krypto-Wallets und Session-Cookies absaugen. Diese kommerzielle Verfügbarkeit war die technische Vorbedingung des Angriffs.",
+      "title_de": "Rhadamanthys-Infostealer als Malware-as-a-Service verfügbar",
+      "description_de": "Ab August/September 2022 wurde der modulare C++-Infostealer Rhadamanthys unter dem Alias 'kingcrete2022' in russischsprachigen Untergrund-Foren als Malware-as-a-Service vermietet. Das Geschäftsmodell senkte die technische Einstiegshürde drastisch: Kriminelle ohne eigene Entwicklungskapazität konnten Browser-Anmeldedaten, Krypto-Wallets und Session-Cookies absaugen. Diese kommerzielle Verfügbarkeit war die technische Vorbedingung des Angriffs.",
+      "title_en": "Rhadamanthys infostealer available as malware-as-a-service",
+      "description_en": "From August/September 2022 the modular C++ infostealer Rhadamanthys was rented under the alias 'kingcrete2022' on Russian-speaking underground forums as malware-as-a-service. The business model sharply lowered the technical barrier to entry: criminals without their own development capacity could exfiltrate browser credentials, crypto wallets and session cookies. This commercial availability was the technical precondition of the attack.",
+      "sources": [
+        "https://thehackernews.com/2023/12/rhadamanthys-malware-swiss-army-knife.html"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "TA547 etabliert sich als Initial Access Broker mit Wechsel-Payloads",
+      "description": "Der finanziell motivierte Akteur TA547 wird seit 2023 von Proofpoint als Initial Access Broker eingestuft, der erbeuteten Erstzugang weiterverkauft. Das Geschäftsmodell verlangt ständig wechselnde Payloads (zuvor NetSupport RAT, StealC, Lumma Stealer), um Signatur-Erkennung zu umgehen. Der wirtschaftliche Anreiz, Effizienz und Tarnung zu maximieren, legitimierte den Einsatz generativer KI zur Code-Erzeugung.",
+      "title_de": "TA547 etabliert sich als Initial Access Broker mit Wechsel-Payloads",
+      "description_de": "Der finanziell motivierte Akteur TA547 wird seit 2023 von Proofpoint als Initial Access Broker eingestuft, der erbeuteten Erstzugang weiterverkauft. Das Geschäftsmodell verlangt ständig wechselnde Payloads (zuvor NetSupport RAT, StealC, Lumma Stealer), um Signatur-Erkennung zu umgehen. Der wirtschaftliche Anreiz, Effizienz und Tarnung zu maximieren, legitimierte den Einsatz generativer KI zur Code-Erzeugung.",
+      "title_en": "TA547 establishes itself as an initial access broker with rotating payloads",
+      "description_en": "The financially motivated actor TA547 has been classified by Proofpoint since 2023 as an initial access broker reselling stolen initial access. The business model requires constantly rotating payloads (previously NetSupport RAT, StealC, Lumma Stealer) to evade signature detection. The economic incentive to maximise efficiency and stealth legitimised the use of generative AI for code generation.",
+      "sources": [
+        "https://www.proofpoint.com/us/blog/threat-insight/security-brief-ta547-targets-german-organizations-rhadamanthys-stealer"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "phase": "event",
+      "title": "Phishing-Welle mit LLM-generiertem PowerShell-Dropper gegen deutsche Firmen",
+      "description": "Proofpoint dokumentierte im April 2024 eine Phishing-Kampagne, die sich als deutscher Metro-Konzern ausgab und Rechnungs-Mails branchenübergreifend an deutsche Unternehmen verschickte. Eine passwortgeschützte ZIP enthielt eine LNK-Datei, die einen PowerShell-Dropper startete und Rhadamanthys direkt in den Speicher lud. Der deobfuskierte PowerShell-Code trug grammatikalisch korrekte, hyperspezifische Kommentare über jeder Funktion - laut Proofpoint die typische Signatur eines LLM-Outputs (ChatGPT, Gemini oder Copilot).",
+      "title_de": "Phishing-Welle mit LLM-generiertem PowerShell-Dropper gegen deutsche Firmen",
+      "description_de": "Proofpoint dokumentierte im April 2024 eine Phishing-Kampagne, die sich als deutscher Metro-Konzern ausgab und Rechnungs-Mails branchenübergreifend an deutsche Unternehmen verschickte. Eine passwortgeschützte ZIP enthielt eine LNK-Datei, die einen PowerShell-Dropper startete und Rhadamanthys direkt in den Speicher lud. Der deobfuskierte PowerShell-Code trug grammatikalisch korrekte, hyperspezifische Kommentare über jeder Funktion - laut Proofpoint die typische Signatur eines LLM-Outputs (ChatGPT, Gemini oder Copilot).",
+      "title_en": "Phishing wave with LLM-generated PowerShell dropper against German firms",
+      "description_en": "In April 2024 Proofpoint documented a phishing campaign impersonating Germany's Metro retail group and sending invoice-themed emails to German companies across industries. A password-protected ZIP contained an LNK file that launched a PowerShell dropper and loaded Rhadamanthys directly into memory. The deobfuscated PowerShell code carried grammatically correct, hyper-specific comments above each function - per Proofpoint the hallmark of LLM-generated output (ChatGPT, Gemini or Copilot).",
+      "sources": [
+        "https://thehackernews.com/2024/04/ta547-phishing-attack-hits-german-firms.html"
+      ]
+    },
+    {
+      "date": "2024-04-10",
+      "phase": "consequences",
+      "title": "Öffentliche Warnung vor KI-gestützter Schadcode-Erzeugung",
+      "description": "Proofpoints Veröffentlichung machte den Fall zu einem der ersten öffentlich belegten Beispiele für vermutlich LLM-generierten Schadcode in einer realen Kampagne und wurde breit in der Fachpresse aufgegriffen. Sicherheitsforscher warnten, dass generative KI die Code-Produktion für Cyberkriminelle beschleunige und Einstiegshürden weiter senke. Der Fall verstärkte die Debatte über Missbrauchssicherungen kommerzieller KI-Assistenten.",
+      "title_de": "Öffentliche Warnung vor KI-gestützter Schadcode-Erzeugung",
+      "description_de": "Proofpoints Veröffentlichung machte den Fall zu einem der ersten öffentlich belegten Beispiele für vermutlich LLM-generierten Schadcode in einer realen Kampagne und wurde breit in der Fachpresse aufgegriffen. Sicherheitsforscher warnten, dass generative KI die Code-Produktion für Cyberkriminelle beschleunige und Einstiegshürden weiter senke. Der Fall verstärkte die Debatte über Missbrauchssicherungen kommerzieller KI-Assistenten.",
+      "title_en": "Public warning about AI-assisted malware generation",
+      "description_en": "Proofpoint's publication made the case one of the first publicly documented examples of suspected LLM-generated malicious code in a real campaign and was widely picked up by the trade press. Security researchers warned that generative AI accelerates code production for cybercriminals and further lowers barriers to entry. The case intensified the debate about abuse safeguards in commercial AI assistants.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/malicious-powershell-script-pushing-malware-looks-ai-written/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.proofpoint.com/uk/blog/threat-insight/security-brief-ta547-targets-german-organizations-rhadamanthys-stealer",

@@ -26,9 +26,27 @@
     "data-misuse",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Kinderrechte",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Kinderrechte",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Privacy",
+    "Children's rights",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "LAION e.V.",
@@ -42,7 +60,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Common Crawl liefert ungefilterte Web-Datenbasis",
+      "description": "LAION-400M besteht aus Bild-Text-Paaren, die aus den offenen Common-Crawl-Web-Dumps der Jahre 2014 bis 2021 extrahiert wurden. Diese Roh-Crawls bilden ungefilterte Inhalte des offenen Internets ab - einschließlich pornografischer, gewaltverherrlichender und stereotypisierender Seiten. Damit war die toxische Substanz bereits in der Datenquelle angelegt, bevor LAION sie aufbereitete.",
+      "title_de": "Common Crawl liefert ungefilterte Web-Datenbasis",
+      "description_de": "LAION-400M besteht aus Bild-Text-Paaren, die aus den offenen Common-Crawl-Web-Dumps der Jahre 2014 bis 2021 extrahiert wurden. Diese Roh-Crawls bilden ungefilterte Inhalte des offenen Internets ab - einschließlich pornografischer, gewaltverherrlichender und stereotypisierender Seiten. Damit war die toxische Substanz bereits in der Datenquelle angelegt, bevor LAION sie aufbereitete.",
+      "title_en": "Common Crawl supplies unfiltered web data foundation",
+      "description_en": "LAION-400M consists of image-text pairs extracted from the open Common Crawl web dumps spanning 2014 to 2021. These raw crawls mirror the unfiltered contents of the open internet, including pornographic, violent and stereotyping pages. The toxic substance was therefore already embedded in the data source before LAION processed it.",
+      "sources": [
+        "https://commoncrawl.org/"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "doctrine",
+      "title": "LAION veröffentlicht 400M-Datensatz mit reinem CLIP-Schwellenwert-Filter",
+      "description": "Der deutsche Verein LAION e.V. um Christoph Schuhmann verfolgte das Ziel, einen frei verfügbaren, web-skaligen Trainingsdatensatz für multimodale Modelle zu schaffen. Die Kuratierung beschränkte sich darauf, Paare mit einer CLIP-Aehnlichkeit unter 0,281 sowie nicht-englische Captions zu entfernen; ein optionaler NSFW-Score wurde nur als Marker mitgeliefert. Diese Methodik priorisierte Offenheit und Skalierung über inhaltliche Sicherheit.",
+      "title_de": "LAION veröffentlicht 400M-Datensatz mit reinem CLIP-Schwellenwert-Filter",
+      "description_de": "Der deutsche Verein LAION e.V. um Christoph Schuhmann verfolgte das Ziel, einen frei verfügbaren, web-skaligen Trainingsdatensatz für multimodale Modelle zu schaffen. Die Kuratierung beschränkte sich darauf, Paare mit einer CLIP-Aehnlichkeit unter 0,281 sowie nicht-englische Captions zu entfernen; ein optionaler NSFW-Score wurde nur als Marker mitgeliefert. Diese Methodik priorisierte Offenheit und Skalierung über inhaltliche Sicherheit.",
+      "title_en": "LAION releases 400M dataset with mere CLIP-threshold filter",
+      "description_en": "The German non-profit LAION e.V., led by Christoph Schuhmann, set out to build a freely available, web-scale training dataset for multimodal models. Curation was limited to removing pairs with a CLIP similarity below 0.281 and non-English captions; an optional NSFW score was shipped only as a marker. This methodology prioritised openness and scale over content safety.",
+      "sources": [
+        "https://arxiv.org/abs/2111.02114",
+        "https://laion.ai/blog/laion-400-open-dataset/"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "event",
+      "title": "Studie weist toxische und pornografische Inhalte im Datensatz nach",
+      "description": "Ein Team um die Kognitionswissenschaftlerin Abeba Birhane zeigte in 'Multimodal datasets: misogyny, pornography, and malignant stereotypes', dass LAION-400M explizite Darstellungen, Vergewaltigungsmotive, frauenfeindliche und rassistische Stereotype sowie ethnische Beschimpfungen enthält. Suchanfragen wie 'Nun' oder 'Black woman' lieferten überproportional pornografische oder stereotype Treffer. Die NSFW-Filter entfernten toxische Text-Bild-Paare nicht zuverlässig.",
+      "title_de": "Studie weist toxische und pornografische Inhalte im Datensatz nach",
+      "description_de": "Ein Team um die Kognitionswissenschaftlerin Abeba Birhane zeigte in 'Multimodal datasets: misogyny, pornography, and malignant stereotypes', dass LAION-400M explizite Darstellungen, Vergewaltigungsmotive, frauenfeindliche und rassistische Stereotype sowie ethnische Beschimpfungen enthält. Suchanfragen wie 'Nun' oder 'Black woman' lieferten überproportional pornografische oder stereotype Treffer. Die NSFW-Filter entfernten toxische Text-Bild-Paare nicht zuverlässig.",
+      "title_en": "Study documents toxic and pornographic content in the dataset",
+      "description_en": "A team led by cognitive scientist Abeba Birhane showed in 'Multimodal datasets: misogyny, pornography, and malignant stereotypes' that LAION-400M contains explicit imagery, rape motifs, misogynistic and racist stereotypes and ethnic slurs. Queries such as 'Nun' or 'Black woman' returned disproportionately pornographic or stereotyping results. The NSFW filters failed to reliably remove toxic image-text pairs.",
+      "sources": [
+        "https://arxiv.org/abs/2110.01963"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "consequences",
+      "title": "Stanford findet CSAM, LAION nimmt Datensätze offline",
+      "description": "Im Dezember 2023 wies das Stanford Internet Observatory über 3.200 mutmaßliche Darstellungen sexualisierter Kindesgewalt (CSAM) im verwandten LAION-5B-Datensatz nach, 1.008 davon extern bestätigt. LAION nahm daraufhin sämtliche Datensätze - inklusive LAION-400M - vorsorglich offline. Die Funde belegten, dass die Probleme der 2021er-Studie nicht behoben worden waren und auf darauf trainierte Bildgeneratoren wie Stable Diffusion durchschlugen.",
+      "title_de": "Stanford findet CSAM, LAION nimmt Datensätze offline",
+      "description_de": "Im Dezember 2023 wies das Stanford Internet Observatory über 3.200 mutmaßliche Darstellungen sexualisierter Kindesgewalt (CSAM) im verwandten LAION-5B-Datensatz nach, 1.008 davon extern bestätigt. LAION nahm daraufhin sämtliche Datensätze - inklusive LAION-400M - vorsorglich offline. Die Funde belegten, dass die Probleme der 2021er-Studie nicht behoben worden waren und auf darauf trainierte Bildgeneratoren wie Stable Diffusion durchschlugen.",
+      "title_en": "Stanford finds CSAM, LAION takes datasets offline",
+      "description_en": "In December 2023 the Stanford Internet Observatory identified more than 3,200 suspected instances of child sexual abuse material (CSAM) in the related LAION-5B dataset, 1,008 of them externally confirmed. LAION subsequently took down all of its datasets - including LAION-400M - as a precaution. The findings showed the problems flagged in the 2021 study had not been fixed and propagated into image generators trained on it, such as Stable Diffusion.",
+      "sources": [
+        "https://www.404media.co/laion-datasets-removed-stanford-csam-child-abuse/"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "consequences",
+      "title": "Re-LAION-5B als bereinigte Nachfolgeversion veröffentlicht",
+      "description": "LAION veröffentlichte mit Re-LAION-5B eine überarbeitete Fassung, die in Zusammenarbeit mit der Internet Watch Foundation, dem Canadian Center for Child Protection und dem Stanford Internet Observatory von bekannten CSAM-Links bereinigt wurde; 2.236 Links wurden entfernt. Der Vorgang gilt als Lehrstück dafür, dass bloße Aehnlichkeits-Filter web-skaliger Datensätze keine inhaltliche Sicherheit garantieren.",
+      "title_de": "Re-LAION-5B als bereinigte Nachfolgeversion veröffentlicht",
+      "description_de": "LAION veröffentlichte mit Re-LAION-5B eine überarbeitete Fassung, die in Zusammenarbeit mit der Internet Watch Foundation, dem Canadian Center for Child Protection und dem Stanford Internet Observatory von bekannten CSAM-Links bereinigt wurde; 2.236 Links wurden entfernt. Der Vorgang gilt als Lehrstück dafür, dass bloße Aehnlichkeits-Filter web-skaliger Datensätze keine inhaltliche Sicherheit garantieren.",
+      "title_en": "Re-LAION-5B published as cleaned successor version",
+      "description_en": "LAION released Re-LAION-5B, a revised version cleaned of known CSAM links in cooperation with the Internet Watch Foundation, the Canadian Center for Child Protection and the Stanford Internet Observatory; 2,236 links were removed. The episode is regarded as a cautionary lesson that mere similarity filters on web-scale datasets cannot guarantee content safety.",
+      "sources": [
+        "https://laion.ai/blog/relaion-5b/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/abs/2110.01963",
