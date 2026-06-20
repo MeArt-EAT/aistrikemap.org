@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Recht auf Arbeit"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Recht auf Arbeit"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Protection from manipulation",
+    "Right to work"
+  ],
   "asm:actors": [
     {
       "name": "Viggle",
@@ -53,7 +68,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Gründung von Viggle in Toronto und Aufbau des JST-1-Video-3D-Foundation-Modells",
+      "description": "Hang Chu gründet 2022 in Toronto das Startup Viggle, das auf dem proprietären Video-3D-Foundation-Modell JST-1 basiert. Das Modell braucht zum Training riesige Mengen an Videomaterial mit Menschen in Bewegung. Frei zugängliche Plattformen wie YouTube werden zur naheliegenden, aber rechtlich ungeklärten Datenquelle.",
+      "title_de": "Gründung von Viggle in Toronto und Aufbau des JST-1-Video-3D-Foundation-Modells",
+      "description_de": "Hang Chu gründet 2022 in Toronto das Startup Viggle, das auf dem proprietären Video-3D-Foundation-Modell JST-1 basiert. Das Modell braucht zum Training riesige Mengen an Videomaterial mit Menschen in Bewegung. Frei zugängliche Plattformen wie YouTube werden zur naheliegenden, aber rechtlich ungeklärten Datenquelle.",
+      "title_en": "Viggle founded in Toronto, building the JST-1 video-3D foundation model",
+      "description_en": "In 2022 Hang Chu founds the startup Viggle in Toronto, built on the proprietary JST-1 video-3D foundation model. Training the model requires vast amounts of video showing people in motion. Freely accessible platforms such as YouTube become an obvious but legally unsettled source of data.",
+      "sources": [
+        "https://betakit.com/viggle-ai-closes-26-million-cad-series-a-to-expand-ai-powered-video-generator/"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "doctrine",
+      "title": "Branchenweite Praxis: Scraping öffentlicher YouTube-Videos als Standard-Trainingsstrategie",
+      "description": "Im Sommer 2024 deckt eine Investigativ-Recherche auf, dass mehrere große Tech-Unternehmen YouTube-Untertitel und -Videos ohne Wissen der Urheber zum KI-Training nutzten. Das Geschäftsmodell der generativen Video-KI beruht auf der Annahme, frei abrufbares Material sei faires Trainingsfutter. YouTube-CEO Neal Mohan stellt klar, dass das Abgreifen von Videos ohne Erlaubnis ein klarer Verstoß gegen die Nutzungsbedingungen ist.",
+      "title_de": "Branchenweite Praxis: Scraping öffentlicher YouTube-Videos als Standard-Trainingsstrategie",
+      "description_de": "Im Sommer 2024 deckt eine Investigativ-Recherche auf, dass mehrere große Tech-Unternehmen YouTube-Untertitel und -Videos ohne Wissen der Urheber zum KI-Training nutzten. Das Geschäftsmodell der generativen Video-KI beruht auf der Annahme, frei abrufbares Material sei faires Trainingsfutter. YouTube-CEO Neal Mohan stellt klar, dass das Abgreifen von Videos ohne Erlaubnis ein klarer Verstoß gegen die Nutzungsbedingungen ist.",
+      "title_en": "Industry-wide practice: scraping public YouTube videos as a default training strategy",
+      "description_en": "In summer 2024 an investigation reveals that several large tech companies used YouTube subtitles and videos to train AI without creators' knowledge. The business model of generative video AI rests on the assumption that freely accessible material is fair training fodder. YouTube CEO Neal Mohan makes clear that harvesting videos without permission is a clear violation of the terms of service.",
+      "sources": [
+        "https://techcrunch.com/2024/12/16/youtube-will-let-creators-opt-out-into-third-party-ai-training/"
+      ]
+    },
+    {
+      "date": "2024-08-26",
+      "phase": "event",
+      "title": "Viggle-CEO bestätigt Training von JST-1 auf YouTube-Videos ohne Einwilligung",
+      "description": "Im August 2024 bestätigt Viggle-CEO Hang Chu gegenüber TechCrunch, dass das Modell JST-1 unter anderem auf YouTube-Videos trainiert wurde. Die volle Herkunft der Trainingsdaten legt das Unternehmen nicht offen. Weder die abgebildeten Personen noch die Urheber der Videos hatten in die Nutzung eingewilligt.",
+      "title_de": "Viggle-CEO bestätigt Training von JST-1 auf YouTube-Videos ohne Einwilligung",
+      "description_de": "Im August 2024 bestätigt Viggle-CEO Hang Chu gegenüber TechCrunch, dass das Modell JST-1 unter anderem auf YouTube-Videos trainiert wurde. Die volle Herkunft der Trainingsdaten legt das Unternehmen nicht offen. Weder die abgebildeten Personen noch die Urheber der Videos hatten in die Nutzung eingewilligt.",
+      "title_en": "Viggle CEO confirms JST-1 was trained on YouTube videos without consent",
+      "description_en": "In August 2024 Viggle CEO Hang Chu confirms to TechCrunch that the JST-1 model was trained in part on YouTube videos. The company does not disclose the full provenance of its training data. Neither the people shown nor the creators of the videos had consented to this use.",
+      "sources": [
+        "https://techcrunch.com/2024/08/26/viggle-makes-controllable-ai-characters-for-memes-and-visualizing-ideas/"
+      ]
+    },
+    {
+      "date": "2024-08-27",
+      "phase": "consequences",
+      "title": "YouTube erklärt Nutzung zur klaren Regelverletzung; Debatte über Urheberrechte an Trainingsdaten",
+      "description": "YouTube-CEO Neal Mohan bezeichnet die unerlaubte Nutzung als klaren Verstoß gegen die Plattformregeln. Der Fall verstärkt die öffentliche und juristische Debatte über das ungenehmigte Abgreifen kreativer Inhalte und reiht sich in ähnliche Vorwürfe gegen Apple, Nvidia, Anthropic und OpenAI ein.",
+      "title_de": "YouTube erklärt Nutzung zur klaren Regelverletzung; Debatte über Urheberrechte an Trainingsdaten",
+      "description_de": "YouTube-CEO Neal Mohan bezeichnet die unerlaubte Nutzung als klaren Verstoß gegen die Plattformregeln. Der Fall verstärkt die öffentliche und juristische Debatte über das ungenehmigte Abgreifen kreativer Inhalte und reiht sich in ähnliche Vorwürfe gegen Apple, Nvidia, Anthropic und OpenAI ein.",
+      "title_en": "YouTube calls the use a clear rule violation; debate over copyright in training data",
+      "description_en": "YouTube CEO Neal Mohan calls the unauthorised use a clear violation of platform rules. The case fuels the public and legal debate over the unconsented harvesting of creative content and joins similar allegations against Apple, Nvidia, Anthropic and OpenAI.",
+      "sources": [
+        "https://techcrunch.com/2024/12/16/youtube-will-let-creators-opt-out-into-third-party-ai-training/"
+      ]
+    },
+    {
+      "date": "2024-12-16",
+      "phase": "consequences",
+      "title": "YouTube führt Opt-in-Mechanismus für Drittanbieter-KI-Training ein",
+      "description": "Im Dezember 2024 kündigt YouTube ein Tool an, mit dem Creator dem Training durch ausgewählte Drittanbieter aktiv zustimmen können. Der Schritt ist eine direkte Reaktion auf die Welle ungenehmigter Datennutzung und etabliert erstmals eine Einwilligungs-Architektur für KI-Trainingsdaten auf der Plattform.",
+      "title_de": "YouTube führt Opt-in-Mechanismus für Drittanbieter-KI-Training ein",
+      "description_de": "Im Dezember 2024 kündigt YouTube ein Tool an, mit dem Creator dem Training durch ausgewählte Drittanbieter aktiv zustimmen können. Der Schritt ist eine direkte Reaktion auf die Welle ungenehmigter Datennutzung und etabliert erstmals eine Einwilligungs-Architektur für KI-Trainingsdaten auf der Plattform.",
+      "title_en": "YouTube introduces an opt-in mechanism for third-party AI training",
+      "description_en": "In December 2024 YouTube announces a tool letting creators actively consent to training by selected third parties. The move is a direct response to the wave of unauthorised data use and establishes, for the first time, a consent architecture for AI training data on the platform.",
+      "sources": [
+        "https://techcrunch.com/2024/12/16/youtube-will-let-creators-opt-out-into-third-party-ai-training/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/08/26/viggle-makes-controllable-ai-characters-for-memes-and-visualizing-ideas/",

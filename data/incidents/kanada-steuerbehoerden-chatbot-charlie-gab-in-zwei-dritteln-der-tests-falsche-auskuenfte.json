@@ -8,9 +8,9 @@
   "name": "Kanada: Steuerbehörden-Chatbot 'Charlie' gab in zwei Dritteln der Tests falsche Auskünfte",
   "name_de": "Kanada: Steuerbehörden-Chatbot 'Charlie' gab in zwei Dritteln der Tests falsche Auskünfte",
   "name_en": "Canada: Tax agency chatbot 'Charlie' gave wrong answers in two-thirds of tests",
-  "description": "Der seit März 2020 auf mehreren Webseiten der kanadischen Steuerbehörde CRA eingesetzte KI-Chatbot 'Charlie' gab Steuerzahler:innen wiederholt unzutreffende Auskünfte. Eine Prüfung durch die Auditor General fand heraus, dass der Bot nur in etwa 44 Prozent der getesteten Fälle korrekt antwortete, also bei rund zwei Dritteln falsch lag. Die CRA gab nach Medienberichten knapp 20 Millionen kanadische Dollar für das System aus, das von Millionen Nutzer:innen verwendet wurde.",
-  "description_de": "Der seit März 2020 auf mehreren Webseiten der kanadischen Steuerbehörde CRA eingesetzte KI-Chatbot 'Charlie' gab Steuerzahler:innen wiederholt unzutreffende Auskünfte. Eine Prüfung durch die Auditor General fand heraus, dass der Bot nur in etwa 44 Prozent der getesteten Fälle korrekt antwortete, also bei rund zwei Dritteln falsch lag. Die CRA gab nach Medienberichten knapp 20 Millionen kanadische Dollar für das System aus, das von Millionen Nutzer:innen verwendet wurde.",
-  "description_en": "The AI chatbot 'Charlie', deployed since March 2020 across several webpages of the Canada Revenue Agency (CRA), repeatedly gave taxpayers inaccurate guidance. An audit by the Auditor General found that the bot answered correctly in only about 44 percent of tested cases, meaning it was wrong roughly two-thirds of the time. According to media reports the CRA spent nearly 20 million Canadian dollars on the system, which was used by millions of people.",
+  "description": "Der seit Februar 2020 auf mehreren Webseiten der kanadischen Steuerbehörde CRA eingesetzte KI-Chatbot 'Charlie' gab Steuerzahler:innen wiederholt unzutreffende Auskünfte. Eine Prüfung durch die Auditor General fand heraus, dass der Bot nur in etwa einem Drittel der getesteten Fälle korrekt antwortete (zwei von sechs Testfragen), also bei rund zwei Dritteln falsch lag. Die CRA gab nach Medienberichten knapp 20 Millionen kanadische Dollar für das System aus, das von Millionen Nutzer:innen verwendet wurde.",
+  "description_de": "Der seit Februar 2020 auf mehreren Webseiten der kanadischen Steuerbehörde CRA eingesetzte KI-Chatbot 'Charlie' gab Steuerzahler:innen wiederholt unzutreffende Auskünfte. Eine Prüfung durch die Auditor General fand heraus, dass der Bot nur in etwa einem Drittel der getesteten Fälle korrekt antwortete (zwei von sechs Testfragen), also bei rund zwei Dritteln falsch lag. Die CRA gab nach Medienberichten knapp 20 Millionen kanadische Dollar für das System aus, das von Millionen Nutzer:innen verwendet wurde.",
+  "description_en": "The AI chatbot 'Charlie', deployed since February 2020 across several webpages of the Canada Revenue Agency (CRA), repeatedly gave taxpayers inaccurate guidance. An audit by the Auditor General found that the bot answered correctly in only about one-third of tested cases (two of six test questions), meaning it was wrong roughly two-thirds of the time. According to media reports the CRA spent nearly 20 million Canadian dollars on the system, which was used by millions of people.",
   "startDate": "2020-02",
   "location": {
     "@type": "Place",
@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "faires Verfahren",
+    "Gleichbehandlung",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "faires Verfahren",
+    "Gleichbehandlung",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Fair procedure",
+    "Equal treatment",
+    "Protection from discrimination"
+  ],
   "asm:actors": [
     {
       "name": "Canada Revenue Agency",
@@ -48,7 +63,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-02",
+      "phase": "infrastructure",
+      "title": "CRA führt den regelbasierten Chatbot 'Charlie' ein",
+      "description": "Im Februar 2020 startete die kanadische Steuerbehörde CRA den Chatbot 'Charlie' zunächst als regelbasiertes Skript-Werkzeug, anfangs vor allem zur Beantwortung von Fragen zu COVID-19-Leistungen. Der Bot wurde auf mehreren Webseiten der Behörde eingebunden und von Millionen Steuerzahler:innen genutzt.",
+      "title_de": "CRA führt den regelbasierten Chatbot 'Charlie' ein",
+      "description_de": "Im Februar 2020 startete die kanadische Steuerbehörde CRA den Chatbot 'Charlie' zunächst als regelbasiertes Skript-Werkzeug, anfangs vor allem zur Beantwortung von Fragen zu COVID-19-Leistungen. Der Bot wurde auf mehreren Webseiten der Behörde eingebunden und von Millionen Steuerzahler:innen genutzt.",
+      "title_en": "CRA launches the rule-based chatbot 'Charlie'",
+      "description_en": "In February 2020 the Canada Revenue Agency (CRA) launched the chatbot 'Charlie', initially as a rule-based scripted tool, at first mainly to answer questions about COVID-19 benefits. The bot was embedded on several agency webpages and used by millions of taxpayers.",
+      "sources": [
+        "https://afaccounting.ca/2021/10/28/we-had-a-chat-with-charlie-cras-new-bot/"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Automatisierte Selbstauskunft als Kostenstrategie der Behörde",
+      "description": "Die CRA setzte auf Charlie, um die hohe Last der telefonischen Anfragen zu senken und Auskünfte rund um die Uhr automatisiert anzubieten. Über fünf Jahre investierte die Behörde nach Medienberichten rund 18 Millionen kanadische Dollar in das System - ohne externe Genauigkeitsprüfung vor dem breiten Einsatz.",
+      "title_de": "Automatisierte Selbstauskunft als Kostenstrategie der Behörde",
+      "description_de": "Die CRA setzte auf Charlie, um die hohe Last der telefonischen Anfragen zu senken und Auskünfte rund um die Uhr automatisiert anzubieten. Über fünf Jahre investierte die Behörde nach Medienberichten rund 18 Millionen kanadische Dollar in das System - ohne externe Genauigkeitsprüfung vor dem breiten Einsatz.",
+      "title_en": "Automated self-service as the agency's cost strategy",
+      "description_en": "The CRA relied on Charlie to reduce the heavy load of phone enquiries and to offer round-the-clock automated guidance. Over five years the agency reportedly invested around 18 million Canadian dollars in the system - without an external accuracy audit before broad rollout.",
+      "sources": [
+        "https://www.iphoneincanada.ca/2025/12/12/auditor-general-slams-ottawas-18-million-cra-chatbot-charlie/"
+      ]
+    },
+    {
+      "date": "2025-10",
+      "phase": "event",
+      "title": "Auditor General: Charlie antwortet nur zu rund einem Drittel korrekt",
+      "description": "Im Oktober 2025 testete die Auditor General von Kanada die damals aktuelle Version von Charlie und stellte fest, dass der Bot nur in etwa einem Drittel der Fälle korrekt antwortete - in rund zwei Dritteln also falsch lag. Das lag deutlich unter dem internen Zielwert der CRA von 70 Prozent Genauigkeit.",
+      "title_de": "Auditor General: Charlie antwortet nur zu rund einem Drittel korrekt",
+      "description_de": "Im Oktober 2025 testete die Auditor General von Kanada die damals aktuelle Version von Charlie und stellte fest, dass der Bot nur in etwa einem Drittel der Fälle korrekt antwortete - in rund zwei Dritteln also falsch lag. Das lag deutlich unter dem internen Zielwert der CRA von 70 Prozent Genauigkeit.",
+      "title_en": "Auditor General: Charlie answers correctly only about one-third of the time",
+      "description_en": "In October 2025 Canada's Auditor General tested the then-current version of Charlie and found the bot answered correctly only about one-third of the time - meaning it was wrong roughly two-thirds of the time. That fell well short of the CRA's internal target of 70 percent accuracy.",
+      "sources": [
+        "https://www.cbc.ca/news/politics/ag-fall-2025-cra-military-9.6946672"
+      ]
+    },
+    {
+      "date": "2025-11",
+      "phase": "consequences",
+      "title": "Öffentliche Kritik und Umbau auf generative KI",
+      "description": "Der Bericht löste scharfe Kritik an Kosten und Verlässlichkeit des Systems aus; die zuständige Staatssekretärin kündigte Besserung an. Im November 2025 stellte die CRA Charlie auf eine generative KI-Version um und beanspruchte rund 90 Prozent Genauigkeit in Vorab-Tests - eine Angabe, die unabhängig nicht bestätigt ist. Fachleute mahnten, zuerst die menschliche Auskunftsqualität zu verbessern.",
+      "title_de": "Öffentliche Kritik und Umbau auf generative KI",
+      "description_de": "Der Bericht löste scharfe Kritik an Kosten und Verlässlichkeit des Systems aus; die zuständige Staatssekretärin kündigte Besserung an. Im November 2025 stellte die CRA Charlie auf eine generative KI-Version um und beanspruchte rund 90 Prozent Genauigkeit in Vorab-Tests - eine Angabe, die unabhängig nicht bestätigt ist. Fachleute mahnten, zuerst die menschliche Auskunftsqualität zu verbessern.",
+      "title_en": "Public criticism and switch to generative AI",
+      "description_en": "The report triggered sharp criticism of the system's cost and reliability; the responsible secretary of state promised to do better. In November 2025 the CRA upgraded Charlie to a generative AI version, claiming around 90 percent accuracy in pre-release testing - a figure not independently verified. Experts warned that human answer quality should be fixed first.",
+      "sources": [
+        "https://www.ckom.com/2025/10/25/cra-must-fix-human-responses-before-pursuing-ai-experts-say/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theglobeandmail.com/investing/personal-finance/article-we-put-the-cras-ai-powered-chatbot-to-the-test/",
