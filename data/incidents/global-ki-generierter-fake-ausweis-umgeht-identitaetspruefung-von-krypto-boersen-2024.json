@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "OnlyFake (pseudonymous operator)",
@@ -41,7 +53,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Krypto-Börsen führen automatisierte Foto-KYC-Prüfungen ein",
+      "description": "Unter wachsendem Regulierungsdruck führen Krypto-Börsen wie OKX automatisierte Know-your-Customer-Verfahren ein, bei denen Nutzer ein Ausweisfoto hochladen, das per Software auf Echtheit geprüft wird. Diese Foto-basierten Prüfungen sollen Geldwäsche verhindern, verlassen sich aber auf die Erkennbarkeit von Manipulationen im Bild. Sie werden zur kritischen Eintrittsbarriere für den Zugang zu Finanzdienstleistungen.",
+      "title_de": "Krypto-Börsen führen automatisierte Foto-KYC-Prüfungen ein",
+      "description_de": "Unter wachsendem Regulierungsdruck führen Krypto-Börsen wie OKX automatisierte Know-your-Customer-Verfahren ein, bei denen Nutzer ein Ausweisfoto hochladen, das per Software auf Echtheit geprüft wird. Diese Foto-basierten Prüfungen sollen Geldwäsche verhindern, verlassen sich aber auf die Erkennbarkeit von Manipulationen im Bild. Sie werden zur kritischen Eintrittsbarriere für den Zugang zu Finanzdienstleistungen.",
+      "title_en": "Crypto exchanges roll out automated photo-based KYC checks",
+      "description_en": "Under growing regulatory pressure, crypto exchanges such as OKX adopt automated know-your-customer procedures in which users upload an ID photo that software checks for authenticity. These photo-based checks are meant to prevent money laundering but rely on manipulations being detectable in the image. They become the critical entry barrier for access to financial services.",
+      "sources": [
+        "https://www.intel471.com/blog/can-deepfakes-bypass-online-id-verifications"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "OnlyFake bietet Fake-Ausweise per Telegram als kommerziellen Dienst an",
+      "description": "Der pseudonyme Betreiber von OnlyFake vermarktet über Telegram die massenhafte Erzeugung täuschend echter Ausweisbilder aus 26 Ländern für rund 15 US-Dollar und wirbt damit, KYC-Prüfungen zahlreicher Plattformen umgehen zu können. Der Dienst behauptet, bis zu 20.000 Dokumente pro Tag zu erzeugen, inklusive frei wählbarer Personendaten und gefälschter Bild-Metadaten. Das Geschäftsmodell macht Identitätsbetrug zur kostengünstigen Massenware.",
+      "title_de": "OnlyFake bietet Fake-Ausweise per Telegram als kommerziellen Dienst an",
+      "description_de": "Der pseudonyme Betreiber von OnlyFake vermarktet über Telegram die massenhafte Erzeugung täuschend echter Ausweisbilder aus 26 Ländern für rund 15 US-Dollar und wirbt damit, KYC-Prüfungen zahlreicher Plattformen umgehen zu können. Der Dienst behauptet, bis zu 20.000 Dokumente pro Tag zu erzeugen, inklusive frei wählbarer Personendaten und gefälschter Bild-Metadaten. Das Geschäftsmodell macht Identitätsbetrug zur kostengünstigen Massenware.",
+      "title_en": "OnlyFake markets fake IDs via Telegram as a commercial service",
+      "description_en": "The pseudonymous operator of OnlyFake markets the mass generation of convincing ID images from 26 countries via Telegram for around 15 US dollars, advertising the ability to bypass the KYC checks of numerous platforms. The service claims to produce up to 20,000 documents a day, including freely chosen personal data and forged image metadata. The business model turns identity fraud into a low-cost commodity.",
+      "sources": [
+        "https://petapixel.com/2024/02/05/onlyfake-is-pumping-out-hyper-realistic-fake-ids-photos-included/"
+      ]
+    },
+    {
+      "date": "2024-02",
+      "phase": "event",
+      "title": "404 Media: OnlyFake-Ausweis besteht KYC-Prüfung von OKX",
+      "description": "Im Februar 2024 berichtet 404 Media, dass ein mit OnlyFake erzeugtes gefälschtes britisches Passfoto die Identitätsprüfung der Krypto-Börse OKX erfolgreich passiert. Die Journalist:innen demonstrieren damit, dass automatisierte Foto-KYC durch synthetisch wirkende Ausweisbilder ausgehebelt werden kann. OKX bezeichnet das Problem als branchenweit.",
+      "title_de": "404 Media: OnlyFake-Ausweis besteht KYC-Prüfung von OKX",
+      "description_de": "Im Februar 2024 berichtet 404 Media, dass ein mit OnlyFake erzeugtes gefälschtes britisches Passfoto die Identitätsprüfung der Krypto-Börse OKX erfolgreich passiert. Die Journalist:innen demonstrieren damit, dass automatisierte Foto-KYC durch synthetisch wirkende Ausweisbilder ausgehebelt werden kann. OKX bezeichnet das Problem als branchenweit.",
+      "title_en": "404 Media: OnlyFake ID passes OKX's KYC check",
+      "description_en": "In February 2024, 404 Media reports that a fake British passport photo created with OnlyFake successfully passes the identity verification of the crypto exchange OKX. The journalists demonstrate that automated photo-based KYC can be defeated by synthetic-looking ID images. OKX calls the problem industry-wide.",
+      "sources": [
+        "https://www.404media.co/inside-the-underground-site-where-ai-neural-networks-churns-out-fake-ids-onlyfake/"
+      ]
+    },
+    {
+      "date": "2024-02",
+      "phase": "consequences",
+      "title": "OnlyFake-Seite geht offline, Debatte über Schwäche bild-basierter KYC",
+      "description": "Nach der Veröffentlichung der 404-Media-Recherche geht die OnlyFake-Website offline. Sicherheitsfirmen und Identitätsdienstleister warnen, dass rein bild-basierte Ausweisprüfungen ohne Liveness- und Dokumentenechtheits-Checks nicht mehr ausreichen, und fordern robustere Verfahren. Zugleich relativiert 404 Media den KI-Bezug: Für eine tatsächliche Nutzung generativer KI bei der Dokumentenerstellung wurde kein eindeutiger Beleg gesehen, die Werbung mit neuronalen Netzen blieb teils Marketing.",
+      "title_de": "OnlyFake-Seite geht offline, Debatte über Schwäche bild-basierter KYC",
+      "description_de": "Nach der Veröffentlichung der 404-Media-Recherche geht die OnlyFake-Website offline. Sicherheitsfirmen und Identitätsdienstleister warnen, dass rein bild-basierte Ausweisprüfungen ohne Liveness- und Dokumentenechtheits-Checks nicht mehr ausreichen, und fordern robustere Verfahren. Zugleich relativiert 404 Media den KI-Bezug: Für eine tatsächliche Nutzung generativer KI bei der Dokumentenerstellung wurde kein eindeutiger Beleg gesehen, die Werbung mit neuronalen Netzen blieb teils Marketing.",
+      "title_en": "OnlyFake site goes dark, debate over weakness of image-based KYC",
+      "description_en": "Following the 404 Media investigation, the OnlyFake website goes offline. Security firms and identity providers warn that purely image-based ID checks without liveness and document-authenticity verification are no longer sufficient and call for more robust methods. At the same time 404 Media qualifies the AI angle: no clear evidence was seen that generative AI was actually used to create the documents, and the 'neural network' branding was partly marketing.",
+      "sources": [
+        "https://www.404media.co/onlyfake-neural-network-fake-id-site-goes-dark-after-404-media-investigation/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.nasdaq.com/articles/ai-generated-fake-ids-bypass-crypto-exchange-kyc-checks-okx-says-industry-wide-issue",

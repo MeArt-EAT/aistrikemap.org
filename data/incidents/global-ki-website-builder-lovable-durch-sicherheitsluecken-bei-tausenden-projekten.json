@@ -8,9 +8,9 @@
   "name": "Global: KI-Website-Builder Lovable durch Sicherheitslücken bei tausenden Projekten kompromittiert",
   "name_de": "Global: KI-Website-Builder Lovable durch Sicherheitslücken bei tausenden Projekten kompromittiert",
   "name_en": "Global: AI website builder Lovable compromised by security flaws affecting thousands of projects",
-  "description": "Die KI-Website-Generierungsplattform Lovable wurde 2025 zweimal von gravierenden Sicherheitslücken erschüttert: Im Mai legte eine fehlerhafte Row-Level-Security-Konfiguration (CVE-2025-48757) bei über 170 mit Lovable erstellten Apps sensible Daten frei — unauthentifizierte Besucher konnten Tabellen direkt abfragen. Im Februar 2026 dokumentierten Sicherheitsforschende (The Register) eine Broken-Object-Level-Authorization-Lücke (BOLA): Projekte, die vor November 2025 erstellt wurden, gaben Quellcode, Zugangsdaten und Nutzerdaten preis. Berichten zufolge betraf das Daten aus rund 18.000 Apps. Proofpoint berichtete zudem, Phishing-Akteure missbrauchten die Plattform.",
-  "description_de": "Die KI-Website-Generierungsplattform Lovable wurde 2025 zweimal von gravierenden Sicherheitslücken erschüttert: Im Mai legte eine fehlerhafte Row-Level-Security-Konfiguration (CVE-2025-48757) bei über 170 mit Lovable erstellten Apps sensible Daten frei — unauthentifizierte Besucher konnten Tabellen direkt abfragen. Im Februar 2026 dokumentierten Sicherheitsforschende (The Register) eine Broken-Object-Level-Authorization-Lücke (BOLA): Projekte, die vor November 2025 erstellt wurden, gaben Quellcode, Zugangsdaten und Nutzerdaten preis. Berichten zufolge betraf das Daten aus rund 18.000 Apps. Proofpoint berichtete zudem, Phishing-Akteure missbrauchten die Plattform.",
-  "description_en": "AI website-generation platform Lovable was hit by two major security flaws in 2025: in May, a Row-Level Security misconfiguration (CVE-2025-48757) exposed sensitive data from over 170 Lovable-built apps — unauthenticated visitors could query tables directly. In February 2026, security researchers (The Register) documented a Broken Object Level Authorization (BOLA) flaw: projects created before November 2025 leaked source code, credentials and user data; reportedly data from roughly 18,000 apps was affected. Proofpoint separately reported phishing actors abusing the platform.",
+  "description": "Die KI-Website-Generierungsplattform Lovable wurde 2025 zweimal von gravierenden Sicherheitslücken erschüttert: Im Mai legte eine fehlerhafte Row-Level-Security-Konfiguration (CVE-2025-48757) bei über 170 mit Lovable erstellten Apps sensible Daten frei — unauthentifizierte Besucher konnten Tabellen direkt abfragen. Im Februar 2026 dokumentierten Sicherheitsforschende (The Register) eine Broken-Object-Level-Authorization-Lücke (BOLA): Projekte, die vor November 2025 erstellt wurden, gaben Quellcode, Zugangsdaten und Nutzerdaten preis. Eine einzelne auf Lovable gehostete App gab Berichten zufolge Daten von rund 18.000 Nutzer:innen preis. Proofpoint berichtete zudem, Phishing-Akteure missbrauchten die Plattform.",
+  "description_de": "Die KI-Website-Generierungsplattform Lovable wurde 2025 zweimal von gravierenden Sicherheitslücken erschüttert: Im Mai legte eine fehlerhafte Row-Level-Security-Konfiguration (CVE-2025-48757) bei über 170 mit Lovable erstellten Apps sensible Daten frei — unauthentifizierte Besucher konnten Tabellen direkt abfragen. Im Februar 2026 dokumentierten Sicherheitsforschende (The Register) eine Broken-Object-Level-Authorization-Lücke (BOLA): Projekte, die vor November 2025 erstellt wurden, gaben Quellcode, Zugangsdaten und Nutzerdaten preis. Eine einzelne auf Lovable gehostete App gab Berichten zufolge Daten von rund 18.000 Nutzer:innen preis. Proofpoint berichtete zudem, Phishing-Akteure missbrauchten die Plattform.",
+  "description_en": "AI website-generation platform Lovable was hit by two major security flaws in 2025: in May, a Row-Level Security misconfiguration (CVE-2025-48757) exposed sensitive data from over 170 Lovable-built apps — unauthenticated visitors could query tables directly. In February 2026, security researchers (The Register) documented a Broken Object Level Authorization (BOLA) flaw: projects created before November 2025 leaked source code, credentials and user data; a single Lovable-hosted app reportedly exposed data on roughly 18,000 users. Proofpoint separately reported phishing actors abusing the platform.",
   "startDate": "2025-05",
   "location": {
     "@type": "Place",
@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Lovable Labs",
@@ -39,7 +51,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Vibe-Coding-Stack: KI-Generator Lovable auf Supabase-Backend",
+      "description": "Lovable etabliert sich als KI-Website-Generierungsplattform, die per Texteingabe komplette Apps erzeugt und diese standardmäßig an ein Supabase-Backend anbindet. Nutzer ohne Sicherheitskenntnisse veröffentlichen so Anwendungen, in denen Datenbankzugriffe und Schlüssel client-seitig eingebunden sind. Die Sicherheit der Daten hängt vollständig von korrekt gesetzten Zugriffsregeln (Row Level Security) ab, deren Konfiguration der Generator übernimmt.",
+      "title_de": "Vibe-Coding-Stack: KI-Generator Lovable auf Supabase-Backend",
+      "description_de": "Lovable etabliert sich als KI-Website-Generierungsplattform, die per Texteingabe komplette Apps erzeugt und diese standardmäßig an ein Supabase-Backend anbindet. Nutzer ohne Sicherheitskenntnisse veröffentlichen so Anwendungen, in denen Datenbankzugriffe und Schlüssel client-seitig eingebunden sind. Die Sicherheit der Daten hängt vollständig von korrekt gesetzten Zugriffsregeln (Row Level Security) ab, deren Konfiguration der Generator übernimmt.",
+      "title_en": "Vibe-coding stack: AI generator Lovable on a Supabase backend",
+      "description_en": "Lovable establishes itself as an AI website-generation platform that produces complete apps from text prompts and connects them by default to a Supabase backend. Users without security expertise thus publish applications in which database access and keys are embedded client-side. Data security depends entirely on correctly set access rules (Row Level Security), whose configuration the generator handles.",
+      "sources": [
+        "https://www.superblocks.com/blog/lovable-vulnerabilities"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Geschwindigkeit vor Sicherheit: RLS standardmäßig nicht aktiviert",
+      "description": "Lovables Code-Generierung erzeugt Supabase-Schemata ohne aktivierte Row Level Security, sodass jede client-seitige Anfrage mit dem öffentlichen anon-Key potenziell sämtliche Tabellen lesen und schreiben kann. Das Design priorisiert schnelle Ergebnisse für Laien über sichere Voreinstellungen. Bei einer Plattform mit Millionen Nutzern und hunderten Millionen Dollar Umsatz wird so ein systematisches Datenschutzrisiko in tausende Apps eingebaut.",
+      "title_de": "Geschwindigkeit vor Sicherheit: RLS standardmäßig nicht aktiviert",
+      "description_de": "Lovables Code-Generierung erzeugt Supabase-Schemata ohne aktivierte Row Level Security, sodass jede client-seitige Anfrage mit dem öffentlichen anon-Key potenziell sämtliche Tabellen lesen und schreiben kann. Das Design priorisiert schnelle Ergebnisse für Laien über sichere Voreinstellungen. Bei einer Plattform mit Millionen Nutzern und hunderten Millionen Dollar Umsatz wird so ein systematisches Datenschutzrisiko in tausende Apps eingebaut.",
+      "title_en": "Speed over security: RLS not enabled by default",
+      "description_en": "Lovable's code generation produces Supabase schemas without Row Level Security enabled, so any client-side request using the public anon key can potentially read and write every table. The design prioritises fast results for non-experts over secure defaults. On a platform with millions of users and hundreds of millions of dollars in revenue, this builds a systematic data-protection risk into thousands of apps.",
+      "sources": [
+        "https://blog.vibecoder.me/post-mortem-lovable-cve-2025-48757"
+      ]
+    },
+    {
+      "date": "2025-05",
+      "phase": "event",
+      "title": "CVE-2025-48757: über 170 Lovable-Apps geben Daten preis",
+      "description": "Sicherheitsforscher Matan Getz dokumentiert im Mai 2025 (Disclosure am 4. Juni) eine fehlende Row-Level-Security-Konfiguration in Lovable-Apps, CVE-2025-48757. Über 170 produktive Anwendungen lassen sich von unauthentifizierten Besuchern direkt abfragen, die ganze Nutzerlisten, Zahlungsdaten und API-Schlüssel auslesen können. Im Februar 2026 deckt The Register zusätzlich eine Broken-Object-Level-Authorization-Lücke auf; eine einzelne auf Lovable gehostete App gibt laut Bericht Daten von rund 18.000 Nutzer:innen preis.",
+      "title_de": "CVE-2025-48757: über 170 Lovable-Apps geben Daten preis",
+      "description_de": "Sicherheitsforscher Matan Getz dokumentiert im Mai 2025 (Disclosure am 4. Juni) eine fehlende Row-Level-Security-Konfiguration in Lovable-Apps, CVE-2025-48757. Über 170 produktive Anwendungen lassen sich von unauthentifizierten Besuchern direkt abfragen, die ganze Nutzerlisten, Zahlungsdaten und API-Schlüssel auslesen können. Im Februar 2026 deckt The Register zusätzlich eine Broken-Object-Level-Authorization-Lücke auf; eine einzelne auf Lovable gehostete App gibt laut Bericht Daten von rund 18.000 Nutzer:innen preis.",
+      "title_en": "CVE-2025-48757: over 170 Lovable apps expose data",
+      "description_en": "Security researcher Matan Getz documents in May 2025 (disclosure on 4 June) a missing Row Level Security configuration in Lovable apps, CVE-2025-48757. Over 170 production applications can be queried directly by unauthenticated visitors, who can read entire user lists, payment data and API keys. In February 2026 The Register additionally reveals a Broken Object Level Authorization flaw; a single Lovable-hosted app reportedly exposes data on roughly 18,000 users.",
+      "sources": [
+        "https://blog.vibecoder.me/lovable-cve-case-study-what-went-wrong",
+        "https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/"
+      ]
+    },
+    {
+      "date": "2025-06",
+      "phase": "consequences",
+      "title": "Lovable bessert Generator nach, Altprojekte bleiben verwundbar",
+      "description": "Lovable passt seine Code-Generierung an, sodass neue Schemata RLS-Regeln enthalten; bereits bestehende verwundbare Apps müssen jedoch von ihren Betreibern manuell nachgebessert werden und bleiben vielfach exponiert. Parallel berichtet Proofpoint, dass Cyberkriminelle die Plattform zum schnellen Bau von Phishing-Seiten missbrauchen. Der Fall wird zum Lehrbeispiel für die Sicherheitsrisiken von KI-generiertem Code (Vibe Coding) und löst breite Debatten über sichere Voreinstellungen aus.",
+      "title_de": "Lovable bessert Generator nach, Altprojekte bleiben verwundbar",
+      "description_de": "Lovable passt seine Code-Generierung an, sodass neue Schemata RLS-Regeln enthalten; bereits bestehende verwundbare Apps müssen jedoch von ihren Betreibern manuell nachgebessert werden und bleiben vielfach exponiert. Parallel berichtet Proofpoint, dass Cyberkriminelle die Plattform zum schnellen Bau von Phishing-Seiten missbrauchen. Der Fall wird zum Lehrbeispiel für die Sicherheitsrisiken von KI-generiertem Code (Vibe Coding) und löst breite Debatten über sichere Voreinstellungen aus.",
+      "title_en": "Lovable patches its generator while legacy projects stay vulnerable",
+      "description_en": "Lovable adjusts its code generation so that new schemas include RLS rules; existing vulnerable apps, however, must be patched manually by their owners and often remain exposed. In parallel, Proofpoint reports that cybercriminals abuse the platform to quickly build phishing pages. The case becomes a textbook example of the security risks of AI-generated code (vibe coding) and sparks broad debate over secure defaults.",
+      "sources": [
+        "https://www.proofpoint.com/us/blog/threat-insight/cybercriminals-abuse-ai-website-creation-app-phishing"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2026/02/27/lovable_app_vulnerabilities/",

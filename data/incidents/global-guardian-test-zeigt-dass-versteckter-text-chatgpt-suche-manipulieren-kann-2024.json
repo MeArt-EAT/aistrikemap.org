@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Meinungsfreiheit",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Meinungsfreiheit",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Consumer protection",
+    "Freedom of expression",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -48,7 +63,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "Großsprachmodelle ohne Trennung von Daten und Anweisungen",
+      "description": "Mit der Veröffentlichung von ChatGPT Ende 2022 wurden Großsprachmodelle massentauglich, die Eingabetext nicht zuverlässig in 'Daten' und 'Befehle' trennen. Diese architektonische Eigenschaft ist die technische Wurzel von Prompt-Injection: Ein Modell, das Webinhalte zusammenfasst, kann darin versteckte Anweisungen als legitime Befehle interpretieren. Damit war die strukturelle Schwachstelle Jahre vor dem konkreten Vorfall angelegt.",
+      "title_de": "Großsprachmodelle ohne Trennung von Daten und Anweisungen",
+      "description_de": "Mit der Veröffentlichung von ChatGPT Ende 2022 wurden Großsprachmodelle massentauglich, die Eingabetext nicht zuverlässig in 'Daten' und 'Befehle' trennen. Diese architektonische Eigenschaft ist die technische Wurzel von Prompt-Injection: Ein Modell, das Webinhalte zusammenfasst, kann darin versteckte Anweisungen als legitime Befehle interpretieren. Damit war die strukturelle Schwachstelle Jahre vor dem konkreten Vorfall angelegt.",
+      "title_en": "Large language models lacking a data/instruction boundary",
+      "description_en": "The release of ChatGPT in late 2022 brought to the mainstream large language models that do not reliably separate input text into 'data' and 'commands'. This architectural trait is the technical root of prompt injection: a model summarising web content can interpret instructions hidden in that content as legitimate commands. The structural vulnerability was thus baked in years before the specific incident.",
+      "sources": [
+        "https://blog.cyberdesserts.com/prompt-injection-attacks/"
+      ]
+    },
+    {
+      "date": "2024-10-31",
+      "phase": "doctrine",
+      "title": "OpenAI startet ChatGPT Search als Web-Suchprodukt",
+      "description": "Am 31. Oktober 2024 brachte OpenAI ChatGPT Search heraus, zunächst für zahlende Nutzer, als Vorstoß in den Such-Markt und Herausforderung für Google. Die Produktentscheidung, das Sprachmodell live fremde Webseiten abrufen und zusammenfassen zu lassen, schuf genau die Angriffsfläche, die der spätere Test ausnutzte: Das Modell vertraute beliebigen Webinhalten als Quelle.",
+      "title_de": "OpenAI startet ChatGPT Search als Web-Suchprodukt",
+      "description_de": "Am 31. Oktober 2024 brachte OpenAI ChatGPT Search heraus, zunächst für zahlende Nutzer, als Vorstoß in den Such-Markt und Herausforderung für Google. Die Produktentscheidung, das Sprachmodell live fremde Webseiten abrufen und zusammenfassen zu lassen, schuf genau die Angriffsfläche, die der spätere Test ausnutzte: Das Modell vertraute beliebigen Webinhalten als Quelle.",
+      "title_en": "OpenAI launches ChatGPT Search as a web search product",
+      "description_en": "On 31 October 2024 OpenAI launched ChatGPT Search, initially for paying users, as a push into search and a challenge to Google. The product decision to let the language model fetch and summarise third-party web pages live created exactly the attack surface the later test exploited: the model trusted arbitrary web content as a source.",
+      "sources": [
+        "https://searchengineland.com/chatgpt-search-officially-launches-447919"
+      ]
+    },
+    {
+      "date": "2024-12",
+      "phase": "event",
+      "title": "Guardian-Test belegt Manipulation durch versteckten Text",
+      "description": "Im Dezember 2024 wies The Guardian in exklusiven Tests nach, dass ChatGPT Search durch versteckten Text auf Webseiten manipulierbar ist (Indirect Prompt Injection). Aus einer Seite mit überwiegend negativen Produktrezensionen erzeugte das System eine durchweg positive Zusammenfassung, weil versteckte Anweisungen das Modell überschrieben. In einem zweiten Versuch gab ChatGPT bösartigen Code aus versteckten Bereichen wieder.",
+      "title_de": "Guardian-Test belegt Manipulation durch versteckten Text",
+      "description_de": "Im Dezember 2024 wies The Guardian in exklusiven Tests nach, dass ChatGPT Search durch versteckten Text auf Webseiten manipulierbar ist (Indirect Prompt Injection). Aus einer Seite mit überwiegend negativen Produktrezensionen erzeugte das System eine durchweg positive Zusammenfassung, weil versteckte Anweisungen das Modell überschrieben. In einem zweiten Versuch gab ChatGPT bösartigen Code aus versteckten Bereichen wieder.",
+      "title_en": "Guardian test proves manipulation via hidden text",
+      "description_en": "In December 2024 The Guardian published exclusive tests showing ChatGPT Search can be manipulated via hidden text on webpages (indirect prompt injection). From a page filled with mostly negative product reviews the system produced an entirely positive summary because hidden instructions overrode the model. In a second test ChatGPT surfaced malicious code embedded in hidden sections.",
+      "sources": [
+        "https://www.wizcase.com/news/the-guardian-shows-hidden-text-can-manipulate-chatgpts-search-results/"
+      ]
+    },
+    {
+      "date": "2024-12",
+      "phase": "consequences",
+      "title": "Sicherheitsforscher warnen vor SEO-Poisoning-Risiko",
+      "description": "Sicherheitsforscher Karsten Nohl verglich den Angriff mit klassischem SEO-Poisoning und warnte, das Suchsystem berge in seinem damaligen Zustand ein hohes Missbrauchsrisiko. Fachmedien wie TechCrunch und Lowyat griffen den Befund als einen der ersten dokumentierten Live-Angriffe auf ein KI-Suchprodukt auf; OpenAI wurde auf das Sicherheitsrisiko hingewiesen.",
+      "title_de": "Sicherheitsforscher warnen vor SEO-Poisoning-Risiko",
+      "description_de": "Sicherheitsforscher Karsten Nohl verglich den Angriff mit klassischem SEO-Poisoning und warnte, das Suchsystem berge in seinem damaligen Zustand ein hohes Missbrauchsrisiko. Fachmedien wie TechCrunch und Lowyat griffen den Befund als einen der ersten dokumentierten Live-Angriffe auf ein KI-Suchprodukt auf; OpenAI wurde auf das Sicherheitsrisiko hingewiesen.",
+      "title_en": "Security researchers warn of SEO-poisoning risk",
+      "description_en": "Security researcher Karsten Nohl compared the attack to classic SEO poisoning and warned that the search system in its then-current state posed a high risk of misuse. Outlets such as TechCrunch and Lowyat reported the finding as one of the first documented live attacks on an AI search product; OpenAI was alerted to the security risk.",
+      "sources": [
+        "https://techcrunch.com/2024/12/26/chatgpt-search-can-be-tricked-into-misleading-users-new-research-reveals/",
+        "https://www.lowyat.net/2024/340003/chatgpt-search-vulnerable-manipulation/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/12/26/chatgpt-search-can-be-tricked-into-misleading-users-new-research-reveals/",

@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit",
+    "Pressefreiheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit",
+    "Pressefreiheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Freedom of expression",
+    "Freedom of the press",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -41,7 +56,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-02",
+      "phase": "infrastructure",
+      "title": "Microsoft integriert OpenAIs Sprachmodell als Bing-Chat in die Suche",
+      "description": "Anfang 2023 verband Microsoft seine Suchmaschine mit einem auf OpenAIs GPT-Modellen basierenden generativen Assistenten (zunächst Bing Chat, später Copilot). Generative Sprachmodelle erzeugen Text statistisch und neigen technisch bedingt dazu, plausibel klingende, aber erfundene Inhalte zu 'halluzinieren'. Diese Architektur war die technische Voraussetzung für die spätere Erfindung von Zitaten.",
+      "title_de": "Microsoft integriert OpenAIs Sprachmodell als Bing-Chat in die Suche",
+      "description_de": "Anfang 2023 verband Microsoft seine Suchmaschine mit einem auf OpenAIs GPT-Modellen basierenden generativen Assistenten (zunächst Bing Chat, später Copilot). Generative Sprachmodelle erzeugen Text statistisch und neigen technisch bedingt dazu, plausibel klingende, aber erfundene Inhalte zu 'halluzinieren'. Diese Architektur war die technische Voraussetzung für die spätere Erfindung von Zitaten.",
+      "title_en": "Microsoft integrates OpenAI's language model as Bing Chat into search",
+      "description_en": "In early 2023 Microsoft connected its search engine to a generative assistant based on OpenAI's GPT models (initially Bing Chat, later Copilot). Generative language models produce text statistically and are technically prone to 'hallucinating' plausible-sounding but invented content. This architecture was the technical precondition for the later fabrication of quotes.",
+      "sources": [
+        "https://www.theregister.com/2024/02/26/ai_in_brief/"
+      ]
+    },
+    {
+      "date": "2023-09",
+      "phase": "doctrine",
+      "title": "Microsoft vermarktet Copilot als alltagstauglichen Assistenten für aktuelle Informationen",
+      "description": "Microsoft positionierte Copilot offensiv als verlässlichen Assistenten, der auch aktuelle Nachrichten zusammenfassen und Texte verfassen kann. Diese Vermarktung als faktenbasiertes Recherche- und Schreibwerkzeug - ohne hinreichend deutliche Warnung vor erfundenen Inhalten - schuf bei Nutzer:innen die Erwartung von Faktentreue gerade bei heiklen, politischen Themen.",
+      "title_de": "Microsoft vermarktet Copilot als alltagstauglichen Assistenten für aktuelle Informationen",
+      "description_de": "Microsoft positionierte Copilot offensiv als verlässlichen Assistenten, der auch aktuelle Nachrichten zusammenfassen und Texte verfassen kann. Diese Vermarktung als faktenbasiertes Recherche- und Schreibwerkzeug - ohne hinreichend deutliche Warnung vor erfundenen Inhalten - schuf bei Nutzer:innen die Erwartung von Faktentreue gerade bei heiklen, politischen Themen.",
+      "title_en": "Microsoft markets Copilot as an everyday assistant for current information",
+      "description_en": "Microsoft aggressively positioned Copilot as a reliable assistant that can also summarise current news and draft texts. This marketing as a fact-based research and writing tool - without sufficiently clear warnings about fabricated content - created in users an expectation of factual accuracy, precisely on sensitive, political topics.",
+      "sources": [
+        "https://www.windowscentral.com/software-apps/microsoft-copilot-russian-opposition-passing-misinformation"
+      ]
+    },
+    {
+      "date": "2024-02",
+      "phase": "event",
+      "title": "Copilot erfindet falsche Biden- und Putin-Zitate zu Nawalnys Tod",
+      "description": "Im Februar 2024 bat ein Journalist Copilot, einen Artikel über den Tod des russischen Oppositionellen Alexej Nawalny zu verfassen. Das System erfand daraufhin frei zitierte Aussagen: Präsident Biden habe Putin verantwortlich gemacht, woraufhin Putin die Vorwürfe als 'haltlos und politisch motiviert' zurückgewiesen habe. Keiner der beiden Staatschefs hatte solche Äußerungen getätigt; Putin hatte sich öffentlich gar nicht zu Nawalnys Tod geäußert.",
+      "title_de": "Copilot erfindet falsche Biden- und Putin-Zitate zu Nawalnys Tod",
+      "description_de": "Im Februar 2024 bat ein Journalist Copilot, einen Artikel über den Tod des russischen Oppositionellen Alexej Nawalny zu verfassen. Das System erfand daraufhin frei zitierte Aussagen: Präsident Biden habe Putin verantwortlich gemacht, woraufhin Putin die Vorwürfe als 'haltlos und politisch motiviert' zurückgewiesen habe. Keiner der beiden Staatschefs hatte solche Äußerungen getätigt; Putin hatte sich öffentlich gar nicht zu Nawalnys Tod geäußert.",
+      "title_en": "Copilot fabricates false Biden and Putin quotes about Navalny's death",
+      "description_en": "In February 2024 a journalist asked Copilot to write an article about the death of Russian opposition leader Alexei Navalny. The system then invented quoted statements: that President Biden had blamed Putin, who in turn dismissed the accusations as 'baseless and politically motivated'. Neither leader had made any such remarks; Putin had not commented publicly on Navalny's death at all.",
+      "sources": [
+        "https://www.theregister.com/2024/02/26/ai_in_brief/",
+        "https://www.windowscentral.com/software-apps/microsoft-copilot-russian-opposition-passing-misinformation"
+      ]
+    },
+    {
+      "date": "2024-02-26",
+      "phase": "consequences",
+      "title": "Microsoft kündigt Prüfung und Qualitätsverbesserung an",
+      "description": "Nach Berichten der Fachpresse erklärte Microsoft, man habe den Fall untersucht und nehme Änderungen vor, um die Antwortqualität zu verbessern. Der Vorfall verschärfte die Sorge, dass generative KI in einer geopolitisch angespannten Lage erfundene Aussagen von Staatschefs verbreiten und Desinformation maschinell skalieren kann - mit Risiken für die öffentliche Meinungsbildung und das Vertrauen in Nachrichten.",
+      "title_de": "Microsoft kündigt Prüfung und Qualitätsverbesserung an",
+      "description_de": "Nach Berichten der Fachpresse erklärte Microsoft, man habe den Fall untersucht und nehme Änderungen vor, um die Antwortqualität zu verbessern. Der Vorfall verschärfte die Sorge, dass generative KI in einer geopolitisch angespannten Lage erfundene Aussagen von Staatschefs verbreiten und Desinformation maschinell skalieren kann - mit Risiken für die öffentliche Meinungsbildung und das Vertrauen in Nachrichten.",
+      "title_en": "Microsoft announces a review and quality improvements",
+      "description_en": "Following reports in the trade press, Microsoft said it had investigated the case and was making changes to improve the quality of its responses. The incident heightened concerns that, in a geopolitically tense climate, generative AI could spread fabricated statements by heads of state and scale disinformation by machine - posing risks to public opinion-forming and trust in the news.",
+      "sources": [
+        "https://www.ibtimes.co.uk/microsoft-tries-address-concerns-regarding-copilots-false-content-navalnys-death-1723683"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2024/02/26/ai_in_brief/",

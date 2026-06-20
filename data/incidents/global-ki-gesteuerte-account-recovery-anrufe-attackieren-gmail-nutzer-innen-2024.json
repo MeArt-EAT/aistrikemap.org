@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Unidentified scam operators",
@@ -39,7 +54,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Kommerzielle Sprach-Klon- und Caller-ID-Spoofing-Werkzeuge werden breit verfügbar",
+      "description": "Bis 2023 sind realistische KI-Sprachsynthese und Voice-Cloning über kommerzielle Dienste für jedermann zugänglich, während Caller-ID-Spoofing seit Jahren erlaubt, beliebige Rufnummern als Absender vorzutäuschen. Die Kombination macht es möglich, am Telefon glaubhaft eine bekannte Organisation zu imitieren. Gleichzeitig erlauben Googles automatisierte Account-Recovery-Abläufe eine Wiederherstellung per Bestätigungs-Tap, die sich social-engineering-tauglich missbrauchen lässt.",
+      "title_de": "Kommerzielle Sprach-Klon- und Caller-ID-Spoofing-Werkzeuge werden breit verfügbar",
+      "description_de": "Bis 2023 sind realistische KI-Sprachsynthese und Voice-Cloning über kommerzielle Dienste für jedermann zugänglich, während Caller-ID-Spoofing seit Jahren erlaubt, beliebige Rufnummern als Absender vorzutäuschen. Die Kombination macht es möglich, am Telefon glaubhaft eine bekannte Organisation zu imitieren. Gleichzeitig erlauben Googles automatisierte Account-Recovery-Abläufe eine Wiederherstellung per Bestätigungs-Tap, die sich social-engineering-tauglich missbrauchen lässt.",
+      "title_en": "Commercial voice-cloning and caller-ID spoofing tools become widely available",
+      "description_en": "By 2023 realistic AI voice synthesis and voice cloning are accessible to anyone through commercial services, while caller-ID spoofing has long allowed any number to be displayed as the sender. The combination makes it possible to convincingly impersonate a known organisation by phone. At the same time Google's automated account-recovery flows allow recovery via a confirmation tap that can be abused through social engineering.",
+      "sources": [
+        "https://www.malwarebytes.com/blog/news/2024/10/ai-scammers-target-gmail-accounts-say-they-have-your-death-certificate"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Betrugsnetzwerke setzen KI-Stimmen für skalierbares Vishing ein",
+      "description": "Organisierte Betrugsakteure gehen dazu über, KI-generierte Stimmen systematisch für telefonisches Phishing (Vishing) einzusetzen, weil sich damit überzeugende, mehrsprachige Anrufe automatisiert und in großer Zahl führen lassen. Das Geschäftsmodell zielt auf die Übernahme wertvoller E-Mail-Konten, die als Generalschlüssel für weitere Dienste dienen. Gefälschte Google-Absender und Domains, die offiziellen täuschend ähneln, erhöhen die Glaubwürdigkeit.",
+      "title_de": "Betrugsnetzwerke setzen KI-Stimmen für skalierbares Vishing ein",
+      "description_de": "Organisierte Betrugsakteure gehen dazu über, KI-generierte Stimmen systematisch für telefonisches Phishing (Vishing) einzusetzen, weil sich damit überzeugende, mehrsprachige Anrufe automatisiert und in großer Zahl führen lassen. Das Geschäftsmodell zielt auf die Übernahme wertvoller E-Mail-Konten, die als Generalschlüssel für weitere Dienste dienen. Gefälschte Google-Absender und Domains, die offiziellen täuschend ähneln, erhöhen die Glaubwürdigkeit.",
+      "title_en": "Fraud networks adopt AI voices for scalable vishing",
+      "description_en": "Organised fraud actors move to systematically use AI-generated voices for telephone phishing (vishing) because it allows convincing, multilingual calls to be made automatically and at scale. The business model targets the takeover of valuable email accounts that serve as a master key to further services. Spoofed Google senders and domains that closely mimic official ones increase credibility.",
+      "sources": [
+        "https://www.techradar.com/pro/this-new-scarily-realistic-ai-call-scam-is-targeting-gmail-users"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "event",
+      "title": "KI-Stimme imitiert Google-Mitarbeiter im Recovery-Betrug gegen Gmail-Nutzer",
+      "description": "Im Oktober 2024 dokumentiert der Microsoft-Berater Sam Mitrovic einen Betrugsversuch: Nach einer vorgetäuschten Account-Recovery-Benachrichtigung folgt etwa 40 Minuten später ein Anruf von einer gespooften Google-Nummer, bei dem eine KI-generierte Stimme einen Google-Mitarbeiter mimt. Ziel ist, das Opfer zur Bestätigung der Recovery-Anfrage zu bewegen und so dessen Gmail-Konto zu übernehmen. Spätere Varianten behaupten, für das Opfer sei ein Sterbeurkundenantrag gestellt worden.",
+      "title_de": "KI-Stimme imitiert Google-Mitarbeiter im Recovery-Betrug gegen Gmail-Nutzer",
+      "description_de": "Im Oktober 2024 dokumentiert der Microsoft-Berater Sam Mitrovic einen Betrugsversuch: Nach einer vorgetäuschten Account-Recovery-Benachrichtigung folgt etwa 40 Minuten später ein Anruf von einer gespooften Google-Nummer, bei dem eine KI-generierte Stimme einen Google-Mitarbeiter mimt. Ziel ist, das Opfer zur Bestätigung der Recovery-Anfrage zu bewegen und so dessen Gmail-Konto zu übernehmen. Spätere Varianten behaupten, für das Opfer sei ein Sterbeurkundenantrag gestellt worden.",
+      "title_en": "AI voice impersonates Google staff in recovery scam against Gmail users",
+      "description_en": "In October 2024, Microsoft consultant Sam Mitrovic documents a scam: after a fake account-recovery notification, a call from a spoofed Google number follows about 40 minutes later, in which an AI-generated voice impersonates a Google employee. The aim is to get the victim to approve the recovery request and thereby take over their Gmail account. Later variants claim a death certificate has been filed for the victim.",
+      "sources": [
+        "https://sammitrovic.com/infosec/gmail-account-takeover-super-realistic-ai-scam-call/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Breite Warnungen, Aufnahme in die AI Incident Database",
+      "description": "Sicherheitsmedien wie Malwarebytes, TechRadar und Intego warnen breit vor der Masche und raten, unaufgeforderte Recovery-Anrufe aufzulegen und Konten ausschließlich über offizielle Wege wiederherzustellen. Der Fall wird als Incident 839 in die AI Incident Database aufgenommen. Er zeigt, wie KI-Stimmen klassische Phishing-Abwehr wie Misstrauen gegenüber schlechtem Sprachgebrauch aushebeln, da Mitrovic den Betrug nur an minimalen Aussprache-Auffälligkeiten erkannte.",
+      "title_de": "Breite Warnungen, Aufnahme in die AI Incident Database",
+      "description_de": "Sicherheitsmedien wie Malwarebytes, TechRadar und Intego warnen breit vor der Masche und raten, unaufgeforderte Recovery-Anrufe aufzulegen und Konten ausschließlich über offizielle Wege wiederherzustellen. Der Fall wird als Incident 839 in die AI Incident Database aufgenommen. Er zeigt, wie KI-Stimmen klassische Phishing-Abwehr wie Misstrauen gegenüber schlechtem Sprachgebrauch aushebeln, da Mitrovic den Betrug nur an minimalen Aussprache-Auffälligkeiten erkannte.",
+      "title_en": "Broad warnings, inclusion in the AI Incident Database",
+      "description_en": "Security outlets such as Malwarebytes, TechRadar and Intego issue broad warnings about the scheme and advise hanging up on unsolicited recovery calls and recovering accounts only through official channels. The case is added as Incident 839 to the AI Incident Database. It shows how AI voices defeat classic phishing defences like distrust of poor language, as Mitrovic only spotted the scam from minimal pronunciation cues.",
+      "sources": [
+        "https://incidentdatabase.ai/cite/839/",
+        "https://www.intego.com/mac-security-blog/ai-scam-bots-are-trying-to-recover-your-gmail-account/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.malwarebytes.com/blog/news/2024/10/ai-scammers-target-gmail-accounts-say-they-have-your-death-certificate",

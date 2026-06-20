@@ -8,8 +8,8 @@
   "name": "Global: LinkedIn trainiert KI-Modelle ohne explizite Zustimmung der Nutzer:innen",
   "name_de": "Global: LinkedIn trainiert KI-Modelle ohne explizite Zustimmung der Nutzer:innen",
   "name_en": "Global: LinkedIn trains AI models without explicit user consent",
-  "description": "LinkedIn aktualisierte am 18. September 2024 still seine Datenschutzrichtlinie und begann, Nutzerdaten zum Training generativer KI-Modelle zu verwenden - ohne explizites Opt-in. Nach öffentlicher Kritik und Intervention der britischen Datenschutzbehörde ICO setzte LinkedIn das Training für Nutzer:innen im UK, EWR und der Schweiz am 20. September 2024 aus. Außerhalb Europas blieb die Praxis aktiv, mit einer Opt-out-Option unter Data privacy / Data for Generative AI Improvement. Eine Aenderung in den AGB schloss explizit die Nutzung von Inhalten aus, die nach dem Opt-out erstellt werden, nicht jedoch frühes Trainingsmaterial.",
-  "description_de": "LinkedIn aktualisierte am 18. September 2024 still seine Datenschutzrichtlinie und begann, Nutzerdaten zum Training generativer KI-Modelle zu verwenden - ohne explizites Opt-in. Nach öffentlicher Kritik und Intervention der britischen Datenschutzbehörde ICO setzte LinkedIn das Training für Nutzer:innen im UK, EWR und der Schweiz am 20. September 2024 aus. Außerhalb Europas blieb die Praxis aktiv, mit einer Opt-out-Option unter Data privacy / Data for Generative AI Improvement. Eine Aenderung in den AGB schloss explizit die Nutzung von Inhalten aus, die nach dem Opt-out erstellt werden, nicht jedoch frühes Trainingsmaterial.",
+  "description": "LinkedIn aktualisierte am 18. September 2024 still seine Datenschutzrichtlinie und begann, Nutzerdaten zum Training generativer KI-Modelle zu verwenden - ohne explizites Opt-in. Nach öffentlicher Kritik und Intervention der britischen Datenschutzbehörde ICO setzte LinkedIn das Training für Nutzer:innen im UK, EWR und der Schweiz am 20. September 2024 aus. Außerhalb Europas blieb die Praxis aktiv, mit einer Opt-out-Option unter Data privacy / Data for Generative AI Improvement. Eine Änderung in den AGB schloss explizit die Nutzung von Inhalten aus, die nach dem Opt-out erstellt werden, nicht jedoch frühes Trainingsmaterial.",
+  "description_de": "LinkedIn aktualisierte am 18. September 2024 still seine Datenschutzrichtlinie und begann, Nutzerdaten zum Training generativer KI-Modelle zu verwenden - ohne explizites Opt-in. Nach öffentlicher Kritik und Intervention der britischen Datenschutzbehörde ICO setzte LinkedIn das Training für Nutzer:innen im UK, EWR und der Schweiz am 20. September 2024 aus. Außerhalb Europas blieb die Praxis aktiv, mit einer Opt-out-Option unter Data privacy / Data for Generative AI Improvement. Eine Änderung in den AGB schloss explizit die Nutzung von Inhalten aus, die nach dem Opt-out erstellt werden, nicht jedoch frühes Trainingsmaterial.",
   "description_en": "On 18 September 2024 LinkedIn quietly updated its privacy policy and started using user data to train generative AI models, without explicit opt-in. After public criticism and intervention by the UK Information Commissioner's Office (ICO), LinkedIn suspended training for users in the UK, EEA and Switzerland on 20 September 2024. Outside Europe the practice continued, with an opt-out under Data privacy / Data for Generative AI Improvement. Updated terms excluded post-opt-out content from future training, but not data already used.",
   "startDate": "2024-09-18",
   "location": {
@@ -26,9 +26,24 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "LinkedIn (Microsoft)",
@@ -47,7 +62,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "LinkedIn baut generative KI-Funktionen auf Microsoft-Azure-Basis auf",
+      "description": "Nach der Übernahme durch Microsoft (2016) und dem ChatGPT-Boom 2023 integrierte LinkedIn generative KI-Features wie KI-gestützte Profil- und Beitragstexte. Trainingsmaterial dafür war der riesige Bestand an Nutzerprofilen, Beiträgen und Karrieredaten von über 900 Millionen Mitgliedern weltweit.",
+      "title_de": "LinkedIn baut generative KI-Funktionen auf Microsoft-Azure-Basis auf",
+      "description_de": "Nach der Übernahme durch Microsoft (2016) und dem ChatGPT-Boom 2023 integrierte LinkedIn generative KI-Features wie KI-gestützte Profil- und Beitragstexte. Trainingsmaterial dafür war der riesige Bestand an Nutzerprofilen, Beiträgen und Karrieredaten von über 900 Millionen Mitgliedern weltweit.",
+      "title_en": "LinkedIn builds generative AI features on Microsoft Azure",
+      "description_en": "After the Microsoft acquisition (2016) and the 2023 ChatGPT boom, LinkedIn integrated generative AI features such as AI-assisted profile and post writing. The training material was the vast pool of user profiles, posts and career data from over 900 million members worldwide.",
+      "sources": [
+        "https://www.thestack.technology/linkedin-trains-ai-on-personal-data/"
+      ]
+    },
+    {
+      "date": "2024-09-13",
+      "phase": "doctrine",
+      "title": "ICO warnt Branche, KI-Training nur mit klarer Widerspruchsmöglichkeit",
+      "description": "Am 13. September 2024 veröffentlichte die britische Datenschutzbehörde ICO eine Grundsatz-Stellungnahme: Unternehmen, die personenbezogene Daten zum Training generativer KI nutzen, müssen einen klaren und einfachen Weg zum Widerspruch bereitstellen. Unmittelbar danach stellte LinkedIn die Weichen, sein KI-Training per Default-Opt-in einzuführen.",
+      "title_de": "ICO warnt Branche, KI-Training nur mit klarer Widerspruchsmöglichkeit",
+      "description_de": "Am 13. September 2024 veröffentlichte die britische Datenschutzbehörde ICO eine Grundsatz-Stellungnahme: Unternehmen, die personenbezogene Daten zum Training generativer KI nutzen, müssen einen klaren und einfachen Weg zum Widerspruch bereitstellen. Unmittelbar danach stellte LinkedIn die Weichen, sein KI-Training per Default-Opt-in einzuführen.",
+      "title_en": "ICO warns industry: AI training only with a clear opt-out route",
+      "description_en": "On 13 September 2024 the UK Information Commissioner's Office (ICO) published a policy statement: organisations using personal data to train generative AI must provide a clear and simple route to object. Days later LinkedIn moved to roll out its AI training on a default opt-in basis.",
+      "sources": [
+        "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/09/our-statement-on-changes-to-linkedin-ai-data-policy/"
+      ]
+    },
+    {
+      "date": "2024-09-18",
+      "phase": "event",
+      "title": "LinkedIn aktiviert KI-Training mit Nutzerdaten per Default - ohne Opt-in",
+      "description": "Am 18. September 2024 aktualisierte LinkedIn still seine Datenschutzrichtlinie und begann, Nutzerdaten zum Training generativer KI-Modelle zu verwenden - voreingestellt aktiviert, ohne explizites Opt-in der Mitglieder. Eine Opt-out-Option war unter Data privacy / Data for Generative AI Improvement verborgen.",
+      "title_de": "LinkedIn aktiviert KI-Training mit Nutzerdaten per Default - ohne Opt-in",
+      "description_de": "Am 18. September 2024 aktualisierte LinkedIn still seine Datenschutzrichtlinie und begann, Nutzerdaten zum Training generativer KI-Modelle zu verwenden - voreingestellt aktiviert, ohne explizites Opt-in der Mitglieder. Eine Opt-out-Option war unter Data privacy / Data for Generative AI Improvement verborgen.",
+      "title_en": "LinkedIn switches AI training on user data on by default - no opt-in",
+      "description_en": "On 18 September 2024 LinkedIn quietly updated its privacy policy and started using user data to train generative AI models - switched on by default, with no explicit member opt-in. An opt-out was buried under Data privacy / Data for Generative AI Improvement.",
+      "sources": [
+        "https://thehackernews.com/2024/09/linkedin-halts-ai-data-processing-in-uk.html"
+      ]
+    },
+    {
+      "date": "2024-09-20",
+      "phase": "consequences",
+      "title": "LinkedIn stoppt Training in UK, EWR und Schweiz nach ICO-Intervention",
+      "description": "Nach öffentlicher Kritik und Intervention der ICO setzte LinkedIn das KI-Training für Nutzer:innen im UK, EWR und der Schweiz am 20. September 2024 aus. Außerhalb Europas blieb die Praxis aktiv. Aktualisierte AGB schlossen künftig nach dem Opt-out erstellte Inhalte aus - nicht jedoch bereits verarbeitetes Trainingsmaterial.",
+      "title_de": "LinkedIn stoppt Training in UK, EWR und Schweiz nach ICO-Intervention",
+      "description_de": "Nach öffentlicher Kritik und Intervention der ICO setzte LinkedIn das KI-Training für Nutzer:innen im UK, EWR und der Schweiz am 20. September 2024 aus. Außerhalb Europas blieb die Praxis aktiv. Aktualisierte AGB schlossen künftig nach dem Opt-out erstellte Inhalte aus - nicht jedoch bereits verarbeitetes Trainingsmaterial.",
+      "title_en": "LinkedIn halts training in UK, EEA and Switzerland after ICO intervention",
+      "description_en": "After public criticism and ICO intervention, LinkedIn suspended AI training for users in the UK, EEA and Switzerland on 20 September 2024. Outside Europe the practice continued. Updated terms excluded post-opt-out content from future training - but not data already processed.",
+      "sources": [
+        "https://www.infosecurity-magazine.com/news/linkedin-pauses-genai-training-ico/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/09/20/linkedin-has-stopped-grabbing-u-k-users-data-for-ai/",

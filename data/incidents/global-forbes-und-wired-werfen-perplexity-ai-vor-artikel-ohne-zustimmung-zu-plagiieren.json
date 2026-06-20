@@ -26,9 +26,24 @@
     "data-misuse",
     "labor-exploitation"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Arbeit",
+    "Pressefreiheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Arbeit",
+    "Pressefreiheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to work",
+    "Freedom of the press",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Perplexity AI",
@@ -49,7 +64,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Perplexity startet als KI-Antwortmaschine auf fremden Inhalten",
+      "description": "Perplexity AI ging 2022 als 'Answer Engine' an den Start - ein Chatbot, der Nutzerfragen beantwortet, indem er live Webinhalte durchsucht, zusammenfasst und als eigene Antwort ausgibt. Das Geschäftsmodell beruht strukturell darauf, fremde, oft kostenpflichtige Verlagsinhalte zu crawlen und zu rekonstruieren, ohne dass Leser:innen die Originalseite aufrufen müssen.",
+      "title_de": "Perplexity startet als KI-Antwortmaschine auf fremden Inhalten",
+      "description_de": "Perplexity AI ging 2022 als 'Answer Engine' an den Start - ein Chatbot, der Nutzerfragen beantwortet, indem er live Webinhalte durchsucht, zusammenfasst und als eigene Antwort ausgibt. Das Geschäftsmodell beruht strukturell darauf, fremde, oft kostenpflichtige Verlagsinhalte zu crawlen und zu rekonstruieren, ohne dass Leser:innen die Originalseite aufrufen müssen.",
+      "title_en": "Perplexity launches as an AI answer engine built on others' content",
+      "description_en": "Perplexity AI launched in 2022 as an 'answer engine' - a chatbot that answers user questions by searching, summarising and presenting live web content as its own reply. Its business model structurally depends on crawling and reconstructing third-party, often paywalled, publisher content so readers never need to visit the source page.",
+      "sources": [
+        "https://techcrunch.com/2024/07/02/news-outlets-are-accusing-perplexity-of-plagiarism-and-unethical-web-scraping/"
+      ]
+    },
+    {
+      "date": "2024-05",
+      "phase": "doctrine",
+      "title": "Launch von Perplexity Pages als Content-Aggregations-Feature",
+      "description": "Im Mai 2024 brachte Perplexity die Beta-Funktion 'Pages' heraus, mit der die KI aus durchsuchten Quellen automatisch ganze artikelartige Seiten generiert. Recherchen ergaben, dass Perplexitys Crawler dabei die robots.txt-Sperren von Verlagen umging und Inhalte auch von Seiten abrief, die das Scraping ausdrücklich untersagt hatten - die Designentscheidung priorisierte Reichweite über Einwilligung.",
+      "title_de": "Launch von Perplexity Pages als Content-Aggregations-Feature",
+      "description_de": "Im Mai 2024 brachte Perplexity die Beta-Funktion 'Pages' heraus, mit der die KI aus durchsuchten Quellen automatisch ganze artikelartige Seiten generiert. Recherchen ergaben, dass Perplexitys Crawler dabei die robots.txt-Sperren von Verlagen umging und Inhalte auch von Seiten abrief, die das Scraping ausdrücklich untersagt hatten - die Designentscheidung priorisierte Reichweite über Einwilligung.",
+      "title_en": "Launch of Perplexity Pages as a content-aggregation feature",
+      "description_en": "In May 2024 Perplexity released the beta 'Pages' feature, letting the AI automatically generate whole article-like pages from searched sources. Investigations found Perplexity's crawler bypassed publishers' robots.txt restrictions and pulled content even from sites that explicitly barred scraping - a design choice prioritising reach over consent.",
+      "sources": [
+        "https://techcrunch.com/2024/07/02/news-outlets-are-accusing-perplexity-of-plagiarism-and-unethical-web-scraping/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "event",
+      "title": "Forbes und WIRED dokumentieren Plagiate",
+      "description": "Im Juni 2024 warf Forbes Perplexity vor, einen exklusiven investigativen Artikel über Perplexity Pages nahezu vollständig zu rekonstruieren - inklusive Layout und Kernformulierungen - ohne erkennbare Quellenattribution. WIRED dokumentierte parallel, dass Perplexity ausgerechnet jenen WIRED-Artikel plagiierte, der das heimliche Scraping aufgedeckt hatte.",
+      "title_de": "Forbes und WIRED dokumentieren Plagiate",
+      "description_de": "Im Juni 2024 warf Forbes Perplexity vor, einen exklusiven investigativen Artikel über Perplexity Pages nahezu vollständig zu rekonstruieren - inklusive Layout und Kernformulierungen - ohne erkennbare Quellenattribution. WIRED dokumentierte parallel, dass Perplexity ausgerechnet jenen WIRED-Artikel plagiierte, der das heimliche Scraping aufgedeckt hatte.",
+      "title_en": "Forbes and WIRED document plagiarism",
+      "description_en": "In June 2024 Forbes accused Perplexity of substantially reproducing an exclusive investigative article via Perplexity Pages - including layout and key wording - without proper attribution. WIRED separately documented that Perplexity plagiarised the very WIRED article that had exposed its covert scraping.",
+      "sources": [
+        "https://techcrunch.com/2024/07/02/news-outlets-are-accusing-perplexity-of-plagiarism-and-unethical-web-scraping/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "Amazon prüft AWS-Verstoß, Druck der Verlage wächst",
+      "description": "Amazon untersuchte Berichten zufolge, ob Perplexity über AWS-Server gegen die Nutzungsbedingungen verstieß, indem es robots.txt-Sperren ignorierte. Perplexity reagierte später mit einem Revenue-Sharing-Programm für Verlage. Der Vorfall war Auftakt einer Welle juristischer Schritte.",
+      "title_de": "Amazon prüft AWS-Verstoß, Druck der Verlage wächst",
+      "description_de": "Amazon untersuchte Berichten zufolge, ob Perplexity über AWS-Server gegen die Nutzungsbedingungen verstieß, indem es robots.txt-Sperren ignorierte. Perplexity reagierte später mit einem Revenue-Sharing-Programm für Verlage. Der Vorfall war Auftakt einer Welle juristischer Schritte.",
+      "title_en": "Amazon probes AWS breach, publisher pressure mounts",
+      "description_en": "Amazon reportedly investigated whether Perplexity violated AWS terms of service by ignoring robots.txt restrictions. Perplexity later responded with a revenue-sharing programme for publishers. The episode opened a wave of legal action.",
+      "sources": [
+        "https://www.engadget.com/amazon-investigating-perplexity-ai-after-accusations-it-scrapes-websites-without-consent-133003374.html"
+      ]
+    },
+    {
+      "date": "2024-10-21",
+      "phase": "consequences",
+      "title": "Dow Jones und New York Post verklagen Perplexity",
+      "description": "Am 21. Oktober 2024 reichten Rupert Murdochs Dow Jones (Wall Street Journal) und die New York Post Klage wegen 'massiver' Urheberrechtsverletzung gegen Perplexity ein und warfen dem Unternehmen unter anderem halluzinierte, fälschlich zugeschriebene Zitate vor. Die New York Times schickte zeitgleich eine Unterlassungsaufforderung.",
+      "title_de": "Dow Jones und New York Post verklagen Perplexity",
+      "description_de": "Am 21. Oktober 2024 reichten Rupert Murdochs Dow Jones (Wall Street Journal) und die New York Post Klage wegen 'massiver' Urheberrechtsverletzung gegen Perplexity ein und warfen dem Unternehmen unter anderem halluzinierte, fälschlich zugeschriebene Zitate vor. Die New York Times schickte zeitgleich eine Unterlassungsaufforderung.",
+      "title_en": "Dow Jones and New York Post sue Perplexity",
+      "description_en": "On 21 October 2024 Rupert Murdoch's Dow Jones (Wall Street Journal) and the New York Post sued Perplexity for 'massive' copyright infringement, alleging among other things hallucinated, falsely attributed quotes. The New York Times sent a cease-and-desist notice around the same time.",
+      "sources": [
+        "https://www.cnbc.com/2024/10/21/murdoch-firms-dow-jones-and-new-york-post-sue-perplexity-ai.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/07/02/news-outlets-are-accusing-perplexity-of-plagiarism-and-unethical-web-scraping/",
