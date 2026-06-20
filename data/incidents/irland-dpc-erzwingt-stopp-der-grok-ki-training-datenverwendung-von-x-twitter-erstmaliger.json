@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "X Corp. (vormals Twitter)",
@@ -60,7 +75,63 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-11",
+      "phase": "infrastructure",
+      "title": "xAI startet Grok auf Basis der X-Plattformdaten",
+      "description": "Ende 2023 brachte Elon Musks Unternehmen xAI den Chatbot Grok auf den Markt, der eng mit der Social-Media-Plattform X (vormals Twitter) verzahnt ist. Die enorme Menge öffentlicher und halböffentlicher Nutzer-Posts auf X bildete die Datengrundlage (Infrastruktur), die für das Training des Modells attraktiv war — einschließlich der Beiträge von rund 60 Millionen Nutzer:innen im EU/EWR-Raum.",
+      "title_de": "xAI startet Grok auf Basis der X-Plattformdaten",
+      "description_de": "Ende 2023 brachte Elon Musks Unternehmen xAI den Chatbot Grok auf den Markt, der eng mit der Social-Media-Plattform X (vormals Twitter) verzahnt ist. Die enorme Menge öffentlicher und halböffentlicher Nutzer-Posts auf X bildete die Datengrundlage (Infrastruktur), die für das Training des Modells attraktiv war — einschließlich der Beiträge von rund 60 Millionen Nutzer:innen im EU/EWR-Raum.",
+      "title_en": "xAI launches Grok built on X platform data",
+      "description_en": "In late 2023 Elon Musk's company xAI launched the Grok chatbot, tightly integrated with the social-media platform X (formerly Twitter). The vast amount of public and semi-public user posts on X formed the data base (infrastructure) attractive for training the model — including the posts of around 60 million users in the EU/EEA.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/artificial-intelligence/x-faces-gdpr-complaints-for-unauthorized-use-of-data-for-ai-training/"
+      ]
+    },
+    {
+      "date": "2024-05-07",
+      "phase": "doctrine",
+      "title": "X verarbeitet EU-Nutzerdaten ohne Information oder Opt-in für Grok-Training",
+      "description": "Ab dem 7. Mai 2024 verwendete X die Posts von EU/EWR-Nutzer:innen für das Training von Grok, ohne sie zu informieren oder eine Einwilligung einzuholen. Erst Ende Juli 2024 schaltete X eine versteckte Opt-out-Einstellung frei — also nachdem die Daten bereits verarbeitet waren. Dieses Geschäftsmodell, das auf stillschweigende Datennutzung statt aktive Einwilligung setzt, war der Auslöser für das aufsichtsbehördliche Eingreifen.",
+      "title_de": "X verarbeitet EU-Nutzerdaten ohne Information oder Opt-in für Grok-Training",
+      "description_de": "Ab dem 7. Mai 2024 verwendete X die Posts von EU/EWR-Nutzer:innen für das Training von Grok, ohne sie zu informieren oder eine Einwilligung einzuholen. Erst Ende Juli 2024 schaltete X eine versteckte Opt-out-Einstellung frei — also nachdem die Daten bereits verarbeitet waren. Dieses Geschäftsmodell, das auf stillschweigende Datennutzung statt aktive Einwilligung setzt, war der Auslöser für das aufsichtsbehördliche Eingreifen.",
+      "title_en": "X processes EU user data without notice or opt-in for Grok training",
+      "description_en": "From 7 May 2024 X used EU/EEA users' posts to train Grok without informing them or obtaining consent. Only in late July 2024 did X enable a hidden opt-out setting — after the data had already been processed. This business model, relying on tacit data use rather than active consent, was the trigger for the regulatory intervention.",
+      "sources": [
+        "https://www.euronews.com/next/2024/08/12/elon-musk-hit-with-nine-complaints-of-breaching-eu-privacy-rules-to-train-ai-model",
+        "https://noyb.eu/en/twitters-ai-plans-hit-9-more-gdpr-complaints"
+      ]
+    },
+    {
+      "date": "2024-08-06",
+      "phase": "event",
+      "title": "DPC stellt erstmals §134-Eilantrag vor dem High Court gegen X",
+      "description": "Am 6. August 2024 reichte die irische Datenschutzbehörde DPC erstmals einen Eilantrag nach §134 des Datenschutzgesetzes 2018 vor dem High Court ein, um die Verarbeitung von EU/EWR-Nutzerdaten durch X für das Grok-Training zu stoppen. Es war der erste Eingriff dieser Art durch eine federführende Aufsichtsbehörde (Lead Supervisory Authority) unter der DSGVO. Am 8. August stimmte X zu, die Verarbeitung auszusetzen.",
+      "title_de": "DPC stellt erstmals §134-Eilantrag vor dem High Court gegen X",
+      "description_de": "Am 6. August 2024 reichte die irische Datenschutzbehörde DPC erstmals einen Eilantrag nach §134 des Datenschutzgesetzes 2018 vor dem High Court ein, um die Verarbeitung von EU/EWR-Nutzerdaten durch X für das Grok-Training zu stoppen. Es war der erste Eingriff dieser Art durch eine federführende Aufsichtsbehörde (Lead Supervisory Authority) unter der DSGVO. Am 8. August stimmte X zu, die Verarbeitung auszusetzen.",
+      "title_en": "DPC files first-ever §134 emergency application before the High Court against X",
+      "description_en": "On 6 August 2024 Ireland's Data Protection Commission (DPC) filed its first-ever emergency application under §134 of the 2018 Data Protection Act before the High Court to halt X's processing of EU/EEA user data for Grok training. It was the first intervention of its kind by a Lead Supervisory Authority under the GDPR. On 8 August X agreed to suspend processing.",
+      "sources": [
+        "https://www.dataprotection.ie/en/news-media/press-releases/dpc-welcomes-xs-agreement-suspend-its-processing-personal-data-purpose-training-ai-tool-grok",
+        "https://techcrunch.com/2024/09/04/irelands-privacy-watchdog-ends-legal-fight-with-x-over-data-use-for-ai-after-it-agrees-to-permanent-limits/"
+      ]
+    },
+    {
+      "date": "2024-09-04",
+      "phase": "consequences",
+      "title": "Verfahren eingestellt — X verpflichtet sich dauerhaft und löscht Daten",
+      "description": "Am 4. September 2024 wurde das Verfahren eingestellt: X verpflichtete sich dauerhaft, EU-Daten nicht für das Grok-Training zu verwenden und die zwischen dem 7. Mai und 1. August verarbeiteten Daten zu löschen. Parallel reichte die Datenschutzorganisation noyb in neun EU-Staaten DSGVO-Beschwerden ein. Der Fall gilt als Präzedenzfall für das aufsichtsbehördliche Vorgehen gegen KI-Training mit Nutzerdaten in der EU.",
+      "title_de": "Verfahren eingestellt — X verpflichtet sich dauerhaft und löscht Daten",
+      "description_de": "Am 4. September 2024 wurde das Verfahren eingestellt: X verpflichtete sich dauerhaft, EU-Daten nicht für das Grok-Training zu verwenden und die zwischen dem 7. Mai und 1. August verarbeiteten Daten zu löschen. Parallel reichte die Datenschutzorganisation noyb in neun EU-Staaten DSGVO-Beschwerden ein. Der Fall gilt als Präzedenzfall für das aufsichtsbehördliche Vorgehen gegen KI-Training mit Nutzerdaten in der EU.",
+      "title_en": "Proceedings struck out — X commits permanently and deletes data",
+      "description_en": "On 4 September 2024 the proceedings were struck out: X undertook on a permanent basis not to use EU data for Grok training and to delete the data processed between 7 May and 1 August. In parallel, the privacy organisation noyb filed GDPR complaints in nine EU states. The case is regarded as a precedent for regulatory action against AI training with user data in the EU.",
+      "sources": [
+        "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-welcomes-conclusion-proceedings-relating-xs-ai-tool-grok",
+        "https://techcrunch.com/2024/09/06/elon-musks-x-could-still-face-sanctions-for-training-grok-on-europeans-data"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.dataprotection.ie/en/news-media/press-releases/dpc-welcomes-xs-agreement-suspend-its-processing-personal-data-purpose-training-ai-tool-grok",
