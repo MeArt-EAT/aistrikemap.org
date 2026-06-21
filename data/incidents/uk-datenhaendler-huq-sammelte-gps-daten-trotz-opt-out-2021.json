@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Bewegungsfreiheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Bewegungsfreiheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Consumer protection",
+    "Freedom of movement",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Huq Industries",
@@ -51,7 +69,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Huq baut globalen Markt für Standortdaten aus Alltags-Apps auf",
+      "description": "Der Londoner Standortdaten-Händler Huq Industries baut ein Geschäftsmodell auf, das Bewegungsdaten aus gewöhnlichen Smartphone-Apps gewinnt. Über in die Apps eingebettete Software-Bausteine (SDKs) sammelt Huq nach eigenen Angaben rund eine Milliarde Mobilitätsereignisse aus 161 Ländern und verkauft sie an Finanz-, Einzelhandels- und Immobilienkunden sowie an Kommunen.",
+      "title_de": "Huq baut globalen Markt für Standortdaten aus Alltags-Apps auf",
+      "description_de": "Der Londoner Standortdaten-Händler Huq Industries baut ein Geschäftsmodell auf, das Bewegungsdaten aus gewöhnlichen Smartphone-Apps gewinnt. Über in die Apps eingebettete Software-Bausteine (SDKs) sammelt Huq nach eigenen Angaben rund eine Milliarde Mobilitätsereignisse aus 161 Ländern und verkauft sie an Finanz-, Einzelhandels- und Immobilienkunden sowie an Kommunen.",
+      "title_en": "Huq builds a global market for location data from everyday apps",
+      "description_en": "London location-data broker Huq Industries builds a business model that harvests movement data from ordinary smartphone apps. Through software kits (SDKs) embedded in the apps, Huq says it collects around one billion mobility events from 161 countries and sells them to finance, retail and real-estate customers as well as to local governments.",
+      "sources": [
+        "https://alternativedata.org/data_provider/huq-industries/"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Datenmonetarisierung über SDKs wird zum Branchenmodell ohne wirksame Einwilligung",
+      "description": "App-Entwickler wie KAIBITS Software ('Network Signal Info') und QR-Scanner-Anbieter binden Standort-SDKs ein, um ihre kostenlosen Apps zu finanzieren. Die Einwilligung der Nutzer wird über lange Datenschutzerklärungen und App-eigene Schalter abgewickelt; ob ein Opt-out im App-Menü tatsächlich an das eingebettete SDK durchgereicht wird, bleibt unkontrolliert.",
+      "title_de": "Datenmonetarisierung über SDKs wird zum Branchenmodell ohne wirksame Einwilligung",
+      "description_de": "App-Entwickler wie KAIBITS Software ('Network Signal Info') und QR-Scanner-Anbieter binden Standort-SDKs ein, um ihre kostenlosen Apps zu finanzieren. Die Einwilligung der Nutzer wird über lange Datenschutzerklärungen und App-eigene Schalter abgewickelt; ob ein Opt-out im App-Menü tatsächlich an das eingebettete SDK durchgereicht wird, bleibt unkontrolliert.",
+      "title_en": "Monetising data via SDKs becomes the industry model with no effective consent",
+      "description_en": "App developers such as KAIBITS Software ('Network Signal Info') and QR-scanner providers embed location SDKs to fund their free apps. User consent is handled through lengthy privacy policies and in-app toggles; whether an opt-out in the app menu is actually passed on to the embedded SDK goes unchecked.",
+      "sources": [
+        "https://www.silicon.co.uk/e-regulation/surveillance/location-breach-huq-424261"
+      ]
+    },
+    {
+      "date": "2021-10-25",
+      "phase": "event",
+      "title": "Motherboard und AppCensus decken Datenabgriff trotz Opt-out auf",
+      "description": "Eine Recherche von Joseph Cox für Motherboard (Vice) und dem Forschungsteam AppCensus zeigt, dass Huq GPS-Koordinaten aus Apps wie 'Network Signal Info' und einem QR-Scanner (je über fünf Millionen Downloads) erhielt, selbst wenn Nutzer das Standort-Teilen in der App ausdrücklich abgelehnt hatten. Huq räumt gegenüber der BBC ein, dass einige Daten ohne gültige Einwilligung erhoben wurden.",
+      "title_de": "Motherboard und AppCensus decken Datenabgriff trotz Opt-out auf",
+      "description_de": "Eine Recherche von Joseph Cox für Motherboard (Vice) und dem Forschungsteam AppCensus zeigt, dass Huq GPS-Koordinaten aus Apps wie 'Network Signal Info' und einem QR-Scanner (je über fünf Millionen Downloads) erhielt, selbst wenn Nutzer das Standort-Teilen in der App ausdrücklich abgelehnt hatten. Huq räumt gegenüber der BBC ein, dass einige Daten ohne gültige Einwilligung erhoben wurden.",
+      "title_en": "Motherboard and AppCensus expose data collection despite opt-out",
+      "description_en": "An investigation by Joseph Cox for Motherboard (Vice) and the research team AppCensus shows that Huq received GPS coordinates from apps such as 'Network Signal Info' and a QR scanner (each with over five million downloads) even when users had explicitly declined location sharing in the app. Huq admits to the BBC that some data was collected without valid consent.",
+      "sources": [
+        "https://www.vice.com/en/article/5dgmqz/huq-location-data-opt-out-no-consent"
+      ]
+    },
+    {
+      "date": "2021-11",
+      "phase": "consequences",
+      "title": "Google verwarnt Entwickler, Huq spricht von 'technischem Verstoß'",
+      "description": "Google fordert die betroffenen App-Entwickler auf, die Standortdatenerhebung offenzulegen oder ihre Apps aus dem Play Store zu entfernen. Huq beschreibt den Vorfall als 'technischen Verstoß' aufgrund fehlerhafter Einwilligungsweitergabe und kündigt Nachbesserungen an. Der Fall verschärft die Debatte über unkontrollierte Datenhändler und die Wirksamkeit von In-App-Opt-outs.",
+      "title_de": "Google verwarnt Entwickler, Huq spricht von 'technischem Verstoß'",
+      "description_de": "Google fordert die betroffenen App-Entwickler auf, die Standortdatenerhebung offenzulegen oder ihre Apps aus dem Play Store zu entfernen. Huq beschreibt den Vorfall als 'technischen Verstoß' aufgrund fehlerhafter Einwilligungsweitergabe und kündigt Nachbesserungen an. Der Fall verschärft die Debatte über unkontrollierte Datenhändler und die Wirksamkeit von In-App-Opt-outs.",
+      "title_en": "Google warns developers, Huq calls it a 'technical breach'",
+      "description_en": "Google tells the affected app developers to disclose the location data collection or have their apps removed from the Play Store. Huq describes the incident as a 'technical breach' caused by faulty consent forwarding and promises fixes. The case sharpens the debate over unregulated data brokers and the effectiveness of in-app opt-outs.",
+      "sources": [
+        "https://www.vice.com/en/article/google-tells-apps-disclose-location-data-removed-huq/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.vice.com/en/article/5dgmqz/huq-location-data-opt-out-no-consent",
