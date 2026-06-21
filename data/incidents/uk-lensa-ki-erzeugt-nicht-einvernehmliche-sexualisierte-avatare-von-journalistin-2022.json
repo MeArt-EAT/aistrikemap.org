@@ -31,9 +31,27 @@
     "deepfakes",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Schutz vor Diskriminierung",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Schutz vor Diskriminierung",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Human dignity",
+    "Privacy",
+    "Protection from discrimination",
+    "Protection from manipulation",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Melissa Heikkila (affected journalist, MIT Technology Review)",
@@ -55,7 +73,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-08",
+      "phase": "infrastructure",
+      "title": "Stable Diffusion und der LAION-5B-Datensatz",
+      "description": "Lensas Avatar-Funktion basiert auf dem im August 2022 veröffentlichten Bildgenerator Stable Diffusion, der auf dem aus dem offenen Internet gescrapten Datensatz LAION-5B trainiert wurde. Dieser Datensatz enthält massenhaft sexualisierte Frauenbilder sowie rassistische und sexistische Stereotype, die das Modell reproduziert. Damit war die technische Grundlage für sexualisierte, verzerrte Ausgaben bereits angelegt, bevor irgendeine App sie nutzte.",
+      "title_de": "Stable Diffusion und der LAION-5B-Datensatz",
+      "description_de": "Lensas Avatar-Funktion basiert auf dem im August 2022 veröffentlichten Bildgenerator Stable Diffusion, der auf dem aus dem offenen Internet gescrapten Datensatz LAION-5B trainiert wurde. Dieser Datensatz enthält massenhaft sexualisierte Frauenbilder sowie rassistische und sexistische Stereotype, die das Modell reproduziert. Damit war die technische Grundlage für sexualisierte, verzerrte Ausgaben bereits angelegt, bevor irgendeine App sie nutzte.",
+      "title_en": "Stable Diffusion and the LAION-5B dataset",
+      "description_en": "Lensa's avatar feature is built on Stable Diffusion, the image generator released in August 2022 and trained on LAION-5B, a dataset scraped from the open internet. That dataset contains large amounts of sexualised images of women and racist and sexist stereotypes, which the model reproduces. The technical basis for sexualised, biased outputs was therefore in place before any app used it.",
+      "sources": [
+        "https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me-without-my-consent/"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "phase": "doctrine",
+      "title": "Prisma Labs bringt Magic Avatars ohne Schutzfilter heraus",
+      "description": "Prisma Labs erweiterte seine bestehende Foto-App Lensa im November 2022 um die virale Magic-Avatars-Funktion, die aus hochgeladenen Selfies stilisierte Porträts erzeugt. Das mitgelieferte Sicherheits-/NSFW-Filtersystem von Stable Diffusion, das sexualisierte Ausgaben hätte unterdrücken können, kam dabei offenbar nicht zum Einsatz. Das Geschäftsmodell setzte auf schnelle virale Verbreitung kostenpflichtiger Avatar-Pakete statt auf vorsorgliche Inhalts-Kontrollen.",
+      "title_de": "Prisma Labs bringt Magic Avatars ohne Schutzfilter heraus",
+      "description_de": "Prisma Labs erweiterte seine bestehende Foto-App Lensa im November 2022 um die virale Magic-Avatars-Funktion, die aus hochgeladenen Selfies stilisierte Porträts erzeugt. Das mitgelieferte Sicherheits-/NSFW-Filtersystem von Stable Diffusion, das sexualisierte Ausgaben hätte unterdrücken können, kam dabei offenbar nicht zum Einsatz. Das Geschäftsmodell setzte auf schnelle virale Verbreitung kostenpflichtiger Avatar-Pakete statt auf vorsorgliche Inhalts-Kontrollen.",
+      "title_en": "Prisma Labs ships Magic Avatars without the safety filter",
+      "description_en": "In November 2022 Prisma Labs added the viral Magic Avatars feature to its existing Lensa photo app, generating stylised portraits from uploaded selfies. Stable Diffusion's bundled safety/NSFW filter, which could have suppressed sexualised outputs, appears not to have been used. The business model relied on rapid viral uptake of paid avatar packs rather than precautionary content controls.",
+      "sources": [
+        "https://techcrunch.com/2022/12/06/prisma-ai-regulation/"
+      ]
+    },
+    {
+      "date": "2022-12",
+      "phase": "event",
+      "title": "Lensa-KI erzeugt nicht einvernehmliche sexualisierte Avatare von Journalistin",
+      "description": "Die MIT-Technology-Review-Journalistin Melissa Heikkilä berichtete im Dezember 2022, dass Lensa aus ihren Selfies unaufgefordert sexualisierte und nackte Avatare erzeugte: 16 von 100 Bildern waren oben ohne, weitere 14 zeigten sie freizügig und in sexualisierten Posen. Als Frau asiatischer Herkunft erhielt sie deutlich mehr solcher Bilder als eine weiße Kollegin - ein Beleg für rassistische und sexistische Verzerrungen im Trainingsdatensatz.",
+      "title_de": "Lensa-KI erzeugt nicht einvernehmliche sexualisierte Avatare von Journalistin",
+      "description_de": "Die MIT-Technology-Review-Journalistin Melissa Heikkilä berichtete im Dezember 2022, dass Lensa aus ihren Selfies unaufgefordert sexualisierte und nackte Avatare erzeugte: 16 von 100 Bildern waren oben ohne, weitere 14 zeigten sie freizügig und in sexualisierten Posen. Als Frau asiatischer Herkunft erhielt sie deutlich mehr solcher Bilder als eine weiße Kollegin - ein Beleg für rassistische und sexistische Verzerrungen im Trainingsdatensatz.",
+      "title_en": "Lensa AI generates non-consensual sexualised avatars of journalist",
+      "description_en": "MIT Technology Review journalist Melissa Heikkila reported in December 2022 that Lensa generated unsolicited sexualised and nude avatars from her selfies: 16 of 100 images were topless, and another 14 showed her in skimpy clothing and sexualised poses. As a woman of Asian heritage she received far more such images than a white colleague - evidence of racist and sexist biases in the training data.",
+      "sources": [
+        "https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me-without-my-consent/"
+      ]
+    },
+    {
+      "date": "2022-12-13",
+      "phase": "consequences",
+      "title": "Öffentliche Kritik und Debatte über nicht einvernehmliche KI-Nacktbilder",
+      "description": "Der Bericht löste eine breite Debatte über Bias, Einwilligung und das Risiko nicht einvernehmlicher KI-Nacktbilder aus, auch von Minderjährigen. Forschende und Aktivistinnen verwiesen darauf, dass solche Apps Frauen und Mädchen systematisch sexualisieren. Prisma Labs erklärte, an Maßnahmen gegen die versehentliche Erzeugung von Nacktbildern zu arbeiten, wies eine grundsätzliche Verantwortung jedoch weitgehend dem zugrunde liegenden Modell zu.",
+      "title_de": "Öffentliche Kritik und Debatte über nicht einvernehmliche KI-Nacktbilder",
+      "description_de": "Der Bericht löste eine breite Debatte über Bias, Einwilligung und das Risiko nicht einvernehmlicher KI-Nacktbilder aus, auch von Minderjährigen. Forschende und Aktivistinnen verwiesen darauf, dass solche Apps Frauen und Mädchen systematisch sexualisieren. Prisma Labs erklärte, an Maßnahmen gegen die versehentliche Erzeugung von Nacktbildern zu arbeiten, wies eine grundsätzliche Verantwortung jedoch weitgehend dem zugrunde liegenden Modell zu.",
+      "title_en": "Public criticism and debate over non-consensual AI nudes",
+      "description_en": "The report triggered a broad debate about bias, consent and the risk of non-consensual AI nudes, including of minors. Researchers and activists noted that such apps systematically sexualise women and girls. Prisma Labs said it was working to prevent the accidental generation of nudes, but largely attributed underlying responsibility to the base model.",
+      "sources": [
+        "https://techcrunch.com/2022/12/06/prisma-ai-regulation/",
+        "https://www.technologyreview.com/2022/12/13/1064810/how-it-feels-to-be-sexually-objectified-by-an-ai/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me-without-my-consent/",

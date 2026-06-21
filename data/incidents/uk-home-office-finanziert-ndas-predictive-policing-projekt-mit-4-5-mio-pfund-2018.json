@@ -31,9 +31,27 @@
     "predictive-policing",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "faires Verfahren",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "faires Verfahren",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Protection from discrimination",
+    "Equal treatment",
+    "Fair trial",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "UK Home Office",
@@ -66,7 +84,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "West Midlands Police bündelt Polizeidatenbestände für prädiktive Analytik",
+      "description": "West Midlands Police entwickelte mit dem Partner Accenture eine Datenanalyse-Plattform, die Bestände mehrerer Polizeibehörden zusammenführt - Anzeigen, Verurteilungen, Gewahrsamsdaten, Erkenntnisse und Einsatzberichte. Mit Werkzeugen wie Qlik Sense sollten daraus individuelle Risikoprofile errechnet werden. Diese behördenübergreifende Dateninfrastruktur bildete die technische Grundlage für das spätere NDAS-Vorhersagemodell.",
+      "title_de": "West Midlands Police bündelt Polizeidatenbestände für prädiktive Analytik",
+      "description_de": "West Midlands Police entwickelte mit dem Partner Accenture eine Datenanalyse-Plattform, die Bestände mehrerer Polizeibehörden zusammenführt - Anzeigen, Verurteilungen, Gewahrsamsdaten, Erkenntnisse und Einsatzberichte. Mit Werkzeugen wie Qlik Sense sollten daraus individuelle Risikoprofile errechnet werden. Diese behördenübergreifende Dateninfrastruktur bildete die technische Grundlage für das spätere NDAS-Vorhersagemodell.",
+      "title_en": "West Midlands Police pools police data holdings for predictive analytics",
+      "description_en": "West Midlands Police, with partner Accenture, developed a data-analytics platform merging holdings from several police forces - crime reports, convictions, custody records, intelligence and incident logs. Tools such as Qlik Sense were meant to derive individual risk profiles. This cross-force data infrastructure formed the technical basis for the later NDAS prediction model.",
+      "sources": [
+        "https://www.computerweekly.com/feature/West-Midlands-Police-turns-to-predictive-analytics"
+      ]
+    },
+    {
+      "date": "2018-08",
+      "phase": "doctrine",
+      "title": "Home Office finanziert NDAS aus dem Police Transformation Fund",
+      "description": "Das britische Innenministerium stellte über den Police Transformation Fund Mittel für die National Data Analytics Solution (NDAS) bereit, geleitet von West Midlands Police und damit zum bis dahin größten prädiktiven Polizeidatenprojekt im Vereinigten Königreich. Erklärtes Ziel war, Personen mit erhöhtem Risiko für 'schwerste Gewalt' zu identifizieren - eine politische Entscheidung, polizeiliches Handeln auf algorithmische Risikoeinstufung zu stützen.",
+      "title_de": "Home Office finanziert NDAS aus dem Police Transformation Fund",
+      "description_de": "Das britische Innenministerium stellte über den Police Transformation Fund Mittel für die National Data Analytics Solution (NDAS) bereit, geleitet von West Midlands Police und damit zum bis dahin größten prädiktiven Polizeidatenprojekt im Vereinigten Königreich. Erklärtes Ziel war, Personen mit erhöhtem Risiko für 'schwerste Gewalt' zu identifizieren - eine politische Entscheidung, polizeiliches Handeln auf algorithmische Risikoeinstufung zu stützen.",
+      "title_en": "Home Office funds NDAS from the Police Transformation Fund",
+      "description_en": "The UK Home Office allocated funding via the Police Transformation Fund to the National Data Analytics Solution (NDAS), led by West Midlands Police and thus the largest predictive policing data project in the UK to date. Its stated aim was to identify individuals at heightened risk of committing 'most serious violence' - a policy decision to base policing on algorithmic risk scoring.",
+      "sources": [
+        "https://www.gov.uk/government/news/home-office-funds-innovative-policing-technology-to-prevent-crime"
+      ]
+    },
+    {
+      "date": "2018-09",
+      "phase": "event",
+      "title": "NDAS-Pilot ('Foundation Phase') zur Vorhersage von Gewalttätern startet",
+      "description": "Von September 2018 bis April 2019 lief die 'Foundation Phase' des NDAS-Pilots, der Personen identifizieren sollte, die 'schwerste Gewalttaten' begehen könnten. Das Modell ordnete Menschen anhand historischer Polizeidaten individuelle Risikowerte zu - mit der Gefahr, bestehende Verzerrungen in den Daten in selbsterfüllende Verdächtigungen zu übersetzen.",
+      "title_de": "NDAS-Pilot ('Foundation Phase') zur Vorhersage von Gewalttätern startet",
+      "description_de": "Von September 2018 bis April 2019 lief die 'Foundation Phase' des NDAS-Pilots, der Personen identifizieren sollte, die 'schwerste Gewalttaten' begehen könnten. Das Modell ordnete Menschen anhand historischer Polizeidaten individuelle Risikowerte zu - mit der Gefahr, bestehende Verzerrungen in den Daten in selbsterfüllende Verdächtigungen zu übersetzen.",
+      "title_en": "NDAS pilot ('Foundation Phase') to predict violent offenders begins",
+      "description_en": "From September 2018 to April 2019 the NDAS pilot's 'Foundation Phase' ran, aiming to identify individuals who might commit 'most serious violence'. The model assigned people individual risk scores from historical police data - risking the translation of existing data bias into self-fulfilling suspicion.",
+      "sources": [
+        "https://www.computerweekly.com/feature/West-Midlands-Police-turns-to-predictive-analytics"
+      ]
+    },
+    {
+      "date": "2019-04",
+      "phase": "consequences",
+      "title": "Ethik-Gruppe rügt Methodik; Projekt läuft reduziert weiter",
+      "description": "Die Data Ethics Group des Alan Turing Institute kritisierte die methodische Tragfähigkeit des Modells und die Risiken diskriminierender Verzerrung. Statt das Projekt einzustellen, lief NDAS in reduziertem Umfang weiter und erhielt weitere Mittel zur Fortsetzung der Versuche. Der Fall wurde zum Referenzbeispiel für die Debatte über Transparenz und Regulierung algorithmischer Werkzeuge im britischen Strafjustizsystem.",
+      "title_de": "Ethik-Gruppe rügt Methodik; Projekt läuft reduziert weiter",
+      "description_de": "Die Data Ethics Group des Alan Turing Institute kritisierte die methodische Tragfähigkeit des Modells und die Risiken diskriminierender Verzerrung. Statt das Projekt einzustellen, lief NDAS in reduziertem Umfang weiter und erhielt weitere Mittel zur Fortsetzung der Versuche. Der Fall wurde zum Referenzbeispiel für die Debatte über Transparenz und Regulierung algorithmischer Werkzeuge im britischen Strafjustizsystem.",
+      "title_en": "Ethics group criticises methodology; project continues in reduced form",
+      "description_en": "The Alan Turing Institute's Data Ethics Group criticised the model's methodological soundness and risks of discriminatory bias. Rather than being scrapped, NDAS continued in reduced form and secured further funding to continue trials. The case became a reference point in the debate over transparency and regulation of algorithmic tools in the UK criminal justice system.",
+      "sources": [
+        "https://www2.publictechnology.net/articles/news/west-midlands-police-gets-%C2%A35m-continue-predictive-analytics-trials"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.gov.uk/government/news/home-office-funds-innovative-policing-technology-to-prevent-crime",

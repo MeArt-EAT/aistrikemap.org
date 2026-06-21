@@ -31,9 +31,27 @@
     "surveillance",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf Gesundheit",
+    "Verbraucherschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf Gesundheit",
+    "Verbraucherschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Right to health",
+    "Consumer protection",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -54,7 +72,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024",
+      "phase": "infrastructure",
+      "title": "Microsoft baut mit Copilot+ PCs lokale NPU-Hardware für dauerhafte Bildschirmanalyse",
+      "description": "Microsoft führte die Copilot+-PC-Klasse mit leistungsfähigen neuronalen Recheneinheiten (NPU) ein, die KI-Verarbeitung direkt auf dem Gerät ermöglichen. Diese Hardware-Plattform schuf die Voraussetzung, fortlaufend Screenshots der gesamten Bildschirmaktivität lokal zu speichern und KI-gestützt durchsuchbar zu machen - die technische Grundlage für die Funktion Recall.",
+      "title_de": "Microsoft baut mit Copilot+ PCs lokale NPU-Hardware für dauerhafte Bildschirmanalyse",
+      "description_de": "Microsoft führte die Copilot+-PC-Klasse mit leistungsfähigen neuronalen Recheneinheiten (NPU) ein, die KI-Verarbeitung direkt auf dem Gerät ermöglichen. Diese Hardware-Plattform schuf die Voraussetzung, fortlaufend Screenshots der gesamten Bildschirmaktivität lokal zu speichern und KI-gestützt durchsuchbar zu machen - die technische Grundlage für die Funktion Recall.",
+      "title_en": "Microsoft builds Copilot+ PCs with local NPU hardware for continuous screen analysis",
+      "description_en": "Microsoft introduced the Copilot+ PC class with powerful neural processing units (NPUs) enabling on-device AI processing. This hardware platform created the precondition for continuously storing screenshots of all screen activity locally and making them AI-searchable - the technical basis for the Recall feature.",
+      "sources": [
+        "https://www.tomshardware.com/software/windows/recall-drawing-regulatory-scrutiny-in-the-uk-microsofts-ai-copilot-feature-a-privacy-nightmare"
+      ]
+    },
+    {
+      "date": "2024-05",
+      "phase": "doctrine",
+      "title": "Microsoft kündigt Recall als standardmäßig aktive Copilot+-Funktion an",
+      "description": "Mit der Vorstellung der Copilot+-PCs im Mai 2024 kündigte Microsoft Recall an, das alle paar Sekunden Screenshots der Bildschirmaktivität anfertigt und in einem durchsuchbaren Verlauf speichert. In der ursprünglichen Auslieferungsplanung war Recall faktisch standardmäßig aktiv und sah keine Filter für Passwörter, Adressen oder Gesundheitsdaten vor - eine Produktentscheidung, dauerhafte Bildschirmprotokollierung zum Normalzustand zu machen.",
+      "title_de": "Microsoft kündigt Recall als standardmäßig aktive Copilot+-Funktion an",
+      "description_de": "Mit der Vorstellung der Copilot+-PCs im Mai 2024 kündigte Microsoft Recall an, das alle paar Sekunden Screenshots der Bildschirmaktivität anfertigt und in einem durchsuchbaren Verlauf speichert. In der ursprünglichen Auslieferungsplanung war Recall faktisch standardmäßig aktiv und sah keine Filter für Passwörter, Adressen oder Gesundheitsdaten vor - eine Produktentscheidung, dauerhafte Bildschirmprotokollierung zum Normalzustand zu machen.",
+      "title_en": "Microsoft announces Recall as a default-on Copilot+ feature",
+      "description_en": "Unveiling Copilot+ PCs in May 2024, Microsoft announced Recall, which takes screenshots of screen activity every few seconds and stores them in a searchable history. As originally planned, Recall was effectively on by default and applied no filters for passwords, addresses or health data - a product decision to make continuous screen logging the normal state.",
+      "sources": [
+        "https://venturebeat.com/security/microsofts-new-recall-feature-for-copilotpcs-draws-criticism-spyware"
+      ]
+    },
+    {
+      "date": "2024-05",
+      "phase": "event",
+      "title": "ICO leitet Untersuchung wegen Datenschutzbedenken ein",
+      "description": "Das britische Information Commissioner's Office (ICO) eröffnete im Mai 2024 eine Untersuchung und verlangte von Microsoft Auskunft über die Schutzvorkehrungen von Recall. Sicherheitsforscher (u.a. Kevin Beaumont) zeigten, dass die unverschlüsselten Recall-Datenbanken sensible Inhalte wie Passwörter und Gesundheitsdaten im Klartext enthielten und leicht ausgelesen werden konnten. Kritiker bezeichneten die Funktion als 'Spyware' und 'Datenschutz-Albtraum'.",
+      "title_de": "ICO leitet Untersuchung wegen Datenschutzbedenken ein",
+      "description_de": "Das britische Information Commissioner's Office (ICO) eröffnete im Mai 2024 eine Untersuchung und verlangte von Microsoft Auskunft über die Schutzvorkehrungen von Recall. Sicherheitsforscher (u.a. Kevin Beaumont) zeigten, dass die unverschlüsselten Recall-Datenbanken sensible Inhalte wie Passwörter und Gesundheitsdaten im Klartext enthielten und leicht ausgelesen werden konnten. Kritiker bezeichneten die Funktion als 'Spyware' und 'Datenschutz-Albtraum'.",
+      "title_en": "ICO opens investigation over privacy concerns",
+      "description_en": "In May 2024 the UK Information Commissioner's Office (ICO) opened an investigation and asked Microsoft to explain Recall's safeguards. Security researchers (including Kevin Beaumont) showed that the unencrypted Recall databases held sensitive content such as passwords and health data in plain text and could be read out easily. Critics called the feature 'spyware' and a 'privacy nightmare'.",
+      "sources": [
+        "https://www.siliconrepublic.com/enterprise/microsoft-copilot-recall-uk-ico-privacy"
+      ]
+    },
+    {
+      "date": "2024-09",
+      "phase": "consequences",
+      "title": "Microsoft verschiebt Start, macht Recall opt-in und baut Sicherheit um",
+      "description": "Nach dem öffentlichen Aufschrei verschob Microsoft den geplanten Juni-Start und gab Recall zunächst nicht allgemein frei. Über die folgenden Monate wurde die Funktion grundlegend überarbeitet: Sie wurde zur Opt-in-Funktion, die Datenbank verschlüsselt, der Zugriff an Windows Hello gekoppelt und Standardfilter für sensible Daten ergänzt. Der Fall wurde zum vielzitierten Beispiel für 'Privacy by Design'-Versäumnisse bei KI-Funktionen.",
+      "title_de": "Microsoft verschiebt Start, macht Recall opt-in und baut Sicherheit um",
+      "description_de": "Nach dem öffentlichen Aufschrei verschob Microsoft den geplanten Juni-Start und gab Recall zunächst nicht allgemein frei. Über die folgenden Monate wurde die Funktion grundlegend überarbeitet: Sie wurde zur Opt-in-Funktion, die Datenbank verschlüsselt, der Zugriff an Windows Hello gekoppelt und Standardfilter für sensible Daten ergänzt. Der Fall wurde zum vielzitierten Beispiel für 'Privacy by Design'-Versäumnisse bei KI-Funktionen.",
+      "title_en": "Microsoft delays launch, makes Recall opt-in and reworks security",
+      "description_en": "After the public outcry Microsoft delayed the planned June launch and initially did not release Recall generally. Over the following months the feature was fundamentally reworked: it became opt-in, the database was encrypted, access was tied to Windows Hello and default filters for sensitive data were added. The case became a widely cited example of 'privacy by design' failures in AI features.",
+      "sources": [
+        "https://www.computing.co.uk/news/2024/ai/recall-relaunch-microsoft-addresses-privacy-concerns"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.siliconrepublic.com/enterprise/microsoft-copilot-recall-uk-ico-privacy",

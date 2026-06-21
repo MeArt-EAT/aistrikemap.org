@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Pressefreiheit",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Pressefreiheit",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of the press",
+    "Protection from manipulation",
+    "Human dignity",
+    "Freedom of expression"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -41,7 +56,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-09",
+      "phase": "infrastructure",
+      "title": "Microsoft startet die KI-gestützte Nachrichtenplattform Microsoft Start",
+      "description": "Microsoft führte 2021 die personalisierte Nachrichten-Plattform Microsoft Start ein, die Inhalte von Drittverlagen wie dem Guardian per Algorithmus aggregiert und kuratiert. Seit 2020 hatte der Konzern menschliche MSN-Redakteure schrittweise durch Automatisierung ersetzt. Auf dieser maschinellen Kuratierungs-Infrastruktur lief später der KI-Umfrage-Generator.",
+      "title_de": "Microsoft startet die KI-gestützte Nachrichtenplattform Microsoft Start",
+      "description_de": "Microsoft führte 2021 die personalisierte Nachrichten-Plattform Microsoft Start ein, die Inhalte von Drittverlagen wie dem Guardian per Algorithmus aggregiert und kuratiert. Seit 2020 hatte der Konzern menschliche MSN-Redakteure schrittweise durch Automatisierung ersetzt. Auf dieser maschinellen Kuratierungs-Infrastruktur lief später der KI-Umfrage-Generator.",
+      "title_en": "Microsoft launches the AI-driven news platform Microsoft Start",
+      "description_en": "In 2021 Microsoft introduced its personalised news platform Microsoft Start, which algorithmically aggregates and curates content from third-party publishers such as the Guardian. Since 2020 the company had been progressively replacing human MSN editors with automation. The AI poll generator later ran on top of this machine-curation infrastructure.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-microsoft-news-app-as-it-rebrands-its-news-aggregation-engine/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Automatisierte Engagement-Features ohne redaktionelle Kontrolle",
+      "description": "Microsoft setzte verstärkt auf KI-generierte interaktive Elemente wie Umfragen, um die Verweildauer auf Microsoft Start zu erhöhen, und schaltete diese automatisch neben fremde Verlagsartikel. Eine redaktionelle Vorabprüfung der KI-Beiträge fand nicht statt. Schon im August und September 2023 hatte die Plattform durch KI-Fehlentscheidungen falsche und entwürdigende Inhalte verbreitet.",
+      "title_de": "Automatisierte Engagement-Features ohne redaktionelle Kontrolle",
+      "description_de": "Microsoft setzte verstärkt auf KI-generierte interaktive Elemente wie Umfragen, um die Verweildauer auf Microsoft Start zu erhöhen, und schaltete diese automatisch neben fremde Verlagsartikel. Eine redaktionelle Vorabprüfung der KI-Beiträge fand nicht statt. Schon im August und September 2023 hatte die Plattform durch KI-Fehlentscheidungen falsche und entwürdigende Inhalte verbreitet.",
+      "title_en": "Automated engagement features without editorial control",
+      "description_en": "Microsoft increasingly relied on AI-generated interactive elements such as polls to boost time spent on Microsoft Start, inserting them automatically next to third-party publisher articles. No editorial pre-review of the AI contributions took place. As early as August and September 2023 the platform had already spread false and degrading content through AI misjudgements.",
+      "sources": [
+        "https://www.cnn.com/2023/11/02/tech/microsoft-ai-news/index.html"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "event",
+      "title": "KI-Umfrage über die Todesursache neben Guardian-Artikel",
+      "description": "Neben einem Guardian-Bericht über den gewaltsamen Tod der 21-jährigen Wasserballtrainerin Lilie James fügte Microsofts KI auf Microsoft Start automatisch eine Umfrage ein, die Leser über die Todesursache - Mord, Unfall oder Suizid - abstimmen ließ. Die Polizei stufte den Fall als Tötungsdelikt ein. Viele Nutzer hielten die Umfrage fälschlich für redaktionellen Inhalt des Guardian.",
+      "title_de": "KI-Umfrage über die Todesursache neben Guardian-Artikel",
+      "description_de": "Neben einem Guardian-Bericht über den gewaltsamen Tod der 21-jährigen Wasserballtrainerin Lilie James fügte Microsofts KI auf Microsoft Start automatisch eine Umfrage ein, die Leser über die Todesursache - Mord, Unfall oder Suizid - abstimmen ließ. Die Polizei stufte den Fall als Tötungsdelikt ein. Viele Nutzer hielten die Umfrage fälschlich für redaktionellen Inhalt des Guardian.",
+      "title_en": "AI poll on the cause of death next to a Guardian article",
+      "description_en": "Next to a Guardian report on the violent death of 21-year-old water-polo coach Lilie James, Microsoft's AI automatically inserted a poll on Microsoft Start asking readers to vote on the cause of death - murder, accident or suicide. Police classified the case as a homicide. Many users mistook the poll for editorial Guardian content.",
+      "sources": [
+        "https://www.cnn.com/2023/11/02/tech/microsoft-ai-news/index.html",
+        "https://en.wikipedia.org/wiki/Murder_of_Lilie_James"
+      ]
+    },
+    {
+      "date": "2023-10-31",
+      "phase": "consequences",
+      "title": "Guardian rügt Reputationsschaden, Microsoft deaktiviert Nachrichten-Umfragen",
+      "description": "Guardian-Media-Group-Geschäftsführerin Anna Bateson kritisierte in einem Brief an Microsoft-Präsident Brad Smith den erheblichen Reputationsschaden, weil die Umfrage als Werk des Guardian missverstanden worden sei und Leserinnen die Journalistin angriffen. Microsoft entschuldigte sich, deaktivierte KI-Umfragen für Nachrichtenartikel und kündigte eine Ursachenuntersuchung an. Der Vorfall verstärkte die öffentliche Debatte über automatisierte Inhalte ohne redaktionelle Aufsicht.",
+      "title_de": "Guardian rügt Reputationsschaden, Microsoft deaktiviert Nachrichten-Umfragen",
+      "description_de": "Guardian-Media-Group-Geschäftsführerin Anna Bateson kritisierte in einem Brief an Microsoft-Präsident Brad Smith den erheblichen Reputationsschaden, weil die Umfrage als Werk des Guardian missverstanden worden sei und Leserinnen die Journalistin angriffen. Microsoft entschuldigte sich, deaktivierte KI-Umfragen für Nachrichtenartikel und kündigte eine Ursachenuntersuchung an. Der Vorfall verstärkte die öffentliche Debatte über automatisierte Inhalte ohne redaktionelle Aufsicht.",
+      "title_en": "Guardian condemns reputational harm, Microsoft disables news polls",
+      "description_en": "Guardian Media Group chief executive Anna Bateson criticised the substantial reputational harm in a letter to Microsoft president Brad Smith, because the poll had been misread as the Guardian's own work and readers attacked the journalist. Microsoft apologised, disabled AI polls on news articles and announced a root-cause investigation. The incident intensified the public debate about automated content without editorial oversight.",
+      "sources": [
+        "https://ia.acs.org.au/article/2023/microsoft-ai-inserts--distressing--poll-in-article.html",
+        "https://www.cnn.com/2023/11/02/tech/microsoft-ai-news/index.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnn.com/2023/11/02/tech/microsoft-ai-news/",
