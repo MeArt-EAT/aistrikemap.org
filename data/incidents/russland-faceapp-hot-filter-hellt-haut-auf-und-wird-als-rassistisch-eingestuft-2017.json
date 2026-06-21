@@ -31,9 +31,21 @@
     "discrimination",
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal treatment",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Wireless Lab / FaceApp Technology",
@@ -54,7 +66,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-01",
+      "phase": "infrastructure",
+      "title": "FaceApp führt neuronale Beautification-Filter ein",
+      "description": "FaceApp startet Anfang 2017 als App, die Gesichter mit neuronalen Netzen verändert, darunter ein Filter zur 'Verschönerung'. Das zugrundeliegende Modell wird auf einem Trainingsdatensatz gelernt, dessen Zusammensetzung darüber entscheidet, welche Gesichtsmerkmale das System als 'attraktiv' kodiert. Diese Datengrundlage ist die technische Vorbedingung des späteren Bias-Vorfalls.",
+      "title_de": "FaceApp führt neuronale Beautification-Filter ein",
+      "description_de": "FaceApp startet Anfang 2017 als App, die Gesichter mit neuronalen Netzen verändert, darunter ein Filter zur 'Verschönerung'. Das zugrundeliegende Modell wird auf einem Trainingsdatensatz gelernt, dessen Zusammensetzung darüber entscheidet, welche Gesichtsmerkmale das System als 'attraktiv' kodiert. Diese Datengrundlage ist die technische Vorbedingung des späteren Bias-Vorfalls.",
+      "title_en": "FaceApp introduces neural beautification filters",
+      "description_en": "FaceApp launches in early 2017 as an app that alters faces using neural networks, including a 'beautification' filter. The underlying model is trained on a dataset whose composition determines which facial features the system encodes as 'attractive'. This training data is the technical precondition of the later bias incident.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/FaceApp"
+      ]
+    },
+    {
+      "date": "2017-04",
+      "phase": "doctrine",
+      "title": "Ausrollen eines 'Hot'-Filters ohne Bias-Prüfung",
+      "description": "Das Unternehmen entscheidet, einen Filter namens 'Hot' produktiv anzubieten, der Nutzer:innen attraktiver erscheinen lassen soll. Eine systematische Prüfung des Modells auf rassistische Verzerrungen in den Trainingsdaten findet vor dem Launch nicht statt. Die Vermarktung 'objektiver' Attraktivität durch ein verzerrtes Modell legt die diskriminierende Wirkung an.",
+      "title_de": "Ausrollen eines 'Hot'-Filters ohne Bias-Prüfung",
+      "description_de": "Das Unternehmen entscheidet, einen Filter namens 'Hot' produktiv anzubieten, der Nutzer:innen attraktiver erscheinen lassen soll. Eine systematische Prüfung des Modells auf rassistische Verzerrungen in den Trainingsdaten findet vor dem Launch nicht statt. Die Vermarktung 'objektiver' Attraktivität durch ein verzerrtes Modell legt die diskriminierende Wirkung an.",
+      "title_en": "Rolling out a 'hot' filter without bias checks",
+      "description_en": "The company decides to ship a filter named 'hot' meant to make users look more attractive. No systematic check of the model for racial bias in the training data takes place before launch. Marketing 'objective' attractiveness through a skewed model builds in the discriminatory effect.",
+      "sources": [
+        "https://techcrunch.com/2017/04/25/faceapp-apologises-for-building-a-racist-ai/"
+      ]
+    },
+    {
+      "date": "2017-04-25",
+      "phase": "event",
+      "title": "'Hot'-Filter hellt Haut auf und wird als rassistisch kritisiert",
+      "description": "Nutzer:innen stellen fest, dass der 'Hot'-Filter Gesichter systematisch heller macht und europäische Gesichtszüge betont, wodurch die Hautfarbe Schwarzer und südasiatischer Nutzer:innen verändert wird. In sozialen Medien und Fachpresse wird der Filter als faktisches Skin-Whitening-Werkzeug kritisiert. Der Vorfall macht sichtbar, wie Trainingsdaten-Bias eine rassistische Norm von 'Schönheit' verstärkt.",
+      "title_de": "'Hot'-Filter hellt Haut auf und wird als rassistisch kritisiert",
+      "description_de": "Nutzer:innen stellen fest, dass der 'Hot'-Filter Gesichter systematisch heller macht und europäische Gesichtszüge betont, wodurch die Hautfarbe Schwarzer und südasiatischer Nutzer:innen verändert wird. In sozialen Medien und Fachpresse wird der Filter als faktisches Skin-Whitening-Werkzeug kritisiert. Der Vorfall macht sichtbar, wie Trainingsdaten-Bias eine rassistische Norm von 'Schönheit' verstärkt.",
+      "title_en": "'Hot' filter lightens skin and is condemned as racist",
+      "description_en": "Users find that the 'hot' filter systematically lightens faces and emphasises European facial features, altering the skin tone of Black and South Asian users. Social media and tech press criticise the filter as an effective skin-whitening tool. The episode shows how training-data bias reinforces a racialised norm of 'beauty'.",
+      "sources": [
+        "https://www.theguardian.com/technology/2017/apr/25/faceapp-apologises-for-racist-filter-which-lightens-users-skintone"
+      ]
+    },
+    {
+      "date": "2017-04-25",
+      "phase": "consequences",
+      "title": "CEO entschuldigt sich, Filter wird in 'Spark' umbenannt",
+      "description": "CEO Yaroslav Goncharov entschuldigt sich öffentlich und nennt den Effekt eine 'unglückliche Nebenwirkung' des neuronalen Netzes, verursacht durch Bias im Trainingsset und nicht beabsichtigt. Der Filter wird in 'Spark' umbenannt, um jede positive Konnotation zu entfernen, während an einer vollständigeren Korrektur gearbeitet wird. Der Fall wird zum frühen Standardbeispiel für Bias in Trainingsdaten neuronaler Schönheitsfilter.",
+      "title_de": "CEO entschuldigt sich, Filter wird in 'Spark' umbenannt",
+      "description_de": "CEO Yaroslav Goncharov entschuldigt sich öffentlich und nennt den Effekt eine 'unglückliche Nebenwirkung' des neuronalen Netzes, verursacht durch Bias im Trainingsset und nicht beabsichtigt. Der Filter wird in 'Spark' umbenannt, um jede positive Konnotation zu entfernen, während an einer vollständigeren Korrektur gearbeitet wird. Der Fall wird zum frühen Standardbeispiel für Bias in Trainingsdaten neuronaler Schönheitsfilter.",
+      "title_en": "CEO apologises, filter renamed 'Spark'",
+      "description_en": "CEO Yaroslav Goncharov publicly apologises, calling the effect an 'unfortunate side-effect' of the neural network caused by training-set bias and not intended behaviour. The filter is renamed 'Spark' to remove any positive connotation while a more complete fix is developed. The case becomes an early standard example of bias in the training data of neural beautification filters.",
+      "sources": [
+        "https://www.bbc.com/news/technology-39702143"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theguardian.com/technology/2017/apr/25/faceapp-apologises-for-racist-filter-which-lightens-users-skintone",

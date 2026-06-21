@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "'last/laste' (WormGPT developer)",
@@ -55,7 +70,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-06",
+      "phase": "infrastructure",
+      "title": "EleutherAI veröffentlicht GPT-J als offenes 6-Mrd-Parameter-Modell",
+      "description": "Im Juni 2021 veröffentlichte EleutherAI GPT-J-6B, ein quelloffenes Sprachmodell mit sechs Milliarden Parametern, frei verfügbar inklusive Gewichten. Als damals größtes öffentlich zugängliches GPT-3-ähnliches Modell ließ es sich beliebig herunterladen, lokal betreiben und ohne Sicherheits-Guardrails feinabstimmen — die technische Grundlage, auf der später dedizierte Cybercrime-Chatbots aufsetzten.",
+      "title_de": "EleutherAI veröffentlicht GPT-J als offenes 6-Mrd-Parameter-Modell",
+      "description_de": "Im Juni 2021 veröffentlichte EleutherAI GPT-J-6B, ein quelloffenes Sprachmodell mit sechs Milliarden Parametern, frei verfügbar inklusive Gewichten. Als damals größtes öffentlich zugängliches GPT-3-ähnliches Modell ließ es sich beliebig herunterladen, lokal betreiben und ohne Sicherheits-Guardrails feinabstimmen — die technische Grundlage, auf der später dedizierte Cybercrime-Chatbots aufsetzten.",
+      "title_en": "EleutherAI releases GPT-J as an open 6-billion-parameter model",
+      "description_en": "In June 2021 EleutherAI released GPT-J-6B, an open-source language model with six billion parameters, freely available including its weights. As the largest publicly available GPT-3-style model at the time, it could be downloaded at will, run locally and fine-tuned without safety guardrails — the technical foundation on which dedicated cybercrime chatbots were later built.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GPT-J"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Guardrail-freie LLMs als Cybercrime-as-a-Service-Geschäftsmodell",
+      "description": "Mit dem Boom der generativen KI entstand auf Darknet-Foren ein Geschäftsmodell, das jailbreak-freie bzw. von Grund auf ungefilterte LLMs als Abo-Dienst für Kriminelle vermarktete. Statt kommerzielle Modelle mühsam zu umgehen, boten Entwickler dedizierte Werkzeuge für Phishing, Malware und Betrug an — ein Geschäftsmodell, das menschliche Sprachbarrieren bei Betrugsmails beseitigte und den Einstieg in Cyberkriminalität senkte.",
+      "title_de": "Guardrail-freie LLMs als Cybercrime-as-a-Service-Geschäftsmodell",
+      "description_de": "Mit dem Boom der generativen KI entstand auf Darknet-Foren ein Geschäftsmodell, das jailbreak-freie bzw. von Grund auf ungefilterte LLMs als Abo-Dienst für Kriminelle vermarktete. Statt kommerzielle Modelle mühsam zu umgehen, boten Entwickler dedizierte Werkzeuge für Phishing, Malware und Betrug an — ein Geschäftsmodell, das menschliche Sprachbarrieren bei Betrugsmails beseitigte und den Einstieg in Cyberkriminalität senkte.",
+      "title_en": "Guardrail-free LLMs as a cybercrime-as-a-service business model",
+      "description_en": "With the generative-AI boom, dark-web forums produced a business model marketing unfiltered LLMs as a subscription service for criminals. Rather than laboriously jailbreaking commercial models, developers offered dedicated tools for phishing, malware and fraud — a model that removed language barriers in scam emails and lowered the entry threshold into cybercrime.",
+      "sources": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/wormgpt-and-fraudgpt-the-rise-of-malicious-llms"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "event",
+      "title": "SlashNext entdeckt WormGPT, kurz darauf folgt FraudGPT",
+      "description": "Im Juli 2023 entdeckte SlashNext WormGPT, einen auf GPT-J basierenden Chatbot, den ein Entwickler unter dem Alias 'last/laste' explizit für Cybercrime vermarktete — Schwerpunkt Business-Email-Compromise, fehlerfreie Phishing-Mails und polymorphe Malware. Kurz darauf tauchte FraudGPT auf Darknet-Boards und Telegram auf, beworben für Malware, Phishing-Seiten sowie Leak- und Schwachstellen-Recherche, mit Abos von 200 USD/Monat bis 1.700 USD/Jahr.",
+      "title_de": "SlashNext entdeckt WormGPT, kurz darauf folgt FraudGPT",
+      "description_de": "Im Juli 2023 entdeckte SlashNext WormGPT, einen auf GPT-J basierenden Chatbot, den ein Entwickler unter dem Alias 'last/laste' explizit für Cybercrime vermarktete — Schwerpunkt Business-Email-Compromise, fehlerfreie Phishing-Mails und polymorphe Malware. Kurz darauf tauchte FraudGPT auf Darknet-Boards und Telegram auf, beworben für Malware, Phishing-Seiten sowie Leak- und Schwachstellen-Recherche, mit Abos von 200 USD/Monat bis 1.700 USD/Jahr.",
+      "title_en": "SlashNext discovers WormGPT, FraudGPT follows shortly after",
+      "description_en": "In July 2023 SlashNext discovered WormGPT, a GPT-J-based chatbot marketed by a developer under the alias 'last/laste' explicitly for cybercrime — focused on business email compromise, error-free phishing emails and polymorphic malware. Shortly afterwards FraudGPT appeared on dark-web boards and Telegram, advertised for malware, phishing pages and leak and vulnerability research, with subscriptions from USD 200/month to USD 1,700/year.",
+      "sources": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/wormgpt-and-fraudgpt-the-rise-of-malicious-llms"
+      ]
+    },
+    {
+      "date": "2023-08-08",
+      "phase": "consequences",
+      "title": "WormGPT-Entwickler enttarnt, Projekt eingestellt",
+      "description": "Am 8. August 2023 enttarnte Journalist Brian Krebs den Entwickler hinter dem Alias 'Last' als Rafael Morais; noch am selben Tag stellten die Betreiber WormGPT unter Verweis auf zu starke Medienaufmerksamkeit ein. Das Modell wurde so zum Blueprint: Nachfolger und Klone wie FraudGPT und spätere, auf Grok oder Mixtral gestützte WormGPT-Varianten kursierten weiter und wurden 2024 in BEC- und Phishing-Kampagnen eingesetzt.",
+      "title_de": "WormGPT-Entwickler enttarnt, Projekt eingestellt",
+      "description_de": "Am 8. August 2023 enttarnte Journalist Brian Krebs den Entwickler hinter dem Alias 'Last' als Rafael Morais; noch am selben Tag stellten die Betreiber WormGPT unter Verweis auf zu starke Medienaufmerksamkeit ein. Das Modell wurde so zum Blueprint: Nachfolger und Klone wie FraudGPT und spätere, auf Grok oder Mixtral gestützte WormGPT-Varianten kursierten weiter und wurden 2024 in BEC- und Phishing-Kampagnen eingesetzt.",
+      "title_en": "WormGPT developer unmasked, project shut down",
+      "description_en": "On 8 August 2023 journalist Brian Krebs identified the developer behind the alias 'Last' as Rafael Morais; that same day the operators shut WormGPT down, citing excessive media attention. The model became a blueprint: successors and clones such as FraudGPT and later WormGPT variants built on Grok or Mixtral kept circulating and were used in 2024 BEC and phishing campaigns.",
+      "sources": [
+        "https://www.csoonline.com/article/4008912/wormgpt-returns-new-malicious-ai-variants-built-on-grok-and-mixtral-uncovered.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.levelblue.com/blogs/spiderlabs-blog/wormgpt-and-fraudgpt-the-rise-of-malicious-llms",

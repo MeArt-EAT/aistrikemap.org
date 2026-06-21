@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Human dignity",
+    "Protection from discrimination"
+  ],
   "asm:actors": [
     {
       "name": "ETH Zürich (Forschungsteam Staab et al.)",
@@ -57,7 +75,63 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Große Sprachmodelle werden auf riesigen Web- und Forentexten trainiert",
+      "description": "Modelle wie GPT-4, Claude, Llama 2 und PaLM werden auf enormen Mengen öffentlicher Internettexte trainiert, darunter Foren wie Reddit. Dadurch lernen sie subtile sprachliche Muster — etwa lokale Ausdrücke oder Dialektmarker —, die sich später ausnutzen lassen, um private Merkmale aus harmlos wirkenden Texten abzuleiten.",
+      "title_de": "Große Sprachmodelle werden auf riesigen Web- und Forentexten trainiert",
+      "description_de": "Modelle wie GPT-4, Claude, Llama 2 und PaLM werden auf enormen Mengen öffentlicher Internettexte trainiert, darunter Foren wie Reddit. Dadurch lernen sie subtile sprachliche Muster — etwa lokale Ausdrücke oder Dialektmarker —, die sich später ausnutzen lassen, um private Merkmale aus harmlos wirkenden Texten abzuleiten.",
+      "title_en": "Large language models trained on vast web and forum text",
+      "description_en": "Models such as GPT-4, Claude, Llama 2 and PaLM are trained on enormous volumes of public internet text, including forums like Reddit. As a result they learn subtle linguistic patterns — local expressions or dialect markers — that can later be exploited to infer private attributes from seemingly innocuous text.",
+      "sources": ["https://arxiv.org/abs/2310.07298"]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Datenschutzforschung verschiebt Fokus von Memorisierung auf Inferenz",
+      "description": "Bisherige Privatsphäre-Forschung zu Sprachmodellen konzentrierte sich auf das Auswendiglernen von Trainingsdaten. Das ETH-Team um Robin Staab argumentiert, dass die eigentliche, unterschätzte Gefahr in der Inferenz liegt: dem Schließen privater Merkmale aus beliebigem, zur Laufzeit eingegebenem Text. Aus dieser These leitet sich das Untersuchungsdesign der Studie ab.",
+      "title_de": "Datenschutzforschung verschiebt Fokus von Memorisierung auf Inferenz",
+      "description_de": "Bisherige Privatsphäre-Forschung zu Sprachmodellen konzentrierte sich auf das Auswendiglernen von Trainingsdaten. Das ETH-Team um Robin Staab argumentiert, dass die eigentliche, unterschätzte Gefahr in der Inferenz liegt: dem Schließen privater Merkmale aus beliebigem, zur Laufzeit eingegebenem Text. Aus dieser These leitet sich das Untersuchungsdesign der Studie ab.",
+      "title_en": "Privacy research shifts focus from memorization to inference",
+      "description_en": "Prior privacy research on language models focused on memorization of training data. The ETH team led by Robin Staab argues the real, underestimated danger lies in inference: deducing private attributes from arbitrary text supplied at runtime. This thesis shapes the study's design.",
+      "sources": ["https://www.sri.inf.ethz.ch/publications/staab2023beyond"]
+    },
+    {
+      "date": "2023-10",
+      "phase": "event",
+      "title": "Studie 'Beyond Memorization': GPT-4 erschließt private Merkmale zu bis zu 85 %",
+      "description": "Im Oktober 2023 zeigt die ETH-Zürich-Studie 'Beyond Memorization', dass Sprachmodelle aus echten Reddit-Texten Wohnort, Einkommen, Geschlecht und Alter ableiten können — GPT-4 erreicht bis zu 85 % Top-1- und 95 % Top-3-Genauigkeit, etwa 100-mal billiger und 240-mal schneller als Menschen. Schon ein beiläufiger lokaler Verkehrsausdruck genügt, um die Stadt einer Person zu bestimmen. Die Studie warnt vor Missbrauch durch manipulative Chatbots zur verdeckten Profilbildung.",
+      "title_de": "Studie 'Beyond Memorization': GPT-4 erschließt private Merkmale zu bis zu 85 %",
+      "description_de": "Im Oktober 2023 zeigt die ETH-Zürich-Studie 'Beyond Memorization', dass Sprachmodelle aus echten Reddit-Texten Wohnort, Einkommen, Geschlecht und Alter ableiten können — GPT-4 erreicht bis zu 85 % Top-1- und 95 % Top-3-Genauigkeit, etwa 100-mal billiger und 240-mal schneller als Menschen. Schon ein beiläufiger lokaler Verkehrsausdruck genügt, um die Stadt einer Person zu bestimmen. Die Studie warnt vor Missbrauch durch manipulative Chatbots zur verdeckten Profilbildung.",
+      "title_en": "'Beyond Memorization' study: GPT-4 infers private attributes at up to 85%",
+      "description_en": "In October 2023 the ETH Zurich study 'Beyond Memorization' shows that language models can infer location, income, sex and age from real Reddit posts — GPT-4 reaches up to 85% top-1 and 95% top-3 accuracy, roughly 100x cheaper and 240x faster than humans. A single offhand local traffic term suffices to pin down a user's city. The study warns of abuse by manipulative chatbots for covert profiling.",
+      "sources": ["https://the-decoder.com/gpt-4-can-infer-your-income-location-or-gender-from-chats/"]
+    },
+    {
+      "date": "2023-10",
+      "phase": "consequences",
+      "title": "Vorab-Offenlegung an OpenAI, Anthropic, Meta und Google",
+      "description": "Die Autor:innen legen ihre Befunde vorab den großen Modellanbietern OpenAI, Anthropic, Meta und Google offen, um Gegenmaßnahmen anzustoßen. Aus ethischen Gründen wird der rohe Reddit-Datensatz nicht veröffentlicht; stattdessen stellen sie 525 menschenverifizierte synthetische Beispiele bereit.",
+      "title_de": "Vorab-Offenlegung an OpenAI, Anthropic, Meta und Google",
+      "description_de": "Die Autor:innen legen ihre Befunde vorab den großen Modellanbietern OpenAI, Anthropic, Meta und Google offen, um Gegenmaßnahmen anzustoßen. Aus ethischen Gründen wird der rohe Reddit-Datensatz nicht veröffentlicht; stattdessen stellen sie 525 menschenverifizierte synthetische Beispiele bereit.",
+      "title_en": "Advance disclosure to OpenAI, Anthropic, Meta and Google",
+      "description_en": "The authors disclose their findings in advance to the major model providers OpenAI, Anthropic, Meta and Google to prompt mitigations. For ethical reasons the raw Reddit dataset is not released; instead they provide 525 human-verified synthetic examples.",
+      "sources": ["https://arxiv.org/abs/2310.07298"]
+    },
+    {
+      "date": "2024-05",
+      "phase": "consequences",
+      "title": "Veröffentlichung auf der ICLR 2024 — Inferenz-Risiko wird Forschungsthema",
+      "description": "Die Arbeit wird auf der ICLR 2024 publiziert und etabliert die LLM-gestützte Attribut-Inferenz als eigenständiges Datenschutzrisiko. Sie liefert zudem die technische Grundlage für spätere reale Missbrauchsfälle, in denen Modelle Demografie aus Posthistorien ableiten, um Personen gezielt zu beeinflussen.",
+      "title_de": "Veröffentlichung auf der ICLR 2024 — Inferenz-Risiko wird Forschungsthema",
+      "description_de": "Die Arbeit wird auf der ICLR 2024 publiziert und etabliert die LLM-gestützte Attribut-Inferenz als eigenständiges Datenschutzrisiko. Sie liefert zudem die technische Grundlage für spätere reale Missbrauchsfälle, in denen Modelle Demografie aus Posthistorien ableiten, um Personen gezielt zu beeinflussen.",
+      "title_en": "Published at ICLR 2024 — inference risk becomes a research topic",
+      "description_en": "The paper is published at ICLR 2024 and establishes LLM-based attribute inference as a distinct privacy risk. It also provides the technical basis for later real-world abuse cases in which models infer demographics from post histories to target individuals.",
+      "sources": ["https://proceedings.iclr.cc/paper_files/paper/2024/file/9028b8a3ca98f58e373f0c1497a17448-Paper-Conference.pdf"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://the-decoder.com/gpt-4-can-infer-your-income-location-or-gender-from-chats/",
