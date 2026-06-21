@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Check Point Research; Abnormal Security",
@@ -48,7 +63,63 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "Frei zugängliches Sprachmodell mit Code- und Textgenerierung",
+      "description": "OpenAI veröffentlicht ChatGPT auf Basis von GPT-3.5 als kostenlosen Dienst. Das Modell erzeugt auf Zuruf funktionsfähigen Programmcode und überzeugend formulierte Texte in mehreren Sprachen. Damit steht erstmals einer breiten Öffentlichkeit ein Werkzeug zur Verfügung, das ohne Programmier- oder Sprachkenntnisse technische Artefakte und glaubwürdige Nachrichten produzieren kann.",
+      "title_de": "Frei zugängliches Sprachmodell mit Code- und Textgenerierung",
+      "description_de": "OpenAI veröffentlicht ChatGPT auf Basis von GPT-3.5 als kostenlosen Dienst. Das Modell erzeugt auf Zuruf funktionsfähigen Programmcode und überzeugend formulierte Texte in mehreren Sprachen. Damit steht erstmals einer breiten Öffentlichkeit ein Werkzeug zur Verfügung, das ohne Programmier- oder Sprachkenntnisse technische Artefakte und glaubwürdige Nachrichten produzieren kann.",
+      "title_en": "Freely accessible language model with code and text generation",
+      "description_en": "OpenAI releases ChatGPT built on GPT-3.5 as a free service. On request the model produces functional program code and convincingly worded text in multiple languages. For the first time a broad public has a tool that can produce technical artifacts and credible messages without programming or language skills.",
+      "sources": [
+        "https://openai.com/index/chatgpt/"
+      ]
+    },
+    {
+      "date": "2022-12",
+      "phase": "doctrine",
+      "title": "OpenAI setzt auf Nutzungsregeln und Inhaltsfilter als Schutz",
+      "description": "OpenAI verlässt sich für ChatGPT auf Nutzungsrichtlinien und einen Moderations-Endpunkt (eingeführt im August 2022), die missbräuchliche Anfragen wie das Erstellen von Schadsoftware oder Betrugsmaschen unterbinden sollen. Die Schutzmechanismen filtern jedoch primär offensichtlich formulierte Anfragen und lassen sich durch Umformulierung, Rollenspiel-Prompts oder die zugrundeliegende API umgehen.",
+      "title_de": "OpenAI setzt auf Nutzungsregeln und Inhaltsfilter als Schutz",
+      "description_de": "OpenAI verlässt sich für ChatGPT auf Nutzungsrichtlinien und einen Moderations-Endpunkt (eingeführt im August 2022), die missbräuchliche Anfragen wie das Erstellen von Schadsoftware oder Betrugsmaschen unterbinden sollen. Die Schutzmechanismen filtern jedoch primär offensichtlich formulierte Anfragen und lassen sich durch Umformulierung, Rollenspiel-Prompts oder die zugrundeliegende API umgehen.",
+      "title_en": "OpenAI relies on usage rules and content filters as safeguards",
+      "description_en": "For ChatGPT, OpenAI relies on usage policies and a moderation endpoint (introduced in August 2022) intended to block abusive requests such as creating malware or fraud schemes. The safeguards, however, mainly filter obviously phrased requests and can be circumvented through rewording, role-play prompts or the underlying API.",
+      "sources": [
+        "https://openai.com/index/new-and-improved-content-moderation-tooling/",
+        "https://openai.com/policies/usage-policies/"
+      ]
+    },
+    {
+      "date": "2023-01",
+      "phase": "event",
+      "title": "Forscher dokumentieren ChatGPT-erzeugte Phishing-Mails und Malware",
+      "description": "Sicherheitsforscher von Check Point Research und Abnormal Security zeigen Anfang 2023, dass sich ChatGPT trotz Schutzmechanismen zur Erzeugung überzeugender Phishing-Mails und funktionsfähigen Schadcodes bewegen lässt. Check Point dokumentiert in Darknet-Foren, wie auch wenig versierte Akteure mit ChatGPT-Hilfe Malware, Verschlüsselungstools und Phishing-Kampagnen bauen und die Ländersperren über die OpenAI-API umgehen.",
+      "title_de": "Forscher dokumentieren ChatGPT-erzeugte Phishing-Mails und Malware",
+      "description_de": "Sicherheitsforscher von Check Point Research und Abnormal Security zeigen Anfang 2023, dass sich ChatGPT trotz Schutzmechanismen zur Erzeugung überzeugender Phishing-Mails und funktionsfähigen Schadcodes bewegen lässt. Check Point dokumentiert in Darknet-Foren, wie auch wenig versierte Akteure mit ChatGPT-Hilfe Malware, Verschlüsselungstools und Phishing-Kampagnen bauen und die Ländersperren über die OpenAI-API umgehen.",
+      "title_en": "Researchers document ChatGPT-generated phishing emails and malware",
+      "description_en": "In early 2023 security researchers at Check Point Research and Abnormal Security show that, despite safeguards, ChatGPT can be coaxed into producing convincing phishing emails and functional malware. Check Point documents dark-web forums where even low-skill actors use ChatGPT to build malware, encryption tools and phishing campaigns, bypassing country restrictions via the OpenAI API.",
+      "sources": [
+        "https://blog.checkpoint.com/2023/02/07/cybercriminals-bypass-chatgpt-restrictions-to-generate-malicious-content/",
+        "https://research.checkpoint.com/2023/opwnai-cybercriminals-starting-to-use-chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "consequences",
+      "title": "Debatte über gesenkte Einstiegshürde für Cyberkriminalität",
+      "description": "Die Befunde lösen eine breite Debatte darüber aus, wie generative KI die Einstiegshürde für Cyberkriminalität senkt, und werden von Medien wie Axios aufgegriffen. Check Point legt im März eine Folgeanalyse zu GPT-4 nach. OpenAI verschärft in der Folge schrittweise seine Filter und Nutzungsrichtlinien, während Sicherheitsbehörden vor KI-gestütztem Phishing warnen.",
+      "title_de": "Debatte über gesenkte Einstiegshürde für Cyberkriminalität",
+      "description_de": "Die Befunde lösen eine breite Debatte darüber aus, wie generative KI die Einstiegshürde für Cyberkriminalität senkt, und werden von Medien wie Axios aufgegriffen. Check Point legt im März eine Folgeanalyse zu GPT-4 nach. OpenAI verschärft in der Folge schrittweise seine Filter und Nutzungsrichtlinien, während Sicherheitsbehörden vor KI-gestütztem Phishing warnen.",
+      "title_en": "Debate over the lowered barrier to entry for cybercrime",
+      "description_en": "The findings spark a broad debate over how generative AI lowers the barrier to entry for cybercrime and are picked up by outlets such as Axios. In March Check Point publishes a follow-up analysis on GPT-4. OpenAI subsequently tightens its filters and usage policies step by step, while security agencies warn of AI-assisted phishing.",
+      "sources": [
+        "https://www.axios.com/2023/01/10/hackers-chatgpt-malware-cybercrime-ai",
+        "https://blog.checkpoint.com/2023/03/15/check-point-research-conducts-initial-security-analysis-of-chatgpt4-highlighting-potential-scenarios-for-accelerated-cybercrime/amp"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://blog.checkpoint.com/2023/02/07/cybercriminals-bypass-chatgpt-restrictions-to-generate-malicious-content/",

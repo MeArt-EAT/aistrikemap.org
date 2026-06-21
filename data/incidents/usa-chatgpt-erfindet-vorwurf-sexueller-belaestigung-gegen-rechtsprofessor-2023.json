@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Würde des Menschen",
+    "Privatsphäre",
+    "Schutz vor Manipulation",
+    "faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Human dignity",
+    "Privacy",
+    "Protection from manipulation",
+    "Fair trial"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -53,7 +68,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "ChatGPT erzeugt plausiblen Text ohne Faktenprüfung",
+      "description": "OpenAI veröffentlicht ChatGPT auf Basis von GPT-3.5. Das Sprachmodell sagt das jeweils wahrscheinlichste nächste Wort voraus und erzeugt flüssigen, autoritativ klingenden Text, ohne dass eine Tatsachenprüfung gegen reale Quellen stattfindet. Dadurch kann das System überzeugend formulierte, aber frei erfundene Aussagen einschließlich gefälschter Quellenangaben produzieren (sogenannte Halluzinationen).",
+      "title_de": "ChatGPT erzeugt plausiblen Text ohne Faktenprüfung",
+      "description_de": "OpenAI veröffentlicht ChatGPT auf Basis von GPT-3.5. Das Sprachmodell sagt das jeweils wahrscheinlichste nächste Wort voraus und erzeugt flüssigen, autoritativ klingenden Text, ohne dass eine Tatsachenprüfung gegen reale Quellen stattfindet. Dadurch kann das System überzeugend formulierte, aber frei erfundene Aussagen einschließlich gefälschter Quellenangaben produzieren (sogenannte Halluzinationen).",
+      "title_en": "ChatGPT generates plausible text without fact-checking",
+      "description_en": "OpenAI releases ChatGPT built on GPT-3.5. The language model predicts the most likely next word and produces fluent, authoritative-sounding text without verifying claims against real sources. This lets the system produce convincingly worded but entirely invented statements, including fabricated citations (so-called hallucinations).",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "doctrine",
+      "title": "Breite Verfügbarkeit als Auskunfts- und Rechercheinstrument",
+      "description": "ChatGPT wird massenhaft als allgemeines Auskunfts- und Rechercheinstrument genutzt und beantwortet auch faktische Fragen zu real existierenden Personen. OpenAI weist auf mögliche Fehler hin, schränkt die Beantwortung personenbezogener Tatsachenfragen aber nicht systematisch ein. Forscher beginnen, das System gezielt auf rufschädigende Falschaussagen zu testen.",
+      "title_de": "Breite Verfügbarkeit als Auskunfts- und Rechercheinstrument",
+      "description_de": "ChatGPT wird massenhaft als allgemeines Auskunfts- und Rechercheinstrument genutzt und beantwortet auch faktische Fragen zu real existierenden Personen. OpenAI weist auf mögliche Fehler hin, schränkt die Beantwortung personenbezogener Tatsachenfragen aber nicht systematisch ein. Forscher beginnen, das System gezielt auf rufschädigende Falschaussagen zu testen.",
+      "title_en": "Wide availability as an information and research tool",
+      "description_en": "ChatGPT is used at scale as a general information and research tool and answers factual questions about real, named people. OpenAI flags that mistakes are possible but does not systematically restrict answering factual questions about individuals. Researchers begin to deliberately test the system for reputation-damaging false statements.",
+      "sources": [
+        "https://techcrunch.com/2025/03/19/chatgpt-hit-with-privacy-complaint-over-defamatory-hallucinations/"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "event",
+      "title": "ChatGPT erfindet Belästigungsvorwurf gegen Jonathan Turley",
+      "description": "Auf eine Anfrage von UCLA-Professor Eugene Volokh nach Beispielen sexueller Belästigung durch Juraprofessoren nennt ChatGPT den Rechtsprofessor Jonathan Turley und behauptet, er habe auf einer Studienreise nach Alaska eine Studentin belästigt. Als Beleg zitiert es einen angeblichen Washington-Post-Artikel von 2018. Weder der Vorfall noch die Reise, die Universität noch der Artikel existierten; Turley hatte nie an der genannten Schule gelehrt.",
+      "title_de": "ChatGPT erfindet Belästigungsvorwurf gegen Jonathan Turley",
+      "description_de": "Auf eine Anfrage von UCLA-Professor Eugene Volokh nach Beispielen sexueller Belästigung durch Juraprofessoren nennt ChatGPT den Rechtsprofessor Jonathan Turley und behauptet, er habe auf einer Studienreise nach Alaska eine Studentin belästigt. Als Beleg zitiert es einen angeblichen Washington-Post-Artikel von 2018. Weder der Vorfall noch die Reise, die Universität noch der Artikel existierten; Turley hatte nie an der genannten Schule gelehrt.",
+      "title_en": "ChatGPT invents a harassment accusation against Jonathan Turley",
+      "description_en": "Responding to a query from UCLA professor Eugene Volokh for examples of sexual harassment by law professors, ChatGPT names law professor Jonathan Turley and claims he harassed a student on a class trip to Alaska. As evidence it cites a purported 2018 Washington Post article. Neither the incident, the trip, the university, nor the article existed; Turley had never taught at the school named.",
+      "sources": [
+        "https://www.washingtonpost.com/technology/2023/04/05/chatgpt-lies/",
+        "https://www.law.gwu.edu/chatgpt-falsely-accuses-jonathan-turley-sexual-harassment-concocts-fake-wapo-story-support"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "consequences",
+      "title": "Öffentliche Debatte über Haftung für KI-Verleumdung",
+      "description": "Turley schildert den Fall öffentlich und in der Washington Post; er wird zum vielzitierten Beispiel rufschädigender KI-Halluzinationen. Der Vorfall befeuert die Debatte, ob und wie Anbieter generativer KI für erfundene, ehrverletzende Aussagen über real existierende Personen haften, und fließt in spätere Datenschutz- und Verleumdungsbeschwerden gegen OpenAI ein.",
+      "title_de": "Öffentliche Debatte über Haftung für KI-Verleumdung",
+      "description_de": "Turley schildert den Fall öffentlich und in der Washington Post; er wird zum vielzitierten Beispiel rufschädigender KI-Halluzinationen. Der Vorfall befeuert die Debatte, ob und wie Anbieter generativer KI für erfundene, ehrverletzende Aussagen über real existierende Personen haften, und fließt in spätere Datenschutz- und Verleumdungsbeschwerden gegen OpenAI ein.",
+      "title_en": "Public debate over liability for AI defamation",
+      "description_en": "Turley recounts the case publicly and in the Washington Post; it becomes a widely cited example of reputation-damaging AI hallucination. The incident fuels debate over whether and how generative-AI providers are liable for invented, defamatory statements about real people, feeding into later data-protection and defamation complaints against OpenAI.",
+      "sources": [
+        "https://decrypt.co/125712/chatgpt-wrongly-accuses-law-professor-sexual-assault",
+        "https://techcrunch.com/2025/03/19/chatgpt-hit-with-privacy-complaint-over-defamatory-hallucinations/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.washingtonpost.com/technology/2023/04/05/chatgpt-lies/",

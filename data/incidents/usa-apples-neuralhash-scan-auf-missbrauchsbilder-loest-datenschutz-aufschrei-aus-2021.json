@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Freedom of expression",
+    "Protection from manipulation",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Apple Inc.",
@@ -46,7 +64,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2009",
+      "phase": "infrastructure",
+      "title": "Perzeptuelles Hashing als Standardwerkzeug gegen CSAM",
+      "description": "Bereits seit Microsofts PhotoDNA (2009) und vergleichbaren Verfahren scannen Plattformen Bilder serverseitig auf bekanntes Missbrauchsmaterial, indem sie robuste Bild-Fingerabdrücke gegen Hash-Datenbanken des National Center for Missing and Exploited Children (NCMEC) abgleichen. Diese Technik etablierte die Grundidee, die Apple später auf das Endgerät verlagerte.",
+      "title_de": "Perzeptuelles Hashing als Standardwerkzeug gegen CSAM",
+      "description_de": "Bereits seit Microsofts PhotoDNA (2009) und vergleichbaren Verfahren scannen Plattformen Bilder serverseitig auf bekanntes Missbrauchsmaterial, indem sie robuste Bild-Fingerabdrücke gegen Hash-Datenbanken des National Center for Missing and Exploited Children (NCMEC) abgleichen. Diese Technik etablierte die Grundidee, die Apple später auf das Endgerät verlagerte.",
+      "title_en": "Perceptual hashing as a standard anti-CSAM tool",
+      "description_en": "Since Microsoft's PhotoDNA (2009) and similar methods, platforms have scanned images server-side for known abuse material by matching robust image fingerprints against hash databases held by the National Center for Missing and Exploited Children (NCMEC). This technique established the basic idea that Apple later moved onto the device itself.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perceptual_hashing"
+      ]
+    },
+    {
+      "date": "2021-08-05",
+      "phase": "doctrine",
+      "title": "Apple kündigt 'Expanded Protections for Children' an",
+      "description": "Apple stellte ein Maßnahmenpaket zum Kinderschutz vor, dessen Kernstück die On-Device-Erkennung bekannter CSAM-Bilder via NeuralHash war. Fotos sollten vor dem iCloud-Upload lokal gegen eine von NCMEC bereitgestellte Hash-Datenbank abgeglichen werden. Apple begründete die Geräte-Lösung damit, sie schütze die Privatsphäre stärker als ein vollständiger Server-Scan.",
+      "title_de": "Apple kündigt 'Expanded Protections for Children' an",
+      "description_de": "Apple stellte ein Maßnahmenpaket zum Kinderschutz vor, dessen Kernstück die On-Device-Erkennung bekannter CSAM-Bilder via NeuralHash war. Fotos sollten vor dem iCloud-Upload lokal gegen eine von NCMEC bereitgestellte Hash-Datenbank abgeglichen werden. Apple begründete die Geräte-Lösung damit, sie schütze die Privatsphäre stärker als ein vollständiger Server-Scan.",
+      "title_en": "Apple announces 'Expanded Protections for Children'",
+      "description_en": "Apple unveiled a child-safety package whose centrepiece was on-device detection of known CSAM images via NeuralHash. Photos would be matched locally against an NCMEC-supplied hash database before iCloud upload. Apple argued the on-device approach protected privacy better than a full server-side scan.",
+      "sources": [
+        "https://9to5mac.com/2021/08/13/apple-details-the-ways-its-csam-detection-system/"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "event",
+      "title": "Datenschutz-Aufschrei und Hash-Kollisionen",
+      "description": "Sicherheitsforscher und Bürgerrechtsgruppen warnten, das On-Device-Scanning schaffe eine Überwachungsinfrastruktur, die Regierungen zur Suche nach beliebigen anderen Inhalten zweckentfremden könnten. Die EFF sammelte über 25.000 Unterschriften, fast 100 Organisationen forderten den Stopp. Forscher demonstrierten zudem absichtlich erzeugte Hash-Kollisionen, die die Verlässlichkeit des Verfahrens untergruben.",
+      "title_de": "Datenschutz-Aufschrei und Hash-Kollisionen",
+      "description_de": "Sicherheitsforscher und Bürgerrechtsgruppen warnten, das On-Device-Scanning schaffe eine Überwachungsinfrastruktur, die Regierungen zur Suche nach beliebigen anderen Inhalten zweckentfremden könnten. Die EFF sammelte über 25.000 Unterschriften, fast 100 Organisationen forderten den Stopp. Forscher demonstrierten zudem absichtlich erzeugte Hash-Kollisionen, die die Verlässlichkeit des Verfahrens untergruben.",
+      "title_en": "Privacy backlash and hash collisions",
+      "description_en": "Security researchers and civil liberties groups warned that on-device scanning created a surveillance infrastructure governments could repurpose to search for any other content. The EFF gathered over 25,000 signatures and nearly 100 organisations demanded a halt. Researchers also demonstrated deliberately crafted hash collisions that undermined the method's reliability.",
+      "sources": [
+        "https://techcrunch.com/2021/08/18/apples-csam-detection-tech-is-under-fire-again/",
+        "https://arxiv.org/pdf/2111.06628"
+      ]
+    },
+    {
+      "date": "2021-09-03",
+      "phase": "consequences",
+      "title": "Apple verschiebt die Funktion",
+      "description": "Unter dem Druck der Kritik kündigte Apple an, die Einführung der CSAM-Erkennung zu verschieben, um sich mehr Zeit für Verbesserungen zu nehmen. Die geplante Auslieferung mit iOS 15 wurde gestoppt.",
+      "title_de": "Apple verschiebt die Funktion",
+      "description_de": "Unter dem Druck der Kritik kündigte Apple an, die Einführung der CSAM-Erkennung zu verschieben, um sich mehr Zeit für Verbesserungen zu nehmen. Die geplante Auslieferung mit iOS 15 wurde gestoppt.",
+      "title_en": "Apple delays the feature",
+      "description_en": "Under pressure from the criticism, Apple announced it would delay the CSAM-detection rollout to take more time for improvements. The planned launch with iOS 15 was halted.",
+      "sources": [
+        "https://techcrunch.com/2021/09/03/apple-csam-detection-delayed/"
+      ]
+    },
+    {
+      "date": "2022-12",
+      "phase": "consequences",
+      "title": "Apple verwirft das On-Device-Scanning endgültig",
+      "description": "Apple gab bekannt, das NeuralHash-CSAM-Scanning in der ursprünglichen Form nicht weiterzuverfolgen, und setzte stattdessen auf optionale, nutzergesteuerte Schutzfunktionen wie die Warnung vor Nacktbildern in Nachrichten. Der Fall gilt seither als Präzedenz dafür, dass Client-Side-Scanning trotz legitimer Schutzziele als Überwachungsrisiko abgelehnt wurde.",
+      "title_de": "Apple verwirft das On-Device-Scanning endgültig",
+      "description_de": "Apple gab bekannt, das NeuralHash-CSAM-Scanning in der ursprünglichen Form nicht weiterzuverfolgen, und setzte stattdessen auf optionale, nutzergesteuerte Schutzfunktionen wie die Warnung vor Nacktbildern in Nachrichten. Der Fall gilt seither als Präzedenz dafür, dass Client-Side-Scanning trotz legitimer Schutzziele als Überwachungsrisiko abgelehnt wurde.",
+      "title_en": "Apple abandons on-device scanning for good",
+      "description_en": "Apple announced it would not proceed with NeuralHash CSAM scanning in its original form, instead relying on optional, user-controlled protections such as nudity warnings in Messages. The case has since become a precedent for client-side scanning being rejected as a surveillance risk despite legitimate protective goals.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perceptual_hashing"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2021/09/03/apple-csam-detection-delayed/",

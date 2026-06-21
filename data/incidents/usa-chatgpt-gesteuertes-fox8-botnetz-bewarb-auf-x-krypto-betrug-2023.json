@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Meinungsfreiheit",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Meinungsfreiheit",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Consumer protection",
+    "Freedom of expression",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Fox8 botnet operators (unknown)",
@@ -46,7 +61,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "Skalierbare Textgenerierung trifft auf offene Social-Media-API",
+      "description": "Mit ChatGPT (GPT-3.5) wird die automatische Erzeugung menschenähnlicher Beiträge in großem Umfang trivial verfügbar. Zugleich erlaubt die Plattform X (vormals Twitter) über Schnittstellen und schwache Konten-Verifikation den Betrieb großer automatisierter Account-Netze. Die Kombination aus billiger KI-Textproduktion und offener Verteilinfrastruktur schafft die technische Vorbedingung für KI-gesteuerte Botnetze.",
+      "title_de": "Skalierbare Textgenerierung trifft auf offene Social-Media-API",
+      "description_de": "Mit ChatGPT (GPT-3.5) wird die automatische Erzeugung menschenähnlicher Beiträge in großem Umfang trivial verfügbar. Zugleich erlaubt die Plattform X (vormals Twitter) über Schnittstellen und schwache Konten-Verifikation den Betrieb großer automatisierter Account-Netze. Die Kombination aus billiger KI-Textproduktion und offener Verteilinfrastruktur schafft die technische Vorbedingung für KI-gesteuerte Botnetze.",
+      "title_en": "Scalable text generation meets an open social-media API",
+      "description_en": "With ChatGPT (GPT-3.5), automatically generating human-like posts at scale becomes trivially available. At the same time, the platform X (formerly Twitter) allows large automated account networks to operate through its interfaces and weak account verification. The combination of cheap AI text production and open distribution infrastructure creates the technical precondition for AI-driven botnets.",
+      "sources": [
+        "https://openai.com/index/chatgpt/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Krypto-Betrug als Geschäftsmodell hinter dem Botnetz",
+      "description": "Unbekannte Betreiber bauen ein automatisiertes Konten-Netz auf, um über gefälschte Personas Reichweite zu erzeugen und Nutzer auf Krypto-, Blockchain- und NFT-Betrugsseiten zu lenken. Das Geschäftsmodell setzt auf Masse statt Qualität: Viele billige, KI-betriebene Konten ersetzen aufwändig gepflegte Fake-Profile. Profilbilder werden teils aus echten Selfies fremder Personen zusammengestellt.",
+      "title_de": "Krypto-Betrug als Geschäftsmodell hinter dem Botnetz",
+      "description_de": "Unbekannte Betreiber bauen ein automatisiertes Konten-Netz auf, um über gefälschte Personas Reichweite zu erzeugen und Nutzer auf Krypto-, Blockchain- und NFT-Betrugsseiten zu lenken. Das Geschäftsmodell setzt auf Masse statt Qualität: Viele billige, KI-betriebene Konten ersetzen aufwändig gepflegte Fake-Profile. Profilbilder werden teils aus echten Selfies fremder Personen zusammengestellt.",
+      "title_en": "Crypto fraud as the business model behind the botnet",
+      "description_en": "Unknown operators build an automated account network to manufacture reach via fake personas and steer users to crypto, blockchain and NFT scam sites. The business model favours volume over quality: many cheap, AI-driven accounts replace painstakingly maintained fake profiles. Profile pictures are in part assembled from real selfies of unrelated people.",
+      "sources": [
+        "https://protos.com/x-users-manipulated-by-chatgpt-bots-to-visit-malicious-crypto-sites/"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "event",
+      "title": "Forscher entdecken das 'Fox8'-Botnetz aus rund 1.140 Konten",
+      "description": "Kai-Cheng Yang und Filippo Menczer (Indiana University Bloomington, Observatory on Social Media) beschreiben ein ChatGPT-gesteuertes Botnetz namens 'Fox8' aus mindestens 1.140 Konten auf X. Die Konten posten automatisch generierte Beiträge und locken auf Krypto-Betrugsseiten. Aufgefallen war das Netz nur, weil Bots versehentlich verräterische Phrasen wie 'As an AI language model...' ausgaben.",
+      "title_de": "Forscher entdecken das 'Fox8'-Botnetz aus rund 1.140 Konten",
+      "description_de": "Kai-Cheng Yang und Filippo Menczer (Indiana University Bloomington, Observatory on Social Media) beschreiben ein ChatGPT-gesteuertes Botnetz namens 'Fox8' aus mindestens 1.140 Konten auf X. Die Konten posten automatisch generierte Beiträge und locken auf Krypto-Betrugsseiten. Aufgefallen war das Netz nur, weil Bots versehentlich verräterische Phrasen wie 'As an AI language model...' ausgaben.",
+      "title_en": "Researchers discover the 'Fox8' botnet of about 1,140 accounts",
+      "description_en": "Kai-Cheng Yang and Filippo Menczer (Indiana University Bloomington, Observatory on Social Media) describe a ChatGPT-powered botnet called 'Fox8' of at least 1,140 accounts on X. The accounts post auto-generated content and lure users to crypto scam sites. The network was only spotted because bots accidentally output telltale phrases such as 'As an AI language model...'.",
+      "sources": [
+        "https://arxiv.org/pdf/2307.16336",
+        "https://www.techpolicy.press/researchers-identify-false-twitter-personas-likely-powered-by-chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "consequences",
+      "title": "Warnung vor schwerer erkennbaren KI-Botnetzen",
+      "description": "Die Forscher warnen, dass Fox8 nur wegen handwerklicher Fehler auffiel und sauber umgesetzte KI-Botnetze kaum noch von echten Nutzern zu unterscheiden wären. Der Fall wird zum frühen Beleg für KI-gestützte Desinformation und Plattformmanipulation und befeuert die Debatte über Kennzeichnungspflichten, Bot-Erkennung und die Verantwortung von Plattformen und KI-Anbietern.",
+      "title_de": "Warnung vor schwerer erkennbaren KI-Botnetzen",
+      "description_de": "Die Forscher warnen, dass Fox8 nur wegen handwerklicher Fehler auffiel und sauber umgesetzte KI-Botnetze kaum noch von echten Nutzern zu unterscheiden wären. Der Fall wird zum frühen Beleg für KI-gestützte Desinformation und Plattformmanipulation und befeuert die Debatte über Kennzeichnungspflichten, Bot-Erkennung und die Verantwortung von Plattformen und KI-Anbietern.",
+      "title_en": "Warning of harder-to-detect AI botnets",
+      "description_en": "The researchers warn that Fox8 was only noticed because of sloppy execution and that cleanly built AI botnets would be nearly indistinguishable from real users. The case becomes early evidence of AI-assisted disinformation and platform manipulation and fuels the debate over labelling requirements, bot detection, and the responsibility of platforms and AI providers.",
+      "sources": [
+        "https://flaglerlive.com/ai-bots/",
+        "https://cryptonews.com/news/cryptocurrency-scammers-exploit-chatgpt-powered-botnet-on-social-platform-x/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.techpolicy.press/researchers-identify-false-twitter-personas-likely-powered-by-chatgpt/",

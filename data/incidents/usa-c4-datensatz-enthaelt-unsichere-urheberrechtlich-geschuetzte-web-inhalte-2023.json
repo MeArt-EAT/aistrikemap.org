@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Protection from discrimination",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -41,7 +56,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2008",
+      "phase": "infrastructure",
+      "title": "Common Crawl beginnt mit dem ungefilterten Massen-Webcrawl",
+      "description": "Die 2007 von Gil Elbaz gegründete Non-Profit-Organisation Common Crawl crawlt seit 2008 monatlich Milliarden Webseiten und stellt die Archive frei zur Verfügung. Der Crawl sammelt das offene Web weitgehend ohne Rücksicht auf Urheberrecht oder Inhaltsqualität ein, inklusive Hass-, Doxing- und Foren-Seiten. Diese rohen Petabytes wurden zur Standard-Rohstoffquelle für KI-Trainingsdaten.",
+      "title_de": "Common Crawl beginnt mit dem ungefilterten Massen-Webcrawl",
+      "description_de": "Die 2007 von Gil Elbaz gegründete Non-Profit-Organisation Common Crawl crawlt seit 2008 monatlich Milliarden Webseiten und stellt die Archive frei zur Verfügung. Der Crawl sammelt das offene Web weitgehend ohne Rücksicht auf Urheberrecht oder Inhaltsqualität ein, inklusive Hass-, Doxing- und Foren-Seiten. Diese rohen Petabytes wurden zur Standard-Rohstoffquelle für KI-Trainingsdaten.",
+      "title_en": "Common Crawl starts its unfiltered mass web crawl",
+      "description_en": "Common Crawl, the non-profit founded by Gil Elbaz in 2007, has crawled billions of web pages each month since 2008 and released the archives for free. The crawl ingests the open web largely without regard to copyright or content quality, including hate, doxing and forum sites. These raw petabytes became the default raw material for AI training data.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Common_Crawl"
+      ]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Google leitet aus Common Crawl den C4-Datensatz für T5 ab",
+      "description": "Für das Sprachmodell T5 erstellte Google 2019 den Colossal Clean Crawled Corpus (C4) aus dem April-2019-Snapshot von Common Crawl. Die angewandten Filter zielten vor allem darauf, nicht-englischen und 'anstößigen' Text zu entfernen, nicht aber darauf, urheberrechtlich geschütztes Material oder Hassquellen systematisch auszuschließen. Google veröffentlichte den Datensatz offen, womit er auch Modelle wie Metas LLaMA speiste.",
+      "title_de": "Google leitet aus Common Crawl den C4-Datensatz für T5 ab",
+      "description_de": "Für das Sprachmodell T5 erstellte Google 2019 den Colossal Clean Crawled Corpus (C4) aus dem April-2019-Snapshot von Common Crawl. Die angewandten Filter zielten vor allem darauf, nicht-englischen und 'anstößigen' Text zu entfernen, nicht aber darauf, urheberrechtlich geschütztes Material oder Hassquellen systematisch auszuschließen. Google veröffentlichte den Datensatz offen, womit er auch Modelle wie Metas LLaMA speiste.",
+      "title_en": "Google derives the C4 dataset from Common Crawl for T5",
+      "description_en": "For its T5 language model, Google built the Colossal Clean Crawled Corpus (C4) in 2019 from the April 2019 Common Crawl snapshot. The filters applied mainly targeted non-English and 'offensive' text, not the systematic exclusion of copyrighted material or hate sources. Google released the dataset openly, so it also fed models such as Meta's LLaMA.",
+      "sources": [
+        "https://research.google/blog/exploring-transfer-learning-with-t5-the-text-to-text-transfer-transformer/"
+      ]
+    },
+    {
+      "date": "2023-04-19",
+      "phase": "event",
+      "title": "Washington Post und Allen Institute legen C4-Inhalte offen",
+      "description": "Eine gemeinsame Untersuchung der Washington Post und des Allen Institute for AI analysierte 2023 die rund 15 Millionen Websites im C4-Korpus. Sie zeigte, dass urheberrechtlich geschütztes Material massenhaft enthalten ist – das Copyright-Symbol erschien über 200 Millionen Mal – und dass Texte von Hass- und Doxing-Seiten wie Stormfront, Kiwi Farms und 4chan eingeflossen sind. Der Fall machte die fehlende Kontrolle über Herkunft und Qualität großer Trainingskorpora sichtbar.",
+      "title_de": "Washington Post und Allen Institute legen C4-Inhalte offen",
+      "description_de": "Eine gemeinsame Untersuchung der Washington Post und des Allen Institute for AI analysierte 2023 die rund 15 Millionen Websites im C4-Korpus. Sie zeigte, dass urheberrechtlich geschütztes Material massenhaft enthalten ist – das Copyright-Symbol erschien über 200 Millionen Mal – und dass Texte von Hass- und Doxing-Seiten wie Stormfront, Kiwi Farms und 4chan eingeflossen sind. Der Fall machte die fehlende Kontrolle über Herkunft und Qualität großer Trainingskorpora sichtbar.",
+      "title_en": "Washington Post and Allen Institute expose what is inside C4",
+      "description_en": "A 2023 joint investigation by The Washington Post and the Allen Institute for AI analysed the roughly 15 million websites in the C4 corpus. It showed copyrighted material was included en masse – the copyright symbol appeared over 200 million times – and that text from hate and doxing sites such as Stormfront, Kiwi Farms and 4chan had been swept in. The case made the lack of control over the provenance and quality of large training corpora visible.",
+      "sources": [
+        "https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/"
+      ]
+    },
+    {
+      "date": "2023-04-20",
+      "phase": "consequences",
+      "title": "Debatte über Trainingsdaten-Transparenz und Copyright-Klagen",
+      "description": "Die Berichterstattung verstärkte die öffentliche Debatte über die Herkunft von KI-Trainingsdaten und die fehlende Möglichkeit für Urheber:innen, der Nutzung zu widersprechen. Sie lieferte ein zentrales Argument für die wachsende Welle von Urheberrechtsklagen gegen KI-Anbieter und für Forderungen nach Daten-Dokumentation und Opt-out-Mechanismen. Später forderten Verlage Common Crawl auf, das Scraping einzustellen und Archive zu löschen.",
+      "title_de": "Debatte über Trainingsdaten-Transparenz und Copyright-Klagen",
+      "description_de": "Die Berichterstattung verstärkte die öffentliche Debatte über die Herkunft von KI-Trainingsdaten und die fehlende Möglichkeit für Urheber:innen, der Nutzung zu widersprechen. Sie lieferte ein zentrales Argument für die wachsende Welle von Urheberrechtsklagen gegen KI-Anbieter und für Forderungen nach Daten-Dokumentation und Opt-out-Mechanismen. Später forderten Verlage Common Crawl auf, das Scraping einzustellen und Archive zu löschen.",
+      "title_en": "Debate over training-data transparency and copyright lawsuits",
+      "description_en": "The reporting intensified public debate over the provenance of AI training data and the absence of any way for creators to object to its use. It supplied a key argument for the growing wave of copyright lawsuits against AI providers and for demands for data documentation and opt-out mechanisms. Publishers later demanded that Common Crawl stop scraping and delete its archives.",
+      "sources": [
+        "https://www.theregister.com/2023/04/20/google_c4_data_nasty_sources/",
+        "https://pressgazette.co.uk/media_law/common-crawl-ai-news-publishers-scraping-cease-and-desist-letter/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/",

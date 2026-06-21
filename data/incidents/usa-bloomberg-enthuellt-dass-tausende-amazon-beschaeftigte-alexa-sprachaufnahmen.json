@@ -26,9 +26,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Consumer protection",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Amazon",
@@ -43,7 +61,76 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014-11-06",
+      "phase": "infrastructure",
+      "title": "Amazon startet Echo und den cloudbasierten Alexa-Dienst",
+      "description": "Am 6. November 2014 stellte Amazon den Echo-Lautsprecher und die Sprachassistentin Alexa vor. Alle Sprachbefehle werden nach dem Weckwort an den Alexa Voice Service in der Amazon-Cloud gesendet und dort verarbeitet. Diese zentrale Aufzeichnung und Speicherung aller Clips schuf die technische Grundlage, auf die später menschliche Reviewer zugreifen konnten.",
+      "title_de": "Amazon startet Echo und den cloudbasierten Alexa-Dienst",
+      "description_de": "Am 6. November 2014 stellte Amazon den Echo-Lautsprecher und die Sprachassistentin Alexa vor. Alle Sprachbefehle werden nach dem Weckwort an den Alexa Voice Service in der Amazon-Cloud gesendet und dort verarbeitet. Diese zentrale Aufzeichnung und Speicherung aller Clips schuf die technische Grundlage, auf die später menschliche Reviewer zugreifen konnten.",
+      "title_en": "Amazon launches Echo and the cloud-based Alexa service",
+      "description_en": "On 6 November 2014, Amazon unveiled the Echo speaker and the Alexa voice assistant. After the wake word, all voice commands are sent to the Alexa Voice Service in Amazon's cloud for processing. This central recording and storage of every clip created the technical basis that human reviewers would later access.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amazon_Alexa",
+        "https://www.cnbc.com/2014/11/06/amazon-surprises-with-new-device-a-voice-assistant.html"
+      ]
+    },
+    {
+      "date": "2015",
+      "phase": "doctrine",
+      "title": "Geschäftsmodell: Sprachaufnahmen als Trainingsmaterial, menschliche Annotation per Default",
+      "description": "Um die Spracherkennung zu verbessern, machte Amazon die unbefristete Speicherung von Aufnahmen und Transkripten zur Standardeinstellung und ließ Clips von Menschen annotieren. Bis September 2019 war die unbefristete Aufbewahrung Default. Die Datenschutz-Hinweise wiesen das Mithören durch Menschen nicht offen aus - eine Geschäftsentscheidung zugunsten der Modellqualität.",
+      "title_de": "Geschäftsmodell: Sprachaufnahmen als Trainingsmaterial, menschliche Annotation per Default",
+      "description_de": "Um die Spracherkennung zu verbessern, machte Amazon die unbefristete Speicherung von Aufnahmen und Transkripten zur Standardeinstellung und ließ Clips von Menschen annotieren. Bis September 2019 war die unbefristete Aufbewahrung Default. Die Datenschutz-Hinweise wiesen das Mithören durch Menschen nicht offen aus - eine Geschäftsentscheidung zugunsten der Modellqualität.",
+      "title_en": "Business model: voice recordings as training material, human annotation by default",
+      "description_en": "To improve speech recognition, Amazon made indefinite storage of recordings and transcripts the default and had clips annotated by humans. Indefinite retention remained the default until September 2019. Privacy notices did not clearly disclose human review - a business decision favouring model quality.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever"
+      ]
+    },
+    {
+      "date": "2019-04-10",
+      "phase": "event",
+      "title": "Bloomberg enthüllt das weltweite Mithören durch tausende Beschäftigte",
+      "description": "Bloomberg berichtete am 10. April 2019, dass Amazon weltweit tausende Beschäftigte einsetzt, um Sprach-Clips von Echo-Geräten anzuhören und zu transkribieren. Reviewer in Boston, Bukarest, San José und Hyderabad arbeiteten in 9-Stunden-Schichten mit bis zu 1.000 Audio-Clips. Eine Folgegeschichte zeigte, dass die Mitarbeiter auch auf Standortdaten der Kundenwohnungen zugreifen konnten.",
+      "title_de": "Bloomberg enthüllt das weltweite Mithören durch tausende Beschäftigte",
+      "description_de": "Bloomberg berichtete am 10. April 2019, dass Amazon weltweit tausende Beschäftigte einsetzt, um Sprach-Clips von Echo-Geräten anzuhören und zu transkribieren. Reviewer in Boston, Bukarest, San José und Hyderabad arbeiteten in 9-Stunden-Schichten mit bis zu 1.000 Audio-Clips. Eine Folgegeschichte zeigte, dass die Mitarbeiter auch auf Standortdaten der Kundenwohnungen zugreifen konnten.",
+      "title_en": "Bloomberg reveals worldwide human review by thousands of staff",
+      "description_en": "On 10 April 2019, Bloomberg reported that Amazon employed thousands of staff worldwide to listen to and transcribe voice clips from Echo devices. Reviewers in Boston, Bucharest, San José and Hyderabad worked nine-hour shifts with up to 1,000 audio clips. A follow-up showed staff could also access customer home address data.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2019-04-10/is-anyone-listening-to-you-on-alexa-a-global-team-reviews-audio",
+        "https://www.cnbc.com/2019/04/10/amazon-has-thousands-of-people-listening-to-snippets-of-alexa-chats.html"
+      ]
+    },
+    {
+      "date": "2019-09",
+      "phase": "consequences",
+      "title": "Amazon führt Opt-out und automatische Löschfristen ein",
+      "description": "Nach dem öffentlichen Aufschrei führte Amazon im September 2019 eine Einstellung ein, mit der Nutzer der menschlichen Auswertung ihrer Aufnahmen widersprechen können, sowie Optionen zur automatischen Löschung nach drei oder achtzehn Monaten. Die unbefristete Speicherung blieb jedoch zunächst die Standardeinstellung.",
+      "title_de": "Amazon führt Opt-out und automatische Löschfristen ein",
+      "description_de": "Nach dem öffentlichen Aufschrei führte Amazon im September 2019 eine Einstellung ein, mit der Nutzer der menschlichen Auswertung ihrer Aufnahmen widersprechen können, sowie Optionen zur automatischen Löschung nach drei oder achtzehn Monaten. Die unbefristete Speicherung blieb jedoch zunächst die Standardeinstellung.",
+      "title_en": "Amazon introduces opt-out and automatic deletion windows",
+      "description_en": "After the public outcry, Amazon in September 2019 introduced a setting allowing users to opt out of human review of their recordings, plus options to auto-delete data after three or eighteen months. Indefinite storage nevertheless remained the default at first.",
+      "sources": [
+        "https://www.ftc.gov/business-guidance/blog/2023/05/out-mouths-babes-ftc-says-amazon-kept-kids-alexa-voice-data-forever-even-after-parents-ordered"
+      ]
+    },
+    {
+      "date": "2023-05-31",
+      "phase": "consequences",
+      "title": "FTC-Vergleich: 25 Mio. Dollar Strafe wegen Kinder-Sprachdaten",
+      "description": "Am 31. Mai 2023 verkündeten FTC und DOJ einen Vergleich: Amazon zahlte 25 Millionen Dollar wegen Verstößen gegen das Kinderdatenschutzgesetz COPPA, weil Kinder-Sprachaufnahmen unbefristet gespeichert und Löschanfragen unterlaufen wurden. Die FTC stellte fest, dass rund 30.000 Beschäftigte Zugriff auf Audio-Clips hatten, und ordnete eine Überarbeitung der Löschpraxis an.",
+      "title_de": "FTC-Vergleich: 25 Mio. Dollar Strafe wegen Kinder-Sprachdaten",
+      "description_de": "Am 31. Mai 2023 verkündeten FTC und DOJ einen Vergleich: Amazon zahlte 25 Millionen Dollar wegen Verstößen gegen das Kinderdatenschutzgesetz COPPA, weil Kinder-Sprachaufnahmen unbefristet gespeichert und Löschanfragen unterlaufen wurden. Die FTC stellte fest, dass rund 30.000 Beschäftigte Zugriff auf Audio-Clips hatten, und ordnete eine Überarbeitung der Löschpraxis an.",
+      "title_en": "FTC settlement: USD 25 million penalty over children's voice data",
+      "description_en": "On 31 May 2023, the FTC and DOJ announced a settlement: Amazon paid USD 25 million over violations of the children's privacy law COPPA, for storing children's voice recordings indefinitely and undermining deletion requests. The FTC noted around 30,000 staff had access to audio clips and ordered an overhaul of deletion practices.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever",
+        "https://www.cnn.com/2023/05/31/tech/amazon-ring-ftc-complaint/index.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bloomberg.com/news/articles/2019-04-10/is-anyone-listening-to-you-on-alexa-a-global-team-reviews-audio",

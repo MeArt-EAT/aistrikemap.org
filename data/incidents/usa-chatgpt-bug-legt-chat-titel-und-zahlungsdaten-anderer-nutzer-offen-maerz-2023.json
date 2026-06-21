@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -46,7 +58,63 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "ChatGPT geht als kostenloser Massendienst mit Caching-Backend live",
+      "description": "OpenAI veröffentlicht ChatGPT als kostenlose Forschungsvorschau auf Basis von GPT-3.5. Der Dienst erreicht binnen Tagen Millionen, binnen zwei Monaten rund 100 Millionen monatliche Nutzer. Um die Last zu bewältigen, setzt das Backend auf In-Memory-Caching (Redis über die Bibliothek redis-py), das Nutzersitzungen und Verlaufsdaten zwischenspeichert.",
+      "title_de": "ChatGPT geht als kostenloser Massendienst mit Caching-Backend live",
+      "description_de": "OpenAI veröffentlicht ChatGPT als kostenlose Forschungsvorschau auf Basis von GPT-3.5. Der Dienst erreicht binnen Tagen Millionen, binnen zwei Monaten rund 100 Millionen monatliche Nutzer. Um die Last zu bewältigen, setzt das Backend auf In-Memory-Caching (Redis über die Bibliothek redis-py), das Nutzersitzungen und Verlaufsdaten zwischenspeichert.",
+      "title_en": "ChatGPT launches as a free mass-market service with a caching backend",
+      "description_en": "OpenAI releases ChatGPT as a free research preview built on GPT-3.5. Within days it reaches millions and within two months roughly 100 million monthly users. To handle the load, the backend relies on in-memory caching (Redis via the redis-py library), which buffers user sessions and history data.",
+      "sources": [
+        "https://openai.com/index/chatgpt/",
+        "https://en.wikipedia.org/wiki/ChatGPT"
+      ]
+    },
+    {
+      "date": "2023-02",
+      "phase": "doctrine",
+      "title": "Einführung von ChatGPT Plus bündelt Zahlungsdaten der Abonnenten",
+      "description": "OpenAI führt das kostenpflichtige Abo ChatGPT Plus ein und erhebt damit zahlungsbezogene Daten seiner Abonnenten (Name, E-Mail, Rechnungsadresse, Kartentyp und letzte Kartenziffern). Diese Daten werden in derselben Infrastruktur verarbeitet, in der auch der Sitzungs-Cache läuft, und an die korrekte Nutzeridentität gebunden.",
+      "title_de": "Einführung von ChatGPT Plus bündelt Zahlungsdaten der Abonnenten",
+      "description_de": "OpenAI führt das kostenpflichtige Abo ChatGPT Plus ein und erhebt damit zahlungsbezogene Daten seiner Abonnenten (Name, E-Mail, Rechnungsadresse, Kartentyp und letzte Kartenziffern). Diese Daten werden in derselben Infrastruktur verarbeitet, in der auch der Sitzungs-Cache läuft, und an die korrekte Nutzeridentität gebunden.",
+      "title_en": "Launch of ChatGPT Plus concentrates subscriber payment data",
+      "description_en": "OpenAI introduces the paid ChatGPT Plus tier, thereby collecting payment-related data of its subscribers (name, email, billing address, card type and last card digits). This data is processed in the same infrastructure that runs the session cache and is bound to the correct user identity.",
+      "sources": [
+        "https://www.infosecurity-magazine.com/news/chatgpt-vulnerability-payment/"
+      ]
+    },
+    {
+      "date": "2023-03-20",
+      "phase": "event",
+      "title": "redis-py-Fehler zeigt fremde Chat-Titel und Zahlungsdaten",
+      "description": "Eine serverseitige Änderung löst einen Anstieg abgebrochener Redis-Anfragen aus; ein Fehler in redis-py liefert daraufhin Daten anderer Nutzer aus dem Cache zurück. Nutzer sehen Chat-Titel und teils erste Nachrichten fremder aktiver Sitzungen. In einem rund neunstündigen Fenster werden zudem für etwa 1,2 Prozent der ChatGPT-Plus-Abonnenten Zahlungsdaten sichtbar. Vollständige Kreditkartennummern sind nicht betroffen.",
+      "title_de": "redis-py-Fehler zeigt fremde Chat-Titel und Zahlungsdaten",
+      "description_de": "Eine serverseitige Änderung löst einen Anstieg abgebrochener Redis-Anfragen aus; ein Fehler in redis-py liefert daraufhin Daten anderer Nutzer aus dem Cache zurück. Nutzer sehen Chat-Titel und teils erste Nachrichten fremder aktiver Sitzungen. In einem rund neunstündigen Fenster werden zudem für etwa 1,2 Prozent der ChatGPT-Plus-Abonnenten Zahlungsdaten sichtbar. Vollständige Kreditkartennummern sind nicht betroffen.",
+      "title_en": "redis-py bug surfaces other users' chat titles and payment data",
+      "description_en": "A server-side change triggers a spike in cancelled Redis requests; a bug in redis-py then returns other users' data from the cache. Users see chat titles and in some cases the first messages of strangers' active sessions. During a roughly nine-hour window, payment data also becomes visible for about 1.2 percent of ChatGPT Plus subscribers. Full credit-card numbers are not affected.",
+      "sources": [
+        "https://thehackernews.com/2023/03/openai-reveals-redis-bug-behind-chatgpt.html",
+        "https://www.helpnetsecurity.com/2023/03/27/chatgpt-data-leak/"
+      ]
+    },
+    {
+      "date": "2023-03-24",
+      "phase": "consequences",
+      "title": "OpenAI bestätigt Vorfall, patcht den Bug und ergänzt Prüfungen",
+      "description": "OpenAI nimmt ChatGPT vorübergehend offline, behebt den Fehler am selben Tag und veröffentlicht am 24. März eine öffentliche Erklärung. CEO Sam Altman entschuldigt sich; das Unternehmen fügt redundante Prüfungen hinzu, die sicherstellen sollen, dass aus dem Redis-Cache zurückgegebene Daten zum anfragenden Nutzer passen. Der Vorfall wird zu einem vielzitierten Datenschutz-Präzedenzfall für generative KI-Dienste.",
+      "title_de": "OpenAI bestätigt Vorfall, patcht den Bug und ergänzt Prüfungen",
+      "description_de": "OpenAI nimmt ChatGPT vorübergehend offline, behebt den Fehler am selben Tag und veröffentlicht am 24. März eine öffentliche Erklärung. CEO Sam Altman entschuldigt sich; das Unternehmen fügt redundante Prüfungen hinzu, die sicherstellen sollen, dass aus dem Redis-Cache zurückgegebene Daten zum anfragenden Nutzer passen. Der Vorfall wird zu einem vielzitierten Datenschutz-Präzedenzfall für generative KI-Dienste.",
+      "title_en": "OpenAI confirms the incident, patches the bug and adds checks",
+      "description_en": "OpenAI temporarily takes ChatGPT offline, fixes the bug the same day and publishes a public statement on 24 March. CEO Sam Altman apologises; the company adds redundant checks meant to ensure that data returned from the Redis cache matches the requesting user. The incident becomes a widely cited data-protection precedent for generative AI services.",
+      "sources": [
+        "https://www.theregister.com/2023/03/23/openai_ceo_leak/",
+        "https://securityaffairs.com/144057/data-breach/openai-chatgpt-redis-bug-data-leak.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://openai.com/index/march-20-chatgpt-outage/",
