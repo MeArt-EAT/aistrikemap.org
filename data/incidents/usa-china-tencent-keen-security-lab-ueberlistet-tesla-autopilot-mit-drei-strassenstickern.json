@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Bewegungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Bewegungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection",
+    "Freedom of movement"
+  ],
   "asm:actors": [
     {
       "name": "Tencent Keen Security Lab",
@@ -53,7 +68,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Tesla setzt auf kamerabasierte neuronale Netze zur Spurerkennung",
+      "description": "Tesla baute sein Fahrerassistenzsystem Autopilot auf Computer Vision: Kameras liefern Bilder, ein neuronales Netz erkennt daraus Fahrspuren und steuert das Spurhalten. Mit dem Hardware-Sprung auf HW2.x (ab 2016/2017) wuchs die Bordrechenleistung für größere Netze. Diese Architektur - eine kamera- und KI-gestützte Spurerkennung ohne hochauflösende Karten - ist die technische Voraussetzung dafür, dass manipulierte Fahrbahnmarkierungen das System täuschen können.",
+      "title_de": "Tesla setzt auf kamerabasierte neuronale Netze zur Spurerkennung",
+      "description_de": "Tesla baute sein Fahrerassistenzsystem Autopilot auf Computer Vision: Kameras liefern Bilder, ein neuronales Netz erkennt daraus Fahrspuren und steuert das Spurhalten. Mit dem Hardware-Sprung auf HW2.x (ab 2016/2017) wuchs die Bordrechenleistung für größere Netze. Diese Architektur - eine kamera- und KI-gestützte Spurerkennung ohne hochauflösende Karten - ist die technische Voraussetzung dafür, dass manipulierte Fahrbahnmarkierungen das System täuschen können.",
+      "title_en": "Tesla relies on camera-based neural networks for lane detection",
+      "description_en": "Tesla built its Autopilot driver-assistance system on computer vision: cameras feed images, and a neural network detects lanes and steers lane-keeping. The hardware jump to HW2.x (from 2016/2017) increased on-board compute for larger networks. This architecture - camera- and AI-based lane detection without high-definition maps - is the technical precondition that allows manipulated road markings to fool the system.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tesla_Autopilot_hardware"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Tesla etabliert ein Bug-Bounty-Programm und lädt Sicherheitsforschung ein",
+      "description": "Tesla unterhält ein Responsible-Disclosure- und Bug-Bounty-Programm und belohnt externe Forschung an seinen Fahrzeugen ausdrücklich. Tencents Keen Security Lab hatte bereits 2016-2018 mehrfach Tesla-Systeme aus der Ferne kompromittiert (u. a. CAN-Bus, WLAN-Stack, Autopilot-Lenkung) und im Rahmen des Programms gemeldet. Diese Politik, adversariale Forschung zu fördern statt zu verfolgen, legitimierte den öffentlichen Sticker-Angriff von 2019 als Sicherheitsstudie.",
+      "title_de": "Tesla etabliert ein Bug-Bounty-Programm und lädt Sicherheitsforschung ein",
+      "description_de": "Tesla unterhält ein Responsible-Disclosure- und Bug-Bounty-Programm und belohnt externe Forschung an seinen Fahrzeugen ausdrücklich. Tencents Keen Security Lab hatte bereits 2016-2018 mehrfach Tesla-Systeme aus der Ferne kompromittiert (u. a. CAN-Bus, WLAN-Stack, Autopilot-Lenkung) und im Rahmen des Programms gemeldet. Diese Politik, adversariale Forschung zu fördern statt zu verfolgen, legitimierte den öffentlichen Sticker-Angriff von 2019 als Sicherheitsstudie.",
+      "title_en": "Tesla establishes a bug-bounty programme and invites security research",
+      "description_en": "Tesla runs a responsible-disclosure and bug-bounty programme and explicitly rewards external research on its vehicles. Tencent's Keen Security Lab had already remotely compromised Tesla systems several times in 2016-2018 (including the CAN bus, the Wi-Fi stack and Autopilot steering) and reported them under the programme. This policy of encouraging rather than prosecuting adversarial research legitimised the public 2019 sticker attack as a security study.",
+      "sources": [
+        "https://keenlab.tencent.com/en/2019/03/29/Tencent-Keen-Security-Lab-Experimental-Security-Research-of-Tesla-Autopilot/"
+      ]
+    },
+    {
+      "date": "2019-03-29",
+      "phase": "event",
+      "title": "Drei Sticker lenken den Tesla-Autopilot in die Gegenfahrbahn",
+      "description": "Am 29. März 2019 veröffentlichte Keen Lab ein Papier, das zeigte, wie drei kleine, für Menschen kaum auffällige Sticker auf der Fahrbahn das Spurhalten eines Tesla Model S (HW2.5) in die Gegenfahrbahn schwenken lassen. Die Forschenden bestimmten die Konfidenzschwelle des Spur-Netzes und erzeugten gezielt adversariale Markierungen. Die Studie demonstrierte zusätzlich eine Täuschung des Regen-/Scheibenwischer-Erkennungsmodells.",
+      "title_de": "Drei Sticker lenken den Tesla-Autopilot in die Gegenfahrbahn",
+      "description_de": "Am 29. März 2019 veröffentlichte Keen Lab ein Papier, das zeigte, wie drei kleine, für Menschen kaum auffällige Sticker auf der Fahrbahn das Spurhalten eines Tesla Model S (HW2.5) in die Gegenfahrbahn schwenken lassen. Die Forschenden bestimmten die Konfidenzschwelle des Spur-Netzes und erzeugten gezielt adversariale Markierungen. Die Studie demonstrierte zusätzlich eine Täuschung des Regen-/Scheibenwischer-Erkennungsmodells.",
+      "title_en": "Three stickers steer the Tesla Autopilot into oncoming traffic",
+      "description_en": "On 29 March 2019 Keen Lab published a paper showing how three small road stickers, barely noticeable to humans, could push the lane-keeping of a Tesla Model S (HW2.5) into the oncoming lane. The researchers identified the confidence threshold of the lane network and deliberately generated adversarial markings. The study additionally demonstrated deception of the rain/wiper-detection model.",
+      "sources": [
+        "https://spectrum.ieee.org/three-small-stickers-on-road-can-steer-tesla-autopilot-into-oncoming-lane"
+      ]
+    },
+    {
+      "date": "2019-04",
+      "phase": "consequences",
+      "title": "Tesla reagiert; der Fall wird zum Lehrbuchbeispiel für adversariale KI",
+      "description": "Tesla erklärte, die Forschenden hätten die physische Umgebung des Fahrzeugs verändert, was nicht dem realen Risiko entspreche, und arbeitete mit Keen Lab im Bug-Bounty-Programm zusammen. Medien wie IEEE Spectrum, MIT Technology Review und CNBC berichteten breit; Sicherheitsexperten wie Bruce Schneier nutzten den Fall als Paradebeispiel für die Verwundbarkeit von Wahrnehmungs-KI durch adversariale Beispiele - mit direkten Sicherheitsfolgen für autonomes Fahren.",
+      "title_de": "Tesla reagiert; der Fall wird zum Lehrbuchbeispiel für adversariale KI",
+      "description_de": "Tesla erklärte, die Forschenden hätten die physische Umgebung des Fahrzeugs verändert, was nicht dem realen Risiko entspreche, und arbeitete mit Keen Lab im Bug-Bounty-Programm zusammen. Medien wie IEEE Spectrum, MIT Technology Review und CNBC berichteten breit; Sicherheitsexperten wie Bruce Schneier nutzten den Fall als Paradebeispiel für die Verwundbarkeit von Wahrnehmungs-KI durch adversariale Beispiele - mit direkten Sicherheitsfolgen für autonomes Fahren.",
+      "title_en": "Tesla responds; the case becomes a textbook example of adversarial AI",
+      "description_en": "Tesla said the researchers had altered the vehicle's physical environment, which did not reflect real-world risk, and worked with Keen Lab through its bug-bounty programme. Outlets such as IEEE Spectrum, MIT Technology Review and CNBC reported widely; security experts such as Bruce Schneier used the case as a prime example of the vulnerability of perception AI to adversarial examples - with direct safety implications for autonomous driving.",
+      "sources": [
+        "https://www.technologyreview.com/2019/04/01/65915/hackers-trick-teslas-autopilot-into-veering-towards-oncoming-traffic/",
+        "https://www.schneier.com/blog/archives/2019/04/adversarial_mac.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://keenlab.tencent.com/en/2019/03/29/Tencent-Keen-Security-Lab-Experimental-Security-Research-of-Tesla-Autopilot/",

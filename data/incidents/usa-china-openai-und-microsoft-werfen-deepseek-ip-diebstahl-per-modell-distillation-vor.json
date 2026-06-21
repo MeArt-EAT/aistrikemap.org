@@ -26,9 +26,21 @@
     "data-misuse",
     "political-pressure"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz geistigen Eigentums",
+    "Verbraucherschutz",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz geistigen Eigentums",
+    "Verbraucherschutz",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection of intellectual property",
+    "Consumer protection",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -61,7 +73,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "OpenAI-API und das Distillations-Prinzip schaffen die technische Grundlage",
+      "description": "Seit 2020 stellt OpenAI seine Modelle (GPT-3, später GPT-4 und ChatGPT) über eine kommerzielle API bereit, deren Outputs sich programmatisch abrufen lassen. Parallel etablierte sich in der Forschung die 'Knowledge Distillation': Ein kleineres Modell wird auf den Antworten eines größeren Lehrer-Modells trainiert. Im Juli 2023 gründete Hedgefonds-Manager Liang Wenfeng die chinesische DeepSeek (finanziert von High-Flyer) - der Akteur, dem später genau diese Distillation vorgeworfen wird.",
+      "title_de": "OpenAI-API und das Distillations-Prinzip schaffen die technische Grundlage",
+      "description_de": "Seit 2020 stellt OpenAI seine Modelle (GPT-3, später GPT-4 und ChatGPT) über eine kommerzielle API bereit, deren Outputs sich programmatisch abrufen lassen. Parallel etablierte sich in der Forschung die 'Knowledge Distillation': Ein kleineres Modell wird auf den Antworten eines größeren Lehrer-Modells trainiert. Im Juli 2023 gründete Hedgefonds-Manager Liang Wenfeng die chinesische DeepSeek (finanziert von High-Flyer) - der Akteur, dem später genau diese Distillation vorgeworfen wird.",
+      "title_en": "The OpenAI API and the distillation principle create the technical basis",
+      "description_en": "Since 2020 OpenAI has offered its models (GPT-3, later GPT-4 and ChatGPT) via a commercial API whose outputs can be retrieved programmatically. In parallel, 'knowledge distillation' became established in research: a smaller model is trained on the responses of a larger teacher model. In July 2023 hedge-fund manager Liang Wenfeng founded the Chinese firm DeepSeek (funded by High-Flyer) - the actor later accused of exactly this distillation.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/DeepSeek"
+      ]
+    },
+    {
+      "date": "2022-03",
+      "phase": "doctrine",
+      "title": "OpenAI-Nutzungsbedingungen verbieten das Training konkurrierender Modelle",
+      "description": "OpenAIs Nutzungsbedingungen untersagen ausdrücklich, die API-Outputs zur Entwicklung von Modellen zu verwenden, die mit OpenAI konkurrieren. Zugleich verschärften die USA ab 2022 die Exportkontrollen für fortgeschrittene KI-Chips nach China. Diese beiden Regelwerke - vertraglich das Wettbewerbsverbot, politisch die Chip-Sanktionen - bilden den normativen Rahmen, vor dem OpenAI und Washington DeepSeeks Vorgehen als Umgehung deuten.",
+      "title_de": "OpenAI-Nutzungsbedingungen verbieten das Training konkurrierender Modelle",
+      "description_de": "OpenAIs Nutzungsbedingungen untersagen ausdrücklich, die API-Outputs zur Entwicklung von Modellen zu verwenden, die mit OpenAI konkurrieren. Zugleich verschärften die USA ab 2022 die Exportkontrollen für fortgeschrittene KI-Chips nach China. Diese beiden Regelwerke - vertraglich das Wettbewerbsverbot, politisch die Chip-Sanktionen - bilden den normativen Rahmen, vor dem OpenAI und Washington DeepSeeks Vorgehen als Umgehung deuten.",
+      "title_en": "OpenAI's terms of service prohibit training competing models",
+      "description_en": "OpenAI's terms of service expressly prohibit using API outputs to develop models that compete with OpenAI. At the same time, from 2022 the United States tightened export controls on advanced AI chips to China. These two rule-sets - the contractual non-compete and the political chip sanctions - form the normative frame against which OpenAI and Washington read DeepSeek's conduct as circumvention.",
+      "sources": [
+        "https://techcrunch.com/2025/01/29/microsoft-probing-whether-deepseek-improperly-used-openais-api/"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "phase": "event",
+      "title": "DeepSeek-R1 erscheint - OpenAI und Microsoft melden verdächtige Datenabflüsse",
+      "description": "Am 20. Januar 2025 veröffentlichte DeepSeek sein leistungsstarkes Reasoning-Modell R1 quelloffen; bis Ende Januar war die App die meistgeladene im US-App-Store. Microsofts Sicherheitsteams hatten bereits im Herbst 2024 auffällige Datenextraktionen über mit DeepSeek verknüpfte Konten und Dritt-Router an der OpenAI-API beobachtet. OpenAI und Microsoft leiteten eine Untersuchung ein, ob DeepSeek per Modell-Distillation gegen die Nutzungsbedingungen verstoßen habe.",
+      "title_de": "DeepSeek-R1 erscheint - OpenAI und Microsoft melden verdächtige Datenabflüsse",
+      "description_de": "Am 20. Januar 2025 veröffentlichte DeepSeek sein leistungsstarkes Reasoning-Modell R1 quelloffen; bis Ende Januar war die App die meistgeladene im US-App-Store. Microsofts Sicherheitsteams hatten bereits im Herbst 2024 auffällige Datenextraktionen über mit DeepSeek verknüpfte Konten und Dritt-Router an der OpenAI-API beobachtet. OpenAI und Microsoft leiteten eine Untersuchung ein, ob DeepSeek per Modell-Distillation gegen die Nutzungsbedingungen verstoßen habe.",
+      "title_en": "DeepSeek-R1 launches - OpenAI and Microsoft report suspicious data extraction",
+      "description_en": "On 20 January 2025 DeepSeek released its powerful reasoning model R1 as open source; by late January its app was the most downloaded in the US App Store. Microsoft's security teams had already observed, in autumn 2024, irregular data extraction through DeepSeek-linked accounts and third-party routers on the OpenAI API. OpenAI and Microsoft opened an investigation into whether DeepSeek had violated the terms of service through model distillation.",
+      "sources": [
+        "https://www.seattletimes.com/business/microsoft-probing-if-deepseek-linked-group-improperly-obtained-openai-data/"
+      ]
+    },
+    {
+      "date": "2026-02-12",
+      "phase": "consequences",
+      "title": "OpenAI bringt den Vorwurf in den US-Kongress; DeepSeek bestreitet ihn",
+      "description": "Am 12. Februar 2026 übermittelte OpenAI dem China-Select-Committee des US-Repräsentantenhauses ein Memo, das DeepSeek vorwirft, durch Distillation von ChatGPT-Outputs US-Technologie abgegriffen und Exportkontrollen umgangen zu haben. Der Vorgang verschärfte die geopolitische Debatte um KI-Wettbewerb und Sanktionen; DeepSeek wies die Vorwürfe zurück. Ein gerichtlich festgestellter Diebstahl liegt nicht vor - es bleibt bei Anschuldigung und Untersuchung.",
+      "title_de": "OpenAI bringt den Vorwurf in den US-Kongress; DeepSeek bestreitet ihn",
+      "description_de": "Am 12. Februar 2026 übermittelte OpenAI dem China-Select-Committee des US-Repräsentantenhauses ein Memo, das DeepSeek vorwirft, durch Distillation von ChatGPT-Outputs US-Technologie abgegriffen und Exportkontrollen umgangen zu haben. Der Vorgang verschärfte die geopolitische Debatte um KI-Wettbewerb und Sanktionen; DeepSeek wies die Vorwürfe zurück. Ein gerichtlich festgestellter Diebstahl liegt nicht vor - es bleibt bei Anschuldigung und Untersuchung.",
+      "title_en": "OpenAI brings the allegation to the US Congress; DeepSeek denies it",
+      "description_en": "On 12 February 2026 OpenAI submitted a memo to the US House China Select Committee accusing DeepSeek of siphoning US technology and circumventing export controls by distilling ChatGPT outputs. The episode intensified the geopolitical debate over AI competition and sanctions; DeepSeek rejected the allegations. There is no court finding of theft - the matter remains one of accusation and investigation.",
+      "sources": [
+        "https://www.thestar.com.my/tech/tech-news/2026/02/13/openai-accuses-deepseek-of-distilling-us-models-to-gain-advantage-bloomberg-news-reports"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.fdd.org/analysis/2026/02/13/openai-alleges-chinas-deepseek-stole-its-intellectual-property-to-train-its-own-models/",

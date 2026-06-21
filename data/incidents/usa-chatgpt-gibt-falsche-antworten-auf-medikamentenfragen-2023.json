@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Verbraucherschutz",
+    "körperliche Unversehrtheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Verbraucherschutz",
+    "körperliche Unversehrtheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Consumer protection",
+    "Physical integrity",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -53,7 +68,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht ChatGPT als kostenlose Forschungsvorschau",
+      "description": "OpenAI stellt ChatGPT am 30. November 2022 als kostenlose, auf GPT-3.5 basierende Forschungsvorschau bereit. Das Sprachmodell ist ein universeller Textgenerator ohne medizinische Validierung oder Anbindung an geprüfte Arzneimitteldatenbanken. Innerhalb weniger Tage erreicht der Dienst eine Million Nutzer:innen.",
+      "title_de": "OpenAI veröffentlicht ChatGPT als kostenlose Forschungsvorschau",
+      "description_de": "OpenAI stellt ChatGPT am 30. November 2022 als kostenlose, auf GPT-3.5 basierende Forschungsvorschau bereit. Das Sprachmodell ist ein universeller Textgenerator ohne medizinische Validierung oder Anbindung an geprüfte Arzneimitteldatenbanken. Innerhalb weniger Tage erreicht der Dienst eine Million Nutzer:innen.",
+      "title_en": "OpenAI launches ChatGPT as a free research preview",
+      "description_en": "On 30 November 2022 OpenAI releases ChatGPT as a free GPT-3.5-based research preview. The language model is a general-purpose text generator with no medical validation and no connection to vetted drug databases. Within days the service reaches one million users.",
+      "sources": [
+        "https://openai.com/index/chatgpt/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Verbreiteter Einsatz als allgemeiner Auskunftsassistent ohne Domänenschranke",
+      "description": "ChatGPT wird im Laufe des Jahres 2023 als Allzweck-Assistent für beliebige Fragen vermarktet und genutzt, einschließlich Gesundheits- und Medikamententhemen. Es gibt keine wirksame Sperre, die das Modell daran hindert, klinische Auskünfte mit der Autorität einer Fachquelle zu formulieren. Pauschale Haftungshinweise ersetzen keine fachliche Prüfung.",
+      "title_de": "Verbreiteter Einsatz als allgemeiner Auskunftsassistent ohne Domänenschranke",
+      "description_de": "ChatGPT wird im Laufe des Jahres 2023 als Allzweck-Assistent für beliebige Fragen vermarktet und genutzt, einschließlich Gesundheits- und Medikamententhemen. Es gibt keine wirksame Sperre, die das Modell daran hindert, klinische Auskünfte mit der Autorität einer Fachquelle zu formulieren. Pauschale Haftungshinweise ersetzen keine fachliche Prüfung.",
+      "title_en": "Widespread use as a general information assistant without domain guardrails",
+      "description_en": "Through 2023 ChatGPT is marketed and used as a general-purpose assistant for any question, including health and medication topics. No effective guardrail prevents the model from phrasing clinical information with the authority of a professional source. Blanket disclaimers do not substitute for expert review.",
+      "sources": [
+        "https://www.cnbc.com/2023/12/05/free-chatgpt-may-incorrectly-answer-drug-questions-study-says.html"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "event",
+      "title": "USA: ChatGPT gibt falsche Antworten auf Medikamentenfragen",
+      "description": "Pharmazeut:innen der Long Island University stellten der kostenlosen ChatGPT-Version 39 echte Medikamentenfragen aus dem Arzneimittel-Auskunftsdienst der Hochschule. Nur 10 der 39 Antworten waren fachlich zufriedenstellend; viele waren unvollständig oder schlicht falsch, in Einzelfällen mit potenziell gefährlichen Folgen. So verneinte ChatGPT eine real existierende Wechselwirkung zwischen dem Covid-Mittel Paxlovid und dem Blutdrucksenker Verapamil und erfand zur Untermauerung gefälschte Literaturverweise.",
+      "title_de": "USA: ChatGPT gibt falsche Antworten auf Medikamentenfragen",
+      "description_de": "Pharmazeut:innen der Long Island University stellten der kostenlosen ChatGPT-Version 39 echte Medikamentenfragen aus dem Arzneimittel-Auskunftsdienst der Hochschule. Nur 10 der 39 Antworten waren fachlich zufriedenstellend; viele waren unvollständig oder schlicht falsch, in Einzelfällen mit potenziell gefährlichen Folgen. So verneinte ChatGPT eine real existierende Wechselwirkung zwischen dem Covid-Mittel Paxlovid und dem Blutdrucksenker Verapamil und erfand zur Untermauerung gefälschte Literaturverweise.",
+      "title_en": "USA: ChatGPT gives inaccurate answers to medication questions",
+      "description_en": "Pharmacists at Long Island University posed 39 genuine medication questions from the school's drug information service to the free version of ChatGPT. Only 10 of the 39 responses were judged satisfactory; many were incomplete or outright wrong, in some cases with potentially dangerous implications. ChatGPT denied a real interaction between the Covid drug Paxlovid and the blood-pressure medication verapamil, and fabricated fake citations to back up some answers.",
+      "sources": [
+        "https://www.cnbc.com/2023/12/05/free-chatgpt-may-incorrectly-answer-drug-questions-study-says.html",
+        "https://news.ashp.org/news/ashp-news/2023/12/05/study-finds-chatgpt-provides-inaccurate-responses-to-drug-questions"
+      ]
+    },
+    {
+      "date": "2023-12-05",
+      "phase": "consequences",
+      "title": "Vorstellung auf ASHP-Tagung und Warnung an Patient:innen",
+      "description": "Die Studie wird auf der ASHP-Midyear-Tagung im Dezember 2023 vorgestellt und von CNN, CNBC und Fox aufgegriffen. Die Pharmazeut:innen warnen ausdrücklich davor, ChatGPT für Medikamentenauskünfte zu nutzen, und verweisen auf das Risiko erfundener Quellenangaben (Halluzinationen). Der Fall verstärkt Forderungen nach verlässlichen, fachlich geprüften Informationskanälen statt generischer Chatbots.",
+      "title_de": "Vorstellung auf ASHP-Tagung und Warnung an Patient:innen",
+      "description_de": "Die Studie wird auf der ASHP-Midyear-Tagung im Dezember 2023 vorgestellt und von CNN, CNBC und Fox aufgegriffen. Die Pharmazeut:innen warnen ausdrücklich davor, ChatGPT für Medikamentenauskünfte zu nutzen, und verweisen auf das Risiko erfundener Quellenangaben (Halluzinationen). Der Fall verstärkt Forderungen nach verlässlichen, fachlich geprüften Informationskanälen statt generischer Chatbots.",
+      "title_en": "Presented at ASHP meeting with a warning to patients",
+      "description_en": "The study is presented at the ASHP Midyear meeting in December 2023 and picked up by CNN, CNBC and Fox. The pharmacists explicitly warn against using ChatGPT for medication information and point to the risk of fabricated citations (hallucinations). The case strengthens calls for reliable, professionally vetted information channels rather than generic chatbots.",
+      "sources": [
+        "https://www.cnn.com/2023/12/10/health/chatgpt-medical-questions",
+        "https://news.ashp.org/news/ashp-news/2023/12/05/study-finds-chatgpt-provides-inaccurate-responses-to-drug-questions"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnbc.com/2023/12/05/free-chatgpt-may-incorrectly-answer-drug-questions-study-says.html",

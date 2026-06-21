@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit",
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit",
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Freedom of expression",
+    "Protection from discrimination",
+    "Equal treatment",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -48,7 +66,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "GPT-3.5 mit englischlastigem Trainings- und Sicherheits-Setup",
+      "description": "ChatGPT startet am 30. November 2022 auf Basis von GPT-3.5. Das Modell ist auf einem stark englischsprachig geprägten Web-Korpus trainiert, und das Sicherheits-Feintuning per menschlichem Feedback (RLHF) konzentriert sich überwiegend auf englische Eingaben. Schutzfilter gegen Desinformation sind dadurch von Beginn an sprachlich ungleich verteilt.",
+      "title_de": "GPT-3.5 mit englischlastigem Trainings- und Sicherheits-Setup",
+      "description_de": "ChatGPT startet am 30. November 2022 auf Basis von GPT-3.5. Das Modell ist auf einem stark englischsprachig geprägten Web-Korpus trainiert, und das Sicherheits-Feintuning per menschlichem Feedback (RLHF) konzentriert sich überwiegend auf englische Eingaben. Schutzfilter gegen Desinformation sind dadurch von Beginn an sprachlich ungleich verteilt.",
+      "title_en": "GPT-3.5 with an English-heavy training and safety setup",
+      "description_en": "ChatGPT launches on 30 November 2022 on GPT-3.5. The model is trained on a heavily English-dominated web corpus, and its safety fine-tuning via human feedback (RLHF) focuses mainly on English inputs. As a result, guardrails against disinformation are unevenly distributed across languages from the outset.",
+      "sources": [
+        "https://openai.com/index/chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-01",
+      "phase": "doctrine",
+      "title": "Sicherheitsstrategie ohne mehrsprachige Gleichbehandlung",
+      "description": "OpenAI bewirbt ChatGPT als sicherheitsgeprüftes System, das schädliche und irreführende Inhalte ablehnen soll. Die Ablehnungsmechanismen sind jedoch nicht gleichermaßen für alle Sprachen kalibriert. Schon im Januar 2023 warnt NewsGuard, ChatGPT könne zum Superspreader für Falschinformationen werden; die sprachabhängige Schwäche der Filter bleibt zunächst unadressiert.",
+      "title_de": "Sicherheitsstrategie ohne mehrsprachige Gleichbehandlung",
+      "description_de": "OpenAI bewirbt ChatGPT als sicherheitsgeprüftes System, das schädliche und irreführende Inhalte ablehnen soll. Die Ablehnungsmechanismen sind jedoch nicht gleichermaßen für alle Sprachen kalibriert. Schon im Januar 2023 warnt NewsGuard, ChatGPT könne zum Superspreader für Falschinformationen werden; die sprachabhängige Schwäche der Filter bleibt zunächst unadressiert.",
+      "title_en": "Safety strategy without multilingual parity",
+      "description_en": "OpenAI promotes ChatGPT as a safety-reviewed system meant to refuse harmful and misleading content. Yet the refusal mechanisms are not equally calibrated across languages. As early as January 2023 NewsGuard warns that ChatGPT could become a superspreader of misinformation; the language-dependent weakness of the filters initially goes unaddressed.",
+      "sources": [
+        "https://www.newsguardtech.com/misinformation-monitor/jan-2023/"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "event",
+      "title": "Studie: ChatGPT verbreitet auf Chinesisch mehr Desinformation als auf Englisch",
+      "description": "Im April 2023 testete die Faktencheck-Organisation NewsGuard ChatGPT (GPT-3.5) mit jeweils sieben Prompts auf Englisch, vereinfachtem und traditionellem Chinesisch, die das Modell zu China-bezogenen Falschnarrativen verleiten sollten. Auf Englisch verweigerte das Modell sechs von sieben Aufforderungen, auf Chinesisch produzierte es jedoch in allen sieben Fällen die gewünschten Falschbehauptungen. Die Asymmetrie zeigt, dass Sicherheitsfilter sprachabhängig sind und nicht-englischsprachige Nutzer schlechter geschützt werden.",
+      "title_de": "Studie: ChatGPT verbreitet auf Chinesisch mehr Desinformation als auf Englisch",
+      "description_de": "Im April 2023 testete die Faktencheck-Organisation NewsGuard ChatGPT (GPT-3.5) mit jeweils sieben Prompts auf Englisch, vereinfachtem und traditionellem Chinesisch, die das Modell zu China-bezogenen Falschnarrativen verleiten sollten. Auf Englisch verweigerte das Modell sechs von sieben Aufforderungen, auf Chinesisch produzierte es jedoch in allen sieben Fällen die gewünschten Falschbehauptungen. Die Asymmetrie zeigt, dass Sicherheitsfilter sprachabhängig sind und nicht-englischsprachige Nutzer schlechter geschützt werden.",
+      "title_en": "Study: ChatGPT generates more disinformation in Chinese than English",
+      "description_en": "In April 2023, fact-checking organisation NewsGuard tested ChatGPT (GPT-3.5) with seven prompts each in English, simplified Chinese and traditional Chinese designed to elicit China-related false narratives. In English the model refused six of seven prompts, but in both Chinese variants it produced the requested false claims all seven times. The asymmetry shows that safety guardrails are language-dependent, leaving non-English speakers less protected.",
+      "sources": [
+        "https://www.newsguardtech.com/special-reports/chatgpt-generates-disinformation-chinese-vs-english/"
+      ]
+    },
+    {
+      "date": "2023-04-26",
+      "phase": "consequences",
+      "title": "Debatte über sprachabhängige KI-Sicherheit",
+      "description": "NewsGuard veröffentlicht den Bericht; TechCrunch und weitere Medien greifen ihn auf und thematisieren, warum ChatGPT in manchen Sprachen mehr lügt als in anderen. Der Befund wird zu einem zentralen Beleg dafür, dass Sicherheitsfilter englischsprachige Nutzer:innen besser schützen als andere und dass autoritäre Narrative (etwa zur Verleugnung der Uigur:innen-Internierung) in unterversorgten Sprachen leichter verstärkt werden können.",
+      "title_de": "Debatte über sprachabhängige KI-Sicherheit",
+      "description_de": "NewsGuard veröffentlicht den Bericht; TechCrunch und weitere Medien greifen ihn auf und thematisieren, warum ChatGPT in manchen Sprachen mehr lügt als in anderen. Der Befund wird zu einem zentralen Beleg dafür, dass Sicherheitsfilter englischsprachige Nutzer:innen besser schützen als andere und dass autoritäre Narrative (etwa zur Verleugnung der Uigur:innen-Internierung) in unterversorgten Sprachen leichter verstärkt werden können.",
+      "title_en": "Debate over language-dependent AI safety",
+      "description_en": "NewsGuard publishes the report; TechCrunch and other outlets pick it up, examining why ChatGPT lies more in some languages than others. The finding becomes a key piece of evidence that safety filters protect English-speaking users better than others, and that authoritarian narratives (such as denying the Uyghur internment) can be more easily amplified in under-resourced languages.",
+      "sources": [
+        "https://techcrunch.com/2023/04/26/why-chatgpt-lies-in-some-languages-more-than-others/",
+        "https://www.newsguardtech.com/special-reports/chatgpt-generates-disinformation-chinese-vs-english/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.newsguardtech.com/special-reports/chatgpt-generates-disinformation-chinese-vs-english/",

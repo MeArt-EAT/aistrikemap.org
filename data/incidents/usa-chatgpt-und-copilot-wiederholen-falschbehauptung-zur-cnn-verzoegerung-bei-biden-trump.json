@@ -26,9 +26,24 @@
     "data-misuse",
     "political-pressure"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation",
+    "Pressefreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation",
+    "Pressefreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Protection from manipulation",
+    "Freedom of the press",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -51,7 +66,63 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-05-13",
+      "phase": "infrastructure",
+      "title": "GPT-4o und web-angebundene Copilot-Suche werden ausgerollt",
+      "description": "OpenAI stellt am 13. Mai 2024 GPT-4o vor; wenige Tage später integriert Microsoft das Modell in Copilot. Copilot kombiniert über einen Orchestrator den Bing-Suchindex mit dem Sprachmodell und kann so aktuelle Web-Inhalte in Antworten einfließen lassen. Damit greifen die Chatbots auf den offenen, ungeprüften Social-Media- und News-Strom zu, ohne dessen Wahrheitsgehalt zuverlässig zu bewerten.",
+      "title_de": "GPT-4o und web-angebundene Copilot-Suche werden ausgerollt",
+      "description_de": "OpenAI stellt am 13. Mai 2024 GPT-4o vor; wenige Tage später integriert Microsoft das Modell in Copilot. Copilot kombiniert über einen Orchestrator den Bing-Suchindex mit dem Sprachmodell und kann so aktuelle Web-Inhalte in Antworten einfließen lassen. Damit greifen die Chatbots auf den offenen, ungeprüften Social-Media- und News-Strom zu, ohne dessen Wahrheitsgehalt zuverlässig zu bewerten.",
+      "title_en": "GPT-4o and web-connected Copilot search are rolled out",
+      "description_en": "OpenAI unveils GPT-4o on 13 May 2024; days later Microsoft integrates the model into Copilot. Via an orchestrator, Copilot combines the Bing search index with the language model, letting current web content flow into answers. The chatbots thus draw on the open, unvetted social-media and news stream without reliably assessing its truthfulness.",
+      "sources": [
+        "https://openai.com/index/hello-gpt-4o/",
+        "https://en.wikipedia.org/wiki/Microsoft_Copilot"
+      ]
+    },
+    {
+      "date": "2024-06-27",
+      "phase": "doctrine",
+      "title": "Virale Falschbehauptung zur CNN-Debattenverzögerung",
+      "description": "Am Tag der ersten TV-Debatte verbreitet sich auf X die Behauptung, CNN werde die Sendung mit ein- bis zweiminütiger Verzögerung ausstrahlen, um sie zu bearbeiten. Der Ausgangspost erreicht über zwei Millionen Aufrufe und wird von prominenten pro-Trump-Konten geteilt. CNN dementiert die Behauptung noch vor Debattenbeginn öffentlich als falsch.",
+      "title_de": "Virale Falschbehauptung zur CNN-Debattenverzögerung",
+      "description_de": "Am Tag der ersten TV-Debatte verbreitet sich auf X die Behauptung, CNN werde die Sendung mit ein- bis zweiminütiger Verzögerung ausstrahlen, um sie zu bearbeiten. Der Ausgangspost erreicht über zwei Millionen Aufrufe und wird von prominenten pro-Trump-Konten geteilt. CNN dementiert die Behauptung noch vor Debattenbeginn öffentlich als falsch.",
+      "title_en": "Viral false claim about a CNN debate delay",
+      "description_en": "On the day of the first televised debate, a claim spreads on X that CNN would air the broadcast with a one- to two-minute delay to edit it. The original post tops two million views and is shared by prominent pro-Trump accounts. CNN publicly denies the claim as false before the debate even begins.",
+      "sources": [
+        "https://www.politifact.com/factchecks/2024/jun/28/tweets/cnn-knocks-down-rumor-of-longer-tv-delay-at-biden/",
+        "https://www.snopes.com/fact-check/cnn-debate-delay/"
+      ]
+    },
+    {
+      "date": "2024-06-27",
+      "phase": "event",
+      "title": "USA: ChatGPT und Copilot wiederholen Falschbehauptung zur CNN-Verzögerung bei Biden-Trump-Debatte",
+      "description": "Wenige Stunden vor der ersten TV-Debatte zwischen Joe Biden und Donald Trump auf CNN testete NBC News die Antworten von OpenAIs ChatGPT (4o) und Microsofts Copilot zu der Falschbehauptung, CNN werde die Sendung mit einer ein- bis zweiminütigen Verzögerung statt der üblichen sieben Sekunden ausstrahlen. Beide Bots bestätigten die zuvor von CNN bereits öffentlich dementierte Falschbehauptung und reicherten sie mit zusätzlichen Details an. Meta AI und xAI Grok antworteten korrekt; Google Gemini verweigerte die Antwort.",
+      "title_de": "USA: ChatGPT und Copilot wiederholen Falschbehauptung zur CNN-Verzögerung bei Biden-Trump-Debatte",
+      "description_de": "Wenige Stunden vor der ersten TV-Debatte zwischen Joe Biden und Donald Trump auf CNN testete NBC News die Antworten von OpenAIs ChatGPT (4o) und Microsofts Copilot zu der Falschbehauptung, CNN werde die Sendung mit einer ein- bis zweiminütigen Verzögerung statt der üblichen sieben Sekunden ausstrahlen. Beide Bots bestätigten die zuvor von CNN bereits öffentlich dementierte Falschbehauptung und reicherten sie mit zusätzlichen Details an. Meta AI und xAI Grok antworteten korrekt; Google Gemini verweigerte die Antwort.",
+      "title_en": "USA: ChatGPT and Copilot repeat false claim about CNN delay during Biden-Trump debate",
+      "description_en": "A few hours before the first televised CNN debate between Joe Biden and Donald Trump, NBC News tested OpenAI's ChatGPT (4o) and Microsoft's Copilot with the false claim that CNN would air the debate with a one- to two-minute delay instead of the standard seven-second one. Both bots confirmed the claim - which CNN had already publicly denied - and added fabricated detail. Meta AI and xAI's Grok answered correctly; Google's Gemini declined to answer.",
+      "sources": [
+        "https://www.nbcnews.com/tech/internet/openai-chatgpt-microsoft-copilot-fallse-claim-presidential-debate-rcna159353"
+      ]
+    },
+    {
+      "date": "2024-06-28",
+      "phase": "consequences",
+      "title": "Berichterstattung über unzuverlässige KI vor Wahlen",
+      "description": "NBC News und Inc. berichten über den Vorfall als Beleg dafür, dass führende Chatbots virale Falschbehauptungen rund um die Wahl 2024 ungeprüft verstärken können. Der Fall verdeutlicht, wie web-angebundene KI-Systeme aktuelle Desinformation aufgreifen und mit erfundenen Details glaubwürdiger erscheinen lassen, noch bevor Faktenchecks greifen. Er befeuert die Forderung nach belastbaren Schutzmechanismen für zeitkritische, politisch sensible Anfragen.",
+      "title_de": "Berichterstattung über unzuverlässige KI vor Wahlen",
+      "description_de": "NBC News und Inc. berichten über den Vorfall als Beleg dafür, dass führende Chatbots virale Falschbehauptungen rund um die Wahl 2024 ungeprüft verstärken können. Der Fall verdeutlicht, wie web-angebundene KI-Systeme aktuelle Desinformation aufgreifen und mit erfundenen Details glaubwürdiger erscheinen lassen, noch bevor Faktenchecks greifen. Er befeuert die Forderung nach belastbaren Schutzmechanismen für zeitkritische, politisch sensible Anfragen.",
+      "title_en": "Coverage of unreliable AI ahead of elections",
+      "description_en": "NBC News and Inc. report on the incident as evidence that leading chatbots can amplify viral false claims around the 2024 election without checking them. The case highlights how web-connected AI systems pick up current disinformation and make it look more credible with fabricated detail before fact-checks take effect. It fuels demands for robust safeguards on time-critical, politically sensitive queries.",
+      "sources": [
+        "https://www.nbcnews.com/tech/internet/openai-chatgpt-microsoft-copilot-fallse-claim-presidential-debate-rcna159353",
+        "https://www.inc.com/kit-eaton/dont-trust-ais-on-copilot-chatgpt-misinfo-on-first-presidential-debate-swirled.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.nbcnews.com/tech/internet/openai-chatgpt-microsoft-copilot-fallse-claim-presidential-debate-rcna159353",
