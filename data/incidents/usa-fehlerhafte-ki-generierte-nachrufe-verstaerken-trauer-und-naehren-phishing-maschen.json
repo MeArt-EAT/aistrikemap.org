@@ -25,9 +25,30 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Persönlichkeitsrecht",
+    "Schutz personenbezogener Daten",
+    "Recht auf zutreffende Information"
+  ],
+  "asm:affectedRights_de": [
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Persönlichkeitsrecht",
+    "Schutz personenbezogener Daten",
+    "Recht auf zutreffende Information"
+  ],
+  "asm:affectedRights_en": [
+    "Human dignity",
+    "Protection from manipulation",
+    "Consumer protection",
+    "Personality rights",
+    "Protection of personal data",
+    "Right to accurate information"
+  ],
   "asm:actors": [
     {
       "name": "BNN Breaking",
@@ -53,7 +74,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Generative-KI-Pipelines befeuern automatisierte Content-Farmen",
+      "description": "Breit verfügbare generative Textmodelle ermöglichten es, fremde Meldungen in Sekunden umzuschreiben und in hohem Volumen zu publizieren. Content-Farmen wie BNN Breaking überwachten Suchtrends und produzierten daraus laufend Artikel, die über Ad-Netzwerke monetarisiert wurden - die technische Grundlage für später industriell erzeugte Fake-Nachrufe.",
+      "title_de": "Generative-KI-Pipelines befeuern automatisierte Content-Farmen",
+      "description_de": "Breit verfügbare generative Textmodelle ermöglichten es, fremde Meldungen in Sekunden umzuschreiben und in hohem Volumen zu publizieren. Content-Farmen wie BNN Breaking überwachten Suchtrends und produzierten daraus laufend Artikel, die über Ad-Netzwerke monetarisiert wurden - die technische Grundlage für später industriell erzeugte Fake-Nachrufe.",
+      "title_en": "Generative-AI pipelines power automated content farms",
+      "description_en": "Widely available generative text models made it possible to rewrite other outlets' stories in seconds and publish them at high volume. Content farms such as BNN Breaking monitored search trends and continuously produced articles monetised through ad networks - the technical basis for later industrially generated fake obituaries.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BNN_Breaking"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "doctrine",
+      "title": "Klick- und Werbemodell belohnt unverifizierte Todesmeldungen",
+      "description": "Das Geschäftsmodell der Betreiber bestand darin, Google-Trends nach Begriffen wie 'obituary', 'accident' oder 'death' zu durchsuchen und automatisch Beiträge zu erzeugen, die wenige Cent Werbeeinnahmen pro Monat brachten. Verifikation war wirtschaftlich unerwünscht; Reichweite zählte mehr als Richtigkeit. BNN-Inhalte wurden zeitweise sogar von Microsofts MSN übernommen.",
+      "title_de": "Klick- und Werbemodell belohnt unverifizierte Todesmeldungen",
+      "description_de": "Das Geschäftsmodell der Betreiber bestand darin, Google-Trends nach Begriffen wie 'obituary', 'accident' oder 'death' zu durchsuchen und automatisch Beiträge zu erzeugen, die wenige Cent Werbeeinnahmen pro Monat brachten. Verifikation war wirtschaftlich unerwünscht; Reichweite zählte mehr als Richtigkeit. BNN-Inhalte wurden zeitweise sogar von Microsofts MSN übernommen.",
+      "title_en": "Click-and-ad model rewards unverified death announcements",
+      "description_en": "The operators' business model was to scan Google Trends for terms like 'obituary', 'accident' or 'death' and automatically generate posts earning a few cents in ad revenue per month. Verification was economically undesirable; reach mattered more than accuracy. BNN content was at times even picked up by Microsoft's MSN.",
+      "sources": [
+        "https://news.ycombinator.com/item?id=40650173"
+      ]
+    },
+    {
+      "date": "2024-03",
+      "phase": "event",
+      "title": "Welle fehlerhafter KI-Nachrufe trifft auch lebende Personen",
+      "description": "CNN, Fast Company und weitere Medien dokumentierten eine Welle KI-generierter Nachrufe auf Seiten wie BNN, FreshersLive, The Thaiger und Obitsupdate. Die Texte enthielten falsche Namen, erfundene Details oder meldeten den Tod noch lebender Menschen - etwa der LA-Times-Journalistin Deborah Vankin, der KI-generierte 'Nachrichten-Clips' samt Trauer-Bildern gewidmet wurden.",
+      "title_de": "Welle fehlerhafter KI-Nachrufe trifft auch lebende Personen",
+      "description_de": "CNN, Fast Company und weitere Medien dokumentierten eine Welle KI-generierter Nachrufe auf Seiten wie BNN, FreshersLive, The Thaiger und Obitsupdate. Die Texte enthielten falsche Namen, erfundene Details oder meldeten den Tod noch lebender Menschen - etwa der LA-Times-Journalistin Deborah Vankin, der KI-generierte 'Nachrichten-Clips' samt Trauer-Bildern gewidmet wurden.",
+      "title_en": "Wave of faulty AI obituaries even targets living people",
+      "description_en": "CNN, Fast Company and other outlets documented a wave of AI-generated obituaries on sites such as BNN, FreshersLive, The Thaiger and Obitsupdate. The texts contained wrong names, invented details or announced the deaths of living people - including LA Times journalist Deborah Vankin, for whom AI-generated 'news clips' with mourning imagery were produced.",
+      "sources": [
+        "https://www.cnn.com/2024/03/19/us/fake-obituary-scams-ai-cec"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "phase": "consequences",
+      "title": "Verstärkte Trauer und neue Phishing-Angriffsfläche",
+      "description": "Angehörige fanden frei erfundene oder fehlerhafte Nachrufe ihrer Verstorbenen, was die Trauer zusätzlich belastete. Sicherheitsforscher (u.a. Blackbird.AI) warnten, dass die Fake-Nachrufe gezielt für Phishing und Schadsoftware-Verbreitung genutzt werden, indem sie Trauernde auf manipulierte Spenden- oder Gedenkseiten lockten.",
+      "title_de": "Verstärkte Trauer und neue Phishing-Angriffsfläche",
+      "description_de": "Angehörige fanden frei erfundene oder fehlerhafte Nachrufe ihrer Verstorbenen, was die Trauer zusätzlich belastete. Sicherheitsforscher (u.a. Blackbird.AI) warnten, dass die Fake-Nachrufe gezielt für Phishing und Schadsoftware-Verbreitung genutzt werden, indem sie Trauernde auf manipulierte Spenden- oder Gedenkseiten lockten.",
+      "title_en": "Compounded grief and a new phishing attack surface",
+      "description_en": "Bereaved families found fabricated or error-strewn obituaries of their deceased, deepening their grief. Security researchers (including Blackbird.AI) warned that the fake obituaries were deliberately used for phishing and malware distribution, luring mourners to manipulated donation or memorial pages.",
+      "sources": [
+        "https://blackbird.ai/blog/ai-powered-obituary-scams-targeted-phishing/"
+      ]
+    },
+    {
+      "date": "2024-05",
+      "phase": "consequences",
+      "title": "BNN-Abschaltung und Google-Spam-Maßnahmen",
+      "description": "Nach der New-York-Times-Enthüllung über BNN Breaking als KI-Content-Sham stellte das Angebot seinen Nachrichtenbetrieb ein; ein kurzlebiger Nachfolger (Trimfeed) wurde ebenfalls offline genommen. Google entindexierte zahlreiche der Seiten und verschärfte seine Spam-Richtlinien, woraufhin viele der Fake-Nachrufe aus den Suchergebnissen verschwanden.",
+      "title_de": "BNN-Abschaltung und Google-Spam-Maßnahmen",
+      "description_de": "Nach der New-York-Times-Enthüllung über BNN Breaking als KI-Content-Sham stellte das Angebot seinen Nachrichtenbetrieb ein; ein kurzlebiger Nachfolger (Trimfeed) wurde ebenfalls offline genommen. Google entindexierte zahlreiche der Seiten und verschärfte seine Spam-Richtlinien, woraufhin viele der Fake-Nachrufe aus den Suchergebnissen verschwanden.",
+      "title_en": "BNN shutdown and Google spam measures",
+      "description_en": "After the New York Times exposed BNN Breaking as an AI content sham, the outlet shut down its news operation; a short-lived successor (Trimfeed) was also taken offline. Google de-indexed many of the sites and tightened its spam policies, after which many of the fake obituaries disappeared from search results.",
+      "sources": [
+        "https://news.slashdot.org/story/24/06/11/2231220/the-rise-and-fall-of-bnn-breaking-an-ai-generated-news-outlet"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnn.com/2024/03/19/us/fake-obituary-scams-ai-cec/index.html",

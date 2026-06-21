@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Diskreditierung",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Diskreditierung",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Consumer protection",
+    "Protection from defamation",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "US Federal Trade Commission (FTC)",
@@ -53,7 +71,58 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht ChatGPT für die breite Öffentlichkeit",
+      "description": "Am 30. November 2022 stellt OpenAI ChatGPT als frei zugänglichen Chatbot vor. Das auf großen Textmengen trainierte Sprachmodell erzeugt flüssige Antworten, kann aber faktisch falsche oder erfundene Aussagen über Personen treffen. Binnen Wochen erreicht der Dienst Millionen Nutzer und verarbeitet deren Eingaben sowie Zahlungsdaten der Plus-Abonnenten.",
+      "title_de": "OpenAI veröffentlicht ChatGPT für die breite Öffentlichkeit",
+      "description_de": "Am 30. November 2022 stellt OpenAI ChatGPT als frei zugänglichen Chatbot vor. Das auf großen Textmengen trainierte Sprachmodell erzeugt flüssige Antworten, kann aber faktisch falsche oder erfundene Aussagen über Personen treffen. Binnen Wochen erreicht der Dienst Millionen Nutzer und verarbeitet deren Eingaben sowie Zahlungsdaten der Plus-Abonnenten.",
+      "title_en": "OpenAI releases ChatGPT to the general public",
+      "description_en": "On 30 November 2022 OpenAI launches ChatGPT as a freely accessible chatbot. The language model, trained on large amounts of text, produces fluent answers but can make factually false or fabricated statements about individuals. Within weeks the service reaches millions of users and processes their inputs as well as the payment data of Plus subscribers.",
+      "sources": []
+    },
+    {
+      "date": "2023-03-20",
+      "phase": "infrastructure",
+      "title": "Datenpanne legt Chatverläufe und Zahlungsdaten offen",
+      "description": "Am 20. März 2023 führt ein interner Software-Fehler dazu, dass Chatverläufe und Teile der Zahlungsdaten von ChatGPT-Plus-Abonnenten während eines mehrstündigen Fensters für andere Nutzer sichtbar werden. Der Vorfall macht Datensicherheits-Schwächen öffentlich und wird später zentraler Prüfpunkt der Behörden.",
+      "title_de": "Datenpanne legt Chatverläufe und Zahlungsdaten offen",
+      "description_de": "Am 20. März 2023 führt ein interner Software-Fehler dazu, dass Chatverläufe und Teile der Zahlungsdaten von ChatGPT-Plus-Abonnenten während eines mehrstündigen Fensters für andere Nutzer sichtbar werden. Der Vorfall macht Datensicherheits-Schwächen öffentlich und wird später zentraler Prüfpunkt der Behörden.",
+      "title_en": "Data breach exposes chat histories and payment data",
+      "description_en": "On 20 March 2023 an internal software bug causes chat histories and parts of the payment data of ChatGPT Plus subscribers to become visible to other users during a window of several hours. The incident exposes data-security weaknesses and later becomes a central point of regulatory scrutiny.",
+      "sources": [
+        "https://techcrunch.com/2023/03/31/chatgpt-blocked-italy/"
+      ]
+    },
+    {
+      "date": "2023-07-13",
+      "phase": "event",
+      "title": "FTC stellt OpenAI eine zivilrechtliche Auskunftsanordnung zu",
+      "description": "Am 13. Juli 2023 berichtet die Washington Post, dass die FTC OpenAI eine rund 20-seitige Civil Investigative Demand zugestellt hat. Geprüft wird, ob das Unternehmen unlautere oder irreführende Datenschutz- und Datensicherheitspraktiken verfolgte und Verbrauchern schadete, etwa durch falsche, rufschädigende Aussagen über Personen. Rechtsgrundlage ist Abschnitt 5 des FTC Act.",
+      "title_de": "FTC stellt OpenAI eine zivilrechtliche Auskunftsanordnung zu",
+      "description_de": "Am 13. Juli 2023 berichtet die Washington Post, dass die FTC OpenAI eine rund 20-seitige Civil Investigative Demand zugestellt hat. Geprüft wird, ob das Unternehmen unlautere oder irreführende Datenschutz- und Datensicherheitspraktiken verfolgte und Verbrauchern schadete, etwa durch falsche, rufschädigende Aussagen über Personen. Rechtsgrundlage ist Abschnitt 5 des FTC Act.",
+      "title_en": "FTC serves OpenAI a civil investigative demand",
+      "description_en": "On 13 July 2023 The Washington Post reports that the FTC has served OpenAI a roughly 20-page civil investigative demand. It examines whether the company pursued unfair or deceptive privacy and data-security practices and harmed consumers, for example through false, reputationally damaging statements about individuals. The legal basis is Section 5 of the FTC Act.",
+      "sources": [
+        "https://www.washingtonpost.com/technology/2023/07/13/ftc-openai-chatgpt-sam-altman-lina-khan/"
+      ]
+    },
+    {
+      "date": "2023-09",
+      "phase": "consequences",
+      "title": "Untersuchung signalisiert verschärfte KI-Aufsicht in den USA",
+      "description": "Die Untersuchung gilt als erstes großes US-Verfahren gegen einen Generative-KI-Anbieter und setzt die Branche unter Aufsichts-Druck. Anwaltskanzleien und Beobachter werten die Auskunftsanordnung als Signal, dass die FTC bestehendes Verbraucherschutzrecht auf KI-Produkte anwendet. Die Verfahrensschritte können in Bußgelder oder eine Unterlassungs-Vereinbarung münden.",
+      "title_de": "Untersuchung signalisiert verschärfte KI-Aufsicht in den USA",
+      "description_de": "Die Untersuchung gilt als erstes großes US-Verfahren gegen einen Generative-KI-Anbieter und setzt die Branche unter Aufsichts-Druck. Anwaltskanzleien und Beobachter werten die Auskunftsanordnung als Signal, dass die FTC bestehendes Verbraucherschutzrecht auf KI-Produkte anwendet. Die Verfahrensschritte können in Bußgelder oder eine Unterlassungs-Vereinbarung münden.",
+      "title_en": "Investigation signals tougher AI oversight in the US",
+      "description_en": "The investigation is regarded as the first major US case against a generative-AI provider and puts the industry under regulatory pressure. Law firms and observers read the demand as a signal that the FTC is applying existing consumer-protection law to AI products. The proceedings may lead to fines or a consent decree.",
+      "sources": [
+        "https://www.theregreview.org/2023/09/25/lin-openai-investigation-puts-ai-companies-on-notice/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.washingtonpost.com/technology/2023/07/13/ftc-openai-chatgpt-sam-altman-lina-khan/",

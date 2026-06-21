@@ -26,9 +26,27 @@
     "data-misuse",
     "political-pressure"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf freie Wahlen",
+    "Recht auf Zugang zu Information",
+    "Schutz vor Manipulation",
+    "Politische Teilhabe",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf freie Wahlen",
+    "Recht auf Zugang zu Information",
+    "Schutz vor Manipulation",
+    "Politische Teilhabe",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to free elections",
+    "Right of access to information",
+    "Protection from manipulation",
+    "Political participation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Google; Anthropic; Meta; Mistral; OpenAI",
@@ -53,7 +71,59 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Generative Sprachmodelle werden breit verfügbar",
+      "description": "Bis 2023 stellen mehrere Anbieter leistungsstarke generative Sprachmodelle bereit, darunter Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2 und Mistral Mixtral. Die Modelle erzeugen flüssige Antworten auf beliebige Fragen, sind aber nicht gegen erfundene Fakten gefeit und werden zunehmend als Informationsquelle genutzt, auch zu politischen Themen.",
+      "title_de": "Generative Sprachmodelle werden breit verfügbar",
+      "description_de": "Bis 2023 stellen mehrere Anbieter leistungsstarke generative Sprachmodelle bereit, darunter Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2 und Mistral Mixtral. Die Modelle erzeugen flüssige Antworten auf beliebige Fragen, sind aber nicht gegen erfundene Fakten gefeit und werden zunehmend als Informationsquelle genutzt, auch zu politischen Themen.",
+      "title_en": "Generative language models become widely available",
+      "description_en": "By 2023 several providers offer powerful generative language models, including Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2 and Mistral Mixtral. The models produce fluent answers to any question but are not immune to fabricated facts and are increasingly used as a source of information, including on political topics.",
+      "sources": []
+    },
+    {
+      "date": "2024-01",
+      "phase": "doctrine",
+      "title": "AI Democracy Projects testen Modelle mit Wahlleiter:innen",
+      "description": "Im Januar 2024 bringen die AI Democracy Projects, eine Kooperation von Proof News und dem Science, Technology, and Social Values Lab des Institute for Advanced Study unter Julia Angwin und Alondra Nelson, mehr als 40 staatliche und lokale Wahlleiter:innen sowie KI-Fachleute zusammen. Sie prüfen systematisch die Antworten von fünf führenden KI-Modellen auf englischsprachige Wahlfragen.",
+      "title_de": "AI Democracy Projects testen Modelle mit Wahlleiter:innen",
+      "description_de": "Im Januar 2024 bringen die AI Democracy Projects, eine Kooperation von Proof News und dem Science, Technology, and Social Values Lab des Institute for Advanced Study unter Julia Angwin und Alondra Nelson, mehr als 40 staatliche und lokale Wahlleiter:innen sowie KI-Fachleute zusammen. Sie prüfen systematisch die Antworten von fünf führenden KI-Modellen auf englischsprachige Wahlfragen.",
+      "title_en": "AI Democracy Projects test models with election officials",
+      "description_en": "In January 2024 the AI Democracy Projects, a collaboration between Proof News and the Science, Technology, and Social Values Lab at the Institute for Advanced Study led by Julia Angwin and Alondra Nelson, convene more than 40 state and local election officials and AI experts. They systematically evaluate the answers of five leading AI models to English-language election questions.",
+      "sources": [
+        "https://www.proofnews.org/how-we-tested-leading-ai-models-performance-on-election-queries/"
+      ]
+    },
+    {
+      "date": "2024-02-27",
+      "phase": "event",
+      "title": "Studie: rund die Hälfte der KI-Wahlantworten ungenau",
+      "description": "Am 27. Februar 2024 veröffentlicht Proof News die Ergebnisse: Rund die Hälfte der Antworten gilt als ungenau, ein erheblicher Teil als schädlich, unvollständig oder verzerrt. Auf eine Frage zur Stimmabgabe per SMS in Kalifornien empfiehlt ein Modell den nicht existierenden Dienst Vote by Text. Kein Modell kann korrekt angeben, dass Wahlkampf-Kleidung wie eine MAGA-Kappe an Wahllokalen in Texas verboten ist.",
+      "title_de": "Studie: rund die Hälfte der KI-Wahlantworten ungenau",
+      "description_de": "Am 27. Februar 2024 veröffentlicht Proof News die Ergebnisse: Rund die Hälfte der Antworten gilt als ungenau, ein erheblicher Teil als schädlich, unvollständig oder verzerrt. Auf eine Frage zur Stimmabgabe per SMS in Kalifornien empfiehlt ein Modell den nicht existierenden Dienst Vote by Text. Kein Modell kann korrekt angeben, dass Wahlkampf-Kleidung wie eine MAGA-Kappe an Wahllokalen in Texas verboten ist.",
+      "title_en": "Study: about half of AI election answers inaccurate",
+      "description_en": "On 27 February 2024 Proof News publishes the results: about half of the answers are judged inaccurate, with a substantial share harmful, incomplete or biased. Asked about SMS voting in California, one model recommends the non-existent service Vote by Text. No model can correctly state that campaign attire such as a MAGA hat is banned at polling places in Texas.",
+      "sources": [
+        "https://www.proofnews.org/seeking-election-information-dont-trust-ai/"
+      ]
+    },
+    {
+      "date": "2024-03-12",
+      "phase": "consequences",
+      "title": "Google beschränkt Wahl-Antworten seines Gemini-Chatbots",
+      "description": "Am 12. März 2024 beginnt Google, wahlbezogene Anfragen an seinen Gemini-Chatbot global einzuschränken. Auf Fragen zu Wahlen verweist Gemini auf die reguläre Google-Suche statt zu antworten. Die Maßnahme folgt der öffentlichen Kritik an ungenauen KI-Wahlauskünften und fällt mit dem freiwilligen Münchner Tech-Accord vom Februar 2024 zusammen, in dem große Anbieter Selbstverpflichtungen gegen täuschende Wahl-KI eingingen.",
+      "title_de": "Google beschränkt Wahl-Antworten seines Gemini-Chatbots",
+      "description_de": "Am 12. März 2024 beginnt Google, wahlbezogene Anfragen an seinen Gemini-Chatbot global einzuschränken. Auf Fragen zu Wahlen verweist Gemini auf die reguläre Google-Suche statt zu antworten. Die Maßnahme folgt der öffentlichen Kritik an ungenauen KI-Wahlauskünften und fällt mit dem freiwilligen Münchner Tech-Accord vom Februar 2024 zusammen, in dem große Anbieter Selbstverpflichtungen gegen täuschende Wahl-KI eingingen.",
+      "title_en": "Google restricts election answers from its Gemini chatbot",
+      "description_en": "On 12 March 2024 Google begins globally restricting election-related queries to its Gemini chatbot. For questions about elections Gemini directs users to regular Google Search instead of answering. The move follows public criticism of inaccurate AI election answers and coincides with the voluntary Munich tech accord of February 2024 in which major providers made commitments against deceptive election AI.",
+      "sources": [
+        "https://techcrunch.com/2024/03/12/google-gemini-election-related-queries/",
+        "https://www.npr.org/2024/02/16/1232001889/ai-deepfakes-election-tech-accord"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.proofnews.org/seeking-election-information-dont-trust-ai/",

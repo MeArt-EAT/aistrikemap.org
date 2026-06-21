@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Zugang zu verlässlicher Information",
+    "Schutz vor Manipulation",
+    "Recht auf Gesundheit",
+    "Meinungs- und Informationsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Zugang zu verlässlicher Information",
+    "Schutz vor Manipulation",
+    "Recht auf Gesundheit",
+    "Meinungs- und Informationsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to access reliable information",
+    "Protection from manipulation",
+    "Right to health",
+    "Freedom of opinion and information"
+  ],
   "asm:actors": [
     {
       "name": "Meta / Facebook",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Facebook stellt News Feed auf engagement-basiertes Ranking um",
+      "description": "Mit dem Update 'Meaningful Social Interactions' bewertete Facebooks News-Feed-Algorithmus Beiträge ab 2018 stark nach Interaktionen wie Kommentaren und Reshares. Um Schäden zu begrenzen, baute das Unternehmen ein Herunterstufungs-System ('downranking') ein, das von Faktenprüfern markierte oder als riskant eingestufte Inhalte in der Reichweite drosseln sollte.",
+      "title_de": "Facebook stellt News Feed auf engagement-basiertes Ranking um",
+      "description_de": "Mit dem Update 'Meaningful Social Interactions' bewertete Facebooks News-Feed-Algorithmus Beiträge ab 2018 stark nach Interaktionen wie Kommentaren und Reshares. Um Schäden zu begrenzen, baute das Unternehmen ein Herunterstufungs-System ('downranking') ein, das von Faktenprüfern markierte oder als riskant eingestufte Inhalte in der Reichweite drosseln sollte.",
+      "title_en": "Facebook shifts the News Feed to engagement-based ranking",
+      "description_en": "With the 'Meaningful Social Interactions' update, Facebook's News Feed algorithm from 2018 weighted posts heavily by interactions such as comments and reshares. To limit harm, the company built a downranking system meant to throttle the reach of content flagged by fact-checkers or rated as risky.",
+      "sources": [
+        "https://www.washingtonpost.com/technology/interactive/2021/how-facebook-algorithm-works/"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "doctrine",
+      "title": "Downranking als zentrale Integritäts-Maßnahme - bei stillem Versagen kaum Kontrolle",
+      "description": "Facebook setzte stark auf die automatische Herunterstufung als Schlüssel-Maßnahme gegen Falschinformationen, Gewalt und Nacktheit, statt Inhalte überwiegend zu löschen. Ingenieure bemerkten im Oktober 2021 einen Anstieg von Falschinformationen im Feed, konnten die Ursache aber zunächst nicht finden.",
+      "title_de": "Downranking als zentrale Integritäts-Maßnahme - bei stillem Versagen kaum Kontrolle",
+      "description_de": "Facebook setzte stark auf die automatische Herunterstufung als Schlüssel-Maßnahme gegen Falschinformationen, Gewalt und Nacktheit, statt Inhalte überwiegend zu löschen. Ingenieure bemerkten im Oktober 2021 einen Anstieg von Falschinformationen im Feed, konnten die Ursache aber zunächst nicht finden.",
+      "title_en": "Downranking as a core integrity measure - little oversight when it silently fails",
+      "description_en": "Facebook relied heavily on automated downranking as a key measure against misinformation, violence and nudity rather than removing most content. Engineers noticed a surge of misinformation in the feed in October 2021 but could not initially identify the cause.",
+      "sources": [
+        "https://www.theverge.com/2022/3/31/23004326/facebook-news-feed-downranking-integrity-bug"
+      ]
+    },
+    {
+      "date": "2022-03-31",
+      "phase": "event",
+      "title": "The Verge berichtet über 'massives Ranking-Versagen'",
+      "description": "Ein internes Meta-Dokument, über das The Verge berichtete, beschrieb ein 'massives Ranking-Versagen': Statt von Faktenprüfern markierte Beiträge herunterzustufen, verstärkte der News-Feed sie rund sechs Monate lang und steigerte ihre Reichweite teils um bis zu 30 Prozent. Auch Nacktheit, Gewalt und russische Staatsmedien wurden nicht korrekt abgewertet; der Fehler wurde am 11. März 2022 behoben.",
+      "title_de": "The Verge berichtet über 'massives Ranking-Versagen'",
+      "description_de": "Ein internes Meta-Dokument, über das The Verge berichtete, beschrieb ein 'massives Ranking-Versagen': Statt von Faktenprüfern markierte Beiträge herunterzustufen, verstärkte der News-Feed sie rund sechs Monate lang und steigerte ihre Reichweite teils um bis zu 30 Prozent. Auch Nacktheit, Gewalt und russische Staatsmedien wurden nicht korrekt abgewertet; der Fehler wurde am 11. März 2022 behoben.",
+      "title_en": "The Verge reports a 'massive ranking failure'",
+      "description_en": "An internal Meta document reported by The Verge described a 'massive ranking failure': instead of downranking posts flagged by fact-checkers, the News Feed amplified them for about six months, boosting their reach by as much as 30 percent. Nudity, violence and Russian state media were also not properly demoted; the bug was fixed on 11 March 2022.",
+      "sources": [
+        "https://daringfireball.net/linked/2022/03/31/facebook-harmful-content-bug"
+      ]
+    },
+    {
+      "date": "2022-04",
+      "phase": "consequences",
+      "title": "Debatte über Intransparenz und mangelnde Beherrschbarkeit",
+      "description": "Meta stufte den Vorfall intern als geringfügig ein, Kritikerinnen und Kritiker werteten ihn dagegen als Beleg, dass die Plattform für ihre Betreiber zu groß und zu undurchsichtig geworden sei. Da der Fehler erst nach Monaten und über interne Leaks öffentlich wurde, verstärkte er Forderungen nach mehr Transparenz und externer Prüfbarkeit der Empfehlungssysteme.",
+      "title_de": "Debatte über Intransparenz und mangelnde Beherrschbarkeit",
+      "description_de": "Meta stufte den Vorfall intern als geringfügig ein, Kritikerinnen und Kritiker werteten ihn dagegen als Beleg, dass die Plattform für ihre Betreiber zu groß und zu undurchsichtig geworden sei. Da der Fehler erst nach Monaten und über interne Leaks öffentlich wurde, verstärkte er Forderungen nach mehr Transparenz und externer Prüfbarkeit der Empfehlungssysteme.",
+      "title_en": "Debate over opacity and lack of control",
+      "description_en": "Meta framed the incident internally as minor, while critics saw it as evidence that the platform had become too large and too opaque for its own operators to manage. Because the bug surfaced only after months and via internal leaks, it amplified calls for greater transparency and external auditability of recommendation systems.",
+      "sources": [
+        "https://fortune.com/2022/04/01/facebook-meta-bug-fix-misinformation-too-big/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://daringfireball.net/linked/2022/03/31/facebook-harmful-content-bug",

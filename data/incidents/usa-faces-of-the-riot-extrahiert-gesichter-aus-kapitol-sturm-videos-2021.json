@@ -26,9 +26,30 @@
     "facial-recognition",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Unschuldsvermutung",
+    "Schutz vor falscher Verdächtigung",
+    "Versammlungsfreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Unschuldsvermutung",
+    "Schutz vor falscher Verdächtigung",
+    "Versammlungsfreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Presumption of innocence",
+    "Protection from false suspicion",
+    "Freedom of assembly",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Anonymous website creator ('Faces of the Riot')",
@@ -42,7 +63,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Frei verfügbare Gesichtserkennung und offene Parler-Daten",
+      "description": "Quelloffene Machine-Learning- und Gesichtserkennungsbibliotheken machten es technisch Laien möglich, aus Videomaterial automatisch Gesichter zu erkennen, zu extrahieren und zu entdoppeln. Parallel speicherte die Plattform Parler Standort-Metadaten und öffentliche Posts ohne ausreichende Zugriffssicherung, was späteres Massen-Scraping erleichterte.",
+      "title_de": "Frei verfügbare Gesichtserkennung und offene Parler-Daten",
+      "description_de": "Quelloffene Machine-Learning- und Gesichtserkennungsbibliotheken machten es technisch Laien möglich, aus Videomaterial automatisch Gesichter zu erkennen, zu extrahieren und zu entdoppeln. Parallel speicherte die Plattform Parler Standort-Metadaten und öffentliche Posts ohne ausreichende Zugriffssicherung, was späteres Massen-Scraping erleichterte.",
+      "title_en": "Freely available face recognition and exposed Parler data",
+      "description_en": "Open-source machine-learning and face-recognition libraries made it possible even for non-experts to automatically detect, extract and de-duplicate faces from video footage. At the same time the Parler platform stored location metadata and public posts without adequate access controls, making later mass-scraping easy.",
+      "sources": [
+        "https://www.vice.com/en/article/xgz7g7/facial-recognition-parler-videos"
+      ]
+    },
+    {
+      "date": "2021-01-10",
+      "phase": "doctrine",
+      "title": "Amazon nimmt Parler offline, Aktivisten sichern die Videos",
+      "description": "Vier Tage nach dem Kapitol-Sturm schaltete Amazon Web Services Parler ab. Kurz vor der Abschaltung luden Aktivisten den Großteil der öffentlich zugänglichen Posts herunter, darunter 827 Videos vom und rund um das Kapitol. Im Klima öffentlicher Identifikationsaufrufe und FBI-Fahndungen entstand die Idee, das Material per Gesichtserkennung durchsuchbar zu machen.",
+      "title_de": "Amazon nimmt Parler offline, Aktivisten sichern die Videos",
+      "description_de": "Vier Tage nach dem Kapitol-Sturm schaltete Amazon Web Services Parler ab. Kurz vor der Abschaltung luden Aktivisten den Großteil der öffentlich zugänglichen Posts herunter, darunter 827 Videos vom und rund um das Kapitol. Im Klima öffentlicher Identifikationsaufrufe und FBI-Fahndungen entstand die Idee, das Material per Gesichtserkennung durchsuchbar zu machen.",
+      "title_en": "Amazon takes Parler offline, activists archive the videos",
+      "description_en": "Four days after the Capitol attack, Amazon Web Services took Parler offline. Just before the shutdown, activists downloaded most of the publicly available posts, including 827 videos from and around the Capitol. Amid public identification appeals and FBI manhunts, the idea emerged to make the footage searchable via facial recognition.",
+      "sources": [
+        "https://www.cnbc.com/2021/01/16/how-parler-deplatforming-shows-power-of-cloud-providers.html"
+      ]
+    },
+    {
+      "date": "2021-01-19",
+      "phase": "event",
+      "title": "'Faces of the Riot' veröffentlicht über 6.000 extrahierte Gesichter",
+      "description": "Eine anonyme Person stellte die Website 'Faces of the Riot' online, die mit Gesichtserkennung aus den 827 Parler-Videos über 6.000 Gesichter extrahierte und als durchsuchbares Raster veröffentlichte. Die Seite unterschied nicht zwischen Personen, die das Gebäude betraten, und reinen Außenstehenden. Ein Hinweis bat Besuchende, Erkenntnisse dem FBI zu melden statt selbst zu ermitteln.",
+      "title_de": "'Faces of the Riot' veröffentlicht über 6.000 extrahierte Gesichter",
+      "description_de": "Eine anonyme Person stellte die Website 'Faces of the Riot' online, die mit Gesichtserkennung aus den 827 Parler-Videos über 6.000 Gesichter extrahierte und als durchsuchbares Raster veröffentlichte. Die Seite unterschied nicht zwischen Personen, die das Gebäude betraten, und reinen Außenstehenden. Ein Hinweis bat Besuchende, Erkenntnisse dem FBI zu melden statt selbst zu ermitteln.",
+      "title_en": "'Faces of the Riot' publishes over 6,000 extracted faces",
+      "description_en": "An anonymous person put the website 'Faces of the Riot' online, which used facial recognition to extract over 6,000 faces from the 827 Parler videos and publish them as a searchable grid. The site did not distinguish between people who entered the building and bystanders who stayed outside. A notice asked visitors to report findings to the FBI rather than investigate themselves.",
+      "sources": [
+        "https://www.newsweek.com/faces-riot-website-features-people-capitol-siege-parler-videos-1564078"
+      ]
+    },
+    {
+      "date": "2021-01-20",
+      "phase": "consequences",
+      "title": "Datenschutz- und Falschverdacht-Bedenken in der Berichterstattung",
+      "description": "Medien wie WIRED und Newsweek warnten, das undifferenzierte Veröffentlichen tausender Gesichter könne Unbeteiligte unter Generalverdacht stellen, da das System nicht zwischen Teilnehmenden und bloßen Anwesenden trennt. Experten verwiesen auf die bekannte Fehleranfälligkeit von Gesichtserkennung und die Gefahr falscher Zuordnungen durch private Akteure.",
+      "title_de": "Datenschutz- und Falschverdacht-Bedenken in der Berichterstattung",
+      "description_de": "Medien wie WIRED und Newsweek warnten, das undifferenzierte Veröffentlichen tausender Gesichter könne Unbeteiligte unter Generalverdacht stellen, da das System nicht zwischen Teilnehmenden und bloßen Anwesenden trennt. Experten verwiesen auf die bekannte Fehleranfälligkeit von Gesichtserkennung und die Gefahr falscher Zuordnungen durch private Akteure.",
+      "title_en": "Privacy and false-suspicion concerns in press coverage",
+      "description_en": "Outlets such as WIRED and Newsweek warned that indiscriminately publishing thousands of faces could place uninvolved people under blanket suspicion, since the system did not separate participants from mere bystanders. Experts pointed to the known error rates of facial recognition and the risk of false matches by private actors.",
+      "sources": [
+        "https://yro.slashdot.org/story/21/01/24/0240211/new-site-extracts-and-posts-every-face-from-parlers-capitol-hill-insurrection-videos"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "consequences",
+      "title": "FBI nutzt crowdgesourcte Gesichtserkennungs-Hinweise für Festnahmen",
+      "description": "Das FBI stützte sich bei der Identifikation von Kapitol-Verdächtigen umfangreich auf Hinweise freiwilliger 'Sedition Hunters', die häufig öffentlich verfügbare Gesichtserkennung einsetzten. In Einzelfällen führten solche Abgleiche zu Festnahmen. Bürgerrechtler kritisierten die Entstehung einer privat-staatlichen Überwachungsschleife ohne rechtsstaatliche Kontrolle.",
+      "title_de": "FBI nutzt crowdgesourcte Gesichtserkennungs-Hinweise für Festnahmen",
+      "description_de": "Das FBI stützte sich bei der Identifikation von Kapitol-Verdächtigen umfangreich auf Hinweise freiwilliger 'Sedition Hunters', die häufig öffentlich verfügbare Gesichtserkennung einsetzten. In Einzelfällen führten solche Abgleiche zu Festnahmen. Bürgerrechtler kritisierten die Entstehung einer privat-staatlichen Überwachungsschleife ohne rechtsstaatliche Kontrolle.",
+      "title_en": "FBI uses crowdsourced face-recognition tips for arrests",
+      "description_en": "The FBI relied extensively on tips from volunteer 'Sedition Hunters', who frequently used publicly available facial recognition, to identify Capitol suspects. In individual cases such matches led to arrests. Civil-liberties advocates criticised the emergence of a private-state surveillance loop without due-process safeguards.",
+      "sources": [
+        "https://www.npr.org/2021/08/18/1028527768/the-fbi-keeps-using-clues-from-volunteer-sleuths-to-find-the-jan-6-capitol-riote"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.newsweek.com/faces-riot-website-features-people-capitol-siege-parler-videos-1564078",
