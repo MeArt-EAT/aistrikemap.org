@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2457 Incidents** · **1400 mit Reverse-TL (57.0 %)** · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2870** Mappings) · Lite-Bundle 1.6 MB gzip |
+| 📊 **Bestand** | **2457 Incidents** · **1448 mit Reverse-TL (58.9 %)** · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2885** Mappings) · Lite-Bundle 1.6 MB gzip |
 | 🔢 **Übergabe-Nr** | **#8** (2026-06-21) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **(2026-06-21, Übergabe #8)** **7 Sev-3-TL-Wellen 17–23** +167 Incidents (TL 50.2→**57.0 %**), je **adversarial verifiziert** — die Gen→Verify-Stufe fing echte Faktenfehler (NATO-Datum, Burkina-Faso-Massaker/Quelle, Tesla-Zahlendreher, Ecuador-Firmenname, iBorderCtrl-Gerichtsinstanz, FIFA-/Meloni-Sterbedatum, Eco-Vandali-Inkrafttreten, Jamaika-Hurrikan-Landfall) + 2 Halluzinationen entschärft + Audit 0. **Methoden-Wende:** das `Workflow`-Tool läuft jetzt zuverlässig (0 Stalls über 7 Wellen) — s. Offene Fronten #2. Plus **korpusweiter Translit-Map-Lückenschluss** (+96 Vollwort-Mappings für die `Ueber...`-Komposita-Lücke, Map 2774→2870, 121 Files bereinigt). 1 Incident `indonesien-prabowo` wegen **Fehlzuordnung zurückgehalten** (s.u.). |
-| ➡️ **Nächster Schritt** | **Sev-3-Block weiter** (529 ohne TL) — **Workflow-Methode** (24 Cases/Welle, s. #2) · ODER `indonesien-prabowo`-Fehlzuordnung klären · ODER Career-Daten via Dataset-Download · ODER AIAAIC Batch D |
+| ✅ **Zuletzt fertig** | **(2026-06-21, Übergabe #8)** **7 Sev-3-TL-Wellen 17–23** +167 Incidents (TL 50.2→**57.0 %**), je **adversarial verifiziert** — die Gen→Verify-Stufe fing echte Faktenfehler (NATO-Datum, Burkina-Faso-Massaker/Quelle, Tesla-Zahlendreher, Ecuador-Firmenname, iBorderCtrl-Gerichtsinstanz, FIFA-/Meloni-Sterbedatum, Eco-Vandali-Inkrafttreten, Jamaika-Hurrikan-Landfall) + 2 Halluzinationen entschärft + Audit 0. **Methoden-Wende:** das `Workflow`-Tool läuft jetzt zuverlässig (0 Stalls über 7 Wellen) — s. Offene Fronten #2. Plus **korpusweiter Translit-Map-Lückenschluss** (+96 Vollwort-Mappings für die `Ueber...`-Komposita-Lücke, Map 2774→2870, 121 Files bereinigt). 1 Incident `indonesien-prabowo` wegen **Fehlzuordnung zurückgehalten** (s.u.). **Danach Wellen 24–25** (+48 → **1448 / 58.9 %**, Map 2885). **Welle 26** lief in einen **globalen WebSearch-Ausfall** → komplett verworfen (keine unverifizierten TLs committet); Kampagne **pausiert bis WebSearch zurück**. |
+| ➡️ **Nächster Schritt** | ⚠️ **WebSearch-abhängig:** Sev-3-Block weiter (**481 ohne TL**) via Workflow-Methode (24 Cases/Welle, s. #2), **sobald WebSearch wieder läuft** (Welle 26 ab `peru-…` neu) · ODER `indonesien-prabowo`-Fehlzuordnung klären · ODER Career-Daten via Dataset-Download · ODER AIAAIC Batch D |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -27,9 +27,14 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 1. **AIAAIC Batch D** (pre-2015, ~300 Stubs) — letzter AIAAIC-Block, niedrige
    Prio (frühe Cases haben weniger Aktualität). Bringt aber historische Tiefe.
    Workflow: siehe Memory `aiaaic-import-workflow` + Übergabe #5.
-2. **Reverse-Timelines** — **1400 von 2457 (57.0 %)** haben die TL (Kern-Feature).
-   **Sev-5 + Sev-4 zu 100 % geschlossen** ✓. **Sev-3: 529 ohne TL** (~50 % gemacht,
-   +167 in 7 Wellen am 2026-06-21). Sev-2/Sev-1: niedrige Prio.
+2. **Reverse-Timelines** — **1448 von 2457 (58.9 %)** haben die TL (Kern-Feature).
+   **Sev-5 + Sev-4 zu 100 % geschlossen** ✓. **Sev-3: 481 ohne TL** (~54 % gemacht,
+   +215 in 9 Wellen 17–25 am 2026-06-21). Sev-2/Sev-1: niedrige Prio.
+   ⚠️ **WebSearch-Abhängigkeit (2026-06-21):** Welle 26 lief in einen globalen
+   WebSearch-Ausfall (16/24 Gen + 18/24 Verify ohne Quellen) und wurde komplett
+   verworfen — die Methode braucht WebSearch zwingend (Grounding + adversariale
+   Verifikation). Bei Ausfall NICHT weiterlaufen, sonst landen unverifizierte TLs
+   im Korpus. Resume mit denselben 24 (ab `peru-…`), wenn WebSearch zurück ist.
    **Methoden-Wende (2026-06-21):** Das `Workflow`-Tool ist für Sev-3 jetzt das
    **bevorzugte** Mittel (frühere Stall-Sorge bestätigte sich bei gebündelten
    Wellen NICHT): **eine Welle = 24 Cases (6 Gen-Agenten × 4 Cases → 6 unabhängige
@@ -80,7 +85,7 @@ Cases — NICHT mergen:
 `audit-bilingual-incidents.js`
 
 > ⚠️ **Translit-Tooling (Stand 2026-06-21):** Fixer + Audit teilen
-> `data/translit-extra-map.json` (**2870** validierte `ae/oe/ue/ss`→`ä/ö/ü/ß`-Mappings,
+> `data/translit-extra-map.json` (**2885** validierte `ae/oe/ue/ss`→`ä/ö/ü/ß`-Mappings,
 > bleiben dadurch synchron). Neue Mappings → in die JSON eintragen, nicht in den
 > Code. Beide `über`-Regexes nutzen Unicode-Lookbehind (vorher ASCII-`\b` →
 > korrumpierte `Räuber`→`Räüber`). **Bekannte Lücke geschlossen (2026-06-21):** Die
