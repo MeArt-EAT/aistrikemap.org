@@ -31,9 +31,24 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Kinderrechte"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Kinderrechte"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Consumer protection",
+    "Children's rights"
+  ],
   "asm:actors": [
     {
       "name": "Amazon",
@@ -55,7 +70,62 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014-11-06",
+      "phase": "infrastructure",
+      "title": "Amazon stellt Echo mit Sprachassistent Alexa vor",
+      "description": "Amazon kündigt am 6. November 2014 den Echo-Lautsprecher mit der Cloud-Sprachassistentin Alexa an. Jede Anfrage wird als Audioaufnahme auf Amazon-Servern verarbeitet und gespeichert. Diese serverseitige Speicher-Architektur ist die technische Grundvoraussetzung dafür, dass Sprachaufnahmen und Transkripte langfristig vorgehalten werden können.",
+      "title_de": "Amazon stellt Echo mit Sprachassistent Alexa vor",
+      "description_de": "Amazon kündigt am 6. November 2014 den Echo-Lautsprecher mit der Cloud-Sprachassistentin Alexa an. Jede Anfrage wird als Audioaufnahme auf Amazon-Servern verarbeitet und gespeichert. Diese serverseitige Speicher-Architektur ist die technische Grundvoraussetzung dafür, dass Sprachaufnahmen und Transkripte langfristig vorgehalten werden können.",
+      "title_en": "Amazon unveils Echo with the Alexa voice assistant",
+      "description_en": "On 6 November 2014 Amazon announces the Echo speaker with the cloud voice assistant Alexa. Every request is processed and stored as an audio recording on Amazon servers. This server-side storage architecture is the technical precondition that allows voice recordings and transcripts to be retained long-term.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amazon_Echo"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "Aufbewahrung bis zur manuellen Löschung als Voreinstellung",
+      "description": "Amazon legt seine Datenpolitik so an, dass Alexa-Sprachaufnahmen standardmäßig bis zu einer aktiven manuellen Löschung durch Nutzende aufbewahrt werden - es gibt keine automatische Befristung. Die FTC datiert die spätere COPPA-Verletzung auf Praktiken seit mindestens Mai 2018: Kinderaufnahmen wurden per Voreinstellung unbefristet gespeichert.",
+      "title_de": "Aufbewahrung bis zur manuellen Löschung als Voreinstellung",
+      "description_de": "Amazon legt seine Datenpolitik so an, dass Alexa-Sprachaufnahmen standardmäßig bis zu einer aktiven manuellen Löschung durch Nutzende aufbewahrt werden - es gibt keine automatische Befristung. Die FTC datiert die spätere COPPA-Verletzung auf Praktiken seit mindestens Mai 2018: Kinderaufnahmen wurden per Voreinstellung unbefristet gespeichert.",
+      "title_en": "Retention-until-manual-deletion as the default policy",
+      "description_en": "Amazon designs its data policy so that Alexa voice recordings are retained by default until a user actively deletes them - with no automatic expiry. The FTC later dates the COPPA violation to practices in place since at least May 2018: children's recordings were kept indefinitely by default.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever"
+      ]
+    },
+    {
+      "date": "2019-07-03",
+      "phase": "event",
+      "title": "Amazon bestätigt gegenüber Senator Coons unbefristete Speicherung",
+      "description": "Nach einer CNET-Recherche im Mai 2019 fragt Senator Chris Coons (D-Del.) bei Amazon nach. Am 3. Juli 2019 antwortet Amazon und bestätigt: Sprachaufnahmen werden bis zur manuellen Löschung gespeichert; Text-Transkripte werden nach der Löschung zwar aus den primären Speichern entfernt, können aber in anderen Systemen verbleiben. Coons nennt die Antwort offen für die Möglichkeit, dass Transkripte nie vollständig gelöscht werden.",
+      "title_de": "Amazon bestätigt gegenüber Senator Coons unbefristete Speicherung",
+      "description_de": "Nach einer CNET-Recherche im Mai 2019 fragt Senator Chris Coons (D-Del.) bei Amazon nach. Am 3. Juli 2019 antwortet Amazon und bestätigt: Sprachaufnahmen werden bis zur manuellen Löschung gespeichert; Text-Transkripte werden nach der Löschung zwar aus den primären Speichern entfernt, können aber in anderen Systemen verbleiben. Coons nennt die Antwort offen für die Möglichkeit, dass Transkripte nie vollständig gelöscht werden.",
+      "title_en": "Amazon confirms indefinite retention to Senator Coons",
+      "description_en": "Following a May 2019 CNET investigation, Senator Chris Coons (D-Del.) queries Amazon. On 3 July 2019 Amazon replies, confirming that voice recordings are kept until manually deleted and that text transcripts, while removed from primary storage on deletion, may persist in other systems. Coons says the response leaves open the possibility that transcripts are never fully deleted.",
+      "sources": [
+        "https://techcrunch.com/2019/07/03/amazon-responds-to-a-u-s-senators-inquiry-confirms-alexa-voice-records-are-kept-indefinitely/",
+        "https://www.coons.senate.gov/news/press-releases/amazon-responds-to-sen-coons-concerns-about-consumer-privacy-practices-for-alexa-devices"
+      ]
+    },
+    {
+      "date": "2023-05-31",
+      "phase": "consequences",
+      "title": "FTC/DOJ-Vergleich: 25 Mio. USD Strafe wegen Kinder-Aufnahmen",
+      "description": "FTC und DOJ verklagen Amazon wegen unbefristeter Speicherung von Alexa-Sprachaufnahmen von Kindern unter Verletzung des COPPA. Amazon stimmt einer Zivilstrafe von 25 Mio. USD zu, muss inaktive Kinderkonten sowie bestimmte Aufnahmen und Geodaten löschen und darf diese nicht mehr zum Training von Algorithmen nutzen. Die Coons-Aussagen von 2019 fließen in die Beweislage ein.",
+      "title_de": "FTC/DOJ-Vergleich: 25 Mio. USD Strafe wegen Kinder-Aufnahmen",
+      "description_de": "FTC und DOJ verklagen Amazon wegen unbefristeter Speicherung von Alexa-Sprachaufnahmen von Kindern unter Verletzung des COPPA. Amazon stimmt einer Zivilstrafe von 25 Mio. USD zu, muss inaktive Kinderkonten sowie bestimmte Aufnahmen und Geodaten löschen und darf diese nicht mehr zum Training von Algorithmen nutzen. Die Coons-Aussagen von 2019 fließen in die Beweislage ein.",
+      "title_en": "FTC/DOJ settlement: USD 25 million penalty over children's recordings",
+      "description_en": "The FTC and DOJ sue Amazon for retaining children's Alexa voice recordings indefinitely in violation of COPPA. Amazon agrees to a USD 25 million civil penalty, must delete inactive child accounts plus certain recordings and geolocation data, and is barred from using them to train algorithms. The 2019 Coons admissions feed into the evidentiary record.",
+      "sources": [
+        "https://www.justice.gov/archives/opa/pr/amazon-agrees-injunctive-relief-and-25-million-civil-penalty-alleged-violations-childrens",
+        "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.coons.senate.gov/news/press-releases/amazon-responds-to-sen-coons-concerns-about-consumer-privacy-practices-for-alexa-devices",

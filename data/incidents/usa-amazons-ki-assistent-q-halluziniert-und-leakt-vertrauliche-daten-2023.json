@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Amazon (AWS)",
@@ -46,7 +58,52 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-09-28",
+      "phase": "infrastructure",
+      "title": "Amazon Bedrock wird allgemein verfügbar - Plattform für generative KI",
+      "description": "AWS stellt Ende September 2023 Amazon Bedrock allgemein bereit, eine Plattform, die Foundation Models verschiedener Anbieter (u.a. Anthropic, AI21, Cohere, Amazon Titan) für Unternehmen zugänglich macht. Bedrock bildet die technische Grundlage, auf der Amazon kurz darauf seinen KI-Assistenten Q aufbaut.",
+      "title_de": "Amazon Bedrock wird allgemein verfügbar - Plattform für generative KI",
+      "description_de": "AWS stellt Ende September 2023 Amazon Bedrock allgemein bereit, eine Plattform, die Foundation Models verschiedener Anbieter (u.a. Anthropic, AI21, Cohere, Amazon Titan) für Unternehmen zugänglich macht. Bedrock bildet die technische Grundlage, auf der Amazon kurz darauf seinen KI-Assistenten Q aufbaut.",
+      "title_en": "Amazon Bedrock becomes generally available - platform for generative AI",
+      "description_en": "In late September 2023 AWS makes Amazon Bedrock generally available, a platform that gives enterprises access to foundation models from various providers (incl. Anthropic, AI21, Cohere, Amazon Titan). Bedrock is the technical foundation on which Amazon shortly afterwards builds its AI assistant Q.",
+      "sources": ["https://aws.amazon.com/blogs/aws/amazon-bedrock-is-now-generally-available-build-and-scale-generative-ai-applications-with-foundation-models/"]
+    },
+    {
+      "date": "2023-11-28",
+      "phase": "doctrine",
+      "title": "Amazon stellt Q auf der re:Invent vor - beworben als sicherer als ChatGPT",
+      "description": "Auf der AWS-Hauskonferenz re:Invent kündigt Amazon Ende November 2023 den generativen KI-Assistenten Q für Geschäftskunden an. Q wird offensiv als unternehmenstaugliche, sicherere Alternative zu Verbraucher-Chatbots wie ChatGPT positioniert, um im Wettlauf um Enterprise-KI gegen Microsoft und Google aufzuholen. Der Marktdruck beschleunigt die Veröffentlichung als Public Preview.",
+      "title_de": "Amazon stellt Q auf der re:Invent vor - beworben als sicherer als ChatGPT",
+      "description_de": "Auf der AWS-Hauskonferenz re:Invent kündigt Amazon Ende November 2023 den generativen KI-Assistenten Q für Geschäftskunden an. Q wird offensiv als unternehmenstaugliche, sicherere Alternative zu Verbraucher-Chatbots wie ChatGPT positioniert, um im Wettlauf um Enterprise-KI gegen Microsoft und Google aufzuholen. Der Marktdruck beschleunigt die Veröffentlichung als Public Preview.",
+      "title_en": "Amazon unveils Q at re:Invent - marketed as more secure than ChatGPT",
+      "description_en": "At its AWS re:Invent conference in late November 2023, Amazon announces the generative AI assistant Q for business customers. Q is aggressively positioned as an enterprise-grade, more secure alternative to consumer chatbots like ChatGPT, to catch up against Microsoft and Google in the enterprise-AI race. Market pressure accelerates the release as a public preview.",
+      "sources": ["https://www.platformer.news/amazons-q-has-severe-hallucinations/"]
+    },
+    {
+      "date": "2023-12",
+      "phase": "event",
+      "title": "Mitarbeitende melden 'schwere Halluzinationen' und Leaks vertraulicher Daten",
+      "description": "Wenige Tage nach dem Start meldeten Mitarbeitende laut von Platformer eingesehenen internen Dokumenten 'schwere Halluzinationen' und das Durchsickern vertraulicher Daten - darunter Standorte von AWS-Rechenzentren, interne Rabattprogramme und unveröffentlichte Funktionen. Ein Vorfall wurde intern als 'sev 2' eingestuft, eine Schwere, die Nacht- und Wochenend-Einsätze von Entwicklern rechtfertigt.",
+      "title_de": "Mitarbeitende melden 'schwere Halluzinationen' und Leaks vertraulicher Daten",
+      "description_de": "Wenige Tage nach dem Start meldeten Mitarbeitende laut von Platformer eingesehenen internen Dokumenten 'schwere Halluzinationen' und das Durchsickern vertraulicher Daten - darunter Standorte von AWS-Rechenzentren, interne Rabattprogramme und unveröffentlichte Funktionen. Ein Vorfall wurde intern als 'sev 2' eingestuft, eine Schwere, die Nacht- und Wochenend-Einsätze von Entwicklern rechtfertigt.",
+      "title_en": "Employees report 'severe hallucinations' and leaks of confidential data",
+      "description_en": "Within days of launch, employees reported 'severe hallucinations' and leaks of confidential data - including AWS data center locations, internal discount programs and unreleased features - according to internal documents seen by Platformer. One incident was logged internally as 'sev 2', a severity that justifies engineers being paged at night and over the weekend.",
+      "sources": ["https://www.platformer.news/amazons-q-has-severe-hallucinations/", "https://www.datacenterdynamics.com/en/news/amazons-q-generative-ai-chatbot-leaks-location-of-aws-data-centers/"]
+    },
+    {
+      "date": "2023-12-04",
+      "phase": "consequences",
+      "title": "Amazon weist Leck-Vorwürfe zurück - Medienberichte und Reputationsschaden",
+      "description": "Amazon weist die Vorwürfe eines tatsächlichen Datenlecks öffentlich zurück und erklärt, die Meldungen stammten aus dem normalen Feedback-Prozess der Preview, ohne dass ein echtes Sicherheitsproblem festgestellt worden sei. Die internationale Berichterstattung (Computerworld, DCD, GIGAZINE u.a.) konterkariert dennoch Amazons Sicherheitsversprechen und beschädigt den Start von Q.",
+      "title_de": "Amazon weist Leck-Vorwürfe zurück - Medienberichte und Reputationsschaden",
+      "description_de": "Amazon weist die Vorwürfe eines tatsächlichen Datenlecks öffentlich zurück und erklärt, die Meldungen stammten aus dem normalen Feedback-Prozess der Preview, ohne dass ein echtes Sicherheitsproblem festgestellt worden sei. Die internationale Berichterstattung (Computerworld, DCD, GIGAZINE u.a.) konterkariert dennoch Amazons Sicherheitsversprechen und beschädigt den Start von Q.",
+      "title_en": "Amazon pushes back on leak claims - media coverage and reputational damage",
+      "description_en": "Amazon publicly pushes back on the claims of an actual data leak, saying the reports came from the preview's normal feedback process and that no genuine security issue had been identified. International coverage (Computerworld, DCD, GIGAZINE and others) nonetheless undercuts Amazon's security promise and tarnishes the Q launch.",
+      "sources": ["https://www.computerworld.com/article/1611235/questions-raised-as-amazon-q-reportedly-starts-to-hallucinate-and-leak-confidential-data.html"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.platformer.news/amazons-q-has-severe-hallucinations/",

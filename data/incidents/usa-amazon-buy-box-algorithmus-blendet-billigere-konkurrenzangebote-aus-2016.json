@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Arbeit"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Arbeit"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Right to work"
+  ],
   "asm:actors": [
     {
       "name": "Amazon",
@@ -53,7 +65,75 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2006-09-19",
+      "phase": "infrastructure",
+      "title": "Amazon startet Fulfillment by Amazon (FBA)",
+      "description": "Amazon kündigt am 19. September 2006 den Logistikdienst Fulfillment by Amazon (FBA) an, über den Drittanbieter ihre Ware in Amazon-Lagern einlagern und versenden lassen. FBA-Listings werden Prime-fähig - und Prime-Fähigkeit wird zur faktischen Voraussetzung, die prominente 'Buy Box' zu gewinnen. Damit entsteht die Marktstruktur, in der der Ranking-Algorithmus zahlende Logistik-Partner bevorzugen kann.",
+      "title_de": "Amazon startet Fulfillment by Amazon (FBA)",
+      "description_de": "Amazon kündigt am 19. September 2006 den Logistikdienst Fulfillment by Amazon (FBA) an, über den Drittanbieter ihre Ware in Amazon-Lagern einlagern und versenden lassen. FBA-Listings werden Prime-fähig - und Prime-Fähigkeit wird zur faktischen Voraussetzung, die prominente 'Buy Box' zu gewinnen. Damit entsteht die Marktstruktur, in der der Ranking-Algorithmus zahlende Logistik-Partner bevorzugen kann.",
+      "title_en": "Amazon launches Fulfillment by Amazon (FBA)",
+      "description_en": "On 19 September 2006 Amazon announces Fulfillment by Amazon (FBA), a logistics service letting third-party sellers store and ship their goods through Amazon warehouses. FBA listings become Prime-eligible - and Prime eligibility becomes the de facto requirement for winning the prominent 'Buy Box'. This creates the market structure in which the ranking algorithm can favour paying logistics partners.",
+      "sources": [
+        "https://www.marketplacepulse.com/articles/a-decade-of-fulfillment-by-amazon-fba"
+      ]
+    },
+    {
+      "date": "2016",
+      "phase": "doctrine",
+      "title": "Ranking-Logik mit eingebauter Eigen- und Partner-Bevorzugung",
+      "description": "Amazons Buy-Box-Algorithmus gewichtet nicht allein den Endpreis: Versandkosten werden nur für Amazon-eigene und FBA-Partner-Listings aus dem Ranking herausgerechnet. Diese Geschäftslogik priorisiert eigene und zahlende Partner-Angebote auch dann, wenn Dritt-Verkäufer insgesamt günstiger sind - ein systematisches Self-Preferencing zugunsten des eigenen Ökosystems.",
+      "title_de": "Ranking-Logik mit eingebauter Eigen- und Partner-Bevorzugung",
+      "description_de": "Amazons Buy-Box-Algorithmus gewichtet nicht allein den Endpreis: Versandkosten werden nur für Amazon-eigene und FBA-Partner-Listings aus dem Ranking herausgerechnet. Diese Geschäftslogik priorisiert eigene und zahlende Partner-Angebote auch dann, wenn Dritt-Verkäufer insgesamt günstiger sind - ein systematisches Self-Preferencing zugunsten des eigenen Ökosystems.",
+      "title_en": "Ranking logic with built-in self- and partner-preferencing",
+      "description_en": "Amazon's Buy Box algorithm does not weigh only the final price: shipping costs are excluded from the ranking only for Amazon-owned and FBA-partner listings. This business logic prioritises own and paying-partner offers even when third-party sellers are cheaper overall - systematic self-preferencing in favour of Amazon's own ecosystem.",
+      "sources": [
+        "https://www.propublica.org/article/amazon-says-it-puts-customers-first-but-its-pricing-algorithm-doesnt"
+      ]
+    },
+    {
+      "date": "2016-09-20",
+      "phase": "event",
+      "title": "ProPublica deckt Buy-Box-Bevorzugung auf",
+      "description": "Eine ProPublica-Untersuchung von Julia Angwin und Surya Mattu analysiert 250 häufig gekaufte Produkte und stellt fest, dass die 'Buy Box' in rund 75 Prozent der Fälle Amazon-eigene oder Partner-Angebote zeigt - auch wenn günstigere Konkurrenz vorhanden ist. Der durchschnittliche Preisaufschlag gegenüber dem tatsächlich billigsten Angebot beträgt 7,88 US-Dollar pro Produkt; Käufer aller 250 Produkte hätten rund 1.400 US-Dollar zu viel gezahlt.",
+      "title_de": "ProPublica deckt Buy-Box-Bevorzugung auf",
+      "description_de": "Eine ProPublica-Untersuchung von Julia Angwin und Surya Mattu analysiert 250 häufig gekaufte Produkte und stellt fest, dass die 'Buy Box' in rund 75 Prozent der Fälle Amazon-eigene oder Partner-Angebote zeigt - auch wenn günstigere Konkurrenz vorhanden ist. Der durchschnittliche Preisaufschlag gegenüber dem tatsächlich billigsten Angebot beträgt 7,88 US-Dollar pro Produkt; Käufer aller 250 Produkte hätten rund 1.400 US-Dollar zu viel gezahlt.",
+      "title_en": "ProPublica exposes Buy Box preferencing",
+      "description_en": "A ProPublica investigation by Julia Angwin and Surya Mattu analyses 250 frequently purchased products and finds that the 'Buy Box' shows Amazon-owned or partner offers in roughly 75 percent of cases - even when cheaper rivals exist. The average mark-up over the actual cheapest offer is USD 7.88 per product; a shopper buying all 250 would have overpaid by about USD 1,400.",
+      "sources": [
+        "https://www.propublica.org/article/amazon-says-it-puts-customers-first-but-its-pricing-algorithm-doesnt",
+        "https://slate.com/business/2016/09/propublica-investigation-shows-how-amazon-favors-its-own-products-and-those-it-ships.html"
+      ]
+    },
+    {
+      "date": "2016-09-22",
+      "phase": "consequences",
+      "title": "Amazon verteidigt Algorithmus - Debatte um Self-Preferencing",
+      "description": "Amazon weist die ProPublica-Befunde zurück, lässt nach Recherche-Angaben aber Milliarden eigener Umsätze in der eigenen Gegenrechnung aus. Der Fall wird zu einem Referenzpunkt der Debatte über Self-Preferencing auf Plattformen.",
+      "title_de": "Amazon verteidigt Algorithmus - Debatte um Self-Preferencing",
+      "description_de": "Amazon weist die ProPublica-Befunde zurück, lässt nach Recherche-Angaben aber Milliarden eigener Umsätze in der eigenen Gegenrechnung aus. Der Fall wird zu einem Referenzpunkt der Debatte über Self-Preferencing auf Plattformen.",
+      "title_en": "Amazon defends algorithm - self-preferencing debate",
+      "description_en": "Amazon rejects ProPublica's findings but, per the reporting, leaves billions in its own sales out of its rebuttal. The case becomes a reference point in the debate over platform self-preferencing.",
+      "sources": [
+        "https://www.propublica.org/article/amazon-defends-its-pricing-algorithm-but-leaves-out-billions-in-sales"
+      ]
+    },
+    {
+      "date": "2023-09-26",
+      "phase": "consequences",
+      "title": "FTC-Kartellklage gegen Amazon wegen Self-Preferencing",
+      "description": "Die FTC verklagt zusammen mit 17 US-Bundesstaaten Amazon wegen illegaler Aufrechterhaltung eines Monopols. Zu den Vorwürfen zählt die Bevorzugung eigener Produkte in Suchergebnissen und die faktische Kopplung der Buy-Box-/Prime-Sichtbarkeit an Amazons Logistikdienste. Der Prozess ist für Oktober 2026 terminiert.",
+      "title_de": "FTC-Kartellklage gegen Amazon wegen Self-Preferencing",
+      "description_de": "Die FTC verklagt zusammen mit 17 US-Bundesstaaten Amazon wegen illegaler Aufrechterhaltung eines Monopols. Zu den Vorwürfen zählt die Bevorzugung eigener Produkte in Suchergebnissen und die faktische Kopplung der Buy-Box-/Prime-Sichtbarkeit an Amazons Logistikdienste. Der Prozess ist für Oktober 2026 terminiert.",
+      "title_en": "FTC antitrust suit against Amazon over self-preferencing",
+      "description_en": "The FTC, joined by 17 U.S. states, sues Amazon for illegally maintaining a monopoly. The allegations include preferencing Amazon's own products in search results and effectively tying Buy Box/Prime visibility to Amazon's logistics services. Trial is scheduled for October 2026.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2023/09/ftc-sues-amazon-illegally-maintaining-monopoly-power",
+        "https://en.wikipedia.org/wiki/FTC_v._Amazon"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.propublica.org/article/amazon-says-it-puts-customers-first-but-its-pricing-algorithm-doesnt",

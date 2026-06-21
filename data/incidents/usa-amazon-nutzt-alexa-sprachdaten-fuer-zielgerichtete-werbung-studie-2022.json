@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Amazon.com, Inc.",
@@ -46,7 +61,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014-11-06",
+      "phase": "infrastructure",
+      "title": "Echo/Alexa schaffen die Datengrundlage im Wohnraum",
+      "description": "Mit dem Echo-Lautsprecher und der Sprachassistentin Alexa (Ankündigung 6. November 2014) etabliert Amazon ein Gerät, das Sprachinteraktionen aus privaten Wohnräumen erfasst und in der Cloud verarbeitet. Hinzu kommen Drittanbieter-'Skills', die eigene Tracking- und Werbedienste einbinden können. Diese Infrastruktur erzeugt den Datenstrom, der später zur Werbe-Profilbildung genutzt wird.",
+      "title_de": "Echo/Alexa schaffen die Datengrundlage im Wohnraum",
+      "description_de": "Mit dem Echo-Lautsprecher und der Sprachassistentin Alexa (Ankündigung 6. November 2014) etabliert Amazon ein Gerät, das Sprachinteraktionen aus privaten Wohnräumen erfasst und in der Cloud verarbeitet. Hinzu kommen Drittanbieter-'Skills', die eigene Tracking- und Werbedienste einbinden können. Diese Infrastruktur erzeugt den Datenstrom, der später zur Werbe-Profilbildung genutzt wird.",
+      "title_en": "Echo/Alexa create the data basis inside the home",
+      "description_en": "With the Echo speaker and the Alexa voice assistant (announced 6 November 2014), Amazon establishes a device that captures voice interactions from private homes and processes them in the cloud. Third-party 'Skills' can embed their own tracking and advertising services. This infrastructure generates the data stream later used for advertising profiling.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amazon_Echo"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Geschäftsmodell: Sprachinteraktionen für Werbe-Profile",
+      "description": "Amazon baut sein Werbegeschäft aus und verknüpft Interaktionsdaten aus dem Alexa-Ökosystem mit Interessen-Profilen. Werbepartner gleichen Cookies mit Amazon ab; für Personas, die mit Alexa-Skills interagieren, bieten Werbetreibende bis zu 30-mal höher. Damit wird die Auswertung von Sprachinteraktionen zur kommerziellen Strategie - obwohl Amazon öffentlich erklärte, keine Sprachaufnahmen für Werbung zu nutzen.",
+      "title_de": "Geschäftsmodell: Sprachinteraktionen für Werbe-Profile",
+      "description_de": "Amazon baut sein Werbegeschäft aus und verknüpft Interaktionsdaten aus dem Alexa-Ökosystem mit Interessen-Profilen. Werbepartner gleichen Cookies mit Amazon ab; für Personas, die mit Alexa-Skills interagieren, bieten Werbetreibende bis zu 30-mal höher. Damit wird die Auswertung von Sprachinteraktionen zur kommerziellen Strategie - obwohl Amazon öffentlich erklärte, keine Sprachaufnahmen für Werbung zu nutzen.",
+      "title_en": "Business model: voice interactions for ad profiles",
+      "description_en": "Amazon expands its advertising business and links interaction data from the Alexa ecosystem to interest profiles. Ad partners sync cookies with Amazon; for personas that interact with Alexa Skills, advertisers bid up to 30 times higher. Analysing voice interactions becomes a commercial strategy - even though Amazon publicly stated it does not use voice recordings for ads.",
+      "sources": [
+        "https://alexaechos.com/"
+      ]
+    },
+    {
+      "date": "2022-04-22",
+      "phase": "event",
+      "title": "Studie 'Your Echos are Heard' belegt Werbe-Tracking",
+      "description": "Forschende der University of Washington, UC Davis, UC Irvine und Northeastern University weisen nach, dass Amazon und Dritte Daten aus Alexa-Interaktionen sammeln und mit bis zu 41 Werbepartnern teilen, um Interessen abzuleiten und gezielt Werbung auszuspielen - auf den Geräten und im Web. Interaktionen mit Sprachassistenten erzielen bis zu 30-mal höhere Werbe-Gebote. Nach dem Preprint passt Amazon seine Datenschutz-Angaben an und bestätigt die Werbenutzung.",
+      "title_de": "Studie 'Your Echos are Heard' belegt Werbe-Tracking",
+      "description_de": "Forschende der University of Washington, UC Davis, UC Irvine und Northeastern University weisen nach, dass Amazon und Dritte Daten aus Alexa-Interaktionen sammeln und mit bis zu 41 Werbepartnern teilen, um Interessen abzuleiten und gezielt Werbung auszuspielen - auf den Geräten und im Web. Interaktionen mit Sprachassistenten erzielen bis zu 30-mal höhere Werbe-Gebote. Nach dem Preprint passt Amazon seine Datenschutz-Angaben an und bestätigt die Werbenutzung.",
+      "title_en": "Study 'Your Echos are Heard' documents ad tracking",
+      "description_en": "Researchers from the University of Washington, UC Davis, UC Irvine and Northeastern University show that Amazon and third parties collect Alexa interaction data and share it with up to 41 advertising partners to infer interests and serve targeted ads - on-device and on the web. Voice-assistant interactions generate up to 30 times higher ad bids. After the preprint, Amazon updates its privacy disclosures and confirms the advertising use.",
+      "sources": [
+        "https://arxiv.org/html/2204.10920v5",
+        "https://www.theregister.com/2022/04/27/amazon_audio_data/"
+      ]
+    },
+    {
+      "date": "2022-04-29",
+      "phase": "consequences",
+      "title": "Medien- und Datenschutzkritik, Vergleich mit Siri",
+      "description": "Die Befunde werden breit aufgegriffen; Berichte stellen Amazons Werbenutzung von Alexa-Daten dem deutlich restriktiveren Umgang bei Apples Siri gegenüber. Die Studie wird auf der FTC-PrivacyCon 2022 vorgestellt und verschärft die Debatte über Sprachassistenten als Werbe-Sensoren im Privatraum.",
+      "title_de": "Medien- und Datenschutzkritik, Vergleich mit Siri",
+      "description_de": "Die Befunde werden breit aufgegriffen; Berichte stellen Amazons Werbenutzung von Alexa-Daten dem deutlich restriktiveren Umgang bei Apples Siri gegenüber. Die Studie wird auf der FTC-PrivacyCon 2022 vorgestellt und verschärft die Debatte über Sprachassistenten als Werbe-Sensoren im Privatraum.",
+      "title_en": "Media and privacy criticism, comparison with Siri",
+      "description_en": "The findings are widely reported; coverage contrasts Amazon's advertising use of Alexa data with the far more restrictive approach at Apple's Siri. The study is presented at the FTC's PrivacyCon 2022, intensifying the debate over voice assistants as advertising sensors in the home.",
+      "sources": [
+        "https://9to5mac.com/2022/04/29/amazon-alexa-voice-data-used-for-ads/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/pdf/2204.10920",
