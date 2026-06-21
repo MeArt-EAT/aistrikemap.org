@@ -31,9 +31,30 @@
     "facial-recognition",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Recht auf Arbeit",
+    "Gleichbehandlung",
+    "Datenschutz",
+    "faires Verfahren",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Recht auf Arbeit",
+    "Gleichbehandlung",
+    "Datenschutz",
+    "faires Verfahren",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Right to work",
+    "Equal treatment",
+    "Data protection",
+    "Fair procedure",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Uber (Uber Eats)",
@@ -56,7 +77,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Microsofts Gesichtserkennung mit dokumentierten Hautton-Fehlerraten",
+      "description": "Microsofts Face API, später Kern der Uber-Verifizierung, war für demografische Verzerrungen bekannt: Eine Studie zeigte Fehlerraten von bis zu 20,8 Prozent bei der Geschlechtsbestimmung dunkelhäutiger Frauen, gegenüber nahezu null bei hellhäutigen Männern. Microsoft kündigte 2018 Verbesserungen an, räumte damit aber zugleich ein, dass das System bei Menschen ethnischer Minderheiten schlechter arbeitete. Diese Schwäche bestand fort, als die Technik in die Gig-Economy eingebaut wurde.",
+      "title_de": "Microsofts Gesichtserkennung mit dokumentierten Hautton-Fehlerraten",
+      "description_de": "Microsofts Face API, später Kern der Uber-Verifizierung, war für demografische Verzerrungen bekannt: Eine Studie zeigte Fehlerraten von bis zu 20,8 Prozent bei der Geschlechtsbestimmung dunkelhäutiger Frauen, gegenüber nahezu null bei hellhäutigen Männern. Microsoft kündigte 2018 Verbesserungen an, räumte damit aber zugleich ein, dass das System bei Menschen ethnischer Minderheiten schlechter arbeitete. Diese Schwäche bestand fort, als die Technik in die Gig-Economy eingebaut wurde.",
+      "title_en": "Microsoft facial recognition with documented skin-tone error rates",
+      "description_en": "Microsoft's Face API, later the core of Uber's verification, was known for demographic bias: a study found error rates as high as 20.8 percent when classifying the gender of darker-skinned women, versus near zero for lighter-skinned men. Microsoft announced improvements in 2018 but in doing so admitted the system performed worse for people from ethnic minorities. That weakness persisted as the technology was embedded into the gig economy.",
+      "sources": [
+        "https://techcrunch.com/2018/06/26/microsofts-facial-recognition-darker-skin-tones-azure-face-api/"
+      ]
+    },
+    {
+      "date": "2020-03",
+      "phase": "doctrine",
+      "title": "Uber Eats macht Echtzeit-Selfie zur Login-Pflicht für Kuriere",
+      "description": "Ab März 2020 verlangte die Uber-Eats-App von Kurieren ein Echtzeit-Selfie ('Real-Time ID'), das per Microsoft Face API mit dem hinterlegten Referenzfoto abgeglichen wurde. Wer nicht erkannt wurde, riskierte die Sperrung des Arbeitszugangs. Uber setzte die automatisierte Verifizierung als Sicherheits- und Identitätsmaßnahme ein, ohne dass eine schlechtere Trefferquote bei dunkelhäutigen Nutzern angemessen abgefangen wurde.",
+      "title_de": "Uber Eats macht Echtzeit-Selfie zur Login-Pflicht für Kuriere",
+      "description_de": "Ab März 2020 verlangte die Uber-Eats-App von Kurieren ein Echtzeit-Selfie ('Real-Time ID'), das per Microsoft Face API mit dem hinterlegten Referenzfoto abgeglichen wurde. Wer nicht erkannt wurde, riskierte die Sperrung des Arbeitszugangs. Uber setzte die automatisierte Verifizierung als Sicherheits- und Identitätsmaßnahme ein, ohne dass eine schlechtere Trefferquote bei dunkelhäutigen Nutzern angemessen abgefangen wurde.",
+      "title_en": "Uber Eats makes real-time selfie a mandatory login for couriers",
+      "description_en": "From March 2020 the Uber Eats app required couriers to take a real-time selfie ('Real-Time ID'), matched against a stored reference photo via Microsoft's Face API. Anyone the system failed to recognise risked being locked out of work. Uber deployed the automated verification as a security and identity measure without adequately compensating for the system's lower match rate on darker-skinned users.",
+      "sources": [
+        "https://help.uber.com/en/driving-and-delivering/article/how-does-uber-verify-my-identity"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "event",
+      "title": "Pa Edrissa Manjang nach wiederholten Erkennungs-Fehlern von der Plattform entfernt",
+      "description": "Der Kurier Pa Edrissa Manjang wurde 2021 von Uber Eats deaktiviert, nachdem ihn die Gesichtsverifizierung wiederholt nicht mit seinem Referenzfoto abgleichen konnte. Er verlor damit seine Einkommensgrundlage, obwohl er die korrekten Selfies eingereicht hatte. Der Fall illustrierte, wie ein bekanntes algorithmisches Bias-Problem unmittelbar in einen Jobverlust für einen Schwarzen Arbeiter umschlug.",
+      "title_de": "Pa Edrissa Manjang nach wiederholten Erkennungs-Fehlern von der Plattform entfernt",
+      "description_de": "Der Kurier Pa Edrissa Manjang wurde 2021 von Uber Eats deaktiviert, nachdem ihn die Gesichtsverifizierung wiederholt nicht mit seinem Referenzfoto abgleichen konnte. Er verlor damit seine Einkommensgrundlage, obwohl er die korrekten Selfies eingereicht hatte. Der Fall illustrierte, wie ein bekanntes algorithmisches Bias-Problem unmittelbar in einen Jobverlust für einen Schwarzen Arbeiter umschlug.",
+      "title_en": "Pa Edrissa Manjang removed from platform after repeated recognition failures",
+      "description_en": "Courier Pa Edrissa Manjang was deactivated by Uber Eats in 2021 after the facial verification repeatedly failed to match him against his reference photo. He lost his source of income despite submitting the correct selfies. The case illustrated how a well-known algorithmic bias problem translated directly into a job loss for a Black worker.",
+      "sources": [
+        "https://www.personneltoday.com/hr/uber-eats-settles-drivers-facial-recognition-discrimination-claim/"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "consequences",
+      "title": "EHRC und ADCU unterstützen Diskriminierungsklage",
+      "description": "Mit Unterstützung der Gleichstellungsbehörde Equality and Human Rights Commission (EHRC) und der Fahrer-Gewerkschaft App Drivers & Couriers Union (ADCU) reichte Manjang eine Klage wegen mittelbarer Rassendiskriminierung und Belästigung ein. Die EHRC bezeichnete den Fall als bedeutsam dafür, dass auch automatisierte Arbeitsentscheidungen dem Gleichstellungsrecht unterliegen.",
+      "title_de": "EHRC und ADCU unterstützen Diskriminierungsklage",
+      "description_de": "Mit Unterstützung der Gleichstellungsbehörde Equality and Human Rights Commission (EHRC) und der Fahrer-Gewerkschaft App Drivers & Couriers Union (ADCU) reichte Manjang eine Klage wegen mittelbarer Rassendiskriminierung und Belästigung ein. Die EHRC bezeichnete den Fall als bedeutsam dafür, dass auch automatisierte Arbeitsentscheidungen dem Gleichstellungsrecht unterliegen.",
+      "title_en": "EHRC and ADCU back discrimination claim",
+      "description_en": "Backed by the Equality and Human Rights Commission (EHRC) and the App Drivers & Couriers Union (ADCU), Manjang brought a claim for indirect race discrimination and harassment. The EHRC framed the case as significant in establishing that automated employment decisions are also subject to equality law.",
+      "sources": [
+        "https://www.personneltoday.com/hr/uber-eats-settles-drivers-facial-recognition-discrimination-claim/"
+      ]
+    },
+    {
+      "date": "2024-03",
+      "phase": "consequences",
+      "title": "Uber Eats schließt Vergleich, EHRC mahnt Verfahrensdauer an",
+      "description": "Im März 2024 einigte sich Uber Eats mit Manjang auf einen finanziellen Vergleich, dessen Höhe nicht offengelegt wurde. Die EHRC und Beobachter betonten, dass es fast drei Jahre dauerte, bis ein einzelner Arbeiter Gerechtigkeit gegen ein algorithmisches System erlangte, und forderten klarere Schutzregeln gegen KI-Bias am Arbeitsplatz.",
+      "title_de": "Uber Eats schließt Vergleich, EHRC mahnt Verfahrensdauer an",
+      "description_de": "Im März 2024 einigte sich Uber Eats mit Manjang auf einen finanziellen Vergleich, dessen Höhe nicht offengelegt wurde. Die EHRC und Beobachter betonten, dass es fast drei Jahre dauerte, bis ein einzelner Arbeiter Gerechtigkeit gegen ein algorithmisches System erlangte, und forderten klarere Schutzregeln gegen KI-Bias am Arbeitsplatz.",
+      "title_en": "Uber Eats settles, EHRC criticises length of the process",
+      "description_en": "In March 2024 Uber Eats reached an undisclosed financial settlement with Manjang. The EHRC and observers stressed that it took almost three years for a single worker to obtain justice against an algorithmic system, and called for clearer safeguards against workplace AI bias.",
+      "sources": [
+        "https://techcrunch.com/2024/03/28/uber-eats-ai-bias-settlement/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/03/28/uber-eats-ai-bias-settlement/",

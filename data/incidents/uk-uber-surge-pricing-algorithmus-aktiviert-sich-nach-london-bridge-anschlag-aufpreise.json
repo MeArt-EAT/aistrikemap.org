@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Bewegungsfreiheit",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Bewegungsfreiheit",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Freedom of movement",
+    "Protection from manipulation",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Uber Technologies",
@@ -44,7 +59,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2012-05",
+      "phase": "infrastructure",
+      "title": "Einführung des dynamischen Surge-Pricing-Algorithmus",
+      "description": "Uber führte 2012 sein dynamisches Preismodell ('Surge Pricing') ein, um Nachfragespitzen mit dem verfügbaren Fahrerangebot auszugleichen. Der Algorithmus erhöht den Fahrpreis automatisch und in Echtzeit, sobald die Nachfrage in einem Gebiet das Angebot übersteigt, gemessen an offenen Fahranfragen und aktiven Fahrern. Das System ist rein nachfragegetrieben und unterscheidet nicht zwischen normaler Nachfrage und einer Notlage.",
+      "title_de": "Einführung des dynamischen Surge-Pricing-Algorithmus",
+      "description_de": "Uber führte 2012 sein dynamisches Preismodell ('Surge Pricing') ein, um Nachfragespitzen mit dem verfügbaren Fahrerangebot auszugleichen. Der Algorithmus erhöht den Fahrpreis automatisch und in Echtzeit, sobald die Nachfrage in einem Gebiet das Angebot übersteigt, gemessen an offenen Fahranfragen und aktiven Fahrern. Das System ist rein nachfragegetrieben und unterscheidet nicht zwischen normaler Nachfrage und einer Notlage.",
+      "title_en": "Introduction of the dynamic surge pricing algorithm",
+      "description_en": "Uber introduced its dynamic pricing model ('surge pricing') in 2012 to balance demand spikes against available driver supply. The algorithm raises the fare automatically and in real time whenever demand in an area exceeds supply, measured by open ride requests and active drivers. The system is purely demand-driven and does not distinguish normal demand from an emergency.",
+      "sources": [
+        "https://time.com/3633469/uber-surge-pricing/"
+      ]
+    },
+    {
+      "date": "2014-12",
+      "phase": "doctrine",
+      "title": "Notfall-Caps nach dem Sydney-Belagerungs-Skandal",
+      "description": "Nach heftiger Kritik am Surge Pricing während der Geiselnahme im Lindt-Café in Sydney (Dezember 2014) sagte Uber zu, die Aufschläge in Notlagen und Katastrophen zu deckeln. Der Cap orientiert sich am vierthöchsten regulären Surge-Wert der vorangegangenen zwei Monate; bei staatlichem Notstand sollte das Surge automatisch begrenzt werden. Die Aktivierung dieser Begrenzung blieb jedoch teils manuell und griff bei plötzlichen Anschlägen nicht sofort.",
+      "title_de": "Notfall-Caps nach dem Sydney-Belagerungs-Skandal",
+      "description_de": "Nach heftiger Kritik am Surge Pricing während der Geiselnahme im Lindt-Café in Sydney (Dezember 2014) sagte Uber zu, die Aufschläge in Notlagen und Katastrophen zu deckeln. Der Cap orientiert sich am vierthöchsten regulären Surge-Wert der vorangegangenen zwei Monate; bei staatlichem Notstand sollte das Surge automatisch begrenzt werden. Die Aktivierung dieser Begrenzung blieb jedoch teils manuell und griff bei plötzlichen Anschlägen nicht sofort.",
+      "title_en": "Emergency caps after the Sydney siege scandal",
+      "description_en": "After fierce criticism of surge pricing during the Lindt Cafe hostage siege in Sydney (December 2014), Uber agreed to cap multipliers during emergencies and disasters. The cap is pegged to the fourth-highest regular surge value of the previous two months; during a declared state of emergency surge was meant to be limited automatically. Yet activating that limit remained partly manual and did not engage immediately during sudden attacks.",
+      "sources": [
+        "https://time.com/2967490/uber-agrees-to-limit-surge-pricing-during-emergencies/"
+      ]
+    },
+    {
+      "date": "2017-06-03",
+      "phase": "event",
+      "title": "Surge Pricing aktiviert sich nach dem London-Bridge-Anschlag",
+      "description": "Nach dem Terroranschlag auf der London Bridge und am Borough Market am Abend des 3. Juni 2017 (acht Tote) aktivierte Ubers Algorithmus automatisch Surge-Aufschläge für Fahrten aus dem Gebiet, während Menschen zu fliehen versuchten. Nutzer:innen berichteten von Preisen bis zur 2,1-fachen Höhe. Es war nach den Anschlägen in Manchester und Westminster 2017 bereits das dritte Mal, dass Ubers Preisalgorithmus während einer Londoner Notlage in die Kritik geriet.",
+      "title_de": "Surge Pricing aktiviert sich nach dem London-Bridge-Anschlag",
+      "description_de": "Nach dem Terroranschlag auf der London Bridge und am Borough Market am Abend des 3. Juni 2017 (acht Tote) aktivierte Ubers Algorithmus automatisch Surge-Aufschläge für Fahrten aus dem Gebiet, während Menschen zu fliehen versuchten. Nutzer:innen berichteten von Preisen bis zur 2,1-fachen Höhe. Es war nach den Anschlägen in Manchester und Westminster 2017 bereits das dritte Mal, dass Ubers Preisalgorithmus während einer Londoner Notlage in die Kritik geriet.",
+      "title_en": "Surge pricing activates after the London Bridge attack",
+      "description_en": "Following the London Bridge and Borough Market terror attack on the evening of 3 June 2017 (eight dead), Uber's algorithm automatically activated surge multipliers for rides from the area while people were trying to flee. Users reported prices up to 2.1x normal. After the Manchester and Westminster attacks of 2017, it was already the third time Uber's pricing algorithm had drawn criticism during a London emergency.",
+      "sources": [
+        "https://fortune.com/2017/06/05/uber-london-attack-surge/"
+      ]
+    },
+    {
+      "date": "2017-06-04",
+      "phase": "consequences",
+      "title": "Uber deaktiviert Surge manuell und erstattet Fahrten",
+      "description": "Uber gab an, das Surge Pricing rund um den Anschlagsort gegen 22:50 Uhr und kurz darauf in ganz Zentral-London ausgesetzt zu haben, und erstattete betroffene Fahrten. Nutzer:innen bezweifelten den Zeitpunkt und berichteten von Aufschlägen bis nach Mitternacht. Der wiederholte Vorfall verstärkte die öffentliche Debatte über die ethische Verantwortung nachfragegetriebener Algorithmen in Notlagen und über die Verlässlichkeit der manuellen Notfall-Deaktivierung.",
+      "title_de": "Uber deaktiviert Surge manuell und erstattet Fahrten",
+      "description_de": "Uber gab an, das Surge Pricing rund um den Anschlagsort gegen 22:50 Uhr und kurz darauf in ganz Zentral-London ausgesetzt zu haben, und erstattete betroffene Fahrten. Nutzer:innen bezweifelten den Zeitpunkt und berichteten von Aufschlägen bis nach Mitternacht. Der wiederholte Vorfall verstärkte die öffentliche Debatte über die ethische Verantwortung nachfragegetriebener Algorithmen in Notlagen und über die Verlässlichkeit der manuellen Notfall-Deaktivierung.",
+      "title_en": "Uber manually disables surge and refunds rides",
+      "description_en": "Uber stated it had suspended surge pricing around the attack site at about 10:50 pm and shortly afterwards across all of central London, and refunded affected rides. Users disputed the timing and reported multipliers continuing past midnight. The repeated incident intensified the public debate over the ethical responsibility of demand-driven algorithms in emergencies and over the reliability of the manual emergency shut-off.",
+      "sources": [
+        "https://www.itpro.co.uk/public-sector/28787/uber-refunds-journeys-during-london-bridge-terror-attack"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theguardian.com/technology/2017/jun/04/uber-london-bridge-attack-surge-pricing-on-fares-criticised",

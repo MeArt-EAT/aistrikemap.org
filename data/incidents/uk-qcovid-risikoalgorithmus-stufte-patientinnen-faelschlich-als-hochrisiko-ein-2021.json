@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Datenschutz",
+    "Bewegungsfreiheit",
+    "Gleichbehandlung",
+    "faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Datenschutz",
+    "Bewegungsfreiheit",
+    "Gleichbehandlung",
+    "faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Data protection",
+    "Freedom of movement",
+    "Equal treatment",
+    "Fair procedure"
+  ],
   "asm:actors": [
     {
       "name": "NHS Digital",
@@ -53,7 +71,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "QCovid-Risikomodell aus 8 Millionen kodierten Patientenakten trainiert",
+      "description": "Im Auftrag des englischen Chief Medical Officer entwickelte ein von der University of Oxford geführtes Team 2020 das QCovid-Modell. Es wertete anonymisierte Hausarzt-, Krankenhaus- und Sterbedaten von über 8 Millionen Menschen aus, um aus Alter, Geschlecht, Ethnie, BMI und kodierten Vorerkrankungen ein Corona-Risiko zu schätzen. Die Abhängigkeit von Routine-Kodierungen wurde später zur Fehlerquelle, weil etwa Schwangerschaftsdiabetes und Diabetes mellitus nicht sauber getrennt waren.",
+      "title_de": "QCovid-Risikomodell aus 8 Millionen kodierten Patientenakten trainiert",
+      "description_de": "Im Auftrag des englischen Chief Medical Officer entwickelte ein von der University of Oxford geführtes Team 2020 das QCovid-Modell. Es wertete anonymisierte Hausarzt-, Krankenhaus- und Sterbedaten von über 8 Millionen Menschen aus, um aus Alter, Geschlecht, Ethnie, BMI und kodierten Vorerkrankungen ein Corona-Risiko zu schätzen. Die Abhängigkeit von Routine-Kodierungen wurde später zur Fehlerquelle, weil etwa Schwangerschaftsdiabetes und Diabetes mellitus nicht sauber getrennt waren.",
+      "title_en": "QCovid risk model trained on 8 million coded patient records",
+      "description_en": "Commissioned by England's Chief Medical Officer, a University of Oxford-led team built the QCovid model in 2020. It analysed anonymised GP, hospital and mortality data on more than 8 million people to estimate COVID-19 risk from age, sex, ethnicity, BMI and coded pre-existing conditions. The reliance on routine coding later became a source of error because, for example, gestational diabetes and diabetes mellitus were not cleanly separated.",
+      "sources": [
+        "https://www.ox.ac.uk/news/2021-02-16-oxford-led-technology-help-those-high-risk-covid-19"
+      ]
+    },
+    {
+      "date": "2021-02",
+      "phase": "doctrine",
+      "title": "Regierung ordnet QCovid-gestützte Erweiterung der Shielding-Liste an",
+      "description": "Im Februar 2021 entschied die britische Regierung, mit QCovid zusätzliche Risikopatienten zu identifizieren und vorsorglich auf die nationale Shielded Patient List zu setzen sowie bei der Impfung zu priorisieren. Rund 1,7 Millionen Menschen wurden dadurch neu zum Abschotten aufgefordert. Bei unvollständigen oder mehrdeutigen Daten griff das System bewusst auf die höhere, sicherheitsorientierte Risikostufe zurück.",
+      "title_de": "Regierung ordnet QCovid-gestützte Erweiterung der Shielding-Liste an",
+      "description_de": "Im Februar 2021 entschied die britische Regierung, mit QCovid zusätzliche Risikopatienten zu identifizieren und vorsorglich auf die nationale Shielded Patient List zu setzen sowie bei der Impfung zu priorisieren. Rund 1,7 Millionen Menschen wurden dadurch neu zum Abschotten aufgefordert. Bei unvollständigen oder mehrdeutigen Daten griff das System bewusst auf die höhere, sicherheitsorientierte Risikostufe zurück.",
+      "title_en": "Government orders QCovid-driven expansion of the shielding list",
+      "description_en": "In February 2021 the UK government decided to use QCovid to identify additional at-risk patients, add them to the national Shielded Patient List on a precautionary basis and prioritise them for vaccination. Around 1.7 million people were newly told to shield. Where data were incomplete or ambiguous, the system deliberately defaulted to the higher, safety-oriented risk level.",
+      "sources": [
+        "https://www.gov.uk/government/news/new-technology-to-help-identify-those-at-high-risk-from-covid-19"
+      ]
+    },
+    {
+      "date": "2021-02",
+      "phase": "event",
+      "title": "Gesunde Frauen mit früherer Schwangerschaftsdiabetes fälschlich als Hochrisiko eingestuft",
+      "description": "Kurz nach dem Rollout meldeten sich gesunde Frauen bei ihren Hausärzten, weil sie zum Abschotten aufgefordert worden waren, obwohl sie nicht hochgefährdet waren. NHS Digital bestätigte, dass das Modell frühere Schwangerschaftsdiabetes teils als Diabetes mellitus las und die Betroffenen dadurch höher einstufte. Über 400.000 Menschen erhielten überhöhte Risikowerte; das Royal College of Obstetricians and Gynaecologists betonte, es gebe keinen Beleg, dass Schwangerschaftsdiabetes allein das Covid-Risiko erhöhe.",
+      "title_de": "Gesunde Frauen mit früherer Schwangerschaftsdiabetes fälschlich als Hochrisiko eingestuft",
+      "description_de": "Kurz nach dem Rollout meldeten sich gesunde Frauen bei ihren Hausärzten, weil sie zum Abschotten aufgefordert worden waren, obwohl sie nicht hochgefährdet waren. NHS Digital bestätigte, dass das Modell frühere Schwangerschaftsdiabetes teils als Diabetes mellitus las und die Betroffenen dadurch höher einstufte. Über 400.000 Menschen erhielten überhöhte Risikowerte; das Royal College of Obstetricians and Gynaecologists betonte, es gebe keinen Beleg, dass Schwangerschaftsdiabetes allein das Covid-Risiko erhöhe.",
+      "title_en": "Healthy women with prior gestational diabetes wrongly flagged as high-risk",
+      "description_en": "Shortly after rollout, healthy women contacted their GPs because they had been told to shield despite not being high-risk. NHS Digital confirmed the model in some cases read prior gestational diabetes as diabetes mellitus, pushing those affected into a higher tier. More than 400,000 people received inflated risk scores; the Royal College of Obstetricians and Gynaecologists stressed there was no evidence that gestational diabetes alone raised COVID-19 risk.",
+      "sources": [
+        "https://pulsetoday.co.uk/news/clinical-areas/diabetes/history-of-gestational-diabetes-prompting-patients-to-shield-under-new-algorithm"
+      ]
+    },
+    {
+      "date": "2021-02-17",
+      "phase": "consequences",
+      "title": "NHS Digital leitet Prüfung ein, Ärzte fordern Datenkontrolle",
+      "description": "NHS Digital kündigte eine Überprüfung des Algorithmus an und bezeichnete QCovid als 'lebendes Modell', das fortlaufend verfeinert werde. NHS-England-Diabetesberater Dr. Partha Kar rief Behörden auf, die zugrunde liegenden Daten zu prüfen; das Royal College of Obstetricians and Gynaecologists startete eine eigene Untersuchung. Betroffene mussten teils wochenlang grundlos abschotten, bevor ihre Einstufung korrigiert wurde.",
+      "title_de": "NHS Digital leitet Prüfung ein, Ärzte fordern Datenkontrolle",
+      "description_de": "NHS Digital kündigte eine Überprüfung des Algorithmus an und bezeichnete QCovid als 'lebendes Modell', das fortlaufend verfeinert werde. NHS-England-Diabetesberater Dr. Partha Kar rief Behörden auf, die zugrunde liegenden Daten zu prüfen; das Royal College of Obstetricians and Gynaecologists startete eine eigene Untersuchung. Betroffene mussten teils wochenlang grundlos abschotten, bevor ihre Einstufung korrigiert wurde.",
+      "title_en": "NHS Digital launches review as doctors demand data checks",
+      "description_en": "NHS Digital announced a review of the algorithm, calling QCovid a 'living model' that would be continuously refined. NHS England diabetes adviser Dr Partha Kar urged officials to check the underlying data, and the Royal College of Obstetricians and Gynaecologists launched its own inquiry. Some of those affected shielded needlessly for weeks before their classification was corrected.",
+      "sources": [
+        "https://www.digitalhealth.net/2021/02/nhs-digital-reviewing-algorithm-after-women-incorrectly-told-to-shield/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.digitalhealth.net/2021/02/nhs-digital-reviewing-algorithm-after-women-incorrectly-told-to-shield/",

@@ -31,9 +31,24 @@
     "deepfakes",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "faires Verfahren",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "faires Verfahren",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Fair procedure",
+    "Protection from manipulation",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Anonymous Airbnb host",
@@ -52,7 +67,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024",
+      "phase": "infrastructure",
+      "title": "Breit verfügbare generative Bildwerkzeuge und metadaten-zentrierte Prüfung",
+      "description": "Bis 2025 wurden generative KI-Bildwerkzeuge so leistungsfähig und zugänglich, dass fotorealistische Schäden ohne reale Vorlage erzeugt oder in echte Fotos eingefügt werden konnten. Airbnbs Streitschlichtung stützte sich auf eingereichte Fotos als Beweismittel, während gängige Bildprüfsysteme primär auf Metadaten-Manipulation statt auf pixelbasierte KI-Erzeugung ausgelegt waren. Vollständig KI-generierte Bilder enthalten keine klassischen Bearbeitungsspuren und unterliefen so die Prüfung.",
+      "title_de": "Breit verfügbare generative Bildwerkzeuge und metadaten-zentrierte Prüfung",
+      "description_de": "Bis 2025 wurden generative KI-Bildwerkzeuge so leistungsfähig und zugänglich, dass fotorealistische Schäden ohne reale Vorlage erzeugt oder in echte Fotos eingefügt werden konnten. Airbnbs Streitschlichtung stützte sich auf eingereichte Fotos als Beweismittel, während gängige Bildprüfsysteme primär auf Metadaten-Manipulation statt auf pixelbasierte KI-Erzeugung ausgelegt waren. Vollständig KI-generierte Bilder enthalten keine klassischen Bearbeitungsspuren und unterliefen so die Prüfung.",
+      "title_en": "Widely available generative image tools and metadata-centric verification",
+      "description_en": "By 2025 generative AI image tools had become powerful and accessible enough to create photorealistic damage with no real basis or to insert it into genuine photos. Airbnb's dispute resolution relied on submitted photos as evidence, while common image-verification systems were built mainly to detect metadata manipulation rather than pixel-level AI generation. Fully AI-generated images contain no classic editing traces and thus evaded the checks.",
+      "sources": [
+        "https://www.rentalscaleup.com/ai-airbnb-scams-fake-damage-claims/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "doctrine",
+      "title": "Host-zentrierte Schadensregulierung mit Superhost-Vertrauensbonus",
+      "description": "Airbnbs Schadensregulierungsprozess (AirCover for Hosts) erlaubt es Gastgebern, nach der Abreise Schadensersatz zu fordern und Fotobelege einzureichen, während Gäste die Beweislast für die Widerlegung tragen. Designierte 'Superhosts' genossen faktisch einen Vertrauensbonus, der durch frei verfügbare KI-Werkzeuge ausgehöhlt wurde. Eine systematische Echtheitsprüfung eingereichter Schadensfotos auf KI-Manipulation war nicht vorgesehen.",
+      "title_de": "Host-zentrierte Schadensregulierung mit Superhost-Vertrauensbonus",
+      "description_de": "Airbnbs Schadensregulierungsprozess (AirCover for Hosts) erlaubt es Gastgebern, nach der Abreise Schadensersatz zu fordern und Fotobelege einzureichen, während Gäste die Beweislast für die Widerlegung tragen. Designierte 'Superhosts' genossen faktisch einen Vertrauensbonus, der durch frei verfügbare KI-Werkzeuge ausgehöhlt wurde. Eine systematische Echtheitsprüfung eingereichter Schadensfotos auf KI-Manipulation war nicht vorgesehen.",
+      "title_en": "Host-centric damage settlement with a superhost trust bonus",
+      "description_en": "Airbnb's damage settlement process (AirCover for Hosts) lets hosts claim compensation after departure and submit photo evidence, while guests bear the burden of rebuttal. Designated 'superhosts' effectively enjoyed a trust bonus that freely available AI tools eroded. There was no systematic authenticity check of submitted damage photos for AI manipulation.",
+      "sources": [
+        "https://www.thehostreport.com/news/airbnb-bans-ai-evidence-for-damage-claims-in-new-terms-of-service-update"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "phase": "event",
+      "title": "Schadensvorwurf über 12.000 Pfund mit KI-manipulierten Fotos",
+      "description": "Eine in London ansässige Akademikerin reiste vorzeitig aus einem Manhattaner Airbnb-Apartment ab. Der Gastgeber forderte über 12.000 Pfund Schadensersatz und legte Fotos eines angeblich gesprungenen Couchtischs sowie weiterer Schäden vor. Die Gästin bemerkte, dass der Riss auf zwei Bildern desselben Tisches Form und Verlauf wechselte, ein Hinweis auf eine durch generative KI 'halluzinierte' Manipulation.",
+      "title_de": "Schadensvorwurf über 12.000 Pfund mit KI-manipulierten Fotos",
+      "description_de": "Eine in London ansässige Akademikerin reiste vorzeitig aus einem Manhattaner Airbnb-Apartment ab. Der Gastgeber forderte über 12.000 Pfund Schadensersatz und legte Fotos eines angeblich gesprungenen Couchtischs sowie weiterer Schäden vor. Die Gästin bemerkte, dass der Riss auf zwei Bildern desselben Tisches Form und Verlauf wechselte, ein Hinweis auf eine durch generative KI 'halluzinierte' Manipulation.",
+      "title_en": "GBP 12,000 damage claim using AI-manipulated photos",
+      "description_en": "A London-based academic left a Manhattan Airbnb apartment early. The host claimed more than GBP 12,000 in damages, submitting photos of an allegedly cracked coffee table and other damage. The guest noticed that across two images of the same table the crack changed shape and direction, a sign of a manipulation 'hallucinated' by generative AI.",
+      "sources": [
+        "https://www.techspot.com/news/108921-airbnb-guest-host-used-ai-generated-images-false.html"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "phase": "consequences",
+      "title": "Airbnb erstattet Buchung, verwarnt Host und verschärft AGB",
+      "description": "Nachdem Guardian Money den Fall an Airbnb herantrug, kehrte das Unternehmen seine Position um, gab dem Einspruch der Gästin statt und erstattete die volle Buchung von 4.269 Pfund; die negative Bewertung wurde entfernt. Der als Superhost geführte Gastgeber wurde verwarnt und mit Entfernung bei Wiederholung bedroht. Der Fall trug dazu bei, dass Airbnb seine Nutzungsbedingungen verschärfte und KI-generierte Bilder als Schadensbeweis untersagte.",
+      "title_de": "Airbnb erstattet Buchung, verwarnt Host und verschärft AGB",
+      "description_de": "Nachdem Guardian Money den Fall an Airbnb herantrug, kehrte das Unternehmen seine Position um, gab dem Einspruch der Gästin statt und erstattete die volle Buchung von 4.269 Pfund; die negative Bewertung wurde entfernt. Der als Superhost geführte Gastgeber wurde verwarnt und mit Entfernung bei Wiederholung bedroht. Der Fall trug dazu bei, dass Airbnb seine Nutzungsbedingungen verschärfte und KI-generierte Bilder als Schadensbeweis untersagte.",
+      "title_en": "Airbnb refunds the booking, warns the host and tightens its terms",
+      "description_en": "After Guardian Money raised the case with Airbnb, the company reversed its position, upheld the guest's appeal and refunded the full GBP 4,269 booking; the negative review was removed. The host, listed as a superhost, was warned and threatened with removal if it happened again. The case contributed to Airbnb tightening its terms of service and banning AI-generated images as damage evidence.",
+      "sources": [
+        "https://www.thehostreport.com/news/airbnb-bans-ai-evidence-for-damage-claims-in-new-terms-of-service-update"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.frommers.com/tips/money-and-currency/airbnb-scam-warning-ai-altered-photos-used-to-accuse-guest-of-16-000-in-damages",

@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Physical integrity",
+    "Right to life",
+    "Consumer protection",
+    "Protection from discrimination"
+  ],
   "asm:actors": [
     {
       "name": "TUI Airways",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-04",
+      "phase": "infrastructure",
+      "title": "Im Ausland programmierte Titel-Logik im Check-in-System",
+      "description": "Das Abfertigungssystem (Departure Control System) von TUI Airways stützt sich auf hinterlegte Standardgewichte je Passagierkategorie, um das Lastenblatt und das Startgewicht zu berechnen. Die zugrundeliegende Titel-Logik wurde nicht in Großbritannien entwickelt, sondern in einem Land, in dem 'Miss' für ein Kind und 'Ms' für eine erwachsene Frau steht. Dadurch wurde jede mit 'Miss' angesprochene Passagierin systemseitig der Kinderkategorie mit 35 kg statt 69 kg zugeordnet.",
+      "title_de": "Im Ausland programmierte Titel-Logik im Check-in-System",
+      "description_de": "Das Abfertigungssystem (Departure Control System) von TUI Airways stützt sich auf hinterlegte Standardgewichte je Passagierkategorie, um das Lastenblatt und das Startgewicht zu berechnen. Die zugrundeliegende Titel-Logik wurde nicht in Großbritannien entwickelt, sondern in einem Land, in dem 'Miss' für ein Kind und 'Ms' für eine erwachsene Frau steht. Dadurch wurde jede mit 'Miss' angesprochene Passagierin systemseitig der Kinderkategorie mit 35 kg statt 69 kg zugeordnet.",
+      "title_en": "Title logic coded abroad in the check-in system",
+      "description_en": "TUI Airways' departure control system relies on stored standard weights per passenger category to compute the load sheet and take-off weight. The underlying title logic was not developed in the UK but in a country where 'Miss' denotes a child and 'Ms' an adult woman. As a result, every passenger titled 'Miss' was automatically assigned to the child category at 35 kg instead of 69 kg.",
+      "sources": [
+        "https://theregister.com/AMP/2021/04/08/tui_software_mistake"
+      ]
+    },
+    {
+      "date": "2020-07",
+      "phase": "doctrine",
+      "title": "Automatisierte Lastenblatt-Berechnung ohne Plausibilitätsprüfung",
+      "description": "TUI verließ sich betrieblich auf die automatisch generierten Lastenblätter des Systems, ohne eine Gegenprüfung gegen die tatsächliche Passagierzusammensetzung zu erzwingen. Das Startgewicht und die daraus abgeleitete Triebwerksleistung wurden direkt aus den Systemwerten übernommen. Eine ungewöhnlich hohe Zahl an 'Kindern' an Bord löste keine Warnung aus.",
+      "title_de": "Automatisierte Lastenblatt-Berechnung ohne Plausibilitätsprüfung",
+      "description_de": "TUI verließ sich betrieblich auf die automatisch generierten Lastenblätter des Systems, ohne eine Gegenprüfung gegen die tatsächliche Passagierzusammensetzung zu erzwingen. Das Startgewicht und die daraus abgeleitete Triebwerksleistung wurden direkt aus den Systemwerten übernommen. Eine ungewöhnlich hohe Zahl an 'Kindern' an Bord löste keine Warnung aus.",
+      "title_en": "Automated load-sheet calculation without a plausibility check",
+      "description_en": "Operationally, TUI relied on the system's automatically generated load sheets without enforcing a cross-check against the real passenger mix. The take-off weight and the derived engine thrust were taken straight from the system values. An unusually high number of 'children' on board triggered no warning.",
+      "sources": [
+        "https://onemileatatime.com/tui-737-take-off-overweight/"
+      ]
+    },
+    {
+      "date": "2020-07-21",
+      "phase": "event",
+      "title": "Drei TUI-Flüge starten mit fehlerhaften Lastenblättern",
+      "description": "Am 21. Juli 2020 starteten drei TUI-Airways-Flüge ab britischen Flughäfen mit zu niedrig berechnetem Startgewicht. Auf Flug BY7226 (Boeing 737-800, G-TAWG) von Birmingham nach Palma de Mallorca wurden 38 erwachsene Frauen als Kinder gezählt, sodass das berechnete Gewicht um 1.244 kg unter der tatsächlichen Masse lag. Die Maschine startete mit 88,3 % statt der erforderlichen 88,9 % Triebwerksleistung und erreichte ihr Ziel sicher.",
+      "title_de": "Drei TUI-Flüge starten mit fehlerhaften Lastenblättern",
+      "description_de": "Am 21. Juli 2020 starteten drei TUI-Airways-Flüge ab britischen Flughäfen mit zu niedrig berechnetem Startgewicht. Auf Flug BY7226 (Boeing 737-800, G-TAWG) von Birmingham nach Palma de Mallorca wurden 38 erwachsene Frauen als Kinder gezählt, sodass das berechnete Gewicht um 1.244 kg unter der tatsächlichen Masse lag. Die Maschine startete mit 88,3 % statt der erforderlichen 88,9 % Triebwerksleistung und erreichte ihr Ziel sicher.",
+      "title_en": "Three TUI flights depart with inaccurate load sheets",
+      "description_en": "On 21 July 2020, three TUI Airways flights departed UK airports with an undercalculated take-off weight. On flight BY7226 (Boeing 737-800, G-TAWG) from Birmingham to Palma de Mallorca, 38 adult women were counted as children, leaving the calculated weight 1,244 kg below the real mass. The aircraft took off using 88.3% thrust instead of the required 88.9% and reached its destination safely.",
+      "sources": [
+        "https://simpleflying.com/tui-under-power-737-take-off/"
+      ]
+    },
+    {
+      "date": "2021-04",
+      "phase": "consequences",
+      "title": "AAIB stuft Fall als 'serious incident' ein, TUI führt manuelle Prüfungen ein",
+      "description": "Die britische Flugunfalluntersuchung AAIB stufte den Vorfall als 'serious incident' ein und benannte den Software-Fehler als Ursache. TUI führte tägliche manuelle Korrekturen ein, um 'Miss' auf 'Ms' zu ändern, ergänzte eine Zweitprüfung der Operations-Abteilung gegen die gebuchte Passagierliste und briefte die Bodenabfertiger erneut. Der Fall wurde international als Beispiel für kulturell verzerrte Software-Annahmen rezipiert.",
+      "title_de": "AAIB stuft Fall als 'serious incident' ein, TUI führt manuelle Prüfungen ein",
+      "description_de": "Die britische Flugunfalluntersuchung AAIB stufte den Vorfall als 'serious incident' ein und benannte den Software-Fehler als Ursache. TUI führte tägliche manuelle Korrekturen ein, um 'Miss' auf 'Ms' zu ändern, ergänzte eine Zweitprüfung der Operations-Abteilung gegen die gebuchte Passagierliste und briefte die Bodenabfertiger erneut. Der Fall wurde international als Beispiel für kulturell verzerrte Software-Annahmen rezipiert.",
+      "title_en": "AAIB classes it a 'serious incident'; TUI introduces manual checks",
+      "description_en": "The UK Air Accidents Investigation Branch classed the event a 'serious incident' and named the software flaw as the cause. TUI introduced daily manual corrections to change 'Miss' to 'Ms', added a second check by the Operations department against the booked passenger list, and re-briefed ground handling agents. The case was reported internationally as an example of culturally biased software assumptions.",
+      "sources": [
+        "https://theregister.com/AMP/2021/04/08/tui_software_mistake"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2021/04/08/tui_software_mistake/",

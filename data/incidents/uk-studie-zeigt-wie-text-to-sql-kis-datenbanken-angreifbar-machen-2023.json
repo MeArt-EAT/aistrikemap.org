@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI; Baidu (Text-to-SQL vendors)",
@@ -47,7 +59,74 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "Text-to-SQL-Dienste auf Basis großer Sprachmodelle werden Massenware",
+      "description": "Mit dem Start von ChatGPT und einer Welle kommerzieller Text-to-SQL-Tools (u.a. BAIDU-UNIT, AI2SQL, AIHELPERBOT, Text2SQL, ToolSKE) wird das Übersetzen natürlicher Sprache in Datenbankabfragen breit verfügbar. Diese Systeme generieren ausführbaren SQL-Code direkt aus Nutzereingaben und werden ohne harte Validierung an produktive Datenbanken angebunden.",
+      "title_de": "Text-to-SQL-Dienste auf Basis großer Sprachmodelle werden Massenware",
+      "description_de": "Mit dem Start von ChatGPT und einer Welle kommerzieller Text-to-SQL-Tools (u.a. BAIDU-UNIT, AI2SQL, AIHELPERBOT, Text2SQL, ToolSKE) wird das Übersetzen natürlicher Sprache in Datenbankabfragen breit verfügbar. Diese Systeme generieren ausführbaren SQL-Code direkt aus Nutzereingaben und werden ohne harte Validierung an produktive Datenbanken angebunden.",
+      "title_en": "LLM-based text-to-SQL services become mass-market",
+      "description_en": "With the launch of ChatGPT and a wave of commercial text-to-SQL tools (including BAIDU-UNIT, AI2SQL, AIHELPERBOT, Text2SQL, ToolSKE), translating natural language into database queries becomes widely available. These systems generate executable SQL code directly from user input and are wired to production databases without strict validation.",
+      "sources": [
+        "https://techxplore.com/news/2023-10-chatgpt-ai-tools-malicious-code.html"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Schnelle Produktivintegration ohne Sicherheitsprüfung der KI-Ausgaben",
+      "description": "Anbieter und Anwender betten Text-to-SQL-KIs in Geschäftsanwendungen ein, um Datenbankzugriff zu vereinfachen. Die KI-Ausgabe wird dabei als vertrauenswürdig behandelt; Sicherheitsmodelle gehen davon aus, dass die generierten Abfragen harmlos sind. Eine systematische Prüfung auf Manipulierbarkeit der Modelle findet vor dem Praxiseinsatz nicht statt.",
+      "title_de": "Schnelle Produktivintegration ohne Sicherheitsprüfung der KI-Ausgaben",
+      "description_de": "Anbieter und Anwender betten Text-to-SQL-KIs in Geschäftsanwendungen ein, um Datenbankzugriff zu vereinfachen. Die KI-Ausgabe wird dabei als vertrauenswürdig behandelt; Sicherheitsmodelle gehen davon aus, dass die generierten Abfragen harmlos sind. Eine systematische Prüfung auf Manipulierbarkeit der Modelle findet vor dem Praxiseinsatz nicht statt.",
+      "title_en": "Rapid production integration without security vetting of AI output",
+      "description_en": "Vendors and users embed text-to-SQL AIs into business applications to simplify database access. The AI output is treated as trustworthy; security models assume the generated queries are benign. No systematic testing of the models' manipulability happens before real-world deployment.",
+      "sources": [
+        "https://www.newswise.com/articles/security-threats-in-ais-such-as-chatgpt-revealed-by-researchers"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "event",
+      "title": "Sheffield-Studie weist Angriffe über sechs Text-to-SQL-Systeme nach",
+      "description": "Forschende der University of Sheffield demonstrieren erstmals real, dass sich Text-to-SQL-Systeme - darunter ChatGPT - so manipulieren lassen, dass sie Code erzeugen, mit dem sich sensible Daten stehlen, Datenbanken verändern oder Dienste per Denial-of-Service lahmlegen lassen. Sie finden Schwachstellen in sechs kommerziellen KI-Tools und zeigen zudem Backdoor-Angriffe durch vergiftete Trainingsdaten. Die Ergebnisse werden im Oktober 2023 auf der Fachkonferenz ISSRE vorgestellt.",
+      "title_de": "Sheffield-Studie weist Angriffe über sechs Text-to-SQL-Systeme nach",
+      "description_de": "Forschende der University of Sheffield demonstrieren erstmals real, dass sich Text-to-SQL-Systeme - darunter ChatGPT - so manipulieren lassen, dass sie Code erzeugen, mit dem sich sensible Daten stehlen, Datenbanken verändern oder Dienste per Denial-of-Service lahmlegen lassen. Sie finden Schwachstellen in sechs kommerziellen KI-Tools und zeigen zudem Backdoor-Angriffe durch vergiftete Trainingsdaten. Die Ergebnisse werden im Oktober 2023 auf der Fachkonferenz ISSRE vorgestellt.",
+      "title_en": "Sheffield study demonstrates attacks across six text-to-SQL systems",
+      "description_en": "University of Sheffield researchers show for the first time in practice that text-to-SQL systems including ChatGPT can be manipulated to produce code usable to steal sensitive data, alter databases or take services down via denial-of-service. They find vulnerabilities in six commercial AI tools and also demonstrate backdoor attacks via poisoned training data. The findings are presented at the ISSRE conference in October 2023.",
+      "sources": [
+        "https://sheffield.ac.uk/news/security-threats-ais-such-chatgpt-revealed-researchers",
+        "https://techxplore.com/news/2023-10-chatgpt-ai-tools-malicious-code.html"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "consequences",
+      "title": "OpenAI behebt die gemeldeten ChatGPT-Schwachstellen",
+      "description": "Nach verantwortungsvoller Offenlegung durch das Forschungsteam behebt OpenAI die konkret gemeldeten ChatGPT-Schwachstellen (laut Sheffield bereits Anfang 2023). Das Team arbeitet mit Akteuren der Cybersicherheits-Community zusammen, um weitere betroffene Systeme abzusichern.",
+      "title_de": "OpenAI behebt die gemeldeten ChatGPT-Schwachstellen",
+      "description_de": "Nach verantwortungsvoller Offenlegung durch das Forschungsteam behebt OpenAI die konkret gemeldeten ChatGPT-Schwachstellen (laut Sheffield bereits Anfang 2023). Das Team arbeitet mit Akteuren der Cybersicherheits-Community zusammen, um weitere betroffene Systeme abzusichern.",
+      "title_en": "OpenAI fixes the reported ChatGPT vulnerabilities",
+      "description_en": "Following responsible disclosure by the research team, OpenAI fixes the specific ChatGPT issues reported. The team works with stakeholders across the cybersecurity community to harden other affected systems.",
+      "sources": [
+        "https://sheffield.ac.uk/news/security-threats-ais-such-chatgpt-revealed-researchers"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "consequences",
+      "title": "Warnung vor systemischem Risiko für KI-gestützte Datenbankzugriffe",
+      "description": "Die Studie macht über die einzelnen Patches hinaus deutlich, dass die Klasse der Text-to-SQL-Systeme ein generelles Sicherheitsrisiko trägt: Wer KI-generierte Abfragen ungeprüft ausführt, kann Datenlecks, Datenbankmanipulation und Dienstausfälle auslösen. Die Forschenden rufen die Branche zu robusteren Schutzmechanismen und sorgfältiger Datenherkunft beim Training auf.",
+      "title_de": "Warnung vor systemischem Risiko für KI-gestützte Datenbankzugriffe",
+      "description_de": "Die Studie macht über die einzelnen Patches hinaus deutlich, dass die Klasse der Text-to-SQL-Systeme ein generelles Sicherheitsrisiko trägt: Wer KI-generierte Abfragen ungeprüft ausführt, kann Datenlecks, Datenbankmanipulation und Dienstausfälle auslösen. Die Forschenden rufen die Branche zu robusteren Schutzmechanismen und sorgfältiger Datenherkunft beim Training auf.",
+      "title_en": "Warning of systemic risk for AI-assisted database access",
+      "description_en": "Beyond the individual patches, the study makes clear that the class of text-to-SQL systems carries a general security risk: executing AI-generated queries unchecked can trigger data leaks, database tampering and service outages. The researchers call on the industry for more robust safeguards and careful provenance of training data.",
+      "sources": [
+        "https://www.techtimes.com/articles/297936/20231025/chatgpt-ai-tools-manipulated-craft-malicious-code-study-warns.htm"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://sheffield.ac.uk/news/security-threats-ais-such-chatgpt-revealed-researchers",
