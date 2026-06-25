@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Kinderrechte",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Kinderrechte",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Children's rights",
+    "Protection from manipulation",
+    "Human dignity",
+    "Consumer protection",
+    "Protection from discrimination"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft",
@@ -48,7 +66,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-10",
+      "phase": "infrastructure",
+      "title": "Microsoft integriert OpenAIs DALL-E 3 in seine Bildgeneratoren",
+      "description": "Microsoft band OpenAIs neues Text-zu-Bild-Modell DALL-E 3 in Bing Image Creator und das später Copilot Designer genannte Tool ein. Damit standen leistungsfähige Bildgeneratoren kostenlos und breit verfügbar zur Verfügung. Die Sicherheitsfilter wurden von Microsoft und OpenAI gemeinsam verantwortet.",
+      "title_de": "Microsoft integriert OpenAIs DALL-E 3 in seine Bildgeneratoren",
+      "description_de": "Microsoft band OpenAIs neues Text-zu-Bild-Modell DALL-E 3 in Bing Image Creator und das später Copilot Designer genannte Tool ein. Damit standen leistungsfähige Bildgeneratoren kostenlos und breit verfügbar zur Verfügung. Die Sicherheitsfilter wurden von Microsoft und OpenAI gemeinsam verantwortet.",
+      "title_en": "Microsoft integrates OpenAI's DALL-E 3 into its image generators",
+      "description_en": "Microsoft built OpenAI's new text-to-image model DALL-E 3 into Bing Image Creator and the tool later named Copilot Designer. This made powerful image generators freely and broadly available. The safety filters were jointly the responsibility of Microsoft and OpenAI.",
+      "sources": [
+        "https://blogs.bing.com/search/october-2023/DALL-E-3-now-available-in-Bing-Chat-and-Bing-com-create-for-free"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "doctrine",
+      "title": "Copilot Designer bleibt mit lockerer Alterskennzeichnung am Markt",
+      "description": "Microsoft vermarktete den Bildgenerator breit als Verbraucherprodukt und vergab eine niedrige Altersfreigabe in den App-Stores. Trotz interner Hinweise auf Schwächen der Schutzmechanismen blieb das Tool ohne Einschränkung öffentlich verfügbar. Diese Geschäftsentscheidung priorisierte Reichweite vor zusätzlichen Schutzbarrieren.",
+      "title_de": "Copilot Designer bleibt mit lockerer Alterskennzeichnung am Markt",
+      "description_de": "Microsoft vermarktete den Bildgenerator breit als Verbraucherprodukt und vergab eine niedrige Altersfreigabe in den App-Stores. Trotz interner Hinweise auf Schwächen der Schutzmechanismen blieb das Tool ohne Einschränkung öffentlich verfügbar. Diese Geschäftsentscheidung priorisierte Reichweite vor zusätzlichen Schutzbarrieren.",
+      "title_en": "Copilot Designer stays on the market with a lax age rating",
+      "description_en": "Microsoft marketed the image generator broadly as a consumer product and gave it a low age rating in the app stores. Despite internal warnings about weaknesses in the safeguards, the tool stayed publicly available without restriction. This business decision prioritised reach over additional safety barriers.",
+      "sources": [
+        "https://www.cnbc.com/2024/03/06/microsoft-ai-engineer-says-copilot-designer-creates-disturbing-images.html"
+      ]
+    },
+    {
+      "date": "2024-03-06",
+      "phase": "event",
+      "title": "Microsoft-Ingenieur Shane Jones warnt FTC und Verwaltungsrat",
+      "description": "Der Microsoft-Ingenieur Shane Jones wandte sich mit Briefen an FTC-Chefin Lina Khan und den Microsoft-Verwaltungsrat. Beim Red-Teaming hatte er festgestellt, dass Copilot Designer gewalttätige und sexualisierte Inhalte erzeugte, etwa sexualisierte Frauen in Unfallszenen, Teenager mit Sturmgewehren sowie Dämonen bei Abtreibungs-Begriffen. Er forderte, das Tool bis zur Nachbesserung der Schutzmechanismen aus der öffentlichen Nutzung zu nehmen.",
+      "title_de": "Microsoft-Ingenieur Shane Jones warnt FTC und Verwaltungsrat",
+      "description_de": "Der Microsoft-Ingenieur Shane Jones wandte sich mit Briefen an FTC-Chefin Lina Khan und den Microsoft-Verwaltungsrat. Beim Red-Teaming hatte er festgestellt, dass Copilot Designer gewalttätige und sexualisierte Inhalte erzeugte, etwa sexualisierte Frauen in Unfallszenen, Teenager mit Sturmgewehren sowie Dämonen bei Abtreibungs-Begriffen. Er forderte, das Tool bis zur Nachbesserung der Schutzmechanismen aus der öffentlichen Nutzung zu nehmen.",
+      "title_en": "Microsoft engineer Shane Jones warns FTC and board",
+      "description_en": "Microsoft engineer Shane Jones wrote to FTC Chair Lina Khan and Microsoft's board. While red-teaming, he had found that Copilot Designer produced violent and sexualised content, such as sexualised women in crash scenes, teenagers with assault rifles and demons associated with abortion-related terms. He urged that the tool be removed from public use until the safeguards were improved.",
+      "sources": [
+        "https://www.engadget.com/microsoft-engineer-who-raised-concerns-about-copilot-image-creator-pens-letter-to-the-ftc-165414095.html"
+      ]
+    },
+    {
+      "date": "2024-03-08",
+      "phase": "consequences",
+      "title": "Microsoft blockiert einzelne Eingabe-Begriffe",
+      "description": "Wenige Tage nach Jones' Brief begann Microsoft, einzelne Begriffe zu sperren, die zuvor gewalttätige oder sexuelle Bilder ausgelöst hatten, darunter Eingaben wie pro choice oder four twenty. Zudem erschien eine Warnung, dass wiederholte Richtlinienverstöße zur Sperrung führen können. Das Tool blieb jedoch am Markt.",
+      "title_de": "Microsoft blockiert einzelne Eingabe-Begriffe",
+      "description_de": "Wenige Tage nach Jones' Brief begann Microsoft, einzelne Begriffe zu sperren, die zuvor gewalttätige oder sexuelle Bilder ausgelöst hatten, darunter Eingaben wie pro choice oder four twenty. Zudem erschien eine Warnung, dass wiederholte Richtlinienverstöße zur Sperrung führen können. Das Tool blieb jedoch am Markt.",
+      "title_en": "Microsoft blocks individual input terms",
+      "description_en": "A few days after Jones's letter, Microsoft began blocking individual terms that had previously triggered violent or sexual images, including inputs such as pro choice or four twenty. A warning also appeared that repeated policy violations could lead to suspension. The tool nonetheless stayed on the market.",
+      "sources": [
+        "https://www.cnbc.com/2024/03/08/microsoft-blocking-terms-that-cause-its-ai-to-create-violent-images.html"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "phase": "consequences",
+      "title": "Fall wird zum Bezugspunkt der KI-Whistleblower-Debatte",
+      "description": "Jones trat öffentlich als Whistleblower auf und sprach mit US-Senatsmitarbeitern über die Risiken generativer Bild-KI. OpenAI bestätigte zusätzliche Schutzvorkehrungen für DALL-E-3-gestützte Produkte. Der Fall wurde zu einem viel zitierten Beispiel für interne Sicherheitsbedenken bei großen KI-Anbietern.",
+      "title_de": "Fall wird zum Bezugspunkt der KI-Whistleblower-Debatte",
+      "description_de": "Jones trat öffentlich als Whistleblower auf und sprach mit US-Senatsmitarbeitern über die Risiken generativer Bild-KI. OpenAI bestätigte zusätzliche Schutzvorkehrungen für DALL-E-3-gestützte Produkte. Der Fall wurde zu einem viel zitierten Beispiel für interne Sicherheitsbedenken bei großen KI-Anbietern.",
+      "title_en": "Case becomes a reference point in the AI whistleblower debate",
+      "description_en": "Jones went public as a whistleblower and spoke with US Senate staff about the risks of generative image AI. OpenAI confirmed additional safeguards for DALL-E-3-based products. The case became a widely cited example of internal safety concerns at major AI providers.",
+      "sources": [
+        "https://aiwi.org/case-studies/shane-jones/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnbc.com/2024/03/06/microsoft-ai-engineer-says-copilot-designer-creates-disturbing-images.html",

@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Urheberrecht",
+    "Geistiges Eigentum",
+    "Recht auf angemessene Vergütung",
+    "Schutz künstlerischer Arbeit"
+  ],
+  "asm:affectedRights_de": [
+    "Urheberrecht",
+    "Geistiges Eigentum",
+    "Recht auf angemessene Vergütung",
+    "Schutz künstlerischer Arbeit"
+  ],
+  "asm:affectedRights_en": [
+    "Copyright",
+    "Intellectual property",
+    "Right to fair remuneration",
+    "Protection of creative work"
+  ],
   "asm:actors": [
     {
       "name": "Meta Platforms",
@@ -47,7 +62,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Meta benötigt riesige Textmengen für das Training seiner Llama-Modelle",
+      "description": "Für das Training leistungsfähiger Sprachmodelle der Llama-Reihe brauchte Meta enorme Mengen hochwertigen Texts. Lizenzierte Buchkorpora sind teuer und langwierig zu beschaffen. Schattenbibliotheken wie Library Genesis (LibGen) boten dagegen Millionen urheberrechtlich geschützter Bücher frei zugänglich - eine technisch verlockende, aber rechtlich illegale Datenquelle.",
+      "title_de": "Meta benötigt riesige Textmengen für das Training seiner Llama-Modelle",
+      "description_de": "Für das Training leistungsfähiger Sprachmodelle der Llama-Reihe brauchte Meta enorme Mengen hochwertigen Texts. Lizenzierte Buchkorpora sind teuer und langwierig zu beschaffen. Schattenbibliotheken wie Library Genesis (LibGen) boten dagegen Millionen urheberrechtlich geschützter Bücher frei zugänglich - eine technisch verlockende, aber rechtlich illegale Datenquelle.",
+      "title_en": "Meta needs vast amounts of text to train its Llama models",
+      "description_en": "Training powerful Llama-series language models required Meta to gather enormous amounts of high-quality text. Licensed book corpora are expensive and slow to obtain. Shadow libraries such as Library Genesis (LibGen), by contrast, offered millions of copyrighted books freely - a technically tempting but legally infringing data source.",
+      "sources": [
+        "https://cybernews.com/tech/meta-leeched-82-terabytes-of-pirated-books-to-train-its-llama-ai-documents-reveal/"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "doctrine",
+      "title": "Zuckerberg genehmigt LibGen-Nutzung trotz Wissen um Raubkopien",
+      "description": "Interne Kommunikation belegte, dass Meta-Mitarbeitende LibGen ausdrücklich als 'Datensatz, von dem wir wissen, dass er raubkopiert ist' bezeichneten. Laut Gerichtsunterlagen wurde die Nutzung nach einer Eskalation an Mark Zuckerberg für das Training von Llama 3 freigegeben - mit der Maßgabe, dies nicht öffentlich offenzulegen. Damit war die Verwendung urheberrechtlich geschützter Werke eine bewusste Geschäftsentscheidung.",
+      "title_de": "Zuckerberg genehmigt LibGen-Nutzung trotz Wissen um Raubkopien",
+      "description_de": "Interne Kommunikation belegte, dass Meta-Mitarbeitende LibGen ausdrücklich als 'Datensatz, von dem wir wissen, dass er raubkopiert ist' bezeichneten. Laut Gerichtsunterlagen wurde die Nutzung nach einer Eskalation an Mark Zuckerberg für das Training von Llama 3 freigegeben - mit der Maßgabe, dies nicht öffentlich offenzulegen. Damit war die Verwendung urheberrechtlich geschützter Werke eine bewusste Geschäftsentscheidung.",
+      "title_en": "Zuckerberg approves LibGen use despite knowing it is pirated",
+      "description_en": "Internal communications showed Meta employees explicitly described LibGen as 'a dataset we know to be pirated'. According to court filings, use was approved after an escalation to Mark Zuckerberg for training Llama 3 - with the proviso not to disclose it publicly. The use of copyrighted works was thus a deliberate business decision.",
+      "sources": [
+        "https://techcrunch.com/2025/01/09/mark-zuckerberg-gave-metas-llama-team-the-ok-to-train-on-copyrighted-works-filing-claims/"
+      ]
+    },
+    {
+      "date": "2023-07-07",
+      "phase": "event",
+      "title": "Autorinnen und Autoren verklagen Meta wegen Training mit Raubkopien",
+      "description": "Richard Kadrey, Sarah Silverman, Christopher Golden und weitere Autorinnen und Autoren reichten eine Sammelklage gegen Meta ein. Sie warfen dem Konzern vor, ihre urheberrechtlich geschützten Bücher ohne Erlaubnis und ohne Vergütung über LibGen zum Training von Llama kopiert und verarbeitet zu haben. Spätere Filings bezifferten den Umfang auf rund 80 Terabyte raubkopierter Daten.",
+      "title_de": "Autorinnen und Autoren verklagen Meta wegen Training mit Raubkopien",
+      "description_de": "Richard Kadrey, Sarah Silverman, Christopher Golden und weitere Autorinnen und Autoren reichten eine Sammelklage gegen Meta ein. Sie warfen dem Konzern vor, ihre urheberrechtlich geschützten Bücher ohne Erlaubnis und ohne Vergütung über LibGen zum Training von Llama kopiert und verarbeitet zu haben. Spätere Filings bezifferten den Umfang auf rund 80 Terabyte raubkopierter Daten.",
+      "title_en": "Authors sue Meta over training on pirated books",
+      "description_en": "Richard Kadrey, Sarah Silverman, Christopher Golden and other authors filed a class action against Meta. They accused the company of copying and processing their copyrighted books without permission or payment via LibGen to train Llama. Later filings put the scale at around 80 terabytes of pirated data.",
+      "sources": [
+        "https://www.rollingstone.com/culture/culture-news/ai-meta-pirated-library-zuckerberg-1235235394/"
+      ]
+    },
+    {
+      "date": "2025-06-25",
+      "phase": "consequences",
+      "title": "Gericht entscheidet zu Fair Use für Meta - mit deutlicher Warnung",
+      "description": "Richter Vince Chhabria am US-Bezirksgericht für Nordkalifornien gab Meta im Punkt Fair Use recht: Das Training der Modelle sei hochgradig transformativ. Er betonte jedoch ausdrücklich, das Urteil bedeute nicht, dass Metas Vorgehen rechtmäßig sei - die Kläger hätten lediglich die falschen Argumente vorgebracht und keinen Beleg für konkrete Marktschädigung erbracht. Künftige Klagen mit besserem Nachweis könnten anders ausgehen.",
+      "title_de": "Gericht entscheidet zu Fair Use für Meta - mit deutlicher Warnung",
+      "description_de": "Richter Vince Chhabria am US-Bezirksgericht für Nordkalifornien gab Meta im Punkt Fair Use recht: Das Training der Modelle sei hochgradig transformativ. Er betonte jedoch ausdrücklich, das Urteil bedeute nicht, dass Metas Vorgehen rechtmäßig sei - die Kläger hätten lediglich die falschen Argumente vorgebracht und keinen Beleg für konkrete Marktschädigung erbracht. Künftige Klagen mit besserem Nachweis könnten anders ausgehen.",
+      "title_en": "Court rules fair use for Meta - with a pointed warning",
+      "description_en": "Judge Vince Chhabria of the US District Court for Northern California sided with Meta on fair use, finding the model training highly transformative. He stressed, however, that the ruling did not mean Meta's conduct was lawful - the plaintiffs had simply made the wrong arguments and failed to prove concrete market harm. Future suits with a better record could come out differently.",
+      "sources": [
+        "https://www.goodwinlaw.com/en/insights/publications/2025/06/alerts-practices-aiml-northern-district-of-california-judge-rules"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://authorsguild.org/news/meta-libgen-ai-training-book-heist-what-authors-need-to-know/",
