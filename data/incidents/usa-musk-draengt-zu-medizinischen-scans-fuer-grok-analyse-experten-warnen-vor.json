@@ -5,12 +5,12 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-musk-draengt-zu-medizinischen-scans-fuer-grok-analyse-experten-warnen-vor",
-  "name": "USA: Musk drängt zu medizinischen Scans für Grok-Analyse — Experten warnen vor Fehldiagnosen und Privacy",
-  "name_de": "USA: Musk drängt zu medizinischen Scans für Grok-Analyse — Experten warnen vor Fehldiagnosen und Privacy",
-  "name_en": "USA: Musk urges users to feed medical scans to Grok — experts warn of misdiagnoses and privacy risks",
+  "name": "USA: Musk drängt zu medizinischen Scans für Grok-Analyse - Experten warnen vor Fehldiagnosen und Privacy",
+  "name_de": "USA: Musk drängt zu medizinischen Scans für Grok-Analyse - Experten warnen vor Fehldiagnosen und Privacy",
+  "name_en": "USA: Musk urges users to feed medical scans to Grok - experts warn of misdiagnoses and privacy risks",
   "description": "Elon Musk rief auf X dazu auf, Röntgen-, MRT- und CT-Aufnahmen an Grok hochzuladen, um die KI zu \"trainieren\". Gesundheits- und Datenschutzexpert:innen warnten massiv: Die hochgeladenen Daten unterliegen nicht dem US-Patientendatenschutzgesetz HIPAA, das Risiko ungewollter Identitätsoffenbarung sei erheblich. Tests zeigten zudem fundamentale Fehlanalysen: Grok verwechselte einen Lehrbuchfall von Tuberkulose mit einem Bandscheibenvorfall oder einer Spinalkanalstenose.",
   "description_de": "Elon Musk rief auf X dazu auf, Röntgen-, MRT- und CT-Aufnahmen an Grok hochzuladen, um die KI zu \"trainieren\". Gesundheits- und Datenschutzexpert:innen warnten massiv: Die hochgeladenen Daten unterliegen nicht dem US-Patientendatenschutzgesetz HIPAA, das Risiko ungewollter Identitätsoffenbarung sei erheblich. Tests zeigten zudem fundamentale Fehlanalysen: Grok verwechselte einen Lehrbuchfall von Tuberkulose mit einem Bandscheibenvorfall oder einer Spinalkanalstenose.",
-  "description_en": "Elon Musk used X to call on users to upload X-ray, MRI and CT scans to Grok to \"train\" the model. Health and privacy experts warned strongly: uploads fall outside US health-privacy law HIPAA and risk unintended identity disclosure. Tests also revealed fundamental misdiagnoses — Grok mistook a textbook case of tuberculosis for a herniated disk or spinal stenosis.",
+  "description_en": "Elon Musk used X to call on users to upload X-ray, MRI and CT scans to Grok to \"train\" the model. Health and privacy experts warned strongly: uploads fall outside US health-privacy law HIPAA and risk unintended identity disclosure. Tests also revealed fundamental misdiagnoses - Grok mistook a textbook case of tuberculosis for a herniated disk or spinal stenosis.",
   "startDate": "2024-10",
   "location": {
     "@type": "Place",
@@ -26,9 +26,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Recht auf Gesundheit",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Recht auf Gesundheit",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Right to health",
+    "Protection from manipulation",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "X / xAI",
@@ -49,7 +67,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-11",
+      "phase": "infrastructure",
+      "title": "xAI startet Chatbot Grok auf der Plattform X",
+      "description": "Musks Firma xAI brachte im November 2023 den generativen KI-Chatbot Grok heraus, direkt in die Plattform X integriert. Spätere Versionen konnten auch Bilder analysieren. Anders als regulierte medizinische Software ist Grok ein Allzweck-Chatbot ohne klinische Zulassung und ohne Anbindung an den US-Patientendatenschutz HIPAA.",
+      "title_de": "xAI startet Chatbot Grok auf der Plattform X",
+      "description_de": "Musks Firma xAI brachte im November 2023 den generativen KI-Chatbot Grok heraus, direkt in die Plattform X integriert. Spätere Versionen konnten auch Bilder analysieren. Anders als regulierte medizinische Software ist Grok ein Allzweck-Chatbot ohne klinische Zulassung und ohne Anbindung an den US-Patientendatenschutz HIPAA.",
+      "title_en": "xAI launches the Grok chatbot on the X platform",
+      "description_en": "Musk's company xAI released the generative AI chatbot Grok in November 2023, integrated directly into the X platform. Later versions could also analyse images. Unlike regulated medical software, Grok is a general-purpose chatbot with no clinical approval and no coverage under the US health-privacy law HIPAA.",
+      "sources": [
+        "https://fortune.com/2026/01/11/why-did-elon-musk-ask-x-users-upload-medical-data-grok/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "doctrine",
+      "title": "xAI will Grok zur Bildanalyse mit Nutzerdaten trainieren",
+      "description": "Grok war bei der Auswertung medizinischer Bilder noch im Frühstadium. Statt auf kuratierte klinische Datensätze setzte xAI auf von Nutzer:innen freiwillig hochgeladene Aufnahmen, um das Modell zu verbessern. Diese Strategie - öffentliches Crowdsourcing sensibelster Gesundheitsdaten - war die Geschäftsentscheidung, die den öffentlichen Aufruf vorbereitete.",
+      "title_de": "xAI will Grok zur Bildanalyse mit Nutzerdaten trainieren",
+      "description_de": "Grok war bei der Auswertung medizinischer Bilder noch im Frühstadium. Statt auf kuratierte klinische Datensätze setzte xAI auf von Nutzer:innen freiwillig hochgeladene Aufnahmen, um das Modell zu verbessern. Diese Strategie - öffentliches Crowdsourcing sensibelster Gesundheitsdaten - war die Geschäftsentscheidung, die den öffentlichen Aufruf vorbereitete.",
+      "title_en": "xAI plans to train Grok image analysis on user data",
+      "description_en": "Grok was still early-stage at interpreting medical images. Instead of curated clinical datasets, xAI relied on scans voluntarily uploaded by users to improve the model. This strategy - public crowdsourcing of the most sensitive health data - was the business decision that set up the public appeal.",
+      "sources": [
+        "https://fortune.com/2026/01/11/why-did-elon-musk-ask-x-users-upload-medical-data-grok/"
+      ]
+    },
+    {
+      "date": "2024-10-29",
+      "phase": "event",
+      "title": "Musk ruft auf X zum Hochladen von Röntgen-, MRT- und CT-Bildern auf",
+      "description": "Am 29. Oktober 2024 forderte Elon Musk auf X dazu auf, Röntgen-, PET-, MRT- und andere medizinische Aufnahmen zur Analyse an Grok zu schicken; das System sei 'noch im Frühstadium, aber bereits recht treffsicher'. Nutzer:innen folgten dem Aufruf und luden sensible Gesundheitsdaten in eine öffentliche, nicht von HIPAA geschützte Plattform.",
+      "title_de": "Musk ruft auf X zum Hochladen von Röntgen-, MRT- und CT-Bildern auf",
+      "description_de": "Am 29. Oktober 2024 forderte Elon Musk auf X dazu auf, Röntgen-, PET-, MRT- und andere medizinische Aufnahmen zur Analyse an Grok zu schicken; das System sei 'noch im Frühstadium, aber bereits recht treffsicher'. Nutzer:innen folgten dem Aufruf und luden sensible Gesundheitsdaten in eine öffentliche, nicht von HIPAA geschützte Plattform.",
+      "title_en": "Musk urges users on X to upload X-ray, MRI and CT images",
+      "description_en": "On 29 October 2024 Elon Musk called on X users to submit X-ray, PET, MRI and other medical images to Grok for analysis, saying the system was 'still early stage, but already quite accurate'. Users followed the call and uploaded sensitive health data to a public platform not covered by HIPAA.",
+      "sources": [
+        "https://radiologybusiness.com/topics/artificial-intelligence/elon-musk-urges-users-submit-x-ray-pet-and-mr-images-xai-chatbot-grok"
+      ]
+    },
+    {
+      "date": "2024-11",
+      "phase": "consequences",
+      "title": "Experten warnen vor groben Fehldiagnosen und Privacy-Risiken",
+      "description": "Gesundheits- und Datenschutzfachleute warnten massiv. Tests zeigten grobe Fehlanalysen: Grok verwechselte einen Lehrbuchfall von Tuberkulose mit einem Bandscheibenvorfall oder einer Spinalkanalstenose, hielt eine gutartige Brustzyste im Mammogramm für Hoden und einen Schlüsselbeinbruch für eine ausgekugelte Schulter. Zugleich drohten die Daten - außerhalb von HIPAA - ungewollte Identitätsoffenbarung.",
+      "title_de": "Experten warnen vor groben Fehldiagnosen und Privacy-Risiken",
+      "description_de": "Gesundheits- und Datenschutzfachleute warnten massiv. Tests zeigten grobe Fehlanalysen: Grok verwechselte einen Lehrbuchfall von Tuberkulose mit einem Bandscheibenvorfall oder einer Spinalkanalstenose, hielt eine gutartige Brustzyste im Mammogramm für Hoden und einen Schlüsselbeinbruch für eine ausgekugelte Schulter. Zugleich drohten die Daten - außerhalb von HIPAA - ungewollte Identitätsoffenbarung.",
+      "title_en": "Experts warn of gross misdiagnoses and privacy risks",
+      "description_en": "Health and privacy experts warned strongly. Tests revealed gross misanalyses: Grok mistook a textbook case of tuberculosis for a herniated disk or spinal stenosis, took a benign breast cyst on a mammogram for testicles, and a broken clavicle for a dislocated shoulder. At the same time the data - outside HIPAA - risked unintended identity disclosure.",
+      "sources": [
+        "https://futurism.com/neoscope/experts-alarmed-medical-scans-grok"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/11/19/psa-you-shouldnt-upload-your-medical-images-to-ai-chatbots/",

@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-omnigpt-datenleck-30-000-nutzer-und-34-mio-chat-nachrichten-auf-breachforums-verkauft",
-  "name": "Global: OmniGPT-Datenleck — 30.000 Nutzer und 34 Mio. Chat-Nachrichten auf BreachForums verkauft",
-  "name_de": "Global: OmniGPT-Datenleck — 30.000 Nutzer und 34 Mio. Chat-Nachrichten auf BreachForums verkauft",
-  "name_en": "Global: OmniGPT data breach — 30,000 users and 34 million chat messages sold on BreachForums",
+  "name": "Global: OmniGPT-Datenleck - 30.000 Nutzer und 34 Mio. Chat-Nachrichten auf BreachForums verkauft",
+  "name_de": "Global: OmniGPT-Datenleck - 30.000 Nutzer und 34 Mio. Chat-Nachrichten auf BreachForums verkauft",
+  "name_en": "Global: OmniGPT data breach - 30,000 users and 34 million chat messages sold on BreachForums",
   "description": "Im Februar 2025 stellte ein Akteur namens 'Gloomer' auf BreachForums Daten zum Verkauf, die er aus der KI-Aggregator-Plattform OmniGPT entwendet haben soll: 30.000 E-Mail-Adressen und Telefonnummern, plus 34 Millionen Zeilen Chat-Nachrichten inklusive API-Keys, Login-Daten, Datei-Links und kryptografische Private Keys. OmniGPT integriert Claude 3, GPT-4o, Gemini und Perplexity sowie Workplace-Tools (WhatsApp, Slack, Google Workspace, Notion). Das Unternehmen hat den Vorfall öffentlich nicht bestätigt. Sicherheitsforscher (Forcepoint, Skyhigh) warnten vor Phishing- und Account-Übernahme-Folgerisiken.",
   "description_de": "Im Februar 2025 stellte ein Akteur namens 'Gloomer' auf BreachForums Daten zum Verkauf, die er aus der KI-Aggregator-Plattform OmniGPT entwendet haben soll: 30.000 E-Mail-Adressen und Telefonnummern, plus 34 Millionen Zeilen Chat-Nachrichten inklusive API-Keys, Login-Daten, Datei-Links und kryptografische Private Keys. OmniGPT integriert Claude 3, GPT-4o, Gemini und Perplexity sowie Workplace-Tools (WhatsApp, Slack, Google Workspace, Notion). Das Unternehmen hat den Vorfall öffentlich nicht bestätigt. Sicherheitsforscher (Forcepoint, Skyhigh) warnten vor Phishing- und Account-Übernahme-Folgerisiken.",
   "description_en": "In February 2025 an actor calling themselves 'Gloomer' offered for sale on BreachForums data allegedly stolen from the AI-aggregator platform OmniGPT: 30,000 email addresses and phone numbers plus 34 million lines of chat messages including API keys, login credentials, file links and crypto private keys. OmniGPT integrates Claude 3, GPT-4o, Gemini and Perplexity together with workplace tools (WhatsApp, Slack, Google Workspace, Notion). The company has not publicly acknowledged the breach. Security researchers (Forcepoint, Skyhigh) warned of phishing and account-takeover follow-on risk.",
@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "'Gloomer' (BreachForums user)",
@@ -53,7 +68,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "OmniGPT bündelt Chats vieler KI-Modelle an einem Ort",
+      "description": "OmniGPT positioniert sich als KI-Aggregator: Eine Anmeldung gibt Zugang zu mehreren großen Sprachmodellen (u.a. Claude 3, GPT-4o, Gemini, Perplexity) und integriert Workplace-Tools wie WhatsApp, Slack, Google Workspace und Notion. Dadurch konzentriert die Plattform die Chat-Verläufe, hochgeladenen Dokumente und Zugangsdaten zahlreicher Nutzer in einem einzigen Datenbestand - ein hochwertiges Ziel für Angreifer.",
+      "title_de": "OmniGPT bündelt Chats vieler KI-Modelle an einem Ort",
+      "description_de": "OmniGPT positioniert sich als KI-Aggregator: Eine Anmeldung gibt Zugang zu mehreren großen Sprachmodellen (u.a. Claude 3, GPT-4o, Gemini, Perplexity) und integriert Workplace-Tools wie WhatsApp, Slack, Google Workspace und Notion. Dadurch konzentriert die Plattform die Chat-Verläufe, hochgeladenen Dokumente und Zugangsdaten zahlreicher Nutzer in einem einzigen Datenbestand - ein hochwertiges Ziel für Angreifer.",
+      "title_en": "OmniGPT concentrates chats from many AI models in one place",
+      "description_en": "OmniGPT positions itself as an AI aggregator: a single sign-up grants access to several large language models (including Claude 3, GPT-4o, Gemini and Perplexity) and integrates workplace tools such as WhatsApp, Slack, Google Workspace and Notion. As a result the platform concentrates the chat histories, uploaded documents and credentials of many users in one data store - a high-value target for attackers.",
+      "sources": [
+        "https://techpilot.ai/tools/omnigpt-multi-model-ai/"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Zentralisierung sensibler Daten ohne sichtbare Sicherheitsgarantien",
+      "description": "Das Geschäftsmodell von KI-Aggregatoren beruht darauf, möglichst viele Nutzer-Interaktionen und angebundene Dienste an einer Stelle zu bündeln, um Komfort und Preisvorteile zu bieten. Nutzer geben dabei laufend vertrauliche Inhalte, API-Schlüssel und Anmeldedaten in die Chats ein. Robuste Sicherheits- und Verschlüsselungsgarantien für diese Datensammlung waren öffentlich nicht erkennbar.",
+      "title_de": "Zentralisierung sensibler Daten ohne sichtbare Sicherheitsgarantien",
+      "description_de": "Das Geschäftsmodell von KI-Aggregatoren beruht darauf, möglichst viele Nutzer-Interaktionen und angebundene Dienste an einer Stelle zu bündeln, um Komfort und Preisvorteile zu bieten. Nutzer geben dabei laufend vertrauliche Inhalte, API-Schlüssel und Anmeldedaten in die Chats ein. Robuste Sicherheits- und Verschlüsselungsgarantien für diese Datensammlung waren öffentlich nicht erkennbar.",
+      "title_en": "Centralising sensitive data without visible security guarantees",
+      "description_en": "The business model of AI aggregators rests on concentrating as many user interactions and connected services as possible in one place to offer convenience and cost savings. Users continually feed confidential content, API keys and login credentials into the chats. No robust security or encryption guarantees for this data store were publicly evident.",
+      "sources": [
+        "https://www.cpomagazine.com/cyber-security/ai-aggregator-omnigpt-suffers-a-security-breach-exposing-sensitive-data-including-credentials/"
+      ]
+    },
+    {
+      "date": "2025-02-09",
+      "phase": "event",
+      "title": "Akteur 'Gloomer' verkauft OmniGPT-Daten auf BreachForums",
+      "description": "Am 9. Februar 2025 stellte ein Akteur namens 'Gloomer' auf BreachForums Daten zum Verkauf, die angeblich aus OmniGPT stammten: rund 30.000 E-Mail-Adressen und Telefonnummern sowie etwa 34 Millionen Zeilen Chat-Nachrichten. Die Stichproben enthielten API-Keys, Login-Daten, Datei-Links und kryptografische Private Keys. Betroffene Nutzer verteilten sich auf mehrere Länder, darunter Brasilien, Italien, Indien, Pakistan, China und Saudi-Arabien.",
+      "title_de": "Akteur 'Gloomer' verkauft OmniGPT-Daten auf BreachForums",
+      "description_de": "Am 9. Februar 2025 stellte ein Akteur namens 'Gloomer' auf BreachForums Daten zum Verkauf, die angeblich aus OmniGPT stammten: rund 30.000 E-Mail-Adressen und Telefonnummern sowie etwa 34 Millionen Zeilen Chat-Nachrichten. Die Stichproben enthielten API-Keys, Login-Daten, Datei-Links und kryptografische Private Keys. Betroffene Nutzer verteilten sich auf mehrere Länder, darunter Brasilien, Italien, Indien, Pakistan, China und Saudi-Arabien.",
+      "title_en": "Actor 'Gloomer' sells OmniGPT data on BreachForums",
+      "description_en": "On 9 February 2025 an actor calling themselves 'Gloomer' offered data for sale on BreachForums allegedly taken from OmniGPT: around 30,000 email addresses and phone numbers plus roughly 34 million lines of chat messages. The samples included API keys, login credentials, file links and crypto private keys. Affected users spanned several countries, including Brazil, Italy, India, Pakistan, China and Saudi Arabia.",
+      "sources": [
+        "https://cyberinsider.com/omnigpt-allegedly-breached-34-million-user-messages-leaked/"
+      ]
+    },
+    {
+      "date": "2025-02-10",
+      "phase": "consequences",
+      "title": "Folgerisiken durch geleakte Schlüssel - keine Bestätigung durch OmniGPT",
+      "description": "Sicherheitsforscher warnten, dass die offengelegten API-Keys, Zugangsdaten und Datei-Links Phishing, Account-Übernahmen und unbefugte Zugriffe auf angebundene Dienste ermöglichen. Da die Chats vertrauliche und geschäftliche Inhalte enthielten, war der potenzielle Schaden weitreichend. OmniGPT bestätigte den Vorfall öffentlich nicht und reagierte nicht auf Presseanfragen.",
+      "title_de": "Folgerisiken durch geleakte Schlüssel - keine Bestätigung durch OmniGPT",
+      "description_de": "Sicherheitsforscher warnten, dass die offengelegten API-Keys, Zugangsdaten und Datei-Links Phishing, Account-Übernahmen und unbefugte Zugriffe auf angebundene Dienste ermöglichen. Da die Chats vertrauliche und geschäftliche Inhalte enthielten, war der potenzielle Schaden weitreichend. OmniGPT bestätigte den Vorfall öffentlich nicht und reagierte nicht auf Presseanfragen.",
+      "title_en": "Follow-on risk from leaked keys - no acknowledgement by OmniGPT",
+      "description_en": "Security researchers warned that the exposed API keys, credentials and file links enabled phishing, account takeovers and unauthorised access to connected services. Because the chats contained confidential and business content, the potential harm was wide-ranging. OmniGPT did not publicly acknowledge the breach and did not respond to press inquiries.",
+      "sources": [
+        "https://www.csoonline.com/article/3822911/hacker-allegedly-puts-massive-omnigpt-breach-data-for-sale-on-the-dark-web.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://hackread.com/omnigpt-ai-chatbot-breach-hacker-leak-user-data-messages/",

@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Urheberrecht und geistiges Eigentum",
+    "Faires Verfahren",
+    "Wirtschaftliche Rechte",
+    "Recht auf wirksamen Rechtsschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Urheberrecht und geistiges Eigentum",
+    "Faires Verfahren",
+    "Wirtschaftliche Rechte",
+    "Recht auf wirksamen Rechtsschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Copyright and intellectual property",
+    "Due process",
+    "Economic rights",
+    "Right to an effective remedy"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -47,7 +62,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-05",
+      "phase": "infrastructure",
+      "title": "GPT-3 wird auf den Buchkorpora Books1 und Books2 trainiert",
+      "description": "Das GPT-3-Paper von 2020 nennt die internen Datensätze Books1 (rund 12 Milliarden Tokens) und Books2 (rund 55 Milliarden Tokens) als Teil der Trainingsdaten. OpenAI legte die Herkunft nie offen; Forscher und spätere Kläger gehen davon aus, dass insbesondere Books2 große Mengen urheberrechtlich geschützter Bücher enthielt, vermutlich aus Schattenbibliotheken. Diese Korpora bilden die Grundlage der späteren Streitfragen.",
+      "title_de": "GPT-3 wird auf den Buchkorpora Books1 und Books2 trainiert",
+      "description_de": "Das GPT-3-Paper von 2020 nennt die internen Datensätze Books1 (rund 12 Milliarden Tokens) und Books2 (rund 55 Milliarden Tokens) als Teil der Trainingsdaten. OpenAI legte die Herkunft nie offen; Forscher und spätere Kläger gehen davon aus, dass insbesondere Books2 große Mengen urheberrechtlich geschützter Bücher enthielt, vermutlich aus Schattenbibliotheken. Diese Korpora bilden die Grundlage der späteren Streitfragen.",
+      "title_en": "GPT-3 is trained on the Books1 and Books2 book corpora",
+      "description_en": "The 2020 GPT-3 paper lists the internal datasets Books1 (about 12 billion tokens) and Books2 (about 55 billion tokens) among the training data. OpenAI never disclosed their provenance; researchers and later plaintiffs assume that Books2 in particular contained large quantities of copyrighted books, likely from shadow libraries. These corpora became the foundation of the later disputes.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GPT-3"
+      ]
+    },
+    {
+      "date": "2023-12-27",
+      "phase": "doctrine",
+      "title": "New York Times verklagt OpenAI und Microsoft wegen Urheberrechts",
+      "description": "Am 27. Dezember 2023 reichten die New York Times und die Daily News Klage gegen OpenAI und Microsoft ein. Sie werfen den Unternehmen vor, Millionen ihrer Artikel ohne Erlaubnis zum Training von KI-Modellen genutzt zu haben. Mit der Klage entstand für OpenAI eine prozessuale Pflicht, beweisrelevante Daten - einschließlich Trainingsdaten und Suchläufen - zu sichern.",
+      "title_de": "New York Times verklagt OpenAI und Microsoft wegen Urheberrechts",
+      "description_de": "Am 27. Dezember 2023 reichten die New York Times und die Daily News Klage gegen OpenAI und Microsoft ein. Sie werfen den Unternehmen vor, Millionen ihrer Artikel ohne Erlaubnis zum Training von KI-Modellen genutzt zu haben. Mit der Klage entstand für OpenAI eine prozessuale Pflicht, beweisrelevante Daten - einschließlich Trainingsdaten und Suchläufen - zu sichern.",
+      "title_en": "New York Times sues OpenAI and Microsoft over copyright",
+      "description_en": "On 27 December 2023 the New York Times and the Daily News filed suit against OpenAI and Microsoft, alleging the companies used millions of their articles without permission to train AI models. The lawsuit triggered a procedural duty for OpenAI to preserve evidence-relevant data - including training data and search runs.",
+      "sources": [
+        "https://www.npr.org/2025/01/14/nx-s1-5258952/new-york-times-openai-microsoft"
+      ]
+    },
+    {
+      "date": "2024-11-14",
+      "phase": "event",
+      "title": "OpenAI löscht beweisrelevante Suchdaten im Discovery-Verfahren",
+      "description": "Am 14. November 2024 löschten OpenAI-Ingenieure Programme und Suchergebnis-Daten auf einer für die Beweissicherung bereitgestellten virtuellen Maschine. Die Anwälte der Kläger hatten bis dahin über 150 Stunden mit der Durchsuchung von OpenAIs Trainingsdaten verbracht; ein Teil dieser Arbeit war verloren. OpenAI bezeichnete den Vorfall als technisches Versehen. Hintergrund war zudem, dass die ursprünglichen Books-Datensätze bereits 2022 wegen Nichtnutzung gelöscht worden waren.",
+      "title_de": "OpenAI löscht beweisrelevante Suchdaten im Discovery-Verfahren",
+      "description_de": "Am 14. November 2024 löschten OpenAI-Ingenieure Programme und Suchergebnis-Daten auf einer für die Beweissicherung bereitgestellten virtuellen Maschine. Die Anwälte der Kläger hatten bis dahin über 150 Stunden mit der Durchsuchung von OpenAIs Trainingsdaten verbracht; ein Teil dieser Arbeit war verloren. OpenAI bezeichnete den Vorfall als technisches Versehen. Hintergrund war zudem, dass die ursprünglichen Books-Datensätze bereits 2022 wegen Nichtnutzung gelöscht worden waren.",
+      "title_en": "OpenAI deletes evidence-relevant search data during discovery",
+      "description_en": "On 14 November 2024 OpenAI engineers erased programs and search-result data on a virtual machine set up for evidence preservation. The plaintiffs' lawyers had by then spent over 150 hours searching OpenAI's training data; part of that work was lost. OpenAI called the incident a technical mistake. In the background, the original Books datasets had already been deleted in 2022 due to non-use.",
+      "sources": [
+        "https://techcrunch.com/2024/11/22/openai-accidentally-deleted-potential-evidence-in-ny-times-copyright-lawsuit/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Gericht lässt Klage zu und entscheidet gegen OpenAIs Geheimhaltung",
+      "description": "2025 wies Richter Sidney Stein OpenAIs Antrag auf Abweisung weitgehend zurück und ließ die zentralen Urheberrechts-Ansprüche zur Verhandlung zu. In einer separaten Discovery-Auseinandersetzung verlor OpenAI den Versuch, die Hintergründe der gelöschten Bücher-Korpora geheim zu halten. Ergänzend ordnete das Gericht die fortlaufende Sicherung von Ausgabe-Protokollen an. Der Fall wurde zum Präzedenzfall für Beweissicherungspflichten von KI-Unternehmen.",
+      "title_de": "Gericht lässt Klage zu und entscheidet gegen OpenAIs Geheimhaltung",
+      "description_de": "2025 wies Richter Sidney Stein OpenAIs Antrag auf Abweisung weitgehend zurück und ließ die zentralen Urheberrechts-Ansprüche zur Verhandlung zu. In einer separaten Discovery-Auseinandersetzung verlor OpenAI den Versuch, die Hintergründe der gelöschten Bücher-Korpora geheim zu halten. Ergänzend ordnete das Gericht die fortlaufende Sicherung von Ausgabe-Protokollen an. Der Fall wurde zum Präzedenzfall für Beweissicherungspflichten von KI-Unternehmen.",
+      "title_en": "Court lets the case proceed and rules against OpenAI's secrecy",
+      "description_en": "In 2025 Judge Sidney Stein largely denied OpenAI's motion to dismiss and let the core copyright claims proceed to trial. In a separate discovery fight, OpenAI lost its attempt to keep the background of the deleted book corpora privileged. The court also ordered the ongoing preservation of output log data. The case became a precedent for evidence-preservation duties of AI companies.",
+      "sources": [
+        "https://www.hollywoodreporter.com/business/business-news/openai-loses-key-discovery-battle-why-deleted-library-of-pirated-books-1236436363/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/11/22/openai-accidentally-deleted-potential-evidence-in-ny-times-copyright-lawsuit/",

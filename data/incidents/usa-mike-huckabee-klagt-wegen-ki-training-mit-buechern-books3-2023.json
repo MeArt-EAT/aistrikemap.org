@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Geistiges Eigentum",
+    "Urheberrecht",
+    "Schutz schriftstellerischer Arbeit",
+    "Recht auf wirtschaftliche Verwertung"
+  ],
+  "asm:affectedRights_de": [
+    "Geistiges Eigentum",
+    "Urheberrecht",
+    "Schutz schriftstellerischer Arbeit",
+    "Recht auf wirtschaftliche Verwertung"
+  ],
+  "asm:affectedRights_en": [
+    "Intellectual property",
+    "Copyright",
+    "Protection of literary work",
+    "Right to economic exploitation"
+  ],
   "asm:actors": [
     {
       "name": "Meta; Microsoft; Bloomberg; EleutherAI",
@@ -43,7 +58,75 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Entwickler stellt Datensatz Books3 aus rund 196.000 raubkopierten Büchern zusammen",
+      "description": "2020 lud der KI-Entwickler Shawn Presser den Datensatz Books3 hoch, der rund 196.000 über einen BitTorrent-Server beschaffte E-Books im Volltext enthielt - größtenteils urheberrechtlich geschützte Werke. Im Dezember 2020 baute die Non-Profit-Gruppe EleutherAI Books3 in ihren 886 GB großen Trainingsdatensatz 'The Pile' ein und veröffentlichte ihn frei.",
+      "title_de": "Entwickler stellt Datensatz Books3 aus rund 196.000 raubkopierten Büchern zusammen",
+      "description_de": "2020 lud der KI-Entwickler Shawn Presser den Datensatz Books3 hoch, der rund 196.000 über einen BitTorrent-Server beschaffte E-Books im Volltext enthielt - größtenteils urheberrechtlich geschützte Werke. Im Dezember 2020 baute die Non-Profit-Gruppe EleutherAI Books3 in ihren 886 GB großen Trainingsdatensatz 'The Pile' ein und veröffentlichte ihn frei.",
+      "title_en": "Developer assembles Books3 dataset of roughly 196,000 pirated books",
+      "description_en": "In 2020, AI developer Shawn Presser uploaded the Books3 dataset, which contained the full text of roughly 196,000 e-books obtained via a BitTorrent server - mostly copyright-protected works. In December 2020, the non-profit EleutherAI folded Books3 into its 886 GB training corpus 'The Pile' and released it freely.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Pile_(dataset)",
+        "https://gizmodo.com/anti-piracy-group-takes-ai-training-dataset-books3-off-1850743763"
+      ]
+    },
+    {
+      "date": "2023-02",
+      "phase": "doctrine",
+      "title": "Tech-Konzerne trainieren große Sprachmodelle mit Books3",
+      "description": "Meta nannte Books3 in seiner LLaMA-Veröffentlichung im Februar 2023 ausdrücklich als Trainingsquelle; Bloomberg setzte den Datensatz für BloombergGPT ein. Die raubkopierte Bücher-Sammlung wurde so als frei nutzbare Ressource behandelt, ohne dass Autoren um Erlaubnis gefragt oder Lizenzen eingeholt wurden.",
+      "title_de": "Tech-Konzerne trainieren große Sprachmodelle mit Books3",
+      "description_de": "Meta nannte Books3 in seiner LLaMA-Veröffentlichung im Februar 2023 ausdrücklich als Trainingsquelle; Bloomberg setzte den Datensatz für BloombergGPT ein. Die raubkopierte Bücher-Sammlung wurde so als frei nutzbare Ressource behandelt, ohne dass Autoren um Erlaubnis gefragt oder Lizenzen eingeholt wurden.",
+      "title_en": "Tech companies train large language models on Books3",
+      "description_en": "Meta explicitly cited Books3 as a training source in its February 2023 LLaMA release; Bloomberg used the dataset for BloombergGPT. The pirated book collection was thus treated as a freely usable resource, without authors being asked for permission or licenses being obtained.",
+      "sources": [
+        "https://incidentdatabase.ai/cite/996/"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "doctrine",
+      "title": "Anti-Piraterie-Gruppe lässt Books3 entfernen",
+      "description": "Im August 2023 nahm die Hosting-Seite The Eye Books3 nach einer Abmahnung der dänischen Rights Alliance offline, die in der Sammlung etwa 150 Titel ihrer Mitglieder gefunden hatte. Die Modelle waren zu diesem Zeitpunkt jedoch bereits trainiert - die Entfernung machte den Trainingsschritt nicht rückgängig.",
+      "title_de": "Anti-Piraterie-Gruppe lässt Books3 entfernen",
+      "description_de": "Im August 2023 nahm die Hosting-Seite The Eye Books3 nach einer Abmahnung der dänischen Rights Alliance offline, die in der Sammlung etwa 150 Titel ihrer Mitglieder gefunden hatte. Die Modelle waren zu diesem Zeitpunkt jedoch bereits trainiert - die Entfernung machte den Trainingsschritt nicht rückgängig.",
+      "title_en": "Anti-piracy group gets Books3 taken down",
+      "description_en": "In August 2023, the hosting site The Eye took Books3 offline after a notice from the Danish Rights Alliance, which had found about 150 of its members' titles in the collection. By then the models had already been trained - the removal did not undo the training step.",
+      "sources": [
+        "https://interestingengineering.com/innovation/anti-piracy-group-shuts-down-books3-a-popular-dataset-for-ai-models"
+      ]
+    },
+    {
+      "date": "2023-10-17",
+      "phase": "event",
+      "title": "Huckabee und vier weitere Autoren reichen Sammelklage ein",
+      "description": "Am 17. Oktober 2023 reichten Mike Huckabee, John Blase, David Kinnaman, Tsh Oxenreider und Lysa TerKeurst beim Bundesgericht für den Southern District of New York eine Sammelklage gegen Meta, Microsoft, Bloomberg und das EleutherAI Institute ein (Az. 1:23-cv-09152). Sie werfen den Beklagten Urheberrechtsverletzung, Verstöße gegen den DMCA und unrechtmäßige Bereicherung durch die Nutzung von Books3 vor.",
+      "title_de": "Huckabee und vier weitere Autoren reichen Sammelklage ein",
+      "description_de": "Am 17. Oktober 2023 reichten Mike Huckabee, John Blase, David Kinnaman, Tsh Oxenreider und Lysa TerKeurst beim Bundesgericht für den Southern District of New York eine Sammelklage gegen Meta, Microsoft, Bloomberg und das EleutherAI Institute ein (Az. 1:23-cv-09152). Sie werfen den Beklagten Urheberrechtsverletzung, Verstöße gegen den DMCA und unrechtmäßige Bereicherung durch die Nutzung von Books3 vor.",
+      "title_en": "Huckabee and four other authors file class action",
+      "description_en": "On 17 October 2023, Mike Huckabee, John Blase, David Kinnaman, Tsh Oxenreider and Lysa TerKeurst filed a class action in the U.S. District Court for the Southern District of New York against Meta, Microsoft, Bloomberg and the EleutherAI Institute (case 1:23-cv-09152). They accuse the defendants of copyright infringement, DMCA violations and unjust enrichment through the use of Books3.",
+      "sources": [
+        "https://thehill.com/policy/technology/4264815-mike-huckabee-religious-authors-tech-companies-books-ai-training/",
+        "https://dockets.justia.com/docket/new-york/nysdce/1:2023cv09152/608447"
+      ]
+    },
+    {
+      "date": "2023-10-18",
+      "phase": "consequences",
+      "title": "Klage reiht sich in Welle von Autoren-Verfahren gegen KI-Firmen ein",
+      "description": "Die Huckabee-Klage wurde Teil einer breiteren Welle von Urheberrechtsverfahren, in denen Autoren wie Sarah Silverman und die Authors Guild gegen Meta, OpenAI und andere wegen Books3 und vergleichbarer Datensätze vorgingen. Die Verfahren machten die Herkunft von Trainingsdaten zu einer zentralen Rechtsfrage der generativen KI.",
+      "title_de": "Klage reiht sich in Welle von Autoren-Verfahren gegen KI-Firmen ein",
+      "description_de": "Die Huckabee-Klage wurde Teil einer breiteren Welle von Urheberrechtsverfahren, in denen Autoren wie Sarah Silverman und die Authors Guild gegen Meta, OpenAI und andere wegen Books3 und vergleichbarer Datensätze vorgingen. Die Verfahren machten die Herkunft von Trainingsdaten zu einer zentralen Rechtsfrage der generativen KI.",
+      "title_en": "Suit joins a wave of author cases against AI firms",
+      "description_en": "The Huckabee suit became part of a broader wave of copyright cases in which authors such as Sarah Silverman and the Authors Guild took action against Meta, OpenAI and others over Books3 and comparable datasets. The cases made the provenance of training data a central legal question for generative AI.",
+      "sources": [
+        "https://news.bloomberglaw.com/ip-law/mike-huckabee-sues-meta-microsoft-bloomberg-over-ai-copyrights"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://thehill.com/policy/technology/4264815-mike-huckabee-religious-authors-tech-companies-books-ai-training/",

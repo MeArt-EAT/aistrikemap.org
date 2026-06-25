@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Urheberrecht",
+    "Geistiges Eigentum",
+    "Recht auf informationelle Selbstbestimmung",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Urheberrecht",
+    "Geistiges Eigentum",
+    "Recht auf informationelle Selbstbestimmung",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Copyright",
+    "Intellectual property",
+    "Right to informational self-determination",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "NVIDIA",
@@ -47,7 +62,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-05",
+      "phase": "infrastructure",
+      "title": "NVIDIA baut für das 'Cosmos'-Projekt eine 'video data factory' auf",
+      "description": "Bis Mai 2024 hatte NVIDIA für sein internes Projekt 'Cosmos' eine Pipeline zum massenhaften Herunterladen von Videos aufgebaut. Über das Tool yt-dlp und rotierende AWS-IP-Adressen lud das Team Millionen von YouTube-Videos herunter; Forschungs-VP Ming-Yu Liu beschrieb den Output als 'eine menschliche Lebenszeit' an visueller Erfahrung pro Tag. Diese Datenbasis sollte Cosmos-Modelle, 3D-Welten, autonome Fahrsysteme und 'Digital Human'-Avatare trainieren.",
+      "title_de": "NVIDIA baut für das 'Cosmos'-Projekt eine 'video data factory' auf",
+      "description_de": "Bis Mai 2024 hatte NVIDIA für sein internes Projekt 'Cosmos' eine Pipeline zum massenhaften Herunterladen von Videos aufgebaut. Über das Tool yt-dlp und rotierende AWS-IP-Adressen lud das Team Millionen von YouTube-Videos herunter; Forschungs-VP Ming-Yu Liu beschrieb den Output als 'eine menschliche Lebenszeit' an visueller Erfahrung pro Tag. Diese Datenbasis sollte Cosmos-Modelle, 3D-Welten, autonome Fahrsysteme und 'Digital Human'-Avatare trainieren.",
+      "title_en": "NVIDIA builds a 'video data factory' for the 'Cosmos' project",
+      "description_en": "By May 2024, NVIDIA had built a pipeline for mass-downloading videos for its internal 'Cosmos' project. Using the tool yt-dlp and rotating AWS IP addresses, the team downloaded millions of YouTube videos; research VP Ming-Yu Liu described the output as 'a human lifetime' of visual experience per day. This data was meant to train Cosmos models, 3D worlds, self-driving systems and 'digital human' avatars.",
+      "sources": [
+        "https://www.404media.co/nvidia-ai-scraping-foundational-model-cosmos-project/"
+      ]
+    },
+    {
+      "date": "2024-05",
+      "phase": "doctrine",
+      "title": "Leitung beruft sich auf 'Executive Decision' und 'umbrella approval'",
+      "description": "Als Mitarbeitende intern die Rechtmäßigkeit und ethische Vertretbarkeit des Scrapings in Frage stellten, verwies die Führung auf eine 'Executive Decision' und eine 'umbrella approval' von höchster Stelle. Das Unternehmen ergriff Maßnahmen, um die Aktivität vor YouTube zu verbergen, etwa durch Dutzende virtueller Maschinen mit wechselnden IP-Adressen. Damit wurde das Scraping zur abgesegneten Geschäftspraxis erklärt.",
+      "title_de": "Leitung beruft sich auf 'Executive Decision' und 'umbrella approval'",
+      "description_de": "Als Mitarbeitende intern die Rechtmäßigkeit und ethische Vertretbarkeit des Scrapings in Frage stellten, verwies die Führung auf eine 'Executive Decision' und eine 'umbrella approval' von höchster Stelle. Das Unternehmen ergriff Maßnahmen, um die Aktivität vor YouTube zu verbergen, etwa durch Dutzende virtueller Maschinen mit wechselnden IP-Adressen. Damit wurde das Scraping zur abgesegneten Geschäftspraxis erklärt.",
+      "title_en": "Leadership cites an 'executive decision' and 'umbrella approval'",
+      "description_en": "When staff internally questioned the legality and ethics of the scraping, leadership pointed to an 'executive decision' and 'umbrella approval' from the highest levels. The company took steps to hide the activity from YouTube, such as dozens of virtual machines with changing IP addresses. The scraping was thus declared sanctioned business practice.",
+      "sources": [
+        "https://www.proofnews.org/nvidia-scrapes-youtube-eyes-netflix-discovery-to-train-new-video-model/"
+      ]
+    },
+    {
+      "date": "2024-08-05",
+      "phase": "event",
+      "title": "404 Media veröffentlicht die Leak-Dokumente zum NVIDIA-Scraping",
+      "description": "Am 5. August 2024 veröffentlichte 404 Media interne Dokumente, Slack-Chats und E-Mails, denen zufolge NVIDIA YouTube-, Netflix- und weitere Videos in großem Stil ohne Erlaubnis abgriff, um Trainingsdaten zu gewinnen. NVIDIA erklärte, die Rechte aller Urheber:innen zu respektieren und sich vollumfänglich an Buchstaben und Geist des Urheberrechts zu halten; Modelltraining sei durch Fair Use als transformative Nutzung gedeckt.",
+      "title_de": "404 Media veröffentlicht die Leak-Dokumente zum NVIDIA-Scraping",
+      "description_de": "Am 5. August 2024 veröffentlichte 404 Media interne Dokumente, Slack-Chats und E-Mails, denen zufolge NVIDIA YouTube-, Netflix- und weitere Videos in großem Stil ohne Erlaubnis abgriff, um Trainingsdaten zu gewinnen. NVIDIA erklärte, die Rechte aller Urheber:innen zu respektieren und sich vollumfänglich an Buchstaben und Geist des Urheberrechts zu halten; Modelltraining sei durch Fair Use als transformative Nutzung gedeckt.",
+      "title_en": "404 Media publishes the leaked documents on NVIDIA's scraping",
+      "description_en": "On 5 August 2024, 404 Media published internal documents, Slack chats and emails indicating NVIDIA scraped YouTube, Netflix and other videos at scale without permission to build training data. NVIDIA said it respects the rights of all creators and is in full compliance with the letter and spirit of copyright law, arguing model training is fair use as a transformative purpose.",
+      "sources": [
+        "https://www.engadget.com/ai/nvidias-ai-team-reportedly-scraped-youtube-netflix-videos-without-permission-204942022.html"
+      ]
+    },
+    {
+      "date": "2025-01-06",
+      "phase": "consequences",
+      "title": "NVIDIA stellt Cosmos auf der CES 2025 vor",
+      "description": "Am 6. Januar 2025 stellte NVIDIA auf der CES die 'Cosmos World Foundation Models' offiziell vor und machte sie für Entwickler:innen offen verfügbar. Laut NVIDIA wurden die Modelle auf 9.000 Billionen Tokens aus 20 Millionen Stunden realer Aufnahmen trainiert. Die Herkunft dieser Trainingsdaten blieb umstritten und bildete die Grundlage für spätere Klagen.",
+      "title_de": "NVIDIA stellt Cosmos auf der CES 2025 vor",
+      "description_de": "Am 6. Januar 2025 stellte NVIDIA auf der CES die 'Cosmos World Foundation Models' offiziell vor und machte sie für Entwickler:innen offen verfügbar. Laut NVIDIA wurden die Modelle auf 9.000 Billionen Tokens aus 20 Millionen Stunden realer Aufnahmen trainiert. Die Herkunft dieser Trainingsdaten blieb umstritten und bildete die Grundlage für spätere Klagen.",
+      "title_en": "NVIDIA unveils Cosmos at CES 2025",
+      "description_en": "On 6 January 2025, NVIDIA officially unveiled the 'Cosmos World Foundation Models' at CES and made them openly available to developers. According to NVIDIA, the models were trained on 9,000 trillion tokens from 20 million hours of real-world footage. The provenance of this training data remained disputed and became the basis for later lawsuits.",
+      "sources": [
+        "https://techcrunch.com/2025/01/06/nvidia-releases-its-own-brand-of-world-models/"
+      ]
+    },
+    {
+      "date": "2025-11-26",
+      "phase": "consequences",
+      "title": "YouTube-Creator reichen Sammelklage gegen NVIDIA wegen Cosmos ein",
+      "description": "Am 26. November 2025 reichten die Betreiber der YouTube-Kanäle H3H3 Productions, Mr. ShortGame Golf und Golfholics vor dem US-Bezirksgericht für den Northern District of California eine Sammelklage gegen NVIDIA ein. Sie werfen dem Konzern vor, YouTube massenhaft abgegriffen zu haben, um Cosmos zu trainieren, und stützen sich dabei ausdrücklich auf die von 404 Media im August 2024 veröffentlichten internen Mitteilungen.",
+      "title_de": "YouTube-Creator reichen Sammelklage gegen NVIDIA wegen Cosmos ein",
+      "description_de": "Am 26. November 2025 reichten die Betreiber der YouTube-Kanäle H3H3 Productions, Mr. ShortGame Golf und Golfholics vor dem US-Bezirksgericht für den Northern District of California eine Sammelklage gegen NVIDIA ein. Sie werfen dem Konzern vor, YouTube massenhaft abgegriffen zu haben, um Cosmos zu trainieren, und stützen sich dabei ausdrücklich auf die von 404 Media im August 2024 veröffentlichten internen Mitteilungen.",
+      "title_en": "YouTube creators file a class action against NVIDIA over Cosmos",
+      "description_en": "On 26 November 2025, the operators of the YouTube channels H3H3 Productions, Mr. ShortGame Golf and Golfholics filed a class action against NVIDIA in the US District Court for the Northern District of California. They allege the company mass-scraped YouTube to train Cosmos, expressly citing the internal communications published by 404 Media in August 2024.",
+      "sources": [
+        "https://news.bloomberglaw.com/ip-law/nvidia-faces-class-action-over-scraping-youtube-to-train-ai"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.404media.co/nvidia-ai-scraping-foundational-model-cosmos-project/",
