@@ -31,9 +31,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Zugang zu Technologie",
+    "Würde des Menschen",
+    "Recht auf Teilhabe"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Zugang zu Technologie",
+    "Würde des Menschen",
+    "Recht auf Teilhabe"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal treatment",
+    "Access to technology",
+    "Human dignity",
+    "Right to participation"
+  ],
   "asm:actors": [
     {
       "name": "Amazon, Apple, Google, IBM, Microsoft (tested vendors)",
@@ -47,7 +65,54 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Sprachassistenten werden Massenmarkt - trainiert auf Standard-Englisch",
+      "description": "Mit Amazon Alexa, Google Assistant, Apple Siri und Microsoft Cortana wird automatische Spracherkennung (ASR) zur Alltagstechnik in Millionen Haushalten. Die zugrundeliegenden akustischen und sprachlichen Modelle werden überwiegend mit Aufnahmen von Sprecher:innen des Standard-amerikanischen Englisch trainiert. African American Vernacular English ist in den Trainingsdaten deutlich unterrepräsentiert.",
+      "title_de": "Sprachassistenten werden Massenmarkt - trainiert auf Standard-Englisch",
+      "description_de": "Mit Amazon Alexa, Google Assistant, Apple Siri und Microsoft Cortana wird automatische Spracherkennung (ASR) zur Alltagstechnik in Millionen Haushalten. Die zugrundeliegenden akustischen und sprachlichen Modelle werden überwiegend mit Aufnahmen von Sprecher:innen des Standard-amerikanischen Englisch trainiert. African American Vernacular English ist in den Trainingsdaten deutlich unterrepräsentiert.",
+      "title_en": "Voice assistants go mainstream - trained on standard English",
+      "description_en": "With Amazon Alexa, Google Assistant, Apple Siri and Microsoft Cortana, automated speech recognition (ASR) becomes everyday technology in millions of homes. The underlying acoustic and language models are trained mostly on recordings of standard American English speakers. African American Vernacular English is markedly under-represented in the training data.",
+      "sources": []
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "ASR-Genauigkeit als Wettbewerbsversprechen ohne Dialekt-Prüfung",
+      "description": "Die fünf großen Anbieter vermarkten ihre Spracherkennung mit immer niedrigeren Wortfehlerraten als universell einsetzbar - für Diktat, Untertitel, Bewerbungs- und Telefonsysteme. Eine systematische Prüfung der Genauigkeit nach Dialekt oder ethnischer Herkunft der Sprecher:innen ist nicht Teil der Produktfreigabe. Forschende beginnen, dialektspezifische Schwächen kommerzieller Systeme zu dokumentieren.",
+      "title_de": "ASR-Genauigkeit als Wettbewerbsversprechen ohne Dialekt-Prüfung",
+      "description_de": "Die fünf großen Anbieter vermarkten ihre Spracherkennung mit immer niedrigeren Wortfehlerraten als universell einsetzbar - für Diktat, Untertitel, Bewerbungs- und Telefonsysteme. Eine systematische Prüfung der Genauigkeit nach Dialekt oder ethnischer Herkunft der Sprecher:innen ist nicht Teil der Produktfreigabe. Forschende beginnen, dialektspezifische Schwächen kommerzieller Systeme zu dokumentieren.",
+      "title_en": "ASR accuracy sold as a universal promise without dialect testing",
+      "description_en": "The five major vendors market their speech recognition with ever-lower word error rates as universally usable - for dictation, captioning, hiring and phone systems. A systematic accuracy check broken down by speaker dialect or ethnicity is not part of product release. Researchers begin documenting dialect-specific weaknesses of commercial systems.",
+      "sources": []
+    },
+    {
+      "date": "2020-03-23",
+      "phase": "event",
+      "title": "PNAS-Studie belegt doppelt so hohe Fehlerrate bei schwarzen Sprecher:innen",
+      "description": "Ein Stanford-Team um Allison Koenecke, Sharad Goel und Dan Jurafsky veröffentlicht in den Proceedings of the National Academy of Sciences die Studie 'Racial disparities in automated speech recognition'. Getestet an 42 weißen und 73 schwarzen Sprecher:innen lag die durchschnittliche Wortfehlerrate der Systeme von Amazon, Apple, Google, IBM und Microsoft bei 0,35 für schwarze gegenüber 0,19 für weiße Sprecher:innen. Bei schwarzen Männern traten über 40 Fehler pro 100 Wörter auf - auch bei identischen gesprochenen Wörtern blieb die Lücke bestehen.",
+      "title_de": "PNAS-Studie belegt doppelt so hohe Fehlerrate bei schwarzen Sprecher:innen",
+      "description_de": "Ein Stanford-Team um Allison Koenecke, Sharad Goel und Dan Jurafsky veröffentlicht in den Proceedings of the National Academy of Sciences die Studie 'Racial disparities in automated speech recognition'. Getestet an 42 weißen und 73 schwarzen Sprecher:innen lag die durchschnittliche Wortfehlerrate der Systeme von Amazon, Apple, Google, IBM und Microsoft bei 0,35 für schwarze gegenüber 0,19 für weiße Sprecher:innen. Bei schwarzen Männern traten über 40 Fehler pro 100 Wörter auf - auch bei identischen gesprochenen Wörtern blieb die Lücke bestehen.",
+      "title_en": "PNAS study documents double the error rate for Black speakers",
+      "description_en": "A Stanford team led by Allison Koenecke, Sharad Goel and Dan Jurafsky publishes 'Racial disparities in automated speech recognition' in the Proceedings of the National Academy of Sciences. Tested on 42 white and 73 Black speakers, the average word error rate of the systems from Amazon, Apple, Google, IBM and Microsoft was 0.35 for Black versus 0.19 for white speakers. For Black men, more than 40 errors per 100 words occurred - and the gap persisted even for identical spoken words.",
+      "sources": [
+        "https://www.pnas.org/doi/10.1073/pnas.1915768117"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Studie wird Standardbeleg für ASR-Bias und Forderung nach inklusiven Daten",
+      "description": "Die Studie wird breit rezipiert, unter anderem im AI Index Report 2021, und gilt seither als Standardbeleg für ethnische Verzerrung in Sprachtechnologie. Sie verstärkt Forderungen nach repräsentativeren Trainingsdaten und nach Genauigkeits-Audits vor dem Einsatz von ASR in sensiblen Bereichen wie Justiz, Medizin und Personalauswahl. Folgeforschung bestätigt die Unterrepräsentation von African American Vernacular English als zentrale Ursache.",
+      "title_de": "Studie wird Standardbeleg für ASR-Bias und Forderung nach inklusiven Daten",
+      "description_de": "Die Studie wird breit rezipiert, unter anderem im AI Index Report 2021, und gilt seither als Standardbeleg für ethnische Verzerrung in Sprachtechnologie. Sie verstärkt Forderungen nach repräsentativeren Trainingsdaten und nach Genauigkeits-Audits vor dem Einsatz von ASR in sensiblen Bereichen wie Justiz, Medizin und Personalauswahl. Folgeforschung bestätigt die Unterrepräsentation von African American Vernacular English als zentrale Ursache.",
+      "title_en": "Study becomes a standard reference for ASR bias and inclusive-data demands",
+      "description_en": "The study is widely cited, including in the AI Index Report 2021, and has since become a standard reference for ethnic bias in speech technology. It strengthens calls for more representative training data and for accuracy audits before deploying ASR in sensitive areas such as justice, medicine and hiring. Follow-up research confirms the under-representation of African American Vernacular English as a central cause.",
+      "sources": []
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.pnas.org/doi/10.1073/pnas.1915768117",

@@ -31,9 +31,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Religionsfreiheit",
+    "Würde des Menschen",
+    "Schutz vor Stigmatisierung",
+    "Gleichbehandlung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Religionsfreiheit",
+    "Würde des Menschen",
+    "Schutz vor Stigmatisierung",
+    "Gleichbehandlung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Freedom of religion",
+    "Human dignity",
+    "Protection from stigmatisation",
+    "Equal treatment"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -47,7 +65,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-06-11",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht das Sprachmodell GPT-3",
+      "description": "OpenAI stellt GPT-3 vor, mit 175 Milliarden Parametern das damals größte Sprachmodell. Es wurde überwiegend auf gefiltertem Common-Crawl-Webtext sowie WebText, Wikipedia und Buchkorpora trainiert - also auf großen Mengen ungeprüfter Internettexte, die bestehende gesellschaftliche Vorurteile enthalten.",
+      "title_de": "OpenAI veröffentlicht das Sprachmodell GPT-3",
+      "description_de": "OpenAI stellt GPT-3 vor, mit 175 Milliarden Parametern das damals größte Sprachmodell. Es wurde überwiegend auf gefiltertem Common-Crawl-Webtext sowie WebText, Wikipedia und Buchkorpora trainiert - also auf großen Mengen ungeprüfter Internettexte, die bestehende gesellschaftliche Vorurteile enthalten.",
+      "title_en": "OpenAI releases the GPT-3 language model",
+      "description_en": "OpenAI unveils GPT-3, with 175 billion parameters the largest language model at the time. It was trained mainly on filtered Common Crawl web text plus WebText, Wikipedia and book corpora - that is, on vast amounts of unvetted internet text that carries existing societal biases.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GPT-3"
+      ]
+    },
+    {
+      "date": "2020-07",
+      "phase": "doctrine",
+      "title": "OpenAI öffnet GPT-3 über eine kommerzielle API",
+      "description": "OpenAI gibt GPT-3 ab Mitte 2020 über eine kostenpflichtige API in einer geschlossenen Beta für Entwickler frei. Damit wird das Modell zur Grundlage zahlreicher Anwendungen - vom Schreibassistenten bis zum Chatbot. Die kommerzielle Bereitstellung trägt etwaige Verzerrungen des Modells in reale Produkte hinein, bevor diese systematisch geprüft sind.",
+      "title_de": "OpenAI öffnet GPT-3 über eine kommerzielle API",
+      "description_de": "OpenAI gibt GPT-3 ab Mitte 2020 über eine kostenpflichtige API in einer geschlossenen Beta für Entwickler frei. Damit wird das Modell zur Grundlage zahlreicher Anwendungen - vom Schreibassistenten bis zum Chatbot. Die kommerzielle Bereitstellung trägt etwaige Verzerrungen des Modells in reale Produkte hinein, bevor diese systematisch geprüft sind.",
+      "title_en": "OpenAI opens GPT-3 via a commercial API",
+      "description_en": "From mid-2020 OpenAI makes GPT-3 available to developers through a paid API in a closed beta. The model becomes the basis for numerous applications - from writing assistants to chatbots. This commercial deployment carries any model biases into real products before they have been systematically tested.",
+      "sources": [
+        "https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/"
+      ]
+    },
+    {
+      "date": "2021-01-14",
+      "phase": "event",
+      "title": "Studie belegt hartnäckige Muslim-Gewalt-Verknüpfung in GPT-3",
+      "description": "Abubakar Abid, Maheen Farooqi und James Zou (Stanford University, McMaster University) veröffentlichen 'Persistent Anti-Muslim Bias in Large Language Models'. Beim Prompt 'Two Muslims walked into a' enthielten 66 von 100 Vervollständigungen Gewaltbezüge; im Analogie-Test wurde 'Muslim' in 23 Prozent der Fälle mit 'Terrorist' assoziiert - deutlich häufiger als bei anderen Religionsgruppen.",
+      "title_de": "Studie belegt hartnäckige Muslim-Gewalt-Verknüpfung in GPT-3",
+      "description_de": "Abubakar Abid, Maheen Farooqi und James Zou (Stanford University, McMaster University) veröffentlichen 'Persistent Anti-Muslim Bias in Large Language Models'. Beim Prompt 'Two Muslims walked into a' enthielten 66 von 100 Vervollständigungen Gewaltbezüge; im Analogie-Test wurde 'Muslim' in 23 Prozent der Fälle mit 'Terrorist' assoziiert - deutlich häufiger als bei anderen Religionsgruppen.",
+      "title_en": "Study documents persistent Muslim-violence link in GPT-3",
+      "description_en": "Abubakar Abid, Maheen Farooqi and James Zou (Stanford University, McMaster University) publish 'Persistent Anti-Muslim Bias in Large Language Models'. For the prompt 'Two Muslims walked into a', 66 of 100 completions contained references to violence; in analogy tests 'Muslim' was associated with 'terrorist' 23 percent of the time, far more than for other religious groups.",
+      "sources": [
+        "https://dl.acm.org/doi/10.1145/3461702.3462624"
+      ]
+    },
+    {
+      "date": "2021-06",
+      "phase": "consequences",
+      "title": "Veröffentlichung auf der AIES-Konferenz und Debatte um Bias-Minderung",
+      "description": "Die Studie erscheint in den Proceedings der AAAI/ACM-Konferenz AIES 2021 und wird zu einer vielzitierten Referenz für religiöse Verzerrungen in Sprachmodellen. Die Forschenden zeigen, dass sich die Gewaltbezüge mit positiven Adjektiven im Prompt zwar von 66 auf 20 Prozent senken lassen, der anti-muslimische Bias aber nicht vollständig verschwindet - was die Grenzen oberflächlicher Korrekturen verdeutlicht.",
+      "title_de": "Veröffentlichung auf der AIES-Konferenz und Debatte um Bias-Minderung",
+      "description_de": "Die Studie erscheint in den Proceedings der AAAI/ACM-Konferenz AIES 2021 und wird zu einer vielzitierten Referenz für religiöse Verzerrungen in Sprachmodellen. Die Forschenden zeigen, dass sich die Gewaltbezüge mit positiven Adjektiven im Prompt zwar von 66 auf 20 Prozent senken lassen, der anti-muslimische Bias aber nicht vollständig verschwindet - was die Grenzen oberflächlicher Korrekturen verdeutlicht.",
+      "title_en": "Publication at the AIES conference and debate over bias mitigation",
+      "description_en": "The study appears in the proceedings of the AAAI/ACM AIES 2021 conference and becomes a widely cited reference for religious bias in language models. The researchers show that adding positive adjectives to the prompt cuts violent completions from 66 to 20 percent, yet the anti-Muslim bias does not disappear entirely - underscoring the limits of superficial fixes.",
+      "sources": [
+        "https://thenextweb.com/news/gpt-3-has-consistent-and-creative-anti-muslim-bias-study-finds"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/abs/2101.05783",

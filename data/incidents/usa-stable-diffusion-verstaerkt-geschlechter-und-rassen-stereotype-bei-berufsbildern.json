@@ -31,9 +31,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Geschlechtergleichheit",
+    "Würde des Menschen",
+    "Recht auf faire Darstellung",
+    "Recht auf Chancengleichheit"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Geschlechtergleichheit",
+    "Würde des Menschen",
+    "Recht auf faire Darstellung",
+    "Recht auf Chancengleichheit"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Gender equality",
+    "Human dignity",
+    "Right to fair representation",
+    "Right to equal opportunity"
+  ],
   "asm:actors": [
     {
       "name": "Stability AI",
@@ -54,7 +72,58 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-03",
+      "phase": "infrastructure",
+      "title": "LAION-5B: ungefilterter Web-Scrape als Trainingsbasis",
+      "description": "Der gemeinnützige Verein LAION veröffentlicht LAION-5B, den damals größten offen zugänglichen Bild-Text-Datensatz mit über 5 Milliarden aus dem Web gesammelten Bild-Beschreibungs-Paaren. Die Paare stammen aus Common-Crawl-Daten und sind nicht auf gesellschaftliche Verzerrungen gefiltert. Damit entsteht die Datenbasis, die die statistischen Muster und Stereotype des offenen Internets in spätere Bildmodelle trägt.",
+      "title_de": "LAION-5B: ungefilterter Web-Scrape als Trainingsbasis",
+      "description_de": "Der gemeinnützige Verein LAION veröffentlicht LAION-5B, den damals größten offen zugänglichen Bild-Text-Datensatz mit über 5 Milliarden aus dem Web gesammelten Bild-Beschreibungs-Paaren. Die Paare stammen aus Common-Crawl-Daten und sind nicht auf gesellschaftliche Verzerrungen gefiltert. Damit entsteht die Datenbasis, die die statistischen Muster und Stereotype des offenen Internets in spätere Bildmodelle trägt.",
+      "title_en": "LAION-5B: an unfiltered web scrape as training base",
+      "description_en": "The non-profit LAION publishes LAION-5B, then the largest openly accessible image-text dataset, with over 5 billion image-caption pairs collected from the web. The pairs come from Common Crawl data and are not filtered for societal bias. This creates the data foundation that carries the statistical patterns and stereotypes of the open internet into later image models.",
+      "sources": [
+        "https://laion.ai/blog/laion-5b/"
+      ]
+    },
+    {
+      "date": "2022-08",
+      "phase": "doctrine",
+      "title": "Stability AI veröffentlicht Stable Diffusion als Open-Source-Modell",
+      "description": "Stability AI gibt Stable Diffusion als quelloffenes Text-zu-Bild-Modell frei, trainiert auf einer 2-Milliarden-Bilder-Teilmenge von LAION-5B. Code und Modellgewichte sind öffentlich, das Modell läuft auf gängiger Consumer-Hardware. Die Freigabe priorisiert breite Verfügbarkeit und schnelle Verbreitung; eine systematische Prüfung oder Korrektur von Geschlechter- und Rassen-Verzerrungen vor der Veröffentlichung findet nicht statt.",
+      "title_de": "Stability AI veröffentlicht Stable Diffusion als Open-Source-Modell",
+      "description_de": "Stability AI gibt Stable Diffusion als quelloffenes Text-zu-Bild-Modell frei, trainiert auf einer 2-Milliarden-Bilder-Teilmenge von LAION-5B. Code und Modellgewichte sind öffentlich, das Modell läuft auf gängiger Consumer-Hardware. Die Freigabe priorisiert breite Verfügbarkeit und schnelle Verbreitung; eine systematische Prüfung oder Korrektur von Geschlechter- und Rassen-Verzerrungen vor der Veröffentlichung findet nicht statt.",
+      "title_en": "Stability AI releases Stable Diffusion as an open-source model",
+      "description_en": "Stability AI releases Stable Diffusion as an open-source text-to-image model, trained on a 2-billion-image subset of LAION-5B. Code and model weights are public and the model runs on consumer hardware. The release prioritises broad availability and rapid spread; no systematic check or correction of gender and racial bias happens before publication.",
+      "sources": []
+    },
+    {
+      "date": "2023-06",
+      "phase": "event",
+      "title": "Bloomberg-Analyse belegt verstärkte Berufs-Stereotype",
+      "description": "Bloomberg erzeugt mit Stable Diffusion v1.5 rund 5.100 Bilder zu Berufen und kriminalisierten Kategorien und lässt sie von acht Reporter:innen auswerten. Hochbezahlte Rollen wie CEO, Anwalt, Richter und Politiker werden überwiegend von hellhäutigen Männern dargestellt, niedrig bezahlte Tätigkeiten wie Fast-Food-Worker oder Hausangestellte überwiegend von Menschen mit dunklerer Haut - stärker, als es reale Beschäftigungsstatistiken hergeben. Die Analyse erscheint unter dem Titel 'Humans Are Biased. Generative AI Is Even Worse.'",
+      "title_de": "Bloomberg-Analyse belegt verstärkte Berufs-Stereotype",
+      "description_de": "Bloomberg erzeugt mit Stable Diffusion v1.5 rund 5.100 Bilder zu Berufen und kriminalisierten Kategorien und lässt sie von acht Reporter:innen auswerten. Hochbezahlte Rollen wie CEO, Anwalt, Richter und Politiker werden überwiegend von hellhäutigen Männern dargestellt, niedrig bezahlte Tätigkeiten wie Fast-Food-Worker oder Hausangestellte überwiegend von Menschen mit dunklerer Haut - stärker, als es reale Beschäftigungsstatistiken hergeben. Die Analyse erscheint unter dem Titel 'Humans Are Biased. Generative AI Is Even Worse.'",
+      "title_en": "Bloomberg analysis documents amplified occupational stereotypes",
+      "description_en": "Bloomberg generates around 5,100 images of occupations and criminalised categories with Stable Diffusion v1.5 and has eight reporters review them. High-paying roles such as CEO, lawyer, judge and politician are predominantly depicted as light-skinned men, while low-paying jobs such as fast-food worker or housekeeper are predominantly people with darker skin - more strongly than real employment statistics warrant. The analysis appears under the title 'Humans Are Biased. Generative AI Is Even Worse.'",
+      "sources": [
+        "https://www.bloomberg.com/graphics/2023-generative-ai-bias/"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "consequences",
+      "title": "Akademische Studien bestätigen und vertiefen den Befund",
+      "description": "Eine im Oktober 2023 als arXiv-Preprint veröffentlichte Studie untersucht Stereotype in Stable Diffusion systematisch und zeigt, dass das Modell den Begriff 'Person' überwiegend als hellhäutigen, westlichen Mann darstellt und Frauen of Color sexualisiert. Zusammen mit der Bloomberg-Analyse wird der Fall zu einem zentralen Beleg in der Debatte um Bias in generativen Bildmodellen und befeuert Forderungen nach Daten-Audits und Fairness-Korrekturen.",
+      "title_de": "Akademische Studien bestätigen und vertiefen den Befund",
+      "description_de": "Eine im Oktober 2023 als arXiv-Preprint veröffentlichte Studie untersucht Stereotype in Stable Diffusion systematisch und zeigt, dass das Modell den Begriff 'Person' überwiegend als hellhäutigen, westlichen Mann darstellt und Frauen of Color sexualisiert. Zusammen mit der Bloomberg-Analyse wird der Fall zu einem zentralen Beleg in der Debatte um Bias in generativen Bildmodellen und befeuert Forderungen nach Daten-Audits und Fairness-Korrekturen.",
+      "title_en": "Academic studies confirm and deepen the finding",
+      "description_en": "A study published as an arXiv preprint in October 2023 systematically examines stereotypes in Stable Diffusion and shows that the model predominantly depicts the term 'person' as a light-skinned, Western man and sexualises women of colour. Together with the Bloomberg analysis, the case becomes a central piece of evidence in the debate over bias in generative image models and fuels calls for data audits and fairness corrections.",
+      "sources": [
+        "https://arxiv.org/pdf/2310.19981"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bloomberg.com/graphics/2023-generative-ai-bias/",

@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Recht auf Zugang zu verlässlicher Information",
+    "Schutz vor Manipulation",
+    "Recht auf wirtschaftliche Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Recht auf Zugang zu verlässlicher Information",
+    "Schutz vor Manipulation",
+    "Recht auf wirtschaftliche Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Right of access to reliable information",
+    "Protection from manipulation",
+    "Right to economic self-determination"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -48,7 +63,71 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-05",
+      "phase": "infrastructure",
+      "title": "Google startet die generative Such-Experience (SGE)",
+      "description": "Auf der I/O-Konferenz im Mai 2023 stellte Google die Search Generative Experience vor - generative KI-Zusammenfassungen direkt über den klassischen Suchtreffern. Anfangs nur über eine Warteliste zugänglich, legte SGE die technische Grundlage für automatisch erzeugte Antwortboxen, die Quellen zusammenfassen, statt nur zu verlinken.",
+      "title_de": "Google startet die generative Such-Experience (SGE)",
+      "description_de": "Auf der I/O-Konferenz im Mai 2023 stellte Google die Search Generative Experience vor - generative KI-Zusammenfassungen direkt über den klassischen Suchtreffern. Anfangs nur über eine Warteliste zugänglich, legte SGE die technische Grundlage für automatisch erzeugte Antwortboxen, die Quellen zusammenfassen, statt nur zu verlinken.",
+      "title_en": "Google launches the Search Generative Experience (SGE)",
+      "description_en": "At its I/O conference in May 2023, Google introduced the Search Generative Experience - generative AI summaries placed directly above the classic search results. Initially available only via a waitlist, SGE laid the technical groundwork for automatically generated answer boxes that summarise sources instead of merely linking to them.",
+      "sources": [
+        "https://www.searchenginejournal.com/google-rolls-out-sge-ai-powered-overviews/516279/"
+      ]
+    },
+    {
+      "date": "2024-05-14",
+      "phase": "doctrine",
+      "title": "Breiter Rollout der AI Overviews für die US-Suche",
+      "description": "Am 14. Mai 2024 kündigte Google auf der I/O an, AI Overviews als Standard für hunderte Millionen US-Nutzer:innen auszurollen - ohne Opt-in. Die KI-Zusammenfassung erscheint nun automatisch an prominentester Stelle, auch bei sensiblen Geld- und Gesundheitsthemen (YMYL). Bereits Ende Mai 2024 fielen erste gefährlich falsche Antworten auf.",
+      "title_de": "Breiter Rollout der AI Overviews für die US-Suche",
+      "description_de": "Am 14. Mai 2024 kündigte Google auf der I/O an, AI Overviews als Standard für hunderte Millionen US-Nutzer:innen auszurollen - ohne Opt-in. Die KI-Zusammenfassung erscheint nun automatisch an prominentester Stelle, auch bei sensiblen Geld- und Gesundheitsthemen (YMYL). Bereits Ende Mai 2024 fielen erste gefährlich falsche Antworten auf.",
+      "title_en": "Broad rollout of AI Overviews to US Search",
+      "description_en": "On 14 May 2024, Google announced at I/O that AI Overviews would roll out as the default for hundreds of millions of US users - with no opt-in. The AI summary now appears automatically in the most prominent position, including for sensitive money and health topics (YMYL). Within days, the first dangerously wrong answers surfaced in late May 2024.",
+      "sources": [
+        "https://www.collectivemeasures.com/insights/ai-overviews-launch-in-google-search"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "event",
+      "title": "The College Investor: 43 Prozent der Finanzantworten ungenau",
+      "description": "Im Oktober 2024 prüfte The College Investor hundert Finanz-Suchanfragen aus Banking, Kredit, Investment, Versicherung und Studienkrediten. In 43 Prozent der Fälle lieferten die AI Overviews ungenaue oder irreführende Antworten. Besonders fehleranfällig waren Steuern (rund zwei Drittel falsch), Investitionen und Studienkredite - oft wegen übersehener Ausnahmen oder veralteter Regeln.",
+      "title_de": "The College Investor: 43 Prozent der Finanzantworten ungenau",
+      "description_de": "Im Oktober 2024 prüfte The College Investor hundert Finanz-Suchanfragen aus Banking, Kredit, Investment, Versicherung und Studienkrediten. In 43 Prozent der Fälle lieferten die AI Overviews ungenaue oder irreführende Antworten. Besonders fehleranfällig waren Steuern (rund zwei Drittel falsch), Investitionen und Studienkredite - oft wegen übersehener Ausnahmen oder veralteter Regeln.",
+      "title_en": "The College Investor: 43 percent of finance answers inaccurate",
+      "description_en": "In October 2024, The College Investor tested 100 personal-finance queries across banking, credit, investing, insurance and student loans. In 43 percent of cases the AI Overviews returned inaccurate or misleading answers. Tax queries (about two-thirds wrong), investing and student loans were worst - often due to overlooked exceptions or outdated rules.",
+      "sources": [
+        "https://thecollegeinvestor.com/47758/google-ai-misleads-in-43-of-finance-related-searches/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Forderung nach Abschaltung der AI Overviews bei Geldthemen",
+      "description": "The College Investor und mehrere Fachmedien forderten Google auf, KI-Zusammenfassungen für Finanzfragen - besonders zu Steuern und Geldanlage - abzuschalten, weil falsche Auskünfte zu konkreten finanziellen Fehlentscheidungen führen können. Die Studie verschärfte die ohnehin laufende Kritik an AI Overviews bei sensiblen YMYL-Themen.",
+      "title_de": "Forderung nach Abschaltung der AI Overviews bei Geldthemen",
+      "description_de": "The College Investor und mehrere Fachmedien forderten Google auf, KI-Zusammenfassungen für Finanzfragen - besonders zu Steuern und Geldanlage - abzuschalten, weil falsche Auskünfte zu konkreten finanziellen Fehlentscheidungen führen können. Die Studie verschärfte die ohnehin laufende Kritik an AI Overviews bei sensiblen YMYL-Themen.",
+      "title_en": "Calls to disable AI Overviews for money topics",
+      "description_en": "The College Investor and several trade outlets urged Google to disable AI summaries for finance queries - especially taxes and investing - because wrong answers can lead to concrete financial mistakes. The study intensified the already growing criticism of AI Overviews on sensitive YMYL topics.",
+      "sources": [
+        "https://www.searchenginejournal.com/googles-ai-fails-at-43-of-finance-queries-study-finds/530542/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Folgeanalyse 2025: Fehlerquote leicht auf 37 Prozent gesunken",
+      "description": "Eine Wiederholung der Untersuchung 2025 ergab eine leicht verbesserte, aber weiterhin hohe Fehlerquote von 37 Prozent. Mehr als ein Drittel der Finanzantworten blieb ungenau oder irreführend - ein Beleg, dass das Grundproblem unzuverlässiger KI-Auskünfte bei Geldthemen fortbestand.",
+      "title_de": "Folgeanalyse 2025: Fehlerquote leicht auf 37 Prozent gesunken",
+      "description_de": "Eine Wiederholung der Untersuchung 2025 ergab eine leicht verbesserte, aber weiterhin hohe Fehlerquote von 37 Prozent. Mehr als ein Drittel der Finanzantworten blieb ungenau oder irreführend - ein Beleg, dass das Grundproblem unzuverlässiger KI-Auskünfte bei Geldthemen fortbestand.",
+      "title_en": "2025 follow-up: error rate edged down to 37 percent",
+      "description_en": "A 2025 repeat of the study found a slightly improved but still high error rate of 37 percent. More than a third of finance answers remained inaccurate or misleading - evidence that the underlying problem of unreliable AI answers on money topics persisted.",
+      "sources": []
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.searchenginejournal.com/googles-ai-fails-at-43-of-finance-queries-study-finds/530542/",

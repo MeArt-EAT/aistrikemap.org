@@ -31,9 +31,27 @@
     "data-misuse",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Schutz vor Diskriminierung",
+    "Rechte von Menschen mit Behinderung",
+    "Würde des Menschen",
+    "Recht auf zutreffende Information"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Schutz vor Diskriminierung",
+    "Rechte von Menschen mit Behinderung",
+    "Würde des Menschen",
+    "Recht auf zutreffende Information"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Protection from discrimination",
+    "Rights of persons with disabilities",
+    "Human dignity",
+    "Right to accurate information"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -54,7 +72,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-09",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht Whisper als Open-Source-Spracherkennung",
+      "description": "Im September 2022 stellt OpenAI das Spracherkennungssystem Whisper unter MIT-Lizenz frei zur Verfügung. Das Modell wurde mit 680.000 Stunden aus dem Internet gesammelter, teils unsauberer Audiodaten per 'weak supervision' trainiert. Die Encoder-Decoder-Architektur erzeugt bei stillen oder schwer verständlichen Passagen plausibel klingenden, aber erfundenen Text - die technische Wurzel der späteren Halluzinationen.",
+      "title_de": "OpenAI veröffentlicht Whisper als Open-Source-Spracherkennung",
+      "description_de": "Im September 2022 stellt OpenAI das Spracherkennungssystem Whisper unter MIT-Lizenz frei zur Verfügung. Das Modell wurde mit 680.000 Stunden aus dem Internet gesammelter, teils unsauberer Audiodaten per 'weak supervision' trainiert. Die Encoder-Decoder-Architektur erzeugt bei stillen oder schwer verständlichen Passagen plausibel klingenden, aber erfundenen Text - die technische Wurzel der späteren Halluzinationen.",
+      "title_en": "OpenAI releases Whisper as open-source speech recognition",
+      "description_en": "In September 2022 OpenAI releases the speech-recognition system Whisper under an MIT licence. The model was trained on 680,000 hours of partly noisy audio scraped from the internet via 'weak supervision'. Its encoder-decoder architecture produces plausible-sounding but fabricated text during silent or hard-to-parse passages - the technical root of the later hallucinations.",
+      "sources": [
+        "https://techcrunch.com/2022/09/21/openai-open-sources-whisper-a-multilingual-speech-recognition-system/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Whisper-basierte Tools dringen in klinische Dokumentation ein",
+      "description": "Da Whisper frei verfügbar und leistungsfähig ist, integrieren Anbieter es in Produkte für sensible Bereiche. Das Medizin-Startup Nabla baut ein Whisper-gestütztes Transkriptionswerkzeug, das später schätzungsweise sieben Millionen Arztbesuche dokumentiert und über 30.000 Behandelnde sowie 40 Gesundheitssysteme erreicht. Zur 'Datensicherheit' löscht das Tool die Originalaufnahmen - ein Abgleich mit dem gesprochenen Wort wird dadurch unmöglich.",
+      "title_de": "Whisper-basierte Tools dringen in klinische Dokumentation ein",
+      "description_de": "Da Whisper frei verfügbar und leistungsfähig ist, integrieren Anbieter es in Produkte für sensible Bereiche. Das Medizin-Startup Nabla baut ein Whisper-gestütztes Transkriptionswerkzeug, das später schätzungsweise sieben Millionen Arztbesuche dokumentiert und über 30.000 Behandelnde sowie 40 Gesundheitssysteme erreicht. Zur 'Datensicherheit' löscht das Tool die Originalaufnahmen - ein Abgleich mit dem gesprochenen Wort wird dadurch unmöglich.",
+      "title_en": "Whisper-based tools spread into clinical documentation",
+      "description_en": "Because Whisper is freely available and capable, vendors integrate it into products for sensitive domains. Medical start-up Nabla builds a Whisper-based transcription tool that later documents an estimated seven million doctor visits and reaches over 30,000 clinicians and 40 health systems. For 'data safety' the tool deletes the original recordings - making comparison with the spoken word impossible.",
+      "sources": [
+        "https://fortune.com/2024/10/26/openai-transcription-tool-whisper-hallucination-rate-ai-tools-hospitals-patients-doctors/"
+      ]
+    },
+    {
+      "date": "2024-06-03",
+      "phase": "event",
+      "title": "'Careless Whisper'-Studie belegt gewaltvolle Halluzinationen",
+      "description": "Forschende um Allison Koenecke (Cornell) präsentieren auf der ACM-FAccT-2024-Konferenz die Studie 'Careless Whisper'. Etwa ein Prozent der Transkriptionen enthält ganze erfundene Sätze, die nie gesprochen wurden; 38 Prozent dieser Halluzinationen tragen schädliche oder gewaltvolle Sprache, rassistische Kommentare oder ausgedachte medizinische Behandlungen. Menschen mit Aphasie sind überproportional betroffen.",
+      "title_de": "'Careless Whisper'-Studie belegt gewaltvolle Halluzinationen",
+      "description_de": "Forschende um Allison Koenecke (Cornell) präsentieren auf der ACM-FAccT-2024-Konferenz die Studie 'Careless Whisper'. Etwa ein Prozent der Transkriptionen enthält ganze erfundene Sätze, die nie gesprochen wurden; 38 Prozent dieser Halluzinationen tragen schädliche oder gewaltvolle Sprache, rassistische Kommentare oder ausgedachte medizinische Behandlungen. Menschen mit Aphasie sind überproportional betroffen.",
+      "title_en": "'Careless Whisper' study documents violent hallucinations",
+      "description_en": "Researchers led by Allison Koenecke (Cornell) present the study 'Careless Whisper' at the ACM FAccT 2024 conference. Roughly one percent of transcriptions contain entire fabricated sentences that were never spoken; 38 percent of these hallucinations carry harmful or violent language, racial commentary or invented medical treatments. People with aphasia are disproportionately affected.",
+      "sources": [
+        "https://facctconference.org/static/papers24/facct24-111.pdf",
+        "https://news.cornell.edu/stories/2024/06/ai-speech-text-can-hallucinate-violent-language"
+      ]
+    },
+    {
+      "date": "2024-10-26",
+      "phase": "consequences",
+      "title": "AP-Recherche: Whisper trotz Warnungen in Kliniken im Einsatz",
+      "description": "Eine Recherche der Associated Press berichtet, dass Whisper trotz bekannter Halluzinationen breit in Krankenhäusern eingesetzt wird, obwohl OpenAI vor Hochrisiko-Anwendungen warnt. Forschende finden Halluzinationen in 8 von 10 untersuchten Aufnahmen öffentlicher Sitzungen. OpenAI erklärt, sich des Problems bewusst zu sein und an Verbesserungen zu arbeiten; Fachleute fordern Regulierung und Abgleichbarkeit klinischer Transkripte.",
+      "title_de": "AP-Recherche: Whisper trotz Warnungen in Kliniken im Einsatz",
+      "description_de": "Eine Recherche der Associated Press berichtet, dass Whisper trotz bekannter Halluzinationen breit in Krankenhäusern eingesetzt wird, obwohl OpenAI vor Hochrisiko-Anwendungen warnt. Forschende finden Halluzinationen in 8 von 10 untersuchten Aufnahmen öffentlicher Sitzungen. OpenAI erklärt, sich des Problems bewusst zu sein und an Verbesserungen zu arbeiten; Fachleute fordern Regulierung und Abgleichbarkeit klinischer Transkripte.",
+      "title_en": "AP investigation: Whisper used in clinics despite warnings",
+      "description_en": "An Associated Press investigation reports that Whisper is widely used in hospitals despite known hallucinations, even though OpenAI warns against high-risk applications. Researchers find hallucinations in 8 of 10 inspected recordings of public meetings. OpenAI says it is aware of the problem and working on improvements; experts call for regulation and for clinical transcripts to remain auditable.",
+      "sources": [
+        "https://fortune.com/2024/10/26/openai-transcription-tool-whisper-hallucination-rate-ai-tools-hospitals-patients-doctors/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://dl.acm.org/doi/10.1145/3630106.3658996",

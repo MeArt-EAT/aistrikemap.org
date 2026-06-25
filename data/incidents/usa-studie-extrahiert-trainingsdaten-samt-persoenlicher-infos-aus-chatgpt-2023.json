@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf informationelle Selbstbestimmung",
+    "Schutz personenbezogener Daten",
+    "Urheberrecht"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf informationelle Selbstbestimmung",
+    "Schutz personenbezogener Daten",
+    "Urheberrecht"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Right to informational self-determination",
+    "Protection of personal data",
+    "Copyright"
+  ],
   "asm:actors": [
     {
       "name": "Google DeepMind; academic researchers (Nasr, Carlini et al.)",
@@ -48,7 +66,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "OpenAI startet ChatGPT als kostenlose Forschungsvorschau",
+      "description": "OpenAI veröffentlicht ChatGPT auf Basis der GPT-3.5-Reihe als kostenlose Forschungsvorschau. Das Modell ist auf riesigen, aus dem Internet geschöpften Textmengen trainiert und erreicht binnen fünf Tagen eine Million Nutzer. Das memorierte Trainingsmaterial bleibt im Modellgewicht gespeichert und bildet die Angriffsfläche für spätere Extraktionsangriffe.",
+      "title_de": "OpenAI startet ChatGPT als kostenlose Forschungsvorschau",
+      "description_de": "OpenAI veröffentlicht ChatGPT auf Basis der GPT-3.5-Reihe als kostenlose Forschungsvorschau. Das Modell ist auf riesigen, aus dem Internet geschöpften Textmengen trainiert und erreicht binnen fünf Tagen eine Million Nutzer. Das memorierte Trainingsmaterial bleibt im Modellgewicht gespeichert und bildet die Angriffsfläche für spätere Extraktionsangriffe.",
+      "title_en": "OpenAI launches ChatGPT as a free research preview",
+      "description_en": "OpenAI releases ChatGPT, built on the GPT-3.5 series, as a free research preview. The model is trained on huge amounts of text scraped from the internet and reaches one million users within five days. The memorised training material stays embedded in the model weights and forms the attack surface for later extraction attacks.",
+      "sources": [
+        "https://openai.com/index/chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-08-30",
+      "phase": "doctrine",
+      "title": "Forschende melden den Angriff vertraulich an OpenAI",
+      "description": "Bevor sie ihre Ergebnisse veröffentlichen, melden die Forschenden den Divergenz-Angriff am 30. August 2023 vertraulich an OpenAI - nach dem üblichen Verfahren der verantwortungsvollen Offenlegung mit einer 90-Tage-Frist. OpenAI patcht daraufhin die konkrete Ausnutzungsmethode, bevor die Studie öffentlich wird.",
+      "title_de": "Forschende melden den Angriff vertraulich an OpenAI",
+      "description_de": "Bevor sie ihre Ergebnisse veröffentlichen, melden die Forschenden den Divergenz-Angriff am 30. August 2023 vertraulich an OpenAI - nach dem üblichen Verfahren der verantwortungsvollen Offenlegung mit einer 90-Tage-Frist. OpenAI patcht daraufhin die konkrete Ausnutzungsmethode, bevor die Studie öffentlich wird.",
+      "title_en": "Researchers disclose the attack confidentially to OpenAI",
+      "description_en": "Before publishing, the researchers disclose the divergence attack confidentially to OpenAI on 30 August 2023 - following the standard responsible-disclosure process with a 90-day window. OpenAI then patches the specific exploitation method before the study goes public.",
+      "sources": [
+        "https://www.securityweek.com/simple-attack-allowed-extraction-of-chatgpt-training-data/"
+      ]
+    },
+    {
+      "date": "2023-11-28",
+      "phase": "event",
+      "title": "Studie extrahiert wörtliche Trainingsdaten samt persönlicher Infos aus ChatGPT",
+      "description": "Das Team um Milad Nasr und Nicholas Carlini (Google DeepMind und akademische Partner) zeigt, dass sich aus dem produktiven ChatGPT-Modell wörtliche Trainingsdaten extrahieren lassen. Der 'Divergenz-Angriff' - etwa die Aufforderung, ein Wort endlos zu wiederholen - lässt das Modell mit 150-fach erhöhter Rate Originaldaten ausgeben, darunter Namen, Telefonnummern und E-Mail-Adressen realer Personen. Für rund 200 US-Dollar an Anfragen wurden über 10.000 memorierte Datenblöcke geborgen.",
+      "title_de": "Studie extrahiert wörtliche Trainingsdaten samt persönlicher Infos aus ChatGPT",
+      "description_de": "Das Team um Milad Nasr und Nicholas Carlini (Google DeepMind und akademische Partner) zeigt, dass sich aus dem produktiven ChatGPT-Modell wörtliche Trainingsdaten extrahieren lassen. Der 'Divergenz-Angriff' - etwa die Aufforderung, ein Wort endlos zu wiederholen - lässt das Modell mit 150-fach erhöhter Rate Originaldaten ausgeben, darunter Namen, Telefonnummern und E-Mail-Adressen realer Personen. Für rund 200 US-Dollar an Anfragen wurden über 10.000 memorierte Datenblöcke geborgen.",
+      "title_en": "Study extracts verbatim training data including personal info from ChatGPT",
+      "description_en": "The team led by Milad Nasr and Nicholas Carlini (Google DeepMind and academic partners) shows that verbatim training data can be extracted from the production ChatGPT model. The 'divergence attack' - for example prompting the model to repeat a word endlessly - makes the model emit original data at 150x the normal rate, including names, phone numbers and email addresses of real people. For about $200 in queries, over 10,000 memorised data blocks were recovered.",
+      "sources": [
+        "https://arxiv.org/abs/2311.17035"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "consequences",
+      "title": "Breite Berichterstattung und Zweifel an der Wirksamkeit des Patches",
+      "description": "Nach Veröffentlichung berichten Fachmedien breit über die Schwachstelle. Sicherheitsforschende und Beobachter weisen darauf hin, dass OpenAIs Patch nur die konkrete Wort-Wiederhol-Methode unterbindet, nicht aber das zugrunde liegende Memorisierungsproblem. Der Vorfall befeuert die Debatte über Datenschutz und mögliche Urheberrechtsverletzungen in den Trainingsdaten kommerzieller Sprachmodelle.",
+      "title_de": "Breite Berichterstattung und Zweifel an der Wirksamkeit des Patches",
+      "description_de": "Nach Veröffentlichung berichten Fachmedien breit über die Schwachstelle. Sicherheitsforschende und Beobachter weisen darauf hin, dass OpenAIs Patch nur die konkrete Wort-Wiederhol-Methode unterbindet, nicht aber das zugrunde liegende Memorisierungsproblem. Der Vorfall befeuert die Debatte über Datenschutz und mögliche Urheberrechtsverletzungen in den Trainingsdaten kommerzieller Sprachmodelle.",
+      "title_en": "Wide coverage and doubts about the patch's effectiveness",
+      "description_en": "After publication, technical media report widely on the vulnerability. Security researchers and observers note that OpenAI's patch only blocks the specific word-repetition method, not the underlying memorisation problem. The incident fuels debate over privacy and possible copyright violations in the training data of commercial language models.",
+      "sources": [
+        "https://www.theregister.com/2023/12/01/chatgpt_poetry_ai/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/abs/2311.17035",

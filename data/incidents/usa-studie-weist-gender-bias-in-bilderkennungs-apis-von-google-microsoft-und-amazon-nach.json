@@ -26,9 +26,24 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Geschlechtergleichheit",
+    "Würde des Menschen",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Geschlechtergleichheit",
+    "Würde des Menschen",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Gender equality",
+    "Human dignity",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Google; Microsoft; Amazon",
@@ -44,7 +59,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Kommerzielle Bilderkennungs-APIs als Pay-per-Use-Dienste",
+      "description": "Google Cloud Vision, Amazon Rekognition und Microsoft Azure Computer Vision etablieren sich als kommerzielle Schnittstellen, die Fotos automatisch mit Labels versehen. Die Modelle werden auf großen, ungleich zusammengesetzten Bilddatensätzen aus dem Internet trainiert und über einfache API-Aufrufe an tausende Anwendungen verkauft. Verzerrungen in den Trainingsdaten werden so flächendeckend weiterverbreitet.",
+      "title_de": "Kommerzielle Bilderkennungs-APIs als Pay-per-Use-Dienste",
+      "description_de": "Google Cloud Vision, Amazon Rekognition und Microsoft Azure Computer Vision etablieren sich als kommerzielle Schnittstellen, die Fotos automatisch mit Labels versehen. Die Modelle werden auf großen, ungleich zusammengesetzten Bilddatensätzen aus dem Internet trainiert und über einfache API-Aufrufe an tausende Anwendungen verkauft. Verzerrungen in den Trainingsdaten werden so flächendeckend weiterverbreitet.",
+      "title_en": "Commercial image-recognition APIs as pay-per-use services",
+      "description_en": "Google Cloud Vision, Amazon Rekognition and Microsoft Azure Computer Vision establish themselves as commercial interfaces that automatically tag photos with labels. The models are trained on large, unevenly composed image datasets scraped from the internet and sold to thousands of applications through simple API calls. Biases in the training data are thus propagated at scale.",
+      "sources": [
+        "https://cloud.google.com/vision"
+      ]
+    },
+    {
+      "date": "2018-02",
+      "phase": "doctrine",
+      "title": "Gender Shades belegt Bias in kommerzieller Geschlechtsklassifikation",
+      "description": "Joy Buolamwini und Timnit Gebru zeigen in der Studie 'Gender Shades', dass kommerzielle Klassifikationssysteme dunkelhäutige Frauen mit Fehlerraten von bis zu 34,7 Prozent erkennen, während die Fehlerrate bei hellhäutigen Männern unter ein Prozent liegt. Die Arbeit etabliert die Methode, kommerzielle Systeme extern auf demografische Verzerrungen zu auditieren - der Ansatz, an den die Kongress-Studie anschließt.",
+      "title_de": "Gender Shades belegt Bias in kommerzieller Geschlechtsklassifikation",
+      "description_de": "Joy Buolamwini und Timnit Gebru zeigen in der Studie 'Gender Shades', dass kommerzielle Klassifikationssysteme dunkelhäutige Frauen mit Fehlerraten von bis zu 34,7 Prozent erkennen, während die Fehlerrate bei hellhäutigen Männern unter ein Prozent liegt. Die Arbeit etabliert die Methode, kommerzielle Systeme extern auf demografische Verzerrungen zu auditieren - der Ansatz, an den die Kongress-Studie anschließt.",
+      "title_en": "Gender Shades documents bias in commercial gender classification",
+      "description_en": "Joy Buolamwini and Timnit Gebru show in the 'Gender Shades' study that commercial classification systems recognise darker-skinned women with error rates of up to 34.7 percent, while the error rate for lighter-skinned men is below one percent. The work establishes the method of externally auditing commercial systems for demographic bias - the approach the Congress study builds upon.",
+      "sources": [
+        "https://proceedings.mlr.press/v81/buolamwini18a.html"
+      ]
+    },
+    {
+      "date": "2020-08-07",
+      "phase": "event",
+      "title": "Studie weist Gender-Bias in den drei großen Bilderkennungs-APIs nach",
+      "description": "Carsten Schwemmer und Kolleg:innen testen Google Cloud Vision, Amazon Rekognition und Microsoft Azure anhand von Fotos von US-Kongressmitgliedern. Alle drei Systeme zeigen deutlichen Gender-Bias: Frauen werden seltener als Personen erkannt und dreimal häufiger mit Labels zu Aussehen versehen. Google etikettiert Kongressfrauen zu über 90 Prozent mit 'smile', Kongressmänner zu unter 25 Prozent; Frauen werden teils als 'girl' kategorisiert.",
+      "title_de": "Studie weist Gender-Bias in den drei großen Bilderkennungs-APIs nach",
+      "description_de": "Carsten Schwemmer und Kolleg:innen testen Google Cloud Vision, Amazon Rekognition und Microsoft Azure anhand von Fotos von US-Kongressmitgliedern. Alle drei Systeme zeigen deutlichen Gender-Bias: Frauen werden seltener als Personen erkannt und dreimal häufiger mit Labels zu Aussehen versehen. Google etikettiert Kongressfrauen zu über 90 Prozent mit 'smile', Kongressmänner zu unter 25 Prozent; Frauen werden teils als 'girl' kategorisiert.",
+      "title_en": "Study finds gender bias in the three major image-recognition APIs",
+      "description_en": "Carsten Schwemmer and colleagues test Google Cloud Vision, Amazon Rekognition and Microsoft Azure using photos of US members of Congress. All three systems show clear gender bias: women are recognised as people less often and tagged with appearance labels three times as frequently. Google labels congresswomen 'smile' over 90 percent of the time but congressmen under 25 percent; women are sometimes categorised as 'girl'.",
+      "sources": [
+        "https://journals.sagepub.com/doi/full/10.1177/2378023120967171"
+      ]
+    },
+    {
+      "date": "2020-11",
+      "phase": "consequences",
+      "title": "Peer-Review-Publikation in Socius und Fachdebatte",
+      "description": "Die Studie erscheint in der peer-reviewten Zeitschrift Socius (Sage) und wird zu einem viel zitierten Beleg dafür, dass kommerzielle Bilderkennung Labels liefern kann, die zugleich korrekt und verzerrt sind. Sie verstärkt die Forderung nach externen Audits, Transparenz über Trainingsdaten und vorsichtigem Einsatz solcher APIs in sozial folgenreichen Kontexten.",
+      "title_de": "Peer-Review-Publikation in Socius und Fachdebatte",
+      "description_de": "Die Studie erscheint in der peer-reviewten Zeitschrift Socius (Sage) und wird zu einem viel zitierten Beleg dafür, dass kommerzielle Bilderkennung Labels liefern kann, die zugleich korrekt und verzerrt sind. Sie verstärkt die Forderung nach externen Audits, Transparenz über Trainingsdaten und vorsichtigem Einsatz solcher APIs in sozial folgenreichen Kontexten.",
+      "title_en": "Peer-reviewed publication in Socius and academic debate",
+      "description_en": "The study appears in the peer-reviewed journal Socius (Sage) and becomes a widely cited demonstration that commercial image recognition can produce labels that are correct and biased at the same time. It reinforces calls for external audits, transparency about training data and cautious deployment of such APIs in socially consequential contexts.",
+      "sources": [
+        "https://montrealethics.ai/diagnosing-gender-bias-in-image-recognition-systems-researchsummary/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://journals.sagepub.com/doi/full/10.1177/2378023120967171",

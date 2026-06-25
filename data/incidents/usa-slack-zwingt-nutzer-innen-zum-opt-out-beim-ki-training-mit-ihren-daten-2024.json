@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Protection from manipulation",
+    "Consumer protection",
+    "Right to informational self-determination"
+  ],
   "asm:actors": [
     {
       "name": "Salesforce / Slack",
@@ -48,7 +66,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-07",
+      "phase": "infrastructure",
+      "title": "Salesforce schließt Übernahme von Slack ab",
+      "description": "Salesforce schloss im Juli 2021 die rund 27,7 Mrd. USD schwere Übernahme von Slack ab. Slack wurde damit Teil eines Konzerns, dessen Geschäftsmodell stark auf der Auswertung von Kundendaten und auf datengetriebenen KI-Diensten beruht. Die in Slack-Workspaces anfallenden Nachrichten, Dateien und Interaktionen bildeten die Datenbasis für spätere maschinelle Lernmodelle.",
+      "title_de": "Salesforce schließt Übernahme von Slack ab",
+      "description_de": "Salesforce schloss im Juli 2021 die rund 27,7 Mrd. USD schwere Übernahme von Slack ab. Slack wurde damit Teil eines Konzerns, dessen Geschäftsmodell stark auf der Auswertung von Kundendaten und auf datengetriebenen KI-Diensten beruht. Die in Slack-Workspaces anfallenden Nachrichten, Dateien und Interaktionen bildeten die Datenbasis für spätere maschinelle Lernmodelle.",
+      "title_en": "Salesforce completes acquisition of Slack",
+      "description_en": "In July 2021 Salesforce closed its roughly USD 27.7 billion acquisition of Slack. Slack thereby became part of a company whose business model relies heavily on exploiting customer data and on data-driven AI services. The messages, files and interactions generated in Slack workspaces formed the data basis for later machine-learning models.",
+      "sources": [
+        "https://www.salesforce.com/news/stories/slack-acquisition-completed/"
+      ]
+    },
+    {
+      "date": "2024-02",
+      "phase": "doctrine",
+      "title": "Privacy Principles erlauben Standard-Nutzung von Kundendaten für ML",
+      "description": "Slacks Privacy Principles legten fest, dass Kundendaten standardmäßig zur Entwicklung nicht-generativer 'globaler' Modelle genutzt werden - etwa für Channel- und Emoji-Empfehlungen sowie Suche. Ein Opt-out war nur vorgesehen, indem Workspace-Admins eine E-Mail an Slack schickten. Diese Voreinstellung wurde nicht aktiv kommuniziert, sondern war in einer schwer auffindbaren Richtlinie versteckt.",
+      "title_de": "Privacy Principles erlauben Standard-Nutzung von Kundendaten für ML",
+      "description_de": "Slacks Privacy Principles legten fest, dass Kundendaten standardmäßig zur Entwicklung nicht-generativer 'globaler' Modelle genutzt werden - etwa für Channel- und Emoji-Empfehlungen sowie Suche. Ein Opt-out war nur vorgesehen, indem Workspace-Admins eine E-Mail an Slack schickten. Diese Voreinstellung wurde nicht aktiv kommuniziert, sondern war in einer schwer auffindbaren Richtlinie versteckt.",
+      "title_en": "Privacy Principles allow default use of customer data for ML",
+      "description_en": "Slack's Privacy Principles stated that customer data was used by default to develop non-generative 'global' models - for channel and emoji recommendations and search. The only opt-out was for workspace admins to email Slack. This default was not actively communicated but buried in a hard-to-find policy.",
+      "sources": [
+        "https://slack.com/trust/data-management/privacy-principles"
+      ]
+    },
+    {
+      "date": "2024-05-17",
+      "phase": "event",
+      "title": "Viraler Aufschrei über Slacks heimliche KI-Trainingspolitik",
+      "description": "Nach einem Hacker-News-Beitrag und einem viralen X-Post von Corey Quinn (DuckBill Group) wurde im Mai 2024 breit bekannt, dass Slack Kundendaten standardmäßig für sein ML-Training nutzte und ein Opt-out nur per E-Mail an Slack-Admins möglich war. Es folgte ein Sturm der Entrüstung über die Intransparenz und die Opt-out-statt-Opt-in-Voreinstellung.",
+      "title_de": "Viraler Aufschrei über Slacks heimliche KI-Trainingspolitik",
+      "description_de": "Nach einem Hacker-News-Beitrag und einem viralen X-Post von Corey Quinn (DuckBill Group) wurde im Mai 2024 breit bekannt, dass Slack Kundendaten standardmäßig für sein ML-Training nutzte und ein Opt-out nur per E-Mail an Slack-Admins möglich war. Es folgte ein Sturm der Entrüstung über die Intransparenz und die Opt-out-statt-Opt-in-Voreinstellung.",
+      "title_en": "Viral outcry over Slack's quiet AI-training policy",
+      "description_en": "After a Hacker News post and a viral X post by Corey Quinn (DuckBill Group), it became widely known in May 2024 that Slack used customer data by default for its ML training and that opting out was only possible by emailing Slack admins. A storm of outrage followed over the opacity and the opt-out-instead-of-opt-in default.",
+      "sources": [
+        "https://techcrunch.com/2024/05/17/slack-under-attack-over-sneaky-ai-training-policy/"
+      ]
+    },
+    {
+      "date": "2024-05-20",
+      "phase": "consequences",
+      "title": "Slack aktualisiert Privacy Principles nach Gegenwind",
+      "description": "Slack räumte ein, seine Vorgehensweise 'besser hätte erklären' können, und aktualisierte seine Privacy Principles. Das Unternehmen stellte klar, dass das separat kostenpflichtige Add-on Slack-AI keine großen Sprachmodelle auf Kundendaten trainiere und Daten in Slacks eigener Infrastruktur blieben. Die Opt-out-Voreinstellung für die nicht-generativen ML-Modelle blieb jedoch bestehen, was Datenschützer:innen weiter kritisierten.",
+      "title_de": "Slack aktualisiert Privacy Principles nach Gegenwind",
+      "description_de": "Slack räumte ein, seine Vorgehensweise 'besser hätte erklären' können, und aktualisierte seine Privacy Principles. Das Unternehmen stellte klar, dass das separat kostenpflichtige Add-on Slack-AI keine großen Sprachmodelle auf Kundendaten trainiere und Daten in Slacks eigener Infrastruktur blieben. Die Opt-out-Voreinstellung für die nicht-generativen ML-Modelle blieb jedoch bestehen, was Datenschützer:innen weiter kritisierten.",
+      "title_en": "Slack updates Privacy Principles after pushback",
+      "description_en": "Slack conceded it 'could have better explained' its approach and updated its Privacy Principles. The company clarified that the separately paid Slack AI add-on does not train large language models on customer data and that data stayed within Slack's own infrastructure. The opt-out default for the non-generative ML models nonetheless remained, which privacy advocates continued to criticise.",
+      "sources": [
+        "https://www.computerworld.com/article/2114741/slack-updates-ai-privacy-principles-after-user-backlash.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/05/17/slack-under-attack-over-sneaky-ai-training-policy/",
