@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection",
+    "Right to security"
+  ],
   "asm:actors": [
     {
       "name": "Ben-Gurion University of the Negev",
@@ -53,7 +68,62 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "Kamerabasierte Fahrassistenz ohne Tiefenprüfung",
+      "description": "Teslas Autopilot und ähnliche Fahrassistenzsysteme erkennen Verkehrsschilder, Personen und Fahrbahnmarkierungen primär über Kameras und neuronale Netze, ohne die Tiefe oder Echtheit eines Objekts zuverlässig zu prüfen. Ein flach projiziertes Bild kann daher wie ein reales Objekt wirken. Diese Architektur bildet die technische Schwachstelle, die spätere Phantom-Angriffe ausnutzen.",
+      "title_de": "Kamerabasierte Fahrassistenz ohne Tiefenprüfung",
+      "description_de": "Teslas Autopilot und ähnliche Fahrassistenzsysteme erkennen Verkehrsschilder, Personen und Fahrbahnmarkierungen primär über Kameras und neuronale Netze, ohne die Tiefe oder Echtheit eines Objekts zuverlässig zu prüfen. Ein flach projiziertes Bild kann daher wie ein reales Objekt wirken. Diese Architektur bildet die technische Schwachstelle, die spätere Phantom-Angriffe ausnutzen.",
+      "title_en": "Camera-based driver assistance without depth verification",
+      "description_en": "Tesla's Autopilot and similar driver-assistance systems detect road signs, people, and lane markings mainly via cameras and neural networks, without reliably checking the depth or authenticity of an object. A flat projected image can therefore appear like a real object. This architecture is the technical weakness that later phantom attacks exploit.",
+      "sources": [
+        "https://threatpost.com/tesla-autopilot-duped-by-phantom-images/152491/"
+      ]
+    },
+    {
+      "date": "2020-01",
+      "phase": "doctrine",
+      "title": "Forschungsprogramm zu adversarialen Angriffen auf ADAS",
+      "description": "Die Cyber-Sicherheitsgruppe der Ben-Gurion-Universität des Negev verfolgt einen Forschungsansatz, der Sicherheitslücken in Fahrassistenzsystemen offenlegt, bevor Angreifer sie nutzen. In einem Anfang 2020 veröffentlichten Preprint definieren die Forschenden den 'Split-Second Phantom Attack' als Bedrohungsmodell für kamerabasierte ADAS. Ziel ist verantwortungsvolle Offenlegung gegenüber Herstellern wie Tesla und Mobileye.",
+      "title_de": "Forschungsprogramm zu adversarialen Angriffen auf ADAS",
+      "description_de": "Die Cyber-Sicherheitsgruppe der Ben-Gurion-Universität des Negev verfolgt einen Forschungsansatz, der Sicherheitslücken in Fahrassistenzsystemen offenlegt, bevor Angreifer sie nutzen. In einem Anfang 2020 veröffentlichten Preprint definieren die Forschenden den 'Split-Second Phantom Attack' als Bedrohungsmodell für kamerabasierte ADAS. Ziel ist verantwortungsvolle Offenlegung gegenüber Herstellern wie Tesla und Mobileye.",
+      "title_en": "Research programme on adversarial attacks against ADAS",
+      "description_en": "The cyber security group at Ben-Gurion University of the Negev pursues a research approach that exposes vulnerabilities in driver-assistance systems before attackers exploit them. In a preprint released in early 2020, the researchers define the 'split-second phantom attack' as a threat model for camera-based ADAS. The aim is responsible disclosure to manufacturers such as Tesla and Mobileye.",
+      "sources": [
+        "https://eprint.iacr.org/2020/085"
+      ]
+    },
+    {
+      "date": "2020-10",
+      "phase": "event",
+      "title": "Phantom of the ADAS: Tesla-Autopilot mit projizierten Bildern getäuscht",
+      "description": "In der Arbeit 'Phantom of the ADAS', vorgestellt auf der ACM-CCS-Konferenz 2020, zeigen die Forschenden, dass sich Teslas Fahrassistenz mit Sekundenbruchteil-Lichtprojektionen täuschen lässt. Kurz auf Straße oder Werbetafel projizierte Bilder von Verkehrsschildern, Personen oder Fahrbahnmarkierungen brachten das System dazu, abrupt zu bremsen, die Spur zu wechseln oder Warnungen auszugeben. Die Forschenden warnten, gekaperte Internet-Werbetafeln könnten so Unfälle oder Staus auslösen. Reiner Forschungsbefund, kein realer Crash.",
+      "title_de": "Phantom of the ADAS: Tesla-Autopilot mit projizierten Bildern getäuscht",
+      "description_de": "In der Arbeit 'Phantom of the ADAS', vorgestellt auf der ACM-CCS-Konferenz 2020, zeigen die Forschenden, dass sich Teslas Fahrassistenz mit Sekundenbruchteil-Lichtprojektionen täuschen lässt. Kurz auf Straße oder Werbetafel projizierte Bilder von Verkehrsschildern, Personen oder Fahrbahnmarkierungen brachten das System dazu, abrupt zu bremsen, die Spur zu wechseln oder Warnungen auszugeben. Die Forschenden warnten, gekaperte Internet-Werbetafeln könnten so Unfälle oder Staus auslösen. Reiner Forschungsbefund, kein realer Crash.",
+      "title_en": "Phantom of the ADAS: Tesla Autopilot fooled with projected images",
+      "description_en": "In the 'Phantom of the ADAS' paper, presented at the ACM CCS conference in 2020, the researchers show that Tesla's driver assistance can be fooled with split-second light projections. Briefly projected images of road signs, people, or lane markings onto the road or a billboard made the system brake abruptly, change lanes, or issue warnings. The researchers warned that hijacked internet-connected billboards could thereby trigger crashes or traffic jams. A pure research finding, no real-world crash.",
+      "sources": [
+        "https://cyber.bgu.ac.il/split-second-phantom-images-can-fool-teslas-autopilot/",
+        "https://dl.acm.org/doi/10.1145/3372297.3423359"
+      ]
+    },
+    {
+      "date": "2020-10-11",
+      "phase": "consequences",
+      "title": "Gegenmaßnahme GhostBusters und Sicherheitsdebatte",
+      "description": "Die Forschenden veröffentlichen mit GhostBusters eine Gegenmaßnahme, die per 'Komitee von Experten' aus mehreren neuronalen Netzen Licht, Kontext, Oberfläche und Tiefe eines Objekts prüft, um Phantome zu erkennen. Der Befund verstärkt die Debatte über die Verwundbarkeit kamerabasierter Fahrassistenz gegenüber visuellen Manipulationen und über die Sicherheit teilautonomer Fahrzeuge im öffentlichen Straßenverkehr.",
+      "title_de": "Gegenmaßnahme GhostBusters und Sicherheitsdebatte",
+      "description_de": "Die Forschenden veröffentlichen mit GhostBusters eine Gegenmaßnahme, die per 'Komitee von Experten' aus mehreren neuronalen Netzen Licht, Kontext, Oberfläche und Tiefe eines Objekts prüft, um Phantome zu erkennen. Der Befund verstärkt die Debatte über die Verwundbarkeit kamerabasierter Fahrassistenz gegenüber visuellen Manipulationen und über die Sicherheit teilautonomer Fahrzeuge im öffentlichen Straßenverkehr.",
+      "title_en": "GhostBusters countermeasure and safety debate",
+      "description_en": "The researchers release GhostBusters, a countermeasure that uses a 'committee of experts' of several neural networks to assess an object's light, context, surface, and depth in order to detect phantoms. The finding fuels the debate over the vulnerability of camera-based driver assistance to visual manipulation and over the safety of semi-autonomous vehicles in public road traffic.",
+      "sources": [
+        "https://cyber.bgu.ac.il/split-second-phantom-images-can-fool-teslas-autopilot/",
+        "https://www.eurekalert.org/news-releases/755578"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://threatpost.com/tesla-autopilot-duped-by-phantom-images/152491/",
