@@ -8,8 +8,8 @@
   "name": "UK: BBC-Reporter und sein Zwillingsbruder überlisten HSBC-Voice-ID-Stimmerkennung",
   "name_de": "UK: BBC-Reporter und sein Zwillingsbruder überlisten HSBC-Voice-ID-Stimmerkennung",
   "name_en": "UK: BBC reporter and his twin brother bypass HSBC Voice ID authentication",
-  "description": "BBC-Click-Reporter Dan Simmons und sein nicht-eineiiger Zwillingsbruder Joe demonstrierten im Mai 2017, dass die telefonbasierte 'Voice ID'-Stimmerkennung von HSBCs First Direct sich tauschen lasst: Joe gelang es, sich mehrfach als Dan auszugeben, Kontoinformationen abzufragen und Überweisungen einzuleiten. HSBC hatte das System 2016 als sichere Alternative zu PINs und Passwortern beworben. Die Bank kundigte an, die Sensitivitat zu erhohen.",
-  "description_de": "BBC-Click-Reporter Dan Simmons und sein nicht-eineiiger Zwillingsbruder Joe demonstrierten im Mai 2017, dass die telefonbasierte 'Voice ID'-Stimmerkennung von HSBCs First Direct sich tauschen lasst: Joe gelang es, sich mehrfach als Dan auszugeben, Kontoinformationen abzufragen und Überweisungen einzuleiten. HSBC hatte das System 2016 als sichere Alternative zu PINs und Passwortern beworben. Die Bank kundigte an, die Sensitivitat zu erhohen.",
+  "description": "BBC-Click-Reporter Dan Simmons und sein nicht-eineiiger Zwillingsbruder Joe demonstrierten im Mai 2017, dass die telefonbasierte 'Voice ID'-Stimmerkennung von HSBCs First Direct sich täuschen lässt: Joe gelang es, sich mehrfach als Dan auszugeben, Kontoinformationen abzufragen und Überweisungen einzuleiten. HSBC hatte das System 2016 als sichere Alternative zu PINs und Passwörtern beworben. Die Bank kündigte an, die Sensitivität zu erhöhen.",
+  "description_de": "BBC-Click-Reporter Dan Simmons und sein nicht-eineiiger Zwillingsbruder Joe demonstrierten im Mai 2017, dass die telefonbasierte 'Voice ID'-Stimmerkennung von HSBCs First Direct sich täuschen lässt: Joe gelang es, sich mehrfach als Dan auszugeben, Kontoinformationen abzufragen und Überweisungen einzuleiten. HSBC hatte das System 2016 als sichere Alternative zu PINs und Passwörtern beworben. Die Bank kündigte an, die Sensitivität zu erhöhen.",
   "description_en": "BBC Click reporter Dan Simmons and his non-identical twin brother Joe demonstrated in May 2017 that HSBC First Direct's phone-based 'Voice ID' system could be spoofed: Joe successfully impersonated Dan to access account information and initiate transfers. HSBC had marketed the system since 2016 as a secure alternative to PINs and passwords. The bank pledged to increase sensitivity.",
   "startDate": "2017-05-19",
   "location": {
@@ -30,9 +30,9 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": ["Datenschutz", "Verbraucherschutz", "Schutz des Eigentums", "Schutz vor Manipulation"],
+  "asm:affectedRights_de": ["Datenschutz", "Verbraucherschutz", "Schutz des Eigentums", "Schutz vor Manipulation"],
+  "asm:affectedRights_en": ["Data protection", "Consumer protection", "Protection of property", "Protection from manipulation"],
   "asm:actors": [
     {
       "name": "HSBC / First Direct",
@@ -51,7 +51,52 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-02",
+      "phase": "infrastructure",
+      "title": "HSBC führt Nuance-Stimmbiometrie für Millionen Kunden ein",
+      "description": "Im Februar 2016 kündigte HSBC an, mehr als 15 Millionen HSBC- und First-Direct-Kunden im Vereinigten Königreich das Voice-ID-System anzubieten. Die Technik des US-Anbieters Nuance Communications gleicht über 100 Stimm-Merkmale ab, darunter Kehlkopfform und Sprechrhythmus. First-Direct-Kunden konnten sich zuerst registrieren, HSBC-Kunden im Sommer folgen.",
+      "title_de": "HSBC führt Nuance-Stimmbiometrie für Millionen Kunden ein",
+      "description_de": "Im Februar 2016 kündigte HSBC an, mehr als 15 Millionen HSBC- und First-Direct-Kunden im Vereinigten Königreich das Voice-ID-System anzubieten. Die Technik des US-Anbieters Nuance Communications gleicht über 100 Stimm-Merkmale ab, darunter Kehlkopfform und Sprechrhythmus. First-Direct-Kunden konnten sich zuerst registrieren, HSBC-Kunden im Sommer folgen.",
+      "title_en": "HSBC rolls out Nuance voice biometrics to millions of customers",
+      "description_en": "In February 2016 HSBC announced it would offer Voice ID to more than 15 million HSBC and First Direct customers in the United Kingdom. The technology from US supplier Nuance Communications checks over 100 voice features, including larynx shape and speech rhythm. First Direct customers could enrol first, with HSBC customers following in the summer.",
+      "sources": ["https://www.biometricupdate.com/201602/nuance-working-with-hsbc-on-uk-roll-out-of-voice-biometrics-solution"]
+    },
+    {
+      "date": "2016-08",
+      "phase": "doctrine",
+      "title": "Bank bewirbt Voice ID als sicheren PIN-Ersatz",
+      "description": "HSBC positionierte Voice ID als größte geplante Einführung von Stimmbiometrie im Vereinigten Königreich und vermarktete es als sichere, bequeme Alternative zu Passwörtern und PINs. Kunden sollten sich am Telefon allein über ihre Stimme authentifizieren, ohne Geheimzahlen merken zu müssen.",
+      "title_de": "Bank bewirbt Voice ID als sicheren PIN-Ersatz",
+      "description_de": "HSBC positionierte Voice ID als größte geplante Einführung von Stimmbiometrie im Vereinigten Königreich und vermarktete es als sichere, bequeme Alternative zu Passwörtern und PINs. Kunden sollten sich am Telefon allein über ihre Stimme authentifizieren, ohne Geheimzahlen merken zu müssen.",
+      "title_en": "Bank markets Voice ID as a secure replacement for PINs",
+      "description_en": "HSBC positioned Voice ID as the largest planned rollout of voice biometrics in the United Kingdom and marketed it as a secure, convenient alternative to passwords and PINs. Customers were to authenticate on the phone using their voice alone, without having to remember secret codes.",
+      "sources": ["https://www.itv.com/news/2016-02-19/biometric-banking-offered-to-15m-hsbc-and-first-direct-customers/"]
+    },
+    {
+      "date": "2017-05-19",
+      "phase": "event",
+      "title": "Zwillingsbruder überlistet die Stimmerkennung im BBC-Test",
+      "description": "BBC-Click-Reporter Dan Simmons und sein nicht-eineiiger Zwillingsbruder Joe demonstrierten, dass sich First Directs Voice ID täuschen lässt: Joe gab sich mehrfach als Dan aus, erhielt Zugriff auf Kontoinformationen und konnte Überweisungen einleiten. Das System ließ ihn nach mehreren Versuchen passieren, obwohl seine Stimme nicht die registrierte war.",
+      "title_de": "Zwillingsbruder überlistet die Stimmerkennung im BBC-Test",
+      "description_de": "BBC-Click-Reporter Dan Simmons und sein nicht-eineiiger Zwillingsbruder Joe demonstrierten, dass sich First Directs Voice ID täuschen lässt: Joe gab sich mehrfach als Dan aus, erhielt Zugriff auf Kontoinformationen und konnte Überweisungen einleiten. Das System ließ ihn nach mehreren Versuchen passieren, obwohl seine Stimme nicht die registrierte war.",
+      "title_en": "Twin brother fools the voice recognition in a BBC test",
+      "description_en": "BBC Click reporter Dan Simmons and his non-identical twin brother Joe demonstrated that First Direct's Voice ID could be fooled: Joe repeatedly impersonated Dan, gained access to account information and was able to initiate transfers. After several attempts the system let him through even though his was not the enrolled voice.",
+      "sources": ["https://www.bbc.com/news/technology-39965545"]
+    },
+    {
+      "date": "2017-05-20",
+      "phase": "consequences",
+      "title": "HSBC gelobt höhere Empfindlichkeit, Biometrie-Risiko bleibt Thema",
+      "description": "HSBC erklärte nach dem Test, die Stimmbiometrie sei sehr sicher, und kündigte an, die Empfindlichkeit des Systems zu erhöhen. Der Fall machte über Finextra und weitere Fachmedien die Schwäche stimmbasierter Authentifizierung gegenüber ähnlich klingenden Stimmen publik und nährte Zweifel an Biometrie als alleinigem Sicherheitsfaktor.",
+      "title_de": "HSBC gelobt höhere Empfindlichkeit, Biometrie-Risiko bleibt Thema",
+      "description_de": "HSBC erklärte nach dem Test, die Stimmbiometrie sei sehr sicher, und kündigte an, die Empfindlichkeit des Systems zu erhöhen. Der Fall machte über Finextra und weitere Fachmedien die Schwäche stimmbasierter Authentifizierung gegenüber ähnlich klingenden Stimmen publik und nährte Zweifel an Biometrie als alleinigem Sicherheitsfaktor.",
+      "title_en": "HSBC pledges higher sensitivity, biometric risk remains an issue",
+      "description_en": "After the test HSBC said voice biometrics was very secure and announced it would increase the system's sensitivity. Via Finextra and other trade media the case publicised the weakness of voice-based authentication against similar-sounding voices and fed doubts about biometrics as a sole security factor.",
+      "sources": ["https://www.finextra.com/newsarticle/30594/twins-fool-hsbc-voice-biometrics---bbc"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bbc.com/news/technology-39965545",
