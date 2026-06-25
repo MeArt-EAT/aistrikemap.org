@@ -1,8 +1,8 @@
-# Übergabe #11 — Sev-2-Offensive gestartet (Wellen 46–48)
+# Übergabe #11 — Sev-2-Offensive (Wellen 46–51)
 
 **Datum:** 2026-06-26
 **Vorgänger:** #10 (2026-06-25, Sev-3-Block abgeschlossen, TL 78.5 %)
-**Bestand danach:** 2457 Incidents · **1997 mit Reverse-TL (81.3 %)** · 0 Audit-Findings
+**Bestand danach:** 2457 Incidents · **2068 mit Reverse-TL (84.2 %)** · 0 Audit-Findings
 
 ---
 
@@ -10,18 +10,23 @@
 
 Nach Abschluss des Sev-3-Blocks (#10) wurde die **Sev-2-Ebene** in Angriff
 genommen — gleiche erprobte Workflow-Methode (24 Cases/Welle, Stufe 1 WebSearch-
-grounded Generieren → Stufe 2 unabhängige adversariale Verify). **3 Wellen
-(46–48), +69 Reverse-Timelines, TL-Quote 78.5 → 81.3 % (80%-Marke überschritten).**
+grounded Generieren → Stufe 2 unabhängige adversariale Verify). **6 Wellen
+(46–51), +140 Reverse-Timelines, TL-Quote 78.5 → 84.2 %** (80%-Marke in Welle 47
+überschritten). Sev-2 ohne TL: 480 → 340.
 
 | Welle | Cases | pass / fix / needs-human | Δ TL | TL gesamt | Besonderheit |
 |---|---|---|---|---|---|
 | 46 | 24 | 17 / 7 / 0 | +24 | 1952 (79.4 %) | Faktenfehler cosmos-magazine Grant-Datum 2023→Feb 2024 |
 | 47 | 24 | 21 / 2 / 1 | +23 | 1975 (80.4 %) | needs-human: ultraman (2 Fälle vermischt) |
 | 48 | 24 | 13 / 9 / 2 | +22 | 1997 (81.3 %) | needs-human: devternity (Land), perspective-api (Urheber); inline-Fix ubisoft La Forge 2011→2016 |
+| 49 | 24 | 15 / 9 / 0 | +24 | 2021 (82.3 %) | inline-Fix the-brutalist „Davids"→„David Jancso" (9x); Gender-Begriff harmonisiert |
+| 50 | 24 | 16 / 7 / 1 | +23 | 2044 (83.2 %) | needs-human: grok (überzogene MeitY-/Strafe-/§69A-Behauptungen); inline-Fix these-nudes Datum |
+| 51 | 24 | 20 / 4 / 0 | +24 | 2068 (84.2 %) | inline-Fix kolumbien-rappi startDate 2024→2023-10 |
 
-**WebSearch in allen 3 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
-Ausfall). Audit nach jeder Welle 0 Findings. Translit-Map unverändert 2951
-(fix-umlaut fand nur bekannte Mappings; Prompt-Härtung hält Neueinträge bei ~0).
+**WebSearch in allen 6 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
+Ausfall). Audit nach jeder Welle 0 Findings (Welle 49: 2 length_ratio-False-
+Positives bei einem Gender-Begriff → auf Korpus-Standard „Geschlechtergleichheit"
+harmonisiert). Translit-Map unverändert 2951 (Prompt-Härtung hält Neueinträge ~0).
 
 ---
 
@@ -54,8 +59,9 @@ akzeptiert).
 
 Bei Sev-3 fing die Verify überwiegend Halluzinationen in der *selbst gebauten*
 TL. Bei Sev-2 (älterer Bestand, oft AIAAIC-Import) deckt sie zusätzlich **Fehler
-im vorbestehenden Incident-Datensatz** auf — Land, Urheberschaft, Fall-Identität.
-3 Fälle waren nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
+im vorbestehenden Incident-Datensatz** auf — Land, Urheberschaft, Fall-Identität,
+überzogene Behauptungen. **Pro Welle ~1 needs-human** (W47/48/50). 4 Fälle waren
+nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
 
 1. **`china-...-ultraman-urheberrecht`** (W47) — vermischt **zwei reale Fälle**:
    Guangzhou-Internetgericht (Feb 2024, weltweit erster Fall, direkte Verletzung,
@@ -74,8 +80,16 @@ im vorbestehenden Incident-Datensatz** auf — Land, Urheberschaft, Fall-Identit
    Aalto/Padua. Vermischt mit dem separaten 2018-Paper arXiv:1808.09115
    (Groendahl et al., Aalto+Padua, „All You Need is Love"). → entscheiden welches
    Paper; Land FI passt nur zum 2018-Paper (dann Titel/Datum/ID anpassen).
+4. **`indien-...-grok-chatbot`** (W50) — **überzogene/fehlattribuierte
+   Behauptungen**: Kern-Vorfall (Grok „Unhinged Mode" gibt Mitte März 2025 Hindi-
+   Beschimpfungen aus, MeitY prüft) korrekt, aber drei Detail-Claims falsch:
+   (a) „MeitY warnt offiziell am 16.3." — real nur „in Kontakt", formale Notice
+   erst Jan 2026 (anderer Anlass); (b) „50-Crore-Strafe geprüft" — kein Beleg;
+   (c) „verletzt §69A IT Act" — die §69A-Frage kam aus X's Klage, nicht als MeitY-
+   Vorwurf. Teils vorbestehend in description. → belegt korrigierbar (Verify lieferte
+   die Fakten), aber rechtsrelevant → menschliche Korrektur statt autonom.
 
-Diese 3 + `prabowo` (aus #8) sind in STATUS.md unter „Offene Fronten #2" als
+Diese 4 + `prabowo` (aus #8) sind in STATUS.md unter „Offene Fronten #2" als
 needs-human-Sammelblock dokumentiert. **Empfehlung:** Diese Fälle sind echte
 redaktionelle Entscheidungen (Außenwirkung auf aistrikemap.org) — bewusst NICHT
 autonom entschieden. Für die laufenden Wellen via `grep -v` ausschließen.
@@ -94,25 +108,32 @@ autonom entschieden. Für die laufenden Wellen via `grep -v` ausschließen.
 - **Hygiene-Kette je Welle:** find-missing → fix-umlaut → **validate-timelines.js**
   → Phasen-Check der gleiche-Datum-WARNs → Doppel-Umlaut-Grep → audit → bundle →
   commit. Tooling separat vor den Daten committet.
-- **Disk:** 3 Wellen = 36 Agenten → Workflow-Transcripts 7.4 MB + Task-Outputs
-  1.2 MB = ~8.6 MB. Grün (Warnschwelle 100 MB).
+- **Iterative Härtung über den Block:** Ab Welle 49 zusätzlich „title_de auch im
+  event-Eintrag nie weglassen" (Lektion W48) + needs-human-Eskalation bei
+  Identitäts-/Land-/Slug-Fehlern explizit im Verify-Prompt.
+- **Disk:** 6 Wellen = 72 Agenten → Workflow-Transcripts + Task-Outputs zusammen
+  unter ~20 MB. Grün (Warnschwelle 100 MB).
 
 ---
 
-## Commits (4, gepusht)
+## Commits (8, gepusht)
 
 ```
 ede9835  Add validate-timelines.js: Pre-Commit-Validator für Reverse-Timelines
 cec5df9  Reverse-TL Sev-2 Welle 46: +24 (1952, 79.4 %)
 58192e9  Reverse-TL Sev-2 Welle 47: +23 (1975, 80.4 %)
 88d88aa  Reverse-TL Sev-2 Welle 48: +22 (1997, 81.3 %)
+5d7c356  Übergabe #11 (Zwischenstand 46-48)
+85ab914  Reverse-TL Sev-2 Welle 49: +24 (2021, 82.3 %)
+bd4f716  Reverse-TL Sev-2 Welle 50: +23 (2044, 83.2 %)
+b81dee1  Reverse-TL Sev-2 Welle 51: +24 (2068, 84.2 %)
 ```
 
 ---
 
 ## Nächster Schritt
 
-- **Sev-2-TL fortsetzen** (411 ohne TL, ~17 Wellen) — Workflow-Methode +
+- **Sev-2-TL fortsetzen** (340 ohne TL, ~14 Wellen) — Workflow-Methode +
   `validate-timelines.js` je Welle, needs-human via `grep -v` ausschließen.
-- ODER **3 needs-human + prabowo klären** (redaktionelle Entscheidungen).
+- ODER **4 needs-human + prabowo klären** (redaktionelle Entscheidungen).
 - ODER korpusweiter Smart-Char-Sweep (789 Files), Career-Daten, AIAAIC Batch D.
