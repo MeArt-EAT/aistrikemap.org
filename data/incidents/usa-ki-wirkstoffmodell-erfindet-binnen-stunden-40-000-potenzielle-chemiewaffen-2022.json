@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "military-ai"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Recht auf Gesundheit",
+    "Schutz vor Massenvernichtungswaffen",
+    "Recht auf Frieden und Sicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Recht auf Gesundheit",
+    "Schutz vor Massenvernichtungswaffen",
+    "Recht auf Frieden und Sicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Right to health",
+    "Protection from weapons of mass destruction",
+    "Right to peace and security"
+  ],
   "asm:actors": [
     {
       "name": "Collaborations Pharmaceuticals",
@@ -46,7 +64,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "MegaSyn als KI-Modell für die Arzneimittelsuche entwickelt",
+      "description": "Collaborations Pharmaceuticals baute mit MegaSyn einen generativen De-novo-Molekülgenerator, der für die kommerzielle Wirkstoffsuche neue Moleküle entwirft. Das Modell wurde so trainiert, vorhergesagte Wirksamkeit zu belohnen und vorhergesagte Toxizität zu bestrafen. Genau diese Toxizitäts-Belohnung als steuerbarer Parameter schuf - unbeabsichtigt - die technische Voraussetzung für den späteren Missbrauch.",
+      "title_de": "MegaSyn als KI-Modell für die Arzneimittelsuche entwickelt",
+      "description_de": "Collaborations Pharmaceuticals baute mit MegaSyn einen generativen De-novo-Molekülgenerator, der für die kommerzielle Wirkstoffsuche neue Moleküle entwirft. Das Modell wurde so trainiert, vorhergesagte Wirksamkeit zu belohnen und vorhergesagte Toxizität zu bestrafen. Genau diese Toxizitäts-Belohnung als steuerbarer Parameter schuf - unbeabsichtigt - die technische Voraussetzung für den späteren Missbrauch.",
+      "title_en": "MegaSyn developed as an AI model for drug discovery",
+      "description_en": "Collaborations Pharmaceuticals built MegaSyn, a generative de novo molecule generator that designs new molecules for commercial drug discovery. The model was trained to reward predicted efficacy and penalise predicted toxicity. It was precisely this toxicity reward as a steerable parameter that - unintentionally - created the technical precondition for the later misuse.",
+      "sources": [
+        "https://pubs.acs.org/doi/10.1021/acsomega.2c01404"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Spiez-Convergence-Konferenz beauftragt Dual-Use-Gedankenexperiment",
+      "description": "Das Schweizer Labor Spiez (Eidgenössisches Institut für ABC-Schutz) lud Collaborations Pharmaceuticals zu seiner Konferenzreihe Spiez Convergence 2021 ein, die Risiken neuer Technologien für die Chemie- und Biowaffenkonventionen auslotet. Auftrag war ein Gedankenexperiment: Lässt sich KI zur Arzneimittelsuche zur Entwicklung von Giftstoffen umkehren? Diese Anfrage legitimierte und veranlasste das spätere Experiment.",
+      "title_de": "Spiez-Convergence-Konferenz beauftragt Dual-Use-Gedankenexperiment",
+      "description_de": "Das Schweizer Labor Spiez (Eidgenössisches Institut für ABC-Schutz) lud Collaborations Pharmaceuticals zu seiner Konferenzreihe Spiez Convergence 2021 ein, die Risiken neuer Technologien für die Chemie- und Biowaffenkonventionen auslotet. Auftrag war ein Gedankenexperiment: Lässt sich KI zur Arzneimittelsuche zur Entwicklung von Giftstoffen umkehren? Diese Anfrage legitimierte und veranlasste das spätere Experiment.",
+      "title_en": "Spiez Convergence conference commissions dual-use thought experiment",
+      "description_en": "Switzerland's Spiez Laboratory (Federal Institute for NBC Protection) invited Collaborations Pharmaceuticals to its Spiez Convergence 2021 conference series, which explores the risks of emerging technologies for the chemical and biological weapons conventions. The brief was a thought experiment: could drug-discovery AI be inverted to design toxins? This request legitimised and prompted the later experiment.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9544280/"
+      ]
+    },
+    {
+      "date": "2022-03",
+      "phase": "event",
+      "title": "Umgekehrtes Modell entwirft binnen sechs Stunden rund 40.000 Giftstoffe",
+      "description": "In der im März 2022 in Nature Machine Intelligence veröffentlichten Studie kehrten die Forscher die Toxizitäts-Belohnung von MegaSyn schlicht um. Binnen weniger als sechs Stunden entwarf das Modell auf einem handelsüblichen Rechner rund 40.000 potenziell tödliche Moleküle, darunter den Nervenkampfstoff VX und neuartige, teils noch toxischer vorhergesagte Verbindungen. Die Stoffe wurden nicht synthetisiert; die Studie war als Warnung gedacht.",
+      "title_de": "Umgekehrtes Modell entwirft binnen sechs Stunden rund 40.000 Giftstoffe",
+      "description_de": "In der im März 2022 in Nature Machine Intelligence veröffentlichten Studie kehrten die Forscher die Toxizitäts-Belohnung von MegaSyn schlicht um. Binnen weniger als sechs Stunden entwarf das Modell auf einem handelsüblichen Rechner rund 40.000 potenziell tödliche Moleküle, darunter den Nervenkampfstoff VX und neuartige, teils noch toxischer vorhergesagte Verbindungen. Die Stoffe wurden nicht synthetisiert; die Studie war als Warnung gedacht.",
+      "title_en": "Inverted model designs around 40,000 toxins in under six hours",
+      "description_en": "In the study published in Nature Machine Intelligence in March 2022, the researchers simply inverted MegaSyn's toxicity reward. In under six hours the model, running on an off-the-shelf computer, designed around 40,000 potentially lethal molecules, including the nerve agent VX and novel compounds some of which were predicted to be even more toxic. The compounds were not synthesised; the study was intended as a warning.",
+      "sources": [
+        "https://www.nature.com/articles/s42256-022-00465-9"
+      ]
+    },
+    {
+      "date": "2022-03-17",
+      "phase": "consequences",
+      "title": "Weltweite Berichterstattung und Briefing des Weißen Hauses",
+      "description": "Die Studie löste eine breite Debatte über das Dual-Use-Risiko KI-gestützter Molekülgeneratoren aus. Die Autoren gaben dem Office of Science and Technology Policy des Weißen Hauses ein Briefing zu ihren Befunden. Der Fall wurde zu einem Standardbeispiel dafür, wie geringfügige Änderungen an wohlmeinenden KI-Systemen katastrophale Missbrauchspotenziale freisetzen können.",
+      "title_de": "Weltweite Berichterstattung und Briefing des Weißen Hauses",
+      "description_de": "Die Studie löste eine breite Debatte über das Dual-Use-Risiko KI-gestützter Molekülgeneratoren aus. Die Autoren gaben dem Office of Science and Technology Policy des Weißen Hauses ein Briefing zu ihren Befunden. Der Fall wurde zu einem Standardbeispiel dafür, wie geringfügige Änderungen an wohlmeinenden KI-Systemen katastrophale Missbrauchspotenziale freisetzen können.",
+      "title_en": "Worldwide coverage and a White House briefing",
+      "description_en": "The study triggered a broad debate about the dual-use risk of AI-powered molecule generators. The authors gave a briefing on their findings to the White House Office of Science and Technology Policy. The case became a standard example of how minor changes to well-intentioned AI systems can unlock catastrophic potential for misuse.",
+      "sources": [
+        "https://www.scientificamerican.com/article/ai-drug-discovery-systems-might-be-repurposed-to-make-chemical-weapons-researchers-warn/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.sciencealert.com/ai-experiment-generated-40-000-hypothetical-bioweapons-in-6-hours-scientists-warn",

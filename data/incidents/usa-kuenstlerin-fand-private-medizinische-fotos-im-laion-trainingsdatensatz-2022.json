@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf Gesundheit",
+    "Würde des Menschen",
+    "Informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf Gesundheit",
+    "Würde des Menschen",
+    "Informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Right to health",
+    "Human dignity",
+    "Informational self-determination"
+  ],
   "asm:actors": [
     {
       "name": "LAION",
@@ -39,7 +57,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-08",
+      "phase": "infrastructure",
+      "title": "LAION-400M: 400 Mio. Bilder aus dem offenen Web",
+      "description": "Im August 2021 veröffentlicht der gemeinnützige Verein LAION den Datensatz LAION-400M - 400 Mio. Bild-Text-Paare, gewonnen aus von Common Crawl gescrapten Webseiten und mit OpenAIs CLIP gefiltert. Der Datensatz enthält nur Links zu Bildern, nicht die Bilder selbst, und wird offen zum Training von Bild-KI bereitgestellt. Eine Einwilligung der Abgebildeten wird nicht eingeholt.",
+      "title_de": "LAION-400M: 400 Mio. Bilder aus dem offenen Web",
+      "description_de": "Im August 2021 veröffentlicht der gemeinnützige Verein LAION den Datensatz LAION-400M - 400 Mio. Bild-Text-Paare, gewonnen aus von Common Crawl gescrapten Webseiten und mit OpenAIs CLIP gefiltert. Der Datensatz enthält nur Links zu Bildern, nicht die Bilder selbst, und wird offen zum Training von Bild-KI bereitgestellt. Eine Einwilligung der Abgebildeten wird nicht eingeholt.",
+      "title_en": "LAION-400M: 400 million images from the open web",
+      "description_en": "In August 2021 the nonprofit LAION releases the LAION-400M dataset - 400 million image-text pairs harvested from web pages scraped by Common Crawl and filtered with OpenAI's CLIP. The dataset contains only links to images, not the images themselves, and is published openly for training image AI. No consent is sought from the people depicted.",
+      "sources": [
+        "https://laion.ai/blog/laion-400-open-dataset/"
+      ]
+    },
+    {
+      "date": "2022-08",
+      "phase": "doctrine",
+      "title": "Stable Diffusion auf LAION-5B - offene Bild-KI für alle",
+      "description": "Im August 2022 erscheint Stable Diffusion, trainiert auf einem Subset des Nachfolgers LAION-5B (rund 5,85 Mrd. Bild-Text-Paare). Das Geschäfts- und Open-Source-Modell, riesige Web-Scrapes ungeprüft als Trainingsbasis zu nutzen, wird damit zum Standard - inklusive aller darin enthaltenen privaten und sensiblen Inhalte.",
+      "title_de": "Stable Diffusion auf LAION-5B - offene Bild-KI für alle",
+      "description_de": "Im August 2022 erscheint Stable Diffusion, trainiert auf einem Subset des Nachfolgers LAION-5B (rund 5,85 Mrd. Bild-Text-Paare). Das Geschäfts- und Open-Source-Modell, riesige Web-Scrapes ungeprüft als Trainingsbasis zu nutzen, wird damit zum Standard - inklusive aller darin enthaltenen privaten und sensiblen Inhalte.",
+      "title_en": "Stable Diffusion on LAION-5B - open image AI for everyone",
+      "description_en": "In August 2022 Stable Diffusion is released, trained on a subset of the successor dataset LAION-5B (around 5.85 billion image-text pairs). The business and open-source model of using vast, unvetted web scrapes as a training base becomes the standard - including all the private and sensitive content within.",
+      "sources": [
+        "https://www.deeplearning.ai/the-batch/the-story-of-laion-the-dataset-behind-stable-diffusion"
+      ]
+    },
+    {
+      "date": "2022-09",
+      "phase": "event",
+      "title": "Künstlerin findet ihre privaten Arztfotos im Datensatz",
+      "description": "Im September 2022 entdeckt die kalifornische KI-Künstlerin 'Lapine' über das Tool 'Have I Been Trained' zwei private medizinische Fotos ihres Gesichts in LAION-5B - 2013 von ihrer Ärztin aufgenommen und nie zur Veröffentlichung bestimmt. Die Bilder waren ohne ihr Wissen ins offene Netz und von dort in den Trainingsdatensatz gelangt.",
+      "title_de": "Künstlerin findet ihre privaten Arztfotos im Datensatz",
+      "description_de": "Im September 2022 entdeckt die kalifornische KI-Künstlerin 'Lapine' über das Tool 'Have I Been Trained' zwei private medizinische Fotos ihres Gesichts in LAION-5B - 2013 von ihrer Ärztin aufgenommen und nie zur Veröffentlichung bestimmt. Die Bilder waren ohne ihr Wissen ins offene Netz und von dort in den Trainingsdatensatz gelangt.",
+      "title_en": "Artist finds her private doctor's photos in the dataset",
+      "description_en": "In September 2022 California AI artist 'Lapine' discovers, via the 'Have I Been Trained' tool, two private medical photos of her face in LAION-5B - taken by her doctor in 2013 and never meant for publication. The images had reached the open web, and from there the training dataset, without her knowledge.",
+      "sources": [
+        "https://petapixel.com/2022/09/26/shocked-artist-finds-private-medical-photos-in-ai-training-data-set/"
+      ]
+    },
+    {
+      "date": "2022-09",
+      "phase": "consequences",
+      "title": "Tausende weitere Patientenfotos im selben Datensatz",
+      "description": "Bei der Nachforschung stoßen Beteiligte auf tausende weitere Patientenfotos mit fragwürdigem rechtlichem Status in LAION-5B. Die Recherche zeigt, dass Lapines Fall kein Einzelfall ist, sondern Symptom eines strukturellen Problems: Sensible, privat aufgenommene Bilder landen massenhaft und ungeprüft in Trainingsdaten.",
+      "title_de": "Tausende weitere Patientenfotos im selben Datensatz",
+      "description_de": "Bei der Nachforschung stoßen Beteiligte auf tausende weitere Patientenfotos mit fragwürdigem rechtlichem Status in LAION-5B. Die Recherche zeigt, dass Lapines Fall kein Einzelfall ist, sondern Symptom eines strukturellen Problems: Sensible, privat aufgenommene Bilder landen massenhaft und ungeprüft in Trainingsdaten.",
+      "title_en": "Thousands more patient photos in the same dataset",
+      "description_en": "On further inquiry, those involved find thousands of additional patient photos of questionable legal status in LAION-5B. The reporting shows that Lapine's case is not isolated but a symptom of a structural problem: sensitive, privately taken images end up in training data en masse and unvetted.",
+      "sources": [
+        "https://the-decoder.com/patient-images-in-laion-datasets-are-only-a-sample-of-a-larger-issue/"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "consequences",
+      "title": "Stanford findet Missbrauchsmaterial - LAION nimmt Datensatz offline",
+      "description": "Im Dezember 2023 dokumentiert das Stanford Internet Observatory tausende Verdachtsfälle von Kindesmissbrauchsmaterial (CSAM) in LAION-5B. LAION nimmt daraufhin alle zugänglichen LAION-5B-Versionen offline. Im August 2024 erscheint eine bereinigte Fassung (Re-LAION-5B). Der Fall wird zum Beleg dafür, wie wenig ungefilterte Web-Scrapes als Trainingsbasis kontrolliert sind.",
+      "title_de": "Stanford findet Missbrauchsmaterial - LAION nimmt Datensatz offline",
+      "description_de": "Im Dezember 2023 dokumentiert das Stanford Internet Observatory tausende Verdachtsfälle von Kindesmissbrauchsmaterial (CSAM) in LAION-5B. LAION nimmt daraufhin alle zugänglichen LAION-5B-Versionen offline. Im August 2024 erscheint eine bereinigte Fassung (Re-LAION-5B). Der Fall wird zum Beleg dafür, wie wenig ungefilterte Web-Scrapes als Trainingsbasis kontrolliert sind.",
+      "title_en": "Stanford finds abuse material - LAION takes the dataset offline",
+      "description_en": "In December 2023 the Stanford Internet Observatory documents thousands of suspected instances of child sexual abuse material (CSAM) in LAION-5B. LAION then takes all accessible LAION-5B versions offline. In August 2024 a cleaned version (Re-LAION-5B) is released. The case becomes evidence of how poorly unfiltered web scrapes are controlled as a training base.",
+      "sources": [
+        "https://www.404media.co/laion-datasets-removed-stanford-csam-child-abuse/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://petapixel.com/2022/09/26/shocked-artist-finds-private-medical-photos-in-ai-training-data-set/",
