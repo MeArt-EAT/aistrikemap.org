@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf faires Verfahren",
+    "Wissenschaftsfreiheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf faires Verfahren",
+    "Wissenschaftsfreiheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to a fair procedure",
+    "Academic freedom",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "AI research conferences (e.g. ICLR)",
@@ -41,7 +53,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "Breite Verfügbarkeit leistungsfähiger Sprachmodelle (ChatGPT)",
+      "description": "Mit der öffentlichen Freigabe von ChatGPT im November 2022 wurden Sprachmodelle, die flüssigen wissenschaftlichen Fachtext erzeugen können, für jedermann kostenlos zugänglich. Damit entstand erstmals ein Werkzeug, mit dem sich komplette Gutachten in Minuten formulieren ließen. Diese Infrastruktur ist die technische Vorbedingung für den späteren Einsatz von KI im Peer-Review-Prozess.",
+      "title_de": "Breite Verfügbarkeit leistungsfähiger Sprachmodelle (ChatGPT)",
+      "description_de": "Mit der öffentlichen Freigabe von ChatGPT im November 2022 wurden Sprachmodelle, die flüssigen wissenschaftlichen Fachtext erzeugen können, für jedermann kostenlos zugänglich. Damit entstand erstmals ein Werkzeug, mit dem sich komplette Gutachten in Minuten formulieren ließen. Diese Infrastruktur ist die technische Vorbedingung für den späteren Einsatz von KI im Peer-Review-Prozess.",
+      "title_en": "Wide availability of capable language models (ChatGPT)",
+      "description_en": "With the public release of ChatGPT in November 2022, language models capable of producing fluent academic prose became freely available to anyone. For the first time a tool existed that could draft entire review reports in minutes. This infrastructure is the technical precondition for the later use of AI in the peer-review process.",
+      "sources": [
+        "https://arxiv.org/abs/2403.07183"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Reviewer-Überlastung und unklare KI-Regeln bei Großkonferenzen",
+      "description": "Die führenden KI-Konferenzen verzeichneten ab 2023 explodierende Einreichungszahlen bei gleichbleibendem Reviewer-Pool, was den Zeitdruck pro Gutachten erhöhte. Klare, durchsetzbare Vorgaben zum Einsatz von Sprachmodellen im Begutachtungsprozess fehlten zunächst weitgehend. Dieser Mangel an verbindlicher Doktrin senkte die Hemmschwelle, Gutachten ganz oder teilweise von KI schreiben zu lassen.",
+      "title_de": "Reviewer-Überlastung und unklare KI-Regeln bei Großkonferenzen",
+      "description_de": "Die führenden KI-Konferenzen verzeichneten ab 2023 explodierende Einreichungszahlen bei gleichbleibendem Reviewer-Pool, was den Zeitdruck pro Gutachten erhöhte. Klare, durchsetzbare Vorgaben zum Einsatz von Sprachmodellen im Begutachtungsprozess fehlten zunächst weitgehend. Dieser Mangel an verbindlicher Doktrin senkte die Hemmschwelle, Gutachten ganz oder teilweise von KI schreiben zu lassen.",
+      "title_en": "Reviewer overload and unclear AI rules at major conferences",
+      "description_en": "From 2023 the leading AI conferences saw submission numbers explode while the reviewer pool stayed flat, increasing time pressure per review. Clear, enforceable rules on the use of language models in the review process were largely absent at first. This lack of binding policy lowered the barrier to having reviews written wholly or partly by AI.",
+      "sources": [
+        "https://arxiv.org/abs/2403.07183"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "event",
+      "title": "Studie: Bis zu 17 Prozent der Reviews auf KI-Konferenzen KI-geschrieben",
+      "description": "Mehrere wissenschaftliche Untersuchungen aus dem Jahr 2024 schätzten, dass ein erheblicher Anteil der Peer-Reviews bei großen KI-Konferenzen (u.a. ICLR 2024) substanziell mit Sprachmodellen erstellt wurde - je nach Methode 6,5 bis rund 17 Prozent. Eine Analyse ('The AI Review Lottery') fand zudem, dass KI-gestützte Reviews tendenziell höhere Bewertungen vergaben und die Annahmewahrscheinlichkeit von Grenzfällen erhöhten, was die Integrität des Begutachtungsprozesses berührt.",
+      "title_de": "Studie: Bis zu 17 Prozent der Reviews auf KI-Konferenzen KI-geschrieben",
+      "description_de": "Mehrere wissenschaftliche Untersuchungen aus dem Jahr 2024 schätzten, dass ein erheblicher Anteil der Peer-Reviews bei großen KI-Konferenzen (u.a. ICLR 2024) substanziell mit Sprachmodellen erstellt wurde - je nach Methode 6,5 bis rund 17 Prozent. Eine Analyse ('The AI Review Lottery') fand zudem, dass KI-gestützte Reviews tendenziell höhere Bewertungen vergaben und die Annahmewahrscheinlichkeit von Grenzfällen erhöhten, was die Integrität des Begutachtungsprozesses berührt.",
+      "title_en": "Study: up to 17 percent of AI conference peer reviews written by AI",
+      "description_en": "Several 2024 academic studies estimated that a substantial share of peer reviews at major AI conferences (including ICLR 2024) were produced with significant LLM assistance, ranging from 6.5 to about 17 percent depending on method. One analysis ('The AI Review Lottery') further found that AI-assisted reviews tended to give higher scores and raised acceptance rates for borderline papers, touching the integrity of the review process.",
+      "sources": [
+        "https://arxiv.org/abs/2405.02150",
+        "https://arxiv.org/abs/2403.07183"
+      ]
+    },
+    {
+      "date": "2024-05",
+      "phase": "consequences",
+      "title": "Debatte um Integrität des Peer-Review und neue KI-Richtlinien",
+      "description": "Die Befunde lösten eine breite Debatte über die Glaubwürdigkeit des wissenschaftlichen Begutachtungssystems aus, da KI-gestützte Gutachten Annahmeentscheidungen messbar verzerrten. Mehrere Konferenzen und Verlage verschärften daraufhin ihre Richtlinien und untersagten oder beschränkten den undeklarierten Einsatz von Sprachmodellen im Review. Forschende riefen zu Offenlegungspflichten und Detektionsverfahren auf, um die Fairness des Verfahrens zu sichern.",
+      "title_de": "Debatte um Integrität des Peer-Review und neue KI-Richtlinien",
+      "description_de": "Die Befunde lösten eine breite Debatte über die Glaubwürdigkeit des wissenschaftlichen Begutachtungssystems aus, da KI-gestützte Gutachten Annahmeentscheidungen messbar verzerrten. Mehrere Konferenzen und Verlage verschärften daraufhin ihre Richtlinien und untersagten oder beschränkten den undeklarierten Einsatz von Sprachmodellen im Review. Forschende riefen zu Offenlegungspflichten und Detektionsverfahren auf, um die Fairness des Verfahrens zu sichern.",
+      "title_en": "Debate over peer-review integrity and new AI guidelines",
+      "description_en": "The findings triggered a broad debate about the credibility of the scientific review system, since AI-assisted reviews measurably distorted acceptance decisions. Several conferences and publishers subsequently tightened their guidelines, banning or restricting the undisclosed use of language models in review. Researchers called for disclosure requirements and detection methods to safeguard the fairness of the process.",
+      "sources": [
+        "https://arxiv.org/abs/2405.02150"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/abs/2405.02150",

@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Urheberrecht",
+    "Recht am eigenen Bild",
+    "Schutz personenbezogener Daten"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Urheberrecht",
+    "Recht am eigenen Bild",
+    "Schutz personenbezogener Daten"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Copyright",
+    "Right to one's own image",
+    "Protection of personal data"
+  ],
   "asm:actors": [
     {
       "name": "Nicholas Carlini et al. (researchers)",
@@ -50,7 +65,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-03",
+      "phase": "infrastructure",
+      "title": "LAION-5B: Milliarden aus dem Web gescrapter Bild-Text-Paare",
+      "description": "Die gemeinnützige Initiative LAION veröffentlichte 2022 den Datensatz LAION-5B mit rund 5,85 Milliarden Bild-Text-Paaren, die aus den von Common Crawl archivierten Webseiten extrahiert wurden. Der Datensatz enthielt unzählige Fotos realer Personen sowie urheber- und markenrechtlich geschützte Werke und diente als Trainingsgrundlage für Modelle wie Stable Diffusion und Imagen.",
+      "title_de": "LAION-5B: Milliarden aus dem Web gescrapter Bild-Text-Paare",
+      "description_de": "Die gemeinnützige Initiative LAION veröffentlichte 2022 den Datensatz LAION-5B mit rund 5,85 Milliarden Bild-Text-Paaren, die aus den von Common Crawl archivierten Webseiten extrahiert wurden. Der Datensatz enthielt unzählige Fotos realer Personen sowie urheber- und markenrechtlich geschützte Werke und diente als Trainingsgrundlage für Modelle wie Stable Diffusion und Imagen.",
+      "title_en": "LAION-5B: billions of image-text pairs scraped from the web",
+      "description_en": "In 2022 the non-profit initiative LAION released the LAION-5B dataset of about 5.85 billion image-text pairs extracted from websites archived by Common Crawl. The dataset contained countless photos of real people as well as copyrighted and trademarked works, and served as the training basis for models such as Stable Diffusion and Imagen.",
+      "sources": [
+        "https://arxiv.org/abs/2210.08402"
+      ]
+    },
+    {
+      "date": "2022-08",
+      "phase": "doctrine",
+      "title": "Diffusionsmodelle werden auf Massendaten ohne Einwilligung trainiert",
+      "description": "Stability AI veröffentlichte im August 2022 Stable Diffusion, trainiert auf einer Teilmenge von LAION. Das Geschäftsmodell der Branche beruhte darauf, frei verfügbare Webdaten ohne individuelle Einwilligung der Abgebildeten oder Urheber:innen für das Training zu nutzen. Annahme war, dass die Modelle abstrahieren und keine einzelnen Trainingsbilder reproduzieren.",
+      "title_de": "Diffusionsmodelle werden auf Massendaten ohne Einwilligung trainiert",
+      "description_de": "Stability AI veröffentlichte im August 2022 Stable Diffusion, trainiert auf einer Teilmenge von LAION. Das Geschäftsmodell der Branche beruhte darauf, frei verfügbare Webdaten ohne individuelle Einwilligung der Abgebildeten oder Urheber:innen für das Training zu nutzen. Annahme war, dass die Modelle abstrahieren und keine einzelnen Trainingsbilder reproduzieren.",
+      "title_en": "Diffusion models trained on mass data without consent",
+      "description_en": "Stability AI released Stable Diffusion in August 2022, trained on a subset of LAION. The industry's business model rested on using freely available web data for training without the individual consent of the people depicted or the creators. The assumption was that the models abstract and do not reproduce individual training images.",
+      "sources": [
+        "https://www.techpolicy.press/laion5b-stable-diffusion-and-the-original-sin-of-generative-ai/"
+      ]
+    },
+    {
+      "date": "2023-01-30",
+      "phase": "event",
+      "title": "Studie weist wörtliche Reproduktion von Trainingsbildern nach",
+      "description": "Ein Forschungsteam um Nicholas Carlini zeigte im Januar 2023, dass Diffusionsmodelle wie Stable Diffusion und Imagen einzelne Trainingsbilder auswendig lernen und bei der Generierung nahezu identisch wieder ausgeben können. Mit einem Generate-and-Filter-Verfahren extrahierten sie über tausend Trainingsbeispiele, von Personenfotos bis zu markenrechtlich geschützten Logos, und widerlegten damit die Annahme reiner Abstraktion.",
+      "title_de": "Studie weist wörtliche Reproduktion von Trainingsbildern nach",
+      "description_de": "Ein Forschungsteam um Nicholas Carlini zeigte im Januar 2023, dass Diffusionsmodelle wie Stable Diffusion und Imagen einzelne Trainingsbilder auswendig lernen und bei der Generierung nahezu identisch wieder ausgeben können. Mit einem Generate-and-Filter-Verfahren extrahierten sie über tausend Trainingsbeispiele, von Personenfotos bis zu markenrechtlich geschützten Logos, und widerlegten damit die Annahme reiner Abstraktion.",
+      "title_en": "Study proves verbatim reproduction of training images",
+      "description_en": "A research team led by Nicholas Carlini showed in January 2023 that diffusion models such as Stable Diffusion and Imagen memorise individual training images and can emit near-identical copies at generation time. Using a generate-and-filter method they extracted over a thousand training examples, from photos of people to trademarked logos, refuting the assumption of pure abstraction.",
+      "sources": [
+        "https://arxiv.org/abs/2301.13188"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "consequences",
+      "title": "Datenschutz- und Urheberrechtsdebatte, Belege für laufende Klagen",
+      "description": "Die Studie lieferte technische Belege für die Datenschutz- und Urheberrechtsrisiken generativer Bildmodelle und wurde 2023 auf dem USENIX Security Symposium präsentiert. Die nachgewiesene Memorierung stützte die Argumentation in laufenden Klagen, darunter Getty Images gegen Stability AI sowie eine Sammelklage von Künstlerinnen und Künstlern, und verschärfte die Forderung nach Einwilligung und Datentransparenz beim Training.",
+      "title_de": "Datenschutz- und Urheberrechtsdebatte, Belege für laufende Klagen",
+      "description_de": "Die Studie lieferte technische Belege für die Datenschutz- und Urheberrechtsrisiken generativer Bildmodelle und wurde 2023 auf dem USENIX Security Symposium präsentiert. Die nachgewiesene Memorierung stützte die Argumentation in laufenden Klagen, darunter Getty Images gegen Stability AI sowie eine Sammelklage von Künstlerinnen und Künstlern, und verschärfte die Forderung nach Einwilligung und Datentransparenz beim Training.",
+      "title_en": "Privacy and copyright debate, evidence for pending lawsuits",
+      "description_en": "The study provided technical evidence of the privacy and copyright risks of generative image models and was presented at the 2023 USENIX Security Symposium. The demonstrated memorisation supported the arguments in pending lawsuits, including Getty Images against Stability AI and a class action by artists, and intensified demands for consent and data transparency in training.",
+      "sources": [
+        "https://www.usenix.org/conference/usenixsecurity23/presentation/carlini"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/abs/2301.13188",

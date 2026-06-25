@@ -26,9 +26,24 @@
     "deepfakes",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht am eigenen Bild und an der eigenen Stimme",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht am eigenen Bild und an der eigenen Stimme",
+    "Schutz vor Manipulation",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to one's own image and voice",
+    "Protection from manipulation",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -43,7 +58,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-05-13",
+      "phase": "infrastructure",
+      "title": "OpenAI stellt multimodales Modell GPT-4o vor",
+      "description": "OpenAI präsentierte im Mai 2024 GPT-4o, ein nativ multimodales Modell, das Sprache direkt als Audio versteht und erzeugt, statt Text nur nachträglich vorlesen zu lassen. Weil das Modell aus seinen Trainingsdaten nahezu jede Stimme, Geräusche und Klänge synthetisieren kann, besitzt es prinzipiell die Fähigkeit, beliebige Stimmen nachzubilden. Diese generative Audio-Fähigkeit ist die technische Vorbedingung für die spätere ungewollte Stimm-Imitation.",
+      "title_de": "OpenAI stellt multimodales Modell GPT-4o vor",
+      "description_de": "OpenAI präsentierte im Mai 2024 GPT-4o, ein nativ multimodales Modell, das Sprache direkt als Audio versteht und erzeugt, statt Text nur nachträglich vorlesen zu lassen. Weil das Modell aus seinen Trainingsdaten nahezu jede Stimme, Geräusche und Klänge synthetisieren kann, besitzt es prinzipiell die Fähigkeit, beliebige Stimmen nachzubilden. Diese generative Audio-Fähigkeit ist die technische Vorbedingung für die spätere ungewollte Stimm-Imitation.",
+      "title_en": "OpenAI unveils its multimodal model GPT-4o",
+      "description_en": "In May 2024 OpenAI introduced GPT-4o, a natively multimodal model that understands and produces speech directly as audio rather than merely reading out text afterwards. Because the model can synthesise almost any voice, sound effect or noise from its training data, it inherently has the ability to reproduce arbitrary voices. This generative audio capability is the technical precondition for the later unintended voice imitation.",
+      "sources": [
+        "https://www.technologyreview.com/2024/09/24/1104422/openai-released-its-advanced-voice-mode-to-more-people-heres-how-to-get-it/"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "doctrine",
+      "title": "Produktivierung als Sprachassistent mit lizenzierten Stimmen",
+      "description": "OpenAI entschied, GPT-4o als Echtzeit-Sprachassistenten (Advanced Voice Mode) zu vermarkten, der in natürlicher Stimme mit Nutzer:innen spricht. Als Geschäftsmodell-Vorgabe sollte das System ausschließlich vom Unternehmen lizenzierte Schauspielerstimmen verwenden und keine fremden Stimmen klonen. Diese Vorgabe definierte den erlaubten Rahmen, dessen Verletzung der dokumentierte Vorfall darstellt.",
+      "title_de": "Produktivierung als Sprachassistent mit lizenzierten Stimmen",
+      "description_de": "OpenAI entschied, GPT-4o als Echtzeit-Sprachassistenten (Advanced Voice Mode) zu vermarkten, der in natürlicher Stimme mit Nutzer:innen spricht. Als Geschäftsmodell-Vorgabe sollte das System ausschließlich vom Unternehmen lizenzierte Schauspielerstimmen verwenden und keine fremden Stimmen klonen. Diese Vorgabe definierte den erlaubten Rahmen, dessen Verletzung der dokumentierte Vorfall darstellt.",
+      "title_en": "Productisation as a voice assistant with licensed voices",
+      "description_en": "OpenAI decided to market GPT-4o as a real-time voice assistant (Advanced Voice Mode) that speaks with users in a natural voice. As a business-model rule the system was to use only voice-actor voices licensed by the company and not clone any third-party voices. This rule defined the permitted boundary that the documented incident violated.",
+      "sources": [
+        "https://www.technologyreview.com/2024/09/24/1104422/openai-released-its-advanced-voice-mode-to-more-people-heres-how-to-get-it/"
+      ]
+    },
+    {
+      "date": "2024-08-08",
+      "phase": "event",
+      "title": "Global: ChatGPTs Advanced Voice Mode imitiert Nutzer:innen-Stimmen ohne Erlaubnis",
+      "description": "In der GPT-4o-System-Card vom August 2024 dokumentierte OpenAI seltene Fälle, in denen der Advanced Voice Mode während Tests unbeabsichtigt die Stimme der/des sprechenden Nutzers/Nutzerin imitierte. Auslöser waren u.a. rauschhaft verzerrte Eingaben, die das Modell hinsichtlich der zu verwendenden Stimme verwirrten. OpenAI begrenzte die Ausgabe auf vom Unternehmen lizenzierte Schauspielerstimmen und erklärte das Restrisiko für minimal.",
+      "title_de": "Global: ChatGPTs Advanced Voice Mode imitiert Nutzer:innen-Stimmen ohne Erlaubnis",
+      "description_de": "In der GPT-4o-System-Card vom August 2024 dokumentierte OpenAI seltene Fälle, in denen der Advanced Voice Mode während Tests unbeabsichtigt die Stimme der/des sprechenden Nutzers/Nutzerin imitierte. Auslöser waren u.a. rauschhaft verzerrte Eingaben, die das Modell hinsichtlich der zu verwendenden Stimme verwirrten. OpenAI begrenzte die Ausgabe auf vom Unternehmen lizenzierte Schauspielerstimmen und erklärte das Restrisiko für minimal.",
+      "title_en": "Global: ChatGPT Advanced Voice Mode imitates users' voices without permission",
+      "description_en": "In its GPT-4o system card published in August 2024, OpenAI documented rare instances in which Advanced Voice Mode unintentionally imitated the user's own voice during testing. Triggers included noisy or distorted inputs that confused the model about which voice to use. OpenAI restricted output to voice-actor voices it had licensed and stated the residual risk was minimal.",
+      "sources": [
+        "https://futurism.com/the-byte/chatgpt-clone-voice-without-permission"
+      ]
+    },
+    {
+      "date": "2024-09",
+      "phase": "consequences",
+      "title": "Ausgabe-Klassifikator und breiterer Rollout",
+      "description": "OpenAI führte einen eigenständigen Ausgabe-Klassifikator ein, der während der Audio-Erzeugung laufend prüft, ob die verwendete Stimme von der freigegebenen Vorgabe abweicht, und solche Ausgaben blockiert. Nach eigenen Angaben fing das System 100 Prozent der relevanten Abweichungen ab, womit das Restrisiko unautorisierter Stimm-Erzeugung als minimal eingestuft wurde. Auf dieser Grundlage rollte OpenAI den Advanced Voice Mode ab September 2024 für weitere Nutzer:innen aus.",
+      "title_de": "Ausgabe-Klassifikator und breiterer Rollout",
+      "description_de": "OpenAI führte einen eigenständigen Ausgabe-Klassifikator ein, der während der Audio-Erzeugung laufend prüft, ob die verwendete Stimme von der freigegebenen Vorgabe abweicht, und solche Ausgaben blockiert. Nach eigenen Angaben fing das System 100 Prozent der relevanten Abweichungen ab, womit das Restrisiko unautorisierter Stimm-Erzeugung als minimal eingestuft wurde. Auf dieser Grundlage rollte OpenAI den Advanced Voice Mode ab September 2024 für weitere Nutzer:innen aus.",
+      "title_en": "Output classifier and wider rollout",
+      "description_en": "OpenAI introduced a standalone output classifier that continuously checks during audio generation whether the voice used deviates from the approved preset and blocks such outputs. By its own account the system caught 100 percent of meaningful deviations, so the residual risk of unauthorised voice generation was rated minimal. On this basis OpenAI rolled Advanced Voice Mode out to more users from September 2024.",
+      "sources": [
+        "https://www.technologyreview.com/2024/09/24/1104422/openai-released-its-advanced-voice-mode-to-more-people-heres-how-to-get-it/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://futurism.com/the-byte/chatgpt-clone-voice-without-permission",
@@ -57,13 +125,13 @@
     },
     {
       "url": "https://www.techradar.com/computing/artificial-intelligence/its-not-an-echo-chatgpt-might-suddenly-mimic-your-voice-when-you-speak-to-it",
-      "title": "It's not an echo – ChatGPT might suddenly mimic your voice when you speak to it",
+      "title": "It's not an echo - ChatGPT might suddenly mimic your voice when you speak to it",
       "publisher": "TechRadar",
       "date": "2024-08-12",
       "type": "news-article",
       "asm:linkHealth": "unverified",
-      "title_de": "It's not an echo – ChatGPT might suddenly mimic your voice when you speak to it",
-      "title_en": "It's not an echo – ChatGPT might suddenly mimic your voice when you speak to it"
+      "title_de": "It's not an echo - ChatGPT might suddenly mimic your voice when you speak to it",
+      "title_en": "It's not an echo - ChatGPT might suddenly mimic your voice when you speak to it"
     },
     {
       "url": "https://www.technologyreview.com/2024/09/24/1104422/openai-released-its-advanced-voice-mode-to-more-people-heres-how-to-get-it/",

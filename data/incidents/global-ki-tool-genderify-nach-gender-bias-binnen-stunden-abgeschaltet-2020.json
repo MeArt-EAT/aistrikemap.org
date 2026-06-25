@@ -26,9 +26,27 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Geschlechtergleichheit",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Recht auf Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Geschlechtergleichheit",
+    "Datenschutz",
+    "Würde des Menschen",
+    "Recht auf Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Gender equality",
+    "Data protection",
+    "Human dignity",
+    "Right to self-determination"
+  ],
   "asm:actors": [
     {
       "name": "Genderify",
@@ -42,7 +60,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Binäres Gender-Inferenz-System auf Basis von Namen und E-Mail-Daten",
+      "description": "Genderify baut ein KI-System auf, das aus Name, Nutzername oder E-Mail-Adresse auf das Geschlecht einer Person schließt. Laut Anbieter stammen die Trainings- und Referenzdaten aus öffentlich verfügbaren staatlichen Quellen und sozialen Netzwerken; die Herkunft bleibt intransparent. Das Modell ist strikt binär ausgelegt und ignoriert nicht-binäre Personen.",
+      "title_de": "Binäres Gender-Inferenz-System auf Basis von Namen und E-Mail-Daten",
+      "description_de": "Genderify baut ein KI-System auf, das aus Name, Nutzername oder E-Mail-Adresse auf das Geschlecht einer Person schließt. Laut Anbieter stammen die Trainings- und Referenzdaten aus öffentlich verfügbaren staatlichen Quellen und sozialen Netzwerken; die Herkunft bleibt intransparent. Das Modell ist strikt binär ausgelegt und ignoriert nicht-binäre Personen.",
+      "title_en": "Binary gender-inference system based on names and email data",
+      "description_en": "Genderify builds an AI system that infers a person's gender from their name, username or email address. According to the operator the training and reference data come from publicly available governmental sources and social networks; the provenance remains opaque. The model is strictly binary and ignores non-binary people.",
+      "sources": [
+        "https://www.theregister.com/2020/07/30/genderify_shuts_down"
+      ]
+    },
+    {
+      "date": "2020-07",
+      "phase": "doctrine",
+      "title": "Start auf Product Hunt als Tool für Analytics und Kundensegmentierung",
+      "description": "Im Juli 2020 wird Genderify auf Product Hunt als angeblich einzigartige Lösung vermarktet, mit der Unternehmen Daten für Analytics und Kundensegmentierung gewinnen sollen. Das Geschäftsmodell macht die automatische Zuschreibung von Geschlecht zu einem kommerziellen Produkt, ohne Prüfung auf Bias oder Diskriminierung.",
+      "title_de": "Start auf Product Hunt als Tool für Analytics und Kundensegmentierung",
+      "description_de": "Im Juli 2020 wird Genderify auf Product Hunt als angeblich einzigartige Lösung vermarktet, mit der Unternehmen Daten für Analytics und Kundensegmentierung gewinnen sollen. Das Geschäftsmodell macht die automatische Zuschreibung von Geschlecht zu einem kommerziellen Produkt, ohne Prüfung auf Bias oder Diskriminierung.",
+      "title_en": "Launch on Product Hunt as a tool for analytics and customer segmentation",
+      "description_en": "In July 2020 Genderify is marketed on Product Hunt as a supposedly unique solution for businesses to obtain data for analytics and customer segmentation. The business model turns the automatic assignment of gender into a commercial product, without any check for bias or discrimination.",
+      "sources": [
+        "https://syncedreview.com/2020/07/30/ai-powered-genderify-platform-shut-down-after-bias-based-backlash/"
+      ]
+    },
+    {
+      "date": "2020-07-29",
+      "phase": "event",
+      "title": "Nutzer:innen decken stereotype Fehlklassifikation auf",
+      "description": "Über die frei verfügbare API zeigen Nutzer:innen, dass Genderify Berufe stereotyp einordnet: 'scientist' wird zu 95,7 Prozent als männlich gewertet, das Hinzufügen des Titels 'Dr.' kippt die Einschätzung von 'Meghan Smith' von 60,4 Prozent weiblich auf 75,9 Prozent männlich. Damit werden Frauen in Fachrollen systematisch falsch klassifiziert.",
+      "title_de": "Nutzer:innen decken stereotype Fehlklassifikation auf",
+      "description_de": "Über die frei verfügbare API zeigen Nutzer:innen, dass Genderify Berufe stereotyp einordnet: 'scientist' wird zu 95,7 Prozent als männlich gewertet, das Hinzufügen des Titels 'Dr.' kippt die Einschätzung von 'Meghan Smith' von 60,4 Prozent weiblich auf 75,9 Prozent männlich. Damit werden Frauen in Fachrollen systematisch falsch klassifiziert.",
+      "title_en": "Users expose stereotyped misclassification",
+      "description_en": "Via the freely available API, users show that Genderify classifies professions in stereotyped ways: 'scientist' is scored 95.7 percent male, and adding the title 'Dr.' flips the assessment of 'Meghan Smith' from 60.4 percent female to 75.9 percent male. Women in professional roles are thus systematically misclassified.",
+      "sources": [
+        "https://ipsnews.net/business/2020/07/29/service-that-uses-ai-to-identify-gender-based-on-names-looks-incredibly-biased/"
+      ]
+    },
+    {
+      "date": "2020-07-30",
+      "phase": "consequences",
+      "title": "Anbieter schaltet Dienst nach Shitstorm binnen Stunden ab",
+      "description": "Nach einem Shitstorm auf Twitter stellt der Anbieter Genderify den Dienst innerhalb weniger Stunden ein. Gründerin Arevik Gasparyan räumt Bias und das Ausblenden nicht-binärer Menschen ein, ohne konkrete Lösungen zu nennen. Der Fall wird zum häufig zitierten Lehrbeispiel für schlecht durchdachte, diskriminierende KI-Produkte.",
+      "title_de": "Anbieter schaltet Dienst nach Shitstorm binnen Stunden ab",
+      "description_de": "Nach einem Shitstorm auf Twitter stellt der Anbieter Genderify den Dienst innerhalb weniger Stunden ein. Gründerin Arevik Gasparyan räumt Bias und das Ausblenden nicht-binärer Menschen ein, ohne konkrete Lösungen zu nennen. Der Fall wird zum häufig zitierten Lehrbeispiel für schlecht durchdachte, diskriminierende KI-Produkte.",
+      "title_en": "Operator shuts the service down within hours after backlash",
+      "description_en": "After a backlash on Twitter, the operator shuts Genderify down within hours. Founder Arevik Gasparyan acknowledges bias and the erasure of non-binary people without offering concrete solutions. The case becomes a widely cited textbook example of a poorly conceived, discriminatory AI product.",
+      "sources": [
+        "https://syncedreview.com/2020/07/30/ai-powered-genderify-platform-shut-down-after-bias-based-backlash/",
+        "https://incidentdatabase.ai/cite/115/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2020/07/30/genderify_shuts_down",

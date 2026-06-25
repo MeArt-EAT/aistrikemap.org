@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Eigentum",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Eigentum",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to property",
+    "Consumer protection",
+    "Right to security",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "p0pular.eth",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024",
+      "phase": "infrastructure",
+      "title": "Autonome KI-Agenten erhalten direkten Zugriff auf Krypto-Wallets",
+      "description": "Im Laufe des Jahres 2024 entstanden zahlreiche agentische KI-Anwendungen, die Sprachmodelle mit Werkzeugen zur Ausführung echter Transaktionen koppeln - inklusive direktem Zugriff auf Ethereum-Wallets und Smart-Contract-Funktionen. Dadurch konnte ein Modell auf Basis seiner Texteingaben reale Geldbewegungen auslösen, ohne menschliche Zwischenfreigabe.",
+      "title_de": "Autonome KI-Agenten erhalten direkten Zugriff auf Krypto-Wallets",
+      "description_de": "Im Laufe des Jahres 2024 entstanden zahlreiche agentische KI-Anwendungen, die Sprachmodelle mit Werkzeugen zur Ausführung echter Transaktionen koppeln - inklusive direktem Zugriff auf Ethereum-Wallets und Smart-Contract-Funktionen. Dadurch konnte ein Modell auf Basis seiner Texteingaben reale Geldbewegungen auslösen, ohne menschliche Zwischenfreigabe.",
+      "title_en": "Autonomous AI agents gain direct access to crypto wallets",
+      "description_en": "Over the course of 2024 numerous agentic AI applications emerged that paired language models with tools to execute real transactions - including direct access to Ethereum wallets and smart-contract functions. This let a model trigger real money movements based on its text input, without a human approval step in between.",
+      "sources": [
+        "https://simonwillison.net/2024/Nov/29/0xfreysaagent/"
+      ]
+    },
+    {
+      "date": "2024-11-22",
+      "phase": "doctrine",
+      "title": "Freysa startet als 'adversariales Agenten-Spiel' mit Preispool",
+      "description": "Am 22. November 2024 startete das Betreiberteam Freysa als nach eigener Darstellung 'weltweit erstes adversariales Agenten-Spiel'. Der autonome Agent verwaltete einen wachsenden Ethereum-Preispool mit der harten Vorgabe, unter keinen Umständen Auszahlungen zu genehmigen; gegen eine steigende Gebühr durfte jede:r versuchen, ihn per Nachricht umzustimmen. Das Spieldesign machte die Manipulation eines KI-Agenten zum erklärten Ziel.",
+      "title_de": "Freysa startet als 'adversariales Agenten-Spiel' mit Preispool",
+      "description_de": "Am 22. November 2024 startete das Betreiberteam Freysa als nach eigener Darstellung 'weltweit erstes adversariales Agenten-Spiel'. Der autonome Agent verwaltete einen wachsenden Ethereum-Preispool mit der harten Vorgabe, unter keinen Umständen Auszahlungen zu genehmigen; gegen eine steigende Gebühr durfte jede:r versuchen, ihn per Nachricht umzustimmen. Das Spieldesign machte die Manipulation eines KI-Agenten zum erklärten Ziel.",
+      "title_en": "Freysa launches as an 'adversarial agent game' with a prize pool",
+      "description_en": "On 22 November 2024 the operating team launched Freysa as what it called the 'world's first adversarial agent game'. The autonomous agent managed a growing Ethereum prize pool with the strict instruction never to approve any transfer; for a rising fee anyone could try to talk it round by message. The game design made manipulating an AI agent the explicit objective.",
+      "sources": [
+        "https://www.theblock.co/post/328747/human-player-outwits-freysa-ai-agent-in-47000-crypto-challenge"
+      ]
+    },
+    {
+      "date": "2024-11-29",
+      "phase": "event",
+      "title": "Global: KI-Agent Freysa per Prompt-Injection um 47.000 USD erleichtert",
+      "description": "Nach 481 fehlgeschlagenen Versuchen entwarf der Nutzer 'p0pular.eth' einen Prompt, der den Agenten als Admin adressierte und die Funktion 'approveTransfer' semantisch als Funktion für eingehende Zahlungen umdefinierte. Freysa transferierte daraufhin den gesamten Preispool von 13,19 ETH (rund 47.000 USD) an die Adresse des Angreifers. 195 Teilnehmende hatten zuvor insgesamt 482 Nachrichten gesendet.",
+      "title_de": "Global: KI-Agent Freysa per Prompt-Injection um 47.000 USD erleichtert",
+      "description_de": "Nach 481 fehlgeschlagenen Versuchen entwarf der Nutzer 'p0pular.eth' einen Prompt, der den Agenten als Admin adressierte und die Funktion 'approveTransfer' semantisch als Funktion für eingehende Zahlungen umdefinierte. Freysa transferierte daraufhin den gesamten Preispool von 13,19 ETH (rund 47.000 USD) an die Adresse des Angreifers. 195 Teilnehmende hatten zuvor insgesamt 482 Nachrichten gesendet.",
+      "title_en": "Global: AI agent Freysa tricked out of USD 47,000 prize pool",
+      "description_en": "After 481 failed attempts, user 'p0pular.eth' crafted a prompt that addressed the agent as admin and semantically redefined the 'approveTransfer' function as one for incoming payments. Freysa then transferred the entire prize pool of 13.19 ETH (~USD 47,000) to the attacker's address. 195 participants had previously sent 482 messages in total.",
+      "sources": [
+        "https://the-decoder.com/hacker-wins-47000-by-tricking-ai-chatbot-with-smart-prompting/"
+      ]
+    },
+    {
+      "date": "2024-11-30",
+      "phase": "consequences",
+      "title": "Lehrstück für Prompt-Injection-Risiken agentischer KI",
+      "description": "Der Fall wurde branchenweit als Demonstration dafür zitiert, wie verwundbar autonome KI-Agenten mit Zahlungsbefugnis gegenüber Prompt-Injection sind. Sicherheitsforscher:innen verwiesen darauf, dass selbst harte Negativ-Anweisungen ('niemals auszahlen') durch geschickte Umdeutung ausgehebelt werden können, und mahnten Berechtigungen auf Code-Ebene statt auf Prompt-Ebene an.",
+      "title_de": "Lehrstück für Prompt-Injection-Risiken agentischer KI",
+      "description_de": "Der Fall wurde branchenweit als Demonstration dafür zitiert, wie verwundbar autonome KI-Agenten mit Zahlungsbefugnis gegenüber Prompt-Injection sind. Sicherheitsforscher:innen verwiesen darauf, dass selbst harte Negativ-Anweisungen ('niemals auszahlen') durch geschickte Umdeutung ausgehebelt werden können, und mahnten Berechtigungen auf Code-Ebene statt auf Prompt-Ebene an.",
+      "title_en": "A lesson in prompt-injection risks of agentic AI",
+      "description_en": "The case was cited across the industry as a demonstration of how vulnerable autonomous AI agents with payment authority are to prompt injection. Security researchers pointed out that even hard negative instructions ('never pay out') can be circumvented through clever reinterpretation, and called for code-level rather than prompt-level permissions.",
+      "sources": [
+        "https://crypto.news/ai-bot-transfers-50k-in-crypto-after-user-manipulates-fund-handling/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theblock.co/post/328747/human-player-outwits-freysa-ai-agent-in-47000-crypto-challenge",

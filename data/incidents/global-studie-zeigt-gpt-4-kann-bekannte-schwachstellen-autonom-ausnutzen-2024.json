@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datensicherheit",
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz kritischer Infrastruktur"
+  ],
+  "asm:affectedRights_de": [
+    "Datensicherheit",
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz kritischer Infrastruktur"
+  ],
+  "asm:affectedRights_en": [
+    "Data security",
+    "Data protection",
+    "Privacy",
+    "Protection of critical infrastructure"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI (GPT-4 studied)",
@@ -48,7 +63,59 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "1999",
+      "phase": "infrastructure",
+      "title": "MITRE startet das CVE-Programm zur öffentlichen Schwachstellen-Katalogisierung",
+      "description": "1999 stellten die MITRE-Forscher Dave Mann und Steve Christey das CVE-Konzept vor, aus dem das Common-Vulnerabilities-and-Exposures-Programm entstand. Zusammen mit der späteren National Vulnerability Database (NVD) des NIST entstand so ein öffentlich zugänglicher Katalog mit detaillierten Beschreibungen bekannter Sicherheitslücken. Genau diese standardisierten CVE-Beschreibungen liefern einem KI-Agenten später die nötige Anleitung zum Ausnutzen.",
+      "title_de": "MITRE startet das CVE-Programm zur öffentlichen Schwachstellen-Katalogisierung",
+      "description_de": "1999 stellten die MITRE-Forscher Dave Mann und Steve Christey das CVE-Konzept vor, aus dem das Common-Vulnerabilities-and-Exposures-Programm entstand. Zusammen mit der späteren National Vulnerability Database (NVD) des NIST entstand so ein öffentlich zugänglicher Katalog mit detaillierten Beschreibungen bekannter Sicherheitslücken. Genau diese standardisierten CVE-Beschreibungen liefern einem KI-Agenten später die nötige Anleitung zum Ausnutzen.",
+      "title_en": "MITRE launches the CVE programme for public vulnerability cataloguing",
+      "description_en": "In 1999 MITRE researchers Dave Mann and Steve Christey introduced the CVE concept, from which the Common Vulnerabilities and Exposures programme grew. Together with NIST's later National Vulnerability Database (NVD), this created a publicly accessible catalogue of detailed descriptions of known security flaws. It is exactly these standardised CVE descriptions that later give an AI agent the guidance needed to exploit them.",
+      "sources": [
+        "https://nvd.nist.gov/general/cve-process"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "doctrine",
+      "title": "OpenAI gibt GPT-4 mit Tool- und Code-Fähigkeiten frei",
+      "description": "Mit der Veröffentlichung von GPT-4 im März 2023 und den anschließenden Funktionen für Werkzeugnutzung (Function Calling, Code-Interpreter, Web-Zugriff) wurde es möglich, das Modell als autonom handelnden Agenten einzusetzen, der mehrstufige Aufgaben plant und externe Werkzeuge bedient. Diese Agenten-Architektur ist die Voraussetzung dafür, dass ein Sprachmodell eine Schwachstelle nicht nur beschreibt, sondern aktiv ausnutzt.",
+      "title_de": "OpenAI gibt GPT-4 mit Tool- und Code-Fähigkeiten frei",
+      "description_de": "Mit der Veröffentlichung von GPT-4 im März 2023 und den anschließenden Funktionen für Werkzeugnutzung (Function Calling, Code-Interpreter, Web-Zugriff) wurde es möglich, das Modell als autonom handelnden Agenten einzusetzen, der mehrstufige Aufgaben plant und externe Werkzeuge bedient. Diese Agenten-Architektur ist die Voraussetzung dafür, dass ein Sprachmodell eine Schwachstelle nicht nur beschreibt, sondern aktiv ausnutzt.",
+      "title_en": "OpenAI releases GPT-4 with tool and code capabilities",
+      "description_en": "With the release of GPT-4 in March 2023 and the subsequent tool-use features (function calling, code interpreter, web access), it became possible to deploy the model as an autonomously acting agent that plans multi-step tasks and operates external tools. This agent architecture is the precondition for a language model not only to describe a vulnerability but to actively exploit it.",
+      "sources": []
+    },
+    {
+      "date": "2024-04",
+      "phase": "event",
+      "title": "Studie zeigt: GPT-4 kann bekannte Schwachstellen autonom ausnutzen",
+      "description": "Vier Informatiker:innen der University of Illinois Urbana-Champaign (Fang, Bindu, Gupta, Kang) zeigten 2024, dass OpenAIs GPT-4 als autonomer Agent bekannte (One-Day-)Sicherheitslücken ausnutzen kann, wenn ihm die zugehörige CVE-Beschreibung vorliegt - in 87 Prozent der getesteten 15 Schwachstellen, während andere Modelle bei 0 Prozent lagen. Die Tests liefen in einer abgeschotteten Umgebung ohne realen Schaden; ohne CVE-Beschreibung sank die Erfolgsquote auf 7 Prozent.",
+      "title_de": "Studie zeigt: GPT-4 kann bekannte Schwachstellen autonom ausnutzen",
+      "description_de": "Vier Informatiker:innen der University of Illinois Urbana-Champaign (Fang, Bindu, Gupta, Kang) zeigten 2024, dass OpenAIs GPT-4 als autonomer Agent bekannte (One-Day-)Sicherheitslücken ausnutzen kann, wenn ihm die zugehörige CVE-Beschreibung vorliegt - in 87 Prozent der getesteten 15 Schwachstellen, während andere Modelle bei 0 Prozent lagen. Die Tests liefen in einer abgeschotteten Umgebung ohne realen Schaden; ohne CVE-Beschreibung sank die Erfolgsquote auf 7 Prozent.",
+      "title_en": "Study shows GPT-4 can autonomously exploit known vulnerabilities",
+      "description_en": "In 2024 four computer scientists from the University of Illinois Urbana-Champaign (Fang, Bindu, Gupta, Kang) showed that OpenAI's GPT-4, acting as an autonomous agent, can exploit known (one-day) security vulnerabilities when given the corresponding CVE description - in 87 percent of the 15 vulnerabilities tested, while other models scored 0 percent. The tests ran in a sandboxed environment with no real harm; without the CVE description the success rate dropped to 7 percent.",
+      "sources": [
+        "https://arxiv.org/abs/2404.08144",
+        "https://www.theregister.com/2024/04/17/gpt4_can_exploit_real_vulnerabilities/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "Debatte über KI-gestützte Angriffe und Folgearbeit zu Zero-Days",
+      "description": "Die Studie verstärkte die Sorge, dass leistungsfähige Sprachmodelle die Einstiegshürde für Cyberangriffe senken, weil sie die Lücke zwischen öffentlicher CVE-Meldung und gepatchtem System automatisiert ausnutzen können. Sie nährte Forderungen nach besseren Schutzmaßnahmen und schnellerem Patchen. Dasselbe Team zeigte in einer Folgearbeit, dass Teams aus LLM-Agenten sogar bislang unbekannte Zero-Day-Schwachstellen ausnutzen können.",
+      "title_de": "Debatte über KI-gestützte Angriffe und Folgearbeit zu Zero-Days",
+      "description_de": "Die Studie verstärkte die Sorge, dass leistungsfähige Sprachmodelle die Einstiegshürde für Cyberangriffe senken, weil sie die Lücke zwischen öffentlicher CVE-Meldung und gepatchtem System automatisiert ausnutzen können. Sie nährte Forderungen nach besseren Schutzmaßnahmen und schnellerem Patchen. Dasselbe Team zeigte in einer Folgearbeit, dass Teams aus LLM-Agenten sogar bislang unbekannte Zero-Day-Schwachstellen ausnutzen können.",
+      "title_en": "Debate about AI-assisted attacks and follow-up work on zero-days",
+      "description_en": "The study amplified concerns that capable language models lower the barrier to entry for cyberattacks, because they can automatically exploit the gap between a public CVE disclosure and a patched system. It fuelled calls for better safeguards and faster patching. In follow-up work the same team showed that teams of LLM agents can even exploit previously unknown zero-day vulnerabilities.",
+      "sources": [
+        "https://arxiv.org/abs/2406.01637"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2024/04/17/gpt4_can_exploit_real_vulnerabilities/",

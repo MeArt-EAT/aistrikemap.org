@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Recht auf Wasser",
+    "Recht auf eine gesunde Umwelt",
+    "Transparenz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Recht auf Wasser",
+    "Recht auf eine gesunde Umwelt",
+    "Transparenz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Right to water",
+    "Right to a healthy environment",
+    "Transparency"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -41,7 +56,59 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "OpenAI startet ChatGPT auf wassergekühlten Rechenzentren",
+      "description": "Im November 2022 veröffentlichte OpenAI ChatGPT, das auf großen GPU-Clustern in Microsoft-Azure-Rechenzentren läuft. Diese Anlagen kühlen ihre Server unter anderem mit Verdunstungskühltürmen, die Frischwasser verbrauchen, und beziehen Strom aus Kraftwerken, die ihrerseits Wasser zur Kühlung nutzen. Damit entstand die physische Grundlage des spätestens 2024 breit diskutierten Wasser-Fußabdrucks.",
+      "title_de": "OpenAI startet ChatGPT auf wassergekühlten Rechenzentren",
+      "description_de": "Im November 2022 veröffentlichte OpenAI ChatGPT, das auf großen GPU-Clustern in Microsoft-Azure-Rechenzentren läuft. Diese Anlagen kühlen ihre Server unter anderem mit Verdunstungskühltürmen, die Frischwasser verbrauchen, und beziehen Strom aus Kraftwerken, die ihrerseits Wasser zur Kühlung nutzen. Damit entstand die physische Grundlage des spätestens 2024 breit diskutierten Wasser-Fußabdrucks.",
+      "title_en": "OpenAI launches ChatGPT on water-cooled data centres",
+      "description_en": "In November 2022 OpenAI released ChatGPT, which runs on large GPU clusters in Microsoft Azure data centres. These facilities cool their servers partly with evaporative cooling towers that consume fresh water, and draw electricity from power plants that in turn use water for cooling. This created the physical basis of the water footprint that was widely debated by 2024 at the latest.",
+      "sources": []
+    },
+    {
+      "date": "2023-04",
+      "phase": "doctrine",
+      "title": "Forschungsteam beziffert erstmals den versteckten Wasser-Fußabdruck von KI",
+      "description": "Im April 2023 veröffentlichten Pengfei Li, Shaolei Ren und Kolleg:innen die Studie 'Making AI Less Thirsty', die den bis dahin kaum beachteten Wasserverbrauch von KI-Modellen methodisch erfasst. Das Team schätzte unter anderem, dass das Training von GPT-3 direkt rund 700.000 Liter Frischwasser verdunstete und 20 bis 50 ChatGPT-Anfragen etwa einen halben Liter Wasser kosten. Die Studie lieferte die Methodik für die spätere Flaschen-pro-E-Mail-Rechnung.",
+      "title_de": "Forschungsteam beziffert erstmals den versteckten Wasser-Fußabdruck von KI",
+      "description_de": "Im April 2023 veröffentlichten Pengfei Li, Shaolei Ren und Kolleg:innen die Studie 'Making AI Less Thirsty', die den bis dahin kaum beachteten Wasserverbrauch von KI-Modellen methodisch erfasst. Das Team schätzte unter anderem, dass das Training von GPT-3 direkt rund 700.000 Liter Frischwasser verdunstete und 20 bis 50 ChatGPT-Anfragen etwa einen halben Liter Wasser kosten. Die Studie lieferte die Methodik für die spätere Flaschen-pro-E-Mail-Rechnung.",
+      "title_en": "Research team first quantifies AI's hidden water footprint",
+      "description_en": "In April 2023 Pengfei Li, Shaolei Ren and colleagues published the study 'Making AI Less Thirsty', methodically measuring the previously little-noticed water consumption of AI models. Among other things, the team estimated that training GPT-3 directly evaporated around 700,000 litres of fresh water and that 20 to 50 ChatGPT queries cost roughly half a litre. The study provided the methodology for the later bottle-per-email calculation.",
+      "sources": [
+        "https://arxiv.org/abs/2304.03271",
+        "https://news.ucr.edu/articles/2023/04/28/ai-programs-consume-large-volumes-scarce-water"
+      ]
+    },
+    {
+      "date": "2024-09-18",
+      "phase": "event",
+      "title": "Washington Post: Eine ChatGPT-E-Mail entspricht rund einer Flasche Wasser",
+      "description": "Die Washington Post berichtete am 18. September 2024 gemeinsam mit dem Forscher Shaolei Ren (UC Riverside), dass eine mit ChatGPT (GPT-4) verfasste 100-Wort-E-Mail im Lebenszyklus rund 519 Milliliter Wasser benötigt - ein Wert, der Strom-, Kühl- und Hardware-Anteile zusammenfasst. Unabhängige Schätzungen, die nur die Datacenter-Kühlung zählen, kommen auf 1,5 bis 4 Milliliter.",
+      "title_de": "Washington Post: Eine ChatGPT-E-Mail entspricht rund einer Flasche Wasser",
+      "description_de": "Die Washington Post berichtete am 18. September 2024 gemeinsam mit dem Forscher Shaolei Ren (UC Riverside), dass eine mit ChatGPT (GPT-4) verfasste 100-Wort-E-Mail im Lebenszyklus rund 519 Milliliter Wasser benötigt - ein Wert, der Strom-, Kühl- und Hardware-Anteile zusammenfasst. Unabhängige Schätzungen, die nur die Datacenter-Kühlung zählen, kommen auf 1,5 bis 4 Milliliter.",
+      "title_en": "Washington Post: one ChatGPT email equals about a bottle of water",
+      "description_en": "On 18 September 2024 the Washington Post, working with researcher Shaolei Ren (UC Riverside), reported that a 100-word email written with ChatGPT (GPT-4) consumes roughly 519 millilitres of water on a lifecycle basis - a figure bundling electricity, cooling and hardware shares. Independent estimates that only count data-centre cooling put the figure at 1.5 to 4 millilitres.",
+      "sources": [
+        "https://css.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Debatte über Wasserstress in Rechenzentrumsregionen",
+      "description": "Der Bericht löste eine breite öffentliche Debatte über den Ressourcenverbrauch generativer KI aus und verstärkte den Druck auf Betreiber, Wasser- und Energiedaten ihrer Rechenzentren offenzulegen. Kritisiert wurde zugleich die Spannbreite der Schätzungen: Je nach Systemgrenze reichen die Werte von wenigen Millilitern bis zu einer halben Flasche, was die Forderung nach einheitlichen Mess- und Offenlegungsstandards verstärkte.",
+      "title_de": "Debatte über Wasserstress in Rechenzentrumsregionen",
+      "description_de": "Der Bericht löste eine breite öffentliche Debatte über den Ressourcenverbrauch generativer KI aus und verstärkte den Druck auf Betreiber, Wasser- und Energiedaten ihrer Rechenzentren offenzulegen. Kritisiert wurde zugleich die Spannbreite der Schätzungen: Je nach Systemgrenze reichen die Werte von wenigen Millilitern bis zu einer halben Flasche, was die Forderung nach einheitlichen Mess- und Offenlegungsstandards verstärkte.",
+      "title_en": "Debate about water stress in data-centre regions",
+      "description_en": "The story triggered a broad public debate about the resource consumption of generative AI and increased pressure on operators to disclose the water and energy data of their data centres. At the same time the wide range of estimates was criticised: depending on the system boundary, values span from a few millilitres to half a bottle, reinforcing calls for uniform measurement and disclosure standards.",
+      "sources": [
+        "https://www.techrepublic.com/article/generative-ai-data-center-water-use/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://css.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/",
