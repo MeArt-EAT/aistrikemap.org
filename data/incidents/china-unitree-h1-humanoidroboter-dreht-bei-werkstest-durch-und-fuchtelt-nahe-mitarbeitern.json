@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Körperliche Unversehrtheit",
+    "Recht auf Gesundheit",
+    "Recht auf sichere Arbeitsbedingungen"
+  ],
+  "asm:affectedRights_de": [
+    "Körperliche Unversehrtheit",
+    "Recht auf Gesundheit",
+    "Recht auf sichere Arbeitsbedingungen"
+  ],
+  "asm:affectedRights_en": [
+    "Physical integrity",
+    "Right to health",
+    "Right to safe working conditions"
+  ],
   "asm:actors": [
     {
       "name": "Unitree Robotics",
@@ -41,7 +53,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-08",
+      "phase": "infrastructure",
+      "title": "Unitree bringt den kraftvollen Humanoidroboter H1 auf den Markt",
+      "description": "Das 2016 in Hangzhou gegründete Unternehmen Unitree Robotics stellt 2023 seinen ersten humanoiden Roboter H1 vor. Mit 1,80 m Höhe, rund 47 kg Gewicht, hohem Gelenk-Drehmoment und einer Laufgeschwindigkeit von 3,3 m/s ist die Maschine ungewöhnlich kraftvoll und schnell. Genau diese Auslegung macht Fehlfunktionen in der Nähe von Menschen potenziell gefährlich.",
+      "title_de": "Unitree bringt den kraftvollen Humanoidroboter H1 auf den Markt",
+      "description_de": "Das 2016 in Hangzhou gegründete Unternehmen Unitree Robotics stellt 2023 seinen ersten humanoiden Roboter H1 vor. Mit 1,80 m Höhe, rund 47 kg Gewicht, hohem Gelenk-Drehmoment und einer Laufgeschwindigkeit von 3,3 m/s ist die Maschine ungewöhnlich kraftvoll und schnell. Genau diese Auslegung macht Fehlfunktionen in der Nähe von Menschen potenziell gefährlich.",
+      "title_en": "Unitree launches the powerful H1 humanoid robot",
+      "description_en": "Unitree Robotics, founded in Hangzhou in 2016, unveils its first humanoid robot, the H1, in 2023. At 1.80 m tall, around 47 kg, with high joint torque and a running speed of 3.3 m/s, the machine is unusually powerful and fast. It is precisely this design that makes malfunctions near humans potentially dangerous.",
+      "sources": [
+        "https://www.unitree.com/h1/"
+      ]
+    },
+    {
+      "date": "2025-04",
+      "phase": "doctrine",
+      "title": "Erprobung am Hebekran ohne ausreichende Absicherung gegen Fehlerschleifen",
+      "description": "Im Wettlauf um die schnelle Kommerzialisierung von Humanoiden werden Maschinen wie der H1 zur Erprobung an einem Hebekran aufgehängt getestet, mit Menschen in unmittelbarer Reichweite. Diese Test-Praxis berücksichtigt nicht ausreichend, dass die Stabilisierungs-Software die Zugkraft des Seils als dauerndes Fällen fehlinterpretieren kann. Eine harte Sicherheitsabsperrung zwischen Roboter und Personal fehlt.",
+      "title_de": "Erprobung am Hebekran ohne ausreichende Absicherung gegen Fehlerschleifen",
+      "description_de": "Im Wettlauf um die schnelle Kommerzialisierung von Humanoiden werden Maschinen wie der H1 zur Erprobung an einem Hebekran aufgehängt getestet, mit Menschen in unmittelbarer Reichweite. Diese Test-Praxis berücksichtigt nicht ausreichend, dass die Stabilisierungs-Software die Zugkraft des Seils als dauerndes Fällen fehlinterpretieren kann. Eine harte Sicherheitsabsperrung zwischen Roboter und Personal fehlt.",
+      "title_en": "Hoist-crane testing without adequate safeguards against feedback loops",
+      "description_en": "In the race to commercialise humanoids quickly, machines like the H1 are tested while suspended from a hoist crane, with people within immediate reach. This testing practice fails to adequately account for the fact that the stabilisation software can misread the tether's pull as continuous falling. A hard safety barrier between robot and staff is absent.",
+      "sources": [
+        "https://newatlas.com/ai-humanoids/humanoid-robot-nearly-injures-handlers-unitree/"
+      ]
+    },
+    {
+      "date": "2025-05-01",
+      "phase": "event",
+      "title": "Unitree-H1 dreht bei Werkstest durch und fuchtelt nahe Mitarbeitern",
+      "description": "Am 1. Mai 2025 dokumentiert ein virales CCTV-Video, wie ein an einem Hebekran befestigter Unitree H1 Humanoidroboter in einer chinesischen Testanlage außer Kontrolle gerät, wild mit Armen und Beinen schlägt, Geräte umstößt und die Mitarbeiter:innen zum Zurückweichen zwingt. Ein Techniker bringt den Roboter durch Anpassung der Aufhängungs-Struktur unter Kontrolle. Niemand wird schwer verletzt.",
+      "title_de": "Unitree-H1 dreht bei Werkstest durch und fuchtelt nahe Mitarbeitern",
+      "description_de": "Am 1. Mai 2025 dokumentiert ein virales CCTV-Video, wie ein an einem Hebekran befestigter Unitree H1 Humanoidroboter in einer chinesischen Testanlage außer Kontrolle gerät, wild mit Armen und Beinen schlägt, Geräte umstößt und die Mitarbeiter:innen zum Zurückweichen zwingt. Ein Techniker bringt den Roboter durch Anpassung der Aufhängungs-Struktur unter Kontrolle. Niemand wird schwer verletzt.",
+      "title_en": "Unitree H1 malfunctions during factory test, flails near workers",
+      "description_en": "On May 1, 2025, viral CCTV footage at a Chinese testing site shows a Unitree H1 humanoid robot, attached to a hoist crane, losing control, flailing its arms and legs, knocking over equipment, and forcing workers to back away. A technician regains control by adjusting the support rig. No one is seriously injured.",
+      "sources": [
+        "https://roboticsandautomationnews.com/2025/05/08/ai-robot-attacks-worker-viral-video-shows-unitree-humanoid-going-berserk/90524/"
+      ]
+    },
+    {
+      "date": "2025-05-08",
+      "phase": "consequences",
+      "title": "Virale Panik und Experten-Analyse weisen auf bekannte Fehlerschleife hin",
+      "description": "Das Video löst weltweit virale Panik aus und befeuert die Debatte um die Sicherheit von Humanoiden. Robotik-Fachleute ordnen den Vorfall ein: Es handelte sich nicht um aufkommende KI-Eigenständigkeit, sondern um eine bekannte Fehlerschleife. Die Sensoren deuteten die Zugkraft des Seils als Sturz, woraufhin die Software immer heftigere Korrekturbewegungen auslöste. Der Fall verstärkt Forderungen nach strengeren Test- und Sicherheitsstandards.",
+      "title_de": "Virale Panik und Experten-Analyse weisen auf bekannte Fehlerschleife hin",
+      "description_de": "Das Video löst weltweit virale Panik aus und befeuert die Debatte um die Sicherheit von Humanoiden. Robotik-Fachleute ordnen den Vorfall ein: Es handelte sich nicht um aufkommende KI-Eigenständigkeit, sondern um eine bekannte Fehlerschleife. Die Sensoren deuteten die Zugkraft des Seils als Sturz, woraufhin die Software immer heftigere Korrekturbewegungen auslöste. Der Fall verstärkt Forderungen nach strengeren Test- und Sicherheitsstandards.",
+      "title_en": "Viral panic and expert analysis point to a known feedback loop",
+      "description_en": "The video triggers viral panic worldwide and fuels the debate over humanoid safety. Robotics experts contextualise the incident: it was not emergent AI autonomy but a known failure loop. The sensors read the tether's pull as a fall, prompting the software to make increasingly violent corrective movements. The case strengthens calls for stricter testing and safety standards.",
+      "sources": [
+        "https://interestingengineering.com/culture/humanoid-robot-freaks-out-in-viral-video"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://roboticsandautomationnews.com/2025/05/08/ai-robot-attacks-worker-viral-video-shows-unitree-humanoid-going-berserk/90524/",

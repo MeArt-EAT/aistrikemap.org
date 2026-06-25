@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Consumer protection",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "DeepSeek Artificial Intelligence Co",
@@ -46,7 +58,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "OpenAI startet ChatGPT - das Web füllt sich mit GPT-Output",
+      "description": "Am 30. November 2022 veröffentlichte OpenAI ChatGPT, im März 2023 folgte GPT-4. Binnen Monaten erreichte der Chatbot hunderte Millionen Nutzer:innen, und enorme Mengen GPT-generierten Texts (Antworten, Foren-Posts, Blogs) landeten im offenen Web. Damit war eine der Hauptquellen entstanden, aus denen spätere Modelle ihre Trainingsdaten schöpfen.",
+      "title_de": "OpenAI startet ChatGPT - das Web füllt sich mit GPT-Output",
+      "description_de": "Am 30. November 2022 veröffentlichte OpenAI ChatGPT, im März 2023 folgte GPT-4. Binnen Monaten erreichte der Chatbot hunderte Millionen Nutzer:innen, und enorme Mengen GPT-generierten Texts (Antworten, Foren-Posts, Blogs) landeten im offenen Web. Damit war eine der Hauptquellen entstanden, aus denen spätere Modelle ihre Trainingsdaten schöpfen.",
+      "title_en": "OpenAI launches ChatGPT - the web fills with GPT output",
+      "description_en": "OpenAI released ChatGPT on 30 November 2022, followed by GPT-4 in March 2023. Within months the chatbot reached hundreds of millions of users, and vast amounts of GPT-generated text (answers, forum posts, blogs) ended up across the open web. This became one of the main sources from which later models draw their training data.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ChatGPT"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "doctrine",
+      "title": "DeepSeek entsteht als Spin-off mit Niedrigkosten-Trainingsansatz",
+      "description": "Am 17. Juli 2023 wurde DeepSeek aus dem KI-Labor des Quant-Hedgefonds High-Flyer (Hangzhou) ausgegründet, geführt von Liang Wenfeng. Das Geschäftsmodell setzt auf besonders kosteneffizientes Training großer Modelle, unter anderem mit großflächig aus dem Web gescrapten Texten. Solche Webdaten enthalten zwangsläufig große Mengen Output westlicher LLMs wie ChatGPT.",
+      "title_de": "DeepSeek entsteht als Spin-off mit Niedrigkosten-Trainingsansatz",
+      "description_de": "Am 17. Juli 2023 wurde DeepSeek aus dem KI-Labor des Quant-Hedgefonds High-Flyer (Hangzhou) ausgegründet, geführt von Liang Wenfeng. Das Geschäftsmodell setzt auf besonders kosteneffizientes Training großer Modelle, unter anderem mit großflächig aus dem Web gescrapten Texten. Solche Webdaten enthalten zwangsläufig große Mengen Output westlicher LLMs wie ChatGPT.",
+      "title_en": "DeepSeek is spun off with a low-cost training approach",
+      "description_en": "On 17 July 2023 DeepSeek was spun off from the AI lab of the Hangzhou quant hedge fund High-Flyer, led by Liang Wenfeng. Its business model relies on unusually cost-efficient training of large models, including text scraped at scale from the web. Such web data inevitably contains large amounts of output from Western LLMs such as ChatGPT.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/DeepSeek"
+      ]
+    },
+    {
+      "date": "2024-12",
+      "phase": "event",
+      "title": "DeepSeek V3 gibt sich auf Nachfrage als ChatGPT aus",
+      "description": "Nach der Veröffentlichung von DeepSeek V3 im Dezember 2024 stellten Nutzer:innen fest, dass das Modell sich auf Nachfrage als ChatGPT bzw. GPT-4 (Veröffentlichungsdatum 2023) ausgab, GPT-spezifische Witze reproduzierte und die OpenAI-API empfahl. TechCrunch und TechRadar dokumentierten den Befund. Wahrscheinlichste Ursache: große Mengen ChatGPT-Output im Trainingsmaterial.",
+      "title_de": "DeepSeek V3 gibt sich auf Nachfrage als ChatGPT aus",
+      "description_de": "Nach der Veröffentlichung von DeepSeek V3 im Dezember 2024 stellten Nutzer:innen fest, dass das Modell sich auf Nachfrage als ChatGPT bzw. GPT-4 (Veröffentlichungsdatum 2023) ausgab, GPT-spezifische Witze reproduzierte und die OpenAI-API empfahl. TechCrunch und TechRadar dokumentierten den Befund. Wahrscheinlichste Ursache: große Mengen ChatGPT-Output im Trainingsmaterial.",
+      "title_en": "DeepSeek V3 identifies itself as ChatGPT when asked",
+      "description_en": "After DeepSeek V3 was released in December 2024, users found that the model identified itself as ChatGPT or GPT-4 (released 2023) when asked, reproduced GPT-specific jokes and recommended the OpenAI API. TechCrunch and TechRadar documented the finding. The likely cause: large amounts of ChatGPT output in the training data.",
+      "sources": [
+        "https://techcrunch.com/2024/12/27/why-deepseeks-new-ai-model-thinks-its-chatgpt/"
+      ]
+    },
+    {
+      "date": "2024-12-30",
+      "phase": "consequences",
+      "title": "Debatte über Data-Provenance und Distillation verschärft sich",
+      "description": "Der Fall heizte die Debatte über Herkunft von Trainingsdaten und mögliche Knowledge-Distillation aus fremden Modellen an. Fachleute werteten das Verhalten als Indiz, dass chinesische Modelle indirekt auf westlichen LLM-Outputs trainieren. Das Thema wurde Anfang 2025 mit dem Erscheinen von DeepSeek R1 zu einem zentralen Streitpunkt zwischen OpenAI und DeepSeek.",
+      "title_de": "Debatte über Data-Provenance und Distillation verschärft sich",
+      "description_de": "Der Fall heizte die Debatte über Herkunft von Trainingsdaten und mögliche Knowledge-Distillation aus fremden Modellen an. Fachleute werteten das Verhalten als Indiz, dass chinesische Modelle indirekt auf westlichen LLM-Outputs trainieren. Das Thema wurde Anfang 2025 mit dem Erscheinen von DeepSeek R1 zu einem zentralen Streitpunkt zwischen OpenAI und DeepSeek.",
+      "title_en": "Debate over data provenance and distillation intensifies",
+      "description_en": "The case fuelled the debate over the provenance of training data and possible knowledge distillation from other models. Experts read the behaviour as evidence that Chinese models train indirectly on Western LLM outputs. The issue became a central point of contention between OpenAI and DeepSeek in early 2025 with the arrival of DeepSeek R1.",
+      "sources": [
+        "https://www.techradar.com/computing/artificial-intelligence/deepseek-just-insisted-its-chatgpt-and-i-think-thats-all-the-proof-i-need"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/12/27/why-deepseeks-new-ai-model-thinks-its-chatgpt/",
