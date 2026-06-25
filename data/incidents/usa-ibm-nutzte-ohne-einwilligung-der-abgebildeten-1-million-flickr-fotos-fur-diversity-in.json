@@ -8,8 +8,8 @@
   "name": "USA: IBM nutzte ohne Einwilligung der Abgebildeten 1 Million Flickr-Fotos für 'Diversity in Faces'-Trainingsdatensatz",
   "name_de": "USA: IBM nutzte ohne Einwilligung der Abgebildeten 1 Million Flickr-Fotos für 'Diversity in Faces'-Trainingsdatensatz",
   "name_en": "USA: IBM used 1 million Flickr photos without subjects' consent for 'Diversity in Faces' training dataset",
-  "description": "IBM Research veroffentlichte im Januar 2019 den 'Diversity in Faces'-Datensatz mit etwa einer Million annotierten Gesichtsbildern, die aus einer Creative-Commons-Sammlung auf Flickr gezogen wurden — ohne Einwilligung der abgebildeten Personen und ohne praktikable Opt-out-Möglichkeit. NBC News deckte am 12. Marz 2019 auf, dass Fotograf:innen und Fotografierte ihre Bilder kaum aus dem Datensatz entfernen lassen konnten. IBM argumentierte mit der CC-Lizenz; Kritiker:innen wiesen darauf hin, dass diese die biometrische Verwertung nicht abdeckt.",
-  "description_de": "IBM Research veroffentlichte im Januar 2019 den 'Diversity in Faces'-Datensatz mit etwa einer Million annotierten Gesichtsbildern, die aus einer Creative-Commons-Sammlung auf Flickr gezogen wurden — ohne Einwilligung der abgebildeten Personen und ohne praktikable Opt-out-Möglichkeit. NBC News deckte am 12. Marz 2019 auf, dass Fotograf:innen und Fotografierte ihre Bilder kaum aus dem Datensatz entfernen lassen konnten. IBM argumentierte mit der CC-Lizenz; Kritiker:innen wiesen darauf hin, dass diese die biometrische Verwertung nicht abdeckt.",
+  "description": "IBM Research veröffentlichte im Januar 2019 den 'Diversity in Faces'-Datensatz mit etwa einer Million annotierten Gesichtsbildern, die aus einer Creative-Commons-Sammlung auf Flickr gezogen wurden — ohne Einwilligung der abgebildeten Personen und ohne praktikable Opt-out-Möglichkeit. NBC News deckte am 12. März 2019 auf, dass Fotograf:innen und Fotografierte ihre Bilder kaum aus dem Datensatz entfernen lassen konnten. IBM argumentierte mit der CC-Lizenz; Kritiker:innen wiesen darauf hin, dass diese die biometrische Verwertung nicht abdeckt.",
+  "description_de": "IBM Research veröffentlichte im Januar 2019 den 'Diversity in Faces'-Datensatz mit etwa einer Million annotierten Gesichtsbildern, die aus einer Creative-Commons-Sammlung auf Flickr gezogen wurden — ohne Einwilligung der abgebildeten Personen und ohne praktikable Opt-out-Möglichkeit. NBC News deckte am 12. März 2019 auf, dass Fotograf:innen und Fotografierte ihre Bilder kaum aus dem Datensatz entfernen lassen konnten. IBM argumentierte mit der CC-Lizenz; Kritiker:innen wiesen darauf hin, dass diese die biometrische Verwertung nicht abdeckt.",
   "description_en": "IBM Research published the 'Diversity in Faces' dataset in January 2019 with about one million annotated face images pulled from a Creative Commons-licensed Flickr collection — without consent from the people depicted and without a workable opt-out path. NBC News revealed on March 12, 2019 that photographers and subjects struggled to have their images removed. IBM cited the CC licence; critics noted that this licence does not cover biometric processing.",
   "startDate": "2019-03-12",
   "location": {
@@ -26,9 +26,27 @@
     "facial-recognition",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Schutz biometrischer Daten",
+    "Recht auf informationelle Selbstbestimmung",
+    "Recht am eigenen Bild",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Schutz biometrischer Daten",
+    "Recht auf informationelle Selbstbestimmung",
+    "Recht am eigenen Bild",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Protection of biometric data",
+    "Right to informational self-determination",
+    "Right to one's own image",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "IBM Research",
@@ -47,7 +65,86 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Yahoo veröffentlicht den YFCC100M-Datensatz mit 100 Millionen Flickr-Bildern",
+      "description": "Yahoo, damals Eigentümer von Flickr, gibt 2014 den Datensatz YFCC100M frei: rund 100 Millionen Fotos und Videos unter Creative-Commons-Lizenzen, gedacht als offene Forschungsressource. Die Bilder sind nach Lizenz nutzbar, doch die abgebildeten Personen haben einer biometrischen Auswertung nie zugestimmt.",
+      "title_de": "Yahoo veröffentlicht den YFCC100M-Datensatz mit 100 Millionen Flickr-Bildern",
+      "description_de": "Yahoo, damals Eigentümer von Flickr, gibt 2014 den Datensatz YFCC100M frei: rund 100 Millionen Fotos und Videos unter Creative-Commons-Lizenzen, gedacht als offene Forschungsressource. Die Bilder sind nach Lizenz nutzbar, doch die abgebildeten Personen haben einer biometrischen Auswertung nie zugestimmt.",
+      "title_en": "Yahoo releases the YFCC100M dataset of 100 million Flickr images",
+      "description_en": "In 2014 Yahoo, then owner of Flickr, releases the YFCC100M dataset: about 100 million Creative Commons-licensed photos and videos meant as an open research resource. The images are usable under their licence, but the people depicted never consented to biometric analysis.",
+      "sources": [
+        "https://arxiv.org/abs/1503.01817"
+      ]
+    },
+    {
+      "date": "2018",
+      "phase": "doctrine",
+      "title": "IBM macht 'faire' Gesichtserkennung zum Forschungsziel",
+      "description": "Nach Studien wie 'Gender Shades', die starke Verzerrungen kommerzieller Gesichtserkennung bei dunkler Haut und Frauen belegten, erklärt IBM Research die Reduktion von Bias zum Ziel. Die Doktrin: ein 'vielfältigerer' Trainingsdatensatz solle Diskriminierung mindern - ohne die Einwilligung der abgebildeten Personen einzuholen.",
+      "title_de": "IBM macht 'faire' Gesichtserkennung zum Forschungsziel",
+      "description_de": "Nach Studien wie 'Gender Shades', die starke Verzerrungen kommerzieller Gesichtserkennung bei dunkler Haut und Frauen belegten, erklärt IBM Research die Reduktion von Bias zum Ziel. Die Doktrin: ein 'vielfältigerer' Trainingsdatensatz solle Diskriminierung mindern - ohne die Einwilligung der abgebildeten Personen einzuholen.",
+      "title_en": "IBM makes 'fair' facial recognition a research goal",
+      "description_en": "After studies such as 'Gender Shades' documented strong bias in commercial facial recognition against darker skin and women, IBM Research declares bias reduction a goal. The doctrine: a 'more diverse' training set should reduce discrimination - without obtaining consent from the people depicted.",
+      "sources": [
+        "https://research.ibm.com/blog/diversity-in-faces"
+      ]
+    },
+    {
+      "date": "2019-01-29",
+      "phase": "event",
+      "title": "IBM veröffentlicht 'Diversity in Faces' mit 1 Million Gesichtern",
+      "description": "Am 29. Januar 2019 stellt IBM Research den Datensatz 'Diversity in Faces' vor: rund 1 Million aus YFCC100M gezogene Gesichtsbilder, annotiert mit fast 200 Merkmalen wie Schädelmaßen, Hautton sowie geschätztem Alter und Geschlecht. Der Datensatz wird Forschenden weltweit angeboten.",
+      "title_de": "IBM veröffentlicht 'Diversity in Faces' mit 1 Million Gesichtern",
+      "description_de": "Am 29. Januar 2019 stellt IBM Research den Datensatz 'Diversity in Faces' vor: rund 1 Million aus YFCC100M gezogene Gesichtsbilder, annotiert mit fast 200 Merkmalen wie Schädelmaßen, Hautton sowie geschätztem Alter und Geschlecht. Der Datensatz wird Forschenden weltweit angeboten.",
+      "title_en": "IBM publishes 'Diversity in Faces' with 1 million faces",
+      "description_en": "On 29 January 2019 IBM Research unveils the 'Diversity in Faces' dataset: about 1 million face images drawn from YFCC100M, annotated with nearly 200 features such as craniofacial measurements, skin tone and estimated age and gender. The dataset is offered to researchers worldwide.",
+      "sources": [
+        "https://research.ibm.com/blog/diversity-in-faces"
+      ]
+    },
+    {
+      "date": "2019-03-12",
+      "phase": "event",
+      "title": "NBC News deckt fehlende Einwilligung auf",
+      "description": "Am 12. März 2019 berichtet NBC News, dass IBM die Gesichter ohne Wissen oder Einwilligung der Abgebildeten verwertet hat. Betroffene wie der Fotograf Georg Holzer erfahren erst durch die Recherche, dass Hunderte ihrer Bilder im Datensatz stecken; ein Opt-out erweist sich als praktisch unmöglich.",
+      "title_de": "NBC News deckt fehlende Einwilligung auf",
+      "description_de": "Am 12. März 2019 berichtet NBC News, dass IBM die Gesichter ohne Wissen oder Einwilligung der Abgebildeten verwertet hat. Betroffene wie der Fotograf Georg Holzer erfahren erst durch die Recherche, dass Hunderte ihrer Bilder im Datensatz stecken; ein Opt-out erweist sich als praktisch unmöglich.",
+      "title_en": "NBC News exposes the missing consent",
+      "description_en": "On 12 March 2019 NBC News reports that IBM processed the faces without the knowledge or consent of those depicted. People such as photographer Georg Holzer learn only through the investigation that hundreds of their images are in the dataset; opting out proves practically impossible.",
+      "sources": [
+        "https://www.nbcnews.com/tech/internet/facial-recognition-s-dirty-little-secret-millions-online-photos-scraped-n981921"
+      ]
+    },
+    {
+      "date": "2020-01",
+      "phase": "consequences",
+      "title": "Sammelklagen nach dem Illinois-Biometriegesetz BIPA",
+      "description": "Anfang 2020 verklagen die Illinois-Bürger Steven Vance und Tim Janecyk IBM wegen Verstößen gegen den Biometric Information Privacy Act (BIPA). Sie machen geltend, ihre Gesichts-Geometrie sei ohne Einwilligung aus dem DiF-Datensatz erfasst und an Dritte wie Amazon, Microsoft und Google weitergegeben worden.",
+      "title_de": "Sammelklagen nach dem Illinois-Biometriegesetz BIPA",
+      "description_de": "Anfang 2020 verklagen die Illinois-Bürger Steven Vance und Tim Janecyk IBM wegen Verstößen gegen den Biometric Information Privacy Act (BIPA). Sie machen geltend, ihre Gesichts-Geometrie sei ohne Einwilligung aus dem DiF-Datensatz erfasst und an Dritte wie Amazon, Microsoft und Google weitergegeben worden.",
+      "title_en": "Class actions under the Illinois biometric law BIPA",
+      "description_en": "In early 2020 Illinois residents Steven Vance and Tim Janecyk sue IBM for violations of the Biometric Information Privacy Act (BIPA). They allege their facial geometry was collected without consent from the DiF dataset and shared with third parties such as Amazon, Microsoft and Google.",
+      "sources": [
+        "https://techcrunch.com/2020/07/15/facial-recognition-lawsuit-vance-janecyk-bipa/"
+      ]
+    },
+    {
+      "date": "2020-06",
+      "phase": "consequences",
+      "title": "IBM zieht sich aus der Gesichtserkennung zurück",
+      "description": "Im Juni 2020 kündigt IBM-Chef Arvind Krishna an, dass IBM allgemeine Gesichtserkennung und -analyse nicht mehr anbietet, und verweist auf Risiken für Bürgerrechte und mögliche Massenüberwachung. Der DiF-Fall gilt als prägendes Beispiel dafür, wie Trainingsdaten ohne Einwilligung zur biometrischen Verwertung wurden.",
+      "title_de": "IBM zieht sich aus der Gesichtserkennung zurück",
+      "description_de": "Im Juni 2020 kündigt IBM-Chef Arvind Krishna an, dass IBM allgemeine Gesichtserkennung und -analyse nicht mehr anbietet, und verweist auf Risiken für Bürgerrechte und mögliche Massenüberwachung. Der DiF-Fall gilt als prägendes Beispiel dafür, wie Trainingsdaten ohne Einwilligung zur biometrischen Verwertung wurden.",
+      "title_en": "IBM withdraws from facial recognition",
+      "description_en": "In June 2020 IBM CEO Arvind Krishna announces that IBM will no longer offer general-purpose facial recognition and analysis, citing risks to civil rights and possible mass surveillance. The DiF case stands as a defining example of how training data without consent became biometric processing.",
+      "sources": [
+        "https://exposing.ai/ibm_dif/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.nbcnews.com/tech/internet/facial-recognition-s-dirty-little-secret-millions-online-photos-scraped-n981921",

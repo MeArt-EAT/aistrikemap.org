@@ -31,9 +31,24 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Körperliche Unversehrtheit",
+    "Recht auf Gleichbehandlung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Körperliche Unversehrtheit",
+    "Recht auf Gleichbehandlung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Physical integrity",
+    "Right to equal treatment"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -47,7 +62,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-02",
+      "phase": "infrastructure",
+      "title": "Google öffnet die Cloud Vision API für alle Entwickler",
+      "description": "Google veröffentlicht die öffentliche Beta der Cloud Vision API. Der Dienst erkennt tausende Objektkategorien und liefert über Label-Detection das dominante Objekt eines Bildes. Entwickler können Bilderkennung ohne eigenes Modelltraining einbinden; dieselbe Technik treibt die Bildersuche in Google Photos an.",
+      "title_de": "Google öffnet die Cloud Vision API für alle Entwickler",
+      "description_de": "Google veröffentlicht die öffentliche Beta der Cloud Vision API. Der Dienst erkennt tausende Objektkategorien und liefert über Label-Detection das dominante Objekt eines Bildes. Entwickler können Bilderkennung ohne eigenes Modelltraining einbinden; dieselbe Technik treibt die Bildersuche in Google Photos an.",
+      "title_en": "Google opens the Cloud Vision API to all developers",
+      "description_en": "Google releases the public beta of its Cloud Vision API. The service recognises thousands of object categories and returns the dominant object of an image via label detection. Developers can embed image recognition without training their own models; the same technology powers image search in Google Photos.",
+      "sources": [
+        "https://techcrunch.com/2016/02/18/google-opens-its-cloud-vision-api-to-all-developers/"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Computer-Vision-Modelle in Sicherheits- und Überwachungskontexten",
+      "description": "Waffenerkennungs-Tools auf Basis solcher Modelle werden in den USA in Schulen, Konzerthallen, Wohnanlagen und Supermärkten eingesetzt, in Europa auch von Polizeibehörden. In diesem Verwertungskontext werden vortrainierte Vision-Dienste als sicherheitsrelevante Infrastruktur genutzt, ohne dass die Anbieter ihre Modelle systematisch auf rassistische Verzerrungen prüfen.",
+      "title_de": "Computer-Vision-Modelle in Sicherheits- und Überwachungskontexten",
+      "description_de": "Waffenerkennungs-Tools auf Basis solcher Modelle werden in den USA in Schulen, Konzerthallen, Wohnanlagen und Supermärkten eingesetzt, in Europa auch von Polizeibehörden. In diesem Verwertungskontext werden vortrainierte Vision-Dienste als sicherheitsrelevante Infrastruktur genutzt, ohne dass die Anbieter ihre Modelle systematisch auf rassistische Verzerrungen prüfen.",
+      "title_en": "Computer-vision models in security and surveillance contexts",
+      "description_en": "Weapon-recognition tools based on such models are deployed in the US in schools, concert halls, apartment complexes and supermarkets, and in Europe also by police forces. In this deployment context, pre-trained vision services are used as safety-critical infrastructure without providers systematically auditing their models for racial bias.",
+      "sources": [
+        "https://algorithmwatch.org/en/google-vision-racism/"
+      ]
+    },
+    {
+      "date": "2020-04-06",
+      "phase": "event",
+      "title": "AlgorithmWatch zeigt rassistische Fehlklassifikation als 'Waffe'",
+      "description": "AlgorithmWatch demonstriert, dass Vision Cloud eine dunkelhäutige Hand mit einem Infrarot-Thermometer als 'Waffe' (gun) klassifiziert, während dieselbe Geste mit heller Haut als 'elektronisches Gerät' erkannt wird. Ein lachsfarbener Überlagerungs-Filter über der Hand genügt, damit der Dienst stattdessen 'Monokular' ausgibt - ein direkter Hinweis auf die Hautfarbe als Auslöser.",
+      "title_de": "AlgorithmWatch zeigt rassistische Fehlklassifikation als 'Waffe'",
+      "description_de": "AlgorithmWatch demonstriert, dass Vision Cloud eine dunkelhäutige Hand mit einem Infrarot-Thermometer als 'Waffe' (gun) klassifiziert, während dieselbe Geste mit heller Haut als 'elektronisches Gerät' erkannt wird. Ein lachsfarbener Überlagerungs-Filter über der Hand genügt, damit der Dienst stattdessen 'Monokular' ausgibt - ein direkter Hinweis auf die Hautfarbe als Auslöser.",
+      "title_en": "AlgorithmWatch shows racist misclassification as a 'gun'",
+      "description_en": "AlgorithmWatch demonstrates that Vision Cloud labels a dark-skinned hand holding an infrared thermometer as a 'gun', while the same gesture with light skin is read as an 'electronic device'. A salmon-coloured overlay on the hand is enough for the service to output 'monocular' instead - a direct indication that skin colour is the trigger.",
+      "sources": [
+        "https://algorithmwatch.org/en/google-vision-racism/"
+      ]
+    },
+    {
+      "date": "2020-04-06",
+      "phase": "consequences",
+      "title": "Google entschuldigt sich und entfernt das 'gun'-Label",
+      "description": "Tracy Frey, Direktorin für Produktstrategie bei Google, nennt das Ergebnis 'inakzeptabel' und erklärt, der Zusammenhang mit Rassismus müsse anerkannt werden; man bedauere jeden dadurch verursachten Schaden zutiefst. Google passt den Algorithmus an, sodass das 'gun'-Label ab dem 6. April nicht mehr zurückgegeben wird. Der Fall wird zum Beleg für Hautfarben-Bias in kommerzieller Bilderkennung.",
+      "title_de": "Google entschuldigt sich und entfernt das 'gun'-Label",
+      "description_de": "Tracy Frey, Direktorin für Produktstrategie bei Google, nennt das Ergebnis 'inakzeptabel' und erklärt, der Zusammenhang mit Rassismus müsse anerkannt werden; man bedauere jeden dadurch verursachten Schaden zutiefst. Google passt den Algorithmus an, sodass das 'gun'-Label ab dem 6. April nicht mehr zurückgegeben wird. Der Fall wird zum Beleg für Hautfarben-Bias in kommerzieller Bilderkennung.",
+      "title_en": "Google apologises and removes the 'gun' label",
+      "description_en": "Tracy Frey, Google's Director of Product Strategy, calls the result 'unacceptable' and says the connection with racism must be recognised; the company is deeply sorry for any harm caused. Google adjusts the algorithm so that the 'gun' label is no longer returned as of 6 April. The case becomes evidence of skin-colour bias in commercial image recognition.",
+      "sources": [
+        "https://www.business-humanrights.org/en/latest-news/algorithmwatch-identifies-racial-bias-in-google-vision-cloud-algorithm-google-apologises/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://algorithmwatch.org/en/google-vision-racism/",

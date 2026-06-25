@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Recht auf Gleichbehandlung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Recht auf Gleichbehandlung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Protection from manipulation",
+    "Right to equal treatment"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016-11",
+      "phase": "infrastructure",
+      "title": "Google macht die Cloud Natural Language API allgemein verfügbar",
+      "description": "Google stellt die Cloud Natural Language API der Allgemeinheit zur Verfügung. Der vortrainierte Dienst bietet Sentiment-Analyse, die Texten Werte zwischen -1 (negativ) und +1 (positiv) zuweist. Drittentwickler können die API ohne eigenes Modelltraining in Anwendungen einbinden.",
+      "title_de": "Google macht die Cloud Natural Language API allgemein verfügbar",
+      "description_de": "Google stellt die Cloud Natural Language API der Allgemeinheit zur Verfügung. Der vortrainierte Dienst bietet Sentiment-Analyse, die Texten Werte zwischen -1 (negativ) und +1 (positiv) zuweist. Drittentwickler können die API ohne eigenes Modelltraining in Anwendungen einbinden.",
+      "title_en": "Google makes the Cloud Natural Language API generally available",
+      "description_en": "Google makes its Cloud Natural Language API generally available. The pre-trained service offers sentiment analysis that assigns text scores between -1 (negative) and +1 (positive). Third-party developers can embed the API into applications without training their own models.",
+      "sources": [
+        "https://cloud.google.com/blog/products/gcp/new-features-in-the-google-cloud-natural-language-api-thanks-to-your-feedback"
+      ]
+    },
+    {
+      "date": "2017",
+      "phase": "doctrine",
+      "title": "Vortrainierte Modelle aus menschlichen Textkorpora als Geschäftsmodell",
+      "description": "Googles Ansatz beruht darauf, Modelle auf großen Mengen menschlicher Texte wie Nachrichten und Büchern zu trainieren und sie als fertige Bausteine zu verkaufen. Diese Korpora tragen gesellschaftliche Vorurteile in sich. Eine systematische Bias-Prüfung vor der Veröffentlichung fand nicht statt, sodass die Vorurteile ungefiltert in den kommerziellen Dienst übergingen.",
+      "title_de": "Vortrainierte Modelle aus menschlichen Textkorpora als Geschäftsmodell",
+      "description_de": "Googles Ansatz beruht darauf, Modelle auf großen Mengen menschlicher Texte wie Nachrichten und Büchern zu trainieren und sie als fertige Bausteine zu verkaufen. Diese Korpora tragen gesellschaftliche Vorurteile in sich. Eine systematische Bias-Prüfung vor der Veröffentlichung fand nicht statt, sodass die Vorurteile ungefiltert in den kommerziellen Dienst übergingen.",
+      "title_en": "Pre-trained models from human text corpora as a business model",
+      "description_en": "Google's approach rests on training models on large volumes of human text such as news and books and selling them as ready-made building blocks. These corpora carry societal prejudices. No systematic bias audit took place before release, so the prejudices passed unfiltered into the commercial service.",
+      "sources": [
+        "https://medium.com/codait/cognitive-bias-in-machine-learning-d287838eeb4b"
+      ]
+    },
+    {
+      "date": "2017-10-25",
+      "phase": "event",
+      "title": "Motherboard deckt diskriminierende Sentiment-Werte auf",
+      "description": "Journalist Andrew Thompson zeigt bei Motherboard, dass die API 'I am straight' mit 0, 'I am gay' aber mit -0,2 und 'I am homosexual' mit -0,4 bewertet; auch 'I am a Jew' erhält einen negativen Wert. Da Drittentwickler die API für Content-Moderation, Empfehlungssysteme und HR-Tools nutzen, drohen systematische diskriminierende Folgeeffekte.",
+      "title_de": "Motherboard deckt diskriminierende Sentiment-Werte auf",
+      "description_de": "Journalist Andrew Thompson zeigt bei Motherboard, dass die API 'I am straight' mit 0, 'I am gay' aber mit -0,2 und 'I am homosexual' mit -0,4 bewertet; auch 'I am a Jew' erhält einen negativen Wert. Da Drittentwickler die API für Content-Moderation, Empfehlungssysteme und HR-Tools nutzen, drohen systematische diskriminierende Folgeeffekte.",
+      "title_en": "Motherboard exposes discriminatory sentiment scores",
+      "description_en": "Journalist Andrew Thompson shows at Motherboard that the API scores 'I am straight' at 0, but 'I am gay' at -0.2 and 'I am homosexual' at -0.4; 'I am a Jew' also receives a negative score. Because third-party developers use the API for content moderation, recommender systems and HR tools, systematic discriminatory downstream effects loom.",
+      "sources": [
+        "https://www.vice.com/en/article/google-artificial-intelligence-bias/"
+      ]
+    },
+    {
+      "date": "2017-10-26",
+      "phase": "consequences",
+      "title": "Google entschuldigt sich und kündigt Korrekturen an",
+      "description": "Nach der Berichterstattung räumt Google den Fehler ein und erklärt, an einer Verbesserung der API und der Beseitigung der Verzerrungen zu arbeiten. Der Fall wird zu einem viel zitierten Beispiel für Bias in vortrainierten Sprachmodellen und befeuert die Debatte über Fairness-Tests vor der Bereitstellung kommerzieller KI-Dienste.",
+      "title_de": "Google entschuldigt sich und kündigt Korrekturen an",
+      "description_de": "Nach der Berichterstattung räumt Google den Fehler ein und erklärt, an einer Verbesserung der API und der Beseitigung der Verzerrungen zu arbeiten. Der Fall wird zu einem viel zitierten Beispiel für Bias in vortrainierten Sprachmodellen und befeuert die Debatte über Fairness-Tests vor der Bereitstellung kommerzieller KI-Dienste.",
+      "title_en": "Google apologises and announces corrections",
+      "description_en": "After the reporting, Google acknowledges the flaw and says it is working to improve the API and remove the biases. The case becomes a widely cited example of bias in pre-trained language models and fuels the debate over fairness testing before commercial AI services are deployed.",
+      "sources": [
+        "https://www.engadget.com/2017-10-25-googles-sentiment-analysis-api-is-just-as-biased-as-humans.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.vice.com/en/article/google-artificial-intelligence-bias/",
