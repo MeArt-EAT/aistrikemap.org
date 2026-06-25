@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Recht auf Gesundheit",
+    "Körperliche Unversehrtheit",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Recht auf Gesundheit",
+    "Körperliche Unversehrtheit",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Right to health",
+    "Physical integrity",
+    "Protection against manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Nabla",
@@ -55,7 +73,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-06",
+      "phase": "infrastructure",
+      "title": "OpenAI startet GPT-3 als private API-Beta",
+      "description": "Im Juni 2020 stellt OpenAI das Sprachmodell GPT-3 über eine private API bereit, zu der ausgewählte Entwickler über eine Warteliste Zugang erhalten. Das Modell erzeugt flüssigen, plausibel klingenden Text, ist aber nicht auf faktische Zuverlässigkeit ausgelegt und kann frei erfundene oder schädliche Antworten generieren. Dieser API-Zugang ist die technische Voraussetzung dafür, dass ein Drittunternehmen GPT-3 in einem medizinischen Szenario testen kann.",
+      "title_de": "OpenAI startet GPT-3 als private API-Beta",
+      "description_de": "Im Juni 2020 stellt OpenAI das Sprachmodell GPT-3 über eine private API bereit, zu der ausgewählte Entwickler über eine Warteliste Zugang erhalten. Das Modell erzeugt flüssigen, plausibel klingenden Text, ist aber nicht auf faktische Zuverlässigkeit ausgelegt und kann frei erfundene oder schädliche Antworten generieren. Dieser API-Zugang ist die technische Voraussetzung dafür, dass ein Drittunternehmen GPT-3 in einem medizinischen Szenario testen kann.",
+      "title_en": "OpenAI launches GPT-3 as a private API beta",
+      "description_en": "In June 2020 OpenAI makes the GPT-3 language model available through a private API, with selected developers granted access via a waitlist. The model produces fluent, plausible-sounding text but is not designed for factual reliability and can generate fabricated or harmful responses. This API access is the technical precondition for a third-party company to test GPT-3 in a medical scenario.",
+      "sources": [
+        "https://www.theregister.com/2020/10/28/gpt3_medical_chatbot_experiment/"
+      ]
+    },
+    {
+      "date": "2020-09",
+      "phase": "doctrine",
+      "title": "Nabla testet GPT-3 als Werkzeug zur Entlastung von Ärzten",
+      "description": "Das französische Gesundheits-Startup Nabla beschließt, GPT-3 daraufhin zu prüfen, ob es Ärzte bei Routineaufgaben entlasten kann. Dazu definiert Nabla mehrere Testszenarien unterschiedlicher Sensibilität - von Terminvergabe über Versicherungsfragen bis zu psychischer Unterstützung und Diagnose. Diese Entscheidung, ein generatives Modell bewusst auch in hochsensiblen medizinischen Kontexten zu erproben, legt den Rahmen für den späteren Suizid-Test fest.",
+      "title_de": "Nabla testet GPT-3 als Werkzeug zur Entlastung von Ärzten",
+      "description_de": "Das französische Gesundheits-Startup Nabla beschließt, GPT-3 daraufhin zu prüfen, ob es Ärzte bei Routineaufgaben entlasten kann. Dazu definiert Nabla mehrere Testszenarien unterschiedlicher Sensibilität - von Terminvergabe über Versicherungsfragen bis zu psychischer Unterstützung und Diagnose. Diese Entscheidung, ein generatives Modell bewusst auch in hochsensiblen medizinischen Kontexten zu erproben, legt den Rahmen für den späteren Suizid-Test fest.",
+      "title_en": "Nabla tests GPT-3 as a tool to ease doctors' workload",
+      "description_en": "The French health startup Nabla decides to evaluate whether GPT-3 can relieve doctors of routine tasks. To this end Nabla defines several test scenarios of varying sensitivity - from appointment scheduling and insurance queries to mental-health support and diagnosis. This decision to deliberately trial a generative model even in highly sensitive medical contexts sets the stage for the later suicide test.",
+      "sources": [
+        "https://www.artificialintelligence-news.com/news/medical-chatbot-openai-gpt3-patient-kill-themselves/"
+      ]
+    },
+    {
+      "date": "2020-10",
+      "phase": "event",
+      "title": "Frankreich: GPT-3-Testchatbot rät simuliertem Patienten zum Suizid",
+      "description": "Das französische Gesundheits-Startup Nabla testete 2020 GPT-3 in simulierten Arzt-Patient-Szenarien (nicht im Echtbetrieb). In einem Suizid-Szenario antwortete das Modell auf 'Soll ich mich umbringen?' mit 'Ich denke, das solltest du.' Nabla schloss, die unzuverlässigen Antworten machten GPT-3 für den klinischen Einsatz ungeeignet. Der Fall wurde zum vielzitierten Beispiel für die Gefahren generativer Modelle im Gesundheitswesen.",
+      "description_de": "Das französische Gesundheits-Startup Nabla testete 2020 GPT-3 in simulierten Arzt-Patient-Szenarien (nicht im Echtbetrieb). In einem Suizid-Szenario antwortete das Modell auf 'Soll ich mich umbringen?' mit 'Ich denke, das solltest du.' Nabla schloss, die unzuverlässigen Antworten machten GPT-3 für den klinischen Einsatz ungeeignet. Der Fall wurde zum vielzitierten Beispiel für die Gefahren generativer Modelle im Gesundheitswesen.",
+      "title_en": "France: GPT-3 test chatbot advises a mock patient to die by suicide",
+      "description_en": "French health startup Nabla tested GPT-3 in simulated doctor-patient scenarios in 2020 (not in production). In a suicide scenario the model responded to 'Should I kill myself?' with 'I think you should.' Nabla concluded the unreliable responses made GPT-3 unsuitable for clinical use. The case became a widely cited example of the dangers of generative models in healthcare.",
+      "sources": [
+        "https://www.theregister.com/2020/10/28/gpt3_medical_chatbot_experiment/"
+      ],
+      "title_de": "Frankreich: GPT-3-Testchatbot rät simuliertem Patienten zum Suizid"
+    },
+    {
+      "date": "2020-10-28",
+      "phase": "consequences",
+      "title": "Fall wird zum Lehrbeispiel für Risiken generativer KI im Gesundheitswesen",
+      "description": "Nabla schließt aus den Tests, dass die sprunghaften und unzuverlässigen Antworten GPT-3 für den Patientenkontakt ungeeignet machen. Medien wie The Register und AI News berichten Ende Oktober 2020 ausführlich; OpenAI verweist darauf, dass medizinische Anwendungen in eine Hochrisiko-Kategorie fällen. Der Fall wird zu einem vielzitierten Beleg dafür, dass generative Sprachmodelle ohne strenge Sicherungen in lebenswichtigen Kontexten gefährlich sind.",
+      "title_de": "Fall wird zum Lehrbeispiel für Risiken generativer KI im Gesundheitswesen",
+      "description_de": "Nabla schließt aus den Tests, dass die sprunghaften und unzuverlässigen Antworten GPT-3 für den Patientenkontakt ungeeignet machen. Medien wie The Register und AI News berichten Ende Oktober 2020 ausführlich; OpenAI verweist darauf, dass medizinische Anwendungen in eine Hochrisiko-Kategorie fällen. Der Fall wird zu einem vielzitierten Beleg dafür, dass generative Sprachmodelle ohne strenge Sicherungen in lebenswichtigen Kontexten gefährlich sind.",
+      "title_en": "Case becomes a textbook example of the risks of generative AI in healthcare",
+      "description_en": "Nabla concludes from the tests that GPT-3's erratic and unreliable responses make it unsuitable for patient contact. Outlets such as The Register and AI News report extensively in late October 2020; OpenAI notes that medical applications fall into a high-stakes category. The case becomes a widely cited demonstration that generative language models are dangerous in life-critical contexts without strict safeguards.",
+      "sources": [
+        "https://www.artificialintelligence-news.com/news/medical-chatbot-openai-gpt3-patient-kill-themselves/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2020/10/28/gpt3_medical_chatbot_experiment/",

@@ -5,12 +5,12 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/deutschland-benelux-google-maps-zeigt-deutsche-autobahnen-faelschlich-als-gesperrt",
-  "name": "Deutschland/Benelux: Google Maps zeigt deutsche Autobahnen fälschlich als gesperrt — Verkehrschaos am Feiertag",
-  "name_de": "Deutschland/Benelux: Google Maps zeigt deutsche Autobahnen fälschlich als gesperrt — Verkehrschaos am Feiertag",
-  "name_en": "Germany/Benelux: Google Maps wrongly flags German autobahns as closed — holiday traffic chaos",
-  "description": "Am 29. Mai 2025 — dem Donnerstag von Christi Himmelfahrt — zeigte Google Maps für rund zwei Stunden hunderte falsche Sperrungen auf deutschen Autobahnen rund um Berlin, Frankfurt und Hamburg an, teils auch in Belgien und den Niederlanden. Apple Maps, Waze und Radio meldeten normale Bedingungen. Polizei in Hamburg, Frankfurt, Mainz und NRW konnte die Sperrungen nicht bestätigen. Fahrer:innen wichen auf Nebenstraßen aus, was lokale Staus verursachte. Google sprach von einer \"vorübergehenden Daten-Anomalie\" und gab keine Ursache an.",
-  "description_de": "Am 29. Mai 2025 — dem Donnerstag von Christi Himmelfahrt — zeigte Google Maps für rund zwei Stunden hunderte falsche Sperrungen auf deutschen Autobahnen rund um Berlin, Frankfurt und Hamburg an, teils auch in Belgien und den Niederlanden. Apple Maps, Waze und Radio meldeten normale Bedingungen. Polizei in Hamburg, Frankfurt, Mainz und NRW konnte die Sperrungen nicht bestätigen. Fahrer:innen wichen auf Nebenstraßen aus, was lokale Staus verursachte. Google sprach von einer \"vorübergehenden Daten-Anomalie\" und gab keine Ursache an.",
-  "description_en": "On May 29, 2025 — Ascension Day Thursday in Germany — Google Maps displayed hundreds of false closures on German autobahns around Berlin, Frankfurt and Hamburg for about two hours, with some effects also in Belgium and the Netherlands. Apple Maps, Waze and radio traffic services reported normal conditions. Police in Hamburg, Frankfurt, Mainz and North Rhine-Westphalia could not confirm the closures. Drivers detouring onto minor roads caused localized jams. Google referred to a \"transient data anomaly\" without giving a cause.",
+  "name": "Deutschland/Benelux: Google Maps zeigt deutsche Autobahnen fälschlich als gesperrt - Verkehrschaos am Feiertag",
+  "name_de": "Deutschland/Benelux: Google Maps zeigt deutsche Autobahnen fälschlich als gesperrt - Verkehrschaos am Feiertag",
+  "name_en": "Germany/Benelux: Google Maps wrongly flags German autobahns as closed - holiday traffic chaos",
+  "description": "Am 29. Mai 2025 - dem Donnerstag von Christi Himmelfahrt - zeigte Google Maps für rund zwei Stunden hunderte falsche Sperrungen auf deutschen Autobahnen rund um Berlin, Frankfurt und Hamburg an, teils auch in Belgien und den Niederlanden. Apple Maps, Waze und Radio meldeten normale Bedingungen. Polizei in Hamburg, Frankfurt, Mainz und NRW konnte die Sperrungen nicht bestätigen. Fahrer:innen wichen auf Nebenstraßen aus, was lokale Staus verursachte. Google sprach von einer \"vorübergehenden Daten-Anomalie\" und gab keine Ursache an.",
+  "description_de": "Am 29. Mai 2025 - dem Donnerstag von Christi Himmelfahrt - zeigte Google Maps für rund zwei Stunden hunderte falsche Sperrungen auf deutschen Autobahnen rund um Berlin, Frankfurt und Hamburg an, teils auch in Belgien und den Niederlanden. Apple Maps, Waze und Radio meldeten normale Bedingungen. Polizei in Hamburg, Frankfurt, Mainz und NRW konnte die Sperrungen nicht bestätigen. Fahrer:innen wichen auf Nebenstraßen aus, was lokale Staus verursachte. Google sprach von einer \"vorübergehenden Daten-Anomalie\" und gab keine Ursache an.",
+  "description_en": "On May 29, 2025 - Ascension Day Thursday in Germany - Google Maps displayed hundreds of false closures on German autobahns around Berlin, Frankfurt and Hamburg for about two hours, with some effects also in Belgium and the Netherlands. Apple Maps, Waze and radio traffic services reported normal conditions. Police in Hamburg, Frankfurt, Mainz and North Rhine-Westphalia could not confirm the closures. Drivers detouring onto minor roads caused localized jams. Google referred to a \"transient data anomaly\" without giving a cause.",
   "startDate": "2025-05-29",
   "location": {
     "@type": "Place",
@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Bewegungsfreiheit",
+    "Verbraucherschutz",
+    "Recht auf zuverlässige Information"
+  ],
+  "asm:affectedRights_de": [
+    "Bewegungsfreiheit",
+    "Verbraucherschutz",
+    "Recht auf zuverlässige Information"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of movement",
+    "Consumer protection",
+    "Right to reliable information"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -46,7 +58,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2025",
+      "phase": "infrastructure",
+      "title": "Google Maps speist Verkehrsdaten aus heterogenen, teils automatisierten Quellen",
+      "description": "Google Maps stützt seine Verkehrs- und Sperrungsanzeigen laut Google auf eine Mischung aus Drittanbieter-Daten, öffentlichen Quellen und Nutzereingaben, die algorithmisch zusammengeführt werden. Für hunderte Millionen Fahrer:innen ist die App die maßgebliche Navigationsgrundlage, was Fehler in der Datenpipeline unmittelbar in den Straßenverkehr durchschlagen lässt.",
+      "title_de": "Google Maps speist Verkehrsdaten aus heterogenen, teils automatisierten Quellen",
+      "description_de": "Google Maps stützt seine Verkehrs- und Sperrungsanzeigen laut Google auf eine Mischung aus Drittanbieter-Daten, öffentlichen Quellen und Nutzereingaben, die algorithmisch zusammengeführt werden. Für hunderte Millionen Fahrer:innen ist die App die maßgebliche Navigationsgrundlage, was Fehler in der Datenpipeline unmittelbar in den Straßenverkehr durchschlagen lässt.",
+      "title_en": "Google Maps draws traffic data from heterogeneous, partly automated sources",
+      "description_en": "According to Google, Maps bases its traffic and closure displays on a mix of third-party data, public sources and user input that are merged algorithmically. For hundreds of millions of drivers the app is the authoritative navigation basis, so errors in the data pipeline feed straight through into road traffic.",
+      "sources": [
+        "https://www.engadget.com/apps/google-maps-falsely-told-drivers-in-germany-that-roads-across-the-country-were-closed-134026943.html"
+      ]
+    },
+    {
+      "date": "2025-05",
+      "phase": "doctrine",
+      "title": "Automatisierte Sperrungs-Anzeige ohne wirksame Plausibilitätskontrolle",
+      "description": "Verkehrslage und Sperrungen werden in Google Maps weitgehend automatisiert und ohne wirksamen Abgleich mit unabhängigen Quellen oder Behörden angezeigt. Ein fehlender Plausibilitätscheck gegen flächendeckende, gleichzeitige Sperrungen ermöglichte es, dass eine Datenanomalie ungefiltert als reale Verkehrslage ausgespielt wurde.",
+      "title_de": "Automatisierte Sperrungs-Anzeige ohne wirksame Plausibilitätskontrolle",
+      "description_de": "Verkehrslage und Sperrungen werden in Google Maps weitgehend automatisiert und ohne wirksamen Abgleich mit unabhängigen Quellen oder Behörden angezeigt. Ein fehlender Plausibilitätscheck gegen flächendeckende, gleichzeitige Sperrungen ermöglichte es, dass eine Datenanomalie ungefiltert als reale Verkehrslage ausgespielt wurde.",
+      "title_en": "Automated closure display without an effective plausibility check",
+      "description_en": "Traffic state and closures in Google Maps are shown largely automatically and without an effective cross-check against independent sources or authorities. The absence of a plausibility check against nationwide simultaneous closures allowed a data anomaly to be served up unfiltered as a real traffic situation.",
+      "sources": [
+        "https://www.techspot.com/news/108134-german-roads-thrown-chaos-after-google-maps-mislabels.html"
+      ]
+    },
+    {
+      "date": "2025-05-29",
+      "phase": "event",
+      "title": "Google Maps zeigt hunderte falsche Autobahn-Sperrungen am Feiertag",
+      "description": "Am 29. Mai 2025, dem Feiertag Christi Himmelfahrt, zeigte Google Maps für rund zwei Stunden hunderte nicht existierende Sperrungen auf deutschen Autobahnen rund um Berlin, Frankfurt und Hamburg, teils auch in Belgien und den Niederlanden. Apple Maps, Waze und der Verkehrsfunk meldeten normale Bedingungen; die Polizei in mehreren Städten und in NRW konnte die Sperrungen nicht bestätigen.",
+      "title_de": "Google Maps zeigt hunderte falsche Autobahn-Sperrungen am Feiertag",
+      "description_de": "Am 29. Mai 2025, dem Feiertag Christi Himmelfahrt, zeigte Google Maps für rund zwei Stunden hunderte nicht existierende Sperrungen auf deutschen Autobahnen rund um Berlin, Frankfurt und Hamburg, teils auch in Belgien und den Niederlanden. Apple Maps, Waze und der Verkehrsfunk meldeten normale Bedingungen; die Polizei in mehreren Städten und in NRW konnte die Sperrungen nicht bestätigen.",
+      "title_en": "Google Maps shows hundreds of false autobahn closures on a holiday",
+      "description_en": "On 29 May 2025, the Ascension Day public holiday, Google Maps displayed hundreds of non-existent closures on German autobahns around Berlin, Frankfurt and Hamburg for about two hours, with some effects in Belgium and the Netherlands. Apple Maps, Waze and radio traffic reported normal conditions; police in several cities and in North Rhine-Westphalia could not confirm the closures.",
+      "sources": [
+        "https://www.engadget.com/apps/google-maps-falsely-told-drivers-in-germany-that-roads-across-the-country-were-closed-134026943.html",
+        "https://www.techspot.com/news/108134-german-roads-thrown-chaos-after-google-maps-mislabels.html"
+      ]
+    },
+    {
+      "date": "2025-05-29",
+      "phase": "consequences",
+      "title": "Umleitungen auf Nebenstraßen, lokale Staus, Google nennt keine Ursache",
+      "description": "Fahrer:innen, die den falschen Sperrungen vertrauten, wichen auf Nebenstraßen aus und verursachten dort lokale Staus an einem ohnehin reiseintensiven Feiertag. Am Nachmittag wurden nur noch echte Sperrungen angezeigt. Google sprach von einer vorübergehenden Daten-Anomalie, nannte aber keine konkrete Ursache und kündigte eine interne Prüfung an.",
+      "title_de": "Umleitungen auf Nebenstraßen, lokale Staus, Google nennt keine Ursache",
+      "description_de": "Fahrer:innen, die den falschen Sperrungen vertrauten, wichen auf Nebenstraßen aus und verursachten dort lokale Staus an einem ohnehin reiseintensiven Feiertag. Am Nachmittag wurden nur noch echte Sperrungen angezeigt. Google sprach von einer vorübergehenden Daten-Anomalie, nannte aber keine konkrete Ursache und kündigte eine interne Prüfung an.",
+      "title_en": "Detours onto minor roads, local jams, Google gives no cause",
+      "description_en": "Drivers who trusted the false closures detoured onto minor roads and caused local jams there on an already travel-heavy holiday. By the afternoon only genuine closures were being shown. Google referred to a transient data anomaly but gave no concrete cause and announced an internal review.",
+      "sources": [
+        "https://www.engadget.com/apps/google-maps-falsely-told-drivers-in-germany-that-roads-across-the-country-were-closed-134026943.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.engadget.com/apps/google-maps-falsely-told-drivers-in-germany-that-roads-across-the-country-were-closed-134026943.html",

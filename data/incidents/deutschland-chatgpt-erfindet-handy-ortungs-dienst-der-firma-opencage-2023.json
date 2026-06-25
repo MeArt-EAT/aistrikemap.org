@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Privatsphäre",
+    "unternehmerische Freiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Privatsphäre",
+    "unternehmerische Freiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Privacy",
+    "Freedom to conduct a business"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -53,7 +68,59 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-04-19",
+      "phase": "infrastructure",
+      "title": "Falsches Gerücht: OpenCage stellte klar, keine Handy-Ortung anzubieten",
+      "description": "Schon vor ChatGPT kursierten YouTube-Tutorials, die behaupteten, mit der Geocoding-API von OpenCage lasse sich der Standort eines Handys allein anhand der Nummer bestimmen. Am 19. April 2022 stellte OpenCage in einem Blog-Beitrag klar, dass es einen solchen Dienst nicht gibt. Dieses Falsch-Gerücht wurde Teil der Trainings- und Webdaten, aus denen Sprachmodelle ihr Wissen ziehen.",
+      "title_de": "Falsches Gerücht: OpenCage stellte klar, keine Handy-Ortung anzubieten",
+      "description_de": "Schon vor ChatGPT kursierten YouTube-Tutorials, die behaupteten, mit der Geocoding-API von OpenCage lasse sich der Standort eines Handys allein anhand der Nummer bestimmen. Am 19. April 2022 stellte OpenCage in einem Blog-Beitrag klar, dass es einen solchen Dienst nicht gibt. Dieses Falsch-Gerücht wurde Teil der Trainings- und Webdaten, aus denen Sprachmodelle ihr Wissen ziehen.",
+      "title_en": "False rumour: OpenCage clarified it offers no phone tracking",
+      "description_en": "Even before ChatGPT, YouTube tutorials claimed that OpenCage's geocoding API could locate a mobile phone from its number alone. On 19 April 2022 OpenCage clarified in a blog post that no such service exists. This false rumour became part of the training and web data from which language models draw their knowledge.",
+      "sources": [
+        "https://blog.opencagedata.com/post/we-can-not-convert-a-phone-number-into-a-location-sorry"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "phase": "doctrine",
+      "title": "OpenAI veröffentlicht ChatGPT als frei zugängliches Massenprodukt",
+      "description": "OpenAI bringt ChatGPT Ende November 2022 auf den Markt und macht das generative Sprachmodell binnen Wochen zum Massenwerkzeug. Das Geschäftsmodell setzt auf flüssige, autoritativ klingende Antworten, ohne dass das Modell zwischen belegtem Wissen und plausibel erfundenen Aussagen (Halluzinationen) unterscheidet. Konkrete Code-Beispiele werden ungeprüft mitgeliefert.",
+      "title_de": "OpenAI veröffentlicht ChatGPT als frei zugängliches Massenprodukt",
+      "description_de": "OpenAI bringt ChatGPT Ende November 2022 auf den Markt und macht das generative Sprachmodell binnen Wochen zum Massenwerkzeug. Das Geschäftsmodell setzt auf flüssige, autoritativ klingende Antworten, ohne dass das Modell zwischen belegtem Wissen und plausibel erfundenen Aussagen (Halluzinationen) unterscheidet. Konkrete Code-Beispiele werden ungeprüft mitgeliefert.",
+      "title_en": "OpenAI releases ChatGPT as a freely accessible mass product",
+      "description_en": "OpenAI launches ChatGPT in late November 2022 and turns the generative language model into a mass tool within weeks. The business model relies on fluent, authoritative-sounding answers, while the model does not distinguish between documented knowledge and plausibly fabricated statements (hallucinations). Concrete code examples are supplied unchecked.",
+      "sources": []
+    },
+    {
+      "date": "2023-02",
+      "phase": "event",
+      "title": "ChatGPT erfindet einen Handy-Ortungs-Dienst der Firma OpenCage",
+      "description": "ChatGPT behauptet fälschlich, OpenCage biete eine API, mit der sich Mobiltelefone allein anhand der Nummer orten ließen, und liefert sogar passenden Python-Beispielcode. OpenCage bietet einen solchen Dienst nie an und sieht sich mit einem Strom enttäuschter Neuanmeldungen konfrontiert, die den geocoding-Dienst kurz testen und dann frustriert abbrechen.",
+      "title_de": "ChatGPT erfindet einen Handy-Ortungs-Dienst der Firma OpenCage",
+      "description_de": "ChatGPT behauptet fälschlich, OpenCage biete eine API, mit der sich Mobiltelefone allein anhand der Nummer orten ließen, und liefert sogar passenden Python-Beispielcode. OpenCage bietet einen solchen Dienst nie an und sieht sich mit einem Strom enttäuschter Neuanmeldungen konfrontiert, die den geocoding-Dienst kurz testen und dann frustriert abbrechen.",
+      "title_en": "ChatGPT fabricates a phone-tracking service for OpenCage",
+      "description_en": "ChatGPT falsely claims that OpenCage offers an API to locate mobile phones from their number alone, even supplying matching Python example code. OpenCage never offers such a service and faces a stream of disappointed new sign-ups who briefly test the geocoding service and then abandon it in frustration.",
+      "sources": [
+        "https://the-decoder.com/company-wins-customers-via-chatgpt-for-a-product-it-does-not-carry/"
+      ]
+    },
+    {
+      "date": "2023-02-23",
+      "phase": "consequences",
+      "title": "OpenCage warnt öffentlich: 'Glaubt ChatGPT nicht'",
+      "description": "OpenCage veröffentlicht einen Blog-Beitrag mit dem Titel 'Glaubt ChatGPT nicht - wir bieten keinen Handy-Ortungs-Dienst' und warnt vor der Falschauskunft. Medien wie Fortune und The Decoder greifen den Fall auf. Er wird zu einem frühen Lehrbeispiel dafür, wie Halluzinationen generativer KI Reputations- und Betriebslast bei völlig unbeteiligten Dritten erzeugen.",
+      "title_de": "OpenCage warnt öffentlich: 'Glaubt ChatGPT nicht'",
+      "description_de": "OpenCage veröffentlicht einen Blog-Beitrag mit dem Titel 'Glaubt ChatGPT nicht - wir bieten keinen Handy-Ortungs-Dienst' und warnt vor der Falschauskunft. Medien wie Fortune und The Decoder greifen den Fall auf. Er wird zu einem frühen Lehrbeispiel dafür, wie Halluzinationen generativer KI Reputations- und Betriebslast bei völlig unbeteiligten Dritten erzeugen.",
+      "title_en": "OpenCage warns publicly: 'Don't believe ChatGPT'",
+      "description_en": "OpenCage publishes a blog post titled 'Don't believe ChatGPT - we do not offer a phone lookup service' and warns against the false claim. Outlets such as Fortune and The Decoder pick up the case. It becomes an early textbook example of how generative-AI hallucinations create reputational and operational burdens for entirely uninvolved third parties.",
+      "sources": [
+        "https://blog.opencagedata.com/post/dont-believe-chatgpt",
+        "https://fortune.com/2023/02/28/chatgpt-inaccuracies-causing-real-harm/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://fortune.com/2023/02/28/chatgpt-inaccuracies-causing-real-harm/",
