@@ -32,9 +32,24 @@
     "surveillance",
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Protection from discrimination",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Universidad Autonoma de Madrid (BiDA Lab)",
@@ -48,7 +63,73 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Yahoo veröffentlicht YFCC100M-Datensatz aus Flickr-Fotos",
+      "description": "Yahoo veröffentlichte 2014 den Datensatz YFCC100M mit rund 100 Millionen Flickr-Fotos und -Videos, die zwischen 2004 und 2014 unter Creative-Commons-Lizenzen hochgeladen worden waren. Die Sammlung wurde zur Grundlage zahlreicher Bild- und Gesichtserkennungs-Datensätze, ohne dass die abgebildeten Personen einer Nutzung zum KI-Training zugestimmt hatten.",
+      "title_de": "Yahoo veröffentlicht YFCC100M-Datensatz aus Flickr-Fotos",
+      "description_de": "Yahoo veröffentlichte 2014 den Datensatz YFCC100M mit rund 100 Millionen Flickr-Fotos und -Videos, die zwischen 2004 und 2014 unter Creative-Commons-Lizenzen hochgeladen worden waren. Die Sammlung wurde zur Grundlage zahlreicher Bild- und Gesichtserkennungs-Datensätze, ohne dass die abgebildeten Personen einer Nutzung zum KI-Training zugestimmt hatten.",
+      "title_en": "Yahoo releases YFCC100M dataset of Flickr photos",
+      "description_en": "In 2014 Yahoo released the YFCC100M dataset of roughly 100 million Flickr photos and videos uploaded between 2004 and 2014 under Creative Commons licences. The collection became the basis for many image and face-recognition datasets, even though the people pictured had never consented to having their images used for AI training.",
+      "sources": [
+        "https://exposing.ai/megaface/"
+      ]
+    },
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "MegaFace extrahiert Millionen Gesichter aus den Flickr-Bildern",
+      "description": "Forschende der University of Washington bauten aus den YFCC100M-Bildern den Datensatz MegaFace mit rund 4,7 Millionen Gesichtern von etwa 672.000 Identitäten und veröffentlichten ihn als Benchmark für Gesichtserkennung. Hunderte Forschungsgruppen, Unternehmen und Behörden nutzten die Daten; Kritik richtete sich später darauf, dass die Fotos ohne Einwilligung und teils entgegen den Lizenzbedingungen weiterverteilt wurden.",
+      "title_de": "MegaFace extrahiert Millionen Gesichter aus den Flickr-Bildern",
+      "description_de": "Forschende der University of Washington bauten aus den YFCC100M-Bildern den Datensatz MegaFace mit rund 4,7 Millionen Gesichtern von etwa 672.000 Identitäten und veröffentlichten ihn als Benchmark für Gesichtserkennung. Hunderte Forschungsgruppen, Unternehmen und Behörden nutzten die Daten; Kritik richtete sich später darauf, dass die Fotos ohne Einwilligung und teils entgegen den Lizenzbedingungen weiterverteilt wurden.",
+      "title_en": "MegaFace extracts millions of faces from the Flickr images",
+      "description_en": "Researchers at the University of Washington built the MegaFace dataset of about 4.7 million faces from roughly 672,000 identities out of the YFCC100M images and released it as a face-recognition benchmark. Hundreds of research groups, companies and agencies used the data; critics later objected that the photos were redistributed without consent and partly against their licence terms.",
+      "sources": [
+        "https://exposing.ai/megaface/"
+      ]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Fairness-Forschung soll Verzerrungen in Gesichtserkennung messen",
+      "description": "Um Verzerrungen in Gesichtserkennungs-Systemen zu messen und zu verringern, etablierte sich in der Forschung der Ansatz, Trainingsdaten nach Geschlecht und 'ethnischen' Gruppen auszubalancieren. Das BiDA Lab der Universidad Autonoma de Madrid verfolgte dieses Ziel und definierte dafür ein grobes Klassen-Schema, das menschliche Herkunft auf wenige Kategorien reduzierte.",
+      "title_de": "Fairness-Forschung soll Verzerrungen in Gesichtserkennung messen",
+      "description_de": "Um Verzerrungen in Gesichtserkennungs-Systemen zu messen und zu verringern, etablierte sich in der Forschung der Ansatz, Trainingsdaten nach Geschlecht und 'ethnischen' Gruppen auszubalancieren. Das BiDA Lab der Universidad Autonoma de Madrid verfolgte dieses Ziel und definierte dafür ein grobes Klassen-Schema, das menschliche Herkunft auf wenige Kategorien reduzierte.",
+      "title_en": "Fairness research aims to measure bias in face recognition",
+      "description_en": "To measure and reduce bias in facial recognition, a research approach took hold of balancing training data across gender and 'ethnic' groups. The BiDA Lab at the Universidad Autonoma de Madrid pursued this goal and defined a coarse class scheme for it that reduced human ancestry to a few categories.",
+      "sources": [
+        "https://arxiv.org/pdf/1912.01842"
+      ]
+    },
+    {
+      "date": "2019-11",
+      "phase": "event",
+      "title": "Spanien: DiveFace-Datensatz wegen Datenschutz und Stereotypisierung kritisiert",
+      "description": "Der 2019 von Forschenden der Universidad Autonoma de Madrid veröffentlichte Datensatz DiveFace enthält rund 140.000 Gesichtsbilder von 24.000 Identitäten, gruppiert nach Geschlecht und nur drei groben 'ethnischen' Kategorien, um fairere Gesichtserkennung zu trainieren. Kritisiert wurde, dass die Bilder über MegaFace letztlich aus ohne Einwilligung gesammelten Flickr-Fotos (YFCC100M) stammen und dass die Reduktion menschlicher Herkunft auf drei Klassen - etwa die Zusammenlegung indischer und afrikanischer Personen - Stereotype reproduziert.",
+      "title_de": "Spanien: DiveFace-Datensatz wegen Datenschutz und Stereotypisierung kritisiert",
+      "description_de": "Der 2019 von Forschenden der Universidad Autonoma de Madrid veröffentlichte Datensatz DiveFace enthält rund 140.000 Gesichtsbilder von 24.000 Identitäten, gruppiert nach Geschlecht und nur drei groben 'ethnischen' Kategorien, um fairere Gesichtserkennung zu trainieren. Kritisiert wurde, dass die Bilder über MegaFace letztlich aus ohne Einwilligung gesammelten Flickr-Fotos (YFCC100M) stammen und dass die Reduktion menschlicher Herkunft auf drei Klassen - etwa die Zusammenlegung indischer und afrikanischer Personen - Stereotype reproduziert.",
+      "title_en": "Spain: DiveFace dataset criticised over privacy and stereotyping",
+      "description_en": "Released in 2019 by Universidad Autonoma de Madrid researchers, the DiveFace dataset contains around 140,000 face images of 24,000 identities grouped by gender and only three coarse 'ethnic' categories to train fairer facial recognition. Critics noted the images ultimately derive, via MegaFace, from Flickr photos (YFCC100M) collected without consent, and that reducing human ancestry to three classes, such as merging Indian and African people, reproduces stereotypes.",
+      "sources": [
+        "https://github.com/BiDAlab/DiveFace"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "consequences",
+      "title": "Exposing.ai dokumentiert Datenherkunft und Datenschutzproblematik",
+      "description": "Das Projekt Exposing.ai von Adam Harvey und Jules LaPlace dokumentierte die Datenschutzproblematik von DiveFace und machte die Datenkette von Flickr über MegaFace bis DiveFace öffentlich nachvollziehbar. Der Fall reihte sich in eine breitere Kritik an gesichtserkennungs-Datensätzen ein, deren Bilder ohne Einwilligung aus dem Netz gesammelt und für KI-Training weiterverteilt wurden.",
+      "title_de": "Exposing.ai dokumentiert Datenherkunft und Datenschutzproblematik",
+      "description_de": "Das Projekt Exposing.ai von Adam Harvey und Jules LaPlace dokumentierte die Datenschutzproblematik von DiveFace und machte die Datenkette von Flickr über MegaFace bis DiveFace öffentlich nachvollziehbar. Der Fall reihte sich in eine breitere Kritik an gesichtserkennungs-Datensätzen ein, deren Bilder ohne Einwilligung aus dem Netz gesammelt und für KI-Training weiterverteilt wurden.",
+      "title_en": "Exposing.ai documents the data lineage and privacy concerns",
+      "description_en": "The Exposing.ai project by Adam Harvey and Jules LaPlace documented DiveFace's privacy problems and made the data chain from Flickr via MegaFace to DiveFace publicly traceable. The case fed into wider criticism of face-recognition datasets whose images were scraped from the web without consent and redistributed for AI training.",
+      "sources": [
+        "https://exposing.ai/dive_face/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://exposing.ai/dive_face/",

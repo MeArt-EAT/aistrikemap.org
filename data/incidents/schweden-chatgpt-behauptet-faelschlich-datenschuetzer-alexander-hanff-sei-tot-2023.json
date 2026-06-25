@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Recht auf Berichtigung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Würde des Menschen",
+    "Recht auf Berichtigung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Protection from manipulation",
+    "Human dignity",
+    "Right to rectification"
+  ],
   "asm:actors": [
     {
       "name": "Alexander Hanff",
@@ -53,7 +71,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "OpenAI trainiert große Sprachmodelle auf Web-Daten ohne Faktenprüfung",
+      "description": "OpenAI trainiert die GPT-3.5- und GPT-4-Modelle auf riesigen, aus dem Web gescrapten Textmengen. Solche Modelle erzeugen sprachlich plausible Antworten auf statistischer Basis, ohne über einen Mechanismus zur Wahrheitsprüfung oder Quellen-Verifikation zu verfügen. Damit ist die technische Grundlage gelegt, dass das System über reale Personen falsche Behauptungen samt erfundener Belege formulieren kann.",
+      "title_de": "OpenAI trainiert große Sprachmodelle auf Web-Daten ohne Faktenprüfung",
+      "description_de": "OpenAI trainiert die GPT-3.5- und GPT-4-Modelle auf riesigen, aus dem Web gescrapten Textmengen. Solche Modelle erzeugen sprachlich plausible Antworten auf statistischer Basis, ohne über einen Mechanismus zur Wahrheitsprüfung oder Quellen-Verifikation zu verfügen. Damit ist die technische Grundlage gelegt, dass das System über reale Personen falsche Behauptungen samt erfundener Belege formulieren kann.",
+      "title_en": "OpenAI trains large language models on web data without fact-checking",
+      "description_en": "OpenAI trains the GPT-3.5 and GPT-4 models on vast amounts of web-scraped text. Such models produce linguistically plausible answers on a statistical basis, with no mechanism for truth verification or source validation. This lays the technical foundation for the system to make false claims about real people, complete with fabricated supporting evidence.",
+      "sources": [
+        "https://www.theregister.com/2023/03/02/chatgpt_considered_harmful/"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "phase": "doctrine",
+      "title": "OpenAI veröffentlicht ChatGPT als öffentliches Massenprodukt",
+      "description": "Am 30. November 2022 stellt OpenAI ChatGPT der Öffentlichkeit zur Verfügung. Das Produkt wird als allgemeiner Wissens-Assistent vermarktet und millionenfach genutzt, obwohl es Inhalte über benannte reale Personen generieren kann, die nicht auf geprüfte Fakten zurückgehen. Geschäftsmodell und Roll-out priorisieren Reichweite vor Genauigkeit bei personenbezogenen Aussagen.",
+      "title_de": "OpenAI veröffentlicht ChatGPT als öffentliches Massenprodukt",
+      "description_de": "Am 30. November 2022 stellt OpenAI ChatGPT der Öffentlichkeit zur Verfügung. Das Produkt wird als allgemeiner Wissens-Assistent vermarktet und millionenfach genutzt, obwohl es Inhalte über benannte reale Personen generieren kann, die nicht auf geprüfte Fakten zurückgehen. Geschäftsmodell und Roll-out priorisieren Reichweite vor Genauigkeit bei personenbezogenen Aussagen.",
+      "title_en": "OpenAI releases ChatGPT as a public mass-market product",
+      "description_en": "On 30 November 2022 OpenAI makes ChatGPT publicly available. The product is marketed as a general knowledge assistant and used by millions, even though it can generate content about named real people that is not grounded in verified facts. The business model and roll-out prioritise reach over accuracy for statements about individuals.",
+      "sources": [
+        "https://www.theregister.com/2023/03/02/chatgpt_considered_harmful/"
+      ]
+    },
+    {
+      "date": "2023-02",
+      "phase": "event",
+      "title": "ChatGPT behauptet, Alexander Hanff sei 2019 gestorben - mit erfundener Guardian-URL",
+      "description": "Anfang 2023 stellt der Datenschutz-Technologe Alexander Hanff fest, dass ChatGPT auf Nachfrage fälschlich behauptet, er sei 2019 im Alter von 48 Jahren verstorben. Das Modell untermauert die Falschaussage mit einer erfundenen URL zu einem angeblichen Nachruf im Guardian. Hanff, der an der Entwicklung der DSGVO mitwirkte, findet im gesamten Web keinen einzigen Hinweis auf seinen Tod - die Behauptung ist vollständig halluziniert.",
+      "title_de": "ChatGPT behauptet, Alexander Hanff sei 2019 gestorben - mit erfundener Guardian-URL",
+      "description_de": "Anfang 2023 stellt der Datenschutz-Technologe Alexander Hanff fest, dass ChatGPT auf Nachfrage fälschlich behauptet, er sei 2019 im Alter von 48 Jahren verstorben. Das Modell untermauert die Falschaussage mit einer erfundenen URL zu einem angeblichen Nachruf im Guardian. Hanff, der an der Entwicklung der DSGVO mitwirkte, findet im gesamten Web keinen einzigen Hinweis auf seinen Tod - die Behauptung ist vollständig halluziniert.",
+      "title_en": "ChatGPT claims Alexander Hanff died in 2019 - with a fabricated Guardian URL",
+      "description_en": "In early 2023 privacy technologist Alexander Hanff discovers that ChatGPT falsely claims he died in 2019 at the age of 48. The model backs the false statement with a fabricated URL to a supposed Guardian obituary. Hanff, who contributed to the GDPR, finds no reference anywhere on the web to his death - the claim is entirely hallucinated.",
+      "sources": [
+        "https://cybernews.com/news/openai-ordered-delete-chatgpt/"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "consequences",
+      "title": "Hanff verschickt Unterlassungsaufforderung und fordert Löschung der Modelle",
+      "description": "Hanff verschickt eine Unterlassungsaufforderung an OpenAI und fordert die Löschung der GPT-3.5- und GPT-4-Modelle sowie aller ihn betreffenden Trainingsdaten, mit einer 30-Tage-Frist. Der Fall wird breit als Beispiel für rufschädigende KI-Halluzinationen mit erfundenen Belegen aufgegriffen und befeuert die Debatte über DSGVO-Recht auf Berichtigung gegenüber generativen Modellen.",
+      "title_de": "Hanff verschickt Unterlassungsaufforderung und fordert Löschung der Modelle",
+      "description_de": "Hanff verschickt eine Unterlassungsaufforderung an OpenAI und fordert die Löschung der GPT-3.5- und GPT-4-Modelle sowie aller ihn betreffenden Trainingsdaten, mit einer 30-Tage-Frist. Der Fall wird breit als Beispiel für rufschädigende KI-Halluzinationen mit erfundenen Belegen aufgegriffen und befeuert die Debatte über DSGVO-Recht auf Berichtigung gegenüber generativen Modellen.",
+      "title_en": "Hanff sends a cease-and-desist letter demanding deletion of the models",
+      "description_en": "Hanff sends a cease-and-desist letter to OpenAI demanding deletion of the GPT-3.5 and GPT-4 models and all training data relating to him, with a 30-day deadline. The case is widely taken up as an example of reputationally damaging AI hallucinations backed by invented sources, and fuels debate over the GDPR right to rectification against generative models.",
+      "sources": [
+        "https://cybernews.com/news/openai-ordered-delete-chatgpt/",
+        "https://www.theregister.com/2023/03/02/chatgpt_considered_harmful/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2023/03/02/chatgpt_considered_harmful/",

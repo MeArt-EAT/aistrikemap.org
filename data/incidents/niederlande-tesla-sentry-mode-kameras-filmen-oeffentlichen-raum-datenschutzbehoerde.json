@@ -31,9 +31,24 @@
     "surveillance",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Recht auf informationelle Selbstbestimmung",
+    "Bewegungsfreiheit im öffentlichen Raum"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Recht auf informationelle Selbstbestimmung",
+    "Bewegungsfreiheit im öffentlichen Raum"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Right to informational self-determination",
+    "Freedom of movement in public space"
+  ],
   "asm:actors": [
     {
       "name": "Tesla",
@@ -54,7 +69,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-02",
+      "phase": "infrastructure",
+      "title": "Tesla rüstet Fahrzeuge mit Sentry-Mode aus",
+      "description": "Tesla führte ab Februar 2019 den Sentry-Mode ein, der die acht Autopilot-Kameras eines geparkten Fahrzeugs zur Rundum-Überwachung nutzt. Damit konnten Standardfahrzeuge im Privatbesitz die gesamte Umgebung kontinuierlich filmen und die Aufnahmen lokal speichern.",
+      "title_de": "Tesla rüstet Fahrzeuge mit Sentry-Mode aus",
+      "description_de": "Tesla führte ab Februar 2019 den Sentry-Mode ein, der die acht Autopilot-Kameras eines geparkten Fahrzeugs zur Rundum-Überwachung nutzt. Damit konnten Standardfahrzeuge im Privatbesitz die gesamte Umgebung kontinuierlich filmen und die Aufnahmen lokal speichern.",
+      "title_en": "Tesla equips vehicles with Sentry Mode",
+      "description_en": "From February 2019 Tesla introduced Sentry Mode, which uses a parked vehicle's eight Autopilot cameras for all-round surveillance. This let ordinary privately owned cars continuously film their entire surroundings and store the footage locally.",
+      "sources": [
+        "https://www.tesla.com/support/vehicle-safety-security-features"
+      ]
+    },
+    {
+      "date": "2022",
+      "phase": "doctrine",
+      "title": "Sentry-Mode standardmäßig auf Dauerüberwachung ausgelegt",
+      "description": "Tesla bewarb und konfigurierte den Sentry-Mode als Diebstahl- und Vandalismusschutz, der bei verdächtiger Bewegung automatisch aufzeichnete und Aufnahmen bis zu einer Stunde aufbewahrte. Diese Voreinstellung erfasste planmäßig auch unbeteiligte Passanten und Nachbargrundstücke im öffentlichen Raum, ohne dass diese gewarnt wurden.",
+      "title_de": "Sentry-Mode standardmäßig auf Dauerüberwachung ausgelegt",
+      "description_de": "Tesla bewarb und konfigurierte den Sentry-Mode als Diebstahl- und Vandalismusschutz, der bei verdächtiger Bewegung automatisch aufzeichnete und Aufnahmen bis zu einer Stunde aufbewahrte. Diese Voreinstellung erfasste planmäßig auch unbeteiligte Passanten und Nachbargrundstücke im öffentlichen Raum, ohne dass diese gewarnt wurden.",
+      "title_en": "Sentry Mode configured for continuous surveillance by default",
+      "description_en": "Tesla marketed and configured Sentry Mode as theft and vandalism protection that recorded automatically on detecting suspicious movement and retained footage for up to an hour. By design this default also captured uninvolved passers-by and neighbouring properties in public space without warning them.",
+      "sources": [
+        "https://www.autoriteitpersoonsgegevens.nl/en/current/tesla-makes-camera-settings-more-privacy-friendly-following-dpa-investigation"
+      ]
+    },
+    {
+      "date": "2023-02",
+      "phase": "event",
+      "title": "Niederlande: Tesla-Sentry-Mode-Kameras filmen öffentlichen Raum, Datenschutzbehörde greift ein",
+      "description": "Die niederländische Datenschutzbehörde (Autoriteit Persoonsgegevens) stellte fest, dass Teslas Sentry-Mode geparkte Fahrzeuge ihre Umgebung dauerhaft filmen und Aufnahmen bis zu einer Stunde speichern ließ, wodurch Passanten im öffentlichen Raum erfasst wurden. Nach der Untersuchung passte Tesla die Funktion an: Aufnahme nur bei Berührung, Speicherdauer auf rund zehn Minuten verkürzt und Warnsignale für Gefilmte. Ein Bußgeld blieb aus, da rechtlich die Fahrzeughalter verantwortlich sind.",
+      "title_de": "Niederlande: Tesla-Sentry-Mode-Kameras filmen öffentlichen Raum, Datenschutzbehörde greift ein",
+      "description_de": "Die niederländische Datenschutzbehörde (Autoriteit Persoonsgegevens) stellte fest, dass Teslas Sentry-Mode geparkte Fahrzeuge ihre Umgebung dauerhaft filmen und Aufnahmen bis zu einer Stunde speichern ließ, wodurch Passanten im öffentlichen Raum erfasst wurden. Nach der Untersuchung passte Tesla die Funktion an: Aufnahme nur bei Berührung, Speicherdauer auf rund zehn Minuten verkürzt und Warnsignale für Gefilmte. Ein Bußgeld blieb aus, da rechtlich die Fahrzeughalter verantwortlich sind.",
+      "title_en": "Netherlands: Tesla Sentry Mode cameras film public space, prompting DPA intervention",
+      "description_en": "The Dutch data protection authority (Autoriteit Persoonsgegevens) found that Tesla's Sentry Mode let parked vehicles continuously film their surroundings and store footage for up to an hour, capturing passers-by in public space. Following the probe Tesla changed the feature so it records only when the car is touched, cut retention to about ten minutes and added warnings for people being filmed. No fine was issued because vehicle owners are legally responsible for the recordings.",
+      "sources": [
+        "https://nltimes.nl/2023/02/22/tesla-makes-sentry-mode-privacy-friendly-dutch-investigation"
+      ]
+    },
+    {
+      "date": "2023-02-22",
+      "phase": "consequences",
+      "title": "Tesla entschärft Kamera-Einstellungen nach AP-Untersuchung",
+      "description": "Tesla spielte ein Software-Update aus, das den Sentry-Mode standardmäßig deaktivierte, die Aufnahme nur noch bei Berührung des Fahrzeugs auslöste und die Speicherdauer auf rund zehn Minuten verkürzte. Gefilmte Personen sollten zudem durch Signale gewarnt werden. Die Datenschutzbehörde verhängte kein Bußgeld, betonte aber die datenschutzrechtliche Verantwortung der Fahrzeughalter.",
+      "title_de": "Tesla entschärft Kamera-Einstellungen nach AP-Untersuchung",
+      "description_de": "Tesla spielte ein Software-Update aus, das den Sentry-Mode standardmäßig deaktivierte, die Aufnahme nur noch bei Berührung des Fahrzeugs auslöste und die Speicherdauer auf rund zehn Minuten verkürzte. Gefilmte Personen sollten zudem durch Signale gewarnt werden. Die Datenschutzbehörde verhängte kein Bußgeld, betonte aber die datenschutzrechtliche Verantwortung der Fahrzeughalter.",
+      "title_en": "Tesla softens camera settings after DPA investigation",
+      "description_en": "Tesla rolled out a software update that disabled Sentry Mode by default, triggered recording only when the vehicle is touched and cut retention to about ten minutes. People being filmed were also to be alerted by signals. The data protection authority issued no fine but stressed that vehicle owners bear the data-protection responsibility.",
+      "sources": [
+        "https://www.autoriteitpersoonsgegevens.nl/en/current/tesla-makes-camera-settings-more-privacy-friendly-following-dpa-investigation"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.autoriteitpersoonsgegevens.nl/en/current/tesla-makes-camera-settings-more-privacy-friendly-following-dpa-investigation",

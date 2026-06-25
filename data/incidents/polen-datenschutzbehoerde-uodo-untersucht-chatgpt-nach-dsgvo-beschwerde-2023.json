@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Recht auf Berichtigung",
+    "Recht auf Auskunft",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Recht auf Berichtigung",
+    "Recht auf Auskunft",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Right to rectification",
+    "Right of access",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -53,7 +71,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht ChatGPT auf Basis großer Trainingsdaten",
+      "description": "Im November 2022 veröffentlicht OpenAI ChatGPT, einen generativen Chatbot, der auf umfangreichen, aus dem Web gesammelten Textdaten trainiert wurde. Das Modell kann zu benannten Personen Aussagen und Biografien erzeugen, ohne dass für jede betroffene Person eine Rechtsgrundlage oder Korrekturmöglichkeit transparent gemacht wird. Diese Datengrundlage bildet die technische Vorbedingung für spätere Datenschutzbeschwerden.",
+      "title_de": "OpenAI veröffentlicht ChatGPT auf Basis großer Trainingsdaten",
+      "description_de": "Im November 2022 veröffentlicht OpenAI ChatGPT, einen generativen Chatbot, der auf umfangreichen, aus dem Web gesammelten Textdaten trainiert wurde. Das Modell kann zu benannten Personen Aussagen und Biografien erzeugen, ohne dass für jede betroffene Person eine Rechtsgrundlage oder Korrekturmöglichkeit transparent gemacht wird. Diese Datengrundlage bildet die technische Vorbedingung für spätere Datenschutzbeschwerden.",
+      "title_en": "OpenAI releases ChatGPT trained on large data sets",
+      "description_en": "In November 2022, OpenAI releases ChatGPT, a generative chatbot trained on large amounts of text data scraped from the web. The model can produce statements and biographies about named individuals without a transparent legal basis or correction mechanism for each affected person. This data foundation forms the technical precondition for later data-protection complaints.",
+      "sources": [
+        "https://techcrunch.com/2023/09/21/poland-chatgpt-gdpr-complaint-probe/"
+      ]
+    },
+    {
+      "date": "2023-08-30",
+      "phase": "doctrine",
+      "title": "Sicherheitsforscher Olejnik reicht DSGVO-Beschwerde ein",
+      "description": "Ende August 2023 reicht der Sicherheits- und Datenschutzforscher Lukasz Olejnik bei der polnischen Behörde eine umfassende DSGVO-Beschwerde gegen OpenAI ein. Er beruft sich auf Pflichten zu Rechtsgrundlage, Transparenz, Fairness, Auskunft und Privacy by Design und wirft OpenAI vor, eine von ChatGPT erzeugte falsche Biografie über ihn nicht korrigiert und sein Auskunftsersuchen ausweichend beantwortet zu haben. Die DSGVO liefert den rechtlichen Rahmen für die folgende Untersuchung.",
+      "title_de": "Sicherheitsforscher Olejnik reicht DSGVO-Beschwerde ein",
+      "description_de": "Ende August 2023 reicht der Sicherheits- und Datenschutzforscher Lukasz Olejnik bei der polnischen Behörde eine umfassende DSGVO-Beschwerde gegen OpenAI ein. Er beruft sich auf Pflichten zu Rechtsgrundlage, Transparenz, Fairness, Auskunft und Privacy by Design und wirft OpenAI vor, eine von ChatGPT erzeugte falsche Biografie über ihn nicht korrigiert und sein Auskunftsersuchen ausweichend beantwortet zu haben. Die DSGVO liefert den rechtlichen Rahmen für die folgende Untersuchung.",
+      "title_en": "Security researcher Olejnik files GDPR complaint",
+      "description_en": "In late August 2023, security and privacy researcher Lukasz Olejnik files a wide-ranging GDPR complaint against OpenAI with the Polish authority. He invokes duties on lawful basis, transparency, fairness, access and privacy by design, accusing OpenAI of failing to correct a false biography ChatGPT generated about him and of answering his access request evasively. The GDPR provides the legal framework for the subsequent investigation.",
+      "sources": [
+        "https://techcrunch.com/2023/08/30/chatgpt-maker-openai-accused-of-string-of-data-protection-breaches-in-gdpr-complaint-filed-by-privacy-researcher/"
+      ]
+    },
+    {
+      "date": "2023-09-21",
+      "phase": "event",
+      "title": "UODO eröffnet Untersuchung gegen OpenAI",
+      "description": "Im September 2023 eröffnet die polnische Datenschutzbehörde UODO offiziell eine Untersuchung gegen OpenAI. UODO-Präsident Jan Nowak erklärt, der Fall betreffe die Verletzung zahlreicher Datenschutzbestimmungen, und kündigt einen umfangreichen Fragenkatalog an OpenAI an. Im Zentrum steht, ob OpenAI bei Entwicklung und Bereitstellung von ChatGPT den Grundsatz Privacy by Design eingehalten hat.",
+      "title_de": "UODO eröffnet Untersuchung gegen OpenAI",
+      "description_de": "Im September 2023 eröffnet die polnische Datenschutzbehörde UODO offiziell eine Untersuchung gegen OpenAI. UODO-Präsident Jan Nowak erklärt, der Fall betreffe die Verletzung zahlreicher Datenschutzbestimmungen, und kündigt einen umfangreichen Fragenkatalog an OpenAI an. Im Zentrum steht, ob OpenAI bei Entwicklung und Bereitstellung von ChatGPT den Grundsatz Privacy by Design eingehalten hat.",
+      "title_en": "UODO opens an investigation into OpenAI",
+      "description_en": "In September 2023, Poland's data-protection authority UODO formally opens an investigation into OpenAI. UODO President Jan Nowak states the case concerns the violation of many data-protection provisions and announces an extensive set of questions for OpenAI. The central issue is whether OpenAI observed the principle of privacy by design when developing and providing ChatGPT.",
+      "sources": [
+        "https://techcrunch.com/2023/09/21/poland-chatgpt-gdpr-complaint-probe/"
+      ]
+    },
+    {
+      "date": "2023-09-22",
+      "phase": "consequences",
+      "title": "Behörde erwartet 'schwieriges' grenzüberschreitendes Verfahren",
+      "description": "UODO kündigt an, das Verfahren werde wegen des Sitzes von OpenAI außerhalb der EU schwierig durchzusetzen sein. Der Fall wird zu einem frühen Beispiel europäischer Datenschutz-Aufsicht über generative KI und für die Frage, wie sich Auskunfts- und Berichtigungsrechte gegenüber einem Sprachmodell geltend machen lassen. Er reiht sich in eine Serie von DSGVO-Prüfungen gegen ChatGPT in mehreren EU-Staaten ein.",
+      "title_de": "Behörde erwartet 'schwieriges' grenzüberschreitendes Verfahren",
+      "description_de": "UODO kündigt an, das Verfahren werde wegen des Sitzes von OpenAI außerhalb der EU schwierig durchzusetzen sein. Der Fall wird zu einem frühen Beispiel europäischer Datenschutz-Aufsicht über generative KI und für die Frage, wie sich Auskunfts- und Berichtigungsrechte gegenüber einem Sprachmodell geltend machen lassen. Er reiht sich in eine Serie von DSGVO-Prüfungen gegen ChatGPT in mehreren EU-Staaten ein.",
+      "title_en": "Authority expects a 'difficult' cross-border proceeding",
+      "description_en": "UODO signals the proceeding will be difficult to enforce given OpenAI's location outside the EU. The case becomes an early example of European data-protection oversight of generative AI and of the question how access and rectification rights can be asserted against a language model. It joins a series of GDPR probes into ChatGPT across several EU states.",
+      "sources": [
+        "https://techcrunch.com/2023/09/21/poland-chatgpt-gdpr-complaint-probe/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2023/09/21/poland-chatgpt-gdpr-complaint-probe/",
