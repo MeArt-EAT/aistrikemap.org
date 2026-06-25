@@ -31,9 +31,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Kinderrechte",
+    "Verbraucherschutz",
+    "Schutz vor Überwachung"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Kinderrechte",
+    "Verbraucherschutz",
+    "Schutz vor Überwachung"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Children's rights",
+    "Consumer protection",
+    "Protection from surveillance"
+  ],
   "asm:actors": [
     {
       "name": "Mattel",
@@ -54,7 +72,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2015-02",
+      "phase": "infrastructure",
+      "title": "Mattel und ToyTalk stellen die vernetzte Hello-Barbie-Puppe vor",
+      "description": "Auf der New Yorker Toy Fair zeigten Mattel und das Start-up ToyTalk im Februar 2015 die WLAN-fähige Hello-Barbie-Puppe. Sie nahm Sprache von Kindern über ein Mikrofon auf, schickte die Mitschnitte an ToyTalk-Server und wählte dort per Spracherkennung und KI-Dialogsystem passende Antworten aus.",
+      "title_de": "Mattel und ToyTalk stellen die vernetzte Hello-Barbie-Puppe vor",
+      "description_de": "Auf der New Yorker Toy Fair zeigten Mattel und das Start-up ToyTalk im Februar 2015 die WLAN-fähige Hello-Barbie-Puppe. Sie nahm Sprache von Kindern über ein Mikrofon auf, schickte die Mitschnitte an ToyTalk-Server und wählte dort per Spracherkennung und KI-Dialogsystem passende Antworten aus.",
+      "title_en": "Mattel and ToyTalk unveil the connected Hello Barbie doll",
+      "description_en": "At the New York Toy Fair in February 2015, Mattel and the start-up ToyTalk showed the Wi-Fi-connected Hello Barbie doll. It recorded children's speech through a microphone, sent the recordings to ToyTalk servers and there used voice recognition and an AI dialogue system to pick suitable replies.",
+      "sources": [
+        "https://www.csmonitor.com/Business/2015/0311/Hello-Barbie-goodbye-privacy-Why-some-are-calling-new-doll-creepy"
+      ]
+    },
+    {
+      "date": "2015-03",
+      "phase": "doctrine",
+      "title": "Geschäftsmodell Cloud-Aufzeichnung - Datenschützer protestieren",
+      "description": "Das Geschäftsmodell sah vor, kindliche Sprachaufnahmen dauerhaft in der Cloud zu verarbeiten, auch zur Verbesserung der Spracherkennung. Die Kampagne 'Campaign for a Commercial-Free Childhood' forderte Mattel im März 2015 auf, Vermarktung und Produktion zu stoppen, und warnte vor der Überwachung von Kindern.",
+      "title_de": "Geschäftsmodell Cloud-Aufzeichnung - Datenschützer protestieren",
+      "description_de": "Das Geschäftsmodell sah vor, kindliche Sprachaufnahmen dauerhaft in der Cloud zu verarbeiten, auch zur Verbesserung der Spracherkennung. Die Kampagne 'Campaign for a Commercial-Free Childhood' forderte Mattel im März 2015 auf, Vermarktung und Produktion zu stoppen, und warnte vor der Überwachung von Kindern.",
+      "title_en": "Cloud-recording business model - privacy advocates protest",
+      "description_en": "The business model relied on permanently processing children's voice recordings in the cloud, partly to improve speech recognition. In March 2015, the Campaign for a Commercial-Free Childhood urged Mattel to halt marketing and production and warned of surveillance of children.",
+      "sources": [
+        "https://time.com/4093660/barbie-hell-no/"
+      ]
+    },
+    {
+      "date": "2015-12-04",
+      "phase": "event",
+      "title": "Bluebox legt mehrere Sicherheitslücken offen",
+      "description": "Sicherheitsforscher von Bluebox deckten mehrere Schwachstellen auf: Die App verband sich mit jedem WLAN, das das Wort 'Barbie' im Namen trug, die Server nutzten anfälliges SSLv3 (POODLE), und ein fest eingebautes Passwort des Client-Zertifikats ließ sich aus der App rückentwickeln. So hätten Angreifer Zugangsdaten und Gesprächsmitschnitte abgreifen können.",
+      "title_de": "Bluebox legt mehrere Sicherheitslücken offen",
+      "description_de": "Sicherheitsforscher von Bluebox deckten mehrere Schwachstellen auf: Die App verband sich mit jedem WLAN, das das Wort 'Barbie' im Namen trug, die Server nutzten anfälliges SSLv3 (POODLE), und ein fest eingebautes Passwort des Client-Zertifikats ließ sich aus der App rückentwickeln. So hätten Angreifer Zugangsdaten und Gesprächsmitschnitte abgreifen können.",
+      "title_en": "Bluebox discloses multiple security flaws",
+      "description_en": "Researchers at Bluebox uncovered several weaknesses: the app connected to any Wi-Fi network with the word 'Barbie' in its name, the servers used vulnerable SSLv3 (POODLE), and a hardcoded client-certificate password could be reverse-engineered from the app. Attackers could thus have grabbed credentials and recorded conversations.",
+      "sources": [
+        "https://securityledger.com/2015/12/hello-barbie-fails-another-security-test/"
+      ]
+    },
+    {
+      "date": "2015-12-07",
+      "phase": "consequences",
+      "title": "ToyTalk patcht die Server und spielt das Risiko herunter",
+      "description": "ToyTalk reagierte innerhalb eines Tages nach Kontakt durch Bluebox, schaltete SSLv3 ab und schloss weitere Lücken. Der Technikchef erklärte, die gefundenen Schwachstellen seien behoben und hätten keine sensiblen Daten preisgegeben - eine Darstellung, die angesichts des Kontexts Kinderdaten umstritten blieb.",
+      "title_de": "ToyTalk patcht die Server und spielt das Risiko herunter",
+      "description_de": "ToyTalk reagierte innerhalb eines Tages nach Kontakt durch Bluebox, schaltete SSLv3 ab und schloss weitere Lücken. Der Technikchef erklärte, die gefundenen Schwachstellen seien behoben und hätten keine sensiblen Daten preisgegeben - eine Darstellung, die angesichts des Kontexts Kinderdaten umstritten blieb.",
+      "title_en": "ToyTalk patches the servers and plays down the risk",
+      "description_en": "ToyTalk responded within a day of being contacted by Bluebox, disabled SSLv3 and closed further gaps. Its CTO said the flaws had been fixed and had not exposed sensitive data - a claim that remained contested given the context of children's data.",
+      "sources": [
+        "https://securityledger.com/2015/12/hello-barbie-fails-another-security-test/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.washingtonpost.com/news/the-switch/wp/2015/12/04/hello-hackable-barbie/",

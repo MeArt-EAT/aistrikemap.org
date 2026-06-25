@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Urheberrecht",
+    "Geistiges Eigentum",
+    "Recht auf Namensnennung",
+    "Vertragstreue (Lizenzbedingungen)",
+    "Wirtschaftliche Verwertungsrechte"
+  ],
+  "asm:affectedRights_de": [
+    "Urheberrecht",
+    "Geistiges Eigentum",
+    "Recht auf Namensnennung",
+    "Vertragstreue (Lizenzbedingungen)",
+    "Wirtschaftliche Verwertungsrechte"
+  ],
+  "asm:affectedRights_en": [
+    "Copyright",
+    "Intellectual property",
+    "Right to attribution",
+    "Contractual compliance (licence terms)",
+    "Economic exploitation rights"
+  ],
   "asm:actors": [
     {
       "name": "GitHub / Microsoft / OpenAI",
@@ -47,7 +65,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-06",
+      "phase": "infrastructure",
+      "title": "GitHub startet Copilot als technische Vorschau",
+      "description": "Am 29. Juni 2021 stellte GitHub seinen KI-Codeassistenten Copilot als technische Vorschau vor. Das Werkzeug schlägt während des Programmierens ganze Codezeilen und Funktionen vor und wird vom Modell OpenAI Codex angetrieben, einer für Code spezialisierten Variante von GPT-3. Codex war auf einer riesigen Menge öffentlich verfügbaren Quellcodes trainiert worden, ein großer Teil davon aus öffentlichen GitHub-Repositorien.",
+      "title_de": "GitHub startet Copilot als technische Vorschau",
+      "description_de": "Am 29. Juni 2021 stellte GitHub seinen KI-Codeassistenten Copilot als technische Vorschau vor. Das Werkzeug schlägt während des Programmierens ganze Codezeilen und Funktionen vor und wird vom Modell OpenAI Codex angetrieben, einer für Code spezialisierten Variante von GPT-3. Codex war auf einer riesigen Menge öffentlich verfügbaren Quellcodes trainiert worden, ein großer Teil davon aus öffentlichen GitHub-Repositorien.",
+      "title_en": "GitHub launches Copilot as a technical preview",
+      "description_en": "On 29 June 2021, GitHub unveiled its AI code assistant Copilot as a technical preview. The tool suggests whole lines and functions while developers write code and is powered by OpenAI Codex, a code-specialised variant of GPT-3. Codex had been trained on a vast amount of publicly available source code, much of it from public GitHub repositories.",
+      "sources": [
+        "https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/"
+      ]
+    },
+    {
+      "date": "2021-06",
+      "phase": "doctrine",
+      "title": "Training auf öffentlichem Code trotz Lizenzpflichten",
+      "description": "Microsoft, GitHub und OpenAI vertraten die Auffassung, das Training eines KI-Modells auf öffentlich einsehbarem Code sei zulässig. Ein Großteil dieses Codes stand jedoch unter Open-Source-Lizenzen wie MIT, GPL oder Apache, die bei jeder Weiterverwendung Namensnennung und das Beibehalten von Copyright-Hinweisen verlangen. Copilot gab Vorschläge oft ohne diese Hinweise aus, was die spätere Klage als systematischen Lizenzbruch wertete.",
+      "title_de": "Training auf öffentlichem Code trotz Lizenzpflichten",
+      "description_de": "Microsoft, GitHub und OpenAI vertraten die Auffassung, das Training eines KI-Modells auf öffentlich einsehbarem Code sei zulässig. Ein Großteil dieses Codes stand jedoch unter Open-Source-Lizenzen wie MIT, GPL oder Apache, die bei jeder Weiterverwendung Namensnennung und das Beibehalten von Copyright-Hinweisen verlangen. Copilot gab Vorschläge oft ohne diese Hinweise aus, was die spätere Klage als systematischen Lizenzbruch wertete.",
+      "title_en": "Training on public code despite licence obligations",
+      "description_en": "Microsoft, GitHub and OpenAI took the position that training an AI model on publicly viewable code was permissible. Much of that code, however, was under open-source licences such as MIT, GPL or Apache that require attribution and preservation of copyright notices on any reuse. Copilot frequently output suggestions without those notices, which the later suit characterised as systematic licence violation.",
+      "sources": [
+        "https://githubcopilotlitigation.com/"
+      ]
+    },
+    {
+      "date": "2022-11-03",
+      "phase": "event",
+      "title": "Erste Sammelklage gegen ein generatives KI-Coding-Werkzeug",
+      "description": "Die Kanzlei Joseph Saveri und der Programmierer-Anwalt Matthew Butterick reichten vor einem Bundesgericht in San Francisco eine Sammelklage gegen GitHub, Microsoft und OpenAI ein. Im Namen möglicherweise von Millionen Open-Source-Entwicklern warfen sie den Unternehmen vor, Copilot verletze die Bedingungen offener Lizenzen, indem es fremden Code ohne Namensnennung und Copyright-Hinweis reproduziere. Es war die erste große Urheberrechtsklage gegen ein generatives KI-Coding-Werkzeug.",
+      "title_de": "Erste Sammelklage gegen ein generatives KI-Coding-Werkzeug",
+      "description_de": "Die Kanzlei Joseph Saveri und der Programmierer-Anwalt Matthew Butterick reichten vor einem Bundesgericht in San Francisco eine Sammelklage gegen GitHub, Microsoft und OpenAI ein. Im Namen möglicherweise von Millionen Open-Source-Entwicklern warfen sie den Unternehmen vor, Copilot verletze die Bedingungen offener Lizenzen, indem es fremden Code ohne Namensnennung und Copyright-Hinweis reproduziere. Es war die erste große Urheberrechtsklage gegen ein generatives KI-Coding-Werkzeug.",
+      "title_en": "First class action against a generative AI coding tool",
+      "description_en": "The Joseph Saveri Law Firm and programmer-lawyer Matthew Butterick filed a class action against GitHub, Microsoft and OpenAI in a San Francisco federal court. On behalf of potentially millions of open-source developers, they alleged Copilot violated the terms of open licences by reproducing others' code without attribution and copyright notice. It was the first major copyright suit against a generative AI coding tool.",
+      "sources": [
+        "https://www.theregister.com/software/2022/11/11/githubs-copilot-faces-first-open-source-copyright-lawsuit/606265"
+      ]
+    },
+    {
+      "date": "2024-01",
+      "phase": "consequences",
+      "title": "Gericht streicht erste Anspruchsgrundlagen",
+      "description": "Bundesrichter Jon Tigar verengte die Klage erheblich und wies mehrere Anspruchsgrundlagen ab, darunter Forderungen wegen unlauterer Bereicherung. Die zentralen Vorwürfe zum Lizenzbruch und Vertragsbruch blieben zunächst bestehen, doch das Verfahren verlor einen Großteil seiner ursprünglichen 22 Anspruchspunkte.",
+      "title_de": "Gericht streicht erste Anspruchsgrundlagen",
+      "description_de": "Bundesrichter Jon Tigar verengte die Klage erheblich und wies mehrere Anspruchsgrundlagen ab, darunter Forderungen wegen unlauterer Bereicherung. Die zentralen Vorwürfe zum Lizenzbruch und Vertragsbruch blieben zunächst bestehen, doch das Verfahren verlor einen Großteil seiner ursprünglichen 22 Anspruchspunkte.",
+      "title_en": "Court strikes several causes of action",
+      "description_en": "Federal judge Jon Tigar narrowed the suit substantially and dismissed several causes of action, including unjust-enrichment claims. The core allegations of licence violation and breach of contract initially survived, but the case lost most of its original 22 claims.",
+      "sources": [
+        "https://www.theregister.com/software/2024/01/12/github-copilot-copyright-case-narrowed-but-not-neutered/1173858"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "consequences",
+      "title": "DMCA-Anspruch endgültig abgewiesen",
+      "description": "Richter Tigar wies den zentralen Anspruch nach dem Digital Millennium Copyright Act (Abschnitt 1202(b)) mit Präjudizwirkung ab; die Kläger durften ihn nicht erneut erheben. Das Gericht sah keinen Nachweis, dass Copilot identischen Code reproduziere. Es verblieben im Wesentlichen nur die Vorwürfe des Open-Source-Lizenzbruchs und des Vertragsbruchs - ein deutlicher Etappensieg für GitHub, Microsoft und OpenAI.",
+      "title_de": "DMCA-Anspruch endgültig abgewiesen",
+      "description_de": "Richter Tigar wies den zentralen Anspruch nach dem Digital Millennium Copyright Act (Abschnitt 1202(b)) mit Präjudizwirkung ab; die Kläger durften ihn nicht erneut erheben. Das Gericht sah keinen Nachweis, dass Copilot identischen Code reproduziere. Es verblieben im Wesentlichen nur die Vorwürfe des Open-Source-Lizenzbruchs und des Vertragsbruchs - ein deutlicher Etappensieg für GitHub, Microsoft und OpenAI.",
+      "title_en": "DMCA claim dismissed with prejudice",
+      "description_en": "Judge Tigar dismissed the central claim under the Digital Millennium Copyright Act (section 1202(b)) with prejudice, barring the plaintiffs from refiling it. The court found no evidence that Copilot reproduced identical code. Essentially only the open-source licence-violation and breach-of-contract claims remained - a clear interim win for GitHub, Microsoft and OpenAI.",
+      "sources": [
+        "https://www.theregister.com/2024/07/08/github_copilot_dmca/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/software/2022/11/11/githubs-copilot-faces-first-open-source-copyright-lawsuit/606265",
