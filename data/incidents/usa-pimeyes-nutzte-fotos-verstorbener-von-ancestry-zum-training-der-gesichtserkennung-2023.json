@@ -31,9 +31,27 @@
     "facial-recognition",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Schutz biometrischer Daten",
+    "Recht auf Einwilligung",
+    "Postmortale Würde",
+    "Schutz vor unkontrollierter Überwachung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Schutz biometrischer Daten",
+    "Recht auf Einwilligung",
+    "Postmortale Würde",
+    "Schutz vor unkontrollierter Überwachung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Protection of biometric data",
+    "Right to consent",
+    "Post-mortem dignity",
+    "Protection from unchecked surveillance"
+  ],
   "asm:actors": [
     {
       "name": "PimEyes",
@@ -54,7 +72,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "PimEyes indexiert hunderte Millionen Gesichter aus dem offenen Web",
+      "description": "2017 starteten polnische Entwickler PimEyes als Gesichtssuchmaschine, die das offene Web durchsucht und hunderte Millionen Gesichtsbilder indexiert. Zu jedem hochgeladenen Foto liefert der Dienst passende Online-Aufnahmen. Die Crawler unterschieden nicht zwischen lebenden und verstorbenen Personen und respektierten Nutzungsbedingungen einzelner Plattformen nicht zuverlässig.",
+      "title_de": "PimEyes indexiert hunderte Millionen Gesichter aus dem offenen Web",
+      "description_de": "2017 starteten polnische Entwickler PimEyes als Gesichtssuchmaschine, die das offene Web durchsucht und hunderte Millionen Gesichtsbilder indexiert. Zu jedem hochgeladenen Foto liefert der Dienst passende Online-Aufnahmen. Die Crawler unterschieden nicht zwischen lebenden und verstorbenen Personen und respektierten Nutzungsbedingungen einzelner Plattformen nicht zuverlässig.",
+      "title_en": "PimEyes indexes hundreds of millions of faces from the open web",
+      "description_en": "In 2017, Polish developers launched PimEyes as a face-search engine that crawls the open web and indexes hundreds of millions of facial images. For any uploaded photo, the service returns matching online pictures. Its crawlers did not distinguish between living and deceased people and did not reliably honour individual platforms' terms of service.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/PimEyes"
+      ]
+    },
+    {
+      "date": "2023-01",
+      "phase": "doctrine",
+      "title": "Geschäftsmodell der einwilligungsfreien Massenerfassung erfasst Ahnenarchive",
+      "description": "PimEyes' Geschäftsmodell beruht darauf, möglichst viele öffentlich auffindbare Gesichter zu erfassen, um treffsichere Suchergebnisse zu verkaufen. Die Crawler des Dienstes begannen, auch Genealogie-Portale wie Ancestry.com und den dazugehörigen Friedhofskatalog Find a Grave abzugreifen - obwohl deren Nutzungsbedingungen das Scrapen ausdrücklich untersagen und Ancestry die Suche nach Lebenden aus Datenschutzgründen sperrt.",
+      "title_de": "Geschäftsmodell der einwilligungsfreien Massenerfassung erfasst Ahnenarchive",
+      "description_de": "PimEyes' Geschäftsmodell beruht darauf, möglichst viele öffentlich auffindbare Gesichter zu erfassen, um treffsichere Suchergebnisse zu verkaufen. Die Crawler des Dienstes begannen, auch Genealogie-Portale wie Ancestry.com und den dazugehörigen Friedhofskatalog Find a Grave abzugreifen - obwohl deren Nutzungsbedingungen das Scrapen ausdrücklich untersagen und Ancestry die Suche nach Lebenden aus Datenschutzgründen sperrt.",
+      "title_en": "Consent-free mass-collection business model reaches genealogy archives",
+      "description_en": "PimEyes' business model relies on capturing as many publicly findable faces as possible to sell accurate search results. The service's crawlers began scraping genealogy portals such as Ancestry.com and its affiliated cemetery directory Find a Grave - even though their terms of service expressly forbid scraping and Ancestry blocks searches for living people on privacy grounds.",
+      "sources": [
+        "https://www.techdirt.com/2023/03/22/online-facial-recognition-service-caught-cruising-through-graveyards-to-fill-its-database/"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "event",
+      "title": "Cher Scarlett findet Fotos verstorbener Verwandter in PimEyes",
+      "description": "Im März 2023 deckte die Softwareentwicklerin Cher Scarlett auf, dass PimEyes Fotos verstorbener Personen aus von Familien hochgeladenen Ancestry-Bildern erfasst hatte. Bei der Suche nach sich selbst stieß sie auf Aufnahmen ihrer 2018 verstorbenen Schwester, ihrer Mutter als Säugling und einer Vorfahrin aus dem 19. Jahrhundert. Die Bilder stammten aus Ancestry und dem Online-Gedenkkatalog Find a Grave.",
+      "title_de": "Cher Scarlett findet Fotos verstorbener Verwandter in PimEyes",
+      "description_de": "Im März 2023 deckte die Softwareentwicklerin Cher Scarlett auf, dass PimEyes Fotos verstorbener Personen aus von Familien hochgeladenen Ancestry-Bildern erfasst hatte. Bei der Suche nach sich selbst stieß sie auf Aufnahmen ihrer 2018 verstorbenen Schwester, ihrer Mutter als Säugling und einer Vorfahrin aus dem 19. Jahrhundert. Die Bilder stammten aus Ancestry und dem Online-Gedenkkatalog Find a Grave.",
+      "title_en": "Cher Scarlett finds photos of deceased relatives in PimEyes",
+      "description_en": "In March 2023, software engineer Cher Scarlett revealed that PimEyes had collected photos of deceased people from family-uploaded Ancestry images. Searching for herself, she came across pictures of her sister, who died in 2018, her mother as an infant, and a 19th-century ancestor. The images came from Ancestry and the online memorial directory Find a Grave.",
+      "sources": [
+        "https://futurism.com/pictures-dead-people-facial-recognition-algorithm"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "consequences",
+      "title": "PimEyes nennt Erfassung unbeabsichtigt und sperrt Ancestry",
+      "description": "Nach der Aufdeckung bezeichnete PimEyes das Abgreifen der Ancestry-Bilder als unbeabsichtigten Fehler, blockierte die Domain für seine Crawler und kündigte an, die zugehörigen Indizes zu löschen. Der Fall verschärfte die Debatte darüber, dass Verstorbene einer Verwendung ihrer Bilder nicht zustimmen können und Gesichtssuchmaschinen Stalking sowie Re-Identifikation auch über den Tod hinaus ermöglichen.",
+      "title_de": "PimEyes nennt Erfassung unbeabsichtigt und sperrt Ancestry",
+      "description_de": "Nach der Aufdeckung bezeichnete PimEyes das Abgreifen der Ancestry-Bilder als unbeabsichtigten Fehler, blockierte die Domain für seine Crawler und kündigte an, die zugehörigen Indizes zu löschen. Der Fall verschärfte die Debatte darüber, dass Verstorbene einer Verwendung ihrer Bilder nicht zustimmen können und Gesichtssuchmaschinen Stalking sowie Re-Identifikation auch über den Tod hinaus ermöglichen.",
+      "title_en": "PimEyes calls the collection unintentional and blocks Ancestry",
+      "description_en": "After the disclosure, PimEyes called the scraping of Ancestry images an unintentional mistake, blocked the domain from its crawlers, and announced it would erase the related indexes. The case sharpened the debate that the deceased cannot consent to the use of their images and that face-search engines enable stalking and re-identification even beyond death.",
+      "sources": [
+        "https://petapixel.com/2023/03/13/facial-recognition-site-scraped-dead-people-photos-without-permission/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://petapixel.com/2023/03/13/facial-recognition-site-scraped-dead-people-photos-without-permission/",

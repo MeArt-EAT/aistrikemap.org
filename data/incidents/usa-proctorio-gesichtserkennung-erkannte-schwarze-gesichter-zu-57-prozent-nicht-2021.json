@@ -26,9 +26,27 @@
     "facial-recognition",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Recht auf Bildung",
+    "Datenschutz",
+    "Privatsphäre",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Recht auf Bildung",
+    "Datenschutz",
+    "Privatsphäre",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Right to education",
+    "Data protection",
+    "Privacy",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Proctorio",
@@ -42,7 +60,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Proctorio baut auf quelloffenen OpenCV-Gesichtserkennungsmodellen auf",
+      "description": "Die Prüfungsüberwachungssoftware Proctorio nutzt zur Gesichtserkennung Modelle, die mit den frei verfügbaren OpenCV-Klassifikatoren identisch sind. Diese klassischen Modelle sind seit Langem dafür bekannt, bei dunkleren Hauttönen schlechter abzuschneiden, da ihre Trainings- und Testdaten überwiegend helle Gesichter enthielten. Damit war die Verzerrung bereits in der technischen Grundlage angelegt.",
+      "title_de": "Proctorio baut auf quelloffenen OpenCV-Gesichtserkennungsmodellen auf",
+      "description_de": "Die Prüfungsüberwachungssoftware Proctorio nutzt zur Gesichtserkennung Modelle, die mit den frei verfügbaren OpenCV-Klassifikatoren identisch sind. Diese klassischen Modelle sind seit Langem dafür bekannt, bei dunkleren Hauttönen schlechter abzuschneiden, da ihre Trainings- und Testdaten überwiegend helle Gesichter enthielten. Damit war die Verzerrung bereits in der technischen Grundlage angelegt.",
+      "title_en": "Proctorio builds on open-source OpenCV face-detection models",
+      "description_en": "The exam-monitoring software Proctorio uses face-detection models identical to the freely available OpenCV classifiers. These classic models have long been known to perform worse on darker skin tones, as their training and test data contained predominantly light-skinned faces. The bias was thus baked into the technical foundation.",
+      "sources": [
+        "https://www.vice.com/en/article/proctorio-is-using-racist-algorithms-to-detect-faces/"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Pandemie macht Fernüberwachung von Prüfungen zum Massenstandard",
+      "description": "Mit der Umstellung auf Fernlehre während der COVID-19-Pandemie führten zahlreiche US-Hochschulen verpflichtende KI-gestützte Prüfungsüberwachung ein. Proctorio überwachte nach Angaben von TechCrunch über 16 Millionen Prüfungen. Diese institutionelle Vorgabe zwang Studierende, sich der automatisierten Gesichtserkennung zu unterwerfen, um überhaupt Prüfungen ablegen zu können.",
+      "title_de": "Pandemie macht Fernüberwachung von Prüfungen zum Massenstandard",
+      "description_de": "Mit der Umstellung auf Fernlehre während der COVID-19-Pandemie führten zahlreiche US-Hochschulen verpflichtende KI-gestützte Prüfungsüberwachung ein. Proctorio überwachte nach Angaben von TechCrunch über 16 Millionen Prüfungen. Diese institutionelle Vorgabe zwang Studierende, sich der automatisierten Gesichtserkennung zu unterwerfen, um überhaupt Prüfungen ablegen zu können.",
+      "title_en": "Pandemic makes remote exam monitoring a mass standard",
+      "description_en": "With the shift to remote learning during the COVID-19 pandemic, many US universities introduced mandatory AI-assisted exam monitoring. According to TechCrunch, Proctorio monitored over 16 million exams. This institutional mandate forced students to submit to automated facial detection in order to take exams at all.",
+      "sources": [
+        "https://www.insidehighered.com/quicktakes/2021/04/06/proctoring-tool-failed-recognize-dark-skin-students-say"
+      ]
+    },
+    {
+      "date": "2021-04",
+      "phase": "event",
+      "title": "Analyse zeigt: Proctorio erkennt 57 Prozent der Schwarzen Gesichter nicht",
+      "description": "Im April 2021 analysierte der Student und Forscher Akash Satheesan den Code der Proctorio-Erweiterung und wies nach, dass deren Gesichtserkennung auf OpenCV-Modellen beruht. In Tests mit fast 11.000 Gesichtern des FairFaces-Datensatzes erkannte das System Schwarze Gesichter in 57 Prozent der Fälle nicht; bei weißen Gesichtern lag die Fehlerquote deutlich niedriger. Ein von Vice/Motherboard hinzugezogener Sicherheitsforscher bestätigte die Befunde.",
+      "title_de": "Analyse zeigt: Proctorio erkennt 57 Prozent der Schwarzen Gesichter nicht",
+      "description_de": "Im April 2021 analysierte der Student und Forscher Akash Satheesan den Code der Proctorio-Erweiterung und wies nach, dass deren Gesichtserkennung auf OpenCV-Modellen beruht. In Tests mit fast 11.000 Gesichtern des FairFaces-Datensatzes erkannte das System Schwarze Gesichter in 57 Prozent der Fälle nicht; bei weißen Gesichtern lag die Fehlerquote deutlich niedriger. Ein von Vice/Motherboard hinzugezogener Sicherheitsforscher bestätigte die Befunde.",
+      "title_en": "Analysis shows Proctorio fails to detect 57 percent of Black faces",
+      "description_en": "In April 2021, student and researcher Akash Satheesan analysed the code of the Proctorio extension and showed its facial detection relied on OpenCV models. In tests with nearly 11,000 faces from the FairFaces dataset, the system failed to detect Black faces 57 percent of the time, with a much lower error rate for white faces. A security researcher consulted by Vice/Motherboard reproduced the findings.",
+      "sources": [
+        "https://www.vice.com/en/article/proctorio-is-using-racist-algorithms-to-detect-faces/"
+      ]
+    },
+    {
+      "date": "2021-04-22",
+      "phase": "consequences",
+      "title": "EFF verklagt Proctorio wegen missbräuchlicher DMCA-Sperrung kritischer Tweets",
+      "description": "Die Electronic Frontier Foundation verklagte Proctorio im April 2021 im Namen des Studenten Erik Johnson, dessen kritische Tweets über den Quellcode der Software das Unternehmen zuvor per DMCA-Urheberrechtsanspruch hatte sperren lassen. Bereits Ende 2020 hatten US-Senatoren wie Blumenthal, Warren und Booker in einem offenen Brief Bedenken gegen Fernüberwachungssoftware geäußert. Der Rechtsstreit endete im März 2022 mit einem Vergleich zugunsten Johnsons.",
+      "title_de": "EFF verklagt Proctorio wegen missbräuchlicher DMCA-Sperrung kritischer Tweets",
+      "description_de": "Die Electronic Frontier Foundation verklagte Proctorio im April 2021 im Namen des Studenten Erik Johnson, dessen kritische Tweets über den Quellcode der Software das Unternehmen zuvor per DMCA-Urheberrechtsanspruch hatte sperren lassen. Bereits Ende 2020 hatten US-Senatoren wie Blumenthal, Warren und Booker in einem offenen Brief Bedenken gegen Fernüberwachungssoftware geäußert. Der Rechtsstreit endete im März 2022 mit einem Vergleich zugunsten Johnsons.",
+      "title_en": "EFF sues Proctorio over abusive DMCA takedown of critical tweets",
+      "description_en": "In April 2021, the Electronic Frontier Foundation sued Proctorio on behalf of student Erik Johnson, whose critical tweets about the software's source code the company had taken down via a DMCA copyright claim. Already in late 2020, US senators such as Blumenthal, Warren and Booker had raised concerns about remote monitoring software in an open letter. The case ended in March 2022 with a settlement in Johnson's favor.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2022/03/eff-client-eric-johnson-and-proctorio-settle-lawsuit-over-bogus-dmca-claims"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.vice.com/en/article/proctorio-is-using-racist-algorithms-to-detect-faces/",

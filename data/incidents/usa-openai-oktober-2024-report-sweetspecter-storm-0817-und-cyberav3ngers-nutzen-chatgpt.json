@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-openai-oktober-2024-report-sweetspecter-storm-0817-und-cyberav3ngers-nutzen-chatgpt",
-  "name": "Global: OpenAI Oktober-2024-Report — SweetSpecter, Storm-0817 und CyberAv3ngers nutzen ChatGPT für Malware und Spear-Phishing",
-  "name_de": "Global: OpenAI Oktober-2024-Report — SweetSpecter, Storm-0817 und CyberAv3ngers nutzen ChatGPT für Malware und Spear-Phishing",
-  "name_en": "Global: OpenAI October 2024 report — SweetSpecter, Storm-0817 and CyberAv3ngers use ChatGPT for malware and spear phishing",
+  "name": "Global: OpenAI Oktober-2024-Report - SweetSpecter, Storm-0817 und CyberAv3ngers nutzen ChatGPT für Malware und Spear-Phishing",
+  "name_de": "Global: OpenAI Oktober-2024-Report - SweetSpecter, Storm-0817 und CyberAv3ngers nutzen ChatGPT für Malware und Spear-Phishing",
+  "name_en": "Global: OpenAI October 2024 report - SweetSpecter, Storm-0817 and CyberAv3ngers use ChatGPT for malware and spear phishing",
   "description": "Im Oktober-2024-Threat-Report 'Influence and Cyber Operations: An Update' dokumentierte OpenAI über 20 disruptierte Operationen seit Anfang 2024. Drei Cybercrime-Fälle stachen heraus: (1) SweetSpecter (China) griff OpenAI-Mitarbeitende direkt mit Spear-Phishing-ZIPs an, die SugarGh0st-RAT droppten, nutzte ChatGPT zur Log4Shell-Vulnerability-Recherche und Skript-Debugging; (2) Storm-0817 (Iran) entwickelte mit ChatGPT-Hilfe eine rudimentäre Android-Surveillanceware (Pakete com.example.myttt, com.mihanwebmaster.ashpazi) plus WAMP-C2-Server und scrapte Instagram-Follower eines regierungskritischen iranischen Journalisten; (3) CyberAv3ngers (Iran/IRGC) recherchierte ICS-/Wasserwerk-Schwachstellen.",
   "description_de": "Im Oktober-2024-Threat-Report 'Influence and Cyber Operations: An Update' dokumentierte OpenAI über 20 disruptierte Operationen seit Anfang 2024. Drei Cybercrime-Fälle stachen heraus: (1) SweetSpecter (China) griff OpenAI-Mitarbeitende direkt mit Spear-Phishing-ZIPs an, die SugarGh0st-RAT droppten, nutzte ChatGPT zur Log4Shell-Vulnerability-Recherche und Skript-Debugging; (2) Storm-0817 (Iran) entwickelte mit ChatGPT-Hilfe eine rudimentäre Android-Surveillanceware (Pakete com.example.myttt, com.mihanwebmaster.ashpazi) plus WAMP-C2-Server und scrapte Instagram-Follower eines regierungskritischen iranischen Journalisten; (3) CyberAv3ngers (Iran/IRGC) recherchierte ICS-/Wasserwerk-Schwachstellen.",
   "description_en": "In its October 2024 threat report 'Influence and Cyber Operations: An Update' OpenAI documented over 20 disrupted operations since the start of 2024. Three cybercrime cases stood out: (1) SweetSpecter (China) targeted OpenAI staff directly with spear-phishing ZIPs dropping SugarGh0st RAT, used ChatGPT for Log4Shell vulnerability research and script debugging; (2) Storm-0817 (Iran) used ChatGPT to develop rudimentary Android surveillanceware (packages com.example.myttt, com.mihanwebmaster.ashpazi) plus a WAMP C2 server, and scraped Instagram followers of an Iranian dissident journalist; (3) CyberAv3ngers (Iran/IRGC) researched ICS and water-utility vulnerabilities.",
@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf Privatsphäre",
+    "Pressefreiheit",
+    "Datenschutz",
+    "Schutz kritischer Infrastruktur"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf Privatsphäre",
+    "Pressefreiheit",
+    "Datenschutz",
+    "Schutz kritischer Infrastruktur"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to privacy",
+    "Freedom of the press",
+    "Data protection",
+    "Protection of critical infrastructure"
+  ],
   "asm:actors": [
     {
       "name": "SweetSpecter (China)",
@@ -66,7 +84,58 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-03",
+      "phase": "infrastructure",
+      "title": "GPT-4 wird breit verfügbar und wird zum Werkzeug für Cyber-Akteure",
+      "description": "Mit dem Start von GPT-4 im März 2023 und der wachsenden Verbreitung von ChatGPT entsteht ein universell zugängliches Hilfsmittel für Programmierung, Recherche und Texterstellung. Staatsnahe und kriminelle Gruppen beginnen, das Modell für Skript-Debugging, Schwachstellen-Recherche und das Verfassen von Phishing-Inhalten zu erproben.",
+      "title_de": "GPT-4 wird breit verfügbar und wird zum Werkzeug für Cyber-Akteure",
+      "description_de": "Mit dem Start von GPT-4 im März 2023 und der wachsenden Verbreitung von ChatGPT entsteht ein universell zugängliches Hilfsmittel für Programmierung, Recherche und Texterstellung. Staatsnahe und kriminelle Gruppen beginnen, das Modell für Skript-Debugging, Schwachstellen-Recherche und das Verfassen von Phishing-Inhalten zu erproben.",
+      "title_en": "GPT-4 becomes widely available and a tool for cyber actors",
+      "description_en": "With the launch of GPT-4 in March 2023 and the growing spread of ChatGPT, a universally accessible aid for coding, research and text generation emerges. State-linked and criminal groups begin testing the model for script debugging, vulnerability research and drafting phishing content.",
+      "sources": []
+    },
+    {
+      "date": "2023-11-25",
+      "phase": "doctrine",
+      "title": "CyberAv3ngers attackieren US-Wasserwerk und werden zur dokumentierten IRGC-Bedrohung",
+      "description": "Die IRGC-nahe Gruppe CyberAv3ngers kompromittiert eine Unitronics-Steuerung (PLC) der Municipal Water Authority of Aliquippa in Pennsylvania und hinterlässt die Botschaft 'down with Israel'. Der Angriff macht die Gruppe zur priorisierten Beobachtung westlicher Sicherheitsbehörden - dieselbe Akteursklasse, deren spätere ChatGPT-Nutzung OpenAI im Threat-Report dokumentiert.",
+      "title_de": "CyberAv3ngers attackieren US-Wasserwerk und werden zur dokumentierten IRGC-Bedrohung",
+      "description_de": "Die IRGC-nahe Gruppe CyberAv3ngers kompromittiert eine Unitronics-Steuerung (PLC) der Municipal Water Authority of Aliquippa in Pennsylvania und hinterlässt die Botschaft 'down with Israel'. Der Angriff macht die Gruppe zur priorisierten Beobachtung westlicher Sicherheitsbehörden - dieselbe Akteursklasse, deren spätere ChatGPT-Nutzung OpenAI im Threat-Report dokumentiert.",
+      "title_en": "CyberAv3ngers attack US water utility and become a documented IRGC threat",
+      "description_en": "The IRGC-linked group CyberAv3ngers compromises a Unitronics programmable logic controller at the Municipal Water Authority of Aliquippa, Pennsylvania, leaving a 'down with Israel' message. The attack makes the group a priority target for Western security agencies - the same class of actor whose later ChatGPT use OpenAI documents in its threat report.",
+      "sources": [
+        "https://www.cbsnews.com/pittsburgh/news/municipal-water-authority-of-aliquippa-hacked-iranian-backed-cyber-group/"
+      ]
+    },
+    {
+      "date": "2024-10-09",
+      "phase": "event",
+      "title": "OpenAI-Threat-Report dokumentiert ChatGPT-Missbrauch durch drei Cyber-Akteure",
+      "description": "Im Report 'Influence and Cyber Operations: An Update' weist OpenAI über 20 disruptierte Operationen seit Jahresanfang nach. SweetSpecter (China) griff OpenAI-Mitarbeitende per Spear-Phishing mit SugarGh0st-RAT an und recherchierte Log4Shell; Storm-0817 (Iran) baute mit ChatGPT eine Android-Surveillanceware samt C2-Server und scrapte Instagram-Follower eines regierungskritischen Journalisten; CyberAv3ngers (IRGC) recherchierte ICS- und PLC-Schwachstellen.",
+      "title_de": "OpenAI-Threat-Report dokumentiert ChatGPT-Missbrauch durch drei Cyber-Akteure",
+      "description_de": "Im Report 'Influence and Cyber Operations: An Update' weist OpenAI über 20 disruptierte Operationen seit Jahresanfang nach. SweetSpecter (China) griff OpenAI-Mitarbeitende per Spear-Phishing mit SugarGh0st-RAT an und recherchierte Log4Shell; Storm-0817 (Iran) baute mit ChatGPT eine Android-Surveillanceware samt C2-Server und scrapte Instagram-Follower eines regierungskritischen Journalisten; CyberAv3ngers (IRGC) recherchierte ICS- und PLC-Schwachstellen.",
+      "title_en": "OpenAI threat report documents ChatGPT misuse by three cyber actors",
+      "description_en": "In its report 'Influence and Cyber Operations: An Update', OpenAI documents over 20 disrupted operations since the start of the year. SweetSpecter (China) spear-phished OpenAI staff with the SugarGh0st RAT and researched Log4Shell; Storm-0817 (Iran) used ChatGPT to build Android surveillanceware with a C2 server and scraped Instagram followers of a dissident journalist; CyberAv3ngers (IRGC) researched ICS and PLC vulnerabilities.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/openai-confirms-threat-actors-use-chatgpt-to-write-malware/"
+      ]
+    },
+    {
+      "date": "2024-10-10",
+      "phase": "consequences",
+      "title": "Konten gesperrt - OpenAI bewertet KI-Beitrag als begrenzt und inkrementell",
+      "description": "OpenAI deaktiviert die identifizierten Konten und teilt Indikatoren mit Sicherheitspartnern. Keine der Operationen erreichte mehr als 2 von 6 Punkten auf OpenAIs Breakout-Skala; das Unternehmen folgert, dass die Modelle nur begrenzte, inkrementelle Vorteile gegenüber frei verfügbaren Nicht-KI-Werkzeugen boten. Der Fall verstärkt die Debatte über staatliche KI-gestützte Cyberoperationen im globalen Wahljahr 2024.",
+      "title_de": "Konten gesperrt - OpenAI bewertet KI-Beitrag als begrenzt und inkrementell",
+      "description_de": "OpenAI deaktiviert die identifizierten Konten und teilt Indikatoren mit Sicherheitspartnern. Keine der Operationen erreichte mehr als 2 von 6 Punkten auf OpenAIs Breakout-Skala; das Unternehmen folgert, dass die Modelle nur begrenzte, inkrementelle Vorteile gegenüber frei verfügbaren Nicht-KI-Werkzeugen boten. Der Fall verstärkt die Debatte über staatliche KI-gestützte Cyberoperationen im globalen Wahljahr 2024.",
+      "title_en": "Accounts disabled - OpenAI rates AI contribution as limited and incremental",
+      "description_en": "OpenAI disables the identified accounts and shares indicators with security partners. None of the operations scored higher than 2 of 6 on OpenAI's Breakout Scale; the company concludes the models offered only limited, incremental advantages over freely available non-AI tools. The case intensifies the debate over state AI-assisted cyber operations in the global election year 2024.",
+      "sources": [
+        "https://thehackernews.com/2024/10/openai-blocks-20-global-malicious.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf",

@@ -27,9 +27,27 @@
     "political-pressure",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf freie und faire Wahlen",
+    "Meinungsfreiheit",
+    "Recht auf wahrheitsgemäße Information",
+    "Demokratische Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf freie und faire Wahlen",
+    "Meinungsfreiheit",
+    "Recht auf wahrheitsgemäße Information",
+    "Demokratische Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to free and fair elections",
+    "Freedom of expression",
+    "Right to truthful information",
+    "Democratic self-determination"
+  ],
   "asm:actors": [
     {
       "name": "Storm-2035 (Iranian influence operation)",
@@ -51,7 +69,58 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Generative KI senkt die Kosten für skalierbare Propaganda-Texte",
+      "description": "Mit der breiten Verfügbarkeit von ChatGPT und GPT-4 lassen sich überzeugend wirkende Artikel und Social-Media-Kommentare in mehreren Sprachen massenhaft und billig erzeugen. Für Einflussoperationen entfällt damit der personelle Engpass beim Verfassen glaubwürdiger Inhalte in der Zielsprache.",
+      "title_de": "Generative KI senkt die Kosten für skalierbare Propaganda-Texte",
+      "description_de": "Mit der breiten Verfügbarkeit von ChatGPT und GPT-4 lassen sich überzeugend wirkende Artikel und Social-Media-Kommentare in mehreren Sprachen massenhaft und billig erzeugen. Für Einflussoperationen entfällt damit der personelle Engpass beim Verfassen glaubwürdiger Inhalte in der Zielsprache.",
+      "title_en": "Generative AI lowers the cost of scalable propaganda text",
+      "description_en": "With the wide availability of ChatGPT and GPT-4, persuasive-seeming articles and social media comments can be mass-produced cheaply in multiple languages. For influence operations this removes the staffing bottleneck in writing credible target-language content.",
+      "sources": []
+    },
+    {
+      "date": "2024-08",
+      "phase": "doctrine",
+      "title": "Microsoft Threat Intelligence ordnet 'Storm-2035' iranischen Einflussaktivitäten zu",
+      "description": "Microsofts Threat Analysis Center (MTAC) identifiziert die Gruppe 'Storm-2035' als Teil iranischer Bemühungen, die US-Wahl 2024 über getarnte Nachrichtenportale zu beeinflussen, die sich an Wählergruppen beider politischer Lager richten. Diese Zuordnung liefert OpenAI die Grundlage, die parallel beobachteten ChatGPT-Konten demselben Akteur zuzurechnen.",
+      "title_de": "Microsoft Threat Intelligence ordnet 'Storm-2035' iranischen Einflussaktivitäten zu",
+      "description_de": "Microsofts Threat Analysis Center (MTAC) identifiziert die Gruppe 'Storm-2035' als Teil iranischer Bemühungen, die US-Wahl 2024 über getarnte Nachrichtenportale zu beeinflussen, die sich an Wählergruppen beider politischer Lager richten. Diese Zuordnung liefert OpenAI die Grundlage, die parallel beobachteten ChatGPT-Konten demselben Akteur zuzurechnen.",
+      "title_en": "Microsoft Threat Intelligence attributes 'Storm-2035' to Iranian influence activity",
+      "description_en": "Microsoft's Threat Analysis Center (MTAC) identifies the group 'Storm-2035' as part of Iranian efforts to influence the 2024 US election through disguised news portals aimed at voters across both political camps. This attribution gives OpenAI the basis to link the ChatGPT accounts it observed to the same actor.",
+      "sources": [
+        "https://thehackernews.com/2024/08/openai-blocks-iranian-influence.html"
+      ]
+    },
+    {
+      "date": "2024-08-16",
+      "phase": "event",
+      "title": "OpenAI sperrt Storm-2035-Konten wegen KI-generierter Wahlpropaganda",
+      "description": "OpenAI deaktiviert ein Cluster von ChatGPT-Konten, die mit ChatGPT langformatige Artikel und kurze Kommentare zu US-Wahl, Israel-Gaza-Krieg, Olympia und Venezuela erzeugten. Die Inhalte erschienen auf fünf Websites, die sich als progressive bzw. konservative US-Nachrichtenportale tarnten, sowie über rund ein Dutzend X-Konten und ein Instagram-Konto.",
+      "title_de": "OpenAI sperrt Storm-2035-Konten wegen KI-generierter Wahlpropaganda",
+      "description_de": "OpenAI deaktiviert ein Cluster von ChatGPT-Konten, die mit ChatGPT langformatige Artikel und kurze Kommentare zu US-Wahl, Israel-Gaza-Krieg, Olympia und Venezuela erzeugten. Die Inhalte erschienen auf fünf Websites, die sich als progressive bzw. konservative US-Nachrichtenportale tarnten, sowie über rund ein Dutzend X-Konten und ein Instagram-Konto.",
+      "title_en": "OpenAI bans Storm-2035 accounts over AI-generated election propaganda",
+      "description_en": "OpenAI disables a cluster of ChatGPT accounts that used the model to generate long-form articles and short comments on the US election, the Israel-Gaza war, the Olympics and Venezuela. The content appeared on five websites posing as progressive or conservative US news outlets, plus roughly a dozen X accounts and one Instagram account.",
+      "sources": [
+        "https://www.npr.org/2024/08/17/nx-s1-5079397/openai-chatgpt-iranian-group-us-election"
+      ]
+    },
+    {
+      "date": "2024-08-17",
+      "phase": "consequences",
+      "title": "Kaum Reichweite, aber Beleg für KI-gestützte Wahlbeeinflussung",
+      "description": "OpenAI berichtet, die Posts hätten kaum messbare Interaktion erzielt; die meisten Beiträge blieben ohne nennenswerte Likes, Shares oder Kommentare. Der Fall wird dennoch breit als früher dokumentierter Beleg dafür gewertet, dass staatliche Akteure generative KI gezielt zur Beeinflussung der US-Wahl 2024 einsetzen, und fließt in OpenAIs Oktober-Threat-Report ein.",
+      "title_de": "Kaum Reichweite, aber Beleg für KI-gestützte Wahlbeeinflussung",
+      "description_de": "OpenAI berichtet, die Posts hätten kaum messbare Interaktion erzielt; die meisten Beiträge blieben ohne nennenswerte Likes, Shares oder Kommentare. Der Fall wird dennoch breit als früher dokumentierter Beleg dafür gewertet, dass staatliche Akteure generative KI gezielt zur Beeinflussung der US-Wahl 2024 einsetzen, und fließt in OpenAIs Oktober-Threat-Report ein.",
+      "title_en": "Little reach, but evidence of AI-assisted election interference",
+      "description_en": "OpenAI reports the posts achieved negligible measurable engagement, with most receiving few likes, shares or comments. The case is nonetheless widely cited as early documented evidence that state actors deliberately used generative AI to influence the 2024 US election, and feeds into OpenAI's October threat report.",
+      "sources": [
+        "https://www.iranintl.com/en/202408172236"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://openai.com/index/disrupting-a-covert-iranian-influence-operation/",

@@ -31,9 +31,27 @@
     "data-misuse",
     "political-pressure"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz kritischer Infrastruktur",
+    "Nationale und kollektive Sicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz kritischer Infrastruktur",
+    "Nationale und kollektive Sicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to privacy",
+    "Data protection",
+    "Protection of critical infrastructure",
+    "National and collective security"
+  ],
   "asm:actors": [
     {
       "name": "Forest Blizzard (Russia, GRU 26165)",
@@ -83,7 +101,58 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-03",
+      "phase": "infrastructure",
+      "title": "GPT-4 und ChatGPT werden zur global zugänglichen Programmier- und Recherche-Hilfe",
+      "description": "Mit dem Start von GPT-4 im März 2023 steht ein leistungsfähiges Sprachmodell für Recherche, Übersetzung, Skripting und Code-Debugging breit zur Verfügung. OpenAI bindet das Modell über Microsoft Azure auch in Microsofts Ökosystem ein - dieselbe Infrastruktur, deren Missbrauch beide Unternehmen später gemeinsam aufdecken.",
+      "title_de": "GPT-4 und ChatGPT werden zur global zugänglichen Programmier- und Recherche-Hilfe",
+      "description_de": "Mit dem Start von GPT-4 im März 2023 steht ein leistungsfähiges Sprachmodell für Recherche, Übersetzung, Skripting und Code-Debugging breit zur Verfügung. OpenAI bindet das Modell über Microsoft Azure auch in Microsofts Ökosystem ein - dieselbe Infrastruktur, deren Missbrauch beide Unternehmen später gemeinsam aufdecken.",
+      "title_en": "GPT-4 and ChatGPT become a globally accessible coding and research aid",
+      "description_en": "With the launch of GPT-4 in March 2023, a powerful language model becomes widely available for research, translation, scripting and code debugging. OpenAI also integrates the model into Microsoft's ecosystem via Azure - the same infrastructure whose misuse both companies later expose together.",
+      "sources": []
+    },
+    {
+      "date": "2023-06",
+      "phase": "doctrine",
+      "title": "Microsoft Threat Intelligence verfolgt staatliche Akteure mit Wetter-Codenamen",
+      "description": "Microsofts Threat-Intelligence-Einheit etabliert ein Benennungsschema, das staatlich gelenkte Akteure nach Wetterphänomenen kategorisiert (Blizzard für Russland, Typhoon für China, Sandstorm für Iran, Sleet für Nordkorea). In Kombination mit OpenAIs Nutzungsrichtlinien und internen Red-Team-Tests entsteht die Grundlage, KI-Missbrauch konkreten Gruppen zuzuordnen und Konten zu sperren.",
+      "title_de": "Microsoft Threat Intelligence verfolgt staatliche Akteure mit Wetter-Codenamen",
+      "description_de": "Microsofts Threat-Intelligence-Einheit etabliert ein Benennungsschema, das staatlich gelenkte Akteure nach Wetterphänomenen kategorisiert (Blizzard für Russland, Typhoon für China, Sandstorm für Iran, Sleet für Nordkorea). In Kombination mit OpenAIs Nutzungsrichtlinien und internen Red-Team-Tests entsteht die Grundlage, KI-Missbrauch konkreten Gruppen zuzuordnen und Konten zu sperren.",
+      "title_en": "Microsoft Threat Intelligence tracks state actors with weather codenames",
+      "description_en": "Microsoft's threat intelligence unit establishes a naming scheme categorising state-affiliated actors by weather phenomena (Blizzard for Russia, Typhoon for China, Sandstorm for Iran, Sleet for North Korea). Combined with OpenAI's usage policies and internal red-team testing, this forms the basis for attributing AI misuse to specific groups and disabling accounts.",
+      "sources": [
+        "https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/"
+      ]
+    },
+    {
+      "date": "2024-02-14",
+      "phase": "event",
+      "title": "OpenAI und Microsoft sperren fünf staatlich gelenkte Akteure",
+      "description": "OpenAI und Microsoft Threat Intelligence geben gemeinsam die Sperrung der Konten von fünf staatlich gelenkten Akteuren bekannt: Forest Blizzard (Russland/GRU, Satelliten- und Radar-Recherche zur Ukraine), Charcoal Typhoon und Salmon Typhoon (China), Crimson Sandstorm (Iran/IRGC) und Emerald Sleet (Nordkorea/Kimsuky). Die Akteure nutzten ChatGPT vor allem für Recherche, Skripting, Übersetzung und Phishing-Inhalte.",
+      "title_de": "OpenAI und Microsoft sperren fünf staatlich gelenkte Akteure",
+      "description_de": "OpenAI und Microsoft Threat Intelligence geben gemeinsam die Sperrung der Konten von fünf staatlich gelenkten Akteuren bekannt: Forest Blizzard (Russland/GRU, Satelliten- und Radar-Recherche zur Ukraine), Charcoal Typhoon und Salmon Typhoon (China), Crimson Sandstorm (Iran/IRGC) und Emerald Sleet (Nordkorea/Kimsuky). Die Akteure nutzten ChatGPT vor allem für Recherche, Skripting, Übersetzung und Phishing-Inhalte.",
+      "title_en": "OpenAI and Microsoft disable five state-affiliated actors",
+      "description_en": "OpenAI and Microsoft Threat Intelligence jointly disclose the termination of accounts belonging to five state-affiliated actors: Forest Blizzard (Russia/GRU, satellite and radar research tied to Ukraine), Charcoal Typhoon and Salmon Typhoon (China), Crimson Sandstorm (Iran/IRGC) and Emerald Sleet (North Korea/Kimsuky). The actors used ChatGPT mainly for research, scripting, translation and phishing content.",
+      "sources": [
+        "https://openai.com/index/disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors/"
+      ]
+    },
+    {
+      "date": "2024-02-14",
+      "phase": "consequences",
+      "title": "Konten geschlossen - Befund: nur begrenzter, inkrementeller KI-Vorteil",
+      "description": "Alle betroffenen Konten werden geschlossen. OpenAI bewertet die Aktivitäten als konsistent mit früheren Red-Team-Tests: GPT-4 biete für bösartige Cyber-Aufgaben nur begrenzte, inkrementelle Fähigkeiten über frei verfügbare Nicht-KI-Werkzeuge hinaus. Microsoft kündigt Prinzipien zur Bekämpfung staatlichen KI-Missbrauchs an; die Offenlegung gilt als erster großer Industrie-Bericht zu staatlicher LLM-Cybernutzung.",
+      "title_de": "Konten geschlossen - Befund: nur begrenzter, inkrementeller KI-Vorteil",
+      "description_de": "Alle betroffenen Konten werden geschlossen. OpenAI bewertet die Aktivitäten als konsistent mit früheren Red-Team-Tests: GPT-4 biete für bösartige Cyber-Aufgaben nur begrenzte, inkrementelle Fähigkeiten über frei verfügbare Nicht-KI-Werkzeuge hinaus. Microsoft kündigt Prinzipien zur Bekämpfung staatlichen KI-Missbrauchs an; die Offenlegung gilt als erster großer Industrie-Bericht zu staatlicher LLM-Cybernutzung.",
+      "title_en": "Accounts closed - finding: only limited, incremental AI advantage",
+      "description_en": "All affected accounts are closed. OpenAI assesses the activity as consistent with prior red-team testing: GPT-4 offers only limited, incremental capabilities for malicious cyber tasks beyond freely available non-AI tools. Microsoft announces principles to counter state AI misuse; the disclosure is regarded as the first major industry report on state LLM cyber use.",
+      "sources": [
+        "https://www.cybersecuritydive.com/news/openai-microsoft-state-actors-ai/707661/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors/",

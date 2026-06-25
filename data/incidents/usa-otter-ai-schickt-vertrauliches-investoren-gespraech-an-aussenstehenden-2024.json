@@ -26,9 +26,27 @@
     "data-misuse",
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vertraulicher Kommunikation",
+    "Recht auf informationelle Selbstbestimmung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vertraulicher Kommunikation",
+    "Recht auf informationelle Selbstbestimmung",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Protection of confidential communication",
+    "Right to informational self-determination",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Otter.AI",
@@ -40,7 +58,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Otter.ai etabliert KI-Transkription als stillen Meeting-Teilnehmer",
+      "description": "Otter.ai brachte einen KI-Transkriptionsdienst auf den Markt, der sich als eigener Teilnehmer in Zoom-, Teams- und Meet-Konferenzen einklinkt, das Gespräch mitschneidet und automatisch in Text umwandelt. Das Geschäftsmodell setzt auf Bequemlichkeit: Transkripte werden ohne aktives Zutun erstellt und gespeichert - die technische Grundlage dafür, dass auch nicht freigegebene Inhalte erfasst werden.",
+      "title_de": "Otter.ai etabliert KI-Transkription als stillen Meeting-Teilnehmer",
+      "description_de": "Otter.ai brachte einen KI-Transkriptionsdienst auf den Markt, der sich als eigener Teilnehmer in Zoom-, Teams- und Meet-Konferenzen einklinkt, das Gespräch mitschneidet und automatisch in Text umwandelt. Das Geschäftsmodell setzt auf Bequemlichkeit: Transkripte werden ohne aktives Zutun erstellt und gespeichert - die technische Grundlage dafür, dass auch nicht freigegebene Inhalte erfasst werden.",
+      "title_en": "Otter.ai establishes AI transcription as a silent meeting participant",
+      "description_en": "Otter.ai launched an AI transcription service that joins Zoom, Teams and Meet calls as its own participant, records the conversation and automatically turns it into text. The business model relies on convenience: transcripts are produced and stored without active user intervention - the technical basis for capturing content that was never meant to be shared.",
+      "sources": [
+        "https://www.entrepreneur.com/business-news/ai-transcription-services-are-spilling-company-secrets/480671"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Automatischer Versand an alle Eingeladenen - auch nach dem Call",
+      "description": "Otters Voreinstellung verschickt das fertige Transkript automatisch per E-Mail an alle ursprünglich eingeladenen Teilnehmer. Der Bot zeichnet zudem weiter auf, nachdem der offizielle Termin endet und einzelne Personen den Call verlassen haben. Beides zusammen - automatische Verteilung plus Nach-Meeting-Aufzeichnung - macht aus einem Komfort-Feature ein Datenschutzrisiko: vertrauliche Restgespräche landen bei Außenstehenden.",
+      "title_de": "Automatischer Versand an alle Eingeladenen - auch nach dem Call",
+      "description_de": "Otters Voreinstellung verschickt das fertige Transkript automatisch per E-Mail an alle ursprünglich eingeladenen Teilnehmer. Der Bot zeichnet zudem weiter auf, nachdem der offizielle Termin endet und einzelne Personen den Call verlassen haben. Beides zusammen - automatische Verteilung plus Nach-Meeting-Aufzeichnung - macht aus einem Komfort-Feature ein Datenschutzrisiko: vertrauliche Restgespräche landen bei Außenstehenden.",
+      "title_en": "Automatic distribution to all invitees - even after the call",
+      "description_en": "Otter's default setting automatically emails the finished transcript to everyone originally invited to the meeting. The bot also keeps recording after the official meeting ends and individual participants have left the call. Together - automatic distribution plus post-meeting recording - this turns a convenience feature into a privacy hazard: confidential leftover conversations end up with outside parties.",
+      "sources": [
+        "https://www.washingtonpost.com/business/2024/10/02/ai-assistant-transcription-work-secrets-meetings/"
+      ]
+    },
+    {
+      "date": "2024-09-26",
+      "phase": "event",
+      "title": "Investoren-Restgespräch landet beim Gegenüber",
+      "description": "Nach einem Zoom-Meeting mit Risikokapitalgebern erhielt Alex Bilzerian von Otter.ai automatisch das Transkript - inklusive der stundenlangen Nach-Meeting-Diskussion, in der die Investoren strategische Fehler und 'frisierte' Kennzahlen besprachen. Bilzerian schilderte den Vorfall am 26. September 2024 auf X; der Beitrag erreichte über fünf Millionen Aufrufe. Er sagte den Deal daraufhin ab.",
+      "title_de": "Investoren-Restgespräch landet beim Gegenüber",
+      "description_de": "Nach einem Zoom-Meeting mit Risikokapitalgebern erhielt Alex Bilzerian von Otter.ai automatisch das Transkript - inklusive der stundenlangen Nach-Meeting-Diskussion, in der die Investoren strategische Fehler und 'frisierte' Kennzahlen besprachen. Bilzerian schilderte den Vorfall am 26. September 2024 auf X; der Beitrag erreichte über fünf Millionen Aufrufe. Er sagte den Deal daraufhin ab.",
+      "title_en": "Investors' leftover talk lands with their counterpart",
+      "description_en": "After a Zoom meeting with venture capital investors, Alex Bilzerian automatically received the transcript from Otter.ai - including the hours-long post-meeting discussion in which the investors talked about strategic failures and 'cooked' metrics. Bilzerian described the incident on X on 26 September 2024; the post reached more than five million views. He then cancelled the deal.",
+      "sources": [
+        "https://www.entrepreneur.com/business-news/ai-transcription-services-are-spilling-company-secrets/480671"
+      ]
+    },
+    {
+      "date": "2024-10-02",
+      "phase": "consequences",
+      "title": "Washington Post macht das Risiko von KI-Meeting-Assistenten öffentlich",
+      "description": "Am 2. Oktober 2024 nutzte die Washington Post Bilzerians Fall als Aufhänger für eine breitere Recherche darüber, wie KI-Arbeitswerkzeuge sensible Informationen ohne hinreichende Nutzerkontrolle weitergeben. Der Bericht löste eine öffentliche Debatte über die Voreinstellungen von Meeting-Bots und die fehlende Einwilligung aller Beteiligten aus.",
+      "title_de": "Washington Post macht das Risiko von KI-Meeting-Assistenten öffentlich",
+      "description_de": "Am 2. Oktober 2024 nutzte die Washington Post Bilzerians Fall als Aufhänger für eine breitere Recherche darüber, wie KI-Arbeitswerkzeuge sensible Informationen ohne hinreichende Nutzerkontrolle weitergeben. Der Bericht löste eine öffentliche Debatte über die Voreinstellungen von Meeting-Bots und die fehlende Einwilligung aller Beteiligten aus.",
+      "title_en": "Washington Post brings the risk of AI meeting assistants into the open",
+      "description_en": "On 2 October 2024 the Washington Post used Bilzerian's case as the hook for a broader investigation into how AI workplace tools share sensitive information without sufficient user control. The report triggered a public debate about meeting bots' default settings and the lack of consent from all participants.",
+      "sources": [
+        "https://www.washingtonpost.com/business/2024/10/02/ai-assistant-transcription-work-secrets-meetings/"
+      ]
+    },
+    {
+      "date": "2025-08-15",
+      "phase": "consequences",
+      "title": "Sammelklage Brewer v. Otter.ai am Northern District of California",
+      "description": "Am 15. August 2025 reichte Justin Brewer am US District Court for the Northern District of California eine Sammelklage gegen Otter.ai ein (Az. 5:25-cv-06911). Die Klage wirft dem Dienst heimliche Aufzeichnung ohne Einwilligung und Nutzung der Mitschnitte zum KI-Training vor und stützt sich unter anderem auf den California Invasion of Privacy Act (CIPA) und den Electronic Communications Privacy Act. Mehrere Verfahren wurden später als 'In re Otter.AI Privacy Litigation' gebündelt.",
+      "title_de": "Sammelklage Brewer v. Otter.ai am Northern District of California",
+      "description_de": "Am 15. August 2025 reichte Justin Brewer am US District Court for the Northern District of California eine Sammelklage gegen Otter.ai ein (Az. 5:25-cv-06911). Die Klage wirft dem Dienst heimliche Aufzeichnung ohne Einwilligung und Nutzung der Mitschnitte zum KI-Training vor und stützt sich unter anderem auf den California Invasion of Privacy Act (CIPA) und den Electronic Communications Privacy Act. Mehrere Verfahren wurden später als 'In re Otter.AI Privacy Litigation' gebündelt.",
+      "title_en": "Class action Brewer v. Otter.ai in the Northern District of California",
+      "description_en": "On 15 August 2025 Justin Brewer filed a class-action lawsuit against Otter.ai in the US District Court for the Northern District of California (No. 5:25-cv-06911). The suit alleges covert recording without consent and use of the recordings to train AI, relying among other things on the California Invasion of Privacy Act (CIPA) and the Electronic Communications Privacy Act. Several suits were later consolidated as 'In re Otter.AI Privacy Litigation'.",
+      "sources": [
+        "https://www.npr.org/2025/08/15/g-s1-83087/otter-ai-transcription-class-action-lawsuit"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.newsnationnow.com/business/tech/ai-powered-transcription-leaks-workplace-secrets/",

@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz geistigen Eigentums",
+    "Recht auf Eigentum",
+    "Selbstbestimmung über eigene Inhalte",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz geistigen Eigentums",
+    "Recht auf Eigentum",
+    "Selbstbestimmung über eigene Inhalte",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Protection of intellectual property",
+    "Right to property",
+    "Self-determination over one's own content",
+    "Consumer protection",
+    "Protection against manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Perplexity AI",
@@ -47,7 +65,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "1994",
+      "phase": "infrastructure",
+      "title": "robots.txt etabliert sich als freiwillige Crawler-Konvention",
+      "description": "Das Robots-Exclusion-Protokoll (robots.txt) ist seit Mitte der 1990er Jahre der De-facto-Standard, mit dem Webseiten steuern, welche automatisierten Crawler ihre Inhalte abrufen dürfen. Es ist nicht technisch erzwingbar, sondern beruht auf freiwilliger Befolgung - Grundlage für das Verhältnis zwischen Publishern und Bots.",
+      "title_de": "robots.txt etabliert sich als freiwillige Crawler-Konvention",
+      "description_de": "Das Robots-Exclusion-Protokoll (robots.txt) ist seit Mitte der 1990er Jahre der De-facto-Standard, mit dem Webseiten steuern, welche automatisierten Crawler ihre Inhalte abrufen dürfen. Es ist nicht technisch erzwingbar, sondern beruht auf freiwilliger Befolgung - Grundlage für das Verhältnis zwischen Publishern und Bots.",
+      "title_en": "robots.txt establishes itself as a voluntary crawler convention",
+      "description_en": "Since the mid-1990s the Robots Exclusion Protocol (robots.txt) has been the de facto standard by which websites signal which automated crawlers may fetch their content. It is not technically enforceable but relies on voluntary compliance - the basis of the relationship between publishers and bots.",
+      "sources": [
+        "https://rknight.me/blog/perplexity-ai-robotstxt-and-other-questions/"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "Verlage sperren KI-Crawler - Perplexity gibt Regelkonformität an",
+      "description": "Mit dem Aufstieg generativer KI-Suche begannen zahlreiche Verlage, KI-Crawler per robots.txt auszuschließen, um die Nutzung ihrer Inhalte für Antwort-Engines zu unterbinden. Perplexity AI veröffentlichte IP-Bereiche und User-Agent-Strings seines PerplexityBot und gab öffentlich an, robots.txt zu respektieren.",
+      "title_de": "Verlage sperren KI-Crawler - Perplexity gibt Regelkonformität an",
+      "description_de": "Mit dem Aufstieg generativer KI-Suche begannen zahlreiche Verlage, KI-Crawler per robots.txt auszuschließen, um die Nutzung ihrer Inhalte für Antwort-Engines zu unterbinden. Perplexity AI veröffentlichte IP-Bereiche und User-Agent-Strings seines PerplexityBot und gab öffentlich an, robots.txt zu respektieren.",
+      "title_en": "Publishers block AI crawlers - Perplexity claims compliance",
+      "description_en": "As generative AI search rose, many publishers began excluding AI crawlers via robots.txt to prevent their content from feeding answer engines. Perplexity AI published the IP ranges and user-agent strings of its PerplexityBot and publicly claimed to respect robots.txt.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perplexity_AI"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "event",
+      "title": "Robb Knight und WIRED weisen Umgehung von robots.txt nach",
+      "description": "Im Juni 2024 zeigten der Forscher Robb Knight und das Magazin WIRED, dass Perplexity Inhalte zusammenfasste, obwohl PerplexityBot per robots.txt und serverseitig blockiert war. WIRED ordnete die nicht veröffentlichte AWS-IP 44.221.181.252 zu, die Condé-Nast-Seiten trotz Sperren hunderte Male abrief - offenbar mit verschleierten IPs und gefälschten User-Agent-Strings.",
+      "title_de": "Robb Knight und WIRED weisen Umgehung von robots.txt nach",
+      "description_de": "Im Juni 2024 zeigten der Forscher Robb Knight und das Magazin WIRED, dass Perplexity Inhalte zusammenfasste, obwohl PerplexityBot per robots.txt und serverseitig blockiert war. WIRED ordnete die nicht veröffentlichte AWS-IP 44.221.181.252 zu, die Condé-Nast-Seiten trotz Sperren hunderte Male abrief - offenbar mit verschleierten IPs und gefälschten User-Agent-Strings.",
+      "title_en": "Robb Knight and WIRED document the bypassing of robots.txt",
+      "description_en": "In June 2024, researcher Robb Knight and WIRED magazine showed that Perplexity summarised content even though PerplexityBot was blocked via robots.txt and server-side rules. WIRED traced the unpublished AWS IP 44.221.181.252, which accessed Conde Nast sites hundreds of times despite blocks - apparently using undisclosed IPs and spoofed user-agent strings.",
+      "sources": [
+        "https://rknight.me/blog/perplexity-ai-robotstxt-and-other-questions/"
+      ]
+    },
+    {
+      "date": "2024-06-27",
+      "phase": "consequences",
+      "title": "Amazon prüft AWS-Verstoß - Plagiatsvorwürfe von Forbes und WIRED",
+      "description": "Amazon Web Services leitete eine Prüfung ein, ob Perplexity gegen AWS-Nutzungsbedingungen verstieß. Parallel warfen Forbes und WIRED dem Unternehmen vor, eigene Inhalte ohne klare Quellenangabe nachzuerzählen. CEO Aravind Srinivas räumte 'rough edges' ein und führte die fragliche IP auf einen externen Crawling-Dienstleister zurück.",
+      "title_de": "Amazon prüft AWS-Verstoß - Plagiatsvorwürfe von Forbes und WIRED",
+      "description_de": "Amazon Web Services leitete eine Prüfung ein, ob Perplexity gegen AWS-Nutzungsbedingungen verstieß. Parallel warfen Forbes und WIRED dem Unternehmen vor, eigene Inhalte ohne klare Quellenangabe nachzuerzählen. CEO Aravind Srinivas räumte 'rough edges' ein und führte die fragliche IP auf einen externen Crawling-Dienstleister zurück.",
+      "title_en": "Amazon probes AWS breach - plagiarism allegations from Forbes and WIRED",
+      "description_en": "Amazon Web Services opened a review into whether Perplexity breached AWS terms of service. In parallel, Forbes and WIRED accused the company of restating their content without clear attribution. CEO Aravind Srinivas admitted 'rough edges' and attributed the IP in question to a third-party crawling provider.",
+      "sources": [
+        "https://www.engadget.com/amazon-investigating-perplexity-ai-after-accusations-it-scrapes-websites-without-consent-133003374.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/07/02/news-outlets-are-accusing-perplexity-of-plagiarism-and-unethical-web-scraping/",
