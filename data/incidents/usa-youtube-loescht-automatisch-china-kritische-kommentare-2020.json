@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "censorship"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Recht auf Information",
+    "Schutz vor Zensur",
+    "Politische Teilhabe"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Recht auf Information",
+    "Schutz vor Zensur",
+    "Politische Teilhabe"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Right to information",
+    "Protection from censorship",
+    "Political participation"
+  ],
   "asm:actors": [
     {
       "name": "YouTube",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-12",
+      "phase": "infrastructure",
+      "title": "YouTube baut maschinelle Inhaltsmoderation massiv aus",
+      "description": "Ende 2017 kündigte YouTube-Chefin Susan Wojcicki an, die Moderation auf rund 10.000 Mitarbeitende auszuweiten und maschinelles Lernen zentral einzusetzen. Bereits damals wurden 98 % der wegen gewaltbereitem Extremismus entfernten Videos von Algorithmen markiert. Automatisierte Klassifikatoren übernahmen zunehmend Lösch- und Filterentscheidungen, auch in Kommentaren, bei einem Volumen, das menschliche Prüfung allein nicht mehr bewältigen konnte.",
+      "title_de": "YouTube baut maschinelle Inhaltsmoderation massiv aus",
+      "description_de": "Ende 2017 kündigte YouTube-Chefin Susan Wojcicki an, die Moderation auf rund 10.000 Mitarbeitende auszuweiten und maschinelles Lernen zentral einzusetzen. Bereits damals wurden 98 % der wegen gewaltbereitem Extremismus entfernten Videos von Algorithmen markiert. Automatisierte Klassifikatoren übernahmen zunehmend Lösch- und Filterentscheidungen, auch in Kommentaren, bei einem Volumen, das menschliche Prüfung allein nicht mehr bewältigen konnte.",
+      "title_en": "YouTube scales up automated content moderation",
+      "description_en": "In late 2017 YouTube CEO Susan Wojcicki announced an expansion of moderation to around 10,000 staff with machine learning at its core. Even then 98% of videos removed for violent extremism were flagged by algorithms. Automated classifiers increasingly took over removal and filtering decisions, including in comments, at a volume human review alone could no longer handle.",
+      "sources": [
+        "https://blog.youtube/news-and-events/expanding-our-work-against-abuse-of-our/"
+      ]
+    },
+    {
+      "date": "2019-10",
+      "phase": "doctrine",
+      "title": "Automatisches Löschen erstmals bemerkt",
+      "description": "Bereits im Oktober 2019 fiel Nutzer:innen auf, dass Kommentare mit den chinesischen Begriffen '共匪' (kommunistischer Bandit) und '五毛' (50-Cent-Partei) binnen Sekunden verschwanden; entsprechende Hinweise tauchten auf YouTubes offiziellen Hilfe-Seiten auf. Das automatisierte System wandte die Löschregel ohne menschliche Freigabe und ohne öffentliche Erklärung an - der Fehler blieb rund sechs Monate unbemerkt bestehen.",
+      "title_de": "Automatisches Löschen erstmals bemerkt",
+      "description_de": "Bereits im Oktober 2019 fiel Nutzer:innen auf, dass Kommentare mit den chinesischen Begriffen '共匪' (kommunistischer Bandit) und '五毛' (50-Cent-Partei) binnen Sekunden verschwanden; entsprechende Hinweise tauchten auf YouTubes offiziellen Hilfe-Seiten auf. Das automatisierte System wandte die Löschregel ohne menschliche Freigabe und ohne öffentliche Erklärung an - der Fehler blieb rund sechs Monate unbemerkt bestehen.",
+      "title_en": "Automatic deletion first noticed",
+      "description_en": "As early as October 2019 users noticed that comments containing the Chinese terms '共匪' (communist bandit) and '五毛' (50-cent party) vanished within seconds; related reports appeared on YouTube's official help pages. The automated system applied the deletion rule without human sign-off and without public explanation - the error persisted unnoticed for around six months.",
+      "sources": [
+        "https://www.cnbc.com/2020/05/27/youtube-china-communisty-party-comments.html"
+      ]
+    },
+    {
+      "date": "2020-05-26",
+      "phase": "event",
+      "title": "Öffentliche Aufdeckung, YouTube räumt 'Fehler' ein",
+      "description": "Am 26. Mai 2020 machte Oculus-Gründer Palmer Luckey den Fall öffentlich, woraufhin Medien wie TechCrunch und CNBC berichteten. Kommentare mit '共匪' oder '五毛' wurden in etwa 15 Sekunden automatisch gelöscht, während romanisierte oder englische Entsprechungen unangetastet blieben. YouTube bezeichnete das Verhalten als 'Fehler' der automatisierten Durchsetzung und kündigte eine Korrektur an.",
+      "title_de": "Öffentliche Aufdeckung, YouTube räumt 'Fehler' ein",
+      "description_de": "Am 26. Mai 2020 machte Oculus-Gründer Palmer Luckey den Fall öffentlich, woraufhin Medien wie TechCrunch und CNBC berichteten. Kommentare mit '共匪' oder '五毛' wurden in etwa 15 Sekunden automatisch gelöscht, während romanisierte oder englische Entsprechungen unangetastet blieben. YouTube bezeichnete das Verhalten als 'Fehler' der automatisierten Durchsetzung und kündigte eine Korrektur an.",
+      "title_en": "Public exposure, YouTube admits an 'error'",
+      "description_en": "On 26 May 2020 Oculus founder Palmer Luckey made the case public, prompting reports by outlets such as TechCrunch and CNBC. Comments containing '共匪' or '五毛' were automatically deleted within about 15 seconds, while romanised or English equivalents were left untouched. YouTube called the behaviour an 'error' in its automated enforcement and announced a fix.",
+      "sources": [
+        "https://techcrunch.com/2020/05/26/youtube-china-comments-wumao-dang/"
+      ]
+    },
+    {
+      "date": "2020-05-27",
+      "phase": "consequences",
+      "title": "Zweifel an der 'Fehler'-Erklärung und an Black-Box-Moderation",
+      "description": "YouTube kündigte an, die betroffene Filterregel zu untersuchen und zu korrigieren, nannte aber keine Ursache dafür, wie genau zwei regimekritische chinesische Begriffe in die automatische Löschung gelangten. Beobachter:innen und Bürgerrechtsgruppen kritisierten, dass eine intransparente, automatisierte Moderation - ob als Fehler oder durch manipulierte Trainingsdaten - politische Meinungsäußerung zensieren kann, ohne dass Betroffene es bemerken oder anfechten können.",
+      "title_de": "Zweifel an der 'Fehler'-Erklärung und an Black-Box-Moderation",
+      "description_de": "YouTube kündigte an, die betroffene Filterregel zu untersuchen und zu korrigieren, nannte aber keine Ursache dafür, wie genau zwei regimekritische chinesische Begriffe in die automatische Löschung gelangten. Beobachter:innen und Bürgerrechtsgruppen kritisierten, dass eine intransparente, automatisierte Moderation - ob als Fehler oder durch manipulierte Trainingsdaten - politische Meinungsäußerung zensieren kann, ohne dass Betroffene es bemerken oder anfechten können.",
+      "title_en": "Doubts over the 'error' explanation and black-box moderation",
+      "description_en": "YouTube said it would investigate and correct the filter rule involved but gave no cause for how exactly two regime-critical Chinese terms ended up in automatic deletion. Observers and civil-rights groups criticised that opaque, automated moderation - whether through error or manipulated training data - can censor political speech without those affected noticing or being able to contest it.",
+      "sources": [
+        "https://beebom.com/youtube-error-deleting-comments-communist-party/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2020/05/26/youtube-china-comments-wumao-dang/",
