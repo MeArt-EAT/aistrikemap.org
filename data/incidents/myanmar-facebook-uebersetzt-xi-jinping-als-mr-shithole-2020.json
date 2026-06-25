@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Recht auf zuverlässige Information"
+  ],
+  "asm:affectedRights_de": [
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Recht auf zuverlässige Information"
+  ],
+  "asm:affectedRights_en": [
+    "Human dignity",
+    "Protection from discrimination",
+    "Right to reliable information"
+  ],
   "asm:actors": [
     {
       "name": "Facebook",
@@ -44,7 +56,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Facebooks fehlerhaftes Birmanisch-Übersetzungssystem",
+      "description": "Facebook betrieb in Myanmar ein automatisches Übersetzungssystem für die birmanische Sprache, das bei fehlenden Wörtern aus ähnlich klingenden Silben rät statt eine Lücke zu lassen. Bereits 2018 hatte das Unternehmen die Birmanisch-Übersetzung nach einem Reuters-Bericht über bizarre Ergebnisse vorübergehend abgeschaltet. Diese fehleranfällige Architektur war die technische Vorbedingung des späteren Vorfalls.",
+      "title_de": "Facebooks fehlerhaftes Birmanisch-Übersetzungssystem",
+      "description_de": "Facebook betrieb in Myanmar ein automatisches Übersetzungssystem für die birmanische Sprache, das bei fehlenden Wörtern aus ähnlich klingenden Silben rät statt eine Lücke zu lassen. Bereits 2018 hatte das Unternehmen die Birmanisch-Übersetzung nach einem Reuters-Bericht über bizarre Ergebnisse vorübergehend abgeschaltet. Diese fehleranfällige Architektur war die technische Vorbedingung des späteren Vorfalls.",
+      "title_en": "Facebook's faulty Burmese translation system",
+      "description_en": "In Myanmar, Facebook operated an automatic translation system for the Burmese language that, when words were missing, guessed from similar-sounding syllables instead of leaving a gap. Back in 2018 the company had temporarily disabled Burmese translation after a Reuters report on bizarre results. This error-prone architecture was the technical precondition of the later incident.",
+      "sources": [
+        "https://www.engadget.com/2020-01-19-facebook-xi-jinping-translation-error.html"
+      ]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Automatische Übersetzung ohne menschliche Prüfung",
+      "description": "Facebook setzte automatische Übersetzungen standardmäßig und ohne menschliche Kontrolle für sensible öffentliche Inhalte ein, auch für Regierungsseiten und Staatsbesuche. Das Geschäftsmodell der vollautomatischen Skalierung über hunderte Sprachen akzeptierte fehlende Datenbankeinträge als Restrisiko. Damit war ein folgenreicher Übersetzungsfehler bei einem hochrangigen Anlass strukturell möglich.",
+      "title_de": "Automatische Übersetzung ohne menschliche Prüfung",
+      "description_de": "Facebook setzte automatische Übersetzungen standardmäßig und ohne menschliche Kontrolle für sensible öffentliche Inhalte ein, auch für Regierungsseiten und Staatsbesuche. Das Geschäftsmodell der vollautomatischen Skalierung über hunderte Sprachen akzeptierte fehlende Datenbankeinträge als Restrisiko. Damit war ein folgenreicher Übersetzungsfehler bei einem hochrangigen Anlass strukturell möglich.",
+      "title_en": "Automatic translation without human review",
+      "description_en": "Facebook deployed automatic translation by default and without human oversight for sensitive public content, including government pages and state visits. The business model of fully automated scaling across hundreds of languages accepted missing database entries as a residual risk. This made a consequential translation error during a high-profile event structurally possible.",
+      "sources": [
+        "https://www.aljazeera.com/news/2020/1/19/facebook-apologises-for-rude-mistranslation-of-xi-jinpings-name"
+      ]
+    },
+    {
+      "date": "2020-01-18",
+      "phase": "event",
+      "title": "Facebook übersetzt Xi Jinpings Namen als 'Mr Shithole'",
+      "description": "Während Xi Jinpings Staatsbesuch in Myanmar im Januar 2020 übersetzte Facebooks System seinen Namen aus dem Birmanischen ins Englische als 'Mr Shithole'. Der Fehler erschien unter anderem auf der offiziellen Seite der Regierungschefin Aung San Suu Kyi. Laut Facebook fehlte Xis Name in der birmanischen Datenbank, sodass das System aus ähnlich klingenden Silben riet.",
+      "title_de": "Facebook übersetzt Xi Jinpings Namen als 'Mr Shithole'",
+      "description_de": "Während Xi Jinpings Staatsbesuch in Myanmar im Januar 2020 übersetzte Facebooks System seinen Namen aus dem Birmanischen ins Englische als 'Mr Shithole'. Der Fehler erschien unter anderem auf der offiziellen Seite der Regierungschefin Aung San Suu Kyi. Laut Facebook fehlte Xis Name in der birmanischen Datenbank, sodass das System aus ähnlich klingenden Silben riet.",
+      "title_en": "Facebook translates Xi Jinping's name as 'Mr Shithole'",
+      "description_en": "During Xi Jinping's state visit to Myanmar in January 2020, Facebook's system translated his name from Burmese into English as 'Mr Shithole'. The error appeared on official pages including that of state leader Aung San Suu Kyi. According to Facebook, Xi's name was missing from the Burmese database, so the system guessed from similar-sounding syllables.",
+      "sources": [
+        "https://www.aljazeera.com/news/2020/1/19/facebook-apologises-for-rude-mistranslation-of-xi-jinpings-name"
+      ]
+    },
+    {
+      "date": "2020-01-19",
+      "phase": "consequences",
+      "title": "Facebook entschuldigt sich und behebt den Fehler",
+      "description": "Facebook bezeichnete den Vorfall als 'technisches Problem', das die Birmanisch-Englisch-Übersetzung betroffen habe, behob ihn und entschuldigte sich öffentlich für die verursachte Beleidigung. Der Fall wurde diplomatisch heikel, da er einen Staatsbesuch des chinesischen Präsidenten betraf, und verstärkte die Kritik an Facebooks Umgang mit der birmanischen Sprache.",
+      "title_de": "Facebook entschuldigt sich und behebt den Fehler",
+      "description_de": "Facebook bezeichnete den Vorfall als 'technisches Problem', das die Birmanisch-Englisch-Übersetzung betroffen habe, behob ihn und entschuldigte sich öffentlich für die verursachte Beleidigung. Der Fall wurde diplomatisch heikel, da er einen Staatsbesuch des chinesischen Präsidenten betraf, und verstärkte die Kritik an Facebooks Umgang mit der birmanischen Sprache.",
+      "title_en": "Facebook apologises and fixes the error",
+      "description_en": "Facebook called the incident a 'technical issue' affecting Burmese-to-English translation, fixed it, and publicly apologised for the offence caused. The case became diplomatically sensitive as it concerned the Chinese president's state visit, and it intensified criticism of Facebook's handling of the Burmese language.",
+      "sources": [
+        "https://www.timesofisrael.com/facebook-sorry-for-vulgar-mistranslation-of-xi-jinpings-name/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.aljazeera.com/news/2020/1/19/facebook-apologises-for-rude-mistranslation-of-xi-jinpings-name",
