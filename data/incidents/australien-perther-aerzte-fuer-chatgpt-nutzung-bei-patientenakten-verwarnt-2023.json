@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Recht auf Gesundheit",
+    "Patientenvertraulichkeit"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Recht auf Gesundheit",
+    "Patientenvertraulichkeit"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Right to health",
+    "Patient confidentiality"
+  ],
   "asm:actors": [
     {
       "name": "South Metropolitan Health Service (Perth)",
@@ -53,7 +68,58 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht ChatGPT als frei zugänglichen Chatbot",
+      "description": "Im November 2022 stellte OpenAI ChatGPT öffentlich bereit - ein über eine Website nutzbares Sprachmodell, in das jede:r beliebige Texte eingeben kann. Eingaben werden auf OpenAI-Servern verarbeitet, ohne Vertraulichkeitsgarantie. Damit existierte ein Werkzeug, das Mitarbeitende ohne IT-Freigabe und ohne Datenschutz-Prüfung für Arbeitsaufgaben einsetzen konnten.",
+      "title_de": "OpenAI veröffentlicht ChatGPT als frei zugänglichen Chatbot",
+      "description_de": "Im November 2022 stellte OpenAI ChatGPT öffentlich bereit - ein über eine Website nutzbares Sprachmodell, in das jede:r beliebige Texte eingeben kann. Eingaben werden auf OpenAI-Servern verarbeitet, ohne Vertraulichkeitsgarantie. Damit existierte ein Werkzeug, das Mitarbeitende ohne IT-Freigabe und ohne Datenschutz-Prüfung für Arbeitsaufgaben einsetzen konnten.",
+      "title_en": "OpenAI releases ChatGPT as a freely accessible chatbot",
+      "description_en": "In November 2022 OpenAI made ChatGPT publicly available - a website-based language model into which anyone can type arbitrary text. Inputs are processed on OpenAI servers with no confidentiality guarantee. This created a tool that staff could use for work tasks without IT approval or any privacy review.",
+      "sources": []
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Australisches Gesundheitswesen ohne KI-Richtlinien",
+      "description": "Anfang 2023 hatten australische Gesundheitsdienste, darunter der South Metropolitan Health Service, keine Protokolle oder Leitlinien zum Einsatz generativer KI. Es fehlte jede Vorgabe, ob und wie Mitarbeitende Chatbots im Klinikbetrieb nutzen dürfen - eine Regelungslücke, die individuellen, unkontrollierten Einsatz ermöglichte.",
+      "title_de": "Australisches Gesundheitswesen ohne KI-Richtlinien",
+      "description_de": "Anfang 2023 hatten australische Gesundheitsdienste, darunter der South Metropolitan Health Service, keine Protokolle oder Leitlinien zum Einsatz generativer KI. Es fehlte jede Vorgabe, ob und wie Mitarbeitende Chatbots im Klinikbetrieb nutzen dürfen - eine Regelungslücke, die individuellen, unkontrollierten Einsatz ermöglichte.",
+      "title_en": "Australian healthcare without AI policies",
+      "description_en": "In early 2023 Australian health services, including the South Metropolitan Health Service, had no protocols or guidelines on the use of generative AI. There was no rule on whether or how staff could use chatbots in clinical work - a regulatory gap that enabled individual, uncontrolled use.",
+      "sources": [
+        "https://www.medicalrepublic.com.au/ban-on-bot-use-when-patient-data-involved/17291"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "event",
+      "title": "SMHS verbietet ChatGPT für Patientennotizen an fünf Krankenhäusern",
+      "description": "Mit E-Mail vom 8. Mai 2023 wies der South Metropolitan Health Service in Perth das Personal von fünf Krankenhäusern an, KI-Chatbots wie ChatGPT 'sofort' nicht mehr für Patientennotizen zu nutzen, nachdem ein Arzt damit eine Entlassungszusammenfassung erstellt und in die Patientenakte hochgeladen hatte. Die Geschäftsführung warnte, ChatGPT garantiere keine Patienten-Vertraulichkeit.",
+      "title_de": "SMHS verbietet ChatGPT für Patientennotizen an fünf Krankenhäusern",
+      "description_de": "Mit E-Mail vom 8. Mai 2023 wies der South Metropolitan Health Service in Perth das Personal von fünf Krankenhäusern an, KI-Chatbots wie ChatGPT 'sofort' nicht mehr für Patientennotizen zu nutzen, nachdem ein Arzt damit eine Entlassungszusammenfassung erstellt und in die Patientenakte hochgeladen hatte. Die Geschäftsführung warnte, ChatGPT garantiere keine Patienten-Vertraulichkeit.",
+      "title_en": "SMHS bans ChatGPT for patient notes at five hospitals",
+      "description_en": "In an email dated 8 May 2023 the South Metropolitan Health Service in Perth instructed staff at five hospitals to 'cease immediately' using AI chatbots such as ChatGPT for patient notes, after a doctor had used one to generate a discharge summary that was uploaded into the patient record system. Management warned that ChatGPT does not guarantee patient confidentiality.",
+      "sources": [
+        "https://www.ausdoc.com.au/news/doctors-banned-from-using-chatgpt-to-write-medical-notes/"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "consequences",
+      "title": "Ärztevertretung fordert nationale KI-Regulierung",
+      "description": "Der Vorfall löste in Australien eine Debatte über fehlende KI-Regeln im Gesundheitswesen aus. Die Australian Medical Association (WA) forderte nationale Vorgaben für den Einsatz medizinischer KI, um Patientendaten zu schützen. Der Fall wurde zum häufig zitierten Beispiel für ungeregelte Schatten-KI-Nutzung in Kliniken.",
+      "title_de": "Ärztevertretung fordert nationale KI-Regulierung",
+      "description_de": "Der Vorfall löste in Australien eine Debatte über fehlende KI-Regeln im Gesundheitswesen aus. Die Australian Medical Association (WA) forderte nationale Vorgaben für den Einsatz medizinischer KI, um Patientendaten zu schützen. Der Fall wurde zum häufig zitierten Beispiel für ungeregelte Schatten-KI-Nutzung in Kliniken.",
+      "title_en": "Medical association calls for national AI regulation",
+      "description_en": "The incident triggered an Australian debate over the lack of AI rules in healthcare. The Australian Medical Association (WA) called for national guidelines on the use of medical AI to protect patient data. The case became a frequently cited example of unregulated shadow-AI use in clinics.",
+      "sources": [
+        "https://thelimbic.com/chatgpt-warning-issued-to-doctors-amid-calls-for-national-regulation/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.ausdoc.com.au/news/doctors-banned-from-using-chatgpt-to-write-medical-notes/",

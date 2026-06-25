@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Recht auf freie Wahlen",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Recht auf freie Wahlen",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to information",
+    "Protection from manipulation",
+    "Right to free elections",
+    "Freedom of expression"
+  ],
   "asm:actors": [
     {
       "name": "Facebook (Meta Platforms)",
@@ -46,7 +61,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Facebook führt automatisierte Erkennung politischer Anzeigen ein",
+      "description": "Nach dem Cambridge-Analytica-Skandal und den Vorwürfen ausländischer Wahlbeeinflussung baute Facebook ab 2018 ein System auf, das politische und gesellschaftspolitische Anzeigen erkennen, mit einem 'Bezahlt von'-Vermerk versehen und in eine öffentliche Ad Library aufnehmen sollte. Die Klassifizierung stützte sich auf automatisierte Filter plus Selbstdeklaration der Werbetreibenden und wurde weltweit ausgerollt.",
+      "title_de": "Facebook führt automatisierte Erkennung politischer Anzeigen ein",
+      "description_de": "Nach dem Cambridge-Analytica-Skandal und den Vorwürfen ausländischer Wahlbeeinflussung baute Facebook ab 2018 ein System auf, das politische und gesellschaftspolitische Anzeigen erkennen, mit einem 'Bezahlt von'-Vermerk versehen und in eine öffentliche Ad Library aufnehmen sollte. Die Klassifizierung stützte sich auf automatisierte Filter plus Selbstdeklaration der Werbetreibenden und wurde weltweit ausgerollt.",
+      "title_en": "Facebook rolls out automated detection of political ads",
+      "description_en": "After the Cambridge Analytica scandal and allegations of foreign election interference, from 2018 Facebook built a system meant to detect political and social-issue ads, label them with a 'paid for by' disclaimer and add them to a public Ad Library. Classification relied on automated filters plus advertiser self-declaration and was rolled out worldwide.",
+      "sources": [
+        "https://cybersecurityfordemocracy.org/audit-facebook-political-ad-policy-enforcement"
+      ]
+    },
+    {
+      "date": "2020-07",
+      "phase": "doctrine",
+      "title": "Forschende starten globale Prüfung der Durchsetzungspraxis",
+      "description": "Forschende von imec-DistriNet an der KU Leuven und dem NYU-Projekt Cybersecurity for Democracy begannen im Juli 2020, Facebooks Durchsetzung der Regeln für politische Werbung systematisch zu prüfen. Sie sammelten und analysierten über 33,8 Millionen Anzeigen aus dem Zeitraum bis Februar 2021, der Wahlen in den USA und Brasilien umfasste, um zu messen, wie zuverlässig das System politische Anzeigen erkennt.",
+      "title_de": "Forschende starten globale Prüfung der Durchsetzungspraxis",
+      "description_de": "Forschende von imec-DistriNet an der KU Leuven und dem NYU-Projekt Cybersecurity for Democracy begannen im Juli 2020, Facebooks Durchsetzung der Regeln für politische Werbung systematisch zu prüfen. Sie sammelten und analysierten über 33,8 Millionen Anzeigen aus dem Zeitraum bis Februar 2021, der Wahlen in den USA und Brasilien umfasste, um zu messen, wie zuverlässig das System politische Anzeigen erkennt.",
+      "title_en": "Researchers launch a global audit of enforcement practice",
+      "description_en": "Researchers from imec-DistriNet at KU Leuven and the NYU project Cybersecurity for Democracy began in July 2020 to systematically audit Facebook's enforcement of its political advertising rules. They collected and analysed more than 33.8 million ads from a period through February 2021 that included elections in the U.S. and Brazil, to measure how reliably the system detects political ads.",
+      "sources": [
+        "https://cybersecurityfordemocracy.org/audit-facebook-political-ad-policy-enforcement"
+      ]
+    },
+    {
+      "date": "2021-12-07",
+      "phase": "event",
+      "title": "Audit: 83 Prozent Fehlentscheidungen, Argentinien stark betroffen",
+      "description": "Am 7. Dezember 2021 veröffentlichten die Forschenden ihren Audit. Bei nicht als politisch deklarierten Anzeigen, die das System oder die Forschenden als politisch einstuften, traf Facebook in 83 Prozent der Fälle die falsche Entscheidung. Außerhalb der USA war die Trefferquote besonders schlecht. In Argentinien wurde rund jede dritte bis vierte Anzeige von Parteien oder Kandidaten nicht als politisch erkannt (etwa 34 Prozent übersehen).",
+      "title_de": "Audit: 83 Prozent Fehlentscheidungen, Argentinien stark betroffen",
+      "description_de": "Am 7. Dezember 2021 veröffentlichten die Forschenden ihren Audit. Bei nicht als politisch deklarierten Anzeigen, die das System oder die Forschenden als politisch einstuften, traf Facebook in 83 Prozent der Fälle die falsche Entscheidung. Außerhalb der USA war die Trefferquote besonders schlecht. In Argentinien wurde rund jede dritte bis vierte Anzeige von Parteien oder Kandidaten nicht als politisch erkannt (etwa 34 Prozent übersehen).",
+      "title_en": "Audit: 83 percent wrong decisions, Argentina heavily affected",
+      "description_en": "On 7 December 2021 the researchers published their audit. For ads not declared as political that the system or the researchers deemed political, Facebook made the wrong decision in 83 percent of cases. Detection was especially poor outside the U.S. In Argentina roughly one in three to four ads from parties or candidates went undetected as political (about 34 percent missed).",
+      "sources": [
+        "https://cybersecurityfordemocracy.org/audit-facebook-political-ad-policy-enforcement",
+        "https://www.npr.org/2021/12/09/1062516250/researchers-explain-why-they-believe-facebook-mishandles-political-ads"
+      ]
+    },
+    {
+      "date": "2022-08",
+      "phase": "consequences",
+      "title": "Studie auf USENIX Security vorgestellt, Transparenzlücke belegt",
+      "description": "Die Forschenden führten die mangelnden Investitionen in lokales politisches Verständnis als Hauptursache an und warnten, dass außerhalb der USA Wahlwerbung unkontrolliert blieb. Die Arbeit 'An Audit of Facebook's Political Ad Policy Enforcement' wurde im August 2022 auf dem USENIX Security Symposium vorgestellt und untermauerte die Forderung nach unabhängiger Prüfung politischer Online-Werbung.",
+      "title_de": "Studie auf USENIX Security vorgestellt, Transparenzlücke belegt",
+      "description_de": "Die Forschenden führten die mangelnden Investitionen in lokales politisches Verständnis als Hauptursache an und warnten, dass außerhalb der USA Wahlwerbung unkontrolliert blieb. Die Arbeit 'An Audit of Facebook's Political Ad Policy Enforcement' wurde im August 2022 auf dem USENIX Security Symposium vorgestellt und untermauerte die Forderung nach unabhängiger Prüfung politischer Online-Werbung.",
+      "title_en": "Study presented at USENIX Security, transparency gap evidenced",
+      "description_en": "The researchers cited insufficient investment in understanding local politics as the main cause and warned that outside the U.S. election advertising went unchecked. The paper 'An Audit of Facebook's Political Ad Policy Enforcement' was presented at the USENIX Security Symposium in August 2022, reinforcing calls for independent auditing of online political advertising.",
+      "sources": [
+        "https://www.usenix.org/conference/usenixsecurity22/presentation/lepochat"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://cybersecurityfordemocracy.org/audit-facebook-political-ad-policy-enforcement",

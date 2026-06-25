@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Gesundheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Gesundheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Right to health",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Midjourney",
@@ -46,7 +61,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Bildgeneratoren auf web-gescrapten Datensätzen wie LAION trainiert",
+      "description": "Generative Bildmodelle wie Midjourney werden auf riesigen, aus dem offenen Web gescrapten Bild-Text-Datensätzen (etwa LAION-5B) trainiert. Diese Daten überrepräsentieren nordamerikanische und europäische Inhalte stark, während Afrika, Südasien und Teile Lateinamerikas gemessen an ihrer Bevölkerung deutlich unterrepräsentiert sind. Damit fließen bestehende mediale Bildmuster - inklusive kolonialer und rassistischer Klischees - direkt in die Modellgewichte ein.",
+      "title_de": "Bildgeneratoren auf web-gescrapten Datensätzen wie LAION trainiert",
+      "description_de": "Generative Bildmodelle wie Midjourney werden auf riesigen, aus dem offenen Web gescrapten Bild-Text-Datensätzen (etwa LAION-5B) trainiert. Diese Daten überrepräsentieren nordamerikanische und europäische Inhalte stark, während Afrika, Südasien und Teile Lateinamerikas gemessen an ihrer Bevölkerung deutlich unterrepräsentiert sind. Damit fließen bestehende mediale Bildmuster - inklusive kolonialer und rassistischer Klischees - direkt in die Modellgewichte ein.",
+      "title_en": "Image generators trained on web-scraped datasets like LAION",
+      "description_en": "Generative image models such as Midjourney are trained on vast image-text datasets scraped from the open web (e.g. LAION-5B). These data heavily over-represent North American and European content, while Africa, South Asia and parts of Latin America are markedly under-represented relative to their populations. Existing media imagery - including colonial and racist tropes - thus flows directly into the model weights.",
+      "sources": [
+        "https://www.techpolicy.press/laion5b-stable-diffusion-and-the-original-sin-of-generative-ai/"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "doctrine",
+      "title": "Midjourney v5 als kommerzieller, breit verfügbarer Bildgenerator ausgerollt",
+      "description": "Midjourney veröffentlichte 2023 die Version 5 seines Bildgenerators und vermarktete ihn als universelles Werkzeug für fotorealistische Bilder zu beliebigen Prompts. Frühe Untersuchungen zeigten bereits klare Gender- und Rassen-Verzerrungen, etwa dass das Modell für neutrale Prompts überwiegend Männer und westliche Szenen lieferte. Das Geschäftsmodell setzte auf schnelle, massenhafte Bildproduktion ohne wirksame Korrektur dieser Muster.",
+      "title_de": "Midjourney v5 als kommerzieller, breit verfügbarer Bildgenerator ausgerollt",
+      "description_de": "Midjourney veröffentlichte 2023 die Version 5 seines Bildgenerators und vermarktete ihn als universelles Werkzeug für fotorealistische Bilder zu beliebigen Prompts. Frühe Untersuchungen zeigten bereits klare Gender- und Rassen-Verzerrungen, etwa dass das Modell für neutrale Prompts überwiegend Männer und westliche Szenen lieferte. Das Geschäftsmodell setzte auf schnelle, massenhafte Bildproduktion ohne wirksame Korrektur dieser Muster.",
+      "title_en": "Midjourney v5 rolled out as a widely available commercial image generator",
+      "description_en": "In 2023 Midjourney released version 5 of its image generator, marketing it as a universal tool for photorealistic images from arbitrary prompts. Early studies already showed clear gender and racial bias, for instance the model returning mostly men and Western scenes for neutral prompts. The business model favoured fast, mass image production without effective correction of these patterns.",
+      "sources": [
+        "https://restofworld.org/2023/ai-image-stereotypes/"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "event",
+      "title": "Studie: Midjourney kann 'weißen Retter' nicht umkehren, zeigt kaum schwarze Ärzte mit weißen Kindern",
+      "description": "Forschende des Instituts für Tropenmedizin Antwerpen und der Universität Oxford ließen Midjourney Bilder schwarzer afrikanischer Ärzte erzeugen, die weiße Kinder behandeln, um das Klischee des 'weißen Retters' umzukehren. Trotz expliziter Prompts stellte das System die Kinder durchgängig als schwarz dar; in nur 22 von über 350 Bildern waren die Ärzte weiß. Das Modell driftete wiederholt zurück zu kolonialen Bildmustern und ließ sich kaum gegensteuern.",
+      "title_de": "Studie: Midjourney kann 'weißen Retter' nicht umkehren, zeigt kaum schwarze Ärzte mit weißen Kindern",
+      "description_de": "Forschende des Instituts für Tropenmedizin Antwerpen und der Universität Oxford ließen Midjourney Bilder schwarzer afrikanischer Ärzte erzeugen, die weiße Kinder behandeln, um das Klischee des 'weißen Retters' umzukehren. Trotz expliziter Prompts stellte das System die Kinder durchgängig als schwarz dar; in nur 22 von über 350 Bildern waren die Ärzte weiß. Das Modell driftete wiederholt zurück zu kolonialen Bildmustern und ließ sich kaum gegensteuern.",
+      "title_en": "Study: Midjourney cannot flip the 'white saviour', barely depicts Black doctors with white children",
+      "description_en": "Researchers from the Institute of Tropical Medicine Antwerp and the University of Oxford prompted Midjourney to produce images of Black African doctors treating white children, to flip the 'white saviour' stereotype. Despite explicit prompts, the system consistently rendered the children as Black; in only 22 of over 350 images were the doctors white. The model repeatedly drifted back to colonial visual patterns and resisted being steered away from them.",
+      "sources": [
+        "https://www.itg.be/en/health-stories/press-releases/perpetuating-prejudice-ai-reinforces-racial-stereotypes-in-global-health-imagery"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "consequences",
+      "title": "Veröffentlichung in The Lancet Global Health löst Debatte über KI-Bias aus",
+      "description": "Die Studie wurde im Oktober 2023 in The Lancet Global Health publiziert und international aufgegriffen, unter anderem von NPR. Die Autorinnen und Autoren warnten, dass generative KI rassistische, sexistische und koloniale Bildmuster in der globalen Gesundheitskommunikation verstärkt, statt sie aufzulösen. Der Fall wurde zu einem viel zitierten Beleg dafür, dass Bias nicht durch bloßes Umformulieren von Prompts behoben werden kann.",
+      "title_de": "Veröffentlichung in The Lancet Global Health löst Debatte über KI-Bias aus",
+      "description_de": "Die Studie wurde im Oktober 2023 in The Lancet Global Health publiziert und international aufgegriffen, unter anderem von NPR. Die Autorinnen und Autoren warnten, dass generative KI rassistische, sexistische und koloniale Bildmuster in der globalen Gesundheitskommunikation verstärkt, statt sie aufzulösen. Der Fall wurde zu einem viel zitierten Beleg dafür, dass Bias nicht durch bloßes Umformulieren von Prompts behoben werden kann.",
+      "title_en": "Publication in The Lancet Global Health sparks debate on AI bias",
+      "description_en": "The study was published in The Lancet Global Health in October 2023 and picked up internationally, including by NPR. The authors warned that generative AI amplifies racist, sexist and colonial visual patterns in global health communication rather than dissolving them. The case became a widely cited demonstration that bias cannot be fixed by merely rewording prompts.",
+      "sources": [
+        "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(23)00329-7/fulltext",
+        "https://www.npr.org/sections/goatsandsoda/2023/10/06/1201840678/ai-was-asked-to-create-images-of-black-african-docs-treating-white-kids-howd-it-"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(23)00329-7/fulltext",

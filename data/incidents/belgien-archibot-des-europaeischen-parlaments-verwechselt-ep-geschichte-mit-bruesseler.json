@@ -8,9 +8,9 @@
   "name": "Belgien: \"Archibot\" des Europäischen Parlaments verwechselt EP-Geschichte mit Brüsseler Café-Adresse",
   "name_de": "Belgien: \"Archibot\" des Europäischen Parlaments verwechselt EP-Geschichte mit Brüsseler Café-Adresse",
   "name_en": "Belgium: European Parliament 'Archibot' confuses EP history with Brussels café address",
-  "description": "Das Europäische Parlament stellte im Oktober 2024 den auf Anthropics Claude (via Amazon Bedrock) basierenden Chatbot \"Archibot\" / \"Ask the EP Archives\" vor, der historische Fragen zu EP und EU beantworten soll. Im offiziellen Test des Parlaments nannte Claude als ersten Präsidenten der Europäischen Kommission \"Robert Schuman 7\" – tatsächlich die Adresse eines Brüsseler Cafés, die das Modell offenbar memoriert hatte. Bürgerrechtsorganisationen (z. B. Irish Council for Civil Liberties) kritisierten den unkritischen Einsatz generativer KI in einer öffentlichen Wissens-Funktion.",
-  "description_de": "Das Europäische Parlament stellte im Oktober 2024 den auf Anthropics Claude (via Amazon Bedrock) basierenden Chatbot \"Archibot\" / \"Ask the EP Archives\" vor, der historische Fragen zu EP und EU beantworten soll. Im offiziellen Test des Parlaments nannte Claude als ersten Präsidenten der Europäischen Kommission \"Robert Schuman 7\" – tatsächlich die Adresse eines Brüsseler Cafés, die das Modell offenbar memoriert hatte. Bürgerrechtsorganisationen (z. B. Irish Council for Civil Liberties) kritisierten den unkritischen Einsatz generativer KI in einer öffentlichen Wissens-Funktion.",
-  "description_en": "In October 2024 the European Parliament launched 'Archibot' / 'Ask the EP Archives', a chatbot built on Anthropic's Claude (via Amazon Bedrock) intended to answer questions about EP and EU history. In the Parliament's own demo, Claude identified the first president of the European Commission as 'Robert Schuman 7' – in fact the address of a Brussels café the model had apparently memorised. Digital-rights groups including the Irish Council for Civil Liberties criticised the uncritical deployment of generative AI in a public-information role.",
+  "description": "Das Europäische Parlament stellte im Oktober 2024 den auf Anthropics Claude (via Amazon Bedrock) basierenden Chatbot \"Archibot\" / \"Ask the EP Archives\" vor, der historische Fragen zu EP und EU beantworten soll. Im offiziellen Test des Parlaments nannte Claude als ersten Präsidenten der Europäischen Kommission \"Robert Schuman 7\" - tatsächlich die Adresse eines Brüsseler Cafés, die das Modell offenbar memoriert hatte. Bürgerrechtsorganisationen (z. B. Irish Council for Civil Liberties) kritisierten den unkritischen Einsatz generativer KI in einer öffentlichen Wissens-Funktion.",
+  "description_de": "Das Europäische Parlament stellte im Oktober 2024 den auf Anthropics Claude (via Amazon Bedrock) basierenden Chatbot \"Archibot\" / \"Ask the EP Archives\" vor, der historische Fragen zu EP und EU beantworten soll. Im offiziellen Test des Parlaments nannte Claude als ersten Präsidenten der Europäischen Kommission \"Robert Schuman 7\" - tatsächlich die Adresse eines Brüsseler Cafés, die das Modell offenbar memoriert hatte. Bürgerrechtsorganisationen (z. B. Irish Council for Civil Liberties) kritisierten den unkritischen Einsatz generativer KI in einer öffentlichen Wissens-Funktion.",
+  "description_en": "In October 2024 the European Parliament launched 'Archibot' / 'Ask the EP Archives', a chatbot built on Anthropic's Claude (via Amazon Bedrock) intended to answer questions about EP and EU history. In the Parliament's own demo, Claude identified the first president of the European Commission as 'Robert Schuman 7' - in fact the address of a Brussels café the model had apparently memorised. Digital-rights groups including the Irish Council for Civil Liberties criticised the uncritical deployment of generative AI in a public-information role.",
   "startDate": "2024-10",
   "location": {
     "@type": "Place",
@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Wahrheit in öffentlicher Kommunikation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Wahrheit in öffentlicher Kommunikation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to information",
+    "Protection against manipulation",
+    "Integrity of public information",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "European Parliament",
@@ -55,7 +70,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024",
+      "phase": "infrastructure",
+      "title": "EP-Archiv mit über 2,1 Millionen Dokumenten als Datenbasis",
+      "description": "Das Europäische Parlament verfügt über ein historisches Archiv mit mehr als 2,1 Millionen offiziellen Dokumenten zu EP und EU. Um diesen Bestand maschinell durchsuchbar zu machen, wurde eine Retrieval-Augmented-Generation-Architektur aufgebaut, die ein Sprachmodell mit den Archivinhalten verknüpft. Diese technische Basis war die Voraussetzung für einen öffentlichen KI-Chatbot.",
+      "title_de": "EP-Archiv mit über 2,1 Millionen Dokumenten als Datenbasis",
+      "description_de": "Das Europäische Parlament verfügt über ein historisches Archiv mit mehr als 2,1 Millionen offiziellen Dokumenten zu EP und EU. Um diesen Bestand maschinell durchsuchbar zu machen, wurde eine Retrieval-Augmented-Generation-Architektur aufgebaut, die ein Sprachmodell mit den Archivinhalten verknüpft. Diese technische Basis war die Voraussetzung für einen öffentlichen KI-Chatbot.",
+      "title_en": "EP archive of over 2.1 million documents as the data base",
+      "description_en": "The European Parliament holds a historical archive of more than 2.1 million official documents on the EP and the EU. To make this collection machine-searchable, a retrieval-augmented-generation architecture was built that links a language model to the archival content. This technical base was the precondition for a public AI chatbot.",
+      "sources": [
+        "https://www.anthropic.com/customers/european-parliament"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "doctrine",
+      "title": "Parlament setzt auf generative KI für öffentlichen Archivzugang",
+      "description": "Das Europäische Parlament entschied, den Archivzugang über einen generativen KI-Chatbot auf Basis von Anthropics Claude (via Amazon Bedrock) bereitzustellen, statt nur über klassische Suche. Kritiker bemängelten später, dass kein direkter Vertrag mit Anthropic bestand und Risiko-, Umwelt- sowie Datenschutz-Folgenabschätzung übersprungen oder als nicht relevant eingestuft wurden. Diese Doktrin priorisierte Komfort vor Verlässlichkeit.",
+      "title_de": "Parlament setzt auf generative KI für öffentlichen Archivzugang",
+      "description_de": "Das Europäische Parlament entschied, den Archivzugang über einen generativen KI-Chatbot auf Basis von Anthropics Claude (via Amazon Bedrock) bereitzustellen, statt nur über klassische Suche. Kritiker bemängelten später, dass kein direkter Vertrag mit Anthropic bestand und Risiko-, Umwelt- sowie Datenschutz-Folgenabschätzung übersprungen oder als nicht relevant eingestuft wurden. Diese Doktrin priorisierte Komfort vor Verlässlichkeit.",
+      "title_en": "Parliament opts for generative AI for public archive access",
+      "description_en": "The European Parliament decided to provide archive access via a generative AI chatbot built on Anthropic's Claude (through Amazon Bedrock) rather than classic search alone. Critics later noted that there was no direct contract with Anthropic and that risk, environmental and data-protection impact assessments were skipped or deemed irrelevant. This doctrine prioritised convenience over reliability.",
+      "sources": [
+        "https://euobserver.com/4239/why-is-eu-parliament-using-a-bullshit-generator-ai-for-archive-access/"
+      ]
+    },
+    {
+      "date": "2024-10-22",
+      "phase": "event",
+      "title": "Archibot nennt 'Robert Schuman 7' - eine Brüsseler Café-Adresse - als ersten Kommissionspräsidenten",
+      "description": "Beim offiziellen Start von 'Archibot' / 'Ask the EP Archives' nannte das Modell auf die Frage nach dem ersten Präsidenten der Europäischen Kommission 'Robert Schuman 7'. Das ist tatsächlich die Adresse eines Brüsseler Cafés, die das System offenbar memoriert hatte. Der Fehler trat im vom Parlament selbst präsentierten Test auf.",
+      "title_de": "Archibot nennt 'Robert Schuman 7' - eine Brüsseler Café-Adresse - als ersten Kommissionspräsidenten",
+      "description_de": "Beim offiziellen Start von 'Archibot' / 'Ask the EP Archives' nannte das Modell auf die Frage nach dem ersten Präsidenten der Europäischen Kommission 'Robert Schuman 7'. Das ist tatsächlich die Adresse eines Brüsseler Cafés, die das System offenbar memoriert hatte. Der Fehler trat im vom Parlament selbst präsentierten Test auf.",
+      "title_en": "Archibot names 'Robert Schuman 7' - a Brussels cafe address - as first Commission president",
+      "description_en": "At the official launch of 'Archibot' / 'Ask the EP Archives', when asked who the first president of the European Commission was, the model answered 'Robert Schuman 7'. That is in fact the address of a Brussels cafe the system had apparently memorised. The error occurred in the Parliament's own demonstration.",
+      "sources": [
+        "https://www.euronews.com/next/2024/10/22/an-ai-tool-is-making-the-european-parliaments-history-easier-to-understand-in-all-eu-langu"
+      ]
+    },
+    {
+      "date": "2024-11",
+      "phase": "consequences",
+      "title": "Bürgerrechtsgruppen kritisieren unkritischen KI-Einsatz im öffentlichen Wissensdienst",
+      "description": "Bürgerrechts- und Digitalrechtsorganisationen, darunter der Irish Council for Civil Liberties, kritisierten den Einsatz als Beispiel dafür, wie generative KI nicht im öffentlichen Sektor eingeführt werden sollte. Sie bemängelten halluzinierte Falschaussagen, fehlende Kontrolle über die Modellausgaben und ausgelassene Folgenabschätzungen. Der Fall wurde zu einer Fallstudie über unkritische KI-Beschaffung in Behörden.",
+      "title_de": "Bürgerrechtsgruppen kritisieren unkritischen KI-Einsatz im öffentlichen Wissensdienst",
+      "description_de": "Bürgerrechts- und Digitalrechtsorganisationen, darunter der Irish Council for Civil Liberties, kritisierten den Einsatz als Beispiel dafür, wie generative KI nicht im öffentlichen Sektor eingeführt werden sollte. Sie bemängelten halluzinierte Falschaussagen, fehlende Kontrolle über die Modellausgaben und ausgelassene Folgenabschätzungen. Der Fall wurde zu einer Fallstudie über unkritische KI-Beschaffung in Behörden.",
+      "title_en": "Civil-rights groups criticise uncritical AI use in a public knowledge service",
+      "description_en": "Civil-liberties and digital-rights groups, including the Irish Council for Civil Liberties, criticised the deployment as an example of how generative AI should not be introduced in the public sector. They flagged hallucinated false statements, a lack of control over the model's outputs and skipped impact assessments. The case became a case study in uncritical AI procurement by public bodies.",
+      "sources": [
+        "https://www.iccl.ie/press-release/how-not-to-deploy-generative-ai-the-story-of-the-european-parliament/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.iccl.ie/press-release/how-not-to-deploy-generative-ai-the-story-of-the-european-parliament/",
