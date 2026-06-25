@@ -26,9 +26,24 @@
     "discrimination",
     "censorship"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Meinungsfreiheit",
+    "Gleichbehandlung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Meinungsfreiheit",
+    "Gleichbehandlung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Freedom of expression",
+    "Equal treatment",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Google Jigsaw",
@@ -49,7 +64,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-02",
+      "phase": "infrastructure",
+      "title": "Jigsaw startet Perspective API zur Toxizitätsbewertung",
+      "description": "Googles Tochter Jigsaw und Googles Counter-Abuse-Team veröffentlichen im Februar 2017 die kostenlose Perspective API, die Kommentare auf einer Skala von 0 bis 100 nach 'Toxizität' bewertet. Das Modell wird mit Millionen von Kommentaren trainiert, die von Bewerter-Panels von 'sehr toxisch' bis 'sehr gesund' eingestuft wurden. Startpartner sind unter anderem die New York Times, der Guardian, der Economist und Wikipedia.",
+      "title_de": "Jigsaw startet Perspective API zur Toxizitätsbewertung",
+      "description_de": "Googles Tochter Jigsaw und Googles Counter-Abuse-Team veröffentlichen im Februar 2017 die kostenlose Perspective API, die Kommentare auf einer Skala von 0 bis 100 nach 'Toxizität' bewertet. Das Modell wird mit Millionen von Kommentaren trainiert, die von Bewerter-Panels von 'sehr toxisch' bis 'sehr gesund' eingestuft wurden. Startpartner sind unter anderem die New York Times, der Guardian, der Economist und Wikipedia.",
+      "title_en": "Jigsaw launches the Perspective API for toxicity scoring",
+      "description_en": "In February 2017 Google subsidiary Jigsaw and Google's Counter-Abuse team release the free Perspective API, which scores comments on a 0-100 'toxicity' scale. The model is trained on millions of comments rated by annotator panels from 'very toxic' to 'very healthy'. Launch partners include The New York Times, The Guardian, The Economist and Wikipedia.",
+      "sources": [
+        "https://jigsaw.google/our-work/supporting-online-conversations/"
+      ]
+    },
+    {
+      "date": "2017-06",
+      "phase": "doctrine",
+      "title": "Plattformen ersetzen menschliche Moderation durch Toxizitäts-Scores",
+      "description": "Verlage und Plattformen setzen Perspective ein, um Kommentarspalten skalierbar offen zu halten: Kommentare mit hohem Score werden automatisch markiert, gedrosselt oder von menschlichen Moderatoren priorisiert geprüft. Dieses Geschäftsmodell macht ein statistisches Sprachmodell zur faktischen Türsteher-Instanz für die Teilnahme an öffentlichen Online-Debatten - mit dessen latenten Verzerrungen.",
+      "title_de": "Plattformen ersetzen menschliche Moderation durch Toxizitäts-Scores",
+      "description_de": "Verlage und Plattformen setzen Perspective ein, um Kommentarspalten skalierbar offen zu halten: Kommentare mit hohem Score werden automatisch markiert, gedrosselt oder von menschlichen Moderatoren priorisiert geprüft. Dieses Geschäftsmodell macht ein statistisches Sprachmodell zur faktischen Türsteher-Instanz für die Teilnahme an öffentlichen Online-Debatten - mit dessen latenten Verzerrungen.",
+      "title_en": "Platforms replace human moderation with toxicity scores",
+      "description_en": "Publishers and platforms deploy Perspective to keep comment sections open at scale: high-scoring comments are automatically flagged, throttled or prioritised for human review. This business model turns a statistical language model into a de-facto gatekeeper for participation in public online debate - along with its latent biases.",
+      "sources": [
+        "https://www.poynter.org/tech-tools/2017/the-new-york-times-is-teaming-up-with-googles-jigsaw-to-expand-its-comments/"
+      ]
+    },
+    {
+      "date": "2019-07",
+      "phase": "event",
+      "title": "ACL-Studie weist dialektale Verzerrung gegen AAVE nach",
+      "description": "Die ACL-2019-Studie von Sap, Card, Gabriel, Choi und Smith zeigt, dass weit genutzte Hassrede-Datensätze African American Vernacular English (AAVE) systematisch als beleidigend einstufen. Tweets im AAVE und von selbst-identifizierten Afroamerikanern werden bis zu doppelt so häufig als beleidigend markiert; in einem Datensatz galten 46 Prozent der harmlosen AAVE-Tweets als beleidigend gegenüber 9 Prozent bei General American English.",
+      "title_de": "ACL-Studie weist dialektale Verzerrung gegen AAVE nach",
+      "description_de": "Die ACL-2019-Studie von Sap, Card, Gabriel, Choi und Smith zeigt, dass weit genutzte Hassrede-Datensätze African American Vernacular English (AAVE) systematisch als beleidigend einstufen. Tweets im AAVE und von selbst-identifizierten Afroamerikanern werden bis zu doppelt so häufig als beleidigend markiert; in einem Datensatz galten 46 Prozent der harmlosen AAVE-Tweets als beleidigend gegenüber 9 Prozent bei General American English.",
+      "title_en": "ACL study documents dialectal bias against AAVE",
+      "description_en": "The ACL 2019 paper by Sap, Card, Gabriel, Choi and Smith shows that widely-used hate-speech datasets systematically rate African American Vernacular English (AAVE) as offensive. AAVE tweets and tweets by self-identified African Americans are flagged offensive up to twice as often; in one dataset 46 percent of non-offensive AAVE tweets were rated offensive versus 9 percent for General American English.",
+      "sources": [
+        "https://aclanthology.org/P19-1163/"
+      ]
+    },
+    {
+      "date": "2019-08-14",
+      "phase": "event",
+      "title": "Berichterstattung zur rassistischen Verzerrung von Perspective",
+      "description": "Im August 2019 berichten TechCrunch und Fortune, dass Googles Perspective-API Tweets im African American English deutlich häufiger als 'toxisch' markiert als sprachlich äquivalente Aussagen im General American English. Die Schwelle für Teilhabe an moderierten Debatten fällt damit für eine sprachliche Minderheit höher aus - ohne dass die Sprecher etwas Schädliches geäußert haben.",
+      "title_de": "Berichterstattung zur rassistischen Verzerrung von Perspective",
+      "description_de": "Im August 2019 berichten TechCrunch und Fortune, dass Googles Perspective-API Tweets im African American English deutlich häufiger als 'toxisch' markiert als sprachlich äquivalente Aussagen im General American English. Die Schwelle für Teilhabe an moderierten Debatten fällt damit für eine sprachliche Minderheit höher aus - ohne dass die Sprecher etwas Schädliches geäußert haben.",
+      "title_en": "Media coverage of Perspective's racial bias",
+      "description_en": "In August 2019 TechCrunch and Fortune report that Google's Perspective API flags African American English tweets as 'toxic' far more often than linguistically equivalent General American English statements. The barrier to participating in moderated debate is thereby raised for a linguistic minority - without those speakers having said anything harmful.",
+      "sources": [
+        "https://techcrunch.com/2019/08/14/racial-bias-observed-in-hate-speech-detection-algorithm-from-google/"
+      ]
+    },
+    {
+      "date": "2019-08-16",
+      "phase": "consequences",
+      "title": "Jigsaw räumt Problem ein und kündigt Zusammenarbeit an",
+      "description": "Jigsaw bestätigt das Problem und kündigt eine Zusammenarbeit mit den Forschenden an. Die Studie schlägt Dialekt- und Rasse-Priming der Annotatoren als Gegenmaßnahme vor und macht deutlich, dass die Verzerrung nicht im Modell allein, sondern bereits in den menschlichen Trainingslabels begründet liegt - ein Befund, der die Bias-Debatte in der automatischen Inhaltsmoderation weltweit beeinflusst.",
+      "title_de": "Jigsaw räumt Problem ein und kündigt Zusammenarbeit an",
+      "description_de": "Jigsaw bestätigt das Problem und kündigt eine Zusammenarbeit mit den Forschenden an. Die Studie schlägt Dialekt- und Rasse-Priming der Annotatoren als Gegenmaßnahme vor und macht deutlich, dass die Verzerrung nicht im Modell allein, sondern bereits in den menschlichen Trainingslabels begründet liegt - ein Befund, der die Bias-Debatte in der automatischen Inhaltsmoderation weltweit beeinflusst.",
+      "title_en": "Jigsaw acknowledges the problem and pledges collaboration",
+      "description_en": "Jigsaw confirms the problem and announces collaboration with the researchers. The study proposes dialect and race priming of annotators as a remedy and makes clear that the bias originates not in the model alone but already in the human training labels - a finding that shapes the bias debate around automated content moderation worldwide.",
+      "sources": [
+        "https://fortune.com/2019/08/16/google-jigsaw-perspective-racial-bias/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2019/08/14/racial-bias-observed-in-hate-speech-detection-algorithm-from-google/",

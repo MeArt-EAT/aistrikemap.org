@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Kinderrechte",
+    "Schutz vor Diskriminierung",
+    "Recht auf Gesundheit"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Kinderrechte",
+    "Schutz vor Diskriminierung",
+    "Recht auf Gesundheit"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Children's rights",
+    "Protection from discrimination",
+    "Right to health"
+  ],
   "asm:actors": [
     {
       "name": "Liminex Inc. / GoGuardian",
@@ -49,7 +67,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-08",
+      "phase": "infrastructure",
+      "title": "GoGuardian startet das KI-Modul Beacon",
+      "description": "Das 2014 in El Segundo gegründete Unternehmen GoGuardian brachte im August 2018 das Modul Beacon auf den Markt. Es wird auf schuleigenen Geräten installiert und analysiert das Surf- und Suchverhalten von Schülern mit maschinellem Lernen, um Anzeichen von Suizidalität oder Selbstverletzung zu erkennen und schulisches Personal zu alarmieren.",
+      "title_de": "GoGuardian startet das KI-Modul Beacon",
+      "description_de": "Das 2014 in El Segundo gegründete Unternehmen GoGuardian brachte im August 2018 das Modul Beacon auf den Markt. Es wird auf schuleigenen Geräten installiert und analysiert das Surf- und Suchverhalten von Schülern mit maschinellem Lernen, um Anzeichen von Suizidalität oder Selbstverletzung zu erkennen und schulisches Personal zu alarmieren.",
+      "title_en": "GoGuardian launches its AI module Beacon",
+      "description_en": "GoGuardian, founded in El Segundo in 2014, released the Beacon module in August 2018. Installed on school-issued devices, it analyses students' browsing and search behaviour with machine learning to detect signs of suicidality or self-harm and to alert school staff.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GoGuardian"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Pandemie treibt 1:1-Geräte und Schüler-Monitoring",
+      "description": "Mit den Schulschließungen der COVID-19-Pandemie statteten US-Schulen flächendeckend Schüler mit Chromebooks und Laptops aus - der Anteil der Geräte-ausstattenden Schulen sprang von rund 43 auf 86 Prozent. Im Namen der Sicherheit und Suizidprävention wurde Überwachungssoftware wie GoGuardian und Gaggle zum Standard und überwachte das Online-Verhalten der Lernenden bis ins Elternhaus.",
+      "title_de": "Pandemie treibt 1:1-Geräte und Schüler-Monitoring",
+      "description_de": "Mit den Schulschließungen der COVID-19-Pandemie statteten US-Schulen flächendeckend Schüler mit Chromebooks und Laptops aus - der Anteil der Geräte-ausstattenden Schulen sprang von rund 43 auf 86 Prozent. Im Namen der Sicherheit und Suizidprävention wurde Überwachungssoftware wie GoGuardian und Gaggle zum Standard und überwachte das Online-Verhalten der Lernenden bis ins Elternhaus.",
+      "title_en": "Pandemic drives 1:1 devices and student monitoring",
+      "description_en": "With the COVID-19 school closures, US schools equipped students with Chromebooks and laptops on a mass scale - the share of device-providing schools jumped from around 43 to 86 percent. In the name of safety and suicide prevention, monitoring software such as GoGuardian and Gaggle became standard and surveilled learners' online behaviour right into their homes.",
+      "sources": [
+        "https://www.govtech.com/education/k-12/monitoring-student-searches-raises-questions-about-privacy"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "event",
+      "title": "Massenhafte Fehlalarme und Datenschutzbedenken",
+      "description": "Ab 2021 dokumentierten Berichte massenhafte Fehlalarme von GoGuardian und Beacon: harmlose oder sogar lehrreiche Inhalte - etwa Bibelverse, Gesetzestexte, College-Webseiten oder Beratungsangebote - wurden als Risiko markiert. GoGuardian überwachte zu diesem Zeitpunkt Millionen Schüler in tausenden Schulen, ohne verlässlich zwischen echtem Risiko und Alltagsnutzung unterscheiden zu können.",
+      "title_de": "Massenhafte Fehlalarme und Datenschutzbedenken",
+      "description_de": "Ab 2021 dokumentierten Berichte massenhafte Fehlalarme von GoGuardian und Beacon: harmlose oder sogar lehrreiche Inhalte - etwa Bibelverse, Gesetzestexte, College-Webseiten oder Beratungsangebote - wurden als Risiko markiert. GoGuardian überwachte zu diesem Zeitpunkt Millionen Schüler in tausenden Schulen, ohne verlässlich zwischen echtem Risiko und Alltagsnutzung unterscheiden zu können.",
+      "title_en": "Mass false positives and privacy concerns",
+      "description_en": "From 2021 onward, reports documented mass false positives from GoGuardian and Beacon: benign or even educational content - such as Bible verses, legislative texts, college websites or counselling resources - was flagged as a risk. At that point GoGuardian was monitoring millions of students across thousands of schools without reliably distinguishing genuine risk from everyday use.",
+      "sources": [
+        "https://www.govtech.com/education/k-12/monitoring-student-searches-raises-questions-about-privacy"
+      ]
+    },
+    {
+      "date": "2023-10",
+      "phase": "consequences",
+      "title": "EFF: 'Red-Flag-Maschine' mit hoher Falsch-Positiv-Rate",
+      "description": "Im Oktober 2023 veröffentlichte die Electronic Frontier Foundation eine Analyse, die GoGuardian als 'Red-Flag-Maschine by design' kritisierte: Die Falsch-Positiven übersteigen die Treffer deutlich, sensible Themen wie LGBTQ+, sexuelle Gesundheit oder Drogenprävention werden überproportional markiert, und die über Kinder gesammelten Daten bergen Missbrauchsrisiken. Die EFF warnte, dass solche Systeme Sozialarbeiter und Fachpersonal nicht ersetzen können.",
+      "title_de": "EFF: 'Red-Flag-Maschine' mit hoher Falsch-Positiv-Rate",
+      "description_de": "Im Oktober 2023 veröffentlichte die Electronic Frontier Foundation eine Analyse, die GoGuardian als 'Red-Flag-Maschine by design' kritisierte: Die Falsch-Positiven übersteigen die Treffer deutlich, sensible Themen wie LGBTQ+, sexuelle Gesundheit oder Drogenprävention werden überproportional markiert, und die über Kinder gesammelten Daten bergen Missbrauchsrisiken. Die EFF warnte, dass solche Systeme Sozialarbeiter und Fachpersonal nicht ersetzen können.",
+      "title_en": "EFF: a 'red flag machine' with a high false-positive rate",
+      "description_en": "In October 2023 the Electronic Frontier Foundation published an analysis criticising GoGuardian as a 'red flag machine by design': its false positives far outweigh its hits, sensitive topics such as LGBTQ+, sexual health or drug prevention are disproportionately flagged, and the data collected on children carries abuse risks. The EFF warned that such systems cannot replace social workers and trained professionals.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2023/10/how-goguardian-invades-student-privacy"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.govtech.com/education/k-12/monitoring-student-searches-raises-questions-about-privacy",

@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Korperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf verlässliche Information"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Korperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf verlässliche Information"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Physical integrity",
+    "Consumer protection",
+    "Protection from manipulation",
+    "Right to reliable information"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -46,7 +64,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-05-10",
+      "phase": "infrastructure",
+      "title": "Google startet Search Generative Experience als Basis",
+      "description": "Am 10. Mai 2023 stellte Google auf seiner Entwicklerkonferenz I/O die Search Generative Experience (SGE) vor - KI-generierte Zusammenfassungen, die über den klassischen Suchergebnissen erscheinen. Das System stutzt sich per 'Grounding' auf den Google-Suchindex und fasst Inhalte mehrerer Webquellen zusammen. Diese Architektur kann jedoch nicht zuverlässig zwischen serioser Information, Witz und Satire unterscheiden.",
+      "title_de": "Google startet Search Generative Experience als Basis",
+      "description_de": "Am 10. Mai 2023 stellte Google auf seiner Entwicklerkonferenz I/O die Search Generative Experience (SGE) vor - KI-generierte Zusammenfassungen, die über den klassischen Suchergebnissen erscheinen. Das System stutzt sich per 'Grounding' auf den Google-Suchindex und fasst Inhalte mehrerer Webquellen zusammen. Diese Architektur kann jedoch nicht zuverlässig zwischen serioser Information, Witz und Satire unterscheiden.",
+      "title_en": "Google launches Search Generative Experience as the basis",
+      "description_en": "On 10 May 2023, Google unveiled the Search Generative Experience (SGE) at its I/O developer conference - AI-generated summaries that appear above the classic search results. The system relies on 'grounding' in the Google search index and summarises content from multiple web sources. However, this architecture cannot reliably distinguish between serious information, jokes and satire.",
+      "sources": [
+        "https://ahrefs.com/blog/google-ai-overviews/"
+      ]
+    },
+    {
+      "date": "2024-05-14",
+      "phase": "doctrine",
+      "title": "Google rollt AI Overviews als Standard für alle US-Nutzer aus",
+      "description": "Am 14. Mai 2024 startete Google AI Overviews, die umbenannte und ohne Opt-in für alle US-Nutzer aktivierte Version von SGE, ganz oben in den Suchergebnissen. Die Entscheidung, generierte Antworten standardmäßig über den verlinkten Quellen zu platzieren, machte die KI-Zusammenfassung zur ersten und oft einzigen Information, die Nutzende sahen - ohne ausreichende Qualitätssicherung gegen Fehl- und Satirequellen.",
+      "title_de": "Google rollt AI Overviews als Standard für alle US-Nutzer aus",
+      "description_de": "Am 14. Mai 2024 startete Google AI Overviews, die umbenannte und ohne Opt-in für alle US-Nutzer aktivierte Version von SGE, ganz oben in den Suchergebnissen. Die Entscheidung, generierte Antworten standardmäßig über den verlinkten Quellen zu platzieren, machte die KI-Zusammenfassung zur ersten und oft einzigen Information, die Nutzende sahen - ohne ausreichende Qualitätssicherung gegen Fehl- und Satirequellen.",
+      "title_en": "Google rolls out AI Overviews by default for all US users",
+      "description_en": "On 14 May 2024, Google launched AI Overviews, the renamed version of SGE activated without opt-in for all US users, at the very top of search results. The decision to place generated answers above the linked sources by default made the AI summary the first and often only information users saw - without sufficient quality control against erroneous and satirical sources.",
+      "sources": [
+        "https://blog.google/products/search/generative-ai-google-search-may-2024/"
+      ]
+    },
+    {
+      "date": "2024-05-23",
+      "phase": "event",
+      "title": "AI Overviews empfiehlt Kleber auf Pizza und Steine essen",
+      "description": "Kurz nach dem Rollout verbreiteten sich Beispiele gefahrlicher Antworten: AI Overviews riet, ungiftigen Kleber in die Pizzasoße zu mischen, täglich kleine Steine zu essen oder in die Sonne zu starren. Die Empfehlungen stammten aus einem alten Reddit-Witz und einer republizierten Onion-Satire, die das System für seriose Quellen hielt. Der Onion-Bezug wurde öffentlich aufgedeckt.",
+      "title_de": "AI Overviews empfiehlt Kleber auf Pizza und Steine essen",
+      "description_de": "Kurz nach dem Rollout verbreiteten sich Beispiele gefahrlicher Antworten: AI Overviews riet, ungiftigen Kleber in die Pizzasoße zu mischen, täglich kleine Steine zu essen oder in die Sonne zu starren. Die Empfehlungen stammten aus einem alten Reddit-Witz und einer republizierten Onion-Satire, die das System für seriose Quellen hielt. Der Onion-Bezug wurde öffentlich aufgedeckt.",
+      "title_en": "AI Overviews recommends glue on pizza and eating rocks",
+      "description_en": "Shortly after the rollout, examples of dangerous answers spread: AI Overviews advised mixing non-toxic glue into pizza sauce, eating small rocks daily, or staring at the sun. The recommendations came from an old Reddit joke and a republished Onion satire that the system treated as authoritative. The Onion connection was publicly exposed.",
+      "sources": [
+        "https://www.bloomberg.com/opinion/articles/2024-05-30/pizza-glue-small-rocks-google-ai-overview-answers-are-a-mess"
+      ]
+    },
+    {
+      "date": "2024-05-30",
+      "phase": "consequences",
+      "title": "Google rudert zuruck und schrankt AI Overviews ein",
+      "description": "Am 30. Mai 2024 raumte Google ein, dass die KI-Übersichten teils 'seltsame, ungenaue' Ergebnisse lieferten, und kundigte Anpassungen an: strengere Ausloseregeln, weniger Overviews bei kritischen Themen sowie der Ausschluss bestimmter Reddit- und Nutzergenerierter Inhalte. Medien dokumentierten, dass die Funktion deutlich seltener erschien.",
+      "title_de": "Google rudert zuruck und schrankt AI Overviews ein",
+      "description_de": "Am 30. Mai 2024 raumte Google ein, dass die KI-Übersichten teils 'seltsame, ungenaue' Ergebnisse lieferten, und kundigte Anpassungen an: strengere Ausloseregeln, weniger Overviews bei kritischen Themen sowie der Ausschluss bestimmter Reddit- und Nutzergenerierter Inhalte. Medien dokumentierten, dass die Funktion deutlich seltener erschien.",
+      "title_en": "Google backtracks and scales back AI Overviews",
+      "description_en": "On 30 May 2024, Google admitted that the AI overviews produced some 'odd, inaccurate' results and announced adjustments: stricter triggering rules, fewer overviews on sensitive topics, and the exclusion of certain Reddit and user-generated content. Media documented that the feature appeared markedly less often.",
+      "sources": [
+        "https://www.washingtonpost.com/technology/2024/05/30/google-halt-ai-search/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "Anteil der AI Overviews fällt von 27 auf rund 11 Prozent",
+      "description": "Analysen im Juni 2024 zeigten, dass AI Overviews nur noch in etwa 11 Prozent der Suchanfragen erschienen - gegenüber rund 27 Prozent beim Start. Der Fall wurde zum prominenten Beispiel dafur, wie ungeprufte, satire-blinde KI-Antworten in einem Massenprodukt Gesundheits- und Sicherheitsrisiken erzeugen können.",
+      "title_de": "Anteil der AI Overviews fällt von 27 auf rund 11 Prozent",
+      "description_de": "Analysen im Juni 2024 zeigten, dass AI Overviews nur noch in etwa 11 Prozent der Suchanfragen erschienen - gegenüber rund 27 Prozent beim Start. Der Fall wurde zum prominenten Beispiel dafur, wie ungeprufte, satire-blinde KI-Antworten in einem Massenprodukt Gesundheits- und Sicherheitsrisiken erzeugen können.",
+      "title_en": "Share of AI Overviews drops from 27 to around 11 percent",
+      "description_en": "Analyses in June 2024 showed that AI Overviews appeared in only about 11 percent of search queries - down from around 27 percent at launch. The case became a prominent example of how unvetted, satire-blind AI answers in a mass-market product can create health and safety risks.",
+      "sources": [
+        "https://www.androidauthority.com/ai-overview-scaled-back-3448793/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bloomberg.com/opinion/articles/2024-05-30/pizza-glue-small-rocks-google-ai-overview-answers-are-a-mess",

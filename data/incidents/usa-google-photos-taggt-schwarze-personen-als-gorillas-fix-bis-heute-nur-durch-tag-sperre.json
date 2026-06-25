@@ -31,9 +31,24 @@
     "discrimination",
     "facial-recognition"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Recht auf Gleichbehandlung",
+    "Schutz vor rassistischer Herabwürdigung"
+  ],
+  "asm:affectedRights_de": [
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung",
+    "Recht auf Gleichbehandlung",
+    "Schutz vor rassistischer Herabwürdigung"
+  ],
+  "asm:affectedRights_en": [
+    "Human dignity",
+    "Protection from discrimination",
+    "Right to equal treatment",
+    "Protection from racist degradation"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -47,7 +62,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2015-05",
+      "phase": "infrastructure",
+      "title": "Google startet Google Photos mit automatischer Bilderkennung",
+      "description": "Im Mai 2015 veröffentlichte Google die geräteübergreifende App Google Photos, die mithilfe von neuronaler Bilderkennung Fotos automatisch nach Inhalten kategorisiert und verschlagwortet. Das zugrunde liegende Klassifikationsmodell war auf Trainingsdaten angewiesen, die dunkle Hauttöne unterrepräsentierten - eine bekannte Schwäche von Bildmodellen jener Zeit.",
+      "title_de": "Google startet Google Photos mit automatischer Bilderkennung",
+      "description_de": "Im Mai 2015 veröffentlichte Google die geräteübergreifende App Google Photos, die mithilfe von neuronaler Bilderkennung Fotos automatisch nach Inhalten kategorisiert und verschlagwortet. Das zugrunde liegende Klassifikationsmodell war auf Trainingsdaten angewiesen, die dunkle Hauttöne unterrepräsentierten - eine bekannte Schwäche von Bildmodellen jener Zeit.",
+      "title_en": "Google launches Google Photos with automatic image recognition",
+      "description_en": "In May 2015 Google released the cross-device Google Photos app, which uses neural image recognition to categorise and tag photos automatically by content. The underlying classification model relied on training data that under-represented dark skin tones - a known weakness of image models of that era.",
+      "sources": [
+        "https://www.cbsnews.com/news/google-photos-labeled-pics-of-african-americans-as-gorillas/"
+      ]
+    },
+    {
+      "date": "2015-06-29",
+      "phase": "event",
+      "title": "Google Photos taggt Schwarze Personen als 'Gorillas'",
+      "description": "Der Software-Entwickler Jacky Alcine entdeckte, dass Google Photos Fotos von ihm und einer schwarzen Freundin als 'Gorillas' klassifizierte. Er machte den Fall öffentlich; das rassistische Label löste breite Empörung aus und wurde zu einem der bekanntesten Beispiele algorithmischer Diskriminierung.",
+      "title_de": "Google Photos taggt Schwarze Personen als 'Gorillas'",
+      "description_de": "Der Software-Entwickler Jacky Alcine entdeckte, dass Google Photos Fotos von ihm und einer schwarzen Freundin als 'Gorillas' klassifizierte. Er machte den Fall öffentlich; das rassistische Label löste breite Empörung aus und wurde zu einem der bekanntesten Beispiele algorithmischer Diskriminierung.",
+      "title_en": "Google Photos tags Black people as 'gorillas'",
+      "description_en": "Software engineer Jacky Alcine discovered that Google Photos was classifying photos of him and a Black friend as 'gorillas.' He made the case public; the racist label triggered broad outrage and became one of the best-known examples of algorithmic discrimination.",
+      "sources": [
+        "https://www.cbsnews.com/news/google-photos-labeled-pics-of-african-americans-as-gorillas/"
+      ]
+    },
+    {
+      "date": "2015-07-02",
+      "phase": "consequences",
+      "title": "Google entschuldigt sich und entscheidet sich für Label-Sperre",
+      "description": "Google bezeichnete sich als 'genuinely sorry', und Chief Architect of Social Yonatan Zunger kündigte einen Fix an. Statt die Trainingsdaten-Lücke zu schließen, entschied Google, die Labels 'Gorilla', 'Schimpanse', 'Affe' und verwandte Primaten-Kategorien aus dem Klassifikator zu entfernen - eine Vermeidungs- statt einer Lösungsstrategie.",
+      "title_de": "Google entschuldigt sich und entscheidet sich für Label-Sperre",
+      "description_de": "Google bezeichnete sich als 'genuinely sorry', und Chief Architect of Social Yonatan Zunger kündigte einen Fix an. Statt die Trainingsdaten-Lücke zu schließen, entschied Google, die Labels 'Gorilla', 'Schimpanse', 'Affe' und verwandte Primaten-Kategorien aus dem Klassifikator zu entfernen - eine Vermeidungs- statt einer Lösungsstrategie.",
+      "title_en": "Google apologises and opts for a label block",
+      "description_en": "Google called itself 'genuinely sorry,' and Chief Architect of Social Yonatan Zunger announced a fix. Instead of closing the training-data gap, Google decided to remove the labels 'gorilla,' 'chimpanzee,' 'monkey' and related primate categories from the classifier - an avoidance rather than a solution strategy.",
+      "sources": [
+        "https://www.cbsnews.com/news/google-photos-labeled-pics-of-african-americans-as-gorillas/"
+      ]
+    },
+    {
+      "date": "2018-01-11",
+      "phase": "consequences",
+      "title": "Drei Jahre später: Sperre besteht weiter",
+      "description": "Eine Prüfung durch Wired bestätigte, dass Google die Primaten-Labels nach wie vor zensiert; das eigentliche Modellproblem wurde nicht gelöst. Apple Photos zeigte dasselbe Verhalten, während Googles Cloud-Vision-System Gorillas korrekt erkennen konnte - ein Hinweis, dass die Sperre eine bewusste Produktentscheidung war.",
+      "title_de": "Drei Jahre später: Sperre besteht weiter",
+      "description_de": "Eine Prüfung durch Wired bestätigte, dass Google die Primaten-Labels nach wie vor zensiert; das eigentliche Modellproblem wurde nicht gelöst. Apple Photos zeigte dasselbe Verhalten, während Googles Cloud-Vision-System Gorillas korrekt erkennen konnte - ein Hinweis, dass die Sperre eine bewusste Produktentscheidung war.",
+      "title_en": "Three years later: the block remains",
+      "description_en": "A check by Wired confirmed that Google still censored the primate labels; the underlying model problem was not solved. Apple Photos showed the same behaviour, while Google's Cloud Vision system could correctly recognise gorillas - an indication that the block was a deliberate product decision.",
+      "sources": [
+        "https://www.technologyreview.com/2018/01/11/146257/google-photos-still-has-a-problem-with-gorillas/"
+      ]
+    },
+    {
+      "date": "2023-05-22",
+      "phase": "consequences",
+      "title": "2023: Fix bis heute nur durch Tag-Sperre",
+      "description": "Eine erneute Prüfung durch PetaPixel und die New York Times zeigte, dass Google Photos auch acht Jahre nach dem Vorfall keine Gorillas, Schimpansen, Orang-Utans oder Affen finden kann. Trotz enormer Fortschritte in der KI-Bilderkennung bleibt der 'Fix' die schlichte Sperre der Labels statt einer Lösung des Trainingsdaten-Problems.",
+      "title_de": "2023: Fix bis heute nur durch Tag-Sperre",
+      "description_de": "Eine erneute Prüfung durch PetaPixel und die New York Times zeigte, dass Google Photos auch acht Jahre nach dem Vorfall keine Gorillas, Schimpansen, Orang-Utans oder Affen finden kann. Trotz enormer Fortschritte in der KI-Bilderkennung bleibt der 'Fix' die schlichte Sperre der Labels statt einer Lösung des Trainingsdaten-Problems.",
+      "title_en": "2023: fix to date only via tag-blocking",
+      "description_en": "A renewed check by PetaPixel and the New York Times found that, eight years after the incident, Google Photos still cannot find gorillas, chimpanzees, orangutans or monkeys. Despite enormous advances in AI image recognition, the 'fix' remains the plain blocking of the labels rather than a solution to the training-data problem.",
+      "sources": [
+        "https://petapixel.com/2023/05/22/googles-photos-app-is-still-unable-to-find-gorillas/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnn.com/2015/07/02/tech/google-image-recognition-gorillas-tag",

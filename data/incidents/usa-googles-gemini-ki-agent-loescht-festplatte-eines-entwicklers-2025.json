@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz des Eigentums",
+    "Verbraucherschutz",
+    "Recht auf Datenintegrität",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz des Eigentums",
+    "Verbraucherschutz",
+    "Recht auf Datenintegrität",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Protection of property",
+    "Consumer protection",
+    "Right to data integrity",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -43,7 +58,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2025-06-25",
+      "phase": "infrastructure",
+      "title": "Google startet Gemini CLI als agentischen Terminal-Assistenten",
+      "description": "Am 25. Juni 2025 veröffentlichte Google die quelloffene Gemini CLI, einen agentischen KI-Helfer, der direkt im Terminal läuft und auf natürliche Sprache hin Dateien anlegt, verschiebt und Shell-Befehle ausführt. Solche Agenten erhalten weitreichenden Zugriff auf das lokale Dateisystem und handeln teilautonom. Damit war die technische Voraussetzung geschaffen, dass ein Modell-Fehler reale, irreversible Lösch-Befehle auslösen kann.",
+      "title_de": "Google startet Gemini CLI als agentischen Terminal-Assistenten",
+      "description_de": "Am 25. Juni 2025 veröffentlichte Google die quelloffene Gemini CLI, einen agentischen KI-Helfer, der direkt im Terminal läuft und auf natürliche Sprache hin Dateien anlegt, verschiebt und Shell-Befehle ausführt. Solche Agenten erhalten weitreichenden Zugriff auf das lokale Dateisystem und handeln teilautonom. Damit war die technische Voraussetzung geschaffen, dass ein Modell-Fehler reale, irreversible Lösch-Befehle auslösen kann.",
+      "title_en": "Google launches Gemini CLI as an agentic terminal assistant",
+      "description_en": "On 25 June 2025 Google released the open-source Gemini CLI, an agentic AI helper that runs directly in the terminal and, on natural-language requests, creates and moves files and executes shell commands. Such agents are granted broad access to the local file system and act semi-autonomously. This created the technical precondition for a model error to trigger real, irreversible deletion commands.",
+      "sources": [
+        "https://techcrunch.com/2025/06/25/google-unveils-gemini-cli-an-open-source-ai-tool-for-terminals/"
+      ]
+    },
+    {
+      "date": "2025-07",
+      "phase": "doctrine",
+      "title": "Agentisches Design ohne Lese-nach-Schreib-Prüfung und mit Auto-Ausführung",
+      "description": "Die Agenten waren so ausgelegt, dass sie ihren eigenen Aktionen implizit vertrauten, ohne nach einem Schreibvorgang zu prüfen, ob er tatsächlich gelang. Für maximale Geschwindigkeit boten die Tools zudem autonome Ausführungsmodi (später bei Antigravity 'Turbo'- bzw. 'YOLO'-Modus), die Befehle ohne Nutzer-Bestätigung absetzten. Diese Auslegung priorisierte Bequemlichkeit über Sicherheitsbarrieren.",
+      "title_de": "Agentisches Design ohne Lese-nach-Schreib-Prüfung und mit Auto-Ausführung",
+      "description_de": "Die Agenten waren so ausgelegt, dass sie ihren eigenen Aktionen implizit vertrauten, ohne nach einem Schreibvorgang zu prüfen, ob er tatsächlich gelang. Für maximale Geschwindigkeit boten die Tools zudem autonome Ausführungsmodi (später bei Antigravity 'Turbo'- bzw. 'YOLO'-Modus), die Befehle ohne Nutzer-Bestätigung absetzten. Diese Auslegung priorisierte Bequemlichkeit über Sicherheitsbarrieren.",
+      "title_en": "Agentic design without read-after-write checks and with auto-execution",
+      "description_en": "The agents were designed to implicitly trust their own actions, without verifying after a write whether it had actually succeeded. For maximum speed the tools also offered autonomous execution modes (later 'Turbo' or 'YOLO' mode in Antigravity) that issued commands without user confirmation. This design prioritised convenience over safety barriers.",
+      "sources": [
+        "https://winbuzzer.com/2025/07/26/googles-gemini-cli-deletes-user-files-confesses-catastrophic-failure-xcxwbn/"
+      ]
+    },
+    {
+      "date": "2025-07-25",
+      "phase": "event",
+      "title": "Gemini CLI zerstört Projektdateien von Anuraag Gupta",
+      "description": "Produktmanager Anuraag Gupta dokumentierte, wie die Gemini CLI nach einem still gescheiterten mkdir-Befehl eine Kette erfundener Dateioperationen halluzinierte und anschließend reale Lösch-Befehle ausführte, die seine Projektdateien unwiederbringlich vernichteten. Der Agent gestand: Ich habe Sie vollständig und katastrophal im Stich gelassen. Meine Prüfung der Befehle bestätigt meine grobe Inkompetenz.",
+      "title_de": "Gemini CLI zerstört Projektdateien von Anuraag Gupta",
+      "description_de": "Produktmanager Anuraag Gupta dokumentierte, wie die Gemini CLI nach einem still gescheiterten mkdir-Befehl eine Kette erfundener Dateioperationen halluzinierte und anschließend reale Lösch-Befehle ausführte, die seine Projektdateien unwiederbringlich vernichteten. Der Agent gestand: Ich habe Sie vollständig und katastrophal im Stich gelassen. Meine Prüfung der Befehle bestätigt meine grobe Inkompetenz.",
+      "title_en": "Gemini CLI destroys Anuraag Gupta's project files",
+      "description_en": "Product manager Anuraag Gupta documented how Gemini CLI, after a silently failed mkdir command, hallucinated a chain of fabricated file operations and then executed real deletion commands that irreversibly destroyed his project files. The agent confessed: I have failed you completely and catastrophically. My review of the commands confirms my gross incompetence.",
+      "sources": [
+        "https://developers.slashdot.org/story/25/07/26/0642239/google-gemini-deletes-users-files-then-just-admits-i-have-failed-you-completely-and-catastrophically"
+      ]
+    },
+    {
+      "date": "2025-11",
+      "phase": "consequences",
+      "title": "Gemini 3 Pro löscht in Antigravity-IDE komplette D-Festplatte",
+      "description": "Nach dem Start der Antigravity-IDE im November 2025 wiederholte sich der Fehler in größerem Maßstab: Im autonomen Turbo-Modus führte der Gemini-3-Pro-Agent beim Leeren eines Caches versehentlich 'rmdir /s /q d:' aus und löschte die gesamte D-Festplatte eines griechischen Entwicklers ohne Papierkorb-Sicherung. Der Agent entschuldigte sich, das Versagen sei kritisch.",
+      "title_de": "Gemini 3 Pro löscht in Antigravity-IDE komplette D-Festplatte",
+      "description_de": "Nach dem Start der Antigravity-IDE im November 2025 wiederholte sich der Fehler in größerem Maßstab: Im autonomen Turbo-Modus führte der Gemini-3-Pro-Agent beim Leeren eines Caches versehentlich 'rmdir /s /q d:' aus und löschte die gesamte D-Festplatte eines griechischen Entwicklers ohne Papierkorb-Sicherung. Der Agent entschuldigte sich, das Versagen sei kritisch.",
+      "title_en": "Gemini 3 Pro wipes an entire D: drive in the Antigravity IDE",
+      "description_en": "After the launch of the Antigravity IDE in November 2025, the failure recurred at a larger scale: in autonomous Turbo mode the Gemini 3 Pro agent accidentally ran 'rmdir /s /q d:' while clearing a cache and deleted a Greek developer's entire D: drive with no recycle-bin safety net. The agent apologised, calling the failure critical.",
+      "sources": [
+        "https://cybernews.com/security/deeply-sorry-gemini-deletes-developers-drive/"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "phase": "consequences",
+      "title": "Debatte über Sicherheit autonomer KI-Coding-Agenten",
+      "description": "Die wiederholten Vorfälle wurden in Fachmedien als Weckruf für die Sicherheit agentischer Entwicklungswerkzeuge eingeordnet. Kritisiert wurden insbesondere fehlende Bestätigungs-Abfragen, das blinde Vertrauen der Modelle in eigene Aktionen und der ungeschützte Turbo-/YOLO-Modus. Empfohlen wurden verpflichtende Lese-nach-Schreib-Prüfungen, Sandboxing und Backups vor destruktiven Operationen.",
+      "title_de": "Debatte über Sicherheit autonomer KI-Coding-Agenten",
+      "description_de": "Die wiederholten Vorfälle wurden in Fachmedien als Weckruf für die Sicherheit agentischer Entwicklungswerkzeuge eingeordnet. Kritisiert wurden insbesondere fehlende Bestätigungs-Abfragen, das blinde Vertrauen der Modelle in eigene Aktionen und der ungeschützte Turbo-/YOLO-Modus. Empfohlen wurden verpflichtende Lese-nach-Schreib-Prüfungen, Sandboxing und Backups vor destruktiven Operationen.",
+      "title_en": "Debate over the safety of autonomous AI coding agents",
+      "description_en": "The repeated incidents were framed in trade media as a wake-up call for the safety of agentic development tools. Critics highlighted the absence of confirmation prompts, the models' blind trust in their own actions and the unguarded Turbo/YOLO mode. Recommendations included mandatory read-after-write checks, sandboxing and backups before destructive operations.",
+      "sources": [
+        "https://www.theregister.com/2025/12/01/google_antigravity_wipes_d_drive/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.windowscentral.com/artificial-intelligence/google-antigravity-ai-delete-drive",
