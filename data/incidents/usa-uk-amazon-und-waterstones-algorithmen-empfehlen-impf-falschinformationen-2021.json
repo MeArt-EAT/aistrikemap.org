@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Recht auf Zugang zu verlässlicher Information"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Recht auf Zugang zu verlässlicher Information"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Protection from manipulation",
+    "Consumer protection",
+    "Right to access reliable information"
+  ],
   "asm:actors": [
     {
       "name": "Amazon",
@@ -48,7 +63,59 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Amazons Empfehlungssystem auf Verkaufs- und Klickdaten getrimmt",
+      "description": "Amazon betreibt seit Jahren ein Empfehlungssystem, das Produkte nach dem Muster 'Kunden, die das kauften, kauften auch ...' verknüpft und Suchergebnisse nach Verkaufs- und Engagement-Signalen sortiert. Diese Logik optimiert auf Umsatz und Klicks, nicht auf inhaltliche Richtigkeit. Damit entstand die technische Grundlage, auf der sich gesundheitsbezogene Falschinformation selbstverstärkend ausbreiten konnte.",
+      "title_de": "Amazons Empfehlungssystem auf Verkaufs- und Klickdaten getrimmt",
+      "description_de": "Amazon betreibt seit Jahren ein Empfehlungssystem, das Produkte nach dem Muster 'Kunden, die das kauften, kauften auch ...' verknüpft und Suchergebnisse nach Verkaufs- und Engagement-Signalen sortiert. Diese Logik optimiert auf Umsatz und Klicks, nicht auf inhaltliche Richtigkeit. Damit entstand die technische Grundlage, auf der sich gesundheitsbezogene Falschinformation selbstverstärkend ausbreiten konnte.",
+      "title_en": "Amazon's recommender tuned to sales and click data",
+      "description_en": "For years Amazon has run a recommendation system that links products via 'customers who bought this also bought ...' and ranks search results by sales and engagement signals. This logic optimises for revenue and clicks, not for factual accuracy. It formed the technical basis on which health-related misinformation could spread in a self-reinforcing way.",
+      "sources": []
+    },
+    {
+      "date": "2020-06",
+      "phase": "doctrine",
+      "title": "UW-Studie weist Misinformations-Bias im Algorithmus nach",
+      "description": "Prerna Juneja und Tanu Mitra von der University of Washington veröffentlichten 2020 die Studie 'Algorithms and Health Misinformation: A Case Study of Vaccine Books on Amazon'. Über 22 Tage testeten sie 48 impfbezogene Suchbegriffe und zeigten, dass Suche und Empfehlung systematisch Bücher mit Falschinformation über faktenbasierte Titel stellten - umso stärker, je mehr ein Konto zuvor mit solchen Inhalten interagiert hatte.",
+      "title_de": "UW-Studie weist Misinformations-Bias im Algorithmus nach",
+      "description_de": "Prerna Juneja und Tanu Mitra von der University of Washington veröffentlichten 2020 die Studie 'Algorithms and Health Misinformation: A Case Study of Vaccine Books on Amazon'. Über 22 Tage testeten sie 48 impfbezogene Suchbegriffe und zeigten, dass Suche und Empfehlung systematisch Bücher mit Falschinformation über faktenbasierte Titel stellten - umso stärker, je mehr ein Konto zuvor mit solchen Inhalten interagiert hatte.",
+      "title_en": "UW study documents misinformation bias in the algorithm",
+      "description_en": "Prerna Juneja and Tanu Mitra of the University of Washington published the 2020 study 'Algorithms and Health Misinformation: A Case Study of Vaccine Books on Amazon'. Over 22 days they tested 48 vaccine-related search terms and showed that search and recommendation systematically ranked misinformation books above fact-based titles - more so the more an account had previously engaged with such content.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/32536257/"
+      ]
+    },
+    {
+      "date": "2021-03",
+      "phase": "event",
+      "title": "Berichterstattung: Amazon-Algorithmus bevorzugt Impf-Falschinformation",
+      "description": "Anfang 2021 berichteten Medien breit über die Befunde: Rund 10,5 % der Treffer für den Begriff 'vaccine' lieferten Bücher mit Anti-Impf-Desinformation, und die Empfehlungslogik führte Nutzende zu weiteren Falschinformationen. In Großbritannien gerieten zugleich Waterstones und Foyles in die Kritik, weil sie Coronavirus-Verschwörungs- und Anti-Impf-Titel verkauften.",
+      "title_de": "Berichterstattung: Amazon-Algorithmus bevorzugt Impf-Falschinformation",
+      "description_de": "Anfang 2021 berichteten Medien breit über die Befunde: Rund 10,5 % der Treffer für den Begriff 'vaccine' lieferten Bücher mit Anti-Impf-Desinformation, und die Empfehlungslogik führte Nutzende zu weiteren Falschinformationen. In Großbritannien gerieten zugleich Waterstones und Foyles in die Kritik, weil sie Coronavirus-Verschwörungs- und Anti-Impf-Titel verkauften.",
+      "title_en": "Coverage: Amazon algorithm favours vaccine misinformation",
+      "description_en": "In early 2021 the findings were widely reported: about 10.5% of results for the term 'vaccine' surfaced books with anti-vaccine disinformation, and the recommendation logic led users toward further misinformation. In the UK, Waterstones and Foyles were simultaneously criticised for selling coronavirus-conspiracy and anti-vaccine titles.",
+      "sources": [
+        "https://www.seattletimes.com/business/amazon/amazon-algorithms-promote-vaccine-misinformation-uw-study-says/",
+        "https://www.retailgazette.co.uk/blog/2021/03/waterstones-criticised-for-selling-anti-vaccination-books/"
+      ]
+    },
+    {
+      "date": "2021-09",
+      "phase": "consequences",
+      "title": "US-Abgeordnete fordern Rechenschaft von Amazon",
+      "description": "Im September 2021 forderten Senatorin Elizabeth Warren und der Abgeordnete Adam Schiff in Briefen an Amazon-CEO Andy Jassy Auskunft über die Misinformations-Richtlinien des Konzerns. Warren berichtete, eigene Suchen nach 'COVID-19' und 'vaccine' hätten an erster Stelle Titel des bekannten Impfgegners Joseph Mercola geliefert. Amazon geriet unter politischen Druck, seine Algorithmen und Verkaufspraxis anzupassen.",
+      "title_de": "US-Abgeordnete fordern Rechenschaft von Amazon",
+      "description_de": "Im September 2021 forderten Senatorin Elizabeth Warren und der Abgeordnete Adam Schiff in Briefen an Amazon-CEO Andy Jassy Auskunft über die Misinformations-Richtlinien des Konzerns. Warren berichtete, eigene Suchen nach 'COVID-19' und 'vaccine' hätten an erster Stelle Titel des bekannten Impfgegners Joseph Mercola geliefert. Amazon geriet unter politischen Druck, seine Algorithmen und Verkaufspraxis anzupassen.",
+      "title_en": "US lawmakers demand accountability from Amazon",
+      "description_en": "In September 2021, Senator Elizabeth Warren and Representative Adam Schiff wrote to Amazon CEO Andy Jassy demanding information on the company's misinformation policies. Warren reported that her own searches for 'COVID-19' and 'vaccine' returned, at the top, titles by the well-known anti-vaccine figure Joseph Mercola. Amazon faced political pressure to adjust its algorithms and sales practices.",
+      "sources": [
+        "https://www.npr.org/2021/09/09/1035559330/democrats-slam-amazon-for-promoting-false-covid-cures-and-anti-vaccine-claims"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.seattletimes.com/business/amazon/amazon-algorithms-promote-vaccine-misinformation-uw-study-says/",

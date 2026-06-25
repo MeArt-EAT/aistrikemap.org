@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf zuverlässige Information",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Geistiges Eigentum"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf zuverlässige Information",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Geistiges Eigentum"
+  ],
+  "asm:affectedRights_en": [
+    "Right to reliable information",
+    "Protection from manipulation",
+    "Consumer protection",
+    "Intellectual property"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -53,7 +68,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-12-27",
+      "phase": "infrastructure",
+      "title": "New York Times verklagt OpenAI wegen Nutzung von Artikeln als Trainingsdaten",
+      "description": "Die New York Times reichte am 27. Dezember 2023 vor dem Bundesgericht im Southern District of New York Klage gegen OpenAI und Microsoft ein. Vorwurf: millionenfaches Kopieren urheberrechtlich geschützter Artikel zum Training der Modelle ohne Erlaubnis. Der Streit um die Datengrundlage bildete den Hintergrund für die spätere Frage, wie KI-Systeme Publisher-Inhalte zitieren.",
+      "title_de": "New York Times verklagt OpenAI wegen Nutzung von Artikeln als Trainingsdaten",
+      "description_de": "Die New York Times reichte am 27. Dezember 2023 vor dem Bundesgericht im Southern District of New York Klage gegen OpenAI und Microsoft ein. Vorwurf: millionenfaches Kopieren urheberrechtlich geschützter Artikel zum Training der Modelle ohne Erlaubnis. Der Streit um die Datengrundlage bildete den Hintergrund für die spätere Frage, wie KI-Systeme Publisher-Inhalte zitieren.",
+      "title_en": "New York Times sues OpenAI over use of articles as training data",
+      "description_en": "On 27 December 2023, The New York Times filed suit against OpenAI and Microsoft in the federal court for the Southern District of New York. The claim: copying millions of copyrighted articles to train the models without permission. The dispute over the data basis formed the backdrop for the later question of how AI systems cite publisher content.",
+      "sources": [
+        "https://www.npr.org/2023/12/27/1221821750/new-york-times-sues-chatgpt-openai-microsoft-for-copyright-infringement"
+      ]
+    },
+    {
+      "date": "2024-07-25",
+      "phase": "infrastructure",
+      "title": "OpenAI stellt SearchGPT-Prototyp mit Quellenangaben vor",
+      "description": "Am 25. Juli 2024 kündigte OpenAI SearchGPT an, einen zunächst auf 10.000 Nutzer:innen begrenzten Such-Prototyp, der Web-Antworten mit klaren Links zu relevanten Quellen kombinieren sollte. OpenAI bewarb das Werkzeug ausdrücklich als publisher-freundlich und versprach korrekte Attribution.",
+      "title_de": "OpenAI stellt SearchGPT-Prototyp mit Quellenangaben vor",
+      "description_de": "Am 25. Juli 2024 kündigte OpenAI SearchGPT an, einen zunächst auf 10.000 Nutzer:innen begrenzten Such-Prototyp, der Web-Antworten mit klaren Links zu relevanten Quellen kombinieren sollte. OpenAI bewarb das Werkzeug ausdrücklich als publisher-freundlich und versprach korrekte Attribution.",
+      "title_en": "OpenAI unveils SearchGPT prototype with source citations",
+      "description_en": "On 25 July 2024, OpenAI announced SearchGPT, a search prototype initially limited to 10,000 users that promised to combine web answers with clear links to relevant sources. OpenAI explicitly marketed the tool as publisher-friendly and promised accurate attribution.",
+      "sources": [
+        "https://openai.com/index/searchgpt-prototype/"
+      ]
+    },
+    {
+      "date": "2024-10-31",
+      "phase": "doctrine",
+      "title": "ChatGPT Search wird breit ausgerollt - Attribution als Verkaufsargument",
+      "description": "Am 31. Oktober 2024 brachte OpenAI ChatGPT Search als vollwertige Funktion auf Basis eines feinabgestimmten GPT-4o-Modells heraus. Das Unternehmen schloss Lizenzvereinbarungen mit zahlreichen Verlagen (u.a. Associated Press, Financial Times, News Corp) und stellte die korrekte Quellenattribution als zentrales Versprechen an die Verlagsbranche heraus.",
+      "title_de": "ChatGPT Search wird breit ausgerollt - Attribution als Verkaufsargument",
+      "description_de": "Am 31. Oktober 2024 brachte OpenAI ChatGPT Search als vollwertige Funktion auf Basis eines feinabgestimmten GPT-4o-Modells heraus. Das Unternehmen schloss Lizenzvereinbarungen mit zahlreichen Verlagen (u.a. Associated Press, Financial Times, News Corp) und stellte die korrekte Quellenattribution als zentrales Versprechen an die Verlagsbranche heraus.",
+      "title_en": "ChatGPT Search rolls out broadly - attribution as a selling point",
+      "description_en": "On 31 October 2024, OpenAI released ChatGPT Search as a full feature based on a fine-tuned GPT-4o model. The company struck licensing deals with numerous publishers (including Associated Press, Financial Times, News Corp) and highlighted accurate source attribution as a central promise to the publishing industry.",
+      "sources": [
+        "https://openai.com/index/introducing-chatgpt-search/"
+      ]
+    },
+    {
+      "date": "2024-11-27",
+      "phase": "event",
+      "title": "Tow-Center-Studie: 153 von 200 Zitaten falsch attribuiert",
+      "description": "Das Tow Center for Digital Journalism der Columbia University entnahm Blockzitate aus je zehn Artikeln von 20 zufällig ausgewählten Verlagen (200 Zitate insgesamt) und bat ChatGPT Search, die Quellen zu identifizieren. In 153 Fällen attribuierte das System teilweise oder vollständig falsch, erfand Zitate oder verwies auf umgeschriebene Kopien. Nur sieben Mal räumte es Unsicherheit ein. Lizenzpartner und Verlage mit blockiertem Crawler waren gleichermaßen betroffen.",
+      "title_de": "Tow-Center-Studie: 153 von 200 Zitaten falsch attribuiert",
+      "description_de": "Das Tow Center for Digital Journalism der Columbia University entnahm Blockzitate aus je zehn Artikeln von 20 zufällig ausgewählten Verlagen (200 Zitate insgesamt) und bat ChatGPT Search, die Quellen zu identifizieren. In 153 Fällen attribuierte das System teilweise oder vollständig falsch, erfand Zitate oder verwies auf umgeschriebene Kopien. Nur sieben Mal räumte es Unsicherheit ein. Lizenzpartner und Verlage mit blockiertem Crawler waren gleichermaßen betroffen.",
+      "title_en": "Tow Center study: 153 of 200 quotes misattributed",
+      "description_en": "The Tow Center for Digital Journalism at Columbia University took block quotes from ten articles each across 20 randomly selected publishers (200 quotes in total) and asked ChatGPT Search to identify the sources. In 153 cases the system attributed partially or entirely wrongly, fabricated quotes or pointed to rewritten copies. It acknowledged uncertainty only seven times. Licensing partners and publishers with blocked crawlers were equally affected.",
+      "sources": [
+        "https://www.cjr.org/tow_center/how-chatgpt-misrepresents-publisher-content.php"
+      ]
+    },
+    {
+      "date": "2024-11-29",
+      "phase": "consequences",
+      "title": "Branchenkritik an unzuverlässiger KI-Attribution",
+      "description": "Die Studie wurde von Tech- und Medienpresse breit aufgegriffen und verstärkte die Sorge der Verlage, dass generative Suchsysteme ihre Inhalte falsch wiedergeben und Leser:innen von den Originalquellen abschneiden. Digital Content Next und andere Branchenverbände warnten, fehlerhafte Attribution untergrabe das Vertrauen in Nachrichten und schade Publishern wirtschaftlich.",
+      "title_de": "Branchenkritik an unzuverlässiger KI-Attribution",
+      "description_de": "Die Studie wurde von Tech- und Medienpresse breit aufgegriffen und verstärkte die Sorge der Verlage, dass generative Suchsysteme ihre Inhalte falsch wiedergeben und Leser:innen von den Originalquellen abschneiden. Digital Content Next und andere Branchenverbände warnten, fehlerhafte Attribution untergrabe das Vertrauen in Nachrichten und schade Publishern wirtschaftlich.",
+      "title_en": "Industry criticism of unreliable AI attribution",
+      "description_en": "The study was widely covered by tech and media press and reinforced publishers' concerns that generative search systems misrepresent their content and cut readers off from the original sources. Digital Content Next and other industry bodies warned that faulty attribution undermines trust in news and harms publishers economically.",
+      "sources": [
+        "https://techcrunch.com/2024/11/29/study-of-chatgpt-citations-makes-dismal-reading-for-publishers/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cjr.org/tow_center/how-chatgpt-misrepresents-publisher-content.php",

@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-uber-greyball-algorithmische-tarn-software-gegen-behoerden-in-16-staedten-doj",
-  "name": "USA: Uber Greyball — algorithmische Tarn-Software gegen Behörden in 16+ Städten, DOJ-Strafverfahren",
-  "name_de": "USA: Uber Greyball — algorithmische Tarn-Software gegen Behörden in 16+ Städten, DOJ-Strafverfahren",
-  "name_en": "USA: Uber Greyball — algorithmic stealth software against regulators in 16+ cities, DOJ criminal probe",
+  "name": "USA: Uber Greyball - algorithmische Tarn-Software gegen Behörden in 16+ Städten, DOJ-Strafverfahren",
+  "name_de": "USA: Uber Greyball - algorithmische Tarn-Software gegen Behörden in 16+ Städten, DOJ-Strafverfahren",
+  "name_en": "USA: Uber Greyball - algorithmic stealth software against regulators in 16+ cities, DOJ criminal probe",
   "description": "Anfang März 2017 enthüllte die New York Times Ubers internes Programm \"Greyball\": Eine algorithmische Erkennungs-Pipeline, die Kreditkarten-Daten, Social-Media-Profile und Geolocations nutzte, um Aufsichts-Beamte und Polizei als solche zu identifizieren, ihnen eine Fake-Version der App auszuliefern und Buchungen zu sabotieren. Eingesetzt in Boston, Paris, Las Vegas, Australien, China, Südkorea und Portland (Oregon). Die Portland-Untersuchung dokumentierte 16 gezielt blockierte Aufseher; das US Department of Justice eröffnete ein Strafverfahren; Uber wurde Subjekt einer Northern-California-Grand-Jury-Subpoena.",
   "description_de": "Anfang März 2017 enthüllte die New York Times Ubers internes Programm \"Greyball\": Eine algorithmische Erkennungs-Pipeline, die Kreditkarten-Daten, Social-Media-Profile und Geolocations nutzte, um Aufsichts-Beamte und Polizei als solche zu identifizieren, ihnen eine Fake-Version der App auszuliefern und Buchungen zu sabotieren. Eingesetzt in Boston, Paris, Las Vegas, Australien, China, Südkorea und Portland (Oregon). Die Portland-Untersuchung dokumentierte 16 gezielt blockierte Aufseher; das US Department of Justice eröffnete ein Strafverfahren; Uber wurde Subjekt einer Northern-California-Grand-Jury-Subpoena.",
   "description_en": "In early March 2017 the New York Times revealed Uber's internal programme \"Greyball\": an algorithmic detection pipeline using credit-card data, social media profiles and geolocation to identify regulators and police, then serve them a fake version of the app and sabotage their bookings. Deployed in Boston, Paris, Las Vegas, Australia, China, South Korea and Portland (Oregon). The Portland investigation documented 16 specifically blocked officials; the US Department of Justice opened a criminal probe; Uber was hit with a Northern California grand jury subpoena.",
@@ -31,9 +31,27 @@
     "data-misuse",
     "political-pressure"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf wirksame Strafverfolgung",
+    "Rechtsstaatlichkeit",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf wirksame Strafverfolgung",
+    "Rechtsstaatlichkeit",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Right to effective law enforcement",
+    "Rule of law",
+    "Data protection",
+    "Consumer protection",
+    "Fair procedure"
+  ],
   "asm:actors": [
     {
       "name": "Uber Technologies",
@@ -47,7 +65,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Uber startet das VTOS-Programm zur Erkennung unerwünschter Nutzer",
+      "description": "Bereits 2014 baute Uber ein internes Programm namens VTOS ('Violation of Terms of Service') auf. Es wertete App-Daten, Kreditkarteninformationen, Geräte-Kennungen, Geolocation und Social-Media-Profile aus, um bestimmte Nutzer zu klassifizieren. Auf dieser Daten-Pipeline setzte das spätere Tarn-Werkzeug Greyball auf.",
+      "title_de": "Uber startet das VTOS-Programm zur Erkennung unerwünschter Nutzer",
+      "description_de": "Bereits 2014 baute Uber ein internes Programm namens VTOS ('Violation of Terms of Service') auf. Es wertete App-Daten, Kreditkarteninformationen, Geräte-Kennungen, Geolocation und Social-Media-Profile aus, um bestimmte Nutzer zu klassifizieren. Auf dieser Daten-Pipeline setzte das spätere Tarn-Werkzeug Greyball auf.",
+      "title_en": "Uber launches the VTOS programme to identify unwanted users",
+      "description_en": "As early as 2014, Uber built an internal programme called VTOS ('Violation of Terms of Service'). It mined app data, credit-card information, device identifiers, geolocation and social-media profiles to classify particular users. The later stealth tool Greyball was built on top of this data pipeline.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Greyball"
+      ]
+    },
+    {
+      "date": "2015",
+      "phase": "doctrine",
+      "title": "Aggressive Markteinführung in nicht-lizenzierten Städten, vom Rechtsteam gebilligt",
+      "description": "Ubers Expansionsstrategie sah vor, in neuen Städten auch dann zu starten, wenn der Betrieb dort nicht legal war. Lokale Geschäftsführer wurden angewiesen, mit Greyball Aufsichtsbeamte zu identifizieren - etwa per Geofence um Behördengebäude. Ubers eigenes Rechtsteam billigte das Werkzeug, obwohl Juristen es später als mögliche Behinderung der Justiz werteten.",
+      "title_de": "Aggressive Markteinführung in nicht-lizenzierten Städten, vom Rechtsteam gebilligt",
+      "description_de": "Ubers Expansionsstrategie sah vor, in neuen Städten auch dann zu starten, wenn der Betrieb dort nicht legal war. Lokale Geschäftsführer wurden angewiesen, mit Greyball Aufsichtsbeamte zu identifizieren - etwa per Geofence um Behördengebäude. Ubers eigenes Rechtsteam billigte das Werkzeug, obwohl Juristen es später als mögliche Behinderung der Justiz werteten.",
+      "title_en": "Aggressive launches in non-licensed cities, approved by the legal team",
+      "description_en": "Uber's expansion strategy was to launch in new cities even where operating was not legal. Local general managers were instructed to use Greyball to identify enforcement officers - for instance via a geofence around government buildings. Uber's own legal team approved the tool, even though lawyers later viewed it as possible obstruction of justice.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Greyball"
+      ]
+    },
+    {
+      "date": "2017-03-03",
+      "phase": "event",
+      "title": "New York Times enthüllt das Greyball-Tarnsystem gegen Behörden",
+      "description": "Am 3. März 2017 deckte die New York Times Greyball auf: Uber identifizierte mutmaßliche Aufseher und Polizei, lieferte ihnen eine manipulierte Fake-Version der App mit Geister-Autos aus und verhinderte so Buchungen. Das System wurde in Boston, Paris, Las Vegas, Australien, China, Südkorea und Portland (Oregon) eingesetzt. Vier aktuelle und frühere Mitarbeiter beschrieben das Programm anhand interner Dokumente.",
+      "title_de": "New York Times enthüllt das Greyball-Tarnsystem gegen Behörden",
+      "description_de": "Am 3. März 2017 deckte die New York Times Greyball auf: Uber identifizierte mutmaßliche Aufseher und Polizei, lieferte ihnen eine manipulierte Fake-Version der App mit Geister-Autos aus und verhinderte so Buchungen. Das System wurde in Boston, Paris, Las Vegas, Australien, China, Südkorea und Portland (Oregon) eingesetzt. Vier aktuelle und frühere Mitarbeiter beschrieben das Programm anhand interner Dokumente.",
+      "title_en": "New York Times reveals the Greyball stealth system against regulators",
+      "description_en": "On 3 March 2017, the New York Times exposed Greyball: Uber identified suspected regulators and police, served them a manipulated fake version of the app showing ghost cars, and thereby blocked their bookings. The system was deployed in Boston, Paris, Las Vegas, Australia, China, South Korea and Portland (Oregon). Four current and former employees described the programme using internal documents.",
+      "sources": [
+        "https://techcrunch.com/2017/03/08/uber-says-its-reviewing-use-greyball-and-wont-use-it-to-monitor-regulators/"
+      ]
+    },
+    {
+      "date": "2017-05",
+      "phase": "consequences",
+      "title": "US-Justizministerium eröffnet Strafverfahren, Grand-Jury-Subpoena",
+      "description": "Im Mai 2017 berichteten Medien, das US Department of Justice habe ein Strafverfahren zu Greyball eröffnet. Eine Grand Jury in Nordkalifornien forderte per Subpoena Unterlagen darüber an, wo Greyball eingesetzt wurde und wie es funktioniert. Uber kündigte an, das Werkzeug nicht mehr zur Überwachung von Behörden zu nutzen.",
+      "title_de": "US-Justizministerium eröffnet Strafverfahren, Grand-Jury-Subpoena",
+      "description_de": "Im Mai 2017 berichteten Medien, das US Department of Justice habe ein Strafverfahren zu Greyball eröffnet. Eine Grand Jury in Nordkalifornien forderte per Subpoena Unterlagen darüber an, wo Greyball eingesetzt wurde und wie es funktioniert. Uber kündigte an, das Werkzeug nicht mehr zur Überwachung von Behörden zu nutzen.",
+      "title_en": "US Department of Justice opens a criminal probe, grand jury subpoena",
+      "description_en": "In May 2017, media reported that the US Department of Justice had opened a criminal probe into Greyball. A Northern California grand jury issued a subpoena demanding records on where Greyball had been deployed and how it works. Uber announced it would stop using the tool to monitor regulators.",
+      "sources": [
+        "https://techcrunch.com/2017/05/05/department-of-justice-uber-greyball/"
+      ]
+    },
+    {
+      "date": "2017-09-15",
+      "phase": "consequences",
+      "title": "Portland-Untersuchung dokumentiert 16 gezielt blockierte Aufseher",
+      "description": "Am 15. September 2017 veröffentlichte das Verkehrsamt von Portland (Oregon) seinen Untersuchungsbericht: Uber hatte Greyball Ende 2014 dort eingesetzt, um mindestens 16 namentlich identifizierte Aufsichtsbeamte gezielt von Fahrten auszuschließen. Der Fall wurde zu einem zentralen Beleg dafür, wie algorithmische Systeme zur Aushebelung staatlicher Kontrolle missbraucht werden können.",
+      "title_de": "Portland-Untersuchung dokumentiert 16 gezielt blockierte Aufseher",
+      "description_de": "Am 15. September 2017 veröffentlichte das Verkehrsamt von Portland (Oregon) seinen Untersuchungsbericht: Uber hatte Greyball Ende 2014 dort eingesetzt, um mindestens 16 namentlich identifizierte Aufsichtsbeamte gezielt von Fahrten auszuschließen. Der Fall wurde zu einem zentralen Beleg dafür, wie algorithmische Systeme zur Aushebelung staatlicher Kontrolle missbraucht werden können.",
+      "title_en": "Portland investigation documents 16 specifically blocked officials",
+      "description_en": "On 15 September 2017, the Portland (Oregon) transportation bureau published its investigation report: Uber had used Greyball there in late 2014 to specifically deny rides to at least 16 named enforcement officials. The case became a key example of how algorithmic systems can be abused to undermine government oversight.",
+      "sources": [
+        "https://fortune.com/2017/09/15/uber-portland-greyball/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2017/03/08/uber-says-its-reviewing-use-greyball-and-wont-use-it-to-monitor-regulators/",

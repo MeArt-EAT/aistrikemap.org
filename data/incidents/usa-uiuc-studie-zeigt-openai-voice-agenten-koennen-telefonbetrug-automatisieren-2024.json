@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Betrug",
+    "Schutz vor Manipulation",
+    "Datenschutz",
+    "Eigentumsschutz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Betrug",
+    "Schutz vor Manipulation",
+    "Datenschutz",
+    "Eigentumsschutz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from fraud",
+    "Protection from manipulation",
+    "Data protection",
+    "Protection of property",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "University of Illinois Urbana-Champaign",
@@ -54,7 +72,61 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-05",
+      "phase": "infrastructure",
+      "title": "OpenAI stellt GPT-4o mit Sprachfähigkeiten vor",
+      "description": "OpenAI präsentiert GPT-4o, ein multimodales Modell, das Text, Bild und Sprache in nahezu Echtzeit verarbeitet. Die natürliche Sprach-Interaktion ('Advanced Voice') ist die technische Grundlage, auf der sich später automatisierte Sprach-Agenten aufbauen lassen. Schon im System Card weist OpenAI auf Missbrauchsrisiken hin und beschränkt die Stimmausgabe auf vorab freigegebene Stimmen.",
+      "title_de": "OpenAI stellt GPT-4o mit Sprachfähigkeiten vor",
+      "description_de": "OpenAI präsentiert GPT-4o, ein multimodales Modell, das Text, Bild und Sprache in nahezu Echtzeit verarbeitet. Die natürliche Sprach-Interaktion ('Advanced Voice') ist die technische Grundlage, auf der sich später automatisierte Sprach-Agenten aufbauen lassen. Schon im System Card weist OpenAI auf Missbrauchsrisiken hin und beschränkt die Stimmausgabe auf vorab freigegebene Stimmen.",
+      "title_en": "OpenAI unveils GPT-4o with voice capabilities",
+      "description_en": "OpenAI presents GPT-4o, a multimodal model that processes text, images and speech in near real time. The natural voice interaction ('Advanced Voice') is the technical basis on which automated voice agents can later be built. Already in the system card, OpenAI notes misuse risks and restricts voice output to pre-approved voices.",
+      "sources": [
+        "https://openai.com/index/hello-gpt-4o/"
+      ]
+    },
+    {
+      "date": "2024-10-01",
+      "phase": "doctrine",
+      "title": "OpenAI öffnet die Realtime Voice API für Entwickler",
+      "description": "OpenAI gibt die Realtime API in eine öffentliche Beta frei und macht damit Sprach-zu-Sprache-Funktionen für alle zahlenden Entwickler:innen verfügbar. Diese Entscheidung, leistungsfähige Echtzeit-Sprachfunktionen breit zugänglich zu machen, schafft den Zugang, den die UIUC-Forscher kurz darauf zum Bau von Betrugs-Agenten nutzen.",
+      "title_de": "OpenAI öffnet die Realtime Voice API für Entwickler",
+      "description_de": "OpenAI gibt die Realtime API in eine öffentliche Beta frei und macht damit Sprach-zu-Sprache-Funktionen für alle zahlenden Entwickler:innen verfügbar. Diese Entscheidung, leistungsfähige Echtzeit-Sprachfunktionen breit zugänglich zu machen, schafft den Zugang, den die UIUC-Forscher kurz darauf zum Bau von Betrugs-Agenten nutzen.",
+      "title_en": "OpenAI opens the Realtime Voice API to developers",
+      "description_en": "OpenAI releases the Realtime API into a public beta, making speech-to-speech features available to all paying developers. This decision to make powerful real-time voice capabilities broadly accessible creates the access that the UIUC researchers use shortly afterwards to build scam agents.",
+      "sources": [
+        "https://openai.com/index/introducing-the-realtime-api/"
+      ]
+    },
+    {
+      "date": "2024-10-21",
+      "phase": "event",
+      "title": "UIUC-Studie automatisiert Telefonbetrug",
+      "description": "In einem Preprint (arXiv 2410.15650) zeigen die UIUC-Forscher Richard Fang, Dylan Bowman und Daniel Kang, dass sich mit OpenAIs Realtime Voice API in nur 1.051 Code-Zeilen autonome Telefonbetrugs-Agenten bauen lassen. Sie kombinieren GPT-4o mit der Browserautomatisierung Playwright und Jailbreak-Prompts. Gmail-Credential-Diebstahl erreicht 60 Prozent Erfolgsquote, Krypto-Transfers und Instagram-Diebstahl rund 40 Prozent - bei etwa 0,75 US-Dollar Kosten pro erfolgreichem Scam.",
+      "title_de": "UIUC-Studie automatisiert Telefonbetrug",
+      "description_de": "In einem Preprint (arXiv 2410.15650) zeigen die UIUC-Forscher Richard Fang, Dylan Bowman und Daniel Kang, dass sich mit OpenAIs Realtime Voice API in nur 1.051 Code-Zeilen autonome Telefonbetrugs-Agenten bauen lassen. Sie kombinieren GPT-4o mit der Browserautomatisierung Playwright und Jailbreak-Prompts. Gmail-Credential-Diebstahl erreicht 60 Prozent Erfolgsquote, Krypto-Transfers und Instagram-Diebstahl rund 40 Prozent - bei etwa 0,75 US-Dollar Kosten pro erfolgreichem Scam.",
+      "title_en": "UIUC study automates phone scams",
+      "description_en": "In a preprint (arXiv 2410.15650), UIUC researchers Richard Fang, Dylan Bowman and Daniel Kang show that autonomous phone-scam agents can be built with OpenAI's Realtime Voice API in just 1,051 lines of code. They combine GPT-4o with the Playwright browser automation and jailbreak prompts. Gmail credential theft reaches a 60 percent success rate, crypto transfers and Instagram theft about 40 percent - at roughly USD 0.75 per successful scam.",
+      "sources": [
+        "https://arxiv.org/abs/2410.15650"
+      ]
+    },
+    {
+      "date": "2024-10-24",
+      "phase": "consequences",
+      "title": "Medienberichte und OpenAI-Reaktion",
+      "description": "The Register, BleepingComputer und weitere Medien berichten über die Studie und warnen vor automatisiertem Sprach-Betrug als neuer Bedrohung. OpenAI erklärt gegenüber BleepingComputer, man arbeite fortlaufend am Schutz der Modelle vor Missbrauch und verweist auf Schutzmaßnahmen wie die Beschränkung auf vorab freigegebene Stimmen sowie auf verbesserte Robustheit kommender Modelle. Eine vollständige Verhinderung der Umgehung gelingt jedoch nicht.",
+      "title_de": "Medienberichte und OpenAI-Reaktion",
+      "description_de": "The Register, BleepingComputer und weitere Medien berichten über die Studie und warnen vor automatisiertem Sprach-Betrug als neuer Bedrohung. OpenAI erklärt gegenüber BleepingComputer, man arbeite fortlaufend am Schutz der Modelle vor Missbrauch und verweist auf Schutzmaßnahmen wie die Beschränkung auf vorab freigegebene Stimmen sowie auf verbesserte Robustheit kommender Modelle. Eine vollständige Verhinderung der Umgehung gelingt jedoch nicht.",
+      "title_en": "Media coverage and OpenAI's response",
+      "description_en": "The Register, BleepingComputer and other outlets report on the study and warn of automated voice fraud as an emerging threat. OpenAI tells BleepingComputer that it works continuously to protect its models from misuse, pointing to safeguards such as restricting output to pre-approved voices and improved robustness in upcoming models. A complete prevention of the bypass is not achieved.",
+      "sources": [
+        "https://www.theregister.com/2024/10/24/openai_realtime_api_phone_scam/",
+        "https://www.bleepingcomputer.com/news/security/chatgpt-4o-can-be-used-for-autonomous-voice-based-scams/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2024/10/24/openai_realtime_api_phone_scam/",
