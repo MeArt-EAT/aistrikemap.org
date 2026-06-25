@@ -8,9 +8,9 @@
   "name": "USA: Tesla-'Phantombremsungen' lösen NHTSA-Untersuchung aus",
   "name_de": "USA: Tesla-'Phantombremsungen' lösen NHTSA-Untersuchung aus",
   "name_en": "USA: Tesla 'phantom braking' triggers NHTSA investigation",
-  "description": "2022 leitete die US-Verkehrssicherheitsbehörde NHTSA eine Untersuchung zu 'Phantombremsungen' bei Tesla Model 3 und Model Y (Baujahre 2021-2022) ein: Bei aktivierten Fahrassistenzsystemen bremsten die Fahrzeuge bei Autobahntempo unvermittelt und grundlos stark ab. Bis Juni 2022 lagen 758 Beschwerden vor; die Behörde stufte die Untersuchung zur 'Engineering Analysis' (letzte Stufe vor möglichem Rückruf) hoch. Tesla führte das Verhalten u.a. auf Fehlinterpretationen der Computer-Vision-Sensorik zurück.",
-  "description_de": "2022 leitete die US-Verkehrssicherheitsbehörde NHTSA eine Untersuchung zu 'Phantombremsungen' bei Tesla Model 3 und Model Y (Baujahre 2021-2022) ein: Bei aktivierten Fahrassistenzsystemen bremsten die Fahrzeuge bei Autobahntempo unvermittelt und grundlos stark ab. Bis Juni 2022 lagen 758 Beschwerden vor; die Behörde stufte die Untersuchung zur 'Engineering Analysis' (letzte Stufe vor möglichem Rückruf) hoch. Tesla führte das Verhalten u.a. auf Fehlinterpretationen der Computer-Vision-Sensorik zurück.",
-  "description_en": "In 2022 the US road-safety regulator NHTSA opened an investigation into 'phantom braking' in 2021-2022 Tesla Model 3 and Model Y vehicles: with driver-assistance features active, cars braked hard at highway speed without warning or cause. By June 2022 there were 758 complaints; NHTSA upgraded the probe to an 'engineering analysis' (the final stage before a possible recall). The behaviour was linked to misreads by the computer-vision sensing.",
+  "description": "2022 leitete die US-Verkehrssicherheitsbehörde NHTSA eine vorläufige Untersuchung (PE22-002) zu 'Phantombremsungen' bei Tesla Model 3 und Model Y (Baujahre 2021-2022) ein: Bei aktivierten Fahrassistenzsystemen bremsten die Fahrzeuge bei Autobahntempo unvermittelt und grundlos stark ab. Bis Juni 2022 stieg die Zahl der Beschwerden auf 758; die Behörde forderte per Schreiben detaillierte Daten von Tesla an (Frist 20. Juni 2022). Tesla führte das Verhalten u.a. auf Fehlinterpretationen der Computer-Vision-Sensorik zurück.",
+  "description_de": "2022 leitete die US-Verkehrssicherheitsbehörde NHTSA eine vorläufige Untersuchung (PE22-002) zu 'Phantombremsungen' bei Tesla Model 3 und Model Y (Baujahre 2021-2022) ein: Bei aktivierten Fahrassistenzsystemen bremsten die Fahrzeuge bei Autobahntempo unvermittelt und grundlos stark ab. Bis Juni 2022 stieg die Zahl der Beschwerden auf 758; die Behörde forderte per Schreiben detaillierte Daten von Tesla an (Frist 20. Juni 2022). Tesla führte das Verhalten u.a. auf Fehlinterpretationen der Computer-Vision-Sensorik zurück.",
+  "description_en": "In 2022 the US road-safety regulator NHTSA opened a preliminary evaluation (PE22-002) into 'phantom braking' in 2021-2022 Tesla Model 3 and Model Y vehicles: with driver-assistance features active, cars braked hard at highway speed without warning or cause. By June 2022 the complaint count had risen to 758; the agency sent Tesla a letter requesting detailed data (due 20 June 2022). The behaviour was linked to misreads by the computer-vision sensing.",
   "startDate": "2022-02",
   "location": {
     "@type": "Place",
@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Körperliche Unversehrtheit",
+    "Recht auf Leben",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Physical integrity",
+    "Right to life",
+    "Consumer protection",
+    "Right to safety"
+  ],
   "asm:actors": [
     {
       "name": "Tesla, Inc.",
@@ -48,7 +63,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-04",
+      "phase": "infrastructure",
+      "title": "Tesla entfernt Radar aus Model 3 und Model Y in Nordamerika",
+      "description": "Ab Ende April 2021 baute Tesla das nach vorn gerichtete Radar aus neu produzierten Model 3 und Model Y in Nordamerika aus. Die Fahrassistenz stützte sich fortan allein auf das kamerabasierte System 'Tesla Vision'. Das Radar hatte zuvor Abstand und Geschwindigkeit vorausfahrender Objekte gemessen.",
+      "title_de": "Tesla entfernt Radar aus Model 3 und Model Y in Nordamerika",
+      "description_de": "Ab Ende April 2021 baute Tesla das nach vorn gerichtete Radar aus neu produzierten Model 3 und Model Y in Nordamerika aus. Die Fahrassistenz stützte sich fortan allein auf das kamerabasierte System 'Tesla Vision'. Das Radar hatte zuvor Abstand und Geschwindigkeit vorausfahrender Objekte gemessen.",
+      "title_en": "Tesla removes radar from Model 3 and Model Y in North America",
+      "description_en": "From late April 2021 Tesla removed the forward-facing radar from newly built Model 3 and Model Y vehicles in North America. Driver assistance from then on relied solely on the camera-based 'Tesla Vision' system. The radar had previously measured distance and speed of vehicles ahead.",
+      "sources": [
+        "https://www.notateslaapp.com/news/3077/why-tesla-walked-away-from-radar-and-lidar-to-go-all-in-on-vision"
+      ]
+    },
+    {
+      "date": "2021-05",
+      "phase": "doctrine",
+      "title": "Strategie 'Vision-only': Kamera-KI statt Radar als Grundsatz",
+      "description": "Im Mai 2021 erklärte Tesla im Blogbeitrag 'Transitioning to Tesla Vision' den Umstieg auf ein rein kamerabasiertes neuronales Netz zum Grundsatz seines Autonomie-Wegs - mit der Begründung, dass auch Menschen mit zwei Augen fahren. Kritiker warnten, dass Kameras durch Schatten, Blendung und optische Täuschungen irregeführt werden und so Fehlbremsungen auslösen können.",
+      "title_de": "Strategie 'Vision-only': Kamera-KI statt Radar als Grundsatz",
+      "description_de": "Im Mai 2021 erklärte Tesla im Blogbeitrag 'Transitioning to Tesla Vision' den Umstieg auf ein rein kamerabasiertes neuronales Netz zum Grundsatz seines Autonomie-Wegs - mit der Begründung, dass auch Menschen mit zwei Augen fahren. Kritiker warnten, dass Kameras durch Schatten, Blendung und optische Täuschungen irregeführt werden und so Fehlbremsungen auslösen können.",
+      "title_en": "'Vision-only' strategy: camera AI instead of radar as doctrine",
+      "description_en": "In May 2021 Tesla, in a blog post titled 'Transitioning to Tesla Vision', made the switch to a purely camera-based neural network the core of its autonomy approach, arguing that humans also drive with two eyes. Critics warned that cameras can be misled by shadows, glare and optical illusions, triggering erroneous braking.",
+      "sources": [
+        "https://electrek.co/2021/05/25/tesla-vision-without-radar-warns-limitations-first/"
+      ]
+    },
+    {
+      "date": "2022-02-17",
+      "phase": "event",
+      "title": "NHTSA eröffnet Untersuchung zu 'Phantombremsungen'",
+      "description": "Im Februar 2022 eröffnete die NHTSA eine vorläufige Untersuchung (PE22-002) zu rund 416.000 Model 3 und Model Y der Baujahre 2021-2022. Bei aktivierten Assistenzsystemen bremsten die Fahrzeuge bei Autobahntempo unvermittelt und grundlos stark ab. Zum Auftakt lagen 354 Beschwerden vor.",
+      "title_de": "NHTSA eröffnet Untersuchung zu 'Phantombremsungen'",
+      "description_de": "Im Februar 2022 eröffnete die NHTSA eine vorläufige Untersuchung (PE22-002) zu rund 416.000 Model 3 und Model Y der Baujahre 2021-2022. Bei aktivierten Assistenzsystemen bremsten die Fahrzeuge bei Autobahntempo unvermittelt und grundlos stark ab. Zum Auftakt lagen 354 Beschwerden vor.",
+      "title_en": "NHTSA opens investigation into 'phantom braking'",
+      "description_en": "In February 2022 NHTSA opened a preliminary investigation (PE22-002) into about 416,000 Model 3 and Model Y vehicles from the 2021-2022 model years. With assistance features active, cars braked hard at highway speed without warning or cause. At the outset there were 354 complaints.",
+      "sources": [
+        "https://www.washingtonpost.com/technology/2022/02/17/tesla-phantom-braking/"
+      ]
+    },
+    {
+      "date": "2022-06",
+      "phase": "consequences",
+      "title": "NHTSA fordert bei 758 Beschwerden detaillierte Daten von Tesla",
+      "description": "Bis Juni 2022 stieg die Zahl der der NHTSA bekannten Beschwerden auf 758; die Behörde forderte Tesla per Schreiben (Frist 20. Juni 2022) zu umfangreichen Angaben über Autopilot-Tests, Hardware- und Software-Änderungen auf - bei Säumnis drohten Bußgelder von bis zu 24.423 US-Dollar pro Tag. Die Untersuchung blieb eine vorläufige Bewertung (Preliminary Evaluation PE22-002). Parallel entstanden Sammelklagen von Tesla-Eignern.",
+      "title_de": "NHTSA fordert bei 758 Beschwerden detaillierte Daten von Tesla",
+      "description_de": "Bis Juni 2022 stieg die Zahl der der NHTSA bekannten Beschwerden auf 758; die Behörde forderte Tesla per Schreiben (Frist 20. Juni 2022) zu umfangreichen Angaben über Autopilot-Tests, Hardware- und Software-Änderungen auf - bei Säumnis drohten Bußgelder von bis zu 24.423 US-Dollar pro Tag. Die Untersuchung blieb eine vorläufige Bewertung (Preliminary Evaluation PE22-002). Parallel entstanden Sammelklagen von Tesla-Eignern.",
+      "title_en": "NHTSA demands detailed data from Tesla amid 758 complaints",
+      "description_en": "By June 2022 the number of complaints known to NHTSA had risen to 758; the agency sent Tesla a letter (due 20 June 2022) demanding extensive information on Autopilot testing and hardware/software changes, with penalties of up to USD 24,423 per day for non-compliance. The probe remained a Preliminary Evaluation (PE22-002). In parallel, class-action lawsuits by Tesla owners emerged.",
+      "sources": [
+        "https://www.repairerdrivennews.com/2022/06/08/nhtsa-seeks-information-from-tesla-in-investigation-of-758-phantom-braking-complaints/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.repairerdrivennews.com/2022/06/08/nhtsa-seeks-information-from-tesla-in-investigation-of-758-phantom-braking-complaints/",

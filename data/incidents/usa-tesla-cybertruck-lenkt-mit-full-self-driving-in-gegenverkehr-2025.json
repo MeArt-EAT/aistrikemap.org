@@ -10,7 +10,7 @@
   "name_en": "USA: Tesla Cybertruck steers into oncoming traffic on Full Self-Driving",
   "description": "Ein Tesla-Cybertruck-Halter veröffentlichte 2025 Dashcam-Aufnahmen, auf denen das Fahrzeug im Full-Self-Driving-Modus eine Kreuzung überquert und in die Gegenfahrbahn abbiegen will, obwohl ein anderes Fahrzeug entgegenkommt. Der Fahrer musste manuell eingreifen und nach rechts ziehen, um eine Frontalkollision zu vermeiden; das Display zeigte, dass die Software die Linksabbiege-Absicht beibehielt, obwohl das andere Auto sichtbar war. Der Vorfall reihte sich 2025 in eine wachsende Serie dokumentierter FSD-Fehlentscheidungen ein.",
   "description_de": "Ein Tesla-Cybertruck-Halter veröffentlichte 2025 Dashcam-Aufnahmen, auf denen das Fahrzeug im Full-Self-Driving-Modus eine Kreuzung überquert und in die Gegenfahrbahn abbiegen will, obwohl ein anderes Fahrzeug entgegenkommt. Der Fahrer musste manuell eingreifen und nach rechts ziehen, um eine Frontalkollision zu vermeiden; das Display zeigte, dass die Software die Linksabbiege-Absicht beibehielt, obwohl das andere Auto sichtbar war. Der Vorfall reihte sich 2025 in eine wachsende Serie dokumentierter FSD-Fehlentscheidungen ein.",
-  "description_en": "In 2025 a Tesla Cybertruck owner posted dashcam footage showing the vehicle, while engaged in Full Self-Driving, attempting to turn left across the path of an oncoming SUV. The driver had to grab the steering yoke and pull right to avoid a head-on collision; the dash display indicated the software intended to cross the lane despite the oncoming vehicle being visible. The clip was one of several documented FSD failures involving Cybertrucks during 2025.",
+  "description_en": "In 2025 a Tesla Cybertruck owner posted dashcam footage showing the vehicle, while engaged in Full Self-Driving, attempting to turn left across the path of an oncoming pickup. The driver had to grab the steering yoke and pull right to avoid a head-on collision; the dash display indicated the software intended to cross the lane despite the oncoming vehicle being visible. The clip was one of several documented FSD failures involving Cybertrucks during 2025.",
   "startDate": "2025",
   "location": {
     "@type": "Place",
@@ -26,9 +26,24 @@
     "autonomous-vehicle",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Tesla",
@@ -42,7 +57,60 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-05",
+      "phase": "infrastructure",
+      "title": "Kamera-only-Architektur 'Tesla Vision'",
+      "description": "Tesla stellt Autopilot und FSD ab Mai 2021 auf das reine Kamerasystem 'Tesla Vision' um und verzichtet auf Radar. Das System muss komplexe Verkehrssituationen wie Linksabbiegen vor Gegenverkehr allein aus Kamerabildern und neuronalen Netzen ableiten. Fehlentscheidungen in solchen Szenen sind dadurch direkt an die Zuverlässigkeit der Bilderkennung gekoppelt.",
+      "title_de": "Kamera-only-Architektur 'Tesla Vision'",
+      "description_de": "Tesla stellt Autopilot und FSD ab Mai 2021 auf das reine Kamerasystem 'Tesla Vision' um und verzichtet auf Radar. Das System muss komplexe Verkehrssituationen wie Linksabbiegen vor Gegenverkehr allein aus Kamerabildern und neuronalen Netzen ableiten. Fehlentscheidungen in solchen Szenen sind dadurch direkt an die Zuverlässigkeit der Bilderkennung gekoppelt.",
+      "title_en": "Camera-only architecture 'Tesla Vision'",
+      "description_en": "From May 2021 Tesla shifts Autopilot and FSD to the camera-only 'Tesla Vision' system and abandons radar. The system must resolve complex traffic situations such as turning left across oncoming traffic from camera images and neural networks alone. Misjudgements in such scenes are thereby tied directly to the reliability of the image recognition.",
+      "sources": [
+        "https://www.cnbc.com/2021/05/25/tesla-ditching-radar-for-autopilot-in-model-3-model-y.html"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "FSD im Cybertruck - Robotaxi-Versprechen treibt Tempo",
+      "description": "Tesla bringt 'Full Self-Driving (Supervised)' auf den 2024 ausgelieferten Cybertruck und kündigt parallel ein Robotaxi-Programm an. Das Geschäftsmodell beruht darauf, FSD als nahezu fahrerlos zu vermarkten, während die Software offiziell weiter ständige Aufsicht verlangt. Fahrprofile wie 'Hurry' fördern aggressivere Manöver und erhöhen das Risiko riskanter Entscheidungen.",
+      "title_de": "FSD im Cybertruck - Robotaxi-Versprechen treibt Tempo",
+      "description_de": "Tesla bringt 'Full Self-Driving (Supervised)' auf den 2024 ausgelieferten Cybertruck und kündigt parallel ein Robotaxi-Programm an. Das Geschäftsmodell beruht darauf, FSD als nahezu fahrerlos zu vermarkten, während die Software offiziell weiter ständige Aufsicht verlangt. Fahrprofile wie 'Hurry' fördern aggressivere Manöver und erhöhen das Risiko riskanter Entscheidungen.",
+      "title_en": "FSD on the Cybertruck - robotaxi promise drives the pace",
+      "description_en": "Tesla brings 'Full Self-Driving (Supervised)' to the Cybertruck delivered from 2024 and at the same time announces a robotaxi programme. The business model rests on marketing FSD as nearly driverless while the software officially still demands constant supervision. Driving profiles such as 'Hurry' encourage more aggressive manoeuvres and raise the risk of risky decisions.",
+      "sources": [
+        "https://www.carscoops.com/2025/02/musk-targets-full-autonomy-while-cybertruck-fsd-still-behaves-eratically/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "event",
+      "title": "Cybertruck lenkt im FSD-Modus in den Gegenverkehr",
+      "description": "Anfang 2025 zeigt im Cybertruck Owners Club geteiltes Dashcam-Material, wie ein Cybertruck im FSD-Modus ('Hurry') an einer Kreuzung nach links abbiegen will, obwohl ein entgegenkommender Pickup sichtbar ist - das System erkennt das Fahrzeug laut Anzeige sogar, hält aber die Abbiege-Absicht bei. Der Fahrer reißt das Steuer nach rechts und verhindert so eine Frontalkollision. Der Clip reiht sich in eine Serie dokumentierter Cybertruck-FSD-Fehler ein.",
+      "title_de": "Cybertruck lenkt im FSD-Modus in den Gegenverkehr",
+      "description_de": "Anfang 2025 zeigt im Cybertruck Owners Club geteiltes Dashcam-Material, wie ein Cybertruck im FSD-Modus ('Hurry') an einer Kreuzung nach links abbiegen will, obwohl ein entgegenkommender Pickup sichtbar ist - das System erkennt das Fahrzeug laut Anzeige sogar, hält aber die Abbiege-Absicht bei. Der Fahrer reißt das Steuer nach rechts und verhindert so eine Frontalkollision. Der Clip reiht sich in eine Serie dokumentierter Cybertruck-FSD-Fehler ein.",
+      "title_en": "Cybertruck steers into oncoming traffic in FSD mode",
+      "description_en": "In early 2025 dashcam footage shared in the Cybertruck Owners Club shows a Cybertruck in FSD mode ('Hurry') attempting to turn left at an intersection even though an oncoming pickup is visible - the system reportedly even detects the vehicle on its display yet keeps the turn intention. The driver yanks the wheel to the right and so avoids a head-on collision. The clip joins a series of documented Cybertruck FSD failures.",
+      "sources": [
+        "https://futurism.com/footage-cybertruck-self-driving-mode-oncoming-traffic"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "consequences",
+      "title": "Öffentliche Kritik an FSD-Reife trotz Robotaxi-Plänen",
+      "description": "Das Video löst breite Kritik aus, dass Tesla FSD als ausgereift vermarktet, während Cybertrucks in Alltagssituationen weiter gefährlich fehlentscheiden. Beobachter verweisen auf die laufende NHTSA-Untersuchung zu FSD und weitere 2025 dokumentierte Cybertruck-Vorfälle, darunter ein Fall, in dem ein Cybertruck von einer Überführung abzubiegen versucht und eine daraus folgende Klage. Tesla hält an der Robotaxi-Strategie fest.",
+      "title_de": "Öffentliche Kritik an FSD-Reife trotz Robotaxi-Plänen",
+      "description_de": "Das Video löst breite Kritik aus, dass Tesla FSD als ausgereift vermarktet, während Cybertrucks in Alltagssituationen weiter gefährlich fehlentscheiden. Beobachter verweisen auf die laufende NHTSA-Untersuchung zu FSD und weitere 2025 dokumentierte Cybertruck-Vorfälle, darunter ein Fall, in dem ein Cybertruck von einer Überführung abzubiegen versucht und eine daraus folgende Klage. Tesla hält an der Robotaxi-Strategie fest.",
+      "title_en": "Public criticism of FSD maturity despite robotaxi plans",
+      "description_en": "The video triggers broad criticism that Tesla markets FSD as mature while Cybertrucks keep making dangerous misjudgements in everyday situations. Observers point to the ongoing NHTSA investigation into FSD and to further Cybertruck incidents documented in 2025, including a case where a Cybertruck tries to turn off an overpass and a resulting lawsuit. Tesla sticks to its robotaxi strategy.",
+      "sources": [
+        "https://futurism.com/advanced-transport/woman-sues-cybertruck-drive-off-bridge"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://futurism.com/footage-cybertruck-self-driving-mode-oncoming-traffic",

@@ -31,9 +31,24 @@
     "autonomous-vehicle",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Tesla",
@@ -54,7 +69,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-05",
+      "phase": "infrastructure",
+      "title": "Tesla setzt auf reine Kamera-Erkennung ohne Radar",
+      "description": "Ab Mai 2021 streicht Tesla das Frontradar und stellt Autopilot und FSD auf das Kamerasystem 'Tesla Vision' um. Bei Nebel, Dunst oder schlechter Sicht muss das System allein aus Kamerabildern Hindernisse erkennen. Ohne Radar fehlt eine vom Wetter unabhängige Messung von Abstand und Geschwindigkeit großer Objekte - eine bekannte Schwachstelle bei eingeschränkter Sicht.",
+      "title_de": "Tesla setzt auf reine Kamera-Erkennung ohne Radar",
+      "description_de": "Ab Mai 2021 streicht Tesla das Frontradar und stellt Autopilot und FSD auf das Kamerasystem 'Tesla Vision' um. Bei Nebel, Dunst oder schlechter Sicht muss das System allein aus Kamerabildern Hindernisse erkennen. Ohne Radar fehlt eine vom Wetter unabhängige Messung von Abstand und Geschwindigkeit großer Objekte - eine bekannte Schwachstelle bei eingeschränkter Sicht.",
+      "title_en": "Tesla bets on camera-only perception without radar",
+      "description_en": "From May 2021 Tesla drops the forward radar and shifts Autopilot and FSD to the camera-only 'Tesla Vision' system. In fog, haze or poor light the system must detect obstacles from camera images alone. Without radar there is no weather-independent measurement of the distance and speed of large objects - a known weakness in reduced-visibility conditions.",
+      "sources": [
+        "https://www.notateslaapp.com/news/3077/why-tesla-walked-away-from-radar-and-lidar-to-go-all-in-on-vision"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "phase": "doctrine",
+      "title": "FSD-Beta als 'Supervised' breit ausgerollt",
+      "description": "Tesla gibt die FSD-Beta breit an Kunden in Nordamerika frei und vermarktet sie als 'Full Self-Driving (Supervised)'. Die Fahrer sollen jederzeit eingriffsbereit bleiben, dürfen sich aber faktisch auf eine Software verlassen, die unfertig ist und seltene Szenarien wie querende Züge nicht zuverlässig beherrscht. Diese Diskrepanz verlagert das Restrisiko auf den Einzelfahrer.",
+      "title_de": "FSD-Beta als 'Supervised' breit ausgerollt",
+      "description_de": "Tesla gibt die FSD-Beta breit an Kunden in Nordamerika frei und vermarktet sie als 'Full Self-Driving (Supervised)'. Die Fahrer sollen jederzeit eingriffsbereit bleiben, dürfen sich aber faktisch auf eine Software verlassen, die unfertig ist und seltene Szenarien wie querende Züge nicht zuverlässig beherrscht. Diese Diskrepanz verlagert das Restrisiko auf den Einzelfahrer.",
+      "title_en": "FSD Beta rolled out widely as 'Supervised'",
+      "description_en": "Tesla releases the FSD Beta widely to customers in North America and markets it as 'Full Self-Driving (Supervised)'. Drivers are supposed to stay ready to intervene at all times, yet in practice rely on unfinished software that does not reliably handle rare scenarios such as crossing trains. This mismatch shifts the residual risk onto the individual driver.",
+      "sources": [
+        "https://www.teslarati.com/tesla-fsd-beta-wide-release-confirmed-elon-musk/"
+      ]
+    },
+    {
+      "date": "2024-05-08",
+      "phase": "event",
+      "title": "FSD bremst nicht vor querendem Zug bei Nebel",
+      "description": "Tesla-Fahrer Craig Doty II aus Camden, Ohio fährt bei dichtem Nebel im FSD-Modus auf einen Bahnübergang zu, an dem ein Güterzug quert - die Schranke ist unten, die Warnlichter blinken. Das Fahrzeug verlangsamt nicht; Doty bremst, reißt manuell das Steuer herum und prallt gegen die Bahnschranke. Er erleidet eine Prellung, das Auto wird beschädigt. Bereits im November 2023 war sein Tesla im FSD-Modus fast in einen Zug gefahren; Tesla-Logs bestätigen die FSD-Aktivierung.",
+      "title_de": "FSD bremst nicht vor querendem Zug bei Nebel",
+      "description_de": "Tesla-Fahrer Craig Doty II aus Camden, Ohio fährt bei dichtem Nebel im FSD-Modus auf einen Bahnübergang zu, an dem ein Güterzug quert - die Schranke ist unten, die Warnlichter blinken. Das Fahrzeug verlangsamt nicht; Doty bremst, reißt manuell das Steuer herum und prallt gegen die Bahnschranke. Er erleidet eine Prellung, das Auto wird beschädigt. Bereits im November 2023 war sein Tesla im FSD-Modus fast in einen Zug gefahren; Tesla-Logs bestätigen die FSD-Aktivierung.",
+      "title_en": "FSD fails to brake for a crossing train in fog",
+      "description_en": "Tesla driver Craig Doty II from Camden, Ohio approaches a level crossing in heavy fog in FSD mode as a freight train passes - the barrier is down and the warning lights are flashing. The vehicle does not slow; Doty brakes, swerves manually and hits the crossing barrier. He sustains a bruise and the car is damaged. His Tesla had already nearly driven into a train in FSD mode in November 2023; Tesla logs confirm FSD was active.",
+      "sources": [
+        "https://www.nbcnews.com/tech/tech-news/tesla-owner-says-cars-self-driving-mode-fsd-train-crash-video-rcna153345"
+      ]
+    },
+    {
+      "date": "2024-05-09",
+      "phase": "consequences",
+      "title": "Dashcam-Video viral - NHTSA fordert Informationen an",
+      "description": "Doty veröffentlicht das Dashcam-Video, das sich rasch verbreitet und international berichtet wird. Die NHTSA erklärt, sie sei über den Vorfall informiert und hole weitere Informationen vom Hersteller ein. Der Fall verschärft die Debatte, ob FSD bei schlechter Sicht überhaupt sicher betrieben werden kann.",
+      "title_de": "Dashcam-Video viral - NHTSA fordert Informationen an",
+      "description_de": "Doty veröffentlicht das Dashcam-Video, das sich rasch verbreitet und international berichtet wird. Die NHTSA erklärt, sie sei über den Vorfall informiert und hole weitere Informationen vom Hersteller ein. Der Fall verschärft die Debatte, ob FSD bei schlechter Sicht überhaupt sicher betrieben werden kann.",
+      "title_en": "Dashcam video goes viral - NHTSA requests information",
+      "description_en": "Doty publishes the dashcam video, which spreads quickly and is reported internationally. The NHTSA states it is aware of the incident and is gathering more information from the manufacturer. The case sharpens the debate over whether FSD can be operated safely at all in poor visibility.",
+      "sources": [
+        "https://www.gizmodo.com/tesla-train-crash-fsd-autopilot-elon-musk-video-ohio-1851490746"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "NHTSA eröffnet FSD-Untersuchung zu schlechter Sicht",
+      "description": "Im Oktober 2024 startet die NHTSA eine Untersuchung zu 2,4 Millionen FSD-Fahrzeugen wegen mehrerer Crashes bei eingeschränkter Sicht - Nebel, Sonnenblendung, Staub. Genau diese Bedingung lag dem Zug-Beinahe-Crash zugrunde. Die Behörde bemängelt, dass das System Sicht-beeinträchtigende Bedingungen nicht erkennt und Fahrer nicht rechtzeitig warnt.",
+      "title_de": "NHTSA eröffnet FSD-Untersuchung zu schlechter Sicht",
+      "description_de": "Im Oktober 2024 startet die NHTSA eine Untersuchung zu 2,4 Millionen FSD-Fahrzeugen wegen mehrerer Crashes bei eingeschränkter Sicht - Nebel, Sonnenblendung, Staub. Genau diese Bedingung lag dem Zug-Beinahe-Crash zugrunde. Die Behörde bemängelt, dass das System Sicht-beeinträchtigende Bedingungen nicht erkennt und Fahrer nicht rechtzeitig warnt.",
+      "title_en": "NHTSA opens FSD probe into reduced visibility",
+      "description_en": "In October 2024 the NHTSA opens an investigation into 2.4 million FSD vehicles over several crashes in reduced-visibility conditions - fog, sun glare, dust. This is exactly the condition behind the near-train crash. The agency criticises that the system fails to detect visibility-degrading conditions and does not warn drivers in time.",
+      "sources": [
+        "https://headlight.news/2024/10/18/nhtsa-opens-investigation-into-2-4-million-fsd-equipped-teslas/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.nbcnews.com/tech/tech-news/tesla-owner-says-cars-self-driving-mode-fsd-train-crash-video-rcna153345",

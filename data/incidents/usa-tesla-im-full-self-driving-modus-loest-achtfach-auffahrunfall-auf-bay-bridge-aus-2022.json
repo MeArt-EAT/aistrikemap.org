@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Tesla",
@@ -46,7 +61,73 @@
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021-05",
+      "phase": "infrastructure",
+      "title": "Tesla entfernt Radar - Fahrassistenz nur noch per Kamera",
+      "description": "Tesla streicht ab Mai 2021 das Frontradar aus neuen Model 3 und Model Y und stellt Autopilot und FSD auf das reine Kamerasystem 'Tesla Vision' um. Elon Musk setzt den Kamera-only-Ansatz gegen interne Bedenken durch; Ingenieure warnen laut Berichten, dass ohne Radar Fehleinschätzungen bei Abstand und Geschwindigkeit drohen. Diese Architektur bildet die technische Grundlage der späteren FSD-Beta-Fehler.",
+      "title_de": "Tesla entfernt Radar - Fahrassistenz nur noch per Kamera",
+      "description_de": "Tesla streicht ab Mai 2021 das Frontradar aus neuen Model 3 und Model Y und stellt Autopilot und FSD auf das reine Kamerasystem 'Tesla Vision' um. Elon Musk setzt den Kamera-only-Ansatz gegen interne Bedenken durch; Ingenieure warnen laut Berichten, dass ohne Radar Fehleinschätzungen bei Abstand und Geschwindigkeit drohen. Diese Architektur bildet die technische Grundlage der späteren FSD-Beta-Fehler.",
+      "title_en": "Tesla removes radar - driver assistance becomes camera-only",
+      "description_en": "From May 2021 Tesla drops the forward radar from new Model 3 and Model Y vehicles and shifts Autopilot and FSD to the camera-only system 'Tesla Vision'. Elon Musk pushes the camera-only approach through against internal objections; engineers reportedly warn that without radar the system may misjudge distance and speed. This architecture forms the technical basis for the later FSD Beta failures.",
+      "sources": [
+        "https://www.cnbc.com/2021/05/25/tesla-ditching-radar-for-autopilot-in-model-3-model-y.html"
+      ]
+    },
+    {
+      "date": "2022-11-23",
+      "phase": "doctrine",
+      "title": "Musk gibt 'Full Self-Driving' breit frei",
+      "description": "Tesla weitet den Zugang zur FSD-Beta auf nahezu alle Käufer in Nordamerika aus; Elon Musk kündigt die breite Freigabe öffentlich an. Damit erhalten Zehntausende ungeschulte Fahrer eine unfertige Beta-Software, die laut Tesla nur unter ständiger Aufsicht genutzt werden darf. Die Marketing-Bezeichnung 'Full Self-Driving' suggeriert jedoch eine Autonomie, die das System nicht leistet.",
+      "title_de": "Musk gibt 'Full Self-Driving' breit frei",
+      "description_de": "Tesla weitet den Zugang zur FSD-Beta auf nahezu alle Käufer in Nordamerika aus; Elon Musk kündigt die breite Freigabe öffentlich an. Damit erhalten Zehntausende ungeschulte Fahrer eine unfertige Beta-Software, die laut Tesla nur unter ständiger Aufsicht genutzt werden darf. Die Marketing-Bezeichnung 'Full Self-Driving' suggeriert jedoch eine Autonomie, die das System nicht leistet.",
+      "title_en": "Musk opens 'Full Self-Driving' to a wide audience",
+      "description_en": "Tesla widens access to the FSD Beta to nearly all buyers in North America; Elon Musk announces the wide release publicly. Tens of thousands of untrained drivers thereby gain access to unfinished beta software that, per Tesla, may only be used under constant supervision. The marketing label 'Full Self-Driving' nonetheless implies an autonomy the system does not deliver.",
+      "sources": [
+        "https://www.teslarati.com/tesla-fsd-beta-wide-release-confirmed-elon-musk/"
+      ]
+    },
+    {
+      "date": "2022-11-24",
+      "phase": "event",
+      "title": "Achtfach-Auffahrunfall auf der Bay Bridge",
+      "description": "Am Thanksgiving-Tag wechselt ein Tesla Model S laut Fahrer im FSD-Modus auf der Bay Bridge in die linke Spur und bremst abrupt von etwa 55 auf 20 mph ab. Es kommt zu einer Kettenreaktion mit acht Fahrzeugen; neun Menschen, darunter ein Kleinkind, werden verletzt und die Brücke ist über eine Stunde blockiert. Der Vorfall ereignet sich nur Stunden nach Musks Freigabe-Ankündigung.",
+      "title_de": "Achtfach-Auffahrunfall auf der Bay Bridge",
+      "description_de": "Am Thanksgiving-Tag wechselt ein Tesla Model S laut Fahrer im FSD-Modus auf der Bay Bridge in die linke Spur und bremst abrupt von etwa 55 auf 20 mph ab. Es kommt zu einer Kettenreaktion mit acht Fahrzeugen; neun Menschen, darunter ein Kleinkind, werden verletzt und die Brücke ist über eine Stunde blockiert. Der Vorfall ereignet sich nur Stunden nach Musks Freigabe-Ankündigung.",
+      "title_en": "Eight-vehicle pile-up on the Bay Bridge",
+      "description_en": "On Thanksgiving Day a Tesla Model S, which the driver said was in FSD mode, moves into the left lane of the Bay Bridge and brakes abruptly from about 55 to 20 mph. An eight-vehicle chain reaction follows; nine people, including a toddler, are injured and the bridge is blocked for over an hour. The incident occurs just hours after Musk's wide-release announcement.",
+      "sources": [
+        "https://www.cbsnews.com/sanfrancisco/news/driver-claims-tesla-self-driving-software-triggered-thanksgiving-bay-bridge-crash/"
+      ]
+    },
+    {
+      "date": "2023-01",
+      "phase": "consequences",
+      "title": "Überwachungsvideo öffentlich - NHTSA ermittelt",
+      "description": "Im Januar 2023 veröffentlicht The Intercept das per öffentlicher Anfrage erlangte Überwachungsvideo des Unfalls und der Polizeibericht des Fahrers wird bekannt. Die NHTSA leitet eine gesonderte Crash-Untersuchung ein. Der Fall wird zum vielzitierten Beleg für das gefährliche Auseinanderklaffen von Marketing-Versprechen und realem FSD-Verhalten.",
+      "title_de": "Überwachungsvideo öffentlich - NHTSA ermittelt",
+      "description_de": "Im Januar 2023 veröffentlicht The Intercept das per öffentlicher Anfrage erlangte Überwachungsvideo des Unfalls und der Polizeibericht des Fahrers wird bekannt. Die NHTSA leitet eine gesonderte Crash-Untersuchung ein. Der Fall wird zum vielzitierten Beleg für das gefährliche Auseinanderklaffen von Marketing-Versprechen und realem FSD-Verhalten.",
+      "title_en": "Surveillance video goes public - NHTSA investigates",
+      "description_en": "In January 2023 The Intercept publishes the surveillance footage of the crash obtained via a records request, and the driver's police report becomes known. The NHTSA opens a special crash investigation. The case becomes a widely cited example of the dangerous gap between marketing promises and real-world FSD behaviour.",
+      "sources": [
+        "https://theintercept.com/2023/01/10/tesla-crash-footage-autopilot/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "NHTSA-Sammeluntersuchung zu FSD bei schlechter Sicht",
+      "description": "Im Oktober 2024 eröffnet die NHTSA eine Untersuchung zu 2,4 Millionen FSD-Fahrzeugen nach mehreren Crashes bei eingeschränkter Sicht, darunter ein tödlicher Fußgängerunfall. Die Behörde bemängelt, dass das Kamerasystem Sicht-beeinträchtigende Bedingungen nicht zuverlässig erkennt - dieselbe Schwäche, die schon den Bay-Bridge-Unfall begünstigte. 2026 wird die Untersuchung auf rund 3,2 Millionen Fahrzeuge ausgeweitet.",
+      "title_de": "NHTSA-Sammeluntersuchung zu FSD bei schlechter Sicht",
+      "description_de": "Im Oktober 2024 eröffnet die NHTSA eine Untersuchung zu 2,4 Millionen FSD-Fahrzeugen nach mehreren Crashes bei eingeschränkter Sicht, darunter ein tödlicher Fußgängerunfall. Die Behörde bemängelt, dass das Kamerasystem Sicht-beeinträchtigende Bedingungen nicht zuverlässig erkennt - dieselbe Schwäche, die schon den Bay-Bridge-Unfall begünstigte. 2026 wird die Untersuchung auf rund 3,2 Millionen Fahrzeuge ausgeweitet.",
+      "title_en": "NHTSA umbrella probe into FSD in poor visibility",
+      "description_en": "In October 2024 the NHTSA opens an investigation into 2.4 million FSD vehicles after several crashes in reduced-visibility conditions, including a fatal pedestrian strike. The agency criticises that the camera system does not reliably detect visibility-degrading conditions - the same weakness that contributed to the Bay Bridge crash. In 2026 the probe is expanded to roughly 3.2 million vehicles.",
+      "sources": [
+        "https://headlight.news/2024/10/18/nhtsa-opens-investigation-into-2-4-million-fsd-equipped-teslas/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://abc7news.com/tesla-autopilot-crash-sf-bay-bridge-8-car-self-driving/12599448/",
