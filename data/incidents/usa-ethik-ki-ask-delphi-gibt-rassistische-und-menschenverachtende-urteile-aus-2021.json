@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Allen Institute for AI (AI2)",
@@ -46,7 +58,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2021",
+      "phase": "infrastructure",
+      "title": "Commonsense Norm Bank: 1,7 Millionen Crowdworker-Moralurteile als Trainingsbasis",
+      "description": "Als Datengrundlage stellte das Allen Institute for AI die Commonsense Norm Bank zusammen, eine Sammlung von rund 1,7 Millionen menschlichen Moralurteilen zu Alltagssituationen. Sie wurde aus fünf bestehenden Datensätzen (u.a. Social Chemistry, Moral Stories, Social Bias Inference Corpus) aggregiert und mit Bewertungen von Crowdworkern angereichert. Diese Datenbasis prägte spätere Ausgaben des Systems unmittelbar.",
+      "title_de": "Commonsense Norm Bank: 1,7 Millionen Crowdworker-Moralurteile als Trainingsbasis",
+      "description_de": "Als Datengrundlage stellte das Allen Institute for AI die Commonsense Norm Bank zusammen, eine Sammlung von rund 1,7 Millionen menschlichen Moralurteilen zu Alltagssituationen. Sie wurde aus fünf bestehenden Datensätzen (u.a. Social Chemistry, Moral Stories, Social Bias Inference Corpus) aggregiert und mit Bewertungen von Crowdworkern angereichert. Diese Datenbasis prägte spätere Ausgaben des Systems unmittelbar.",
+      "title_en": "Commonsense Norm Bank: 1.7 million crowdworker moral judgements as training base",
+      "description_en": "As its data foundation, the Allen Institute for AI assembled the Commonsense Norm Bank, a collection of about 1.7 million human moral judgements on everyday situations. It was aggregated from five existing datasets (including Social Chemistry, Moral Stories, Social Bias Inference Corpus) and enriched with crowdworker ratings. This data base directly shaped the system's later outputs.",
+      "sources": [
+        "https://arxiv.org/pdf/2110.07574"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "doctrine",
+      "title": "AI2 will maschinelle Moral modellieren und als offene Web-Demo testen",
+      "description": "Das Forschungsteam verfolgte das Ziel, ethische Urteile statistisch zu modellieren, und veröffentlichte Delphi zugleich als Paper und als frei zugängliche Web-Demo. Die Entscheidung, ein experimentelles Moral-Modell öffentlich abfragbar zu machen, war zentraler Auslöser des Vorfalls. Intern wurde es als Forschungswerkzeug zur Untersuchung von Common-Sense-Moral verstanden.",
+      "title_de": "AI2 will maschinelle Moral modellieren und als offene Web-Demo testen",
+      "description_de": "Das Forschungsteam verfolgte das Ziel, ethische Urteile statistisch zu modellieren, und veröffentlichte Delphi zugleich als Paper und als frei zugängliche Web-Demo. Die Entscheidung, ein experimentelles Moral-Modell öffentlich abfragbar zu machen, war zentraler Auslöser des Vorfalls. Intern wurde es als Forschungswerkzeug zur Untersuchung von Common-Sense-Moral verstanden.",
+      "title_en": "AI2 sets out to model machine morality and test it as an open web demo",
+      "description_en": "The research team pursued the goal of statistically modelling ethical judgements and released Delphi simultaneously as a paper and a freely accessible web demo. The decision to make an experimental moral model publicly queryable was the central trigger of the incident. Internally it was understood as a research tool for studying commonsense morality.",
+      "sources": [
+        "https://www.geekwire.com/2021/teaching-artificial-intelligence-right-from-wrong-new-tool-from-ai2-aims-to-model-ethical-judgments/"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "event",
+      "title": "Ask Delphi liefert rassistische und menschenverachtende Urteile",
+      "description": "Kurz nach dem Start im Oktober 2021 zeigten Nutzer:innen, dass Ask Delphi problematische Antworten ausgab: Es bewertete etwa Völkermord als vertretbar, 'wenn er alle glücklich macht', und stufte Aussagen je nach Hautfarbe oder sexueller Orientierung unterschiedlich ein. Das System reproduzierte damit gesellschaftliche Vorurteile aus seinen Trainingsdaten.",
+      "title_de": "Ask Delphi liefert rassistische und menschenverachtende Urteile",
+      "description_de": "Kurz nach dem Start im Oktober 2021 zeigten Nutzer:innen, dass Ask Delphi problematische Antworten ausgab: Es bewertete etwa Völkermord als vertretbar, 'wenn er alle glücklich macht', und stufte Aussagen je nach Hautfarbe oder sexueller Orientierung unterschiedlich ein. Das System reproduzierte damit gesellschaftliche Vorurteile aus seinen Trainingsdaten.",
+      "title_en": "Ask Delphi produces racist and abhorrent judgements",
+      "description_en": "Shortly after launch in October 2021, users demonstrated that Ask Delphi produced problematic answers: it rated genocide as acceptable 'if it makes everyone happy' and judged statements differently depending on race or sexual orientation. The system thereby reproduced societal bias from its training data.",
+      "sources": [
+        "https://futurism.com/delphi-ai-ethics-racist"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "consequences",
+      "title": "Kritik an maschineller Moral - AI2 ergänzt Warnhinweise und Filter",
+      "description": "Der Fall löste breite Kritik an der Idee aus, Moral statistisch aus aggregierten Urteilen abzuleiten. Die Entwickler betonten den Forschungscharakter, ergänzten Warnhinweise und passten die Demo an, um rassistische und sexistische Ausgaben zu unterbinden. Delphi wurde zum vielzitierten Beispiel dafür, wie maschinell aggregierte 'Moral' bestehende Vorurteile fortschreibt.",
+      "title_de": "Kritik an maschineller Moral - AI2 ergänzt Warnhinweise und Filter",
+      "description_de": "Der Fall löste breite Kritik an der Idee aus, Moral statistisch aus aggregierten Urteilen abzuleiten. Die Entwickler betonten den Forschungscharakter, ergänzten Warnhinweise und passten die Demo an, um rassistische und sexistische Ausgaben zu unterbinden. Delphi wurde zum vielzitierten Beispiel dafür, wie maschinell aggregierte 'Moral' bestehende Vorurteile fortschreibt.",
+      "title_en": "Criticism of machine morality - AI2 adds warnings and filters",
+      "description_en": "The case sparked broad criticism of the idea of deriving morality statistically from aggregated judgements. The developers stressed its research character, added warning notices and adjusted the demo to suppress racist and sexist outputs. Delphi became a widely cited example of how machine-aggregated 'morality' perpetuates existing bias.",
+      "sources": [
+        "https://www.dazeddigital.com/science-tech/article/54701/1/an-ethical-ai-trained-on-human-morals-has-turned-racist-ask-delphi"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://futurism.com/delphi-ai-ethics-racist",

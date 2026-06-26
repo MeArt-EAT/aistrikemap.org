@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verkehrssicherheit",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Verkehrssicherheit",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Road safety",
+    "Physical integrity",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Cruise LLC (General Motors)",
@@ -53,7 +65,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Cruise testet fahrerlose Robotaxis auf Straßen von San Francisco",
+      "description": "Cruise, die Robotaxi-Tochter von General Motors, begann 2020 fahrerlose Testfahrten ohne Sicherheitsfahrer in San Francisco. Das selbstfahrende System stützte sich auf Kameras, Lidar und Radar sowie auf Algorithmen, die das Verhalten anderer Verkehrsteilnehmer vorhersagen. Eine fehlerhafte Bewegungsvorhersage solcher Objekte war die technische Vorbedingung des späteren Auffahrunfalls.",
+      "title_de": "Cruise testet fahrerlose Robotaxis auf Straßen von San Francisco",
+      "description_de": "Cruise, die Robotaxi-Tochter von General Motors, begann 2020 fahrerlose Testfahrten ohne Sicherheitsfahrer in San Francisco. Das selbstfahrende System stützte sich auf Kameras, Lidar und Radar sowie auf Algorithmen, die das Verhalten anderer Verkehrsteilnehmer vorhersagen. Eine fehlerhafte Bewegungsvorhersage solcher Objekte war die technische Vorbedingung des späteren Auffahrunfalls.",
+      "title_en": "Cruise tests driverless robotaxis on San Francisco streets",
+      "description_en": "Cruise, the robotaxi subsidiary of General Motors, began driverless test drives without a safety driver in San Francisco in 2020. The self-driving system relied on cameras, lidar and radar plus algorithms that predict the behaviour of other road users. A faulty movement prediction of such objects was the technical precondition of the later rear-end collision.",
+      "sources": [
+        "https://techcrunch.com/2022/06/02/cruise-can-finally-charge-for-driverless-robotaxi-rides-in-san-francisco/"
+      ]
+    },
+    {
+      "date": "2022-06-02",
+      "phase": "doctrine",
+      "title": "Kalifornien erlaubt Cruise kommerziellen fahrerlosen Fahrgastbetrieb",
+      "description": "Am 2. Juni 2022 erteilte die kalifornische Regulierungsbehörde CPUC Cruise als erstem Unternehmen die Genehmigung, in San Francisco zahlende Fahrgäste ohne Sicherheitsfahrer zu befördern. Damit durften die Robotaxis regulär im öffentlichen Straßenverkehr neben Linienbussen und Fußgängern operieren. Diese Zulassung schuf die geschäftliche und rechtliche Grundlage für den späteren Einsatz, in dem es zur Kollision kam.",
+      "title_de": "Kalifornien erlaubt Cruise kommerziellen fahrerlosen Fahrgastbetrieb",
+      "description_de": "Am 2. Juni 2022 erteilte die kalifornische Regulierungsbehörde CPUC Cruise als erstem Unternehmen die Genehmigung, in San Francisco zahlende Fahrgäste ohne Sicherheitsfahrer zu befördern. Damit durften die Robotaxis regulär im öffentlichen Straßenverkehr neben Linienbussen und Fußgängern operieren. Diese Zulassung schuf die geschäftliche und rechtliche Grundlage für den späteren Einsatz, in dem es zur Kollision kam.",
+      "title_en": "California allows Cruise commercial driverless passenger service",
+      "description_en": "On 2 June 2022 California's CPUC regulator granted Cruise, as the first company, a permit to carry paying passengers without a safety driver in San Francisco. This let the robotaxis operate regularly in public traffic alongside transit buses and pedestrians. The authorisation created the commercial and legal basis for the later deployment in which the collision occurred.",
+      "sources": [
+        "https://www.cpuc.ca.gov/news-and-updates/all-news/cpuc-issues-first-driverless-autonomous-vehicle-passenger-service-deployment-permit"
+      ]
+    },
+    {
+      "date": "2023-03-23",
+      "phase": "event",
+      "title": "USA: Cruise-Robotaxi fährt auf Linienbus auf, 300er-Rückruf in San Francisco",
+      "description": "Am 23. März 2023 fuhr ein autonomes Cruise-Robotaxi in San Francisco auf das Heck eines Muni-Gelenkbusses auf. Das Fahrsystem hatte die Bewegung des Busses falsch vorhergesagt, weil der hintere Teil des Gelenkbusses den vorderen verdeckte und das System fälschlich von Weiterfahrt ausging. Verletzt wurde niemand.",
+      "title_de": "USA: Cruise-Robotaxi fährt auf Linienbus auf, 300er-Rückruf in San Francisco",
+      "description_de": "Am 23. März 2023 fuhr ein autonomes Cruise-Robotaxi in San Francisco auf das Heck eines Muni-Gelenkbusses auf. Das Fahrsystem hatte die Bewegung des Busses falsch vorhergesagt, weil der hintere Teil des Gelenkbusses den vorderen verdeckte und das System fälschlich von Weiterfahrt ausging. Verletzt wurde niemand.",
+      "title_en": "US: Cruise robotaxi rear-ends transit bus, 300-vehicle recall in San Francisco",
+      "description_en": "On 23 March 2023 an autonomous Cruise robotaxi in San Francisco rear-ended the back of an articulated Muni bus. The driving system had mispredicted the bus's movement because the rear section of the articulated bus obscured the front, leading the system to wrongly assume it kept moving forward. No one was injured.",
+      "sources": [
+        "https://www.therobotreport.com/cruise-robotaxi-sf-bus-involved-in-accident/"
+      ]
+    },
+    {
+      "date": "2023-04-06",
+      "phase": "consequences",
+      "title": "Cruise ruft 300 Fahrzeuge zurück und meldet den Vorfall der NHTSA",
+      "description": "Cruise stufte den Auffahrunfall als Folge eines Softwarefehlers ein, der die Bewegung von Gelenkfahrzeugen in seltenen Fällen falsch vorhersagte, und rief am 6. April 2023 freiwillig 300 betroffene Fahrzeuge zur Software-Aktualisierung zurück. Das Unternehmen meldete den Vorfall der Bundesbehörde NHTSA gemäß der Standing General Order und spielte ein Update auf. Der Fall wurde zum Vorboten weiterer, schwererer Cruise-Vorfälle, die später zum Entzug der Betriebserlaubnis führten.",
+      "title_de": "Cruise ruft 300 Fahrzeuge zurück und meldet den Vorfall der NHTSA",
+      "description_de": "Cruise stufte den Auffahrunfall als Folge eines Softwarefehlers ein, der die Bewegung von Gelenkfahrzeugen in seltenen Fällen falsch vorhersagte, und rief am 6. April 2023 freiwillig 300 betroffene Fahrzeuge zur Software-Aktualisierung zurück. Das Unternehmen meldete den Vorfall der Bundesbehörde NHTSA gemäß der Standing General Order und spielte ein Update auf. Der Fall wurde zum Vorboten weiterer, schwererer Cruise-Vorfälle, die später zum Entzug der Betriebserlaubnis führten.",
+      "title_en": "Cruise recalls 300 vehicles and reports the incident to NHTSA",
+      "description_en": "Cruise classified the rear-end crash as the result of a software defect that mispredicted the movement of articulated vehicles in rare cases and voluntarily recalled 300 affected vehicles for a software update on 6 April 2023. The company reported the incident to the federal NHTSA under the Standing General Order and deployed an update. The case foreshadowed further, more serious Cruise incidents that later led to the suspension of its operating permit.",
+      "sources": [
+        "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23E029-4270.PDF",
+        "https://www.cbsnews.com/sanfrancisco/news/gm-cruise-recalls-300-robotaxis-after-crash-involving-bus/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cbsnews.com/sanfrancisco/news/gm-cruise-recalls-300-robotaxis-after-crash-involving-bus/",

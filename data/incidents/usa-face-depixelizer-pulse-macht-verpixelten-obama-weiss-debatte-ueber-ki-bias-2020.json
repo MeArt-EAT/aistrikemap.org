@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Gleichbehandlung"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Gleichbehandlung"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Right to equal treatment"
+  ],
   "asm:actors": [
     {
       "name": "Denis Malimonov (Face Depixelizer)",
@@ -42,7 +54,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "StyleGAN auf Flickr-Gesichtern als generative Grundlage",
+      "description": "Die generative Grundlage von PULSE ist StyleGAN, ein neuronales Netz, das auf einem Datensatz von Gesichtsfotos aus Flickr trainiert wurde. Die Zusammensetzung dieser Trainingsdaten bestimmte, welche Gesichter das Modell als plausibel ausgeben konnte. Diese Datenbasis gilt als zentrale Quelle des später sichtbaren rassistischen Bias.",
+      "title_de": "StyleGAN auf Flickr-Gesichtern als generative Grundlage",
+      "description_de": "Die generative Grundlage von PULSE ist StyleGAN, ein neuronales Netz, das auf einem Datensatz von Gesichtsfotos aus Flickr trainiert wurde. Die Zusammensetzung dieser Trainingsdaten bestimmte, welche Gesichter das Modell als plausibel ausgeben konnte. Diese Datenbasis gilt als zentrale Quelle des später sichtbaren rassistischen Bias.",
+      "title_en": "StyleGAN trained on Flickr faces as the generative basis",
+      "description_en": "PULSE's generative basis is StyleGAN, a neural network trained on a dataset of facial photographs taken from Flickr. The composition of this training data determined which faces the model could plausibly output. This data base is regarded as the central source of the racial bias that later became visible.",
+      "sources": [
+        "https://www.deeplearning.ai/the-batch/image-resolution-in-black-and-white"
+      ]
+    },
+    {
+      "date": "2020-03",
+      "phase": "doctrine",
+      "title": "Duke veröffentlicht PULSE - Upsampling per Latent-Space-Suche",
+      "description": "Forscher der Duke University stellten PULSE (Photo Upsampling via Latent Space Exploration) vor: Statt ein verpixeltes Bild direkt zu schärfen, sucht der Algorithmus im latenten Raum von StyleGAN nach einem hochaufgelösten Gesicht, das herunterskaliert zum Eingabebild passt. Auf dieser Methode baute das frei zugängliche Web-Tool Face Depixelizer auf, das die Reichweite des Effekts massiv vergrößerte.",
+      "title_de": "Duke veröffentlicht PULSE - Upsampling per Latent-Space-Suche",
+      "description_de": "Forscher der Duke University stellten PULSE (Photo Upsampling via Latent Space Exploration) vor: Statt ein verpixeltes Bild direkt zu schärfen, sucht der Algorithmus im latenten Raum von StyleGAN nach einem hochaufgelösten Gesicht, das herunterskaliert zum Eingabebild passt. Auf dieser Methode baute das frei zugängliche Web-Tool Face Depixelizer auf, das die Reichweite des Effekts massiv vergrößerte.",
+      "title_en": "Duke publishes PULSE - upsampling via latent space search",
+      "description_en": "Researchers at Duke University introduced PULSE (Photo Upsampling via Latent Space Exploration): instead of sharpening a pixelated image directly, the algorithm searches StyleGAN's latent space for a high-resolution face that, when downscaled, matches the input image. The freely accessible web tool Face Depixelizer built on this method and vastly expanded the reach of the effect.",
+      "sources": [
+        "https://arxiv.org/pdf/2003.03808"
+      ]
+    },
+    {
+      "date": "2020-06",
+      "phase": "event",
+      "title": "Face Depixelizer macht verpixelten Obama weiß",
+      "description": "Im Juni 2020 erzeugte Face Depixelizer aus einem verpixelten Foto Barack Obamas das Gesicht eines weißen Mannes. Ähnliche Verzerrungen traten bei Personen wie Alexandria Ocasio-Cortez und Lucy Liu auf: Das Tool rekonstruierte bei Menschen of Color regelmäßig Gesichter mit kaukasischen Merkmalen. Die Beispiele verbreiteten sich rasch in sozialen Medien.",
+      "title_de": "Face Depixelizer macht verpixelten Obama weiß",
+      "description_de": "Im Juni 2020 erzeugte Face Depixelizer aus einem verpixelten Foto Barack Obamas das Gesicht eines weißen Mannes. Ähnliche Verzerrungen traten bei Personen wie Alexandria Ocasio-Cortez und Lucy Liu auf: Das Tool rekonstruierte bei Menschen of Color regelmäßig Gesichter mit kaukasischen Merkmalen. Die Beispiele verbreiteten sich rasch in sozialen Medien.",
+      "title_en": "Face Depixelizer turns a pixelated Obama white",
+      "description_en": "In June 2020 Face Depixelizer turned a pixelated photo of Barack Obama into the face of a white man. Similar distortions appeared with people such as Alexandria Ocasio-Cortez and Lucy Liu: for people of colour the tool regularly reconstructed faces with Caucasian features. The examples spread rapidly on social media.",
+      "sources": [
+        "https://www.vice.com/en/article/this-image-of-a-white-barack-obama-is-ais-racial-bias-problem-in-a-nutshell/"
+      ]
+    },
+    {
+      "date": "2020-06",
+      "phase": "consequences",
+      "title": "Öffentliche Debatte über Ursachen von KI-Bias",
+      "description": "Der Fall wurde zum vielzitierten Lehrbeispiel für rassistischen Bias in KI-Systemen und löste eine breite öffentliche Kontroverse aus. Diskutiert wurde insbesondere, ob die Verzerrung primär aus den unausgewogenen Trainingsdaten (StyleGAN/Flickr) oder aus dem Auswahl-Algorithmus von PULSE stammt. Die Debatte verschärfte die Auseinandersetzung darüber, wie Bias in maschinellem Lernen zu adressieren ist.",
+      "title_de": "Öffentliche Debatte über Ursachen von KI-Bias",
+      "description_de": "Der Fall wurde zum vielzitierten Lehrbeispiel für rassistischen Bias in KI-Systemen und löste eine breite öffentliche Kontroverse aus. Diskutiert wurde insbesondere, ob die Verzerrung primär aus den unausgewogenen Trainingsdaten (StyleGAN/Flickr) oder aus dem Auswahl-Algorithmus von PULSE stammt. Die Debatte verschärfte die Auseinandersetzung darüber, wie Bias in maschinellem Lernen zu adressieren ist.",
+      "title_en": "Public debate on the causes of AI bias",
+      "description_en": "The case became a widely cited textbook example of racial bias in AI systems and triggered a broad public controversy. In particular, it was debated whether the distortion stemmed primarily from the imbalanced training data (StyleGAN/Flickr) or from PULSE's selection algorithm. The debate intensified the discussion of how bias in machine learning should be addressed.",
+      "sources": [
+        "https://www.theregister.com/2020/06/24/ai_image_tool/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.vice.com/en/article/this-image-of-a-white-barack-obama-is-ais-racial-bias-problem-in-a-nutshell/",
