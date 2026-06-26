@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Urheberrecht",
+    "Datenschutz",
+    "Recht am eigenen Bild und Wort",
+    "Wirtschaftliche Rechte der Urheber"
+  ],
+  "asm:affectedRights_de": [
+    "Urheberrecht",
+    "Datenschutz",
+    "Recht am eigenen Bild und Wort",
+    "Wirtschaftliche Rechte der Urheber"
+  ],
+  "asm:affectedRights_en": [
+    "Copyright",
+    "Data protection",
+    "Right to one's own image and voice",
+    "Economic rights of creators"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -42,7 +57,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-09",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht das Spracherkennungssystem Whisper",
+      "description": "Im September 2022 stellte OpenAI Whisper vor, ein robustes Spracherkennungssystem, das auf 680.000 Stunden mehrsprachiger Audiodaten aus dem Web trainiert war. Whisper konnte gesprochene Inhalte zuverlässig in Text umwandeln und wurde damit zum Werkzeug, um aus Video- und Audioquellen massenhaft neuen Trainingstext zu gewinnen.",
+      "title_de": "OpenAI veröffentlicht das Spracherkennungssystem Whisper",
+      "description_de": "Im September 2022 stellte OpenAI Whisper vor, ein robustes Spracherkennungssystem, das auf 680.000 Stunden mehrsprachiger Audiodaten aus dem Web trainiert war. Whisper konnte gesprochene Inhalte zuverlässig in Text umwandeln und wurde damit zum Werkzeug, um aus Video- und Audioquellen massenhaft neuen Trainingstext zu gewinnen.",
+      "title_en": "OpenAI releases the Whisper speech-recognition system",
+      "description_en": "In September 2022 OpenAI introduced Whisper, a robust speech-recognition system trained on 680,000 hours of multilingual web audio. Whisper could reliably turn spoken content into text, becoming the tool to extract large volumes of new training text from video and audio sources.",
+      "sources": [
+        "https://openai.com/index/whisper/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Datenhunger trifft auf 'Fair Use'-Auslegung",
+      "description": "Weil hochwertige Textquellen aus dem offenen Web als weitgehend ausgeschöpft galten, suchte OpenAI nach neuen Trainingsdaten und entschied, transkribierte Video- und Podcast-Inhalte hinzuzunehmen. Intern war laut Bericht bekannt, dass das Abgreifen von YouTube-Inhalten gegen die Plattformregeln verstoßen würde; OpenAI stufte die Nutzung dennoch als rechtlich vertretbaren 'Fair Use' ein. OpenAI-Präsident Greg Brockman war an der Auswahl beteiligt.",
+      "title_de": "Datenhunger trifft auf 'Fair Use'-Auslegung",
+      "description_de": "Weil hochwertige Textquellen aus dem offenen Web als weitgehend ausgeschöpft galten, suchte OpenAI nach neuen Trainingsdaten und entschied, transkribierte Video- und Podcast-Inhalte hinzuzunehmen. Intern war laut Bericht bekannt, dass das Abgreifen von YouTube-Inhalten gegen die Plattformregeln verstoßen würde; OpenAI stufte die Nutzung dennoch als rechtlich vertretbaren 'Fair Use' ein. OpenAI-Präsident Greg Brockman war an der Auswahl beteiligt.",
+      "title_en": "Data hunger meets a 'fair use' reading",
+      "description_en": "With high-quality text from the open web seen as largely exhausted, OpenAI sought new training data and decided to add transcribed video and podcast content. Internally it was reportedly known that scraping YouTube content would breach the platform's rules; OpenAI nonetheless classified the use as defensible fair use. OpenAI president Greg Brockman was involved in the selection.",
+      "sources": [
+        "https://gizmodo.com/openai-chatgpt-google-youtube-videos-train-gpt4-1851394676"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "phase": "event",
+      "title": "OpenAI transkribierte über 1 Mio. Stunden YouTube fürs GPT-4-Training",
+      "description": "Eine Recherche der New York Times vom April 2024 ergab, dass OpenAI mit seinem Whisper-Spracherkennungssystem über eine Million Stunden YouTube-Videos transkribierte, um Trainingsdaten für GPT-4 zu gewinnen. Das verstieß gegen YouTubes Nutzungsbedingungen; OpenAI-Präsident Greg Brockman war laut Bericht persönlich an der Auswahl beteiligt. Intern war bekannt, dass die Nutzung rechtlich fragwürdig war, sie wurde aber als 'Fair Use' eingestuft.",
+      "title_de": "OpenAI transkribierte über 1 Mio. Stunden YouTube fürs GPT-4-Training",
+      "description_de": "Eine Recherche der New York Times vom April 2024 ergab, dass OpenAI mit seinem Whisper-Spracherkennungssystem über eine Million Stunden YouTube-Videos transkribierte, um Trainingsdaten für GPT-4 zu gewinnen. Das verstieß gegen YouTubes Nutzungsbedingungen; OpenAI-Präsident Greg Brockman war laut Bericht persönlich an der Auswahl beteiligt. Intern war bekannt, dass die Nutzung rechtlich fragwürdig war, sie wurde aber als 'Fair Use' eingestuft.",
+      "title_en": "OpenAI transcribed over 1M hours of YouTube to train GPT-4",
+      "description_en": "An April 2024 New York Times investigation found that OpenAI transcribed over a million hours of YouTube videos using its Whisper speech-recognition system to obtain training data for GPT-4. This breached YouTube's terms of service; OpenAI president Greg Brockman was reportedly personally involved in selecting videos. Internally the use was known to be legally questionable but treated as fair use.",
+      "sources": [
+        "https://gizmodo.com/openai-chatgpt-google-youtube-videos-train-gpt4-1851394676"
+      ]
+    },
+    {
+      "date": "2024-04-08",
+      "phase": "consequences",
+      "title": "Debatte um Trainingsdaten - YouTube-Regelverstoß öffentlich",
+      "description": "Der Bericht befeuerte die Debatte über die Herkunft von KI-Trainingsdaten und die Rechte von Urhebern. Er zeigte zudem, dass auch Google YouTube-Videos für eigenes Training nutzte, obwohl die Plattform Drittnutzung untersagt. Der Fall reihte sich in eine Welle von Urheberrechtsklagen und regulatorischer Aufmerksamkeit gegen generative KI ein.",
+      "title_de": "Debatte um Trainingsdaten - YouTube-Regelverstoß öffentlich",
+      "description_de": "Der Bericht befeuerte die Debatte über die Herkunft von KI-Trainingsdaten und die Rechte von Urhebern. Er zeigte zudem, dass auch Google YouTube-Videos für eigenes Training nutzte, obwohl die Plattform Drittnutzung untersagt. Der Fall reihte sich in eine Welle von Urheberrechtsklagen und regulatorischer Aufmerksamkeit gegen generative KI ein.",
+      "title_en": "Debate over training data - YouTube rule breach made public",
+      "description_en": "The report fuelled the debate over the provenance of AI training data and the rights of creators. It also showed that Google itself used YouTube videos for its own training despite the platform barring third-party use. The case joined a wave of copyright lawsuits and regulatory scrutiny of generative AI.",
+      "sources": [
+        "https://9to5google.com/2024/04/08/youtube-rules-openai-google-training-data-report/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://gizmodo.com/openai-chatgpt-google-youtube-videos-train-gpt4-1851394676",

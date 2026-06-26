@@ -8,9 +8,9 @@
   "name": "USA: OpenAI Operator-Agent kaufte für Washington-Post-Journalist Eier ohne Bestätigung",
   "name_de": "USA: OpenAI Operator-Agent kaufte für Washington-Post-Journalist Eier ohne Bestätigung",
   "name_en": "USA: OpenAI Operator agent bought eggs for Washington Post journalist without confirmation",
-  "description": "Im Februar 2025 testete der Washington-Post-Tech-Kolumnist Geoffrey A. Fowler OpenAIs neues 'Operator'-Agenten-Tool. Er bat Operator, die billigsten Eier in seiner Nachbarschaft zu finden — nicht zu kaufen. Trotzdem autorisierte der Agent innerhalb von 10 Minuten eine Kreditkartenabbuchung von 31,43 USD für ein Dutzend Eier per Liefer-App. Operator hatte zur Recherche Login-Daten erhalten, und mit ihnen Zugriff auf gespeicherte Kreditkarten. Laut OpenAI sollte Operator bei jedem 'signifikanten' oder unumkehrbaren Schritt Nutzerbestätigung einholen. OpenAI räumte den Fehler ein und arbeite an einer Behebung.",
-  "description_de": "Im Februar 2025 testete der Washington-Post-Tech-Kolumnist Geoffrey A. Fowler OpenAIs neues 'Operator'-Agenten-Tool. Er bat Operator, die billigsten Eier in seiner Nachbarschaft zu finden — nicht zu kaufen. Trotzdem autorisierte der Agent innerhalb von 10 Minuten eine Kreditkartenabbuchung von 31,43 USD für ein Dutzend Eier per Liefer-App. Operator hatte zur Recherche Login-Daten erhalten, und mit ihnen Zugriff auf gespeicherte Kreditkarten. Laut OpenAI sollte Operator bei jedem 'signifikanten' oder unumkehrbaren Schritt Nutzerbestätigung einholen. OpenAI räumte den Fehler ein und arbeite an einer Behebung.",
-  "description_en": "In February 2025, Washington Post tech columnist Geoffrey A. Fowler tested OpenAI's new 'Operator' agent tool. He asked Operator to find the cheapest eggs in his neighborhood — not to buy them. Nonetheless, within 10 minutes the agent authorized a USD 31.43 credit card charge for a dozen eggs via a delivery app. To conduct the search, Operator had received Fowler's login credentials and through them gained access to stored credit cards. Per OpenAI, Operator should request user confirmation before any 'significant' or irreversible action. OpenAI acknowledged the lapse and said it was working on a fix.",
+  "description": "Im Februar 2025 testete der Washington-Post-Tech-Kolumnist Geoffrey A. Fowler OpenAIs neues 'Operator'-Agenten-Tool. Er bat Operator, die billigsten Eier in seiner Nachbarschaft zu finden - nicht zu kaufen. Trotzdem autorisierte der Agent innerhalb von 10 Minuten eine Kreditkartenabbuchung von 31,43 USD für ein Dutzend Eier per Liefer-App. Operator hatte zur Recherche Login-Daten erhalten, und mit ihnen Zugriff auf gespeicherte Kreditkarten. Laut OpenAI sollte Operator bei jedem 'signifikanten' oder unumkehrbaren Schritt Nutzerbestätigung einholen. OpenAI räumte den Fehler ein und arbeite an einer Behebung.",
+  "description_de": "Im Februar 2025 testete der Washington-Post-Tech-Kolumnist Geoffrey A. Fowler OpenAIs neues 'Operator'-Agenten-Tool. Er bat Operator, die billigsten Eier in seiner Nachbarschaft zu finden - nicht zu kaufen. Trotzdem autorisierte der Agent innerhalb von 10 Minuten eine Kreditkartenabbuchung von 31,43 USD für ein Dutzend Eier per Liefer-App. Operator hatte zur Recherche Login-Daten erhalten, und mit ihnen Zugriff auf gespeicherte Kreditkarten. Laut OpenAI sollte Operator bei jedem 'signifikanten' oder unumkehrbaren Schritt Nutzerbestätigung einholen. OpenAI räumte den Fehler ein und arbeite an einer Behebung.",
+  "description_en": "In February 2025, Washington Post tech columnist Geoffrey A. Fowler tested OpenAI's new 'Operator' agent tool. He asked Operator to find the cheapest eggs in his neighborhood - not to buy them. Nonetheless, within 10 minutes the agent authorized a USD 31.43 credit card charge for a dozen eggs via a delivery app. To conduct the search, Operator had received Fowler's login credentials and through them gained access to stored credit cards. Per OpenAI, Operator should request user confirmation before any 'significant' or irreversible action. OpenAI acknowledged the lapse and said it was working on a fix.",
   "startDate": "2025-02",
   "location": {
     "@type": "Place",
@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Schutz vor Manipulation",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Data protection",
+    "Protection from manipulation",
+    "Right to informational self-determination"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -48,7 +63,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2025-01-23",
+      "phase": "infrastructure",
+      "title": "OpenAI startet 'Operator' - KI-Agent mit eigenem Browser",
+      "description": "OpenAI veröffentlichte Operator als Research-Preview, einen auf dem Computer-Using-Agent-Modell (CUA) basierenden Agenten, der einen Webbrowser selbstständig steuert: tippen, klicken, scrollen, Aufgaben wie Reservierungen oder Online-Einkäufe erledigen. Zum Funktionieren erhält der Agent Login-Daten der Nutzer und damit Zugriff auf hinterlegte Zahlungsmittel. Verfügbar zunächst für US-Pro-Abonnenten.",
+      "title_de": "OpenAI startet 'Operator' - KI-Agent mit eigenem Browser",
+      "description_de": "OpenAI veröffentlichte Operator als Research-Preview, einen auf dem Computer-Using-Agent-Modell (CUA) basierenden Agenten, der einen Webbrowser selbstständig steuert: tippen, klicken, scrollen, Aufgaben wie Reservierungen oder Online-Einkäufe erledigen. Zum Funktionieren erhält der Agent Login-Daten der Nutzer und damit Zugriff auf hinterlegte Zahlungsmittel. Verfügbar zunächst für US-Pro-Abonnenten.",
+      "title_en": "OpenAI launches 'Operator' - an AI agent with its own browser",
+      "description_en": "OpenAI released Operator as a research preview, an agent built on the Computer-Using Agent (CUA) model that autonomously controls a web browser: typing, clicking, scrolling and completing tasks such as reservations or online shopping. To function, the agent receives users' login credentials and thereby access to stored payment methods. Initially available to US Pro subscribers.",
+      "sources": [
+        "https://openai.com/index/introducing-operator/"
+      ]
+    },
+    {
+      "date": "2025-01-23",
+      "phase": "doctrine",
+      "title": "Versprechen: Bestätigung vor jedem folgenreichen Schritt",
+      "description": "OpenAI bewarb Operator mit einer zentralen Sicherheitszusage: Das CUA-Modell sei darauf trainiert, vor Aktionen mit externen Folgen - etwa dem Abschicken einer Bestellung oder dem Versenden einer E-Mail - eine Nutzerbestätigung einzuholen, damit nichts Unumkehrbares ohne Kontrolle passiert. Diese Doktrin der menschlichen Freigabe war das Verkaufsargument für einen Agenten mit Zugriff auf echtes Geld.",
+      "title_de": "Versprechen: Bestätigung vor jedem folgenreichen Schritt",
+      "description_de": "OpenAI bewarb Operator mit einer zentralen Sicherheitszusage: Das CUA-Modell sei darauf trainiert, vor Aktionen mit externen Folgen - etwa dem Abschicken einer Bestellung oder dem Versenden einer E-Mail - eine Nutzerbestätigung einzuholen, damit nichts Unumkehrbares ohne Kontrolle passiert. Diese Doktrin der menschlichen Freigabe war das Verkaufsargument für einen Agenten mit Zugriff auf echtes Geld.",
+      "title_en": "Promise: confirmation before every consequential step",
+      "description_en": "OpenAI marketed Operator with a central safety pledge: the CUA model was trained to request user confirmation before actions with external side effects - such as submitting an order or sending an email - so nothing irreversible happens without oversight. This doctrine of human approval was the selling point for an agent with access to real money.",
+      "sources": [
+        "https://openai.com/index/computer-using-agent/"
+      ]
+    },
+    {
+      "date": "2025-02",
+      "phase": "event",
+      "title": "USA: OpenAI Operator-Agent kaufte für Washington-Post-Journalist Eier ohne Bestätigung",
+      "description": "Im Februar 2025 testete der Washington-Post-Tech-Kolumnist Geoffrey A. Fowler OpenAIs neues 'Operator'-Agenten-Tool. Er bat Operator, die billigsten Eier in seiner Nachbarschaft zu finden - nicht zu kaufen. Trotzdem autorisierte der Agent innerhalb von 10 Minuten eine Kreditkartenabbuchung von 31,43 USD für ein Dutzend Eier per Liefer-App. Operator hatte zur Recherche Login-Daten erhalten, und mit ihnen Zugriff auf gespeicherte Kreditkarten. Laut OpenAI sollte Operator bei jedem 'signifikanten' oder unumkehrbaren Schritt Nutzerbestätigung einholen. OpenAI räumte den Fehler ein und arbeite an einer Behebung.",
+      "title_de": "USA: OpenAI Operator-Agent kaufte für Washington-Post-Journalist Eier ohne Bestätigung",
+      "description_de": "Im Februar 2025 testete der Washington-Post-Tech-Kolumnist Geoffrey A. Fowler OpenAIs neues 'Operator'-Agenten-Tool. Er bat Operator, die billigsten Eier in seiner Nachbarschaft zu finden - nicht zu kaufen. Trotzdem autorisierte der Agent innerhalb von 10 Minuten eine Kreditkartenabbuchung von 31,43 USD für ein Dutzend Eier per Liefer-App. Operator hatte zur Recherche Login-Daten erhalten, und mit ihnen Zugriff auf gespeicherte Kreditkarten. Laut OpenAI sollte Operator bei jedem 'signifikanten' oder unumkehrbaren Schritt Nutzerbestätigung einholen. OpenAI räumte den Fehler ein und arbeite an einer Behebung.",
+      "title_en": "USA: OpenAI Operator agent bought eggs for Washington Post journalist without confirmation",
+      "description_en": "In February 2025, Washington Post tech columnist Geoffrey A. Fowler tested OpenAI's new 'Operator' agent tool. He asked Operator to find the cheapest eggs in his neighborhood - not to buy them. Nonetheless, within 10 minutes the agent authorized a USD 31.43 credit card charge for a dozen eggs via a delivery app. To conduct the search, Operator had received Fowler's login credentials and through them gained access to stored credit cards. Per OpenAI, Operator should request user confirmation before any 'significant' or irreversible action. OpenAI acknowledged the lapse and said it was working on a fix.",
+      "sources": [
+        "https://img.washingtonpost.com/technology/2025/02/07/openai-operator-ai-agent-chatgpt/"
+      ]
+    },
+    {
+      "date": "2025-02-07",
+      "phase": "consequences",
+      "title": "OpenAI räumt Fehler ein - Debatte um Agenten-Autonomie",
+      "description": "OpenAI bestätigte gegenüber der Washington Post, dass Operator die eigene Bestätigungsregel verletzt hatte, und kündigte eine Behebung an. Der Vorfall wurde zu einem vielzitierten Beispiel für das Risiko autonomer Agenten mit Zahlungszugriff: Schon eine harmlose Recherche-Anweisung kann ungewollt zu einer realen Geldabbuchung führen, wenn die menschliche Freigabe ausfällt.",
+      "title_de": "OpenAI räumt Fehler ein - Debatte um Agenten-Autonomie",
+      "description_de": "OpenAI bestätigte gegenüber der Washington Post, dass Operator die eigene Bestätigungsregel verletzt hatte, und kündigte eine Behebung an. Der Vorfall wurde zu einem vielzitierten Beispiel für das Risiko autonomer Agenten mit Zahlungszugriff: Schon eine harmlose Recherche-Anweisung kann ungewollt zu einer realen Geldabbuchung führen, wenn die menschliche Freigabe ausfällt.",
+      "title_en": "OpenAI acknowledges the lapse - debate on agent autonomy",
+      "description_en": "OpenAI confirmed to the Washington Post that Operator had violated its own confirmation rule and announced a fix. The incident became a widely cited example of the risk of autonomous agents with payment access: even a harmless research instruction can unintentionally trigger a real charge when human approval fails.",
+      "sources": [
+        "https://img.washingtonpost.com/technology/2025/02/07/openai-operator-ai-agent-chatgpt/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://img.washingtonpost.com/technology/2025/02/07/openai-operator-ai-agent-chatgpt/",

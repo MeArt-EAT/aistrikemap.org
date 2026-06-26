@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Protection from manipulation",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Reddit",
@@ -58,7 +73,63 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2008",
+      "phase": "infrastructure",
+      "title": "Reddit baut riesigen Bestand nutzergenerierter Inhalte mit offener API auf",
+      "description": "Reddit sammelt seit den 2000er-Jahren in tausenden Subreddits Beiträge, Kommentare und Diskussionen seiner Nutzer. Eine kostenlose öffentliche API ermöglichte ab 2008 den freien Zugriff auf diese Daten. Dieser über Jahre gewachsene Textbestand wurde zu einer begehrten Trainingsquelle für KI-Sprachmodelle.",
+      "title_de": "Reddit baut riesigen Bestand nutzergenerierter Inhalte mit offener API auf",
+      "description_de": "Reddit sammelt seit den 2000er-Jahren in tausenden Subreddits Beiträge, Kommentare und Diskussionen seiner Nutzer. Eine kostenlose öffentliche API ermöglichte ab 2008 den freien Zugriff auf diese Daten. Dieser über Jahre gewachsene Textbestand wurde zu einer begehrten Trainingsquelle für KI-Sprachmodelle.",
+      "title_en": "Reddit amasses huge store of user-generated content via an open API",
+      "description_en": "Since the 2000s Reddit has accumulated posts, comments and discussions from its users across thousands of subreddits. A free public API enabled open access to this data from 2008 onward. This text corpus, grown over many years, became a sought-after training source for AI language models.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2023_Reddit_API_controversy"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "doctrine",
+      "title": "Reddit kündigt kostenpflichtige API an, um Datenwert gegenüber KI-Firmen zu sichern",
+      "description": "Im April 2023 kündigte Reddit vor seinem geplanten Börsengang an, seine seit 2008 kostenlose API künftig zu bepreisen. Das Unternehmen begründete den Schritt ausdrücklich damit, den Wert seiner Daten zu sichern - gerade angesichts von KI-Sprachmodellen, die auf öffentlichen Daten trainiert werden. Damit etablierte Reddit das Geschäftsmodell, Nutzerinhalte als lizenzierbares Trainingsgut zu behandeln.",
+      "title_de": "Reddit kündigt kostenpflichtige API an, um Datenwert gegenüber KI-Firmen zu sichern",
+      "description_de": "Im April 2023 kündigte Reddit vor seinem geplanten Börsengang an, seine seit 2008 kostenlose API künftig zu bepreisen. Das Unternehmen begründete den Schritt ausdrücklich damit, den Wert seiner Daten zu sichern - gerade angesichts von KI-Sprachmodellen, die auf öffentlichen Daten trainiert werden. Damit etablierte Reddit das Geschäftsmodell, Nutzerinhalte als lizenzierbares Trainingsgut zu behandeln.",
+      "title_en": "Reddit announces paid API to capture data value from AI firms",
+      "description_en": "In April 2023, ahead of its planned IPO, Reddit announced it would start charging for its API, free since 2008. The company explicitly justified the move as ensuring fair value for its data, particularly given AI language models trained on public data. This established the business model of treating user content as licensable training material.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2023_Reddit_API_controversy",
+        "https://techcrunch.com/2024/02/22/reddit-says-its-made-203m-so-far-licensing-its-data/"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "event",
+      "title": "USA: Reddit reglementiert KI-Datennutzung und verlangt Lizenzverträge",
+      "description": "Reddit schloss 2024 Lizenzverträge über die Nutzung seiner nutzergenerierten Inhalte zum KI-Training ab, darunter mit Google (rund 60 Mio. US-Dollar pro Jahr) und OpenAI. Parallel blockierte die Plattform die meisten automatisierten Crawler und warnte KI-Firmen vor unlizenziertem Scraping. Hintergrund ist die Sorge vieler Nutzer, dass ihre Beiträge ohne Zustimmung in KI-Modelle einfließen.",
+      "title_de": "USA: Reddit reglementiert KI-Datennutzung und verlangt Lizenzverträge",
+      "description_de": "Reddit schloss 2024 Lizenzverträge über die Nutzung seiner nutzergenerierten Inhalte zum KI-Training ab, darunter mit Google (rund 60 Mio. US-Dollar pro Jahr) und OpenAI. Parallel blockierte die Plattform die meisten automatisierten Crawler und warnte KI-Firmen vor unlizenziertem Scraping. Hintergrund ist die Sorge vieler Nutzer, dass ihre Beiträge ohne Zustimmung in KI-Modelle einfließen.",
+      "title_en": "US: Reddit restricts AI data use and demands licensing deals",
+      "description_en": "In 2024, Reddit signed licensing deals allowing its user-generated content to be used for AI training, including with Google (reported at around USD 60 million per year) and OpenAI. At the same time the platform blocked most automated crawlers and warned AI firms against unlicensed scraping. The backdrop is widespread user unease about their posts being fed into AI models without consent.",
+      "sources": [
+        "https://www.cbsnews.com/news/google-reddit-60-million-deal-ai-training/",
+        "https://news.bloomberglaw.com/ip-law/google-reddit-ai-deal-just-the-start-for-social-media-licensing"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "Reddit aktualisiert robots.txt und sperrt nicht zahlende Crawler aus",
+      "description": "Ende Juni 2024 aktualisierte Reddit seine robots.txt und Public Content Policy, sodass automatisierte Bots ohne Vereinbarung blockiert oder ratenbegrenzt werden. Das Signal an die Branche war eindeutig: Wer Reddit-Daten für KI nutzen will, muss zahlen. Bis Anfang 2024 hatte Reddit nach eigenen Angaben bereits 203 Mio. US-Dollar mit Datenlizenzen eingenommen.",
+      "title_de": "Reddit aktualisiert robots.txt und sperrt nicht zahlende Crawler aus",
+      "description_de": "Ende Juni 2024 aktualisierte Reddit seine robots.txt und Public Content Policy, sodass automatisierte Bots ohne Vereinbarung blockiert oder ratenbegrenzt werden. Das Signal an die Branche war eindeutig: Wer Reddit-Daten für KI nutzen will, muss zahlen. Bis Anfang 2024 hatte Reddit nach eigenen Angaben bereits 203 Mio. US-Dollar mit Datenlizenzen eingenommen.",
+      "title_en": "Reddit updates robots.txt and blocks non-paying crawlers",
+      "description_en": "In late June 2024 Reddit updated its robots.txt and Public Content Policy so that automated bots without an agreement are blocked or rate-limited. The signal to the industry was clear: anyone wanting Reddit data for AI must pay. By early 2024 Reddit said it had already earned USD 203 million from data licensing.",
+      "sources": [
+        "https://web.swipeinsight.app/posts/reddit-updates-robots-txt-to-block-ai-crawlers-7937",
+        "https://techcrunch.com/2024/02/22/reddit-says-its-made-203m-so-far-licensing-its-data/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/02/22/reddit-says-its-made-203m-so-far-licensing-its-data/",
