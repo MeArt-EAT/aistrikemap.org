@@ -1,8 +1,8 @@
-# Übergabe #11 — Sev-2-Offensive (Wellen 46–54)
+# Übergabe #11 — Sev-2-Offensive (Wellen 46–57)
 
 **Datum:** 2026-06-26
 **Vorgänger:** #10 (2026-06-25, Sev-3-Block abgeschlossen, TL 78.5 %)
-**Bestand danach:** 2457 Incidents · **2137 mit Reverse-TL (87.0 %)** · 0 Audit-Findings
+**Bestand danach:** 2457 Incidents · **2208 mit Reverse-TL (89.9 %)** · 0 Audit-Findings
 
 ---
 
@@ -10,9 +10,9 @@
 
 Nach Abschluss des Sev-3-Blocks (#10) wurde die **Sev-2-Ebene** in Angriff
 genommen — gleiche erprobte Workflow-Methode (24 Cases/Welle, Stufe 1 WebSearch-
-grounded Generieren → Stufe 2 unabhängige adversariale Verify). **9 Wellen
-(46–54), +209 Reverse-Timelines, TL-Quote 78.5 → 87.0 %** (80%-Marke in Welle 47,
-85%- in Welle 52 überschritten). Sev-2 ohne TL: 480 → 271.
+grounded Generieren → Stufe 2 unabhängige adversariale Verify). **12 Wellen
+(46–57), +280 Reverse-Timelines, TL-Quote 78.5 → 89.9 %** (80%-Marke in Welle 47,
+85%- in Welle 52, knapp 90% nach Welle 57). Sev-2 ohne TL: 480 → 200.
 
 | Welle | Cases | pass / fix / needs-human | Δ TL | TL gesamt | Besonderheit |
 |---|---|---|---|---|---|
@@ -25,8 +25,11 @@ grounded Generieren → Stufe 2 unabhängige adversariale Verify). **9 Wellen
 | 52 | 24 | 17 / 7 / 0 | +24 | 2092 (85.1 %) | inline-Fix greta-thunberg-deepfake Kanalname „Snicklick"→„Snicklink" |
 | 53 | 24 | 8 / 15 / 1 | +23 | 2115 (86.1 %) | needs-human: hmrc-quantexa (Datum 2024→2026 + Anbieter vermischt); inline-Fix ring-tuerklingel-Distanz, bildgebung-Quelle |
 | 54 | 24 | 11 / 11 / 2 | +22 | 2137 (87.0 %) | needs-human: bradford-illustrator (erfundene doctrine-Details), iphone-face-id (erfundene Ethnie); inline-Fix buckingham-Markt-Zeitraum |
+| 55 | 24 | 14 / 9 / 1 | +23 | 2160 (87.9 %) | needs-human: amazon-lieferdrohne (Phasen-Verstoss); apple-zwillinge Test-Attribution praezisiert (korrigiert, nicht zurueckgerollt) |
+| 56 | 24 | 18 / 5 / 1 | +24 | 2184 (88.9 %) | chatgpt-waffen-kinder USA-Today-Provenienz -> Harvard Williams Lab korrigiert (Identitaet korrekt, nur Quelle); inline-Fix bing-disney-Datum; Validator-Bugfix (beschluss) |
+| 57 | 24 | 19 / 5 / 0 | +24 | 2208 (89.9 %) | sauberster Lauf: 0 needs-human, 0 Faktenfehler |
 
-**WebSearch in allen 9 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
+**WebSearch in allen 12 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
 Ausfall). Audit nach jeder Welle 0 Findings (Welle 49: 2 length_ratio-False-
 Positives bei einem Gender-Begriff → auf Korpus-Standard „Geschlechtergleichheit"
 harmonisiert). Translit-Map unverändert 2951 (Prompt-Härtung hält Neueinträge ~0).
@@ -63,7 +66,7 @@ akzeptiert).
 Bei Sev-3 fing die Verify überwiegend Halluzinationen in der *selbst gebauten*
 TL. Bei Sev-2 (älterer Bestand, oft AIAAIC-Import) deckt sie zusätzlich **Fehler
 im vorbestehenden Incident-Datensatz** auf — Land, Urheberschaft, Fall-Identität,
-überzogene Behauptungen. **Pro Welle ~1 needs-human** (W47/48/50/53/54). 7 Fälle
+überzogene Behauptungen. **Pro Welle ~1 needs-human** (W47/48/50/53/54/55). 8 Fälle
 waren nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
 
 1. **`china-...-ultraman-urheberrecht`** (W47) — vermischt **zwei reale Fälle**:
@@ -106,11 +109,22 @@ waren nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
    event, DE+EN), unbelegt. Reale Namen Attaullah Malik / Sana Sherwani / Ammar Malik
    (Staten Island) sind süd-/zentralasiatisch. Ursprung: AIAAIC-Mislabel „global-arab-
    boy". Personenbezogen-sensibel → Ethnie-Zuschreibung entfernen/prüfen, nicht autonom.
+8. **`usa-...-amazon-lieferdrohne`** (W55) — **Phasen-Verstoß**: doctrine (2022) liegt
+   NACH event (2021-06). Absturz real Juni 2021; der doctrine-Eintrag beschreibt einen
+   Zeitraum NACH dem Ereignis. Kein +1-Tag-Fix — Datum UND Inhalt der doctrine-Phase
+   müssten auf einen echten Vorläufer-Zeitraum umgeschrieben werden. → neu strukturieren.
 
-Diese 7 + `prabowo` (aus #8) sind in STATUS.md unter „Offene Fronten #2" als
+Diese 8 + `prabowo` (aus #8) sind in STATUS.md unter „Offene Fronten #2" als
 needs-human-Sammelblock dokumentiert. **Empfehlung:** Diese Fälle sind echte
 redaktionelle Entscheidungen (Außenwirkung auf aistrikemap.org) — bewusst NICHT
 autonom entschieden. Für die laufenden Wellen via `grep -v` ausschließen.
+
+**Verfeinerung der Handhabung (ab W55/56):** Wenn die **Fall-Identität korrekt** ist
+und nur ein **klar belegtes, abgrenzbares Einzeldetail** falsch (Quellenzuschreibung,
+Attribution), wird inline **korrigiert statt zurückgerollt** — Beispiele: `apple-face-id-
+zwillinge` (Test-Attribution auf Mashable/BI-Faktenlage präzisiert), `chatgpt-waffen-
+kinder` (unbelegte „USA Today"-Provenienz → belegte Harvard-Williams-Lab-Quelle). Nur
+Identitäts-/Land-/Slug-/Fall-Vermischungs-Fehler bleiben echtes needs-human.
 
 ---
 
@@ -129,8 +143,8 @@ autonom entschieden. Für die laufenden Wellen via `grep -v` ausschließen.
 - **Iterative Härtung über den Block:** Ab Welle 49 zusätzlich „title_de auch im
   event-Eintrag nie weglassen" (Lektion W48) + needs-human-Eskalation bei
   Identitäts-/Land-/Slug-Fehlern explizit im Verify-Prompt.
-- **Disk:** 9 Wellen = 108 Agenten → Workflow-Transcripts 22 MB + Task-Outputs
-  1.2 MB = ~23 MB. Grün (Warnschwelle 100 MB).
+- **Disk:** 12 Wellen = 144 Agenten → Workflow-Transcripts 29 MB + Task-Outputs
+  1.2 MB = ~30 MB. Grün (Warnschwelle 100 MB).
 
 ---
 
@@ -149,13 +163,17 @@ b81dee1  Reverse-TL Sev-2 Welle 51: +24 (2068, 84.2 %)
 436b9b0  Reverse-TL Sev-2 Welle 52: +24 (2092, 85.1 %)
 377c228  Reverse-TL Sev-2 Welle 53: +23 (2115, 86.1 %)
 e6b50f7  Reverse-TL Sev-2 Welle 54: +22 (2137, 87.0 %)
+a721009  Übergabe #11 (52-54)
+15d5b14  Reverse-TL Sev-2 Welle 55: +23 (2160, 87.9 %)
+2fdaa58  Reverse-TL Sev-2 Welle 56: +24 (2184, 88.9 %)
+a321016  Reverse-TL Sev-2 Welle 57: +24 (2208, 89.9 %)
 ```
 
 ---
 
 ## Nächster Schritt
 
-- **Sev-2-TL fortsetzen** (271 ohne TL, ~11 Wellen) — Workflow-Methode +
+- **Sev-2-TL fortsetzen** (200 ohne TL, ~9 Wellen) — Workflow-Methode +
   `validate-timelines.js` je Welle, needs-human via `grep -v` ausschließen.
-- ODER **7 needs-human + prabowo klären** (redaktionelle Entscheidungen, ~1/Welle).
+- ODER **8 needs-human + prabowo klären** (redaktionelle Entscheidungen, ~1/Welle).
 - ODER korpusweiter Smart-Char-Sweep (789 Files), Career-Daten, AIAAIC Batch D.

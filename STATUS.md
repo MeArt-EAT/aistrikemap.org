@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2457 Incidents** · **2137 mit Reverse-TL (87.0 %)** · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2951** Mappings) · Lite-Bundle 7.8 MB (1.6 MB gzip) |
+| 📊 **Bestand** | **2457 Incidents** · **2208 mit Reverse-TL (89.9 %)** · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2951** Mappings) · Lite-Bundle 7.9 MB (1.6 MB gzip) |
 | 🔢 **Übergabe-Nr** | **#11** (2026-06-26) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **(2026-06-26, Übergabe #11)** **Sev-2-Offensive: 9 TL-Wellen 46–54** +209 Incidents (TL 78.5→**87.0 %**, 80%+85%-Marke überschritten) via gleicher Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch durchgehend (6/6+6/6 je Welle). **Neues Tooling: `scripts/validate-timelines.js`** — wiederverwendbarer Pre-Commit-Validator (Chronologie inkl. monat-vs-tag, @id, genau-1-event, title==title_de, affectedRights-Parallelität, Smart-Char-Scan rekursiv, Umlaut-Gap-Scan). **Befund: Sev-2 hat mehr vorbestehende Daten-Qualitätsmängel als Sev-3** — die Verify deckte **7 needs-human**-Fälle auf (~1/Welle, s.u., TL zurückgerollt). Audit durchgehend 0. |
-| ➡️ **Nächster Schritt** | **Sev-2-TL fortsetzen** (271 ohne TL, ~11 Wellen) via Workflow-Methode + `validate-timelines.js` je Welle · ODER **7 needs-human-Fälle klären** (ultraman / devternity / perspective-api / grok / hmrc-quantexa / bradford / iphone-face-id, s.u.) · ODER **korpusweiter Smart-Char-Sweep** (789 Files) · ODER `indonesien-prabowo` · ODER Career-Daten · ODER AIAAIC Batch D |
+| ✅ **Zuletzt fertig** | **(2026-06-26, Übergabe #11)** **Sev-2-Offensive: 12 TL-Wellen 46–57** +280 Incidents (TL 78.5→**89.9 %**, 80%+85%-Marke überschritten, knapp 90%) via gleicher Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch durchgehend (6/6+6/6 je Welle). **Neues Tooling: `scripts/validate-timelines.js`** — wiederverwendbarer Pre-Commit-Validator (Chronologie inkl. monat-vs-tag, @id, genau-1-event, title==title_de, affectedRights-Parallelität, Smart-Char-Scan rekursiv, Umlaut-Gap-Scan). **Befund: Sev-2 hat mehr vorbestehende Daten-Qualitätsmängel als Sev-3** — die Verify deckte **8 needs-human**-Fälle auf (~1/Welle, s.u., TL zurückgerollt); klar belegte Einzeldetail-Fehler bei korrekter Fall-Identität werden inline korrigiert. Audit durchgehend 0. |
+| ➡️ **Nächster Schritt** | **Sev-2-TL fortsetzen** (200 ohne TL, ~9 Wellen) via Workflow-Methode + `validate-timelines.js` je Welle · ODER **8 needs-human-Fälle klären** (ultraman / devternity / perspective-api / grok / hmrc-quantexa / bradford / iphone-face-id / amazon-lieferdrohne, s.u.) · ODER **korpusweiter Smart-Char-Sweep** (789 Files) · ODER `indonesien-prabowo` · ODER Career-Daten · ODER AIAAIC Batch D |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -27,9 +27,9 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 1. **AIAAIC Batch D** (pre-2015, ~300 Stubs) — letzter AIAAIC-Block, niedrige
    Prio (frühe Cases haben weniger Aktualität). Bringt aber historische Tiefe.
    Workflow: siehe Memory `aiaaic-import-workflow` + Übergabe #5.
-2. **Reverse-Timelines** — **2137 von 2457 (87.0 %)** haben die TL (Kern-Feature).
+2. **Reverse-Timelines** — **2208 von 2457 (89.9 %)** haben die TL (Kern-Feature).
    **Sev-5 + Sev-4 + Sev-3 alle ~100 % geschlossen** ✓. **Sev-2-Offensive läuft:
-   Wellen 46–54 fertig (+209), 271 ohne TL** (~11 Wellen), Sev-1: 48 ohne TL.
+   Wellen 46–57 fertig (+280), 200 ohne TL** (~9 Wellen), Sev-1: 48 ohne TL.
    Methode unverändert (Workflow, 24 Cases/Welle, Gen→adversariale Verify).
    **NEU: `scripts/validate-timelines.js`** als Pre-Commit-Validator je Welle
    (kapselt alle Checks; fing Datumsbereich + fehlendes title_de + length_ratio).
@@ -84,6 +84,9 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
    - `usa-...-iphone-x-face-id` (Welle 54): erfundene Ethnie „libanesisch-amerikanisch"
      über reale Privatpersonen (Malik/Sherwani süd-/zentralasiatisch; AIAAIC-Mislabel
      „global-arab-boy"). Personenbezogen → Ethnie-Zuschreibung entfernen/prüfen.
+   - `usa-...-amazon-lieferdrohne` (Welle 55): Phasen-Verstoß — doctrine (2022) nach
+     event (2021-06). Absturz real Juni 2021; doctrine-Eintrag beschreibt Zeitraum
+     NACH dem Ereignis → doctrine-Phase auf echten Vorläufer-Zeitraum umstrukturieren.
    ⚠️ **Korpusweiter Smart-Char-Befund (2026-06-25):** **789 von 2457 Files** haben
    Em-Dash (~5090×), En-Dash (~562×) oder Smart-Quotes (~48×) in Display-Feldern
    (v. a. alte Files; die neuen TL-Texte nutzen ` - `). Die 48 Smart-Quotes sind
@@ -132,7 +135,7 @@ Briefings: `data/incident-candidates/_enrichment-briefing.md` (Abschnitt 1b
 Datums-Verifikation), `_timeline-briefing.md`.
 
 ## 📜 Übergabe-Historie (neueste zuerst)
-- **#11** 2026-06-26 → `docs/planung/übergabe-2026-06-26-sev2-offensive.md` — **Sev-2-Offensive: 9 TL-Wellen 46–54** (+209, TL 78.5→**87.0 %**, 80%+85%-Marke überschritten), neues Tooling `scripts/validate-timelines.js` (Pre-Commit-Validator), Befund „Sev-2 hat mehr vorbestehende Daten-Qualitätsmängel als Sev-3" → 7 needs-human-Fälle (ultraman/devternity/perspective-api/grok/hmrc-quantexa/bradford/iphone-face-id, ~1/Welle) dokumentiert + TL zurückgerollt, WebSearch durchgehend, Audit 0, 12 Commits gepusht
+- **#11** 2026-06-26 → `docs/planung/übergabe-2026-06-26-sev2-offensive.md` — **Sev-2-Offensive: 12 TL-Wellen 46–57** (+280, TL 78.5→**89.9 %**, 80%+85%-Marke überschritten, knapp 90%), neues Tooling `scripts/validate-timelines.js` (Pre-Commit-Validator), Befund „Sev-2 hat mehr vorbestehende Daten-Qualitätsmängel als Sev-3" → 8 needs-human-Fälle (ultraman/devternity/perspective-api/grok/hmrc-quantexa/bradford/iphone-face-id/amazon-lieferdrohne, ~1/Welle) + TL zurückgerollt; klar belegte Einzeldetail-Fehler bei korrekter Identität inline korrigiert, WebSearch durchgehend, Audit 0, ~17 Commits gepusht
 - **#10** 2026-06-25 → `docs/planung/übergabe-2026-06-25-sev3-abschluss-wellen-34-45.md` — **12 Sev-3-TL-Wellen 34–45** (+288, TL 66.7→**78.5 %**), **Sev-3-Block abgeschlossen** (Sev-5/4/3 alle ~100 %), Prompt-Härtung drückte Translit-Nacharbeit auf ~0, Validator um @id/Chronologie/Em-Dash erweitert, Map 2903→2951, User-Faktenkorrektur New-Orleans-6:1, korpusweiter Smart-Char-Befund (789 Files), 12+ Commits gepusht
 - **#9** 2026-06-21 → `docs/planung/übergabe-2026-06-21-sev3-wellen-24-33-und-websearch-vorfall.md` — **10 weitere Sev-3-TL-Wellen 24–33** (+240, TL 57.0→**66.7 %**, kumuliert 17–33 = +407), WebSearch-Ausfall-Vorfall (Welle 26 verworfen + frisch wiederholt), laufende Translit-Map-Pflege (2870→2903), 19 Commits gepusht
 - **#8** 2026-06-21 → `docs/planung/übergabe-2026-06-21-sev3-wellen-17-23-und-translit-luecke.md` — **7 Sev-3-TL-Wellen 17–23** (+167, TL 50.2→**57.0 %**) via Workflow-Tool + adversariale Verify (echte Faktenfehler gefangen), korpusweiter Translit-Map-Lückenschluss (+96, Map 2870), 1 Fehlzuordnung (prabowo) zurückgehalten
