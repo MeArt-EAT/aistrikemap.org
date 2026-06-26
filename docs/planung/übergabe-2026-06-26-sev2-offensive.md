@@ -1,20 +1,21 @@
-# Übergabe #11 — Sev-2-Block ABGESCHLOSSEN (Wellen 46–65)
+# Übergabe #11 — Reverse-TL-Feature praktisch KOMPLETT (Wellen 46–67)
 
 **Datum:** 2026-06-26
 **Vorgänger:** #10 (2026-06-25, Sev-3-Block abgeschlossen, TL 78.5 %)
-**Bestand danach:** 2457 Incidents · **2400 mit Reverse-TL (97.7 %)** · 0 Audit-Findings
+**Bestand danach:** 2457 Incidents · **2447 mit Reverse-TL (99.6 %)** · 0 Audit-Findings
 
 ---
 
 ## Zusammenfassung
 
-Nach Abschluss des Sev-3-Blocks (#10) wurde die **Sev-2-Ebene** komplett
-abgearbeitet — gleiche erprobte Workflow-Methode (24 Cases/Welle, Stufe 1
-WebSearch-grounded Generieren → Stufe 2 unabhängige adversariale Verify).
-**20 Wellen (46–65), +472 Reverse-Timelines, TL-Quote 78.5 → 97.7 %** (80%-Marke
-in Welle 47, 85%- in 52, 90%- in 58). **Sev-2 ohne TL: 480 → 8** (alle 8 sind
-needs-human-Fälle) — **der Sev-2-Block ist damit abgeschlossen; Sev-5/4/3/2 alle
-~100 %.** Verbleibend gesamt ohne TL: 8 Sev-2-needs-human + 48 Sev-1 + prabowo.
+Nach Abschluss des Sev-3-Blocks (#10) wurden in einer Session die **Sev-2- und
+Sev-1-Ebenen** komplett abgearbeitet — gleiche erprobte Workflow-Methode (24
+Cases/Welle, Stufe 1 WebSearch-grounded Generieren → Stufe 2 unabhängige
+adversariale Verify). **22 Wellen (46–67), +519 Reverse-Timelines, TL-Quote
+78.5 → 99.6 %**: Sev-2 (Wellen 46–65, +472; 80/85/90/95%-Marken) + Sev-1
+(Wellen 66–67, +47). **Sev-5/4/3/2/1 sind damit alle abgearbeitet — das
+Reverse-TL-Feature ist praktisch komplett.** Verbleibend ohne TL: nur **10
+needs-human-Fälle** (9 + prabowo, redaktionelle Entscheidungen).
 
 | Welle | Cases | pass / fix / needs-human | Δ TL | TL gesamt | Besonderheit |
 |---|---|---|---|---|---|
@@ -37,11 +38,13 @@ needs-human-Fälle) — **der Sev-2-Block ist damit abgeschlossen; Sev-5/4/3/2 a
 | 62 | 24 | 19 / 5 / 0 | +24 | 2328 (94.7 %) | Gender-/Due-process-Begriffe korpusweit harmonisiert (length_ratio) |
 | 63 | 24 | 15 / 9 / 0 | +24 | 2352 (95.7 %) | inline-Fix bert-co2 Einheitenverwechslung (313 short tons -> 284 t), studie-Jahr 2024->2025 |
 | 64 | 24 | 20 / 4 / 0 | +24 | 2376 (96.7 %) | 0 needs-human, 0 Faktenfehler |
-| 65 | 24 | 17 / 7 / 0 | +24 | 2400 (97.7 %) | FINAL - Sev-2 abgeschlossen; 0 needs-human |
+| 65 | 24 | 17 / 7 / 0 | +24 | 2400 (97.7 %) | Sev-2 FINAL abgeschlossen; 0 needs-human |
+| 66 | 24 | 13 / 11 / 0 | +24 | 2424 (98.7 %) | Sev-1 Start (kuriose Fälle); 0 needs-human |
+| 67 | 24 | 16 / 7 / 1 | +23 | 2447 (99.6 %) | Sev-1 FINAL; needs-human tesla-burger-king (Eigenname-Vermischung); inline-Fix fabio NAO->Pepper |
 
-**WebSearch in allen 20 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
-Ausfall). Audit nach jeder Welle 0 Findings (length_ratio-False-Positives bei Gender-,
-LGBTQ- und Due-process-Begriffen → auf Korpus-Standards „Geschlechtergleichheit"/
+**WebSearch in allen 22 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
+Ausfall, 0 Stalls). Audit nach jeder Welle 0 Findings (length_ratio-False-Positives bei
+Gender-, LGBTQ- und Due-process-Begriffen → auf Korpus-Standards „Geschlechtergleichheit"/
 „LGBTQ-Rechte"/„Faires Verfahren" harmonisiert). Translit-Map unverändert 2951
 (Welle 60 ein Ausreißer mit 182 Resten, alle gefixt + 4 Map-Lücken inline).
 
@@ -77,7 +80,7 @@ akzeptiert).
 Bei Sev-3 fing die Verify überwiegend Halluzinationen in der *selbst gebauten*
 TL. Bei Sev-2 (älterer Bestand, oft AIAAIC-Import) deckt sie zusätzlich **Fehler
 im vorbestehenden Incident-Datensatz** auf — Land, Urheberschaft, Fall-Identität,
-überzogene Behauptungen. **Pro Welle ~1 needs-human** (W47/48/50/53/54/55). 8 Fälle
+überzogene Behauptungen. **Pro Welle ~1 needs-human** (W47/48/50/53/54/55/67). 9 Fälle
 waren nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
 
 1. **`china-...-ultraman-urheberrecht`** (W47) — vermischt **zwei reale Fälle**:
@@ -124,8 +127,12 @@ waren nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
    NACH event (2021-06). Absturz real Juni 2021; der doctrine-Eintrag beschreibt einen
    Zeitraum NACH dem Ereignis. Kein +1-Tag-Fix — Datum UND Inhalt der doctrine-Phase
    müssten auf einen echten Vorläufer-Zeitraum umgeschrieben werden. → neu strukturieren.
+9. **`usa-...-tesla-burger-king`** (W67, Sev-1) — **falsche Urheberschaft**: „Andy
+   Weedman" gehört zum separaten Tesla-Billboard-Fall (April 2021), nicht zum Burger-
+   King-Logo-Video (Juni 2020, anonymer Tesla-Besitzer). Burger-King-Kern korrekt.
+   → Eigennamen entfernen/korrigieren, dann TL baubar.
 
-Diese 8 + `prabowo` (aus #8) sind in STATUS.md unter „Offene Fronten #2" als
+Diese 9 + `prabowo` (aus #8) sind in STATUS.md unter „Offene Fronten #2" als
 needs-human-Sammelblock dokumentiert. **Empfehlung:** Diese Fälle sind echte
 redaktionelle Entscheidungen (Außenwirkung auf aistrikemap.org) — bewusst NICHT
 autonom entschieden. Für die laufenden Wellen via `grep -v` ausschließen.
@@ -164,8 +171,8 @@ Identitäts-/Land-/Slug-/Fall-Vermischungs-Fehler bleiben echtes needs-human.
 - **Korpus-Harmonisierungen (length_ratio-False-Positives):** Gender-Begriff →
   „Geschlechtergleichheit", LGBTQ → „LGBTQ-Rechte", Due process → „Faires Verfahren".
   Dies sind wiederkehrende Gen-Agenten-Varianten; pro Auftreten korpusweit vereinheitlicht.
-- **Disk:** 20 Wellen = 240 Agenten → Workflow-Transcripts ~45 MB + Task-Outputs
-  ~1.3 MB = ~46 MB. Grün (Warnschwelle 100 MB).
+- **Disk:** 22 Wellen = 264 Agenten → Workflow-Transcripts ~52 MB + Task-Outputs
+  ~1.3 MB = ~53 MB. Grün (Warnschwelle 100 MB).
 
 ---
 
@@ -200,16 +207,20 @@ b5d12b3  Reverse-TL Sev-2 Welle 62: +24 (2328, 94.7 %)
 751d78f  Reverse-TL Sev-2 Welle 63: +24 (2352, 95.7 %)
 8064399  Reverse-TL Sev-2 Welle 64: +24 (2376, 96.7 %)
 92d8230  Reverse-TL Sev-2 Welle 65 (FINAL): +24 (2400, 97.7 %) - Sev-2 abgeschlossen
+752da8e  Übergabe #11 FINAL (Sev-2-Block)
+fe953ea  Reverse-TL Sev-1 Welle 66: +24 (2424, 98.7 %)
+0790f12  Reverse-TL Sev-1 Welle 67 (FINAL): +23 (2447, 99.6 %) - Sev-1 abgeschlossen
 ```
 
 ---
 
 ## Nächster Schritt
 
-Sev-2 ist abgeschlossen (Sev-5/4/3/2 alle ~100 %). Optionen:
-- **Sev-1** (48 ohne TL, ~2 Wellen) → TL-Quote dann ~99,6 % (nur 8+1 needs-human offen).
-  Gleiche Workflow-Methode + `validate-timelines.js`.
-- ODER **8 Sev-2-needs-human + prabowo klären** (redaktionelle Entscheidungen):
-  ultraman / devternity / perspective-api / grok / hmrc-quantexa / bradford /
-  iphone-face-id / amazon-lieferdrohne.
-- ODER korpusweiter Smart-Char-Sweep (789 Files), Career-Daten, AIAAIC Batch D.
+Das Reverse-TL-Feature ist praktisch komplett (99.6 %, Sev-5/4/3/2/1 alle abgearbeitet).
+Verbleibend nur 10 ohne TL. Optionen:
+- **9 needs-human + prabowo klären** → ~100 %: ultraman / devternity / perspective-api /
+  grok / hmrc-quantexa / bradford / iphone-face-id / amazon-lieferdrohne / tesla-burger-king.
+  Pro Fall: realen Sachverhalt festlegen (Land/Identität/Quelle), korrekt neu schreiben + TL.
+- ODER **korpusweiter Smart-Char-Sweep** (789 Files mit Em-Dash/Smart-Quotes in alten
+  Display-Feldern — neue TL-Texte sind sauber, aber Altbestand inkonsistent).
+- ODER Career-Daten via Dataset-Download, AIAAIC Batch D, `needs-review`-Cases sichten.
