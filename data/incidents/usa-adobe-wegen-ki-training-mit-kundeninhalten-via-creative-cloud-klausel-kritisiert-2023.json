@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Geistiges Eigentum",
+    "Recht am eigenen Werk",
+    "Verbraucherschutz",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Geistiges Eigentum",
+    "Recht am eigenen Werk",
+    "Verbraucherschutz",
+    "Recht auf informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Intellectual property",
+    "Right to one's own work",
+    "Consumer protection",
+    "Right to informational self-determination"
+  ],
   "asm:actors": [
     {
       "name": "Adobe",
@@ -46,7 +64,52 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2013",
+      "phase": "infrastructure",
+      "title": "Creative Cloud verlagert Nutzerwerke in Adobes Cloud-Speicher",
+      "description": "Mit dem Wechsel zum Abomodell Creative Cloud ab 2013 wanderten die Arbeitsdateien vieler Kreativer in Adobes Cloud-Speicher. Adobe integrierte zunehmend Funktionen des maschinellen Lernens (etwa für Freistellung und Maskierung) in seine Programme, die Nutzerinhalte automatisiert analysieren - die technische Grundlage für die später umstrittene Inhaltsanalyse.",
+      "title_de": "Creative Cloud verlagert Nutzerwerke in Adobes Cloud-Speicher",
+      "description_de": "Mit dem Wechsel zum Abomodell Creative Cloud ab 2013 wanderten die Arbeitsdateien vieler Kreativer in Adobes Cloud-Speicher. Adobe integrierte zunehmend Funktionen des maschinellen Lernens (etwa für Freistellung und Maskierung) in seine Programme, die Nutzerinhalte automatisiert analysieren - die technische Grundlage für die später umstrittene Inhaltsanalyse.",
+      "title_en": "Creative Cloud moves users' work into Adobe's cloud storage",
+      "description_en": "With the shift to the Creative Cloud subscription model from 2013, many creatives' working files moved into Adobe's cloud storage. Adobe increasingly built machine-learning features (such as background removal and masking) into its apps that automatically analyse user content - the technical basis for the later contested content analysis.",
+      "sources": []
+    },
+    {
+      "date": "2022",
+      "phase": "doctrine",
+      "title": "Nutzungsbedingungen führen eine 'Content Analysis'-Klausel ein",
+      "description": "Adobe nahm in seine Nutzungsbedingungen (Abschnitt 2.2) eine 'Content Analysis'-Klausel auf, die es dem Unternehmen erlaubte, hochgeladene Inhalte mit automatisierten und manuellen Methoden, einschließlich maschinellem Lernen, zu analysieren, um Produkte zu verbessern. Die Teilnahme war als Standard voreingestellt, Nutzer mussten aktiv widersprechen.",
+      "title_de": "Nutzungsbedingungen führen eine 'Content Analysis'-Klausel ein",
+      "description_de": "Adobe nahm in seine Nutzungsbedingungen (Abschnitt 2.2) eine 'Content Analysis'-Klausel auf, die es dem Unternehmen erlaubte, hochgeladene Inhalte mit automatisierten und manuellen Methoden, einschließlich maschinellem Lernen, zu analysieren, um Produkte zu verbessern. Die Teilnahme war als Standard voreingestellt, Nutzer mussten aktiv widersprechen.",
+      "title_en": "Terms of use introduce a 'Content Analysis' clause",
+      "description_en": "Adobe added a 'Content Analysis' clause to its terms of use (Section 2.2) that let the company analyse uploaded content via automated and manual methods, including machine learning, to improve its products. Participation was on by default; users had to actively opt out.",
+      "sources": ["https://www.computerworld.com/article/2145709/adobe-to-adapt-terms-of-service-on-genai-training-after-customer-backlash.html"]
+    },
+    {
+      "date": "2023-01",
+      "phase": "event",
+      "title": "Nutzer entdecken die Standard-Einbindung ihrer Inhalte ins ML-Training",
+      "description": "Anfang Januar 2023 entdeckten Nutzer, dass Adobe in seinen Nutzungsbedingungen eine 'Content Analysis'-Klausel führte, die hochgeladene Creative-Cloud-Inhalte standardmäßig zum Training maschineller Lernmodelle heranziehen ließ, sofern man nicht aktiv widersprach. Die vage Formulierung wurde breit so gelesen, dass auch sensible Projekte betroffen sein könnten.",
+      "title_de": "Nutzer entdecken die Standard-Einbindung ihrer Inhalte ins ML-Training",
+      "description_de": "Anfang Januar 2023 entdeckten Nutzer, dass Adobe in seinen Nutzungsbedingungen eine 'Content Analysis'-Klausel führte, die hochgeladene Creative-Cloud-Inhalte standardmäßig zum Training maschineller Lernmodelle heranziehen ließ, sofern man nicht aktiv widersprach. Die vage Formulierung wurde breit so gelesen, dass auch sensible Projekte betroffen sein könnten.",
+      "title_en": "Users discover their content is opted in to ML training by default",
+      "description_en": "In early January 2023 users discovered that Adobe's terms of use included a 'Content Analysis' clause that by default allowed uploaded Creative Cloud content to be used to train machine-learning models unless users opted out. The vague wording was widely read as also covering sensitive projects.",
+      "sources": ["https://www.theregister.com/2023/01/07/adobe_ai_training/"]
+    },
+    {
+      "date": "2023-01",
+      "phase": "consequences",
+      "title": "Nach Empörung präzisiert Adobe die Bedingungen",
+      "description": "Nach viraler Empörung und Boykottdrohungen präzisierte Adobe die Bedingungen und erklärte, kundeneigene Inhalte 'niemals' zum Training generativer KI zu nutzen. Die Inhaltsanalyse diene Funktionen wie Maskierung und Freistellung; Nutzer behielten die Möglichkeit, der Analyse zu widersprechen.",
+      "title_de": "Nach Empörung präzisiert Adobe die Bedingungen",
+      "description_de": "Nach viraler Empörung und Boykottdrohungen präzisierte Adobe die Bedingungen und erklärte, kundeneigene Inhalte 'niemals' zum Training generativer KI zu nutzen. Die Inhaltsanalyse diene Funktionen wie Maskierung und Freistellung; Nutzer behielten die Möglichkeit, der Analyse zu widersprechen.",
+      "title_en": "After outrage, Adobe clarifies the terms",
+      "description_en": "After viral outrage and boycott threats, Adobe clarified the terms and stated it would 'never' use customer-owned content to train generative AI. It said content analysis served features such as masking and background removal, and that users kept the option to opt out of the analysis.",
+      "sources": ["https://www.androidauthority.com/adobe-ai-training-clarification-3450570/"]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2023/01/07/adobe_ai_training/",

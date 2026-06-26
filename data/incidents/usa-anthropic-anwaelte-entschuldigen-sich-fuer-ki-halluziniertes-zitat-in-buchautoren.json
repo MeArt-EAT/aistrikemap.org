@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf ein faires Verfahren",
+    "Integrität der Rechtspflege",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf ein faires Verfahren",
+    "Integrität der Rechtspflege",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Right to a fair trial",
+    "Integrity of the administration of justice",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Anthropic / Latham & Watkins (defense counsel)",
@@ -46,7 +58,73 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-08",
+      "phase": "infrastructure",
+      "title": "Autoren verklagen Anthropic wegen Training mit Büchern",
+      "description": "Im August 2024 reichten die Autoren Andrea Bartz, Charles Graeber und Kirk Wallace Johnson eine Sammelklage gegen Anthropic ein. Sie warfen dem Unternehmen vor, Millionen urheberrechtlich geschützter Bücher - teils aus Schattenbibliotheken wie LibGen - heruntergeladen und zum Training der Claude-Modelle genutzt zu haben. Das Verfahren Bartz et al. v. Anthropic vor dem Northern District of California bildete den prozessualen Rahmen des späteren Vorfalls.",
+      "title_de": "Autoren verklagen Anthropic wegen Training mit Büchern",
+      "description_de": "Im August 2024 reichten die Autoren Andrea Bartz, Charles Graeber und Kirk Wallace Johnson eine Sammelklage gegen Anthropic ein. Sie warfen dem Unternehmen vor, Millionen urheberrechtlich geschützter Bücher - teils aus Schattenbibliotheken wie LibGen - heruntergeladen und zum Training der Claude-Modelle genutzt zu haben. Das Verfahren Bartz et al. v. Anthropic vor dem Northern District of California bildete den prozessualen Rahmen des späteren Vorfalls.",
+      "title_en": "Authors sue Anthropic over training on books",
+      "description_en": "In August 2024 authors Andrea Bartz, Charles Graeber and Kirk Wallace Johnson filed a class action against Anthropic. They alleged the company had downloaded millions of copyrighted books - partly from shadow libraries such as LibGen - and used them to train the Claude models. The case Bartz et al. v. Anthropic before the Northern District of California formed the procedural setting for the later incident.",
+      "sources": [
+        "https://www.npr.org/2025/06/25/nx-s1-5445242/federal-rules-in-ai-companys-favor-in-landmark-copyright-infringement-lawsuit-authors-bartz-graeber-wallace-johnson-anthropic"
+      ]
+    },
+    {
+      "date": "2025-04-30",
+      "phase": "doctrine",
+      "title": "Kanzlei nutzt Claude zur Formatierung eines Zitats",
+      "description": "Anthropics Kanzlei Latham & Watkins setzte das eigene KI-Modell Claude ein, um in einer Sachverständigen-Erklärung der Data Scientist Olivia Chen vom 30. April 2025 ein Quellenzitat zu formatieren. Die Entscheidung, ein generatives Sprachmodell ohne unabhängige Verifikation für juristische Belege zu verwenden, schuf die unmittelbare Voraussetzung für die spätere fehlerhafte Eingabe.",
+      "title_de": "Kanzlei nutzt Claude zur Formatierung eines Zitats",
+      "description_de": "Anthropics Kanzlei Latham & Watkins setzte das eigene KI-Modell Claude ein, um in einer Sachverständigen-Erklärung der Data Scientist Olivia Chen vom 30. April 2025 ein Quellenzitat zu formatieren. Die Entscheidung, ein generatives Sprachmodell ohne unabhängige Verifikation für juristische Belege zu verwenden, schuf die unmittelbare Voraussetzung für die spätere fehlerhafte Eingabe.",
+      "title_en": "Law firm uses Claude to format a citation",
+      "description_en": "Anthropic's law firm Latham & Watkins used the company's own AI model Claude to format a source citation in an April 30, 2025 expert declaration by data scientist Olivia Chen. The decision to use a generative language model for legal references without independent verification created the immediate precondition for the later faulty filing.",
+      "sources": [
+        "https://fortune.com/2025/05/18/anthropic-claude-lawyer-mistake-citation-legal-filing-large-language-model-llm-latham-watkins/"
+      ]
+    },
+    {
+      "date": "2025-05-15",
+      "phase": "event",
+      "title": "USA: Anthropic-Anwälte entschuldigen sich für KI-halluziniertes Zitat in Buchautoren-Copyright-Verfahren",
+      "description": "Im Copyright-Verfahren Bartz et al. v. Anthropic vor dem U.S. District Court Northern District of California reichte Anthropic eine Sachverständigen-Erklärung der Data Scientist Olivia Chen vom 30. April 2025 ein, in der Anthropics Kanzlei Latham & Watkins ein Zitat mit Claude formatieren ließ. Claude erfand dabei Autorennamen und einen falschen Titel für eine ansonsten existierende Quelle aus dem Journal American Statistician. Magistrate Judge Susan van Keulen bezeichnete den Vorfall als 'sehr ernste Angelegenheit'. Anthropics Anwältin Ivana Dukanovic entschuldigte sich.",
+      "title_de": "USA: Anthropic-Anwälte entschuldigen sich für KI-halluziniertes Zitat in Buchautoren-Copyright-Verfahren",
+      "description_de": "Im Copyright-Verfahren Bartz et al. v. Anthropic vor dem U.S. District Court Northern District of California reichte Anthropic eine Sachverständigen-Erklärung der Data Scientist Olivia Chen vom 30. April 2025 ein, in der Anthropics Kanzlei Latham & Watkins ein Zitat mit Claude formatieren ließ. Claude erfand dabei Autorennamen und einen falschen Titel für eine ansonsten existierende Quelle aus dem Journal American Statistician. Magistrate Judge Susan van Keulen bezeichnete den Vorfall als 'sehr ernste Angelegenheit'. Anthropics Anwältin Ivana Dukanovic entschuldigte sich.",
+      "title_en": "USA: Anthropic lawyers apologize for AI-hallucinated citation in authors' copyright case",
+      "description_en": "In the copyright case Bartz et al. v. Anthropic before the U.S. District Court Northern District of California, Anthropic submitted an April 30, 2025 expert declaration from data scientist Olivia Chen in which Anthropic's law firm Latham & Watkins had used Claude to format a citation. Claude hallucinated incorrect author names and a wrong title for an otherwise real source from the journal American Statistician. Magistrate Judge Susan van Keulen called the incident 'a very serious and grave issue.' Anthropic's attorney Ivana Dukanovic apologized.",
+      "sources": [
+        "https://techcrunch.com/2025/05/15/anthropics-lawyer-was-forced-to-apologize-after-claude-hallucinated-a-legal-citation/"
+      ]
+    },
+    {
+      "date": "2025-05-19",
+      "phase": "consequences",
+      "title": "Gericht verwirft das halluzinierte Zitat",
+      "description": "Das Gericht verwarf das halluzinierte Zitat aus Anthropics Verteidigung. Der Vorfall reihte sich in eine wachsende Zahl von Fällen ein, in denen KI-erfundene Belege in Gerichtseingaben auffielen, und verstärkte die Forderung nach menschlicher Verifikation jeder KI-gestützten juristischen Recherche.",
+      "title_de": "Gericht verwirft das halluzinierte Zitat",
+      "description_de": "Das Gericht verwarf das halluzinierte Zitat aus Anthropics Verteidigung. Der Vorfall reihte sich in eine wachsende Zahl von Fällen ein, in denen KI-erfundene Belege in Gerichtseingaben auffielen, und verstärkte die Forderung nach menschlicher Verifikation jeder KI-gestützten juristischen Recherche.",
+      "title_en": "Court tosses the hallucinated citation",
+      "description_en": "The court tossed the hallucinated citation from Anthropic's defense. The incident joined a growing number of cases in which AI-fabricated references surfaced in court filings, reinforcing demands for human verification of any AI-assisted legal research.",
+      "sources": [
+        "https://www.computerworld.com/article/3996221/court-tosses-hallucinated-citation-from-anthropics-defense-in-copyright-infringement-case.html"
+      ]
+    },
+    {
+      "date": "2025-09",
+      "phase": "consequences",
+      "title": "Anthropic einigt sich auf 1,5-Mrd-Dollar-Vergleich",
+      "description": "Im Hauptverfahren einigte sich Anthropic im September 2025 auf einen Vergleich von rund 1,5 Milliarden US-Dollar mit den klagenden Autoren - die bis dahin größte Urheberrechts-Einigung im Zusammenhang mit KI-Training. Rund 500.000 Werke waren erfasst, bei etwa 3.000 US-Dollar pro Buch; Anthropic verpflichtete sich zudem, die unrechtmäßig beschafften Dateien zu vernichten.",
+      "title_de": "Anthropic einigt sich auf 1,5-Mrd-Dollar-Vergleich",
+      "description_de": "Im Hauptverfahren einigte sich Anthropic im September 2025 auf einen Vergleich von rund 1,5 Milliarden US-Dollar mit den klagenden Autoren - die bis dahin größte Urheberrechts-Einigung im Zusammenhang mit KI-Training. Rund 500.000 Werke waren erfasst, bei etwa 3.000 US-Dollar pro Buch; Anthropic verpflichtete sich zudem, die unrechtmäßig beschafften Dateien zu vernichten.",
+      "title_en": "Anthropic agrees to a USD 1.5 billion settlement",
+      "description_en": "In the underlying case, Anthropic agreed in September 2025 to a settlement of roughly USD 1.5 billion with the plaintiff authors - the largest copyright settlement related to AI training to date. About 500,000 works were covered, at roughly USD 3,000 per book; Anthropic also committed to destroy the unlawfully obtained files.",
+      "sources": [
+        "https://www.insidetechlaw.com/blog/2025/09/bartz-v-anthropic-settlement-reached-after-landmark-summary-judgment-and-class-certification"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2025/05/15/anthropics-lawyer-was-forced-to-apologize-after-claude-hallucinated-a-legal-citation/",

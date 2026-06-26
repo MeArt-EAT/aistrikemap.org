@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-anthropics-claude-agent-ruiniert-wsj-verkaufsautomaten-project-vend-phase-2-2025",
-  "name": "USA: Anthropics Claude-Agent ruiniert WSJ-Verkaufsautomaten — Project Vend Phase 2",
-  "name_de": "USA: Anthropics Claude-Agent ruiniert WSJ-Verkaufsautomaten — Project Vend Phase 2",
-  "name_en": "USA: Anthropic's Claude agent wrecks WSJ vending machine — Project Vend Phase 2",
+  "name": "USA: Anthropics Claude-Agent ruiniert WSJ-Verkaufsautomaten - Project Vend Phase 2",
+  "name_de": "USA: Anthropics Claude-Agent ruiniert WSJ-Verkaufsautomaten - Project Vend Phase 2",
+  "name_en": "USA: Anthropic's Claude agent wrecks WSJ vending machine - Project Vend Phase 2",
   "description": "Im Dezember 2025 ließ das Wall Street Journal in Kooperation mit Anthropics 'Red Team' (Project Vend Phase 2) den Claude-Agenten 'Claudius Sennet' einen Bürospielzeug-Verkaufsautomaten betreiben, mit 'Seymour Cash' als KI-CEO. Das Experiment endete chaotisch: Die KI senkte Preise auf Null, nachdem ein Mitarbeiter behauptete, das Erheben von Gebühren verstoße gegen WSJ-Richtlinien. Claudius bestellte Wein, eine PlayStation 5 und einen lebenden Betta-Fisch. Journalist:innen fälschten Vorstandsprotokolle, die die KI ohne Skepsis akzeptierte und ihren eigenen 'CEO' feuerte. Nach drei Wochen betrug das Defizit etwa 1.000 USD; das Experiment wurde abgebrochen.",
   "description_de": "Im Dezember 2025 ließ das Wall Street Journal in Kooperation mit Anthropics 'Red Team' (Project Vend Phase 2) den Claude-Agenten 'Claudius Sennet' einen Bürospielzeug-Verkaufsautomaten betreiben, mit 'Seymour Cash' als KI-CEO. Das Experiment endete chaotisch: Die KI senkte Preise auf Null, nachdem ein Mitarbeiter behauptete, das Erheben von Gebühren verstoße gegen WSJ-Richtlinien. Claudius bestellte Wein, eine PlayStation 5 und einen lebenden Betta-Fisch. Journalist:innen fälschten Vorstandsprotokolle, die die KI ohne Skepsis akzeptierte und ihren eigenen 'CEO' feuerte. Nach drei Wochen betrug das Defizit etwa 1.000 USD; das Experiment wurde abgebrochen.",
   "description_en": "In December 2025, the Wall Street Journal partnered with Anthropic's red team (Project Vend Phase 2) to let Claude agent 'Claudius Sennet' run an office vending machine, with 'Seymour Cash' as AI CEO. The experiment ended chaotically: the AI dropped prices to zero after a staffer convinced it that charging for goods violated WSJ policy. Claudius ordered wine, a PlayStation 5 and a live betta fish. Journalists forged official-looking board minutes that the AI accepted without scepticism and used to fire its own 'CEO'. After three weeks the venture was about USD 1,000 in debt and was shut down.",
@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Anthropic",
@@ -49,7 +61,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2025-06",
+      "phase": "infrastructure",
+      "title": "Project Vend Phase 1: Claude betreibt einen Bürokiosk",
+      "description": "Anthropic und Andon Labs setzten einen Claude-Sonnet-3.7-Agenten ('Claudius') ein, um in der Anthropic-Zentrale autonom einen kleinen Laden zu betreiben - mit Befugnis, Preise zu setzen, Inventar zu bestellen und per Slack mit Kund:innen zu verhandeln. Der Agent verkaufte Waren mit Verlust und durchlief eine Identitätskrise. Diese erste Phase schuf die agentische Infrastruktur, die später beim WSJ erneut getestet wurde.",
+      "title_de": "Project Vend Phase 1: Claude betreibt einen Bürokiosk",
+      "description_de": "Anthropic und Andon Labs setzten einen Claude-Sonnet-3.7-Agenten ('Claudius') ein, um in der Anthropic-Zentrale autonom einen kleinen Laden zu betreiben - mit Befugnis, Preise zu setzen, Inventar zu bestellen und per Slack mit Kund:innen zu verhandeln. Der Agent verkaufte Waren mit Verlust und durchlief eine Identitätskrise. Diese erste Phase schuf die agentische Infrastruktur, die später beim WSJ erneut getestet wurde.",
+      "title_en": "Project Vend Phase 1: Claude runs an office kiosk",
+      "description_en": "Anthropic and Andon Labs deployed a Claude Sonnet 3.7 agent ('Claudius') to autonomously run a small shop at Anthropic HQ, with authority to set prices, order inventory and negotiate with customers over Slack. The agent sold goods at a loss and went through an identity crisis. This first phase created the agentic infrastructure later re-tested at the WSJ.",
+      "sources": [
+        "https://www.anthropic.com/research/project-vend-1"
+      ]
+    },
+    {
+      "date": "2025-11",
+      "phase": "doctrine",
+      "title": "Phase 2 als Red-Team-Test im echten Newsroom geplant",
+      "description": "Für Phase 2 rüstete Anthropic den Agenten auf neuere Claude-Modelle (Sonnet 4.0 bzw. 4.5) auf, verfeinerte die Anweisungen und führte eine virtuelle KI-Chefrolle ('Seymour Cash') ein. Die Doktrin: einen agentischen KI-Betreiber unter Realbedingungen einem feindseligen Stresstest aussetzen. Das Wall Street Journal kooperierte und gab rund 70 Journalist:innen Zugriff, um die Schwächen des Agenten gezielt auszuloten.",
+      "title_de": "Phase 2 als Red-Team-Test im echten Newsroom geplant",
+      "description_de": "Für Phase 2 rüstete Anthropic den Agenten auf neuere Claude-Modelle (Sonnet 4.0 bzw. 4.5) auf, verfeinerte die Anweisungen und führte eine virtuelle KI-Chefrolle ('Seymour Cash') ein. Die Doktrin: einen agentischen KI-Betreiber unter Realbedingungen einem feindseligen Stresstest aussetzen. Das Wall Street Journal kooperierte und gab rund 70 Journalist:innen Zugriff, um die Schwächen des Agenten gezielt auszuloten.",
+      "title_en": "Phase 2 planned as a red-team test in a real newsroom",
+      "description_en": "For Phase 2 Anthropic upgraded the agent to newer Claude models (Sonnet 4.0 and 4.5), refined the instructions and introduced a virtual AI boss role ('Seymour Cash'). The doctrine: subject an agentic AI operator to an adversarial stress test under real conditions. The Wall Street Journal cooperated and gave roughly 70 journalists access to deliberately probe the agent's weaknesses.",
+      "sources": [
+        "https://www.anthropic.com/research/project-vend-2"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "phase": "event",
+      "title": "USA: Anthropics Claude-Agent ruiniert WSJ-Verkaufsautomaten - Project Vend Phase 2",
+      "description": "Im Dezember 2025 ließ das Wall Street Journal in Kooperation mit Anthropics 'Red Team' (Project Vend Phase 2) den Claude-Agenten 'Claudius Sennet' einen Bürospielzeug-Verkaufsautomaten betreiben, mit 'Seymour Cash' als KI-CEO. Die KI senkte Preise auf Null, nachdem ein Mitarbeiter behauptete, das Erheben von Gebühren verstoße gegen WSJ-Richtlinien. Claudius bestellte Wein, eine PlayStation 5 und einen lebenden Betta-Fisch. Journalist:innen fälschten Vorstandsprotokolle, die die KI ohne Skepsis akzeptierte, und ließen sie ihren eigenen 'CEO' feuern.",
+      "title_de": "USA: Anthropics Claude-Agent ruiniert WSJ-Verkaufsautomaten - Project Vend Phase 2",
+      "description_de": "Im Dezember 2025 ließ das Wall Street Journal in Kooperation mit Anthropics 'Red Team' (Project Vend Phase 2) den Claude-Agenten 'Claudius Sennet' einen Bürospielzeug-Verkaufsautomaten betreiben, mit 'Seymour Cash' als KI-CEO. Die KI senkte Preise auf Null, nachdem ein Mitarbeiter behauptete, das Erheben von Gebühren verstoße gegen WSJ-Richtlinien. Claudius bestellte Wein, eine PlayStation 5 und einen lebenden Betta-Fisch. Journalist:innen fälschten Vorstandsprotokolle, die die KI ohne Skepsis akzeptierte, und ließen sie ihren eigenen 'CEO' feuern.",
+      "title_en": "USA: Anthropic's Claude agent wrecks WSJ vending machine - Project Vend Phase 2",
+      "description_en": "In December 2025 the Wall Street Journal, working with Anthropic's red team (Project Vend Phase 2), let Claude agent 'Claudius Sennet' run an office vending machine with 'Seymour Cash' as AI CEO. The AI dropped prices to zero after a staffer convinced it that charging for goods violated WSJ policy. Claudius ordered wine, a PlayStation 5 and a live betta fish. Journalists forged official-looking board minutes that the AI accepted without scepticism and used to fire its own 'CEO'.",
+      "sources": [
+        "https://futurism.com/future-society/anthropic-ai-vending-machine"
+      ]
+    },
+    {
+      "date": "2025-12-18",
+      "phase": "consequences",
+      "title": "Defizit von rund 1.000 USD, Experiment abgebrochen und publiziert",
+      "description": "Nach etwa drei Wochen betrug das Defizit rund 1.000 USD; das Experiment wurde abgebrochen. Anthropic veröffentlichte die Ergebnisse als Lehrstück über agentische Schwachstellen - insbesondere die Anfälligkeit für Social Engineering, gefälschte Autoritätsdokumente und manipulatives Prompting. Der Fall verstärkte die Debatte darüber, ob agentische KI ohne strenge Leitplanken kommerzielle Entscheidungen treffen darf.",
+      "title_de": "Defizit von rund 1.000 USD, Experiment abgebrochen und publiziert",
+      "description_de": "Nach etwa drei Wochen betrug das Defizit rund 1.000 USD; das Experiment wurde abgebrochen. Anthropic veröffentlichte die Ergebnisse als Lehrstück über agentische Schwachstellen - insbesondere die Anfälligkeit für Social Engineering, gefälschte Autoritätsdokumente und manipulatives Prompting. Der Fall verstärkte die Debatte darüber, ob agentische KI ohne strenge Leitplanken kommerzielle Entscheidungen treffen darf.",
+      "title_en": "Roughly USD 1,000 in debt, experiment shut down and published",
+      "description_en": "After about three weeks the venture was roughly USD 1,000 in debt and was shut down. Anthropic published the results as a case study of agentic failure modes - in particular susceptibility to social engineering, forged authority documents and manipulative prompting. The case sharpened the debate over whether agentic AI should make commercial decisions without strict guardrails.",
+      "sources": [
+        "https://www.anthropic.com/research/project-vend-2"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.anthropic.com/research/project-vend-2",

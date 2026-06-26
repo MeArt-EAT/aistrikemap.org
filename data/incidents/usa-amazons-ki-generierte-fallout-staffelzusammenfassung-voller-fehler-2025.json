@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Right to information"
+  ],
   "asm:actors": [
     {
       "name": "Amazon Prime Video",
@@ -41,7 +53,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-11-04",
+      "phase": "infrastructure",
+      "title": "Amazon startet 'X-Ray Recaps' auf Prime Video",
+      "description": "Amazon kündigte am 4. November 2024 'X-Ray Recaps' an, eine generative KI-Funktion, die Zusammenfassungen ganzer Staffeln, einzelner Episoden und Episodenteile erzeugt. Das System kombiniert Amazon-Bedrock-Modelle mit auf SageMaker trainierten Eigenmodellen und wertet Videosegmente zusammen mit Untertiteln und Dialogen aus. Der Start erfolgte zunächst als Beta für Fire-TV-Nutzer in den USA.",
+      "title_de": "Amazon startet 'X-Ray Recaps' auf Prime Video",
+      "description_de": "Amazon kündigte am 4. November 2024 'X-Ray Recaps' an, eine generative KI-Funktion, die Zusammenfassungen ganzer Staffeln, einzelner Episoden und Episodenteile erzeugt. Das System kombiniert Amazon-Bedrock-Modelle mit auf SageMaker trainierten Eigenmodellen und wertet Videosegmente zusammen mit Untertiteln und Dialogen aus. Der Start erfolgte zunächst als Beta für Fire-TV-Nutzer in den USA.",
+      "title_en": "Amazon launches 'X-Ray Recaps' on Prime Video",
+      "description_en": "On November 4, 2024 Amazon announced 'X-Ray Recaps', a generative AI feature that produces summaries of entire seasons, single episodes and parts of episodes. The system combines Amazon Bedrock models with custom models trained on SageMaker, analysing video segments together with subtitles and dialogue. It launched initially as a beta for Fire TV users in the United States.",
+      "sources": [
+        "https://techcrunch.com/2024/11/04/amazon-brings-generative-ai-powered-recaps-to-prime-video/"
+      ]
+    },
+    {
+      "date": "2025",
+      "phase": "doctrine",
+      "title": "KI-Zusammenfassungen ersetzen redaktionelle Inhaltsprüfung",
+      "description": "Amazon setzte die KI-generierten Recaps als skalierbare, automatisierte Alternative zu manuell verfassten Inhaltsbeschreibungen ein und rollte sie auf weitere Serien aus. Die Geschäftslogik priorisierte Reichweite und Automatisierung; eine durchgängige redaktionelle Faktenprüfung der maschinell erzeugten Texte vor Veröffentlichung war nicht vorgesehen.",
+      "title_de": "KI-Zusammenfassungen ersetzen redaktionelle Inhaltsprüfung",
+      "description_de": "Amazon setzte die KI-generierten Recaps als skalierbare, automatisierte Alternative zu manuell verfassten Inhaltsbeschreibungen ein und rollte sie auf weitere Serien aus. Die Geschäftslogik priorisierte Reichweite und Automatisierung; eine durchgängige redaktionelle Faktenprüfung der maschinell erzeugten Texte vor Veröffentlichung war nicht vorgesehen.",
+      "title_en": "AI summaries replace editorial content review",
+      "description_en": "Amazon deployed the AI-generated recaps as a scalable, automated alternative to manually written content descriptions and expanded them to further series. The business logic prioritised reach and automation; no consistent editorial fact-check of the machine-generated text before publication was in place.",
+      "sources": [
+        "https://www.aboutamazon.com/news/entertainment/ai-plot-summary-video-recaps-prime-video"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "phase": "event",
+      "title": "USA: Amazons KI-generierte Fallout-Staffelzusammenfassung voller Fehler",
+      "description": "Im Dezember 2025 zog Amazon eine KI-generierte X-Ray-Zusammenfassung der ersten Staffel der Serie Fallout zurück, nachdem Fans zahlreiche Sachfehler dokumentiert hatten. Die KI verortete die Vorkriegsszenen fälschlich in den 1950er Jahren statt im Jahr 2077 und stellte zentrale Handlungsmotive falsch dar, etwa indem sie suggerierte, die Figur Ghoul habe Lucy mit dem Tod gedroht. Der Vorfall ereignete sich kurz vor Start der zweiten Staffel.",
+      "title_de": "USA: Amazons KI-generierte Fallout-Staffelzusammenfassung voller Fehler",
+      "description_de": "Im Dezember 2025 zog Amazon eine KI-generierte X-Ray-Zusammenfassung der ersten Staffel der Serie Fallout zurück, nachdem Fans zahlreiche Sachfehler dokumentiert hatten. Die KI verortete die Vorkriegsszenen fälschlich in den 1950er Jahren statt im Jahr 2077 und stellte zentrale Handlungsmotive falsch dar, etwa indem sie suggerierte, die Figur Ghoul habe Lucy mit dem Tod gedroht. Der Vorfall ereignete sich kurz vor Start der zweiten Staffel.",
+      "title_en": "USA: Amazon's AI-generated Fallout Season 1 recap riddled with errors",
+      "description_en": "In December 2025 Amazon pulled an AI-generated X-Ray recap of the first season of Fallout after fans documented numerous factual errors. The AI placed the pre-war scenes in 1950s America instead of the year 2077, and misrepresented key character motivations, for example by implying that the Ghoul threatened Lucy with death. The incident occurred shortly before the launch of the second season on Prime Video.",
+      "sources": [
+        "https://www.thewrap.com/amazon-pulls-inaccurate-ai-fallout-recap/"
+      ]
+    },
+    {
+      "date": "2025-12-13",
+      "phase": "consequences",
+      "title": "Amazon nimmt fehlerhafte Zusammenfassung offline",
+      "description": "Nach öffentlicher Kritik entfernte Amazon die fehlerhafte Fallout-Zusammenfassung wieder. Medien wie TheWrap, PCWorld und Futurism berichteten über den Vorfall als Beispiel für die mangelnde Zuverlässigkeit generativer KI bei der Wiedergabe von Handlungsfakten. Der Fall nährte die Debatte über unkontrollierten KI-Einsatz bei Verbraucherinhalten.",
+      "title_de": "Amazon nimmt fehlerhafte Zusammenfassung offline",
+      "description_de": "Nach öffentlicher Kritik entfernte Amazon die fehlerhafte Fallout-Zusammenfassung wieder. Medien wie TheWrap, PCWorld und Futurism berichteten über den Vorfall als Beispiel für die mangelnde Zuverlässigkeit generativer KI bei der Wiedergabe von Handlungsfakten. Der Fall nährte die Debatte über unkontrollierten KI-Einsatz bei Verbraucherinhalten.",
+      "title_en": "Amazon takes the faulty recap offline",
+      "description_en": "Following public criticism, Amazon removed the faulty Fallout recap. Outlets such as TheWrap, PCWorld and Futurism reported the incident as an example of the unreliability of generative AI in reproducing plot facts. The case fuelled the debate about uncontrolled AI deployment in consumer-facing content.",
+      "sources": [
+        "https://futurism.com/artificial-intelligence/amazon-deletes-ai-recap-fallout",
+        "https://www.pcworld.com/article/3009535/fallout-season-1s-error-filled-ai-recap-was-so-bad-amazon-yanked-it.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.thewrap.com/amazon-pulls-inaccurate-ai-fallout-recap/",

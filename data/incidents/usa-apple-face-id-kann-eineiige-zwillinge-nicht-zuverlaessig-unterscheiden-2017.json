@@ -8,9 +8,9 @@
   "name": "USA: Apple Face ID kann eineiige Zwillinge nicht zuverlässig unterscheiden",
   "name_de": "USA: Apple Face ID kann eineiige Zwillinge nicht zuverlässig unterscheiden",
   "name_en": "USA: Apple Face ID cannot reliably distinguish identical twins",
-  "description": "Mit der Markteinführung des iPhone X am 3. November 2017 wurde Apples neues Face-ID-System (biometrische Gesichtsentsperrung) auf den Prüfstand gestellt. Mehrere Mainstream-Tests (Mashable, Business Insider, Wall Street Journal) demonstrierten, dass eineiige Zwillinge das System gegenseitig entsperren konnten. Apple hatte das im Security-White-Paper bereits als bekannte Einschränkung dokumentiert und empfahl Zwillingen, stattdessen einen Passcode zu nutzen. Der Fall machte die Grenzen kommerzieller Gesichtsbiometrie sichtbar.",
-  "description_de": "Mit der Markteinführung des iPhone X am 3. November 2017 wurde Apples neues Face-ID-System (biometrische Gesichtsentsperrung) auf den Prüfstand gestellt. Mehrere Mainstream-Tests (Mashable, Business Insider, Wall Street Journal) demonstrierten, dass eineiige Zwillinge das System gegenseitig entsperren konnten. Apple hatte das im Security-White-Paper bereits als bekannte Einschränkung dokumentiert und empfahl Zwillingen, stattdessen einen Passcode zu nutzen. Der Fall machte die Grenzen kommerzieller Gesichtsbiometrie sichtbar.",
-  "description_en": "With the iPhone X launch on November 3, 2017, Apple's new Face ID biometric system was tested in public. Multiple mainstream tests (Mashable, Business Insider, Wall Street Journal) demonstrated that identical twins could unlock each other's phones. Apple had already documented this as a known limitation in its security white paper and recommended twins use a passcode instead. The case made the limits of commercial face biometrics visible to a wide audience.",
+  "description": "Mit der Markteinführung des iPhone X am 3. November 2017 wurde Apples neues Face-ID-System (biometrische Gesichtsentsperrung) auf den Prüfstand gestellt. In mehreren Mainstream-Tests zeigten sich gemischte Ergebnisse: Bei einigen (u.a. Mashable) entsperrten eineiige Zwillinge das System gegenseitig, andere (Business Insider) unterschieden die Zwillinge korrekt. Apple hatte das im Security-White-Paper bereits als bekannte Einschränkung dokumentiert und empfahl Zwillingen, stattdessen einen Passcode zu nutzen. Der Fall machte die Grenzen kommerzieller Gesichtsbiometrie sichtbar.",
+  "description_de": "Mit der Markteinführung des iPhone X am 3. November 2017 wurde Apples neues Face-ID-System (biometrische Gesichtsentsperrung) auf den Prüfstand gestellt. In mehreren Mainstream-Tests zeigten sich gemischte Ergebnisse: Bei einigen (u.a. Mashable) entsperrten eineiige Zwillinge das System gegenseitig, andere (Business Insider) unterschieden die Zwillinge korrekt. Apple hatte das im Security-White-Paper bereits als bekannte Einschränkung dokumentiert und empfahl Zwillingen, stattdessen einen Passcode zu nutzen. Der Fall machte die Grenzen kommerzieller Gesichtsbiometrie sichtbar.",
+  "description_en": "With the iPhone X launch on November 3, 2017, Apple's new Face ID biometric system was tested in public. Multiple mainstream tests produced mixed results: in some (including Mashable) identical twins could unlock each other's phones, while others (Business Insider) told the twins apart correctly. Apple had already documented this as a known limitation in its security white paper and recommended twins use a passcode instead. The case made the limits of commercial face biometrics visible to a wide audience.",
   "startDate": "2017-11-03",
   "location": {
     "@type": "Place",
@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "facial-recognition"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Apple",
@@ -44,7 +56,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-09-12",
+      "phase": "infrastructure",
+      "title": "Apple stellt iPhone X mit TrueDepth-Kamera und Face ID vor",
+      "description": "Am 12. September 2017 präsentierte Apple das iPhone X mit Face ID, das per TrueDepth-Kamera (Punktprojektor, Infrarotkamera, Flutlicht) über 30.000 unsichtbare Punkte projiziert und daraus ein mathematisches Gesichtsmodell berechnet. Diese 3D-Gesichtsbiometrie ersetzte den Fingerabdrucksensor Touch ID und bildete die technische Grundlage des späteren Vorfalls.",
+      "title_de": "Apple stellt iPhone X mit TrueDepth-Kamera und Face ID vor",
+      "description_de": "Am 12. September 2017 präsentierte Apple das iPhone X mit Face ID, das per TrueDepth-Kamera (Punktprojektor, Infrarotkamera, Flutlicht) über 30.000 unsichtbare Punkte projiziert und daraus ein mathematisches Gesichtsmodell berechnet. Diese 3D-Gesichtsbiometrie ersetzte den Fingerabdrucksensor Touch ID und bildete die technische Grundlage des späteren Vorfalls.",
+      "title_en": "Apple unveils iPhone X with TrueDepth camera and Face ID",
+      "description_en": "On 12 September 2017 Apple presented the iPhone X with Face ID, which uses a TrueDepth camera (dot projector, infrared camera, flood illuminator) to project over 30,000 invisible dots and compute a mathematical model of the face. This 3D face biometric replaced the Touch ID fingerprint sensor and formed the technical basis of the later incident.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Face_ID"
+      ]
+    },
+    {
+      "date": "2017-09-27",
+      "phase": "doctrine",
+      "title": "Apple macht Face ID zur Standard-Authentifizierung und dokumentiert Grenzen",
+      "description": "Apple machte Face ID zum alleinigen biometrischen Entsperrverfahren des iPhone X und bewarb es mit einer Falschakzeptanzrate von 1:1.000.000. Im 'Face ID Security'-White-Paper räumte Apple jedoch ein, dass die Wahrscheinlichkeit eines Fehltreffers bei eineiigen Zwillingen, ähnlich aussehenden Geschwistern und Kindern unter 13 Jahren steigt, und empfahl diesen Gruppen die Nutzung eines Passcodes.",
+      "title_de": "Apple macht Face ID zur Standard-Authentifizierung und dokumentiert Grenzen",
+      "description_de": "Apple machte Face ID zum alleinigen biometrischen Entsperrverfahren des iPhone X und bewarb es mit einer Falschakzeptanzrate von 1:1.000.000. Im 'Face ID Security'-White-Paper räumte Apple jedoch ein, dass die Wahrscheinlichkeit eines Fehltreffers bei eineiigen Zwillingen, ähnlich aussehenden Geschwistern und Kindern unter 13 Jahren steigt, und empfahl diesen Gruppen die Nutzung eines Passcodes.",
+      "title_en": "Apple makes Face ID the default authentication and documents its limits",
+      "description_en": "Apple made Face ID the sole biometric unlock method on the iPhone X and advertised a false-acceptance rate of 1 in 1,000,000. In its 'Face ID Security' white paper, however, Apple acknowledged that the chance of a false match increases for identical twins, similar-looking siblings and children under 13, and recommended these groups use a passcode.",
+      "sources": [
+        "https://9to5mac.com/2017/09/27/face-id-iphone-x-white-paper/"
+      ]
+    },
+    {
+      "date": "2017-11-03",
+      "phase": "event",
+      "title": "USA: Apple Face ID kann eineiige Zwillinge nicht zuverlässig unterscheiden",
+      "description": "Mit der Markteinführung des iPhone X am 3. November 2017 wurde Apples neues Face-ID-System auf den Prüfstand gestellt. In mehreren Mainstream-Tests zeigten sich gemischte Ergebnisse: Bei einigen (u.a. Mashable) entsperrten eineiige Zwillinge das System gegenseitig, andere (Business Insider) unterschieden die Zwillinge korrekt. Apple hatte das im Security-White-Paper bereits als bekannte Einschränkung dokumentiert und empfahl Zwillingen, stattdessen einen Passcode zu nutzen. Der Fall machte die Grenzen kommerzieller Gesichtsbiometrie sichtbar.",
+      "title_de": "USA: Apple Face ID kann eineiige Zwillinge nicht zuverlässig unterscheiden",
+      "description_de": "Mit der Markteinführung des iPhone X am 3. November 2017 wurde Apples neues Face-ID-System auf den Prüfstand gestellt. In mehreren Mainstream-Tests zeigten sich gemischte Ergebnisse: Bei einigen (u.a. Mashable) entsperrten eineiige Zwillinge das System gegenseitig, andere (Business Insider) unterschieden die Zwillinge korrekt. Apple hatte das im Security-White-Paper bereits als bekannte Einschränkung dokumentiert und empfahl Zwillingen, stattdessen einen Passcode zu nutzen. Der Fall machte die Grenzen kommerzieller Gesichtsbiometrie sichtbar.",
+      "title_en": "USA: Apple Face ID cannot reliably distinguish identical twins",
+      "description_en": "With the iPhone X launch on 3 November 2017, Apple's new Face ID system was put to the test. Multiple mainstream tests produced mixed results: in some (including Mashable) identical twins could unlock each other's phones, while others (Business Insider) told the twins apart correctly. Apple had already documented this as a known limitation in its security white paper and recommended twins use a passcode instead. The case made the limits of commercial face biometrics visible to a wide audience.",
+      "sources": [
+        "https://9to5mac.com/2017/10/31/face-id-twins/"
+      ]
+    },
+    {
+      "date": "2017-11-08",
+      "phase": "consequences",
+      "title": "Debatte über Verlässlichkeit kommerzieller Gesichtsbiometrie",
+      "description": "Die Tests bestätigten die im White-Paper genannte Schwäche und befeuerten eine breitere Diskussion darüber, wie verlässlich Gesichtsbiometrie als alleiniger Authentifizierungsfaktor ist. Während die praktische Gefahr begrenzt blieb (Zugriff setzt einen sehr ähnlich aussehenden Menschen voraus), sensibilisierte der Fall Öffentlichkeit und Fachwelt für False-Match-Risiken biometrischer Systeme - ein Thema, das spätere Face-Recognition-Kontroversen prägte.",
+      "title_de": "Debatte über Verlässlichkeit kommerzieller Gesichtsbiometrie",
+      "description_de": "Die Tests bestätigten die im White-Paper genannte Schwäche und befeuerten eine breitere Diskussion darüber, wie verlässlich Gesichtsbiometrie als alleiniger Authentifizierungsfaktor ist. Während die praktische Gefahr begrenzt blieb (Zugriff setzt einen sehr ähnlich aussehenden Menschen voraus), sensibilisierte der Fall Öffentlichkeit und Fachwelt für False-Match-Risiken biometrischer Systeme - ein Thema, das spätere Face-Recognition-Kontroversen prägte.",
+      "title_en": "Debate over the reliability of commercial face biometrics",
+      "description_en": "The tests confirmed the weakness named in the white paper and fuelled a broader discussion of how reliable face biometrics are as a sole authentication factor. While the practical danger remained limited (access requires a very similar-looking person), the case raised public and expert awareness of false-match risks in biometric systems - a theme that shaped later face-recognition controversies.",
+      "sources": [
+        "https://time.com/4940176/apple-iphone-x-face-id-facial-recognition/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.wsj.com/articles/iphone-x-and-the-face-id-revolution-1510152497",

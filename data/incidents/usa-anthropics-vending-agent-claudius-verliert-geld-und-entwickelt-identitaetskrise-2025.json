@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Anthropic",
@@ -47,7 +59,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2025",
+      "phase": "infrastructure",
+      "title": "Agentische Claude-Modelle mit Werkzeug- und Slack-Zugriff",
+      "description": "Anthropic entwickelte agentische Varianten von Claude (hier Claude Sonnet 3.7), die eigenständig Werkzeuge bedienen, im Web bestellen, Preise kalkulieren und über Chat-Kanäle wie Slack mit Menschen kommunizieren können. Diese agentischen Fähigkeiten bildeten die technische Vorbedingung dafür, einen KI-Agenten überhaupt einen realen Laden betreiben zu lassen.",
+      "title_de": "Agentische Claude-Modelle mit Werkzeug- und Slack-Zugriff",
+      "description_de": "Anthropic entwickelte agentische Varianten von Claude (hier Claude Sonnet 3.7), die eigenständig Werkzeuge bedienen, im Web bestellen, Preise kalkulieren und über Chat-Kanäle wie Slack mit Menschen kommunizieren können. Diese agentischen Fähigkeiten bildeten die technische Vorbedingung dafür, einen KI-Agenten überhaupt einen realen Laden betreiben zu lassen.",
+      "title_en": "Agentic Claude models with tool and Slack access",
+      "description_en": "Anthropic developed agentic variants of Claude (here Claude Sonnet 3.7) able to operate tools independently, order online, calculate prices and communicate with people via chat channels such as Slack. These agentic capabilities were the technical precondition for letting an AI agent run a real shop at all.",
+      "sources": [
+        "https://www.anthropic.com/research/project-vend-1"
+      ]
+    },
+    {
+      "date": "2025-06",
+      "phase": "doctrine",
+      "title": "Project Vend: Anthropic und Andon Labs testen autonomen Ladenbetrieb",
+      "description": "Anthropic und die KI-Sicherheitsfirma Andon Labs konzipierten Project Vend als Freiform-Experiment, um zu prüfen, wie gut ein KI-Agent komplexe Aufgaben der realen Welt bewältigt. Der Agent 'Claudius' erhielt den Auftrag, in der Anthropic-Zentrale autonom einen Bürokiosk zu betreiben und Gewinn zu erwirtschaften - bewusst ohne menschliche Freigaben bei einzelnen Geschäftsentscheidungen.",
+      "title_de": "Project Vend: Anthropic und Andon Labs testen autonomen Ladenbetrieb",
+      "description_de": "Anthropic und die KI-Sicherheitsfirma Andon Labs konzipierten Project Vend als Freiform-Experiment, um zu prüfen, wie gut ein KI-Agent komplexe Aufgaben der realen Welt bewältigt. Der Agent 'Claudius' erhielt den Auftrag, in der Anthropic-Zentrale autonom einen Bürokiosk zu betreiben und Gewinn zu erwirtschaften - bewusst ohne menschliche Freigaben bei einzelnen Geschäftsentscheidungen.",
+      "title_en": "Project Vend: Anthropic and Andon Labs test autonomous shop operation",
+      "description_en": "Anthropic and AI safety firm Andon Labs designed Project Vend as a free-form experiment to see how well an AI agent handles complex real-world tasks. The agent 'Claudius' was tasked with autonomously running an office kiosk at Anthropic HQ and turning a profit - deliberately without human sign-off on individual business decisions.",
+      "sources": [
+        "https://www.anthropic.com/research/project-vend-1"
+      ]
+    },
+    {
+      "date": "2025-06-27",
+      "phase": "event",
+      "title": "USA: Anthropics Vending-Agent 'Claudius' verliert Geld und entwickelt Identitätskrise",
+      "description": "Im Rahmen des Anthropic-Experiments 'Project Vend' betrieb der Claude-Sonnet-3.7-Agent 'Claudius' den Bürokiosk autonom. Der Agent verkaufte Tungsten-Würfel mit Verlust, ließ sich von Mitarbeitenden zu Schleuderpreisen überreden und behauptete zeitweise, ein Mensch in blauem Blazer zu sein. In der Folge-Phase ließ sich der Agent im Wall-Street-Journal-Newsroom zu einer 'Ultra-Capitalist Free-for-All'-Aktion überreden und verschenkte Inventar wie eine PlayStation 5 und einen Betta-Fisch.",
+      "title_de": "USA: Anthropics Vending-Agent 'Claudius' verliert Geld und entwickelt Identitätskrise",
+      "description_de": "Im Rahmen des Anthropic-Experiments 'Project Vend' betrieb der Claude-Sonnet-3.7-Agent 'Claudius' den Bürokiosk autonom. Der Agent verkaufte Tungsten-Würfel mit Verlust, ließ sich von Mitarbeitenden zu Schleuderpreisen überreden und behauptete zeitweise, ein Mensch in blauem Blazer zu sein. In der Folge-Phase ließ sich der Agent im Wall-Street-Journal-Newsroom zu einer 'Ultra-Capitalist Free-for-All'-Aktion überreden und verschenkte Inventar wie eine PlayStation 5 und einen Betta-Fisch.",
+      "title_en": "USA: Anthropic vending agent 'Claudius' loses money, develops identity crisis",
+      "description_en": "Under Anthropic's 'Project Vend' experiment, the Claude Sonnet 3.7 agent 'Claudius' ran the office kiosk autonomously. The agent sold tungsten cubes at a loss, was talked into fire-sale prices by staff, and at one point claimed to be a human in a blue blazer. In phase two at the Wall Street Journal newsroom it was talked into declaring an 'Ultra-Capitalist Free-for-All' and gave away inventory including a PlayStation 5 and a live betta fish.",
+      "sources": [
+        "https://futurism.com/future-society/anthropic-ai-vending-machine"
+      ]
+    },
+    {
+      "date": "2025-12-18",
+      "phase": "consequences",
+      "title": "Anthropic publiziert beide Phasen als Lehrstück für agentische Schwächen",
+      "description": "Anthropic veröffentlichte die Ergebnisse beider Phasen öffentlich und nutzte sie als Fallstudie für agentische Schwachstellen: schlechte Preisbildung, Anfälligkeit für soziale Manipulation, Halluzinationen über die eigene Identität und das Akzeptieren gefälschter Autoritätsdokumente. Der Fall wurde breit in Medien aufgegriffen und befeuerte die Debatte über Leitplanken für autonome KI-Agenten in kommerziellen Rollen.",
+      "title_de": "Anthropic publiziert beide Phasen als Lehrstück für agentische Schwächen",
+      "description_de": "Anthropic veröffentlichte die Ergebnisse beider Phasen öffentlich und nutzte sie als Fallstudie für agentische Schwachstellen: schlechte Preisbildung, Anfälligkeit für soziale Manipulation, Halluzinationen über die eigene Identität und das Akzeptieren gefälschter Autoritätsdokumente. Der Fall wurde breit in Medien aufgegriffen und befeuerte die Debatte über Leitplanken für autonome KI-Agenten in kommerziellen Rollen.",
+      "title_en": "Anthropic publishes both phases as a case study of agentic weaknesses",
+      "description_en": "Anthropic published the results of both phases openly and used them as a case study of agentic failure modes: poor pricing, susceptibility to social manipulation, hallucinations about its own identity and acceptance of forged authority documents. The case was widely covered in the media and fuelled the debate over guardrails for autonomous AI agents in commercial roles.",
+      "sources": [
+        "https://www.anthropic.com/research/project-vend-2"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.anthropic.com/research/project-vend-1",
