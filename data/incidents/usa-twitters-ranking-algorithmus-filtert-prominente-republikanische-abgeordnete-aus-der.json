@@ -31,9 +31,24 @@
     "censorship",
     "political-pressure"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Recht auf Information",
+    "Schutz vor Diskriminierung",
+    "Demokratische Teilhabe"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Recht auf Information",
+    "Schutz vor Diskriminierung",
+    "Demokratische Teilhabe"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Right to information",
+    "Protection from discrimination",
+    "Democratic participation"
+  ],
   "asm:actors": [
     {
       "name": "Twitter, Inc.",
@@ -47,7 +62,73 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-05-15",
+      "phase": "infrastructure",
+      "title": "Twitter führt verhaltensbasiertes Ranking und Quality-Filter ein",
+      "description": "Im Mai 2018 baute Twitter im Rahmen seines Projekts für 'gesunde Konversationen' verhaltensbasierte Ranking-Signale aus. Tweets, Suchergebnisse und Vorschläge wurden anhand zahlreicher Signale geordnet, darunter das Interaktionsverhalten rund um ein Konto. Dieses System bestimmte automatisch und ohne Sichtbarkeit für Nutzende, welche Konten in der Auto-Vervollständigung der Suche auftauchten.",
+      "title_de": "Twitter führt verhaltensbasiertes Ranking und Quality-Filter ein",
+      "description_de": "Im Mai 2018 baute Twitter im Rahmen seines Projekts für 'gesunde Konversationen' verhaltensbasierte Ranking-Signale aus. Tweets, Suchergebnisse und Vorschläge wurden anhand zahlreicher Signale geordnet, darunter das Interaktionsverhalten rund um ein Konto. Dieses System bestimmte automatisch und ohne Sichtbarkeit für Nutzende, welche Konten in der Auto-Vervollständigung der Suche auftauchten.",
+      "title_en": "Twitter rolls out behavioural ranking and a quality filter",
+      "description_en": "In May 2018, as part of its 'healthy conversation' project, Twitter expanded behavioural ranking signals. Tweets, search results and suggestions were ordered using numerous signals, including the engagement behaviour around an account. This system automatically and invisibly determined which accounts appeared in search auto-complete.",
+      "sources": [
+        "https://blog.twitter.com/en_us/topics/company/2018/Setting-the-record-straight-on-shadow-banning"
+      ]
+    },
+    {
+      "date": "2018-07",
+      "phase": "doctrine",
+      "title": "Ranking-Signale bewerten Konten anhand des Umfelds, nicht des Inhalts",
+      "description": "Twitters Ansatz bewertete Konten auch danach, wie andere Nutzende mit ihnen interagierten, um vermeintlich manipulative oder schädliche Akteure herabzustufen. Das Unternehmen erklärte später, dass koordiniertes Interaktionsverhalten rund um bestimmte Konten in Kombination mit der Implementierung der Such-Vorschläge dazu führen konnte, dass diese Konten unterdrückt wurden - eine Designentscheidung mit unbeabsichtigten politischen Nebenwirkungen.",
+      "title_de": "Ranking-Signale bewerten Konten anhand des Umfelds, nicht des Inhalts",
+      "description_de": "Twitters Ansatz bewertete Konten auch danach, wie andere Nutzende mit ihnen interagierten, um vermeintlich manipulative oder schädliche Akteure herabzustufen. Das Unternehmen erklärte später, dass koordiniertes Interaktionsverhalten rund um bestimmte Konten in Kombination mit der Implementierung der Such-Vorschläge dazu führen konnte, dass diese Konten unterdrückt wurden - eine Designentscheidung mit unbeabsichtigten politischen Nebenwirkungen.",
+      "title_en": "Ranking signals judge accounts by their surroundings, not content",
+      "description_en": "Twitter's approach also rated accounts by how other users interacted with them, in order to down-rank supposedly manipulative or harmful actors. The company later explained that coordinated engagement behaviour around certain accounts, combined with the implementation of search suggestions, could cause those accounts to be suppressed - a design choice with unintended political side effects.",
+      "sources": [
+        "https://martech.org/twitter-shares-how-it-ranks-search-results-after-being-accused-of-shadow-banning-accounts/"
+      ]
+    },
+    {
+      "date": "2018-07-25",
+      "phase": "event",
+      "title": "Ranking-Algorithmus filtert prominente Republikaner aus der Suche",
+      "description": "Eine Vice-News-Recherche zeigte, dass Twitters Auto-Complete-Suche prominente republikanische Politiker:innen nicht anzeigte, darunter den damaligen Parteivorsitz Ronna McDaniel und die Kongressabgeordneten Devin Nunes, Matt Gaetz, Jim Jordan und Mark Meadows, während Demokrat:innen normal erschienen. Twitter erklärte dies als Fehler im verhaltensbasierten Ranking-Algorithmus.",
+      "title_de": "Ranking-Algorithmus filtert prominente Republikaner aus der Suche",
+      "description_de": "Eine Vice-News-Recherche zeigte, dass Twitters Auto-Complete-Suche prominente republikanische Politiker:innen nicht anzeigte, darunter den damaligen Parteivorsitz Ronna McDaniel und die Kongressabgeordneten Devin Nunes, Matt Gaetz, Jim Jordan und Mark Meadows, während Demokrat:innen normal erschienen. Twitter erklärte dies als Fehler im verhaltensbasierten Ranking-Algorithmus.",
+      "title_en": "Ranking algorithm filters prominent Republicans out of search",
+      "description_en": "A Vice News investigation showed that Twitter's search auto-complete failed to surface prominent Republican politicians, including then-RNC chair Ronna McDaniel and Representatives Devin Nunes, Matt Gaetz, Jim Jordan and Mark Meadows, while Democrats appeared normally. Twitter described this as a bug in its behavioural ranking algorithm.",
+      "sources": [
+        "https://www.vice.com/en/article/twitter-is-shadow-banning-prominent-republicans-like-the-rnc-chair-and-trump-jrs-spokesman/"
+      ]
+    },
+    {
+      "date": "2018-07-26",
+      "phase": "consequences",
+      "title": "Twitter korrigiert den Fehler binnen 24 Stunden",
+      "description": "Twitter behob das Problem in der Auto-Vervollständigung der Suche innerhalb von etwa 24 Stunden. Das Unternehmen betonte, kein gezieltes Shadow-Banning nach politischer Gesinnung betrieben zu haben; Faktenchecks ordneten den Fall als Nebenwirkung des Ranking-Systems ein, nicht als bewusste Benachteiligung.",
+      "title_de": "Twitter korrigiert den Fehler binnen 24 Stunden",
+      "description_de": "Twitter behob das Problem in der Auto-Vervollständigung der Suche innerhalb von etwa 24 Stunden. Das Unternehmen betonte, kein gezieltes Shadow-Banning nach politischer Gesinnung betrieben zu haben; Faktenchecks ordneten den Fall als Nebenwirkung des Ranking-Systems ein, nicht als bewusste Benachteiligung.",
+      "title_en": "Twitter fixes the bug within 24 hours",
+      "description_en": "Twitter fixed the problem in search auto-complete within about 24 hours. The company stressed that it had not engaged in targeted shadow banning by political viewpoint; fact-checks classified the case as a side effect of the ranking system rather than deliberate disadvantage.",
+      "sources": [
+        "https://www.politifact.com/article/2018/jul/26/shadow-banning-did-twitter-try-boost-dems-and-hurt/"
+      ]
+    },
+    {
+      "date": "2018-09-05",
+      "phase": "consequences",
+      "title": "Dorsey nennt vor dem Kongress rund 600.000 fälschlich gefilterte Konten",
+      "description": "CEO Jack Dorsey gab vor dem House Energy and Commerce Committee an, dass der Fehler rund 600.000 Konten unabhängig von der politischen Ausrichtung fälschlich gefiltert hatte. Der Fall wurde zu einem zentralen Beleg in der politischen Debatte über vermeintliche Voreingenommenheit und intransparente Ranking-Algorithmen auf Plattformen.",
+      "title_de": "Dorsey nennt vor dem Kongress rund 600.000 fälschlich gefilterte Konten",
+      "description_de": "CEO Jack Dorsey gab vor dem House Energy and Commerce Committee an, dass der Fehler rund 600.000 Konten unabhängig von der politischen Ausrichtung fälschlich gefiltert hatte. Der Fall wurde zu einem zentralen Beleg in der politischen Debatte über vermeintliche Voreingenommenheit und intransparente Ranking-Algorithmen auf Plattformen.",
+      "title_en": "Dorsey tells Congress around 600,000 accounts were wrongly filtered",
+      "description_en": "CEO Jack Dorsey told the House Energy and Commerce Committee that the bug had wrongly filtered around 600,000 accounts regardless of political affiliation. The case became a key reference point in the political debate over alleged bias and opaque ranking algorithms on platforms.",
+      "sources": [
+        "https://www.engadget.com/2018-09-05-twitter-shadow-banning-bug-accounts-jack-dorsey.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.vice.com/en/article/twitter-is-shadow-banning-prominent-republicans-like-the-rnc-chair-and-trump-jrs-spokesman/",

@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "discrimination"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen",
+    "Rechte von Menschen mit Behinderungen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Gleichbehandlung",
+    "Würde des Menschen",
+    "Rechte von Menschen mit Behinderungen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Equal treatment",
+    "Human dignity",
+    "Rights of persons with disabilities"
+  ],
   "asm:actors": [
     {
       "name": "Twitter, Inc.",
@@ -46,7 +61,73 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Twitter führt neuronalen Saliency-Algorithmus für automatischen Bildzuschnitt ein",
+      "description": "Twitter stellte 2018 ein neuronales Netz für den automatischen Zuschnitt von Bildvorschauen vor. Der Saliency-Algorithmus schätzte anhand von Eye-Tracking-Daten, welche Bildregion Nutzende zuerst ansehen würden, und schnitt die Vorschau entsprechend zu. Dieses System bestimmte fortan unsichtbar, welcher Teil eines hochgeladenen Fotos im Zeitstrahl prominent gezeigt wurde.",
+      "title_de": "Twitter führt neuronalen Saliency-Algorithmus für automatischen Bildzuschnitt ein",
+      "description_de": "Twitter stellte 2018 ein neuronales Netz für den automatischen Zuschnitt von Bildvorschauen vor. Der Saliency-Algorithmus schätzte anhand von Eye-Tracking-Daten, welche Bildregion Nutzende zuerst ansehen würden, und schnitt die Vorschau entsprechend zu. Dieses System bestimmte fortan unsichtbar, welcher Teil eines hochgeladenen Fotos im Zeitstrahl prominent gezeigt wurde.",
+      "title_en": "Twitter introduces neural saliency algorithm for automatic image cropping",
+      "description_en": "In 2018 Twitter introduced a neural network for automatically cropping image previews. The saliency algorithm used eye-tracking data to estimate which region of an image users would look at first and cropped the preview accordingly. From then on this system invisibly determined which part of an uploaded photo was shown prominently in the timeline.",
+      "sources": [
+        "https://towardsdatascience.com/what-you-see-is-what-youll-get-twitter-s-new-strategy-for-displaying-images-on-the-timeline-3ddc2040c728/"
+      ]
+    },
+    {
+      "date": "2020-09",
+      "phase": "doctrine",
+      "title": "Rassistische Verzerrung wird öffentlich, Twitter sagt externe Prüfung zu",
+      "description": "Im September 2020 zeigten Nutzende, dass der Zuschnitt-Algorithmus bei Bildern mit mehreren Gesichtern hellhäutige Gesichter bevorzugte. Eigene Untersuchungen bestätigten eine Bevorzugung weißer gegenüber schwarzen Gesichtern. Twitter räumte das Problem öffentlich ein und entschied, den Algorithmus erstmals durch eine offene externe Prüfung untersuchen zu lassen.",
+      "title_de": "Rassistische Verzerrung wird öffentlich, Twitter sagt externe Prüfung zu",
+      "description_de": "Im September 2020 zeigten Nutzende, dass der Zuschnitt-Algorithmus bei Bildern mit mehreren Gesichtern hellhäutige Gesichter bevorzugte. Eigene Untersuchungen bestätigten eine Bevorzugung weißer gegenüber schwarzen Gesichtern. Twitter räumte das Problem öffentlich ein und entschied, den Algorithmus erstmals durch eine offene externe Prüfung untersuchen zu lassen.",
+      "title_en": "Racial bias becomes public, Twitter commits to external review",
+      "description_en": "In September 2020 users showed that the cropping algorithm favoured lighter-skinned faces in images containing multiple faces. Twitter's own research confirmed a preference for white over black faces. Twitter publicly acknowledged the problem and decided to subject the algorithm to its first open external review.",
+      "sources": [
+        "https://www.theregister.com/2021/05/19/twitter_machine_learning_image_cropping/"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "event",
+      "title": "Bias-Bounty bei der DEF CON belegt Alters-, Gewichts- und Hautfarben-Bias",
+      "description": "Twitter führte 2021 bei der DEF CON den ersten 'algorithmic bias bounty' durch. Teilnehmende belegten, dass der Saliency-Algorithmus jüngere, schlankere, hellhäutigere und femininer wirkende Gesichter bevorzugte und etwa Menschen mit grauem Haar oder im Rollstuhl systematisch benachteiligte. Der Wettbewerb machte sichtbar, dass die Verzerrung weit über die zuvor bekannte Hautfarben-Frage hinausging.",
+      "title_de": "Bias-Bounty bei der DEF CON belegt Alters-, Gewichts- und Hautfarben-Bias",
+      "description_de": "Twitter führte 2021 bei der DEF CON den ersten 'algorithmic bias bounty' durch. Teilnehmende belegten, dass der Saliency-Algorithmus jüngere, schlankere, hellhäutigere und femininer wirkende Gesichter bevorzugte und etwa Menschen mit grauem Haar oder im Rollstuhl systematisch benachteiligte. Der Wettbewerb machte sichtbar, dass die Verzerrung weit über die zuvor bekannte Hautfarben-Frage hinausging.",
+      "title_en": "Bias bounty at DEF CON confirms age, weight and race bias",
+      "description_en": "In 2021 Twitter ran the first 'algorithmic bias bounty' at DEF CON. Participants showed that the saliency algorithm favoured younger, thinner, lighter-skinned and more feminine-looking faces and systematically disadvantaged, for example, people with grey hair or in wheelchairs. The contest revealed that the bias went well beyond the previously known issue of skin colour.",
+      "sources": [
+        "https://www.theregister.com/2021/08/11/defcon_twitter_ai/"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "consequences",
+      "title": "Twitter schafft die automatische Zuschnittfunktion weitgehend ab",
+      "description": "Als Reaktion auf die Befunde zeigte Twitter Standard-Seitenverhältnisse fortan ohne den Saliency-Zuschnitt in voller Größe an und schaffte die automatische Zuschnittfunktion damit weitgehend ab. Statt das verzerrte Modell nachzubessern, entzog das Unternehmen ihm die Entscheidungshoheit über die Bildvorschau.",
+      "title_de": "Twitter schafft die automatische Zuschnittfunktion weitgehend ab",
+      "description_de": "Als Reaktion auf die Befunde zeigte Twitter Standard-Seitenverhältnisse fortan ohne den Saliency-Zuschnitt in voller Größe an und schaffte die automatische Zuschnittfunktion damit weitgehend ab. Statt das verzerrte Modell nachzubessern, entzog das Unternehmen ihm die Entscheidungshoheit über die Bildvorschau.",
+      "title_en": "Twitter largely retires the automatic cropping feature",
+      "description_en": "In response to the findings, Twitter began showing standard aspect-ratio images in full without the saliency crop, largely retiring the automatic cropping feature. Rather than patching the biased model, the company removed its authority over the image preview.",
+      "sources": [
+        "https://www.cbsnews.com/news/twitter-kills-its-automatic-cropping-feature-after-complaints/"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "consequences",
+      "title": "Bias-Bounty-Modell wird Vorbild für algorithmische Prüfungen",
+      "description": "Twitters erster algorithmischer Bias-Bounty wurde als wegweisendes Beispiel für die externe, anreizbasierte Prüfung von KI-Systemen rezipiert. Das Format wurde in der Folge in Forschung und Branche als Vorlage für weitere Programme zur Aufdeckung algorithmischer Schäden herangezogen.",
+      "title_de": "Bias-Bounty-Modell wird Vorbild für algorithmische Prüfungen",
+      "description_de": "Twitters erster algorithmischer Bias-Bounty wurde als wegweisendes Beispiel für die externe, anreizbasierte Prüfung von KI-Systemen rezipiert. Das Format wurde in der Folge in Forschung und Branche als Vorlage für weitere Programme zur Aufdeckung algorithmischer Schäden herangezogen.",
+      "title_en": "Bias-bounty model becomes a template for algorithmic audits",
+      "description_en": "Twitter's first algorithmic bias bounty was received as a landmark example of external, incentive-based auditing of AI systems. The format was subsequently taken up in research and industry as a template for further programmes to uncover algorithmic harms.",
+      "sources": [
+        "https://blog.x.com/engineering/en_us/topics/insights/2021/learnings-from-the-first-algorithmic-bias-bounty-challenge"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2021/08/11/defcon_twitter_ai/",

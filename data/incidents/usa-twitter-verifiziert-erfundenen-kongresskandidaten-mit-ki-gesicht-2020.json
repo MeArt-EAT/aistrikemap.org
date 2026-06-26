@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf freie und faire Wahlen",
+    "Schutz vor Manipulation",
+    "Recht auf Information",
+    "Demokratische Teilhabe"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf freie und faire Wahlen",
+    "Schutz vor Manipulation",
+    "Recht auf Information",
+    "Demokratische Teilhabe"
+  ],
+  "asm:affectedRights_en": [
+    "Right to free and fair elections",
+    "Protection from manipulation",
+    "Right to information",
+    "Democratic participation"
+  ],
   "asm:actors": [
     {
       "name": "Twitter, Inc.",
@@ -51,7 +66,73 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019-02",
+      "phase": "infrastructure",
+      "title": "GAN-Dienst 'This Person Does Not Exist' macht Fake-Gesichter frei verfügbar",
+      "description": "Nvidia-Forschende stellten Ende 2018 das Modell StyleGAN vor, mit dem sich unbegrenzt realistische, aber erfundene Gesichter erzeugen lassen. Im Februar 2019 nutzte der Ingenieur Phillip Wang die Software für die Website 'This Person Does Not Exist', die bei jedem Aufruf ein neues Fake-Gesicht zeigte. Damit standen täuschend echte Profilbilder kostenlos und ohne jede Spur zu einer realen Person zur Verfügung.",
+      "title_de": "GAN-Dienst 'This Person Does Not Exist' macht Fake-Gesichter frei verfügbar",
+      "description_de": "Nvidia-Forschende stellten Ende 2018 das Modell StyleGAN vor, mit dem sich unbegrenzt realistische, aber erfundene Gesichter erzeugen lassen. Im Februar 2019 nutzte der Ingenieur Phillip Wang die Software für die Website 'This Person Does Not Exist', die bei jedem Aufruf ein neues Fake-Gesicht zeigte. Damit standen täuschend echte Profilbilder kostenlos und ohne jede Spur zu einer realen Person zur Verfügung.",
+      "title_en": "GAN service 'This Person Does Not Exist' makes fake faces freely available",
+      "description_en": "In late 2018 Nvidia researchers introduced StyleGAN, capable of producing an unlimited number of realistic but fabricated faces. In February 2019 engineer Phillip Wang used the software for the website 'This Person Does Not Exist', which displayed a new fake face on each reload. Convincing profile photos with no link to any real person were now available for free and without a trace.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/StyleGAN"
+      ]
+    },
+    {
+      "date": "2020-01",
+      "phase": "doctrine",
+      "title": "Twitter verlässt sich bei Wahl-Verifizierung auf ungeprüfte Ballotpedia-Daten",
+      "description": "Für die US-Wahl 2020 vergab Twitter spezielle Wahl-Verifizierungsabzeichen an Kandidat:innen und stützte sich dabei auf die offene Datenbank von Ballotpedia, statt eine eigene Identitätsprüfung vorzunehmen. Ballotpedia wiederum verlangte zur Aufnahme keine amtlichen Nachweise wie eine FEC-Registrierung. Diese Verkettung von ungeprüften Einträgen schuf eine Lücke, durch die jede frei erfundene Person als Kandidat verifiziert werden konnte.",
+      "title_de": "Twitter verlässt sich bei Wahl-Verifizierung auf ungeprüfte Ballotpedia-Daten",
+      "description_de": "Für die US-Wahl 2020 vergab Twitter spezielle Wahl-Verifizierungsabzeichen an Kandidat:innen und stützte sich dabei auf die offene Datenbank von Ballotpedia, statt eine eigene Identitätsprüfung vorzunehmen. Ballotpedia wiederum verlangte zur Aufnahme keine amtlichen Nachweise wie eine FEC-Registrierung. Diese Verkettung von ungeprüften Einträgen schuf eine Lücke, durch die jede frei erfundene Person als Kandidat verifiziert werden konnte.",
+      "title_en": "Twitter relies on unverified Ballotpedia data for election verification",
+      "description_en": "For the 2020 US election Twitter issued special election verification badges to candidates, relying on Ballotpedia's open database rather than running its own identity checks. Ballotpedia in turn required no official proof such as an FEC registration for inclusion. This chain of unverified entries created a gap through which any wholly invented person could be verified as a candidate.",
+      "sources": [
+        "https://ballotpedia.org/Ballotpedia:The_Andrew_Walz_hoax_candidacy"
+      ]
+    },
+    {
+      "date": "2020-02-28",
+      "phase": "event",
+      "title": "Twitter verifiziert erfundenen Kongresskandidaten mit KI-Gesicht",
+      "description": "CNN Business berichtete, dass Twitter das Konto eines erfundenen republikanischen Kongresskandidaten 'Andrew Walz' aus Rhode Island verifiziert hatte. Den Account hatte ein Schüler in rund 25 Minuten erstellt; das Profilbild stammte vom GAN-Dienst 'This Person Does Not Exist'. Weder Twitter noch Ballotpedia hatten geprüft, ob die Person überhaupt existiert.",
+      "title_de": "Twitter verifiziert erfundenen Kongresskandidaten mit KI-Gesicht",
+      "description_de": "CNN Business berichtete, dass Twitter das Konto eines erfundenen republikanischen Kongresskandidaten 'Andrew Walz' aus Rhode Island verifiziert hatte. Den Account hatte ein Schüler in rund 25 Minuten erstellt; das Profilbild stammte vom GAN-Dienst 'This Person Does Not Exist'. Weder Twitter noch Ballotpedia hatten geprüft, ob die Person überhaupt existiert.",
+      "title_en": "Twitter verifies fabricated congressional candidate with AI face",
+      "description_en": "CNN Business reported that Twitter had verified the account of a fabricated Republican congressional candidate, 'Andrew Walz' of Rhode Island. A high-school student had set up the account in about 25 minutes, with a profile photo from the GAN service 'This Person Does Not Exist'. Neither Twitter nor Ballotpedia had checked whether the person existed at all.",
+      "sources": [
+        "https://edition.cnn.com/2020/02/28/tech/fake-twitter-candidate-2020/index.html"
+      ]
+    },
+    {
+      "date": "2020-02-28",
+      "phase": "consequences",
+      "title": "Twitter entfernt das Abzeichen, Ballotpedia verschärft Aufnahmeregeln",
+      "description": "Nach der Berichterstattung entfernte Twitter das Verifizierungsabzeichen und sperrte das Konto wegen Verstoßes gegen die Plattformregeln. Ballotpedia kündigte an, künftig eine FEC-Identifikationsnummer als Nachweis zu verlangen, bevor Personen als Kandidaten gelistet werden.",
+      "title_de": "Twitter entfernt das Abzeichen, Ballotpedia verschärft Aufnahmeregeln",
+      "description_de": "Nach der Berichterstattung entfernte Twitter das Verifizierungsabzeichen und sperrte das Konto wegen Verstoßes gegen die Plattformregeln. Ballotpedia kündigte an, künftig eine FEC-Identifikationsnummer als Nachweis zu verlangen, bevor Personen als Kandidaten gelistet werden.",
+      "title_en": "Twitter removes the badge, Ballotpedia tightens inclusion rules",
+      "description_en": "Following the reporting, Twitter removed the verification badge and suspended the account for breaching platform rules. Ballotpedia announced it would in future require an FEC identification number as proof before listing people as candidates.",
+      "sources": [
+        "https://www.engadget.com/2020-02-28-twitter-verified-fake-congressional-candidate.html"
+      ]
+    },
+    {
+      "date": "2020-03",
+      "phase": "consequences",
+      "title": "Fall wird zum Lehrbeispiel für Schwächen der Wahl-Integritätsprüfung",
+      "description": "Der Vorfall wurde breit als Beleg dafür diskutiert, wie schlecht Social-Media-Plattformen kurz vor der Wahl 2020 auf KI-generierte Identitäten vorbereitet waren. Er verdeutlichte, dass frei verfügbare GAN-Gesichter in Kombination mit oberflächlichen Verifizierungsverfahren die Glaubwürdigkeit von Plattform-Abzeichen untergraben.",
+      "title_de": "Fall wird zum Lehrbeispiel für Schwächen der Wahl-Integritätsprüfung",
+      "description_de": "Der Vorfall wurde breit als Beleg dafür diskutiert, wie schlecht Social-Media-Plattformen kurz vor der Wahl 2020 auf KI-generierte Identitäten vorbereitet waren. Er verdeutlichte, dass frei verfügbare GAN-Gesichter in Kombination mit oberflächlichen Verifizierungsverfahren die Glaubwürdigkeit von Plattform-Abzeichen untergraben.",
+      "title_en": "Case becomes a textbook example of weak election-integrity checks",
+      "description_en": "The incident was widely cited as evidence of how poorly social-media platforms were prepared for AI-generated identities shortly before the 2020 election. It showed how freely available GAN faces, combined with superficial verification procedures, undermine the credibility of platform badges.",
+      "sources": [
+        "https://time.com/5793021/twitter-verified-fake-candidate/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnn.com/2020/02/28/tech/fake-twitter-candidate-2020",

@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Physical integrity",
+    "Consumer protection",
+    "Right to safety"
+  ],
   "asm:actors": [
     {
       "name": "Tesla",
@@ -48,7 +60,73 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-10",
+      "phase": "infrastructure",
+      "title": "Tesla startet die FSD-Beta auf öffentlichen Straßen",
+      "description": "Im Oktober 2020 spielte Tesla die erste 'Full Self-Driving'-Beta per Over-the-Air-Update an eine kleine Gruppe ausgewählter Fahrer aus. Die Software steuert das Auto auf Stadtstraßen weitgehend selbst, bleibt aber unfertige Beta-Software, deren Verhalten Tesla laufend per Update verändert. Damit testete der Hersteller experimentelle Fahr-Software direkt im realen Verkehr.",
+      "title_de": "Tesla startet die FSD-Beta auf öffentlichen Straßen",
+      "description_de": "Im Oktober 2020 spielte Tesla die erste 'Full Self-Driving'-Beta per Over-the-Air-Update an eine kleine Gruppe ausgewählter Fahrer aus. Die Software steuert das Auto auf Stadtstraßen weitgehend selbst, bleibt aber unfertige Beta-Software, deren Verhalten Tesla laufend per Update verändert. Damit testete der Hersteller experimentelle Fahr-Software direkt im realen Verkehr.",
+      "title_en": "Tesla launches the FSD beta on public roads",
+      "description_en": "In October 2020 Tesla pushed the first 'Full Self-Driving' beta via an over-the-air update to a small group of selected drivers. The software steers the car largely by itself on city streets but remains unfinished beta software whose behaviour Tesla keeps changing through updates. The company thus tested experimental driving software directly in real traffic.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tesla_Autopilot"
+      ]
+    },
+    {
+      "date": "2021-10-23",
+      "phase": "doctrine",
+      "title": "Tesla verteilt FSD-Beta 10.3 per Over-the-Air-Update",
+      "description": "Am 23. Oktober 2021 verteilte Tesla das Update auf FSD-Beta 10.3 (Build 2021.36.5.2) an die im Beta-Programm eingeschriebenen Fahrzeuge. Schnelle, weitreichende OTA-Updates sind Kern von Teslas Entwicklungsmodell, das neue Fahrfunktionen direkt in Kundenfahrzeuge bringt. Kurz nach dem Rollout meldeten Fahrer grundloses Notbremsen, woraufhin Tesla das Update binnen Stunden zurückzog.",
+      "title_de": "Tesla verteilt FSD-Beta 10.3 per Over-the-Air-Update",
+      "description_de": "Am 23. Oktober 2021 verteilte Tesla das Update auf FSD-Beta 10.3 (Build 2021.36.5.2) an die im Beta-Programm eingeschriebenen Fahrzeuge. Schnelle, weitreichende OTA-Updates sind Kern von Teslas Entwicklungsmodell, das neue Fahrfunktionen direkt in Kundenfahrzeuge bringt. Kurz nach dem Rollout meldeten Fahrer grundloses Notbremsen, woraufhin Tesla das Update binnen Stunden zurückzog.",
+      "title_en": "Tesla pushes FSD beta 10.3 via over-the-air update",
+      "description_en": "On 23 October 2021 Tesla distributed the FSD beta 10.3 update (build 2021.36.5.2) to vehicles enrolled in the beta programme. Fast, wide-reaching OTA updates are central to Tesla's development model, which ships new driving functions straight into customer cars. Shortly after the rollout, drivers reported unprompted emergency braking, prompting Tesla to pull the update within hours.",
+      "sources": [
+        "https://www.thedrive.com/news/42968/tesla-recalls-nearly-12000-cars-after-faulty-fsd-beta-update-causes-braking-glitch"
+      ]
+    },
+    {
+      "date": "2021-11",
+      "phase": "event",
+      "title": "Tesla ruft rund 11.700 Autos wegen FSD-Beta-Bremsfehler zurück",
+      "description": "Tesla rief im Oktober/November 2021 rund 11.704 Fahrzeuge (Model S, X, 3, Y) zurück, nachdem ein Software-Update für die FSD-Beta (Version 10.3) bei einigen Autos grundloses Notbremsen und falsche Kollisionswarnungen ausgelöst hatte. Ursache war ein Kommunikationsfehler beim Aufwachen aus Sentry-/Summon-Modus. Es war der erste offizielle Rückruf der FSD-Beta.",
+      "title_de": "Tesla ruft rund 11.700 Autos wegen FSD-Beta-Bremsfehler zurück",
+      "description_de": "Tesla rief im Oktober/November 2021 rund 11.704 Fahrzeuge (Model S, X, 3, Y) zurück, nachdem ein Software-Update für die FSD-Beta (Version 10.3) bei einigen Autos grundloses Notbremsen und falsche Kollisionswarnungen ausgelöst hatte. Ursache war ein Kommunikationsfehler beim Aufwachen aus Sentry-/Summon-Modus. Es war der erste offizielle Rückruf der FSD-Beta.",
+      "title_en": "Tesla recalls about 11,700 cars over FSD beta braking glitch",
+      "description_en": "In October/November 2021, Tesla recalled around 11,704 vehicles (Model S, X, 3, Y) after a software update for FSD beta (version 10.3) caused some cars to brake without cause and issue false collision warnings. The cause was a communication error when waking from Sentry/Summon mode. It was the first official recall of the FSD beta.",
+      "sources": [
+        "https://www.cnbc.com/2021/11/02/tesla-recalling-nearly-12000-us-vehicles-over-software-communication-error.html"
+      ]
+    },
+    {
+      "date": "2021-11-02",
+      "phase": "consequences",
+      "title": "Formaler NHTSA-Rückruf und Firmware-Fix",
+      "description": "Am 2. November 2021 wurde der Vorgang als formaler Rückruf bei der NHTSA geführt; Tesla löste das Problem per Firmware-Update. Betroffene Fahrzeuge wurden auf eine fehlerfreie Version gebracht, ohne dass die Autos in eine Werkstatt mussten.",
+      "title_de": "Formaler NHTSA-Rückruf und Firmware-Fix",
+      "description_de": "Am 2. November 2021 wurde der Vorgang als formaler Rückruf bei der NHTSA geführt; Tesla löste das Problem per Firmware-Update. Betroffene Fahrzeuge wurden auf eine fehlerfreie Version gebracht, ohne dass die Autos in eine Werkstatt mussten.",
+      "title_en": "Formal NHTSA recall and firmware fix",
+      "description_en": "On 2 November 2021 the matter was registered as a formal recall with NHTSA; Tesla resolved the issue via a firmware update. Affected vehicles were moved to a fixed version without needing to visit a service centre.",
+      "sources": [
+        "https://www.cnbc.com/2021/11/02/tesla-recalling-nearly-12000-us-vehicles-over-software-communication-error.html"
+      ]
+    },
+    {
+      "date": "2021-11-02",
+      "phase": "consequences",
+      "title": "Debatte um Beta-Tests unfertiger Fahr-Software im Verkehr",
+      "description": "Der erste FSD-Beta-Rückruf verstärkte die Kritik daran, unfertige Fahr-Software per Over-the-Air-Update in Kundenfahrzeugen auf öffentlichen Straßen zu erproben. Verbraucherschützer und Beobachter werteten den Fall als Beleg, dass experimentelle Funktionen ohne ausreichende Vorab-Validierung an Kunden ausgeliefert worden waren.",
+      "title_de": "Debatte um Beta-Tests unfertiger Fahr-Software im Verkehr",
+      "description_de": "Der erste FSD-Beta-Rückruf verstärkte die Kritik daran, unfertige Fahr-Software per Over-the-Air-Update in Kundenfahrzeugen auf öffentlichen Straßen zu erproben. Verbraucherschützer und Beobachter werteten den Fall als Beleg, dass experimentelle Funktionen ohne ausreichende Vorab-Validierung an Kunden ausgeliefert worden waren.",
+      "title_en": "Debate over beta-testing unfinished driving software in traffic",
+      "description_en": "The first FSD beta recall sharpened criticism of trialling unfinished driving software via over-the-air updates in customer vehicles on public roads. Consumer advocates and observers treated the case as evidence that experimental functions had been shipped to customers without sufficient prior validation.",
+      "sources": [
+        "https://www.consumerreports.org/cars/car-recalls-defects/tesla-recall-full-self-driving-software-phantom-braking-a5626328806/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnbc.com/2021/11/02/tesla-recalling-nearly-12000-us-vehicles-over-software-communication-error.html",

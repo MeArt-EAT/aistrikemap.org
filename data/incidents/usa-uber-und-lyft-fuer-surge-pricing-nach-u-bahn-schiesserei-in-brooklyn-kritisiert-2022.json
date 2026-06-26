@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Bewegungsfreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Bewegungsfreiheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Freedom of movement",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Uber",
@@ -55,7 +70,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2012",
+      "phase": "infrastructure",
+      "title": "Nachfragebasiertes Surge-Pricing als automatischer Preisalgorithmus",
+      "description": "Uber und später Lyft (Prime Time) setzen seit Anfang der 2010er Jahre dynamische Preisalgorithmen ein, die Städte in Mikrozonen aus wenigen Häuserblocks unterteilen und die Fahrpreise im Minutentakt anhand von Angebot und Nachfrage neu berechnen. Steigt die Nachfrage schlagartig, hebt das System die Preise automatisch an - ohne Kontext, ob die Nachfrage durch einen Notfall ausgelöst wurde.",
+      "title_de": "Nachfragebasiertes Surge-Pricing als automatischer Preisalgorithmus",
+      "description_de": "Uber und später Lyft (Prime Time) setzen seit Anfang der 2010er Jahre dynamische Preisalgorithmen ein, die Städte in Mikrozonen aus wenigen Häuserblocks unterteilen und die Fahrpreise im Minutentakt anhand von Angebot und Nachfrage neu berechnen. Steigt die Nachfrage schlagartig, hebt das System die Preise automatisch an - ohne Kontext, ob die Nachfrage durch einen Notfall ausgelöst wurde.",
+      "title_en": "Demand-based surge pricing as an automatic pricing algorithm",
+      "description_en": "Since the early 2010s, Uber and later Lyft (Prime Time) have used dynamic pricing algorithms that divide cities into micro-zones of a few city blocks and recalculate fares every minute based on supply and demand. When demand spikes suddenly, the system automatically raises prices - without any context about whether the demand was triggered by an emergency.",
+      "sources": [
+        "https://theconversation.com/how-does-ubers-surge-pricing-work-and-how-ethical-is-it-35574"
+      ]
+    },
+    {
+      "date": "2014-07",
+      "phase": "doctrine",
+      "title": "Uber sagt nach früheren Notfällen Preis-Deckelung zu - bleibt aber lückenhaft",
+      "description": "Nach Kritik an Surge-Pricing während des Hurrikans Sandy (2012) und der Geiselnahme in Sydney (2014) sagte Uber zu, die Preise bei behördlich erklärten Notlagen automatisch zu deckeln. Diese Selbstverpflichtung greift jedoch nur bei formal ausgerufenen Katastrophen; bei spontanen Notlagen wie einer Schießerei bleibt der Algorithmus aktiv und treibt die Preise weiter hoch.",
+      "title_de": "Uber sagt nach früheren Notfällen Preis-Deckelung zu - bleibt aber lückenhaft",
+      "description_de": "Nach Kritik an Surge-Pricing während des Hurrikans Sandy (2012) und der Geiselnahme in Sydney (2014) sagte Uber zu, die Preise bei behördlich erklärten Notlagen automatisch zu deckeln. Diese Selbstverpflichtung greift jedoch nur bei formal ausgerufenen Katastrophen; bei spontanen Notlagen wie einer Schießerei bleibt der Algorithmus aktiv und treibt die Preise weiter hoch.",
+      "title_en": "After earlier emergencies, Uber pledges price caps - but they stay patchy",
+      "description_en": "Following criticism of surge pricing during Hurricane Sandy (2012) and the Sydney hostage crisis (2014), Uber pledged to automatically cap prices during officially declared emergencies. That commitment only applies to formally declared disasters, however; in spontaneous emergencies such as a shooting the algorithm stays active and keeps driving prices up.",
+      "sources": [
+        "https://time.com/2967490/uber-agrees-to-limit-surge-pricing-during-emergencies-disasters/"
+      ]
+    },
+    {
+      "date": "2022-04-12",
+      "phase": "event",
+      "title": "Surge-Pricing treibt Fahrpreise nach Brooklyner U-Bahn-Schießerei hoch",
+      "description": "Nach einer Schießerei in der U-Bahn-Station Sunset Park in Brooklyn am 12. April 2022, bei der ein Angreifer 33 Schüsse abgab und 29 Menschen verletzt wurden, trieben die Preisalgorithmen von Uber und Lyft die Fahrpreise in die Höhe, als Menschen aus dem Gebiet zu fliehen versuchten. Screenshots zeigten Preise von 60 bis über 80 Dollar für einfache Fahrten.",
+      "title_de": "Surge-Pricing treibt Fahrpreise nach Brooklyner U-Bahn-Schießerei hoch",
+      "description_de": "Nach einer Schießerei in der U-Bahn-Station Sunset Park in Brooklyn am 12. April 2022, bei der ein Angreifer 33 Schüsse abgab und 29 Menschen verletzt wurden, trieben die Preisalgorithmen von Uber und Lyft die Fahrpreise in die Höhe, als Menschen aus dem Gebiet zu fliehen versuchten. Screenshots zeigten Preise von 60 bis über 80 Dollar für einfache Fahrten.",
+      "title_en": "Surge pricing drives fares up after Brooklyn subway shooting",
+      "description_en": "After a shooting at the Sunset Park subway station in Brooklyn on 12 April 2022, in which an attacker fired 33 shots and injured 29 people, Uber and Lyft's pricing algorithms drove fares up as people tried to flee the area. Screenshots showed prices of 60 to over 80 dollars for basic rides.",
+      "sources": [
+        "https://www.cbsnews.com/news/brooklyn-subway-shooting-lyft-uber-surge-pricing/"
+      ]
+    },
+    {
+      "date": "2022-04-13",
+      "phase": "consequences",
+      "title": "Beide Anbieter deckeln Preise und erstatten überhöhte Beträge",
+      "description": "Nach öffentlicher Kritik schalteten Uber und Lyft das Surge-Pricing im betroffenen Gebiet ab, deckelten die Preise stadtweit und sagten zu, überhöhte Beträge automatisch zu erstatten. Der Fall verstärkte die Forderung, dass nachfragebasierte Preisalgorithmen Notlagen erkennen müssen, statt aus ihnen Profit zu schlagen.",
+      "title_de": "Beide Anbieter deckeln Preise und erstatten überhöhte Beträge",
+      "description_de": "Nach öffentlicher Kritik schalteten Uber und Lyft das Surge-Pricing im betroffenen Gebiet ab, deckelten die Preise stadtweit und sagten zu, überhöhte Beträge automatisch zu erstatten. Der Fall verstärkte die Forderung, dass nachfragebasierte Preisalgorithmen Notlagen erkennen müssen, statt aus ihnen Profit zu schlagen.",
+      "title_en": "Both providers cap prices and refund inflated charges",
+      "description_en": "Following public criticism, Uber and Lyft disabled surge pricing in the affected area, capped prices citywide and pledged to automatically refund inflated charges. The case reinforced demands that demand-based pricing algorithms must recognise emergencies rather than profit from them.",
+      "sources": [
+        "https://www.washingtonpost.com/nation/2022/04/13/uber-lyft-brooklyn-shooting/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.washingtonpost.com/nation/2022/04/13/uber-lyft-brooklyn-shooting/",
