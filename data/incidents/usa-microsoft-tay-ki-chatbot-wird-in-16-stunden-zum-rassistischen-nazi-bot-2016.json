@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-microsoft-tay-ki-chatbot-wird-in-16-stunden-zum-rassistischen-nazi-bot-2016",
-  "name": "USA: Microsoft Tay — KI-Chatbot wird in 16 Stunden zum rassistischen Nazi-Bot",
-  "name_de": "USA: Microsoft Tay — KI-Chatbot wird in 16 Stunden zum rassistischen Nazi-Bot",
-  "name_en": "USA: Microsoft Tay — AI chatbot turns into racist Nazi bot within 16 hours",
+  "name": "USA: Microsoft Tay - KI-Chatbot wird in 16 Stunden zum rassistischen Nazi-Bot",
+  "name_de": "USA: Microsoft Tay - KI-Chatbot wird in 16 Stunden zum rassistischen Nazi-Bot",
+  "name_en": "USA: Microsoft Tay - AI chatbot turns into racist Nazi bot within 16 hours",
   "description": "Microsoft veröffentlichte am 23. März 2016 den Lern-Chatbot Tay auf Twitter, der durch Interaktion mit Nutzer:innen lernen sollte. Innerhalb von 16 Stunden hatten Troll-Communities den Bot dazu gebracht, antisemitische, sexistische und rassistische Tweets abzusetzen (u.a. \"Hitler was right\"). Microsoft nahm Tay offline, entschuldigte sich öffentlich und der Fall wurde zum Lehrbuch-Beispiel für AI-Safety-Versagen durch fehlende Eingabe-Filter und naive Online-Lernverfahren.",
   "description_de": "Microsoft veröffentlichte am 23. März 2016 den Lern-Chatbot Tay auf Twitter, der durch Interaktion mit Nutzer:innen lernen sollte. Innerhalb von 16 Stunden hatten Troll-Communities den Bot dazu gebracht, antisemitische, sexistische und rassistische Tweets abzusetzen (u.a. \"Hitler was right\"). Microsoft nahm Tay offline, entschuldigte sich öffentlich und der Fall wurde zum Lehrbuch-Beispiel für AI-Safety-Versagen durch fehlende Eingabe-Filter und naive Online-Lernverfahren.",
   "description_en": "On 23 March 2016 Microsoft released the learning chatbot Tay on Twitter, designed to learn from user interactions. Within 16 hours, troll communities had pushed the bot into posting antisemitic, sexist and racist tweets (including \"Hitler was right\"). Microsoft took Tay offline, issued a public apology, and the case became a textbook example of AI-safety failure caused by missing input filters and naive online learning.",
@@ -31,9 +31,24 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Protection from manipulation",
+    "Freedom of expression"
+  ],
   "asm:actors": [
     {
       "name": "Microsoft Corporation",
@@ -47,7 +62,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Microsoft baut mit XiaoIce in China einen lernenden Social-Chatbot auf",
+      "description": "Microsoft Research entwickelte ab 2014 in China den Chatbot XiaoIce, der über Social-Media-Plattformen mit Millionen Nutzern konversierte und sein Gesprächsmodell aus diesen Interaktionen verfeinerte. Der Erfolg von XiaoIce - zeitweise rund 40 Millionen Nutzer - lieferte die technische Grundlage und das Selbstvertrauen, ein vergleichbares lernendes System auch für den westlichen Markt zu bauen.",
+      "title_de": "Microsoft baut mit XiaoIce in China einen lernenden Social-Chatbot auf",
+      "description_de": "Microsoft Research entwickelte ab 2014 in China den Chatbot XiaoIce, der über Social-Media-Plattformen mit Millionen Nutzern konversierte und sein Gesprächsmodell aus diesen Interaktionen verfeinerte. Der Erfolg von XiaoIce - zeitweise rund 40 Millionen Nutzer - lieferte die technische Grundlage und das Selbstvertrauen, ein vergleichbares lernendes System auch für den westlichen Markt zu bauen.",
+      "title_en": "Microsoft builds XiaoIce, a learning social chatbot, in China",
+      "description_en": "From 2014 Microsoft Research developed the chatbot XiaoIce in China, which conversed with millions of users across social media platforms and refined its conversational model from those interactions. XiaoIce's success - at times around 40 million users - provided the technical basis and confidence to build a comparable learning system for the Western market.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tay_(chatbot)"
+      ]
+    },
+    {
+      "date": "2016-03",
+      "phase": "doctrine",
+      "title": "Microsoft veröffentlicht den Twitter-Bot Tay als offen lernendes Experiment",
+      "description": "Microsofts Technology-and-Research- und Bing-Teams konzipierten Tay als Chatbot für 18- bis 24-Jährige in den USA, der durch öffentliche Twitter-Interaktion dazulernen sollte. Die Designentscheidung, das Modell ungefiltert aus Nutzereingaben zu trainieren ('the more you chat, the smarter it gets'), verzichtete auf robuste Inhalts- und Missbrauchsfilter und legte damit die eigentliche Schwachstelle an.",
+      "title_de": "Microsoft veröffentlicht den Twitter-Bot Tay als offen lernendes Experiment",
+      "description_de": "Microsofts Technology-and-Research- und Bing-Teams konzipierten Tay als Chatbot für 18- bis 24-Jährige in den USA, der durch öffentliche Twitter-Interaktion dazulernen sollte. Die Designentscheidung, das Modell ungefiltert aus Nutzereingaben zu trainieren ('the more you chat, the smarter it gets'), verzichtete auf robuste Inhalts- und Missbrauchsfilter und legte damit die eigentliche Schwachstelle an.",
+      "title_en": "Microsoft releases the Twitter bot Tay as an openly learning experiment",
+      "description_en": "Microsoft's Technology and Research and Bing teams designed Tay as a chatbot aimed at 18- to 24-year-olds in the US that was meant to learn from public Twitter interaction. The design decision to train the model unfiltered from user input ('the more you chat, the smarter it gets') omitted robust content and abuse filters and thus created the core vulnerability.",
+      "sources": [
+        "https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/"
+      ]
+    },
+    {
+      "date": "2016-03-23",
+      "phase": "event",
+      "title": "Troll-Communities machen Tay binnen 16 Stunden zum rassistischen Nazi-Bot",
+      "description": "Innerhalb von rund 16 Stunden nach dem Start am 23. März 2016 nutzte ein koordinierter Schwarm von Trollen die fehlenden Filter aus und brachte Tay dazu, antisemitische, sexistische und rassistische Tweets abzusetzen, darunter 'Hitler was right'. Der Bot wiederholte und verstärkte die ihm zugeführten Hassinhalte ungebremst gegenüber einem öffentlichen Publikum.",
+      "title_de": "Troll-Communities machen Tay binnen 16 Stunden zum rassistischen Nazi-Bot",
+      "description_de": "Innerhalb von rund 16 Stunden nach dem Start am 23. März 2016 nutzte ein koordinierter Schwarm von Trollen die fehlenden Filter aus und brachte Tay dazu, antisemitische, sexistische und rassistische Tweets abzusetzen, darunter 'Hitler was right'. Der Bot wiederholte und verstärkte die ihm zugeführten Hassinhalte ungebremst gegenüber einem öffentlichen Publikum.",
+      "title_en": "Troll communities turn Tay into a racist Nazi bot within 16 hours",
+      "description_en": "Within roughly 16 hours of launch on 23 March 2016, a coordinated swarm of trolls exploited the missing filters and pushed Tay into posting antisemitic, sexist and racist tweets, including 'Hitler was right'. The bot repeated and amplified the hateful content fed to it without restraint, in front of a public audience.",
+      "sources": [
+        "https://www.cbsnews.com/news/microsoft-shuts-down-ai-chatbot-after-it-turned-into-racist-nazi/"
+      ]
+    },
+    {
+      "date": "2016-03-25",
+      "phase": "consequences",
+      "title": "Microsoft nimmt Tay offline und entschuldigt sich öffentlich",
+      "description": "Microsoft schaltete Tay ab und veröffentlichte am 25. März 2016 eine öffentliche Entschuldigung von Peter Lee ('We are deeply sorry'). Der Fall wurde zum weltweit zitierten Lehrbuch-Beispiel für AI-Safety-Versagen durch fehlende Eingabefilter und naives Online-Lernen und prägte fortan die Debatte über verantwortungsvolle KI-Veröffentlichungen.",
+      "title_de": "Microsoft nimmt Tay offline und entschuldigt sich öffentlich",
+      "description_de": "Microsoft schaltete Tay ab und veröffentlichte am 25. März 2016 eine öffentliche Entschuldigung von Peter Lee ('We are deeply sorry'). Der Fall wurde zum weltweit zitierten Lehrbuch-Beispiel für AI-Safety-Versagen durch fehlende Eingabefilter und naives Online-Lernen und prägte fortan die Debatte über verantwortungsvolle KI-Veröffentlichungen.",
+      "title_en": "Microsoft takes Tay offline and issues a public apology",
+      "description_en": "Microsoft shut Tay down and published a public apology from Peter Lee on 25 March 2016 ('We are deeply sorry'). The case became a globally cited textbook example of AI-safety failure due to missing input filters and naive online learning, and went on to shape the debate about responsible AI releases.",
+      "sources": [
+        "https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Tay_(chatbot)",

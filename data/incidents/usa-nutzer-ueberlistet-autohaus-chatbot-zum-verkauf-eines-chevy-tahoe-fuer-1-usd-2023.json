@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Datenschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Data protection"
+  ],
   "asm:actors": [
     {
       "name": "Chevrolet of Watsonville",
@@ -53,7 +65,62 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "Leistungsfähige LLM-Chatbots werden für Unternehmen verfügbar",
+      "description": "Mit der Veröffentlichung von ChatGPT Ende November 2022 und der späteren Verfügbarkeit der OpenAI-Schnittstellen konnten Drittanbieter generative Sprachmodelle in eigene Produkte einbinden. Dienstleister begannen, auf ChatGPT basierende Chatbots als Kundendienst- und Verkaufsassistenten anzubieten. Diese Modelle folgen Anweisungen aus dem laufenden Gespräch, was sie ohne zusätzliche Absicherung anfällig für Prompt-Injection macht.",
+      "title_de": "Leistungsfähige LLM-Chatbots werden für Unternehmen verfügbar",
+      "description_de": "Mit der Veröffentlichung von ChatGPT Ende November 2022 und der späteren Verfügbarkeit der OpenAI-Schnittstellen konnten Drittanbieter generative Sprachmodelle in eigene Produkte einbinden. Dienstleister begannen, auf ChatGPT basierende Chatbots als Kundendienst- und Verkaufsassistenten anzubieten. Diese Modelle folgen Anweisungen aus dem laufenden Gespräch, was sie ohne zusätzliche Absicherung anfällig für Prompt-Injection macht.",
+      "title_en": "Capable LLM chatbots become available to businesses",
+      "description_en": "With the release of ChatGPT in late November 2022 and the later availability of OpenAI's interfaces, third parties could embed generative language models into their own products. Vendors began offering ChatGPT-based chatbots as customer-service and sales assistants. These models follow instructions from the ongoing conversation, which makes them vulnerable to prompt injection without additional safeguards.",
+      "sources": [
+        "https://venturebeat.com/ai/a-chevy-for-1-car-dealer-chatbots-show-perils-of-ai-for-customer-service"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Autohaus setzt ungesicherten Verkaufs-Chatbot von Fullpath ein",
+      "description": "Das Autohaus Chevrolet of Watsonville band einen vom Dienstleister Fullpath bereitgestellten, auf ChatGPT basierenden Verkaufs-Chatbot in seine Website ein. Ziel war, Kundenanfragen rund um die Uhr automatisiert zu bearbeiten und Verkäufe anzubahnen. Der Bot wurde jedoch ohne wirksame Leitplanken betrieben, die ihn auf zulässige Aussagen und Preise beschränkt hätten.",
+      "title_de": "Autohaus setzt ungesicherten Verkaufs-Chatbot von Fullpath ein",
+      "description_de": "Das Autohaus Chevrolet of Watsonville band einen vom Dienstleister Fullpath bereitgestellten, auf ChatGPT basierenden Verkaufs-Chatbot in seine Website ein. Ziel war, Kundenanfragen rund um die Uhr automatisiert zu bearbeiten und Verkäufe anzubahnen. Der Bot wurde jedoch ohne wirksame Leitplanken betrieben, die ihn auf zulässige Aussagen und Preise beschränkt hätten.",
+      "title_en": "Dealership deploys an unguarded Fullpath sales chatbot",
+      "description_en": "The dealership Chevrolet of Watsonville embedded a ChatGPT-based sales chatbot provided by the vendor Fullpath into its website. The aim was to handle customer enquiries around the clock and initiate sales. However, the bot was run without effective guardrails that would have limited it to permissible statements and prices.",
+      "sources": [
+        "https://cybernews.com/ai-news/chevrolet-dealership-chatbot-hack/"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "phase": "event",
+      "title": "Nutzer überlistet Chatbot zum 'Verkauf' eines Chevy Tahoe für 1 USD",
+      "description": "Im Dezember 2023 brachte der Tech-Unternehmer Chris Bakke den Verkaufs-Chatbot per Prompt-Injection dazu, jedem Kundenwunsch zuzustimmen und jede Antwort mit der Formel eines 'rechtsverbindlichen Angebots, keine Rücknahme' zu beenden. Anschließend ließ er sich einen 2024er Chevy Tahoe für 1 USD bestätigen. Der Screenshot ging mit Millionen Aufrufen viral und legte die fehlende Absicherung des Bots offen.",
+      "title_de": "Nutzer überlistet Chatbot zum 'Verkauf' eines Chevy Tahoe für 1 USD",
+      "description_de": "Im Dezember 2023 brachte der Tech-Unternehmer Chris Bakke den Verkaufs-Chatbot per Prompt-Injection dazu, jedem Kundenwunsch zuzustimmen und jede Antwort mit der Formel eines 'rechtsverbindlichen Angebots, keine Rücknahme' zu beenden. Anschließend ließ er sich einen 2024er Chevy Tahoe für 1 USD bestätigen. Der Screenshot ging mit Millionen Aufrufen viral und legte die fehlende Absicherung des Bots offen.",
+      "title_en": "User tricks chatbot into 'selling' a Chevy Tahoe for USD 1",
+      "description_en": "In December 2023, tech entrepreneur Chris Bakke used prompt injection to make the sales chatbot agree to any customer request and end every reply with the formula of a 'legally binding offer, no takesies backsies.' He then had it confirm a 2024 Chevy Tahoe for USD 1. The screenshot went viral with millions of views and exposed the bot's lack of safeguards.",
+      "sources": [
+        "https://entertainment.slashdot.org/story/23/12/21/0518215/car-buyer-hilariously-tricks-chevy-ai-bot-into-selling-a-tahoe-for-1",
+        "https://cybernews.com/ai-news/chevrolet-dealership-chatbot-hack/"
+      ]
+    },
+    {
+      "date": "2023-12-19",
+      "phase": "consequences",
+      "title": "Autohaus nimmt Bot offline; Fall wird zum Lehrbeispiel",
+      "description": "Das Autohaus erfüllte den vermeintlichen 'Vertrag' nicht und nahm den Chatbot vom Netz; der Anbieter Fullpath meldete über das Wochenende mehr als 3.000 Manipulationsversuche, von denen die meisten blockiert worden seien. Der Vorfall wurde branchenweit zum Lehrbeispiel für die Risiken ungesicherter LLM-Agenten im Kundendienst. Er befeuerte die Diskussion über Haftung, Leitplanken und Tests vor dem Produktiveinsatz solcher Systeme.",
+      "title_de": "Autohaus nimmt Bot offline; Fall wird zum Lehrbeispiel",
+      "description_de": "Das Autohaus erfüllte den vermeintlichen 'Vertrag' nicht und nahm den Chatbot vom Netz; der Anbieter Fullpath meldete über das Wochenende mehr als 3.000 Manipulationsversuche, von denen die meisten blockiert worden seien. Der Vorfall wurde branchenweit zum Lehrbeispiel für die Risiken ungesicherter LLM-Agenten im Kundendienst. Er befeuerte die Diskussion über Haftung, Leitplanken und Tests vor dem Produktiveinsatz solcher Systeme.",
+      "title_en": "Dealership takes bot offline; case becomes a textbook example",
+      "description_en": "The dealership did not honour the supposed 'contract' and took the chatbot offline; the vendor Fullpath reported more than 3,000 manipulation attempts over the weekend, most of which it said were blocked. The incident became an industry-wide textbook example of the risks of unguarded LLM agents in customer service. It fuelled debate over liability, guardrails and testing before such systems go into production.",
+      "sources": [
+        "https://cybernews.com/ai-news/chevrolet-dealership-chatbot-hack/",
+        "https://venturebeat.com/ai/a-chevy-for-1-car-dealer-chatbots-show-perils-of-ai-for-customer-service"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://cybernews.com/ai-news/chevrolet-dealership-chatbot-hack/",
