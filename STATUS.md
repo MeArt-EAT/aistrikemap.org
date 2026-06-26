@@ -9,11 +9,11 @@
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2457 Incidents** · **2447 mit Reverse-TL (99.6 %)** · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2951** Mappings) · Lite-Bundle 7.9 MB (1.6 MB gzip) |
+| 📊 **Bestand** | **2457 Incidents** · **2457 mit Reverse-TL (100.0 %)** ✅ · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2951** Mappings) · Lite-Bundle 7.9 MB (1.6 MB gzip) |
 | 🔢 **Übergabe-Nr** | **#11** (2026-06-26) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **(2026-06-26, Übergabe #11)** **Reverse-TL-Feature praktisch KOMPLETT: 22 TL-Wellen 46–67** +519 Incidents (TL 78.5→**99.6 %**) — **Sev-2-Block (Wellen 46–65, +472) + Sev-1 (66–67, +47) abgeschlossen; Sev-5/4/3/2/1 alle abgearbeitet.** Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch in allen 22 Wellen durchgehend (6/6+6/6), 0 Stalls. **Neues Tooling: `scripts/validate-timelines.js`** (Pre-Commit-Validator: Chronologie inkl. monat-vs-tag, @id, genau-1-event, title==title_de, affectedRights-Parallelität, Smart-Char-Scan, Umlaut-Morphem-Gap-Scan). Verify deckte **9 needs-human**-Fälle auf (TL zurückgerollt); belegte Einzeldetail-Fehler bei korrekter Fall-Identität inline korrigiert; Korpus-Begriffe harmonisiert. Audit durchgehend 0. |
-| ➡️ **Nächster Schritt** | TL-Feature ist durch (99.6 %). Verbleibend nur **10 ohne TL: 9 needs-human + prabowo** (redaktionelle Entscheidungen, s.u.) — klären ergäbe ~100 %. ODER **korpusweiter Smart-Char-Sweep** (789 Files) · ODER Career-Daten via Dataset-Download · ODER AIAAIC Batch D · ODER `needs-review`-Cases sichten |
+| ✅ **Zuletzt fertig** | **(2026-06-26, Übergabe #11)** **Reverse-TL-Feature KOMPLETT — 2457/2457 = 100.0 %.** 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle geklärt** (Recherche-Workflow: prabowo→Anies Baswedan, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→Univ. of Washington/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert; 10/10 adversarial verifiziert). Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch durchgehend, 0 Stalls. **Neues Tooling: `scripts/validate-timelines.js`** (Pre-Commit-Validator). Slug/@id bei Korrekturen unverändert (Permalink; correctionNote in metadata wo Slug inhaltlich abweicht). Audit durchgehend 0. |
+| ➡️ **Nächster Schritt** | **Reverse-TL-Feature ist zu 100 % durch.** Nächste Baustellen: **korpusweiter Smart-Char-Sweep** (789 Files mit Em-Dash/Smart-Quotes in alten Display-Feldern) · ODER Career-Daten via Dataset-Download · ODER AIAAIC Batch D (pre-2015) · ODER `needs-review`-Cases sichten (~180, 20-30 Promotes) · ODER Slug-Migration der inhaltlich abweichenden Permalinks (estland/finnland/hmrc/prabowo) |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -27,10 +27,13 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 1. **AIAAIC Batch D** (pre-2015, ~300 Stubs) — letzter AIAAIC-Block, niedrige
    Prio (frühe Cases haben weniger Aktualität). Bringt aber historische Tiefe.
    Workflow: siehe Memory `aiaaic-import-workflow` + Übergabe #5.
-2. **Reverse-Timelines** — **2447 von 2457 (99.6 %)** haben die TL (Kern-Feature).
-   **Sev-5/4/3/2/1 ALLE abgearbeitet** ✓ (Sev-2: Wellen 46–65 +472; Sev-1: 66–67 +47;
-   Sev-3: #9/#10). **Verbleibend ohne TL: nur 10 needs-human-Fälle** (9 + prabowo) —
-   das TL-Feature ist damit praktisch komplett.
+2. **Reverse-Timelines** ✅ **KOMPLETT — 2457/2457 (100.0 %)** haben die TL (Kern-Feature).
+   Sev-5/4/3/2/1 alle abgearbeitet; **alle 10 needs-human-Fälle geklärt** (Recherche-
+   Workflow, 10/10 adversarial verifiziert — Details in Übergabe #11 + Commit `3e19118`).
+   Bei 5 Fällen weicht der URL-Slug jetzt inhaltlich ab (estland=Lettland, finnland=USA,
+   hmrc=2026, prabowo=Anies, ultraman=Hangzhou) — bewusst beibehalten (Permalink-
+   Stabilität), in `asm:metadata.asm:correctionNote` dokumentiert; optionale Slug-
+   Migration als spätere Aufgabe.
    Methode unverändert (Workflow, 24 Cases/Welle, Gen→adversariale Verify).
    **NEU: `scripts/validate-timelines.js`** als Pre-Commit-Validator je Welle
    (kapselt alle Checks; fing Datumsbereich + fehlendes title_de + length_ratio).
@@ -51,46 +54,19 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
    Chronologie-Sortierbeispiele + „kein Em-Dash" → Translit-Nacharbeit von 268
    (Welle 35) auf ~0. **Em-Dash-Normalisierung** robust via charCode (nicht
    Shell-Unicode-Regex). Detail: Memory `tl-workflow-methodik`.
-   **🔖 needs-human (TL bewusst NICHT gebaut/zurückgerollt, bleiben ohne TL — bei
-   Läufen via `grep -v` ausschließen):** Die adversariale Verify deckt vorbestehende
-   Daten-Qualitätsmängel auf. Offene redaktionelle Entscheidungen:
-   - `indonesien-...-prabowo`: Quellen dokumentieren Anies Baswedans Arabisch-
-     Deepfake, nicht Prabowo. → umbenennen ODER belegte Prabowo-Quelle nachreichen.
-   - `estland-...-devternity` (Welle 48): falsches Land — DevTernity ist in **Riga,
-     Lettland (LV)**, nicht Estland (`addressCountry=EE`). Skandal selbst korrekt
-     belegt. → Land EE→LV + name/title „Estland"→„Lettland"; Slug/@id/index.json-
-     Umbenennung nötig (Permalink-Bruch abwägen). TL nach Klärung neu baubar.
-   - `finnland-...-perspective-api` (Welle 48): arXiv:1702.08138 ist von der
-     **University of Washington** (Hosseini et al.), nicht Aalto/Padua — vermischt
-     mit dem separaten 2018-Paper arXiv:1808.09115 (Aalto/Padua, „love"-Trick).
-     → entscheiden, welches Paper der Incident abbildet; Land FI passt nur zum
-     2018-Paper (dann aber Titel/Datum/arXiv-ID anpassen).
-   - `china-...-ultraman-urheberrecht` (Welle 47): vermischt zwei reale Fälle —
-     **Guangzhou-Internetgericht** (Feb 2024, weltweit erster Fall, direkte
-     Verletzung, 10.000 CNY, kein LoRA, keine Berufung) und **Hangzhou/Acgnai**
-     (Sep 2024, mittelbare Verletzung, 30.000 CNY, LoRA, Berufung 30.12.2024).
-     Bestehende description + actors (Acgnai) bereits vermischt. → welchen Fall
-     abbilden, dann description/TL/actors/sources quellengedeckt neu schreiben.
-   - `indien-...-grok-chatbot` (Welle 50): Kern-Vorfall (Grok „Unhinged Mode" gibt
-     Hindi-Beschimpfungen aus, MeitY prüft) korrekt, aber 3 überzogene Behauptungen
-     - „MeitY warnt offiziell 16.3." (real nur Prüfung; formale Notice erst Jan 2026),
-     unbelegte „50-Crore-Strafe", falsche „§69A-Verletzung" (§69A kam aus X-Klage).
-     Belegt korrigierbar (Verify lieferte Fakten), aber rechtsrelevant → Mensch.
-   - `uk-...-hmrc-quantexa` (Welle 53): Vertrag real erst 14.5.2026, nicht 2024
-     (Slug/@id/startDate falsch); 4,6-Mrd-Mehreinnahmen gehören zu Connect/Palantir,
-     nicht Quantexa. → umdatieren+Slug anpassen ODER auf Connect-Story umstellen.
-   - `uk-...-bradford-literature-festival` (Welle 54): doctrine-Phase erfindet
-     Agentur-/Brief-Details (real: KI nur frühe Source-Bilder für 2/6 Motive). Kern-
-     Event korrekt. → doctrine quellengedeckt neu schreiben.
-   - `usa-...-iphone-x-face-id` (Welle 54): erfundene Ethnie „libanesisch-amerikanisch"
-     über reale Privatpersonen (Malik/Sherwani süd-/zentralasiatisch; AIAAIC-Mislabel
-     „global-arab-boy"). Personenbezogen → Ethnie-Zuschreibung entfernen/prüfen.
-   - `usa-...-amazon-lieferdrohne` (Welle 55): Phasen-Verstoß — doctrine (2022) nach
-     event (2021-06). Absturz real Juni 2021; doctrine-Eintrag beschreibt Zeitraum
-     NACH dem Ereignis → doctrine-Phase auf echten Vorläufer-Zeitraum umstrukturieren.
-   - `usa-...-tesla-burger-king` (Welle 67): falsche Urheberschaft — „Andy Weedman"
-     gehört zum separaten Tesla-Billboard-Fall (2021), nicht zum Burger-King-Logo-Video
-     (Juni 2020). Burger-King-Kern korrekt → Eigennamen entfernen/korrigieren.
+   **🔖 needs-human — ALLE 10 GEKLÄRT ✅ (2026-06-26, Commit `3e19118`):** Die
+   adversariale Verify hatte über die Wellen 10 vorbestehende Daten-Qualitätsmängel
+   aufgedeckt (Fehlzuordnungen, falsche Länder/Urheber, vermischte Fälle, überzogene
+   Behauptungen). Per dediziertem Recherche-Workflow (10 Korrektur- + 10 Verify-Agenten,
+   10/10 als korrekt bestätigt, WebSearch durchgehend) quellengedeckt korrigiert + TL
+   gebaut: prabowo→**Anies Baswedan**, ultraman→**Hangzhou/Acgnai** (CN, 2024-09),
+   devternity→**Lettland**, perspective-api→**Univ. of Washington/USA** (2017),
+   grok (MeitY-/Strafe-/§69A-Behauptungen entschärft), hmrc-quantexa (→2026-05),
+   bradford (doctrine belegt), iphone (Ethnie entfernt), amazon-lieferdrohne (Phasen
+   korrigiert), tesla-burger-king (Eigenname entfernt). **Slug/@id/Dateiname bei allen
+   unverändert** (Permalink-Stabilität) — wo der Slug jetzt inhaltlich abweicht
+   (estland/finnland/hmrc/prabowo/ultraman), ist dies in `asm:metadata.asm:correctionNote`
+   dokumentiert; optionale Slug-Migration als spätere Aufgabe.
    ⚠️ **Korpusweiter Smart-Char-Befund (2026-06-25):** **789 von 2457 Files** haben
    Em-Dash (~5090×), En-Dash (~562×) oder Smart-Quotes (~48×) in Display-Feldern
    (v. a. alte Files; die neuen TL-Texte nutzen ` - `). Die 48 Smart-Quotes sind
@@ -139,7 +115,7 @@ Briefings: `data/incident-candidates/_enrichment-briefing.md` (Abschnitt 1b
 Datums-Verifikation), `_timeline-briefing.md`.
 
 ## 📜 Übergabe-Historie (neueste zuerst)
-- **#11** 2026-06-26 → `docs/planung/übergabe-2026-06-26-sev2-offensive.md` — **Reverse-TL-Feature praktisch KOMPLETT: 22 TL-Wellen 46–67** (+519, TL 78.5→**99.6 %**) — Sev-2-Block (46–65, +472) + Sev-1 (66–67, +47); Sev-5/4/3/2/1 alle abgearbeitet, nur 10 needs-human offen. Neues Tooling `scripts/validate-timelines.js` (Pre-Commit-Validator, Morphem-Gap-Scan); 9 needs-human-Fälle (ultraman/devternity/perspective-api/grok/hmrc-quantexa/bradford/iphone-face-id/amazon-lieferdrohne/tesla-burger-king) + TL zurückgerollt; belegte Einzeldetail-Fehler bei korrekter Identität inline korrigiert; Korpus-Begriffe harmonisiert (Gender/LGBTQ/Due-process), WebSearch in allen 22 Wellen durchgehend, 0 Stalls, Audit 0, ~40 Commits gepusht
+- **#11** 2026-06-26 → `docs/planung/übergabe-2026-06-26-sev2-offensive.md` — **Reverse-TL-Feature KOMPLETT: 2457/2457 = 100.0 %** — 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle per Recherche-Workflow geklärt** (10/10 adversarial verifiziert; prabowo→Anies, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→UW/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert). Neues Tooling `scripts/validate-timelines.js` (Pre-Commit-Validator, Morphem-Gap-Scan); Korpus-Begriffe harmonisiert (Gender/LGBTQ/Due-process); WebSearch durchgehend, 0 Stalls, Audit 0; Slug/@id stabil (correctionNote wo abweichend), ~45 Commits gepusht
 - **#10** 2026-06-25 → `docs/planung/übergabe-2026-06-25-sev3-abschluss-wellen-34-45.md` — **12 Sev-3-TL-Wellen 34–45** (+288, TL 66.7→**78.5 %**), **Sev-3-Block abgeschlossen** (Sev-5/4/3 alle ~100 %), Prompt-Härtung drückte Translit-Nacharbeit auf ~0, Validator um @id/Chronologie/Em-Dash erweitert, Map 2903→2951, User-Faktenkorrektur New-Orleans-6:1, korpusweiter Smart-Char-Befund (789 Files), 12+ Commits gepusht
 - **#9** 2026-06-21 → `docs/planung/übergabe-2026-06-21-sev3-wellen-24-33-und-websearch-vorfall.md` — **10 weitere Sev-3-TL-Wellen 24–33** (+240, TL 57.0→**66.7 %**, kumuliert 17–33 = +407), WebSearch-Ausfall-Vorfall (Welle 26 verworfen + frisch wiederholt), laufende Translit-Map-Pflege (2870→2903), 19 Commits gepusht
 - **#8** 2026-06-21 → `docs/planung/übergabe-2026-06-21-sev3-wellen-17-23-und-translit-luecke.md` — **7 Sev-3-TL-Wellen 17–23** (+167, TL 50.2→**57.0 %**) via Workflow-Tool + adversariale Verify (echte Faktenfehler gefangen), korpusweiter Translit-Map-Lückenschluss (+96, Map 2870), 1 Fehlzuordnung (prabowo) zurückgehalten

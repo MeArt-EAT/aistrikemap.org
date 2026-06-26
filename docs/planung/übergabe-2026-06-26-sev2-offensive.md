@@ -1,21 +1,21 @@
-# Übergabe #11 — Reverse-TL-Feature praktisch KOMPLETT (Wellen 46–67)
+# Übergabe #11 — Reverse-TL-Feature KOMPLETT (100 %, Wellen 46–67 + needs-human)
 
 **Datum:** 2026-06-26
 **Vorgänger:** #10 (2026-06-25, Sev-3-Block abgeschlossen, TL 78.5 %)
-**Bestand danach:** 2457 Incidents · **2447 mit Reverse-TL (99.6 %)** · 0 Audit-Findings
+**Bestand danach:** 2457 Incidents · **2457 mit Reverse-TL (100.0 %)** ✅ · 0 Audit-Findings
 
 ---
 
 ## Zusammenfassung
 
 Nach Abschluss des Sev-3-Blocks (#10) wurden in einer Session die **Sev-2- und
-Sev-1-Ebenen** komplett abgearbeitet — gleiche erprobte Workflow-Methode (24
-Cases/Welle, Stufe 1 WebSearch-grounded Generieren → Stufe 2 unabhängige
-adversariale Verify). **22 Wellen (46–67), +519 Reverse-Timelines, TL-Quote
-78.5 → 99.6 %**: Sev-2 (Wellen 46–65, +472; 80/85/90/95%-Marken) + Sev-1
-(Wellen 66–67, +47). **Sev-5/4/3/2/1 sind damit alle abgearbeitet — das
-Reverse-TL-Feature ist praktisch komplett.** Verbleibend ohne TL: nur **10
-needs-human-Fälle** (9 + prabowo, redaktionelle Entscheidungen).
+Sev-1-Ebenen** komplett abgearbeitet UND **alle 10 verbliebenen needs-human-Fälle
+geklärt** — gleiche erprobte Workflow-Methode (24 Cases/Welle, Stufe 1 WebSearch-
+grounded Generieren → Stufe 2 unabhängige adversariale Verify). **22 TL-Wellen
+(46–67), +519 Reverse-Timelines** (Sev-2: 46–65, +472; Sev-1: 66–67, +47) **+ 10
+needs-human-Korrekturen → TL-Quote 78.5 → 100.0 % (2457/2457).** Das
+Reverse-TL-Feature ist damit vollständig abgeschlossen; Sev-5/4/3/2/1 alle
+abgearbeitet, kein Incident mehr ohne TL.
 
 | Welle | Cases | pass / fix / needs-human | Δ TL | TL gesamt | Besonderheit |
 |---|---|---|---|---|---|
@@ -81,7 +81,9 @@ Bei Sev-3 fing die Verify überwiegend Halluzinationen in der *selbst gebauten*
 TL. Bei Sev-2 (älterer Bestand, oft AIAAIC-Import) deckt sie zusätzlich **Fehler
 im vorbestehenden Incident-Datensatz** auf — Land, Urheberschaft, Fall-Identität,
 überzogene Behauptungen. **Pro Welle ~1 needs-human** (W47/48/50/53/54/55/67). 9 Fälle
-waren nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
+wurden zunächst zurückgerollt; **am 2026-06-26 ALLE 9 + prabowo per Recherche-Workflow
+geklärt** (10 Korrektur- + 10 Verify-Agenten, 10/10 als korrekt bestätigt, Commit
+`3e19118`) → TL-Quote 100 %. Korrektur-Richtung pro Fall (Slug/@id stets unverändert):
 
 1. **`china-...-ultraman-urheberrecht`** (W47) — vermischt **zwei reale Fälle**:
    Guangzhou-Internetgericht (Feb 2024, weltweit erster Fall, direkte Verletzung,
@@ -210,17 +212,18 @@ b5d12b3  Reverse-TL Sev-2 Welle 62: +24 (2328, 94.7 %)
 752da8e  Übergabe #11 FINAL (Sev-2-Block)
 fe953ea  Reverse-TL Sev-1 Welle 66: +24 (2424, 98.7 %)
 0790f12  Reverse-TL Sev-1 Welle 67 (FINAL): +23 (2447, 99.6 %) - Sev-1 abgeschlossen
+bfa4434  Übergabe #11 FINAL (Sev-1, 99.6 %)
+3e19118  needs-human geklärt: 10/10 korrigiert + TL gebaut - Reverse-TL 100.0 %
 ```
 
 ---
 
 ## Nächster Schritt
 
-Das Reverse-TL-Feature ist praktisch komplett (99.6 %, Sev-5/4/3/2/1 alle abgearbeitet).
-Verbleibend nur 10 ohne TL. Optionen:
-- **9 needs-human + prabowo klären** → ~100 %: ultraman / devternity / perspective-api /
-  grok / hmrc-quantexa / bradford / iphone-face-id / amazon-lieferdrohne / tesla-burger-king.
-  Pro Fall: realen Sachverhalt festlegen (Land/Identität/Quelle), korrekt neu schreiben + TL.
-- ODER **korpusweiter Smart-Char-Sweep** (789 Files mit Em-Dash/Smart-Quotes in alten
+**Das Reverse-TL-Feature ist zu 100 % abgeschlossen** (2457/2457; Sev-5..1 + alle
+needs-human). Kein TL-Bau mehr offen. Nächste Baustellen:
+- **Korpusweiter Smart-Char-Sweep** (789 Files mit Em-Dash/Smart-Quotes in alten
   Display-Feldern — neue TL-Texte sind sauber, aber Altbestand inkonsistent).
-- ODER Career-Daten via Dataset-Download, AIAAIC Batch D, `needs-review`-Cases sichten.
+- **Slug-Migration** der 5 inhaltlich abweichenden Permalinks (estland=Lettland,
+  finnland=USA, hmrc=2026, prabowo=Anies, ultraman=Hangzhou) — optional, mit Redirect.
+- Career-Daten via Dataset-Download, AIAAIC Batch D (pre-2015), `needs-review`-Cases sichten.
