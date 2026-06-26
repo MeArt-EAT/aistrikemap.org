@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-israel-wiz-cloud-security-deepfake-voicemail-von-ceo-rappaport-an-dutzende",
-  "name": "USA/Israel: Wiz (Cloud-Security) — Deepfake-Voicemail von CEO Rappaport an Dutzende Mitarbeitende",
-  "name_de": "USA/Israel: Wiz (Cloud-Security) — Deepfake-Voicemail von CEO Rappaport an Dutzende Mitarbeitende",
-  "name_en": "USA/Israel: Wiz (cloud security) — deepfake voicemail of CEO Rappaport to dozens of staff",
+  "name": "USA/Israel: Wiz (Cloud-Security) - Deepfake-Voicemail von CEO Rappaport an Dutzende Mitarbeitende",
+  "name_de": "USA/Israel: Wiz (Cloud-Security) - Deepfake-Voicemail von CEO Rappaport an Dutzende Mitarbeitende",
+  "name_en": "USA/Israel: Wiz (cloud security) - deepfake voicemail of CEO Rappaport to dozens of staff",
   "description": "Im Oktober 2024 gab Wiz-CEO Assaf Rappaport auf der TechCrunch Disrupt bekannt, dass Angreifer aus Audio-Schnipseln einer öffentlichen Konferenzrede einen Voice-Deepfake von ihm gebaut und an Dutzende Wiz-Mitarbeitende geschickt hatten, um Zugangsdaten abzugreifen. Der Angriff scheiterte, weil Rappaports Vortragsstimme deutlich von seiner Alltagsstimme abweicht (Lampenfieber) und die Mitarbeitenden misstrauisch wurden. Wiz war zu diesem Zeitpunkt ein 12-Mrd-Dollar-Cloud-Security-Start-up.",
   "description_de": "Im Oktober 2024 gab Wiz-CEO Assaf Rappaport auf der TechCrunch Disrupt bekannt, dass Angreifer aus Audio-Schnipseln einer öffentlichen Konferenzrede einen Voice-Deepfake von ihm gebaut und an Dutzende Wiz-Mitarbeitende geschickt hatten, um Zugangsdaten abzugreifen. Der Angriff scheiterte, weil Rappaports Vortragsstimme deutlich von seiner Alltagsstimme abweicht (Lampenfieber) und die Mitarbeitenden misstrauisch wurden. Wiz war zu diesem Zeitpunkt ein 12-Mrd-Dollar-Cloud-Security-Start-up.",
   "description_en": "In October 2024 Wiz CEO Assaf Rappaport disclosed at TechCrunch Disrupt that attackers had built a voice deepfake of him from audio clips of a public conference speech and sent it to dozens of Wiz employees attempting to harvest login credentials. The attack failed because Rappaport's speaking-anxiety-affected stage voice differs noticeably from his everyday voice, raising suspicion. Wiz was a USD 12 bn cloud-security start-up at the time.",
@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datensicherheit",
+    "Schutz vor Manipulation",
+    "Datenschutz",
+    "Recht am eigenen Bild und an der eigenen Stimme"
+  ],
+  "asm:affectedRights_de": [
+    "Datensicherheit",
+    "Schutz vor Manipulation",
+    "Datenschutz",
+    "Recht am eigenen Bild und an der eigenen Stimme"
+  ],
+  "asm:affectedRights_en": [
+    "Data security",
+    "Protection from manipulation",
+    "Data protection",
+    "Right to one's own image and voice"
+  ],
   "asm:actors": [
     {
       "name": "Unidentified attackers",
@@ -53,7 +68,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023",
+      "phase": "infrastructure",
+      "title": "Kommerzielle Stimmklon-Tools und öffentliche Reden liefern die Angriffsbasis",
+      "description": "Mit der breiten Verfügbarkeit kommerzieller Sprach-KI ab 2023 genügen schon wenige Sekunden Audio, um eine überzeugende Stimmkopie einer Person zu erzeugen. Öffentlich abrufbare Konferenz- und Vortragsmitschnitte von Führungskräften wurden so zur frei zugänglichen Trainingsquelle für Stimm-Deepfakes.",
+      "title_de": "Kommerzielle Stimmklon-Tools und öffentliche Reden liefern die Angriffsbasis",
+      "description_de": "Mit der breiten Verfügbarkeit kommerzieller Sprach-KI ab 2023 genügen schon wenige Sekunden Audio, um eine überzeugende Stimmkopie einer Person zu erzeugen. Öffentlich abrufbare Konferenz- und Vortragsmitschnitte von Führungskräften wurden so zur frei zugänglichen Trainingsquelle für Stimm-Deepfakes.",
+      "title_en": "Commercial voice-cloning tools and public talks supply the attack basis",
+      "description_en": "With commercial voice AI widely available from 2023, just a few seconds of audio are enough to produce a convincing copy of a person's voice. Publicly available conference and talk recordings of executives thus became a freely accessible training source for voice deepfakes.",
+      "sources": [
+        "https://www.entrepreneur.com/business-news/hackers-sent-a-deepfake-of-wiz-ceo-to-dozens-of-employees/482027"
+      ]
+    },
+    {
+      "date": "2024",
+      "phase": "doctrine",
+      "title": "CEO-Stimmimitation wird zum gängigen Vishing-Muster",
+      "description": "Cyberkriminelle setzten zunehmend auf Voice-Phishing (Vishing), bei dem die geklonte Stimme einer Autoritätsperson Mitarbeitende zur Herausgabe von Zugangsdaten bewegen soll. Das niedrige Entdeckungsrisiko und die hohe Wirkung machten gezielte CEO-Deepfakes gegen Tech-Unternehmen zu einer attraktiven Angriffsmethode.",
+      "title_de": "CEO-Stimmimitation wird zum gängigen Vishing-Muster",
+      "description_de": "Cyberkriminelle setzten zunehmend auf Voice-Phishing (Vishing), bei dem die geklonte Stimme einer Autoritätsperson Mitarbeitende zur Herausgabe von Zugangsdaten bewegen soll. Das niedrige Entdeckungsrisiko und die hohe Wirkung machten gezielte CEO-Deepfakes gegen Tech-Unternehmen zu einer attraktiven Angriffsmethode.",
+      "title_en": "CEO voice impersonation becomes a common vishing pattern",
+      "description_en": "Cybercriminals increasingly relied on voice phishing (vishing), in which the cloned voice of an authority figure is meant to push employees into handing over credentials. The low risk of getting caught and high impact made targeted CEO deepfakes against tech companies an attractive method.",
+      "sources": [
+        "https://techcrunch.com/2024/10/28/wiz-ceo-says-company-was-targeted-with-deepfake-attack-that-used-his-voice/"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "event",
+      "title": "USA/Israel: Wiz (Cloud-Security) - Deepfake-Voicemail von CEO Rappaport an Dutzende Mitarbeitende",
+      "description": "Im Oktober 2024 gab Wiz-CEO Assaf Rappaport auf der TechCrunch Disrupt bekannt, dass Angreifer aus Audio-Schnipseln einer öffentlichen Konferenzrede einen Voice-Deepfake von ihm gebaut und an Dutzende Wiz-Mitarbeitende geschickt hatten, um Zugangsdaten abzugreifen. Der Angriff scheiterte, weil Rappaports Vortragsstimme deutlich von seiner Alltagsstimme abweicht (Lampenfieber) und die Mitarbeitenden misstrauisch wurden. Wiz war zu diesem Zeitpunkt ein 12-Mrd-Dollar-Cloud-Security-Start-up.",
+      "title_de": "USA/Israel: Wiz (Cloud-Security) - Deepfake-Voicemail von CEO Rappaport an Dutzende Mitarbeitende",
+      "description_de": "Im Oktober 2024 gab Wiz-CEO Assaf Rappaport auf der TechCrunch Disrupt bekannt, dass Angreifer aus Audio-Schnipseln einer öffentlichen Konferenzrede einen Voice-Deepfake von ihm gebaut und an Dutzende Wiz-Mitarbeitende geschickt hatten, um Zugangsdaten abzugreifen. Der Angriff scheiterte, weil Rappaports Vortragsstimme deutlich von seiner Alltagsstimme abweicht (Lampenfieber) und die Mitarbeitenden misstrauisch wurden. Wiz war zu diesem Zeitpunkt ein 12-Mrd-Dollar-Cloud-Security-Start-up.",
+      "title_en": "USA/Israel: Wiz (cloud security) - deepfake voicemail of CEO Rappaport to dozens of staff",
+      "description_en": "In October 2024 Wiz CEO Assaf Rappaport disclosed at TechCrunch Disrupt that attackers had built a voice deepfake of him from audio clips of a public conference speech and sent it to dozens of Wiz employees attempting to harvest login credentials. The attack failed because Rappaport's speaking-anxiety-affected stage voice differs noticeably from his everyday voice, raising suspicion. Wiz was a USD 12 bn cloud-security start-up at the time.",
+      "sources": [
+        "https://techcrunch.com/2024/10/28/wiz-ceo-says-company-was-targeted-with-deepfake-attack-that-used-his-voice/"
+      ]
+    },
+    {
+      "date": "2024-10-28",
+      "phase": "consequences",
+      "title": "Angriff scheitert, öffentliche Offenlegung mahnt Branche",
+      "description": "Der Angriff blieb folgenlos, weil die Belegschaft die geklonte Vortragsstimme als unecht erkannte; Wiz konnte die Herkunft nachverfolgen, die Täter aber nicht identifizieren. Rappaports Offenlegung auf der Bühne machte den Fall zu einem viel zitierten Lehrstück dafür, wie auch hoch spezialisierte Sicherheitsfirmen Ziel von KI-gestütztem Social Engineering werden.",
+      "title_de": "Angriff scheitert, öffentliche Offenlegung mahnt Branche",
+      "description_de": "Der Angriff blieb folgenlos, weil die Belegschaft die geklonte Vortragsstimme als unecht erkannte; Wiz konnte die Herkunft nachverfolgen, die Täter aber nicht identifizieren. Rappaports Offenlegung auf der Bühne machte den Fall zu einem viel zitierten Lehrstück dafür, wie auch hoch spezialisierte Sicherheitsfirmen Ziel von KI-gestütztem Social Engineering werden.",
+      "title_en": "Attack fails, public disclosure warns the industry",
+      "description_en": "The attack had no impact because staff recognized the cloned stage voice as fake; Wiz could trace its origin but not identify the perpetrators. Rappaport's on-stage disclosure turned the case into a widely cited lesson in how even highly specialized security firms become targets of AI-driven social engineering.",
+      "sources": [
+        "https://techcrunch.com/2024/10/28/wiz-ceo-says-company-was-targeted-with-deepfake-attack-that-used-his-voice/",
+        "https://www.entrepreneur.com/business-news/hackers-sent-a-deepfake-of-wiz-ceo-to-dozens-of-employees/482027"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/10/28/wiz-ceo-says-company-was-targeted-with-deepfake-attack-that-used-his-voice/",

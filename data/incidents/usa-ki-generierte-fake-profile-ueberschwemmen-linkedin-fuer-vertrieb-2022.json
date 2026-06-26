@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Recht auf korrekte Information"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Datenschutz",
+    "Recht auf korrekte Information"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Consumer protection",
+    "Data protection",
+    "Right to accurate information"
+  ],
   "asm:actors": [
     {
       "name": "Diverse Unternehmen / various companies (LinkedIn lead-gen)",
@@ -48,7 +63,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2019",
+      "phase": "infrastructure",
+      "title": "StyleGAN macht fotorealistische Kunstgesichter frei verfügbar",
+      "description": "NVIDIA veröffentlichte 2019 das Modell StyleGAN, das täuschend echte, aber nicht existierende menschliche Gesichter erzeugt. Frei zugängliche Dienste wie thispersondoesnotexist.com stellten solche Gesichter danach per Mausklick bereit. Damit standen beliebig viele einzigartige Profilbilder zur Verfügung, die sich keiner echten Person zuordnen lassen.",
+      "title_de": "StyleGAN macht fotorealistische Kunstgesichter frei verfügbar",
+      "description_de": "NVIDIA veröffentlichte 2019 das Modell StyleGAN, das täuschend echte, aber nicht existierende menschliche Gesichter erzeugt. Frei zugängliche Dienste wie thispersondoesnotexist.com stellten solche Gesichter danach per Mausklick bereit. Damit standen beliebig viele einzigartige Profilbilder zur Verfügung, die sich keiner echten Person zuordnen lassen.",
+      "title_en": "StyleGAN makes photorealistic synthetic faces freely available",
+      "description_en": "In 2019 NVIDIA released StyleGAN, a model that generates deceptively real but non-existent human faces. Freely accessible services such as thispersondoesnotexist.com then served such faces with a single click. This made an unlimited supply of unique profile pictures available that cannot be traced to any real person.",
+      "sources": [
+        "https://www.theregister.com/2022/03/28/ai_fake_linkedin_faces/"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Lead-Generierung übernimmt Taktiken aus Einfluss-Operationen",
+      "description": "Unternehmen entdeckten, dass sich mit synthetischen Identitäten LinkedIns Limits für Kontaktanfragen umgehen und der Vertrieb skalieren lässt, ohne echtes Personal einzustellen. Die Stanford-Forschenden beschrieben dies als Übertragung von Methoden politischer Einfluss-Operationen in die kommerzielle Akquise: Fake-Profile als billiges, anonymes Werkzeug der Kundenansprache.",
+      "title_de": "Lead-Generierung übernimmt Taktiken aus Einfluss-Operationen",
+      "description_de": "Unternehmen entdeckten, dass sich mit synthetischen Identitäten LinkedIns Limits für Kontaktanfragen umgehen und der Vertrieb skalieren lässt, ohne echtes Personal einzustellen. Die Stanford-Forschenden beschrieben dies als Übertragung von Methoden politischer Einfluss-Operationen in die kommerzielle Akquise: Fake-Profile als billiges, anonymes Werkzeug der Kundenansprache.",
+      "title_en": "Lead generation borrows tactics from influence operations",
+      "description_en": "Companies discovered that synthetic identities let them bypass LinkedIn's limits on connection requests and scale up sales without hiring real staff. The Stanford researchers described this as transferring methods from political influence operations into commercial outreach: fake profiles as a cheap, anonymous tool for customer acquisition.",
+      "sources": [
+        "https://misinforeview.hks.harvard.edu/article/research-note-this-salesperson-does-not-exist-how-tactics-from-political-influence-operations-on-social-media-are-deployed-for-commercial-lead-generation/"
+      ]
+    },
+    {
+      "date": "2022-03",
+      "phase": "event",
+      "title": "USA: KI-generierte Fake-Profile überschwemmen LinkedIn für Vertrieb",
+      "description": "Forschende des Stanford Internet Observatory (Renee DiResta, Josh Goldstein) deckten im März 2022 mehr als 1.000 LinkedIn-Profile mit offenbar KI-generierten Gesichtern (GAN) auf. Die Fake-Profile dienten der Vertriebsakquise: Sie kontaktierten potenzielle Kund:innen und leiteten Interessierte an echte Verkäufer weiter. Über 70 Firmen wurden als angebliche Arbeitgeber gelistet.",
+      "title_de": "USA: KI-generierte Fake-Profile überschwemmen LinkedIn für Vertrieb",
+      "description_de": "Forschende des Stanford Internet Observatory (Renee DiResta, Josh Goldstein) deckten im März 2022 mehr als 1.000 LinkedIn-Profile mit offenbar KI-generierten Gesichtern (GAN) auf. Die Fake-Profile dienten der Vertriebsakquise: Sie kontaktierten potenzielle Kund:innen und leiteten Interessierte an echte Verkäufer weiter. Über 70 Firmen wurden als angebliche Arbeitgeber gelistet.",
+      "title_en": "USA: AI-generated fake profiles swamp LinkedIn for sales",
+      "description_en": "Stanford Internet Observatory researchers (Renee DiResta, Josh Goldstein) uncovered more than 1,000 LinkedIn profiles using apparently AI-generated (GAN) faces in March 2022. The fake profiles were used for sales outreach: they messaged potential customers and routed interested ones to real salespeople. More than 70 companies were listed as purported employers.",
+      "sources": [
+        "https://www.npr.org/2022/03/27/1088140809/fake-linkedin-profiles"
+      ]
+    },
+    {
+      "date": "2022-03-27",
+      "phase": "consequences",
+      "title": "LinkedIn entfernt regelwidrige Profile, NPR macht den Fall öffentlich",
+      "description": "Nach dem Hinweis der Forschenden entfernte LinkedIn die Profile, die gegen seine Richtlinien verstießen, und verwies auf seine automatisierten Abwehrsysteme. Die NPR-Berichterstattung machte das Ausmaß synthetischer Identitäten in beruflichen Netzwerken öffentlich und befeuerte die Debatte über Identitätsprüfung und die Erkennbarkeit GAN-generierter Gesichter.",
+      "title_de": "LinkedIn entfernt regelwidrige Profile, NPR macht den Fall öffentlich",
+      "description_de": "Nach dem Hinweis der Forschenden entfernte LinkedIn die Profile, die gegen seine Richtlinien verstießen, und verwies auf seine automatisierten Abwehrsysteme. Die NPR-Berichterstattung machte das Ausmaß synthetischer Identitäten in beruflichen Netzwerken öffentlich und befeuerte die Debatte über Identitätsprüfung und die Erkennbarkeit GAN-generierter Gesichter.",
+      "title_en": "LinkedIn removes offending profiles, NPR makes the case public",
+      "description_en": "After being alerted by the researchers, LinkedIn removed the profiles that violated its policies and pointed to its automated defence systems. NPR's reporting publicised the scale of synthetic identities in professional networks and fuelled debate about identity verification and the detectability of GAN-generated faces.",
+      "sources": [
+        "https://www.npr.org/2022/03/27/1088140809/fake-linkedin-profiles"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.npr.org/2022/03/27/1088140809/fake-linkedin-profiles",

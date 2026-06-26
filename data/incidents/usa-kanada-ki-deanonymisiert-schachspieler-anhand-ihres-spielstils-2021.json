@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf Anonymität",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht auf Anonymität",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Right to anonymity",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "University of Toronto; Cornell University; Microsoft Research",
@@ -41,7 +56,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Massenhafte Online-Schachdaten und das Maia-Projekt",
+      "description": "Mit dem Boom von Online-Plattformen wie Lichess und Chess.com entstanden riesige offene Datenbanken mit Millionen menschlicher Partien, die jeden einzelnen Zug protokollieren. Dieselbe Forschungsgruppe (Toronto/Cornell/Microsoft) baute mit Maia bereits ein neuronales Netz, das menschliches Schachverhalten modelliert. Diese Datenbasis und Modellarchitektur waren die technische Voraussetzung dafür, einzelne Spieler an ihrem Stil zu erkennen.",
+      "title_de": "Massenhafte Online-Schachdaten und das Maia-Projekt",
+      "description_de": "Mit dem Boom von Online-Plattformen wie Lichess und Chess.com entstanden riesige offene Datenbanken mit Millionen menschlicher Partien, die jeden einzelnen Zug protokollieren. Dieselbe Forschungsgruppe (Toronto/Cornell/Microsoft) baute mit Maia bereits ein neuronales Netz, das menschliches Schachverhalten modelliert. Diese Datenbasis und Modellarchitektur waren die technische Voraussetzung dafür, einzelne Spieler an ihrem Stil zu erkennen.",
+      "title_en": "Mass online chess data and the Maia project",
+      "description_en": "The boom of online platforms such as Lichess and Chess.com produced vast open databases of millions of human games logging every single move. The same research group (Toronto/Cornell/Microsoft) had already built Maia, a neural network modelling human chess behaviour. This data foundation and model architecture were the technical precondition for recognising individual players by their style.",
+      "sources": [
+        "https://www.cs.toronto.edu/~ashton/pubs/chessembed-neurips2021-supp.pdf"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Behavioral Stylometry als Forschungsagenda",
+      "description": "Die Forschenden formalisierten 'behavioral stylometry' als Aufgabe, eine Person allein aus ihren Entscheidungen zu identifizieren, und wählten Schach als Modellsystem für 'menschen-kompatible' KI. Das Ziel war akademisch, die Methode aber bewusst als verallgemeinerbar angelegt - mit dem ausdrücklichen Hinweis, dass hinreichend starke Verfahren zur Deanonymisierung missbraucht werden könnten.",
+      "title_de": "Behavioral Stylometry als Forschungsagenda",
+      "description_de": "Die Forschenden formalisierten 'behavioral stylometry' als Aufgabe, eine Person allein aus ihren Entscheidungen zu identifizieren, und wählten Schach als Modellsystem für 'menschen-kompatible' KI. Das Ziel war akademisch, die Methode aber bewusst als verallgemeinerbar angelegt - mit dem ausdrücklichen Hinweis, dass hinreichend starke Verfahren zur Deanonymisierung missbraucht werden könnten.",
+      "title_en": "Behavioural stylometry as a research agenda",
+      "description_en": "The researchers formalised 'behavioral stylometry' as the task of identifying a person from their decisions alone, choosing chess as a model system for 'human-compatible' AI. The goal was academic, but the method was deliberately designed to be generalisable - with the explicit caveat that sufficiently powerful techniques could be misused for deanonymisation.",
+      "sources": [
+        "https://arxiv.org/pdf/2208.01366"
+      ]
+    },
+    {
+      "date": "2021-12",
+      "phase": "event",
+      "title": "NeurIPS-Paper enttarnt Spieler mit bis zu 98 Prozent Genauigkeit",
+      "description": "Auf der NeurIPS 2021 stellten McIlroy-Young und Kollegen ein Transformer-Verfahren vor, das einzelne Schachspieler allein an ihren Zügen identifiziert - mit bis zu 98 Prozent Trefferquote unter tausenden Kandidaten bei nur rund 100 markierten Partien. Damit lassen sich anonyme Online-Spieler enttarnen; laut den Autoren ist die Methode auf Poker und andere Verhaltensmuster übertragbar.",
+      "title_de": "NeurIPS-Paper enttarnt Spieler mit bis zu 98 Prozent Genauigkeit",
+      "description_de": "Auf der NeurIPS 2021 stellten McIlroy-Young und Kollegen ein Transformer-Verfahren vor, das einzelne Schachspieler allein an ihren Zügen identifiziert - mit bis zu 98 Prozent Trefferquote unter tausenden Kandidaten bei nur rund 100 markierten Partien. Damit lassen sich anonyme Online-Spieler enttarnen; laut den Autoren ist die Methode auf Poker und andere Verhaltensmuster übertragbar.",
+      "title_en": "NeurIPS paper unmasks players with up to 98 percent accuracy",
+      "description_en": "At NeurIPS 2021, McIlroy-Young and colleagues presented a transformer method that identifies individual chess players from their moves alone - with up to 98 percent accuracy among thousands of candidates from only about 100 labelled games. This makes it possible to unmask anonymous online players; the authors note the method extends to poker and other behavioural patterns.",
+      "sources": [
+        "https://proceedings.neurips.cc/paper/2021/hash/ccf8111910291ba472b385e9c5f59099-Abstract.html"
+      ]
+    },
+    {
+      "date": "2022",
+      "phase": "consequences",
+      "title": "Fachpresse warnt vor Deanonymisierungs-Risiko",
+      "description": "Wissenschaftsmedien wie Science griffen die Arbeit 2022 auf und warnten, dass solche Stilometrie-Verfahren die Anonymität im Netz aushöhlen und Machtungleichgewichte verschärfen könnten. Der Fall wurde zum Beispiel dafür, wie KI selbst aus scheinbar harmlosen Verhaltensspuren identifizierende Profile bilden kann - weit über das Schachbrett hinaus.",
+      "title_de": "Fachpresse warnt vor Deanonymisierungs-Risiko",
+      "description_de": "Wissenschaftsmedien wie Science griffen die Arbeit 2022 auf und warnten, dass solche Stilometrie-Verfahren die Anonymität im Netz aushöhlen und Machtungleichgewichte verschärfen könnten. Der Fall wurde zum Beispiel dafür, wie KI selbst aus scheinbar harmlosen Verhaltensspuren identifizierende Profile bilden kann - weit über das Schachbrett hinaus.",
+      "title_en": "Science press warns of deanonymisation risk",
+      "description_en": "Science outlets such as Science covered the work in 2022, warning that such stylometry methods could erode online anonymity and deepen power imbalances. The case became an example of how AI can build identifying profiles even from seemingly harmless behavioural traces - far beyond the chessboard.",
+      "sources": [
+        "https://www.science.org/content/article/ai-unmasks-anonymous-chess-players-posing-privacy-risks"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.science.org/content/article/ai-unmasks-anonymous-chess-players-posing-privacy-risks",

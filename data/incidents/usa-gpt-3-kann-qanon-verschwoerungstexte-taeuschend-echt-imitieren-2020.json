@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf Information",
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf Information",
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to information",
+    "Protection from discrimination",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -53,7 +68,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-06",
+      "phase": "infrastructure",
+      "title": "OpenAI gibt das Sprachmodell GPT-3 in eine Beta-API",
+      "description": "Am 11. Juni 2020 stellte OpenAI das 175-Milliarden-Parameter-Modell GPT-3 über eine eingeladene API bereit. Das Modell konnte aus wenigen Beispielen (Few-Shot) Stil und Inhalt fortsetzen und damit Texte beliebiger Genres nachahmen. Diese Fähigkeit zur stilgetreuen Massenerzeugung bildete die technische Grundlage des späteren Risikobefunds.",
+      "title_de": "OpenAI gibt das Sprachmodell GPT-3 in eine Beta-API",
+      "description_de": "Am 11. Juni 2020 stellte OpenAI das 175-Milliarden-Parameter-Modell GPT-3 über eine eingeladene API bereit. Das Modell konnte aus wenigen Beispielen (Few-Shot) Stil und Inhalt fortsetzen und damit Texte beliebiger Genres nachahmen. Diese Fähigkeit zur stilgetreuen Massenerzeugung bildete die technische Grundlage des späteren Risikobefunds.",
+      "title_en": "OpenAI puts the GPT-3 language model into a beta API",
+      "description_en": "On 11 June 2020 OpenAI made the 175-billion-parameter GPT-3 model available through an invite-only API. From only a few examples (few-shot), the model could continue style and content and thus imitate text of any genre. This capacity for style-faithful mass generation formed the technical basis of the later risk finding.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GPT-3"
+      ]
+    },
+    {
+      "date": "2020-07",
+      "phase": "doctrine",
+      "title": "CTEC untersucht GPT-3 gezielt auf Missbrauch durch Extremisten",
+      "description": "Das Center on Terrorism, Extremism and Counterterrorism (CTEC) am Middlebury Institute legte eine systematische Untersuchung an, um GPT-3 auf das Risiko der Waffenfähigkeit durch Extremisten zu prüfen. Forschungsfrage war, ob das Modell ideologische und radikalisierende Inhalte über das gesamte Extremismus-Spektrum erzeugen kann. Damit wurde die Stilimitation von Verschwörungs- und Hassnarrativen bewusst als Testszenario gewählt.",
+      "title_de": "CTEC untersucht GPT-3 gezielt auf Missbrauch durch Extremisten",
+      "description_de": "Das Center on Terrorism, Extremism and Counterterrorism (CTEC) am Middlebury Institute legte eine systematische Untersuchung an, um GPT-3 auf das Risiko der Waffenfähigkeit durch Extremisten zu prüfen. Forschungsfrage war, ob das Modell ideologische und radikalisierende Inhalte über das gesamte Extremismus-Spektrum erzeugen kann. Damit wurde die Stilimitation von Verschwörungs- und Hassnarrativen bewusst als Testszenario gewählt.",
+      "title_en": "CTEC sets out to test GPT-3 for misuse by extremists",
+      "description_en": "The Center on Terrorism, Extremism and Counterterrorism (CTEC) at the Middlebury Institute designed a systematic study to assess GPT-3's risk of weaponisation by extremists. The research question was whether the model could produce ideological and radicalising content across the full spectrum of extremism. Imitating conspiracy and hate narratives was deliberately chosen as a test scenario.",
+      "sources": [
+        "https://arxiv.org/pdf/2009.06807"
+      ]
+    },
+    {
+      "date": "2020-09-09",
+      "phase": "event",
+      "title": "Studie zeigt: GPT-3 imitiert QAnon-Verschwörungstexte täuschend echt",
+      "description": "Die CTEC-Forschenden Kris McGuffie und Alex Newhouse veröffentlichten die Studie 'The Radicalization Risks of GPT-3 and Advanced Neural Language Models'. Sie zeigten, dass GPT-3 aus wenigen Beispielen mühelos den Stil von QAnon-Verschwörungserzählungen nachahmt und eigene, kohärente Falschnarrative erzeugt - bis hin zu Foren-Threads über Genozid und mehrsprachigen extremistischen Texten. Es handelt sich um einen dokumentierten Risikobefund, nicht um einen realen Schadensfall.",
+      "title_de": "Studie zeigt: GPT-3 imitiert QAnon-Verschwörungstexte täuschend echt",
+      "description_de": "Die CTEC-Forschenden Kris McGuffie und Alex Newhouse veröffentlichten die Studie 'The Radicalization Risks of GPT-3 and Advanced Neural Language Models'. Sie zeigten, dass GPT-3 aus wenigen Beispielen mühelos den Stil von QAnon-Verschwörungserzählungen nachahmt und eigene, kohärente Falschnarrative erzeugt - bis hin zu Foren-Threads über Genozid und mehrsprachigen extremistischen Texten. Es handelt sich um einen dokumentierten Risikobefund, nicht um einen realen Schadensfall.",
+      "title_en": "Study shows GPT-3 can convincingly imitate QAnon conspiracy text",
+      "description_en": "CTEC researchers Kris McGuffie and Alex Newhouse published the study 'The Radicalization Risks of GPT-3 and Advanced Neural Language Models'. They showed that GPT-3 could effortlessly mimic the style of QAnon conspiracy narratives from a few examples and generate its own coherent false narratives - up to forum threads about genocide and multilingual extremist texts. This is a documented risk finding, not a real-world harm event.",
+      "sources": [
+        "https://www.middlebury.edu/institute/academics/centers-initiatives/ctec/ctec-publications/radicalization-risks-gpt-3-and-neural-language"
+      ]
+    },
+    {
+      "date": "2020-09-22",
+      "phase": "consequences",
+      "title": "Warnung vor Massenproduktion radikalisierender Inhalte",
+      "description": "Die Autoren und nachfolgende Analysen (u. a. von Georgetowns CSET) warnten, dass GPT-3 den Arbeitsaufwand für Extremisten drastisch senken und glaubhaft menschliche Radikalisierungsinhalte in großem Umfang erzeugen könnte. Die Studie befeuerte die Debatte über Schutzmechanismen, Zugangskontrollen und Inhaltsmoderation für große Sprachmodelle. Konkrete Schäden waren zu diesem Zeitpunkt nicht dokumentiert.",
+      "title_de": "Warnung vor Massenproduktion radikalisierender Inhalte",
+      "description_de": "Die Autoren und nachfolgende Analysen (u. a. von Georgetowns CSET) warnten, dass GPT-3 den Arbeitsaufwand für Extremisten drastisch senken und glaubhaft menschliche Radikalisierungsinhalte in großem Umfang erzeugen könnte. Die Studie befeuerte die Debatte über Schutzmechanismen, Zugangskontrollen und Inhaltsmoderation für große Sprachmodelle. Konkrete Schäden waren zu diesem Zeitpunkt nicht dokumentiert.",
+      "title_en": "Warning of mass production of radicalising content",
+      "description_en": "The authors and follow-on analyses (including Georgetown's CSET) warned that GPT-3 could drastically cut extremists' workload and generate believably human radicalising content at scale. The study fuelled debate over safeguards, access controls and content moderation for large language models. No concrete harms were documented at that point.",
+      "sources": [
+        "https://cset.georgetown.edu/article/the-next-qanon-conspiracy-could-be-created-by-robots/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.middlebury.edu/institute/academics/centers-initiatives/ctec/ctec-publications/radicalization-risks-gpt-3-and-neural-language",

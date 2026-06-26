@@ -31,9 +31,24 @@
     "discrimination",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Gleichbehandlung",
+    "Recht am eigenen Bild"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Recht auf Gleichbehandlung",
+    "Recht am eigenen Bild"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Right to equal treatment",
+    "Right to one's own image"
+  ],
   "asm:actors": [
     {
       "name": "Playground AI",
@@ -54,7 +69,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Text-zu-Bild-Modelle auf verzerrten Web-Datensätzen trainiert",
+      "description": "Generative Bildmodelle wie die hinter Playground AI werden auf riesigen, aus dem Web zusammengetragenen Bild-Text-Datensätzen trainiert, in denen weiße Gesichter und westliche Schönheitsnormen überrepräsentiert sind. Diese unausgewogene Datenbasis schreibt bestehende rassistische Verzerrungen in die Modelle ein - die strukturelle Voraussetzung für diskriminierende Ausgaben.",
+      "title_de": "Text-zu-Bild-Modelle auf verzerrten Web-Datensätzen trainiert",
+      "description_de": "Generative Bildmodelle wie die hinter Playground AI werden auf riesigen, aus dem Web zusammengetragenen Bild-Text-Datensätzen trainiert, in denen weiße Gesichter und westliche Schönheitsnormen überrepräsentiert sind. Diese unausgewogene Datenbasis schreibt bestehende rassistische Verzerrungen in die Modelle ein - die strukturelle Voraussetzung für diskriminierende Ausgaben.",
+      "title_en": "Text-to-image models trained on biased web datasets",
+      "description_en": "Generative image models such as the one behind Playground AI are trained on vast image-text datasets scraped from the web, in which white faces and Western beauty norms are over-represented. This unbalanced data foundation bakes existing racial biases into the models - the structural precondition for discriminatory outputs.",
+      "sources": [
+        "https://www.bostonglobe.com/2023/07/19/business/an-mit-student-asked-ai-make-her-headshot-more-professional-it-gave-her-lighter-skin-blue-eyes/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Konsumenten-Tools für 'professionelle' Porträts ohne Bias-Schutz",
+      "description": "Anbieter wie Playground AI brachten Bildgeneratoren als Konsumenten-Werkzeuge auf den Markt, mit denen sich Selfies in 'professionellere' Bewerbungs- und LinkedIn-Porträts verwandeln lassen. Die Tools wurden ohne wirksame Schutzmechanismen gegen das Aufhellen von Hauttönen oder das Verändern ethnischer Merkmale ausgeliefert; vage Begriffe wie 'professionell' überließen die Auslegung dem verzerrten Modell.",
+      "title_de": "Konsumenten-Tools für 'professionelle' Porträts ohne Bias-Schutz",
+      "description_de": "Anbieter wie Playground AI brachten Bildgeneratoren als Konsumenten-Werkzeuge auf den Markt, mit denen sich Selfies in 'professionellere' Bewerbungs- und LinkedIn-Porträts verwandeln lassen. Die Tools wurden ohne wirksame Schutzmechanismen gegen das Aufhellen von Hauttönen oder das Verändern ethnischer Merkmale ausgeliefert; vage Begriffe wie 'professionell' überließen die Auslegung dem verzerrten Modell.",
+      "title_en": "Consumer tools for 'professional' portraits without bias safeguards",
+      "description_en": "Providers such as Playground AI launched image generators as consumer tools that turn selfies into more 'professional' application and LinkedIn portraits. The tools shipped without effective safeguards against lightening skin tones or altering ethnic features; vague terms like 'professional' left interpretation to the biased model.",
+      "sources": [
+        "https://futurism.com/the-byte/asian-woman-ai-generator-white"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "event",
+      "title": "Playground AI macht asiatisch-amerikanische Studentin weiß",
+      "description": "Im Juli 2023 lud die MIT-Studentin Rona Wang ein Selfie im MIT-Sweatshirt in Playground AI hoch und bat um ein 'professionelleres' LinkedIn-Porträt. Das Tool lieferte ein nahezu identisches Bild zurück, hellte aber ihre Haut auf und färbte ihre Augen blau, sodass sie kaukasisch wirkte. Wang nannte das Ergebnis 'irgendwie beleidigend'.",
+      "title_de": "Playground AI macht asiatisch-amerikanische Studentin weiß",
+      "description_de": "Im Juli 2023 lud die MIT-Studentin Rona Wang ein Selfie im MIT-Sweatshirt in Playground AI hoch und bat um ein 'professionelleres' LinkedIn-Porträt. Das Tool lieferte ein nahezu identisches Bild zurück, hellte aber ihre Haut auf und färbte ihre Augen blau, sodass sie kaukasisch wirkte. Wang nannte das Ergebnis 'irgendwie beleidigend'.",
+      "title_en": "Playground AI turns Asian-American student white",
+      "description_en": "In July 2023, MIT student Rona Wang uploaded a selfie in an MIT sweatshirt to Playground AI and asked for a more 'professional' LinkedIn portrait. The tool returned a near-identical image but lightened her skin and turned her eyes blue, making her appear Caucasian. Wang called the result 'kind of offensive'.",
+      "sources": [
+        "https://www.bostonglobe.com/2023/07/19/business/an-mit-student-asked-ai-make-her-headshot-more-professional-it-gave-her-lighter-skin-blue-eyes/"
+      ]
+    },
+    {
+      "date": "2023-07-19",
+      "phase": "consequences",
+      "title": "Viraler Fall und Eingeständnis des Gründers",
+      "description": "Der Fall ging viral und wurde zum Symbol für rassistische Verzerrungen in generativer Bild-KI. Playground-Gründer Suhail Doshi antwortete öffentlich, die Modelle seien 'nicht klug genug', um gezielt gesteuert zu werden, und das Unternehmen sei mit dem Ergebnis 'sehr unzufrieden'. Der Vorfall verstärkte die Debatte über eingebaute Diskriminierung und mangelnde Bias-Tests bei KI-Produkten.",
+      "title_de": "Viraler Fall und Eingeständnis des Gründers",
+      "description_de": "Der Fall ging viral und wurde zum Symbol für rassistische Verzerrungen in generativer Bild-KI. Playground-Gründer Suhail Doshi antwortete öffentlich, die Modelle seien 'nicht klug genug', um gezielt gesteuert zu werden, und das Unternehmen sei mit dem Ergebnis 'sehr unzufrieden'. Der Vorfall verstärkte die Debatte über eingebaute Diskriminierung und mangelnde Bias-Tests bei KI-Produkten.",
+      "title_en": "Viral case and the founder's admission",
+      "description_en": "The case went viral and became a symbol of racial bias in generative image AI. Playground founder Suhail Doshi publicly responded that the models were 'not smart enough' to be steered precisely and that the company was 'quite displeased' with the result. The incident amplified the debate over built-in discrimination and the lack of bias testing in AI products.",
+      "sources": [
+        "https://futurism.com/the-byte/asian-woman-ai-generator-white"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.bostonglobe.com/2023/07/19/business/an-mit-student-asked-ai-make-her-headshot-more-professional-it-gave-her-lighter-skin-blue-eyes/",

@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf korrekte Information"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf korrekte Information"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Right to accurate information"
+  ],
   "asm:actors": [
     {
       "name": "Fake-review operators (various)",
@@ -48,7 +60,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "ChatGPT macht das Massengenerieren von Texten kostenlos verfügbar",
+      "description": "Mit der Freischaltung von ChatGPT durch OpenAI am 30. November 2022 konnte jedermann in Sekunden plausibel klingende, themenspezifische Texte erzeugen. Damit sank die Hürde für das massenhafte Verfassen gefälschter Produktrezensionen drastisch, da menschliche Texter nicht mehr nötig waren.",
+      "title_de": "ChatGPT macht das Massengenerieren von Texten kostenlos verfügbar",
+      "description_de": "Mit der Freischaltung von ChatGPT durch OpenAI am 30. November 2022 konnte jedermann in Sekunden plausibel klingende, themenspezifische Texte erzeugen. Damit sank die Hürde für das massenhafte Verfassen gefälschter Produktrezensionen drastisch, da menschliche Texter nicht mehr nötig waren.",
+      "title_en": "ChatGPT makes mass text generation freely available",
+      "description_en": "When OpenAI made ChatGPT publicly available on 30 November 2022, anyone could generate plausible, topic-specific text in seconds. This sharply lowered the barrier to writing fake product reviews at scale, since human copywriters were no longer needed.",
+      "sources": [
+        "https://www.cnbc.com/2023/04/25/amazon-reviews-are-being-written-by-ai-chatbots.html"
+      ]
+    },
+    {
+      "date": "2023-01",
+      "phase": "doctrine",
+      "title": "Bewertungs-Schwarzmarkt als Geschäftsmodell für Verkäufer",
+      "description": "Schon vor dem KI-Boom existierte ein etablierter Markt für gekaufte Bewertungen, bei dem Vermittler Verkäufern gegen Bezahlung positive Rezensionen verschafften, um das Amazon-Ranking zu manipulieren. Da der Algorithmus Produkte mit vielen guten Bewertungen bevorzugt, schuf dieses Anreizmodell die wirtschaftliche Grundlage, generative KI sofort zur Skalierung von Fake-Reviews einzusetzen.",
+      "title_de": "Bewertungs-Schwarzmarkt als Geschäftsmodell für Verkäufer",
+      "description_de": "Schon vor dem KI-Boom existierte ein etablierter Markt für gekaufte Bewertungen, bei dem Vermittler Verkäufern gegen Bezahlung positive Rezensionen verschafften, um das Amazon-Ranking zu manipulieren. Da der Algorithmus Produkte mit vielen guten Bewertungen bevorzugt, schuf dieses Anreizmodell die wirtschaftliche Grundlage, generative KI sofort zur Skalierung von Fake-Reviews einzusetzen.",
+      "title_en": "A review black market as a business model for sellers",
+      "description_en": "Even before the AI boom, an established market for paid reviews existed, with brokers supplying sellers positive reviews for a fee to manipulate Amazon rankings. Because the algorithm favours products with many good reviews, this incentive model created the economic basis to immediately use generative AI to scale up fake reviews.",
+      "sources": [
+        "https://learningenglish.voanews.com/a/ai-tools-often-used-for-fake-product-reviews/7911616.html"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "event",
+      "title": "USA: KI-generierte Fake-Bewertungen überschwemmen Amazon",
+      "description": "Im April 2023 berichtete CNBC, dass auf Amazon-Produktseiten Bewertungen auftauchten, die offensichtlich mit ChatGPT erzeugt wurden - erkennbar an Formulierungen wie 'As an AI language model'. Betroffen waren unter anderem Listings für Bauchweggürtel, Autobatterien und Spielzubehör. Untersuchungen zeigten, dass KI-Bewertungen überdurchschnittlich oft 5 Sterne vergaben.",
+      "title_de": "USA: KI-generierte Fake-Bewertungen überschwemmen Amazon",
+      "description_de": "Im April 2023 berichtete CNBC, dass auf Amazon-Produktseiten Bewertungen auftauchten, die offensichtlich mit ChatGPT erzeugt wurden - erkennbar an Formulierungen wie 'As an AI language model'. Betroffen waren unter anderem Listings für Bauchweggürtel, Autobatterien und Spielzubehör. Untersuchungen zeigten, dass KI-Bewertungen überdurchschnittlich oft 5 Sterne vergaben.",
+      "title_en": "USA: AI-generated fake reviews flood Amazon",
+      "description_en": "In April 2023 CNBC reported that Amazon product pages featured reviews evidently generated with ChatGPT - recognisable from phrases like 'As an AI language model'. Affected listings included waist trimmers, car batteries and game accessories. Studies found AI reviews gave 5-star ratings disproportionately often.",
+      "sources": [
+        "https://www.cnbc.com/2023/04/25/amazon-reviews-are-being-written-by-ai-chatbots.html"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "consequences",
+      "title": "Amazon geht mit Klagen gegen Fake-Review-Vermittler vor",
+      "description": "Amazon reagierte mit rechtlichen Schritten gegen Vermittler, die gefälschte Bewertungen organisierten, und verwies auf seine Filter- und Erkennungssysteme. Der Fall verschärfte die Sorge, dass generative KI das Vertrauen in Online-Bewertungen grundsätzlich untergräbt, und befeuerte die Forderung nach besserer KI-Erkennung und Kennzeichnungspflichten.",
+      "title_de": "Amazon geht mit Klagen gegen Fake-Review-Vermittler vor",
+      "description_de": "Amazon reagierte mit rechtlichen Schritten gegen Vermittler, die gefälschte Bewertungen organisierten, und verwies auf seine Filter- und Erkennungssysteme. Der Fall verschärfte die Sorge, dass generative KI das Vertrauen in Online-Bewertungen grundsätzlich untergräbt, und befeuerte die Forderung nach besserer KI-Erkennung und Kennzeichnungspflichten.",
+      "title_en": "Amazon pursues lawsuits against fake-review brokers",
+      "description_en": "Amazon responded with legal action against brokers organising fake reviews and pointed to its filtering and detection systems. The case heightened concern that generative AI fundamentally undermines trust in online reviews and fuelled calls for better AI detection and disclosure rules.",
+      "sources": [
+        "https://learningenglish.voanews.com/a/ai-tools-often-used-for-fake-product-reviews/7911616.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnbc.com/2023/04/25/amazon-reviews-are-being-written-by-ai-chatbots.html",

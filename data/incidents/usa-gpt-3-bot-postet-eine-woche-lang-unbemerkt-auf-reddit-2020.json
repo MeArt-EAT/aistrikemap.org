@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf Information",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf Information",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to information",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI (GPT-3); Philosopher AI",
@@ -46,7 +58,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-06",
+      "phase": "infrastructure",
+      "title": "OpenAI öffnet GPT-3 über eine private API",
+      "description": "Am 11. Juni 2020 stellte OpenAI sein 175-Milliarden-Parameter-Modell GPT-3 über eine eingeladene, kostenpflichtige API zur Verfügung. Die 'text in, text out'-Schnittstelle konnte fast jede englischsprachige Aufgabe lösen und erzeugte flüssige, menschenähnliche Texte. Der Zugang blieb zunächst auf eine Warteliste beschränkt.",
+      "title_de": "OpenAI öffnet GPT-3 über eine private API",
+      "description_de": "Am 11. Juni 2020 stellte OpenAI sein 175-Milliarden-Parameter-Modell GPT-3 über eine eingeladene, kostenpflichtige API zur Verfügung. Die 'text in, text out'-Schnittstelle konnte fast jede englischsprachige Aufgabe lösen und erzeugte flüssige, menschenähnliche Texte. Der Zugang blieb zunächst auf eine Warteliste beschränkt.",
+      "title_en": "OpenAI opens GPT-3 via a private API",
+      "description_en": "On 11 June 2020 OpenAI made its 175-billion-parameter GPT-3 model available through an invite-only, paid API. The 'text in, text out' interface could handle almost any English-language task and produced fluent, human-like text. Access was initially limited to a waitlist.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GPT-3"
+      ]
+    },
+    {
+      "date": "2020-08",
+      "phase": "doctrine",
+      "title": "Konsumdienst 'Philosopher AI' macht GPT-3-Antworten frei abrufbar",
+      "description": "Der Entwickler Murat Ayfer baute mit GPT-3 den Webdienst 'Philosopher AI', der zu beliebigen Stichworten ausführliche Antworten generierte. Damit wurde die Modellausgabe ohne eigene API-Freigabe für jedermann nutzbar - die Nutzungsbedingungen untersagten allerdings den automatisierten Abruf. Genau dieser Dienst wurde später heimlich angezapft, um einen Reddit-Bot zu speisen.",
+      "title_de": "Konsumdienst 'Philosopher AI' macht GPT-3-Antworten frei abrufbar",
+      "description_de": "Der Entwickler Murat Ayfer baute mit GPT-3 den Webdienst 'Philosopher AI', der zu beliebigen Stichworten ausführliche Antworten generierte. Damit wurde die Modellausgabe ohne eigene API-Freigabe für jedermann nutzbar - die Nutzungsbedingungen untersagten allerdings den automatisierten Abruf. Genau dieser Dienst wurde später heimlich angezapft, um einen Reddit-Bot zu speisen.",
+      "title_en": "Consumer service 'Philosopher AI' makes GPT-3 answers freely accessible",
+      "description_en": "Developer Murat Ayfer used GPT-3 to build the web service 'Philosopher AI', which generated detailed answers to any prompt. This made the model's output usable by anyone without their own API access, though the terms of service forbade automated querying. That service was later tapped covertly to feed a Reddit bot.",
+      "sources": [
+        "https://www.technologyreview.com/2020/10/08/1009845/a-gpt-3-bot-posted-comments-on-reddit-for-a-week-and-no-one-noticed/"
+      ]
+    },
+    {
+      "date": "2020-10-08",
+      "phase": "event",
+      "title": "GPT-3-Bot postet eine Woche lang unbemerkt auf Reddit",
+      "description": "Ein mit GPT-3 betriebener Bot unter dem Namen /u/thegentlemetre postete rund eine Woche lang etwa im Minutentakt Kommentare im Subreddit r/AskReddit, ohne dass Nutzer ihn erkannten. Die Antworten wirkten überzeugend menschlich; einige berührten heikle Themen wie Suizid und Verschwörungserzählungen. Der Bot zog den GPT-3-Dienst 'Philosopher AI' automatisiert an, um seine Texte zu erzeugen.",
+      "title_de": "GPT-3-Bot postet eine Woche lang unbemerkt auf Reddit",
+      "description_de": "Ein mit GPT-3 betriebener Bot unter dem Namen /u/thegentlemetre postete rund eine Woche lang etwa im Minutentakt Kommentare im Subreddit r/AskReddit, ohne dass Nutzer ihn erkannten. Die Antworten wirkten überzeugend menschlich; einige berührten heikle Themen wie Suizid und Verschwörungserzählungen. Der Bot zog den GPT-3-Dienst 'Philosopher AI' automatisiert an, um seine Texte zu erzeugen.",
+      "title_en": "GPT-3 bot posts on Reddit for a week unnoticed",
+      "description_en": "A bot powered by GPT-3 posting under the name /u/thegentlemetre posted comments in the subreddit r/AskReddit roughly once a minute for about a week, without users noticing. The replies seemed convincingly human; some touched sensitive topics such as suicide and conspiracy theories. The bot automatically queried the GPT-3 service 'Philosopher AI' to generate its text.",
+      "sources": [
+        "https://www.technologyreview.com/2020/10/08/1009845/a-gpt-3-bot-posted-comments-on-reddit-for-a-week-and-no-one-noticed/"
+      ]
+    },
+    {
+      "date": "2020-10-09",
+      "phase": "consequences",
+      "title": "Enttarnung und Abschaltung des Bots",
+      "description": "Der Blogger Philip Winston bemerkte die ungewöhnliche Posting-Frequenz und glich die Texte mit der Ausgabe von 'Philosopher AI' ab, womit der KI-Ursprung feststand. Der Diensteanbieter sperrte daraufhin den automatisierten Zugang, und der Bot verstummte. Der Fall galt früh als Beleg, wie leicht KI-Texte unerkannt soziale Netzwerke fluten können.",
+      "title_de": "Enttarnung und Abschaltung des Bots",
+      "description_de": "Der Blogger Philip Winston bemerkte die ungewöhnliche Posting-Frequenz und glich die Texte mit der Ausgabe von 'Philosopher AI' ab, womit der KI-Ursprung feststand. Der Diensteanbieter sperrte daraufhin den automatisierten Zugang, und der Bot verstummte. Der Fall galt früh als Beleg, wie leicht KI-Texte unerkannt soziale Netzwerke fluten können.",
+      "title_en": "Bot unmasked and shut down",
+      "description_en": "Blogger Philip Winston noticed the unusual posting frequency and matched the texts to the output of 'Philosopher AI', confirming the AI origin. The service operator then blocked the automated access and the bot fell silent. The case became an early demonstration of how easily AI text can flood social networks undetected.",
+      "sources": [
+        "https://www.theregister.com/2020/10/09/reddit_gpt3_bot/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2020/10/08/1009845/a-gpt-3-bot-posted-comments-on-reddit-for-a-week-and-no-one-noticed/",

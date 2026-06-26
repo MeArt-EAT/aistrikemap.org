@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf korrekte Information"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf korrekte Information"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Right to accurate information"
+  ],
   "asm:actors": [
     {
       "name": "Intuit / TurboTax",
@@ -48,7 +60,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "Durchbruch generativer KI macht Chatbots für Endkunden tauglich",
+      "description": "Mit der Veröffentlichung von ChatGPT durch OpenAI im November 2022 wurden große Sprachmodelle massentauglich und ließen sich erstmals als dialogfähige Assistenten in kommerzielle Software einbetten. Steuersoftware-Anbieter sahen darin die Chance, Beratungsleistung zu automatisieren, ohne dass die Modelle für das komplexe und sich jährlich ändernde US-Steuerrecht eigens validiert waren.",
+      "title_de": "Durchbruch generativer KI macht Chatbots für Endkunden tauglich",
+      "description_de": "Mit der Veröffentlichung von ChatGPT durch OpenAI im November 2022 wurden große Sprachmodelle massentauglich und ließen sich erstmals als dialogfähige Assistenten in kommerzielle Software einbetten. Steuersoftware-Anbieter sahen darin die Chance, Beratungsleistung zu automatisieren, ohne dass die Modelle für das komplexe und sich jährlich ändernde US-Steuerrecht eigens validiert waren.",
+      "title_en": "Generative-AI breakthrough makes chatbots viable for consumers",
+      "description_en": "OpenAI's release of ChatGPT in November 2022 brought large language models into the mainstream and let them be embedded as conversational assistants in commercial software for the first time. Tax-software vendors saw an opportunity to automate advisory work, even though the models were not specifically validated for the complex and annually changing US tax code.",
+      "sources": [
+        "https://www.cnbc.com/2023/04/25/amazon-reviews-are-being-written-by-ai-chatbots.html"
+      ]
+    },
+    {
+      "date": "2023-11",
+      "phase": "doctrine",
+      "title": "Intuit und H&R Block integrieren generative KI-Steuerassistenten",
+      "description": "Im November 2023 brachte Intuit für die Steuersaison 2023 den generativen Assistenten Intuit Assist in TurboTax, H&R Block folgte mit AI Tax Assist. Die Anbieter bewarben die Werkzeuge als verlässliche Hilfe, die Steuerfragen in Echtzeit beantwortet, und stellten sie kostenpflichtigen Online-Paketen als zentrales Feature voran.",
+      "title_de": "Intuit und H&R Block integrieren generative KI-Steuerassistenten",
+      "description_de": "Im November 2023 brachte Intuit für die Steuersaison 2023 den generativen Assistenten Intuit Assist in TurboTax, H&R Block folgte mit AI Tax Assist. Die Anbieter bewarben die Werkzeuge als verlässliche Hilfe, die Steuerfragen in Echtzeit beantwortet, und stellten sie kostenpflichtigen Online-Paketen als zentrales Feature voran.",
+      "title_en": "Intuit and H&R Block embed generative AI tax assistants",
+      "description_en": "In November 2023 Intuit launched the generative assistant Intuit Assist in TurboTax for the 2023 tax season, and H&R Block followed with AI Tax Assist. The vendors marketed the tools as reliable help answering tax questions in real time and made them a headline feature of paid online packages.",
+      "sources": [
+        "https://www.intuit.com/company/press-room/press-releases/2023/intuit-turbotax-adds-new-full-service-and-generative-ai-powered-tax-prep-experiences-for-tax-filing-with-ease-and-complete-confidence/"
+      ]
+    },
+    {
+      "date": "2024-03",
+      "phase": "event",
+      "title": "USA: KI-Chatbots von TurboTax und H&R Block geben fehlerhafte Steuertipps",
+      "description": "Ein Test der Washington Post (Kolumnist Geoffrey Fowler) ergab 2024, dass die in TurboTax (Intuit) und H&R Block integrierten KI-Chatbots in bis zu der Hälfte der Fälle unbrauchbare oder falsche Steuerauskünfte gaben. TurboTax antwortete etwa auf eine Frage zu Klimaanlagen-Steuergutschriften mit Angaben zu Bildungskosten; H&R Block empfahl einen falschen Steuerstatus und beschrieb IRS-Vorgaben zu Kryptowährung fehlerhaft.",
+      "title_de": "USA: KI-Chatbots von TurboTax und H&R Block geben fehlerhafte Steuertipps",
+      "description_de": "Ein Test der Washington Post (Kolumnist Geoffrey Fowler) ergab 2024, dass die in TurboTax (Intuit) und H&R Block integrierten KI-Chatbots in bis zu der Hälfte der Fälle unbrauchbare oder falsche Steuerauskünfte gaben. TurboTax antwortete etwa auf eine Frage zu Klimaanlagen-Steuergutschriften mit Angaben zu Bildungskosten; H&R Block empfahl einen falschen Steuerstatus und beschrieb IRS-Vorgaben zu Kryptowährung fehlerhaft.",
+      "title_en": "USA: TurboTax and H&R Block AI chatbots give inaccurate tax advice",
+      "description_en": "A 2024 Washington Post test (columnist Geoffrey Fowler) found that the AI chatbots built into TurboTax (Intuit) and H&R Block gave unhelpful or wrong tax answers up to half the time. TurboTax, for example, answered a question about air-conditioner tax credits with information about education expenses; H&R Block recommended an incorrect filing status and misdescribed IRS guidance on cryptocurrency.",
+      "sources": [
+        "https://www.washingtonpost.com/technology/2024/03/04/ai-taxes-turbotax-hrblock-chatbot/"
+      ]
+    },
+    {
+      "date": "2024-03-05",
+      "phase": "consequences",
+      "title": "Intuit bessert nach, Assistent versagt weiter bei einem Viertel der Fragen",
+      "description": "Nach dem Hinweis der Washington Post aktualisierte Intuit seinen Assistenten, der jedoch in einem erneuten Test weiterhin bei rund einem Viertel der Fragen versagte. Der Fall verschärfte die Debatte über den Einsatz unzuverlässiger KI in folgenreicher Finanzberatung und über die Haftung der Anbieter für falsche Auskünfte.",
+      "title_de": "Intuit bessert nach, Assistent versagt weiter bei einem Viertel der Fragen",
+      "description_de": "Nach dem Hinweis der Washington Post aktualisierte Intuit seinen Assistenten, der jedoch in einem erneuten Test weiterhin bei rund einem Viertel der Fragen versagte. Der Fall verschärfte die Debatte über den Einsatz unzuverlässiger KI in folgenreicher Finanzberatung und über die Haftung der Anbieter für falsche Auskünfte.",
+      "title_en": "Intuit patches the assistant, which still fails on a quarter of questions",
+      "description_en": "After the Washington Post's feedback, Intuit updated its assistant, but in a renewed test it still failed on about a quarter of questions. The case intensified the debate over deploying unreliable AI in consequential financial advice and over vendor liability for wrong answers.",
+      "sources": [
+        "https://www.accountingtoday.com/news/intuit-h-r-block-tax-ais-critiqued-on-accuracy-of-answers-many-inaccurate"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.washingtonpost.com/technology/2024/03/04/ai-taxes-turbotax-hrblock-chatbot/",
