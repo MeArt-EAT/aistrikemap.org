@@ -1,8 +1,8 @@
-# Übergabe #11 — Sev-2-Offensive (Wellen 46–57)
+# Übergabe #11 — Sev-2-Offensive (Wellen 46–60)
 
 **Datum:** 2026-06-26
 **Vorgänger:** #10 (2026-06-25, Sev-3-Block abgeschlossen, TL 78.5 %)
-**Bestand danach:** 2457 Incidents · **2208 mit Reverse-TL (89.9 %)** · 0 Audit-Findings
+**Bestand danach:** 2457 Incidents · **2280 mit Reverse-TL (92.8 %)** · 0 Audit-Findings
 
 ---
 
@@ -10,9 +10,9 @@
 
 Nach Abschluss des Sev-3-Blocks (#10) wurde die **Sev-2-Ebene** in Angriff
 genommen — gleiche erprobte Workflow-Methode (24 Cases/Welle, Stufe 1 WebSearch-
-grounded Generieren → Stufe 2 unabhängige adversariale Verify). **12 Wellen
-(46–57), +280 Reverse-Timelines, TL-Quote 78.5 → 89.9 %** (80%-Marke in Welle 47,
-85%- in Welle 52, knapp 90% nach Welle 57). Sev-2 ohne TL: 480 → 200.
+grounded Generieren → Stufe 2 unabhängige adversariale Verify). **15 Wellen
+(46–60), +352 Reverse-Timelines, TL-Quote 78.5 → 92.8 %** (80%-Marke in Welle 47,
+85%- in 52, 90%- in 58). Sev-2 ohne TL: 480 → 128.
 
 | Welle | Cases | pass / fix / needs-human | Δ TL | TL gesamt | Besonderheit |
 |---|---|---|---|---|---|
@@ -28,11 +28,15 @@ grounded Generieren → Stufe 2 unabhängige adversariale Verify). **12 Wellen
 | 55 | 24 | 14 / 9 / 1 | +23 | 2160 (87.9 %) | needs-human: amazon-lieferdrohne (Phasen-Verstoss); apple-zwillinge Test-Attribution praezisiert (korrigiert, nicht zurueckgerollt) |
 | 56 | 24 | 18 / 5 / 1 | +24 | 2184 (88.9 %) | chatgpt-waffen-kinder USA-Today-Provenienz -> Harvard Williams Lab korrigiert (Identitaet korrekt, nur Quelle); inline-Fix bing-disney-Datum; Validator-Bugfix (beschluss) |
 | 57 | 24 | 19 / 5 / 0 | +24 | 2208 (89.9 %) | sauberster Lauf: 0 needs-human, 0 Faktenfehler |
+| 58 | 24 | 20 / 4 / 0 | +24 | 2232 (90.8 %) | 90%-Marke; inline-Fix appen 26%=Bruttomarge, google-ad-exchange-Datum |
+| 59 | 24 | 16 / 8 / 0 | +24 | 2256 (91.8 %) | 0 needs-human, 0 Faktenfehler |
+| 60 | 24 | 20 / 4 / 0 | +24 | 2280 (92.8 %) | inline-Fix hello-barbie/knightscope/mcdonalds-IBM; fix-umlaut 182 Reste (1 Gen-Agent transliterierte stark) + 4 Map-Lücken; Validator-Upgrade |
 
-**WebSearch in allen 12 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
-Ausfall). Audit nach jeder Welle 0 Findings (Welle 49: 2 length_ratio-False-
-Positives bei einem Gender-Begriff → auf Korpus-Standard „Geschlechtergleichheit"
-harmonisiert). Translit-Map unverändert 2951 (Prompt-Härtung hält Neueinträge ~0).
+**WebSearch in allen 15 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
+Ausfall). Audit nach jeder Welle 0 Findings (length_ratio-False-Positives bei Gender-
+und LGBTQ-Begriffen → auf Korpus-Standards „Geschlechtergleichheit"/„LGBTQ-Rechte"
+harmonisiert). Translit-Map unverändert 2951 (Prompt-Härtung hält Neueinträge ~0;
+Welle 60 ein Ausreißer mit 182 Resten, alle gefixt).
 
 ---
 
@@ -143,8 +147,15 @@ Identitäts-/Land-/Slug-/Fall-Vermischungs-Fehler bleiben echtes needs-human.
 - **Iterative Härtung über den Block:** Ab Welle 49 zusätzlich „title_de auch im
   event-Eintrag nie weglassen" (Lektion W48) + needs-human-Eskalation bei
   Identitäts-/Land-/Slug-Fehlern explizit im Verify-Prompt.
-- **Disk:** 12 Wellen = 144 Agenten → Workflow-Transcripts 29 MB + Task-Outputs
-  1.2 MB = ~30 MB. Grün (Warnschwelle 100 MB).
+- **Validator-Verfeinerungen:** (W56) „beschluss" aus Verdachtsliste entfernt
+  (korrektes Deutsch, ss nach kurzem Vokal); (W60) Umlaut-Gap-Scan von Ganzwort-
+  Liste auf **Morphem-Teilstring** umgestellt — fängt jetzt Komposita wie
+  `uebergibt`/`ueberfuehrt`/`ueberschaetzte`, die die alte Liste durchließ.
+- **Translit-Ausreißer (W60):** Ein Gen-Agent transliterierte stark → 182 fix-umlaut-
+  Ersetzungen + 4 unbekannte Map-Lücken inline. Lehre: fix-umlaut + Validator-Morphem-
+  Scan + Doppel-Umlaut-Grep zusammen fangen es; einzeln nicht.
+- **Disk:** 15 Wellen = 180 Agenten → Workflow-Transcripts ~36 MB + Task-Outputs
+  1.2 MB = ~37 MB. Grün (Warnschwelle 100 MB).
 
 ---
 
@@ -167,13 +178,19 @@ a721009  Übergabe #11 (52-54)
 15d5b14  Reverse-TL Sev-2 Welle 55: +23 (2160, 87.9 %)
 2fdaa58  Reverse-TL Sev-2 Welle 56: +24 (2184, 88.9 %)
 a321016  Reverse-TL Sev-2 Welle 57: +24 (2208, 89.9 %)
+870b40e  Übergabe #11 (55-57)
+8ed0814  Reverse-TL Sev-2 Welle 58: +24 (2232, 90.8 %)
+5870026  Reverse-TL Sev-2 Welle 59: +24 (2256, 91.8 %)
+1b9e261  Reverse-TL Sev-2 Welle 60: +24 (2280, 92.8 %)
+5703566  Harmonisiere LGBTQ-Begriff korpusweit
 ```
 
 ---
 
 ## Nächster Schritt
 
-- **Sev-2-TL fortsetzen** (200 ohne TL, ~9 Wellen) — Workflow-Methode +
+- **Sev-2-TL fortsetzen** (128 ohne TL, ~5 Wellen) — Workflow-Methode +
   `validate-timelines.js` je Welle, needs-human via `grep -v` ausschließen.
+- DANACH **Sev-1** (48 ohne TL, ~2 Wellen) → TL-Quote dann ~99 % (nur 8 needs-human + prabowo offen).
 - ODER **8 needs-human + prabowo klären** (redaktionelle Entscheidungen, ~1/Welle).
 - ODER korpusweiter Smart-Char-Sweep (789 Files), Career-Daten, AIAAIC Batch D.
