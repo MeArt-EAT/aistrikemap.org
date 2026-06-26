@@ -8,10 +8,10 @@
   "name": "Großbritannien: HMRC unterzeichnet 175-Mio-GBP-Vertrag mit Quantexa für KI-Steuerfahndung",
   "name_de": "Großbritannien: HMRC unterzeichnet 175-Mio-GBP-Vertrag mit Quantexa für KI-Steuerfahndung",
   "name_en": "UK: HMRC signs GBP 175 million Quantexa contract for AI tax enforcement",
-  "description": "Die britische Steuer- und Zollbehörde HMRC unterzeichnete 2024 einen Zehn-Jahres-Vertrag im Wert von 175 Millionen Pfund mit der KI-Firma Quantexa und vertiefte parallel die Microsoft-Partnerschaft für generative KI. Die bestehende Connect-Plattform (seit 2010, mittlerweile ständig erweitert) generierte 2024/25 zusätzliche Steuereinnahmen von 4,6 Milliarden Pfund durch Mustererkennung in Bankdaten, Sozialmedien und Lebensstil-Indikatoren. HMRC betont, dass finale Entscheidungen menschlich getroffen werden.",
-  "description_de": "Die britische Steuer- und Zollbehörde HMRC unterzeichnete 2024 einen Zehn-Jahres-Vertrag im Wert von 175 Millionen Pfund mit der KI-Firma Quantexa und vertiefte parallel die Microsoft-Partnerschaft für generative KI. Die bestehende Connect-Plattform (seit 2010, mittlerweile ständig erweitert) generierte 2024/25 zusätzliche Steuereinnahmen von 4,6 Milliarden Pfund durch Mustererkennung in Bankdaten, Sozialmedien und Lebensstil-Indikatoren. HMRC betont, dass finale Entscheidungen menschlich getroffen werden.",
-  "description_en": "Britain's HMRC signed a 10-year, GBP 175 million contract with AI firm Quantexa in 2024 and expanded its Microsoft partnership for generative AI. The existing Connect platform (in use since 2010 and steadily expanded) generated an additional GBP 4.6 billion in tax revenue in 2024/25 through pattern detection across bank data, social media and lifestyle indicators. HMRC stresses that final determinations remain human-made.",
-  "startDate": "2024",
+  "description": "Die britische Steuer- und Zollbehörde HMRC gab am 14. Mai 2026 einen Zehn-Jahres-Vertrag im Wert von bis zu 175 Millionen Pfund mit dem britischen KI-Unternehmen Quantexa bekannt. Die Plattform nutzt Entitätsauflösung und Graph-Analytik, um über zerstückelte Datensätze hinweg verdeckte Verbindungen zwischen Personen, Firmen und Transaktionen sichtbar zu machen und so Steuerbetrug und Fehler aufzudecken. HMRC bleibt Datenverantwortlicher, die Daten verlassen die HMRC-Umgebung nicht, und automatisierte Treffer sollen weiterhin menschlich geprüft werden. Der Auftrag gilt als bewusster Schritt zu britischer KI-Souveränität nach Verträgen mit dem US-Konzern Palantir.",
+  "description_de": "Die britische Steuer- und Zollbehörde HMRC gab am 14. Mai 2026 einen Zehn-Jahres-Vertrag im Wert von bis zu 175 Millionen Pfund mit dem britischen KI-Unternehmen Quantexa bekannt. Die Plattform nutzt Entitätsauflösung und Graph-Analytik, um über zerstückelte Datensätze hinweg verdeckte Verbindungen zwischen Personen, Firmen und Transaktionen sichtbar zu machen und so Steuerbetrug und Fehler aufzudecken. HMRC bleibt Datenverantwortlicher, die Daten verlassen die HMRC-Umgebung nicht, und automatisierte Treffer sollen weiterhin menschlich geprüft werden. Der Auftrag gilt als bewusster Schritt zu britischer KI-Souveränität nach Verträgen mit dem US-Konzern Palantir.",
+  "description_en": "On 14 May 2026, Britain's HMRC announced a ten-year contract worth up to GBP 175 million with the British AI firm Quantexa. The platform uses entity resolution and graph analytics to surface hidden links between people, companies and transactions across siloed datasets, in order to detect tax fraud and errors. HMRC remains the data controller, the data does not leave the HMRC environment, and automated flags are still to be reviewed by humans. The deal is framed as a deliberate move toward British AI sovereignty following contracts with the US firm Palantir.",
+  "startDate": "2026-05",
   "location": {
     "@type": "Place",
     "name": "London, Großbritannien",
@@ -31,17 +31,31 @@
     "surveillance",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Faires Verfahren",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Recht auf Privatsphäre",
+    "Faires Verfahren",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Right to privacy",
+    "Right to a fair trial",
+    "Protection against discrimination"
+  ],
   "asm:actors": [
     {
       "name": "HM Revenue & Customs (HMRC)",
       "type": "government",
       "asm:systems": [
-        "Connect",
-        "Quantexa graph analytics",
-        "Microsoft generative AI"
+        "Quantexa Decision Intelligence platform",
+        "Connect"
       ],
       "name_de": "HM Revenue & Customs (HMRC)",
       "name_en": "HM Revenue & Customs (HMRC)"
@@ -50,7 +64,7 @@
       "name": "Quantexa",
       "type": "company",
       "asm:systems": [
-        "Connect / Quantexa graph platform"
+        "Entity resolution / graph analytics platform"
       ],
       "name_de": "Quantexa",
       "name_en": "Quantexa"
@@ -58,42 +72,116 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2010",
+      "phase": "infrastructure",
+      "title": "HMRC nimmt die Connect-Datenplattform in Betrieb",
+      "description": "HMRC führte 2010 das rund 80 Millionen Pfund teure Connect-System ein, ein wachsendes Netz von Datenbanken, das Steuererklärungen mit externen Quellen wie Bankdaten, Online-Marktplätzen, sozialen Medien und Lebensstil-Indikatoren abgleicht. Bis 2020 enthielt das System Dutzende Milliarden Datenpunkte und legte die technische Grundlage für KI-gestützte Steuerfahndung in Großbritannien.",
+      "title_de": "HMRC nimmt die Connect-Datenplattform in Betrieb",
+      "description_de": "HMRC führte 2010 das rund 80 Millionen Pfund teure Connect-System ein, ein wachsendes Netz von Datenbanken, das Steuererklärungen mit externen Quellen wie Bankdaten, Online-Marktplätzen, sozialen Medien und Lebensstil-Indikatoren abgleicht. Bis 2020 enthielt das System Dutzende Milliarden Datenpunkte und legte die technische Grundlage für KI-gestützte Steuerfahndung in Großbritannien.",
+      "title_en": "HMRC brings the Connect data platform into service",
+      "description_en": "In 2010 HMRC introduced the roughly GBP 80 million Connect system, a growing network of databases that cross-references tax returns against external sources such as bank data, online marketplaces, social media and lifestyle indicators. By 2020 the system held tens of billions of data points and laid the technical groundwork for AI-driven tax enforcement in the UK.",
+      "sources": [
+        "https://financialaccountant.co.uk/features/hmrc-connect-tax-investigations-explained/"
+      ]
+    },
+    {
+      "date": "2025-07",
+      "phase": "doctrine",
+      "title": "Connect bringt 4,6 Milliarden Pfund - HMRC setzt auf Datenanalyse",
+      "description": "Im Geschäftsjahr 2024/25 generierte die Connect-Plattform laut HMRC zusätzliche Steuereinnahmen von 4,6 Milliarden Pfund und deckte rund 540.000 Fälle nicht erklärter Steuern auf, ein Drittel mehr als im Vorjahr. Vor dem Hintergrund einer Steuerlücke von 46,8 Milliarden Pfund machte die Regierung großflächige Datenanalyse und KI zur Leitstrategie der Steuerdurchsetzung.",
+      "title_de": "Connect bringt 4,6 Milliarden Pfund - HMRC setzt auf Datenanalyse",
+      "description_de": "Im Geschäftsjahr 2024/25 generierte die Connect-Plattform laut HMRC zusätzliche Steuereinnahmen von 4,6 Milliarden Pfund und deckte rund 540.000 Fälle nicht erklärter Steuern auf, ein Drittel mehr als im Vorjahr. Vor dem Hintergrund einer Steuerlücke von 46,8 Milliarden Pfund machte die Regierung großflächige Datenanalyse und KI zur Leitstrategie der Steuerdurchsetzung.",
+      "title_en": "Connect yields GBP 4.6 billion - HMRC doubles down on data analytics",
+      "description_en": "In the 2024/25 financial year HMRC's Connect platform generated an additional GBP 4.6 billion in tax revenue and uncovered around 540,000 cases of undeclared tax, a third more than the previous year. Against a tax gap of GBP 46.8 billion, the government made large-scale data analysis and AI the guiding strategy of tax enforcement.",
+      "sources": [
+        "https://www.step.org/industry-news/hmrcs-large-scale-data-analysis-now-generating-billions-tax-revenue"
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "phase": "event",
+      "title": "HMRC gibt 175-Mio-GBP-Vertrag mit Quantexa bekannt",
+      "description": "Am 14. Mai 2026 gab HMRC einen bis zu 175 Millionen Pfund schweren Zehn-Jahres-Vertrag mit dem britischen Unternehmen Quantexa bekannt, einer der größten KI-Beschaffungsdeals der britischen Verwaltungsgeschichte. Quantexas Plattform nutzt Entitätsauflösung und Graph-Analytik, um verdeckte Verbindungen zwischen Personen, Firmen und Transaktionen über zerstückelte Datensätze hinweg aufzudecken. HMRC betont, Datenverantwortlicher zu bleiben und automatisierte Treffer menschlich prüfen zu lassen.",
+      "title_de": "HMRC gibt 175-Mio-GBP-Vertrag mit Quantexa bekannt",
+      "description_de": "Am 14. Mai 2026 gab HMRC einen bis zu 175 Millionen Pfund schweren Zehn-Jahres-Vertrag mit dem britischen Unternehmen Quantexa bekannt, einer der größten KI-Beschaffungsdeals der britischen Verwaltungsgeschichte. Quantexas Plattform nutzt Entitätsauflösung und Graph-Analytik, um verdeckte Verbindungen zwischen Personen, Firmen und Transaktionen über zerstückelte Datensätze hinweg aufzudecken. HMRC betont, Datenverantwortlicher zu bleiben und automatisierte Treffer menschlich prüfen zu lassen.",
+      "title_en": "HMRC announces GBP 175 million contract with Quantexa",
+      "description_en": "On 14 May 2026 HMRC announced a ten-year contract worth up to GBP 175 million with the British firm Quantexa, one of the largest AI procurement deals in UK government history. Quantexa's platform uses entity resolution and graph analytics to uncover hidden links between people, companies and transactions across siloed datasets. HMRC stresses that it remains the data controller and that automated flags are reviewed by humans.",
+      "sources": [
+        "https://www.thinkdigitalpartners.com/news/2026/05/14/hmrc-signs-175m-quantexa-deal-to-build-sovereign-ai-and-data-platform/",
+        "https://www.uktech.news/news/ai-software-firm-quantexa-wins-175m-contract-with-hmrc-20260514"
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "phase": "consequences",
+      "title": "Bürgerrechtler warnen vor Ausweitung staatlicher Überwachung",
+      "description": "Bürgerrechtsgruppen wie Big Brother Watch kritisierten die Ausbreitung KI-gestützter Überwachung als beunruhigende Ausweitung staatlicher Kontrolle. Fachleute warnten, auf historischen Betrugsfällen trainierte Modelle könnten zu Fehlalarmen führen und unbescholtene Steuerzahler oder legitime Unternehmensstrukturen fälschlich als verdächtig markieren. HMRC verwies auf menschliche Aufsicht, Erklärbarkeit der Systeme und strikte Datenabschottung als Schutzmaßnahmen.",
+      "title_de": "Bürgerrechtler warnen vor Ausweitung staatlicher Überwachung",
+      "description_de": "Bürgerrechtsgruppen wie Big Brother Watch kritisierten die Ausbreitung KI-gestützter Überwachung als beunruhigende Ausweitung staatlicher Kontrolle. Fachleute warnten, auf historischen Betrugsfällen trainierte Modelle könnten zu Fehlalarmen führen und unbescholtene Steuerzahler oder legitime Unternehmensstrukturen fälschlich als verdächtig markieren. HMRC verwies auf menschliche Aufsicht, Erklärbarkeit der Systeme und strikte Datenabschottung als Schutzmaßnahmen.",
+      "title_en": "Civil liberties groups warn of expanding state surveillance",
+      "description_en": "Civil liberties groups such as Big Brother Watch criticised the spread of AI-driven surveillance as a frightening expansion of state monitoring. Experts warned that models trained on historical fraud cases could produce false positives, wrongly flagging innocent taxpayers or legitimate business structures as suspicious. HMRC pointed to human oversight, system explainability and strict data siloing as safeguards.",
+      "sources": [
+        "https://thenextweb.com/news/quantexa-hmrc-ai-tax-fraud-sovereignty"
+      ]
+    }
+  ],
   "asm:sources": [
     {
-      "url": "https://www.taxassist.co.uk/resources/articles/what-is-hmrc-s-connect-ai-system",
-      "title": "What is HMRC's Connect AI System?",
-      "publisher": "TaxAssist Accountants",
-      "date": "2024",
-      "type": "analysis",
-      "asm:linkHealth": "unverified",
-      "title_de": "What is HMRC's Connect AI System?",
-      "title_en": "What is HMRC's Connect AI System?"
-    },
-    {
-      "url": "https://fintechmagazine.com/news/hmrc-how-ai-is-transforming-tax-collection-and-fraud-tech",
-      "title": "HMRC: How AI is Transforming Tax Collection and Fraud Tech",
-      "publisher": "FinTech Magazine",
-      "date": "2024",
+      "url": "https://www.thinkdigitalpartners.com/news/2026/05/14/hmrc-signs-175m-quantexa-deal-to-build-sovereign-ai-and-data-platform/",
+      "title": "HMRC signs £175m Quantexa deal to build 'sovereign' AI and data platform",
+      "publisher": "THINK Digital Partners",
+      "date": "2026-05-14",
       "type": "news-article",
       "asm:linkHealth": "unverified",
-      "title_de": "HMRC: How AI is Transforming Tax Collection and Fraud Tech",
-      "title_en": "HMRC: How AI is Transforming Tax Collection and Fraud Tech"
+      "title_de": "HMRC signs £175m Quantexa deal to build 'sovereign' AI and data platform",
+      "title_en": "HMRC signs £175m Quantexa deal to build 'sovereign' AI and data platform"
     },
     {
-      "url": "https://www.finsburyrobinson.co.uk/articles/hmrc-using-technology-and-ai-to-close-the-tax-gap",
-      "title": "HMRC: Using technology and AI to close the tax gap",
-      "publisher": "Finsbury Robinson",
-      "date": "2024",
+      "url": "https://www.uktech.news/news/ai-software-firm-quantexa-wins-175m-contract-with-hmrc-20260514",
+      "title": "AI software firm Quantexa wins £175m contract with HMRC",
+      "publisher": "UKTN",
+      "date": "2026-05-14",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "AI software firm Quantexa wins £175m contract with HMRC",
+      "title_en": "AI software firm Quantexa wins £175m contract with HMRC"
+    },
+    {
+      "url": "https://thenextweb.com/news/quantexa-hmrc-ai-tax-fraud-sovereignty",
+      "title": "HMRC awards £175 million AI contract to British firm Quantexa to close £46.8 billion tax gap",
+      "publisher": "The Next Web",
+      "date": "2026-05",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "HMRC awards £175 million AI contract to British firm Quantexa to close £46.8 billion tax gap",
+      "title_en": "HMRC awards £175 million AI contract to British firm Quantexa to close £46.8 billion tax gap"
+    },
+    {
+      "url": "https://www.step.org/industry-news/hmrcs-large-scale-data-analysis-now-generating-billions-tax-revenue",
+      "title": "HMRC's large-scale data analysis now generating billions in tax revenue",
+      "publisher": "STEP",
+      "date": "2025",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "HMRC's large-scale data analysis now generating billions in tax revenue",
+      "title_en": "HMRC's large-scale data analysis now generating billions in tax revenue"
+    },
+    {
+      "url": "https://financialaccountant.co.uk/features/hmrc-connect-tax-investigations-explained/",
+      "title": "HMRC Connect: the £4.6bn tax detective (and growing)",
+      "publisher": "IFA / Financial Accountant",
+      "date": "2025",
       "type": "analysis",
       "asm:linkHealth": "unverified",
-      "title_de": "HMRC: Using technology and AI to close the tax gap",
-      "title_en": "HMRC: Using technology and AI to close the tax gap"
+      "title_de": "HMRC Connect: the £4.6bn tax detective (and growing)",
+      "title_en": "HMRC Connect: the £4.6bn tax detective (and growing)"
     }
   ],
   "asm:metadata": {
     "created": "2026-06-01",
-    "lastUpdated": "2026-06-01",
+    "lastUpdated": "2026-06-26",
     "author": "AIStrikeMap (promoted from candidate)",
     "aiGenerated": true,
     "humanVerified": false,

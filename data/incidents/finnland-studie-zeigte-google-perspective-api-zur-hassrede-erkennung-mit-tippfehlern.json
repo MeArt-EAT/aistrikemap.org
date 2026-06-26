@@ -5,34 +5,49 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/finnland-studie-zeigte-google-perspective-api-zur-hassrede-erkennung-mit-tippfehlern",
-  "name": "Global: Studie zeigte - Google-Perspective-API zur Hassrede-Erkennung mit Tippfehlern überlistbar",
-  "name_de": "Global: Studie zeigte - Google-Perspective-API zur Hassrede-Erkennung mit Tippfehlern überlistbar",
-  "name_en": "Global: Study showed Google Perspective API for hate speech detection could be tricked by typos",
-  "description": "Forschende der Aalto-Universität und der University of Padua veröffentlichten die Studie 'Deceiving Google's Perspective API Built for Detecting Toxic Comments'. Sie zeigten, dass das von Google/Jigsaw entwickelte Perspective-System für Hassrede-Erkennung durch Tippfehler, Leerzeichen-Einschübe ('id*iot') oder das Hinzufügen von 'love' den Toxizitäts-Score drastisch senken konnte - eine erste systematische Adversarial-Attack-Demonstration gegen Content-Moderations-KI. Der Fall stand im Stub auf 2018, Veröffentlichung war jedoch Feb 2017.",
-  "description_de": "Forschende der Aalto-Universität und der University of Padua veröffentlichten die Studie 'Deceiving Google's Perspective API Built for Detecting Toxic Comments'. Sie zeigten, dass das von Google/Jigsaw entwickelte Perspective-System für Hassrede-Erkennung durch Tippfehler, Leerzeichen-Einschübe ('id*iot') oder das Hinzufügen von 'love' den Toxizitäts-Score drastisch senken konnte - eine erste systematische Adversarial-Attack-Demonstration gegen Content-Moderations-KI. Der Fall stand im Stub auf 2018, Veröffentlichung war jedoch Feb 2017.",
-  "description_en": "Researchers at Aalto University and the University of Padua published the study 'Deceiving Google's Perspective API Built for Detecting Toxic Comments'. They showed that Google/Jigsaw's Perspective system for hate-speech detection could be tricked into drastically lower toxicity scores via typos, inserted spaces ('id*iot') or adding 'love' - one of the first systematic adversarial-attack demonstrations against content-moderation AI. The stub dated this to 2018, but the paper appeared in February 2017.",
+  "name": "USA: Studie zeigte - Google-Perspective-API zur Hassrede-Erkennung mit Tippfehlern überlistbar",
+  "name_de": "USA: Studie zeigte - Google-Perspective-API zur Hassrede-Erkennung mit Tippfehlern überlistbar",
+  "name_en": "USA: Study showed Google Perspective API for hate speech detection could be tricked by typos",
+  "description": "Forschende des Network Security Lab der University of Washington (Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran) veröffentlichten am 27. Februar 2017 die Studie 'Deceiving Google's Perspective API Built for Detecting Toxic Comments'. Sie zeigten, dass das von Google/Jigsaw entwickelte Perspective-System für Hassrede-Erkennung durch absichtliche Tippfehler oder eingefügte Satzzeichen zwischen Buchstaben überlistet werden konnte - etwa senkte 'idiiot' statt 'idiot' den Toxizitäts-Score von 84 auf 20 Prozent. Es war eine der ersten systematischen Adversarial-Attack-Demonstrationen gegen Content-Moderations-KI. Der Stub datierte den Fall auf 2018, die Veröffentlichung war jedoch Februar 2017.",
+  "description_de": "Forschende des Network Security Lab der University of Washington (Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran) veröffentlichten am 27. Februar 2017 die Studie 'Deceiving Google's Perspective API Built for Detecting Toxic Comments'. Sie zeigten, dass das von Google/Jigsaw entwickelte Perspective-System für Hassrede-Erkennung durch absichtliche Tippfehler oder eingefügte Satzzeichen zwischen Buchstaben überlistet werden konnte - etwa senkte 'idiiot' statt 'idiot' den Toxizitäts-Score von 84 auf 20 Prozent. Es war eine der ersten systematischen Adversarial-Attack-Demonstrationen gegen Content-Moderations-KI. Der Stub datierte den Fall auf 2018, die Veröffentlichung war jedoch Februar 2017.",
+  "description_en": "Researchers at the Network Security Lab of the University of Washington (Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran) published the study 'Deceiving Google's Perspective API Built for Detecting Toxic Comments' on 27 February 2017. They showed that Google/Jigsaw's Perspective system for hate-speech detection could be tricked via deliberate typos or punctuation inserted between letters - for example, 'idiiot' instead of 'idiot' lowered the toxicity score from 84 to 20 percent. It was one of the first systematic adversarial-attack demonstrations against content-moderation AI. The stub dated this to 2018, but the paper appeared in February 2017.",
   "startDate": "2017-02-27",
   "location": {
     "@type": "Place",
-    "name": "Espoo, Finnland (Aalto University)",
+    "name": "Seattle, Washington, USA (University of Washington)",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 60.1841,
-      "longitude": 24.829
+      "latitude": 47.6553,
+      "longitude": -122.3035
     },
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "FI"
+      "addressCountry": "US"
     },
-    "name_de": "Espoo, Finnland (Aalto University)",
-    "name_en": "Espoo, Finland (Aalto University)"
+    "name_de": "Seattle, Washington, USA (University of Washington)",
+    "name_en": "Seattle, Washington, USA (University of Washington)"
   },
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Würde des Menschen",
+    "Meinungsfreiheit",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Human dignity",
+    "Freedom of expression",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Google / Jigsaw",
@@ -44,33 +59,98 @@
       "name_en": "Google / Jigsaw"
     },
     {
-      "name": "Aalto University",
+      "name": "University of Washington (Network Security Lab)",
       "type": "organization",
       "asm:systems": [],
-      "name_de": "Aalto University",
-      "name_en": "Aalto University"
+      "name_de": "University of Washington (Network Security Lab)",
+      "name_en": "University of Washington (Network Security Lab)"
     },
     {
-      "name": "University of Padua",
-      "type": "organization",
+      "name": "Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran",
+      "type": "individual",
       "asm:systems": [],
-      "name_de": "University of Padua",
-      "name_en": "University of Padua"
+      "name_de": "Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran",
+      "name_en": "Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran"
     }
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-02-23",
+      "phase": "infrastructure",
+      "title": "Google und Jigsaw starten die Perspective API",
+      "description": "Google und sein Technologie-Inkubator Jigsaw veröffentlichten die kostenlose Perspective API, ein Machine-Learning-Werkzeug, das Online-Kommentaren einen Toxizitäts-Score von 0 bis 100 zuweist. Das Modell wurde auf hunderttausenden von Menschen bewerteten Kommentaren trainiert. Start-Partner waren unter anderem die New York Times, der Guardian, der Economist und Wikipedia.",
+      "title_de": "Google und Jigsaw starten die Perspective API",
+      "description_de": "Google und sein Technologie-Inkubator Jigsaw veröffentlichten die kostenlose Perspective API, ein Machine-Learning-Werkzeug, das Online-Kommentaren einen Toxizitäts-Score von 0 bis 100 zuweist. Das Modell wurde auf hunderttausenden von Menschen bewerteten Kommentaren trainiert. Start-Partner waren unter anderem die New York Times, der Guardian, der Economist und Wikipedia.",
+      "title_en": "Google and Jigsaw launch the Perspective API",
+      "description_en": "Google and its technology incubator Jigsaw released the free Perspective API, a machine-learning tool that assigns online comments a toxicity score from 0 to 100. The model was trained on hundreds of thousands of human-rated comments. Launch partners included the New York Times, the Guardian, the Economist and Wikipedia.",
+      "sources": [
+        "https://9to5google.com/2017/02/23/jigsaw-google-perspective-machine-learning/"
+      ]
+    },
+    {
+      "date": "2017-02-23",
+      "phase": "doctrine",
+      "title": "Content-Moderation soll automatisiert toxische Sprache filtern",
+      "description": "Mit Perspective verfolgten Google und Jigsaw das Ziel, Online-Belästigung und Hassrede durch automatisierte KI-Bewertung einzudämmen, um Verlagen und Plattformen das Moderieren von Kommentaren zu erleichtern. Die Logik: Ein Algorithmus sollte Beiträge skalierbar als toxisch einstufen und so menschliche Moderation ersetzen oder ergänzen - ohne öffentlich offengelegte Robustheit gegen gezielte Umgehung.",
+      "title_de": "Content-Moderation soll automatisiert toxische Sprache filtern",
+      "description_de": "Mit Perspective verfolgten Google und Jigsaw das Ziel, Online-Belästigung und Hassrede durch automatisierte KI-Bewertung einzudämmen, um Verlagen und Plattformen das Moderieren von Kommentaren zu erleichtern. Die Logik: Ein Algorithmus sollte Beiträge skalierbar als toxisch einstufen und so menschliche Moderation ersetzen oder ergänzen - ohne öffentlich offengelegte Robustheit gegen gezielte Umgehung.",
+      "title_en": "Content moderation aims to automatically filter toxic language",
+      "description_en": "With Perspective, Google and Jigsaw aimed to curb online harassment and hate speech through automated AI scoring, making it easier for publishers and platforms to moderate comments. The logic: an algorithm would classify posts as toxic at scale and thereby replace or augment human moderation - without any publicly disclosed robustness against deliberate evasion.",
+      "sources": [
+        "https://betanews.com/2017/02/23/perspective-toxic-comments/"
+      ]
+    },
+    {
+      "date": "2017-02-27",
+      "phase": "event",
+      "title": "UW-Forschende zeigen - Perspective mit Tippfehlern überlistbar",
+      "description": "Forschende des Network Security Lab der University of Washington (Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran) stellten auf arXiv die Studie 'Deceiving Google's Perspective API' vor. Sie demonstrierten, dass absichtliche Tippfehler oder zwischen Buchstaben eingefügte Satzzeichen den Toxizitäts-Score drastisch senkten - 'idiiot' statt 'idiot' fiel von 84 auf 20 Prozent. Es war eine der frühesten systematischen Adversarial-Attack-Demonstrationen gegen Content-Moderations-KI.",
+      "title_de": "UW-Forschende zeigen - Perspective mit Tippfehlern überlistbar",
+      "description_de": "Forschende des Network Security Lab der University of Washington (Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran) stellten auf arXiv die Studie 'Deceiving Google's Perspective API' vor. Sie demonstrierten, dass absichtliche Tippfehler oder zwischen Buchstaben eingefügte Satzzeichen den Toxizitäts-Score drastisch senkten - 'idiiot' statt 'idiot' fiel von 84 auf 20 Prozent. Es war eine der frühesten systematischen Adversarial-Attack-Demonstrationen gegen Content-Moderations-KI.",
+      "title_en": "UW researchers show Perspective can be tricked by typos",
+      "description_en": "Researchers at the University of Washington Network Security Lab (Hossein Hosseini, Sreeram Kannan, Baosen Zhang, Radha Poovendran) posted the study 'Deceiving Google's Perspective API' on arXiv. They demonstrated that deliberate typos or punctuation inserted between letters drastically lowered the toxicity score - 'idiiot' instead of 'idiot' dropped from 84 to 20 percent. It was one of the earliest systematic adversarial-attack demonstrations against content-moderation AI.",
+      "sources": [
+        "https://arxiv.org/abs/1702.08138",
+        "https://www.washington.edu/news/2017/02/28/uw-security-researchers-show-that-googles-ai-platform-for-defeating-internet-trolls-can-be-easily-deceived/"
+      ]
+    },
+    {
+      "date": "2017-03-02",
+      "phase": "consequences",
+      "title": "Medienberichte und Debatte über brüchige KI-Moderation",
+      "description": "Wired, The Register, Boing Boing und weitere Medien griffen die Ergebnisse auf und thematisierten, wie leicht KI-gestützte Content-Moderation umgangen werden kann. Der Fall wurde zu einem viel zitierten Frühbeleg für die Verwundbarkeit von Hassrede-Klassifikatoren gegenüber Adversarial-Angriffen und beeinflusste die nachfolgende Forschung zu robuster Textmoderation. Jigsaw räumte ein, dass Perspective ein lernendes System im Frühstadium sei.",
+      "title_de": "Medienberichte und Debatte über brüchige KI-Moderation",
+      "description_de": "Wired, The Register, Boing Boing und weitere Medien griffen die Ergebnisse auf und thematisierten, wie leicht KI-gestützte Content-Moderation umgangen werden kann. Der Fall wurde zu einem viel zitierten Frühbeleg für die Verwundbarkeit von Hassrede-Klassifikatoren gegenüber Adversarial-Angriffen und beeinflusste die nachfolgende Forschung zu robuster Textmoderation. Jigsaw räumte ein, dass Perspective ein lernendes System im Frühstadium sei.",
+      "title_en": "Media coverage and debate over fragile AI moderation",
+      "description_en": "Wired, The Register, Boing Boing and other outlets picked up the findings and highlighted how easily AI-driven content moderation can be circumvented. The case became a widely cited early demonstration of how vulnerable hate-speech classifiers are to adversarial attacks and shaped subsequent research on robust text moderation. Jigsaw acknowledged that Perspective was an early-stage learning system.",
+      "sources": [
+        "https://www.wired.com/2017/03/googles-troll-fighting-ai-easy-fool/",
+        "https://www.theregister.com/2017/03/02/google_trollspotting_ai_trips_over_typos/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/abs/1702.08138",
       "title": "Deceiving Google's Perspective API Built for Detecting Toxic Comments",
-      "publisher": "arXiv (Aalto University / University of Padua)",
+      "publisher": "arXiv (University of Washington, Network Security Lab)",
       "date": "2017-02-27",
       "type": "research-paper",
       "asm:linkHealth": "unverified",
       "title_de": "Deceiving Google's Perspective API Built for Detecting Toxic Comments",
       "title_en": "Deceiving Google's Perspective API Built for Detecting Toxic Comments"
+    },
+    {
+      "url": "https://www.washington.edu/news/2017/02/28/uw-security-researchers-show-that-googles-ai-platform-for-defeating-internet-trolls-can-be-easily-deceived/",
+      "title": "UW security researchers show that Google's AI platform for defeating Internet trolls can be easily deceived",
+      "publisher": "University of Washington News",
+      "date": "2017-02-28",
+      "type": "press-release",
+      "asm:linkHealth": "unverified",
+      "title_de": "UW security researchers show that Google's AI platform for defeating Internet trolls can be easily deceived",
+      "title_en": "UW security researchers show that Google's AI platform for defeating Internet trolls can be easily deceived"
     },
     {
       "url": "https://www.wired.com/2017/03/googles-troll-fighting-ai-easy-fool/",
@@ -85,7 +165,7 @@
   ],
   "asm:metadata": {
     "created": "2026-06-05",
-    "lastUpdated": "2026-06-05",
+    "lastUpdated": "2026-06-26",
     "author": "AIStrikeMap (promoted from candidate)",
     "aiGenerated": true,
     "humanVerified": false,
