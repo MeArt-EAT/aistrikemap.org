@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "censorship"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung",
+    "Recht auf faires Verfahren"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Verbraucherschutz",
+    "Schutz vor Diskriminierung",
+    "Recht auf faires Verfahren"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Consumer protection",
+    "Protection against discrimination",
+    "Right to a fair procedure"
+  ],
   "asm:actors": [
     {
       "name": "Gaze Seed Company",
@@ -53,7 +68,60 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Facebook setzt KI-Bilderkennung zur automatisierten Anzeigenprüfung ein",
+      "description": "Facebook prüft Werbeanzeigen zunehmend automatisiert mit maschinellem Sehen, das Bilder gegen Richtlinien-Kategorien wie Nacktheit und sexuelle Inhalte klassifiziert. Die schiere Menge an täglich eingereichten Anzeigen macht eine rein menschliche Prüfung unmöglich, weshalb Bildklassifikatoren als erste Instanz entscheiden. Solche Modelle erkennen runde Formen und Hauttöne, ohne den Kontext zu verstehen.",
+      "title_de": "Facebook setzt KI-Bilderkennung zur automatisierten Anzeigenprüfung ein",
+      "description_de": "Facebook prüft Werbeanzeigen zunehmend automatisiert mit maschinellem Sehen, das Bilder gegen Richtlinien-Kategorien wie Nacktheit und sexuelle Inhalte klassifiziert. Die schiere Menge an täglich eingereichten Anzeigen macht eine rein menschliche Prüfung unmöglich, weshalb Bildklassifikatoren als erste Instanz entscheiden. Solche Modelle erkennen runde Formen und Hauttöne, ohne den Kontext zu verstehen.",
+      "title_en": "Facebook deploys AI image recognition for automated ad review",
+      "description_en": "Facebook increasingly reviews ads automatically using computer vision that classifies images against policy categories such as nudity and sexual content. The sheer volume of ads submitted daily makes purely human review impossible, so image classifiers act as the first line of decision. Such models detect round shapes and skin tones without understanding context.",
+      "sources": [
+        "https://techdirt.com/articles/20201211/15111245871/content-moderation-case-study-facebooks-ai-continues-to-struggle-with-identifying-nudity-2020.shtml"
+      ]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Werberichtlinie verbietet 'overtly sexual' Inhalte in Anzeigen",
+      "description": "Facebooks Werbestandards untersagen Anzeigen mit nackten oder sexuell suggestiven Darstellungen. Verstöße führen zur automatischen Ablehnung der Anzeige durch die Klassifikatoren, bevor ein Mensch eingreift. Diese Richtlinie definiert die Kategorie 'overtly sexual', in die das System später das Zwiebelfoto einordnete.",
+      "title_de": "Werberichtlinie verbietet 'overtly sexual' Inhalte in Anzeigen",
+      "description_de": "Facebooks Werbestandards untersagen Anzeigen mit nackten oder sexuell suggestiven Darstellungen. Verstöße führen zur automatischen Ablehnung der Anzeige durch die Klassifikatoren, bevor ein Mensch eingreift. Diese Richtlinie definiert die Kategorie 'overtly sexual', in die das System später das Zwiebelfoto einordnete.",
+      "title_en": "Ad policy bans 'overtly sexual' content in advertisements",
+      "description_en": "Facebook's advertising standards prohibit ads with nude or sexually suggestive depictions. Violations trigger automatic rejection of the ad by the classifiers before any human reviews it. This policy defines the 'overtly sexual' category into which the system later placed the onion photo.",
+      "sources": [
+        "https://transparency.meta.com/policies/ad-standards/"
+      ]
+    },
+    {
+      "date": "2020-10-06",
+      "phase": "event",
+      "title": "Zwiebelsamen-Anzeige als 'zu sexuell' abgelehnt",
+      "description": "Facebooks automatisierte Anzeigenprüfung lehnte eine Werbung der kanadischen Gaze Seed Company für Walla-Walla-Zwiebelsamen ab. Das Foto runder Zwiebeln in einem Korb wurde als 'overtly sexual' (zu sexuell) eingestuft. Der Inhaber, der die Anzeige für ein Saatgut-Produkt schaltete, erhielt eine Sperrmeldung ohne menschliche Prüfung.",
+      "title_de": "Zwiebelsamen-Anzeige als 'zu sexuell' abgelehnt",
+      "description_de": "Facebooks automatisierte Anzeigenprüfung lehnte eine Werbung der kanadischen Gaze Seed Company für Walla-Walla-Zwiebelsamen ab. Das Foto runder Zwiebeln in einem Korb wurde als 'overtly sexual' (zu sexuell) eingestuft. Der Inhaber, der die Anzeige für ein Saatgut-Produkt schaltete, erhielt eine Sperrmeldung ohne menschliche Prüfung.",
+      "title_en": "Onion-seed ad rejected as 'overtly sexual'",
+      "description_en": "Facebook's automated ad review rejected an ad by Canadian firm Gaze Seed Company for Walla Walla onion seeds. The photo of round onions in a basket was classified as 'overtly sexual'. The owner, who ran the ad for a seed product, received a block notice without any human review.",
+      "sources": [
+        "https://theregister.com/AMP/2020/10/13/in_brief_ai"
+      ]
+    },
+    {
+      "date": "2020-10-08",
+      "phase": "consequences",
+      "title": "Facebook entschuldigt sich und stellt Anzeige wieder her",
+      "description": "Nach internationaler Medienberichterstattung räumte Facebook Kanada den Fehler ein, stellte die Anzeige wieder her und entschuldigte sich. Der Fall wurde zu einem viel geteilten Beispiel für kontextblinde Fehlklassifikationen durch KI-Bildmoderation. Er befeuerte die Debatte über automatisierte Inhaltsprüfung ohne ausreichende menschliche Kontrolle.",
+      "title_de": "Facebook entschuldigt sich und stellt Anzeige wieder her",
+      "description_de": "Nach internationaler Medienberichterstattung räumte Facebook Kanada den Fehler ein, stellte die Anzeige wieder her und entschuldigte sich. Der Fall wurde zu einem viel geteilten Beispiel für kontextblinde Fehlklassifikationen durch KI-Bildmoderation. Er befeuerte die Debatte über automatisierte Inhaltsprüfung ohne ausreichende menschliche Kontrolle.",
+      "title_en": "Facebook apologises and restores the ad",
+      "description_en": "After international media coverage, Facebook Canada acknowledged the error, restored the ad and apologised. The case became a widely shared example of context-blind misclassification by AI image moderation. It fuelled debate about automated content review lacking sufficient human oversight.",
+      "sources": [
+        "https://www.today.com/food/facebook-blocked-ad-onions-being-overtly-sexual-t193666"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.newsweek.com/facebook-pulls-ad-sexual-onions-1537259",

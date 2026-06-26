@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Zugang zu Information",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Zugang zu Information",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Access to information",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -41,7 +53,60 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11-30",
+      "phase": "infrastructure",
+      "title": "OpenAI startet ChatGPT als globalen Massendienst",
+      "description": "Am 30. November 2022 veröffentlichte OpenAI ChatGPT, das innerhalb weniger Monate zu einem der weltweit meistgenutzten KI-Dienste mit hunderten Millionen Nutzern wurde. Der Dienst erzeugt Antworten Wort für Wort auf Basis von Wahrscheinlichkeiten und läuft auf großen, ständig optimierten GPU-Infrastrukturen.",
+      "title_de": "OpenAI startet ChatGPT als globalen Massendienst",
+      "description_de": "Am 30. November 2022 veröffentlichte OpenAI ChatGPT, das innerhalb weniger Monate zu einem der weltweit meistgenutzten KI-Dienste mit hunderten Millionen Nutzern wurde. Der Dienst erzeugt Antworten Wort für Wort auf Basis von Wahrscheinlichkeiten und läuft auf großen, ständig optimierten GPU-Infrastrukturen.",
+      "title_en": "OpenAI launches ChatGPT as a global mass-market service",
+      "description_en": "On 30 November 2022 OpenAI released ChatGPT, which within a few months became one of the world's most-used AI services with hundreds of millions of users. The service generates responses word by word based on probabilities and runs on large, continuously optimised GPU infrastructure.",
+      "sources": [
+        "https://www.theregister.com/2024/02/21/chatgpt_bug/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Laufende Performance-Optimierungen im Live-Betrieb",
+      "description": "Wie bei großen Cloud-Diensten üblich, spielt OpenAI fortlaufend Optimierungen direkt in den produktiven Betrieb ein, um Geschwindigkeit, Kosten und Nutzererlebnis zu verbessern. Solche Eingriffe in die Inferenz-Pipeline betreffen unmittelbar Millionen Nutzer und bergen das Risiko, dass ein Fehler in einer Optimierung sich sofort breit auswirkt.",
+      "title_de": "Laufende Performance-Optimierungen im Live-Betrieb",
+      "description_de": "Wie bei großen Cloud-Diensten üblich, spielt OpenAI fortlaufend Optimierungen direkt in den produktiven Betrieb ein, um Geschwindigkeit, Kosten und Nutzererlebnis zu verbessern. Solche Eingriffe in die Inferenz-Pipeline betreffen unmittelbar Millionen Nutzer und bergen das Risiko, dass ein Fehler in einer Optimierung sich sofort breit auswirkt.",
+      "title_en": "Ongoing performance optimisations in live operation",
+      "description_en": "As is common for large cloud services, OpenAI continuously rolls optimisations directly into production to improve speed, cost and user experience. Such changes to the inference pipeline immediately affect millions of users and carry the risk that a fault in an optimisation has a broad effect at once.",
+      "sources": [
+        "https://venturebeat.com/ai/chatgpt-goes-off-the-rails-with-gibberish-answers"
+      ]
+    },
+    {
+      "date": "2024-02-20",
+      "phase": "event",
+      "title": "ChatGPT gibt stundenlang unsinnige Antworten",
+      "description": "Am 20. Februar 2024 lieferte ChatGPT mehrere Stunden lang unsinnige Antworten: Die Ausgaben mischten Englisch, Spanisch und reines Kauderwelsch, erfanden Wörter oder wiederholten Phrasen endlos. Nutzer dokumentierten die bizarren Antworten ausgiebig in sozialen Medien, während der Dienst zeitweise unbrauchbar war.",
+      "title_de": "ChatGPT gibt stundenlang unsinnige Antworten",
+      "description_de": "Am 20. Februar 2024 lieferte ChatGPT mehrere Stunden lang unsinnige Antworten: Die Ausgaben mischten Englisch, Spanisch und reines Kauderwelsch, erfanden Wörter oder wiederholten Phrasen endlos. Nutzer dokumentierten die bizarren Antworten ausgiebig in sozialen Medien, während der Dienst zeitweise unbrauchbar war.",
+      "title_en": "ChatGPT outputs nonsense for hours",
+      "description_en": "On 20 February 2024 ChatGPT produced nonsensical responses for several hours: outputs mixed English, Spanish and pure gibberish, invented words or repeated phrases endlessly. Users extensively documented the bizarre answers on social media while the service was temporarily unusable.",
+      "sources": [
+        "https://www.theregister.com/2024/02/21/chatgpt_bug/"
+      ]
+    },
+    {
+      "date": "2024-02-21",
+      "phase": "consequences",
+      "title": "OpenAI behebt Bug, benennt fehlerhafte Optimierung als Ursache",
+      "description": "OpenAI führte den Fehler in einem Postmortem auf eine Optimierung zurück, bei der das Modell beim Zuordnen der Zahlen zu Sprach-Tokens in bestimmten GPU-Konfigurationen falsche Werte wählte und dadurch unsinnige Wortfolgen erzeugte. Nach Identifizierung der Ursache wurde der Fehler behoben. Ein konkreter Schaden ist nicht bekannt; der Vorfall verdeutlichte jedoch die Abhängigkeit von und Fehleranfälligkeit zentralisierter KI-Dienste.",
+      "title_de": "OpenAI behebt Bug, benennt fehlerhafte Optimierung als Ursache",
+      "description_de": "OpenAI führte den Fehler in einem Postmortem auf eine Optimierung zurück, bei der das Modell beim Zuordnen der Zahlen zu Sprach-Tokens in bestimmten GPU-Konfigurationen falsche Werte wählte und dadurch unsinnige Wortfolgen erzeugte. Nach Identifizierung der Ursache wurde der Fehler behoben. Ein konkreter Schaden ist nicht bekannt; der Vorfall verdeutlichte jedoch die Abhängigkeit von und Fehleranfälligkeit zentralisierter KI-Dienste.",
+      "title_en": "OpenAI fixes the bug, names a faulty optimisation as the cause",
+      "description_en": "In a postmortem OpenAI attributed the fault to an optimisation in which the model chose wrong values when mapping numbers to language tokens in certain GPU configurations, producing nonsensical word sequences. The bug was fixed once the cause was identified. No concrete harm is known; the incident nonetheless highlighted the dependence on and error-proneness of centralised AI services.",
+      "sources": [
+        "https://gizmodo.com/chatgpt-gone-berserk-giving-nonsensical-responses-1851273889"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2024/02/21/chatgpt_bug/",

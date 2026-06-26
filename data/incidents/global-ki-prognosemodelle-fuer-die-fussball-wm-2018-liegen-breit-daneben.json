@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Right to information"
+  ],
   "asm:actors": [
     {
       "name": "Goldman Sachs",
@@ -74,7 +86,60 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2005",
+      "phase": "infrastructure",
+      "title": "Datenbasis aus historischen Spielergebnissen seit 2005",
+      "description": "Banken und akademische Teams sammelten umfangreiche Datensätze zu Team-Eigenschaften und Einzelspielern aus Wettbewerbsspielen der WM und der Europacups. Goldman Sachs nutzte diese Spielergebnisse ab 2005 als Trainingsgrundlage, um den Zusammenhang zwischen Team-Merkmalen und erzielten Toren maschinell zu lernen. Diese Datenbasis bildete die Grundlage der späteren Prognosemodelle.",
+      "title_de": "Datenbasis aus historischen Spielergebnissen seit 2005",
+      "description_de": "Banken und akademische Teams sammelten umfangreiche Datensätze zu Team-Eigenschaften und Einzelspielern aus Wettbewerbsspielen der WM und der Europacups. Goldman Sachs nutzte diese Spielergebnisse ab 2005 als Trainingsgrundlage, um den Zusammenhang zwischen Team-Merkmalen und erzielten Toren maschinell zu lernen. Diese Datenbasis bildete die Grundlage der späteren Prognosemodelle.",
+      "title_en": "Data base of historical match results since 2005",
+      "description_en": "Banks and academic teams collected extensive data sets on team characteristics and individual players from competitive World Cup and European Cup matches. Goldman Sachs used these match results from 2005 onward as training data to machine-learn the relationship between team characteristics and goals scored. This data base became the foundation of the later prediction models.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2018-06-11/goldman-tips-brazil-for-world-cup-after-1-million-simulations"
+      ]
+    },
+    {
+      "date": "2018-06",
+      "phase": "doctrine",
+      "title": "Banken vermarkten KI-Prognosen als Marketing- und Research-Instrument",
+      "description": "Im Vorfeld der WM 2018 entschieden sich Goldman Sachs, UBS und ING dazu, eigene KI-gestützte Turnierprognosen zu veröffentlichen. Goldman ließ 200.000 statistische Modelle eine Million Turnier-Simulationen durchrechnen und präsentierte das Ergebnis öffentlichkeitswirksam als Demonstration der eigenen Datenkompetenz. Solche Prognosen dienten primär dem Research-Marketing, nicht einer verbindlichen Vorhersage.",
+      "title_de": "Banken vermarkten KI-Prognosen als Marketing- und Research-Instrument",
+      "description_de": "Im Vorfeld der WM 2018 entschieden sich Goldman Sachs, UBS und ING dazu, eigene KI-gestützte Turnierprognosen zu veröffentlichen. Goldman ließ 200.000 statistische Modelle eine Million Turnier-Simulationen durchrechnen und präsentierte das Ergebnis öffentlichkeitswirksam als Demonstration der eigenen Datenkompetenz. Solche Prognosen dienten primär dem Research-Marketing, nicht einer verbindlichen Vorhersage.",
+      "title_en": "Banks market AI forecasts as a marketing and research tool",
+      "description_en": "Ahead of the 2018 World Cup, Goldman Sachs, UBS and ING decided to publish their own AI-based tournament forecasts. Goldman had 200,000 statistical models run one million tournament simulations and presented the result publicly as a demonstration of its data expertise. Such forecasts served primarily as research marketing rather than as a binding prediction.",
+      "sources": [
+        "https://www.menabytes.com/goldman-sachs-ai-world-cup-2018/"
+      ]
+    },
+    {
+      "date": "2018-07-15",
+      "phase": "event",
+      "title": "Global: KI-Prognosemodelle für die Fußball-WM 2018 liegen breit daneben",
+      "description": "Vor und während der Fußball-WM 2018 veröffentlichten Goldman Sachs, UBS, ING sowie akademische Teams der TU München, Ghent und Blue Yonder eigene KI-Prognosen. Goldmans Modell mit 200.000 Wahrscheinlichkeitsbäumen sah ein Brasilien-Deutschland-Finale; Deutschland schied in der Gruppenphase aus, Brasilien im Viertelfinale. Ein Mid-Turnier-Update auf Belgien-England-Finale verfehlte ebenfalls beide Finalisten (Frankreich vs. Kroatien).",
+      "description_de": "Vor und während der Fußball-WM 2018 veröffentlichten Goldman Sachs, UBS, ING sowie akademische Teams der TU München, Ghent und Blue Yonder eigene KI-Prognosen. Goldmans Modell mit 200.000 Wahrscheinlichkeitsbäumen sah ein Brasilien-Deutschland-Finale; Deutschland schied in der Gruppenphase aus, Brasilien im Viertelfinale. Ein Mid-Turnier-Update auf Belgien-England-Finale verfehlte ebenfalls beide Finalisten (Frankreich vs. Kroatien).",
+      "title_de": "Global: KI-Prognosemodelle für die Fußball-WM 2018 liegen breit daneben",
+      "title_en": "Global: AI prediction models fail to forecast 2018 FIFA World Cup outcomes",
+      "description_en": "Before and during the 2018 FIFA World Cup, Goldman Sachs, UBS, ING and academic teams at TU Munich, Ghent and Blue Yonder published their own AI forecasts. Goldman's model with 200,000 probability trees predicted a Brazil-Germany final; Germany was eliminated in the group stage and Brazil in the quarterfinals. A mid-tournament update predicting a Belgium-England final also missed both actual finalists (France vs. Croatia).",
+      "sources": [
+        "http://www.xinhuanet.com/english/2018-06/13/c_137251298.htm"
+      ]
+    },
+    {
+      "date": "2018-07-30",
+      "phase": "consequences",
+      "title": "Lehrbuch-Beispiel für die Grenzen von Prognosemodellen",
+      "description": "Nach dem Turnier analysierten Datenwissenschaftler die Fehlprognosen öffentlich. Der Fall wurde zum vielzitierten Lehrbuch-Beispiel dafür, dass selbst aufwendige KI-Modelle bei stark stochastischen Ereignissen wie K.-o.-Spielen kaum belastbare Einzelvorhersagen liefern. Die Episode mahnte zu Vorsicht gegenüber medienwirksam vermarkteten KI-Prognosen und betonte die Bedeutung von Wahrscheinlichkeitsdenken statt Punktvorhersagen.",
+      "title_de": "Lehrbuch-Beispiel für die Grenzen von Prognosemodellen",
+      "description_de": "Nach dem Turnier analysierten Datenwissenschaftler die Fehlprognosen öffentlich. Der Fall wurde zum vielzitierten Lehrbuch-Beispiel dafür, dass selbst aufwendige KI-Modelle bei stark stochastischen Ereignissen wie K.-o.-Spielen kaum belastbare Einzelvorhersagen liefern. Die Episode mahnte zu Vorsicht gegenüber medienwirksam vermarkteten KI-Prognosen und betonte die Bedeutung von Wahrscheinlichkeitsdenken statt Punktvorhersagen.",
+      "title_en": "Textbook example of the limits of prediction models",
+      "description_en": "After the tournament, data scientists publicly analysed the failed forecasts. The case became a widely cited textbook example showing that even elaborate AI models can barely deliver reliable single-event predictions for highly stochastic events such as knockout matches. The episode cautioned against media-driven AI forecasts and emphasised the importance of probabilistic thinking over point predictions.",
+      "sources": [
+        "https://opendatascience.com/how-well-did-data-scientists-predict-the-2018-world-cup-hint-not-very/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "http://www.xinhuanet.com/english/2018-06/13/c_137251298.htm",

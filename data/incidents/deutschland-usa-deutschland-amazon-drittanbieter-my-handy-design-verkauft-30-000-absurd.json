@@ -25,9 +25,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Würde des Menschen",
+    "Urheberrecht und geistiges Eigentum",
+    "Schutz vor Diskriminierung",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Würde des Menschen",
+    "Urheberrecht und geistiges Eigentum",
+    "Schutz vor Diskriminierung",
+    "Privatsphäre"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Human dignity",
+    "Copyright and intellectual property",
+    "Protection from discrimination",
+    "Privacy"
+  ],
   "asm:actors": [
     {
       "name": "My Handy Design / ToasterNet",
@@ -46,7 +64,60 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Bild-Scraping-Bot mit Zugriff auf Millionen Stockfotos",
+      "description": "Der deutsche Anbieter ToasterNet (Marke 'My Handy Design') baute einen automatisierten Print-on-Demand-Workflow auf: Ein Bot griff auf einen riesigen Bildbestand zu - laut Berichten unter anderem über eine Anbindung an den Stockfoto-Dienst Fotolia mit rund 40 Millionen Bildern - und druckte häufig gesuchte Motive automatisch auf iPhone-Hüllen. Eine inhaltliche Prüfung der Motive auf Eignung, Rechte oder Anstand fand dabei nicht statt.",
+      "title_de": "Bild-Scraping-Bot mit Zugriff auf Millionen Stockfotos",
+      "description_de": "Der deutsche Anbieter ToasterNet (Marke 'My Handy Design') baute einen automatisierten Print-on-Demand-Workflow auf: Ein Bot griff auf einen riesigen Bildbestand zu - laut Berichten unter anderem über eine Anbindung an den Stockfoto-Dienst Fotolia mit rund 40 Millionen Bildern - und druckte häufig gesuchte Motive automatisch auf iPhone-Hüllen. Eine inhaltliche Prüfung der Motive auf Eignung, Rechte oder Anstand fand dabei nicht statt.",
+      "title_en": "Image-scraping bot with access to millions of stock photos",
+      "description_en": "German seller ToasterNet (brand 'My Handy Design') built an automated print-on-demand workflow: a bot drew on a vast image pool - reportedly including a connection to the stock-photo service Fotolia with around 40 million images - and automatically printed frequently searched motifs onto iPhone cases. No content check of the motifs for suitability, rights or decency took place.",
+      "sources": [
+        "https://omr.com/en/daily/my-handy-design-nightmarish-phone-cases-amazon"
+      ]
+    },
+    {
+      "date": "2017",
+      "phase": "doctrine",
+      "title": "Amazon-Marketplace erlaubt massenhafte Auto-Listings ohne Curation",
+      "description": "Amazons offener Marketplace erlaubte es Drittanbietern, sehr große Produktkataloge automatisiert einzustellen. Berichten zufolge übernahm Amazon in den USA rund 30.000 Artikel des Anbieters in das eigene Sortiment. Eine vorgeschaltete redaktionelle oder automatisierte Inhaltskontrolle der maschinell erzeugten Listings war nicht etabliert, sodass anstößige Motive ungeprüft online gingen.",
+      "title_de": "Amazon-Marketplace erlaubt massenhafte Auto-Listings ohne Curation",
+      "description_de": "Amazons offener Marketplace erlaubte es Drittanbietern, sehr große Produktkataloge automatisiert einzustellen. Berichten zufolge übernahm Amazon in den USA rund 30.000 Artikel des Anbieters in das eigene Sortiment. Eine vorgeschaltete redaktionelle oder automatisierte Inhaltskontrolle der maschinell erzeugten Listings war nicht etabliert, sodass anstößige Motive ungeprüft online gingen.",
+      "title_en": "Amazon marketplace allows mass auto-listings without curation",
+      "description_en": "Amazon's open marketplace allowed third-party sellers to upload very large product catalogues automatically. According to reports, Amazon in the US took on roughly 30,000 of the seller's articles into its own assortment. No upstream editorial or automated content review of the machine-generated listings was in place, so offensive motifs went online unchecked.",
+      "sources": [
+        "https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/phone-case-design-bot-goes-rogue"
+      ]
+    },
+    {
+      "date": "2017-07-10",
+      "phase": "event",
+      "title": "Bot listet rund 30.000 groteske und unangemessene Handyhüllen",
+      "description": "Im Juli 2017 fielen die automatisch erzeugten Angebote von 'My Handy Design' auf: Rund 30.000 oft groteske oder unangemessene Motive standen zum Verkauf, darunter medizinische Befunde, Drogen-Bilder, Inkontinenz-Szenen und Aufnahmen von Kindern mit Behinderungen. Der Bot hatte Bilder ohne jede inhaltliche Filterung gescrapt und auf iPhone-6-Hüllen gedruckt.",
+      "title_de": "Bot listet rund 30.000 groteske und unangemessene Handyhüllen",
+      "description_de": "Im Juli 2017 fielen die automatisch erzeugten Angebote von 'My Handy Design' auf: Rund 30.000 oft groteske oder unangemessene Motive standen zum Verkauf, darunter medizinische Befunde, Drogen-Bilder, Inkontinenz-Szenen und Aufnahmen von Kindern mit Behinderungen. Der Bot hatte Bilder ohne jede inhaltliche Filterung gescrapt und auf iPhone-6-Hüllen gedruckt.",
+      "title_en": "Bot lists around 30,000 grotesque and inappropriate phone cases",
+      "description_en": "In July 2017 the automatically generated listings of 'My Handy Design' drew attention: around 30,000 often grotesque or inappropriate motifs were on sale, including medical conditions, drug imagery, incontinence scenes and pictures of children with disabilities. The bot had scraped images without any content filtering and printed them onto iPhone 6 cases.",
+      "sources": [
+        "https://gizmodo.com/this-companys-amazon-store-is-an-absolute-nightmare-1796745887"
+      ]
+    },
+    {
+      "date": "2017-07-12",
+      "phase": "consequences",
+      "title": "Medienberichte, Amazon entfernt Listings",
+      "description": "Gizmodo, BBC, The Guardian und The Verge berichteten über die bizarren Angebote, woraufhin Amazon die Listings entfernte. Der Fall wurde zu einem viel zitierten Lehrbeispiel für die Risiken algorithmisch generierter Marketplace-Inhalte ohne Curation und für den ungefilterten Einsatz von Bild-Scraping in Print-on-Demand-Geschäftsmodellen.",
+      "title_de": "Medienberichte, Amazon entfernt Listings",
+      "description_de": "Gizmodo, BBC, The Guardian und The Verge berichteten über die bizarren Angebote, woraufhin Amazon die Listings entfernte. Der Fall wurde zu einem viel zitierten Lehrbeispiel für die Risiken algorithmisch generierter Marketplace-Inhalte ohne Curation und für den ungefilterten Einsatz von Bild-Scraping in Print-on-Demand-Geschäftsmodellen.",
+      "title_en": "Media coverage, Amazon removes the listings",
+      "description_en": "Gizmodo, BBC, The Guardian and The Verge reported on the bizarre listings, after which Amazon removed them. The case became a widely cited cautionary example of the risks of algorithmically generated marketplace content without curation and of the unfiltered use of image scraping in print-on-demand business models.",
+      "sources": [
+        "https://www.theguardian.com/technology/shortcuts/2017/jul/12/the-strangest-iphone-cases-you-have-ever-seen"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://gizmodo.com/this-companys-amazon-store-is-an-absolute-nightmare-1796745887",

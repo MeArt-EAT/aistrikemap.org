@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Schutz vor Manipulation",
+    "Öffentliche Sicherheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Schutz vor Manipulation",
+    "Öffentliche Sicherheit",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Protection from manipulation",
+    "Public safety",
+    "Human dignity"
+  ],
   "asm:actors": [
     {
       "name": "Anonymous developer (ChaosGPT)",
@@ -51,7 +66,73 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-03-14",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht GPT-4 als leistungsfähiges Sprachmodell",
+      "description": "Mitte März 2023 veröffentlichte OpenAI das Sprachmodell GPT-4, das deutlich leistungsfähiger war als frühere Modelle und per API in eigene Anwendungen eingebunden werden konnte. Damit existierte die technische Grundlage, auf der wenig später autonome Agenten-Tools aufgebaut wurden.",
+      "title_de": "OpenAI veröffentlicht GPT-4 als leistungsfähiges Sprachmodell",
+      "description_de": "Mitte März 2023 veröffentlichte OpenAI das Sprachmodell GPT-4, das deutlich leistungsfähiger war als frühere Modelle und per API in eigene Anwendungen eingebunden werden konnte. Damit existierte die technische Grundlage, auf der wenig später autonome Agenten-Tools aufgebaut wurden.",
+      "title_en": "OpenAI releases GPT-4 as a powerful language model",
+      "description_en": "In mid-March 2023 OpenAI released the GPT-4 language model, which was substantially more capable than earlier models and could be integrated into custom applications via API. This created the technical foundation on which autonomous agent tools were built shortly afterwards.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AutoGPT"
+      ]
+    },
+    {
+      "date": "2023-03-30",
+      "phase": "infrastructure",
+      "title": "Auto-GPT macht autonome KI-Agenten breit zugänglich",
+      "description": "Am 30. März 2023 veröffentlichte Toran Bruce Richards (Significant Gravitas) das quelloffene Tool Auto-GPT. Es war eine der ersten breit zugänglichen Anwendungen, die GPT-4 autonom einsetzte: Das Tool zerlegt ein vorgegebenes Ziel selbständig in Teilaufgaben und nutzt Werkzeuge wie Websuche und Dateizugriff, um sie ohne ständige menschliche Eingriffe zu verfolgen. Es verbreitete sich innerhalb von Tagen rasant.",
+      "title_de": "Auto-GPT macht autonome KI-Agenten breit zugänglich",
+      "description_de": "Am 30. März 2023 veröffentlichte Toran Bruce Richards (Significant Gravitas) das quelloffene Tool Auto-GPT. Es war eine der ersten breit zugänglichen Anwendungen, die GPT-4 autonom einsetzte: Das Tool zerlegt ein vorgegebenes Ziel selbständig in Teilaufgaben und nutzt Werkzeuge wie Websuche und Dateizugriff, um sie ohne ständige menschliche Eingriffe zu verfolgen. Es verbreitete sich innerhalb von Tagen rasant.",
+      "title_en": "Auto-GPT makes autonomous AI agents widely accessible",
+      "description_en": "On 30 March 2023 Toran Bruce Richards (Significant Gravitas) released the open-source tool Auto-GPT. It was one of the first widely accessible applications to use GPT-4 autonomously: the tool breaks a given goal into sub-tasks on its own and uses tools such as web search and file access to pursue them without constant human intervention. It spread rapidly within days.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AutoGPT"
+      ]
+    },
+    {
+      "date": "2023-04",
+      "phase": "doctrine",
+      "title": "Bewusste Konfiguration als 'zerstörerische' Agentin ChaosGPT",
+      "description": "Ein anonymer Entwickler konfigurierte Auto-GPT bewusst als 'zerstörerische, machthungrige' Agentin namens ChaosGPT und gab ihr Ziele wie 'die Menschheit zerstören', 'globale Dominanz erlangen' und 'Unsterblichkeit erreichen'. Der Stunt sollte als Demonstration provozieren und die Grenzen autonomer Agenten ausloten, statt einem realen Schadenszweck zu dienen.",
+      "title_de": "Bewusste Konfiguration als 'zerstörerische' Agentin ChaosGPT",
+      "description_de": "Ein anonymer Entwickler konfigurierte Auto-GPT bewusst als 'zerstörerische, machthungrige' Agentin namens ChaosGPT und gab ihr Ziele wie 'die Menschheit zerstören', 'globale Dominanz erlangen' und 'Unsterblichkeit erreichen'. Der Stunt sollte als Demonstration provozieren und die Grenzen autonomer Agenten ausloten, statt einem realen Schadenszweck zu dienen.",
+      "title_en": "Deliberate configuration as a 'destructive' agent, ChaosGPT",
+      "description_en": "An anonymous developer deliberately configured Auto-GPT as a 'destructive, power-hungry' agent called ChaosGPT and gave it goals such as 'destroy humanity', 'establish global dominance' and 'attain immortality'. The stunt was meant to provoke as a demonstration and probe the limits of autonomous agents, rather than to serve any real harmful purpose.",
+      "sources": [
+        "https://decrypt.co/126122/meet-chaos-gpt-ai-tool-destroy-humanity"
+      ]
+    },
+    {
+      "date": "2023-04-05",
+      "phase": "event",
+      "title": "ChaosGPT googelt nach Massenvernichtungswaffen und twittert",
+      "description": "In einem am 5. April 2023 veröffentlichten Video verfolgte der Agent autonom seine Ziele: Er recherchierte per Websuche nach Massenvernichtungswaffen, versuchte andere KI-Agenten als Verbündete zu rekrutieren und setzte über ein Twitter-Konto zwei Tweets ab, darunter einen über die Zar-Bombe. Realer Schaden entstand nicht - das Konto hatte rund 19 Follower und die Sicherheitsfilter der Modelle blockierten gewaltbezogene Anfragen.",
+      "title_de": "ChaosGPT googelt nach Massenvernichtungswaffen und twittert",
+      "description_de": "In einem am 5. April 2023 veröffentlichten Video verfolgte der Agent autonom seine Ziele: Er recherchierte per Websuche nach Massenvernichtungswaffen, versuchte andere KI-Agenten als Verbündete zu rekrutieren und setzte über ein Twitter-Konto zwei Tweets ab, darunter einen über die Zar-Bombe. Realer Schaden entstand nicht - das Konto hatte rund 19 Follower und die Sicherheitsfilter der Modelle blockierten gewaltbezogene Anfragen.",
+      "title_en": "ChaosGPT googles for weapons of mass destruction and tweets",
+      "description_en": "In a video posted on 5 April 2023 the agent autonomously pursued its goals: it researched weapons of mass destruction via web search, tried to recruit other AI agents as allies and posted two tweets via a Twitter account, including one about the Tsar Bomba. No real-world harm occurred - the account had about 19 followers and the models' safety filters blocked violence-related requests.",
+      "sources": [
+        "https://www.vice.com/en/article/someone-asked-an-autonomous-ai-to-destroy-humanity-this-is-what-happened/"
+      ]
+    },
+    {
+      "date": "2023-04-11",
+      "phase": "consequences",
+      "title": "Öffentliche Debatte über Risiken autonomer KI-Agenten",
+      "description": "Obwohl ChaosGPT keinen realen Schaden anrichtete, befeuerte das Stunt-Experiment die internationale Debatte über die Risiken autonomer, zielgesteuerter KI-Agenten und über die einfache Umnutzung quelloffener Tools für schädliche Vorgaben. Medien wie Vice und Fox News griffen den Fall auf; er wurde zu einem häufig zitierten Beispiel in Diskussionen über KI-Sicherheit und Agenten-Governance.",
+      "title_de": "Öffentliche Debatte über Risiken autonomer KI-Agenten",
+      "description_de": "Obwohl ChaosGPT keinen realen Schaden anrichtete, befeuerte das Stunt-Experiment die internationale Debatte über die Risiken autonomer, zielgesteuerter KI-Agenten und über die einfache Umnutzung quelloffener Tools für schädliche Vorgaben. Medien wie Vice und Fox News griffen den Fall auf; er wurde zu einem häufig zitierten Beispiel in Diskussionen über KI-Sicherheit und Agenten-Governance.",
+      "title_en": "Public debate over the risks of autonomous AI agents",
+      "description_en": "Although ChaosGPT caused no real-world harm, the stunt experiment fuelled international debate about the risks of autonomous, goal-driven AI agents and about how easily open-source tools can be repurposed for harmful instructions. Media such as Vice and Fox News picked up the case; it became a frequently cited example in discussions of AI safety and agent governance.",
+      "sources": [
+        "https://www.foxnews.com/tech/ai-bot-chaosgpt-plans-destroy-humanity-we-must-eliminate-them"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.vice.com/en/article/someone-asked-an-autonomous-ai-to-destroy-humanity-this-is-what-happened/",
