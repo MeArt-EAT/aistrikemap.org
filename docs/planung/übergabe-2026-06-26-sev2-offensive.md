@@ -1,8 +1,8 @@
-# Übergabe #11 — Sev-2-Offensive (Wellen 46–51)
+# Übergabe #11 — Sev-2-Offensive (Wellen 46–54)
 
 **Datum:** 2026-06-26
 **Vorgänger:** #10 (2026-06-25, Sev-3-Block abgeschlossen, TL 78.5 %)
-**Bestand danach:** 2457 Incidents · **2068 mit Reverse-TL (84.2 %)** · 0 Audit-Findings
+**Bestand danach:** 2457 Incidents · **2137 mit Reverse-TL (87.0 %)** · 0 Audit-Findings
 
 ---
 
@@ -10,9 +10,9 @@
 
 Nach Abschluss des Sev-3-Blocks (#10) wurde die **Sev-2-Ebene** in Angriff
 genommen — gleiche erprobte Workflow-Methode (24 Cases/Welle, Stufe 1 WebSearch-
-grounded Generieren → Stufe 2 unabhängige adversariale Verify). **6 Wellen
-(46–51), +140 Reverse-Timelines, TL-Quote 78.5 → 84.2 %** (80%-Marke in Welle 47
-überschritten). Sev-2 ohne TL: 480 → 340.
+grounded Generieren → Stufe 2 unabhängige adversariale Verify). **9 Wellen
+(46–54), +209 Reverse-Timelines, TL-Quote 78.5 → 87.0 %** (80%-Marke in Welle 47,
+85%- in Welle 52 überschritten). Sev-2 ohne TL: 480 → 271.
 
 | Welle | Cases | pass / fix / needs-human | Δ TL | TL gesamt | Besonderheit |
 |---|---|---|---|---|---|
@@ -22,8 +22,11 @@ grounded Generieren → Stufe 2 unabhängige adversariale Verify). **6 Wellen
 | 49 | 24 | 15 / 9 / 0 | +24 | 2021 (82.3 %) | inline-Fix the-brutalist „Davids"→„David Jancso" (9x); Gender-Begriff harmonisiert |
 | 50 | 24 | 16 / 7 / 1 | +23 | 2044 (83.2 %) | needs-human: grok (überzogene MeitY-/Strafe-/§69A-Behauptungen); inline-Fix these-nudes Datum |
 | 51 | 24 | 20 / 4 / 0 | +24 | 2068 (84.2 %) | inline-Fix kolumbien-rappi startDate 2024→2023-10 |
+| 52 | 24 | 17 / 7 / 0 | +24 | 2092 (85.1 %) | inline-Fix greta-thunberg-deepfake Kanalname „Snicklick"→„Snicklink" |
+| 53 | 24 | 8 / 15 / 1 | +23 | 2115 (86.1 %) | needs-human: hmrc-quantexa (Datum 2024→2026 + Anbieter vermischt); inline-Fix ring-tuerklingel-Distanz, bildgebung-Quelle |
+| 54 | 24 | 11 / 11 / 2 | +22 | 2137 (87.0 %) | needs-human: bradford-illustrator (erfundene doctrine-Details), iphone-face-id (erfundene Ethnie); inline-Fix buckingham-Markt-Zeitraum |
 
-**WebSearch in allen 6 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
+**WebSearch in allen 9 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
 Ausfall). Audit nach jeder Welle 0 Findings (Welle 49: 2 length_ratio-False-
 Positives bei einem Gender-Begriff → auf Korpus-Standard „Geschlechtergleichheit"
 harmonisiert). Translit-Map unverändert 2951 (Prompt-Härtung hält Neueinträge ~0).
@@ -60,8 +63,8 @@ akzeptiert).
 Bei Sev-3 fing die Verify überwiegend Halluzinationen in der *selbst gebauten*
 TL. Bei Sev-2 (älterer Bestand, oft AIAAIC-Import) deckt sie zusätzlich **Fehler
 im vorbestehenden Incident-Datensatz** auf — Land, Urheberschaft, Fall-Identität,
-überzogene Behauptungen. **Pro Welle ~1 needs-human** (W47/48/50). 4 Fälle waren
-nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
+überzogene Behauptungen. **Pro Welle ~1 needs-human** (W47/48/50/53/54). 7 Fälle
+waren nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
 
 1. **`china-...-ultraman-urheberrecht`** (W47) — vermischt **zwei reale Fälle**:
    Guangzhou-Internetgericht (Feb 2024, weltweit erster Fall, direkte Verletzung,
@@ -88,8 +91,23 @@ nicht mechanisch fixbar (TL zurückgerollt, **bleiben ohne TL**):
    (c) „verletzt §69A IT Act" — die §69A-Frage kam aus X's Klage, nicht als MeitY-
    Vorwurf. Teils vorbestehend in description. → belegt korrigierbar (Verify lieferte
    die Fakten), aber rechtsrelevant → menschliche Korrektur statt autonom.
+5. **`uk-...-hmrc-quantexa`** (W53) — **falsches Datum + vermischte Anbieter**: Der
+   HMRC-Quantexa-Vertrag (175 Mio GBP) wurde erst **14.5.2026** bekanntgegeben, nicht
+   2024 (Slug/@id/startDate falsch). Die 4,6-Mrd-Mehreinnahmen 2024/25 gehören zur
+   Connect-Plattform + Palantir, nicht Quantexa; „Microsoft generative AI" unbelegt.
+   → auf 2026-05-14 umdatieren + Slug anpassen ODER auf Connect-Story umstellen.
+6. **`uk-...-bradford-literature-festival`** (W54) — **erfundene doctrine-Details**:
+   Die doctrine-Phase behauptet eine beauftragte Agentur + Brief, die der Quelle
+   widersprechen. Belegt: KI nur für frühe Source-Bilder von 2 der 6 Motive, dann von
+   festival-eigenen Illustratoren entwickelt. Kern-Event (Chris Mould zog zurück;
+   Festival entschuldigte sich) korrekt. → doctrine-Phase quellengedeckt neu schreiben.
+7. **`usa-...-iphone-x-face-id`** (W54) — **erfundene Ethnie über reale Privatpersonen**:
+   Familie durchgehend als „libanesisch-amerikanisch" bezeichnet (description/location/
+   event, DE+EN), unbelegt. Reale Namen Attaullah Malik / Sana Sherwani / Ammar Malik
+   (Staten Island) sind süd-/zentralasiatisch. Ursprung: AIAAIC-Mislabel „global-arab-
+   boy". Personenbezogen-sensibel → Ethnie-Zuschreibung entfernen/prüfen, nicht autonom.
 
-Diese 4 + `prabowo` (aus #8) sind in STATUS.md unter „Offene Fronten #2" als
+Diese 7 + `prabowo` (aus #8) sind in STATUS.md unter „Offene Fronten #2" als
 needs-human-Sammelblock dokumentiert. **Empfehlung:** Diese Fälle sind echte
 redaktionelle Entscheidungen (Außenwirkung auf aistrikemap.org) — bewusst NICHT
 autonom entschieden. Für die laufenden Wellen via `grep -v` ausschließen.
@@ -111,12 +129,12 @@ autonom entschieden. Für die laufenden Wellen via `grep -v` ausschließen.
 - **Iterative Härtung über den Block:** Ab Welle 49 zusätzlich „title_de auch im
   event-Eintrag nie weglassen" (Lektion W48) + needs-human-Eskalation bei
   Identitäts-/Land-/Slug-Fehlern explizit im Verify-Prompt.
-- **Disk:** 6 Wellen = 72 Agenten → Workflow-Transcripts + Task-Outputs zusammen
-  unter ~20 MB. Grün (Warnschwelle 100 MB).
+- **Disk:** 9 Wellen = 108 Agenten → Workflow-Transcripts 22 MB + Task-Outputs
+  1.2 MB = ~23 MB. Grün (Warnschwelle 100 MB).
 
 ---
 
-## Commits (8, gepusht)
+## Commits (gepusht)
 
 ```
 ede9835  Add validate-timelines.js: Pre-Commit-Validator für Reverse-Timelines
@@ -127,13 +145,17 @@ cec5df9  Reverse-TL Sev-2 Welle 46: +24 (1952, 79.4 %)
 85ab914  Reverse-TL Sev-2 Welle 49: +24 (2021, 82.3 %)
 bd4f716  Reverse-TL Sev-2 Welle 50: +23 (2044, 83.2 %)
 b81dee1  Reverse-TL Sev-2 Welle 51: +24 (2068, 84.2 %)
+0d55d48  Übergabe #11 erweitert (49-51)
+436b9b0  Reverse-TL Sev-2 Welle 52: +24 (2092, 85.1 %)
+377c228  Reverse-TL Sev-2 Welle 53: +23 (2115, 86.1 %)
+e6b50f7  Reverse-TL Sev-2 Welle 54: +22 (2137, 87.0 %)
 ```
 
 ---
 
 ## Nächster Schritt
 
-- **Sev-2-TL fortsetzen** (340 ohne TL, ~14 Wellen) — Workflow-Methode +
+- **Sev-2-TL fortsetzen** (271 ohne TL, ~11 Wellen) — Workflow-Methode +
   `validate-timelines.js` je Welle, needs-human via `grep -v` ausschließen.
-- ODER **4 needs-human + prabowo klären** (redaktionelle Entscheidungen).
+- ODER **7 needs-human + prabowo klären** (redaktionelle Entscheidungen, ~1/Welle).
 - ODER korpusweiter Smart-Char-Sweep (789 Files), Career-Daten, AIAAIC Batch D.
