@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Geistiges Eigentum",
+    "Urheberrecht",
+    "Faires Verfahren",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Geistiges Eigentum",
+    "Urheberrecht",
+    "Faires Verfahren",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Intellectual property",
+    "Copyright",
+    "Fair trial",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Nvidia",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-12",
+      "phase": "infrastructure",
+      "title": "Books3-Datensatz aus Schattenbibliothek Bibliotik in 'The Pile' veröffentlicht",
+      "description": "Der Entwickler Shawn Presser stellte 2020 den Datensatz Books3 zusammen, der rund 196.000 Bücher aus dem privaten Tracker Bibliotik in Textform enthielt. Books3 wurde Teil von 'The Pile', einem 800 GB großen Trainingskorpus, den EleutherAI am 31. Dezember 2020 öffentlich freigab. Der Datensatz bestand fast vollständig aus urheberrechtlich geschützten Werken.",
+      "title_de": "Books3-Datensatz aus Schattenbibliothek Bibliotik in 'The Pile' veröffentlicht",
+      "description_de": "Der Entwickler Shawn Presser stellte 2020 den Datensatz Books3 zusammen, der rund 196.000 Bücher aus dem privaten Tracker Bibliotik in Textform enthielt. Books3 wurde Teil von 'The Pile', einem 800 GB großen Trainingskorpus, den EleutherAI am 31. Dezember 2020 öffentlich freigab. Der Datensatz bestand fast vollständig aus urheberrechtlich geschützten Werken.",
+      "title_en": "Books3 dataset from Bibliotik shadow library released in 'The Pile'",
+      "description_en": "In 2020 developer Shawn Presser compiled the Books3 dataset, containing roughly 196,000 books from the private Bibliotik tracker in text form. Books3 became part of 'The Pile', an 800 GB training corpus released publicly by EleutherAI on 31 December 2020. The dataset consisted almost entirely of copyrighted works.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Pile_(dataset)"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Nvidia nutzt Buch-Datensätze zum Training seiner NeMo-Sprachmodelle",
+      "description": "Nvidia trainierte seine NeMo-Megatron-Sprachmodelle auf großen Textkorpora, darunter Buch-Datensätze, die auf Books3 zurückgehen. Später veröffentlichte Gerichtsdokumente legen nahe, dass das Unternehmen pirierte Buchquellen aktiv beschaffte, obwohl es auf deren Illegalität hingewiesen worden war. Das Geschäftsmodell setzte auf möglichst große Trainingsdatenmengen ohne Lizenzierung der enthaltenen Werke.",
+      "title_de": "Nvidia nutzt Buch-Datensätze zum Training seiner NeMo-Sprachmodelle",
+      "description_de": "Nvidia trainierte seine NeMo-Megatron-Sprachmodelle auf großen Textkorpora, darunter Buch-Datensätze, die auf Books3 zurückgehen. Später veröffentlichte Gerichtsdokumente legen nahe, dass das Unternehmen pirierte Buchquellen aktiv beschaffte, obwohl es auf deren Illegalität hingewiesen worden war. Das Geschäftsmodell setzte auf möglichst große Trainingsdatenmengen ohne Lizenzierung der enthaltenen Werke.",
+      "title_en": "Nvidia uses book datasets to train its NeMo language models",
+      "description_en": "Nvidia trained its NeMo Megatron language models on large text corpora, including book datasets derived from Books3. Court documents later suggested the company actively sought out pirated book sources despite being warned they were illegal. The business model relied on maximising training data volume without licensing the works it contained.",
+      "sources": [
+        "https://www.heise.de/en/news/Nvidia-Court-documents-reveal-correspondence-regarding-pirated-dataset-11148122.html"
+      ]
+    },
+    {
+      "date": "2024-03",
+      "phase": "event",
+      "title": "Autoren verklagen Nvidia wegen NeMo-Training mit ihren Werken",
+      "description": "Im März 2024 reichten die Autoren Brian Keene, Abdi Nazemian und Stewart O'Nan eine Sammelklage vor einem Bundesgericht in Kalifornien gegen Nvidia ein. Sie werfen dem Konzern vor, sein KI-System NeMo mit einem Datensatz von rund 197.000 Büchern trainiert zu haben, der aus der Schattenbibliothek Bibliotik stamme und ihre urheberrechtlich geschützten Werke enthalte.",
+      "title_de": "Autoren verklagen Nvidia wegen NeMo-Training mit ihren Werken",
+      "description_de": "Im März 2024 reichten die Autoren Brian Keene, Abdi Nazemian und Stewart O'Nan eine Sammelklage vor einem Bundesgericht in Kalifornien gegen Nvidia ein. Sie werfen dem Konzern vor, sein KI-System NeMo mit einem Datensatz von rund 197.000 Büchern trainiert zu haben, der aus der Schattenbibliothek Bibliotik stamme und ihre urheberrechtlich geschützten Werke enthalte.",
+      "title_en": "Authors sue Nvidia over NeMo training on their works",
+      "description_en": "In March 2024 authors Brian Keene, Abdi Nazemian and Stewart O'Nan filed a class action against Nvidia in a California federal court. They allege the company trained its NeMo AI on a dataset of roughly 197,000 books drawn from the Bibliotik shadow library that included their copyrighted works.",
+      "sources": [
+        "https://www.scmp.com/tech/big-tech/article/3254879/nvidia-sued-3-authors-over-ai-use-copyrighted-works"
+      ]
+    },
+    {
+      "date": "2024-09",
+      "phase": "consequences",
+      "title": "Bundesrichter lässt Kernvorwürfe gegen Nvidia zur Verhandlung zu",
+      "description": "Ein Bundesrichter wies Nvidias Antrag auf Abweisung weitgehend zurück und ließ die zentralen Vorwürfe der Urheberrechtsverletzung zur Verhandlung zu. Nvidia berief sich auf 'fair use'. Spätere Eingaben erweiterten die Klägergruppe und warfen dem Konzern vor, pirierte Quellen aktiv gesucht zu haben.",
+      "title_de": "Bundesrichter lässt Kernvorwürfe gegen Nvidia zur Verhandlung zu",
+      "description_de": "Ein Bundesrichter wies Nvidias Antrag auf Abweisung weitgehend zurück und ließ die zentralen Vorwürfe der Urheberrechtsverletzung zur Verhandlung zu. Nvidia berief sich auf 'fair use'. Spätere Eingaben erweiterten die Klägergruppe und warfen dem Konzern vor, pirierte Quellen aktiv gesucht zu haben.",
+      "title_en": "Federal judge allows core claims against Nvidia to proceed",
+      "description_en": "A federal judge largely denied Nvidia's motion to dismiss and allowed the central copyright infringement claims to proceed to trial. Nvidia invoked a 'fair use' defence. Later filings expanded the plaintiff group and alleged the company had actively sought out pirated sources.",
+      "sources": [
+        "https://www.courthousenews.com/nvidia-cant-shake-authors-claims-it-trained-ai-on-pirated-books/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.scmp.com/tech/big-tech/article/3254879/nvidia-sued-3-authors-over-ai-use-copyrighted-works",

@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to information",
+    "Protection from manipulation",
+    "Consumer protection",
+    "Freedom of expression"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -41,7 +56,71 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "ChatGPT als generatives Sprachmodell ohne verlässliche Quellenangabe gestartet",
+      "description": "OpenAI veröffentlichte ChatGPT als generatives Sprachmodell, das Antworten statistisch vorhersagt und nicht aus einer kuratierten Quellendatenbank zieht. Bereits früh war bekannt, dass das System plausibel klingende, aber erfundene Fakten und Verweise ausgibt (sogenannte Halluzinationen). Eine technische Garantie für korrekte URLs existierte nicht.",
+      "title_de": "ChatGPT als generatives Sprachmodell ohne verlässliche Quellenangabe gestartet",
+      "description_de": "OpenAI veröffentlichte ChatGPT als generatives Sprachmodell, das Antworten statistisch vorhersagt und nicht aus einer kuratierten Quellendatenbank zieht. Bereits früh war bekannt, dass das System plausibel klingende, aber erfundene Fakten und Verweise ausgibt (sogenannte Halluzinationen). Eine technische Garantie für korrekte URLs existierte nicht.",
+      "title_en": "ChatGPT launched as a generative model without reliable source attribution",
+      "description_en": "OpenAI released ChatGPT as a generative language model that statistically predicts answers rather than drawing from a curated source database. From early on it was known that the system produces plausible-sounding but fabricated facts and references (so-called hallucinations). There was no technical guarantee of accurate URLs.",
+      "sources": []
+    },
+    {
+      "date": "2023-07",
+      "phase": "doctrine",
+      "title": "OpenAI schließt Lizenzverträge mit großen Nachrichtenverlagen",
+      "description": "Beginnend mit der Associated Press im Juli 2023 und Axel Springer (Politico, Business Insider) Ende 2023 schloss OpenAI eine Reihe von Lizenzverträgen mit Verlagen. Die Verträge sahen vor, dass ChatGPT Inhalte der Partner zitieren, zusammenfassen und auf sie verlinken darf - im Gegenzug für Trainingszugriff. Damit war die Erwartung etabliert, ChatGPT liefere korrekte Verweise auf die Partner-Recherchen.",
+      "title_de": "OpenAI schließt Lizenzverträge mit großen Nachrichtenverlagen",
+      "description_de": "Beginnend mit der Associated Press im Juli 2023 und Axel Springer (Politico, Business Insider) Ende 2023 schloss OpenAI eine Reihe von Lizenzverträgen mit Verlagen. Die Verträge sahen vor, dass ChatGPT Inhalte der Partner zitieren, zusammenfassen und auf sie verlinken darf - im Gegenzug für Trainingszugriff. Damit war die Erwartung etabliert, ChatGPT liefere korrekte Verweise auf die Partner-Recherchen.",
+      "title_en": "OpenAI signs licensing deals with major news publishers",
+      "description_en": "Starting with the Associated Press in July 2023 and Axel Springer (Politico, Business Insider) in late 2023, OpenAI signed a series of licensing deals with publishers. The contracts envisaged that ChatGPT could cite, summarize and link to partner content in exchange for training access. This established the expectation that ChatGPT would provide accurate references to partner investigations.",
+      "sources": [
+        "https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "phase": "doctrine",
+      "title": "Financial Times und weitere Partner: Zitier- und Link-Funktion vertraglich versprochen",
+      "description": "Mit dem Financial-Times-Vertrag im April 2024 und weiteren Deals (The Atlantic, Vox Media) wurde das Versprechen ausgeweitet, ChatGPT solle Artikel der Partner zitieren, zusammenfassen und korrekt verlinken. OpenAI bewarb diese Verträge als Beitrag zu einer verlässlichen, attributierten News-Erfahrung im Chatbot.",
+      "title_de": "Financial Times und weitere Partner: Zitier- und Link-Funktion vertraglich versprochen",
+      "description_de": "Mit dem Financial-Times-Vertrag im April 2024 und weiteren Deals (The Atlantic, Vox Media) wurde das Versprechen ausgeweitet, ChatGPT solle Artikel der Partner zitieren, zusammenfassen und korrekt verlinken. OpenAI bewarb diese Verträge als Beitrag zu einer verlässlichen, attributierten News-Erfahrung im Chatbot.",
+      "title_en": "Financial Times and others: citation and link feature promised by contract",
+      "description_en": "With the Financial Times deal in April 2024 and further agreements (The Atlantic, Vox Media), the promise was extended that ChatGPT would cite, summarize and correctly link to partner articles. OpenAI marketed these contracts as a contribution to a reliable, attributed news experience in the chatbot.",
+      "sources": [
+        "https://www.niemanlab.org/2024/04/the-financial-times-inks-new-licensing-deal-with-openai/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "event",
+      "title": "USA: ChatGPT halluziniert Links zu Investigativ-Recherchen seiner Medien-Partner",
+      "description": "Im Juni 2024 wies Nieman Lab nach, dass ChatGPT systematisch falsche URLs zu Investigativ-Recherchen genau jener Medien generierte, mit denen OpenAI Lizenzverträge geschlossen hatte: AP, WSJ, Financial Times, The Atlantic, Vox, The Verge, Politico, Le Monde, El Pais und The Times (UK). Statt korrekt zu verlinken, erfand das System plausibel klingende URL-Strukturen, die ins Leere führten. OpenAI räumte ein, dass das versprochene Citation-Feature noch nicht live sei, und arbeitete an einer Lösung. Der Fall illustrierte die Schwäche der angeblichen 'sicheren News-Pipeline' von ChatGPT.",
+      "title_de": "USA: ChatGPT halluziniert Links zu Investigativ-Recherchen seiner Medien-Partner",
+      "description_de": "Im Juni 2024 wies Nieman Lab nach, dass ChatGPT systematisch falsche URLs zu Investigativ-Recherchen genau jener Medien generierte, mit denen OpenAI Lizenzverträge geschlossen hatte: AP, WSJ, Financial Times, The Atlantic, Vox, The Verge, Politico, Le Monde, El Pais und The Times (UK). Statt korrekt zu verlinken, erfand das System plausibel klingende URL-Strukturen, die ins Leere führten. OpenAI räumte ein, dass das versprochene Citation-Feature noch nicht live sei, und arbeitete an einer Lösung. Der Fall illustrierte die Schwäche der angeblichen 'sicheren News-Pipeline' von ChatGPT.",
+      "title_en": "USA: ChatGPT hallucinates fake links to news partners' investigations",
+      "description_en": "In June 2024 Nieman Lab demonstrated that ChatGPT systematically generated fabricated URLs pointing to investigations by the very publishers OpenAI had licensing deals with: AP, WSJ, Financial Times, The Atlantic, Vox, The Verge, Politico, Le Monde, El Pais and The Times (UK). Instead of accurate links, the system invented plausible-looking URL structures that led to 404s. OpenAI acknowledged the promised citation feature was not yet live and said it was working on a fix.",
+      "sources": [
+        "https://www.niemanlab.org/2024/06/chatgpt-is-hallucinating-fake-links-to-its-news-partners-biggest-investigations/"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "OpenAI räumt fehlende Zitier-Funktion ein, Debatte über Verlässlichkeit",
+      "description": "OpenAI erklärte, das vertraglich zugesagte Zitier- und Link-Erlebnis sei noch in Entwicklung und in ChatGPT nicht verfügbar. Der Fall verstärkte die Kritik an der Lücke zwischen vermarkteten Partnerschaften und tatsächlicher Produktleistung und nährte die Debatte, ob ChatGPT als verlässliche Nachrichtenquelle taugt. Später im Jahr integrierte OpenAI eine Suchfunktion mit echten Verweisen in ChatGPT.",
+      "title_de": "OpenAI räumt fehlende Zitier-Funktion ein, Debatte über Verlässlichkeit",
+      "description_de": "OpenAI erklärte, das vertraglich zugesagte Zitier- und Link-Erlebnis sei noch in Entwicklung und in ChatGPT nicht verfügbar. Der Fall verstärkte die Kritik an der Lücke zwischen vermarkteten Partnerschaften und tatsächlicher Produktleistung und nährte die Debatte, ob ChatGPT als verlässliche Nachrichtenquelle taugt. Später im Jahr integrierte OpenAI eine Suchfunktion mit echten Verweisen in ChatGPT.",
+      "title_en": "OpenAI admits missing citation feature, reliability debate widens",
+      "description_en": "OpenAI stated that the contractually promised citation and link experience was still in development and not available in ChatGPT. The case amplified criticism of the gap between marketed partnerships and actual product performance and fueled the debate over whether ChatGPT can serve as a reliable news source. Later in the year OpenAI integrated a search feature with real references into ChatGPT.",
+      "sources": [
+        "https://www.poynter.org/commentary/2024/chatgpt-searchgpt-google-competitor-news-sources/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.niemanlab.org/2024/06/chatgpt-is-hallucinating-fake-links-to-its-news-partners-biggest-investigations/",

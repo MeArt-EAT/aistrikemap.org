@@ -51,8 +51,10 @@ const SUSPECT_WORDS = [
   'gegenueber', 'fuehrt', 'fuehrte', 'gefuehrt', 'einfuehrung', 'durchfuehrung',
   'ueberwachung', 'aenderung', 'behoerde', 'behoerden', 'unterstuetzung',
   'massnahme', 'massnahmen', 'strasse', 'strassen', 'grossen', 'schliesslich',
-  'aeusserung', 'aeusserungen', 'verstoss', 'verstoesse', 'beschluss',
+  'aeusserung', 'aeusserungen', 'verstoss', 'verstoesse',
 ];
+// Hinweis: 'Beschluss'/'Schluss'/'muss' sind KORREKT (ss nach kurzem Vokal),
+// daher NICHT in der Verdachtsliste.
 const SUSPECT_RE = new RegExp(
   '(^|[^a-zA-ZäöüÄÖÜß])(' + SUSPECT_WORDS.join('|') + ')([^a-zA-ZäöüÄÖÜß]|$)',
   'i'
