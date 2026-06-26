@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "surveillance"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Überwachung",
+    "Unschuldsvermutung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Schutz vor Überwachung",
+    "Unschuldsvermutung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Protection from surveillance",
+    "Presumption of innocence"
+  ],
   "asm:actors": [
     {
       "name": "Speedcam Anywhere",
@@ -46,7 +61,58 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2014",
+      "phase": "infrastructure",
+      "title": "Smartphone-Kennzeichenerkennung und offene DVLA-Fahrzeugabfrage",
+      "description": "Leistungsfähige Smartphone-Kameras, robuste KI-Kennzeichenerkennung (ANPR) und die online abfragbare DVLA-Fahrzeugdatenbank machten es technisch möglich, aus einem kurzen Videoclip Halter- und Fahrzeugdaten abzuleiten. Zusammen mit Computer-Vision-Verfahren zur Vermessung von Objekten bildeten diese Bausteine die Grundlage für eine private Geschwindigkeitsmess-App.",
+      "title_de": "Smartphone-Kennzeichenerkennung und offene DVLA-Fahrzeugabfrage",
+      "description_de": "Leistungsfähige Smartphone-Kameras, robuste KI-Kennzeichenerkennung (ANPR) und die online abfragbare DVLA-Fahrzeugdatenbank machten es technisch möglich, aus einem kurzen Videoclip Halter- und Fahrzeugdaten abzuleiten. Zusammen mit Computer-Vision-Verfahren zur Vermessung von Objekten bildeten diese Bausteine die Grundlage für eine private Geschwindigkeitsmess-App.",
+      "title_en": "Smartphone plate recognition and open DVLA vehicle lookup",
+      "description_en": "Capable smartphone cameras, robust AI number-plate recognition (ANPR) and the online-queryable DVLA vehicle database made it technically possible to derive keeper and vehicle data from a short video clip. Together with computer-vision techniques for measuring objects, these building blocks formed the basis for a private speed-measurement app.",
+      "sources": []
+    },
+    {
+      "date": "2022-03",
+      "phase": "doctrine",
+      "title": "Entwickler bringen 'Speedcam Anywhere' als Crowdsourced-Tempokontrolle heraus",
+      "description": "Anonyme Entwickler veröffentlichten die Android-App 'Speedcam Anywhere' mit dem erklärten Ziel, Bürgerinnen und Bürger Raser per Video melden zu lassen. Die App ist nicht als zertifiziertes Messgerät zugelassen, der erzeugte Report sollte jedoch potenziell an Behörden weitergereicht werden können - ein bewusster Schritt hin zu privater, KI-gestützter Verkehrsüberwachung.",
+      "title_de": "Entwickler bringen 'Speedcam Anywhere' als Crowdsourced-Tempokontrolle heraus",
+      "description_de": "Anonyme Entwickler veröffentlichten die Android-App 'Speedcam Anywhere' mit dem erklärten Ziel, Bürgerinnen und Bürger Raser per Video melden zu lassen. Die App ist nicht als zertifiziertes Messgerät zugelassen, der erzeugte Report sollte jedoch potenziell an Behörden weitergereicht werden können - ein bewusster Schritt hin zu privater, KI-gestützter Verkehrsüberwachung.",
+      "title_en": "Developers launch 'Speedcam Anywhere' as crowdsourced speed enforcement",
+      "description_en": "Anonymous developers released the Android app 'Speedcam Anywhere' with the stated aim of letting citizens report speeders by video. The app is not approved as a certified measuring device, but the report it generates was designed so it could potentially be passed to authorities - a deliberate move toward private, AI-assisted traffic surveillance.",
+      "sources": [
+        "https://speedcamanywhere.com/"
+      ]
+    },
+    {
+      "date": "2022-04",
+      "phase": "event",
+      "title": "UK: 'Speedcam Anywhere'-App für KI-Geschwindigkeitsmessung wegen Überwachung kritisiert",
+      "description": "Die Smartphone-App 'Speedcam Anywhere' ermöglicht es Nutzer:innen, vorbeifahrende Autos zu filmen; ihre KI liest das Kennzeichen, schlägt Fahrzeugdaten in der DVLA-Datenbank nach und schätzt anhand des Radstands die Geschwindigkeit, um Raser zu melden. Nach Guardian-Berichten von April 2022 warnten Kritiker:innen vor Genauigkeitsproblemen, Datenschutz- und Überwachungsrisiken ('Überwachungsstaat').",
+      "title_de": "UK: 'Speedcam Anywhere'-App für KI-Geschwindigkeitsmessung wegen Überwachung kritisiert",
+      "description_de": "Die Smartphone-App 'Speedcam Anywhere' ermöglicht es Nutzer:innen, vorbeifahrende Autos zu filmen; ihre KI liest das Kennzeichen, schlägt Fahrzeugdaten in der DVLA-Datenbank nach und schätzt anhand des Radstands die Geschwindigkeit, um Raser zu melden. Nach Guardian-Berichten von April 2022 warnten Kritiker:innen vor Genauigkeitsproblemen, Datenschutz- und Überwachungsrisiken ('Überwachungsstaat').",
+      "title_en": "Speedcam Anywhere app criticised over privacy and surveillance",
+      "description_en": "The smartphone app 'Speedcam Anywhere' lets users film passing cars; its AI reads the number plate, looks up vehicle data in the DVLA database, and estimates speed from the wheelbase to report speeders. Following April 2022 Guardian reporting, critics warned of accuracy problems and privacy/surveillance risks ('surveillance state').",
+      "sources": [
+        "https://www.autoexpress.co.uk/news/357759/new-app-turns-smartphones-speed-cameras"
+      ]
+    },
+    {
+      "date": "2022-04-12",
+      "phase": "consequences",
+      "title": "Drohungen gegen Entwickler, Anonymität und Debatte um private Überwachung",
+      "description": "Die Entwickler erhielten zornige und beleidigende Nachrichten von Autofahrer:innen und blieben anonym; einer nannte es ein 'Marmite-Produkt', das manche für eine gute Idee, andere für einen Schritt in den Überwachungsstaat hielten. Die App erhielt schlechte Bewertungen wegen Ungenauigkeit, und der Fall befeuerte die Debatte über privat betriebene, KI-gestützte Verkehrsüberwachung und unbestätigte Verdächtigungen.",
+      "title_de": "Drohungen gegen Entwickler, Anonymität und Debatte um private Überwachung",
+      "description_de": "Die Entwickler erhielten zornige und beleidigende Nachrichten von Autofahrer:innen und blieben anonym; einer nannte es ein 'Marmite-Produkt', das manche für eine gute Idee, andere für einen Schritt in den Überwachungsstaat hielten. Die App erhielt schlechte Bewertungen wegen Ungenauigkeit, und der Fall befeuerte die Debatte über privat betriebene, KI-gestützte Verkehrsüberwachung und unbestätigte Verdächtigungen.",
+      "title_en": "Threats against developers, anonymity and debate over private surveillance",
+      "description_en": "The developers received angry and abusive messages from drivers and remained anonymous; one called it a 'Marmite product' that some saw as a good idea and others as a step toward a surveillance state. The app drew poor ratings for inaccuracy, and the case fuelled debate about privately run, AI-assisted traffic surveillance and unverified accusations.",
+      "sources": [
+        "https://www.rac.co.uk/drive/news/driving-law/developers-of-ai-app-used-to-report-speeding-drivers-forced-into-anonymity/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.rac.co.uk/drive/news/driving-law/developers-of-ai-app-used-to-report-speeding-drivers-forced-into-anonymity/",
