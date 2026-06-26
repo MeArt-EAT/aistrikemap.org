@@ -30,9 +30,27 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Würde des Menschen",
+    "Schutz vor sexualisierter Gewalt",
+    "Kinderrechte",
+    "Recht am eigenen Bild",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Würde des Menschen",
+    "Schutz vor sexualisierter Gewalt",
+    "Kinderrechte",
+    "Recht am eigenen Bild",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Human dignity",
+    "Protection from sexualised violence",
+    "Children's rights",
+    "Right to one's own image",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Johns Hopkins University; Duke University",
@@ -54,7 +72,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Text-zu-Bild-Modelle mit Sicherheitsfiltern",
+      "description": "OpenAI veröffentlicht DALL-E 2 (April 2022) und Stability AI das quelloffene Stable Diffusion (August 2022). Beide Systeme erhalten Sicherheitsfilter, die verbotene Anfragen nach Gewalt- und Nacktdarstellungen blockieren sollen, indem sie Prompts oder Ausgaben prüfen. Diese Schutzmechanismen sind der zentrale Verteidigungswall - und damit die spätere Angriffsfläche.",
+      "title_de": "Text-zu-Bild-Modelle mit Sicherheitsfiltern",
+      "description_de": "OpenAI veröffentlicht DALL-E 2 (April 2022) und Stability AI das quelloffene Stable Diffusion (August 2022). Beide Systeme erhalten Sicherheitsfilter, die verbotene Anfragen nach Gewalt- und Nacktdarstellungen blockieren sollen, indem sie Prompts oder Ausgaben prüfen. Diese Schutzmechanismen sind der zentrale Verteidigungswall - und damit die spätere Angriffsfläche.",
+      "title_en": "Text-to-image models with safety filters",
+      "description_en": "OpenAI releases DALL-E 2 (April 2022) and Stability AI the open-source Stable Diffusion (August 2022). Both systems ship with safety filters meant to block banned requests for violent and nude imagery by inspecting prompts or outputs. These safeguards are the central line of defence - and thus the later attack surface.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/DALL-E"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "doctrine",
+      "title": "Filter statt Modell-Korrektur als Sicherheitsstrategie",
+      "description": "Die Anbieter setzen auf vorgeschaltete oder nachgelagerte Filter als primären Schutz, statt die Modelle selbst gegen unzulässige Inhalte zu härten, um die generative Leistungsfähigkeit zu erhalten. Diese Strategie behandelt Sicherheit als Schlagwort-Sperre, die auf erwartbare Klartext-Prompts ausgelegt ist. Adversariale, für Menschen sinnlose Eingaben sind dabei nicht eingeplant.",
+      "title_de": "Filter statt Modell-Korrektur als Sicherheitsstrategie",
+      "description_de": "Die Anbieter setzen auf vorgeschaltete oder nachgelagerte Filter als primären Schutz, statt die Modelle selbst gegen unzulässige Inhalte zu härten, um die generative Leistungsfähigkeit zu erhalten. Diese Strategie behandelt Sicherheit als Schlagwort-Sperre, die auf erwartbare Klartext-Prompts ausgelegt ist. Adversariale, für Menschen sinnlose Eingaben sind dabei nicht eingeplant.",
+      "title_en": "Filters instead of model correction as the safety strategy",
+      "description_en": "Providers rely on upstream or downstream filters as the primary safeguard rather than hardening the models themselves against disallowed content, in order to preserve generative capability. This strategy treats safety as a keyword block designed for expected plain-text prompts. Adversarial inputs that are meaningless to humans are not anticipated.",
+      "sources": [
+        "https://arxiv.org/abs/2305.12082"
+      ]
+    },
+    {
+      "date": "2023-11-17",
+      "phase": "event",
+      "title": "Global: Studie 'SneakyPrompt' umgeht Filter von Text-zu-Bild-KI für Gewalt-/Nacktbilder",
+      "description": "Forschende der Johns Hopkins University und der Duke University stellten 2023 die Methode 'SneakyPrompt' vor, die mittels Reinforcement Learning für Menschen unverständliche Zeichenfolgen erzeugt, die Text-zu-Bild-Modelle dennoch als verbotene Anfragen interpretieren. Damit ließen sich die Sicherheitsfilter von DALL-E 2 und Stable Diffusion umgehen, sodass die Systeme NSFW-Inhalte wie Gewalt- und Nacktdarstellungen generierten. Die Arbeit wurde auf dem IEEE Symposium on Security and Privacy präsentiert und deckte eine systematische Schwachstelle der Schutzmechanismen auf.",
+      "title_de": "Global: Studie 'SneakyPrompt' umgeht Filter von Text-zu-Bild-KI für Gewalt-/Nacktbilder",
+      "description_de": "Forschende der Johns Hopkins University und der Duke University stellten 2023 die Methode 'SneakyPrompt' vor, die mittels Reinforcement Learning für Menschen unverständliche Zeichenfolgen erzeugt, die Text-zu-Bild-Modelle dennoch als verbotene Anfragen interpretieren. Damit ließen sich die Sicherheitsfilter von DALL-E 2 und Stable Diffusion umgehen, sodass die Systeme NSFW-Inhalte wie Gewalt- und Nacktdarstellungen generierten. Die Arbeit wurde auf dem IEEE Symposium on Security and Privacy präsentiert und deckte eine systematische Schwachstelle der Schutzmechanismen auf.",
+      "title_en": "Global: 'SneakyPrompt' study bypasses text-to-image AI filters for violent/nude images",
+      "description_en": "In 2023, researchers from Johns Hopkins University and Duke University introduced 'SneakyPrompt', a method that uses reinforcement learning to craft character strings unintelligible to humans but interpreted by text-to-image models as banned requests. It bypassed the safety filters of DALL-E 2 and Stable Diffusion, causing the systems to generate NSFW content such as violent and nude imagery. Presented at the IEEE Symposium on Security and Privacy, the work exposed a systematic weakness in these guardrails.",
+      "sources": [
+        "https://www.technologyreview.com/2023/11/17/1083593/text-to-image-ai-models-can-be-tricked-into-generating-disturbing-images/"
+      ]
+    },
+    {
+      "date": "2023-11-20",
+      "phase": "consequences",
+      "title": "Erstes automatisiertes Angriffs-Framework treibt Härtung der Filter",
+      "description": "SneakyPrompt gilt als erstes automatisiertes Framework, das die Robustheit der Sicherheitsfilter von Text-zu-Bild-Modellen systematisch bricht, und wird auf dem IEEE Symposium on Security and Privacy 2024 publiziert. Die Arbeit zwingt Anbieter, ihre Filter gegen adversariale Eingaben zu härten, und löst eine Welle weiterer Jailbreak- und Abwehr-Forschung aus. Sie unterstreicht zugleich das Missbrauchsrisiko zur Erzeugung von Gewalt-, Nackt- und potenziell rechtswidrigen Bildern.",
+      "title_de": "Erstes automatisiertes Angriffs-Framework treibt Härtung der Filter",
+      "description_de": "SneakyPrompt gilt als erstes automatisiertes Framework, das die Robustheit der Sicherheitsfilter von Text-zu-Bild-Modellen systematisch bricht, und wird auf dem IEEE Symposium on Security and Privacy 2024 publiziert. Die Arbeit zwingt Anbieter, ihre Filter gegen adversariale Eingaben zu härten, und löst eine Welle weiterer Jailbreak- und Abwehr-Forschung aus. Sie unterstreicht zugleich das Missbrauchsrisiko zur Erzeugung von Gewalt-, Nackt- und potenziell rechtswidrigen Bildern.",
+      "title_en": "First automated attack framework drives filter hardening",
+      "description_en": "SneakyPrompt is regarded as the first automated framework to systematically break the robustness of text-to-image safety filters, and is published at the IEEE Symposium on Security and Privacy 2024. The work forces providers to harden their filters against adversarial inputs and triggers a wave of further jailbreak and defence research. It also underscores the abuse risk for generating violent, nude and potentially unlawful imagery.",
+      "sources": [
+        "https://engineering.jhu.edu/news/ai-image-generators-can-be-tricked-into-making-nsfw-content/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2023/11/17/1083593/text-to-image-ai-models-can-be-tricked-into-generating-disturbing-images/",

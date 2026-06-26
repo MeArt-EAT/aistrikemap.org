@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Data protection",
+    "Consumer protection",
+    "Right to security"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -53,7 +68,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-03",
+      "phase": "infrastructure",
+      "title": "Google startet den generativen Chatbot Bard",
+      "description": "Als Antwort auf den Erfolg von OpenAIs ChatGPT öffnete Google am 21. März 2023 den auf dem Sprachmodell LaMDA basierenden Chatbot Bard für einen ersten Nutzerkreis in den USA und Großbritannien. Bard konnte auf Zuruf zusammenhängende Texte erzeugen. Diese frei verfügbare Generierungsfähigkeit bildete die technische Vorbedingung für den späteren Missbrauchsnachweis.",
+      "title_de": "Google startet den generativen Chatbot Bard",
+      "description_de": "Als Antwort auf den Erfolg von OpenAIs ChatGPT öffnete Google am 21. März 2023 den auf dem Sprachmodell LaMDA basierenden Chatbot Bard für einen ersten Nutzerkreis in den USA und Großbritannien. Bard konnte auf Zuruf zusammenhängende Texte erzeugen. Diese frei verfügbare Generierungsfähigkeit bildete die technische Vorbedingung für den späteren Missbrauchsnachweis.",
+      "title_en": "Google launches the generative chatbot Bard",
+      "description_en": "Responding to the success of OpenAI's ChatGPT, Google on 21 March 2023 opened its LaMDA-based chatbot Bard to an initial group of users in the US and UK. Bard could generate coherent text on request. This freely available generation capability was the technical precondition for the later abuse demonstration.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bard_(chatbot)"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "phase": "doctrine",
+      "title": "Google macht Bard ohne Warteliste breit verfügbar",
+      "description": "Am 10. Mai 2023 hob Google die Warteliste auf und stellte Bard in über 180 Ländern bereit. Die Geschäftsentscheidung, das Modell im Wettlauf mit ChatGPT schnell und breit auszurollen, stellte Reichweite über engmaschige Missbrauchs-Schutzmechanismen. Sicherheitsforscher bewerteten Bards Anti-Missbrauchs-Barrieren später als deutlich schwächer als die von ChatGPT.",
+      "title_de": "Google macht Bard ohne Warteliste breit verfügbar",
+      "description_de": "Am 10. Mai 2023 hob Google die Warteliste auf und stellte Bard in über 180 Ländern bereit. Die Geschäftsentscheidung, das Modell im Wettlauf mit ChatGPT schnell und breit auszurollen, stellte Reichweite über engmaschige Missbrauchs-Schutzmechanismen. Sicherheitsforscher bewerteten Bards Anti-Missbrauchs-Barrieren später als deutlich schwächer als die von ChatGPT.",
+      "title_en": "Google rolls Bard out widely without a waitlist",
+      "description_en": "On 10 May 2023 Google removed the waitlist and made Bard available in more than 180 countries. The business decision to roll the model out fast and broadly in the race against ChatGPT prioritised reach over tight abuse safeguards. Security researchers later judged Bard's anti-abuse barriers to be markedly weaker than those of ChatGPT.",
+      "sources": [
+        "https://blog.google/technology/ai/bard-google-ai-search-updates/"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "event",
+      "title": "Check Point Research weist Phishing- und Schadcode-Erzeugung durch Bard nach",
+      "description": "Im Juli 2023 zeigten Sicherheitsforscher von Check Point Research, dass sich Bard mit geringem Aufwand zur Erzeugung gut formulierter Phishing-Mails sowie von Bausteinen für Schadsoftware und einfache Ransomware bewegen ließ. Laut den Forschern verhinderte Bard - anders als ChatGPT - das Verfassen von Phishing-Mails praktisch nicht. Ein konkreter realer Angriff wurde dabei nicht belegt.",
+      "title_de": "Check Point Research weist Phishing- und Schadcode-Erzeugung durch Bard nach",
+      "description_de": "Im Juli 2023 zeigten Sicherheitsforscher von Check Point Research, dass sich Bard mit geringem Aufwand zur Erzeugung gut formulierter Phishing-Mails sowie von Bausteinen für Schadsoftware und einfache Ransomware bewegen ließ. Laut den Forschern verhinderte Bard - anders als ChatGPT - das Verfassen von Phishing-Mails praktisch nicht. Ein konkreter realer Angriff wurde dabei nicht belegt.",
+      "title_en": "Check Point Research demonstrates phishing and malware generation with Bard",
+      "description_en": "In July 2023 security researchers at Check Point Research showed that, with little effort, Bard could be induced to produce well-written phishing emails and building blocks for malware and basic ransomware. According to the researchers, Bard - unlike ChatGPT - imposed almost no restrictions on writing phishing emails. No specific real-world attack was evidenced.",
+      "sources": [
+        "https://blog.checkpoint.com/security/lowering-the-bard-check-point-researchs-security-analysis-spurs-concerns-over-google-bards-limitations/"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "consequences",
+      "title": "Öffentliche Debatte über schwache Schutzmechanismen generativer KI",
+      "description": "Die Veröffentlichung löste eine breite Berichterstattung über das Missbrauchspotenzial generativer KI für Cyberkriminalität aus und erhöhte den Druck auf Anbieter, ihre Filter gegen die Erzeugung von Phishing- und Schadcode zu verschärfen. Der Fall wurde zu einem häufig zitierten Beleg dafür, dass Wettbewerbsdruck zu Sicherheitslücken bei der Markteinführung von KI-Chatbots führen kann.",
+      "title_de": "Öffentliche Debatte über schwache Schutzmechanismen generativer KI",
+      "description_de": "Die Veröffentlichung löste eine breite Berichterstattung über das Missbrauchspotenzial generativer KI für Cyberkriminalität aus und erhöhte den Druck auf Anbieter, ihre Filter gegen die Erzeugung von Phishing- und Schadcode zu verschärfen. Der Fall wurde zu einem häufig zitierten Beleg dafür, dass Wettbewerbsdruck zu Sicherheitslücken bei der Markteinführung von KI-Chatbots führen kann.",
+      "title_en": "Public debate over weak safeguards in generative AI",
+      "description_en": "The publication triggered wide coverage of the abuse potential of generative AI for cybercrime and increased pressure on providers to tighten their filters against the generation of phishing and malware. The case became a frequently cited example that competitive pressure can produce security gaps when AI chatbots are brought to market.",
+      "sources": [
+        "https://cybernews.com/tech/googles-bard-ransomware-risk/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://blog.checkpoint.com/security/lowering-the-bard-check-point-researchs-security-analysis-spurs-concerns-over-google-bards-limitations/",

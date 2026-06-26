@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf Information",
+    "Recht auf Wahrheit"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf Information",
+    "Recht auf Wahrheit"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to information",
+    "Right to truth"
+  ],
   "asm:actors": [
     {
       "name": "University of Washington (Bo Zhao et al.)",
@@ -46,7 +58,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017",
+      "phase": "infrastructure",
+      "title": "Reife der GAN-Technik zur Bild-zu-Bild-Übersetzung",
+      "description": "Mit generativen adversarialen Netzen (GANs) und insbesondere der 2017 vorgestellten CycleGAN-Methode wurde es möglich, Bilder ohne gepaarte Trainingsdaten realistisch in einen anderen Stil zu übertragen. Diese frei verfügbare Technik bildete die technische Grundlage, um auch Satelliten- und Luftbilder überzeugend zu synthetisieren und zu manipulieren.",
+      "title_de": "Reife der GAN-Technik zur Bild-zu-Bild-Übersetzung",
+      "description_de": "Mit generativen adversarialen Netzen (GANs) und insbesondere der 2017 vorgestellten CycleGAN-Methode wurde es möglich, Bilder ohne gepaarte Trainingsdaten realistisch in einen anderen Stil zu übertragen. Diese frei verfügbare Technik bildete die technische Grundlage, um auch Satelliten- und Luftbilder überzeugend zu synthetisieren und zu manipulieren.",
+      "title_en": "Maturation of GAN techniques for image-to-image translation",
+      "description_en": "Generative adversarial networks (GANs), and in particular the CycleGAN method introduced in 2017, made it possible to realistically translate images into a different style without paired training data. This freely available technique formed the technical basis for convincingly synthesising and manipulating satellite and aerial imagery as well.",
+      "sources": [
+        "https://www.washington.edu/news/2021/04/21/a-growing-problem-of-deepfake-geography-how-ai-falsifies-satellite-images/"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Forschungsansatz zur Erkennung manipulierter Geodaten",
+      "description": "Ein Team um den Geographen Bo Zhao an der University of Washington verfolgte das Ziel, die Risiken gefälschter Geodaten systematisch sichtbar zu machen und Erkennungsverfahren zu entwickeln. Anstatt nur vor der Gefahr zu warnen, entschieden sich die Forschenden, selbst überzeugende Fälschungen zu erzeugen, um die Grenzen menschlicher und automatischer Erkennung zu vermessen.",
+      "title_de": "Forschungsansatz zur Erkennung manipulierter Geodaten",
+      "description_de": "Ein Team um den Geographen Bo Zhao an der University of Washington verfolgte das Ziel, die Risiken gefälschter Geodaten systematisch sichtbar zu machen und Erkennungsverfahren zu entwickeln. Anstatt nur vor der Gefahr zu warnen, entschieden sich die Forschenden, selbst überzeugende Fälschungen zu erzeugen, um die Grenzen menschlicher und automatischer Erkennung zu vermessen.",
+      "title_en": "Research approach to detecting manipulated geospatial data",
+      "description_en": "A team led by geographer Bo Zhao at the University of Washington aimed to systematically expose the risks of falsified geospatial data and to develop detection methods. Rather than merely warning of the danger, the researchers chose to create convincing fakes themselves in order to map the limits of human and automated detection.",
+      "sources": [
+        "https://www.geekwire.com/2021/deepfake-geography-presents-significant-risks-researchers-detecting/"
+      ]
+    },
+    {
+      "date": "2021-04",
+      "phase": "event",
+      "title": "Studie zur Deepfake-Geografie fälscht über 8.000 Satellitenbilder",
+      "description": "Am 21. April 2021 veröffentlichte das Team in Cartography and Geographic Information Science seine Studie zur Deepfake-Geografie. Mittels CycleGAN erzeugten die Forschenden über 8.000 synthetische Satellitenbilder und kombinierten dafür Merkmale aus Tacoma, Seattle und Peking, etwa eine Tacoma-Basiskarte mit eingefügten, real nicht existierenden Landschaftsmerkmalen. Die Bilder täuschten sowohl Menschen als auch vorhandene Erkennungssysteme.",
+      "title_de": "Studie zur Deepfake-Geografie fälscht über 8.000 Satellitenbilder",
+      "description_de": "Am 21. April 2021 veröffentlichte das Team in Cartography and Geographic Information Science seine Studie zur Deepfake-Geografie. Mittels CycleGAN erzeugten die Forschenden über 8.000 synthetische Satellitenbilder und kombinierten dafür Merkmale aus Tacoma, Seattle und Peking, etwa eine Tacoma-Basiskarte mit eingefügten, real nicht existierenden Landschaftsmerkmalen. Die Bilder täuschten sowohl Menschen als auch vorhandene Erkennungssysteme.",
+      "title_en": "Deepfake geography study fabricates more than 8,000 satellite images",
+      "description_en": "On 21 April 2021 the team published its deepfake-geography study in Cartography and Geographic Information Science. Using CycleGAN, the researchers produced more than 8,000 synthetic satellite images, combining features from Tacoma, Seattle and Beijing, for example a Tacoma base map seeded with non-existent landscape features. The images fooled both humans and existing detection systems.",
+      "sources": [
+        "https://www.washington.edu/news/2021/04/21/a-growing-problem-of-deepfake-geography-how-ai-falsifies-satellite-images/"
+      ]
+    },
+    {
+      "date": "2021-04",
+      "phase": "consequences",
+      "title": "Debatte über Geheimdienst-Täuschung und Forderung nach Erkennungswerkzeugen",
+      "description": "Die Arbeit löste eine breite Debatte über das Risiko gefälschter Geodaten aus, etwa für Geheimdienste, Katastrophenschutz und Journalismus. Erkennungsalgorithmen markierten zwar rund 94 Prozent der Fälschungen, klassifizierten aber auch echte Bilder falsch. Die Autoren forderten den Aufbau von Daten-Kompetenz und Faktencheck-Werkzeugen für Geodaten, vergleichbar mit heutigen Faktencheck-Diensten.",
+      "title_de": "Debatte über Geheimdienst-Täuschung und Forderung nach Erkennungswerkzeugen",
+      "description_de": "Die Arbeit löste eine breite Debatte über das Risiko gefälschter Geodaten aus, etwa für Geheimdienste, Katastrophenschutz und Journalismus. Erkennungsalgorithmen markierten zwar rund 94 Prozent der Fälschungen, klassifizierten aber auch echte Bilder falsch. Die Autoren forderten den Aufbau von Daten-Kompetenz und Faktencheck-Werkzeugen für Geodaten, vergleichbar mit heutigen Faktencheck-Diensten.",
+      "title_en": "Debate over intelligence deception and calls for detection tools",
+      "description_en": "The work sparked a broad debate over the risk of falsified geospatial data, for example for intelligence agencies, disaster response and journalism. Detection algorithms did flag around 94 percent of the fakes but also misclassified some genuine images. The authors called for building data literacy and fact-checking tools for geospatial data, comparable to today's fact-checking services.",
+      "sources": [
+        "https://techcrunch.com/2021/04/22/deepfake-tech-takes-on-satellite-maps/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.washington.edu/news/2021/04/21/a-growing-problem-of-deepfake-geography-how-ai-falsifies-satellite-images/",

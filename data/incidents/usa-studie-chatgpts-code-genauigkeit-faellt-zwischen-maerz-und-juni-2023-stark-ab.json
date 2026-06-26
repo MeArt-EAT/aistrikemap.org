@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Recht auf Information",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Recht auf Information",
+    "Schutz vor Manipulation"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Right to information",
+    "Protection from manipulation"
+  ],
   "asm:actors": [
     {
       "name": "Stanford University; UC Berkeley",
@@ -54,7 +66,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-03",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht GPT-4 als kontinuierlich aktualisierten Dienst",
+      "description": "OpenAI stellte im März 2023 GPT-4 vor, das wie GPT-3.5 als gehosteter API- und ChatGPT-Dienst betrieben und über Microsoft Azure bereitgestellt wurde. Anders als bei lokal installierter Software können Anbieter solche Modelle jederzeit still nachtrainieren oder umstellen. Entwickler bauten Anwendungen auf diese Modelle, ohne Kontrolle über deren Versionsverhalten zu haben.",
+      "title_de": "OpenAI veröffentlicht GPT-4 als kontinuierlich aktualisierten Dienst",
+      "description_de": "OpenAI stellte im März 2023 GPT-4 vor, das wie GPT-3.5 als gehosteter API- und ChatGPT-Dienst betrieben und über Microsoft Azure bereitgestellt wurde. Anders als bei lokal installierter Software können Anbieter solche Modelle jederzeit still nachtrainieren oder umstellen. Entwickler bauten Anwendungen auf diese Modelle, ohne Kontrolle über deren Versionsverhalten zu haben.",
+      "title_en": "OpenAI releases GPT-4 as a continuously updated service",
+      "description_en": "In March 2023 OpenAI introduced GPT-4, which like GPT-3.5 ran as a hosted API and ChatGPT service delivered via Microsoft Azure. Unlike locally installed software, providers can silently retrain or switch such models at any time. Developers built applications on these models without control over their version behaviour.",
+      "sources": [
+        "https://azure.microsoft.com/en-us/blog/introducing-gpt4-in-azure-openai-service/"
+      ]
+    },
+    {
+      "date": "2023-06",
+      "phase": "doctrine",
+      "title": "Stille Modell-Updates ohne Versionsgarantie",
+      "description": "OpenAI aktualisierte seine Modelle laufend, ohne ein stabiles Verhalten über die Zeit zuzusichern oder Änderungen detailliert offenzulegen. Nutzer berichteten anekdotisch, GPT-4 sei in manchen Aufgaben schlechter geworden, was OpenAI zunächst bestritt. Dieses Geschäftsmodell aus undurchsichtigen Aktualisierungen machte die Frage nach messbarer Drift zum Untersuchungsgegenstand.",
+      "title_de": "Stille Modell-Updates ohne Versionsgarantie",
+      "description_de": "OpenAI aktualisierte seine Modelle laufend, ohne ein stabiles Verhalten über die Zeit zuzusichern oder Änderungen detailliert offenzulegen. Nutzer berichteten anekdotisch, GPT-4 sei in manchen Aufgaben schlechter geworden, was OpenAI zunächst bestritt. Dieses Geschäftsmodell aus undurchsichtigen Aktualisierungen machte die Frage nach messbarer Drift zum Untersuchungsgegenstand.",
+      "title_en": "Silent model updates without version guarantees",
+      "description_en": "OpenAI updated its models continuously without guaranteeing stable behaviour over time or disclosing changes in detail. Users anecdotally reported that GPT-4 had become worse at some tasks, which OpenAI initially disputed. This business model of opaque updates made measurable drift the subject of the study.",
+      "sources": [
+        "https://www.theregister.com/2023/07/20/gpt4_chatgpt_performance/"
+      ]
+    },
+    {
+      "date": "2023-07-18",
+      "phase": "event",
+      "title": "Studie - ChatGPTs Code-Genauigkeit fällt zwischen März und Juni 2023 stark ab",
+      "description": "Forschende von Stanford und UC Berkeley (Lingjiao Chen, Matei Zaharia, James Zou) dokumentierten ein 'Modell-Drift': Bei 50 einfachen LeetCode-Aufgaben sank der Anteil direkt ausführbaren GPT-4-Codes von 52 Prozent im März auf 10 Prozent im Juni; GPT-3.5 fiel von 22 auf 2 Prozent. Auch bei einer Primzahl-Aufgabe brach die Trefferquote ein. Die Studie warnte Entwickler, das Verhalten der Modelle regelmäßig zu testen, da stille Änderungen nachgelagerte Anwendungen brechen können.",
+      "title_de": "Studie - ChatGPTs Code-Genauigkeit fällt zwischen März und Juni 2023 stark ab",
+      "description_de": "Forschende von Stanford und UC Berkeley (Lingjiao Chen, Matei Zaharia, James Zou) dokumentierten ein 'Modell-Drift': Bei 50 einfachen LeetCode-Aufgaben sank der Anteil direkt ausführbaren GPT-4-Codes von 52 Prozent im März auf 10 Prozent im Juni; GPT-3.5 fiel von 22 auf 2 Prozent. Auch bei einer Primzahl-Aufgabe brach die Trefferquote ein. Die Studie warnte Entwickler, das Verhalten der Modelle regelmäßig zu testen, da stille Änderungen nachgelagerte Anwendungen brechen können.",
+      "title_en": "Study - ChatGPT's code accuracy drops sharply between March and June 2023",
+      "description_en": "Researchers from Stanford and UC Berkeley (Lingjiao Chen, Matei Zaharia, James Zou) documented 'model drift': on 50 easy LeetCode problems, the share of directly executable GPT-4 code fell from 52 percent in March to 10 percent in June; GPT-3.5 dropped from 22 to 2 percent. Accuracy on a prime-number task also collapsed. The study warned developers to test model behaviour regularly, since silent changes can break downstream applications.",
+      "sources": [
+        "https://arxiv.org/pdf/2307.09009"
+      ]
+    },
+    {
+      "date": "2023-07-20",
+      "phase": "consequences",
+      "title": "Debatte über Verlässlichkeit und Methodik",
+      "description": "Medien wie The Register berichteten breit über die These, ChatGPT werde 'dümmer', was die Diskussion über die Verlässlichkeit kommerzieller Sprachmodelle anheizte. Andere Fachleute kritisierten Teile der Methodik, etwa die strenge Formatierungsbewertung beim Code, sodass der Befund teils relativiert wurde. Insgesamt verstärkte der Fall Forderungen nach transparenten Versionsangaben und reproduzierbaren Benchmarks für gehostete KI-Dienste.",
+      "title_de": "Debatte über Verlässlichkeit und Methodik",
+      "description_de": "Medien wie The Register berichteten breit über die These, ChatGPT werde 'dümmer', was die Diskussion über die Verlässlichkeit kommerzieller Sprachmodelle anheizte. Andere Fachleute kritisierten Teile der Methodik, etwa die strenge Formatierungsbewertung beim Code, sodass der Befund teils relativiert wurde. Insgesamt verstärkte der Fall Forderungen nach transparenten Versionsangaben und reproduzierbaren Benchmarks für gehostete KI-Dienste.",
+      "title_en": "Debate over reliability and methodology",
+      "description_en": "Outlets such as The Register reported widely on the claim that ChatGPT was getting 'dumber', fueling discussion about the reliability of commercial language models. Other experts criticized parts of the methodology, such as the strict formatting scoring of code, so the finding was partly qualified. Overall the case strengthened calls for transparent version information and reproducible benchmarks for hosted AI services.",
+      "sources": [
+        "https://www.theregister.com/2023/07/20/gpt4_chatgpt_performance/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/pdf/2307.09009",

@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Gesundheit",
+    "Recht auf eine gesunde Umwelt",
+    "Verbraucherschutz",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Gesundheit",
+    "Recht auf eine gesunde Umwelt",
+    "Verbraucherschutz",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_en": [
+    "Right to health",
+    "Right to a healthy environment",
+    "Consumer protection",
+    "Right to information"
+  ],
   "asm:actors": [
     {
       "name": "Hugging Face; Carnegie Mellon University",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Generative Bild-KI wird zum Massenprodukt",
+      "description": "Mit DALL-E 2 (April 2022), Midjourney und dem quelloffenen Stable Diffusion (August 2022) wird Text-zu-Bild-Generierung erstmals breit verfügbar. Jede Bildanfrage löst rechenintensive Inferenz auf GPU-Rechenzentren aus. Belastbare Zahlen zum laufenden Energieverbrauch dieser Modelle fehlen zu diesem Zeitpunkt weitgehend.",
+      "title_de": "Generative Bild-KI wird zum Massenprodukt",
+      "description_de": "Mit DALL-E 2 (April 2022), Midjourney und dem quelloffenen Stable Diffusion (August 2022) wird Text-zu-Bild-Generierung erstmals breit verfügbar. Jede Bildanfrage löst rechenintensive Inferenz auf GPU-Rechenzentren aus. Belastbare Zahlen zum laufenden Energieverbrauch dieser Modelle fehlen zu diesem Zeitpunkt weitgehend.",
+      "title_en": "Generative image AI becomes a mass-market product",
+      "description_en": "With DALL-E 2 (April 2022), Midjourney and the open-source Stable Diffusion (August 2022), text-to-image generation becomes widely available for the first time. Every image request triggers compute-heavy inference on GPU data centres. Robust figures on the operational energy use of these models are largely missing at this point.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/DALL-E"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "phase": "doctrine",
+      "title": "Wachstum vor Effizienz: der Boom-Imperativ",
+      "description": "Nach dem Start von ChatGPT entsteht ein Wettlauf um immer größere generative Modelle und maximale Nutzerzahlen. Anbieter wie OpenAI, Stability AI und Midjourney optimieren auf Reichweite und Geschwindigkeit, nicht auf Energieeffizienz; der Stromverbrauch pro Anfrage wird weder offengelegt noch reguliert. Damit fehlt jede Grundlage, um den ökologischen Preis des Booms zu bewerten.",
+      "title_de": "Wachstum vor Effizienz: der Boom-Imperativ",
+      "description_de": "Nach dem Start von ChatGPT entsteht ein Wettlauf um immer größere generative Modelle und maximale Nutzerzahlen. Anbieter wie OpenAI, Stability AI und Midjourney optimieren auf Reichweite und Geschwindigkeit, nicht auf Energieeffizienz; der Stromverbrauch pro Anfrage wird weder offengelegt noch reguliert. Damit fehlt jede Grundlage, um den ökologischen Preis des Booms zu bewerten.",
+      "title_en": "Growth over efficiency: the boom imperative",
+      "description_en": "After the launch of ChatGPT, a race begins for ever-larger generative models and maximum user numbers. Providers such as OpenAI, Stability AI and Midjourney optimise for reach and speed, not energy efficiency; per-request power consumption is neither disclosed nor regulated. This leaves no basis to assess the ecological price of the boom.",
+      "sources": [
+        "https://time.com/7012753/sasha-luccioni/"
+      ]
+    },
+    {
+      "date": "2023-12-01",
+      "phase": "event",
+      "title": "Global: Studie - KI-Bildgenerierung verbraucht so viel Energie wie eine Handy-Ladung",
+      "description": "Eine Studie von Forschenden bei Hugging Face und der Carnegie Mellon University (Leitung: Sasha Luccioni) analysierte den Energieverbrauch von 88 KI-Modellen über rund 1.000 Inferenzen. Ergebnis: Das Generieren eines einzelnen KI-Bildes verbraucht im Mittel etwa so viel Energie wie das vollständige Aufladen eines Smartphones, während Textgenerierung deutlich sparsamer ist. Die Arbeit lieferte erstmals belastbare Vergleichszahlen zum ökologischen Fußabdruck generativer KI im laufenden Betrieb.",
+      "title_de": "Global: Studie - KI-Bildgenerierung verbraucht so viel Energie wie eine Handy-Ladung",
+      "description_de": "Eine Studie von Forschenden bei Hugging Face und der Carnegie Mellon University (Leitung: Sasha Luccioni) analysierte den Energieverbrauch von 88 KI-Modellen über rund 1.000 Inferenzen. Ergebnis: Das Generieren eines einzelnen KI-Bildes verbraucht im Mittel etwa so viel Energie wie das vollständige Aufladen eines Smartphones, während Textgenerierung deutlich sparsamer ist. Die Arbeit lieferte erstmals belastbare Vergleichszahlen zum ökologischen Fußabdruck generativer KI im laufenden Betrieb.",
+      "title_en": "Global: Study - generating an AI image uses as much energy as charging a phone",
+      "description_en": "A study by researchers at Hugging Face and Carnegie Mellon University (led by Sasha Luccioni) analysed the energy use of 88 AI models across roughly 1,000 inferences. The finding: generating a single AI image consumes, on average, about as much energy as fully charging a smartphone, while text generation is far less intensive. The work provided some of the first robust comparative figures on generative AI's operational ecological footprint.",
+      "sources": [
+        "https://www.technologyreview.com/2023/12/01/1084189/making-an-image-with-generative-ai-uses-as-much-energy-as-charging-your-phone/"
+      ]
+    },
+    {
+      "date": "2023-12-15",
+      "phase": "consequences",
+      "title": "Inferenz-Strom rückt in die KI-Klimadebatte",
+      "description": "Die Studie verschiebt den Fokus der KI-Klimadebatte vom einmaligen Training auf den laufenden Inferenzbetrieb, der bei massenhafter Nutzung über die Lebensdauer dominiert. Sie wird breit in Medien aufgegriffen und liefert Argumente für Forderungen nach Transparenz und Effizienz-Standards. Luccioni und Hugging Face treiben in der Folge ein offenes Bewertungssystem (AI Energy Score) für den Energieverbrauch von Modellen voran.",
+      "title_de": "Inferenz-Strom rückt in die KI-Klimadebatte",
+      "description_de": "Die Studie verschiebt den Fokus der KI-Klimadebatte vom einmaligen Training auf den laufenden Inferenzbetrieb, der bei massenhafter Nutzung über die Lebensdauer dominiert. Sie wird breit in Medien aufgegriffen und liefert Argumente für Forderungen nach Transparenz und Effizienz-Standards. Luccioni und Hugging Face treiben in der Folge ein offenes Bewertungssystem (AI Energy Score) für den Energieverbrauch von Modellen voran.",
+      "title_en": "Inference power moves into the AI climate debate",
+      "description_en": "The study shifts the focus of the AI climate debate from one-off training to ongoing inference, which dominates over a model's lifetime under mass usage. It is widely picked up in the media and fuels calls for transparency and efficiency standards. Luccioni and Hugging Face subsequently push an open rating system (AI Energy Score) for the energy use of models.",
+      "sources": [
+        "https://www.npr.org/transcripts/1250261120"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2023/12/01/1084189/making-an-image-with-generative-ai-uses-as-much-energy-as-charging-your-phone/",
