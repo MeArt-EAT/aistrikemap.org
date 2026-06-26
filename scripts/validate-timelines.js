@@ -44,21 +44,20 @@ const DE_FIELDS = new Set([
   'name', 'title', 'title_de', 'description', 'description_de',
 ]);
 
-// Hochsichere Verdachts-Morpheme (Transliterationen, die fast nie legitim sind).
-// Wortgrenzen-gebunden; bewusst konservativ, um false positives klein zu halten.
-const SUSPECT_WORDS = [
-  'fuer', 'ueber', 'koennen', 'koennte', 'muessen', 'muesste', 'wuerde',
-  'gegenueber', 'fuehrt', 'fuehrte', 'gefuehrt', 'einfuehrung', 'durchfuehrung',
-  'ueberwachung', 'aenderung', 'behoerde', 'behoerden', 'unterstuetzung',
-  'massnahme', 'massnahmen', 'strasse', 'strassen', 'grossen', 'schliesslich',
-  'aeusserung', 'aeusserungen', 'verstoss', 'verstoesse',
+// Translit-Morpheme: ae/oe/ue-Sequenzen, die praktisch immer transliterierte
+// Umlaute sind (echte Schreibung waere ä/ö/ü). Als Teilstring gesucht - matcht
+// auch in Wortmitte/Komposita (uebergibt, ueberfuehrt, ueberschaetzte), die eine
+// Ganzwort-Liste durchlaesst. Nur in DE-Display-Feldern angewandt.
+// ss-Morpheme NUR wo NIE ss korrekt ist (Strasse/Maßnahme/Verstoß) - NICHT
+// 'schluss'/'muss'/'fluss' (ss nach kurzem Vokal korrekt).
+const TRANSLIT_MORPHEMES = [
+  'ueber', 'fuer', 'fuehr', 'koenn', 'muess', 'wuerd', 'haett', 'waere', 'moecht',
+  'stuerz', 'behoerd', 'oeffentl', 'aenderung', 'unterstuetz', 'zunaechst', 'naechst',
+  'hoechst', 'spaeter', 'waehrend', 'gemaess', 'beruecksicht', 'verfuegb', 'enthuell',
+  'zurueck', 'erklaer', 'aeusser', 'schaetz', 'kuendig', 'massnahm', 'strasse',
+  'grundsaetz', 'regelmaess', 'gewaehrleist', 'ueberwach', 'vergroess',
 ];
-// Hinweis: 'Beschluss'/'Schluss'/'muss' sind KORREKT (ss nach kurzem Vokal),
-// daher NICHT in der Verdachtsliste.
-const SUSPECT_RE = new RegExp(
-  '(^|[^a-zA-ZäöüÄÖÜß])(' + SUSPECT_WORDS.join('|') + ')([^a-zA-ZäöüÄÖÜß]|$)',
-  'i'
-);
+const SUSPECT_RE = new RegExp('(' + TRANSLIT_MORPHEMES.join('|') + ')', 'i');
 
 function loadMapKeys() {
   try {
