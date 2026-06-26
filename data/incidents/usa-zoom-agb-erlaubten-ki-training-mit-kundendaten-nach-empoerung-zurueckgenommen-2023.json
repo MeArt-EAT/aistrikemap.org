@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Informationelle Selbstbestimmung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Consumer protection",
+    "Informational self-determination"
+  ],
   "asm:actors": [
     {
       "name": "Zoom Video Communications",
@@ -39,7 +54,62 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Zoom wird zur globalen Plattform mit Zugriff auf Meeting-Inhalte",
+      "description": "Während der Pandemie wuchs Zoom zur weltweit dominierenden Videokonferenz-Plattform mit Hunderten Millionen Nutzer:innen. Über die Server liefen täglich riesige Mengen an Audio-, Video- und Chat-Inhalten - ein wertvoller Datenschatz, der spätere KI-Trainingsvorhaben technisch erst ermöglichte.",
+      "title_de": "Zoom wird zur globalen Plattform mit Zugriff auf Meeting-Inhalte",
+      "description_de": "Während der Pandemie wuchs Zoom zur weltweit dominierenden Videokonferenz-Plattform mit Hunderten Millionen Nutzer:innen. Über die Server liefen täglich riesige Mengen an Audio-, Video- und Chat-Inhalten - ein wertvoller Datenschatz, der spätere KI-Trainingsvorhaben technisch erst ermöglichte.",
+      "title_en": "Zoom becomes a global platform with access to meeting content",
+      "description_en": "During the pandemic, Zoom grew into the world's dominant video-conferencing platform with hundreds of millions of users. Vast amounts of audio, video and chat content flowed through its servers daily - a valuable data trove that later made AI-training plans technically possible.",
+      "sources": [
+        "https://www.nbcnews.com/tech/innovation/zoom-ai-privacy-tos-terms-of-service-data-rcna98665"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "phase": "doctrine",
+      "title": "Zoom ändert seine AGB und sichert sich weitreichende KI-Trainingsrechte",
+      "description": "Im März 2023 änderte Zoom seine Nutzungsbedingungen und räumte sich eine 'unbefristete, weltweite, nicht-exklusive, gebührenfreie' Lizenz ein, Servicedaten zum Trainieren von KI-Modellen zu nutzen. Kundeninhalte wie Meeting-Videos und Datei-Uploads konnten erfasst werden, ohne dass eine echte Widerspruchsmöglichkeit (Opt-out) vorgesehen war.",
+      "title_de": "Zoom ändert seine AGB und sichert sich weitreichende KI-Trainingsrechte",
+      "description_de": "Im März 2023 änderte Zoom seine Nutzungsbedingungen und räumte sich eine 'unbefristete, weltweite, nicht-exklusive, gebührenfreie' Lizenz ein, Servicedaten zum Trainieren von KI-Modellen zu nutzen. Kundeninhalte wie Meeting-Videos und Datei-Uploads konnten erfasst werden, ohne dass eine echte Widerspruchsmöglichkeit (Opt-out) vorgesehen war.",
+      "title_en": "Zoom amends its terms, granting itself broad AI-training rights",
+      "description_en": "In March 2023, Zoom amended its terms of service to grant itself a 'perpetual, worldwide, non-exclusive, royalty-free' licence to use service-generated data to train AI models. Customer content such as meeting videos and file uploads could be collected, with no genuine opt-out provided.",
+      "sources": [
+        "https://termly.io/resources/articles/zoom-terms-of-service-controversy/"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "event",
+      "title": "Öffentlicher Aufschrei über KI-Training mit Kundendaten ohne Opt-out",
+      "description": "Anfang August 2023 berichteten Medien und soziale Netzwerke, dass Zooms AGB die Nutzung von Audio-, Video- und Chat-Inhalten zum KI-Training ohne Widerspruchsmöglichkeit erlaubten. Datenschützer:innen sahen einen möglichen Konflikt mit der DSGVO, insbesondere bei der Frage einer gültigen Einwilligung. Die Empörung verbreitete sich schnell.",
+      "title_de": "Öffentlicher Aufschrei über KI-Training mit Kundendaten ohne Opt-out",
+      "description_de": "Anfang August 2023 berichteten Medien und soziale Netzwerke, dass Zooms AGB die Nutzung von Audio-, Video- und Chat-Inhalten zum KI-Training ohne Widerspruchsmöglichkeit erlaubten. Datenschützer:innen sahen einen möglichen Konflikt mit der DSGVO, insbesondere bei der Frage einer gültigen Einwilligung. Die Empörung verbreitete sich schnell.",
+      "title_en": "Public outcry over AI training on customer data with no opt-out",
+      "description_en": "In early August 2023, media and social networks reported that Zoom's terms allowed audio, video and chat content to be used for AI training with no opt-out. Privacy experts flagged a possible conflict with the GDPR, especially over valid consent. The outrage spread rapidly.",
+      "sources": [
+        "https://techcrunch.com/2023/08/08/zoom-data-mining-for-ai-terms-gdpr-eprivacy/",
+        "https://www.cpomagazine.com/data-privacy/zoom-ai-data-collection-catching-users-by-surprise-may-face-regulatory-action-in-eu/"
+      ]
+    },
+    {
+      "date": "2023-08-11",
+      "phase": "consequences",
+      "title": "Zoom nimmt die Klausel zurück und schließt KI-Training mit Kundeninhalten aus",
+      "description": "Unter dem Druck der Kritik aktualisierte Zoom am 11. August 2023 seine AGB erneut und stellte klar, keinerlei Kundeninhalte zum Training generativer KI-Modelle zu verwenden. Der Fall wurde zu einem oft zitierten Beispiel dafür, wie intransparente AGB-Änderungen für KI-Training öffentlichen Widerstand auslösen und korrigiert werden können.",
+      "title_de": "Zoom nimmt die Klausel zurück und schließt KI-Training mit Kundeninhalten aus",
+      "description_de": "Unter dem Druck der Kritik aktualisierte Zoom am 11. August 2023 seine AGB erneut und stellte klar, keinerlei Kundeninhalte zum Training generativer KI-Modelle zu verwenden. Der Fall wurde zu einem oft zitierten Beispiel dafür, wie intransparente AGB-Änderungen für KI-Training öffentlichen Widerstand auslösen und korrigiert werden können.",
+      "title_en": "Zoom reverses the clause and rules out AI training on customer content",
+      "description_en": "Under pressure from the criticism, Zoom updated its terms again on August 11, 2023, clarifying that it would not use any customer content to train generative AI models. The case became an often-cited example of how opaque terms changes for AI training can trigger public resistance and be reversed.",
+      "sources": [
+        "https://variety.com/2023/digital/news/zoom-ai-training-backlash-customer-content-terms-of-service-1235694207/",
+        "https://therecord.media/zoom-ai-terms-of-service-update"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2023/08/08/zoom-data-mining-for-ai-terms-gdpr-eprivacy/",

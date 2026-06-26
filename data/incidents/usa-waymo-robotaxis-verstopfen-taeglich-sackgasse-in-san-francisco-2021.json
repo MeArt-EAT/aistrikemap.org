@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Würde des Menschen",
+    "Bewegungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Würde des Menschen",
+    "Bewegungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Human dignity",
+    "Freedom of movement"
+  ],
   "asm:actors": [
     {
       "name": "Waymo",
@@ -46,7 +58,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-04",
+      "phase": "infrastructure",
+      "title": "San Francisco führt Slow-Streets-Programm ein",
+      "description": "Im April 2020 startete die Verkehrsbehörde SFMTA während der Corona-Pandemie das Slow-Streets-Programm, das den Durchgangsverkehr auf ausgewählten Wohnstraßen einschränkte, darunter Korridore im Richmond District. Diese Sperrungen veränderten die befahrbaren Routen im Stadtteil und beeinflussten später die Routenplanung von Navigationssystemen.",
+      "title_de": "San Francisco führt Slow-Streets-Programm ein",
+      "description_de": "Im April 2020 startete die Verkehrsbehörde SFMTA während der Corona-Pandemie das Slow-Streets-Programm, das den Durchgangsverkehr auf ausgewählten Wohnstraßen einschränkte, darunter Korridore im Richmond District. Diese Sperrungen veränderten die befahrbaren Routen im Stadtteil und beeinflussten später die Routenplanung von Navigationssystemen.",
+      "title_en": "San Francisco launches Slow Streets program",
+      "description_en": "In April 2020 the transport agency SFMTA launched the Slow Streets program during the COVID-19 pandemic, restricting through traffic on selected residential streets, including corridors in the Richmond District. These restrictions changed the drivable routes in the neighborhood and later affected the route planning of navigation systems.",
+      "sources": [
+        "https://www.sfmta.com/projects/post-pandemic-slow-streets"
+      ]
+    },
+    {
+      "date": "2021",
+      "phase": "doctrine",
+      "title": "Waymo testet fahrerlose Robotaxis in San Francisco",
+      "description": "Ab 2021 erprobte Waymo seinen fahrerlosen Robotaxi-Betrieb in San Francisco. Die Fahrzeuge wurden vom Waymo-Driver-System gesteuert, das Routen automatisch anhand der Verkehrslage und gesperrter Straßen plante. In einem dicht besiedelten Stadtgebiet konnten Fehlentscheidungen der Routing-Software Fahrzeuge wiederholt in dieselben Straßen lenken.",
+      "title_de": "Waymo testet fahrerlose Robotaxis in San Francisco",
+      "description_de": "Ab 2021 erprobte Waymo seinen fahrerlosen Robotaxi-Betrieb in San Francisco. Die Fahrzeuge wurden vom Waymo-Driver-System gesteuert, das Routen automatisch anhand der Verkehrslage und gesperrter Straßen plante. In einem dicht besiedelten Stadtgebiet konnten Fehlentscheidungen der Routing-Software Fahrzeuge wiederholt in dieselben Straßen lenken.",
+      "title_en": "Waymo tests driverless robotaxis in San Francisco",
+      "description_en": "From 2021 Waymo trialed its driverless robotaxi operation in San Francisco. The vehicles were controlled by the Waymo Driver system, which planned routes automatically based on traffic conditions and closed streets. In a densely populated city, faulty decisions by the routing software could repeatedly steer vehicles into the same streets.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Waymo"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "event",
+      "title": "Robotaxis verstopfen täglich Sackgasse im Richmond District",
+      "description": "Im Oktober 2021 berichteten Bewohner einer Sackgasse an der 15th Avenue im Richmond District, dass bis zu 50 fahrerlose Waymo-Jaguar-I-Pace täglich in ihre Straße einbogen, wendeten und teils Schlange standen. Die Routing-Software leitete die Fahrzeuge offenbar wegen einer nahen Slow Street in die Sackgasse. Es gab keinen Personenschaden, aber eine dauerhafte Belästigung der Anwohner.",
+      "title_de": "Robotaxis verstopfen täglich Sackgasse im Richmond District",
+      "description_de": "Im Oktober 2021 berichteten Bewohner einer Sackgasse an der 15th Avenue im Richmond District, dass bis zu 50 fahrerlose Waymo-Jaguar-I-Pace täglich in ihre Straße einbogen, wendeten und teils Schlange standen. Die Routing-Software leitete die Fahrzeuge offenbar wegen einer nahen Slow Street in die Sackgasse. Es gab keinen Personenschaden, aber eine dauerhafte Belästigung der Anwohner.",
+      "title_en": "Robotaxis clog cul-de-sac in the Richmond District daily",
+      "description_en": "In October 2021 residents of a dead-end stretch of 15th Avenue in the Richmond District reported that up to 50 driverless Waymo Jaguar I-Paces a day were entering, turning around and sometimes queuing in their street. The routing software apparently diverted the vehicles into the cul-de-sac because of a nearby Slow Street. There were no injuries, but persistent nuisance to residents.",
+      "sources": [
+        "https://9to5google.com/2021/10/14/waymo-dead-end-street-stuck/"
+      ]
+    },
+    {
+      "date": "2021-10-14",
+      "phase": "consequences",
+      "title": "Waymo nennt nahe Slow Street als Ursache und kündigt Anpassung an",
+      "description": "Waymo erklärte den Fehler mit einer nahe gelegenen Slow Street, die das Routing-System in die Sackgasse umleitete, und kündigte an, das Problem zu beheben. Der Fall wurde in Tech- und Automedien als frühes Beispiel dafür aufgegriffen, wie fehlerhafte Routenplanung autonomer Flotten ganze Nachbarschaften belasten kann.",
+      "title_de": "Waymo nennt nahe Slow Street als Ursache und kündigt Anpassung an",
+      "description_de": "Waymo erklärte den Fehler mit einer nahe gelegenen Slow Street, die das Routing-System in die Sackgasse umleitete, und kündigte an, das Problem zu beheben. Der Fall wurde in Tech- und Automedien als frühes Beispiel dafür aufgegriffen, wie fehlerhafte Routenplanung autonomer Flotten ganze Nachbarschaften belasten kann.",
+      "title_en": "Waymo cites nearby Slow Street as cause and announces adjustment",
+      "description_en": "Waymo attributed the problem to a nearby Slow Street that diverted the routing system into the cul-de-sac, and said it would fix the issue. The case was picked up by tech and automotive media as an early example of how faulty route planning by autonomous fleets can burden entire neighborhoods.",
+      "sources": [
+        "https://www.carscoops.com/2021/10/scores-of-waymos-self-driving-cars-are-flocking-to-one-san-francisco-street-for-no-apparent-reason/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://9to5google.com/2021/10/14/waymo-dead-end-street-stuck/",

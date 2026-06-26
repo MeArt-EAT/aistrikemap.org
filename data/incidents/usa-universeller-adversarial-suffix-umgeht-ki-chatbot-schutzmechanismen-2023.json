@@ -8,9 +8,9 @@
   "name": "USA: Universeller Adversarial-Suffix umgeht KI-Chatbot-Schutzmechanismen",
   "name_de": "USA: Universeller Adversarial-Suffix umgeht KI-Chatbot-Schutzmechanismen",
   "name_en": "USA: Universal adversarial suffix bypasses AI chatbot guardrails",
-  "description": "Im Juli 2023 veröffentlichten Andy Zou, Zifan Wang, Zico Kolter und Matt Fredrikson (Carnegie Mellon University u. a.) die erste automatisierte Jailbreak-Methode für große Sprachmodelle. Ihr gradientenbasiertes Verfahren findet universelle Zeichen-Suffixe, die an eine Anfrage angehängt die Sicherheits-Leitplanken vieler ausgerichteter Modelle aushebeln — und sich auf geschlossene Systeme wie GPT-3.5/4, Bard und Claude übertragen lassen. Die Arbeit zeigte eine grundsätzliche Verwundbarkeit von KI-Schutzmechanismen und löste eine breite Forschungsdebatte über LLM-Robustheit aus.",
-  "description_de": "Im Juli 2023 veröffentlichten Andy Zou, Zifan Wang, Zico Kolter und Matt Fredrikson (Carnegie Mellon University u. a.) die erste automatisierte Jailbreak-Methode für große Sprachmodelle. Ihr gradientenbasiertes Verfahren findet universelle Zeichen-Suffixe, die an eine Anfrage angehängt die Sicherheits-Leitplanken vieler ausgerichteter Modelle aushebeln — und sich auf geschlossene Systeme wie GPT-3.5/4, Bard und Claude übertragen lassen. Die Arbeit zeigte eine grundsätzliche Verwundbarkeit von KI-Schutzmechanismen und löste eine breite Forschungsdebatte über LLM-Robustheit aus.",
-  "description_en": "In July 2023 Andy Zou, Zifan Wang, Zico Kolter and Matt Fredrikson (Carnegie Mellon University and others) published the first automated jailbreak method for large language models. Their gradient-guided technique discovers universal character suffixes that, appended to a prompt, defeat the safety guardrails of many aligned models — and transfer to closed systems such as GPT-3.5/4, Bard and Claude. The work exposed a fundamental vulnerability in AI guardrails and triggered a broad research debate on LLM robustness.",
+  "description": "Im Juli 2023 veröffentlichten Andy Zou, Zifan Wang, Zico Kolter und Matt Fredrikson (Carnegie Mellon University u. a.) die erste automatisierte Jailbreak-Methode für große Sprachmodelle. Ihr gradientenbasiertes Verfahren findet universelle Zeichen-Suffixe, die an eine Anfrage angehängt die Sicherheits-Leitplanken vieler ausgerichteter Modelle aushebeln - und sich auf geschlossene Systeme wie GPT-3.5/4, Bard und Claude übertragen lassen. Die Arbeit zeigte eine grundsätzliche Verwundbarkeit von KI-Schutzmechanismen und löste eine breite Forschungsdebatte über LLM-Robustheit aus.",
+  "description_de": "Im Juli 2023 veröffentlichten Andy Zou, Zifan Wang, Zico Kolter und Matt Fredrikson (Carnegie Mellon University u. a.) die erste automatisierte Jailbreak-Methode für große Sprachmodelle. Ihr gradientenbasiertes Verfahren findet universelle Zeichen-Suffixe, die an eine Anfrage angehängt die Sicherheits-Leitplanken vieler ausgerichteter Modelle aushebeln - und sich auf geschlossene Systeme wie GPT-3.5/4, Bard und Claude übertragen lassen. Die Arbeit zeigte eine grundsätzliche Verwundbarkeit von KI-Schutzmechanismen und löste eine breite Forschungsdebatte über LLM-Robustheit aus.",
+  "description_en": "In July 2023 Andy Zou, Zifan Wang, Zico Kolter and Matt Fredrikson (Carnegie Mellon University and others) published the first automated jailbreak method for large language models. Their gradient-guided technique discovers universal character suffixes that, appended to a prompt, defeat the safety guardrails of many aligned models - and transfer to closed systems such as GPT-3.5/4, Bard and Claude. The work exposed a fundamental vulnerability in AI guardrails and triggered a broad research debate on LLM robustness.",
   "startDate": "2023-07-27",
   "location": {
     "@type": "Place",
@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Sicherheit",
+    "Wissenschaftsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Sicherheit",
+    "Wissenschaftsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Right to security",
+    "Freedom of scientific research"
+  ],
   "asm:actors": [
     {
       "name": "Andy Zou, Zifan Wang, J. Zico Kolter, Matt Fredrikson (Carnegie Mellon University)",
@@ -55,7 +70,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022",
+      "phase": "infrastructure",
+      "title": "Ausgerichtete Chatbots mit RLHF-Schutzleitplanken",
+      "description": "Ab 2022 brachten OpenAI, Google und Anthropic große Sprachmodelle wie GPT-3.5/4, Bard und Claude in Umlauf, deren Sicherheit auf Alignment-Verfahren wie Reinforcement Learning aus menschlichem Feedback (RLHF) beruht. Diese Schutzleitplanken sollen schädliche Antworten verweigern, bilden aber die Angriffsfläche, die später automatisiert ausgehebelt wurde.",
+      "title_de": "Ausgerichtete Chatbots mit RLHF-Schutzleitplanken",
+      "description_de": "Ab 2022 brachten OpenAI, Google und Anthropic große Sprachmodelle wie GPT-3.5/4, Bard und Claude in Umlauf, deren Sicherheit auf Alignment-Verfahren wie Reinforcement Learning aus menschlichem Feedback (RLHF) beruht. Diese Schutzleitplanken sollen schädliche Antworten verweigern, bilden aber die Angriffsfläche, die später automatisiert ausgehebelt wurde.",
+      "title_en": "Aligned chatbots with RLHF guardrails",
+      "description_en": "From 2022, OpenAI, Google and Anthropic released large language models such as GPT-3.5/4, Bard and Claude whose safety relies on alignment methods like reinforcement learning from human feedback (RLHF). These guardrails are meant to refuse harmful answers, but they form the attack surface that was later defeated automatically.",
+      "sources": [
+        "https://arxiv.org/abs/2307.15043"
+      ]
+    },
+    {
+      "date": "2023-07",
+      "phase": "doctrine",
+      "title": "Forschung zu übertragbaren adversarialen Angriffen",
+      "description": "Forschende der Carnegie Mellon University, des Center for AI Safety und von Google DeepMind verfolgten den Ansatz, Schwachstellen von KI-Sicherheit nicht manuell, sondern automatisiert und gradientenbasiert aufzudecken. Leitend war die Annahme, dass an offenen Modellen optimierte Angriffe sich auf geschlossene, kommerzielle Systeme übertragen lassen.",
+      "title_de": "Forschung zu übertragbaren adversarialen Angriffen",
+      "description_de": "Forschende der Carnegie Mellon University, des Center for AI Safety und von Google DeepMind verfolgten den Ansatz, Schwachstellen von KI-Sicherheit nicht manuell, sondern automatisiert und gradientenbasiert aufzudecken. Leitend war die Annahme, dass an offenen Modellen optimierte Angriffe sich auf geschlossene, kommerzielle Systeme übertragen lassen.",
+      "title_en": "Research into transferable adversarial attacks",
+      "description_en": "Researchers from Carnegie Mellon University, the Center for AI Safety and Google DeepMind pursued the idea of exposing AI safety weaknesses not manually but automatically, using gradient-based optimisation. The guiding assumption was that attacks tuned on open models would transfer to closed, commercial systems.",
+      "sources": [
+        "https://github.com/llm-attacks/llm-attacks"
+      ]
+    },
+    {
+      "date": "2023-07-27",
+      "phase": "event",
+      "title": "Universeller Adversarial-Suffix umgeht Chatbot-Leitplanken",
+      "description": "Am 27. Juli 2023 veröffentlichten Zou, Wang, Carlini, Nasr, Kolter und Fredrikson 'Universal and Transferable Adversarial Attacks on Aligned Language Models'. Ihr Greedy-Coordinate-Gradient-Verfahren findet universelle Zeichen-Suffixe, die an eine Anfrage angehängt die Sicherheits-Leitplanken aushebeln - und sich von offenen Modellen auf ChatGPT, Bard, Claude und LLaMA-2 übertragen ließen.",
+      "title_de": "Universeller Adversarial-Suffix umgeht Chatbot-Leitplanken",
+      "description_de": "Am 27. Juli 2023 veröffentlichten Zou, Wang, Carlini, Nasr, Kolter und Fredrikson 'Universal and Transferable Adversarial Attacks on Aligned Language Models'. Ihr Greedy-Coordinate-Gradient-Verfahren findet universelle Zeichen-Suffixe, die an eine Anfrage angehängt die Sicherheits-Leitplanken aushebeln - und sich von offenen Modellen auf ChatGPT, Bard, Claude und LLaMA-2 übertragen ließen.",
+      "title_en": "Universal adversarial suffix bypasses chatbot guardrails",
+      "description_en": "On 27 July 2023, Zou, Wang, Carlini, Nasr, Kolter and Fredrikson published 'Universal and Transferable Adversarial Attacks on Aligned Language Models'. Their greedy-coordinate-gradient method finds universal character suffixes that, appended to a prompt, defeat safety guardrails - and transferred from open models to ChatGPT, Bard, Claude and LLaMA-2.",
+      "sources": [
+        "https://arxiv.org/abs/2307.15043",
+        "https://llm-attacks.org/zou2023universal.pdf"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "phase": "consequences",
+      "title": "Patches der Anbieter und Welle der Robustheitsforschung",
+      "description": "Nach verantwortungsvoller Offenlegung schlossen mehrere Anbieter die konkret demonstrierten Suffixe, doch das zugrunde liegende Verfahren blieb wirksam und ließ sich neu optimieren. Die Arbeit zeigte eine grundsätzliche Verwundbarkeit ausgerichteter Modelle, löste eine breite Debatte über LLM-Robustheit aus und führte zu zahlreichen Folgearbeiten zu Verteidigungen gegen adversariale Prompts.",
+      "title_de": "Patches der Anbieter und Welle der Robustheitsforschung",
+      "description_de": "Nach verantwortungsvoller Offenlegung schlossen mehrere Anbieter die konkret demonstrierten Suffixe, doch das zugrunde liegende Verfahren blieb wirksam und ließ sich neu optimieren. Die Arbeit zeigte eine grundsätzliche Verwundbarkeit ausgerichteter Modelle, löste eine breite Debatte über LLM-Robustheit aus und führte zu zahlreichen Folgearbeiten zu Verteidigungen gegen adversariale Prompts.",
+      "title_en": "Vendor patches and a wave of robustness research",
+      "description_en": "After responsible disclosure, several vendors blocked the specific demonstrated suffixes, but the underlying method remained effective and could be re-optimised. The work revealed a fundamental vulnerability in aligned models, triggered a broad debate on LLM robustness and led to numerous follow-up studies on defences against adversarial prompts.",
+      "sources": [
+        "https://arxiv.org/pdf/2309.00614"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/abs/2307.15043",

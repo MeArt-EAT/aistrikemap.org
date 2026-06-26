@@ -5,12 +5,12 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-zoox-robotaxi-kollidierte-in-las-vegas-mit-pkw-rueckruf-von-270-fahrzeugen-2025",
-  "name": "USA: Zoox-Robotaxi kollidierte in Las Vegas mit PKW — Rückruf von 270 Fahrzeugen",
-  "name_de": "USA: Zoox-Robotaxi kollidierte in Las Vegas mit PKW — Rückruf von 270 Fahrzeugen",
-  "name_en": "USA: Zoox robotaxi collided with passenger car in Las Vegas — recall of 270 vehicles issued",
-  "description": "Am 8. April 2025 kollidierte ein unbesetztes Robotaxi von Zoox (einer Amazon-Tochter) in Las Vegas mit einem PKW. Es gab keine Verletzten, nur geringen Sachschaden. Der Zwischenfall entstand, weil ein PKW sich schnell der Spur des Robotaxis näherte; das Zoox-Fahrzeug nahm an, dass der PKW weiterfährt, und scherte aus — doch der PKW hielt auf dem Seitenstreifen, und die Bremsung kam zu spät. Zoox setzte daraufhin alle fahrerlosen Operationen aus und rief am 6. Mai 2025 270 Robotaxis wegen eines Software-Defekts beim Trajektorien-Vorhersage-System zurück. Nach Patch wurde der Betrieb wenige Tage später wieder aufgenommen.",
-  "description_de": "Am 8. April 2025 kollidierte ein unbesetztes Robotaxi von Zoox (einer Amazon-Tochter) in Las Vegas mit einem PKW. Es gab keine Verletzten, nur geringen Sachschaden. Der Zwischenfall entstand, weil ein PKW sich schnell der Spur des Robotaxis näherte; das Zoox-Fahrzeug nahm an, dass der PKW weiterfährt, und scherte aus — doch der PKW hielt auf dem Seitenstreifen, und die Bremsung kam zu spät. Zoox setzte daraufhin alle fahrerlosen Operationen aus und rief am 6. Mai 2025 270 Robotaxis wegen eines Software-Defekts beim Trajektorien-Vorhersage-System zurück. Nach Patch wurde der Betrieb wenige Tage später wieder aufgenommen.",
-  "description_en": "On April 8, 2025, an unoccupied Zoox robotaxi (Amazon subsidiary) collided with a passenger car in Las Vegas. There were no injuries and only minor damage. The crash occurred because the passenger car quickly approached the robotaxi's lane; the Zoox vehicle anticipated the car would keep moving and swerved right — but the car came to a full stop on the shoulder, and braking came too late. Zoox paused all driverless operations and on May 6, 2025 recalled 270 robotaxis over a software defect in the trajectory-prediction system. Operations resumed days later after a fix was deployed.",
+  "name": "USA: Zoox-Robotaxi kollidierte in Las Vegas mit PKW - Rückruf von 270 Fahrzeugen",
+  "name_de": "USA: Zoox-Robotaxi kollidierte in Las Vegas mit PKW - Rückruf von 270 Fahrzeugen",
+  "name_en": "USA: Zoox robotaxi collided with passenger car in Las Vegas - recall of 270 vehicles issued",
+  "description": "Am 8. April 2025 kollidierte ein unbesetztes Robotaxi von Zoox (einer Amazon-Tochter) in Las Vegas mit einem PKW. Es gab keine Verletzten, nur geringen Sachschaden. Der Zwischenfall entstand, weil ein PKW sich schnell der Spur des Robotaxis näherte; das Zoox-Fahrzeug nahm an, dass der PKW weiterfährt, und scherte aus - doch der PKW hielt auf dem Seitenstreifen, und die Bremsung kam zu spät. Zoox setzte daraufhin alle fahrerlosen Operationen aus und rief am 6. Mai 2025 270 Robotaxis wegen eines Software-Defekts beim Trajektorien-Vorhersage-System zurück. Nach Patch wurde der Betrieb wenige Tage später wieder aufgenommen.",
+  "description_de": "Am 8. April 2025 kollidierte ein unbesetztes Robotaxi von Zoox (einer Amazon-Tochter) in Las Vegas mit einem PKW. Es gab keine Verletzten, nur geringen Sachschaden. Der Zwischenfall entstand, weil ein PKW sich schnell der Spur des Robotaxis näherte; das Zoox-Fahrzeug nahm an, dass der PKW weiterfährt, und scherte aus - doch der PKW hielt auf dem Seitenstreifen, und die Bremsung kam zu spät. Zoox setzte daraufhin alle fahrerlosen Operationen aus und rief am 6. Mai 2025 270 Robotaxis wegen eines Software-Defekts beim Trajektorien-Vorhersage-System zurück. Nach Patch wurde der Betrieb wenige Tage später wieder aufgenommen.",
+  "description_en": "On April 8, 2025, an unoccupied Zoox robotaxi (Amazon subsidiary) collided with a passenger car in Las Vegas. There were no injuries and only minor damage. The crash occurred because the passenger car quickly approached the robotaxi's lane; the Zoox vehicle anticipated the car would keep moving and swerved right - but the car came to a full stop on the shoulder, and braking came too late. Zoox paused all driverless operations and on May 6, 2025 recalled 270 robotaxis over a software defect in the trajectory-prediction system. Operations resumed days later after a fix was deployed.",
   "startDate": "2025-04-08",
   "location": {
     "@type": "Place",
@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf körperliche Unversehrtheit",
+    "Verkehrssicherheit",
+    "Verbraucherschutz",
+    "Recht auf Leben"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf körperliche Unversehrtheit",
+    "Verkehrssicherheit",
+    "Verbraucherschutz",
+    "Recht auf Leben"
+  ],
+  "asm:affectedRights_en": [
+    "Right to physical integrity",
+    "Road safety",
+    "Consumer protection",
+    "Right to life"
+  ],
   "asm:actors": [
     {
       "name": "Zoox (Amazon)",
@@ -47,7 +62,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Amazon übernimmt Zoox und baut ein fahrerloses Robotaxi-System auf",
+      "description": "Amazon übernahm Zoox 2020 für rund 1,3 Milliarden Dollar. Zoox entwickelte ein eigenes fahrerloses Fahrzeug, dessen Computer-Vision- und Trajektorien-Vorhersage-System das Verhalten anderer Verkehrsteilnehmer prognostizieren und daraus eine Fahrtroute planen soll. Diese Software-Architektur war die technische Grundlage des späteren Vorfalls.",
+      "title_de": "Amazon übernimmt Zoox und baut ein fahrerloses Robotaxi-System auf",
+      "description_de": "Amazon übernahm Zoox 2020 für rund 1,3 Milliarden Dollar. Zoox entwickelte ein eigenes fahrerloses Fahrzeug, dessen Computer-Vision- und Trajektorien-Vorhersage-System das Verhalten anderer Verkehrsteilnehmer prognostizieren und daraus eine Fahrtroute planen soll. Diese Software-Architektur war die technische Grundlage des späteren Vorfalls.",
+      "title_en": "Amazon acquires Zoox and builds a driverless robotaxi system",
+      "description_en": "Amazon acquired Zoox in 2020 for about 1.3 billion dollars. Zoox developed its own driverless vehicle whose computer-vision and trajectory-prediction system forecasts the behaviour of other road users and plans a route accordingly. This software architecture was the technical basis for the later incident.",
+      "sources": [
+        "https://techcrunch.com/2024/10/30/zoox-custom-robotaxis-are-finally-coming-to-san-francisco-and-las-vegas/"
+      ]
+    },
+    {
+      "date": "2023-06",
+      "phase": "doctrine",
+      "title": "Zoox nimmt fahrerlosen Testbetrieb auf öffentlichen Straßen in Las Vegas auf",
+      "description": "Seit Juni 2023 fuhren Zoox-Robotaxis auf öffentlichen Straßen in Las Vegas. Die Entscheidung, fahrerlose Fahrzeuge im realen Straßenverkehr zu betreiben - zunächst mit Mitarbeitenden, später ausgeweitet - setzte das KI-Fahrsystem ungeschützten Verkehrssituationen aus und verlagerte das Sicherheitsrisiko auf andere Verkehrsteilnehmer.",
+      "title_de": "Zoox nimmt fahrerlosen Testbetrieb auf öffentlichen Straßen in Las Vegas auf",
+      "description_de": "Seit Juni 2023 fuhren Zoox-Robotaxis auf öffentlichen Straßen in Las Vegas. Die Entscheidung, fahrerlose Fahrzeuge im realen Straßenverkehr zu betreiben - zunächst mit Mitarbeitenden, später ausgeweitet - setzte das KI-Fahrsystem ungeschützten Verkehrssituationen aus und verlagerte das Sicherheitsrisiko auf andere Verkehrsteilnehmer.",
+      "title_en": "Zoox begins driverless testing on public roads in Las Vegas",
+      "description_en": "From June 2023, Zoox robotaxis operated on public roads in Las Vegas. The decision to run driverless vehicles in real traffic - initially with employees, later expanded - exposed the AI driving system to uncontrolled traffic situations and shifted the safety risk onto other road users.",
+      "sources": [
+        "https://www.govtech.com/transportation/amazon-subsidiary-zoox-preps-to-launch-robotaxis-in-las-vegas"
+      ]
+    },
+    {
+      "date": "2025-04-08",
+      "phase": "event",
+      "title": "Unbesetztes Zoox-Robotaxi kollidiert in Las Vegas mit einem PKW",
+      "description": "Am 8. April 2025 kollidierte ein unbesetztes Zoox-Robotaxi in Las Vegas mit einem PKW. Das Fahrsystem sagte fälschlich voraus, der sich nähernde PKW werde weiterfahren, und plante einen Ausweichweg - doch der PKW hielt an, und die Bremsung kam zu spät. Es gab keine Verletzten und nur geringen Sachschaden.",
+      "title_de": "Unbesetztes Zoox-Robotaxi kollidiert in Las Vegas mit einem PKW",
+      "description_de": "Am 8. April 2025 kollidierte ein unbesetztes Zoox-Robotaxi in Las Vegas mit einem PKW. Das Fahrsystem sagte fälschlich voraus, der sich nähernde PKW werde weiterfahren, und plante einen Ausweichweg - doch der PKW hielt an, und die Bremsung kam zu spät. Es gab keine Verletzten und nur geringen Sachschaden.",
+      "title_en": "Unoccupied Zoox robotaxi collides with a passenger car in Las Vegas",
+      "description_en": "On April 8, 2025, an unoccupied Zoox robotaxi collided with a passenger car in Las Vegas. The driving system wrongly predicted that the approaching car would keep moving and planned an evasive path - but the car stopped, and braking came too late. There were no injuries and only minor damage.",
+      "sources": [
+        "https://www.fox5vegas.com/2025/05/07/las-vegas-crash-involving-zoox-autonomous-vehicle-sparks-software-update/"
+      ]
+    },
+    {
+      "date": "2025-05-06",
+      "phase": "consequences",
+      "title": "Zoox setzt Betrieb aus und ruft 270 Robotaxis wegen Software-Defekt zurück",
+      "description": "Zoox setzte alle fahrerlosen Operationen aus und meldete am 6. Mai 2025 bei der US-Verkehrsbehörde NHTSA einen Rückruf von 270 Fahrzeugen. Der Defekt betraf die Trajektorien-Vorhersage: Das System konnte das Anhalten eines einscherenden Fahrzeugs falsch einschätzen. Nach einem Software-Patch nahm Zoox den Betrieb wenige Tage später wieder auf.",
+      "title_de": "Zoox setzt Betrieb aus und ruft 270 Robotaxis wegen Software-Defekt zurück",
+      "description_de": "Zoox setzte alle fahrerlosen Operationen aus und meldete am 6. Mai 2025 bei der US-Verkehrsbehörde NHTSA einen Rückruf von 270 Fahrzeugen. Der Defekt betraf die Trajektorien-Vorhersage: Das System konnte das Anhalten eines einscherenden Fahrzeugs falsch einschätzen. Nach einem Software-Patch nahm Zoox den Betrieb wenige Tage später wieder auf.",
+      "title_en": "Zoox pauses operations and recalls 270 robotaxis over a software defect",
+      "description_en": "Zoox paused all driverless operations and on May 6, 2025 filed a recall of 270 vehicles with the US road-safety regulator NHTSA. The defect concerned trajectory prediction: the system could misjudge a merging vehicle that came to a stop. After a software patch, Zoox resumed operations days later.",
+      "sources": [
+        "https://www.cnbc.com/2025/05/06/amazon-zoox-recall.html",
+        "https://lasvegassun.com/news/2025/may/09/zoox-resumes-las-vegas-robotaxi-testing-after-safe/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnbc.com/2025/05/06/amazon-zoox-recall.html",

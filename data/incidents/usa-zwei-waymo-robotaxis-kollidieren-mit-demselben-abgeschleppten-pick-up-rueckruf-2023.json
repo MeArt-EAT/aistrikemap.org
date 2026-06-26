@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz",
+    "Recht auf Sicherheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection",
+    "Right to safety"
+  ],
   "asm:actors": [
     {
       "name": "Waymo",
@@ -46,7 +61,74 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Waymo startet voll fahrerlosen Robotaxi-Betrieb in Phoenix",
+      "description": "Waymo nahm im Großraum Phoenix einen kommerziellen Fahrdienst auf, bei dem Fahrzeuge ohne menschlichen Sicherheitsfahrer auf öffentlichen Straßen unterwegs sind. Die Steuerung übernimmt der Waymo Driver, ein KI-System aus Kameras, Lidar und Radar, das die Bewegung anderer Verkehrsteilnehmer vorhersagt. Damit existierte erstmals eine Flotte autonomer Fahrzeuge, die ungewöhnliche Verkehrssituationen ohne sofortiges menschliches Eingreifen bewältigen musste.",
+      "title_de": "Waymo startet voll fahrerlosen Robotaxi-Betrieb in Phoenix",
+      "description_de": "Waymo nahm im Großraum Phoenix einen kommerziellen Fahrdienst auf, bei dem Fahrzeuge ohne menschlichen Sicherheitsfahrer auf öffentlichen Straßen unterwegs sind. Die Steuerung übernimmt der Waymo Driver, ein KI-System aus Kameras, Lidar und Radar, das die Bewegung anderer Verkehrsteilnehmer vorhersagt. Damit existierte erstmals eine Flotte autonomer Fahrzeuge, die ungewöhnliche Verkehrssituationen ohne sofortiges menschliches Eingreifen bewältigen musste.",
+      "title_en": "Waymo launches fully driverless robotaxi service in Phoenix",
+      "description_en": "Waymo began a commercial ride service in the greater Phoenix area with vehicles operating on public roads without a human safety driver. The vehicles are controlled by the Waymo Driver, an AI system combining cameras, lidar and radar that predicts the movement of other road users. For the first time a fleet of autonomous vehicles had to handle unusual traffic situations without immediate human intervention.",
+      "sources": [
+        "https://waymo.com/blog/2024/02/voluntary-recall-of-our-previous-software/"
+      ]
+    },
+    {
+      "date": "2023",
+      "phase": "doctrine",
+      "title": "Regulatorischer Rahmen erlaubt fahrerlose Robotaxis ohne Crash-Tests pro Software-Stand",
+      "description": "In Arizona und mehreren US-Bundesstaaten dürfen autonome Fahrzeuge kommerziell fahren, ohne dass jede Software-Version vorab behördlich freigegeben wird; Sicherheit wird primär durch Selbstzertifizierung der Hersteller und nachträgliche Meldepflichten an die NHTSA geregelt. Dieses Modell verlagert die Verantwortung für das Erkennen seltener Fehlerfälle weitgehend auf den Betreiber und ermöglichte den schnellen Flottenausbau.",
+      "title_de": "Regulatorischer Rahmen erlaubt fahrerlose Robotaxis ohne Crash-Tests pro Software-Stand",
+      "description_de": "In Arizona und mehreren US-Bundesstaaten dürfen autonome Fahrzeuge kommerziell fahren, ohne dass jede Software-Version vorab behördlich freigegeben wird; Sicherheit wird primär durch Selbstzertifizierung der Hersteller und nachträgliche Meldepflichten an die NHTSA geregelt. Dieses Modell verlagert die Verantwortung für das Erkennen seltener Fehlerfälle weitgehend auf den Betreiber und ermöglichte den schnellen Flottenausbau.",
+      "title_en": "Regulatory framework permits driverless robotaxis without per-version crash testing",
+      "description_en": "In Arizona and several US states, autonomous vehicles may operate commercially without each software version being pre-approved by a regulator; safety is governed primarily through manufacturer self-certification and after-the-fact reporting duties to the NHTSA. This model shifts much of the responsibility for detecting rare failure modes onto the operator and enabled rapid fleet expansion.",
+      "sources": [
+        "https://www.smartcitiesdive.com/news/waymo-recalls-software-nhtsa-tow-truck-phoenix-autonomous-vehicles/707923/"
+      ]
+    },
+    {
+      "date": "2023-12-11",
+      "phase": "event",
+      "title": "Zwei Waymo-Robotaxis kollidieren mit demselben abgeschleppten Pick-up",
+      "description": "Am 11. Dezember 2023 fuhr in Phoenix ein fahrerloses Waymo-Robotaxi in einen rückwärts gerichteten Pick-up, der unsachgemäß quer über zwei Fahrspuren abgeschleppt wurde. Wenige Minuten später stieß ein zweites Waymo-Fahrzeug gegen denselben Pick-up. Es gab keine Verletzten und nur geringe Schäden. Waymo führte die Vorfälle auf eine fehlerhafte Bewegungsvorhersage der Software bei der ungewöhnlichen Anhänger-Konfiguration zurück.",
+      "title_de": "Zwei Waymo-Robotaxis kollidieren mit demselben abgeschleppten Pick-up",
+      "description_de": "Am 11. Dezember 2023 fuhr in Phoenix ein fahrerloses Waymo-Robotaxi in einen rückwärts gerichteten Pick-up, der unsachgemäß quer über zwei Fahrspuren abgeschleppt wurde. Wenige Minuten später stieß ein zweites Waymo-Fahrzeug gegen denselben Pick-up. Es gab keine Verletzten und nur geringe Schäden. Waymo führte die Vorfälle auf eine fehlerhafte Bewegungsvorhersage der Software bei der ungewöhnlichen Anhänger-Konfiguration zurück.",
+      "title_en": "Two Waymo robotaxis crash into the same towed pick-up truck",
+      "description_en": "On 11 December 2023 in Phoenix a driverless Waymo robotaxi drove into a backwards-facing pick-up truck that was being towed improperly across two lanes. A few minutes later a second Waymo vehicle struck the same pick-up. There were no injuries and only minor damage. Waymo attributed the incidents to its software incorrectly predicting the towed vehicle's movements in the unusual configuration.",
+      "sources": [
+        "https://www.theregister.com/2024/02/14/waymo_files_recall_after_pheonix/"
+      ]
+    },
+    {
+      "date": "2023-12-20",
+      "phase": "consequences",
+      "title": "Waymo spielt Software-Update auf die gesamte Flotte ein",
+      "description": "Ab dem 20. Dezember 2023 verteilte Waymo ein Software-Update, das die fehlerhafte Bewegungsvorhersage für abgeschleppte Fahrzeuge korrigieren sollte; bis zum 12. Januar 2024 war die gesamte Flotte aktualisiert. Waymo hatte die NHTSA bereits am 15. Dezember 2023 über die Vorfälle informiert.",
+      "title_de": "Waymo spielt Software-Update auf die gesamte Flotte ein",
+      "description_de": "Ab dem 20. Dezember 2023 verteilte Waymo ein Software-Update, das die fehlerhafte Bewegungsvorhersage für abgeschleppte Fahrzeuge korrigieren sollte; bis zum 12. Januar 2024 war die gesamte Flotte aktualisiert. Waymo hatte die NHTSA bereits am 15. Dezember 2023 über die Vorfälle informiert.",
+      "title_en": "Waymo deploys a software update across its entire fleet",
+      "description_en": "From 20 December 2023 Waymo rolled out a software update intended to fix the faulty movement prediction for towed vehicles; the entire fleet was updated by 12 January 2024. Waymo had already informed the NHTSA of the incidents on 15 December 2023.",
+      "sources": [
+        "https://waymo.com/blog/2024/02/voluntary-recall-of-our-previous-software/"
+      ]
+    },
+    {
+      "date": "2024-02-13",
+      "phase": "consequences",
+      "title": "Erster offizieller Rückruf in Waymos Geschichte",
+      "description": "Im Februar 2024 reichte Waymo bei der NHTSA einen freiwilligen Rückruf für die zuvor installierte Software ein - der erste formelle Rückruf des Unternehmens. Der Fall wurde breit als Beleg dafür diskutiert, dass auch reife autonome Fahrsysteme an seltenen, ungewöhnlichen Verkehrssituationen scheitern können und dass nachträgliche Software-Rückrufe ein neues Instrument der Fahrzeugsicherheit sind.",
+      "title_de": "Erster offizieller Rückruf in Waymos Geschichte",
+      "description_de": "Im Februar 2024 reichte Waymo bei der NHTSA einen freiwilligen Rückruf für die zuvor installierte Software ein - der erste formelle Rückruf des Unternehmens. Der Fall wurde breit als Beleg dafür diskutiert, dass auch reife autonome Fahrsysteme an seltenen, ungewöhnlichen Verkehrssituationen scheitern können und dass nachträgliche Software-Rückrufe ein neues Instrument der Fahrzeugsicherheit sind.",
+      "title_en": "First formal recall in Waymo's history",
+      "description_en": "In February 2024 Waymo filed a voluntary recall with the NHTSA for the previously installed software - the company's first formal recall. The case was widely discussed as evidence that even mature autonomous driving systems can fail in rare, unusual traffic situations and that after-the-fact software recalls are a new instrument of vehicle safety.",
+      "sources": [
+        "https://www.cnbc.com/2024/02/13/waymo-issues-a-voluntary-recall-on-its-self-driving-vehicle-software.html",
+        "https://www.cnn.com/2024/02/14/business/waymo-recalls-software-after-two-self-driving-cars-hit-the-same-truck"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.cnbc.com/2024/02/13/waymo-issues-a-voluntary-recall-on-its-self-driving-vehicle-software.html",
