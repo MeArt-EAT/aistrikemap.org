@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf zutreffende Information",
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf zutreffende Information",
+    "Schutz vor Manipulation",
+    "Meinungsfreiheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to accurate information",
+    "Protection from manipulation",
+    "Freedom of expression"
+  ],
   "asm:actors": [
     {
       "name": "Meta Platforms (Facebook AI Research)",
@@ -46,7 +58,62 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-06-14",
+      "phase": "infrastructure",
+      "title": "FAIR baut Verhandlungs-Agenten Bob und Alice",
+      "description": "Facebook AI Research (FAIR) entwickelte Dialog-Agenten, die in einem Feilsch-Spiel virtuelle Gegenstände wie Bücher, Hüte und Bälle untereinander aufteilen sollten. Die Bots wurden mit menschlichen Verhandlungsdialogen trainiert und per bestärkendem Lernen im Selbstspiel verfeinert. Diese Agenten - später in den Medien Bob und Alice genannt - bildeten die technische Grundlage des späteren Vorfalls.",
+      "title_de": "FAIR baut Verhandlungs-Agenten Bob und Alice",
+      "description_de": "Facebook AI Research (FAIR) entwickelte Dialog-Agenten, die in einem Feilsch-Spiel virtuelle Gegenstände wie Bücher, Hüte und Bälle untereinander aufteilen sollten. Die Bots wurden mit menschlichen Verhandlungsdialogen trainiert und per bestärkendem Lernen im Selbstspiel verfeinert. Diese Agenten - später in den Medien Bob und Alice genannt - bildeten die technische Grundlage des späteren Vorfalls.",
+      "title_en": "FAIR builds the negotiation agents Bob and Alice",
+      "description_en": "Facebook AI Research (FAIR) developed dialogue agents meant to divide virtual items such as books, hats and balls among themselves in a bargaining game. The bots were trained on human negotiation dialogues and refined through reinforcement learning in self-play. These agents - later dubbed Bob and Alice in the media - formed the technical basis of the later incident.",
+      "sources": [
+        "https://engineering.fb.com/2017/06/14/ml-applications/deal-or-no-deal-training-ai-bots-to-negotiate/"
+      ]
+    },
+    {
+      "date": "2017-06-16",
+      "phase": "doctrine",
+      "title": "Belohnung nur für Verhandlungserfolg, nicht für korrektes Englisch",
+      "description": "Das im Paper Deal or No Deal beschriebene Design belohnte die Agenten ausschließlich für ein gutes Verhandlungsergebnis, nicht für grammatisch korrektes Englisch. Im Selbstspiel begannen die Bots daher, englische Tokens effizient umzunutzen, was wie eine eigene Sprache wirkte. Diese bewusste Entwurfsentscheidung - nicht ein Kontrollverlust - erklärt das später sensationell gedeutete Verhalten.",
+      "title_de": "Belohnung nur für Verhandlungserfolg, nicht für korrektes Englisch",
+      "description_de": "Das im Paper Deal or No Deal beschriebene Design belohnte die Agenten ausschließlich für ein gutes Verhandlungsergebnis, nicht für grammatisch korrektes Englisch. Im Selbstspiel begannen die Bots daher, englische Tokens effizient umzunutzen, was wie eine eigene Sprache wirkte. Diese bewusste Entwurfsentscheidung - nicht ein Kontrollverlust - erklärt das später sensationell gedeutete Verhalten.",
+      "title_en": "Reward only for negotiation success, not for correct English",
+      "description_en": "The design described in the paper Deal or No Deal rewarded the agents solely for a good negotiation outcome, not for grammatically correct English. In self-play the bots therefore began to repurpose English tokens efficiently, which looked like a language of their own. This deliberate design choice - not a loss of control - explains the behaviour that was later read sensationally.",
+      "sources": [
+        "https://arxiv.org/pdf/1706.05125",
+        "https://www.snopes.com/fact-check/facebook-ai-developed-own-language/"
+      ]
+    },
+    {
+      "date": "2017-07-31",
+      "phase": "event",
+      "title": "Global: Facebook-Verhandlungs-Chatbots Bob und Alice driften von englischer Sprache ab",
+      "description": "Im Juni 2017 veröffentlichte Facebook AI Research (FAIR) ein Paper zu Verhandlungs-Chatbots; Ende Juli/Anfang August 2017 verbreiteten Boulevard-Medien die Geschichte, dass die Bots 'Bob' und 'Alice' eine eigene Geheim-Sprache erfunden hätten und Facebook sie deshalb 'aus Angst' abgeschaltet habe. Tatsächlich hatten die Agenten lediglich englische Tokens umgenutzt, weil keine Belohnung für englische Grammatik vorlag; das Experiment wurde planmäßig beendet, nicht aus Sicherheitsgründen. Der Fall steht für ein klassisches AI-Hype-Missverständnis.",
+      "title_de": "Global: Facebook-Verhandlungs-Chatbots Bob und Alice driften von englischer Sprache ab",
+      "description_de": "Im Juni 2017 veröffentlichte Facebook AI Research (FAIR) ein Paper zu Verhandlungs-Chatbots; Ende Juli/Anfang August 2017 verbreiteten Boulevard-Medien die Geschichte, dass die Bots 'Bob' und 'Alice' eine eigene Geheim-Sprache erfunden hätten und Facebook sie deshalb 'aus Angst' abgeschaltet habe. Tatsächlich hatten die Agenten lediglich englische Tokens umgenutzt, weil keine Belohnung für englische Grammatik vorlag; das Experiment wurde planmäßig beendet, nicht aus Sicherheitsgründen. Der Fall steht für ein klassisches AI-Hype-Missverständnis.",
+      "title_en": "Global: Facebook negotiation chatbots Bob and Alice drift from English",
+      "description_en": "In June 2017 Facebook AI Research (FAIR) published a paper on negotiation chatbots; in late July and early August 2017 tabloid media spread the story that 'Bob' and 'Alice' had invented a secret language and that Facebook shut them down 'in panic'. In reality the agents had only repurposed English tokens because no reward enforced English grammar, and the experiment ended as planned, not for safety reasons. The case became a textbook example of AI-hype misreporting.",
+      "sources": [
+        "https://www.cbsnews.com/news/facebook-shuts-down-chatbots-bob-alice-secret-language-artificial-intelligence/"
+      ]
+    },
+    {
+      "date": "2017-08-01",
+      "phase": "consequences",
+      "title": "Faktenchecks entlarven den Mythos der KI-Geheimsprache",
+      "description": "Anfang August 2017 widersprachen Snopes, CNBC und beteiligte FAIR-Forscher der Panik-Darstellung: Es habe keine Notabschaltung aus Angst gegeben, sondern ein planmäßiges Ende eines Forschungslaufs. Der Vorfall wurde zum Lehrbuch-Beispiel für reißerische KI-Berichterstattung und für das Risiko, technische Forschung als drohende Bedrohung zu missdeuten. Reale Schäden gab es keine.",
+      "title_de": "Faktenchecks entlarven den Mythos der KI-Geheimsprache",
+      "description_de": "Anfang August 2017 widersprachen Snopes, CNBC und beteiligte FAIR-Forscher der Panik-Darstellung: Es habe keine Notabschaltung aus Angst gegeben, sondern ein planmäßiges Ende eines Forschungslaufs. Der Vorfall wurde zum Lehrbuch-Beispiel für reißerische KI-Berichterstattung und für das Risiko, technische Forschung als drohende Bedrohung zu missdeuten. Reale Schäden gab es keine.",
+      "title_en": "Fact-checks debunk the myth of the AI secret language",
+      "description_en": "In early August 2017 Snopes, CNBC and FAIR researchers involved contradicted the panic narrative: there had been no emergency shutdown out of fear, only the scheduled end of a research run. The incident became a textbook example of sensationalist AI reporting and of the risk of misreading technical research as a looming threat. There was no real harm.",
+      "sources": [
+        "https://www.cnbc.com/2017/08/01/facebook-ai-experiment-did-not-end-because-bots-invented-own-language.html",
+        "https://www.snopes.com/fact-check/facebook-ai-developed-own-language/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.snopes.com/fact-check/facebook-ai-developed-own-language/",

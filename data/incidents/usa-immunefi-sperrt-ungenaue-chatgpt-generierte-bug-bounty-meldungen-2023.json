@@ -25,9 +25,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Recht auf Sicherheit",
+    "Schutz vor Manipulation",
+    "Eigentumsschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Recht auf Sicherheit",
+    "Schutz vor Manipulation",
+    "Eigentumsschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Right to security",
+    "Protection from manipulation",
+    "Protection of property"
+  ],
   "asm:actors": [
     {
       "name": "Immunefi",
@@ -48,7 +63,60 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-12",
+      "phase": "infrastructure",
+      "title": "Immunefi startet als offene Web3-Bug-Bounty-Plattform",
+      "description": "Immunefi wurde im Dezember 2020 von Mitchell Amador und weiteren Gründern als crowdgestützte Sicherheitsplattform für Web3 gegründet. Sie vermittelt Belohnungen für gemeldete Schwachstellen in Smart Contracts und dezentralen Anwendungen. Das offene Einreichungsmodell mit hohen Bounties zieht viele Teilnehmer an - und damit auch Einreichungen geringer Qualität.",
+      "title_de": "Immunefi startet als offene Web3-Bug-Bounty-Plattform",
+      "description_de": "Immunefi wurde im Dezember 2020 von Mitchell Amador und weiteren Gründern als crowdgestützte Sicherheitsplattform für Web3 gegründet. Sie vermittelt Belohnungen für gemeldete Schwachstellen in Smart Contracts und dezentralen Anwendungen. Das offene Einreichungsmodell mit hohen Bounties zieht viele Teilnehmer an - und damit auch Einreichungen geringer Qualität.",
+      "title_en": "Immunefi launches as an open Web3 bug-bounty platform",
+      "description_en": "Immunefi was founded in December 2020 by Mitchell Amador and co-founders as a crowdsourced security platform for Web3. It brokers rewards for reported vulnerabilities in smart contracts and decentralised applications. The open submission model with high bounties attracts many participants - and with them low-quality submissions.",
+      "sources": [
+        "https://immunefi.com/about/"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "phase": "doctrine",
+      "title": "ChatGPT macht plausibel klingende Textgenerierung für alle verfügbar",
+      "description": "Mit der öffentlichen Freigabe von ChatGPT im November 2022 konnte jeder flüssig klingende, technisch wirkende Texte auf Knopfdruck erzeugen. Personen ohne Sicherheitswissen sahen darin eine Abkürzung zum Bug-Bounty-Geld. Das Modell erzeugt jedoch oft fehlerhafte oder erfundene technische Details, ohne echte Schwachstellen zu finden.",
+      "title_de": "ChatGPT macht plausibel klingende Textgenerierung für alle verfügbar",
+      "description_de": "Mit der öffentlichen Freigabe von ChatGPT im November 2022 konnte jeder flüssig klingende, technisch wirkende Texte auf Knopfdruck erzeugen. Personen ohne Sicherheitswissen sahen darin eine Abkürzung zum Bug-Bounty-Geld. Das Modell erzeugt jedoch oft fehlerhafte oder erfundene technische Details, ohne echte Schwachstellen zu finden.",
+      "title_en": "ChatGPT makes plausible-sounding text generation available to everyone",
+      "description_en": "With the public release of ChatGPT in November 2022, anyone could produce fluent, technical-looking text at the push of a button. People without security knowledge saw a shortcut to bug-bounty money. However, the model often produces faulty or invented technical details without finding any real vulnerabilities.",
+      "sources": [
+        "https://www.coindesk.com/tech/2023/01/17/crypto-whitehat-platform-immunefi-banned-15-chatgpt-generated-bug-reports-heres-why"
+      ]
+    },
+    {
+      "date": "2023-01",
+      "phase": "event",
+      "title": "Global: Immunefi sperrt ungenaue, ChatGPT-generierte Bug-Bounty-Meldungen",
+      "description": "Im Januar 2023 sperrte Immunefi zunächst 15 Nutzer, die mit ChatGPT generierte Schwachstellen-Meldungen einreichten. Die Berichte klangen plausibel, beschrieben aber keine realen Sicherheitslücken. Immunefi-CEO Mitchell Amador bezeichnete die Meldungen als unsinnig und die Technologie als ungeeignet zur Schwachstellen-Erkennung.",
+      "title_de": "Global: Immunefi sperrt ungenaue, ChatGPT-generierte Bug-Bounty-Meldungen",
+      "description_de": "Im Januar 2023 sperrte Immunefi zunächst 15 Nutzer, die mit ChatGPT generierte Schwachstellen-Meldungen einreichten. Die Berichte klangen plausibel, beschrieben aber keine realen Sicherheitslücken. Immunefi-CEO Mitchell Amador bezeichnete die Meldungen als unsinnig und die Technologie als ungeeignet zur Schwachstellen-Erkennung.",
+      "title_en": "Global: Immunefi bans inaccurate ChatGPT-generated bug bounty reports",
+      "description_en": "In January 2023 Immunefi initially banned 15 users who submitted ChatGPT-generated vulnerability reports. The reports sounded plausible but described no real security flaws. Immunefi CEO Mitchell Amador called the reports nonsensical and the technology unfit for vulnerability discovery.",
+      "sources": [
+        "https://www.coindesk.com/tech/2023/01/17/crypto-whitehat-platform-immunefi-banned-15-chatgpt-generated-bug-reports-heres-why"
+      ]
+    },
+    {
+      "date": "2023-07-26",
+      "phase": "consequences",
+      "title": "Rund 21 Prozent aller Konto-Sperren entfallen auf KI-Spam",
+      "description": "Bis Juli 2023 entfielen laut Immunefi rund 21 Prozent aller Konto-Sperren auf ChatGPT-generierte Meldungen - keine einzige davon deckte eine echte Sicherheitslücke auf. Der Fall zeigt, wie KI-Werkzeuge offene Sicherheitsprogramme mit wertlosen Eingaben fluten und knappe Prüfkapazität binden. Immunefi verschärfte daraufhin seine Regeln gegen KI-generierte Berichte.",
+      "title_de": "Rund 21 Prozent aller Konto-Sperren entfallen auf KI-Spam",
+      "description_de": "Bis Juli 2023 entfielen laut Immunefi rund 21 Prozent aller Konto-Sperren auf ChatGPT-generierte Meldungen - keine einzige davon deckte eine echte Sicherheitslücke auf. Der Fall zeigt, wie KI-Werkzeuge offene Sicherheitsprogramme mit wertlosen Eingaben fluten und knappe Prüfkapazität binden. Immunefi verschärfte daraufhin seine Regeln gegen KI-generierte Berichte.",
+      "title_en": "Around 21 percent of all account bans are due to AI spam",
+      "description_en": "By July 2023, according to Immunefi, around 21 percent of all account bans were due to ChatGPT-generated reports - not one of which uncovered a genuine security flaw. The case shows how AI tools flood open security programmes with worthless submissions and tie up scarce review capacity. Immunefi subsequently tightened its rules against AI-generated reports.",
+      "sources": [
+        "https://www.theblock.co/post/240758/immunefi-chatgpt-generated-web3-bug-bounty-reports"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.coindesk.com/tech/2023/01/17/crypto-whitehat-platform-immunefi-banned-15-chatgpt-generated-bug-reports-heres-why",

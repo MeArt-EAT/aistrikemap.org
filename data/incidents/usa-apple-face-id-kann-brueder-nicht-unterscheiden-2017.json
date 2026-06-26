@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "facial-recognition"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Datenschutz",
+    "Privatsphäre",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Data protection",
+    "Privacy",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Apple",
@@ -41,7 +53,61 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-09-12",
+      "phase": "infrastructure",
+      "title": "Apple stellt iPhone X mit Face ID und A11-Neural-Engine vor",
+      "description": "Am 12. September 2017 präsentierte Apple das iPhone X mit Face ID als Ersatz für den Fingerabdrucksensor. Das TrueDepth-Kamerasystem projiziert über 30.000 Infrarotpunkte und erstellt ein mathematisches Gesichtsmodell, das von der A11-Bionic-Neural-Engine verarbeitet wird. Damit wurde Gesichtserkennung zum Standard-Entsperrmechanismus eines Massengeräts.",
+      "title_de": "Apple stellt iPhone X mit Face ID und A11-Neural-Engine vor",
+      "description_de": "Am 12. September 2017 präsentierte Apple das iPhone X mit Face ID als Ersatz für den Fingerabdrucksensor. Das TrueDepth-Kamerasystem projiziert über 30.000 Infrarotpunkte und erstellt ein mathematisches Gesichtsmodell, das von der A11-Bionic-Neural-Engine verarbeitet wird. Damit wurde Gesichtserkennung zum Standard-Entsperrmechanismus eines Massengeräts.",
+      "title_en": "Apple unveils iPhone X with Face ID and the A11 Neural Engine",
+      "description_en": "On 12 September 2017 Apple introduced the iPhone X with Face ID as a replacement for the fingerprint sensor. The TrueDepth camera system projects more than 30,000 infrared dots and builds a mathematical model of the face, processed by the A11 Bionic Neural Engine. This made face recognition the default unlock method of a mass-market device.",
+      "sources": [
+        "https://www.apple.com/newsroom/2017/09/the-future-is-here-iphone-x/"
+      ]
+    },
+    {
+      "date": "2017-09-13",
+      "phase": "doctrine",
+      "title": "Apple räumt höhere Fehlerquote bei Zwillingen und Geschwistern ein",
+      "description": "Bereits zur Vorstellung beziffert Apple die Falsch-Akzeptanzrate von Face ID auf etwa 1 zu 1.000.000, weist aber ausdrücklich darauf hin, dass diese bei eineiigen Zwillingen, ähnlich aussehenden Geschwistern und Kindern unter 13 Jahren deutlich höher liegt. Marketingchef Phil Schiller empfiehlt diesen Gruppen, weiterhin einen Passcode zu nutzen. Die Schwäche ist damit von Anfang an dokumentiert.",
+      "title_de": "Apple räumt höhere Fehlerquote bei Zwillingen und Geschwistern ein",
+      "description_de": "Bereits zur Vorstellung beziffert Apple die Falsch-Akzeptanzrate von Face ID auf etwa 1 zu 1.000.000, weist aber ausdrücklich darauf hin, dass diese bei eineiigen Zwillingen, ähnlich aussehenden Geschwistern und Kindern unter 13 Jahren deutlich höher liegt. Marketingchef Phil Schiller empfiehlt diesen Gruppen, weiterhin einen Passcode zu nutzen. Die Schwäche ist damit von Anfang an dokumentiert.",
+      "title_en": "Apple acknowledges higher error rate for twins and siblings",
+      "description_en": "At launch Apple put the false-acceptance rate of Face ID at roughly 1 in 1,000,000, but explicitly noted that it is markedly higher for identical twins, similar-looking siblings and children under 13. Marketing chief Phil Schiller advised those groups to keep using a passcode. The weakness was therefore documented from the outset.",
+      "sources": [
+        "https://apple.slashdot.org/story/17/09/28/2038255/apple-recommends-children-under-13-twins-and-siblings-do-not-use-face-id-on-iphone-x"
+      ]
+    },
+    {
+      "date": "2017-11-04",
+      "phase": "event",
+      "title": "USA: Apple Face ID kann Brüder nicht unterscheiden",
+      "description": "Anfang November 2017 verbreiteten sich Reddit- und YouTube-Videos, in denen Geschwister demonstrierten, dass Apples Face ID des neuen iPhone X sie nicht zuverlässig unterscheiden konnte, selbst wenn sie keine eineiigen Zwillinge waren. Apple hatte vorab bestätigt, dass die Falsch-Akzeptanzrate bei Geschwistern und Zwillingen höher ist und empfahl in solchen Fällen den klassischen Passcode. Der Fall blieb auf Demonstrationen einzelner Nutzer beschränkt, ohne dokumentierten Schaden.",
+      "title_de": "USA: Apple Face ID kann Brüder nicht unterscheiden",
+      "description_de": "Anfang November 2017 verbreiteten sich Reddit- und YouTube-Videos, in denen Geschwister demonstrierten, dass Apples Face ID des neuen iPhone X sie nicht zuverlässig unterscheiden konnte, selbst wenn sie keine eineiigen Zwillinge waren. Apple hatte vorab bestätigt, dass die Falsch-Akzeptanzrate bei Geschwistern und Zwillingen höher ist und empfahl in solchen Fällen den klassischen Passcode. Der Fall blieb auf Demonstrationen einzelner Nutzer beschränkt, ohne dokumentierten Schaden.",
+      "title_en": "USA: Apple Face ID fails to distinguish siblings",
+      "description_en": "In early November 2017 Reddit and YouTube videos circulated of siblings showing that Apple's Face ID on the new iPhone X could not reliably tell them apart, even when they were not identical twins. Apple had publicly acknowledged that the false-acceptance rate is higher for twins and siblings and recommended using a passcode in those cases. The incident stayed at the level of user demos with no documented downstream harm.",
+      "sources": [
+        "https://9to5mac.com/2017/11/04/face-id-siblings-fail/",
+        "https://www.macrumors.com/2017/11/04/face-id-brothers-video/"
+      ]
+    },
+    {
+      "date": "2017-11-05",
+      "phase": "consequences",
+      "title": "Debatte über Grenzen biometrischer Gesichtserkennung",
+      "description": "Die Videos verstärkten die öffentliche Diskussion über die Zuverlässigkeit biometrischer Authentifizierung im Alltag. Da Apple die Einschränkung bereits eingeräumt hatte, blieben rechtliche oder regulatorische Folgen aus; der Fall diente vor allem als anschauliches Beispiel für die Grenzen von Gesichtserkennung und die fortbestehende Bedeutung des Passcodes als Rückfallebene.",
+      "title_de": "Debatte über Grenzen biometrischer Gesichtserkennung",
+      "description_de": "Die Videos verstärkten die öffentliche Diskussion über die Zuverlässigkeit biometrischer Authentifizierung im Alltag. Da Apple die Einschränkung bereits eingeräumt hatte, blieben rechtliche oder regulatorische Folgen aus; der Fall diente vor allem als anschauliches Beispiel für die Grenzen von Gesichtserkennung und die fortbestehende Bedeutung des Passcodes als Rückfallebene.",
+      "title_en": "Debate over the limits of biometric face recognition",
+      "description_en": "The videos amplified public discussion about the reliability of biometric authentication in everyday use. Since Apple had already acknowledged the limitation, there were no legal or regulatory consequences; the case mainly served as a vivid illustration of the limits of face recognition and the continued importance of the passcode as a fallback.",
+      "sources": [
+        "https://9to5mac.com/2017/10/31/face-id-twins/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://9to5mac.com/2017/11/04/face-id-siblings-fail/",

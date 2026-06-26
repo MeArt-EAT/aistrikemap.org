@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Würde des Menschen",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Human dignity",
+    "Protection from discrimination"
+  ],
   "asm:actors": [
     {
       "name": "Stability AI",
@@ -41,7 +53,60 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2022-11",
+      "phase": "infrastructure",
+      "title": "Stable Diffusion 2.0 zeigt erstmals Anatomie-Probleme nach Datenfilterung",
+      "description": "Bereits mit Stable Diffusion 2.0 (Ende 2022) filterte Stability AI nackte und sexuell anzügliche Inhalte aus den Trainingsdaten heraus. Nutzer berichteten daraufhin, dass das Modell Menschen deutlich schlechter darstellte als der Vorgänger. Dies zeigte früh, dass aggressives Filtern von Körperdarstellungen die anatomische Lernfähigkeit beeinträchtigen kann.",
+      "title_de": "Stable Diffusion 2.0 zeigt erstmals Anatomie-Probleme nach Datenfilterung",
+      "description_de": "Bereits mit Stable Diffusion 2.0 (Ende 2022) filterte Stability AI nackte und sexuell anzügliche Inhalte aus den Trainingsdaten heraus. Nutzer berichteten daraufhin, dass das Modell Menschen deutlich schlechter darstellte als der Vorgänger. Dies zeigte früh, dass aggressives Filtern von Körperdarstellungen die anatomische Lernfähigkeit beeinträchtigen kann.",
+      "title_en": "Stable Diffusion 2.0 first shows anatomy problems after data filtering",
+      "description_en": "Already with Stable Diffusion 2.0 (late 2022), Stability AI filtered nude and sexually suggestive content out of the training data. Users then reported that the model rendered people noticeably worse than its predecessor. This was an early sign that aggressively filtering body imagery can damage the model's ability to learn anatomy.",
+      "sources": [
+        "https://slashdot.org/story/24/06/12/2047240/stable-diffusion-3-mangles-human-bodies-due-to-nudity-filters"
+      ]
+    },
+    {
+      "date": "2024-06-12",
+      "phase": "doctrine",
+      "title": "Stability AI veröffentlicht SD3 Medium mit stark gefilterten Trainingsdaten",
+      "description": "Am 12. Juni 2024 stellte Stability AI die Open-Weight-Variante Stable Diffusion 3 Medium unter einer Community-Lizenz bereit. Um rechtliche und Reputationsrisiken durch NSFW-Inhalte zu vermeiden, hatte das Unternehmen explizite und sensible Darstellungen aggressiv aus dem Trainingsdatensatz entfernt. Diese Sicherheits- und Geschäftsentscheidung prägte, was das Modell über menschliche Körper lernen konnte.",
+      "title_de": "Stability AI veröffentlicht SD3 Medium mit stark gefilterten Trainingsdaten",
+      "description_de": "Am 12. Juni 2024 stellte Stability AI die Open-Weight-Variante Stable Diffusion 3 Medium unter einer Community-Lizenz bereit. Um rechtliche und Reputationsrisiken durch NSFW-Inhalte zu vermeiden, hatte das Unternehmen explizite und sensible Darstellungen aggressiv aus dem Trainingsdatensatz entfernt. Diese Sicherheits- und Geschäftsentscheidung prägte, was das Modell über menschliche Körper lernen konnte.",
+      "title_en": "Stability AI releases SD3 Medium with heavily filtered training data",
+      "description_en": "On 12 June 2024, Stability AI released the open-weight Stable Diffusion 3 Medium under a community license. To avoid legal and reputational risk from NSFW content, the company had aggressively removed explicit and sensitive imagery from the training dataset. This safety and business decision shaped what the model could learn about human bodies.",
+      "sources": [
+        "https://stability.ai/news/stable-diffusion-3-medium"
+      ]
+    },
+    {
+      "date": "2024-06-13",
+      "phase": "event",
+      "title": "SD3 Medium erzeugt grotesk verzerrte menschliche Körper",
+      "description": "Kurz nach der Veröffentlichung dokumentierten Nutzer, dass SD3 Medium bei Generierungen mit Menschen auffällig verformte Körper produzierte, vor allem bei Händen, Füßen und in liegenden Posen. Forscher:innen und die Community führten den Rückschritt darauf zurück, dass das aggressive Herausfiltern nackter Körper aus den Trainingsdaten zugleich das Erlernen korrekter Anatomie beschädigt hatte.",
+      "title_de": "SD3 Medium erzeugt grotesk verzerrte menschliche Körper",
+      "description_de": "Kurz nach der Veröffentlichung dokumentierten Nutzer, dass SD3 Medium bei Generierungen mit Menschen auffällig verformte Körper produzierte, vor allem bei Händen, Füßen und in liegenden Posen. Forscher:innen und die Community führten den Rückschritt darauf zurück, dass das aggressive Herausfiltern nackter Körper aus den Trainingsdaten zugleich das Erlernen korrekter Anatomie beschädigt hatte.",
+      "title_en": "SD3 Medium generates grotesquely distorted human bodies",
+      "description_en": "Shortly after release, users documented that SD3 Medium produced severely deformed bodies when rendering people, especially hands, feet and reclining poses. Researchers and the community attributed the regression to the aggressive removal of nude imagery from training data, which had simultaneously damaged the model's ability to learn correct anatomy.",
+      "sources": [
+        "https://futurism.com/the-byte/new-stable-diffusion-is-mangled"
+      ]
+    },
+    {
+      "date": "2024-10",
+      "phase": "consequences",
+      "title": "Stability AI bessert mit Stable Diffusion 3.5 nach",
+      "description": "Der Fall wurde zum vielbeachteten Beispiel dafür, wie Sicherheitsfilter unbeabsichtigt die Bildqualität zerstören können, und nährte Spott über die Open-Source-KI-Bildgenerierung. Stability AI überarbeitete zudem die umstrittene Lizenz und veröffentlichte im Oktober 2024 die Modellfamilie Stable Diffusion 3.5, die die Darstellung menschlicher Anatomie deutlich verbesserte.",
+      "title_de": "Stability AI bessert mit Stable Diffusion 3.5 nach",
+      "description_de": "Der Fall wurde zum vielbeachteten Beispiel dafür, wie Sicherheitsfilter unbeabsichtigt die Bildqualität zerstören können, und nährte Spott über die Open-Source-KI-Bildgenerierung. Stability AI überarbeitete zudem die umstrittene Lizenz und veröffentlichte im Oktober 2024 die Modellfamilie Stable Diffusion 3.5, die die Darstellung menschlicher Anatomie deutlich verbesserte.",
+      "title_en": "Stability AI follows up with Stable Diffusion 3.5",
+      "description_en": "The case became a widely cited example of how safety filters can inadvertently destroy image quality, fueling ridicule of open-source AI image generation. Stability AI also revised its controversial license and, in October 2024, released the Stable Diffusion 3.5 model family, which markedly improved the rendering of human anatomy.",
+      "sources": [
+        "https://siliconangle.com/2024/10/22/stable-ai-releases-next-gen-open-source-stable-diffusion-3-5-text-image-ai-model-family/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://futurism.com/the-byte/new-stable-diffusion-is-mangled",

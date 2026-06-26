@@ -8,8 +8,8 @@
   "name": "USA: Jay-Zs Roc Nation lässt KI-Stimm-Deepfakes von YouTube entfernen",
   "name_de": "USA: Jay-Zs Roc Nation lässt KI-Stimm-Deepfakes von YouTube entfernen",
   "name_en": "USA: Jay-Z's Roc Nation has AI voice deepfakes removed from YouTube",
-  "description": "Im April 2020 reichte Jay-Zs Firma Roc Nation Urheberrechts-Beschwerden gegen YouTube-Videos des Kanals 'Vocal Synthesis' ein, die per KI erzeugte Imitationen von Jay-Zs Stimme zeigten - etwa wie er Hamlet rezitiert. Die ungewohnliche Begründung lautete, die Inhalte nutzten 'rechtswidrig eine KI, um die Stimme unseres Mandanten zu imitieren'. Die Videos wurden zeitweise entfernt, dann aber wieder freigeschaltet. Der Fall warf frühe rechtliche Fragen zu KI-Stimmklonen auf.",
-  "description_de": "Im April 2020 reichte Jay-Zs Firma Roc Nation Urheberrechts-Beschwerden gegen YouTube-Videos des Kanals 'Vocal Synthesis' ein, die per KI erzeugte Imitationen von Jay-Zs Stimme zeigten - etwa wie er Hamlet rezitiert. Die ungewohnliche Begründung lautete, die Inhalte nutzten 'rechtswidrig eine KI, um die Stimme unseres Mandanten zu imitieren'. Die Videos wurden zeitweise entfernt, dann aber wieder freigeschaltet. Der Fall warf frühe rechtliche Fragen zu KI-Stimmklonen auf.",
+  "description": "Im April 2020 reichte Jay-Zs Firma Roc Nation Urheberrechts-Beschwerden gegen YouTube-Videos des Kanals 'Vocal Synthesis' ein, die per KI erzeugte Imitationen von Jay-Zs Stimme zeigten - etwa wie er Hamlet rezitiert. Die ungewöhnliche Begründung lautete, die Inhalte nutzten 'rechtswidrig eine KI, um die Stimme unseres Mandanten zu imitieren'. Die Videos wurden zeitweise entfernt, dann aber wieder freigeschaltet. Der Fall warf frühe rechtliche Fragen zu KI-Stimmklonen auf.",
+  "description_de": "Im April 2020 reichte Jay-Zs Firma Roc Nation Urheberrechts-Beschwerden gegen YouTube-Videos des Kanals 'Vocal Synthesis' ein, die per KI erzeugte Imitationen von Jay-Zs Stimme zeigten - etwa wie er Hamlet rezitiert. Die ungewöhnliche Begründung lautete, die Inhalte nutzten 'rechtswidrig eine KI, um die Stimme unseres Mandanten zu imitieren'. Die Videos wurden zeitweise entfernt, dann aber wieder freigeschaltet. Der Fall warf frühe rechtliche Fragen zu KI-Stimmklonen auf.",
   "description_en": "In April 2020, Jay-Z's company Roc Nation filed copyright complaints against YouTube videos by the channel 'Vocal Synthesis' that featured AI-generated impersonations of Jay-Z's voice - for example reciting Hamlet. The unusual justification was that the content 'unlawfully uses an AI to impersonate our client's voice'. The videos were temporarily removed, then reinstated. The case raised early legal questions about AI voice cloning.",
   "startDate": "2020-04",
   "location": {
@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "deepfakes"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Meinungsfreiheit",
+    "Recht am eigenen Bild und an der eigenen Stimme",
+    "Schutz vor Manipulation",
+    "Geistiges Eigentum"
+  ],
+  "asm:affectedRights_de": [
+    "Meinungsfreiheit",
+    "Recht am eigenen Bild und an der eigenen Stimme",
+    "Schutz vor Manipulation",
+    "Geistiges Eigentum"
+  ],
+  "asm:affectedRights_en": [
+    "Freedom of expression",
+    "Right to one's own image and voice",
+    "Protection from manipulation",
+    "Intellectual property"
+  ],
   "asm:actors": [
     {
       "name": "Roc Nation (on behalf of Jay-Z)",
@@ -51,7 +66,60 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 2,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2017-12",
+      "phase": "infrastructure",
+      "title": "Google veröffentlicht Tacotron 2 - neuronale Sprachsynthese aus Text",
+      "description": "Im Dezember 2017 stellte Google die Sprachsynthese-Architektur Tacotron 2 vor, die aus Text und Sprachbeispielen sehr natürlich klingende Stimmen erzeugt. Das Verfahren erreichte eine Qualität nahe an professionellen Aufnahmen und benötigte keine aufwendigen linguistischen Merkmale mehr. Damit konnten Stimmen erstmals breit zugänglich aus reinen Audio-Korpora nachgebildet werden.",
+      "title_de": "Google veröffentlicht Tacotron 2 - neuronale Sprachsynthese aus Text",
+      "description_de": "Im Dezember 2017 stellte Google die Sprachsynthese-Architektur Tacotron 2 vor, die aus Text und Sprachbeispielen sehr natürlich klingende Stimmen erzeugt. Das Verfahren erreichte eine Qualität nahe an professionellen Aufnahmen und benötigte keine aufwendigen linguistischen Merkmale mehr. Damit konnten Stimmen erstmals breit zugänglich aus reinen Audio-Korpora nachgebildet werden.",
+      "title_en": "Google releases Tacotron 2 - neural speech synthesis from text",
+      "description_en": "In December 2017 Google introduced the speech-synthesis architecture Tacotron 2, which generates highly natural-sounding voices from text and speech examples. The method reached quality close to professional recordings and no longer required complex linguistic features. This made it broadly possible to recreate voices from raw audio corpora.",
+      "sources": [
+        "https://blog.research.google/2017/12/tacotron-2-generating-human-like-speech.html"
+      ]
+    },
+    {
+      "date": "2019",
+      "phase": "doctrine",
+      "title": "Kanal 'Vocal Synthesis' lässt Prominente per KI fremde Texte sprechen",
+      "description": "Der YouTube-Kanal 'Vocal Synthesis' trainierte Tacotron-2-Modelle auf öffentlich verfügbaren Promi-Stimmen und ließ diese als Parodie fremde Texte rezitieren - etwa Jay-Z mit Shakespeares Hamlet-Monolog oder einem Bibelausschnitt. Jedes Video war klar als Sprachsynthese zur Unterhaltung gekennzeichnet, ohne böswillige Absicht. Solche Stimmklon-Parodien verbreiteten sich als Internet-Genre.",
+      "title_de": "Kanal 'Vocal Synthesis' lässt Prominente per KI fremde Texte sprechen",
+      "description_de": "Der YouTube-Kanal 'Vocal Synthesis' trainierte Tacotron-2-Modelle auf öffentlich verfügbaren Promi-Stimmen und ließ diese als Parodie fremde Texte rezitieren - etwa Jay-Z mit Shakespeares Hamlet-Monolog oder einem Bibelausschnitt. Jedes Video war klar als Sprachsynthese zur Unterhaltung gekennzeichnet, ohne böswillige Absicht. Solche Stimmklon-Parodien verbreiteten sich als Internet-Genre.",
+      "title_en": "Channel 'Vocal Synthesis' has celebrities recite foreign texts via AI",
+      "description_en": "The YouTube channel 'Vocal Synthesis' trained Tacotron 2 models on publicly available celebrity voices and had them recite foreign texts as parody - for example Jay-Z performing Shakespeare's Hamlet soliloquy or a Bible passage. Every video was clearly labelled as speech synthesis for entertainment, with no malicious intent. Such voice-clone parodies spread as an internet genre.",
+      "sources": [
+        "https://flowingdata.com/2020/04/29/text-to-speech-models-trained-on-celebrity-voices/"
+      ]
+    },
+    {
+      "date": "2020-04",
+      "phase": "event",
+      "title": "USA: Jay-Zs Roc Nation lässt KI-Stimm-Deepfakes von YouTube entfernen",
+      "description": "Im April 2020 reichte Jay-Zs Firma Roc Nation Urheberrechts-Beschwerden gegen die 'Vocal Synthesis'-Videos ein. Die ungewöhnliche Begründung lautete, die Inhalte nutzten rechtswidrig eine KI, um die Stimme des Mandanten zu imitieren. YouTube nahm die betroffenen Videos zunächst offline.",
+      "title_de": "USA: Jay-Zs Roc Nation lässt KI-Stimm-Deepfakes von YouTube entfernen",
+      "description_de": "Im April 2020 reichte Jay-Zs Firma Roc Nation Urheberrechts-Beschwerden gegen die 'Vocal Synthesis'-Videos ein. Die ungewöhnliche Begründung lautete, die Inhalte nutzten rechtswidrig eine KI, um die Stimme des Mandanten zu imitieren. YouTube nahm die betroffenen Videos zunächst offline.",
+      "title_en": "USA: Jay-Z's Roc Nation has AI voice deepfakes removed from YouTube",
+      "description_en": "In April 2020 Jay-Z's company Roc Nation filed copyright complaints against the 'Vocal Synthesis' videos. The unusual justification was that the content unlawfully used an AI to impersonate the client's voice. YouTube initially took the affected videos offline.",
+      "sources": [
+        "https://waxy.org/2020/04/jay-z-orders-deepfake-audio-parodies-off-youtube/"
+      ]
+    },
+    {
+      "date": "2020-04-29",
+      "phase": "consequences",
+      "title": "Videos wiederhergestellt - früher Streit um Stimm-Imitation per KI",
+      "description": "Nach öffentlicher Kritik an der zweifelhaften Urheberrechts-Begründung wurden die Videos wieder freigeschaltet. Der Fall gilt als einer der ersten prominenten Streitfälle um KI-Stimmklone und warf rechtliche Fragen auf, die das bestehende Urheberrecht kaum abdeckte. Erst Jahre später folgten gezielte Gesetzesinitiativen zu synthetischen Stimmen.",
+      "title_de": "Videos wiederhergestellt - früher Streit um Stimm-Imitation per KI",
+      "description_de": "Nach öffentlicher Kritik an der zweifelhaften Urheberrechts-Begründung wurden die Videos wieder freigeschaltet. Der Fall gilt als einer der ersten prominenten Streitfälle um KI-Stimmklone und warf rechtliche Fragen auf, die das bestehende Urheberrecht kaum abdeckte. Erst Jahre später folgten gezielte Gesetzesinitiativen zu synthetischen Stimmen.",
+      "title_en": "Videos reinstated - early dispute over AI voice impersonation",
+      "description_en": "After public criticism of the questionable copyright justification, the videos were reinstated. The case is regarded as one of the first prominent disputes over AI voice clones and raised legal questions that existing copyright law barely addressed. Targeted legislative initiatives on synthetic voices only followed years later.",
+      "sources": [
+        "https://musically.com/2020/04/29/roc-nation-files-takedowns-over-youtube-deepfake-audio-of-jay-z/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://waxy.org/2020/04/jay-z-orders-deepfake-audio-parodies-off-youtube/",

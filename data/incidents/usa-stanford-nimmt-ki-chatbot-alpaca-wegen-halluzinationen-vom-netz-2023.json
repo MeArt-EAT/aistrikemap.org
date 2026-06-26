@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Schutz vor Manipulation",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Protection from manipulation",
+    "Right to information"
+  ],
   "asm:actors": [
     {
       "name": "Stanford University",
@@ -47,7 +59,60 @@
   ],
   "asm:severity": 1,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-02",
+      "phase": "infrastructure",
+      "title": "Meta gibt das Sprachmodell LLaMA an Forschende heraus",
+      "description": "Im Februar 2023 stellte Meta die LLaMA-Modellfamilie für Forschende bereit. Die vergleichsweise kleinen, leistungsfähigen Modelle senkten die Hürden, eigene Chatbots zu bauen, drastisch. Damit entstand die technische Grundlage, auf der externe Teams in kurzer Zeit ChatGPT-ähnliche Systeme nachbauen konnten.",
+      "title_de": "Meta gibt das Sprachmodell LLaMA an Forschende heraus",
+      "description_de": "Im Februar 2023 stellte Meta die LLaMA-Modellfamilie für Forschende bereit. Die vergleichsweise kleinen, leistungsfähigen Modelle senkten die Hürden, eigene Chatbots zu bauen, drastisch. Damit entstand die technische Grundlage, auf der externe Teams in kurzer Zeit ChatGPT-ähnliche Systeme nachbauen konnten.",
+      "title_en": "Meta releases the LLaMA language model to researchers",
+      "description_en": "In February 2023, Meta released the LLaMA model family to researchers. The comparatively small yet capable models drastically lowered the barrier to building one's own chatbots. This created the technical foundation on which outside teams could quickly recreate ChatGPT-like systems.",
+      "sources": [
+        "https://simonwillison.net/2023/Mar/13/alpaca/"
+      ]
+    },
+    {
+      "date": "2023-03-13",
+      "phase": "doctrine",
+      "title": "Stanford stellt Alpaca samt öffentlicher Demo vor",
+      "description": "Am 13. März 2023 stellten Stanford-Forscher Alpaca vor: ein auf LLaMA 7B basierendes Modell, das mit rund 52.000 per OpenAI-API erzeugten Instruktionsbeispielen für etwa 600 US-Dollar feinjustiert wurde. Ziel war es, die Forschung leicht zugänglich zu machen, weshalb das Team eine öffentliche Web-Demo bereitstellte. Damit wurde ein experimentelles Modell ohne ausgereifte Schutzmechanismen offen zugänglich gemacht.",
+      "title_de": "Stanford stellt Alpaca samt öffentlicher Demo vor",
+      "description_de": "Am 13. März 2023 stellten Stanford-Forscher Alpaca vor: ein auf LLaMA 7B basierendes Modell, das mit rund 52.000 per OpenAI-API erzeugten Instruktionsbeispielen für etwa 600 US-Dollar feinjustiert wurde. Ziel war es, die Forschung leicht zugänglich zu machen, weshalb das Team eine öffentliche Web-Demo bereitstellte. Damit wurde ein experimentelles Modell ohne ausgereifte Schutzmechanismen offen zugänglich gemacht.",
+      "title_en": "Stanford unveils Alpaca with a public demo",
+      "description_en": "On 13 March 2023, Stanford researchers unveiled Alpaca: a model based on LLaMA 7B, fine-tuned on roughly 52,000 instruction examples generated via the OpenAI API for about USD 600. The goal was to make the research easily accessible, so the team provided a public web demo. This put an experimental model without mature safeguards into open access.",
+      "sources": [
+        "https://www.marktechpost.com/2023/03/15/researchers-from-stanford-release-alpaca-an-instruction-following-model-based-on-meta-ai-llama-7b/"
+      ]
+    },
+    {
+      "date": "2023-03-21",
+      "phase": "event",
+      "title": "Stanford nimmt die Alpaca-Demo wegen Halluzinationen vom Netz",
+      "description": "Wenige Tage nach dem Start nahm Stanford die öffentliche Alpaca-Demo wieder offline. Als Gründe nannte das Team häufige Falschaussagen (Halluzinationen), unzureichende Inhaltsfilter sowie die Hosting-Kosten. Halluzinationen seien selbst im Vergleich zu OpenAIs text-davinci-003 ein häufiger Fehlermodus gewesen.",
+      "title_de": "Stanford nimmt die Alpaca-Demo wegen Halluzinationen vom Netz",
+      "description_de": "Wenige Tage nach dem Start nahm Stanford die öffentliche Alpaca-Demo wieder offline. Als Gründe nannte das Team häufige Falschaussagen (Halluzinationen), unzureichende Inhaltsfilter sowie die Hosting-Kosten. Halluzinationen seien selbst im Vergleich zu OpenAIs text-davinci-003 ein häufiger Fehlermodus gewesen.",
+      "title_en": "Stanford takes the Alpaca demo offline over hallucinations",
+      "description_en": "A few days after launch, Stanford took the public Alpaca demo back offline. The team cited frequent false statements (hallucinations), inadequate content filters and hosting costs. Hallucinations were said to be a common failure mode even compared with OpenAI's text-davinci-003.",
+      "sources": [
+        "https://www.theregister.com/2023/03/21/stanford_ai_alpaca_taken_offline/"
+      ]
+    },
+    {
+      "date": "2023-03-21",
+      "phase": "consequences",
+      "title": "Code und Daten bleiben verfügbar, Debatte um voreilige Demos",
+      "description": "Obwohl die Demo verschwand, blieben der Trainingsdatensatz und der Code zum Feinjustieren auf GitHub öffentlich, und Alpaca beeinflusste zahlreiche Nachfolgeprojekte. Der schnelle Rückzug wurde zum vielzitierten Beispiel für die Risiken vorschnell veröffentlichter LLM-Demos und für die Spannung zwischen offener Forschung und Sicherheit. Ein konkreter Personenschaden wurde nicht bekannt.",
+      "title_de": "Code und Daten bleiben verfügbar, Debatte um voreilige Demos",
+      "description_de": "Obwohl die Demo verschwand, blieben der Trainingsdatensatz und der Code zum Feinjustieren auf GitHub öffentlich, und Alpaca beeinflusste zahlreiche Nachfolgeprojekte. Der schnelle Rückzug wurde zum vielzitierten Beispiel für die Risiken vorschnell veröffentlichter LLM-Demos und für die Spannung zwischen offener Forschung und Sicherheit. Ein konkreter Personenschaden wurde nicht bekannt.",
+      "title_en": "Code and data stay available, debate over premature demos",
+      "description_en": "Although the demo disappeared, the training dataset and fine-tuning code remained public on GitHub, and Alpaca influenced many follow-up projects. The swift takedown became a frequently cited example of the risks of prematurely released LLM demos and of the tension between open research and safety. No concrete individual harm was reported.",
+      "sources": [
+        "https://gizmodo.com/stanford-ai-alpaca-llama-facebook-taken-down-chatgpt-1850247570"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.theregister.com/2023/03/21/stanford_ai_alpaca_taken_offline/",
