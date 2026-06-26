@@ -1,18 +1,20 @@
-# Übergabe #11 — Sev-2-Offensive (Wellen 46–60)
+# Übergabe #11 — Sev-2-Block ABGESCHLOSSEN (Wellen 46–65)
 
 **Datum:** 2026-06-26
 **Vorgänger:** #10 (2026-06-25, Sev-3-Block abgeschlossen, TL 78.5 %)
-**Bestand danach:** 2457 Incidents · **2280 mit Reverse-TL (92.8 %)** · 0 Audit-Findings
+**Bestand danach:** 2457 Incidents · **2400 mit Reverse-TL (97.7 %)** · 0 Audit-Findings
 
 ---
 
 ## Zusammenfassung
 
-Nach Abschluss des Sev-3-Blocks (#10) wurde die **Sev-2-Ebene** in Angriff
-genommen — gleiche erprobte Workflow-Methode (24 Cases/Welle, Stufe 1 WebSearch-
-grounded Generieren → Stufe 2 unabhängige adversariale Verify). **15 Wellen
-(46–60), +352 Reverse-Timelines, TL-Quote 78.5 → 92.8 %** (80%-Marke in Welle 47,
-85%- in 52, 90%- in 58). Sev-2 ohne TL: 480 → 128.
+Nach Abschluss des Sev-3-Blocks (#10) wurde die **Sev-2-Ebene** komplett
+abgearbeitet — gleiche erprobte Workflow-Methode (24 Cases/Welle, Stufe 1
+WebSearch-grounded Generieren → Stufe 2 unabhängige adversariale Verify).
+**20 Wellen (46–65), +472 Reverse-Timelines, TL-Quote 78.5 → 97.7 %** (80%-Marke
+in Welle 47, 85%- in 52, 90%- in 58). **Sev-2 ohne TL: 480 → 8** (alle 8 sind
+needs-human-Fälle) — **der Sev-2-Block ist damit abgeschlossen; Sev-5/4/3/2 alle
+~100 %.** Verbleibend gesamt ohne TL: 8 Sev-2-needs-human + 48 Sev-1 + prabowo.
 
 | Welle | Cases | pass / fix / needs-human | Δ TL | TL gesamt | Besonderheit |
 |---|---|---|---|---|---|
@@ -31,12 +33,17 @@ grounded Generieren → Stufe 2 unabhängige adversariale Verify). **15 Wellen
 | 58 | 24 | 20 / 4 / 0 | +24 | 2232 (90.8 %) | 90%-Marke; inline-Fix appen 26%=Bruttomarge, google-ad-exchange-Datum |
 | 59 | 24 | 16 / 8 / 0 | +24 | 2256 (91.8 %) | 0 needs-human, 0 Faktenfehler |
 | 60 | 24 | 20 / 4 / 0 | +24 | 2280 (92.8 %) | inline-Fix hello-barbie/knightscope/mcdonalds-IBM; fix-umlaut 182 Reste (1 Gen-Agent transliterierte stark) + 4 Map-Lücken; Validator-Upgrade |
+| 61 | 24 | 12 / 12 / 0 | +24 | 2304 (93.8 %) | 0 needs-human, 0 Faktenfehler |
+| 62 | 24 | 19 / 5 / 0 | +24 | 2328 (94.7 %) | Gender-/Due-process-Begriffe korpusweit harmonisiert (length_ratio) |
+| 63 | 24 | 15 / 9 / 0 | +24 | 2352 (95.7 %) | inline-Fix bert-co2 Einheitenverwechslung (313 short tons -> 284 t), studie-Jahr 2024->2025 |
+| 64 | 24 | 20 / 4 / 0 | +24 | 2376 (96.7 %) | 0 needs-human, 0 Faktenfehler |
+| 65 | 24 | 17 / 7 / 0 | +24 | 2400 (97.7 %) | FINAL - Sev-2 abgeschlossen; 0 needs-human |
 
-**WebSearch in allen 15 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
-Ausfall). Audit nach jeder Welle 0 Findings (length_ratio-False-Positives bei Gender-
-und LGBTQ-Begriffen → auf Korpus-Standards „Geschlechtergleichheit"/„LGBTQ-Rechte"
-harmonisiert). Translit-Map unverändert 2951 (Prompt-Härtung hält Neueinträge ~0;
-Welle 60 ein Ausreißer mit 182 Resten, alle gefixt).
+**WebSearch in allen 20 Wellen durchgehend verfügbar** (6/6 Gen + 6/6 Verify, kein
+Ausfall). Audit nach jeder Welle 0 Findings (length_ratio-False-Positives bei Gender-,
+LGBTQ- und Due-process-Begriffen → auf Korpus-Standards „Geschlechtergleichheit"/
+„LGBTQ-Rechte"/„Faires Verfahren" harmonisiert). Translit-Map unverändert 2951
+(Welle 60 ein Ausreißer mit 182 Resten, alle gefixt + 4 Map-Lücken inline).
 
 ---
 
@@ -154,8 +161,11 @@ Identitäts-/Land-/Slug-/Fall-Vermischungs-Fehler bleiben echtes needs-human.
 - **Translit-Ausreißer (W60):** Ein Gen-Agent transliterierte stark → 182 fix-umlaut-
   Ersetzungen + 4 unbekannte Map-Lücken inline. Lehre: fix-umlaut + Validator-Morphem-
   Scan + Doppel-Umlaut-Grep zusammen fangen es; einzeln nicht.
-- **Disk:** 15 Wellen = 180 Agenten → Workflow-Transcripts ~36 MB + Task-Outputs
-  1.2 MB = ~37 MB. Grün (Warnschwelle 100 MB).
+- **Korpus-Harmonisierungen (length_ratio-False-Positives):** Gender-Begriff →
+  „Geschlechtergleichheit", LGBTQ → „LGBTQ-Rechte", Due process → „Faires Verfahren".
+  Dies sind wiederkehrende Gen-Agenten-Varianten; pro Auftreten korpusweit vereinheitlicht.
+- **Disk:** 20 Wellen = 240 Agenten → Workflow-Transcripts ~45 MB + Task-Outputs
+  ~1.3 MB = ~46 MB. Grün (Warnschwelle 100 MB).
 
 ---
 
@@ -183,14 +193,23 @@ a321016  Reverse-TL Sev-2 Welle 57: +24 (2208, 89.9 %)
 5870026  Reverse-TL Sev-2 Welle 59: +24 (2256, 91.8 %)
 1b9e261  Reverse-TL Sev-2 Welle 60: +24 (2280, 92.8 %)
 5703566  Harmonisiere LGBTQ-Begriff korpusweit
+bb90975  Übergabe #11 (58-60)
+888aa39  Reverse-TL Sev-2 Welle 61: +24 (2304, 93.8 %)
+b5d12b3  Reverse-TL Sev-2 Welle 62: +24 (2328, 94.7 %)
+848e2a8  Harmonisiere Gender-/Due-process-Begriffe korpusweit
+751d78f  Reverse-TL Sev-2 Welle 63: +24 (2352, 95.7 %)
+8064399  Reverse-TL Sev-2 Welle 64: +24 (2376, 96.7 %)
+92d8230  Reverse-TL Sev-2 Welle 65 (FINAL): +24 (2400, 97.7 %) - Sev-2 abgeschlossen
 ```
 
 ---
 
 ## Nächster Schritt
 
-- **Sev-2-TL fortsetzen** (128 ohne TL, ~5 Wellen) — Workflow-Methode +
-  `validate-timelines.js` je Welle, needs-human via `grep -v` ausschließen.
-- DANACH **Sev-1** (48 ohne TL, ~2 Wellen) → TL-Quote dann ~99 % (nur 8 needs-human + prabowo offen).
-- ODER **8 needs-human + prabowo klären** (redaktionelle Entscheidungen, ~1/Welle).
+Sev-2 ist abgeschlossen (Sev-5/4/3/2 alle ~100 %). Optionen:
+- **Sev-1** (48 ohne TL, ~2 Wellen) → TL-Quote dann ~99,6 % (nur 8+1 needs-human offen).
+  Gleiche Workflow-Methode + `validate-timelines.js`.
+- ODER **8 Sev-2-needs-human + prabowo klären** (redaktionelle Entscheidungen):
+  ultraman / devternity / perspective-api / grok / hmrc-quantexa / bradford /
+  iphone-face-id / amazon-lieferdrohne.
 - ODER korpusweiter Smart-Char-Sweep (789 Files), Career-Daten, AIAAIC Batch D.
