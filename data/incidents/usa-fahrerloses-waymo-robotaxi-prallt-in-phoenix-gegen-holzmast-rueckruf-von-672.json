@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Sicherheit",
+    "Verbraucherschutz",
+    "Körperliche Unversehrtheit"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Sicherheit",
+    "Verbraucherschutz",
+    "Körperliche Unversehrtheit"
+  ],
+  "asm:affectedRights_en": [
+    "Right to security",
+    "Consumer protection",
+    "Physical integrity"
+  ],
   "asm:actors": [
     {
       "name": "Waymo",
@@ -46,7 +58,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 4,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-10",
+      "phase": "infrastructure",
+      "title": "Waymo Driver stützt sich auf hochaufgelöste Karten und Objekterkennung",
+      "description": "Waymos Fahrsystem Waymo Driver kombiniert Sensoren wie Lidar, Radar und Kameras mit vorab erstellten hochaufgelösten Karten, um die Umgebung zu deuten und Fahrentscheidungen zu treffen. Hindernissen ordnet die Software einen Schadens-Score zu, der mitbestimmt, wie stark das Fahrzeug ihnen ausweicht. Die Genauigkeit hängt davon ab, dass Karten und Objekterkennung die reale Umgebung korrekt abbilden.",
+      "title_de": "Waymo Driver stützt sich auf hochaufgelöste Karten und Objekterkennung",
+      "description_de": "Waymos Fahrsystem Waymo Driver kombiniert Sensoren wie Lidar, Radar und Kameras mit vorab erstellten hochaufgelösten Karten, um die Umgebung zu deuten und Fahrentscheidungen zu treffen. Hindernissen ordnet die Software einen Schadens-Score zu, der mitbestimmt, wie stark das Fahrzeug ihnen ausweicht. Die Genauigkeit hängt davon ab, dass Karten und Objekterkennung die reale Umgebung korrekt abbilden.",
+      "title_en": "Waymo Driver relies on high-definition maps and object detection",
+      "description_en": "Waymo's driving system, the Waymo Driver, combines sensors such as lidar, radar and cameras with pre-built high-definition maps to interpret the environment and make driving decisions. The software assigns obstacles a damage score that helps determine how strongly the vehicle avoids them. Accuracy depends on the maps and object detection correctly representing the real environment.",
+      "sources": [
+        "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24E049-1733.PDF"
+      ]
+    },
+    {
+      "date": "2024-01",
+      "phase": "doctrine",
+      "title": "Waymo betreibt kommerziellen fahrerlosen Robotaxi-Dienst in Phoenix",
+      "description": "Waymo bietet im Großraum Phoenix einen kommerziellen Fahrdienst mit vollständig fahrerlosen Robotaxis an, die ohne Person an Bord auch durch Wohngebiete und enge Gassen fahren. Damit trägt die Software allein die Verantwortung für das Erkennen von Hindernissen und Notmanöver - auch in Umgebungen, in denen die Kartierung unvollständig sein kann.",
+      "title_de": "Waymo betreibt kommerziellen fahrerlosen Robotaxi-Dienst in Phoenix",
+      "description_de": "Waymo bietet im Großraum Phoenix einen kommerziellen Fahrdienst mit vollständig fahrerlosen Robotaxis an, die ohne Person an Bord auch durch Wohngebiete und enge Gassen fahren. Damit trägt die Software allein die Verantwortung für das Erkennen von Hindernissen und Notmanöver - auch in Umgebungen, in denen die Kartierung unvollständig sein kann.",
+      "title_en": "Waymo runs a commercial driverless robotaxi service in Phoenix",
+      "description_en": "Waymo operates a commercial ride service in the greater Phoenix area using fully driverless robotaxis that travel through residential areas and narrow alleys with no person on board. The software alone is responsible for detecting obstacles and performing emergency manoeuvres - even in environments where the mapping may be incomplete.",
+      "sources": [
+        "https://www.nbcnews.com/tech/tech-news/waymo-recalls-software-cars-robotaxi-crash-rcna157030"
+      ]
+    },
+    {
+      "date": "2024-05-21",
+      "phase": "event",
+      "title": "Waymo-Robotaxi prallt in Phoenix gegen Holzmast",
+      "description": "Am 21. Mai 2024 prallte ein unbesetztes Waymo-Robotaxi in einer Gasse in Phoenix bei niedriger Geschwindigkeit gegen einen bündig mit der Fahrbahn installierten Holzmast. Niemand wurde verletzt, das Fahrzeug erlitt erheblichen Schaden. Waymo gab als Ursache an, dass die Software dem Mast einen niedrigen Schadens-Score zugewiesen und die Karten den fehlenden Bordstein in der Gasse nicht abgebildet hatten.",
+      "title_de": "Waymo-Robotaxi prallt in Phoenix gegen Holzmast",
+      "description_de": "Am 21. Mai 2024 prallte ein unbesetztes Waymo-Robotaxi in einer Gasse in Phoenix bei niedriger Geschwindigkeit gegen einen bündig mit der Fahrbahn installierten Holzmast. Niemand wurde verletzt, das Fahrzeug erlitt erheblichen Schaden. Waymo gab als Ursache an, dass die Software dem Mast einen niedrigen Schadens-Score zugewiesen und die Karten den fehlenden Bordstein in der Gasse nicht abgebildet hatten.",
+      "title_en": "Waymo robotaxi hits a wooden utility pole in Phoenix",
+      "description_en": "On 21 May 2024 an unoccupied Waymo robotaxi struck a wooden utility pole flush with the alley surface in Phoenix at low speed. No injuries occurred but the vehicle sustained significant damage. Waymo said its software had assigned the pole a low damage score and that the alley maps did not represent the missing curb.",
+      "sources": [
+        "https://www.nbcnews.com/tech/tech-news/waymo-recalls-software-cars-robotaxi-crash-rcna157030"
+      ]
+    },
+    {
+      "date": "2024-06-13",
+      "phase": "consequences",
+      "title": "Freiwilliger Rückruf von 672 Fahrzeugen mit Software- und Karten-Update",
+      "description": "Waymo veröffentlichte einen freiwilligen Rückruf für 672 Fahrzeuge und meldete ihn bei der US-Verkehrssicherheitsbehörde NHTSA. Das Unternehmen schätzte, dass der zugrunde liegende Softwarefehler 100 Prozent seiner Flotte betraf, und spielte bereits am 6. Juni ein Software- und Karten-Update aus, das die Reaktion auf mastartige Objekte verbessert. Der Fall stand für eine Reihe von Software-Rückrufen autonomer Fahrzeuge.",
+      "title_de": "Freiwilliger Rückruf von 672 Fahrzeugen mit Software- und Karten-Update",
+      "description_de": "Waymo veröffentlichte einen freiwilligen Rückruf für 672 Fahrzeuge und meldete ihn bei der US-Verkehrssicherheitsbehörde NHTSA. Das Unternehmen schätzte, dass der zugrunde liegende Softwarefehler 100 Prozent seiner Flotte betraf, und spielte bereits am 6. Juni ein Software- und Karten-Update aus, das die Reaktion auf mastartige Objekte verbessert. Der Fall stand für eine Reihe von Software-Rückrufen autonomer Fahrzeuge.",
+      "title_en": "Voluntary recall of 672 vehicles with software and map update",
+      "description_en": "Waymo issued a voluntary recall of 672 vehicles and reported it to the US road-safety regulator NHTSA. The company estimated that the underlying software defect affected 100 percent of its fleet and had already deployed a software and map update on 6 June that improves the response to pole-like objects. The case was one of a series of software recalls of autonomous vehicles.",
+      "sources": [
+        "https://www.wardsauto.com/news/archive-auto-waymo-recalls-672-vehicles-for-latest-software-error/719193/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.azfamily.com/2024/06/13/waymo-recalls-600-self-driving-vehicles-updates-after-one-strikes-pole-phoenix/",

@@ -26,9 +26,24 @@
     "surveillance",
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Überwachung"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz",
+    "Schutz vor Überwachung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Consumer protection",
+    "Protection from surveillance"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -43,7 +58,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Google Assistant als immer mithörender Sprachdienst",
+      "description": "Mit dem Google Assistant und dem ersten Google-Home-Lautsprecher etablierte Google 2016 einen Sprachdienst, der dauerhaft auf das Aktivierungs-Stichwort 'OK Google' lauscht und erkannte Befehle als Audio-Mitschnitte im Nutzerkonto speichert. Diese Architektur bildete die Grundlage für die Mithör-Funktion aller Folgegeräte.",
+      "title_de": "Google Assistant als immer mithörender Sprachdienst",
+      "description_de": "Mit dem Google Assistant und dem ersten Google-Home-Lautsprecher etablierte Google 2016 einen Sprachdienst, der dauerhaft auf das Aktivierungs-Stichwort 'OK Google' lauscht und erkannte Befehle als Audio-Mitschnitte im Nutzerkonto speichert. Diese Architektur bildete die Grundlage für die Mithör-Funktion aller Folgegeräte.",
+      "title_en": "Google Assistant as an always-listening voice service",
+      "description_en": "With Google Assistant and the first Google Home speaker, Google established in 2016 a voice service that continuously listens for the 'OK Google' wake word and stores recognised commands as audio recordings in the user account. This architecture became the basis for the listening function of all later devices.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Google_Nest_(smart_speakers)"
+      ]
+    },
+    {
+      "date": "2017-10-04",
+      "phase": "doctrine",
+      "title": "Google stellt Home Mini mit berührungsempfindlicher Oberseite vor",
+      "description": "Auf seinem Hardware-Event am 4. Oktober 2017 stellte Google den Home Mini vor, dessen berührungsempfindliche Oberseite den Assistant ohne Sprachbefehl per Tippen aktivieren sollte. Vor dem Verkaufsstart wurden Vorserien-Geräte an Rezensent:innen verteilt.",
+      "title_de": "Google stellt Home Mini mit berührungsempfindlicher Oberseite vor",
+      "description_de": "Auf seinem Hardware-Event am 4. Oktober 2017 stellte Google den Home Mini vor, dessen berührungsempfindliche Oberseite den Assistant ohne Sprachbefehl per Tippen aktivieren sollte. Vor dem Verkaufsstart wurden Vorserien-Geräte an Rezensent:innen verteilt.",
+      "title_en": "Google unveils the Home Mini with a touch-sensitive top",
+      "description_en": "At its hardware event on 4 October 2017 Google unveiled the Home Mini, whose touch-sensitive top was meant to activate the Assistant by tapping without a voice command. Pre-launch units were distributed to reviewers ahead of the on-sale date.",
+      "sources": [
+        "https://time.com/4968831/google-home-mini-release-date/"
+      ]
+    },
+    {
+      "date": "2017-10-11",
+      "phase": "event",
+      "title": "USA: Google Home Mini zeichnet Gespräche ohne Aktivierungswort auf",
+      "description": "Im Oktober 2017 entdeckte Android-Police-Tech-Blogger Artem Russakovskii in seinem Google-Aktivitäts-Konto Audio-Mitschnitte aus seiner Wohnung, die der Google Home Mini ohne das Aktivierungs-Stichwort 'OK Google' aufgenommen hatte. Ursache war die fehlerhaft selbst auslösende berührungsempfindliche Oberseite.",
+      "title_de": "USA: Google Home Mini zeichnet Gespräche ohne Aktivierungswort auf",
+      "description_de": "Im Oktober 2017 entdeckte Android-Police-Tech-Blogger Artem Russakovskii in seinem Google-Aktivitäts-Konto Audio-Mitschnitte aus seiner Wohnung, die der Google Home Mini ohne das Aktivierungs-Stichwort 'OK Google' aufgenommen hatte. Ursache war die fehlerhaft selbst auslösende berührungsempfindliche Oberseite.",
+      "title_en": "USA: Google Home Mini records conversations without wake word",
+      "description_en": "In October 2017 Android Police tech blogger Artem Russakovskii discovered audio recordings from his home in his Google account that the Google Home Mini had captured without the 'OK Google' wake word. The cause was the touch-sensitive top triggering itself by mistake.",
+      "sources": [
+        "https://money.cnn.com/2017/10/11/technology/google-home-mini-security-flaw/index.html"
+      ]
+    },
+    {
+      "date": "2017-10-11",
+      "phase": "consequences",
+      "title": "Google deaktiviert die Tipp-Funktion dauerhaft per Update",
+      "description": "Google bestätigte den fehlerhaften Sensor und entfernte die Tipp-Aktivierung über der Oberseite per Software-Update aus allen Geräten. Gespeicherte Falsch-Mitschnitte wurden gelöscht; da der Lautsprecher noch in der Pre-Launch-Verteilung war, waren keine zahlenden Kund:innen betroffen.",
+      "title_de": "Google deaktiviert die Tipp-Funktion dauerhaft per Update",
+      "description_de": "Google bestätigte den fehlerhaften Sensor und entfernte die Tipp-Aktivierung über der Oberseite per Software-Update aus allen Geräten. Gespeicherte Falsch-Mitschnitte wurden gelöscht; da der Lautsprecher noch in der Pre-Launch-Verteilung war, waren keine zahlenden Kund:innen betroffen.",
+      "title_en": "Google permanently disables the tap function via update",
+      "description_en": "Google confirmed the faulty sensor and removed the top tap-to-activate feature from all devices via a software update. Erroneous recordings were deleted; because the speaker was still in pre-launch distribution, no paying customers were affected.",
+      "sources": [
+        "https://www.engadget.com/2017-10-11-google-home-mini-eavesdropping.html"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://money.cnn.com/2017/10/11/technology/google-home-mini-security-flaw/index.html",

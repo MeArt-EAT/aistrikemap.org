@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verkehrssicherheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verkehrssicherheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Road safety",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "McAfee (Advanced Threat Research)",
@@ -53,7 +68,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2016",
+      "phase": "infrastructure",
+      "title": "Tesla-Modelle mit MobilEye-EyeQ3-Kamera ausgeliefert",
+      "description": "Die 2016 gebauten Tesla Model S und Model X nutzten ein kamerabasiertes Fahrassistenzsystem mit dem EyeQ3-Chip des Intel-Tochterunternehmens MobilEye. Die Kamera erkannte unter anderem Verkehrsschilder wie Tempolimits und speiste die gelesenen Werte in Fahrfunktionen wie die Traffic-Aware Cruise Control ein. Diese Wahrnehmung beruhte allein auf maschineller Bilderkennung ohne unabhängige Gegenprüfung.",
+      "title_de": "Tesla-Modelle mit MobilEye-EyeQ3-Kamera ausgeliefert",
+      "description_de": "Die 2016 gebauten Tesla Model S und Model X nutzten ein kamerabasiertes Fahrassistenzsystem mit dem EyeQ3-Chip des Intel-Tochterunternehmens MobilEye. Die Kamera erkannte unter anderem Verkehrsschilder wie Tempolimits und speiste die gelesenen Werte in Fahrfunktionen wie die Traffic-Aware Cruise Control ein. Diese Wahrnehmung beruhte allein auf maschineller Bilderkennung ohne unabhängige Gegenprüfung.",
+      "title_en": "Tesla models shipped with MobilEye EyeQ3 camera",
+      "description_en": "The 2016-built Tesla Model S and Model X used a camera-based driver-assistance system built around the EyeQ3 chip from Intel subsidiary MobilEye. Among other things the camera recognised road signs such as speed limits and fed the read values into driving functions like Traffic-Aware Cruise Control. This perception relied solely on machine image recognition with no independent cross-check.",
+      "sources": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/model-hacking-adas-to-pave-safer-roads-for-autonomous-vehicles/"
+      ]
+    },
+    {
+      "date": "2019-09",
+      "phase": "doctrine",
+      "title": "McAfee untersucht ADAS-Robustheit und meldet Befund den Herstellern",
+      "description": "Im Rahmen ihres Forschungsprogramms 'Model Hacking' untersuchten Steve Povolny und Shivangee Trivedi von McAfee Advanced Threat Research die Robustheit kamerabasierter Fahrassistenz (ADAS) gegenüber gezielter Manipulation. Ende September 2019 meldeten sie ihre Erkenntnisse verantwortungsvoll an MobilEye und Tesla. Beide zeigten Interesse, kündigten aber keine Nachrüstung der im Feld befindlichen Modelle an.",
+      "title_de": "McAfee untersucht ADAS-Robustheit und meldet Befund den Herstellern",
+      "description_de": "Im Rahmen ihres Forschungsprogramms 'Model Hacking' untersuchten Steve Povolny und Shivangee Trivedi von McAfee Advanced Threat Research die Robustheit kamerabasierter Fahrassistenz (ADAS) gegenüber gezielter Manipulation. Ende September 2019 meldeten sie ihre Erkenntnisse verantwortungsvoll an MobilEye und Tesla. Beide zeigten Interesse, kündigten aber keine Nachrüstung der im Feld befindlichen Modelle an.",
+      "title_en": "McAfee studies ADAS robustness and discloses to manufacturers",
+      "description_en": "As part of their 'Model Hacking' research programme, Steve Povolny and Shivangee Trivedi of McAfee Advanced Threat Research examined the robustness of camera-based driver assistance (ADAS) against targeted manipulation. In late September 2019 they responsibly disclosed their findings to MobilEye and Tesla. Both expressed interest but announced no retrofit for the models already in the field.",
+      "sources": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/model-hacking-adas-to-pave-safer-roads-for-autonomous-vehicles/"
+      ]
+    },
+    {
+      "date": "2020-02-19",
+      "phase": "event",
+      "title": "Manipuliertes Tempolimit-Schild lässt Tesla auf 85 mph beschleunigen",
+      "description": "Am 19. Februar 2020 veröffentlichte McAfee, dass ein nur etwa fünf Zentimeter langes Stück schwarzes Klebeband auf einem 35-mph-Schild die Ziffer so verlängerte, dass die EyeQ3-Kamera '85' las. Über die Traffic-Aware Cruise Control beschleunigte das Fahrzeug daraufhin in Richtung 85 mph. Der Befund demonstrierte die Anfälligkeit kamerabasierter Fahrassistenz gegenüber Adversarial-Manipulation; es handelte sich um ein kontrolliertes Experiment ohne realen Unfall.",
+      "title_de": "Manipuliertes Tempolimit-Schild lässt Tesla auf 85 mph beschleunigen",
+      "description_de": "Am 19. Februar 2020 veröffentlichte McAfee, dass ein nur etwa fünf Zentimeter langes Stück schwarzes Klebeband auf einem 35-mph-Schild die Ziffer so verlängerte, dass die EyeQ3-Kamera '85' las. Über die Traffic-Aware Cruise Control beschleunigte das Fahrzeug daraufhin in Richtung 85 mph. Der Befund demonstrierte die Anfälligkeit kamerabasierter Fahrassistenz gegenüber Adversarial-Manipulation; es handelte sich um ein kontrolliertes Experiment ohne realen Unfall.",
+      "title_en": "Doctored speed-limit sign makes Tesla accelerate to 85 mph",
+      "description_en": "On 19 February 2020 McAfee published that a roughly two-inch strip of black tape on a 35 mph sign extended the digit so the EyeQ3 camera read '85'. Via Traffic-Aware Cruise Control the vehicle then accelerated toward 85 mph. The finding demonstrated the vulnerability of camera-based driver assistance to adversarial manipulation; it was a controlled experiment with no real-world crash.",
+      "sources": [
+        "https://www.technologyreview.com/2020/02/19/868188/hackers-can-trick-a-tesla-into-accelerating-by-50-miles-per-hour/"
+      ]
+    },
+    {
+      "date": "2020-02-20",
+      "phase": "consequences",
+      "title": "Debatte über Adversarial-Risiken; neuere Systeme nicht betroffen",
+      "description": "Die Veröffentlichung löste eine breite Debatte über die Sicherheit kamerabasierter Fahrassistenz aus. Tesla hatte die MobilEye-Kameras bereits 2016 aufgegeben, sodass neuere Fahrzeuge und spätere MobilEye-Versionen gegen diesen konkreten Trick resistent waren. Der Fall blieb dennoch ein vielzitiertes Beispiel dafür, wie minimale physische Manipulationen automatisierte Wahrnehmung in die Irre führen können.",
+      "title_de": "Debatte über Adversarial-Risiken; neuere Systeme nicht betroffen",
+      "description_de": "Die Veröffentlichung löste eine breite Debatte über die Sicherheit kamerabasierter Fahrassistenz aus. Tesla hatte die MobilEye-Kameras bereits 2016 aufgegeben, sodass neuere Fahrzeuge und spätere MobilEye-Versionen gegen diesen konkreten Trick resistent waren. Der Fall blieb dennoch ein vielzitiertes Beispiel dafür, wie minimale physische Manipulationen automatisierte Wahrnehmung in die Irre führen können.",
+      "title_en": "Debate over adversarial risks; newer systems unaffected",
+      "description_en": "The publication triggered a broad debate about the safety of camera-based driver assistance. Tesla had already dropped the MobilEye cameras back in 2016, so newer vehicles and later MobilEye versions were resistant to this particular trick. The case nonetheless remained a widely cited example of how minimal physical manipulation can mislead automated perception.",
+      "sources": [
+        "https://www.theregister.com/2020/02/20/tesla_ai_tricked_85_mph/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2020/02/19/868188/hackers-can-trick-a-tesla-into-accelerating-by-50-miles-per-hour/",

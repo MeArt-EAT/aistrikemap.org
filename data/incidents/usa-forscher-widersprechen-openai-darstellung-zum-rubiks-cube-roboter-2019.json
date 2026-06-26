@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Manipulation",
+    "Recht auf wahrheitsgemäße Information",
+    "Wissenschaftliche Integrität",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Manipulation",
+    "Recht auf wahrheitsgemäße Information",
+    "Wissenschaftliche Integrität",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from manipulation",
+    "Right to truthful information",
+    "Scientific integrity",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "OpenAI",
@@ -46,7 +61,60 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2018-07",
+      "phase": "infrastructure",
+      "title": "OpenAI baut das Dactyl-Robotersystem auf",
+      "description": "Im Juli 2018 stellte OpenAI mit dem Projekt 'Learning Dexterity' das System Dactyl vor: eine Shadow-Dexterous-Hand, die per Reinforcement Learning und Domain Randomization gelernt hatte, Objekte wie Würfel in der Hand umzuorientieren. Das Training fand in Simulation statt und wurde auf die reale Hand übertragen. Dieses System bildete die technische Grundlage für die spätere Zauberwürfel-Demonstration.",
+      "title_de": "OpenAI baut das Dactyl-Robotersystem auf",
+      "description_de": "Im Juli 2018 stellte OpenAI mit dem Projekt 'Learning Dexterity' das System Dactyl vor: eine Shadow-Dexterous-Hand, die per Reinforcement Learning und Domain Randomization gelernt hatte, Objekte wie Würfel in der Hand umzuorientieren. Das Training fand in Simulation statt und wurde auf die reale Hand übertragen. Dieses System bildete die technische Grundlage für die spätere Zauberwürfel-Demonstration.",
+      "title_en": "OpenAI builds the Dactyl robotic system",
+      "description_en": "In July 2018 OpenAI introduced the Dactyl system through its 'Learning Dexterity' project: a Shadow Dexterous Hand that had learned via reinforcement learning and domain randomization to reorient objects such as blocks in-hand. Training took place in simulation and transferred to the physical hand. This system formed the technical basis for the later Rubik's cube demonstration.",
+      "sources": [
+        "https://openai.com/index/learning-dexterity/"
+      ]
+    },
+    {
+      "date": "2019-10-15",
+      "phase": "doctrine",
+      "title": "OpenAI rahmt die Demo als Schritt Richtung allgemeine KI",
+      "description": "Am 15. Oktober 2019 veröffentlichte OpenAI Paper, Blogpost und Begleitvideo 'Solving Rubik's Cube with a Robot Hand'. Die öffentliche Darstellung legte nahe, das System habe das Würfellösen weitgehend eigenständig gelernt, und ordnete es als Schritt in Richtung allgemeiner, vielseitiger Robotik ein. Diese werbliche Rahmung blendete aus, dass die eigentliche Lösungslogik aus einem klassischen Algorithmus stammte.",
+      "title_de": "OpenAI rahmt die Demo als Schritt Richtung allgemeine KI",
+      "description_de": "Am 15. Oktober 2019 veröffentlichte OpenAI Paper, Blogpost und Begleitvideo 'Solving Rubik's Cube with a Robot Hand'. Die öffentliche Darstellung legte nahe, das System habe das Würfellösen weitgehend eigenständig gelernt, und ordnete es als Schritt in Richtung allgemeiner, vielseitiger Robotik ein. Diese werbliche Rahmung blendete aus, dass die eigentliche Lösungslogik aus einem klassischen Algorithmus stammte.",
+      "title_en": "OpenAI frames the demo as a step toward general AI",
+      "description_en": "On 15 October 2019 OpenAI released the paper, blog post and accompanying video 'Solving Rubik's Cube with a Robot Hand'. The public framing implied the system had largely learned to solve the cube on its own and positioned it as a step toward general, versatile robotics. This promotional framing omitted that the actual solving logic came from a classical algorithm.",
+      "sources": [
+        "https://openai.com/index/solving-rubiks-cube/"
+      ]
+    },
+    {
+      "date": "2019-10-20",
+      "phase": "event",
+      "title": "Forscher widersprechen der OpenAI-Darstellung",
+      "description": "KI-Forscher wie Gary Marcus widersprachen öffentlich der suggerierten Eigenständigkeit. Die Lösungsschritte stammten vom über zehn Jahre alten Kociemba-Algorithmus, die Hand manipulierte den Würfel lediglich physisch, in schwierigen Fällen lag die Erfolgsquote bei nur 20 Prozent, und sowohl Hand als auch Würfel waren technisch präpariert. Kritisiert wurde, dass die Kommunikation die tatsächliche Leistung deutlich überzeichne.",
+      "title_de": "Forscher widersprechen der OpenAI-Darstellung",
+      "description_de": "KI-Forscher wie Gary Marcus widersprachen öffentlich der suggerierten Eigenständigkeit. Die Lösungsschritte stammten vom über zehn Jahre alten Kociemba-Algorithmus, die Hand manipulierte den Würfel lediglich physisch, in schwierigen Fällen lag die Erfolgsquote bei nur 20 Prozent, und sowohl Hand als auch Würfel waren technisch präpariert. Kritisiert wurde, dass die Kommunikation die tatsächliche Leistung deutlich überzeichne.",
+      "title_en": "Researchers dispute OpenAI's framing",
+      "description_en": "AI researchers including Gary Marcus publicly disputed the implied autonomy. The solving steps came from the decade-old Kociemba algorithm, the hand merely manipulated the cube physically, success on hard scrambles was only 20 percent, and both the hand and the cube were technically augmented. Critics argued the communication substantially overstated the actual achievement.",
+      "sources": [
+        "https://thenextweb.com/news/why-a-robot-that-can-solve-rubiks-cube-one-handed-has-the-ai-community-at-war"
+      ]
+    },
+    {
+      "date": "2019-10-25",
+      "phase": "consequences",
+      "title": "Fall wird zum Standardbeispiel für überzogene KI-PR",
+      "description": "Die Episode wurde in Fachartikeln und Analysen zum oft zitierten Beispiel für überzogene KI-Public-Relations und die Lücke zwischen Marketing und tatsächlicher Forschungsleistung. Sie schärfte das Bewusstsein dafür, wie wichtig nachprüfbare Erfolgsmetriken und transparente Methodenangaben bei der Kommunikation von KI-Ergebnissen sind.",
+      "title_de": "Fall wird zum Standardbeispiel für überzogene KI-PR",
+      "description_de": "Die Episode wurde in Fachartikeln und Analysen zum oft zitierten Beispiel für überzogene KI-Public-Relations und die Lücke zwischen Marketing und tatsächlicher Forschungsleistung. Sie schärfte das Bewusstsein dafür, wie wichtig nachprüfbare Erfolgsmetriken und transparente Methodenangaben bei der Kommunikation von KI-Ergebnissen sind.",
+      "title_en": "Case becomes a standard example of overstated AI PR",
+      "description_en": "The episode became, across articles and analyses, a frequently cited example of overstated AI public relations and the gap between marketing and actual research achievement. It sharpened awareness of how important verifiable success metrics and transparent methodology disclosures are when communicating AI results.",
+      "sources": [
+        "https://www.designnews.com/electronics-test/rubiks-cube-solving-robot-hand-sparks-debate-ai-community"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://arxiv.org/abs/1910.07113",

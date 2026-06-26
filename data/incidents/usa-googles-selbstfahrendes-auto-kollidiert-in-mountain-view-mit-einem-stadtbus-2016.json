@@ -30,9 +30,21 @@
   "asm:incidentType": [
     "autonomous-vehicle"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Leben",
+    "Körperliche Unversehrtheit",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to life",
+    "Physical integrity",
+    "Consumer protection"
+  ],
   "asm:actors": [
     {
       "name": "Google / Waymo",
@@ -46,7 +58,62 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2009",
+      "phase": "infrastructure",
+      "title": "Google startet das selbstfahrende Auto-Projekt",
+      "description": "Google begann 2009 unter Leitung von Sebastian Thrun mit der Entwicklung selbstfahrender Autos und machte das Projekt 2010 öffentlich. Ab 2012 setzte das Team eine Flotte umgebauter Lexus RX450h ein und verlagerte das Testen von Autobahnen auf den dichteren Stadtverkehr, vorwiegend rund um Mountain View in Kalifornien. Bis 2015 bestand die Testflotte aus rund 23 dieser Lexus-Fahrzeuge.",
+      "title_de": "Google startet das selbstfahrende Auto-Projekt",
+      "description_de": "Google begann 2009 unter Leitung von Sebastian Thrun mit der Entwicklung selbstfahrender Autos und machte das Projekt 2010 öffentlich. Ab 2012 setzte das Team eine Flotte umgebauter Lexus RX450h ein und verlagerte das Testen von Autobahnen auf den dichteren Stadtverkehr, vorwiegend rund um Mountain View in Kalifornien. Bis 2015 bestand die Testflotte aus rund 23 dieser Lexus-Fahrzeuge.",
+      "title_en": "Google launches its self-driving car project",
+      "description_en": "Google began developing self-driving cars in 2009 under Sebastian Thrun and made the project public in 2010. From 2012 the team used a fleet of modified Lexus RX450h vehicles and shifted testing from highways to denser city traffic, mainly around Mountain View, California. By 2015 the test fleet consisted of around 23 of these Lexus vehicles.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Waymo"
+      ]
+    },
+    {
+      "date": "2014-09",
+      "phase": "doctrine",
+      "title": "Kalifornien erlaubt autonome Testfahrten im öffentlichen Verkehr",
+      "description": "Die kalifornische Verkehrsbehörde DMV erließ Regeln, die das Testen autonomer Fahrzeuge auf öffentlichen Straßen unter Aufsicht eines Sicherheitsfahrers erlaubten, sofern Hersteller registriert waren und Unfälle meldeten. Auf dieser Grundlage ließ Google seine Lexus-Flotte regulär im Mischverkehr von Mountain View fahren, wo sie mit Bussen, Radfahrern und Fußgängern interagierte.",
+      "title_de": "Kalifornien erlaubt autonome Testfahrten im öffentlichen Verkehr",
+      "description_de": "Die kalifornische Verkehrsbehörde DMV erließ Regeln, die das Testen autonomer Fahrzeuge auf öffentlichen Straßen unter Aufsicht eines Sicherheitsfahrers erlaubten, sofern Hersteller registriert waren und Unfälle meldeten. Auf dieser Grundlage ließ Google seine Lexus-Flotte regulär im Mischverkehr von Mountain View fahren, wo sie mit Bussen, Radfahrern und Fußgängern interagierte.",
+      "title_en": "California permits autonomous test driving in public traffic",
+      "description_en": "The California DMV issued rules permitting the testing of autonomous vehicles on public roads under the supervision of a safety driver, provided manufacturers were registered and reported crashes. On this basis Google ran its Lexus fleet routinely in the mixed traffic of Mountain View, where it interacted with buses, cyclists and pedestrians.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Waymo"
+      ]
+    },
+    {
+      "date": "2016-02-14",
+      "phase": "event",
+      "title": "Google-Lexus kollidiert mit einem Stadtbus",
+      "description": "Auf der El Camino Real in Mountain View wich ein autonom gesteuerter Google-Lexus Sandsäcken am Straßenrand aus und fuhr dafür in die mittlere Spur. Sowohl die Software als auch der Sicherheitsfahrer nahmen an, ein von hinten kommender Bus werde abbremsen. Der Bus wich jedoch nicht aus, und das Auto stieß mit etwa 3 km/h gegen die Seite des mit rund 24 km/h fahrenden Busses. Niemand wurde verletzt.",
+      "title_de": "Google-Lexus kollidiert mit einem Stadtbus",
+      "description_de": "Auf der El Camino Real in Mountain View wich ein autonom gesteuerter Google-Lexus Sandsäcken am Straßenrand aus und fuhr dafür in die mittlere Spur. Sowohl die Software als auch der Sicherheitsfahrer nahmen an, ein von hinten kommender Bus werde abbremsen. Der Bus wich jedoch nicht aus, und das Auto stieß mit etwa 3 km/h gegen die Seite des mit rund 24 km/h fahrenden Busses. Niemand wurde verletzt.",
+      "title_en": "Google Lexus collides with a public bus",
+      "description_en": "On El Camino Real in Mountain View, an autonomous Google Lexus steered around sandbags at the kerb and moved into the centre lane to do so. Both the software and the safety driver assumed that a bus approaching from behind would slow down. The bus did not yield, and the car struck the side of the bus, which was travelling at around 15 mph, at about 2 mph. No one was injured.",
+      "sources": [
+        "https://www.technologyreview.com/2016/02/29/161816/googles-self-driving-car-probably-caused-its-first-accident/",
+        "https://incidentdatabase.ai/cite/71/"
+      ]
+    },
+    {
+      "date": "2016-02-29",
+      "phase": "consequences",
+      "title": "Google übernimmt Mitverantwortung und passt die Software an",
+      "description": "Google meldete den Unfall der kalifornischen DMV und erklärte öffentlich, eine Mitverantwortung zu tragen - der erste Fall, in dem das Unternehmen dies für einen Crash seines Roboterautos tat. Google passte die Software so an, dass sie künftig davon ausgeht, dass Buße seltener nachgeben. Der Vorfall wurde breit als erstes von Googles Auto mitverursachtes Unglück diskutiert und befeuerte die Debatte über Haftung und Sicherheit autonomer Fahrzeuge.",
+      "title_de": "Google übernimmt Mitverantwortung und passt die Software an",
+      "description_de": "Google meldete den Unfall der kalifornischen DMV und erklärte öffentlich, eine Mitverantwortung zu tragen - der erste Fall, in dem das Unternehmen dies für einen Crash seines Roboterautos tat. Google passte die Software so an, dass sie künftig davon ausgeht, dass Buße seltener nachgeben. Der Vorfall wurde breit als erstes von Googles Auto mitverursachtes Unglück diskutiert und befeuerte die Debatte über Haftung und Sicherheit autonomer Fahrzeuge.",
+      "title_en": "Google accepts partial responsibility and updates the software",
+      "description_en": "Google reported the crash to the California DMV and publicly stated that it bore partial responsibility, the first time the company had done so for a crash involving one of its robot cars. Google updated the software so that it now assumes buses are less likely to yield. The incident was widely discussed as the first accident partly caused by a Google car and fuelled the debate over liability and safety of autonomous vehicles.",
+      "sources": [
+        "https://www.engadget.com/2016-02-29-google-self-driving-car-accident.html",
+        "https://electrek.co/2016/02/29/google-self-driving-car-first-at-fault-accident/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://www.technologyreview.com/2016/02/29/161816/googles-self-driving-car-probably-caused-its-first-accident/",

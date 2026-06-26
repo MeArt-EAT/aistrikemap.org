@@ -25,9 +25,21 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_de": [
+    "Schutz vor Diskriminierung",
+    "Datenschutz",
+    "Recht auf Information"
+  ],
+  "asm:affectedRights_en": [
+    "Protection from discrimination",
+    "Data protection",
+    "Right to information"
+  ],
   "asm:actors": [
     {
       "name": "Google",
@@ -41,7 +53,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Google veröffentlicht GoEmotions als größten Emotionsdatensatz",
+      "description": "Google Research stellte 2020 GoEmotions vor, den damals größten manuell annotierten Emotionsdatensatz mit rund 58.000 Reddit-Kommentaren, die nach 27 Emotionskategorien plus Neutral beschriftet wurden. Die Kommentare stammten aus Reddit-Beiträgen der Jahre 2005 bis 2019. Der Datensatz wurde offen veröffentlicht und als Grundlage für Modelle zur Emotionserkennung beworben.",
+      "title_de": "Google veröffentlicht GoEmotions als größten Emotionsdatensatz",
+      "description_de": "Google Research stellte 2020 GoEmotions vor, den damals größten manuell annotierten Emotionsdatensatz mit rund 58.000 Reddit-Kommentaren, die nach 27 Emotionskategorien plus Neutral beschriftet wurden. Die Kommentare stammten aus Reddit-Beiträgen der Jahre 2005 bis 2019. Der Datensatz wurde offen veröffentlicht und als Grundlage für Modelle zur Emotionserkennung beworben.",
+      "title_en": "Google publishes GoEmotions as the largest emotion dataset",
+      "description_en": "In 2020 Google Research introduced GoEmotions, at the time the largest manually annotated emotion dataset, with around 58,000 Reddit comments labelled across 27 emotion categories plus Neutral. The comments came from Reddit posts between 2005 and 2019. The dataset was released openly and promoted as a basis for emotion-recognition models.",
+      "sources": [
+        "https://research.google/blog/goemotions-a-dataset-for-fine-grained-emotion-classification/",
+        "https://aclanthology.org/2020.acl-main.372/"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "phase": "doctrine",
+      "title": "Google bewirbt GoEmotions für den Produktiveinsatz",
+      "description": "In einem Forschungs-Blogbeitrag bewarb Google GoEmotions als Datensatz für feingranulare Emotionserkennung und stellte ein Tutorial bereit, das die Nutzung in Anwendungen wie Emoji-Vorschlägen demonstrierte. Damit wurde der Datensatz aktiv als Trainingsgrundlage für reale KI-Systeme positioniert - ohne breite Hinweise auf mögliche Annotationsfehler oder fehlenden Kontext der Kommentare.",
+      "title_de": "Google bewirbt GoEmotions für den Produktiveinsatz",
+      "description_de": "In einem Forschungs-Blogbeitrag bewarb Google GoEmotions als Datensatz für feingranulare Emotionserkennung und stellte ein Tutorial bereit, das die Nutzung in Anwendungen wie Emoji-Vorschlägen demonstrierte. Damit wurde der Datensatz aktiv als Trainingsgrundlage für reale KI-Systeme positioniert - ohne breite Hinweise auf mögliche Annotationsfehler oder fehlenden Kontext der Kommentare.",
+      "title_en": "Google promotes GoEmotions for production use",
+      "description_en": "In a research blog post Google promoted GoEmotions as a dataset for fine-grained emotion detection and provided a tutorial demonstrating its use in applications such as emoji suggestions. This actively positioned the dataset as a training basis for real AI systems, without broad warnings about possible labelling errors or the comments' missing context.",
+      "sources": [
+        "https://research.google/blog/goemotions-a-dataset-for-fine-grained-emotion-classification/"
+      ]
+    },
+    {
+      "date": "2022-04-19",
+      "phase": "event",
+      "title": "Surge AI stuft rund 30 Prozent der Labels als fehlerhaft ein",
+      "description": "Das KI-Unternehmen Surge AI veröffentlichte eine Stichproben-Analyse von 1.000 zufällig gezogenen GoEmotions-Kommentaren. 308 davon - rund 30 Prozent - wiesen nach Einschätzung der Prüfer deutliche Fehler auf, häufig ausgelöst durch Slang, Ironie und Schimpfwörter. So wurde etwa 'hell yeah' als Ärger statt als Zustimmung gelabelt. Kritisiert wurde zudem, dass die Reddit-Kommentare ohne ihren ursprünglichen Kontext annotiert worden waren.",
+      "title_de": "Surge AI stuft rund 30 Prozent der Labels als fehlerhaft ein",
+      "description_de": "Das KI-Unternehmen Surge AI veröffentlichte eine Stichproben-Analyse von 1.000 zufällig gezogenen GoEmotions-Kommentaren. 308 davon - rund 30 Prozent - wiesen nach Einschätzung der Prüfer deutliche Fehler auf, häufig ausgelöst durch Slang, Ironie und Schimpfwörter. So wurde etwa 'hell yeah' als Ärger statt als Zustimmung gelabelt. Kritisiert wurde zudem, dass die Reddit-Kommentare ohne ihren ursprünglichen Kontext annotiert worden waren.",
+      "title_en": "Surge AI rates around 30 percent of the labels as wrong",
+      "description_en": "AI firm Surge AI published a sample analysis of 1,000 randomly drawn GoEmotions comments. 308 of them, around 30 percent, showed clear errors according to the reviewers, often triggered by slang, sarcasm and profanity. For example, 'hell yeah' was labelled as annoyance rather than approval. Critics also noted that the Reddit comments had been annotated without their original context.",
+      "sources": [
+        "https://surgehq.ai/blog/30-percent-of-googles-reddit-emotions-dataset-is-mislabeled"
+      ]
+    },
+    {
+      "date": "2022-04-20",
+      "phase": "consequences",
+      "title": "Debatte über Datenqualität in der KI-Entwicklung",
+      "description": "Die Analyse wurde von Fachmedien aufgegriffen und löste eine breitere Debatte über mangelnde Datenqualität und Annotationsstandards in der KI-Entwicklung aus. Da fehlerhaft gelabelte Trainingsdaten zu verzerrten oder diskriminierenden Emotionsmodellen führen können, wurde der Fall zum häufig zitierten Beispiel dafür, dass auch große, von Konzernen veröffentlichte Datensätze sorgfältig geprüft werden müssen.",
+      "title_de": "Debatte über Datenqualität in der KI-Entwicklung",
+      "description_de": "Die Analyse wurde von Fachmedien aufgegriffen und löste eine breitere Debatte über mangelnde Datenqualität und Annotationsstandards in der KI-Entwicklung aus. Da fehlerhaft gelabelte Trainingsdaten zu verzerrten oder diskriminierenden Emotionsmodellen führen können, wurde der Fall zum häufig zitierten Beispiel dafür, dass auch große, von Konzernen veröffentlichte Datensätze sorgfältig geprüft werden müssen.",
+      "title_en": "Debate over data quality in AI development",
+      "description_en": "The analysis was picked up by trade media and triggered a broader debate about poor data quality and annotation standards in AI development. Because mislabelled training data can lead to biased or discriminatory emotion models, the case became a frequently cited example that even large datasets published by major companies must be carefully checked.",
+      "sources": [
+        "https://thenextweb.com/news/scathing-study-exposes-googles-harmful-approach-ai-development"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://surgehq.ai/blog/30-percent-of-googles-reddit-emotions-dataset-is-mislabeled",

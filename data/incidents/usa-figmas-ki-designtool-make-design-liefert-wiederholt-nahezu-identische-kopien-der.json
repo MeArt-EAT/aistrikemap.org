@@ -30,9 +30,24 @@
   "asm:incidentType": [
     "data-misuse"
   ],
-  "asm:affectedRights": [],
-  "asm:affectedRights_de": [],
-  "asm:affectedRights_en": [],
+  "asm:affectedRights": [
+    "Geistiges Eigentum",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Faire wirtschaftliche Teilhabe"
+  ],
+  "asm:affectedRights_de": [
+    "Geistiges Eigentum",
+    "Schutz vor Manipulation",
+    "Verbraucherschutz",
+    "Faire wirtschaftliche Teilhabe"
+  ],
+  "asm:affectedRights_en": [
+    "Intellectual property",
+    "Protection from manipulation",
+    "Consumer protection",
+    "Fair economic participation"
+  ],
   "asm:actors": [
     {
       "name": "Figma",
@@ -46,7 +61,61 @@
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 3,
-  "asm:reverseTimeline": [],
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-06-26",
+      "phase": "infrastructure",
+      "title": "Figma stellt 'Make Design' auf der Config 2024 vor",
+      "description": "Auf seiner jährlichen Entwicklerkonferenz Config (26.-27. Juni 2024 in San Francisco) präsentierte Figma die generative KI-Funktion 'Make Design', die aus Text-Prompts vollständige App-Oberflächen erzeugt. Die Funktion stützte sich laut Figma auf zugekaufte Off-the-shelf-LLMs zusammen mit von Dienstleistern beauftragten 'Design-Systemen', nicht auf eigene Figma-Inhalte. Das knappe Lieferdatum zur Config setzte das Team unter Zeitdruck.",
+      "title_de": "Figma stellt 'Make Design' auf der Config 2024 vor",
+      "description_de": "Auf seiner jährlichen Entwicklerkonferenz Config (26.-27. Juni 2024 in San Francisco) präsentierte Figma die generative KI-Funktion 'Make Design', die aus Text-Prompts vollständige App-Oberflächen erzeugt. Die Funktion stützte sich laut Figma auf zugekaufte Off-the-shelf-LLMs zusammen mit von Dienstleistern beauftragten 'Design-Systemen', nicht auf eigene Figma-Inhalte. Das knappe Lieferdatum zur Config setzte das Team unter Zeitdruck.",
+      "title_en": "Figma unveils 'Make Design' at Config 2024",
+      "description_en": "At its annual developer conference Config (26-27 June 2024 in San Francisco), Figma unveiled the generative AI feature 'Make Design', which produces full app interfaces from text prompts. According to Figma the feature relied on off-the-shelf LLMs together with commissioned 'design systems' from contractors, not on Figma's own content. The tight Config deadline put the team under time pressure.",
+      "sources": [
+        "https://www.figma.com/blog/config-2024-recap/"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "phase": "doctrine",
+      "title": "Schnelles Ausrollen ohne ausreichende QA-Prüfung",
+      "description": "Make Design wurde ohne vollständigen Qualitätssicherungs-Durchlauf an die Nutzer ausgerollt. CEO Dylan Field räumte später ein, es sei sein Fehler gewesen, keinen besseren QA-Prozess durchzusetzen und das Team auf das Config-Lieferdatum hin anzutreiben. Die letzten Komponenten-Updates der zugelieferten Design-Systeme blieben dadurch ungeprüft.",
+      "title_de": "Schnelles Ausrollen ohne ausreichende QA-Prüfung",
+      "description_de": "Make Design wurde ohne vollständigen Qualitätssicherungs-Durchlauf an die Nutzer ausgerollt. CEO Dylan Field räumte später ein, es sei sein Fehler gewesen, keinen besseren QA-Prozess durchzusetzen und das Team auf das Config-Lieferdatum hin anzutreiben. Die letzten Komponenten-Updates der zugelieferten Design-Systeme blieben dadurch ungeprüft.",
+      "title_en": "Rapid rollout without adequate QA review",
+      "description_en": "Make Design was rolled out to users without a full quality-assurance pass. CEO Dylan Field later admitted it was his fault for not insisting on a better QA process and for pushing the team toward the Config deadline. As a result, the latest component updates of the supplied design systems went unchecked.",
+      "sources": [
+        "https://techcrunch.com/2024/07/02/figma-disables-its-ai-design-feature-that-appeared-to-be-ripping-off-apples-weather-app/"
+      ]
+    },
+    {
+      "date": "2024-07-01",
+      "phase": "event",
+      "title": "Make Design liefert wiederholt nahezu identische Apple-Wetter-App",
+      "description": "Andy Allen, Gründer von NotBoring Software, dokumentierte am 1. Juli 2024, dass Make Design auf Prompts wie 'not boring weather app' wiederholt nahezu identische Kopien der Apple-Wetter-App generierte. Die erzeugten Layouts, Symbole und Anordnungen waren der geschützten Apple-Vorlage so ähnlich, dass das KI-Tool praktisch fremdes Design reproduzierte statt eigenes zu erzeugen.",
+      "title_de": "Make Design liefert wiederholt nahezu identische Apple-Wetter-App",
+      "description_de": "Andy Allen, Gründer von NotBoring Software, dokumentierte am 1. Juli 2024, dass Make Design auf Prompts wie 'not boring weather app' wiederholt nahezu identische Kopien der Apple-Wetter-App generierte. Die erzeugten Layouts, Symbole und Anordnungen waren der geschützten Apple-Vorlage so ähnlich, dass das KI-Tool praktisch fremdes Design reproduzierte statt eigenes zu erzeugen.",
+      "title_en": "Make Design repeatedly outputs near-identical Apple Weather app",
+      "description_en": "On 1 July 2024 Andy Allen, founder of NotBoring Software, documented that Make Design repeatedly produced near-identical clones of Apple's Weather app for prompts such as 'not boring weather app'. The generated layouts, icons and arrangements were so close to the protected Apple original that the AI tool effectively reproduced someone else's design rather than creating its own.",
+      "sources": [
+        "https://www.404media.co/figma-disables-ai-app-design-tool-after-it-copied-apples-weather-app/"
+      ]
+    },
+    {
+      "date": "2024-07-02",
+      "phase": "consequences",
+      "title": "Figma deaktiviert Make Design vorübergehend",
+      "description": "Nach öffentlicher Kritik deaktivierte Figma die Funktion Make Design temporär, bis ein vollständiger QA-Durchlauf der zugrunde liegenden Design-Systeme abgeschlossen sei. Der Vorfall wurde zum vielzitierten Beispiel dafür, dass generative KI-Werkzeuge ohne saubere Daten- und Prüfgrundlage geschütztes Design reproduzieren können.",
+      "title_de": "Figma deaktiviert Make Design vorübergehend",
+      "description_de": "Nach öffentlicher Kritik deaktivierte Figma die Funktion Make Design temporär, bis ein vollständiger QA-Durchlauf der zugrunde liegenden Design-Systeme abgeschlossen sei. Der Vorfall wurde zum vielzitierten Beispiel dafür, dass generative KI-Werkzeuge ohne saubere Daten- und Prüfgrundlage geschütztes Design reproduzieren können.",
+      "title_en": "Figma temporarily disables Make Design",
+      "description_en": "Following public criticism, Figma temporarily disabled the Make Design feature until a full QA pass of the underlying design systems was complete. The incident became a widely cited example of how generative AI tools can reproduce protected design without a clean data and review foundation.",
+      "sources": [
+        "https://techcrunch.com/2024/07/02/figma-disables-its-ai-design-feature-that-appeared-to-be-ripping-off-apples-weather-app/",
+        "https://9to5mac.com/2024/07/19/figma-explains-why-ai-kept-making-copies-of-apples-weather-app/"
+      ]
+    }
+  ],
   "asm:sources": [
     {
       "url": "https://techcrunch.com/2024/07/02/figma-disables-its-ai-design-feature-that-appeared-to-be-ripping-off-apples-weather-app/",
