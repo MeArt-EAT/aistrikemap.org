@@ -44,6 +44,22 @@ function getSlug(s) {
   return id.split('/').pop();
 }
 
+// Radar-Daten sind seit der Bilingual-Migration nur noch in *_de / *_en
+// vorhanden. Der Feed ist deutschsprachig, also DE zuerst; die unsuffigierten
+// Namen bleiben als Fallback fuer aeltere Datensaetze stehen.
+function pick(obj, base) {
+  if (!obj) return '';
+  return obj[base + '_de'] || obj[base] || obj[base + '_en'] || '';
+}
+
+// Atom verlangt volles RFC3339. Die Daten liefern YYYY, YYYY-MM oder
+// YYYY-MM-DD - unvollstaendige Angaben auf den Monats-/Jahresanfang setzen.
+function toRfc3339(dateStr, fallback) {
+  var m = /^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?$/.exec(String(dateStr || '').trim());
+  if (!m) return fallback;
+  return m[1] + '-' + (m[2] || '01') + '-' + (m[3] || '01') + 'T00:00:00Z';
+}
+
 var entries = situations.map(function (s) {
   var slug = getSlug(s);
   var link = SITE_URL + '/radar.html?radar=' + slug;
@@ -54,23 +70,24 @@ var entries = situations.map(function (s) {
   var published = s.startDate || '';
 
   // Build summary from description + latest timeline entry
-  var summary = s.description || '';
+  var summary = pick(s, 'description');
   var timeline = s['asm:developmentTimeline'] || [];
   if (timeline.length) {
     var newest = timeline.slice().sort(function (a, b) {
       return (b.date || '').localeCompare(a.date || '');
     })[0];
     if (newest) {
-      summary += '\n\nNeuste Entwicklung (' + newest.date + '): ' + newest.title + ' — ' + newest.description;
+      summary += '\n\nNeuste Entwicklung (' + newest.date + '): ' +
+        pick(newest, 'title') + ' — ' + pick(newest, 'description');
     }
   }
 
   return '  <entry>\n' +
-    '    <title>' + esc(s.name) + ' [' + status.toUpperCase() + ']</title>\n' +
+    '    <title>' + esc(pick(s, 'name')) + ' [' + status.toUpperCase() + ']</title>\n' +
     '    <link href="' + esc(link) + '" rel="alternate" />\n' +
     '    <id>' + esc(link) + '</id>\n' +
-    '    <updated>' + (lastUpdated ? lastUpdated + 'T00:00:00Z' : updated) + '</updated>\n' +
-    (published ? '    <published>' + published + 'T00:00:00Z</published>\n' : '') +
+    '    <updated>' + toRfc3339(lastUpdated, updated) + '</updated>\n' +
+    (published ? '    <published>' + toRfc3339(published, updated) + '</published>\n' : '') +
     '    <summary type="text">' + esc(summary) + '</summary>\n' +
     '    <category term="' + esc(status) + '" label="Status: ' + esc(status) + '" />\n' +
     (dims ? '    <category term="dimensions" label="' + esc(dims) + '" />\n' : '') +
