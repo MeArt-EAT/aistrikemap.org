@@ -13,7 +13,7 @@
 | 🔢 **Übergabe-Nr** | **#12** (2026-08-07) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
 | ✅ **Zuletzt fertig** | **(2026-08-07, Übergabe #12)** **Korpusweiter Smart-Char-Sweep + Atom-Feed-Fix.** 743 Files auf ASCII-Satzzeichen normalisiert (7776 Ersetzungen: 6818 ` — `, 531 ` – `, 204 Bis-Striche, 146 typografische Quotes, 55 **unsichtbare Soft-Hyphens U+00AD**, 7 kaputte ` —,`, 6 Ellipsen). Neues Tooling `scripts/normalize-smart-chars.js` (idempotent, `--dry-run`, Text-Level statt parse/stringify → minimaler Diff, JSON-Parse-Gate vor UND nach der Ersetzung). Verifikation: 743/743 Files mit identischem Textkern gegen HEAD, **0 Datumsfelder verändert**, Audit 0, Validator 0 Smart-Char-Fehler, Frontend live geprüft (2457 geladen, Detail-Panel + Permalink OK). **Entscheidung: i18n/*.json + *.html behalten den Em-Dash** (handgesetzter Hausstil „Stufe 1 — Gemeldet", vom Validator nicht erfasst). **Bonus-Fund: Atom-Feed war seit der Bilingual-Migration inhaltsleer** (`<title> [ESKALIEREND]</title>`, `undefined — undefined`, ungültiges RFC3339) — `generate-feed.js` las noch `s.name`/`newest.title` statt `*_de`; behoben. Stale Worktrees entfernt (6,9 MB → 4 KB). — **(2026-06-26, Übergabe #11)** **Reverse-TL-Feature KOMPLETT — 2457/2457 = 100.0 %.** 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle geklärt** (Recherche-Workflow: prabowo→Anies Baswedan, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→Univ. of Washington/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert; 10/10 adversarial verifiziert). Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch durchgehend, 0 Stalls. **Neues Tooling: `scripts/validate-timelines.js`** (Pre-Commit-Validator). Slug/@id bei Korrekturen unverändert (Permalink; correctionNote in metadata wo Slug inhaltlich abweicht). Audit durchgehend 0. |
-| ➡️ **Nächster Schritt** | **NEU AUFGETAUCHT — höchste Prio: `validate-timelines.js` korpusweit aufräumen.** Der Validator lief bisher nur pro TL-Welle auf neuen Files, nie über den Gesamtkorpus. Erster Vollscan (2026-08-07): **463 Files / 606 ERRORs**, davon ~178 reine **Validator-Lücke** (Jahresbereiche `2024-2025` als TL-Datum sind legitim, werden aber als „ungültiges Datum" gemeldet) und ~380 **echte Strukturmängel** (134× mehr als 1 event-Phase, ~240× absteigende Chronologie). Erst Validator um Bereichs-Daten erweitern, dann die echten Fälle abarbeiten. · Danach: Career-Daten via Dataset-Download · AIAAIC Batch D (pre-2015) · `needs-review`-Cases sichten (~180) · Slug-Migration der abweichenden Permalinks |
+| ➡️ **Nächster Schritt** | **Entscheidung offen: Phasen-Regel lockern oder 134 Files umbauen.** Der Validator-Vollscan ist von 606 auf **152 ERRORs** runter (Lücken geschlossen + 14 echte Fehler behoben, inkl. eines Live-404 im Detail-Panel). Was bleibt, ist **eine Modellfrage**: „genau 1 `event`-Phase" kollidiert mit „chronologisch aufsteigend" — 117 Files bilden ein mehrstufiges Ereignis korrekt geordnet ab und verstossen trotzdem. **Empfehlung: Regel lockern.** Details in Front 6. · Danach: Career-Daten via Dataset-Download · AIAAIC Batch D (pre-2015) · `needs-review`-Cases sichten (~180) · Slug-Migration der abweichenden Permalinks |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -83,20 +83,30 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
    Nebenbefund: 55 **unsichtbare Soft-Hyphens U+00AD** im Anzeigetext entfernt —
    die brachen Volltextsuche und String-Matching lautlos. Beim nächsten
    KI-Batch mitprüfen (`normalize-smart-chars.js --dry-run` als Gate).
-6. 🔴 **Timeline-Validator korpusweit — NEU, höchste Prio.** `validate-timelines.js`
-   lief bisher nur pro Welle auf frisch gebauten TLs. Erster Vollscan über alle
-   2457: **463 Files, 606 ERRORs, 380 WARNs.** Zwei Klassen:
-   - **Validator-Lücke (~180):** TL-Daten wie `2024-2025`, `2018-2021` sind
-     legitime Zeit*räume* für infrastructure/doctrine-Phasen, der Validator
-     kennt aber nur `YYYY`, `YYYY-MM`, `YYYY-MM-DD`. **Zuerst den Validator um
-     Bereiche erweitern** (und die Chronologie-Prüfung auf Bereichs-Anfang
-     stützen), sonst rauscht der echte Befund im Grundrauschen unter.
-   - **Echte Strukturmängel (~380):** 134× mehr als eine `event`-Phase (Schema
-     sagt genau 1), ~240× absteigende Chronologie, 3× >6 Einträge, 2× `@id`
-     passt nicht zum Dateinamen, 1× `description !== description_de`
-     (`usa-apple-intelligence-bbc-falsche-news-headlines`, vorbestehend).
-   Ein paar Datumsangaben sind zudem Freitext (`ab 2024`, `2024 (vor Oktober)`,
-   `2023-2024-Q1`) — die gehören sauber normiert.
+6. 🟡 **Timeline-Validator korpusweit — grösstenteils erledigt, 1 Modellfrage offen.**
+   Erster Vollscan (2026-08-07) meldete 463 Files / 606 ERRORs. Nach Validator-
+   Korrektur + Daten-Fixes: **150 Files / 152 ERRORs**.
+   ✅ **Validator-Lücken geschlossen** (Commit `0f93881`): Zeiträume
+   (`2018-2021`, `2023-06 bis 2024-06`) werden erkannt, Chronologie vergleicht
+   auf **gemeinsamer Granularität** (`2021-08-15` vs `2021-08` ist kein
+   Widerspruch — das waren allein 283 Falsch-Positive).
+   ✅ **14 eindeutige Datenfehler behoben** (Commit `15543ad`), darunter ein
+   **Live-Bug**: 2 `@id` enthielten echte Umlaute, während die Dateien
+   transliteriert heissen → `detail-panel.js:224` leitet den Dateinamen aus der
+   `@id` ab, der Detail-Fetch lief auf **404**. Behoben und im Browser
+   gegengeprüft (jetzt 200 + Timeline).
+   🔴 **OFFEN — Modellfrage, keine Schlamperei:** Die verbleibenden 152 ERRORs
+   sind fast alle **134× „genau 1 event-Phase erwartet"**. Davon haben **117**
+   eine korrekte Phasen-Reihenfolge und bilden nur ein **mehrstufiges Ereignis**
+   ab (Festnahme + Urteil); 16 haben wirklich verschränkte Phasen, 1 gar kein
+   event. **Ursache:** Die Regel „genau 1 event" kollidiert mit der Regel
+   „chronologisch aufsteigend" — sobald die Doktrin nach dem ersten Ereignis
+   datiert, *müssen* sich die Phasen verschränken. Dazu 14× Chronologie, davon
+   8× `infrastructure → doctrine` mit **älterer Doktrin** (Maschinenrichtlinie
+   2006, OSHA 1989, japanisches Obszönitätsrecht 1907) — kausal korrekt, nur
+   nicht aufsteigend. **Entscheidung nötig:** Regel lockern (mehrere `event`
+   erlauben, Reihenfolge nur innerhalb der Phase prüfen) ODER 134 Files
+   umbauen. Empfehlung: Regel lockern — die Daten sind plausibler als das Schema.
 
 ## 🧱 Bekannte false-positives (KEIN Handlungsbedarf)
 Dubletten-Check meldet dauerhaft als "strong/likely", sind aber verschiedene
