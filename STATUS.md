@@ -5,15 +5,15 @@
 
 ---
 
-## ⏱️ STAND: 2026-06-26
+## ⏱️ STAND: 2026-08-07
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2457 Incidents** · **2457 mit Reverse-TL (100.0 %)** ✅ · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2951** Mappings) · Lite-Bundle 7.9 MB (1.6 MB gzip) |
-| 🔢 **Übergabe-Nr** | **#11** (2026-06-26) |
+| 📊 **Bestand** | **2457 Incidents** · **2457 mit Reverse-TL (100.0 %)** ✅ · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2951** Mappings) · **Satzzeichen korpusweit ASCII** (0 Smart-Chars) · Lite-Bundle 7.9 MB (1.6 MB gzip) |
+| 🔢 **Übergabe-Nr** | **#12** (2026-08-07) |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **(2026-06-26, Übergabe #11)** **Reverse-TL-Feature KOMPLETT — 2457/2457 = 100.0 %.** 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle geklärt** (Recherche-Workflow: prabowo→Anies Baswedan, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→Univ. of Washington/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert; 10/10 adversarial verifiziert). Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch durchgehend, 0 Stalls. **Neues Tooling: `scripts/validate-timelines.js`** (Pre-Commit-Validator). Slug/@id bei Korrekturen unverändert (Permalink; correctionNote in metadata wo Slug inhaltlich abweicht). Audit durchgehend 0. |
-| ➡️ **Nächster Schritt** | **Reverse-TL-Feature ist zu 100 % durch.** Nächste Baustellen: **korpusweiter Smart-Char-Sweep** (789 Files mit Em-Dash/Smart-Quotes in alten Display-Feldern) · ODER Career-Daten via Dataset-Download · ODER AIAAIC Batch D (pre-2015) · ODER `needs-review`-Cases sichten (~180, 20-30 Promotes) · ODER Slug-Migration der inhaltlich abweichenden Permalinks (estland/finnland/hmrc/prabowo) |
+| ✅ **Zuletzt fertig** | **(2026-08-07, Übergabe #12)** **Korpusweiter Smart-Char-Sweep + Atom-Feed-Fix.** 743 Files auf ASCII-Satzzeichen normalisiert (7776 Ersetzungen: 6818 ` — `, 531 ` – `, 204 Bis-Striche, 146 typografische Quotes, 55 **unsichtbare Soft-Hyphens U+00AD**, 7 kaputte ` —,`, 6 Ellipsen). Neues Tooling `scripts/normalize-smart-chars.js` (idempotent, `--dry-run`, Text-Level statt parse/stringify → minimaler Diff, JSON-Parse-Gate vor UND nach der Ersetzung). Verifikation: 743/743 Files mit identischem Textkern gegen HEAD, **0 Datumsfelder verändert**, Audit 0, Validator 0 Smart-Char-Fehler, Frontend live geprüft (2457 geladen, Detail-Panel + Permalink OK). **Entscheidung: i18n/*.json + *.html behalten den Em-Dash** (handgesetzter Hausstil „Stufe 1 — Gemeldet", vom Validator nicht erfasst). **Bonus-Fund: Atom-Feed war seit der Bilingual-Migration inhaltsleer** (`<title> [ESKALIEREND]</title>`, `undefined — undefined`, ungültiges RFC3339) — `generate-feed.js` las noch `s.name`/`newest.title` statt `*_de`; behoben. Stale Worktrees entfernt (6,9 MB → 4 KB). — **(2026-06-26, Übergabe #11)** **Reverse-TL-Feature KOMPLETT — 2457/2457 = 100.0 %.** 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle geklärt** (Recherche-Workflow: prabowo→Anies Baswedan, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→Univ. of Washington/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert; 10/10 adversarial verifiziert). Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch durchgehend, 0 Stalls. **Neues Tooling: `scripts/validate-timelines.js`** (Pre-Commit-Validator). Slug/@id bei Korrekturen unverändert (Permalink; correctionNote in metadata wo Slug inhaltlich abweicht). Audit durchgehend 0. |
+| ➡️ **Nächster Schritt** | **NEU AUFGETAUCHT — höchste Prio: `validate-timelines.js` korpusweit aufräumen.** Der Validator lief bisher nur pro TL-Welle auf neuen Files, nie über den Gesamtkorpus. Erster Vollscan (2026-08-07): **463 Files / 606 ERRORs**, davon ~178 reine **Validator-Lücke** (Jahresbereiche `2024-2025` als TL-Datum sind legitim, werden aber als „ungültiges Datum" gemeldet) und ~380 **echte Strukturmängel** (134× mehr als 1 event-Phase, ~240× absteigende Chronologie). Erst Validator um Bereichs-Daten erweitern, dann die echten Fälle abarbeiten. · Danach: Career-Daten via Dataset-Download · AIAAIC Batch D (pre-2015) · `needs-review`-Cases sichten (~180) · Slug-Migration der abweichenden Permalinks |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -67,13 +67,7 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
    unverändert** (Permalink-Stabilität) — wo der Slug jetzt inhaltlich abweicht
    (estland/finnland/hmrc/prabowo/ultraman), ist dies in `asm:metadata.asm:correctionNote`
    dokumentiert; optionale Slug-Migration als spätere Aufgabe.
-   ⚠️ **Korpusweiter Smart-Char-Befund (2026-06-25):** **789 von 2457 Files** haben
-   Em-Dash (~5090×), En-Dash (~562×) oder Smart-Quotes (~48×) in Display-Feldern
-   (v. a. alte Files; die neuen TL-Texte nutzen ` - `). Die 48 Smart-Quotes sind
-   klare CLAUDE.md-Verstöße; die Em-Dashes eher Stilkonsistenz. **Separater
-   korpusweiter Sweep** wäre nötig (analog Translit-Sweep #7), nicht in dieser
-   Session gemacht. Robuster Normalizer: charCode-Split (` — `/` – `→` - `,
-   `‘’`→`'`, `“”`→`"`).
+   ✅ **Smart-Char-Sweep ERLEDIGT (2026-08-07, Übergabe #12)** — siehe Front 5.
 3. ~~Frontend-Recheck~~ ✓ **ERLEDIGT** (2026-06-18): Lite-Bundle + Lazy-Detail +
    Caching-Fix. Erstabruf 3.9→1.6 MB gzip; TL-Wachstum trifft nur noch die
    lazy-geladenen Einzeldateien. `bundle-incidents.js` erzeugt jetzt
@@ -81,6 +75,28 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
 4. **needs-review-Cases** — Batch A+B+C haben zusammen ~180 needs-review (oft
    Bestand-Dubletten oder schwache Quellen) in den `*-round-6.json`-Files,
    nicht promotet. Manuell sichten lohnt für 20-30 weitere Promotes.
+5. **Smart-Chars / Satzzeichen** ✅ **ERLEDIGT** (2026-08-07): 743 Files auf
+   ASCII normalisiert, 7776 Ersetzungen. Tool: `scripts/normalize-smart-chars.js`
+   (idempotent, `--dry-run`). **Scope-Entscheidung:** nur `data/` — `i18n/*.json`
+   und `*.html` behalten den Em-Dash als handgesetzten Hausstil. Wer das später
+   ändern will, muss auch `generate-feed.js` (FEED_TITLE, Trenner) anfassen.
+   Nebenbefund: 55 **unsichtbare Soft-Hyphens U+00AD** im Anzeigetext entfernt —
+   die brachen Volltextsuche und String-Matching lautlos. Beim nächsten
+   KI-Batch mitprüfen (`normalize-smart-chars.js --dry-run` als Gate).
+6. 🔴 **Timeline-Validator korpusweit — NEU, höchste Prio.** `validate-timelines.js`
+   lief bisher nur pro Welle auf frisch gebauten TLs. Erster Vollscan über alle
+   2457: **463 Files, 606 ERRORs, 380 WARNs.** Zwei Klassen:
+   - **Validator-Lücke (~180):** TL-Daten wie `2024-2025`, `2018-2021` sind
+     legitime Zeit*räume* für infrastructure/doctrine-Phasen, der Validator
+     kennt aber nur `YYYY`, `YYYY-MM`, `YYYY-MM-DD`. **Zuerst den Validator um
+     Bereiche erweitern** (und die Chronologie-Prüfung auf Bereichs-Anfang
+     stützen), sonst rauscht der echte Befund im Grundrauschen unter.
+   - **Echte Strukturmängel (~380):** 134× mehr als eine `event`-Phase (Schema
+     sagt genau 1), ~240× absteigende Chronologie, 3× >6 Einträge, 2× `@id`
+     passt nicht zum Dateinamen, 1× `description !== description_de`
+     (`usa-apple-intelligence-bbc-falsche-news-headlines`, vorbestehend).
+   Ein paar Datumsangaben sind zudem Freitext (`ab 2024`, `2024 (vor Oktober)`,
+   `2023-2024-Q1`) — die gehören sauber normiert.
 
 ## 🧱 Bekannte false-positives (KEIN Handlungsbedarf)
 Dubletten-Check meldet dauerhaft als "strong/likely", sind aber verschiedene
@@ -97,7 +113,8 @@ Cases — NICHT mergen:
 `find-internal-duplicates.js` · `merge-internal-duplicates.js` ·
 `fix-smart-quotes-chunks.js` (neu Batch C) · `promote-candidates.js` ·
 `fix-umlaut-transliterations.js` · `bundle-incidents.js` ·
-`audit-bilingual-incidents.js`
+`audit-bilingual-incidents.js` · `validate-timelines.js` ·
+**`normalize-smart-chars.js`** (neu 2026-08-07)
 
 > ⚠️ **Translit-Tooling (Stand 2026-06-25):** Fixer + Audit teilen
 > `data/translit-extra-map.json` (**2951** validierte `ae/oe/ue/ss`→`ä/ö/ü/ß`-Mappings,
@@ -115,6 +132,7 @@ Briefings: `data/incident-candidates/_enrichment-briefing.md` (Abschnitt 1b
 Datums-Verifikation), `_timeline-briefing.md`.
 
 ## 📜 Übergabe-Historie (neueste zuerst)
+- **#12** 2026-08-07 → `docs/planung/übergabe-2026-08-07-smart-char-sweep.md` — **Korpusweiter Smart-Char-Sweep** (743 Files, 7776 Ersetzungen, neues Tool `normalize-smart-chars.js`), **Atom-Feed-Fix** (war seit Bilingual-Migration inhaltsleer: leere Titel, `undefined — undefined`, ungültiges RFC3339), **erster korpusweiter Validator-Vollscan** → 463 Files / 606 ERRORs aufgedeckt (neue Top-Prio), Worktree-Cleanup 6,9 MB → 4 KB, 2 Commits
 - **#11** 2026-06-26 → `docs/planung/übergabe-2026-06-26-sev2-offensive.md` — **Reverse-TL-Feature KOMPLETT: 2457/2457 = 100.0 %** — 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle per Recherche-Workflow geklärt** (10/10 adversarial verifiziert; prabowo→Anies, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→UW/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert). Neues Tooling `scripts/validate-timelines.js` (Pre-Commit-Validator, Morphem-Gap-Scan); Korpus-Begriffe harmonisiert (Gender/LGBTQ/Due-process); WebSearch durchgehend, 0 Stalls, Audit 0; Slug/@id stabil (correctionNote wo abweichend), ~45 Commits gepusht
 - **#10** 2026-06-25 → `docs/planung/übergabe-2026-06-25-sev3-abschluss-wellen-34-45.md` — **12 Sev-3-TL-Wellen 34–45** (+288, TL 66.7→**78.5 %**), **Sev-3-Block abgeschlossen** (Sev-5/4/3 alle ~100 %), Prompt-Härtung drückte Translit-Nacharbeit auf ~0, Validator um @id/Chronologie/Em-Dash erweitert, Map 2903→2951, User-Faktenkorrektur New-Orleans-6:1, korpusweiter Smart-Char-Befund (789 Files), 12+ Commits gepusht
 - **#9** 2026-06-21 → `docs/planung/übergabe-2026-06-21-sev3-wellen-24-33-und-websearch-vorfall.md` — **10 weitere Sev-3-TL-Wellen 24–33** (+240, TL 57.0→**66.7 %**, kumuliert 17–33 = +407), WebSearch-Ausfall-Vorfall (Welle 26 verworfen + frisch wiederholt), laufende Translit-Map-Pflege (2870→2903), 19 Commits gepusht
