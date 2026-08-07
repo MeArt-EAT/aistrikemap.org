@@ -77,9 +77,48 @@ function dparts(d) {
   if (!m) return null;
   return [parseInt(m[1], 10), m[2] ? parseInt(m[2], 10) : null, m[3] ? parseInt(m[3], 10) : null];
 }
-function cmpDate(a, b) {
-  const A = dparts(a), B = dparts(b);
-  if (!A || !B) return NaN;
+
+// --- Zeitraeume ---
+// infrastructure- und doctrine-Phasen beschreiben oft eine Entwicklung ueber
+// Jahre, nicht ein Ereignis an einem Tag. "2018-2021" oder "2023-06 bis 2024-06"
+// sind daher legitime TL-Daten und keine Fehler.
+//
+// Erkannt werden:
+//   2018-2021              Jahresbereich (2021 ist kein gueltiger Monat -> eindeutig)
+//   2019-11-2020           Monat bis Jahr
+//   2023-12-2024-02        Monat bis Monat, ohne Trenner aneinandergehaengt
+//   2023-06 bis 2024-06    mit "bis" ausgeschrieben
+//
+// Bewusst NICHT erkannt (bleibt ERROR, gehoert in den Daten normiert):
+//   "ab 2024", "2024 (vor Oktober)", "2023-2024-Q1"
+function parseDate(d) {
+  const s = String(d == null ? '' : d).trim();
+
+  const point = dparts(s);
+  if (point) return { start: point, end: point, isRange: false };
+
+  // Ausgeschriebene Form: "<datum> bis <datum>"
+  const bis = s.split(/\s+bis\s+/i);
+  if (bis.length === 2) {
+    const a = dparts(bis[0].trim()), b = dparts(bis[1].trim());
+    if (a && b) return { start: a, end: b, isRange: true };
+    return null;
+  }
+
+  // Aneinandergehaengte Form: an jedem "-" trennen und pruefen, ob beide
+  // Haelften fuer sich gueltige Punkt-Daten sind. Die zweite Haelfte muss mit
+  // einer vierstelligen Jahreszahl beginnen, sonst waere "2024-06-18" mehrdeutig.
+  for (let i = 4; i < s.length; i++) {
+    if (s[i] !== '-') continue;
+    const left = s.slice(0, i), right = s.slice(i + 1);
+    if (!/^\d{4}(-|$)/.test(right)) continue;
+    const a = dparts(left), b = dparts(right);
+    if (a && b) return { start: a, end: b, isRange: true };
+  }
+  return null;
+}
+
+function cmpParts(A, B) {
   if (A[0] !== B[0]) return A[0] - B[0];
   for (let i = 1; i < 3; i++) {
     if (A[i] === null && B[i] !== null) return -1;
@@ -87,6 +126,31 @@ function cmpDate(a, b) {
     if (A[i] !== null && B[i] !== null && A[i] !== B[i]) return A[i] - B[i];
   }
   return 0;
+}
+
+// Vergleich auf der GEMEINSAMEN Granularitaet: die groebere Angabe gibt den
+// Massstab vor. "2021-08-15" und "2021-08" sind auf Monatsebene gleich - der
+// 15. August liegt im August, das ist kein Widerspruch. Nur wenn beide Daten
+// auf ihrer gemeinsamen Ebene wirklich auseinanderlaufen (2015-07 vs 2015-05),
+// ist es ein echter Chronologie-Fehler.
+//
+// Ohne diese Regel meldet der Validator 283 Falsch-Positive - gemischte
+// Granularitaet ist im Korpus Projektstandard, nicht Schlamperei.
+function cmpCommonGranularity(A, B) {
+  const depth = x => (x[2] !== null ? 3 : (x[1] !== null ? 2 : 1));
+  const d = Math.min(depth(A), depth(B));
+  for (let i = 0; i < d; i++) {
+    if (A[i] !== B[i]) return A[i] - B[i];
+  }
+  return 0;
+}
+
+// Chronologie wird ueber den BEGINN verglichen: eine infrastructure-Phase
+// "2018-2021" darf einer doctrine-Phase "2019" vorausgehen.
+function cmpDate(a, b) {
+  const A = parseDate(a), B = parseDate(b);
+  if (!A || !B) return NaN;
+  return cmpCommonGranularity(A.start, B.start);
 }
 
 function findSmartChars(node, pathStr, hits) {
@@ -158,7 +222,11 @@ function validateFile(slug, file, mapKeys) {
       if (!VALID_PHASES.has(e.phase)) errors.push(`Eintrag ${i}: unbekannte Phase "${e.phase}"`);
       if (e.title !== e.title_de) errors.push(`Eintrag ${i}: title !== title_de`);
       if (e.description !== e.description_de) errors.push(`Eintrag ${i}: description !== description_de`);
-      if (dparts(e.date) === null) errors.push(`Eintrag ${i}: ungueltiges Datum "${e.date}"`);
+      const pd = parseDate(e.date);
+      if (pd === null) errors.push(`Eintrag ${i}: ungueltiges Datum "${e.date}"`);
+      else if (pd.isRange && cmpParts(pd.start, pd.end) > 0) {
+        errors.push(`Eintrag ${i}: Zeitraum laeuft rueckwaerts "${e.date}"`);
+      }
     });
 
     // Chronologie strikt aufsteigend
@@ -166,7 +234,12 @@ function validateFile(slug, file, mapKeys) {
       const c = cmpDate(tl[i - 1].date, tl[i].date);
       if (Number.isNaN(c)) continue;
       if (c > 0) errors.push(`Chronologie absteigend: [${i - 1}] ${tl[i - 1].date} (${tl[i - 1].phase}) > [${i}] ${tl[i].date} (${tl[i].phase})`);
-      else if (c === 0) warns.push(`gleiches Datum [${i - 1}]/[${i}] ${tl[i].date} (akzeptabel wenn real)`);
+      // Nur warnen, wenn die Datums-STRINGS identisch sind. Ein Treffer aus
+      // dem Granularitaets-Vergleich ("2021-08-15" == "2021-08" auf Monats-
+      // ebene) ist kein doppeltes Datum, sondern der Normalfall im Korpus.
+      else if (c === 0 && String(tl[i - 1].date) === String(tl[i].date)) {
+        warns.push(`gleiches Datum [${i - 1}]/[${i}] ${tl[i].date} (akzeptabel wenn real)`);
+      }
     }
   }
 
