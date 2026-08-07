@@ -225,7 +225,10 @@ function validateFile(slug, file, mapKeys) {
       const pd = parseDate(e.date);
       if (pd === null) errors.push(`Eintrag ${i}: ungueltiges Datum "${e.date}"`);
       else if (pd.isRange && cmpParts(pd.start, pd.end) > 0) {
-        errors.push(`Eintrag ${i}: Zeitraum laeuft rueckwaerts "${e.date}"`);
+        // Faengt sowohl echte Umkehrungen ("2021-2018") als auch redundante
+        // Enden ab, die keine Information tragen ("2025-02-2025" = Feb 2025
+        // bis 2025) - beides gehoert in den Daten korrigiert.
+        errors.push(`Eintrag ${i}: Zeitraum-Ende liegt nicht nach dem Beginn "${e.date}"`);
       }
     });
 
