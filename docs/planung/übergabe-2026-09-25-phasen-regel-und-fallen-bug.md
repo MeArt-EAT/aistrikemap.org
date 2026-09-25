@@ -189,3 +189,49 @@ Permalink (volle `@id`-URL, siehe #12), Timeline rendert mit neuen Phasen,
   auf „Per file" werfen und bei Treffern in frisch korrigierten Files den
   Kontext prüfen.
 - Rest unverändert (siehe #12).
+
+---
+
+## Nachtrag (gleiche Session): 11 Seed-Incidents faktengeprüft (Commit `5367c4e`)
+
+Schritt 1 der Liste oben ist erledigt. Mali war durch den fallen-Fix schon
+behoben, blieben 11 Files. Ablauf: 3 Korrektur-Agenten (Timelines), 1 Agent
+für Top-Level-Felder, die den korrigierten Timelines widersprachen, 3
+unabhängige adversariale Prüfer, 1 Nachbesserungsrunde. WebFetch war für
+die meisten Primärquellen durch den Proxy gesperrt, Belege daher über
+WebSearch-Snippets.
+
+**Befund: In allen 11 Files steckten echte Faktenfehler**, nicht nur fehlende
+Quellen. Beispiele: Schweden-Test lief Q4 2018 (nicht 2019-01, `startDate`
+angepasst) und war Schwedens erste DSGVO-Strafe, nicht die erste weltweit;
+CENTAUR ist das Lager-Überwachungssystem der Ägäis-Inseln, kein
+EU-Grenzroboter; die „464 % Deepfake-Zuwachs in Brasilien" sind eine
+globale Zahl; die „42 Festnahmen" in Salvador gehören zum Karneval 2020;
+„Hitlergruß-Pose" und „Sowjet-Uniform" (Argentinien) stehen in keiner
+Quelle; Frankreichs APB nutzte Losverfahren, keine transparente Rangliste.
+
+Geändert wurden nur Timelines, die Hauptbeschreibungen (DE/EN parallel),
+`asm:actors` (Chile, Griechenland), `asm:sources` (Frankreich,
+Griechenland) und ein `startDate`. Jeder TL-Eintrag dieser Files hat jetzt
+mindestens eine Quelle (ein Algerien-Eintrag hat 4, weil jede eine andere
+Aussage belegt; das Briefing empfiehlt max. 2, der Validator erzwingt es
+nicht).
+
+### Neue Front: quellenlose Timelines
+
+Korpusweit haben **943 von 10.923 TL-Einträgen (8,6 %) keine Quelle**,
+verteilt auf 425 Files; **89 Files haben überhaupt keine TL-Quelle**
+(nach Severity der Files mit Lücken: Sev-5 57, Sev-4 151, Sev-3 166,
+Sev-2 46, Sev-1 5). Nach der 11-von-11-Erfahrung ist das die
+wahrscheinlichste Fundstelle für weitere Faktenfehler. Empfohlene
+Reihenfolge: die 89 komplett quellenlosen zuerst, darin Sev-5/4 zuerst.
+Methode wie oben. Liste erzeugen:
+
+```
+node -e 'const fs=require("fs");for(const f of fs.readdirSync("data/incidents")){if(!f.endsWith(".json"))continue;const j=JSON.parse(fs.readFileSync("data/incidents/"+f,"utf8"));const tl=j["asm:reverseTimeline"]||[];if(tl.length&&tl.every(e=>!e.sources||!e.sources.length))console.log(j["asm:severity"]+" "+f.replace(".json",""))}' | sort -r
+```
+
+Randnotizen der Prüfer (nicht bearbeitet): Slug `griechenland-predpol-…`
+passt inhaltlich nicht mehr (kein Predictive Policing), bleibt aus
+Permalink-Gründen. Chile-Name spricht noch von „KI-Überwachung der
+Mapuche", die Timeline beschreibt konventionelle Geheimdienstüberwachung.
