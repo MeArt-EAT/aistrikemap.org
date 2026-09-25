@@ -19,6 +19,21 @@ nicht isoliert, sondern als Kausalkette gezeigt.
 Manche Faelle brauchen 4 Eintraege (1 pro Phase), manche 5-6 (z.B. 2
 consequences). Mindestens 4, hoechstens 6.
 
+### Phasen-Reihenfolge (vom Validator geprüft)
+
+- **Mindestens 1 `event`.** Ein mehrstufiger Vorfall (Festnahme + Urteil,
+  Leak + Bußgeld) darf mehrere `event`-Einträge haben.
+- **Vor dem ersten `event`** stehen nur `infrastructure`/`doctrine` – eine
+  Folge ohne Vorfall gibt es nicht.
+- **Nach dem letzten `event`** stehen nur `consequences`. Was nach dem Vorfall
+  passiert (Behördenbericht, Urteil, neues Gesetz als Reaktion, Wiederzulassung,
+  Debatte), ist eine Folge, keine Doktrin – auch wenn es ein Gesetz ist.
+- **Zwischen zwei `event`-Einträgen** ist alles erlaubt (z.B. eine Doktrin, die
+  erst die zweite Stufe ermöglichte).
+- `infrastructure` und `doctrine` bilden einen gemeinsamen Vorbedingungs-Block
+  ohne feste Reihenfolge untereinander: Ist das Gesetz älter als das System,
+  steht die `doctrine` zuerst. Es gilt allein die Chronologie.
+
 ## Exakte Feld-Struktur pro Eintrag
 
 ```json
