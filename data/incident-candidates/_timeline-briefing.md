@@ -23,11 +23,11 @@ consequences). Mindestens 4, hoechstens 6.
 
 - **Mindestens 1 `event`.** Ein mehrstufiger Vorfall (Festnahme + Urteil,
   Leak + Bußgeld) darf mehrere `event`-Einträge haben.
-- **Vor dem ersten `event`** stehen nur `infrastructure`/`doctrine` – eine
+- **Vor dem ersten `event`** stehen nur `infrastructure`/`doctrine` - eine
   Folge ohne Vorfall gibt es nicht.
 - **Nach dem letzten `event`** stehen nur `consequences`. Was nach dem Vorfall
   passiert (Behördenbericht, Urteil, neues Gesetz als Reaktion, Wiederzulassung,
-  Debatte), ist eine Folge, keine Doktrin – auch wenn es ein Gesetz ist.
+  Debatte), ist eine Folge, keine Doktrin - auch wenn es ein Gesetz ist.
 - **Zwischen zwei `event`-Einträgen** ist alles erlaubt (z.B. eine Doktrin, die
   erst die zweite Stufe ermöglichte).
 - `infrastructure` und `doctrine` bilden einen gemeinsamen Vorbedingungs-Block
