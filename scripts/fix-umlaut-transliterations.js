@@ -194,9 +194,10 @@ const FIX_MAP = {
   'aehnlichen': 'ähnlichen',
   'ahnlicher': 'ähnlicher',
   'aehnlicher': 'ähnlicher',
-  'falle': 'fälle',
+  // 'falle'/'fallen' bewusst NICHT: Beides sind echte Wörter (Falle, fallen).
+  // Die Umlaut-los-Form hat hier "unter das Verbot fallen" korpusweit zu
+  // "fällen" verfälscht. Nur die eindeutige ae-Schreibung wird ersetzt.
   'faelle': 'fälle',
-  'fallen': 'fällen',
   'faellen': 'fällen',
   'aufgespurt': 'aufgespürt',
   'aufgespuert': 'aufgespürt',

@@ -181,7 +181,8 @@ const TRANSLITERATED_GERMAN_WORDS = [
   'prufen', 'pruefen', 'pruft', 'prueft', 'pruefung', 'prufung',
   'ahnlich', 'aehnlich', 'ahnliche', 'aehnliche',
   'ahnlichen', 'aehnlichen', 'ahnlicher', 'aehnlicher',
-  'falle', 'faelle', 'fallen', 'faellen',
+  // 'falle'/'fallen' sind echte Wörter (Falle, fallen) - nicht melden
+  'faelle', 'faellen',
   'aufgespurt', 'aufgespuert',
   'bemangeln', 'bemaengeln', 'bemangelt', 'bemaengelt',
   'uberwacht', 'ueberwacht',
