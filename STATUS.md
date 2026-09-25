@@ -5,15 +5,15 @@
 
 ---
 
-## ⏱️ STAND: 2026-08-07
+## ⏱️ STAND: 2026-09-25
 
 | | |
 |---|---|
-| 📊 **Bestand** | **2457 Incidents** · **2457 mit Reverse-TL (100.0 %)** ✅ · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2951** Mappings) · **Satzzeichen korpusweit ASCII** (0 Smart-Chars) · Lite-Bundle 7.9 MB (1.6 MB gzip) |
-| 🔢 **Übergabe-Nr** | **#12** (2026-08-07) |
+| 📊 **Bestand** | **2457 Incidents** · **2457 mit Reverse-TL (100.0 %)** ✅ · **Validator korpusweit 0 ERRORs** ✅ · **0 Audit-Findings** · Anzeigetext korpusweit ä/ö/ü/ß (Translit-Map **2951** Mappings) · **Satzzeichen korpusweit ASCII** (0 Smart-Chars) · Lite-Bundle 7.9 MB (1.6 MB gzip) |
+| 🔢 **Übergabe-Nr** | **#13** (2026-09-25) · Branch `claude/stoic-ride-lt1b0j`, **noch nicht auf `main`** |
 | 🚩 **Phase** | 1 — Datenausbau (Items 1–93) |
-| ✅ **Zuletzt fertig** | **(2026-08-07, Übergabe #12)** **Korpusweiter Smart-Char-Sweep + Atom-Feed-Fix.** 743 Files auf ASCII-Satzzeichen normalisiert (7776 Ersetzungen: 6818 ` — `, 531 ` – `, 204 Bis-Striche, 146 typografische Quotes, 55 **unsichtbare Soft-Hyphens U+00AD**, 7 kaputte ` —,`, 6 Ellipsen). Neues Tooling `scripts/normalize-smart-chars.js` (idempotent, `--dry-run`, Text-Level statt parse/stringify → minimaler Diff, JSON-Parse-Gate vor UND nach der Ersetzung). Verifikation: 743/743 Files mit identischem Textkern gegen HEAD, **0 Datumsfelder verändert**, Audit 0, Validator 0 Smart-Char-Fehler, Frontend live geprüft (2457 geladen, Detail-Panel + Permalink OK). **Entscheidung: i18n/*.json + *.html behalten den Em-Dash** (handgesetzter Hausstil „Stufe 1 — Gemeldet", vom Validator nicht erfasst). **Bonus-Fund: Atom-Feed war seit der Bilingual-Migration inhaltsleer** (`<title> [ESKALIEREND]</title>`, `undefined — undefined`, ungültiges RFC3339) — `generate-feed.js` las noch `s.name`/`newest.title` statt `*_de`; behoben. Stale Worktrees entfernt (6,9 MB → 4 KB). — **(2026-06-26, Übergabe #11)** **Reverse-TL-Feature KOMPLETT — 2457/2457 = 100.0 %.** 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle geklärt** (Recherche-Workflow: prabowo→Anies Baswedan, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→Univ. of Washington/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert; 10/10 adversarial verifiziert). Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch durchgehend, 0 Stalls. **Neues Tooling: `scripts/validate-timelines.js`** (Pre-Commit-Validator). Slug/@id bei Korrekturen unverändert (Permalink; correctionNote in metadata wo Slug inhaltlich abweicht). Audit durchgehend 0. |
-| ➡️ **Nächster Schritt** | **Entscheidung offen: Phasen-Regel lockern oder 134 Files umbauen.** Der Validator-Vollscan ist von 606 auf **152 ERRORs** runter (Lücken geschlossen + 14 echte Fehler behoben, inkl. eines Live-404 im Detail-Panel). Was bleibt, ist **eine Modellfrage**: „genau 1 `event`-Phase" kollidiert mit „chronologisch aufsteigend" — 117 Files bilden ein mehrstufiges Ereignis korrekt geordnet ab und verstossen trotzdem. **Empfehlung: Regel lockern.** Details in Front 6. · Danach: Career-Daten via Dataset-Download · AIAAIC Batch D (pre-2015) · `needs-review`-Cases sichten (~180) · Slug-Migration der abweichenden Permalinks |
+| ✅ **Zuletzt fertig** | **(2026-09-25, Übergabe #13)** **Kausale Phasen-Regel + Validator korpusweit 0 ERRORs (2457/2457).** „Genau 1 event" ersetzt durch `checkPhaseOrder`: mind. 1 event, vor dem ersten nur Vorbedingung, nach dem letzten nur Folgen, I/D als gemeinsamer Block. Deckte **68 bisher unentdeckte Fehletiketten** auf (v.a. Folgen wie UN-Bericht/Bußgeld als `doctrine` nach dem Vorfall). 7 mechanisch getauscht, **69 per Workflow korrigiert** (18 Fix- + 18 adversariale Verify-Agenten, 68/69 direkt bestätigt, 1 nach Reparatur, 0 needs-human; 13 inhaltliche Änderungen alle WebSearch-belegt, 0 Felder außerhalb der TL verändert). **Bonus-Bug:** `fix-umlaut` enthielt `falle→fälle`/`fallen→fällen` (echte Wörter!) und zerstörte bei jedem Lauf korrektes Deutsch, auch in Titeln („Biometriedatenbanken fällen nach Taliban-Machtübernahme"); behoben + **114 Ersetzungen in 43 Files** repariert. Frontend im Browser geprüft. — **(2026-08-07, Übergabe #12)** **Korpusweiter Smart-Char-Sweep + Atom-Feed-Fix.** 743 Files auf ASCII-Satzzeichen normalisiert (7776 Ersetzungen: 6818 ` — `, 531 ` – `, 204 Bis-Striche, 146 typografische Quotes, 55 **unsichtbare Soft-Hyphens U+00AD**, 7 kaputte ` —,`, 6 Ellipsen). Neues Tooling `scripts/normalize-smart-chars.js` (idempotent, `--dry-run`, Text-Level statt parse/stringify → minimaler Diff, JSON-Parse-Gate vor UND nach der Ersetzung). Verifikation: 743/743 Files mit identischem Textkern gegen HEAD, **0 Datumsfelder verändert**, Audit 0, Validator 0 Smart-Char-Fehler, Frontend live geprüft (2457 geladen, Detail-Panel + Permalink OK). **Entscheidung: i18n/*.json + *.html behalten den Em-Dash** (handgesetzter Hausstil „Stufe 1 — Gemeldet", vom Validator nicht erfasst). **Bonus-Fund: Atom-Feed war seit der Bilingual-Migration inhaltsleer** (`<title> [ESKALIEREND]</title>`, `undefined — undefined`, ungültiges RFC3339) — `generate-feed.js` las noch `s.name`/`newest.title` statt `*_de`; behoben. Stale Worktrees entfernt (6,9 MB → 4 KB). — **(2026-06-26, Übergabe #11)** **Reverse-TL-Feature KOMPLETT — 2457/2457 = 100.0 %.** 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle geklärt** (Recherche-Workflow: prabowo→Anies Baswedan, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→Univ. of Washington/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert; 10/10 adversarial verifiziert). Workflow-Methode (24 Cases/Welle, Gen→adversariale Verify), WebSearch durchgehend, 0 Stalls. **Neues Tooling: `scripts/validate-timelines.js`** (Pre-Commit-Validator). Slug/@id bei Korrekturen unverändert (Permalink; correctionNote in metadata wo Slug inhaltlich abweicht). Audit durchgehend 0. |
+| ➡️ **Nächster Schritt** | **12 vorbestehende Faktenbefunde aus der Verify-Stufe abarbeiten** (eine Fix-/Verify-Welle). Meist frühe, handgeschriebene Seed-Incidents mit leeren `sources` und Unschärfen, z.B. Schweden-Event falsch datiert (Test lief Herbst 2018, nicht 2019-01), Algerien-Referendum-Eintrag unbelegt, Chile-Neurorechte-Datum. Liste in Übergabe #13. · Danach: Career-Daten via Dataset-Download · AIAAIC Batch D (pre-2015) · `needs-review`-Cases sichten (~180) · Slug-Migration der abweichenden Permalinks |
 | 🏆 **Liga** | **Größte kuratierte AI-Incident-DB weltweit** — vor AIID (~1361) und AIAAIC (~2249 roh) |
 
 **In einem Satz:** AIStrikeMap ist nach drei AIAAIC-Import-Batches (A+B+C, 2015-2026)
@@ -83,30 +83,18 @@ bilingual DE/EN, Geo-Mapping, Reverse-Timelines, 0 Audit-Findings.
    Nebenbefund: 55 **unsichtbare Soft-Hyphens U+00AD** im Anzeigetext entfernt —
    die brachen Volltextsuche und String-Matching lautlos. Beim nächsten
    KI-Batch mitprüfen (`normalize-smart-chars.js --dry-run` als Gate).
-6. 🟡 **Timeline-Validator korpusweit — grösstenteils erledigt, 1 Modellfrage offen.**
-   Erster Vollscan (2026-08-07) meldete 463 Files / 606 ERRORs. Nach Validator-
-   Korrektur + Daten-Fixes: **150 Files / 152 ERRORs**.
-   ✅ **Validator-Lücken geschlossen** (Commit `0f93881`): Zeiträume
-   (`2018-2021`, `2023-06 bis 2024-06`) werden erkannt, Chronologie vergleicht
-   auf **gemeinsamer Granularität** (`2021-08-15` vs `2021-08` ist kein
-   Widerspruch — das waren allein 283 Falsch-Positive).
-   ✅ **14 eindeutige Datenfehler behoben** (Commit `15543ad`), darunter ein
-   **Live-Bug**: 2 `@id` enthielten echte Umlaute, während die Dateien
-   transliteriert heissen → `detail-panel.js:224` leitet den Dateinamen aus der
-   `@id` ab, der Detail-Fetch lief auf **404**. Behoben und im Browser
-   gegengeprüft (jetzt 200 + Timeline).
-   🔴 **OFFEN — Modellfrage, keine Schlamperei:** Die verbleibenden 152 ERRORs
-   sind fast alle **134× „genau 1 event-Phase erwartet"**. Davon haben **117**
-   eine korrekte Phasen-Reihenfolge und bilden nur ein **mehrstufiges Ereignis**
-   ab (Festnahme + Urteil); 16 haben wirklich verschränkte Phasen, 1 gar kein
-   event. **Ursache:** Die Regel „genau 1 event" kollidiert mit der Regel
-   „chronologisch aufsteigend" — sobald die Doktrin nach dem ersten Ereignis
-   datiert, *müssen* sich die Phasen verschränken. Dazu 14× Chronologie, davon
-   8× `infrastructure → doctrine` mit **älterer Doktrin** (Maschinenrichtlinie
-   2006, OSHA 1989, japanisches Obszönitätsrecht 1907) — kausal korrekt, nur
-   nicht aufsteigend. **Entscheidung nötig:** Regel lockern (mehrere `event`
-   erlauben, Reihenfolge nur innerhalb der Phase prüfen) ODER 134 Files
-   umbauen. Empfehlung: Regel lockern — die Daten sind plausibler als das Schema.
+6. ✅ **Timeline-Validator korpusweit — ERLEDIGT (2026-09-25, Übergabe #13): 0 ERRORs.**
+   Verlauf: 606 → 166 (Zeiträume + Granularität, `0f93881`) → 152 (14 Datenfehler,
+   `15543ad`) → 80 (neue Phasen-Regel, `707d2c5`) → **0** (76 Files korrigiert,
+   `05a14bc`). **Phasen-Regel jetzt kausal** (`checkPhaseOrder`): mind. 1 `event`,
+   vor dem ersten nur `infrastructure`/`doctrine`, nach dem letzten nur
+   `consequences`, dazwischen alles; I/D als gemeinsamer Vorbedingungs-Block,
+   dort entscheidet die Chronologie. Die Modellfrage aus #12 ist damit
+   beantwortet: lockern **und** die bis dahin ungeprüfte Reihenfolge prüfen.
+   Regel steht auch im Briefing. **Gate ab jetzt korpusweit**, nicht nur pro Welle:
+   `ls data/incidents/*.json | sed 's#.*/##; s#\.json$##' | node scripts/validate-timelines.js --stdin`
+7. 🟡 **Vorbestehende Faktenbefunde (12 Files)** — von den Verify-Agenten in #13
+   notiert, nicht Teil des Auftrags. Siehe Übergabe #13, „Nächste Schritte" 1.
 
 ## 🧱 Bekannte false-positives (KEIN Handlungsbedarf)
 Dubletten-Check meldet dauerhaft als "strong/likely", sind aber verschiedene
@@ -137,11 +125,20 @@ Cases — NICHT mergen:
 > + `audit` melden NUR Wörter, die in der Map stehen — neue KI-Batches mit einem
 > **Gap-Scan** (DE-Felder gegen Translit-Morpheme, gegen Map abgeglichen) prüfen,
 > sonst bleiben unbekannte Transliterationen unentdeckt. Detail: Memory `translit-tooling`.
+>
+> 🐛 **Echtwort-Kollision (behoben 2026-09-25, #13):** Die fest eingebaute FIX_MAP
+> enthielt `falle→fälle` und `fallen→fällen`. Beides sind echte Wörter, der Fixer
+> hat damit korpusweit korrektes Deutsch zerstört (114 Stellen repariert). **Regel:
+> Umlaut-lose Schlüssel ohne ae/oe/ue nur aufnehmen, wenn sie kein echtes Wort
+> sind.** Seltene Restkandidaten (`verhangen`, `gestutzt*`, `wahrend`, `lander`)
+> stehen in Übergabe #13. Nach `fix-umlaut` auf „Per file" achten: Der Fixer
+> kann frische Agenten-Korrekturen still zurückdrehen.
 
 Briefings: `data/incident-candidates/_enrichment-briefing.md` (Abschnitt 1b
 Datums-Verifikation), `_timeline-briefing.md`.
 
 ## 📜 Übergabe-Historie (neueste zuerst)
+- **#13** 2026-09-25 → `docs/planung/übergabe-2026-09-25-phasen-regel-und-fallen-bug.md` — **Kausale Phasen-Regel** statt „genau 1 event" (`checkPhaseOrder`), deckt 68 unentdeckte Fehletiketten auf; **76 Files korrigiert → Validator korpusweit 0 ERRORs (2457/2457)** (Workflow: 18 Fix- + 18 adversariale Verify-Agenten, 68/69 direkt bestätigt, 0 needs-human); **Bug im Umlaut-Fixer** (`fallen→fällen`, echte Wörter) behoben + 114 Stellen in 43 Files repariert; Browsertest in der Cloud via npm-Leaflet-Umleitung (unpkg gesperrt); 4 Commits auf `claude/stoic-ride-lt1b0j`
 - **#12** 2026-08-07 → `docs/planung/übergabe-2026-08-07-smart-char-sweep.md` — **Korpusweiter Smart-Char-Sweep** (743 Files, 7776 Ersetzungen, neues Tool `normalize-smart-chars.js`), **Atom-Feed-Fix** (war seit Bilingual-Migration inhaltsleer: leere Titel, `undefined — undefined`, ungültiges RFC3339), **erster korpusweiter Validator-Vollscan** → 463 Files / 606 ERRORs aufgedeckt (neue Top-Prio), Worktree-Cleanup 6,9 MB → 4 KB, 2 Commits
 - **#11** 2026-06-26 → `docs/planung/übergabe-2026-06-26-sev2-offensive.md` — **Reverse-TL-Feature KOMPLETT: 2457/2457 = 100.0 %** — 22 TL-Wellen 46–67 (+519, Sev-2-Block 46–65 +472, Sev-1 66–67 +47; Sev-5..1 alle abgearbeitet) + **alle 10 needs-human-Fälle per Recherche-Workflow geklärt** (10/10 adversarial verifiziert; prabowo→Anies, ultraman→Hangzhou/Acgnai, devternity→Lettland, perspective-api→UW/USA, grok/hmrc/bradford/iphone/lieferdrohne/tesla-burger-king korrigiert). Neues Tooling `scripts/validate-timelines.js` (Pre-Commit-Validator, Morphem-Gap-Scan); Korpus-Begriffe harmonisiert (Gender/LGBTQ/Due-process); WebSearch durchgehend, 0 Stalls, Audit 0; Slug/@id stabil (correctionNote wo abweichend), ~45 Commits gepusht
 - **#10** 2026-06-25 → `docs/planung/übergabe-2026-06-25-sev3-abschluss-wellen-34-45.md` — **12 Sev-3-TL-Wellen 34–45** (+288, TL 66.7→**78.5 %**), **Sev-3-Block abgeschlossen** (Sev-5/4/3 alle ~100 %), Prompt-Härtung drückte Translit-Nacharbeit auf ~0, Validator um @id/Chronologie/Em-Dash erweitert, Map 2903→2951, User-Faktenkorrektur New-Orleans-6:1, korpusweiter Smart-Char-Befund (789 Files), 12+ Commits gepusht
