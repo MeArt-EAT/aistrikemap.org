@@ -177,7 +177,7 @@ const TRANSLITERATED_GERMAN_WORDS = [
   'unverhaeltnismassiger', 'unverhaeltnismaessiger',
   // Weitere häufige Wörter
   'turkei', 'tuerkei',
-  'lander', 'laender',
+  'laender', // 'lander' ist auch Eigenname (Brad Lander) - nicht melden
   'prufen', 'pruefen', 'pruft', 'prueft', 'pruefung', 'prufung',
   'ahnlich', 'aehnlich', 'ahnliche', 'aehnliche',
   'ahnlichen', 'aehnlichen', 'ahnlicher', 'aehnlicher',

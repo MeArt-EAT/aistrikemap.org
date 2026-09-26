@@ -178,7 +178,7 @@ const FIX_MAP = {
   // Weitere häufige Transliterationen
   'turkei': 'türkei',
   'tuerkei': 'türkei',
-  'lander': 'länder',
+  // 'lander' bewusst NICHT: Eigenname (z.B. NYC-Comptroller Brad Lander)
   'laender': 'länder',
   'prufen': 'prüfen',
   'pruefen': 'prüfen',
