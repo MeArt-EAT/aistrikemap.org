@@ -257,6 +257,11 @@ function validateFile(slug, file, mapKeys) {
       if (!VALID_PHASES.has(e.phase)) errors.push(`Eintrag ${i}: unbekannte Phase "${e.phase}"`);
       if (e.title !== e.title_de) errors.push(`Eintrag ${i}: title !== title_de`);
       if (e.description !== e.description_de) errors.push(`Eintrag ${i}: description !== description_de`);
+      (e.sources || []).forEach((u, k) => {
+        // Umlaute in einer Quellen-URL stammen praktisch immer aus einer
+        // Transliterations-Korrektur, die den Link zerstört hat
+        if (typeof u === 'string' && /[äöüÄÖÜß]/.test(u)) errors.push(`Eintrag ${i}: Umlaut in Quellen-URL [${k}] (vermutlich zerstört): ${u.slice(0, 80)}`);
+      });
       const pd = parseDate(e.date);
       if (pd === null) errors.push(`Eintrag ${i}: ungueltiges Datum "${e.date}"`);
       else if (pd.isRange && cmpParts(pd.start, pd.end) > 0) {
