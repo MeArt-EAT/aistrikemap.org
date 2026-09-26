@@ -5,12 +5,12 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/daenemark-algorithmus-der-kinderschutzbehoerde-wegen-altersdiskriminierung-und",
-  "name": "Dänemark: Algorithmus der Kinderschutzbehörde wegen Altersdiskriminierung und Fehlerquote in Studie kritisiert",
-  "name_de": "Dänemark: Algorithmus der Kinderschutzbehörde wegen Altersdiskriminierung und Fehlerquote in Studie kritisiert",
-  "name_en": "Denmark: Child protection authority's algorithm criticised for age discrimination and high error rates in academic study",
-  "description": "Eine auf der ACM-Konferenz FAccT 2024 vorgestellte peer-reviewed Studie ('Failing Our Youngest') analysierte ein im dänischen Kinderschutz eingesetztes Entscheidungsunterstützungs-Modell, das Risiken für Kindeswohlgefährdung prognostiziert. Die Forscher:innen zeigten, dass das Modell systematische Verzerrungen gegenüber Kindern bestimmter Altersgruppen aufweist und unzuverlässige Vorhersagen liefert. Ein nachfolgender Amnesty-Bericht ('Coded Injustice', November 2024) ordnete den Vorfall in einen breiteren Kontext algorithmischer Diskriminierung im dänischen Wohlfahrtsstaat ein.",
-  "description_de": "Eine auf der ACM-Konferenz FAccT 2024 vorgestellte peer-reviewed Studie ('Failing Our Youngest') analysierte ein im dänischen Kinderschutz eingesetztes Entscheidungsunterstützungs-Modell, das Risiken für Kindeswohlgefährdung prognostiziert. Die Forscher:innen zeigten, dass das Modell systematische Verzerrungen gegenüber Kindern bestimmter Altersgruppen aufweist und unzuverlässige Vorhersagen liefert. Ein nachfolgender Amnesty-Bericht ('Coded Injustice', November 2024) ordnete den Vorfall in einen breiteren Kontext algorithmischer Diskriminierung im dänischen Wohlfahrtsstaat ein.",
-  "description_en": "A peer-reviewed study presented at the ACM FAccT 2024 conference ('Failing Our Youngest') analysed a decision-support model used by Danish child protective services to predict child-welfare risks. Researchers found the model exhibited systematic biases against children of certain age groups and produced unreliable predictions. A subsequent Amnesty International report ('Coded Injustice', November 2024) placed the case in the broader context of algorithmic discrimination in Denmark's welfare state.",
+  "name": "Dänemark: Studie kritisiert Risiko-Algorithmus für Kinderschutz-Meldungen wegen Altersdiskriminierung und Methodenfehlern",
+  "name_de": "Dänemark: Studie kritisiert Risiko-Algorithmus für Kinderschutz-Meldungen wegen Altersdiskriminierung und Methodenfehlern",
+  "name_en": "Denmark: study criticises child-protection risk algorithm for age discrimination and methodological flaws",
+  "description": "Eine auf der ACM-Konferenz FAccT 2024 vorgestellte peer-reviewed Studie ('Failing Our Youngest') von Forschenden der IT-Universität Kopenhagen analysierte das Entscheidungsunterstützungs-Modell 'Decision Support', das für den dänischen Kinderschutz entwickelt und von November 2018 bis Februar 2019 in den Kommunen Silkeborg und Hjørring an 208 Fällen erprobt wurde. Die Studie belegt Informations-Leakage, ungeeignete Proxy-Werte für Kindeswohlgefährdung und inkonsistente Risiko-Scores; zudem bewertet das Modell ansonsten identische Fälle allein aufgrund des Alters des Kindes unterschiedlich. Die Autor:innen raten vom Einsatz solcher Algorithmen im Kinderschutz ab.",
+  "description_de": "Eine auf der ACM-Konferenz FAccT 2024 vorgestellte peer-reviewed Studie ('Failing Our Youngest') von Forschenden der IT-Universität Kopenhagen analysierte das Entscheidungsunterstützungs-Modell 'Decision Support', das für den dänischen Kinderschutz entwickelt und von November 2018 bis Februar 2019 in den Kommunen Silkeborg und Hjørring an 208 Fällen erprobt wurde. Die Studie belegt Informations-Leakage, ungeeignete Proxy-Werte für Kindeswohlgefährdung und inkonsistente Risiko-Scores; zudem bewertet das Modell ansonsten identische Fälle allein aufgrund des Alters des Kindes unterschiedlich. Die Autor:innen raten vom Einsatz solcher Algorithmen im Kinderschutz ab.",
+  "description_en": "A peer-reviewed study presented at the ACM FAccT 2024 conference ('Failing Our Youngest') by researchers at the IT University of Copenhagen analysed the decision-support model 'Decision Support', which was developed for Danish child protective services and pilot-tested on 208 cases in the municipalities of Silkeborg and Hjørring from November 2018 to February 2019. The study documents information leakage, inappropriate proxy values for maltreatment and inconsistent risk scores; the model also scores otherwise identical cases differently based solely on the child's age. The authors advise against using such algorithms in child protection.",
   "startDate": "2024-06",
   "location": {
     "@type": "Place",
@@ -62,48 +62,74 @@
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2018",
+      "date": "2017",
       "phase": "infrastructure",
-      "title": "Dänische Kommunen führen Risiko-Score für Kindeswohl ein",
-      "description": "Mehrere dänische Kommunen beginnen, ein algorithmisches Entscheidungsunterstützungs-System einzusetzen, das anhand von Verwaltungsdaten einen Risiko-Score für Kindeswohlgefährdung berechnet. Sozialarbeiter:innen erhalten dadurch eine maschinelle Priorisierung von Fällen, ohne dass das Modell zuvor unabhängig auf Fairness oder Vorhersagegüte geprüft wurde.",
-      "sources": [],
-      "title_de": "Dänische Kommunen führen Risiko-Score für Kindeswohl ein",
-      "title_en": "Danish municipalities introduce child-welfare risk score",
-      "description_de": "Mehrere dänische Kommunen beginnen, ein algorithmisches Entscheidungsunterstützungs-System einzusetzen, das anhand von Verwaltungsdaten einen Risiko-Score für Kindeswohlgefährdung berechnet. Sozialarbeiter:innen erhalten dadurch eine maschinelle Priorisierung von Fällen, ohne dass das Modell zuvor unabhängig auf Fairness oder Vorhersagegüte geprüft wurde.",
-      "description_en": "Several Danish municipalities began deploying an algorithmic decision-support system that computes a child-welfare risk score from administrative data. Caseworkers received machine-driven prioritisation of cases without the model first undergoing an independent fairness or predictive-validity audit."
+      "title": "Forschungsprojekt entwickelt Risiko-Score für Kinderschutz-Meldungen",
+      "description": "VIA University College und TrygFondens Børneforskningscenter an der Universität Aarhus starten 2017 das Projekt 'Beslutningsstøtte ved underretninger'. Es entwickelt ein 'Decision Support' genanntes Werkzeug, das Daten aus den Verwaltungssystemen der Kommunen zusammenführt und für eingehende Meldungen über Kinder und Jugendliche einen Risiko-Score von 1 bis 10 ausgibt, der die Einschätzung der Sozialarbeiter:innen unterstützen soll.",
+      "sources": [
+        "https://socialraadgiverne.dk/faglig-artikel/naar-kunstig-intelligens-skal-forudsige-mistrivsel/",
+        "https://childresearch.au.dk/fileadmin/childresearch/dokumenter/Underretninger/20220620_Kort_projektbeskrivelse.pdf"
+      ],
+      "title_de": "Forschungsprojekt entwickelt Risiko-Score für Kinderschutz-Meldungen",
+      "title_en": "Research project develops a risk score for child-welfare notifications",
+      "description_de": "VIA University College und TrygFondens Børneforskningscenter an der Universität Aarhus starten 2017 das Projekt 'Beslutningsstøtte ved underretninger'. Es entwickelt ein 'Decision Support' genanntes Werkzeug, das Daten aus den Verwaltungssystemen der Kommunen zusammenführt und für eingehende Meldungen über Kinder und Jugendliche einen Risiko-Score von 1 bis 10 ausgibt, der die Einschätzung der Sozialarbeiter:innen unterstützen soll.",
+      "description_en": "In 2017 VIA University College and TrygFonden's Centre for Child Research at Aarhus University launch the project 'Beslutningsstøtte ved underretninger' (decision support for child-welfare notifications). It develops a tool called 'Decision Support' that combines data from municipal administrative systems and assigns incoming notifications about children and young people a risk score from 1 to 10 to support caseworkers' assessments."
     },
     {
-      "date": "2022",
+      "date": "2018-11 bis 2019-02",
+      "phase": "infrastructure",
+      "title": "Pilotbetrieb in Silkeborg und Hjørring ohne Wissen der Familien",
+      "description": "In Zusammenarbeit mit den Kommunen Silkeborg und Hjørring wird das Modell von November 2018 bis Februar 2019 an 208 realen Fällen erprobt. Laut der späteren FAccT-Studie wurden Eltern und Kinder nicht darüber informiert, dass ihr Fall algorithmisch bewertet wurde, und erhielten keine Möglichkeit zum Widerspruch.",
+      "sources": [
+        "https://doi.org/10.1145/3630106.3658906",
+        "https://pure.itu.dk/en/publications/failing-our-youngest-on-the-biases-pitfalls-and-risks-in-a-decisi/"
+      ],
+      "title_de": "Pilotbetrieb in Silkeborg und Hjørring ohne Wissen der Familien",
+      "title_en": "Pilot in Silkeborg and Hjørring without families' knowledge",
+      "description_de": "In Zusammenarbeit mit den Kommunen Silkeborg und Hjørring wird das Modell von November 2018 bis Februar 2019 an 208 realen Fällen erprobt. Laut der späteren FAccT-Studie wurden Eltern und Kinder nicht darüber informiert, dass ihr Fall algorithmisch bewertet wurde, und erhielten keine Möglichkeit zum Widerspruch.",
+      "description_en": "Together with the municipalities of Silkeborg and Hjørring, the model is pilot-tested on 208 real cases from November 2018 to February 2019. According to the later FAccT study, parents and children were not told that their case was scored by an algorithm and were not offered the option to opt out."
+    },
+    {
+      "date": "2022-06",
       "phase": "doctrine",
-      "title": "Forschende erkämpfen Akteneinsicht per Informationsfreiheitsanfrage",
-      "description": "Ein Team um Therese Moreau, Roberta Sinatra und Vedran Sekara an der IT-Universität Kopenhagen beantragt Einsicht in das eingesetzte Modell. Erst nach einer Informationsfreiheitsanfrage erhalten sie Teilzugriff auf Modellunterlagen - und können beginnen, das System unabhängig zu auditieren.",
-      "sources": [],
-      "title_de": "Forschende erkämpfen Akteneinsicht per Informationsfreiheitsanfrage",
-      "title_en": "Researchers obtain access via freedom-of-information request",
-      "description_de": "Ein Team um Therese Moreau, Roberta Sinatra und Vedran Sekara an der IT-Universität Kopenhagen beantragt Einsicht in das eingesetzte Modell. Erst nach einer Informationsfreiheitsanfrage erhalten sie Teilzugriff auf Modellunterlagen - und können beginnen, das System unabhängig zu auditieren.",
-      "description_en": "A team led by Therese Moreau, Roberta Sinatra and Vedran Sekara at the IT University of Copenhagen requested access to the deployed model. Only after a freedom-of-information request did they receive partial access to model documentation, allowing an independent audit to begin."
+      "title": "Nach Kritik: Folgeprojekt verzichtet auf Tests an echten Fällen",
+      "description": "Das 2019 gestartete, von TrygFonden finanzierte Folgeprojekt 'Underretninger i fokus' sollte das Werkzeug weiterentwickeln und in Kommunen erproben. Nach anhaltender Kritik an Rechtmäßigkeit, Ethik und Methodik erklärt die Projektleitung im Juni 2022, das Werkzeug im laufenden Projektzeitraum nicht an echten Fällen zu testen; stattdessen werden Einschätzungen von Sozialarbeiter:innen anhand von Testfällen untersucht.",
+      "sources": [
+        "https://www.version2.dk/artikel/giver-op-kontroversiel-ai-boerneopsporing-fra-aarhus-universitet-kommer-ikke-i-drift",
+        "https://childresearch.au.dk/fileadmin/childresearch/dokumenter/Underretninger/20220620_Kort_projektbeskrivelse.pdf"
+      ],
+      "title_de": "Nach Kritik: Folgeprojekt verzichtet auf Tests an echten Fällen",
+      "title_en": "After criticism, follow-up project drops tests on real cases",
+      "description_de": "Das 2019 gestartete, von TrygFonden finanzierte Folgeprojekt 'Underretninger i fokus' sollte das Werkzeug weiterentwickeln und in Kommunen erproben. Nach anhaltender Kritik an Rechtmäßigkeit, Ethik und Methodik erklärt die Projektleitung im Juni 2022, das Werkzeug im laufenden Projektzeitraum nicht an echten Fällen zu testen; stattdessen werden Einschätzungen von Sozialarbeiter:innen anhand von Testfällen untersucht.",
+      "description_en": "The follow-up project 'Underretninger i fokus', launched in 2019 and funded by TrygFonden, was meant to develop the tool further and trial it in municipalities. After sustained criticism of its legality, ethics and methodology, the project leadership states in June 2022 that the tool will not be tested on real cases within the current project period; instead caseworkers' assessments are studied using test cases."
     },
     {
       "date": "2024-06",
       "phase": "event",
-      "title": "FAccT-Studie 'Failing Our Youngest' belegt Altersbias und Fehlproxys",
-      "description": "Auf der ACM-Konferenz FAccT 2024 in Rio de Janeiro stellen die Forschenden die Studie 'Failing Our Youngest' vor. Sie zeigt: Das Modell leidet an Informations-Leakage, nutzt unangemessene Proxy-Variablen für Misshandlung, erzeugt inkonsistente Risiko-Scores und diskriminiert systematisch Kinder bestimmter Altersgruppen. Die Vorhersagen sind so unzuverlässig, dass sie als Entscheidungsgrundlage für staatliche Eingriffe in Familien ungeeignet erscheinen.",
-      "sources": [],
-      "title_de": "FAccT-Studie 'Failing Our Youngest' belegt Altersbias und Fehlproxys",
-      "title_en": "FAccT study 'Failing Our Youngest' documents age bias and flawed proxies",
-      "description_de": "Auf der ACM-Konferenz FAccT 2024 in Rio de Janeiro stellen die Forschenden die Studie 'Failing Our Youngest' vor. Sie zeigt: Das Modell leidet an Informations-Leakage, nutzt unangemessene Proxy-Variablen für Misshandlung, erzeugt inkonsistente Risiko-Scores und diskriminiert systematisch Kinder bestimmter Altersgruppen. Die Vorhersagen sind so unzuverlässig, dass sie als Entscheidungsgrundlage für staatliche Eingriffe in Familien ungeeignet erscheinen.",
-      "description_en": "At the ACM FAccT 2024 conference in Rio de Janeiro the researchers presented 'Failing Our Youngest'. The study showed the model suffers from information leakage, relies on inappropriate proxies for maltreatment, produces inconsistent risk scores and systematically discriminates against children of certain age groups. Predictions were so unreliable that they appear unsuitable as a basis for state interventions in families."
+      "title": "FAccT-Studie 'Failing Our Youngest' belegt Altersbias und ungeeignete Proxys",
+      "description": "Auf der ACM-Konferenz FAccT 2024 in Rio de Janeiro stellen Therese Moreau, Roberta Sinatra und Vedran Sekara (IT-Universität Kopenhagen) die Studie 'Failing Our Youngest' vor; Teilinformationen zum Algorithmus und zur Dokumentation hatten sie per Informationsfreiheitsanfrage erhalten. Befund: Das Modell hat erhebliche methodische Mängel, leidet an Informations-Leakage, nutzt ungeeignete Proxy-Werte für Kindeswohlgefährdung, erzeugt inkonsistente Risiko-Scores und bewertet ansonsten identische Fälle allein aufgrund des Alters des Kindes unterschiedlich. Die Autor:innen raten dringend vom Einsatz solcher Algorithmen in Kommunen und im Kinderschutz ab.",
+      "sources": [
+        "https://doi.org/10.1145/3630106.3658906",
+        "https://facctconference.org/static/papers24/facct24-21.pdf"
+      ],
+      "title_de": "FAccT-Studie 'Failing Our Youngest' belegt Altersbias und ungeeignete Proxys",
+      "title_en": "FAccT study 'Failing Our Youngest' documents age bias and inappropriate proxies",
+      "description_de": "Auf der ACM-Konferenz FAccT 2024 in Rio de Janeiro stellen Therese Moreau, Roberta Sinatra und Vedran Sekara (IT-Universität Kopenhagen) die Studie 'Failing Our Youngest' vor; Teilinformationen zum Algorithmus und zur Dokumentation hatten sie per Informationsfreiheitsanfrage erhalten. Befund: Das Modell hat erhebliche methodische Mängel, leidet an Informations-Leakage, nutzt ungeeignete Proxy-Werte für Kindeswohlgefährdung, erzeugt inkonsistente Risiko-Scores und bewertet ansonsten identische Fälle allein aufgrund des Alters des Kindes unterschiedlich. Die Autor:innen raten dringend vom Einsatz solcher Algorithmen in Kommunen und im Kinderschutz ab.",
+      "description_en": "At the ACM FAccT 2024 conference in Rio de Janeiro, Therese Moreau, Roberta Sinatra and Vedran Sekara (IT University of Copenhagen) present the study 'Failing Our Youngest'; they had obtained partial information on the algorithm and its documentation through a freedom-of-information request. Findings: the model has significant methodological flaws, suffers from information leakage, relies on inappropriate proxy values for maltreatment, generates inconsistent risk scores and scores otherwise identical cases differently based solely on the child's age. The authors strongly advise against using such algorithms in municipal and child-protection settings."
     },
     {
-      "date": "2024-11",
+      "date": "2025-02",
       "phase": "consequences",
-      "title": "Amnesty-Bericht 'Coded Injustice' ordnet Fall in dänischen Wohlfahrtsstaat ein",
-      "description": "Amnesty International veröffentlicht im November 2024 den Bericht 'Coded Injustice: Surveillance and Discrimination in Denmark's Automated Welfare State'. Er nutzt die FAccT-Befunde, um zu zeigen, wie algorithmische Systeme im dänischen Sozialstaat marginalisierte Gruppen diskriminieren und Massenüberwachung befördern, und fordert eine grundlegende Überprüfung automatisierter Entscheidungsverfahren im Kinderschutz.",
-      "sources": [],
-      "title_de": "Amnesty-Bericht 'Coded Injustice' ordnet Fall in dänischen Wohlfahrtsstaat ein",
-      "title_en": "Amnesty report 'Coded Injustice' situates the case in Denmark's welfare state",
-      "description_de": "Amnesty International veröffentlicht im November 2024 den Bericht 'Coded Injustice: Surveillance and Discrimination in Denmark's Automated Welfare State'. Er nutzt die FAccT-Befunde, um zu zeigen, wie algorithmische Systeme im dänischen Sozialstaat marginalisierte Gruppen diskriminieren und Massenüberwachung befördern, und fordert eine grundlegende Überprüfung automatisierter Entscheidungsverfahren im Kinderschutz.",
-      "description_en": "In November 2024 Amnesty International published 'Coded Injustice: Surveillance and Discrimination in Denmark's Automated Welfare State'. It used the FAccT findings to argue that algorithmic systems in the Danish welfare state discriminate against marginalised groups and enable mass surveillance, and called for a fundamental review of automated decision-making in child protection."
+      "title": "Fachdebatte: Projekte zur Risiko-Modellierung pausiert oder umgebaut",
+      "description": "In der Zeitschrift European Social Work Research reflektieren Liesanth Yde Nirmalarajan und Line Berg im Februar 2025 das dänische Forschungsprojekt und die Diskussionen darüber auf einer nationalen und vier internationalen Fachkonferenzen. Sie halten fest, dass Projekte zur prädiktiven Risikomodellierung in der Kinder- und Familienhilfe wegen ethischer und rechtlicher Bedenken pausiert oder deutlich verändert wurden.",
+      "sources": [
+        "https://bristoluniversitypressdigital.com/view/journals/eswr/3/1/article-p104.xml",
+        "https://www.researchgate.net/publication/388647100_Predictive_risk_modelling_in_child_and_family_welfare_reflections_on_a_Danish_case"
+      ],
+      "title_de": "Fachdebatte: Projekte zur Risiko-Modellierung pausiert oder umgebaut",
+      "title_en": "Professional debate: risk-modelling projects paused or reshaped",
+      "description_de": "In der Zeitschrift European Social Work Research reflektieren Liesanth Yde Nirmalarajan und Line Berg im Februar 2025 das dänische Forschungsprojekt und die Diskussionen darüber auf einer nationalen und vier internationalen Fachkonferenzen. Sie halten fest, dass Projekte zur prädiktiven Risikomodellierung in der Kinder- und Familienhilfe wegen ethischer und rechtlicher Bedenken pausiert oder deutlich verändert wurden.",
+      "description_en": "In the journal European Social Work Research, Liesanth Yde Nirmalarajan and Line Berg reflect in February 2025 on the Danish research project and on discussions about it at one national and four international conferences. They note that projects on predictive risk modelling in child and family welfare were paused or significantly modified because of ethical and legal concerns."
     }
   ],
   "asm:sources": [
@@ -140,11 +166,12 @@
   ],
   "asm:metadata": {
     "created": "2026-06-03",
-    "lastUpdated": "2026-06-18",
+    "lastUpdated": "2026-09-26",
     "author": "AIStrikeMap (promoted from candidate)",
     "aiGenerated": true,
     "humanVerified": false,
     "promotedFromCandidateId": "dk-danish-child-protection-algorithm-criticised-for-age-2024-aiaaic1551",
-    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03",
+    "asm:correctionNote": "Title corrected 2026-09-26: the tool was a research pilot in two municipalities, not deployed by an authority; the study found inconsistent scores and methodological flaws rather than a measured error rate."
   }
 }

@@ -63,7 +63,19 @@ const GROUPS = [
   { keep: 'obermeyer-studie-deckt-rassen-bias',
     drop: ['optum-healthcare-algorithmus-racial-bias'] },
   { keep: 'sprecherinnen-klagen-gegen-lovo-wegen-unautorisi',
-    drop: ['synchronsprecher-innen-verklagen-ki-start-up-lov'] }
+    drop: ['synchronsprecher-innen-verklagen-ki-start-up-lov'] },
+  // Quellen-Welle 2 (2026-09-26): drei Files zum selben Amnesty-Bericht
+  // 'Coded Injustice' vom 13.11.2024, Fakten vorher vereinheitlicht
+  { keep: 'daenemark-udbetaling-danmark-bis-zu-60-ki-modelle',
+    drop: ['daenemark-amnesty-bericht-60-sozial-algorithmen', 'daenemark-amnesty-zeigt-diskriminierung-durch-ki'] },
+  // Quellen-Welle 3 (2026-09-26): dieselbe Berufungsentscheidung (Nairobi,
+  // 20.09.2024, 185 Moderator:innen gegen Meta), Fakten vorher vereinheitlicht
+  { keep: 'kenia-berufungsgericht-erlaubt-185-facebook-moderator',
+    drop: ['kenia-berufungsgericht-nairobi-laesst-klage-von-185'] },
+  // Quellen-Welle 7 (2026-09-26): beide beschreiben Clearview in der Ukraine
+  // (Identifizierung toter russischer Soldaten ab 03/2022), keep ist umfassender
+  { keep: 'ukraine-clearview-kriegseinsatz',
+    drop: ['ukraine-ki-gesichtserkennung-tote'] }
 ];
 
 function listSlugs() {

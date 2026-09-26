@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-racial-bias-healthcare-ki",
-  "name": "USA: Rassistischer Bias in KI-Algorithmus der Gesundheitsversorgung - 200 Millionen Betroffene",
-  "description": "Ein von Optum entwickelter und in großen US-amerikanischen Krankenhäusern weitverbreiteter KI-Algorithmus zur Zuteilung von Gesundheitsressourcen diskriminierte systematisch schwarze Patienten. Das System verwendete die Gesundheitskosten der Vergangenheit als Proxy für den künftigen Gesundheitsbedarf - ein Ansatz, der strukturellen Rassismus reproduziert, da schwarze Patienten historisch weniger Gesundheitsausgaben aufweisen, nicht weil sie gesünder sind, sondern weil ihnen weniger Zugang zur Gesundheitsversorgung gewährt wurde. Eine Studie in Science (2019) schätzte, dass bis zu 200 Millionen Menschen jährlich betroffen sein konnten.",
+  "name": "USA: Rassistischer Bias in KI-Algorithmus der Gesundheitsversorgung",
+  "description": "Ein von Optum entwickelter und in großen US-amerikanischen Krankenhäusern weitverbreiteter KI-Algorithmus zur Zuteilung von Gesundheitsressourcen diskriminierte systematisch schwarze Patienten. Das System verwendete die Gesundheitskosten der Vergangenheit als Proxy für den künftigen Gesundheitsbedarf - ein Ansatz, der strukturellen Rassismus reproduziert, da schwarze Patienten historisch weniger Gesundheitsausgaben aufweisen, nicht weil sie gesünder sind, sondern weil ihnen weniger Zugang zur Gesundheitsversorgung gewährt wurde. Eine Studie in Science (2019) zeigte den Bias und schätzte, dass Algorithmen dieser Art jährlich Versorgungsentscheidungen für bis zu 200 Millionen Menschen in den USA beeinflussen.",
   "startDate": "2016-01",
   "location": {
     "@type": "Place",
@@ -62,19 +62,25 @@
       "date": "2016-01",
       "phase": "infrastructure",
       "title": "Optum-Algorithmus wird in US-Krankenhäusern eingesetzt",
-      "description": "Der von Optum entwickelte Algorithmus zur Identifikation von Hochrisikapatienten wird von Hunderten von US-Krankenhäusern und Versicherern eingesetzt. Das System priorisiert Patienten für intensive Betreuungsprogramme auf Basis historischer Gesundheitsausgaben. Das Design-Versaehen - Kosten als Proxy für Bedarf - wird nicht öffentlich kommuniziert oder intern hinterfragt.",
-      "sources": [],
+      "description": "Der von Optum entwickelte Algorithmus zur Identifikation von Hochrisikopatienten wird von Krankenhäusern und Versicherern in den ganzen USA eingesetzt. Das System priorisiert Patienten für intensive Betreuungsprogramme auf Basis historischer Gesundheitsausgaben, also mit Kosten als Proxy für Bedarf.",
+      "sources": [
+        "https://www.washingtonpost.com/health/2019/10/24/racial-bias-medical-algorithm-favors-white-patients-over-sicker-black-patients/",
+        "https://www.science.org/doi/10.1126/science.aax2342"
+      ],
       "title_de": "Optum-Algorithmus wird in US-Krankenhäusern eingesetzt",
-      "description_de": "Der von Optum entwickelte Algorithmus zur Identifikation von Hochrisikapatienten wird von Hunderten von US-Krankenhäusern und Versicherern eingesetzt. Das System priorisiert Patienten für intensive Betreuungsprogramme auf Basis historischer Gesundheitsausgaben. Das Design-Versaehen - Kosten als Proxy für Bedarf - wird nicht öffentlich kommuniziert oder intern hinterfragt.",
+      "description_de": "Der von Optum entwickelte Algorithmus zur Identifikation von Hochrisikopatienten wird von Krankenhäusern und Versicherern in den ganzen USA eingesetzt. Das System priorisiert Patienten für intensive Betreuungsprogramme auf Basis historischer Gesundheitsausgaben, also mit Kosten als Proxy für Bedarf.",
       "title_en": "Optum algorithm deployed across U.S. hospitals",
-      "description_en": "The algorithm developed by Optum to identify high-risk patients is used by hundreds of U.S. hospitals and insurers. The system prioritizes patients for intensive care programs based on historical health spending. The design flaw - using cost as a proxy for need - is neither publicly communicated nor internally questioned."
+      "description_en": "The algorithm developed by Optum to identify high-risk patients is used by hospitals and insurers across the U.S. The system prioritizes patients for intensive care programs based on historical health spending, i.e. using cost as a proxy for need."
     },
     {
       "date": "2019-10",
       "phase": "doctrine",
       "title": "Science-Studie von Obermeyer et al. deckt systemischen Bias auf",
       "description": "Forscher um Ziad Obermeyer veröffentlichen in Science eine bahnbrechende Analyse, die zeigt: Bei gleichem tatsächlichem Gesundheitszustand werden schwarze Patienten vom Algorithmus als weniger krank eingestuft als weiße Patienten. Der Grund ist, dass das System Kosten als Proxy verwendet, nicht tatsächlichen Bedarf. Auf denselben Risikowert kommen schwarze Patienten mit im Durchschnitt weitaus mehr chronischen Erkrankungen als weiße.",
-      "sources": [],
+      "sources": [
+        "https://www.science.org/doi/10.1126/science.aax2342",
+        "https://www.nature.com/articles/d41586-019-03228-6"
+      ],
       "title_de": "Science-Studie von Obermeyer et al. deckt systemischen Bias auf",
       "description_de": "Forscher um Ziad Obermeyer veröffentlichen in Science eine bahnbrechende Analyse, die zeigt: Bei gleichem tatsächlichem Gesundheitszustand werden schwarze Patienten vom Algorithmus als weniger krank eingestuft als weiße Patienten. Der Grund ist, dass das System Kosten als Proxy verwendet, nicht tatsächlichen Bedarf. Auf denselben Risikowert kommen schwarze Patienten mit im Durchschnitt weitaus mehr chronischen Erkrankungen als weiße.",
       "title_en": "Science study by Obermeyer et al. exposes systemic bias",
@@ -83,24 +89,30 @@
     {
       "date": "2019-10",
       "phase": "event",
-      "title": "Schätzung: 200 Millionen Menschen jährlich von Bias betroffen",
-      "description": "Die Forscher schätzen, dass der Algorithmus oder aechnliche Systeme jährlich Entscheidungen für bis zu 200 Millionen US-Patienten beeinflusst. Optum und Krankenhaus-Partner bestreiten, ethnische Daten im Modell direkt verwendet zu haben, erkennen aber an, dass der Proxy 'Kosten' rassistisch verzerrt wirkt. STAT News und ProPublica berichten großflächig über den Fall.",
-      "sources": [],
-      "title_de": "Schätzung: 200 Millionen Menschen jährlich von Bias betroffen",
-      "description_de": "Die Forscher schätzen, dass der Algorithmus oder aechnliche Systeme jährlich Entscheidungen für bis zu 200 Millionen US-Patienten beeinflusst. Optum und Krankenhaus-Partner bestreiten, ethnische Daten im Modell direkt verwendet zu haben, erkennen aber an, dass der Proxy 'Kosten' rassistisch verzerrt wirkt. STAT News und ProPublica berichten großflächig über den Fall.",
-      "title_en": "Estimate: 200 million people affected by bias each year",
-      "description_en": "The researchers estimate that the algorithm or similar systems annually influence decisions for up to 200 million U.S. patients. Optum and hospital partners deny having used ethnic data directly in the model but acknowledge that the cost proxy has racially distorted effects. STAT News and ProPublica report extensively on the case."
+      "title": "Schätzung: Algorithmen wie dieser beeinflussen jährlich 200 Millionen Menschen",
+      "description": "Die Forscher schätzen, dass Algorithmen wie dieser jährlich Versorgungsentscheidungen für bis zu 200 Millionen Menschen in den USA beeinflussen. Optum bezeichnet die Schlussfolgerungen als irreführend, da Kosten nur eines von vielen Datenelementen seien; zugleich hatte der Hersteller die Ergebnisse auf eigenen Daten repliziert und arbeitet mit den Autoren an einer Korrektur. Washington Post, Nature News und weitere Medien berichten großflächig über den Fall.",
+      "sources": [
+        "https://www.washingtonpost.com/health/2019/10/24/racial-bias-medical-algorithm-favors-white-patients-over-sicker-black-patients/",
+        "https://www.healthcarefinancenews.com/news/study-finds-racial-bias-optum-algorithm"
+      ],
+      "title_de": "Schätzung: Algorithmen wie dieser beeinflussen jährlich 200 Millionen Menschen",
+      "description_de": "Die Forscher schätzen, dass Algorithmen wie dieser jährlich Versorgungsentscheidungen für bis zu 200 Millionen Menschen in den USA beeinflussen. Optum bezeichnet die Schlussfolgerungen als irreführend, da Kosten nur eines von vielen Datenelementen seien; zugleich hatte der Hersteller die Ergebnisse auf eigenen Daten repliziert und arbeitet mit den Autoren an einer Korrektur. Washington Post, Nature News und weitere Medien berichten großflächig über den Fall.",
+      "title_en": "Estimate: algorithms like this one affect 200 million people each year",
+      "description_en": "The researchers estimate that algorithms like this one annually influence care decisions for up to 200 million people in the U.S. Optum calls the conclusions misleading, arguing that cost is only one of many data elements; at the same time the company had replicated the results on its own data and is working with the authors on a fix. The Washington Post, Nature News and other outlets report extensively on the case."
     },
     {
-      "date": "2020-06",
+      "date": "2019-2024",
       "phase": "consequences",
-      "title": "Branchenreformen und anhaltende strukturelle Probleme",
-      "description": "Optum kündigt Änderungen am Algorithmus an. Mehrere Krankenhäuser verpflichten sich zu Audits ihrer KI-Systeme. Das US-Gesundheitsministerium und der Kongress starten Anhörungen zu KI-Bias im Gesundheitswesen. Kritiker betonen, dass struktureller Rassismus in Gesundheitsdaten durch algorithmische Korrekturen allein nicht beseitigt werden kann und umfassende Reformen benötigt werden.",
-      "sources": [],
-      "title_de": "Branchenreformen und anhaltende strukturelle Probleme",
-      "description_de": "Optum kündigt Änderungen am Algorithmus an. Mehrere Krankenhäuser verpflichten sich zu Audits ihrer KI-Systeme. Das US-Gesundheitsministerium und der Kongress starten Anhörungen zu KI-Bias im Gesundheitswesen. Kritiker betonen, dass struktureller Rassismus in Gesundheitsdaten durch algorithmische Korrekturen allein nicht beseitigt werden kann und umfassende Reformen benötigt werden.",
-      "title_en": "Industry reforms and persistent structural problems",
-      "description_en": "Optum announces changes to the algorithm. Several hospitals commit to audits of their AI systems. The U.S. Department of Health and Congress hold hearings on AI bias in healthcare. Critics emphasize that structural racism embedded in health data cannot be removed by algorithmic corrections alone and that comprehensive reforms are needed."
+      "title": "Aufsicht und Kongress greifen den Fall auf, strukturelle Probleme bleiben",
+      "description": "Am 25. Oktober 2019 fordern New Yorks Finanzaufsicht (DFS) und Gesundheitsministerium UnitedHealth auf, den Algorithmus nicht weiter zu nutzen, sofern die Diskriminierung nicht widerlegt wird, und leiten eine Untersuchung ein. 2024 befasst sich der Finanzausschuss des US-Senats in einer Anhörung zu KI im Gesundheitswesen ausdrücklich mit dem Optum-Fall. Kritiker betonen, dass struktureller Rassismus in Gesundheitsdaten durch algorithmische Korrekturen allein nicht beseitigt werden kann.",
+      "sources": [
+        "https://www.fiercehealthcare.com/payer/new-york-to-probe-algorithm-used-by-optum-for-racial-bias",
+        "https://www.finance.senate.gov/chairmans-news/wyden-statement-at-finance-committee-hearing-on-ai-in-health-care"
+      ],
+      "title_de": "Aufsicht und Kongress greifen den Fall auf, strukturelle Probleme bleiben",
+      "description_de": "Am 25. Oktober 2019 fordern New Yorks Finanzaufsicht (DFS) und Gesundheitsministerium UnitedHealth auf, den Algorithmus nicht weiter zu nutzen, sofern die Diskriminierung nicht widerlegt wird, und leiten eine Untersuchung ein. 2024 befasst sich der Finanzausschuss des US-Senats in einer Anhörung zu KI im Gesundheitswesen ausdrücklich mit dem Optum-Fall. Kritiker betonen, dass struktureller Rassismus in Gesundheitsdaten durch algorithmische Korrekturen allein nicht beseitigt werden kann.",
+      "title_en": "Regulators and Congress take up the case, structural problems persist",
+      "description_en": "On 25 October 2019, New York's financial regulator (DFS) and health department call on UnitedHealth to stop using the algorithm unless it can show it is not discriminatory, and open a probe. In 2024 the U.S. Senate Finance Committee holds a hearing on AI in health care that explicitly cites the Optum case. Critics emphasize that structural racism embedded in health data cannot be removed by algorithmic corrections alone."
     }
   ],
   "asm:sources": [
@@ -150,18 +162,19 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-09-26: removed the unsupported '200 million affected' figure, which describes the scale of algorithms of this type used across the US healthcare market rather than the number of people harmed by the bias; slug unchanged for permalink stability."
   },
-  "name_de": "USA: Rassistischer Bias in KI-Algorithmus der Gesundheitsversorgung - 200 Millionen Betroffene",
-  "description_de": "Ein von Optum entwickelter und in großen US-amerikanischen Krankenhäusern weitverbreiteter KI-Algorithmus zur Zuteilung von Gesundheitsressourcen diskriminierte systematisch schwarze Patienten. Das System verwendete die Gesundheitskosten der Vergangenheit als Proxy für den künftigen Gesundheitsbedarf - ein Ansatz, der strukturellen Rassismus reproduziert, da schwarze Patienten historisch weniger Gesundheitsausgaben aufweisen, nicht weil sie gesünder sind, sondern weil ihnen weniger Zugang zur Gesundheitsversorgung gewährt wurde. Eine Studie in Science (2019) schätzte, dass bis zu 200 Millionen Menschen jährlich betroffen sein konnten.",
+  "name_de": "USA: Rassistischer Bias in KI-Algorithmus der Gesundheitsversorgung",
+  "description_de": "Ein von Optum entwickelter und in großen US-amerikanischen Krankenhäusern weitverbreiteter KI-Algorithmus zur Zuteilung von Gesundheitsressourcen diskriminierte systematisch schwarze Patienten. Das System verwendete die Gesundheitskosten der Vergangenheit als Proxy für den künftigen Gesundheitsbedarf - ein Ansatz, der strukturellen Rassismus reproduziert, da schwarze Patienten historisch weniger Gesundheitsausgaben aufweisen, nicht weil sie gesünder sind, sondern weil ihnen weniger Zugang zur Gesundheitsversorgung gewährt wurde. Eine Studie in Science (2019) zeigte den Bias und schätzte, dass Algorithmen dieser Art jährlich Versorgungsentscheidungen für bis zu 200 Millionen Menschen in den USA beeinflussen.",
   "asm:affectedRights_de": [
     "Recht auf Gesundheitsversorgung",
     "Recht auf Gleichbehandlung",
     "Recht auf Leben",
     "Schutz vor rassistischer Diskriminierung"
   ],
-  "name_en": "USA: Racial bias in healthcare AI algorithm - 200 million people affected",
-  "description_en": "An AI algorithm developed by Optum and widely deployed in major U.S. hospitals to allocate healthcare resources systematically discriminated against Black patients. The system used past healthcare costs as a proxy for future healthcare need - an approach that reproduces structural racism, since Black patients historically have lower health spending not because they are healthier but because they have been given less access to care. A Science study (2019) estimated that up to 200 million people per year could be affected.",
+  "name_en": "USA: Racial bias in healthcare AI algorithm",
+  "description_en": "An AI algorithm developed by Optum and widely deployed in major U.S. hospitals to allocate healthcare resources systematically discriminated against Black patients. The system used past healthcare costs as a proxy for future healthcare need - an approach that reproduces structural racism, since Black patients historically have lower health spending not because they are healthier but because they have been given less access to care. A Science study (2019) exposed the bias and estimated that algorithms of this type annually influence care decisions for up to 200 million people in the U.S.",
   "asm:affectedRights_en": [
     "right to healthcare",
     "equal treatment",

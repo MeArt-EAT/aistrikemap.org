@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/suedafrika-ki-ungleichheit-scoring",
-  "name": "Südafrika: Algorithmisches Kredit-Scoring verstärkt Apartheid-Erbe",
-  "description": "In Südafrika werden KI-gestützte Kredit-Scoring-Systeme eingesetzt, die historische Daten aus der Apartheid-Ära verwenden und systematisch Schwarze Südafrikaner benachteiligen. Die Algorithmen nutzen Proxys wie Postleitzahl, Bildungseinrichtung und Beschäftigungshistorie, die stark mit der Hautfarbe korrelieren. Gleichzeitig setzt die Polizei Gesichtserkennungstechnologie in Townships ein, die unverhältnismäßig Schwarze Gemeinschaften überwacht.",
-  "startDate": "2016",
+  "name": "Südafrika: Kredit-Scoring auf dem Wohnungsmarkt schreibt Apartheid-Segregation fort",
+  "description": "In Südafrika nutzen Banken, institutionelle Vermieter und Mietplattformen Kredit-Scores und Daten von Kreditbüros, um Wohnungssuchende auszuwählen. Forschung des Geografen Julien Migozzi zeigt am Beispiel Kapstadts, dass diese Auswahl an die unter der Apartheid rassistisch geprägte Raumordnung anknüpft und die städtischen Armen ausschließt. Parallel wächst in Johannesburgs wohlhabenden Vororten das private KI-gestützte Kameranetz von Vumacam, vor dem Bürgerrechtler als 'digitale Apartheid' warnen.",
+  "startDate": "2019",
   "location": {
     "@type": "Place",
     "name": "Johannesburg, Südafrika",
@@ -46,67 +46,90 @@
       "name_en": "South African banks and credit bureaus"
     },
     {
-      "name": "SAPS (South African Police Service)",
-      "type": "government",
+      "name": "Vumacam",
+      "type": "company",
       "asm:systems": [
-        "Gesichtserkennung in Townships"
+        "Privates KI-gestütztes Kameranetz in Johannesburgs Vororten",
+        "Kennzeichenerkennung"
       ],
-      "name_de": "SAPS (South African Police Service)",
-      "name_en": "SAPS (South African Police Service)"
+      "name_de": "Vumacam",
+      "name_en": "Vumacam"
     },
     {
-      "name": "Research ICT Africa",
-      "type": "organization",
-      "name_de": "Research ICT Africa",
-      "name_en": "Research ICT Africa"
+      "name": "Julien Migozzi (Geograf, Forschung zu Kredit-Scoring und Wohnsegregation)",
+      "type": "individual",
+      "name_de": "Julien Migozzi (Geograf, Forschung zu Kredit-Scoring und Wohnsegregation)",
+      "name_en": "Julien Migozzi (geographer, research on credit scoring and housing segregation)"
     }
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2016",
+      "date": "2019-11",
       "phase": "infrastructure",
-      "title": "KI-Scoring im Bankwesen verbreitet sich",
-      "description": "Südafrikanische Banken und Fintech-Unternehmen setzen zunehmend auf KI-gestützte Kredit-Scoring-Modelle, um Kreditentscheidungen zu automatisieren. Die Modelle werden auf historischen Daten trainiert, die die systemische Ungleichheit der Apartheid widerspiegeln: Schwarze Südafrikaner leben häufiger in Gegenden mit niedrigen Scores, haben weniger formale Bildungsabschlüsse und kürzere Kredithistorien.",
-      "sources": [],
-      "title_de": "KI-Scoring im Bankwesen verbreitet sich",
-      "description_de": "Südafrikanische Banken und Fintech-Unternehmen setzen zunehmend auf KI-gestützte Kredit-Scoring-Modelle, um Kreditentscheidungen zu automatisieren. Die Modelle werden auf historischen Daten trainiert, die die systemische Ungleichheit der Apartheid widerspiegeln: Schwarze Südafrikaner leben häufiger in Gegenden mit niedrigen Scores, haben weniger formale Bildungsabschlüsse und kürzere Kredithistorien.",
-      "title_en": "AI scoring in banking spreads",
-      "description_en": "South African banks and fintech companies increasingly rely on AI-based credit scoring models to automate lending decisions. The models are trained on historical data that reflects the systemic inequalities of apartheid: Black South Africans more often live in areas with low scores, have fewer formal educational qualifications, and shorter credit histories."
+      "title": "Privates KI-Kameranetz Vumacam wächst in Johannesburgs Vororten",
+      "description": "Der Forscher Michael Kwet berichtet im Magazin Vice, dass das Unternehmen Vumacam in den Vororten Johannesburgs ein privates 'smartes' Videoüberwachungsnetz aufbaut, dessen Aufnahmen von privaten Sicherheitsfirmen mit KI-Analyse ausgewertet werden sollen. Die Kameras stehen vor allem in wohlhabenden, überwiegend weißen Wohngebieten; Kwet warnt, dass die Software Schwarze Menschen dort als 'fremd' markieren und so eine 'KI-gestützte Apartheid' fördern könnte.",
+      "sources": ["https://www.vice.com/en/article/smart-cctv-networks-are-driving-an-ai-powered-apartheid-in-south-africa/"],
+      "title_de": "Privates KI-Kameranetz Vumacam wächst in Johannesburgs Vororten",
+      "description_de": "Der Forscher Michael Kwet berichtet im Magazin Vice, dass das Unternehmen Vumacam in den Vororten Johannesburgs ein privates 'smartes' Videoüberwachungsnetz aufbaut, dessen Aufnahmen von privaten Sicherheitsfirmen mit KI-Analyse ausgewertet werden sollen. Die Kameras stehen vor allem in wohlhabenden, überwiegend weißen Wohngebieten; Kwet warnt, dass die Software Schwarze Menschen dort als 'fremd' markieren und so eine 'KI-gestützte Apartheid' fördern könnte.",
+      "title_en": "Private AI camera network Vumacam expands in Johannesburg suburbs",
+      "description_en": "Researcher Michael Kwet reports in Vice that the company Vumacam is building a private 'smart' CCTV network in Johannesburg's suburbs, whose footage private security firms are to analyse with AI. The cameras are concentrated in affluent, predominantly white neighbourhoods; Kwet warns that the software could flag Black people there as 'the other' and thus drive an 'AI-powered apartheid'."
     },
     {
-      "date": "2019",
+      "date": "2019-12",
       "phase": "doctrine",
-      "title": "Forschung dokumentiert algorithmische Ungleichheit",
-      "description": "Research ICT Africa und die University of Cape Town dokumentieren, dass KI-Systeme in Südafrika bestehende Ungleichheiten reproduzieren und verstärken. Postleitzahlen-basiertes Scoring diskriminiert systematisch ehemalige Township-Bewohner. Algorithmen, die 'neutral' erscheinen, kodifizieren das Erbe der Apartheid in Datenstrukturen.",
-      "sources": [],
-      "title_de": "Forschung dokumentiert algorithmische Ungleichheit",
-      "description_de": "Research ICT Africa und die University of Cape Town dokumentieren, dass KI-Systeme in Südafrika bestehende Ungleichheiten reproduzieren und verstärken. Postleitzahlen-basiertes Scoring diskriminiert systematisch ehemalige Township-Bewohner. Algorithmen, die 'neutral' erscheinen, kodifizieren das Erbe der Apartheid in Datenstrukturen.",
-      "title_en": "Research documents algorithmic inequality",
-      "description_en": "Research ICT Africa and the University of Cape Town document that AI systems in South Africa reproduce and reinforce existing inequalities. Postcode-based scoring systematically discriminates against former township residents. Algorithms that appear 'neutral' encode the legacy of apartheid into data structures."
+      "title": "Studie: Banken und Vermieter sortieren Wohnungssuchende per Kredit-Score und Wohnlage",
+      "description": "Der Geograf Julien Migozzi zeigt in der Fachzeitschrift Housing Policy Debate am Beispiel Kapstadts, dass Hypothekenbanken und institutionelle Vermieter Kreditnehmer und Mieter per Kredit-Scoring klassifizieren und gezielt bestimmte Stadtteile auswählen. Die Finanzialisierung des Wohnungsmarkts bindet so vor allem Mittel- und Oberschicht ein und meidet die städtischen Armen; die Auswahl knüpft an die unter der Apartheid rassistisch geprägte Raumordnung an.",
+      "sources": ["https://www.tandfonline.com/doi/full/10.1080/10511482.2019.1684335", "https://shs.hal.science/halshs-02979875"],
+      "title_de": "Studie: Banken und Vermieter sortieren Wohnungssuchende per Kredit-Score und Wohnlage",
+      "description_de": "Der Geograf Julien Migozzi zeigt in der Fachzeitschrift Housing Policy Debate am Beispiel Kapstadts, dass Hypothekenbanken und institutionelle Vermieter Kreditnehmer und Mieter per Kredit-Scoring klassifizieren und gezielt bestimmte Stadtteile auswählen. Die Finanzialisierung des Wohnungsmarkts bindet so vor allem Mittel- und Oberschicht ein und meidet die städtischen Armen; die Auswahl knüpft an die unter der Apartheid rassistisch geprägte Raumordnung an.",
+      "title_en": "Study: banks and landlords sort home-seekers by credit score and location",
+      "description_en": "Using Cape Town as a case study, geographer Julien Migozzi shows in the journal Housing Policy Debate that mortgage lenders and corporate landlords classify borrowers and tenants through credit scoring and deliberately select particular neighbourhoods. The financialization of the housing market thus incorporates mainly the middle and upper classes while staying away from the urban poor; this selection builds on the racialized spatial order of apartheid."
     },
     {
-      "date": "2021",
+      "date": "2020-07",
+      "phase": "doctrine",
+      "title": "Datenschutzgesetz POPIA tritt in Kraft - mit Regel zu automatisierten Entscheidungen",
+      "description": "Am 1. Juli 2020 treten die wesentlichen Bestimmungen des Protection of Personal Information Act (POPIA) in Kraft, mit einer Übergangsfrist bis 30. Juni 2021. Paragraf 71 untersagt grundsätzlich Entscheidungen mit Rechtsfolgen, die allein auf automatisierter Profilbildung beruhen, ausdrücklich auch zur Kreditwürdigkeit, lässt aber Ausnahmen etwa bei Vertragsabschlüssen zu.",
+      "sources": ["https://popia.co.za/section-71-automated-decision-making/", "https://www.dlapiperafrica.com/en/south-africa/insights/2020/popia-effective-on-1-july-2020-are-you-ready.html"],
+      "title_de": "Datenschutzgesetz POPIA tritt in Kraft - mit Regel zu automatisierten Entscheidungen",
+      "description_de": "Am 1. Juli 2020 treten die wesentlichen Bestimmungen des Protection of Personal Information Act (POPIA) in Kraft, mit einer Übergangsfrist bis 30. Juni 2021. Paragraf 71 untersagt grundsätzlich Entscheidungen mit Rechtsfolgen, die allein auf automatisierter Profilbildung beruhen, ausdrücklich auch zur Kreditwürdigkeit, lässt aber Ausnahmen etwa bei Vertragsabschlüssen zu.",
+      "title_en": "Data protection law POPIA takes effect - with a rule on automated decisions",
+      "description_en": "On 1 July 2020 the main provisions of the Protection of Personal Information Act (POPIA) take effect, with a grace period until 30 June 2021. Section 71 in principle prohibits decisions with legal consequences that are based solely on automated profiling, explicitly including creditworthiness, but allows exceptions, for example in connection with contracts."
+    },
+    {
+      "date": "2022-04",
       "phase": "event",
-      "title": "Gesichtserkennung in Townships eingesetzt",
-      "description": "SAPS setzt Gesichtserkennungstechnologie in Vierteln ein, die überproportional von Schwarzen Südafrikaner bewohnt werden. Private Sicherheitsunternehmen installieren Kameras in Wohngebieten ohne Zustimmung der Bewohner. Die Technologie wird ohne das im POPIA-Datenschutzgesetz vorgeschriebene Impact Assessment eingesetzt.",
-      "sources": [],
-      "title_de": "Gesichtserkennung in Townships eingesetzt",
-      "description_de": "SAPS setzt Gesichtserkennungstechnologie in Vierteln ein, die überproportional von Schwarzen Südafrikaner bewohnt werden. Private Sicherheitsunternehmen installieren Kameras in Wohngebieten ohne Zustimmung der Bewohner. Die Technologie wird ohne das im POPIA-Datenschutzgesetz vorgeschriebene Impact Assessment eingesetzt.",
-      "title_en": "Facial recognition deployed in townships",
-      "description_en": "SAPS deploys facial recognition technology in neighborhoods disproportionately inhabited by Black South Africans. Private security companies install cameras in residential areas without residents' consent. The technology is used without the impact assessment mandated by the POPIA data protection law."
+      "title": "Recherche: Private KI-Überwachung schafft 'digitale Apartheid'",
+      "description": "Eine Recherche des MIT Technology Review berichtet, dass Vumacam inzwischen über 6.600 Kameras betreibt, mehr als 5.000 davon in Johannesburg, deren Bilder in Kontrollräume mit KI-Werkzeugen wie Kennzeichenerkennung fließen. Bürgerrechtler warnen vor einer 'digitalen Apartheid'; das überwiegend Schwarze und arme Soweto blieb laut Bericht von den Kameras ausgespart, weil Vumacam sie dort installierte, wo zahlende Kunden sind.",
+      "sources": ["https://www.technologyreview.com/2022/04/19/1049996/south-africa-ai-surveillance-digital-apartheid/"],
+      "title_de": "Recherche: Private KI-Überwachung schafft 'digitale Apartheid'",
+      "description_de": "Eine Recherche des MIT Technology Review berichtet, dass Vumacam inzwischen über 6.600 Kameras betreibt, mehr als 5.000 davon in Johannesburg, deren Bilder in Kontrollräume mit KI-Werkzeugen wie Kennzeichenerkennung fließen. Bürgerrechtler warnen vor einer 'digitalen Apartheid'; das überwiegend Schwarze und arme Soweto blieb laut Bericht von den Kameras ausgespart, weil Vumacam sie dort installierte, wo zahlende Kunden sind.",
+      "title_en": "Investigation: private AI surveillance creates 'digital apartheid'",
+      "description_en": "An investigation by MIT Technology Review reports that Vumacam now operates more than 6,600 cameras, over 5,000 of them in Johannesburg, whose footage feeds into control rooms using AI tools such as licence plate recognition. Civil rights activists warn of a 'digital apartheid'; according to the report, predominantly Black and poor Soweto has been spared the cameras because Vumacam installed them where it could find paying customers."
     },
     {
-      "date": "2023",
+      "date": "2022-09",
+      "phase": "event",
+      "title": "'Apartheid by Algorithm': Kreditbüros verkaufen Daten zur Auswahl von Wohnungssuchenden",
+      "description": "Julien Migozzi beschreibt im Magazin Logic(s), wie Kreditbüros auf der Suche nach 'alternativen Daten' Gerichtsakten, Steuerunterlagen, Kundenkonten im Einzelhandel, Bank- und Telefondaten sowie soziale Netzwerke auswerten und diese an Immobilienmakler, Banken und institutionelle Vermieter verkaufen, die damit Wohnungssuchende auswählen. Seine These: Die einst staatlich durchgesetzte Segregation werde nun datengetrieben zum Geschäftsmodell.",
+      "sources": ["https://logicmag.io/home/apartheid-by-algorithm/"],
+      "title_de": "'Apartheid by Algorithm': Kreditbüros verkaufen Daten zur Auswahl von Wohnungssuchenden",
+      "description_de": "Julien Migozzi beschreibt im Magazin Logic(s), wie Kreditbüros auf der Suche nach 'alternativen Daten' Gerichtsakten, Steuerunterlagen, Kundenkonten im Einzelhandel, Bank- und Telefondaten sowie soziale Netzwerke auswerten und diese an Immobilienmakler, Banken und institutionelle Vermieter verkaufen, die damit Wohnungssuchende auswählen. Seine These: Die einst staatlich durchgesetzte Segregation werde nun datengetrieben zum Geschäftsmodell.",
+      "title_en": "'Apartheid by Algorithm': credit bureaus sell data used to select home-seekers",
+      "description_en": "In Logic(s) magazine, Julien Migozzi describes how credit bureaus, in search of 'alternative data', mine court records, tax records, retail credit accounts, bank and telephone records and social networks and sell this data to estate agents, banks and corporate landlords, who use it to select home-seekers. His argument: segregation once enforced by the state is now becoming a data-driven business."
+    },
+    {
+      "date": "2024",
       "phase": "consequences",
-      "title": "POPIA-Durchsetzung und zivilgesellschaftlicher Widerstand",
-      "description": "Die südafrikanische Information Regulator beginnt mit der Durchsetzung des POPIA-Datenschutzgesetzes, das automatisierte Entscheidungsfindung reguliert. Zivilgesellschaftliche Organisationen fordern ein Verbot von Gesichtserkennung in Townships und eine Überprüfung aller Kredit-Scoring-Algorithmen auf diskriminierende Auswirkungen.",
-      "sources": [],
-      "title_de": "POPIA-Durchsetzung und zivilgesellschaftlicher Widerstand",
-      "description_de": "Die südafrikanische Information Regulator beginnt mit der Durchsetzung des POPIA-Datenschutzgesetzes, das automatisierte Entscheidungsfindung reguliert. Zivilgesellschaftliche Organisationen fordern ein Verbot von Gesichtserkennung in Townships und eine Überprüfung aller Kredit-Scoring-Algorithmen auf diskriminierende Auswirkungen.",
-      "title_en": "POPIA enforcement and civil-society pushback",
-      "description_en": "The South African Information Regulator begins enforcing the POPIA data protection law, which regulates automated decision-making. Civil-society organizations call for a ban on facial recognition in townships and a review of all credit-scoring algorithms for discriminatory effects."
+      "title": "Studie: Mietplattformen filtern Mieter mit niedrigem Score aus",
+      "description": "In einer Studie in der Fachzeitschrift Environment and Planning D beschreibt Migozzi, wie Mietplattformen wie das Tenant Profile Network (TPN), das mit dem Kreditbüro TransUnion kooperiert, Kreditdaten mit Zahlungs- und Räumungsdaten von Vermietern verknüpfen. Ein niedriger Score senkt laut der Studie mechanisch die Chance, die Mieterauswahl zu bestehen; der Autor sieht darin eine Erneuerung des 'racial capitalism' auf dem Wohnungsmarkt nach der Apartheid.",
+      "sources": ["https://journals.sagepub.com/doi/10.1177/02637758231195962", "https://ora.ox.ac.uk/objects/uuid:88e29c51-93bf-420f-b09f-16ba57c794d4/files/r6395w852w"],
+      "title_de": "Studie: Mietplattformen filtern Mieter mit niedrigem Score aus",
+      "description_de": "In einer Studie in der Fachzeitschrift Environment and Planning D beschreibt Migozzi, wie Mietplattformen wie das Tenant Profile Network (TPN), das mit dem Kreditbüro TransUnion kooperiert, Kreditdaten mit Zahlungs- und Räumungsdaten von Vermietern verknüpfen. Ein niedriger Score senkt laut der Studie mechanisch die Chance, die Mieterauswahl zu bestehen; der Autor sieht darin eine Erneuerung des 'racial capitalism' auf dem Wohnungsmarkt nach der Apartheid.",
+      "title_en": "Study: rental platforms filter out tenants with low scores",
+      "description_en": "In a study in the journal Environment and Planning D, Migozzi describes how rental platforms such as Tenant Profile Network (TPN), which partners with the credit bureau TransUnion, combine credit data with landlords' payment and eviction data. According to the study, a low score mechanically lowers the chance of passing tenant screening; the author sees this as a renewal of racial capitalism in the post-apartheid housing market."
     }
   ],
   "asm:sources": [
@@ -156,12 +179,13 @@
     "lastUpdated": "2026-04-02",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-09-26: 'reinforces the legacy of apartheid' via AI credit scoring was not documented; the title now reflects the verified research showing that credit scoring in the housing market perpetuates apartheid-era spatial segregation. Slug unchanged for permalink stability."
   },
-  "name_de": "Südafrika: Algorithmisches Kredit-Scoring verstärkt Apartheid-Erbe",
-  "name_en": "South Africa: Algorithmic credit scoring reinforces the legacy of apartheid",
-  "description_de": "In Südafrika werden KI-gestützte Kredit-Scoring-Systeme eingesetzt, die historische Daten aus der Apartheid-Ära verwenden und systematisch Schwarze Südafrikaner benachteiligen. Die Algorithmen nutzen Proxys wie Postleitzahl, Bildungseinrichtung und Beschäftigungshistorie, die stark mit der Hautfarbe korrelieren. Gleichzeitig setzt die Polizei Gesichtserkennungstechnologie in Townships ein, die unverhältnismäßig Schwarze Gemeinschaften überwacht.",
-  "description_en": "In South Africa, AI-based credit-scoring systems are deployed that use historical data from the apartheid era and systematically disadvantage Black South Africans. The algorithms use proxies such as postcode, educational institution, and employment history that strongly correlate with skin color. At the same time, police deploy facial recognition technology in townships, which disproportionately surveils Black communities.",
+  "name_de": "Südafrika: Kredit-Scoring auf dem Wohnungsmarkt schreibt Apartheid-Segregation fort",
+  "name_en": "South Africa: Credit scoring in the housing market perpetuates apartheid-era segregation",
+  "description_de": "In Südafrika nutzen Banken, institutionelle Vermieter und Mietplattformen Kredit-Scores und Daten von Kreditbüros, um Wohnungssuchende auszuwählen. Forschung des Geografen Julien Migozzi zeigt am Beispiel Kapstadts, dass diese Auswahl an die unter der Apartheid rassistisch geprägte Raumordnung anknüpft und die städtischen Armen ausschließt. Parallel wächst in Johannesburgs wohlhabenden Vororten das private KI-gestützte Kameranetz von Vumacam, vor dem Bürgerrechtler als 'digitale Apartheid' warnen.",
+  "description_en": "In South Africa, banks, corporate landlords and rental platforms use credit scores and credit-bureau data to select home-seekers. Research by geographer Julien Migozzi, using Cape Town as a case study, shows that this selection builds on the racialized spatial order of apartheid and excludes the urban poor. At the same time, Vumacam's private AI-supported camera network is growing in Johannesburg's affluent suburbs, which civil rights activists warn amounts to a 'digital apartheid'.",
   "asm:affectedRights_de": [
     "Schutz vor Diskriminierung",
     "Recht auf Gleichheit",

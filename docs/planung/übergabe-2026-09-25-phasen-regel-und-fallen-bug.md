@@ -1,0 +1,294 @@
+# Übergabe #13 — Kausale Phasen-Regel, Validator korpusweit 0, „fallen"-Bug im Umlaut-Fixer
+
+**Datum:** 2026-09-25
+**Vorgänger:** #12 (2026-08-07, Smart-Char-Sweep + Validator-Vollscan)
+**Branch:** `claude/stoic-ride-lt1b0j` (Cloud-Session). **Noch nicht auf `main`**,
+Deploy erst nach Merge.
+**Commits:** `707d2c5` (Validator-Regel) · `674e584` (Briefing) · `dd359ca`
+(fallen-Bug) · `05a14bc` (69 TL-Korrekturen)
+
+---
+
+## Ausgangslage
+
+STATUS.md nannte als offene Entscheidung: **Phasen-Regel lockern oder 134
+Files umbauen?** Der Validator-Vollscan stand bei 150 Files / 152 ERRORs,
+davon 134× „genau 1 event-Phase erwartet". Empfehlung aus #12: Regel lockern.
+Der Projekteigner gab mit „arbeite im Projekt weiter" grünes Licht für die
+Empfehlung.
+
+## Was sich bei der Prüfung als anders herausstellte
+
+Die Regel einfach zu lockern (mehrere `event` erlauben) hätte eine zweite
+Lücke offen gelassen: **Der Validator prüfte die Phasen-Reihenfolge nie.**
+Eine Analyse aller 2457 Phasen-Sequenzen zeigte 68 Timelines mit kausal
+unmöglicher Abfolge, die den alten Validator trotzdem bestanden, weil sie
+zufällig genau 1 `event` hatten. Häufigstes Muster: `I-E-D-C` (36×), also
+eine „Doktrin", die erst **nach** dem Vorfall kommt, den sie ermöglicht
+haben soll.
+
+Stichprobe dieser Doktrinen: „UN-Bericht dokumentiert den Vorfall",
+„Garante stellt DSGVO-Verstöße fest", „Wiederzulassung nach Auflagen",
+„Akademische Debatte über Fairness-Definitionen". Das sind Folgen, keine
+Doktrinen. Also echte Fehletiketten, keine Schema-Artefakte.
+
+---
+
+## 1. Neue Phasen-Regel (Commit `707d2c5`)
+
+`checkPhaseOrder()` in `scripts/validate-timelines.js` ersetzt „genau 1 event":
+
+- **mindestens 1 `event`**, mehrere erlaubt (mehrstufiger Vorfall)
+- **vor dem ersten `event`** nur `infrastructure`/`doctrine`
+- **nach dem letzten `event`** nur `consequences`
+- **dazwischen** alles erlaubt (z.B. Doktrin, die erst Stufe 2 ermöglichte)
+- `infrastructure` und `doctrine` bilden **einen** Vorbedingungs-Block ohne
+  feste Reihenfolge untereinander. Ist das Gesetz älter als das System,
+  steht die Doktrin zuerst. Es gilt allein die Chronologie.
+
+Chronologie bleibt strikt aufsteigend über die ganze Timeline. Die Regel steht
+auch im Agenten-Briefing (`data/incident-candidates/_timeline-briefing.md`,
+Abschnitt „Phasen-Reihenfolge").
+
+**Wirkung:** 152 → 80 ERRORs sofort. Die 117 korrekt abgebildeten
+mehrstufigen Vorfälle sind grün. Dafür wurden 54 neue, echte Fehler sichtbar.
+
+**Frontend unberührt:** `detail-panel.js` rendert die Einträge in
+Array-Reihenfolge mit Phasen-Label. Mehrere `event` hintereinander sind kein
+Problem (im Browser geprüft: Myanmar zeigt `EVENT 2021-06 → EVENT 2022-03`).
+
+## 2. Datenkorrektur: 76 Files → 0 ERRORs
+
+**7 mechanisch** (im selben Commit): Timelines mit älterer Doktrin hinter
+jüngerer Infrastruktur (Maschinenrichtlinie 2006, OSHA 1989, japanisches
+Obszönitätsrecht 1907 …) in chronologische Reihenfolge getauscht. Das ist
+nach der neuen Block-Regel korrekt, der Inhalt blieb unverändert.
+
+**69 per Workflow** (Commit `05a14bc`): 18 Fix-Agenten zu je 4 Files, danach
+je ein **unabhängiger adversarialer Prüfer**, der per `git diff` gegen HEAD
+jede Änderung zu widerlegen versuchte. Bei Widerspruch folgte Reparatur plus
+frische Nachprüfung. 38 Agenten, ~39 Min, 0 Ausfälle, WebSearch durchgehend
+verfügbar.
+
+| Ergebnis | n |
+|---|---|
+| im ersten Anlauf bestätigt | 68 |
+| bestätigt nach Reparatur (Kambodscha: UNODC→OHCHR, 2022-08→2023-08) | 1 |
+| needs-human | 0 |
+| rule_conflict (Regel nicht erfüllbar ohne Fakten zu verbiegen) | 0 |
+
+Art der Änderung (per Skript gegen HEAD geprüft):
+
+| Art | n |
+|---|---|
+| nur Phasen-Etikett | 49 |
+| Reihenfolge + Etikett | 7 |
+| inhaltlich (Datum/Text/Einträge) | 13 |
+| Felder außerhalb `asm:reverseTimeline` verändert | **0** |
+
+Die 13 inhaltlichen Änderungen sind alle per WebSearch belegt, u.a.:
+KOSA-Senatsvotum `2023-07 "91 zu 5"` → `2024-07-30 "91 zu 3"`; das 6-Mio-
+FCC-Bußgeld im Biden-Robocall-Fall saß im Februar-Eintrag, gehört aber in
+den Mai (Vorschlag am Tag der Anklage); 3 Files von 7 auf 6 Einträge
+(verwandte `consequences` zusammengelegt, Quellen erhalten); Schweden von 3
+auf 4 Einträge (Tieto-Projekt „Framtidens klassrum" 2018, belegt).
+
+**Endstand:** Validator **2457/2457 ohne ERROR** (437 WARNs, fast alle
+„gleiches Datum, akzeptabel wenn real"). Audit 0. 0 Smart-Chars.
+
+## 3. Bonus-Fund: Umlaut-Fixer zerstörte „fallen" (Commit `dd359ca`)
+
+Die Hygiene-Kette nach dem Workflow hat eine Agenten-Korrektur **rückgängig
+gemacht**: Der Myanmar-Agent hatte „unter Kontrolle der Junta fällen" zu
+„fallen" korrigiert, `fix-umlaut-transliterations.js` machte daraus wieder
+„fällen".
+
+**Ursache:** Die fest eingebaute FIX_MAP enthielt `'falle' → 'fälle'` und
+`'fallen' → 'fällen'`, gedacht als Umlaut-lose Transliteration. Beides sind
+aber **echte deutsche Wörter** (Falle, fallen). Das Audit führte dieselben
+Wörter als Transliteration und hätte korrekte Schreibung als Fehler gemeldet.
+Jeder Hygiene-Lauf hat so korrektes Deutsch zerstört, auch in sichtbaren
+Titeln:
+
+- „Afghanistan: US-Biometriedatenbanken **fällen** nach Taliban-Machtübernahme"
+- „Yoons Zustimmungswerte **fällen** auf 19 %"
+- „Olympics Has **Fällen**" (englischer Filmtitel im DE-Feld)
+
+**Behoben:** `falle`/`fallen` aus Fixer und Audit entfernt, nur die
+eindeutige ae-Schreibung (`faelle`/`faellen`) bleibt. 49 klein geschriebene
+„fällen/fälle" im Kontext geprüft: **alle 49 falsch**, keines meint „ein
+Urteil fällen" oder „Bäume fällen". Dazu 7× „Olympics Has Fällen" und 1×
+„dauerndes Fällen" (Roboter). Groß geschriebenes „Fälle/Fällen" (Plural von
+Fall) stichprobenartig nach Kontext geprüft und korrekt. **114 Ersetzungen
+in 43 Files**, nur Anzeige-Textfelder. Fixer ist danach idempotent (0
+Ersetzungen).
+
+> ⚠️ **Weitere Echtwort-Kollisionen in der FIX_MAP (nicht behoben, selten):**
+> `verhangen` (verhangener Himmel), `gestutzt*` (stutzen), `wahrend`
+> (Partizip von wahren), `lander` (Mars-Lander), `manner`, `lucke`
+> (Nachname). Im Korpus kaum relevant, aber bei einem künftigen
+> Translit-Refactoring rauswerfen. **Faustregel: Umlaut-lose Schlüssel ohne
+> ae/oe/ue nur aufnehmen, wenn sie kein echtes Wort sind.**
+
+## 4. Browsertest in der Cloud-Umgebung
+
+`unpkg.com` ist in dieser Cloud-Umgebung per Netzwerk-Richtlinie gesperrt,
+die Karte lädt dort ohne Leaflet nicht („L is not defined"). `registry.npmjs.org`
+ist erlaubt. **Workaround für Tests:** Leaflet 1.9.4 + markercluster 1.5.3 als
+npm-Tarball holen und die unpkg-URLs per Playwright `page.route()` auf die
+lokalen Kopien umleiten. Das Projekt selbst bleibt unverändert. Playwright
+liegt global unter `/opt/node22/lib/node_modules/playwright`. Alternativ
+`unpkg.com` in den Environment-Einstellungen freigeben.
+
+Geprüft: Biden, Schweden, Myanmar, Afghanistan. Detail-Panel öffnet über
+Permalink (volle `@id`-URL, siehe #12), Timeline rendert mit neuen Phasen,
+0 JS-Fehler, 0 HTTP-Fehler, DE-Titel zeigt „fallen".
+
+---
+
+## Nächste Schritte (Prio-Reihenfolge)
+
+1. **Vorbestehende Faktenbefunde aus der Verify-Stufe (12 Files).** Die Prüfer
+   haben Mängel notiert, die nicht zum Auftrag gehörten. Meist sind es frühe,
+   handgeschriebene Seed-Incidents mit leeren `sources`-Arrays und
+   Unschärfen:
+   - `schweden-ki-schule-gesichtserkennung`: event-Datum `2019-01` ist nur die
+     Tieto-Pressemitteilung, der Test lief laut IMY im Herbst 2018
+   - `algerien-internet-shutdown-proteste`: Eintrag `2020-06` beschreibt das
+     Referendum vom 1.11.2020, Social-Media-Sperre dort nicht belegt
+   - `chile-ki-verfassungsprozess`: „erstes Neurorechte-Gesetz" falsch datiert
+     (Verfassungsänderung Okt. 2021)
+   - `griechenland-predpol-gefluechtete-evros`: CENTAUR-Beschreibung laut
+     AlgorithmWatch ungenau
+   - `frankreich-algorithme-parcoursup`: Veröffentlichungspflicht kam aus
+     der QPC-Entscheidung April 2020, nicht aus einer „Ordonnance"
+   - `afghanistan-…`: Grammatik („keine Evakuierungsprotokoll", „der
+     Afghanen Regierung")
+   - `brasilien-ki-strafverfolgung`, `kolumbien-ki-protest-ueberwachung`,
+     `algerien-…`: Eintrag [0] als `infrastructure` etikettiert, beschreibt
+     aber schon den Vorfall
+   - `eu-iborderctrl-…`: EuG-Urteil 2021 als `doctrine` statt `consequences`
+   - `brasilien-schulische-deepfake-wellen-…`: „85 Mädchen" stammt aus einem
+     HRW-Bericht über andere Bundesstaaten
+   - `argentinien-…` u.a.: TL-Einträge ohne Quellen
+
+   Methode: derselbe Fix-/Verify-Workflow, eine Welle. Details im
+   Workflow-Journal der Session bzw. im Commit `05a14bc`.
+2. **Career-Daten via Dataset-Download** (Layer A fehlt).
+3. **AIAAIC Batch D** (pre-2015, ~300 Stubs).
+4. **needs-review-Cases sichten** (~180, 20–30 Promotes).
+5. **Slug-Migration** der 5 inhaltlich abweichenden Permalinks (optional).
+
+## Konventionen (ergänzt)
+
+- **Validator-Gate korpusweit, nicht nur pro Welle:** `ls data/incidents/*.json
+  | sed 's#.*/##; s#\.json$##' | node scripts/validate-timelines.js --stdin`
+  muss 0 ERRORs melden. Seit dieser Session ist das der Normalzustand.
+- **Hygiene-Kette nach Agenten-Edits immer mit Diff-Kontrolle:** Der Fixer
+  kann Agenten-Korrekturen still zurückdrehen. Nach `fix-umlaut` einen Blick
+  auf „Per file" werfen und bei Treffern in frisch korrigierten Files den
+  Kontext prüfen.
+- Rest unverändert (siehe #12).
+
+---
+
+## Nachtrag (gleiche Session): 11 Seed-Incidents faktengeprüft (Commit `5367c4e`)
+
+Schritt 1 der Liste oben ist erledigt. Mali war durch den fallen-Fix schon
+behoben, blieben 11 Files. Ablauf: 3 Korrektur-Agenten (Timelines), 1 Agent
+für Top-Level-Felder, die den korrigierten Timelines widersprachen, 3
+unabhängige adversariale Prüfer, 1 Nachbesserungsrunde. WebFetch war für
+die meisten Primärquellen durch den Proxy gesperrt, Belege daher über
+WebSearch-Snippets.
+
+**Befund: In allen 11 Files steckten echte Faktenfehler**, nicht nur fehlende
+Quellen. Beispiele: Schweden-Test lief Q4 2018 (nicht 2019-01, `startDate`
+angepasst) und war Schwedens erste DSGVO-Strafe, nicht die erste weltweit;
+CENTAUR ist das Lager-Überwachungssystem der Ägäis-Inseln, kein
+EU-Grenzroboter; die „464 % Deepfake-Zuwachs in Brasilien" sind eine
+globale Zahl; die „42 Festnahmen" in Salvador gehören zum Karneval 2020;
+„Hitlergruß-Pose" und „Sowjet-Uniform" (Argentinien) stehen in keiner
+Quelle; Frankreichs APB nutzte Losverfahren, keine transparente Rangliste.
+
+Geändert wurden nur Timelines, die Hauptbeschreibungen (DE/EN parallel),
+`asm:actors` (Chile, Griechenland), `asm:sources` (Frankreich,
+Griechenland) und ein `startDate`. Jeder TL-Eintrag dieser Files hat jetzt
+mindestens eine Quelle (ein Algerien-Eintrag hat 4, weil jede eine andere
+Aussage belegt; das Briefing empfiehlt max. 2, der Validator erzwingt es
+nicht).
+
+### Neue Front: quellenlose Timelines
+
+Korpusweit haben **943 von 10.923 TL-Einträgen (8,6 %) keine Quelle**,
+verteilt auf 425 Files; **89 Files haben überhaupt keine TL-Quelle**
+(nach Severity der Files mit Lücken: Sev-5 57, Sev-4 151, Sev-3 166,
+Sev-2 46, Sev-1 5). Nach der 11-von-11-Erfahrung ist das die
+wahrscheinlichste Fundstelle für weitere Faktenfehler. Empfohlene
+Reihenfolge: die 89 komplett quellenlosen zuerst, darin Sev-5/4 zuerst.
+Methode wie oben. Liste erzeugen:
+
+```
+node -e 'const fs=require("fs");for(const f of fs.readdirSync("data/incidents")){if(!f.endsWith(".json"))continue;const j=JSON.parse(fs.readFileSync("data/incidents/"+f,"utf8"));const tl=j["asm:reverseTimeline"]||[];if(tl.length&&tl.every(e=>!e.sources||!e.sources.length))console.log(j["asm:severity"]+" "+f.replace(".json",""))}' | sort -r
+```
+
+Randnotizen der Prüfer (nicht bearbeitet): Slug `griechenland-predpol-…`
+passt inhaltlich nicht mehr (kein Predictive Policing), bleibt aus
+Permalink-Gründen. Chile-Name spricht noch von „KI-Überwachung der
+Mapuche", die Timeline beschreibt konventionelle Geheimdienstüberwachung.
+
+---
+
+## Nachtrag 2 (2026-09-26): Quellen-Offensive komplett - 89 -> 0 quellenlose Timelines
+
+Freigabe Projekteigner: "alles fertig machen" (inkl. der empfohlenen
+redaktionellen Entscheidungen).
+
+**Methode ab Welle 3 (Budget-schonend):** Fix-Agenten mit Sonnet (3-4 Files
+je Agent, Briefing als Datei `fix-briefing.md`), danach Prüfer mit dem
+stärkeren Modell, die **direkt korrigieren** (`verify-briefing.md`) statt
+lange Berichte zu liefern. Commit je geprüftem Paket per Hilfsskript
+(Validator, Umlaut-Fixer, Audit, Smart-Char-Gate, nur explizit benannte
+Files). Die Prüfstufe blieb unverzichtbar: Sie fand in fast jedem
+Sonnet-Paket weitere Fehler (falsche Daten, Quellen die die Aussage nicht
+stützen, erfundene URLs).
+
+**Ergebnis:** alle 89 Timelines belegt und faktengeprüft; in praktisch jedem
+File echte Fehler. Besonders schwer: kolumbien-ki-migration-profiling und
+spanien-ki-arbeitsmarkt-algorithmus (Kernbehauptung unbelegt, Fall um die
+belegten Fakten neu aufgebaut), emirate-tosca ('TOSCA' existiert nicht),
+aethiopien (erfundener Amnesty-Bericht), waymo-cruise (alle 4 Hauptquellen
+mit falschen Titeln/Herausgebern). Recht aktuelle Behauptungen wurden gezielt
+gegengeprüft, u.a. AP-Bußgeld gegen Uber 825 Mio. EUR (21.08.2026).
+
+**Redaktionell (Titel mit asm:metadata.asm:correctionNote, Slug unverändert):**
+pakistan-blasphemie, irak-zello, belarus, china-hui, china-kirchen, unesco,
+daenemark-kinderschutz, indien (Deepfake -> Cheapfake), sambia (2024 -> 2025),
+usa-racial-bias-healthcare, kolumbien, neuseeland, schweden-reva,
+suedafrika, spanien-arbeitsmarkt, peru, usa-facial-recognition-flughaefen u.a.
+Dubletten zusammengelegt (merge-internal-duplicates.js): 3x Dänemark-Amnesty,
+2x Kenia-Meta-Moderatoren, 2x Ukraine-Clearview -> **2457 -> 2453**.
+Nebenfelder (asm:actors, incidentType, Ort) von 7 Files an die geprüften
+Fakten angepasst.
+
+**Zwei weitere Werkzeug-Bugs (behoben):**
+1. `lander -> länder` im Umlaut-Fixer verfälschte den Eigennamen Brad Lander.
+2. **Der Fixer zerstörte URLs:** Die Quellen-Arrays der Timelines sind reine
+   Strings ohne `url`-Key und fielen durch den Feldnamen-Schutz. 31 Links
+   waren kaputt (lto.de/.../hintergründe, grüne-fraktion-bayern.de,
+   überpubpolicy.medium.com …). Fix: Strings mit `http(s)://` werden nie
+   angefasst; Validator meldet Umlaute in Quellen-URLs als ERROR; alle 31
+   repariert.
+
+**Panne dieser Session (transparent):** Commit 97e1304 (Kenia-Dublette) nahm
+per `git add -A data` 13 noch ungeprüfte Zwischenstände mit. Nicht
+umgeschrieben (laufende Agenten), stattdessen durch geprüfte Folge-Commits
+('Nachprüfung zu 97e1304') ersetzt. Lehre: bei parallelen Agenten nie
+`git add -A`, nur explizite Files.
+
+**WebSearch-Kontingent:** ca. 200 Suchen pro Agent. Sonnet-Agenten mit 4
+Files liefen mehrfach leer; Rest-Files wurden an frische Agenten übergeben.
+Kein Agent hat ohne WebSearch bestätigt.
+
+**Endstand:** Validator 2453/2453 ohne ERROR, Audit 0, 0 Smart-Chars,
+0 Timelines ohne Quellen, 569/10.966 einzelne TL-Einträge ohne Quelle
+(vorher 943).
