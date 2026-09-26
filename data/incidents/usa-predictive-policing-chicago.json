@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-predictive-policing-chicago",
   "name": "USA: Chicagos 'Strategic Subject List' - Algorithmisches Gewaltrisiko-Scoring mit Rassismus-Bias",
-  "description": "Das Chicago Police Department setzte ab 2012 eine algorithmisch erstellte 'Strategic Subject List' (SSL), auch 'Heat List' genannt, ein, die Tausende Einwohner nach ihrem angeblichen Gewaltrisiko einstufte. Bewertet wurden unter anderem Verhaftungen, Umfeld und Vorstrafen - ohne strafrechtliche Verurteilung. Evaluationen belegten einen starken Bias gegen schwarze Stadtbewohner. Nach anhaltender Kritik und einem vernichtenden Bericht des Stadtprufers wurde das System 2020 eingestellt.",
+  "description": "Das Chicago Police Department setzte ab 2012 eine algorithmisch erstellte 'Strategic Subject List' (SSL), auch 'Heat List' genannt, ein, die letztlich rund 400.000 Einwohner nach ihrem angeblichen Gewaltrisiko einstufte. Bewertet wurden unter anderem Verhaftungen, Umfeld und Vorstrafen - ohne strafrechtliche Verurteilung. Evaluationen belegten, dass das System Gewalt nicht verhinderte und Schwarze sowie Latino-Bewohner einkommensschwacher Viertel überproportional erfasste. Das CPD stellte das Programm im November 2019 ein; ein im Januar 2020 veröffentlichter Bericht des Stadtprüfers kritisierte nachträglich unzuverlässige Risikoscores und mangelnde Kontrollen.",
   "startDate": "2012",
   "location": {
     "@type": "Place",
@@ -62,45 +62,57 @@
       "date": "2012",
       "phase": "infrastructure",
       "title": "Einführung der Strategic Subject List",
-      "description": "Das Chicago Police Department implementiert in Zusammenarbeit mit dem Illinois Institute of Technology einen Algorithmus, der Stadtbewohner anhand von Faktoren wie Verhaftungshistorie, Umfeld und bekannten Assoziierten mit einem Risikoscore zwischen 0 und 500 versieht. Die Liste umfasst zeitweise bis zu 400.000 Personen. Sie wird genutzt, um Polizeiprasenz, Praventionsbesuche und Ressourcenzuweisung zu steuern.",
-      "sources": [],
+      "description": "Das Chicago Police Department implementiert, entwickelt vom Illinois Institute of Technology und finanziert über ein Bundesprogramm des Justizministeriums, einen Algorithmus, der Stadtbewohner anhand von Faktoren wie Verhaftungshistorie, Umfeld und bekannten Assoziierten mit einem Risikoscore zwischen 0 und 500 versieht. Bis 2017 erfasst die Liste fast 400.000 Personen mit einem Score - unabhängig davon, ob sie je verurteilt wurden. Die Liste wird genutzt, um Polizeipräsenz, Präventionsbesuche und Ressourcenzuweisung zu steuern.",
+      "sources": [
+        "https://teamupturn.gitbooks.io/predictive-policing/content/systems/chicago.html",
+        "https://igchicago.org/wp-content/uploads/2020/01/OIG-Advisory-Concerning-CPDs-Predictive-Risk-Models-.pdf"
+      ],
       "title_de": "Einführung der Strategic Subject List",
-      "description_de": "Das Chicago Police Department implementiert in Zusammenarbeit mit dem Illinois Institute of Technology einen Algorithmus, der Stadtbewohner anhand von Faktoren wie Verhaftungshistorie, Umfeld und bekannten Assoziierten mit einem Risikoscore zwischen 0 und 500 versieht. Die Liste umfasst zeitweise bis zu 400.000 Personen. Sie wird genutzt, um Polizeiprasenz, Praventionsbesuche und Ressourcenzuweisung zu steuern.",
+      "description_de": "Das Chicago Police Department implementiert, entwickelt vom Illinois Institute of Technology und finanziert über ein Bundesprogramm des Justizministeriums, einen Algorithmus, der Stadtbewohner anhand von Faktoren wie Verhaftungshistorie, Umfeld und bekannten Assoziierten mit einem Risikoscore zwischen 0 und 500 versieht. Bis 2017 erfasst die Liste fast 400.000 Personen mit einem Score - unabhängig davon, ob sie je verurteilt wurden. Die Liste wird genutzt, um Polizeipräsenz, Präventionsbesuche und Ressourcenzuweisung zu steuern.",
       "title_en": "Introduction of the Strategic Subject List",
-      "description_en": "The Chicago Police Department, working with the Illinois Institute of Technology, implements an algorithm that assigns city residents a risk score between 0 and 500 based on factors such as arrest history, social environment and known associates. At its peak, the list contains up to 400,000 individuals. It is used to direct police presence, prevention visits and resource allocation."
+      "description_en": "The Chicago Police Department implements an algorithm, developed by the Illinois Institute of Technology and funded through a federal Department of Justice program, that assigns city residents a risk score between 0 and 500 based on factors such as arrest history, social environment and known associates. By 2017 the list covers almost 400,000 individuals with a score - regardless of whether they were ever convicted. It is used to direct police presence, prevention visits and resource allocation."
     },
     {
       "date": "2016",
       "phase": "doctrine",
-      "title": "RAND-Evaluation deckt gravierende Schwachen auf",
-      "description": "Die RAND Corporation veröffentlicht eine offizielle Evaluation der SSL. Ergebnis: Das System identifiziert keine Personen besser als Zufallsmethoden. Gleichzeitig sind Schwarze und Einwohner aus einkommensschwachen Vierteln überproportional auf der Liste. RAND empfiehlt grundlegende Reformen. Das Chicago Police Department setzt das System dennoch unverandert fort und weitet es auf weitere Stadtbereiche aus.",
-      "sources": [],
-      "title_de": "RAND-Evaluation deckt gravierende Schwachen auf",
-      "description_de": "Die RAND Corporation veröffentlicht eine offizielle Evaluation der SSL. Ergebnis: Das System identifiziert keine Personen besser als Zufallsmethoden. Gleichzeitig sind Schwarze und Einwohner aus einkommensschwachen Vierteln überproportional auf der Liste. RAND empfiehlt grundlegende Reformen. Das Chicago Police Department setzt das System dennoch unverandert fort und weitet es auf weitere Stadtbereiche aus.",
+      "title": "RAND-Evaluation deckt gravierende Schwächen auf",
+      "description": "Die RAND Corporation veröffentlicht 2016 eine Evaluation der SSL: Gelistete Personen sind nicht mehr oder weniger wahrscheinlich Opfer eines Schuss- oder Tötungsdelikts als eine Vergleichsgruppe - das Modell verhindert also keine Gewalt. Gelistete werden aber deutlich häufiger wegen Schusswaffendelikten verhaftet, was auf verstärkte Polizeikontrolle statt Prävention hindeutet. Weitere Analysen zeigen, dass die Liste Schwarze und Latino-Bewohner einkommensschwacher Viertel überproportional erfasst. Das Chicago Police Department überarbeitet das Modell, setzt das System aber fort.",
+      "sources": [
+        "https://www.rand.org/pubs/commentary/2016/09/cpds-heat-list-and-the-dilemma-of-predictive-policing.html",
+        "https://www.bloomberg.com/news/articles/2016-08-25/chicago-s-predictive-policing-list-isn-t-preventing-violence"
+      ],
+      "title_de": "RAND-Evaluation deckt gravierende Schwächen auf",
+      "description_de": "Die RAND Corporation veröffentlicht 2016 eine Evaluation der SSL: Gelistete Personen sind nicht mehr oder weniger wahrscheinlich Opfer eines Schuss- oder Tötungsdelikts als eine Vergleichsgruppe - das Modell verhindert also keine Gewalt. Gelistete werden aber deutlich häufiger wegen Schusswaffendelikten verhaftet, was auf verstärkte Polizeikontrolle statt Prävention hindeutet. Weitere Analysen zeigen, dass die Liste Schwarze und Latino-Bewohner einkommensschwacher Viertel überproportional erfasst. Das Chicago Police Department überarbeitet das Modell, setzt das System aber fort.",
       "title_en": "RAND evaluation reveals serious flaws",
-      "description_en": "The RAND Corporation publishes an official evaluation of the SSL. The finding: the system identifies no individuals better than random selection. At the same time, Black residents and people from low-income neighborhoods are disproportionately represented on the list. RAND recommends fundamental reforms. The Chicago Police Department nevertheless continues the system unchanged and expands it to additional precincts."
+      "description_en": "In 2016 the RAND Corporation publishes an evaluation of the SSL: people on the list are no more or less likely to become victims of a shooting or homicide than a comparison group - the model does not prevent violence. Listed individuals are, however, significantly more likely to be arrested for gun offences, suggesting increased enforcement rather than prevention. Further analyses show the list disproportionately captures Black and Latino residents of low-income neighborhoods. The Chicago Police Department revises the model but continues the system."
     },
     {
-      "date": "2019",
+      "date": "2019-11",
       "phase": "event",
-      "title": "Stadtprufer verurteilt System als ineffektiv und diskriminierend",
-      "description": "Der Stadtprufer von Chicago (Inspector General) veröffentlicht einen Bericht, der das SSL-System scharf kritisiert: Es existiere keine Evidenz für seine Wirksamkeit; die Daten seien unzuverlassig; Betroffene wurden nicht informiert, ob sie auf der Liste stehen; und Praventionsbesuche bei hoch gelisteten Personen hatten keine nachweisbare Wirkung auf Gewaltdelikte. Medien berichten breit, öffentlicher Druck waschst.",
-      "sources": [],
-      "title_de": "Stadtprufer verurteilt System als ineffektiv und diskriminierend",
-      "description_de": "Der Stadtprufer von Chicago (Inspector General) veröffentlicht einen Bericht, der das SSL-System scharf kritisiert: Es existiere keine Evidenz für seine Wirksamkeit; die Daten seien unzuverlassig; Betroffene wurden nicht informiert, ob sie auf der Liste stehen; und Praventionsbesuche bei hoch gelisteten Personen hatten keine nachweisbare Wirkung auf Gewaltdelikte. Medien berichten breit, öffentlicher Druck waschst.",
-      "title_en": "Inspector General condemns the system as ineffective and discriminatory",
-      "description_en": "The Chicago Inspector General publishes a report sharply criticizing the SSL system: there is no evidence of its effectiveness; the underlying data is unreliable; people on the list are never informed of that fact; and prevention visits to highly ranked individuals have no demonstrable effect on violent crime. Media coverage is broad, and public pressure grows."
+      "title": "CPD stellt die Risikomodelle offiziell ein",
+      "description": "Nachdem es die Aufsichtsbehörde Office of Inspector General im August 2019 informiert hat, stellt das Chicago Police Department sein inzwischen 'Party-to-Violence'-Risikomodell genanntes Programm am 1. November 2019 offiziell ein - nach zehn Jahren Entwicklung und Einsatz sowie rund 3,8 Millionen Dollar an Bundesmitteln. Seit 2012 hatten fast 400.000 Personen einen Risikoscore erhalten.",
+      "sources": [
+        "https://igchicago.org/2020/01/23/oig-releases-advisory-on-the-chicago-police-departments-predictive-risk-models/",
+        "https://chicago.suntimes.com/city-hall/2020/1/27/21084030/chicago-police-strategic-subject-list-party-to-violence-inspector-general-joe-ferguson"
+      ],
+      "title_de": "CPD stellt die Risikomodelle offiziell ein",
+      "description_de": "Nachdem es die Aufsichtsbehörde Office of Inspector General im August 2019 informiert hat, stellt das Chicago Police Department sein inzwischen 'Party-to-Violence'-Risikomodell genanntes Programm am 1. November 2019 offiziell ein - nach zehn Jahren Entwicklung und Einsatz sowie rund 3,8 Millionen Dollar an Bundesmitteln. Seit 2012 hatten fast 400.000 Personen einen Risikoscore erhalten.",
+      "title_en": "CPD officially discontinues the risk models",
+      "description_en": "After informing the oversight body, the Office of Inspector General, in August 2019, the Chicago Police Department officially discontinues its program - by then called the 'Party to Violence' risk model - on 1 November 2019, after ten years of development and use and about $3.8 million in federal funding. Since 2012, almost 400,000 people had received a risk score."
     },
     {
-      "date": "2020",
+      "date": "2020-01",
       "phase": "consequences",
-      "title": "Einstellung des Systems und Prasedenzwirkung",
-      "description": "Das Chicago Police Department gibt die offizielle Einstellung der Strategic Subject List bekannt. Der Fall wird zum nationalen Referenzpunkt für die Debatte über algorithmische Vorhersageprogramme in der Strafverfolgung. Mehrere US-Stadte frieren ähnliche Programme ein. Burgerrechtsorganisationen fordern ein bundesweites Verbot von Predictive-Policing-Algorithmen. Die betroffenen Einwohner erhalten keinerlei Entschadigung.",
-      "sources": [],
-      "title_de": "Einstellung des Systems und Prasedenzwirkung",
-      "description_de": "Das Chicago Police Department gibt die offizielle Einstellung der Strategic Subject List bekannt. Der Fall wird zum nationalen Referenzpunkt für die Debatte über algorithmische Vorhersageprogramme in der Strafverfolgung. Mehrere US-Stadte frieren ähnliche Programme ein. Burgerrechtsorganisationen fordern ein bundesweites Verbot von Predictive-Policing-Algorithmen. Die betroffenen Einwohner erhalten keinerlei Entschadigung.",
-      "title_en": "Termination of the system and precedent effect",
-      "description_en": "The Chicago Police Department announces the official discontinuation of the Strategic Subject List. The case becomes a national reference point in the debate over algorithmic prediction programs in law enforcement. Several U.S. cities freeze similar programs. Civil liberties organizations call for a nationwide ban on predictive policing algorithms. Affected residents receive no compensation."
+      "title": "Stadtprüfer-Bericht kritisiert Risikomodelle; andere Städte reagieren",
+      "description": "Im Januar 2020 veröffentlicht der Stadtprüfer von Chicago (Office of Inspector General) einen Bericht, der die eingestellten Risikomodelle scharf kritisiert: Die Risikoscores seien unzuverlässig, Beamte unzureichend geschult und Datenzugriffe unkontrolliert gewesen; zudem hätten Interventionen an Verhaftungen ohne Verurteilung angeknüpft. Die ACLU of Illinois begrüßt die Einstellung, erklärt aber, das CPD hätte die Modelle angesichts jahrelanger Kritik nie einsetzen dürfen, und fordert Transparenz über heute genutzte Werkzeuge. Der Fall wird zum nationalen Referenzpunkt für die Debatte über algorithmische Vorhersageprogramme in der Strafverfolgung; Los Angeles beendet sein PredPol-Programm im April 2020, Santa Cruz und Oakland verbieten Predictive Policing noch im selben Jahr per Stadtratsbeschluss. Die betroffenen Einwohner erhalten keinerlei Entschädigung.",
+      "sources": [
+        "https://igchicago.org/wp-content/uploads/2020/01/OIG-Advisory-Concerning-CPDs-Predictive-Risk-Models-.pdf",
+        "https://www.aclu-il.org/en/press-releases/aclu-illinois-reacts-inspector-generals-advisory-cpd-secret-predictive-policing"
+      ],
+      "title_de": "Stadtprüfer-Bericht kritisiert Risikomodelle; andere Städte reagieren",
+      "description_de": "Im Januar 2020 veröffentlicht der Stadtprüfer von Chicago (Office of Inspector General) einen Bericht, der die eingestellten Risikomodelle scharf kritisiert: Die Risikoscores seien unzuverlässig, Beamte unzureichend geschult und Datenzugriffe unkontrolliert gewesen; zudem hätten Interventionen an Verhaftungen ohne Verurteilung angeknüpft. Die ACLU of Illinois begrüßt die Einstellung, erklärt aber, das CPD hätte die Modelle angesichts jahrelanger Kritik nie einsetzen dürfen, und fordert Transparenz über heute genutzte Werkzeuge. Der Fall wird zum nationalen Referenzpunkt für die Debatte über algorithmische Vorhersageprogramme in der Strafverfolgung; Los Angeles beendet sein PredPol-Programm im April 2020, Santa Cruz und Oakland verbieten Predictive Policing noch im selben Jahr per Stadtratsbeschluss. Die betroffenen Einwohner erhalten keinerlei Entschädigung.",
+      "title_en": "Inspector General report criticizes risk models; other cities react",
+      "description_en": "In January 2020 the Chicago Inspector General publishes a report sharply criticizing the now-discontinued risk models: the risk scores had been unreliable, officers insufficiently trained and data access uncontrolled; moreover, interventions had been tied to arrests that did not result in convictions. The ACLU of Illinois welcomes the shutdown but says CPD should never have used the models given years of criticism, and calls for transparency about the tools used today. The case becomes a national reference point in the debate over algorithmic prediction programs in law enforcement; Los Angeles ends its PredPol program in April 2020, and Santa Cruz and Oakland ban predictive policing by city council vote that same year. Affected residents receive no compensation."
     }
   ],
   "asm:sources": [
@@ -163,7 +175,7 @@
     "humanVerified": true
   },
   "name_de": "USA: Chicagos 'Strategic Subject List' - Algorithmisches Gewaltrisiko-Scoring mit Rassismus-Bias",
-  "description_de": "Das Chicago Police Department setzte ab 2012 eine algorithmisch erstellte 'Strategic Subject List' (SSL), auch 'Heat List' genannt, ein, die Tausende Einwohner nach ihrem angeblichen Gewaltrisiko einstufte. Bewertet wurden unter anderem Verhaftungen, Umfeld und Vorstrafen - ohne strafrechtliche Verurteilung. Evaluationen belegten einen starken Bias gegen schwarze Stadtbewohner. Nach anhaltender Kritik und einem vernichtenden Bericht des Stadtprufers wurde das System 2020 eingestellt.",
+  "description_de": "Das Chicago Police Department setzte ab 2012 eine algorithmisch erstellte 'Strategic Subject List' (SSL), auch 'Heat List' genannt, ein, die letztlich rund 400.000 Einwohner nach ihrem angeblichen Gewaltrisiko einstufte. Bewertet wurden unter anderem Verhaftungen, Umfeld und Vorstrafen - ohne strafrechtliche Verurteilung. Evaluationen belegten, dass das System Gewalt nicht verhinderte und Schwarze sowie Latino-Bewohner einkommensschwacher Viertel überproportional erfasste. Das CPD stellte das Programm im November 2019 ein; ein im Januar 2020 veröffentlichter Bericht des Stadtprüfers kritisierte nachträglich unzuverlässige Risikoscores und mangelnde Kontrollen.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Recht auf Gleichbehandlung",
@@ -171,7 +183,7 @@
     "Schutz vor Diskriminierung aufgrund der ethnischen Herkunft"
   ],
   "name_en": "USA: Chicago's 'Strategic Subject List' - algorithmic violence risk scoring with racial bias",
-  "description_en": "Starting in 2012, the Chicago Police Department deployed an algorithmically generated 'Strategic Subject List' (SSL), also called the 'Heat List,' which ranked thousands of residents by their supposed violence risk. Inputs included arrests, social environment and prior offenses - without any criminal conviction. Evaluations documented strong bias against Black residents. Following sustained criticism and a damning Inspector General report, the system was discontinued in 2020.",
+  "description_en": "Starting in 2012, the Chicago Police Department deployed an algorithmically generated 'Strategic Subject List' (SSL), also called the 'Heat List,' which eventually ranked about 400,000 residents by their supposed violence risk. Inputs included arrests, social environment and prior offenses - without any criminal conviction. Evaluations documented that the system failed to prevent violence and disproportionately captured Black and Latino residents of low-income neighborhoods. CPD discontinued the program in November 2019; a report by the Inspector General published in January 2020 retrospectively criticized unreliable risk scores and a lack of controls.",
   "asm:affectedRights_en": [
     "right to privacy",
     "equal treatment",
