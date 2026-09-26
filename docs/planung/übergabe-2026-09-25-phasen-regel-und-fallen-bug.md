@@ -235,3 +235,60 @@ Randnotizen der Prüfer (nicht bearbeitet): Slug `griechenland-predpol-…`
 passt inhaltlich nicht mehr (kein Predictive Policing), bleibt aus
 Permalink-Gründen. Chile-Name spricht noch von „KI-Überwachung der
 Mapuche", die Timeline beschreibt konventionelle Geheimdienstüberwachung.
+
+---
+
+## Nachtrag 2 (2026-09-26): Quellen-Offensive komplett - 89 -> 0 quellenlose Timelines
+
+Freigabe Projekteigner: "alles fertig machen" (inkl. der empfohlenen
+redaktionellen Entscheidungen).
+
+**Methode ab Welle 3 (Budget-schonend):** Fix-Agenten mit Sonnet (3-4 Files
+je Agent, Briefing als Datei `fix-briefing.md`), danach Prüfer mit dem
+stärkeren Modell, die **direkt korrigieren** (`verify-briefing.md`) statt
+lange Berichte zu liefern. Commit je geprüftem Paket per Hilfsskript
+(Validator, Umlaut-Fixer, Audit, Smart-Char-Gate, nur explizit benannte
+Files). Die Prüfstufe blieb unverzichtbar: Sie fand in fast jedem
+Sonnet-Paket weitere Fehler (falsche Daten, Quellen die die Aussage nicht
+stützen, erfundene URLs).
+
+**Ergebnis:** alle 89 Timelines belegt und faktengeprüft; in praktisch jedem
+File echte Fehler. Besonders schwer: kolumbien-ki-migration-profiling und
+spanien-ki-arbeitsmarkt-algorithmus (Kernbehauptung unbelegt, Fall um die
+belegten Fakten neu aufgebaut), emirate-tosca ('TOSCA' existiert nicht),
+aethiopien (erfundener Amnesty-Bericht), waymo-cruise (alle 4 Hauptquellen
+mit falschen Titeln/Herausgebern). Recht aktuelle Behauptungen wurden gezielt
+gegengeprüft, u.a. AP-Bußgeld gegen Uber 825 Mio. EUR (21.08.2026).
+
+**Redaktionell (Titel mit asm:metadata.asm:correctionNote, Slug unverändert):**
+pakistan-blasphemie, irak-zello, belarus, china-hui, china-kirchen, unesco,
+daenemark-kinderschutz, indien (Deepfake -> Cheapfake), sambia (2024 -> 2025),
+usa-racial-bias-healthcare, kolumbien, neuseeland, schweden-reva,
+suedafrika, spanien-arbeitsmarkt, peru, usa-facial-recognition-flughaefen u.a.
+Dubletten zusammengelegt (merge-internal-duplicates.js): 3x Dänemark-Amnesty,
+2x Kenia-Meta-Moderatoren, 2x Ukraine-Clearview -> **2457 -> 2453**.
+Nebenfelder (asm:actors, incidentType, Ort) von 7 Files an die geprüften
+Fakten angepasst.
+
+**Zwei weitere Werkzeug-Bugs (behoben):**
+1. `lander -> länder` im Umlaut-Fixer verfälschte den Eigennamen Brad Lander.
+2. **Der Fixer zerstörte URLs:** Die Quellen-Arrays der Timelines sind reine
+   Strings ohne `url`-Key und fielen durch den Feldnamen-Schutz. 31 Links
+   waren kaputt (lto.de/.../hintergründe, grüne-fraktion-bayern.de,
+   überpubpolicy.medium.com …). Fix: Strings mit `http(s)://` werden nie
+   angefasst; Validator meldet Umlaute in Quellen-URLs als ERROR; alle 31
+   repariert.
+
+**Panne dieser Session (transparent):** Commit 97e1304 (Kenia-Dublette) nahm
+per `git add -A data` 13 noch ungeprüfte Zwischenstände mit. Nicht
+umgeschrieben (laufende Agenten), stattdessen durch geprüfte Folge-Commits
+('Nachprüfung zu 97e1304') ersetzt. Lehre: bei parallelen Agenten nie
+`git add -A`, nur explizite Files.
+
+**WebSearch-Kontingent:** ca. 200 Suchen pro Agent. Sonnet-Agenten mit 4
+Files liefen mehrfach leer; Rest-Files wurden an frische Agenten übergeben.
+Kein Agent hat ohne WebSearch bestätigt.
+
+**Endstand:** Validator 2453/2453 ohne ERROR, Audit 0, 0 Smart-Chars,
+0 Timelines ohne Quellen, 569/10.966 einzelne TL-Einträge ohne Quelle
+(vorher 943).
