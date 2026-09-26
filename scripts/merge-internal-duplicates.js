@@ -63,7 +63,11 @@ const GROUPS = [
   { keep: 'obermeyer-studie-deckt-rassen-bias',
     drop: ['optum-healthcare-algorithmus-racial-bias'] },
   { keep: 'sprecherinnen-klagen-gegen-lovo-wegen-unautorisi',
-    drop: ['synchronsprecher-innen-verklagen-ki-start-up-lov'] }
+    drop: ['synchronsprecher-innen-verklagen-ki-start-up-lov'] },
+  // Quellen-Welle 2 (2026-09-26): drei Files zum selben Amnesty-Bericht
+  // 'Coded Injustice' vom 13.11.2024, Fakten vorher vereinheitlicht
+  { keep: 'daenemark-udbetaling-danmark-bis-zu-60-ki-modelle',
+    drop: ['daenemark-amnesty-bericht-60-sozial-algorithmen', 'daenemark-amnesty-zeigt-diskriminierung-durch-ki'] }
 ];
 
 function listSlugs() {
