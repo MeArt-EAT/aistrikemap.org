@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/australien-ki-welfare-fraud",
   "name": "Australien: Robodebt - Automatisiertes Sozialbetrugsystem verursacht Massenschaden",
-  "description": "Die australische Regierung setzte ab 2015 ein automatisiertes System zur Erkennung von Überzahlungen bei Sozialleistungen ein, das Einkommensdaten der Steuerbehörde mit Sozialdaten abglich und dabei Jahresdurchschnittswerte auf einzelne Wochen hochrechnete. Diese fehlerhafte Methode erzeugte bei Hunderttausenden Empfängern falsche Schuldforderungen in Höhe von bis zu mehreren Tausend Dollar. Viele Betroffene zahlten aus Angst - darunter psychisch Kranke und Mittellose. 2023 stufte eine Königliche Kommission das System als rechtswidrig ein.",
+  "description": "Die australische Regierung plante ab 2015 und betrieb ab Juli 2016 ein automatisiertes System zur Erkennung von Überzahlungen bei Sozialleistungen ('Robodebt'), das Jahreseinkommensdaten der Steuerbehörde mit Sozialdaten abglich und das Jahreseinkommen gleichmäßig auf Zweiwochenzeiträume verteilte. Diese Einkommensmittelung erzeugte unrechtmäßige Forderungen von rund 1,76 Milliarden australischen Dollar gegen etwa 433.000 Menschen; die Beweislast lag bei den Betroffenen. 2019 räumte die Regierung vor Gericht die Rechtswidrigkeit ein, 2021 wurde eine Sammelklage verglichen. 2023 nannte eine Royal Commission das System 'grob und grausam, weder fair noch legal'.",
   "startDate": "2015",
   "location": {
     "@type": "Place",
@@ -48,48 +48,88 @@
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2015",
+      "date": "2014-11 bis 2015",
       "phase": "infrastructure",
-      "title": "Einführung des automatisierten Einkommensabgleichs",
-      "description": "Das australische Ministerium für Humandienstleistungen führt das 'Online Compliance Intervention'-System ein, das automatisch Jahreseinkommensdaten der australischen Steuerbehörde (ATO) mit Sozialleistungsdaten abgleicht. Das System errechnet Wocheneinkommen durch einfache Division des Jahreseinkommens durch 52 - ohne Berücksichtigung schwankender Einkommen, Saisonarbeit oder Doppelzahlungen. Interne Rechtsabteilungen warnen vor der fehlenden Rechtsgrundlage für diese Methode, werden aber überstimmt.",
-      "sources": [],
-      "title_de": "Einführung des automatisierten Einkommensabgleichs",
-      "title_en": "Introduction of automated income data matching",
-      "description_de": "Das australische Ministerium für Humandienstleistungen führt das 'Online Compliance Intervention'-System ein, das automatisch Jahreseinkommensdaten der australischen Steuerbehörde (ATO) mit Sozialleistungsdaten abgleicht. Das System errechnet Wocheneinkommen durch einfache Division des Jahreseinkommens durch 52 - ohne Berücksichtigung schwankender Einkommen, Saisonarbeit oder Doppelzahlungen. Interne Rechtsabteilungen warnen vor der fehlenden Rechtsgrundlage für diese Methode, werden aber überstimmt.",
-      "description_en": "The Australian Department of Human Services introduced the 'Online Compliance Intervention' system, which automatically matched annual income data from the Australian Taxation Office (ATO) against welfare data. The system calculated weekly income by simply dividing annual income by 52 - without accounting for fluctuating earnings, seasonal work, or double-counted payments. Internal legal teams warned that this method lacked a legal basis but were overruled."
+      "title": "Planung des automatisierten Einkommensabgleichs trotz Rechtsbedenken",
+      "description": "Im November 2014 erhält das Sozialministerium (DSS) die interne Rechtsauskunft, dass die geplante Einkommensmittelung nicht mit dem Gesetz übereinstimme; laut Royal Commission gibt es keinen Beleg, dass dieser Rat damals an das umsetzende Ministerium für Humandienstleistungen (DHS) weitergegeben wurde. Im Haushalt 2015 wird die Maßnahme angekündigt. Die Royal Commission kommt 2023 zu dem Ergebnis, dass der damalige Sozialminister Scott Morrison zuließ, dass das Kabinett irregeführt wurde, weil die Vorlage die Einkommensmittelung nicht offenlegte; Morrison weist diese Feststellungen zurück.",
+      "sources": [
+        "https://lsj.com.au/articles/crude-cruel-and-unlawful-robodebt-royal-commission-findings/",
+        "https://www.abc.net.au/news/2023-07-07/political-reaction-to-robodebt-morrison-tudge-porter-robert/102575414"
+      ],
+      "title_de": "Planung des automatisierten Einkommensabgleichs trotz Rechtsbedenken",
+      "title_en": "Automated income matching planned despite legal concerns",
+      "description_de": "Im November 2014 erhält das Sozialministerium (DSS) die interne Rechtsauskunft, dass die geplante Einkommensmittelung nicht mit dem Gesetz übereinstimme; laut Royal Commission gibt es keinen Beleg, dass dieser Rat damals an das umsetzende Ministerium für Humandienstleistungen (DHS) weitergegeben wurde. Im Haushalt 2015 wird die Maßnahme angekündigt. Die Royal Commission kommt 2023 zu dem Ergebnis, dass der damalige Sozialminister Scott Morrison zuließ, dass das Kabinett irregeführt wurde, weil die Vorlage die Einkommensmittelung nicht offenlegte; Morrison weist diese Feststellungen zurück.",
+      "description_en": "In November 2014 the Department of Social Services (DSS) receives in-house legal advice that the planned income averaging does not accord with the legislation; according to the Royal Commission there is no evidence that this advice was passed on at the time to the implementing Department of Human Services (DHS). The measure is announced in the 2015 budget. In 2023 the Royal Commission finds that then Social Services Minister Scott Morrison allowed Cabinet to be misled because the submission did not disclose the income averaging; Morrison rejects these findings."
+    },
+    {
+      "date": "2016-07",
+      "phase": "event",
+      "title": "Start der 'Online Compliance Intervention' - automatisierte Schuldforderungen",
+      "description": "Im Juli 2016 startet das DHS die automatisierte 'Online Compliance Intervention', öffentlich angekündigt wird sie im Dezember 2016. Das System gleicht Jahreseinkommensdaten der Steuerbehörde ATO mit Sozialleistungsdaten ab und teilt das Jahreseinkommen gleichmäßig auf 26 Zweiwochenzeiträume auf - als hätten die Betroffenen das ganze Jahr über gleichmäßig verdient. Wer schwankend oder nur zeitweise gearbeitet hat, erscheint so rechnerisch überbezahlt. Weicht das Ergebnis von den gemeldeten Einkünften ab, werden die Leistungsbezieher angeschrieben; können sie keine Nachweise wie Lohnabrechnungen vorlegen, wird eine Schuld festgesetzt.",
+      "sources": [
+        "https://pursuit.unimelb.edu.au/articles/the-flawed-algorithm-at-the-heart-of-robodebt",
+        "https://ajis.aaisnet.org/index.php/ajis/article/download/4681/1481/17295"
+      ],
+      "title_de": "Start der 'Online Compliance Intervention' - automatisierte Schuldforderungen",
+      "title_en": "Launch of the 'Online Compliance Intervention' - automated debt claims",
+      "description_de": "Im Juli 2016 startet das DHS die automatisierte 'Online Compliance Intervention', öffentlich angekündigt wird sie im Dezember 2016. Das System gleicht Jahreseinkommensdaten der Steuerbehörde ATO mit Sozialleistungsdaten ab und teilt das Jahreseinkommen gleichmäßig auf 26 Zweiwochenzeiträume auf - als hätten die Betroffenen das ganze Jahr über gleichmäßig verdient. Wer schwankend oder nur zeitweise gearbeitet hat, erscheint so rechnerisch überbezahlt. Weicht das Ergebnis von den gemeldeten Einkünften ab, werden die Leistungsbezieher angeschrieben; können sie keine Nachweise wie Lohnabrechnungen vorlegen, wird eine Schuld festgesetzt.",
+      "description_en": "In July 2016 the DHS launches the automated 'Online Compliance Intervention'; it is publicly announced in December 2016. The system matches annual income data from the Australian Taxation Office (ATO) against welfare data and spreads annual income evenly across 26 fortnights - as if recipients had earned at a steady rate all year. People who worked irregularly or only part of the year thus appear, on paper, to have been overpaid. Where the result differs from the income they reported, recipients are contacted; if they cannot provide evidence such as payslips, a debt is raised."
     },
     {
       "date": "2017",
-      "phase": "doctrine",
-      "title": "Öffentliche Empörung und erste Medienberichte",
-      "description": "Im Jahr 2017 erreichen die Beschwerden und Klagen ihren ersten Höhepunkt. Sozialverbände und Anwälte berichten von Fällen, in denen Betroffene Schulden von mehreren Tausend Dollar zugesandt bekommen, die auf fehlerhaften Berechnungen beruhen. Die Beweislast liegt vollständig beim Betroffenen - das System geht von einer Schuld aus, bis die Person das Gegenteil beweist. Medienberichte zeigen psychische Zusammenbrüche und finanzielle Notlagen als direkte Folgen.",
-      "sources": [],
-      "title_de": "Öffentliche Empörung und erste Medienberichte",
-      "title_en": "Public outrage and first media reports",
-      "description_de": "Im Jahr 2017 erreichen die Beschwerden und Klagen ihren ersten Höhepunkt. Sozialverbände und Anwälte berichten von Fällen, in denen Betroffene Schulden von mehreren Tausend Dollar zugesandt bekommen, die auf fehlerhaften Berechnungen beruhen. Die Beweislast liegt vollständig beim Betroffenen - das System geht von einer Schuld aus, bis die Person das Gegenteil beweist. Medienberichte zeigen psychische Zusammenbrüche und finanzielle Notlagen als direkte Folgen.",
-      "description_en": "In 2017 complaints and lawsuits reached an initial peak. Social-welfare groups and lawyers reported cases in which affected individuals received debt notices of several thousand dollars, based on faulty calculations. The burden of proof rested entirely on the affected person - the system presumed debt until the individual proved otherwise. Media reports documented psychological breakdowns and financial hardship as direct consequences."
+      "phase": "consequences",
+      "title": "Ombudsman und Senat kritisieren das System",
+      "description": "Im April 2017 bemängelt der Commonwealth Ombudsman in seinem Bericht über das automatisierte Schuldensystem von Centrelink Probleme bei Fairness, Transparenz und Bedienbarkeit und spricht acht Empfehlungen aus. Im Juni 2017 legt ein Senatsausschuss nach über 150 Eingaben seinen Bericht vor: Das Programm habe vermeidbares Leid verursacht, weil es den Betroffenen die Beweislast für die Richtigkeit staatlicher Daten auferlege; der Ausschuss nennt es 'so fehlerhaft, dass es zum Scheitern verurteilt war'. Die Regierung hält dennoch an dem Verfahren fest.",
+      "sources": [
+        "https://www.abc.net.au/news/2017-04-10/centrelink-debt-recovery-system-lacks-transparency-ombudsman/8430184",
+        "https://www.abc.net.au/news/2017-06-21/senate-hands-down-report-into-centrelink-debt-recovery/8640004"
+      ],
+      "title_de": "Ombudsman und Senat kritisieren das System",
+      "title_en": "Ombudsman and Senate criticise the scheme",
+      "description_de": "Im April 2017 bemängelt der Commonwealth Ombudsman in seinem Bericht über das automatisierte Schuldensystem von Centrelink Probleme bei Fairness, Transparenz und Bedienbarkeit und spricht acht Empfehlungen aus. Im Juni 2017 legt ein Senatsausschuss nach über 150 Eingaben seinen Bericht vor: Das Programm habe vermeidbares Leid verursacht, weil es den Betroffenen die Beweislast für die Richtigkeit staatlicher Daten auferlege; der Ausschuss nennt es 'so fehlerhaft, dass es zum Scheitern verurteilt war'. Die Regierung hält dennoch an dem Verfahren fest.",
+      "description_en": "In April 2017 the Commonwealth Ombudsman, in its report on Centrelink's automated debt raising and recovery system, identifies problems with fairness, transparency and usability and makes eight recommendations. In June 2017 a Senate committee releases its report after more than 150 submissions: the program caused avoidable distress by placing the onus on recipients to prove the accuracy of government records; the committee calls it 'so flawed it was set up to fail'. The government nevertheless keeps the process in place."
     },
     {
-      "date": "2019",
-      "phase": "event",
-      "title": "Bundesgerichtsklage und erzwungenes Eingeständnis der Rechtswidrigkeit",
-      "description": "Eine Sammelklage vor dem Bundesgericht zwingt die Regierung 2019 zur Einigung: Sie gibt zu, dass das Durchschnittseinkommensverfahren keine valide Rechtsgrundlage hatte. Ein Vergleich über 1,8 Milliarden australische Dollar wird vereinbart, der die Rückerstattung falscher Schuldenforderungen an rund 443.000 Personen umfasst. Die Regierung versucht zunächst, die Einigung ohne förmliche Schuldzuweisung abzuschließen.",
-      "sources": [],
-      "title_de": "Bundesgerichtsklage und erzwungenes Eingeständnis der Rechtswidrigkeit",
-      "title_en": "Federal Court class action and forced admission of unlawfulness",
-      "description_de": "Eine Sammelklage vor dem Bundesgericht zwingt die Regierung 2019 zur Einigung: Sie gibt zu, dass das Durchschnittseinkommensverfahren keine valide Rechtsgrundlage hatte. Ein Vergleich über 1,8 Milliarden australische Dollar wird vereinbart, der die Rückerstattung falscher Schuldenforderungen an rund 443.000 Personen umfasst. Die Regierung versucht zunächst, die Einigung ohne förmliche Schuldzuweisung abzuschließen.",
-      "description_en": "A class action before the Federal Court forced the government to settle in 2019, conceding that the income-averaging method had no valid legal basis. A settlement of AU$1.8 billion was agreed, providing for the reimbursement of false debt claims to around 443,000 people. The government initially sought to conclude the settlement without a formal finding of fault."
+      "date": "2019-11 bis 2021-06",
+      "phase": "consequences",
+      "title": "Gericht, Eingeständnis der Rechtswidrigkeit und Vergleich",
+      "description": "Am 27. November 2019 erlässt das Bundesgericht im Musterverfahren Amato gegen den Commonwealth auf Grundlage eines Vergleichs die Feststellung, dass gemittelte ATO-Einkommensdaten keine Schuld begründen können; die Regierung räumt ein, dass allein auf Mittelung gestützte Forderungen rechtswidrig waren, und stellt das Verfahren ein. Im Juni 2021 genehmigt Richter Bernard Murphy den Vergleich in der Sammelklage Prygodicz gegen den Commonwealth: ein Paket im Wert von rund 1,8 Milliarden australischen Dollar aus Rückzahlungen, erlassenen Forderungen und 112 Millionen Dollar Entschädigung. Das Verfahren habe 'ein beschämendes Kapitel' der australischen Sozialverwaltung offengelegt, so Murphy.",
+      "sources": [
+        "https://www.legalaid.vic.gov.au/depth-look-our-robo-debt-test-case",
+        "https://www.abc.net.au/news/2021-06-11/robodebt-condemned-by-federal-court-judge-as-shameful-chapter/100207674"
+      ],
+      "title_de": "Gericht, Eingeständnis der Rechtswidrigkeit und Vergleich",
+      "title_en": "Court ruling, admission of unlawfulness and settlement",
+      "description_de": "Am 27. November 2019 erlässt das Bundesgericht im Musterverfahren Amato gegen den Commonwealth auf Grundlage eines Vergleichs die Feststellung, dass gemittelte ATO-Einkommensdaten keine Schuld begründen können; die Regierung räumt ein, dass allein auf Mittelung gestützte Forderungen rechtswidrig waren, und stellt das Verfahren ein. Im Juni 2021 genehmigt Richter Bernard Murphy den Vergleich in der Sammelklage Prygodicz gegen den Commonwealth: ein Paket im Wert von rund 1,8 Milliarden australischen Dollar aus Rückzahlungen, erlassenen Forderungen und 112 Millionen Dollar Entschädigung. Das Verfahren habe 'ein beschämendes Kapitel' der australischen Sozialverwaltung offengelegt, so Murphy.",
+      "description_en": "On 27 November 2019 the Federal Court makes consent orders in the test case Amato v Commonwealth declaring that averaged ATO income data cannot establish a debt; the government concedes that debts raised solely on the basis of averaging were unlawful and stops the practice. In June 2021 Justice Bernard Murphy approves the settlement of the Prygodicz v Commonwealth class action: a package worth around AU$1.8 billion made up of refunds, waived debts and AU$112 million in compensation. According to Murphy, the proceeding exposed 'a shameful chapter' in the administration of the Commonwealth social security system."
     },
     {
       "date": "2023-07",
       "phase": "consequences",
-      "title": "Königliche Kommission: System war rechtswidrig und verursachte vermeidbare Tode",
-      "description": "Die Königliche Kommission zu Robodebt veröffentlicht ihren Abschlussbericht im Juli 2023 und stuft das System als rechtswidrig und systematisch schädlich ein. Der Bericht dokumentiert, dass mehrere Betroffene infolge des psychischen Drucks durch die Forderungsschreiben Suizid begangen haben. Hochrangige Beamte und Minister werden namentlich für das Verschweigen interner Rechtsbedenken verantwortlich gemacht. Der Bericht empfiehlt strafrechtliche Untersuchungen.",
-      "sources": [],
-      "title_de": "Königliche Kommission: System war rechtswidrig und verursachte vermeidbare Tode",
-      "title_en": "Royal Commission: scheme was unlawful and caused preventable deaths",
-      "description_de": "Die Königliche Kommission zu Robodebt veröffentlicht ihren Abschlussbericht im Juli 2023 und stuft das System als rechtswidrig und systematisch schädlich ein. Der Bericht dokumentiert, dass mehrere Betroffene infolge des psychischen Drucks durch die Forderungsschreiben Suizid begangen haben. Hochrangige Beamte und Minister werden namentlich für das Verschweigen interner Rechtsbedenken verantwortlich gemacht. Der Bericht empfiehlt strafrechtliche Untersuchungen.",
-      "description_en": "The Royal Commission into Robodebt released its final report in July 2023, classifying the scheme as unlawful and systemically harmful. The report documented that several affected individuals had died by suicide as a result of the psychological pressure created by the debt notices. Senior officials and ministers were named for suppressing internal legal concerns. The report recommended criminal investigations."
+      "title": "Royal Commission: 'grob und grausam, weder fair noch legal'",
+      "description": "Am 7. Juli 2023 übergibt Commissioner Catherine Holmes den Abschlussbericht der Royal Commission zu Robodebt. Das System sei 'ein grober und grausamer Mechanismus, weder fair noch legal' gewesen; es habe unrechtmäßig Forderungen von rund 1,76 Milliarden Dollar gegen etwa 433.000 Menschen erhoben. Der Bericht enthält 57 Empfehlungen und ein versiegeltes Kapitel, das Einzelpersonen zur zivil- und strafrechtlichen Verfolgung an Behörden wie die Anti-Korruptionskommission und die Bundespolizei verweist. Vor der Kommission hatten unter anderem Mütter ausgesagt, deren Söhne sich nach Robodebt-Forderungen das Leben nahmen.",
+      "sources": [
+        "https://theconversation.com/robodebt-royal-commissioner-makes-multiple-referrals-for-prosecution-condemning-scheme-as-crude-and-cruel-209318",
+        "https://www.abc.net.au/news/2023-04-15/qld-robodebt-suicide-prevention-royal-commission/102217156"
+      ],
+      "title_de": "Royal Commission: 'grob und grausam, weder fair noch legal'",
+      "title_en": "Royal Commission: 'crude and cruel, neither fair nor legal'",
+      "description_de": "Am 7. Juli 2023 übergibt Commissioner Catherine Holmes den Abschlussbericht der Royal Commission zu Robodebt. Das System sei 'ein grober und grausamer Mechanismus, weder fair noch legal' gewesen; es habe unrechtmäßig Forderungen von rund 1,76 Milliarden Dollar gegen etwa 433.000 Menschen erhoben. Der Bericht enthält 57 Empfehlungen und ein versiegeltes Kapitel, das Einzelpersonen zur zivil- und strafrechtlichen Verfolgung an Behörden wie die Anti-Korruptionskommission und die Bundespolizei verweist. Vor der Kommission hatten unter anderem Mütter ausgesagt, deren Söhne sich nach Robodebt-Forderungen das Leben nahmen.",
+      "description_en": "On 7 July 2023 Commissioner Catherine Holmes delivers the final report of the Royal Commission into the Robodebt Scheme. The scheme was 'a crude and cruel mechanism, neither fair nor legal'; it unlawfully raised around AU$1.76 billion in debts against approximately 433,000 people. The report contains 57 recommendations and a sealed chapter referring individuals for civil and criminal action to bodies including the National Anti-Corruption Commission and the Australian Federal Police. Among those who gave evidence to the commission were mothers whose sons took their own lives after receiving Robodebt demands."
+    },
+    {
+      "date": "2025-09 bis 2026-06",
+      "phase": "consequences",
+      "title": "Zweiter Vergleich: weitere 475 Millionen Dollar Entschädigung",
+      "description": "Im September 2025 verzichtet die Bundesregierung darauf, sich gegen eine auf die Erkenntnisse der Royal Commission gestützte Berufung der Kanzlei Gordon Legal zu verteidigen, und sagt weitere 475 Millionen australische Dollar Entschädigung zu. Zusammen mit den 112 Millionen Dollar aus dem ersten Vergleich steigt die Entschädigung damit auf 587 Millionen Dollar. Das Bundesgericht genehmigt den neuen Vergleich am 23. Juni 2026.",
+      "sources": [
+        "https://www.abc.net.au/news/2025-09-04/robodebt-victims-get-compensation-from-class-action/105734030",
+        "https://www.servicesaustralia.gov.au/new-robodebt-class-action-settlement?context=60271"
+      ],
+      "title_de": "Zweiter Vergleich: weitere 475 Millionen Dollar Entschädigung",
+      "title_en": "Second settlement: a further AU$475 million in compensation",
+      "description_de": "Im September 2025 verzichtet die Bundesregierung darauf, sich gegen eine auf die Erkenntnisse der Royal Commission gestützte Berufung der Kanzlei Gordon Legal zu verteidigen, und sagt weitere 475 Millionen australische Dollar Entschädigung zu. Zusammen mit den 112 Millionen Dollar aus dem ersten Vergleich steigt die Entschädigung damit auf 587 Millionen Dollar. Das Bundesgericht genehmigt den neuen Vergleich am 23. Juni 2026.",
+      "description_en": "In September 2025 the federal government decides not to defend an appeal by the law firm Gordon Legal based on the Royal Commission's findings, and agrees to pay a further AU$475 million in compensation. Together with the AU$112 million from the first settlement, compensation thus rises to AU$587 million. The Federal Court approves the new settlement on 23 June 2026."
     }
   ],
   "asm:sources": [
@@ -143,8 +183,8 @@
   },
   "name_de": "Australien: Robodebt - Automatisiertes Sozialbetrugsystem verursacht Massenschaden",
   "name_en": "Australia: Robodebt - automated welfare-fraud scheme causes mass harm",
-  "description_de": "Die australische Regierung setzte ab 2015 ein automatisiertes System zur Erkennung von Überzahlungen bei Sozialleistungen ein, das Einkommensdaten der Steuerbehörde mit Sozialdaten abglich und dabei Jahresdurchschnittswerte auf einzelne Wochen hochrechnete. Diese fehlerhafte Methode erzeugte bei Hunderttausenden Empfängern falsche Schuldforderungen in Höhe von bis zu mehreren Tausend Dollar. Viele Betroffene zahlten aus Angst - darunter psychisch Kranke und Mittellose. 2023 stufte eine Königliche Kommission das System als rechtswidrig ein.",
-  "description_en": "From 2015 onwards the Australian government operated an automated system for detecting overpayments of social benefits that cross-matched income data from the tax office with welfare data, extrapolating annual averages onto individual weeks. This flawed method produced false debt claims of up to several thousand dollars against hundreds of thousands of recipients. Many affected people paid out of fear - including those with mental illness and the destitute. In 2023, a Royal Commission classified the scheme as unlawful.",
+  "description_de": "Die australische Regierung plante ab 2015 und betrieb ab Juli 2016 ein automatisiertes System zur Erkennung von Überzahlungen bei Sozialleistungen ('Robodebt'), das Jahreseinkommensdaten der Steuerbehörde mit Sozialdaten abglich und das Jahreseinkommen gleichmäßig auf Zweiwochenzeiträume verteilte. Diese Einkommensmittelung erzeugte unrechtmäßige Forderungen von rund 1,76 Milliarden australischen Dollar gegen etwa 433.000 Menschen; die Beweislast lag bei den Betroffenen. 2019 räumte die Regierung vor Gericht die Rechtswidrigkeit ein, 2021 wurde eine Sammelklage verglichen. 2023 nannte eine Royal Commission das System 'grob und grausam, weder fair noch legal'.",
+  "description_en": "Planned from 2015 and operated from July 2016, the Australian government's automated system for detecting welfare overpayments ('Robodebt') cross-matched annual income data from the tax office with welfare data and spread annual income evenly across fortnights. This income averaging produced unlawful debts of around AU$1.76 billion against approximately 433,000 people, with the burden of proof placed on those affected. In 2019 the government conceded in court that the practice was unlawful, and in 2021 a class action was settled. In 2023 a Royal Commission called the scheme 'crude and cruel, neither fair nor legal'.",
   "asm:affectedRights_de": [
     "Recht auf Sozialleistungen",
     "Recht auf faires Verfahren",

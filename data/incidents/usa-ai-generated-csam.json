@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-ai-generated-csam",
   "name": "USA: KI-generierte Darstellungen sexuellen Kindesmissbrauchs überlasten Erkennungssysteme",
-  "description": "KI-Bildgenerierungstools werden zunehmend genutzt, um Material mit sexuellem Kindesmissbrauch (CSAM) zu erzeugen. Das National Center for Missing and Exploited Children (NCMEC) meldet einen exponentiellen Anstieg solcher Meldungen ab 2022. Das Stanford Internet Observatory dokumentiert, wie gängige KI-Trainingsdatensätze bereits bekanntes CSAM enthielten. Das FBI warnt vor der Nutzung von Stable Diffusion und ähnlichen Modellen durch Täter, die KI-generiertes Material zur Vorbereitung von Grooming-Angriffen einsetzen.",
+  "description": "Seit der Veröffentlichung frei verfügbarer KI-Bildgeneratoren wie Stable Diffusion im Jahr 2022 nutzen Täter diese Werkzeuge, um Darstellungen sexuellen Kindesmissbrauchs (CSAM) zu erzeugen - teils mit Gesichtern und Körpern realer Missbrauchsopfer. Beim National Center for Missing and Exploited Children (NCMEC) stiegen die Meldungen mit Bezug zu generativer KI von 4.700 im Jahr 2023 auf rund 67.000 im Jahr 2024. Das Stanford Internet Observatory fand im Trainingsdatensatz LAION-5B 1.008 bestätigte Missbrauchsbilder. Das FBI stellte 2024 klar, dass auch KI-generiertes CSAM nach US-Bundesrecht illegal ist; in einem der ersten Bundesfälle soll ein Angeklagter mit Stable Diffusion erzeugte Bilder einem 15-Jährigen geschickt haben.",
   "startDate": "2022",
   "location": {
     "@type": "Place",
@@ -60,48 +60,88 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2022-01",
+      "date": "2022-08",
       "phase": "infrastructure",
       "title": "Öffentliche KI-Bildgeneratoren ermöglichen CSAM-Produktion",
-      "description": "Mit der Veröffentlichung von Stable Diffusion als Open-Source-Modell und dem Aufkommen von Midjourney und DALL-E 2 erhalten Täter erstmals niedrigschwelligen Zugang zu leistungsstarken Bildgeneratoren. Das Stanford Internet Observatory stellt fest, dass der LAION-Datensatz, auf dem viele Modelle trainiert werden, verifiziertes CSAM enthält. Technische Schutzmaßnahmen erweisen sich als leicht umgehbar.",
-      "sources": [],
+      "description": "Am 22. August 2022 veröffentlicht Stability AI das Bildmodell Stable Diffusion 1.4 mit frei herunterladbaren Modellgewichten; es läuft lokal auf handelsüblichen Grafikkarten und damit ohne Kontrolle eines Anbieters. Anders als bei geschlossenen Diensten wie DALL-E 2 lassen sich Sicherheitsfilter bei lokal betriebenen offenen Modellen entfernen, und die Modelle können mit eigenen Bildern nachtrainiert werden. Trainiert wurde Stable Diffusion auf Bild-Text-Paaren aus dem Datensatz LAION-5B.",
+      "sources": [
+        "https://petapixel.com/2022/08/23/open-source-ai-image-generator-stable-diffusion-released-to-the-public/",
+        "https://cyber.fsi.stanford.edu/publication/generative-ml-and-csam-implications-and-mitigations"
+      ],
       "title_de": "Öffentliche KI-Bildgeneratoren ermöglichen CSAM-Produktion",
       "title_en": "Publicly available AI image generators enable CSAM production",
-      "description_de": "Mit der Veröffentlichung von Stable Diffusion als Open-Source-Modell und dem Aufkommen von Midjourney und DALL-E 2 erhalten Täter erstmals niedrigschwelligen Zugang zu leistungsstarken Bildgeneratoren. Das Stanford Internet Observatory stellt fest, dass der LAION-Datensatz, auf dem viele Modelle trainiert werden, verifiziertes CSAM enthält. Technische Schutzmaßnahmen erweisen sich als leicht umgehbar.",
-      "description_en": "With the release of Stable Diffusion as an open-source model and the emergence of Midjourney and DALL-E 2, perpetrators gain low-barrier access to powerful image generators for the first time. The Stanford Internet Observatory finds that the LAION dataset, on which many models are trained, contains verified CSAM. Technical safeguards prove easy to circumvent."
+      "description_de": "Am 22. August 2022 veröffentlicht Stability AI das Bildmodell Stable Diffusion 1.4 mit frei herunterladbaren Modellgewichten; es läuft lokal auf handelsüblichen Grafikkarten und damit ohne Kontrolle eines Anbieters. Anders als bei geschlossenen Diensten wie DALL-E 2 lassen sich Sicherheitsfilter bei lokal betriebenen offenen Modellen entfernen, und die Modelle können mit eigenen Bildern nachtrainiert werden. Trainiert wurde Stable Diffusion auf Bild-Text-Paaren aus dem Datensatz LAION-5B.",
+      "description_en": "On 22 August 2022 Stability AI publicly releases the image model Stable Diffusion 1.4 with freely downloadable model weights; it runs locally on consumer graphics cards and therefore outside any provider's control. Unlike closed services such as DALL-E 2, safety filters can be removed from locally run open models, and the models can be fine-tuned on one's own images. Stable Diffusion was trained on image-text pairs from the LAION-5B dataset."
     },
     {
       "date": "2023-06",
+      "phase": "doctrine",
+      "title": "Warnungen vor Missbrauch offener Modelle durch Täter",
+      "description": "Am 5. Juni 2023 warnt das FBI, dass Täter harmlose Fotos und Videos, oft aus sozialen Medien, mit KI-Werkzeugen zu sexuell expliziten Fälschungen verarbeiten - auch von Minderjährigen - und sie zur Belästigung und Sextortion verbreiten. Am 24. Juni 2023 dokumentieren das Stanford Internet Observatory und die Kinderschutz-Organisation Thorn, dass Stable Diffusion 1.5 in Täter-Communities zur Erzeugung von CSAM genutzt wird; mit Feintuning-Verfahren wie LoRA werden Modelle auf Bilder realer Opfer trainiert, um neues Material dieser Kinder zu erzeugen.",
+      "sources": [
+        "https://www.ic3.gov/PSA/2023/psa230605",
+        "https://cyber.fsi.stanford.edu/publication/generative-ml-and-csam-implications-and-mitigations"
+      ],
+      "title_de": "Warnungen vor Missbrauch offener Modelle durch Täter",
+      "title_en": "Warnings about offenders misusing open models",
+      "description_de": "Am 5. Juni 2023 warnt das FBI, dass Täter harmlose Fotos und Videos, oft aus sozialen Medien, mit KI-Werkzeugen zu sexuell expliziten Fälschungen verarbeiten - auch von Minderjährigen - und sie zur Belästigung und Sextortion verbreiten. Am 24. Juni 2023 dokumentieren das Stanford Internet Observatory und die Kinderschutz-Organisation Thorn, dass Stable Diffusion 1.5 in Täter-Communities zur Erzeugung von CSAM genutzt wird; mit Feintuning-Verfahren wie LoRA werden Modelle auf Bilder realer Opfer trainiert, um neues Material dieser Kinder zu erzeugen.",
+      "description_en": "On 5 June 2023 the FBI warns that offenders use AI tools to turn benign photos and videos, often taken from social media, into sexually explicit fakes - including of minors - and circulate them for harassment and sextortion. On 24 June 2023 the Stanford Internet Observatory and the child-safety organisation Thorn document that Stable Diffusion 1.5 is being used in offender communities to generate CSAM; fine-tuning techniques such as LoRA are used to train models on images of real victims in order to generate new material of those children."
+    },
+    {
+      "date": "2023-10",
       "phase": "event",
-      "title": "Exponentieller Anstieg der CSAM-Meldungen bei NCMEC",
-      "description": "Das NCMEC meldet einen dramatischen Anstieg von Berichten über KI-generiertes CSAM. Das Internetwatch Foundation (IWF) stellt in einer Studie fest, dass selbstgeneriertes Material realen Opfern nachgebildet wird, um bekanntes Material zu imitieren. Erkennungssysteme, die auf Hashwerten realer Aufnahmen basieren, versagen bei synthetisch erzeugtem Material vollständig.",
-      "sources": [],
-      "title_de": "Exponentieller Anstieg der CSAM-Meldungen bei NCMEC",
-      "title_en": "Exponential rise in CSAM reports to NCMEC",
-      "description_de": "Das NCMEC meldet einen dramatischen Anstieg von Berichten über KI-generiertes CSAM. Das Internetwatch Foundation (IWF) stellt in einer Studie fest, dass selbstgeneriertes Material realen Opfern nachgebildet wird, um bekanntes Material zu imitieren. Erkennungssysteme, die auf Hashwerten realer Aufnahmen basieren, versagen bei synthetisch erzeugtem Material vollständig.",
-      "description_en": "NCMEC reports a dramatic rise in submissions about AI-generated CSAM. The Internet Watch Foundation (IWF) finds in a study that newly generated material is modeled on real victims in order to imitate known material. Detection systems that rely on hash values of real images fail completely on synthetically generated material."
+      "title": "IWF: Tausende KI-Missbrauchsbilder in einem einzigen Darknet-Forum",
+      "description": "Die britische Internet Watch Foundation (IWF) zählt in einem einzigen Darknet-Forum 20.254 KI-generierte Bilder, die innerhalb eines Monats hochgeladen wurden. Von 11.108 näher untersuchten Bildern stuft sie 2.978 als strafbare Darstellungen sexuellen Kindesmissbrauchs nach britischem Recht ein. Die IWF berichtet, dass Täter Gesichter und Körper realer, bereits bekannter Missbrauchsopfer in KI-Modelle einbauen, um neue Bilder dieser Kinder zu erzeugen.",
+      "sources": [
+        "https://www.iwf.org.uk/media/q4zll2ya/iwf-ai-csam-report_public-oct23v1.pdf",
+        "https://www.iwf.org.uk/news-media/news/worst-nightmares-come-true-as-predators-are-able-to-make-thousands-of-new-ai-images-of-real-child-victims/"
+      ],
+      "title_de": "IWF: Tausende KI-Missbrauchsbilder in einem einzigen Darknet-Forum",
+      "title_en": "IWF: thousands of AI abuse images on a single dark web forum",
+      "description_de": "Die britische Internet Watch Foundation (IWF) zählt in einem einzigen Darknet-Forum 20.254 KI-generierte Bilder, die innerhalb eines Monats hochgeladen wurden. Von 11.108 näher untersuchten Bildern stuft sie 2.978 als strafbare Darstellungen sexuellen Kindesmissbrauchs nach britischem Recht ein. Die IWF berichtet, dass Täter Gesichter und Körper realer, bereits bekannter Missbrauchsopfer in KI-Modelle einbauen, um neue Bilder dieser Kinder zu erzeugen.",
+      "description_en": "The UK-based Internet Watch Foundation (IWF) counts 20,254 AI-generated images uploaded to a single dark web forum within one month. Of 11,108 images it assessed in detail, it classifies 2,978 as criminal child sexual abuse imagery under UK law. The IWF reports that offenders build the faces and bodies of real, already known abuse victims into AI models in order to generate new images of these children."
     },
     {
-      "date": "2023-09",
-      "phase": "consequences",
-      "title": "FBI-Warnung und erste Strafverfolgungen",
-      "description": "Das FBI gibt eine öffentliche Warnung heraus, dass Täter KI-Modelle nutzen, um sexualisierte Darstellungen von Kindern zu erstellen, auch aus harmlosen Social-Media-Fotos. Das Justizministerium beginnt mit Strafverfolgungen unter dem PROTECT Act. Gleichzeitig entsteht eine Rechtsdebatte darüber, ob synthetisch generiertes Material ohne reale Opfer unter bestehende CSAM-Gesetze fällt.",
-      "sources": [],
-      "title_de": "FBI-Warnung und erste Strafverfolgungen",
-      "title_en": "FBI warning and first prosecutions",
-      "description_de": "Das FBI gibt eine öffentliche Warnung heraus, dass Täter KI-Modelle nutzen, um sexualisierte Darstellungen von Kindern zu erstellen, auch aus harmlosen Social-Media-Fotos. Das Justizministerium beginnt mit Strafverfolgungen unter dem PROTECT Act. Gleichzeitig entsteht eine Rechtsdebatte darüber, ob synthetisch generiertes Material ohne reale Opfer unter bestehende CSAM-Gesetze fällt.",
-      "description_en": "The FBI issues a public warning that perpetrators are using AI models to create sexualized depictions of children, including from harmless social media photos. The Department of Justice begins prosecutions under the PROTECT Act. At the same time, a legal debate emerges over whether synthetically generated material without real victims falls under existing CSAM laws."
+      "date": "2023-12",
+      "phase": "event",
+      "title": "Missbrauchsbilder im Trainingsdatensatz LAION-5B",
+      "description": "Im Dezember 2023 veröffentlicht David Thiel vom Stanford Internet Observatory eine Untersuchung des Datensatzes LAION-5B, mit dem unter anderem Stable Diffusion 1.5 trainiert wurde: Er findet 3.226 Verdachtsfälle von Links auf Missbrauchsdarstellungen, 1.008 davon extern bestätigt, unter anderem mit Microsofts PhotoDNA. LAION nimmt die Datensätze LAION-5B und LAION-400M daraufhin vorübergehend offline und veröffentlicht im August 2024 eine bereinigte Fassung.",
+      "sources": [
+        "https://cyber.fsi.stanford.edu/news/investigation-finds-ai-image-generation-models-trained-child-abuse",
+        "https://laion.ai/blog/relaion-5b/"
+      ],
+      "title_de": "Missbrauchsbilder im Trainingsdatensatz LAION-5B",
+      "title_en": "Abuse images in the LAION-5B training dataset",
+      "description_de": "Im Dezember 2023 veröffentlicht David Thiel vom Stanford Internet Observatory eine Untersuchung des Datensatzes LAION-5B, mit dem unter anderem Stable Diffusion 1.5 trainiert wurde: Er findet 3.226 Verdachtsfälle von Links auf Missbrauchsdarstellungen, 1.008 davon extern bestätigt, unter anderem mit Microsofts PhotoDNA. LAION nimmt die Datensätze LAION-5B und LAION-400M daraufhin vorübergehend offline und veröffentlicht im August 2024 eine bereinigte Fassung.",
+      "description_en": "In December 2023 David Thiel of the Stanford Internet Observatory publishes an investigation of the LAION-5B dataset, which was used to train Stable Diffusion 1.5 among other models: he finds 3,226 suspected links to child sexual abuse material, 1,008 of them externally validated, including with Microsoft's PhotoDNA. LAION then temporarily takes the LAION-5B and LAION-400M datasets offline and releases a cleaned version in August 2024."
     },
     {
-      "date": "2024",
+      "date": "2024-03 bis 2024-05",
       "phase": "consequences",
-      "title": "Regulierungsdruck und technische Gegenmaßnahmen",
-      "description": "Der US-Kongress berät den SHIELD Act und weitere Gesetzgebung, die KI-generiertes CSAM explizit unter Strafe stellt. KI-Unternehmen implementieren verstärkt Filtersysteme, die jedoch von versierten Nutzern umgangen werden. Das NCMEC und Tech-Unternehmen erarbeiten neue Hash-basierte Erkennungsverfahren für synthetisches Material. Internationale Strafverfolgungsbehörden koordinieren eine gemeinsame Reaktion.",
-      "sources": [],
-      "title_de": "Regulierungsdruck und technische Gegenmaßnahmen",
-      "title_en": "Regulatory pressure and technical countermeasures",
-      "description_de": "Der US-Kongress berät den SHIELD Act und weitere Gesetzgebung, die KI-generiertes CSAM explizit unter Strafe stellt. KI-Unternehmen implementieren verstärkt Filtersysteme, die jedoch von versierten Nutzern umgangen werden. Das NCMEC und Tech-Unternehmen erarbeiten neue Hash-basierte Erkennungsverfahren für synthetisches Material. Internationale Strafverfolgungsbehörden koordinieren eine gemeinsame Reaktion.",
-      "description_en": "The U.S. Congress is considering the SHIELD Act and further legislation that would explicitly criminalize AI-generated CSAM. AI companies expand their filtering systems, although these are routinely bypassed by experienced users. NCMEC and tech companies are developing new hash-based detection methods for synthetic material. International law enforcement agencies are coordinating a joint response."
+      "title": "FBI-Warnung und eine der ersten Bundesanklagen",
+      "description": "Am 29. März 2024 stellt das FBI in einer öffentlichen Warnung klar, dass mit generativer KI erzeugtes CSAM illegal ist: Das US-Bundesrecht verbietet Herstellung, Verbreitung und Besitz auch realistischer computergenerierter Darstellungen. Im Mai 2024 macht das Justizministerium einen seiner ersten Bundesfälle zu KI-generiertem CSAM öffentlich: Steven Anderegg aus Wisconsin soll mit Stable Diffusion Tausende realistische Missbrauchsbilder erzeugt und einige davon einem 15-Jährigen geschickt haben. Die Anklage lautet auf Herstellung, Verbreitung und Besitz obszöner Darstellungen Minderjähriger.",
+      "sources": [
+        "https://www.ic3.gov/PSA/2024/PSA240329",
+        "https://www.justice.gov/archives/opa/pr/man-arrested-producing-distributing-and-possessing-ai-generated-images-minors-engaged"
+      ],
+      "title_de": "FBI-Warnung und eine der ersten Bundesanklagen",
+      "title_en": "FBI warning and one of the first federal indictments",
+      "description_de": "Am 29. März 2024 stellt das FBI in einer öffentlichen Warnung klar, dass mit generativer KI erzeugtes CSAM illegal ist: Das US-Bundesrecht verbietet Herstellung, Verbreitung und Besitz auch realistischer computergenerierter Darstellungen. Im Mai 2024 macht das Justizministerium einen seiner ersten Bundesfälle zu KI-generiertem CSAM öffentlich: Steven Anderegg aus Wisconsin soll mit Stable Diffusion Tausende realistische Missbrauchsbilder erzeugt und einige davon einem 15-Jährigen geschickt haben. Die Anklage lautet auf Herstellung, Verbreitung und Besitz obszöner Darstellungen Minderjähriger.",
+      "description_en": "On 29 March 2024 the FBI states in a public service announcement that CSAM created with generative AI is illegal: US federal law prohibits the production, distribution and possession of CSAM, including realistic computer-generated images. In May 2024 the Justice Department announces one of its first federal cases on AI-generated CSAM: Steven Anderegg of Wisconsin allegedly used Stable Diffusion to create thousands of realistic abuse images and sent some of them to a 15-year-old boy. He is charged with producing, distributing and possessing obscene visual depictions of minors."
+    },
+    {
+      "date": "2025-2026",
+      "phase": "consequences",
+      "title": "Meldungen vervielfachen sich - Gesetzgebung und Gerichte ziehen Grenzen",
+      "description": "Das NCMEC meldet für 2024 rund 67.000 Hinweise mit Bezug zu generativer KI, nach 4.700 im Jahr 2023 - ein Anstieg um 1.325 Prozent. Im Mai 2025 unterzeichnet Präsident Trump den TAKE IT DOWN Act, der die Veröffentlichung auch KI-gefälschter intimer Bilder unter Strafe stellt und Plattformen zur Löschung binnen 48 Stunden verpflichtet. Im Fall Anderegg erklärt ein Bundesrichter im Februar 2025 den Anklagepunkt des privaten Besitzes rein virtuellen Materials für verfassungswidrig; das Berufungsgericht des 7. Bezirks bestätigt dies am 25. August 2026, die Anklagen wegen Herstellung und Verbreitung bleiben bestehen.",
+      "sources": [
+        "https://www.missingkids.org/blog/2025/ncmec-releases-new-data-2024-in-numbers",
+        "https://reason.com/volokh/2026/08/27/home-possession-of-ai-generated-porn-depicting-fake-children-remains-constitutionally-protected-seventh-circuit-rules/"
+      ],
+      "title_de": "Meldungen vervielfachen sich - Gesetzgebung und Gerichte ziehen Grenzen",
+      "title_en": "Reports multiply - lawmakers and courts draw lines",
+      "description_de": "Das NCMEC meldet für 2024 rund 67.000 Hinweise mit Bezug zu generativer KI, nach 4.700 im Jahr 2023 - ein Anstieg um 1.325 Prozent. Im Mai 2025 unterzeichnet Präsident Trump den TAKE IT DOWN Act, der die Veröffentlichung auch KI-gefälschter intimer Bilder unter Strafe stellt und Plattformen zur Löschung binnen 48 Stunden verpflichtet. Im Fall Anderegg erklärt ein Bundesrichter im Februar 2025 den Anklagepunkt des privaten Besitzes rein virtuellen Materials für verfassungswidrig; das Berufungsgericht des 7. Bezirks bestätigt dies am 25. August 2026, die Anklagen wegen Herstellung und Verbreitung bleiben bestehen.",
+      "description_en": "NCMEC reports around 67,000 CyberTipline reports involving generative AI for 2024, up from 4,700 in 2023 - an increase of 1,325 percent. In May 2025 President Trump signs the TAKE IT DOWN Act, which criminalises the publication of intimate images including AI-generated forgeries and requires platforms to remove them within 48 hours. In the Anderegg case a federal judge rules in February 2025 that the possession charge is unconstitutional as applied to private possession of wholly virtual material; the Seventh Circuit Court of Appeals upholds this on 25 August 2026, while the charges of production and distribution remain."
     }
   ],
   "asm:sources": [
@@ -155,8 +195,8 @@
   },
   "name_de": "USA: KI-generierte Darstellungen sexuellen Kindesmissbrauchs überlasten Erkennungssysteme",
   "name_en": "USA: AI-generated child sexual abuse material overwhelms detection systems",
-  "description_de": "KI-Bildgenerierungstools werden zunehmend genutzt, um Material mit sexuellem Kindesmissbrauch (CSAM) zu erzeugen. Das National Center for Missing and Exploited Children (NCMEC) meldet einen exponentiellen Anstieg solcher Meldungen ab 2022. Das Stanford Internet Observatory dokumentiert, wie gängige KI-Trainingsdatensätze bereits bekanntes CSAM enthielten. Das FBI warnt vor der Nutzung von Stable Diffusion und ähnlichen Modellen durch Täter, die KI-generiertes Material zur Vorbereitung von Grooming-Angriffen einsetzen.",
-  "description_en": "AI image generation tools are increasingly being used to produce child sexual abuse material (CSAM). The National Center for Missing and Exploited Children (NCMEC) reports an exponential rise in such reports starting in 2022. The Stanford Internet Observatory documents how widely used AI training datasets already contained known CSAM. The FBI warns about the use of Stable Diffusion and similar models by perpetrators who deploy AI-generated material to prepare grooming attacks.",
+  "description_de": "Seit der Veröffentlichung frei verfügbarer KI-Bildgeneratoren wie Stable Diffusion im Jahr 2022 nutzen Täter diese Werkzeuge, um Darstellungen sexuellen Kindesmissbrauchs (CSAM) zu erzeugen - teils mit Gesichtern und Körpern realer Missbrauchsopfer. Beim National Center for Missing and Exploited Children (NCMEC) stiegen die Meldungen mit Bezug zu generativer KI von 4.700 im Jahr 2023 auf rund 67.000 im Jahr 2024. Das Stanford Internet Observatory fand im Trainingsdatensatz LAION-5B 1.008 bestätigte Missbrauchsbilder. Das FBI stellte 2024 klar, dass auch KI-generiertes CSAM nach US-Bundesrecht illegal ist; in einem der ersten Bundesfälle soll ein Angeklagter mit Stable Diffusion erzeugte Bilder einem 15-Jährigen geschickt haben.",
+  "description_en": "Since freely available AI image generators such as Stable Diffusion were released in 2022, offenders have used these tools to produce child sexual abuse material (CSAM) - in some cases with the faces and bodies of real abuse victims. Reports to the National Center for Missing and Exploited Children (NCMEC) involving generative AI rose from 4,700 in 2023 to around 67,000 in 2024. The Stanford Internet Observatory found 1,008 confirmed abuse images in the LAION-5B training dataset. In 2024 the FBI stated that AI-generated CSAM is illegal under US federal law; in one of the first federal cases, a defendant allegedly sent images generated with Stable Diffusion to a 15-year-old.",
   "asm:affectedRights_de": [
     "Schutz von Kindern",
     "Menschenwürde",
