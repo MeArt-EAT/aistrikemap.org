@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-uber-lyft-gig-worker-algorithmus",
   "name": "USA: Uber und Lyft - algorithmische Lohnmanipulation und Überwachung von Gig-Arbeitern",
-  "description": "Uber und Lyft setzen undurchsichtige Algorithmen ein, die Löhne von Fahrern dynamisch manipulieren, Deaktivierungen ohne transparente Begründung auslösen und Fahrer lückenlos überwachen. Akademische Studien, darunter Forschungen von Veena Dubal (UC Hastings) und des MIT CSAIL, dokumentieren, wie algorithmisches Lohnmanagement gezielt Pausen und Ruhezeiten verhindert und Fahrer zu mehr Arbeit bei niedrigeren Stundenlöhnen treibt. Betroffene Fahrer haben kaum Möglichkeiten, sich gegen automatisierte Entscheidungen zu wehren.",
+  "description": "Uber und Lyft steuern Fahrer über undurchsichtige Algorithmen, die über Vergütung, Auftragsvergabe und Deaktivierungen entscheiden, und erfassen über Smartphone-Sensoren ihr Fahrverhalten. Die New York Times dokumentierte 2017, wie Uber verhaltensökonomische Anreize einsetzt, um Fahrer länger fahren zu lassen; die Rechtswissenschaftlerin Veena Dubal beschreibt die personalisierte, schwer vorhersehbare Bezahlung als 'algorithmische Lohndiskriminierung'. Mit einer mehr als 200 Millionen US-Dollar teuren Kampagne für Proposition 22 setzten die Plattformen 2020 durch, dass Fahrer in Kalifornien als unabhängige Auftragnehmer gelten. Betroffene Fahrer haben kaum Möglichkeiten, sich gegen automatisierte Entscheidungen zu wehren.",
   "startDate": "2016",
   "location": {
     "@type": "Place",
@@ -61,48 +61,89 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2016",
+      "date": "2016-06",
       "phase": "infrastructure",
-      "title": "Akademische Studien belegen algorithmische Lohnmanipulation",
-      "description": "Rechtswissenschaftlerin Veena Dubal (UC Hastings) beginnt umfangreiche Untersuchungen algorithmischer Lohnpraktiken bei Uber und Lyft. Ihre Forschung zeigt, dass Algorithmen Fahrern individuell angepasste, variable Löhne anbieten - abhängig von ihrer Bereitschaft zu fahren - was eine Form verhaltensbasierter Manipulation darstellt. Eine MIT-Studie ermittelt, dass der mittlere Stundenlohn von Uber-Fahrern nach Kosten unter dem Mindestlohn liegt.",
-      "sources": [],
-      "title_de": "Akademische Studien belegen algorithmische Lohnmanipulation",
-      "title_en": "Academic studies document algorithmic wage manipulation",
-      "description_de": "Rechtswissenschaftlerin Veena Dubal (UC Hastings) beginnt umfangreiche Untersuchungen algorithmischer Lohnpraktiken bei Uber und Lyft. Ihre Forschung zeigt, dass Algorithmen Fahrern individuell angepasste, variable Löhne anbieten - abhängig von ihrer Bereitschaft zu fahren - was eine Form verhaltensbasierter Manipulation darstellt. Eine MIT-Studie ermittelt, dass der mittlere Stundenlohn von Uber-Fahrern nach Kosten unter dem Mindestlohn liegt.",
-      "description_en": "Legal scholar Veena Dubal (UC Hastings) begins extensive research on algorithmic wage practices at Uber and Lyft. Her work shows that algorithms offer drivers individually tailored, variable pay - based on their willingness to drive - constituting a form of behavioral manipulation. An MIT study finds that the median hourly wage of Uber drivers, after costs, falls below the minimum wage."
+      "title": "Uber erfasst Fahrverhalten über Smartphone-Sensoren",
+      "description": "Uber kündigt im Juni 2016 einen breiten Test an, bei dem GPS, Beschleunigungsmesser und Gyroskop im Smartphone der Fahrer Geschwindigkeit, abruptes Bremsen und Beschleunigen sowie die Handynutzung während der Fahrt erfassen. Fahrer erhalten daraus tägliche Auswertungen. Ein vorheriger Pilot in Houston diente dazu, Beschwerden von Fahrgästen über einzelne Fahrer anhand der Sensordaten zu überprüfen.",
+      "sources": [
+        "https://time.com/4387031/uber-driver-app-tracking/",
+        "https://phys.org/news/2016-06-uber-software-tracks-drivers-high.html"
+      ],
+      "title_de": "Uber erfasst Fahrverhalten über Smartphone-Sensoren",
+      "title_en": "Uber tracks driving behavior via smartphone sensors",
+      "description_de": "Uber kündigt im Juni 2016 einen breiten Test an, bei dem GPS, Beschleunigungsmesser und Gyroskop im Smartphone der Fahrer Geschwindigkeit, abruptes Bremsen und Beschleunigen sowie die Handynutzung während der Fahrt erfassen. Fahrer erhalten daraus tägliche Auswertungen. Ein vorheriger Pilot in Houston diente dazu, Beschwerden von Fahrgästen über einzelne Fahrer anhand der Sensordaten zu überprüfen.",
+      "description_en": "In June 2016, Uber announces a broad test in which the GPS, accelerometer, and gyroscope in drivers' smartphones record speed, sudden braking and acceleration, and phone use while driving. Drivers receive daily reports based on this data. An earlier pilot in Houston used the sensor data to check passenger complaints about individual drivers."
     },
     {
-      "date": "2019",
+      "date": "2017-04",
+      "phase": "infrastructure",
+      "title": "New York Times dokumentiert verhaltenspsychologische Steuerung von Fahrern",
+      "description": "Eine Recherche der New York Times zeigt, wie Uber Methoden der Verhaltensökonomie und Videospiel-Techniken einsetzt, um formal selbstständige Fahrer länger fahren zu lassen. Will sich ein Fahrer abmelden, weist ihn die App etwa darauf hin, dass er kurz vor einem Verdienstziel steht; zudem wird der nächste Auftrag bereits vor Ende der laufenden Fahrt zugewiesen.",
+      "sources": [
+        "https://www.nytimes.com/interactive/2017/04/02/technology/uber-drivers-psychological-tricks.html",
+        "https://www.technologyreview.com/2017/04/03/152800/uber-is-engaged-in-psychological-warfare-with-its-drivers/"
+      ],
+      "title_de": "New York Times dokumentiert verhaltenspsychologische Steuerung von Fahrern",
+      "title_en": "New York Times documents behavioral nudging of drivers",
+      "description_de": "Eine Recherche der New York Times zeigt, wie Uber Methoden der Verhaltensökonomie und Videospiel-Techniken einsetzt, um formal selbstständige Fahrer länger fahren zu lassen. Will sich ein Fahrer abmelden, weist ihn die App etwa darauf hin, dass er kurz vor einem Verdienstziel steht; zudem wird der nächste Auftrag bereits vor Ende der laufenden Fahrt zugewiesen.",
+      "description_en": "A New York Times investigation shows how Uber uses behavioral economics and video game techniques to keep formally self-employed drivers on the road longer. When a driver tries to log off, the app may point out that they are close to an earnings target; the next ride is also assigned before the current one ends."
+    },
+    {
+      "date": "2019-09",
       "phase": "doctrine",
-      "title": "Kalifornien verabschiedet AB5 zum Schutz von Gig-Arbeitern",
-      "description": "Das kalifornische Gesetz AB5 stuft Fahrer als Angestellte ein, was Uber und Lyft zu Mindestlohn, Krankenversicherung und anderen Leistungen verpflichten würde. Die Unternehmen investieren mehr als 200 Millionen Dollar in eine Abstimmungskampagne und setzen Algorithmen ein, um Fahrer durch gezielte In-App-Nachrichten gegen das Gesetz zu mobilisieren.",
-      "sources": [],
-      "title_de": "Kalifornien verabschiedet AB5 zum Schutz von Gig-Arbeitern",
-      "title_en": "California passes AB5 to protect gig workers",
-      "description_de": "Das kalifornische Gesetz AB5 stuft Fahrer als Angestellte ein, was Uber und Lyft zu Mindestlohn, Krankenversicherung und anderen Leistungen verpflichten würde. Die Unternehmen investieren mehr als 200 Millionen Dollar in eine Abstimmungskampagne und setzen Algorithmen ein, um Fahrer durch gezielte In-App-Nachrichten gegen das Gesetz zu mobilisieren.",
-      "description_en": "California's AB5 law classifies drivers as employees, which would oblige Uber and Lyft to provide minimum wage, health insurance, and other benefits. The companies invest more than $200 million in a ballot campaign and use algorithms to mobilize drivers against the law through targeted in-app messages."
+      "title": "Kalifornien verabschiedet AB5 - Plattformen rüsten zur Volksinitiative",
+      "description": "Gouverneur Gavin Newsom unterzeichnet am 18. September 2019 das Gesetz AB5, das den sogenannten ABC-Test gesetzlich verankert: Arbeitende gelten als Angestellte, sofern das Unternehmen nicht nachweist, dass sie unabhängig tätig sind. Für App-Fahrer hätte dies Ansprüche auf Mindestlohn, Überstundenvergütung und Sozialleistungen bedeutet. Uber, Lyft und DoorDash hatten bereits im August 2019 zusammen 90 Millionen US-Dollar für eine Volksinitiative gegen das Gesetz bereitgestellt.",
+      "sources": [
+        "https://www.southerncaliforniaemploymentlaw.com/california-governor-passes-ab5-codifying-restrictions-on-independent-contractors/",
+        "https://www.hansonbridgett.com/Publications/articles/2019-10-uber-lyft-doordash-AB5-initiative"
+      ],
+      "title_de": "Kalifornien verabschiedet AB5 - Plattformen rüsten zur Volksinitiative",
+      "title_en": "California passes AB5 - platforms gear up for a ballot initiative",
+      "description_de": "Gouverneur Gavin Newsom unterzeichnet am 18. September 2019 das Gesetz AB5, das den sogenannten ABC-Test gesetzlich verankert: Arbeitende gelten als Angestellte, sofern das Unternehmen nicht nachweist, dass sie unabhängig tätig sind. Für App-Fahrer hätte dies Ansprüche auf Mindestlohn, Überstundenvergütung und Sozialleistungen bedeutet. Uber, Lyft und DoorDash hatten bereits im August 2019 zusammen 90 Millionen US-Dollar für eine Volksinitiative gegen das Gesetz bereitgestellt.",
+      "description_en": "Governor Gavin Newsom signs AB5 on September 18, 2019, codifying the so-called ABC test: workers are considered employees unless the company shows that they work independently. For app-based drivers, this would have meant entitlements to minimum wage, overtime pay, and benefits. Uber, Lyft, and DoorDash had already committed a combined $90 million to a ballot initiative against the law in August 2019."
     },
     {
       "date": "2020-11",
       "phase": "event",
-      "title": "Proposition 22 - Unternehmen hebeln Arbeitnehmerrechte aus",
-      "description": "Uber, Lyft, DoorDash und andere Gig-Plattformen gewinnen mit Proposition 22 die Volksabstimmung in Kalifornien und schaffen damit einen eigenen Rechtsstatus, der Fahrer als unabhängige Auftragnehmer ohne volle Arbeitnehmerrechte einstuft. Die Kampagne nutzte algorithmisch gesteuerte In-App-Benachrichtigungen, um Millionen Fahrer und Fahrgäste zu beeinflussen.",
-      "sources": [],
-      "title_de": "Proposition 22 - Unternehmen hebeln Arbeitnehmerrechte aus",
-      "title_en": "Proposition 22 - companies override worker rights",
-      "description_de": "Uber, Lyft, DoorDash und andere Gig-Plattformen gewinnen mit Proposition 22 die Volksabstimmung in Kalifornien und schaffen damit einen eigenen Rechtsstatus, der Fahrer als unabhängige Auftragnehmer ohne volle Arbeitnehmerrechte einstuft. Die Kampagne nutzte algorithmisch gesteuerte In-App-Benachrichtigungen, um Millionen Fahrer und Fahrgäste zu beeinflussen.",
-      "description_en": "Uber, Lyft, DoorDash, and other gig platforms win California's ballot vote on Proposition 22, creating a separate legal status that classifies drivers as independent contractors without full worker rights. The campaign used algorithmically targeted in-app notifications to influence millions of drivers and riders."
+      "title": "Proposition 22 nimmt Gig-Plattformen von AB5 aus",
+      "description": "Am 3. November 2020 nehmen rund 58 Prozent der kalifornischen Wähler Proposition 22 an. Die Initiative stuft Fahrer App-basierter Fahr- und Lieferdienste als unabhängige Auftragnehmer ein und gewährt ihnen statt voller Arbeitnehmerrechte begrenzte Leistungen wie eine Mindestvergütung für aktive Fahrzeit und Zuschüsse zur Krankenversicherung. Uber, Lyft, DoorDash, Instacart und Postmates steckten mehr als 200 Millionen US-Dollar in die Kampagne - die teuerste Volksabstimmung in der Geschichte Kaliforniens - und bewarben sie auch über Nachrichten in ihren Apps an Fahrer und Kunden.",
+      "sources": [
+        "https://ballotpedia.org/California_Proposition_22,_App-Based_Drivers_as_Contractors_and_Labor_Policies_Initiative_(2020)",
+        "https://sites.law.berkeley.edu/thenetwork/2020/11/16/uber-lyft-win-on-prop-22-the-most-expensive-ballot-measure-in-californias-history"
+      ],
+      "title_de": "Proposition 22 nimmt Gig-Plattformen von AB5 aus",
+      "title_en": "Proposition 22 exempts gig platforms from AB5",
+      "description_de": "Am 3. November 2020 nehmen rund 58 Prozent der kalifornischen Wähler Proposition 22 an. Die Initiative stuft Fahrer App-basierter Fahr- und Lieferdienste als unabhängige Auftragnehmer ein und gewährt ihnen statt voller Arbeitnehmerrechte begrenzte Leistungen wie eine Mindestvergütung für aktive Fahrzeit und Zuschüsse zur Krankenversicherung. Uber, Lyft, DoorDash, Instacart und Postmates steckten mehr als 200 Millionen US-Dollar in die Kampagne - die teuerste Volksabstimmung in der Geschichte Kaliforniens - und bewarben sie auch über Nachrichten in ihren Apps an Fahrer und Kunden.",
+      "description_en": "On November 3, 2020, about 58 percent of California voters approve Proposition 22. The initiative classifies drivers for app-based ride and delivery services as independent contractors and, instead of full employee rights, grants them limited benefits such as minimum pay for engaged time and health insurance stipends. Uber, Lyft, DoorDash, Instacart, and Postmates put more than $200 million into the campaign - the most expensive ballot measure in California history - and also promoted it through in-app messages to drivers and customers."
     },
     {
-      "date": "2023",
+      "date": "2023-11",
       "phase": "consequences",
-      "title": "FTC-Untersuchungen und internationale Regulierung",
-      "description": "Die US-Handelskommission FTC leitet Untersuchungen zu Deaktivierungspraktiken bei Gig-Plattformen ein. In der EU tritt die Platform-Work-Direktive in Kraft, die Plattformarbeitern mehr Rechte gegenüber algorithmischen Entscheidungen einräumt. Uber und Lyft werden weiterhin für fehlende Transparenz bei Deaktivierungen und Lohnberechnungen kritisiert.",
-      "sources": [],
-      "title_de": "FTC-Untersuchungen und internationale Regulierung",
-      "title_en": "FTC investigations and international regulation",
-      "description_de": "Die US-Handelskommission FTC leitet Untersuchungen zu Deaktivierungspraktiken bei Gig-Plattformen ein. In der EU tritt die Platform-Work-Direktive in Kraft, die Plattformarbeitern mehr Rechte gegenüber algorithmischen Entscheidungen einräumt. Uber und Lyft werden weiterhin für fehlende Transparenz bei Deaktivierungen und Lohnberechnungen kritisiert.",
-      "description_en": "The US Federal Trade Commission (FTC) opens investigations into deactivation practices at gig platforms. In the EU, the Platform Work Directive enters into force, granting platform workers more rights against algorithmic decisions. Uber and Lyft continue to be criticized for a lack of transparency around deactivations and pay calculations."
+      "title": "Veena Dubal beschreibt 'algorithmische Lohndiskriminierung'",
+      "description": "Die Rechtswissenschaftlerin Veena Dubal veröffentlicht in der Columbia Law Review die Studie 'On Algorithmic Wage Discrimination'. Gestützt auf mehrjährige ethnografische Forschung mit Fahrern in Kalifornien vor und nach Proposition 22 beschreibt sie, wie Plattformen granulare Daten nutzen, um unvorhersehbare, variable und personalisierte Stundenlöhne festzulegen. Proposition 22 habe diese variable Bezahlung legalisiert, so Dubal.",
+      "sources": [
+        "https://columbialawreview.org/content/on-algorithmic-wage-discrimination/",
+        "https://www.marketplace.org/story/2023/04/10/how-ride-hail-companies-use-data-to-pay-drivers-less"
+      ],
+      "title_de": "Veena Dubal beschreibt 'algorithmische Lohndiskriminierung'",
+      "title_en": "Veena Dubal describes 'algorithmic wage discrimination'",
+      "description_de": "Die Rechtswissenschaftlerin Veena Dubal veröffentlicht in der Columbia Law Review die Studie 'On Algorithmic Wage Discrimination'. Gestützt auf mehrjährige ethnografische Forschung mit Fahrern in Kalifornien vor und nach Proposition 22 beschreibt sie, wie Plattformen granulare Daten nutzen, um unvorhersehbare, variable und personalisierte Stundenlöhne festzulegen. Proposition 22 habe diese variable Bezahlung legalisiert, so Dubal.",
+      "description_en": "Legal scholar Veena Dubal publishes the study 'On Algorithmic Wage Discrimination' in the Columbia Law Review. Drawing on multi-year ethnographic research with drivers in California before and after Proposition 22, she describes how platforms use granular data to set unpredictable, variable, and personalized hourly pay. According to Dubal, Proposition 22 legalized this variable pay."
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Prop 22 bleibt bestehen, erste Regeln gegen algorithmisches Management",
+      "description": "Der Oberste Gerichtshof Kaliforniens bestätigt Proposition 22 am 25. Juli 2024 einstimmig. Im Oktober 2024 verpflichtet sich Lyft in einem Vergleich mit der US-Handelskommission FTC zu einer Strafe von 2,1 Millionen US-Dollar wegen irreführender Verdienstversprechen gegenüber Fahrern. In der EU tritt am 1. Dezember 2024 die Plattformarbeits-Richtlinie in Kraft, die Transparenz und menschliche Aufsicht bei algorithmischen Entscheidungen vorschreibt; die Mitgliedstaaten müssen sie bis Dezember 2026 umsetzen.",
+      "sources": [
+        "https://law.justia.com/cases/california/supreme-court/2024/s279622.html",
+        "https://www.ftc.gov/news-events/news/press-releases/2024/10/ftc-takes-action-stop-lyft-deceiving-drivers-misleading-earnings-claims",
+        "https://osha.europa.eu/en/legislation/directive/directive-20242831eu-platform-work"
+      ],
+      "title_de": "Prop 22 bleibt bestehen, erste Regeln gegen algorithmisches Management",
+      "title_en": "Prop 22 stands, first rules on algorithmic management",
+      "description_de": "Der Oberste Gerichtshof Kaliforniens bestätigt Proposition 22 am 25. Juli 2024 einstimmig. Im Oktober 2024 verpflichtet sich Lyft in einem Vergleich mit der US-Handelskommission FTC zu einer Strafe von 2,1 Millionen US-Dollar wegen irreführender Verdienstversprechen gegenüber Fahrern. In der EU tritt am 1. Dezember 2024 die Plattformarbeits-Richtlinie in Kraft, die Transparenz und menschliche Aufsicht bei algorithmischen Entscheidungen vorschreibt; die Mitgliedstaaten müssen sie bis Dezember 2026 umsetzen.",
+      "description_en": "The California Supreme Court unanimously upholds Proposition 22 on July 25, 2024. In October 2024, Lyft agrees in a settlement with the US Federal Trade Commission (FTC) to pay a $2.1 million penalty over misleading earnings claims to drivers. In the EU, the Platform Work Directive enters into force on December 1, 2024, requiring transparency and human oversight of algorithmic decisions; member states must transpose it by December 2026."
     }
   ],
   "asm:sources": [
@@ -146,8 +187,8 @@
   },
   "name_de": "USA: Uber und Lyft - algorithmische Lohnmanipulation und Überwachung von Gig-Arbeitern",
   "name_en": "USA: Uber and Lyft - algorithmic wage manipulation and surveillance of gig workers",
-  "description_de": "Uber und Lyft setzen undurchsichtige Algorithmen ein, die Löhne von Fahrern dynamisch manipulieren, Deaktivierungen ohne transparente Begründung auslösen und Fahrer lückenlos überwachen. Akademische Studien, darunter Forschungen von Veena Dubal (UC Hastings) und des MIT CSAIL, dokumentieren, wie algorithmisches Lohnmanagement gezielt Pausen und Ruhezeiten verhindert und Fahrer zu mehr Arbeit bei niedrigeren Stundenlöhnen treibt. Betroffene Fahrer haben kaum Möglichkeiten, sich gegen automatisierte Entscheidungen zu wehren.",
-  "description_en": "Uber and Lyft use opaque algorithms that dynamically manipulate drivers' pay, trigger deactivations without transparent justification, and surveil drivers continuously. Academic studies, including research by Veena Dubal (UC Hastings) and MIT CSAIL, document how algorithmic wage management actively prevents breaks and rest periods and drives workers to do more work at lower hourly pay. Affected drivers have few avenues to challenge automated decisions.",
+  "description_de": "Uber und Lyft steuern Fahrer über undurchsichtige Algorithmen, die über Vergütung, Auftragsvergabe und Deaktivierungen entscheiden, und erfassen über Smartphone-Sensoren ihr Fahrverhalten. Die New York Times dokumentierte 2017, wie Uber verhaltensökonomische Anreize einsetzt, um Fahrer länger fahren zu lassen; die Rechtswissenschaftlerin Veena Dubal beschreibt die personalisierte, schwer vorhersehbare Bezahlung als 'algorithmische Lohndiskriminierung'. Mit einer mehr als 200 Millionen US-Dollar teuren Kampagne für Proposition 22 setzten die Plattformen 2020 durch, dass Fahrer in Kalifornien als unabhängige Auftragnehmer gelten. Betroffene Fahrer haben kaum Möglichkeiten, sich gegen automatisierte Entscheidungen zu wehren.",
+  "description_en": "Uber and Lyft manage drivers through opaque algorithms that decide on pay, ride allocation, and deactivations, and record their driving behavior via smartphone sensors. In 2017, the New York Times documented how Uber uses behavioral-economics incentives to keep drivers on the road longer; legal scholar Veena Dubal describes the personalized, hard-to-predict pay as 'algorithmic wage discrimination'. With a campaign for Proposition 22 costing more than $200 million, the platforms ensured in 2020 that drivers in California are classified as independent contractors. Affected drivers have few avenues to challenge automated decisions.",
   "asm:affectedRights_de": [
     "Recht auf faire Entlohnung",
     "Recht auf Privatsphäre",
