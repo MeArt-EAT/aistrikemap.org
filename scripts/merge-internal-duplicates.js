@@ -71,7 +71,11 @@ const GROUPS = [
   // Quellen-Welle 3 (2026-09-26): dieselbe Berufungsentscheidung (Nairobi,
   // 20.09.2024, 185 Moderator:innen gegen Meta), Fakten vorher vereinheitlicht
   { keep: 'kenia-berufungsgericht-erlaubt-185-facebook-moderator',
-    drop: ['kenia-berufungsgericht-nairobi-laesst-klage-von-185'] }
+    drop: ['kenia-berufungsgericht-nairobi-laesst-klage-von-185'] },
+  // Quellen-Welle 7 (2026-09-26): beide beschreiben Clearview in der Ukraine
+  // (Identifizierung toter russischer Soldaten ab 03/2022), keep ist umfassender
+  { keep: 'ukraine-clearview-kriegseinsatz',
+    drop: ['ukraine-ki-gesichtserkennung-tote'] }
 ];
 
 function listSlugs() {
