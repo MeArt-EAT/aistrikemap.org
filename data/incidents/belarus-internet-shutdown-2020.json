@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/belarus-internet-shutdown-2020",
-  "name": "Belarus: Internetabschaltung und SORM-Überwachung während der Wahproteste 2020",
-  "description": "Nach der umstrittenen Prasidentschaftswahl vom 9. August 2020, bei der Lukaschenko mit offiziell 80 Prozent der Stimmen als Sieger erklärt wurde, brachen in Belarus die grossten Proteste seit der Unabhangigkeit aus. Die Regierung reagierte mit mehrtägigen vollstandigen Internetabschaltungen sowie gezielter digitaler Überwachung mittels SORM-basierter Abhortechnologie. Das kanadische Unternehmen Sandvine lieferte Deep-Packet-Inspection-Gerate (DPI), die zur Zensur und Überwachung eingesetzt wurden. Tausende Aktivisten wurden verhaftet; ihre Kommunikationsdaten dienten als Beweismittel für Strafverfolgungen.",
+  "name": "Belarus: Internetabschaltung und SORM-Überwachung während der Wahlproteste 2020",
+  "description": "Nach der umstrittenen Präsidentschaftswahl vom 9. August 2020, bei der Lukaschenko mit offiziell 80,1 Prozent der Stimmen als Sieger erklärt wurde, brachen in Belarus die größten Proteste seit der Unabhängigkeit aus. Die Regierung reagierte mit einer 61-stündigen landesweiten Internetstörung und der Sperrung von Nachrichten-, Oppositions- und VPN-Diensten. Alle Telekommunikationsanbieter sind in Belarus verpflichtet, ihre Technik an das Abhörsystem SORM anzubinden. Das kanadische Unternehmen Sandvine (im Besitz des US-Investors Francisco Partners) lieferte Deep-Packet-Inspection-Technik (DPI), die laut Bloomberg eine zentrale Rolle bei der Zensur spielte. In den ersten vier Protesttagen wurden 6.700 Menschen festgenommen, Menschenrechtsorganisationen dokumentierten Folter in Haft.",
   "startDate": "2020-08",
   "location": {
     "@type": "Place",
@@ -62,48 +62,88 @@
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2020-08-09",
+      "date": "2016-07",
       "phase": "infrastructure",
-      "title": "Wahltag: Vollstandige Internetabschaltung",
-      "description": "Am Wahltag und in den Folgetagen wird das Internet in Belarus dreimal vollständig oder nahezu vollständig abgeschaltet. NetBlocks und das Open Observatory of Network Interference (OONI) dokumentieren die Storungen in Echtzeit. Mobilfunknetze werden gedrosselt; VPN-Dienste werden blockiert. Die Abschaltungen fallen mit der Bekanntgabe erster Wahlergebnisse und den darauffolgenden Protestausbruchen zusammen.",
-      "sources": [],
-      "title_de": "Wahltag: Vollstandige Internetabschaltung",
-      "title_en": "Election day: complete internet shutdown",
-      "description_de": "Am Wahltag und in den Folgetagen wird das Internet in Belarus dreimal vollständig oder nahezu vollständig abgeschaltet. NetBlocks und das Open Observatory of Network Interference (OONI) dokumentieren die Storungen in Echtzeit. Mobilfunknetze werden gedrosselt; VPN-Dienste werden blockiert. Die Abschaltungen fallen mit der Bekanntgabe erster Wahlergebnisse und den darauffolgenden Protestausbruchen zusammen.",
-      "description_en": "On election day and in the following days, the internet in Belarus was completely or nearly completely shut down three times. NetBlocks and the Open Observatory of Network Interference (OONI) documented the outages in real time. Mobile networks were throttled; VPN services were blocked. The shutdowns coincided with the announcement of initial results and the subsequent outbreak of protests."
+      "title": "SORM: Pflicht-Abhörschnittstelle bei allen Telekom-Anbietern",
+      "description": "Amnesty International dokumentiert im Bericht 'It's enough for people to feel it exists', dass alle Telekommunikationsanbieter in Belarus ihre Technik mit dem Überwachungssystem SORM kompatibel machen müssen. SORM gibt den Behörden direkten Fernzugriff auf Kommunikation und Verbindungsdaten der Nutzer, ohne dass die Anbieter davon erfahren.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/press-release/2016/07/belarus-uses-telecoms-firms-to-stifle-dissent/",
+        "https://www.amnesty.org/en/documents/eur49/4306/2016/en/"
+      ],
+      "title_de": "SORM: Pflicht-Abhörschnittstelle bei allen Telekom-Anbietern",
+      "title_en": "SORM: mandatory interception interface at all telecom operators",
+      "description_de": "Amnesty International dokumentiert im Bericht 'It's enough for people to feel it exists', dass alle Telekommunikationsanbieter in Belarus ihre Technik mit dem Überwachungssystem SORM kompatibel machen müssen. SORM gibt den Behörden direkten Fernzugriff auf Kommunikation und Verbindungsdaten der Nutzer, ohne dass die Anbieter davon erfahren.",
+      "description_en": "In its report 'It's enough for people to feel it exists', Amnesty International documented that all telecommunications providers in Belarus must make their equipment compatible with the SORM surveillance system. SORM gives the authorities direct remote access to users' communications and associated data without the providers' knowledge."
     },
     {
-      "date": "2020-08",
-      "phase": "doctrine",
-      "title": "SORM-Abhorung und Sandvine-DPI für gezielte Überwachung",
-      "description": "Access Now und das Citizen Lab belegen, dass belarussische Behörden SORM-3-Systeme (System operativer Ermittlungsmasnahmen) zur Massenüberwachung der Telekommunikation einsetzen. Sandvines PacketLogic-Gerate werden zur Echtzeit-Inspektion, Zensur und zum Protokollieren von Internetverkehr genutzt. Daten aus Messaging-Apps wie Telegram werden zur Identifikation von Protest-Koordinatoren verwendet.",
-      "sources": [],
-      "title_de": "SORM-Abhorung und Sandvine-DPI für gezielte Überwachung",
-      "title_en": "SORM interception and Sandvine DPI for targeted surveillance",
-      "description_de": "Access Now und das Citizen Lab belegen, dass belarussische Behörden SORM-3-Systeme (System operativer Ermittlungsmasnahmen) zur Massenüberwachung der Telekommunikation einsetzen. Sandvines PacketLogic-Gerate werden zur Echtzeit-Inspektion, Zensur und zum Protokollieren von Internetverkehr genutzt. Daten aus Messaging-Apps wie Telegram werden zur Identifikation von Protest-Koordinatoren verwendet.",
-      "description_en": "Access Now and Citizen Lab documented that Belarusian authorities were using SORM-3 systems (System for Operative Investigative Activities) for mass surveillance of telecommunications. Sandvine's PacketLogic devices were used for real-time inspection, censorship, and logging of internet traffic. Data from messaging apps such as Telegram were used to identify protest coordinators."
+      "date": "2020-05",
+      "phase": "infrastructure",
+      "title": "Sandvine führt DPI-Technik für belarussische Sicherheitsbehörden vor",
+      "description": "Das Netzwerkunternehmen Sandvine, im Besitz des US-Investors Francisco Partners, demonstriert einem Sicherheitsteam der belarussischen Regierung im Mai 2020 seine Deep-Packet-Inspection-Technik (DPI). Laut Firmendokumenten, die Bloomberg auswertete, bewarb Sandvine dabei Funktionen zum Sperren von Inhalten per Blacklist; geliefert wurde die Technik über den russischen Generalunternehmer Jet Infosystems.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2020-08-28/belarusian-officials-shut-down-internet-with-technology-made-by-u-s-firm",
+        "https://www.business-humanrights.org/en/latest-news/belarus-us-company-sandvine-supplied-technology-used-to-shut-down-internet/"
+      ],
+      "title_de": "Sandvine führt DPI-Technik für belarussische Sicherheitsbehörden vor",
+      "title_en": "Sandvine demonstrates DPI technology to Belarusian security officials",
+      "description_de": "Das Netzwerkunternehmen Sandvine, im Besitz des US-Investors Francisco Partners, demonstriert einem Sicherheitsteam der belarussischen Regierung im Mai 2020 seine Deep-Packet-Inspection-Technik (DPI). Laut Firmendokumenten, die Bloomberg auswertete, bewarb Sandvine dabei Funktionen zum Sperren von Inhalten per Blacklist; geliefert wurde die Technik über den russischen Generalunternehmer Jet Infosystems.",
+      "description_en": "The networking company Sandvine, owned by US private equity firm Francisco Partners, demonstrated its deep packet inspection (DPI) technology to a Belarusian government security team in May 2020. According to company documents reviewed by Bloomberg, its marketing materials touted blacklisting capabilities; the equipment was delivered through the Russian prime contractor Jet Infosystems."
     },
     {
-      "date": "2020-09",
+      "date": "2020-08-09",
       "phase": "event",
-      "title": "Verhaftungen auf Basis digitaler Beweise",
-      "description": "Tausende Protestierende werden verhaftet; Strafverfolgungen stutzen sich auf abgefangene Messenger-Kommunikation, Mobilfunkortungsdaten und Social-Media-Aktivitaten. Berichte über Folter in Haft mehren sich. Oppositionsjournalisten und Koordinatoren des Telegram-Kanals NEXTA - der während der Proteste zentral für die Koordination war - werden strafrechtlich verfolgt. Redakteursleiter Roman Protasewitsch wird 2021 durch Entführung seines Flugzeugs verhaftet.",
-      "sources": [],
-      "title_de": "Verhaftungen auf Basis digitaler Beweise",
-      "title_en": "Arrests based on digital evidence",
-      "description_de": "Tausende Protestierende werden verhaftet; Strafverfolgungen stutzen sich auf abgefangene Messenger-Kommunikation, Mobilfunkortungsdaten und Social-Media-Aktivitaten. Berichte über Folter in Haft mehren sich. Oppositionsjournalisten und Koordinatoren des Telegram-Kanals NEXTA - der während der Proteste zentral für die Koordination war - werden strafrechtlich verfolgt. Redakteursleiter Roman Protasewitsch wird 2021 durch Entführung seines Flugzeugs verhaftet.",
-      "description_en": "Thousands of protesters were arrested; prosecutions relied on intercepted messenger communications, mobile-location data, and social-media activity. Reports of torture in custody multiplied. Opposition journalists and coordinators of the Telegram channel NEXTA - which had been central to protest coordination - were prosecuted. Editor-in-chief Roman Protasevich was detained in 2021 after his flight was forcibly diverted."
+      "title": "Wahltag: 61-stündige Internetstörung und Massenfestnahmen",
+      "description": "Am Tag der Präsidentschaftswahl, nach der Lukaschenko offiziell mit 80,1 Prozent zum Sieger erklärt wird, bricht die Internetverbindung in Belarus landesweit weitgehend ein. NetBlocks misst eine Störung von 61 Stunden bis zum Morgen des 12. August; gesperrt werden unter anderem unabhängige Nachrichtenseiten, Oppositionsseiten und VPN-Dienste. Die Behörden sprechen von Cyberangriffen, unabhängige Fachleute sehen die Regierung als Verursacherin. Laut Innenministerium werden in den ersten vier Protesttagen 6.700 Menschen festgenommen; Amnesty International dokumentiert Folter in Haft.",
+      "sources": [
+        "https://netblocks.org/reports/internet-disruption-hits-belarus-on-election-day-YAE2jKB3",
+        "https://www.amnesty.org/en/latest/press-release/2020/08/belarus-mounting-evidence-of-a-campaign-of-widespread-torture-of-peaceful-protesters/"
+      ],
+      "title_de": "Wahltag: 61-stündige Internetstörung und Massenfestnahmen",
+      "title_en": "Election day: 61-hour internet disruption and mass arrests",
+      "description_de": "Am Tag der Präsidentschaftswahl, nach der Lukaschenko offiziell mit 80,1 Prozent zum Sieger erklärt wird, bricht die Internetverbindung in Belarus landesweit weitgehend ein. NetBlocks misst eine Störung von 61 Stunden bis zum Morgen des 12. August; gesperrt werden unter anderem unabhängige Nachrichtenseiten, Oppositionsseiten und VPN-Dienste. Die Behörden sprechen von Cyberangriffen, unabhängige Fachleute sehen die Regierung als Verursacherin. Laut Innenministerium werden in den ersten vier Protesttagen 6.700 Menschen festgenommen; Amnesty International dokumentiert Folter in Haft.",
+      "description_en": "On the day of the presidential election, after which Lukashenko was officially declared the winner with 80.1 percent, internet connectivity in Belarus largely collapsed nationwide. NetBlocks measured a disruption lasting 61 hours until the morning of 12 August; blocked services included independent news sites, opposition websites and VPN services. The authorities blamed cyberattacks, while independent experts identified the government as the cause. According to the Interior Ministry, 6,700 people were detained in the first four days of protest; Amnesty International documented torture in detention."
     },
     {
-      "date": "2022",
+      "date": "2020-09-15",
       "phase": "consequences",
-      "title": "Anhaltende Repression und Sandvine-Exportverbot",
-      "description": "Die USA verhängen Exportbeschrankungen gegen Sandvine, nachdem Beweise für den Einsatz seiner Technologie in Belarus und Agypten veröffentlicht werden. Belarus bleibt unter Lukaschenko eines der repressivsten Länder Europas. Tausende politische Gefangene sitzen weiterhin in Haft. Die Überwachungsinfrastruktur bleibt intakt und wird für die fortgesetzte Unterdruckung der Zivilgesellschaft genutzt.",
-      "sources": [],
-      "title_de": "Anhaltende Repression und Sandvine-Exportverbot",
-      "title_en": "Ongoing repression and Sandvine export ban",
-      "description_de": "Die USA verhängen Exportbeschrankungen gegen Sandvine, nachdem Beweise für den Einsatz seiner Technologie in Belarus und Agypten veröffentlicht werden. Belarus bleibt unter Lukaschenko eines der repressivsten Länder Europas. Tausende politische Gefangene sitzen weiterhin in Haft. Die Überwachungsinfrastruktur bleibt intakt und wird für die fortgesetzte Unterdruckung der Zivilgesellschaft genutzt.",
-      "description_en": "The United States imposed export restrictions on Sandvine after evidence of its technology being used in Belarus and Egypt was published. Belarus under Lukashenko remains one of the most repressive countries in Europe. Thousands of political prisoners remain in detention. The surveillance infrastructure remains intact and continues to be used to suppress civil society."
+      "title": "Sandvine kündigt Belarus-Vertrag",
+      "description": "Nachdem Bloomberg am 28. August 2020 berichtet hat, dass Sandvines DPI-Technik eine zentrale Rolle bei der Sperrung von Social-Media-, Nachrichten- und Messaging-Diensten spielte, und die US-Senatoren Dick Durbin und Marco Rubio das Unternehmen kritisiert haben, kündigt Sandvine seinen Vertrag mit Belarus. Das Unternehmen erklärt, die Regierung habe seine Produkte zur Verletzung von Menschenrechten genutzt; eine vorläufige Untersuchung habe ergeben, dass 'custom code' eingefügt worden sei.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2020-09-15/sandvine-says-it-will-no-longer-sell-its-products-in-belarus",
+        "https://cyberscoop.com/sandvine-belarus-contract-censorship-human-rights/"
+      ],
+      "title_de": "Sandvine kündigt Belarus-Vertrag",
+      "title_en": "Sandvine cancels Belarus contract",
+      "description_de": "Nachdem Bloomberg am 28. August 2020 berichtet hat, dass Sandvines DPI-Technik eine zentrale Rolle bei der Sperrung von Social-Media-, Nachrichten- und Messaging-Diensten spielte, und die US-Senatoren Dick Durbin und Marco Rubio das Unternehmen kritisiert haben, kündigt Sandvine seinen Vertrag mit Belarus. Das Unternehmen erklärt, die Regierung habe seine Produkte zur Verletzung von Menschenrechten genutzt; eine vorläufige Untersuchung habe ergeben, dass 'custom code' eingefügt worden sei.",
+      "description_en": "After Bloomberg reported on 28 August 2020 that Sandvine's DPI technology had played a central role in blocking social media, news and messaging services, and after US Senators Dick Durbin and Marco Rubio criticized the company, Sandvine cancelled its contract with Belarus. The company said the government had used its products to violate human rights and that a preliminary investigation had found 'custom code' had been inserted."
+    },
+    {
+      "date": "2020-10-20",
+      "phase": "consequences",
+      "title": "Telegram-Kanal NEXTA als 'extremistisch' eingestuft",
+      "description": "Das Zentrale Bezirksgericht in Minsk stuft den Telegram-Kanal NEXTA-Live, der Videos und Fotos der Proteste und der Polizeigewalt verbreitete, sowie dessen Logo als 'extremistisch' ein. Der frühere NEXTA-Chefredakteur Roman Protassewitsch wird am 23. Mai 2021 festgenommen, nachdem Belarus einen Ryanair-Flug unter dem Vorwand einer falschen Bombendrohung zur Landung in Minsk gezwungen hat.",
+      "sources": [
+        "https://www.article19.org/resources/belarus-nexta-crackdown/",
+        "https://www.aljazeera.com/news/2021/5/23/belarus-arrests-opposition-figure-after-flight-diverted"
+      ],
+      "title_de": "Telegram-Kanal NEXTA als 'extremistisch' eingestuft",
+      "title_en": "Telegram channel NEXTA designated 'extremist'",
+      "description_de": "Das Zentrale Bezirksgericht in Minsk stuft den Telegram-Kanal NEXTA-Live, der Videos und Fotos der Proteste und der Polizeigewalt verbreitete, sowie dessen Logo als 'extremistisch' ein. Der frühere NEXTA-Chefredakteur Roman Protassewitsch wird am 23. Mai 2021 festgenommen, nachdem Belarus einen Ryanair-Flug unter dem Vorwand einer falschen Bombendrohung zur Landung in Minsk gezwungen hat.",
+      "description_en": "Minsk's Central District Court designated the Telegram channel NEXTA-Live, which had shared videos and photos of the protests and of police violence, and its logo as 'extremist'. Former NEXTA editor-in-chief Roman Protasevich was arrested on 23 May 2021 after Belarus forced a Ryanair flight to land in Minsk on the pretext of a false bomb threat."
+    },
+    {
+      "date": "2024-02",
+      "phase": "consequences",
+      "title": "USA setzen Sandvine auf die Entity List",
+      "description": "Das US-Handelsministerium setzt Sandvine auf die Entity List und unterwirft Exporte an das Unternehmen damit einer Genehmigungspflicht. Offizielle Begründung ist die Lieferung von DPI-Technik an die ägyptische Regierung, die dort zur Massenüberwachung des Webverkehrs und zur Zensur genutzt wurde. Im Oktober 2024 wird Sandvine nach Änderungen an Unternehmensführung und Geschäftspraktiken wieder von der Liste gestrichen.",
+      "sources": [
+        "https://www.federalregister.gov/documents/2024/02/27/2024-03674/additions-of-entities-revisions-of-entries-and-removal-of-an-entity-from-the-entity-list",
+        "https://www.bis.gov/press-release/commerce-removes-sandvine-entity-list-following-significant-corporate-reforms-protect"
+      ],
+      "title_de": "USA setzen Sandvine auf die Entity List",
+      "title_en": "US adds Sandvine to the Entity List",
+      "description_de": "Das US-Handelsministerium setzt Sandvine auf die Entity List und unterwirft Exporte an das Unternehmen damit einer Genehmigungspflicht. Offizielle Begründung ist die Lieferung von DPI-Technik an die ägyptische Regierung, die dort zur Massenüberwachung des Webverkehrs und zur Zensur genutzt wurde. Im Oktober 2024 wird Sandvine nach Änderungen an Unternehmensführung und Geschäftspraktiken wieder von der Liste gestrichen.",
+      "description_en": "The US Department of Commerce added Sandvine to the Entity List, subjecting exports to the company to licensing requirements. The official rationale was the supply of DPI technology to the Egyptian government, where it was used for mass web monitoring and censorship. In October 2024, Sandvine was removed from the list following changes to its corporate governance and business practices."
     }
   ],
   "asm:sources": [
@@ -145,10 +185,10 @@
     "aiGenerated": false,
     "humanVerified": true
   },
-  "name_de": "Belarus: Internetabschaltung und SORM-Überwachung während der Wahproteste 2020",
+  "name_de": "Belarus: Internetabschaltung und SORM-Überwachung während der Wahlproteste 2020",
   "name_en": "Belarus: internet shutdown and SORM surveillance during the 2020 election protests",
-  "description_de": "Nach der umstrittenen Prasidentschaftswahl vom 9. August 2020, bei der Lukaschenko mit offiziell 80 Prozent der Stimmen als Sieger erklärt wurde, brachen in Belarus die grossten Proteste seit der Unabhangigkeit aus. Die Regierung reagierte mit mehrtägigen vollstandigen Internetabschaltungen sowie gezielter digitaler Überwachung mittels SORM-basierter Abhortechnologie. Das kanadische Unternehmen Sandvine lieferte Deep-Packet-Inspection-Gerate (DPI), die zur Zensur und Überwachung eingesetzt wurden. Tausende Aktivisten wurden verhaftet; ihre Kommunikationsdaten dienten als Beweismittel für Strafverfolgungen.",
-  "description_en": "Following the contested presidential election of 9 August 2020, in which Lukashenko was officially declared the winner with 80 percent of the vote, Belarus saw the largest protests since independence. The government responded with multi-day full internet shutdowns and targeted digital surveillance via SORM-based interception technology. The Canadian company Sandvine supplied Deep Packet Inspection (DPI) devices that were used for censorship and surveillance. Thousands of activists were arrested; their communications data served as evidence in prosecutions.",
+  "description_de": "Nach der umstrittenen Präsidentschaftswahl vom 9. August 2020, bei der Lukaschenko mit offiziell 80,1 Prozent der Stimmen als Sieger erklärt wurde, brachen in Belarus die größten Proteste seit der Unabhängigkeit aus. Die Regierung reagierte mit einer 61-stündigen landesweiten Internetstörung und der Sperrung von Nachrichten-, Oppositions- und VPN-Diensten. Alle Telekommunikationsanbieter sind in Belarus verpflichtet, ihre Technik an das Abhörsystem SORM anzubinden. Das kanadische Unternehmen Sandvine (im Besitz des US-Investors Francisco Partners) lieferte Deep-Packet-Inspection-Technik (DPI), die laut Bloomberg eine zentrale Rolle bei der Zensur spielte. In den ersten vier Protesttagen wurden 6.700 Menschen festgenommen, Menschenrechtsorganisationen dokumentierten Folter in Haft.",
+  "description_en": "Following the contested presidential election of 9 August 2020, in which Lukashenko was officially declared the winner with 80.1 percent of the vote, Belarus saw the largest protests since independence. The government responded with a 61-hour nationwide internet disruption and the blocking of news, opposition and VPN services. All telecommunications providers in Belarus are required to connect their equipment to the SORM interception system. The Canadian company Sandvine (owned by US private equity firm Francisco Partners) supplied deep packet inspection (DPI) technology that, according to Bloomberg, played a central role in the censorship. In the first four days of protest, 6,700 people were detained, and human rights organizations documented torture in custody.",
   "asm:affectedRights_de": [
     "Recht auf Information",
     "Meinungsfreiheit",
