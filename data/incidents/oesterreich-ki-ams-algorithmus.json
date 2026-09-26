@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/oesterreich-ki-ams-algorithmus",
   "name": "Österreich: AMS-Algorithmus diskriminiert Frauen und ältere Arbeitssuchende",
-  "description": "Das österreichische Arbeitsmarktservice (AMS) entwickelte ab 2018 ein algorithmisches System zur Bewertung von Arbeitssuchenden in drei Chancenkategorien. Das System reproduzierte strukturelle Diskriminierungsmuster: Frauen, über 50-Jährige und Menschen mit Behinderungen wurden in niedrigere Kategorien eingestuft, was zu weniger Ressourcen und Förderleistungen führte. Nach öffentlichem Druck, einem kritischen Gutachten der Datenschutzbehörde und einer Klage wurde der geplante Vollbetrieb verschoben und schließlich neu bewertet.",
+  "description": "Das österreichische Arbeitsmarktservice (AMS) entwickelte ab 2018 ein algorithmisches System (AMAS) zur Bewertung von Arbeitssuchenden in drei Chancenkategorien. Laut der 2018 veröffentlichten Methodendokumentation wies das Modell Frauen einen Punkteabzug zu; auch Ältere und Menschen mit gesundheitlicher Beeinträchtigung wurden niedriger eingestuft. Die Datenschutzbehörde untersagte 2020 den Einsatz; eine Studie des Instituts für Technikfolgen-Abschätzung der Österreichischen Akademie der Wissenschaften und der TU Wien kam im November 2020 zu dem Schluss, dass das System soziale Ungleichheit fördert. Im jahrelangen Rechtsstreit entschied das Bundesverwaltungsgericht im September 2025 zugunsten des AMS, ein Regelbetrieb fand jedoch nie statt und die zugehörigen Daten wurden gelöscht.",
   "startDate": "2018",
   "location": {
     "@type": "Place",
@@ -53,45 +53,71 @@
       "date": "2018",
       "phase": "infrastructure",
       "title": "Entwicklung des AMS-Scoring-Algorithmus",
-      "description": "Das AMS beauftragt die Entwicklung eines maschinellen Lernsystems zur automatischen Einstufung von Arbeitssuchenden in drei Chancenkategorien: hohe Chancen (Gruppe A), mittlere Chancen (Gruppe B) und geringe Chancen (Gruppe C). Die Kategorisierung soll die Zuteilung von Beratungsressourcen und Förderleistungen steuern. Kritiker weisen von Anfang an darauf hin, dass historische Beschäftigungsdaten strukturelle Ungleichheiten in das System einschreiben.",
-      "sources": [],
+      "description": "Das AMS gibt im Oktober 2018 die Entwicklung eines Systems bekannt, das Arbeitssuchende automatisiert in drei Chancenkategorien einstuft: hohe Chancen (Gruppe A), mittlere Chancen (Gruppe B) und geringe Chancen (Gruppe C). Das später als 'Arbeitsmarktchancen-Assistenz-System' (AMAS) bezeichnete Modell soll Beraterinnen und Berater bei der Zuteilung von Förderleistungen unterstützen und nutzt dafür unter anderem Geschlecht, Alter, Staatsangehörigkeit, gesundheitliche Beeinträchtigung und Betreuungspflichten als Eingangsvariablen. Laut der veröffentlichten Methodendokumentation senkt das Merkmal 'weiblich' den Chancenwert um 0,14 Punkte; Betreuungspflichten wirken nur bei Frauen zusätzlich negativ (0,15 Punkte).",
+      "sources": [
+        "https://futurezone.at/netzpolitik/der-ams-algorithmus-ist-ein-paradebeispiel-fuer-diskriminierung/400147421",
+        "https://futurezone.at/netzpolitik/computer-sagt-nein-algorithmus-gibt-frauen-weniger-chancen-beim-ams/400345297"
+      ],
       "title_de": "Entwicklung des AMS-Scoring-Algorithmus",
       "title_en": "Development of the AMS scoring algorithm",
-      "description_de": "Das AMS beauftragt die Entwicklung eines maschinellen Lernsystems zur automatischen Einstufung von Arbeitssuchenden in drei Chancenkategorien: hohe Chancen (Gruppe A), mittlere Chancen (Gruppe B) und geringe Chancen (Gruppe C). Die Kategorisierung soll die Zuteilung von Beratungsressourcen und Förderleistungen steuern. Kritiker weisen von Anfang an darauf hin, dass historische Beschäftigungsdaten strukturelle Ungleichheiten in das System einschreiben.",
-      "description_en": "The AMS commissions the development of a machine-learning system to automatically classify job seekers into three opportunity categories: high prospects (Group A), medium prospects (Group B), and low prospects (Group C). The classification is intended to guide the allocation of counseling resources and benefits. Critics point out from the outset that historical employment data writes structural inequalities into the system."
+      "description_de": "Das AMS gibt im Oktober 2018 die Entwicklung eines Systems bekannt, das Arbeitssuchende automatisiert in drei Chancenkategorien einstuft: hohe Chancen (Gruppe A), mittlere Chancen (Gruppe B) und geringe Chancen (Gruppe C). Das später als 'Arbeitsmarktchancen-Assistenz-System' (AMAS) bezeichnete Modell soll Beraterinnen und Berater bei der Zuteilung von Förderleistungen unterstützen und nutzt dafür unter anderem Geschlecht, Alter, Staatsangehörigkeit, gesundheitliche Beeinträchtigung und Betreuungspflichten als Eingangsvariablen. Laut der veröffentlichten Methodendokumentation senkt das Merkmal 'weiblich' den Chancenwert um 0,14 Punkte; Betreuungspflichten wirken nur bei Frauen zusätzlich negativ (0,15 Punkte).",
+      "description_en": "In October 2018, the AMS announces the development of a system that automatically classifies job seekers into three opportunity categories: high prospects (Group A), medium prospects (Group B), and low prospects (Group C). The model, later named the 'Arbeitsmarktchancen-Assistenz-System' (AMAS), is intended to support counselors in allocating benefits and uses factors including gender, age, citizenship, health impairment, and care responsibilities as input variables. According to the published methodology, the attribute 'female' lowers the opportunity score by 0.14 points; care responsibilities count as an additional negative factor (0.15 points) only for women."
     },
     {
-      "date": "2019",
+      "date": "2019-09",
       "phase": "doctrine",
-      "title": "Geplante Einführung löst öffentliche Debatte aus",
-      "description": "Als die geplante Einführung des Algorithmus bekannt wird, kritisieren Frauenrechtsorganisationen, Gewerkschaften und NGOs das System scharf. Analysen zeigen, dass das Modell Frauen systematisch schlechter bewertet als vergleichbare Männer - allein aufgrund von Geschlecht als Variable - und dass ältere und behinderte Arbeitssuchende strukturell benachteiligt werden.",
-      "sources": [],
-      "title_de": "Geplante Einführung löst öffentliche Debatte aus",
-      "title_en": "Planned rollout triggers public debate",
-      "description_de": "Als die geplante Einführung des Algorithmus bekannt wird, kritisieren Frauenrechtsorganisationen, Gewerkschaften und NGOs das System scharf. Analysen zeigen, dass das Modell Frauen systematisch schlechter bewertet als vergleichbare Männer - allein aufgrund von Geschlecht als Variable - und dass ältere und behinderte Arbeitssuchende strukturell benachteiligt werden.",
-      "description_en": "When the planned rollout of the algorithm becomes public, women's rights organizations, trade unions, and NGOs sharply criticize the system. Analyses show that the model systematically rates women lower than comparable men - solely because of gender as a variable - and that older and disabled job seekers are structurally disadvantaged."
+      "title": "AMS-Verwaltungsrat beschließt Regelbetrieb",
+      "description": "Nach einem Testbetrieb im Jahr 2019 beschließt der Verwaltungsrat des AMS am 17. September 2019 trotz Kritik an der Benachteiligung von Frauen, Älteren und Menschen mit gesundheitlichen Beeinträchtigungen den Einsatz des Algorithmus. Ab Mitte 2020 soll das System österreichweit in den Regelbetrieb gehen; AMS-Vorstand Johannes Kopf verteidigt das System.",
+      "sources": [
+        "https://futurezone.at/netzpolitik/ams-gibt-gruenes-licht-fuer-bewertung-von-arbeitslosen-durch-algorithmus/400607894",
+        "https://orf.at/stories/3137485/"
+      ],
+      "title_de": "AMS-Verwaltungsrat beschließt Regelbetrieb",
+      "title_en": "AMS board approves regular operation",
+      "description_de": "Nach einem Testbetrieb im Jahr 2019 beschließt der Verwaltungsrat des AMS am 17. September 2019 trotz Kritik an der Benachteiligung von Frauen, Älteren und Menschen mit gesundheitlichen Beeinträchtigungen den Einsatz des Algorithmus. Ab Mitte 2020 soll das System österreichweit in den Regelbetrieb gehen; AMS-Vorstand Johannes Kopf verteidigt das System.",
+      "description_en": "After a test phase in 2019, the AMS board of directors approves the use of the algorithm on 17 September 2019, despite criticism that it disadvantages women, older people and people with health impairments. The system is to go into regular nationwide operation from mid-2020; AMS director Johannes Kopf defends the system."
     },
     {
-      "date": "2020",
+      "date": "2020-08",
       "phase": "event",
-      "title": "Datenschutzbehörde rügt algorithmisches System",
-      "description": "Die österreichische Datenschutzbehörde (DSB) stellt in einem Gutachten fest, dass der AMS-Algorithmus gegen das Datenschutzrecht verstößt, da er nicht die erforderliche Transparenz und Erklärbarkeit bietet. Die Behörde fordert Nachbesserungen. Das AMS setzt den Vollbetrieb des Algorithmus aus und betreibt ihn nur im Hintergrund weiter, ohne direkte Auswirkungen auf Förderentscheidungen.",
-      "sources": [],
-      "title_de": "Datenschutzbehörde rügt algorithmisches System",
-      "title_en": "Data protection authority reprimands algorithmic system",
-      "description_de": "Die österreichische Datenschutzbehörde (DSB) stellt in einem Gutachten fest, dass der AMS-Algorithmus gegen das Datenschutzrecht verstößt, da er nicht die erforderliche Transparenz und Erklärbarkeit bietet. Die Behörde fordert Nachbesserungen. Das AMS setzt den Vollbetrieb des Algorithmus aus und betreibt ihn nur im Hintergrund weiter, ohne direkte Auswirkungen auf Förderentscheidungen.",
-      "description_en": "The Austrian Data Protection Authority (DSB) finds in an expert opinion that the AMS algorithm violates data protection law because it does not provide the required transparency and explainability. The authority demands improvements. The AMS suspends the full operation of the algorithm and continues running it only in the background, without direct impact on funding decisions."
+      "title": "Datenschutzbehörde untersagt flächendeckenden Einsatz",
+      "description": "Mit Bescheid vom 19. August 2020 untersagt die österreichische Datenschutzbehörde (DSB) dem AMS die Datenverarbeitung mit dem Algorithmus ab 1. Jänner 2021, vor allem weil eine ausreichende gesetzliche Grundlage für das Profiling von Arbeitssuchenden fehle; zudem kritisiert sie, dass Betroffene keine Möglichkeit zur Anfechtung haben. Das AMS legt gegen den Bescheid Beschwerde ein; der bundesweite Regelbetrieb bleibt ausgesetzt.",
+      "sources": [
+        "https://futurezone.at/netzpolitik/einsatz-von-ams-algorithmus-wird-untersagt/401006765",
+        "https://www.fwp.at/news/blog/aktuelle-bvwg-entscheidung-zur-menschlichen-einflussnahme-bei-ausschliesslich-automatisierten-entscheidungen-nach-art-22-dsgvo-im-fall-des-ams-al"
+      ],
+      "title_de": "Datenschutzbehörde untersagt flächendeckenden Einsatz",
+      "title_en": "Data protection authority bans nationwide use",
+      "description_de": "Mit Bescheid vom 19. August 2020 untersagt die österreichische Datenschutzbehörde (DSB) dem AMS die Datenverarbeitung mit dem Algorithmus ab 1. Jänner 2021, vor allem weil eine ausreichende gesetzliche Grundlage für das Profiling von Arbeitssuchenden fehle; zudem kritisiert sie, dass Betroffene keine Möglichkeit zur Anfechtung haben. Das AMS legt gegen den Bescheid Beschwerde ein; der bundesweite Regelbetrieb bleibt ausgesetzt.",
+      "description_en": "By a decision dated 19 August 2020, the Austrian Data Protection Authority (DSB) prohibits the AMS from processing data with the algorithm from 1 January 2021, mainly because there is no sufficient statutory basis for profiling job seekers; it also criticizes that affected individuals have no way to challenge the result. The AMS appeals the decision; the regular nationwide operation remains suspended."
     },
     {
-      "date": "2021",
+      "date": "2020-12",
+      "phase": "event",
+      "title": "Verwaltungsgericht hebt Verbot zunächst auf",
+      "description": "Das Bundesverwaltungsgericht (BVwG) entscheidet am 18. Dezember 2020 zugunsten des AMS und hebt das Verbot der Datenschutzbehörde in erster Instanz auf. Die DSB legt daraufhin eine ordentliche Revision beim Verwaltungsgerichtshof (VwGH) ein, der die BVwG-Entscheidung am 21. Dezember 2023 unter Verweis auf das SCHUFA-Urteil des EuGH aufhebt und ergänzende Feststellungen sowie eine neue rechtliche Prüfung verlangt - der Rechtsstreit zieht sich über Jahre.",
+      "sources": [
+        "https://netzpolitik.org/2020/automatisierte-entscheidungen-gericht-macht-weg-fuer-den-ams-algorithmus-wieder-frei/",
+        "https://www.vwgh.gv.at/medien/mitteilungen/ro_2021040010.html"
+      ],
+      "title_de": "Verwaltungsgericht hebt Verbot zunächst auf",
+      "title_en": "Administrative court initially overturns the ban",
+      "description_de": "Das Bundesverwaltungsgericht (BVwG) entscheidet am 18. Dezember 2020 zugunsten des AMS und hebt das Verbot der Datenschutzbehörde in erster Instanz auf. Die DSB legt daraufhin eine ordentliche Revision beim Verwaltungsgerichtshof (VwGH) ein, der die BVwG-Entscheidung am 21. Dezember 2023 unter Verweis auf das SCHUFA-Urteil des EuGH aufhebt und ergänzende Feststellungen sowie eine neue rechtliche Prüfung verlangt - der Rechtsstreit zieht sich über Jahre.",
+      "description_en": "On 18 December 2020, the Federal Administrative Court (BVwG) rules in favor of the AMS and overturns the data protection authority's ban at first instance. The DSB subsequently files an ordinary appeal with the Administrative Court (VwGH), which on 21 December 2023, citing the CJEU's SCHUFA judgment, overturns the BVwG ruling and demands additional findings and a fresh legal review - the dispute drags on for years."
+    },
+    {
+      "date": "2025-09",
       "phase": "consequences",
-      "title": "Gerichtliche und politische Aufarbeitung",
-      "description": "Datenschutzorganisationen reichen formelle Beschwerden ein; Gerichte bestätigen grundlegende rechtliche Bedenken gegen den Einsatz des Systems. Das österreichische Parlament diskutiert Regulierung algorithmischer Entscheidungssysteme im öffentlichen Bereich. Der Fall wird zum Referenzbeispiel für die EU-KI-Verordnungs-Debatte über hochriskante KI-Systeme im Bereich Beschäftigung.",
-      "sources": [],
-      "title_de": "Gerichtliche und politische Aufarbeitung",
-      "title_en": "Judicial and political review",
-      "description_de": "Datenschutzorganisationen reichen formelle Beschwerden ein; Gerichte bestätigen grundlegende rechtliche Bedenken gegen den Einsatz des Systems. Das österreichische Parlament diskutiert Regulierung algorithmischer Entscheidungssysteme im öffentlichen Bereich. Der Fall wird zum Referenzbeispiel für die EU-KI-Verordnungs-Debatte über hochriskante KI-Systeme im Bereich Beschäftigung.",
-      "description_en": "Data protection organizations file formal complaints; courts confirm fundamental legal concerns about the use of the system. The Austrian Parliament debates regulation of algorithmic decision systems in the public sector. The case becomes a reference example in the EU AI Act debate over high-risk AI systems in the field of employment."
+      "title": "AMS gewinnt Rechtsstreit, System bleibt dennoch eingestellt",
+      "description": "Im zweiten Rechtsgang entscheidet das Bundesverwaltungsgericht am 1. September 2025 (W256 2235360-1), dass der AMS-Algorithmus nicht gegen Art. 22 DSGVO verstößt, weil Beraterinnen und Berater ausreichend menschlich eingreifen; es hebt den Bescheid der Datenschutzbehörde ersatzlos auf und lässt keine ordentliche Revision zu. Ein Regelbetrieb hat nie stattgefunden; die zum Algorithmus gespeicherten Daten mussten bereits gelöscht werden, und AMS-Vorstand Johannes Kopf kündigt an, das System nicht wiederzubeleben.",
+      "sources": [
+        "https://www.bvwg.gv.at/Aktuelles/Publikationen-des-BVwG/Ausgew-hlte-Entscheidungen-des-Bundesverwaltungsgerichts/AMS-Algorithmus--verst--t-nicht-gegen-DSGVO.html",
+        "https://www.vienna.at/court-sides-with-ams-on-algorithm-project-remains-terminated/9648224"
+      ],
+      "title_de": "AMS gewinnt Rechtsstreit, System bleibt dennoch eingestellt",
+      "title_en": "AMS wins legal dispute, but system remains discontinued",
+      "description_de": "Im zweiten Rechtsgang entscheidet das Bundesverwaltungsgericht am 1. September 2025 (W256 2235360-1), dass der AMS-Algorithmus nicht gegen Art. 22 DSGVO verstößt, weil Beraterinnen und Berater ausreichend menschlich eingreifen; es hebt den Bescheid der Datenschutzbehörde ersatzlos auf und lässt keine ordentliche Revision zu. Ein Regelbetrieb hat nie stattgefunden; die zum Algorithmus gespeicherten Daten mussten bereits gelöscht werden, und AMS-Vorstand Johannes Kopf kündigt an, das System nicht wiederzubeleben.",
+      "description_en": "In the second round of proceedings, the Federal Administrative Court rules on 1 September 2025 (W256 2235360-1) that the AMS algorithm does not violate Article 22 GDPR because counselors retain sufficient human intervention; it annuls the data protection authority's decision without replacement and does not allow an ordinary appeal. Regular operation never took place; the data associated with the algorithm had already had to be deleted, and AMS director Johannes Kopf announces that the system will not be revived."
     }
   ],
   "asm:sources": [
@@ -145,8 +171,8 @@
   },
   "name_de": "Österreich: AMS-Algorithmus diskriminiert Frauen und ältere Arbeitssuchende",
   "name_en": "Austria: AMS algorithm discriminates against women and older job seekers",
-  "description_de": "Das österreichische Arbeitsmarktservice (AMS) entwickelte ab 2018 ein algorithmisches System zur Bewertung von Arbeitssuchenden in drei Chancenkategorien. Das System reproduzierte strukturelle Diskriminierungsmuster: Frauen, über 50-Jährige und Menschen mit Behinderungen wurden in niedrigere Kategorien eingestuft, was zu weniger Ressourcen und Förderleistungen führte. Nach öffentlichem Druck, einem kritischen Gutachten der Datenschutzbehörde und einer Klage wurde der geplante Vollbetrieb verschoben und schließlich neu bewertet.",
-  "description_en": "Starting in 2018, the Austrian Public Employment Service (AMS) developed an algorithmic system to classify job seekers into three opportunity categories. The system reproduced structural discrimination patterns: women, people over 50, and people with disabilities were placed in lower categories, resulting in fewer resources and benefits. After public pressure, a critical opinion from the data protection authority, and a lawsuit, the planned full rollout was postponed and ultimately reassessed.",
+  "description_de": "Das österreichische Arbeitsmarktservice (AMS) entwickelte ab 2018 ein algorithmisches System (AMAS) zur Bewertung von Arbeitssuchenden in drei Chancenkategorien. Laut der 2018 veröffentlichten Methodendokumentation wies das Modell Frauen einen Punkteabzug zu; auch Ältere und Menschen mit gesundheitlicher Beeinträchtigung wurden niedriger eingestuft. Die Datenschutzbehörde untersagte 2020 den Einsatz; eine Studie des Instituts für Technikfolgen-Abschätzung der Österreichischen Akademie der Wissenschaften und der TU Wien kam im November 2020 zu dem Schluss, dass das System soziale Ungleichheit fördert. Im jahrelangen Rechtsstreit entschied das Bundesverwaltungsgericht im September 2025 zugunsten des AMS, ein Regelbetrieb fand jedoch nie statt und die zugehörigen Daten wurden gelöscht.",
+  "description_en": "Starting in 2018, the Austrian Public Employment Service (AMS) developed an algorithmic system (AMAS) to classify job seekers into three opportunity categories. According to the methodology published in 2018, the model assigned women a point deduction; older people and people with health impairments were likewise rated lower. The data protection authority banned its use in 2020; a study by the Institute of Technology Assessment of the Austrian Academy of Sciences and TU Wien concluded in November 2020 that the system promotes social inequality. In the years-long legal dispute, the Federal Administrative Court ruled in favor of the AMS in September 2025, but regular operation never took place and the associated data was deleted.",
   "asm:affectedRights_de": [
     "Gleichbehandlungsrecht",
     "Recht auf Arbeit",
