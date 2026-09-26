@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-kroger-gesichtserkennung-supermarkt",
   "name": "USA: Gesichtserkennung in Supermärkten - Rite Aid und Kroger",
-  "description": "US-amerikanische Einzelhandelsketten wie Rite Aid und Kroger setzen Gesichtserkennung in ihren Filialen ein, um Kunden zu tracken und verdächtige Personen zu identifizieren. Eine Reuters-Untersuchung deckt 2020 auf, dass Rite Aid das System über acht Jahre lang heimlich in tausenden Filialen betrieb, vorwiegend in einkommensschwachen und nicht-weißen Stadtteilen. 2023 verbannt die FTC Rite Aid für fünf Jahre vom Einsatz von Gesichtserkennung.",
+  "description": "Die US-Drogeriekette Rite Aid setzte von 2012 bis 2020 heimlich Gesichtserkennung in rund 200 Filialen ein, um mutmaßliche Ladendiebe zu identifizieren - überproportional in einkommensschwachen und mehrheitlich nicht-weißen Stadtteilen. Eine Reuters-Untersuchung deckte die Praxis im Juli 2020 auf; 2023 verbannte die FTC Rite Aid für fünf Jahre vom Einsatz von Gesichtserkennung. Die Supermarktkette Kroger testete separat 2019 in Pilotfilialen kamerabasierte Alters- und Geschlechtsschätzung für Werbezwecke und geriet 2024 wegen mutmaßlicher Gesichtserkennungspläne unter Kritik von US-Abgeordneten.",
   "startDate": "2012",
   "location": {
     "@type": "Place",
@@ -39,7 +39,7 @@
       "type": "company",
       "asm:systems": [
         "DeepCam-Gesichtserkennungssystem",
-        "NEC-Technologie"
+        "FaceFirst"
       ],
       "name_de": "Rite Aid",
       "name_en": "Rite Aid"
@@ -67,45 +67,57 @@
       "date": "2012",
       "phase": "infrastructure",
       "title": "Heimliche Einführung von Gesichtserkennung im Einzelhandel",
-      "description": "Rite Aid und andere US-Einzelhandelsketten beginnen, Gesichtserkennungssysteme in ihren Filialen zu installieren. Die Technologie wird ohne Einwilligung der Kunden und ohne öffentliche Bekanntmachung eingesetzt. Systeme von Drittanbietern wie DeepCam und NEC werden in Sicherheitskameras integriert, um Verdächtige mit internen Datenbanken abzugleichen.",
-      "sources": [],
+      "description": "Rite Aid beginnt, Gesichtserkennungssysteme in Filialen zu installieren, zunächst mit der Technologie von FaceFirst, ab 2018 zusätzlich mit Systemen des chinaverknüpften Anbieters DeepCam. Die Technologie wird ohne Einwilligung oder öffentliche Bekanntmachung eingesetzt, um Kunden mit internen Listen mutmaßlicher Ladendiebe abzugleichen.",
+      "sources": [
+        "https://www.cnbc.com/2020/07/28/rite-aid-deployed-facial-recognition-in-hundreds-of-us-stores.html",
+        "https://www.ftc.gov/legal-library/browse/cases-proceedings/2023190-rite-aid-corporation-ftc-v"
+      ],
       "title_de": "Heimliche Einführung von Gesichtserkennung im Einzelhandel",
-      "description_de": "Rite Aid und andere US-Einzelhandelsketten beginnen, Gesichtserkennungssysteme in ihren Filialen zu installieren. Die Technologie wird ohne Einwilligung der Kunden und ohne öffentliche Bekanntmachung eingesetzt. Systeme von Drittanbietern wie DeepCam und NEC werden in Sicherheitskameras integriert, um Verdächtige mit internen Datenbanken abzugleichen.",
+      "description_de": "Rite Aid beginnt, Gesichtserkennungssysteme in Filialen zu installieren, zunächst mit der Technologie von FaceFirst, ab 2018 zusätzlich mit Systemen des chinaverknüpften Anbieters DeepCam. Die Technologie wird ohne Einwilligung oder öffentliche Bekanntmachung eingesetzt, um Kunden mit internen Listen mutmaßlicher Ladendiebe abzugleichen.",
       "title_en": "Covert rollout of facial recognition in retail",
-      "description_en": "Rite Aid and other U.S. retail chains begin installing facial recognition systems in their stores. The technology is deployed without customer consent and without public notice. Third-party systems from vendors such as DeepCam and NEC are integrated into security cameras to match suspects against internal databases."
+      "description_en": "Rite Aid begins installing facial recognition systems in stores, initially using technology from FaceFirst and, from 2018, also from the China-linked vendor DeepCam. The technology is deployed without consent or public notice to match customers against internal lists of suspected shoplifters."
     },
     {
-      "date": "2020-08",
+      "date": "2020-07",
       "phase": "event",
       "title": "Reuters-Untersuchung deckt systematischen Missbrauch auf",
-      "description": "Reuters veröffentlicht eine umfassende Recherche, die zeigt, dass Rite Aid Gesichtserkennung in über 200 Filialen einsetzte - überproportional viele davon in einkommensschwachen Stadtvierteln mit hohem Anteil schwarzer und hispanischer Bewohner. Das System generierte zahlreiche Fehlalarme und führte zu ungerechtfertigten Anschuldigungen gegen unschuldige Kunden.",
-      "sources": [],
+      "description": "Reuters veröffentlicht am 28. Juli 2020 eine umfassende Recherche, die zeigt, dass Rite Aid Gesichtserkennung in rund 200 Filialen einsetzte - überproportional viele davon in einkommensschwachen Stadtvierteln mit hohem Anteil schwarzer und hispanischer Bewohner. Das System generierte zahlreiche Fehlalarme und führte zu ungerechtfertigten Anschuldigungen gegen unschuldige Kunden. Nach der Recherche erklärt Rite Aid, die Systeme abgeschaltet zu haben.",
+      "sources": [
+        "https://www.cnbc.com/2020/07/28/rite-aid-deployed-facial-recognition-in-hundreds-of-us-stores.html",
+        "https://www.engadget.com/rite-aid-facial-recognition-reuters-183343353.html"
+      ],
       "title_de": "Reuters-Untersuchung deckt systematischen Missbrauch auf",
-      "description_de": "Reuters veröffentlicht eine umfassende Recherche, die zeigt, dass Rite Aid Gesichtserkennung in über 200 Filialen einsetzte - überproportional viele davon in einkommensschwachen Stadtvierteln mit hohem Anteil schwarzer und hispanischer Bewohner. Das System generierte zahlreiche Fehlalarme und führte zu ungerechtfertigten Anschuldigungen gegen unschuldige Kunden.",
+      "description_de": "Reuters veröffentlicht am 28. Juli 2020 eine umfassende Recherche, die zeigt, dass Rite Aid Gesichtserkennung in rund 200 Filialen einsetzte - überproportional viele davon in einkommensschwachen Stadtvierteln mit hohem Anteil schwarzer und hispanischer Bewohner. Das System generierte zahlreiche Fehlalarme und führte zu ungerechtfertigten Anschuldigungen gegen unschuldige Kunden. Nach der Recherche erklärt Rite Aid, die Systeme abgeschaltet zu haben.",
       "title_en": "Reuters investigation exposes systematic abuse",
-      "description_en": "Reuters publishes a comprehensive investigation showing that Rite Aid deployed facial recognition in more than 200 stores - disproportionately many in low-income neighborhoods with high Black and Hispanic populations. The system generated numerous false alerts and led to unjustified accusations against innocent customers."
+      "description_en": "On July 28, 2020, Reuters publishes a comprehensive investigation showing that Rite Aid deployed facial recognition in roughly 200 stores - disproportionately many in low-income neighborhoods with high Black and Hispanic populations. The system generated numerous false alerts and led to unjustified accusations against innocent customers. After the investigation, Rite Aid says it has turned off the systems."
     },
     {
       "date": "2023-12",
       "phase": "consequences",
       "title": "FTC verhängt Fünfjahresverbot gegen Rite Aid",
-      "description": "Die Federal Trade Commission untersagt Rite Aid für fünf Jahre den Einsatz von Gesichtserkennung in Filialen und stuft die bisherige Praxis als unlauteren Geschäftsverkehr ein. Die FTC stellt fest, dass das Unternehmen Kunden erheblichen Schaden zugefügt hat, darunter falsche Beschuldigungen, Demütigungen und ungerechtfertigte Verweigerung von Dienstleistungen.",
-      "sources": [],
+      "description": "Die Federal Trade Commission gibt am 19. Dezember 2023 einen Vergleich bekannt, der Rite Aid für fünf Jahre den Einsatz von Gesichtserkennung in Filialen untersagt und die bisherige Praxis als unlauteren Geschäftsverkehr einstuft. Die FTC stellt fest, dass die fehlerhafte Technologie Kunden - insbesondere Frauen und People of Color - fälschlich als Ladendiebe markierte, was zu Demütigungen und ungerechtfertigten Durchsuchungen führte.",
+      "sources": [
+        "https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without",
+        "https://www.cnn.com/2023/12/20/tech/rite-aid-ai-ftc-settlement/index.html"
+      ],
       "title_de": "FTC verhängt Fünfjahresverbot gegen Rite Aid",
-      "description_de": "Die Federal Trade Commission untersagt Rite Aid für fünf Jahre den Einsatz von Gesichtserkennung in Filialen und stuft die bisherige Praxis als unlauteren Geschäftsverkehr ein. Die FTC stellt fest, dass das Unternehmen Kunden erheblichen Schaden zugefügt hat, darunter falsche Beschuldigungen, Demütigungen und ungerechtfertigte Verweigerung von Dienstleistungen.",
+      "description_de": "Die Federal Trade Commission gibt am 19. Dezember 2023 einen Vergleich bekannt, der Rite Aid für fünf Jahre den Einsatz von Gesichtserkennung in Filialen untersagt und die bisherige Praxis als unlauteren Geschäftsverkehr einstuft. Die FTC stellt fest, dass die fehlerhafte Technologie Kunden - insbesondere Frauen und People of Color - fälschlich als Ladendiebe markierte, was zu Demütigungen und ungerechtfertigten Durchsuchungen führte.",
       "title_en": "FTC imposes five-year ban on Rite Aid",
-      "description_en": "The Federal Trade Commission bars Rite Aid from using facial recognition in stores for five years and classifies its prior practice as unfair commercial conduct. The FTC finds that the company caused substantial harm to customers, including false accusations, humiliation and unjustified denial of services."
+      "description_en": "On December 19, 2023, the Federal Trade Commission announces a settlement barring Rite Aid from using facial recognition in stores for five years and classifying its prior practice as unfair commercial conduct. The FTC finds that the flawed technology falsely tagged customers - particularly women and people of color - as shoplifters, leading to humiliation and unjustified searches."
     },
     {
-      "date": "2024",
+      "date": "2024-10",
       "phase": "consequences",
-      "title": "Branchenweite Debatte und regulatorische Nachfolge",
-      "description": "Der FTC-Beschluss löst eine branchenweite Debatte über den Einsatz von Gesichtserkennung im Handel aus. Mehrere Bundesstaaten erwägen eigene Gesetze. Bürgerrechtsorganisationen wie die ACLU fordern ein generelles Verbot in öffentlich zugänglichen Räumen. Kroger und andere Ketten stehen unter erhöhtem Druck, ihre Praktiken offenzulegen.",
-      "sources": [],
-      "title_de": "Branchenweite Debatte und regulatorische Nachfolge",
-      "description_de": "Der FTC-Beschluss löst eine branchenweite Debatte über den Einsatz von Gesichtserkennung im Handel aus. Mehrere Bundesstaaten erwägen eigene Gesetze. Bürgerrechtsorganisationen wie die ACLU fordern ein generelles Verbot in öffentlich zugänglichen Räumen. Kroger und andere Ketten stehen unter erhöhtem Druck, ihre Praktiken offenzulegen.",
-      "title_en": "Industry-wide debate and regulatory follow-up",
-      "description_en": "The FTC ruling triggers an industry-wide debate over the use of facial recognition in retail. Several states consider their own legislation. Civil liberties organizations such as the ACLU call for a general ban in publicly accessible spaces. Kroger and other chains face heightened pressure to disclose their practices."
+      "title": "Branchenweite Debatte und Kritik an Krogers eigenen Plänen",
+      "description": "Der FTC-Fall verstärkt die Debatte über Gesichtserkennung im Handel: FTC-Kommissar Alvaro Bedoya fordert gesetzliche Leitplanken für biometrische Überwachung, die Electronic Frontier Foundation sieht den Fall als Beleg für strukturelle Risiken der Technologie. Im Oktober 2024 kritisiert die US-Abgeordnete Rashida Tlaib in einem Brief an Kroger-CEO Rodney McMullen die mutmaßlich geplante Nutzung kamerabasierter Gesichtserkennung an digitalen Regalanzeigen; Kroger bestreitet solche Pläne.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2023/12/ftcs-rite-aid-ruling-rightly-renews-scrutiny-face-recognition",
+        "https://therecord.media/kroger-facial-recognition-lawmakers-concerns"
+      ],
+      "title_de": "Branchenweite Debatte und Kritik an Krogers eigenen Plänen",
+      "description_de": "Der FTC-Fall verstärkt die Debatte über Gesichtserkennung im Handel: FTC-Kommissar Alvaro Bedoya fordert gesetzliche Leitplanken für biometrische Überwachung, die Electronic Frontier Foundation sieht den Fall als Beleg für strukturelle Risiken der Technologie. Im Oktober 2024 kritisiert die US-Abgeordnete Rashida Tlaib in einem Brief an Kroger-CEO Rodney McMullen die mutmaßlich geplante Nutzung kamerabasierter Gesichtserkennung an digitalen Regalanzeigen; Kroger bestreitet solche Pläne.",
+      "title_en": "Industry-wide debate and criticism of Kroger's own plans",
+      "description_en": "The FTC case intensifies the debate over facial recognition in retail: FTC Commissioner Alvaro Bedoya calls for legislative guardrails on biometric surveillance, and the Electronic Frontier Foundation sees the case as evidence of the technology's structural risks. In October 2024, U.S. Representative Rashida Tlaib criticizes Kroger CEO Rodney McMullen in a letter over alleged plans to use camera-based facial recognition at digital shelf displays; Kroger denies having such plans."
     }
   ],
   "asm:sources": [
@@ -121,23 +133,23 @@
     },
     {
       "url": "https://www.cnn.com/2023/12/20/tech/rite-aid-ai-ftc-settlement/index.html",
-      "title": "Rite Aid used facial recognition system to falsely tag people as shoplifters, FTC says",
-      "publisher": "Reuters",
-      "date": "2023-12-19",
+      "title": "Rite Aid's 'reckless' use of facial recognition got it banned from using the technology in stores for five years",
+      "publisher": "CNN Business",
+      "date": "2023-12-20",
       "type": "news-article",
       "asm:linkHealth": "ok",
-      "title_de": "Rite Aid used facial recognition system to falsely tag people as shoplifters, FTC says",
-      "title_en": "Rite Aid used facial recognition system to falsely tag people as shoplifters, FTC says"
+      "title_de": "Rite Aid's 'reckless' use of facial recognition got it banned from using the technology in stores for five years",
+      "title_en": "Rite Aid's 'reckless' use of facial recognition got it banned from using the technology in stores for five years"
     },
     {
       "url": "https://www.cnbc.com/2023/12/19/ftc-bars-rite-aid-from-using-facial-recognition-under-settlement.html",
-      "title": "Rite Aid Secretly Used Facial Recognition in Poorer Communities of Color",
-      "publisher": "American Civil Liberties Union (ACLU)",
-      "date": "2024-01",
-      "type": "ngo-report",
+      "title": "Rite Aid to be barred from using facial recognition under proposed FTC settlement",
+      "publisher": "CNBC",
+      "date": "2023-12-19",
+      "type": "news-article",
       "asm:linkHealth": "ok",
-      "title_de": "Rite Aid Secretly Used Facial Recognition in Poorer Communities of Color",
-      "title_en": "Rite Aid Secretly Used Facial Recognition in Poorer Communities of Color"
+      "title_de": "Rite Aid to be barred from using facial recognition under proposed FTC settlement",
+      "title_en": "Rite Aid to be barred from using facial recognition under proposed FTC settlement"
     }
   ],
   "asm:metadata": {
@@ -148,14 +160,14 @@
     "humanVerified": true
   },
   "name_de": "USA: Gesichtserkennung in Supermärkten - Rite Aid und Kroger",
-  "description_de": "US-amerikanische Einzelhandelsketten wie Rite Aid und Kroger setzen Gesichtserkennung in ihren Filialen ein, um Kunden zu tracken und verdächtige Personen zu identifizieren. Eine Reuters-Untersuchung deckt 2020 auf, dass Rite Aid das System über acht Jahre lang heimlich in tausenden Filialen betrieb, vorwiegend in einkommensschwachen und nicht-weißen Stadtteilen. 2023 verbannt die FTC Rite Aid für fünf Jahre vom Einsatz von Gesichtserkennung.",
+  "description_de": "Die US-Drogeriekette Rite Aid setzte von 2012 bis 2020 heimlich Gesichtserkennung in rund 200 Filialen ein, um mutmaßliche Ladendiebe zu identifizieren - überproportional in einkommensschwachen und mehrheitlich nicht-weißen Stadtteilen. Eine Reuters-Untersuchung deckte die Praxis im Juli 2020 auf; 2023 verbannte die FTC Rite Aid für fünf Jahre vom Einsatz von Gesichtserkennung. Die Supermarktkette Kroger testete separat 2019 in Pilotfilialen kamerabasierte Alters- und Geschlechtsschätzung für Werbezwecke und geriet 2024 wegen mutmaßlicher Gesichtserkennungspläne unter Kritik von US-Abgeordneten.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Schutz vor Diskriminierung",
     "Informationelle Selbstbestimmung"
   ],
   "name_en": "USA: Facial recognition in supermarkets - Rite Aid and Kroger",
-  "description_en": "U.S. retail chains such as Rite Aid and Kroger deploy facial recognition in their stores to track customers and identify suspects. A 2020 Reuters investigation revealed that Rite Aid had operated the system covertly in thousands of stores for eight years, predominantly in low-income and non-white neighborhoods. In 2023, the FTC banned Rite Aid from using facial recognition for five years.",
+  "description_en": "From 2012 to 2020, U.S. drugstore chain Rite Aid covertly used facial recognition in roughly 200 stores to identify suspected shoplifters - disproportionately in low-income and predominantly non-white neighborhoods. A Reuters investigation exposed the practice in July 2020; in 2023, the FTC banned Rite Aid from using facial recognition for five years. Separately, supermarket chain Kroger tested camera-based age and gender estimation for advertising in pilot stores in 2019 and in 2024 drew criticism from U.S. lawmakers over alleged facial-recognition plans.",
   "asm:affectedRights_en": [
     "right to privacy",
     "protection from discrimination",
