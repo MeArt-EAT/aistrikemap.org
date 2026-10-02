@@ -75,7 +75,11 @@ const GROUPS = [
   // Quellen-Welle 7 (2026-09-26): beide beschreiben Clearview in der Ukraine
   // (Identifizierung toter russischer Soldaten ab 03/2022), keep ist umfassender
   { keep: 'ukraine-clearview-kriegseinsatz',
-    drop: ['ukraine-ki-gesichtserkennung-tote'] }
+    drop: ['ukraine-ki-gesichtserkennung-tote'] },
+  // Same Pegasus campaign against Jordanian civil society; keep the file whose
+  // timeline was fact-checked 2026-10-02, take over the 2024 report sources.
+  { keep: 'jordanien-pegasus-journalisten',
+    drop: ['jordanien-access-now-citizen-lab-bericht-2024-erweitert'] }
 ];
 
 function listSlugs() {
