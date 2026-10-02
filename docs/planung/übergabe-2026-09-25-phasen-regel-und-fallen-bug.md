@@ -338,3 +338,36 @@ ueberwachung <-> china-henan-provinz-baut-ki-ueberwachungssystem-... (teilweise)
 **Endstand:** Validator 2453/2453 ohne ERROR, Audit 0, 0 Smart-Chars,
 Umlaut-Fixer 0 Ersetzungen, 491 einzelne TL-Einträge ohne Quelle in 312 Files
 (vorher 569). `data/index.json`-Namen/-Typen der 24 Files synchronisiert.
+
+---
+
+## Nachtrag 4 (2026-10-02 mittags): Einzelquellen-Wellen 5-7, Dublette, Bundles
+
+**Auftrag:** alle Aufgaben ohne Qualitätsverlust bis 13:00 abschließen.
+
+**Wellen 5-7 (18 Files):** Dreiergruppen, Fixer und Prüfer jeweils als
+Einzel-Agent mit eigener Websuche und harter Frist (je Stufe ca. 3-6 min).
+Regel: was bis 12:52 nicht geprüft ist, wird zurückgesetzt - war nicht nötig,
+alle 18 Files geprüft committet (4cd687e, 1cfe15f, 2034bd0, 939b415, 02cae40,
+4a780fb, f1fc71f).
+
+**Funde (Auswahl):**
+- belgien-ki-sozialleistungen-betrug: Kernereignis (Beschwerde der Ligue des
+  droits humains 2022) und Top-Quelle erfunden -> Timeline um OASIS (2001),
+  Energiedaten-Gesetz 2016, Degrave-Studie 2020 neu aufgebaut, Titel korrigiert
+- tansania: 'tägliche Social-Media-Steuer' war Ugandas
+- papua-neuguinea: Minister-Aussage 2020 statt 2024, 53 statt 147 Mio. USD
+- katar: Akteurssystem 'Absher' (saudisch); kein FIFA/Katar-Fonds
+- argentinien: Datenbank CONARC, Urteil 09/2022 von Richterin Liberatori
+- nypd, mobley, nhtsa: je 9-10 Fehler (Daten, Zahlen, erfundenes Zitat)
+- thailand, vietnam, ungarn: kein KI-Bezug belegt -> Titel korrigiert
+
+**Dublette:** jordanien-access-now-citizen-lab-bericht-2024-... in
+jordanien-pegasus-journalisten zusammengelegt (e9bb494, 2453 -> 2452;
+3 Quellen übernommen).
+
+**Bundles:** all-incidents(-lite).json waren seit f68db12 nicht neu gebaut -
+die Website zeigte die Wellen 1-7 noch nicht. Neu gebaut (7dea78c).
+
+**Endstand:** Validator 2452/2452 ohne ERROR, Audit 0, 0 Smart-Chars,
+Umlaut-Fixer 0 Ersetzungen, 437 einzelne TL-Einträge ohne Quelle in 294 Files.
