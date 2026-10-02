@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/nso-pegasus-spyware",
   "name": "NSO Group Pegasus Spyware",
-  "description": "Die israelische Firma NSO Group verkauft die KI-gestützte Überwachungssoftware Pegasus an Regierungen weltweit. Das Programm nutzt Zero-Day-Exploits, um Smartphones vollständig zu übernehmen und wird gegen Journalisten, Menschenrechtsverteidiger und Oppositionelle eingesetzt. Das Pegasus-Projekt enthüllt 2021 die globale Dimension des Missbrauchs.",
+  "description": "Die israelische Firma NSO Group verkauft die Überwachungssoftware Pegasus an Regierungen weltweit. Das Programm nutzt Zero-Day-Exploits, um Smartphones vollständig zu übernehmen, und wurde laut Citizen Lab, Amnesty International und Medienrecherchen gegen Journalisten, Menschenrechtsverteidiger und Oppositionelle eingesetzt. Das Pegasus-Projekt enthüllt 2021 die globale Dimension des Missbrauchs.",
   "startDate": "2016",
   "location": {
     "@type": "Place",
@@ -61,63 +61,86 @@
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2016",
+      "date": "2016-08",
       "phase": "infrastructure",
-      "title": "Erste Pegasus-Infektionen dokumentiert",
-      "description": "Citizen Lab an der University of Toronto dokumentiert erstmals Pegasus-Infektionen auf dem iPhone des Menschenrechtsaktivisten Ahmed Mansoor in den VAE. Die Software nutzt drei Zero-Day-Exploits (Trident) zur vollständigen Übernahme des Geräts.",
+      "title": "Pegasus-Angriff auf Ahmed Mansoor aufgedeckt",
+      "description": "Der Menschenrechtsverteidiger Ahmed Mansoor aus den Vereinigten Arabischen Emiraten erhält am 10. und 11. August 2016 SMS mit Links, die angebliche Geheimnisse über Folter in Gefängnissen versprechen, und leitet sie an das Citizen Lab weiter, statt sie zu öffnen. Die Analyse zeigt, dass die Links über drei bis dahin unbekannte Zero-Day-Schwachstellen in iOS (Trident) sein iPhone vollständig übernommen und Pegasus installiert hätten. Die Infrastruktur führt zur NSO Group; Indizien deuten auf die Regierung der VAE als Betreiber.",
       "sources": [
         "https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/"
       ],
-      "title_de": "Erste Pegasus-Infektionen dokumentiert",
-      "title_en": "First Pegasus infections documented",
-      "description_de": "Citizen Lab an der University of Toronto dokumentiert erstmals Pegasus-Infektionen auf dem iPhone des Menschenrechtsaktivisten Ahmed Mansoor in den VAE. Die Software nutzt drei Zero-Day-Exploits (Trident) zur vollständigen Übernahme des Geräts.",
-      "description_en": "Citizen Lab at the University of Toronto documents Pegasus infections for the first time on the iPhone of human rights activist Ahmed Mansoor in the UAE. The software uses three zero-day exploits (Trident) to fully take over the device."
+      "title_de": "Pegasus-Angriff auf Ahmed Mansoor aufgedeckt",
+      "title_en": "Pegasus attack on Ahmed Mansoor uncovered",
+      "description_de": "Der Menschenrechtsverteidiger Ahmed Mansoor aus den Vereinigten Arabischen Emiraten erhält am 10. und 11. August 2016 SMS mit Links, die angebliche Geheimnisse über Folter in Gefängnissen versprechen, und leitet sie an das Citizen Lab weiter, statt sie zu öffnen. Die Analyse zeigt, dass die Links über drei bis dahin unbekannte Zero-Day-Schwachstellen in iOS (Trident) sein iPhone vollständig übernommen und Pegasus installiert hätten. Die Infrastruktur führt zur NSO Group; Indizien deuten auf die Regierung der VAE als Betreiber.",
+      "description_en": "The human rights defender Ahmed Mansoor from the United Arab Emirates receives SMS messages on 10 and 11 August 2016 with links promising alleged secrets about torture in prisons, and forwards them to Citizen Lab instead of opening them. The analysis shows that the links would have fully taken over his iPhone and installed Pegasus via three previously unknown zero-day vulnerabilities in iOS (Trident). The infrastructure leads to NSO Group; indicators point to the UAE government as the operator."
     },
     {
-      "date": "2019",
+      "date": "2019-10-29",
       "phase": "doctrine",
       "title": "WhatsApp-Klage gegen NSO Group",
-      "description": "WhatsApp/Meta verklagt NSO Group vor einem US-Bundesgericht wegen der Ausnutzung einer Sicherheitslücke in WhatsApp, über die Pegasus auf die Geräte von rund 1.400 Nutzern installiert wurde, darunter Journalisten und Aktivisten.",
-      "sources": [],
+      "description": "WhatsApp verklagt die NSO Group vor einem US-Bundesgericht in Kalifornien: Über eine Sicherheitslücke in der WhatsApp-Anruffunktion sei zwischen April und Mai 2019 Pegasus auf rund 1.400 Geräten in 20 Ländern installiert worden, darunter bei mindestens 100 Menschenrechtsverteidigern, Journalisten und anderen Vertretern der Zivilgesellschaft.",
+      "sources": [
+        "https://www.business-humanrights.org/en/latest-news/nso-group-lawsuit-re-hacking-whatsapp-users/"
+      ],
       "title_de": "WhatsApp-Klage gegen NSO Group",
       "title_en": "WhatsApp lawsuit against NSO Group",
-      "description_de": "WhatsApp/Meta verklagt NSO Group vor einem US-Bundesgericht wegen der Ausnutzung einer Sicherheitslücke in WhatsApp, über die Pegasus auf die Geräte von rund 1.400 Nutzern installiert wurde, darunter Journalisten und Aktivisten.",
-      "description_en": "WhatsApp/Meta sues NSO Group in a US federal court over the exploitation of a security vulnerability in WhatsApp through which Pegasus was installed on the devices of around 1,400 users, including journalists and activists."
+      "description_de": "WhatsApp verklagt die NSO Group vor einem US-Bundesgericht in Kalifornien: Über eine Sicherheitslücke in der WhatsApp-Anruffunktion sei zwischen April und Mai 2019 Pegasus auf rund 1.400 Geräten in 20 Ländern installiert worden, darunter bei mindestens 100 Menschenrechtsverteidigern, Journalisten und anderen Vertretern der Zivilgesellschaft.",
+      "description_en": "WhatsApp sues NSO Group in a US federal court in California: via a vulnerability in WhatsApp's calling function, Pegasus was allegedly installed on around 1,400 devices in 20 countries between April and May 2019, including at least 100 human rights defenders, journalists and other members of civil society."
     },
     {
-      "date": "2021-07",
+      "date": "2021-07-18",
       "phase": "event",
       "title": "Pegasus-Projekt: Globale Enthüllung",
-      "description": "Ein Konsortium aus 17 Medienorganisationen, koordiniert von Forbidden Stories, veröffentlicht die Pegasus-Projekt-Recherche. Eine geleakte Liste von über 50.000 Telefonnummern zeigt das Ausmaß der globalen Überwachung: Betroffen sind Journalisten, Oppositionelle, Anwälte und Staatsoberhäupter in über 40 Ländern.",
+      "description": "Ein Konsortium aus 17 Medienorganisationen, koordiniert von Forbidden Stories mit technischer Unterstützung des Security Lab von Amnesty International, veröffentlicht die Pegasus-Projekt-Recherche. Eine geleakte Liste von über 50.000 Telefonnummern, die NSO-Kunden seit 2016 in mehr als 50 Ländern als potenzielle Überwachungsziele ausgewählt haben sollen, enthält Journalisten, Oppositionelle, Anwälte und 14 Staats- und Regierungschefs. Eine Nummer auf der Liste belegt für sich noch keine Infektion; forensische Analysen von Amnesty wiesen Pegasus-Spuren auf einem Teil der untersuchten Geräte nach.",
       "sources": [
-        "https://www.theguardian.com/world/2021/jul/18/revealed-leak-uncovers-global-abuse-of-cyber-surveillance-weapon-nso-group-pegasus"
+        "https://www.theguardian.com/world/2021/jul/18/revealed-leak-uncovers-global-abuse-of-cyber-surveillance-weapon-nso-group-pegasus",
+        "https://www.amnesty.org/en/latest/press-release/2021/07/world-leaders-potential-targets-of-nso-group-pegasus-spyware/"
       ],
       "title_de": "Pegasus-Projekt: Globale Enthüllung",
       "title_en": "Pegasus Project: global revelation",
-      "description_de": "Ein Konsortium aus 17 Medienorganisationen, koordiniert von Forbidden Stories, veröffentlicht die Pegasus-Projekt-Recherche. Eine geleakte Liste von über 50.000 Telefonnummern zeigt das Ausmaß der globalen Überwachung: Betroffen sind Journalisten, Oppositionelle, Anwälte und Staatsoberhäupter in über 40 Ländern.",
-      "description_en": "A consortium of 17 media organizations, coordinated by Forbidden Stories, publishes the Pegasus Project investigation. A leaked list of more than 50,000 phone numbers reveals the scale of global surveillance: those affected include journalists, opposition figures, lawyers, and heads of state in over 40 countries."
+      "description_de": "Ein Konsortium aus 17 Medienorganisationen, koordiniert von Forbidden Stories mit technischer Unterstützung des Security Lab von Amnesty International, veröffentlicht die Pegasus-Projekt-Recherche. Eine geleakte Liste von über 50.000 Telefonnummern, die NSO-Kunden seit 2016 in mehr als 50 Ländern als potenzielle Überwachungsziele ausgewählt haben sollen, enthält Journalisten, Oppositionelle, Anwälte und 14 Staats- und Regierungschefs. Eine Nummer auf der Liste belegt für sich noch keine Infektion; forensische Analysen von Amnesty wiesen Pegasus-Spuren auf einem Teil der untersuchten Geräte nach.",
+      "description_en": "A consortium of 17 media organizations, coordinated by Forbidden Stories with technical support from Amnesty International's Security Lab, publishes the Pegasus Project investigation. A leaked list of more than 50,000 phone numbers allegedly selected by NSO clients in more than 50 countries since 2016 as potential surveillance targets includes journalists, opposition figures, lawyers and 14 heads of state and government. A number on the list does not by itself prove an infection; forensic analyses by Amnesty found Pegasus traces on a portion of the devices examined."
     },
     {
       "date": "2021-11",
       "phase": "consequences",
-      "title": "USA setzen NSO Group auf Sanktionsliste",
-      "description": "Das US-Handelsministerium setzt NSO Group auf die Entity List. Apple verklagt NSO Group und führt Sicherheitsupdates (Lockdown Mode) ein. Das EU-Parlament richtet einen Untersuchungsausschuss (PEGA) ein.",
-      "sources": [],
-      "title_de": "USA setzen NSO Group auf Sanktionsliste",
-      "title_en": "US adds NSO Group to sanctions list",
-      "description_de": "Das US-Handelsministerium setzt NSO Group auf die Entity List. Apple verklagt NSO Group und führt Sicherheitsupdates (Lockdown Mode) ein. Das EU-Parlament richtet einen Untersuchungsausschuss (PEGA) ein.",
-      "description_en": "The US Department of Commerce adds NSO Group to the Entity List. Apple sues NSO Group and introduces security updates (Lockdown Mode). The European Parliament establishes an inquiry committee (PEGA)."
+      "title": "USA setzen NSO Group auf Entity List, Apple verklagt NSO",
+      "description": "Das US-Handelsministerium setzt die NSO Group am 3. November 2021 auf die Entity List (Exportkontrollliste), weil sie Spyware entwickelt und geliefert habe, mit der ausländische Regierungen Regierungsvertreter, Journalisten, Geschäftsleute, Aktivisten und Wissenschaftler gezielt angegriffen hätten. Am 23. November 2021 verklagt Apple die NSO Group wegen der Überwachung und Ausspähung von Apple-Nutzern.",
+      "sources": [
+        "https://www.commerce.gov/news/press-releases/2021/11/commerce-adds-nso-group-and-other-foreign-companies-entity-list",
+        "https://www.apple.com/newsroom/2021/11/apple-sues-nso-group-to-curb-the-abuse-of-state-sponsored-spyware/"
+      ],
+      "title_de": "USA setzen NSO Group auf Entity List, Apple verklagt NSO",
+      "title_en": "US adds NSO Group to Entity List, Apple sues NSO",
+      "description_de": "Das US-Handelsministerium setzt die NSO Group am 3. November 2021 auf die Entity List (Exportkontrollliste), weil sie Spyware entwickelt und geliefert habe, mit der ausländische Regierungen Regierungsvertreter, Journalisten, Geschäftsleute, Aktivisten und Wissenschaftler gezielt angegriffen hätten. Am 23. November 2021 verklagt Apple die NSO Group wegen der Überwachung und Ausspähung von Apple-Nutzern.",
+      "description_en": "On 3 November 2021 the US Department of Commerce adds NSO Group to the Entity List (export control list), stating that it developed and supplied spyware that foreign governments used to maliciously target government officials, journalists, businesspeople, activists and academics. On 23 November 2021 Apple sues NSO Group over the surveillance and targeting of Apple users."
     },
     {
-      "date": "2024",
+      "date": "2022-03 bis 2023-06",
+      "phase": "consequences",
+      "title": "EU-Parlament untersucht den Pegasus-Missbrauch (PEGA)",
+      "description": "Das EU-Parlament richtet am 10. März 2022 den Untersuchungsausschuss PEGA zur Nutzung von Pegasus und vergleichbarer Spyware ein. Nach 14 Monaten Anhörungen verabschiedet der Ausschuss im Mai 2023 seinen Abschlussbericht; am 15. Juni 2023 beschließt das Parlament eine Empfehlung an Rat und Kommission, die auch Forderungen an mehrere Mitgliedstaaten enthält.",
+      "sources": [
+        "https://eucrim.eu/news/ep-recommendation-on-lessons-learned-from-misused-spyware/",
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2023-0244_EN.html"
+      ],
+      "title_de": "EU-Parlament untersucht den Pegasus-Missbrauch (PEGA)",
+      "title_en": "European Parliament investigates Pegasus abuse (PEGA)",
+      "description_de": "Das EU-Parlament richtet am 10. März 2022 den Untersuchungsausschuss PEGA zur Nutzung von Pegasus und vergleichbarer Spyware ein. Nach 14 Monaten Anhörungen verabschiedet der Ausschuss im Mai 2023 seinen Abschlussbericht; am 15. Juni 2023 beschließt das Parlament eine Empfehlung an Rat und Kommission, die auch Forderungen an mehrere Mitgliedstaaten enthält.",
+      "description_en": "On 10 March 2022 the European Parliament sets up the PEGA committee of inquiry into the use of Pegasus and equivalent spyware. After 14 months of hearings the committee adopts its final report in May 2023; on 15 June 2023 Parliament adopts a recommendation to the Council and the Commission that also contains demands addressed to several member states."
+    },
+    {
+      "date": "2024-12 bis 2025-10",
       "phase": "consequences",
       "title": "WhatsApp gewinnt gegen NSO Group",
-      "description": "Ein US-Bundesrichter urteilt zugunsten von WhatsApp/Meta im Prozess gegen NSO Group. Das Gericht stellt fest, dass NSO gegen den Computer Fraud and Abuse Act verstoßen hat. Das Urteil schafft einen wichtigen Präzedenzfall für die Haftung von Spyware-Herstellern.",
-      "sources": [],
+      "description": "Im Dezember 2024 stellt Bundesrichterin Phyllis Hamilton im Verfahren WhatsApp gegen NSO Group fest, dass die NSO Group gegen den Computer Fraud and Abuse Act, das kalifornische Computerbetrugsgesetz und die Nutzungsbedingungen von WhatsApp verstoßen hat. Im Mai 2025 spricht eine Jury WhatsApp rund 167 Millionen US-Dollar Strafschadenersatz zu; im Oktober 2025 senkt die Richterin den Betrag auf 4 Millionen US-Dollar und untersagt der NSO Group dauerhaft, WhatsApp und seine Nutzer ins Visier zu nehmen.",
+      "sources": [
+        "https://therecord.media/judge-rules-nso-group-liable-for-hack-of-1400-whatsapp-users",
+        "https://www.aljazeera.com/news/2025/10/18/us-court-bars-israeli-spyware-firm-from-targeting-whatsapp-users"
+      ],
       "title_de": "WhatsApp gewinnt gegen NSO Group",
       "title_en": "WhatsApp wins against NSO Group",
-      "description_de": "Ein US-Bundesrichter urteilt zugunsten von WhatsApp/Meta im Prozess gegen NSO Group. Das Gericht stellt fest, dass NSO gegen den Computer Fraud and Abuse Act verstoßen hat. Das Urteil schafft einen wichtigen Präzedenzfall für die Haftung von Spyware-Herstellern.",
-      "description_en": "A US federal judge rules in favor of WhatsApp/Meta in the case against NSO Group. The court finds that NSO violated the Computer Fraud and Abuse Act. The ruling establishes an important precedent for the liability of spyware vendors."
+      "description_de": "Im Dezember 2024 stellt Bundesrichterin Phyllis Hamilton im Verfahren WhatsApp gegen NSO Group fest, dass die NSO Group gegen den Computer Fraud and Abuse Act, das kalifornische Computerbetrugsgesetz und die Nutzungsbedingungen von WhatsApp verstoßen hat. Im Mai 2025 spricht eine Jury WhatsApp rund 167 Millionen US-Dollar Strafschadenersatz zu; im Oktober 2025 senkt die Richterin den Betrag auf 4 Millionen US-Dollar und untersagt der NSO Group dauerhaft, WhatsApp und seine Nutzer ins Visier zu nehmen.",
+      "description_en": "In December 2024 US District Judge Phyllis Hamilton rules in WhatsApp v. NSO Group that NSO Group violated the Computer Fraud and Abuse Act, California's computer fraud law and WhatsApp's terms of service. In May 2025 a jury awards WhatsApp about 167 million US dollars in punitive damages; in October 2025 the judge cuts the amount to 4 million US dollars and permanently bars NSO Group from targeting WhatsApp and its users."
     }
   ],
   "asm:sources": [
@@ -161,8 +184,8 @@
   },
   "name_de": "NSO Group Pegasus Spyware",
   "name_en": "NSO Group Pegasus spyware",
-  "description_de": "Die israelische Firma NSO Group verkauft die KI-gestützte Überwachungssoftware Pegasus an Regierungen weltweit. Das Programm nutzt Zero-Day-Exploits, um Smartphones vollständig zu übernehmen und wird gegen Journalisten, Menschenrechtsverteidiger und Oppositionelle eingesetzt. Das Pegasus-Projekt enthüllt 2021 die globale Dimension des Missbrauchs.",
-  "description_en": "The Israeli company NSO Group sells the AI-assisted surveillance software Pegasus to governments worldwide. The program uses zero-day exploits to take full control of smartphones and is deployed against journalists, human rights defenders, and opposition figures. The Pegasus Project reveals the global dimension of the abuse in 2021.",
+  "description_de": "Die israelische Firma NSO Group verkauft die Überwachungssoftware Pegasus an Regierungen weltweit. Das Programm nutzt Zero-Day-Exploits, um Smartphones vollständig zu übernehmen, und wurde laut Citizen Lab, Amnesty International und Medienrecherchen gegen Journalisten, Menschenrechtsverteidiger und Oppositionelle eingesetzt. Das Pegasus-Projekt enthüllt 2021 die globale Dimension des Missbrauchs.",
+  "description_en": "The Israeli company NSO Group sells the surveillance software Pegasus to governments worldwide. The program uses zero-day exploits to take full control of smartphones and, according to Citizen Lab, Amnesty International and media investigations, has been used against journalists, human rights defenders and opposition figures. The Pegasus Project reveals the global dimension of the abuse in 2021.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Pressefreiheit",
