@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/belgien-ki-sozialleistungen-betrug",
-  "name": "Belgien: KI-Betrugserkennungssystem diskriminiert Migrantenfamilien bei Sozialleistungen",
-  "description": "Belgiens Sozialversicherungsbehörden setzten KI-Systeme zur automatisierten Betrugserkennungsbei Sozialleistungen ein, die erwiesenermaassen Migrantenfamilien und Bürger nicht-belgischer Herkunft unverhältnismäßig häufig als verdächtig markierten. Die Algorithmen nutzten Faktoren wie Nationalität, Wohnort und Familienstruktur als Risikoindikatoren, was zu diskriminierenden Ergebnissen führte. Die Ligue des Droits Humains reichte 2022 eine Beschwerde ein und forderte Transparenz und Abschaffung des Systems.",
+  "name": "Belgien: Algorithmische Betrugserkennung bei Sozialleistungen (OASIS) wegen Intransparenz und Diskriminierungsrisiken kritisiert",
+  "description": "Belgiens Sozialinspektionen nutzen seit Anfang der 2000er-Jahre das Data-Warehouse OASIS, in dem Daten aus verschiedenen Bereichen der sozialen Sicherheit per Data-Matching und Data-Mining auf Betrugsverdacht ausgewertet werden; seit 2016 fließen auch Verbrauchsdaten von Wasser-, Gas- und Stromversorgern ein. Die Algorithmen sind geheim: Die Juristin Elise Degrave (Universität Namur) kritisierte 2020 diese Intransparenz sowie eine späte und unklare Rechtsgrundlage. Menschenrechtsorganisationen wie die Ligue des droits humains warnen vor dem Risiko, dass solche Systeme rassistische oder sexistische Diskriminierung reproduzieren; konkrete Fälle algorithmischer Diskriminierung sind bislang nicht dokumentiert.",
   "startDate": "2018",
   "location": {
     "@type": "Place",
@@ -39,8 +39,8 @@
       "name": "Belgische Sozialversicherung (NOSS/ONSS)",
       "type": "government",
       "asm:systems": [
-        "KI-Betrugserkennungssystem",
-        "Datamining-Plattform Sozialleistungen"
+        "OASIS Data-Warehouse (Data-Matching/Data-Mining)",
+        "Abgleich von Energie- und Wasserverbrauchsdaten"
       ],
       "name_de": "Belgische Sozialversicherung (NOSS/ONSS)",
       "name_en": "Belgian social security (NOSS/ONSS)"
@@ -50,62 +50,80 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2018",
+      "date": "2001",
       "phase": "infrastructure",
-      "title": "Einführung algorithmischer Betrugsermittlung",
-      "description": "Die belgische Sozialversicherungsbehörde NOSS/ONSS führt ein KI-gestütztes System zur Betrugsermittlung ein, das Antragsteller auf Basis von Datenprofilen automatisch in Risikogruppen einteilt. Das System kombiniert Daten aus verschiedenen Verwaltungsregistern und nutzt Faktoren wie Herkunftsland, Migrationsgeschichte, Familiengröße und Wohnlage als Risikoindikatoren. Eine unabhängige Prüfung auf Diskriminierungspotenzial findet nicht statt.",
-      "sources": [],
-      "title_de": "Einführung algorithmischer Betrugsermittlung",
-      "title_en": "Introduction of algorithmic fraud detection",
-      "description_de": "Die belgische Sozialversicherungsbehörde NOSS/ONSS führt ein KI-gestütztes System zur Betrugsermittlung ein, das Antragsteller auf Basis von Datenprofilen automatisch in Risikogruppen einteilt. Das System kombiniert Daten aus verschiedenen Verwaltungsregistern und nutzt Faktoren wie Herkunftsland, Migrationsgeschichte, Familiengröße und Wohnlage als Risikoindikatoren. Eine unabhängige Prüfung auf Diskriminierungspotenzial findet nicht statt.",
-      "description_en": "The Belgian social-security authority NOSS/ONSS introduced an AI-supported fraud-detection system that automatically classifies applicants into risk groups based on data profiles. The system combined data from various administrative registers and used factors such as country of origin, migration history, family size, and place of residence as risk indicators. No independent assessment of discriminatory potential was carried out."
+      "title": "Aufbau des Anti-Betrugs-Data-Warehouse OASIS",
+      "description": "Im Rahmen eines gemeinsamen Anti-Betrugs-Projekts belgischer Bundesministerien und Sozialversicherungsämter wird das Data-Warehouse OASIS (Organisation Anti-fraude des Services d'Inspection Sociale) aufgebaut. Es ermöglicht den Sozialinspektionen, Daten aus verschiedenen Bereichen der sozialen Sicherheit per Data-Matching und Data-Mining auszuwerten, um Betrugsverdachtsfälle zu erkennen und Kontrollen gezielt auszuwählen. Später wird es um weitere Datenbestände wie Steuer- und Katasterdaten erweitert.",
+      "sources": [
+        "https://interoperable-europe.ec.europa.eu/collection/egovernment/document/anti-fraud-datawarehouse-belgian-social-security-oasis",
+        "https://www.ela.europa.eu/sites/default/files/2021-09/Social%20Inspection%20Services%20Anti-Fraud%20Organization%20(OASIS).pdf"
+      ],
+      "title_de": "Aufbau des Anti-Betrugs-Data-Warehouse OASIS",
+      "title_en": "Creation of the OASIS anti-fraud data warehouse",
+      "description_de": "Im Rahmen eines gemeinsamen Anti-Betrugs-Projekts belgischer Bundesministerien und Sozialversicherungsämter wird das Data-Warehouse OASIS (Organisation Anti-fraude des Services d'Inspection Sociale) aufgebaut. Es ermöglicht den Sozialinspektionen, Daten aus verschiedenen Bereichen der sozialen Sicherheit per Data-Matching und Data-Mining auszuwerten, um Betrugsverdachtsfälle zu erkennen und Kontrollen gezielt auszuwählen. Später wird es um weitere Datenbestände wie Steuer- und Katasterdaten erweitert.",
+      "description_en": "As part of a joint anti-fraud project of Belgian federal ministries and social-security offices, the OASIS data warehouse (Organisation Anti-fraude des Services d'Inspection Sociale) was set up. It enables the social inspection services to analyze data from various social-security sectors through data matching and data mining in order to detect suspected fraud and target inspections. It was later expanded with further datasets such as tax and land-registry data."
+    },
+    {
+      "date": "2016",
+      "phase": "doctrine",
+      "title": "Gesetz zur Auswertung von Energie- und Wasserverbrauchsdaten",
+      "description": "Ein 2016 verabschiedetes Gesetz verpflichtet Netzbetreiber und Versorger, Verbrauchsdaten zu Wasser, Gas und Strom systematisch an die Sozialverwaltung zu übermitteln. Die Daten werden mit der Haushaltszusammensetzung abgeglichen, um fiktive Wohnadressen von Leistungsbeziehenden aufzudecken, etwa wenn ein niedriger Verbrauch auf einen nur vorgetäuschten Alleinstehendenstatus hindeuten soll. Sozialverbände kritisierten das Vorhaben als ungerecht, unrealistisch und rechtswidrig.",
+      "sources": [
+        "https://www.rtbf.be/article/lutte-contre-la-fraude-sociale-on-controle-votre-consommation-d-eau-de-gaz-et-d-electricite-9190179",
+        "https://mocliege.be/positions/controle-des-allocataires-sociaux-les-donnees-energetiques-pour-preuves-dune-fraude-sociale-injuste-irrealiste-et-illegal/"
+      ],
+      "title_de": "Gesetz zur Auswertung von Energie- und Wasserverbrauchsdaten",
+      "title_en": "Law on the analysis of energy and water consumption data",
+      "description_de": "Ein 2016 verabschiedetes Gesetz verpflichtet Netzbetreiber und Versorger, Verbrauchsdaten zu Wasser, Gas und Strom systematisch an die Sozialverwaltung zu übermitteln. Die Daten werden mit der Haushaltszusammensetzung abgeglichen, um fiktive Wohnadressen von Leistungsbeziehenden aufzudecken, etwa wenn ein niedriger Verbrauch auf einen nur vorgetäuschten Alleinstehendenstatus hindeuten soll. Sozialverbände kritisierten das Vorhaben als ungerecht, unrealistisch und rechtswidrig.",
+      "description_en": "A law adopted in 2016 obliges network operators and suppliers to systematically transmit water, gas, and electricity consumption data to the social-security administration. The data are matched with household composition to detect fictitious addresses of benefit recipients, for example where low consumption is taken to indicate a merely feigned single-person status. Social organizations criticized the plan as unfair, unrealistic and unlawful."
     },
     {
       "date": "2020",
-      "phase": "doctrine",
-      "title": "Erste Berichte über systematische Benachteiligung",
-      "description": "NGOs und Sozialarbeiter beginnen Muster zu beobachten: Antragsteller mit Migrationshintergrund werden deutlich häufiger für vertiefte Überprüfungen markiert und mit Leistungsstopps belegt. AlgorithmWatch und lokale Hilfsorganisationen dokumentieren Fälle, in denen Betroffene keine Begründung erhalten und keinen effektiven Rechtsweg kennen. Die Intransparenz des Systems erschwert Widersprüche.",
-      "sources": [],
-      "title_de": "Erste Berichte über systematische Benachteiligung",
-      "title_en": "First reports of systematic disadvantage",
-      "description_de": "NGOs und Sozialarbeiter beginnen Muster zu beobachten: Antragsteller mit Migrationshintergrund werden deutlich häufiger für vertiefte Überprüfungen markiert und mit Leistungsstopps belegt. AlgorithmWatch und lokale Hilfsorganisationen dokumentieren Fälle, in denen Betroffene keine Begründung erhalten und keinen effektiven Rechtsweg kennen. Die Intransparenz des Systems erschwert Widersprüche.",
-      "description_en": "NGOs and social workers began to observe patterns: applicants with a migration background were flagged for in-depth review and had their benefits suspended significantly more often. AlgorithmWatch and local aid organizations documented cases in which affected persons received no justification and had no effective legal remedy. The opacity of the system made appeals difficult."
-    },
-    {
-      "date": "2022",
       "phase": "event",
-      "title": "Ligue des Droits Humains reicht Beschwerde ein",
-      "description": "Die belgische Menschenrechtsorganisation Ligue des Droits Humains reicht eine formelle Beschwerde beim Datenschutzbeauftragten (APD/GBA) ein. Die Beschwerde dokumentiert, dass das System gegen die DSGVO verstößt: keine ausreichende Transparenz, keine Möglichkeit zur Anfechtung, diskriminierende Merkmale als Eingabedaten. Parallel veröffentlicht AlgorithmWatch einen ausfuhrlichen Bericht über das System.",
+      "title": "Studie zu geheimen Algorithmen gegen Sozialbetrug",
+      "description": "Die Juristin Elise Degrave (Universität Namur) veröffentlicht in der European Review of Digital Administration & Law die Studie 'The Use of Secret Algorithms to Combat Social Fraud in Belgium'. Sie analysiert OASIS und stellt fest, dass die Rechtsgrundlage für das Instrument erst sehr spät geschaffen wurde und unklar ist. Die eingesetzten Algorithmen bleiben geheim und sind daher nicht vollständig nachvollziehbar; zwischen 2004 und 2018 war das seit 2004 operative OASIS durch kein Gesetz geregelt.",
       "sources": [
-        "https://www.liguedh.be/"
+        "https://www.erdalreview.eu/free-download/978882553896015.pdf",
+        "https://researchportal.unamur.be/fr/publications/the-use-of-secret-algorithms-to-combat-social-fraud-in-belgium/"
       ],
-      "title_de": "Ligue des Droits Humains reicht Beschwerde ein",
-      "title_en": "Ligue des Droits Humains files a complaint",
-      "description_de": "Die belgische Menschenrechtsorganisation Ligue des Droits Humains reicht eine formelle Beschwerde beim Datenschutzbeauftragten (APD/GBA) ein. Die Beschwerde dokumentiert, dass das System gegen die DSGVO verstößt: keine ausreichende Transparenz, keine Möglichkeit zur Anfechtung, diskriminierende Merkmale als Eingabedaten. Parallel veröffentlicht AlgorithmWatch einen ausfuhrlichen Bericht über das System.",
-      "description_en": "The Belgian human rights organization Ligue des Droits Humains filed a formal complaint with the data protection authority (APD/GBA). The complaint documented that the system violated the GDPR: insufficient transparency, no possibility to contest decisions, and discriminatory features as inputs. In parallel, AlgorithmWatch published a detailed report on the system."
+      "title_de": "Studie zu geheimen Algorithmen gegen Sozialbetrug",
+      "title_en": "Study on secret algorithms against social fraud",
+      "description_de": "Die Juristin Elise Degrave (Universität Namur) veröffentlicht in der European Review of Digital Administration & Law die Studie 'The Use of Secret Algorithms to Combat Social Fraud in Belgium'. Sie analysiert OASIS und stellt fest, dass die Rechtsgrundlage für das Instrument erst sehr spät geschaffen wurde und unklar ist. Die eingesetzten Algorithmen bleiben geheim und sind daher nicht vollständig nachvollziehbar; zwischen 2004 und 2018 war das seit 2004 operative OASIS durch kein Gesetz geregelt.",
+      "description_en": "Legal scholar Elise Degrave (University of Namur) published the study 'The Use of Secret Algorithms to Combat Social Fraud in Belgium' in the European Review of Digital Administration & Law. She analyzed OASIS and found that the legal basis for the tool was adopted very late and is unclear. The algorithms used remain secret and therefore cannot be fully understood; OASIS, operational since 2004, was not regulated by any law between 2004 and 2018."
     },
     {
-      "date": "2023",
+      "date": "2025-11",
       "phase": "consequences",
-      "title": "Aufsichtsbehörden reagieren, System weiterhin aktiv",
-      "description": "Der belgische Datenschutzbeauftragte leitet eine Untersuchung ein. Das System wird partiell überarbeitet, bleibt aber in modifizierter Form aktiv. Der Fall führt zu einer Debatte im belgischen Parlament über algorithmische Diskriminierung im Sozialbereich. Die EU-Kommission zieht den Fall als Beispiel in der Ausarbeit von Leitlinien für den KI-Einsatz in Sozialsystemen heran.",
-      "sources": [],
-      "title_de": "Aufsichtsbehörden reagieren, System weiterhin aktiv",
-      "title_en": "Regulators respond, but the system remains active",
-      "description_de": "Der belgische Datenschutzbeauftragte leitet eine Untersuchung ein. Das System wird partiell überarbeitet, bleibt aber in modifizierter Form aktiv. Der Fall führt zu einer Debatte im belgischen Parlament über algorithmische Diskriminierung im Sozialbereich. Die EU-Kommission zieht den Fall als Beispiel in der Ausarbeit von Leitlinien für den KI-Einsatz in Sozialsystemen heran.",
-      "description_en": "The Belgian data protection authority opened an investigation. The system was partially revised but remained active in modified form. The case prompted a debate in the Belgian parliament about algorithmic discrimination in the welfare sector. The European Commission cited the case as an example when drafting guidelines for AI use in social-security systems."
+      "title": "Kritik an Intransparenz hält an, Diskriminierung bleibt unbelegt",
+      "description": "Belgische Medien berichten 2025 weiter über algorithmische Betrugskontrolle. Alter Echos beschreibt im Mai 2025 das Diskriminierungsrisiko von Anti-Betrugs-Algorithmen, die intransparent und fern demokratischer Kontrolle 'verdächtige Profile' vorhersagen sollen. Die Ligue des droits humains führt nach diesem Bericht Verfahren zu Gesichtserkennung, aber keine zu Diskriminierung durch einen Algorithmus. Im November 2025 greift Moustique Algorithmen der Steuerverwaltung als mögliche neue Quelle von Diskriminierung auf.",
+      "sources": [
+        "https://www.alterechos.be/les-algorithmes-avatars-de-la-lutte-contre-la-fraude-sociale/",
+        "https://www.moustique.be/notre-epoque/les-infos/2025/11/01/les-algorithmes-nouvelle-source-de-discrimination-sous-couvert-defficacite-letat-automatise-ses-biais-TJ2OZC4MU5DZ7OBQMSCWGRXY74/"
+      ],
+      "title_de": "Kritik an Intransparenz hält an, Diskriminierung bleibt unbelegt",
+      "title_en": "Criticism of opacity continues, discrimination remains undocumented",
+      "description_de": "Belgische Medien berichten 2025 weiter über algorithmische Betrugskontrolle. Alter Echos beschreibt im Mai 2025 das Diskriminierungsrisiko von Anti-Betrugs-Algorithmen, die intransparent und fern demokratischer Kontrolle 'verdächtige Profile' vorhersagen sollen. Die Ligue des droits humains führt nach diesem Bericht Verfahren zu Gesichtserkennung, aber keine zu Diskriminierung durch einen Algorithmus. Im November 2025 greift Moustique Algorithmen der Steuerverwaltung als mögliche neue Quelle von Diskriminierung auf.",
+      "description_en": "Belgian media continued to report on algorithmic fraud control in 2025. In May 2025, Alter Echos described the discrimination risk of anti-fraud algorithms meant to predict 'suspicious profiles' opaquely and far from democratic control. According to this report, the Ligue des droits humains has cases on facial recognition but none on discrimination by an algorithm. In November 2025, Moustique addressed tax-administration algorithms as a possible new source of discrimination."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.liguedh.be/",
-      "title": "Plainte contre la detection algorithmique des fraudes aux allocations sociales",
-      "publisher": "Ligue des Droits Humains",
-      "date": "2022",
-      "type": "legal-document",
-      "asm:linkHealth": "ok",
-      "title_de": "Plainte contre la detection algorithmique des fraudes aux allocations sociales",
-      "title_en": "Plainte contre la detection algorithmique des fraudes aux allocations sociales"
+      "url": "https://researchportal.unamur.be/fr/publications/the-use-of-secret-algorithms-to-combat-social-fraud-in-belgium/",
+      "title": "The use of secret algorithms to combat social fraud in Belgium",
+      "publisher": "Université de Namur (Elise Degrave)",
+      "date": "2020",
+      "type": "analysis",
+      "title_de": "The use of secret algorithms to combat social fraud in Belgium",
+      "title_en": "The use of secret algorithms to combat social fraud in Belgium"
+    },
+    {
+      "url": "https://www.alterechos.be/les-algorithmes-avatars-de-la-lutte-contre-la-fraude-sociale/",
+      "title": "Les algorithmes, avatars de la lutte contre la fraude sociale",
+      "publisher": "Alter Echos",
+      "date": "2025",
+      "type": "news-article",
+      "title_de": "Les algorithmes, avatars de la lutte contre la fraude sociale",
+      "title_en": "Les algorithmes, avatars de la lutte contre la fraude sociale"
     }
   ],
   "asm:metadata": {
@@ -113,12 +131,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-02: no evidence was found that the Belgian system demonstrably discriminated against migrant families or that the Ligue des droits humains filed a 2022 complaint, so the title now reflects the documented criticism of OASIS. Slug unchanged for permalink stability."
   },
-  "name_de": "Belgien: KI-Betrugserkennungssystem diskriminiert Migrantenfamilien bei Sozialleistungen",
-  "name_en": "Belgium: AI fraud-detection system discriminates against migrant families in welfare benefits",
-  "description_de": "Belgiens Sozialversicherungsbehörden setzten KI-Systeme zur automatisierten Betrugserkennungsbei Sozialleistungen ein, die erwiesenermaassen Migrantenfamilien und Bürger nicht-belgischer Herkunft unverhältnismäßig häufig als verdächtig markierten. Die Algorithmen nutzten Faktoren wie Nationalität, Wohnort und Familienstruktur als Risikoindikatoren, was zu diskriminierenden Ergebnissen führte. Die Ligue des Droits Humains reichte 2022 eine Beschwerde ein und forderte Transparenz und Abschaffung des Systems.",
-  "description_en": "Belgium's social-security authorities deployed AI systems for automated fraud detection in welfare benefits that demonstrably flagged migrant families and citizens of non-Belgian origin as suspicious at disproportionately high rates. The algorithms used factors such as nationality, place of residence, and family structure as risk indicators, leading to discriminatory outcomes. In 2022 the Ligue des Droits Humains filed a complaint and called for transparency and abolition of the system.",
+  "name_de": "Belgien: Algorithmische Betrugserkennung bei Sozialleistungen (OASIS) wegen Intransparenz und Diskriminierungsrisiken kritisiert",
+  "name_en": "Belgium: Algorithmic welfare-fraud detection (OASIS) criticized for opacity and discrimination risks",
+  "description_de": "Belgiens Sozialinspektionen nutzen seit Anfang der 2000er-Jahre das Data-Warehouse OASIS, in dem Daten aus verschiedenen Bereichen der sozialen Sicherheit per Data-Matching und Data-Mining auf Betrugsverdacht ausgewertet werden; seit 2016 fließen auch Verbrauchsdaten von Wasser-, Gas- und Stromversorgern ein. Die Algorithmen sind geheim: Die Juristin Elise Degrave (Universität Namur) kritisierte 2020 diese Intransparenz sowie eine späte und unklare Rechtsgrundlage. Menschenrechtsorganisationen wie die Ligue des droits humains warnen vor dem Risiko, dass solche Systeme rassistische oder sexistische Diskriminierung reproduzieren; konkrete Fälle algorithmischer Diskriminierung sind bislang nicht dokumentiert.",
+  "description_en": "Since the early 2000s, Belgium's social inspection services have used the OASIS data warehouse, in which data from various social-security sectors are analyzed for suspected fraud through data matching and data mining; since 2016, consumption data from water, gas, and electricity suppliers have also been fed in. The algorithms are secret: in 2020, legal scholar Elise Degrave (University of Namur) criticized this opacity as well as a late and unclear legal basis. Human rights organizations such as the Ligue des droits humains warn of the risk that such systems reproduce racist or sexist discrimination; concrete cases of algorithmic discrimination have not been documented so far.",
   "asm:affectedRights_de": [
     "Recht auf Gleichbehandlung",
     "Recht auf soziale Sicherheit",
