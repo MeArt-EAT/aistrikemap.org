@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/spanien-ki-arbeitsmarkt-algorithmus",
-  "name": "Spanien: Algorithmus des Arbeitsamts SEPE diskriminiert Frauen und Migranten bei Stellenvermittlung",
-  "description": "Der spanische öffentliche Arbeitsvermittlungsdienst SEPE (Servicio Público de Empleo Estatal) setzte einen Algorithmus zur Zuweisung von Arbeitslosen zu Beschäftigungsprogrammen ein, der nachweislich Frauen, Einwanderer und ältere Arbeitnehmer benachteiligte. Der Algorithmus klassifizierte Arbeitssuchende nach 'Beschäftigbarkeit' und verteilte Beratungsressourcen entsprechend. Systemische Voreingenommenheit wurde erst durch externe Audits aufgedeckt. Der Fall ist einer der ersten dokumentierten Fälle algorithmischer Diskriminierung durch eine europäische Behörde.",
-  "startDate": "2019",
+  "name": "Spanien: Beschäftigbarkeits-Profiling der Arbeitsämter SEPE und SAE weckt Diskriminierungsbedenken",
+  "description": "Der spanische staatliche Arbeitsvermittlungsdienst SEPE (Servicio Público de Empleo Estatal) setzt seit 2021 das KI-gestützte Profiling-Werkzeug Send@ ein, das andalusische Arbeitsamt SAE seit 2022 ein statistisches Profiling-Werkzeug, das Arbeitssuchende nach geschätzter 'Beschäftigbarkeit' einstuft und laut offiziellem Datenverarbeitungsregister auch Geschlecht, Behinderung und ethnische Zugehörigkeit verarbeitet. Das Register nennt die Datenkategorien, nicht aber deren Gewichtung im Modell. Fachleute warnen seit 2021 vor algorithmischer Diskriminierung in Beschäftigungs- und Sozialverfahren; 2025 fordert die Koalition IA Ciudadana ein verpflichtendes zentrales Register der Algorithmen der öffentlichen Verwaltung.",
+  "startDate": "2021",
   "location": {
     "@type": "Place",
     "name": "Madrid, Spanien",
@@ -50,48 +50,59 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2019",
+      "date": "2018",
       "phase": "infrastructure",
-      "title": "SEPE führt algorithmisches Profiling für Arbeitssuchende ein",
-      "description": "Das spanische Arbeitsamt SEPE implementiert ein algorithmisches System zur Klassifikation von Arbeitssuchenden nach ihrer geschätzten 'Beschäftigbarkeit'. Der Algorithmus verwendet historische Beschäftigungsdaten, Ausbildungsstand, Alter, Herkunft und Sektor-Informationen. Anhand der Klassifikation werden Arbeitssuchende unterschiedlich intensiv beraten und auf Stellenangebote hingewiesen. Das System operiert ohne öffentliche Dokumentation.",
-      "sources": [],
-      "title_de": "SEPE führt algorithmisches Profiling für Arbeitssuchende ein",
-      "description_de": "Das spanische Arbeitsamt SEPE implementiert ein algorithmisches System zur Klassifikation von Arbeitssuchenden nach ihrer geschätzten 'Beschäftigbarkeit'. Der Algorithmus verwendet historische Beschäftigungsdaten, Ausbildungsstand, Alter, Herkunft und Sektor-Informationen. Anhand der Klassifikation werden Arbeitssuchende unterschiedlich intensiv beraten und auf Stellenangebote hingewiesen. Das System operiert ohne öffentliche Dokumentation.",
-      "title_en": "SEPE introduces algorithmic profiling for job seekers",
-      "description_en": "The Spanish employment service SEPE implements an algorithmic system to classify job seekers by their estimated 'employability.' The algorithm uses historical employment data, level of education, age, origin, and sector information. Based on this classification, job seekers receive different levels of counseling intensity and are matched to vacancies accordingly. The system operates without public documentation."
+      "title": "Ökonomen schlagen statistisches Beschäftigbarkeits-Profiling für Spaniens Arbeitsämter vor",
+      "description": "Die Ökonomen Florentino Felgueroso, José Ignacio García-Pérez und Sergi Jiménez-Martín veröffentlichen bei der Fundación Ramón Areces ein Modell für 'Perfilado estadístico': Ein ökonometrisches Modell schätzt anhand individueller Merkmale wie Geschlecht, Alter und Bildung die Beschäftigbarkeit neuer Arbeitssuchender, um aktive Arbeitsmarktpolitik gezielter einzusetzen. Die spanische Aktivierungsstrategie 2017-2020 erwähnt statistisches Profiling erstmals offiziell.",
+      "sources": ["https://www.fundacionareces.es/recursos/doc/portal/2018/05/03/perfilado-estadistico.pdf", "https://institucional.us.es/revistas/tpdm/mon_2023/01_Sanchez_Lopez.pdf"],
+      "title_de": "Ökonomen schlagen statistisches Beschäftigbarkeits-Profiling für Spaniens Arbeitsämter vor",
+      "description_de": "Die Ökonomen Florentino Felgueroso, José Ignacio García-Pérez und Sergi Jiménez-Martín veröffentlichen bei der Fundación Ramón Areces ein Modell für 'Perfilado estadístico': Ein ökonometrisches Modell schätzt anhand individueller Merkmale wie Geschlecht, Alter und Bildung die Beschäftigbarkeit neuer Arbeitssuchender, um aktive Arbeitsmarktpolitik gezielter einzusetzen. Die spanische Aktivierungsstrategie 2017-2020 erwähnt statistisches Profiling erstmals offiziell.",
+      "title_en": "Economists propose statistical employability profiling for Spain's employment agencies",
+      "description_en": "Economists Florentino Felgueroso, José Ignacio García-Pérez and Sergi Jiménez-Martín publish a 'perfilado estadistico' model with the Fundación Ramón Areces: an econometric model estimates new job seekers' employability from individual characteristics such as gender, age and education in order to target active labour-market policy more precisely. Spain's 2017-2020 Activation Strategy for Employment is the first official document to mention statistical profiling."
     },
     {
-      "date": "2021",
+      "date": "2021-03",
       "phase": "doctrine",
-      "title": "Investigativrecherchen und NGO-Berichte decken Diskriminierung auf",
-      "description": "Das investigative Datenjournalismusprojekt Civio und das Algorithm Audit Collective veröffentlichen Analysen, die zeigen, dass der SEPE-Algorithmus Frauen, Personen mit Migrationshintergrund und Arbeitnehmer über 50 Jahren systematisch schlechter bewertet. Diese Gruppen erhalten weniger intensive Beratung und werden seltener auf höherqualifizierte Stellen vermittelt. Das Ministerium für Arbeit reagiert zunächst mit Schweigen.",
-      "sources": [],
-      "title_de": "Investigativrecherchen und NGO-Berichte decken Diskriminierung auf",
-      "description_de": "Das investigative Datenjournalismusprojekt Civio und das Algorithm Audit Collective veröffentlichen Analysen, die zeigen, dass der SEPE-Algorithmus Frauen, Personen mit Migrationshintergrund und Arbeitnehmer über 50 Jahren systematisch schlechter bewertet. Diese Gruppen erhalten weniger intensive Beratung und werden seltener auf höherqualifizierte Stellen vermittelt. Das Ministerium für Arbeit reagiert zunächst mit Schweigen.",
-      "title_en": "Investigations and NGO reports expose discrimination",
-      "description_en": "The investigative data-journalism project Civio and the Algorithm Audit Collective publish analyses showing that the SEPE algorithm systematically rates women, people with migrant backgrounds, and workers over 50 lower. These groups receive less intensive counseling and are less frequently matched to higher-qualified positions. The Ministry of Labor initially responds with silence."
+      "title": "Fachleute warnen vor Diskriminierung durch Algorithmen bei Jobsuche und Sozialleistungen",
+      "description": "Die spanische Zeitung Público berichtet, dass Algorithmen zunehmend mitentscheiden, wer öffentliche Hilfen erhält oder eingestellt wird, und dabei aus historischen Daten Verzerrungen nach Geschlecht, Herkunft und sozialer Klasse übernehmen können. Die befragten Fachleute fordern mehr Transparenz, um solche Verzerrungen erkennen und korrigieren zu können.",
+      "sources": ["https://www.publico.es/ciencias/algoritmos-y-sesgos-genero-raza.html"],
+      "title_de": "Fachleute warnen vor Diskriminierung durch Algorithmen bei Jobsuche und Sozialleistungen",
+      "description_de": "Die spanische Zeitung Público berichtet, dass Algorithmen zunehmend mitentscheiden, wer öffentliche Hilfen erhält oder eingestellt wird, und dabei aus historischen Daten Verzerrungen nach Geschlecht, Herkunft und sozialer Klasse übernehmen können. Die befragten Fachleute fordern mehr Transparenz, um solche Verzerrungen erkennen und korrigieren zu können.",
+      "title_en": "Experts warn of algorithmic discrimination in job searches and social benefits",
+      "description_en": "The Spanish newspaper Público reports that algorithms increasingly help decide who receives public assistance or gets hired, and that they can reproduce biases by gender, origin and social class learned from historical data. The experts interviewed call for more transparency so that such biases can be detected and corrected."
     },
     {
-      "date": "2022",
+      "date": "2021-06",
+      "phase": "infrastructure",
+      "title": "SEPE führt KI-gestütztes Profiling-Werkzeug Send@ ein",
+      "description": "Der staatliche Arbeitsvermittlungsdienst SEPE stellt Beratungskräften in den Arbeitsämtern der autonomen Gemeinschaften das KI-gestützte Profiling-Werkzeug Send@ bereit, das auf Basis der Daten ähnlicher Arbeitssuchender Empfehlungen zur Verbesserung der Beschäftigbarkeit berechnet. Laut SEPE sind im Juni 2021 rund 600 Beratungskräfte geschult und das Werkzeug wurde bereits bei etwa 7.000 Arbeitssuchenden eingesetzt; das Projekt erhält den @aslan-Preis für Automatisierung.",
+      "sources": ["https://www.sepe.es/HomeSepe/que-es-el-sepe/comunicacion-institucional/noticias/detalle-noticia?folder=%2FSEPE%2F2021%2FJunio%2F&detail=Premio-de-Automatizacion-y-Eficiencia-aslan-2021-al-Servicio-Publico-de-Empleo-Estatal-sepe-por-la-aplicacion-Senda", "https://aslan.es/senda-perfilado-automatico/"],
+      "title_de": "SEPE führt KI-gestütztes Profiling-Werkzeug Send@ ein",
+      "description_de": "Der staatliche Arbeitsvermittlungsdienst SEPE stellt Beratungskräften in den Arbeitsämtern der autonomen Gemeinschaften das KI-gestützte Profiling-Werkzeug Send@ bereit, das auf Basis der Daten ähnlicher Arbeitssuchender Empfehlungen zur Verbesserung der Beschäftigbarkeit berechnet. Laut SEPE sind im Juni 2021 rund 600 Beratungskräfte geschult und das Werkzeug wurde bereits bei etwa 7.000 Arbeitssuchenden eingesetzt; das Projekt erhält den @aslan-Preis für Automatisierung.",
+      "title_en": "SEPE introduces AI-based profiling tool Send@",
+      "description_en": "The state employment service SEPE provides counsellors in the regional employment offices with the AI-based profiling tool Send@, which calculates recommendations for improving employability from data on similar job seekers. According to SEPE, by June 2021 around 600 counsellors had been trained and the tool had already been used with about 7,000 job seekers; the project wins the @aslan award for automation."
+    },
+    {
+      "date": "2022-03",
       "phase": "event",
-      "title": "Offizielles Audit bestätigt Bias, EU-Datenschutzbehörde ermittelt",
-      "description": "Das spanische Ministerium für Arbeit und Sozialwirtschaft beauftragt ein offizielles Audit des SEPE-Algorithmus. Die Prüfung bestätigt die dokumentierten Voreingenommenheiten und stellt fest, dass das System Merkmale wie Geburtsort und Geschlecht als implizite Einflussfaktoren enthält. Die spanische Datenschutzbehörde AEPD leitet eine Untersuchung ein. Das System wird vorübergehend eingeschränkt.",
-      "sources": [],
-      "title_de": "Offizielles Audit bestätigt Bias, EU-Datenschutzbehörde ermittelt",
-      "description_de": "Das spanische Ministerium für Arbeit und Sozialwirtschaft beauftragt ein offizielles Audit des SEPE-Algorithmus. Die Prüfung bestätigt die dokumentierten Voreingenommenheiten und stellt fest, dass das System Merkmale wie Geburtsort und Geschlecht als implizite Einflussfaktoren enthält. Die spanische Datenschutzbehörde AEPD leitet eine Untersuchung ein. Das System wird vorübergehend eingeschränkt.",
-      "title_en": "Official audit confirms bias, European data protection authority investigates",
-      "description_en": "The Spanish Ministry of Labor and Social Economy commissions an official audit of the SEPE algorithm. The review confirms the documented biases and finds that the system includes features such as place of birth and gender as implicit input factors. The Spanish data protection authority AEPD opens an investigation. The system is temporarily restricted."
+      "title": "Andalusisches Arbeitsamt SAE startet Profiling mit sensiblen Daten",
+      "description": "Am 1. März 2022 beginnt der Servicio Andaluz de Empleo (SAE) in einer Pilotphase in drei Büros in Sevilla und Cádiz mit einem statistischen Profiling-Werkzeug, das die kurz-, mittel- und langfristige Beschäftigbarkeit einzelner Arbeitssuchender schätzt; Anfang 2025 kündigt das SAE die Ausweitung auf 32 Büros an. Laut dem offiziellen Datenverarbeitungsregister verarbeitet 'SAE-Perfilado Estadístico' neben Geschlecht auch besonders geschützte Daten zu Behinderung und ethnischer Zugehörigkeit. Das Register nennt die Datenkategorien, nicht aber deren Gewichtung im Modell.",
+      "sources": ["https://www.juntadeandalucia.es/organismos/sae/servicios/actualidad/noticias/detalle/280901.html", "https://www.juntadeandalucia.es/organismos/sae/servicios/actualidad/noticias/detalle/552223.html", "https://www.juntadeandalucia.es/protecciondedatos/detalle/236324.html"],
+      "title_de": "Andalusisches Arbeitsamt SAE startet Profiling mit sensiblen Daten",
+      "description_de": "Am 1. März 2022 beginnt der Servicio Andaluz de Empleo (SAE) in einer Pilotphase in drei Büros in Sevilla und Cádiz mit einem statistischen Profiling-Werkzeug, das die kurz-, mittel- und langfristige Beschäftigbarkeit einzelner Arbeitssuchender schätzt; Anfang 2025 kündigt das SAE die Ausweitung auf 32 Büros an. Laut dem offiziellen Datenverarbeitungsregister verarbeitet 'SAE-Perfilado Estadístico' neben Geschlecht auch besonders geschützte Daten zu Behinderung und ethnischer Zugehörigkeit. Das Register nennt die Datenkategorien, nicht aber deren Gewichtung im Modell.",
+      "title_en": "Andalusian employment agency SAE launches profiling using sensitive data",
+      "description_en": "On 1 March 2022 the Servicio Andaluz de Empleo (SAE) starts piloting a statistical profiling tool in three offices in Seville and Cadiz that estimates individual job seekers' short-, medium- and long-term employability; in early 2025 the SAE announces its extension to 32 offices. According to the official data-processing register, 'SAE-Perfilado Estadistico' processes sex as well as specially protected data on disability and ethnicity. The register lists the data categories, but not how they are weighted in the model."
     },
     {
-      "date": "2023",
+      "date": "2025-03",
       "phase": "consequences",
-      "title": "Reformbemühungen und Europäisches KI-Gesetz als Impulsgeber",
-      "description": "Spanien überarbeitet das SEPE-System und verpflichtet sich zu größerer Transparenz. Der Fall wird in den Verhandlungen zum EU AI Act als Beispiel für hochriskante KI-Anwendungen im Bereich Beschäftigung zitiert. Das neue System muss regelmäßige Bias-Audits durchlaufen. Betroffene erhalten theoretisch das Recht auf Erklärung ihrer Einstufung, obwohl die praktische Umsetzung lückenhaft bleibt.",
-      "sources": [],
-      "title_de": "Reformbemühungen und Europäisches KI-Gesetz als Impulsgeber",
-      "description_de": "Spanien überarbeitet das SEPE-System und verpflichtet sich zu größerer Transparenz. Der Fall wird in den Verhandlungen zum EU AI Act als Beispiel für hochriskante KI-Anwendungen im Bereich Beschäftigung zitiert. Das neue System muss regelmäßige Bias-Audits durchlaufen. Betroffene erhalten theoretisch das Recht auf Erklärung ihrer Einstufung, obwohl die praktische Umsetzung lückenhaft bleibt.",
-      "title_en": "Reform efforts and the EU AI Act as catalyst",
-      "description_en": "Spain overhauls the SEPE system and commits to greater transparency. The case is cited in the EU AI Act negotiations as an example of high-risk AI applications in employment. The new system must undergo regular bias audits. Affected individuals theoretically gain the right to an explanation of their classification, although practical implementation remains patchy."
+      "title": "Koalition IA Ciudadana fordert zentrales Algorithmen-Register",
+      "description": "Die zivilgesellschaftliche Koalition IA Ciudadana, ein Zusammenschluss von 17 Organisationen, darunter Civio, mit Amnesty International Spanien als einer der Beobachterinnen, veröffentlicht im März 2025 einen Bericht mit zwölf Empfehlungen und fordert von der spanischen Regierung ein verpflichtendes, transparentes zentrales Register für die algorithmischen Systeme der öffentlichen Verwaltung, um algorithmische Diskriminierung zu verhindern. Die Koalition verweist darauf, dass Polizei, Justiz und Arbeitsverwaltung bereits automatisierte Verfahren nutzen.",
+      "sources": ["https://civio.es/novedades/2025/03/14/registro-de-algoritmos-ia-transparencia-espana/", "https://iaciudadana.org/2025/03/17/la-coalicion-ia-ciudadana-pide-al-gobierno-un-registro-central-de-algoritmos-transparente-para-evitar-discriminaciones-de-la-inteligencia-artificial/"],
+      "title_de": "Koalition IA Ciudadana fordert zentrales Algorithmen-Register",
+      "description_de": "Die zivilgesellschaftliche Koalition IA Ciudadana, ein Zusammenschluss von 17 Organisationen, darunter Civio, mit Amnesty International Spanien als einer der Beobachterinnen, veröffentlicht im März 2025 einen Bericht mit zwölf Empfehlungen und fordert von der spanischen Regierung ein verpflichtendes, transparentes zentrales Register für die algorithmischen Systeme der öffentlichen Verwaltung, um algorithmische Diskriminierung zu verhindern. Die Koalition verweist darauf, dass Polizei, Justiz und Arbeitsverwaltung bereits automatisierte Verfahren nutzen.",
+      "title_en": "Coalition IA Ciudadana calls for a central algorithm registry",
+      "description_en": "The civil-society coalition IA Ciudadana, an alliance of 17 organizations including Civio, with Amnesty International Spain as one of its observers, publishes a report with twelve recommendations in March 2025, calling on the Spanish government to create a mandatory, transparent central registry of the algorithmic systems used by public administration in order to prevent algorithmic discrimination. The coalition points out that police, justice and employment services already use automated procedures."
     }
   ],
   "asm:sources": [
@@ -141,12 +152,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": true,
-    "humanVerified": false
+    "humanVerified": false,
+    "asm:correctionNote": "Title corrected 2026-09-26: the original title claimed proven discrimination against women and migrants by a SEPE algorithm, which is not documented; it now describes the verified employability profiling at SEPE and SAE and the resulting discrimination concerns. Slug unchanged for permalink stability."
   },
-  "name_de": "Spanien: Algorithmus des Arbeitsamts SEPE diskriminiert Frauen und Migranten bei Stellenvermittlung",
-  "name_en": "Spain: SEPE employment-service algorithm discriminates against women and migrants in job placement",
-  "description_de": "Der spanische öffentliche Arbeitsvermittlungsdienst SEPE (Servicio Público de Empleo Estatal) setzte einen Algorithmus zur Zuweisung von Arbeitslosen zu Beschäftigungsprogrammen ein, der nachweislich Frauen, Einwanderer und ältere Arbeitnehmer benachteiligte. Der Algorithmus klassifizierte Arbeitssuchende nach 'Beschäftigbarkeit' und verteilte Beratungsressourcen entsprechend. Systemische Voreingenommenheit wurde erst durch externe Audits aufgedeckt. Der Fall ist einer der ersten dokumentierten Fälle algorithmischer Diskriminierung durch eine europäische Behörde.",
-  "description_en": "The Spanish public employment service SEPE (Servicio Público de Empleo Estatal) deployed an algorithm to assign unemployed individuals to employment programs that demonstrably disadvantaged women, immigrants, and older workers. The algorithm classified job seekers by 'employability' and allocated counseling resources accordingly. Systemic bias was only uncovered through external audits. The case is one of the first documented cases of algorithmic discrimination by a European public authority.",
+  "name_de": "Spanien: Beschäftigbarkeits-Profiling der Arbeitsämter SEPE und SAE weckt Diskriminierungsbedenken",
+  "name_en": "Spain: Employability profiling at employment agencies SEPE and SAE raises discrimination concerns",
+  "description_de": "Der spanische staatliche Arbeitsvermittlungsdienst SEPE (Servicio Público de Empleo Estatal) setzt seit 2021 das KI-gestützte Profiling-Werkzeug Send@ ein, das andalusische Arbeitsamt SAE seit 2022 ein statistisches Profiling-Werkzeug, das Arbeitssuchende nach geschätzter 'Beschäftigbarkeit' einstuft und laut offiziellem Datenverarbeitungsregister auch Geschlecht, Behinderung und ethnische Zugehörigkeit verarbeitet. Das Register nennt die Datenkategorien, nicht aber deren Gewichtung im Modell. Fachleute warnen seit 2021 vor algorithmischer Diskriminierung in Beschäftigungs- und Sozialverfahren; 2025 fordert die Koalition IA Ciudadana ein verpflichtendes zentrales Register der Algorithmen der öffentlichen Verwaltung.",
+  "description_en": "Spain's state employment service SEPE (Servicio Publico de Empleo Estatal) has used the AI-based profiling tool Send@ since 2021, and Andalusia's employment agency SAE has used a statistical profiling tool since 2022 that classifies job seekers by estimated 'employability' and, according to the official data-processing register, also processes sex, disability and ethnicity. The register lists the data categories, but not how they are weighted in the model. Experts have warned since 2021 of algorithmic discrimination in employment and social-benefit procedures; in 2025 the coalition IA Ciudadana calls for a mandatory central registry of public-administration algorithms.",
   "asm:affectedRights_de": [
     "Recht auf Arbeit",
     "Recht auf Gleichbehandlung",

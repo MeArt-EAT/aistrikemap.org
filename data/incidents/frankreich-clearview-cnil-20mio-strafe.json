@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/frankreich-clearview-cnil-20mio-strafe",
   "name": "Frankreich: CNIL verhängt 20-Mio.-Euro-DSGVO-Höchststrafe gegen Clearview AI",
-  "description": "Am 17. Oktober 2022 verhängte die französische Datenschutzbehörde CNIL die maximal mögliche DSGVO-Strafe von 20 Millionen Euro gegen das US-Unternehmen Clearview AI wegen rechtswidriger Gesichtserkennungs-Datenbank. Clearview hatte über 30 Milliarden Gesichtsbilder aus dem öffentlichen Internet ohne Einwilligung gesammelt und Strafverfolgungsbehörden als Suchwerkzeug angeboten. Clearview hatte zuvor formelle Aufforderungen der CNIL ignoriert und reagierte auch auf die Strafe nicht - woraufhin die CNIL 2023 zusätzlich 5,2 Millionen Euro Zwangsgeld verhängte. Der Fall ist Präzedenzfall für DSGVO-Durchsetzung gegen Drittland-Unternehmen.",
+  "description": "Am 17. Oktober 2022 verhängte die französische Datenschutzbehörde CNIL die von ihr als Höchststrafe bezeichnete DSGVO-Strafe von 20 Millionen Euro gegen das US-Unternehmen Clearview AI wegen seiner rechtswidrigen Gesichtserkennungs-Datenbank. Clearview hatte laut CNIL weltweit mehr als 20 Milliarden Gesichtsbilder aus dem öffentlichen Internet ohne Einwilligung gesammelt und Strafverfolgungsbehörden als Suchwerkzeug angeboten. Clearview hatte zuvor formelle Aufforderungen der CNIL ignoriert und reagierte auch auf die Strafe nicht - woraufhin die CNIL 2023 zusätzlich 5,2 Millionen Euro Zwangsgeld verhängte. Der Fall gehört zu einer Reihe europäischer Verfahren, in denen Datenschutzbehörden - vor Frankreich bereits Italien und Griechenland - die DSGVO gegen ein Unternehmen ohne EU-Niederlassung durchsetzen.",
   "startDate": "2020-05",
   "location": {
     "@type": "Place",
@@ -63,22 +63,28 @@
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2020-05",
+      "date": "2020-05 bis 2021-05",
       "phase": "infrastructure",
       "title": "Erste Beschwerden bei der CNIL",
-      "description": "Die CNIL erhält ab Mai 2020 erste Beschwerden von Personen, die festgestellt haben, dass ihre Fotos ohne Einwilligung in Clearviews Gesichtserkennungs-Datenbank aufgenommen wurden. Parallel dazu reichen Privacy International und andere NGOs koordinierte Beschwerden in mehreren EU-Ländern ein.",
-      "sources": [],
+      "description": "Ab Mai 2020 erhält die CNIL Beschwerden von Einzelpersonen über Clearviews Gesichtserkennungs-Software und leitet eine Untersuchung ein. Im Mai 2021 weist auch Privacy International die CNIL auf die Praxis hin: Ein Bündnis aus Privacy International, noyb, Hermes Center und Homo Digitalis reicht Beschwerden bei den Datenschutzbehörden in Frankreich, Österreich, Italien, Griechenland und Großbritannien ein.",
+      "sources": [
+        "https://www.cnil.fr/en/facial-recognition-cnil-orders-clearview-ai-stop-reusing-photographs-available-internet",
+        "https://noyb.eu/en/digital-rights-alliance-file-legal-complaints-against-facial-recognition-company-clearview-ai"
+      ],
       "title_de": "Erste Beschwerden bei der CNIL",
       "title_en": "First complaints filed with the CNIL",
-      "description_de": "Die CNIL erhält ab Mai 2020 erste Beschwerden von Personen, die festgestellt haben, dass ihre Fotos ohne Einwilligung in Clearviews Gesichtserkennungs-Datenbank aufgenommen wurden. Parallel dazu reichen Privacy International und andere NGOs koordinierte Beschwerden in mehreren EU-Ländern ein.",
-      "description_en": "Starting in May 2020, the CNIL receives initial complaints from individuals who discovered that their photos had been added to Clearview's facial recognition database without consent. In parallel, Privacy International and other NGOs file coordinated complaints across several EU countries."
+      "description_de": "Ab Mai 2020 erhält die CNIL Beschwerden von Einzelpersonen über Clearviews Gesichtserkennungs-Software und leitet eine Untersuchung ein. Im Mai 2021 weist auch Privacy International die CNIL auf die Praxis hin: Ein Bündnis aus Privacy International, noyb, Hermes Center und Homo Digitalis reicht Beschwerden bei den Datenschutzbehörden in Frankreich, Österreich, Italien, Griechenland und Großbritannien ein.",
+      "description_en": "From May 2020 the CNIL receives complaints from individuals about Clearview's facial recognition software and opens an investigation. In May 2021 Privacy International also alerts the CNIL to the practice: an alliance of Privacy International, noyb, Hermes Center and Homo Digitalis files complaints with the data protection authorities of France, Austria, Italy, Greece and the United Kingdom."
     },
     {
       "date": "2021-11-26",
       "phase": "doctrine",
       "title": "CNIL setzt formelle Frist zur Einhaltung",
       "description": "Die CNIL erlässt eine formelle 'Mise en Demeure' (Inverzugsetzung) und fordert Clearview AI auf, die Erfassung und Verwendung von Daten in Frankreich einzustellen, Betroffenenrechte zu ermöglichen und Löschanträge umzusetzen. Clearview hat zwei Monate Zeit zu reagieren - antwortet aber nicht.",
-      "sources": [],
+      "sources": [
+        "https://www.cnil.fr/en/facial-recognition-cnil-orders-clearview-ai-stop-reusing-photographs-available-internet",
+        "https://techcrunch.com/2021/12/16/clearview-gdpr-breaches-france/"
+      ],
       "title_de": "CNIL setzt formelle Frist zur Einhaltung",
       "title_en": "CNIL sets formal compliance deadline",
       "description_de": "Die CNIL erlässt eine formelle 'Mise en Demeure' (Inverzugsetzung) und fordert Clearview AI auf, die Erfassung und Verwendung von Daten in Frankreich einzustellen, Betroffenenrechte zu ermöglichen und Löschanträge umzusetzen. Clearview hat zwei Monate Zeit zu reagieren - antwortet aber nicht.",
@@ -88,23 +94,43 @@
       "date": "2022-10-17",
       "phase": "event",
       "title": "20 Millionen Euro Höchststrafe",
-      "description": "Die eingeschränkte Kammer der CNIL verhängt eine Strafe von 20 Millionen Euro - die maximal mögliche DSGVO-Strafe nach Artikel 83. Die festgestellten Verstöße: rechtswidrige Verarbeitung personenbezogener Daten ohne Rechtsgrundlage (Art. 6 DSGVO), Nichteinhaltung von Auskunfts- und Löschrechten (Art. 12, 15, 17). Zudem wird Clearview angewiesen, alle Daten französischer Bürger binnen zwei Monaten zu löschen, mit 100.000 Euro Zwangsgeld pro Tag bei Nichteinhaltung.",
-      "sources": [],
+      "description": "Die eingeschränkte Kammer der CNIL verhängt eine Strafe von 20 Millionen Euro, die die CNIL selbst als finanzielle Höchststrafe bezeichnet. Die festgestellten Verstöße: rechtswidrige Verarbeitung personenbezogener Daten ohne Rechtsgrundlage (Art. 6 DSGVO), Missachtung der Auskunfts- und Löschrechte (Art. 12, 15, 17) und fehlende Kooperation mit der Behörde (Art. 31). Clearview muss binnen zwei Monaten aufhören, Daten von Personen in Frankreich ohne Rechtsgrundlage zu erheben, und die bereits erfassten Daten löschen; danach droht ein Zwangsgeld von 100.000 Euro pro Tag Verzug. Clearview-Chef Hoan Ton-That erklärt gegenüber AFP, das Unternehmen habe weder Niederlassung noch Kunden in Frankreich oder der EU und unterliege nicht der DSGVO.",
+      "sources": [
+        "https://www.cnil.fr/en/facial-recognition-20-million-euros-penalty-against-clearview-ai",
+        "https://www.biometricupdate.com/202210/clearview-denies-jurisdiction-of-french-regulator-in-response-to-e20m-fine"
+      ],
       "title_de": "20 Millionen Euro Höchststrafe",
       "title_en": "20 million euro maximum penalty",
-      "description_de": "Die eingeschränkte Kammer der CNIL verhängt eine Strafe von 20 Millionen Euro - die maximal mögliche DSGVO-Strafe nach Artikel 83. Die festgestellten Verstöße: rechtswidrige Verarbeitung personenbezogener Daten ohne Rechtsgrundlage (Art. 6 DSGVO), Nichteinhaltung von Auskunfts- und Löschrechten (Art. 12, 15, 17). Zudem wird Clearview angewiesen, alle Daten französischer Bürger binnen zwei Monaten zu löschen, mit 100.000 Euro Zwangsgeld pro Tag bei Nichteinhaltung.",
-      "description_en": "The CNIL's restricted committee imposes a fine of 20 million euros - the maximum GDPR penalty under Article 83. The violations established: unlawful processing of personal data without a legal basis (Art. 6 GDPR), failure to comply with rights of access and erasure (Arts. 12, 15, 17). Clearview is also ordered to delete all data of French citizens within two months, with a penalty payment of 100,000 euros per day for non-compliance."
+      "description_de": "Die eingeschränkte Kammer der CNIL verhängt eine Strafe von 20 Millionen Euro, die die CNIL selbst als finanzielle Höchststrafe bezeichnet. Die festgestellten Verstöße: rechtswidrige Verarbeitung personenbezogener Daten ohne Rechtsgrundlage (Art. 6 DSGVO), Missachtung der Auskunfts- und Löschrechte (Art. 12, 15, 17) und fehlende Kooperation mit der Behörde (Art. 31). Clearview muss binnen zwei Monaten aufhören, Daten von Personen in Frankreich ohne Rechtsgrundlage zu erheben, und die bereits erfassten Daten löschen; danach droht ein Zwangsgeld von 100.000 Euro pro Tag Verzug. Clearview-Chef Hoan Ton-That erklärt gegenüber AFP, das Unternehmen habe weder Niederlassung noch Kunden in Frankreich oder der EU und unterliege nicht der DSGVO.",
+      "description_en": "The CNIL's restricted committee imposes a fine of 20 million euros, which the CNIL itself describes as the maximum financial penalty. The violations established: unlawful processing of personal data without a legal basis (Art. 6 GDPR), disregard of the rights of access and erasure (Arts. 12, 15, 17) and failure to cooperate with the authority (Art. 31). Within two months Clearview must stop collecting data on people in France without a legal basis and delete the data already collected; after that, a penalty payment of 100,000 euros per day of delay applies. Clearview CEO Hoan Ton-That tells AFP that the company has no place of business or customers in France or the EU and is not subject to the GDPR."
     },
     {
-      "date": "2023-05",
+      "date": "2023-04-13",
       "phase": "consequences",
-      "title": "Zusätzliches Zwangsgeld + globale Wirkung",
-      "description": "Da Clearview AI weiterhin keine Maßnahmen ergreift, verhängt die CNIL im Mai 2023 zusätzlich ein Zwangsgeld von 5,2 Millionen Euro. Clearview bestreitet die Zuständigkeit der CNIL, da das Unternehmen keinen Sitz in der EU habe. Die EU-Mitgliedstaaten folgen mit weiteren Strafen: Italien (20 Mio. €), Griechenland (20 Mio. €), Niederlande (30,5 Mio. €), UK (7,5 Mio. £). Der Fall etabliert, dass DSGVO Drittland-Unternehmen erfasst, sobald sie EU-Bürgerdaten verarbeiten - auch ohne EU-Niederlassung.",
-      "sources": [],
-      "title_de": "Zusätzliches Zwangsgeld + globale Wirkung",
-      "title_en": "Additional penalty payment and global impact",
-      "description_de": "Da Clearview AI weiterhin keine Maßnahmen ergreift, verhängt die CNIL im Mai 2023 zusätzlich ein Zwangsgeld von 5,2 Millionen Euro. Clearview bestreitet die Zuständigkeit der CNIL, da das Unternehmen keinen Sitz in der EU habe. Die EU-Mitgliedstaaten folgen mit weiteren Strafen: Italien (20 Mio. €), Griechenland (20 Mio. €), Niederlande (30,5 Mio. €), UK (7,5 Mio. £). Der Fall etabliert, dass DSGVO Drittland-Unternehmen erfasst, sobald sie EU-Bürgerdaten verarbeiten - auch ohne EU-Niederlassung.",
-      "description_en": "As Clearview AI continues to take no remedial action, the CNIL imposes an additional penalty payment of 5.2 million euros in May 2023. Clearview disputes the CNIL's jurisdiction, arguing the company has no establishment in the EU. EU member states follow with further fines: Italy (20 million euros), Greece (20 million euros), Netherlands (30.5 million euros), UK (7.5 million pounds). The case establishes that the GDPR applies to non-EU companies whenever they process the data of EU citizens - even without an EU presence."
+      "title": "Zusätzliches Zwangsgeld von 5,2 Millionen Euro",
+      "description": "Weil Clearview AI innerhalb der gesetzten Frist keinen Nachweis über die Umsetzung der Anordnung vorlegt, beschließt die CNIL am 13. April 2023 ein Zwangsgeld von 5,2 Millionen Euro und gibt dies am 10. Mai 2023 bekannt.",
+      "sources": [
+        "https://www.edpb.europa.eu/news/national-news/2023/facial-recognition-french-sa-imposes-penalty-payment-clearview-ai_en",
+        "https://techcrunch.com/2023/05/10/clearview-ai-another-cnil-gspr-fine/"
+      ],
+      "title_de": "Zusätzliches Zwangsgeld von 5,2 Millionen Euro",
+      "title_en": "Additional penalty payment of 5.2 million euros",
+      "description_de": "Weil Clearview AI innerhalb der gesetzten Frist keinen Nachweis über die Umsetzung der Anordnung vorlegt, beschließt die CNIL am 13. April 2023 ein Zwangsgeld von 5,2 Millionen Euro und gibt dies am 10. Mai 2023 bekannt.",
+      "description_en": "Because Clearview AI provides no proof of compliance with the order within the deadline, the CNIL decides on 13 April 2023 to impose an overdue penalty payment of 5.2 million euros and announces it on 10 May 2023."
+    },
+    {
+      "date": "2024-09-03",
+      "phase": "consequences",
+      "title": "Weitere europäische Strafen gegen Clearview",
+      "description": "Die niederländische Datenschutzbehörde verhängt 30,5 Millionen Euro gegen Clearview AI - die bis dahin höchste DSGVO-Strafe gegen das Unternehmen - und droht zusätzliche Zwangsgelder von bis zu 5,1 Millionen Euro an. Frankreich war nicht die erste Behörde: Schon vor der CNIL hatten Italien (20 Millionen Euro, März 2022) und Griechenland (20 Millionen Euro, Juli 2022) Strafen in gleicher Höhe verhängt. Die europäischen Behörden wenden die DSGVO damit wiederholt auf ein US-Unternehmen ohne EU-Niederlassung an.",
+      "sources": [
+        "https://techcrunch.com/2024/09/03/clearview-ai-hit-with-its-largest-gdpr-fine-yet-as-dutch-regulator-considers-holding-execs-personally-liable/",
+        "https://noyb.eu/en/second-eu-20-mio-fine-clearview-ai"
+      ],
+      "title_de": "Weitere europäische Strafen gegen Clearview",
+      "title_en": "Further European fines against Clearview",
+      "description_de": "Die niederländische Datenschutzbehörde verhängt 30,5 Millionen Euro gegen Clearview AI - die bis dahin höchste DSGVO-Strafe gegen das Unternehmen - und droht zusätzliche Zwangsgelder von bis zu 5,1 Millionen Euro an. Frankreich war nicht die erste Behörde: Schon vor der CNIL hatten Italien (20 Millionen Euro, März 2022) und Griechenland (20 Millionen Euro, Juli 2022) Strafen in gleicher Höhe verhängt. Die europäischen Behörden wenden die DSGVO damit wiederholt auf ein US-Unternehmen ohne EU-Niederlassung an.",
+      "description_en": "The Dutch data protection authority fines Clearview AI 30.5 million euros - the largest GDPR fine against the company so far - and threatens additional penalty payments of up to 5.1 million euros. France was not the first authority: before the CNIL, Italy (20 million euros, March 2022) and Greece (20 million euros, July 2022) had already imposed fines of the same size. European authorities thus repeatedly apply the GDPR to a US company without an EU establishment."
     }
   ],
   "asm:sources": [
@@ -163,8 +189,8 @@
   },
   "name_de": "Frankreich: CNIL verhängt 20-Mio.-Euro-DSGVO-Höchststrafe gegen Clearview AI",
   "name_en": "France: CNIL imposes maximum 20-million-euro GDPR penalty on Clearview AI",
-  "description_de": "Am 17. Oktober 2022 verhängte die französische Datenschutzbehörde CNIL die maximal mögliche DSGVO-Strafe von 20 Millionen Euro gegen das US-Unternehmen Clearview AI wegen rechtswidriger Gesichtserkennungs-Datenbank. Clearview hatte über 30 Milliarden Gesichtsbilder aus dem öffentlichen Internet ohne Einwilligung gesammelt und Strafverfolgungsbehörden als Suchwerkzeug angeboten. Clearview hatte zuvor formelle Aufforderungen der CNIL ignoriert und reagierte auch auf die Strafe nicht - woraufhin die CNIL 2023 zusätzlich 5,2 Millionen Euro Zwangsgeld verhängte. Der Fall ist Präzedenzfall für DSGVO-Durchsetzung gegen Drittland-Unternehmen.",
-  "description_en": "On 17 October 2022, the French data protection authority CNIL imposed the maximum possible GDPR penalty of 20 million euros on US company Clearview AI for its unlawful facial recognition database. Clearview had collected over 30 billion facial images from the public internet without consent and offered them to law enforcement agencies as a search tool. Clearview had previously ignored formal demands from the CNIL and did not respond to the fine either - leading the CNIL to impose an additional 5.2 million euro penalty payment in 2023. The case is a precedent for GDPR enforcement against non-EU companies.",
+  "description_de": "Am 17. Oktober 2022 verhängte die französische Datenschutzbehörde CNIL die von ihr als Höchststrafe bezeichnete DSGVO-Strafe von 20 Millionen Euro gegen das US-Unternehmen Clearview AI wegen seiner rechtswidrigen Gesichtserkennungs-Datenbank. Clearview hatte laut CNIL weltweit mehr als 20 Milliarden Gesichtsbilder aus dem öffentlichen Internet ohne Einwilligung gesammelt und Strafverfolgungsbehörden als Suchwerkzeug angeboten. Clearview hatte zuvor formelle Aufforderungen der CNIL ignoriert und reagierte auch auf die Strafe nicht - woraufhin die CNIL 2023 zusätzlich 5,2 Millionen Euro Zwangsgeld verhängte. Der Fall gehört zu einer Reihe europäischer Verfahren, in denen Datenschutzbehörden - vor Frankreich bereits Italien und Griechenland - die DSGVO gegen ein Unternehmen ohne EU-Niederlassung durchsetzen.",
+  "description_en": "On 17 October 2022, the French data protection authority CNIL imposed a GDPR fine of 20 million euros, which it described as the maximum penalty, on US company Clearview AI for its unlawful facial recognition database. According to the CNIL, Clearview had collected more than 20 billion facial images worldwide from the public internet without consent and offered them to law enforcement agencies as a search tool. Clearview had previously ignored formal demands from the CNIL and did not respond to the fine either - leading the CNIL to impose an additional 5.2 million euro penalty payment in 2023. The case is one of a series of European proceedings in which data protection authorities - Italy and Greece before France - enforce the GDPR against a company without an EU establishment.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Recht auf Datenschutz",

@@ -3,7 +3,10 @@
  * validate-timelines.js — Pre-Commit-Validator fuer Reverse-Timelines.
  *
  * Kapselt die ueber 45 Wellen erprobten Pflicht-Checks vor jedem TL-Commit:
- *   - asm:reverseTimeline vorhanden, 4-6 Eintraege, genau 1 event-Phase
+ *   - asm:reverseTimeline vorhanden, 4-6 Eintraege, mind. 1 event-Phase
+ *   - Phasen-Reihenfolge kausal: keine consequences vor dem ersten event,
+ *     keine infrastructure/doctrine nach dem letzten event (Details: siehe
+ *     checkPhaseOrder)
  *   - title === title_de, description === description_de pro Eintrag
  *   - Chronologie strikt aufsteigend INKL. monat-genau-vor-tag-genau desselben
  *     Monats (z.B. consequence "2024-05" darf nicht VOR event "2024-05-08" stehen)
@@ -153,6 +156,39 @@ function cmpDate(a, b) {
   return cmpCommonGranularity(A.start, B.start);
 }
 
+// --- Phasen-Reihenfolge ---
+// Die Reverse-Timeline erzaehlt eine Kausalkette: Vorbedingung (infrastructure,
+// doctrine) -> Vorfall (event) -> Folgen (consequences). Frueher galt "genau 1
+// event". Das kollidierte mit der Chronologie-Regel: Ein mehrstufiger Vorfall
+// (Festnahme + Urteil, Leak + Bussgeld) braucht mehrere events, und sobald eine
+// Doktrin zwischen zwei Stufen datiert, verschraenken sich die Phasen zwangs-
+// laeufig. 117 Files bildeten das korrekt ab und scheiterten trotzdem.
+//
+// Deshalb gilt jetzt:
+//   - mindestens 1 event
+//   - vor dem ERSTEN event: nur infrastructure/doctrine (keine Folge ohne Vorfall)
+//   - nach dem LETZTEN event: nur consequences (keine Vorbedingung ohne Vorfall)
+//   - zwischen erstem und letztem event: alles erlaubt (mehrstufiger Vorfall)
+// infrastructure und doctrine bilden einen gemeinsamen Vorbedingungs-Block ohne
+// feste Reihenfolge untereinander - ein Gesetz kann aelter sein als das System,
+// das es spaeter legitimiert. Dort entscheidet allein die Chronologie.
+function checkPhaseOrder(tl) {
+  const errors = [];
+  const first = tl.findIndex(e => e.phase === 'event');
+  if (first === -1) return ['keine event-Phase (mind. 1 erwartet)'];
+  let last = first;
+  tl.forEach((e, i) => { if (e.phase === 'event') last = i; });
+  tl.forEach((e, i) => {
+    if (e.phase === 'consequences' && i < first) {
+      errors.push(`Phasen-Reihenfolge: consequences [${i}] ${e.date} vor dem ersten event [${first}] ${tl[first].date}`);
+    }
+    if ((e.phase === 'infrastructure' || e.phase === 'doctrine') && i > last) {
+      errors.push(`Phasen-Reihenfolge: ${e.phase} [${i}] ${e.date} nach dem letzten event [${last}] ${tl[last].date}`);
+    }
+  });
+  return errors;
+}
+
 function findSmartChars(node, pathStr, hits) {
   if (typeof node === 'string') {
     for (const ch of node) {
@@ -215,13 +251,17 @@ function validateFile(slug, file, mapKeys) {
     if (tl.length < 4) errors.push(`nur ${tl.length} TL-Eintraege (min 4)`);
     if (tl.length > 6) errors.push(`${tl.length} TL-Eintraege (max 6)`);
 
-    const events = tl.filter(e => e.phase === 'event');
-    if (events.length !== 1) errors.push(`${events.length} event-Phasen (genau 1 erwartet)`);
+    checkPhaseOrder(tl).forEach(e => errors.push(e));
     const VALID_PHASES = new Set(['infrastructure', 'doctrine', 'event', 'consequences']);
     tl.forEach((e, i) => {
       if (!VALID_PHASES.has(e.phase)) errors.push(`Eintrag ${i}: unbekannte Phase "${e.phase}"`);
       if (e.title !== e.title_de) errors.push(`Eintrag ${i}: title !== title_de`);
       if (e.description !== e.description_de) errors.push(`Eintrag ${i}: description !== description_de`);
+      (e.sources || []).forEach((u, k) => {
+        // Umlaute in einer Quellen-URL stammen praktisch immer aus einer
+        // Transliterations-Korrektur, die den Link zerstört hat
+        if (typeof u === 'string' && /[äöüÄÖÜß]/.test(u)) errors.push(`Eintrag ${i}: Umlaut in Quellen-URL [${k}] (vermutlich zerstört): ${u.slice(0, 80)}`);
+      });
       const pd = parseDate(e.date);
       if (pd === null) errors.push(`Eintrag ${i}: ungueltiges Datum "${e.date}"`);
       else if (pd.isRange && cmpParts(pd.start, pd.end) > 0) {

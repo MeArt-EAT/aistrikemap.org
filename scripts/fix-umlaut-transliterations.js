@@ -178,7 +178,7 @@ const FIX_MAP = {
   // Weitere häufige Transliterationen
   'turkei': 'türkei',
   'tuerkei': 'türkei',
-  'lander': 'länder',
+  // 'lander' bewusst NICHT: Eigenname (z.B. NYC-Comptroller Brad Lander)
   'laender': 'länder',
   'prufen': 'prüfen',
   'pruefen': 'prüfen',
@@ -194,9 +194,10 @@ const FIX_MAP = {
   'aehnlichen': 'ähnlichen',
   'ahnlicher': 'ähnlicher',
   'aehnlicher': 'ähnlicher',
-  'falle': 'fälle',
+  // 'falle'/'fallen' bewusst NICHT: Beides sind echte Wörter (Falle, fallen).
+  // Die Umlaut-los-Form hat hier "unter das Verbot fallen" korpusweit zu
+  // "fällen" verfälscht. Nur die eindeutige ae-Schreibung wird ersetzt.
   'faelle': 'fälle',
-  'fallen': 'fällen',
   'faellen': 'fällen',
   'aufgespurt': 'aufgespürt',
   'aufgespuert': 'aufgespürt',
@@ -573,6 +574,10 @@ function preserveCase(original, replacement) {
 
 function fixString(text) {
   if (typeof text !== 'string' || !text) return { text, changed: 0 };
+  // URLs nie anfassen: Quellen-Arrays in asm:reverseTimeline sind reine
+  // Strings ohne 'url'-Key und fielen durch den Feldnamen-Schutz. Das hat
+  // korpusweit 31 Links zerstört (lto.de/.../hintergründe, grüne-fraktion-…).
+  if (/^https?:\/\//i.test(text.trim())) return { text, changed: 0 };
   let changed = 0;
   let out = text.replace(FIX_RE, (match) => {
     const corrected = FIX_MAP[match.toLowerCase()];

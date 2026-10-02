@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/neuseeland-ki-wohlfahrt-algorithmus",
-  "name": "Neuseeland: Vorhersagealgorithmus im Sozialwesen diskriminiert Maori",
-  "description": "Das neuseeländische Ministerium für Soziale Entwicklung (MSD) setzte ab 2012 einen Risikobewertungsalgorithmus ein, der die Wahrscheinlichkeit von Sozialhilfebetrug und Kindeswohlgefahrdung vorhersagen sollte. Untersuchungen zeigten, dass der Algorithmus Maori und Pazifikinsulaner überproportional als Hochrisikofälle markierte und damit bestehende soziale Ungleichheiten algorithmisch verstärkte. Kritik führte zur Einführung einer freiwilligen Algorithm Charter, deren Wirksamkeit jedoch umstritten bleibt.",
+  "name": "Neuseeland: Vorhersagealgorithmus zur Kindeswohlgefährdung benachteiligte Maori-Kinder",
+  "description": "Das neuseeländische Ministerium für Soziale Entwicklung (MSD) entwickelte ab 2012 zusammen mit Forschenden der University of Auckland ein statistisches Risikomodell (Predictive Risk Model), das anhand historischer Sozialleistungs- und Kinderschutzdaten das Risiko einer Kindeswohlgefährdung vorhersagen sollte. Laut einem Kabinettspapier von 2014 stufte das Modell in der retrospektiven Testung Maori-Kinder überproportional als Hochrisikofälle ein. Ein geplanter Praxistest an 60.000 Neugeborenen wurde 2015 nach öffentlicher Kritik von der damaligen Ministerin gestoppt, das Modell kam nie operativ zum Einsatz. Der Oranga-Tamariki-Fall von 2019 verschärfte die Debatte über die Benachteiligung von Maori im Kinderschutz; 2020 veröffentlichte die Regierung die freiwillige Algorithm Charter für staatliche Algorithmen, deren Umsetzung eine Überprüfung als verbesserungsbedürftig bewertete.",
   "startDate": "2012",
   "location": {
     "@type": "Place",
@@ -52,46 +52,85 @@
     {
       "date": "2012",
       "phase": "infrastructure",
-      "title": "Einführung des Risikobewertungsalgorithmus",
-      "description": "Das MSD entwickelt und implementiert ein statistisches Risikobewertungssystem, das basierend auf historischen Sozialdaten vorhersagen soll, welche Familien einem hohen Betrugsrisiko oder Kindeswohlgefahrdungen ausgesetzt sind. Der Algorithmus nutzt Faktoren wie ethnische Zugehörigkeit, Einkommenshistorie und Familienstruktur. Maori und Pazifikinsulaner werden systematisch höher eingestuft, was auf strukturell verzerrte Trainingsdaten hinweist.",
-      "sources": [],
-      "title_de": "Einführung des Risikobewertungsalgorithmus",
-      "description_de": "Das MSD entwickelt und implementiert ein statistisches Risikobewertungssystem, das basierend auf historischen Sozialdaten vorhersagen soll, welche Familien einem hohen Betrugsrisiko oder Kindeswohlgefahrdungen ausgesetzt sind. Der Algorithmus nutzt Faktoren wie ethnische Zugehörigkeit, Einkommenshistorie und Familienstruktur. Maori und Pazifikinsulaner werden systematisch höher eingestuft, was auf strukturell verzerrte Trainingsdaten hinweist.",
-      "title_en": "Introduction of the risk assessment algorithm",
-      "description_en": "The MSD develops and deploys a statistical risk assessment system intended to predict, based on historical welfare data, which families are at high risk of benefit fraud or child welfare endangerment. The algorithm uses factors such as ethnicity, income history, and family structure. Māori and Pacific Islanders are systematically rated higher, indicating structurally biased training data."
+      "title": "MSD und University of Auckland entwickeln Risikomodell",
+      "description": "Das MSD beauftragt Forschende der University of Auckland (u.a. Rhema Vaithianathan), anhand verknüpfter Sozialleistungs- und Kinderschutzdaten von Kindern der Jahrgänge 2003-2006 ein Predictive Risk Model zu entwickeln. Das Modell mit 132 Variablen erreicht in der retrospektiven Testung eine AUC von 76 Prozent. Unter den 5 Prozent der Kinder mit den höchsten Risikoscores sind 69 Prozent Maori, unter den bis zum Alter von zwei Jahren tatsächlich misshandelten Kindern dagegen 61 Prozent - das Modell überschätzt das Risiko von Maori-Kindern.",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S0749379713003449",
+        "https://imprintnews.org/featured/new-zealand-crunches-big-data-to-prevent-child-abuse/10824"
+      ],
+      "title_de": "MSD und University of Auckland entwickeln Risikomodell",
+      "description_de": "Das MSD beauftragt Forschende der University of Auckland (u.a. Rhema Vaithianathan), anhand verknüpfter Sozialleistungs- und Kinderschutzdaten von Kindern der Jahrgänge 2003-2006 ein Predictive Risk Model zu entwickeln. Das Modell mit 132 Variablen erreicht in der retrospektiven Testung eine AUC von 76 Prozent. Unter den 5 Prozent der Kinder mit den höchsten Risikoscores sind 69 Prozent Maori, unter den bis zum Alter von zwei Jahren tatsächlich misshandelten Kindern dagegen 61 Prozent - das Modell überschätzt das Risiko von Maori-Kindern.",
+      "title_en": "MSD and University of Auckland develop risk model",
+      "description_en": "The MSD commissions researchers at the University of Auckland (including Rhema Vaithianathan) to develop a Predictive Risk Model using linked benefit and child-protection data on children born 2003-2006. The 132-variable model reaches an AUC of 76 percent in retrospective testing. Among the 5 percent of children with the highest risk scores, 69 percent are Māori, compared with 61 percent among children actually maltreated by age two - the model overstates the risk for Māori children."
     },
     {
-      "date": "2018",
+      "date": "2014",
       "phase": "doctrine",
-      "title": "Öffentliche Kritik und akademische Untersuchungen",
-      "description": "Forscher und Bürgerrechtsgruppen veröffentlichen Analysen, die zeigen, wie der Algorithmus historische Diskriminierungsmuster verstärkt. Das MSD bestreitet zunächst Verzerrungen. Datenschutzexperten kritisieren mangelnde Transparenz und fehlende Erklärbarkeit der Entscheidungen. Betroffene Familien haben keine praktische Möglichkeit, die algorithmischen Bewertungen anzufechten.",
-      "sources": [],
-      "title_de": "Öffentliche Kritik und akademische Untersuchungen",
-      "description_de": "Forscher und Bürgerrechtsgruppen veröffentlichen Analysen, die zeigen, wie der Algorithmus historische Diskriminierungsmuster verstärkt. Das MSD bestreitet zunächst Verzerrungen. Datenschutzexperten kritisieren mangelnde Transparenz und fehlende Erklärbarkeit der Entscheidungen. Betroffene Familien haben keine praktische Möglichkeit, die algorithmischen Bewertungen anzufechten.",
-      "title_en": "Public criticism and academic studies",
-      "description_en": "Researchers and civil rights groups publish analyses showing how the algorithm amplifies historical patterns of discrimination. The MSD initially denies the bias. Data protection experts criticize the lack of transparency and the lack of explainability of decisions. Affected families have no practical means of challenging the algorithmic assessments."
+      "title": "MSD plant Praxistest an 60.000 Neugeborenen",
+      "description": "Im November 2014 beantragt das MSD bei einer Ethikkommission die Genehmigung für eine Beobachtungsstudie: Rund 60.000 im Jahr 2015 geborene Kinder sollen anhand des Modells risikobewertet und zwei Jahre lang beobachtet werden, um die Prognosegenauigkeit zu prüfen. Ein dem Antrag beigefügtes Gutachten des Statistikers Nevil Pierse (University of Otago) empfiehlt, die Studie zu stoppen.",
+      "sources": [
+        "https://www.odt.co.nz/news/national/call-to-stop-child-abuse-risk-modelling-study-p23p4wij"
+      ],
+      "title_de": "MSD plant Praxistest an 60.000 Neugeborenen",
+      "description_de": "Im November 2014 beantragt das MSD bei einer Ethikkommission die Genehmigung für eine Beobachtungsstudie: Rund 60.000 im Jahr 2015 geborene Kinder sollen anhand des Modells risikobewertet und zwei Jahre lang beobachtet werden, um die Prognosegenauigkeit zu prüfen. Ein dem Antrag beigefügtes Gutachten des Statistikers Nevil Pierse (University of Otago) empfiehlt, die Studie zu stoppen.",
+      "title_en": "MSD plans live trial on 60,000 newborns",
+      "description_en": "In November 2014 the MSD applies to an ethics committee for approval of an observational study: around 60,000 children born in 2015 would be risk-scored using the model and followed for two years to test its predictive accuracy. A review by statistician Nevil Pierse (University of Otago) accompanying the application recommends stopping the study."
     },
     {
-      "date": "2020",
+      "date": "2015",
       "phase": "event",
-      "title": "Neuseeland veröffentlicht freiwillige Algorithm Charter",
-      "description": "Die neuseeländische Regierung veröffentlicht eine freiwillige 'Algorithm Charter', die staatliche Behörden zu Transparenz, Fairnessprüfungen und erklärbaren Entscheidungen verpflichten soll. 21 Behörden unterzeichnen die Charta. Kritiker bezeichnen die Maßnahme als unzureichend, da sie keine Durchsetzungsmechanismen enthält und die Untzeichnung freiwillig bleibt.",
-      "sources": [],
-      "title_de": "Neuseeland veröffentlicht freiwillige Algorithm Charter",
-      "description_de": "Die neuseeländische Regierung veröffentlicht eine freiwillige 'Algorithm Charter', die staatliche Behörden zu Transparenz, Fairnessprüfungen und erklärbaren Entscheidungen verpflichten soll. 21 Behörden unterzeichnen die Charta. Kritiker bezeichnen die Maßnahme als unzureichend, da sie keine Durchsetzungsmechanismen enthält und die Untzeichnung freiwillig bleibt.",
-      "title_en": "New Zealand publishes voluntary Algorithm Charter",
-      "description_en": "The New Zealand government publishes a voluntary 'Algorithm Charter' intended to commit state agencies to transparency, fairness reviews, and explainable decisions. 21 agencies sign on. Critics call the measure inadequate, as it contains no enforcement mechanisms and signing remains voluntary."
+      "title": "Ministerin stoppt den geplanten Praxistest",
+      "description": "Sozialministerin Anne Tolley stoppt die Beobachtungsstudie; auf den Unterlagen notiert sie handschriftlich 'not on my watch, these are children not lab rats'. Die Entscheidung wird im Juli 2015 öffentlich; das Predictive Risk Model wird nie zur operativen Einstufung realer Familien eingesetzt.",
+      "sources": [
+        "https://www.stuff.co.nz/national/health/70647353/children-not-lab-rats---anne-tolley-intervenes-in-child-abuse-experiment",
+        "https://www.nzherald.co.nz/nz/anne-tolley-scraps-lab-rat-study-on-children/C7GIGYW2467HG327FKXFRJDPEM/"
+      ],
+      "title_de": "Ministerin stoppt den geplanten Praxistest",
+      "description_de": "Sozialministerin Anne Tolley stoppt die Beobachtungsstudie; auf den Unterlagen notiert sie handschriftlich 'not on my watch, these are children not lab rats'. Die Entscheidung wird im Juli 2015 öffentlich; das Predictive Risk Model wird nie zur operativen Einstufung realer Familien eingesetzt.",
+      "title_en": "Minister halts the planned live trial",
+      "description_en": "Social Development Minister Anne Tolley halts the observational study, writing by hand on the documents: 'not on my watch, these are children not lab rats.' The decision becomes public in July 2015; the Predictive Risk Model is never used to operationally classify real families."
     },
     {
-      "date": "2023",
+      "date": "2019",
+      "phase": "event",
+      "title": "Oranga-Tamariki-Fall macht Benachteiligung von Maori öffentlich",
+      "description": "Im Juni 2019 veröffentlicht Newsroom ein Video der versuchten Wegnahme ('Uplift') eines eine Woche alten Babys einer Maori-Mutter im Krankenhaus von Hawke's Bay durch die Kinderschutzbehörde Oranga Tamariki. Der Fall löst mehrere Untersuchungen aus; der Bericht 'Te Kuku o te Manawa' des Kinderbeauftragten stellt 2020 fest, dass Maori-Babys unter drei Monaten fünfmal häufiger vom Staat in Obhut genommen werden als nicht-Maori-Babys.",
+      "sources": [
+        "https://newsroom.co.nz/inquiry-turn-child-protection-over-to-maori",
+        "https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12300758"
+      ],
+      "title_de": "Oranga-Tamariki-Fall macht Benachteiligung von Maori öffentlich",
+      "description_de": "Im Juni 2019 veröffentlicht Newsroom ein Video der versuchten Wegnahme ('Uplift') eines eine Woche alten Babys einer Maori-Mutter im Krankenhaus von Hawke's Bay durch die Kinderschutzbehörde Oranga Tamariki. Der Fall löst mehrere Untersuchungen aus; der Bericht 'Te Kuku o te Manawa' des Kinderbeauftragten stellt 2020 fest, dass Maori-Babys unter drei Monaten fünfmal häufiger vom Staat in Obhut genommen werden als nicht-Maori-Babys.",
+      "title_en": "Oranga Tamariki case exposes disadvantaging of Māori",
+      "description_en": "In June 2019 Newsroom publishes a video of the attempted 'uplift' of a week-old baby from a Māori mother at Hawke's Bay Hospital by child-protection agency Oranga Tamariki. The case triggers several inquiries; in 2020 the Children's Commissioner's report 'Te Kuku o te Manawa' finds that Māori babies under three months old are five times more likely to be taken into state care than non-Māori babies."
+    },
+    {
+      "date": "2020-07",
       "phase": "consequences",
-      "title": "Anhaltende Bedenken und ungenügend geänderte Praxis",
-      "description": "Berichte des NZ Privacy Commissioner zeigen, dass viele Behörden die Charta-Anforderungen nicht vollständig umsetzen. Maori-Organisationen berichten von anhaltender algorithmischer Diskriminierung in Wohlfahrts- und Bildungsentscheidungen. Ein verbindliches KI-Regulierungsgesetz ist in Beratung. Die systematische Benachteiligung von Maori durch datenbasierte Systeme bleibt ein anerkanntes, aber ungenügend adressiertes Problem.",
-      "sources": [],
-      "title_de": "Anhaltende Bedenken und ungenügend geänderte Praxis",
-      "description_de": "Berichte des NZ Privacy Commissioner zeigen, dass viele Behörden die Charta-Anforderungen nicht vollständig umsetzen. Maori-Organisationen berichten von anhaltender algorithmischer Diskriminierung in Wohlfahrts- und Bildungsentscheidungen. Ein verbindliches KI-Regulierungsgesetz ist in Beratung. Die systematische Benachteiligung von Maori durch datenbasierte Systeme bleibt ein anerkanntes, aber ungenügend adressiertes Problem.",
-      "title_en": "Persistent concerns and insufficiently changed practice",
-      "description_en": "Reports by the NZ Privacy Commissioner show that many agencies do not fully implement the Charter's requirements. Māori organizations report continued algorithmic discrimination in welfare and education decisions. A binding AI regulation bill is under consideration. The systematic disadvantage of Māori through data-driven systems remains a recognized but inadequately addressed problem."
+      "title": "Neuseeland veröffentlicht freiwillige Algorithm Charter",
+      "description": "Aufbauend auf einer Bestandsaufnahme staatlicher Algorithmen von 2018 veröffentlicht die Regierung am 28. Juli 2020 die freiwillige 'Algorithm Charter for Aotearoa New Zealand'. 21 Behörden unterzeichnen die Charta, die sie unter anderem verpflichtet, algorithmisch gestützte Entscheidungen zu erklären und eine Maori-Perspektive (Te Ao Maori) einzubeziehen. Die Charta ist rechtlich nicht bindend.",
+      "sources": [
+        "https://www.beehive.govt.nz/release/new-algorithm-charter-world-first",
+        "https://www.loc.gov/item/global-legal-monitor/2020-07-31/new-zealand-government-launches-charter-on-use-of-algorithms-by-public-agencies/"
+      ],
+      "title_de": "Neuseeland veröffentlicht freiwillige Algorithm Charter",
+      "description_de": "Aufbauend auf einer Bestandsaufnahme staatlicher Algorithmen von 2018 veröffentlicht die Regierung am 28. Juli 2020 die freiwillige 'Algorithm Charter for Aotearoa New Zealand'. 21 Behörden unterzeichnen die Charta, die sie unter anderem verpflichtet, algorithmisch gestützte Entscheidungen zu erklären und eine Maori-Perspektive (Te Ao Maori) einzubeziehen. Die Charta ist rechtlich nicht bindend.",
+      "title_en": "New Zealand publishes voluntary Algorithm Charter",
+      "description_en": "Building on a 2018 stocktake of government algorithms, the government publishes the voluntary 'Algorithm Charter for Aotearoa New Zealand' on 28 July 2020. 21 agencies sign the charter, which commits them, among other things, to explain how algorithms inform decisions and to embed a Māori perspective (Te Ao Māori). The charter is not legally binding."
+    },
+    {
+      "date": "2021-12",
+      "phase": "consequences",
+      "title": "Unabhängige Überprüfung: Fortschritte, aber offene Fragen zu Bias",
+      "description": "Eine von Taylor Fry im Dezember 2021 abgeschlossene unabhängige Überprüfung des ersten Jahres der Algorithm Charter bewertet sie mit 'okay, could do better': Die unterzeichnenden Behörden unterstützen die Ziele, empfinden die Charta in der Praxis aber als vage und haben oft nicht die Ressourcen, sie umzusetzen. Empfohlen werden unter anderem besserer Informationsaustausch und regelmäßige Berichte über die erfassten Algorithmen.",
+      "sources": [
+        "https://www.rnz.co.nz/news/national/475011/government-s-algorithm-charter-okay-could-do-better-review",
+        "https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter"
+      ],
+      "title_de": "Unabhängige Überprüfung: Fortschritte, aber offene Fragen zu Bias",
+      "description_de": "Eine von Taylor Fry im Dezember 2021 abgeschlossene unabhängige Überprüfung des ersten Jahres der Algorithm Charter bewertet sie mit 'okay, could do better': Die unterzeichnenden Behörden unterstützen die Ziele, empfinden die Charta in der Praxis aber als vage und haben oft nicht die Ressourcen, sie umzusetzen. Empfohlen werden unter anderem besserer Informationsaustausch und regelmäßige Berichte über die erfassten Algorithmen.",
+      "title_en": "Independent review: progress, but open questions on bias",
+      "description_en": "An independent review of the Algorithm Charter's first year, completed by Taylor Fry in December 2021, rates it 'okay, could do better': signatory agencies support its aims but find it vague in practice and often lack the resources to implement it. Recommendations include better information sharing and periodic reporting on the algorithms covered."
     }
   ],
   "asm:sources": [
@@ -141,12 +180,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": true,
-    "humanVerified": false
+    "humanVerified": false,
+    "asm:correctionNote": "Title corrected 2026-09-26: the 2012 predictive risk model was tested only on historical data and a planned 2015 live pilot on newborns was cancelled before deployment, so the original present-tense claim that the algorithm 'discriminates' was replaced with the verified finding that it disadvantaged Māori children in testing. Slug unchanged for permalink stability."
   },
-  "name_de": "Neuseeland: Vorhersagealgorithmus im Sozialwesen diskriminiert Maori",
-  "name_en": "New Zealand: welfare predictive algorithm discriminates against Māori",
-  "description_de": "Das neuseeländische Ministerium für Soziale Entwicklung (MSD) setzte ab 2012 einen Risikobewertungsalgorithmus ein, der die Wahrscheinlichkeit von Sozialhilfebetrug und Kindeswohlgefahrdung vorhersagen sollte. Untersuchungen zeigten, dass der Algorithmus Maori und Pazifikinsulaner überproportional als Hochrisikofälle markierte und damit bestehende soziale Ungleichheiten algorithmisch verstärkte. Kritik führte zur Einführung einer freiwilligen Algorithm Charter, deren Wirksamkeit jedoch umstritten bleibt.",
-  "description_en": "From 2012, the New Zealand Ministry of Social Development (MSD) deployed a risk assessment algorithm intended to predict the likelihood of welfare fraud and child welfare endangerment. Investigations showed that the algorithm disproportionately flagged Māori and Pacific Islanders as high-risk cases, thereby algorithmically reinforcing existing social inequalities. Criticism led to the introduction of a voluntary Algorithm Charter, whose effectiveness remains disputed.",
+  "name_de": "Neuseeland: Vorhersagealgorithmus zur Kindeswohlgefährdung benachteiligte Maori-Kinder",
+  "name_en": "New Zealand: child-welfare predictive algorithm disadvantaged Māori children",
+  "description_de": "Das neuseeländische Ministerium für Soziale Entwicklung (MSD) entwickelte ab 2012 zusammen mit Forschenden der University of Auckland ein statistisches Risikomodell (Predictive Risk Model), das anhand historischer Sozialleistungs- und Kinderschutzdaten das Risiko einer Kindeswohlgefährdung vorhersagen sollte. Laut einem Kabinettspapier von 2014 stufte das Modell in der retrospektiven Testung Maori-Kinder überproportional als Hochrisikofälle ein. Ein geplanter Praxistest an 60.000 Neugeborenen wurde 2015 nach öffentlicher Kritik von der damaligen Ministerin gestoppt, das Modell kam nie operativ zum Einsatz. Der Oranga-Tamariki-Fall von 2019 verschärfte die Debatte über die Benachteiligung von Maori im Kinderschutz; 2020 veröffentlichte die Regierung die freiwillige Algorithm Charter für staatliche Algorithmen, deren Umsetzung eine Überprüfung als verbesserungsbedürftig bewertete.",
+  "description_en": "From 2012, the New Zealand Ministry of Social Development (MSD), together with researchers at the University of Auckland, developed a statistical Predictive Risk Model intended to forecast the risk of child welfare endangerment using historical benefit and child-protection data. According to a 2014 Cabinet paper, the model over-identified Māori children as high-risk in retrospective testing. A planned live trial on 60,000 newborns was halted by the then-minister in 2015 after public criticism, and the model was never used operationally. The 2019 Oranga Tamariki case sharpened the debate over the disadvantaging of Māori in child protection; in 2020 the government published the voluntary Algorithm Charter for government algorithms, whose implementation a review judged in need of improvement.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Schutz vor Diskriminierung",
