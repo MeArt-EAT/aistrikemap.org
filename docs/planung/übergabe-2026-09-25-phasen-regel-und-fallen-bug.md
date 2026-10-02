@@ -292,3 +292,49 @@ Kein Agent hat ohne WebSearch bestätigt.
 **Endstand:** Validator 2453/2453 ohne ERROR, Audit 0, 0 Smart-Chars,
 0 Timelines ohne Quellen, 569/10.966 einzelne TL-Einträge ohne Quelle
 (vorher 943).
+
+---
+
+## Nachtrag 3 (2026-10-02): Einzelquellen-Wellen 1-4
+
+**Auftrag:** weitere 8 % des Wochenkontingents für das Projekt. Front: einzelne
+TL-Einträge ohne Quelle in sonst belegten Timelines.
+
+**Auswahl:** die 24 Files mit den meisten unbelegten Einträgen (5/5/4/4, dann
+alle Sev-5 mit 3, dann Sev-4 bis `iran-ki-hijab-erkennung`), thematisch
+gruppiert (Pegasus, Philippinen/Südostasien, Militär, Shutdowns,
+Gesichtserkennung, Deepfake/Nordkorea/China).
+
+**Ablauf:** 3 parallele Workflows (je 2 Vierergruppen; der Container hat
+4 CPUs -> nur 2 Agenten pro Workflow gleichzeitig) mit Sonnet-Fixer ->
+Prüfer. **Problem:** Das WebSearch-Kontingent (~200) gilt pro Workflow-Lauf;
+die Fixer verbrauchten es, die Prüfer im Workflow hatten keine Suche mehr
+('checked from memory'). Deshalb zweite Prüfrunde mit 6 Einzel-Agenten
+(Agent-Tool, eigenes Kontingent), jede hinzugefügte URL per Suche bestätigt.
+Commit nur nach dieser zweiten Prüfung, je Gruppe explizite Files
+(9909230, b4823ab, 23174db, fef1184).
+
+**Gefundene Fehler (Auswahl):**
+- erfundene Studie (Nordkorea: 'Lumen'/Uni Hamburg), erfundene Zitate
+  (Hugh Nelson 'Präzedenzfall', Indien), nicht auffindbares Armee-Zitat (Mali)
+- falsche Zuordnungen: Irak-Akteur SKYNET (NSA-Programm in Pakistan),
+  Bahrain-Eintrag zur Münchner Strafanzeige 2019 (betraf die Türkei),
+  Mexiko: Citizen-Lab-2016-Quelle war der VAE-Bericht, Bangladesch:
+  Abschaltungen durch NTMC/BTRC, nicht DGFI/NSI
+- Daten: Tibet-Kloster-Scan 09/2023 statt 2024, Südkorea-Gesetz 26.09.2024,
+  Pakistan ISI-Anordnung 8. Juli, Detroit-Klage 2021
+- unbelegter KI-/Gesichtserkennungs-Bezug: Ägypten, China-Journalisten,
+  Bangladesch, NSO ('KI-gestützt') -> Titel (correctionNote), Typen und
+  Akteurssysteme an die Belege angepasst
+- Australien hat Clearview kein Bußgeld auferlegt (nur OAIC-Anordnung)
+
+**Neu verifiziert (aktuell):** UK Supreme Court, Bahrain v Shehabi
+[2026] UKSC 25, 27.07.2026, 3:2 - keine Staatenimmunität bei Spyware.
+
+**Dubletten gemeldet, nicht zusammengelegt:** jordanien-pegasus-journalisten
+<-> jordanien-access-now-citizen-lab-bericht-2024; china-ki-journalisten-
+ueberwachung <-> china-henan-provinz-baut-ki-ueberwachungssystem-... (teilweise).
+
+**Endstand:** Validator 2453/2453 ohne ERROR, Audit 0, 0 Smart-Chars,
+Umlaut-Fixer 0 Ersetzungen, 491 einzelne TL-Einträge ohne Quelle in 312 Files
+(vorher 569). `data/index.json`-Namen/-Typen der 24 Files synchronisiert.
