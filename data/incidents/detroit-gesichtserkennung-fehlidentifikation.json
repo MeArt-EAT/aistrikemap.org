@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/detroit-gesichtserkennung-fehlidentifikation",
   "name": "Detroit: Unrechtmäßige Festnahmen durch Gesichtserkennung",
-  "description": "Die Polizei von Detroit nutzt Gesichtserkennungssoftware, die in mehreren dokumentierten Fällen Schwarze Männer fälschlich identifiziert und zu unrechtmäßigen Festnahmen führt. Robert Williams wird 2020 als erster bekannter Fall eines falschen Gesichtserkennungs-Matches verhaftet. Studien belegen, dass die Fehlerrate bei dunkelhäutigen Personen und Frauen bis zu 100-mal höher ist.",
+  "description": "Die Polizei von Detroit nutzt Gesichtserkennungssoftware, die in mehreren dokumentierten Fällen Schwarze Menschen fälschlich identifiziert und zu unrechtmäßigen Festnahmen führt. Robert Williams wird 2020 verhaftet und gilt als erster bekannt gewordener Fall in den USA, in dem ein falscher Gesichtserkennungs-Treffer zu einer Festnahme führte. Laut einer NIST-Studie von 2019 liegen die Falsch-Positiv-Raten bei vielen Algorithmen für Schwarze und asiatische Gesichter etwa 10- bis 100-mal höher als bei weißen Gesichtern.",
   "startDate": "2017",
   "location": {
     "@type": "Place",
@@ -64,47 +64,84 @@
       "date": "2017",
       "phase": "infrastructure",
       "title": "Detroit führt Gesichtserkennung ein",
-      "description": "Das Detroit Police Department implementiert ein Echtzeit-Gesichtserkennungssystem (Project Green Light), das Überwachungskameras in Geschäften, Tankstellen und öffentlichen Räumen mit einer Datenbank von Fahndungsfotos abgleicht.",
-      "sources": [],
+      "description": "Das Detroit Police Department schließt 2017 einen Dreijahresvertrag über rund 1 Million US-Dollar mit DataWorks Plus für Gesichtserkennungssoftware. Sie wird in das Videoüberwachungsprogramm Project Green Light eingebunden und gleicht Fotos und Videobilder mit Fotodatenbanken ab.",
+      "sources": [
+        "https://www.detroitnews.com/story/news/local/detroit-city/2017/10/30/detroit-police-facial-recognition-software/107166498/",
+        "https://statescoop.com/to-spot-violent-offenders-detroit-police-infuse-facial-recognition-into-criminal-video-monitoring/"
+      ],
       "title_de": "Detroit führt Gesichtserkennung ein",
-      "description_de": "Das Detroit Police Department implementiert ein Echtzeit-Gesichtserkennungssystem (Project Green Light), das Überwachungskameras in Geschäften, Tankstellen und öffentlichen Räumen mit einer Datenbank von Fahndungsfotos abgleicht.",
+      "description_de": "Das Detroit Police Department schließt 2017 einen Dreijahresvertrag über rund 1 Million US-Dollar mit DataWorks Plus für Gesichtserkennungssoftware. Sie wird in das Videoüberwachungsprogramm Project Green Light eingebunden und gleicht Fotos und Videobilder mit Fotodatenbanken ab.",
       "title_en": "Detroit deploys facial recognition",
-      "description_en": "The Detroit Police Department implements a real-time facial recognition system (Project Green Light) that matches feeds from surveillance cameras in stores, gas stations, and public spaces against a database of mugshots."
+      "description_en": "In 2017, the Detroit Police Department signs a three-year contract worth about 1 million US dollars with DataWorks Plus for facial recognition software. It is integrated into the Project Green Light video surveillance program and matches photos and video images against photo databases."
     },
     {
       "date": "2019-12",
       "phase": "doctrine",
-      "title": "NIST-Studie bestätigt rassistischen Bias",
-      "description": "Eine umfassende NIST-Studie testet 189 Gesichtserkennungsalgorithmen und stellt fest: Schwarze und asiatische Gesichter werden bis zu 100-mal häufiger falsch zugeordnet als weiße männliche Gesichter. Die Studie liefert die bislang umfangreichste empirische Grundlage für algorithmische Diskriminierung in der Gesichtserkennung.",
+      "title": "NIST-Studie belegt demografische Verzerrungen",
+      "description": "Eine umfassende NIST-Studie testet 189 Gesichtserkennungsalgorithmen von 99 Entwicklern und stellt fest: Bei Eins-zu-eins-Abgleichen werden Schwarze und asiatische Gesichter je nach Algorithmus etwa 10- bis 100-mal häufiger fälschlich zugeordnet als weiße Gesichter. Die Studie liefert eine breite empirische Grundlage für demografische Unterschiede der Fehlerraten in der Gesichtserkennung.",
       "sources": [
         "https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software"
       ],
-      "title_de": "NIST-Studie bestätigt rassistischen Bias",
-      "description_de": "Eine umfassende NIST-Studie testet 189 Gesichtserkennungsalgorithmen und stellt fest: Schwarze und asiatische Gesichter werden bis zu 100-mal häufiger falsch zugeordnet als weiße männliche Gesichter. Die Studie liefert die bislang umfangreichste empirische Grundlage für algorithmische Diskriminierung in der Gesichtserkennung.",
-      "title_en": "NIST study confirms racial bias",
-      "description_en": "A comprehensive NIST study tests 189 facial recognition algorithms and finds that Black and Asian faces are misidentified up to 100 times more often than white male faces. The study provides the most extensive empirical basis to date for algorithmic discrimination in facial recognition."
+      "title_de": "NIST-Studie belegt demografische Verzerrungen",
+      "description_de": "Eine umfassende NIST-Studie testet 189 Gesichtserkennungsalgorithmen von 99 Entwicklern und stellt fest: Bei Eins-zu-eins-Abgleichen werden Schwarze und asiatische Gesichter je nach Algorithmus etwa 10- bis 100-mal häufiger fälschlich zugeordnet als weiße Gesichter. Die Studie liefert eine breite empirische Grundlage für demografische Unterschiede der Fehlerraten in der Gesichtserkennung.",
+      "title_en": "NIST study documents demographic bias",
+      "description_en": "A comprehensive NIST study tests 189 facial recognition algorithms from 99 developers and finds that in one-to-one matching, Black and Asian faces are misidentified roughly 10 to 100 times more often than white faces, depending on the algorithm. The study provides a broad empirical basis for demographic differences in facial recognition error rates."
     },
     {
       "date": "2020-01",
       "phase": "event",
-      "title": "Robert Williams: Erste dokumentierte Falschfestnahme",
-      "description": "Robert Williams, ein Schwarzer Mann aus Detroit, wird vor den Augen seiner Familie verhaftet und 30 Stunden festgehalten - basierend auf einem falschen Gesichtserkennungs-Match mit einem Überwachungsvideo. Im Verhör zeigen Polizisten ihm das Foto des tatsächlichen Verdächtigen, der ihm kaum ähnlich sieht. Mindestens zwei weitere Schwarze Männer (Michael Oliver, Nijeer Parks) werden nachweislich falsch identifiziert.",
-      "sources": [],
-      "title_de": "Robert Williams: Erste dokumentierte Falschfestnahme",
-      "description_de": "Robert Williams, ein Schwarzer Mann aus Detroit, wird vor den Augen seiner Familie verhaftet und 30 Stunden festgehalten - basierend auf einem falschen Gesichtserkennungs-Match mit einem Überwachungsvideo. Im Verhör zeigen Polizisten ihm das Foto des tatsächlichen Verdächtigen, der ihm kaum ähnlich sieht. Mindestens zwei weitere Schwarze Männer (Michael Oliver, Nijeer Parks) werden nachweislich falsch identifiziert.",
-      "title_en": "Robert Williams: First documented wrongful arrest",
-      "description_en": "Robert Williams, a Black man from Detroit, is arrested in front of his family and held for 30 hours - based on a false facial recognition match with a surveillance video. During questioning, officers show him a photo of the actual suspect, who bears little resemblance to him. At least two more Black men (Michael Oliver, Nijeer Parks) are demonstrably misidentified."
+      "title": "Robert Williams: Falschfestnahme durch Gesichtserkennung",
+      "description": "Robert Williams, ein Schwarzer Mann aus Farmington Hills bei Detroit, wird am 9. Januar 2020 vor den Augen seiner Frau und seiner Töchter verhaftet und rund 30 Stunden festgehalten. Grundlage ist ein falscher Gesichtserkennungs-Treffer zu einem Überwachungsvideo eines Ladendiebstahls. Als ihm Ermittler ein Standbild aus dem Video zeigen, hält er es neben sein Gesicht und sagt, das sei nicht er. Nach Darstellung der ACLU ist sein Fall der erste bekannt gewordene Fall einer Festnahme in den USA aufgrund eines falschen Gesichtserkennungs-Treffers.",
+      "sources": [
+        "https://www.aclu.org/press-releases/man-wrongfully-arrested-because-face-recognition-cant-tell-black-people-apart",
+        "https://www.npr.org/2020/06/24/882683463/the-computer-got-it-wrong-how-facial-recognition-led-to-a-false-arrest-in-michig"
+      ],
+      "title_de": "Robert Williams: Falschfestnahme durch Gesichtserkennung",
+      "description_de": "Robert Williams, ein Schwarzer Mann aus Farmington Hills bei Detroit, wird am 9. Januar 2020 vor den Augen seiner Frau und seiner Töchter verhaftet und rund 30 Stunden festgehalten. Grundlage ist ein falscher Gesichtserkennungs-Treffer zu einem Überwachungsvideo eines Ladendiebstahls. Als ihm Ermittler ein Standbild aus dem Video zeigen, hält er es neben sein Gesicht und sagt, das sei nicht er. Nach Darstellung der ACLU ist sein Fall der erste bekannt gewordene Fall einer Festnahme in den USA aufgrund eines falschen Gesichtserkennungs-Treffers.",
+      "title_en": "Robert Williams: Wrongful arrest through facial recognition",
+      "description_en": "Robert Williams, a Black man from Farmington Hills near Detroit, is arrested on January 9, 2020 in front of his wife and daughters and held for about 30 hours. The basis is a false facial recognition match against surveillance video of a shoplifting. When investigators show him a still from the video, he holds it next to his face and says it is not him. According to the ACLU, his is the first publicly known case in the US of an arrest based on a false facial recognition match."
     },
     {
-      "date": "2023",
+      "date": "2021-04",
       "phase": "consequences",
-      "title": "Verbote und Klagen bundesweit",
-      "description": "Die ACLU reicht Klage im Namen von Robert Williams ein. Mehrere US-Städte (San Francisco, Boston, Portland) verbieten den behördlichen Einsatz von Gesichtserkennung. Detroit verpflichtet sich zu einem Moratorium für Echtzeit-Gesichtserkennung. Der EU AI Act klassifiziert biometrische Echtzeiterkennung im öffentlichen Raum als 'high risk'.",
-      "sources": [],
-      "title_de": "Verbote und Klagen bundesweit",
-      "description_de": "Die ACLU reicht Klage im Namen von Robert Williams ein. Mehrere US-Städte (San Francisco, Boston, Portland) verbieten den behördlichen Einsatz von Gesichtserkennung. Detroit verpflichtet sich zu einem Moratorium für Echtzeit-Gesichtserkennung. Der EU AI Act klassifiziert biometrische Echtzeiterkennung im öffentlichen Raum als 'high risk'.",
-      "title_en": "Bans and lawsuits nationwide",
-      "description_en": "The ACLU files suit on behalf of Robert Williams. Several US cities (San Francisco, Boston, Portland) ban government use of facial recognition. Detroit commits to a moratorium on real-time facial recognition. The EU AI Act classifies real-time biometric identification in public spaces as 'high risk'."
+      "title": "Bundesklage gegen das Detroit Police Department",
+      "description": "Im April 2021 reichen die ACLU, die ACLU of Michigan und die Civil Rights Litigation Initiative der University of Michigan Law School im Namen von Robert Williams eine Bundesklage gegen das Detroit Police Department ein. Sie werfen der Polizei vor, ihn auf Grundlage fehlerhafter Gesichtserkennung unrechtmäßig festgenommen zu haben.",
+      "sources": [
+        "https://www.technologyreview.com/2021/04/14/1022676/robert-williams-facial-recognition-lawsuit-aclu-detroit-police/",
+        "https://www.aclumich.org/press-releases/farmington-hills-father-sues-detroit-police-department-wrongful-arrest-based-faulty/"
+      ],
+      "title_de": "Bundesklage gegen das Detroit Police Department",
+      "description_de": "Im April 2021 reichen die ACLU, die ACLU of Michigan und die Civil Rights Litigation Initiative der University of Michigan Law School im Namen von Robert Williams eine Bundesklage gegen das Detroit Police Department ein. Sie werfen der Polizei vor, ihn auf Grundlage fehlerhafter Gesichtserkennung unrechtmäßig festgenommen zu haben.",
+      "title_en": "Federal lawsuit against the Detroit Police Department",
+      "description_en": "In April 2021, the ACLU, the ACLU of Michigan and the University of Michigan Law School's Civil Rights Litigation Initiative file a federal lawsuit against the Detroit Police Department on behalf of Robert Williams. They allege that the police wrongfully arrested him on the basis of faulty facial recognition."
+    },
+    {
+      "date": "2023-02",
+      "phase": "event",
+      "title": "Porcha Woodruff: Weitere Falschfestnahme in Detroit",
+      "description": "Im Februar 2023 verhaften Detroiter Polizisten die Schwarze, im achten Monat schwangere Porcha Woodruff wegen eines Autoraubs, nachdem eine Gesichtserkennungs-Suche ihr Foto in eine Lichtbildvorlage gebracht hatte. Sie verbringt rund elf Stunden in Haft, die Anklage wird später mangels Beweisen fallen gelassen. Nach Angaben der ACLU Michigan ist sie nach Williams und Michael Oliver (2019) die dritte Person, die in Detroit nach einem falschen Gesichtserkennungs-Treffer verhaftet wurde.",
+      "sources": [
+        "https://www.washingtonpost.com/nation/2023/08/07/michigan-porcha-woodruff-arrest-facial-recognition/",
+        "https://www.michiganpublic.org/criminal-justice-legal-system/2023-08-07/third-person-sues-detroit-police-over-false-arrest-based-on-facial-recognition"
+      ],
+      "title_de": "Porcha Woodruff: Weitere Falschfestnahme in Detroit",
+      "description_de": "Im Februar 2023 verhaften Detroiter Polizisten die Schwarze, im achten Monat schwangere Porcha Woodruff wegen eines Autoraubs, nachdem eine Gesichtserkennungs-Suche ihr Foto in eine Lichtbildvorlage gebracht hatte. Sie verbringt rund elf Stunden in Haft, die Anklage wird später mangels Beweisen fallen gelassen. Nach Angaben der ACLU Michigan ist sie nach Williams und Michael Oliver (2019) die dritte Person, die in Detroit nach einem falschen Gesichtserkennungs-Treffer verhaftet wurde.",
+      "title_en": "Porcha Woodruff: Another wrongful arrest in Detroit",
+      "description_en": "In February 2023, Detroit police arrest Porcha Woodruff, a Black woman who is eight months pregnant, for a carjacking after a facial recognition search put her photo into a photo lineup. She spends about eleven hours in custody, and the charges are later dropped for lack of evidence. According to ACLU Michigan, she is the third person, after Williams and Michael Oliver (2019), to be arrested in Detroit following a false facial recognition match."
+    },
+    {
+      "date": "2024-06",
+      "phase": "consequences",
+      "title": "Vergleich mit strengeren Regeln für die Polizei",
+      "description": "Am 28. Juni 2024 einigen sich Robert Williams und die Stadt Detroit auf einen Vergleich: Die Stadt zahlt 300.000 US-Dollar. Die Polizei muss Gesichtserkennungs-Ergebnisse vor einer Festnahme durch unabhängige, verlässliche Beweise stützen, Beamte werden geschult, und alle Fälle seit 2017, in denen Gesichtserkennung zu einem Haftbefehl führte, werden überprüft.",
+      "sources": [
+        "https://www.aclu.org/press-releases/civil-rights-advocates-achieve-the-nations-strongest-police-department-policy-on-facial-recognition-technology",
+        "https://www.michiganpublic.org/criminal-justice-legal-system/2024-06-28/it-didnt-make-sense-at-all-wrongful-facial-recognition-arrest-leads-to-landmark-settlement"
+      ],
+      "title_de": "Vergleich mit strengeren Regeln für die Polizei",
+      "description_de": "Am 28. Juni 2024 einigen sich Robert Williams und die Stadt Detroit auf einen Vergleich: Die Stadt zahlt 300.000 US-Dollar. Die Polizei muss Gesichtserkennungs-Ergebnisse vor einer Festnahme durch unabhängige, verlässliche Beweise stützen, Beamte werden geschult, und alle Fälle seit 2017, in denen Gesichtserkennung zu einem Haftbefehl führte, werden überprüft.",
+      "title_en": "Settlement with stricter police rules",
+      "description_en": "On June 28, 2024, Robert Williams and the City of Detroit reach a settlement: the city pays 300,000 US dollars. Police must back up facial recognition results with independent, reliable evidence before making an arrest, officers receive training, and all cases since 2017 in which facial recognition led to an arrest warrant are audited."
     }
   ],
   "asm:sources": [
@@ -137,7 +174,7 @@
     "humanVerified": true
   },
   "name_de": "Detroit: Unrechtmäßige Festnahmen durch Gesichtserkennung",
-  "description_de": "Die Polizei von Detroit nutzt Gesichtserkennungssoftware, die in mehreren dokumentierten Fällen Schwarze Männer fälschlich identifiziert und zu unrechtmäßigen Festnahmen führt. Robert Williams wird 2020 als erster bekannter Fall eines falschen Gesichtserkennungs-Matches verhaftet. Studien belegen, dass die Fehlerrate bei dunkelhäutigen Personen und Frauen bis zu 100-mal höher ist.",
+  "description_de": "Die Polizei von Detroit nutzt Gesichtserkennungssoftware, die in mehreren dokumentierten Fällen Schwarze Menschen fälschlich identifiziert und zu unrechtmäßigen Festnahmen führt. Robert Williams wird 2020 verhaftet und gilt als erster bekannt gewordener Fall in den USA, in dem ein falscher Gesichtserkennungs-Treffer zu einer Festnahme führte. Laut einer NIST-Studie von 2019 liegen die Falsch-Positiv-Raten bei vielen Algorithmen für Schwarze und asiatische Gesichter etwa 10- bis 100-mal höher als bei weißen Gesichtern.",
   "asm:affectedRights_de": [
     "Recht auf Freiheit",
     "Recht auf faires Verfahren",
@@ -146,7 +183,7 @@
     "Recht auf Privatsphäre"
   ],
   "name_en": "Detroit: Wrongful arrests through facial recognition",
-  "description_en": "The Detroit police use facial recognition software that has misidentified Black men in several documented cases, leading to wrongful arrests. In 2020, Robert Williams becomes the first known case of an arrest based on a false facial recognition match. Studies show that error rates for darker-skinned individuals and women are up to 100 times higher.",
+  "description_en": "The Detroit police use facial recognition software that has misidentified Black people in several documented cases, leading to wrongful arrests. Robert Williams is arrested in 2020 and is considered the first publicly known case in the US in which a false facial recognition match led to an arrest. According to a 2019 NIST study, false positive rates for many algorithms are roughly 10 to 100 times higher for Black and Asian faces than for white faces.",
   "asm:affectedRights_en": [
     "right to liberty",
     "right to a fair trial",
