@@ -8,9 +8,9 @@
   "name": "Pakistan: China-gestützte Firewall + LIMS - DPI-Massenüberwachung nach Wahl Februar 2024",
   "name_de": "Pakistan: China-gestützte Firewall + LIMS - DPI-Massenüberwachung nach Wahl Februar 2024",
   "name_en": "Pakistan: China-backed firewall + LIMS - DPI mass surveillance after February 2024 election",
-  "description": "Nach der umstrittenen Februar-2024-Wahl ordnete der pakistanische Regulierer alle Telekomanbieter an, das Lawful Intercept Management System (LIMS) zu installieren - Geheimdienste erhalten damit Echtzeit-Zugriff auf Anrufprotokolle, Nachrichten und Browsing. Parallel wurde im Juli/August 2024 das Web Management System auf chinesische Deep-Packet-Inspection-Hardware umgerüstet, das Metadaten auch aus verschlüsselten Verbindungen sammelt und gezielt einzelne Funktionen von Apps blockieren kann (WhatsApp-Voice, X). Al Jazeera, The Register und net4people dokumentieren erhebliche Verlangsamung des landesweiten Internets sowie zielgerichtete Drosselung gegen die Imran-Khan-Opposition.",
-  "description_de": "Nach der umstrittenen Februar-2024-Wahl ordnete der pakistanische Regulierer alle Telekomanbieter an, das Lawful Intercept Management System (LIMS) zu installieren - Geheimdienste erhalten damit Echtzeit-Zugriff auf Anrufprotokolle, Nachrichten und Browsing. Parallel wurde im Juli/August 2024 das Web Management System auf chinesische Deep-Packet-Inspection-Hardware umgerüstet, das Metadaten auch aus verschlüsselten Verbindungen sammelt und gezielt einzelne Funktionen von Apps blockieren kann (WhatsApp-Voice, X). Al Jazeera, The Register und net4people dokumentieren erhebliche Verlangsamung des landesweiten Internets sowie zielgerichtete Drosselung gegen die Imran-Khan-Opposition.",
-  "description_en": "After the contested February 2024 election Pakistan's regulator ordered all telecom operators to install the Lawful Intercept Management System (LIMS) - giving intelligence agencies real-time access to call logs, messages and browsing histories. In parallel, in July/August 2024 the Web Management System was upgraded with Chinese deep-packet-inspection hardware capable of collecting metadata from encrypted connections and selectively blocking individual app features (WhatsApp Voice, X). Al Jazeera, The Register and net4people document significant nationwide slowdowns and targeted throttling against the Imran Khan opposition.",
+  "description": "Pakistan baut seit 2018 ein landesweites System zur Überwachung und Blockierung des Internets auf (Web Management System, WMS). Ab 2023 liefert die chinesische Firma Geedge Networks die Technik für die zweite Generation (WMS 2.0); im Sommer 2024 kommt es zu landesweiten Verlangsamungen. Zudem hat die Telekomregulierungsbehörde PTA die Telekomanbieter verpflichtet, das Lawful Intercept Management System (LIMS) zu installieren - Geheimdienste können damit laut Amnesty International mehr als vier Millionen Mobiltelefone gleichzeitig abhören. Im Juli 2024 ermächtigt die Regierung ISI-Offiziere ausdrücklich zum Abfangen von Anrufen und Nachrichten. Al Jazeera, The Register, net4people und Amnesty International dokumentieren die Systeme, die Internetverlangsamung und die kaum kontrollierte Massenüberwachung.",
+  "description_de": "Pakistan baut seit 2018 ein landesweites System zur Überwachung und Blockierung des Internets auf (Web Management System, WMS). Ab 2023 liefert die chinesische Firma Geedge Networks die Technik für die zweite Generation (WMS 2.0); im Sommer 2024 kommt es zu landesweiten Verlangsamungen. Zudem hat die Telekomregulierungsbehörde PTA die Telekomanbieter verpflichtet, das Lawful Intercept Management System (LIMS) zu installieren - Geheimdienste können damit laut Amnesty International mehr als vier Millionen Mobiltelefone gleichzeitig abhören. Im Juli 2024 ermächtigt die Regierung ISI-Offiziere ausdrücklich zum Abfangen von Anrufen und Nachrichten. Al Jazeera, The Register, net4people und Amnesty International dokumentieren die Systeme, die Internetverlangsamung und die kaum kontrollierte Massenüberwachung.",
+  "description_en": "Since 2018 Pakistan has been building a nationwide system to monitor and block the internet (Web Management System, WMS). From 2023 the Chinese firm Geedge Networks supplies the technology for the second generation (WMS 2.0); in summer 2024 nationwide slowdowns occur. In addition the telecom regulator PTA has obliged telecom operators to install the Lawful Intercept Management System (LIMS) - according to Amnesty International, intelligence agencies can thereby tap more than four million mobile phones at once. In July 2024 the government explicitly authorises ISI officers to intercept calls and messages. Al Jazeera, The Register, net4people and Amnesty International document the systems, the internet slowdown and the barely controlled mass surveillance.",
   "startDate": "2024-07",
   "location": {
     "@type": "Place",
@@ -68,13 +68,13 @@
       "name_en": "Pakistan Telecommunication Authority (PTA)"
     },
     {
-      "name": "Chinese DPI equipment vendor (unverified, replacing Canadian Sandvine)",
+      "name": "Geedge Networks",
       "type": "company",
       "asm:systems": [
-        "Deep Packet Inspection hardware"
+        "Deep Packet Inspection / Firewall (Nachfolger von Sandvine)"
       ],
-      "name_de": "Chinese DPI equipment vendor (unverified, replacing Canadian Sandvine)",
-      "name_en": "Chinese DPI equipment vendor (unverified, replacing Canadian Sandvine)"
+      "name_de": "Geedge Networks",
+      "name_en": "Geedge Networks"
     }
   ],
   "asm:severity": 4,
@@ -83,62 +83,82 @@
     {
       "phase": "infrastructure",
       "date": "2018",
-      "title": "Pakistan installiert Sandvine Web Management System v1",
-      "title_de": "Pakistan installiert Sandvine Web Management System v1",
-      "title_en": "Pakistan installs Sandvine Web Management System v1",
-      "description": "Unter der PTI-Regierung beschafft die Pakistan Telecommunication Authority die erste Generation des Web Management System vom kanadischen Hersteller Sandvine - Grundlage für landesweites URL-Filtering und Drosselung.",
-      "description_de": "Unter der PTI-Regierung beschafft die Pakistan Telecommunication Authority die erste Generation des Web Management System vom kanadischen Hersteller Sandvine - Grundlage für landesweites URL-Filtering und Drosselung.",
-      "description_en": "Under the PTI government, the Pakistan Telecommunication Authority procures the first generation of the Web Management System from Canadian vendor Sandvine - the foundation for nationwide URL filtering and throttling."
+      "title": "Pakistan beschafft Sandvine-Technik für Web Management System v1",
+      "title_de": "Pakistan beschafft Sandvine-Technik für Web Management System v1",
+      "title_en": "Pakistan procures Sandvine technology for Web Management System v1",
+      "description": "Im Dezember 2018 wird ein Vertrag über 18,5 Millionen US-Dollar mit dem kanadischen Hersteller Sandvine für die erste Generation des landesweiten Web Management System (WMS 1.0) geschlossen. Das System ist darauf ausgelegt, den gesamten ein- und ausgehenden Internetverkehr per Deep Packet Inspection zu überwachen und zu analysieren. Auf dieser Hardware baut später die chinesisch gestützte Firewall auf.",
+      "description_de": "Im Dezember 2018 wird ein Vertrag über 18,5 Millionen US-Dollar mit dem kanadischen Hersteller Sandvine für die erste Generation des landesweiten Web Management System (WMS 1.0) geschlossen. Das System ist darauf ausgelegt, den gesamten ein- und ausgehenden Internetverkehr per Deep Packet Inspection zu überwachen und zu analysieren. Auf dieser Hardware baut später die chinesisch gestützte Firewall auf.",
+      "description_en": "In December 2018 a contract worth 18.5 million US dollars is signed with the Canadian vendor Sandvine for the first generation of the nationwide Web Management System (WMS 1.0). The system is designed to monitor and analyse all incoming and outgoing internet traffic via deep packet inspection. The later China-backed firewall builds on this hardware.",
+      "sources": [
+        "https://www.dawn.com/news/1512784",
+        "https://www.amnesty.org/en/latest/news/2025/09/pakistan-mass-surveillance-and-censorship-machine-is-fueled-by-chinese-european-emirati-and-north-american-companies/"
+      ]
     },
     {
       "phase": "infrastructure",
       "date": "2023",
-      "title": "Geedge Networks ersetzt Sandvine durch DPI-Hardware aus China",
-      "title_de": "Geedge Networks ersetzt Sandvine durch DPI-Hardware aus China",
-      "title_en": "Geedge Networks replaces Sandvine with Chinese DPI hardware",
-      "description": "Die chinesische Firma Geedge Networks (mit Bezug zum Cyberspace Administration of China) liefert eine neue Generation Deep-Packet-Inspection-Hardware, die bis zu zwei Millionen aktive Internet-Sessions gleichzeitig blockieren oder verlangsamen kann und auch verschlüsselte Verbindungen klassifiziert.",
-      "description_de": "Die chinesische Firma Geedge Networks (mit Bezug zum Cyberspace Administration of China) liefert eine neue Generation Deep-Packet-Inspection-Hardware, die bis zu zwei Millionen aktive Internet-Sessions gleichzeitig blockieren oder verlangsamen kann und auch verschlüsselte Verbindungen klassifiziert.",
-      "description_en": "Chinese firm Geedge Networks (linked to the Cyberspace Administration of China) supplies a new generation of deep-packet-inspection hardware capable of blocking or slowing up to two million active internet sessions simultaneously and classifying even encrypted connections."
+      "title": "Geedge Networks löst Sandvine als Lieferant der Firewall ab",
+      "title_de": "Geedge Networks löst Sandvine als Lieferant der Firewall ab",
+      "title_en": "Geedge Networks takes over from Sandvine as firewall supplier",
+      "description": "Nachdem der Sandvine-Vertrag laut zwei ISP-Mitarbeitern gegenüber Al Jazeera im November 2023 ausgelaufen ist, baut Pakistan die Firewall mit Technik der chinesischen Firma Geedge Networks aus, die teils auf der bisherigen Sandvine-Hardware aufsetzt. Laut Amnesty International kann dieses System (WMS 2.0) bis zu zwei Millionen aktive Sessions gleichzeitig blockieren; laut Al Jazeera soll die neue Firewall auch den Inlandsverkehr überwachen.",
+      "description_de": "Nachdem der Sandvine-Vertrag laut zwei ISP-Mitarbeitern gegenüber Al Jazeera im November 2023 ausgelaufen ist, baut Pakistan die Firewall mit Technik der chinesischen Firma Geedge Networks aus, die teils auf der bisherigen Sandvine-Hardware aufsetzt. Laut Amnesty International kann dieses System (WMS 2.0) bis zu zwei Millionen aktive Sessions gleichzeitig blockieren; laut Al Jazeera soll die neue Firewall auch den Inlandsverkehr überwachen.",
+      "description_en": "After the Sandvine contract ended (in November 2023, according to two ISP employees speaking to Al Jazeera), Pakistan expands the firewall with technology from the Chinese firm Geedge Networks, partly running on the former Sandvine hardware. According to Amnesty International this system (WMS 2.0) can block up to two million active sessions at once; according to Al Jazeera the new firewall is also meant to monitor domestic traffic.",
+      "sources": [
+        "https://www.aljazeera.com/news/2024/11/26/pakistan-tests-china-like-digital-firewall-to-tighten-online-surveillance",
+        "https://www.amnesty.org/en/latest/news/2025/09/pakistan-mass-surveillance-and-censorship-machine-is-fueled-by-chinese-european-emirati-and-north-american-companies/"
+      ]
     },
     {
       "phase": "doctrine",
-      "date": "2024-02-08",
-      "title": "Wahltag - Internet-Drosselung gegen PTI",
-      "title_de": "Wahltag - Internet-Drosselung gegen PTI",
-      "title_en": "Election day - internet throttling against PTI",
-      "description": "Die OONI dokumentiert am Wahltag systematische Blockaden der PTI-Website, der Kandidatenseiten und des investigativen Mediums Fact Focus. Mobiles Internet wird in mehreren Provinzen abgeschaltet, X (Twitter) ist landesweit gestört.",
-      "description_de": "Die OONI dokumentiert am Wahltag systematische Blockaden der PTI-Website, der Kandidatenseiten und des investigativen Mediums Fact Focus. Mobiles Internet wird in mehreren Provinzen abgeschaltet, X (Twitter) ist landesweit gestört.",
-      "description_en": "OONI documents systematic blocking of the PTI website, candidate pages and the investigative outlet Fact Focus on election day. Mobile internet is shut down in several provinces, X (Twitter) is throttled nationwide."
+      "date": "2024-01 bis 2024-02",
+      "title": "Wahlkampf und Wahltag - Sperren gegen PTI-Seiten, Mobilfunk-Abschaltung",
+      "title_de": "Wahlkampf und Wahltag - Sperren gegen PTI-Seiten, Mobilfunk-Abschaltung",
+      "title_en": "Election campaign and election day - blocks against PTI sites, mobile shutdown",
+      "description": "Die OONI findet zwischen dem 15. Januar und 7. Februar 2024 bei den meisten Messungen Anomalien, die auf eine Blockade der PTI-Webseiten (insaf.pk, pticandidates.com) und des investigativen Portals Fact Focus hindeuten. Am Wahltag, dem 8. Februar, setzt Pakistan die Mobilfunkdienste landesweit aus; das Innenministerium nennt die Terrorgefahr als Grund.",
+      "description_de": "Die OONI findet zwischen dem 15. Januar und 7. Februar 2024 bei den meisten Messungen Anomalien, die auf eine Blockade der PTI-Webseiten (insaf.pk, pticandidates.com) und des investigativen Portals Fact Focus hindeuten. Am Wahltag, dem 8. Februar, setzt Pakistan die Mobilfunkdienste landesweit aus; das Innenministerium nennt die Terrorgefahr als Grund.",
+      "description_en": "Between 15 January and 7 February 2024 OONI finds anomalies in most measurements that indicate blocking of the PTI websites (insaf.pk, pticandidates.com) and the investigative platform Fact Focus. On election day, 8 February, Pakistan suspends mobile services nationwide; the interior ministry cites the threat of terrorism.",
+      "sources": [
+        "https://explorer.ooni.org/findings/108298926901",
+        "https://www.aljazeera.com/news/2024/2/8/inherently-undemocratic-pakistan-suspends-mobile-services-on-voting-day"
+      ]
     },
     {
       "phase": "event",
       "date": "2024-07",
-      "title": "PTA-Anordnung: LIMS bei allen Telekoms installieren",
-      "title_de": "PTA-Anordnung: LIMS bei allen Telekoms installieren",
-      "title_en": "PTA order: install LIMS at all telcos",
-      "description": "Die Pakistan Telecommunication Authority verpflichtet alle Mobilfunk- und Festnetzanbieter, das Lawful Intercept Management System einzubauen. Geheimdienste erhalten damit Echtzeit-Zugriff auf rund vier Millionen Mobilanschlüsse gleichzeitig - Anrufprotokolle, SMS und Browsing-Metadaten.",
-      "description_de": "Die Pakistan Telecommunication Authority verpflichtet alle Mobilfunk- und Festnetzanbieter, das Lawful Intercept Management System einzubauen. Geheimdienste erhalten damit Echtzeit-Zugriff auf rund vier Millionen Mobilanschlüsse gleichzeitig - Anrufprotokolle, SMS und Browsing-Metadaten.",
-      "description_en": "The Pakistan Telecommunication Authority orders all mobile and fixed-line operators to install the Lawful Intercept Management System. Intelligence agencies thereby gain real-time access to around four million mobile lines simultaneously - call logs, SMS and browsing metadata."
+      "title": "ISI-Ermächtigung zum Abhören und LIMS-Pflicht für Telekoms",
+      "title_de": "ISI-Ermächtigung zum Abhören und LIMS-Pflicht für Telekoms",
+      "title_en": "ISI authorised to intercept, LIMS obligation for telcos",
+      "description": "Am 8. Juli 2024 ermächtigt die Bundesregierung per Notifikation Offiziere des Geheimdienstes ISI (mindestens Grade 18), Anrufe und Nachrichten abzufangen und zu verfolgen (Section 54 Telecommunication Act 1996). Im selben Jahr wird in einem Verfahren vor dem Islamabad High Court (Klage von Bushra Bibi nach geleakten Telefonaten) bekannt, dass die Pakistan Telecommunication Authority die Telekomanbieter verpflichtet hat, das Lawful Intercept Management System (LIMS) auf eigene Kosten zu importieren und zu installieren. Laut Amnesty International können Geheimdienste damit mehr als vier Millionen Mobiltelefone gleichzeitig überwachen.",
+      "description_de": "Am 8. Juli 2024 ermächtigt die Bundesregierung per Notifikation Offiziere des Geheimdienstes ISI (mindestens Grade 18), Anrufe und Nachrichten abzufangen und zu verfolgen (Section 54 Telecommunication Act 1996). Im selben Jahr wird in einem Verfahren vor dem Islamabad High Court (Klage von Bushra Bibi nach geleakten Telefonaten) bekannt, dass die Pakistan Telecommunication Authority die Telekomanbieter verpflichtet hat, das Lawful Intercept Management System (LIMS) auf eigene Kosten zu importieren und zu installieren. Laut Amnesty International können Geheimdienste damit mehr als vier Millionen Mobiltelefone gleichzeitig überwachen.",
+      "description_en": "On 8 July 2024 the federal government authorises, by notification, officers of the intelligence agency ISI (grade 18 or above) to intercept calls and messages and to trace calls (Section 54 of the Telecommunication Act 1996). In the same year a case before the Islamabad High Court (filed by Bushra Bibi after leaked phone calls) reveals that the Pakistan Telecommunication Authority has obliged telecom operators to finance, import and install the Lawful Intercept Management System (LIMS). According to Amnesty International, intelligence agencies can thereby monitor more than four million mobile phones at the same time.",
+      "sources": [
+        "https://tribune.com.pk/story/2478140/government-authorises-isi-to-intercept-calls-and-messages-for-national-security",
+        "https://tribune.com.pk/story/2565769/amnesty-calls-out-pakistan-for-mass-telecom-surveillance"
+      ]
     },
     {
       "phase": "event",
       "date": "2024-08",
-      "title": "WMS 2.0 in Betrieb - landesweite Verlangsamung",
-      "title_de": "WMS 2.0 in Betrieb - landesweite Verlangsamung",
-      "title_en": "WMS 2.0 goes live - nationwide slowdown",
-      "description": "Die Aktivierung der chinesischen DPI-Hardware führt zu massiven Geschwindigkeitseinbußen; WhatsApp-Sprachnachrichten, Video-Calls und X-Funktionen werden selektiv blockiert. Die Wireless and Internet Service Providers Association of Pakistan beziffert den wirtschaftlichen Schaden auf bis zu 300 Millionen US-Dollar.",
-      "description_de": "Die Aktivierung der chinesischen DPI-Hardware führt zu massiven Geschwindigkeitseinbußen; WhatsApp-Sprachnachrichten, Video-Calls und X-Funktionen werden selektiv blockiert. Die Wireless and Internet Service Providers Association of Pakistan beziffert den wirtschaftlichen Schaden auf bis zu 300 Millionen US-Dollar.",
-      "description_en": "Activation of the Chinese DPI hardware causes massive speed losses; WhatsApp voice notes, video calls and X features are selectively blocked. The Wireless and Internet Service Providers Association of Pakistan estimates the economic damage at up to 300 million US dollars."
+      "title": "Firewall-Upgrade - landesweite Verlangsamung und VPN-Ausfälle",
+      "title_de": "Firewall-Upgrade - landesweite Verlangsamung und VPN-Ausfälle",
+      "title_en": "Firewall upgrade - nationwide slowdown and VPN failures",
+      "description": "Im Sommer 2024 verlangsamt sich das Internet in Pakistan spürbar; Nutzer berichten von Störungen bei WhatsApp (Dokumente, Bilder, Sprachnachrichten) und unzuverlässigen VPN-Verbindungen. Am 18. August räumt IT-Staatsministerin Shaza Fatima Khawaja ein, die Regierung rüste ein bestehendes Web Management System auf, bestreitet aber, das Internet verlangsamt zu haben. Die Pakistan Software Houses Association (P@SHA) warnt vor Verlusten von bis zu 300 Millionen US-Dollar für die Wirtschaft.",
+      "description_de": "Im Sommer 2024 verlangsamt sich das Internet in Pakistan spürbar; Nutzer berichten von Störungen bei WhatsApp (Dokumente, Bilder, Sprachnachrichten) und unzuverlässigen VPN-Verbindungen. Am 18. August räumt IT-Staatsministerin Shaza Fatima Khawaja ein, die Regierung rüste ein bestehendes Web Management System auf, bestreitet aber, das Internet verlangsamt zu haben. Die Pakistan Software Houses Association (P@SHA) warnt vor Verlusten von bis zu 300 Millionen US-Dollar für die Wirtschaft.",
+      "description_en": "In summer 2024 the internet in Pakistan slows noticeably; users report disruptions to WhatsApp (documents, images, voice notes) and unreliable VPN connections. On 18 August IT minister of state Shaza Fatima Khawaja admits that the government is upgrading an existing web management system but denies having slowed the internet. The Pakistan Software Houses Association (P@SHA) warns of losses of up to 300 million US dollars for the economy.",
+      "sources": [
+        "https://www.theregister.com/2024/08/20/pakistan_minister_denies_firewall/",
+        "https://thediplomat.com/2024/08/pakistans-attempt-to-tamper-with-the-internet-is-leading-to-economic-turmoil/"
+      ]
     },
     {
       "phase": "consequences",
       "date": "2024-11 bis 2025-09",
-      "title": "Al Jazeera deckt geheime Firewall-Tests auf, Amnesty belegt Massenüberwachung von Millionen Pakistanis",
-      "title_de": "Al Jazeera deckt geheime Firewall-Tests auf, Amnesty belegt Massenüberwachung von Millionen Pakistanis",
-      "title_en": "Al Jazeera reveals secret firewall trials, Amnesty documents mass surveillance of millions of Pakistanis",
-      "description": "Al Jazeera publiziert im November 2024 Belege, dass die Regierung die chinesische Firewall trotz öffentlicher Dementis testet. Net4people und The Register bestätigen mit technischen Messungen die Existenz der DPI-Infrastruktur. Im September 2025 dokumentiert Amnesty International im Bericht 'Shadows of Control', dass LIMS und WMS 2.0 zusammen eine flächendeckende Massenüberwachung ermöglichen - ohne richterliche Kontrolle, ohne öffentliche Rechtsgrundlage und gezielt gegen die politische Opposition eingesetzt.",
-      "description_de": "Al Jazeera publiziert im November 2024 Belege, dass die Regierung die chinesische Firewall trotz öffentlicher Dementis testet. Net4people und The Register bestätigen mit technischen Messungen die Existenz der DPI-Infrastruktur. Im September 2025 dokumentiert Amnesty International im Bericht 'Shadows of Control', dass LIMS und WMS 2.0 zusammen eine flächendeckende Massenüberwachung ermöglichen - ohne richterliche Kontrolle, ohne öffentliche Rechtsgrundlage und gezielt gegen die politische Opposition eingesetzt.",
-      "description_en": "In November 2024 Al Jazeera publishes evidence that the government is testing the Chinese firewall despite public denials. Net4people and The Register confirm the existence of the DPI infrastructure with technical measurements. In September 2025 Amnesty International documents in its report 'Shadows of Control' that LIMS and WMS 2.0 together enable blanket mass surveillance - without judicial oversight, without a public legal basis and targeted at the political opposition.",
+      "title": "Al Jazeera berichtet über Firewall-Tests, Amnesty dokumentiert Massenüberwachung in Pakistan",
+      "title_de": "Al Jazeera berichtet über Firewall-Tests, Amnesty dokumentiert Massenüberwachung in Pakistan",
+      "title_en": "Al Jazeera reports on firewall trials, Amnesty documents mass surveillance in Pakistan",
+      "description": "Al Jazeera berichtet im November 2024, dass Pakistan eine chinesische Firewall testet, obwohl die Regierung eine Firewall zuvor bestritten hatte. Im September 2025 dokumentiert Amnesty International im Bericht 'Shadows of Control', dass das Lawful Intercept Management System (LIMS) und das WMS 2.0 gemeinsam Massenüberwachung und Zensur mit kaum Aufsicht und Transparenz ermöglichen; überwacht würden unter anderem Journalisten und prominente Politiker. Der Bericht nennt Technik von Unternehmen aus China, Deutschland, Frankreich, den Vereinigten Arabischen Emiraten, Kanada und den USA.",
+      "description_de": "Al Jazeera berichtet im November 2024, dass Pakistan eine chinesische Firewall testet, obwohl die Regierung eine Firewall zuvor bestritten hatte. Im September 2025 dokumentiert Amnesty International im Bericht 'Shadows of Control', dass das Lawful Intercept Management System (LIMS) und das WMS 2.0 gemeinsam Massenüberwachung und Zensur mit kaum Aufsicht und Transparenz ermöglichen; überwacht würden unter anderem Journalisten und prominente Politiker. Der Bericht nennt Technik von Unternehmen aus China, Deutschland, Frankreich, den Vereinigten Arabischen Emiraten, Kanada und den USA.",
+      "description_en": "In November 2024 Al Jazeera reports that Pakistan is testing a Chinese firewall although the government had previously denied a firewall. In September 2025 Amnesty International documents in its report 'Shadows of Control' that the Lawful Intercept Management System (LIMS) and WMS 2.0 together enable mass surveillance and censorship with hardly any oversight or transparency; those surveilled include journalists and prominent politicians. The report names technology from companies in China, Germany, France, the United Arab Emirates, Canada and the United States.",
       "sources": [
         "https://www.aljazeera.com/news/2024/11/26/pakistan-tests-china-like-digital-firewall-to-tighten-online-surveillance",
         "https://www.amnesty.org/en/latest/news/2025/09/pakistan-mass-surveillance-and-censorship-machine-is-fueled-by-chinese-european-emirati-and-north-american-companies/"
