@@ -6,8 +6,8 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-ai-voice-clone-betrug",
   "name": "USA: KI-Stimmklonen für Betrug und Erpressung",
-  "description": "Kriminelle Netzwerke nutzen frei verfügbare KI-Tools zur Stimmklonierung, um Familienmitglieder in Notsituationen zu imitieren und Lösegeld oder Geldtransfers zu erpressen. Mit wenigen Sekunden Audio aus sozialen Medien erstellen Betrüger überzeugende Klonstimmen. Die US-Bundesbehörde FTC berichtet 2023 von einem exponenziellen Anstieg solcher Fälle. Der US-Senat hält Anhörungen zu KI-Stimmklonen ab.",
-  "startDate": "2022-01",
+  "description": "Betrüger nutzen KI-Stimmklonen, um Familienmitglieder in vermeintlichen Notsituationen zu imitieren und Lösegeld oder Geldtransfers zu erpressen. Laut der US-Verbraucherschutzbehörde FTC genügt dafür ein kurzer Audioclip, etwa aus online veröffentlichten Inhalten; im März 2023 warnt sie vor KI-gestützten 'Family Emergency Scams'. Im Juni 2023 schildert die Mutter Jennifer DeStefano aus Arizona vor einem Unterausschuss des US-Senats einen vorgetäuschten Entführungsanruf mit der mutmaßlich geklonten Stimme ihrer Tochter.",
+  "startDate": "2023-01",
   "location": {
     "@type": "Place",
     "name": "Phoenix, Arizona, USA",
@@ -39,7 +39,6 @@
       "type": "organization",
       "asm:systems": [
         "KI-Stimmklon-Tools",
-        "ElevenLabs",
         "VALL-E-ähnliche Systeme"
       ],
       "name_de": "Kriminelle Organisationen (Betrug-Netzwerke)",
@@ -60,62 +59,86 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2022-01",
+      "date": "2023-01",
       "phase": "infrastructure",
-      "title": "KI-Stimmklonen wird kommerziell verfügbar",
-      "description": "Unternehmen wie ElevenLabs, Resemble AI und andere bringen einfach bedienbare Stimmklon-APIs auf den Markt. Mit wenigen Sekunden Audiomaterial können überzeugende Stimmimitationen erstellt werden. Parallel verbreiten sich Open-Source-Modelle, die kostenlos genutzt werden können.",
-      "sources": [],
-      "title_de": "KI-Stimmklonen wird kommerziell verfügbar",
-      "title_en": "AI voice cloning becomes commercially available",
-      "description_de": "Unternehmen wie ElevenLabs, Resemble AI und andere bringen einfach bedienbare Stimmklon-APIs auf den Markt. Mit wenigen Sekunden Audiomaterial können überzeugende Stimmimitationen erstellt werden. Parallel verbreiten sich Open-Source-Modelle, die kostenlos genutzt werden können.",
-      "description_en": "Companies such as ElevenLabs, Resemble AI and others bring easy-to-use voice-cloning APIs to market. With only a few seconds of audio, convincing voice imitations can be generated. In parallel, open-source models that can be used free of charge proliferate."
+      "title": "KI-Stimmklonen wird breit zugänglich",
+      "description": "Im Januar 2023 stellt Microsoft das Forschungsmodell VALL-E vor, das nach Angaben der Forscher eine Stimme anhand einer nur drei Sekunden langen Aufnahme imitieren kann; öffentlich nutzbar ist es nicht. Ende Januar 2023 meldet das Start-up ElevenLabs, dessen Stimmklon-Funktion sich in einer offenen Beta befindet, eine wachsende Zahl von Missbrauchsfällen, nachdem 4chan-Nutzer damit Stimmen von Prominenten für rassistische und beleidigende Inhalte erzeugt hatten.",
+      "sources": [
+        "https://ispr.info/2023/01/11/microsofts-new-vall-e-ai-can-capture-your-voice-in-3-seconds/",
+        "https://aibusiness.com/nlp/4chan-users-clone-celebrities-voices-to-make-vile-audio"
+      ],
+      "title_de": "KI-Stimmklonen wird breit zugänglich",
+      "title_en": "AI voice cloning becomes widely accessible",
+      "description_de": "Im Januar 2023 stellt Microsoft das Forschungsmodell VALL-E vor, das nach Angaben der Forscher eine Stimme anhand einer nur drei Sekunden langen Aufnahme imitieren kann; öffentlich nutzbar ist es nicht. Ende Januar 2023 meldet das Start-up ElevenLabs, dessen Stimmklon-Funktion sich in einer offenen Beta befindet, eine wachsende Zahl von Missbrauchsfällen, nachdem 4chan-Nutzer damit Stimmen von Prominenten für rassistische und beleidigende Inhalte erzeugt hatten.",
+      "description_en": "In January 2023 Microsoft presents the research model VALL-E, which according to its researchers can imitate a voice from a recording only three seconds long; it is not publicly available. At the end of January 2023 the start-up ElevenLabs, whose voice-cloning feature is in an open beta, reports a growing number of misuse cases after 4chan users had used it to generate celebrity voices for racist and abusive content."
     },
     {
       "date": "2023-03",
       "phase": "doctrine",
-      "title": "FTC warnt vor exponentiellem Anstieg der Stimmklon-Betrugsfälle",
-      "description": "Die US-Federal Trade Commission veröffentlicht eine Warnung vor 'Family Emergency Scams', bei denen KI-geklonte Stimmen verwendet werden. Betrüger imitieren Enkel, Kinder oder Freunde, die angeblich in Geldnot oder verhaftet sind. Erste dokumentierte Fälle in Arizona, wo Eltern Zehntausende Dollar transferieren.",
-      "sources": [],
-      "title_de": "FTC warnt vor exponentiellem Anstieg der Stimmklon-Betrugsfälle",
-      "title_en": "FTC warns of exponential rise in voice-cloning fraud cases",
-      "description_de": "Die US-Federal Trade Commission veröffentlicht eine Warnung vor 'Family Emergency Scams', bei denen KI-geklonte Stimmen verwendet werden. Betrüger imitieren Enkel, Kinder oder Freunde, die angeblich in Geldnot oder verhaftet sind. Erste dokumentierte Fälle in Arizona, wo Eltern Zehntausende Dollar transferieren.",
-      "description_en": "The U.S. Federal Trade Commission publishes a warning about 'family emergency scams' that use AI-cloned voices. Scammers impersonate grandchildren, children or friends who supposedly need money or have been arrested. The first documented cases come from Arizona, where parents transfer tens of thousands of dollars."
+      "title": "FTC warnt vor KI-gestützten 'Family Emergency Scams'",
+      "description": "Die US-Verbraucherschutzbehörde FTC veröffentlicht eine Verbraucherwarnung, wonach Betrüger KI-Stimmklonen für sogenannte 'Family Emergency Scams' einsetzen: Ein kurzer Audioclip eines Angehörigen, etwa aus online veröffentlichten Inhalten, und ein Stimmklon-Programm genügen, um zum Beispiel einen Enkel in angeblicher Notlage zu imitieren. Die FTC rät, der Stimme nicht zu vertrauen und die Person über eine bekannte Nummer zurückzurufen.",
+      "sources": [
+        "https://blog.knowbe4.com/the-new-face-of-fraud-ftc-sheds-light-on-ai-enhanced-family-emergency-scams",
+        "https://consumer.ftc.gov/scams/family-emergency-scams"
+      ],
+      "title_de": "FTC warnt vor KI-gestützten 'Family Emergency Scams'",
+      "title_en": "FTC warns of AI-enhanced 'family emergency scams'",
+      "description_de": "Die US-Verbraucherschutzbehörde FTC veröffentlicht eine Verbraucherwarnung, wonach Betrüger KI-Stimmklonen für sogenannte 'Family Emergency Scams' einsetzen: Ein kurzer Audioclip eines Angehörigen, etwa aus online veröffentlichten Inhalten, und ein Stimmklon-Programm genügen, um zum Beispiel einen Enkel in angeblicher Notlage zu imitieren. Die FTC rät, der Stimme nicht zu vertrauen und die Person über eine bekannte Nummer zurückzurufen.",
+      "description_en": "The U.S. consumer protection agency FTC publishes a consumer alert stating that scammers use AI voice cloning for so-called 'family emergency scams': a short audio clip of a family member, for example from content posted online, and a voice-cloning program are enough to impersonate, say, a grandchild supposedly in trouble. The FTC advises not to trust the voice and to call the person back on a known number."
     },
     {
       "date": "2023-04",
       "phase": "event",
-      "title": "Virtuelles Kidnapping - Mutter glaubt, Tochter werde entführt",
-      "description": "Eine Mutter in Arizona erhält einen Anruf mit dem weinenden Klang der Stimme ihrer Tochter und einer Lösegelderforderung. Die Stimme wurde mithilfe von KI aus Social-Media-Videos der Tochter erstellt. Der Fall wird national bekannt und löst Senatsdiskussionen aus. Ähnliche Fälle häufen sich in mehreren Bundesstaaten.",
+      "title": "Vorgetäuschte Entführung - Mutter in Arizona hört mutmaßlich geklonte Stimme ihrer Tochter",
+      "description": "Im April 2023 macht Jennifer DeStefano aus Scottsdale (Arizona) öffentlich, dass sie im Januar 2023 einen Anruf erhielt, in dem sie scheinbar ihre 15-jährige Tochter schluchzen hörte; ein Mann behauptete, das Mädchen in seiner Gewalt zu haben, und forderte Lösegeld. Die Tochter war unversehrt auf einem Skiausflug, gezahlt wurde nichts. DeStefano und ein befragter KI-Experte der Arizona State University gehen von einer KI-geklonten Stimme aus. Der Fall wird landesweit bekannt.",
       "sources": [
-        "https://web.archive.org/web/20250720125435/https://www.washingtonpost.com/technology/2023/03/05/ai-voice-scam/"
+        "https://www.kold.com/2023/04/10/ive-got-your-daughter-mom-warns-terrifying-ai-voice-cloning-scam-that-faked-kidnapping/",
+        "https://fox10phoenix.com/news/ai-kidnapping-scam-targets-arizona-mother-youll-never-see-your-daughter-again"
       ],
-      "title_de": "Virtuelles Kidnapping - Mutter glaubt, Tochter werde entführt",
-      "title_en": "Virtual kidnapping - mother believes her daughter is being abducted",
-      "description_de": "Eine Mutter in Arizona erhält einen Anruf mit dem weinenden Klang der Stimme ihrer Tochter und einer Lösegelderforderung. Die Stimme wurde mithilfe von KI aus Social-Media-Videos der Tochter erstellt. Der Fall wird national bekannt und löst Senatsdiskussionen aus. Ähnliche Fälle häufen sich in mehreren Bundesstaaten.",
-      "description_en": "A mother in Arizona receives a call featuring the sobbing sound of her daughter's voice and a ransom demand. The voice was generated by AI from her daughter's social media videos. The case attracts national attention and triggers Senate discussions. Similar cases accumulate in several states."
+      "title_de": "Vorgetäuschte Entführung - Mutter in Arizona hört mutmaßlich geklonte Stimme ihrer Tochter",
+      "title_en": "Fake kidnapping - Arizona mother hears what appears to be her daughter's cloned voice",
+      "description_de": "Im April 2023 macht Jennifer DeStefano aus Scottsdale (Arizona) öffentlich, dass sie im Januar 2023 einen Anruf erhielt, in dem sie scheinbar ihre 15-jährige Tochter schluchzen hörte; ein Mann behauptete, das Mädchen in seiner Gewalt zu haben, und forderte Lösegeld. Die Tochter war unversehrt auf einem Skiausflug, gezahlt wurde nichts. DeStefano und ein befragter KI-Experte der Arizona State University gehen von einer KI-geklonten Stimme aus. Der Fall wird landesweit bekannt.",
+      "description_en": "In April 2023 Jennifer DeStefano of Scottsdale (Arizona) goes public about a call she received in January 2023 in which she seemed to hear her 15-year-old daughter sobbing; a man claimed to be holding the girl and demanded a ransom. The daughter was safe on a ski trip and no money was paid. DeStefano and an AI expert from Arizona State University interviewed about the case assume an AI-cloned voice. The case becomes known nationwide."
     },
     {
-      "date": "2023-09",
+      "date": "2023-06-13",
       "phase": "consequences",
-      "title": "Senat hält Anhörungen - Regulierungsdruck wächst",
-      "description": "Der US-Senat Commerce Committee hält Anhörungen zu KI-Missbrauch durch Stimmklonen ab. Die FTC erwägt neue Regelungen für kommerzielle Voice-AI-Anbieter. Mehrere Bundesstaaten einführen Gesetzesentwürfe für Kennzeichnungspflichten bei KI-generiertem Audio. Plattformbetreiber beginnen, Missbrauchsrichtlinien zu schärfen.",
-      "sources": [],
-      "title_de": "Senat hält Anhörungen - Regulierungsdruck wächst",
-      "title_en": "Senate holds hearings - regulatory pressure grows",
-      "description_de": "Der US-Senat Commerce Committee hält Anhörungen zu KI-Missbrauch durch Stimmklonen ab. Die FTC erwägt neue Regelungen für kommerzielle Voice-AI-Anbieter. Mehrere Bundesstaaten einführen Gesetzesentwürfe für Kennzeichnungspflichten bei KI-generiertem Audio. Plattformbetreiber beginnen, Missbrauchsrichtlinien zu schärfen.",
-      "description_en": "The U.S. Senate Commerce Committee holds hearings on AI abuse through voice cloning. The FTC considers new rules for commercial voice-AI providers. Several states introduce bills mandating labeling of AI-generated audio. Platform operators begin to tighten their abuse policies."
+      "title": "DeStefano sagt vor Unterausschuss des US-Senats aus",
+      "description": "Auf Einladung von Senator Jon Ossoff schildert DeStefano ihren Fall in einer Anhörung des Unterausschusses für Menschenrechte und Recht des Justizausschusses im US-Senat zum Thema 'Artificial Intelligence and Human Rights'. Sie beschreibt den Anruf als 'terrorisierend' und mit bleibendem Trauma verbunden und drängt den Kongress, die Technik zu regulieren.",
+      "sources": [
+        "https://www.azfamily.com/2023/06/14/scottsdale-mom-testifies-about-terrorizing-ai-scam/",
+        "https://www.courthousenews.com/victim-of-ai-powered-ransom-scam-urges-congress-to-regulate-emerging-tech/"
+      ],
+      "title_de": "DeStefano sagt vor Unterausschuss des US-Senats aus",
+      "title_en": "DeStefano testifies before a U.S. Senate subcommittee",
+      "description_de": "Auf Einladung von Senator Jon Ossoff schildert DeStefano ihren Fall in einer Anhörung des Unterausschusses für Menschenrechte und Recht des Justizausschusses im US-Senat zum Thema 'Artificial Intelligence and Human Rights'. Sie beschreibt den Anruf als 'terrorisierend' und mit bleibendem Trauma verbunden und drängt den Kongress, die Technik zu regulieren.",
+      "description_en": "At the invitation of Senator Jon Ossoff, DeStefano describes her case at a hearing of the U.S. Senate Judiciary Subcommittee on Human Rights and the Law on 'Artificial Intelligence and Human Rights'. She calls the call 'terrorizing' and a source of lasting trauma and urges Congress to regulate the technology."
+    },
+    {
+      "date": "2024-02-08",
+      "phase": "consequences",
+      "title": "FTC und FCC reagieren auf KI-Stimmklone",
+      "description": "Nachdem die FTC im November 2023 eine 'Voice Cloning Challenge' für Ideen gegen betrügerisches Stimmklonen ausgeschrieben hat, stellt die US-Telekommunikationsbehörde FCC am 8. Februar 2024 einstimmig klar, dass KI-generierte Stimmen in Robocalls als 'künstlich' im Sinne des Telephone Consumer Protection Act gelten; solche Anrufe bedürfen damit der vorherigen Einwilligung. Die FCC-Vorsitzende begründet dies auch mit der Erpressung von Familienangehörigen durch KI-Stimmen.",
+      "sources": [
+        "https://www.mintz.com/insights-center/viewpoints/2191/2023-11-20-federal-trade-commission-announces-voice-cloning",
+        "https://www.fcc.gov/document/fcc-makes-ai-generated-voices-robocalls-illegal"
+      ],
+      "title_de": "FTC und FCC reagieren auf KI-Stimmklone",
+      "title_en": "FTC and FCC respond to AI voice clones",
+      "description_de": "Nachdem die FTC im November 2023 eine 'Voice Cloning Challenge' für Ideen gegen betrügerisches Stimmklonen ausgeschrieben hat, stellt die US-Telekommunikationsbehörde FCC am 8. Februar 2024 einstimmig klar, dass KI-generierte Stimmen in Robocalls als 'künstlich' im Sinne des Telephone Consumer Protection Act gelten; solche Anrufe bedürfen damit der vorherigen Einwilligung. Die FCC-Vorsitzende begründet dies auch mit der Erpressung von Familienangehörigen durch KI-Stimmen.",
+      "description_en": "After the FTC launched a 'Voice Cloning Challenge' in November 2023 seeking ideas against fraudulent voice cloning, the U.S. telecommunications regulator FCC unanimously clarifies on 8 February 2024 that AI-generated voices in robocalls count as 'artificial' under the Telephone Consumer Protection Act, so such calls require prior consent. The FCC chair also cites the extortion of family members with AI voices as a reason."
     }
   ],
   "asm:sources": [
     {
       "url": "https://web.archive.org/web/20250720125435/https://www.washingtonpost.com/technology/2023/03/05/ai-voice-scam/",
-      "title": "An AI cloned her daughter's voice and tried to scam her. She's not alone.",
+      "title": "They thought loved ones were calling for help. It was an AI scam.",
       "publisher": "Washington Post",
       "date": "2023-03-05",
       "type": "news-article",
       "asm:linkHealth": "archived",
-      "title_de": "An AI cloned her daughter's voice and tried to scam her. She's not alone.",
-      "title_en": "An AI cloned her daughter's voice and tried to scam her. She's not alone."
+      "title_de": "They thought loved ones were calling for help. It was an AI scam.",
+      "title_en": "They thought loved ones were calling for help. It was an AI scam."
     }
   ],
   "asm:metadata": {
@@ -127,8 +150,8 @@
   },
   "name_de": "USA: KI-Stimmklonen für Betrug und Erpressung",
   "name_en": "USA: AI voice cloning used for fraud and extortion",
-  "description_de": "Kriminelle Netzwerke nutzen frei verfügbare KI-Tools zur Stimmklonierung, um Familienmitglieder in Notsituationen zu imitieren und Lösegeld oder Geldtransfers zu erpressen. Mit wenigen Sekunden Audio aus sozialen Medien erstellen Betrüger überzeugende Klonstimmen. Die US-Bundesbehörde FTC berichtet 2023 von einem exponenziellen Anstieg solcher Fälle. Der US-Senat hält Anhörungen zu KI-Stimmklonen ab.",
-  "description_en": "Criminal networks use freely available AI voice-cloning tools to impersonate family members in distress and extort ransom payments or money transfers. With only a few seconds of audio taken from social media, scammers create convincing voice clones. In 2023 the U.S. Federal Trade Commission (FTC) reports an exponential rise in such cases. The U.S. Senate holds hearings on AI voice cloning.",
+  "description_de": "Betrüger nutzen KI-Stimmklonen, um Familienmitglieder in vermeintlichen Notsituationen zu imitieren und Lösegeld oder Geldtransfers zu erpressen. Laut der US-Verbraucherschutzbehörde FTC genügt dafür ein kurzer Audioclip, etwa aus online veröffentlichten Inhalten; im März 2023 warnt sie vor KI-gestützten 'Family Emergency Scams'. Im Juni 2023 schildert die Mutter Jennifer DeStefano aus Arizona vor einem Unterausschuss des US-Senats einen vorgetäuschten Entführungsanruf mit der mutmaßlich geklonten Stimme ihrer Tochter.",
+  "description_en": "Scammers use AI voice cloning to impersonate family members in supposed emergencies and extort ransom payments or money transfers. According to the U.S. consumer protection agency FTC, a short audio clip, for example from content posted online, is enough; in March 2023 it warns of AI-enhanced 'family emergency scams'. In June 2023 Jennifer DeStefano, a mother from Arizona, describes to a U.S. Senate subcommittee a fake kidnapping call featuring what appeared to be her daughter's cloned voice.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Schutz vor Betrug",
