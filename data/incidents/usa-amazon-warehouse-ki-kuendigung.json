@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-amazon-warehouse-ki-kuendigung",
-  "name": "USA: Amazon-Algorithmus kundigt Lagerarbeiter automatisch bei Unterschreitung von Produktivitatszielen",
-  "description": "Amazon setzt in seinen Fulfillment Centern ein KI-System ein, das die Arbeitsleistung von Lagermitarbeitern in Echtzeit überwacht und automatisch Abmahnungen sowie Kundigungen auslost, wenn Produktivitatskennzahlen (sog. 'rate') nicht erfullt werden. Das System berucksichtigt keine individuellen Umstande wie Krankheit oder Toilettenpausen. The Verge enthullte 2019, dass das System innerhalb von drei Jahren über 300 automatische Kundigungen in einem einzigen Lager ausloste.",
-  "startDate": "2018-01",
+  "name": "USA: Amazon-System soll Lagerarbeiter bei verfehlten Produktivitätszielen automatisch abmahnen und kündigen",
+  "description": "Amazon überwacht in seinen Fulfillment Centern die Produktivität von Lagerbeschäftigten mit einem automatisierten System, das die individuelle Leistungsrate (sog. 'rate') und Zeiten ohne Scan-Aktivität ('Time Off Task') erfasst. Laut einem Schreiben eines Amazon-Anwalts an die US-Arbeitsbehörde NLRB erzeugt das System Abmahnungen und Kündigungen wegen Qualität oder Produktivität automatisch, ohne Zutun von Vorgesetzten. The Verge berichtete im April 2019, dass am Standort BWI2 in Baltimore zwischen August 2017 und September 2018 rund 300 Vollzeitbeschäftigte wegen mangelnder Produktivität entlassen wurden. Amazon bestreitet, dass Kündigungen automatisch erfolgen, und erklärt, Vorgesetzte könnten den Prozess stoppen.",
+  "startDate": "2017-08",
   "location": {
     "@type": "Place",
     "name": "Seattle, Washington, USA",
@@ -39,8 +39,7 @@
       "type": "company",
       "asm:systems": [
         "Time Off Task (TOT) Tracking",
-        "Productivity Rate Algorithm",
-        "Automatic Termination System (ATS)"
+        "Productivity Rate Algorithm"
       ],
       "name_de": "Amazon",
       "name_en": "Amazon"
@@ -50,52 +49,60 @@
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2018-01",
+      "date": "2017-08 bis 2018-09",
       "phase": "infrastructure",
-      "title": "Interne Amazon-Dokumente zeigen automatisiertes Kundigungssystem",
-      "description": "Interne Amazon-Dokumente, die später veröffentlicht wurden, zeigen, dass das Unternehmen ein System zur automatischen Erstellung von Abmahnungen und Kundigungsempfehlungen implementiert hat. Das System namens 'Time Off Task' (TOT) misst jede Abweichung von der Arbeit und summiert 'verlorene Zeit'. Führt diese über Schwellenwerte, werden automatisch Personaldokumente erzeugt.",
+      "title": "Automatisiertes System erfasst Produktivitätsrate und 'Time Off Task'",
+      "description": "Laut einem Schreiben eines Amazon-Anwalts an die US-Arbeitsbehörde NLRB, das auf die Beschwerde eines wegen verfehlter Produktivitätsziele entlassenen Beschäftigten antwortet, erfasst ein automatisiertes System die Produktivitätsrate jedes Beschäftigten sowie die 'Time Off Task' (TOT), also Zeiten ohne Scan-Aktivität. Das System erzeugt demnach Abmahnungen oder Kündigungen wegen Qualität oder Produktivität automatisch, ohne Zutun von Vorgesetzten; Vorgesetzte könnten eine Abmahnung jedoch stoppen. Die Überwachung gilt laut dem Schreiben in allen nordamerikanischen Fulfillment Centern.",
       "sources": [
-        "https://www.theverge.com/2019/4/25/18516004/amazon-warehouse-fulfillment-centers-productivity-firing-terminations"
+        "https://www.theverge.com/2019/4/25/18516004/amazon-warehouse-fulfillment-centers-productivity-firing-terminations",
+        "https://technical.ly/startups/report-amazon-fired-300-baltimore-fulfillment-center-employees-in-a-year-over-productivity.md"
       ],
-      "title_de": "Interne Amazon-Dokumente zeigen automatisiertes Kundigungssystem",
-      "title_en": "Internal Amazon documents reveal an automated termination system",
-      "description_de": "Interne Amazon-Dokumente, die später veröffentlicht wurden, zeigen, dass das Unternehmen ein System zur automatischen Erstellung von Abmahnungen und Kundigungsempfehlungen implementiert hat. Das System namens 'Time Off Task' (TOT) misst jede Abweichung von der Arbeit und summiert 'verlorene Zeit'. Führt diese über Schwellenwerte, werden automatisch Personaldokumente erzeugt.",
-      "description_en": "Internal Amazon documents that were later released show that the company implemented a system to automatically generate warnings and termination recommendations. The system, called 'Time Off Task' (TOT), measures every deviation from work and tallies 'lost time'. Once this exceeds set thresholds, personnel documents are generated automatically."
+      "title_de": "Automatisiertes System erfasst Produktivitätsrate und 'Time Off Task'",
+      "title_en": "Automated system tracks productivity rate and 'Time Off Task'",
+      "description_de": "Laut einem Schreiben eines Amazon-Anwalts an die US-Arbeitsbehörde NLRB, das auf die Beschwerde eines wegen verfehlter Produktivitätsziele entlassenen Beschäftigten antwortet, erfasst ein automatisiertes System die Produktivitätsrate jedes Beschäftigten sowie die 'Time Off Task' (TOT), also Zeiten ohne Scan-Aktivität. Das System erzeugt demnach Abmahnungen oder Kündigungen wegen Qualität oder Produktivität automatisch, ohne Zutun von Vorgesetzten; Vorgesetzte könnten eine Abmahnung jedoch stoppen. Die Überwachung gilt laut dem Schreiben in allen nordamerikanischen Fulfillment Centern.",
+      "description_en": "According to a letter from an Amazon attorney to the U.S. labor agency NLRB, responding to a charge by a worker fired for missing productivity targets, an automated system tracks each worker's productivity rate as well as 'Time Off Task' (TOT), meaning periods without scanning activity. According to the letter, the system automatically generates warnings or terminations regarding quality or productivity without input from supervisors, although supervisors can halt a warning. The letter says the monitoring applies at all North American fulfillment centers."
     },
     {
       "date": "2019-04-25",
       "phase": "event",
-      "title": "The Verge enthullt: 300+ automatische Kundigungen in einem Lager",
-      "description": "The Verge veröffentlicht einen Recherchebericht, laut dem Amazon in einem Lager in Baltimore innerhalb von drei Jahren allein durch das automatische System über 300 Mitarbeiter entließ. Viele Betroffene erfuhren erst aus dem Kundigungsschreiben, dass ein Algorithmus - nicht ein Vorgesetzter - die Entscheidung traf. Widerspruchsmoglichkeiten waren minimal.",
+      "title": "The Verge enthüllt: rund 300 Kündigungen wegen Produktivität in einem Lager",
+      "description": "The Verge veröffentlicht das Anwaltsschreiben an die NLRB. Demnach wurden am Standort BWI2 in Baltimore zwischen August 2017 und September 2018 rund 300 Vollzeitbeschäftigte entlassen, weil sie Produktivitätsziele verfehlten; Amazon bestätigt die Größenordnung. Das Unternehmen bestreitet jedoch, dass Beschäftigte über ein automatisches System gekündigt werden, und erklärt, Vorgesetzte könnten den Prozess stoppen.",
       "sources": [
-        "https://www.theverge.com/2019/4/25/18516004/amazon-warehouse-fulfillment-centers-productivity-firing-terminations"
+        "https://www.theverge.com/2019/4/25/18516004/amazon-warehouse-fulfillment-centers-productivity-firing-terminations",
+        "https://www.kuow.org/stories/amazon-denies-report-that-it-fires-workers-by-robot"
       ],
-      "title_de": "The Verge enthullt: 300+ automatische Kundigungen in einem Lager",
-      "title_en": "The Verge reveals: 300+ automated terminations at a single warehouse",
-      "description_de": "The Verge veröffentlicht einen Recherchebericht, laut dem Amazon in einem Lager in Baltimore innerhalb von drei Jahren allein durch das automatische System über 300 Mitarbeiter entließ. Viele Betroffene erfuhren erst aus dem Kundigungsschreiben, dass ein Algorithmus - nicht ein Vorgesetzter - die Entscheidung traf. Widerspruchsmoglichkeiten waren minimal.",
-      "description_en": "The Verge publishes an investigation reporting that Amazon fired more than 300 workers at a Baltimore warehouse over three years through the automated system alone. Many of those affected learned only from the termination letter that an algorithm - not a supervisor - had made the decision. Avenues to appeal were minimal."
+      "title_de": "The Verge enthüllt: rund 300 Kündigungen wegen Produktivität in einem Lager",
+      "title_en": "The Verge reveals: roughly 300 productivity firings at a single warehouse",
+      "description_de": "The Verge veröffentlicht das Anwaltsschreiben an die NLRB. Demnach wurden am Standort BWI2 in Baltimore zwischen August 2017 und September 2018 rund 300 Vollzeitbeschäftigte entlassen, weil sie Produktivitätsziele verfehlten; Amazon bestätigt die Größenordnung. Das Unternehmen bestreitet jedoch, dass Beschäftigte über ein automatisches System gekündigt werden, und erklärt, Vorgesetzte könnten den Prozess stoppen.",
+      "description_en": "The Verge publishes the attorney's letter to the NLRB. According to it, roughly 300 full-time workers at the BWI2 facility in Baltimore were fired for missing productivity targets between August 2017 and September 2018; Amazon confirms the approximate figure. However, the company denies that workers are terminated through an automatic system and says supervisors can override the process."
     },
     {
-      "date": "2020-04",
+      "date": "2020-10",
       "phase": "event",
-      "title": "COVID-19 verscharft Überwachungsdruck",
-      "description": "Während der Pandemie erhalt Amazon Rekordauftrage. Mitarbeiter berichten, dass das System Toilettenpausen und Desinfektionspausen als 'Time Off Task' wertet und sanktioniert. Mehrere Mitarbeiter werden entlassen, nachdem sie Sicherheitsbedenken geaussert hatten. Die Fluktuation steigt auf 150 Prozent jährlich.",
-      "sources": [],
-      "title_de": "COVID-19 verscharft Überwachungsdruck",
-      "title_en": "COVID-19 intensifies surveillance pressure",
-      "description_de": "Während der Pandemie erhalt Amazon Rekordauftrage. Mitarbeiter berichten, dass das System Toilettenpausen und Desinfektionspausen als 'Time Off Task' wertet und sanktioniert. Mehrere Mitarbeiter werden entlassen, nachdem sie Sicherheitsbedenken geaussert hatten. Die Fluktuation steigt auf 150 Prozent jährlich.",
-      "description_en": "During the pandemic Amazon receives record orders. Workers report that the system classifies bathroom breaks and sanitation breaks as 'Time Off Task' and sanctions them. Several workers are dismissed after raising safety concerns. Annual turnover rises to 150 percent."
+      "title": "Amazon reaktiviert Produktivitätsvorgaben trotz Pandemie",
+      "description": "Nach eigenen Angaben vor Gericht hatte Amazon im März 2020 wegen COVID-19 aufgehört, Beschäftigten Rückmeldungen zur Produktivitätsrate zu geben und niedrige Raten zu sanktionieren. Beschäftigte des Lagers JFK8 auf Staten Island, die das Unternehmen im Juni 2020 wegen mangelnden Infektionsschutzes verklagt hatten, werfen Amazon im Oktober 2020 vor, die Vorgaben zu 'rate' und 'Time Off Task' am 7. Oktober wieder eingeführt zu haben, obwohl es dem Gericht deren Aussetzung mitgeteilt hatte.",
+      "sources": [
+        "https://www.cnbc.com/2020/10/14/amazon-resumes-policy-that-dings-workers-for-taking-too-many-breaks.html",
+        "https://www.claimsjournal.com/news/national/2020/10/15/299968.htm"
+      ],
+      "title_de": "Amazon reaktiviert Produktivitätsvorgaben trotz Pandemie",
+      "title_en": "Amazon reinstates productivity quotas during the pandemic",
+      "description_de": "Nach eigenen Angaben vor Gericht hatte Amazon im März 2020 wegen COVID-19 aufgehört, Beschäftigten Rückmeldungen zur Produktivitätsrate zu geben und niedrige Raten zu sanktionieren. Beschäftigte des Lagers JFK8 auf Staten Island, die das Unternehmen im Juni 2020 wegen mangelnden Infektionsschutzes verklagt hatten, werfen Amazon im Oktober 2020 vor, die Vorgaben zu 'rate' und 'Time Off Task' am 7. Oktober wieder eingeführt zu haben, obwohl es dem Gericht deren Aussetzung mitgeteilt hatte.",
+      "description_en": "According to its own statements in court, Amazon had stopped giving workers productivity rate feedback and disciplining low rates in March 2020 because of COVID-19. Workers at the JFK8 warehouse on Staten Island, who had sued the company in June 2020 over inadequate infection protection, accuse Amazon in October 2020 of reinstating its 'rate' and 'Time Off Task' policies on 7 October despite having told the court they were suspended."
     },
     {
-      "date": "2022-05",
+      "date": "2021-09",
       "phase": "consequences",
-      "title": "Senatsuntersuchung und Gewerkschaftsgrundung",
-      "description": "Ein US-Senatsbericht kritisiert Amazons algorithmisches Überwachungssystem als beispiellos invasiv. Gleichzeitig grundet die Belegschaft im Staten Island-Lager (JFK8) die erste erfolgreiche Amazon-Gewerkschaft in den USA. Eine ihrer Kernforderungen: Abschaffung des automatisierten Kundigungssystems und menschliche Überprüfung aller Arbeitgeberentscheidungen.",
-      "sources": [],
-      "title_de": "Senatsuntersuchung und Gewerkschaftsgrundung",
-      "title_en": "Senate investigation and founding of a union",
-      "description_de": "Ein US-Senatsbericht kritisiert Amazons algorithmisches Überwachungssystem als beispiellos invasiv. Gleichzeitig grundet die Belegschaft im Staten Island-Lager (JFK8) die erste erfolgreiche Amazon-Gewerkschaft in den USA. Eine ihrer Kernforderungen: Abschaffung des automatisierten Kundigungssystems und menschliche Überprüfung aller Arbeitgeberentscheidungen.",
-      "description_en": "A U.S. Senate report criticizes Amazon's algorithmic surveillance system as unprecedentedly invasive. At the same time, workers at the Staten Island warehouse (JFK8) form the first successful Amazon union in the United States. One of their core demands: abolish the automated termination system and require human review of all employer decisions."
+      "title": "Kalifornien begrenzt Produktivitätsquoten in Lagern",
+      "description": "Gouverneur Gavin Newsom unterzeichnet im September 2021 das Gesetz AB 701, mit dem Kalifornien als erster US-Bundesstaat Produktivitätsquoten in großen Lagerhäusern begrenzt; das Gesetz gilt weithin als Reaktion auf Amazons Praktiken. Arbeitgeber müssen Beschäftigten Quoten schriftlich offenlegen, Quoten dürfen Pausen, Toilettengänge und die Einhaltung von Sicherheitsvorschriften nicht verhindern, und Beschäftigte dürfen nicht wegen unzulässiger Quoten entlassen werden. Das Gesetz tritt am 1. Januar 2022 in Kraft.",
+      "sources": [
+        "https://www.gov.ca.gov/2021/09/22/governor-newsom-signs-nation-leading-legislation-expanding-protections-for-warehouse-workers/",
+        "https://www.cbsnews.com/sanfrancisco/news/ab701-newsom-signs-bill-targeting-warehouse-productivity-quotas-amazon-mega-retailers/"
+      ],
+      "title_de": "Kalifornien begrenzt Produktivitätsquoten in Lagern",
+      "title_en": "California limits productivity quotas in warehouses",
+      "description_de": "Gouverneur Gavin Newsom unterzeichnet im September 2021 das Gesetz AB 701, mit dem Kalifornien als erster US-Bundesstaat Produktivitätsquoten in großen Lagerhäusern begrenzt; das Gesetz gilt weithin als Reaktion auf Amazons Praktiken. Arbeitgeber müssen Beschäftigten Quoten schriftlich offenlegen, Quoten dürfen Pausen, Toilettengänge und die Einhaltung von Sicherheitsvorschriften nicht verhindern, und Beschäftigte dürfen nicht wegen unzulässiger Quoten entlassen werden. Das Gesetz tritt am 1. Januar 2022 in Kraft.",
+      "description_en": "In September 2021, Governor Gavin Newsom signs AB 701, making California the first U.S. state to limit productivity quotas in large warehouses; the law is widely seen as a response to Amazon's practices. Employers must disclose quotas to workers in writing, quotas may not prevent rest breaks, bathroom use or compliance with safety rules, and workers may not be fired for failing to meet unlawful quotas. The law takes effect on 1 January 2022."
     }
   ],
   "asm:sources": [
@@ -115,12 +122,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: automatic terminations are described in an Amazon attorney's letter to the NLRB but disputed by Amazon, so the title now presents them as reported, and missing German umlauts were restored. Slug unchanged for permalink stability."
   },
-  "name_de": "USA: Amazon-Algorithmus kundigt Lagerarbeiter automatisch bei Unterschreitung von Produktivitatszielen",
-  "name_en": "USA: Amazon algorithm automatically fires warehouse workers who miss productivity targets",
-  "description_de": "Amazon setzt in seinen Fulfillment Centern ein KI-System ein, das die Arbeitsleistung von Lagermitarbeitern in Echtzeit überwacht und automatisch Abmahnungen sowie Kundigungen auslost, wenn Produktivitatskennzahlen (sog. 'rate') nicht erfullt werden. Das System berucksichtigt keine individuellen Umstande wie Krankheit oder Toilettenpausen. The Verge enthullte 2019, dass das System innerhalb von drei Jahren über 300 automatische Kundigungen in einem einzigen Lager ausloste.",
-  "description_en": "Amazon uses an AI system in its fulfillment centers that monitors warehouse workers' performance in real time and automatically issues warnings and terminations when productivity metrics (the so-called 'rate') are not met. The system does not take individual circumstances such as illness or bathroom breaks into account. The Verge revealed in 2019 that the system triggered more than 300 automated terminations at a single warehouse within three years.",
+  "name_de": "USA: Amazon-System soll Lagerarbeiter bei verfehlten Produktivitätszielen automatisch abmahnen und kündigen",
+  "name_en": "USA: Amazon system reportedly issues automatic warnings and terminations to warehouse workers who miss productivity targets",
+  "description_de": "Amazon überwacht in seinen Fulfillment Centern die Produktivität von Lagerbeschäftigten mit einem automatisierten System, das die individuelle Leistungsrate (sog. 'rate') und Zeiten ohne Scan-Aktivität ('Time Off Task') erfasst. Laut einem Schreiben eines Amazon-Anwalts an die US-Arbeitsbehörde NLRB erzeugt das System Abmahnungen und Kündigungen wegen Qualität oder Produktivität automatisch, ohne Zutun von Vorgesetzten. The Verge berichtete im April 2019, dass am Standort BWI2 in Baltimore zwischen August 2017 und September 2018 rund 300 Vollzeitbeschäftigte wegen mangelnder Produktivität entlassen wurden. Amazon bestreitet, dass Kündigungen automatisch erfolgen, und erklärt, Vorgesetzte könnten den Prozess stoppen.",
+  "description_en": "Amazon monitors the productivity of warehouse workers in its fulfillment centers with an automated system that tracks each worker's productivity rate (the so-called 'rate') and periods without scanning activity ('Time Off Task'). According to a letter from an Amazon attorney to the U.S. labor agency NLRB, the system automatically generates warnings and terminations regarding quality or productivity without input from supervisors. The Verge reported in April 2019 that roughly 300 full-time workers at the BWI2 facility in Baltimore were fired for lack of productivity between August 2017 and September 2018. Amazon denies that terminations happen automatically and says supervisors can override the process.",
   "asm:affectedRights_de": [
     "Arbeitsrechte",
     "Recht auf Privatsphäre am Arbeitsplatz",
