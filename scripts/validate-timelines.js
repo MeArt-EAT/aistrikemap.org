@@ -3,7 +3,16 @@
  * validate-timelines.js — Pre-Commit-Validator fuer Reverse-Timelines.
  *
  * Kapselt die ueber 45 Wellen erprobten Pflicht-Checks vor jedem TL-Commit:
- *   - asm:reverseTimeline vorhanden, 4-6 Eintraege, genau 1 event-Phase
+ *   - asm:reverseTimeline vorhanden, 4-6 Eintraege
+ *   - Phasen-Modell (Schema v1.1, 2026-10-08):
+ *       Vorgeschichte {infrastructure, doctrine} in BELIEBIGER Reihenfolge
+ *       (eine Doktrin kann aelter sein als die Infrastruktur - Maschinenrichtlinie
+ *       2006 vor Roboter-Hochlauf 2011 - oder juenger), dann >= 1 event (ein
+ *       mehrstufiges Ereignis wie Festnahme + Urteil darf mehrere event-Eintraege
+ *       haben), dann >= 1 consequences. Verschraenkung (Vorgeschichte NACH einem
+ *       event, event NACH consequences) ist ein ERROR. Mindestens eine
+ *       Vorgeschichte-Phase ist Pflicht; fehlende infrastructure ODER doctrine
+ *       einzeln ist (noch) ein WARN, > 3 event-Eintraege ebenfalls.
  *   - title === title_de, description === description_de pro Eintrag
  *   - Chronologie strikt aufsteigend INKL. monat-genau-vor-tag-genau desselben
  *     Monats (z.B. consequence "2024-05" darf nicht VOR event "2024-05-08" stehen)
@@ -18,6 +27,7 @@
  *   node scripts/validate-timelines.js <slug-oder-datei> [<slug> ...]
  *   node scripts/validate-timelines.js --severity 2     # alle Sev-N MIT TL
  *   node scripts/validate-timelines.js --stdin          # Slugs/Zeile von stdin
+ *   node scripts/validate-timelines.js --all            # kompletter Korpus
  *
  * Exit 0 = keine ERRORs (WARNs erlaubt), Exit 1 = mindestens ein ERROR.
  */
@@ -215,9 +225,27 @@ function validateFile(slug, file, mapKeys) {
     if (tl.length < 4) errors.push(`nur ${tl.length} TL-Eintraege (min 4)`);
     if (tl.length > 6) errors.push(`${tl.length} TL-Eintraege (max 6)`);
 
-    const events = tl.filter(e => e.phase === 'event');
-    if (events.length !== 1) errors.push(`${events.length} event-Phasen (genau 1 erwartet)`);
     const VALID_PHASES = new Set(['infrastructure', 'doctrine', 'event', 'consequences']);
+    const count = p => tl.filter(e => e.phase === p).length;
+    const nEvent = count('event'), nInfra = count('infrastructure'), nDoc = count('doctrine'), nCons = count('consequences');
+    if (nEvent === 0) errors.push('0 event-Phasen (mindestens 1 erwartet)');
+    else if (nEvent > 3) warns.push(`${nEvent} event-Phasen (ungewoehnlich viele - Vorlaeufer eher als doctrine, Nachspiel als consequences taggen)`);
+    if (nInfra === 0 && nDoc === 0) errors.push('keine Vorgeschichte (weder infrastructure noch doctrine)');
+    else {
+      if (nInfra === 0) warns.push('keine infrastructure-Phase');
+      if (nDoc === 0) warns.push('keine doctrine-Phase');
+    }
+    if (nCons === 0) errors.push('0 consequences-Phasen (mindestens 1 erwartet)');
+
+    // Makro-Ordnung: Vorgeschichte (Rang 0) -> event (1) -> consequences (2).
+    // infrastructure und doctrine teilen sich Rang 0 und duerfen sich mischen -
+    // die Chronologie (unten) entscheidet ihre Reihenfolge, nicht das Label.
+    const RANK = { infrastructure: 0, doctrine: 0, event: 1, consequences: 2 };
+    for (let i = 1; i < tl.length; i++) {
+      const a = RANK[tl[i - 1].phase], b = RANK[tl[i].phase];
+      if (a === undefined || b === undefined) continue;
+      if (b < a) errors.push(`Phasen verschraenkt: [${i}] ${tl[i].phase} nach [${i - 1}] ${tl[i - 1].phase}`);
+    }
     tl.forEach((e, i) => {
       if (!VALID_PHASES.has(e.phase)) errors.push(`Eintrag ${i}: unbekannte Phase "${e.phase}"`);
       if (e.title !== e.title_de) errors.push(`Eintrag ${i}: title !== title_de`);
@@ -269,7 +297,7 @@ function validateFile(slug, file, mapKeys) {
   for (const k of mapHit.slice(0, 8)) errors.push(`Translit-Map-Wort "${k}" un-gefixt in DE-Feld`);
   // unbekannte Verdachts-Morpheme -> WARN
   const sm = deText.match(SUSPECT_RE);
-  if (sm) warns.push(`Verdachts-Transliteration nahe "${sm[2]}" in DE-Feld (manuell pruefen)`);
+  if (sm) warns.push(`Verdachts-Transliteration nahe "${sm[1]}" in DE-Feld (manuell pruefen)`);
   // doppelte Umlaute (Korruption durch Ueber-Regex)
   if (/[äöü]{2}/.test(deText)) warns.push('doppelter Umlaut [äöü]{2} in DE-Feld (moegliche Regex-Korruption)');
 
@@ -281,13 +309,15 @@ function main() {
   let slugs = [];
   if (argv[0] === '--severity') {
     slugs = listSeverity(argv[1]);
+  } else if (argv[0] === '--all') {
+    slugs = fs.readdirSync(INCIDENTS_DIR).filter(f => f.endsWith('.json')).map(f => f.replace(/.json$/, '')).sort();
   } else if (argv[0] === '--stdin') {
     const data = fs.readFileSync(0, 'utf8');
     slugs = data.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
   } else {
     slugs = argv.filter(a => !a.startsWith('--'));
   }
-  if (!slugs.length) { console.error('Keine Slugs. Nutzung: validate-timelines.js <slug...> | --severity N | --stdin'); process.exit(2); }
+  if (!slugs.length) { console.error('Keine Slugs. Nutzung: validate-timelines.js <slug...> | --severity N | --stdin | --all'); process.exit(2); }
 
   const mapKeys = loadMapKeys();
   let nErr = 0, nWarn = 0, nClean = 0;

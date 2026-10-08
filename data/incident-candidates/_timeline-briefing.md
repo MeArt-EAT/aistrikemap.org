@@ -19,6 +19,29 @@ nicht isoliert, sondern als Kausalkette gezeigt.
 Manche Faelle brauchen 4 Eintraege (1 pro Phase), manche 5-6 (z.B. 2
 consequences). Mindestens 4, hoechstens 6.
 
+## Phasen-Modell (Schema v1.1, Stand 2026-10-08) - was der Validator prueft
+
+- **Alle vier Phasen kommen vor.** Mindestens 1 infrastructure ODER doctrine
+  (Vorgeschichte) ist Pflicht; fehlt eine der beiden einzeln, ist das ein WARN
+  und soll vermieden werden. Mindestens 1 event, mindestens 1 consequences.
+- **Vorgeschichte in beliebiger Reihenfolge.** infrastructure und doctrine
+  ordnen sich NUR nach Datum: Eine Doktrin kann aelter sein als die
+  Infrastruktur (EU-Maschinenrichtlinie 2006 vor Roboter-Hochlauf 2011) oder
+  juenger (Dekret 2021 fuer Kameras von 2018). Beides ist korrekt - nicht die
+  Phase umtaggen, sondern chronologisch sortieren.
+- **Mehrere event-Eintraege sind erlaubt**, wenn das Ereignis selbst mehrstufig
+  ist (Festnahme + Urteil, Untersuchung + Bussgeld, erste Welle + zweite Welle).
+  Nicht mehr als 3. Ein Vorlaeufer-Ereignis, das den eigentlichen Vorfall nur
+  ermoeglicht hat, ist doctrine oder infrastructure; ein Nachspiel ist
+  consequences.
+- **Keine Verschraenkung.** Nach dem ersten event darf KEIN infrastructure/
+  doctrine mehr folgen, nach der ersten consequences KEIN event mehr. Wenn eine
+  Doktrin (Gesetz, Weisung) zeitlich zwischen zwei Ereignis-Stufen faellt, dann
+  war sie nicht die Vorbedingung des Vorfalls - entweder die aeltere Rechtsgrund-
+  lage als doctrine recherchieren (die galt schon vor dem Ereignis) oder den
+  Eintrag als consequences (Reaktion) bzw. event (Teil des Vorfalls) umtaggen.
+- **Chronologie strikt aufsteigend** ueber die gesamte Liste (siehe unten).
+
 ## Exakte Feld-Struktur pro Eintrag
 
 ```json
