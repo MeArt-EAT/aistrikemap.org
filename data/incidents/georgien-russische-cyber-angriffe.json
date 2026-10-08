@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/georgien-russische-cyber-angriffe",
-  "name": "Georgien: Russische Cyber-Angriffe und KI-gestützte Desinformationskampagnen",
-  "description": "Russland führt seit dem Krieg 2008 wiederholt massive Cyber-Angriffe und Desinformationskampagnen gegen Georgien durch. Der bislang schwerste Angriff 2019 legt Tausende georgische Websites lahm, darunter die des Präsidenten und mehrerer Fernsehsender. Das NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) in Tallinn dokumentiert die Angriffe als Teil einer hybriden Kriegsführungsstrategie. KI-gestützte Desinformationsnetzwerke verbreiten gezielt Falschinformationen vor Wahlen.",
+  "name": "Georgien: Russische Cyber-Angriffe und pro-russische Desinformationsnetzwerke",
+  "description": "Seit dem Krieg 2008 ist Georgien wiederholt Ziel von Cyber-Angriffen und Desinformationskampagnen. Bereits die DDoS-Angriffe während des Krieges 2008 wertet das NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) in Tallinn aus. Ein großangelegter Angriff im Oktober 2019 trifft Tausende georgische Websites, darunter die des Präsidenten, und unterbricht zwei Fernsehsender; Georgien, die USA und Großbritannien schreiben ihn 2020 offiziell dem russischen Militärgeheimdienst GRU zu. Vor den Parlamentswahlen 2020 entfernt Facebook inauthentische Netzwerke, darunter eines mit Verbindung zur pro-russischen Partei Allianz der Patrioten.",
   "startDate": "2008",
   "location": {
     "@type": "Place",
@@ -25,8 +25,7 @@
   },
   "asm:incidentType": [
     "censorship",
-    "political-pressure",
-    "deepfakes"
+    "political-pressure"
   ],
   "asm:affectedRights": [
     "Informationsfreiheit",
@@ -39,8 +38,7 @@
       "type": "military",
       "asm:systems": [
         "Sandworm APT-Gruppe",
-        "Bot-Netzwerke",
-        "Deepfake-Propaganda"
+        "Bot-Netzwerke"
       ],
       "name_de": "Russische Regierung / GRU (Militärgeheimdienst)",
       "name_en": "Russian Government / GRU (military intelligence)"
@@ -59,71 +57,79 @@
       "date": "2008-08",
       "phase": "infrastructure",
       "title": "Erste koordinierte Cyber-Angriffe parallel zum Krieg",
-      "description": "Synchron mit dem Einmarsch russischer Truppen in Südossetien werden georgische Regierungswebseiten, Nachrichtenportale und Kommunikationsinfrastruktur durch massive DDoS-Angriffe lahmgelegt. Es ist eines der ersten dokumentierten Beispiele koordinierter kinetischer und Cyber-Kriegsführung. Das NATO CCDCOE analysiert den Angriff als Präzedenzfall für hybride Kriegsführung. Die Urheberschaft wird russischen Nationalisten und staatlichen Akteuren zugeschrieben.",
-      "sources": [],
+      "description": "Parallel zum Einmarsch russischer Truppen in Südossetien im August 2008 werden georgische Regierungs-, Nachrichten- und Finanzwebseiten durch DDoS-Angriffe und Defacements lahmgelegt; laut einer Analyse des Modern War Institute der US-Militärakademie West Point sind 54 Websites betroffen, die Nationalbank setzt ihre elektronischen Dienste zeitweise aus. Die Angriffe gelten als eines der ersten Beispiele für Cyber-Angriffe im Gleichklang mit konventionellen Militäroperationen. Georgien beschuldigt Russland, Moskau bestreitet eine Beteiligung; eine eindeutige technische Zuordnung zu staatlichen Stellen gelingt nicht. Das NATO CCDCOE in Tallinn wertet die Angriffe noch 2008 in der Studie 'Cyber Attacks Against Georgia: Legal Lessons Identified' aus.",
+      "sources": [
+        "https://mwi.westpoint.edu/understanding-cyberwarfare-lessons-russia-georgia-war/",
+        "https://cyberlaw.ccdcoe.org/wiki/Georgia-Russia_conflict_(2008)"
+      ],
       "title_de": "Erste koordinierte Cyber-Angriffe parallel zum Krieg",
       "title_en": "First coordinated cyber attacks alongside the war",
-      "description_de": "Synchron mit dem Einmarsch russischer Truppen in Südossetien werden georgische Regierungswebseiten, Nachrichtenportale und Kommunikationsinfrastruktur durch massive DDoS-Angriffe lahmgelegt. Es ist eines der ersten dokumentierten Beispiele koordinierter kinetischer und Cyber-Kriegsführung. Das NATO CCDCOE analysiert den Angriff als Präzedenzfall für hybride Kriegsführung. Die Urheberschaft wird russischen Nationalisten und staatlichen Akteuren zugeschrieben.",
-      "description_en": "In sync with the Russian troop incursion into South Ossetia, Georgian government websites, news portals and communications infrastructure are paralyzed by massive DDoS attacks. It is one of the first documented examples of coordinated kinetic and cyber warfare. The NATO CCDCOE analyzes the attack as a precedent for hybrid warfare. Attribution points to Russian nationalists and state actors."
+      "description_de": "Parallel zum Einmarsch russischer Truppen in Südossetien im August 2008 werden georgische Regierungs-, Nachrichten- und Finanzwebseiten durch DDoS-Angriffe und Defacements lahmgelegt; laut einer Analyse des Modern War Institute der US-Militärakademie West Point sind 54 Websites betroffen, die Nationalbank setzt ihre elektronischen Dienste zeitweise aus. Die Angriffe gelten als eines der ersten Beispiele für Cyber-Angriffe im Gleichklang mit konventionellen Militäroperationen. Georgien beschuldigt Russland, Moskau bestreitet eine Beteiligung; eine eindeutige technische Zuordnung zu staatlichen Stellen gelingt nicht. Das NATO CCDCOE in Tallinn wertet die Angriffe noch 2008 in der Studie 'Cyber Attacks Against Georgia: Legal Lessons Identified' aus.",
+      "description_en": "Alongside the Russian troop incursion into South Ossetia in August 2008, Georgian government, news, and financial websites are knocked out by DDoS attacks and defacements; according to an analysis by West Point's Modern War Institute, 54 websites are affected, and the National Bank temporarily suspends its electronic services. The attacks are regarded as one of the first examples of cyber attacks coinciding with conventional military operations. Georgia accuses Russia, Moscow denies involvement; definitive technical attribution to state bodies remains elusive. In 2008 the NATO CCDCOE in Tallinn analyzes the attacks in the study 'Cyber Attacks Against Georgia: Legal Lessons Identified'."
     },
     {
       "date": "2019-10-28",
       "phase": "event",
-      "title": "Massiver Cyber-Angriff auf über 15.000 georgische Websites",
-      "description": "Ein koordinierter Angriff legt über 15.000 Websites in Georgien lahm, darunter die offizielle Website des Präsidenten, Gerichte, die Nationalbank und mehrere Fernsehsender. Bildschirme von Fernsehstationen zeigen das Foto des Ex-Präsidenten Saakaschwili mit der Aufschrift 'Ich werde zurückkehren'. Das georgische CERT und westliche Geheimdienste schreiben den Angriff der russischen GRU-Einheit Sandworm zu.",
-      "sources": [],
-      "title_de": "Massiver Cyber-Angriff auf über 15.000 georgische Websites",
-      "title_en": "Massive cyber attack on more than 15,000 Georgian websites",
-      "description_de": "Ein koordinierter Angriff legt über 15.000 Websites in Georgien lahm, darunter die offizielle Website des Präsidenten, Gerichte, die Nationalbank und mehrere Fernsehsender. Bildschirme von Fernsehstationen zeigen das Foto des Ex-Präsidenten Saakaschwili mit der Aufschrift 'Ich werde zurückkehren'. Das georgische CERT und westliche Geheimdienste schreiben den Angriff der russischen GRU-Einheit Sandworm zu.",
-      "description_en": "A coordinated attack paralyzes more than 15,000 websites in Georgia, including the President's official site, courts, the National Bank and several TV stations. Broadcaster screens display a photo of former President Saakashvili with the caption 'Ich werde zurückkehren' [I will return]. The Georgian CERT and Western intelligence services attribute the attack to the Russian GRU unit Sandworm."
+      "title": "Massiver Cyber-Angriff auf Tausende georgische Websites",
+      "description": "Am 28. Oktober 2019 werden bei einem koordinierten Angriff, der unter anderem den Hosting-Anbieter Proservice trifft, Tausende georgische Websites verunstaltet oder lahmgelegt, darunter die des Präsidenten, von Gerichten, Stadtparlamenten, NGOs und Medien; lokale Schätzungen sprechen von bis zu 15.000 Seiten. Die verunstalteten Seiten zeigen ein Foto des Ex-Präsidenten Micheil Saakaschwili mit der Aufschrift 'I'll be back'; der Sendebetrieb der Fernsehsender Imedi und Maestro wird unterbrochen. Am 20. Februar 2020 schreiben Georgien, die USA und Großbritannien den Angriff offiziell dem russischen Militärgeheimdienst GRU zu (Hauptzentrum für Spezialtechnologien GTsST, Einheit 74455, auch bekannt als Sandworm); Russland bestreitet dies.",
+      "sources": [
+        "https://www.rferl.org/a/us-britain-estonia-accuse-russia-cyberattacks-georgia/30471492.html",
+        "https://grass.org.ge/en/statement/1458-georgias-reforms-associates-grass-statement-on-russias-cyber-attack-against-georgia-on-october-28-2019"
+      ],
+      "title_de": "Massiver Cyber-Angriff auf Tausende georgische Websites",
+      "title_en": "Massive cyber attack on thousands of Georgian websites",
+      "description_de": "Am 28. Oktober 2019 werden bei einem koordinierten Angriff, der unter anderem den Hosting-Anbieter Proservice trifft, Tausende georgische Websites verunstaltet oder lahmgelegt, darunter die des Präsidenten, von Gerichten, Stadtparlamenten, NGOs und Medien; lokale Schätzungen sprechen von bis zu 15.000 Seiten. Die verunstalteten Seiten zeigen ein Foto des Ex-Präsidenten Micheil Saakaschwili mit der Aufschrift 'I'll be back'; der Sendebetrieb der Fernsehsender Imedi und Maestro wird unterbrochen. Am 20. Februar 2020 schreiben Georgien, die USA und Großbritannien den Angriff offiziell dem russischen Militärgeheimdienst GRU zu (Hauptzentrum für Spezialtechnologien GTsST, Einheit 74455, auch bekannt als Sandworm); Russland bestreitet dies.",
+      "description_en": "On October 28, 2019, a coordinated attack that also hits the hosting provider Proservice defaces or knocks out thousands of Georgian websites, including those of the President, courts, city assemblies, NGOs, and media outlets; local estimates speak of up to 15,000 pages. The defaced pages show a photo of former President Mikheil Saakashvili with the caption 'I'll be back'; broadcasting at the TV stations Imedi and Maestro is interrupted. On February 20, 2020, Georgia, the United States, and the United Kingdom officially attribute the attack to Russia's GRU military intelligence (Main Center for Special Technologies GTsST, Unit 74455, also known as Sandworm); Russia denies this."
     },
     {
       "date": "2020-10",
       "phase": "event",
-      "title": "KI-Desinformationsnetzwerke vor Parlamentswahlen",
-      "description": "Vor den georgischen Parlamentswahlen im Oktober 2020 identifiziert das DFRLab koordinierte Desinformationsnetzwerke, die mit KI-generierten Inhalten und gefälschten Konten operieren. Die Kampagnen verbreiten Narrative über NATO-Gegnerschaft und pro-russische Kandidaten. Facebook/Meta entfernt mehrere Netzwerke mit Verbindungen zu russischen staatlichen Medien. Deepfake-Videos georgischer Politiker kursieren in sozialen Medien.",
+      "title": "Inauthentische Netzwerke vor den Parlamentswahlen",
+      "description": "Kurz vor den georgischen Parlamentswahlen am 31. Oktober 2020 entfernt Facebook ein vom DFRLab analysiertes Netzwerk aus Seiten, Gruppen und gefälschten Konten mit Verbindung zur offen pro-russischen Partei Allianz der Patrioten, das ein georgisches Publikum mit Inhalten zu Politik und Wahlen ansprach; eine Recherche des Dossier Center hatte berichtet, die Partei werde direkt vom Kreml finanziert. Bereits am 23. Oktober 2020 entfernt Facebook zudem rund 130 Konten, Seiten und Gruppen mit Verbindung zur rechtsextremen Gruppe Alt-Info; beide Löschungen macht Facebook Anfang November 2020 öffentlich.",
       "sources": [
-        "https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/"
+        "https://dfrlab.org/2020/11/06/facebook-removes-inauthentic-network-connected-to-georgian-pro-kremlin-party",
+        "https://dfrlab.org/2020/11/06/facebook-removes-inauthentic-assets-connected-to-georgian-far-right-group-alt-info"
       ],
-      "title_de": "KI-Desinformationsnetzwerke vor Parlamentswahlen",
-      "title_en": "AI disinformation networks ahead of parliamentary elections",
-      "description_de": "Vor den georgischen Parlamentswahlen im Oktober 2020 identifiziert das DFRLab koordinierte Desinformationsnetzwerke, die mit KI-generierten Inhalten und gefälschten Konten operieren. Die Kampagnen verbreiten Narrative über NATO-Gegnerschaft und pro-russische Kandidaten. Facebook/Meta entfernt mehrere Netzwerke mit Verbindungen zu russischen staatlichen Medien. Deepfake-Videos georgischer Politiker kursieren in sozialen Medien.",
-      "description_en": "In the run-up to Georgia's October 2020 parliamentary elections, the DFRLab identifies coordinated disinformation networks operating with AI-generated content and fake accounts. The campaigns push narratives of NATO hostility and pro-Russian candidates. Facebook/Meta removes several networks linked to Russian state media. Deepfake videos of Georgian politicians circulate on social media."
+      "title_de": "Inauthentische Netzwerke vor den Parlamentswahlen",
+      "title_en": "Inauthentic networks ahead of parliamentary elections",
+      "description_de": "Kurz vor den georgischen Parlamentswahlen am 31. Oktober 2020 entfernt Facebook ein vom DFRLab analysiertes Netzwerk aus Seiten, Gruppen und gefälschten Konten mit Verbindung zur offen pro-russischen Partei Allianz der Patrioten, das ein georgisches Publikum mit Inhalten zu Politik und Wahlen ansprach; eine Recherche des Dossier Center hatte berichtet, die Partei werde direkt vom Kreml finanziert. Bereits am 23. Oktober 2020 entfernt Facebook zudem rund 130 Konten, Seiten und Gruppen mit Verbindung zur rechtsextremen Gruppe Alt-Info; beide Löschungen macht Facebook Anfang November 2020 öffentlich.",
+      "description_en": "Shortly before Georgia's parliamentary elections on October 31, 2020, Facebook removes a network of pages, groups, and fake accounts analyzed by the DFRLab and linked to the openly pro-Russian Alliance of Patriots party, which targeted a Georgian audience with content on politics and elections; an investigation by the Dossier Center had reported that the party is directly financed by the Kremlin. On October 23, 2020 Facebook also removes about 130 accounts, pages, and groups linked to the far-right group Alt-Info; Facebook discloses both takedowns in early November 2020."
     },
     {
-      "date": "2024",
+      "date": "2024-06",
       "phase": "consequences",
-      "title": "Anhaltende hybride Bedrohung und NATO-Beitrittsdebatte",
-      "description": "Georgien bleibt ein primäres Ziel russischer hybrider Einflussoperationen. Die politischen Proteste 2023/2024 gegen das 'Ausländische Agenten'-Gesetz werden von koordinierten Desinformationskampagnen begleitet. Das NATO CCDCOE stuft Georgien als eines der am stärksten bedrohten Länder in Europa ein. Die EU und NATO intensivieren Cyber-Kapazitätsaufbau-Programme.",
+      "title": "Russland-nahe Desinformation gegen Proteste zum Agentengesetz",
+      "description": "Während der Massenproteste gegen das Gesetz über 'ausländische Agenten', das die Regierungspartei Georgischer Traum im Mai 2024 durchsetzt, identifiziert das DFRLab knapp 40 verdächtige, im Mai 2024 angelegte Konten auf X, die auf Beiträge von US-Accounts antworten und die Proteste als von den USA gesteuert darstellen. Das DFRLab schreibt die Kampagne wahrscheinlich dem mit Russland verbundenen Netzwerk Doppelgänger zu; die Konten werden meist binnen weniger Tage entfernt, bilden laut DFRLab aber nur einen Teil des Netzwerks.",
       "sources": [
-        "https://ccdcoe.org/research/tallinn-manual/"
+        "https://dfrlab.org/2024/06/03/doppelganger-targets-us-audience-on-x-to-discredit-georgian-protests/",
+        "https://www.rferl.org/a/fake-news-x-georgian-protests/32983387.html"
       ],
-      "title_de": "Anhaltende hybride Bedrohung und NATO-Beitrittsdebatte",
-      "title_en": "Ongoing hybrid threat and NATO accession debate",
-      "description_de": "Georgien bleibt ein primäres Ziel russischer hybrider Einflussoperationen. Die politischen Proteste 2023/2024 gegen das 'Ausländische Agenten'-Gesetz werden von koordinierten Desinformationskampagnen begleitet. Das NATO CCDCOE stuft Georgien als eines der am stärksten bedrohten Länder in Europa ein. Die EU und NATO intensivieren Cyber-Kapazitätsaufbau-Programme.",
-      "description_en": "Georgia remains a prime target of Russian hybrid influence operations. The 2023/2024 political protests against the 'foreign agents' law are accompanied by coordinated disinformation campaigns. The NATO CCDCOE classifies Georgia as one of the most heavily threatened countries in Europe. The EU and NATO intensify cyber capacity-building programs."
+      "title_de": "Russland-nahe Desinformation gegen Proteste zum Agentengesetz",
+      "title_en": "Russia-linked disinformation against protests over the foreign agents law",
+      "description_de": "Während der Massenproteste gegen das Gesetz über 'ausländische Agenten', das die Regierungspartei Georgischer Traum im Mai 2024 durchsetzt, identifiziert das DFRLab knapp 40 verdächtige, im Mai 2024 angelegte Konten auf X, die auf Beiträge von US-Accounts antworten und die Proteste als von den USA gesteuert darstellen. Das DFRLab schreibt die Kampagne wahrscheinlich dem mit Russland verbundenen Netzwerk Doppelgänger zu; die Konten werden meist binnen weniger Tage entfernt, bilden laut DFRLab aber nur einen Teil des Netzwerks.",
+      "description_en": "During the mass protests against the 'foreign agents' law that the ruling Georgian Dream party pushes through in May 2024, the DFRLab identifies nearly 40 suspicious X accounts created in May 2024 that reply to posts by U.S. accounts and portray the protests as orchestrated by the United States. The DFRLab assesses that the campaign was likely run by the Russia-linked network Doppelgänger; the accounts are usually removed within a few days but, according to the DFRLab, represent only part of the network."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/",
-      "title": "Digital Forensic Research Lab (DFRLab) - Georgia Investigations",
+      "url": "https://dfrlab.org/2020/11/06/facebook-removes-inauthentic-network-connected-to-georgian-pro-kremlin-party",
+      "title": "Facebook removes inauthentic network connected to Georgian pro-Kremlin party",
       "publisher": "Atlantic Council / DFRLab",
-      "date": "2021",
+      "date": "2020-11-06",
       "type": "research-paper",
       "asm:linkHealth": "ok",
-      "title_de": "Digital Forensic Research Lab (DFRLab) - Georgia Investigations",
-      "title_en": "Digital Forensic Research Lab (DFRLab) - Georgia Investigations"
+      "title_de": "Facebook removes inauthentic network connected to Georgian pro-Kremlin party",
+      "title_en": "Facebook removes inauthentic network connected to Georgian pro-Kremlin party"
     },
     {
-      "url": "https://ccdcoe.org/research/tallinn-manual/",
-      "title": "Tallinn Manual on the International Law Applicable to Cyber Operations",
-      "publisher": "NATO CCDCOE",
-      "date": "2017",
-      "type": "research-paper",
+      "url": "https://www.rferl.org/a/us-britain-estonia-accuse-russia-cyberattacks-georgia/30471492.html",
+      "title": "U.S., Britain Again Accuse Russia Of Cyberattacks On Georgia",
+      "publisher": "Radio Free Europe/Radio Liberty",
+      "date": "2020-03-06",
+      "type": "news-article",
       "asm:linkHealth": "ok",
-      "title_de": "Tallinn Manual on the International Law Applicable to Cyber Operations",
-      "title_en": "Tallinn Manual on the International Law Applicable to Cyber Operations"
+      "title_de": "U.S., Britain Again Accuse Russia Of Cyberattacks On Georgia",
+      "title_en": "U.S., Britain Again Accuse Russia Of Cyberattacks On Georgia"
     }
   ],
   "asm:metadata": {
@@ -131,12 +137,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: removed the unsupported 'AI-driven' attribution, since the documented 2020 networks used fake accounts and pages but no evidence of AI-generated content or deepfakes was found. Slug unchanged for permalink stability."
   },
-  "name_de": "Georgien: Russische Cyber-Angriffe und KI-gestützte Desinformationskampagnen",
-  "name_en": "Georgia: Russian cyber attacks and AI-driven disinformation campaigns",
-  "description_de": "Russland führt seit dem Krieg 2008 wiederholt massive Cyber-Angriffe und Desinformationskampagnen gegen Georgien durch. Der bislang schwerste Angriff 2019 legt Tausende georgische Websites lahm, darunter die des Präsidenten und mehrerer Fernsehsender. Das NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) in Tallinn dokumentiert die Angriffe als Teil einer hybriden Kriegsführungsstrategie. KI-gestützte Desinformationsnetzwerke verbreiten gezielt Falschinformationen vor Wahlen.",
-  "description_en": "Since the 2008 war, Russia has repeatedly carried out massive cyber attacks and disinformation campaigns against Georgia. The most severe attack to date, in 2019, paralyzed thousands of Georgian websites, including those of the President and several TV broadcasters. The NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) in Tallinn documents the attacks as part of a hybrid warfare strategy. AI-driven disinformation networks deliberately spread false information ahead of elections.",
+  "name_de": "Georgien: Russische Cyber-Angriffe und pro-russische Desinformationsnetzwerke",
+  "name_en": "Georgia: Russian cyber attacks and pro-Russian disinformation networks",
+  "description_de": "Seit dem Krieg 2008 ist Georgien wiederholt Ziel von Cyber-Angriffen und Desinformationskampagnen. Bereits die DDoS-Angriffe während des Krieges 2008 wertet das NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) in Tallinn aus. Ein großangelegter Angriff im Oktober 2019 trifft Tausende georgische Websites, darunter die des Präsidenten, und unterbricht zwei Fernsehsender; Georgien, die USA und Großbritannien schreiben ihn 2020 offiziell dem russischen Militärgeheimdienst GRU zu. Vor den Parlamentswahlen 2020 entfernt Facebook inauthentische Netzwerke, darunter eines mit Verbindung zur pro-russischen Partei Allianz der Patrioten.",
+  "description_en": "Since the 2008 war, Georgia has repeatedly been the target of cyber attacks and disinformation campaigns. The NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE) in Tallinn analyzes the DDoS attacks during the 2008 war as early as 2008. A large-scale attack in October 2019 hits thousands of Georgian websites, including the President's, and interrupts two TV broadcasters; in 2020 Georgia, the United States, and the United Kingdom officially attribute it to Russia's GRU military intelligence. Ahead of the 2020 parliamentary elections, Facebook removes inauthentic networks, including one linked to the pro-Russian Alliance of Patriots party.",
   "asm:affectedRights_de": [
     "Informationsfreiheit",
     "Demokratische Partizipation",
