@@ -5,12 +5,12 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/uk-ki-wohlfahrt-universal-credit",
-  "name": "UK: Universal Credit - automatisierte Sanktionen treffen Sozialleistungsempfanger",
-  "description": "Das britische Universal-Credit-System des Department for Work and Pensions (DWP) setzt seit 2013 algorithmische Entscheidungssysteme ein, um Anspruche auf Sozialleistungen zu prüfen und Sanktionen zu verhängen. Tausende Antragsteller wurden durch fehlerhafte automatisierte Bescheide unrechtmassig bestraft: Zahlungen wurden gestrichen, obwohl keine Regelverstobe vorlagen. Der National Audit Office (NAO) kritisierte 2019 massive Fehlerquoten; Betroffene klagten ab 2023 vor dem High Court.",
+  "name": "UK: Universal Credit - automatisierte Leistungsberechnung verursacht Härten für Sozialleistungsbeziehende",
+  "description": "Das Universal-Credit-System des britischen Department for Work and Pensions (DWP) berechnet Sozialleistungen seit 2013 weitgehend automatisiert anhand starrer monatlicher Bewertungszeiträume. Der National Audit Office (NAO) stellte 2018 fest, dass 2017 rund ein Viertel der Neuantragstellenden nicht rechtzeitig die volle Leistung erhielt, und sah Belege für Härten. Gerichte erklärten 2019 und 2020 die starre Einkommensberechnung bei verschobenen Zahltagen für rechtswidrig; Human Rights Watch machte 2020 den Berechnungsalgorithmus für Hunger und Verschuldung von Betroffenen mitverantwortlich.",
   "startDate": "2013-04",
   "location": {
     "@type": "Place",
-    "name": "London, Vereinigtes Konigreich",
+    "name": "London, Vereinigtes Königreich",
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 51.5074,
@@ -20,7 +20,7 @@
       "@type": "PostalAddress",
       "addressCountry": "GB"
     },
-    "name_de": "London, Vereinigtes Konigreich",
+    "name_de": "London, Vereinigtes Königreich",
     "name_en": "London, United Kingdom"
   },
   "asm:incidentType": [
@@ -52,49 +52,71 @@
       "date": "2013-04",
       "phase": "infrastructure",
       "title": "Einführung von Universal Credit",
-      "description": "Das DWP beginnt mit dem schrittweisen Rollout von Universal Credit, das sechs bestehende Sozialleistungen in einem automatisierten System zusammenfuhrt. Algorithmische Prufmechanismen sollen Betrug erkennen und Anspruche ohne menschliche Prüfung berechnen. Kritiker warnen fruhzeitig vor mangelnder Transparenz.",
+      "description": "Das DWP beginnt mit dem schrittweisen Rollout von Universal Credit, das sechs bestehende Sozialleistungen zu einer monatlichen Zahlung zusammenführt. Die Leistungshöhe wird je monatlichem Bewertungszeitraum anhand des in diesem Kalendermonat erhaltenen Einkommens berechnet. Der National Audit Office kritisiert im September 2013 schwaches Management und Probleme bei den IT-Systemen des Programms.",
       "sources": [
-        "https://www.nao.org.uk/report/universal-credit/"
+        "https://www.nao.org.uk/report/universal-credit/",
+        "https://www.hrw.org/news/2020/09/29/uk-automated-benefits-system-failing-people-need"
       ],
       "title_de": "Einführung von Universal Credit",
-      "description_de": "Das DWP beginnt mit dem schrittweisen Rollout von Universal Credit, das sechs bestehende Sozialleistungen in einem automatisierten System zusammenfuhrt. Algorithmische Prufmechanismen sollen Betrug erkennen und Anspruche ohne menschliche Prüfung berechnen. Kritiker warnen fruhzeitig vor mangelnder Transparenz.",
+      "description_de": "Das DWP beginnt mit dem schrittweisen Rollout von Universal Credit, das sechs bestehende Sozialleistungen zu einer monatlichen Zahlung zusammenführt. Die Leistungshöhe wird je monatlichem Bewertungszeitraum anhand des in diesem Kalendermonat erhaltenen Einkommens berechnet. Der National Audit Office kritisiert im September 2013 schwaches Management und Probleme bei den IT-Systemen des Programms.",
       "title_en": "Introduction of Universal Credit",
-      "description_en": "The DWP begins the gradual rollout of Universal Credit, which merges six existing benefits into a single automated system. Algorithmic verification mechanisms are intended to detect fraud and calculate entitlements without human review. Critics warn early on of a lack of transparency."
+      "description_en": "The DWP begins the gradual rollout of Universal Credit, which merges six existing benefits into a single monthly payment. The award is calculated for each monthly assessment period based on the income received in that calendar month. In September 2013 the National Audit Office criticises weak management and problems with the programme's IT systems."
     },
     {
-      "date": "2018-01",
+      "date": "2016-05",
       "phase": "doctrine",
-      "title": "Algorithmische Sanktionen skalieren landesweit",
-      "description": "Der landesweite Rollout verschärft die Probleme: Automatisierte Bescheide verhängen Sanktionen für angebliche Regelverstöße, ohne dass Betroffene vorab benachrichtigt oder angehart werden. Alleinerziehende, Menschen mit Behinderungen und Obdachlose sind überproportional betroffen. Lebensmittelbanken berichten von massivem Anstieg der Nachfrage.",
-      "sources": [],
-      "title_de": "Algorithmische Sanktionen skalieren landesweit",
-      "description_de": "Der landesweite Rollout verschärft die Probleme: Automatisierte Bescheide verhängen Sanktionen für angebliche Regelverstöße, ohne dass Betroffene vorab benachrichtigt oder angehart werden. Alleinerziehende, Menschen mit Behinderungen und Obdachlose sind überproportional betroffen. Lebensmittelbanken berichten von massivem Anstieg der Nachfrage.",
-      "title_en": "Algorithmic sanctions scale nationwide",
-      "description_en": "The nationwide rollout exacerbates problems: automated notices impose sanctions for alleged rule violations without informing or hearing those affected beforehand. Single parents, people with disabilities and homeless people are disproportionately affected. Food banks report a massive increase in demand."
-    },
-    {
-      "date": "2019-06",
-      "phase": "event",
-      "title": "NAO-Bericht dokumentiert systemische Fehler",
-      "description": "Der National Audit Office veröffentlicht einen vernichtenden Bericht: Das System versagt bei vulnerablen Gruppen, Fehlerraten bei automatisierten Bescheiden sind nicht ausreichend dokumentiert, und Betroffene haben kaum Möglichkeiten, gegen algorithmische Entscheidungen Widerspruch einzulegen. Mindestens 2,5 Millionen Haushalte sind zum Zeitpunkt des Berichts betroffen.",
+      "title": "'Digital by default': digitaler Full Service wird landesweit ausgerollt",
+      "description": "Ab Mai 2016 rollt das DWP den selbst entwickelten digitalen 'Full Service' landesweit aus, der bis Dezember 2018 auf über 700 Jobcenter ausgeweitet wird. Nach dem Prinzip 'digital by default' sollen nahezu alle Anträge online über ein Nutzerkonto verwaltet werden. Forschende bezeichnen Universal Credit als erste 'digital by design' konzipierte Sozialleistung Großbritanniens und verweisen auf die digitale Kluft.",
       "sources": [
-        "https://www.nao.org.uk/report/rolling-out-universal-credit/"
+        "https://www.computerweekly.com/news/252454303/DWP-completes-Universal-Credit-roll-out",
+        "https://www.cambridge.org/core/journals/social-policy-and-society/article/universal-credit-and-automated-decision-making-a-case-of-the-digital-tail-wagging-the-policy-dog/BD9DB169975EFBD630E0159C7EDB2A3E"
       ],
-      "title_de": "NAO-Bericht dokumentiert systemische Fehler",
-      "description_de": "Der National Audit Office veröffentlicht einen vernichtenden Bericht: Das System versagt bei vulnerablen Gruppen, Fehlerraten bei automatisierten Bescheiden sind nicht ausreichend dokumentiert, und Betroffene haben kaum Möglichkeiten, gegen algorithmische Entscheidungen Widerspruch einzulegen. Mindestens 2,5 Millionen Haushalte sind zum Zeitpunkt des Berichts betroffen.",
-      "title_en": "NAO report documents systemic failures",
-      "description_en": "The National Audit Office publishes a damning report: the system fails vulnerable groups, error rates in automated decisions are not adequately documented, and those affected have hardly any avenues to challenge algorithmic decisions. At least 2.5 million households are affected by the time of the report."
+      "title_de": "'Digital by default': digitaler Full Service wird landesweit ausgerollt",
+      "description_de": "Ab Mai 2016 rollt das DWP den selbst entwickelten digitalen 'Full Service' landesweit aus, der bis Dezember 2018 auf über 700 Jobcenter ausgeweitet wird. Nach dem Prinzip 'digital by default' sollen nahezu alle Anträge online über ein Nutzerkonto verwaltet werden. Forschende bezeichnen Universal Credit als erste 'digital by design' konzipierte Sozialleistung Großbritanniens und verweisen auf die digitale Kluft.",
+      "title_en": "'Digital by default': digital full service rolled out nationwide",
+      "description_en": "From May 2016 the DWP rolls out its in-house digital 'full service' nationwide, extending it to more than 700 jobcentres by December 2018. Under the 'digital by default' principle, nearly all claims are to be managed online through a user account. Researchers describe Universal Credit as the UK's first 'digital by design' benefit and point to the digital divide."
     },
     {
-      "date": "2023-03",
+      "date": "2018-06-15",
+      "phase": "event",
+      "title": "NAO-Bericht: verspätete Zahlungen und Härten beim Rollout",
+      "description": "Der National Audit Office veröffentlicht den Bericht 'Rolling out Universal Credit': Das Programm habe keinen ausreichenden Gegenwert geliefert, und es sei ungewiss, ob es das je tun werde. 2017 erhielt rund ein Viertel der Neuantragstellenden (113.000) die volle Leistung nicht rechtzeitig; vier von zehn befragten Beziehenden berichteten von finanziellen Schwierigkeiten. Das DWP bestreitet, dass Universal Credit Härten verursacht habe, doch der NAO sieht Belege lokaler und nationaler Stellen für Not während des Rollouts, etwa steigende Mietrückstände.",
+      "sources": [
+        "https://www.nao.org.uk/report/rolling-out-universal-credit/",
+        "https://www.nao.org.uk/wp-content/uploads/2018/06/Rolling-Out-Universal-Credit-Press-notice.pdf"
+      ],
+      "title_de": "NAO-Bericht: verspätete Zahlungen und Härten beim Rollout",
+      "description_de": "Der National Audit Office veröffentlicht den Bericht 'Rolling out Universal Credit': Das Programm habe keinen ausreichenden Gegenwert geliefert, und es sei ungewiss, ob es das je tun werde. 2017 erhielt rund ein Viertel der Neuantragstellenden (113.000) die volle Leistung nicht rechtzeitig; vier von zehn befragten Beziehenden berichteten von finanziellen Schwierigkeiten. Das DWP bestreitet, dass Universal Credit Härten verursacht habe, doch der NAO sieht Belege lokaler und nationaler Stellen für Not während des Rollouts, etwa steigende Mietrückstände.",
+      "title_en": "NAO report: late payments and hardship during rollout",
+      "description_en": "The National Audit Office publishes its report 'Rolling out Universal Credit': the programme has not delivered value for money and it is uncertain that it ever will. In 2017 around a quarter of new claimants (113,000) were not paid in full on time; four in ten surveyed claimants reported financial difficulties. The DWP does not accept that Universal Credit has caused hardship, but the NAO sees evidence from local and national bodies of hardship during the rollout, such as rising rent arrears."
+    },
+    {
+      "date": "2019-01 bis 2020-06",
       "phase": "consequences",
-      "title": "High-Court-Klagen und politischer Druck",
-      "description": "Die Child Poverty Action Group und einzelne Klager fechten vor dem High Court an, dass automatisierte Entscheidungen ohne echte menschliche Prüfung Menschenrechte verletzen. Das DWP wird verpflichtet, bestimmte Entscheidungsprozesse offenzulegen. Parlamentarische Anfragen fordern ein Moratorium für algorithmische Sanktionen.",
-      "sources": [],
-      "title_de": "High-Court-Klagen und politischer Druck",
-      "description_de": "Die Child Poverty Action Group und einzelne Klager fechten vor dem High Court an, dass automatisierte Entscheidungen ohne echte menschliche Prüfung Menschenrechte verletzen. Das DWP wird verpflichtet, bestimmte Entscheidungsprozesse offenzulegen. Parlamentarische Anfragen fordern ein Moratorium für algorithmische Sanktionen.",
-      "title_en": "High Court challenges and political pressure",
-      "description_en": "The Child Poverty Action Group and individual claimants challenge before the High Court the argument that automated decisions without genuine human review violate human rights. The DWP is required to disclose certain decision-making processes. Parliamentary inquiries call for a moratorium on algorithmic sanctions."
+      "title": "Gerichte: starre Einkommensberechnung bei verschobenen Zahltagen rechtswidrig",
+      "description": "Vier alleinerziehende Mütter, drei davon vertreten von der Child Poverty Action Group, klagen gegen die starre Monatsberechnung: Wird ihr Gehalt wegen eines Wochenendes oder Feiertags früher gezahlt, zählt das System zwei Gehälter in einem Bewertungszeitraum, und ihre Leistung sinkt stark. Der High Court gibt ihnen im Januar 2019 recht; der Court of Appeal erklärt am 22. Juni 2020 die Weigerung des DWP, das Problem zu beheben, für irrational und rechtswidrig. Bis zu 85.000 Beziehende können betroffen sein; die Regierung verzichtet auf Rechtsmittel.",
+      "sources": [
+        "https://cpag.org.uk/welfare-rights/legal-test-cases/universal-credit-assessment-period-inflexibility",
+        "https://www.leighday.co.uk/news/news/2020-news/four-single-mums-win-court-of-appeal-universal-credit-case"
+      ],
+      "title_de": "Gerichte: starre Einkommensberechnung bei verschobenen Zahltagen rechtswidrig",
+      "description_de": "Vier alleinerziehende Mütter, drei davon vertreten von der Child Poverty Action Group, klagen gegen die starre Monatsberechnung: Wird ihr Gehalt wegen eines Wochenendes oder Feiertags früher gezahlt, zählt das System zwei Gehälter in einem Bewertungszeitraum, und ihre Leistung sinkt stark. Der High Court gibt ihnen im Januar 2019 recht; der Court of Appeal erklärt am 22. Juni 2020 die Weigerung des DWP, das Problem zu beheben, für irrational und rechtswidrig. Bis zu 85.000 Beziehende können betroffen sein; die Regierung verzichtet auf Rechtsmittel.",
+      "title_en": "Courts: rigid income calculation for shifted paydays unlawful",
+      "description_en": "Four single mothers, three of them represented by the Child Poverty Action Group, challenge the rigid monthly calculation: when their salary is paid early because of a weekend or bank holiday, the system counts two salaries in one assessment period and their award drops sharply. The High Court rules in their favour in January 2019; on 22 June 2020 the Court of Appeal finds the DWP's refusal to fix the problem irrational and unlawful. Up to 85,000 claimants may be affected; the government decides not to appeal."
+    },
+    {
+      "date": "2020-09",
+      "phase": "consequences",
+      "title": "Human Rights Watch: 'Automated Hardship'",
+      "description": "Human Rights Watch veröffentlicht den Bericht 'Automated Hardship': Der schlecht konzipierte Berechnungsalgorithmus von Universal Credit berücksichtige nur die im Kalendermonat erhaltenen Löhne, überschätze bei mehrfach im Monat Bezahlten das Einkommen und kürze die Leistung drastisch; Betroffene litten unter Hunger, Schulden und psychischer Belastung. HRW kritisiert zudem Hürden beim Online-Zugang und fordert eine umfassende Neugestaltung der Berechnung.",
+      "sources": [
+        "https://www.hrw.org/news/2020/09/29/uk-automated-benefits-system-failing-people-need",
+        "https://www.bigissue.com/latest/flawed-universal-credit-algorithm-is-pushing-people-into-poverty/"
+      ],
+      "title_de": "Human Rights Watch: 'Automated Hardship'",
+      "description_de": "Human Rights Watch veröffentlicht den Bericht 'Automated Hardship': Der schlecht konzipierte Berechnungsalgorithmus von Universal Credit berücksichtige nur die im Kalendermonat erhaltenen Löhne, überschätze bei mehrfach im Monat Bezahlten das Einkommen und kürze die Leistung drastisch; Betroffene litten unter Hunger, Schulden und psychischer Belastung. HRW kritisiert zudem Hürden beim Online-Zugang und fordert eine umfassende Neugestaltung der Berechnung.",
+      "title_en": "Human Rights Watch: 'Automated Hardship'",
+      "description_en": "Human Rights Watch publishes its report 'Automated Hardship': Universal Credit's poorly designed calculation algorithm only considers wages received within a calendar month, overestimates the earnings of people paid several times a month and drastically cuts their payments; those affected go hungry, fall into debt and experience psychological distress. HRW also criticises barriers to online access and calls for a comprehensive redesign of the calculation."
     }
   ],
   "asm:sources": [
@@ -102,7 +124,7 @@
       "url": "https://www.nao.org.uk/report/rolling-out-universal-credit/",
       "title": "Rolling out Universal Credit",
       "publisher": "National Audit Office",
-      "date": "2019-06-15",
+      "date": "2018-06-15",
       "type": "government-document",
       "asm:linkHealth": "ok",
       "title_de": "Rolling out Universal Credit",
@@ -124,18 +146,19 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: Universal Credit sanctions are not imposed automatically; the documented harms stem from the automated monthly benefit calculation. Slug unchanged for permalink stability."
   },
-  "name_de": "UK: Universal Credit - automatisierte Sanktionen treffen Sozialleistungsempfanger",
-  "description_de": "Das britische Universal-Credit-System des Department for Work and Pensions (DWP) setzt seit 2013 algorithmische Entscheidungssysteme ein, um Anspruche auf Sozialleistungen zu prüfen und Sanktionen zu verhängen. Tausende Antragsteller wurden durch fehlerhafte automatisierte Bescheide unrechtmassig bestraft: Zahlungen wurden gestrichen, obwohl keine Regelverstobe vorlagen. Der National Audit Office (NAO) kritisierte 2019 massive Fehlerquoten; Betroffene klagten ab 2023 vor dem High Court.",
+  "name_de": "UK: Universal Credit - automatisierte Leistungsberechnung verursacht Härten für Sozialleistungsbeziehende",
+  "description_de": "Das Universal-Credit-System des britischen Department for Work and Pensions (DWP) berechnet Sozialleistungen seit 2013 weitgehend automatisiert anhand starrer monatlicher Bewertungszeiträume. Der National Audit Office (NAO) stellte 2018 fest, dass 2017 rund ein Viertel der Neuantragstellenden nicht rechtzeitig die volle Leistung erhielt, und sah Belege für Härten. Gerichte erklärten 2019 und 2020 die starre Einkommensberechnung bei verschobenen Zahltagen für rechtswidrig; Human Rights Watch machte 2020 den Berechnungsalgorithmus für Hunger und Verschuldung von Betroffenen mitverantwortlich.",
   "asm:affectedRights_de": [
     "Recht auf soziale Sicherheit",
     "Recht auf ein faires Verfahren",
     "Recht auf Existenzminimum",
     "Recht auf Privatsphäre"
   ],
-  "name_en": "UK: Universal Credit - automated sanctions hit welfare recipients",
-  "description_en": "Since 2013, the UK's Universal Credit system run by the Department for Work and Pensions (DWP) has used algorithmic decision systems to assess welfare entitlements and impose sanctions. Thousands of applicants have been unlawfully penalized by faulty automated decisions: payments were withdrawn even where no rule violations had occurred. The National Audit Office (NAO) criticized massive error rates in 2019; affected claimants began legal action before the High Court from 2023.",
+  "name_en": "UK: Universal Credit - automated benefit calculation causes hardship for welfare claimants",
+  "description_en": "Since 2013, the UK's Universal Credit system run by the Department for Work and Pensions (DWP) has calculated benefits in a largely automated way based on rigid monthly assessment periods. In 2018 the National Audit Office (NAO) found that around a quarter of new claimants in 2017 were not paid in full on time and saw evidence of hardship. Courts ruled in 2019 and 2020 that the rigid income calculation for shifted paydays was unlawful; in 2020 Human Rights Watch blamed the calculation algorithm for contributing to hunger and debt among claimants.",
   "asm:affectedRights_en": [
     "right to social security",
     "right to a fair trial",
