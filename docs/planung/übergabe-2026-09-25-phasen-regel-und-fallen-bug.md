@@ -402,3 +402,36 @@ Workday, Intuit).
 **Endstand:** Validator 2452/2452 ohne ERROR, Audit 0, 0 Smart-Chars,
 Umlaut-Fixer 0 Ersetzungen, 371 einzelne TL-Einträge ohne Quelle in 272
 Files (nur noch 1er/2er). Bundles neu gebaut (ff203eb).
+
+---
+
+## Nachtrag 6 (2026-10-08 abends): Einzelquellen-Welle 9
+
+**30 Files mit je 2 unbelegten Einträgen** (alle 12 Sev 5, 18 Sev 4), 10
+Dreiergruppen. Fixer und Prüfer als Einzel-Agenten; jede Gruppe erst nach der
+Prüfung committet (3e33c02, 53ac1d0, ff9e51b, 2096261, 4f824ad, f513180,
+700a90a, f3d42bd, d8c82d7, 1f4efa1), Bundles in 6813ea2.
+
+**Suchkontingent präzisiert:** ca. 200 WebSearch-Aufrufe pro Turn, geteilt von
+allen in diesem Turn gestarteten Agenten (10 Fixer -> je ca. 20 Suchen; einige
+liefen leer: Syrien und Kongo blieben zunächst unbelegt). Die Prüfer wurden
+deshalb einzeln in eigenen Turns gestartet und haben offene Einträge selbst
+belegt.
+
+**Funde (Auswahl):** erfundene Einträge (Myanmar MSSP, Kambodscha 'Gateway
+2023 eingeschaltet', NDIS: I-CAN-Einführung mit 19,6 % Kürzung), falsche
+Zuordnungen (Amesys war Libyen, nicht Syrien; Tigray-Shutdown war Äthiopien,
+nicht Eritrea; al-Majalah 2009 war ein Marschflugkörper; eine
+Democracy-Now-Quelle betraf Iran), falsche Daten (Cyberbit 2017 statt 2021,
+Mushtaq Ahmed Feb. 2021, Gig-Streik 31.12.2025 statt 2024, Doe v. Apple
+Berufung 5.3.2024), unbelegter KI-/Deepfake-Bezug (Georgien, Kasachstan,
+Somalia, Bangladesch, Nigeria, Mosambik) -> Titel/Typen/Akteure korrigiert;
+viele geratene URLs ersetzt.
+
+**Teil-Dublette gemeldet, nicht zusammengelegt:** italien-garante-verhaengt-
+5-mio-euro-... überschneidet sich stark mit italien-ki-arbeitsbewertung-glovo
+(jetzt konsistent). Die Paare Mosambik und Kasachstan sind verschiedene
+Ereignisse.
+
+**Endstand:** Validator 2452/2452 ohne ERROR, Audit 0, 0 Smart-Chars,
+Umlaut-Fixer 0 Ersetzungen, 311 einzelne TL-Einträge ohne Quelle in 242 Files.
