@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/costa-rica-conti-ransomware",
   "name": "Costa Rica: Conti-Ransomware lähmt Regierungssysteme, Ausnahmezustand ausgerufen",
-  "description": "Im April 2022 griff die Conti-Ransomware-Gruppe die Computersysteme der costa-ricanischen Regierung an und legte über 30 staatliche Institutionen lahm. Betroffen waren das Finanzministerium, Sozialkassen, Meteorologiedienste und Exportbehörden. Die Angreifer forderten 10 Millionen US-Dollar Lösegeld. Präsident Rodrigo Chaves rief den nationalen Notstand aus - das erste Mal, dass ein Staat wegen eines Cyberangriffs den Ausnahmezustand verhängte. Monate später legte eine zweite Welle das Gesundheitssystem lahm.",
+  "description": "Im April 2022 griff die Conti-Ransomware-Gruppe die Computersysteme der costa-ricanischen Regierung an; nach Angaben von Präsident Rodrigo Chaves waren bis Mitte Mai 27 staatliche Institutionen betroffen. Betroffen waren das Finanzministerium, Sozialkassen, Meteorologiedienste und Exportbehörden. Die Angreifer forderten zunächst 10, später 20 Millionen US-Dollar Lösegeld. Chaves rief am Tag seines Amtsantritts, dem 8. Mai 2022, den nationalen Notstand aus - es gilt als das erste Mal, dass ein Staat wegen eines Cyberangriffs den Notstand erklärte. Ende Mai legte die Ransomware-Gruppe Hive zudem die Sozialversicherungskasse CCSS und damit das öffentliche Gesundheitssystem lahm.",
   "startDate": "2022",
   "location": {
     "@type": "Place",
@@ -24,7 +24,6 @@
     "name_en": "San José, Costa Rica"
   },
   "asm:incidentType": [
-    "censorship",
     "data-misuse"
   ],
   "asm:affectedRights": [
@@ -38,9 +37,8 @@
       "name": "Conti Group",
       "type": "organization",
       "asm:systems": [
-        "Conti Ransomware v3",
-        "Cobalt Strike",
-        "KI-gestützte Seitwärtsbewegung im Netzwerk"
+        "Conti Ransomware",
+        "Cobalt Strike"
       ],
       "name_de": "Conti Group",
       "name_en": "Conti Group"
@@ -57,53 +55,59 @@
   "asm:reverseTimeline": [
     {
       "date": "2022-04-11",
-      "phase": "infrastructure",
+      "phase": "event",
       "title": "Erster Angriff auf das costaricanische Finanzministerium",
-      "description": "Die Conti-Gruppe infiltriert die Netzwerke des costaricanischen Finanzministeriums (Ministerio de Hacienda). Innerhalb weniger Stunden breitet sich die Ransomware auf weitere Regierungsnetzwerke aus. Das Steuersystem ATV und die Plattform para el Control de Importaciones und Exportaciones werden unbrauchbar. Zolldaten und Steuererklärungen von Unternehmen können nicht mehr verarbeitet werden.",
+      "description": "Laut einer Analyse des Sicherheitsunternehmens AdvIntel verschafft sich die Conti-Gruppe am 11. April 2022 über kompromittierte VPN-Zugangsdaten Zugang zum Netzwerk des costaricanischen Finanzministeriums (Ministerio de Hacienda); binnen fünf Tagen werden Daten abgezogen und die Ransomware ausgeführt. Ab dem 17./18. April fallen Steuer- und Zollsysteme aus - von der Steuererhebung bis zur Abwicklung von Importen und Exporten über den Zoll; Grenzübergänge müssen teils manuell abfertigen.",
       "sources": [
-        "https://www.bleepingcomputer.com/news/security/costa-rica-declares-national-emergency-after-conti-ransomware-attacks/"
+        "https://www.bleepingcomputer.com/news/security/how-conti-ransomware-hacked-and-encrypted-the-costa-rican-government/",
+        "https://www.anvilogic.com/threat-reports/costa-rica-ransomware-attack"
       ],
       "title_de": "Erster Angriff auf das costaricanische Finanzministerium",
-      "description_de": "Die Conti-Gruppe infiltriert die Netzwerke des costaricanischen Finanzministeriums (Ministerio de Hacienda). Innerhalb weniger Stunden breitet sich die Ransomware auf weitere Regierungsnetzwerke aus. Das Steuersystem ATV und die Plattform para el Control de Importaciones und Exportaciones werden unbrauchbar. Zolldaten und Steuererklärungen von Unternehmen können nicht mehr verarbeitet werden.",
+      "description_de": "Laut einer Analyse des Sicherheitsunternehmens AdvIntel verschafft sich die Conti-Gruppe am 11. April 2022 über kompromittierte VPN-Zugangsdaten Zugang zum Netzwerk des costaricanischen Finanzministeriums (Ministerio de Hacienda); binnen fünf Tagen werden Daten abgezogen und die Ransomware ausgeführt. Ab dem 17./18. April fallen Steuer- und Zollsysteme aus - von der Steuererhebung bis zur Abwicklung von Importen und Exporten über den Zoll; Grenzübergänge müssen teils manuell abfertigen.",
       "title_en": "First attack on Costa Rica's Ministry of Finance",
-      "description_en": "The Conti group infiltrates the networks of Costa Rica's Ministry of Finance (Ministerio de Hacienda). Within a few hours, the ransomware spreads to additional government networks. The ATV tax system and the platform para el Control de Importaciones y Exportaciones become unusable. Customs data and corporate tax filings can no longer be processed."
+      "description_en": "According to an analysis by security firm AdvIntel, the Conti group gains access to the network of Costa Rica's Ministry of Finance (Ministerio de Hacienda) on April 11, 2022 via compromised VPN credentials; within five days data is exfiltrated and the ransomware executed. From April 17/18, tax and customs systems go down - from tax collection to the processing of imports and exports through customs; some border crossings have to process traffic manually."
     },
     {
       "date": "2022-05-08",
-      "phase": "doctrine",
+      "phase": "consequences",
       "title": "Neuer Präsident ruft nationalen Notstand aus",
-      "description": "Der am Tag zuvor vereidete Präsident Rodrigo Chaves erklärt den nationalen Notstand als Reaktion auf den anhaltenden Cyberangriff. Die Conti-Gruppe erhöht ihre Lösegeldforderung auf 20 Millionen US-Dollar und veröffentlicht gestohlene Regierungsdaten. Über 670 GB vertraulicher Daten werden im Darknet veröffentlicht. Die USA bieten 10 Millionen Dollar für Hinweise auf Conti-Mitglieder.",
+      "description": "Der am selben Tag vereidigte Präsident Rodrigo Chaves erklärt den nationalen Notstand als Reaktion auf den anhaltenden Cyberangriff. Die Conti-Gruppe erhöht ihre Lösegeldforderung auf 20 Millionen US-Dollar und veröffentlicht gestohlene Regierungsdaten. Über 670 GB vertraulicher Daten werden im Darknet veröffentlicht. Bereits am 6. Mai haben die USA bis zu 10 Millionen Dollar für Hinweise auf Führungsmitglieder von Conti ausgesetzt.",
       "sources": [
-        "https://2021-2025.state.gov/reward-offers-for-information-to-bring-conti-ransomware-variant-co-conspirators-to-justice/"
+        "https://2021-2025.state.gov/reward-offers-for-information-to-bring-conti-ransomware-variant-co-conspirators-to-justice/",
+        "https://en.wikipedia.org/wiki/2022_Costa_Rican_ransomware_attack"
       ],
       "title_de": "Neuer Präsident ruft nationalen Notstand aus",
-      "description_de": "Der am Tag zuvor vereidete Präsident Rodrigo Chaves erklärt den nationalen Notstand als Reaktion auf den anhaltenden Cyberangriff. Die Conti-Gruppe erhöht ihre Lösegeldforderung auf 20 Millionen US-Dollar und veröffentlicht gestohlene Regierungsdaten. Über 670 GB vertraulicher Daten werden im Darknet veröffentlicht. Die USA bieten 10 Millionen Dollar für Hinweise auf Conti-Mitglieder.",
+      "description_de": "Der am selben Tag vereidigte Präsident Rodrigo Chaves erklärt den nationalen Notstand als Reaktion auf den anhaltenden Cyberangriff. Die Conti-Gruppe erhöht ihre Lösegeldforderung auf 20 Millionen US-Dollar und veröffentlicht gestohlene Regierungsdaten. Über 670 GB vertraulicher Daten werden im Darknet veröffentlicht. Bereits am 6. Mai haben die USA bis zu 10 Millionen Dollar für Hinweise auf Führungsmitglieder von Conti ausgesetzt.",
       "title_en": "New president declares national emergency",
-      "description_en": "President Rodrigo Chaves, sworn in the day before, declares a national emergency in response to the ongoing cyberattack. The Conti group raises its ransom demand to 20 million US dollars and publishes stolen government data. More than 670 GB of confidential data is released on the dark web. The US offers 10 million dollars for information on Conti members."
+      "description_en": "President Rodrigo Chaves, sworn in the same day, declares a national emergency in response to the ongoing cyberattack. The Conti group raises its ransom demand to 20 million US dollars and publishes stolen government data. More than 670 GB of confidential data is released on the dark web. On May 6, the US had already offered up to 10 million dollars for information on Conti's leaders."
     },
     {
       "date": "2022-05-31",
       "phase": "event",
       "title": "Zweite Angriffswelle trifft Gesundheitssystem",
-      "description": "Eine zweite Angriffswelle durch die mit Conti verbundene Gruppe HIVE legt das nationale Gesundheitssystem CCSS (Caja Costarricense de Seguro Social) lahm. Krankenhäuser müssen auf papierbasierte Prozesse umstellen. Operationen werden verschoben, Testergebnisse verzögert, Rezepte manuell ausgestellt. Mehr als 1.200 Server und 15.000 Workstations sind betroffen. Der wirtschaftliche Schaden wird auf über 30 Millionen US-Dollar geschätzt.",
-      "sources": [],
+      "description": "Am 31. Mai 2022 trifft eine zweite Ransomware-Gruppe, Hive, die staatliche Sozialversicherungskasse CCSS (Caja Costarricense de Seguro Social), die das öffentliche Gesundheitssystem betreibt. Die CCSS fährt alle Computersysteme herunter, Krankenhäuser müssen auf Papierakten umstellen. Nach einer ersten Schätzung von rund 30 betroffenen Servern ergibt die Überprüfung bis zum 22. Juni 811 infizierte von 1.191 geprüften Servern und 10.441 infizierte von 39.212 geprüften Computern.",
+      "sources": [
+        "https://www.bleepingcomputer.com/news/security/costa-rica-s-public-health-agency-hit-by-hive-ransomware/",
+        "https://crhoy.com/nacionales/hackeo-en-la-ccss-estos-son-los-resultados-de-la-revision-de-los-equipos/"
+      ],
       "title_de": "Zweite Angriffswelle trifft Gesundheitssystem",
-      "description_de": "Eine zweite Angriffswelle durch die mit Conti verbundene Gruppe HIVE legt das nationale Gesundheitssystem CCSS (Caja Costarricense de Seguro Social) lahm. Krankenhäuser müssen auf papierbasierte Prozesse umstellen. Operationen werden verschoben, Testergebnisse verzögert, Rezepte manuell ausgestellt. Mehr als 1.200 Server und 15.000 Workstations sind betroffen. Der wirtschaftliche Schaden wird auf über 30 Millionen US-Dollar geschätzt.",
+      "description_de": "Am 31. Mai 2022 trifft eine zweite Ransomware-Gruppe, Hive, die staatliche Sozialversicherungskasse CCSS (Caja Costarricense de Seguro Social), die das öffentliche Gesundheitssystem betreibt. Die CCSS fährt alle Computersysteme herunter, Krankenhäuser müssen auf Papierakten umstellen. Nach einer ersten Schätzung von rund 30 betroffenen Servern ergibt die Überprüfung bis zum 22. Juni 811 infizierte von 1.191 geprüften Servern und 10.441 infizierte von 39.212 geprüften Computern.",
       "title_en": "Second wave hits the health system",
-      "description_en": "A second wave of attacks by the Conti-affiliated HIVE group paralyzes the national health system CCSS (Caja Costarricense de Seguro Social). Hospitals must switch to paper-based processes. Surgeries are postponed, test results delayed, and prescriptions issued manually. More than 1,200 servers and 15,000 workstations are affected. Economic damage is estimated at more than 30 million US dollars."
+      "description_en": "On May 31, 2022, a second ransomware group, Hive, hits the state social security fund CCSS (Caja Costarricense de Seguro Social), which runs the public health system. The CCSS shuts down all its computer systems, and hospitals have to switch to paper records. After an initial estimate of around 30 affected servers, the review by June 22 finds 811 infected out of 1,191 servers checked and 10,441 infected out of 39,212 computers checked."
     },
     {
       "date": "2022-08",
       "phase": "consequences",
-      "title": "Monate der Störung, internationale Cyberhilfe, keine Verhaftungen",
-      "description": "Die costaricanische Regierung lehnt die Zahlung des Lösegelds ab und restauriert Systeme mühsam über Monate hinweg. Die USA, Israel und Spanien leisten technische Unterstützung. Die wirtschaftlichen Verluste durch blockierte Exporte und Importprozesse werden auf Hunderte Millionen Dollar geschätzt. Der Angriff wird als Warnung für staatliche Cybersicherheit weltweit zitiert. Keines der mutmaßlich russischsprachigen Conti-Mitglieder wird verhaftet.",
+      "title": "Monate der Störung, internationale Cyberhilfe, zunächst keine Verhaftungen",
+      "description": "Die costaricanische Regierung lehnt die Zahlung des Lösegelds ab und restauriert Systeme mühsam über Monate hinweg. Die USA, Israel und Spanien sowie Unternehmen wie Microsoft leisten technische Unterstützung. Die Exportwirtschaft schätzt die Verluste durch blockierte Export- und Importprozesse auf Hunderte Millionen Dollar. Der Angriff wird als Warnung für staatliche Cybersicherheit weltweit zitiert. Die mutmaßlich russischsprachigen Täter werden zunächst nicht gefasst.",
       "sources": [
-        "https://www.bleepingcomputer.com/news/security/costa-rica-declares-national-emergency-after-conti-ransomware-attacks/"
+        "https://www.bleepingcomputer.com/news/security/costa-rica-declares-national-emergency-after-conti-ransomware-attacks/",
+        "https://en.wikipedia.org/wiki/2022_Costa_Rican_ransomware_attack"
       ],
-      "title_de": "Monate der Störung, internationale Cyberhilfe, keine Verhaftungen",
-      "description_de": "Die costaricanische Regierung lehnt die Zahlung des Lösegelds ab und restauriert Systeme mühsam über Monate hinweg. Die USA, Israel und Spanien leisten technische Unterstützung. Die wirtschaftlichen Verluste durch blockierte Exporte und Importprozesse werden auf Hunderte Millionen Dollar geschätzt. Der Angriff wird als Warnung für staatliche Cybersicherheit weltweit zitiert. Keines der mutmaßlich russischsprachigen Conti-Mitglieder wird verhaftet.",
-      "title_en": "Months of disruption, international cyber aid, no arrests",
-      "description_en": "The Costa Rican government refuses to pay the ransom and laboriously restores systems over the course of months. The US, Israel, and Spain provide technical assistance. Economic losses from blocked export and import processes are estimated at hundreds of millions of dollars. The attack is cited worldwide as a warning for state cybersecurity. None of the presumed Russian-speaking Conti members are arrested."
+      "title_de": "Monate der Störung, internationale Cyberhilfe, zunächst keine Verhaftungen",
+      "description_de": "Die costaricanische Regierung lehnt die Zahlung des Lösegelds ab und restauriert Systeme mühsam über Monate hinweg. Die USA, Israel und Spanien sowie Unternehmen wie Microsoft leisten technische Unterstützung. Die Exportwirtschaft schätzt die Verluste durch blockierte Export- und Importprozesse auf Hunderte Millionen Dollar. Der Angriff wird als Warnung für staatliche Cybersicherheit weltweit zitiert. Die mutmaßlich russischsprachigen Täter werden zunächst nicht gefasst.",
+      "title_en": "Months of disruption, international cyber aid, no arrests at first",
+      "description_en": "The Costa Rican government refuses to pay the ransom and laboriously restores systems over the course of months. The US, Israel, and Spain as well as companies such as Microsoft provide technical assistance. Exporters estimate losses from blocked export and import processes at hundreds of millions of dollars. The attack is cited worldwide as a warning for state cybersecurity. The presumed Russian-speaking perpetrators are not caught at first."
     }
   ],
   "asm:sources": [
@@ -136,7 +140,7 @@
     "humanVerified": false
   },
   "name_de": "Costa Rica: Conti-Ransomware lähmt Regierungssysteme, Ausnahmezustand ausgerufen",
-  "description_de": "Im April 2022 griff die Conti-Ransomware-Gruppe die Computersysteme der costa-ricanischen Regierung an und legte über 30 staatliche Institutionen lahm. Betroffen waren das Finanzministerium, Sozialkassen, Meteorologiedienste und Exportbehörden. Die Angreifer forderten 10 Millionen US-Dollar Lösegeld. Präsident Rodrigo Chaves rief den nationalen Notstand aus - das erste Mal, dass ein Staat wegen eines Cyberangriffs den Ausnahmezustand verhängte. Monate später legte eine zweite Welle das Gesundheitssystem lahm.",
+  "description_de": "Im April 2022 griff die Conti-Ransomware-Gruppe die Computersysteme der costa-ricanischen Regierung an; nach Angaben von Präsident Rodrigo Chaves waren bis Mitte Mai 27 staatliche Institutionen betroffen. Betroffen waren das Finanzministerium, Sozialkassen, Meteorologiedienste und Exportbehörden. Die Angreifer forderten zunächst 10, später 20 Millionen US-Dollar Lösegeld. Chaves rief am Tag seines Amtsantritts, dem 8. Mai 2022, den nationalen Notstand aus - es gilt als das erste Mal, dass ein Staat wegen eines Cyberangriffs den Notstand erklärte. Ende Mai legte die Ransomware-Gruppe Hive zudem die Sozialversicherungskasse CCSS und damit das öffentliche Gesundheitssystem lahm.",
   "asm:affectedRights_de": [
     "Recht auf staatliche Dienstleistungen",
     "Recht auf Gesundheitsversorgung",
@@ -144,7 +148,7 @@
     "Datenschutz öffentlicher Systeme"
   ],
   "name_en": "Costa Rica: Conti ransomware paralyzes government systems, state of emergency declared",
-  "description_en": "In April 2022, the Conti ransomware group attacked the Costa Rican government's computer systems and paralyzed more than 30 state institutions. The Ministry of Finance, social insurance funds, meteorological services, and export authorities were affected. The attackers demanded a ransom of 10 million US dollars. President Rodrigo Chaves declared a national emergency - the first time a state had declared a state of emergency over a cyberattack. Months later, a second wave paralyzed the health system.",
+  "description_en": "In April 2022, the Conti ransomware group attacked the Costa Rican government's computer systems; according to President Rodrigo Chaves, 27 state institutions had been affected by mid-May. The Ministry of Finance, social insurance funds, meteorological services, and export authorities were affected. The attackers initially demanded a ransom of 10 million, later 20 million US dollars. Chaves declared a national emergency on the day he took office, May 8, 2022 - regarded as the first time a state had declared an emergency over a cyberattack. At the end of May, the Hive ransomware group also paralyzed the social security fund CCSS and with it the public health system.",
   "asm:affectedRights_en": [
     "right to public services",
     "right to healthcare",
