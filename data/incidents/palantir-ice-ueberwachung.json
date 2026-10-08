@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/palantir-ice-ueberwachung",
-  "name": "Palantir & ICE: KI-gestützte Immigrationsüberwachung in den USA",
-  "description": "Die US-Immigrationsbehörde ICE nutzt Palantirs Datenanalyseplattform FALCON, um massenhaft personenbezogene Daten von Immigranten zu aggregieren und Abschiebungsmaßnahmen zu planen. Das System verknüpft Datenbanken von Strafverfolgung, Sozialleistungen, Führerscheinen und sozialen Medien, um Personen ohne Aufenthaltsstatus zu identifizieren - auch in sogenannten 'Sanctuary Cities'.",
+  "name": "Palantir & ICE: Datenplattformen für die Immigrationsüberwachung in den USA",
+  "description": "Die US-Immigrationsbehörde ICE nutzt Palantirs Plattformen FALCON und ICM (Investigative Case Management), beide auf Basis von Palantir Gotham, um massenhaft personenbezogene Daten zu aggregieren und Ermittlungs- und Abschiebungsmaßnahmen zu planen. Die Systeme geben Ermittlern Zugriff auf Daten aus zahlreichen Behördendatenbanken - etwa zu Familienbeziehungen, Beschäftigung, Telefondaten, Einwanderungsgeschichte und Adressen -, um Personen ohne Aufenthaltsstatus zu identifizieren, auch in sogenannten 'Sanctuary Cities'. Im April 2025 erhält Palantir zudem rund 30 Millionen Dollar für die Plattform 'ImmigrationOS'.",
   "startDate": "2014",
   "location": {
     "@type": "Place",
@@ -40,8 +40,10 @@
       "name": "Palantir Technologies",
       "type": "company",
       "asm:systems": [
-        "FALCON (Fugitive Alien Locator and Capture Operations Network)",
-        "Gotham"
+        "FALCON",
+        "Gotham",
+        "ICM (Investigative Case Management)",
+        "ImmigrationOS"
       ],
       "name_de": "Palantir Technologies",
       "name_en": "Palantir Technologies"
@@ -65,52 +67,71 @@
     {
       "date": "2014",
       "phase": "infrastructure",
-      "title": "Palantir-ICE-Vertrag für FALCON-System",
-      "description": "ICE schließt Verträge mit Palantir Technologies über die FALCON-Plattform (später als ICM - Investigative Case Management bekannt). Das System ermöglicht die Verknüpfung von Daten aus über 1.200 Datenquellen, darunter DMV-Fahrerlaubnisdaten, Stromrechnungen, Schulregistrierungen und Sozialmedien-Profile.",
+      "title": "Palantir-ICE-Vertrag für ICM",
+      "description": "Im September 2014 vergibt ICE an Palantir einen Vertrag über mehr als 41 Millionen Dollar zum Aufbau des Investigative Case Management (ICM), das das veraltete Fallsystem TECS ablösen soll. Bereits seit 2011 nutzt die Ermittlungsabteilung HSI die Palantir-Plattform FALCON zur Datenanalyse. Beide Systeme verknüpfen Ermittlungsakten mit zahlreichen Behördendatenbanken.",
       "sources": [
-        "https://theintercept.com/2017/03/02/palantir-provides-the-engine-for-donald-trumps-deportation-machine/"
+        "https://www.nextgov.com/digital-government/2014/09/hush-hush-data-firm-palantir-snags-ice-case-tracking-deal/95333/",
+        "https://theintercept.com/2016/12/12/transition-adviser-peter-thiel-would-directly-profit-from-mass-deportations/"
       ],
-      "title_de": "Palantir-ICE-Vertrag für FALCON-System",
-      "title_en": "Palantir-ICE contract for the FALCON system",
-      "description_de": "ICE schließt Verträge mit Palantir Technologies über die FALCON-Plattform (später als ICM - Investigative Case Management bekannt). Das System ermöglicht die Verknüpfung von Daten aus über 1.200 Datenquellen, darunter DMV-Fahrerlaubnisdaten, Stromrechnungen, Schulregistrierungen und Sozialmedien-Profile.",
-      "description_en": "ICE signs contracts with Palantir Technologies for the FALCON platform (later known as ICM - Investigative Case Management). The system enables data linkage across more than 1,200 sources, including DMV driver's license data, utility bills, school registrations, and social media profiles."
+      "title_de": "Palantir-ICE-Vertrag für ICM",
+      "title_en": "Palantir-ICE contract for ICM",
+      "description_de": "Im September 2014 vergibt ICE an Palantir einen Vertrag über mehr als 41 Millionen Dollar zum Aufbau des Investigative Case Management (ICM), das das veraltete Fallsystem TECS ablösen soll. Bereits seit 2011 nutzt die Ermittlungsabteilung HSI die Palantir-Plattform FALCON zur Datenanalyse. Beide Systeme verknüpfen Ermittlungsakten mit zahlreichen Behördendatenbanken.",
+      "description_en": "In September 2014 ICE awards Palantir a contract worth more than 41 million dollars to build Investigative Case Management (ICM), intended to replace the outdated TECS case system. Since 2011 the investigative division HSI has already been using Palantir's FALCON platform for data analysis. Both systems link investigative records with numerous government databases."
     },
     {
       "date": "2017",
       "phase": "doctrine",
       "title": "Trump-Administration eskaliert Abschiebungen",
-      "description": "Unter der Trump-Administration werden die Palantir-Werkzeuge aggressiv zur Ausweitung von Abschiebungsmaßnahmen eingesetzt. ICE-Agenten nutzen FALCON, um auch Personen aufzuspüren, die nur wegen Verkehrsdelikten oder als Zeugen in Kontakt mit Behörden kamen. Die ACLU dokumentiert Fälle, in denen Eltern bei der Schulanmeldung ihrer Kinder identifiziert werden.",
+      "description": "Ein Dekret von Präsident Trump vom 25. Januar 2017 weitet die Abschiebungsprioritäten massiv aus. The Intercept berichtet im März 2017, dass ICE Palantirs ICM als 'mission critical' einstuft und das System Ermittlern Zugriff auf Daten etwa zu Schulbildung, Familienbeziehungen, Beschäftigung, Telefondaten, Einwanderungsgeschichte und Adressen gibt. Die ACLU warnt, diese Werkzeuge könnten für Massenabschiebungen eingesetzt werden.",
       "sources": [
         "https://theintercept.com/2017/03/02/palantir-provides-the-engine-for-donald-trumps-deportation-machine/"
       ],
       "title_de": "Trump-Administration eskaliert Abschiebungen",
       "title_en": "Trump administration escalates deportations",
-      "description_de": "Unter der Trump-Administration werden die Palantir-Werkzeuge aggressiv zur Ausweitung von Abschiebungsmaßnahmen eingesetzt. ICE-Agenten nutzen FALCON, um auch Personen aufzuspüren, die nur wegen Verkehrsdelikten oder als Zeugen in Kontakt mit Behörden kamen. Die ACLU dokumentiert Fälle, in denen Eltern bei der Schulanmeldung ihrer Kinder identifiziert werden.",
-      "description_en": "Under the Trump administration, Palantir's tools are aggressively used to expand deportation operations. ICE agents use FALCON to track down people who came into contact with authorities only for traffic offenses or as witnesses. The ACLU documents cases in which parents are identified when registering their children for school."
+      "description_de": "Ein Dekret von Präsident Trump vom 25. Januar 2017 weitet die Abschiebungsprioritäten massiv aus. The Intercept berichtet im März 2017, dass ICE Palantirs ICM als 'mission critical' einstuft und das System Ermittlern Zugriff auf Daten etwa zu Schulbildung, Familienbeziehungen, Beschäftigung, Telefondaten, Einwanderungsgeschichte und Adressen gibt. Die ACLU warnt, diese Werkzeuge könnten für Massenabschiebungen eingesetzt werden.",
+      "description_en": "An executive order by President Trump of January 25, 2017 drastically expands deportation priorities. In March 2017 The Intercept reports that ICE rates Palantir's ICM as 'mission critical' and that the system gives agents access to data on schooling, family relationships, employment, phone records, immigration history and addresses. The ACLU warns that these tools could be used for mass deportations."
     },
     {
-      "date": "2019-07",
+      "date": "2019-05",
       "phase": "event",
-      "title": "Palantirs Rolle bei Familientrennungen enthüllt",
-      "description": "Investigative Berichte und geleakte Dokumente zeigen, dass Palantirs Systeme bei der Organisation der Familientrennungspolitik an der US-mexikanischen Grenze eingesetzt wurden. Über 5.000 Kinder werden von ihren Eltern getrennt. Palantir-Mitarbeiter protestieren intern gegen den ICE-Vertrag.",
-      "sources": [],
-      "title_de": "Palantirs Rolle bei Familientrennungen enthüllt",
-      "title_en": "Palantir's role in family separations revealed",
-      "description_de": "Investigative Berichte und geleakte Dokumente zeigen, dass Palantirs Systeme bei der Organisation der Familientrennungspolitik an der US-mexikanischen Grenze eingesetzt wurden. Über 5.000 Kinder werden von ihren Eltern getrennt. Palantir-Mitarbeiter protestieren intern gegen den ICE-Vertrag.",
-      "description_en": "Investigative reports and leaked documents show that Palantir's systems were used to organize the family separation policy at the US-Mexico border. More than 5,000 children are separated from their parents. Palantir employees protest internally against the ICE contract."
+      "title": "Dokumente: Palantir-Software half bei Festnahmen von Angehörigen migrantischer Kinder",
+      "description": "Am 2. Mai 2019 berichtet The Intercept auf Basis von Dokumenten, die Einwanderungsrechtsorganisationen per Informationsfreiheitsklage erhielten und deren Brisanz zuerst Mijente erkannte: Die ICE-Abschiebeabteilung ERO nutzte Palantirs ICM 2017 bei einer Operation gegen Eltern und andere Angehörige unbegleiteter minderjähriger Migranten, die zu Hunderten Festnahmen führte, aber nur selten zu Strafverfahren. Das widerspricht Palantirs Darstellung, seine Software diene nur strafrechtlichen Ermittlungen der HSI, nicht Abschiebungen. Im August 2019 verlängert ICE den Vertrag dennoch; über 60 Palantir-Beschäftigte fordern per Petition, Gewinne aus ICE-Aufträgen zu spenden.",
+      "sources": [
+        "https://theintercept.com/2019/05/02/peter-thiels-palantir-was-used-to-bust-hundreds-of-relatives-of-migrant-children-new-documents-show/",
+        "https://www.businessinsider.nl/palantir-employees-ice-petition-alex-karp-2019-8/"
+      ],
+      "title_de": "Dokumente: Palantir-Software half bei Festnahmen von Angehörigen migrantischer Kinder",
+      "title_en": "Documents: Palantir software aided arrests of migrant children's relatives",
+      "description_de": "Am 2. Mai 2019 berichtet The Intercept auf Basis von Dokumenten, die Einwanderungsrechtsorganisationen per Informationsfreiheitsklage erhielten und deren Brisanz zuerst Mijente erkannte: Die ICE-Abschiebeabteilung ERO nutzte Palantirs ICM 2017 bei einer Operation gegen Eltern und andere Angehörige unbegleiteter minderjähriger Migranten, die zu Hunderten Festnahmen führte, aber nur selten zu Strafverfahren. Das widerspricht Palantirs Darstellung, seine Software diene nur strafrechtlichen Ermittlungen der HSI, nicht Abschiebungen. Im August 2019 verlängert ICE den Vertrag dennoch; über 60 Palantir-Beschäftigte fordern per Petition, Gewinne aus ICE-Aufträgen zu spenden.",
+      "description_en": "On May 2, 2019, The Intercept reports, based on documents that immigrant-rights groups obtained through freedom-of-information litigation and that Mijente first flagged, that ICE's deportation division ERO used Palantir's ICM in a 2017 operation targeting parents and other relatives of unaccompanied migrant children, which led to hundreds of arrests but few criminal prosecutions. This contradicts Palantir's claim that its software served only HSI criminal investigations, not deportations. In August 2019 ICE nevertheless renews the contract; more than 60 Palantir employees petition for profits from ICE work to be donated."
     },
     {
       "date": "2022",
       "phase": "consequences",
-      "title": "Wachsender Widerstand und Transparency Reports",
-      "description": "Der Mijente-Bericht 'Who's Behind ICE?' dokumentiert die gesamte Technologie-Lieferkette der Abschiebungsmaschinerie. Mehrere US-Städte verabschieden Anti-Surveillance-Verordnungen. Georgetown Law's Center on Privacy & Technology veröffentlicht 'American Dragnet', das die Dimension der DHS-Überwachungsinfrastruktur aufdeckt.",
+      "title": "'American Dragnet' legt Ausmaß der ICE-Datenüberwachung offen",
+      "description": "Im Mai 2022 veröffentlicht das Center on Privacy & Technology der Georgetown Law nach zwei Jahren Recherche 'American Dragnet': ICE hat demnach Zugriff auf die Führerscheindaten von drei Vierteln der US-Erwachsenen, hat Führerscheinfotos von rund einem Drittel per Gesichtserkennung durchsucht und konnte über Versorgerdaten automatisch die neuen Adressen von drei Vierteln der Erwachsenen erfahren, die Gas, Strom, Telefon oder Internet anmeldeten.",
       "sources": [
-        "https://americandragnet.org/"
+        "https://americandragnet.org/",
+        "https://www.law.georgetown.edu/privacy-technology-center/publications/american-dragnet-data-driven-deportation-in-the-21st-century/"
       ],
-      "title_de": "Wachsender Widerstand und Transparency Reports",
-      "title_en": "Growing resistance and transparency reports",
-      "description_de": "Der Mijente-Bericht 'Who's Behind ICE?' dokumentiert die gesamte Technologie-Lieferkette der Abschiebungsmaschinerie. Mehrere US-Städte verabschieden Anti-Surveillance-Verordnungen. Georgetown Law's Center on Privacy & Technology veröffentlicht 'American Dragnet', das die Dimension der DHS-Überwachungsinfrastruktur aufdeckt.",
-      "description_en": "The Mijente report 'Who's Behind ICE?' documents the entire technology supply chain of the deportation machinery. Several US cities pass anti-surveillance ordinances. Georgetown Law's Center on Privacy & Technology publishes 'American Dragnet', exposing the scale of the DHS surveillance infrastructure."
+      "title_de": "'American Dragnet' legt Ausmaß der ICE-Datenüberwachung offen",
+      "title_en": "'American Dragnet' reveals scale of ICE data surveillance",
+      "description_de": "Im Mai 2022 veröffentlicht das Center on Privacy & Technology der Georgetown Law nach zwei Jahren Recherche 'American Dragnet': ICE hat demnach Zugriff auf die Führerscheindaten von drei Vierteln der US-Erwachsenen, hat Führerscheinfotos von rund einem Drittel per Gesichtserkennung durchsucht und konnte über Versorgerdaten automatisch die neuen Adressen von drei Vierteln der Erwachsenen erfahren, die Gas, Strom, Telefon oder Internet anmeldeten.",
+      "description_en": "In May 2022, Georgetown Law's Center on Privacy & Technology publishes 'American Dragnet' after two years of research: according to the report, ICE has access to the driver's license data of three in four US adults, has run facial recognition searches on the license photos of about one in three, and could automatically learn the new addresses of three in four adults who connected gas, electricity, phone or internet in a new home."
+    },
+    {
+      "date": "2025-04",
+      "phase": "consequences",
+      "title": "ImmigrationOS: Neuer Palantir-Auftrag von ICE",
+      "description": "Im April 2025 vergibt ICE ohne Ausschreibung einen Auftrag über rund 30 Millionen Dollar an Palantir für die Plattform 'ImmigrationOS', formal als Änderung eines bestehenden Vertrags von 2022. Sie soll ICE nahezu in Echtzeit Einblick in Selbstausreisen geben und bei der Auswahl von Abschiebungszielen helfen; als Priorität nennt der Vertrag neben Gewalttätern und Mitgliedern krimineller Organisationen auch Personen, die ihr Visum überzogen haben. Im Mai 2025 kritisieren 13 ehemalige Palantir-Beschäftigte die Rolle des Unternehmens öffentlich.",
+      "sources": [
+        "https://www.businessinsider.nl/ice-just-ordered-30-million-worth-of-new-technology-from-palantir-to-track-immigrants",
+        "https://www.hrgrapevine.com/us/content/article/2025-05-07-ex-palantir-staff-slam-firms-role-in-migrant-surveillance"
+      ],
+      "title_de": "ImmigrationOS: Neuer Palantir-Auftrag von ICE",
+      "title_en": "ImmigrationOS: new Palantir contract from ICE",
+      "description_de": "Im April 2025 vergibt ICE ohne Ausschreibung einen Auftrag über rund 30 Millionen Dollar an Palantir für die Plattform 'ImmigrationOS', formal als Änderung eines bestehenden Vertrags von 2022. Sie soll ICE nahezu in Echtzeit Einblick in Selbstausreisen geben und bei der Auswahl von Abschiebungszielen helfen; als Priorität nennt der Vertrag neben Gewalttätern und Mitgliedern krimineller Organisationen auch Personen, die ihr Visum überzogen haben. Im Mai 2025 kritisieren 13 ehemalige Palantir-Beschäftigte die Rolle des Unternehmens öffentlich.",
+      "description_en": "In April 2025 ICE awards Palantir a sole-source contract worth about 30 million dollars for the 'ImmigrationOS' platform, formally as a modification of an existing 2022 contract. It is meant to give ICE near real-time visibility into self-deportations and help select deportation targets; alongside violent criminals and members of transnational criminal organizations, the contract lists visa overstays as a priority. In May 2025, 13 former Palantir employees publicly criticize the company's role."
     }
   ],
   "asm:sources": [
@@ -140,12 +161,13 @@
     "lastUpdated": "2026-04-01",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: 'KI-gestützte' / 'AI-assisted' removed; FALCON, ICM and ImmigrationOS are Palantir data-integration and case-management platforms, and none of the cited sources describes them as AI. Slug unchanged for permalink stability."
   },
-  "name_de": "Palantir & ICE: KI-gestützte Immigrationsüberwachung in den USA",
-  "name_en": "Palantir & ICE: AI-assisted immigration surveillance in the USA",
-  "description_de": "Die US-Immigrationsbehörde ICE nutzt Palantirs Datenanalyseplattform FALCON, um massenhaft personenbezogene Daten von Immigranten zu aggregieren und Abschiebungsmaßnahmen zu planen. Das System verknüpft Datenbanken von Strafverfolgung, Sozialleistungen, Führerscheinen und sozialen Medien, um Personen ohne Aufenthaltsstatus zu identifizieren - auch in sogenannten 'Sanctuary Cities'.",
-  "description_en": "The US immigration agency ICE uses Palantir's data analytics platform FALCON to mass-aggregate personal data of immigrants and plan deportation operations. The system links databases from law enforcement, social services, driver's licenses, and social media to identify people without legal status - including in so-called 'Sanctuary Cities'.",
+  "name_de": "Palantir & ICE: Datenplattformen für die Immigrationsüberwachung in den USA",
+  "name_en": "Palantir & ICE: Data platforms for immigration surveillance in the USA",
+  "description_de": "Die US-Immigrationsbehörde ICE nutzt Palantirs Plattformen FALCON und ICM (Investigative Case Management), beide auf Basis von Palantir Gotham, um massenhaft personenbezogene Daten zu aggregieren und Ermittlungs- und Abschiebungsmaßnahmen zu planen. Die Systeme geben Ermittlern Zugriff auf Daten aus zahlreichen Behördendatenbanken - etwa zu Familienbeziehungen, Beschäftigung, Telefondaten, Einwanderungsgeschichte und Adressen -, um Personen ohne Aufenthaltsstatus zu identifizieren, auch in sogenannten 'Sanctuary Cities'. Im April 2025 erhält Palantir zudem rund 30 Millionen Dollar für die Plattform 'ImmigrationOS'.",
+  "description_en": "The US immigration agency ICE uses Palantir's platforms FALCON and ICM (Investigative Case Management), both built on Palantir Gotham, to mass-aggregate personal data and plan investigations and deportation operations. The systems give agents access to data from numerous government databases - such as family relationships, employment, phone records, immigration history and addresses - to identify people without legal status, including in so-called 'Sanctuary Cities'. In April 2025 Palantir also receives about 30 million dollars for the 'ImmigrationOS' platform.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Schutz vor Diskriminierung",
