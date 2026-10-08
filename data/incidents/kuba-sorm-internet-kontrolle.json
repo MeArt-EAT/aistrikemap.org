@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/kuba-sorm-internet-kontrolle",
-  "name": "Kuba: Totale Internetüberwachung mit chinesischer Technologieunterstützung",
-  "description": "Kuba betreibt seit der schrittweisen Einführung des Internets ein umfassendes Überwachungs- und Zensursystem, das Elemente des russischen SORM-Systems mit chinesischer Netzwerktechnologie kombiniert. Huawei liefert Kerninfrastruktur. Der einzige staatliche Internetanbieter ETECSA überwacht den gesamten Datenverkehr. Während der #11J-Proteste 2021 wurde das Mobile Internet komplett abgeschaltet. Oppositionelle und Journalisten berichten von gezielter Überwachung ihrer Kommunikation.",
+  "name": "Kuba: Staatliche Internetkontrolle mit Zensur, Abschaltungen und mutmaßlich russischer Überwachungstechnik",
+  "description": "Kubas Internetzugang liegt vollständig beim staatlichen Monopolanbieter ETECSA, was Zensur, gezielte Sperren und Abschaltungen erleichtert. OONI-Messungen wiesen 2017 die Sperrung von 41 vor allem unabhängigen Nachrichten- und Menschenrechtsseiten per Deep Packet Inspection nach und fanden Huawei-Ausrüstung im ETECSA-Netz. Während der #11J-Proteste im Juli 2021 fiel das Internet kurzzeitig komplett aus, danach wurden soziale Medien und Messenger tagelang eingeschränkt. Das Dekret-Gesetz 35 (August 2021) und das neue Strafgesetzbuch (Dezember 2022) kriminalisieren Online-Kritik. Laut einer Analyse von Recorded Future (2025) stützt Kuba seine digitale Überwachung mutmaßlich auf das russische Abhörsystem SORM.",
   "startDate": "2008",
   "location": {
     "@type": "Place",
@@ -48,8 +48,8 @@
       "name": "Huawei Technologies",
       "type": "company",
       "asm:systems": [
-        "Netzwerkinfrastruktur",
-        "Safe City-Komponenten"
+        "Netzwerkausrüstung",
+        "WLAN-Zugangspunkte"
       ],
       "name_de": "Huawei Technologies",
       "name_en": "Huawei Technologies"
@@ -62,51 +62,84 @@
       "date": "2008",
       "phase": "infrastructure",
       "title": "Beschränkter Internetzugang unter totaler staatlicher Kontrolle",
-      "description": "Kuba ermöglichen nur wenige ausgewählte Standorte (Hotels, staatliche Institutionen) Internetzugang. ETECSA, der staatliche Monopolanbieter, kontrolliert die gesamte Infrastruktur. Huawei liefert Netzwerkausrüstung. Der Zugang für normale Bürger ist extrem teuer und begrenzt. Jeder Internetzugang läuft über staatlich kontrollierte Knotenpunkte.",
+      "description": "In Kuba ermöglichen nur wenige ausgewählte Standorte (Hotels, staatliche Institutionen) Internetzugang. ETECSA, der staatliche Monopolanbieter, kontrolliert die gesamte Infrastruktur. Nach Angaben von Huawei (2015) arbeitet der chinesische Konzern bereits seit rund 15 Jahren an Kubas Mobil- und Festnetzen. Der Zugang für normale Bürger ist extrem teuer und begrenzt. Jeder Internetzugang läuft über staatlich kontrollierte Knotenpunkte.",
       "sources": [
-        "https://freedomhouse.org/country/cuba/freedom-net/2021"
+        "https://freedomhouse.org/country/cuba/freedom-net/2021",
+        "https://www.cubanet.org/acuerdo-entre-etecsa-y-empresa-china-huawei-para-comercializar-telefonos-moviles-inteligentes/"
       ],
       "title_de": "Beschränkter Internetzugang unter totaler staatlicher Kontrolle",
       "title_en": "Restricted internet access under total state control",
-      "description_de": "Kuba ermöglichen nur wenige ausgewählte Standorte (Hotels, staatliche Institutionen) Internetzugang. ETECSA, der staatliche Monopolanbieter, kontrolliert die gesamte Infrastruktur. Huawei liefert Netzwerkausrüstung. Der Zugang für normale Bürger ist extrem teuer und begrenzt. Jeder Internetzugang läuft über staatlich kontrollierte Knotenpunkte.",
-      "description_en": "In Cuba, only a few selected locations (hotels, state institutions) provide internet access. ETECSA, the state monopoly provider, controls the entire infrastructure. Huawei supplies network equipment. Access for ordinary citizens is extremely expensive and limited. All internet access runs through state-controlled nodes."
+      "description_de": "In Kuba ermöglichen nur wenige ausgewählte Standorte (Hotels, staatliche Institutionen) Internetzugang. ETECSA, der staatliche Monopolanbieter, kontrolliert die gesamte Infrastruktur. Nach Angaben von Huawei (2015) arbeitet der chinesische Konzern bereits seit rund 15 Jahren an Kubas Mobil- und Festnetzen. Der Zugang für normale Bürger ist extrem teuer und begrenzt. Jeder Internetzugang läuft über staatlich kontrollierte Knotenpunkte.",
+      "description_en": "In Cuba, only a few selected locations (hotels, state institutions) provide internet access. ETECSA, the state monopoly provider, controls the entire infrastructure. According to Huawei (2015), the Chinese company has been working on Cuba's mobile and fixed networks for some 15 years. Access for ordinary citizens is extremely expensive and limited. All internet access runs through state-controlled nodes."
     },
     {
-      "date": "2018",
+      "date": "2018-12",
       "phase": "doctrine",
-      "title": "Einführung des mobilen Internets mit eingebautem Überwachungssystem",
-      "description": "Kuba führt erstmals mobiles Internet ein, das sofort unter ETECSA-Kontrolle steht. Technische Analysen zeigen Deep Packet Inspection (DPI) zum Inhaltsfiltern. Die Infrastruktur erlaubt gezielte Abschaltung einzelner Dienste wie Social Media. Während politischer Ereignisse werden VPN-Dienste blockiert. Freedom House stuft Kuba konsistent als 'Not Free' ein.",
+      "title": "Mobiles Internet startet unter ETECSA-Monopol mit Inhaltsfilterung",
+      "description": "Im Dezember 2018 führt Kuba mobiles Internet (3G) ein, das wie der gesamte Zugang unter ETECSA-Kontrolle steht. Bereits 2017 hatten OONI-Messungen die Sperrung von 41 Websites - vor allem unabhängiger Nachrichten-, Blog- und Menschenrechtsseiten - per Deep Packet Inspection (DPI) nachgewiesen; OONI fand Huawei-Zugangspunkte im Netz, konnte aber nicht klären, ob Huawei-Technik selbst zur Zensur dient. Die zentrale Infrastruktur erlaubt die gezielte Einschränkung einzelner Dienste wie sozialer Medien. Freedom House stuft Kuba konsistent als 'Not Free' ein.",
       "sources": [
+        "https://ooni.org/post/cuba-internet-censorship-2017",
         "https://freedomhouse.org/country/cuba/freedom-net/2021"
       ],
-      "title_de": "Einführung des mobilen Internets mit eingebautem Überwachungssystem",
-      "title_en": "Introduction of mobile internet with built-in surveillance system",
-      "description_de": "Kuba führt erstmals mobiles Internet ein, das sofort unter ETECSA-Kontrolle steht. Technische Analysen zeigen Deep Packet Inspection (DPI) zum Inhaltsfiltern. Die Infrastruktur erlaubt gezielte Abschaltung einzelner Dienste wie Social Media. Während politischer Ereignisse werden VPN-Dienste blockiert. Freedom House stuft Kuba konsistent als 'Not Free' ein.",
-      "description_en": "Cuba introduces mobile internet for the first time, immediately under ETECSA control. Technical analyses show Deep Packet Inspection (DPI) used for content filtering. The infrastructure allows targeted shutdown of individual services such as social media. During political events, VPN services are blocked. Freedom House consistently rates Cuba as 'Not Free'."
+      "title_de": "Mobiles Internet startet unter ETECSA-Monopol mit Inhaltsfilterung",
+      "title_en": "Mobile internet launches under ETECSA monopoly with content filtering",
+      "description_de": "Im Dezember 2018 führt Kuba mobiles Internet (3G) ein, das wie der gesamte Zugang unter ETECSA-Kontrolle steht. Bereits 2017 hatten OONI-Messungen die Sperrung von 41 Websites - vor allem unabhängiger Nachrichten-, Blog- und Menschenrechtsseiten - per Deep Packet Inspection (DPI) nachgewiesen; OONI fand Huawei-Zugangspunkte im Netz, konnte aber nicht klären, ob Huawei-Technik selbst zur Zensur dient. Die zentrale Infrastruktur erlaubt die gezielte Einschränkung einzelner Dienste wie sozialer Medien. Freedom House stuft Kuba konsistent als 'Not Free' ein.",
+      "description_en": "In December 2018 Cuba introduces mobile internet (3G), which, like all access, is under ETECSA control. OONI measurements had already documented in 2017 the blocking of 41 websites - mostly independent news, blog and human rights sites - via deep packet inspection (DPI); OONI found Huawei access points in the network but could not establish whether Huawei technology itself is used for censorship. The centralised infrastructure allows targeted restriction of individual services such as social media. Freedom House consistently rates Cuba as 'Not Free'."
     },
     {
       "date": "2021-07",
       "phase": "event",
-      "title": "#11J: Größte Proteste seit Jahrzehnten - Internet vollständig abgeschaltet",
-      "description": "Am 11. Juli 2021 brechen die größten Anti-Regierungs-Proteste seit Jahrzehnten aus. Die kubanische Regierung schaltet kurz nach Beginn das mobile Internet vollständig ab. NetBlocks und Access Now dokumentieren die Abschaltung in Echtzeit. Soziale Medien und Messaging-Apps werden blockiert. Hunderte Demonstranten werden verhaftet, viele berichten von Überwachung ihrer Kommunikation.",
-      "sources": [],
-      "title_de": "#11J: Größte Proteste seit Jahrzehnten - Internet vollständig abgeschaltet",
-      "title_en": "#11J: largest protests in decades - internet shut down completely",
-      "description_de": "Am 11. Juli 2021 brechen die größten Anti-Regierungs-Proteste seit Jahrzehnten aus. Die kubanische Regierung schaltet kurz nach Beginn das mobile Internet vollständig ab. NetBlocks und Access Now dokumentieren die Abschaltung in Echtzeit. Soziale Medien und Messaging-Apps werden blockiert. Hunderte Demonstranten werden verhaftet, viele berichten von Überwachung ihrer Kommunikation.",
-      "description_en": "On July 11, 2021, the largest anti-government protests in decades break out. Shortly after they begin, the Cuban government completely shuts down mobile internet. NetBlocks and Access Now document the shutdown in real time. Social media and messaging apps are blocked. Hundreds of protesters are arrested, and many report surveillance of their communications."
+      "title": "#11J: Größte Proteste seit Jahrzehnten - Internet-Ausfall und Sperren sozialer Medien",
+      "description": "Am 11. Juli 2021 brechen die größten regierungskritischen Proteste seit Jahrzehnten aus. Am Nachmittag fällt der Internetverkehr Kubas laut Messungen von Kentik für rund 30 Minuten komplett aus, gefolgt von stundenlangen Teilausfällen. Ab dem 12. Juli sind laut NetBlocks im Netz des Staatsunternehmens ETECSA, einschließlich des Mobilfunknetzes Cubacel, WhatsApp, Facebook, Instagram und Teile von Telegram bis etwa 18. Juli gestört.",
+      "sources": [
+        "https://www.kentik.com/analysis/internet-disruptions-in-cuba-following-widespread-protests/",
+        "https://netblocks.org/reports/social-media-restricted-in-cuba-amid-widening-anti-government-protests-QAdrmwyl"
+      ],
+      "title_de": "#11J: Größte Proteste seit Jahrzehnten - Internet-Ausfall und Sperren sozialer Medien",
+      "title_en": "#11J: largest protests in decades - internet outage and social media blocking",
+      "description_de": "Am 11. Juli 2021 brechen die größten regierungskritischen Proteste seit Jahrzehnten aus. Am Nachmittag fällt der Internetverkehr Kubas laut Messungen von Kentik für rund 30 Minuten komplett aus, gefolgt von stundenlangen Teilausfällen. Ab dem 12. Juli sind laut NetBlocks im Netz des Staatsunternehmens ETECSA, einschließlich des Mobilfunknetzes Cubacel, WhatsApp, Facebook, Instagram und Teile von Telegram bis etwa 18. Juli gestört.",
+      "description_en": "On 11 July 2021 the largest anti-government protests in decades break out. In the afternoon Cuba's internet traffic goes down completely for about 30 minutes according to Kentik measurements, followed by hours of partial outages. From 12 July, according to NetBlocks, WhatsApp, Facebook, Instagram and some Telegram servers are disrupted on the network of state-owned ETECSA, including the Cubacel mobile network, until around 18 July."
     },
     {
-      "date": "2023",
+      "date": "2021-08",
       "phase": "consequences",
-      "title": "Steigende Überwachungskapazitäten trotz wirtschaftlicher Krise",
-      "description": "Trotz schwerer Wirtschaftskrise investiert Kuba weiter in Überwachungsinfrastruktur. Freedom House berichtet von zunehmend gezielter Online-Repression. Journalisten und Oppositionelle werden auf Basis ihrer Online-Aktivitäten verurteilt. Internationale Versuche, den Zugang zum freien Internet zu ermöglichen (z.B. durch Starlink-Genehmigungen), werden von der Regierung blockiert.",
+      "title": "Dekret-Gesetz 35 schafft Grundlage für Netzsperren und Strafen für Online-Kritik",
+      "description": "Rund einen Monat nach den Protesten veröffentlicht die Regierung am 17. August 2021 das Dekret-Gesetz 35 zur Telekommunikation. Es verbietet die Verbreitung 'falscher Nachrichten' sowie von Inhalten, die zu Mobilisierungen 'aufstacheln', die die öffentliche Ordnung stören, und verpflichtet Anbieter, Dienste von Regelverletzern zu unterbrechen oder zu beenden. Präsident Díaz-Canel begründete die Regeln mit dem Kampf gegen Desinformation; die Interamerikanische Pressegesellschaft (SIP/IAPA) kritisierte, dass Aufrufe zu Demonstrationen damit als 'Cyberterrorismus' gelten.",
       "sources": [
-        "https://freedomhouse.org/country/cuba/freedom-net/2023"
+        "https://en.sipiapa.org/notas/1214662-iapa-condemns-the-expansion-of-restrictions-in-cuba-to-the-internet-and-social-media",
+        "https://www.jamaicaobserver.com/business/telecommunications-clampdown-in-cuba/"
       ],
-      "title_de": "Steigende Überwachungskapazitäten trotz wirtschaftlicher Krise",
-      "title_en": "Rising surveillance capabilities despite economic crisis",
-      "description_de": "Trotz schwerer Wirtschaftskrise investiert Kuba weiter in Überwachungsinfrastruktur. Freedom House berichtet von zunehmend gezielter Online-Repression. Journalisten und Oppositionelle werden auf Basis ihrer Online-Aktivitäten verurteilt. Internationale Versuche, den Zugang zum freien Internet zu ermöglichen (z.B. durch Starlink-Genehmigungen), werden von der Regierung blockiert.",
-      "description_en": "Despite a severe economic crisis, Cuba continues to invest in surveillance infrastructure. Freedom House reports increasingly targeted online repression. Journalists and opposition members are convicted on the basis of their online activities. International attempts to enable free internet access (e.g., through Starlink authorizations) are blocked by the government."
+      "title_de": "Dekret-Gesetz 35 schafft Grundlage für Netzsperren und Strafen für Online-Kritik",
+      "title_en": "Decree-Law 35 creates basis for service cut-offs and penalties for online criticism",
+      "description_de": "Rund einen Monat nach den Protesten veröffentlicht die Regierung am 17. August 2021 das Dekret-Gesetz 35 zur Telekommunikation. Es verbietet die Verbreitung 'falscher Nachrichten' sowie von Inhalten, die zu Mobilisierungen 'aufstacheln', die die öffentliche Ordnung stören, und verpflichtet Anbieter, Dienste von Regelverletzern zu unterbrechen oder zu beenden. Präsident Díaz-Canel begründete die Regeln mit dem Kampf gegen Desinformation; die Interamerikanische Pressegesellschaft (SIP/IAPA) kritisierte, dass Aufrufe zu Demonstrationen damit als 'Cyberterrorismus' gelten.",
+      "description_en": "About a month after the protests, on 17 August 2021 the government publishes Decree-Law 35 on telecommunications. It bans spreading 'false news' and content that 'incites mobilisations' disturbing public order, and obliges providers to suspend or terminate the services of rule-breakers. President Díaz-Canel justified the rules as a weapon against disinformation; the Inter American Press Association (IAPA) criticised that calls for demonstrations are thereby treated as 'cyberterrorism'."
+    },
+    {
+      "date": "2022-12",
+      "phase": "consequences",
+      "title": "Neues Strafgesetzbuch verschärft Strafen für Online-Äußerungen",
+      "description": "Am 1. Dezember 2022 tritt Kubas neues Strafgesetzbuch in Kraft. Es sieht höhere Strafen vor, wenn Delikte wie Verleumdung oder das wissentliche Verbreiten 'falscher Informationen' über soziale Medien oder Online-Medien begangen werden. Amnesty International nannte das Gesetz eine düstere Aussicht für unabhängige Journalist:innen. Bereits im Juli 2022 hatten die Menschenrechtsgruppen Justicia 11J und Cubalex 1.484 Festnahmen im Zusammenhang mit den Protesten vom Juli 2021 gezählt; 701 Menschen waren noch in Haft.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/news/2022/12/cuba-el-nuevo-codigo-penal-presenta-un-panorama-aterrador-para-2023-y-anos-posteriores/",
+        "https://www.univision.com/local/miami-wltv/cuba-ano-protestas-11-julio-informe-revela-701-arrestados"
+      ],
+      "title_de": "Neues Strafgesetzbuch verschärft Strafen für Online-Äußerungen",
+      "title_en": "New Penal Code tightens penalties for online expression",
+      "description_de": "Am 1. Dezember 2022 tritt Kubas neues Strafgesetzbuch in Kraft. Es sieht höhere Strafen vor, wenn Delikte wie Verleumdung oder das wissentliche Verbreiten 'falscher Informationen' über soziale Medien oder Online-Medien begangen werden. Amnesty International nannte das Gesetz eine düstere Aussicht für unabhängige Journalist:innen. Bereits im Juli 2022 hatten die Menschenrechtsgruppen Justicia 11J und Cubalex 1.484 Festnahmen im Zusammenhang mit den Protesten vom Juli 2021 gezählt; 701 Menschen waren noch in Haft.",
+      "description_en": "On 1 December 2022 Cuba's new Penal Code enters into force. It provides for higher penalties when offences such as defamation or knowingly spreading 'false information' are committed via social media or online media. Amnesty International called the law a chilling prospect for independent journalists. In July 2022 the human rights groups Justicia 11J and Cubalex had already counted 1,484 detentions linked to the July 2021 protests, with 701 people still in custody."
+    },
+    {
+      "date": "2025-01",
+      "phase": "consequences",
+      "title": "Analyse: Kubas Überwachung beruht mutmaßlich auf russischer SORM-Technik",
+      "description": "Die Insikt Group des Sicherheitsunternehmens Recorded Future schätzt im Januar 2025 ein, dass Kuba und Nicaragua ihre digitale Überwachung 'fast sicher' auf das russische Abhörsystem SORM stützen; laut dem Bericht exportieren mindestens acht russische SORM-Anbieter in die untersuchten Länder. SORM verschafft Sicherheitsbehörden direkten Zugriff auf Telefon- und Internetverkehr. Die Analysten warnen, dass Moskau wahrscheinlich auch Zugriff auf im Ausland installierte SORM-Systeme erlangen kann; eine offizielle Bestätigung aus Havanna oder Moskau gibt es nicht.",
+      "sources": [
+        "https://recordedfuture.com/research/tracking-deployment-russian-surveillance-technologies-central-asia-latin-america"
+      ],
+      "title_de": "Analyse: Kubas Überwachung beruht mutmaßlich auf russischer SORM-Technik",
+      "title_en": "Analysis: Cuba's surveillance likely relies on Russian SORM technology",
+      "description_de": "Die Insikt Group des Sicherheitsunternehmens Recorded Future schätzt im Januar 2025 ein, dass Kuba und Nicaragua ihre digitale Überwachung 'fast sicher' auf das russische Abhörsystem SORM stützen; laut dem Bericht exportieren mindestens acht russische SORM-Anbieter in die untersuchten Länder. SORM verschafft Sicherheitsbehörden direkten Zugriff auf Telefon- und Internetverkehr. Die Analysten warnen, dass Moskau wahrscheinlich auch Zugriff auf im Ausland installierte SORM-Systeme erlangen kann; eine offizielle Bestätigung aus Havanna oder Moskau gibt es nicht.",
+      "description_en": "In January 2025 the Insikt Group of security firm Recorded Future assesses that Cuba and Nicaragua 'almost certainly' base their digital surveillance on Russia's SORM interception system; according to the report, at least eight Russian SORM providers export to the countries examined. SORM gives security agencies direct access to telephone and internet traffic. The analysts warn that Moscow can likely also gain access to SORM systems deployed abroad; there is no official confirmation from Havana or Moscow."
     }
   ],
   "asm:sources": [
@@ -131,14 +164,14 @@
       "title_en": "Freedom on the Net 2023: Cuba"
     },
     {
-      "url": "https://www.accessnow.org/keepiton/",
-      "title": "Keep It On: Internet shutdowns in Cuba",
-      "publisher": "Access Now",
-      "date": "2022",
+      "url": "https://netblocks.org/reports/social-media-restricted-in-cuba-amid-widening-anti-government-protests-QAdrmwyl",
+      "title": "Social media restricted in Cuba amid widening anti-government protests",
+      "publisher": "NetBlocks",
+      "date": "2021-07-12",
       "type": "ngo-report",
-      "asm:linkHealth": "ok",
-      "title_de": "Keep It On: Internet shutdowns in Cuba",
-      "title_en": "Keep It On: Internet shutdowns in Cuba"
+      "asm:linkHealth": "unverified",
+      "title_de": "Social media restricted in Cuba amid widening anti-government protests",
+      "title_en": "Social media restricted in Cuba amid widening anti-government protests"
     }
   ],
   "asm:metadata": {
@@ -146,12 +179,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": true,
-    "humanVerified": false
+    "humanVerified": false,
+    "asm:correctionNote": "Title corrected 2026-10-08: the original title claimed 'total' internet surveillance with Chinese technology support, which the sources do not establish (OONI could not confirm Huawei equipment is used for censorship), so it now reflects documented censorship and shutdowns and Recorded Future's assessment of Russian SORM use. Slug unchanged for permalink stability."
   },
-  "name_de": "Kuba: Totale Internetüberwachung mit chinesischer Technologieunterstützung",
-  "name_en": "Cuba: total internet surveillance with Chinese technology support",
-  "description_de": "Kuba betreibt seit der schrittweisen Einführung des Internets ein umfassendes Überwachungs- und Zensursystem, das Elemente des russischen SORM-Systems mit chinesischer Netzwerktechnologie kombiniert. Huawei liefert Kerninfrastruktur. Der einzige staatliche Internetanbieter ETECSA überwacht den gesamten Datenverkehr. Während der #11J-Proteste 2021 wurde das Mobile Internet komplett abgeschaltet. Oppositionelle und Journalisten berichten von gezielter Überwachung ihrer Kommunikation.",
-  "description_en": "Since the gradual introduction of the internet, Cuba has operated a comprehensive surveillance and censorship system that combines elements of Russia's SORM system with Chinese network technology. Huawei supplies core infrastructure. The sole state internet provider ETECSA monitors all data traffic. During the #11J protests of 2021, mobile internet was shut down completely. Opposition members and journalists report targeted surveillance of their communications.",
+  "name_de": "Kuba: Staatliche Internetkontrolle mit Zensur, Abschaltungen und mutmaßlich russischer Überwachungstechnik",
+  "name_en": "Cuba: state internet control with censorship, shutdowns and suspected Russian surveillance technology",
+  "description_de": "Kubas Internetzugang liegt vollständig beim staatlichen Monopolanbieter ETECSA, was Zensur, gezielte Sperren und Abschaltungen erleichtert. OONI-Messungen wiesen 2017 die Sperrung von 41 vor allem unabhängigen Nachrichten- und Menschenrechtsseiten per Deep Packet Inspection nach und fanden Huawei-Ausrüstung im ETECSA-Netz. Während der #11J-Proteste im Juli 2021 fiel das Internet kurzzeitig komplett aus, danach wurden soziale Medien und Messenger tagelang eingeschränkt. Das Dekret-Gesetz 35 (August 2021) und das neue Strafgesetzbuch (Dezember 2022) kriminalisieren Online-Kritik. Laut einer Analyse von Recorded Future (2025) stützt Kuba seine digitale Überwachung mutmaßlich auf das russische Abhörsystem SORM.",
+  "description_en": "Cuba's internet access lies entirely with the state monopoly provider ETECSA, which facilitates censorship, targeted blocking and shutdowns. OONI measurements in 2017 documented the blocking of 41 mostly independent news and human rights sites via deep packet inspection and found Huawei equipment in ETECSA's network. During the #11J protests in July 2021 the internet briefly went down completely, after which social media and messaging apps were restricted for days. Decree-Law 35 (August 2021) and the new Penal Code (December 2022) criminalise online criticism. According to a Recorded Future analysis (2025), Cuba likely bases its digital surveillance on Russia's SORM interception system.",
   "asm:affectedRights_de": [
     "Meinungsfreiheit",
     "Recht auf Privatsphäre",
