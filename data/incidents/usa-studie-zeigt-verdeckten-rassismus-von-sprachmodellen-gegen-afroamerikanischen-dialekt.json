@@ -8,9 +8,9 @@
   "name": "USA: Studie zeigt verdeckten Rassismus von Sprachmodellen gegen afroamerikanischen Dialekt",
   "name_de": "USA: Studie zeigt verdeckten Rassismus von Sprachmodellen gegen afroamerikanischen Dialekt",
   "name_en": "USA: Study shows covert racism in language models against African American dialect",
-  "description": "Eine 2024 in Nature veröffentlichte Studie (Hofmann, Kalluri, Jurafsky, King) wies nach, dass große Sprachmodelle wie GPT-4 trotz Anti-Rassismus-Training verdeckte Vorurteile gegen Sprecher:innen des African American English zeigen. In simulierten Entscheidungen ordneten die Modelle solchen Personen seltener Berufe und häufiger geringer angesehene Tätigkeiten zu - und verhängten in einem Szenario eher Todesurteile als bei Standard-Englisch. Die dialektbezogenen Stereotype fielen negativer aus als je experimentell erfasste menschliche Vorurteile.",
-  "description_de": "Eine 2024 in Nature veröffentlichte Studie (Hofmann, Kalluri, Jurafsky, King) wies nach, dass große Sprachmodelle wie GPT-4 trotz Anti-Rassismus-Training verdeckte Vorurteile gegen Sprecher:innen des African American English zeigen. In simulierten Entscheidungen ordneten die Modelle solchen Personen seltener Berufe und häufiger geringer angesehene Tätigkeiten zu - und verhängten in einem Szenario eher Todesurteile als bei Standard-Englisch. Die dialektbezogenen Stereotype fielen negativer aus als je experimentell erfasste menschliche Vorurteile.",
-  "description_en": "A 2024 Nature study (Hofmann, Kalluri, Jurafsky, King) showed that large language models such as GPT-4 exhibit covert bias against speakers of African American English despite anti-racism training. In simulated decisions the models were less likely to assign such people jobs and more likely to assign lower-prestige occupations, and in one scenario imposed death sentences more often than for Standard English. The dialect-based stereotypes were more negative than any experimentally recorded human stereotypes.",
+  "description": "Eine 2024 in Nature veröffentlichte Studie (Hofmann, Kalluri, Jurafsky, King) wies nach, dass große Sprachmodelle wie GPT-4 trotz Training mit menschlichem Feedback verdeckte Vorurteile gegen Sprecher:innen des African American English (AAE) zeigen. In simulierten Entscheidungen ordneten die Modelle solchen Personen geringer angesehene Berufe zu, sprachen sie in einem hypothetischen Strafverfahren häufiger schuldig und verhängten in einem Mordfall-Szenario häufiger die Todesstrafe als bei Aussagen in Standard-Englisch - ohne dass die Herkunft der Personen je genannt wurde. Die dialektbezogenen Stereotype fielen negativer aus als alle je experimentell erfassten menschlichen Stereotype über Afroamerikaner:innen.",
+  "description_de": "Eine 2024 in Nature veröffentlichte Studie (Hofmann, Kalluri, Jurafsky, King) wies nach, dass große Sprachmodelle wie GPT-4 trotz Training mit menschlichem Feedback verdeckte Vorurteile gegen Sprecher:innen des African American English (AAE) zeigen. In simulierten Entscheidungen ordneten die Modelle solchen Personen geringer angesehene Berufe zu, sprachen sie in einem hypothetischen Strafverfahren häufiger schuldig und verhängten in einem Mordfall-Szenario häufiger die Todesstrafe als bei Aussagen in Standard-Englisch - ohne dass die Herkunft der Personen je genannt wurde. Die dialektbezogenen Stereotype fielen negativer aus als alle je experimentell erfassten menschlichen Stereotype über Afroamerikaner:innen.",
+  "description_en": "A 2024 Nature study (Hofmann, Kalluri, Jurafsky, King) showed that large language models such as GPT-4 exhibit covert bias against speakers of African American English (AAE) despite training with human feedback. In simulated decisions the models assigned such people less prestigious jobs, convicted them more often in a hypothetical criminal case and imposed the death penalty more often in a murder scenario than for statements in Standard English - without race ever being mentioned. The dialect-based stereotypes were more negative than any human stereotypes about African Americans ever recorded experimentally.",
   "startDate": "2024-08",
   "location": {
     "@type": "Place",
@@ -48,68 +48,106 @@
   ],
   "asm:actors": [
     {
-      "name": "OpenAI (GPT-4 and other models studied)",
+      "name": "OpenAI",
       "type": "organization",
       "asm:systems": [
         "GPT-4",
         "GPT-3.5",
-        "RoBERTa",
+        "GPT-2"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    },
+    {
+      "name": "Meta (Facebook AI)",
+      "type": "organization",
+      "asm:systems": [
+        "RoBERTa"
+      ],
+      "name_de": "Meta (Facebook AI)",
+      "name_en": "Meta (Facebook AI)"
+    },
+    {
+      "name": "Google",
+      "type": "organization",
+      "asm:systems": [
         "T5"
       ],
-      "name_de": "OpenAI (GPT-4 and other models studied)",
-      "name_en": "OpenAI (GPT-4 and other models studied)"
+      "name_de": "Google",
+      "name_en": "Google"
     }
   ],
   "asm:severity": 4,
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2019-2022",
+      "date": "2019-2021",
       "phase": "infrastructure",
-      "title": "Trainingsdaten-Korpora reproduzieren historische US-Rassendaten",
-      "description": "Große Sprachmodelle wie GPT-2, GPT-3, RoBERTa und T5 werden auf riesigen englischsprachigen Web-Korpora trainiert, in denen African American English (AAE) sowohl unterrepräsentiert als auch primär in stereotypbeladenen Kontexten erscheint. Forschungen zeigen, dass solche Korpora karikierende Darstellungen schwarzer Sprache enthalten und positive AAE-Inhalte systematisch fehlen. Damit wird die statistische Grundlage gelegt, auf der spätere Modelle Dialekt mit niedrigem sozialen Status assoziieren.",
-      "sources": [],
-      "title_de": "Trainingsdaten-Korpora reproduzieren historische US-Rassendaten",
-      "title_en": "Training data corpora reproduce historical US racial data",
-      "description_de": "Große Sprachmodelle wie GPT-2, GPT-3, RoBERTa und T5 werden auf riesigen englischsprachigen Web-Korpora trainiert, in denen African American English (AAE) sowohl unterrepräsentiert als auch primär in stereotypbeladenen Kontexten erscheint. Forschungen zeigen, dass solche Korpora karikierende Darstellungen schwarzer Sprache enthalten und positive AAE-Inhalte systematisch fehlen. Damit wird die statistische Grundlage gelegt, auf der spätere Modelle Dialekt mit niedrigem sozialen Status assoziieren.",
-      "description_en": "Large language models such as GPT-2, GPT-3, RoBERTa and T5 are trained on huge English-language web corpora in which African American English (AAE) is both underrepresented and appears primarily in stereotype-laden contexts. Research shows that such corpora contain caricatured representations of Black speech and systematically lack positive AAE content. This lays the statistical foundation on which later models associate dialect with low social status."
+      "title": "Trainingsdaten unterrepräsentieren afroamerikanisches Englisch",
+      "description": "Große Sprachmodelle werden auf riesigen englischsprachigen Web-Korpora trainiert. Eine Analyse von Dodge et al. (2021) zum Korpus C4, mit dem u.a. Googles Modell T5 trainiert wurde, zeigt: Nur rund 0,07 Prozent der Dokumente werden African American English (AAE) zugeordnet, und die Filterung mit einer Wort-Sperrliste entfernt AAE-Dokumente weit häufiger (42 Prozent) als Dokumente in weiß geprägtem Englisch (6,2 Prozent). Damit sind afroamerikanische Sprechweisen in den Trainingsdaten deutlich unterrepräsentiert.",
+      "sources": [
+        "https://arxiv.org/pdf/2104.08758"
+      ],
+      "title_de": "Trainingsdaten unterrepräsentieren afroamerikanisches Englisch",
+      "title_en": "Training data underrepresent African American English",
+      "description_de": "Große Sprachmodelle werden auf riesigen englischsprachigen Web-Korpora trainiert. Eine Analyse von Dodge et al. (2021) zum Korpus C4, mit dem u.a. Googles Modell T5 trainiert wurde, zeigt: Nur rund 0,07 Prozent der Dokumente werden African American English (AAE) zugeordnet, und die Filterung mit einer Wort-Sperrliste entfernt AAE-Dokumente weit häufiger (42 Prozent) als Dokumente in weiß geprägtem Englisch (6,2 Prozent). Damit sind afroamerikanische Sprechweisen in den Trainingsdaten deutlich unterrepräsentiert.",
+      "description_en": "Large language models are trained on huge English-language web corpora. An analysis by Dodge et al. (2021) of the C4 corpus, which was used to train Google's T5 model among others, shows: only about 0.07 percent of documents are classified as African American English (AAE), and blocklist filtering removes AAE documents far more often (42 percent) than documents in White-aligned English (6.2 percent). African American ways of speaking are thus clearly underrepresented in the training data."
     },
     {
       "date": "2022-2023",
       "phase": "doctrine",
-      "title": "Human-Feedback-Training maskiert offenen, nicht verdeckten Rassismus",
-      "description": "OpenAI, Google und Meta intensivieren ab 2022 das Reinforcement Learning from Human Feedback (RLHF) und Alignment-Training, um offen rassistische Antworten ihrer Modelle zu unterdrücken. ChatGPT (Nov 2022) und GPT-4 (März 2023) erscheinen explizit als 'sicherer'. Bei Direktfrage zu Schwarzen liefern Modelle nun überwiegend positiv besetzte Adjektive wie 'brilliant', 'ambitious'. Forscher:innen warnen: das oberflächliche Alignment behandelt nur sichtbaren, nicht eingebetteten Bias.",
-      "sources": [],
-      "title_de": "Human-Feedback-Training maskiert offenen, nicht verdeckten Rassismus",
-      "title_en": "Human feedback training masks overt, not covert racism",
-      "description_de": "OpenAI, Google und Meta intensivieren ab 2022 das Reinforcement Learning from Human Feedback (RLHF) und Alignment-Training, um offen rassistische Antworten ihrer Modelle zu unterdrücken. ChatGPT (Nov 2022) und GPT-4 (März 2023) erscheinen explizit als 'sicherer'. Bei Direktfrage zu Schwarzen liefern Modelle nun überwiegend positiv besetzte Adjektive wie 'brilliant', 'ambitious'. Forscher:innen warnen: das oberflächliche Alignment behandelt nur sichtbaren, nicht eingebetteten Bias.",
-      "description_en": "From 2022 onwards OpenAI, Google and Meta intensify Reinforcement Learning from Human Feedback (RLHF) and alignment training to suppress overtly racist responses by their models. ChatGPT (Nov 2022) and GPT-4 (March 2023) are explicitly positioned as 'safer'. When directly asked about Black people, models now mostly produce positive adjectives like 'brilliant', 'ambitious'. Researchers warn: surface alignment only addresses visible, not embedded bias."
+      "title": "Training mit menschlichem Feedback soll offen schädliche Ausgaben unterdrücken",
+      "description": "Mit ChatGPT (November 2022) und GPT-4 (März 2023) setzt OpenAI verstärkt auf Training mit menschlichem Feedback (RLHF), um unerwünschte und offen schädliche Antworten zu unterdrücken. Zum Start von GPT-4 am 14. März 2023 erklärt OpenAI, sechs Monate in Sicherheit und Ausrichtung investiert zu haben; laut internen Tests reagiert GPT-4 um 82 Prozent seltener auf Anfragen nach unzulässigen Inhalten als GPT-3.5. Solche Maßnahmen setzen an expliziten Ausgaben an; dass sie verdeckte Dialekt-Vorurteile nicht beseitigen, zeigt erst die Studie von Hofmann et al. 2024.",
+      "sources": [
+        "https://openai.com/blog/gpt-4",
+        "https://arxiv.org/pdf/2303.08774"
+      ],
+      "title_de": "Training mit menschlichem Feedback soll offen schädliche Ausgaben unterdrücken",
+      "title_en": "Training with human feedback aims to suppress overtly harmful outputs",
+      "description_de": "Mit ChatGPT (November 2022) und GPT-4 (März 2023) setzt OpenAI verstärkt auf Training mit menschlichem Feedback (RLHF), um unerwünschte und offen schädliche Antworten zu unterdrücken. Zum Start von GPT-4 am 14. März 2023 erklärt OpenAI, sechs Monate in Sicherheit und Ausrichtung investiert zu haben; laut internen Tests reagiert GPT-4 um 82 Prozent seltener auf Anfragen nach unzulässigen Inhalten als GPT-3.5. Solche Maßnahmen setzen an expliziten Ausgaben an; dass sie verdeckte Dialekt-Vorurteile nicht beseitigen, zeigt erst die Studie von Hofmann et al. 2024.",
+      "description_en": "With ChatGPT (November 2022) and GPT-4 (March 2023) OpenAI relies increasingly on reinforcement learning from human feedback (RLHF) to suppress undesirable and overtly harmful responses. At the launch of GPT-4 on March 14, 2023 OpenAI says it spent six months on safety and alignment; according to internal evaluations GPT-4 is 82 percent less likely than GPT-3.5 to respond to requests for disallowed content. Such measures target explicit outputs; that they do not remove covert dialect prejudice is only shown by the 2024 study by Hofmann et al."
+    },
+    {
+      "date": "2024-03-01",
+      "phase": "event",
+      "title": "Preprint: Dialekt-Vorurteile beeinflussen KI-Entscheidungen",
+      "description": "Am 1. März 2024 veröffentlichen Valentin Hofmann (Allen Institute for AI), Pratyusha Ria Kalluri, Dan Jurafsky (beide Stanford) und Sharese King (University of Chicago) auf arXiv den noch nicht begutachteten Preprint 'Dialect prejudice predicts AI decisions about people's character, employability, and criminality'. Mit der Methode 'Matched Guise Probing' legen sie Sprachmodellen inhaltsgleiche Texte in AAE und Standard-Amerikanischem Englisch vor, ohne Herkunft oder Hautfarbe zu erwähnen. Ergebnis: Die Modelle ordnen AAE-Sprecher:innen schlechter angesehene Berufe zu und empfehlen häufiger Verurteilungen und Todesstrafen. MIT Technology Review und Nature News berichten über den Preprint.",
+      "sources": [
+        "https://arxiv.org/abs/2403.00742v1",
+        "https://www.technologyreview.com/2024/03/11/1089683/llms-become-more-covertly-racist-with-human-intervention/"
+      ],
+      "title_de": "Preprint: Dialekt-Vorurteile beeinflussen KI-Entscheidungen",
+      "title_en": "Preprint: dialect prejudice shapes AI decisions",
+      "description_de": "Am 1. März 2024 veröffentlichen Valentin Hofmann (Allen Institute for AI), Pratyusha Ria Kalluri, Dan Jurafsky (beide Stanford) und Sharese King (University of Chicago) auf arXiv den noch nicht begutachteten Preprint 'Dialect prejudice predicts AI decisions about people's character, employability, and criminality'. Mit der Methode 'Matched Guise Probing' legen sie Sprachmodellen inhaltsgleiche Texte in AAE und Standard-Amerikanischem Englisch vor, ohne Herkunft oder Hautfarbe zu erwähnen. Ergebnis: Die Modelle ordnen AAE-Sprecher:innen schlechter angesehene Berufe zu und empfehlen häufiger Verurteilungen und Todesstrafen. MIT Technology Review und Nature News berichten über den Preprint.",
+      "description_en": "On March 1, 2024 Valentin Hofmann (Allen Institute for AI), Pratyusha Ria Kalluri, Dan Jurafsky (both Stanford) and Sharese King (University of Chicago) post the not yet peer-reviewed preprint 'Dialect prejudice predicts AI decisions about people's character, employability, and criminality' on arXiv. Using 'matched guise probing', they present language models with texts of identical content in AAE and Standard American English without mentioning race. Result: the models assign AAE speakers less prestigious jobs and more often recommend convictions and death sentences. MIT Technology Review and Nature News report on the preprint."
     },
     {
       "date": "2024-08-28",
       "phase": "event",
       "title": "Nature-Studie: Modelle würden AAE-Sprecher:innen eher zum Tode verurteilen",
-      "description": "Am 28. August 2024 veröffentlicht Nature die Studie 'AI generates covertly racist decisions about people based on their dialect' von Valentin Hofmann, Pratyusha Ria Kalluri, Dan Jurafsky und Sharese King. Getestet werden GPT-2, GPT-3.5, GPT-4, RoBERTa und T5. Ergebnisse: AAE-Sprecher:innen werden statistisch öfter niedrig-prestigeträchtigen Berufen zugeordnet; in einem hypothetischen Mordurteil-Setup wählen Modelle für AAE-Aussagen signifikant häufiger die Todesstrafe als für Standard-American-English. Die dialektbasierten Stereotype fallen negativer aus als je gemessene menschliche Vorurteile, und RLHF verstärkt die Diskrepanz zwischen Oberflächen- und Tiefen-Bias.",
+      "description": "Am 28. August 2024 veröffentlicht Nature die begutachtete Fassung unter dem Titel 'AI generates covertly racist decisions about people based on their dialect'. Getestet werden Modelle der Familien GPT-2, RoBERTa, T5, GPT-3.5 und GPT-4. Ergebnisse: Werden die Modelle direkt nach Schwarzen gefragt, liefern sie überwiegend positive Adjektive wie 'brilliant' oder 'passionate'; ihre verdeckten, dialektbasierten Stereotype sind dagegen negativer als alle je experimentell erfassten menschlichen Stereotype über Afroamerikaner:innen und ähneln am ehesten denen vor der Bürgerrechtsbewegung. AAE-Sprecher:innen werden eher Berufen zugeordnet, die keinen Hochschulabschluss erfordern oder mit Musik und Unterhaltung zu tun haben, in einem hypothetischen Verfahren häufiger verurteilt und in einem Mordfall-Szenario signifikant häufiger zum Tode verurteilt. Weder größere Modelle noch Training mit menschlichem Feedback beseitigen das Vorurteil; Letzteres kann die Kluft zwischen offenen und verdeckten Stereotypen sogar vergrößern.",
       "sources": [
-        "https://www.nature.com/articles/s41586-024-07856-5"
+        "https://www.nature.com/articles/s41586-024-07856-5",
+        "https://www.sciencenews.org/article/ai-punishments-black-dialect"
       ],
       "title_de": "Nature-Studie: Modelle würden AAE-Sprecher:innen eher zum Tode verurteilen",
       "title_en": "Nature study: models would sentence AAE speakers to death more often",
-      "description_de": "Am 28. August 2024 veröffentlicht Nature die Studie 'AI generates covertly racist decisions about people based on their dialect' von Valentin Hofmann, Pratyusha Ria Kalluri, Dan Jurafsky und Sharese King. Getestet werden GPT-2, GPT-3.5, GPT-4, RoBERTa und T5. Ergebnisse: AAE-Sprecher:innen werden statistisch öfter niedrig-prestigeträchtigen Berufen zugeordnet; in einem hypothetischen Mordurteil-Setup wählen Modelle für AAE-Aussagen signifikant häufiger die Todesstrafe als für Standard-American-English. Die dialektbasierten Stereotype fallen negativer aus als je gemessene menschliche Vorurteile, und RLHF verstärkt die Diskrepanz zwischen Oberflächen- und Tiefen-Bias.",
-      "description_en": "On 28 August 2024 Nature publishes the study 'AI generates covertly racist decisions about people based on their dialect' by Valentin Hofmann, Pratyusha Ria Kalluri, Dan Jurafsky and Sharese King. Tested are GPT-2, GPT-3.5, GPT-4, RoBERTa and T5. Findings: AAE speakers are statistically more often assigned to low-prestige occupations; in a hypothetical murder verdict setup models choose the death penalty significantly more often for AAE statements than for Standard American English. Dialect-based stereotypes are more negative than any human stereotypes ever measured, and RLHF widens the gap between surface and deep bias."
+      "description_de": "Am 28. August 2024 veröffentlicht Nature die begutachtete Fassung unter dem Titel 'AI generates covertly racist decisions about people based on their dialect'. Getestet werden Modelle der Familien GPT-2, RoBERTa, T5, GPT-3.5 und GPT-4. Ergebnisse: Werden die Modelle direkt nach Schwarzen gefragt, liefern sie überwiegend positive Adjektive wie 'brilliant' oder 'passionate'; ihre verdeckten, dialektbasierten Stereotype sind dagegen negativer als alle je experimentell erfassten menschlichen Stereotype über Afroamerikaner:innen und ähneln am ehesten denen vor der Bürgerrechtsbewegung. AAE-Sprecher:innen werden eher Berufen zugeordnet, die keinen Hochschulabschluss erfordern oder mit Musik und Unterhaltung zu tun haben, in einem hypothetischen Verfahren häufiger verurteilt und in einem Mordfall-Szenario signifikant häufiger zum Tode verurteilt. Weder größere Modelle noch Training mit menschlichem Feedback beseitigen das Vorurteil; Letzteres kann die Kluft zwischen offenen und verdeckten Stereotypen sogar vergrößern.",
+      "description_en": "On 28 August 2024 Nature publishes the peer-reviewed version under the title 'AI generates covertly racist decisions about people based on their dialect'. Models from the GPT-2, RoBERTa, T5, GPT-3.5 and GPT-4 families are tested. Findings: when asked directly about Black people, the models mostly produce positive adjectives such as 'brilliant' or 'passionate'; their covert, dialect-based stereotypes, however, are more negative than any human stereotypes about African Americans ever recorded experimentally and most closely resemble those from before the civil rights movement. AAE speakers are more likely to be matched with jobs that do not require a university degree or that relate to music and entertainment, convicted more often in a hypothetical trial and sentenced to death significantly more often in a murder scenario. Neither larger models nor training with human feedback remove the prejudice; the latter can even widen the gap between overt and covert stereotypes."
     },
     {
-      "date": "2024-2025",
+      "date": "2025",
       "phase": "consequences",
-      "title": "Folgestudien bestätigen Dialekt-Bias, regulatorische Antwort bleibt aus",
-      "description": "Nachfolgestudien (EnDive 2025, 'Rejected Dialects' zu Reward-Modellen 2025, 'Data Caricatures' 2025) bestätigen das Muster auch in neueren Modellen. Stanford HAI, MIT Technology Review und Science News berichten breit; das wissenschaftliche Konsens wächst, dass RLHF Bias verdeckt statt behebt. Trotzdem: GPT-4 und Nachfolger bleiben in US-Beschäftigungs-Screening, Versicherungs-Underwriting und Risikobewertung im Strafjustizbereich im Einsatz. Eine federale regulatorische Antwort auf dialektbasierte algorithmische Diskriminierung bleibt 2025 aus.",
+      "title": "Folgestudien vertiefen Befunde zu Dialekt-Bias",
+      "description": "Mehrere Folgestudien untersuchen Dialekt-Bias entlang der gesamten Entwicklungskette von Sprachmodellen: 'Rejected Dialects' (Mire et al., Findings of NAACL 2025) zeigt, dass Reward-Modelle, die beim Alignment eingesetzt werden, Texte in African American Language (AAL) weniger zuverlässig bewerten (im Schnitt rund 4 Prozent geringere Genauigkeit), AAL-Texte oft schlechter einstufen und Gespräche Richtung weiß geprägtem Standard-Englisch lenken. 'Data Caricatures' (Deas, Vente et al., ACL 2025) findet in zwölf Trainingskorpora nur 0,007 bis 0,18 Prozent AAL-Dokumente; mehr als ein Viertel der AAL-Texte in C4 könnte schädliche Stereotype verstärken. Der Benchmark EnDive (Findings of EMNLP 2025) zeigt, dass aktuelle Modelle bei Eingaben in unterrepräsentierten englischen Dialekten schlechter abschneiden als bei Standard-Amerikanischem Englisch.",
       "sources": [
-        "https://news.uchicago.edu/story/ai-biased-against-speakers-african-american-english-study-finds"
+        "https://arxiv.org/abs/2502.12858v1",
+        "https://aclanthology.org/2025.acl-long.1416"
       ],
-      "title_de": "Folgestudien bestätigen Dialekt-Bias, regulatorische Antwort bleibt aus",
-      "title_en": "Follow-up studies confirm dialect bias, regulatory response is missing",
-      "description_de": "Nachfolgestudien (EnDive 2025, 'Rejected Dialects' zu Reward-Modellen 2025, 'Data Caricatures' 2025) bestätigen das Muster auch in neueren Modellen. Stanford HAI, MIT Technology Review und Science News berichten breit; das wissenschaftliche Konsens wächst, dass RLHF Bias verdeckt statt behebt. Trotzdem: GPT-4 und Nachfolger bleiben in US-Beschäftigungs-Screening, Versicherungs-Underwriting und Risikobewertung im Strafjustizbereich im Einsatz. Eine federale regulatorische Antwort auf dialektbasierte algorithmische Diskriminierung bleibt 2025 aus.",
-      "description_en": "Follow-up studies (EnDive 2025, 'Rejected Dialects' on reward models 2025, 'Data Caricatures' 2025) confirm the pattern in newer models as well. Stanford HAI, MIT Technology Review and Science News report widely; scientific consensus grows that RLHF hides rather than fixes bias. Even so, GPT-4 and successors remain in use for US employment screening, insurance underwriting and criminal-justice risk assessment. A federal regulatory response to dialect-based algorithmic discrimination is missing through 2025."
+      "title_de": "Folgestudien vertiefen Befunde zu Dialekt-Bias",
+      "title_en": "Follow-up studies deepen findings on dialect bias",
+      "description_de": "Mehrere Folgestudien untersuchen Dialekt-Bias entlang der gesamten Entwicklungskette von Sprachmodellen: 'Rejected Dialects' (Mire et al., Findings of NAACL 2025) zeigt, dass Reward-Modelle, die beim Alignment eingesetzt werden, Texte in African American Language (AAL) weniger zuverlässig bewerten (im Schnitt rund 4 Prozent geringere Genauigkeit), AAL-Texte oft schlechter einstufen und Gespräche Richtung weiß geprägtem Standard-Englisch lenken. 'Data Caricatures' (Deas, Vente et al., ACL 2025) findet in zwölf Trainingskorpora nur 0,007 bis 0,18 Prozent AAL-Dokumente; mehr als ein Viertel der AAL-Texte in C4 könnte schädliche Stereotype verstärken. Der Benchmark EnDive (Findings of EMNLP 2025) zeigt, dass aktuelle Modelle bei Eingaben in unterrepräsentierten englischen Dialekten schlechter abschneiden als bei Standard-Amerikanischem Englisch.",
+      "description_en": "Several follow-up studies examine dialect bias along the entire language-model pipeline: 'Rejected Dialects' (Mire et al., Findings of NAACL 2025) shows that reward models used in alignment rate texts in African American Language (AAL) less reliably (about 4 percent lower accuracy on average), often disprefer AAL texts and steer conversations toward White Mainstream English. 'Data Caricatures' (Deas, Vente et al., ACL 2025) finds only 0.007 to 0.18 percent AAL documents in twelve pretraining corpora; more than a quarter of AAL texts in C4 may reinforce harmful stereotypes. The EnDive benchmark (Findings of EMNLP 2025) shows that current models perform worse on inputs in underrepresented English dialects than on Standard American English."
     }
   ],
   "asm:sources": [
