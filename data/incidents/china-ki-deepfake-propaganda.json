@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/china-ki-deepfake-propaganda",
   "name": "China: KI-generierte Nachrichtensprecher und Deepfake-Propaganda im staatlichen Einsatz",
-  "description": "China setzt seit 2018 KI-generierte Nachrichtensprecher und Deepfake-Technologien für staatliche Propagandazwecke ein - sowohl im Inland als auch in internationalen Einflussoperationen. Die staatliche Nachrichtenagentur Xinhua und das Unternehmen Sogou entwickelten die ersten vollsynthetischen KI-Ankerpersonen. Während der COVID-19-Pandemie wurden diese Systeme intensiv zur Verbreitung staatlich genehmigter Narrative genutzt. Internationale Forschungsinstitute dokumentieren umfangreiche koordinierte Desinformationskampagnen.",
+  "description": "China setzt seit 2018 KI-generierte Nachrichtensprecher und Deepfake-Technologien für staatliche Propagandazwecke ein - sowohl im Inland als auch in internationalen Einflussoperationen. Die staatliche Nachrichtenagentur Xinhua und das Unternehmen Sogou stellten 2018 die nach Xinhuas Angaben weltweit ersten KI-Nachrichtensprecher vor. Das pro-chinesische Netzwerk 'Spamouflage' nutzte ab 2020 KI-generierte Profilbilder und ab Ende 2022 KI-generierte fiktive Nachrichtensprecher; Microsoft dokumentierte 2024 KI-Inhalte rund um die Präsidentschaftswahl in Taiwan. Forschungsinstitute und Plattformen dokumentieren umfangreiche koordinierte Desinformationskampagnen, deren Reichweite bei echten Nutzern jedoch meist gering blieb.",
   "startDate": "2018",
   "location": {
     "@type": "Place",
@@ -25,7 +25,6 @@
   },
   "asm:incidentType": [
     "deepfakes",
-    "censorship",
     "political-pressure"
   ],
   "asm:affectedRights": [
@@ -53,6 +52,25 @@
       ],
       "name_de": "Sogou Inc.",
       "name_en": "Sogou Inc."
+    },
+    {
+      "name": "Spamouflage / Storm-1376 (China-nahes Einflussnetzwerk)",
+      "type": "government",
+      "asm:systems": [
+        "AI-generated profile pictures",
+        "AI-generated news anchors"
+      ],
+      "name_de": "Spamouflage / Storm-1376 (China-nahes Einflussnetzwerk)",
+      "name_en": "Spamouflage / Storm-1376 (China-linked influence network)"
+    },
+    {
+      "name": "Synthesia",
+      "type": "company",
+      "asm:systems": [
+        "Synthesia AI avatars"
+      ],
+      "name_de": "Synthesia",
+      "name_en": "Synthesia"
     }
   ],
   "asm:severity": 3,
@@ -61,50 +79,72 @@
     {
       "date": "2018-11",
       "phase": "infrastructure",
-      "title": "Xinhua stellt ersten KI-Nachrichtensprecher der Welt vor",
-      "description": "Die staatliche Nachrichtenagentur Xinhua präsentiert in Zusammenarbeit mit Sogou auf der World Internet Conference den ersten vollsynthetischen KI-Nachrichtensprecher. Das System kann rund um die Uhr ohne Pausen senden und wurde auf Basis eines echten Moderators trainiert. China etabliert damit eine technische Infrastruktur für skalierbare Propagandaproduktion.",
+      "title": "Xinhua stellt nach eigenen Angaben ersten KI-Nachrichtensprecher der Welt vor",
+      "description": "Die staatliche Nachrichtenagentur Xinhua präsentiert in Zusammenarbeit mit der Suchmaschinenfirma Sogou auf der World Internet Conference in Wuzhen zwei KI-Nachrichtensprecher, die Xinhua als weltweit erste bezeichnet. Stimme, Lippenbewegungen und Mimik werden per KI synthetisiert; Vorbilder sind die echten Xinhua-Moderatoren Qiu Hao und Zhang Zhao. Laut Xinhua können die Avatare rund um die Uhr senden und Produktionskosten senken. China etabliert damit eine technische Infrastruktur für skalierbare Propagandaproduktion.",
       "sources": [
-        "https://www.bbc.com/news/technology-46136504"
+        "https://www.bbc.com/news/technology-46136504",
+        "https://www.npr.org/2018/11/09/666239216/ai-news-anchor-makes-debut-in-china"
       ],
-      "title_de": "Xinhua stellt ersten KI-Nachrichtensprecher der Welt vor",
-      "description_de": "Die staatliche Nachrichtenagentur Xinhua präsentiert in Zusammenarbeit mit Sogou auf der World Internet Conference den ersten vollsynthetischen KI-Nachrichtensprecher. Das System kann rund um die Uhr ohne Pausen senden und wurde auf Basis eines echten Moderators trainiert. China etabliert damit eine technische Infrastruktur für skalierbare Propagandaproduktion.",
-      "title_en": "Xinhua unveils the world's first AI news anchor",
-      "description_en": "State news agency Xinhua, in cooperation with Sogou, presents the first fully synthetic AI news anchor at the World Internet Conference. The system can broadcast around the clock without breaks and was trained on a real-life presenter. China thereby establishes the technical infrastructure for scalable propaganda production."
+      "title_de": "Xinhua stellt nach eigenen Angaben ersten KI-Nachrichtensprecher der Welt vor",
+      "description_de": "Die staatliche Nachrichtenagentur Xinhua präsentiert in Zusammenarbeit mit der Suchmaschinenfirma Sogou auf der World Internet Conference in Wuzhen zwei KI-Nachrichtensprecher, die Xinhua als weltweit erste bezeichnet. Stimme, Lippenbewegungen und Mimik werden per KI synthetisiert; Vorbilder sind die echten Xinhua-Moderatoren Qiu Hao und Zhang Zhao. Laut Xinhua können die Avatare rund um die Uhr senden und Produktionskosten senken. China etabliert damit eine technische Infrastruktur für skalierbare Propagandaproduktion.",
+      "title_en": "Xinhua unveils what it calls the world's first AI news anchor",
+      "description_en": "State news agency Xinhua, together with search company Sogou, presents two AI news anchors at the World Internet Conference in Wuzhen, which Xinhua bills as the world's first. Voice, lip movements and facial expressions are synthesised by AI; the models are real Xinhua presenters Qiu Hao and Zhang Zhao. According to Xinhua, the avatars can broadcast around the clock and reduce production costs. China thereby establishes the technical infrastructure for scalable propaganda production."
     },
     {
       "date": "2020",
       "phase": "doctrine",
-      "title": "COVID-19-Pandemie als Testfeld für KI-Propagandasysteme",
-      "description": "Chinesische staatliche Medien setzen KI-Systeme massiv ein, um staatlich genehmigte COVID-19-Narrative zu verbreiten. Das Stanford Internet Observatory und Graphika dokumentieren koordinierte Netzwerke, die KI-generierte Inhalte über internationale Social-Media-Plattformen verbreiten, um die chinesische Pandemiepolitik zu rechtfertigen und Kritik zu unterdrücken.",
-      "sources": [],
-      "title_de": "COVID-19-Pandemie als Testfeld für KI-Propagandasysteme",
-      "description_de": "Chinesische staatliche Medien setzen KI-Systeme massiv ein, um staatlich genehmigte COVID-19-Narrative zu verbreiten. Das Stanford Internet Observatory und Graphika dokumentieren koordinierte Netzwerke, die KI-generierte Inhalte über internationale Social-Media-Plattformen verbreiten, um die chinesische Pandemiepolitik zu rechtfertigen und Kritik zu unterdrücken.",
-      "title_en": "COVID-19 pandemic as a testbed for AI propaganda systems",
-      "description_en": "Chinese state media massively deploy AI systems to spread state-approved COVID-19 narratives. The Stanford Internet Observatory and Graphika document coordinated networks that distribute AI-generated content across international social media platforms to justify Chinese pandemic policy and suppress criticism."
+      "title": "Spamouflage verbreitet COVID-19-Narrative und nutzt KI-generierte Profilbilder",
+      "description": "Graphika dokumentiert im April 2020, dass das pro-chinesische Netzwerk 'Spamouflage Dragon' nach Plattform-Sperren mit neuen und reaktivierten Konten zurückkehrt und unter anderem die chinesische Reaktion auf COVID-19 lobt. Ab Juni 2020 verbreitet es englischsprachige Videos mit maschineller Sprachausgabe gegen die US-Regierung, etwa gegen deren Corona-Politik. Laut Graphikas Bericht vom August 2020 setzt das Netzwerk dabei erstmals Gruppen von Konten mit KI-generierten Profilbildern ein; authentische Nutzer reagierten jedoch kaum.",
+      "sources": [
+        "https://frontend.graphika.com/reports/return-of-the-spamouflage-dragon-1",
+        "https://public-assets.graphika.com/reports/graphika_report_spamouflage_dragon_goes_to_america.pdf"
+      ],
+      "title_de": "Spamouflage verbreitet COVID-19-Narrative und nutzt KI-generierte Profilbilder",
+      "description_de": "Graphika dokumentiert im April 2020, dass das pro-chinesische Netzwerk 'Spamouflage Dragon' nach Plattform-Sperren mit neuen und reaktivierten Konten zurückkehrt und unter anderem die chinesische Reaktion auf COVID-19 lobt. Ab Juni 2020 verbreitet es englischsprachige Videos mit maschineller Sprachausgabe gegen die US-Regierung, etwa gegen deren Corona-Politik. Laut Graphikas Bericht vom August 2020 setzt das Netzwerk dabei erstmals Gruppen von Konten mit KI-generierten Profilbildern ein; authentische Nutzer reagierten jedoch kaum.",
+      "title_en": "Spamouflage spreads COVID-19 narratives and uses AI-generated profile pictures",
+      "description_en": "In April 2020 Graphika documents that the pro-Chinese 'Spamouflage Dragon' network returns after platform takedowns with new and reactivated accounts, praising among other things China's response to COVID-19. From June 2020 it spreads English-language videos with machine-generated narration attacking the US government, including its coronavirus policy. According to Graphika's August 2020 report, the network for the first time uses clusters of accounts with AI-generated profile pictures; authentic users, however, barely engaged."
     },
     {
       "date": "2022",
       "phase": "event",
-      "title": "Internationale Einflussoperationen mit Deepfake-Inhalten",
-      "description": "Graphika und das Stanford Internet Observatory veröffentlichen Berichte über 'Spamouflage Dragon' - ein umfangreiches chinesisches Netzwerk, das KI-generierte Avatare und synthetische Medieninhalte nutzt, um auf Facebook, YouTube und Twitter Einfluss zu nehmen. Die Kampagnen zielen auf internationale Zielgruppen in Nordamerika, Europa und Australien.",
+      "title": "Spamouflage verbreitet Videos mit KI-generierten Nachrichtensprechern ('Wolf News')",
+      "description": "Ende 2022 beobachtet Graphika, dass Spamouflage Videos des erfundenen Mediums 'Wolf News' mit zwei KI-generierten Nachrichtensprechern, einem Mann und einer Frau, verbreitet. Die Clips werfen der US-Regierung Versagen bei der Waffengewalt vor und werben für engere Beziehungen zwischen den USA und China. Laut Graphikas Bericht 'Deepfake It Till You Make It' (Februar 2023) beobachtet Graphika damit erstmals, dass eine staatsnahe Operation KI-generiertes Videomaterial fiktiver Personen verbreitet; die Avatare stammen fast sicher von der britischen Plattform Synthesia, die die verantwortlichen Kunden sperrte. Keines der Videos erreichte mehr als 300 Aufrufe.",
       "sources": [
-        "https://graphika.com/reports/spamouflage"
+        "https://public-assets.graphika.com/reports/graphika-report-deepfake-it-till-you-make-it.pdf",
+        "https://therecord.media/deepfake-news-anchors-spread-chinese-propaganda-on-social-media/"
       ],
-      "title_de": "Internationale Einflussoperationen mit Deepfake-Inhalten",
-      "description_de": "Graphika und das Stanford Internet Observatory veröffentlichen Berichte über 'Spamouflage Dragon' - ein umfangreiches chinesisches Netzwerk, das KI-generierte Avatare und synthetische Medieninhalte nutzt, um auf Facebook, YouTube und Twitter Einfluss zu nehmen. Die Kampagnen zielen auf internationale Zielgruppen in Nordamerika, Europa und Australien.",
-      "title_en": "International influence operations using deepfake content",
-      "description_en": "Graphika and the Stanford Internet Observatory publish reports on 'Spamouflage Dragon' - a large Chinese network using AI-generated avatars and synthetic media to influence audiences on Facebook, YouTube, and Twitter. The campaigns target international audiences in North America, Europe, and Australia."
+      "title_de": "Spamouflage verbreitet Videos mit KI-generierten Nachrichtensprechern ('Wolf News')",
+      "description_de": "Ende 2022 beobachtet Graphika, dass Spamouflage Videos des erfundenen Mediums 'Wolf News' mit zwei KI-generierten Nachrichtensprechern, einem Mann und einer Frau, verbreitet. Die Clips werfen der US-Regierung Versagen bei der Waffengewalt vor und werben für engere Beziehungen zwischen den USA und China. Laut Graphikas Bericht 'Deepfake It Till You Make It' (Februar 2023) beobachtet Graphika damit erstmals, dass eine staatsnahe Operation KI-generiertes Videomaterial fiktiver Personen verbreitet; die Avatare stammen fast sicher von der britischen Plattform Synthesia, die die verantwortlichen Kunden sperrte. Keines der Videos erreichte mehr als 300 Aufrufe.",
+      "title_en": "Spamouflage spreads videos with AI-generated news anchors ('Wolf News')",
+      "description_en": "In late 2022 Graphika observes Spamouflage promoting videos from the fictitious outlet 'Wolf News' featuring two AI-generated news anchors, a man and a woman. The clips accuse the US government of failing to address gun violence and promote closer US-China ties. According to Graphika's report 'Deepfake It Till You Make It' (February 2023), this is the first time Graphika has observed a state-aligned operation promoting AI-generated video footage of fictitious people; the avatars almost certainly come from the British platform Synthesia, which banned the customers responsible. None of the videos received more than 300 views."
     },
     {
-      "date": "2023",
+      "date": "2023-08",
       "phase": "consequences",
-      "title": "Ausweitung und internationale Warnung vor KI-Desinformation",
-      "description": "Westliche Geheimdienste und Forschungsinstitute warnen vor der zunehmenden Qualität und Reichweite chinesischer KI-gestützter Einflussoperationen. Die EU und die USA verhängen Sanktionen gegen beteiligte Akteure. Gleichzeitig exportiert China seine KI-Propagandatechnologie in autoritare Partnerstaaten, was zu einer globalen Ausbreitung der Technologie führt.",
-      "sources": [],
-      "title_de": "Ausweitung und internationale Warnung vor KI-Desinformation",
-      "description_de": "Westliche Geheimdienste und Forschungsinstitute warnen vor der zunehmenden Qualität und Reichweite chinesischer KI-gestützter Einflussoperationen. Die EU und die USA verhängen Sanktionen gegen beteiligte Akteure. Gleichzeitig exportiert China seine KI-Propagandatechnologie in autoritare Partnerstaaten, was zu einer globalen Ausbreitung der Technologie führt.",
-      "title_en": "Expansion and international warnings about AI disinformation",
-      "description_en": "Western intelligence services and research institutes warn of the growing quality and reach of Chinese AI-powered influence operations. The EU and the United States impose sanctions on actors involved. At the same time, China exports its AI propaganda technology to authoritarian partner states, leading to a global proliferation of the technology."
+      "title": "Meta entfernt Tausende Konten des Spamouflage-Netzwerks",
+      "description": "Ende August 2023 meldet Meta die Entfernung von 7.704 Facebook-Konten, 954 Seiten, 15 Gruppen und 15 Instagram-Konten des Spamouflage-Netzwerks - nach Metas Angaben die größte bekannte verdeckte Einflussoperation, aktiv auf mehr als 50 Plattformen und Foren. Meta stellte Verbindungen zu Personen mit Bezug zu chinesischen Strafverfolgungsbehörden fest, nannte aber keine konkreten Behörden. Trotz ihres Umfangs erreichte die Kampagne kaum authentische Nutzer.",
+      "sources": [
+        "https://www.cnbc.com/2023/08/29/meta-disrupts-chinese-misinformation-network-linked-to-law-enforcement-.html",
+        "https://fortune.com/2023/08/29/meta-disrupts-disinformation-campaign-china"
+      ],
+      "title_de": "Meta entfernt Tausende Konten des Spamouflage-Netzwerks",
+      "description_de": "Ende August 2023 meldet Meta die Entfernung von 7.704 Facebook-Konten, 954 Seiten, 15 Gruppen und 15 Instagram-Konten des Spamouflage-Netzwerks - nach Metas Angaben die größte bekannte verdeckte Einflussoperation, aktiv auf mehr als 50 Plattformen und Foren. Meta stellte Verbindungen zu Personen mit Bezug zu chinesischen Strafverfolgungsbehörden fest, nannte aber keine konkreten Behörden. Trotz ihres Umfangs erreichte die Kampagne kaum authentische Nutzer.",
+      "title_en": "Meta removes thousands of Spamouflage network accounts",
+      "description_en": "In late August 2023 Meta reports removing 7,704 Facebook accounts, 954 Pages, 15 Groups and 15 Instagram accounts belonging to the Spamouflage network - according to Meta the largest known covert influence operation, active on more than 50 platforms and forums. Meta found links to individuals associated with Chinese law enforcement but did not name specific agencies. Despite its scale, the campaign reached few authentic users."
+    },
+    {
+      "date": "2024-04",
+      "phase": "consequences",
+      "title": "Microsoft: KI-Inhalte rund um die Präsidentschaftswahl in Taiwan",
+      "description": "Im April 2024 berichtet das Microsoft Threat Analysis Center, dass die Peking-nahe Gruppe Storm-1376 (auch Spamouflage oder Dragonbridge genannt) im Umfeld der Wahl in Taiwan im Januar 2024 KI-Inhalte einsetzte: eine mutmaßlich KI-generierte Audioaufnahme, in der der ausgeschiedene Kandidat Terry Gou angeblich einen anderen Kandidaten unterstützt, KI-generierte Memes über den DPP-Kandidaten William Lai sowie KI-generierte Nachrichtensprecher. Microsoft wertet dies als ersten von ihm beobachteten Fall, in dem ein staatlicher Akteur KI-Inhalte zur Beeinflussung einer ausländischen Wahl nutzte, schätzt die Wirkung aber als gering ein.",
+      "sources": [
+        "https://www.govinfosecurity.com/china-using-ai-to-influence-elections-microsoft-warns-a-24787",
+        "https://securityaffairs.com/161608/security/china-ai-influence-operations.html"
+      ],
+      "title_de": "Microsoft: KI-Inhalte rund um die Präsidentschaftswahl in Taiwan",
+      "description_de": "Im April 2024 berichtet das Microsoft Threat Analysis Center, dass die Peking-nahe Gruppe Storm-1376 (auch Spamouflage oder Dragonbridge genannt) im Umfeld der Wahl in Taiwan im Januar 2024 KI-Inhalte einsetzte: eine mutmaßlich KI-generierte Audioaufnahme, in der der ausgeschiedene Kandidat Terry Gou angeblich einen anderen Kandidaten unterstützt, KI-generierte Memes über den DPP-Kandidaten William Lai sowie KI-generierte Nachrichtensprecher. Microsoft wertet dies als ersten von ihm beobachteten Fall, in dem ein staatlicher Akteur KI-Inhalte zur Beeinflussung einer ausländischen Wahl nutzte, schätzt die Wirkung aber als gering ein.",
+      "title_en": "Microsoft: AI content around Taiwan's presidential election",
+      "description_en": "In April 2024 the Microsoft Threat Analysis Center reports that the Beijing-affiliated group Storm-1376 (also known as Spamouflage or Dragonbridge) used AI content around Taiwan's January 2024 election: suspected AI-generated audio in which former candidate Terry Gou appeared to endorse another candidate, AI-generated memes about DPP candidate William Lai, and AI-generated news anchors. Microsoft describes this as the first time it had observed a nation-state actor using AI content to influence a foreign election, but assesses its impact as low."
     }
   ],
   "asm:sources": [
@@ -119,14 +159,14 @@
       "title_en": "China unveils its first AI news anchor"
     },
     {
-      "url": "https://graphika.com/reports/spamouflage",
-      "title": "Spamouflage Dragon: China's Largest Covert Influence Operation",
+      "url": "https://public-assets.graphika.com/reports/graphika-report-deepfake-it-till-you-make-it.pdf",
+      "title": "Deepfake It Till You Make It: Pro-Chinese Actors Promote AI-Generated Video Footage of Fictitious People",
       "publisher": "Graphika",
-      "date": "2022-08-24",
+      "date": "2023-02-07",
       "type": "research-paper",
-      "asm:linkHealth": "ok",
-      "title_de": "Spamouflage Dragon: China's Largest Covert Influence Operation",
-      "title_en": "Spamouflage Dragon: China's Largest Covert Influence Operation"
+      "asm:linkHealth": "unverified",
+      "title_de": "Deepfake It Till You Make It: Pro-Chinese Actors Promote AI-Generated Video Footage of Fictitious People",
+      "title_en": "Deepfake It Till You Make It: Pro-Chinese Actors Promote AI-Generated Video Footage of Fictitious People"
     }
   ],
   "asm:metadata": {
@@ -137,7 +177,7 @@
     "humanVerified": true
   },
   "name_de": "China: KI-generierte Nachrichtensprecher und Deepfake-Propaganda im staatlichen Einsatz",
-  "description_de": "China setzt seit 2018 KI-generierte Nachrichtensprecher und Deepfake-Technologien für staatliche Propagandazwecke ein - sowohl im Inland als auch in internationalen Einflussoperationen. Die staatliche Nachrichtenagentur Xinhua und das Unternehmen Sogou entwickelten die ersten vollsynthetischen KI-Ankerpersonen. Während der COVID-19-Pandemie wurden diese Systeme intensiv zur Verbreitung staatlich genehmigter Narrative genutzt. Internationale Forschungsinstitute dokumentieren umfangreiche koordinierte Desinformationskampagnen.",
+  "description_de": "China setzt seit 2018 KI-generierte Nachrichtensprecher und Deepfake-Technologien für staatliche Propagandazwecke ein - sowohl im Inland als auch in internationalen Einflussoperationen. Die staatliche Nachrichtenagentur Xinhua und das Unternehmen Sogou stellten 2018 die nach Xinhuas Angaben weltweit ersten KI-Nachrichtensprecher vor. Das pro-chinesische Netzwerk 'Spamouflage' nutzte ab 2020 KI-generierte Profilbilder und ab Ende 2022 KI-generierte fiktive Nachrichtensprecher; Microsoft dokumentierte 2024 KI-Inhalte rund um die Präsidentschaftswahl in Taiwan. Forschungsinstitute und Plattformen dokumentieren umfangreiche koordinierte Desinformationskampagnen, deren Reichweite bei echten Nutzern jedoch meist gering blieb.",
   "asm:affectedRights_de": [
     "Meinungsfreiheit",
     "Recht auf Information",
@@ -145,7 +185,7 @@
     "Schutz vor Desinformation"
   ],
   "name_en": "China: AI-generated news anchors and deepfake propaganda in state use",
-  "description_en": "Since 2018, China has used AI-generated news anchors and deepfake technologies for state propaganda purposes - both domestically and in international influence operations. State news agency Xinhua and the company Sogou developed the first fully synthetic AI anchor personas. During the COVID-19 pandemic, these systems were used intensively to spread state-approved narratives. International research institutes have documented extensive coordinated disinformation campaigns.",
+  "description_en": "Since 2018, China has used AI-generated news anchors and deepfake technologies for state propaganda purposes - both domestically and in international influence operations. In 2018, state news agency Xinhua and the company Sogou presented what Xinhua called the world's first AI news anchors. From 2020 the pro-Chinese 'Spamouflage' network used AI-generated profile pictures, and from late 2022 AI-generated fictitious news anchors; in 2024 Microsoft documented AI content around Taiwan's presidential election. Research institutes and platforms have documented extensive coordinated disinformation campaigns, although their reach among authentic users mostly remained low.",
   "asm:affectedRights_en": [
     "freedom of expression",
     "right to information",
