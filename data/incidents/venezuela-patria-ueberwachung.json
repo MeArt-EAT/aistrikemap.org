@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/venezuela-patria-ueberwachung",
-  "name": "Venezuela: Patria-Plattform und chinesisches Sozialkontrollsystem",
-  "description": "Venezuela hat mit Unterstützung von ZTE (China) ein digitales Sozialkontrollsystem aufgebaut, das über die sogenannte 'Patria'-Plattform und den 'Carnet de la Patria' (Vaterlandsausweis) funktioniert. Das System verknupft Identitat, Zugang zu staatlichen Leistungen (Nahrungsmittelsubventionen, Sozialleistungen), Wahlverhalten und politische Loyalitat. Reuters enthullte 2018, dass ZTE die technische Infrastruktur lieferte. Das System ermöglicht Überwachung von Bewegungen, Kommunikation und politischer Aktivitat, wobei der Zugang zu Grundguter von der Systemteilnahme abhangig gemacht wird.",
+  "name": "Venezuela: Patria-Plattform und Sozialkontrolle nach chinesischem Vorbild",
+  "description": "Venezuela hat mit Unterstützung von ZTE (China) ein digitales Sozialkontrollsystem aufgebaut, das über die sogenannte 'Patria'-Plattform und den 'Carnet de la Patria' (Vaterlandsausweis) funktioniert. Das System verknüpft Identität, Zugang zu staatlichen Leistungen (Nahrungsmittelsubventionen, Sozialleistungen), Wahlbeteiligung und politische Loyalität. Reuters enthüllte 2018, dass ZTE die Datenbank und ein mobiles Bezahlsystem für den Ausweis aufbaute. Die Datenbank speichert laut Reuters unter anderem Angaben zu Familie, Einkommen, Besitz, Krankengeschichte, bezogenen Leistungen, Parteimitgliedschaft und Wahlteilnahme; der Zugang zu Grundgütern wird zunehmend von der Registrierung abhängig gemacht.",
   "startDate": "2017",
   "location": {
     "@type": "Place",
@@ -52,12 +52,20 @@
       "name": "ZTE Corporation",
       "type": "company",
       "asm:systems": [
-        "Smart-City-Infrastruktur",
-        "Datenverwaltungssystem",
-        "Biometrisches Erfassungssystem"
+        "Server für die Patria-Datenbank",
+        "Mobiles Bezahlsystem für den Carnet de la Patria"
       ],
       "name_de": "ZTE Corporation",
       "name_en": "ZTE Corporation"
+    },
+    {
+      "name": "CEIEC (China National Electronics Import & Export Corporation)",
+      "type": "company",
+      "asm:systems": [
+        "Software und Schulungen für Internetsperren und digitale Überwachung"
+      ],
+      "name_de": "CEIEC (China National Electronics Import & Export Corporation)",
+      "name_en": "CEIEC (China National Electronics Import & Export Corporation)"
     }
   ],
   "asm:severity": 4,
@@ -67,61 +75,69 @@
       "date": "2017-01",
       "phase": "infrastructure",
       "title": "Einführung des Carnet de la Patria",
-      "description": "Prasident Nicolas Maduro führt den 'Carnet de la Patria' ein, eine digitale ID-Karte, die an eine Mobilplattform gekoppelt ist. Biometrische Daten, Adresse, Familienstand und politische Parteizugehörigkeit werden erfasst. Das System wird als freiwillig prasentiert, Zugang zu staatlichen Leistungen wird jedoch zunehmend daran geknupft. ZTE liefert Technologie und Infrastruktur.",
-      "sources": [],
+      "description": "Präsident Nicolás Maduro kündigt im Januar 2017 den 'Carnet de la Patria' an, einen Ausweis mit QR-Code, über den Empfänger staatlicher Hilfen identifiziert werden. Bei der Registrierung müssen Fragen zur sozialen und wirtschaftlichen Lage beantwortet werden. Die Karte gilt als freiwillig, der Zugang zu subventionierten Lebensmitteln, Medikamenten und Bonuszahlungen wird jedoch zunehmend daran geknüpft. Im selben Jahr beauftragt die Regierung laut Reuters ZTE im Rahmen eines 70-Millionen-Dollar-Programms für 'nationale Sicherheit' mit dem Aufbau der Datenbank und eines mobilen Bezahlsystems.",
+      "sources": [
+        "https://www.t13.cl/noticia/mundo/bbc/elecciones-en-venezuela-que-son-los-puntos-rojos-y-el-carnet-de-la-patria",
+        "https://expansion.mx/mundo/2018/11/14/como-la-china-zte-ayudo-a-venezuela-a-construir-un-mecanismo-de-control-social"
+      ],
       "title_de": "Einführung des Carnet de la Patria",
       "title_en": "Introduction of the Carnet de la Patria",
-      "description_de": "Prasident Nicolas Maduro führt den 'Carnet de la Patria' ein, eine digitale ID-Karte, die an eine Mobilplattform gekoppelt ist. Biometrische Daten, Adresse, Familienstand und politische Parteizugehörigkeit werden erfasst. Das System wird als freiwillig prasentiert, Zugang zu staatlichen Leistungen wird jedoch zunehmend daran geknupft. ZTE liefert Technologie und Infrastruktur.",
-      "description_en": "President Nicolas Maduro introduces the 'Carnet de la Patria', a digital ID card tied to a mobile platform. Biometric data, address, marital status, and political party affiliation are collected. The system is presented as voluntary, but access to state benefits is increasingly tied to it. ZTE supplies technology and infrastructure."
+      "description_de": "Präsident Nicolás Maduro kündigt im Januar 2017 den 'Carnet de la Patria' an, einen Ausweis mit QR-Code, über den Empfänger staatlicher Hilfen identifiziert werden. Bei der Registrierung müssen Fragen zur sozialen und wirtschaftlichen Lage beantwortet werden. Die Karte gilt als freiwillig, der Zugang zu subventionierten Lebensmitteln, Medikamenten und Bonuszahlungen wird jedoch zunehmend daran geknüpft. Im selben Jahr beauftragt die Regierung laut Reuters ZTE im Rahmen eines 70-Millionen-Dollar-Programms für 'nationale Sicherheit' mit dem Aufbau der Datenbank und eines mobilen Bezahlsystems.",
+      "description_en": "In January 2017, President Nicolás Maduro announces the 'Carnet de la Patria', an ID card with a QR code used to identify recipients of state aid. Registration requires answering questions about one's social and economic situation. The card is considered voluntary, but access to subsidized food, medicine, and bonus payments is increasingly tied to it. According to Reuters, the government hires ZTE the same year, as part of a USD 70 million 'national security' program, to build the database and a mobile payment system."
     },
     {
       "date": "2018-11",
       "phase": "doctrine",
-      "title": "Reuters-Enthullung: ZTE baut Chinas Überwachungsmodell nach",
-      "description": "Reuters veröffentlicht eine umfassende Untersuchung, die belegt, dass ZTE dabei half, ein Datensystem nach dem Vorbild des chinesischen Sozialkredit-Systems aufzubauen. Das System verfolgt politische Aktivitaten, Kaufverhalten und Mobilitat. Während Wahlen wird der Ausweis an Abstimmungsstationen gescannt - Regierungsvertreter leugnen, dass Wahldaten mit Leistungsanspruch verknupft werden, Augenzeugen berichten jedoch vom Gegenteil.",
-      "sources": [],
-      "title_de": "Reuters-Enthullung: ZTE baut Chinas Überwachungsmodell nach",
-      "title_en": "Reuters reveals: ZTE replicates China's surveillance model",
-      "description_de": "Reuters veröffentlicht eine umfassende Untersuchung, die belegt, dass ZTE dabei half, ein Datensystem nach dem Vorbild des chinesischen Sozialkredit-Systems aufzubauen. Das System verfolgt politische Aktivitaten, Kaufverhalten und Mobilitat. Während Wahlen wird der Ausweis an Abstimmungsstationen gescannt - Regierungsvertreter leugnen, dass Wahldaten mit Leistungsanspruch verknupft werden, Augenzeugen berichten jedoch vom Gegenteil.",
-      "description_en": "Reuters publishes a comprehensive investigation showing that ZTE helped build a data system modeled on China's social credit system. The system tracks political activity, purchasing behavior, and mobility. During elections, the ID is scanned at polling stations - government officials deny that voting data is linked to benefit eligibility, but eyewitnesses report the opposite."
+      "title": "Reuters-Enthüllung: ZTE hilft bei Sozialkontrolle nach chinesischem Vorbild",
+      "description": "Reuters berichtet am 14. November 2018, dass sich venezolanische Beamte bereits 2008 bei ZTE in Shenzhen über Chinas Smartcard-Systeme informierten und ZTE nun Server für die Patria-Datenbank lieferte und die Bezahl-App entwickelte; ZTE-Mitarbeiter arbeiten in einer Spezialeinheit des Staatskonzerns Cantv, der die Datenbank verwaltet. Erfasst werden unter anderem Familie, Einkommen, Besitz, Krankengeschichte, Parteimitgliedschaft und ob - nicht wie - eine Person gewählt hat. Bei der Präsidentschaftswahl im Mai 2018 hatte Maduro dazu aufgerufen, den Ausweis nach der Stimmabgabe an regierungsnahen 'Puntos Rojos' scannen zu lassen, und dafür eine Prämie versprochen. ZTE erklärt, keine Rolle bei der Nutzung der Daten zu spielen.",
+      "sources": [
+        "https://expansion.mx/mundo/2018/11/14/como-la-china-zte-ayudo-a-venezuela-a-construir-un-mecanismo-de-control-social",
+        "https://www.vozdeamerica.com/a/venezuela-elecciones-puntos-rojos-premio-prometido-maduro/4402254.html"
+      ],
+      "title_de": "Reuters-Enthüllung: ZTE hilft bei Sozialkontrolle nach chinesischem Vorbild",
+      "title_en": "Reuters reveals: ZTE helps build China-style social control",
+      "description_de": "Reuters berichtet am 14. November 2018, dass sich venezolanische Beamte bereits 2008 bei ZTE in Shenzhen über Chinas Smartcard-Systeme informierten und ZTE nun Server für die Patria-Datenbank lieferte und die Bezahl-App entwickelte; ZTE-Mitarbeiter arbeiten in einer Spezialeinheit des Staatskonzerns Cantv, der die Datenbank verwaltet. Erfasst werden unter anderem Familie, Einkommen, Besitz, Krankengeschichte, Parteimitgliedschaft und ob - nicht wie - eine Person gewählt hat. Bei der Präsidentschaftswahl im Mai 2018 hatte Maduro dazu aufgerufen, den Ausweis nach der Stimmabgabe an regierungsnahen 'Puntos Rojos' scannen zu lassen, und dafür eine Prämie versprochen. ZTE erklärt, keine Rolle bei der Nutzung der Daten zu spielen.",
+      "description_en": "On November 14, 2018, Reuters reports that Venezuelan officials had already studied China's smart-card systems at ZTE in Shenzhen in 2008, and that ZTE supplied servers for the Patria database and developed the payment app; ZTE employees work in a special unit of the state telecom Cantv, which manages the database. The data recorded include family, income, property, medical history, party membership, and whether - not how - a person voted. In the May 2018 presidential election, Maduro had urged voters to have their card scanned at pro-government 'Puntos Rojos' after voting and promised a prize for doing so. ZTE says it plays no role in how the data are used."
     },
     {
       "date": "2020",
       "phase": "event",
-      "title": "COVID-Tracking und Ausweitung der Plattform",
-      "description": "Während der COVID-19-Pandemie wird die Patria-Plattform zur Verteilung von Nahrungsmitteln (CLAP-Boxen), Gasflaschen und Direktzahlungen genutzt. Berichte von Access Now und Menschenrechtsorganisationen zeigen, dass Oppositionsanhanger und Protestbeteiligte bei der Leistungsvergabe systematisch benachteiligt werden. Die Plattform wird damit zum Instrument politischer Disziplinierung der Bevolkerung.",
+      "title": "COVID-19 und Ausweitung der Plattform",
+      "description": "Während der COVID-19-Pandemie nutzt die Regierung das Sistema Patria für eine Online-Selbstdiagnose-Umfrage, an der nach Regierungsangaben rund 16,9 Millionen Menschen teilnehmen, und zahlt Sonderboni für die Quarantäne an Inhaberinnen und Inhaber des Carnet de la Patria aus. Die Zahlungen sind angesichts der Hyperinflation gering, binden den Zugang zu staatlicher Hilfe aber noch enger an die Registrierung im System.",
       "sources": [
-        "https://accessnow.org/resources/"
+        "https://mppre.gob.ve/?p=86175",
+        "https://iskm.issa.int/node/12189"
       ],
-      "title_de": "COVID-Tracking und Ausweitung der Plattform",
-      "title_en": "COVID tracking and expansion of the platform",
-      "description_de": "Während der COVID-19-Pandemie wird die Patria-Plattform zur Verteilung von Nahrungsmitteln (CLAP-Boxen), Gasflaschen und Direktzahlungen genutzt. Berichte von Access Now und Menschenrechtsorganisationen zeigen, dass Oppositionsanhanger und Protestbeteiligte bei der Leistungsvergabe systematisch benachteiligt werden. Die Plattform wird damit zum Instrument politischer Disziplinierung der Bevolkerung.",
-      "description_en": "During the COVID-19 pandemic, the Patria platform is used to distribute food (CLAP boxes), gas canisters, and direct cash transfers. Reports by Access Now and human rights organizations show that opposition supporters and protest participants are systematically disadvantaged in benefit allocation. The platform thus becomes a tool for political discipline of the population."
+      "title_de": "COVID-19 und Ausweitung der Plattform",
+      "title_en": "COVID-19 and expansion of the platform",
+      "description_de": "Während der COVID-19-Pandemie nutzt die Regierung das Sistema Patria für eine Online-Selbstdiagnose-Umfrage, an der nach Regierungsangaben rund 16,9 Millionen Menschen teilnehmen, und zahlt Sonderboni für die Quarantäne an Inhaberinnen und Inhaber des Carnet de la Patria aus. Die Zahlungen sind angesichts der Hyperinflation gering, binden den Zugang zu staatlicher Hilfe aber noch enger an die Registrierung im System.",
+      "description_en": "During the COVID-19 pandemic, the government uses the Sistema Patria for an online self-diagnosis survey, which according to government figures about 16.9 million people complete, and pays special quarantine bonuses to holders of the Carnet de la Patria. Given hyperinflation, the payments are small, but they tie access to state aid even more closely to registration in the system."
     },
     {
-      "date": "2023",
+      "date": "2020-11 bis 2021-06",
       "phase": "consequences",
-      "title": "Wahlüberwachung und internationaler Druck",
-      "description": "Bei Regionalwahlen 2023 wird der Carnet de la Patria flachendeckend an Wahlstationen eingesetzt. Internationale Wahlbeobachter kritisieren fehlende Transparenz. USA und EU verhängt Sanktionen gegen ZTE-Vertrage mit Venezuela. Menschenrechtler stellen fest, dass das System als Modell für andere autoritare Regierungen in Lateinamerika fungieren konnte. Interner Widerstand wird durch Zugangsentzug zu Leistungen wirksam unterbunden.",
+      "title": "US-Sanktionen und Diskriminierungsvorwürfe",
+      "description": "Am 30. November 2020 sanktioniert das US-Finanzministerium den chinesischen Staatskonzern CEIEC, weil er die Maduro-Regierung seit 2017 mit Software, Schulungen und Know-how für Internetsperren, digitale Überwachung und Cyberoperationen gegen politische Gegner unterstützt habe. 2021 fordern rund 40 Organisationen, darunter Ärzte- und Lehrerverbände, die UN-Hochkommissarin für Menschenrechte Michelle Bachelet zum Eingreifen auf: Bei einer Impfaktion in Valencia seien Ärztinnen, Ärzte und ältere Menschen ausgeschlossen worden, weil sie nicht im Patria-System registriert waren.",
       "sources": [
-        "https://www.hrw.org/world-report/2023/country-chapters/venezuela"
+        "https://home.treasury.gov/news/press-releases/sm1194",
+        "https://www.vanguardia.com/mundo/2021/06/03/piden-a-la-onu-intervenir-en-venezuela-ante-abusos-en-medio-de-la-covid-19/"
       ],
-      "title_de": "Wahlüberwachung und internationaler Druck",
-      "title_en": "Election surveillance and international pressure",
-      "description_de": "Bei Regionalwahlen 2023 wird der Carnet de la Patria flachendeckend an Wahlstationen eingesetzt. Internationale Wahlbeobachter kritisieren fehlende Transparenz. USA und EU verhängt Sanktionen gegen ZTE-Vertrage mit Venezuela. Menschenrechtler stellen fest, dass das System als Modell für andere autoritare Regierungen in Lateinamerika fungieren konnte. Interner Widerstand wird durch Zugangsentzug zu Leistungen wirksam unterbunden.",
-      "description_en": "In the 2023 regional elections, the Carnet de la Patria is used across the board at polling stations. International election observers criticize the lack of transparency. The US and EU impose sanctions against ZTE contracts with Venezuela. Human rights advocates note that the system could serve as a model for other authoritarian governments in Latin America. Internal resistance is effectively suppressed by withholding access to benefits."
+      "title_de": "US-Sanktionen und Diskriminierungsvorwürfe",
+      "title_en": "US sanctions and allegations of discrimination",
+      "description_de": "Am 30. November 2020 sanktioniert das US-Finanzministerium den chinesischen Staatskonzern CEIEC, weil er die Maduro-Regierung seit 2017 mit Software, Schulungen und Know-how für Internetsperren, digitale Überwachung und Cyberoperationen gegen politische Gegner unterstützt habe. 2021 fordern rund 40 Organisationen, darunter Ärzte- und Lehrerverbände, die UN-Hochkommissarin für Menschenrechte Michelle Bachelet zum Eingreifen auf: Bei einer Impfaktion in Valencia seien Ärztinnen, Ärzte und ältere Menschen ausgeschlossen worden, weil sie nicht im Patria-System registriert waren.",
+      "description_en": "On November 30, 2020, the US Treasury sanctions the Chinese state-owned company CEIEC for having supported the Maduro government since 2017 with software, training, and expertise for internet blocking, digital surveillance, and cyber operations against political opponents. In 2021, around 40 organizations, including doctors' and teachers' associations, call on UN High Commissioner for Human Rights Michelle Bachelet to intervene: at a vaccination drive in Valencia, doctors and older people were allegedly excluded because they were not registered in the Patria system."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://accessnow.org/resources/",
-      "title": "Access Now: Digital Rights in Venezuela",
-      "publisher": "Access Now",
-      "date": "2020",
-      "type": "ngo-report",
+      "url": "https://expansion.mx/mundo/2018/11/14/como-la-china-zte-ayudo-a-venezuela-a-construir-un-mecanismo-de-control-social",
+      "title": "Cómo la china ZTE ayudó a Venezuela a construir un mecanismo de control social",
+      "publisher": "Expansión (Reuters)",
+      "date": "2018-11-14",
+      "type": "news-article",
       "asm:linkHealth": "ok",
-      "title_de": "Access Now: Digital Rights in Venezuela",
-      "title_en": "Access Now: Digital Rights in Venezuela"
+      "title_de": "Cómo la china ZTE ayudó a Venezuela a construir un mecanismo de control social",
+      "title_en": "How ZTE helps Venezuela create China-style social control"
     },
     {
       "url": "https://www.hrw.org/world-report/2023/country-chapters/venezuela",
@@ -149,12 +165,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: the German title called it a 'Chinese social control system', whereas Reuters reported a China-style system built in Venezuela with ZTE technology. Slug unchanged for permalink stability."
   },
-  "name_de": "Venezuela: Patria-Plattform und chinesisches Sozialkontrollsystem",
-  "name_en": "Venezuela: Patria platform and Chinese-style social control system",
-  "description_de": "Venezuela hat mit Unterstützung von ZTE (China) ein digitales Sozialkontrollsystem aufgebaut, das über die sogenannte 'Patria'-Plattform und den 'Carnet de la Patria' (Vaterlandsausweis) funktioniert. Das System verknupft Identitat, Zugang zu staatlichen Leistungen (Nahrungsmittelsubventionen, Sozialleistungen), Wahlverhalten und politische Loyalitat. Reuters enthullte 2018, dass ZTE die technische Infrastruktur lieferte. Das System ermöglicht Überwachung von Bewegungen, Kommunikation und politischer Aktivitat, wobei der Zugang zu Grundguter von der Systemteilnahme abhangig gemacht wird.",
-  "description_en": "With support from ZTE (China), Venezuela has built a digital social control system that operates via the so-called 'Patria' platform and the 'Carnet de la Patria' (homeland ID). The system links identity, access to state benefits (food subsidies, social welfare), voting behavior, and political loyalty. Reuters revealed in 2018 that ZTE supplied the technical infrastructure. The system enables surveillance of movements, communications, and political activity, with access to basic goods made conditional on participation in the system.",
+  "name_de": "Venezuela: Patria-Plattform und Sozialkontrolle nach chinesischem Vorbild",
+  "name_en": "Venezuela: Patria platform and China-style social control",
+  "description_de": "Venezuela hat mit Unterstützung von ZTE (China) ein digitales Sozialkontrollsystem aufgebaut, das über die sogenannte 'Patria'-Plattform und den 'Carnet de la Patria' (Vaterlandsausweis) funktioniert. Das System verknüpft Identität, Zugang zu staatlichen Leistungen (Nahrungsmittelsubventionen, Sozialleistungen), Wahlbeteiligung und politische Loyalität. Reuters enthüllte 2018, dass ZTE die Datenbank und ein mobiles Bezahlsystem für den Ausweis aufbaute. Die Datenbank speichert laut Reuters unter anderem Angaben zu Familie, Einkommen, Besitz, Krankengeschichte, bezogenen Leistungen, Parteimitgliedschaft und Wahlteilnahme; der Zugang zu Grundgütern wird zunehmend von der Registrierung abhängig gemacht.",
+  "description_en": "With support from ZTE (China), Venezuela has built a digital social control system that operates via the so-called 'Patria' platform and the 'Carnet de la Patria' (homeland ID). The system links identity, access to state benefits (food subsidies, social welfare), voter turnout, and political loyalty. Reuters revealed in 2018 that ZTE built the database and a mobile payment system for the card. According to Reuters, the database stores, among other things, information on family, income, property, medical history, benefits received, party membership, and whether a person voted; access to basic goods is increasingly made conditional on registration.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Wahlfreiheit",
