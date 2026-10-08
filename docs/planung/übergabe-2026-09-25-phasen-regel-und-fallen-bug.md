@@ -371,3 +371,34 @@ die Website zeigte die Wellen 1-7 noch nicht. Neu gebaut (7dea78c).
 
 **Endstand:** Validator 2452/2452 ohne ERROR, Audit 0, 0 Smart-Chars,
 Umlaut-Fixer 0 Ersetzungen, 437 einzelne TL-Einträge ohne Quelle in 294 Files.
+
+---
+
+## Nachtrag 5 (2026-10-08): Einzelquellen-Welle 8, vierter Fixer-Bug
+
+**Welle 8 (22 Files, alle restlichen mit 3 unbelegten Einträgen):** 8 parallele
+Workflows (je eine Gruppe, Fixer -> Prüfer). **Problem:** Das WebSearch-
+Kontingent (~200) gilt pro Turn für alle gleichzeitig gestarteten Workflows;
+die Prüfer bekamen kaum Suchen ('search budget used up', 'checked from
+memory'). Deshalb wurde jede Gruppe von einem Einzel-Agenten (Agent-Tool,
+eigenes Kontingent) nachgeprüft; Commit erst danach (9b0e7ca, c19ead8,
+500fb1c, 026b76c, 70df10c, 533ee5b, ad39c9e, a15d489). Die Prüfer durften
+diesmal auch Nebenfelder (Typen, Akteure, Hauptquellen) korrigieren.
+
+**Funde (Auswahl):** erfundener Ombudsman-Bericht 'The SAMS Story' (Ontario);
+Glovo: Bologna-Urteil betraf Deliveroo, richtig ist Tribunale di Palermo;
+Spanien BOSCO: erfundene Ausschlüsse, Kältetote, 6,8-Mio.-Zahl; Kinderschutz:
+KOSA ist kein Gesetz; LAION-5B 2022 statt 2021; PredPol: alle drei Daten
+falsch; Twitter-Studie wurde nicht unterdrückt; erfundene Hauptquellen
+(Atlantic 'Secret Sauce', HFHR-Homepage, Garante-Dokument) ersetzt;
+unbelegte Akteure entfernt (Huawei bei Saudi-Arabien, Citizen Lab bei
+Ontario, Pymetrics), fehlende ergänzt (SDAIA, CITIC/Henan Costar, Microsoft,
+Workday, Intuit).
+
+**Vierter Fixer-Bug:** `busse -> buße` in data/translit-extra-map.json
+(Busse = Plural von Bus). Entfernt (0669be2); 2 ältere Schäden repariert
+(Lettland, Google-Bus). Keine Nachnamen (Weiss/Gross) verfälscht gefunden.
+
+**Endstand:** Validator 2452/2452 ohne ERROR, Audit 0, 0 Smart-Chars,
+Umlaut-Fixer 0 Ersetzungen, 371 einzelne TL-Einträge ohne Quelle in 272
+Files (nur noch 1er/2er). Bundles neu gebaut (ff203eb).
