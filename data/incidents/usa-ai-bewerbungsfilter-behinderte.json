@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-ai-bewerbungsfilter-behinderte",
-  "name": "USA: KI-Einstellungstools diskriminieren systematisch Menschen mit Behinderungen",
-  "description": "KI-gestützte Personalauswahl-Tools von Unternehmen wie HireVue und Pymetrics wurden nachweislich eingesetzt, um Bewerbungen von Menschen mit Behinderungen systematisch auszusortieren. Videoanalyse-Algorithmen bewerten Mimik, Sprachrhythmus und Augenbewegungen als Indikatoren für 'Führungsqualitäten' - Merkmale, die für Menschen mit neurologischen Differenzen, Sehbehinderungen oder motorischen Einschränkungen strukturell benachteiligend sind. Die EEOC und das DOJ erließen Leitlinien zur KI-Diskriminierung.",
+  "name": "USA: Vorwürfe der Benachteiligung von Menschen mit Behinderungen durch KI-Einstellungstools",
+  "description": "KI-gestützte Personalauswahl-Tools wie automatisierte Video-Interviews, spielbasierte Tests und Bewerberfilter stehen in den USA im Verdacht, Menschen mit Behinderungen zu benachteiligen. HireVue wertete bis 2020 auch Gesichtsausdrücke von Bewerber:innen aus; Bürgerrechtsorganisationen warnen, dass nicht barrierefreie Formate und Kriterien wie Lücken im Lebenslauf Menschen mit Behinderungen strukturell benachteiligen können. EEOC und DOJ veröffentlichten 2022 Leitlinien zur KI-Diskriminierung, die die EEOC 2025 wieder entfernte; gegen Workday (2023) sowie Intuit und HireVue (2025) wurden Klagen bzw. Beschwerden eingereicht.",
   "startDate": "2020",
   "location": {
     "@type": "Place",
@@ -24,8 +24,7 @@
     "name_en": "Washington, D.C., USA"
   },
   "asm:incidentType": [
-    "discrimination",
-    "labor-exploitation"
+    "discrimination"
   ],
   "asm:affectedRights": [
     "Recht auf Arbeit",
@@ -46,14 +45,19 @@
       "name_en": "HireVue"
     },
     {
-      "name": "Pymetrics",
+      "name": "Workday",
       "type": "company",
       "asm:systems": [
-        "Neurowissenschaftliche Spiele-Assessments",
-        "Bias-Audit-Tool"
+        "KI-gestützte Bewerber-Screening-Tools"
       ],
-      "name_de": "Pymetrics",
-      "name_en": "Pymetrics"
+      "name_de": "Workday",
+      "name_en": "Workday"
+    },
+    {
+      "name": "Intuit",
+      "type": "company",
+      "name_de": "Intuit",
+      "name_en": "Intuit"
     },
     {
       "name": "Equal Employment Opportunity Commission (EEOC)",
@@ -68,48 +72,86 @@
     {
       "date": "2020",
       "phase": "infrastructure",
-      "title": "Massenhafte Einführung von KI-Einstellungstools während der Pandemie",
-      "description": "Die COVID-19-Pandemie beschleunigt die Einführung automatisierter Einstellungstools. Unternehmen wie HireVue verarbeiten mehr als 20 Millionen Video-Interviews. Die Tools analysieren automatisch Mimik, Stimmton, Wortwahl und Blickbewegungen und generieren 'Employability Scores'. Menschen mit Autismus, Tourette-Syndrom, Sehbehinderungen, Hörschwierigkeiten und motorischen Einschränkungen werden durch diese Parameter systematisch schlechter bewertet.",
+      "title": "KI-gestützte Video-Interviews werden zum Massenwerkzeug der Personalauswahl",
+      "description": "Automatisierte Video-Interviews mit KI-Bewertung verbreiten sich in der US-Personalauswahl. Bis Anfang 2021 hat HireVue nach eigenen Angaben mehr als 19 Millionen Video-Interviews für über 700 Kunden abgewickelt; seine Modelle werteten neben Sprache und Wortwahl bis 2020 auch Gesichtsausdrücke aus, was das Unternehmen erst im Januar 2021 öffentlich als beendet bekannt gab, rund ein Jahr nach einer Beschwerde des Electronic Privacy Information Center (EPIC) bei der FTC. Im Dezember 2020 warnt das Center for Democracy and Technology, dass Video-Interviews, Persönlichkeitstests, Lebenslauf-Filter und spielbasierte Tests Bewerber:innen mit Behinderungen benachteiligen können, etwa durch nicht barrierefreie Formate oder durch Kriterien wie Lücken im Lebenslauf.",
       "sources": [
-        "https://www.ajl.org/about"
+        "https://www.shrm.org/mena/topics-tools/news/talent-acquisition/hirevue-discontinues-facial-analysis-screening",
+        "https://cdt.org/insights/report-algorithm-driven-hiring-tools-innovative-recruitment-or-expedited-disability-discrimination/"
       ],
-      "title_de": "Massenhafte Einführung von KI-Einstellungstools während der Pandemie",
-      "title_en": "Mass adoption of AI hiring tools during the pandemic",
-      "description_de": "Die COVID-19-Pandemie beschleunigt die Einführung automatisierter Einstellungstools. Unternehmen wie HireVue verarbeiten mehr als 20 Millionen Video-Interviews. Die Tools analysieren automatisch Mimik, Stimmton, Wortwahl und Blickbewegungen und generieren 'Employability Scores'. Menschen mit Autismus, Tourette-Syndrom, Sehbehinderungen, Hörschwierigkeiten und motorischen Einschränkungen werden durch diese Parameter systematisch schlechter bewertet.",
-      "description_en": "The COVID-19 pandemic accelerates the adoption of automated hiring tools. Companies such as HireVue process more than 20 million video interviews. The tools automatically analyze facial expressions, voice tone, word choice and gaze patterns and generate 'employability scores'. People with autism, Tourette's syndrome, visual impairments, hearing difficulties and motor impairments are systematically rated worse by these parameters."
+      "title_de": "KI-gestützte Video-Interviews werden zum Massenwerkzeug der Personalauswahl",
+      "title_en": "AI-assisted video interviews become a mass tool of personnel selection",
+      "description_de": "Automatisierte Video-Interviews mit KI-Bewertung verbreiten sich in der US-Personalauswahl. Bis Anfang 2021 hat HireVue nach eigenen Angaben mehr als 19 Millionen Video-Interviews für über 700 Kunden abgewickelt; seine Modelle werteten neben Sprache und Wortwahl bis 2020 auch Gesichtsausdrücke aus, was das Unternehmen erst im Januar 2021 öffentlich als beendet bekannt gab, rund ein Jahr nach einer Beschwerde des Electronic Privacy Information Center (EPIC) bei der FTC. Im Dezember 2020 warnt das Center for Democracy and Technology, dass Video-Interviews, Persönlichkeitstests, Lebenslauf-Filter und spielbasierte Tests Bewerber:innen mit Behinderungen benachteiligen können, etwa durch nicht barrierefreie Formate oder durch Kriterien wie Lücken im Lebenslauf.",
+      "description_en": "Automated video interviews with AI scoring spread through U.S. personnel selection. By early 2021, HireVue says it has hosted more than 19 million video interviews for over 700 customers; besides speech and word choice, its models also analyzed facial expressions until 2020, a practice the company only publicly announced as discontinued in January 2021, about a year after a complaint by the Electronic Privacy Information Center (EPIC) to the FTC. In December 2020, the Center for Democracy and Technology warns that video interviews, personality tests, resume screening and game-based tests can disadvantage applicants with disabilities, for example through inaccessible formats or criteria such as gaps in work history."
     },
     {
       "date": "2022-05",
       "phase": "doctrine",
       "title": "DOJ und EEOC veröffentlichen Leitlinien zu KI und Diskriminierung",
-      "description": "Das US-Justizministerium und die EEOC veröffentlichen gemeinsam Leitlinien, die klarstellen, dass KI-Einstellungstools gegen den Americans with Disabilities Act verstoßen können, wenn sie Menschen mit Behinderungen ohne angemessene Anpassungen benachteiligen. Die Leitlinien betonen, dass Arbeitgeber rechtlich verantwortlich bleiben, auch wenn sie externe KI-Tools nutzen. Die ACLU und das Center for Democracy and Technology haben zuvor Musterbeschwerdeverfahren dokumentiert.",
-      "sources": [],
+      "description": "Das US-Justizministerium und die EEOC veröffentlichen am 12. Mai 2022 parallel Leitlinien, die klarstellen, dass KI-Einstellungstools gegen den Americans with Disabilities Act verstoßen können, wenn sie Menschen mit Behinderungen ohne angemessene Vorkehrungen benachteiligen oder aussortieren. Die Leitlinien betonen, dass Arbeitgeber rechtlich verantwortlich bleiben können, auch wenn sie Tools externer Anbieter nutzen. Die EEOC hatte bereits im Oktober 2021 ihre Initiative 'Artificial Intelligence and Algorithmic Fairness' gestartet, um den Einsatz solcher Tools auf die Vereinbarkeit mit dem Antidiskriminierungsrecht zu prüfen.",
+      "sources": [
+        "https://www.eeoc.gov/newsroom/us-eeoc-and-us-department-justice-warn-against-disability-discrimination",
+        "https://www.eeoc.gov/newsroom/eeoc-launches-initiative-artificial-intelligence-and-algorithmic-fairness"
+      ],
       "title_de": "DOJ und EEOC veröffentlichen Leitlinien zu KI und Diskriminierung",
       "title_en": "DOJ and EEOC publish guidance on AI and discrimination",
-      "description_de": "Das US-Justizministerium und die EEOC veröffentlichen gemeinsam Leitlinien, die klarstellen, dass KI-Einstellungstools gegen den Americans with Disabilities Act verstoßen können, wenn sie Menschen mit Behinderungen ohne angemessene Anpassungen benachteiligen. Die Leitlinien betonen, dass Arbeitgeber rechtlich verantwortlich bleiben, auch wenn sie externe KI-Tools nutzen. Die ACLU und das Center for Democracy and Technology haben zuvor Musterbeschwerdeverfahren dokumentiert.",
-      "description_en": "The U.S. Department of Justice and the EEOC jointly publish guidance making clear that AI hiring tools can violate the Americans with Disabilities Act if they disadvantage people with disabilities without reasonable accommodations. The guidance emphasizes that employers remain legally responsible even when they use third-party AI tools. The ACLU and the Center for Democracy and Technology had previously documented model complaint cases."
+      "description_de": "Das US-Justizministerium und die EEOC veröffentlichen am 12. Mai 2022 parallel Leitlinien, die klarstellen, dass KI-Einstellungstools gegen den Americans with Disabilities Act verstoßen können, wenn sie Menschen mit Behinderungen ohne angemessene Vorkehrungen benachteiligen oder aussortieren. Die Leitlinien betonen, dass Arbeitgeber rechtlich verantwortlich bleiben können, auch wenn sie Tools externer Anbieter nutzen. Die EEOC hatte bereits im Oktober 2021 ihre Initiative 'Artificial Intelligence and Algorithmic Fairness' gestartet, um den Einsatz solcher Tools auf die Vereinbarkeit mit dem Antidiskriminierungsrecht zu prüfen.",
+      "description_en": "On May 12, 2022, the U.S. Department of Justice and the EEOC publish parallel guidance making clear that AI hiring tools can violate the Americans with Disabilities Act if they disadvantage or screen out people with disabilities without reasonable accommodations. The guidance emphasizes that employers can remain legally responsible even when they use third-party vendors' tools. The EEOC had already launched its 'Artificial Intelligence and Algorithmic Fairness' initiative in October 2021 to examine whether such tools comply with anti-discrimination law."
     },
     {
-      "date": "2023-01",
+      "date": "2023-02-21",
       "phase": "event",
-      "title": "EEOC-Durchsetzungsinitiative zu KI-Diskriminierung",
-      "description": "Die EEOC startet die Initiative 'Artificial Intelligence and Algorithmic Fairness' und kündigt an, Beschwerden zu KI-basierter Diskriminierung prioritär zu behandeln. Erste öffentlichkeitswirksame Fälle werden angekündigt. Forschungsberichte des Center for Democracy and Technology zeigen, dass 83 Prozent befragter Arbeitnehmer mit Behinderungen negative Erfahrungen mit automatisierten Bewerbungssystemen gemacht haben.",
-      "sources": [],
-      "title_de": "EEOC-Durchsetzungsinitiative zu KI-Diskriminierung",
-      "title_en": "EEOC enforcement initiative on AI discrimination",
-      "description_de": "Die EEOC startet die Initiative 'Artificial Intelligence and Algorithmic Fairness' und kündigt an, Beschwerden zu KI-basierter Diskriminierung prioritär zu behandeln. Erste öffentlichkeitswirksame Fälle werden angekündigt. Forschungsberichte des Center for Democracy and Technology zeigen, dass 83 Prozent befragter Arbeitnehmer mit Behinderungen negative Erfahrungen mit automatisierten Bewerbungssystemen gemacht haben.",
-      "description_en": "The EEOC launches its 'Artificial Intelligence and Algorithmic Fairness' initiative and announces that complaints about AI-based discrimination will be treated as a priority. The first high-profile cases are announced. Research reports by the Center for Democracy and Technology show that 83 percent of surveyed workers with disabilities have had negative experiences with automated application systems."
+      "title": "Sammelklage gegen Workday wegen KI-Bewerberfilter",
+      "description": "Derek Mobley reicht vor dem Bundesbezirksgericht für Nordkalifornien eine Sammelklage gegen den Personalsoftware-Anbieter Workday ein. Der Afroamerikaner über 40, der nach eigenen Angaben an Angststörungen und Depressionen leidet, gibt an, sich seit 2018 auf rund 80 bis 100 Stellen bei Unternehmen beworben zu haben, die Workday-Software nutzen, und stets abgelehnt worden zu sein. Er wirft den KI-gestützten Bewerberfiltern Diskriminierung aufgrund von Hautfarbe, Alter und Behinderung vor; Workday weist die Vorwürfe als unbegründet zurück.",
+      "sources": [
+        "https://www.lawandtheworkplace.com/2023/03/applicant-files-class-action-suit-over-alleged-ai-tool-discrimination-in-hiring/",
+        "https://itpro.com/business/policy-legislation/370133/workday-hit-with-claims-its-ai-hiring-systems-are-discriminatory"
+      ],
+      "title_de": "Sammelklage gegen Workday wegen KI-Bewerberfilter",
+      "title_en": "Class action against Workday over AI applicant screening",
+      "description_de": "Derek Mobley reicht vor dem Bundesbezirksgericht für Nordkalifornien eine Sammelklage gegen den Personalsoftware-Anbieter Workday ein. Der Afroamerikaner über 40, der nach eigenen Angaben an Angststörungen und Depressionen leidet, gibt an, sich seit 2018 auf rund 80 bis 100 Stellen bei Unternehmen beworben zu haben, die Workday-Software nutzen, und stets abgelehnt worden zu sein. Er wirft den KI-gestützten Bewerberfiltern Diskriminierung aufgrund von Hautfarbe, Alter und Behinderung vor; Workday weist die Vorwürfe als unbegründet zurück.",
+      "description_en": "Derek Mobley files a class action against HR software vendor Workday in the U.S. District Court for the Northern District of California. The African American man over 40, who says he lives with anxiety and depression, states that since 2018 he has applied for roughly 80 to 100 jobs at companies using Workday software and was rejected every time. He accuses the AI-assisted applicant screening tools of discrimination based on race, age and disability; Workday rejects the allegations as without merit."
     },
     {
-      "date": "2023",
+      "date": "2025-01-27",
+      "phase": "doctrine",
+      "title": "EEOC entfernt ihre KI-Leitlinien von der Website",
+      "description": "Nach den KI-Dekreten von Präsident Donald Trump entfernt die EEOC unter der kommissarischen Vorsitzenden Andrea Lucas ihre technischen Hinweise zu KI im Personalwesen von ihrer Website, darunter das ADA-Dokument vom Mai 2022. Ein Ersatz wird nicht veröffentlicht. Die zugrunde liegenden Gesetze wie der Americans with Disabilities Act gelten unverändert weiter.",
+      "sources": [
+        "https://www.cooley.com/news/insight/2025/2025-02-21-gone-but-not-forgotten-federal-laws-still-apply-despite-guidance-disappearance-act",
+        "https://www.klgates.com/The-Changing-Landscape-of-AI-Federal-Guidance-for-Employers-Reverses-Course-with-New-Administration-1-31-2025"
+      ],
+      "title_de": "EEOC entfernt ihre KI-Leitlinien von der Website",
+      "title_en": "EEOC removes its AI guidance from its website",
+      "description_de": "Nach den KI-Dekreten von Präsident Donald Trump entfernt die EEOC unter der kommissarischen Vorsitzenden Andrea Lucas ihre technischen Hinweise zu KI im Personalwesen von ihrer Website, darunter das ADA-Dokument vom Mai 2022. Ein Ersatz wird nicht veröffentlicht. Die zugrunde liegenden Gesetze wie der Americans with Disabilities Act gelten unverändert weiter.",
+      "description_en": "Following President Donald Trump's AI executive orders, the EEOC under Acting Chair Andrea Lucas removes its technical assistance on AI in employment from its website, including the May 2022 ADA document. No replacement is published. The underlying laws such as the Americans with Disabilities Act remain in force unchanged."
+    },
+    {
+      "date": "2025-03-19",
+      "phase": "event",
+      "title": "ACLU-Beschwerde gegen Intuit und HireVue im Namen einer gehörlosen Bewerberin",
+      "description": "Die ACLU of Colorado reicht bei der Colorado Civil Rights Division und der EEOC eine Beschwerde gegen Intuit und HireVue ein. Sie vertritt D.K., eine gehörlose indigene Intuit-Mitarbeiterin, deren Bitte um menschliche Untertitelung für ein Video-Interview zu einer Beförderung abgelehnt worden sein soll; nach ihrer Ablehnung habe sie automatisiertes Feedback erhalten, sie solle 'aktives Zuhören üben'. Die Beschwerde stützt sich auf das Antidiskriminierungsgesetz Colorados, den ADA und Title VII. Intuit nennt die Vorwürfe unbegründet, HireVue erklärt, Intuit habe keine KI-gestützte HireVue-Bewertung eingesetzt.",
+      "sources": [
+        "https://www.hrdive.com/news/ai-intuit-hirevue-deaf-indigenous-employee-discrimination-aclu/743273/",
+        "https://www.lawandtheworkplace.com/2025/04/another-legal-challenge-to-an-ai-interviewing-tool/"
+      ],
+      "title_de": "ACLU-Beschwerde gegen Intuit und HireVue im Namen einer gehörlosen Bewerberin",
+      "title_en": "ACLU complaint against Intuit and HireVue on behalf of a deaf applicant",
+      "description_de": "Die ACLU of Colorado reicht bei der Colorado Civil Rights Division und der EEOC eine Beschwerde gegen Intuit und HireVue ein. Sie vertritt D.K., eine gehörlose indigene Intuit-Mitarbeiterin, deren Bitte um menschliche Untertitelung für ein Video-Interview zu einer Beförderung abgelehnt worden sein soll; nach ihrer Ablehnung habe sie automatisiertes Feedback erhalten, sie solle 'aktives Zuhören üben'. Die Beschwerde stützt sich auf das Antidiskriminierungsgesetz Colorados, den ADA und Title VII. Intuit nennt die Vorwürfe unbegründet, HireVue erklärt, Intuit habe keine KI-gestützte HireVue-Bewertung eingesetzt.",
+      "description_en": "The ACLU of Colorado files a complaint against Intuit and HireVue with the Colorado Civil Rights Division and the EEOC. It represents D.K., a deaf Indigenous Intuit employee whose request for human captioning in a video interview for a promotion was allegedly denied; after being rejected, she reportedly received automated feedback telling her to 'practice active listening'. The complaint relies on the Colorado Anti-Discrimination Act, the ADA and Title VII. Intuit calls the allegations without merit, while HireVue says Intuit did not use an AI-based HireVue assessment."
+    },
+    {
+      "date": "2026-06-22",
       "phase": "consequences",
-      "title": "HireVue zieht Gesichtserkennung zurück, strukturelle Probleme bleiben",
-      "description": "Unter dem Druck von Regulierungsbehörden und zivilgesellschaftlichen Organisationen zieht HireVue die Gesichtserkennung aus seinem Bewertungssystem zurück, behält aber andere problematische Verhaltensanalysen bei. Das Illinois Artificial Intelligence Video Interview Act (2019) bleibt das einzige bundesstaatliche Gesetz, das KI-Video-Interviews reguliert. Forscher stellen fest, dass die Ausweitung von Remote-Hiring auf neurobiologische Tests und Keystroke-Monitoring ähnliche Diskriminierungsrisiken birgt.",
-      "sources": [],
-      "title_de": "HireVue zieht Gesichtserkennung zurück, strukturelle Probleme bleiben",
-      "title_en": "HireVue withdraws facial recognition; structural problems remain",
-      "description_de": "Unter dem Druck von Regulierungsbehörden und zivilgesellschaftlichen Organisationen zieht HireVue die Gesichtserkennung aus seinem Bewertungssystem zurück, behält aber andere problematische Verhaltensanalysen bei. Das Illinois Artificial Intelligence Video Interview Act (2019) bleibt das einzige bundesstaatliche Gesetz, das KI-Video-Interviews reguliert. Forscher stellen fest, dass die Ausweitung von Remote-Hiring auf neurobiologische Tests und Keystroke-Monitoring ähnliche Diskriminierungsrisiken birgt.",
-      "description_en": "Under pressure from regulators and civil society organizations, HireVue removes facial recognition from its assessment system but retains other problematic behavioral analyses. The Illinois Artificial Intelligence Video Interview Act (2019) remains the only state-level law regulating AI video interviews. Researchers note that the expansion of remote hiring into neurobiological tests and keystroke monitoring carries similar discrimination risks."
+      "title": "Gericht lässt Behinderungs-Vorwurf gegen Workday zu",
+      "description": "Bundesrichterin Rita Lin weist im Verfahren Mobley v. Workday den Antrag des Unternehmens auf Klageabweisung weitgehend zurück. Der ADA-Anspruch der Mitklägerin Jill Hughes, wonach Workdays Tools Bewerber:innen anhand indirekter Gesundheitsindikatoren aussortieren, darf weiterverfolgt werden. Die Entscheidung stellt noch keine Diskriminierung fest; Workday bestreitet die Vorwürfe.",
+      "sources": [
+        "https://blogs.duanemorris.com/classactiondefense/2026/06/24/california-federal-court-grants-in-part-and-denies-in-part-workdays-motion-to-dismiss-in-mobley-v-workday/",
+        "https://news.bloomberglaw.com/daily-labor-report/workday-loses-bid-to-toss-ai-discrimination-suit-in-california"
+      ],
+      "title_de": "Gericht lässt Behinderungs-Vorwurf gegen Workday zu",
+      "title_en": "Court allows disability claim against Workday to proceed",
+      "description_de": "Bundesrichterin Rita Lin weist im Verfahren Mobley v. Workday den Antrag des Unternehmens auf Klageabweisung weitgehend zurück. Der ADA-Anspruch der Mitklägerin Jill Hughes, wonach Workdays Tools Bewerber:innen anhand indirekter Gesundheitsindikatoren aussortieren, darf weiterverfolgt werden. Die Entscheidung stellt noch keine Diskriminierung fest; Workday bestreitet die Vorwürfe.",
+      "description_en": "In Mobley v. Workday, federal judge Rita Lin largely denies the company's motion to dismiss. Co-plaintiff Jill Hughes's ADA claim that Workday's tools screen out applicants using proxy health indicators may proceed. The ruling does not establish discrimination; Workday denies the allegations."
     }
   ],
   "asm:sources": [
@@ -169,12 +211,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": true,
-    "humanVerified": false
+    "humanVerified": false,
+    "asm:correctionNote": "Title corrected 2026-10-08: the original title presented systematic discrimination as established fact, while the record consists of official warnings, a pending lawsuit and an unresolved complaint. Slug unchanged for permalink stability."
   },
-  "name_de": "USA: KI-Einstellungstools diskriminieren systematisch Menschen mit Behinderungen",
-  "name_en": "USA: AI hiring tools systematically discriminate against people with disabilities",
-  "description_de": "KI-gestützte Personalauswahl-Tools von Unternehmen wie HireVue und Pymetrics wurden nachweislich eingesetzt, um Bewerbungen von Menschen mit Behinderungen systematisch auszusortieren. Videoanalyse-Algorithmen bewerten Mimik, Sprachrhythmus und Augenbewegungen als Indikatoren für 'Führungsqualitäten' - Merkmale, die für Menschen mit neurologischen Differenzen, Sehbehinderungen oder motorischen Einschränkungen strukturell benachteiligend sind. Die EEOC und das DOJ erließen Leitlinien zur KI-Diskriminierung.",
-  "description_en": "AI-assisted personnel selection tools from companies such as HireVue and Pymetrics have been shown to systematically screen out applications from people with disabilities. Video analysis algorithms assess facial expressions, speech rhythm and eye movements as indicators of 'leadership qualities' - traits that are structurally disadvantageous for people with neurological differences, visual impairments or motor impairments. The EEOC and the DOJ have issued guidance on AI discrimination.",
+  "name_de": "USA: Vorwürfe der Benachteiligung von Menschen mit Behinderungen durch KI-Einstellungstools",
+  "name_en": "USA: Allegations that AI hiring tools disadvantage people with disabilities",
+  "description_de": "KI-gestützte Personalauswahl-Tools wie automatisierte Video-Interviews, spielbasierte Tests und Bewerberfilter stehen in den USA im Verdacht, Menschen mit Behinderungen zu benachteiligen. HireVue wertete bis 2020 auch Gesichtsausdrücke von Bewerber:innen aus; Bürgerrechtsorganisationen warnen, dass nicht barrierefreie Formate und Kriterien wie Lücken im Lebenslauf Menschen mit Behinderungen strukturell benachteiligen können. EEOC und DOJ veröffentlichten 2022 Leitlinien zur KI-Diskriminierung, die die EEOC 2025 wieder entfernte; gegen Workday (2023) sowie Intuit und HireVue (2025) wurden Klagen bzw. Beschwerden eingereicht.",
+  "description_en": "AI-assisted personnel selection tools such as automated video interviews, game-based tests and applicant screening filters are suspected in the U.S. of disadvantaging people with disabilities. Until 2020, HireVue also analyzed applicants' facial expressions; civil rights organizations warn that inaccessible formats and criteria such as gaps in work history can structurally disadvantage people with disabilities. The EEOC and the DOJ issued guidance on AI discrimination in 2022, which the EEOC removed again in 2025; lawsuits and complaints were filed against Workday (2023) and against Intuit and HireVue (2025).",
   "asm:affectedRights_de": [
     "Recht auf Arbeit",
     "Schutz vor Diskriminierung",
