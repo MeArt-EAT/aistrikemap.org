@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/indonesien-ki-social-scoring",
-  "name": "Indonesien: KI-gestütztes Social Scoring und Internet-Zensur",
-  "description": "Indonesien implementiert ein umfassendes digitales Registrierungssystem und setzt KI-gestützte Inhaltsmoderations- und Zensurtools ein. Das Ministerium für Kommunikation und Informationstechnologie (Kominfo) blockiert Websites im großen Stil und droht Social-Media-Plattformen mit Sperrung, wenn sie Inhalte nicht entfernen. 2022 werden über 800.000 Websites blockiert. Gleichzeitig entwickelt die Regierung ein E-KTP-basiertes digitales ID-System mit biometrischen Daten von über 200 Millionen Bürger.",
+  "name": "Indonesien: Automatisierte Inhaltssperren und PSE-Registrierungspflicht für Plattformen",
+  "description": "Das indonesische Kommunikationsministerium Kominfo betreibt seit 2018 automatisierte Systeme zur Suche und Sperrung 'negativer' Online-Inhalte und verpflichtet private Plattformen seit der Ministerialverordnung 5/2020 zur Registrierung (PSE) und zur schnellen Löschung beanstandeter Inhalte. Im Juli 2022 sperrt Kominfo nach Ablauf der Registrierungsfrist zeitweise Dienste wie Steam, Epic Games, Yahoo und PayPal; Organisationen wie SAFEnet und LBH Jakarta kritisieren die Regelung als Einschränkung der Meinungsfreiheit. Ein KI-gestütztes Social-Scoring-System für Bürger ist in den ausgewerteten Quellen nicht dokumentiert.",
   "startDate": "2020",
   "location": {
     "@type": "Place",
@@ -25,8 +25,7 @@
   },
   "asm:incidentType": [
     "censorship",
-    "surveillance",
-    "data-misuse"
+    "surveillance"
   ],
   "asm:affectedRights": [
     "Meinungsfreiheit",
@@ -40,7 +39,8 @@
       "type": "government",
       "asm:systems": [
         "PSE-Registrierung",
-        "Internet Positif (Blockiersystem)"
+        "Internet Positif (Blockiersystem)",
+        "AIS (Crawler-System zur Suche nach 'negativen' Inhalten)"
       ],
       "name_de": "Kominfo (Kementerian Komunikasi dan Informatika)",
       "name_en": "Kominfo (Indonesian Ministry of Communication and Information Technology)"
@@ -56,54 +56,74 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2020",
+      "date": "2018-2019",
       "phase": "infrastructure",
-      "title": "Ausweitung der digitalen Infrastruktur und Zensur",
-      "description": "Indonesien weitet sein Internet-Positif-Blockiersystem aus und nutzt automatisierte Systeme zur Erkennung 'negativer' Inhalte. Über 800.000 Websites werden blockiert - darunter nicht nur Pornografie und Glücksspiel, sondern auch LGBTQ+-Inhalte und regierungskritische Seiten. Das System nutzt KI-basierte Keyword-Erkennung und URL-Filtering.",
+      "title": "Kominfo betreibt Crawler-Suche nach 'negativen' Inhalten",
+      "description": "Das Kommunikationsministerium Kominfo setzt ab 2018 die Crawler-Engine AIS ein, die nach Angaben des Ministeriums mit Hilfe von KI das Netz automatisch nach 'negativen' Inhalten wie Pornografie durchsucht. Für 2019 meldet Kominfo die Sperrung von mehr als einer Million Websites mit pornografischen Inhalten.",
       "sources": [
-        "https://freedomhouse.org/country/indonesia/freedom-net/2023"
+        "https://kabar24.bisnis.com/read/20201008/15/1302725/demo-uu-cipta-kerja-benarkah-kominfo-akan-blokir-media-sosial",
+        "https://www.cnnindonesia.com/teknologi/20200204092321-185-471397/kominfo-blokir-1-juta-situs-porno-sepanjang-2019"
       ],
-      "title_de": "Ausweitung der digitalen Infrastruktur und Zensur",
-      "title_en": "Expansion of digital infrastructure and censorship",
-      "description_de": "Indonesien weitet sein Internet-Positif-Blockiersystem aus und nutzt automatisierte Systeme zur Erkennung 'negativer' Inhalte. Über 800.000 Websites werden blockiert - darunter nicht nur Pornografie und Glücksspiel, sondern auch LGBTQ+-Inhalte und regierungskritische Seiten. Das System nutzt KI-basierte Keyword-Erkennung und URL-Filtering.",
-      "description_en": "Indonesia expands its Internet Positif blocking system and uses automated systems to detect 'negative' content. More than 800,000 websites are blocked - including not only pornography and gambling but also LGBTQ+ content and government-critical sites. The system uses AI-based keyword detection and URL filtering."
+      "title_de": "Kominfo betreibt Crawler-Suche nach 'negativen' Inhalten",
+      "title_en": "Kominfo operates a crawler search for 'negative' content",
+      "description_de": "Das Kommunikationsministerium Kominfo setzt ab 2018 die Crawler-Engine AIS ein, die nach Angaben des Ministeriums mit Hilfe von KI das Netz automatisch nach 'negativen' Inhalten wie Pornografie durchsucht. Für 2019 meldet Kominfo die Sperrung von mehr als einer Million Websites mit pornografischen Inhalten.",
+      "description_en": "Indonesia's communications ministry Kominfo deploys the AIS crawler engine from 2018; according to the ministry it uses AI to automatically scan the internet for 'negative' content such as pornography. For 2019, Kominfo reports having blocked more than one million websites with pornographic content."
+    },
+    {
+      "date": "2020",
+      "phase": "doctrine",
+      "title": "Verordnung MR5/2020 verpflichtet private Plattformen zur Registrierung",
+      "description": "Mit der Ministerialverordnung Nr. 5/2020 (MR5) verpflichtet Kominfo private Betreiber elektronischer Systeme (PSE), auch ausländische Plattformen, sich registrieren zu lassen. Registrierte Plattformen müssen Löschanordnungen in der Regel binnen 24 Stunden befolgen, bei 'dringenden' Fällen binnen vier Stunden; die Verordnung sieht Sanktionen bis zur Sperrung des Zugangs vor. Freedom House führt den Rückgang der Internetfreiheit in Indonesien vor allem auf diese Verordnung zurück; SAFEnet und weitere Organisationen warnen 2021 vor Einschränkungen der Meinungsfreiheit und des Datenschutzes.",
+      "sources": [
+        "https://freedomhouse.org/country/indonesia/freedom-net/2023",
+        "https://humanrightsmonitor.org/news/regulation-of-the-minister-of-communication-and-informatics-nr-5-of-2020-will-aggravate-restrictions-on-freedom-of-expression-and-data-privacy-protection-in-indonesia/"
+      ],
+      "title_de": "Verordnung MR5/2020 verpflichtet private Plattformen zur Registrierung",
+      "title_en": "Regulation MR5/2020 obliges private platforms to register",
+      "description_de": "Mit der Ministerialverordnung Nr. 5/2020 (MR5) verpflichtet Kominfo private Betreiber elektronischer Systeme (PSE), auch ausländische Plattformen, sich registrieren zu lassen. Registrierte Plattformen müssen Löschanordnungen in der Regel binnen 24 Stunden befolgen, bei 'dringenden' Fällen binnen vier Stunden; die Verordnung sieht Sanktionen bis zur Sperrung des Zugangs vor. Freedom House führt den Rückgang der Internetfreiheit in Indonesien vor allem auf diese Verordnung zurück; SAFEnet und weitere Organisationen warnen 2021 vor Einschränkungen der Meinungsfreiheit und des Datenschutzes.",
+      "description_en": "With Ministerial Regulation No. 5/2020 (MR5), Kominfo obliges private electronic system operators (PSE), including foreign platforms, to register. Registered platforms must comply with takedown orders generally within 24 hours, within four hours in 'urgent' cases; the regulation provides for sanctions up to blocking access. Freedom House attributes the decline of internet freedom in Indonesia mainly to this regulation; SAFEnet and other organizations warn in 2021 of restrictions on freedom of expression and data privacy."
     },
     {
       "date": "2022-07",
       "phase": "event",
-      "title": "PSE-Registrierungspflicht droht mit Plattform-Sperrungen",
-      "description": "Kominfo setzt eine Frist für die Registrierung aller 'privaten elektronischen Systeme' (PSE). Plattformen, die sich nicht registrieren, werden gesperrt. Yahoo, Steam und PayPal werden temporär blockiert. Die Registrierung verpflichtet zur Herausgabe von Nutzerdaten auf Anforderung der Behörden und zur Entfernung 'verbotener' Inhalte binnen 24 Stunden.",
-      "sources": [],
-      "title_de": "PSE-Registrierungspflicht droht mit Plattform-Sperrungen",
-      "title_en": "Mandatory PSE registration threatens platforms with blocks",
-      "description_de": "Kominfo setzt eine Frist für die Registrierung aller 'privaten elektronischen Systeme' (PSE). Plattformen, die sich nicht registrieren, werden gesperrt. Yahoo, Steam und PayPal werden temporär blockiert. Die Registrierung verpflichtet zur Herausgabe von Nutzerdaten auf Anforderung der Behörden und zur Entfernung 'verbotener' Inhalte binnen 24 Stunden.",
-      "description_en": "Kominfo sets a deadline for the registration of all 'private electronic systems' (PSE). Platforms that fail to register are blocked. Yahoo, Steam and PayPal are temporarily blocked. Registration obliges platforms to hand over user data upon request from authorities and to remove 'prohibited' content within 24 hours."
-    },
-    {
-      "date": "2023",
-      "phase": "event",
-      "title": "Biometrische E-KTP-Datenbank und Datenlecks",
-      "description": "Indonesiens biometrische ID-Datenbank E-KTP enthält Fingerabdrücke und Iris-Scans von über 200 Millionen Bürger. Wiederholte Datenlecks - darunter der Verkauf von 279 Millionen Gesundheitsdaten - zeigen die Verwundbarkeit der zentralisierten Dateninfrastruktur. SAFEnet dokumentiert steigende Zahlen von Überwachung gegen Aktivisten und Journalisten.",
+      "title": "PSE-Frist läuft ab, Kominfo sperrt nicht registrierte Dienste",
+      "description": "Kominfo setzt für die PSE-Registrierung zunächst den 20. Juli 2022 als Frist und verlängert sie bis zum 27. Juli. Wenige Tage später sperrt das Ministerium nicht registrierte Dienste, darunter Steam, Epic Games, Yahoo und PayPal. Nutzer protestieren unter dem Hashtag #BlokirKominfo. Die meisten Sperren werden innerhalb von Wochen wieder aufgehoben; Kominfo entschuldigt sich bei lokalen Spieleentwicklern für die Steam-Sperre.",
       "sources": [
-        "https://safenet.or.id/"
+        "https://en.tempo.co/amp/1614817/kominfo-loosens-pse-registration-deadline-until-july-27",
+        "https://en.tempo.co/amp/1617888/steam-blocked-kominfo-apologizes-to-local-game-developers"
       ],
-      "title_de": "Biometrische E-KTP-Datenbank und Datenlecks",
-      "title_en": "Biometric e-KTP database and data breaches",
-      "description_de": "Indonesiens biometrische ID-Datenbank E-KTP enthält Fingerabdrücke und Iris-Scans von über 200 Millionen Bürger. Wiederholte Datenlecks - darunter der Verkauf von 279 Millionen Gesundheitsdaten - zeigen die Verwundbarkeit der zentralisierten Dateninfrastruktur. SAFEnet dokumentiert steigende Zahlen von Überwachung gegen Aktivisten und Journalisten.",
-      "description_en": "Indonesia's e-KTP biometric ID database contains fingerprints and iris scans of more than 200 million citizens. Repeated data breaches - including the sale of 279 million health records - show the vulnerability of the centralized data infrastructure. SAFEnet documents rising surveillance against activists and journalists."
+      "title_de": "PSE-Frist läuft ab, Kominfo sperrt nicht registrierte Dienste",
+      "title_en": "PSE deadline expires, Kominfo blocks unregistered services",
+      "description_de": "Kominfo setzt für die PSE-Registrierung zunächst den 20. Juli 2022 als Frist und verlängert sie bis zum 27. Juli. Wenige Tage später sperrt das Ministerium nicht registrierte Dienste, darunter Steam, Epic Games, Yahoo und PayPal. Nutzer protestieren unter dem Hashtag #BlokirKominfo. Die meisten Sperren werden innerhalb von Wochen wieder aufgehoben; Kominfo entschuldigt sich bei lokalen Spieleentwicklern für die Steam-Sperre.",
+      "description_en": "Kominfo first sets 20 July 2022 as the deadline for PSE registration and extends it to 27 July. A few days later the ministry blocks unregistered services, including Steam, Epic Games, Yahoo and PayPal. Users protest under the hashtag #BlokirKominfo. Most blocks are lifted within weeks; Kominfo apologizes to local game developers for the Steam block."
     },
     {
-      "date": "2024",
+      "date": "2022-08",
       "phase": "consequences",
-      "title": "Wachsender Widerstand und internationale Kritik",
-      "description": "Indonesische Zivilgesellschaft und Tech-Community protestieren gegen die zunehmende Kontrolle. Die ASEAN-Debatte über KI-Regulierung wird von Indonesiens Ansatz geprägt. Die EU warnt im Rahmen der Handelsbeziehungen vor der Erosion digitaler Rechte. Indonesien bleibt mit 210 Millionen Internet-Nutzer einer der wichtigsten digitalen Märkte Südostasiens.",
+      "title": "Beschwerden und Rücknahmeforderungen gegen die Sperrpraxis",
+      "description": "Die Rechtshilfeorganisation LBH Jakarta richtet eine Beschwerdestelle für Betroffene der Sperren ein; laut Medienberichten gehen 213 Beschwerden ein, und der Kommunikationsminister erklärt, Beschwerden seien das Recht der Bürger. Eine Koalition aus Rechts- und Journalistenorganisationen, darunter LBH Pers und AJI, fordert Präsident Joko Widodo Anfang August 2022 auf, die Verordnung MR5/2020 zurückzunehmen.",
       "sources": [
-        "https://freedomhouse.org/country/indonesia/freedom-net/2023"
+        "https://gizmologi.id/news/kominfo-terima-213-aduan-soal-pemblokiran-pse/",
+        "https://teknologi.bisnis.com/read/20220802/84/1562310/aji-koalisi-advokasi-mendesak-presiden-jokowi-untuk-mencabut-permenkominfo-52020"
       ],
-      "title_de": "Wachsender Widerstand und internationale Kritik",
-      "title_en": "Growing resistance and international criticism",
-      "description_de": "Indonesische Zivilgesellschaft und Tech-Community protestieren gegen die zunehmende Kontrolle. Die ASEAN-Debatte über KI-Regulierung wird von Indonesiens Ansatz geprägt. Die EU warnt im Rahmen der Handelsbeziehungen vor der Erosion digitaler Rechte. Indonesien bleibt mit 210 Millionen Internet-Nutzer einer der wichtigsten digitalen Märkte Südostasiens.",
-      "description_en": "Indonesian civil society and the tech community protest against the growing controls. The ASEAN debate on AI regulation is shaped by Indonesia's approach. The EU warns, in the context of trade relations, of the erosion of digital rights. With 210 million internet users, Indonesia remains one of the most important digital markets in Southeast Asia."
+      "title_de": "Beschwerden und Rücknahmeforderungen gegen die Sperrpraxis",
+      "title_en": "Complaints and demands for withdrawal against the blocking practice",
+      "description_de": "Die Rechtshilfeorganisation LBH Jakarta richtet eine Beschwerdestelle für Betroffene der Sperren ein; laut Medienberichten gehen 213 Beschwerden ein, und der Kommunikationsminister erklärt, Beschwerden seien das Recht der Bürger. Eine Koalition aus Rechts- und Journalistenorganisationen, darunter LBH Pers und AJI, fordert Präsident Joko Widodo Anfang August 2022 auf, die Verordnung MR5/2020 zurückzunehmen.",
+      "description_en": "The legal aid organization LBH Jakarta sets up a complaint desk for those affected by the blocks; according to media reports 213 complaints are received, and the communications minister says complaints are the public's right. A coalition of legal and journalist organizations, including LBH Pers and AJI, urges President Joko Widodo in early August 2022 to withdraw Regulation MR5/2020."
+    },
+    {
+      "date": "2023-02",
+      "phase": "consequences",
+      "title": "SAFEnet: Lage der digitalen Rechte verschlechtert sich weiter",
+      "description": "Im Lagebericht zu 2022, über den CNN Indonesia im Februar 2023 berichtet, beschreibt SAFEnet eine weitere Verschlechterung der digitalen Rechte in Indonesien. Die Organisation zählt 302 Angriffe auf die digitale Sicherheit (2021: 193), darunter im August 2022 Angriffe auf Nutzer, die gegen die Sperren von PayPal und Steam protestiert hatten. Laut Tempo verdreifacht sich die Zahl der Strafverfahren wegen Online-Äußerungen auf 97 Fälle mit 107 Betroffenen.",
+      "sources": [
+        "https://en.tempo.co/amp/1742111/fulfillment-of-digital-rights-in-indonesia-worsening-safenet",
+        "https://www.cnnindonesia.com/teknologi/20230227081110-192-918171/warganet-makin-terancam-uu-ite-2022-pecahkan-rekor-9-tahun/amp"
+      ],
+      "title_de": "SAFEnet: Lage der digitalen Rechte verschlechtert sich weiter",
+      "title_en": "SAFEnet: digital rights situation keeps worsening",
+      "description_de": "Im Lagebericht zu 2022, über den CNN Indonesia im Februar 2023 berichtet, beschreibt SAFEnet eine weitere Verschlechterung der digitalen Rechte in Indonesien. Die Organisation zählt 302 Angriffe auf die digitale Sicherheit (2021: 193), darunter im August 2022 Angriffe auf Nutzer, die gegen die Sperren von PayPal und Steam protestiert hatten. Laut Tempo verdreifacht sich die Zahl der Strafverfahren wegen Online-Äußerungen auf 97 Fälle mit 107 Betroffenen.",
+      "description_en": "In its situation report for 2022, reported on by CNN Indonesia in February 2023, SAFEnet describes a further deterioration of digital rights in Indonesia. The organization counts 302 attacks on digital security (2021: 193), including attacks in August 2022 on users who had protested the blocking of PayPal and Steam. According to Tempo, the number of criminal cases over online expression triples to 97 cases involving 107 people."
     }
   ],
   "asm:sources": [
@@ -118,14 +138,14 @@
       "title_en": "Freedom on the Net 2023: Indonesia"
     },
     {
-      "url": "https://safenet.or.id/",
-      "title": "SAFEnet: Digital Rights in Southeast Asia",
-      "publisher": "Southeast Asia Freedom of Expression Network",
-      "date": "2023",
-      "type": "ngo-report",
+      "url": "https://en.tempo.co/amp/1742111/fulfillment-of-digital-rights-in-indonesia-worsening-safenet",
+      "title": "Fulfillment of Digital Rights in Indonesia Worsening: SafeNet",
+      "publisher": "Tempo",
+      "date": "2023-06-27",
+      "type": "news-article",
       "asm:linkHealth": "ok",
-      "title_de": "SAFEnet: Digital Rights in Southeast Asia",
-      "title_en": "SAFEnet: Digital Rights in Southeast Asia"
+      "title_de": "Fulfillment of Digital Rights in Indonesia Worsening: SafeNet",
+      "title_en": "Fulfillment of Digital Rights in Indonesia Worsening: SafeNet"
     }
   ],
   "asm:metadata": {
@@ -133,12 +153,13 @@
     "lastUpdated": "2026-04-02",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: the original title claimed AI-driven social scoring, for which no documented system exists; the entry now covers the documented automated content blocking and the platform registration regime. Slug unchanged for permalink stability."
   },
-  "name_de": "Indonesien: KI-gestütztes Social Scoring und Internet-Zensur",
-  "name_en": "Indonesia: AI-driven social scoring and internet censorship",
-  "description_de": "Indonesien implementiert ein umfassendes digitales Registrierungssystem und setzt KI-gestützte Inhaltsmoderations- und Zensurtools ein. Das Ministerium für Kommunikation und Informationstechnologie (Kominfo) blockiert Websites im großen Stil und droht Social-Media-Plattformen mit Sperrung, wenn sie Inhalte nicht entfernen. 2022 werden über 800.000 Websites blockiert. Gleichzeitig entwickelt die Regierung ein E-KTP-basiertes digitales ID-System mit biometrischen Daten von über 200 Millionen Bürger.",
-  "description_en": "Indonesia implements a comprehensive digital registration system and deploys AI-driven content moderation and censorship tools. The Ministry of Communication and Information Technology (Kominfo) blocks websites at scale and threatens social media platforms with blocks if they fail to remove content. In 2022, over 800,000 websites are blocked. At the same time, the government develops an e-KTP-based digital ID system with biometric data of more than 200 million citizens.",
+  "name_de": "Indonesien: Automatisierte Inhaltssperren und PSE-Registrierungspflicht für Plattformen",
+  "name_en": "Indonesia: Automated content blocking and mandatory PSE registration for platforms",
+  "description_de": "Das indonesische Kommunikationsministerium Kominfo betreibt seit 2018 automatisierte Systeme zur Suche und Sperrung 'negativer' Online-Inhalte und verpflichtet private Plattformen seit der Ministerialverordnung 5/2020 zur Registrierung (PSE) und zur schnellen Löschung beanstandeter Inhalte. Im Juli 2022 sperrt Kominfo nach Ablauf der Registrierungsfrist zeitweise Dienste wie Steam, Epic Games, Yahoo und PayPal; Organisationen wie SAFEnet und LBH Jakarta kritisieren die Regelung als Einschränkung der Meinungsfreiheit. Ein KI-gestütztes Social-Scoring-System für Bürger ist in den ausgewerteten Quellen nicht dokumentiert.",
+  "description_en": "Indonesia's Ministry of Communication and Information Technology (Kominfo) has operated automated systems since 2018 to search for and block 'negative' online content, and since Ministerial Regulation 5/2020 it obliges private platforms to register (PSE) and to remove flagged content quickly. In July 2022, after the registration deadline expires, Kominfo temporarily blocks services such as Steam, Epic Games, Yahoo and PayPal; organizations such as SAFEnet and LBH Jakarta criticize the rules as a restriction of freedom of expression. An AI-driven social scoring system for citizens is not documented in the sources reviewed.",
   "asm:affectedRights_de": [
     "Meinungsfreiheit",
     "Informationsfreiheit",
