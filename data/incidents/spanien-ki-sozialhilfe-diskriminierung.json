@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/spanien-ki-sozialhilfe-diskriminierung",
-  "name": "Spanien: Algorithmische Diskriminierung im Sozialleistungssystem BOSCO",
-  "description": "Das spanische System BOSCO (Bono Social Online) entscheidet automatisiert über den Zugang zum Sozialtarif für Energiekosten. Eine Untersuchung zeigt, dass der Algorithmus vulnerable Gruppen - insbesondere ältere Menschen, Einwanderer und Alleinerziehende - systematisch ausschließt, obwohl sie berechtigt wären. Das System verlangt digitale Kompetenzen und Datenzugang, den gerade die Bedürftigsten nicht haben.",
+  "name": "Spanien: Software BOSCO lehnt Berechtigte beim Strom-Sozialtarif ab - Streit um den Quellcode",
+  "description": "Seit der Neuregelung des Strom-Sozialtarifs (bono social) im Oktober 2017 prüft in Spanien eine Software des zuständigen Ministeriums namens BOSCO, ob Antragsteller die Voraussetzungen erfüllen. Die Stiftung Civio stieß 2018 auf Hinweise, dass das Programm auch berechtigte Anträge ablehnte, und verlangte Einsicht in den Quellcode. Nach Niederlagen vor dem Transparenzrat und in zwei Gerichtsinstanzen verpflichtete der Oberste Gerichtshof die Regierung im September 2025, Civio den Quellcode zugänglich zu machen.",
   "startDate": "2018",
   "location": {
     "@type": "Place",
@@ -38,7 +38,7 @@
       "name": "Spanisches Ministerium für ökologischen Wandel",
       "type": "government",
       "asm:systems": [
-        "BOSCO (Bono Social Online)"
+        "BOSCO"
       ],
       "name_de": "Spanisches Ministerium für ökologischen Wandel",
       "name_en": "Spanish Ministry for Ecological Transition"
@@ -54,62 +54,99 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2018",
+      "date": "2017-10-06",
       "phase": "infrastructure",
-      "title": "BOSCO automatisiert Sozialtarif-Entscheidungen",
-      "description": "Spanien führt BOSCO ein, ein automatisiertes System, das über den Zugang zum Sozialtarif für Energiekosten entscheidet. Das System gleicht Daten mehrerer Behörden ab und berechnet automatisch die Berechtigung. Der digitale Antragsprozess erfordert eine elektronische ID und Onlinezugang.",
-      "sources": [],
-      "title_de": "BOSCO automatisiert Sozialtarif-Entscheidungen",
-      "description_de": "Spanien führt BOSCO ein, ein automatisiertes System, das über den Zugang zum Sozialtarif für Energiekosten entscheidet. Das System gleicht Daten mehrerer Behörden ab und berechnet automatisch die Berechtigung. Der digitale Antragsprozess erfordert eine elektronische ID und Onlinezugang.",
-      "title_en": "BOSCO automates social-tariff decisions",
-      "description_en": "Spain introduces BOSCO, an automated system that decides on access to the social tariff for energy costs. The system reconciles data from several agencies and automatically calculates eligibility. The digital application process requires an electronic ID and online access."
-    },
-    {
-      "date": "2020",
-      "phase": "event",
-      "title": "Fundación Civio deckt systematische Ausschlüsse auf",
-      "description": "Die investigative NGO Fundación Civio untersucht BOSCO und stellt fest, dass das System Menschen systematisch ausschließt: Alleinerziehende ohne digitale ID, ältere Menschen ohne Internetzugang und Migranten mit unvollständigen Registrierungsdaten. Die am stärksten von Energiearmut Betroffenen sind genau jene, die vom System nicht erreicht werden.",
-      "sources": [],
-      "title_de": "Fundación Civio deckt systematische Ausschlüsse auf",
-      "description_de": "Die investigative NGO Fundación Civio untersucht BOSCO und stellt fest, dass das System Menschen systematisch ausschließt: Alleinerziehende ohne digitale ID, ältere Menschen ohne Internetzugang und Migranten mit unvollständigen Registrierungsdaten. Die am stärksten von Energiearmut Betroffenen sind genau jene, die vom System nicht erreicht werden.",
-      "title_en": "Fundación Civio exposes systematic exclusions",
-      "description_en": "The investigative NGO Fundación Civio examines BOSCO and finds that the system systematically excludes people: single parents without a digital ID, older people without internet access, and migrants with incomplete registration data. Those most affected by energy poverty are precisely those the system fails to reach."
-    },
-    {
-      "date": "2021",
-      "phase": "event",
-      "title": "Energiearmut-Krise verschärft das Problem",
-      "description": "COVID-19 und steigende Energiepreise verschärfen die Energiearmut in Spanien. Schätzungsweise 6,8 Millionen Spanier sind betroffen. Der automatisierte Ausschluss durch BOSCO wird zur Frage von Leben und Tod: In mehreren Fällen sterben Menschen an Unterkühlung, nachdem ihnen die Energieversorgung abgestellt wurde.",
-      "sources": [],
-      "title_de": "Energiearmut-Krise verschärft das Problem",
-      "description_de": "COVID-19 und steigende Energiepreise verschärfen die Energiearmut in Spanien. Schätzungsweise 6,8 Millionen Spanier sind betroffen. Der automatisierte Ausschluss durch BOSCO wird zur Frage von Leben und Tod: In mehreren Fällen sterben Menschen an Unterkühlung, nachdem ihnen die Energieversorgung abgestellt wurde.",
-      "title_en": "Energy poverty crisis aggravates the problem",
-      "description_en": "COVID-19 and rising energy prices aggravate energy poverty in Spain. An estimated 6.8 million Spaniards are affected. Automated exclusion by BOSCO becomes a matter of life and death: in several cases, people die of hypothermia after their energy supply was cut off."
-    },
-    {
-      "date": "2023",
-      "phase": "consequences",
-      "title": "Reform und EU-weite Debatte über algorithmische Sozialsysteme",
-      "description": "Spanien reformiert das Bono-Social-System und vereinfacht den Zugang. Der Fall wird in der EU-Debatte über den AI Act als Beispiel für die Risiken automatisierter Entscheidungen in der Sozialpolitik angeführt. AlgorithmWatch und Access Now fordern verpflichtende Impact Assessments für alle algorithmischen Sozialsysteme in der EU.",
+      "title": "Neuer Strom-Sozialtarif mit Prüfung durch Ministeriumssoftware",
+      "description": "Mit dem Königlichen Dekret 897/2017 vom 6. Oktober 2017 regelt Spanien den Sozialtarif für Strom (bono social) für schutzbedürftige Verbraucher neu. Anträge laufen über die Referenz-Stromversorger (comercializadoras de referencia), die die Daten der Antragsteller in eine Online-Anwendung des zuständigen Ministeriums eingeben; dort prüft die Software BOSCO, ob die Voraussetzungen erfüllt sind.",
       "sources": [
-        "https://algorithmwatch.org/en/automating-society-2020/spain/"
+        "https://www.boe.es/eli/es/rd/2017/10/06/897",
+        "https://www.cnmc.es/sites/default/files/3263466.pdf"
       ],
-      "title_de": "Reform und EU-weite Debatte über algorithmische Sozialsysteme",
-      "description_de": "Spanien reformiert das Bono-Social-System und vereinfacht den Zugang. Der Fall wird in der EU-Debatte über den AI Act als Beispiel für die Risiken automatisierter Entscheidungen in der Sozialpolitik angeführt. AlgorithmWatch und Access Now fordern verpflichtende Impact Assessments für alle algorithmischen Sozialsysteme in der EU.",
-      "title_en": "Reform and EU-wide debate on algorithmic welfare systems",
-      "description_en": "Spain reforms the Bono Social system and simplifies access. The case is cited in the EU debate on the AI Act as an example of the risks of automated decisions in social policy. AlgorithmWatch and Access Now call for mandatory impact assessments for all algorithmic welfare systems in the EU."
+      "title_de": "Neuer Strom-Sozialtarif mit Prüfung durch Ministeriumssoftware",
+      "title_en": "New electricity social tariff with eligibility checks by ministry software",
+      "description_de": "Mit dem Königlichen Dekret 897/2017 vom 6. Oktober 2017 regelt Spanien den Sozialtarif für Strom (bono social) für schutzbedürftige Verbraucher neu. Anträge laufen über die Referenz-Stromversorger (comercializadoras de referencia), die die Daten der Antragsteller in eine Online-Anwendung des zuständigen Ministeriums eingeben; dort prüft die Software BOSCO, ob die Voraussetzungen erfüllt sind.",
+      "description_en": "With Royal Decree 897/2017 of 6 October 2017, Spain reorganises the social tariff for electricity (bono social) for vulnerable consumers. Applications go through the reference electricity suppliers (comercializadoras de referencia), which enter applicants' data into an online application of the competent ministry, where the BOSCO software checks whether the requirements are met."
+    },
+    {
+      "date": "2018-09",
+      "phase": "event",
+      "title": "Civio stößt auf Fehlentscheidungen und verlangt den Quellcode",
+      "description": "Die Stiftung Civio hat im Juni 2018 gemeinsam mit der Wettbewerbs- und Regulierungsbehörde CNMC einen Online-Rechner gestartet, mit dem Haushalte ihren Anspruch prüfen können. Abweichungen zwischen dessen Ergebnissen und den behördlichen Bescheiden sowie Hinweise abgelehnter Antragsteller deuten darauf hin, dass BOSCO auch berechtigte Anträge ablehnt - etwa den eines verwitweten Rentners, der nach den Regeln trotz Überschreitens der Einkommensgrenze Anspruch hatte. Im September 2018 beantragt Civio beim Ministerium Informationen zu BOSCO einschließlich des Quellcodes.",
+      "sources": [
+        "https://algorithmwatch.org/en/spain-legal-fight-over-an-algorithms-code/",
+        "https://www.cnmc.es/la-cnmc-y-la-fundacion-civio-crean-una-aplicacion-para-que-los-consumidores-sepan-si-tienen-derecho"
+      ],
+      "title_de": "Civio stößt auf Fehlentscheidungen und verlangt den Quellcode",
+      "title_en": "Civio finds wrongful rejections and requests the source code",
+      "description_de": "Die Stiftung Civio hat im Juni 2018 gemeinsam mit der Wettbewerbs- und Regulierungsbehörde CNMC einen Online-Rechner gestartet, mit dem Haushalte ihren Anspruch prüfen können. Abweichungen zwischen dessen Ergebnissen und den behördlichen Bescheiden sowie Hinweise abgelehnter Antragsteller deuten darauf hin, dass BOSCO auch berechtigte Anträge ablehnt - etwa den eines verwitweten Rentners, der nach den Regeln trotz Überschreitens der Einkommensgrenze Anspruch hatte. Im September 2018 beantragt Civio beim Ministerium Informationen zu BOSCO einschließlich des Quellcodes.",
+      "description_en": "In June 2018 the Civio foundation, together with the competition and regulatory authority CNMC, launched an online calculator that lets households check their eligibility. Discrepancies between its results and official decisions, as well as reports from rejected applicants, suggest that BOSCO also rejects eligible applications - such as that of a widowed pensioner who was entitled under the rules despite exceeding the income threshold. In September 2018 Civio asks the ministry for information on BOSCO, including its source code."
+    },
+    {
+      "date": "2019-02-18",
+      "phase": "consequences",
+      "title": "Transparenzrat nimmt den Quellcode von der Herausgabe aus",
+      "description": "Der spanische Transparenzrat (Consejo de Transparencia y Buen Gobierno) gibt Civios Beschwerde gegen das Ministerium am 18. Februar 2019 nur teilweise statt und nimmt den Quellcode von BOSCO unter Berufung auf geistiges Eigentum von der Herausgabe aus. Civio, das argumentiert, Arbeitsergebnisse der öffentlichen Verwaltung unterlägen nicht dem Urheberrecht, zieht 2019 vor Gericht.",
+      "sources": [
+        "https://archive.techdirt.com/articles/20190823/07295442845/do-citizens-have-right-to-see-algorithms-used-publicly-funded-software.shtml",
+        "https://civio.es/novedades/2019/07/12/being-ruled-through-secret-source-code-or-algorithms-should-never-be-allowed-in-a-social-and-democratic-state-under-the-rule-of-law/"
+      ],
+      "title_de": "Transparenzrat nimmt den Quellcode von der Herausgabe aus",
+      "title_en": "Transparency council excludes the source code from disclosure",
+      "description_de": "Der spanische Transparenzrat (Consejo de Transparencia y Buen Gobierno) gibt Civios Beschwerde gegen das Ministerium am 18. Februar 2019 nur teilweise statt und nimmt den Quellcode von BOSCO unter Berufung auf geistiges Eigentum von der Herausgabe aus. Civio, das argumentiert, Arbeitsergebnisse der öffentlichen Verwaltung unterlägen nicht dem Urheberrecht, zieht 2019 vor Gericht.",
+      "description_en": "On 18 February 2019 the Spanish Transparency Council (Consejo de Transparencia y Buen Gobierno) only partly upholds Civio's complaint against the ministry and excludes BOSCO's source code from disclosure, citing intellectual property. Civio, which argues that the work of the public administration is not subject to copyright, goes to court in 2019."
+    },
+    {
+      "date": "2021-12-30",
+      "phase": "consequences",
+      "title": "Erste Instanz weist Civios Klage ab",
+      "description": "Das Zentrale Verwaltungsgericht Nr. 8 (Juzgado Central de lo Contencioso-Administrativo) weist Civios Klage mit Urteil vom 30. Dezember 2021 ab und folgt der Argumentation der Regierung, eine Offenlegung des Codes berühre öffentliche Sicherheit, Landesverteidigung und geistiges Eigentum. Civio werden 2.000 Euro Verfahrenskosten auferlegt.",
+      "sources": [
+        "https://hipertextual.com/tecnologia/la-justicia-impide-la-apertura-del-codigo-fuente-de-la-aplicacion-que-concede-el-bono-social/",
+        "https://confilegal.com/wp-content/uploads/2025/09/sentencia-codigo-fuente-aplicacion-BOSCO.pdf"
+      ],
+      "title_de": "Erste Instanz weist Civios Klage ab",
+      "title_en": "First-instance court dismisses Civio's lawsuit",
+      "description_de": "Das Zentrale Verwaltungsgericht Nr. 8 (Juzgado Central de lo Contencioso-Administrativo) weist Civios Klage mit Urteil vom 30. Dezember 2021 ab und folgt der Argumentation der Regierung, eine Offenlegung des Codes berühre öffentliche Sicherheit, Landesverteidigung und geistiges Eigentum. Civio werden 2.000 Euro Verfahrenskosten auferlegt.",
+      "description_en": "Central Administrative Court No. 8 (Juzgado Central de lo Contencioso-Administrativo) dismisses Civio's lawsuit in a judgment of 30 December 2021, following the government's argument that disclosing the code would affect public security, national defence and intellectual property. Civio is ordered to pay 2,000 euros in costs."
+    },
+    {
+      "date": "2024-04-30",
+      "phase": "consequences",
+      "title": "Audiencia Nacional bestätigt die Geheimhaltung",
+      "description": "Die Audiencia Nacional weist Civios Berufung am 30. April 2024 zurück: Der Quellcode sei durch geistiges Eigentum geschützt, und seine Offenlegung könne Sicherheitslücken schaffen.",
+      "sources": [
+        "https://confilegal.com/wp-content/uploads/2025/09/sentencia-codigo-fuente-aplicacion-BOSCO.pdf",
+        "https://www.garrigues.com/es_ES/garrigues-digital/transparencia-algoritmica-supremo-avala-acceso-codigo-fuente-administracion"
+      ],
+      "title_de": "Audiencia Nacional bestätigt die Geheimhaltung",
+      "title_en": "Audiencia Nacional upholds secrecy",
+      "description_de": "Die Audiencia Nacional weist Civios Berufung am 30. April 2024 zurück: Der Quellcode sei durch geistiges Eigentum geschützt, und seine Offenlegung könne Sicherheitslücken schaffen.",
+      "description_en": "The Audiencia Nacional dismisses Civio's appeal on 30 April 2024, holding that the source code is protected by intellectual property and that its disclosure could create security vulnerabilities."
+    },
+    {
+      "date": "2025-09-11",
+      "phase": "consequences",
+      "title": "Oberster Gerichtshof verpflichtet zur Herausgabe des Codes",
+      "description": "Mit Urteil 1119/2025 vom 11. September 2025 gibt der Oberste Gerichtshof (Tribunal Supremo) Civios Revision statt, hebt die beiden vorherigen Urteile auf und verurteilt die Verwaltung, Civio Zugang zum Quellcode von BOSCO zu gewähren. Das Gericht erkennt den urheberrechtlichen Schutz der Software an, gewichtet aber das öffentliche Interesse an der Überprüfbarkeit automatisierter Verwaltungsentscheidungen höher; das bloße Risiko einer Beeinträchtigung des geistigen Eigentums genüge nicht, um den Zugang zu verweigern.",
+      "sources": [
+        "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/El-Tribunal-Supremo-condena-a-la-Administracion-a-facilitar-a-una-Fundacion-Ciudadana-el-codigo-fuente-de-la-aplicacion-informatica-que-acredita-a-los-beneficiarios-del-bono-social-electrico",
+        "https://www.garrigues.com/es_ES/garrigues-digital/transparencia-algoritmica-supremo-avala-acceso-codigo-fuente-administracion"
+      ],
+      "title_de": "Oberster Gerichtshof verpflichtet zur Herausgabe des Codes",
+      "title_en": "Supreme Court orders the code to be handed over",
+      "description_de": "Mit Urteil 1119/2025 vom 11. September 2025 gibt der Oberste Gerichtshof (Tribunal Supremo) Civios Revision statt, hebt die beiden vorherigen Urteile auf und verurteilt die Verwaltung, Civio Zugang zum Quellcode von BOSCO zu gewähren. Das Gericht erkennt den urheberrechtlichen Schutz der Software an, gewichtet aber das öffentliche Interesse an der Überprüfbarkeit automatisierter Verwaltungsentscheidungen höher; das bloße Risiko einer Beeinträchtigung des geistigen Eigentums genüge nicht, um den Zugang zu verweigern.",
+      "description_en": "In judgment 1119/2025 of 11 September 2025, the Supreme Court (Tribunal Supremo) upholds Civio's cassation appeal, sets aside both previous judgments and orders the administration to give Civio access to BOSCO's source code. The court recognises the software's copyright protection but gives greater weight to the public interest in being able to scrutinise automated administrative decisions; the mere risk of harm to intellectual property is not enough to deny access."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://algorithmwatch.org/en/automating-society-2020/spain/",
-      "title": "Automating Society Report 2020: Spain",
+      "url": "https://algorithmwatch.org/en/spain-legal-fight-over-an-algorithms-code/",
+      "title": "Spain: Legal fight over an algorithm's code",
       "publisher": "AlgorithmWatch",
-      "date": "2020",
-      "type": "research-paper",
-      "asm:linkHealth": "ok",
-      "title_de": "Automating Society Report 2020: Spain",
-      "title_en": "Automating Society Report 2020: Spain"
+      "date": "2019",
+      "type": "news-article",
+      "title_de": "Spain: Legal fight over an algorithm's code",
+      "title_en": "Spain: Legal fight over an algorithm's code"
     }
   ],
   "asm:metadata": {
@@ -117,12 +154,13 @@
     "lastUpdated": "2026-04-02",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: the documented problem is wrongful rejections by the BOSCO software for the electricity social tariff and the legal dispute over its source code, not an established finding of discrimination in a welfare system. Slug unchanged for permalink stability."
   },
-  "name_de": "Spanien: Algorithmische Diskriminierung im Sozialleistungssystem BOSCO",
-  "name_en": "Spain: Algorithmic discrimination in the BOSCO welfare system",
-  "description_de": "Das spanische System BOSCO (Bono Social Online) entscheidet automatisiert über den Zugang zum Sozialtarif für Energiekosten. Eine Untersuchung zeigt, dass der Algorithmus vulnerable Gruppen - insbesondere ältere Menschen, Einwanderer und Alleinerziehende - systematisch ausschließt, obwohl sie berechtigt wären. Das System verlangt digitale Kompetenzen und Datenzugang, den gerade die Bedürftigsten nicht haben.",
-  "description_en": "The Spanish BOSCO (Bono Social Online) system makes automated decisions about access to the social tariff for energy costs. An investigation shows that the algorithm systematically excludes vulnerable groups - particularly older people, immigrants, and single parents - even though they would be eligible. The system requires digital skills and data access that the most needy specifically lack.",
+  "name_de": "Spanien: Software BOSCO lehnt Berechtigte beim Strom-Sozialtarif ab - Streit um den Quellcode",
+  "name_en": "Spain: BOSCO software rejects eligible applicants for the electricity social tariff - dispute over its source code",
+  "description_de": "Seit der Neuregelung des Strom-Sozialtarifs (bono social) im Oktober 2017 prüft in Spanien eine Software des zuständigen Ministeriums namens BOSCO, ob Antragsteller die Voraussetzungen erfüllen. Die Stiftung Civio stieß 2018 auf Hinweise, dass das Programm auch berechtigte Anträge ablehnte, und verlangte Einsicht in den Quellcode. Nach Niederlagen vor dem Transparenzrat und in zwei Gerichtsinstanzen verpflichtete der Oberste Gerichtshof die Regierung im September 2025, Civio den Quellcode zugänglich zu machen.",
+  "description_en": "Since the reorganisation of Spain's electricity social tariff (bono social) in October 2017, software of the competent ministry called BOSCO checks whether applicants meet the requirements. In 2018 the Civio foundation came across indications that the program also rejected eligible applications and requested access to its source code. After defeats before the Transparency Council and in two court instances, the Supreme Court ordered the government in September 2025 to give Civio access to the source code.",
   "asm:affectedRights_de": [
     "Recht auf soziale Sicherheit",
     "Recht auf angemessenen Lebensstandard",
