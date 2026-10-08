@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/russland-ki-zensur-roskomnadzor",
   "name": "Russland: KI-gestützte Internetzensur durch Roskomnadzor",
-  "description": "Die russische Medienaufsichtsbehörde Roskomnadzor setzt seit 2019 das Deep Packet Inspection (DPI) System TSPU ein, um den Internetverkehr landesweit in Echtzeit zu filtern und zu zensieren. Das System nutzt KI zur automatisierten Erkennung und Blockierung von VPN-Protokollen, Nachrichtenwebseiten und sozialen Medien. Nach dem Einmarsch in die Ukraine 2022 wird die Zensurinfrastruktur massiv ausgeweitet.",
+  "description": "Die russische Medienaufsichtsbehörde Roskomnadzor setzt seit 2019 das Deep Packet Inspection (DPI) System TSPU ein, um den Internetverkehr landesweit in Echtzeit zu filtern und zu zensieren. Seit 2023 nutzt die Behörde zudem das auf neuronalen Netzen basierende System 'Oculus' zur automatisierten Suche nach verbotenen Inhalten in Bildern und Videos; ein auf maschinellem Lernen basierender VPN-Filter ist geplant. Nach dem Einmarsch in die Ukraine 2022 wird die Zensurinfrastruktur massiv ausgeweitet.",
   "startDate": "2019-11",
   "location": {
     "@type": "Place",
@@ -59,12 +59,15 @@
       "date": "2019-11",
       "phase": "infrastructure",
       "title": "Souveränes-Internet-Gesetz tritt in Kraft",
-      "description": "Das 'Gesetz über ein souveränes Internet' verpflichtet alle russischen ISPs, TSPU-Geräte (technische Mittel zur Gegenmaßnahme gegen Bedrohungen) zu installieren. Diese ermöglichen Deep Packet Inspection des gesamten Internetverkehrs und zentralisierte Kontrolle durch Roskomnadzor.",
-      "sources": [],
+      "description": "Am 1. November 2019 tritt das im Mai 2019 unterzeichnete 'Gesetz über ein souveränes Internet' in Kraft. Es verpflichtet russische Internetanbieter, vom Staat bereitgestellte TSPU-Geräte (technische Mittel zur Abwehr von Bedrohungen) in ihre Netze einzubauen. Diese ermöglichen Deep Packet Inspection und von Roskomnadzor zentral gesteuerte Sperren; die landesweite Installation verzögert sich jedoch zunächst.",
+      "sources": [
+        "https://www.technologyreview.com/2019/11/01/238400/russias-law-that-lets-it-disconnect-from-the-internet-comes-into-force-today/",
+        "https://meduza.io/en/news/2019/11/01/russia-is-struggling-to-implement-the-nationwide-dpi-system-it-needs-for-internet-isolation"
+      ],
       "title_de": "Souveränes-Internet-Gesetz tritt in Kraft",
-      "description_de": "Das 'Gesetz über ein souveränes Internet' verpflichtet alle russischen ISPs, TSPU-Geräte (technische Mittel zur Gegenmaßnahme gegen Bedrohungen) zu installieren. Diese ermöglichen Deep Packet Inspection des gesamten Internetverkehrs und zentralisierte Kontrolle durch Roskomnadzor.",
+      "description_de": "Am 1. November 2019 tritt das im Mai 2019 unterzeichnete 'Gesetz über ein souveränes Internet' in Kraft. Es verpflichtet russische Internetanbieter, vom Staat bereitgestellte TSPU-Geräte (technische Mittel zur Abwehr von Bedrohungen) in ihre Netze einzubauen. Diese ermöglichen Deep Packet Inspection und von Roskomnadzor zentral gesteuerte Sperren; die landesweite Installation verzögert sich jedoch zunächst.",
       "title_en": "Sovereign Internet Law takes effect",
-      "description_en": "The 'Sovereign Internet Law' requires all Russian ISPs to install TSPU devices (technical means of countering threats). These enable deep packet inspection of all internet traffic and centralized control by Roskomnadzor."
+      "description_en": "On 1 November 2019 the 'Sovereign Internet Law', signed in May 2019, takes effect. It requires Russian internet providers to install state-supplied TSPU devices (technical means of countering threats) in their networks. These enable deep packet inspection and blocking centrally controlled by Roskomnadzor; however, the nationwide installation is initially delayed."
     },
     {
       "date": "2021-03",
@@ -83,25 +86,43 @@
       "date": "2022-03",
       "phase": "event",
       "title": "Massenblockaden nach Ukraine-Invasion",
-      "description": "Nach dem Einmarsch in die Ukraine blockiert Russland mittels TSPU Facebook, Instagram, Twitter und zahlreiche unabhängige Nachrichtenportale. KI-gestützte DPI-Systeme erkennen und blockieren automatisch VPN-Protokolle. Laut OONI werden über 7.000 Domains blockiert.",
-      "sources": [],
+      "description": "Nach dem Einmarsch in die Ukraine drosseln russische Provider ab dem 26. Februar 2022 Twitter und sperren bis zum 4. März Twitter und Facebook, ab dem 14. März auch Instagram; zudem werden unabhängige und ausländische Nachrichtenseiten wie Meduza, BBC und Deutsche Welle blockiert. OONI weist die Sperren mit Netzwerkmessungen nach und wertet das zeitgleiche Ende der Twitter-Drosselung bei allen Providern als Hinweis auf eine zentrale Steuerung. Bis Juli 2022 zählt das Projekt Roskomsvoboda mehr als 5.000 wegen Militärzensur gesperrte Webseiten.",
+      "sources": [
+        "https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/",
+        "https://novayagazeta.eu/articles/2022/07/11/roskomsvoboda-v-rossii-zablokirovano-bolee-piati-tysiach-saitov-iz-za-voennoi-tsenzury-news"
+      ],
       "title_de": "Massenblockaden nach Ukraine-Invasion",
-      "description_de": "Nach dem Einmarsch in die Ukraine blockiert Russland mittels TSPU Facebook, Instagram, Twitter und zahlreiche unabhängige Nachrichtenportale. KI-gestützte DPI-Systeme erkennen und blockieren automatisch VPN-Protokolle. Laut OONI werden über 7.000 Domains blockiert.",
+      "description_de": "Nach dem Einmarsch in die Ukraine drosseln russische Provider ab dem 26. Februar 2022 Twitter und sperren bis zum 4. März Twitter und Facebook, ab dem 14. März auch Instagram; zudem werden unabhängige und ausländische Nachrichtenseiten wie Meduza, BBC und Deutsche Welle blockiert. OONI weist die Sperren mit Netzwerkmessungen nach und wertet das zeitgleiche Ende der Twitter-Drosselung bei allen Providern als Hinweis auf eine zentrale Steuerung. Bis Juli 2022 zählt das Projekt Roskomsvoboda mehr als 5.000 wegen Militärzensur gesperrte Webseiten.",
       "title_en": "Mass blocking after Ukraine invasion",
-      "description_en": "After the invasion of Ukraine, Russia uses TSPU to block Facebook, Instagram, Twitter and numerous independent news outlets. AI-powered DPI systems automatically detect and block VPN protocols. According to OONI, more than 7,000 domains are blocked."
+      "description_en": "After the invasion of Ukraine, Russian providers throttle Twitter from 26 February 2022 and block Twitter and Facebook by 4 March, and Instagram from 14 March; independent and foreign news sites such as Meduza, BBC and Deutsche Welle are also blocked. OONI documents the blocks with network measurements and interprets the simultaneous end of Twitter throttling across all providers as an indication of central control. By July 2022 the Roskomsvoboda project counts more than 5,000 websites blocked under military censorship."
+    },
+    {
+      "date": "2023-02",
+      "phase": "consequences",
+      "title": "Roskomnadzor startet KI-System 'Oculus'",
+      "description": "Das Roskomnadzor unterstellte Hauptfunkfrequenzzentrum nimmt im Februar 2023 das System 'Oculus' in Betrieb, das mit neuronalen Netzen Bilder und Videos automatisch nach verbotenen Inhalten durchsucht, darunter Aufrufe zu nicht genehmigten Kundgebungen und sogenannte 'LGBT-Propaganda'. Geplant ist die Analyse von mehr als 200.000 Bildern pro Tag; für die Entwicklung wurden laut Kommersant 57,7 Millionen Rubel bereitgestellt.",
+      "sources": [
+        "https://novayagazeta.eu/en/articles/2023/02/13/russias-media-watchdog-launches-search-system-of-banned-content-oculus-en-news",
+        "https://dfrlab.org/2023/02/17/russia-takes-next-step-in-domestic-internet-surveillance/"
+      ],
+      "title_de": "Roskomnadzor startet KI-System 'Oculus'",
+      "description_de": "Das Roskomnadzor unterstellte Hauptfunkfrequenzzentrum nimmt im Februar 2023 das System 'Oculus' in Betrieb, das mit neuronalen Netzen Bilder und Videos automatisch nach verbotenen Inhalten durchsucht, darunter Aufrufe zu nicht genehmigten Kundgebungen und sogenannte 'LGBT-Propaganda'. Geplant ist die Analyse von mehr als 200.000 Bildern pro Tag; für die Entwicklung wurden laut Kommersant 57,7 Millionen Rubel bereitgestellt.",
+      "title_en": "Roskomnadzor launches AI system 'Oculus'",
+      "description_en": "The Main Radio Frequency Centre, subordinate to Roskomnadzor, puts the 'Oculus' system into operation in February 2023; it uses neural networks to automatically scan images and videos for banned content, including calls for unauthorized rallies and so-called 'LGBT propaganda'. It is designed to analyze more than 200,000 images per day; according to Kommersant, 57.7 million rubles were allocated for its development."
     },
     {
       "date": "2024",
       "phase": "consequences",
       "title": "Eskalation: YouTube-Drosselung und VPN-Blockaden",
-      "description": "Roskomnadzor beginnt mit der systematischen Drosselung von YouTube um bis zu 70%. KI-Systeme werden eingesetzt, um neue VPN-Protokolle automatisch zu erkennen und zu blockieren. Freedom House stuft Russland in seinem Internet Freedom Index als 'nicht frei' ein. Schätzungsweise 30% der russischen Bevölkerung nutzen VPNs zur Umgehung.",
+      "description": "Ab Sommer 2024 wird YouTube in Russland massiv verlangsamt; laut Reporter ohne Grenzen geschieht dies über die TSPU-Geräte unter Aufsicht von Roskomnadzor, mit denen sich auch Webseiten sperren und VPN-Protokolle blockieren lassen. Ein auf maschinellem Lernen basierendes System zur automatischen Erkennung von VPN-Verkehr auf TSPU-Basis ist erst im Digitalisierungsplan 2026 der Behörde vorgesehen.",
       "sources": [
-        "https://freedomhouse.org/country/russia/freedom-net/2024"
+        "https://rsf.org/en/russia-slows-youtube-s-playback-speed-jeopardising-right-information",
+        "https://cyberinsider.com/russia-developing-new-ai-system-to-detect-and-block-vpn-traffic/"
       ],
       "title_de": "Eskalation: YouTube-Drosselung und VPN-Blockaden",
-      "description_de": "Roskomnadzor beginnt mit der systematischen Drosselung von YouTube um bis zu 70%. KI-Systeme werden eingesetzt, um neue VPN-Protokolle automatisch zu erkennen und zu blockieren. Freedom House stuft Russland in seinem Internet Freedom Index als 'nicht frei' ein. Schätzungsweise 30% der russischen Bevölkerung nutzen VPNs zur Umgehung.",
+      "description_de": "Ab Sommer 2024 wird YouTube in Russland massiv verlangsamt; laut Reporter ohne Grenzen geschieht dies über die TSPU-Geräte unter Aufsicht von Roskomnadzor, mit denen sich auch Webseiten sperren und VPN-Protokolle blockieren lassen. Ein auf maschinellem Lernen basierendes System zur automatischen Erkennung von VPN-Verkehr auf TSPU-Basis ist erst im Digitalisierungsplan 2026 der Behörde vorgesehen.",
       "title_en": "Escalation: YouTube throttling and VPN blocks",
-      "description_en": "Roskomnadzor begins systematic throttling of YouTube by up to 70%. AI systems are deployed to automatically detect and block new VPN protocols. Freedom House classifies Russia as 'not free' in its Internet Freedom Index. An estimated 30% of the Russian population use VPNs to circumvent the blocks."
+      "description_en": "From summer 2024, YouTube is massively slowed down in Russia; according to Reporters Without Borders, this is done via the TSPU devices overseen by Roskomnadzor, which can also be used to block websites and VPN protocols. A machine-learning-based system for automatically detecting VPN traffic on TSPU infrastructure is only foreseen in the agency's 2026 digital transformation plan."
     }
   ],
   "asm:sources": [
@@ -134,7 +155,7 @@
     "humanVerified": true
   },
   "name_de": "Russland: KI-gestützte Internetzensur durch Roskomnadzor",
-  "description_de": "Die russische Medienaufsichtsbehörde Roskomnadzor setzt seit 2019 das Deep Packet Inspection (DPI) System TSPU ein, um den Internetverkehr landesweit in Echtzeit zu filtern und zu zensieren. Das System nutzt KI zur automatisierten Erkennung und Blockierung von VPN-Protokollen, Nachrichtenwebseiten und sozialen Medien. Nach dem Einmarsch in die Ukraine 2022 wird die Zensurinfrastruktur massiv ausgeweitet.",
+  "description_de": "Die russische Medienaufsichtsbehörde Roskomnadzor setzt seit 2019 das Deep Packet Inspection (DPI) System TSPU ein, um den Internetverkehr landesweit in Echtzeit zu filtern und zu zensieren. Seit 2023 nutzt die Behörde zudem das auf neuronalen Netzen basierende System 'Oculus' zur automatisierten Suche nach verbotenen Inhalten in Bildern und Videos; ein auf maschinellem Lernen basierender VPN-Filter ist geplant. Nach dem Einmarsch in die Ukraine 2022 wird die Zensurinfrastruktur massiv ausgeweitet.",
   "asm:affectedRights_de": [
     "Meinungsfreiheit",
     "Pressefreiheit",
@@ -143,7 +164,7 @@
     "Versammlungsfreiheit"
   ],
   "name_en": "Russia: AI-powered internet censorship by Roskomnadzor",
-  "description_en": "Russia's media regulator Roskomnadzor has been deploying the TSPU deep packet inspection (DPI) system since 2019 to filter and censor internet traffic nationwide in real time. The system uses AI to automatically detect and block VPN protocols, news websites and social media. After the invasion of Ukraine in 2022, the censorship infrastructure is massively expanded.",
+  "description_en": "Russia's media regulator Roskomnadzor has been deploying the TSPU deep packet inspection (DPI) system since 2019 to filter and censor internet traffic nationwide in real time. Since 2023 the agency has also used the neural-network-based system 'Oculus' to automatically search images and videos for banned content; a machine-learning-based VPN filter is planned. After the invasion of Ukraine in 2022, the censorship infrastructure is massively expanded.",
   "asm:affectedRights_en": [
     "freedom of expression",
     "freedom of the press",

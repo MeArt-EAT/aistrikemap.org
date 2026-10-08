@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/russland-ki-deepfake-ukraine-krieg",
   "name": "Russland: KI-Deepfakes und Desinformation im Ukraine-Krieg",
-  "description": "Seit dem Beginn der russischen Invasion in der Ukraine im Februar 2022 setzt Russland systematisch KI-generierte Deepfakes und automatisierte Desinformationskampagnen ein. Den Höhepunkt bildete ein gefälschtes Video von Präsident Selenskyj, in dem dieser angeblich zur Kapitulation aufruft. Meta, das EU DisinfoLab und das Digital Forensic Research Lab (DFRLab) dokumentieren koordinierte KI-gestützte Propaganda, die Millionen Menschen in der Ukraine und weltweit erreicht.",
+  "description": "Seit dem Beginn der russischen Invasion in der Ukraine im Februar 2022 werden russischen Akteuren zugeschriebene Desinformationskampagnen dokumentiert, die auch KI-generierte Inhalte nutzen. Den bekanntesten Fall bildete ein Deepfake-Video von Präsident Selenskyj, in dem dieser angeblich zur Kapitulation aufruft; ukrainische Stellen machten russische Hacker dafür verantwortlich. Meta, das EU DisinfoLab und das Digital Forensic Research Lab (DFRLab) dokumentieren koordinierte Netzwerke mit KI-generierten Profilbildern und gefälschten Kopien europäischer Nachrichtenseiten.",
   "startDate": "2022-02",
   "location": {
     "@type": "Place",
@@ -46,14 +46,13 @@
       "name_en": "Government of Russia"
     },
     {
-      "name": "Russisches Militär",
-      "type": "military",
+      "name": "Social Design Agency (SDA) / Structura",
+      "type": "company",
       "asm:systems": [
-        "Kognitive Kriegsführung",
-        "Informationsoperationen"
+        "Doppelganger / Recent Reliable News (RRN)"
       ],
-      "name_de": "Russisches Militär",
-      "name_en": "Russian military"
+      "name_de": "Social Design Agency (SDA) / Structura",
+      "name_en": "Social Design Agency (SDA) / Structura"
     }
   ],
   "asm:severity": 4,
@@ -63,71 +62,77 @@
       "date": "2022-02-24",
       "phase": "infrastructure",
       "title": "Beginn der Invasion und gleichzeitiger Informationskrieg",
-      "description": "Mit Beginn der militärischen Invasion startet Russland parallel eine massive Informationsoperation. Staatliche Medien, Bot-Netzwerke und koordinierte Accounts auf sozialen Medien verbreiten Narrative zur Rechtfertigung des Angriffs. KI-Tools zur Bild- und Videobearbeitung werden für Propaganda eingesetzt.",
+      "description": "Mit Beginn der militärischen Invasion startet Russland parallel eine massive Informationsoperation. Staatliche Medien, Bot-Netzwerke und koordinierte Accounts auf sozialen Medien verbreiten Narrative zur Rechtfertigung des Angriffs. Wenige Tage später entfernt Meta ein von Russland und der Ukraine aus betriebenes Netzwerk von rund 40 Konten, das sich als unabhängige Nachrichtenquellen ausgab und dessen Profilbilder laut Meta wahrscheinlich mit KI (GAN) erzeugt wurden.",
       "sources": [
-        "https://euvsdisinfo.eu/"
+        "https://euvsdisinfo.eu/what-the-kremlin-wants-you-to-believe-about-its-war-against-ukraine/",
+        "https://www.npr.org/2022/02/28/1083401220/facebook-uncovers-disinformation-and-hacking-campaigns-targeting-ukraine"
       ],
       "title_de": "Beginn der Invasion und gleichzeitiger Informationskrieg",
       "title_en": "Start of the invasion and a parallel information war",
-      "description_de": "Mit Beginn der militärischen Invasion startet Russland parallel eine massive Informationsoperation. Staatliche Medien, Bot-Netzwerke und koordinierte Accounts auf sozialen Medien verbreiten Narrative zur Rechtfertigung des Angriffs. KI-Tools zur Bild- und Videobearbeitung werden für Propaganda eingesetzt.",
-      "description_en": "As the military invasion begins, Russia simultaneously launches a massive information operation. State media, bot networks and coordinated accounts on social media spread narratives to justify the attack. AI tools for image and video editing are deployed for propaganda."
+      "description_de": "Mit Beginn der militärischen Invasion startet Russland parallel eine massive Informationsoperation. Staatliche Medien, Bot-Netzwerke und koordinierte Accounts auf sozialen Medien verbreiten Narrative zur Rechtfertigung des Angriffs. Wenige Tage später entfernt Meta ein von Russland und der Ukraine aus betriebenes Netzwerk von rund 40 Konten, das sich als unabhängige Nachrichtenquellen ausgab und dessen Profilbilder laut Meta wahrscheinlich mit KI (GAN) erzeugt wurden.",
+      "description_en": "As the military invasion begins, Russia simultaneously launches a massive information operation. State media, bot networks and coordinated accounts on social media spread narratives to justify the attack. A few days later, Meta removes a network of about 40 accounts operated from Russia and Ukraine that posed as independent news sources and whose profile pictures, according to Meta, were likely generated with AI (GANs)."
     },
     {
       "date": "2022-03-16",
       "phase": "event",
       "title": "Deepfake-Video von Präsident Selenskyj",
-      "description": "Ein KI-generiertes Deepfake-Video verbreitet sich viral, in dem Präsident Selenskyj ukrainische Soldaten angeblich zur Kapitulation auffordert. Meta, YouTube und Twitter löschen das Video, doch es erreicht zuvor Millionen Nutzer. Selenskyj widerlegt das Video in einem Live-Video. Das Ereignis gilt als erster großer Deepfake-Einsatz in einem aktiven Kriegskonflikt.",
-      "sources": [],
+      "description": "Ein KI-generiertes Deepfake-Video, in dem Präsident Selenskyj ukrainische Soldaten angeblich zur Kapitulation auffordert, erscheint nach einem Hackerangriff auf der Webseite und im Nachrichtenticker des Senders Ukraine 24, der 'feindliche Hacker' verantwortlich macht; ukrainische Stellen beschuldigen Russland. Meta entfernt das Video wegen Verstoßes gegen seine Regeln zu manipulierten Medien, auch YouTube und Twitter löschen Kopien. Selenskyj weist die Fälschung umgehend in einem eigenen Video zurück. Experten werten das technisch schwache und schnell entlarvte Video als ersten gezielt eingesetzten Deepfake im Ukraine-Krieg.",
+      "sources": [
+        "https://www.npr.org/2022/03/16/1087062648/deepfake-video-zelenskyy-experts-war-manipulation-ukraine-russia",
+        "https://www.euronews.com/my-europe/amp/2022/03/16/deepfake-zelenskyy-surrender-video-is-the-first-intentionally-used-in-ukraine-war"
+      ],
       "title_de": "Deepfake-Video von Präsident Selenskyj",
       "title_en": "Deepfake video of President Zelensky",
-      "description_de": "Ein KI-generiertes Deepfake-Video verbreitet sich viral, in dem Präsident Selenskyj ukrainische Soldaten angeblich zur Kapitulation auffordert. Meta, YouTube und Twitter löschen das Video, doch es erreicht zuvor Millionen Nutzer. Selenskyj widerlegt das Video in einem Live-Video. Das Ereignis gilt als erster großer Deepfake-Einsatz in einem aktiven Kriegskonflikt.",
-      "description_en": "An AI-generated deepfake video goes viral in which President Zelensky appears to call on Ukrainian soldiers to surrender. Meta, YouTube and Twitter remove the video, but it reaches millions of users before takedown. Zelensky refutes the video in a live broadcast. The incident is considered the first large-scale use of a deepfake in an active armed conflict."
+      "description_de": "Ein KI-generiertes Deepfake-Video, in dem Präsident Selenskyj ukrainische Soldaten angeblich zur Kapitulation auffordert, erscheint nach einem Hackerangriff auf der Webseite und im Nachrichtenticker des Senders Ukraine 24, der 'feindliche Hacker' verantwortlich macht; ukrainische Stellen beschuldigen Russland. Meta entfernt das Video wegen Verstoßes gegen seine Regeln zu manipulierten Medien, auch YouTube und Twitter löschen Kopien. Selenskyj weist die Fälschung umgehend in einem eigenen Video zurück. Experten werten das technisch schwache und schnell entlarvte Video als ersten gezielt eingesetzten Deepfake im Ukraine-Krieg.",
+      "description_en": "An AI-generated deepfake video in which President Zelensky appears to call on Ukrainian soldiers to surrender appears after a hacking attack on the website and news ticker of the broadcaster Ukraine 24, which blames 'enemy hackers'; Ukrainian officials accuse Russia. Meta removes the video for violating its rules on manipulated media, and YouTube and Twitter also delete copies. Zelensky promptly rejects the fake in a video of his own. Experts regard the technically weak and quickly debunked video as the first deliberately deployed deepfake of the war in Ukraine."
     },
     {
-      "date": "2023-01",
+      "date": "2022-09-27",
       "phase": "event",
-      "title": "Systematische KI-Propagandaeskalation",
-      "description": "Meta veröffentlicht Threat Intelligence Reports über koordinierte inauthenthische Verhaltensmuster aus Russland. DFRLab dokumentiert den Einsatz von KI zur Massenerstellung gefälschter Nachrichten-Webseiten, die europäische Medienmarken imitieren. Das EU DisinfoLab identifiziert Netzwerke mit Tausenden KI-generierten Fake-Accounts.",
+      "title": "Doppelganger: geklonte europäische Nachrichtenseiten",
+      "description": "Das EU DisinfoLab veröffentlicht seinen Bericht zur Kampagne 'Doppelganger': Seit Mai 2022 werden Webseiten von mindestens 17 Medien wie Bild, The Guardian, ANSA und 20 Minutes über nachgeahmte Domains kopiert, um prorussische und antiukrainische Falschartikel zu verbreiten. Meta entfernt am selben Tag das zugehörige Netzwerk mit mehr als 60 gefälschten Webseiten und nennt es die größte und komplexeste russische Operation, die das Unternehmen seit Kriegsbeginn gestört hat.",
       "sources": [
-        "https://www.disinfo.eu/"
+        "https://www.disinfo.eu/doppelganger-operation/",
+        "https://securityaffairs.com/136326/social-networks/meta-dismantled-russian-network.html"
       ],
-      "title_de": "Systematische KI-Propagandaeskalation",
-      "title_en": "Systematic escalation of AI propaganda",
-      "description_de": "Meta veröffentlicht Threat Intelligence Reports über koordinierte inauthenthische Verhaltensmuster aus Russland. DFRLab dokumentiert den Einsatz von KI zur Massenerstellung gefälschter Nachrichten-Webseiten, die europäische Medienmarken imitieren. Das EU DisinfoLab identifiziert Netzwerke mit Tausenden KI-generierten Fake-Accounts.",
-      "description_en": "Meta publishes Threat Intelligence Reports on coordinated inauthentic behavior originating in Russia. DFRLab documents the use of AI to mass-produce fake news websites that imitate European media brands. The EU DisinfoLab identifies networks comprising thousands of AI-generated fake accounts."
+      "title_de": "Doppelganger: geklonte europäische Nachrichtenseiten",
+      "title_en": "Doppelganger: cloned European news websites",
+      "description_de": "Das EU DisinfoLab veröffentlicht seinen Bericht zur Kampagne 'Doppelganger': Seit Mai 2022 werden Webseiten von mindestens 17 Medien wie Bild, The Guardian, ANSA und 20 Minutes über nachgeahmte Domains kopiert, um prorussische und antiukrainische Falschartikel zu verbreiten. Meta entfernt am selben Tag das zugehörige Netzwerk mit mehr als 60 gefälschten Webseiten und nennt es die größte und komplexeste russische Operation, die das Unternehmen seit Kriegsbeginn gestört hat.",
+      "description_en": "The EU DisinfoLab publishes its report on the 'Doppelganger' campaign: since May 2022, websites of at least 17 media outlets such as Bild, The Guardian, ANSA and 20 Minutes have been copied via look-alike domains to spread pro-Russian and anti-Ukrainian fake articles. On the same day, Meta removes the associated network of more than 60 fake websites and calls it the largest and most complex Russian operation it has disrupted since the war began."
     },
     {
       "date": "2023-06",
       "phase": "consequences",
-      "title": "Internationale Gegenmaßnahmen und Debatte über KI-Regulierung",
-      "description": "Die EU verstärkt das East StratCom Task Force-Mandat und finanziert Medienalphabetiierungsprogramme. Die NATO erkennt kognitive Kriegsführung offiziell als Bedrohungsvektor an. Der Deepfake-Einsatz im Ukraine-Krieg beschleunigt internationale Diskussionen über Kennzeichnungspflichten für KI-generierte Inhalte.",
-      "sources": [],
-      "title_de": "Internationale Gegenmaßnahmen und Debatte über KI-Regulierung",
-      "title_en": "International countermeasures and debate over AI regulation",
-      "description_de": "Die EU verstärkt das East StratCom Task Force-Mandat und finanziert Medienalphabetiierungsprogramme. Die NATO erkennt kognitive Kriegsführung offiziell als Bedrohungsvektor an. Der Deepfake-Einsatz im Ukraine-Krieg beschleunigt internationale Diskussionen über Kennzeichnungspflichten für KI-generierte Inhalte.",
-      "description_en": "The EU strengthens the mandate of the East StratCom Task Force and funds media literacy programs. NATO officially recognizes cognitive warfare as a threat vector. The use of deepfakes in the Ukraine war accelerates international discussions on mandatory labeling of AI-generated content."
+      "title": "Gegenmaßnahmen: EU fordert KI-Kennzeichnung, Frankreich benennt Kampagne",
+      "description": "Am 5. Juni 2023 fordert EU-Kommissionsvizepräsidentin Věra Jourová die Unterzeichner des Verhaltenskodex gegen Desinformation auf, KI-generierte Inhalte zu erkennen und für Nutzer zu kennzeichnen. Am 13. Juni 2023 beschuldigt Frankreich auf Grundlage eines Berichts der Behörde VIGINUM Russland einer Desinformationskampagne, bei der über mehr als 350 nachgeahmte Domains französische und ausländische Medien sowie die Webseite des französischen Außenministeriums imitiert wurden; VIGINUM ordnet sie dem Doppelganger-Netzwerk zu.",
+      "sources": [
+        "https://techcrunch.com/2023/06/06/eu-disinformation-code-generative-ai-labels/",
+        "https://therecord.media/france-accuses-russians-of-impersonating-french-government-media-misinformation"
+      ],
+      "title_de": "Gegenmaßnahmen: EU fordert KI-Kennzeichnung, Frankreich benennt Kampagne",
+      "title_en": "Countermeasures: EU calls for AI labeling, France exposes campaign",
+      "description_de": "Am 5. Juni 2023 fordert EU-Kommissionsvizepräsidentin Věra Jourová die Unterzeichner des Verhaltenskodex gegen Desinformation auf, KI-generierte Inhalte zu erkennen und für Nutzer zu kennzeichnen. Am 13. Juni 2023 beschuldigt Frankreich auf Grundlage eines Berichts der Behörde VIGINUM Russland einer Desinformationskampagne, bei der über mehr als 350 nachgeahmte Domains französische und ausländische Medien sowie die Webseite des französischen Außenministeriums imitiert wurden; VIGINUM ordnet sie dem Doppelganger-Netzwerk zu.",
+      "description_en": "On 5 June 2023, European Commission Vice-President Věra Jourová calls on signatories of the Code of Practice on Disinformation to detect AI-generated content and label it for users. On 13 June 2023, based on a report by the agency VIGINUM, France accuses Russia of a disinformation campaign in which more than 350 look-alike domains imitated French and foreign media as well as the website of the French foreign ministry; VIGINUM attributes it to the Doppelganger network."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://euvsdisinfo.eu/",
-      "title": "EUvsDisinfo - Russische Desinformationskampagnen",
-      "publisher": "EU DisinfoLab / EUvsDisinfo",
-      "date": "2023",
-      "type": "ngo-report",
-      "asm:linkHealth": "ok",
-      "title_de": "EUvsDisinfo - Russische Desinformationskampagnen",
-      "title_en": "EUvsDisinfo - Russian disinformation campaigns"
+      "url": "https://www.npr.org/2022/03/16/1087062648/deepfake-video-zelenskyy-experts-war-manipulation-ukraine-russia",
+      "title": "Deepfake video of Zelenskyy could be 'tip of the iceberg' in info war, experts warn",
+      "publisher": "NPR",
+      "date": "2022-03-16",
+      "type": "news-article",
+      "title_de": "Deepfake video of Zelenskyy could be 'tip of the iceberg' in info war, experts warn",
+      "title_en": "Deepfake video of Zelenskyy could be 'tip of the iceberg' in info war, experts warn"
     },
     {
-      "url": "https://www.disinfo.eu/",
-      "title": "EU DisinfoLab - AI-generated Disinformation Reports",
+      "url": "https://www.disinfo.eu/doppelganger-operation/",
+      "title": "Doppelganger operation",
       "publisher": "EU DisinfoLab",
-      "date": "2023",
+      "date": "2022",
       "type": "ngo-report",
-      "asm:linkHealth": "ok",
-      "title_de": "EU DisinfoLab - AI-generated Disinformation Reports",
-      "title_en": "EU DisinfoLab - AI-generated Disinformation Reports"
+      "title_de": "Doppelganger operation",
+      "title_en": "Doppelganger operation"
     }
   ],
   "asm:metadata": {
@@ -139,8 +144,8 @@
   },
   "name_de": "Russland: KI-Deepfakes und Desinformation im Ukraine-Krieg",
   "name_en": "Russia: AI deepfakes and disinformation in the war against Ukraine",
-  "description_de": "Seit dem Beginn der russischen Invasion in der Ukraine im Februar 2022 setzt Russland systematisch KI-generierte Deepfakes und automatisierte Desinformationskampagnen ein. Den Höhepunkt bildete ein gefälschtes Video von Präsident Selenskyj, in dem dieser angeblich zur Kapitulation aufruft. Meta, das EU DisinfoLab und das Digital Forensic Research Lab (DFRLab) dokumentieren koordinierte KI-gestützte Propaganda, die Millionen Menschen in der Ukraine und weltweit erreicht.",
-  "description_en": "Since the start of the Russian invasion of Ukraine in February 2022, Russia has systematically deployed AI-generated deepfakes and automated disinformation campaigns. The high point was a fabricated video of President Zelensky purportedly calling for surrender. Meta, the EU DisinfoLab and the Digital Forensic Research Lab (DFRLab) document coordinated AI-assisted propaganda reaching millions of people in Ukraine and worldwide.",
+  "description_de": "Seit dem Beginn der russischen Invasion in der Ukraine im Februar 2022 werden russischen Akteuren zugeschriebene Desinformationskampagnen dokumentiert, die auch KI-generierte Inhalte nutzen. Den bekanntesten Fall bildete ein Deepfake-Video von Präsident Selenskyj, in dem dieser angeblich zur Kapitulation aufruft; ukrainische Stellen machten russische Hacker dafür verantwortlich. Meta, das EU DisinfoLab und das Digital Forensic Research Lab (DFRLab) dokumentieren koordinierte Netzwerke mit KI-generierten Profilbildern und gefälschten Kopien europäischer Nachrichtenseiten.",
+  "description_en": "Since the start of the Russian invasion of Ukraine in February 2022, disinformation campaigns attributed to Russian actors have been documented that also use AI-generated content. The best-known case was a deepfake video of President Zelensky purportedly calling for surrender; Ukrainian officials blamed Russian hackers. Meta, the EU DisinfoLab and the Digital Forensic Research Lab (DFRLab) document coordinated networks using AI-generated profile pictures and fake copies of European news websites.",
   "asm:affectedRights_de": [
     "Informationsfreiheit",
     "Recht auf Wahrheit",
