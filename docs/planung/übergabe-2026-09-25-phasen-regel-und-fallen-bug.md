@@ -435,3 +435,102 @@ Ereignisse.
 
 **Endstand:** Validator 2452/2452 ohne ERROR, Audit 0, 0 Smart-Chars,
 Umlaut-Fixer 0 Ersetzungen, 311 einzelne TL-Einträge ohne Quelle in 242 Files.
+
+## Nachtrag 7 (2026-10-08/09): Einzelquellen-Wellen 10-15 - alle TL-Einträge belegt
+
+**Ergebnis:** Die letzten 311 Timeline-Einträge ohne Quelle (242 Files) sind
+geprüft und belegt. Stand jetzt: **0 TL-Einträge ohne Quelle** (11.106 Einträge in 2452 Files). Jede Gruppe
+(3-4 Files) lief durch Bearbeiter und unabhängigen, adversarialen Prüfer mit
+WebSearch und wurde erst nach meiner Durchsicht committet (Prüf-Skript
+`rev.js`: geänderte Felder, Titel/correctionNote, Typen, Akteure, Quellen,
+TL-Daten/Phasen).
+
+| Welle | Umfang | Commits |
+|---|---|---|
+| 10 | Sev 5, je 2 offen (K-Q) | e9a665d 9be6b7f 99640b1 03f0f51 7144e95 3ac374d 83ca5fb, Bundles 2891668 |
+| 11 | Sev 5, je 1 offen (R-V) | f261ff0 6f42fe6 7059d43 08892b6 3188b00 |
+| 12 | Sev 4, je 1 offen (W-AF) | d034e5f 00f081e 876e3e5 fd67b69 f9918b4 0c0f78d 32c788c 4cec8e1 a314b9c 9ac6188 |
+| 13 | Sev 3, je 2 offen (AG-AQ) | bbde846 4209460 a62f996 62a1f90 3a31a35 7c75dc7 b68f425 cd775f8 b156979 8a14281 4e3d1ea |
+| 14 | Sev 3, je 1 offen (80 Files, 20 Gruppen) | f866e22 e3b8ca7 90f1a95 26663ef 58e74d5 f136272 558a226 a1a5598 160566b d19eebe 408cf24 df7ee13 c68a2d1 a8fe7d4 64f5ab9 bed1902 250b72c 25f1b20 0991f91 45ebc14 907d662, Bundles 0db240d |
+| 15 | Sev 2/1, Rest (48 Files, 12 Gruppen, Bearbeiter + Prüfer im selben Workflow) | 6b58fa6 00d3d27 bb3917f e8b7ed2 d9f133c d1f5550 81ddfc9 8dde84c 6d9a687 4f3f47e 5cc66b9 386b6e7, Bundles 5dd14df |
+
+Zusätzlich: **47 kaputte `asm:relatedIncidents`-Verweise** (Slugs mit Umlauten,
+z. B. `rumänien-wahlannullierung-tiktok`) in 37 Files auf die bestehenden
+transliterierten Slugs umgestellt (6ff481e, Stargate in 250b72c); 3 Verweise auf
+nie existierende Slugs auf die passende Datei umgelenkt. Korpusweit jetzt 0
+unaufgelöste Verweise.
+
+**Fehlerquote bleibt hoch.** In fast jeder Datei gab es echte Fehler, auch in
+bereits belegten Einträgen: erfundene Folgen (z. B. FTC-Untersuchung zu Adobe
+Firefly, Kongress-Auftritte, ELVIS-Act-Bezug bei Johansson/Sky, Sora-Abschaltung),
+falsche Daten und Aktenzeichen (Prisma Labs 3:23 statt 5:23, Tesla-Rollstopps seit
+Okt. 2020), erfundene oder nicht auffindbare URLs (CNN Money, Rolling Stone, Law360,
+PRNigeria u. v. m.), überzogene Titel (rund 95 Titel mit correctionNote korrigiert,
+z. B. Klarna '700 Jobs', Kaiser-'Roboter', Instacart-'Algorithmus',
+Pixellot-'Schiedsrichter' statt Linienrichter).
+
+**Fünfter Fixer-Bug (f37fa22):** `fix-umlaut-transliterations.js` behandelte die
+Slugs in `asm:relatedIncidents` wie deutschen Anzeigetext und machte aus
+`rumaenien-wahlannullierung-tiktok` den nicht existierenden Slug
+`rumänien-...`. Das war die Ursache der 48 kaputten Verweise; der Abschlusslauf
+des Fixers hätte 46 davon wieder zerstört (beobachtet, zurückgesetzt). Der Fixer
+überspringt das Feld jetzt, und `validate-timelines.js` meldet einen ERROR, wenn
+ein Verweis auf keine Datei zeigt.
+
+**Audit wieder 0 (930f807):** zwei Fehlalarme - der türkische Vorname „Ömer"
+(Umlaut nur am Wortanfang, neue Liste `FOREIGN_UMLAUT_NAMES` im Audit) und
+„Stingrays" (Plural) im EN-Text.
+
+**Lektionen (Werkzeug/Ablauf):**
+- **Suchkontingent:** ca. 200 WebSearch-Aufrufe pro *Turn*, geteilt von allen in
+  diesem Turn gestarteten Agenten und Workflows. Eine Benachrichtigung, die
+  *während* eines Turns eintrifft, und Stop-Hook-Fortsetzungen starten **keinen**
+  neuen Turn. Zweimal liefen dadurch Prüfer leer (W14-15..20 teilten sich ein
+  Kontingent; zehn parallele Prüfer in einem Turn). Regel: höchstens 2-3 Gruppen
+  pro Turn starten, und nur als erste Aktion eines Turns, der durch eine
+  Benachrichtigung im Leerlauf beginnt. Leer gelaufene Prüfungen gezielt mit
+  frischem Kontingent nachprüfen, nie ungeprüft committen.
+- **Nutzungslimit:** Ein Session-Limit beendete alle laufenden Agenten mitten in
+  der Arbeit; danach alle geänderten Files validiert und jede Änderung gegenüber
+  HEAD als ungeprüft behandelt.
+- **Workflow-Falle:** Gibt eine `pipeline()`-Stufe `null` zurück, fällt das Item
+  aus allen weiteren Stufen heraus (agent_count 0). Lösung: eine einzige Stufe pro
+  Gruppe (Bearbeiter, dann Prüfer im selben Callback).
+- **Bundles** immer aus dem committeten Stand in einem temporären Worktree bauen,
+  nie aus einem Arbeitsverzeichnis mit ungeprüften Agenten-Änderungen.
+
+**Redaktionelle Entscheidungen für Andy (nicht von mir entschieden):**
+- *Kein oder nicht belegtes KI-Element:* costa-rica-conti, malaysia-ki-arbeitsmigranten,
+  tschechien-ki-sozialhilfe-scoring, usa-ziprecruiter-ki-diskriminierung (kein konkreter
+  Vorfall, überschneidet sich mit HireVue), Lauren Book (gestohlene Fotos), Spotify PFC
+  (vermutlich Dublette von global-spotifys-perfect-fit-content-...), suedsudan-90-tage-...,
+  suedkorea-yoons-kriegsrechts-... (kein Deepfake existierte), usa-instacart-...,
+  usa-kaiser-permanente-... (Telepräsenz), usa-ki-bots-stoeren-stadtratssitzungen-...
+  (nur vermutet), nepal-social-media-ueberwachung, uk-ofqual (statistisches Modell),
+  suedafrika-hell-run (Routing). Behalten, umetikettieren oder ausblenden?
+- *humanVerified:true trotz erfundener Inhalte:* eu-frontex-ki-grenzen,
+  indonesien-ki-social-scoring, mexiko-ki-militarisierung, tuerkei-ki-kurdische-ueberwachung,
+  tschechien-ki-sozialhilfe-scoring - das Flag ist bei importierten Fällen nicht aussagekräftig.
+- *Weitere Fälle mit fraglichem KI-Element (Welle 15):* uk-google-push-benachrichtigung-zur-bafta-...
+  (Google: „did not involve AI"), global-sony-testet-dynamische-spielpreise-... (A/B-Preistest,
+  von Sony nie bestätigt), kanada-moffatt-air-canada-... (Technik des Chatbots nie beschrieben),
+  australien-psychologin-... (KI-Einsatz nur vermutet), usa-scarlett-johansson-openai-sky-stimme
+  (kein Stimmklon belegt; Typ deepfakes fraglich).
+- *humanVerified:true ebenfalls bei:* japan-ki-polizei-vorhersage (erfundener Kabinettsplan 2023,
+  nicht belegte NEC-Rolle).
+- *Dubletten (gemeldet, nicht zusammengelegt):* uk-kinder-gelangen-in-virtuelle-striptease-clubs-2022
+  vs. uk-bbc-recherche-findet-grooming-...-vrchat-2022; die beiden Proof-News-Wahlstudien
+  (usa-ki-modelle-liefern-...-27-prozent-... und usa-fuehrende-ki-modelle-...);
+  usa-proctoring-ki-studenten vs. usa-proctorio-honorlock-...; die beiden Adobe-Kundeninhalte-Files
+  von 2023 sowie usa-adobe-firefly-midjourney-ethik-kontroverse, global-adobe-trainierte-als-ethisch-beworbenes-firefly-modell-auch-mit-konkurrenz-ki und global-adobes-neue-nutzungsbedingungen-... (fünf Adobe-Files mit Überschneidungen).
+- *griechenland-predpol-migration:* kein PredPol-Einsatz belegt (nur im Slug); Koordinaten
+  zeigen auf Lesbos, das dokumentierte Lager liegt auf Samos (Koordinaten nicht geändert).
+- *'data-misuse' als Sammeltyp:* u. a. für rund ein Dutzend Rechenzentrums-/Umwelt-Files
+  und Einflussoperationen - korpusweite Typ-Entscheidung.
+- *Personen:* Raymundo Ramos (OFAC-Sanktion 14.04.2026, Files nennen ihn Menschenrechtsverteidiger);
+  Fall Fernandes/Ulmen; Klarna '700' ist eine Arbeitslast-Äquivalenz, keine Entlassungen.
+- *Neue Front: 541 Incidents ohne Koordinaten* (`location.geo` fehlt; US 285, GLOBAL 128,
+  GB 37, CN 17, AU 10, ...). `js/map.js` setzt für sie keinen Marker - sie erscheinen nicht
+  auf der Karte. Vorbestehend, nicht in dieser Session geändert.
+
+**Endstand:** Validator 2452/2452 ohne ERROR (412 WARNs, v. a. gleiche Daten realer Ereignisse), **0 TL-Einträge ohne Quelle**, 0 unaufgelöste relatedIncidents-Verweise, Audit 0 Findings, 0 Smart-Chars, Umlaut-Fixer 0 Ersetzungen, Bundles aus HEAD (5dd14df), Browsertest DE/EN ohne Fehler (Detail-Panel, Permalink, Timeline).
