@@ -78,7 +78,16 @@ function transliterate(str) {
     .replace(/[óòôõ]/gi, 'o')
     .replace(/[úùû]/gi, 'u')
     .replace(/ñ/gi, 'n')
-    .replace(/ç/gi, 'c');
+    .replace(/ç/gi, 'c')
+    // Weitere lateinische Sonderzeichen (PL/CZ/SK/HU/TR/RO/Nordisch), damit Slugs
+    // nicht an unbekannten Buchstaben zerbrechen (vorher: 'Przełęcz Krzyżne' -> 'prze-cz-krzy-ne').
+    .replace(/[łŁ]/g, 'l').replace(/[żźŻŹ]/g, 'z').replace(/[ęĘ]/g, 'e').replace(/[ąĄ]/g, 'a')
+    .replace(/[śšŚŠ]/g, 's').replace(/[ćčĆČ]/g, 'c').replace(/[ńňŃŇ]/g, 'n').replace(/[řŘ]/g, 'r')
+    .replace(/[žŽ]/g, 'z').replace(/[ěĚ]/g, 'e').replace(/[ůŮ]/g, 'u').replace(/[ďĎ]/g, 'd').replace(/[ťŤ]/g, 't')
+    .replace(/[őŐ]/g, 'o').replace(/[űŰ]/g, 'u').replace(/[ğĞ]/g, 'g').replace(/[şŞ]/g, 's').replace(/ı/g, 'i').replace(/İ/g, 'i')
+    .replace(/[ăâĂÂ]/g, 'a').replace(/[îÎ]/g, 'i').replace(/[țţȚŢ]/g, 't').replace(/[ȘșŞş]/g, 's')
+    .replace(/[øØ]/g, 'o').replace(/[åÅ]/g, 'a').replace(/[æÆ]/g, 'ae').replace(/[œŒ]/g, 'oe').replace(/[ðÐ]/g, 'd').replace(/[þÞ]/g, 'th')
+    .replace(/[ýÿÝ]/g, 'y').replace(/[ëËïÏüÜ]/g, m => ({'ë':'e','Ë':'E','ï':'i','Ï':'I','ü':'ue','Ü':'Ue'})[m]);
 }
 
 // Country-prefix map. ISO-2 → slug-prefix (DE-style names where they
