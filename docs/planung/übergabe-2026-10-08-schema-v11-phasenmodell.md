@@ -81,6 +81,51 @@ Fix-Report und Erstbefund im Prompt).
 4. Zwei needs-human-Fälle entscheiden (Abschnitt 3).
 5. Unverändert: Career-Daten via Dataset-Download · AIAAIC Batch D · needs-review-Cases · Slug-Migration.
 
+---
+
+## Teil 2 (2026-10-09, Fortsetzung nach „weiter") — ABSCHLUSS
+
+**Commits:** `f1dabce` (Re-Verify Welle 2), `959921f` (Welle 4), `35b1b54` (Welle 5),
+`20a7445` (Welle 6), `a3398d3` (Validator: Phasen-Pflicht = ERROR), `07554ae` (Translit).
+
+| Welle | Files | Fix WebSearch | Verify WebSearch | Verdikte |
+|---|---|---|---|---|
+| Re-Verify 2 | 12 | – | 3/3 | 11 fix-applied, 1 needs-human (kasachstan) |
+| 4 | 16 | 4/4 | 4/4 | 9 fix-applied, 7 pass |
+| 5 | 16 | 4/4 | 4/4 | 13 fix-applied, 3 pass |
+| 6 | 7 | 2/2 | 2/2 | 6 fix-applied, 1 pass |
+
+Mit „ein Workflow pro Turn, ≤16 Files" lief WebSearch in **allen** Agenten.
+
+**Endstand:** `validate-timelines.js --all` → **2457/2457 ohne ERROR**, 440 WARNs
+(435× „gleiches Datum", akzeptabel; 1× Eigenname Fuerteventura; Rest Doppel-Umlaut-
+Hinweis „Menüänderungen", legitim). Kein File mehr ohne infrastructure/doctrine/
+event/consequences → die beiden Phasen-WARNs sind jetzt **ERROR** (`a3398d3`).
+Frontend für Welle 6 (`usa-ring-polizei-ueberwachung`) im Browser geprüft: 6 Einträge,
+alle mit Quellen, EN-Übersetzungen, 0 Konsolenfehler.
+
+**Nebenfixes aus Agenten-Befunden (quellengedeckt, außerhalb der Timeline):**
+- `usa-shotspotter-fehlalarme`: Beschreibung „AP-Recherche von 2023" → 2021 (DE+EN).
+- `marokko-pegasus-journalisten`: name/name_de „König von Frankreich" → „den
+  Präsidenten Frankreichs" (name_en und Beschreibung sagten es bereits richtig).
+- Translit-Reste „sekuendiges", „zurueckzurufen" gefixt, Map 2951 → 2954.
+
+**needs-human (jetzt 3, alle Incident-Ebene, nicht Timeline):**
+1. `tschechien-ki-sozialhilfe-scoring` — siehe §3; Empfehlung Rückzug oder Umbau.
+2. `usa-rekognition-immigration-ice` — Haupttext/Location/Actors nicht belegt.
+3. **NEU** `kasachstan-ki-protest-shutdown` — Gesichtserkennung zur nachträglichen
+   Identifizierung (Jan 2022) nur durch Bitter Winter belegt; Freedom House FOTN 2021:
+   Staat distanzierte sich 2020 von Gesichtserkennungsplänen, Sergek erklärte 2021,
+   kein FR im System. Festnahmezahl „über 12.000" → „rund 10.000" (FIDH/Freedom House).
+   Option: Eintrag [4] auf „Auswertung von Kameraaufnahmen" kürzen, FR als Vorwurf
+   einer Einzelquelle attribuieren, ggf. incidentType anpassen.
+
+**Weitere Agenten-Hinweise (nicht umgesetzt, Altbestand):**
+- `usa-chatgpt-urheberrecht-nyt` [2025 consequences] ohne Quelle, zeitlich unscharf.
+- `mexiko-ki-militarisierung` infrastructure 2016 beschreibt Citizen-Lab-Bericht von 2017.
+- `usa-ki-virtuelle-mauer-…` consequences „Funnel-Effekt" datiert 2023, Hauptquelle 2019.
+- `indonesien-ki-social-scoring` description „über 200 Millionen Bürger" unbelegt.
+
 ## Disk-Hygiene
 
 Workflow-Journale ~10 MB pro 24er-Welle unter `~/.claude/projects/…/subagents/workflows/`
