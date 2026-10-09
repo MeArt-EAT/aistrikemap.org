@@ -1,11 +1,11 @@
 # Audit: Bilinguale Incident-Migration
 
-Datum: 2026-09-26
+Datum: 2026-10-09
 
 ## Zusammenfassung
 
-- Geprüfte Dateien: **2453**
-- Saubere Dateien (keine Findings): **2453**
+- Geprüfte Dateien: **2457**
+- Saubere Dateien (keine Findings): **2457**
 - Dateien mit Findings: **0**
 - Findings insgesamt: **0**
 

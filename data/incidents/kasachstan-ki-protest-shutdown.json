@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/kasachstan-ki-protest-shutdown",
-  "name": "Kasachstan: Internet-Shutdown und Massenfestnahmen bei Januarprotesten 2022",
-  "description": "Während der landesweiten Proteste im Januar 2022 schaltet Kasachstan das Internet am 5. Januar landesweit ab und unterbricht es danach bis etwa 11. Januar immer wieder, während Sicherheitskräfte mit tödlicher Gewalt gegen Demonstranten vorgehen. Nach Angaben der Generalstaatsanwaltschaft kommen 238 Menschen ums Leben. Laut Access Now werden rund 12.000 Menschen festgenommen; Human Rights Watch dokumentiert Misshandlung und Folter in Gewahrsam. In den folgenden Strafverfahren stützen sich die Behörden auch auf Überwachungsvideos; dass automatisierte Gesichtserkennung zur Identifizierung von Protestteilnehmern eingesetzt wurde, ist nicht unabhängig belegt.",
+  "name": "Kasachstan: Internet-Shutdown und Kameraüberwachung bei Januarprotesten 2022",
+  "description": "Während der landesweiten Proteste im Januar 2022 schaltet Kasachstan das Internet für fünf Tage komplett ab, während Sicherheitskräfte mit tödlicher Gewalt gegen Demonstranten vorgehen. Mindestens 238 Menschen werden getötet. Nach Wiederherstellung des Internets werten Sicherheitskräfte Aufnahmen des mit chinesischer Technik (Hikvision/Dahua) aufgebauten Kameranetzes aus, um Protestteilnehmer nachträglich zu identifizieren; nach offiziellen Angaben werden rund 10.000 Menschen festgenommen. Dass dabei Gesichtserkennung eingesetzt wurde, behauptet allein die Zeitschrift Bitter Winter; Freedom House zufolge erklärte der Betreiber Sergek 2021, sein System habe keine Gesichtserkennung.",
   "startDate": "2022-01-02",
   "location": {
     "@type": "Place",
@@ -40,15 +40,52 @@
       "type": "government",
       "asm:systems": [
         "Internet-Shutdown",
-        "Videoüberwachung (CCTV)"
+        "CCTV-Netz Sergek (Auswertung von Kameraaufnahmen)"
       ],
       "name_de": "Kasachische Regierung / KNB (Komitee für Nationale Sicherheit)",
       "name_en": "Kazakh government / KNB (National Security Committee)"
+    },
+    {
+      "name": "Hikvision / Dahua",
+      "type": "company",
+      "asm:systems": [
+        "Überwachungskameras"
+      ],
+      "name_de": "Hikvision / Dahua",
+      "name_en": "Hikvision / Dahua"
     }
   ],
   "asm:severity": 5,
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
+    {
+      "date": "2014-04",
+      "phase": "doctrine",
+      "title": "Gesetzesänderung erlaubt Netzabschaltungen ohne Gerichtsbeschluss",
+      "description": "Am 23. April 2014 unterzeichnet Präsident Nasarbajew Änderungen am Gesetz 'Über Kommunikation': Der neue Artikel 41-1 erlaubt dem Generalstaatsanwalt und seinen Stellvertretern, Kommunikationsnetze und Internetdienste ohne Gerichtsbeschluss abschalten zu lassen, etwa bei Aufrufen zu nicht genehmigten Massenveranstaltungen, Unruhen oder 'extremistischen' Aktivitäten; Anbieter müssen Anordnungen binnen drei Stunden umsetzen. Eine Novelle vom Dezember 2016 überträgt auch dem Komitee für Nationale Sicherheit (KNB) das Recht, Verbindungen ohne richterliche Kontrolle zu kappen, und ein Regierungserlass vom Oktober 2018 erlaubt vier Behörden (Generalstaatsanwaltschaft, KNB, Innen- und Verteidigungsministerium) die Abschaltung von Netzen bei 'Notfallsituationen' oder einem drohenden Ausnahmezustand. Der landesweite Shutdown vom Januar 2022 ist damit rechtlich vorbereitet.",
+      "title_de": "Gesetzesänderung erlaubt Netzabschaltungen ohne Gerichtsbeschluss",
+      "description_de": "Am 23. April 2014 unterzeichnet Präsident Nasarbajew Änderungen am Gesetz 'Über Kommunikation': Der neue Artikel 41-1 erlaubt dem Generalstaatsanwalt und seinen Stellvertretern, Kommunikationsnetze und Internetdienste ohne Gerichtsbeschluss abschalten zu lassen, etwa bei Aufrufen zu nicht genehmigten Massenveranstaltungen, Unruhen oder 'extremistischen' Aktivitäten; Anbieter müssen Anordnungen binnen drei Stunden umsetzen. Eine Novelle vom Dezember 2016 überträgt auch dem Komitee für Nationale Sicherheit (KNB) das Recht, Verbindungen ohne richterliche Kontrolle zu kappen, und ein Regierungserlass vom Oktober 2018 erlaubt vier Behörden (Generalstaatsanwaltschaft, KNB, Innen- und Verteidigungsministerium) die Abschaltung von Netzen bei 'Notfallsituationen' oder einem drohenden Ausnahmezustand. Der landesweite Shutdown vom Januar 2022 ist damit rechtlich vorbereitet.",
+      "title_en": "Legal amendment allows network shutdowns without a court order",
+      "description_en": "On 23 April 2014 President Nazarbayev signs amendments to the Law 'On Communications': the new Article 41-1 allows the Prosecutor General and his deputies to have communication networks and internet services shut down without a court order, for instance in cases of calls for unauthorised mass events, riots or 'extremist' activity; providers must implement orders within three hours. An amendment of December 2016 also gives the National Security Committee (KNB) the right to cut connections without judicial oversight, and a government decree of October 2018 allows four agencies (Prosecutor General's Office, KNB, Interior and Defence Ministries) to shut down networks in 'emergency situations' or when a state of emergency is imminent. The nationwide shutdown of January 2022 is thus legally prepared.",
+      "sources": [
+        "https://en.tengrinews.kz/news/252807",
+        "https://freedomhouse.org/country/kazakhstan/freedom-net/2017"
+      ]
+    },
+    {
+      "date": "2020",
+      "phase": "infrastructure",
+      "title": "Almaty baut Kameranetz mit chinesischer Technik und Gesichtserkennung auf",
+      "description": "2019 wird in Almaty das Videoüberwachungssystem 'Sergek' ausgerollt, das seit September 2017 in Astana läuft; nach einem Testbetrieb werden die Kameras zum 1. Januar 2020 scharfgeschaltet. Betreiber ist Korkem Telecom, technischer Partner der chinesische Hersteller Dahua. Im Rahmen des Programms 'Digital Kazakhstan' sind 1.000 Sergek-Kameras für die Stadt vorgesehen. Parallel nutzt das Einheitliche Videomonitoring-System Almatys Hikvision-Kameras zur Gesichts- und Kennzeichenerkennung. Präsident Tokajew besucht im September 2019 die Hikvision-Zentrale in Hangzhou und lobt deren Überwachungstechnik.",
+      "title_de": "Almaty baut Kameranetz mit chinesischer Technik und Gesichtserkennung auf",
+      "description_de": "2019 wird in Almaty das Videoüberwachungssystem 'Sergek' ausgerollt, das seit September 2017 in Astana läuft; nach einem Testbetrieb werden die Kameras zum 1. Januar 2020 scharfgeschaltet. Betreiber ist Korkem Telecom, technischer Partner der chinesische Hersteller Dahua. Im Rahmen des Programms 'Digital Kazakhstan' sind 1.000 Sergek-Kameras für die Stadt vorgesehen. Parallel nutzt das Einheitliche Videomonitoring-System Almatys Hikvision-Kameras zur Gesichts- und Kennzeichenerkennung. Präsident Tokajew besucht im September 2019 die Hikvision-Zentrale in Hangzhou und lobt deren Überwachungstechnik.",
+      "title_en": "Almaty builds a camera network with Chinese technology and facial recognition",
+      "description_en": "In 2019 the 'Sergek' video surveillance system, operating in Astana since September 2017, is rolled out in Almaty; after a test phase the cameras go live on 1 January 2020. It is run by Korkem Telecom with the Chinese manufacturer Dahua as technical partner. Under the 'Digital Kazakhstan' programme, 1,000 Sergek cameras are planned for the city. In parallel, Almaty's Unified Video Monitoring System uses Hikvision cameras for face and licence plate recognition. In September 2019 President Tokayev visits Hikvision's headquarters in Hangzhou and praises its surveillance technology.",
+      "sources": [
+        "https://www.rferl.org/a/china-surveillance-hikvision-dahua-huawei-kazakhstan-ai-central-asia/33544093.html",
+        "https://newtimes.kz/regiony/114356-radi-bezopasnosti-1000-kamer-sergek-ustanoviat-v-almaty-v-ramkakh-programmy-tsifrovoi-kazakhstan"
+      ]
+    },
     {
       "date": "2022-01-02",
       "phase": "event",
@@ -63,46 +100,42 @@
       "description_en": "Protests against gas price hikes expand into nationwide demonstrations against the government. On January 5, the government shuts down the internet completely - 19 million people lose access. The shutdown prevents the coordination of protests and documentation of violence by security forces."
     },
     {
-      "date": "2022-01-07",
+      "date": "2022-01-06",
       "phase": "event",
-      "title": "Schießbefehl ohne Vorwarnung: 238 Tote",
-      "description": "Präsident Tokajew ruft die von Russland geführte OVKS (CSTO) zu Hilfe, deren Truppen ab dem 6. Januar eintreffen. Am 7. Januar ermächtigt er Polizei und Armee in einer Fernsehansprache, 'ohne Vorwarnung' scharf zu schießen. Nach Angaben der Generalstaatsanwaltschaft vom August 2022 sterben bei den Unruhen 238 Menschen, darunter 19 Angehörige der Sicherheitskräfte; sechs Menschen sterben an Folter in Gewahrsam. Die Internet-Abschaltung erschwert die Dokumentation der Gewalt.",
-      "sources": [
-        "https://www.jurist.org/news/2022/01/kazakhstan-president-orders-police-military-to-shoot-and-kill-without-warning-to-end-uprising",
-        "https://www.gov.kz/memleket/entities/ombudsman/press/news/details/413347?lang=en"
-      ],
-      "title_de": "Schießbefehl ohne Vorwarnung: 238 Tote",
-      "description_de": "Präsident Tokajew ruft die von Russland geführte OVKS (CSTO) zu Hilfe, deren Truppen ab dem 6. Januar eintreffen. Am 7. Januar ermächtigt er Polizei und Armee in einer Fernsehansprache, 'ohne Vorwarnung' scharf zu schießen. Nach Angaben der Generalstaatsanwaltschaft vom August 2022 sterben bei den Unruhen 238 Menschen, darunter 19 Angehörige der Sicherheitskräfte; sechs Menschen sterben an Folter in Gewahrsam. Die Internet-Abschaltung erschwert die Dokumentation der Gewalt.",
-      "title_en": "Shoot-without-warning order: 238 dead",
-      "description_en": "President Tokayev calls in the Russian-led CSTO, whose troops arrive from January 6. On January 7, in a televised address, he authorizes police and the army to 'open fire to kill without warning'. According to the Prosecutor General's Office in August 2022, 238 people die in the unrest, including 19 members of the security forces; six people die from torture in custody. The internet shutdown hampers documentation of the violence."
+      "title": "Schießbefehl: Mindestens 238 Tote",
+      "description": "Präsident Tokajew gibt den Schießbefehl und ruft CSTO-Truppen (angeführt von Russland) ins Land. In Almaty werden Demonstranten ohne Warnung beschossen. Mindestens 238 Menschen werden getötet, tausende verletzt. Die Internet-Abschaltung verhindert, dass Beweise für das Ausmaß der Gewalt nach außen gelangen.",
+      "sources": [],
+      "title_de": "Schießbefehl: Mindestens 238 Tote",
+      "description_de": "Präsident Tokajew gibt den Schießbefehl und ruft CSTO-Truppen (angeführt von Russland) ins Land. In Almaty werden Demonstranten ohne Warnung beschossen. Mindestens 238 Menschen werden getötet, tausende verletzt. Die Internet-Abschaltung verhindert, dass Beweise für das Ausmaß der Gewalt nach außen gelangen.",
+      "title_en": "Shoot-to-kill order: at least 238 dead",
+      "description_en": "President Tokayev issues a shoot-to-kill order and calls in CSTO troops (led by Russia). In Almaty, demonstrators are fired upon without warning. At least 238 people are killed and thousands wounded. The internet shutdown prevents evidence of the scale of violence from reaching the outside world."
     },
     {
-      "date": "2022-01 bis 2022-02",
+      "date": "2022-01",
       "phase": "consequences",
-      "title": "Massenfestnahmen und Folter-Vorwürfe",
-      "description": "Laut Access Now werden seit dem 2. Januar rund 12.000 Menschen festgenommen. Human Rights Watch dokumentiert am 1. Februar 2022 auf Basis von Interviews Dutzende Fälle willkürlicher Festnahmen sowie Misshandlung und Folter in Gewahrsam, unter anderem mit Elektroschocks und Schlagstöcken, und berichtet über Behinderungen der Arbeit von Anwälten.",
+      "title": "Massenfestnahmen nach Auswertung von Kameraaufnahmen",
+      "description": "Nach Wiederherstellung des Internets werten Sicherheitskräfte Überwachungsaufnahmen aus, um Protestteilnehmer nachträglich zu identifizieren. Nach offiziellen Angaben werden bis zum 11. Januar rund 10.000 Menschen festgenommen (FIDH, Human Rights Watch). Dass dabei Gesichtserkennung zum Einsatz kam, behauptet allein die Zeitschrift Bitter Winter; Freedom House zufolge hatte sich der Staat 2020 öffentlich von Gesichtserkennungsplänen distanziert, und Sergek erklärte 2021, sein System habe keine Gesichtserkennung. Berichte über Folter und erzwungene Geständnisse häufen sich. Das CCTV-Netz von Almaty basiert auf chinesischer Technik (Hikvision/Dahua).",
       "sources": [
-        "https://www.accessnow.org/kazakhstan-internet-shutdowns-protests-almaty-timeline-whats-happening/",
-        "https://www.hrw.org/news/2022/02/01/kazakhstan-protesters-arbitrarily-arrested-beaten"
+        "https://www.fidh.org/en/region/europe-central-asia/kazakhstan/kazakhstan-mass-protests-are-stifled-by-violence-and-further",
+        "https://bitterwinter.org/kazakhstan-mass-arrests-and-surveillance/"
       ],
-      "title_de": "Massenfestnahmen und Folter-Vorwürfe",
-      "description_de": "Laut Access Now werden seit dem 2. Januar rund 12.000 Menschen festgenommen. Human Rights Watch dokumentiert am 1. Februar 2022 auf Basis von Interviews Dutzende Fälle willkürlicher Festnahmen sowie Misshandlung und Folter in Gewahrsam, unter anderem mit Elektroschocks und Schlagstöcken, und berichtet über Behinderungen der Arbeit von Anwälten.",
-      "title_en": "Mass arrests and torture allegations",
-      "description_en": "According to Access Now, around 12,000 people are arrested from January 2 onward. On February 1, 2022, based on interviews, Human Rights Watch documents dozens of cases of arbitrary arrest as well as ill-treatment and torture in custody, including electric shocks and beatings with batons, and reports interference with lawyers' work."
+      "title_de": "Massenfestnahmen nach Auswertung von Kameraaufnahmen",
+      "description_de": "Nach Wiederherstellung des Internets werten Sicherheitskräfte Überwachungsaufnahmen aus, um Protestteilnehmer nachträglich zu identifizieren. Nach offiziellen Angaben werden bis zum 11. Januar rund 10.000 Menschen festgenommen (FIDH, Human Rights Watch). Dass dabei Gesichtserkennung zum Einsatz kam, behauptet allein die Zeitschrift Bitter Winter; Freedom House zufolge hatte sich der Staat 2020 öffentlich von Gesichtserkennungsplänen distanziert, und Sergek erklärte 2021, sein System habe keine Gesichtserkennung. Berichte über Folter und erzwungene Geständnisse häufen sich. Das CCTV-Netz von Almaty basiert auf chinesischer Technik (Hikvision/Dahua).",
+      "title_en": "Mass arrests after review of camera footage",
+      "description_en": "After internet access is restored, security forces review surveillance footage to identify protest participants after the fact. According to official figures, around 10,000 people are arrested by 11 January (FIDH, Human Rights Watch). The claim that facial recognition was used rests solely on the magazine Bitter Winter; according to Freedom House, the state had publicly distanced itself from facial recognition plans in 2020, and Sergek stated in 2021 that its system has no facial recognition. Reports of torture and forced confessions accumulate. Almaty's CCTV network is based on Chinese technology (Hikvision/Dahua)."
     },
     {
-      "date": "2022-07 bis 2023-01",
+      "date": "2023",
       "phase": "consequences",
-      "title": "Hunderte Verurteilungen, kaum Strafen für Folter",
-      "description": "Bis Mitte Juli 2022 werden laut Generalstaatsanwaltschaft 545 Personen im Zusammenhang mit den Unruhen verurteilt; in einzelnen Verfahren nennt die Behörde Aufnahmen von Überwachungskameras als Beweismittel. Für Folter an Inhaftierten werden dagegen nur wenige Beamte belangt: Am 17. Januar 2023 verurteilt ein Gericht in Almaty zwei Polizisten zu drei Jahren Haft. Aktivisten fordern von der Staatsanwaltschaft deutlich mehr Einsatz gegen Polizeigewalt.",
+      "title": "Straflosigkeit und Ausbau der Überwachung",
+      "description": "Kein Sicherheitsbeamter wird für die Tötungen strafrechtlich verfolgt. Stattdessen werden Hunderte Protestierende zu Haftstrafen verurteilt. Die Regierung baut die digitale Überwachungsinfrastruktur weiter aus. Kasachstan wird zum Modellfall für den Einsatz von Internet-Shutdowns und nachträglicher Gesichtserkennung als Repressionsinstrument.",
       "sources": [
-        "https://astanatimes.com/2022/07/january-riots-in-kazakhstan-429-criminal-cases-sent-to-court-545-suspects-convicted/",
-        "https://eurasianet.org/kazakhstan-policemen-convicted-over-bloody-january-torture-cases"
+        "https://freedomhouse.org/country/kazakhstan/freedom-net/2023"
       ],
-      "title_de": "Hunderte Verurteilungen, kaum Strafen für Folter",
-      "description_de": "Bis Mitte Juli 2022 werden laut Generalstaatsanwaltschaft 545 Personen im Zusammenhang mit den Unruhen verurteilt; in einzelnen Verfahren nennt die Behörde Aufnahmen von Überwachungskameras als Beweismittel. Für Folter an Inhaftierten werden dagegen nur wenige Beamte belangt: Am 17. Januar 2023 verurteilt ein Gericht in Almaty zwei Polizisten zu drei Jahren Haft. Aktivisten fordern von der Staatsanwaltschaft deutlich mehr Einsatz gegen Polizeigewalt.",
-      "title_en": "Hundreds convicted, few punished for torture",
-      "description_en": "By mid-July 2022, according to the Prosecutor General's Office, 545 people have been convicted in connection with the unrest; in individual cases the office cites surveillance camera footage as evidence. Only a few officials, by contrast, are held accountable for torturing detainees: on January 17, 2023, a court in Almaty sentences two police officers to three years in prison. Activists call on prosecutors to do far more against police abuse."
+      "title_de": "Straflosigkeit und Ausbau der Überwachung",
+      "description_de": "Kein Sicherheitsbeamter wird für die Tötungen strafrechtlich verfolgt. Stattdessen werden Hunderte Protestierende zu Haftstrafen verurteilt. Die Regierung baut die digitale Überwachungsinfrastruktur weiter aus. Kasachstan wird zum Modellfall für den Einsatz von Internet-Shutdowns und nachträglicher Gesichtserkennung als Repressionsinstrument.",
+      "title_en": "Impunity and expansion of surveillance",
+      "description_en": "No security officer is criminally prosecuted for the killings. Instead, hundreds of protesters are sentenced to prison terms. The government further expands digital surveillance infrastructure. Kazakhstan becomes a model case for the use of internet shutdowns and retroactive facial recognition as instruments of repression."
     }
   ],
   "asm:sources": [
@@ -129,14 +162,14 @@
   ],
   "asm:metadata": {
     "created": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "lastUpdated": "2026-10-09",
     "author": "AIStrikeMap",
     "aiGenerated": false,
     "humanVerified": true,
-    "asm:correctionNote": "Title corrected 2026-10-08: replaced 'AI surveillance' with 'mass arrests', as no available source documents the use of AI or facial recognition to identify the January 2022 protesters. Slug unchanged for permalink stability."
+    "asm:correctionNote": "Corrected 2026-10-09 (project owner decision): the claim that facial recognition was used to identify January-2022 protesters rests solely on Bitter Winter (27.01.2022); Freedom House (FOTN 2021) reports the state distanced itself from facial recognition plans in 2020 and operator Sergek stated in 2021 its system has no facial recognition. Arrest figure changed from \"over 12,000\" to \"around 10,000\" (official figure as of 11 January, cited by FIDH and Human Rights Watch). incidentType \"facial-recognition\" removed, name changed from \"KI-Überwachung\" to \"Kameraüberwachung\". Slug/@id retained for permalink stability."
   },
-  "name_de": "Kasachstan: Internet-Shutdown und Massenfestnahmen bei Januarprotesten 2022",
-  "description_de": "Während der landesweiten Proteste im Januar 2022 schaltet Kasachstan das Internet am 5. Januar landesweit ab und unterbricht es danach bis etwa 11. Januar immer wieder, während Sicherheitskräfte mit tödlicher Gewalt gegen Demonstranten vorgehen. Nach Angaben der Generalstaatsanwaltschaft kommen 238 Menschen ums Leben. Laut Access Now werden rund 12.000 Menschen festgenommen; Human Rights Watch dokumentiert Misshandlung und Folter in Gewahrsam. In den folgenden Strafverfahren stützen sich die Behörden auch auf Überwachungsvideos; dass automatisierte Gesichtserkennung zur Identifizierung von Protestteilnehmern eingesetzt wurde, ist nicht unabhängig belegt.",
+  "name_de": "Kasachstan: Internet-Shutdown und Kameraüberwachung bei Januarprotesten 2022",
+  "description_de": "Während der landesweiten Proteste im Januar 2022 schaltet Kasachstan das Internet für fünf Tage komplett ab, während Sicherheitskräfte mit tödlicher Gewalt gegen Demonstranten vorgehen. Mindestens 238 Menschen werden getötet. Nach Wiederherstellung des Internets werten Sicherheitskräfte Aufnahmen des mit chinesischer Technik (Hikvision/Dahua) aufgebauten Kameranetzes aus, um Protestteilnehmer nachträglich zu identifizieren; nach offiziellen Angaben werden rund 10.000 Menschen festgenommen. Dass dabei Gesichtserkennung eingesetzt wurde, behauptet allein die Zeitschrift Bitter Winter; Freedom House zufolge erklärte der Betreiber Sergek 2021, sein System habe keine Gesichtserkennung.",
   "asm:affectedRights_de": [
     "Recht auf Leben",
     "Versammlungsfreiheit",
@@ -144,8 +177,8 @@
     "Recht auf Privatsphäre",
     "Recht auf faires Verfahren"
   ],
-  "name_en": "Kazakhstan: Internet shutdown and mass arrests during January 2022 protests",
-  "description_en": "During nationwide protests in January 2022, Kazakhstan shuts down the internet nationwide on January 5 and keeps cutting it repeatedly until around January 11, while security forces use lethal force against demonstrators. According to the Prosecutor General's Office, 238 people die. Access Now reports around 12,000 arrests; Human Rights Watch documents ill-treatment and torture in custody. In the subsequent criminal proceedings the authorities also rely on surveillance footage; the use of automated facial recognition to identify protest participants is not independently documented.",
+  "name_en": "Kazakhstan: Internet shutdown and camera surveillance during January 2022 protests",
+  "description_en": "During nationwide protests in January 2022, Kazakhstan shuts down the internet completely for five days while security forces use lethal force against demonstrators. At least 238 people are killed. After the internet is restored, security forces review footage from the camera network built with Chinese technology (Hikvision/Dahua) to identify protest participants after the fact; according to official figures, around 10,000 people are arrested. The claim that facial recognition was used for this rests solely on the magazine Bitter Winter; according to Freedom House, the operator Sergek stated in 2021 that its system has no facial recognition.",
   "asm:affectedRights_en": [
     "right to life",
     "freedom of assembly",

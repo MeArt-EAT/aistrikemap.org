@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/tschechien-ki-sozialhilfe-scoring",
-  "name": "Tschechien: Arbeitsamt lässt Risiko-Scoring für Arbeitsuchende entwickeln - Roma-Diskriminierung bei Behörden belegt",
-  "description": "Das tschechische Arbeitsamt (Úřad práce ČR) ließ 2024 von Forschenden der Masaryk-Universität ein statistisches Modell entwickeln, das registrierte Arbeitsuchende anhand von rund zehn Faktoren - etwa Wohnregion, Alter, frühere Langzeitarbeitslosigkeit, gesundheitliche Beeinträchtigung oder fehlender Führerschein - nach ihrem Risiko langer Arbeitslosigkeit einstuft und die Intensität der Betreuung steuern soll. Ein algorithmisches Scoring von Sozialhilfeanträgen, das Roma nachweislich benachteiligt, ist dagegen nicht dokumentiert; AlgorithmWatchs Bericht 'Automating Society 2020' enthält kein Tschechien-Kapitel. Belegt ist die Diskriminierung von Roma durch Behördenpersonal beim Erstkontakt vor einem Antrag auf Arbeitslosenunterstützung (Feldexperiment 2023). Eine unabhängige Prüfung, ob das Vorhersagemodell Roma benachteiligt, ist öffentlich nicht dokumentiert.",
-  "startDate": "2024-06",
+  "name": "Tschechien: Algorithmisches Scoring im Sozialhilfesystem benachteiligt Roma",
+  "description": "Das tschechische Ministerium für Arbeit und Soziales digitalisiert die Vergabe von Sozialleistungen und führt algorithmische Bewertungssysteme ein, die nach Kritik von NGOs Roma-Gemeinschaften strukturell benachteiligen. Das European Roma Rights Centre und AlgorithmWatch dokumentieren, wie die verwendeten Datenpunkte - darunter Wohnort, Beschäftigungshistorie und Schuldenstand - ethnische Ungleichheiten perpetuieren. Das System reproduziert und verstärkt bestehende soziale Ausgrenzung.",
+  "startDate": "2017",
   "location": {
     "@type": "Place",
     "name": "Prag, Tschechien",
@@ -37,7 +37,8 @@
       "name": "Tschechisches Ministerium für Arbeit und Soziales (MPSV)",
       "type": "government",
       "asm:systems": [
-        "Statistisches Vorhersagemodell zum Arbeitslosigkeitsrisiko von Arbeitsuchenden (Úřad práce ČR, entwickelt von der Masaryk-Universität 2024)"
+        "Algorithmisches Sozialhilfe-Scoring",
+        "Digitales Fallmanagementsystem"
       ],
       "name_de": "Tschechisches Ministerium für Arbeit und Soziales (MPSV)",
       "name_en": "Czech Ministry of Labor and Social Affairs (MPSV)"
@@ -47,94 +48,92 @@
   "asm:verificationLevel": 2,
   "asm:reverseTimeline": [
     {
-      "date": "2010",
+      "date": "2017",
       "phase": "infrastructure",
-      "title": "MPSV vergibt Forschungsprojekt zum statistischen Profiling von Arbeitsuchenden",
-      "description": "Das tschechische Ministerium für Arbeit und Soziales (MPSV) vergab das angewandte Forschungsprojekt 'Profilování a targeting ve službách zaměstnanosti' (Vertrag GK MPSV-01-196/10). Ziel war ein verlässliches statistisches Modell, das die Beschäftigungsfähigkeit von Arbeitsuchenden in jeder Phase der Arbeitslosigkeit bewertet, damit Personal effizienter arbeitet und Instrumente der aktiven Arbeitsmarktpolitik gezielter vergeben werden. Damit legte das Ministerium früh die konzeptionelle Grundlage für statistisches Profiling.",
+      "title": "Digitalisierung des Sozialleistungssystems",
+      "description": "Das tschechische Ministerium für Arbeit und Soziales beginnt mit der umfassenden Digitalisierung der Bearbeitung von Sozialhilfeanträgen. Fallbearbeiter erhalten algorithmische Unterstützungssysteme, die auf Basis von Antragstellerdaten Empfehlungen für die Leistungsvergabe generieren. Die verwendeten Datenpunkte - darunter Wohnort, Beschäftigungshistorie, Schulden und frühere Leistungsinanspruchnahme - reflektieren strukturelle Benachteiligungen.",
       "sources": [
-        "https://starfos.tacr.cz/en/projekty/HC196%2F10"
+        "https://algorithmwatch.org/en/automating-society-2020/"
       ],
-      "title_de": "MPSV vergibt Forschungsprojekt zum statistischen Profiling von Arbeitsuchenden",
-      "description_de": "Das tschechische Ministerium für Arbeit und Soziales (MPSV) vergab das angewandte Forschungsprojekt 'Profilování a targeting ve službách zaměstnanosti' (Vertrag GK MPSV-01-196/10). Ziel war ein verlässliches statistisches Modell, das die Beschäftigungsfähigkeit von Arbeitsuchenden in jeder Phase der Arbeitslosigkeit bewertet, damit Personal effizienter arbeitet und Instrumente der aktiven Arbeitsmarktpolitik gezielter vergeben werden. Damit legte das Ministerium früh die konzeptionelle Grundlage für statistisches Profiling.",
-      "title_en": "MPSV commissions research on statistical profiling of jobseekers",
-      "description_en": "The Czech Ministry of Labour and Social Affairs (MPSV) commissioned the applied research project 'Profilování a targeting ve službách zaměstnanosti' (profiling and targeting in employment services, contract GK MPSV-01-196/10). Its goal was a reliable statistical model to assess jobseekers' employability at any stage of unemployment, so that staff could work more efficiently and active labour market instruments could be targeted better. The ministry thereby laid an early conceptual foundation for statistical profiling."
+      "title_de": "Digitalisierung des Sozialleistungssystems",
+      "description_de": "Das tschechische Ministerium für Arbeit und Soziales beginnt mit der umfassenden Digitalisierung der Bearbeitung von Sozialhilfeanträgen. Fallbearbeiter erhalten algorithmische Unterstützungssysteme, die auf Basis von Antragstellerdaten Empfehlungen für die Leistungsvergabe generieren. Die verwendeten Datenpunkte - darunter Wohnort, Beschäftigungshistorie, Schulden und frühere Leistungsinanspruchnahme - reflektieren strukturelle Benachteiligungen.",
+      "title_en": "Digitalization of the welfare-benefits system",
+      "description_en": "The Czech Ministry of Labor and Social Affairs begins comprehensive digitalization of the processing of welfare benefit applications. Caseworkers receive algorithmic decision-support systems that generate recommendations for benefit allocation based on applicant data. The data points used - including place of residence, employment history, debt, and prior benefit usage - reflect structural disadvantages."
     },
     {
-      "date": "2023-06",
+      "date": "2017-06",
+      "phase": "doctrine",
+      "title": "Gesetz 98/2017: Gemeinden dürfen 'Zonen' ausweisen, in denen Neuzuziehende keinen Wohnzuschlag erhalten",
+      "description": "Am 8. März 2017 beschließt das Parlament das Gesetz Nr. 98/2017 Sb. zur Änderung des Gesetzes über Hilfe in materieller Not; es tritt zum 1. Juni 2017 in Kraft. Gemeinden dürfen seitdem per Allgemeinverfügung Gebiete mit 'erhöhtem Vorkommen sozial unerwünschter Erscheinungen' ausweisen, in denen neu zuziehende Haushalte keinen Wohnzuschlag (doplatek na bydlení) mehr erhalten. Bis November 2018 nutzen oder planen über 80 Gemeinden solche Zonen. Amnesty International, das ERRC, der UN-Ausschuss gegen Rassendiskriminierung (CERD) und ECRI kritisieren, dass die Zonen überwiegend Roma-Viertel treffen. Der Wohnort wird damit gesetzlich zum Ausschlusskriterium in der Sozialhilfe - genau der Proxy, der auch im algorithmischen Scoring wirkt. Das Verfassungsgericht hebt die Regelung im August 2021 als verfassungswidrig auf (Pl. ÚS 40/17, veröffentlicht September 2021).",
+      "sources": [
+        "https://www.errc.org/news/czech-constitutional-court-bans-benefit-free-zones",
+        "https://www.ecoi.net/en/document/1425325.html"
+      ],
+      "title_de": "Gesetz 98/2017: Gemeinden dürfen 'Zonen' ausweisen, in denen Neuzuziehende keinen Wohnzuschlag erhalten",
+      "description_de": "Am 8. März 2017 beschließt das Parlament das Gesetz Nr. 98/2017 Sb. zur Änderung des Gesetzes über Hilfe in materieller Not; es tritt zum 1. Juni 2017 in Kraft. Gemeinden dürfen seitdem per Allgemeinverfügung Gebiete mit 'erhöhtem Vorkommen sozial unerwünschter Erscheinungen' ausweisen, in denen neu zuziehende Haushalte keinen Wohnzuschlag (doplatek na bydlení) mehr erhalten. Bis November 2018 nutzen oder planen über 80 Gemeinden solche Zonen. Amnesty International, das ERRC, der UN-Ausschuss gegen Rassendiskriminierung (CERD) und ECRI kritisieren, dass die Zonen überwiegend Roma-Viertel treffen. Der Wohnort wird damit gesetzlich zum Ausschlusskriterium in der Sozialhilfe - genau der Proxy, der auch im algorithmischen Scoring wirkt. Das Verfassungsgericht hebt die Regelung im August 2021 als verfassungswidrig auf (Pl. ÚS 40/17, veröffentlicht September 2021).",
+      "title_en": "Act 98/2017: municipalities may declare 'zones' where newcomers receive no housing supplement",
+      "description_en": "On 8 March 2017 parliament passes Act No. 98/2017 Coll. amending the Act on Assistance in Material Need; it takes effect on 1 June 2017. Municipalities may from then on designate, by general measure, areas with an 'increased occurrence of socially undesirable phenomena' in which newly arriving households no longer receive the housing supplement (doplatek na bydlení). By November 2018 more than 80 municipalities use or plan such zones. Amnesty International, the ERRC, the UN Committee on the Elimination of Racial Discrimination (CERD) and ECRI criticise that the zones mostly hit Roma neighbourhoods. Place of residence thus becomes a statutory exclusion criterion in welfare - the very proxy that also operates in algorithmic scoring. The Constitutional Court strikes the provision down as unconstitutional in August 2021 (Pl. ÚS 40/17, published September 2021)."
+    },
+    {
+      "date": "2020-05",
       "phase": "event",
-      "title": "Feldexperiment belegt Diskriminierung von Roma durch tschechische Behörden",
-      "description": "Die Ökonomen Štěpán Mikula (Masaryk-Universität) und Josef Montag (Karls-Universität) veröffentlichten als IZA Discussion Paper ein Korrespondenz-Experiment zum Erstkontakt mit Kontaktstellen des tschechischen Arbeitsamts (Úřad práce ČR) vor einem Antrag auf Arbeitslosenunterstützung: Anfragen vermeintlicher Roma-Absender wurden um rund sieben Prozentpunkte seltener beantwortet. Sie fanden erhebliche Diskriminierung sowohl aus ethnischer Ablehnung als auch aus Vorurteilen gegenüber niedrigem sozioökonomischem Status; bei Roma verstärken sich beide Effekte. Die Studie betrifft menschliche Sachbearbeitung, nicht ein algorithmisches System.",
+      "title": "AlgorithmWatch dokumentiert diskriminierendes Scoring",
+      "description": "AlgorithmWatch veröffentlicht im Rahmen seines europäischen Berichts 'Automating Society' Erkenntnisse über das tschechische System. Das European Roma Rights Centre (ERRC) dokumentiert, dass Roma-Haushalte überproportional negative Bewertungen erhalten, obwohl die Daten formal keine ethnischen Merkmale enthalten. Die indirekten Proxies - Wohnort in segregierten Stadtteilen, diskontinuierliche Beschäftigung auf dem informellen Arbeitsmarkt - wirken faktisch diskriminierend.",
       "sources": [
-        "https://docs.iza.org/dp16218.pdf"
+        "https://algorithmwatch.org/en/automating-society-2020/"
       ],
-      "title_de": "Feldexperiment belegt Diskriminierung von Roma durch tschechische Behörden",
-      "description_de": "Die Ökonomen Štěpán Mikula (Masaryk-Universität) und Josef Montag (Karls-Universität) veröffentlichten als IZA Discussion Paper ein Korrespondenz-Experiment zum Erstkontakt mit Kontaktstellen des tschechischen Arbeitsamts (Úřad práce ČR) vor einem Antrag auf Arbeitslosenunterstützung: Anfragen vermeintlicher Roma-Absender wurden um rund sieben Prozentpunkte seltener beantwortet. Sie fanden erhebliche Diskriminierung sowohl aus ethnischer Ablehnung als auch aus Vorurteilen gegenüber niedrigem sozioökonomischem Status; bei Roma verstärken sich beide Effekte. Die Studie betrifft menschliche Sachbearbeitung, nicht ein algorithmisches System.",
-      "title_en": "Field experiment documents discrimination of Roma by Czech officials",
-      "description_en": "Economists Štěpán Mikula (Masaryk University) and Josef Montag (Charles University) published an IZA Discussion Paper on a correspondence experiment testing first contact with branches of the Czech Labour Office (Úřad práce ČR) before an application for unemployment benefits: queries from putatively Roma senders were about seven percentage points less likely to receive a reply. They found substantial discrimination arising both from ethnic animus and from prejudice against low socioeconomic status; for Roma the two effects compound. The study concerns human caseworkers, not an algorithmic system."
+      "title_de": "AlgorithmWatch dokumentiert diskriminierendes Scoring",
+      "description_de": "AlgorithmWatch veröffentlicht im Rahmen seines europäischen Berichts 'Automating Society' Erkenntnisse über das tschechische System. Das European Roma Rights Centre (ERRC) dokumentiert, dass Roma-Haushalte überproportional negative Bewertungen erhalten, obwohl die Daten formal keine ethnischen Merkmale enthalten. Die indirekten Proxies - Wohnort in segregierten Stadtteilen, diskontinuierliche Beschäftigung auf dem informellen Arbeitsmarkt - wirken faktisch diskriminierend.",
+      "title_en": "AlgorithmWatch documents discriminatory scoring",
+      "description_en": "AlgorithmWatch publishes findings on the Czech system as part of its European 'Automating Society' report. The European Roma Rights Centre (ERRC) documents that Roma households receive disproportionately negative ratings, even though the data formally contains no ethnic markers. The indirect proxies - residence in segregated neighborhoods, discontinuous employment in the informal labor market - operate as de facto discrimination."
     },
     {
-      "date": "2024-06 bis 2024-11",
-      "phase": "event",
-      "title": "Arbeitsamt lässt Modell zur Vorhersage des Arbeitslosigkeitsrisikos entwickeln",
-      "description": "Im Auftrag des tschechischen Arbeitsamts (Úřad práce ČR) entwickelten Michal Kvasnička und Štěpán Mikula von der Masaryk-Universität von Juni bis November 2024 ein Modell, das die Wahrscheinlichkeit vorhersagt, dass registrierte Arbeitsuchende eine Stelle finden. Ihr Bericht kommt zu dem Ergebnis, dass sich das individuelle Risiko durch Kombination regionaler und individueller Verwaltungsdaten mit hoher Genauigkeit vorhersagen lässt. Generaldirektor Daniel Krištof kündigte an, das Amt wolle damit erkennen, wer nur wenig Hilfe braucht und wer intensiver betreut werden muss.",
-      "sources": [
-        "https://www.muni.cz/en/research/projects/72527",
-        "https://www.novinky.cz/clanek/ekonomika-vsadime-na-data-urad-prace-upravi-pomoc-nezamestnanym-40475831"
-      ],
-      "title_de": "Arbeitsamt lässt Modell zur Vorhersage des Arbeitslosigkeitsrisikos entwickeln",
-      "description_de": "Im Auftrag des tschechischen Arbeitsamts (Úřad práce ČR) entwickelten Michal Kvasnička und Štěpán Mikula von der Masaryk-Universität von Juni bis November 2024 ein Modell, das die Wahrscheinlichkeit vorhersagt, dass registrierte Arbeitsuchende eine Stelle finden. Ihr Bericht kommt zu dem Ergebnis, dass sich das individuelle Risiko durch Kombination regionaler und individueller Verwaltungsdaten mit hoher Genauigkeit vorhersagen lässt. Generaldirektor Daniel Krištof kündigte an, das Amt wolle damit erkennen, wer nur wenig Hilfe braucht und wer intensiver betreut werden muss.",
-      "title_en": "Labour Office commissions model predicting the risk of unemployment",
-      "description_en": "Commissioned by the Czech Labour Office (Úřad práce ČR), Michal Kvasnička and Štěpán Mikula of Masaryk University developed a model from June to November 2024 that predicts the probability that registered jobseekers find work. Their report concludes that combining regional and individual administrative data allows individual risk to be predicted with high accuracy. Director General Daniel Krištof announced that the office wanted to use it to identify who needs only a little help and who needs closer support."
-    },
-    {
-      "date": "2024-2025",
+      "date": "2022",
       "phase": "consequences",
-      "title": "Einteilung in Risikogruppen nach Region, Alter und Gesundheit - Diskriminierungsfrage offen",
-      "description": "Laut Krištof gewichtet das Modell rund zehn Faktoren, darunter frühere Langzeitarbeitslosigkeit, Wohnregion, Alter, gesundheitliche Beeinträchtigung, fehlender Führerschein oder fehlende E-Mail-Adresse; Arbeitsuchende in der Risikogruppe sollen früher intensive individuelle Betreuung erhalten. Medien thematisierten die Frage, ob eine Einteilung nach solchen Merkmalen diskriminierend wirkt. Eine unabhängige Prüfung der Auswirkungen auf Roma oder andere geschützte Gruppen ist öffentlich nicht dokumentiert.",
-      "sources": [
-        "https://www.novinky.cz/clanek/ekonomika-dlouhodoba-nezamestnanost-trapi-vice-zeny-a-lidi-bez-ridicaku-40506749",
-        "https://www.finance.cz/clanky/553045-rizikove-nerizikove-skupiny-na-uradu-prace/"
-      ],
-      "title_de": "Einteilung in Risikogruppen nach Region, Alter und Gesundheit - Diskriminierungsfrage offen",
-      "description_de": "Laut Krištof gewichtet das Modell rund zehn Faktoren, darunter frühere Langzeitarbeitslosigkeit, Wohnregion, Alter, gesundheitliche Beeinträchtigung, fehlender Führerschein oder fehlende E-Mail-Adresse; Arbeitsuchende in der Risikogruppe sollen früher intensive individuelle Betreuung erhalten. Medien thematisierten die Frage, ob eine Einteilung nach solchen Merkmalen diskriminierend wirkt. Eine unabhängige Prüfung der Auswirkungen auf Roma oder andere geschützte Gruppen ist öffentlich nicht dokumentiert.",
-      "title_en": "Sorting into risk groups by region, age and health - discrimination question open",
-      "description_en": "According to Krištof the model weighs around ten factors, including previous long-term unemployment, region of residence, age, health disability, lack of a driving licence or of an email address; jobseekers in the risk group are to receive intensive individual support earlier. Media raised the question of whether sorting people by such characteristics is discriminatory. No independent assessment of the effects on Roma or other protected groups is publicly documented."
+      "title": "NGO-Kritik und mangelnde Transparenz",
+      "description": "Das ERRC und tschechische Bürgerrechtsorganisationen fordern Transparenz über die Algorithmen und eine unabhängige Diskriminierungsprüfung. Das Ministerium verweigert Auskunft über die genaue Funktionsweise des Systems und beruft sich auf Datenschutz und Geschäftsgeheimnisse. Eine parlamentarische Anfrage der tschechischen Piratenpartei zu den Auswirkungen auf Roma bleibt weitgehend unbeantwortet.",
+      "sources": [],
+      "title_de": "NGO-Kritik und mangelnde Transparenz",
+      "description_de": "Das ERRC und tschechische Bürgerrechtsorganisationen fordern Transparenz über die Algorithmen und eine unabhängige Diskriminierungsprüfung. Das Ministerium verweigert Auskunft über die genaue Funktionsweise des Systems und beruft sich auf Datenschutz und Geschäftsgeheimnisse. Eine parlamentarische Anfrage der tschechischen Piratenpartei zu den Auswirkungen auf Roma bleibt weitgehend unbeantwortet.",
+      "title_en": "NGO criticism and lack of transparency",
+      "description_en": "The ERRC and Czech civil rights organizations call for transparency about the algorithms and an independent discrimination assessment. The ministry refuses to disclose how the system actually works, citing data protection and trade secrets. A parliamentary inquiry by the Czech Pirate Party into the effects on Roma remains largely unanswered."
+    },
+    {
+      "date": "2023",
+      "phase": "consequences",
+      "title": "Europäischer Vergleichskontext und ausbleibende Reformen",
+      "description": "Im Kontext der EU-KI-Verordnung, die Hochrisiko-KI-Systeme in der Sozialverwaltung besonderen Transparenzpflichten unterwirft, geraten algorithmische Sozialhilfesysteme in ganz Europa unter Druck. In Tschechien bleiben konkrete Reformen trotz NGO-Druck aus. Experten warnen, dass das System nach dem Vorbild des niederländischen SyRI-Skandals oder des britischen Universal Credit zu einer systematischen Diskriminierung marginalisierter Gruppen beiträgt.",
+      "sources": [],
+      "title_de": "Europäischer Vergleichskontext und ausbleibende Reformen",
+      "description_de": "Im Kontext der EU-KI-Verordnung, die Hochrisiko-KI-Systeme in der Sozialverwaltung besonderen Transparenzpflichten unterwirft, geraten algorithmische Sozialhilfesysteme in ganz Europa unter Druck. In Tschechien bleiben konkrete Reformen trotz NGO-Druck aus. Experten warnen, dass das System nach dem Vorbild des niederländischen SyRI-Skandals oder des britischen Universal Credit zu einer systematischen Diskriminierung marginalisierter Gruppen beiträgt.",
+      "title_en": "European comparative context and stalled reforms",
+      "description_en": "In the context of the EU AI Regulation, which subjects high-risk AI systems in social administration to special transparency requirements, algorithmic welfare systems across Europe come under pressure. In the Czech Republic, concrete reforms fail to materialize despite NGO pressure. Experts warn that, following the model of the Dutch SyRI scandal or the UK's Universal Credit, the system contributes to systematic discrimination of marginalized groups."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://docs.iza.org/dp16218.pdf",
-      "title": "Roma and Bureaucrats: A Field Experiment on Ethnic and Socioeconomic Discrimination",
-      "publisher": "IZA Institute of Labor Economics",
-      "date": "2023-06",
+      "url": "https://algorithmwatch.org/en/automating-society-2020/",
+      "title": "Automating Society Report 2020",
+      "publisher": "AlgorithmWatch",
+      "date": "2020-05",
       "type": "research-paper",
-      "asm:linkHealth": "unverified",
-      "title_de": "Roma and Bureaucrats: A Field Experiment on Ethnic and Socioeconomic Discrimination",
-      "title_en": "Roma and Bureaucrats: A Field Experiment on Ethnic and Socioeconomic Discrimination"
-    },
-    {
-      "url": "https://www.novinky.cz/clanek/ekonomika-vsadime-na-data-urad-prace-upravi-pomoc-nezamestnanym-40475831",
-      "title": "Vsadíme na data. Úřad práce upraví pomoc nezaměstnaným",
-      "publisher": "Novinky.cz",
-      "date": "2024",
-      "type": "news-article",
-      "asm:linkHealth": "unverified",
-      "title_de": "Vsadíme na data. Úřad práce upraví pomoc nezaměstnaným",
-      "title_en": "Vsadíme na data. Úřad práce upraví pomoc nezaměstnaným"
+      "asm:linkHealth": "ok",
+      "title_de": "Automating Society Report 2020",
+      "title_en": "Automating Society Report 2020"
     }
   ],
   "asm:metadata": {
     "created": "2026-04-03",
-    "lastUpdated": "2026-04-03",
+    "lastUpdated": "2026-10-09",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true,
-    "asm:correctionNote": "Title corrected 2026-10-08: no algorithmic welfare-benefit scoring shown to disadvantage Roma is documented (AlgorithmWatch's Automating Society 2020 has no Czech chapter); the title now reflects the documented Labour Office jobseeker risk-prediction model and documented discrimination of Roma by officials. Slug unchanged for permalink stability."
+    "humanVerified": false,
+    "asm:retractionNote": "Retracted 2026-10-09 by project owner decision after two independent research passes (see asm:retractionReason). File, slug and @id retained for permalink stability; the map hides retracted incidents by default."
   },
-  "name_de": "Tschechien: Arbeitsamt lässt Risiko-Scoring für Arbeitsuchende entwickeln - Roma-Diskriminierung bei Behörden belegt",
-  "name_en": "Czech Republic: Labour Office develops risk scoring for jobseekers - discrimination of Roma by officials documented",
-  "description_de": "Das tschechische Arbeitsamt (Úřad práce ČR) ließ 2024 von Forschenden der Masaryk-Universität ein statistisches Modell entwickeln, das registrierte Arbeitsuchende anhand von rund zehn Faktoren - etwa Wohnregion, Alter, frühere Langzeitarbeitslosigkeit, gesundheitliche Beeinträchtigung oder fehlender Führerschein - nach ihrem Risiko langer Arbeitslosigkeit einstuft und die Intensität der Betreuung steuern soll. Ein algorithmisches Scoring von Sozialhilfeanträgen, das Roma nachweislich benachteiligt, ist dagegen nicht dokumentiert; AlgorithmWatchs Bericht 'Automating Society 2020' enthält kein Tschechien-Kapitel. Belegt ist die Diskriminierung von Roma durch Behördenpersonal beim Erstkontakt vor einem Antrag auf Arbeitslosenunterstützung (Feldexperiment 2023). Eine unabhängige Prüfung, ob das Vorhersagemodell Roma benachteiligt, ist öffentlich nicht dokumentiert.",
-  "description_en": "In 2024 the Czech Labour Office (Úřad práce ČR) had researchers at Masaryk University develop a statistical model that ranks registered jobseekers by their risk of long-term unemployment using around ten factors - such as region of residence, age, previous long-term unemployment, health disability or lack of a driving licence - and is meant to steer how intensively they are supported. By contrast, no algorithmic scoring of welfare applications shown to disadvantage Roma is documented; AlgorithmWatch's 'Automating Society 2020' report has no Czech chapter. What is documented is discrimination of Roma by officials at first contact before an application for unemployment benefits (field experiment, 2023). No independent assessment of whether the prediction model disadvantages Roma is publicly documented.",
+  "name_de": "Tschechien: Algorithmisches Scoring im Sozialhilfesystem benachteiligt Roma",
+  "name_en": "Czech Republic: Algorithmic scoring in the welfare system disadvantages Roma",
+  "description_de": "Das tschechische Ministerium für Arbeit und Soziales digitalisiert die Vergabe von Sozialleistungen und führt algorithmische Bewertungssysteme ein, die nach Kritik von NGOs Roma-Gemeinschaften strukturell benachteiligen. Das European Roma Rights Centre und AlgorithmWatch dokumentieren, wie die verwendeten Datenpunkte - darunter Wohnort, Beschäftigungshistorie und Schuldenstand - ethnische Ungleichheiten perpetuieren. Das System reproduziert und verstärkt bestehende soziale Ausgrenzung.",
+  "description_en": "The Czech Ministry of Labor and Social Affairs is digitalizing the allocation of welfare benefits and introducing algorithmic assessment systems that, according to NGO criticism, structurally disadvantage Roma communities. The European Roma Rights Centre and AlgorithmWatch document how the data points used - including place of residence, employment history, and debt - perpetuate ethnic inequalities. The system reproduces and reinforces existing social exclusion.",
   "asm:affectedRights_de": [
     "Schutz vor Diskriminierung",
     "Recht auf soziale Absicherung",
@@ -144,5 +143,10 @@
     "Protection from discrimination",
     "Right to social security",
     "Right to equal treatment"
-  ]
+  ],
+  "asm:retracted": true,
+  "asm:retractedDate": "2026-10-09",
+  "asm:retractionReason": "Zurückgezogen am 2026-10-09 (Entscheidung des Projekteigners): Die Kernbehauptung, das tschechische Ministerium für Arbeit und Soziales (MPSV) setze ein algorithmisches Sozialhilfe-Scoring ein, das Roma benachteiligt, ist nicht belegbar. Die einzige angegebene Quelle, der Automating Society Report 2020 von AlgorithmWatch, enthält kein Tschechien-Kapitel (16 Länder, ohne CZ) und ist zudem falsch datiert (erschienen 2020-10-28, nicht 2020-05). Zwei unabhängige Recherchen (2026-10-08 und 2026-10-09) fanden weder eine ERRC- noch eine andere Dokumentation eines solchen Systems. Belegt ist nur regelbasierte, nicht KI-gestützte Wohnort-Diskriminierung (Gesetz 98/2017 Sb., sogenannte bezdoplatkové zóny, 2021 vom Verfassungsgericht aufgehoben) sowie menschliche Diskriminierung durch Jobcenter-Personal (Feldexperiment Masaryk-Universität 2022).",
+  "asm:retractionReason_de": "Zurückgezogen am 2026-10-09 (Entscheidung des Projekteigners): Die Kernbehauptung, das tschechische Ministerium für Arbeit und Soziales (MPSV) setze ein algorithmisches Sozialhilfe-Scoring ein, das Roma benachteiligt, ist nicht belegbar. Die einzige angegebene Quelle, der Automating Society Report 2020 von AlgorithmWatch, enthält kein Tschechien-Kapitel (16 Länder, ohne CZ) und ist zudem falsch datiert (erschienen 2020-10-28, nicht 2020-05). Zwei unabhängige Recherchen (2026-10-08 und 2026-10-09) fanden weder eine ERRC- noch eine andere Dokumentation eines solchen Systems. Belegt ist nur regelbasierte, nicht KI-gestützte Wohnort-Diskriminierung (Gesetz 98/2017 Sb., sogenannte bezdoplatkové zóny, 2021 vom Verfassungsgericht aufgehoben) sowie menschliche Diskriminierung durch Jobcenter-Personal (Feldexperiment Masaryk-Universität 2022).",
+  "asm:retractionReason_en": "Retracted on 2026-10-09 (project owner decision): The core claim that the Czech Ministry of Labour and Social Affairs (MPSV) operates an algorithmic welfare-scoring system that disadvantages Roma cannot be substantiated. The only cited source, AlgorithmWatch's Automating Society Report 2020, contains no Czech chapter (16 countries, CZ not among them) and is misdated (published 2020-10-28, not 2020-05). Two independent research passes (2026-10-08 and 2026-10-09) found no ERRC or other documentation of such a system. What is documented is rule-based, non-AI residence-based discrimination (Act 98/2017 Coll., the so-called benefit-free zones, struck down by the Constitutional Court in 2021) and human discrimination by job-centre staff (Masaryk University field experiment, 2022)."
 }

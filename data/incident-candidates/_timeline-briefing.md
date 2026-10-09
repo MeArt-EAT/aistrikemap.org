@@ -19,20 +19,28 @@ nicht isoliert, sondern als Kausalkette gezeigt.
 Manche Faelle brauchen 4 Eintraege (1 pro Phase), manche 5-6 (z.B. 2
 consequences). Mindestens 4, hoechstens 6.
 
-### Phasen-Reihenfolge (vom Validator geprüft)
+## Phasen-Modell (Schema v1.1, Stand 2026-10-08) - was der Validator prueft
 
-- **Mindestens 1 `event`.** Ein mehrstufiger Vorfall (Festnahme + Urteil,
-  Leak + Bußgeld) darf mehrere `event`-Einträge haben.
-- **Vor dem ersten `event`** stehen nur `infrastructure`/`doctrine` - eine
-  Folge ohne Vorfall gibt es nicht.
-- **Nach dem letzten `event`** stehen nur `consequences`. Was nach dem Vorfall
-  passiert (Behördenbericht, Urteil, neues Gesetz als Reaktion, Wiederzulassung,
-  Debatte), ist eine Folge, keine Doktrin - auch wenn es ein Gesetz ist.
-- **Zwischen zwei `event`-Einträgen** ist alles erlaubt (z.B. eine Doktrin, die
-  erst die zweite Stufe ermöglichte).
-- `infrastructure` und `doctrine` bilden einen gemeinsamen Vorbedingungs-Block
-  ohne feste Reihenfolge untereinander: Ist das Gesetz älter als das System,
-  steht die `doctrine` zuerst. Es gilt allein die Chronologie.
+- **Alle vier Phasen kommen vor.** Mindestens 1 infrastructure UND mindestens
+  1 doctrine sind Pflicht (fehlt eine der beiden, ist das seit 2026-10-09 ein
+  ERROR). Mindestens 1 event, mindestens 1 consequences.
+- **Vorgeschichte in beliebiger Reihenfolge.** infrastructure und doctrine
+  ordnen sich NUR nach Datum: Eine Doktrin kann aelter sein als die
+  Infrastruktur (EU-Maschinenrichtlinie 2006 vor Roboter-Hochlauf 2011) oder
+  juenger (Dekret 2021 fuer Kameras von 2018). Beides ist korrekt - nicht die
+  Phase umtaggen, sondern chronologisch sortieren.
+- **Mehrere event-Eintraege sind erlaubt**, wenn das Ereignis selbst mehrstufig
+  ist (Festnahme + Urteil, Untersuchung + Bussgeld, erste Welle + zweite Welle).
+  Nicht mehr als 3. Ein Vorlaeufer-Ereignis, das den eigentlichen Vorfall nur
+  ermoeglicht hat, ist doctrine oder infrastructure; ein Nachspiel ist
+  consequences.
+- **Keine Verschraenkung.** Nach dem ersten event darf KEIN infrastructure/
+  doctrine mehr folgen, nach der ersten consequences KEIN event mehr. Wenn eine
+  Doktrin (Gesetz, Weisung) zeitlich zwischen zwei Ereignis-Stufen faellt, dann
+  war sie nicht die Vorbedingung des Vorfalls - entweder die aeltere Rechtsgrund-
+  lage als doctrine recherchieren (die galt schon vor dem Ereignis) oder den
+  Eintrag als consequences (Reaktion) bzw. event (Teil des Vorfalls) umtaggen.
+- **Chronologie strikt aufsteigend** ueber die gesamte Liste (siehe unten).
 
 ## Exakte Feld-Struktur pro Eintrag
 
