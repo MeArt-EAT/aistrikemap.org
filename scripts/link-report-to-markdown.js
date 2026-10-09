@@ -53,7 +53,20 @@ dead.forEach(function (d) {
   const h = hostOf(d.url);
   byHost.set(h, (byHost.get(h) || 0) + 1);
 });
-const statuses = Array.from(byStatus.keys()).sort(function (a, b) { return byStatus.get(b).length - byStatus.get(a).length; });
+// Most actionable first: gone (404/410), unreachable hosts, server errors;
+// bot-wall answers (401/403/406/429) last - they are usually live pages
+// that block the CI runner and would otherwise fill the whole issue.
+const BOT_WALL = { '401': 1, '403': 1, '406': 1, '429': 1 };
+function rank(k) {
+  if (k === '404' || k === '410') return 0;
+  if (k === 'dns' || k === 'tls' || k === 'connection' || k === 'error') return 1;
+  if (/^5\d\d$/.test(k) || k === 'timeout') return 2;
+  if (BOT_WALL[k]) return 4;
+  return 3;
+}
+const statuses = Array.from(byStatus.keys()).sort(function (a, b) {
+  return rank(a) - rank(b) || byStatus.get(b).length - byStatus.get(a).length;
+});
 
 const head = [];
 head.push('## Link Check V2 — ' + (r.generated || new Date().toISOString()).slice(0, 10));
