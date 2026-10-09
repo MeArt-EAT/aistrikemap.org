@@ -5,12 +5,12 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-lensa-ki-erzeugt-nacktbilder-aus-kinderfotos-wired-recherche-2022",
-  "name": "USA: Lensa-KI erzeugt Nacktbilder aus Kinderfotos (WIRED-Recherche)",
-  "name_de": "USA: Lensa-KI erzeugt Nacktbilder aus Kinderfotos (WIRED-Recherche)",
-  "name_en": "USA: Lensa AI generates nudes from childhood photos (WIRED report)",
-  "description": "Die UCLA-Forscherin Olivia Snow dokumentierte für WIRED, dass die virale KI-Avatar-App Lensa ('Magic Avatars') sexualisierte und nackte Bilder erzeugte - selbst als sie ausschließlich Kinderfotos von sich hochlud, lieferte die App nackte Darstellungen mit kindlichem Gesicht und erwachsenem Körper. Snow warnte, die zugrundeliegende Technik (Stable Diffusion) könne für nicht einvernehmliche pornografische Bilder missbraucht werden.",
-  "description_de": "Die UCLA-Forscherin Olivia Snow dokumentierte für WIRED, dass die virale KI-Avatar-App Lensa ('Magic Avatars') sexualisierte und nackte Bilder erzeugte - selbst als sie ausschließlich Kinderfotos von sich hochlud, lieferte die App nackte Darstellungen mit kindlichem Gesicht und erwachsenem Körper. Snow warnte, die zugrundeliegende Technik (Stable Diffusion) könne für nicht einvernehmliche pornografische Bilder missbraucht werden.",
-  "description_en": "UCLA researcher Olivia Snow documented for WIRED that the viral AI avatar app Lensa ('Magic Avatars') produced sexualised and nude images - even when she uploaded only childhood photos of herself, the app returned nude renderings with a child's face and an adult body. Snow warned that the underlying technology (Stable Diffusion) could be misused to create non-consensual pornographic imagery.",
+  "name": "USA: Lensa-KI erzeugt Nacktbilder aus Kindheitsfotos einer Erwachsenen (WIRED-Selbsttest)",
+  "name_de": "USA: Lensa-KI erzeugt Nacktbilder aus Kindheitsfotos einer Erwachsenen (WIRED-Selbsttest)",
+  "name_en": "USA: Lensa AI generates nudes from an adult author's childhood photos (WIRED self-test)",
+  "description": "Die UCLA-Forscherin Olivia Snow dokumentierte in einem Beitrag für WIRED, dass die virale KI-Avatar-App Lensa ('Magic Avatars') sexualisierte und nackte Bilder erzeugte - selbst als sie ausschließlich zehn Fotos von sich als Kind hochlud, lieferte die App nackte Darstellungen mit kindlichem Gesicht und erwachsenem Körper. Snow kritisierte das weitgehende Fehlen von Inhaltsmoderation und warnte, KI-Technik wie die von Lensa könne für nicht einvernehmliche pornografische Bilder missbraucht werden.",
+  "description_de": "Die UCLA-Forscherin Olivia Snow dokumentierte in einem Beitrag für WIRED, dass die virale KI-Avatar-App Lensa ('Magic Avatars') sexualisierte und nackte Bilder erzeugte - selbst als sie ausschließlich zehn Fotos von sich als Kind hochlud, lieferte die App nackte Darstellungen mit kindlichem Gesicht und erwachsenem Körper. Snow kritisierte das weitgehende Fehlen von Inhaltsmoderation und warnte, KI-Technik wie die von Lensa könne für nicht einvernehmliche pornografische Bilder missbraucht werden.",
+  "description_en": "UCLA researcher Olivia Snow documented in an essay for WIRED that the viral AI avatar app Lensa ('Magic Avatars') produced sexualised and nude images - even when she uploaded only ten photos of herself as a child, the app returned nude renderings with a child's face and an adult body. Snow criticised the app's apparent lack of content moderation and warned that AI technology like Lensa's could be misused to create non-consensual pornographic imagery.",
   "startDate": "2022-12",
   "location": {
     "@type": "Place",
@@ -75,53 +75,57 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2022-08",
+      "date": "2022-08-22",
       "phase": "infrastructure",
-      "title": "Stable Diffusion veröffentlicht - trainiert auf dem ungefilterten LAION-5B-Datensatz",
-      "description": "Das offene Bildgenerierungs-Modell Stable Diffusion wurde veröffentlicht. Es wurde auf LAION-5B trainiert, einem riesigen, aus dem Web gescrapten Datensatz, der auch große Mengen sexualisierter und nicht einvernehmlicher Bilder enthielt. Diese ungefilterte Trainingsbasis ermöglichte es, mit wenigen Eingabefotos realistische und sexualisierte Darstellungen zu erzeugen.",
-      "title_de": "Stable Diffusion veröffentlicht - trainiert auf dem ungefilterten LAION-5B-Datensatz",
-      "description_de": "Das offene Bildgenerierungs-Modell Stable Diffusion wurde veröffentlicht. Es wurde auf LAION-5B trainiert, einem riesigen, aus dem Web gescrapten Datensatz, der auch große Mengen sexualisierter und nicht einvernehmlicher Bilder enthielt. Diese ungefilterte Trainingsbasis ermöglichte es, mit wenigen Eingabefotos realistische und sexualisierte Darstellungen zu erzeugen.",
-      "title_en": "Stable Diffusion released - trained on the unfiltered LAION-5B dataset",
-      "description_en": "The open image-generation model Stable Diffusion was released. It was trained on LAION-5B, a vast web-scraped dataset that also contained large amounts of sexualised and non-consensual imagery. This unfiltered training base made it possible to generate realistic and sexualised renderings from just a few input photos.",
-      "sources": []
+      "title": "Stable Diffusion veröffentlicht - trainiert auf Teilmengen des Web-Datensatzes LAION-5B",
+      "description": "Am 22. August 2022 wurde das offene Bildgenerierungs-Modell Stable Diffusion öffentlich freigegeben. Es wurde auf Teilmengen von LAION-5B trainiert, einem aus Common-Crawl-Webdaten abgeleiteten Datensatz mit rund 5,85 Milliarden Bild-Text-Paaren, zu dem auch NSFW-Erkennungswerte veröffentlicht wurden. Die App Lensa nutzte das Modell später für ihre Funktion 'Magic Avatars' (siehe nächster Eintrag).",
+      "title_de": "Stable Diffusion veröffentlicht - trainiert auf Teilmengen des Web-Datensatzes LAION-5B",
+      "description_de": "Am 22. August 2022 wurde das offene Bildgenerierungs-Modell Stable Diffusion öffentlich freigegeben. Es wurde auf Teilmengen von LAION-5B trainiert, einem aus Common-Crawl-Webdaten abgeleiteten Datensatz mit rund 5,85 Milliarden Bild-Text-Paaren, zu dem auch NSFW-Erkennungswerte veröffentlicht wurden. Die App Lensa nutzte das Modell später für ihre Funktion 'Magic Avatars' (siehe nächster Eintrag).",
+      "title_en": "Stable Diffusion released - trained on subsets of the web-scraped LAION-5B dataset",
+      "description_en": "On 22 August 2022 the open image-generation model Stable Diffusion was publicly released. It was trained on subsets of LAION-5B, a dataset of about 5.85 billion image-text pairs derived from Common Crawl web data, for which NSFW detection scores were published as well. The app Lensa later used the model for its 'Magic Avatars' feature (see next entry).",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stable_Diffusion",
+        "https://proceedings.neurips.cc/paper_files/paper/2022/hash/a1859debfb3b59d094f3504d5ebb6c25-Abstract.html"
+      ]
     },
     {
       "date": "2022-11",
       "phase": "doctrine",
       "title": "Prisma Labs bringt 'Magic Avatars' in Lensa - viraler App-Store-Hit",
-      "description": "Prisma Labs integrierte die auf Stable Diffusion basierende Funktion 'Magic Avatars' in seine Foto-App Lensa. Nutzer:innen luden 10-20 Selfies hoch und erhielten gegen Gebühr KI-generierte Porträts. Die Funktion ging Ende November/Anfang Dezember 2022 viral und kletterte an die Spitze der App-Store-Charts - ohne wirksame Schutzmechanismen gegen sexualisierte oder missbräuchliche Ausgaben.",
+      "description": "Prisma Labs integrierte die auf dem offenen Modell Stable Diffusion basierende Funktion 'Magic Avatars' in seine Foto-App Lensa. Nutzer:innen luden 10-20 Selfies hoch und erhielten gegen Gebühr KI-generierte Porträts. Die Funktion startete Ende November 2022 und stand Anfang Dezember auf Platz 1 der Kategorie Foto und Video im iOS App Store.",
       "title_de": "Prisma Labs bringt 'Magic Avatars' in Lensa - viraler App-Store-Hit",
-      "description_de": "Prisma Labs integrierte die auf Stable Diffusion basierende Funktion 'Magic Avatars' in seine Foto-App Lensa. Nutzer:innen luden 10-20 Selfies hoch und erhielten gegen Gebühr KI-generierte Porträts. Die Funktion ging Ende November/Anfang Dezember 2022 viral und kletterte an die Spitze der App-Store-Charts - ohne wirksame Schutzmechanismen gegen sexualisierte oder missbräuchliche Ausgaben.",
+      "description_de": "Prisma Labs integrierte die auf dem offenen Modell Stable Diffusion basierende Funktion 'Magic Avatars' in seine Foto-App Lensa. Nutzer:innen luden 10-20 Selfies hoch und erhielten gegen Gebühr KI-generierte Porträts. Die Funktion startete Ende November 2022 und stand Anfang Dezember auf Platz 1 der Kategorie Foto und Video im iOS App Store.",
       "title_en": "Prisma Labs ships 'Magic Avatars' in Lensa - viral App Store hit",
-      "description_en": "Prisma Labs integrated the Stable Diffusion-based 'Magic Avatars' feature into its photo app Lensa. Users uploaded 10-20 selfies and, for a fee, received AI-generated portraits. The feature went viral in late November/early December 2022 and climbed to the top of the App Store charts - without effective safeguards against sexualised or abusive outputs.",
+      "description_en": "Prisma Labs integrated the 'Magic Avatars' feature, based on the open Stable Diffusion model, into its photo app Lensa. Users uploaded 10-20 selfies and, for a fee, received AI-generated portraits. The feature launched in late November 2022 and by early December was No. 1 in the iOS App Store's Photo and Video category.",
       "sources": [
         "https://techcrunch.com/2022/12/01/lensa-ai-climbs-the-app-store-charts-as-its-magic-avatars-go-viral/"
       ]
     },
     {
-      "date": "2022-12-06",
+      "date": "2022-12",
       "phase": "event",
-      "title": "WIRED-Recherche: Lensa erzeugt Nacktbilder aus Kinderfotos",
-      "description": "Die UCLA-Forscherin Olivia Snow dokumentierte für WIRED, dass Lensa sexualisierte und nackte Bilder lieferte - selbst als sie ausschließlich 10 Kinderfotos von sich hochlud. Die App erzeugte nackte Darstellungen mit kindlichem Gesicht und erwachsenem Körper, obwohl keine suggestiven Fotos hochgeladen worden waren. Snow warnte, die Technik könne für nicht einvernehmliche und kinderpornografische Bilder missbraucht werden.",
-      "title_de": "WIRED-Recherche: Lensa erzeugt Nacktbilder aus Kinderfotos",
-      "description_de": "Die UCLA-Forscherin Olivia Snow dokumentierte für WIRED, dass Lensa sexualisierte und nackte Bilder lieferte - selbst als sie ausschließlich 10 Kinderfotos von sich hochlud. Die App erzeugte nackte Darstellungen mit kindlichem Gesicht und erwachsenem Körper, obwohl keine suggestiven Fotos hochgeladen worden waren. Snow warnte, die Technik könne für nicht einvernehmliche und kinderpornografische Bilder missbraucht werden.",
-      "title_en": "WIRED report: Lensa generates nudes from childhood photos",
-      "description_en": "UCLA researcher Olivia Snow documented for WIRED that Lensa produced sexualised and nude images - even when she uploaded only 10 childhood photos of herself. The app returned nude renderings with a child's face and an adult body, despite no suggestive photos being uploaded. Snow warned the technology could be misused to create non-consensual and child-sexual-abuse imagery.",
+      "title": "WIRED-Selbsttest: Lensa erzeugt Nacktbilder aus Kinderfotos der Autorin",
+      "description": "Die UCLA-Forscherin Olivia Snow beschrieb in WIRED, dass Lensa sexualisierte und nackte Bilder lieferte - selbst als sie ausschließlich zehn Fotos von sich als Kind hochlud (die Nutzungsbedingungen der App schließen Nacktbilder und Fotos von Minderjährigen aus). Die App erzeugte nackte Darstellungen mit kindlichem Gesicht und erwachsenem Körper; auch aus Porträtfotos von sich als Erwachsene erhielt sie nach eigenen Angaben mehrere Nacktbilder. Snow kritisierte das weitgehende Fehlen von Inhaltsmoderation und warnte, solche Technik könne für nicht einvernehmliche pornografische Bilder missbraucht werden.",
+      "title_de": "WIRED-Selbsttest: Lensa erzeugt Nacktbilder aus Kinderfotos der Autorin",
+      "description_de": "Die UCLA-Forscherin Olivia Snow beschrieb in WIRED, dass Lensa sexualisierte und nackte Bilder lieferte - selbst als sie ausschließlich zehn Fotos von sich als Kind hochlud (die Nutzungsbedingungen der App schließen Nacktbilder und Fotos von Minderjährigen aus). Die App erzeugte nackte Darstellungen mit kindlichem Gesicht und erwachsenem Körper; auch aus Porträtfotos von sich als Erwachsene erhielt sie nach eigenen Angaben mehrere Nacktbilder. Snow kritisierte das weitgehende Fehlen von Inhaltsmoderation und warnte, solche Technik könne für nicht einvernehmliche pornografische Bilder missbraucht werden.",
+      "title_en": "WIRED self-test: Lensa generates nudes from the author's childhood photos",
+      "description_en": "UCLA researcher Olivia Snow described in WIRED that Lensa produced sexualised and nude images - even when she uploaded only ten photos of herself as a child (the app's terms of service exclude nudes and photos of minors). The app returned nude renderings with a child's face and an adult body; by her own account she also received several nude results from portrait photos of herself as an adult. Snow criticised the apparent lack of content moderation and warned that such technology could be misused to create non-consensual pornographic imagery.",
       "sources": [
         "https://www.wired.com/story/lensa-artificial-intelligence-csem/"
       ]
     },
     {
-      "date": "2022-12-07",
+      "date": "2022-12-12",
       "phase": "consequences",
-      "title": "Breite Kritik an Lensas Moderation und an KI-Bildgeneratoren",
-      "description": "Journalistinnen bei WIRED, MIT Technology Review, TechCrunch und Insider belegten, dass sich mit Lensa nahezu realistische adoleszente, sexualisierte und nicht einvernehmliche pornografische Bilder erzeugen ließen. Die Berichte lösten eine breite Debatte über fehlende Schutzmechanismen, Kindersicherheit und die Verantwortung von Anbietern KI-gestützter Bildgeneratoren aus.",
-      "title_de": "Breite Kritik an Lensas Moderation und an KI-Bildgeneratoren",
-      "description_de": "Journalistinnen bei WIRED, MIT Technology Review, TechCrunch und Insider belegten, dass sich mit Lensa nahezu realistische adoleszente, sexualisierte und nicht einvernehmliche pornografische Bilder erzeugen ließen. Die Berichte lösten eine breite Debatte über fehlende Schutzmechanismen, Kindersicherheit und die Verantwortung von Anbietern KI-gestützter Bildgeneratoren aus.",
-      "title_en": "Broad criticism of Lensa's moderation and of AI image generators",
-      "description_en": "Female journalists at WIRED, MIT Technology Review, TechCrunch and Insider showed that Lensa could produce near-realistic adolescent, sexualised and non-consensual pornographic images. The reports triggered a wide debate over missing safeguards, child safety and the responsibility of providers of AI-powered image generators.",
+      "title": "Weitere Berichte über sexualisierte Lensa-Avatare - Prisma Labs kündigt Filter an",
+      "description": "Auch andere Medien dokumentierten sexualisierte Ergebnisse: Die Autorin von MIT Technology Review erhielt nach eigenen Angaben unter 100 erzeugten Avataren 16 oben ohne und 14 weitere in sehr knapper Kleidung und sexualisierten Posen. Prisma-Chef Andrey Usoltsev hatte bereits am 6. Dezember gegenüber TechCrunch erklärt, solche Ergebnisse entstünden nur bei gezielter Provokation der KI und verstießen gegen die Nutzungsbedingungen; das Unternehmen arbeite daran, die versehentliche Erzeugung von Nacktbildern zu verhindern. Usoltsev verwies zudem auf das zugrunde liegende Stable-Diffusion-Modell, das auf ungefilterten Internetdaten trainiert worden sei.",
+      "title_de": "Weitere Berichte über sexualisierte Lensa-Avatare - Prisma Labs kündigt Filter an",
+      "description_de": "Auch andere Medien dokumentierten sexualisierte Ergebnisse: Die Autorin von MIT Technology Review erhielt nach eigenen Angaben unter 100 erzeugten Avataren 16 oben ohne und 14 weitere in sehr knapper Kleidung und sexualisierten Posen. Prisma-Chef Andrey Usoltsev hatte bereits am 6. Dezember gegenüber TechCrunch erklärt, solche Ergebnisse entstünden nur bei gezielter Provokation der KI und verstießen gegen die Nutzungsbedingungen; das Unternehmen arbeite daran, die versehentliche Erzeugung von Nacktbildern zu verhindern. Usoltsev verwies zudem auf das zugrunde liegende Stable-Diffusion-Modell, das auf ungefilterten Internetdaten trainiert worden sei.",
+      "title_en": "More reports of sexualised Lensa avatars - Prisma Labs announces filters",
+      "description_en": "Other outlets also documented sexualised results: the MIT Technology Review author said that, out of 100 avatars generated, 16 were topless and another 14 showed her in extremely skimpy clothes and overtly sexualised poses. Prisma CEO Andrey Usoltsev had already told TechCrunch on 6 December that such results only occur when the AI is deliberately provoked and breach the terms of use; the company said it was working to prevent the accidental generation of nudes. Usoltsev also pointed to the underlying Stable Diffusion model, which he said had been trained on unfiltered internet data.",
       "sources": [
-        "https://petapixel.com/2022/12/08/users-complain-that-lensa-ai-selfie-generator-is-sexualizing-their-photos/"
+        "https://www.technologyreview.com/2022/12/12/1064751/the-viral-ai-avatar-app-lensa-undressed-me-without-my-consent/",
+        "https://techcrunch.com/2022/12/06/prisma-ai-regulation"
       ]
     }
   ],
@@ -154,6 +158,7 @@
     "aiGenerated": true,
     "humanVerified": false,
     "promotedFromCandidateId": "us-lensa-ai-generates-nudes-from-childhood-2022-aiaaic1241",
-    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05",
+    "asm:correctionNote": "Title corrected 2026-10-08: the source is a first-person WIRED essay in which an adult author tested the app with her own childhood photos, not a general investigation or photos of other minors. Slug unchanged for permalink stability."
   }
 }
