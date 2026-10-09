@@ -126,6 +126,21 @@ alle mit Quellen, EN-Übersetzungen, 0 Konsolenfehler.
 - `usa-ki-virtuelle-mauer-…` consequences „Funnel-Effekt" datiert 2023, Hauptquelle 2019.
 - `indonesien-ki-social-scoring` description „über 200 Millionen Bürger" unbelegt.
 
+## Teil 3 (2026-10-09) — die drei needs-human-Fälle, Entscheidung des Projekteigners
+
+**Commit:** `2095e20` (Daten) + Folge-Commit (Zähler, STATUS).
+
+| Fall | Entscheidung | Umsetzung |
+|---|---|---|
+| `tschechien-ki-sozialhilfe-scoring` | **zurückziehen** | `asm:retracted: true`, `asm:retractedDate`, `asm:retractionReason` (+`_de`/`_en`) mit vollständiger Begründung, `humanVerified: false`, `asm:metadata.asm:retractionNote`. Datei/Slug/@id bleiben (Permalink öffnet weiterhin das Panel mit „Zurückgezogen"-Label). Erste Retraction im Korpus; Karte blendet sie standardmäßig aus (Toggle `filter-show-retracted`), **Vorfallzähler zählt sie jetzt nicht mehr mit** (index.html). |
+| `usa-rekognition-immigration-ice` | **Ort und Akteure recherchieren** | Befund: DMV-Abfragen liefen über DMV-eigene Gesichtserkennung, nicht Rekognition; Amazon-Pitch Juni 2018 an ICE-HSI (POGO-FOIA), kein Vertrag; „600 Mio." = GAO-Wert für FBI FACE Services (641 Mio.). Location **Portland → Washington, D.C.**; Akteure ICE/HSI, FBI FACE Services, DMVs UT/VT/WA, AWS (Pitch), Georgetown Center; Name + Beschreibung DE/EN neu; 2 Quellen ergänzt (Georgetown Medium 2019-07, Seattle Times 2018-10); `correctionNote`. Timeline unverändert (war bereits verifiziert). |
+| `kasachstan-ki-protest-shutdown` | **ok (Empfehlung)** | Gesichtserkennungs-Behauptung als Einzelquelle Bitter Winter attribuiert, Freedom-House-Gegenaussage (Sergek 2021: keine FR) ergänzt, „über 12.000" → „rund 10.000" (FIDH/HRW, Stand 11.01.2022), Typ `facial-recognition` entfernt, Name „KI-Überwachung" → „Kameraüberwachung", TL[4] neu gefasst mit FIDH- und Bitter-Winter-URL; `correctionNote`. |
+
+**Neue Felder (Schema-Hinweis):** `asm:retracted` (bool, vom Frontend genutzt),
+`asm:retractedDate`, `asm:retractionReason`/`_de`/`_en` (neu, vom Frontend noch nicht
+gerendert — Kandidat für das Detail-Panel). `data/index.json` für die 2 geänderten
+Einträge nachgezogen (name, Koordinaten, types).
+
 ## Disk-Hygiene
 
 Workflow-Journale ~10 MB pro 24er-Welle unter `~/.claude/projects/…/subagents/workflows/`

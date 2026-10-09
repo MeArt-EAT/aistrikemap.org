@@ -216,11 +216,14 @@
       StrikeMap.addMarkers(incidents);
       StrikeMap.addRadarMarkers();
       Filters.init();
-      StrikeTicker.init(incidents);
+      StrikeTicker.init(incidents.filter(function (inc) { return !inc['asm:retracted']; }));
       // Update incident counter (re-rendered on language change)
       function renderIncidentCounter() {
+        // Retracted incidents are hidden on the map by default, so they are
+        // excluded from the public counter as well.
+        var counted = incidents.filter(function (inc) { return !inc['asm:retracted']; });
         var countries = new Set();
-        incidents.forEach(function (inc) {
+        counted.forEach(function (inc) {
           // Count distinct ISO-3166 country codes (canonical). Falls back to the
           // last comma-segment of the location name only when no code is present.
           var cc = inc.location && inc.location.address && inc.location.address.addressCountry;
@@ -237,7 +240,7 @@
         var el = document.getElementById('incident-counter');
         if (el) {
           el.textContent = I18n.t('map.counterFormat')
-            .replace('{n}', incidents.length)
+            .replace('{n}', counted.length)
             .replace('{c}', countries.size);
         }
       }
