@@ -5,23 +5,23 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-rekognition-immigration-ice",
-  "name": "USA: Amazon Rekognition und ICE - Fahndung in Führerscheindatenbanken ohne Einwilligung",
-  "description": "Das Georgetown Center on Privacy and Technology deckt 2019 auf, dass ICE (Immigration and Customs Enforcement) in Kooperation mit staatlichen Kraftfahrtbehörden Gesichtserkennungssysteme - darunter Amazon Rekognition - nutzt, um die Führerscheinfotos von über 600 Millionen US-Bürgern und -Einwohnern ohne deren Wissen oder Einwilligung nach Migrationsverdächtigen zu durchsuchen. Betroffene haben keine rechtliche Möglichkeit, dem zu widersprechen, obwohl viele Bundesstaaten ausdrücklich gegen ICE-Zusammenarbeit gestimmt haben.",
+  "name": "USA: ICE durchsucht Führerscheindatenbanken per Gesichtserkennung ohne Einwilligung - Amazon bewarb Rekognition bei ICE",
+  "description": "Im Juli 2019 enthüllen Dokumente des Georgetown Law Center on Privacy and Technology und die Washington Post, dass ICE (Immigration and Customs Enforcement) und das FBI Führerscheinfotos aus Datenbanken der bundesstaatlichen Kraftfahrtbehörden (DMVs) per Gesichtserkennung durchsuchen - ohne Wissen oder Einwilligung der Abgebildeten und ohne Ermächtigung durch den Kongress oder die Landesparlamente. ICE beantragte solche Abfragen in Utah, Vermont und Washington, drei Bundesstaaten, die auch Menschen ohne Aufenthaltsstatus Führerscheine oder Fahrkarten ausstellen; laut GAO hatte allein die FBI-Einheit FACE Services Zugriff auf über 641 Millionen Fotos. Die Abfragen liefen über die Gesichtserkennungssysteme der DMVs selbst. Amazon Web Services hatte Rekognition im Juni 2018 bei der ICE-Ermittlungsabteilung HSI beworben (per FOIA-Anfrage von POGO belegt); einen Vertrag gab es nach Angaben von ICE nicht. Eine Georgetown-Folgestudie (American Dragnet, 2022) zeigt, dass ICE seit 2015 in mindestens 14 Bundesstaaten DMV-Gesichtsabgleiche anforderte und die Führerscheinfotos von jedem dritten Erwachsenen in den USA erfasst hat.",
   "startDate": "2019",
   "location": {
     "@type": "Place",
-    "name": "Portland, Oregon, USA",
+    "name": "Washington, D.C., USA",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 45.5152,
-      "longitude": -122.6784
+      "latitude": 38.8977,
+      "longitude": -77.0365
     },
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
     },
-    "name_de": "Portland, Oregon, USA",
-    "name_en": "Portland, Oregon, USA"
+    "name_de": "Washington, D.C., USA",
+    "name_en": "Washington, D.C., USA"
   },
   "asm:incidentType": [
     "facial-recognition",
@@ -36,29 +36,46 @@
   ],
   "asm:actors": [
     {
-      "name": "Immigration and Customs Enforcement (ICE)",
+      "name": "Immigration and Customs Enforcement (ICE) / Homeland Security Investigations (HSI)",
       "type": "government",
       "asm:systems": [
-        "Amazon Rekognition",
-        "Landesweites Gesichtserkennungsnetzwerk"
+        "Gesichtserkennungs-Abfragen in DMV-Datenbanken (Utah, Vermont, Washington)"
       ],
-      "name_de": "Immigration and Customs Enforcement (ICE)",
-      "name_en": "Immigration and Customs Enforcement (ICE)"
+      "name_de": "Immigration and Customs Enforcement (ICE) / Homeland Security Investigations (HSI)",
+      "name_en": "Immigration and Customs Enforcement (ICE) / Homeland Security Investigations (HSI)"
+    },
+    {
+      "name": "Federal Bureau of Investigation (FBI) - FACE Services",
+      "type": "government",
+      "asm:systems": [
+        "Gesichtserkennungs-Abfragen in DMV-Datenbanken (über 641 Millionen Fotos laut GAO)"
+      ],
+      "name_de": "Federal Bureau of Investigation (FBI) - FACE Services",
+      "name_en": "Federal Bureau of Investigation (FBI) - FACE Services"
+    },
+    {
+      "name": "Kraftfahrtbehörden (DMVs) von Utah, Vermont und Washington",
+      "type": "government",
+      "asm:systems": [
+        "Gesichtserkennungssysteme der DMVs"
+      ],
+      "name_de": "Kraftfahrtbehörden (DMVs) von Utah, Vermont und Washington",
+      "name_en": "Departments of Motor Vehicles (DMVs) of Utah, Vermont and Washington"
     },
     {
       "name": "Amazon Web Services",
       "type": "company",
       "asm:systems": [
-        "Amazon Rekognition"
+        "Amazon Rekognition (2018 bei ICE-HSI beworben, kein Vertrag)"
       ],
       "name_de": "Amazon Web Services",
       "name_en": "Amazon Web Services"
     },
     {
-      "name": "Staatliche Kraftfahrtbehörden (DMVs)",
-      "type": "government",
-      "name_de": "Staatliche Kraftfahrtbehörden (DMVs)",
-      "name_en": "State Departments of Motor Vehicles (DMVs)"
+      "name": "Georgetown Law Center on Privacy and Technology",
+      "type": "organization",
+      "name_de": "Georgetown Law Center on Privacy and Technology",
+      "name_en": "Georgetown Law Center on Privacy and Technology"
     }
   ],
   "asm:severity": 4,
@@ -165,25 +182,46 @@
       "asm:linkHealth": "ok",
       "title_de": "We are implementing a one-year moratorium on police use of Rekognition",
       "title_en": "We are implementing a one-year moratorium on police use of Rekognition"
+    },
+    {
+      "url": "https://medium.com/center-on-privacy-technology/ice-searches-of-state-drivers-license-databases-4891a97d3e19",
+      "title": "ICE Searches of State Driver's License Databases",
+      "publisher": "Georgetown Law Center on Privacy and Technology",
+      "date": "2019-07",
+      "type": "ngo-report",
+      "asm:linkHealth": "unverified",
+      "title_de": "ICE-Abfragen in Führerscheindatenbanken der Bundesstaaten",
+      "title_en": "ICE Searches of State Driver's License Databases"
+    },
+    {
+      "url": "https://www.seattletimes.com/business/amazon/amazon-officials-pitched-their-facial-recognition-software-to-ice/",
+      "title": "Amazon officials pitched their facial recognition software to ICE",
+      "publisher": "The Seattle Times",
+      "date": "2018-10",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Amazon-Vertreter bewarben ihre Gesichtserkennungssoftware bei ICE",
+      "title_en": "Amazon officials pitched their facial recognition software to ICE"
     }
   ],
   "asm:metadata": {
     "created": "2026-04-03",
-    "lastUpdated": "2026-04-03",
+    "lastUpdated": "2026-10-09",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Corrected 2026-10-09 after two independent research passes: the July 2019 DMV searches (Georgetown Center on Privacy and Technology / Washington Post) ran on state DMV face recognition systems, not on Amazon Rekognition; Amazon only pitched Rekognition to ICE-HSI in June 2018 (POGO FOIA), and ICE states no contract followed. The former \"600 million photos\" was the GAO figure for FBI FACE Services access (641 million), not ICE. Location changed from Portland, Oregon (no connection to the case) to Washington, D.C. (ICE headquarters, Georgetown Center). Actors corrected (FBI FACE Services, DMVs of UT/VT/WA and Georgetown added; Rekognition attributed as a pitch only). Slug/@id retained for permalink stability."
   },
-  "name_de": "USA: Amazon Rekognition und ICE - Fahndung in Führerscheindatenbanken ohne Einwilligung",
-  "description_de": "Das Georgetown Center on Privacy and Technology deckt 2019 auf, dass ICE (Immigration and Customs Enforcement) in Kooperation mit staatlichen Kraftfahrtbehörden Gesichtserkennungssysteme - darunter Amazon Rekognition - nutzt, um die Führerscheinfotos von über 600 Millionen US-Bürgern und -Einwohnern ohne deren Wissen oder Einwilligung nach Migrationsverdächtigen zu durchsuchen. Betroffene haben keine rechtliche Möglichkeit, dem zu widersprechen, obwohl viele Bundesstaaten ausdrücklich gegen ICE-Zusammenarbeit gestimmt haben.",
+  "name_de": "USA: ICE durchsucht Führerscheindatenbanken per Gesichtserkennung ohne Einwilligung - Amazon bewarb Rekognition bei ICE",
+  "description_de": "Im Juli 2019 enthüllen Dokumente des Georgetown Law Center on Privacy and Technology und die Washington Post, dass ICE (Immigration and Customs Enforcement) und das FBI Führerscheinfotos aus Datenbanken der bundesstaatlichen Kraftfahrtbehörden (DMVs) per Gesichtserkennung durchsuchen - ohne Wissen oder Einwilligung der Abgebildeten und ohne Ermächtigung durch den Kongress oder die Landesparlamente. ICE beantragte solche Abfragen in Utah, Vermont und Washington, drei Bundesstaaten, die auch Menschen ohne Aufenthaltsstatus Führerscheine oder Fahrkarten ausstellen; laut GAO hatte allein die FBI-Einheit FACE Services Zugriff auf über 641 Millionen Fotos. Die Abfragen liefen über die Gesichtserkennungssysteme der DMVs selbst. Amazon Web Services hatte Rekognition im Juni 2018 bei der ICE-Ermittlungsabteilung HSI beworben (per FOIA-Anfrage von POGO belegt); einen Vertrag gab es nach Angaben von ICE nicht. Eine Georgetown-Folgestudie (American Dragnet, 2022) zeigt, dass ICE seit 2015 in mindestens 14 Bundesstaaten DMV-Gesichtsabgleiche anforderte und die Führerscheinfotos von jedem dritten Erwachsenen in den USA erfasst hat.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Informationelle Selbstbestimmung",
     "Schutz vor Diskriminierung",
     "Recht auf faires Verfahren"
   ],
-  "name_en": "USA: Amazon Rekognition and ICE - non-consensual searches of driver's license databases",
-  "description_en": "In 2019, the Georgetown Center on Privacy and Technology revealed that Immigration and Customs Enforcement (ICE), in cooperation with state motor vehicle agencies, was using facial recognition systems - including Amazon Rekognition - to search the driver's license photos of more than 600 million U.S. citizens and residents for immigration suspects without their knowledge or consent. Those affected have no legal way to object, even though many states had explicitly voted against cooperation with ICE.",
+  "name_en": "USA: ICE searches driver's license databases with facial recognition without consent - Amazon pitched Rekognition to ICE",
+  "description_en": "In July 2019, documents from Georgetown Law's Center on Privacy and Technology and the Washington Post revealed that ICE (Immigration and Customs Enforcement) and the FBI were running facial recognition searches on driver's license photos held by state motor vehicle agencies (DMVs) - without the knowledge or consent of those pictured and without authorization from Congress or state legislatures. ICE requested such searches in Utah, Vermont and Washington, three states that also issue driver's licenses or driving cards to undocumented residents; according to the GAO, the FBI's FACE Services unit alone had access to more than 641 million photos. The searches ran on the DMVs' own facial recognition systems. Amazon Web Services had pitched Rekognition to ICE's investigative arm HSI in June 2018 (documented through a POGO FOIA request); according to ICE, no contract followed. A Georgetown follow-up study (American Dragnet, 2022) shows that ICE has requested DMV face scans in at least 14 states since 2015 and has scanned the driver's license photos of one in three adults in the United States.",
   "asm:affectedRights_en": [
     "right to privacy",
     "informational self-determination",
