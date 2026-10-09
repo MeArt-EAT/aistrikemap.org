@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/japan-ki-polizei-vorhersage",
-  "name": "Japan: Polizei setzt KI-Vorhersagesysteme ohne öffentliche Debatte ein",
-  "description": "Japanische Polizeibehörden pilotieren in mehreren Großstädten KI-gestützte Vorhersagesysteme zur Kriminalitätsvorbeugung, die in enger Zusammenarbeit mit dem Technologiekonzern NEC entwickelt wurden. Die Systeme analysieren historische Verbrechensstatistiken, Bewegungsdaten und sozioökonomische Faktoren, um Hochrisikogebiete und -personen zu identifizieren. Anders als in westlichen Ländern findet kaum eine öffentliche oder parlamentarische Debatte über die Risiken algorithmischer Diskriminierung statt.",
+  "name": "Japan: Polizei erprobt KI-Kriminalitätsvorhersage und nutzt Gesichtserkennungsdatenbank",
+  "description": "Japanische Polizeibehörden erproben und nutzen KI-gestützte Verfahren. Die Nationale Polizeibehörde (NPA) beantragte 2018 Mittel, um KI-Vorhersagen für Delikte wie Geldwäsche und Anschläge bei Großveranstaltungen zu testen, und die Polizei von Kanagawa sollte nach Berichten als erste KI-gestützte Kriminalitätsvorhersage einsetzen. Seit März 2020 nutzt die Polizei landesweit eine Gesichtserkennungsdatenbank mit rund 10 Mio. Bildern. Kritiker warnen vor einer Überwachungsgesellschaft ohne strenge Regeln und vor Überpolizierung bestimmter Gebiete.",
   "startDate": "2018-04",
   "location": {
     "@type": "Place",
@@ -38,75 +38,93 @@
       "name": "Japanische Nationalpolizei (NPA)",
       "type": "government",
       "asm:systems": [
-        "Predictive Policing Analysis System",
-        "KI-Kriminalitätsprognose"
+        "Gesichtserkennungssystem (Abgleich mit Bilddatenbank)",
+        "KI-Kriminalitätsprognose (Tests)"
       ],
       "name_de": "Japanische Nationalpolizei (NPA)",
       "name_en": "Japanese National Police Agency (NPA)"
     },
     {
-      "name": "NEC Corporation",
-      "type": "company",
+      "name": "Polizei der Präfektur Kanagawa",
+      "type": "government",
       "asm:systems": [
-        "NeoFace Gesichtserkennung",
-        "Predictive Crime Analytics"
+        "Comstat"
       ],
-      "name_de": "NEC Corporation",
-      "name_en": "NEC Corporation"
+      "name_de": "Polizei der Präfektur Kanagawa",
+      "name_en": "Kanagawa Prefectural Police"
     }
   ],
   "asm:severity": 2,
   "asm:verificationLevel": 2,
   "asm:reverseTimeline": [
     {
-      "date": "2018-04",
+      "date": "2010-04",
       "phase": "infrastructure",
-      "title": "NEC und Polizei starten Pilotprogramme",
-      "description": "Die japanische Nationalpolizei beginnt in Zusammenarbeit mit NEC Corporation Pilotprogramme zur KI-gestützten Kriminalitätsvorhersage. Die Systeme werden in ausgewählten Bezirken Tokios, Osakis und anderer Großstädte getestet. NEC, bereits weltmarktführend in Gesichtserkennung, integriert historische Verbrechensdaten und Standortinformationen.",
+      "title": "Kanagawa führt Kriminalitätsanalysesystem 'Comstat' ein",
+      "description": "Ab April 2010 setzt die Polizei der Präfektur Kanagawa das Analysesystem 'Comstat' in der gesamten Präfektur ein. Es wertet vergangene Straftaten aus, um vorherzusagen, wo sich der nächste Vorfall ereignen könnte; in einem berichteten Fall grenzte die Prognose den wahrscheinlichen Ort auf einen Radius von 250 m ein. Die Polizei von Kanagawa wird auch bei den späteren KI-Plänen als erste Behörde genannt.",
       "sources": [
-        "https://www.japantimes.co.jp/news/2018/09/15/national/crime-law/japanese-police-turn-ai-help-predict-crimes/"
+        "https://www.gigazine.net/gsc_news/en/20100603_comstat_kanagawa"
       ],
-      "title_de": "NEC und Polizei starten Pilotprogramme",
-      "title_en": "NEC and police launch pilot programs",
-      "description_de": "Die japanische Nationalpolizei beginnt in Zusammenarbeit mit NEC Corporation Pilotprogramme zur KI-gestützten Kriminalitätsvorhersage. Die Systeme werden in ausgewählten Bezirken Tokios, Osakis und anderer Großstädte getestet. NEC, bereits weltmarktführend in Gesichtserkennung, integriert historische Verbrechensdaten und Standortinformationen.",
-      "description_en": "The Japanese National Police Agency, in cooperation with NEC Corporation, launches pilot programs for AI-driven crime prediction. The systems are tested in selected districts of Tokyo, Osaka, and other major cities. NEC, already a global leader in facial recognition, integrates historical crime data and location information."
+      "title_de": "Kanagawa führt Kriminalitätsanalysesystem 'Comstat' ein",
+      "title_en": "Kanagawa introduces the 'Comstat' crime-analysis system",
+      "description_de": "Ab April 2010 setzt die Polizei der Präfektur Kanagawa das Analysesystem 'Comstat' in der gesamten Präfektur ein. Es wertet vergangene Straftaten aus, um vorherzusagen, wo sich der nächste Vorfall ereignen könnte; in einem berichteten Fall grenzte die Prognose den wahrscheinlichen Ort auf einen Radius von 250 m ein. Die Polizei von Kanagawa wird auch bei den späteren KI-Plänen als erste Behörde genannt.",
+      "description_en": "From April 2010 the police of Kanagawa Prefecture use the analysis system 'Comstat' across the whole prefecture. It evaluates past crimes to predict where the next incident might occur; in one reported case the forecast narrowed the likely location to a radius of 250 m. Kanagawa police are also named as the first force in the later AI plans."
     },
     {
-      "date": "2020-07",
+      "date": "2018",
       "phase": "doctrine",
-      "title": "Ausweitung der KI-Nutzung in der Strafverfolgung",
-      "description": "Die NPA kündigt eine systematische Erweiterung der KI-Nutzung in der Strafverfolgung an. Videoüberwachung mit Gesichtserkennung in Bahnhöfen und öffentlichen Plätzen wird ausgebaut. Die fehlende rechtliche Grundlage für Predictive Policing sowie die vollständige Abwesenheit einer Folgenabschätzung werden von Datenschutzexperten kritisiert.",
-      "sources": [],
-      "title_de": "Ausweitung der KI-Nutzung in der Strafverfolgung",
-      "title_en": "Expansion of AI use in law enforcement",
-      "description_de": "Die NPA kündigt eine systematische Erweiterung der KI-Nutzung in der Strafverfolgung an. Videoüberwachung mit Gesichtserkennung in Bahnhöfen und öffentlichen Plätzen wird ausgebaut. Die fehlende rechtliche Grundlage für Predictive Policing sowie die vollständige Abwesenheit einer Folgenabschätzung werden von Datenschutzexperten kritisiert.",
-      "description_en": "The NPA announces a systematic expansion of AI use in law enforcement. Video surveillance with facial recognition in train stations and public spaces is built out. Data protection experts criticize the absence of a legal basis for predictive policing and the complete lack of an impact assessment."
+      "title": "NPA beantragt Mittel für KI-Tests zur Kriminalitätsvorhersage",
+      "description": "Im Jahr 2018 berichten Medien, dass die Nationale Polizeibehörde (NPA) für den Haushalt 2019 144 Mio. Yen (rund 1,29 Mio. USD) beantragt, um zu testen, ob KI Delikte wie Geldwäsche, Anschläge bei Großveranstaltungen und Vorfälle mit Fahrzeugen vorhersagen kann; ausgewertet werden sollen Daten von der Verkehrsdichte bis zur wirtschaftlichen Lage eines Bezirks. Zudem hieß es, die Polizei von Kanagawa solle als erste prädiktive Polizeiarbeit mit KI einsetzen, sofern die Finanzierung bis April 2018 steht; Experten befürchteten eine Überpolizierung bestimmter Gebiete.",
+      "sources": [
+        "https://amp.scmp.com/news/asia/east-asia/article/2162239/japan-developing-pre-crime-artificial-intelligence-predict-money",
+        "https://interestingengineering.com/japan-set-to-launch-ai-system-to-predict-crime"
+      ],
+      "title_de": "NPA beantragt Mittel für KI-Tests zur Kriminalitätsvorhersage",
+      "title_en": "NPA requests funds for AI trials to predict crime",
+      "description_de": "Im Jahr 2018 berichten Medien, dass die Nationale Polizeibehörde (NPA) für den Haushalt 2019 144 Mio. Yen (rund 1,29 Mio. USD) beantragt, um zu testen, ob KI Delikte wie Geldwäsche, Anschläge bei Großveranstaltungen und Vorfälle mit Fahrzeugen vorhersagen kann; ausgewertet werden sollen Daten von der Verkehrsdichte bis zur wirtschaftlichen Lage eines Bezirks. Zudem hieß es, die Polizei von Kanagawa solle als erste prädiktive Polizeiarbeit mit KI einsetzen, sofern die Finanzierung bis April 2018 steht; Experten befürchteten eine Überpolizierung bestimmter Gebiete.",
+      "description_en": "In 2018 media report that the National Police Agency (NPA) is requesting 144 million yen (about USD 1.29 million) in its 2019 budget to test whether AI can forecast crimes such as money laundering, terrorist attacks at major public events and incidents involving vehicles; the data to be analysed range from traffic frequency to a district's economic situation. It was also reported that Kanagawa police were to be the first to use AI-based predictive policing, provided funding was secured by April 2018; experts feared over-policing of particular areas."
     },
     {
-      "date": "2023-01",
+      "date": "2020-09",
       "phase": "event",
-      "title": "KI-Integrationspläne für 2025 bekanntgegeben",
-      "description": "Das japanische Kabinett verabschiedet einen Plan zur umfassenden KI-Integration in Behörden bis 2025, einschließlich der Strafverfolgung. Kritiker bemängeln, dass Japan trotz fortgeschrittener Implementierung keine dem EU AI Act vergleichbare Regulierung für Hochrisiko-KI-Systeme entwickelt. Zivilgesellschaftliche Organisationen fordern erstmals parlamentarische Anhörungen.",
+      "title": "Polizei räumt Einsatz einer Gesichtserkennungsdatenbank ein",
+      "description": "Im September 2020 wird bekannt, dass die japanische Polizei seit März 2020 landesweit ein System nutzt, das Fotos früher festgenommener Personen mit Bildern aus Überwachungskameras und sozialen Netzwerken abgleicht. Die Datenbank der NPA enthält rund 10 Mio. Gesichtsbilder, darunter auch von Verdächtigen, die ohne Festnahme an die Staatsanwaltschaft übergeben wurden. Die NPA erklärt, das System werde nur für Strafermittlungen genutzt und unbeteiligte Bilder würden gelöscht; Kritiker warnen vor einer Überwachungsgesellschaft ohne strenge Regeln.",
       "sources": [
-        "https://www.japantimes.co.jp/news/2023/03/31/business/tech/japan-ai-strategy/"
+        "https://newsonjapan.com/article/128437.php",
+        "https://iapp.org/news/a/japanese-police-using-facial-recognition-for-investigations/"
       ],
-      "title_de": "KI-Integrationspläne für 2025 bekanntgegeben",
-      "title_en": "AI integration plans for 2025 announced",
-      "description_de": "Das japanische Kabinett verabschiedet einen Plan zur umfassenden KI-Integration in Behörden bis 2025, einschließlich der Strafverfolgung. Kritiker bemängeln, dass Japan trotz fortgeschrittener Implementierung keine dem EU AI Act vergleichbare Regulierung für Hochrisiko-KI-Systeme entwickelt. Zivilgesellschaftliche Organisationen fordern erstmals parlamentarische Anhörungen.",
-      "description_en": "The Japanese cabinet adopts a plan for comprehensive AI integration in public agencies by 2025, including law enforcement. Critics point out that despite advanced implementation, Japan has not developed regulation for high-risk AI systems comparable to the EU AI Act. For the first time, civil society organizations demand parliamentary hearings."
+      "title_de": "Polizei räumt Einsatz einer Gesichtserkennungsdatenbank ein",
+      "title_en": "Police acknowledge use of a facial recognition database",
+      "description_de": "Im September 2020 wird bekannt, dass die japanische Polizei seit März 2020 landesweit ein System nutzt, das Fotos früher festgenommener Personen mit Bildern aus Überwachungskameras und sozialen Netzwerken abgleicht. Die Datenbank der NPA enthält rund 10 Mio. Gesichtsbilder, darunter auch von Verdächtigen, die ohne Festnahme an die Staatsanwaltschaft übergeben wurden. Die NPA erklärt, das System werde nur für Strafermittlungen genutzt und unbeteiligte Bilder würden gelöscht; Kritiker warnen vor einer Überwachungsgesellschaft ohne strenge Regeln.",
+      "description_en": "In September 2020 it becomes known that Japanese police have been using a system nationwide since March 2020 that matches photos of previously arrested people with images from surveillance cameras and social media. The NPA database holds about 10 million facial images, including those of suspects referred to prosecutors without an arrest. The NPA says the system is used only for criminal investigations and unrelated images are discarded; critics warn of a surveillance society without strict rules."
     },
     {
-      "date": "2024",
+      "date": "2023-07",
       "phase": "consequences",
-      "title": "Wachsende Kritik ohne strukturelle Reformen",
-      "description": "Akademiker und Bürgerrechtsorganisationen veröffentlichen Studien, die potenzielle Diskriminierungsrisiken für Minderheiten - insbesondere Zainichi-Koreaner und Obdachlose - durch KI-Polizeisysteme in Japan dokumentieren. Eine parlamentarische Debatte über verbindliche Standards für algorithmische Transparenz bleibt aus. Das Innenministerium verteidigt die Systeme als Effizienzgewinn.",
+      "title": "NPA will KI-Kameras zur Verhaltenserkennung testen",
+      "description": "Im Juli 2023, rund ein Jahr nach dem Attentat auf Shinzo Abe, wird berichtet, dass die NPA KI-gestützte Überwachungskameras zur Verhaltenserkennung testen will, um Anschläge von Einzeltätern zu verhindern und Politiker zu schützen. Nach einem Bericht bestätigte die NPA, dass Verhaltenserkennung und nicht Gesichtserkennung geprüft werde; ein OECD-Eintrag nennt dagegen auch Gesichtserkennung.",
       "sources": [
-        "https://www.hrw.org/world-report/2024/country-chapters/japan"
+        "https://oecd.ai/en/incidents/2023-07-07-5899",
+        "https://www.inside.com.tw/article/32112-Japan-Surveillance-AI"
       ],
-      "title_de": "Wachsende Kritik ohne strukturelle Reformen",
-      "title_en": "Growing criticism without structural reforms",
-      "description_de": "Akademiker und Bürgerrechtsorganisationen veröffentlichen Studien, die potenzielle Diskriminierungsrisiken für Minderheiten - insbesondere Zainichi-Koreaner und Obdachlose - durch KI-Polizeisysteme in Japan dokumentieren. Eine parlamentarische Debatte über verbindliche Standards für algorithmische Transparenz bleibt aus. Das Innenministerium verteidigt die Systeme als Effizienzgewinn.",
-      "description_en": "Academics and civil rights organizations publish studies documenting potential discrimination risks for minorities - particularly Zainichi Koreans and homeless people - from AI policing systems in Japan. A parliamentary debate on binding standards for algorithmic transparency fails to materialize. The Ministry of the Interior defends the systems as an efficiency gain."
+      "title_de": "NPA will KI-Kameras zur Verhaltenserkennung testen",
+      "title_en": "NPA plans to test AI cameras for behavior detection",
+      "description_de": "Im Juli 2023, rund ein Jahr nach dem Attentat auf Shinzo Abe, wird berichtet, dass die NPA KI-gestützte Überwachungskameras zur Verhaltenserkennung testen will, um Anschläge von Einzeltätern zu verhindern und Politiker zu schützen. Nach einem Bericht bestätigte die NPA, dass Verhaltenserkennung und nicht Gesichtserkennung geprüft werde; ein OECD-Eintrag nennt dagegen auch Gesichtserkennung.",
+      "description_en": "In July 2023, about a year after the assassination of Shinzo Abe, it is reported that the NPA wants to test AI-supported surveillance cameras for behavior detection in order to prevent attacks by lone offenders and protect politicians. According to one report the NPA confirmed that behavior detection rather than facial recognition is being tested; an OECD entry, by contrast, also mentions facial recognition."
+    },
+    {
+      "date": "2026-07",
+      "phase": "consequences",
+      "title": "Vorhersage-Streifenplanung im Einsatz, keine strafjustizspezifischen KI-Regeln",
+      "description": "Ein Überblick des Oxford-Projekts 'AI Atlas' beschreibt, dass die Polizei KI umfassend für Einsatzunterstützung und Vorhersagen nutzt, darunter den Gesichtsabgleich mit einer Datenbank festgenommener Personen und die Plattform 'Crime Nabi' zur vorausschauenden Streifenplanung. Die Regulierung stützt sich demnach auf ein allgemeines Rahmengesetz und unverbindliche branchenübergreifende Leitlinien statt auf Regeln speziell für die Strafjustiz. Nach einer Publikation der japanischen Regierung von 2024 wird das vom Start-up Singular Perturbations entwickelte Crime Nabi in Japan vor allem von Kommunalverwaltungen für Präventionsstreifen genutzt.",
+      "sources": [
+        "https://www.techandjustice.bsg.ox.ac.uk/ai-integration-in-japans-law-enforcement-predictive-analytics-and-tools-ai-atlas",
+        "https://japan.go.jp/kizuna/2024/06/japans_ai-based_crime_prediction.html"
+      ],
+      "title_de": "Vorhersage-Streifenplanung im Einsatz, keine strafjustizspezifischen KI-Regeln",
+      "title_en": "Predictive patrol routing in use, no criminal-justice-specific AI rules",
+      "description_de": "Ein Überblick des Oxford-Projekts 'AI Atlas' beschreibt, dass die Polizei KI umfassend für Einsatzunterstützung und Vorhersagen nutzt, darunter den Gesichtsabgleich mit einer Datenbank festgenommener Personen und die Plattform 'Crime Nabi' zur vorausschauenden Streifenplanung. Die Regulierung stützt sich demnach auf ein allgemeines Rahmengesetz und unverbindliche branchenübergreifende Leitlinien statt auf Regeln speziell für die Strafjustiz. Nach einer Publikation der japanischen Regierung von 2024 wird das vom Start-up Singular Perturbations entwickelte Crime Nabi in Japan vor allem von Kommunalverwaltungen für Präventionsstreifen genutzt.",
+      "description_en": "An overview by the Oxford 'AI Atlas' project describes police as using AI extensively for operational support and predictive purposes, including facial recognition matched against a database of arrested people and the 'Crime Nabi' platform for predictive patrol routing. Regulation relies on a general framework law and non-binding cross-sector guidelines rather than rules specific to criminal justice. According to a 2024 Japanese government publication, Crime Nabi, developed by the startup Singular Perturbations, has mainly been used in Japan by local governments for crime-prevention patrols."
     }
   ],
   "asm:sources": [
@@ -121,24 +139,24 @@
       "title_en": "Japanese police turn to AI to help predict crimes before they happen"
     },
     {
-      "url": "https://www.japantimes.co.jp/news/2023/03/31/business/tech/japan-ai-strategy/",
-      "title": "Japan unveils national AI strategy with public sector focus",
-      "publisher": "Japan Times",
-      "date": "2023-03-31",
+      "url": "https://amp.scmp.com/news/asia/east-asia/article/2162239/japan-developing-pre-crime-artificial-intelligence-predict-money",
+      "title": "Japan developing 'pre-crime' artificial intelligence to predict money laundering and terror attacks",
+      "publisher": "South China Morning Post",
+      "date": "2018",
       "type": "news-article",
-      "asm:linkHealth": "ok",
-      "title_de": "Japan unveils national AI strategy with public sector focus",
-      "title_en": "Japan unveils national AI strategy with public sector focus"
+      "asm:linkHealth": "unverified",
+      "title_de": "Japan developing 'pre-crime' artificial intelligence to predict money laundering and terror attacks",
+      "title_en": "Japan developing 'pre-crime' artificial intelligence to predict money laundering and terror attacks"
     },
     {
-      "url": "https://www.hrw.org/world-report/2024/country-chapters/japan",
-      "title": "World Report 2024: Japan",
-      "publisher": "Human Rights Watch",
-      "date": "2024",
-      "type": "ngo-report",
-      "asm:linkHealth": "ok",
-      "title_de": "World Report 2024: Japan",
-      "title_en": "World Report 2024: Japan"
+      "url": "https://iapp.org/news/a/japanese-police-using-facial-recognition-for-investigations/",
+      "title": "Japanese police using facial recognition for investigations",
+      "publisher": "IAPP",
+      "date": "2020-09",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Japanese police using facial recognition for investigations",
+      "title_en": "Japanese police using facial recognition for investigations"
     }
   ],
   "asm:metadata": {
@@ -146,12 +164,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-09: removed the unsupported claim that AI prediction systems were deployed 'without public debate' (civil-liberties concerns were reported) and reworded the title to the documented AI crime-prediction trials and facial recognition database. Slug unchanged for permalink stability."
   },
-  "name_de": "Japan: Polizei setzt KI-Vorhersagesysteme ohne öffentliche Debatte ein",
-  "name_en": "Japan: police deploy AI prediction systems without public debate",
-  "description_de": "Japanische Polizeibehörden pilotieren in mehreren Großstädten KI-gestützte Vorhersagesysteme zur Kriminalitätsvorbeugung, die in enger Zusammenarbeit mit dem Technologiekonzern NEC entwickelt wurden. Die Systeme analysieren historische Verbrechensstatistiken, Bewegungsdaten und sozioökonomische Faktoren, um Hochrisikogebiete und -personen zu identifizieren. Anders als in westlichen Ländern findet kaum eine öffentliche oder parlamentarische Debatte über die Risiken algorithmischer Diskriminierung statt.",
-  "description_en": "Japanese police authorities pilot AI-driven predictive systems for crime prevention in several major cities, developed in close cooperation with the technology company NEC. The systems analyze historical crime statistics, movement data, and socioeconomic factors to identify high-risk areas and individuals. Unlike in Western countries, there is hardly any public or parliamentary debate about the risks of algorithmic discrimination.",
+  "name_de": "Japan: Polizei erprobt KI-Kriminalitätsvorhersage und nutzt Gesichtserkennungsdatenbank",
+  "name_en": "Japan: police trial AI crime prediction and use a facial recognition database",
+  "description_de": "Japanische Polizeibehörden erproben und nutzen KI-gestützte Verfahren. Die Nationale Polizeibehörde (NPA) beantragte 2018 Mittel, um KI-Vorhersagen für Delikte wie Geldwäsche und Anschläge bei Großveranstaltungen zu testen, und die Polizei von Kanagawa sollte nach Berichten als erste KI-gestützte Kriminalitätsvorhersage einsetzen. Seit März 2020 nutzt die Polizei landesweit eine Gesichtserkennungsdatenbank mit rund 10 Mio. Bildern. Kritiker warnen vor einer Überwachungsgesellschaft ohne strenge Regeln und vor Überpolizierung bestimmter Gebiete.",
+  "description_en": "Japanese police authorities are trialling and using AI-supported methods. The National Police Agency (NPA) requested funds in 2018 to test AI forecasts for crimes such as money laundering and attacks at major events, and Kanagawa police were reportedly to be the first to use AI-based crime prediction. Since March 2020 police have used a nationwide facial recognition database of about 10 million images. Critics warn of a surveillance society without strict rules and of over-policing of particular areas.",
   "asm:affectedRights_de": [
     "Unschuldsvermutung",
     "Recht auf Privatsphäre",
