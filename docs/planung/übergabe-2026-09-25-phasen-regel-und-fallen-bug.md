@@ -562,3 +562,127 @@ Standardformat gebracht (Inhalt identisch, geprüft). Browsertest: 2324 Marker, 
 
 **Für künftige Importe:** `promote-candidates.js` sollte Kandidaten ohne Koordinaten nicht
 stumm ohne `geo` promoten (Warnung oder Pflichtfeld).
+
+### Nachtrag 7c (2026-10-09): Link-Check repariert, 243 tote Quellen ersetzt, Merge mit main
+
+#### 1. Link-Check-Workflow (`59c6d99`, `dfa9310`) und Index (`f15a46a`, `5576326`)
+
+- **Ein Issue statt Hunderter:** Der wöchentliche Link-Check legte bei jedem Lauf ein neues
+  Issue an (228 Duplikate). Jetzt sucht der Workflow das offene Issue mit Label `link-check`
+  und aktualisiert es (#230).
+- **Statuscodes waren unsichtbar:** Der Bericht wurde in Bash gebaut; die Backticks um den
+  Status liefen als Befehlsersetzung, jede Zeile zeigte `[]`. Neues Skript
+  `scripts/link-report-to-markdown.js`: Summen, tote Links nach Status, Top-25-Hosts, dann die
+  Liste, verwertbare Status zuerst (404/410, DNS/TLS/Verbindung, 5xx/Timeout, sonstige,
+  Bot-Sperren 401/403/406/429 zuletzt), gekürzt unter GitHubs 65.536-Zeichen-Grenze.
+- `data/index.json` mit allen Incident-Dateien abgeglichen (Namen, Typen, Koordinaten);
+  `promote-candidates.js` warnt jetzt bei Kandidaten ohne Koordinaten.
+- **Offen (Projekteigner):** 228 alte Duplikat-Issues schließen - nur mit Okay.
+
+#### 2. Tote Quellenlinks ersetzt (DL-01 bis DL-18, 18 Commits)
+
+Aus dem ersten lesbaren Bericht: 213 x 404, 4 x 410, 24 x nicht erreichbar = **243 tote URLs
+in 211 Incidents**. 18 Gruppen à rund 12 Incidents, je Bearbeiter (WebSearch) +
+unabhängiger Prüfer, der jede Änderung per `git diff` gegen Suchergebnisse prüfte und
+korrigieren oder auf den toten Link zurücksetzen durfte ("ein toter Link ist besser als
+ein falscher").
+
+- Vorrang: dasselbe Dokument unter neuer Adresse (umgezogene Seiten, neue Slugs,
+  Syndikationen derselben Agenturmeldung), sonst eine andere Quelle für denselben Inhalt.
+  Wo die Ersatzquelle ein Detail nicht trägt, wurde es gestrichen (DE/EN parallel), z. B.
+  unbelegte Zahlen, Zitate, "erster Fall"-Behauptungen.
+- Die Prüfer korrigierten rund 30 Ersetzungen (falsche Variante einer URL, schwächere
+  Quelle, ein gestrichenes, aber belegtes Detail). Eine nicht prüfbare Ersetzung (Bucheon)
+  wurde verworfen.
+- **Ergebnis im nächsten Lauf:** 404 von 213 auf 47. Die restlichen 47 sind überwiegend
+  Ersatz-URLs, die zwar im Suchindex stehen, für den Checker aber 404 liefern
+  (WordPress-Kurzlinks `?p=`, FTC-Seiten aus der Khan-Ära, die 2025 entfernt wurden,
+  Seiten mit Bot-Sperre per 404) sowie bewusst behaltene Links. **Lektion:** Treffer im
+  Suchindex sind kein Beleg, dass eine Seite lebt; der Sandbox fehlt jeder Direktzugriff
+  (auch archive.org gesperrt). Die "error"-Fälle (76) sind fast alle Timeouts/Bot-Sperren
+  großer Seiten (Washington Post, Yahoo, gesetze-im-internet.de).
+
+**Redaktionelle Prüfliste aus den Link-Gruppen** (nicht automatisch entschieden):
+
+*:*
+- australien-naplan-…: Eintragsdatum 2018-07-27 (Belege datieren die Bestätigung auf Januar 2018; Text jetzt "2018").
+- deutschland-bayern-testet-palantir-…: GFF-Beschwerde 2023-12 vs. Juli 2025.
+- deutschland-gorillas-schichtalgorithmus-project-ace-…: Bezeichnung "Project Ace" nicht belegbar (möglicherweise erfunden).
+- burkina-faso-junta-…: Pulse-Quelle datiert 2023, berichtet aber über Januar 2022.
+- china-bmw-kohler-…: cbbc-Artikel behandelt die Regeln von 2025, nicht 2021.
+- brasilien-96-falsch-treffer-…: edgelands-URL ohne Ersatz (beibehalten).
+- china-iflytek-…: Eintragsdatum 2022 unbelegt.
+- belgien-mann-…: Satz zu GPT-J als "Standard-Backbone" unbelegt.
+- estland-devternity-…: Gründungsjahr 2015 unbelegt.
+- deutschland-hamburger-datenschutzbehoerde-…-pimeyes: CCC-Datum 30. April vs. Juni 2026.
+- dominikanische-republik-gesichtserkennungs-pilot-…: Botschaftsseite unbelegt.
+*:*
+- frankreich-conseil-detat-…health-data-hub: "Azure ohne Ausschreibung" und "60 Mio" ohne Beleg.
+- global-cisco-studie-deepseek-…: zwillgen-Artikel laut Suche vom 2025-03-18, Quelle trägt 2025-02-04.
+- global-deepseek-…-mona-lisa-…: cxtoday-Artikel deckt die erwähnten Verbote nicht ab.
+- italien-como-…: Beschreibung schreibt das Moratorium dem Garante zu; laut Il Post beschloss es das Parlament (Dezember 2021).
+- mt-eu-mittelmeer-frontex-…: "100 Mio" und "250 Seemeilen" nur durch digit.site36 gestützt.
+- neuseeland-paknsave-…: neue foodstuffs.co.nz-URL (ohne www) evtl. ebenfalls 404.
+- nordkorea-digitalisierte-ueberwachung-des-inminban-…: KEIN Beleg für die Kernbehauptung (2024 ganze Untergrundkirche durch digitale/KI-Überwachung entdeckt, alle Mitglieder getötet). Titel, Beschreibung und Slug tragen sie; braucht menschliche Prüfung oder vorsichtigere Formulierung.
+*:*
+- papua-neuguinea-facebook-blockade-…: Titel "schafft Rechtsgrundlage für Plattform-Sperren" wird von den Quellen bestritten (Section 16 erlaubt keine Mediensperren).
+- polen-belarus-elektronische-grenzueberwachung-…: Asylrechts-Aussetzung laut Notes from Poland/PAP erst 27.03.2025, Text sagt "Februar 2025".
+- spanien-katalonien-audit-…-riscanvi: Behauptung zum EU AI Act ohne Beleg.
+- spanien-von-viogen-…-lobna-hemid: Details aus dem NYT-Original (Fotos, Polizeianzeige, einstweilige Verfügung) nicht mehr belegbar, gekürzt.
+- uk-uber-surge-pricing-…: Eintrag verknüpft die Preisdeckelung (Juli 2014) mit der Geiselnahme in Sydney (Dezember 2014) - zeitlich falsch.
+- uk-deepfake-pierce-brosnan-…: Schließung der Galerie (August 2024) nur durch die AI Incident Database belegt ("alleged").
+- uk-servicroboter-fabio-…: "Hintergrundgeräusche" und "steht zu nah" unbelegt.
+- uk-ki-verkehrskameras-…: Beteiligung von National Highways am Devon/Cornwall-Test 2022 fraglich (eigene Tests ab 2021).
+- usa-ai-portrait-ars-…: Top-Level-Datum 2019-07-15, Artikel vom 29.07.2019.
+- usa-ki-puppe-hello-barbie-…: EFF-Erwähnung in der Beschreibung unbelegt.
+- usa-139-000-tv-und-filmskripte-…: Quelldatum 2024-11-19 vs. 26.11.2024.
+- usa-character-ai-…-george-floyd: Quelldatum 2024-12-18 vs. Oktober 2024.
+- usa-arizona-verklagt-amazon-…: Klage-PDF nur in Prozent-Kodierung ersetzt, kann weiter 404 liefern.
+- usa-porcha-woodruff-…: Atlas-of-Surveillance-URL im neuen Format (/a/AOS000118) abgeleitet, nicht in Suchergebnissen gesehen.
+*:*
+- usa-schwarze-youtube-creator-…: Eintrag 2010 ("schlagwortbasiert") von der Ersatzquelle nicht gedeckt.
+- usa-texas-bewertet-staar-aufsaetze-…: "Schüler lernen für die Maschine zu schreiben" und Offenlegungsforderung unbelegt.
+- usa-tom-hanks-deepfakes-…: "fast drei Milliarden Dollar durch Betrug mit Identitätsvorspiegelung 2023" unbelegt.
+- usa-truecompanion-sexroboter-…: Zitat von Kate Devlin in den Quellen nicht gefunden.
+
+#### 3. Merge mit main (`6d43403`)
+
+Auf `main` hatte eine parallele Session (Übergabe #13 vom 2026-10-08/09) dieselben rund
+110 Timelines nach "Schema v1.1" umgebaut. Der Branch hatte am 2026-09-25 eine eigene,
+lockerere Phasen-Regel eingeführt und dieselben Dateien korrigiert. PR #93 war deshalb
+nicht mehr mergebar: **81 Incident-Dateien** plus Validator, Briefing, STATUS.md, Index,
+Bundles im Konflikt.
+
+Semantische Auflösung je Datei (Skript, nicht zeilenweise):
+
+| Regel | Dateien |
+|---|---|
+| Redaktionsentscheidung des Projekteigners auf main hat Vorrang (Tschechien komplett, Kasachstan Titel/Text/Akteure/Metadaten) | 2 |
+| Timeline aus main, wenn dort jeder Eintrag eine Quelle hat | 56 |
+| Timeline aus dem Branch, wenn sie Schema v1.1 erfüllt | 7 |
+| main-Timeline, Quellen aus dem passenden Branch-Eintrag übertragen (Datum + Textähnlichkeit) | 45 |
+
+Übrige Felder: einseitige Änderungen gewinnen. Bei Marokko (Titel) und ShotSpotter
+(Beschreibung) hatten beide Seiten denselben Fehler unabhängig korrigiert; die genauere
+Branch-Fassung blieb.
+
+- **Validator:** Regel von main unverändert (alle vier Phasen Pflicht, keine Verschränkung,
+  > 3 event = WARN) plus die Branch-Prüfungen (relatedIncidents-Verweise, Umlaute in
+  Quellen-URLs, fehlendes `location.geo` als WARN). Briefing an den Validator angeglichen.
+- **Fund:** 6 Quellen-URLs aus den main-Wellen hatte der Umlaut-Fixer beschädigt
+  (`privatsphäre`, `für`, `prüm` ...). Im Merge auf die ae/oe/ue-Form zurückgesetzt. Der
+  Fixer-Fix aus dem Branch (`ac25e6e`, `f37fa22`) kommt mit PR #93 auf main.
+- Index aus dem Branch, mit allen Dateien abgeglichen; Bundles neu (`7ad3429`).
+
+#### 4. Nacharbeit nach dem Merge
+
+Der Merge hinterließ zwei Aufgaben: **24 Branch-Dateien verletzen die strengere v1.1-Regel** (17 ohne doctrine-Phase, 8 mit Verschränkung, 1 ohne Vorgeschichte; Ursache: frühere Faktenprüfungen hatten doctrine-Einträge zu event/consequences umgetaggt) und **35 Einträge aus der main-Fassung haben keine Quelle** (dazu 10 automatisch übertragene Quellen mit schwacher Zuordnung und 1 toter Link). Bearbeiter liefen für beide Aufgaben; die Prüfer-Stufe wurde bei 96 % Wochennutzung auf Wunsch des Projekteigners abgebrochen. **Ungeprüftes wird nicht committet:** Die Änderungen liegen als Patch mit Arbeitslisten, Briefing und Bearbeiter-Berichten in `docs/planung/nacharbeit-merge-2026-10-09/` (README beschreibt das Fortsetzen); die Daten sind auf dem Merge-Stand.
+
+#### 5. Abstimmung mit der main-Session
+
+Die main-Session war aus dieser Cloud-Sitzung nicht erreichbar (weder lokal noch in der
+Session-Liste). Abstimmungsnotiz an den Projekteigner übergeben: was übernommen wurde,
+welche Dateien hier in Arbeit waren, Bitte um Pause bei `data/incidents/` auf main bis zum
+Merge von PR #93, Vorschlag zur doppelten Nummer "#13".
+
+**Endstand:** 2452 Incidents; Validator 2428/2452 ohne ERROR (die 24 Phasen-Fälle oben), 0 kaputte relatedIncidents-Verweise, 0 Umlaut-URLs; 37 TL-Einträge ohne Quelle (35 aus main + 2 im zurückgezogenen Tschechien-Fall); Link-Check 404 von 213 auf 47; PR #93 mergebar, CI grün; Bundles aus `7ad3429`.
