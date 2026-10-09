@@ -10,9 +10,9 @@
  *       2006 vor Roboter-Hochlauf 2011 - oder juenger), dann >= 1 event (ein
  *       mehrstufiges Ereignis wie Festnahme + Urteil darf mehrere event-Eintraege
  *       haben), dann >= 1 consequences. Verschraenkung (Vorgeschichte NACH einem
- *       event, event NACH consequences) ist ein ERROR. Mindestens eine
- *       Vorgeschichte-Phase ist Pflicht; fehlende infrastructure ODER doctrine
- *       einzeln ist (noch) ein WARN, > 3 event-Eintraege ebenfalls.
+ *       event, event NACH consequences) ist ein ERROR. Alle vier Phasen sind
+ *       Pflicht (fehlende infrastructure/doctrine/event/consequences = ERROR,
+ *       seit 2026-10-09 nach Abschluss der Korrekturwellen); > 3 event = WARN.
  *   - title === title_de, description === description_de pro Eintrag
  *   - Chronologie strikt aufsteigend INKL. monat-genau-vor-tag-genau desselben
  *     Monats (z.B. consequence "2024-05" darf nicht VOR event "2024-05-08" stehen)
@@ -232,8 +232,10 @@ function validateFile(slug, file, mapKeys) {
     else if (nEvent > 3) warns.push(`${nEvent} event-Phasen (ungewoehnlich viele - Vorlaeufer eher als doctrine, Nachspiel als consequences taggen)`);
     if (nInfra === 0 && nDoc === 0) errors.push('keine Vorgeschichte (weder infrastructure noch doctrine)');
     else {
-      if (nInfra === 0) warns.push('keine infrastructure-Phase');
-      if (nDoc === 0) warns.push('keine doctrine-Phase');
+      // Seit 2026-10-09 ERROR: nach den Korrekturwellen 1-6 haben alle 2457 Files
+      // alle vier Phasen - der Altbestand ist sauber, neue Files muessen es auch sein.
+      if (nInfra === 0) errors.push('keine infrastructure-Phase');
+      if (nDoc === 0) errors.push('keine doctrine-Phase');
     }
     if (nCons === 0) errors.push('0 consequences-Phasen (mindestens 1 erwartet)');
 
