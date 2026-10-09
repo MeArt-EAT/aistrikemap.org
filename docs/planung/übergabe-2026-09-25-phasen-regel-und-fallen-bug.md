@@ -529,8 +529,36 @@ ein Verweis auf keine Datei zeigt.
   und Einflussoperationen - korpusweite Typ-Entscheidung.
 - *Personen:* Raymundo Ramos (OFAC-Sanktion 14.04.2026, Files nennen ihn Menschenrechtsverteidiger);
   Fall Fernandes/Ulmen; Klarna '700' ist eine Arbeitslast-Äquivalenz, keine Entlassungen.
-- *Neue Front: 541 Incidents ohne Koordinaten* (`location.geo` fehlt; US 285, GLOBAL 128,
-  GB 37, CN 17, AU 10, ...). `js/map.js` setzt für sie keinen Marker - sie erscheinen nicht
-  auf der Karte. Vorbestehend, nicht in dieser Session geändert.
+- *GLOBAL-Fälle auf der Karte:* 128 Incidents mit addressCountry GLOBAL haben bewusst keinen
+  Marker (siehe unten, Koordinaten). Sollen sie anders dargestellt werden (Liste, Sammelmarker)?
 
 **Endstand:** Validator 2452/2452 ohne ERROR (412 WARNs, v. a. gleiche Daten realer Ereignisse), **0 TL-Einträge ohne Quelle**, 0 unaufgelöste relatedIncidents-Verweise, Audit 0 Findings, 0 Smart-Chars, Umlaut-Fixer 0 Ersetzungen, Bundles aus HEAD (5dd14df), Browsertest DE/EN ohne Fehler (Detail-Panel, Permalink, Timeline).
+
+### Nachtrag 7b (2026-10-09): Koordinaten für 413 Incidents (`475faa4`, Bundles `3540fa9`)
+
+413 Incidents mit konkretem Land hatten kein `location.geo` und erschienen nicht auf der
+Karte (`js/map.js` überspringt sie). Ursache: `promote-candidates.js` übernimmt Koordinaten
+nur, wenn der AIAAIC-Kandidat welche hatte. Die 128 GLOBAL-Fälle bleiben wie bisher ohne
+Marker.
+
+**Rangfolge je Fall:** 1. dokumentierter Ereignisort (26), 2. Sitz der handelnden Behörde
+bzw. des Gerichts (23), 3. Firmensitz im selben Land zum Zeitpunkt des Vorfalls (160),
+4. sonst Landesmittelpunkt (204; Google-Zentroide, wie sie der Bestand schon nutzt).
+Der Bestand war vorher uneinheitlich (US-Landesfälle mal Washington, mal Zentroid, mal
+Firmensitz) - eine pauschale Hauptstadt-Zuordnung hätte z. B. Tesla-Unfälle nach Washington
+gelegt.
+
+**Ablauf:** je Fall zwei unabhängige Agenten (nur Wissen, keine Websuche); Übereinstimmung
+(gleiche Regel, <= 30 km) bei 391 von 413, die übrigen 22 entschied ein dritter Agent.
+Danach prüften drei weitere Agenten alle 209 konkreten Orte adversarial: 6 Korrekturen
+(Tesla-Sitz vor Dezember 2021 Palo Alto statt Austin - 2 Fälle; Ring-Sitz Hawthorne;
+Divino v. Google in San Jose; Consumer-Reports-Testgelände East Haddam; Amazons
+Schulbezirks-Preise -> Firmensitz statt Denver).
+
+**Geändert:** nur `location.geo` (nach `location.name` eingefügt, wie in
+promote-candidates.js) und `latitude`/`longitude` in `data/index.json`; `location.name`
+unverändert. 19 Dateien mit einzeilig geschriebenen Quellen-Arrays sind dabei ins
+Standardformat gebracht (Inhalt identisch, geprüft). Browsertest: 2324 Marker, keine Fehler.
+
+**Für künftige Importe:** `promote-candidates.js` sollte Kandidaten ohne Koordinaten nicht
+stumm ohne `geo` promoten (Warnung oder Pflichtfeld).

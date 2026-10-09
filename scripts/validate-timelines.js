@@ -237,6 +237,13 @@ function validateFile(slug, file, mapKeys) {
   const id = j['@id'] || '';
   if (!id.endsWith('/' + slug)) errors.push(`@id endet nicht auf /${slug}: "${id}"`);
 
+  // Ohne location.geo setzt js/map.js keinen Marker; nur GLOBAL-Faelle sind bewusst ohne
+  const loc = j.location || {};
+  const cc = (loc.address || {}).addressCountry;
+  if (cc !== 'GLOBAL' && !(loc.geo && typeof loc.geo.latitude === 'number' && typeof loc.geo.longitude === 'number')) {
+    warns.push('location.geo fehlt (kein Kartenmarker)');
+  }
+
   // asm:relatedIncidents muessen auf existierende Incident-Dateien zeigen
   // (Slugs sind transliteriert; ein Umlaut im Slug bricht den Verweis)
   const rel = j['asm:relatedIncidents'];
