@@ -686,3 +686,5 @@ welche Dateien hier in Arbeit waren, Bitte um Pause bei `data/incidents/` auf ma
 Merge von PR #93, Vorschlag zur doppelten Nummer "#13".
 
 **Endstand:** 2452 Incidents; Validator 2428/2452 ohne ERROR (die 24 Phasen-Fälle oben), 0 kaputte relatedIncidents-Verweise, 0 Umlaut-URLs; 37 TL-Einträge ohne Quelle (35 aus main + 2 im zurückgezogenen Tschechien-Fall); Link-Check 404 von 213 auf 47; PR #93 mergebar, CI grün; Bundles aus `7ad3429`.
+
+**Entscheidungen des Projekteigners (2026-10-09, nach Nachtrag 7c):** `nordkorea-digitalisierte-ueberwachung-des-inminban-...` zurückgezogen (Kernbehauptung unbelegt); die 228 älteren Link-Check-Issues als Duplikate von #230 geschlossen; PR #93 gemergt. Die übrige redaktionelle Prüfliste oben und die Nacharbeit in `docs/planung/nacharbeit-merge-2026-10-09/` bleiben offen.
