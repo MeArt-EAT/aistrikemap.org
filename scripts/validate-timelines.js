@@ -17,6 +17,9 @@
  *   - Chronologie strikt aufsteigend INKL. monat-genau-vor-tag-genau desselben
  *     Monats (z.B. consequence "2024-05" darf nicht VOR event "2024-05-08" stehen)
  *   - @id endet auf /<dateiname-ohne-.json> (Permalink, nicht umlautiert)
+ *   - jeder asm:relatedIncidents-Slug zeigt auf eine existierende Datei
+ *   - keine Umlaute in Quellen-URLs (Zeichen einer zerstörerischen Translit-Korrektur)
+ *   - location.geo vorhanden ausser bei GLOBAL (sonst kein Kartenmarker; WARN)
  *   - asm:affectedRights === asm:affectedRights_de; _en gleiche Laenge
  *   - Smart-Chars (Em-Dash U+2014, En-Dash U+2013, typografische Quotes) in
  *     IRGENDEINEM String-Feld rekursiv (inkl. EN, name, location)
@@ -210,6 +213,22 @@ function validateFile(slug, file, mapKeys) {
   const id = j['@id'] || '';
   if (!id.endsWith('/' + slug)) errors.push(`@id endet nicht auf /${slug}: "${id}"`);
 
+  // Ohne location.geo setzt js/map.js keinen Marker; nur GLOBAL-Faelle sind bewusst ohne
+  const loc = j.location || {};
+  const cc = (loc.address || {}).addressCountry;
+  if (cc !== 'GLOBAL' && !(loc.geo && typeof loc.geo.latitude === 'number' && typeof loc.geo.longitude === 'number')) {
+    warns.push('location.geo fehlt (kein Kartenmarker)');
+  }
+
+  // asm:relatedIncidents muessen auf existierende Incident-Dateien zeigen
+  // (Slugs sind transliteriert; ein Umlaut im Slug bricht den Verweis)
+  const rel = j['asm:relatedIncidents'];
+  if (Array.isArray(rel)) rel.forEach(r => {
+    if (typeof r === 'string' && !fs.existsSync(path.join(path.dirname(file), r + '.json'))) {
+      errors.push(`asm:relatedIncidents: Verweis "${r}" zeigt auf keine Datei`);
+    }
+  });
+
   // affectedRights-Parallelitaet
   const ar = j['asm:affectedRights'], arDe = j['asm:affectedRights_de'], arEn = j['asm:affectedRights_en'];
   if (!Array.isArray(ar) || !ar.length) errors.push('asm:affectedRights fehlt/leer');
@@ -252,6 +271,11 @@ function validateFile(slug, file, mapKeys) {
       if (!VALID_PHASES.has(e.phase)) errors.push(`Eintrag ${i}: unbekannte Phase "${e.phase}"`);
       if (e.title !== e.title_de) errors.push(`Eintrag ${i}: title !== title_de`);
       if (e.description !== e.description_de) errors.push(`Eintrag ${i}: description !== description_de`);
+      (e.sources || []).forEach((u, k) => {
+        // Umlaute in einer Quellen-URL stammen praktisch immer aus einer
+        // Transliterations-Korrektur, die den Link zerstört hat
+        if (typeof u === 'string' && /[äöüÄÖÜß]/.test(u)) errors.push(`Eintrag ${i}: Umlaut in Quellen-URL [${k}] (vermutlich zerstört): ${u.slice(0, 80)}`);
+      });
       const pd = parseDate(e.date);
       if (pd === null) errors.push(`Eintrag ${i}: ungueltiges Datum "${e.date}"`);
       else if (pd.isRange && cmpParts(pd.start, pd.end) > 0) {

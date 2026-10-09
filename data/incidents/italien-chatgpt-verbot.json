@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/italien-chatgpt-verbot",
-  "name": "Italien verbietet ChatGPT - erste KI-Regulierungsmaßnahme",
-  "description": "Die italienische Datenschutzbehörde Garante per la Protezione dei Dati Personali verfügt im März 2023 als erste Regulierungsbehörde weltweit eine vorübergehende Sperrung von ChatGPT wegen Verstößen gegen die DSGVO. OpenAI muss Altersverifikation, Transparenz und ein Widerspruchsrecht für Trainingsdaten einführen.",
+  "name": "Italien verbietet ChatGPT vorübergehend - Datenschutzbehörde beschränkt Datenverarbeitung",
+  "description": "Die italienische Datenschutzbehörde Garante per la Protezione dei Dati Personali ordnet am 30. März 2023 (veröffentlicht am 31. März) eine vorübergehende Beschränkung der Verarbeitung von Daten italienischer Nutzer durch OpenAI an, wegen mutmaßlicher Verstöße gegen die DSGVO. Italien ist damit nach Medienberichten das erste westliche Land, das ChatGPT blockiert. OpenAI muss unter anderem Transparenz, Betroffenenrechte einschließlich Widerspruch gegen die Nutzung für das Training, eine Rechtsgrundlage und eine Altersverifikation sicherstellen.",
   "startDate": "2023-03",
   "location": {
     "@type": "Place",
@@ -56,50 +56,71 @@
     {
       "date": "2022-11",
       "phase": "infrastructure",
-      "title": "ChatGPT veröffentlicht ohne DSGVO-Prüfung",
-      "description": "OpenAI veröffentlicht ChatGPT global, ohne spezifische Maßnahmen zur Einhaltung europäischer Datenschutzgesetze. Es gibt keine Altersverifikation, keine Transparenz über die verwendeten Trainingsdaten und kein Widerspruchsrecht für EU-Bürger.",
-      "sources": [],
-      "title_de": "ChatGPT veröffentlicht ohne DSGVO-Prüfung",
-      "title_en": "ChatGPT released without GDPR review",
-      "description_de": "OpenAI veröffentlicht ChatGPT global, ohne spezifische Maßnahmen zur Einhaltung europäischer Datenschutzgesetze. Es gibt keine Altersverifikation, keine Transparenz über die verwendeten Trainingsdaten und kein Widerspruchsrecht für EU-Bürger.",
-      "description_en": "OpenAI releases ChatGPT globally without specific measures to comply with European data protection law. There is no age verification, no transparency about the training data used, and no right to object for EU citizens."
+      "title": "ChatGPT startet weltweit als kostenlose Forschungsvorschau",
+      "description": "OpenAI veröffentlicht ChatGPT am 30. November 2022 als kostenlose Forschungsvorschau. Nach den Feststellungen der italienischen Datenschutzbehörde vom März 2023 gab es keine Information für Nutzer und Betroffene, deren Daten für das Training erhoben wurden, keine Rechtsgrundlage für die massenhafte Erhebung und Speicherung dieser Daten und keine Altersüberprüfung, obwohl die Nutzungsbedingungen Kinder unter 13 Jahren ausschließen.",
+      "sources": [
+        "https://garanteprivacy.it/garante/doc.jsp?ID=9870847",
+        "https://en.wikipedia.org/wiki/ChatGPT"
+      ],
+      "title_de": "ChatGPT startet weltweit als kostenlose Forschungsvorschau",
+      "title_en": "ChatGPT launches worldwide as a free research preview",
+      "description_de": "OpenAI veröffentlicht ChatGPT am 30. November 2022 als kostenlose Forschungsvorschau. Nach den Feststellungen der italienischen Datenschutzbehörde vom März 2023 gab es keine Information für Nutzer und Betroffene, deren Daten für das Training erhoben wurden, keine Rechtsgrundlage für die massenhafte Erhebung und Speicherung dieser Daten und keine Altersüberprüfung, obwohl die Nutzungsbedingungen Kinder unter 13 Jahren ausschließen.",
+      "description_en": "OpenAI releases ChatGPT on 30 November 2022 as a free research preview. According to the findings of the Italian data protection authority in March 2023, there was no information notice for users and data subjects whose data was collected for training, no legal basis for the mass collection and storage of that data, and no age verification, although the terms of service exclude children under 13."
     },
     {
       "date": "2023-03-20",
       "phase": "doctrine",
-      "title": "ChatGPT-Datenleck wird bekannt",
-      "description": "Ein Bug in ChatGPT führt dazu, dass Nutzer Chatverlauf-Titel und teilweise Zahlungsinformationen anderer Nutzer sehen können. OpenAI bestätigt das Datenleck. Die italienische Datenschutzbehörde leitet daraufhin eine Untersuchung ein.",
-      "sources": [],
-      "title_de": "ChatGPT-Datenleck wird bekannt",
-      "title_en": "ChatGPT data breach comes to light",
-      "description_de": "Ein Bug in ChatGPT führt dazu, dass Nutzer Chatverlauf-Titel und teilweise Zahlungsinformationen anderer Nutzer sehen können. OpenAI bestätigt das Datenleck. Die italienische Datenschutzbehörde leitet daraufhin eine Untersuchung ein.",
-      "description_en": "A bug in ChatGPT lets users see other users' conversation history titles and, in some cases, payment information. OpenAI confirms the data breach. The Italian Data Protection Authority then opens an investigation."
+      "title": "Fehler in ChatGPT macht Chat-Titel und Zahlungsdaten anderer Nutzer sichtbar",
+      "description": "Am 20. März 2023 nimmt OpenAI ChatGPT vorübergehend offline, nachdem ein Fehler in der Open-Source-Bibliothek redis-py Nutzern die Titel fremder Chatverläufe anzeigt. Wie OpenAI am 24. März mitteilt, konnten in einem neunstündigen Zeitfenster bei rund 1,2 Prozent der in dieser Zeit aktiven ChatGPT-Plus-Abonnenten zahlungsbezogene Angaben (unter anderem Name, E-Mail-Adresse, Zahlungsadresse, letzte vier Kartenziffern und Ablaufdatum) für andere sichtbar werden; vollständige Kartennummern waren nicht betroffen. Die Garante nennt diesen Vorfall in ihrer Mitteilung vom 31. März 2023 und eröffnet zugleich eine Untersuchung.",
+      "sources": [
+        "https://openai.com/blog/march-20-chatgpt-outage",
+        "https://www.bleepingcomputer.com/news/security/openai-chatgpt-payment-data-leak-caused-by-open-source-bug/"
+      ],
+      "title_de": "Fehler in ChatGPT macht Chat-Titel und Zahlungsdaten anderer Nutzer sichtbar",
+      "title_en": "ChatGPT bug exposes other users' chat titles and payment data",
+      "description_de": "Am 20. März 2023 nimmt OpenAI ChatGPT vorübergehend offline, nachdem ein Fehler in der Open-Source-Bibliothek redis-py Nutzern die Titel fremder Chatverläufe anzeigt. Wie OpenAI am 24. März mitteilt, konnten in einem neunstündigen Zeitfenster bei rund 1,2 Prozent der in dieser Zeit aktiven ChatGPT-Plus-Abonnenten zahlungsbezogene Angaben (unter anderem Name, E-Mail-Adresse, Zahlungsadresse, letzte vier Kartenziffern und Ablaufdatum) für andere sichtbar werden; vollständige Kartennummern waren nicht betroffen. Die Garante nennt diesen Vorfall in ihrer Mitteilung vom 31. März 2023 und eröffnet zugleich eine Untersuchung.",
+      "description_en": "On 20 March 2023, OpenAI takes ChatGPT temporarily offline after a bug in the open-source library redis-py shows users the titles of other users' conversations. As OpenAI reports on 24 March, within a nine-hour window payment-related information of about 1.2 percent of the ChatGPT Plus subscribers active during that period (including name, email address, payment address, last four card digits and expiry date) could become visible to others; full card numbers were not exposed. The Garante cites this incident in its statement of 31 March 2023 and opens an investigation at the same time."
     },
     {
       "date": "2023-03-31",
       "phase": "event",
       "title": "Italien verbietet ChatGPT",
-      "description": "Die Garante ordnet die sofortige vorübergehende Beschränkung der Verarbeitung italienischer Nutzerdaten durch OpenAI an. Begründung: fehlende Rechtsgrundlage für die Verarbeitung personenbezogener Daten, fehlende Altersverifikation, ungenaue Informationen über Betroffene.",
+      "description": "Die Garante ordnet mit Anordnung vom 30. März 2023, veröffentlicht am 31. März, die sofortige vorübergehende Beschränkung der Verarbeitung von Daten italienischer Nutzer durch OpenAI an und eröffnet eine Untersuchung. Begründung: fehlende Information für Nutzer und Betroffene, fehlende Rechtsgrundlage für die massenhafte Erhebung und Speicherung personenbezogener Daten zum Training, ungenaue Verarbeitung personenbezogener Daten und fehlende Altersverifikation. OpenAI sperrt ChatGPT daraufhin für Nutzer in Italien.",
       "sources": [
         "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832"
       ],
       "title_de": "Italien verbietet ChatGPT",
       "title_en": "Italy bans ChatGPT",
-      "description_de": "Die Garante ordnet die sofortige vorübergehende Beschränkung der Verarbeitung italienischer Nutzerdaten durch OpenAI an. Begründung: fehlende Rechtsgrundlage für die Verarbeitung personenbezogener Daten, fehlende Altersverifikation, ungenaue Informationen über Betroffene.",
-      "description_en": "The Garante orders an immediate temporary restriction on OpenAI's processing of Italian users' data. Rationale: lack of a legal basis for processing personal data, lack of age verification, and inaccurate information provided to data subjects."
+      "description_de": "Die Garante ordnet mit Anordnung vom 30. März 2023, veröffentlicht am 31. März, die sofortige vorübergehende Beschränkung der Verarbeitung von Daten italienischer Nutzer durch OpenAI an und eröffnet eine Untersuchung. Begründung: fehlende Information für Nutzer und Betroffene, fehlende Rechtsgrundlage für die massenhafte Erhebung und Speicherung personenbezogener Daten zum Training, ungenaue Verarbeitung personenbezogener Daten und fehlende Altersverifikation. OpenAI sperrt ChatGPT daraufhin für Nutzer in Italien.",
+      "description_en": "By order of 30 March 2023, published on 31 March, the Garante orders an immediate temporary restriction on OpenAI's processing of Italian users' data and opens an investigation. Rationale: no information notice for users and data subjects, no legal basis for the mass collection and storage of personal data for training, inaccurate processing of personal data, and no age verification. OpenAI then disables ChatGPT for users in Italy."
+    },
+    {
+      "date": "2023-04-13",
+      "phase": "consequences",
+      "title": "EU-Datenschutzausschuss richtet ChatGPT-Task-Force ein",
+      "description": "Am 13. April 2023 beschließt der Europäische Datenschutzausschuss (EDSA), eine Task Force zu ChatGPT einzurichten, um die Zusammenarbeit und den Informationsaustausch zu möglichen Durchsetzungsmaßnahmen der nationalen Datenschutzbehörden zu fördern. Die Garante hatte OpenAI zuvor Auflagen zu Transparenz, Betroffenenrechten und Rechtsgrundlage gesetzt, die bis zum 30. April 2023 zu erfüllen waren.",
+      "sources": [
+        "https://www.edpb.europa.eu/news/news/2023/edpb-resolves-dispute-transfers-meta-and-creates-task-force-chat-gpt_en",
+        "https://www.garanteprivacy.it/garante/doc.jsp?ID=9874751"
+      ],
+      "title_de": "EU-Datenschutzausschuss richtet ChatGPT-Task-Force ein",
+      "title_en": "EU data protection board launches ChatGPT task force",
+      "description_de": "Am 13. April 2023 beschließt der Europäische Datenschutzausschuss (EDSA), eine Task Force zu ChatGPT einzurichten, um die Zusammenarbeit und den Informationsaustausch zu möglichen Durchsetzungsmaßnahmen der nationalen Datenschutzbehörden zu fördern. Die Garante hatte OpenAI zuvor Auflagen zu Transparenz, Betroffenenrechten und Rechtsgrundlage gesetzt, die bis zum 30. April 2023 zu erfüllen waren.",
+      "description_en": "On 13 April 2023, the European Data Protection Board (EDPB) decides to launch a task force on ChatGPT to foster cooperation and the exchange of information on possible enforcement actions by national data protection authorities. The Garante had previously set OpenAI requirements on transparency, data subject rights and legal basis, to be met by 30 April 2023."
     },
     {
       "date": "2023-04-28",
       "phase": "consequences",
       "title": "ChatGPT kehrt mit Auflagen nach Italien zurück",
-      "description": "Nach Einführung von Altersverifikation, einer erweiterten Datenschutzerklärung, einem Opt-out für Trainingsdaten und einem EU-Vertreter hebt die Garante das Verbot auf. Der Fall löst EU-weite Untersuchungen aus - weitere Datenschutzbehörden prüfen ChatGPT.",
+      "description": "ChatGPT ist am 28. April 2023 wieder in Italien verfügbar, nachdem OpenAI seine Datenschutzerklärung und das Opt-out-Formular besser auffindbar gemacht, ein Formular für EU-Nutzer zum Widerspruch gegen die Nutzung ihrer Daten für das Training eingeführt und für Nutzer in Italien eine Altersabfrage bei der Anmeldung eingeführt hat. Die Garante begrüßt die Maßnahmen, fordert aber weiterhin ein Altersverifikationssystem und eine Informationskampagne; die Prüfung der Einhaltung der Datenschutzvorschriften läuft weiter.",
       "sources": [
-        "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9881490"
+        "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9881490",
+        "https://techcrunch.com/2023/04/28/chatgpt-resumes-in-italy/"
       ],
       "title_de": "ChatGPT kehrt mit Auflagen nach Italien zurück",
       "title_en": "ChatGPT returns to Italy under conditions",
-      "description_de": "Nach Einführung von Altersverifikation, einer erweiterten Datenschutzerklärung, einem Opt-out für Trainingsdaten und einem EU-Vertreter hebt die Garante das Verbot auf. Der Fall löst EU-weite Untersuchungen aus - weitere Datenschutzbehörden prüfen ChatGPT.",
-      "description_en": "After introducing age verification, an expanded privacy notice, an opt-out for training data, and an EU representative, the Garante lifts the ban. The case triggers EU-wide investigations - other data protection authorities review ChatGPT."
+      "description_de": "ChatGPT ist am 28. April 2023 wieder in Italien verfügbar, nachdem OpenAI seine Datenschutzerklärung und das Opt-out-Formular besser auffindbar gemacht, ein Formular für EU-Nutzer zum Widerspruch gegen die Nutzung ihrer Daten für das Training eingeführt und für Nutzer in Italien eine Altersabfrage bei der Anmeldung eingeführt hat. Die Garante begrüßt die Maßnahmen, fordert aber weiterhin ein Altersverifikationssystem und eine Informationskampagne; die Prüfung der Einhaltung der Datenschutzvorschriften läuft weiter.",
+      "description_en": "ChatGPT is available again in Italy on 28 April 2023, after OpenAI made its privacy policy and opt-out form easier to find, introduced a form for EU users to object to the use of their data for training, and added an age confirmation prompt for users in Italy. The Garante welcomes the measures but still demands an age verification system and an information campaign; the probe into compliance with data protection rules continues."
     }
   ],
   "asm:sources": [
@@ -139,12 +160,13 @@
     "lastUpdated": "2026-03-23",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-09: removed the unsupported claim 'first AI regulatory measure' (the same authority had already restricted the Replika chatbot on 2 February 2023) and described the measure as a temporary ban on processing Italian users' data. Slug unchanged for permalink stability."
   },
-  "name_de": "Italien verbietet ChatGPT - erste KI-Regulierungsmaßnahme",
-  "name_en": "Italy bans ChatGPT - first AI regulatory measure",
-  "description_de": "Die italienische Datenschutzbehörde Garante per la Protezione dei Dati Personali verfügt im März 2023 als erste Regulierungsbehörde weltweit eine vorübergehende Sperrung von ChatGPT wegen Verstößen gegen die DSGVO. OpenAI muss Altersverifikation, Transparenz und ein Widerspruchsrecht für Trainingsdaten einführen.",
-  "description_en": "In March 2023, the Italian Data Protection Authority Garante per la Protezione dei Dati Personali becomes the first regulator in the world to order a temporary block of ChatGPT for GDPR violations. OpenAI must introduce age verification, transparency, and a right to object for training data.",
+  "name_de": "Italien verbietet ChatGPT vorübergehend - Datenschutzbehörde beschränkt Datenverarbeitung",
+  "name_en": "Italy temporarily bans ChatGPT - data protection authority restricts data processing",
+  "description_de": "Die italienische Datenschutzbehörde Garante per la Protezione dei Dati Personali ordnet am 30. März 2023 (veröffentlicht am 31. März) eine vorübergehende Beschränkung der Verarbeitung von Daten italienischer Nutzer durch OpenAI an, wegen mutmaßlicher Verstöße gegen die DSGVO. Italien ist damit nach Medienberichten das erste westliche Land, das ChatGPT blockiert. OpenAI muss unter anderem Transparenz, Betroffenenrechte einschließlich Widerspruch gegen die Nutzung für das Training, eine Rechtsgrundlage und eine Altersverifikation sicherstellen.",
+  "description_en": "On 30 March 2023 (published on 31 March), the Italian Data Protection Authority Garante per la Protezione dei Dati Personali orders a temporary restriction of OpenAI's processing of Italian users' data over alleged GDPR violations. According to media reports, Italy thereby becomes the first Western country to block ChatGPT. Among other things, OpenAI must ensure transparency, data subject rights including the right to object to use for training, a legal basis and age verification.",
   "asm:affectedRights_de": [
     "Datenschutz",
     "Recht auf Auskunft",

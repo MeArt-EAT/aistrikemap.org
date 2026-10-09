@@ -10,6 +10,7 @@ on:
       - 'data/incidents/**'
       - 'data/radar/**'
       - 'scripts/check-links-v2.js'
+      - 'scripts/link-report-to-markdown.js'
       - '.github/workflows/link-check.yml'
 
 permissions:
@@ -61,26 +62,30 @@ jobs:
             echo "no-report=1" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          dead=$(node -e "console.log((JSON.parse(require('fs').readFileSync('link-check-v2-report.json','utf8')).counts || {}).dead || 0)")
+          # Body is built by a script: inline bash turned the backticks around
+          # the status code into command substitution and exceeded GitHub's
+          # 65,536-character issue limit.
+          dead=$(node scripts/link-report-to-markdown.js link-check-v2-report.json issue-body.md)
           echo "dead=$dead" >> "$GITHUB_OUTPUT"
-          {
-            echo "## Link Check V2 — $(date -u +%Y-%m-%d)"
-            echo ""
-            node -e "const r=JSON.parse(require('fs').readFileSync('link-check-v2-report.json','utf8')); const c=r.counts||{}; console.log('**Total:** '+r.total+'  \n**OK:** '+(c.ok||0)+'  \n**Paywall:** '+(c.paywall||0)+'  \n**Archived:** '+(c.archived||0)+'  \n**Dead:** '+(c.dead||0));"
-            echo ""
-            if [ "$dead" -gt 0 ]; then
-              echo "### Dead links"
-              echo ""
-              node -e "const r=JSON.parse(require('fs').readFileSync('link-check-v2-report.json','utf8')); (r.dead||[]).forEach(function(d){console.log('- [`'+(d.status||'ERR')+'`] '+d.url); (d.origins||[]).forEach(function(o){console.log('  - in '+o);});});"
-            fi
-          } > issue-body.md
 
-      - name: Open issue on dead links
+      # Reuse the open link-check issue instead of opening a new one per run
+      # (every push to data/ used to add another issue).
+      - name: Find open link-check issue
+        if: steps.summary.outputs.dead != '0' && steps.summary.outputs.dead != ''
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          number=$(gh issue list --repo "${{ github.repository }}" --label link-check --state open --limit 1 --json number --jq '.[0].number // empty')
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update issue on dead links
         if: steps.summary.outputs.dead != '0' && steps.summary.outputs.dead != ''
         uses: peter-evans/create-issue-from-file@v5
         with:
-          title: "Link Check V2 — ${{ steps.summary.outputs.dead }} dead links (${{ github.run_id }})"
+          title: "Link Check V2 — ${{ steps.summary.outputs.dead }} dead links"
           content-filepath: ./issue-body.md
+          issue-number: ${{ steps.existing.outputs.number }}
           labels: |
             link-check
             automated

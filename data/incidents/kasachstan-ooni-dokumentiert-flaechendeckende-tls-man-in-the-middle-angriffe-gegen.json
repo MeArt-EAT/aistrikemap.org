@@ -8,9 +8,9 @@
   "name": "Kasachstan: OONI dokumentiert flächendeckende TLS-Man-in-the-Middle-Angriffe gegen Nachrichten- und Menschenrechtsseiten",
   "name_de": "Kasachstan: OONI dokumentiert flächendeckende TLS-Man-in-the-Middle-Angriffe gegen Nachrichten- und Menschenrechtsseiten",
   "name_en": "Kazakhstan: OONI documents nationwide TLS man-in-the-middle attacks against news and human-rights sites",
-  "description": "Eine im September 2024 veröffentlichte gemeinsame Untersuchung von OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation belegt für den Zeitraum Juni 2023 bis Juni 2024 koordinierte TLS-Man-in-the-Middle-Angriffe auf 14 Domains in 19 Netzen. Sieben Zwischenzertifikate von vier Root-CAs - darunter ein eigens auf staatliche Anweisung erstelltes Zertifikat (NUC RK) - wurden eingesetzt, um 17 Nachrichten- und Menschenrechtsseiten (u.a. Kloop, Centralasia.media, Vice News) sowie Umgehungs-Tools zu blockieren.",
-  "description_de": "Eine im September 2024 veröffentlichte gemeinsame Untersuchung von OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation belegt für den Zeitraum Juni 2023 bis Juni 2024 koordinierte TLS-Man-in-the-Middle-Angriffe auf 14 Domains in 19 Netzen. Sieben Zwischenzertifikate von vier Root-CAs - darunter ein eigens auf staatliche Anweisung erstelltes Zertifikat (NUC RK) - wurden eingesetzt, um 17 Nachrichten- und Menschenrechtsseiten (u.a. Kloop, Centralasia.media, Vice News) sowie Umgehungs-Tools zu blockieren.",
-  "description_en": "A joint investigation by OONI, Internet Freedom Kazakhstan and Eurasian Digital Foundation published in September 2024 documents coordinated TLS man-in-the-middle attacks across 14 domains on 19 networks from June 2023 to June 2024. Seven intermediate certificates issued by four root CAs - including one (NUC RK) created on government demand - were used to block 17 news and human-rights websites (including Kloop, Centralasia.media and Vice News) and circumvention tools.",
+  "description": "Eine im September 2024 veröffentlichte gemeinsame Untersuchung von OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation belegt anhand von Messdaten aus den Jahren 2021 bis 2024 koordinierte TLS-Man-in-the-Middle-Angriffe auf mindestens 14 Domains in mindestens 19 Netzen. Dafür wurden sieben Zwischenzertifikate von vier Root-CAs mit dem Namen 'Information Security Certification Authority' eingesetzt, deren Installation die Regierung den Nutzern vorschreibt. Im Zeitraum Juni 2023 bis Juni 2024 waren zudem mindestens 17 Nachrichtenseiten (u.a. Kloop, Centralasia.media, Vice News), Petitions- und Menschenrechtsseiten sowie Umgehungs-Tools per TLS-Interferenz gesperrt.",
+  "description_de": "Eine im September 2024 veröffentlichte gemeinsame Untersuchung von OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation belegt anhand von Messdaten aus den Jahren 2021 bis 2024 koordinierte TLS-Man-in-the-Middle-Angriffe auf mindestens 14 Domains in mindestens 19 Netzen. Dafür wurden sieben Zwischenzertifikate von vier Root-CAs mit dem Namen 'Information Security Certification Authority' eingesetzt, deren Installation die Regierung den Nutzern vorschreibt. Im Zeitraum Juni 2023 bis Juni 2024 waren zudem mindestens 17 Nachrichtenseiten (u.a. Kloop, Centralasia.media, Vice News), Petitions- und Menschenrechtsseiten sowie Umgehungs-Tools per TLS-Interferenz gesperrt.",
+  "description_en": "A joint investigation by OONI, Internet Freedom Kazakhstan and Eurasian Digital Foundation published in September 2024 uses measurement data from 2021 to 2024 to document coordinated TLS man-in-the-middle attacks across at least 14 domains on at least 19 networks. Seven intermediate certificates issued by four root CAs named 'Information Security Certification Authority', which the government directs users to install, were used for this. In addition, between June 2023 and June 2024 at least 17 news websites (including Kloop, Centralasia.media and Vice News), petition and human-rights sites and circumvention tools were blocked by means of TLS interference.",
   "startDate": "2024-09",
   "location": {
     "@type": "Place",
@@ -58,8 +58,8 @@
       "type": "government",
       "asm:systems": [
         "TLS MITM",
-        "DNS filtering",
-        "NUC RK root CA"
+        "TLS interference",
+        "Information Security Certification Authority root CA"
       ],
       "name_de": "Ministerium für Digitale Entwicklung Kasachstan / kasachische ISPs",
       "name_en": "Ministry of Digital Development of Kazakhstan / Kazakhstani ISPs"
@@ -71,50 +71,56 @@
     {
       "date": "2015-11",
       "phase": "infrastructure",
-      "title": "Gesetzliche Grundlage: Kommunikationsgesetz verpflichtet ISPs auf staatliches Zertifikat",
-      "description": "Kasachstan ändert das Kommunikationsgesetz von 2004. Klausel 11 in Artikel 26 der 'Regeln zur Ausstellung und Anwendung eines Sicherheitszertifikats' verpflichtet alle nationalen Kommunikationsanbieter, den verschlüsselten Internetverkehr ihrer Kunden mit staatlich ausgestellten Zertifikaten zu überwachen. Damit entsteht die rechtliche Infrastruktur für spätere flächendeckende TLS-MITM-Angriffe.",
-      "sources": [],
-      "title_de": "Gesetzliche Grundlage: Kommunikationsgesetz verpflichtet ISPs auf staatliches Zertifikat",
-      "title_en": "Legal foundation: Communications Law obliges ISPs to use state certificate",
-      "description_de": "Kasachstan ändert das Kommunikationsgesetz von 2004. Klausel 11 in Artikel 26 der 'Regeln zur Ausstellung und Anwendung eines Sicherheitszertifikats' verpflichtet alle nationalen Kommunikationsanbieter, den verschlüsselten Internetverkehr ihrer Kunden mit staatlich ausgestellten Zertifikaten zu überwachen. Damit entsteht die rechtliche Infrastruktur für spätere flächendeckende TLS-MITM-Angriffe.",
-      "description_en": "Kazakhstan amends its 2004 Communications Law. Clause 11 of Article 26 of the 'Rules for Issuing and Applying a Security Certificate' obliges all national communications service providers to monitor their customers' encrypted internet traffic with government-issued certificates. This creates the legal infrastructure for later nationwide TLS-MITM attacks."
+      "title": "Gesetzliche Grundlage: Kommunikationsgesetz führt 'nationales Sicherheitszertifikat' ein",
+      "description": "Kasachstan ändert das Kommunikationsgesetz von 2004 und führt ein 'nationales Sicherheitszertifikat' ein: Ab 2016 sollen Kommunikationsanbieter verschlüsselten Verkehr unter Anwendung dieses Zertifikats durchleiten. Kazakhtelecom kündigt Ende November 2015 an, Nutzer müssten das Zertifikat auf ihren Geräten installieren, und entfernt die Mitteilung wenige Tage später wieder. Die EFF warnt, das Zertifikat ermögliche Man-in-the-Middle-Angriffe auf HTTPS-Verbindungen. Damit entsteht die rechtliche Grundlage für spätere TLS-MITM-Angriffe.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2015/12/kazakhstan-considers-plan-snoop-all-internet-traffic",
+        "https://www.theregister.co.uk/2015/12/03/kazakhstan_to_maninthemiddle_all_internet_traffic/"
+      ],
+      "title_de": "Gesetzliche Grundlage: Kommunikationsgesetz führt 'nationales Sicherheitszertifikat' ein",
+      "title_en": "Legal foundation: Communications Law introduces a 'national security certificate'",
+      "description_de": "Kasachstan ändert das Kommunikationsgesetz von 2004 und führt ein 'nationales Sicherheitszertifikat' ein: Ab 2016 sollen Kommunikationsanbieter verschlüsselten Verkehr unter Anwendung dieses Zertifikats durchleiten. Kazakhtelecom kündigt Ende November 2015 an, Nutzer müssten das Zertifikat auf ihren Geräten installieren, und entfernt die Mitteilung wenige Tage später wieder. Die EFF warnt, das Zertifikat ermögliche Man-in-the-Middle-Angriffe auf HTTPS-Verbindungen. Damit entsteht die rechtliche Grundlage für spätere TLS-MITM-Angriffe.",
+      "description_en": "Kazakhstan amends its 2004 Communications Law and introduces a 'national security certificate': from 2016, communications providers are to pass encrypted traffic using this certificate. At the end of November 2015 Kazakhtelecom announces that users must install the certificate on their devices, and removes the notice a few days later. The EFF warns that the certificate enables man-in-the-middle attacks on HTTPS connections. This creates the legal basis for later TLS-MITM attacks."
     },
     {
-      "date": "2019-07",
+      "date": "2019-07 bis 2020-12",
       "phase": "doctrine",
-      "title": "Erster MITM-Versuch und Sperrung durch Browser-Hersteller",
-      "description": "Am 17. Juli 2019 fordert die Regierung alle ISPs auf, Kunden zur Installation eines staatlichen Root-Zertifikats zu zwingen. Mozilla, Google und Apple blockieren das 'nationale Sicherheitszertifikat' am 21. August 2019 in Firefox, Chrome und Safari, selbst bei manueller Installation. Censored Planet zeigt: Die Zielliste belegt Überwachung sozialer Netzwerke, nicht das offizielle Argument 'Schutz vor Bankbetrug'. Die Regierung pausiert öffentlich - die Doktrin bleibt aktiv.",
-      "sources": [],
-      "title_de": "Erster MITM-Versuch und Sperrung durch Browser-Hersteller",
-      "title_en": "First MITM attempt and pushback from browser vendors",
-      "description_de": "Am 17. Juli 2019 fordert die Regierung alle ISPs auf, Kunden zur Installation eines staatlichen Root-Zertifikats zu zwingen. Mozilla, Google und Apple blockieren das 'nationale Sicherheitszertifikat' am 21. August 2019 in Firefox, Chrome und Safari, selbst bei manueller Installation. Censored Planet zeigt: Die Zielliste belegt Überwachung sozialer Netzwerke, nicht das offizielle Argument 'Schutz vor Bankbetrug'. Die Regierung pausiert öffentlich - die Doktrin bleibt aktiv.",
-      "description_en": "On 17 July 2019, the government orders all ISPs to compel customers to install a government root certificate. Mozilla, Google and Apple block the 'national security certificate' on 21 August 2019 in Firefox, Chrome and Safari, even when installed manually. Censored Planet shows that the target list points to surveillance of social networks, not the official rationale of 'protection from bank fraud'. The government publicly pauses - the doctrine stays alive."
+      "title": "MITM-Versuche 2019 und 2020 scheitern an Browser-Herstellern",
+      "description": "Ab dem 17. Juli 2019 drängen kasachische Internetanbieter ihre Kunden, ein staatliches Root-Zertifikat zu installieren. Censored Planet (University of Michigan) stellt fest, dass die Interception nur bei 37 Domains greift, ausschließlich soziale Netzwerke und Kommunikationsdienste wie Facebook, Google, Twitter, YouTube und VK. Die Regierung erklärt den Einsatz zum Test gegen Cyberbedrohungen und gibt ihn auf; am 21. August 2019 blockieren Mozilla, Google und Apple das Zertifikat in Firefox, Chrome und Safari, selbst bei manueller Installation. Im Dezember 2020 verlangen die Behörden in Nur-Sultan im Rahmen einer 'Cybersicherheitsübung' erneut die Installation eines Zertifikats; die Browser-Hersteller sperren auch dieses.",
+      "sources": [
+        "https://thehackernews.com/2019/08/kazakhstan-root-certificate.html",
+        "https://gigazine.net/gsc_news/en/20201221-browser-makers-ban-kazakhstan-root-certificate"
+      ],
+      "title_de": "MITM-Versuche 2019 und 2020 scheitern an Browser-Herstellern",
+      "title_en": "MITM attempts in 2019 and 2020 blocked by browser vendors",
+      "description_de": "Ab dem 17. Juli 2019 drängen kasachische Internetanbieter ihre Kunden, ein staatliches Root-Zertifikat zu installieren. Censored Planet (University of Michigan) stellt fest, dass die Interception nur bei 37 Domains greift, ausschließlich soziale Netzwerke und Kommunikationsdienste wie Facebook, Google, Twitter, YouTube und VK. Die Regierung erklärt den Einsatz zum Test gegen Cyberbedrohungen und gibt ihn auf; am 21. August 2019 blockieren Mozilla, Google und Apple das Zertifikat in Firefox, Chrome und Safari, selbst bei manueller Installation. Im Dezember 2020 verlangen die Behörden in Nur-Sultan im Rahmen einer 'Cybersicherheitsübung' erneut die Installation eines Zertifikats; die Browser-Hersteller sperren auch dieses.",
+      "description_en": "From 17 July 2019, Kazakh internet providers push their customers to install a government root certificate. Censored Planet (University of Michigan) finds that interception is triggered for only 37 domains, all of them social networks and communication services such as Facebook, Google, Twitter, YouTube and VK. The government calls the deployment a test against cyber threats and abandons it; on 21 August 2019 Mozilla, Google and Apple block the certificate in Firefox, Chrome and Safari, even when installed manually. In December 2020 the authorities in Nur-Sultan again require installation of a certificate as part of a 'cybersecurity exercise'; the browser vendors block this one too."
     },
     {
       "date": "2023-06 bis 2024-06",
       "phase": "event",
-      "title": "NUC RK Root-CA und 7 Intermediates für 12 Monate MITM gegen 17 Sites",
-      "description": "OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation messen zwölf Monate lang koordinierte TLS-MITM-Angriffe. Eine eigens auf staatliche Anweisung erstellte Root-CA 'NUC RK' und drei weitere Root-CAs emittieren sieben Intermediate-Zertifikate. Damit werden 17 Nachrichten- und Menschenrechtsseiten - u. a. Kloop, Centralasia.media, Vice News - sowie Umgehungs-Tools auf mindestens 19 Netzen blockiert. Die Intermediates sind nur 75 Tage gültig; neue werden alle 74 Tage nachgeschoben.",
+      "title": "Staatlich vorgeschriebene Root-CAs und 7 Intermediates: MITM gegen 14 Domains, Sperre von 17 Nachrichtenseiten",
+      "description": "OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation werten Messdaten von Juni 2023 bis Juni 2024 aus, für die TLS-MITM-Analyse zusätzlich Daten seit 2021. Vier Root-CAs mit dem Namen 'Information Security Certification Authority', deren Installation die Regierung vorschreibt, signieren sieben Intermediate-Zertifikate, mit denen TLS-MITM-Angriffe gegen mindestens 14 Domains auf mindestens 19 Netzen laufen. Per TLS-Interferenz gesperrt sind zudem mindestens 17 Nachrichtenseiten (viele russische, dazu Kloop, Centralasia.media und Vice News), Menschenrechts- und Petitionsseiten sowie Umgehungs-Tools. Die Intermediates sind nur 75 Tage gültig und müssten spätestens alle 74 Tage erneuert werden; OONI stellt Lücken bei der Erneuerung fest, in denen sie dennoch für MITM eingesetzt werden.",
       "sources": [
         "https://ooni.org/post/2024-kazakhstan-report/"
       ],
-      "title_de": "NUC RK Root-CA und 7 Intermediates für 12 Monate MITM gegen 17 Sites",
-      "title_en": "NUC RK root CA and 7 intermediates for 12 months of MITM against 17 sites",
-      "description_de": "OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation messen zwölf Monate lang koordinierte TLS-MITM-Angriffe. Eine eigens auf staatliche Anweisung erstellte Root-CA 'NUC RK' und drei weitere Root-CAs emittieren sieben Intermediate-Zertifikate. Damit werden 17 Nachrichten- und Menschenrechtsseiten - u. a. Kloop, Centralasia.media, Vice News - sowie Umgehungs-Tools auf mindestens 19 Netzen blockiert. Die Intermediates sind nur 75 Tage gültig; neue werden alle 74 Tage nachgeschoben.",
-      "description_en": "OONI, Internet Freedom Kazakhstan and the Eurasian Digital Foundation measure twelve months of coordinated TLS-MITM attacks. A purpose-built root CA 'NUC RK', created on government demand, and three further root CAs issue seven intermediate certificates. They are used to block 17 news and human-rights sites - including Kloop, Centralasia.media and Vice News - as well as circumvention tools on at least 19 networks. The intermediates are valid for only 75 days; new ones are reissued every 74 days."
+      "title_de": "Staatlich vorgeschriebene Root-CAs und 7 Intermediates: MITM gegen 14 Domains, Sperre von 17 Nachrichtenseiten",
+      "title_en": "Government-mandated root CAs and 7 intermediates: MITM against 14 domains, blocking of 17 news sites",
+      "description_de": "OONI, Internet Freedom Kazakhstan und Eurasian Digital Foundation werten Messdaten von Juni 2023 bis Juni 2024 aus, für die TLS-MITM-Analyse zusätzlich Daten seit 2021. Vier Root-CAs mit dem Namen 'Information Security Certification Authority', deren Installation die Regierung vorschreibt, signieren sieben Intermediate-Zertifikate, mit denen TLS-MITM-Angriffe gegen mindestens 14 Domains auf mindestens 19 Netzen laufen. Per TLS-Interferenz gesperrt sind zudem mindestens 17 Nachrichtenseiten (viele russische, dazu Kloop, Centralasia.media und Vice News), Menschenrechts- und Petitionsseiten sowie Umgehungs-Tools. Die Intermediates sind nur 75 Tage gültig und müssten spätestens alle 74 Tage erneuert werden; OONI stellt Lücken bei der Erneuerung fest, in denen sie dennoch für MITM eingesetzt werden.",
+      "description_en": "OONI, Internet Freedom Kazakhstan and the Eurasian Digital Foundation analyse measurement data from June 2023 to June 2024, and for the TLS-MITM analysis also data going back to 2021. Four root CAs named 'Information Security Certification Authority', whose installation the government mandates, sign seven intermediate certificates used for TLS-MITM attacks against at least 14 domains on at least 19 networks. In addition, at least 17 news sites (many Russian, plus Kloop, Centralasia.media and Vice News), human-rights and petition sites and circumvention tools are blocked by means of TLS interference. The intermediates are valid for only 75 days and would have to be renewed at least every 74 days; OONI finds gaps in the renewal during which they are nevertheless used for MITM."
     },
     {
       "date": "2024-09",
       "phase": "consequences",
-      "title": "OONI-Report deckt System auf - Mozilla-Tracking, Methode bleibt",
-      "description": "Am 19. September 2024 veröffentlicht OONI den vollständigen Report. Das Berkman Klein Center und die Mozilla-Bugzilla-Community greifen den Fall auf; technisch wird klar, dass Kasachstan eine permanente, juristisch abgesicherte MITM-Infrastruktur betreibt, die alle 74 Tage rotiert. Für Journalisten und Menschenrechtsverteidiger im Land bedeutet das: jede HTTPS-Verbindung zu kritischen Quellen kann mitgelesen werden, Quellenschutz bricht zusammen.",
+      "title": "OONI-Report deckt System auf - Methode bleibt",
+      "description": "Am 19. September 2024 veröffentlicht OONI den vollständigen Report; das Berkman Klein Center der Harvard University verbreitet ihn. Er zeigt, dass Kasachstan TLS-Interception trotz der Browser-Sperren von 2019 und 2020 auf gesetzlicher Grundlage fortsetzt, mit kurzlebigen Zwischenzertifikaten, die regelmäßig erneuert werden. Für Journalisten und Menschenrechtsverteidiger im Land bedeutet das: Verbindungen zu betroffenen Seiten können abgefangen oder blockiert werden, der Quellenschutz ist gefährdet.",
       "sources": [
         "https://cyber.harvard.edu/story/2024-09/kazakhstan-tls-mitm-attacks-and-blocking-news-media-human-rights-and-circumvention"
       ],
-      "title_de": "OONI-Report deckt System auf - Mozilla-Tracking, Methode bleibt",
-      "title_en": "OONI report exposes the system - Mozilla tracking, method stays in place",
-      "description_de": "Am 19. September 2024 veröffentlicht OONI den vollständigen Report. Das Berkman Klein Center und die Mozilla-Bugzilla-Community greifen den Fall auf; technisch wird klar, dass Kasachstan eine permanente, juristisch abgesicherte MITM-Infrastruktur betreibt, die alle 74 Tage rotiert. Für Journalisten und Menschenrechtsverteidiger im Land bedeutet das: jede HTTPS-Verbindung zu kritischen Quellen kann mitgelesen werden, Quellenschutz bricht zusammen.",
-      "description_en": "On 19 September 2024 OONI publishes the full report. The Berkman Klein Center and the Mozilla Bugzilla community pick up the case; technically it becomes clear that Kazakhstan runs a permanent, legally backed MITM infrastructure that rotates every 74 days. For journalists and human-rights defenders inside the country this means that every HTTPS connection to critical sources can be intercepted, and source protection collapses."
+      "title_de": "OONI-Report deckt System auf - Methode bleibt",
+      "title_en": "OONI report exposes the system - method stays in place",
+      "description_de": "Am 19. September 2024 veröffentlicht OONI den vollständigen Report; das Berkman Klein Center der Harvard University verbreitet ihn. Er zeigt, dass Kasachstan TLS-Interception trotz der Browser-Sperren von 2019 und 2020 auf gesetzlicher Grundlage fortsetzt, mit kurzlebigen Zwischenzertifikaten, die regelmäßig erneuert werden. Für Journalisten und Menschenrechtsverteidiger im Land bedeutet das: Verbindungen zu betroffenen Seiten können abgefangen oder blockiert werden, der Quellenschutz ist gefährdet.",
+      "description_en": "On 19 September 2024 OONI publishes the full report; Harvard's Berkman Klein Center republishes it. It shows that Kazakhstan continues TLS interception on a legal basis despite the browser blocks of 2019 and 2020, using short-lived intermediate certificates that are renewed regularly. For journalists and human-rights defenders inside the country this means that connections to affected sites can be intercepted or blocked, and source protection is at risk."
     }
   ],
   "asm:sources": [

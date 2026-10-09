@@ -21,9 +21,9 @@ consequences). Mindestens 4, hoechstens 6.
 
 ## Phasen-Modell (Schema v1.1, Stand 2026-10-08) - was der Validator prueft
 
-- **Alle vier Phasen kommen vor.** Mindestens 1 infrastructure ODER doctrine
-  (Vorgeschichte) ist Pflicht; fehlt eine der beiden einzeln, ist das ein WARN
-  und soll vermieden werden. Mindestens 1 event, mindestens 1 consequences.
+- **Alle vier Phasen kommen vor.** Mindestens 1 infrastructure UND mindestens
+  1 doctrine sind Pflicht (fehlt eine der beiden, ist das seit 2026-10-09 ein
+  ERROR). Mindestens 1 event, mindestens 1 consequences.
 - **Vorgeschichte in beliebiger Reihenfolge.** infrastructure und doctrine
   ordnen sich NUR nach Datum: Eine Doktrin kann aelter sein als die
   Infrastruktur (EU-Maschinenrichtlinie 2006 vor Roboter-Hochlauf 2011) oder

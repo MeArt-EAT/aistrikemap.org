@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-google-location-history-polizei",
   "name": "USA: Googles Geofence-Beschlüsse - Standortdaten aller Personen an Tatorten",
-  "description": "US-amerikanische Strafverfolgungsbehörden nutzen seit 2016 sogenannte Geofence Warrants, um von Google die Standortdaten aller Personen zu erhalten, die sich zum Tatzeitpunkt in einem definierten Gebiet aufgehalten haben. Betroffen sind Tausende unschuldige Menschen, darunter überproportional viele Angehörige ethnischer Minderheiten. Falsche Verdächtigungen führten zu Verhaftungen. 2023 kündigte Google an, die massenhafte Standortspeicherung zu beenden.",
+  "description": "US-amerikanische Strafverfolgungsbehörden nutzen seit 2016 sogenannte Geofence Warrants, um von Google die Standortdaten aller Personen zu erhalten, die sich zum Tatzeitpunkt in einem definierten Gebiet aufgehalten haben. Allein 2020 erhielt Google 11.554 solcher Beschlüsse; erfasst werden dabei auch zahlreiche Unbeteiligte. Falsche Verdächtigungen führten zu Festnahmen, etwa von Jorge Molina in Arizona. Ende 2023 kündigte Google an, Standortverläufe künftig auf den Geräten der Nutzer zu speichern; 2026 stufte der US Supreme Court Geofence-Abfragen als Durchsuchung im Sinne des Vierten Verfassungszusatzes ein.",
   "startDate": "2016-01",
   "location": {
     "@type": "Place",
@@ -25,8 +25,7 @@
   },
   "asm:incidentType": [
     "surveillance",
-    "data-misuse",
-    "discrimination"
+    "data-misuse"
   ],
   "asm:affectedRights": [
     "Recht auf Privatsphäre",
@@ -40,8 +39,7 @@
       "type": "company",
       "asm:systems": [
         "Google Location History",
-        "Sensorvault-Datenbank",
-        "Geofence Warrant API"
+        "Sensorvault-Datenbank"
       ],
       "name_de": "Google LLC",
       "name_en": "Google LLC"
@@ -64,49 +62,71 @@
       "date": "2016-01",
       "phase": "infrastructure",
       "title": "Erste Geofence-Beschlüsse an Google",
-      "description": "US-amerikanische Strafverfolgungsbehörden beginnen, Gerichtsbeschlüsse für den Zugriff auf Googles Sensorvault-Datenbank zu nutzen. Diese Datenbank enthielt detaillierte Bewegungsprofile von Hunderten Millionen Nutzern. Erster dokumentierter Fall in Raleigh, North Carolina: 9 Personen, die zunächst als Verdächtige galten, entpuppten sich als unschuldig.",
+      "description": "US-amerikanische Strafverfolgungsbehörden beginnen, mit Gerichtsbeschlüssen auf Googles Standortdatenbank Sensorvault zuzugreifen; nach Angaben von Google gehen solche Geofence-Anfragen seit 2016 ein. Die Datenbank enthielt detaillierte Standortaufzeichnungen von mindestens Hunderten Millionen Geräten weltweit. Zu den frühesten öffentlich dokumentierten Fällen gehören mindestens vier Ermittlungen der Polizei in Raleigh, North Carolina, aus dem Jahr 2017, unter anderem wegen Mordes und Brandstiftung, über die der Sender WRAL 2018 berichtete.",
       "sources": [
-        "https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html"
+        "https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html",
+        "https://www.wral.com/story/17377435/"
       ],
       "title_de": "Erste Geofence-Beschlüsse an Google",
-      "description_de": "US-amerikanische Strafverfolgungsbehörden beginnen, Gerichtsbeschlüsse für den Zugriff auf Googles Sensorvault-Datenbank zu nutzen. Diese Datenbank enthielt detaillierte Bewegungsprofile von Hunderten Millionen Nutzern. Erster dokumentierter Fall in Raleigh, North Carolina: 9 Personen, die zunächst als Verdächtige galten, entpuppten sich als unschuldig.",
+      "description_de": "US-amerikanische Strafverfolgungsbehörden beginnen, mit Gerichtsbeschlüssen auf Googles Standortdatenbank Sensorvault zuzugreifen; nach Angaben von Google gehen solche Geofence-Anfragen seit 2016 ein. Die Datenbank enthielt detaillierte Standortaufzeichnungen von mindestens Hunderten Millionen Geräten weltweit. Zu den frühesten öffentlich dokumentierten Fällen gehören mindestens vier Ermittlungen der Polizei in Raleigh, North Carolina, aus dem Jahr 2017, unter anderem wegen Mordes und Brandstiftung, über die der Sender WRAL 2018 berichtete.",
       "title_en": "First geofence warrants served on Google",
-      "description_en": "US law enforcement agencies begin using court orders to access Google's Sensorvault database. This database contained detailed movement profiles of hundreds of millions of users. First documented case in Raleigh, North Carolina: 9 people initially treated as suspects turned out to be innocent."
+      "description_en": "US law enforcement agencies begin using court orders to access Google's Sensorvault location database; according to Google, such geofence requests have been arriving since 2016. The database contained detailed location records of at least hundreds of millions of devices worldwide. Among the earliest publicly documented cases are at least four investigations by police in Raleigh, North Carolina, in 2017, including murder and arson cases, reported by broadcaster WRAL in 2018."
     },
     {
       "date": "2019-04",
       "phase": "doctrine",
       "title": "NYT-Recherche legt Massenausmaß der Standortabfragen offen",
-      "description": "Die New York Times veröffentlicht eine umfassende Untersuchung, die zeigt, dass Geofence-Anfragen an Google von wenigen Dutzend jährlich auf Tausende gestiegen sind. Ein Unschuldiger in Arizona wurde aufgrund von Google-Standortdaten als Mordverdächtiger behandelt und über ein Jahr lang verfolgt. EFF und STOP bezeichnen die Praxis als verfassungswidrig.",
+      "description": "Die New York Times veröffentlicht eine umfassende Untersuchung über Googles Sensorvault und die stark wachsende Zahl von Geofence-Anfragen der Polizei. Sie schildert den Fall von Jorge Molina in Avondale, Arizona: Er wurde im Dezember 2018 aufgrund von Google-Standortdaten als Mordverdächtiger festgenommen und saß sechs Tage in Haft, bevor er ohne Anklage freikam.",
       "sources": [
-        "https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html"
+        "https://www.nytimes.com/interactive/2019/04/13/us/google-location-tracking-police.html",
+        "https://www.phoenixnewtimes.com/news/google-geofence-location-data-avondale-wrongful-arrest-molina-gaeta-11426374"
       ],
       "title_de": "NYT-Recherche legt Massenausmaß der Standortabfragen offen",
-      "description_de": "Die New York Times veröffentlicht eine umfassende Untersuchung, die zeigt, dass Geofence-Anfragen an Google von wenigen Dutzend jährlich auf Tausende gestiegen sind. Ein Unschuldiger in Arizona wurde aufgrund von Google-Standortdaten als Mordverdächtiger behandelt und über ein Jahr lang verfolgt. EFF und STOP bezeichnen die Praxis als verfassungswidrig.",
+      "description_de": "Die New York Times veröffentlicht eine umfassende Untersuchung über Googles Sensorvault und die stark wachsende Zahl von Geofence-Anfragen der Polizei. Sie schildert den Fall von Jorge Molina in Avondale, Arizona: Er wurde im Dezember 2018 aufgrund von Google-Standortdaten als Mordverdächtiger festgenommen und saß sechs Tage in Haft, bevor er ohne Anklage freikam.",
       "title_en": "NYT investigation exposes mass scale of location requests",
-      "description_en": "The New York Times publishes a comprehensive investigation showing that geofence requests to Google have grown from a few dozen per year to thousands. An innocent man in Arizona was treated as a murder suspect based on Google location data and was investigated for more than a year. EFF and STOP call the practice unconstitutional."
+      "description_en": "The New York Times publishes a comprehensive investigation into Google's Sensorvault and the rapidly growing number of police geofence requests. It describes the case of Jorge Molina in Avondale, Arizona: in December 2018 he was arrested as a murder suspect based on Google location data and spent six days in jail before being released without charges."
     },
     {
-      "date": "2020-06",
+      "date": "2020-05",
       "phase": "event",
-      "title": "BLM-Proteste: Massenerfassung von Demonstranten",
-      "description": "Während der Black Lives Matter Proteste 2020 werden Berichte bekannt, dass Geofence-Beschlüsse in der Nähe von Protestorten ausgegeben werden. Die Surveillance Technology Oversight Project (STOP) dokumentiert eine Zunahme von Anfragen, die strukturell Minderheitengemeinschaften betreffen. Falschidentifikationen betreffen überproportional schwarze Männer.",
-      "sources": [],
-      "title_de": "BLM-Proteste: Massenerfassung von Demonstranten",
-      "description_de": "Während der Black Lives Matter Proteste 2020 werden Berichte bekannt, dass Geofence-Beschlüsse in der Nähe von Protestorten ausgegeben werden. Die Surveillance Technology Oversight Project (STOP) dokumentiert eine Zunahme von Anfragen, die strukturell Minderheitengemeinschaften betreffen. Falschidentifikationen betreffen überproportional schwarze Männer.",
-      "title_en": "BLM protests: mass capture of demonstrators",
-      "description_en": "During the 2020 Black Lives Matter protests, reports emerge that geofence warrants are being issued near protest locations. The Surveillance Technology Oversight Project (STOP) documents an increase in requests that structurally target minority communities. False identifications disproportionately affect Black men."
+      "title": "Geofence-Beschluss erfasst Protestgebiet in Minneapolis",
+      "description": "Nach der Tötung von George Floyd erwirkt die Polizei in Minneapolis einen Geofence-Beschluss, der Google verpflichtet, Kontodaten aller Personen herauszugeben, die sich am 27. Mai 2020 zwischen 17:20 und 17:40 Uhr im Bereich eines während der Proteste beschädigten AutoZone-Ladens aufhielten. Erfasst werden auch Unbeteiligte wie der Anwohner Said Abdullahi, der die Proteste filmte und von Google über die Abfrage informiert wurde. Laut 2021 veröffentlichten Zahlen von Google stieg die Zahl der Geofence-Beschlüsse von 982 im Jahr 2018 auf 11.554 im Jahr 2020 - zeitweise rund ein Viertel aller US-Beschlüsse an Google.",
+      "sources": [
+        "https://gizmodo.com/minneapolis-cops-reportedly-used-google-location-data-t-1846217563",
+        "https://techcrunch.com/2021/08/19/google-geofence-warrants/amp"
+      ],
+      "title_de": "Geofence-Beschluss erfasst Protestgebiet in Minneapolis",
+      "description_de": "Nach der Tötung von George Floyd erwirkt die Polizei in Minneapolis einen Geofence-Beschluss, der Google verpflichtet, Kontodaten aller Personen herauszugeben, die sich am 27. Mai 2020 zwischen 17:20 und 17:40 Uhr im Bereich eines während der Proteste beschädigten AutoZone-Ladens aufhielten. Erfasst werden auch Unbeteiligte wie der Anwohner Said Abdullahi, der die Proteste filmte und von Google über die Abfrage informiert wurde. Laut 2021 veröffentlichten Zahlen von Google stieg die Zahl der Geofence-Beschlüsse von 982 im Jahr 2018 auf 11.554 im Jahr 2020 - zeitweise rund ein Viertel aller US-Beschlüsse an Google.",
+      "title_en": "Geofence warrant covers protest area in Minneapolis",
+      "description_en": "After the killing of George Floyd, Minneapolis police obtain a geofence warrant compelling Google to hand over account data for everyone who was in the area of an AutoZone store damaged during the protests between 5:20 and 5:40 pm on May 27, 2020. Uninvolved people are captured as well, such as resident Said Abdullahi, who was filming the protests and was notified of the request by Google. According to figures Google published in 2021, the number of geofence warrants rose from 982 in 2018 to 11,554 in 2020 - at times about a quarter of all US warrants received by Google."
     },
     {
       "date": "2023-12",
       "phase": "consequences",
-      "title": "Google beendet massenhafte Standortspeicherung",
-      "description": "Unter dem Druck zivilgesellschaftlicher Kritik, mehrerer Gerichtsverfahren und des bevorstehenden EU Digital Services Act kündigt Google an, die standortzentrierte Massenspeicherung in seinem Sensorvault zu beenden und Standortdaten künftig nur noch auf Geräten der Nutzer zu speichern. Damit werden Geofence-Beschlüsse faktisch unmöglich. Bereits erlittene Schäden bleiben unentschädigt.",
-      "sources": [],
-      "title_de": "Google beendet massenhafte Standortspeicherung",
-      "description_de": "Unter dem Druck zivilgesellschaftlicher Kritik, mehrerer Gerichtsverfahren und des bevorstehenden EU Digital Services Act kündigt Google an, die standortzentrierte Massenspeicherung in seinem Sensorvault zu beenden und Standortdaten künftig nur noch auf Geräten der Nutzer zu speichern. Damit werden Geofence-Beschlüsse faktisch unmöglich. Bereits erlittene Schäden bleiben unentschädigt.",
-      "title_en": "Google ends mass storage of location data",
-      "description_en": "Under pressure from civil society criticism, several court cases, and the upcoming EU Digital Services Act, Google announces it will end the location-centered mass storage in its Sensorvault and from now on only store location data on users' devices. This effectively makes geofence warrants impossible. Already incurred harms remain uncompensated."
+      "title": "Google verlagert Standortverlauf auf Nutzergeräte",
+      "description": "Im Dezember 2023 kündigt Google an, die Timeline-Daten des standardmäßig deaktivierten Standortverlaufs künftig auf den Geräten der Nutzer statt in der Cloud zu speichern, die Standard-Löschfrist auf drei Monate zu verkürzen und Cloud-Backups so zu verschlüsseln, dass Google sie nicht lesen kann. Geofence-Beschlüsse nennt Google dabei nicht; die EFF wertet den Schritt jedoch als deutliche Einschränkung der Möglichkeit, massenhaft Standortdaten an Behörden herauszugeben.",
+      "sources": [
+        "https://www.eff.org/deeplinks/2023/12/end-geofence-warrants",
+        "https://www.notebookcheck.net/Google-Highly-confidential-data-to-be-stored-on-the-device-in-future-along-with-encrypted-cloud-backup.782626.0.html"
+      ],
+      "title_de": "Google verlagert Standortverlauf auf Nutzergeräte",
+      "description_de": "Im Dezember 2023 kündigt Google an, die Timeline-Daten des standardmäßig deaktivierten Standortverlaufs künftig auf den Geräten der Nutzer statt in der Cloud zu speichern, die Standard-Löschfrist auf drei Monate zu verkürzen und Cloud-Backups so zu verschlüsseln, dass Google sie nicht lesen kann. Geofence-Beschlüsse nennt Google dabei nicht; die EFF wertet den Schritt jedoch als deutliche Einschränkung der Möglichkeit, massenhaft Standortdaten an Behörden herauszugeben.",
+      "title_en": "Google moves Location History to users' devices",
+      "description_en": "In December 2023, Google announces that Timeline data from Location History, which is off by default, will in future be stored on users' devices instead of in the cloud, that the default deletion period will be shortened to three months, and that cloud backups will be encrypted so that Google cannot read them. Google does not mention geofence warrants; the EFF, however, considers the move a significant restriction on the ability to hand over bulk location data to authorities."
+    },
+    {
+      "date": "2026-06",
+      "phase": "consequences",
+      "title": "Supreme Court: Geofence-Abfrage ist eine Durchsuchung",
+      "description": "Am 29. Juni 2026 entscheidet der US Supreme Court in Chatrie v. United States mit 6:3 Stimmen, dass die Beschaffung von Google-Standortverlaufsdaten über einen Geofence-Beschluss eine Durchsuchung im Sinne des Vierten Verfassungszusatzes ist. Ob der konkrete Beschluss im Fall eines Überfalls auf eine Kreditgenossenschaft in Virginia zulässig war, entscheidet das Gericht nicht und verweist die Sache an das Bundesberufungsgericht für den Vierten Bezirk zurück.",
+      "sources": [
+        "https://www.congress.gov/crs-product/LSB11274",
+        "https://www.justsecurity.org/145214/chatrie-fourth-amendment-supreme-court/"
+      ],
+      "title_de": "Supreme Court: Geofence-Abfrage ist eine Durchsuchung",
+      "description_de": "Am 29. Juni 2026 entscheidet der US Supreme Court in Chatrie v. United States mit 6:3 Stimmen, dass die Beschaffung von Google-Standortverlaufsdaten über einen Geofence-Beschluss eine Durchsuchung im Sinne des Vierten Verfassungszusatzes ist. Ob der konkrete Beschluss im Fall eines Überfalls auf eine Kreditgenossenschaft in Virginia zulässig war, entscheidet das Gericht nicht und verweist die Sache an das Bundesberufungsgericht für den Vierten Bezirk zurück.",
+      "title_en": "Supreme Court: geofence query is a search",
+      "description_en": "On June 29, 2026, the US Supreme Court rules 6-3 in Chatrie v. United States that obtaining Google Location History data via a geofence warrant is a search under the Fourth Amendment. The Court does not decide whether the specific warrant in a Virginia credit union robbery case was lawful and remands the case to the US Court of Appeals for the Fourth Circuit."
     }
   ],
   "asm:sources": [
@@ -130,8 +150,8 @@
   },
   "name_de": "USA: Googles Geofence-Beschlüsse - Standortdaten aller Personen an Tatorten",
   "name_en": "USA: Google's geofence warrants - location data of everyone at crime scenes",
-  "description_de": "US-amerikanische Strafverfolgungsbehörden nutzen seit 2016 sogenannte Geofence Warrants, um von Google die Standortdaten aller Personen zu erhalten, die sich zum Tatzeitpunkt in einem definierten Gebiet aufgehalten haben. Betroffen sind Tausende unschuldige Menschen, darunter überproportional viele Angehörige ethnischer Minderheiten. Falsche Verdächtigungen führten zu Verhaftungen. 2023 kündigte Google an, die massenhafte Standortspeicherung zu beenden.",
-  "description_en": "Since 2016, US law enforcement agencies have used so-called geofence warrants to obtain location data from Google for every person who was in a defined area at the time of a crime. Thousands of innocent people are affected, disproportionately many of them members of ethnic minorities. False suspicions led to arrests. In 2023, Google announced it would end the mass storage of location data.",
+  "description_de": "US-amerikanische Strafverfolgungsbehörden nutzen seit 2016 sogenannte Geofence Warrants, um von Google die Standortdaten aller Personen zu erhalten, die sich zum Tatzeitpunkt in einem definierten Gebiet aufgehalten haben. Allein 2020 erhielt Google 11.554 solcher Beschlüsse; erfasst werden dabei auch zahlreiche Unbeteiligte. Falsche Verdächtigungen führten zu Festnahmen, etwa von Jorge Molina in Arizona. Ende 2023 kündigte Google an, Standortverläufe künftig auf den Geräten der Nutzer zu speichern; 2026 stufte der US Supreme Court Geofence-Abfragen als Durchsuchung im Sinne des Vierten Verfassungszusatzes ein.",
+  "description_en": "Since 2016, US law enforcement agencies have used so-called geofence warrants to obtain location data from Google for every person who was in a defined area at the time of a crime. In 2020 alone, Google received 11,554 such warrants; numerous uninvolved people are captured in the process. False suspicions led to arrests, such as that of Jorge Molina in Arizona. In late 2023, Google announced it would store Location History on users' devices in the future; in 2026, the US Supreme Court classified geofence queries as a search under the Fourth Amendment.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Recht auf Gleichbehandlung",

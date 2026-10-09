@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/kanada-ki-wohlfahrt-ontario",
-  "name": "Kanada Ontario: Algorithmische Kürzung von Sozialhilfe",
-  "description": "Die Provinz Ontario setzt seit 2014 ein algorithmisches System ein, das automatisiert über Sozialhilfeanträge entscheidet und Leistungskürzungen vornimmt. Das System, das auf einem Scoring-Modell basiert, priorisiert und filtert Anträge ohne menschliche Überprüfung. Vulnerable Bevölkerungsgruppen - insbesondere Indigene, Menschen mit Behinderungen und Alleinerziehende - werden überproportional von Kürzungen betroffen.",
+  "name": "Kanada Ontario: Fehlerhaftes Sozialhilfe-System SAMS",
+  "description": "Ontario führte im November 2014 das Social Assistance Management System (SAMS) ein, eine auf Cúram-Software (IBM) basierende Software zur Fallbearbeitung und Auszahlung von Leistungen aus Ontario Works und dem Ontario Disability Support Program. Das System ging mit schweren Mängeln in Betrieb: Laut der Rechnungsprüferin der Provinz verursachte es Berechnungsfehler von rund 140 Mio. Dollar, darunter potenzielle Über- und Unterzahlungen an Leistungsberechtigte. Die Kosten stiegen bis 2017 auf rund 294 Mio. Dollar.",
   "startDate": "2014",
   "location": {
     "@type": "Place",
@@ -24,12 +24,10 @@
     "name_en": "Toronto, Ontario, Canada"
   },
   "asm:incidentType": [
-    "discrimination",
     "data-misuse"
   ],
   "asm:affectedRights": [
     "Recht auf soziale Sicherheit",
-    "Schutz vor Diskriminierung",
     "Recht auf faires Verfahren",
     "Menschenwürde"
   ],
@@ -42,12 +40,6 @@
       ],
       "name_de": "Ontario Ministry of Community and Social Services",
       "name_en": "Ontario Ministry of Community and Social Services"
-    },
-    {
-      "name": "Citizen Lab / University of Toronto",
-      "type": "organization",
-      "name_de": "Citizen Lab / University of Toronto",
-      "name_en": "Citizen Lab / University of Toronto"
     }
   ],
   "asm:severity": 3,
@@ -119,6 +111,15 @@
   ],
   "asm:sources": [
     {
+      "url": "https://www.auditor.on.ca/en/content/annualreports/arreports/en15/3.12en15.pdf",
+      "title": "2015 Annual Report, Section 3.12: Social Assistance Management System",
+      "publisher": "Office of the Auditor General of Ontario",
+      "date": "2015-12-02",
+      "type": "government-document",
+      "title_de": "Jahresbericht 2015, Abschnitt 3.12: Social Assistance Management System",
+      "title_en": "2015 Annual Report, Section 3.12: Social Assistance Management System"
+    },
+    {
       "url": "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html",
       "title": "Algorithmic Impact Assessment Tool",
       "publisher": "Government of Canada",
@@ -134,21 +135,20 @@
     "lastUpdated": "2026-04-02",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: SAMS was a defective benefits case-management system that produced both over- and underpayments, not an algorithmic scoring system that cut benefits. Slug unchanged for permalink stability."
   },
-  "name_de": "Kanada Ontario: Algorithmische Kürzung von Sozialhilfe",
-  "description_de": "Die Provinz Ontario setzt seit 2014 ein algorithmisches System ein, das automatisiert über Sozialhilfeanträge entscheidet und Leistungskürzungen vornimmt. Das System, das auf einem Scoring-Modell basiert, priorisiert und filtert Anträge ohne menschliche Überprüfung. Vulnerable Bevölkerungsgruppen - insbesondere Indigene, Menschen mit Behinderungen und Alleinerziehende - werden überproportional von Kürzungen betroffen.",
+  "name_de": "Kanada Ontario: Fehlerhaftes Sozialhilfe-System SAMS",
+  "description_de": "Ontario führte im November 2014 das Social Assistance Management System (SAMS) ein, eine auf Cúram-Software (IBM) basierende Software zur Fallbearbeitung und Auszahlung von Leistungen aus Ontario Works und dem Ontario Disability Support Program. Das System ging mit schweren Mängeln in Betrieb: Laut der Rechnungsprüferin der Provinz verursachte es Berechnungsfehler von rund 140 Mio. Dollar, darunter potenzielle Über- und Unterzahlungen an Leistungsberechtigte. Die Kosten stiegen bis 2017 auf rund 294 Mio. Dollar.",
   "asm:affectedRights_de": [
     "Recht auf soziale Sicherheit",
-    "Schutz vor Diskriminierung",
     "Recht auf faires Verfahren",
     "Menschenwürde"
   ],
-  "name_en": "Canada Ontario: Algorithmic social assistance cuts",
-  "description_en": "Since 2014 the province of Ontario has used an algorithmic system that automatically decides on social assistance applications and reduces benefits. Based on a scoring model, it prioritizes and filters applications without human review. Vulnerable populations - in particular Indigenous people, people with disabilities and single parents - are disproportionately affected by cuts.",
+  "name_en": "Canada Ontario: Faulty social assistance system SAMS",
+  "description_en": "In November 2014 Ontario introduced the Social Assistance Management System (SAMS), software based on Cúram (IBM) for case processing and benefit payments under Ontario Works and the Ontario Disability Support Program. The system went live with serious defects: according to the province's Auditor General it produced about 140 million dollars in benefit calculation errors, including potential over- and underpayments to recipients. Costs rose to about 294 million dollars by 2017.",
   "asm:affectedRights_en": [
     "right to social security",
-    "protection from discrimination",
     "right to a fair trial",
     "human dignity"
   ]

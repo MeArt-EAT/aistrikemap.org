@@ -1,0 +1,16 @@
+export const meta = {
+  name: 'postmerge-timeline-fix',
+  description: 'After merging main: fix Schema v1.1 phase errors and source unsourced timeline entries, then adversarially verify each group',
+  phases: [
+    { title: 'Fix', detail: 'one fixer per group' },
+    { title: 'Verify', detail: 'one adversarial verifier per group' },
+  ],
+}
+const M = '/tmp/claude-0/-home-user-aistrikemap-org/422c5be0-b13c-5b95-97a6-814f10bcbcec/scratchpad/merge'
+const results = await pipeline(args.groups, async (g) => {
+  const file = `${M}/pm-group-${g}.json`
+  const fixReport = await agent(`Read ${M}/postmerge-briefing.md and follow it exactly. Your group: PM-${g}. Work list: ${file} (per incident: slug, task "phase" with the current validator errors, and/or task "source" with the indices of unsourced timeline entries). Search budget: at most ${args.fixSearches} WebSearch calls for the whole group (a hard limit of 200 per main-session turn is shared by all agents running now). Other agents are editing other incident files in parallel; touch only the files in your work list.`, { label: `fix:PM-${g}`, phase: 'Fix' })
+  const report = await agent(`You are an adversarial verifier for AIStrikeMap. A fixer just repaired the reverse timelines of the incidents listed in ${file} after a merge with main (tasks: "phase" = make the timeline satisfy the Schema v1.1 phase model, "source" = give unsourced entries 1-2 sources). Read ${M}/postmerge-briefing.md for the rules the fixer had to follow, and the "Phasen-Modell" section of data/incident-candidates/_timeline-briefing.md. Then for each incident run \`git diff -- data/incidents/<slug>.json\` and check EVERY change:\n- a changed phase must fit the entry's content (doctrine = law/policy/order/business model that legitimised the deployment BEFORE the incident; event = the incident itself; consequences = reactions afterwards). Relabelling just to satisfy the validator against the content is wrong;\n- every new or added source URL must be real (it should appear in your WebSearch results) and must support the entry it backs;\n- every new entry must be factually supported by its sources, correctly dated and in chronological order;\n- reworded text: supported, DE/EN parallel, title===title_de, description===description_de, ASCII punctuation, real umlauts;\n- merged or removed entries: nothing supported was lost without reason; 4-6 entries remain;\n- nothing outside asm:reverseTimeline changed (except an appended top-level source object).\nFix what is wrong yourself (correct the phase, replace or remove a source, reword, or rebuild the entry). Search budget: at most ${args.verifySearches} WebSearch calls in total - prioritise new entries and new sources over pure relabels. No git write commands, do not run scripts/audit-bilingual-incidents.js, touch only these files. Run node scripts/validate-timelines.js on each slug (0 ERRORs required).\n\nThe fixer's report:\n${fixReport || '(no report - rely on git diff)'}\n\nFinal answer: per incident one line per change with your verdict (confirmed / corrected: what / reverted) and anything UNVERIFIED. Plain text.`, { label: `verify:PM-${g}`, phase: 'Verify' })
+  return { group: g, fixReport, report }
+})
+return results

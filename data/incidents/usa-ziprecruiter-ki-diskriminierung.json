@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-ziprecruiter-ki-diskriminierung",
-  "name": "USA: KI-Einstellungsplattformen diskriminieren nach Akzent, Aussehen und Behinderung",
-  "description": "KI-gestützte Einstellungsplattformen wie ZipRecruiter und HireVue wurden als diskriminierend gegenüber Bewerber mit nicht-angloamerikanischen Akzenten, untypischem Aussehen und Behinderungen eingestuft. HireVue analysierte Videointerviews automatisiert mithilfe von Gesichtserkennung und Sprachanalyse, wobei strukturelle Vorurteile aus Trainingsdaten reproduziert wurden. Die US-amerikanische Datenschutzorganisation EPIC reichte 2020 eine Beschwerde bei der FTC ein. HireVue stellte die Gesichtsanalyse 2021 ein, Sprachanalyse und algorithmische Auswahl sind jedoch weiterhin im Einsatz und kaum reguliert.",
+  "name": "USA: KI-Einstellungstools unter Diskriminierungsverdacht - Kritik an HireVue-Videoanalyse und intransparentem Job-Matching",
+  "description": "KI-gestützte Einstellungswerkzeuge stehen in den USA wegen möglicher Diskriminierung in der Kritik. Am besten dokumentiert ist der Fall HireVue: Das System wertete Video-Interviews automatisiert nach Gesichtsbewegungen, Wortwahl und Stimme aus; Fachleute warnten, Nicht-Muttersprachler*innen und Menschen mit Behinderungen könnten schlechter bewertet werden. Im November 2019 reichte das Electronic Privacy Information Center (EPIC) eine Beschwerde bei der FTC ein. HireVue gab im Januar 2021 bekannt, die Gesichtsanalyse eingestellt zu haben, wertet laut EPIC aber weiter Sprache und Intonation aus. Jobplattformen wie ZipRecruiter setzen KI-Matching ein, dessen Funktionsweise nicht offengelegt wird; eine behördliche oder gerichtliche Feststellung von Diskriminierung durch ZipRecruiter liegt nach öffentlich verfügbaren Quellen nicht vor. Eine bundesweite gesetzliche Regulierung von Einstellungs-KI fehlt.",
   "startDate": "2019",
   "location": {
     "@type": "Place",
@@ -63,49 +63,70 @@
       "date": "2019",
       "phase": "infrastructure",
       "title": "HireVue setzt automatisierte Videoanalyse ein",
-      "description": "HireVue nutzt ein KI-System, das Videointerviews von Bewerber automatisch anhand von Gesichtsmimik, Augenbewegungen, Sprachmelodie und Wortwahl bewertet. Über 700 Unternehmen, darunter Goldman Sachs und Unilever, setzen das System ein. Kritiker warnen, dass das Modell auf überwiegend weißen, englischsprachigen Trainingsdaten basiert und dadurch systematische Verzerrungen produziert.",
-      "sources": [],
+      "description": "HireVue nutzt ein KI-System, das laut Washington Post (Oktober 2019) Video-Interviews über die Kamera nach Gesichtsbewegungen, Wortwahl und Stimme auswertet und Bewerbende nach einem automatisch erzeugten 'Employability Score' reiht. Mehr als 100 Arbeitgeber, darunter Hilton, Unilever und Goldman Sachs, nutzen das System; über eine Million Bewerbende wurden analysiert. Laut MIT Technology Review befürchten Fachleute, dass Menschen, die vom 'traditionellen' Profil abweichen, etwa Nicht-Muttersprachler*innen oder Menschen mit Behinderungen, schlechtere Bewertungen erhalten.",
+      "sources": [
+        "https://ncrc.org/the-washington-post-a-face-scanning-algorithm-increasingly-decides-whether-you-deserve-the-job/",
+        "https://www.technologyreview.com/2019/11/07/75194/hirevue-ai-automated-hiring-discrimination-ftc-epic-bias/"
+      ],
       "title_de": "HireVue setzt automatisierte Videoanalyse ein",
       "title_en": "HireVue deploys automated video analysis",
-      "description_de": "HireVue nutzt ein KI-System, das Videointerviews von Bewerber automatisch anhand von Gesichtsmimik, Augenbewegungen, Sprachmelodie und Wortwahl bewertet. Über 700 Unternehmen, darunter Goldman Sachs und Unilever, setzen das System ein. Kritiker warnen, dass das Modell auf überwiegend weißen, englischsprachigen Trainingsdaten basiert und dadurch systematische Verzerrungen produziert.",
-      "description_en": "HireVue uses an AI system that automatically scores applicants' video interviews based on facial expressions, eye movements, vocal intonation, and word choice. More than 700 companies, including Goldman Sachs and Unilever, use the system. Critics warn that the model is built on predominantly white, English-speaking training data and thus produces systematic biases."
+      "description_de": "HireVue nutzt ein KI-System, das laut Washington Post (Oktober 2019) Video-Interviews über die Kamera nach Gesichtsbewegungen, Wortwahl und Stimme auswertet und Bewerbende nach einem automatisch erzeugten 'Employability Score' reiht. Mehr als 100 Arbeitgeber, darunter Hilton, Unilever und Goldman Sachs, nutzen das System; über eine Million Bewerbende wurden analysiert. Laut MIT Technology Review befürchten Fachleute, dass Menschen, die vom 'traditionellen' Profil abweichen, etwa Nicht-Muttersprachler*innen oder Menschen mit Behinderungen, schlechtere Bewertungen erhalten.",
+      "description_en": "HireVue uses an AI system that, according to the Washington Post (October 2019), scores video interviews via the camera based on facial movements, word choice and voice and ranks applicants by an automatically generated 'employability' score. More than 100 employers, including Hilton, Unilever and Goldman Sachs, use the system; more than a million job seekers have been analyzed. According to MIT Technology Review, experts fear that people who deviate from the 'traditional' profile, such as non-native English speakers or people with disabilities, receive lower scores."
     },
     {
-      "date": "2020-11",
+      "date": "2019-11-06",
       "phase": "doctrine",
       "title": "EPIC reicht FTC-Beschwerde ein",
-      "description": "Das Electronic Privacy Information Center (EPIC) stellt bei der US-amerikanischen Handelskommission (FTC) eine formelle Beschwerde gegen HireVue ein. EPIC wirft dem Unternehmen vor, eine 'Black Box'-KI einzusetzen, die Bewerber aufgrund von Merkmalen bewertet, die keine valide Grundlage für Einstellungsentscheidungen darstellen. Behinderungen, Akzente und ethnisch assoziierte Gesichtszüge werden als potenzielle Diskriminierungsquellen identifiziert.",
+      "description": "Am 6. November 2019 reicht das Electronic Privacy Information Center (EPIC) bei der US-Handelsbehörde FTC eine Beschwerde gegen HireVue wegen unlauterer und irreführender Geschäftspraktiken ein. EPIC kritisiert, HireVue bestreite den Einsatz von Gesichtserkennung, erhebe aber Zehntausende Datenpunkte pro Video-Interview; die Ergebnisse seien 'voreingenommen, nicht beweisbar und nicht reproduzierbar'. Die Augenbewegungsanalyse könne zudem Menschen mit bestimmten Behinderungen benachteiligen, etwa sehbehinderte Bewerbende.",
       "sources": [
-        "https://epic.org/documents/in-re-hirevue/"
+        "https://epic.org/documents/in-re-hirevue/",
+        "https://www.technologyreview.com/2019/11/07/75194/hirevue-ai-automated-hiring-discrimination-ftc-epic-bias/"
       ],
       "title_de": "EPIC reicht FTC-Beschwerde ein",
       "title_en": "EPIC files FTC complaint",
-      "description_de": "Das Electronic Privacy Information Center (EPIC) stellt bei der US-amerikanischen Handelskommission (FTC) eine formelle Beschwerde gegen HireVue ein. EPIC wirft dem Unternehmen vor, eine 'Black Box'-KI einzusetzen, die Bewerber aufgrund von Merkmalen bewertet, die keine valide Grundlage für Einstellungsentscheidungen darstellen. Behinderungen, Akzente und ethnisch assoziierte Gesichtszüge werden als potenzielle Diskriminierungsquellen identifiziert.",
-      "description_en": "The Electronic Privacy Information Center (EPIC) files a formal complaint against HireVue with the US Federal Trade Commission (FTC). EPIC accuses the company of using a 'Black Box' AI that evaluates applicants on attributes that are not a valid basis for hiring decisions. Disabilities, accents, and ethnically associated facial features are identified as potential sources of discrimination."
+      "description_de": "Am 6. November 2019 reicht das Electronic Privacy Information Center (EPIC) bei der US-Handelsbehörde FTC eine Beschwerde gegen HireVue wegen unlauterer und irreführender Geschäftspraktiken ein. EPIC kritisiert, HireVue bestreite den Einsatz von Gesichtserkennung, erhebe aber Zehntausende Datenpunkte pro Video-Interview; die Ergebnisse seien 'voreingenommen, nicht beweisbar und nicht reproduzierbar'. Die Augenbewegungsanalyse könne zudem Menschen mit bestimmten Behinderungen benachteiligen, etwa sehbehinderte Bewerbende.",
+      "description_en": "On 6 November 2019 the Electronic Privacy Information Center (EPIC) files a complaint against HireVue with the US Federal Trade Commission (FTC) alleging unfair and deceptive trade practices. EPIC criticizes that HireVue denies using facial recognition while collecting tens of thousands of data points per video interview, and that its results are 'biased, unprovable and not replicable'. Eye-tracking analysis could also disadvantage people with certain disabilities, such as visually impaired applicants."
     },
     {
       "date": "2021-01",
       "phase": "event",
       "title": "HireVue stellt Gesichtsanalyse ein",
-      "description": "Unter dem Druck von Datenschutzorganisationen und kritischer Berichterstattung gibt HireVue bekannt, die Gesichtsanalyse aus seinem System zu entfernen. Das Unternehmen bestreitet, dass das System fehlerhaft sei, begründet die Entscheidung jedoch mit mangelndem öffentlichem Vertrauen. Sprachanalyse und algorithmische Punktebewertung bleiben aktiv. ZipRecruiter und vergleichbare Plattformen setzen unterdessen algorithmische Vorauswahl ohne vergleichbare öffentliche Kontrolle fort.",
-      "sources": [],
+      "description": "Im Januar 2021 gibt HireVue bekannt, die Gesichtsanalyse aus seinen Assessments entfernt zu haben; Berichten zufolge geschah dies bereits 2020. Das Unternehmen begründet den Schritt damit, dass Fortschritte in der Sprachverarbeitung visuelle Signale weitgehend überflüssig machten und die Technik die Bedenken nicht wert sei. Zugleich veröffentlicht HireVue einen Prüfbericht der Firma ORCAA, den Kritiker in Fast Company als zu eng gefasst bewerten. Laut EPIC wertet HireVue weiterhin Sprache, Intonation und Verhalten der Bewerbenden aus.",
+      "sources": [
+        "https://epic.org/hirevue-facing-ftc-complaint-from-epic-halts-use-of-facial-recognition/",
+        "https://www.fastcompany.com/90597594/ai-algorithm-auditing-hirevue"
+      ],
       "title_de": "HireVue stellt Gesichtsanalyse ein",
       "title_en": "HireVue discontinues facial analysis",
-      "description_de": "Unter dem Druck von Datenschutzorganisationen und kritischer Berichterstattung gibt HireVue bekannt, die Gesichtsanalyse aus seinem System zu entfernen. Das Unternehmen bestreitet, dass das System fehlerhaft sei, begründet die Entscheidung jedoch mit mangelndem öffentlichem Vertrauen. Sprachanalyse und algorithmische Punktebewertung bleiben aktiv. ZipRecruiter und vergleichbare Plattformen setzen unterdessen algorithmische Vorauswahl ohne vergleichbare öffentliche Kontrolle fort.",
-      "description_en": "Under pressure from privacy organizations and critical reporting, HireVue announces that it is removing facial analysis from its system. The company denies that the system is flawed but justifies the decision by citing a lack of public trust. Voice analysis and algorithmic scoring remain active. Meanwhile, ZipRecruiter and comparable platforms continue algorithmic pre-screening without comparable public oversight."
+      "description_de": "Im Januar 2021 gibt HireVue bekannt, die Gesichtsanalyse aus seinen Assessments entfernt zu haben; Berichten zufolge geschah dies bereits 2020. Das Unternehmen begründet den Schritt damit, dass Fortschritte in der Sprachverarbeitung visuelle Signale weitgehend überflüssig machten und die Technik die Bedenken nicht wert sei. Zugleich veröffentlicht HireVue einen Prüfbericht der Firma ORCAA, den Kritiker in Fast Company als zu eng gefasst bewerten. Laut EPIC wertet HireVue weiterhin Sprache, Intonation und Verhalten der Bewerbenden aus.",
+      "description_en": "In January 2021 HireVue announces that it has removed facial analysis from its assessments; according to reports this already happened in 2020. The company justifies the step by saying that advances in natural language processing made visual signals largely redundant and that the technology was not worth the concern. At the same time HireVue publishes an audit by the firm ORCAA, which critics in Fast Company consider too narrowly focused. According to EPIC, HireVue continues to analyze applicants' speech, intonation and behavior."
     },
     {
-      "date": "2023",
+      "date": "2021-06",
       "phase": "consequences",
-      "title": "EEOC-Leitlinien und anhaltende Regulierungslücke",
-      "description": "Die US Equal Employment Opportunity Commission (EEOC) veröffentlicht Leitlinien zu KI-Diskriminierung bei der Einstellung, stellt jedoch keine Durchsetzungsmechanismen bereit. Studien zeigen, dass Bewerber mit nicht-angloamerikanischen Akzenten und sichtbaren Behinderungen in KI-Systemen weiterhin systematisch benachteiligt werden. Eine bundesweite gesetzliche Regulierung von Einstellungs-KI bleibt aus.",
+      "title": "Intransparentes KI-Matching bei großen Jobplattformen",
+      "description": "Im Juni 2021 berichtet MIT Technology Review, dass große Jobplattformen wie LinkedIn, ZipRecruiter, CareerBuilder und Monster KI-Matching einsetzen; LinkedIn hatte festgestellt, dass seine Empfehlungsalgorithmen mehr Männer als Frauen vorschlugen. ZipRecruiter-CEO Ian Siegel erklärt, das System nutze keine Namen, sondern 64 andere Datenarten, darunter geografische Daten, und nennt unter Verweis auf geistiges Eigentum keine Details; wie wirksam solche Maßnahmen gegen Diskriminierung sind, lässt sich von außen kaum prüfen.",
       "sources": [
-        "https://www.eeoc.gov/laws/guidance/questions-and-answers-clarify-and-provide-common-interpretation-uniform-guidelines"
+        "https://www.technologyreview.com/2021/06/23/1026825/linkedin-ai-bias-ziprecruiter-monster-artificial-intelligence/"
       ],
-      "title_de": "EEOC-Leitlinien und anhaltende Regulierungslücke",
-      "title_en": "EEOC guidelines and persistent regulatory gap",
-      "description_de": "Die US Equal Employment Opportunity Commission (EEOC) veröffentlicht Leitlinien zu KI-Diskriminierung bei der Einstellung, stellt jedoch keine Durchsetzungsmechanismen bereit. Studien zeigen, dass Bewerber mit nicht-angloamerikanischen Akzenten und sichtbaren Behinderungen in KI-Systemen weiterhin systematisch benachteiligt werden. Eine bundesweite gesetzliche Regulierung von Einstellungs-KI bleibt aus.",
-      "description_en": "The US Equal Employment Opportunity Commission (EEOC) publishes guidelines on AI discrimination in hiring but provides no enforcement mechanisms. Studies show that applicants with non-Anglo-American accents and visible disabilities continue to be systematically disadvantaged by AI systems. Federal statutory regulation of hiring AI remains absent."
+      "title_de": "Intransparentes KI-Matching bei großen Jobplattformen",
+      "title_en": "Opaque AI matching at major job platforms",
+      "description_de": "Im Juni 2021 berichtet MIT Technology Review, dass große Jobplattformen wie LinkedIn, ZipRecruiter, CareerBuilder und Monster KI-Matching einsetzen; LinkedIn hatte festgestellt, dass seine Empfehlungsalgorithmen mehr Männer als Frauen vorschlugen. ZipRecruiter-CEO Ian Siegel erklärt, das System nutze keine Namen, sondern 64 andere Datenarten, darunter geografische Daten, und nennt unter Verweis auf geistiges Eigentum keine Details; wie wirksam solche Maßnahmen gegen Diskriminierung sind, lässt sich von außen kaum prüfen.",
+      "description_en": "In June 2021 MIT Technology Review reports that major job platforms such as LinkedIn, ZipRecruiter, CareerBuilder and Monster use AI matching; LinkedIn had found that its recommendation algorithms suggested more men than women. ZipRecruiter CEO Ian Siegel says the system uses no names but 64 other types of information, including geographic data, and gives no details, citing intellectual property; how effective such measures are against discrimination can hardly be checked from outside."
+    },
+    {
+      "date": "2023-05 bis 2025-01",
+      "phase": "consequences",
+      "title": "EEOC-Leitlinie zu KI-Auswahlverfahren und ihre Rücknahme",
+      "description": "Im Mai 2023 veröffentlicht die EEOC ein unverbindliches technisches Hilfsdokument, wonach auch KI-gestützte Auswahlverfahren mit nachteiliger Wirkung gegen Title VII verstoßen können. Im Januar 2025 entfernt die Behörde es nach Executive Orders der neuen Regierung von ihrer Website; eine bundesweite gesetzliche Regulierung von Einstellungs-KI fehlt weiterhin.",
+      "sources": [
+        "https://www.proskauer.com/blog/eeoc-releases-technical-document-on-ai-and-title-vii",
+        "https://www.klgates.com/The-Changing-Landscape-of-AI-Federal-Guidance-for-Employers-Reverses-Course-with-New-Administration-1-31-2025"
+      ],
+      "title_de": "EEOC-Leitlinie zu KI-Auswahlverfahren und ihre Rücknahme",
+      "title_en": "EEOC guidance on AI selection procedures and its withdrawal",
+      "description_de": "Im Mai 2023 veröffentlicht die EEOC ein unverbindliches technisches Hilfsdokument, wonach auch KI-gestützte Auswahlverfahren mit nachteiliger Wirkung gegen Title VII verstoßen können. Im Januar 2025 entfernt die Behörde es nach Executive Orders der neuen Regierung von ihrer Website; eine bundesweite gesetzliche Regulierung von Einstellungs-KI fehlt weiterhin.",
+      "description_en": "In May 2023 the EEOC publishes a non-binding technical assistance document stating that AI-driven selection procedures with adverse impact can also violate Title VII. In January 2025 the agency removes it from its website following executive orders of the new administration; federal statutory regulation of hiring AI is still lacking."
     }
   ],
   "asm:sources": [
@@ -113,21 +134,21 @@
       "url": "https://epic.org/documents/in-re-hirevue/",
       "title": "In re HireVue - Complaint, Request for Investigation and Injunction",
       "publisher": "Electronic Privacy Information Center (EPIC)",
-      "date": "2020-11-06",
+      "date": "2019-11-06",
       "type": "ngo-report",
       "asm:linkHealth": "ok",
       "title_de": "In re HireVue - Complaint, Request for Investigation and Injunction",
       "title_en": "In re HireVue - Complaint, Request for Investigation and Injunction"
     },
     {
-      "url": "https://www.eeoc.gov/laws/guidance/questions-and-answers-clarify-and-provide-common-interpretation-uniform-guidelines",
-      "title": "EEOC Guidance on Artificial Intelligence and Equal Employment Opportunity",
-      "publisher": "U.S. Equal Employment Opportunity Commission",
-      "date": "2023",
-      "type": "government-document",
-      "asm:linkHealth": "ok",
-      "title_de": "EEOC Guidance on Artificial Intelligence and Equal Employment Opportunity",
-      "title_en": "EEOC Guidance on Artificial Intelligence and Equal Employment Opportunity"
+      "url": "https://www.proskauer.com/blog/eeoc-releases-technical-document-on-ai-and-title-vii",
+      "title": "EEOC Releases Technical Document on AI and Title VII",
+      "publisher": "Proskauer Rose LLP",
+      "date": "2023-05",
+      "type": "industry-analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "EEOC Releases Technical Document on AI and Title VII",
+      "title_en": "EEOC Releases Technical Document on AI and Title VII"
     }
   ],
   "asm:metadata": {
@@ -135,12 +156,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: the original title stated as fact that AI hiring platforms discriminate by accent, appearance and disability, whereas the sources document criticism, an EPIC complaint against HireVue and opaque matching at ZipRecruiter but no finding of discrimination by ZipRecruiter. Slug unchanged for permalink stability."
   },
-  "name_de": "USA: KI-Einstellungsplattformen diskriminieren nach Akzent, Aussehen und Behinderung",
-  "name_en": "USA: AI hiring platforms discriminate by accent, appearance, and disability",
-  "description_de": "KI-gestützte Einstellungsplattformen wie ZipRecruiter und HireVue wurden als diskriminierend gegenüber Bewerber mit nicht-angloamerikanischen Akzenten, untypischem Aussehen und Behinderungen eingestuft. HireVue analysierte Videointerviews automatisiert mithilfe von Gesichtserkennung und Sprachanalyse, wobei strukturelle Vorurteile aus Trainingsdaten reproduziert wurden. Die US-amerikanische Datenschutzorganisation EPIC reichte 2020 eine Beschwerde bei der FTC ein. HireVue stellte die Gesichtsanalyse 2021 ein, Sprachanalyse und algorithmische Auswahl sind jedoch weiterhin im Einsatz und kaum reguliert.",
-  "description_en": "AI-driven hiring platforms such as ZipRecruiter and HireVue have been found to discriminate against applicants with non-Anglo-American accents, atypical appearance, and disabilities. HireVue analyzed video interviews automatically using facial recognition and voice analysis, reproducing structural biases from training data. The US privacy organization EPIC filed a complaint with the FTC in 2020. HireVue discontinued facial analysis in 2021, but voice analysis and algorithmic selection remain in use and are largely unregulated.",
+  "name_de": "USA: KI-Einstellungstools unter Diskriminierungsverdacht - Kritik an HireVue-Videoanalyse und intransparentem Job-Matching",
+  "name_en": "USA: AI hiring tools suspected of discrimination - criticism of HireVue video analysis and opaque job matching",
+  "description_de": "KI-gestützte Einstellungswerkzeuge stehen in den USA wegen möglicher Diskriminierung in der Kritik. Am besten dokumentiert ist der Fall HireVue: Das System wertete Video-Interviews automatisiert nach Gesichtsbewegungen, Wortwahl und Stimme aus; Fachleute warnten, Nicht-Muttersprachler*innen und Menschen mit Behinderungen könnten schlechter bewertet werden. Im November 2019 reichte das Electronic Privacy Information Center (EPIC) eine Beschwerde bei der FTC ein. HireVue gab im Januar 2021 bekannt, die Gesichtsanalyse eingestellt zu haben, wertet laut EPIC aber weiter Sprache und Intonation aus. Jobplattformen wie ZipRecruiter setzen KI-Matching ein, dessen Funktionsweise nicht offengelegt wird; eine behördliche oder gerichtliche Feststellung von Diskriminierung durch ZipRecruiter liegt nach öffentlich verfügbaren Quellen nicht vor. Eine bundesweite gesetzliche Regulierung von Einstellungs-KI fehlt.",
+  "description_en": "AI-driven hiring tools in the US face criticism over possible discrimination. The best-documented case is HireVue: its system automatically scored video interviews based on facial movements, word choice and voice; experts warned that non-native speakers and people with disabilities could receive lower scores. In November 2019 the Electronic Privacy Information Center (EPIC) filed a complaint with the FTC. In January 2021 HireVue announced that it had discontinued facial analysis, but according to EPIC it continues to analyze speech and intonation. Job platforms such as ZipRecruiter use AI matching whose workings are not disclosed; according to publicly available sources, no regulatory or court finding of discrimination by ZipRecruiter exists. Federal statutory regulation of hiring AI is lacking.",
   "asm:affectedRights_de": [
     "Recht auf Gleichbehandlung",
     "Recht auf Arbeit",
@@ -150,7 +172,7 @@
   "asm:affectedRights_en": [
     "right to equal treatment",
     "right to work",
-    "right to a fair trial",
+    "right to fair procedure",
     "protection from discrimination"
   ]
 }

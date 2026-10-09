@@ -177,11 +177,12 @@ const TRANSLITERATED_GERMAN_WORDS = [
   'unverhaeltnismassiger', 'unverhaeltnismaessiger',
   // Weitere häufige Wörter
   'turkei', 'tuerkei',
-  'lander', 'laender',
+  'laender', // 'lander' ist auch Eigenname (Brad Lander) - nicht melden
   'prufen', 'pruefen', 'pruft', 'prueft', 'pruefung', 'prufung',
   'ahnlich', 'aehnlich', 'ahnliche', 'aehnliche',
   'ahnlichen', 'aehnlichen', 'ahnlicher', 'aehnlicher',
-  'falle', 'faelle', 'fallen', 'faellen',
+  // 'falle'/'fallen' sind echte Wörter (Falle, fallen) - nicht melden
+  'faelle', 'faellen',
   'aufgespurt', 'aufgespuert',
   'bemangeln', 'bemaengeln', 'bemangelt', 'bemaengelt',
   'uberwacht', 'ueberwacht',
@@ -360,12 +361,19 @@ function stripParentheticals(text) {
 // ("von der", "van der") enthalten, aber in EN identisch geschrieben werden.
 // Sie duerfen nicht als german-word-Leakage zaehlen (z.B. Ursula von der Leyen).
 const FOREIGN_NAME_PARTICLES = ['von der Leyen', 'van der Bellen', 'de la Rey'];
+// Fremd-Eigennamen, deren einziger Umlaut der Anfangsbuchstabe ist. Sie fallen
+// durch CAPITALIZED_TOKEN_RE (verlangt einen Umlaut nach dem ersten Zeichen),
+// werden in EN aber identisch geschrieben (z.B. Ömer Faruk Gergerlioğlu).
+const FOREIGN_UMLAUT_NAMES = ['Ömer'];
 
 function hasGermanLeakage(text) {
   if (typeof text !== 'string' || !text) return null;
   var stripped = stripParentheticals(text);
   for (var fn = 0; fn < FOREIGN_NAME_PARTICLES.length; fn++) {
     stripped = stripped.split(FOREIGN_NAME_PARTICLES[fn]).join(' ');
+  }
+  for (var fu = 0; fu < FOREIGN_UMLAUT_NAMES.length; fu++) {
+    stripped = stripped.split(FOREIGN_UMLAUT_NAMES[fu]).join(' ');
   }
   if (UMLAUT_RE.test(stripped)) {
     // Allow umlauts that occur only inside capitalized tokens (likely proper

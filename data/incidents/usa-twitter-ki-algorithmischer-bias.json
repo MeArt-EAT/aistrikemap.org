@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-twitter-ki-algorithmischer-bias",
-  "name": "USA: Twitters Algorithmus verstärkt rechte und rassistische Inhalte",
-  "description": "Interne Twitter-Forschung aus dem Jahr 2021 ergab, dass der Empfehlungsalgorithmus der Plattform politisch rechte Inhalte und rassistische Beiträge systematisch stärker verbreitet als linke oder neutrale Inhalte. Entsprechende Forschungsergebnisse wurden intern unterdrückt. Nach der Übernahme durch Elon Musk 2022 wurde der Algorithmus teilweise offengelegt, jedoch unvollständig. Unabhängige Studien bestätigen eine anhaltende Verstärkungsverzerrung.",
-  "startDate": "2021-01",
+  "name": "USA: Twitters Algorithmus verstärkt politisch rechte Inhalte",
+  "description": "Eine von Twitter selbst im Oktober 2021 veröffentlichte Studie ergab, dass der Algorithmus der Home-Timeline in sechs von sieben untersuchten Ländern Tweets von Politiker:innen der etablierten Rechten stärker verbreitete als die der etablierten Linken; in den USA wurden zudem rechtsgerichtete Nachrichtenquellen stärker verstärkt. Twitter konnte die Ursache nicht erklären. Nach der Übernahme durch Elon Musk 2022 wurde der Algorithmus 2023 nur teilweise offengelegt. Ein unabhängiges Feldexperiment, 2026 in Nature veröffentlicht, fand, dass der algorithmische Feed von X konservative Inhalte verstärkt und politische Einstellungen von Nutzer:innen in konservative Richtung verschiebt.",
+  "startDate": "2021-10-21",
   "location": {
     "@type": "Place",
     "name": "San Francisco, USA",
@@ -25,8 +25,7 @@
   },
   "asm:incidentType": [
     "discrimination",
-    "political-pressure",
-    "data-misuse"
+    "political-pressure"
   ],
   "asm:affectedRights": [
     "Meinungsfreiheit",
@@ -40,8 +39,7 @@
       "type": "company",
       "asm:systems": [
         "Twitter-Empfehlungsalgorithmus",
-        "For-You-Feed",
-        "Trend-Algorithmus"
+        "For-You-Feed"
       ],
       "name_de": "Twitter/X",
       "name_en": "Twitter/X"
@@ -51,50 +49,74 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2021-01",
+      "date": "2016",
       "phase": "infrastructure",
-      "title": "Interne Twitter-Forschung dokumentiert algorithmischen Bias",
-      "description": "Twitter-eigene Forscher stellen fest, dass der Empfehlungsalgorithmus politisch rechte Inhalte in sieben von acht untersuchten Ländern stärker verbreitet als linke. Die Ergebnisse werden intern dokumentiert, aber keine strukturellen Korrekturen eingeleitet. Entsprechende Berichte bleiben unveröffentlicht.",
+      "title": "Twitter führt die algorithmisch sortierte Home-Timeline ein",
+      "description": "Im Februar 2016 beginnt Twitter, Tweets in der Home-Timeline nicht mehr nur chronologisch anzuzeigen, sondern per maschinellem Lernen nach vermuteter Relevanz zu sortieren. Seit Juni 2016 behält eine zufällig ausgewählte Kontrollgruppe von 1 Prozent der Nutzer:innen die umgekehrt chronologische Timeline. Diese Kontrollgruppe ermöglicht später die Messung, welche Inhalte der Algorithmus zusätzlich verbreitet.",
       "sources": [
-        "https://blog.x.com/en_us/topics/company/2021/rml-politicalcontent"
+        "https://www.techcentral.ie/twitter-begins-rolling-out-its-algorithmic-timeline/",
+        "https://arxiv.org/pdf/2110.11010"
       ],
-      "title_de": "Interne Twitter-Forschung dokumentiert algorithmischen Bias",
-      "title_en": "Internal Twitter research documents algorithmic bias",
-      "description_de": "Twitter-eigene Forscher stellen fest, dass der Empfehlungsalgorithmus politisch rechte Inhalte in sieben von acht untersuchten Ländern stärker verbreitet als linke. Die Ergebnisse werden intern dokumentiert, aber keine strukturellen Korrekturen eingeleitet. Entsprechende Berichte bleiben unveröffentlicht.",
-      "description_en": "Twitter's own researchers find that the recommendation algorithm amplifies politically right-wing content more than left-wing content in seven of eight countries studied. The results are documented internally, but no structural corrections are made. The corresponding reports remain unpublished."
+      "title_de": "Twitter führt die algorithmisch sortierte Home-Timeline ein",
+      "title_en": "Twitter introduces the algorithmically ranked Home timeline",
+      "description_de": "Im Februar 2016 beginnt Twitter, Tweets in der Home-Timeline nicht mehr nur chronologisch anzuzeigen, sondern per maschinellem Lernen nach vermuteter Relevanz zu sortieren. Seit Juni 2016 behält eine zufällig ausgewählte Kontrollgruppe von 1 Prozent der Nutzer:innen die umgekehrt chronologische Timeline. Diese Kontrollgruppe ermöglicht später die Messung, welche Inhalte der Algorithmus zusätzlich verbreitet.",
+      "description_en": "In February 2016, Twitter begins ranking tweets in the Home timeline by predicted relevance using machine learning instead of showing them only in chronological order. Since June 2016, a randomly selected control group of 1 percent of users has kept the reverse-chronological timeline. This control group later makes it possible to measure which content the algorithm additionally amplifies."
     },
     {
-      "date": "2022-10",
+      "date": "2021-10-21",
+      "phase": "event",
+      "title": "Twitter-Studie: Algorithmus verstärkt rechte Politiker:innen und Medien",
+      "description": "Twitter veröffentlicht eine eigene Studie unter Leitung von Ferenc Huszár, die Tweets von Abgeordneten großer Parteien aus sieben Ländern (Deutschland, Frankreich, Japan, Kanada, Spanien, Großbritannien, USA) im Zeitraum April bis August 2020 auswertet. In sechs der sieben Länder, Deutschland ausgenommen, verbreitet der Algorithmus Tweets der etablierten politischen Rechten stärker als die der etablierten Linken; in den USA werden zudem rechtsgerichtete Nachrichtenquellen stärker verstärkt. Belege für eine stärkere Verbreitung extremer gegenüber gemäßigten Gruppen finden die Forschenden nicht, und Twitter erklärt, die Ursache noch nicht zu kennen. Die Studie erscheint im Januar 2022 in PNAS.",
+      "sources": [
+        "https://blog.x.com/en_us/topics/company/2021/rml-politicalcontent",
+        "https://arxiv.org/abs/2110.11010v1"
+      ],
+      "title_de": "Twitter-Studie: Algorithmus verstärkt rechte Politiker:innen und Medien",
+      "title_en": "Twitter study: algorithm amplifies right-leaning politicians and media",
+      "description_de": "Twitter veröffentlicht eine eigene Studie unter Leitung von Ferenc Huszár, die Tweets von Abgeordneten großer Parteien aus sieben Ländern (Deutschland, Frankreich, Japan, Kanada, Spanien, Großbritannien, USA) im Zeitraum April bis August 2020 auswertet. In sechs der sieben Länder, Deutschland ausgenommen, verbreitet der Algorithmus Tweets der etablierten politischen Rechten stärker als die der etablierten Linken; in den USA werden zudem rechtsgerichtete Nachrichtenquellen stärker verstärkt. Belege für eine stärkere Verbreitung extremer gegenüber gemäßigten Gruppen finden die Forschenden nicht, und Twitter erklärt, die Ursache noch nicht zu kennen. Die Studie erscheint im Januar 2022 in PNAS.",
+      "description_en": "Twitter publishes its own study led by Ferenc Huszár, analyzing tweets by elected officials from major parties in seven countries (Germany, France, Japan, Canada, Spain, the United Kingdom, the U.S.) from April to August 2020. In six of the seven countries, Germany being the exception, the algorithm amplifies tweets from the mainstream political right more than those from the mainstream left; in the U.S., right-leaning news sources are also amplified more. The researchers find no evidence that extreme groups are amplified more than moderate ones, and Twitter says it does not yet know the cause. The study is published in PNAS in January 2022."
+    },
+    {
+      "date": "2023-03-31",
       "phase": "doctrine",
       "title": "Musk-Übernahme und selektive Algorithmus-Offenlegung",
-      "description": "Nach dem Kauf von Twitter durch Elon Musk für 44 Milliarden Dollar werden Teile des Quellcodes veröffentlicht. Die Offenlegung ist jedoch unvollständig und erlaubt keine unabhängige Prüfung der vollständigen algorithmischen Entscheidungskette. Kritische interne Forschungsdokumente werden nicht veröffentlicht.",
-      "sources": [],
+      "description": "Nach der Übernahme durch Elon Musk für 44 Milliarden US-Dollar im Oktober 2022 veröffentlicht Twitter auf GitHub Teile des Quellcodes seines Empfehlungsalgorithmus für den 'For You'-Feed. Trainingsdaten und Modellgewichte werden unter Verweis auf Sicherheit und Datenschutz zurückgehalten, der Code für Werbeempfehlungen fehlt. Der Forscher Sol Messing bezeichnet die Veröffentlichung als stark redigierten, unvollständigen Teil des Ranking-Systems.",
+      "sources": [
+        "https://techcrunch.com/2023/03/31/twitter-reveals-some-of-its-source-code-including-its-recommendation-algorithm/",
+        "https://csmapnyu.org/impact/news/what-can-we-learn-from-twitters-open-source-algorithm"
+      ],
       "title_de": "Musk-Übernahme und selektive Algorithmus-Offenlegung",
       "title_en": "Musk takeover and selective algorithm disclosure",
-      "description_de": "Nach dem Kauf von Twitter durch Elon Musk für 44 Milliarden Dollar werden Teile des Quellcodes veröffentlicht. Die Offenlegung ist jedoch unvollständig und erlaubt keine unabhängige Prüfung der vollständigen algorithmischen Entscheidungskette. Kritische interne Forschungsdokumente werden nicht veröffentlicht.",
-      "description_en": "After Elon Musk's $44 billion purchase of Twitter, portions of the source code are released. The disclosure is incomplete, however, and does not allow independent review of the full algorithmic decision chain. Critical internal research documents are not released."
+      "description_de": "Nach der Übernahme durch Elon Musk für 44 Milliarden US-Dollar im Oktober 2022 veröffentlicht Twitter auf GitHub Teile des Quellcodes seines Empfehlungsalgorithmus für den 'For You'-Feed. Trainingsdaten und Modellgewichte werden unter Verweis auf Sicherheit und Datenschutz zurückgehalten, der Code für Werbeempfehlungen fehlt. Der Forscher Sol Messing bezeichnet die Veröffentlichung als stark redigierten, unvollständigen Teil des Ranking-Systems.",
+      "description_en": "After Elon Musk's $44 billion takeover in October 2022, Twitter publishes parts of the source code of its 'For You' recommendation algorithm on GitHub. Training data and model weights are withheld, citing safety and privacy, and the code for ad recommendations is missing. Researcher Sol Messing describes the release as a heavily redacted, incomplete part of the ranking system."
     },
     {
-      "date": "2023-03",
-      "phase": "event",
-      "title": "PNAS-Studie bestätigt politische Verstärkungsverzerrung",
-      "description": "Eine Studie der Proceedings of the National Academy of Sciences analysiert Milliarden von Tweets und bestätigt, dass Twitters Algorithmus konservative Politiker und Medien systematisch überproportional verstärkt. Ähnliche Muster zeigen sich in Deutschland, Japan, Großbritannien und Kanada. Die Plattform bestreitet systematische Absicht.",
-      "sources": [],
-      "title_de": "PNAS-Studie bestätigt politische Verstärkungsverzerrung",
-      "title_en": "PNAS study confirms political amplification bias",
-      "description_de": "Eine Studie der Proceedings of the National Academy of Sciences analysiert Milliarden von Tweets und bestätigt, dass Twitters Algorithmus konservative Politiker und Medien systematisch überproportional verstärkt. Ähnliche Muster zeigen sich in Deutschland, Japan, Großbritannien und Kanada. Die Plattform bestreitet systematische Absicht.",
-      "description_en": "A study in the Proceedings of the National Academy of Sciences analyzes billions of tweets and confirms that Twitter's algorithm systematically over-amplifies conservative politicians and media outlets. Similar patterns appear in Germany, Japan, the United Kingdom, and Canada. The platform denies any systematic intent."
-    },
-    {
-      "date": "2023-07",
+      "date": "2025-12-05",
       "phase": "consequences",
-      "title": "Anhaltende Verzerrung und fehlende Rechenschaftspflicht",
-      "description": "Trotz öffentlicher Diskussion und Regulierungsdruck in der EU bleibt eine unabhängige Prüfung des Algorithmus verweigert. Forscher und zivilgesellschaftliche Organisationen fordern algorithmische Transparenz als gesetzliche Pflicht. Der EU Digital Services Act verpflichtet Twitter/X ab 2024 zu erweiterten Audits.",
-      "sources": [],
-      "title_de": "Anhaltende Verzerrung und fehlende Rechenschaftspflicht",
-      "title_en": "Persistent bias and lack of accountability",
-      "description_de": "Trotz öffentlicher Diskussion und Regulierungsdruck in der EU bleibt eine unabhängige Prüfung des Algorithmus verweigert. Forscher und zivilgesellschaftliche Organisationen fordern algorithmische Transparenz als gesetzliche Pflicht. Der EU Digital Services Act verpflichtet Twitter/X ab 2024 zu erweiterten Audits.",
-      "description_en": "Despite public debate and regulatory pressure in the EU, independent auditing of the algorithm continues to be refused. Researchers and civil society organizations demand algorithmic transparency as a legal obligation. Starting in 2024, the EU Digital Services Act requires Twitter/X to undergo expanded audits."
+      "title": "EU verhängt DSA-Bußgeld gegen X und weitet Prüfung des Empfehlungssystems aus",
+      "description": "Die EU-Kommission verhängt im ersten Nichteinhaltungsbeschluss nach dem Digital Services Act ein Bußgeld von 120 Millionen Euro gegen X, unter anderem weil die Plattform Forschenden den unabhängigen Zugang zu öffentlichen Daten verwehrt. Das Verfahren war im Dezember 2023 eröffnet worden und umfasst auch die Risiken des Empfehlungssystems. Im Januar 2026 weitet die Kommission diese Prüfung aus, um zu klären, ob X die systemischen Risiken seiner Empfehlungssysteme einschließlich der Umstellung auf ein Grok-basiertes System ausreichend bewertet und gemindert hat.",
+      "sources": [
+        "https://www.theregister.com/2025/12/05/eu_fines_x_dsa",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-investigates-grok-and-xs-recommender-systems-under-digital-services-act"
+      ],
+      "title_de": "EU verhängt DSA-Bußgeld gegen X und weitet Prüfung des Empfehlungssystems aus",
+      "title_en": "EU fines X under the DSA and widens its review of the recommender system",
+      "description_de": "Die EU-Kommission verhängt im ersten Nichteinhaltungsbeschluss nach dem Digital Services Act ein Bußgeld von 120 Millionen Euro gegen X, unter anderem weil die Plattform Forschenden den unabhängigen Zugang zu öffentlichen Daten verwehrt. Das Verfahren war im Dezember 2023 eröffnet worden und umfasst auch die Risiken des Empfehlungssystems. Im Januar 2026 weitet die Kommission diese Prüfung aus, um zu klären, ob X die systemischen Risiken seiner Empfehlungssysteme einschließlich der Umstellung auf ein Grok-basiertes System ausreichend bewertet und gemindert hat.",
+      "description_en": "In the first non-compliance decision under the Digital Services Act, the European Commission fines X 120 million euros, among other things because the platform denies researchers independent access to public data. The proceedings had been opened in December 2023 and also cover the risks of the recommender system. In January 2026, the Commission widens this review to determine whether X has adequately assessed and mitigated the systemic risks of its recommender systems, including the switch to a Grok-based system."
+    },
+    {
+      "date": "2026-02",
+      "phase": "event",
+      "title": "Unabhängiges Feldexperiment: X-Algorithmus verschiebt Einstellungen nach rechts",
+      "description": "Germain Gauthier, Roland Hodler, Philine Widmer und Ekaterina Zhuravskaya veröffentlichen in Nature ein ohne Beteiligung der Plattform durchgeführtes Experiment mit fast 5.000 aktiven X-Nutzer:innen in den USA, die 2023 sieben Wochen lang zufällig den algorithmischen 'For You'-Feed oder den chronologischen Feed erhielten. Der algorithmische Feed verstärkte konservative Inhalte, drängte Beiträge traditioneller Medien zurück und verschob politische Einstellungen etwa zu Politikprioritäten, den strafrechtlichen Ermittlungen gegen Donald Trump und dem Krieg in der Ukraine in konservative Richtung. Die Nutzer:innen folgten mehr rechtsgerichteten Konten und behielten diese auch nach dem Wechsel zum chronologischen Feed bei.",
+      "sources": [
+        "https://www.unibocconi.it/en/news/does-xs-algorithm-push-politics-right",
+        "https://www.scimex.org/newsfeed/the-algorithmic-feed-on-x-could-be-shifting-political-views-toward-conservatism"
+      ],
+      "title_de": "Unabhängiges Feldexperiment: X-Algorithmus verschiebt Einstellungen nach rechts",
+      "title_en": "Independent field experiment: X algorithm shifts attitudes to the right",
+      "description_de": "Germain Gauthier, Roland Hodler, Philine Widmer und Ekaterina Zhuravskaya veröffentlichen in Nature ein ohne Beteiligung der Plattform durchgeführtes Experiment mit fast 5.000 aktiven X-Nutzer:innen in den USA, die 2023 sieben Wochen lang zufällig den algorithmischen 'For You'-Feed oder den chronologischen Feed erhielten. Der algorithmische Feed verstärkte konservative Inhalte, drängte Beiträge traditioneller Medien zurück und verschob politische Einstellungen etwa zu Politikprioritäten, den strafrechtlichen Ermittlungen gegen Donald Trump und dem Krieg in der Ukraine in konservative Richtung. Die Nutzer:innen folgten mehr rechtsgerichteten Konten und behielten diese auch nach dem Wechsel zum chronologischen Feed bei.",
+      "description_en": "Germain Gauthier, Roland Hodler, Philine Widmer and Ekaterina Zhuravskaya publish in Nature an experiment conducted without the platform's involvement with nearly 5,000 active U.S. X users, who in 2023 were randomly assigned the algorithmic 'For You' feed or the chronological feed for seven weeks. The algorithmic feed boosted conservative content, demoted posts from traditional media and shifted political attitudes, for example on policy priorities, the criminal investigations into Donald Trump and the war in Ukraine, in a conservative direction. Users followed more right-leaning accounts and kept following them after switching to the chronological feed."
     }
   ],
   "asm:sources": [
@@ -114,12 +136,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: the original title claimed amplification of racist content, which none of the cited studies found; the documented finding is stronger algorithmic amplification of right-leaning political content. Slug unchanged for permalink stability."
   },
-  "name_de": "USA: Twitters Algorithmus verstärkt rechte und rassistische Inhalte",
-  "name_en": "USA: Twitter's algorithm amplifies right-wing and racist content",
-  "description_de": "Interne Twitter-Forschung aus dem Jahr 2021 ergab, dass der Empfehlungsalgorithmus der Plattform politisch rechte Inhalte und rassistische Beiträge systematisch stärker verbreitet als linke oder neutrale Inhalte. Entsprechende Forschungsergebnisse wurden intern unterdrückt. Nach der Übernahme durch Elon Musk 2022 wurde der Algorithmus teilweise offengelegt, jedoch unvollständig. Unabhängige Studien bestätigen eine anhaltende Verstärkungsverzerrung.",
-  "description_en": "Internal Twitter research from 2021 found that the platform's recommendation algorithm systematically amplifies politically right-wing content and racist posts more than left-wing or neutral content. The corresponding research findings were suppressed internally. After Elon Musk's takeover in 2022, the algorithm was partially disclosed, but incompletely. Independent studies confirm a persistent amplification bias.",
+  "name_de": "USA: Twitters Algorithmus verstärkt politisch rechte Inhalte",
+  "name_en": "USA: Twitter's algorithm amplifies right-leaning political content",
+  "description_de": "Eine von Twitter selbst im Oktober 2021 veröffentlichte Studie ergab, dass der Algorithmus der Home-Timeline in sechs von sieben untersuchten Ländern Tweets von Politiker:innen der etablierten Rechten stärker verbreitete als die der etablierten Linken; in den USA wurden zudem rechtsgerichtete Nachrichtenquellen stärker verstärkt. Twitter konnte die Ursache nicht erklären. Nach der Übernahme durch Elon Musk 2022 wurde der Algorithmus 2023 nur teilweise offengelegt. Ein unabhängiges Feldexperiment, 2026 in Nature veröffentlicht, fand, dass der algorithmische Feed von X konservative Inhalte verstärkt und politische Einstellungen von Nutzer:innen in konservative Richtung verschiebt.",
+  "description_en": "A study published by Twitter itself in October 2021 found that the Home timeline algorithm amplified tweets from politicians of the mainstream right more than those of the mainstream left in six of seven countries studied; in the U.S., right-leaning news sources were also amplified more. Twitter could not explain the cause. After Elon Musk's takeover in 2022, the algorithm was only partially disclosed in 2023. An independent field experiment published in Nature in 2026 found that X's algorithmic feed boosts conservative content and shifts users' political attitudes in a conservative direction.",
   "asm:affectedRights_de": [
     "Meinungsfreiheit",
     "Recht auf Gleichbehandlung",

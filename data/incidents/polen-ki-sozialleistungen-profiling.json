@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/polen-ki-sozialleistungen-profiling",
-  "name": "Polen: Algorithmisches Profiling im Sozialhilfesystem diskriminiert Arbeitslose",
-  "description": "Polens Arbeitsvermittlungsbehörden verwenden seit 2014 ein algorithmisches Profilierungssystem, das Arbeitslose in drei Kategorien einteilt: 'begünstigt', 'durchschnittlich' und 'nicht begünstigt'. Der Algorithmus bewertet Alter, Geschlecht, Behinderungsstatus und Wohnort. Betroffene in ländlichen Gebieten und ältere Menschen erhalten dadurch systematisch weniger Förderung. Die Panoptykon Foundation und das Helsinki-Komitee kritisieren das System als diskriminierend und intransparent.",
-  "startDate": "2014-06",
+  "name": "Polen: Algorithmisches Profiling teilt Arbeitslose in drei Förderprofile ein",
+  "description": "Polens Kreisarbeitsämter ordneten Arbeitslose von Mai 2014 bis Juni 2019 per computergestütztem Profiling einem von drei Unterstützungsprofilen zu, das über den Zugang zu Fördermaßnahmen entschied. In die Bewertung flossen unter anderem Alter, Geschlecht, Behinderung und Dauer der Arbeitslosigkeit ein. Die Panoptykon-Stiftung kritisierte das System 2015 als intransparent und mit Risiken ungleicher Behandlung behaftet. 2018 erklärte das Verfassungstribunal auf Antrag des Bürgerrechtsbeauftragten die Regelung der Datenerhebung per Verordnung für verfassungswidrig, worauf die Regierung das Profiling 2019 abschaffte.",
+  "startDate": "2014-05",
   "location": {
     "@type": "Place",
     "name": "Warschau, Polen",
@@ -35,75 +35,98 @@
   ],
   "asm:actors": [
     {
-      "name": "Polnisches Ministerium für Familie und Sozialpolitik",
+      "name": "Polnisches Ministerium für Arbeit und Sozialpolitik (ab 2015 für Familie, Arbeit und Sozialpolitik)",
       "type": "government",
       "asm:systems": [
-        "Algorithmisches Profiling-System für Arbeitslose (SYRIUSZ-Ähnlich)"
+        "Algorithmisches Profiling-System für Arbeitslose (profilowanie pomocy dla bezrobotnego)"
       ],
-      "name_de": "Polnisches Ministerium für Familie und Sozialpolitik",
-      "name_en": "Polish Ministry of Family and Social Policy"
+      "name_de": "Polnisches Ministerium für Arbeit und Sozialpolitik (ab 2015 für Familie, Arbeit und Sozialpolitik)",
+      "name_en": "Polish Ministry of Labour and Social Policy (from 2015 Ministry of Family, Labour and Social Policy)"
     }
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 2,
   "asm:reverseTimeline": [
     {
-      "date": "2014-06",
+      "date": "2014-05-27",
       "phase": "infrastructure",
-      "title": "Einführung des Drei-Kategorien-Profilierungssystems",
-      "description": "Das polnische Arbeitsministerium führt ein algorithmisches System ein, das Arbeitslose in drei Kategorien einteilt. Variablen wie Alter, Geschlecht, Behinderung, Wohnort und Bildungsniveau fließen in den Score ein. Die 'nicht begünstigt' eingestuften Personen erhalten reduzierte Fördermaßnahmen.",
-      "sources": [],
-      "title_de": "Einführung des Drei-Kategorien-Profilierungssystems",
-      "title_en": "Introduction of the three-category profiling system",
-      "description_de": "Das polnische Arbeitsministerium führt ein algorithmisches System ein, das Arbeitslose in drei Kategorien einteilt. Variablen wie Alter, Geschlecht, Behinderung, Wohnort und Bildungsniveau fließen in den Score ein. Die 'nicht begünstigt' eingestuften Personen erhalten reduzierte Fördermaßnahmen.",
-      "description_en": "The Polish Ministry of Labor introduces an algorithmic system that classifies job seekers into three categories. Variables such as age, gender, disability, place of residence, and education level feed into the score. People classified as 'not favored' receive reduced support measures."
-    },
-    {
-      "date": "2018-03",
-      "phase": "doctrine",
-      "title": "Panoptykon Foundation dokumentiert diskriminierende Wirkung",
-      "description": "Die polnische Panoptykon Foundation veröffentlicht eine Untersuchung, die zeigt, dass ländliche Bevölkerung und ältere Arbeitssuchende systematisch schlechter bewertet werden. Der Algorithmus perpetuiert strukturelle Ungleichheiten statt sie zu bekämpfen. DSGVO-Bedenken zur Entscheidung durch automatisierte Verarbeitung werden erhoben.",
-      "sources": [],
-      "title_de": "Panoptykon Foundation dokumentiert diskriminierende Wirkung",
-      "title_en": "Panoptykon Foundation documents discriminatory impact",
-      "description_de": "Die polnische Panoptykon Foundation veröffentlicht eine Untersuchung, die zeigt, dass ländliche Bevölkerung und ältere Arbeitssuchende systematisch schlechter bewertet werden. Der Algorithmus perpetuiert strukturelle Ungleichheiten statt sie zu bekämpfen. DSGVO-Bedenken zur Entscheidung durch automatisierte Verarbeitung werden erhoben.",
-      "description_en": "The Polish Panoptykon Foundation publishes an investigation showing that rural populations and older job seekers are systematically rated worse. The algorithm perpetuates structural inequalities rather than addressing them. GDPR concerns are raised about decision-making by automated processing."
-    },
-    {
-      "date": "2019-01",
-      "phase": "event",
-      "title": "Klage vor dem Verfassungstribunal",
-      "description": "Das Helsinki Komitee für Menschenrechte in Polen unterstützt Betroffene bei rechtlichen Beschwerden gegen das Profilierungssystem. Das Verfassungstribunal eroefffnet eine Untersuchung. Erste Gutachten stellen fest, dass das System möglicherweise gegen DSGVO-Artikel 22 (automatisierte Entscheidungen) verstößt.",
+      "title": "Arbeitsämter führen das Drei-Profile-System ein",
+      "description": "Nach der Novelle des Gesetzes über Beschäftigungsförderung vom 14. März 2014 und einer Verordnung des Ministeriums für Arbeit und Sozialpolitik vom 14. Mai 2014 müssen Polens Kreisarbeitsämter ab dem 27. Mai 2014 jeden Arbeitslosen einem von drei Unterstützungsprofilen zuordnen. Grundlage ist ein standardisiertes, im IT-System der Arbeitsämter hinterlegtes Interview; berücksichtigt werden unter anderem Alter, Geschlecht, Bildung, Dauer der Arbeitslosigkeit und Behinderung. Das Profil bestimmt die zugänglichen Hilfen: Profil I erhält vor allem Stellenvermittlung, Profil II alle Instrumente des Arbeitsamts außer dem Programm 'Aktivierung und Integration', Profil III vor allem Sonderprogramme wie dieses.",
       "sources": [
-        "https://www.hfhr.pl/"
+        "https://api.sejm.gov.pl/eli/acts/DU/2014/631/text.html",
+        "https://kadry.infor.pl/wiadomosci/682576,Urzedy-pracy-zmiany-od-27-maja-2014-r.html"
       ],
-      "title_de": "Klage vor dem Verfassungstribunal",
-      "title_en": "Lawsuit before the Constitutional Tribunal",
-      "description_de": "Das Helsinki Komitee für Menschenrechte in Polen unterstützt Betroffene bei rechtlichen Beschwerden gegen das Profilierungssystem. Das Verfassungstribunal eroefffnet eine Untersuchung. Erste Gutachten stellen fest, dass das System möglicherweise gegen DSGVO-Artikel 22 (automatisierte Entscheidungen) verstößt.",
-      "description_en": "The Helsinki Committee for Human Rights in Poland supports affected individuals in legal challenges to the profiling system. The Constitutional Tribunal opens an inquiry. Initial opinions find that the system may violate GDPR Article 22 (automated decision-making)."
+      "title_de": "Arbeitsämter führen das Drei-Profile-System ein",
+      "title_en": "Job centres introduce the three-profile system",
+      "description_de": "Nach der Novelle des Gesetzes über Beschäftigungsförderung vom 14. März 2014 und einer Verordnung des Ministeriums für Arbeit und Sozialpolitik vom 14. Mai 2014 müssen Polens Kreisarbeitsämter ab dem 27. Mai 2014 jeden Arbeitslosen einem von drei Unterstützungsprofilen zuordnen. Grundlage ist ein standardisiertes, im IT-System der Arbeitsämter hinterlegtes Interview; berücksichtigt werden unter anderem Alter, Geschlecht, Bildung, Dauer der Arbeitslosigkeit und Behinderung. Das Profil bestimmt die zugänglichen Hilfen: Profil I erhält vor allem Stellenvermittlung, Profil II alle Instrumente des Arbeitsamts außer dem Programm 'Aktivierung und Integration', Profil III vor allem Sonderprogramme wie dieses.",
+      "description_en": "Following the amendment of the Act on Employment Promotion of 14 March 2014 and a regulation of the Ministry of Labour and Social Policy of 14 May 2014, Poland's county job centres must assign every unemployed person to one of three support profiles from 27 May 2014. The basis is a standardised interview built into the job centres' IT system; factors include age, gender, education, duration of unemployment and disability. The profile determines the available help: profile I mainly receives job placement, profile II all job-centre instruments except the 'Activation and Integration' programme, and profile III mainly special programmes such as that one."
     },
     {
-      "date": "2019-09",
+      "date": "2015-10",
+      "phase": "event",
+      "title": "Panoptykon-Bericht kritisiert Intransparenz und Diskriminierungsrisiken",
+      "description": "Die Panoptykon-Stiftung veröffentlicht den Bericht 'Profiling the Unemployed in Poland' von Jędrzej Niklas, Karolina Sztandar-Sztanderska und Katarzyna Szymielewicz. Die Zuordnung beruht auf 24 Datenpunkten, acht davon aus der Registrierung wie Alter, Geschlecht, Behinderung und Dauer der Arbeitslosigkeit; die Logik des Verfahrens wird jedoch als vertraulich behandelt, sodass Betroffene nicht nachvollziehen können, wie ihre Angaben ihr Profil bestimmen. Die Autoren kritisieren das Risiko ungleicher Behandlung, die Regelung per Verordnung statt per Gesetz und die fehlende Möglichkeit, die Einstufung anzufechten. Die Interviewfragen und Bewertungsregeln erhält Panoptykon über Informationsfreiheitsanträge, in einem Fall erst nach einem Gerichtsverfahren.",
+      "sources": [
+        "https://algorithmwatch.org/en/poland-government-to-scrap-controversial-unemployment-scoring-system/",
+        "https://privacyinternational.org/examples/1893/poland-profiles-unemployed-determine-access-job-search-assistance"
+      ],
+      "title_de": "Panoptykon-Bericht kritisiert Intransparenz und Diskriminierungsrisiken",
+      "title_en": "Panoptykon report criticises opacity and risks of discrimination",
+      "description_de": "Die Panoptykon-Stiftung veröffentlicht den Bericht 'Profiling the Unemployed in Poland' von Jędrzej Niklas, Karolina Sztandar-Sztanderska und Katarzyna Szymielewicz. Die Zuordnung beruht auf 24 Datenpunkten, acht davon aus der Registrierung wie Alter, Geschlecht, Behinderung und Dauer der Arbeitslosigkeit; die Logik des Verfahrens wird jedoch als vertraulich behandelt, sodass Betroffene nicht nachvollziehen können, wie ihre Angaben ihr Profil bestimmen. Die Autoren kritisieren das Risiko ungleicher Behandlung, die Regelung per Verordnung statt per Gesetz und die fehlende Möglichkeit, die Einstufung anzufechten. Die Interviewfragen und Bewertungsregeln erhält Panoptykon über Informationsfreiheitsanträge, in einem Fall erst nach einem Gerichtsverfahren.",
+      "description_en": "The Panoptykon Foundation publishes the report 'Profiling the Unemployed in Poland' by Jędrzej Niklas, Karolina Sztandar-Sztanderska and Katarzyna Szymielewicz. The assignment is based on 24 data points, eight of them from registration such as age, gender, disability and duration of unemployment; the logic of the procedure, however, is treated as confidential, so those affected cannot understand how their answers determine their profile. The authors criticise the risk of unequal treatment, regulation by decree instead of statute and the lack of any way to contest the classification. Panoptykon obtains the interview questions and scoring rules through freedom of information requests, in one case only after court proceedings."
+    },
+    {
+      "date": "2016",
       "phase": "consequences",
-      "title": "Partielle Reform unter DSGVO-Druck",
-      "description": "Polen modifiziert das System unter dem Druck der DSGVO und erster Gerichtsentscheidungen. Betroffene erhalten nun das Recht, eine menschliche Überprüfung ihrer Einstufung zu beantragen. Vollständige Transparenz über die Gewichtung der Algorithmusvariablen wird jedoch nicht hergestellt. Menschenrechtsorganisationen bezeichnen die Reform als unzureichend.",
-      "sources": [],
-      "title_de": "Partielle Reform unter DSGVO-Druck",
-      "title_en": "Partial reform under GDPR pressure",
-      "description_de": "Polen modifiziert das System unter dem Druck der DSGVO und erster Gerichtsentscheidungen. Betroffene erhalten nun das Recht, eine menschliche Überprüfung ihrer Einstufung zu beantragen. Vollständige Transparenz über die Gewichtung der Algorithmusvariablen wird jedoch nicht hergestellt. Menschenrechtsorganisationen bezeichnen die Reform als unzureichend.",
-      "description_en": "Poland modifies the system under pressure from the GDPR and initial court decisions. Affected individuals now have the right to request a human review of their classification. Full transparency about the weighting of the algorithm's variables is not, however, provided. Human rights organizations call the reform inadequate."
+      "title": "Bürgerrechtsbeauftragter ruft das Verfassungstribunal an",
+      "description": "Der Bürgerrechtsbeauftragte Adam Bodnar beantragt beim Verfassungstribunal die Prüfung der Profiling-Regeln. Er hält wirksamere Hilfe für Arbeitslose für sinnvoll, beanstandet aber, dass die Verarbeitung personenbezogener Daten teils nur per Ministerverordnung statt per Gesetz geregelt ist und dass Betroffene ihr Profil nicht anfechten können - wodurch ihnen etwa Schulungen verwehrt bleiben können.",
+      "sources": [
+        "https://bip.brpo.gov.pl/pl/content/tk-szczeg%C3%B3%C5%82y-profilowania-pomocy-dla-bezrobotnego-maj%C4%85-by%C4%87-uregulowane-w-ustawie",
+        "https://sprawy-generalne.brpo.gov.pl/pdf//2016/12/VII.501.277.2014/913107.pdf"
+      ],
+      "title_de": "Bürgerrechtsbeauftragter ruft das Verfassungstribunal an",
+      "title_en": "Ombudsman turns to the Constitutional Tribunal",
+      "description_de": "Der Bürgerrechtsbeauftragte Adam Bodnar beantragt beim Verfassungstribunal die Prüfung der Profiling-Regeln. Er hält wirksamere Hilfe für Arbeitslose für sinnvoll, beanstandet aber, dass die Verarbeitung personenbezogener Daten teils nur per Ministerverordnung statt per Gesetz geregelt ist und dass Betroffene ihr Profil nicht anfechten können - wodurch ihnen etwa Schulungen verwehrt bleiben können.",
+      "description_en": "Ombudsman Adam Bodnar asks the Constitutional Tribunal to review the profiling rules. He considers more effective help for the unemployed sensible but objects that the processing of personal data is partly regulated only by ministerial regulation instead of statute and that those affected cannot contest their profile - which can, for example, bar them from training."
+    },
+    {
+      "date": "2018-06-06",
+      "phase": "consequences",
+      "title": "Verfassungstribunal: Regelung per Verordnung verfassungswidrig",
+      "description": "Das Verfassungstribunal entscheidet einstimmig (Az. K 53/16), dass Art. 34a Abs. 3c des Gesetzes über Beschäftigungsförderung verfassungswidrig ist, weil die Regeln für die Erhebung von Informationen über Arbeitslose und die Festlegung des Profils im Gesetz selbst stehen müssen statt in einer Verordnung. Das Fehlen eines eigenen Rechtsbehelfs gegen das zugewiesene Profil hält das Gericht dagegen für verfassungskonform. Die beanstandete Vorschrift verliert zwölf Monate nach Veröffentlichung des Urteils ihre Wirkung.",
+      "sources": [
+        "https://bip.brpo.gov.pl/pl/content/tk-szczeg%C3%B3%C5%82y-profilowania-pomocy-dla-bezrobotnego-maj%C4%85-by%C4%87-uregulowane-w-ustawie",
+        "https://kadry.infor.pl/wiadomosci/697625,Profilowanie-pomocy-dla-bezrobotnych-niezgodne-z-konstytucja.html"
+      ],
+      "title_de": "Verfassungstribunal: Regelung per Verordnung verfassungswidrig",
+      "title_en": "Constitutional Tribunal: regulation by decree unconstitutional",
+      "description_de": "Das Verfassungstribunal entscheidet einstimmig (Az. K 53/16), dass Art. 34a Abs. 3c des Gesetzes über Beschäftigungsförderung verfassungswidrig ist, weil die Regeln für die Erhebung von Informationen über Arbeitslose und die Festlegung des Profils im Gesetz selbst stehen müssen statt in einer Verordnung. Das Fehlen eines eigenen Rechtsbehelfs gegen das zugewiesene Profil hält das Gericht dagegen für verfassungskonform. Die beanstandete Vorschrift verliert zwölf Monate nach Veröffentlichung des Urteils ihre Wirkung.",
+      "description_en": "The Constitutional Tribunal unanimously rules (case K 53/16) that Art. 34a(3c) of the Act on Employment Promotion is unconstitutional because the rules for collecting information about the unemployed and for determining the profile must be laid down in the statute itself rather than in a regulation. By contrast, the court finds the absence of a separate remedy against the assigned profile constitutional. The challenged provision loses force twelve months after the judgment's publication."
+    },
+    {
+      "date": "2019-06-14",
+      "phase": "consequences",
+      "title": "Polen schafft das Profiling ab",
+      "description": "Statt die Regeln in ein Gesetz zu überführen, schafft die Regierung das Profiling ab: Nach Beschlüssen von Sejm (26. April 2019) und Senat (9. Mai 2019) müssen die Kreisarbeitsämter ab dem 14. Juni 2019 keine Profile mehr festlegen und können alle Förderinstrumente unabhängig von einer Einstufung nutzen; der individuelle Aktionsplan für jeden Arbeitslosen bleibt. Arbeitsämter hatten zuvor angegeben, das Profiling erschwere besonders die Aktivierung von Menschen in Profil III.",
+      "sources": [
+        "https://kadry.infor.pl/wiadomosci/2945471,Koniec-procedury-profilowania-bezrobotnych-zmiany-od-14-czerwca-2019-r.html",
+        "https://www.gov.pl/web/rodzina/koniec-z-profilowaniem-pomocy-dla-bezrobotnych"
+      ],
+      "title_de": "Polen schafft das Profiling ab",
+      "title_en": "Poland abolishes the profiling",
+      "description_de": "Statt die Regeln in ein Gesetz zu überführen, schafft die Regierung das Profiling ab: Nach Beschlüssen von Sejm (26. April 2019) und Senat (9. Mai 2019) müssen die Kreisarbeitsämter ab dem 14. Juni 2019 keine Profile mehr festlegen und können alle Förderinstrumente unabhängig von einer Einstufung nutzen; der individuelle Aktionsplan für jeden Arbeitslosen bleibt. Arbeitsämter hatten zuvor angegeben, das Profiling erschwere besonders die Aktivierung von Menschen in Profil III.",
+      "description_en": "Instead of moving the rules into a statute, the government abolishes the profiling: following votes in the Sejm (26 April 2019) and the Senate (9 May 2019), county job centres no longer have to assign profiles from 14 June 2019 and may use all support instruments regardless of any classification; the individual action plan for every unemployed person remains. Job centres had previously stated that profiling made it particularly hard to activate people in profile III."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.hfhr.pl/",
-      "title": "Helsinki Foundation for Human Rights Poland - Sozialleistungen und Algorithmik",
-      "publisher": "Helsinki Foundation for Human Rights (Polen)",
+      "url": "https://algorithmwatch.org/en/poland-government-to-scrap-controversial-unemployment-scoring-system/",
+      "title": "Poland: Government to scrap controversial unemployment scoring system",
+      "publisher": "AlgorithmWatch",
       "date": "2019",
-      "type": "ngo-report",
-      "asm:linkHealth": "ok",
-      "title_de": "Helsinki Foundation for Human Rights Poland - Sozialleistungen und Algorithmik",
-      "title_en": "Helsinki Foundation for Human Rights Poland - social benefits and algorithms"
+      "type": "news-article",
+      "title_de": "Poland: Government to scrap controversial unemployment scoring system",
+      "title_en": "Poland: Government to scrap controversial unemployment scoring system"
     }
   ],
   "asm:metadata": {
@@ -111,12 +134,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: the profiling was run by public job centres rather than the welfare system, and discrimination was alleged by critics rather than established by a court. Slug unchanged for permalink stability."
   },
-  "name_de": "Polen: Algorithmisches Profiling im Sozialhilfesystem diskriminiert Arbeitslose",
-  "name_en": "Poland: algorithmic profiling in the welfare system discriminates against the unemployed",
-  "description_de": "Polens Arbeitsvermittlungsbehörden verwenden seit 2014 ein algorithmisches Profilierungssystem, das Arbeitslose in drei Kategorien einteilt: 'begünstigt', 'durchschnittlich' und 'nicht begünstigt'. Der Algorithmus bewertet Alter, Geschlecht, Behinderungsstatus und Wohnort. Betroffene in ländlichen Gebieten und ältere Menschen erhalten dadurch systematisch weniger Förderung. Die Panoptykon Foundation und das Helsinki-Komitee kritisieren das System als diskriminierend und intransparent.",
-  "description_en": "Since 2014, Polish employment agencies have used an algorithmic profiling system that classifies job seekers into three categories: 'favored', 'average', and 'not favored'. The algorithm evaluates age, gender, disability status, and place of residence. As a result, people in rural areas and older individuals systematically receive less support. The Panoptykon Foundation and the Helsinki Committee criticize the system as discriminatory and opaque.",
+  "name_de": "Polen: Algorithmisches Profiling teilt Arbeitslose in drei Förderprofile ein",
+  "name_en": "Poland: algorithmic profiling sorts the unemployed into three support profiles",
+  "description_de": "Polens Kreisarbeitsämter ordneten Arbeitslose von Mai 2014 bis Juni 2019 per computergestütztem Profiling einem von drei Unterstützungsprofilen zu, das über den Zugang zu Fördermaßnahmen entschied. In die Bewertung flossen unter anderem Alter, Geschlecht, Behinderung und Dauer der Arbeitslosigkeit ein. Die Panoptykon-Stiftung kritisierte das System 2015 als intransparent und mit Risiken ungleicher Behandlung behaftet. 2018 erklärte das Verfassungstribunal auf Antrag des Bürgerrechtsbeauftragten die Regelung der Datenerhebung per Verordnung für verfassungswidrig, worauf die Regierung das Profiling 2019 abschaffte.",
+  "description_en": "From May 2014 to June 2019, Poland's county job centres used computer-based profiling to assign the unemployed to one of three support profiles that determined access to support measures. The assessment drew on factors including age, gender, disability and duration of unemployment. In 2015 the Panoptykon Foundation criticised the system as opaque and carrying risks of unequal treatment. In 2018, on a motion by the Ombudsman, the Constitutional Tribunal ruled unconstitutional the regulation of data collection by decree, after which the government abolished the profiling in 2019.",
   "asm:affectedRights_de": [
     "Recht auf soziale Sicherheit",
     "Gleichbehandlungsgrundsatz",

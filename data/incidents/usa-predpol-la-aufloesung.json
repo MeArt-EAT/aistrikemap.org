@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-predpol-la-aufloesung",
-  "name": "USA: PredPol in Los Angeles - Diskriminierendes Predictive Policing eingestellt",
-  "description": "Die Polizeibehörde Los Angeles (LAPD) setzte von 2012 bis 2022 das System PredPol (später Geolitica) zur vorausschauenden Polizeiarbeit ein. Analysen zeigten, dass der Algorithmus Polizeipatrouillen systematisch in schwarze und lateinamerikanische Stadtteile lenkte, unabhängig von der tatsächlichen Kriminalitätsrate. Eine Prüfung des LAPD Inspector General 2020 bestätigt den überproportionalen Einsatz in einkommensschwachen Minoritätsvierteln. 2022 stellte das LAPD PredPol ein.",
-  "startDate": "2012-01",
+  "name": "USA: PredPol in Los Angeles - umstrittenes Predictive Policing eingestellt",
+  "description": "Die Polizeibehörde Los Angeles (LAPD) setzte ab Ende 2011 das System PredPol (seit 2021 Geolitica) zur vorausschauenden Polizeiarbeit ein, das aus historischen Kriminalitätsdaten täglich Zonen für verstärkte Streifen berechnete. Die Stop LAPD Spying Coalition kritisierte, das System lenke Polizeipräsenz in einkommensschwache Viertel mit überwiegend schwarzer und lateinamerikanischer Bevölkerung; eine Analyse von The Markup fand 2021 dieses Muster in den Vorhersagen für 38 US-Polizeibehörden. Eine Prüfung des LAPD Inspector General kam 2019 zu dem Ergebnis, dass sich die Wirksamkeit von PredPol mangels Daten nicht belegen ließ. Im April 2020 stellte das LAPD PredPol unter Verweis auf Budgetzwänge ein.",
+  "startDate": "2011",
   "location": {
     "@type": "Place",
     "name": "Los Angeles, USA",
@@ -39,7 +39,6 @@
       "type": "government",
       "asm:systems": [
         "PredPol",
-        "Geolitica",
         "Predictive Policing Software"
       ],
       "name_de": "LAPD (Los Angeles Police Department)",
@@ -60,50 +59,74 @@
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2012-01",
+      "date": "2011",
       "phase": "infrastructure",
-      "title": "LAPD einführt PredPol stadtweit",
-      "description": "Das LAPD implementiert PredPol, entwickelt an der UCLA, als erstes großes Polizeipräsidium weltweit flächendeckend. Das System analysiert historische Verbrechensdaten und berechnet 150-Quadratmeter-Zonen erhöhter Einbruchswahrscheinlichkeit. Kritiker weisen von Beginn an darauf hin, dass historische Kriminalitätsdaten systemischen Rassismus widerspiegeln.",
-      "sources": [],
-      "title_de": "LAPD einführt PredPol stadtweit",
-      "description_de": "Das LAPD implementiert PredPol, entwickelt an der UCLA, als erstes großes Polizeipräsidium weltweit flächendeckend. Das System analysiert historische Verbrechensdaten und berechnet 150-Quadratmeter-Zonen erhöhter Einbruchswahrscheinlichkeit. Kritiker weisen von Beginn an darauf hin, dass historische Kriminalitätsdaten systemischen Rassismus widerspiegeln.",
-      "title_en": "LAPD rolls out PredPol citywide",
-      "description_en": "The LAPD implements PredPol, developed at UCLA, becoming the first major police department worldwide to deploy it citywide. The system analyzes historical crime data and computes 150-square-meter zones of elevated burglary probability. Critics warn from the outset that historical crime data reflects systemic racism."
-    },
-    {
-      "date": "2019-04",
-      "phase": "doctrine",
-      "title": "The Markup und Stop LAPD Spying decken rassistische Muster auf",
-      "description": "Investigative Berichte von The Markup und der zivilgesellschaftlichen Gruppe Stop LAPD Spying Coalition zeigen anhand von Einsatzdaten, dass PredPol überdurchschnittlich häufig afroamerikanische und hispanische Stadtteile markiert. Die Vorhersagegenauigkeit ist statistisch nicht besser als traditionelle Polizeiarbeit, erhöhte Präsenz führt aber zu mehr Verhaftungen und verzerrt künftige Trainingsdaten.",
+      "title": "LAPD testet PredPol in der Foothill Division",
+      "description": "Das LAPD beginnt Ende 2011 in der Foothill Division mit dem Test der Software PredPol, die vom UCLA-Anthropologen Jeff Brantingham, einem Mitgründer des Unternehmens, mitentwickelt wurde. Das System wertet historische Kriminalitätsdaten aus und markiert täglich Zonen von etwa 150 mal 150 Metern (500 Fuß), in denen Einbrüche und Autodiebstähle wahrscheinlicher sein sollen. Streifenwagen sollen diese Zonen während ihrer Schicht verstärkt anfahren.",
       "sources": [
-        "https://themarkup.org/prediction-bias/2021/12/02/crime-prediction-software-promised-to-be-free-of-biases-new-data-shows-it-perpetuates-them"
+        "https://www.technologyreview.com/s/428354/la-cops-embrace-crime-predicting-algorithm",
+        "https://dailybruin.com/2013/04/26/professor-helps-develop-predictive-policing-by-using-trends-to-predict-prevent-crimes"
       ],
-      "title_de": "The Markup und Stop LAPD Spying decken rassistische Muster auf",
-      "description_de": "Investigative Berichte von The Markup und der zivilgesellschaftlichen Gruppe Stop LAPD Spying Coalition zeigen anhand von Einsatzdaten, dass PredPol überdurchschnittlich häufig afroamerikanische und hispanische Stadtteile markiert. Die Vorhersagegenauigkeit ist statistisch nicht besser als traditionelle Polizeiarbeit, erhöhte Präsenz führt aber zu mehr Verhaftungen und verzerrt künftige Trainingsdaten.",
-      "title_en": "The Markup and Stop LAPD Spying expose racist patterns",
-      "description_en": "Investigative reports by The Markup and the civil society group Stop LAPD Spying Coalition show, based on operational data, that PredPol flags African-American and Hispanic neighborhoods disproportionately often. Predictive accuracy is statistically no better than traditional policing, but increased police presence produces more arrests and distorts future training data."
+      "title_de": "LAPD testet PredPol in der Foothill Division",
+      "title_en": "LAPD tests PredPol in the Foothill Division",
+      "description_de": "Das LAPD beginnt Ende 2011 in der Foothill Division mit dem Test der Software PredPol, die vom UCLA-Anthropologen Jeff Brantingham, einem Mitgründer des Unternehmens, mitentwickelt wurde. Das System wertet historische Kriminalitätsdaten aus und markiert täglich Zonen von etwa 150 mal 150 Metern (500 Fuß), in denen Einbrüche und Autodiebstähle wahrscheinlicher sein sollen. Streifenwagen sollen diese Zonen während ihrer Schicht verstärkt anfahren.",
+      "description_en": "In late 2011, the LAPD begins testing the PredPol software in its Foothill Division; the software was co-developed by UCLA anthropologist Jeff Brantingham, a co-founder of the company. The system analyzes historical crime data and marks daily zones of roughly 150 by 150 meters (500 feet) where burglaries and car thefts are supposedly more likely. Patrol cars are instructed to patrol these zones more heavily during their shifts."
     },
     {
-      "date": "2020-09",
+      "date": "2018-05",
+      "phase": "doctrine",
+      "title": "Stop LAPD Spying Coalition fordert Ende von PredPol und LASER",
+      "description": "Die zivilgesellschaftliche Stop LAPD Spying Coalition veröffentlicht den Bericht 'Before the Bullet Hits the Body' zu den 2011 gestarteten Programmen PredPol und LASER. Sie argumentiert, die Vorhersagen lenkten Polizeipräsenz in einkommensschwache Viertel, deren Bewohner überwiegend People of Color sind, und erleichterten dort Kontrollen und Durchsuchungen. LASER hatte zu diesem Zeitpunkt über 800 nicht öffentliche 'Chronic Offender Bulletins' über Einzelpersonen erzeugt.",
+      "sources": [
+        "https://www.courthousenews.com/activists-call-for-an-end-to-las-predictive-policing-program/",
+        "https://theintercept.com/2018/05/11/predictive-policing-surveillance-los-angeles"
+      ],
+      "title_de": "Stop LAPD Spying Coalition fordert Ende von PredPol und LASER",
+      "title_en": "Stop LAPD Spying Coalition calls for an end to PredPol and LASER",
+      "description_de": "Die zivilgesellschaftliche Stop LAPD Spying Coalition veröffentlicht den Bericht 'Before the Bullet Hits the Body' zu den 2011 gestarteten Programmen PredPol und LASER. Sie argumentiert, die Vorhersagen lenkten Polizeipräsenz in einkommensschwache Viertel, deren Bewohner überwiegend People of Color sind, und erleichterten dort Kontrollen und Durchsuchungen. LASER hatte zu diesem Zeitpunkt über 800 nicht öffentliche 'Chronic Offender Bulletins' über Einzelpersonen erzeugt.",
+      "description_en": "The civil society group Stop LAPD Spying Coalition publishes its report 'Before the Bullet Hits the Body' on the PredPol and LASER programs, both launched in 2011. It argues that the predictions steer police presence into low-income neighborhoods whose residents are overwhelmingly people of color, making stops and searches there easier to justify. By then, LASER had produced more than 800 non-public 'Chronic Offender Bulletins' on individuals."
+    },
+    {
+      "date": "2019-03",
       "phase": "event",
-      "title": "LAPD Inspector General bestätigt Bias im Audit",
-      "description": "Der unabhängige LAPD Inspector General veröffentlicht einen Prüfbericht, der bestätigt, dass PredPol-Einsätze in Vierteln mit überwiegend schwarzer und lateinamerikanischer Bevölkerung konzentriert sind. Die Überwachung durch die Police Commission wird als unzureichend eingestuft. Der Stadtrat verlangt umfassende Reformen der Überwachungstechnologie.",
-      "sources": [],
-      "title_de": "LAPD Inspector General bestätigt Bias im Audit",
-      "description_de": "Der unabhängige LAPD Inspector General veröffentlicht einen Prüfbericht, der bestätigt, dass PredPol-Einsätze in Vierteln mit überwiegend schwarzer und lateinamerikanischer Bevölkerung konzentriert sind. Die Überwachung durch die Police Commission wird als unzureichend eingestuft. Der Stadtrat verlangt umfassende Reformen der Überwachungstechnologie.",
-      "title_en": "LAPD Inspector General confirms bias in audit",
-      "description_en": "The independent LAPD Inspector General publishes an audit confirming that PredPol deployments are concentrated in neighborhoods with predominantly Black and Latino populations. Oversight by the Police Commission is rated insufficient. The city council demands comprehensive reforms of surveillance technology."
+      "title": "LAPD Inspector General: Wirkung von PredPol nicht nachweisbar",
+      "description": "Der Inspector General der Polizeikommission, Mark Smith, legt eine Prüfung der datengestützten Programme des LAPD vor. Zu PredPol stellt er fest, dass die Datenlage nicht ausreicht, um eine kriminalitätssenkende Wirkung zu belegen; 74 Prozent der Streifenbesuche in den Vorhersagezonen dauerten weniger als eine Minute. Bei LASER hatte fast die Hälfte der als 'chronische Straftäter' geführten Personen höchstens eine Festnahme wegen eines Gewaltdelikts. Mögliche ethnische Ungleichheiten bei PredPol untersucht der Bericht nicht. Im April 2019 kündigt das LAPD das Ende von LASER an.",
+      "sources": [
+        "https://www.muckrock.com/news/archives/2019/mar/12/algorithms-lapd-predpol/",
+        "https://www.cbsnews.com/news/artificial-intelligence-racial-profiling-2-0-cbsn-originals-documentary/"
+      ],
+      "title_de": "LAPD Inspector General: Wirkung von PredPol nicht nachweisbar",
+      "title_en": "LAPD Inspector General: PredPol's effect cannot be demonstrated",
+      "description_de": "Der Inspector General der Polizeikommission, Mark Smith, legt eine Prüfung der datengestützten Programme des LAPD vor. Zu PredPol stellt er fest, dass die Datenlage nicht ausreicht, um eine kriminalitätssenkende Wirkung zu belegen; 74 Prozent der Streifenbesuche in den Vorhersagezonen dauerten weniger als eine Minute. Bei LASER hatte fast die Hälfte der als 'chronische Straftäter' geführten Personen höchstens eine Festnahme wegen eines Gewaltdelikts. Mögliche ethnische Ungleichheiten bei PredPol untersucht der Bericht nicht. Im April 2019 kündigt das LAPD das Ende von LASER an.",
+      "description_en": "Mark Smith, Inspector General of the Police Commission, presents a review of the LAPD's data-driven programs. On PredPol, he finds that the available data is insufficient to show any crime-reducing effect; 74 percent of patrol visits to the prediction zones lasted less than one minute. Under LASER, almost half of the people listed as 'chronic offenders' had at most one arrest for a violent crime. The report does not examine possible racial disparities in PredPol. In April 2019, the LAPD announces the end of LASER."
     },
     {
-      "date": "2022-04",
+      "date": "2020-04",
       "phase": "consequences",
-      "title": "LAPD stellt PredPol und weiteres Predictive Policing ein",
-      "description": "Das LAPD kündigt die Einstellung von PredPol sowie des parallelen Personenprofiling-Systems Operation LASER an. Nach intensivem Druck durch Bürgerrechtsorganisationen und Stadtratsbeschlüssen werden alle algorithmischen Vorhersagesysteme abgeschaltet. Das Programm gilt als bundesweites Beispiel für das Scheitern diskriminierender KI in der Polizeiarbeit.",
-      "sources": [],
-      "title_de": "LAPD stellt PredPol und weiteres Predictive Policing ein",
-      "description_de": "Das LAPD kündigt die Einstellung von PredPol sowie des parallelen Personenprofiling-Systems Operation LASER an. Nach intensivem Druck durch Bürgerrechtsorganisationen und Stadtratsbeschlüssen werden alle algorithmischen Vorhersagesysteme abgeschaltet. Das Programm gilt als bundesweites Beispiel für das Scheitern diskriminierender KI in der Polizeiarbeit.",
-      "title_en": "LAPD ends PredPol and further predictive policing",
-      "description_en": "The LAPD announces the termination of PredPol as well as the parallel person-profiling system Operation LASER. After intense pressure from civil rights organizations and city council resolutions, all algorithmic prediction systems are shut down. The program is widely cited as a nationwide example of the failure of discriminatory AI in policing."
+      "title": "LAPD stellt PredPol ein",
+      "description": "Laut einem internen Memo vom 15. April 2020 beendet das LAPD die Nutzung von PredPol mit sofortiger Wirkung. Die Behörde begründet den Schritt mit finanziellen Engpässen infolge der COVID-19-Pandemie, nicht mit der Kritik von Bürgerrechtsgruppen. Die Stop LAPD Spying Coalition wertet das Aus dennoch als Ergebnis ihrer Kampagne.",
+      "sources": [
+        "https://www.buzzfeednews.com/article/carolinehaskins1/los-angeles-police-department-dumping-Predpol-predictive",
+        "https://thenextweb.com/neural/2020/04/22/lapd-ditches-predictive-policing-program-accused-of-racial-bias/"
+      ],
+      "title_de": "LAPD stellt PredPol ein",
+      "title_en": "LAPD discontinues PredPol",
+      "description_de": "Laut einem internen Memo vom 15. April 2020 beendet das LAPD die Nutzung von PredPol mit sofortiger Wirkung. Die Behörde begründet den Schritt mit finanziellen Engpässen infolge der COVID-19-Pandemie, nicht mit der Kritik von Bürgerrechtsgruppen. Die Stop LAPD Spying Coalition wertet das Aus dennoch als Ergebnis ihrer Kampagne.",
+      "description_en": "According to an internal memo dated April 15, 2020, the LAPD ends its use of PredPol effective immediately. The department attributes the step to financial constraints caused by the COVID-19 pandemic rather than to criticism from civil rights groups. The Stop LAPD Spying Coalition nonetheless considers the end a result of its campaign."
+    },
+    {
+      "date": "2021-12",
+      "phase": "consequences",
+      "title": "The Markup: PredPol-Vorhersagen treffen überproportional schwarze und lateinamerikanische Viertel",
+      "description": "The Markup und Gizmodo werten 5,9 Millionen PredPol-Vorhersagen für 38 US-Polizeibehörden aus, die über einen auf der LAPD-Website verlinkten, ungeschützten Cloud-Speicher zugänglich waren. Viertel, die verstärkt für Streifen vorgeschlagen wurden, hatten häufiger schwarze und lateinamerikanische Bewohner sowie einkommensschwache Familien, während weißere und wohlhabendere Gegenden oft jahrelang keine Vorhersage erhielten. Das inzwischen in Geolitica umbenannte Unternehmen zweifelt die Analyse an, bestreitet aber nicht die Echtheit der Daten.",
+      "sources": [
+        "https://themarkup.org/prediction-bias/2021/12/02/crime-prediction-software-promised-to-be-free-of-biases-new-data-shows-it-perpetuates-them",
+        "https://gizmodo.com/crime-prediction-software-promised-to-be-free-of-biases-1848138977"
+      ],
+      "title_de": "The Markup: PredPol-Vorhersagen treffen überproportional schwarze und lateinamerikanische Viertel",
+      "title_en": "The Markup: PredPol predictions disproportionately target Black and Latino neighborhoods",
+      "description_de": "The Markup und Gizmodo werten 5,9 Millionen PredPol-Vorhersagen für 38 US-Polizeibehörden aus, die über einen auf der LAPD-Website verlinkten, ungeschützten Cloud-Speicher zugänglich waren. Viertel, die verstärkt für Streifen vorgeschlagen wurden, hatten häufiger schwarze und lateinamerikanische Bewohner sowie einkommensschwache Familien, während weißere und wohlhabendere Gegenden oft jahrelang keine Vorhersage erhielten. Das inzwischen in Geolitica umbenannte Unternehmen zweifelt die Analyse an, bestreitet aber nicht die Echtheit der Daten.",
+      "description_en": "The Markup and Gizmodo analyze 5.9 million PredPol predictions for 38 U.S. police agencies, which were accessible through an unsecured cloud storage bucket linked from the LAPD website. Neighborhoods recommended for heavier patrols were more likely to be home to Black and Latino residents and low-income families, while whiter and wealthier areas often went years without a single prediction. The company, since renamed Geolitica, questions the analysis but does not dispute the authenticity of the data."
     }
   ],
   "asm:sources": [
@@ -123,18 +146,19 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: 'discriminatory' replaced by 'controversial' because the LAPD Inspector General's 2019 review did not assess racial disparities in PredPol and the LAPD cited budget constraints when ending it. Slug unchanged for permalink stability."
   },
-  "name_de": "USA: PredPol in Los Angeles - Diskriminierendes Predictive Policing eingestellt",
-  "description_de": "Die Polizeibehörde Los Angeles (LAPD) setzte von 2012 bis 2022 das System PredPol (später Geolitica) zur vorausschauenden Polizeiarbeit ein. Analysen zeigten, dass der Algorithmus Polizeipatrouillen systematisch in schwarze und lateinamerikanische Stadtteile lenkte, unabhängig von der tatsächlichen Kriminalitätsrate. Eine Prüfung des LAPD Inspector General 2020 bestätigt den überproportionalen Einsatz in einkommensschwachen Minoritätsvierteln. 2022 stellte das LAPD PredPol ein.",
+  "name_de": "USA: PredPol in Los Angeles - umstrittenes Predictive Policing eingestellt",
+  "description_de": "Die Polizeibehörde Los Angeles (LAPD) setzte ab Ende 2011 das System PredPol (seit 2021 Geolitica) zur vorausschauenden Polizeiarbeit ein, das aus historischen Kriminalitätsdaten täglich Zonen für verstärkte Streifen berechnete. Die Stop LAPD Spying Coalition kritisierte, das System lenke Polizeipräsenz in einkommensschwache Viertel mit überwiegend schwarzer und lateinamerikanischer Bevölkerung; eine Analyse von The Markup fand 2021 dieses Muster in den Vorhersagen für 38 US-Polizeibehörden. Eine Prüfung des LAPD Inspector General kam 2019 zu dem Ergebnis, dass sich die Wirksamkeit von PredPol mangels Daten nicht belegen ließ. Im April 2020 stellte das LAPD PredPol unter Verweis auf Budgetzwänge ein.",
   "asm:affectedRights_de": [
     "Recht auf Gleichbehandlung",
     "Recht auf Privatsphäre",
     "Reisefreiheit",
     "Schutz vor willkürlicher Polizeikontrolle"
   ],
-  "name_en": "USA: PredPol in Los Angeles - discriminatory predictive policing discontinued",
-  "description_en": "From 2012 to 2022, the Los Angeles Police Department (LAPD) used the PredPol system (later Geolitica) for predictive policing. Analyses showed that the algorithm systematically directed police patrols into Black and Latino neighborhoods, regardless of actual crime rates. A 2020 review by the LAPD Inspector General confirmed disproportionate deployment in low-income minority neighborhoods. In 2022, the LAPD discontinued PredPol.",
+  "name_en": "USA: PredPol in Los Angeles - controversial predictive policing discontinued",
+  "description_en": "From late 2011, the Los Angeles Police Department (LAPD) used the PredPol system (renamed Geolitica in 2021) for predictive policing; it calculated daily zones for heavier patrols from historical crime data. The Stop LAPD Spying Coalition criticized the system for steering police presence into low-income neighborhoods with predominantly Black and Latino populations; in 2021, an analysis by The Markup found this pattern in the predictions for 38 U.S. police agencies. A 2019 review by the LAPD Inspector General concluded that the data was insufficient to demonstrate PredPol's effectiveness. In April 2020, the LAPD discontinued PredPol, citing budget constraints.",
   "asm:affectedRights_en": [
     "equal treatment",
     "right to privacy",

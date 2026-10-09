@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/irak-ki-drohnen-angriffe",
-  "name": "Irak: KI-gestützte Drohnenangriffe und zivile Opfer",
-  "description": "Das US-Militär und die CIA setzen im Irak seit Beginn der 2000er Jahre KI-assistierte Zielsystemtechnik bei Drohnenangriffen ein. Trotz Behauptungen chirurgischer Präzision dokumentieren unabhängige Organisationen wie das Bureau of Investigative Journalism und Airwars Hunderte zivile Todesopfer. Der Angriff auf General Qasem Soleimani am Bagdader Flughafen 2020 verdeutlicht die politischen und rechtlichen Risiken algorithmisch gestützter Tötungen außerhalb aktiver Kampfzonen.",
-  "startDate": "2003-03",
+  "name": "Irak: Drohnenkrieg, KI-Videoanalyse und zivile Opfer",
+  "description": "Im Luftkrieg gegen den IS im Irak und in Syrien setzt das US-Militär ab 2017 mit Project Maven KI-Algorithmen zur Auswertung von Drohnenvideos ein. Zugleich töteten Luftangriffe der US-geführten Koalition nach Schätzungen von Airwars Tausende Zivilisten, während die Koalition selbst 1.437 zivile Todesopfer bestätigt. Die Tötung von General Qasem Soleimani durch eine US-Drohne am Bagdader Flughafen im Januar 2020 verdeutlicht die politischen und rechtlichen Risiken ferngesteuerter Tötungen auf fremdem Territorium; ein KI-Einsatz bei diesem Angriff ist öffentlich nicht belegt.",
+  "startDate": "2014-08",
   "location": {
     "@type": "Place",
     "name": "Bagdad, Irak",
@@ -40,70 +40,84 @@
       "asm:systems": [
         "MQ-9 Reaper",
         "MQ-1 Predator",
-        "SKYNET-Targeting-Algorithmus"
+        "Project Maven (KI-Videoanalyse)"
       ],
       "name_de": "US-Militär (CENTCOM)",
       "name_en": "US Military (CENTCOM)"
-    },
-    {
-      "name": "CIA",
-      "type": "government",
-      "asm:systems": [
-        "Signature-Strike-Programm",
-        "Pattern-of-Life-Analyse"
-      ],
-      "name_de": "CIA",
-      "name_en": "CIA"
     }
   ],
   "asm:severity": 5,
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2003",
+      "date": "2014-08",
       "phase": "infrastructure",
-      "title": "Aufbau der Drohneninfrastruktur nach dem Irakeinmarsch",
-      "description": "Nach dem Einmarsch in den Irak baut das US-Militär eine umfangreiche Drohneninfrastruktur auf. Unbemannte Systeme werden für Aufklärung und gezielte Tötungen eingesetzt. Frühe KI-gestützte Mustererkennungssysteme analysieren Bewegungsprofile verdächtiger Personen - sogenannte 'Pattern of Life'-Analysen - um Angriffsziele zu identifizieren.",
+      "title": "Luftkrieg der US-Koalition gegen den IS im Irak",
+      "description": "Am 8. August 2014 beginnen US-Luftangriffe gegen den IS im Irak, im Oktober 2014 erhält der Einsatz den Namen Operation Inherent Resolve. Die Zahl der dabei getöteten Zivilisten ist umstritten: Die Koalition bestätigt 1.437 zivile Todesopfer in Irak und Syrien, Airwars schätzt auf Basis lokaler Berichte zwischen rund 8.200 und 13.300.",
       "sources": [
-        "https://theintercept.com/drone-papers/"
+        "https://archive.defense.gov/home/features/2014/0814_iraq/",
+        "https://archive-2025.airwars.org/conflict/coalition-in-iraq-and-syria/"
       ],
-      "title_de": "Aufbau der Drohneninfrastruktur nach dem Irakeinmarsch",
-      "title_en": "Build-up of drone infrastructure after the invasion of Iraq",
-      "description_de": "Nach dem Einmarsch in den Irak baut das US-Militär eine umfangreiche Drohneninfrastruktur auf. Unbemannte Systeme werden für Aufklärung und gezielte Tötungen eingesetzt. Frühe KI-gestützte Mustererkennungssysteme analysieren Bewegungsprofile verdächtiger Personen - sogenannte 'Pattern of Life'-Analysen - um Angriffsziele zu identifizieren.",
-      "description_en": "Following the invasion of Iraq, the US military builds an extensive drone infrastructure. Unmanned systems are deployed for reconnaissance and targeted killings. Early AI-based pattern-recognition systems analyze the movement profiles of suspected individuals - so-called 'pattern of life' analyses - to identify strike targets."
+      "title_de": "Luftkrieg der US-Koalition gegen den IS im Irak",
+      "title_en": "US-led coalition air war against ISIS in Iraq",
+      "description_de": "Am 8. August 2014 beginnen US-Luftangriffe gegen den IS im Irak, im Oktober 2014 erhält der Einsatz den Namen Operation Inherent Resolve. Die Zahl der dabei getöteten Zivilisten ist umstritten: Die Koalition bestätigt 1.437 zivile Todesopfer in Irak und Syrien, Airwars schätzt auf Basis lokaler Berichte zwischen rund 8.200 und 13.300.",
+      "description_en": "On August 8, 2014, US airstrikes against ISIS in Iraq begin; in October 2014 the campaign is named Operation Inherent Resolve. The number of civilians killed is disputed: the coalition confirms 1,437 civilian deaths in Iraq and Syria, while Airwars estimates between roughly 8,200 and 13,300 based on local reports."
     },
     {
-      "date": "2014",
+      "date": "2017-04 bis 2017-12",
       "phase": "doctrine",
-      "title": "Eskalation im Kampf gegen den IS",
-      "description": "Im Rahmen der Operation Inherent Resolve gegen den Islamischen Staat werden KI-Zielsysteme massiv ausgeweitet. Das Bureau of Investigative Journalism dokumentiert in diesem Zeitraum Hunderte ziviler Todesopfer durch Drohnenangriffe im Irak. Geheimgelegte Fehlerquoten der Algorithmen werden von Whistleblowern auf bis zu 90 Prozent bei Signature Strikes beziffert.",
-      "sources": [],
-      "title_de": "Eskalation im Kampf gegen den IS",
-      "title_en": "Escalation in the campaign against ISIS",
-      "description_de": "Im Rahmen der Operation Inherent Resolve gegen den Islamischen Staat werden KI-Zielsysteme massiv ausgeweitet. Das Bureau of Investigative Journalism dokumentiert in diesem Zeitraum Hunderte ziviler Todesopfer durch Drohnenangriffe im Irak. Geheimgelegte Fehlerquoten der Algorithmen werden von Whistleblowern auf bis zu 90 Prozent bei Signature Strikes beziffert.",
-      "description_en": "Under Operation Inherent Resolve against the Islamic State, AI targeting systems are massively expanded. During this period the Bureau of Investigative Journalism documents hundreds of civilian deaths from drone strikes in Iraq. Whistleblowers put the secret error rates of the algorithms in 'signature strikes' at up to 90 percent."
+      "title": "Pentagon startet Project Maven gegen den IS",
+      "description": "Der stellvertretende US-Verteidigungsminister Bob Work richtet am 26. April 2017 das Algorithmic Warfare Cross-Functional Team (Project Maven) ein, das maschinelles Lernen auf Videomaterial von Drohnen anwenden soll. Erste Aufgabe ist der Kampf gegen den IS in Irak und Syrien. Im Dezember 2017 helfen Algorithmen an einem ungenannten Ort im Nahen Osten Analysten, Objekte in Videoaufnahmen einer ScanEagle-Drohne zu erkennen.",
+      "sources": [
+        "https://www.defenseone.com/technology/2017/05/pentagons-new-algorithmic-warfare-cell-gets-its-first-mission-hunt-isis/137833/",
+        "https://www.defenseone.com/technology/2017/12/pentagons-new-artificial-intelligence-already-hunting-terrorists/144742/"
+      ],
+      "title_de": "Pentagon startet Project Maven gegen den IS",
+      "title_en": "Pentagon launches Project Maven against ISIS",
+      "description_de": "Der stellvertretende US-Verteidigungsminister Bob Work richtet am 26. April 2017 das Algorithmic Warfare Cross-Functional Team (Project Maven) ein, das maschinelles Lernen auf Videomaterial von Drohnen anwenden soll. Erste Aufgabe ist der Kampf gegen den IS in Irak und Syrien. Im Dezember 2017 helfen Algorithmen an einem ungenannten Ort im Nahen Osten Analysten, Objekte in Videoaufnahmen einer ScanEagle-Drohne zu erkennen.",
+      "description_en": "On April 26, 2017, Deputy Defense Secretary Bob Work establishes the Algorithmic Warfare Cross-Functional Team (Project Maven), which is to apply machine learning to drone video footage. Its first mission is the fight against ISIS in Iraq and Syria. In December 2017, algorithms help analysts identify objects in ScanEagle drone video at an undisclosed location in the Middle East."
     },
     {
       "date": "2020-01-03",
       "phase": "event",
       "title": "Tötung von General Soleimani am Bagdader Flughafen",
-      "description": "Ein US-Drohnenangriff am Internationalen Flughafen Bagdad tötet den iranischen General Qasem Soleimani und den irakischen Milizenkommandeur Abu Mahdi al-Muhandis. Der Angriff basierte auf KI-gestützter Bewegungsanalyse. Der irakische Premierminister bezeichnet den Angriff als Verletzung der Souveränität; der UN-Sonderberichterstatter stuft ihn als möglicherweise rechtswidrige Tötung ein.",
-      "sources": [],
+      "description": "Eine US-Drohne vom Typ MQ-9 Reaper feuert am Internationalen Flughafen Bagdad Raketen auf einen Konvoi und tötet den iranischen General Qasem Soleimani und den irakischen Milizenkommandeur Abu Mahdi al-Muhandis. Die US-Regierung begründet den Angriff mit Selbstverteidigung. Ein KI-Einsatz bei diesem Angriff ist öffentlich nicht belegt.",
+      "sources": [
+        "https://airwars.org/civilian-casualties/ci879-january-3-2020/",
+        "https://www.cambridge.org/core/journals/american-journal-of-international-law/article/us-drone-strike-in-iraq-kills-iranian-military-leader-qasem-soleimani/F914ED1CDB4DD9D0BA53C95F65987743"
+      ],
       "title_de": "Tötung von General Soleimani am Bagdader Flughafen",
       "title_en": "Killing of General Soleimani at Baghdad airport",
-      "description_de": "Ein US-Drohnenangriff am Internationalen Flughafen Bagdad tötet den iranischen General Qasem Soleimani und den irakischen Milizenkommandeur Abu Mahdi al-Muhandis. Der Angriff basierte auf KI-gestützter Bewegungsanalyse. Der irakische Premierminister bezeichnet den Angriff als Verletzung der Souveränität; der UN-Sonderberichterstatter stuft ihn als möglicherweise rechtswidrige Tötung ein.",
-      "description_en": "A US drone strike at Baghdad International Airport kills Iranian General Qasem Soleimani and Iraqi militia commander Abu Mahdi al-Muhandis. The strike was based on AI-assisted movement analysis. The Iraqi Prime Minister calls the strike a violation of sovereignty; the UN Special Rapporteur classifies it as a possibly unlawful killing."
+      "description_de": "Eine US-Drohne vom Typ MQ-9 Reaper feuert am Internationalen Flughafen Bagdad Raketen auf einen Konvoi und tötet den iranischen General Qasem Soleimani und den irakischen Milizenkommandeur Abu Mahdi al-Muhandis. Die US-Regierung begründet den Angriff mit Selbstverteidigung. Ein KI-Einsatz bei diesem Angriff ist öffentlich nicht belegt.",
+      "description_en": "A US MQ-9 Reaper drone fires missiles at a convoy at Baghdad International Airport, killing Iranian General Qasem Soleimani and Iraqi militia commander Abu Mahdi al-Muhandis. The US government justifies the strike as self-defense. The use of AI in this strike is not publicly documented."
     },
     {
-      "date": "2021",
+      "date": "2020-01-05",
       "phase": "consequences",
-      "title": "Forderungen nach Rechenschaftspflicht und Rückzug",
-      "description": "Das irakische Parlament fordert den Abzug aller ausländischen Truppen. Airwars dokumentiert über 1.400 bestätigte zivile Todesopfer durch US-Luftangriffe im Irak zwischen 2014 und 2021. Menschenrechtsorganisationen fordern verbindliche internationale Standards für KI-gestützte Waffensysteme. Die USA lehnen eine unabhängige Untersuchung der Zielalgorithmen ab.",
-      "sources": [],
-      "title_de": "Forderungen nach Rechenschaftspflicht und Rückzug",
-      "title_en": "Calls for accountability and withdrawal",
-      "description_de": "Das irakische Parlament fordert den Abzug aller ausländischen Truppen. Airwars dokumentiert über 1.400 bestätigte zivile Todesopfer durch US-Luftangriffe im Irak zwischen 2014 und 2021. Menschenrechtsorganisationen fordern verbindliche internationale Standards für KI-gestützte Waffensysteme. Die USA lehnen eine unabhängige Untersuchung der Zielalgorithmen ab.",
-      "description_en": "The Iraqi parliament demands the withdrawal of all foreign troops. Airwars documents more than 1,400 confirmed civilian deaths from US airstrikes in Iraq between 2014 and 2021. Human rights organizations call for binding international standards for AI-assisted weapons systems. The US rejects an independent investigation of the targeting algorithms."
+      "title": "Irakisches Parlament fordert Abzug ausländischer Truppen",
+      "description": "Das irakische Parlament fordert in einer nicht bindenden Resolution die Ausweisung ausländischer Truppen, nachdem Premierminister Adil Abdul-Mahdi dies empfohlen hat. Irakische Vertreter bezeichnen die Tötung Soleimanis auf irakischem Boden als Verletzung der Souveränität des Landes. Die Anti-IS-Koalition setzt ihre Operationen vorübergehend aus.",
+      "sources": [
+        "https://www.aljazeera.com/news/2020/1/5/iraqi-parliament-calls-for-expulsion-of-foreign-troops",
+        "https://slate.com/news-and-politics/2020/01/iraqi-lawmakers-vote-expel-foreign-troops-anti-isis-coalition-suspends-operations.html"
+      ],
+      "title_de": "Irakisches Parlament fordert Abzug ausländischer Truppen",
+      "title_en": "Iraqi parliament calls for withdrawal of foreign troops",
+      "description_de": "Das irakische Parlament fordert in einer nicht bindenden Resolution die Ausweisung ausländischer Truppen, nachdem Premierminister Adil Abdul-Mahdi dies empfohlen hat. Irakische Vertreter bezeichnen die Tötung Soleimanis auf irakischem Boden als Verletzung der Souveränität des Landes. Die Anti-IS-Koalition setzt ihre Operationen vorübergehend aus.",
+      "description_en": "The Iraqi parliament calls in a non-binding resolution for the expulsion of foreign troops, after Prime Minister Adil Abdul-Mahdi recommended this. Iraqi officials describe the killing of Soleimani on Iraqi soil as a violation of the country's sovereignty. The anti-ISIS coalition temporarily suspends its operations."
+    },
+    {
+      "date": "2020-07",
+      "phase": "consequences",
+      "title": "UN-Sonderberichterstatterin: willkürliche Tötung",
+      "description": "Die UN-Sonderberichterstatterin für außergerichtliche Hinrichtungen, Agnès Callamard, kommt in einem Bericht an den UN-Menschenrechtsrat zu dem Schluss, die Tötung Soleimanis sei eine willkürliche Tötung, für die die USA nach den Menschenrechten verantwortlich seien. Die USA hätten keine Belege für einen unmittelbar bevorstehenden Angriff vorgelegt und mit dem Angriff ohne Zustimmung des Irak dessen territoriale Integrität verletzt. Die US-Regierung weist den Bericht zurück.",
+      "sources": [
+        "https://www.aljazeera.com/news/2020/7/7/us-killing-of-irans-qassem-soleimani-unlawful-un-expert",
+        "https://globalnews.ca/news/7161122/us-rejects-un-soleimani-report/amp"
+      ],
+      "title_de": "UN-Sonderberichterstatterin: willkürliche Tötung",
+      "title_en": "UN Special Rapporteur: arbitrary killing",
+      "description_de": "Die UN-Sonderberichterstatterin für außergerichtliche Hinrichtungen, Agnès Callamard, kommt in einem Bericht an den UN-Menschenrechtsrat zu dem Schluss, die Tötung Soleimanis sei eine willkürliche Tötung, für die die USA nach den Menschenrechten verantwortlich seien. Die USA hätten keine Belege für einen unmittelbar bevorstehenden Angriff vorgelegt und mit dem Angriff ohne Zustimmung des Irak dessen territoriale Integrität verletzt. Die US-Regierung weist den Bericht zurück.",
+      "description_en": "The UN Special Rapporteur on extrajudicial executions, Agnes Callamard, concludes in a report to the UN Human Rights Council that the killing of Soleimani was an arbitrary killing for which the US is responsible under human rights law. The US, she finds, provided no evidence of an imminent attack and violated Iraq's territorial integrity by striking without Iraq's consent. The US government rejects the report."
     }
   ],
   "asm:sources": [
@@ -123,12 +137,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-02: AI involvement is documented for drone video analysis (Project Maven), not for AI-assisted drone strikes in Iraq, which the original title implied. Slug unchanged for permalink stability."
   },
-  "name_de": "Irak: KI-gestützte Drohnenangriffe und zivile Opfer",
-  "name_en": "Iraq: AI-assisted drone strikes and civilian casualties",
-  "description_de": "Das US-Militär und die CIA setzen im Irak seit Beginn der 2000er Jahre KI-assistierte Zielsystemtechnik bei Drohnenangriffen ein. Trotz Behauptungen chirurgischer Präzision dokumentieren unabhängige Organisationen wie das Bureau of Investigative Journalism und Airwars Hunderte zivile Todesopfer. Der Angriff auf General Qasem Soleimani am Bagdader Flughafen 2020 verdeutlicht die politischen und rechtlichen Risiken algorithmisch gestützter Tötungen außerhalb aktiver Kampfzonen.",
-  "description_en": "Since the early 2000s, the US military and the CIA have deployed AI-assisted targeting technology in drone strikes in Iraq. Despite claims of surgical precision, independent organizations such as the Bureau of Investigative Journalism and Airwars document hundreds of civilian deaths. The 2020 strike that killed General Qasem Soleimani at Baghdad airport highlights the political and legal risks of algorithmically assisted killings outside active combat zones.",
+  "name_de": "Irak: Drohnenkrieg, KI-Videoanalyse und zivile Opfer",
+  "name_en": "Iraq: Drone warfare, AI video analysis and civilian casualties",
+  "description_de": "Im Luftkrieg gegen den IS im Irak und in Syrien setzt das US-Militär ab 2017 mit Project Maven KI-Algorithmen zur Auswertung von Drohnenvideos ein. Zugleich töteten Luftangriffe der US-geführten Koalition nach Schätzungen von Airwars Tausende Zivilisten, während die Koalition selbst 1.437 zivile Todesopfer bestätigt. Die Tötung von General Qasem Soleimani durch eine US-Drohne am Bagdader Flughafen im Januar 2020 verdeutlicht die politischen und rechtlichen Risiken ferngesteuerter Tötungen auf fremdem Territorium; ein KI-Einsatz bei diesem Angriff ist öffentlich nicht belegt.",
+  "description_en": "In the air war against ISIS in Iraq and Syria, the US military has since 2017 used AI algorithms to analyze drone video through Project Maven. At the same time, airstrikes by the US-led coalition killed thousands of civilians according to Airwars estimates, while the coalition itself confirms 1,437 civilian deaths. The killing of General Qasem Soleimani by a US drone at Baghdad airport in January 2020 highlights the political and legal risks of remote-controlled killings on foreign territory; the use of AI in this strike is not publicly documented.",
   "asm:affectedRights_de": [
     "Recht auf Leben",
     "Recht auf körperliche Unversehrtheit",

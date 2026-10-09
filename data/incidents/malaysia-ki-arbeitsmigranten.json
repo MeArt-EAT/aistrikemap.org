@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/malaysia-ki-arbeitsmigranten",
-  "name": "Malaysia: Biometrische KI-Überwachung von Arbeitsmigranten aus Bangladesch und Myanmar",
-  "description": "Malaysia setzt umfangreiche biometrische Erfassungs- und Überwachungssysteme ein, die vorrangig auf die rund zwei Millionen registrierten - und geschätzt weitere zwei Millionen undokumentierten - Arbeitsmigranten im Land abzielen. Besonders betroffen sind Arbeitskräfte aus Bangladesch, Myanmar, Indonesien und Nepal. Amnesty International und Fortify Rights dokumentieren, dass biometrische Daten zur Kontrolle von Bewegungsfreiheit, Arbeitsverhältnissen und Aufenthaltsstatus eingesetzt werden, oft in Kombination mit ausbeuterischen Arbeitsbedingungen. Während der COVID-19-Pandemie 2020 wurden Migranten gezielt durch Razzien und digitale Überwachung verfolgt.",
+  "name": "Malaysia: Biometrische Erfassung, Razzien und Einwanderungshaft für Arbeitsmigranten aus Bangladesch und Myanmar",
+  "description": "Malaysia erfasst ausländische Arbeitskräfte biometrisch und geht mit Razzien, unbefristeter Haft und Abschiebungen gegen undokumentierte Migranten vor. Die Registrierung ausländischer Arbeitskräfte läuft über das privat betriebene Foreign Workers Centralised Management System (FWCMS), das Fingerabdrücke, Gesichtsbilder und Passdaten erfasst und an die Einwanderungsbehörde übermittelt; den Zuschlag dafür erhielt der Betreiber Bestinet im Januar 2018. Während des COVID-19-Lockdowns nahmen Behörden im Mai 2020 allein bei zwei Razzien im Raum Kuala Lumpur nach offiziellen Angaben fast 2.000 undokumentierte Migranten fest, darunter Kinder und Hunderte Menschen aus Myanmar. Amnesty International dokumentiert für 2022 unbefristete Haft und Abschiebungen nach Myanmar; 2022 starben 150 Ausländer in Einwanderungshaft. Ein Einsatz von KI-Systemen gegen Arbeitsmigranten ist nicht belegt.",
   "startDate": "2018",
   "location": {
     "@type": "Place",
@@ -40,9 +40,9 @@
       "name": "Malaysische Regierung",
       "type": "government",
       "asm:systems": [
-        "NERS (National Employment Returns System)",
-        "Biometrisches Ausländerregister",
-        "MyIMMs digitales Grenzkontrollsystem"
+        "NERS (National Enforcement and Registration System)",
+        "FWCMS (Foreign Workers Centralised Management System, Bestinet)",
+        "myIMMs (Malaysian Immigration System)"
       ],
       "name_de": "Malaysische Regierung",
       "name_en": "Government of Malaysia"
@@ -51,8 +51,7 @@
       "name": "Malaysische Einwanderungsbehörde (Jabatan Imigresen)",
       "type": "government",
       "asm:systems": [
-        "Biometrische Datenbank",
-        "Razzien-Koordinationssystem"
+        "Biometrische Datenbank"
       ],
       "name_de": "Malaysische Einwanderungsbehörde (Jabatan Imigresen)",
       "name_en": "Malaysian Immigration Department (Jabatan Imigresen)"
@@ -128,14 +127,44 @@
   ],
   "asm:sources": [
     {
-      "url": "https://www.amnesty.org/en/countries/asia-and-the-pacific/malaysia/report-malaysia/",
-      "title": "Malaysia Annual Report - Migrant Workers",
-      "publisher": "Amnesty International",
-      "date": "2022",
+      "url": "https://www.nst.com.my/amp/news/nation/2024/07/1071680/pac-foreign-workers-management-system-used-6-years-without-contract",
+      "title": "PAC: Foreign workers management system used for 6 years without contract",
+      "publisher": "New Straits Times",
+      "date": "2024-07",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "PAC: Verwaltungssystem für ausländische Arbeitskräfte sechs Jahre ohne Vertrag genutzt",
+      "title_en": "PAC: Foreign workers management system used for 6 years without contract"
+    },
+    {
+      "url": "https://www.aljazeera.com/amp/news/2020/5/1/malaysia-detains-migrants-refugees-amid-coronavirus-lockdown",
+      "title": "Malaysia 'detains migrants, refugees' amid coronavirus lockdown",
+      "publisher": "Al Jazeera",
+      "date": "2020-05-01",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Malaysia nimmt während des Corona-Lockdowns Migranten und Geflüchtete fest",
+      "title_en": "Malaysia 'detains migrants, refugees' amid coronavirus lockdown"
+    },
+    {
+      "url": "https://www.ecoi.net/de/dokument/2089558.html",
+      "title": "Amnesty International Report 2022/23; The State of the World's Human Rights; Malaysia 2022",
+      "publisher": "Amnesty International (via ecoi.net)",
+      "date": "2023-03",
       "type": "ngo-report",
-      "asm:linkHealth": "ok",
-      "title_de": "Malaysia Annual Report - Migrant Workers",
-      "title_en": "Malaysia Annual Report - Migrant Workers"
+      "asm:linkHealth": "unverified",
+      "title_de": "Amnesty International Report 2022/23: Zur weltweiten Lage der Menschenrechte; Malaysia 2022",
+      "title_en": "Amnesty International Report 2022/23; The State of the World's Human Rights; Malaysia 2022"
+    },
+    {
+      "url": "https://www.aljazeera.com/amp/news/2023/2/23/malaysia-pressed-to-probe-deaths-of-150-foreigners-in-detention",
+      "title": "Malaysia pressed to probe deaths of 150 foreigners in detention",
+      "publisher": "Al Jazeera",
+      "date": "2023-02-23",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Malaysia soll Tod von 150 Ausländern in Haft untersuchen",
+      "title_en": "Malaysia pressed to probe deaths of 150 foreigners in detention"
     }
   ],
   "asm:metadata": {
@@ -143,12 +172,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: no source documents AI-based surveillance of migrant workers in Malaysia, so the title now names the documented biometric registration, raids and immigration detention. Slug unchanged for permalink stability."
   },
-  "name_de": "Malaysia: Biometrische KI-Überwachung von Arbeitsmigranten aus Bangladesch und Myanmar",
-  "name_en": "Malaysia: biometric AI surveillance of migrant workers from Bangladesh and Myanmar",
-  "description_de": "Malaysia setzt umfangreiche biometrische Erfassungs- und Überwachungssysteme ein, die vorrangig auf die rund zwei Millionen registrierten - und geschätzt weitere zwei Millionen undokumentierten - Arbeitsmigranten im Land abzielen. Besonders betroffen sind Arbeitskräfte aus Bangladesch, Myanmar, Indonesien und Nepal. Amnesty International und Fortify Rights dokumentieren, dass biometrische Daten zur Kontrolle von Bewegungsfreiheit, Arbeitsverhältnissen und Aufenthaltsstatus eingesetzt werden, oft in Kombination mit ausbeuterischen Arbeitsbedingungen. Während der COVID-19-Pandemie 2020 wurden Migranten gezielt durch Razzien und digitale Überwachung verfolgt.",
-  "description_en": "Malaysia deploys extensive biometric capture and surveillance systems that primarily target the roughly two million registered - and an estimated additional two million undocumented - migrant workers in the country. Workers from Bangladesh, Myanmar, Indonesia, and Nepal are particularly affected. Amnesty International and Fortify Rights document that biometric data is used to control freedom of movement, employment relationships, and residency status, often in combination with exploitative working conditions. During the COVID-19 pandemic in 2020, migrants were specifically targeted through raids and digital surveillance.",
+  "name_de": "Malaysia: Biometrische Erfassung, Razzien und Einwanderungshaft für Arbeitsmigranten aus Bangladesch und Myanmar",
+  "name_en": "Malaysia: biometric registration, raids and immigration detention of migrant workers from Bangladesh and Myanmar",
+  "description_de": "Malaysia erfasst ausländische Arbeitskräfte biometrisch und geht mit Razzien, unbefristeter Haft und Abschiebungen gegen undokumentierte Migranten vor. Die Registrierung ausländischer Arbeitskräfte läuft über das privat betriebene Foreign Workers Centralised Management System (FWCMS), das Fingerabdrücke, Gesichtsbilder und Passdaten erfasst und an die Einwanderungsbehörde übermittelt; den Zuschlag dafür erhielt der Betreiber Bestinet im Januar 2018. Während des COVID-19-Lockdowns nahmen Behörden im Mai 2020 allein bei zwei Razzien im Raum Kuala Lumpur nach offiziellen Angaben fast 2.000 undokumentierte Migranten fest, darunter Kinder und Hunderte Menschen aus Myanmar. Amnesty International dokumentiert für 2022 unbefristete Haft und Abschiebungen nach Myanmar; 2022 starben 150 Ausländer in Einwanderungshaft. Ein Einsatz von KI-Systemen gegen Arbeitsmigranten ist nicht belegt.",
+  "description_en": "Malaysia registers foreign workers biometrically and uses raids, indefinite detention and deportations against undocumented migrants. The registration of foreign workers runs through the privately operated Foreign Workers Centralised Management System (FWCMS), which records fingerprints, facial images and passport data and transmits them to the Immigration Department; its operator Bestinet received the letter of acceptance in January 2018. During the COVID-19 lockdown in May 2020, authorities detained almost 2,000 undocumented migrants in just two raids in the Kuala Lumpur area according to official figures, including children and hundreds of people from Myanmar. Amnesty International documents indefinite detention and deportations to Myanmar in 2022; 150 foreigners died in immigration detention in 2022. The use of AI systems against migrant workers is not documented.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Bewegungsfreiheit",

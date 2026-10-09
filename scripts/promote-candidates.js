@@ -241,6 +241,10 @@ function buildLocation(candidate) {
       latitude: loc.lat,
       longitude: loc.lng
     };
+  } else if ((loc.country || '').toUpperCase() !== 'GLOBAL') {
+    // Without geo the incident gets no map marker (js/map.js skips it) -
+    // 413 promoted incidents went unnoticed this way until 2026-10.
+    console.log('  WARN ohne Koordinaten (kein Kartenmarker): ' + (candidate.candidate_id || loc.name_de || '?'));
   }
   out.address = {
     '@type': 'PostalAddress',

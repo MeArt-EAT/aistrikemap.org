@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-automated-license-plate-readers",
   "name": "USA: Automatische Kennzeichenlesegeräte - flächendeckende Bewegungsprofile ohne Richtervorbehalt",
-  "description": "In den USA betreiben Tausende Polizeibehörden Netzwerke automatischer Kennzeichenlesegeräte (Automated License Plate Readers, ALPR), die täglich Milliarden von Fahrzeugstandorten erfassen und in kommerziellen Datenbanken speichern. Ohne Durchsuchungsbefehl können Behörden detaillierte Bewegungsprofile von unbescholtenen Personen abfragen. Das größte private Netzwerk, Vigilant Solutions (heute Motorola Solutions), speichert über 9 Milliarden Kennzeichenscans. ICE nutzt die Daten zur Einwanderungsverfolgung, was bürgerrechtliche Debatten auslöst.",
+  "description": "In den USA betreiben Tausende Polizeibehörden Netzwerke automatischer Kennzeichenlesegeräte (Automated License Plate Readers, ALPR), die Milliarden von Fahrzeugstandorten erfassen und zum Teil in kommerziellen Datenbanken speichern. Ohne Durchsuchungsbefehl können Behörden detaillierte Bewegungsprofile von unbescholtenen Personen abfragen. Allein die Datenbank von Vigilant Solutions (heute Motorola Solutions) umfasste 2019 laut ACLU-Dokumenten über 5 Milliarden privat erfasste Datenpunkte sowie 1,5 Milliarden Datensätze von Polizeibehörden. ICE nutzt die Daten zur Einwanderungsverfolgung, was bürgerrechtliche Debatten auslöst.",
   "startDate": "2008-01",
   "location": {
     "@type": "Place",
@@ -39,7 +39,6 @@
       "type": "company",
       "asm:systems": [
         "LEARN (License and Environmental Analysis Research Network)",
-        "FrontLine ALPR",
         "Kommerzielle ALPR-Datenbank"
       ],
       "name_de": "Vigilant Solutions / Motorola Solutions",
@@ -49,7 +48,7 @@
       "name": "US-Polizeibehörden",
       "type": "government",
       "asm:systems": [
-        "ALPR-Netzwerke in über 3.500 US-Städten"
+        "ALPR-Netzwerke"
       ],
       "name_de": "US-Polizeibehörden",
       "name_en": "U.S. police agencies"
@@ -59,50 +58,74 @@
   "asm:verificationLevel": 4,
   "asm:reverseTimeline": [
     {
-      "date": "2008-01",
+      "date": "2011",
       "phase": "infrastructure",
-      "title": "Massenhafte Verbreitung von ALPR-Systemen beginnt",
-      "description": "Nach frühen Pilotprogrammen ab 2004 werden ab 2008 ALPR-Systeme massenhaft von US-Polizeibehörden eingesetzt. Vigilant Solutions baut ein nationales Netzwerk auf, das Scans von tausenden Behörden zusammenführt und kommerziell weiterverkauft. Die Daten werden bis zu mehreren Jahren gespeichert, ohne dass ein Verdachtsmoment erforderlich ist.",
-      "sources": [],
-      "title_de": "Massenhafte Verbreitung von ALPR-Systemen beginnt",
-      "title_en": "Mass deployment of ALPR systems begins",
-      "description_de": "Nach frühen Pilotprogrammen ab 2004 werden ab 2008 ALPR-Systeme massenhaft von US-Polizeibehörden eingesetzt. Vigilant Solutions baut ein nationales Netzwerk auf, das Scans von tausenden Behörden zusammenführt und kommerziell weiterverkauft. Die Daten werden bis zu mehreren Jahren gespeichert, ohne dass ein Verdachtsmoment erforderlich ist.",
-      "description_en": "Following early pilot programs starting in 2004, U.S. police agencies deploy ALPR systems at scale from 2008 onward. Vigilant Solutions builds a national network that aggregates scans from thousands of agencies and resells them commercially. The data is retained for as long as several years without any need for individual suspicion."
+      "title": "PERF-Umfrage: Kennzeichenlesegeräte bei der Mehrheit der Polizeibehörden im Einsatz",
+      "description": "Eine 2011 durchgeführte Umfrage des Police Executive Research Forum (PERF) unter Hunderten US-Polizeibehörden ergibt, dass 71 Prozent der antwortenden Behörden bereits automatische Kennzeichenlesegeräte (ALPR) einsetzen und 85 Prozent planen, deren Nutzung in den folgenden fünf Jahren einzuführen oder auszuweiten. Die Geräte erfassen jedes vorbeifahrende Kennzeichen mit Zeit und Ort, unabhängig von einem Tatverdacht.",
+      "sources": [
+        "https://aclu.org/news/privacy-technology/report-85-percent-law-enforcement-agencies-will-have",
+        "https://www.ojp.gov/ncjrs/virtual-library/abstracts/how-are-innovations-technology-transforming-policing"
+      ],
+      "title_de": "PERF-Umfrage: Kennzeichenlesegeräte bei der Mehrheit der Polizeibehörden im Einsatz",
+      "title_en": "PERF survey: license plate readers in use at most police agencies",
+      "description_de": "Eine 2011 durchgeführte Umfrage des Police Executive Research Forum (PERF) unter Hunderten US-Polizeibehörden ergibt, dass 71 Prozent der antwortenden Behörden bereits automatische Kennzeichenlesegeräte (ALPR) einsetzen und 85 Prozent planen, deren Nutzung in den folgenden fünf Jahren einzuführen oder auszuweiten. Die Geräte erfassen jedes vorbeifahrende Kennzeichen mit Zeit und Ort, unabhängig von einem Tatverdacht.",
+      "description_en": "A 2011 survey by the Police Executive Research Forum (PERF) of hundreds of U.S. police agencies finds that 71 percent of responding agencies already use automated license plate readers (ALPRs) and 85 percent plan to acquire or expand their use within the following five years. The devices log every passing plate with time and location, regardless of any suspicion."
     },
     {
       "date": "2013-07",
       "phase": "doctrine",
       "title": "ACLU-Studie enthüllt Ausmaß der Kennzeichenüberwachung",
-      "description": "Die ACLU veröffentlicht eine landesweite Untersuchung zu ALPR-Systemen auf Basis von Freedom-of-Information-Anfragen an 600 Polizeibehörden. Die Studie zeigt, dass die große Mehrheit der erfassten Kennzeichen zu unbescholtenen Personen gehört, und kritisiert die fehlenden rechtlichen Grenzen für Datenspeicherung und -weitergabe. Nur wenige Bundesstaaten haben spezifische ALPR-Gesetze.",
-      "sources": [],
+      "description": "Die ACLU veröffentlicht den Bericht 'You Are Being Tracked' auf Basis von Auskunftsanfragen an fast 600 lokale und bundesstaatliche Polizeibehörden. Die Auswertung zeigt, dass die überwältigende Mehrheit der erfassten Kennzeichen zu unbescholtenen Personen gehört: In Maryland war 2012 nur etwa jeder 500. Scan ein Treffer, und diese betrafen überwiegend ungültige Zulassungen oder versäumte Abgasuntersuchungen. Die ACLU kritisiert fehlende rechtliche Grenzen für Speicherdauer und Weitergabe; einige Behörden speichern die Daten unbefristet.",
+      "sources": [
+        "https://www.acluva.org/press-releases/aclu-releases-you-are-being-tracked-report-license-plate-scanners-used-police/",
+        "https://cbsnews.com/news/aclu-warns-of-mass-tracking-through-license-plate-scanners"
+      ],
       "title_de": "ACLU-Studie enthüllt Ausmaß der Kennzeichenüberwachung",
       "title_en": "ACLU study reveals the scope of license plate surveillance",
-      "description_de": "Die ACLU veröffentlicht eine landesweite Untersuchung zu ALPR-Systemen auf Basis von Freedom-of-Information-Anfragen an 600 Polizeibehörden. Die Studie zeigt, dass die große Mehrheit der erfassten Kennzeichen zu unbescholtenen Personen gehört, und kritisiert die fehlenden rechtlichen Grenzen für Datenspeicherung und -weitergabe. Nur wenige Bundesstaaten haben spezifische ALPR-Gesetze.",
-      "description_en": "The ACLU publishes a nationwide investigation of ALPR systems based on Freedom of Information requests to 600 police agencies. The study shows that the vast majority of captured license plates belong to people not suspected of any crime, and criticizes the lack of legal limits on data storage and sharing. Only a few states have ALPR-specific statutes."
+      "description_de": "Die ACLU veröffentlicht den Bericht 'You Are Being Tracked' auf Basis von Auskunftsanfragen an fast 600 lokale und bundesstaatliche Polizeibehörden. Die Auswertung zeigt, dass die überwältigende Mehrheit der erfassten Kennzeichen zu unbescholtenen Personen gehört: In Maryland war 2012 nur etwa jeder 500. Scan ein Treffer, und diese betrafen überwiegend ungültige Zulassungen oder versäumte Abgasuntersuchungen. Die ACLU kritisiert fehlende rechtliche Grenzen für Speicherdauer und Weitergabe; einige Behörden speichern die Daten unbefristet.",
+      "description_en": "The ACLU publishes its report 'You Are Being Tracked', based on public records requests to almost 600 local and state police agencies. The analysis shows that the overwhelming majority of captured plates belong to people not suspected of any crime: in Maryland in 2012, only about one in 500 scans was a hit, and these mostly concerned invalid registrations or missed emissions inspections. The ACLU criticizes the lack of legal limits on retention and sharing; some agencies keep the data indefinitely."
+    },
+    {
+      "date": "2018-01",
+      "phase": "event",
+      "title": "ICE erhält Zugriff auf die Kennzeichendatenbank von Vigilant Solutions",
+      "description": "Medienberichte machen einen Vertrag der US-Einwanderungsbehörde ICE öffentlich, der ihr behördenweiten Zugriff auf die kommerzielle Kennzeichendatenbank von Vigilant Solutions verschafft. Laut EFF umfasst das Angebot rund 6,5 Milliarden Datenpunkte, ergänzt um Millionen von Scans lokaler Polizeibehörden. Agenten können die Bewegungen eines Fahrzeugs bis zu fünf Jahre zurückverfolgen und sich per E-Mail benachrichtigen lassen, sobald ein gesuchtes Kennzeichen neu erfasst wird.",
+      "sources": [
+        "https://www.technologyreview.com/2018/01/26/145981/your-license-plate-is-probably-in-the-massive-database-ice-just-got-access-to/",
+        "https://www.eff.org/deeplinks/2018/01/ice-accesses-massive-amount-license-plate-data-will-california-take-action"
+      ],
+      "title_de": "ICE erhält Zugriff auf die Kennzeichendatenbank von Vigilant Solutions",
+      "title_en": "ICE gains access to Vigilant Solutions' license plate database",
+      "description_de": "Medienberichte machen einen Vertrag der US-Einwanderungsbehörde ICE öffentlich, der ihr behördenweiten Zugriff auf die kommerzielle Kennzeichendatenbank von Vigilant Solutions verschafft. Laut EFF umfasst das Angebot rund 6,5 Milliarden Datenpunkte, ergänzt um Millionen von Scans lokaler Polizeibehörden. Agenten können die Bewegungen eines Fahrzeugs bis zu fünf Jahre zurückverfolgen und sich per E-Mail benachrichtigen lassen, sobald ein gesuchtes Kennzeichen neu erfasst wird.",
+      "description_en": "Media reports make public a contract that gives U.S. Immigration and Customs Enforcement (ICE) agency-wide access to Vigilant Solutions' commercial license plate database. According to the EFF, the offering comprises about 6.5 billion data points, supplemented by millions of scans from local police agencies. Agents can trace a vehicle's movements back up to five years and receive email alerts as soon as a wanted plate is newly recorded."
     },
     {
       "date": "2019-03",
       "phase": "event",
-      "title": "EFF dokumentiert 9 Milliarden Kennzeichenscans in einer Datenbank",
-      "description": "Die Electronic Frontier Foundation veröffentlicht eine Analyse von Vigilant Solutions' Datenbank mit mehr als 9 Milliarden Standortdatenpunkten, darunter Millionen Datensätze aus Einfahrten zu Privathäusern, Kirchen und Arztpraxen. Lokale Polizeibehörden können die Daten ohne Richtervorbehalt abfragen. Mehrere Bundesstaaten beginnen Debatten über gesetzliche Einschränkungen.",
-      "sources": [],
-      "title_de": "EFF dokumentiert 9 Milliarden Kennzeichenscans in einer Datenbank",
-      "title_en": "EFF documents 9 billion license plate scans in a single database",
-      "description_de": "Die Electronic Frontier Foundation veröffentlicht eine Analyse von Vigilant Solutions' Datenbank mit mehr als 9 Milliarden Standortdatenpunkten, darunter Millionen Datensätze aus Einfahrten zu Privathäusern, Kirchen und Arztpraxen. Lokale Polizeibehörden können die Daten ohne Richtervorbehalt abfragen. Mehrere Bundesstaaten beginnen Debatten über gesetzliche Einschränkungen.",
-      "description_en": "The Electronic Frontier Foundation publishes an analysis of Vigilant Solutions' database holding more than 9 billion location data points, including millions of records from driveways of private homes, churches and doctors' offices. Local police agencies can query the data without judicial authorization. Several states begin debates over statutory limits."
+      "title": "ACLU-Dokumente: Über 80 Polizeibehörden teilen Kennzeichendaten mit ICE",
+      "description": "Per Informationsfreiheitsklage erlangte Dokumente der ACLU of Northern California zeigen, dass über 9.000 ICE-Mitarbeitende im Rahmen eines Vertrags über 6,1 Millionen US-Dollar Zugriff auf die Vigilant-Datenbank haben. ICE kann auf über 5 Milliarden privat erfasste Standortdatenpunkte und weitere 1,5 Milliarden Datensätze von Polizeibehörden zugreifen. Mehr als 80 lokale Behörden gewähren ICE Zugriff auf ihre Scans, nach Darstellung der ACLU teils im Widerspruch zu lokalen Datenschutzregeln oder Sanctuary-Richtlinien.",
+      "sources": [
+        "https://www.aclu.org/news/immigrants-rights/documents-reveal-ice-using-driver-location-data",
+        "https://reason.com/2019/03/22/ice-tracking-immigrants-with-huge-licens/"
+      ],
+      "title_de": "ACLU-Dokumente: Über 80 Polizeibehörden teilen Kennzeichendaten mit ICE",
+      "title_en": "ACLU documents: more than 80 police agencies share license plate data with ICE",
+      "description_de": "Per Informationsfreiheitsklage erlangte Dokumente der ACLU of Northern California zeigen, dass über 9.000 ICE-Mitarbeitende im Rahmen eines Vertrags über 6,1 Millionen US-Dollar Zugriff auf die Vigilant-Datenbank haben. ICE kann auf über 5 Milliarden privat erfasste Standortdatenpunkte und weitere 1,5 Milliarden Datensätze von Polizeibehörden zugreifen. Mehr als 80 lokale Behörden gewähren ICE Zugriff auf ihre Scans, nach Darstellung der ACLU teils im Widerspruch zu lokalen Datenschutzregeln oder Sanctuary-Richtlinien.",
+      "description_en": "Documents obtained by the ACLU of Northern California through a Freedom of Information Act lawsuit show that more than 9,000 ICE personnel have access to the Vigilant database under a 6.1 million U.S. dollar contract. ICE can access more than 5 billion privately collected location data points and a further 1.5 billion records from police agencies. More than 80 local agencies grant ICE access to their scans, according to the ACLU sometimes in violation of local privacy rules or sanctuary policies."
     },
     {
-      "date": "2023-02",
+      "date": "2023-05 bis 2023-10",
       "phase": "consequences",
-      "title": "ICE-Nutzung für Einwanderungsdurchsetzung löst Proteste aus",
-      "description": "Investigativberichte belegen, dass ICE (Einwanderungsbehörde) auf kommerzielle ALPR-Datenbanken zugreift, um Einwanderer ohne Papiere zu verfolgen, auch in sogenannten Sanctuary Cities. Datenschutzbehörden in Kalifornien, New York und Illinois verabschieden restriktivere ALPR-Gesetze. Die EFF und ACLU fordern ein bundesweites Verbot der kommerziellen Aggregation von Bewegungsprofilen.",
+      "title": "Kalifornien und Illinois schränken die Weitergabe von Kennzeichendaten ein",
+      "description": "EFF und ACLU fordern im Mai 2023 71 kalifornische Polizeibehörden auf, die Weitergabe von Kennzeichendaten an Behörden anderer Bundesstaaten zu beenden, die aus ihrer Sicht gegen das Landesgesetz SB 34 verstößt und Abtreibungssuchende gefährden kann. Im August 2023 unterzeichnet der Gouverneur von Illinois ein Gesetz, das die Weitergabe von ALPR-Daten zur Verfolgung von in Illinois legalen Abtreibungen sowie ihre Nutzung für Ermittlungen zum Aufenthaltsstatus untersagt. Im Oktober 2023 erklärt das kalifornische Justizministerium die Weitergabe an Behörden anderer Bundesstaaten und des Bundes für unzulässig.",
       "sources": [
-        "https://www.eff.org/issues/license-plates"
+        "https://www.eff.org/deeplinks/2023/10/victory-california-department-justice-declares-out-state-sharing-license-plate",
+        "https://justthenews.com/nation/states/center-square/governor-signs-measures-protect-license-plate-data-abortion-immigration"
       ],
-      "title_de": "ICE-Nutzung für Einwanderungsdurchsetzung löst Proteste aus",
-      "title_en": "ICE use for immigration enforcement triggers protests",
-      "description_de": "Investigativberichte belegen, dass ICE (Einwanderungsbehörde) auf kommerzielle ALPR-Datenbanken zugreift, um Einwanderer ohne Papiere zu verfolgen, auch in sogenannten Sanctuary Cities. Datenschutzbehörden in Kalifornien, New York und Illinois verabschieden restriktivere ALPR-Gesetze. Die EFF und ACLU fordern ein bundesweites Verbot der kommerziellen Aggregation von Bewegungsprofilen.",
-      "description_en": "Investigative reports show that ICE (Immigration and Customs Enforcement) accesses commercial ALPR databases to track undocumented immigrants, including in so-called sanctuary cities. Data protection authorities in California, New York and Illinois pass more restrictive ALPR laws. The EFF and ACLU call for a nationwide ban on the commercial aggregation of location profiles."
+      "title_de": "Kalifornien und Illinois schränken die Weitergabe von Kennzeichendaten ein",
+      "title_en": "California and Illinois restrict the sharing of license plate data",
+      "description_de": "EFF und ACLU fordern im Mai 2023 71 kalifornische Polizeibehörden auf, die Weitergabe von Kennzeichendaten an Behörden anderer Bundesstaaten zu beenden, die aus ihrer Sicht gegen das Landesgesetz SB 34 verstößt und Abtreibungssuchende gefährden kann. Im August 2023 unterzeichnet der Gouverneur von Illinois ein Gesetz, das die Weitergabe von ALPR-Daten zur Verfolgung von in Illinois legalen Abtreibungen sowie ihre Nutzung für Ermittlungen zum Aufenthaltsstatus untersagt. Im Oktober 2023 erklärt das kalifornische Justizministerium die Weitergabe an Behörden anderer Bundesstaaten und des Bundes für unzulässig.",
+      "description_en": "In May 2023, the EFF and ACLU call on 71 California police agencies to stop sharing license plate data with agencies in other states, which in their view violates state law SB 34 and can endanger people seeking abortions. In August 2023, the governor of Illinois signs a law prohibiting the sharing of ALPR data to pursue abortions that are legal in Illinois, as well as its use for investigations into immigration status. In October 2023, the California Department of Justice declares sharing with out-of-state and federal agencies unlawful."
     }
   ],
   "asm:sources": [
@@ -126,8 +149,8 @@
   },
   "name_de": "USA: Automatische Kennzeichenlesegeräte - flächendeckende Bewegungsprofile ohne Richtervorbehalt",
   "name_en": "USA: Automated license plate readers - blanket location profiles without judicial oversight",
-  "description_de": "In den USA betreiben Tausende Polizeibehörden Netzwerke automatischer Kennzeichenlesegeräte (Automated License Plate Readers, ALPR), die täglich Milliarden von Fahrzeugstandorten erfassen und in kommerziellen Datenbanken speichern. Ohne Durchsuchungsbefehl können Behörden detaillierte Bewegungsprofile von unbescholtenen Personen abfragen. Das größte private Netzwerk, Vigilant Solutions (heute Motorola Solutions), speichert über 9 Milliarden Kennzeichenscans. ICE nutzt die Daten zur Einwanderungsverfolgung, was bürgerrechtliche Debatten auslöst.",
-  "description_en": "In the United States, thousands of police agencies operate networks of automated license plate readers (ALPRs) that capture billions of vehicle locations every day and store them in commercial databases. Without a search warrant, agencies can query detailed location profiles of people not suspected of any crime. The largest private network, Vigilant Solutions (now Motorola Solutions), holds more than 9 billion license plate scans. ICE uses the data for immigration enforcement, triggering civil liberties debates.",
+  "description_de": "In den USA betreiben Tausende Polizeibehörden Netzwerke automatischer Kennzeichenlesegeräte (Automated License Plate Readers, ALPR), die Milliarden von Fahrzeugstandorten erfassen und zum Teil in kommerziellen Datenbanken speichern. Ohne Durchsuchungsbefehl können Behörden detaillierte Bewegungsprofile von unbescholtenen Personen abfragen. Allein die Datenbank von Vigilant Solutions (heute Motorola Solutions) umfasste 2019 laut ACLU-Dokumenten über 5 Milliarden privat erfasste Datenpunkte sowie 1,5 Milliarden Datensätze von Polizeibehörden. ICE nutzt die Daten zur Einwanderungsverfolgung, was bürgerrechtliche Debatten auslöst.",
+  "description_en": "In the United States, thousands of police agencies operate networks of automated license plate readers (ALPRs) that capture billions of vehicle locations, some of which are stored in commercial databases. Without a search warrant, agencies can query detailed location profiles of people not suspected of any crime. According to ACLU documents, the database of Vigilant Solutions (now Motorola Solutions) alone held more than 5 billion privately collected data points plus 1.5 billion records from police agencies in 2019. ICE uses the data for immigration enforcement, triggering civil liberties debates.",
   "asm:affectedRights_de": [
     "Recht auf Privatsphäre",
     "Bewegungsfreiheit",

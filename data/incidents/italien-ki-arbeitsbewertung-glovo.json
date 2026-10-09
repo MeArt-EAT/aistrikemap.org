@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/italien-ki-arbeitsbewertung-glovo",
   "name": "Italien: Glovos Algorithmus diskriminiert Kuriere bei Bewertung und Auftragsvergabe",
-  "description": "Das spanische Lieferunternehmen Glovo setzte einen Algorithmus zur Bewertung und Auftragsvergabe an Fahrradkuriere ein, der Krankheitstage und Gewerkschaftsaktivitaten als 'Unzuverlassigkeit' einstufte und mit schlechteren Auftragen und niedrigeren Verdienstmoglichkeiten bestrafte. Ein Gericht in Bologna entschied 2021, dass der Algorithmus diskriminierend wirkt. 2023 verhängte die italienische Datenschutzbehörde Garante eine Strafe von 5 Millionen Euro.",
+  "description": "Glovos italienische Tochter Foodinho (Mailand) vergab Arbeitsschichten an Kuriere über einen algorithmischen Punktwert ('punteggio di eccellenza'), der unter anderem Lieferzahlen, Verfügbarkeit zu Stoßzeiten und Nichterscheinen bewertete. Die italienische Datenschutzbehörde Garante verhängte 2021 wegen intransparenter, nicht anfechtbarer algorithmischer Entscheidungen 2,6 Millionen Euro Strafe und 2024 weitere 5 Millionen Euro. Das Arbeitsgericht Palermo stufte das Punktesystem im November 2023 als mittelbar diskriminierend ein.",
   "startDate": "2019",
   "location": {
     "@type": "Place",
@@ -30,8 +30,7 @@
   "asm:affectedRights": [
     "Recht auf faire Arbeitsbedingungen",
     "Koalitionsfreiheit",
-    "Schutz vor algorithmischer Diskriminierung",
-    "Recht auf Krankenstand"
+    "Schutz vor algorithmischer Diskriminierung"
   ],
   "asm:actors": [
     {
@@ -44,72 +43,109 @@
       "name_en": "Glovo"
     },
     {
-      "name": "Italienische Gerichte / Tribunale di Bologna",
+      "name": "Italienische Gerichte / Tribunale di Palermo",
       "type": "government",
-      "name_de": "Italienische Gerichte / Tribunale di Bologna",
-      "name_en": "Italian courts / Tribunale di Bologna (Bologna District Court)"
+      "name_de": "Italienische Gerichte / Tribunale di Palermo",
+      "name_en": "Italian courts / Tribunale di Palermo (Palermo District Court)"
     }
   ],
   "asm:severity": 3,
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2019",
+      "date": "2019-07",
       "phase": "infrastructure",
-      "title": "Einführung des automatisierten Bewertungssystems",
-      "description": "Glovo implementiert in Italien ein vollständig automatisiertes System zur Bewertung und Priorisierung von Kurieren für die Auftragsvergabe. Der Algorithmus berucksichtigt Verfugbarkeit, Ablehnungsraten und Punktlichkeit. Kuriere berichten, dass Abwesenheiten aus Krankheit oder Teilnahme an Gewerkschaftsveranstaltungen zu dauerhaft schlechteren Bewertungen fuhren - ohne Möglichkeit zur Erklarung oder Anfechtung.",
-      "sources": [],
-      "title_de": "Einführung des automatisierten Bewertungssystems",
-      "title_en": "Introduction of the automated rating system",
-      "description_de": "Glovo implementiert in Italien ein vollständig automatisiertes System zur Bewertung und Priorisierung von Kurieren für die Auftragsvergabe. Der Algorithmus berucksichtigt Verfugbarkeit, Ablehnungsraten und Punktlichkeit. Kuriere berichten, dass Abwesenheiten aus Krankheit oder Teilnahme an Gewerkschaftsveranstaltungen zu dauerhaft schlechteren Bewertungen fuhren - ohne Möglichkeit zur Erklarung oder Anfechtung.",
-      "description_en": "Glovo deploys a fully automated system in Italy to rate and prioritize couriers for order allocation. The algorithm takes into account availability, rejection rates, and punctuality. Couriers report that absences due to illness or participation in union activities lead to persistently lower ratings - with no opportunity to explain or contest them."
-    },
-    {
-      "date": "2020",
-      "phase": "doctrine",
-      "title": "Kuriere erstatten Beschwerde und klagen",
-      "description": "Fahrradkuriere in Bologna reichen gemeinsam mit der Gewerkschaft NIdiL-CGIL Klage gegen Glovo ein. Sie argumentieren, der Algorithmus bewerte legitime Fehlzeiten (Krankheit, Streik, Gewerkschaftstreffen) identisch wie willkurliches Fernbleiben und verstoße damit gegen den Diskriminierungsschutz und das Recht auf Koalitionsfreiheit. Das Unternehmen bestreitet, dass der Algorithmus gewerkschaftliche Aktivitaten erkennt.",
-      "sources": [],
-      "title_de": "Kuriere erstatten Beschwerde und klagen",
-      "title_en": "Couriers file complaints and sue",
-      "description_de": "Fahrradkuriere in Bologna reichen gemeinsam mit der Gewerkschaft NIdiL-CGIL Klage gegen Glovo ein. Sie argumentieren, der Algorithmus bewerte legitime Fehlzeiten (Krankheit, Streik, Gewerkschaftstreffen) identisch wie willkurliches Fernbleiben und verstoße damit gegen den Diskriminierungsschutz und das Recht auf Koalitionsfreiheit. Das Unternehmen bestreitet, dass der Algorithmus gewerkschaftliche Aktivitaten erkennt.",
-      "description_en": "Bicycle couriers in Bologna, together with the trade union NIdiL-CGIL, file a lawsuit against Glovo. They argue that the algorithm treats legitimate absences (illness, strikes, union meetings) identically to arbitrary no-shows, thereby violating anti-discrimination protections and the right to freedom of association. The company denies that the algorithm detects union activity."
-    },
-    {
-      "date": "2021",
-      "phase": "event",
-      "title": "Tribunal Bologna: Algorithmus als diskriminierend eingestuft",
-      "description": "Das Tribunale di Bologna urteilt im Januar 2021, dass Glovos Algorithmus zur Kurierbewertung indirekt diskriminierend wirkt, da er Fehlzeiten aufgrund von Gewerkschaftsaktivitaten nicht von anderen Abwesenheiten unterscheidet. Das Gericht ordnet an, dass das Bewertungssystem angepasst werden muss. Es ist eines der ersten europaischen Urteile, das algorithmische Diskriminierung im Plattformarbeitskontext explizit feststellt.",
-      "sources": [],
-      "title_de": "Tribunal Bologna: Algorithmus als diskriminierend eingestuft",
-      "title_en": "Tribunal of Bologna: algorithm ruled discriminatory",
-      "description_de": "Das Tribunale di Bologna urteilt im Januar 2021, dass Glovos Algorithmus zur Kurierbewertung indirekt diskriminierend wirkt, da er Fehlzeiten aufgrund von Gewerkschaftsaktivitaten nicht von anderen Abwesenheiten unterscheidet. Das Gericht ordnet an, dass das Bewertungssystem angepasst werden muss. Es ist eines der ersten europaischen Urteile, das algorithmische Diskriminierung im Plattformarbeitskontext explizit feststellt.",
-      "description_en": "In January 2021 the Tribunale di Bologna rules that Glovo's courier rating algorithm has an indirectly discriminatory effect because it does not distinguish absences due to union activity from other absences. The court orders the rating system to be adjusted. It is one of the first European rulings to explicitly recognize algorithmic discrimination in the platform-work context."
-    },
-    {
-      "date": "2023",
-      "phase": "consequences",
-      "title": "Garante verhängt 5-Millionen-Euro-Strafe",
-      "description": "Die italienische Datenschutzbehörde Garante verhängt eine Geldstrafe von 5 Millionen Euro gegen Glovo wegen Verstoßen gegen die DSGVO im Zusammenhang mit dem Scoring-Algorithmus. Dabei wird insbesondere die mangelnde Transparenz gegenüber den Kurieren und das Fehlen geeigneter Schutzmasnahmen bei der automatisierten Entscheidungsfindung bemängelt. Der Fall gilt als Prasedenz für die Regulierung algorithmischer Arbeitgeberkontrollen in Europa.",
+      "title": "Foodinho vergibt Schichten über einen Punktwert",
+      "description": "Glovos italienische Tochter Foodinho s.r.l. mit Sitz in Mailand steuert ihre Kuriere über eine App und vergibt Arbeitsschichten nach einem Punktwert, dem 'punteggio di eccellenza': Wer höher steht, darf früher buchen. Nach späteren Feststellungen der Datenschutzbehörde Garante und des Arbeitsgerichts Palermo fließen in den Wert unter anderem die Zahl der Lieferungen, die Verfügbarkeit zu nachfragestarken Zeiten (Abende, Wochenenden, Feiertage), Kundenfeedback und das Nichterscheinen zu gebuchten Schichten ein. Die Garante prüft Foodinho am 16. und 17. Juli 2019 vor Ort.",
       "sources": [
-        "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9978728"
+        "https://garanteprivacy.it/garante/doc.jsp?ID=9675440",
+        "https://www.ilfattoquotidiano.it/2023/11/20/punteggio-di-eccellenza-per-i-rider-e-discriminatorio-la-sentenza-del-tribunale-del-lavoro-di-palermo/7358996/"
       ],
-      "title_de": "Garante verhängt 5-Millionen-Euro-Strafe",
-      "title_en": "Garante imposes a 5 million euro fine",
-      "description_de": "Die italienische Datenschutzbehörde Garante verhängt eine Geldstrafe von 5 Millionen Euro gegen Glovo wegen Verstoßen gegen die DSGVO im Zusammenhang mit dem Scoring-Algorithmus. Dabei wird insbesondere die mangelnde Transparenz gegenüber den Kurieren und das Fehlen geeigneter Schutzmasnahmen bei der automatisierten Entscheidungsfindung bemängelt. Der Fall gilt als Prasedenz für die Regulierung algorithmischer Arbeitgeberkontrollen in Europa.",
-      "description_en": "The Italian Data Protection Authority Garante imposes a 5 million euro fine on Glovo for GDPR violations connected to the scoring algorithm. The decision criticizes in particular the lack of transparency toward couriers and the absence of suitable safeguards in automated decision-making. The case is regarded as a precedent for the regulation of algorithmic employer controls in Europe."
+      "title_de": "Foodinho vergibt Schichten über einen Punktwert",
+      "title_en": "Foodinho allocates shifts through a score",
+      "description_de": "Glovos italienische Tochter Foodinho s.r.l. mit Sitz in Mailand steuert ihre Kuriere über eine App und vergibt Arbeitsschichten nach einem Punktwert, dem 'punteggio di eccellenza': Wer höher steht, darf früher buchen. Nach späteren Feststellungen der Datenschutzbehörde Garante und des Arbeitsgerichts Palermo fließen in den Wert unter anderem die Zahl der Lieferungen, die Verfügbarkeit zu nachfragestarken Zeiten (Abende, Wochenenden, Feiertage), Kundenfeedback und das Nichterscheinen zu gebuchten Schichten ein. Die Garante prüft Foodinho am 16. und 17. Juli 2019 vor Ort.",
+      "description_en": "Glovo's Italian subsidiary Foodinho s.r.l., based in Milan, manages its couriers through an app and allocates work shifts according to a score, the 'punteggio di eccellenza' (excellence score): those ranked higher may book earlier. According to later findings by the data protection authority Garante and the Palermo labour court, the score draws on factors including the number of deliveries, availability at high-demand times (evenings, weekends, holidays), customer feedback and no-shows for booked shifts. The Garante inspects Foodinho on site on 16 and 17 July 2019."
+    },
+    {
+      "date": "2019-11-02",
+      "phase": "doctrine",
+      "title": "Gesetz 128/2019 schützt Lieferkuriere vor Diskriminierung",
+      "description": "Mit dem Gesetz Nr. 128 vom 2. November 2019 ergänzt Italien das Gesetzesdekret 81/2015 um Schutzregeln für selbstständige Kuriere, die über Plattformen in Städten Waren ausliefern. Artikel 47-quinquies erstreckt den Diskriminierungsschutz für Arbeitnehmer auf sie, einschließlich des Zugangs zur Plattform, und verbietet, Kuriere wegen abgelehnter Aufträge von der Plattform auszuschließen oder ihre Arbeitsmöglichkeiten zu verringern.",
+      "sources": [
+        "https://www.dirittobancario.it/sites/default/files/allegati/legge_2_novembre_2019_n._128.pdf",
+        "https://www.lavorodirittieuropa.it/images/LDE_Fassina_sentenza_Deliveroo_Bologna.pdf"
+      ],
+      "title_de": "Gesetz 128/2019 schützt Lieferkuriere vor Diskriminierung",
+      "title_en": "Law 128/2019 protects delivery couriers against discrimination",
+      "description_de": "Mit dem Gesetz Nr. 128 vom 2. November 2019 ergänzt Italien das Gesetzesdekret 81/2015 um Schutzregeln für selbstständige Kuriere, die über Plattformen in Städten Waren ausliefern. Artikel 47-quinquies erstreckt den Diskriminierungsschutz für Arbeitnehmer auf sie, einschließlich des Zugangs zur Plattform, und verbietet, Kuriere wegen abgelehnter Aufträge von der Plattform auszuschließen oder ihre Arbeitsmöglichkeiten zu verringern.",
+      "description_en": "With Law No. 128 of 2 November 2019, Italy adds protections to Legislative Decree 81/2015 for self-employed couriers who deliver goods in cities via platforms. Article 47-quinquies extends employee anti-discrimination protection to them, including access to the platform, and prohibits excluding couriers from the platform or reducing their work opportunities because they declined jobs."
+    },
+    {
+      "date": "2021-06-10",
+      "phase": "event",
+      "title": "Garante verhängt 2,6 Millionen Euro gegen Foodinho",
+      "description": "Mit Anordnung vom 10. Juni 2021, bekannt gegeben am 5. Juli 2021, verhängt die Datenschutzbehörde Garante gegen Foodinho eine Geldbuße von 2,6 Millionen Euro - ihre erste Entscheidung zur Steuerung von Kurieren. Die damals rund 19.000 Kuriere wurden nicht ausreichend über die Funktionsweise des Systems informiert; es fehlten Garantien für korrekte und faire algorithmische Bewertungen sowie Verfahren, um menschliches Eingreifen zu verlangen oder Entscheidungen bis hin zum Ausschluss von Arbeitsmöglichkeiten anzufechten. Foodinho muss überprüfen, dass seine Buchungs- und Zuteilungsalgorithmen keine Diskriminierung erzeugen.",
+      "sources": [
+        "https://garanteprivacy.it/garante/doc.jsp?ID=9677377",
+        "https://www.cybersecurity360.it/legal/privacy-dati-personali/rider-e-privacy-la-multa-del-garante-a-foodinho-e-un-monito-per-tutti-ecco-perche/"
+      ],
+      "title_de": "Garante verhängt 2,6 Millionen Euro gegen Foodinho",
+      "title_en": "Garante fines Foodinho 2.6 million euros",
+      "description_de": "Mit Anordnung vom 10. Juni 2021, bekannt gegeben am 5. Juli 2021, verhängt die Datenschutzbehörde Garante gegen Foodinho eine Geldbuße von 2,6 Millionen Euro - ihre erste Entscheidung zur Steuerung von Kurieren. Die damals rund 19.000 Kuriere wurden nicht ausreichend über die Funktionsweise des Systems informiert; es fehlten Garantien für korrekte und faire algorithmische Bewertungen sowie Verfahren, um menschliches Eingreifen zu verlangen oder Entscheidungen bis hin zum Ausschluss von Arbeitsmöglichkeiten anzufechten. Foodinho muss überprüfen, dass seine Buchungs- und Zuteilungsalgorithmen keine Diskriminierung erzeugen.",
+      "description_en": "By an order of 10 June 2021, announced on 5 July 2021, the data protection authority Garante fines Foodinho 2.6 million euros - its first decision on how couriers are managed. The roughly 19,000 couriers at the time were not adequately informed about how the system worked; there were no guarantees of accurate and fair algorithmic evaluations and no procedures for requesting human intervention or contesting decisions, up to and including exclusion from work opportunities. Foodinho must verify that its booking and assignment algorithms do not produce discrimination."
+    },
+    {
+      "date": "2023-11",
+      "phase": "event",
+      "title": "Arbeitsgericht Palermo: Punktwert diskriminiert mittelbar",
+      "description": "Auf Klage der Gewerkschaften NIdiL, Filcams und Filt CGIL entscheidet das Arbeitsgericht Palermo im November 2023, dass Kriterien des 'punteggio di eccellenza' - die Zahl der Lieferungen, Einsätze zu nachfragestarken Zeiten wie Abenden und Feiertagen sowie das Nichterscheinen zu gebuchten Schichten - Kuriere mittelbar diskriminieren, weil sie persönliche Umstände wie familiäre Pflichten oder religiöse Ruhetage nicht berücksichtigen. Foodinho muss nach Anhörung der Gewerkschaften einen Plan zur Beseitigung der Folgen umsetzen und ihnen 40.000 Euro Schadensersatz zahlen. Die Gesichtserkennung zur Identitätsprüfung wertet das Gericht nicht als diskriminierend. Bereits Ende 2020 hatte das Tribunale di Bologna den Ranking-Algorithmus 'Frank' des Konkurrenten Deliveroo als diskriminierend eingestuft.",
+      "sources": [
+        "https://www.ilfattoquotidiano.it/2023/11/20/punteggio-di-eccellenza-per-i-rider-e-discriminatorio-la-sentenza-del-tribunale-del-lavoro-di-palermo/7358996/",
+        "https://www.open.online/2021/01/02/deliveroo-algoritmo-frank-era-discriminatorio-la-sentenza-del-tribunale-di-bologna"
+      ],
+      "title_de": "Arbeitsgericht Palermo: Punktwert diskriminiert mittelbar",
+      "title_en": "Palermo labour court: score indirectly discriminates",
+      "description_de": "Auf Klage der Gewerkschaften NIdiL, Filcams und Filt CGIL entscheidet das Arbeitsgericht Palermo im November 2023, dass Kriterien des 'punteggio di eccellenza' - die Zahl der Lieferungen, Einsätze zu nachfragestarken Zeiten wie Abenden und Feiertagen sowie das Nichterscheinen zu gebuchten Schichten - Kuriere mittelbar diskriminieren, weil sie persönliche Umstände wie familiäre Pflichten oder religiöse Ruhetage nicht berücksichtigen. Foodinho muss nach Anhörung der Gewerkschaften einen Plan zur Beseitigung der Folgen umsetzen und ihnen 40.000 Euro Schadensersatz zahlen. Die Gesichtserkennung zur Identitätsprüfung wertet das Gericht nicht als diskriminierend. Bereits Ende 2020 hatte das Tribunale di Bologna den Ranking-Algorithmus 'Frank' des Konkurrenten Deliveroo als diskriminierend eingestuft.",
+      "description_en": "Ruling on a complaint by the unions NIdiL, Filcams and Filt CGIL, the Palermo labour court decides in November 2023 that criteria of the 'punteggio di eccellenza' - the number of deliveries, work at high-demand times such as evenings and holidays, and no-shows for booked shifts - indirectly discriminate against couriers because they ignore personal circumstances such as family obligations or religious days of rest. After consulting the unions, Foodinho must implement a plan to remove the effects and pay them 40,000 euros in damages. The court does not find the facial recognition used for identity checks discriminatory. At the end of 2020 the Tribunale di Bologna had already ruled the ranking algorithm 'Frank' of competitor Deliveroo discriminatory."
+    },
+    {
+      "date": "2024-11-13",
+      "phase": "consequences",
+      "title": "Garante: 5 Millionen Euro Strafe und Verbot der Gesichtserkennung",
+      "description": "Nach Berichten, wonach dem im Oktober 2022 in Florenz bei einer Auslieferung tödlich verunglückten Kurier Sebastian Galassi nach seinem Tod eine Nachricht über die Deaktivierung seines Kontos zugestellt worden war - Glovo sprach von einem Fehler -, sowie nach einem Hinweis von IT-Fachleuten leitet die Garante ein Verfahren von Amts wegen ein. Mit Anordnung vom 13. November 2024 verhängt sie gegen Foodinho 5 Millionen Euro wegen unrechtmäßiger Verarbeitung der Daten von über 35.000 Kurieren, untersagt die biometrische Identitätsprüfung per Gesichtserkennung und beanstandet die Weitergabe von Standortdaten an Dritte ohne Wissen der Kuriere. Foodinho muss Kurieren mitteilen, dass sie Deaktivierungen anfechten können, und eine diskriminierende Nutzung von Kundenbewertungen verhindern.",
+      "sources": [
+        "https://www.ilgiorno.it/milano/cronaca/sms-al-rider-morto-incidente-a-glovo-multa-da-5-milioni-oki0yptq",
+        "https://dirittobancario.it/wp-content/uploads/2024/11/Provvedimento-Garante-Privacy-13-novembre-2024-n.-675.pdf"
+      ],
+      "title_de": "Garante: 5 Millionen Euro Strafe und Verbot der Gesichtserkennung",
+      "title_en": "Garante: 5 million euro fine and ban on facial recognition",
+      "description_de": "Nach Berichten, wonach dem im Oktober 2022 in Florenz bei einer Auslieferung tödlich verunglückten Kurier Sebastian Galassi nach seinem Tod eine Nachricht über die Deaktivierung seines Kontos zugestellt worden war - Glovo sprach von einem Fehler -, sowie nach einem Hinweis von IT-Fachleuten leitet die Garante ein Verfahren von Amts wegen ein. Mit Anordnung vom 13. November 2024 verhängt sie gegen Foodinho 5 Millionen Euro wegen unrechtmäßiger Verarbeitung der Daten von über 35.000 Kurieren, untersagt die biometrische Identitätsprüfung per Gesichtserkennung und beanstandet die Weitergabe von Standortdaten an Dritte ohne Wissen der Kuriere. Foodinho muss Kurieren mitteilen, dass sie Deaktivierungen anfechten können, und eine diskriminierende Nutzung von Kundenbewertungen verhindern.",
+      "description_en": "Following reports that courier Sebastian Galassi, killed in a crash during a delivery in Florence in October 2022, had been sent a message after his death about the deactivation of his account - Glovo called it an error -, and following a report by IT experts, the Garante opens proceedings on its own initiative. By an order of 13 November 2024 it fines Foodinho 5 million euros for unlawfully processing the data of more than 35,000 couriers, prohibits biometric identity checks by facial recognition and objects to location data being passed to third parties without the couriers' knowledge. Foodinho must inform couriers that they can contest deactivations and prevent discriminatory use of customer ratings."
+    },
+    {
+      "date": "2026-02-09",
+      "phase": "consequences",
+      "title": "Staatsanwaltschaft Mailand stellt Foodinho unter gerichtliche Kontrolle",
+      "description": "Wegen des Verdachts der schweren Arbeitsausbeutung ('caporalato') stellt die Staatsanwaltschaft Mailand Foodinho per Eilanordnung unter gerichtliche Kontrolle. Die Ermittler gehen von rund 40.000 betroffenen Kurieren in Italien aus, deren Vergütung teils weit unter der Armutsgrenze liege, und beschreiben eine ständige Überwachung per Geolokalisierung. Das Ermittlungsgericht bestätigt die Maßnahme samt gerichtlich bestelltem Verwalter am 19. Februar 2026. Glovo hält die Vergütung für angemessen; es handelt sich um Vorwürfe im Ermittlungsstadium.",
+      "sources": [
+        "https://www.ilpost.it/2026/02/09/foodinho-glovo-controllo-giudiziario-procura-milano/",
+        "https://www.ladige.it/attualita/caso-rider-gip-convalida-il-controllo-giudiziario-di-foodinho-glovo-lhehh1gy"
+      ],
+      "title_de": "Staatsanwaltschaft Mailand stellt Foodinho unter gerichtliche Kontrolle",
+      "title_en": "Milan prosecutors place Foodinho under judicial control",
+      "description_de": "Wegen des Verdachts der schweren Arbeitsausbeutung ('caporalato') stellt die Staatsanwaltschaft Mailand Foodinho per Eilanordnung unter gerichtliche Kontrolle. Die Ermittler gehen von rund 40.000 betroffenen Kurieren in Italien aus, deren Vergütung teils weit unter der Armutsgrenze liege, und beschreiben eine ständige Überwachung per Geolokalisierung. Das Ermittlungsgericht bestätigt die Maßnahme samt gerichtlich bestelltem Verwalter am 19. Februar 2026. Glovo hält die Vergütung für angemessen; es handelt sich um Vorwürfe im Ermittlungsstadium.",
+      "description_en": "On suspicion of aggravated labour exploitation ('caporalato'), Milan prosecutors place Foodinho under judicial control by emergency order. Investigators estimate that around 40,000 couriers in Italy are affected, some of them paid far below the poverty line, and describe constant monitoring via geolocation. The preliminary investigations judge confirms the measure, including a court-appointed administrator, on 19 February 2026. Glovo considers the pay fair; these are allegations at the investigation stage."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9978728",
-      "title": "Garante: Provvedimento nei confronti di Glovo",
+      "url": "https://garanteprivacy.it/garante/doc.jsp?ID=9675440",
+      "title": "Ordinanza ingiunzione nei confronti di Foodinho s.r.l. - 10 giugno 2021",
       "publisher": "Garante per la protezione dei dati personali",
-      "date": "2023-07-12",
+      "date": "2021-06-10",
       "type": "government-document",
-      "asm:linkHealth": "ok",
-      "title_de": "Garante: Provvedimento nei confronti di Glovo",
-      "title_en": "Garante: Order against Glovo (Provvedimento nei confronti di Glovo)"
+      "title_de": "Ordinanza ingiunzione nei confronti di Foodinho s.r.l. - 10 giugno 2021",
+      "title_en": "Injunction order against Foodinho s.r.l. - 10 June 2021 (Ordinanza ingiunzione nei confronti di Foodinho s.r.l.)"
     }
   ],
   "asm:metadata": {
@@ -121,18 +157,16 @@
   },
   "name_de": "Italien: Glovos Algorithmus diskriminiert Kuriere bei Bewertung und Auftragsvergabe",
   "name_en": "Italy: Glovo's algorithm discriminates against couriers in ratings and order allocation",
-  "description_de": "Das spanische Lieferunternehmen Glovo setzte einen Algorithmus zur Bewertung und Auftragsvergabe an Fahrradkuriere ein, der Krankheitstage und Gewerkschaftsaktivitaten als 'Unzuverlassigkeit' einstufte und mit schlechteren Auftragen und niedrigeren Verdienstmoglichkeiten bestrafte. Ein Gericht in Bologna entschied 2021, dass der Algorithmus diskriminierend wirkt. 2023 verhängte die italienische Datenschutzbehörde Garante eine Strafe von 5 Millionen Euro.",
-  "description_en": "The Spanish delivery company Glovo deployed an algorithm to rate and allocate orders to bicycle couriers that classified sick days and union activity as 'unreliability' and penalized them with worse assignments and lower earning opportunities. In 2021, a court in Bologna ruled that the algorithm has a discriminatory effect. In 2023, the Italian Data Protection Authority Garante imposed a 5 million euro fine.",
+  "description_de": "Glovos italienische Tochter Foodinho (Mailand) vergab Arbeitsschichten an Kuriere über einen algorithmischen Punktwert ('punteggio di eccellenza'), der unter anderem Lieferzahlen, Verfügbarkeit zu Stoßzeiten und Nichterscheinen bewertete. Die italienische Datenschutzbehörde Garante verhängte 2021 wegen intransparenter, nicht anfechtbarer algorithmischer Entscheidungen 2,6 Millionen Euro Strafe und 2024 weitere 5 Millionen Euro. Das Arbeitsgericht Palermo stufte das Punktesystem im November 2023 als mittelbar diskriminierend ein.",
+  "description_en": "Glovo's Italian subsidiary Foodinho (Milan) allocated work shifts to couriers via an algorithmic score ('punteggio di eccellenza') that rated factors including delivery numbers, availability at peak times and no-shows. The Italian data protection authority Garante fined the company 2.6 million euros in 2021 over opaque algorithmic decisions that could not be contested, and a further 5 million euros in 2024. In November 2023 the Palermo labour court ruled the points system indirectly discriminatory.",
   "asm:affectedRights_de": [
     "Recht auf faire Arbeitsbedingungen",
     "Koalitionsfreiheit",
-    "Schutz vor algorithmischer Diskriminierung",
-    "Recht auf Krankenstand"
+    "Schutz vor algorithmischer Diskriminierung"
   ],
   "asm:affectedRights_en": [
     "right to fair working conditions",
     "freedom of association",
-    "protection from algorithmic discrimination",
-    "right to sick leave"
+    "protection from algorithmic discrimination"
   ]
 }
