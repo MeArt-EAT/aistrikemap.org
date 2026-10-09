@@ -637,7 +637,10 @@ function walkAndFix(obj, fieldStack, stats) {
     const lastKey = fieldStack[fieldStack.length - 1] || '';
     const isEnglish = /_en$/.test(lastKey);
     const isUrl = /url|@id|@type|@context|publisher|date|type|asm:linkHealth|asm:severity|asm:verificationLevel|asm:incidentType|asm:radarStatus|asm:radarDimensions|asm:perspective|addressCountry|latitude|longitude|asm:metadata|aiGenerated|humanVerified|author|created|lastUpdated|@vocab/.test(lastKey);
-    if (isEnglish || isUrl) return obj;
+    // asm:relatedIncidents holds slugs (file names, transliterated by design):
+    // "rumaenien-..." must never become "rumänien-...", or the reference breaks.
+    const isSlugRef = fieldStack.includes('asm:relatedIncidents');
+    if (isEnglish || isUrl || isSlugRef) return obj;
     const { text: fixed, changed } = fixString(obj);
     if (changed > 0) {
       stats.fields++;

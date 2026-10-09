@@ -11,6 +11,7 @@
  *   - Chronologie strikt aufsteigend INKL. monat-genau-vor-tag-genau desselben
  *     Monats (z.B. consequence "2024-05" darf nicht VOR event "2024-05-08" stehen)
  *   - @id endet auf /<dateiname-ohne-.json> (Permalink, nicht umlautiert)
+ *   - jeder asm:relatedIncidents-Slug zeigt auf eine existierende Datei
  *   - asm:affectedRights === asm:affectedRights_de; _en gleiche Laenge
  *   - Smart-Chars (Em-Dash U+2014, En-Dash U+2013, typografische Quotes) in
  *     IRGENDEINEM String-Feld rekursiv (inkl. EN, name, location)
@@ -235,6 +236,15 @@ function validateFile(slug, file, mapKeys) {
   // @id == Permalink mit Slug
   const id = j['@id'] || '';
   if (!id.endsWith('/' + slug)) errors.push(`@id endet nicht auf /${slug}: "${id}"`);
+
+  // asm:relatedIncidents muessen auf existierende Incident-Dateien zeigen
+  // (Slugs sind transliteriert; ein Umlaut im Slug bricht den Verweis)
+  const rel = j['asm:relatedIncidents'];
+  if (Array.isArray(rel)) rel.forEach(r => {
+    if (typeof r === 'string' && !fs.existsSync(path.join(path.dirname(file), r + '.json'))) {
+      errors.push(`asm:relatedIncidents: Verweis "${r}" zeigt auf keine Datei`);
+    }
+  });
 
   // affectedRights-Parallelitaet
   const ar = j['asm:affectedRights'], arDe = j['asm:affectedRights_de'], arEn = j['asm:affectedRights_en'];
