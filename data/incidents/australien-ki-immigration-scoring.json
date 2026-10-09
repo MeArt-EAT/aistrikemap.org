@@ -5,9 +5,9 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/australien-ki-immigration-scoring",
-  "name": "Australien: KI-Risikobewertung bei Visaanträgen diskriminiert nach Nationalität",
-  "description": "Das australische Department of Home Affairs setzt seit 2015 automatisierte Risikoeinschätzung bei der Bearbeitung von Visaanträgen ein. Ab 2019 wird ein KI-gestütztes Scoring-System eingeführt, das Antragsteller nach Nationalität, Alter und anderen Merkmalen bewertet. Untersuchungen zeigen, dass das System Antragsteller aus bestimmten Ländern systematisch benachteiligt und damit rassistische Vorannahmen algorithmisch verfestigt.",
-  "startDate": "2015",
+  "name": "Australien: Undurchsichtige algorithmische Risikobewertung von Visaanträgen",
+  "description": "Australiens Einwanderungsbehörden nutzen seit mindestens 2012 automatisierte Risikoeinstufungen bei Visaanträgen, zunächst ein 'Risk Tiering'-Werkzeug, das Anträge für genauere Prüfung oder beschleunigte Bearbeitung markiert. 2016 sagte die Regierung 99,2 Millionen Australische Dollar für eine automatisierte Risikoprofilierung von Antragstellern zu; 2017 beschrieb das Ministerium ein Analyseprogramm mit prädiktiven Modellen und Profiling für ganze Visaklassen, Unterlagen dazu blieben jedoch unter Verschluss. 2024 bestätigte Home Affairs den Einsatz von maschinellem Lernen zur Risikovorhersage in Visaprogrammen, nach eigenen Angaben nicht für Verwaltungsentscheidungen. Welche Merkmale die Modelle gewichten, ist öffentlich nicht bekannt; Kritiker warnen, dass Merkmale wie Nationalität Vorurteile algorithmisch fortschreiben können.",
+  "startDate": "2012",
   "location": {
     "@type": "Place",
     "name": "Canberra, Australien",
@@ -25,8 +25,7 @@
   },
   "asm:incidentType": [
     "discrimination",
-    "data-misuse",
-    "predictive-policing"
+    "data-misuse"
   ],
   "asm:affectedRights": [
     "Recht auf Gleichbehandlung",
@@ -39,8 +38,8 @@
       "name": "Australian Department of Home Affairs",
       "type": "government",
       "asm:systems": [
-        "Visa Risk Assessment Tool",
-        "Automated Processing System"
+        "Risk Tiering",
+        "Visa Risk Assessment (VRA) capability"
       ],
       "name_de": "Australian Department of Home Affairs",
       "name_en": "Australian Department of Home Affairs"
@@ -50,56 +49,73 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2015",
+      "date": "2012",
       "phase": "infrastructure",
-      "title": "Automatisierte Visabearbeitung eingeführt",
-      "description": "Das Department of Home Affairs beginnt, automatisierte Systeme zur Vorprüfung von Visaanträgen einzusetzen. Erste Algorithmen sichten Antragsvolumen und kennzeichnen Fälle zur weiteren manuellen Prüfung. Transparenz über Auswahlkriterien und Gewichtungsparameter besteht gegenüber Antragstellern nicht.",
-      "sources": [],
-      "title_de": "Automatisierte Visabearbeitung eingeführt",
-      "title_en": "Automated visa processing introduced",
-      "description_de": "Das Department of Home Affairs beginnt, automatisierte Systeme zur Vorprüfung von Visaanträgen einzusetzen. Erste Algorithmen sichten Antragsvolumen und kennzeichnen Fälle zur weiteren manuellen Prüfung. Transparenz über Auswahlkriterien und Gewichtungsparameter besteht gegenüber Antragstellern nicht.",
-      "description_en": "The Department of Home Affairs began using automated systems to pre-screen visa applications. Early algorithms sifted application volumes and flagged cases for further manual review. No transparency was provided to applicants about selection criteria or weighting parameters."
+      "title": "'Risk Tiering': automatisierte Risikoeinstufung von Visaanträgen",
+      "description": "Das damalige Department of Immigration and Citizenship (DIAC) setzt im Generic Visa Portal ein Unterstützungswerkzeug namens 'Risk Tiering' ein, Anfang 2012 bereits für Visa der Subclass 457 und für General Skilled Migration. Es empfiehlt, welche Anträge genauer geprüft und welche beschleunigt bearbeitet werden können, gestützt auf Merkmale, die erfahrungsgemäß mit geringer Regelverletzung einhergehen; die Entscheidung bleibt bei den Sachbearbeitern. Bei Studentenvisa legte das Ministerium zudem nach Herkunftsland und Bildungssektor Bewertungsstufen (Assessment Levels) fest, die den geforderten Nachweisumfang bestimmten.",
+      "sources": [
+        "https://aph.gov.au/~/media/Estimates/Live/legcon_ctte/estimates/add_1112/diac/AE12-0281.ashx",
+        "https://www.anao.gov.au/work/performance-audit/management-student-visas"
+      ],
+      "title_de": "'Risk Tiering': automatisierte Risikoeinstufung von Visaanträgen",
+      "title_en": "'Risk tiering': automated risk rating of visa applications",
+      "description_de": "Das damalige Department of Immigration and Citizenship (DIAC) setzt im Generic Visa Portal ein Unterstützungswerkzeug namens 'Risk Tiering' ein, Anfang 2012 bereits für Visa der Subclass 457 und für General Skilled Migration. Es empfiehlt, welche Anträge genauer geprüft und welche beschleunigt bearbeitet werden können, gestützt auf Merkmale, die erfahrungsgemäß mit geringer Regelverletzung einhergehen; die Entscheidung bleibt bei den Sachbearbeitern. Bei Studentenvisa legte das Ministerium zudem nach Herkunftsland und Bildungssektor Bewertungsstufen (Assessment Levels) fest, die den geforderten Nachweisumfang bestimmten.",
+      "description_en": "The then Department of Immigration and Citizenship (DIAC) used a support tool called 'risk tiering' in its Generic Visa Portal, by early 2012 already for subclass 457 visas and General Skilled Migration. It recommends which applications require closer scrutiny and which can be streamlined, based on factors that generally indicate low non-compliance; the decision remains with case officers. For student visas, the department also set assessment levels by country of origin and education sector, which determined the evidence required."
     },
     {
-      "date": "2019",
+      "date": "2016-05",
       "phase": "doctrine",
-      "title": "KI-Risikoscoring für alle Visakategorien ausgerollt",
-      "description": "Das Ministerium setzt ein erweitertes KI-Risikobewertungssystem ein, das neben Reisehistorie und Antragsdaten auch Nationalität und Herkunftsland als gewichtete Faktoren einbezieht. Antragsteller aus bestimmten Ländern des Globalen Südens erhalten systematisch höhere Risikoscores, was zu längeren Bearbeitungszeiten und häufigeren Ablehnungen führt.",
+      "title": "Zusage von 99,2 Mio. AUD für automatisierte Visa-Risikoprofilierung",
+      "description": "Die Regierungskoalition sagt 99,2 Millionen Australische Dollar für eine 'Visa Risk Assessment'-Fähigkeit im Department of Immigration and Border Protection zu. Sie soll Einwanderungs- und Grenzdaten in Echtzeit zusammenführen und eine automatisierte Risikoprofilierung von Antragstellern schon vor der Einreise ermöglichen. Einwanderungsminister Peter Dutton begründete dies damit, dass Entscheider Werkzeuge bräuchten, um die weitergehenden kriminellen und sicherheitsrelevanten Risiken von Reisenden zu prüfen.",
       "sources": [
-        "https://www.hrlc.org.au/"
+        "https://www.thenewdaily.com.au/news/election-2016/2016/05/12/coalition-pledges-99mil-border-protection",
+        "https://www.itnews.com.au/news/govt-promises-immigration-99m-for-visa-risk-system-419438"
       ],
-      "title_de": "KI-Risikoscoring für alle Visakategorien ausgerollt",
-      "title_en": "AI risk scoring rolled out across all visa categories",
-      "description_de": "Das Ministerium setzt ein erweitertes KI-Risikobewertungssystem ein, das neben Reisehistorie und Antragsdaten auch Nationalität und Herkunftsland als gewichtete Faktoren einbezieht. Antragsteller aus bestimmten Ländern des Globalen Südens erhalten systematisch höhere Risikoscores, was zu längeren Bearbeitungszeiten und häufigeren Ablehnungen führt.",
-      "description_en": "The department deployed an expanded AI risk-assessment system that, alongside travel history and application data, also factored in nationality and country of origin as weighted variables. Applicants from certain Global South countries received systematically higher risk scores, leading to longer processing times and more frequent rejections."
+      "title_de": "Zusage von 99,2 Mio. AUD für automatisierte Visa-Risikoprofilierung",
+      "title_en": "A$99.2 million pledged for automated visa risk profiling",
+      "description_de": "Die Regierungskoalition sagt 99,2 Millionen Australische Dollar für eine 'Visa Risk Assessment'-Fähigkeit im Department of Immigration and Border Protection zu. Sie soll Einwanderungs- und Grenzdaten in Echtzeit zusammenführen und eine automatisierte Risikoprofilierung von Antragstellern schon vor der Einreise ermöglichen. Einwanderungsminister Peter Dutton begründete dies damit, dass Entscheider Werkzeuge bräuchten, um die weitergehenden kriminellen und sicherheitsrelevanten Risiken von Reisenden zu prüfen.",
+      "description_en": "The Coalition government pledged A$99.2 million for a Visa Risk Assessment capability in the Department of Immigration and Border Protection. It was to consolidate immigration and border data in real time and enable automated risk profiling of applicants before they reach the border. Immigration Minister Peter Dutton argued that decision makers needed tools to take a closer look at travellers' broader criminal and security risks."
     },
     {
-      "date": "2021",
+      "date": "2017-02",
       "phase": "event",
-      "title": "Berichte über algorithmische Voreingenommenheit werden öffentlich",
-      "description": "Das Human Rights Law Centre und Migrationsanwälte veröffentlichen Analysen, die zeigen, dass Visaantragsteller aus Afrika, dem Nahen Osten und Teilen Asiens überproportional häufig abgelehnt werden. Interne Dokumente, die per Freedom of Information Act erlangt werden, belegen, dass Nationalität ein expliziter Parameter im Scoring-System ist. Eine parlamentarische Anfrage bleibt weitgehend unbeantwortet.",
+      "title": "Ministerium bestätigt Analyseprogramm für ganze Visaklassen - Unterlagen bleiben unter Verschluss",
+      "description": "In der Senatsanhörung (Senate Estimates) beschreibt das Ministerium ein Analyseprogramm, das mit prädiktiver Analytik, Parametern, Profiling und Algorithmen das Risiko über ganze Visaklassen hinweg bewerten soll; ein Pilot für ausgewählte Visakategorien war für 2017 geplant. Eine Informationsfreiheitsanfrage nach Unterlagen zu dem Programm wurde abgelehnt, sodass die verwendeten Risikomerkmale öffentlich nicht bekannt sind.",
       "sources": [
-        "https://www.hrlc.org.au/",
-        "https://www.theguardian.com/australia-news"
+        "https://www.righttoknow.org.au/request/new_visa_risk_assessment_digital"
       ],
-      "title_de": "Berichte über algorithmische Voreingenommenheit werden öffentlich",
-      "title_en": "Reports of algorithmic bias become public",
-      "description_de": "Das Human Rights Law Centre und Migrationsanwälte veröffentlichen Analysen, die zeigen, dass Visaantragsteller aus Afrika, dem Nahen Osten und Teilen Asiens überproportional häufig abgelehnt werden. Interne Dokumente, die per Freedom of Information Act erlangt werden, belegen, dass Nationalität ein expliziter Parameter im Scoring-System ist. Eine parlamentarische Anfrage bleibt weitgehend unbeantwortet.",
-      "description_en": "The Human Rights Law Centre and immigration lawyers published analyses showing that visa applicants from Africa, the Middle East, and parts of Asia were rejected at disproportionately high rates. Internal documents obtained under the Freedom of Information Act confirmed that nationality was an explicit parameter in the scoring system. A parliamentary inquiry was largely left unanswered."
+      "title_de": "Ministerium bestätigt Analyseprogramm für ganze Visaklassen - Unterlagen bleiben unter Verschluss",
+      "title_en": "Department confirms analytics program for entire visa classes - documents withheld",
+      "description_de": "In der Senatsanhörung (Senate Estimates) beschreibt das Ministerium ein Analyseprogramm, das mit prädiktiver Analytik, Parametern, Profiling und Algorithmen das Risiko über ganze Visaklassen hinweg bewerten soll; ein Pilot für ausgewählte Visakategorien war für 2017 geplant. Eine Informationsfreiheitsanfrage nach Unterlagen zu dem Programm wurde abgelehnt, sodass die verwendeten Risikomerkmale öffentlich nicht bekannt sind.",
+      "description_en": "At Senate Estimates the department described an analytics program that uses predictive analytics, parameters, profiling and algorithms to assess risk across entire visa classes; a pilot for selected visa categories was planned for 2017. A freedom of information request for documents on the program was refused, so the risk factors used are not publicly known."
     },
     {
-      "date": "2022",
-      "phase": "consequences",
-      "title": "Forderungen nach Transparenz und Reform bleiben unerfüllt",
-      "description": "Trotz Kritik von Bürgerrechtsorganisationen und einem Bericht des australischen Ombudsmanns hält das Ministerium an automatisierten Entscheidungsprozessen fest. Im Kontext der EU-KI-Verordnung werden internationale Vergleiche gezogen. Australien verfügt über kein vergleichbares Regulierungsrahmenwerk für algorithmische Entscheidungen im Migrationsbereich.",
+      "date": "2018-01",
+      "phase": "event",
+      "title": "Ausschreibung: KI soll die Prüfung befristeter Visa automatisieren",
+      "description": "Ausschreibungsunterlagen des neuen Department of Home Affairs sehen vor, künstliche Intelligenz und maschinelles Lernen einzusetzen, um zweifelhafte Antragsteller zu erkennen und befristete Visaanträge aus allen Weltregionen gegen die Visakriterien zu prüfen (ausgenommen Gesundheits- und Sicherheitsprüfungen). Ein solcher Einsatz war frühestens ab Dezember 2019 vorgesehen; bis dahin erfolgte die Prüfung weitgehend manuell.",
       "sources": [
-        "https://www.hrlc.org.au/",
-        "https://www.theguardian.com/australia-news"
+        "https://www.itnews.com.au/news/australias-new-visa-system-could-use-ai-to-spot-dubious-applicants-481148",
+        "https://www.interstaff.com/dubious-visa-applicants-to-be-spotted-by-ai-technology/"
       ],
-      "title_de": "Forderungen nach Transparenz und Reform bleiben unerfüllt",
-      "title_en": "Calls for transparency and reform remain unmet",
-      "description_de": "Trotz Kritik von Bürgerrechtsorganisationen und einem Bericht des australischen Ombudsmanns hält das Ministerium an automatisierten Entscheidungsprozessen fest. Im Kontext der EU-KI-Verordnung werden internationale Vergleiche gezogen. Australien verfügt über kein vergleichbares Regulierungsrahmenwerk für algorithmische Entscheidungen im Migrationsbereich.",
-      "description_en": "Despite criticism from civil-society organizations and a report by the Australian Ombudsman, the department continued to rely on automated decision-making. International comparisons were drawn in the context of the EU AI Act. Australia has no comparable regulatory framework for algorithmic decisions in the migration sphere."
+      "title_de": "Ausschreibung: KI soll die Prüfung befristeter Visa automatisieren",
+      "title_en": "Tender: AI to automate assessment of temporary visas",
+      "description_de": "Ausschreibungsunterlagen des neuen Department of Home Affairs sehen vor, künstliche Intelligenz und maschinelles Lernen einzusetzen, um zweifelhafte Antragsteller zu erkennen und befristete Visaanträge aus allen Weltregionen gegen die Visakriterien zu prüfen (ausgenommen Gesundheits- und Sicherheitsprüfungen). Ein solcher Einsatz war frühestens ab Dezember 2019 vorgesehen; bis dahin erfolgte die Prüfung weitgehend manuell.",
+      "description_en": "Tender documents of the new Department of Home Affairs envisaged using artificial intelligence and machine learning to identify dubious applicants and to assess temporary visa applications from all geographic locations against visa criteria (other than health and national security assessments). Such use was foreseen from December 2019 at the earliest; until then assessments were largely manual."
+    },
+    {
+      "date": "2024",
+      "phase": "consequences",
+      "title": "Home Affairs bestätigt maschinelles Lernen zur Risikovorhersage in Visaprogrammen",
+      "description": "Auf eine Informationsfreiheitsanfrage (FA 24/05/01409) erklärt Home Affairs, maschinelles Lernen für prädiktive Analysen einzusetzen, unter anderem zur Risikovorhersage in Visaprogrammen; für Verwaltungsentscheidungen selbst werde es nicht verwendet. Im August 2024 warnte ein Beitrag im Blog des Africa Network der Australian National University, dass Merkmale wie Geburtsland oder Nationalität, die stark mit Verstößen gegen Visaauflagen korrelieren, in Empfehlungsalgorithmen Vorurteile fortschreiben können, und plädierte dafür, solche Verzerrungen zu beseitigen.",
+      "sources": [
+        "https://www.homeaffairs.gov.au/foi/files/2024/fa-240501409-document-released.PDF",
+        "https://africanetwork.weblogs.anu.edu.au/2024/08/06/removing-bias-from-recommendation-algorithms-can-lead-to-a-fairer-more-transparent-immigration-system/"
+      ],
+      "title_de": "Home Affairs bestätigt maschinelles Lernen zur Risikovorhersage in Visaprogrammen",
+      "title_en": "Home Affairs confirms machine learning for risk prediction in visa programs",
+      "description_de": "Auf eine Informationsfreiheitsanfrage (FA 24/05/01409) erklärt Home Affairs, maschinelles Lernen für prädiktive Analysen einzusetzen, unter anderem zur Risikovorhersage in Visaprogrammen; für Verwaltungsentscheidungen selbst werde es nicht verwendet. Im August 2024 warnte ein Beitrag im Blog des Africa Network der Australian National University, dass Merkmale wie Geburtsland oder Nationalität, die stark mit Verstößen gegen Visaauflagen korrelieren, in Empfehlungsalgorithmen Vorurteile fortschreiben können, und plädierte dafür, solche Verzerrungen zu beseitigen.",
+      "description_en": "In response to a freedom of information request (FA 24/05/01409), Home Affairs stated that it uses machine learning for predictive analytics, among other things to predict risk in visa programs, but not to make administrative decisions. In August 2024 a post on the Australian National University's Africa Network blog warned that factors such as country of birth or nationality, which are highly correlated with breaches of visa conditions, can perpetuate prejudice in recommendation algorithms, and argued for removing such bias."
     }
   ],
   "asm:sources": [
@@ -114,24 +130,24 @@
       "title_en": "Australia's new visa system could use AI to spot dubious applicants"
     },
     {
-      "url": "https://www.frontiersin.org/journals/sociology/articles/10.3389/fsoc.2024.1336160/full",
-      "title": "Robodeport or surveillance fantasy?: how automated is automatic visa cancellation in Australia?",
-      "publisher": "Frontiers in Sociology",
-      "date": "2024",
-      "type": "academic-paper",
+      "url": "https://aph.gov.au/~/media/Estimates/Live/legcon_ctte/estimates/add_1112/diac/AE12-0281.ashx",
+      "title": "Senate Additional Estimates 2011-12: Answer to Question on Notice AE12/0281 (risk tiering)",
+      "publisher": "Parliament of Australia / Department of Immigration and Citizenship",
+      "date": "2012",
+      "type": "government-document",
       "asm:linkHealth": "ok",
-      "title_de": "Robodeport or surveillance fantasy?: how automated is automatic visa cancellation in Australia?",
-      "title_en": "Robodeport or surveillance fantasy?: how automated is automatic visa cancellation in Australia?"
+      "title_de": "Senate Additional Estimates 2011-12: Answer to Question on Notice AE12/0281 (risk tiering)",
+      "title_en": "Senate Additional Estimates 2011-12: Answer to Question on Notice AE12/0281 (risk tiering)"
     },
     {
-      "url": "https://safeground.org.au/ai-bias-in-australia-an-urgent-call-for-regulatory-intervention/",
-      "title": "AI Bias in Australia: An Urgent Call for Regulatory Intervention",
-      "publisher": "SafeGround",
-      "date": "2024",
-      "type": "ngo-report",
+      "url": "https://www.itnews.com.au/news/govt-promises-immigration-99m-for-visa-risk-system-419438",
+      "title": "Govt gives Immigration $99m for visa risk system",
+      "publisher": "iTnews",
+      "date": "2016-05",
+      "type": "news-article",
       "asm:linkHealth": "ok",
-      "title_de": "AI Bias in Australia: An Urgent Call for Regulatory Intervention",
-      "title_en": "AI Bias in Australia: An Urgent Call for Regulatory Intervention"
+      "title_de": "Govt gives Immigration $99m for visa risk system",
+      "title_en": "Govt gives Immigration $99m for visa risk system"
     },
     {
       "url": "https://www.homeaffairs.gov.au/foi/files/2024/fa-240501409-document-released.PDF",
@@ -149,12 +165,13 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: no source located documents that Home Affairs' visa risk tools weight nationality or were found to discriminate by nationality; the title now describes the documented, non-transparent algorithmic risk assessment. Slug unchanged for permalink stability."
   },
-  "name_de": "Australien: KI-Risikobewertung bei Visaanträgen diskriminiert nach Nationalität",
-  "name_en": "Australia: AI risk assessment of visa applications discriminates by nationality",
-  "description_de": "Das australische Department of Home Affairs setzt seit 2015 automatisierte Risikoeinschätzung bei der Bearbeitung von Visaanträgen ein. Ab 2019 wird ein KI-gestütztes Scoring-System eingeführt, das Antragsteller nach Nationalität, Alter und anderen Merkmalen bewertet. Untersuchungen zeigen, dass das System Antragsteller aus bestimmten Ländern systematisch benachteiligt und damit rassistische Vorannahmen algorithmisch verfestigt.",
-  "description_en": "Since 2015 the Australian Department of Home Affairs has used automated risk assessment in processing visa applications. From 2019 onwards, an AI-supported scoring system was introduced that rates applicants by nationality, age, and other characteristics. Investigations show that the system systematically disadvantages applicants from certain countries, thereby algorithmically entrenching racist assumptions.",
+  "name_de": "Australien: Undurchsichtige algorithmische Risikobewertung von Visaanträgen",
+  "name_en": "Australia: opaque algorithmic risk assessment of visa applications",
+  "description_de": "Australiens Einwanderungsbehörden nutzen seit mindestens 2012 automatisierte Risikoeinstufungen bei Visaanträgen, zunächst ein 'Risk Tiering'-Werkzeug, das Anträge für genauere Prüfung oder beschleunigte Bearbeitung markiert. 2016 sagte die Regierung 99,2 Millionen Australische Dollar für eine automatisierte Risikoprofilierung von Antragstellern zu; 2017 beschrieb das Ministerium ein Analyseprogramm mit prädiktiven Modellen und Profiling für ganze Visaklassen, Unterlagen dazu blieben jedoch unter Verschluss. 2024 bestätigte Home Affairs den Einsatz von maschinellem Lernen zur Risikovorhersage in Visaprogrammen, nach eigenen Angaben nicht für Verwaltungsentscheidungen. Welche Merkmale die Modelle gewichten, ist öffentlich nicht bekannt; Kritiker warnen, dass Merkmale wie Nationalität Vorurteile algorithmisch fortschreiben können.",
+  "description_en": "Australia's immigration authorities have used automated risk rating of visa applications since at least 2012, initially a 'risk tiering' tool that flags applications for closer scrutiny or streamlined processing. In 2016 the government pledged A$99.2 million for automated risk profiling of applicants; in 2017 the department described an analytics program using predictive models and profiling across entire visa classes, but documents on it were withheld. In 2024 Home Affairs confirmed that it uses machine learning to predict risk in visa programs, according to the department not to make administrative decisions. Which factors the models weight is not publicly known; critics warn that factors such as nationality can algorithmically perpetuate prejudice.",
   "asm:affectedRights_de": [
     "Recht auf Gleichbehandlung",
     "Recht auf faires Verfahren",

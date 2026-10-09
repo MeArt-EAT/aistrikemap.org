@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/anthropic-pentagon-conflict",
-  "name": "Anthropic-Pentagon-Interessenkonflikt",
-  "description": "Anthropic erhält Pentagon-Verträge über 200 Millionen US-Dollar trotz eigener AI-Safety-Mission. Das Unternehmen ändert seine Nutzungsrichtlinien, um militärische Anwendungen zu ermöglichen, und geht eine Partnerschaft mit Palantir Technologies ein, um Claude in Regierungs- und Verteidigungssysteme zu integrieren.",
+  "name": "Anthropic und das Pentagon: Militärverträge und Streit um Nutzungsgrenzen",
+  "description": "Anthropic, gegründet mit erklärter KI-Sicherheitsmission, öffnete Claude schrittweise für US-Sicherheitsbehörden: durch vertragliche Ausnahmen von seiner Nutzungsrichtlinie für ausgewählte Behörden (Juni 2024), eine Partnerschaft mit Palantir und AWS (November 2024) und eine Prototyp-Vereinbarung mit dem Pentagon mit einer Obergrenze von 200 Millionen US-Dollar (Juli 2025). Anfang 2026 eskalierte ein Streit: Das Pentagon verlangte die Nutzung für alle rechtmäßigen Zwecke, Anthropic hielt an Ausschlüssen für Massenüberwachung von US-Bürgern und vollautonome Waffen fest. Verteidigungsminister Pete Hegseth stufte Anthropic daraufhin als Lieferkettenrisiko ein; Gerichte entschieden seither teils für, teils gegen das Unternehmen.",
   "startDate": "2021",
   "location": {
     "@type": "Place",
@@ -52,7 +52,7 @@
       "name": "Palantir Technologies",
       "type": "company",
       "asm:systems": [
-        "Palantir Gotham"
+        "Palantir AI Platform (AIP)"
       ],
       "name_de": "Palantir Technologies",
       "name_en": "Palantir Technologies"
@@ -75,66 +75,85 @@
       "description_en": "Anthropic was founded by former OpenAI employees with the stated mission of developing safe and responsible AI. The company positioned itself as a leader in AI safety."
     },
     {
-      "date": "2024",
-      "phase": "infrastructure",
-      "title": "Palantir-Partnerschaft für Government",
-      "description": "Anthropic geht eine Partnerschaft mit Palantir Technologies ein, um Claude über Palantirs Plattformen für Regierungs- und Verteidigungskunden zugänglich zu machen. Dies markiert den ersten direkten Schritt in den militärischen Sektor.",
-      "sources": [
-        "https://www.palantir.com/newsroom/press-releases/palantir-anthropic-partnership-2024/"
-      ],
-      "title_de": "Palantir-Partnerschaft für Government",
-      "title_en": "Palantir partnership for government customers",
-      "description_de": "Anthropic geht eine Partnerschaft mit Palantir Technologies ein, um Claude über Palantirs Plattformen für Regierungs- und Verteidigungskunden zugänglich zu machen. Dies markiert den ersten direkten Schritt in den militärischen Sektor.",
-      "description_en": "Anthropic entered into a partnership with Palantir Technologies to make Claude accessible to government and defense customers via Palantir's platforms. This marked the first direct step into the military sector."
-    },
-    {
-      "date": "2024-06",
+      "date": "2024-06-26",
       "phase": "doctrine",
-      "title": "Nutzungsrichtlinien geändert für Militär",
-      "description": "Anthropic aktualisiert seine Usage Policy und ermöglicht erstmals bestimmte militärische Anwendungen von Claude - unter Beibehaltung von Einschränkungen bei autonomen Waffen und Massenüberwachung.",
+      "title": "Vertragliche Ausnahmen von der Nutzungsrichtlinie für Regierungsbehörden",
+      "description": "Anthropic kündigt an, ausgewählten US-Regierungsbehörden vertragliche Ausnahmen von seiner allgemeinen Nutzungsrichtlinie zu gewähren. Erlaubt wird damit etwa gesetzlich autorisierte Auslandsaufklärung, darunter das Erkennen verdeckter Einfluss- oder Sabotagekampagnen und die Frühwarnung vor möglichen militärischen Aktivitäten. Die übrigen Verbote, u. a. zu Desinformationskampagnen, Entwurf oder Einsatz von Waffen, Zensur und bösartigen Cyberoperationen, bleiben laut Anthropic bestehen.",
       "sources": [
-        "https://www.anthropic.com/news/updating-our-usage-policy"
+        "https://anthropic.com/news/expanding-access-to-claude-for-government"
       ],
-      "title_de": "Nutzungsrichtlinien geändert für Militär",
-      "title_en": "Usage policy amended for military applications",
-      "description_de": "Anthropic aktualisiert seine Usage Policy und ermöglicht erstmals bestimmte militärische Anwendungen von Claude - unter Beibehaltung von Einschränkungen bei autonomen Waffen und Massenüberwachung.",
-      "description_en": "Anthropic updated its Usage Policy and, for the first time, permitted certain military applications of Claude - while retaining restrictions on autonomous weapons and mass surveillance."
+      "title_de": "Vertragliche Ausnahmen von der Nutzungsrichtlinie für Regierungsbehörden",
+      "title_en": "Contractual exceptions to the usage policy for government agencies",
+      "description_de": "Anthropic kündigt an, ausgewählten US-Regierungsbehörden vertragliche Ausnahmen von seiner allgemeinen Nutzungsrichtlinie zu gewähren. Erlaubt wird damit etwa gesetzlich autorisierte Auslandsaufklärung, darunter das Erkennen verdeckter Einfluss- oder Sabotagekampagnen und die Frühwarnung vor möglichen militärischen Aktivitäten. Die übrigen Verbote, u. a. zu Desinformationskampagnen, Entwurf oder Einsatz von Waffen, Zensur und bösartigen Cyberoperationen, bleiben laut Anthropic bestehen.",
+      "description_en": "Anthropic announced that it would grant selected US government agencies contractual exceptions to its general Usage Policy. These permit, for example, legally authorized foreign intelligence analysis, including identifying covert influence or sabotage campaigns and providing advance warning of potential military activities. According to Anthropic, all other restrictions, including those on disinformation campaigns, the design or use of weapons, censorship and malicious cyber operations, remain in place."
     },
     {
-      "date": "2025",
+      "date": "2024-11-07",
+      "phase": "infrastructure",
+      "title": "Partnerschaft mit Palantir und AWS für Geheimdienste und Militär",
+      "description": "Anthropic, Palantir Technologies und Amazon Web Services (AWS) kündigen an, die Modellfamilien Claude 3 und 3.5 über Palantirs AI Platform auf AWS für US-Geheimdienst- und Verteidigungsbehörden bereitzustellen, auch in Palantirs IL6-Umgebung, die für Daten bis zur Geheimhaltungsstufe 'Secret' akkreditiert ist. Als Einsatzzwecke nennt die Mitteilung die schnelle Verarbeitung großer Datenmengen, das Erkennen von Mustern und Trends und die Dokumentenprüfung; Claude soll Behördenvertretern helfen, in zeitkritischen Situationen fundiertere Entscheidungen zu treffen.",
+      "sources": [
+        "https://www.businesswire.com/news/home/20241107699415/en/Anthropic-and-Palantir-Partner-to-Bring-Claude-AI-Models-to-AWS-for-U.S.-Government-Intelligence-and-Defense-Operations",
+        "https://www.theregister.com/2024/11/07/anthropic_palantir_aws_claude/"
+      ],
+      "title_de": "Partnerschaft mit Palantir und AWS für Geheimdienste und Militär",
+      "title_en": "Partnership with Palantir and AWS for intelligence and defense agencies",
+      "description_de": "Anthropic, Palantir Technologies und Amazon Web Services (AWS) kündigen an, die Modellfamilien Claude 3 und 3.5 über Palantirs AI Platform auf AWS für US-Geheimdienst- und Verteidigungsbehörden bereitzustellen, auch in Palantirs IL6-Umgebung, die für Daten bis zur Geheimhaltungsstufe 'Secret' akkreditiert ist. Als Einsatzzwecke nennt die Mitteilung die schnelle Verarbeitung großer Datenmengen, das Erkennen von Mustern und Trends und die Dokumentenprüfung; Claude soll Behördenvertretern helfen, in zeitkritischen Situationen fundiertere Entscheidungen zu treffen.",
+      "description_en": "Anthropic, Palantir Technologies and Amazon Web Services (AWS) announced that the Claude 3 and 3.5 model families would be made available to US intelligence and defense agencies through Palantir's AI Platform on AWS, including in Palantir's IL6 environment, which is accredited for data up to the 'Secret' classification level. The announcement named rapid processing of large volumes of data, identifying patterns and trends, and document review as uses; Claude was to help officials make more informed decisions in time-sensitive situations."
+    },
+    {
+      "date": "2025-07-14",
       "phase": "event",
-      "title": "$200M Pentagon-Vertrag",
-      "description": "Anthropic schließt einen Vertrag über 200 Millionen US-Dollar mit dem Pentagon ab. Claude wird für Analyse, Planung und Entscheidungsunterstützung in militärischen Kontexten eingesetzt.",
-      "sources": [],
-      "title_de": "$200M Pentagon-Vertrag",
-      "title_en": "$200M Pentagon contract",
-      "description_de": "Anthropic schließt einen Vertrag über 200 Millionen US-Dollar mit dem Pentagon ab. Claude wird für Analyse, Planung und Entscheidungsunterstützung in militärischen Kontexten eingesetzt.",
-      "description_en": "Anthropic signed a US$200 million contract with the Pentagon. Claude is used for analysis, planning, and decision support in military contexts."
+      "title": "Pentagon-Prototypvereinbarung mit bis zu 200 Mio. US-Dollar",
+      "description": "Das Chief Digital and Artificial Intelligence Office (CDAO) des US-Verteidigungsministeriums schließt mit Anthropic eine zweijährige Prototyp-Vereinbarung (Other Transaction Agreement) mit einer Obergrenze von 200 Millionen US-Dollar; gleichartige Vereinbarungen erhalten Google und xAI, OpenAI hatte bereits im Juni 2025 eine erhalten. Laut Anthropic sollen Prototypen von Frontier-KI-Fähigkeiten für die nationale Sicherheit entstehen, teils auf Daten des Ministeriums feinabgestimmt, und mögliche Missbräuche von KI durch Gegner untersucht werden.",
+      "sources": [
+        "https://anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations",
+        "https://defensescoop.com/2025/07/14/pentagon-ai-contracts-musk-xai-google-openai-anthropic-cdao/"
+      ],
+      "title_de": "Pentagon-Prototypvereinbarung mit bis zu 200 Mio. US-Dollar",
+      "title_en": "Pentagon prototype agreement worth up to US$200 million",
+      "description_de": "Das Chief Digital and Artificial Intelligence Office (CDAO) des US-Verteidigungsministeriums schließt mit Anthropic eine zweijährige Prototyp-Vereinbarung (Other Transaction Agreement) mit einer Obergrenze von 200 Millionen US-Dollar; gleichartige Vereinbarungen erhalten Google und xAI, OpenAI hatte bereits im Juni 2025 eine erhalten. Laut Anthropic sollen Prototypen von Frontier-KI-Fähigkeiten für die nationale Sicherheit entstehen, teils auf Daten des Ministeriums feinabgestimmt, und mögliche Missbräuche von KI durch Gegner untersucht werden.",
+      "description_en": "The US Department of Defense's Chief Digital and Artificial Intelligence Office (CDAO) awarded Anthropic a two-year prototype other transaction agreement with a ceiling of US$200 million; Google and xAI received similar agreements, OpenAI had already received one in June 2025. According to Anthropic, the work is to produce prototype frontier AI capabilities for national security, partly fine-tuned on department data, and to study potential adversarial uses of AI."
     },
     {
-      "date": "2025",
+      "date": "2026-02-27",
       "phase": "consequences",
-      "title": "AI-Safety-Community kritisiert Kursänderung",
-      "description": "Führende KI-Sicherheitsforscher und Organisationen kritisieren Anthropics Abkehr von der ursprünglichen Safety-Mission. Der Interessenkonflikt zwischen kommerziellen Militärverträgen und verantwortungsvoller KI-Entwicklung wird öffentlich debattiert.",
+      "title": "Streit um Nutzungsgrenzen: Pentagon stuft Anthropic als Lieferkettenrisiko ein",
+      "description": "In Verhandlungen über den Einsatz von Claude verlangte das Pentagon die Nutzung für alle rechtmäßigen Zwecke; Anthropic bestand darauf, Massenüberwachung von US-Bürgern im Inland und vollautonome Waffen vertraglich auszuschließen. Das Pentagon erklärte, beides ebenfalls nicht anzustreben, lehnte die vertraglichen Einschränkungen aber ab. Am 27. Februar 2026 wies Präsident Trump die Bundesbehörden an, Anthropic-Produkte nicht mehr zu nutzen (mit bis zu sechs Monaten Übergangsfrist für das Verteidigungsministerium), und Verteidigungsminister Pete Hegseth erklärte Anthropic zum 'Lieferkettenrisiko für die nationale Sicherheit'; die formelle Einstufung folgte Anfang März.",
       "sources": [
-        "https://theintercept.com/2026/03/08/openai-anthropic-military-contract-ethics-surveillance/"
+        "https://theintercept.com/2026/03/08/openai-anthropic-military-contract-ethics-surveillance/",
+        "https://wtop.com/news/2026/03/pentagon-says-it-is-labeling-ai-company-anthropic-a-supply-chain-risk-effective-immediately/"
       ],
-      "title_de": "AI-Safety-Community kritisiert Kursänderung",
-      "title_en": "AI safety community criticizes the shift",
-      "description_de": "Führende KI-Sicherheitsforscher und Organisationen kritisieren Anthropics Abkehr von der ursprünglichen Safety-Mission. Der Interessenkonflikt zwischen kommerziellen Militärverträgen und verantwortungsvoller KI-Entwicklung wird öffentlich debattiert.",
-      "description_en": "Leading AI safety researchers and organizations criticized Anthropic's departure from its original safety mission. The conflict of interest between commercial military contracts and responsible AI development is being publicly debated."
+      "title_de": "Streit um Nutzungsgrenzen: Pentagon stuft Anthropic als Lieferkettenrisiko ein",
+      "title_en": "Dispute over usage limits: Pentagon designates Anthropic a supply chain risk",
+      "description_de": "In Verhandlungen über den Einsatz von Claude verlangte das Pentagon die Nutzung für alle rechtmäßigen Zwecke; Anthropic bestand darauf, Massenüberwachung von US-Bürgern im Inland und vollautonome Waffen vertraglich auszuschließen. Das Pentagon erklärte, beides ebenfalls nicht anzustreben, lehnte die vertraglichen Einschränkungen aber ab. Am 27. Februar 2026 wies Präsident Trump die Bundesbehörden an, Anthropic-Produkte nicht mehr zu nutzen (mit bis zu sechs Monaten Übergangsfrist für das Verteidigungsministerium), und Verteidigungsminister Pete Hegseth erklärte Anthropic zum 'Lieferkettenrisiko für die nationale Sicherheit'; die formelle Einstufung folgte Anfang März.",
+      "description_en": "In negotiations over the use of Claude, the Pentagon demanded use for all lawful purposes; Anthropic insisted on contractually excluding mass domestic surveillance of Americans and fully autonomous weapons. The Pentagon said it did not seek either but rejected the contractual restrictions. On 27 February 2026 President Trump directed federal agencies to stop using Anthropic products (with up to six months for the Defense Department to transition), and Defense Secretary Pete Hegseth declared Anthropic a 'supply chain risk to national security'; the formal designation followed in early March."
+    },
+    {
+      "date": "2026-03-26 bis 2026-09-25",
+      "phase": "consequences",
+      "title": "Gerichte entscheiden gegensätzlich über die Einstufung",
+      "description": "Anthropic klagte gegen die Maßnahmen. Bundesrichterin Rita Lin (Northern District of California) stoppte die Einstufung und Trumps Anweisung am 26. März 2026 vorläufig und erklärte die Maßnahmen am 27. August 2026 für rechtswidrig: Die Regierung habe Anthropic für seine öffentliche Kritik bestraft und damit gegen die Meinungsfreiheit (First Amendment) verstoßen; auch das herangezogene Gesetz decke die Maßnahmen nicht. In einem gesonderten Verfahren um eine zweite, auf ein Lieferkettengesetz von 2018 gestützte Einstufung entschied das Bundesberufungsgericht in Washington D.C. am 25. September 2026 mit 2:1 Stimmen zugunsten des Pentagons, das Claude damit weiter aus seinen Systemen entfernen darf. Anthropic erklärte, die Entscheidung nicht zu teilen.",
+      "sources": [
+        "https://www.kunc.org/npr-news/2026-08-27/judge-says-pentagons-measures-against-anthropic-were-illegal-and-baseless",
+        "https://www.clickondetroit.com/business/2026/09/25/federal-court-says-us-government-can-label-anthropic-a-supply-chain-risk/"
+      ],
+      "title_de": "Gerichte entscheiden gegensätzlich über die Einstufung",
+      "title_en": "Courts reach opposing decisions on the designation",
+      "description_de": "Anthropic klagte gegen die Maßnahmen. Bundesrichterin Rita Lin (Northern District of California) stoppte die Einstufung und Trumps Anweisung am 26. März 2026 vorläufig und erklärte die Maßnahmen am 27. August 2026 für rechtswidrig: Die Regierung habe Anthropic für seine öffentliche Kritik bestraft und damit gegen die Meinungsfreiheit (First Amendment) verstoßen; auch das herangezogene Gesetz decke die Maßnahmen nicht. In einem gesonderten Verfahren um eine zweite, auf ein Lieferkettengesetz von 2018 gestützte Einstufung entschied das Bundesberufungsgericht in Washington D.C. am 25. September 2026 mit 2:1 Stimmen zugunsten des Pentagons, das Claude damit weiter aus seinen Systemen entfernen darf. Anthropic erklärte, die Entscheidung nicht zu teilen.",
+      "description_en": "Anthropic sued over the measures. Federal Judge Rita Lin (Northern District of California) provisionally blocked the designation and Trump's directive on 26 March 2026 and on 27 August 2026 ruled the measures unlawful: the government had punished Anthropic for its public criticism, violating the First Amendment, and the statute it invoked did not support the measures either. In a separate case over a second designation based on a 2018 supply chain law, the federal appeals court in Washington D.C. ruled 2-1 for the Pentagon on 25 September 2026, allowing it to keep removing Claude from its systems. Anthropic said it respectfully disagreed with the decision."
     }
   ],
   "asm:sources": [
     {
-      "url": "https://www.palantir.com/newsroom/press-releases/palantir-anthropic-partnership-2024/",
-      "title": "Palantir-Anthropic-Partnerschaft für Regierungskunden",
-      "publisher": "Palantir Technologies",
-      "date": "2024",
+      "url": "https://www.businesswire.com/news/home/20241107699415/en/Anthropic-and-Palantir-Partner-to-Bring-Claude-AI-Models-to-AWS-for-U.S.-Government-Intelligence-and-Defense-Operations",
+      "title": "Anthropic und Palantir bringen Claude-Modelle auf AWS für US-Geheimdienste und Militär",
+      "publisher": "Business Wire (Anthropic, Palantir Technologies)",
+      "date": "2024-11-07",
       "type": "company-statement",
       "asm:linkHealth": "ok",
-      "title_de": "Palantir-Anthropic-Partnerschaft für Regierungskunden",
-      "title_en": "Palantir-Anthropic partnership for government customers"
+      "title_de": "Anthropic und Palantir bringen Claude-Modelle auf AWS für US-Geheimdienste und Militär",
+      "title_en": "Anthropic and Palantir Partner to Bring Claude AI Models to AWS for U.S. Government Intelligence and Defense Operations"
     },
     {
       "url": "https://www.anthropic.com/company",
@@ -147,14 +166,14 @@
       "title_en": "Anthropic company profile and mission"
     },
     {
-      "url": "https://www.anthropic.com/news/updating-our-usage-policy",
-      "title": "Anthropic aktualisiert Usage Policy",
+      "url": "https://anthropic.com/news/expanding-access-to-claude-for-government",
+      "title": "Erweiterter Zugang zu Claude für Regierungsbehörden",
       "publisher": "Anthropic",
-      "date": "2024-06",
+      "date": "2024-06-26",
       "type": "company-statement",
       "asm:linkHealth": "ok",
-      "title_de": "Anthropic aktualisiert Usage Policy",
-      "title_en": "Anthropic updates its Usage Policy"
+      "title_de": "Erweiterter Zugang zu Claude für Regierungsbehörden",
+      "title_en": "Expanding access to Claude for government"
     },
     {
       "url": "https://theintercept.com/2026/03/08/openai-anthropic-military-contract-ethics-surveillance/",
@@ -172,12 +191,13 @@
     "lastUpdated": "2026-03-22",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: 'conflict of interest' did not match the documented events, which are Anthropic's defense agreements and its 2026 dispute with the Pentagon over usage limits. Slug unchanged for permalink stability."
   },
-  "name_de": "Anthropic-Pentagon-Interessenkonflikt",
-  "name_en": "Anthropic-Pentagon conflict of interest",
-  "description_de": "Anthropic erhält Pentagon-Verträge über 200 Millionen US-Dollar trotz eigener AI-Safety-Mission. Das Unternehmen ändert seine Nutzungsrichtlinien, um militärische Anwendungen zu ermöglichen, und geht eine Partnerschaft mit Palantir Technologies ein, um Claude in Regierungs- und Verteidigungssysteme zu integrieren.",
-  "description_en": "Anthropic receives Pentagon contracts worth US$200 million despite its own AI-safety mission. The company amended its usage policy to permit military applications and entered into a partnership with Palantir Technologies to integrate Claude into government and defense systems.",
+  "name_de": "Anthropic und das Pentagon: Militärverträge und Streit um Nutzungsgrenzen",
+  "name_en": "Anthropic and the Pentagon: military contracts and dispute over usage limits",
+  "description_de": "Anthropic, gegründet mit erklärter KI-Sicherheitsmission, öffnete Claude schrittweise für US-Sicherheitsbehörden: durch vertragliche Ausnahmen von seiner Nutzungsrichtlinie für ausgewählte Behörden (Juni 2024), eine Partnerschaft mit Palantir und AWS (November 2024) und eine Prototyp-Vereinbarung mit dem Pentagon mit einer Obergrenze von 200 Millionen US-Dollar (Juli 2025). Anfang 2026 eskalierte ein Streit: Das Pentagon verlangte die Nutzung für alle rechtmäßigen Zwecke, Anthropic hielt an Ausschlüssen für Massenüberwachung von US-Bürgern und vollautonome Waffen fest. Verteidigungsminister Pete Hegseth stufte Anthropic daraufhin als Lieferkettenrisiko ein; Gerichte entschieden seither teils für, teils gegen das Unternehmen.",
+  "description_en": "Anthropic, founded with a stated AI safety mission, gradually opened Claude to US national security agencies: through contractual exceptions to its usage policy for selected agencies (June 2024), a partnership with Palantir and AWS (November 2024) and a Pentagon prototype agreement with a ceiling of US$200 million (July 2025). In early 2026 a dispute escalated: the Pentagon demanded use for all lawful purposes, while Anthropic maintained exclusions for mass surveillance of Americans and fully autonomous weapons. Defense Secretary Pete Hegseth then designated Anthropic a supply chain risk; courts have since ruled partly for and partly against the company.",
   "asm:affectedRights_de": [
     "KI-Sicherheit",
     "Öffentliches Vertrauen",
