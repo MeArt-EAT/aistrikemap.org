@@ -6,7 +6,7 @@
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/griechenland-predpol-migration",
   "name": "Griechenland: KI-Lügendetektor und Migrationskontrolle",
-  "description": "Die EU finanziert das Projekt iBorderCtrl, einen KI-gestützten 'Lügendetektor', der an griechischen, lettischen und ungarischen Grenzübergängen getestet wird. Das System analysiert Mikroexpressionen von Reisenden per Webcam und bewertet deren 'Wahrhaftigkeit'. Wissenschaftler kritisieren das System als pseudowissenschaftlich und diskriminierend. Parallel setzt Griechenland KI-gestützte Überwachung in Flüchtlingslagern ein.",
+  "description": "Die EU finanziert das Projekt iBorderCtrl, einen KI-gestützten 'Lügendetektor', der an griechischen, lettischen und ungarischen Grenzübergängen getestet wird. Das System analysiert Mikroexpressionen von Reisenden per Webcam und bewertet deren 'Wahrhaftigkeit'. Wissenschaftler kritisieren das System als pseudowissenschaftlich und diskriminierend. Parallel setzt Griechenland KI-gestützte Überwachung in Flüchtlingslagern ein; für die Systeme Centaur und Hyperion im Lager auf Samos verhängte die griechische Datenschutzbehörde 2024 ein Bußgeld von 175.000 Euro.",
   "startDate": "2018",
   "location": {
     "@type": "Place",
@@ -47,6 +47,10 @@
     {
       "name": "Griechisches Migrationsministerium",
       "type": "government",
+      "asm:systems": [
+        "Centaur",
+        "Hyperion"
+      ],
       "name_de": "Griechisches Migrationsministerium",
       "name_en": "Greek Ministry of Migration and Asylum"
     },
@@ -87,50 +91,82 @@
       "description_en": "Scientists and civil rights organizations criticize iBorderCtrl as pseudoscientific: the assumption that lies can be detected through micro-expressions is not scientifically established. The system could systematically disadvantage people with different cultural facial expressions or communication styles - especially refugees under stress."
     },
     {
-      "date": "2021",
+      "date": "2021-09",
       "phase": "event",
       "title": "KI-Überwachung in Flüchtlingslagern",
-      "description": "Griechenland errichtet auf Samos das erste 'geschlossene kontrollierte Zugangszentrum' mit KI-Überwachung: Kameras, Drohnen, automatisierte Bewegungserkennung und biometrische Zugangskontrolle. Bewohner beschreiben das Lager als 'Gefängnis'. EU-Mittel finanzieren die Überwachungsinfrastruktur.",
-      "sources": [],
+      "description": "Im September 2021 eröffnete Griechenland auf Samos das erste von der EU finanzierte 'geschlossene kontrollierte Zugangszentrum' (CCAC) für Asylsuchende. Das System Centaur verbindet Überwachungskameras und Drohnen mit Algorithmen zur Verhaltensanalyse, die mutmaßliche Bedrohungen automatisch erkennen und an ein Kontrollzentrum des Migrationsministeriums melden; Hyperion regelt Ein- und Ausgang per Fingerabdruck. Viele Bewohner empfinden das abgelegene Lager als Hightech-Gefängnis.",
       "title_de": "KI-Überwachung in Flüchtlingslagern",
+      "description_de": "Im September 2021 eröffnete Griechenland auf Samos das erste von der EU finanzierte 'geschlossene kontrollierte Zugangszentrum' (CCAC) für Asylsuchende. Das System Centaur verbindet Überwachungskameras und Drohnen mit Algorithmen zur Verhaltensanalyse, die mutmaßliche Bedrohungen automatisch erkennen und an ein Kontrollzentrum des Migrationsministeriums melden; Hyperion regelt Ein- und Ausgang per Fingerabdruck. Viele Bewohner empfinden das abgelegene Lager als Hightech-Gefängnis.",
       "title_en": "AI surveillance in refugee camps",
-      "description_de": "Griechenland errichtet auf Samos das erste 'geschlossene kontrollierte Zugangszentrum' mit KI-Überwachung: Kameras, Drohnen, automatisierte Bewegungserkennung und biometrische Zugangskontrolle. Bewohner beschreiben das Lager als 'Gefängnis'. EU-Mittel finanzieren die Überwachungsinfrastruktur.",
-      "description_en": "Greece opens its first 'closed controlled access center' with AI surveillance on Samos: cameras, drones, automated motion detection and biometric access control. Residents describe the facility as a 'prison'. EU funds finance the surveillance infrastructure."
+      "description_en": "In September 2021 Greece opened the first EU-funded 'closed controlled access centre' (CCAC) for asylum seekers on Samos. The Centaur system combines CCTV cameras and drones with behavioural analysis algorithms that automatically detect purported threats and alert a control room at the Ministry of Migration; Hyperion controls entry and exit by fingerprint. Many residents experience the remote camp as a high-tech prison.",
+      "sources": [
+        "https://www.computerweekly.com/feature/Greek-data-watchdog-to-rule-on-AI-systems-in-refugee-camps",
+        "https://www.business-humanrights.org/en/latest-news/controlled-and-confined-unveiling-the-impact-of-technology-in-the-samos-closed-controlled-access-centre/"
+      ]
     },
     {
-      "date": "2023",
+      "date": "2023-09",
       "phase": "consequences",
-      "title": "iBorderCtrl-Dokumente nach FOIA-Klage freigegeben",
-      "description": "Nach einer Klage des Forschers Patrick Breyer (EU-Abgeordneter der Piratenpartei) werden iBorderCtrl-Dokumente teilweise freigegeben. Sie zeigen, dass das System eine Trefferquote von nur 76% hatte - kaum besser als Raten. Der EU AI Act klassifiziert Emotionserkennung an Grenzen als verboten.",
+      "title": "EuGH: Nur teilweise Einsicht in iBorderCtrl-Unterlagen",
+      "description": "Der Piraten-Politiker und spätere Europaabgeordnete Patrick Breyer hatte 2019 gegen die EU-Forschungsagentur REA auf Zugang zu iBorderCtrl-Dokumenten geklagt, die unter Verweis auf Geschäftsinteressen des Konsortiums zurückgehalten wurden. Am 7. September 2023 entschied der Gerichtshof der EU über Breyers Rechtsmittel und bestätigte die Linie des EU-Gerichts von 2021: Die Öffentlichkeit erhält nur teilweise Zugang zu den Projektunterlagen. ARTICLE 19 kritisierte, das Gericht verkenne die Bedeutung von Transparenz und demokratischer Kontrolle bei steuerfinanzierten Forschungsprojekten.",
+      "title_de": "EuGH: Nur teilweise Einsicht in iBorderCtrl-Unterlagen",
+      "description_de": "Der Piraten-Politiker und spätere Europaabgeordnete Patrick Breyer hatte 2019 gegen die EU-Forschungsagentur REA auf Zugang zu iBorderCtrl-Dokumenten geklagt, die unter Verweis auf Geschäftsinteressen des Konsortiums zurückgehalten wurden. Am 7. September 2023 entschied der Gerichtshof der EU über Breyers Rechtsmittel und bestätigte die Linie des EU-Gerichts von 2021: Die Öffentlichkeit erhält nur teilweise Zugang zu den Projektunterlagen. ARTICLE 19 kritisierte, das Gericht verkenne die Bedeutung von Transparenz und demokratischer Kontrolle bei steuerfinanzierten Forschungsprojekten.",
+      "title_en": "EU Court of Justice: only partial access to iBorderCtrl documents",
+      "description_en": "Pirate Party politician and later MEP Patrick Breyer had sued the EU's Research Executive Agency (REA) in 2019 for access to iBorderCtrl documents withheld on grounds of the consortium's commercial interests. On 7 September 2023 the EU Court of Justice ruled on Breyer's appeal and upheld the General Court's 2021 approach: the public receives only partial access to the project documents. ARTICLE 19 criticised the court for failing to recognise the importance of transparency and democratic oversight of taxpayer-funded research projects.",
       "sources": [
-        "https://www.patrick-breyer.de/en/iborderctrl/"
-      ],
-      "title_de": "iBorderCtrl-Dokumente nach FOIA-Klage freigegeben",
-      "title_en": "iBorderCtrl documents released after FOIA lawsuit",
-      "description_de": "Nach einer Klage des Forschers Patrick Breyer (EU-Abgeordneter der Piratenpartei) werden iBorderCtrl-Dokumente teilweise freigegeben. Sie zeigen, dass das System eine Trefferquote von nur 76% hatte - kaum besser als Raten. Der EU AI Act klassifiziert Emotionserkennung an Grenzen als verboten.",
-      "description_en": "Following a lawsuit by researcher Patrick Breyer (Pirate Party MEP), iBorderCtrl documents are partially released. They show the system had a hit rate of only 76% - barely better than chance. The EU AI Act classifies emotion recognition at borders as prohibited."
+        "https://www.article19.org/resources/eu-court-denies-full-transparency-about-emotion-recognition",
+        "https://globalfreedomofexpression.columbia.edu/cases/breyer-v-research-executive-agency-rea/"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "phase": "consequences",
+      "title": "Datenschutzbehörde verhängt Rekord-Bußgeld wegen Centaur und Hyperion",
+      "description": "Im April 2024 verhängte die griechische Datenschutzbehörde gegen das Migrationsministerium ein Bußgeld von 175.000 Euro, das höchste bis dahin gegen eine griechische Behörde verhängte. Das Ministerium hatte vor Beschaffung und Einsatz von Centaur und Hyperion keine vollständige Datenschutz-Folgenabschätzung durchgeführt und damit gegen die DSGVO verstoßen. Vorausgegangen war unter anderem eine Beschwerde der Organisation Homo Digitalis und ihrer Partner von 2022.",
+      "title_de": "Datenschutzbehörde verhängt Rekord-Bußgeld wegen Centaur und Hyperion",
+      "description_de": "Im April 2024 verhängte die griechische Datenschutzbehörde gegen das Migrationsministerium ein Bußgeld von 175.000 Euro, das höchste bis dahin gegen eine griechische Behörde verhängte. Das Ministerium hatte vor Beschaffung und Einsatz von Centaur und Hyperion keine vollständige Datenschutz-Folgenabschätzung durchgeführt und damit gegen die DSGVO verstoßen. Vorausgegangen war unter anderem eine Beschwerde der Organisation Homo Digitalis und ihrer Partner von 2022.",
+      "title_en": "Data protection authority imposes record fine over Centaur and Hyperion",
+      "description_en": "In April 2024 the Hellenic Data Protection Authority fined the Ministry of Migration 175,000 euros, the highest fine it had imposed on a Greek public body. The ministry had failed to carry out a complete data protection impact assessment before procuring and deploying Centaur and Hyperion, in breach of the GDPR. The case followed, among other things, a 2022 complaint by the organisation Homo Digitalis and its partners.",
+      "sources": [
+        "https://edri.org/our-work/greek-ministry-of-asylum-and-migration-face-a-record-breaking-e175000-fine-for-the-border-management-systems-kentauros-hyperion/",
+        "https://computerweekly.com/news/366580074/Greek-government-fined-over-AI-surveillance-in-refugee-camps"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "phase": "consequences",
+      "title": "AI Act: Emotionserkennung an Grenzen nicht verboten, sondern Hochrisiko",
+      "description": "Am 1. August 2024 trat der EU AI Act in Kraft. Er verbietet Emotionserkennung nur am Arbeitsplatz und in Bildungseinrichtungen; KI-Systeme, die Behörden in Migration und Grenzkontrolle als Lügendetektoren oder zur Erkennung emotionaler Zustände einsetzen, gelten dagegen als Hochrisiko-Anwendungen. Systeme wie iBorderCtrl sind an Grenzen damit nicht verboten, sondern unterliegen Auflagen für Hochrisiko-KI.",
+      "title_de": "AI Act: Emotionserkennung an Grenzen nicht verboten, sondern Hochrisiko",
+      "description_de": "Am 1. August 2024 trat der EU AI Act in Kraft. Er verbietet Emotionserkennung nur am Arbeitsplatz und in Bildungseinrichtungen; KI-Systeme, die Behörden in Migration und Grenzkontrolle als Lügendetektoren oder zur Erkennung emotionaler Zustände einsetzen, gelten dagegen als Hochrisiko-Anwendungen. Systeme wie iBorderCtrl sind an Grenzen damit nicht verboten, sondern unterliegen Auflagen für Hochrisiko-KI.",
+      "title_en": "AI Act: emotion recognition at borders classed as high-risk, not banned",
+      "description_en": "On 1 August 2024 the EU AI Act entered into force. It bans emotion recognition only in workplaces and educational institutions; AI systems used by authorities in migration and border control as polygraphs or to detect emotional states are instead classed as high-risk. Systems such as iBorderCtrl are therefore not banned at borders but subject to high-risk AI requirements.",
+      "sources": [
+        "https://verfassungsblog.de/regulating-ai-at-europes-borders",
+        "https://www.orrick.com/en/Insights/2025/04/EU-Commission-Publishes-Guidelines-on-the-Prohibited-AI-Practices-under-the-AI-Act"
+      ]
     }
   ],
   "asm:sources": [
     {
       "url": "https://theintercept.com/2019/07/26/europe-border-control-ai-lie-detector/",
-      "title": "Europe Is Using AI to Profile and Control Migrants",
+      "title": "We Tested Europe's New Lie Detector for Travelers - and Immediately Triggered a False Positive",
       "publisher": "The Intercept",
       "date": "2019-07-26",
       "type": "news-article",
       "asm:linkHealth": "ok",
-      "title_de": "Europe Is Using AI to Profile and Control Migrants",
-      "title_en": "Europe Is Using AI to Profile and Control Migrants"
+      "title_de": "We Tested Europe's New Lie Detector for Travelers - and Immediately Triggered a False Positive",
+      "title_en": "We Tested Europe's New Lie Detector for Travelers - and Immediately Triggered a False Positive"
     },
     {
-      "url": "https://www.patrick-breyer.de/en/iborderctrl/",
-      "title": "iBorderCtrl: EU's AI lie detector for border control",
-      "publisher": "Patrick Breyer MEP",
-      "date": "2023",
-      "type": "legal-document",
-      "asm:linkHealth": "ok",
-      "title_de": "iBorderCtrl: EU's AI lie detector for border control",
-      "title_en": "iBorderCtrl: EU's AI lie detector for border control"
+      "url": "https://www.article19.org/resources/eu-court-denies-full-transparency-about-emotion-recognition",
+      "title": "EU: Court denies full transparency about emotion recognition",
+      "publisher": "ARTICLE 19",
+      "date": "2023-09",
+      "type": "ngo-report",
+      "asm:linkHealth": "unverified",
+      "title_de": "EU: Court denies full transparency about emotion recognition",
+      "title_en": "EU: Court denies full transparency about emotion recognition"
     }
   ],
   "asm:metadata": {
@@ -142,8 +178,8 @@
   },
   "name_de": "Griechenland: KI-Lügendetektor und Migrationskontrolle",
   "name_en": "Greece: AI lie detector and migration control",
-  "description_de": "Die EU finanziert das Projekt iBorderCtrl, einen KI-gestützten 'Lügendetektor', der an griechischen, lettischen und ungarischen Grenzübergängen getestet wird. Das System analysiert Mikroexpressionen von Reisenden per Webcam und bewertet deren 'Wahrhaftigkeit'. Wissenschaftler kritisieren das System als pseudowissenschaftlich und diskriminierend. Parallel setzt Griechenland KI-gestützte Überwachung in Flüchtlingslagern ein.",
-  "description_en": "The EU funds the iBorderCtrl project, an AI-based 'lie detector' tested at Greek, Latvian and Hungarian border crossings. The system analyzes travelers' micro-expressions via webcam and rates their 'truthfulness'. Scientists criticize the system as pseudoscientific and discriminatory. In parallel, Greece deploys AI-based surveillance inside refugee camps.",
+  "description_de": "Die EU finanziert das Projekt iBorderCtrl, einen KI-gestützten 'Lügendetektor', der an griechischen, lettischen und ungarischen Grenzübergängen getestet wird. Das System analysiert Mikroexpressionen von Reisenden per Webcam und bewertet deren 'Wahrhaftigkeit'. Wissenschaftler kritisieren das System als pseudowissenschaftlich und diskriminierend. Parallel setzt Griechenland KI-gestützte Überwachung in Flüchtlingslagern ein; für die Systeme Centaur und Hyperion im Lager auf Samos verhängte die griechische Datenschutzbehörde 2024 ein Bußgeld von 175.000 Euro.",
+  "description_en": "The EU funds the iBorderCtrl project, an AI-based 'lie detector' tested at Greek, Latvian and Hungarian border crossings. The system analyzes travelers' micro-expressions via webcam and rates their 'truthfulness'. Scientists criticize the system as pseudoscientific and discriminatory. In parallel, Greece deploys AI-based surveillance inside refugee camps; for the Centaur and Hyperion systems in the Samos camp, the Greek data protection authority imposed a fine of 175,000 euros in 2024.",
   "asm:affectedRights_de": [
     "Recht auf Asyl",
     "Menschenwürde",
