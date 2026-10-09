@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/usa-proctoring-ki-studenten",
-  "name": "USA: KI-Prufungsaufsicht diskriminiert Studierende mit dunkler Hautfarbe und Behinderungen",
-  "description": "Im Zuge der COVID-19-Pandemie setzten US-amerikanische Hochschulen in großem Umfang KI-gestützte Prufungsaufsichtssoftware wie Proctorio und ExamSoft ein. Diese Systeme zeigten erhebliche Fehler bei der Erkennung von Gesichtern dunklerer Hautfarbe sowie bei Studierenden mit Behinderungen. Falsch-positive Betrugsalarme betrafen überproportional Schwarze Studierende, Asiaten und Studierende mit motorischen Einschrankungen oder Sehbehinderungen. Die Systeme verletzten zudem datenschutzrechtliche Grundsatze durch umfangreiche Überwachung im privaten Wohnraum der Studierenden.",
+  "name": "USA: KI-Prüfungsaufsicht - Berichte über schlechtere Gesichtserkennung bei dunkler Haut und Fehlalarme bei Behinderungen",
+  "description": "Im Zuge der COVID-19-Pandemie setzten US-amerikanische Hochschulen und Prüfungsstellen in großem Umfang Fernüberwachungssoftware wie Proctorio und ExamSoft ein. Berichte und Analysen deuten auf Probleme bei der Erkennung von Gesichtern dunklerer Haut hin: Eine unabhängige Analyse (Blogbeiträge, nicht begutachtet) fand, dass die in Proctorios Browsererweiterung verwendeten Gesichtsdetektionsmodelle in einem Test mit knapp 11.000 Bildern in 57 % der als Schwarz gelabelten Bilder kein Gesicht erkannten; Prüflinge mit nicht-weißer Hautfarbe berichteten bei der kalifornischen Online-Anwaltsprüfung, von der ExamSoft-Technik nicht erkannt worden zu sein. US-Senatoren verwiesen im Dezember 2020 zudem auf Berichte, wonach Studierende mit Behinderungen wegen unwillkürlicher Bewegungen als verdächtig markiert wurden. Die Hersteller wiesen Diskriminierungsvorwürfe zurück. Ein Bundesgericht in Ohio urteilte 2022, dass ein verlangter Raumscan an einer öffentlichen Hochschule gegen den Vierten Verfassungszusatz verstößt; nach Angaben des Anbieters Honorlock wurde das Urteil im Dezember 2023 im Berufungsverfahren aufgehoben.",
   "startDate": "2020-03",
   "location": {
     "@type": "Place",
@@ -41,7 +41,7 @@
       "asm:systems": [
         "Proctorio Remote Proctoring Software",
         "KI-Verhaltensanalyse",
-        "Gesichtserkennung"
+        "Gesichtsdetektion"
       ],
       "name_de": "Proctorio",
       "name_en": "Proctorio"
@@ -57,12 +57,12 @@
       "name_en": "ExamSoft"
     },
     {
-      "name": "US-amerikanische Universitaten",
+      "name": "US-amerikanische Universitäten",
       "type": "organization",
       "asm:systems": [
-        "Online-Prufungssysteme"
+        "Online-Prüfungssysteme"
       ],
-      "name_de": "US-amerikanische Universitaten",
+      "name_de": "US-amerikanische Universitäten",
       "name_en": "U.S. universities"
     }
   ],
@@ -72,52 +72,85 @@
     {
       "date": "2020-03",
       "phase": "infrastructure",
-      "title": "Massenhafter Umstieg auf KI-Prufungsaufsicht während COVID-19",
-      "description": "Mit der Schliesssung von Campussen im Marz 2020 stellen Hunderte US-amerikanischer Hochschulen innerhalb weniger Wochen auf Online-Prufungen mit KI-Aufsicht um. Proctorio und ExamSoft erfahren einen explosionsartigen Zuwachs an Nutzern. Die Systeme werden ohne ausreichende Tests auf Fairness und ohne barrierefreiheitsbezogene Beurteilungen eingefuhrt.",
+      "title": "Massenhafter Umstieg auf Online-Prüfungen mit Proctoring-Software während COVID-19",
+      "description": "Mit dem Lockdown im März 2020 stellen Hochschulen kurzfristig auf Fernprüfungen um, und Anbieter wie Proctorio verzeichnen starken Zulauf. Nach Eigenangabe von Proctorio wuchs die Zahl der von dem Unternehmen überwachten Prüfungen von April 2019 bis April 2020 um 900 %.",
+      "title_de": "Massenhafter Umstieg auf Online-Prüfungen mit Proctoring-Software während COVID-19",
+      "description_de": "Mit dem Lockdown im März 2020 stellen Hochschulen kurzfristig auf Fernprüfungen um, und Anbieter wie Proctorio verzeichnen starken Zulauf. Nach Eigenangabe von Proctorio wuchs die Zahl der von dem Unternehmen überwachten Prüfungen von April 2019 bis April 2020 um 900 %.",
+      "title_en": "Mass shift to online exams with proctoring software during COVID-19",
+      "description_en": "When campuses close in March 2020, colleges switch to remote exams at short notice and vendors such as Proctorio see strong demand. According to Proctorio's own figures, the number of exams the company proctored grew by 900% from April 2019 to April 2020.",
       "sources": [
-        "https://www.eff.org/deeplinks/2020/08/proctoring-apps-subject-students-unnecessary-surveillance"
-      ],
-      "title_de": "Massenhafter Umstieg auf KI-Prufungsaufsicht während COVID-19",
-      "description_de": "Mit der Schliesssung von Campussen im Marz 2020 stellen Hunderte US-amerikanischer Hochschulen innerhalb weniger Wochen auf Online-Prufungen mit KI-Aufsicht um. Proctorio und ExamSoft erfahren einen explosionsartigen Zuwachs an Nutzern. Die Systeme werden ohne ausreichende Tests auf Fairness und ohne barrierefreiheitsbezogene Beurteilungen eingefuhrt.",
-      "title_en": "Mass shift to AI proctoring during COVID-19",
-      "description_en": "When campuses close in March 2020, hundreds of U.S. universities transition within weeks to online exams under AI proctoring. Proctorio and ExamSoft experience explosive user growth. The systems are introduced without adequate fairness testing and without accessibility assessments."
+        "https://proctorio.com/blog/2020-year-in-review-growth-in-a-difficult-time",
+        "https://www.chronicle.com/article/a-vulnerability-in-proctoring-software-should-worry-colleges-experts-say"
+      ]
     },
     {
       "date": "2020-08",
       "phase": "doctrine",
-      "title": "EFF und Studierendenverbände dokumentieren Diskriminierung",
-      "description": "Die Electronic Frontier Foundation veröffentlicht einen umfassenden Bericht, der zeigt, dass KI-Prufungsaufsicht Schwarze Studierende, asiatische Studierende sowie Personen mit Behinderungen systematisch benachteiligt. Gesichtserkennungsalgorithmen versagen häufig bei dunklerer Hautfarbe und fordern Studierende auf, 'ihr Gesicht zu beleuchten', was als entwurdigend empfunden wird. Studierende mit Tremor oder Sehbehinderungen werden falschlich des Betrugs verdachtigt.",
+      "title": "EFF kritisiert Proctoring-Apps als unnötige Überwachung",
+      "description": "Die Electronic Frontier Foundation kritisiert am 19. August 2020 Proctoring-Apps als unnötige Überwachung von Studierenden: Die Programme griffen auf biometrische Daten wie das Gesicht zu, verletzten die Privatsphäre und belasteten bestimmte Gruppen besonders. Im September 2020 dokumentiert die EFF den wachsenden Widerstand von Studierenden gegen diese Apps.",
+      "title_de": "EFF kritisiert Proctoring-Apps als unnötige Überwachung",
+      "description_de": "Die Electronic Frontier Foundation kritisiert am 19. August 2020 Proctoring-Apps als unnötige Überwachung von Studierenden: Die Programme griffen auf biometrische Daten wie das Gesicht zu, verletzten die Privatsphäre und belasteten bestimmte Gruppen besonders. Im September 2020 dokumentiert die EFF den wachsenden Widerstand von Studierenden gegen diese Apps.",
+      "title_en": "EFF criticises proctoring apps as unnecessary surveillance",
+      "description_en": "On 19 August 2020 the Electronic Frontier Foundation criticises proctoring apps as unnecessary surveillance of students: the programs access biometric data such as the face, violate privacy and burden certain groups in particular. In September 2020 the EFF documents growing student pushback against these apps.",
       "sources": [
-        "https://www.eff.org/deeplinks/2020/08/proctoring-apps-subject-students-unnecessary-surveillance"
-      ],
-      "title_de": "EFF und Studierendenverbände dokumentieren Diskriminierung",
-      "description_de": "Die Electronic Frontier Foundation veröffentlicht einen umfassenden Bericht, der zeigt, dass KI-Prufungsaufsicht Schwarze Studierende, asiatische Studierende sowie Personen mit Behinderungen systematisch benachteiligt. Gesichtserkennungsalgorithmen versagen häufig bei dunklerer Hautfarbe und fordern Studierende auf, 'ihr Gesicht zu beleuchten', was als entwurdigend empfunden wird. Studierende mit Tremor oder Sehbehinderungen werden falschlich des Betrugs verdachtigt.",
-      "title_en": "EFF and student groups document discrimination",
-      "description_en": "The Electronic Frontier Foundation publishes a comprehensive report showing that AI proctoring systematically disadvantages Black students, Asian students and people with disabilities. Facial recognition algorithms frequently fail on darker skin and instruct students to 'light up their face,' which is experienced as degrading. Students with tremors or visual impairments are falsely flagged as cheating."
+        "https://www.eff.org/deeplinks/2020/08/proctoring-apps-subject-students-unnecessary-surveillance",
+        "https://www.eff.org/deeplinks/2020/09/students-are-pushing-back-against-proctoring-surveillance-apps"
+      ]
+    },
+    {
+      "date": "2020-10 bis 2021-02",
+      "phase": "event",
+      "title": "Kalifornische Online-Anwaltsprüfung: Massenmarkierung und Erkennungsprobleme mit ExamSoft",
+      "description": "Bei der kalifornischen Anwaltsprüfung im Oktober 2020 überwacht die Software von ExamSoft die Prüflinge per Webcam, unter anderem mit Gesichtsscans. Laut der State Bar wurden von 8.920 Online-Prüflingen 3.190 (rund 36 %) zur Überprüfung markiert. Laut Bloomberg Law berichteten mehrere Prüflinge mit nicht-weißer Hautfarbe, sie seien von der Prüfung ausgesperrt worden, weil die Technik sie nicht erkannte. Am 10. Februar 2021 warnt das Lawyers' Committee for Civil Rights Under Law die State Bar und ExamSoft vor einer rechtswidrigen Ungleichwirkung der Gesichtsscans und droht mit rechtlichen Schritten.",
+      "title_de": "Kalifornische Online-Anwaltsprüfung: Massenmarkierung und Erkennungsprobleme mit ExamSoft",
+      "description_de": "Bei der kalifornischen Anwaltsprüfung im Oktober 2020 überwacht die Software von ExamSoft die Prüflinge per Webcam, unter anderem mit Gesichtsscans. Laut der State Bar wurden von 8.920 Online-Prüflingen 3.190 (rund 36 %) zur Überprüfung markiert. Laut Bloomberg Law berichteten mehrere Prüflinge mit nicht-weißer Hautfarbe, sie seien von der Prüfung ausgesperrt worden, weil die Technik sie nicht erkannte. Am 10. Februar 2021 warnt das Lawyers' Committee for Civil Rights Under Law die State Bar und ExamSoft vor einer rechtswidrigen Ungleichwirkung der Gesichtsscans und droht mit rechtlichen Schritten.",
+      "title_en": "California online bar exam: mass flagging and recognition problems with ExamSoft",
+      "description_en": "At the California bar exam in October 2020, ExamSoft's software monitors test takers via webcam, including facial scans. According to the State Bar, 3,190 (about 36%) of 8,920 online test takers were flagged for review. According to Bloomberg Law, several test takers of color reported being shut out of the exam because the technology did not recognise them. On 10 February 2021 the Lawyers' Committee for Civil Rights Under Law warns the State Bar and ExamSoft of unlawful disparate impact from the facial scans and threatens legal action.",
+      "sources": [
+        "https://abajournal.com/web/article/thousands-of-california-bar-exam-takers-have-video-files-flagged-for-review",
+        "https://news.bloomberglaw.com/litigation/civil-rights-group-threatens-suit-over-bar-exam-facial-scans"
+      ]
+    },
+    {
+      "date": "2020-12",
+      "phase": "doctrine",
+      "title": "US-Senatoren fordern von Proctoring-Anbietern Auskunft zu Verzerrungen",
+      "description": "Im Dezember 2020 wenden sich sechs US-Senatoren unter Führung von Richard Blumenthal an ExamSoft, Proctorio und ProctorU und verlangen Auskunft zu Datenschutz und möglichen Verzerrungen. Sie verweisen auf Berichte, wonach Gesichtserkennung Studierende mit nicht-weißer Hautfarbe und Studierende in religiöser Kleidung teils nicht erkannte und Studierende mit Behinderungen wegen unwillkürlicher Bewegungen als verdächtig markiert wurden. Die Unternehmen wiesen Diskriminierungsvorwürfe in ihren Antworten (17. Dezember 2020 bzw. 7. Januar 2021) zurück.",
+      "title_de": "US-Senatoren fordern von Proctoring-Anbietern Auskunft zu Verzerrungen",
+      "description_de": "Im Dezember 2020 wenden sich sechs US-Senatoren unter Führung von Richard Blumenthal an ExamSoft, Proctorio und ProctorU und verlangen Auskunft zu Datenschutz und möglichen Verzerrungen. Sie verweisen auf Berichte, wonach Gesichtserkennung Studierende mit nicht-weißer Hautfarbe und Studierende in religiöser Kleidung teils nicht erkannte und Studierende mit Behinderungen wegen unwillkürlicher Bewegungen als verdächtig markiert wurden. Die Unternehmen wiesen Diskriminierungsvorwürfe in ihren Antworten (17. Dezember 2020 bzw. 7. Januar 2021) zurück.",
+      "title_en": "US senators demand answers from proctoring vendors on bias",
+      "description_en": "In December 2020 six US senators led by Richard Blumenthal write to ExamSoft, Proctorio and ProctorU and demand answers on privacy and possible bias. They cite reports that facial recognition in some cases failed to recognise students of color and students wearing religious garb, and that students with disabilities were flagged as suspicious for involuntary movements. In their replies (17 December 2020 and 7 January 2021) the companies rejected claims of discrimination.",
+      "sources": [
+        "https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-leads-call-for-virtual-exam-software-companies-to-improve-equity-accessibility-and-privacy-for-students-amid-troubling-reports",
+        "https://www.theeduledger.com/covid-19/article/15108361/senators-scrutinize-virtual-proctoring-companies-after-students-report-equity-concerns"
+      ]
     },
     {
       "date": "2021-04",
       "phase": "event",
-      "title": "Klagen und verbreitete Berichte über Betrugsfalschvorwurfe",
-      "description": "Mehrere Studierende und Advocacy-Gruppen reichen Klagen gegen Universitaten und Proctoring-Unternehmen ein. Berichte hauften sich, dass Schwarze Studierende aufgefordert wurden, in anderen Raumen zu prufungen, ihre Wohnungen zu durchsuchen oder sich mehrfach zu verifizieren. Einige Studierende verloren Studienpunkte aufgrund fehlerhafter Betrugsalarme. Die NAACP und das ACLU unterstützen Betroffene.",
-      "sources": [],
-      "title_de": "Klagen und verbreitete Berichte über Betrugsfalschvorwurfe",
-      "description_de": "Mehrere Studierende und Advocacy-Gruppen reichen Klagen gegen Universitaten und Proctoring-Unternehmen ein. Berichte hauften sich, dass Schwarze Studierende aufgefordert wurden, in anderen Raumen zu prufungen, ihre Wohnungen zu durchsuchen oder sich mehrfach zu verifizieren. Einige Studierende verloren Studienpunkte aufgrund fehlerhafter Betrugsalarme. Die NAACP und das ACLU unterstützen Betroffene.",
-      "title_en": "Lawsuits and widespread reports of false cheating accusations",
-      "description_en": "Several students and advocacy groups file suit against universities and proctoring companies. Reports accumulate of Black students being told to take exams in different rooms, to search their homes, or to verify themselves multiple times. Some students lose course credits because of erroneous cheating alerts. The NAACP and ACLU support affected students."
+      "title": "Analyse: Von Proctorio genutzte Gesichtsdetektion findet in 57 % der Bilder Schwarzer Menschen kein Gesicht",
+      "description": "Im April 2021 berichtet Vice (Motherboard) über eine unabhängige Analyse (Blogbeiträge, nicht begutachtet): Die Gesichtsdetektion in Proctorios Browsererweiterung entspricht den Modellen der Open-Source-Bibliothek OpenCV. Bei einem Test mit knapp 11.000 Bildern des FairFace-Datensatzes erkannten diese Modelle in 57 % der als Schwarz gelabelten Bilder kein Gesicht. Proctorio erklärte, öffentliche Berichte beschrieben die Technik falsch und sie nutze Detektion statt Erkennung.",
+      "title_de": "Analyse: Von Proctorio genutzte Gesichtsdetektion findet in 57 % der Bilder Schwarzer Menschen kein Gesicht",
+      "description_de": "Im April 2021 berichtet Vice (Motherboard) über eine unabhängige Analyse (Blogbeiträge, nicht begutachtet): Die Gesichtsdetektion in Proctorios Browsererweiterung entspricht den Modellen der Open-Source-Bibliothek OpenCV. Bei einem Test mit knapp 11.000 Bildern des FairFace-Datensatzes erkannten diese Modelle in 57 % der als Schwarz gelabelten Bilder kein Gesicht. Proctorio erklärte, öffentliche Berichte beschrieben die Technik falsch und sie nutze Detektion statt Erkennung.",
+      "title_en": "Analysis: face detection used by Proctorio finds no face in 57% of images of Black people",
+      "description_en": "In April 2021 Vice (Motherboard) reports on an independent analysis (blog posts, not peer reviewed): the face detection in Proctorio's browser extension matches models from the open-source library OpenCV. In a test with nearly 11,000 images from the FairFace dataset, these models failed to find a face in 57% of the images labelled Black. Proctorio said public reports misdescribe its technology and that it uses detection rather than recognition.",
+      "sources": [
+        "https://www.vice.com/en/article/proctorio-is-using-racist-algorithms-to-detect-faces/"
+      ]
     },
     {
-      "date": "2022-01",
+      "date": "2022-08-22",
       "phase": "consequences",
-      "title": "Teilweise Abkehr von KI-Proctoring an US-Universitaten",
-      "description": "Infolge des öffentlichen Drucks, der Klagen und legislativer Initiativen beginnen mehrere US-Universitaten, KI-Prufungsaufsicht einzuschranken oder aufzugeben. Einige Bundesstaaten erwaGen Gesetzgebung zur Regulierung von Proctoring-Software. Proctorio ist mit Datenschutzklagen und parlamentarischer Kritik konfrontiert. Dennoch nutzen Hunderte Hochschulen weiterhin diese Systeme.",
+      "title": "Bundesgericht in Ohio: obligatorischer Raumscan vor Fernprüfung verstößt gegen die Verfassung",
+      "description": "Am 22. August 2022 entscheidet ein Bundesbezirksgericht in Ohio (Richter J. Philip Calabrese) im Verfahren Ogletree v. Cleveland State University, dass der verlangte Raumscan vor einer Fernprüfung an einer öffentlichen Hochschule eine unzumutbare Durchsuchung nach dem Vierten Verfassungszusatz ist; eingesetzt wurde dort die Proctoring-Software Honorlock. Die im Dezember 2022 erlassene Unterlassungsanordnung galt nur für den Kläger; im Berufungsverfahren hob das Bundesberufungsgericht (Sixth Circuit) das Urteil nach Angaben von Honorlock im Dezember 2023 auf und verwies die Sache mit der Anweisung zurück, die Klage abzuweisen.",
+      "title_de": "Bundesgericht in Ohio: obligatorischer Raumscan vor Fernprüfung verstößt gegen die Verfassung",
+      "description_de": "Am 22. August 2022 entscheidet ein Bundesbezirksgericht in Ohio (Richter J. Philip Calabrese) im Verfahren Ogletree v. Cleveland State University, dass der verlangte Raumscan vor einer Fernprüfung an einer öffentlichen Hochschule eine unzumutbare Durchsuchung nach dem Vierten Verfassungszusatz ist; eingesetzt wurde dort die Proctoring-Software Honorlock. Die im Dezember 2022 erlassene Unterlassungsanordnung galt nur für den Kläger; im Berufungsverfahren hob das Bundesberufungsgericht (Sixth Circuit) das Urteil nach Angaben von Honorlock im Dezember 2023 auf und verwies die Sache mit der Anweisung zurück, die Klage abzuweisen.",
+      "title_en": "Federal court in Ohio: mandatory room scan before remote exam violates the Constitution",
+      "description_en": "On 22 August 2022 a federal district court in Ohio (Judge J. Philip Calabrese) rules in Ogletree v. Cleveland State University that the required room scan before a remote exam at a public university is an unreasonable search under the Fourth Amendment; the proctoring software used there was Honorlock. The injunction issued in December 2022 applied only to the plaintiff; on appeal, according to Honorlock, the Sixth Circuit vacated the judgment in December 2023 and remanded with instructions to dismiss the complaint.",
       "sources": [
-        "https://www.eff.org/deeplinks/2020/08/proctoring-apps-subject-students-unnecessary-surveillance"
-      ],
-      "title_de": "Teilweise Abkehr von KI-Proctoring an US-Universitaten",
-      "description_de": "Infolge des öffentlichen Drucks, der Klagen und legislativer Initiativen beginnen mehrere US-Universitaten, KI-Prufungsaufsicht einzuschranken oder aufzugeben. Einige Bundesstaaten erwaGen Gesetzgebung zur Regulierung von Proctoring-Software. Proctorio ist mit Datenschutzklagen und parlamentarischer Kritik konfrontiert. Dennoch nutzen Hunderte Hochschulen weiterhin diese Systeme.",
-      "title_en": "Partial retreat from AI proctoring at U.S. universities",
-      "description_en": "As a result of public pressure, lawsuits and legislative initiatives, several U.S. universities begin to restrict or abandon AI proctoring. Some states consider legislation to regulate proctoring software. Proctorio faces privacy lawsuits and parliamentary criticism. Nevertheless, hundreds of colleges continue to use these systems."
+        "https://www.npr.org/2022/08/25/1119337956/test-proctoring-room-scans-unconstitutional-cleveland-state-university",
+        "https://honorlock.com/room-scans-faq/"
+      ]
     }
   ],
   "asm:sources": [
@@ -130,6 +163,16 @@
       "asm:linkHealth": "ok",
       "title_de": "Proctoring Apps Subject Students to Unnecessary Surveillance",
       "title_en": "Proctoring Apps Subject Students to Unnecessary Surveillance"
+    },
+    {
+      "url": "https://www.vice.com/en/article/proctorio-is-using-racist-algorithms-to-detect-faces/",
+      "title": "Proctorio Is Using Racist Algorithms to Detect Faces",
+      "publisher": "Vice (Motherboard)",
+      "date": "2021-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Proctorio Is Using Racist Algorithms to Detect Faces",
+      "title_en": "Proctorio Is Using Racist Algorithms to Detect Faces"
     }
   ],
   "asm:metadata": {
@@ -137,10 +180,11 @@
     "lastUpdated": "2026-04-03",
     "author": "AIStrikeMap",
     "aiGenerated": false,
-    "humanVerified": true
+    "humanVerified": true,
+    "asm:correctionNote": "Title corrected 2026-10-08: the original stated discrimination as established fact although the evidence consists of an independent face-detection analysis, student and test-taker reports and a Senate inquiry. Slug unchanged for permalink stability."
   },
-  "name_de": "USA: KI-Prufungsaufsicht diskriminiert Studierende mit dunkler Hautfarbe und Behinderungen",
-  "description_de": "Im Zuge der COVID-19-Pandemie setzten US-amerikanische Hochschulen in großem Umfang KI-gestützte Prufungsaufsichtssoftware wie Proctorio und ExamSoft ein. Diese Systeme zeigten erhebliche Fehler bei der Erkennung von Gesichtern dunklerer Hautfarbe sowie bei Studierenden mit Behinderungen. Falsch-positive Betrugsalarme betrafen überproportional Schwarze Studierende, Asiaten und Studierende mit motorischen Einschrankungen oder Sehbehinderungen. Die Systeme verletzten zudem datenschutzrechtliche Grundsatze durch umfangreiche Überwachung im privaten Wohnraum der Studierenden.",
+  "name_de": "USA: KI-Prüfungsaufsicht - Berichte über schlechtere Gesichtserkennung bei dunkler Haut und Fehlalarme bei Behinderungen",
+  "description_de": "Im Zuge der COVID-19-Pandemie setzten US-amerikanische Hochschulen und Prüfungsstellen in großem Umfang Fernüberwachungssoftware wie Proctorio und ExamSoft ein. Berichte und Analysen deuten auf Probleme bei der Erkennung von Gesichtern dunklerer Haut hin: Eine unabhängige Analyse (Blogbeiträge, nicht begutachtet) fand, dass die in Proctorios Browsererweiterung verwendeten Gesichtsdetektionsmodelle in einem Test mit knapp 11.000 Bildern in 57 % der als Schwarz gelabelten Bilder kein Gesicht erkannten; Prüflinge mit nicht-weißer Hautfarbe berichteten bei der kalifornischen Online-Anwaltsprüfung, von der ExamSoft-Technik nicht erkannt worden zu sein. US-Senatoren verwiesen im Dezember 2020 zudem auf Berichte, wonach Studierende mit Behinderungen wegen unwillkürlicher Bewegungen als verdächtig markiert wurden. Die Hersteller wiesen Diskriminierungsvorwürfe zurück. Ein Bundesgericht in Ohio urteilte 2022, dass ein verlangter Raumscan an einer öffentlichen Hochschule gegen den Vierten Verfassungszusatz verstößt; nach Angaben des Anbieters Honorlock wurde das Urteil im Dezember 2023 im Berufungsverfahren aufgehoben.",
   "asm:affectedRights_de": [
     "Recht auf Bildung",
     "Recht auf Gleichbehandlung",
@@ -148,8 +192,8 @@
     "Recht auf Privatsphäre",
     "Rechte von Menschen mit Behinderungen"
   ],
-  "name_en": "USA: AI exam proctoring discriminates against students of color and students with disabilities",
-  "description_en": "During the COVID-19 pandemic, U.S. universities deployed AI-driven exam proctoring software such as Proctorio and ExamSoft at scale. These systems exhibited significant errors recognizing darker-skinned faces and students with disabilities. False-positive cheating alerts disproportionately affected Black students, Asian students and students with motor or visual impairments. The systems also violated data protection principles through extensive surveillance inside students' private homes.",
+  "name_en": "USA: AI exam proctoring - reports of poorer face detection for darker skin and false flags for students with disabilities",
+  "description_en": "During the COVID-19 pandemic, U.S. universities and examination bodies deployed remote proctoring software such as Proctorio and ExamSoft at scale. Reports and analyses point to problems recognising darker-skinned faces: an independent analysis (blog posts, not peer reviewed) found that the face detection models used in Proctorio's browser extension failed to find a face in 57% of the images labelled Black in a test set of nearly 11,000 images; test takers of color reported at the California online bar exam that ExamSoft's technology did not recognise them. In December 2020 US senators also cited reports that students with disabilities were flagged as suspicious for involuntary movements. The vendors rejected claims of discrimination. In 2022 a federal court in Ohio ruled that a required room scan at a public university violates the Fourth Amendment; according to the vendor Honorlock, the judgment was vacated on appeal in December 2023.",
   "asm:affectedRights_en": [
     "right to education",
     "equal treatment",
