@@ -691,7 +691,7 @@ Merge von PR #93, Vorschlag zur doppelten Nummer "#13".
 
 ### Nachtrag 7d (2026-10-22): Nacharbeit nach dem Merge abgeschlossen
 
-Die am 2026-10-09 als ungeprüfter Patch gesicherte Nacharbeit ist erledigt (Branch neu von main ):
+Die am 2026-10-09 als ungeprüfter Patch gesicherte Nacharbeit ist erledigt (Branch neu von main `4ab9e54`):
 
 - **24 Timelines an Schema v1.1 angepasst** (Commit `0e40521`): 16 doctrine-Einträge neu recherchiert (Rechtsgrundlage, Weisung oder Geschäftsmodell vor dem Vorfall, mit Quelle), 4 Einträge zu doctrine umgetaggt, Verschränkungen durch Umtaggen in event bzw. consequences aufgelöst.
 - **35 unbelegte Einträge aus der main-Fassung belegt, 10 beim Merge übertragene Quellen geprüft, toter SumOfUs-Link ersetzt** (Commit `5989e7e`). Wo die Quelle ein Detail nicht trug, wurde minimal umformuliert (u. a. Ukraine-Clearview, Rumänien-Georgescu, Geofeedia, Myanmar-Facebook).
