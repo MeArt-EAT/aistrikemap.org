@@ -19,6 +19,7 @@ const DATA = path.join(__dirname, '..', 'data');
 
 // Detail-only fields the map view never reads — stripped from the lite bundle.
 const HEAVY_FIELDS = ['asm:reverseTimeline', 'asm:sources', 'asm:metadata'];
+const LEGACY_DUPLICATES = ['name', 'description', 'asm:affectedRights'];
 
 function readDir(dirName) {
   const dir = path.join(DATA, dirName);
@@ -39,6 +40,12 @@ if (incidents) {
   const lite = incidents.map(function (inc) {
     const copy = Object.assign({}, inc);
     HEAVY_FIELDS.forEach(function (k) { delete copy[k]; });
+    // Legacy unsuffixed display fields duplicate the German ones in every record
+    // (about 2 MB); the frontend reads them via I18n.localized(), which falls back
+    // to *_de. Dropped only when identical, so no information is lost.
+    LEGACY_DUPLICATES.forEach(function (k) {
+      if (JSON.stringify(copy[k]) === JSON.stringify(copy[k + '_de'])) delete copy[k];
+    });
     return copy;
   });
   write(lite, 'all-incidents-lite.json');

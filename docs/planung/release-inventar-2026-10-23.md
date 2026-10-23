@@ -123,6 +123,7 @@ Erledigt (Details: `docs/planung/übergabe-2026-10-23-redaktion-typreform-scope.
 | S10 | ✔ Button „Weltweit (n)" mit Liste, Zähler „davon n länderübergreifend". |
 | S13 | ✔ README neu (Umlaute, aktuelle Features, AIAAIC-Namensnennung, ehrliche KI-Kennzeichnung). |
 | S14 | ✔ SRI für Chart.js und Leaflet.markercluster (JS + CSS). |
+| S15 | ✔ Karten-Bundle 8,3 → 6,3 MB: doppelte Altfelder (name, description, asm:affectedRights = DE-Fassung) im Lite-Bundle weggelassen. Weitere ~2,8 MB wären möglich, wenn die Beschreibungen nicht mehr im Bundle stehen – dann findet die Suche aber keine Beschreibungswörter mehr (Eigner-Entscheidung). |
 | S18 | ✔ teilweise: CLAUDE.md (CSS-Dateien, Index, Kacheln, Sitemap, Aufnahmeregel, Typen). |
 
 **Neu entdeckt:** CARTO-Kacheln trugen seit Oktober 2026 auf der Live-Seite den Stempel „API KEY REQUIRED" → auf Esri umgestellt und deployt.
