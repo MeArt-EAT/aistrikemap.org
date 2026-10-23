@@ -8,9 +8,9 @@
   "name": "USA: Führende KI-Modelle geben falsche Auskünfte zu Wahlfragen",
   "name_de": "USA: Führende KI-Modelle geben falsche Auskünfte zu Wahlfragen",
   "name_en": "USA: Leading AI models give false answers to election questions",
-  "description": "Die Nonprofit-Redaktion Proof News prüfte 2024 gemeinsam mit der Forscherin Alondra Nelson, wie fünf führende KI-Modelle (Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2, Mistral Mixtral) einfache Fragen zur US-Wahl 2024 beantworteten. Mehr als 40 Wahlleiter:innen und KI-Fachleute bewerteten die Antworten; rund die Hälfte galt als ungenau. Llama 2 erfand etwa einen nicht existierenden Dienst \"Vote by Text\" samt Anleitung zur Stimmabgabe per SMS.",
-  "description_de": "Die Nonprofit-Redaktion Proof News prüfte 2024 gemeinsam mit der Forscherin Alondra Nelson, wie fünf führende KI-Modelle (Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2, Mistral Mixtral) einfache Fragen zur US-Wahl 2024 beantworteten. Mehr als 40 Wahlleiter:innen und KI-Fachleute bewerteten die Antworten; rund die Hälfte galt als ungenau. Llama 2 erfand etwa einen nicht existierenden Dienst \"Vote by Text\" samt Anleitung zur Stimmabgabe per SMS.",
-  "description_en": "In 2024 the nonprofit newsroom Proof News, together with researcher Alondra Nelson, tested how five leading AI models (Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2, Mistral Mixtral) answered basic questions about the 2024 US election. More than 40 election officials and AI experts rated the responses; about half were judged inaccurate. Llama 2, for example, invented a non-existent 'Vote by Text' service with instructions for voting by SMS.",
+  "description": "Die Nonprofit-Redaktion Proof News prüfte im Januar 2024 gemeinsam mit der Forscherin Alondra Nelson (Institute for Advanced Study), wie fünf führende KI-Modelle (Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2, Mistral Mixtral) 26 typische Fragen zur US-Wahl 2024 beantworteten. Mehr als 40 Wahlleiter:innen und KI-Fachleute bewerteten 51 Prozent der 130 Antworten als ungenau und rund 40 Prozent als schädlich. GPT-4 schnitt am besten ab; bei Gemini, Llama 2 und Mixtral waren jeweils über 60 Prozent der Antworten ungenau. Llama 2 erfand etwa einen nicht existierenden Dienst \"Vote by Text\" samt Anleitung zur Stimmabgabe per SMS.",
+  "description_de": "Die Nonprofit-Redaktion Proof News prüfte im Januar 2024 gemeinsam mit der Forscherin Alondra Nelson (Institute for Advanced Study), wie fünf führende KI-Modelle (Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2, Mistral Mixtral) 26 typische Fragen zur US-Wahl 2024 beantworteten. Mehr als 40 Wahlleiter:innen und KI-Fachleute bewerteten 51 Prozent der 130 Antworten als ungenau und rund 40 Prozent als schädlich. GPT-4 schnitt am besten ab; bei Gemini, Llama 2 und Mixtral waren jeweils über 60 Prozent der Antworten ungenau. Llama 2 erfand etwa einen nicht existierenden Dienst \"Vote by Text\" samt Anleitung zur Stimmabgabe per SMS.",
+  "description_en": "In January 2024 the nonprofit newsroom Proof News, together with researcher Alondra Nelson (Institute for Advanced Study), tested how five leading AI models (Anthropic Claude, Google Gemini, OpenAI GPT-4, Meta Llama 2, Mistral Mixtral) answered 26 typical questions about the 2024 US election. More than 40 election officials and AI experts rated 51 percent of the 130 responses as inaccurate and roughly 40 percent as harmful. GPT-4 performed best; for Gemini, Llama 2 and Mixtral, more than 60 percent of the answers were inaccurate each. Llama 2, for example, invented a non-existent 'Vote by Text' service with instructions for voting by SMS.",
   "startDate": "2024-02",
   "location": {
     "@type": "Place",
@@ -28,7 +28,8 @@
     "name_en": "USA"
   },
   "asm:incidentType": [
-    "data-misuse"
+    "malfunction",
+    "deepfakes"
   ],
   "asm:affectedRights": [
     "Recht auf freie Wahlen",
@@ -53,24 +54,63 @@
   ],
   "asm:actors": [
     {
-      "name": "Google; Anthropic; Meta; Mistral; OpenAI",
+      "name": "Google",
       "type": "organization",
       "asm:systems": [
-        "Gemini",
-        "Claude",
-        "Llama 2",
-        "Mixtral",
-        "GPT-4"
+        "Gemini"
       ],
-      "name_de": "Google; Anthropic; Meta; Mistral; OpenAI",
-      "name_en": "Google; Anthropic; Meta; Mistral; OpenAI"
+      "name_de": "Google",
+      "name_en": "Google"
     },
     {
-      "name": "Proof News / Alondra Nelson",
+      "name": "Anthropic",
+      "type": "organization",
+      "asm:systems": [
+        "Claude"
+      ],
+      "name_de": "Anthropic",
+      "name_en": "Anthropic"
+    },
+    {
+      "name": "Meta Platforms",
+      "type": "organization",
+      "asm:systems": [
+        "Llama 2"
+      ],
+      "name_de": "Meta Platforms",
+      "name_en": "Meta Platforms"
+    },
+    {
+      "name": "Mistral",
+      "type": "organization",
+      "asm:systems": [
+        "Mixtral"
+      ],
+      "name_de": "Mistral",
+      "name_en": "Mistral"
+    },
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "GPT-4"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    },
+    {
+      "name": "Proof News",
       "type": "organization",
       "asm:systems": [],
-      "name_de": "Proof News / Alondra Nelson",
-      "name_en": "Proof News / Alondra Nelson"
+      "name_de": "Proof News",
+      "name_en": "Proof News"
+    },
+    {
+      "name": "Institute for Advanced Study",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Institute for Advanced Study",
+      "name_en": "Institute for Advanced Study"
     }
   ],
   "asm:severity": 3,
@@ -151,15 +191,39 @@
       "asm:linkHealth": "unverified",
       "title_de": "AI LLM and chatbots give false elections information: study",
       "title_en": "AI LLM and chatbots give false elections information: study"
+    },
+    {
+      "url": "https://cbsnews.com/sanfrancisco/news/ai-chatbots-inaccurate-election-information-proof-news",
+      "title": "AI chatbots are serving up wildly inaccurate election information, new study says",
+      "publisher": "CBS News",
+      "date": "2024-02-27",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "AI chatbots are serving up wildly inaccurate election information, new study says",
+      "title_en": "AI chatbots are serving up wildly inaccurate election information, new study says"
+    },
+    {
+      "url": "https://www.ias.edu/news/ai-chatbots-found-inaccurate-answering-voter-queries",
+      "title": "AI Chatbots Found Inaccurate in Answering Voter Queries",
+      "publisher": "Institute for Advanced Study",
+      "date": "2024-02-27",
+      "type": "press-release",
+      "asm:linkHealth": "unverified",
+      "title_de": "AI Chatbots Found Inaccurate in Answering Voter Queries",
+      "title_en": "AI Chatbots Found Inaccurate in Answering Voter Queries"
     }
   ],
   "asm:metadata": {
     "created": "2026-06-03",
-    "lastUpdated": "2026-06-03",
+    "lastUpdated": "2026-10-23",
     "author": "AIStrikeMap (promoted from candidate)",
     "aiGenerated": true,
     "humanVerified": false,
     "promotedFromCandidateId": "us-ai-models-found-to-generate-inaccurate-and-untrue-election-2024-aiaaic1364",
-    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03",
+    "mergedFrom": [
+      "usa-ki-modelle-liefern-bei-us-wahlfragen-zu-rund-27-prozent-falsche-informationen-2024"
+    ],
+    "mergeNote": "Am 2026-10-23 aus der Dublette übernommen: genaue Testzahlen in description_de/_en (Januar 2024, 26 Fragen, 130 Antworten, 51 Prozent ungenau, rund 40 Prozent schädlich, GPT-4 am besten, Gemini/Llama 2/Mixtral jeweils über 60 Prozent ungenau), Einzelakteure mit System statt Sammelakteur plus Proof News und Institute for Advanced Study, Quellen CBS News und IAS-Pressemitteilung; nicht übernommen: AI-Elections-Accord-Eintrag und Typ political-pressure."
   }
 }

@@ -37,6 +37,7 @@
 | `date_completed` | string | Datum des Programm-Abschlusses (falls bekannt). |
 | `headcount_initial` | number | Ursprüngliche Ankündigungs-Zahl, falls später ausgeweitet. |
 | `headcount_germany` | number | Anteil Deutschland (für DE-spezifische Aufschlüsselung). |
+| `headcount_basis` | string | `"reported"` (Default: gemeldete Stellen) oder `"workload-equivalent"` (Firmenangabe wie "der Bot leistet die Arbeit von N Kräften", keine gemeldeten Entlassungen). `workload-equivalent` bleibt gelistet, zählt aber **nicht** im Counter. |
 | `net_workforce_change` | string | `"reduction"`, `"stable"`, `"growth"` — Gesamt-Headcount-Effekt nach Programm. Macht die Asymmetrie zwischen abgebauten und neu geschaffenen Stellen sichtbar (z. B. SAP: 10.000 abgebaut, aber Gesamt stable durch KI-Neueinstellungen). |
 | `context_de` / `context_en` | string | Zusätzlicher Kontext, der das Zitat einordnet. |
 | `tags` | string[] | Freie Tags für spätere Filter/Facetten (z. B. `"customer-service"`, `"back-office"`, `"white-collar"`, `"reversal"`, `"disputed-attribution"`). Vokabular-Empfehlung siehe unten. |
@@ -53,7 +54,7 @@ Die Stärke entscheidet, ob ein Case in den Aggregat-Counter "konkret realisiert
 
 | Stärke | Kriterium | Beispiel | Counter? |
 |---|---|---|---|
-| **5** | KI als **Hauptgrund** offiziell genannt. CEO/Pressemitteilung sagt: "Wir ersetzen X durch KI." | Klarna 2024 (700 Customer-Service durch Chatbot), Onclusive 2024 (217 Stellen durch KI ersetzt) | ✅ ja |
+| **5** | KI als **Hauptgrund** offiziell genannt. CEO/Pressemitteilung sagt: "Wir ersetzen X durch KI." | Onclusive 2024 (217 Stellen durch KI ersetzt); Klarna 2024 (Chatbot leistet laut Firma die Arbeit von 700 Kräften: Stärke 5, aber `headcount_basis: workload-equivalent`, daher nicht im Counter) | ✅ ja |
 | **4** | KI als **einer von mehreren** Gründen offiziell/in Wirtschaftspresse genannt. Konzernumbau "macht Platz für KI", "fokussiert auf KI". | SAP 2024 (10.000 Stellen, "Konzernumbau für KI-Geschäft", CEO-Statements zu KI als Treiber) | ✅ ja |
 | **3** | Restrukturierung in stark KI-betroffener Branche **ohne expliziten KI-Grund**, aber Zeitpunkt + Branche + Tätigkeitsprofil legen KI als Faktor nahe. | Tech-Layoffs 2023-2024 ohne expliziten KI-Grund, Customer-Service-Reduktion ohne KI-Erwähnung | ❌ nein, aber gelistet |
 | **2** | Allgemeine Restrukturierung in KI-Adoptions-Branche. | Konsolidierungs-Wellen ohne Tätigkeits-Spezifität | ❌ nein, aber gelistet |
