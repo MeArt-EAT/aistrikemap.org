@@ -40,6 +40,7 @@ const RULES = `
 - Severity-Skala (candidate_severity 1-5) und Verification-Skala (1-4) stehen in ${PROJECT_DIR}\\data\\incident-candidates\\_enrichment-briefing.md - lies den Abschnitt einmal zu Beginn.
 - Du schreibst KEINE Dateien. Die Hauptsession wendet deine Verdikte und Patches an. Du hast Read/Grep/Glob/WebSearch, kein Bash, kein WebFetch, kein Git.
 - Keine Fakten erfinden. Patch-Felder nur setzen, wenn du sie belegen kannst; sonst weglassen.
+- ALLES, was beim Anwenden am Kandidaten geaendert werden soll, gehoert in den Patch, nicht in notes - notes werden nicht ausgefuehrt: Quellen, die den Fall nicht tragen (anderes Ereignis, anderer Akteur, nicht in Suchergebnissen auffindbar, rekonstruierte URL), in remove_sources (exakte URL); falsche oder fehlende Akteure als vollstaendige Ersatzliste in actors [{name, type (organization|government|company|individual|ngo|regulator|judiciary|military|international-organization), systems}]; mehrlaendrige Faelle ohne festen Ort als location {country: 'GLOBAL', name_de: 'Global', name_en: 'Global'} (Koordinaten werden dann entfernt).
 `.trim();
 
 function reviewPrompt(batch) {
@@ -59,7 +60,7 @@ ${RULES}
 4. Verdikt + Patch + Begruendung.
 
 ## Output (strukturiert)
-websearch_used; je Kandidat: candidate_id, verdict (verified | duplicate | rejected | needs-review), duplicate_of (bei duplicate), reason (2-3 Saetze mit Belegen), confidence (hoch | mittel | niedrig), patch (nur geaenderte Felder: startDate, name_de, name_en, description_de, description_en, incidentType, candidate_severity, candidate_verification, location {name_de, name_en, country, lat, lng}, add_sources [{url, title, publisher, date, type}]), notes.`;
+websearch_used; je Kandidat: candidate_id, verdict (verified | duplicate | rejected | needs-review), duplicate_of (bei duplicate), reason (2-3 Saetze mit Belegen), confidence (hoch | mittel | niedrig), patch (nur geaenderte Felder: startDate, name_de, name_en, description_de, description_en, incidentType, candidate_severity, candidate_verification, location {name_de, name_en, country, lat, lng}, actors [{name, type, systems}], add_sources [{url, title, publisher, date, type}], remove_sources [url]), notes.`;
 }
 
 function verifyPrompt(batch, reviewRes) {
@@ -87,7 +88,7 @@ ${blocks.join('\n\n---\n\n')}
 ${RULES}
 
 ## Output (strukturiert)
-websearch_used; je Kandidat: candidate_id, verdict (confirm | overturn-duplicate | overturn-reject | needs-review), duplicate_of, reason (konkret, mit Beleg), patch (weitere Korrekturen, gleiche Felder wie beim Review), notes.`;
+websearch_used; je Kandidat: candidate_id, verdict (confirm | overturn-duplicate | overturn-reject | needs-review), duplicate_of, reason (konkret, mit Beleg), patch (weitere Korrekturen, gleiche Felder wie beim Review inkl. actors und remove_sources - auch Quellen aus dem Review-Patch, die du nicht bestaetigen kannst, gehoeren in remove_sources), notes.`;
 }
 
 const PATCH_SCHEMA = {
@@ -99,6 +100,8 @@ const PATCH_SCHEMA = {
     candidate_severity: { type: 'integer' }, candidate_verification: { type: 'integer' },
     location: { type: 'object', properties: { name_de: { type: 'string' }, name_en: { type: 'string' }, country: { type: 'string' }, lat: { type: 'number' }, lng: { type: 'number' } } },
     add_sources: { type: 'array', items: { type: 'object', properties: { url: { type: 'string' }, title: { type: 'string' }, publisher: { type: 'string' }, date: { type: 'string' }, type: { type: 'string' } }, required: ['url'] } },
+    remove_sources: { type: 'array', items: { type: 'string' } },
+    actors: { type: 'array', items: { type: 'object', properties: { name: { type: 'string' }, type: { type: 'string' }, systems: { type: 'array', items: { type: 'string' } } }, required: ['name'] } },
   },
 };
 

@@ -1,0 +1,46 @@
+{
+  "vn-two-vietnamese-women-are-nearly-killed-after-following-2025-aiaaic2162": {
+    "remove_sources": ["https://impakter.com/harmful-ai-health-advice/"],
+    "note": "Impakter-Quelle entfernt (erwaehnt den Fall nicht; Review + Verify)"
+  },
+  "it-google-ai-overviews-wrongly-reports-italian-doctors-2025-aiaaic2066": {
+    "remove_sources": ["https://www.mediapost.com/publications/article/410007/google-faces-italian-probe-over-its-ai-overviews"],
+    "note": "MediaPost-Quelle entfernt (betrifft FIEG-Beschwerde, nicht Zorzi; Verify)"
+  },
+  "us-grok-posts-incorrect-information-about-trump-assassination-2024-aiaaic1623": {
+    "remove_sources": ["https://oversight.house.gov/release/comer-seeks-information-from-google-and-meta-on-potential-censorship-of-president-trump-assassination-attempt/", "https://en.wikipedia.org/wiki/Attempted_assassination_of_Donald_Trump_in_Pennsylvania"],
+    "note": "House-Oversight- und Wikipedia-Quelle entfernt (betreffen Meta/Google, nicht Grok; Review + Verify)"
+  },
+  "us-tiktok-exposes-new-users-to-russia-ukraine-war-2022-aiaaic0849": {
+    "remove_sources": ["https://www.theguardian.com/technology/2022/mar/21/tiktok-ukraine-russia-disinformation-misinformation", "https://dc.fortune.com/2022/03/21/tiktok-misinformation-ukraine"],
+    "location": { "country": "GLOBAL", "name_de": "Global", "name_en": "Global" },
+    "note": "rekonstruierte Guardian-URL und Fortune-Subdomain entfernt, Mehrlaender-Studie als GLOBAL ohne Koordinaten (Verify)"
+  },
+  "ua-ai-powered-russian-influence-campaign-spreads-anti-ukraine-2022-aiaaic0833": {
+    "remove_sources": ["https://www.propublica.org/article/infamous-russian-troll-farm-appears-to-be-source-of-anti-ukraine-propaganda", "https://edition.cnn.com/2022/02/28/tech/meta-russia-ukraine-disinformation-network"],
+    "actors": [
+      { "name": "Russland-verbundenes Einflussnetzwerk (Umfeld News Front / South Front)", "type": "organization", "systems": ["Fake-Personas mit GAN-generierten Profilbildern"] },
+      { "name": "Meta Platforms", "type": "company", "systems": ["Facebook", "Instagram"] }
+    ],
+    "note": "ProPublica (IRA-Videos, anderes Netzwerk) und nicht auffindbare CNN-URL entfernt, Akteure ergaenzt (Verify)"
+  },
+  "nz-wellington-international-airport-facial-recognition-trial-2021-aiaaic0791": {
+    "actors": [
+      { "name": "Aviation Security Service (Avsec) / Civil Aviation Authority of New Zealand", "type": "government", "systems": ["Gesichtserkennung zur Warteschlangenzählung an der Sicherheitskontrolle"] },
+      { "name": "Office of the Privacy Commissioner (John Edwards)", "type": "regulator" }
+    ],
+    "note": "Akteure korrigiert: Betreiber war Avsec, nicht der Flughafen (Review + Verify)"
+  },
+  "us-study-us-mortgage-loans-assessment-tools-suffer-from-2021-aiaaic0715": {
+    "remove_sources": ["https://themarkup.org/denied/2021/08/25/the-secret-bias-hidden-in-mortgage-approval-algorithms"],
+    "actors": [
+      { "name": "Laura Blattner (Stanford GSB) / Scott Nelson (Chicago Booth)", "type": "individual" },
+      { "name": "US-Kreditauskunfteien / Kredit-Scoring-Systeme", "type": "company", "systems": ["Credit Scores"] }
+    ],
+    "note": "Markup-Quelle entfernt (gehoert zum Bestands-Incident usa-hypotheken-algorithmen-...-2021), Akteure ergaenzt (Review + Verify)"
+  },
+  "gb-facebook-algorithm-blocks-images-of-sexual-cows-office-2021-aiaaic0527": {
+    "remove_sources": ["https://en.wikipedia.org/wiki/Censorship_by_TikTok"],
+    "note": "Wikipedia-Quelle zu TikTok entfernt (falscher Fall; Review + Verify)"
+  }
+}

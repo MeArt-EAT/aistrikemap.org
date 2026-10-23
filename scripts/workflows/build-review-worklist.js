@@ -57,13 +57,26 @@ for (const f of fs.readdirSync(CAND_DIR)) {
 }
 // order: candidate-count per file descending keeps AIAAIC batches together; stable
 fs.writeFileSync(path.join(OUT, 'review-worklist.json'), JSON.stringify(work, null, 1));
-const waves = []; const perWave = BATCH * BATCHES_PER_WAVE;
+// Keep wave numbers stable across sessions: waves that already have a review-result-N.json
+// keep their slot (taken from review-waves.json or the newest archived review-waves-*.json),
+// new waves are numbered after them.
+const archive = fs.existsSync(path.join(OUT, 'review-waves.json')) ? 'review-waves.json'
+  : fs.readdirSync(OUT).filter(f => /^review-waves-.+\.json$/.test(f)).sort().pop();
+const prior = archive ? JSON.parse(fs.readFileSync(path.join(OUT, archive), 'utf8')) : [];
+let done = 0; while (done < prior.length && fs.existsSync(path.join(OUT, `review-result-${done + 1}.json`))) done++;
+const waves = prior.slice(0, done); const perWave = BATCH * BATCHES_PER_WAVE;
 for (let i = 0; i < work.length; i += perWave) {
   const w = work.slice(i, i + perWave); const batches = [];
   for (let k = 0; k < w.length; k += BATCH) batches.push(w.slice(k, k + BATCH));
   waves.push(batches);
 }
 fs.writeFileSync(path.join(OUT, 'review-waves.json'), JSON.stringify(waves));
+const tpl = fs.readFileSync(path.join(OUT, 'review-template.js'), 'utf8');
+for (let n = done + 1; n <= waves.length; n++) {
+  const s = tpl.split('__N__').join(String(n)).replace('__BATCHES__', () => JSON.stringify(waves[n - 1]));
+  new Function('agent', 'pipeline', 'parallel', 'log', 'phase', 'args', 'budget', 'return (async()=>{' + s.replace('export const meta', 'const meta') + '})()');
+  fs.writeFileSync(path.join(OUT, `review-wave-${n}.js`), s);
+}
 const withHints = work.filter(x => x.corpus_matches.length).length;
-console.log(`needs-review: ${work.length} | mit Bestands-Treffern (score>=0.2): ${withHints} | waves: ${waves.map(w => w.reduce((a, b) => a + b.length, 0)).join('/')}`);
+console.log(`needs-review: ${work.length} | mit Bestands-Treffern (score>=0.2): ${withHints} | bereits angewendet: Wellen 1-${done} (aus ${archive || '-'}) | neue Wellen: ${waves.slice(done).map((w, i) => `#${done + i + 1}=${w.reduce((a, b) => a + b.length, 0)}`).join(' ')}`);
 console.log('top hint examples:'); work.filter(x => x.corpus_matches.length && x.corpus_matches[0].score >= 0.4).slice(0, 8).forEach(x => console.log(`  ${x.candidate_id}  ->  ${x.corpus_matches[0].slug} (${x.corpus_matches[0].score})`));

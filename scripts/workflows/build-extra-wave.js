@@ -22,6 +22,7 @@ for (const f of fs.readdirSync(CAND_DIR)) {
   if (!Array.isArray(arr)) continue;
   for (const c of arr) {
     if (c.status !== 'verified') continue;
+    if (c.reviewed_at) continue; // already confirmed by a Sichtungs-Welle, waits for promotion
     const cd = c.candidate_data || {};
     if (!cd.name_de || !cd.name_en || (cd.sources || []).length < 2) continue;
     let slug; try { slug = promote.generateSlug(c); } catch (e) { continue; }

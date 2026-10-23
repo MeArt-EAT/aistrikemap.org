@@ -2,10 +2,12 @@
 // Usage: node apply-review-verdicts.js <waveNo> <runDir> [--dry-run]
 const fs = require('fs');
 const path = require('path');
+const { mergePatch } = require('./review-patch');
 const PROJECT = 'C:/Users/meyer/Dropbox/_6.Block/X-Claude-LF11EA/Iron-Hawk/AIStrikeMap/';
 const CAND_DIR = PROJECT + 'data/incident-candidates/';
 const SCRATCH = __dirname;
-const TODAY = '2026-10-09';
+// Review date written to reviewed_at; override with REVIEW_DATE=YYYY-MM-DD when re-applying an older run.
+const TODAY = process.env.REVIEW_DATE || new Date().toISOString().slice(0, 10);
 const n = parseInt(process.argv[2], 10);
 const runDirs = process.argv.slice(3).filter(a => !a.startsWith('--'));
 const dry = process.argv.includes('--dry-run');
@@ -52,33 +54,6 @@ for (const rep of reports) {
   }
 }
 console.log(`Journal: ${reports.length} Reports, ${Object.keys(review).length} Review-Verdikte, ${Object.keys(verify).length} Verify-Verdikte`);
-
-function mergePatch(cd, p) {
-  if (!p) return [];
-  const changed = [];
-  for (const k of ['startDate', 'name_de', 'name_en', 'description_de', 'description_en', 'incidentType', 'candidate_severity', 'candidate_verification']) {
-    if (p[k] !== undefined && p[k] !== null && p[k] !== '' && JSON.stringify(p[k]) !== JSON.stringify(cd[k])) { cd[k] = p[k]; changed.push(k); }
-  }
-  if (p.location && typeof p.location === 'object') {
-    cd.location = cd.location || {};
-    for (const k of ['name_de', 'name_en', 'country', 'lat', 'lng']) if (p.location[k] !== undefined && p.location[k] !== null && p.location[k] !== '' && cd.location[k] !== p.location[k]) { cd.location[k] = p.location[k]; changed.push('location.' + k); }
-  }
-  if (Array.isArray(p.add_sources)) {
-    cd.sources = cd.sources || [];
-    const have = new Set(cd.sources.map(s => (s.url || '').replace(/\/$/, '')));
-    for (const s of p.add_sources) {
-      if (!s || !s.url || /aiaaic\.org/i.test(s.url)) continue;
-      const key = s.url.replace(/\/$/, ''); if (have.has(key)) continue;
-      const TYPE_MAP = { news: 'news-article', 'news-report': 'news-article', article: 'news-article', press: 'news-article', 'press-release': 'news-article', report: 'ngo-report', ngo: 'ngo-report', 'court-document': 'court-filing', 'court-ruling': 'legal-ruling', ruling: 'legal-ruling', judgment: 'legal-ruling', 'government': 'government-document', 'official-document': 'government-document', regulator: 'regulatory-decision', 'regulatory': 'regulatory-decision', study: 'research-paper', paper: 'research-paper', 'academic-paper': 'research-paper', research: 'research-paper', blog: 'analysis', 'company-statement': 'analysis', wiki: 'encyclopedia' };
-      const VOCAB = new Set(['news-article', 'research-paper', 'ngo-report', 'government-document', 'court-filing', 'legal-ruling', 'regulatory-decision', 'encyclopedia', 'analysis', 'whistleblower-document']);
-      const rawType = String(s.type || 'news-article').toLowerCase();
-      const type = VOCAB.has(rawType) ? rawType : (TYPE_MAP[rawType] || 'news-article');
-      cd.sources.push({ url: s.url, title: s.title || s.url, publisher: s.publisher || '', date: s.date || '', type });
-      have.add(key); changed.push('source+');
-    }
-  }
-  return changed;
-}
 
 const finals = {}; const summary = { verified: [], duplicate: [], rejected: [], 'needs-review': [], unverified_verified: [] };
 for (const b of wave) for (const c of b) {
