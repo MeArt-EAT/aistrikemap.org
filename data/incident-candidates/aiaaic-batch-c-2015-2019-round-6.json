@@ -1559,17 +1559,17 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC1559",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "verified",
     "candidate_data": {
-      "name_de": "USA/Deutschland: PIPA-Dataset von UC Berkeley und Facebook nutzte private Flickr-Fotos",
-      "name_en": "USA/Germany: PIPA dataset from UC Berkeley and Facebook used private Flickr photos",
-      "startDate": "2019-12-15",
+      "name_de": "USA/Deutschland: PIPA-Datensatz von UC Berkeley und Facebook nutzte Flickr-Familienfotos ohne Einwilligung",
+      "name_en": "USA/Germany: PIPA dataset by UC Berkeley and Facebook used Flickr family photos without consent",
+      "startDate": "2021-01-31",
       "location": {
-        "name_de": "Saarbruecken, Deutschland (MPI Informatik) / Berkeley, USA",
-        "name_en": "Saarbruecken, Germany (MPI for Informatics) / Berkeley, USA",
-        "country": "DE",
-        "lat": 49.2577,
-        "lng": 7.0458
+        "name_de": "Berkeley, Kalifornien, USA",
+        "name_en": "Berkeley, California, USA",
+        "country": "US",
+        "lat": 37.8716,
+        "lng": -122.2727
       },
       "incidentType": [
         "facial-recognition",
@@ -1578,16 +1578,19 @@
       ],
       "candidate_severity": 3,
       "candidate_verification": 2,
-      "description_de": "Das People-in-Photo-Albums-Dataset (PIPA), urspruenglich von UC Berkeley und Facebook 2015 veroeffentlicht, enthaelt rund 60.000 Bilder von etwa 2.000 Personen, davon 32.518 von Flickr heruntergeladen - mehrheitlich halb-private Aufnahmen von Familienfesten, Hochzeiten und Kindern. Adam Harveys Exposing.AI-Projekt dokumentierte 2019, dass das Dataset spaeter unter anderem vom Max-Planck-Institut fuer Informatik (Saarbruecken), ETH Zurich, SenseTime und der chinesischen National University of Defense Technology genutzt wurde - weit ueber den urspruenglichen Anwendungszweck hinaus. Auch die Creative-Commons-Konformitaet wurde in Frage gestellt, da Lizenzen teils kommerzielle Nutzung ausschliessen.",
-      "description_en": "The People in Photo Albums dataset (PIPA), originally released by UC Berkeley and Facebook in 2015, contains around 60,000 images of about 2,000 people, of which 32,518 were downloaded from Flickr - mostly semi-private scenes of family events, weddings and children. Adam Harvey's Exposing.AI project documented in 2019 that the dataset was subsequently used by the Max Planck Institute for Informatics (Saarbruecken), ETH Zurich, SenseTime and China's National University of Defense Technology, well beyond its original purpose. The Creative Commons compliance was also questioned since some licences exclude commercial use.",
+      "description_de": "Der People-in-Photo-Albums-Datensatz (PIPA) wurde 2015 von Forschenden der UC Berkeley und von Facebook AI Research zur Personenerkennung in Fotoalben veröffentlicht; laut Originalpaper umfasst er 37.107 Fotos von 2.356 Personen aus öffentlichen Flickr-Alben unter Creative-Commons-Lizenz. Exposing.AI beziffert ihn auf rund 60.000 Gesichtsaufnahmen von etwa 2.000 Personen, davon 32.518 Flickr-Fotos, darunter viele persönliche Bilder von Kindern, Familienessen und Hochzeiten. Grundlage waren die Lizenzen der Hochladenden, nicht die Einwilligung der Abgebildeten. Das am 31. Januar 2021 gestartete Projekt Exposing.AI von Adam Harvey und Jules LaPlace machte die Flickr-Herkunft der Bilder durchsuchbar und dokumentierte die Nutzung des Datensatzes unter anderem durch Forschende mit Verbindung zum Überwachungsunternehmen SenseTime. Stand Januar 2020 verbreitete die UC Berkeley den Datensatz laut Exposing.AI nicht mehr, das Max-Planck-Institut für Informatik in Saarbrücken bot ihn aber weiterhin frei zum Download an.",
+      "description_en": "The People in Photo Albums (PIPA) dataset was released in 2015 by researchers at UC Berkeley and Facebook AI Research for recognising people in photo albums; according to the original paper it comprises 37,107 photos of 2,356 people from public Flickr albums under Creative Commons licences. Exposing.AI puts it at around 60,000 face images of about 2,000 people, including 32,518 Flickr photos, many of them personal pictures of children, family dinners and weddings. The basis was the uploaders' licences, not the consent of those depicted. Exposing.AI, the project by Adam Harvey and Jules LaPlace launched on 31 January 2021, made the Flickr origin of the images searchable and documented use of the dataset by researchers affiliated with the surveillance company SenseTime, among others. According to Exposing.AI, UC Berkeley was no longer distributing the dataset as of January 2020, but the Max Planck Institute for Informatics in Saarbrücken continued to offer it for free download.",
       "actors": [
         {
           "name": "UC Berkeley",
-          "type": "organization"
+          "type": "organization",
+          "systems": [
+            "People in Photo Albums (PIPA) dataset"
+          ]
         },
         {
-          "name": "Facebook",
-          "type": "organization",
+          "name": "Facebook AI Research",
+          "type": "company",
           "systems": [
             "People in Photo Albums (PIPA) dataset"
           ]
@@ -1595,31 +1598,35 @@
         {
           "name": "Max Planck Institute for Informatics",
           "type": "organization"
-        },
-        {
-          "name": "Adam Harvey / Exposing.AI",
-          "type": "individual"
         }
       ],
       "sources": [
         {
-          "url": "https://exposing.ai/pipa/",
-          "title": "Exposing.ai: People in Photo Albums",
-          "publisher": "Exposing.AI (Adam Harvey)",
-          "date": "2019-12-15",
-          "type": "ngo-report"
+          "url": "https://futurezone.at/netzpolitik/tool-entlarvt-mit-welchen-flickr-fotos-ki-trainiert-wurde/401173894",
+          "title": "Tool entlarvt, mit welchen Flickr-Fotos KI trainiert wurde",
+          "publisher": "futurezone",
+          "date": "2021",
+          "type": "news-article"
         },
         {
-          "url": "https://www.nbcnews.com/tech/internet/facial-recognition-s-dirty-little-secret-millions-online-photos-scraped-n981921",
-          "title": "Facial recognition's 'dirty little secret': Millions of online photos scraped without consent",
-          "publisher": "NBC News",
-          "date": "2019-03-12",
-          "type": "news-article"
+          "url": "https://openaccess.thecvf.com/content_cvpr_2015/papers/Zhang_Beyond_Frontal_Faces_2015_CVPR_paper.pdf",
+          "title": "Beyond Frontal Faces: Improving Person Recognition Using Multiple Cues",
+          "publisher": "CVPR 2015 (UC Berkeley / Facebook AI Research)",
+          "date": "2015",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://exposing.ai/pipa",
+          "title": "People in Photo Albums (PIPA)",
+          "publisher": "Exposing.AI (Adam Harvey, Jules LaPlace)",
+          "date": "2021",
+          "type": "ngo-report"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/pipa-dataset-criticised-for-using-sensitive-personal-images-without-consent | Stub-Jahr 2019 bestaetigt; Datum 2019-12-15 als ungefaehres Exposing.AI-Publikationsdatum. Country DE im Stub bezieht sich vermutlich auf MPI-Saarbruecken-Nutzung; Hauptverantwortliche sind UC Berkeley/Facebook. Status needs-review wegen schwacher Mainstream-Coverage zur DE-Verbindung. Verification 2.",
-    "dedup_hint": "people in photo albums dataset criticised for using sensitive personal images without consent | germany | 2019"
+    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/pipa-dataset-criticised-for-using-sensitive-personal-images-without-consent | Stub-Jahr 2019 bestaetigt; Datum 2019-12-15 als ungefaehres Exposing.AI-Publikationsdatum. Country DE im Stub bezieht sich vermutlich auf MPI-Saarbruecken-Nutzung; Hauptverantwortliche sind UC Berkeley/Facebook. Status needs-review wegen schwacher Mainstream-Coverage zur DE-Verbindung. Verification 2. | Sichtung 2026-10-23: Review: verified (mittel) - PIPA ist durch das Originalpaper (Zhang et al., CVPR 2015, UC Berkeley/Facebook AI Research, Flickr-Fotos unter CC-Lizenz), die Exposing.AI-Dokumentation (rund 60.000 Gesichtsbilder von etwa 2.000 Personen, über 30.000 Flickr-Fotos, Nutzung u. a. durch SenseTime-nahe Forschende, Berkeley stoppte die Verbreitung im Januar 2020, MPI Informatik bietet weiter Download an) und futurezone (31.518 PIPA-Fotos im Exposing.AI-Suchwerkzeug) belegt. Das dokumentierte Ereignis ist die Offenlegung durch Exposing.AI, das 2021 startete (Berichte ab Februar 2021), nicht 2019. Die NBC-Quelle von 2019 betrifft IBMs Diversity-in-Faces-Datensatz und trägt PIPA nicht. | Verify: confirm - Ich bestätige das Verdikt. Es gibt keine Dublette: Im Bestand findet sich weder 'People in Photo Albums' noch 'PIPA dataset'. Die PIPA-Treffer betreffen die Datenschutzgesetze PIPA in Korea und Kanada. Die Geschwister-Fälle MegaFace, VGG Face, DiveFace und IBM DiF behandeln andere Datensätze. Das Ereignis ist belegt durch: (1) die Exposing.AI-Seite https://exposing.ai/pipa (rund 60.000 Gesichtsbilder von etwa 2.000 Personen, 32.518 Flickr-Fotos, viele Bilder von Kindern, Familienessen und Hochzeiten, Nutzung durch Forschende mit SenseTime-Bezug, Stand Januar 2020 keine Verbreitung mehr durch Berkeley, MPI bietet den Datensatz weiter an); (2) futurezone, die PIPA unter den sechs Datensätzen des 2021 gestarteten Exposing.AI-Werkzeugs nennt (31.518 Fotos), eine unabhängige Redaktion; (3) das CVPR-2015-Paper (37.107 Fotos aus öffentlichen Flickr-Alben unter Creative-Commons-Lizenz, 2.356 Personen). Zum Datum: Laut der About-Seite von Exposing.AI startete das Projekt im Januar 2021, die KIM-Seite der HfG Karlsruhe nennt den 31. Januar 2021, die Presse berichtete ab 01.02.2021 (TNW, Infodocket). Das Review-Datum 2021 wird daher auf 2021-01-31 präzisiert. Die NBC-Quelle von 2019 betrifft IBM Diversity in Faces und ist zu Recht entfernt. Ein Fehler im Review-Patch: Er entfernt https://exposing.ai/pipa/ und fügt https://exposing.ai/pipa wieder hinzu. review-patch.js normalisiert dabei den Schrägstrich am Ende weg und überspringt jede add_source, deren URL auch in remove_sources steht. Die Hauptquelle Exposing.AI ginge also verloren. Mein Patch fügt sie deshalb erneut hinzu; er wird nach dem Review-Patch angewendet. In der Beschreibung ist 'stellte die Verbreitung im Januar 2020 ein' quellenungenau. Exposing.AI schreibt 'as of January 2020' (Stand Januar 2020), das ist korrigiert. Die Fotozahl aus dem Originalpaper und die Einwilligungsfrage (Lizenz der Hochladenden statt Einwilligung der Abgebildeten) sind präzisiert. | Patch: startDate, name_de, name_en, description_de, description_en, location.name_de, location.name_en, location.country, location.lat, location.lng, actors, source-, source-, source+, source+, startDate, description_de, description_en, source+",
+    "dedup_hint": "people in photo albums dataset criticised for using sensitive personal images without consent | germany | 2019",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "gb-oxford-town-centre-dataset-flagged-for-violating-pedestrian-2019-aiaaic1558",
@@ -1628,12 +1635,12 @@
     "round": "round-6-aiaaic-batch-c-2026-06-05",
     "status": "needs-review",
     "candidate_data": {
-      "name_de": "Grossbritannien: Oxford-Town-Centre-Dataset verletzt Privatsphaere von Passant:innen",
+      "name_de": "Großbritannien: Oxford-Town-Centre-Datensatz verletzt Privatsphäre von Passant:innen",
       "name_en": "UK: Oxford Town Centre dataset violates pedestrian privacy",
       "startDate": "2020-06-30",
       "location": {
-        "name_de": "Oxford, Grossbritannien",
-        "name_en": "Oxford, UK",
+        "name_de": "Oxford, Großbritannien",
+        "name_en": "Oxford, United Kingdom",
         "country": "GB",
         "lat": 51.7521,
         "lng": -1.2577
@@ -1644,8 +1651,8 @@
       ],
       "candidate_severity": 3,
       "candidate_verification": 2,
-      "description_de": "Der seit 2009 von der University of Oxford verbreitete Datensatz 'Oxford Town Centre' enthaelt CCTV-Videoaufnahmen einer belebten Strassenecke (Cornmarket/Market St.) mit rund 2.200 Personen, die offensichtlich ohne Einwilligung erfasst wurden. Eine Aufstellung der Exposing.AI-Initiative dokumentiert ueber 60 nachverfolgte Forschungsprojekte mit dem Material, darunter kommerzielle Arbeiten von Amazon, Disney, OSRAM und Huawei sowie akademische Studien in China, Israel, Russland und den USA. Im Juni 2020 wurde die Hosting-Seite der Universitaet abgeschaltet; das Dataset zirkuliert jedoch weiter unter anderem auf Kaggle und Academic Torrents.",
-      "description_en": "The University of Oxford's 'Oxford Town Centre' dataset, distributed since 2009, contains CCTV footage of a busy street corner (Cornmarket/Market St.) showing roughly 2,200 people who were evidently captured without consent. An inventory by the Exposing.AI initiative documents over 60 traceable research projects using the footage, including commercial work by Amazon, Disney, OSRAM and Huawei, plus academic studies in China, Israel, Russia and the US. In June 2020 the university hosting page was taken down, but the dataset continues to circulate via Kaggle and Academic Torrents.",
+      "description_de": "Der seit 2009 verbreitete Forschungsdatensatz 'Oxford Town Centre' besteht aus Aufnahmen einer öffentlichen Überwachungskamera an der Ecke Cornmarket/Market Street in Oxford und zeigt rund 2.200 Passant:innen, die sich erkennbar unbeobachtet verhalten und offenbar nicht eingewilligt hatten. Laut Exposing.AI wurde das Material in über 60 nachverfolgten Forschungsprojekten genutzt, darunter kommerzielle Forschung von Amazon, Disney, OSRAM und Huawei, überwiegend außerhalb Großbritanniens. Eine Studie der Universität Zagreb von 2020 nutzte die Aufnahmen, um aus Körper-Keypoints das biologische Geschlecht der Abgebildeten zu schätzen, eine Anwendung mit Überwachungspotenzial.",
+      "description_en": "The 'Oxford Town Centre' research dataset, distributed since 2009, consists of footage from a public surveillance camera at the corner of Cornmarket and Market Street in Oxford and shows around 2,200 pedestrians who are visibly unaware of being recorded and apparently did not consent. According to Exposing.AI, the footage has been used in more than 60 verified research projects, including commercial research by Amazon, Disney, OSRAM and Huawei, mostly outside the UK. A 2020 University of Zagreb study used the footage to estimate the biological sex of the people shown from body keypoints, an application with surveillance potential.",
       "actors": [
         {
           "name": "University of Oxford",
@@ -1668,16 +1675,17 @@
           "type": "ngo-report"
         },
         {
-          "url": "https://adam.harvey.studio/origins-and-endpoints/",
-          "title": "Origins and Endpoints",
-          "publisher": "Adam Harvey Studio",
-          "date": "2021-06-01",
-          "type": "analysis"
+          "url": "https://www.architekturaibiznes.pl/en/CCTV Monitoring and Artificial Intelligence: How Recordings of People End Up in AI Datasets,46637.html",
+          "title": "CCTV Monitoring and Artificial Intelligence: How Recordings of People End Up in AI Datasets",
+          "publisher": "Architektura & Biznes",
+          "date": "",
+          "type": "news-article"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/oxford-town-centre-dataset | Stub-Jahr 2019 korrigiert auf 2020-06-30 (Takedown + Exposing.AI Veroeffentlichung). Status needs-review: nur eine starke Primaerquelle (Exposing.AI) + Folge-Essay derselben Autorin, keine breite Mainstream-Coverage gefunden. Verification 2.",
-    "dedup_hint": "oxford town centre dataset flagged for violating pedestrian privacy | uk | 2019"
+    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/oxford-town-centre-dataset | Stub-Jahr 2019 korrigiert auf 2020-06-30 (Takedown + Exposing.AI Veroeffentlichung). Status needs-review: nur eine starke Primaerquelle (Exposing.AI) + Folge-Essay derselben Autorin, keine breite Mainstream-Coverage gefunden. Verification 2. | Sichtung 2026-10-23: Review: weiterhin needs-review - Datensatz und Kritik (CCTV-Aufnahmen Cornmarket/Market Street, etwa 2.200 Personen, über 60 Forschungsprojekte inkl. Amazon, Disney, OSRAM, Huawei, Zagreb-Studie 2020 zur Geschlechtsschätzung) sind nur durch Exposing.AI und einen davon abgeleiteten Artikel des polnischen Fachmagazins Architektura & Biznes belegt; keine Mainstream-Berichterstattung gefunden. Die behauptete Abschaltung im Juni 2020 und damit das startDate 2020-06-30 ließen sich in vier Suchen nicht bestätigen. Das Ereignisdatum ist also offen (2009 Veröffentlichung oder Datum der Exposing.AI-Dokumentation, die auf eine 2020-Studie Bezug nimmt). | Patch: name_de, description_de, description_en, location.name_de, location.name_en, source-, source+",
+    "dedup_hint": "oxford town centre dataset flagged for violating pedestrian privacy | uk | 2019",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "us-ms-celeb-1m-facial-recognition-database-criticised-for-2019-aiaaic1556",
@@ -1888,11 +1896,11 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC1545",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "verified",
     "candidate_data": {
-      "name_de": "USA: IARPA-Janus-Datasets (IJB-A/B/C) sammelten YouTube-Gesichter ohne Einwilligung",
-      "name_en": "USA: IARPA Janus datasets (IJB-A/B/C) collected YouTube faces without consent",
-      "startDate": "2020-10-21",
+      "name_de": "USA: IARPA-Janus-Datensatz IJB-C nutzte YouTube- und Flickr-Aufnahmen von 3.531 Personen ohne Einwilligung",
+      "name_en": "USA: IARPA Janus dataset IJB-C used YouTube and Flickr images of 3,531 people without consent",
+      "startDate": "2021-01-31",
       "location": {
         "name_de": "Washington, D.C., USA",
         "name_en": "Washington, D.C., USA",
@@ -1907,44 +1915,69 @@
       ],
       "candidate_severity": 3,
       "candidate_verification": 2,
-      "description_de": "Die IARPA-Janus-Benchmarks (IJB-A, IJB-B, IJB-C), gemeinsam mit dem National Institute of Standards and Technology (NIST) und IARPA entwickelt sowie an Noblis vergeben, enthalten ca. 31.000 Standbilder und 117.500 Videoframes aus rund 11.800 YouTube-Videos und 21.000 Wikimedia-/Flickr-Bildern von 3.531 Personen. Recherchen von Adam Harveys Exposing.AI-Projekt und CITP Princeton dokumentierten 2020, dass die Nutzung von YouTube-Material gegen Googles AGB verstoesst, die Google in Memos 2020 und 2021 ausdruecklich auf Gesichtserkennung praezisierte. Zudem wurden vollstaendige Klarnamen zu den abgebildeten Personen mitgespeichert.",
-      "description_en": "The IARPA Janus Benchmarks (IJB-A, IJB-B, IJB-C), developed jointly with the National Institute of Standards and Technology (NIST) and IARPA and contracted to Noblis, contain about 31,000 still images and 117,500 video frames from roughly 11,800 YouTube videos and 21,000 Wikimedia/Flickr images of 3,531 individuals. Research by Adam Harvey's Exposing.AI project and the CITP at Princeton documented in 2020 that the use of YouTube material violates Google's Terms of Service, which Google later clarified in 2020 and 2021 memos as explicitly forbidding facial-recognition use. Full names of the subjects were also stored alongside the imagery.",
+      "description_de": "Die IARPA-Janus-Benchmarks IJB-A, IJB-B und IJB-C entstanden für die von IARPA, der Forschungsbehörde der US-Geheimdienste, finanzierte Gesichtserkennungsforschung. IJB-C (2017) wurde über das National Institute of Standards and Technology (NIST) verbreitet, die Annotationen wurden von Noblis geprüft. Der Datensatz enthält Fotos und Video-Standbilder von 3.531 namentlich erfassten Personen, darunter viele Aktivist:innen, Künstler:innen, Journalist:innen, ausländische Politiker:innen und Vortragende, die über YouTube-Nutzer mit gut beschrifteten personenbezogenen Videos ausgewählt wurden, dazu Tausende Flickr-Fotos. Grundlage waren Creative-Commons-Lizenzen der Hochladenden, nicht die Einwilligung der Abgebildeten. Das am 31. Januar 2021 gestartete Projekt Exposing.AI von Adam Harvey und Jules LaPlace machte 5.757 Flickr-Originalfotos aus IJB-C durchsuchbar und wertete die Nutzung der YouTube-Videos unter Verweis auf Google-Memos von November 2020 und Mai 2021 als klaren Verstoß gegen YouTubes Richtlinien. Am 14. März 2023 stellte NIST die Verbreitung aller drei IJB-Datensätze ein.",
+      "description_en": "The IARPA Janus Benchmarks IJB-A, IJB-B and IJB-C were created for face recognition research funded by IARPA, the US intelligence community's research agency. IJB-C (2017) was distributed via the National Institute of Standards and Technology (NIST), with annotations reviewed by Noblis. The dataset contains photos and video stills of 3,531 named people, many of them activists, artists, journalists, foreign politicians and public speakers, selected via YouTube users who upload well-labelled, person-centric videos, plus thousands of Flickr photos. The basis was Creative Commons licences of the uploaders, not the consent of those depicted. Exposing.AI, the project by Adam Harvey and Jules LaPlace launched on 31 January 2021, made 5,757 original Flickr photos used in IJB-C searchable and described the use of the YouTube videos as a clear violation of YouTube's policy, citing Google memos from November 2020 and May 2021. On 14 March 2023 NIST discontinued distribution of all three IJB datasets.",
       "actors": [
         {
           "name": "IARPA",
-          "type": "government"
-        },
-        {
-          "name": "National Institute of Standards and Technology (NIST)",
-          "type": "government"
-        },
-        {
-          "name": "Noblis",
-          "type": "organization",
+          "type": "government",
           "systems": [
             "IARPA Janus Benchmark (IJB-A/B/C)"
           ]
+        },
+        {
+          "name": "National Institute of Standards and Technology (NIST)",
+          "type": "government",
+          "systems": [
+            "IARPA Janus Benchmark (IJB-A/B/C)"
+          ]
+        },
+        {
+          "name": "Noblis",
+          "type": "organization"
         }
       ],
       "sources": [
         {
+          "url": "https://futurezone.at/netzpolitik/tool-entlarvt-mit-welchen-flickr-fotos-ki-trainiert-wurde/401173894",
+          "title": "Tool entlarvt, mit welchen Flickr-Fotos KI trainiert wurde",
+          "publisher": "futurezone",
+          "date": "2021",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.nist.gov/document/readmepdf-1",
+          "title": "IARPA Janus Benchmark C (IJB-C) Readme",
+          "publisher": "National Institute of Standards and Technology (NIST)",
+          "date": "",
+          "type": "government-document"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content_cvpr_2015/papers/Klare_Pushing_the_Frontiers_2015_CVPR_paper.pdf",
+          "title": "Pushing the Frontiers of Unconstrained Face Detection and Recognition: IARPA Janus Benchmark A",
+          "publisher": "CVPR 2015",
+          "date": "2015",
+          "type": "research-paper"
+        },
+        {
           "url": "https://exposing.ai/ijb_c/",
-          "title": "Exposing.ai: IARPA Janus Benchmark C",
-          "publisher": "Exposing.AI (Adam Harvey)",
-          "date": "2020-10-21",
+          "title": "IARPA Janus Benchmark C (IJB-C)",
+          "publisher": "Exposing.AI (Adam Harvey, Jules LaPlace)",
+          "date": "2021",
           "type": "ngo-report"
         },
         {
-          "url": "https://blog.citp.princeton.edu/2020/10/21/facial-recognition-datasets-are-being-widely-used-despite-being-taken-down-due-to-ethical-concerns-heres-how/",
-          "title": "Facial recognition datasets are being widely used despite being taken down due to ethical concerns",
-          "publisher": "Princeton CITP",
-          "date": "2020-10-21",
-          "type": "research-paper"
+          "url": "https://www.nist.gov/itl/iad/image-group/face-challenges",
+          "title": "Face Challenges",
+          "publisher": "National Institute of Standards and Technology (NIST)",
+          "date": "2023-03-14",
+          "type": "government-document"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/us-government-research-dataset-raises-privacy-misuse-concerns | Stub-Jahr 2019 korrigiert auf 2020-10-21 (Princeton-CITP- und Exposing.AI-Aufdeckung). Status needs-review: nur 2 belastbare Quellen, beide aus akademisch-zivilgesellschaftlichem Kontext, keine zusaetzliche Mainstream-Coverage gefunden. Verification 2.",
-    "dedup_hint": "us government research dataset raises privacy, misuse concerns | usa | 2019"
+    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/us-government-research-dataset-raises-privacy-misuse-concerns | Stub-Jahr 2019 korrigiert auf 2020-10-21 (Princeton-CITP- und Exposing.AI-Aufdeckung). Status needs-review: nur 2 belastbare Quellen, beide aus akademisch-zivilgesellschaftlichem Kontext, keine zusaetzliche Mainstream-Coverage gefunden. Verification 2. | Sichtung 2026-10-23: Review: verified (mittel) - IJB-C ist durch NIST (Readme mit Noblis-Annotationsprüfung), das IJB-A-Originalpaper (Klare et al., CVPR 2015) und Exposing.AI belegt (3.531 Personen, viele Aktivist:innen, Künstler:innen, Journalist:innen, Politiker:innen, Auswahl über YouTube-Nutzer, 5.757 Flickr-Originalfotos, YouTube-Nutzung laut Google-Memos von November 2020 und Mai 2021 ein Richtlinienverstoß); futurezone berichtet unabhängig, dass Exposing.AI IJB-C zu den durchsuchbaren Datensätzen zählt. Da die Exposing.AI-Seite Memos von Mai 2021 zitiert und das Werkzeug 2021 startete, ist das Datum 2020-10-21 falsch. Der Princeton-CITP-Blog von 2020-10-21 behandelt zurückgezogene Datensätze (DukeMTMC, MS-Celeb-1M, LFW), nicht IJB. | Verify: confirm - Ich bestätige das Verdikt. Es gibt keine Dublette: Im Bestand findet sich weder Janus noch IJB-C, Noblis oder IARPA. IJB-A kommt nur als Hintergrund im Gender-Shades-Fall vor. Ein Incident zu den FBI/Pentagon-Janus-Dokumenten der ACLU (Washington Post, März 2023) gibt es nicht. Das Ereignis ist belegt durch: (1) die Exposing.AI-Seite https://exposing.ai/ijb_c/ (2017 veröffentlicht, 21.294 Bilder, eine Namensliste mit 3.531 Personen, darunter viele Aktivist:innen, Künstler:innen, Journalist:innen, ausländische Politiker:innen und Vortragende, Auswahl über 'YouTube users who upload well-labeled, person-centric videos', 5.757 Flickr-Originalfotos, YouTube-Nutzung laut Google-Memos von 2020 und 2021 ein Richtlinienverstoß, Bilder und Namen gespeichert); (2) futurezone als unabhängige Redaktion, die IJB-C unter den sechs Datensätzen des Werkzeugs von 2021 führt (5.757 Fotos); (3) die NIST-Readme vom 11.12.2017 (3.531 Personen, Creative-Commons-Lizenzen, Abschnitt 'Additional Noblis Annotation Review and Correction'); (4) das IJB-A-Paper von Klare et al. (CVPR 2015). Zum Datum: Exposing.AI startete am 31.01.2021 (KIM-Seite der HfG Karlsruhe, About-Seite: Januar 2021, Presse ab 01.02.2021). Das Review-Datum 2021 wird daher auf 2021-01-31 präzisiert. Das ursprüngliche Datum 2020-10-21 und die Princeton-CITP-Quelle, die andere Datensätze behandelt, sind zu Recht entfernt. Ein Fehler im Review-Patch: Er entfernt https://exposing.ai/ijb_c/ und fügt dieselbe URL wieder hinzu. review-patch.js überspringt jede add_source, deren URL in remove_sources steht. Die Hauptquelle ginge also verloren, mein Patch fügt sie erneut hinzu. Außerdem ist 'wird über NIST verbreitet' veraltet: Laut der NIST-Seite 'Face Challenges' hat NIST die Verbreitung aller drei IJB-Datensätze am 14.03.2023 eingestellt. Das ist korrigiert und als Folge mit Quelle ergänzt. Der Titel ist auf IJB-C präzisiert, weil die belegten Befunde (5.757 Flickr-Fotos, YouTube-Auswahl, 3.531 Personen) IJB-C betreffen. | Patch: startDate, name_de, name_en, description_de, description_en, actors, source-, source-, source+, source+, source+, startDate, name_de, name_en, description_de, description_en, source+, source+",
+    "dedup_hint": "us government research dataset raises privacy, misuse concerns | usa | 2019",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "us-duke-university-pulls-facial-recognition-dataset-after-2019-aiaaic1536",
@@ -2076,7 +2109,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC1528",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "USA: BDD100K-Fahrdaten ohne klare Einwilligung als Trainingsdatensatz verbreitet",
       "name_en": "USA: BDD100K driving data shared as training dataset without clear consent",
@@ -2112,8 +2145,9 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/bdd100k-dataset-exposes-drivers-to-surveillance-data-misuse | Nur 1 belastbare eigene Quelle (Originalpaper) gefunden; AIAAIC verweist auf Datenschutz-Bedenken, eigene Mainstream-Coverage ist dünn. Daher needs-review. startDate auf BDD100K-Erst-Release Mai 2018 gesetzt.",
-    "dedup_hint": "bdd100k dataset exposes drivers to surveillance, data misuse | usa | 2019"
+    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/bdd100k-dataset-exposes-drivers-to-surveillance-data-misuse | Nur 1 belastbare eigene Quelle (Originalpaper) gefunden; AIAAIC verweist auf Datenschutz-Bedenken, eigene Mainstream-Coverage ist dünn. Daher needs-review. startDate auf BDD100K-Erst-Release Mai 2018 gesetzt. | Sichtung 2026-10-23: Review: abgelehnt - Nicht belegbar und ohne dokumentierten Schaden: Zwei Suchen fanden keine unabhängige Quelle (Presse, NGO, Studie), die Datenschutzkritik am BDD100K-Datensatz oder einen konkreten Schaden dokumentiert. Die einzige Quelle ist das Originalpaper der Herausgeber, also eine Selbstdarstellung. Zudem ist die Beschreibung sachlich falsch: BDD100K umfasst 100.000 Videos (etwa 1.100 Stunden), nicht 100.000 Stunden.",
+    "dedup_hint": "bdd100k dataset exposes drivers to surveillance, data misuse | usa | 2019",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "eu-mep-files-lawsuit-to-release-iborderctrl-lie-detection-2018-aiaaic1450",
@@ -3607,12 +3641,12 @@
     "round": "round-6-aiaaic-batch-c-2026-06-05",
     "status": "needs-review",
     "candidate_data": {
-      "name_de": "USA: Titus Henderson focht COMPAS-Bewertung in Wisconsin als rassistisch an",
-      "name_en": "USA: Titus Henderson challenged COMPAS assessment as racially biased in Wisconsin",
-      "startDate": "2014-10-15",
+      "name_de": "USA: Bundesgericht lässt Rassismus-Rüge von Häftling Titus Henderson gegen COMPAS zu",
+      "name_en": "USA: Federal court lets inmate Titus Henderson's racial-bias claim against COMPAS proceed",
+      "startDate": "2020-03-20",
       "location": {
-        "name_de": "Wisconsin, USA",
-        "name_en": "Wisconsin, USA",
+        "name_de": "Madison, Wisconsin, USA",
+        "name_en": "Madison, Wisconsin, USA",
         "country": "US",
         "lat": 43.0747,
         "lng": -89.3844
@@ -3623,33 +3657,41 @@
       ],
       "candidate_severity": 3,
       "candidate_verification": 2,
-      "description_de": "Im Oktober 2014 verwendete das Wisconsin-Justizsystem die COMPAS-Risikobewertung von Northpointe (heute Equivant/Volaris) und versagte Titus Henderson eine Verlegung von Wisconsin nach Mississippi. Henderson focht das Verfahren mit der Begründung an, COMPAS sei systematisch gegen afroamerikanische Inhaftierte und gegen Männer verzerrt. Der Fall ist in eine breitere Linie gegen COMPAS einzuordnen (vgl. Loomis v. Wisconsin, 2016), in der das Wisconsin Supreme Court die Nutzung mit Warnhinweisen zuliess.",
-      "description_en": "In October 2014 the Wisconsin justice system used Northpointe's (now Equivant/Volaris) COMPAS risk assessment and denied Titus Henderson a transfer from Wisconsin to Mississippi. Henderson challenged the procedure, arguing COMPAS was systematically biased against African-American inmates and against men. The case sits within a broader line of COMPAS litigation (compare Loomis v. Wisconsin, 2016), in which the Wisconsin Supreme Court allowed continued use of COMPAS subject to cautionary warnings.",
+      "description_de": "Der in Wisconsin inhaftierte Titus Henderson rügte vor dem US-Bundesbezirksgericht für den Western District of Wisconsin, die gegen ihn eingesetzte COMPAS-Risikobewertung von Northpointe (heute Equivant) sei rassistisch verzerrt. Am 20. März 2020 ließ das Gericht im Verfahren Henderson v. Stensberg (Az. 18-cv-555-jdp) diese Rüge als Gleichbehandlungsklage nach dem 14. Zusatzartikel der US-Verfassung zu. Anders als in State v. Loomis (2016), wo der Wisconsin Supreme Court nur eine Verletzung des Rechts auf ein faires Verfahren prüfte, betraf die Rüge damit den Gleichbehandlungsgrundsatz.",
+      "description_en": "Titus Henderson, an inmate in Wisconsin, argued before the US District Court for the Western District of Wisconsin that the COMPAS risk assessment by Northpointe (now Equivant) used against him was racially biased. On 20 March 2020, the court allowed this claim to proceed as an equal protection claim under the Fourteenth Amendment in Henderson v. Stensberg (No. 18-cv-555-jdp). Unlike State v. Loomis (2016), in which the Wisconsin Supreme Court examined only a due process challenge, the claim thus concerned the principle of equal protection.",
       "actors": [
         {
-          "name": "Wisconsin Court System",
-          "type": "government"
-        },
-        {
-          "name": "Equivant / Northpointe (now Volaris Group)",
-          "type": "organization",
+          "name": "Wisconsin Department of Corrections",
+          "type": "government",
           "systems": [
             "COMPAS"
           ]
+        },
+        {
+          "name": "Equivant (formerly Northpointe)",
+          "type": "company",
+          "systems": [
+            "COMPAS"
+          ]
+        },
+        {
+          "name": "US District Court for the Western District of Wisconsin",
+          "type": "judiciary"
         }
       ],
       "sources": [
         {
-          "url": "https://docs.justia.com/cases/federal/district-courts/wisconsin/wiwdc/3:2018cv00713/42427/168/1.html",
-          "title": "Henderson, Titus v. Vos, Betsy et al - Transmission of Notice of Appeal to 7th Circuit",
-          "publisher": "Justia Dockets & Filings",
-          "date": "2020-01-22",
-          "type": "court-filing"
+          "url": "https://arxiv.org/pdf/2505.02749",
+          "title": "How May U.S. Courts Scrutinize Their Recidivism Risk Assessment Tools? Contextualizing AI Fairness Criteria on a Judicial Scrutiny-based Framework",
+          "publisher": "arXiv",
+          "date": "2025",
+          "type": "research-paper"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/titus-henderson-compas-parole-denial | Nur 1 belastbare eigene Quelle (Justia-Docket) gefunden, kein Mainstream-Bericht direkt zu Henderson; verwandte Loomis-Case-Coverage ergiebig, aber nicht spezifisch zu Henderson. Daher needs-review. startDate auf 15.10.2014 (laut AIAAIC-Datum des COMPAS-Entscheids) gesetzt.",
-    "dedup_hint": "titus henderson compas parole denial | usa | 2015"
+    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/titus-henderson-compas-parole-denial | Nur 1 belastbare eigene Quelle (Justia-Docket) gefunden, kein Mainstream-Bericht direkt zu Henderson; verwandte Loomis-Case-Coverage ergiebig, aber nicht spezifisch zu Henderson. Daher needs-review. startDate auf 15.10.2014 (laut AIAAIC-Datum des COMPAS-Entscheids) gesetzt. | Sichtung 2026-10-23: Review: weiterhin needs-review - Der Kern ist belegt, aber nur durch eine Sekundärquelle: Eine rechtswissenschaftliche arXiv-Analyse (2505.02749) zitiert Henderson v. Stensberg, No. 18-CV-555-JDP, 2020 WL 1320820 (W.D. Wis., 20.03.2020), wonach das Bundesgericht eine Klage wegen rassistischer Verzerrung durch COMPAS nach der Equal Protection Clause zuließ. Die Angaben des Kandidaten (verweigerte Verlegung nach Mississippi, 15.10.2014, Az. 3:18-cv-00713, Justia-Dokument vom 22.01.2020) ließen sich in vier Suchen nicht bestätigen; das Aktenzeichen weicht vom gefundenen Fall ab. Weder das Urteil selbst noch Presseberichte tauchten auf. | Patch: startDate, name_de, name_en, description_de, description_en, location.name_de, location.name_en, actors, source-, source+",
+    "dedup_hint": "titus henderson compas parole denial | usa | 2015",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "de-hamburg-g20-protest-facial-analysis-2017-aiaaic0952",
@@ -4225,7 +4267,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0789",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "Polen: Katholik-Roboter \"SanTO\" in Warschauer Kirche löst Häresie-Vorwurf aus",
       "name_en": "Poland: Catholic robot 'SanTO' in Warsaw church triggers heresy accusations",
@@ -4264,8 +4306,9 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/santo-robot-catholic-priest | needs-review: nur eine belastbare Quelle gefunden; weitere Treffer sind Blogs/Medium. Severity nach unten auf 2 — kein konkreter Schaden, mehr Kuriositaet. Datum 2019 unbestaetigt, Stub-Jahr beibehalten.",
-    "dedup_hint": "santo robot catholic priest accused of heresy, blasphemy | poland | 2019"
+    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/santo-robot-catholic-priest | needs-review: nur eine belastbare Quelle gefunden; weitere Treffer sind Blogs/Medium. Severity nach unten auf 2 — kein konkreter Schaden, mehr Kuriositaet. Datum 2019 unbestaetigt, Stub-Jahr beibehalten. | Sichtung 2026-10-23: Review: abgelehnt - Kein Incident-Charakter und die Quellen widersprechen: SanTO ist ein 2018 von Gabriele Trovato entworfener Gebetsbegleiter-Roboter; die polnische Version SanTO-PL steht laut Fachliteratur dauerhaft im Copernicus Science Centre in Warschau, nicht in einer Kirche. Einen Häresie-Vorwurf gegen den Roboter in Warschau fand ich nicht, nur eine allgemeine ethische Debatte (Blasphemie-Bedenken als mögliche Fragen) und den Rat religiöser Leiter, die KI Bibeltexte nur rezitieren und nicht auslegen zu lassen. Ein Grundrechtsschaden ist nicht dokumentiert, und der Typ data-misuse ist nicht begründet.",
+    "dedup_hint": "santo robot catholic priest accused of heresy, blasphemy | poland | 2019",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "br-eucharist-delivery-drone-sparks-religious-2018-aiaaic0788",
@@ -5713,7 +5756,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0594",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "USA: UC Berkeleys BDD100K-Datensatz mit 100.000 Fahrvideos – Privacy- und Consent-Fragen",
       "name_en": "USA: UC Berkeley's BDD100K dataset with 100,000 driving videos – privacy and consent questions",
@@ -5760,8 +5803,9 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/bdd100k-driving-video-dataset | startDate 2018-05-30 (Release-Datum). needs-review: kein konkreter Schadensfall, eher strukturelle Dataset-Privacy-Kritik; nur 2 belastbare Quellen zur Privacy-Problematik gefunden — Hauptquellen sind technische Beschreibungen.",
-    "dedup_hint": "bdd100k driving video dataset | usa | 2019"
+    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/bdd100k-driving-video-dataset | startDate 2018-05-30 (Release-Datum). needs-review: kein konkreter Schadensfall, eher strukturelle Dataset-Privacy-Kritik; nur 2 belastbare Quellen zur Privacy-Problematik gefunden — Hauptquellen sind technische Beschreibungen. | Sichtung 2026-10-23: Review: abgelehnt - Kein Incident-Charakter: Die Quellen beschreiben nur die Veröffentlichung des Datensatzes am 30.05.2018 (BAIR-Blog, The Robot Report). Eine gezielte Suche fand keine dokumentierte Kritik, Beschwerde, Klage oder Behördenmaßnahme zu Privatsphäre oder Einwilligung bei BDD100K. Treffer betreffen andere Datensätze (WoodScape, PP4AV) oder einen Nexar-Hack von 2025. Das ist ein Dataset-Launch mit allgemeiner Datenschutz-Spekulation. Der Bestands-Fall usa-bdd100k-datensatz-erkennt-dunkelhaeutige-fussgaenger-schlechter-2019 (Georgia-Tech-Bias-Studie) ist ein anderes Ereignis und deckt das Dataset bereits ab.",
+    "dedup_hint": "bdd100k driving video dataset | usa | 2019",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "jp-tesla-on-autopilot-kills-kanagawa-2018-aiaaic0591",
@@ -5830,11 +5874,11 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0565",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "verified",
     "candidate_data": {
-      "name_de": "USA: Ubers Vergütungs-Algorithmus zahlt Neueinstellungen weniger",
-      "name_en": "USA: Uber compensation algorithm pays new hires less",
-      "startDate": "2017-04",
+      "name_de": "USA: Ubers Vergütungsalgorithmus für Neueinstellungen verfestigt Lohnlücke zwischen Männern und Frauen",
+      "name_en": "USA: Uber's compensation algorithm for new hires entrenches gender pay gap",
+      "startDate": "2017-06",
       "location": {
         "name_de": "San Francisco, Kalifornien, USA",
         "name_en": "San Francisco, California, USA",
@@ -5843,41 +5887,49 @@
         "lng": -122.4194
       },
       "incidentType": [
-        "labor-exploitation",
-        "discrimination"
+        "discrimination",
+        "labor-exploitation"
       ],
       "candidate_severity": 3,
-      "candidate_verification": 3,
-      "description_de": "Ein bei Uber eingesetzter Vergütungs-Algorithmus zur Berechnung von Gehältern und Aktienpaketen für neue Angestellte führte laut einem Bericht der New York Times im April 2017 dazu, dass Neueinstellungen systematisch weniger erhielten als vergleichbare Beschäftigte und bestehende Lohnlücken zwischen Männern und Frauen fortgeschrieben wurden. Parallel berichtete die NYT, wie Ubers Data-Science-Team verhaltenspsychologische Techniken aus Computerspielen anwandte, um Fahrer länger im Dienst zu halten.",
-      "description_en": "An algorithmic compensation system used by Uber to set salaries and equity packages for new recruits was reported by the New York Times in April 2017 to systematically pay new hires less than comparable employees and to reinforce existing gender pay gaps. The same NYT reporting documented how Uber's data scientists applied behavioural techniques borrowed from video games to keep drivers working longer hours.",
+      "candidate_verification": 2,
+      "description_de": "Laut einem Bericht von The Information vom Juni 2017 setzte Uber einen Algorithmus ein, der Gehalts- und Aktienangebote für neue Angestellte optimierte, um bestehende Anteilseigner zu schützen und Kosten zu sparen. Nach Angaben von Insidern verfestigte das System bestehende Lohnlücken zwischen Männern und Frauen und führte zu ungleicher Bezahlung für vergleichbare Positionen. BuzzFeed News berichtete unter Berufung auf The Information, der Algorithmus schätze das niedrigste Gehalt, das neue Beschäftigte voraussichtlich akzeptieren würden. Laut The Information wurde das System anschließend geändert; zum 1. August 2017 hob Uber die Gehälter von Beschäftigten, die unter dem Median ihrer Position lagen, auf dieses Niveau an. Es handelt sich um ein algorithmisches Entscheidungssystem; ein KI-Einsatz ist nicht belegt.",
+      "description_en": "According to a June 2017 report by The Information, Uber used an algorithm that optimized salary and equity offers to new employees in order to protect existing shareholders and save money. According to insiders, the system reinforced existing gender pay gaps and led to uneven pay for similar roles. Citing The Information, BuzzFeed News reported that the algorithm estimated the lowest salary a new employee was likely to accept. According to The Information, the system was subsequently changed; effective August 1, 2017, Uber raised the salaries of employees paid below the median for their role to that level. This is an algorithmic decision system; the use of AI is not documented.",
       "actors": [
         {
           "name": "Uber Technologies",
-          "type": "organization",
+          "type": "company",
           "systems": [
-            "Compensation algorithm"
+            "Compensation algorithm for new-hire offers"
           ]
         }
       ],
       "sources": [
         {
-          "url": "https://www.nytimes.com/interactive/2017/04/02/technology/uber-drivers-psychological-tricks.html",
-          "title": "How Uber Uses Psychological Tricks to Push Its Drivers' Buttons",
-          "publisher": "The New York Times",
-          "date": "2017-04-02",
+          "url": "https://www.cnbc.com/2017/06/07/uber-used-stock-based-comp-algorithm-paying-women-less-report.html",
+          "title": "Uber used stock-based comp algorithm paying women less: Report",
+          "publisher": "CNBC",
+          "date": "2017-06-07",
           "type": "news-article"
         },
         {
-          "url": "https://www.workerinfoexchange.org/post/new-research-exposes-deepening-exploitation-of-uber-drivers-by-algorithmic-pay",
-          "title": "New Research Exposes Deepening Exploitation of Uber Drivers by Algorithmic Pay",
-          "publisher": "Worker Info Exchange",
-          "date": "2025-06-23",
-          "type": "ngo-report"
+          "url": "https://www.buzzfeednews.com/article/carolineodonovan/some-uber-employees-are-getting-a-raise",
+          "title": "Uber Is Giving Thousands Of Employees Raises",
+          "publisher": "BuzzFeed News",
+          "date": "2017",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.thedrive.com/news/12674/uber-is-closing-its-gender-pay-gap-report-says",
+          "title": "Uber Is Closing Its Gender Pay Gap, Report Says",
+          "publisher": "The Drive",
+          "date": "2017-07",
+          "type": "news-article"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/uber-compensation-algorithm-pays-new-hires-less. Datum: NYT-Reportage April 2017 als Anker; Algorithmus selbst war früher eingeführt. Severity 3 (systemische Lohnungleichheit über grosse Belegschaft, aber kein katastrophaler Einzelschaden). Verification 3. needs-review weil zweite Source eine späte NGO-Studie ist; Mainstream-Reuters/Bloomberg-Detailberichte zur Compensation-Algorithmus-Kontroverse nicht klar getrennt von Dynamic-Pricing.",
-    "dedup_hint": "uber compensation algorithm pays new hires less | usa | 2017"
+    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/uber-compensation-algorithm-pays-new-hires-less. Datum: NYT-Reportage April 2017 als Anker; Algorithmus selbst war früher eingeführt. Severity 3 (systemische Lohnungleichheit über grosse Belegschaft, aber kein katastrophaler Einzelschaden). Verification 3. needs-review weil zweite Source eine späte NGO-Studie ist; Mainstream-Reuters/Bloomberg-Detailberichte zur Compensation-Algorithmus-Kontroverse nicht klar getrennt von Dynamic-Pricing. | Sichtung 2026-10-23: Review: verified (mittel) - Das dokumentierte Ereignis ist der Bericht von The Information vom Juni 2017, den CNBC am 07.06.2017 aufgriff: Uber optimierte Angebote für Neueinstellungen per Algorithmus, das verfestigte Lohnlücken zwischen Männern und Frauen. BuzzFeed News berichtete unabhängig, der Algorithmus schätze das niedrigste noch akzeptierte Gehalt, und meldete Gehaltserhöhungen. The Drive berichtete über die Angleichung an den Median ab 1. August 2017. Die bisherigen Quellen tragen den Fall nicht: Der NYT-Artikel vom April 2017 behandelt psychologische Tricks gegenüber Fahrer:innen, die Worker-Info-Exchange-Studie von 2025 die Fahrervergütung. | Verify: confirm - Keine Dublette: Grep über data/incidents nach Uber + Gehalt/Vergütung/Lohnlücke/Neueinstellung findet nur Fälle zur Fahrervergütung (Surge Pricing, Upfront Fares, Gig-Worker), keinen Fall zu Angestelltengehältern. Ereignis und Datum sind belegt: CNBC berichtete am 07.06.2017 über den Bericht von The Information (Angebote für Neueinstellungen per Algorithmus optimiert, um Anteilseigner zu schützen; Lohnlücken zwischen Männern und Frauen verfestigt). BuzzFeed News (URL in den Suchergebnissen) nennt den Algorithmus, der das niedrigste akzeptierte Gehalt schätzt, und die Gehaltserhöhungen. The Drive (URL in den Suchergebnissen) berichtet über die Angleichung ab 1. August an den Median. Reuters bestätigte später die Anpassung der Gehälter unterhalb des Medians im August 2017. Es ist ein algorithmisches Entscheidungssystem über Beschäftigte mit Diskriminierungseffekt und fällt damit unter die Aufnahmeregel. Die NYT-Quelle zu Fahrertricks und die WIE-Studie von 2025 tragen den Fall nicht; ihre Entfernung im Review ist richtig. Korrekturen: (1) BuzzFeed berichtet über den Algorithmus nicht unabhängig, sondern unter Berufung auf The Information. Alle Angaben zum Algorithmus stammen aus einem einzigen Primärbericht mit anonymen Insidern, Uber hat sich nicht geäußert. Deshalb Verification 2 statt 3. (2) Der Satz 'Uber kündigte an, das System zu ändern' ist nicht belegt: Laut The Information wurde der Algorithmus geändert, Uber kommentierte zunächst nicht. Die Beschreibung ist entsprechend korrigiert. | Patch: startDate, name_de, name_en, description_de, description_en, incidentType, actors, source-, source-, source+, source+, source+, description_de, description_en, candidate_verification",
+    "dedup_hint": "uber compensation algorithm pays new hires less | usa | 2017",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "us-ji-chang-son-tesla-model-x-suddenly-accelerates-injuring-2016-aiaaic0555",
@@ -6200,30 +6252,29 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0500",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "verified",
     "candidate_data": {
-      "name_de": "USA: Waze lotst Tourist:innen in einen Bootsanleger am Lake Champlain",
-      "name_en": "USA: Waze routes tourists into Lake Champlain boat launch",
-      "startDate": "2018",
+      "name_de": "USA: Waze lotst Jeep in Burlington über eine Bootsrampe auf den zugefrorenen Lake Champlain",
+      "name_en": "USA: Waze routes Jeep down Burlington boat ramp onto frozen Lake Champlain",
+      "startDate": "2018-01-12",
       "location": {
-        "name_de": "Lake Champlain, Vermont, USA",
-        "name_en": "Lake Champlain, Vermont, USA",
+        "name_de": "Burlington, Vermont, USA",
+        "name_en": "Burlington, Vermont, USA",
         "country": "US",
-        "lat": 44.5346,
-        "lng": -73.3308
+        "lat": 44.4759,
+        "lng": -73.2121
       },
       "incidentType": [
-        "autonomous-vehicle",
-        "data-misuse"
+        "malfunction"
       ],
       "candidate_severity": 2,
-      "candidate_verification": 2,
-      "description_de": "Tourist:innen, die in Vermont mit der Navigations-App Waze unterwegs waren, wurden bei Dunkelheit und Nebel auf einen Bootsanleger am Lake Champlain geleitet; das Fahrzeug rutschte ins Wasser. Der Fall wird in mehreren KI-Incident-Datenbanken als Beispiel für Routingschäden durch crowdsourced Map-Daten geführt; eine belastbare Original-Reportage konnte mit den vorhandenen Suchen nicht klar bestätigt werden.",
-      "description_en": "Tourists driving through Vermont with the Waze navigation app were directed onto a boat launch at Lake Champlain during dark, foggy conditions, and their vehicle slid into the icy water. The case appears in several AI-incident databases as an example of routing harms from crowdsourced map data; primary reporting was not clearly confirmed via the available searches.",
+      "candidate_verification": 3,
+      "description_de": "Am 12. Januar 2018 folgte ein Fahrer in Burlington, Vermont, bei starkem Regen und leichtem Nebel den Anweisungen der Navigations-App Waze, die ihn geradeaus führte, und fuhr über eine schlecht beleuchtete Bootsrampe nahe der Coast-Guard-Station auf den zugefrorenen Lake Champlain. Die drei Insassen, die sich den Jeep für eine Ausflugsfahrt von einer Bekannten geliehen hatten, konnten sich befreien, bevor das Fahrzeug etwa 30 Meter vom Ufer entfernt durch das Eis brach und versank. Laut Polizei war der Fahrer nicht berauscht. Ein Google-Sprecher erklärte, Waze könne nicht erklären, wie das Fahrzeug im See gelandet sei. Die Halterin gab an, Waze habe ihr bei erneuter Eingabe des Ziels dieselbe Route angezeigt. Waze ist ein algorithmisches Navigationssystem, das Kartendaten mit Meldungen von Nutzer:innen kombiniert; ein KI-Einsatz im engeren Sinn ist nicht belegt.",
+      "description_en": "On January 12, 2018, a driver in Burlington, Vermont, followed directions from the navigation app Waze in heavy rain and slight fog that told him to go straight, and drove down a poorly lit boat ramp near the Coast Guard station onto frozen Lake Champlain. The three occupants, who had borrowed the Jeep from an acquaintance for a sightseeing trip, managed to get out before the vehicle broke through the ice about 100 feet from shore and sank. Police said the driver was not intoxicated. A Google spokesperson said Waze could not explain how the car ended up in the lake. The owner said Waze gave her the same directions when she entered the same destination. Waze is an algorithmic navigation system that combines map data with user reports; the use of AI in the narrower sense is not documented.",
       "actors": [
         {
           "name": "Waze (Google)",
-          "type": "organization",
+          "type": "company",
           "systems": [
             "Waze routing engine"
           ]
@@ -6231,16 +6282,38 @@
       ],
       "sources": [
         {
-          "url": "https://incidentdatabase.ai/cite/227/",
-          "title": "Incident 227: Waze App Allegedly Caused Tourists' Car to End up in Lake Champlain, Vermont",
-          "publisher": "AI Incident Database",
-          "date": "2018",
-          "type": "ngo-report"
+          "url": "https://www.timesofisrael.com/waze-sends-us-driver-into-lake/",
+          "title": "Route of all evil: Waze sends US driver into lake",
+          "publisher": "The Times of Israel",
+          "date": "2018-01",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.foxnews.com/tech/driver-ends-up-in-lake-champlain-after-using-googles-waze.print",
+          "title": "Driver ends up in Lake Champlain after using Google's Waze",
+          "publisher": "Fox News",
+          "date": "2018-01",
+          "type": "news-article"
+        },
+        {
+          "url": "https://www.thedrive.com/article/17978/man-follows-waze-drives-jeep-down-boat-launch-into-lake",
+          "title": "Man follows Waze, drives Jeep down boat launch into lake",
+          "publisher": "The Drive",
+          "date": "2018-01",
+          "type": "news-article"
+        },
+        {
+          "url": "https://jalopnik.com/drivers-claim-that-waze-gps-app-instructed-them-to-driv-1822384644",
+          "title": "Drivers Claim That Waze GPS App Instructed Them To Drive Into A Lake",
+          "publisher": "Jalopnik",
+          "date": "2018-01",
+          "type": "news-article"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/waze-directs-tourists-to-drive-into-vermont-lake. Datum unsicher — Stub-Jahr 2018 übernommen. Nur eine Aggregator-Source gefunden (AI Incident Database); status needs-review. Lokale Vermont-Newsquelle wäre für verified-Status nötig.",
-    "dedup_hint": "waze directs tourists to drive into vermont lake | usa | 2018"
+    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/waze-directs-tourists-to-drive-into-vermont-lake. Datum unsicher — Stub-Jahr 2018 übernommen. Nur eine Aggregator-Source gefunden (AI Incident Database); status needs-review. Lokale Vermont-Newsquelle wäre für verified-Status nötig. | Sichtung 2026-10-23: Review: verified (hoch) - Mehrere Medien belegen den Fall: Times of Israel, Fox News, The Drive und Jalopnik, teils unter Berufung auf USA Today. Am 12.01.2018 folgte ein Fahrer in Burlington, Vermont, bei Nebel der Waze-Route geradeaus über eine Bootsrampe auf den zugefrorenen Lake Champlain. Die drei Insassen retteten sich, bevor der Jeep einbrach. Polizeichef Brandon del Pozo bestätigte, dass der Fahrer nicht berauscht war. Die Routing-Empfehlung hat Menschen direkt gefährdet, das passt zur Aufnahmeregel. Es gibt keine Dublette: Der Bestands-Fall zu den Waldbränden 2017 ist ein anderes Ereignis. | Verify: confirm - Keine Dublette: Grep nach Waze/Champlain/Burlington findet im Bestand nur den Waldbrand-Fall von 2017 (Kalifornien), Google Maps in Südafrika und Autobahnsperrungen in Deutschland/Benelux. Das sind andere Ereignisse. Ereignis und Datum sind belegt: Am 12.01.2018 fuhr ein Jeep in Burlington, Vermont, der Waze-Route folgend über eine Bootsrampe auf den zugefrorenen Lake Champlain. Belege: Times of Israel mit Zitaten aus dem Polizeibericht ('followed the GPS directions, which advised to go straight'), Fox News, Jalopnik und The Drive. Die Drive zitiert den Polizeichef, der bestätigt, dass der Fahrer nicht berauscht war. Alle vier Patch-URLs sind in den Suchergebnissen aufgetaucht. Der Routing-Algorithmus steuerte die Insassen in eine Gefahrenlage, das passt zur Aufnahmeregel und zur Typisierung vergleichbarer Bestandsfälle als malfunction (Waldbrand 2017, Südafrika 2023). Korrekturen: (1) Wetter vertauscht. Der Polizeibericht laut Times of Israel nennt 'heavy rain and slight fog', der Review-Patch dagegen dichten Nebel und leichten Regen. (2) Laut Aufnahmeregel muss ein algorithmisches System ohne belegte KI als solches benannt werden. Ein entsprechender Satz ist ergänzt. | Patch: startDate, name_de, name_en, description_de, description_en, incidentType, candidate_verification, location.name_de, location.name_en, location.lat, location.lng, actors, source-, source+, source+, source+, source+, description_de, description_en",
+    "dedup_hint": "waze directs tourists to drive into vermont lake | usa | 2018",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "us-gig-economy-drivers-rejected-by-faulty-checkr-automated-2015-aiaaic0484",
@@ -7986,9 +8059,9 @@
     "round": "round-6-aiaaic-batch-c-2026-06-05",
     "status": "needs-review",
     "candidate_data": {
-      "name_de": "Großbritannien: Keele University analysiert YouTube-Videos autistischer Kinder ohne Einwilligung",
-      "name_en": "UK: Keele University analyses YouTube videos of autistic children without consent",
-      "startDate": "2019",
+      "name_de": "Großbritannien: Keele University trainiert Autismus-KI mit YouTube-Videos von Kindern ohne Einwilligung, Preprint zurückgezogen",
+      "name_en": "UK: Keele University trains autism AI on YouTube videos of children without consent, preprint withdrawn",
+      "startDate": "2019-07-29",
       "location": {
         "name_de": "Keele, Staffordshire, Großbritannien",
         "name_en": "Keele, Staffordshire, UK",
@@ -7997,17 +8070,19 @@
         "lng": -2.2734
       },
       "incidentType": [
-        "data-misuse",
-        "discrimination"
+        "data-misuse"
       ],
-      "candidate_severity": 3,
+      "candidate_severity": 2,
       "candidate_verification": 2,
-      "description_de": "Ein Forschungsteam der Keele University um Bappaditya Mandal trainierte 2019 ein KI-Programm zur Vorhersage von Autismus-Spektrum-Störungen anhand von Körperbewegungen, die aus öffentlich auf YouTube hochgeladenen Videos autistischer Kinder gewonnen wurden. Weder die Kinder noch ihre Eltern hatten der wissenschaftlichen Auswertung der privaten Heimvideos zugestimmt. Der Fall warf Fragen zur Forschungsethik bei der Nutzung scheinbar öffentlicher Online-Inhalte über Minderjährige mit Behinderung auf.",
-      "description_en": "In 2019 a Keele University research team led by Bappaditya Mandal trained an AI program to predict autism spectrum disorder from body motion features extracted from publicly uploaded YouTube videos of autistic children. Neither the children nor their parents had opted in to having home videos used for scientific research, raising ethics concerns about scraping nominally public content depicting minors with disabilities.",
+      "description_de": "Ein Forschungsteam der Keele University (Andrew Cook, Bappaditya Mandal, Donna Berry, Matthew Johnson) veröffentlichte am 29. Juli 2019 ein Preprint zur automatischen Erkennung typischer und atypischer Verhaltensweisen bei Kindern mit Autismus. Grundlage war eine Datenbank aus YouTube-Clips, die Kinder bei Bewegungen wie Händeflattern, Drehen oder Schaukeln in alltäglicher Umgebung zeigen; vortrainierte neuronale Netze extrahierten daraus Skelett-Keypoints. Eine Einwilligung der gezeigten Kinder oder ihrer Eltern lag nach Medienberichten nicht vor. Am 17. September 2019 zogen die Autoren das Preprint wegen unzureichender oder fehlerhafter Angaben im Ethikgenehmigungsprotokoll zurück.",
+      "description_en": "A Keele University research team (Andrew Cook, Bappaditya Mandal, Donna Berry, Matthew Johnson) published a preprint on 29 July 2019 on automatically screening typical and atypical behaviours in children with autism. It was based on a database of YouTube clips showing children performing movements such as hand flapping, spinning or rocking in everyday settings, from which pretrained neural networks extracted skeleton keypoints. According to media reports, neither the children shown nor their parents had consented. On 17 September 2019 the authors withdrew the preprint due to insufficient or erroneous information in the ethics approval protocol.",
       "actors": [
         {
           "name": "Keele University",
-          "type": "organization"
+          "type": "organization",
+          "systems": [
+            "Autism behaviour screening model (skeleton keypoints from YouTube videos)"
+          ]
         },
         {
           "name": "Andrew Cook; Bappaditya Mandal; Donna Berry; Matthew Johnson",
@@ -8021,11 +8096,26 @@
           "publisher": "TrialSite News",
           "date": "2019-09",
           "type": "analysis"
+        },
+        {
+          "url": "https://arxiv.org/abs/1907.12537v2",
+          "title": "Towards Automatic Screening of Typical and Atypical Behaviors in Children With Autism (withdrawn)",
+          "publisher": "arXiv",
+          "date": "2019-09-17",
+          "type": "research-paper"
+        },
+        {
+          "url": "https://keele-repository.worktribe.com/output/403072/towards-automatic-screening-of-typical-and-atypical-behaviors-in-children-with-autism",
+          "title": "Towards automatic screening of typical and atypical behaviors in children with autism",
+          "publisher": "Keele University Repository",
+          "date": "2019",
+          "type": "research-paper"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (not used as source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/keele-university-youtube-autism-prediction-study | Nur eine Quelle (TrialSite News) verifizierbar — needs-review, da Mainstream-Coverage spärlich.",
-    "dedup_hint": "keele university study 'predicts' kids' autism without consent | uk | 2019"
+    "researcher_notes": "AIAAIC backref (not used as source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/keele-university-youtube-autism-prediction-study | Nur eine Quelle (TrialSite News) verifizierbar — needs-review, da Mainstream-Coverage spärlich. | Sichtung 2026-10-23: Review: weiterhin needs-review - Die Studie ist real: Cook, Mandal, Berry und Johnson (Keele) stellten sie am 29.07.2019 auf arXiv ein. Das Modell wurde mit YouTube-Clips von Kindern mit atypischen Bewegungen trainiert. Die Autoren zogen das Preprint am 17.09.2019 zurück, wegen Fehlern im Ethikgenehmigungsprotokoll. Belegt ist das aber nur durch die eigene Rückzugsnotiz der Autoren und die Keele-Repository-Seite. Die einzige Presse-Quelle (TrialSite News) erschien in drei Suchen nicht, eine weitere unabhängige Medienquelle fand sich nicht. Regel (a) ist damit nicht erfüllt. | Patch: startDate, name_de, name_en, description_de, description_en, incidentType, candidate_severity, actors, source+, source+",
+    "dedup_hint": "keele university study 'predicts' kids' autism without consent | uk | 2019",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "cn-niulanshan-first-secondary-school-classroom-care-system-2018-aiaaic0272",
@@ -8431,7 +8521,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0259",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "Deutschland: Segensroboter BlessU-2 erteilt in Wittenberg Bibel-Segen — kontroverse Reformations-Installation",
       "name_en": "Germany: BlessU-2 blessing robot delivers Bible blessings in Wittenberg — controversial Reformation installation",
@@ -8480,8 +8570,9 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (not used as source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/blessu-2-segensroboter-blessing-robot | Severity 1 — Kunst-/Diskussions-Installation ohne realen Personenharm. Grenzwertig für AIStrikeMap, daher needs-review.",
-    "dedup_hint": "blessu-2 'segensroboter' blessing robot religious role | germany | 2017"
+    "researcher_notes": "AIAAIC backref (not used as source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/blessu-2-segensroboter-blessing-robot | Severity 1 — Kunst-/Diskussions-Installation ohne realen Personenharm. Grenzwertig für AIStrikeMap, daher needs-review. | Sichtung 2026-10-23: Review: abgelehnt - Kein KI-Bezug und kein Schaden: BlessU-2 war eine Kunst- und Diskussionsinstallation der EKHN in der Lichtkirche der Weltausstellung Reformation 2017. Laut evangelisch.de wurden die Segenstexte von Menschen vorab eingesprochen, nicht von Software erzeugt. Die Kritik von Theolog:innen (etwa Lukas Ohly bei der Evangelischen Akademie Frankfurt, September 2017) ist eine theologische Meinungsdebatte und kein Menschenrechtsvorfall. Damit ist weder Regel (d) noch die Aufnahmeregel erfüllt, auch nicht als Kontextfall.",
+    "dedup_hint": "blessu-2 'segensroboter' blessing robot religious role | germany | 2017",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "cn-beijings-ai-powered-pan-china-racial-profiling-2019-aiaaic0257",
@@ -9772,7 +9863,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0237",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "Spanien: Sex-Roboter-Etablissement in Barcelona nach Protesten geschlossen",
       "name_en": "Spain: Barcelona sex robot brothel forced to relocate after protests",
@@ -9819,8 +9910,9 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/barcelona-robot-brothel-triggers-local-backlash | Robotik (kein eigentliches ML-System), Severity auf 2 gesenkt (kein dokumentierter Schaden an Personen, eher Branchenstreit). Quellenlage dünn, daher needs-review.",
-    "dedup_hint": "barcelona robot brothel triggers local backlash | spain | 2017"
+    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/barcelona-robot-brothel-triggers-local-backlash | Robotik (kein eigentliches ML-System), Severity auf 2 gesenkt (kein dokumentierter Schaden an Personen, eher Branchenstreit). Quellenlage dünn, daher needs-review. | Sichtung 2026-10-23: Review: abgelehnt - Kein KI- oder Algorithmus-Bezug: Lumi Dolls betrieb ab Februar 2017 in Barcelona ein Etablissement mit Silikon- bzw. Polymer-Puppen, ohne KI-System oder automatisierte Entscheidung. Laut The Next Web (23.03.2017) zog es nach einer Polizeiprüfung und der Kündigung durch den Vermieter an einen geheimen Ort um. Die Berufsvereinigung der Sexarbeiter:innen sah ihren Beruf laut LM Neuquén nicht bedroht; einen Aprosex-Protest belegen die Suchtreffer nicht. Die Quellenlage ist dünn (Blasting News ist Boulevard) und ein Grundrechtsschaden durch ein KI-System ist nicht dokumentiert.",
+    "dedup_hint": "barcelona robot brothel triggers local backlash | spain | 2017",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "cn-athena-chu-deepfake-face-swap-prompts-2019-aiaaic0236",
@@ -12472,11 +12564,11 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0186",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "verified",
     "candidate_data": {
-      "name_de": "USA: GM-Cruise-Robotaxi missachtet Fußgänger an Zebrastreifen (Stub-Datum unbestätigt)",
-      "name_en": "USA: GM Cruise robotaxi fails to yield to pedestrian at crosswalk (stub year unconfirmed)",
-      "startDate": "2018",
+      "name_de": "USA: Polizei stoppt selbstfahrenden Cruise-Testwagen in San Francisco wegen Missachtung des Fußgängervorrangs",
+      "name_en": "USA: Police cite self-driving Cruise test car in San Francisco for failing to yield to pedestrian",
+      "startDate": "2018-03",
       "location": {
         "name_de": "San Francisco, Kalifornien, USA",
         "name_en": "San Francisco, California, USA",
@@ -12487,28 +12579,54 @@
       "incidentType": [
         "autonomous-vehicle"
       ],
-      "candidate_severity": 3,
-      "candidate_verification": 2,
-      "description_de": "GM-Cruise-Robotaxis waren in San Francisco in mehreren Vorfällen verwickelt, bei denen sie an Zebrastreifen nicht ordnungsgemäß für Fußgänger anhielten. Der mediale Höhepunkt der Berichterstattung lag 2022-2024, als die kalifornische DMV einer ungeschützten Familie gegenüber einer beinahe-Kollision nachging und ein Cruise-Fahrzeug eine Fußgängerin überrollte. Das in der Stub-Quelle genannte Datum 2018 ließ sich in zwei Suchen nicht eigenständig belegen.",
-      "description_en": "GM Cruise robotaxis were involved in multiple San Francisco incidents in which they failed to yield properly to pedestrians at crosswalks. Most documented reporting concentrates on 2022-2024, when the California DMV looked into a near-miss with a family and a Cruise vehicle dragged a pedestrian. The 2018 date provided in the stub source could not be independently substantiated in two searches.",
+      "candidate_severity": 2,
+      "candidate_verification": 3,
+      "description_de": "Im März 2018 hielt ein Motorradpolizist in San Francisco einen von der GM-Tochter Cruise betriebenen Chevrolet Bolt an, der im autonomen Modus fuhr, weil das Fahrzeug einem Fußgänger am Zebrastreifen nicht den Vorrang gelassen habe. Da ein Fahrzeug nicht belangt werden kann, erhielt der Sicherheitsfahrer den Strafzettel, obwohl er das Auto zu diesem Zeitpunkt nicht steuerte. Cruise bestritt den Verstoß: Laut den Sensordaten sei der Fußgänger an der engsten Stelle rund 10,8 Fuß (etwa 3,3 Meter) entfernt gewesen, eine Kollisionsgefahr habe nicht bestanden. Der Fall machte die ungeklärte Frage sichtbar, wer bei Verkehrsverstößen autonomer Fahrzeuge verantwortlich ist.",
+      "description_en": "In March 2018 a motorcycle officer in San Francisco pulled over a Chevrolet Bolt operated by GM subsidiary Cruise that was driving in autonomous mode, saying the car had failed to yield to a pedestrian in a crosswalk. Because a vehicle cannot be cited, the safety driver received the ticket even though he was not controlling the car at the time. Cruise disputed the violation, saying its sensor data showed the pedestrian was about 10.8 feet (roughly 3.3 metres) away at the closest point and that there was no danger of a collision. The case highlighted the unresolved question of who is responsible when autonomous vehicles commit traffic violations.",
       "actors": [
         {
-          "name": "General Motors / Cruise LLC",
-          "type": "organization"
+          "name": "Cruise LLC",
+          "type": "company",
+          "systems": [
+            "Cruise self-driving system (Chevrolet Bolt EV test vehicle)"
+          ]
+        },
+        {
+          "name": "General Motors",
+          "type": "company"
+        },
+        {
+          "name": "San Francisco Police Department",
+          "type": "government"
         }
       ],
       "sources": [
         {
-          "url": "https://www.nbcnews.com/business/business-news/driverless-cruise-vehicle-accused-nearly-hitting-kids-what-happened-rcna138865",
-          "title": "Self-driving Cruise vehicle accused of nearly hitting kids in two separate close calls one day apart",
-          "publisher": "NBC News",
-          "date": "2024-03-04",
+          "url": "https://www.cbsnews.com/sanfrancisco/news/self-driving-car-ticketed-san-francisco/",
+          "title": "Self-Driving Car Ticketed; Company Disputes Violation",
+          "publisher": "CBS San Francisco (KPIX)",
+          "date": "2018-04",
+          "type": "news-article"
+        },
+        {
+          "url": "https://thedrive.com/news/19805/one-of-gms-cruise-self-driving-cars-just-got-a-ticket-in-california",
+          "title": "One of GM's Cruise Self Driving Cars Just Got a Ticket in California",
+          "publisher": "The Drive",
+          "date": "2018-04",
+          "type": "news-article"
+        },
+        {
+          "url": "https://autoguide.com/auto-news/2018/04/self-driving-chevy-bolt-ev-ticketed-in-san-francisco.html",
+          "title": "Self-Driving Chevy Bolt EV Ticketed in San Francisco",
+          "publisher": "AutoGuide",
+          "date": "2018-04",
           "type": "news-article"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/gm-cruise-fails-to-yield-to-pedestrian-at-crosswalk | startDate unbestaetigt - 2018-Berichte nicht gefunden, dokumentierte 'fail-to-yield-crosswalk'-Vorfaelle erst 2022+ (NBC, DMV). Status needs-review; ggf. spaeter rejecten oder auf 2022 schieben.",
-    "dedup_hint": "gm cruise fails to yield to pedestrian at crosswalk | usa | 2018"
+    "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/gm-cruise-fails-to-yield-to-pedestrian-at-crosswalk | startDate unbestaetigt - 2018-Berichte nicht gefunden, dokumentierte 'fail-to-yield-crosswalk'-Vorfaelle erst 2022+ (NBC, DMV). Status needs-review; ggf. spaeter rejecten oder auf 2022 schieben. | Sichtung 2026-10-23: Review: verified (hoch) - Das Stub-Jahr 2018 stimmt doch: Im März 2018 stoppte ein Motorradpolizist in San Francisco einen autonom fahrenden Cruise-Chevrolet-Bolt wegen Nichtgewährung des Fußgängervorrangs am Zebrastreifen. Laut AutoGuide war es der 20.03., laut GTPlanet der 19.03. Der Sicherheitsfahrer erhielt den Strafzettel; Cruise bestritt den Verstoß, der Fußgänger sei laut Sensordaten 10,8 Fuß entfernt gewesen. Belegt durch CBS San Francisco, The Drive und AutoGuide. Die bisherige NBC-Quelle von 2024 betrifft die Beinahe-Unfälle mit Kindern von 2023, also ein anderes Ereignis, und wird entfernt. Es gibt keine Dublette zum Bestands-Fall von 2023 (Fußgängerin mitgeschleift). | Verify: confirm - Keine Dublette: Grep nach Cruise + Strafzettel/Ticket/Vorrang/Zebrastreifen und Cruise + 2018 findet keinen Bestands-Fall zu diesem Vorfall. Die Bestands-Fälle zu Cruise betreffen 2022-2023 (mitgeschleifte Fußgängerin, Feuerwehr, Bus, Polizeikontrolle 2022) sowie die Motorradkollision. Ereignis und Datum sind belegt: Im März 2018 (19. oder 20.03., die Quellen widersprechen sich) stoppte ein Motorradpolizist in San Francisco an der Ecke 14th St./Harrison St. einen autonom fahrenden Cruise-Chevrolet-Bolt wegen Nichtgewährung des Fußgängervorrangs. Der Sicherheitsfahrer erhielt den Strafzettel. Cruise bestritt den Verstoß unter Verweis auf 10,8 Fuß Abstand laut Sensordaten. Belege: CBS San Francisco (KPIX), The Drive, AutoGuide und GTPlanet. Alle drei Patch-URLs sind in den Suchergebnissen aufgetaucht. Es handelt sich um ein KI-gesteuertes Fahrzeug, das einen Fußgänger gefährdet haben soll, also ein Sicherheitsbezug. Severity 2 entspricht vergleichbaren Bestandsfällen (Uber-Vorfahrtsverletzung in Tempe: 2; Cruise-Polizeikontrolle 2022: 2). Die NBC-Quelle von 2024 betrifft ein anderes Ereignis (Beinahe-Unfälle mit Kindern 2023), ihre Entfernung ist richtig. Name, Beschreibung, Akteure und incidentType im Review-Patch sind quellentreu; weitere Korrekturen sind nicht nötig. | Patch: startDate, name_de, name_en, description_de, description_en, candidate_severity, candidate_verification, actors, source-, source+, source+, source+",
+    "dedup_hint": "gm cruise fails to yield to pedestrian at crosswalk | usa | 2018",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "us-wells-fargo-software-error-leads-to-hundreds-of-wrongful-2015-aiaaic0185",
@@ -12848,7 +12966,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0179",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "duplicate",
     "candidate_data": {
       "name_de": "Deutschland: Studie zu emotionaler Manipulation durch humanoide Roboter (Stub-Daten unvollständig)",
       "name_en": "Germany: Study on emotional manipulation by humanoid robots (stub data incomplete)",
@@ -12881,8 +12999,10 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC-Backref im Stub leer. Wahrscheinlich Konflation mit Vollmer/Plymouth/Bielefeld-Studie 2018 (Science Robotics, 'Children conform, adults resist'). Quelle 1: Plymouth-Pressemitteilung. needs-review weil nur 1 Source und Stub-Verbindung unklar.",
-    "dedup_hint": "robot-human emotional manipulation | germany | 2018"
+    "researcher_notes": "AIAAIC-Backref im Stub leer. Wahrscheinlich Konflation mit Vollmer/Plymouth/Bielefeld-Studie 2018 (Science Robotics, 'Children conform, adults resist'). Quelle 1: Plymouth-Pressemitteilung. needs-review weil nur 1 Source und Stub-Verbindung unklar. | Sichtung 2026-10-23: Review: Dublette von deutschland-uk-studie-belegt-dass-humanoide-roboter-kinder-zur-konformitaet-draengen-2018 - Der Kandidat, so wie er angelegt ist, beschreibt die Asch-Konformitätsstudie von Plymouth und Bielefeld in Science Robotics. Er nennt dasselbe Datum (15.08.2018) und dieselbe Pressemitteilung als einzige Quelle wie der Bestands-Fall deutschland-uk-studie-belegt-dass-humanoide-roboter-kinder-zur-konformitaet-draengen-2018. Das ist dasselbe Ereignis.",
+    "dedup_hint": "robot-human emotional manipulation | germany | 2018",
+    "duplicate_of": "deutschland-uk-studie-belegt-dass-humanoide-roboter-kinder-zur-konformitaet-draengen-2018",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "de-robot-children-2018-aiaaic0178",
@@ -14095,11 +14215,11 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0150",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "USA: Deepfake mischte Alec Baldwins Gesicht mit Donald Trumps Mimik",
       "name_en": "USA: Deepfake blended Alec Baldwin's face with Donald Trump's expressions",
-      "startDate": "2018-04-26",
+      "startDate": "2018-02",
       "location": {
         "name_de": "Online (USA)",
         "name_en": "Online (USA)",
@@ -14122,16 +14242,24 @@
       ],
       "sources": [
         {
-          "url": "https://www.theverge.com/2018/4/26/17287400/deepfake-alec-baldwin-donald-trump-snl-derpfakes",
-          "title": "This Alec Baldwin-Donald Trump face swap shows where deepfakes are headed",
-          "publisher": "The Verge",
-          "date": "2018-04-26",
+          "url": "https://thenextweb.com/news/deepfakes-algorithm-nails-donald-trump-in-most-convincing-fake-yet",
+          "title": "Deepfakes algorithm nails Donald Trump in most convincing fake yet",
+          "publisher": "The Next Web",
+          "date": "2018-02-21",
+          "type": "news-article"
+        },
+        {
+          "url": "https://movieweb.com/trump-alec-baldwin-face-swap-video-deepfake-fake-news/",
+          "title": "Trump/Alec Baldwin face swap video (deepfake)",
+          "publisher": "Movieweb",
+          "date": "2018-02",
           "type": "news-article"
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: aiaaic.org/.../alec-baldwin-deepfake-spoofs-donald-trump. Nur eine starke Mainstream-Quelle gefunden -> needs-review. Sehr niedriger Schadenswert (Demo/Parodie).",
-    "dedup_hint": "alec baldwin donald trump deepfake sparks disinformation fears | usa | 2018"
+    "researcher_notes": "AIAAIC backref: aiaaic.org/.../alec-baldwin-deepfake-spoofs-donald-trump. Nur eine starke Mainstream-Quelle gefunden -> needs-review. Sehr niedriger Schadenswert (Demo/Parodie). | Sichtung 2026-10-23: Review: abgelehnt - Das Video gibt es: Ein derpfakes-Clip legte Trumps Gesicht über Alec Baldwins SNL-Parodie. The Next Web berichtete am 2018-02-21, Hot Air am 2018-02-20 und Movieweb ebenfalls darüber. Es stammt also aus dem Februar 2018, nicht vom 26.04.2018. Die angegebene Verge-URL war in keiner Suche auffindbar und ist vermutlich rekonstruiert. Es handelt sich um eine offen als Parodie und Technik-Demo veröffentlichte Satire. Eine Täuschung, Verbreitung als Desinformation oder ein Schaden für Betroffene ist nicht belegt. Die 'Sorge vor Desinformation' ist Spekulation, kein dokumentierter Vorfall (Regel d). | Patch: startDate, source-, source+, source+",
+    "dedup_hint": "alec baldwin donald trump deepfake sparks disinformation fears | usa | 2018",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "ca-cadillac-fairview-discovered-to-be-covertly-using-facial-2018-aiaaic0148",
@@ -15006,7 +15134,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0133",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "duplicate",
     "candidate_data": {
       "name_de": "USA: Studie wies Geschlechter-Verzerrung in Google-Bildersuche für Berufe nach",
       "name_en": "USA: Study documented gender bias in Google Image Search for occupations",
@@ -15053,8 +15181,10 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: aiaaic.org/.../google-images-mis-represents-womens-job-roles. Studienjahr 2015 (Stub-Jahr 2018 unklar - evtl. AIAAIC ordnet einen späteren Vergleichstest ein); needs-review wegen Datumsunsicherheit.",
-    "dedup_hint": "study: google images mis-represents womens' job roles | usa | 2018"
+    "researcher_notes": "AIAAIC backref: aiaaic.org/.../google-images-mis-represents-womens-job-roles. Studienjahr 2015 (Stub-Jahr 2018 unklar - evtl. AIAAIC ordnet einen späteren Vergleichstest ein); needs-review wegen Datumsunsicherheit. | Sichtung 2026-10-23: Review: Dublette von usa-google-bildersuche-unterrepraesentiert-weibliche-ceos-studie-2015 - Der Kandidat beschreibt die UW/UMBC-Studie 'Unequal Representation and Gender Stereotypes in Image Search Results for Occupations' vom 2015-04-09 und zitiert dieselbe UW-News-URL. Genau diese Studie ist im Bestand bereits als usa-google-bildersuche-unterrepraesentiert-weibliche-ceos-studie-2015 erfasst, mit demselben Datum, denselben Autoren-Institutionen und derselben Kernaussage. Das AIAAIC-Stub-Jahr 2018 passt wahrscheinlich zu einer anderen Studie: Pew Research Center, 'Gender and Jobs in Online Image Searches', 2018-12-17. Diese ist ein eigenes Ereignis, wird im Kandidaten aber nicht beschrieben.",
+    "dedup_hint": "study: google images mis-represents womens' job roles | usa | 2018",
+    "duplicate_of": "usa-google-bildersuche-unterrepraesentiert-weibliche-ceos-studie-2015",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "gb-uk-gangs-matrix-database-accused-of-being-not-fit-for-2018-aiaaic0132",
@@ -15119,7 +15249,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0131",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "USA: Google-Photos-Assistent erstellte automatisch grotesk verzerrtes Ski-Panorama",
       "name_en": "USA: Google Photos Assistant auto-generated grotesquely warped ski panorama",
@@ -15155,8 +15285,9 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: aiaaic.org/.../google-photos-assistant-ski-panorama-fail. Stub-Jahr 2018 mutmaßlich falsch; viral 2017. Nur eine Mainstream-Quelle gefunden -> needs-review.",
-    "dedup_hint": "google photos assistant ski panorama fail | usa | 2018"
+    "researcher_notes": "AIAAIC backref: aiaaic.org/.../google-photos-assistant-ski-panorama-fail. Stub-Jahr 2018 mutmaßlich falsch; viral 2017. Nur eine Mainstream-Quelle gefunden -> needs-review. | Sichtung 2026-10-23: Review: abgelehnt - Ein Fehler beim automatischen Zusammensetzen eines Panoramas ohne Schaden und ohne Grundrechtsbezug. Er ist eine virale Kuriosität, kein Menschenrechts-Vorfall (Regel d). Zur Faktenlage: Der Vorfall stammt aus dem Januar 2018, nicht von 2017 (PetaPixel 2018-01-23, Engadget 2018-01-23, Gigazine 2018-01-19, Quartz). Ort war Lake Louise in Banff, Kanada, nicht die USA. Die Fotos zeigten den Freund des Reddit-Nutzers Alex Harker, nicht dessen Frau. Die Kandidaten-URL petapixel.com/2017/01/22/... ist rekonstruiert; der echte Artikel liegt unter petapixel.com/2018/01/23/google-photos-ai-panorama-failed-best-way.",
+    "dedup_hint": "google photos assistant ski panorama fail | usa | 2018",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "global-study-google-hate-speech-detection-system-tricked-by-2018-aiaaic0130",
@@ -17388,7 +17519,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC091",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "Indien: Roboter Mitra bei Global Entrepreneurship Summit teilweise funktionsunfähig",
       "name_en": "India: Robot Mitra partially malfunctions at Global Entrepreneurship Summit",
@@ -17433,8 +17564,9 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/robot-mitra-greeting-failure | needs-review: Severity 1, Vorfall trivial (PR-Glitch). Kein dokumentierter Schaden. incidentType passt schlecht — eher kein klassischer AI-Harm-Case. Editorial-Entscheidung beim Promote nötig.",
-    "dedup_hint": "robot mitra malfunctions at india entrepreneuship summit | india | 2017"
+    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/robot-mitra-greeting-failure | needs-review: Severity 1, Vorfall trivial (PR-Glitch). Kein dokumentierter Schaden. incidentType passt schlecht — eher kein klassischer AI-Harm-Case. Editorial-Entscheidung beim Promote nötig. | Sichtung 2026-10-23: Review: abgelehnt - Der Vorfall am 2017-11-28 auf dem GES in Hyderabad ist belegt (The Quint, Deccan Chronicle, The Better India, Analytics India Magazine). Modi und Ivanka Trump drückten gleichzeitig, und der Invento-Roboter Mitra nannte nur Modis Namen. Laut The Better India funktionierte es nach einem erneuten Antippen. Es ist ein kurzer PR-Aussetzer ohne Schaden, ohne Betroffene und ohne Grund- oder Menschenrechtsbezug (Regel d). Der incidentType data-misuse ist zudem sachfremd.",
+    "dedup_hint": "robot mitra malfunctions at india entrepreneuship summit | india | 2017",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "de-amazon-alexa-holds-2am-party-when-owner-is-2017-aiaaic090",
@@ -18883,7 +19015,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC063",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "needs-review",
+    "status": "rejected",
     "candidate_data": {
       "name_de": "Global: 50 Millionen USD durch Smart-Contract-Lücke aus 'The DAO' abgezogen",
       "name_en": "Global: USD 50m siphoned from 'The DAO' via smart-contract bug",
@@ -18938,8 +19070,9 @@
         }
       ]
     },
-    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/the-dao-smart-contracts-hack | needs-review: AIAAIC führt den Fall, aber es handelt sich um einen klassischen Smart-Contract-Re-Entrancy-Bug ohne KI/ML-Komponente. Promote-Entscheidung kuratorisch klären.",
-    "dedup_hint": "usd 50m siphoned in the dao hack | multiple | 2016"
+    "researcher_notes": "AIAAIC backref: https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/the-dao-smart-contracts-hack | needs-review: AIAAIC führt den Fall, aber es handelt sich um einen klassischen Smart-Contract-Re-Entrancy-Bug ohne KI/ML-Komponente. Promote-Entscheidung kuratorisch klären. | Sichtung 2026-10-23: Review: abgelehnt - Der Re-Entrancy-Angriff auf The DAO am 17.06.2016 (rund 3,6 Mio. ETH in einen Child-DAO) und der Hard Fork vom 20.07.2016 sind gut belegt (The Block, Chainlink, CoinDesk). Es handelt sich aber um eine klassische Smart-Contract-Sicherheitslücke, also einen Software-Exploit. Ein KI-System oder ein algorithmisches Entscheidungssystem, das über Menschen entscheidet oder sie steuert, spielt keine Rolle. Damit fällt der Fall nicht unter die Aufnahmeregel vom 2026-10-23. Der Schaden ist ein Vermögensverlust von Investoren ohne Menschenrechtsbezug, also auch kein sinnvoller Kontextfall.",
+    "dedup_hint": "usd 50m siphoned in the dao hack | multiple | 2016",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "us-knightscope-k5-security-robot-hits-2016-aiaaic062",
