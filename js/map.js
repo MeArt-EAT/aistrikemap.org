@@ -31,11 +31,18 @@ const StrikeMap = (function () {
       zoomControl: false
     });
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
-      subdomains: 'abcd',
+    // CARTO basemaps serve an 'API KEY REQUIRED' watermark to keyless clients since 2026-10;
+    // Esri's dark gray canvas needs no key (base layer + separate label layer).
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; <a href="https://www.esri.com/">Esri</a> &middot; Esri, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       noWrap: true,
-      maxZoom: 19
+      maxZoom: 19,
+      maxNativeZoom: 16
+    }).addTo(map);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+      noWrap: true,
+      maxZoom: 19,
+      maxNativeZoom: 16
     }).addTo(map);
 
     L.control.zoom({ position: 'bottomright' }).addTo(map);
@@ -224,7 +231,7 @@ const StrikeMap = (function () {
     globalIncidents = incidents;
     if (!globalControl) {
       var GlobalControl = L.Control.extend({
-        options: { position: 'bottomleft' },
+        options: { position: 'bottomright' }, // left corner is covered by the filter panel
         onAdd: function () {
           var btn = L.DomUtil.create('button', 'global-control');
           btn.type = 'button';

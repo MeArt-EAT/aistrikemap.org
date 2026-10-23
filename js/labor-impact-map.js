@@ -58,10 +58,16 @@ const LaborImpactMap = (function () {
       maxZoom: 6
     }).setView([20, 10], 2);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap, &copy; CARTO',
-      subdomains: 'abcd',
-      maxZoom: 19
+    // CARTO basemaps serve an 'API KEY REQUIRED' watermark to keyless clients since 2026-10;
+    // Esri's dark gray canvas needs no key (base layer + separate label layer).
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; <a href="https://www.esri.com/">Esri</a> &middot; Esri, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 19,
+      maxNativeZoom: 16
+    }).addTo(map);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 19,
+      maxNativeZoom: 16
     }).addTo(map);
 
     markerLayer = L.layerGroup().addTo(map);
