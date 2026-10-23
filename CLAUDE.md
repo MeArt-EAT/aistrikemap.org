@@ -111,6 +111,7 @@ Each incident JSON-LD file contains:
 - **Add radar situation**: Create JSON in `data/radar/`, run `node scripts/bundle-incidents.js`, then `node scripts/generate-feed.js`
 - **Add labor-impact case**: Create JSON in `data/labor-impact-cases/{firma-slug}-{jahr}-{kontext}.json` per `_schema.md` (mind. 2 sources, ai_attribution_strength 1-5, tags + severity_class), then run `node scripts/bundle-labor-cases.js` (regenerates aggregate + per-country bundles)
 - **Regenerate feed**: `node scripts/generate-feed.js` (Atom feed at `feed.xml`)
+- **Sync manifest**: `node scripts/sync-index.js` after bulk edits (types, retractions, context cases) keeps `data/index.json` in line with the incident files
 - **Regenerate sitemap**: `node scripts/generate-sitemap.js` (static pages + all non-retracted incidents + radar; lastmod from `asm:metadata.lastUpdated`)
 - **Add i18n string**: Add key to both `i18n/de.json` and `i18n/en.json`
 - **Audit translations**: `node scripts/audit-bilingual-incidents.js` — prüft jede Incident-Datei auf DE↔EN-Konsistenz, fehlende EN-Felder, Längen-Plausibilität, Eigennamen-Erhaltung UND CLAUDE.md-Umlaut-Compliance (Kategorie `umlaut_transliteration`). Schreibt Report nach `audit-translation-report.md`.

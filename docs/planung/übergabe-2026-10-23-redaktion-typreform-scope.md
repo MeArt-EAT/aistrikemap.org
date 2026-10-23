@@ -74,3 +74,27 @@ Verfahren neu: Die Dublette bleibt als zurückgezogener Eintrag mit `asm:mergedI
 ## Disk-Hygiene
 
 Agenten-Transkripte dieser und der beiden Vorgänger-Sessions geprunt (102 MB + 169 MB → 31 MB, `journal.jsonl` behalten). Verwaiste `data/incidents/*.json.tmp.*` (16 Dateien vom Juni) gelöscht.
+
+---
+
+## Nachtrag (2026-10-23 mittags): Deploy, Abstimmung, Launch-Blocker
+
+**Deploy:** Push `c3bab96..fef9255` nach Merge von PR #232 (Cloud-Linie: tote Links Runde 2, Release-Inventar; Konflikte nur STATUS.md + Bundle). Live geprüft: Esri-Karte ohne Stempel, Zähler 2284/113/123, Weltweit-Button, Konsole leer.
+
+**Zwei lokale Sessions parallel** (Abstimmung per SendMessage): diese Session = git/Push/Bundles/Promotion/Launch-Blocker; Session „Projektfortschritt mit Kontext" = die 11 Websuche-Recherchepunkte aus §8 und künftig Sichtungswellen. Regel: nur eine Session bündelt und committet; vor `apply-review-verdicts.js` bzw. Promotion gegenseitig Bescheid geben (beide schreiben `data/incident-candidates/*.json`).
+
+**Launch-Blocker** aus `docs/planung/release-inventar-2026-10-23.md` (dort Abschnitt F mit Stand je Punkt):
+- `252f96f`: B4 jsDelivr in Datenschutz § 6, B8 Verifikation 5 → 4 + Skalenprüfung im Validator, B9 Radar-Popup zweisprachig, S3 Sitemap-Generator (2442 URLs, redaktionelles Datum, ohne Zurückgezogenes), S13 README neu (inkl. AIAAIC-Namensnennung), S14 SRI für Chart.js + markercluster, S18 CLAUDE.md.
+- `07070a7`: B2 Finanzierungslinks (Open Collective, GitHub Sponsors → 404) auf Wunsch des Projekteigners ausgeblendet, bis die Konten existieren; Liste als HTML-Kommentar mit Reaktivierungs-Anleitung.
+
+**Offen mit Eigner-Entscheidung:** B1 Impressum (Name, Anschrift, Telefon, § 18 MStV), B3 Kontaktweg Crowdsourcing, B6 AIAAIC-Lizenz (Share-Alike), B10 Career ausblenden/Beta, B11 Radar-Pflege, S1/S2/S4/S8/S11/S12/S16. Juristisch: EU AI Act Art. 50(4) (B5).
+
+### Recherche-Workflow Redaktionspunkte (§8.2), Parallel-Session „Projektfortschritt mit Kontext"
+
+Ein Workflow mit je Fall Bearbeiter (Websuche) → adversarialer Faktenprüfer (Websuche) → Redaktionsprüfer, 30 Agenten, 123 Suchen; danach Validator 11/11 ohne ERROR. Integration in dieser Session: Validator korpusweit 2452/2452, Audit 0 (zwei Fehlalarme „EU" = Estados Unidos → Audit-Ausnahme), `data/index.json` per neuem `scripts/sync-index.js` an Typ-Reform, Rückzüge und Kontextfälle angeglichen (1288 Einträge), Bundles, Sitemap, Feed neu, Browser-Check.
+
+Umgesetzt: Johansson (WaPo 22.05.2024 belegt, voller Satz DE/EN), **Lauren Book wieder aktiv** (Book nannte die Bilder selbst „deep fakes", FOX 13; KI-Erzeugung amtlich nicht festgestellt, entsprechend zugeordnet), Stadtrat-Bots (Stufe 3 → 2, KI unbestätigt), Psychologin (Stufe 4 → 3, TASSC 35 Rn. 54-57), Raymundo Ramos (OFAC 14.04.2026 sb0440, neutral und zugeordnet, 2 Dateien), Indonesien (TL bereinigt, Titel präzisiert), **Türkei → Kontextfall**, Glovo-Caporalato (2026-02-09, controllo giudiziario), ZipRecruiter → HireVue zugeschnitten, VRChat (NME kanonisch). Zählung unverändert: 2284 aktiv, 144 Kontextfälle, 113 Länder.
+
+Offen: (a) **Ulmen-Fernandes** zurückgesetzt, braucht Entscheidung des Eigners (LTO: LG/OLG Hamburg hielten „Deepfake-Fotos" im Eilverfahren für unstreitig – spricht gegen Kontextfall/Rückzug; Volltext 7 W 72/26 nötig). (b) Psychologin: Urteils-URL AustLII nachtragen, bnlaw-URL „cult-leaders" ersetzen. (c) Typ-Fragen: `political-pressure` bei Türkei, `labor-exploitation` bei der HireVue-Datei. (d) Stadtrat-Bots und Indonesien sind Grenzfälle zur Aufnahmeregel (Eigner). (e) Neue URLs mit 403 beim nächsten Link-Check prüfen (engagemedia ?p=18921, bisnis, tempo, article19, WaPo). (f) Sichtungswelle 5 nicht gestartet; Reihenfolge mit der Promotion klären (`apply-review-verdicts.js` schreibt dieselben Kandidatendateien).
+
+**Lektion:** Zwei Sessions im selben Ordner funktionieren mit fester Aufteilung: eine Session für git/Bundle/STATUS/Übergabe, die andere ändert nur angekündigte Dateien und meldet sie; Ausgangsfassungen vorher in den Scratchpad kopieren, damit die Prüfer gegen HEAD vergleichen können.

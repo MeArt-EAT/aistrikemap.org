@@ -431,7 +431,9 @@ const NAME_EQUIVALENTS = {
   'Selenskyj': ['Zelensky', 'Zelenskyy', 'Zelenskiy'],
   'Erdogan': ['Erdoğan'],
   'Saudi-Arabien': ['Saudi Arabia'],
-  'Tuerkei': ['Turkey', 'Türkiye']
+  'Tuerkei': ['Turkey', 'Türkiye'],
+  // Spanish source titles: "EU" = Estados Unidos, correctly rendered as "US"
+  'EU': ['US', 'U.S.', 'United States']
 };
 
 // Word-boundary-aware proper-name presence check. Always uses word boundaries

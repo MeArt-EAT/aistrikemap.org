@@ -5,8 +5,8 @@
   },
   "@type": "Event",
   "@id": "https://aistrikemap.org/incidents/indonesien-ki-social-scoring",
-  "name": "Indonesien: Automatisierte Inhaltssperren und PSE-Registrierungspflicht für Plattformen",
-  "description": "Das indonesische Kommunikationsministerium Kominfo betreibt seit 2018 automatisierte Systeme zur Suche und Sperrung 'negativer' Online-Inhalte und verpflichtet private Plattformen seit der Ministerialverordnung 5/2020 zur Registrierung (PSE) und zur schnellen Löschung beanstandeter Inhalte. Im Juli 2022 sperrt Kominfo nach Ablauf der Registrierungsfrist zeitweise Dienste wie Steam, Epic Games, Yahoo und PayPal; Organisationen wie SAFEnet und LBH Jakarta kritisieren die Regelung als Einschränkung der Meinungsfreiheit. Ein KI-gestütztes Social-Scoring-System für Bürger ist in den ausgewerteten Quellen nicht dokumentiert.",
+  "name": "Indonesien: Crawler AIS sucht automatisiert nach Sperrinhalten - Sperrliste und PSE-Registrierungspflicht für Plattformen",
+  "description": "Das indonesische Kommunikationsministerium Kominfo sperrt Websites über die zentrale Sperrliste Internet Positif und betreibt seit 2018 den automatisierten Crawler AIS, der anhand von Suchbegriffen nach 'negativen' Online-Inhalten sucht; nach Angaben des Ministeriums nutzt er KI zur schnellen Einordnung, die Sperrung veranlasst ein Kominfo-Team. Seit der Ministerialverordnung 5/2020 müssen sich private Plattformen registrieren (PSE) und beanstandete Inhalte schnell löschen. Im Juli 2022 sperrt Kominfo nach Ablauf der Registrierungsfrist zeitweise Dienste wie Steam, Epic Games, Yahoo und PayPal; Organisationen wie SAFEnet und LBH Jakarta kritisieren die Regelung als Einschränkung der Meinungsfreiheit. Ein KI-gestütztes Social-Scoring-System für Bürger ist in den ausgewerteten Quellen nicht dokumentiert.",
   "startDate": "2020",
   "location": {
     "@type": "Place",
@@ -56,18 +56,32 @@
   "asm:verificationLevel": 3,
   "asm:reverseTimeline": [
     {
-      "date": "2020",
+      "date": "2017-01",
       "phase": "infrastructure",
-      "title": "Ausweitung der digitalen Infrastruktur und Zensur",
-      "description": "Indonesien weitet sein Internet-Positif-Blockiersystem aus und nutzt automatisierte Systeme zur Erkennung 'negativer' Inhalte. Über 800.000 Websites werden blockiert - darunter nicht nur Pornografie und Glücksspiel, sondern auch LGBTQ+-Inhalte und regierungskritische Seiten. Das System nutzt KI-basierte Keyword-Erkennung und URL-Filtering.",
+      "title": "Sperrliste Internet Positif: rund 800.000 Websites gesperrt",
+      "description": "Kominfo führt mit Internet Positif eine zentrale Sperrliste für 'negative' Websites. Im Januar 2017 meldet das Ministerium rund 800.000 gesperrte Websites (Stand Dezember 2016), nach eigenen Angaben zu etwa 90 Prozent wegen Pornografie oder Glücksspiel, einige wegen Falschmeldungen. Unter den gesperrten Seiten ist auch die papuanische Nachrichtenseite Suara Papua.",
       "sources": [
-        "https://freedomhouse.org/country/indonesia/freedom-net/2023",
-        "https://www.thejakartapost.com/news/2017/01/07/indonesia-blocks-800000-websites.html"
+        "https://www.thejakartapost.com/news/2017/01/07/indonesia-blocks-800000-websites.html",
+        "https://www.engagemedia.org/?p=18921"
       ],
-      "title_de": "Ausweitung der digitalen Infrastruktur und Zensur",
-      "title_en": "Expansion of digital infrastructure and censorship",
-      "description_de": "Indonesien weitet sein Internet-Positif-Blockiersystem aus und nutzt automatisierte Systeme zur Erkennung 'negativer' Inhalte. Über 800.000 Websites werden blockiert - darunter nicht nur Pornografie und Glücksspiel, sondern auch LGBTQ+-Inhalte und regierungskritische Seiten. Das System nutzt KI-basierte Keyword-Erkennung und URL-Filtering.",
-      "description_en": "Indonesia expands its Internet Positif blocking system and uses automated systems to detect 'negative' content. More than 800,000 websites are blocked - including not only pornography and gambling but also LGBTQ+ content and government-critical sites. The system uses AI-based keyword detection and URL filtering."
+      "title_de": "Sperrliste Internet Positif: rund 800.000 Websites gesperrt",
+      "title_en": "Internet Positif blocklist: around 800,000 websites blocked",
+      "description_de": "Kominfo führt mit Internet Positif eine zentrale Sperrliste für 'negative' Websites. Im Januar 2017 meldet das Ministerium rund 800.000 gesperrte Websites (Stand Dezember 2016), nach eigenen Angaben zu etwa 90 Prozent wegen Pornografie oder Glücksspiel, einige wegen Falschmeldungen. Unter den gesperrten Seiten ist auch die papuanische Nachrichtenseite Suara Papua.",
+      "description_en": "Kominfo maintains Internet Positif, a central blocklist for 'negative' websites. In January 2017, the ministry reports around 800,000 blocked websites (as of December 2016), by its own account about 90 percent for pornography or gambling and some for spreading hoaxes. The Papuan news site Suara Papua is among the blocked sites."
+    },
+    {
+      "date": "2018",
+      "phase": "infrastructure",
+      "title": "Crawler AIS durchsucht das Netz nach 'negativen' Inhalten",
+      "description": "2018 nimmt Kominfo die 'Mesin AIS' in Betrieb, einen automatisierten Crawler, der anhand von Suchbegriffen, die Mitarbeiter eingeben, Websites und Social-Media-Konten nach Glücksspiel, Pornografie, Betrug, Falschmeldungen und Radikalismus durchsucht. Nach Angaben des Ministeriums nutzt AIS künstliche Intelligenz, um negative Inhalte schnell zu bestimmen. Meldet das Werkzeug einen Verstoß, lässt ein Kominfo-Team die Seite oder das Konto in Abstimmung mit Internetanbietern und Plattformen sperren.",
+      "sources": [
+        "https://kabar24.bisnis.com/read/20201008/15/1302725/demo-uu-cipta-kerja-benarkah-kominfo-akan-blokir-media-sosial",
+        "https://selular.id/2023/09/jurus-kominfo-berantas-judi-online-gunakan-ai/"
+      ],
+      "title_de": "Crawler AIS durchsucht das Netz nach 'negativen' Inhalten",
+      "title_en": "AIS crawler searches the web for 'negative' content",
+      "description_de": "2018 nimmt Kominfo die 'Mesin AIS' in Betrieb, einen automatisierten Crawler, der anhand von Suchbegriffen, die Mitarbeiter eingeben, Websites und Social-Media-Konten nach Glücksspiel, Pornografie, Betrug, Falschmeldungen und Radikalismus durchsucht. Nach Angaben des Ministeriums nutzt AIS künstliche Intelligenz, um negative Inhalte schnell zu bestimmen. Meldet das Werkzeug einen Verstoß, lässt ein Kominfo-Team die Seite oder das Konto in Abstimmung mit Internetanbietern und Plattformen sperren.",
+      "description_en": "In 2018, Kominfo puts the 'Mesin AIS' into operation, an automated crawler that searches websites and social media accounts for gambling, pornography, fraud, hoaxes and radicalism using keywords entered by staff. According to the ministry, AIS uses artificial intelligence to identify negative content quickly. When the tool flags a violation, a Kominfo team has the site or account blocked in coordination with internet service providers and platforms."
     },
     {
       "date": "2020-11",
@@ -86,16 +100,16 @@
     {
       "date": "2021-05",
       "phase": "infrastructure",
-      "title": "Biometrische E-KTP-Datenbank und Datenlecks",
-      "description": "Indonesiens 2011 gestartete biometrische ID-Datenbank E-KTP erfasst Fingerabdrücke, Iris-Scans und Gesichtsbilder von weit über 100 Millionen Bürgern. Im Mai 2021 bietet ein Hacker im Forum RaidForums 279 Millionen Datensätze zum Verkauf an, deren Struktur laut Kominfo den Daten der staatlichen Krankenversicherung BPJS Kesehatan entspricht. Das Leck zeigt die Verwundbarkeit der zentralisierten Dateninfrastruktur; SAFEnet dokumentiert zugleich steigende Zahlen von Überwachung gegen Aktivisten und Journalisten.",
+      "title": "Datenleck von 279 Mio. BPJS-Kesehatan-Datensätzen",
+      "description": "Indonesiens 2011 gestartete biometrische ID-Datenbank E-KTP erfasst Fingerabdrücke, Iris-Scans und Gesichtsbilder von weit über 100 Millionen Bürgern. Im Mai 2021 bietet ein Hacker im Forum RaidForums 279 Millionen Datensätze zum Verkauf an, deren Struktur laut Kominfo den Daten der staatlichen Krankenversicherung BPJS Kesehatan entspricht. Das Leck zeigt die Verwundbarkeit der zentralisierten Dateninfrastruktur.",
       "sources": [
         "https://en.tempo.co/amp/1464868/police-build-team-to-investigate-data-leak-of-279-mn-indonesians",
         "https://www.secureidnews.com/news-item/indonesia-close-to-rolling-out-ambitious-biometric-based-national-id-card-project/"
       ],
-      "title_de": "Biometrische E-KTP-Datenbank und Datenlecks",
-      "title_en": "Biometric e-KTP database and data breaches",
-      "description_de": "Indonesiens 2011 gestartete biometrische ID-Datenbank E-KTP erfasst Fingerabdrücke, Iris-Scans und Gesichtsbilder von weit über 100 Millionen Bürgern. Im Mai 2021 bietet ein Hacker im Forum RaidForums 279 Millionen Datensätze zum Verkauf an, deren Struktur laut Kominfo den Daten der staatlichen Krankenversicherung BPJS Kesehatan entspricht. Das Leck zeigt die Verwundbarkeit der zentralisierten Dateninfrastruktur; SAFEnet dokumentiert zugleich steigende Zahlen von Überwachung gegen Aktivisten und Journalisten.",
-      "description_en": "Indonesia's biometric ID database e-KTP, launched in 2011, records fingerprints, iris scans and facial images of well over 100 million citizens. In May 2021, a hacker offers 279 million records for sale on the RaidForums forum; according to Kominfo, their structure matches the data of the state health insurer BPJS Kesehatan. The leak exposes the vulnerability of the centralised data infrastructure; at the same time, SAFEnet documents rising surveillance against activists and journalists."
+      "title_de": "Datenleck von 279 Mio. BPJS-Kesehatan-Datensätzen",
+      "title_en": "Data leak of 279 million BPJS Kesehatan records",
+      "description_de": "Indonesiens 2011 gestartete biometrische ID-Datenbank E-KTP erfasst Fingerabdrücke, Iris-Scans und Gesichtsbilder von weit über 100 Millionen Bürgern. Im Mai 2021 bietet ein Hacker im Forum RaidForums 279 Millionen Datensätze zum Verkauf an, deren Struktur laut Kominfo den Daten der staatlichen Krankenversicherung BPJS Kesehatan entspricht. Das Leck zeigt die Verwundbarkeit der zentralisierten Dateninfrastruktur.",
+      "description_en": "Indonesia's biometric ID database e-KTP, launched in 2011, records fingerprints, iris scans and facial images of well over 100 million citizens. In May 2021, a hacker offers 279 million records for sale on the RaidForums forum; according to Kominfo, their structure matches the data of the state health insurer BPJS Kesehatan. The leak exposes the vulnerability of the centralised data infrastructure."
     },
     {
       "date": "2022-07",
@@ -113,15 +127,16 @@
     {
       "date": "2024",
       "phase": "consequences",
-      "title": "Wachsender Widerstand und internationale Kritik",
-      "description": "Indonesische Zivilgesellschaft und Tech-Community protestieren gegen die zunehmende Kontrolle. Die ASEAN-Debatte über KI-Regulierung wird von Indonesiens Ansatz geprägt. Die EU warnt im Rahmen der Handelsbeziehungen vor der Erosion digitaler Rechte. Indonesien bleibt mit 210 Millionen Internet-Nutzer einer der wichtigsten digitalen Märkte Südostasiens.",
+      "title": "Bilanz 2024: rund 4,8 Millionen gesperrte Inhalte seit 2018",
+      "description": "Im Februar 2024 meldet Kominfo, von 2018 bis zum 15. Februar 2024 rund 4,8 Millionen 'negative' Inhalte gesperrt zu haben, davon rund 2,9 Millionen auf Websites und 1,9 Millionen in sozialen Medien; Glücksspiel und Pornografie machen den Großteil der gesperrten Websites aus. Freedom House verzeichnet in Freedom on the Net 2024 (Juni 2023 bis Mai 2024) eine leichte Verbesserung der Internetfreiheit, unter anderem durch schnellere Festnetzanschlüsse, aber weiterhin Strafverfahren, Angriffe und Belästigungen gegen Kritiker, Journalisten und Nutzer wegen ihrer Online-Aktivitäten.",
       "sources": [
-        "https://freedomhouse.org/country/indonesia/freedom-net/2023"
+        "https://en.tempo.co/amp/1836575/kominfo-blocks-over-4-8-million-negative-contents-in-six-years",
+        "https://freedomhouse.org/id/country/indonesia/freedom-net/2024"
       ],
-      "title_de": "Wachsender Widerstand und internationale Kritik",
-      "title_en": "Growing resistance and international criticism",
-      "description_de": "Indonesische Zivilgesellschaft und Tech-Community protestieren gegen die zunehmende Kontrolle. Die ASEAN-Debatte über KI-Regulierung wird von Indonesiens Ansatz geprägt. Die EU warnt im Rahmen der Handelsbeziehungen vor der Erosion digitaler Rechte. Indonesien bleibt mit 210 Millionen Internet-Nutzer einer der wichtigsten digitalen Märkte Südostasiens.",
-      "description_en": "Indonesian civil society and the tech community protest against the growing controls. The ASEAN debate on AI regulation is shaped by Indonesia's approach. The EU warns, in the context of trade relations, of the erosion of digital rights. With 210 million internet users, Indonesia remains one of the most important digital markets in Southeast Asia."
+      "title_de": "Bilanz 2024: rund 4,8 Millionen gesperrte Inhalte seit 2018",
+      "title_en": "2024 tally: around 4.8 million items blocked since 2018",
+      "description_de": "Im Februar 2024 meldet Kominfo, von 2018 bis zum 15. Februar 2024 rund 4,8 Millionen 'negative' Inhalte gesperrt zu haben, davon rund 2,9 Millionen auf Websites und 1,9 Millionen in sozialen Medien; Glücksspiel und Pornografie machen den Großteil der gesperrten Websites aus. Freedom House verzeichnet in Freedom on the Net 2024 (Juni 2023 bis Mai 2024) eine leichte Verbesserung der Internetfreiheit, unter anderem durch schnellere Festnetzanschlüsse, aber weiterhin Strafverfahren, Angriffe und Belästigungen gegen Kritiker, Journalisten und Nutzer wegen ihrer Online-Aktivitäten.",
+      "description_en": "In February 2024, Kominfo reports that from 2018 to 15 February 2024 it blocked around 4.8 million items of 'negative' content, about 2.9 million on websites and 1.9 million on social media; gambling and pornography account for most of the blocked websites. In Freedom on the Net 2024 (June 2023 to May 2024), Freedom House records a slight improvement in internet freedom, partly due to faster fixed-line connections, but continued criminal charges, attacks and harassment against critics, journalists and users over their online activity."
     }
   ],
   "asm:sources": [
@@ -144,20 +159,65 @@
       "asm:linkHealth": "ok",
       "title_de": "Fulfillment of Digital Rights in Indonesia Worsening: SafeNet",
       "title_en": "Fulfillment of Digital Rights in Indonesia Worsening: SafeNet"
+    },
+    {
+      "url": "https://www.thejakartapost.com/news/2017/01/07/indonesia-blocks-800000-websites.html",
+      "title": "Indonesia blocks 800,000 websites",
+      "publisher": "The Jakarta Post",
+      "date": "2017-01-07",
+      "type": "news-article",
+      "title_de": "Indonesia blocks 800,000 websites",
+      "title_en": "Indonesia blocks 800,000 websites"
+    },
+    {
+      "url": "https://kabar24.bisnis.com/read/20201008/15/1302725/demo-uu-cipta-kerja-benarkah-kominfo-akan-blokir-media-sosial",
+      "title": "Demo UU Cipta Kerja, Benarkah Kominfo Akan Blokir Media Sosial?",
+      "publisher": "Bisnis.com",
+      "date": "2020-10-08",
+      "type": "news-article",
+      "title_de": "Demo UU Cipta Kerja, Benarkah Kominfo Akan Blokir Media Sosial?",
+      "title_en": "Demo UU Cipta Kerja, Benarkah Kominfo Akan Blokir Media Sosial?"
+    },
+    {
+      "url": "https://selular.id/2023/09/jurus-kominfo-berantas-judi-online-gunakan-ai/",
+      "title": "Jurus Kominfo Berantas Judi Online Gunakan AI",
+      "publisher": "Selular.ID",
+      "date": "2023-09",
+      "type": "news-article",
+      "title_de": "Jurus Kominfo Berantas Judi Online Gunakan AI",
+      "title_en": "Jurus Kominfo Berantas Judi Online Gunakan AI"
+    },
+    {
+      "url": "https://en.tempo.co/amp/1836575/kominfo-blocks-over-4-8-million-negative-contents-in-six-years",
+      "title": "Kominfo Blocks Over 4.8 Million Negative Contents in Six Years",
+      "publisher": "Tempo",
+      "date": "2024-02-22",
+      "type": "news-article",
+      "title_de": "Kominfo Blocks Over 4.8 Million Negative Contents in Six Years",
+      "title_en": "Kominfo Blocks Over 4.8 Million Negative Contents in Six Years"
+    },
+    {
+      "url": "https://freedomhouse.org/id/country/indonesia/freedom-net/2024",
+      "title": "Freedom on the Net 2024: Indonesia",
+      "publisher": "Freedom House",
+      "date": "2024-10",
+      "type": "ngo-report",
+      "title_de": "Freedom on the Net 2024: Indonesia",
+      "title_en": "Freedom on the Net 2024: Indonesia"
     }
   ],
   "asm:metadata": {
     "created": "2026-04-02",
-    "lastUpdated": "2026-04-02",
+    "lastUpdated": "2026-10-23",
     "author": "AIStrikeMap",
     "aiGenerated": false,
     "humanVerified": false,
-    "asm:correctionNote": "Title corrected 2026-10-08: the original title claimed AI-driven social scoring, for which no documented system exists; the entry now covers the documented automated content blocking and the platform registration regime. Slug unchanged for permalink stability."
+    "asm:correctionNote": "Title corrected 2026-10-08: the original title claimed AI-driven social scoring, for which no documented system exists; the entry now covers the documented automated content blocking and the platform registration regime. Slug unchanged for permalink stability. Corrected 2026-10-23: removed the unsupported claim of 'AI-based keyword detection'; AIS is now described as a keyword-driven automated crawler whose hits a Kominfo team acts on, with AI use attributed to the ministry (Bisnis.com 2020-10-08, Selular.ID 2023-09); the 800,000 blocked websites are dated to December 2016 as reported in January 2017 (The Jakarta Post) in a separate entry, where the claim about LGBTQ+ and government-critical sites was replaced by the blocking of the Papuan news site Suara Papua (EngageMedia); the 2021 entry title now names the BPJS Kesehatan leak and the unsourced SAFEnet clause was removed; the 2024 consequences entry with unsourced ASEAN/EU statements was replaced by Kominfo's figure of 4.8 million blocked items 2018-2024 (Tempo 2024-02-22) and Freedom on the Net 2024. Corrected 2026-10-23: Freedom on the Net 2024 attributes the improvement only partly ('in part') to faster fixed-line internet speeds, so 'mainly' was changed to 'partly' (Freedom House, Freedom on the Net 2024: Indonesia). Corrected 2026-10-23: title changed from 'automated content blocking' to the AIS crawler that automatically searches for content to block, because blocking decisions are taken by a Kominfo team (Selular.ID 2023-09). Slug unchanged for permalink stability."
   },
-  "name_de": "Indonesien: Automatisierte Inhaltssperren und PSE-Registrierungspflicht für Plattformen",
-  "name_en": "Indonesia: Automated content blocking and mandatory PSE registration for platforms",
-  "description_de": "Das indonesische Kommunikationsministerium Kominfo betreibt seit 2018 automatisierte Systeme zur Suche und Sperrung 'negativer' Online-Inhalte und verpflichtet private Plattformen seit der Ministerialverordnung 5/2020 zur Registrierung (PSE) und zur schnellen Löschung beanstandeter Inhalte. Im Juli 2022 sperrt Kominfo nach Ablauf der Registrierungsfrist zeitweise Dienste wie Steam, Epic Games, Yahoo und PayPal; Organisationen wie SAFEnet und LBH Jakarta kritisieren die Regelung als Einschränkung der Meinungsfreiheit. Ein KI-gestütztes Social-Scoring-System für Bürger ist in den ausgewerteten Quellen nicht dokumentiert.",
-  "description_en": "Indonesia's Ministry of Communication and Information Technology (Kominfo) has operated automated systems since 2018 to search for and block 'negative' online content, and since Ministerial Regulation 5/2020 it obliges private platforms to register (PSE) and to remove flagged content quickly. In July 2022, after the registration deadline expires, Kominfo temporarily blocks services such as Steam, Epic Games, Yahoo and PayPal; organizations such as SAFEnet and LBH Jakarta criticize the rules as a restriction of freedom of expression. An AI-driven social scoring system for citizens is not documented in the sources reviewed.",
+  "name_de": "Indonesien: Crawler AIS sucht automatisiert nach Sperrinhalten - Sperrliste und PSE-Registrierungspflicht für Plattformen",
+  "name_en": "Indonesia: AIS crawler automatically searches for content to block - blocklist and mandatory PSE registration for platforms",
+  "description_de": "Das indonesische Kommunikationsministerium Kominfo sperrt Websites über die zentrale Sperrliste Internet Positif und betreibt seit 2018 den automatisierten Crawler AIS, der anhand von Suchbegriffen nach 'negativen' Online-Inhalten sucht; nach Angaben des Ministeriums nutzt er KI zur schnellen Einordnung, die Sperrung veranlasst ein Kominfo-Team. Seit der Ministerialverordnung 5/2020 müssen sich private Plattformen registrieren (PSE) und beanstandete Inhalte schnell löschen. Im Juli 2022 sperrt Kominfo nach Ablauf der Registrierungsfrist zeitweise Dienste wie Steam, Epic Games, Yahoo und PayPal; Organisationen wie SAFEnet und LBH Jakarta kritisieren die Regelung als Einschränkung der Meinungsfreiheit. Ein KI-gestütztes Social-Scoring-System für Bürger ist in den ausgewerteten Quellen nicht dokumentiert.",
+  "description_en": "Indonesia's Ministry of Communication and Information Technology (Kominfo) blocks websites through the central Internet Positif blocklist and since 2018 has operated the automated crawler AIS, which searches for 'negative' online content using keywords; according to the ministry it uses AI for quick classification, and a Kominfo team initiates the blocking. Since Ministerial Regulation 5/2020, private platforms must register (PSE) and remove flagged content quickly. In July 2022, after the registration deadline expires, Kominfo temporarily blocks services such as Steam, Epic Games, Yahoo and PayPal; organizations such as SAFEnet and LBH Jakarta criticize the rules as a restriction of freedom of expression. An AI-driven social scoring system for citizens is not documented in the sources reviewed.",
   "asm:affectedRights_de": [
     "Meinungsfreiheit",
     "Informationsfreiheit",

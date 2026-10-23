@@ -2,7 +2,7 @@
 
 Geprüft: 345 aktive Fälle, deren Titel und Beschreibung kein KI-/Algorithmus-Stichwort enthalten (plus die in der Entscheidungsvorlage genannten). Je Fall hat ein Agent die ganze Datei gelesen; jede Außerhalb-Einstufung hat ein zweiter Agent adversarial gegengeprüft (sucht ein KI-/Algorithmus-Element). Keine Websuche: Grundlage ist der Dateiinhalt inkl. Timeline, Akteur-Systeme und Korrekturvermerke.
 
-**Nichts davon ist umgesetzt.**
+**Umgesetzt am 2026-10-23** (Entscheidung „Als Kontextfall": 144 Kontextfälle, 10 Rückzüge, 70 Klarstellungen; siehe Übergabe #15). **Spätere Änderungen nach Websuche:** Lauren Book wieder aktiv (KI-Bezug von der Betroffenen selbst benannt), `tuerkei-ki-kurdische-ueberwachung` zusätzlich Kontextfall.
 
 | Kategorie | Fälle |
 |---|---|
