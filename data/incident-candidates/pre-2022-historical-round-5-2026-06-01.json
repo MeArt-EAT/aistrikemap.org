@@ -726,7 +726,7 @@
     "discovered_at": "2026-06-01T15:00:00Z",
     "researcher": "agent-research-pre2022-round-5",
     "round": "round-5-2026-06-01",
-    "status": "needs-review",
+    "status": "duplicate",
     "candidate_data": {
       "name_de": "USA: Clearview AI — Kashmir-Hills NYT-Enthuellung deckt Geheim-Datenbank von 3 Milliarden Gesichtern auf",
       "name_en": "USA: Clearview AI — Kashmir Hill's NYT expose reveals secret database of 3 billion faces",
@@ -775,7 +775,7 @@
       "researcher_notes_internal": "WICHTIG: NYT-Story selbst (Kashmir Hill, 2020-01-18) ist Paywall, aber Existenz und Inhalt sind von IAPP zitiert. Beim Promote zweite Source nachholen (z.B. Wikipedia Clearview AI). Beachten: usa-clearview-ai-scraping existiert bereits in index.json — diese Eintragung ist enger als 'NYT-Expose-Event 2020-01-18', anderer Aspekt. Bei Dedup ggf. mergen.",
       "researcher_notes": "Aufpassen: 'usa-clearview-ai-scraping' und 'clearview-ai-massenuberwachung' existieren bereits in index.json. Dieser Candidate fokussiert *spezifisch* das NYT-Expose-Datum 18.1.2020 als Wende-Ereignis. Falls Pipeline-Dedup zuschlaegt: verwerfen."
     },
-    "researcher_notes": "Siehe internal note: moeglicher Dedup mit existierenden Clearview-Eintraegen, hier nur als Verschriftlichung des Wende-Datums 2020-01-18 (Hill/NYT-Story) eingereicht.",
+    "researcher_notes": "Siehe internal note: moeglicher Dedup mit existierenden Clearview-Eintraegen, hier nur als Verschriftlichung des Wende-Datums 2020-01-18 (Hill/NYT-Story) eingereicht. | Sichtung 2026-10-23: Review: Dublette von usa-clearview-ai-scrapt-milliarden-gesichtsbilder-ohne-einwilligung-2020 - Den Wendepunkt vom 18.01.2020 (NYT-Enthüllung von Kashmir Hill über die Datenbank mit 3 Milliarden Gesichtern) gibt es schon im Bestand. Der Eintrag hat startDate 2020-01-18, beschreibt die NYT-Recherche und hat einen eigenen Timeline-Schritt dafür ('New York Times deckt Clearviews heimliche Datenbank auf'). Daneben gibt es den älteren Sammeleintrag usa-clearview-ai-scraping (2017).",
     "dedup_hint": "clearview | nyt | kashmir hill | 2020 | facial recognition",
     "verification_log": {
       "verified_at": "2026-06-01T20:45:58.031Z",
@@ -790,7 +790,9 @@
       ],
       "match_count": 1,
       "sources_count": 1
-    }
+    },
+    "duplicate_of": "usa-clearview-ai-scrapt-milliarden-gesichtsbilder-ohne-einwilligung-2020",
+    "reviewed_at": "2026-10-23"
   },
   {
     "candidate_id": "hk-protests-facial-recognition-lampposts-2019",
