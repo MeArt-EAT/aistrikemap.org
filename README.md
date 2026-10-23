@@ -1,64 +1,67 @@
 # AIStrikeMap.org
 
-**Interaktive Weltkarte zur Dokumentation KI-bezogener Menschenrechtsvorfaelle**
+**Interaktive Weltkarte zur Dokumentation KI-bezogener Menschenrechtsvorfälle**
 **Interactive world map documenting AI-related human rights incidents**
 
 ---
 
 ## Projektbeschreibung / Project Description
 
-**DE:** AIStrikeMap ist eine investigative Rechercheplattform, die KI-bezogene Menschenrechtsvorfaelle weltweit kartiert. Jeder dokumentierte Vorfall wird als Reverse Timeline dargestellt -- von der technischen Infrastruktur ueber die zugrundeliegende Doktrin bis zum konkreten Ereignis und seinen Konsequenzen (Infrastruktur --> Doktrin --> Ereignis --> Konsequenzen). Die Plattform macht sichtbar, wie algorithmische Systeme in Entscheidungsketten eingebunden sind, die Menschenrechte betreffen.
+**DE:** AIStrikeMap ist eine investigative Rechercheplattform, die KI-bezogene Menschenrechtsvorfälle weltweit kartiert. Jeder dokumentierte Vorfall wird als Reverse Timeline dargestellt – von der technischen Infrastruktur über die zugrundeliegende Doktrin bis zum konkreten Ereignis und seinen Konsequenzen (Infrastruktur → Doktrin → Ereignis → Konsequenzen). Die Plattform macht sichtbar, wie KI- und algorithmische Systeme in Entscheidungsketten eingebunden sind, die Menschenrechte betreffen.
 
-**EN:** AIStrikeMap is an investigative research platform mapping AI-related human rights incidents globally. Each documented incident is presented as a reverse timeline -- tracing the path from technical infrastructure through underlying doctrine to the concrete event and its consequences (Infrastructure --> Doctrine --> Event --> Consequences). The platform reveals how algorithmic systems are embedded in decision chains affecting human rights.
+**EN:** AIStrikeMap is an investigative research platform mapping AI-related human rights incidents globally. Each documented incident is presented as a reverse timeline – tracing the path from technical infrastructure through underlying doctrine to the concrete event and its consequences (Infrastructure → Doctrine → Event → Consequences). The platform reveals how AI and algorithmic systems are embedded in decision chains affecting human rights.
+
+Stand / Status (2026-10-23): rund 2.300 gezählte Vorfälle in über 110 Ländern, alle mit Reverse Timeline, zweisprachig DE/EN.
 
 ## Features
 
 - **Strike-Effekt / Strike effect:** Recent incidents pulse with concentric rings (blitzortung.org-inspired), tiered into hot / warm / cold based on freshness and severity.
 - **LIVE-Ticker:** Scrolling ticker at the bottom of the map surfaces the latest incidents.
-- **Reverse Timeline:** Each incident is presented as Infrastructure -> Doctrine -> Event -> Consequences.
-- **Unverified markers:** Community-submitted incidents (`verificationLevel: 1`) are rendered with a dashed outline, reduced saturation and a "?" badge in the popup until a maintainer verifies them.
-- **Retraction support:** Debunked incidents can be flagged with `asm:retracted: true`. They are hidden by default but a filter toggle reveals them with a strikethrough title and grey marker — preserving research transparency without silently deleting evidence.
-- **Marker clustering:** Overlapping markers are grouped into numbered clusters at low zoom levels (via Leaflet.markercluster), expanding into individual strikes at zoom ≥ 8.
-- **Incident counter:** A live counter badge shows the total number of documented incidents and affected countries.
-- **Filter panel:** Incident type, severity slider, verification-level slider, retracted toggle, reset. Auto-collapses on mobile.
-- **Community reporting:** A "Vorfall melden" CTA in the header opens a structured GitHub Issue template.
-- **Bilingual UI:** German / English via lightweight JSON i18n with persistent DE|EN switcher in the header.
-- **404 page:** Branded fallback that keeps users in the navigation flow.
+- **Reverse Timeline:** Every incident is presented as Infrastructure → Doctrine → Event → Consequences, each step backed by sources (schema v1.1, checked by `scripts/validate-timelines.js`).
+- **16 incident types:** surveillance, predictive policing, autonomous weapons, autonomous driving, discrimination, deepfakes/disinformation, data misuse, military AI, facial recognition, censorship, labor exploitation, political pressure on AI safety, copyright, fraud, malfunction/harmful AI output, environment.
+- **Worldwide list:** Cross-border incidents without a map point are listed via the "Weltweit / Worldwide (n)" button; filters and search apply.
+- **Context cases:** Incidents without a documented AI or algorithmic element (e.g. spyware, internet shutdowns) are kept as labelled context cases, hidden by default and not counted.
+- **Retractions and merges:** Debunked or duplicate entries are flagged (`asm:retracted`, `asm:mergedInto`) instead of deleted; permalinks keep working and the detail panel shows the reason or links to the merged entry.
+- **Unverified markers:** Community-submitted incidents (`verificationLevel: 1`) are rendered with a dashed outline and a "?" badge until they are verified.
+- **Marker clustering:** Overlapping markers are grouped into numbered clusters at low zoom levels (Leaflet.markercluster).
+- **Filter panel:** Incident type, severity, verification level, time range, full-text search, context/retracted toggles. Auto-collapses on mobile.
+- **Community reporting:** A "Vorfall melden" CTA opens a structured GitHub issue template.
+- **Bilingual UI:** German / English via lightweight JSON i18n; every visible string is translated.
 
 ### AI Live-Radar (Phase 2 — MVP)
 
-- **Situation cards:** Curated, contextualised cards for ongoing AI-related developments that are not yet closed incidents. Each card tracks status, severity, actors, dimensions, and a development timeline with source-level bias transparency.
-- **Three radar statuses:** eskalierend (escalating), aktiv (active), stabil (stable), deeskalierend (de-escalating), abgeschlossen (resolved).
-- **Dimension filtering:** Filter by thematic dimensions (military, surveillance, regulation, geopolitics, etc.) and status.
-- **Bias transparency:** Every source is tagged with a perspective label (neutral / kritisch / befuerwortend / unklar), aggregated into a per-card bias summary.
-- **Deep links:** Each situation card has a shareable permalink (`radar.html?radar=slug`).
-- **Lifecycle:** Resolved radar entries can be converted into incident map entries.
+- **Situation cards** for ongoing AI-related developments that are not yet closed incidents: status, severity, actors, dimensions and a development timeline.
+- **Five statuses:** eskalierend (escalating), aktiv (active), stabil (stable), deeskalierend (de-escalating), abgeschlossen (resolved).
+- **Dimension filtering** (military, surveillance, regulation, geopolitics, …) and **bias transparency** per source (neutral / critical / supportive / unclear).
+- **Deep links:** `radar.html?radar=slug`.
+
+### AI & Labor (Phase 2)
+
+Overview of AI-related job changes (theory / plan / reality) and a world map of documented cases; only cases with an explicitly AI-attributed and realized headcount change are counted.
 
 ## Tech Stack
 
-- Pure HTML / CSS / JavaScript (no frameworks, no build step)
-- [Leaflet.js](https://leafletjs.com/) + [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) for interactive maps
-- [CartoDB dark tiles](https://carto.com/) on [OpenStreetMap](https://www.openstreetmap.org/) data
+- Pure HTML / CSS / JavaScript (no frameworks, no build step, no npm)
+- [Leaflet.js](https://leafletjs.com/) + [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster)
+- Esri World Dark Gray basemap (Esri, HERE, Garmin, © OpenStreetMap contributors)
 - JSON-LD / Schema.org markup for incident and radar data
-- Bundled JSON files (`data/all-incidents.json`, `data/all-radar.json`) via `scripts/bundle-incidents.js`
+- Bundles via `scripts/bundle-incidents.js` (`data/all-incidents-lite.json` for the map, full records loaded per incident)
 - Hosted on GitHub Pages
 
 ## Data & Verification Workflow
 
-1. **Report:** User opens an issue via the "Vorfall melden" button (structured form, sources required).
-2. **Review:** Maintainer validates the report, creates `data/incidents/<slug>.json` with `asm:verificationLevel: 1` ("Gemeldet").
-3. **Publish:** Adding the entry to `data/index.json` makes it appear on the map as an **unverified** strike (dashed, desaturated, "?" badge) -- still with full Strike-Effekt animation so it is visible, but clearly flagged as not yet verified.
-4. **Verify:** As sources are cross-checked, `verificationLevel` is raised (2 = Bestaetigt, 3 = Verifiziert, 4 = Analysiert); the marker then switches to its full solid style.
+1. **Research:** Candidates come from community reports, curated research rounds and external databases. Each candidate needs at least two independent sources.
+2. **Review:** A review step checks existence, date, duplicates and AI connection; an independent second pass tries to refute every positive verdict (adversarial cross-check). Only what survives is promoted.
+3. **Timeline:** Each incident gets a sourced reverse timeline, again with an independent check.
+4. **Corrections:** Errors found later are corrected in the record (`asm:correctionNote`); unsubstantiated cases are retracted and stay accessible with the reason.
 
 ### Automated link checking
 
-A weekly GitHub Action ([`.github/workflows/link-check.yml`](.github/workflows/link-check.yml)) runs [`scripts/check-links-v2.js`](scripts/check-links-v2.js) against all source URLs in `data/incidents/**/*.json` and `data/radar/**/*.json`. The V2 checker retries 3× with exponential backoff, rotates between three browser user-agents, and caches results for 7 days in `data/link-cache.json`. Instead of deleting broken sources it classifies each URL as `ok` / `paywall` / `archived` / `dead` and writes the result to `asm:linkHealth` (via `node scripts/check-links-v2.js --apply`, maintainer step). The detail panel renders 🔒 / 📦 / ⚠️ icons accordingly. Dead links open a tracking issue automatically.
+A weekly GitHub Action ([`.github/workflows/link-check.yml`](.github/workflows/link-check.yml)) runs [`scripts/check-links-v2.js`](scripts/check-links-v2.js) against all source URLs and maintains one tracking issue with the results; dead links are replaced in reviewed batches.
 
-### Bot protection
+## Sources / Quellen
 
-- GitHub account required for issue submission (email/phone verification, abuse detection, rate limits).
-- Required fields in the issue template (title, date, location, type, severity, sources, CC-BY-NC-SA consent).
-- No direct write path to the live data -- every entry passes through a human-merged pull request.
+A large part of the incidents is based on entries of the [AIAAIC Repository](https://www.aiaaic.org/) (CC BY-SA 4.0), which were re-researched, translated and extended with reverse timelines for AIStrikeMap.
 
 ## License / Lizenz
 
@@ -71,6 +74,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute.
 
 ## KI-Kennzeichnung / AI Disclosure
 
-Die technische Umsetzung dieses Projekts erfolgt mit Unterstuetzung von Claude Code (Anthropic). Alle Inhalte -- insbesondere Vorfallsdaten, Quellenangaben und redaktionelle Texte -- werden von Menschen kuratiert, recherchiert und verifiziert.
+**DE:** Technische Umsetzung und Recherche erfolgen mit KI-Unterstützung (Claude Code, Anthropic). Jede Angabe muss durch Quellen belegt sein, jede Einstufung durchläuft eine unabhängige, adversariale KI-Gegenprüfung. Eine menschliche Einzelprüfung wird nur angezeigt, wenn sie mit Datum stattgefunden hat. Konzeption, Methodik und redaktionelle Grundsatzentscheidungen verantwortet der Betreiber.
 
-The technical implementation of this project is built with the assistance of Claude Code (Anthropic). All content -- particularly incident data, source references, and editorial texts -- is curated, researched, and verified by humans.
+**EN:** Technical implementation and research are carried out with AI assistance (Claude Code, Anthropic). Every statement must be backed by sources, and every assessment goes through an independent, adversarial AI cross-check. An individual human review is only shown when it has taken place, with its date. Concept, methodology and editorial policy decisions are the responsibility of the operator.

@@ -102,3 +102,29 @@ Engpass ist nicht der Kontext, sondern:
 
 Empfohlene Reihenfolge: B1-B3 sofort (die Seite ist schon öffentlich), dann B4/B7/B8/B9 in
 einem Frontend-Block, dann die Entscheidungslisten B12-B16 als Datenwellen, dann B11 (Radar).
+
+## F. Stand nach Übergabe #15 (2026-10-23, lokale Session)
+
+Erledigt (Details: `docs/planung/übergabe-2026-10-23-redaktion-typreform-scope.md`):
+
+| # | Stand |
+|---|---|
+| B4 | ✔ jsDelivr (Chart.js) in Datenschutz § 6 genannt, unpkg-Text um Leaflet.markercluster ergänzt, Kachelanbieter jetzt Esri statt CARTO. |
+| B5 | ✔ Texte und Kennzeichnung: `humanVerified` korpusweit `false`, Detail-Panel kennzeichnet jeden Eintrag („KI-gestützt recherchiert, quellenbelegt, gegengeprüft"), Footer auf 11 Seiten und Transparenztext neu, „[Name]" entfernt. **Offen:** juristische Einschätzung EU AI Act Art. 50(4). |
+| B7 | ✔ Detail-Panel zeigt Rückzug, Zusammenlegung (mit Link) und Kontextfall mit Begründung; Karte blendet Zurückgezogenes schon beim ersten Laden aus. |
+| B8 | ✔ NSO-Fall Stufe 5 → 4; Validator prüft Severity 1-5 und Verifikation 1-4 als ERROR. |
+| B9 | ✔ Radar-Popup zeigt übersetzten Status und Link-Text, folgt dem Sprachwechsel. |
+| B12 | ✔ Aufnahmeregel beschlossen; Scope-Prüfung von 345 Fällen → 144 Kontextfälle, 10 Rückzüge, 70 Klarstellungen. Restfälle mit Websuche (Lauren Book, Stadtrat-Bots, Psychologin, ZipRecruiter …) bearbeitet die Parallel-Session. |
+| B13 | ✔ 11 Gruppen mit `asm:mergedInto` zusammengelegt (u. a. 3× Ofqual, 2× Klarna, 2× Griechenland). **Offen:** 2× Biden-Robocall, 2× Westfield, FBI/ICE-Führerschein vs. Rekognition-ICE, Mata v. Avianca (korpusweiter Dubletten-Scan empfohlen). |
+| B16 | ✔ teilweise: Klarna als Arbeitslast-Äquivalent (`headcount_basis`), Zähler 84.175. **Offen:** IBM 7.800 (Einstellungsstopp), BT/Accenture (Mehrjahrespläne). |
+| S3 | ✔ Sitemap-Generator: Datum aus `asm:metadata.lastUpdated`, ohne zurückgezogene Einträge, Kontextfälle mit Priorität 0,4; 2442 URLs. |
+| S7 | ✔ `autonomous-vehicle` und die 4 neuen Typen in der Methodik. |
+| S9 | ✔ Typ-Reform: 1169 Fälle umetikettiert, `data-misuse` nur noch Personendaten (381). |
+| S10 | ✔ Button „Weltweit (n)" mit Liste, Zähler „davon n länderübergreifend". |
+| S13 | ✔ README neu (Umlaute, aktuelle Features, AIAAIC-Namensnennung, ehrliche KI-Kennzeichnung). |
+| S14 | ✔ SRI für Chart.js und Leaflet.markercluster (JS + CSS). |
+| S18 | ✔ teilweise: CLAUDE.md (CSS-Dateien, Index, Kacheln, Sitemap, Aufnahmeregel, Typen). |
+
+**Neu entdeckt:** CARTO-Kacheln trugen seit Oktober 2026 auf der Live-Seite den Stempel „API KEY REQUIRED" → auf Esri umgestellt und deployt.
+
+**Weiter offen mit Entscheidung des Projekteigners:** B1 Impressum (Name, Anschrift, Telefon, Verantwortlicher nach § 18 MStV), B2 Finanzierungslinks (Open Collective und GitHub Sponsors liefern 404 – Konten anlegen oder Links entfernen), B3 Kontaktweg Crowdsourcing, B6 AIAAIC-Lizenz (Share-Alike), B10 Career ausblenden/Beta, B11 Radar-Pflege, B15 Personenfälle (Recherche läuft), S1, S2, S4, S8, S11, S12, S16.

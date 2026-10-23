@@ -13,7 +13,7 @@ AIStrikeMap is an investigative research platform mapping AI-related human right
 ## Tech Stack
 
 - **Pure HTML/CSS/JS** — no frameworks, no build step, no npm
-- **Leaflet.js 1.9.4** via CDN (CartoDB dark tiles, OpenStreetMap data)
+- **Leaflet.js 1.9.4** via CDN (Esri World Dark Gray tiles, keyless; CARTO stamps "API KEY REQUIRED" since 2026-10)
 - **JSON-LD / Schema.org** for incident data
 - **Static hosting** on GitHub Pages
 - **GitHub Actions** for weekly link-check (V2: `scripts/check-links-v2.js`)
@@ -22,7 +22,8 @@ AIStrikeMap is an investigative research platform mapping AI-related human right
 
 ```
 index.html              Main page (map + filter + detail panel + ticker)
-css/main.css            Dark theme, all UI components, responsive breakpoints
+css/base.css            :root custom properties (colors, fonts), base styles
+css/layout.css, controls.css, filters.css, map-ui.css, detail-panel.css, subpages.css, responsive.css
 css/leaflet-custom.css  Map markers, pulse animations, ticker, popups
 js/i18n.js              DE/EN language switching (JSON-based)
 js/map.js               Leaflet init, markers, pulse rings, freshness logic
@@ -31,7 +32,8 @@ js/detail-panel.js      Incident detail panel + reverse timeline rendering
 js/filters.js           Type/severity/verification/time-range filtering
 js/nav.js               Hamburger menu + language switcher wiring
 js/strike-ticker.js     Scrolling LIVE ticker (latest 20 incidents)
-data/index.json         Manifest (195 incidents)
+data/index.json         Manifest (all incident files; used by helper scripts, not by the map)
+data/all-incidents-lite.json  Map bundle (built by scripts/bundle-incidents.js)
 data/incidents/*.json   One JSON-LD file per incident
 i18n/de.json            German strings
 i18n/en.json            English strings
@@ -59,7 +61,7 @@ Each incident JSON-LD file contains:
 - **i18n is full-coverage, not menu-only**: AIStrikeMap is an international site. Every user-visible string on every page must have a `data-i18n` attribute and a corresponding key in BOTH `i18n/de.json` AND `i18n/en.json`. This includes body copy, headings, captions, button labels, aria-labels, alt-texts, error messages, status indicators — not just navigation. Hardcoded German text in HTML is a bug. Verify after every UI change that switching DE↔EN actually swaps every visible string.
 - **Umlaute richtig schreiben**: ä, ö, ü, ß — niemals ae, oe, ue, ss. Gilt für: HTML-Inhalte, JSON-Strings als Display-Werte, Markdown-Dokumentation, Commit-Messages, Dateinamen wo deutsch. **Bewusste Ausnahmen** (technische Identifier dürfen transliteriert sein, weil sie Code-Verträge sind und nicht angezeigt werden): URL-Slugs (`incidents/aegypten-…`), JSON-Schlüssel und i18n-Keys (`radar.dimension.ueberwachung`), CSS-Klassennamen, JS-Variablen. Datei-Encoding immer UTF-8.
 - **No npm/node**: Everything via CDN or vanilla JS. Do not introduce a build step.
-- **CSS variables**: All colors/spacing via `:root` custom properties in main.css
+- **CSS variables**: All colors/spacing via `:root` custom properties in css/base.css
 - **i18n keys**: Flat keys in de.json/en.json, referenced via `data-i18n` attributes
 - **Incident types** (16, since the 2026-10-23 type reform): surveillance, predictive-policing, autonomous-weapons, autonomous-vehicle, discrimination, deepfakes (incl. disinformation/influence operations), data-misuse (personal data only — no catch-all), military-ai, facial-recognition, censorship, labor-exploitation, political-pressure (pressure on AI safety only), copyright, fraud, malfunction, environmental. Definitions: `methodik.html` / `methodology.taxonomy.*`. New types need `js/filters.js` (allTypes), `type.*` + `methodology.taxonomy.*` in both i18n files, `methodik.html`. Import tooling has no default type: candidates without `incidentType` are not promoted.
 - **Severity colors**: 1=#3498db, 2=#f39c12, 3=#e67e22, 4=#e74c3c, 5=#ba68c8
@@ -109,6 +111,7 @@ Each incident JSON-LD file contains:
 - **Add radar situation**: Create JSON in `data/radar/`, run `node scripts/bundle-incidents.js`, then `node scripts/generate-feed.js`
 - **Add labor-impact case**: Create JSON in `data/labor-impact-cases/{firma-slug}-{jahr}-{kontext}.json` per `_schema.md` (mind. 2 sources, ai_attribution_strength 1-5, tags + severity_class), then run `node scripts/bundle-labor-cases.js` (regenerates aggregate + per-country bundles)
 - **Regenerate feed**: `node scripts/generate-feed.js` (Atom feed at `feed.xml`)
+- **Regenerate sitemap**: `node scripts/generate-sitemap.js` (static pages + all non-retracted incidents + radar; lastmod from `asm:metadata.lastUpdated`)
 - **Add i18n string**: Add key to both `i18n/de.json` and `i18n/en.json`
 - **Audit translations**: `node scripts/audit-bilingual-incidents.js` — prüft jede Incident-Datei auf DE↔EN-Konsistenz, fehlende EN-Felder, Längen-Plausibilität, Eigennamen-Erhaltung UND CLAUDE.md-Umlaut-Compliance (Kategorie `umlaut_transliteration`). Schreibt Report nach `audit-translation-report.md`.
 - **Fix Umlaut-Transliterationen**: `node scripts/fix-umlaut-transliterations.js` — fixt automatisch `ae/oe/ue/ss` → `ä/ö/ü/ß` in DE-Feldern für eine kuratierte Wortliste. Idempotent. Nach Lauf: `node scripts/bundle-incidents.js`. Typisch nach KI-generierten Incident-Batches anwenden.

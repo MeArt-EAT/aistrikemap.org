@@ -314,13 +314,15 @@ const StrikeMap = (function () {
           });
 
           var marker = L.marker([lat, lng], { icon: icon });
-          var popup = '<div class="strike-popup">' +
-            '<div class="strike-popup__type" style="color:' + color + '">&#9670; RADAR</div>' +
-            '<div class="strike-popup__name">' + escapeHtml(I18n.localized(s, 'name')) + '</div>' +
-            '<div class="strike-popup__meta" style="text-transform:uppercase;font-size:0.6rem;color:' + color + '">' + escapeHtml(status) + '</div>' +
-            '<a href="radar.html?radar=' + escapeHtml(slug) + '" style="color:var(--link);font-size:0.75rem">Details &rarr;</a>' +
-            '</div>';
-          marker.bindPopup(popup, { maxWidth: 260, className: 'dark-popup' });
+          // Built when opened, so name, status and link text follow the active language.
+          marker.bindPopup(function () {
+            return '<div class="strike-popup">' +
+              '<div class="strike-popup__type" style="color:' + color + '">&#9670; RADAR</div>' +
+              '<div class="strike-popup__name">' + escapeHtml(I18n.localized(s, 'name')) + '</div>' +
+              '<div class="strike-popup__meta" style="text-transform:uppercase;font-size:0.6rem;color:' + color + '">' + escapeHtml(I18n.t('radar.status.' + status)) + '</div>' +
+              '<a href="radar.html?radar=' + escapeHtml(slug) + '" style="color:var(--link);font-size:0.75rem">' + escapeHtml(I18n.t('map.radar.details')) + ' &rarr;</a>' +
+              '</div>';
+          }, { maxWidth: 260, className: 'dark-popup' });
           marker.addTo(radarLayer);
         });
       })

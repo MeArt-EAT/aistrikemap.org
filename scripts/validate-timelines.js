@@ -239,6 +239,11 @@ function validateFile(slug, file, mapKeys) {
     if (!j['asm:retracted']) errors.push('asm:mergedInto ohne asm:retracted');
   }
 
+  // Skalen: Severity 1-5, Verifikation 1-4 (eine 5 zeigte im Panel den rohen Key "verification.5")
+  const sev = j['asm:severity'], ver = j['asm:verificationLevel'];
+  if (!Number.isInteger(sev) || sev < 1 || sev > 5) errors.push(`asm:severity ausserhalb 1-5: ${sev}`);
+  if (!Number.isInteger(ver) || ver < 1 || ver > 4) errors.push(`asm:verificationLevel ausserhalb 1-4: ${ver}`);
+
   // Kontextfaelle (Aufnahmeregel 2026-10-23): kein KI-Element belegt, Begruendung DE/EN Pflicht
   if (j['asm:scope'] !== undefined) {
     if (j['asm:scope'] !== 'context') errors.push(`asm:scope: unbekannter Wert "${j['asm:scope']}"`);
