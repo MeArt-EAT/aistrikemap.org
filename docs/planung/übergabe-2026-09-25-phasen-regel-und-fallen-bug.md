@@ -688,3 +688,13 @@ Merge von PR #93, Vorschlag zur doppelten Nummer "#13".
 **Endstand:** 2452 Incidents; Validator 2428/2452 ohne ERROR (die 24 Phasen-Fälle oben), 0 kaputte relatedIncidents-Verweise, 0 Umlaut-URLs; 37 TL-Einträge ohne Quelle (35 aus main + 2 im zurückgezogenen Tschechien-Fall); Link-Check 404 von 213 auf 47; PR #93 mergebar, CI grün; Bundles aus `7ad3429`.
 
 **Entscheidungen des Projekteigners (2026-10-09, nach Nachtrag 7c):** `nordkorea-digitalisierte-ueberwachung-des-inminban-...` zurückgezogen (Kernbehauptung unbelegt); die 228 älteren Link-Check-Issues als Duplikate von #230 geschlossen; PR #93 gemergt. Die übrige redaktionelle Prüfliste oben und die Nacharbeit in `docs/planung/nacharbeit-merge-2026-10-09/` bleiben offen.
+
+### Nachtrag 7d (2026-10-22): Nacharbeit nach dem Merge abgeschlossen
+
+Die am 2026-10-09 als ungeprüfter Patch gesicherte Nacharbeit ist erledigt (Branch neu von main `4ab9e54`):
+
+- **24 Timelines an Schema v1.1 angepasst** (Commit `0e40521`): 16 doctrine-Einträge neu recherchiert (Rechtsgrundlage, Weisung oder Geschäftsmodell vor dem Vorfall, mit Quelle), 4 Einträge zu doctrine umgetaggt, Verschränkungen durch Umtaggen in event bzw. consequences aufgelöst.
+- **35 unbelegte Einträge aus der main-Fassung belegt, 10 beim Merge übertragene Quellen geprüft, toter SumOfUs-Link ersetzt** (Commit `5989e7e`). Wo die Quelle ein Detail nicht trug, wurde minimal umformuliert (u. a. Ukraine-Clearview, Rumänien-Georgescu, Geofeedia, Myanmar-Facebook).
+- Ablauf: die Bearbeiter-Änderungen vom 2026-10-09 wieder angewendet, je Gruppe ein unabhängiger Prüfer (rund 25 Korrekturen), die zwei abgebrochenen Gruppen zu Ende bearbeitet und geprüft, danach eine gezielte Nachprüfung der 18 Punkte, die die Prüfer mangels Suchkontingent offen ließen (4 Quellen ersetzt, 2 Formulierungen abgeschwächt, Rest bestätigt).
+
+**Endstand:** Validator 2452/2452 ohne ERROR (Schema v1.1), jeder Timeline-Eintrag hat 1-2 Quellen (außer 2 Einträgen im zurückgezogenen Tschechien-Fall), Bundles neu. Der Hilfsordner `docs/planung/nacharbeit-merge-2026-10-09/` ist entfernt (in der Git-Historie erhalten).
