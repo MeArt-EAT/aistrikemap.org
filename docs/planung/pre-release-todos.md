@@ -1,5 +1,9 @@
 # Pre-Release-TODOs
 
+> ⚠️ **Veraltet (Stand Mai 2026).** Die aktuelle, geprüfte Liste aller offenen Punkte bis zum
+> Launch steht in [`release-inventar-2026-10-23.md`](release-inventar-2026-10-23.md). Die meisten
+> Punkte unten sind erledigt.
+
 Kleine Aufräum-Arbeiten, die **kurz vor einer Veröffentlichung** erledigt werden sollen — zu klein für einen eigenen Planungs-Slot, aber nicht vergessen werden dürfen.
 
 ## Offen
