@@ -28,9 +28,9 @@ const OFFICIAL_TYPES = new Set([
 ]);
 
 const INCIDENT_VOCAB = new Set([
-  'surveillance', 'predictive-policing', 'autonomous-weapons', 'discrimination',
+  'surveillance', 'predictive-policing', 'autonomous-weapons', 'autonomous-vehicle', 'discrimination',
   'deepfakes', 'data-misuse', 'military-ai', 'facial-recognition', 'censorship',
-  'labor-exploitation', 'political-pressure'
+  'labor-exploitation', 'political-pressure', 'copyright', 'fraud', 'malfunction', 'environmental'
 ]);
 
 const UNCERTAIN_TERMS = [

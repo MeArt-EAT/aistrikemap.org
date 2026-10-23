@@ -257,7 +257,7 @@ function buildLocation(candidate) {
 
 function buildIncidentJsonLd(candidate, slug) {
   const cd = candidate.candidate_data || {};
-  const types = Array.isArray(cd.incidentType) && cd.incidentType.length ? cd.incidentType : ['data-misuse'];
+  const types = cd.incidentType; // non-empty, enforced in eligible()
   const severity = typeof cd.candidate_severity === 'number' ? cd.candidate_severity : 3;
   const verification = typeof cd.candidate_verification === 'number' ? cd.candidate_verification : 2;
 
@@ -308,7 +308,7 @@ function buildIndexEntry(candidate, slug) {
     longitude: typeof loc.lng === 'number' ? loc.lng : null,
     severity: typeof cd.candidate_severity === 'number' ? cd.candidate_severity : 3,
     verificationLevel: typeof cd.candidate_verification === 'number' ? cd.candidate_verification : 2,
-    types: Array.isArray(cd.incidentType) && cd.incidentType.length ? cd.incidentType : ['data-misuse']
+    types: cd.incidentType
   };
 }
 
@@ -333,6 +333,13 @@ function eligible(candidate, args) {
     return false;
   }
   if (!candidate.candidate_data || !candidate.candidate_data.name_de || !candidate.candidate_data.name_en) return false;
+  // No silent 'data-misuse' fallback any more (it turned the type into a catch-all
+  // for 1327 incidents until the 2026-10 type reform): the type must be set in review.
+  const types = candidate.candidate_data.incidentType;
+  if (!Array.isArray(types) || !types.length) {
+    console.log('  SKIP (kein incidentType) ' + (candidate.candidate_id || candidate.candidate_data.name_de));
+    return false;
+  }
   return true;
 }
 

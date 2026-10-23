@@ -116,7 +116,7 @@ function buildSystemPrompt() {
     '                    description_de, description_en, actors[], sources[] },',
     '  researcher_notes, dedup_hint.',
     '',
-    'incidentType vocab: surveillance, predictive-policing, autonomous-weapons, discrimination, deepfakes, data-misuse, military-ai, facial-recognition, censorship, labor-exploitation, political-pressure.',
+    'incidentType vocab: surveillance, predictive-policing, autonomous-weapons, autonomous-vehicle, discrimination, deepfakes (incl. disinformation), data-misuse (personal data only), military-ai, facial-recognition, censorship, labor-exploitation, political-pressure (pressure on AI safety only), copyright, fraud, malfunction, environmental.',
     'sources[].type vocab: news-article, research-paper, ngo-report, government-document, court-filing, legal-ruling, regulatory-decision, encyclopedia, analysis, whistleblower-document.',
     '',
     'Ziel: 5-12 hochwertige Kandidaten pro Topic. RUFE save_candidates AM ENDE.'

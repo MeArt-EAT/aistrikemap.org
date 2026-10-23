@@ -229,6 +229,16 @@ function validateFile(slug, file, mapKeys) {
     }
   });
 
+  // Zusammengelegte Dubletten: asm:mergedInto muss auf eine existierende Datei
+  // zeigen (das Detail-Panel verlinkt dorthin) und setzt asm:retracted voraus.
+  const into = j['asm:mergedInto'];
+  if (into !== undefined) {
+    if (typeof into !== 'string' || !fs.existsSync(path.join(path.dirname(file), into + '.json'))) {
+      errors.push(`asm:mergedInto: Verweis "${into}" zeigt auf keine Datei`);
+    }
+    if (!j['asm:retracted']) errors.push('asm:mergedInto ohne asm:retracted');
+  }
+
   // affectedRights-Parallelitaet
   const ar = j['asm:affectedRights'], arDe = j['asm:affectedRights_de'], arEn = j['asm:affectedRights_en'];
   if (!Array.isArray(ar) || !ar.length) errors.push('asm:affectedRights fehlt/leer');

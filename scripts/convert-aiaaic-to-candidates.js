@@ -127,19 +127,21 @@ const TECH_TO_TYPE = [
   { re: /deepfake/i, types: ['deepfakes'] },
   { re: /facial recognition|biometric/i, types: ['facial-recognition', 'surveillance'] },
   { re: /predictive policing/i, types: ['predictive-policing'] },
-  { re: /autonomous (vehicle|weapon|drone)|military/i, types: ['military-ai', 'autonomous-weapons'] },
+  { re: /autonomous vehicle|self-driving|driver assistance|robotaxi/i, types: ['autonomous-vehicle'] },
+  { re: /autonomous (weapon|drone)|military/i, types: ['military-ai', 'autonomous-weapons'] },
   { re: /surveillance|monitoring/i, types: ['surveillance'] },
-  { re: /generative ai|llm|large language|chatgpt|gemini|claude|copilot/i, types: ['data-misuse'] },
   { re: /content moderation|moderation/i, types: ['labor-exploitation'] },
   { re: /credit|loan|insurance|welfare/i, types: ['discrimination'] },
   { re: /censor|blocking/i, types: ['censorship'] }
 ];
 
 function mapTechnology(tech) {
-  if (!tech) return ['data-misuse'];
+  // No catch-all default: an empty list forces a type decision in enrichment/review
+  // (promote-candidates.js skips candidates without incidentType).
+  if (!tech) return [];
   const set = new Set();
   for (const m of TECH_TO_TYPE) if (m.re.test(tech)) m.types.forEach(t => set.add(t));
-  return set.size > 0 ? Array.from(set) : ['data-misuse'];
+  return Array.from(set);
 }
 
 // --- Slug-Generation --------------------------------------------------------

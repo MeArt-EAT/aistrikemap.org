@@ -42,11 +42,16 @@ function loadCases() {
     .filter(Boolean);
 }
 
-function aggregate(cases) {
-  const counted = cases.filter(c =>
-    typeof c.ai_attribution_strength === 'number'
+// A workload equivalent ("the bot does the work of N agents") is not a
+// realized job reduction, so it stays listed but does not count.
+function isCounted(c) {
+  return typeof c.ai_attribution_strength === 'number'
     && c.ai_attribution_strength >= MIN_STRENGTH
-  );
+    && c.headcount_basis !== 'workload-equivalent';
+}
+
+function aggregate(cases) {
+  const counted = cases.filter(isCounted);
 
   const reductions = counted.filter(c => c.direction !== 'creation');
   const creations = counted.filter(c => c.direction === 'creation');
@@ -161,10 +166,7 @@ function writeByCountry(allCases) {
 
   const summaries = {};
   for (const [country, cases] of Object.entries(byCountryCases)) {
-    const counted = cases.filter(c =>
-      typeof c.ai_attribution_strength === 'number'
-      && c.ai_attribution_strength >= MIN_STRENGTH
-    );
+    const counted = cases.filter(isCounted);
     const reduction = counted
       .filter(c => c.direction !== 'creation')
       .reduce((s, c) => s + (Number(c.headcount_affected) || 0), 0);

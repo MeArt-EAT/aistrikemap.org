@@ -42,6 +42,15 @@ const fs = require('fs');
 const path = require('path');
 
 const DIR = path.join(__dirname, '..', 'data', 'incidents');
+// --dry-run reports the replacements without writing (it used to be ignored silently).
+const DRY_RUN = process.argv.includes('--dry-run');
+
+const SLUG_TOKEN_RE = /[a-z0-9]+(?:-[a-z0-9]+){3,}/g;
+let slugCache = null;
+function knownSlugs() {
+  if (!slugCache) slugCache = new Set(fs.readdirSync(DIR).filter(f => f.endsWith('.json')).map(f => f.slice(0, -5)));
+  return slugCache;
+}
 
 // Mapping: misspelled (lowercase) → corrected (lowercase).
 // Case-erhaltend ergänzt: wenn das Original mit Großbuchstaben anfängt,
@@ -637,11 +646,22 @@ function walkAndFix(obj, fieldStack, stats) {
     const lastKey = fieldStack[fieldStack.length - 1] || '';
     const isEnglish = /_en$/.test(lastKey);
     const isUrl = /url|@id|@type|@context|publisher|date|type|asm:linkHealth|asm:severity|asm:verificationLevel|asm:incidentType|asm:radarStatus|asm:radarDimensions|asm:perspective|addressCountry|latitude|longitude|asm:metadata|aiGenerated|humanVerified|author|created|lastUpdated|@vocab/.test(lastKey);
-    // asm:relatedIncidents holds slugs (file names, transliterated by design):
-    // "rumaenien-..." must never become "rumänien-...", or the reference breaks.
-    const isSlugRef = fieldStack.includes('asm:relatedIncidents');
+    // asm:relatedIncidents, asm:mergedInto and asm:metadata.mergedFrom hold slugs
+    // (file names, transliterated by design): "rumaenien-..." must never become
+    // "rumänien-...", or the reference breaks.
+    const isSlugRef = fieldStack.includes('asm:relatedIncidents')
+      || fieldStack.includes('asm:mergedInto') || fieldStack.includes('mergedFrom');
     if (isEnglish || isUrl || isSlugRef) return obj;
-    const { text: fixed, changed } = fixString(obj);
+    // Slugs quoted in prose (correction/merge notes) are identifiers, not words:
+    // mask every token that names an existing incident file before fixing.
+    const masked = [];
+    const input = obj.replace(SLUG_TOKEN_RE, t => {
+      if (!knownSlugs().has(t)) return t;
+      masked.push(t);
+      return `\u0000${masked.length - 1}\u0000`;
+    });
+    const { text: fixedMasked, changed } = fixString(input);
+    const fixed = fixedMasked.replace(/\u0000(\d+)\u0000/g, (_, i) => masked[+i]);
     if (changed > 0) {
       stats.fields++;
       stats.replacements += changed;
@@ -671,7 +691,7 @@ function main() {
     if (stats.replacements > 0) {
       // Re-serialize with same indentation as original (2-space).
       const out = JSON.stringify(fixed, null, 2) + '\n';
-      fs.writeFileSync(file, out, 'utf8');
+      if (!DRY_RUN) fs.writeFileSync(file, out, 'utf8');
       changedFiles.push({ name: path.basename(file), ...stats });
       totalFiles++;
       totalFields += stats.fields;
