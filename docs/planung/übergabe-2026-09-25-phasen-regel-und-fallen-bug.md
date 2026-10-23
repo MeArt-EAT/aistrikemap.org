@@ -698,3 +698,14 @@ Die am 2026-10-09 als ungeprüfter Patch gesicherte Nacharbeit ist erledigt (Bra
 - Ablauf: die Bearbeiter-Änderungen vom 2026-10-09 wieder angewendet, je Gruppe ein unabhängiger Prüfer (rund 25 Korrekturen), die zwei abgebrochenen Gruppen zu Ende bearbeitet und geprüft, danach eine gezielte Nachprüfung der 18 Punkte, die die Prüfer mangels Suchkontingent offen ließen (4 Quellen ersetzt, 2 Formulierungen abgeschwächt, Rest bestätigt).
 
 **Endstand:** Validator 2452/2452 ohne ERROR (Schema v1.1), jeder Timeline-Eintrag hat 1-2 Quellen (außer 2 Einträgen im zurückgezogenen Tschechien-Fall), Bundles neu. Der Hilfsordner `docs/planung/nacharbeit-merge-2026-10-09/` ist entfernt (in der Git-Historie erhalten).
+
+### Nachtrag 7e (2026-10-23): Tote Quellenlinks, Runde 2; Release-Inventar
+
+- **Release-Inventar** (`fe1044c`, `a92229c`): [`release-inventar-2026-10-23.md`](release-inventar-2026-10-23.md) listet alle offenen Punkte bis zum Launch (16 BLOCKER, 18 SHOULD, 9 POST) mit Aufwand, Entscheidungsbedarf und Schätzung in Kontextfenstern; `pre-release-todos.md` ist als veraltet markiert.
+- **Link-Check vom 2026-10-23** (auf `258393f`): 64 x 404 in 59 Incidents (davon viele Ersatz-URLs aus Runde 1, die der Checker nicht erreicht). Alle 64 in 6 Gruppen (DL-19 bis DL-24, Commits `61f0f60` bis `f177eb1`) bearbeitet, je Bearbeiter + unabhängiger Prüfer, mit den Lehren aus Runde 1 (keine `?p=`-Kurzlinks, keine ftc.gov-Seiten 2021-2024, lieber ein anderer stabiler Verlag).
+  - Ersetzt durch dieselbe Seite unter neuer Adresse oder eine andere Quelle; entfernt nur, wo weitere Quellen bleiben. Ein toter Link (Texas AFT) bleibt, weil er die einzige Quelle eines Eintrags ist.
+  - Die Prüfer korrigierten 13 Ersetzungen. Inhaltliche Korrekturen: Deliveroo-Bericht des Bureau auf 25.03.2021 datiert; Clearview-Kapitel der Autorin Agnė Limantė zugeordnet (Matulionytė/Žalnieriūtė sind Herausgeberinnen, selbst nachgeprüft); Archibot "2 Mio." statt "2,1 Mio." Dokumente; DeepSeek "Behörden" statt "Unternehmen".
+  - Nicht angefasst: 44 x "connection" (meist Behördenseiten mit Geo- oder Bot-Sperre, etwa nrw.de, sassa.gov.za), 32 Timeouts, 1497 x 403/406/429 (Bot-Sperren).
+- **Prüferhinweise zu älterem Text** (für die Redaktionsliste, B14): Neuseeland PAK'nSAVE Start Juni statt Juli 2023; Schweden Försäkringskassan "trotz interner Hinweise" und "wohlhabende Männer bleiben unentdeckt" ohne Beleg; Nigeria Jatau "ohne Kaution" ohne Beleg; Niederlande Zitat "the good will suffer along with the bad" nur in der zweiten Quelle zu prüfen; Magura V5 "über 500 Mio. USD" nur über USNI; Dänemark Daten 1. Mai/1. Nov. 2015 ohne neue Quelle; Chester-Rentner: Facewatch-Aussage live nur in der toten BBC/AOL-Kopie belegt; Stability AI: Satz zu Opt-out und Lizenzdeals ohne direkten Beleg.
+
+**Endstand:** Validator 2452/2452 ohne ERROR, Bundles neu. Nächster Link-Check zeigt, wie viele Ersatz-URLs für den Checker erreichbar sind.

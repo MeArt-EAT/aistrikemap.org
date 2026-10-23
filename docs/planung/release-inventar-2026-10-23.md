@@ -50,7 +50,7 @@ Rein technisch ohne Entscheidung: B4, B7, B8, B9 (zusammen rund 0,65 Einheiten).
 | S2 | SEO hreflang/og:locale | Alle Seiten `lang="de"`, Meta nur per JS getauscht, kein hreflang. | 0,3-3 | ja |
 | S3 | Sitemap | ✔ 208 URLs (laut Inventur nur rund 196 Incidents); lastmod 2026-04-15. Generator nötig. | 0,3 | nein |
 | S4 | Datenlücke | ✔ Neuester Incident 2026-05; Juni-Oktober fehlen (widerspricht LIVE-Ticker). Aufholwelle 6-8 oder nur Wording 0,2. | 0,2-8 | ja |
-| S5 | Restliche tote Links | 47× 404 und rund 76 Fehler (Issue #230). Runde 2 läuft. | 2 | nein |
+| S5 | Restliche tote Links | Runde 2 erledigt (Nachtrag 7e): alle 64 x 404 vom 23.10. bearbeitet. Offen: rund 76 Verbindungsfehler/Timeouts (meist Geo- oder Bot-Sperren) und was der nächste Link-Check meldet. | 0,5 | nein |
 | S6 | Stufe-2-Regel | ✔ 69 nicht zurückgezogene Incidents mit Stufe ≥2 und nur einer Top-Level-Quelle; meist weitere URLs in der Timeline. | 0,8 | nein |
 | S7 | Methodik-Taxonomie | ✔ `autonomous-vehicle` fehlt in `methodik.html` (103 Incidents). | 0,1 | nein |
 | S8 | Caveat Labor | `labor.caveatBody` methodisch prüfen. | 0,2 | ja |
