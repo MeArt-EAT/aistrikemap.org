@@ -239,6 +239,12 @@ function validateFile(slug, file, mapKeys) {
     if (!j['asm:retracted']) errors.push('asm:mergedInto ohne asm:retracted');
   }
 
+  // Kontextfaelle (Aufnahmeregel 2026-10-23): kein KI-Element belegt, Begruendung DE/EN Pflicht
+  if (j['asm:scope'] !== undefined) {
+    if (j['asm:scope'] !== 'context') errors.push(`asm:scope: unbekannter Wert "${j['asm:scope']}"`);
+    if (!j['asm:scopeNote_de'] || !j['asm:scopeNote_en']) errors.push('asm:scope ohne asm:scopeNote_de/_en');
+  }
+
   // affectedRights-Parallelitaet
   const ar = j['asm:affectedRights'], arDe = j['asm:affectedRights_de'], arEn = j['asm:affectedRights_en'];
   if (!Array.isArray(ar) || !ar.length) errors.push('asm:affectedRights fehlt/leer');

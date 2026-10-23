@@ -146,6 +146,8 @@ const StrikeMap = (function () {
       var verification = incident['asm:verificationLevel'] || 1;
       var isUnverified = verification <= 1;
       var isRetracted = !!incident['asm:retracted'];
+      // Context cases (no documented AI element) only show up via their filter toggle
+      var isContext = !isRetracted && incident['asm:scope'] === 'context';
 
       // Dynamic radius: recent = bigger (8-14), old = smaller (6-8)
       var radius = 6 + freshness * 8;
@@ -158,6 +160,7 @@ const StrikeMap = (function () {
       if (!skipAnimation && index < 30 && !isRetracted) classNames.push('strike-enter');
       if (isUnverified && !isRetracted) classNames.push('strike-unverified');
       if (isRetracted) classNames.push('strike-retracted');
+      if (isContext) classNames.push('strike-context');
 
       var marker = L.circleMarker([geo.latitude, geo.longitude], {
         radius: isRetracted ? 6 : radius,
@@ -165,8 +168,8 @@ const StrikeMap = (function () {
         color: isRetracted ? '#888' : color,
         weight: isRetracted ? 1 : (freshness > 0.3 ? 2.5 : 1.5),
         opacity: isRetracted ? 0.6 : (0.6 + freshness * 0.4),
-        fillOpacity: isRetracted ? 0.2 : (isUnverified ? fillOpacity * 0.4 : fillOpacity),
-        dashArray: isUnverified || isRetracted ? '4,3' : null,
+        fillOpacity: isRetracted ? 0.2 : (isUnverified || isContext ? fillOpacity * 0.4 : fillOpacity),
+        dashArray: isUnverified || isRetracted || isContext ? '4,3' : null,
         keyboard: true,
         className: classNames.join(' ')
       });
@@ -196,8 +199,8 @@ const StrikeMap = (function () {
       marker.incidentData = incident;
       marker.addTo(markerLayer);
 
-      // No pulse rings for retracted incidents
-      if (isRetracted) return;
+      // No pulse rings for retracted incidents and context cases
+      if (isRetracted || isContext) return;
 
       // Add pulse rings — tiered by freshness/severity
       var pulseClass = null;

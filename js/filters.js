@@ -7,6 +7,7 @@ const Filters = (function () {
   let minSeverity = 1;
   let minVerification = 1;
   let showRetracted = false;
+  let showContext = false; // context cases: no documented AI/algorithmic element (scope rule 2026-10-23)
   let timeRangeMonths = 0; // 0 = all time
   let searchQuery = '';
   let allTypes = [
@@ -24,6 +25,7 @@ const Filters = (function () {
     var verificationValue = document.getElementById('verification-value');
     var resetBtn = document.getElementById('filter-reset');
     var retractedToggle = document.getElementById('filter-show-retracted');
+    var contextToggle = document.getElementById('filter-show-context');
     var timeRangeSelect = document.getElementById('filter-time-range');
     var searchInput = document.getElementById('filter-search');
     var toggleBtn = document.querySelector('.filter-toggle-btn');
@@ -82,6 +84,10 @@ const Filters = (function () {
         retractedToggle.checked = false;
         showRetracted = false;
       }
+      if (contextToggle) {
+        contextToggle.checked = false;
+        showContext = false;
+      }
       if (timeRangeSelect) {
         timeRangeSelect.value = '0';
         timeRangeMonths = 0;
@@ -110,6 +116,14 @@ const Filters = (function () {
     if (timeRangeSelect) {
       timeRangeSelect.addEventListener('change', function () {
         timeRangeMonths = parseInt(this.value, 10) || 0;
+        applyFilters();
+      });
+    }
+
+    // Show context cases toggle
+    if (contextToggle) {
+      contextToggle.addEventListener('change', function () {
+        showContext = this.checked;
         applyFilters();
       });
     }
@@ -150,6 +164,8 @@ const Filters = (function () {
     var filtered = incidents.filter(function (inc) {
       // Retracted incidents are hidden by default
       if (inc['asm:retracted'] && !showRetracted) return false;
+      // Context cases (no documented AI/algorithmic element) are hidden by default
+      if (inc['asm:scope'] === 'context' && !showContext) return false;
       var types = inc['asm:incidentType'] || [];
       var hasType = types.some(function (t) { return activeTypes.has(t); });
       var sev = inc['asm:severity'] || 1;

@@ -165,6 +165,14 @@ const DetailPanel = (function () {
                 esc(I18n.t('detail.merged.link')) + ' ' + esc(I18n.localized(mergedTarget, 'name') || mergedTarget.name) + ' &rarr;</button>';
       }
       html += '</div>';
+    } else if (incident['asm:scope'] === 'context') {
+      // Context case: kept for its human-rights relevance, but no AI or
+      // algorithmic element is documented (scope rule 2026-10-23).
+      html += '<div class="detail-retracted detail-retracted--context" role="note">';
+      html += '<div class="detail-retracted__title">' + esc(I18n.t('detail.context.title')) + '</div>';
+      var note = I18n.localized(incident, 'asm:scopeNote');
+      if (note) html += '<p class="detail-retracted__reason">' + esc(note) + '</p>';
+      html += '</div>';
     }
 
     // Share / permalink button + social share

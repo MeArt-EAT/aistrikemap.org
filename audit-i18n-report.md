@@ -1,6 +1,6 @@
 # i18n-Audit-Report
 
-Erzeugt von `scripts/audit-i18n.js`. 11 HTML-Seiten, 482 Keys (de) / 482 (en).
+Erzeugt von `scripts/audit-i18n.js`. 11 HTML-Seiten, 485 Keys (de) / 485 (en).
 
 ## Befunde: 0
 
@@ -26,7 +26,7 @@ Erzeugt von `scripts/audit-i18n.js`. 11 HTML-Seiten, 482 Keys (de) / 482 (en).
 - `privacy.externalServices.unpkgTitle` = "unpkg.com (CDN)"
 - `meta.career.title` = "AI Career Impact Dashboard — AIStrikeMap"
 
-### Keys ohne HTML-Referenz: 141
+### Keys ohne HTML-Referenz: 142
 
 Der Großteil wird aus JS heraus genutzt (`severity.N`, `verification.N`,
 `type.*`, Radar- und Career-Labels) — kein Fehler per se.
