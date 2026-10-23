@@ -61,7 +61,7 @@ Rein technisch ohne Entscheidung: B4, B7, B8, B9 (zusammen rund 0,65 Einheiten).
 | S13 | README | Umlaut-Umschreibungen, veraltete Feature-Angaben. | 0,1 | nein |
 | S14 | SRI | Kein `integrity` bei Chart.js. | 0,1 | nein |
 | S15 | Erstabruf | ✔ `all-incidents-lite.json` 8,3 MB (doppelte Felder). | 0,5 | nein |
-| S16 | Research-Runner | Wöchentlicher Cron, nur ein Lauf nachweisbar. Prüfen, reparieren oder abschalten. | 0,1 | ja |
+| S16 | Research-Runner | ✔ Wöchentlicher Cron, 23 Läufe (21 erfolgreich, zuletzt 18.10.), aber nur ein Commit mit Kandidaten (`2f7281f`). Klären, warum die Läufe nichts liefern; reparieren oder abschalten. | 0,1 | ja |
 | S17 | Abschluss-QA im Browser | 11 Seiten, DE/EN, mobil, Konsole. | 1 | nein |
 | S18 | Doku-Pflege | STATUS.md, `pre-release-todos.md`, `inventar-index.md`, CLAUDE.md (`css/main.css` existiert nicht, "195 incidents"). | 0,3 | ja (CLAUDE.md) |
 
