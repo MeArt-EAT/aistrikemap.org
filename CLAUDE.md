@@ -49,6 +49,8 @@ i18n/en.json            English strings
 Each incident JSON-LD file contains:
 - Standard fields: `name`, `startDate`, `description`, `location` (with `geo.latitude/longitude`)
 - Custom fields (prefixed `asm:`): `asm:severity` (1–5), `asm:verificationLevel` (1–4), `asm:incidentType` (array), `asm:actors`, `asm:affectedRights`, `asm:reverseTimeline`, `asm:sources`, `asm:retracted`, `asm:metadata`
+- **Retraction / merge**: never delete an incident file (permalinks, sitemap). Retract with `asm:retracted: true`, `asm:retractedDate`, `asm:retractionReason`/`_de`/`_en` (shown at the top of the detail panel). A merged duplicate additionally gets `asm:mergedInto: "<keep-slug>"` (panel links to it); the keep file gets `asm:metadata.mergedFrom` (array) + `mergeNote`.
+- **`asm:metadata.humanVerified`**: `true` only after an individual editorial review by the owner, together with `reviewedAt` (date) and `reviewedBy`; never set by a script. Default `false` — entries are AI-researched, source-backed and adversarially cross-checked, which the panel/footer say honestly.
 
 ## Conventions
 
@@ -58,7 +60,7 @@ Each incident JSON-LD file contains:
 - **No npm/node**: Everything via CDN or vanilla JS. Do not introduce a build step.
 - **CSS variables**: All colors/spacing via `:root` custom properties in main.css
 - **i18n keys**: Flat keys in de.json/en.json, referenced via `data-i18n` attributes
-- **Incident types**: surveillance, predictive-policing, autonomous-weapons, autonomous-vehicle, discrimination, deepfakes, data-misuse, military-ai, facial-recognition, censorship, labor-exploitation, political-pressure
+- **Incident types** (16, since the 2026-10-23 type reform): surveillance, predictive-policing, autonomous-weapons, autonomous-vehicle, discrimination, deepfakes (incl. disinformation/influence operations), data-misuse (personal data only — no catch-all), military-ai, facial-recognition, censorship, labor-exploitation, political-pressure (pressure on AI safety only), copyright, fraud, malfunction, environmental. Definitions: `methodik.html` / `methodology.taxonomy.*`. New types need `js/filters.js` (allTypes), `type.*` + `methodology.taxonomy.*` in both i18n files, `methodik.html`. Import tooling has no default type: candidates without `incidentType` are not promoted.
 - **Severity colors**: 1=#3498db, 2=#f39c12, 3=#e67e22, 4=#e74c3c, 5=#ba68c8
 
 ## Planning

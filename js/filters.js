@@ -12,7 +12,8 @@ const Filters = (function () {
   let allTypes = [
     'surveillance', 'predictive-policing', 'autonomous-weapons', 'autonomous-vehicle',
     'discrimination', 'deepfakes', 'data-misuse', 'military-ai',
-    'facial-recognition', 'censorship', 'labor-exploitation', 'political-pressure'
+    'facial-recognition', 'censorship', 'labor-exploitation', 'political-pressure',
+    'copyright', 'fraud', 'malfunction', 'environmental'
   ];
 
   function init() {

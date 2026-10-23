@@ -459,3 +459,53 @@
   }
 }
 
+
+/* "Worldwide (n)" control: incidents without a map point (addressCountry GLOBAL) */
+.leaflet-bottom.leaflet-left .global-control {
+  margin-bottom: 46px; /* stay above the ticker, like the zoom control */
+}
+
+.global-control {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 0.6rem;
+  height: 34px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.global-control:hover,
+.global-control:focus-visible {
+  background: var(--bg-surface-hover);
+  border-color: var(--accent);
+}
+
+.global-control:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.global-control__count {
+  min-width: 1.6em;
+  padding: 0 0.35em;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--text-primary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .global-control__label {
+    display: none;
+  }
+}

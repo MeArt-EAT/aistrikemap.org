@@ -6,6 +6,7 @@ const DetailPanel = (function () {
   let panelEl, titleEl, bodyEl, closeBtn;
   var radarSituations = null;
   var currentIncident = null;
+  var currentList = null; // {incidents, titleKey, introKey} while a list is shown
 
   function loadRadarData() {
     if (radarSituations !== null) return;
@@ -31,8 +32,12 @@ const DetailPanel = (function () {
     // so the panel content tracks the active language without
     // requiring the user to close and re-open.
     document.addEventListener('i18n:changed', function () {
-      if (currentIncident && panelEl.classList.contains('open')) {
+      if (!panelEl.classList.contains('open')) return;
+      if (currentIncident) {
         show(currentIncident);
+      } else if (currentList) {
+        // The list is rebuilt by StrikeMap on i18n:changed; refresh its texts here.
+        showList(currentList.incidents, I18n.t('map.global.title'), I18n.t('map.global.intro'));
       }
     });
   }
@@ -79,6 +84,7 @@ const DetailPanel = (function () {
 
   function show(incident) {
     currentIncident = incident;
+    currentList = null;
     updateUrl(incident);
     titleEl.textContent = I18n.localized(incident, 'name') || incident.name || '';
     panelEl.classList.add('open');
@@ -90,6 +96,53 @@ const DetailPanel = (function () {
     });
   }
 
+  /**
+   * Show a list of incidents (e.g. the cross-border incidents without a map
+   * point). Clicking an entry opens its detail view.
+   */
+  function showList(incidents, title, intro) {
+    currentIncident = null;
+    currentList = { incidents: incidents };
+    clearUrl();
+    titleEl.textContent = title || '';
+    var sorted = incidents.slice().sort(function (a, b) {
+      return String(b.startDate || '').localeCompare(String(a.startDate || ''));
+    });
+    var html = '';
+    if (intro) html += '<p class="detail-description">' + esc(intro) + '</p>';
+    if (!sorted.length) {
+      html += '<p class="detail-description">' + esc(I18n.t('map.global.empty')) + '</p>';
+    } else {
+      html += '<ul class="incident-list">';
+      sorted.forEach(function (inc, i) {
+        var sev = inc['asm:severity'] || 1;
+        html += '<li><button type="button" class="incident-list__item" data-list-index="' + i + '">' +
+                '<span class="incident-list__dot" style="background:' + StrikeMap.SEVERITY_COLORS[sev] + '" title="' + escAttr(I18n.t('severity.' + sev)) + '"></span>' +
+                '<span class="incident-list__date">' + esc(inc.startDate || '') + '</span>' +
+                '<span class="incident-list__name">' + esc(I18n.localized(inc, 'name') || inc.name || '') + '</span>' +
+                '</button></li>';
+      });
+      html += '</ul>';
+    }
+    bodyEl.innerHTML = html;
+    bodyEl.querySelectorAll('[data-list-index]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        show(sorted[parseInt(btn.getAttribute('data-list-index'), 10)]);
+      });
+    });
+    panelEl.classList.add('open');
+    panelEl.focus();
+  }
+
+  function findIncidentBySlug(slug) {
+    if (!slug || typeof DataLoader === 'undefined') return null;
+    var all = DataLoader.getIncidents() || [];
+    for (var i = 0; i < all.length; i++) {
+      if ((getIncidentId(all[i]) || '').split('/').pop() === slug) return all[i];
+    }
+    return null;
+  }
+
   function renderBody(incident) {
     var incidentName = I18n.localized(incident, 'name') || incident.name || '';
     var severity = incident['asm:severity'] || 1;
@@ -97,6 +150,22 @@ const DetailPanel = (function () {
     var color = StrikeMap.SEVERITY_COLORS[severity];
 
     var html = '';
+
+    // Retraction / merge notice: permalinks of retracted and merged incidents
+    // stay valid, so the reason has to be visible right at the top.
+    if (incident['asm:retracted']) {
+      var mergedTarget = findIncidentBySlug(incident['asm:mergedInto']);
+      html += '<div class="detail-retracted" role="note">';
+      html += '<div class="detail-retracted__title">' + esc(I18n.t(incident['asm:mergedInto'] ? 'detail.merged.title' : 'detail.retracted.title')) +
+              (incident['asm:retractedDate'] ? ' <span class="detail-retracted__date">' + esc(incident['asm:retractedDate']) + '</span>' : '') + '</div>';
+      var reason = I18n.localized(incident, 'asm:retractionReason');
+      if (reason) html += '<p class="detail-retracted__reason">' + esc(reason) + '</p>';
+      if (mergedTarget) {
+        html += '<button type="button" class="detail-retracted__link" data-merged-into>' +
+                esc(I18n.t('detail.merged.link')) + ' ' + esc(I18n.localized(mergedTarget, 'name') || mergedTarget.name) + ' &rarr;</button>';
+      }
+      html += '</div>';
+    }
 
     // Share / permalink button + social share
     if (getIncidentId(incident)) {
@@ -242,17 +311,26 @@ const DetailPanel = (function () {
       }
     }
 
-    // AI disclosure
-    var meta = incident['asm:metadata'];
-    if (meta) {
-      html += '<div class="ai-disclosure" style="margin-top:1rem;padding-top:0.75rem;border-top:1px solid rgba(255,255,255,0.08)">';
-      if (meta.humanVerified) {
-        html += esc(I18n.t('footer.ai'));
-      }
-      html += '</div>';
+    // AI disclosure: every entry is AI-assisted research with source backing and
+    // adversarial cross-checks. A human review is only claimed with a date.
+    var meta = incident['asm:metadata'] || {};
+    html += '<div class="ai-disclosure detail-ai-disclosure">';
+    if (meta.humanVerified && meta.reviewedAt) {
+      html += esc(I18n.t('detail.reviewed').replace('{date}', meta.reviewedAt));
+    } else {
+      html += esc(I18n.t('detail.aiDisclosure'));
     }
+    html += '</div>';
 
     bodyEl.innerHTML = html;
+
+    var mergedBtn = bodyEl.querySelector('[data-merged-into]');
+    if (mergedBtn) {
+      mergedBtn.addEventListener('click', function () {
+        var target = findIncidentBySlug(incident['asm:mergedInto']);
+        if (target) show(target);
+      });
+    }
 
     // Wire share button
     var shareBtn = bodyEl.querySelector('[data-share]');
@@ -276,6 +354,7 @@ const DetailPanel = (function () {
   function hide() {
     panelEl.classList.remove('open');
     currentIncident = null;
+    currentList = null;
     clearUrl();
   }
 
@@ -323,5 +402,5 @@ const DetailPanel = (function () {
     return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
-  return { init: init, show: show, hide: hide, openFromUrl: openFromUrl };
+  return { init: init, show: show, showList: showList, hide: hide, openFromUrl: openFromUrl };
 })();

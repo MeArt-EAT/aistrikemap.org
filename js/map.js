@@ -123,9 +123,13 @@ const StrikeMap = (function () {
       return db.localeCompare(da);
     });
 
+    // Cross-border incidents (addressCountry GLOBAL) have no map point; they are
+    // collected for the "worldwide" control instead of being dropped silently.
+    var withoutGeo = [];
+
     sorted.forEach(function (incident, index) {
       var geo = incident.location && incident.location.geo;
-      if (!geo) return;
+      if (!geo) { withoutGeo.push(incident); return; }
 
       var severity = incident['asm:severity'] || 1;
       var color = SEVERITY_COLORS[severity] || SEVERITY_COLORS[1];
@@ -170,7 +174,7 @@ const StrikeMap = (function () {
       var titleClass = isRetracted ? 'popup-title popup-title--retracted' : 'popup-title';
 
       marker.bindPopup(
-        '<div class="' + titleClass + '">' + statusBadge + escapeHtml(incident.name) + '</div>' +
+        '<div class="' + titleClass + '">' + statusBadge + escapeHtml(I18n.localized(incident, 'name') || incident.name) + '</div>' +
         '<div class="popup-meta">' +
           '<span class="popup-severity" style="background:' + color + '">' + escapeHtml(severityLabel) + '</span>' +
           '<span>' + escapeHtml(date) + '</span>' +
@@ -205,6 +209,42 @@ const StrikeMap = (function () {
         addPulseRing(geo.latitude, geo.longitude, color, pulseClass);
       }
     });
+
+    updateGlobalControl(withoutGeo);
+  }
+
+  /**
+   * "Worldwide (n)" control: lists the filtered incidents without a map point
+   * in the detail panel, so active filters and search apply to them as well.
+   */
+  var globalControl = null;
+  var globalIncidents = [];
+
+  function updateGlobalControl(incidents) {
+    globalIncidents = incidents;
+    if (!globalControl) {
+      var GlobalControl = L.Control.extend({
+        options: { position: 'bottomleft' },
+        onAdd: function () {
+          var btn = L.DomUtil.create('button', 'global-control');
+          btn.type = 'button';
+          L.DomEvent.disableClickPropagation(btn);
+          L.DomEvent.on(btn, 'click', function () {
+            DetailPanel.showList(globalIncidents, I18n.t('map.global.title'), I18n.t('map.global.intro'));
+          });
+          return btn;
+        }
+      });
+      globalControl = new GlobalControl();
+      globalControl.addTo(map);
+    }
+    var btn = globalControl.getContainer();
+    var label = I18n.t('map.global.button');
+    btn.innerHTML = '<span class="global-control__icon" aria-hidden="true">&#127760;</span>' +
+                    '<span class="global-control__label">' + escapeHtml(label) + '</span>' +
+                    '<span class="global-control__count">' + incidents.length + '</span>';
+    btn.setAttribute('aria-label', I18n.t('map.global.aria').replace('{n}', incidents.length));
+    btn.disabled = incidents.length === 0;
   }
 
   /**

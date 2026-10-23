@@ -339,3 +339,97 @@
   text-decoration-color: rgba(231, 76, 60, 0.5);
   cursor: help;
 }
+
+/* Retraction / merge notice */
+.detail-retracted {
+  margin-bottom: 1rem;
+  padding: 0.75rem 0.9rem;
+  border-left: 3px solid var(--text-secondary);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.detail-retracted__title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.detail-retracted__date {
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.detail-retracted__reason {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.detail-retracted__link {
+  margin-top: 0.5rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--link);
+  font: inherit;
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.detail-retracted__link:hover,
+.detail-retracted__link:focus-visible {
+  text-decoration: underline;
+}
+
+/* Incident list (worldwide incidents without a map point) */
+.incident-list {
+  list-style: none;
+}
+
+.incident-list__item {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: baseline;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: none;
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.incident-list__item:hover .incident-list__name,
+.incident-list__item:focus-visible .incident-list__name {
+  color: var(--link);
+}
+
+.incident-list__dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+
+.incident-list__date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.detail-ai-disclosure {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
