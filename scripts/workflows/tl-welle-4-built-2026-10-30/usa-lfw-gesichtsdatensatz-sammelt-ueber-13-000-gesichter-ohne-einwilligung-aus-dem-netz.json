@@ -1,0 +1,204 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-lfw-gesichtsdatensatz-sammelt-ueber-13-000-gesichter-ohne-einwilligung-aus-dem-netz",
+  "name": "USA: LFW-Gesichtsdatensatz sammelt über 13.000 Gesichter ohne Einwilligung aus dem Netz",
+  "name_de": "USA: LFW-Gesichtsdatensatz sammelt über 13.000 Gesichter ohne Einwilligung aus dem Netz",
+  "name_en": "USA: LFW face dataset collects over 13,000 faces from the web without consent",
+  "description": "Der von der University of Massachusetts Amherst aufgebaute Datensatz 'Labeled Faces in the Wild' (LFW) enthält über 13.000 aus dem Netz gesammelte Gesichtsbilder, die ohne ausdrückliche Einwilligung der Abgebildeten erhoben wurden. LFW wurde zu einem Standard-Benchmark für Gesichtserkennung und löste eine Welle ähnlicher, ohne Zustimmung von Plattformen wie Google, YouTube, Flickr und Yahoo News gescrapter Datensätze aus. Kritiker:innen sehen darin ein frühes Muster für den systematischen Verzicht auf Einwilligung bei biometrischen Trainingsdaten.",
+  "description_de": "Der von der University of Massachusetts Amherst aufgebaute Datensatz 'Labeled Faces in the Wild' (LFW) enthält über 13.000 aus dem Netz gesammelte Gesichtsbilder, die ohne ausdrückliche Einwilligung der Abgebildeten erhoben wurden. LFW wurde zu einem Standard-Benchmark für Gesichtserkennung und löste eine Welle ähnlicher, ohne Zustimmung von Plattformen wie Google, YouTube, Flickr und Yahoo News gescrapter Datensätze aus. Kritiker:innen sehen darin ein frühes Muster für den systematischen Verzicht auf Einwilligung bei biometrischen Trainingsdaten.",
+  "description_en": "The 'Labeled Faces in the Wild' (LFW) dataset, built by the University of Massachusetts Amherst, contains over 13,000 web-collected face images gathered without the explicit consent of those depicted. LFW became a standard benchmark for facial recognition and triggered a wave of similar datasets scraped without consent from platforms such as Google, YouTube, Flickr and Yahoo News. Critics see it as an early template for the systematic disregard of consent in biometric training data.",
+  "startDate": "2021-02-05",
+  "location": {
+    "@type": "Place",
+    "name": "Amherst, Massachusetts, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.3732,
+      "longitude": -72.5199
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Amherst, Massachusetts, USA",
+    "name_en": "Amherst, Massachusetts, USA"
+  },
+  "asm:incidentType": [
+    "data-misuse",
+    "facial-recognition"
+  ],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht am eigenen Bild",
+    "informationelle Selbstbestimmung",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Recht am eigenen Bild",
+    "informationelle Selbstbestimmung",
+    "Schutz vor Diskriminierung"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Right to one's own image",
+    "Right to informational self-determination",
+    "Protection against discrimination"
+  ],
+  "asm:actors": [
+    {
+      "name": "University of Massachusetts Amherst",
+      "type": "organization",
+      "asm:systems": [
+        "Labeled Faces in the Wild (LFW)"
+      ],
+      "name_de": "University of Massachusetts Amherst",
+      "name_en": "University of Massachusetts Amherst"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2004",
+      "phase": "infrastructure",
+      "title": "Forschende sammeln Gesichter aus Yahoo-News-Fotos",
+      "description": "Für die Studie 'Names and Faces in the News' (CVPR 2004) werteten Forschende um Tamara Berg rund eine halbe Million Nachrichtenfotos mit Bildunterschriften aus, die über etwa zwei Jahre bei Yahoo News gesammelt worden waren. Ein Gesichtsdetektor fand darin mehr als 30.000 Gesichter, die anhand der Bildunterschriften automatisch mit Namen versehen wurden. Aus dieser Sammlung ging später der Datensatz Labeled Faces in the Wild hervor, ohne dass die Abgebildeten um Einwilligung gebeten wurden.",
+      "title_de": "Forschende sammeln Gesichter aus Yahoo-News-Fotos",
+      "description_de": "Für die Studie 'Names and Faces in the News' (CVPR 2004) werteten Forschende um Tamara Berg rund eine halbe Million Nachrichtenfotos mit Bildunterschriften aus, die über etwa zwei Jahre bei Yahoo News gesammelt worden waren. Ein Gesichtsdetektor fand darin mehr als 30.000 Gesichter, die anhand der Bildunterschriften automatisch mit Namen versehen wurden. Aus dieser Sammlung ging später der Datensatz Labeled Faces in the Wild hervor, ohne dass die Abgebildeten um Einwilligung gebeten wurden.",
+      "title_en": "Researchers harvest faces from Yahoo News photos",
+      "description_en": "For the study 'Names and Faces in the News' (CVPR 2004), researchers led by Tamara Berg processed roughly half a million captioned news photos collected from Yahoo News over about two years. A face detector found more than 30,000 faces, which were automatically labelled with names taken from the captions. This collection later became the basis of the Labeled Faces in the Wild dataset, without the people depicted being asked for consent.",
+      "sources": [
+        "https://tamaraberg.com/papers/newsPaper_04.pdf",
+        "https://www.technologyreview.com/2021/02/05/1017388/ai-deep-learning-facial-recognition-data-history"
+      ]
+    },
+    {
+      "date": "2007-10",
+      "phase": "infrastructure",
+      "title": "UMass Amherst veröffentlicht den Datensatz Labeled Faces in the Wild",
+      "description": "Im Oktober 2007 erschien an der University of Massachusetts Amherst der technische Bericht 07-49 von Gary B. Huang, Manu Ramesh, Tamara Berg und Erik Learned-Miller zu Labeled Faces in the Wild (LFW). Der Datensatz umfasst 13.233 Gesichtsbilder aus dem Netz und sollte Gesichtserkennung unter realen, unkontrollierten Bedingungen erforschbar machen. Laut MIT Technology Review öffnete LFW die Schleusen für Datensammlungen per Websuche: Forschende luden fortan Fotos direkt von Google, Flickr und Yahoo herunter, ohne sich um Einwilligungen zu kümmern.",
+      "title_de": "UMass Amherst veröffentlicht den Datensatz Labeled Faces in the Wild",
+      "description_de": "Im Oktober 2007 erschien an der University of Massachusetts Amherst der technische Bericht 07-49 von Gary B. Huang, Manu Ramesh, Tamara Berg und Erik Learned-Miller zu Labeled Faces in the Wild (LFW). Der Datensatz umfasst 13.233 Gesichtsbilder aus dem Netz und sollte Gesichtserkennung unter realen, unkontrollierten Bedingungen erforschbar machen. Laut MIT Technology Review öffnete LFW die Schleusen für Datensammlungen per Websuche: Forschende luden fortan Fotos direkt von Google, Flickr und Yahoo herunter, ohne sich um Einwilligungen zu kümmern.",
+      "title_en": "UMass Amherst releases the Labeled Faces in the Wild dataset",
+      "description_en": "In October 2007 the University of Massachusetts Amherst published technical report 07-49 by Gary B. Huang, Manu Ramesh, Tamara Berg and Erik Learned-Miller on Labeled Faces in the Wild (LFW). The dataset comprises 13,233 face images from the web and was designed to enable research on face recognition under real-world, unconstrained conditions. According to MIT Technology Review, LFW opened the floodgates to data collection through web search: researchers began downloading photos directly from Google, Flickr and Yahoo without concern for consent.",
+      "sources": [
+        "https://www.tensorflow.org/datasets/catalog/lfw",
+        "https://www.technologyreview.com/2021/02/05/1017388/ai-deep-learning-facial-recognition-data-history"
+      ]
+    },
+    {
+      "date": "2015-07-30",
+      "phase": "doctrine",
+      "title": "US-Rechnungshof: Kein Bundesgesetz regelt kommerzielle Gesichtserkennung ausdrücklich",
+      "description": "Am 30. Juli 2015 stellte das Government Accountability Office (GAO) des US-Kongresses fest, dass kein Bundesgesetz zum Datenschutz die kommerzielle Nutzung von Gesichtserkennung ausdrücklich regelt; offen blieb etwa, wann die Technik zur Identifizierung von Menschen eingesetzt werden darf. Ein Folgebericht von 2020 bekräftigte, dass es kein umfassendes Bundesgesetz für den Umgang privater Unternehmen mit personenbezogenen Daten gibt. Eine bundesweite Einwilligungspflicht für das Sammeln von Gesichtsbildern aus dem Netz bestand damit nicht.",
+      "title_de": "US-Rechnungshof: Kein Bundesgesetz regelt kommerzielle Gesichtserkennung ausdrücklich",
+      "description_de": "Am 30. Juli 2015 stellte das Government Accountability Office (GAO) des US-Kongresses fest, dass kein Bundesgesetz zum Datenschutz die kommerzielle Nutzung von Gesichtserkennung ausdrücklich regelt; offen blieb etwa, wann die Technik zur Identifizierung von Menschen eingesetzt werden darf. Ein Folgebericht von 2020 bekräftigte, dass es kein umfassendes Bundesgesetz für den Umgang privater Unternehmen mit personenbezogenen Daten gibt. Eine bundesweite Einwilligungspflicht für das Sammeln von Gesichtsbildern aus dem Netz bestand damit nicht.",
+      "title_en": "US Government Accountability Office: no federal law expressly governs commercial facial recognition",
+      "description_en": "On 30 July 2015 the US Government Accountability Office (GAO) found that no federal privacy law expressly regulates commercial uses of facial recognition technology; it remained open, for example, when the technology may be used to identify people. A follow-up report in 2020 reaffirmed that there is no comprehensive federal privacy law governing how private companies handle personal information. There was thus no federal consent requirement for collecting face images from the web.",
+      "sources": [
+        "https://www.gao.gov/products/gao-15-621",
+        "https://gao.gov/assets/gao-20-522-highlights.pdf"
+      ]
+    },
+    {
+      "date": "2021-02-05",
+      "phase": "event",
+      "title": "Studie zeigt: Mit LFW verschwand die Einwilligung aus der Gesichtserkennungsforschung",
+      "description": "Am 5. Februar 2021 berichtete MIT Technology Review über eine Untersuchung von Deborah Raji und Genevieve Fried, die mehr als 130 Gesichtsdatensätze aus 43 Jahren ausgewertet hatten. Demnach verzichtete die Forschung mit dem wachsenden Datenhunger des Deep Learning schrittweise darauf, Menschen um Einwilligung zu bitten, und LFW markierte 2007 den Wendepunkt zur Massensammlung aus dem Netz. Raji sagte, bei einer Million Gesichtern lasse sich nicht einmal mehr vorgeben, die Kontrolle zu behalten.",
+      "title_de": "Studie zeigt: Mit LFW verschwand die Einwilligung aus der Gesichtserkennungsforschung",
+      "description_de": "Am 5. Februar 2021 berichtete MIT Technology Review über eine Untersuchung von Deborah Raji und Genevieve Fried, die mehr als 130 Gesichtsdatensätze aus 43 Jahren ausgewertet hatten. Demnach verzichtete die Forschung mit dem wachsenden Datenhunger des Deep Learning schrittweise darauf, Menschen um Einwilligung zu bitten, und LFW markierte 2007 den Wendepunkt zur Massensammlung aus dem Netz. Raji sagte, bei einer Million Gesichtern lasse sich nicht einmal mehr vorgeben, die Kontrolle zu behalten.",
+      "title_en": "Study shows consent vanished from facial recognition research with LFW",
+      "description_en": "On 5 February 2021 MIT Technology Review reported on a study by Deborah Raji and Genevieve Fried, who had analysed more than 130 face datasets compiled over 43 years. According to the study, driven by the growing data needs of deep learning, researchers gradually stopped asking people for consent, and LFW marked the turning point towards mass collection from the web in 2007. Raji said that with a million faces it becomes impossible even to pretend to stay in control.",
+      "sources": [
+        "https://www.technologyreview.com/2021/02/05/1017388/ai-deep-learning-facial-recognition-data-history"
+      ]
+    },
+    {
+      "date": "2021-08",
+      "phase": "consequences",
+      "title": "Princeton-Analyse: LFW-Lizenzen verhindern den Einsatz in Produktivsystemen nicht",
+      "description": "Im August 2021 veröffentlichten Kenny Peng, Arunesh Mathur und Arvind Narayanan von der Princeton University eine Auswertung von fast 1.000 Fachartikeln, die LFW, MS-Celeb-1M oder DukeMTMC zitieren. Sie kamen zu dem Schluss, dass die Lizenzen dieser Datensätze deren Einsatz in Produktivsystemen nicht wirksam einschränken und abgeleitete Datensätze eine solche Nutzung sogar ermöglichen. Die auf der NeurIPS 2021 vorgestellte Studie forderte unter dem Titel 'Mitigating dataset harms requires stewardship', Schäden durch Datensätze über deren gesamten Lebenszyklus hinweg zu begrenzen.",
+      "title_de": "Princeton-Analyse: LFW-Lizenzen verhindern den Einsatz in Produktivsystemen nicht",
+      "description_de": "Im August 2021 veröffentlichten Kenny Peng, Arunesh Mathur und Arvind Narayanan von der Princeton University eine Auswertung von fast 1.000 Fachartikeln, die LFW, MS-Celeb-1M oder DukeMTMC zitieren. Sie kamen zu dem Schluss, dass die Lizenzen dieser Datensätze deren Einsatz in Produktivsystemen nicht wirksam einschränken und abgeleitete Datensätze eine solche Nutzung sogar ermöglichen. Die auf der NeurIPS 2021 vorgestellte Studie forderte unter dem Titel 'Mitigating dataset harms requires stewardship', Schäden durch Datensätze über deren gesamten Lebenszyklus hinweg zu begrenzen.",
+      "title_en": "Princeton analysis: LFW licences do not prevent use in production systems",
+      "description_en": "In August 2021 Kenny Peng, Arunesh Mathur and Arvind Narayanan of Princeton University published an analysis of nearly 1,000 papers that cite LFW, MS-Celeb-1M or DukeMTMC. They concluded that the licences of these datasets do not effectively restrict their use in production systems and that derived datasets even enable such use. Presented at NeurIPS 2021 under the title 'Mitigating dataset harms requires stewardship', the study called for mitigating harms across a dataset's entire life cycle.",
+      "sources": [
+        "https://arxiv.org/abs/2108.02922",
+        "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/077e29b11be80ab57e1a2ecabb7da330-Abstract-round2.html"
+      ]
+    },
+    {
+      "date": "2025-02-02",
+      "phase": "consequences",
+      "title": "EU verbietet das ungezielte Auslesen von Gesichtsbildern aus dem Netz",
+      "description": "Seit dem 2. Februar 2025 gilt das Verbot aus Artikel 5 Absatz 1 Buchstabe e der EU-KI-Verordnung: KI-Systeme dürfen Gesichtserkennungsdatenbanken nicht durch ungezieltes Auslesen von Gesichtsbildern aus dem Internet oder aus Videoüberwachung anlegen oder erweitern. Erfasst ist damit die Praxis des massenhaften Gesichtersammelns aus dem Netz, die laut Raji und Fried mit LFW begann. KI-Systeme, die ausschließlich für wissenschaftliche Forschung entwickelt und in Betrieb genommen werden, nimmt die Verordnung allerdings von ihrem Anwendungsbereich aus (Artikel 2 Absatz 6).",
+      "title_de": "EU verbietet das ungezielte Auslesen von Gesichtsbildern aus dem Netz",
+      "description_de": "Seit dem 2. Februar 2025 gilt das Verbot aus Artikel 5 Absatz 1 Buchstabe e der EU-KI-Verordnung: KI-Systeme dürfen Gesichtserkennungsdatenbanken nicht durch ungezieltes Auslesen von Gesichtsbildern aus dem Internet oder aus Videoüberwachung anlegen oder erweitern. Erfasst ist damit die Praxis des massenhaften Gesichtersammelns aus dem Netz, die laut Raji und Fried mit LFW begann. KI-Systeme, die ausschließlich für wissenschaftliche Forschung entwickelt und in Betrieb genommen werden, nimmt die Verordnung allerdings von ihrem Anwendungsbereich aus (Artikel 2 Absatz 6).",
+      "title_en": "EU bans the untargeted scraping of facial images from the web",
+      "description_en": "Since 2 February 2025 the prohibition in Article 5(1)(e) of the EU AI Act has applied: AI systems may not create or expand facial recognition databases through the untargeted scraping of facial images from the internet or CCTV footage. It thus covers the practice of mass face collection from the web that, according to Raji and Fried, began with LFW. However, the regulation excludes from its scope AI systems specifically developed and put into service for the sole purpose of scientific research (Article 2(6)).",
+      "sources": [
+        "https://www.lewissilkin.com/insights/2025/01/20/eu-ai-act-are-you-ready-for-2-february-2025-the-ban-on-prohibited-ai-systems-102jut1",
+        "https://www.springlex.eu/de/packages/ai-act/ai-act-regulation/article-2/"
+      ]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://blog.citp.princeton.edu/2020/10/21/facial-recognition-datasets-are-being-widely-used-despite-being-taken-down-due-to-ethical-concerns-heres-how/",
+      "title": "Facial recognition datasets are being widely used despite being taken down due to ethical concerns",
+      "publisher": "Princeton CITP",
+      "date": "2020-10-21",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Facial recognition datasets are being widely used despite being taken down due to ethical concerns",
+      "title_en": "Facial recognition datasets are being widely used despite being taken down due to ethical concerns"
+    },
+    {
+      "url": "https://www.technologyreview.com/2021/02/05/1017388/ai-deep-learning-facial-recognition-data-history",
+      "title": "This is how we lost control of our faces",
+      "publisher": "MIT Technology Review",
+      "date": "2021-02-05",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "This is how we lost control of our faces",
+      "title_en": "This is how we lost control of our faces"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2001.03071v1",
+      "title": "About Face: A Survey of Facial Recognition Evaluation",
+      "publisher": "arXiv (Raji & Fried)",
+      "date": "2020-01",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "About Face: A Survey of Facial Recognition Evaluation",
+      "title_en": "About Face: A Survey of Facial Recognition Evaluation"
+    },
+    {
+      "url": "https://www.deeplearning.ai/the-batch/cutting-corners-to-recognize-faces",
+      "title": "Cutting Corners to Recognize Faces",
+      "publisher": "DeepLearning.AI The Batch",
+      "date": "2021-02",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Cutting Corners to Recognize Faces",
+      "title_en": "Cutting Corners to Recognize Faces"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-10-30",
+    "lastUpdated": "2026-10-30",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-lfw-dataset-discards-the-privacy-rights-of-internet-2021-aiaaic1547",
+    "promotedFromRound": "round-6-aiaaic-batch-b-2026-06-05"
+  }
+}

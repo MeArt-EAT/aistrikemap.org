@@ -1,0 +1,185 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-grok-verbreitet-falsche-schlagzeilen-zum-attentatsversuch-auf-trump-in-butler-2024",
+  "name": "USA: Grok verbreitet falsche Schlagzeilen zum Attentatsversuch auf Trump in Butler",
+  "name_de": "USA: Grok verbreitet falsche Schlagzeilen zum Attentatsversuch auf Trump in Butler",
+  "name_en": "USA: Grok posts false headlines about the Trump assassination attempt in Butler",
+  "description": "Nach dem Attentatsversuch auf Donald Trump am 13. Juli 2024 in Butler, Pennsylvania erzeugte Groks automatische Nachrichtenzusammenfassung auf X für Premium-Nutzer:innen mehrere falsche Schlagzeilen, darunter die Behauptung, Vizepräsidentin Kamala Harris sei angeschossen worden, sowie eine falsche Identifizierung des Schützen als Antifa-Anhänger. Nach Berichten (Wall Street Journal, dokumentiert in der AI Incident Database als Incident 742) entstanden die Fehler, weil Grok sarkastische und unbelegte Posts auf X als Fakten übernahm. Der Fall reiht sich in eine Serie von KI-Fehlleistungen rund um das Attentat ein, darunter Meta AI und Googles Autocomplete.",
+  "description_de": "Nach dem Attentatsversuch auf Donald Trump am 13. Juli 2024 in Butler, Pennsylvania erzeugte Groks automatische Nachrichtenzusammenfassung auf X für Premium-Nutzer:innen mehrere falsche Schlagzeilen, darunter die Behauptung, Vizepräsidentin Kamala Harris sei angeschossen worden, sowie eine falsche Identifizierung des Schützen als Antifa-Anhänger. Nach Berichten (Wall Street Journal, dokumentiert in der AI Incident Database als Incident 742) entstanden die Fehler, weil Grok sarkastische und unbelegte Posts auf X als Fakten übernahm. Der Fall reiht sich in eine Serie von KI-Fehlleistungen rund um das Attentat ein, darunter Meta AI und Googles Autocomplete.",
+  "description_en": "After the attempted assassination of Donald Trump on 13 July 2024 in Butler, Pennsylvania, Grok's automated news summaries on X for premium subscribers produced several false headlines, including a claim that Vice President Kamala Harris had been shot and a misidentification of the shooter as an antifa member. According to reports (Wall Street Journal, documented in the AI Incident Database as Incident 742), the errors arose because Grok treated sarcastic and unverified posts on X as fact. The case is part of a series of AI failures around the shooting, alongside Meta AI and Google's autocomplete.",
+  "startDate": "2024-07-13",
+  "location": {
+    "@type": "Place",
+    "name": "Butler, Pennsylvania, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.8612,
+      "longitude": -79.8953
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Butler, Pennsylvania, USA",
+    "name_en": "Butler, Pennsylvania, USA"
+  },
+  "asm:incidentType": [
+    "malfunction",
+    "deepfakes"
+  ],
+  "asm:affectedRights": [
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Recht auf freie Wahlen",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_de": [
+    "Recht auf Information",
+    "Schutz vor Manipulation",
+    "Recht auf freie Wahlen",
+    "Würde des Menschen"
+  ],
+  "asm:affectedRights_en": [
+    "Right to information",
+    "Protection from manipulation",
+    "Right to free elections",
+    "Human dignity"
+  ],
+  "asm:actors": [
+    {
+      "name": "xAI",
+      "type": "organization",
+      "asm:systems": [
+        "Grok"
+      ],
+      "name_de": "xAI",
+      "name_en": "xAI"
+    },
+    {
+      "name": "X Corp",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "X Corp",
+      "name_en": "X Corp"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2023-11",
+      "phase": "infrastructure",
+      "title": "Grok startet mit Echtzeitzugriff auf die Posts von X",
+      "description": "Im November 2023 stellte xAI den Chatbot Grok vor, dessen zentrales Verkaufsargument der Echtzeitzugriff auf Inhalte der Plattform X war. Bei aktuellen Ereignissen speist sich das Modell damit unmittelbar aus ungeprüften Nutzer-Posts. Nach einer kurzen Testphase mit ausgewählten Nutzer:innen in den USA war der Zugang zunächst den zahlenden Abonnent:innen der teuersten Stufe Premium+ vorbehalten.",
+      "title_de": "Grok startet mit Echtzeitzugriff auf die Posts von X",
+      "description_de": "Im November 2023 stellte xAI den Chatbot Grok vor, dessen zentrales Verkaufsargument der Echtzeitzugriff auf Inhalte der Plattform X war. Bei aktuellen Ereignissen speist sich das Modell damit unmittelbar aus ungeprüften Nutzer-Posts. Nach einer kurzen Testphase mit ausgewählten Nutzer:innen in den USA war der Zugang zunächst den zahlenden Abonnent:innen der teuersten Stufe Premium+ vorbehalten.",
+      "title_en": "Grok launches with real-time access to posts on X",
+      "description_en": "In November 2023 xAI unveiled the chatbot Grok, whose key selling point was real-time access to content on the X platform. For current events, the model thus draws directly on unverified user posts. After a short test phase with selected users in the US, access was initially reserved for paying subscribers of the most expensive tier, Premium+.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2023-11-06/musk-s-grok-ai-bot-aims-to-rival-chatgpt-with-real-time-x-data",
+        "https://venturebeat.com/ai/elon-musk-unveils-xais-first-product-grok-an-llm-offering-realtime-data-efficiency-and-humor"
+      ]
+    },
+    {
+      "date": "2024-05-03",
+      "phase": "doctrine",
+      "title": "X lässt Grok Nachrichten aus Posts zusammenfassen, nur mit Warnhinweis",
+      "description": "Am 3. Mai 2024 startete X für Premium-Abonnent:innen 'Stories on X': Grok fasst Trending-Themen zusammen und stützt sich dabei auf Gespräche auf der Plattform, nicht auf den Text der diskutierten Artikel. Die Zusammenfassungen erscheinen lediglich mit dem Hinweis 'Grok can make mistakes, verify its outputs'. Schon am 4. April 2024 hatte Grok eine erfundene Schlagzeile über einen iranischen Raketenangriff auf Tel Aviv in die Trends von X gebracht.",
+      "title_de": "X lässt Grok Nachrichten aus Posts zusammenfassen, nur mit Warnhinweis",
+      "description_de": "Am 3. Mai 2024 startete X für Premium-Abonnent:innen 'Stories on X': Grok fasst Trending-Themen zusammen und stützt sich dabei auf Gespräche auf der Plattform, nicht auf den Text der diskutierten Artikel. Die Zusammenfassungen erscheinen lediglich mit dem Hinweis 'Grok can make mistakes, verify its outputs'. Schon am 4. April 2024 hatte Grok eine erfundene Schlagzeile über einen iranischen Raketenangriff auf Tel Aviv in die Trends von X gebracht.",
+      "title_en": "X has Grok summarise news from posts, with only a warning label",
+      "description_en": "On 3 May 2024 X launched 'Stories on X' for Premium subscribers: Grok summarises trending topics based on conversations on the platform rather than the text of the articles being discussed. The summaries carry only the note 'Grok can make mistakes, verify its outputs'. As early as 4 April 2024, Grok had pushed a fabricated headline about an Iranian missile strike on Tel Aviv into X's trends.",
+      "sources": [
+        "https://techcrunch.com/2024/05/03/x-launches-stories-on-x-delivering-news-summarized-by-grok-ai",
+        "https://computing.co.uk/news/4194162/musks-pushed-fake-iran-israel-headline-generated-ai-chatbot-grok"
+      ]
+    },
+    {
+      "date": "2024-07-13",
+      "phase": "event",
+      "title": "Grok erzeugt nach dem Attentatsversuch in Butler falsche Schlagzeilen",
+      "description": "In den Stunden nach den Schüssen auf Donald Trump am 13. Juli 2024 in Butler, Pennsylvania, generierte Groks Nachrichtenfunktion auf X mehrere falsche Schlagzeilen. Darunter waren die Meldung, Vizepräsidentin Kamala Harris sei angeschossen worden, eine Zusammenfassung, die den Schützen fälschlich als Antifa-Mitglied bezeichnete, und eine Schlagzeile über einen angeschossenen 'Home Alone 2'-Schauspieler, die nicht erklärte, dass Trump selbst gemeint war. Grok hatte sarkastische und unbelegte Posts als Tatsachen übernommen.",
+      "title_de": "Grok erzeugt nach dem Attentatsversuch in Butler falsche Schlagzeilen",
+      "description_de": "In den Stunden nach den Schüssen auf Donald Trump am 13. Juli 2024 in Butler, Pennsylvania, generierte Groks Nachrichtenfunktion auf X mehrere falsche Schlagzeilen. Darunter waren die Meldung, Vizepräsidentin Kamala Harris sei angeschossen worden, eine Zusammenfassung, die den Schützen fälschlich als Antifa-Mitglied bezeichnete, und eine Schlagzeile über einen angeschossenen 'Home Alone 2'-Schauspieler, die nicht erklärte, dass Trump selbst gemeint war. Grok hatte sarkastische und unbelegte Posts als Tatsachen übernommen.",
+      "title_en": "Grok generates false headlines after the Butler assassination attempt",
+      "description_en": "In the hours after the shots fired at Donald Trump on 13 July 2024 in Butler, Pennsylvania, Grok's news feature on X generated several false headlines. They included a report that Vice President Kamala Harris had been shot, a summary that wrongly described the shooter as an antifa member, and a headline about a 'Home Alone 2' actor being shot that did not explain it referred to Trump himself. Grok had treated sarcastic and unverified posts as fact.",
+      "sources": [
+        "https://dig.watch/updates/musks-grok-ai-struggles-with-news-accuracy",
+        "https://incidentdatabase.ai/cite/742"
+      ]
+    },
+    {
+      "date": "2024-08-05",
+      "phase": "consequences",
+      "title": "Fünf Secretaries of State fordern von Musk Korrekturen an Grok",
+      "description": "Der politische Druck wegen Groks Falschinformationen im Wahljahr wuchs: Am 5. August 2024 forderten die obersten Wahlverantwortlichen von Minnesota, Pennsylvania, Washington, Michigan und New Mexico Musk in einem offenen Brief auf, Grok umgehend zu ändern. Anlass war eine weitere Falschmeldung des Chatbots, der nach Joe Bidens Rückzug am 21. Juli über eine Woche lang behauptet hatte, in neun Bundesstaaten sei die Frist für neue Kandidat:innen auf dem Stimmzettel abgelaufen. Die Unterzeichner:innen verlangten, Grok solle Wahlfragen an die überparteiliche Seite CanIVote.org verweisen.",
+      "title_de": "Fünf Secretaries of State fordern von Musk Korrekturen an Grok",
+      "description_de": "Der politische Druck wegen Groks Falschinformationen im Wahljahr wuchs: Am 5. August 2024 forderten die obersten Wahlverantwortlichen von Minnesota, Pennsylvania, Washington, Michigan und New Mexico Musk in einem offenen Brief auf, Grok umgehend zu ändern. Anlass war eine weitere Falschmeldung des Chatbots, der nach Joe Bidens Rückzug am 21. Juli über eine Woche lang behauptet hatte, in neun Bundesstaaten sei die Frist für neue Kandidat:innen auf dem Stimmzettel abgelaufen. Die Unterzeichner:innen verlangten, Grok solle Wahlfragen an die überparteiliche Seite CanIVote.org verweisen.",
+      "title_en": "Five secretaries of state demand that Musk fix Grok",
+      "description_en": "Political pressure over Grok's false information in the election year grew: on 5 August 2024 the chief election officials of Minnesota, Pennsylvania, Washington, Michigan and New Mexico urged Musk in an open letter to change Grok immediately. The trigger was another false claim by the chatbot, which for more than a week after Joe Biden's withdrawal on 21 July had said that the deadline for new candidates on the ballot had passed in nine states. The signatories asked that Grok direct election questions to the nonpartisan site CanIVote.org.",
+      "sources": [
+        "https://www.axios.com/2024/08/05/elon-musk-grok-2024-election-ballot-misinformation",
+        "https://www.nbcnews.com/tech/misinformation/secretaries-state-say-xs-ai-shared-false-election-information-rcna165194"
+      ]
+    },
+    {
+      "date": "2024-08-26",
+      "phase": "consequences",
+      "title": "X leitet Wahlfragen an Grok auf Vote.gov um",
+      "description": "Ende August 2024 gab Minnesotas Secretary of State Steve Simon bekannt, dass X den Chatbot angepasst hat: Wer Wahlbegriffe in eine Grok-Anfrage aufnimmt, wird nun auf die Regierungsseite Vote.gov verwiesen. Die Wahlverantwortlichen begrüßten den Schritt, obwohl sie CanIVote.org gefordert hatten. Die Änderung betraf die Antworten des Chatbots auf Wahlfragen.",
+      "title_de": "X leitet Wahlfragen an Grok auf Vote.gov um",
+      "description_de": "Ende August 2024 gab Minnesotas Secretary of State Steve Simon bekannt, dass X den Chatbot angepasst hat: Wer Wahlbegriffe in eine Grok-Anfrage aufnimmt, wird nun auf die Regierungsseite Vote.gov verwiesen. Die Wahlverantwortlichen begrüßten den Schritt, obwohl sie CanIVote.org gefordert hatten. Die Änderung betraf die Antworten des Chatbots auf Wahlfragen.",
+      "title_en": "X redirects election questions put to Grok to Vote.gov",
+      "description_en": "In late August 2024 Minnesota Secretary of State Steve Simon announced that X had adjusted the chatbot: users who include election-related terms in a Grok query are now pointed to the government site Vote.gov. The election officials welcomed the step, although they had asked for CanIVote.org. The change concerned the chatbot's answers to election questions.",
+      "sources": [
+        "https://sos.state.mn.us/about-the-office/news-room/secretaries-of-state-welcome-changes-to-x-s-ai-search-assistant",
+        "https://minnesotareformer.com/2024/08/26/x-fixes-ai-chatbot-after-secretaries-of-state-complained-it-spread-election-misinformation/"
+      ]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://dig.watch/updates/musks-grok-ai-struggles-with-news-accuracy",
+      "title": "Musk's Grok AI struggles with news accuracy",
+      "publisher": "Digital Watch Observatory (Geneva Internet Platform)",
+      "date": "2024-07",
+      "type": "analysis",
+      "asm:linkHealth": "unverified",
+      "title_de": "Musk's Grok AI struggles with news accuracy",
+      "title_en": "Musk's Grok AI struggles with news accuracy"
+    },
+    {
+      "url": "https://incidentdatabase.ai/cite/742",
+      "title": "AI Incident Database, Incident 742: Grok false headlines during Trump assassination attempt (verweist auf Wall Street Journal)",
+      "publisher": "AI Incident Database",
+      "date": "2024-07-13",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "AI Incident Database, Incident 742: Grok false headlines during Trump assassination attempt (verweist auf Wall Street Journal)",
+      "title_en": "AI Incident Database, Incident 742: Grok false headlines during Trump assassination attempt (verweist auf Wall Street Journal)"
+    },
+    {
+      "url": "https://sherwood.news/tech/bad-ai-bot-grok-is-not-good/",
+      "title": "Bad AI bot Grok is not good, and that's bad news for X",
+      "publisher": "Sherwood News",
+      "date": "",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Bad AI bot Grok is not good, and that's bad news for X",
+      "title_en": "Bad AI bot Grok is not good, and that's bad news for X"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-10-30",
+    "lastUpdated": "2026-10-30",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "us-grok-posts-incorrect-information-about-trump-assassination-2024-aiaaic1623",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

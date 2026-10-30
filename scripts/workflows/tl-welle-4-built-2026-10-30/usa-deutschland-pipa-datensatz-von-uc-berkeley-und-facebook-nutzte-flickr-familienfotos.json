@@ -1,0 +1,209 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/usa-deutschland-pipa-datensatz-von-uc-berkeley-und-facebook-nutzte-flickr-familienfotos",
+  "name": "USA/Deutschland: PIPA-Datensatz von UC Berkeley und Facebook nutzte Flickr-Familienfotos ohne Einwilligung",
+  "name_de": "USA/Deutschland: PIPA-Datensatz von UC Berkeley und Facebook nutzte Flickr-Familienfotos ohne Einwilligung",
+  "name_en": "USA/Germany: PIPA dataset by UC Berkeley and Facebook used Flickr family photos without consent",
+  "description": "Der People-in-Photo-Albums-Datensatz (PIPA) wurde 2015 von Forschenden der UC Berkeley und von Facebook AI Research zur Personenerkennung in Fotoalben veröffentlicht; laut Originalpaper umfasst er 37.107 Fotos von 2.356 Personen aus öffentlichen Flickr-Alben unter Creative-Commons-Lizenz. Exposing.AI beziffert ihn auf rund 60.000 Gesichtsaufnahmen von etwa 2.000 Personen, davon 32.518 Flickr-Fotos, darunter viele persönliche Bilder von Kindern, Familienessen und Hochzeiten. Grundlage waren die Lizenzen der Hochladenden, nicht die Einwilligung der Abgebildeten. Das am 31. Januar 2021 gestartete Projekt Exposing.AI von Adam Harvey und Jules LaPlace machte die Flickr-Herkunft der Bilder durchsuchbar und dokumentierte die Nutzung des Datensatzes unter anderem durch Forschende mit Verbindung zum Überwachungsunternehmen SenseTime. Stand Januar 2020 verbreitete die UC Berkeley den Datensatz laut Exposing.AI nicht mehr, das Max-Planck-Institut für Informatik in Saarbrücken bot ihn aber weiterhin frei zum Download an.",
+  "description_de": "Der People-in-Photo-Albums-Datensatz (PIPA) wurde 2015 von Forschenden der UC Berkeley und von Facebook AI Research zur Personenerkennung in Fotoalben veröffentlicht; laut Originalpaper umfasst er 37.107 Fotos von 2.356 Personen aus öffentlichen Flickr-Alben unter Creative-Commons-Lizenz. Exposing.AI beziffert ihn auf rund 60.000 Gesichtsaufnahmen von etwa 2.000 Personen, davon 32.518 Flickr-Fotos, darunter viele persönliche Bilder von Kindern, Familienessen und Hochzeiten. Grundlage waren die Lizenzen der Hochladenden, nicht die Einwilligung der Abgebildeten. Das am 31. Januar 2021 gestartete Projekt Exposing.AI von Adam Harvey und Jules LaPlace machte die Flickr-Herkunft der Bilder durchsuchbar und dokumentierte die Nutzung des Datensatzes unter anderem durch Forschende mit Verbindung zum Überwachungsunternehmen SenseTime. Stand Januar 2020 verbreitete die UC Berkeley den Datensatz laut Exposing.AI nicht mehr, das Max-Planck-Institut für Informatik in Saarbrücken bot ihn aber weiterhin frei zum Download an.",
+  "description_en": "The People in Photo Albums (PIPA) dataset was released in 2015 by researchers at UC Berkeley and Facebook AI Research for recognising people in photo albums; according to the original paper it comprises 37,107 photos of 2,356 people from public Flickr albums under Creative Commons licences. Exposing.AI puts it at around 60,000 face images of about 2,000 people, including 32,518 Flickr photos, many of them personal pictures of children, family dinners and weddings. The basis was the uploaders' licences, not the consent of those depicted. Exposing.AI, the project by Adam Harvey and Jules LaPlace launched on 31 January 2021, made the Flickr origin of the images searchable and documented use of the dataset by researchers affiliated with the surveillance company SenseTime, among others. According to Exposing.AI, UC Berkeley was no longer distributing the dataset as of January 2020, but the Max Planck Institute for Informatics in Saarbrücken continued to offer it for free download.",
+  "startDate": "2021-01-31",
+  "location": {
+    "@type": "Place",
+    "name": "Berkeley, Kalifornien, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.8716,
+      "longitude": -122.2727
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "name_de": "Berkeley, Kalifornien, USA",
+    "name_en": "Berkeley, California, USA"
+  },
+  "asm:incidentType": [
+    "facial-recognition",
+    "surveillance",
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Kinderrechte",
+    "Recht am eigenen Bild"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Kinderrechte",
+    "Recht am eigenen Bild"
+  ],
+  "asm:affectedRights_en": [
+    "Privacy",
+    "Data protection",
+    "Children's rights",
+    "Right to one's own image"
+  ],
+  "asm:actors": [
+    {
+      "name": "UC Berkeley",
+      "type": "organization",
+      "asm:systems": [
+        "People in Photo Albums (PIPA) dataset"
+      ],
+      "name_de": "UC Berkeley",
+      "name_en": "UC Berkeley"
+    },
+    {
+      "name": "Facebook AI Research",
+      "type": "company",
+      "asm:systems": [
+        "People in Photo Albums (PIPA) dataset"
+      ],
+      "name_de": "Facebook AI Research",
+      "name_en": "Facebook AI Research"
+    },
+    {
+      "name": "Max Planck Institute for Informatics",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Max Planck Institute for Informatics",
+      "name_en": "Max Planck Institute for Informatics"
+    }
+  ],
+  "asm:severity": 3,
+  "asm:verificationLevel": 2,
+  "asm:reverseTimeline": [
+    {
+      "date": "2004",
+      "phase": "infrastructure",
+      "title": "Flickr führt Creative-Commons-Lizenzen ein",
+      "description": "Die Fotoplattform Flickr ermöglichte es ihren Nutzerinnen und Nutzern 2004, eigene Bilder unter Creative-Commons-Lizenzen freizugeben; bis 2021 wuchs der Bestand auf über 500 Millionen so lizenzierte Werke. Die frei nutzbaren Bildmengen wurden zur Datenquelle für die Computer-Vision-Forschung: 2014 stellte Flickr-Eigentümer Yahoo mit YFCC100M rund 100 Millionen CC-lizenzierte Fotos und Videos für Forschende bereit.",
+      "title_de": "Flickr führt Creative-Commons-Lizenzen ein",
+      "description_de": "Die Fotoplattform Flickr ermöglichte es ihren Nutzerinnen und Nutzern 2004, eigene Bilder unter Creative-Commons-Lizenzen freizugeben; bis 2021 wuchs der Bestand auf über 500 Millionen so lizenzierte Werke. Die frei nutzbaren Bildmengen wurden zur Datenquelle für die Computer-Vision-Forschung: 2014 stellte Flickr-Eigentümer Yahoo mit YFCC100M rund 100 Millionen CC-lizenzierte Fotos und Videos für Forschende bereit.",
+      "title_en": "Flickr introduces Creative Commons licences",
+      "description_en": "In 2004, the photo platform Flickr enabled its users to release their own pictures under Creative Commons licences; by 2021 the stock had grown to more than 500 million works licensed this way. These freely usable image collections became a data source for computer vision research: in 2014, Flickr's owner Yahoo made around 100 million CC-licensed photos and videos available to researchers as YFCC100M.",
+      "sources": [
+        "https://blog.flickr.net/en/2021/09/08/a-look-at-nearly-two-decades-of-creative-commons-licenses-on-flickr/",
+        "https://blogs.loc.gov/thesignal/2014/08/what-do-you-do-with-100-million-photos-david-a-shamma-and-the-flickr-photos-dataset/"
+      ]
+    },
+    {
+      "date": "2015",
+      "phase": "infrastructure",
+      "title": "UC Berkeley und Facebook veröffentlichen den PIPA-Datensatz",
+      "description": "Forschende der UC Berkeley und von Facebook AI Research stellten auf der Konferenz CVPR 2015 den Datensatz People in Photo Albums (PIPA) vor. Er umfasst laut Paper 37.107 Fotos von 2.356 Personen aus öffentlichen Flickr-Alben unter Creative-Commons-Lizenz. Ziel war es, Menschen in Fotoalben auch dann wiederzuerkennen, wenn ihr Gesicht nicht frontal zu sehen ist, etwa anhand von Körperhaltung und Erscheinungsbild.",
+      "title_de": "UC Berkeley und Facebook veröffentlichen den PIPA-Datensatz",
+      "description_de": "Forschende der UC Berkeley und von Facebook AI Research stellten auf der Konferenz CVPR 2015 den Datensatz People in Photo Albums (PIPA) vor. Er umfasst laut Paper 37.107 Fotos von 2.356 Personen aus öffentlichen Flickr-Alben unter Creative-Commons-Lizenz. Ziel war es, Menschen in Fotoalben auch dann wiederzuerkennen, wenn ihr Gesicht nicht frontal zu sehen ist, etwa anhand von Körperhaltung und Erscheinungsbild.",
+      "title_en": "UC Berkeley and Facebook publish the PIPA dataset",
+      "description_en": "At the CVPR 2015 conference, researchers from UC Berkeley and Facebook AI Research presented the People in Photo Albums (PIPA) dataset. According to the paper, it comprises 37,107 photos of 2,356 people taken from public Flickr albums under Creative Commons licences. The aim was to recognise people in photo albums even when their faces are not visible frontally, for example by their pose and appearance.",
+      "sources": [
+        "https://openaccess.thecvf.com/content_cvpr_2015/papers/Zhang_Beyond_Frontal_Faces_2015_CVPR_paper.pdf",
+        "https://arxiv.org/pdf/1501.05703.pdf"
+      ]
+    },
+    {
+      "date": "2019-03",
+      "phase": "doctrine",
+      "title": "Lizenz statt Einwilligung: Creative Commons benennt die Lücke",
+      "description": "Gesichtsdatensätze wie PIPA stützten sich auf die Creative-Commons-Lizenzen der Hochladenden, nicht auf die Einwilligung der abgebildeten Menschen. Als NBC News im März 2019 enthüllte, dass IBM für seinen Datensatz 'Diversity in Faces' Flickr-Fotos nutzte, stellte Creative-Commons-Chef Ryan Merkley klar, die Lizenzen seien für das Urheberrecht gemacht und kein Instrument zum Schutz von Privatsphäre oder Forschungsethik.",
+      "title_de": "Lizenz statt Einwilligung: Creative Commons benennt die Lücke",
+      "description_de": "Gesichtsdatensätze wie PIPA stützten sich auf die Creative-Commons-Lizenzen der Hochladenden, nicht auf die Einwilligung der abgebildeten Menschen. Als NBC News im März 2019 enthüllte, dass IBM für seinen Datensatz 'Diversity in Faces' Flickr-Fotos nutzte, stellte Creative-Commons-Chef Ryan Merkley klar, die Lizenzen seien für das Urheberrecht gemacht und kein Instrument zum Schutz von Privatsphäre oder Forschungsethik.",
+      "title_en": "Licence instead of consent: Creative Commons names the gap",
+      "description_en": "Face datasets such as PIPA relied on the uploaders' Creative Commons licences, not on the consent of the people depicted. When NBC News revealed in March 2019 that IBM had used Flickr photos for its 'Diversity in Faces' dataset, Creative Commons CEO Ryan Merkley made clear that the licences were designed for copyright and were not a tool for protecting privacy or research ethics.",
+      "sources": [
+        "https://www.artificialintelligence-news.com/news/ibm-flickr-photos-ai-training/",
+        "https://www.cbsnews.com/sacramento/news/online-images-facial-recognition-ai-training"
+      ]
+    },
+    {
+      "date": "2021-01-31",
+      "phase": "event",
+      "title": "Exposing.AI macht die Flickr-Herkunft von PIPA durchsuchbar",
+      "description": "Adam Harvey und Jules LaPlace starteten gemeinsam mit dem Surveillance Technology Oversight Project die Suchmaschine Exposing.AI, mit der sich prüfen lässt, ob eigene Flickr-Fotos unter mehr als 3,5 Millionen Bildern aus Gesichtserkennungs-Datensätzen stecken. Die PIPA-Seite dokumentiert rund 32.500 Flickr-Fotos von etwa 2.000 Personen, darunter viele private Aufnahmen von Kindern, Familienessen und Hochzeiten. Sie verzeichnet zudem die Nutzung des Datensatzes durch Forschende mit Verbindung zum Überwachungsunternehmen SenseTime.",
+      "title_de": "Exposing.AI macht die Flickr-Herkunft von PIPA durchsuchbar",
+      "description_de": "Adam Harvey und Jules LaPlace starteten gemeinsam mit dem Surveillance Technology Oversight Project die Suchmaschine Exposing.AI, mit der sich prüfen lässt, ob eigene Flickr-Fotos unter mehr als 3,5 Millionen Bildern aus Gesichtserkennungs-Datensätzen stecken. Die PIPA-Seite dokumentiert rund 32.500 Flickr-Fotos von etwa 2.000 Personen, darunter viele private Aufnahmen von Kindern, Familienessen und Hochzeiten. Sie verzeichnet zudem die Nutzung des Datensatzes durch Forschende mit Verbindung zum Überwachungsunternehmen SenseTime.",
+      "title_en": "Exposing.AI makes PIPA's Flickr origin searchable",
+      "description_en": "Together with the Surveillance Technology Oversight Project, Adam Harvey and Jules LaPlace launched the search engine Exposing.AI, which lets people check whether their own Flickr photos are among more than 3.5 million images from face recognition datasets. The PIPA page documents around 32,500 Flickr photos of about 2,000 people, including many private pictures of children, family dinners and weddings. It also records use of the dataset by researchers affiliated with the surveillance company SenseTime.",
+      "sources": [
+        "https://exposing.ai/pipa",
+        "https://www.biometricupdate.com/202102/online-tool-exposes-whether-face-biometrics-have-been-trained-with-your-photos"
+      ]
+    },
+    {
+      "date": "2021-02",
+      "phase": "consequences",
+      "title": "Medienecho: Nutzer entdecken ihre Fotos in KI-Datensätzen",
+      "description": "Medien wie CNN und futurezone griffen das Werkzeug auf und erklärten, wie Flickr-Nutzer ihre Bilder in Trainingsdatensätzen für Gesichtserkennung finden können. Harvey betonte, Exposing.AI erfasse nur einen kleinen Teil der tatsächlich genutzten Gesichtsdaten, weil viele Unternehmen die Herkunft ihrer Trainingsdaten nicht offenlegen.",
+      "title_de": "Medienecho: Nutzer entdecken ihre Fotos in KI-Datensätzen",
+      "description_de": "Medien wie CNN und futurezone griffen das Werkzeug auf und erklärten, wie Flickr-Nutzer ihre Bilder in Trainingsdatensätzen für Gesichtserkennung finden können. Harvey betonte, Exposing.AI erfasse nur einen kleinen Teil der tatsächlich genutzten Gesichtsdaten, weil viele Unternehmen die Herkunft ihrer Trainingsdaten nicht offenlegen.",
+      "title_en": "Media coverage: users discover their photos in AI datasets",
+      "description_en": "Outlets such as CNN and futurezone picked up the tool and explained how Flickr users can find their pictures in facial recognition training datasets. Harvey stressed that Exposing.AI covers only a small part of the face data actually in use, because many companies do not disclose where their training data comes from.",
+      "sources": [
+        "https://kvia.com/news/business-technology/2021/02/04/this-new-tool-can-tell-you-if-your-online-photos-are-helping-train-facial-recognition-systems/",
+        "https://futurezone.at/netzpolitik/tool-entlarvt-mit-welchen-flickr-fotos-ki-trainiert-wurde/401173894"
+      ]
+    },
+    {
+      "date": "2025-02-02",
+      "phase": "consequences",
+      "title": "EU verbietet ungezieltes Scraping von Gesichtsbildern",
+      "description": "Seit dem 2. Februar 2025 verbietet der EU AI Act KI-Systeme, die Gesichtserkennungsdatenbanken durch ungezieltes Auslesen von Gesichtsbildern aus dem Internet oder aus Videoüberwachung erstellen oder erweitern. Vor diesem Stichtag erstellte Datenbanken fallen laut Fachanalysen nicht unter das Verbot, solange sie nicht nachträglich per KI-gestütztem Scraping erweitert werden.",
+      "title_de": "EU verbietet ungezieltes Scraping von Gesichtsbildern",
+      "description_de": "Seit dem 2. Februar 2025 verbietet der EU AI Act KI-Systeme, die Gesichtserkennungsdatenbanken durch ungezieltes Auslesen von Gesichtsbildern aus dem Internet oder aus Videoüberwachung erstellen oder erweitern. Vor diesem Stichtag erstellte Datenbanken fallen laut Fachanalysen nicht unter das Verbot, solange sie nicht nachträglich per KI-gestütztem Scraping erweitert werden.",
+      "title_en": "EU bans untargeted scraping of facial images",
+      "description_en": "Since 2 February 2025, the EU AI Act has prohibited AI systems that create or expand facial recognition databases through the untargeted scraping of facial images from the internet or CCTV footage. According to expert analyses, databases created before that date are not covered by the ban unless they are subsequently expanded through AI-enabled untargeted scraping.",
+      "sources": [
+        "https://fpf.org/blog/red-lines-under-the-eu-ai-act-understanding-the-ban-of-the-untargeted-scraping-of-facial-images-and-facial-recognition-databases/",
+        "https://www.orrick.com/en/Insights/2025/04/EU-Commission-Publishes-Guidelines-on-the-Prohibited-AI-Practices-under-the-AI-Act"
+      ]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://futurezone.at/netzpolitik/tool-entlarvt-mit-welchen-flickr-fotos-ki-trainiert-wurde/401173894",
+      "title": "Tool entlarvt, mit welchen Flickr-Fotos KI trainiert wurde",
+      "publisher": "futurezone",
+      "date": "2021",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Tool entlarvt, mit welchen Flickr-Fotos KI trainiert wurde",
+      "title_en": "Tool entlarvt, mit welchen Flickr-Fotos KI trainiert wurde"
+    },
+    {
+      "url": "https://openaccess.thecvf.com/content_cvpr_2015/papers/Zhang_Beyond_Frontal_Faces_2015_CVPR_paper.pdf",
+      "title": "Beyond Frontal Faces: Improving Person Recognition Using Multiple Cues",
+      "publisher": "CVPR 2015 (UC Berkeley / Facebook AI Research)",
+      "date": "2015",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Beyond Frontal Faces: Improving Person Recognition Using Multiple Cues",
+      "title_en": "Beyond Frontal Faces: Improving Person Recognition Using Multiple Cues"
+    },
+    {
+      "url": "https://exposing.ai/pipa",
+      "title": "People in Photo Albums (PIPA)",
+      "publisher": "Exposing.AI (Adam Harvey, Jules LaPlace)",
+      "date": "2021",
+      "type": "ngo-report",
+      "asm:linkHealth": "unverified",
+      "title_de": "People in Photo Albums (PIPA)",
+      "title_en": "People in Photo Albums (PIPA)"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-10-30",
+    "lastUpdated": "2026-10-30",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "de-people-in-photo-albums-dataset-criticised-for-using-2019-aiaaic1559",
+    "promotedFromRound": "round-6-aiaaic-batch-c-2026-06-05"
+  }
+}
