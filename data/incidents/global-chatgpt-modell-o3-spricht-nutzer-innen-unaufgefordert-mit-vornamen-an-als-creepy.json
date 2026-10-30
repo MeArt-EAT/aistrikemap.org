@@ -1,0 +1,179 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/global-chatgpt-modell-o3-spricht-nutzer-innen-unaufgefordert-mit-vornamen-an-als-creepy",
+  "name": "Global: ChatGPT-Modell o3 spricht Nutzer:innen unaufgefordert mit Vornamen an - als 'creepy' wahrgenommen",
+  "name_de": "Global: ChatGPT-Modell o3 spricht Nutzer:innen unaufgefordert mit Vornamen an - als 'creepy' wahrgenommen",
+  "name_en": "Global: ChatGPT o3 model addresses users by their first names unprompted - perceived as 'creepy'",
+  "description": "Mitte April 2025 bemerkten Nutzer:innen, dass ChatGPT (insbesondere das Reasoning-Modell o3) sie gelegentlich beim Vornamen ansprach, obwohl sie ihren Namen im Gespräch nie genannt hatten. Das Verhalten trat vor allem in der sichtbaren Gedankenkette (Chain of Thought) während der Reasoning-Schritte auf, nicht in der endgültigen Antwort. Reaktionen waren überwiegend negativ: Software-Entwickler Simon Willison nannte es 'creepy and unnecessary', Entwickler Nick Dobos sagte 'I hated it'. Vermutet wurde ein Zusammenhang mit dem kurz zuvor erweiterten 'Memory'-Feature, das auf frühere Chats zugreift; laut PCMag berichteten einige Nutzer:innen, der Name sei auch bei deaktiviertem Memory und abgeschalteter Personalisierung erschienen. OpenAI äußerte sich zunächst nicht. Bis Ende derselben Woche schien die Änderung weitgehend zurückgenommen.",
+  "description_de": "Mitte April 2025 bemerkten Nutzer:innen, dass ChatGPT (insbesondere das Reasoning-Modell o3) sie gelegentlich beim Vornamen ansprach, obwohl sie ihren Namen im Gespräch nie genannt hatten. Das Verhalten trat vor allem in der sichtbaren Gedankenkette (Chain of Thought) während der Reasoning-Schritte auf, nicht in der endgültigen Antwort. Reaktionen waren überwiegend negativ: Software-Entwickler Simon Willison nannte es 'creepy and unnecessary', Entwickler Nick Dobos sagte 'I hated it'. Vermutet wurde ein Zusammenhang mit dem kurz zuvor erweiterten 'Memory'-Feature, das auf frühere Chats zugreift; laut PCMag berichteten einige Nutzer:innen, der Name sei auch bei deaktiviertem Memory und abgeschalteter Personalisierung erschienen. OpenAI äußerte sich zunächst nicht. Bis Ende derselben Woche schien die Änderung weitgehend zurückgenommen.",
+  "description_en": "In mid-April 2025, users noticed that ChatGPT (particularly the o3 reasoning model) occasionally addressed them by their first name even though they had never mentioned it in the conversation. The behaviour appeared mainly in the visible chain of thought during reasoning steps, not in the final answer. Reactions were largely negative: software developer Simon Willison called it 'creepy and unnecessary', developer Nick Dobos said 'I hated it'. A link to the recently expanded 'memory' feature, which draws on earlier chats, was suspected; according to PCMag, some users reported the name appearing even with memory and personalisation disabled. OpenAI did not comment initially. By the end of that week the change appeared to have been largely rolled back.",
+  "startDate": "2025-04",
+  "location": {
+    "@type": "Place",
+    "name": "Weltweit (OpenAI ChatGPT)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GLOBAL"
+    },
+    "name_de": "Weltweit (OpenAI ChatGPT)",
+    "name_en": "Worldwide (OpenAI ChatGPT)"
+  },
+  "asm:incidentType": [
+    "data-misuse"
+  ],
+  "asm:affectedRights": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_de": [
+    "Privatsphäre",
+    "Datenschutz",
+    "Verbraucherschutz"
+  ],
+  "asm:affectedRights_en": [
+    "Right to privacy",
+    "Data protection",
+    "Consumer protection"
+  ],
+  "asm:actors": [
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [
+        "ChatGPT o3"
+      ],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    }
+  ],
+  "asm:severity": 1,
+  "asm:verificationLevel": 3,
+  "asm:reverseTimeline": [
+    {
+      "date": "2024-02-13",
+      "phase": "infrastructure",
+      "title": "OpenAI testet Gedächtnisfunktion für ChatGPT",
+      "description": "Am 13. Februar 2024 begann OpenAI, eine 'Memory'-Funktion für ChatGPT bei einem kleinen Teil der Free- und Plus-Nutzer:innen zu testen. ChatGPT sollte sich damit Informationen über Nutzer:innen über einzelne Chats hinweg merken, statt sie jedes Mal neu erfragen zu müssen. Die Funktion ging über die bisherigen 'Custom Instructions' hinaus und ließ sich in den Einstellungen abschalten.",
+      "title_de": "OpenAI testet Gedächtnisfunktion für ChatGPT",
+      "description_de": "Am 13. Februar 2024 begann OpenAI, eine 'Memory'-Funktion für ChatGPT bei einem kleinen Teil der Free- und Plus-Nutzer:innen zu testen. ChatGPT sollte sich damit Informationen über Nutzer:innen über einzelne Chats hinweg merken, statt sie jedes Mal neu erfragen zu müssen. Die Funktion ging über die bisherigen 'Custom Instructions' hinaus und ließ sich in den Einstellungen abschalten.",
+      "title_en": "OpenAI tests a memory feature for ChatGPT",
+      "description_en": "On 13 February 2024 OpenAI began testing a 'memory' feature for ChatGPT with a small share of Free and Plus users. It was meant to let ChatGPT remember information about users across individual chats instead of asking for it again each time. The feature went beyond the existing 'custom instructions' and could be switched off in the settings.",
+      "sources": [
+        "https://thestar.com.my/tech/tech-news/2024/02/14/openai-gives-chatgpt-the-ability-to-remember-facts-from-your-chats",
+        "https://www.androidauthority.com/chatgpt-memory-feature-3414484/"
+      ]
+    },
+    {
+      "date": "2025-04-10",
+      "phase": "doctrine",
+      "title": "Altman: KI soll Nutzer:innen über ihr Leben hinweg kennenlernen",
+      "description": "Am 10. April 2025 kündigte OpenAI-Chef Sam Altman an, ChatGPT könne nun auf alle früheren Gespräche zurückgreifen. Er stellte das Update als Schritt zu KI-Systemen dar, die Nutzer:innen über ihr ganzes Leben hinweg kennenlernen. Die erweiterte Funktion ging zunächst an Plus- und Pro-Abonnent:innen außerhalb von EWR, Großbritannien und Schweiz.",
+      "title_de": "Altman: KI soll Nutzer:innen über ihr Leben hinweg kennenlernen",
+      "description_de": "Am 10. April 2025 kündigte OpenAI-Chef Sam Altman an, ChatGPT könne nun auf alle früheren Gespräche zurückgreifen. Er stellte das Update als Schritt zu KI-Systemen dar, die Nutzer:innen über ihr ganzes Leben hinweg kennenlernen. Die erweiterte Funktion ging zunächst an Plus- und Pro-Abonnent:innen außerhalb von EWR, Großbritannien und Schweiz.",
+      "title_en": "Altman: AI should get to know users over their lives",
+      "description_en": "On 10 April 2025 OpenAI CEO Sam Altman announced that ChatGPT could now reference all past conversations. He presented the update as a step towards AI systems that get to know users over their entire lives. The expanded feature was rolled out first to Plus and Pro subscribers outside the EEA, the UK and Switzerland.",
+      "sources": [
+        "https://bleepingcomputer.com/news/artificial-intelligence/openai-wants-chatgpt-to-know-you-over-your-life-with-new-memory-update",
+        "https://www.engadget.com/ai/chatgpt-can-now-remember-All-your-past-conversations-134642785.html"
+      ]
+    },
+    {
+      "date": "2025-04-16",
+      "phase": "infrastructure",
+      "title": "OpenAI veröffentlicht Reasoning-Modell o3",
+      "description": "Am 16. April 2025 veröffentlichte OpenAI die Reasoning-Modelle o3 und o4-mini für zahlende ChatGPT-Nutzer:innen der Stufen Plus, Pro und Team. Die Modelle arbeiten Aufgaben in mehreren Denkschritten ab, bevor sie antworten. In diesen angezeigten Denkschritten tauchten wenige Tage später die Vornamen von Nutzer:innen auf.",
+      "title_de": "OpenAI veröffentlicht Reasoning-Modell o3",
+      "description_de": "Am 16. April 2025 veröffentlichte OpenAI die Reasoning-Modelle o3 und o4-mini für zahlende ChatGPT-Nutzer:innen der Stufen Plus, Pro und Team. Die Modelle arbeiten Aufgaben in mehreren Denkschritten ab, bevor sie antworten. In diesen angezeigten Denkschritten tauchten wenige Tage später die Vornamen von Nutzer:innen auf.",
+      "title_en": "OpenAI releases reasoning model o3",
+      "description_en": "On 16 April 2025 OpenAI released the reasoning models o3 and o4-mini for paying ChatGPT users on the Plus, Pro and Team tiers. The models work through tasks in several reasoning steps before answering. A few days later, users' first names began appearing in these displayed reasoning steps.",
+      "sources": [
+        "https://www.engadget.com/ai/openais-new-o3-and-o4-mini-models-are-all-about-thinking-with-images-170043465.html",
+        "https://www.bgr.com/tech/openai-debuts-o3-and-o4-mini-advanced-reasoning-models"
+      ]
+    },
+    {
+      "date": "2025-04-18",
+      "phase": "event",
+      "title": "o3 spricht Nutzer:innen ungefragt mit Vornamen an",
+      "description": "Mitte April 2025 berichteten Nutzer:innen, dass ChatGPT, vor allem das Modell o3, sie in seinen Denkschritten mit Vornamen ansprach, obwohl sie ihren Namen nie genannt hatten. Entwickler Simon Willison nannte das Verhalten 'creepy and unnecessary', Nick Dobos schrieb 'I hated it'. Einige Betroffene gaben an, der Name sei auch bei deaktivierter Memory- und Personalisierungsfunktion erschienen; OpenAI beantwortete Presseanfragen nicht.",
+      "title_de": "o3 spricht Nutzer:innen ungefragt mit Vornamen an",
+      "description_de": "Mitte April 2025 berichteten Nutzer:innen, dass ChatGPT, vor allem das Modell o3, sie in seinen Denkschritten mit Vornamen ansprach, obwohl sie ihren Namen nie genannt hatten. Entwickler Simon Willison nannte das Verhalten 'creepy and unnecessary', Nick Dobos schrieb 'I hated it'. Einige Betroffene gaben an, der Name sei auch bei deaktivierter Memory- und Personalisierungsfunktion erschienen; OpenAI beantwortete Presseanfragen nicht.",
+      "title_en": "o3 addresses users by their first names unprompted",
+      "description_en": "In mid-April 2025 users reported that ChatGPT, particularly the o3 model, addressed them by their first name in its reasoning steps even though they had never mentioned it. Developer Simon Willison called the behaviour 'creepy and unnecessary', Nick Dobos wrote 'I hated it'. Some affected users said the name appeared even with memory and personalisation disabled; OpenAI did not respond to press inquiries.",
+      "sources": [
+        "https://techcrunch.com/2025/04/18/chatgpt-is-referring-to-users-by-their-names-unprompted-and-some-find-it-creepy/",
+        "https://tech.yahoo.com/articles/chatgpt-calls-users-name-without-152858411.html"
+      ]
+    },
+    {
+      "date": "2025-04-18",
+      "phase": "consequences",
+      "title": "Verhalten wird ohne Erklärung zurückgenommen",
+      "description": "Nach Angaben von TechCrunch schien die Änderung bis Freitag, 18. April 2025, wieder rückgängig gemacht: o3 sprach Nutzer:innen erneut neutral als 'user' an. Eine Erklärung von OpenAI zu Ursache und Umfang blieb aus. Medien diskutierten den Fall als Beispiel für die Grenze zwischen Personalisierung und Eingriff in die Privatsphäre.",
+      "title_de": "Verhalten wird ohne Erklärung zurückgenommen",
+      "description_de": "Nach Angaben von TechCrunch schien die Änderung bis Freitag, 18. April 2025, wieder rückgängig gemacht: o3 sprach Nutzer:innen erneut neutral als 'user' an. Eine Erklärung von OpenAI zu Ursache und Umfang blieb aus. Medien diskutierten den Fall als Beispiel für die Grenze zwischen Personalisierung und Eingriff in die Privatsphäre.",
+      "title_en": "Behaviour rolled back without explanation",
+      "description_en": "According to TechCrunch, the change appeared to have been undone by Friday, 18 April 2025: o3 again addressed users neutrally as 'user'. OpenAI gave no explanation of the cause or scope. Media discussed the case as an example of the line between personalisation and intrusion into privacy.",
+      "sources": [
+        "https://techcrunch.com/2025/04/18/chatgpt-is-referring-to-users-by-their-names-unprompted-and-some-find-it-creepy/",
+        "https://economymiddleeast.com/news/ai-personalization-or-invasion-chatgpt-name-calling-raises-eyebrows"
+      ]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://techcrunch.com/2025/04/18/chatgpt-is-referring-to-users-by-their-names-unprompted-and-some-find-it-creepy/",
+      "title": "ChatGPT is referring to users by their names unprompted, and some find it 'creepy'",
+      "publisher": "TechCrunch",
+      "date": "2025-04-18",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "ChatGPT is referring to users by their names unprompted, and some find it 'creepy'",
+      "title_en": "ChatGPT is referring to users by their names unprompted, and some find it 'creepy'"
+    },
+    {
+      "url": "https://tech.yahoo.com/articles/chatgpt-calls-users-name-without-152858411.html",
+      "title": "ChatGPT Calls Users by Name Without Being Told, and Some Find It Creepy (PCMag via Yahoo Tech)",
+      "publisher": "PCMag (Yahoo Tech)",
+      "date": "2025-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "ChatGPT Calls Users by Name Without Being Told, and Some Find It Creepy (PCMag via Yahoo Tech)",
+      "title_en": "ChatGPT Calls Users by Name Without Being Told, and Some Find It Creepy (PCMag via Yahoo Tech)"
+    },
+    {
+      "url": "https://www.techbang.com/posts/122706-chatgpt-name-feature-creepy",
+      "title": "ChatGPT name feature creepy (o3 kehrt zum Standardverhalten zurück)",
+      "publisher": "Techbang (Taiwan)",
+      "date": "2025-04",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "ChatGPT name feature creepy (o3 kehrt zum Standardverhalten zurück)",
+      "title_en": "ChatGPT name feature creepy (o3 kehrt zum Standardverhalten zurück)"
+    },
+    {
+      "url": "https://unwire.hk/2025/04/20/chatgpt-is-referring-to-users-by-their-names/ai/",
+      "title": "ChatGPT is referring to users by their names",
+      "publisher": "Unwire.hk",
+      "date": "2025-04-20",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "ChatGPT is referring to users by their names",
+      "title_en": "ChatGPT is referring to users by their names"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-10-30",
+    "lastUpdated": "2026-10-30",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-chatgpt-criticised-for-addressing-users-by-their-personal-2025-aiaaic1955",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}

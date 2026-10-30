@@ -1559,7 +1559,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC1559",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "verified",
+    "status": "promoted",
     "candidate_data": {
       "name_de": "USA/Deutschland: PIPA-Datensatz von UC Berkeley und Facebook nutzte Flickr-Familienfotos ohne Einwilligung",
       "name_en": "USA/Germany: PIPA dataset by UC Berkeley and Facebook used Flickr family photos without consent",
@@ -1626,7 +1626,9 @@
     },
     "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/pipa-dataset-criticised-for-using-sensitive-personal-images-without-consent | Stub-Jahr 2019 bestaetigt; Datum 2019-12-15 als ungefaehres Exposing.AI-Publikationsdatum. Country DE im Stub bezieht sich vermutlich auf MPI-Saarbruecken-Nutzung; Hauptverantwortliche sind UC Berkeley/Facebook. Status needs-review wegen schwacher Mainstream-Coverage zur DE-Verbindung. Verification 2. | Sichtung 2026-10-23: Review: verified (mittel) - PIPA ist durch das Originalpaper (Zhang et al., CVPR 2015, UC Berkeley/Facebook AI Research, Flickr-Fotos unter CC-Lizenz), die Exposing.AI-Dokumentation (rund 60.000 Gesichtsbilder von etwa 2.000 Personen, über 30.000 Flickr-Fotos, Nutzung u. a. durch SenseTime-nahe Forschende, Berkeley stoppte die Verbreitung im Januar 2020, MPI Informatik bietet weiter Download an) und futurezone (31.518 PIPA-Fotos im Exposing.AI-Suchwerkzeug) belegt. Das dokumentierte Ereignis ist die Offenlegung durch Exposing.AI, das 2021 startete (Berichte ab Februar 2021), nicht 2019. Die NBC-Quelle von 2019 betrifft IBMs Diversity-in-Faces-Datensatz und trägt PIPA nicht. | Verify: confirm - Ich bestätige das Verdikt. Es gibt keine Dublette: Im Bestand findet sich weder 'People in Photo Albums' noch 'PIPA dataset'. Die PIPA-Treffer betreffen die Datenschutzgesetze PIPA in Korea und Kanada. Die Geschwister-Fälle MegaFace, VGG Face, DiveFace und IBM DiF behandeln andere Datensätze. Das Ereignis ist belegt durch: (1) die Exposing.AI-Seite https://exposing.ai/pipa (rund 60.000 Gesichtsbilder von etwa 2.000 Personen, 32.518 Flickr-Fotos, viele Bilder von Kindern, Familienessen und Hochzeiten, Nutzung durch Forschende mit SenseTime-Bezug, Stand Januar 2020 keine Verbreitung mehr durch Berkeley, MPI bietet den Datensatz weiter an); (2) futurezone, die PIPA unter den sechs Datensätzen des 2021 gestarteten Exposing.AI-Werkzeugs nennt (31.518 Fotos), eine unabhängige Redaktion; (3) das CVPR-2015-Paper (37.107 Fotos aus öffentlichen Flickr-Alben unter Creative-Commons-Lizenz, 2.356 Personen). Zum Datum: Laut der About-Seite von Exposing.AI startete das Projekt im Januar 2021, die KIM-Seite der HfG Karlsruhe nennt den 31. Januar 2021, die Presse berichtete ab 01.02.2021 (TNW, Infodocket). Das Review-Datum 2021 wird daher auf 2021-01-31 präzisiert. Die NBC-Quelle von 2019 betrifft IBM Diversity in Faces und ist zu Recht entfernt. Ein Fehler im Review-Patch: Er entfernt https://exposing.ai/pipa/ und fügt https://exposing.ai/pipa wieder hinzu. review-patch.js normalisiert dabei den Schrägstrich am Ende weg und überspringt jede add_source, deren URL auch in remove_sources steht. Die Hauptquelle Exposing.AI ginge also verloren. Mein Patch fügt sie deshalb erneut hinzu; er wird nach dem Review-Patch angewendet. In der Beschreibung ist 'stellte die Verbreitung im Januar 2020 ein' quellenungenau. Exposing.AI schreibt 'as of January 2020' (Stand Januar 2020), das ist korrigiert. Die Fotozahl aus dem Originalpaper und die Einwilligungsfrage (Lizenz der Hochladenden statt Einwilligung der Abgebildeten) sind präzisiert. | Patch: startDate, name_de, name_en, description_de, description_en, location.name_de, location.name_en, location.country, location.lat, location.lng, actors, source-, source-, source+, source+, startDate, description_de, description_en, source+",
     "dedup_hint": "people in photo albums dataset criticised for using sensitive personal images without consent | germany | 2019",
-    "reviewed_at": "2026-10-23"
+    "reviewed_at": "2026-10-23",
+    "promoted_to_slug": "usa-deutschland-pipa-datensatz-von-uc-berkeley-und-facebook-nutzte-flickr-familienfotos",
+    "promoted_at": "2026-10-30T09:40:49.625Z"
   },
   {
     "candidate_id": "gb-oxford-town-centre-dataset-flagged-for-violating-pedestrian-2019-aiaaic1558",
@@ -1896,7 +1898,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC1545",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "verified",
+    "status": "promoted",
     "candidate_data": {
       "name_de": "USA: IARPA-Janus-Datensatz IJB-C nutzte YouTube- und Flickr-Aufnahmen von 3.531 Personen ohne Einwilligung",
       "name_en": "USA: IARPA Janus dataset IJB-C used YouTube and Flickr images of 3,531 people without consent",
@@ -1977,7 +1979,9 @@
     },
     "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/us-government-research-dataset-raises-privacy-misuse-concerns | Stub-Jahr 2019 korrigiert auf 2020-10-21 (Princeton-CITP- und Exposing.AI-Aufdeckung). Status needs-review: nur 2 belastbare Quellen, beide aus akademisch-zivilgesellschaftlichem Kontext, keine zusaetzliche Mainstream-Coverage gefunden. Verification 2. | Sichtung 2026-10-23: Review: verified (mittel) - IJB-C ist durch NIST (Readme mit Noblis-Annotationsprüfung), das IJB-A-Originalpaper (Klare et al., CVPR 2015) und Exposing.AI belegt (3.531 Personen, viele Aktivist:innen, Künstler:innen, Journalist:innen, Politiker:innen, Auswahl über YouTube-Nutzer, 5.757 Flickr-Originalfotos, YouTube-Nutzung laut Google-Memos von November 2020 und Mai 2021 ein Richtlinienverstoß); futurezone berichtet unabhängig, dass Exposing.AI IJB-C zu den durchsuchbaren Datensätzen zählt. Da die Exposing.AI-Seite Memos von Mai 2021 zitiert und das Werkzeug 2021 startete, ist das Datum 2020-10-21 falsch. Der Princeton-CITP-Blog von 2020-10-21 behandelt zurückgezogene Datensätze (DukeMTMC, MS-Celeb-1M, LFW), nicht IJB. | Verify: confirm - Ich bestätige das Verdikt. Es gibt keine Dublette: Im Bestand findet sich weder Janus noch IJB-C, Noblis oder IARPA. IJB-A kommt nur als Hintergrund im Gender-Shades-Fall vor. Ein Incident zu den FBI/Pentagon-Janus-Dokumenten der ACLU (Washington Post, März 2023) gibt es nicht. Das Ereignis ist belegt durch: (1) die Exposing.AI-Seite https://exposing.ai/ijb_c/ (2017 veröffentlicht, 21.294 Bilder, eine Namensliste mit 3.531 Personen, darunter viele Aktivist:innen, Künstler:innen, Journalist:innen, ausländische Politiker:innen und Vortragende, Auswahl über 'YouTube users who upload well-labeled, person-centric videos', 5.757 Flickr-Originalfotos, YouTube-Nutzung laut Google-Memos von 2020 und 2021 ein Richtlinienverstoß, Bilder und Namen gespeichert); (2) futurezone als unabhängige Redaktion, die IJB-C unter den sechs Datensätzen des Werkzeugs von 2021 führt (5.757 Fotos); (3) die NIST-Readme vom 11.12.2017 (3.531 Personen, Creative-Commons-Lizenzen, Abschnitt 'Additional Noblis Annotation Review and Correction'); (4) das IJB-A-Paper von Klare et al. (CVPR 2015). Zum Datum: Exposing.AI startete am 31.01.2021 (KIM-Seite der HfG Karlsruhe, About-Seite: Januar 2021, Presse ab 01.02.2021). Das Review-Datum 2021 wird daher auf 2021-01-31 präzisiert. Das ursprüngliche Datum 2020-10-21 und die Princeton-CITP-Quelle, die andere Datensätze behandelt, sind zu Recht entfernt. Ein Fehler im Review-Patch: Er entfernt https://exposing.ai/ijb_c/ und fügt dieselbe URL wieder hinzu. review-patch.js überspringt jede add_source, deren URL in remove_sources steht. Die Hauptquelle ginge also verloren, mein Patch fügt sie erneut hinzu. Außerdem ist 'wird über NIST verbreitet' veraltet: Laut der NIST-Seite 'Face Challenges' hat NIST die Verbreitung aller drei IJB-Datensätze am 14.03.2023 eingestellt. Das ist korrigiert und als Folge mit Quelle ergänzt. Der Titel ist auf IJB-C präzisiert, weil die belegten Befunde (5.757 Flickr-Fotos, YouTube-Auswahl, 3.531 Personen) IJB-C betreffen. | Patch: startDate, name_de, name_en, description_de, description_en, actors, source-, source-, source+, source+, source+, startDate, name_de, name_en, description_de, description_en, source+, source+",
     "dedup_hint": "us government research dataset raises privacy, misuse concerns | usa | 2019",
-    "reviewed_at": "2026-10-23"
+    "reviewed_at": "2026-10-23",
+    "promoted_to_slug": "usa-iarpa-janus-datensatz-ijb-c-nutzte-youtube-und-flickr-aufnahmen-von-3-531-personen",
+    "promoted_at": "2026-10-30T09:40:49.625Z"
   },
   {
     "candidate_id": "us-duke-university-pulls-facial-recognition-dataset-after-2019-aiaaic1536",
@@ -5874,7 +5878,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0565",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "verified",
+    "status": "promoted",
     "candidate_data": {
       "name_de": "USA: Ubers Vergütungsalgorithmus für Neueinstellungen verfestigt Lohnlücke zwischen Männern und Frauen",
       "name_en": "USA: Uber's compensation algorithm for new hires entrenches gender pay gap",
@@ -5929,7 +5933,9 @@
     },
     "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/uber-compensation-algorithm-pays-new-hires-less. Datum: NYT-Reportage April 2017 als Anker; Algorithmus selbst war früher eingeführt. Severity 3 (systemische Lohnungleichheit über grosse Belegschaft, aber kein katastrophaler Einzelschaden). Verification 3. needs-review weil zweite Source eine späte NGO-Studie ist; Mainstream-Reuters/Bloomberg-Detailberichte zur Compensation-Algorithmus-Kontroverse nicht klar getrennt von Dynamic-Pricing. | Sichtung 2026-10-23: Review: verified (mittel) - Das dokumentierte Ereignis ist der Bericht von The Information vom Juni 2017, den CNBC am 07.06.2017 aufgriff: Uber optimierte Angebote für Neueinstellungen per Algorithmus, das verfestigte Lohnlücken zwischen Männern und Frauen. BuzzFeed News berichtete unabhängig, der Algorithmus schätze das niedrigste noch akzeptierte Gehalt, und meldete Gehaltserhöhungen. The Drive berichtete über die Angleichung an den Median ab 1. August 2017. Die bisherigen Quellen tragen den Fall nicht: Der NYT-Artikel vom April 2017 behandelt psychologische Tricks gegenüber Fahrer:innen, die Worker-Info-Exchange-Studie von 2025 die Fahrervergütung. | Verify: confirm - Keine Dublette: Grep über data/incidents nach Uber + Gehalt/Vergütung/Lohnlücke/Neueinstellung findet nur Fälle zur Fahrervergütung (Surge Pricing, Upfront Fares, Gig-Worker), keinen Fall zu Angestelltengehältern. Ereignis und Datum sind belegt: CNBC berichtete am 07.06.2017 über den Bericht von The Information (Angebote für Neueinstellungen per Algorithmus optimiert, um Anteilseigner zu schützen; Lohnlücken zwischen Männern und Frauen verfestigt). BuzzFeed News (URL in den Suchergebnissen) nennt den Algorithmus, der das niedrigste akzeptierte Gehalt schätzt, und die Gehaltserhöhungen. The Drive (URL in den Suchergebnissen) berichtet über die Angleichung ab 1. August an den Median. Reuters bestätigte später die Anpassung der Gehälter unterhalb des Medians im August 2017. Es ist ein algorithmisches Entscheidungssystem über Beschäftigte mit Diskriminierungseffekt und fällt damit unter die Aufnahmeregel. Die NYT-Quelle zu Fahrertricks und die WIE-Studie von 2025 tragen den Fall nicht; ihre Entfernung im Review ist richtig. Korrekturen: (1) BuzzFeed berichtet über den Algorithmus nicht unabhängig, sondern unter Berufung auf The Information. Alle Angaben zum Algorithmus stammen aus einem einzigen Primärbericht mit anonymen Insidern, Uber hat sich nicht geäußert. Deshalb Verification 2 statt 3. (2) Der Satz 'Uber kündigte an, das System zu ändern' ist nicht belegt: Laut The Information wurde der Algorithmus geändert, Uber kommentierte zunächst nicht. Die Beschreibung ist entsprechend korrigiert. | Patch: startDate, name_de, name_en, description_de, description_en, incidentType, actors, source-, source-, source+, source+, source+, description_de, description_en, candidate_verification",
     "dedup_hint": "uber compensation algorithm pays new hires less | usa | 2017",
-    "reviewed_at": "2026-10-23"
+    "reviewed_at": "2026-10-23",
+    "promoted_to_slug": "usa-ubers-verguetungsalgorithmus-fuer-neueinstellungen-verfestigt-lohnluecke-zwischen",
+    "promoted_at": "2026-10-30T09:40:49.625Z"
   },
   {
     "candidate_id": "us-ji-chang-son-tesla-model-x-suddenly-accelerates-injuring-2016-aiaaic0555",
@@ -6252,7 +6258,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0500",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "verified",
+    "status": "promoted",
     "candidate_data": {
       "name_de": "USA: Waze lotst Jeep in Burlington über eine Bootsrampe auf den zugefrorenen Lake Champlain",
       "name_en": "USA: Waze routes Jeep down Burlington boat ramp onto frozen Lake Champlain",
@@ -6313,7 +6319,9 @@
     },
     "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/waze-directs-tourists-to-drive-into-vermont-lake. Datum unsicher — Stub-Jahr 2018 übernommen. Nur eine Aggregator-Source gefunden (AI Incident Database); status needs-review. Lokale Vermont-Newsquelle wäre für verified-Status nötig. | Sichtung 2026-10-23: Review: verified (hoch) - Mehrere Medien belegen den Fall: Times of Israel, Fox News, The Drive und Jalopnik, teils unter Berufung auf USA Today. Am 12.01.2018 folgte ein Fahrer in Burlington, Vermont, bei Nebel der Waze-Route geradeaus über eine Bootsrampe auf den zugefrorenen Lake Champlain. Die drei Insassen retteten sich, bevor der Jeep einbrach. Polizeichef Brandon del Pozo bestätigte, dass der Fahrer nicht berauscht war. Die Routing-Empfehlung hat Menschen direkt gefährdet, das passt zur Aufnahmeregel. Es gibt keine Dublette: Der Bestands-Fall zu den Waldbränden 2017 ist ein anderes Ereignis. | Verify: confirm - Keine Dublette: Grep nach Waze/Champlain/Burlington findet im Bestand nur den Waldbrand-Fall von 2017 (Kalifornien), Google Maps in Südafrika und Autobahnsperrungen in Deutschland/Benelux. Das sind andere Ereignisse. Ereignis und Datum sind belegt: Am 12.01.2018 fuhr ein Jeep in Burlington, Vermont, der Waze-Route folgend über eine Bootsrampe auf den zugefrorenen Lake Champlain. Belege: Times of Israel mit Zitaten aus dem Polizeibericht ('followed the GPS directions, which advised to go straight'), Fox News, Jalopnik und The Drive. Die Drive zitiert den Polizeichef, der bestätigt, dass der Fahrer nicht berauscht war. Alle vier Patch-URLs sind in den Suchergebnissen aufgetaucht. Der Routing-Algorithmus steuerte die Insassen in eine Gefahrenlage, das passt zur Aufnahmeregel und zur Typisierung vergleichbarer Bestandsfälle als malfunction (Waldbrand 2017, Südafrika 2023). Korrekturen: (1) Wetter vertauscht. Der Polizeibericht laut Times of Israel nennt 'heavy rain and slight fog', der Review-Patch dagegen dichten Nebel und leichten Regen. (2) Laut Aufnahmeregel muss ein algorithmisches System ohne belegte KI als solches benannt werden. Ein entsprechender Satz ist ergänzt. | Patch: startDate, name_de, name_en, description_de, description_en, incidentType, candidate_verification, location.name_de, location.name_en, location.lat, location.lng, actors, source-, source+, source+, source+, source+, description_de, description_en",
     "dedup_hint": "waze directs tourists to drive into vermont lake | usa | 2018",
-    "reviewed_at": "2026-10-23"
+    "reviewed_at": "2026-10-23",
+    "promoted_to_slug": "usa-waze-lotst-jeep-in-burlington-ueber-eine-bootsrampe-auf-den-zugefrorenen-lake",
+    "promoted_at": "2026-10-30T09:40:49.625Z"
   },
   {
     "candidate_id": "us-gig-economy-drivers-rejected-by-faulty-checkr-automated-2015-aiaaic0484",
@@ -12564,7 +12572,7 @@
     "discovered_at": "2026-06-05T22:40:24Z",
     "researcher": "aiaaic-importer-AIAAIC0186",
     "round": "round-6-aiaaic-batch-c-2026-06-05",
-    "status": "verified",
+    "status": "promoted",
     "candidate_data": {
       "name_de": "USA: Polizei stoppt selbstfahrenden Cruise-Testwagen in San Francisco wegen Missachtung des Fußgängervorrangs",
       "name_en": "USA: Police cite self-driving Cruise test car in San Francisco for failing to yield to pedestrian",
@@ -12626,7 +12634,9 @@
     },
     "researcher_notes": "AIAAIC backref (NICHT als Source): https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/gm-cruise-fails-to-yield-to-pedestrian-at-crosswalk | startDate unbestaetigt - 2018-Berichte nicht gefunden, dokumentierte 'fail-to-yield-crosswalk'-Vorfaelle erst 2022+ (NBC, DMV). Status needs-review; ggf. spaeter rejecten oder auf 2022 schieben. | Sichtung 2026-10-23: Review: verified (hoch) - Das Stub-Jahr 2018 stimmt doch: Im März 2018 stoppte ein Motorradpolizist in San Francisco einen autonom fahrenden Cruise-Chevrolet-Bolt wegen Nichtgewährung des Fußgängervorrangs am Zebrastreifen. Laut AutoGuide war es der 20.03., laut GTPlanet der 19.03. Der Sicherheitsfahrer erhielt den Strafzettel; Cruise bestritt den Verstoß, der Fußgänger sei laut Sensordaten 10,8 Fuß entfernt gewesen. Belegt durch CBS San Francisco, The Drive und AutoGuide. Die bisherige NBC-Quelle von 2024 betrifft die Beinahe-Unfälle mit Kindern von 2023, also ein anderes Ereignis, und wird entfernt. Es gibt keine Dublette zum Bestands-Fall von 2023 (Fußgängerin mitgeschleift). | Verify: confirm - Keine Dublette: Grep nach Cruise + Strafzettel/Ticket/Vorrang/Zebrastreifen und Cruise + 2018 findet keinen Bestands-Fall zu diesem Vorfall. Die Bestands-Fälle zu Cruise betreffen 2022-2023 (mitgeschleifte Fußgängerin, Feuerwehr, Bus, Polizeikontrolle 2022) sowie die Motorradkollision. Ereignis und Datum sind belegt: Im März 2018 (19. oder 20.03., die Quellen widersprechen sich) stoppte ein Motorradpolizist in San Francisco an der Ecke 14th St./Harrison St. einen autonom fahrenden Cruise-Chevrolet-Bolt wegen Nichtgewährung des Fußgängervorrangs. Der Sicherheitsfahrer erhielt den Strafzettel. Cruise bestritt den Verstoß unter Verweis auf 10,8 Fuß Abstand laut Sensordaten. Belege: CBS San Francisco (KPIX), The Drive, AutoGuide und GTPlanet. Alle drei Patch-URLs sind in den Suchergebnissen aufgetaucht. Es handelt sich um ein KI-gesteuertes Fahrzeug, das einen Fußgänger gefährdet haben soll, also ein Sicherheitsbezug. Severity 2 entspricht vergleichbaren Bestandsfällen (Uber-Vorfahrtsverletzung in Tempe: 2; Cruise-Polizeikontrolle 2022: 2). Die NBC-Quelle von 2024 betrifft ein anderes Ereignis (Beinahe-Unfälle mit Kindern 2023), ihre Entfernung ist richtig. Name, Beschreibung, Akteure und incidentType im Review-Patch sind quellentreu; weitere Korrekturen sind nicht nötig. | Patch: startDate, name_de, name_en, description_de, description_en, candidate_severity, candidate_verification, actors, source-, source+, source+, source+",
     "dedup_hint": "gm cruise fails to yield to pedestrian at crosswalk | usa | 2018",
-    "reviewed_at": "2026-10-23"
+    "reviewed_at": "2026-10-23",
+    "promoted_to_slug": "usa-polizei-stoppt-selbstfahrenden-cruise-testwagen-in-san-francisco-wegen-missachtung",
+    "promoted_at": "2026-10-30T09:40:49.625Z"
   },
   {
     "candidate_id": "us-wells-fargo-software-error-leads-to-hundreds-of-wrongful-2015-aiaaic0185",

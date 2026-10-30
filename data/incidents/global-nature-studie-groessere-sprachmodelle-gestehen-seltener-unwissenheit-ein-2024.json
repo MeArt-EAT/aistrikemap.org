@@ -1,0 +1,222 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "asm": "https://aistrikemap.org/schema/"
+  },
+  "@type": "Event",
+  "@id": "https://aistrikemap.org/incidents/global-nature-studie-groessere-sprachmodelle-gestehen-seltener-unwissenheit-ein-2024",
+  "name": "Global: Nature-Studie - größere Sprachmodelle gestehen seltener Unwissenheit ein",
+  "name_de": "Global: Nature-Studie - größere Sprachmodelle gestehen seltener Unwissenheit ein",
+  "name_en": "Global: Nature study finds larger language models less likely to admit ignorance",
+  "description": "Eine am 25. September 2024 in Nature veröffentlichte Studie von Lexin Zhou, José Hernández-Orallo und Kolleg:innen (Universitat Politècnica de València, University of Cambridge) zeigt, dass größere und per Instruction-Tuning 'geformte' Versionen der Modellfamilien GPT (OpenAI), LLaMA (Meta) und BLOOM (BigScience) seltener Fragen ausweichen und stattdessen häufiger plausibel klingende Falschantworten geben, auch bei schwierigen Fragen, deren Fehler menschliche Prüfer:innen oft nicht erkennen. Die Autor:innen folgern, dass Nutzer:innen-Aufsicht die Fehler nicht zuverlässig korrigiert, weil Menschen den Modellen zu sehr vertrauen, und fordern eine grundsätzliche Umstellung in Design und Entwicklung von Allzweck-KI, insbesondere in Hochrisiko-Bereichen.",
+  "description_de": "Eine am 25. September 2024 in Nature veröffentlichte Studie von Lexin Zhou, José Hernández-Orallo und Kolleg:innen (Universitat Politècnica de València, University of Cambridge) zeigt, dass größere und per Instruction-Tuning 'geformte' Versionen der Modellfamilien GPT (OpenAI), LLaMA (Meta) und BLOOM (BigScience) seltener Fragen ausweichen und stattdessen häufiger plausibel klingende Falschantworten geben, auch bei schwierigen Fragen, deren Fehler menschliche Prüfer:innen oft nicht erkennen. Die Autor:innen folgern, dass Nutzer:innen-Aufsicht die Fehler nicht zuverlässig korrigiert, weil Menschen den Modellen zu sehr vertrauen, und fordern eine grundsätzliche Umstellung in Design und Entwicklung von Allzweck-KI, insbesondere in Hochrisiko-Bereichen.",
+  "description_en": "A study published in Nature on 25 September 2024 by Lexin Zhou, José Hernández-Orallo and colleagues (Universitat Politècnica de València, University of Cambridge) shows that larger and instruction-tuned 'shaped-up' versions of the GPT (OpenAI), LLaMA (Meta) and BLOOM (BigScience) model families avoid questions less often and instead more frequently give plausible-sounding wrong answers, including on difficult questions whose errors human supervisors often fail to spot. The authors conclude that user oversight does not reliably correct these errors because people over-trust the models, and call for a fundamental shift in the design and development of general-purpose AI, especially in high-stakes areas.",
+  "startDate": "2024-09-25",
+  "location": {
+    "@type": "Place",
+    "name": "Global (Forschung)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GLOBAL"
+    },
+    "name_de": "Global (Forschung)",
+    "name_en": "Global (research)"
+  },
+  "asm:incidentType": [
+    "malfunction"
+  ],
+  "asm:affectedRights": [
+    "Verbraucherschutz",
+    "Informationsfreiheit",
+    "Recht auf Gesundheit"
+  ],
+  "asm:affectedRights_de": [
+    "Verbraucherschutz",
+    "Informationsfreiheit",
+    "Recht auf Gesundheit"
+  ],
+  "asm:affectedRights_en": [
+    "Consumer protection",
+    "Freedom of information",
+    "Right to health"
+  ],
+  "asm:actors": [
+    {
+      "name": "BigScience",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "BigScience",
+      "name_en": "BigScience"
+    },
+    {
+      "name": "Meta Platforms",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "Meta Platforms",
+      "name_en": "Meta Platforms"
+    },
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "asm:systems": [],
+      "name_de": "OpenAI",
+      "name_en": "OpenAI"
+    }
+  ],
+  "asm:severity": 2,
+  "asm:verificationLevel": 4,
+  "asm:reverseTimeline": [
+    {
+      "date": "2020-01-23",
+      "phase": "doctrine",
+      "title": "Skalierungsgesetze machen Größe zur Entwicklungsstrategie",
+      "description": "Forschende von OpenAI um Jared Kaplan veröffentlichten die Studie 'Scaling Laws for Neural Language Models'. Sie zeigt, dass die Leistung von Sprachmodellen mit Modellgröße, Datenmenge und Rechenaufwand nach einem Potenzgesetz zunimmt. Die Arbeit untermauerte die Strategie, immer größere Modelle zu trainieren, deren Folgen für die Zuverlässigkeit die Nature-Studie später untersuchte.",
+      "title_de": "Skalierungsgesetze machen Größe zur Entwicklungsstrategie",
+      "description_de": "Forschende von OpenAI um Jared Kaplan veröffentlichten die Studie 'Scaling Laws for Neural Language Models'. Sie zeigt, dass die Leistung von Sprachmodellen mit Modellgröße, Datenmenge und Rechenaufwand nach einem Potenzgesetz zunimmt. Die Arbeit untermauerte die Strategie, immer größere Modelle zu trainieren, deren Folgen für die Zuverlässigkeit die Nature-Studie später untersuchte.",
+      "title_en": "Scaling laws turn size into a development strategy",
+      "description_en": "OpenAI researchers led by Jared Kaplan published the study 'Scaling Laws for Neural Language Models'. It shows that language model performance improves as a power law with model size, dataset size and compute. The work underpinned the strategy of training ever larger models, whose consequences for reliability the Nature study later examined.",
+      "sources": [
+        "https://arxiv.org/abs/2001.08361"
+      ]
+    },
+    {
+      "date": "2020-05-28",
+      "phase": "infrastructure",
+      "title": "OpenAI stellt GPT-3 mit 175 Milliarden Parametern vor",
+      "description": "OpenAI veröffentlichte GPT-3, ein autoregressives Sprachmodell mit 175 Milliarden Parametern und damit zehnmal mehr als jedes frühere nicht-sparse Sprachmodell. Die Autor:innen berichteten, dass die Skalierung die Leistung bei Aufgaben mit wenigen Beispielen deutlich verbessert. Die GPT-Familie ist eine der drei Modellfamilien, die die spätere Nature-Studie untersuchte.",
+      "title_de": "OpenAI stellt GPT-3 mit 175 Milliarden Parametern vor",
+      "description_de": "OpenAI veröffentlichte GPT-3, ein autoregressives Sprachmodell mit 175 Milliarden Parametern und damit zehnmal mehr als jedes frühere nicht-sparse Sprachmodell. Die Autor:innen berichteten, dass die Skalierung die Leistung bei Aufgaben mit wenigen Beispielen deutlich verbessert. Die GPT-Familie ist eine der drei Modellfamilien, die die spätere Nature-Studie untersuchte.",
+      "title_en": "OpenAI introduces GPT-3 with 175 billion parameters",
+      "description_en": "OpenAI published GPT-3, an autoregressive language model with 175 billion parameters, ten times more than any previous non-sparse language model. The authors reported that scaling markedly improves few-shot performance. The GPT family is one of the three model families the later Nature study examined.",
+      "sources": [
+        "https://arxiv.org/abs/2005.14165"
+      ]
+    },
+    {
+      "date": "2022-03-04",
+      "phase": "doctrine",
+      "title": "OpenAI setzt auf Instruction-Tuning mit menschlichem Feedback",
+      "description": "Mit dem Paper zu InstructGPT beschrieb OpenAI, wie GPT-3 per überwachtem Feintuning und Reinforcement Learning from Human Feedback (RLHF) auf die Absichten der Nutzer:innen ausgerichtet wird. Bewertende bevorzugten die Antworten eines so trainierten Modells mit 1,3 Milliarden Parametern gegenüber dem 175-Milliarden-GPT-3. Genau dieses 'Shaping-up' der Modelle ist neben der Skalierung Gegenstand der späteren Nature-Studie.",
+      "title_de": "OpenAI setzt auf Instruction-Tuning mit menschlichem Feedback",
+      "description_de": "Mit dem Paper zu InstructGPT beschrieb OpenAI, wie GPT-3 per überwachtem Feintuning und Reinforcement Learning from Human Feedback (RLHF) auf die Absichten der Nutzer:innen ausgerichtet wird. Bewertende bevorzugten die Antworten eines so trainierten Modells mit 1,3 Milliarden Parametern gegenüber dem 175-Milliarden-GPT-3. Genau dieses 'Shaping-up' der Modelle ist neben der Skalierung Gegenstand der späteren Nature-Studie.",
+      "title_en": "OpenAI turns to instruction tuning with human feedback",
+      "description_en": "In its InstructGPT paper OpenAI described how GPT-3 is aligned with user intent through supervised fine-tuning and reinforcement learning from human feedback (RLHF). Raters preferred the outputs of a 1.3-billion-parameter model trained this way over the 175-billion-parameter GPT-3. This 'shaping up' of models is, alongside scaling, exactly what the later Nature study examined.",
+      "sources": [
+        "https://arxiv.org/abs/2203.02155"
+      ]
+    },
+    {
+      "date": "2022-07-12",
+      "phase": "infrastructure",
+      "title": "BigScience veröffentlicht das offene Modell BLOOM",
+      "description": "Das von Hugging Face koordinierte Forschungsprojekt BigScience veröffentlichte das mehrsprachige Sprachmodell BLOOM mit 176 Milliarden Parametern, trainiert auf 46 natürlichen und 13 Programmiersprachen. Das Modell wurde unter einer Responsible-AI-Lizenz frei zugänglich gemacht. BLOOM ist neben GPT und LLaMA eine der drei Modellfamilien der Nature-Studie.",
+      "title_de": "BigScience veröffentlicht das offene Modell BLOOM",
+      "description_de": "Das von Hugging Face koordinierte Forschungsprojekt BigScience veröffentlichte das mehrsprachige Sprachmodell BLOOM mit 176 Milliarden Parametern, trainiert auf 46 natürlichen und 13 Programmiersprachen. Das Modell wurde unter einer Responsible-AI-Lizenz frei zugänglich gemacht. BLOOM ist neben GPT und LLaMA eine der drei Modellfamilien der Nature-Studie.",
+      "title_en": "BigScience releases the open model BLOOM",
+      "description_en": "The BigScience research project coordinated by Hugging Face released the multilingual language model BLOOM with 176 billion parameters, trained on 46 natural and 13 programming languages. The model was made openly accessible under a Responsible AI License. Alongside GPT and LLaMA, BLOOM is one of the three model families in the Nature study.",
+      "sources": [
+        "https://www.infoq.com/news/2022/07/bigscience-bloom-nlp-ai/",
+        "https://arxiv.org/abs/2211.05100"
+      ]
+    },
+    {
+      "date": "2024-09-25",
+      "phase": "event",
+      "title": "Nature-Studie: Größere Modelle antworten öfter falsch statt auszuweichen",
+      "description": "Lexin Zhou, José Hernández-Orallo und Kolleg:innen zeigten in Nature, dass skalierte und per Instruction-Tuning geformte Versionen von GPT, LLaMA und BLOOM seltener ausweichen und häufiger plausibel klingende Falschantworten geben, auch bei schwierigen Fragen, deren Fehler menschliche Prüfer:innen oft übersehen. Selbst bei leichten Fragen sicherten die Modelle keinen Bereich, in dem sie fehlerfrei arbeiten oder Fehler zuverlässig erkannt werden. Die Autor:innen fordern eine grundlegende Umstellung bei Design und Entwicklung von Allzweck-KI, besonders in Hochrisiko-Bereichen.",
+      "title_de": "Nature-Studie: Größere Modelle antworten öfter falsch statt auszuweichen",
+      "description_de": "Lexin Zhou, José Hernández-Orallo und Kolleg:innen zeigten in Nature, dass skalierte und per Instruction-Tuning geformte Versionen von GPT, LLaMA und BLOOM seltener ausweichen und häufiger plausibel klingende Falschantworten geben, auch bei schwierigen Fragen, deren Fehler menschliche Prüfer:innen oft übersehen. Selbst bei leichten Fragen sicherten die Modelle keinen Bereich, in dem sie fehlerfrei arbeiten oder Fehler zuverlässig erkannt werden. Die Autor:innen fordern eine grundlegende Umstellung bei Design und Entwicklung von Allzweck-KI, besonders in Hochrisiko-Bereichen.",
+      "title_en": "Nature study: larger models answer wrongly more often instead of declining",
+      "description_en": "Lexin Zhou, José Hernández-Orallo and colleagues showed in Nature that scaled-up and instruction-tuned versions of GPT, LLaMA and BLOOM avoid questions less often and more frequently give plausible-sounding wrong answers, including on difficult questions whose errors human supervisors often miss. Even for easy questions the models did not secure a zone in which they either make no errors or their errors are reliably spotted. The authors call for a fundamental shift in the design and development of general-purpose AI, especially in high-stakes areas.",
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-07930-y",
+        "https://www.nature.com/articles/d41586-024-03137-3"
+      ]
+    },
+    {
+      "date": "2025-09-05",
+      "phase": "consequences",
+      "title": "OpenAI-Studie: Bewertungen belohnen Raten statt Eingeständnis von Unwissen",
+      "description": "Ein Jahr nach der Nature-Studie veröffentlichten Forschende um Adam Tauman Kalai (OpenAI) die Arbeit 'Why Language Models Hallucinate'. Sie argumentiert, dass gängige Benchmarks Modelle nach Trefferquote bewerten und damit Raten belohnen, während ein 'Ich weiß es nicht' null Punkte bringt; selbstsichere Fehler sollten stärker bestraft werden als geäußerte Unsicherheit. Eine weiterentwickelte Fassung erschien 2026 in Nature unter dem Titel 'Evaluating large language models for accuracy incentivizes hallucinations'.",
+      "title_de": "OpenAI-Studie: Bewertungen belohnen Raten statt Eingeständnis von Unwissen",
+      "description_de": "Ein Jahr nach der Nature-Studie veröffentlichten Forschende um Adam Tauman Kalai (OpenAI) die Arbeit 'Why Language Models Hallucinate'. Sie argumentiert, dass gängige Benchmarks Modelle nach Trefferquote bewerten und damit Raten belohnen, während ein 'Ich weiß es nicht' null Punkte bringt; selbstsichere Fehler sollten stärker bestraft werden als geäußerte Unsicherheit. Eine weiterentwickelte Fassung erschien 2026 in Nature unter dem Titel 'Evaluating large language models for accuracy incentivizes hallucinations'.",
+      "title_en": "OpenAI study: evaluations reward guessing over admitting ignorance",
+      "description_en": "A year after the Nature study, researchers led by Adam Tauman Kalai (OpenAI) published the paper 'Why Language Models Hallucinate'. It argues that common benchmarks score models on accuracy and thereby reward guessing, while answering 'I don't know' earns zero points; confident errors should be penalised more than expressions of uncertainty. A revised version appeared in Nature in 2026 under the title 'Evaluating large language models for accuracy incentivizes hallucinations'.",
+      "sources": [
+        "https://openai.com/index/why-language-models-hallucinate/",
+        "https://www.nature.com/articles/s41586-026-10549-w"
+      ]
+    }
+  ],
+  "asm:sources": [
+    {
+      "url": "https://www.nature.com/articles/s41586-026-10549-w",
+      "title": "Evaluating large language models for accuracy incentivizes hallucinations",
+      "publisher": "Nature",
+      "date": "2024",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Evaluating large language models for accuracy incentivizes hallucinations",
+      "title_en": "Evaluating large language models for accuracy incentivizes hallucinations"
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.11817",
+      "title": "Hallucination is Inevitable: An Innate Limitation of Large Language Models",
+      "publisher": "arXiv",
+      "date": "2024-01-22",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Hallucination is Inevitable: An Innate Limitation of Large Language Models",
+      "title_en": "Hallucination is Inevitable: An Innate Limitation of Large Language Models"
+    },
+    {
+      "url": "https://www.nature.com/articles/d41586-024-03137-3",
+      "title": "Bigger AI chatbots more inclined to spew nonsense - and people don't always realize",
+      "publisher": "Nature (News)",
+      "date": "2024-09-25",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Bigger AI chatbots more inclined to spew nonsense - and people don't always realize",
+      "title_en": "Bigger AI chatbots more inclined to spew nonsense - and people don't always realize"
+    },
+    {
+      "url": "https://upv.es/noticias-upv/noticia-14817-los-grandes-mo-en.html",
+      "title": "Large artificial intelligence language models, increasingly unreliable",
+      "publisher": "Universitat Politècnica de València",
+      "date": "2024-09",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Large artificial intelligence language models, increasingly unreliable",
+      "title_en": "Large artificial intelligence language models, increasingly unreliable"
+    },
+    {
+      "url": "https://siliconangle.com/2024/09/26/report-even-larger-ai-models-improve-answering-questions-leads-wrong-answers/",
+      "title": "Report: Even as larger AI models improve, answering more questions leads to more wrong answers",
+      "publisher": "SiliconANGLE",
+      "date": "2024-09-26",
+      "type": "news-article",
+      "asm:linkHealth": "unverified",
+      "title_de": "Report: Even as larger AI models improve, answering more questions leads to more wrong answers",
+      "title_en": "Report: Even as larger AI models improve, answering more questions leads to more wrong answers"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-024-07930-y",
+      "title": "Larger and more instructable language models become less reliable",
+      "publisher": "Nature",
+      "date": "2024-09-25",
+      "type": "research-paper",
+      "asm:linkHealth": "unverified",
+      "title_de": "Larger and more instructable language models become less reliable",
+      "title_en": "Larger and more instructable language models become less reliable"
+    }
+  ],
+  "asm:metadata": {
+    "created": "2026-10-30",
+    "lastUpdated": "2026-10-30",
+    "author": "AIStrikeMap (promoted from candidate)",
+    "aiGenerated": true,
+    "humanVerified": false,
+    "promotedFromCandidateId": "global-study-larger-language-models-less-likely-to-admit-2024-aiaaic1759",
+    "promotedFromRound": "round-6-aiaaic-batch-a-2026-06-03"
+  }
+}
