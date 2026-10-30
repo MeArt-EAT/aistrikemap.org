@@ -37,7 +37,7 @@ const CareerChart = (function () {
   }
 
   function t(key, fallback) {
-    if (window.I18n && typeof I18n.t === 'function') {
+    if (typeof I18n !== 'undefined' && typeof I18n.t === 'function') {
       return I18n.t(key, fallback);
     }
     return fallback || key;

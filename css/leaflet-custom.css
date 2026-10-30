@@ -429,6 +429,11 @@
   margin-bottom: 36px;
 }
 
+/* Keep the last detail-panel entries clear of the ticker overlay */
+.has-ticker .detail-panel__body {
+  padding-bottom: calc(1.25rem + 36px);
+}
+
 /* Mobile ticker */
 @media (max-width: 768px) {
   .strike-ticker {
@@ -451,11 +456,19 @@
   .has-ticker .site-footer {
     margin-bottom: 30px;
   }
+
+  .has-ticker .detail-panel__body {
+    padding-bottom: calc(1.25rem + 30px);
+  }
 }
 
 @media (max-width: 480px) {
   .strike-ticker__scroll {
     gap: 2rem;
+  }
+
+  .has-ticker .detail-panel__body {
+    padding-bottom: calc(0.75rem + 30px);
   }
 }
 

@@ -100,14 +100,14 @@ const Career = (function () {
   }
 
   function t(key, fallback) {
-    if (window.I18n && typeof I18n.t === 'function') {
+    if (typeof I18n !== 'undefined' && typeof I18n.t === 'function') {
       return I18n.t(key, fallback);
     }
     return fallback || key;
   }
 
   function currentLang() {
-    return (window.I18n && I18n.getStoredLang) ? I18n.getStoredLang() : 'de';
+    return (typeof I18n !== 'undefined' && I18n.getStoredLang) ? I18n.getStoredLang() : 'de';
   }
 
   function bucketForScore(score) {
