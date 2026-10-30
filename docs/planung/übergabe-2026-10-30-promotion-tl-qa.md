@@ -3,7 +3,7 @@
 **Datum:** 2026-10-30 (10:38-12:00)
 **Vorgänger:** #15 (2026-10-23, Redaktion, Sichtung abgeschlossen)
 **Sessions:** drei lokale Sessions im selben Ordner, abgestimmt per SendMessage. Diese Session („Projektfortschritt mit Kontext“) besitzt git/Commit/Bundles/index.json/STATUS/Übergabe und die Promotion; „Kontextfenster-Koordination bis 12:00“ bearbeitet die Prüfliste B14 (nur Bestandsdateien); „Projektpunkte Abstimmung“ baut TL-Welle 4 und macht die Browser-QA S17.
-**Gepusht:** nein (siehe §5).
+**Gepusht:** ja, 2026-10-30 gegen 11:50 auf ausdrückliche Freigabe des Projekteigners (siehe §5).
 
 ---
 
@@ -54,9 +54,9 @@ Hinweise außerhalb des Mandats (nicht geändert): grok-liefert (Infosecurity-Qu
 
 Ein Websuche-Workflow pro Turn bleibt die Regel: Welle 1 (16 Dateien, 4 Build- + 4 Verify-Agenten) hat das Kontingent schon in der Gegenprüfung aufgebraucht. Für den TL-Bau neuer Fälle **Wellen zu 8 Dateien** oder Build und Verify in getrennten Turns einplanen. Parallel-Sessions haben je ein eigenes Kontingent; eine zweite Session kann eine Welle übernehmen (hier Welle 4), wenn sie das fertige Wellen-Skript unverändert startet.
 
-## 5. Warum nicht gepusht
+## 5. Push trotz fehlender Timelines
 
-44 neue Fälle haben noch keine Timeline (11 davon gebaut, aber nicht gegengeprüft) und keine affectedRights (Validator: je 2 ERROR). Ein Push würde main mit Validator-Fehlern deployen. Die CSS/JS-Fixes aus S17 und die B14-Korrekturen gehen mit dem nächsten Push mit.
+44 neue Fälle haben noch keine Timeline (11 davon gebaut, aber nicht gegengeprüft) und keine affectedRights (Validator: je 2 ERROR). Der Projekteigner hat den Push trotzdem freigegeben: Die 44 Fälle erscheinen vorerst ohne Timeline, `validate-timelines.js --all` meldet bis zum TL-Bau 44 Dateien mit je 2 ERROR. Damit sind auch die S17-Frontend-Fixes und die B14-Korrekturen live.
 
 ## 6. Nächste Schritte
 
